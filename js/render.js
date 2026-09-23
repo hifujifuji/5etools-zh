@@ -3343,20 +3343,20 @@ Renderer.utils = class {
 
 	static getSourceAndPageTrHtml (it) {
 		const html = Renderer.utils.getSourceAndPageHtml(it);
-		return html ? `<b>Source:</b> ${html}` : "";
+		return html ? `<b>來源：</b> ${html}` : "";
 	}
 
 	static _getAltSourceHtmlOrText ({ent, prop, introText, isStringList = false, isText = false}) {
 		if (!ent[prop]?.length) return "";
 
-		return `${introText} ${ent[prop]
+		return `${({"Also found in": "亦見於", "Referenced in": "引用於", "Additional information from": "補充資訊來自", "External sources:": "外部來源："})[introText] || introText} ${ent[prop]
 			.map(as => {
 				if (!isStringList && as.entry) return (isText ? Renderer.stripTags : Renderer.get().render)(as.entry);
 
 				const source = isStringList ? as : as.source;
-				return `${isText ? "" : `<i class="ve-help-subtle" title="${Parser.sourceJsonToFull(source).qq()}">`}${Parser.sourceJsonToAbv(source)}${isText ? "" : `</i>`}${!isStringList && Renderer.utils.isDisplayPage(as.page) ? `, page ${as.page}` : ""}`;
+				return `${isText ? "" : `<i class="ve-help-subtle" title="${Parser.sourceJsonToFull(source).qq()}">`}${Parser.sourceJsonToAbv(source)}${isText ? "" : `</i>`}${!isStringList && Renderer.utils.isDisplayPage(as.page) ? `，第 ${as.page} 頁` : ""}`;
 			})
-			.join("; ")}`;
+			.join("；")}`;
 	}
 
 	static getReprintedAsHtml (it) { return Renderer.utils._getReprintedAsHtmlOrText(it); }
@@ -3375,16 +3375,16 @@ Renderer.utils = class {
 				const {name, source, displayText} = unpacked;
 
 				if (isText) {
-					return `${Renderer.stripTags(displayText || name)} in ${Parser.sourceJsonToAbv(source)}`;
+					return `${Renderer.stripTags(displayText || name)}（${Parser.sourceJsonToAbv(source)}）`;
 				}
 
 				const asTag = `{@${tag_} ${uid}}`;
 
-				return `${Renderer.get().render(asTag)} in <i class="ve-help-subtle" title="${Parser.sourceJsonToFull(source).qq()}">${Parser.sourceJsonToAbv(source)}</i>`;
+				return `${Renderer.get().render(asTag)}（<i class="ve-help-subtle" title="${Parser.sourceJsonToFull(source).qq()}">${Parser.sourceJsonToAbv(source)}</i>）`;
 			})
-			.join("; ");
+			.join("；");
 
-		return `Reprinted as ${ptReprinted}`;
+		return `重印為 ${ptReprinted}`;
 	}
 
 	static getSourceAndPageHtml (it) { return this._getSourceAndPageHtmlOrText(it); }
@@ -3392,7 +3392,7 @@ Renderer.utils = class {
 
 	static _getSourceAndPageHtmlOrText (ent, {isText} = {}) {
 		const sourceSub = Renderer.utils.getSourceSubText(ent);
-		const baseText = `${isText ? `` : `<i title="${Parser.sourceJsonToFull(ent.source)}${sourceSub}">`}${Parser.sourceJsonToAbv(ent.source)}${sourceSub}${isText ? "" : `</i>`}${Renderer.utils.isDisplayPage(ent.page) ? `, page ${ent.page}` : ""}`;
+		const baseText = `${isText ? `` : `<i title="${Parser.sourceJsonToFull(ent.source)}${sourceSub}">`}${Parser.sourceJsonToAbv(ent.source)}${sourceSub}${isText ? "" : `</i>`}${Renderer.utils.isDisplayPage(ent.page) ? `，第 ${ent.page} 頁` : ""}`;
 		const reprintedAsText = Renderer.utils._getReprintedAsHtmlOrText(ent, {isText});
 		const addSourceText = Renderer.utils._getAltSourceHtmlOrText({ent, prop: "additionalSources", introText: "Additional information from", isText});
 		const otherSourceText = Renderer.utils._getAltSourceHtmlOrText({ent, prop: "otherSources", introText: "Also found in", isText});
@@ -3400,18 +3400,18 @@ Renderer.utils = class {
 		const externalSourceText = Renderer.utils._getAltSourceHtmlOrText({ent, prop: "externalSources", introText: "External sources:", isText});
 
 		const srdText = ent.srd52
-			? `${isText ? "" : `the <span title="Systems Reference Document (5.2)">`}SRD 5.2.1${isText ? "" : `</span>`}${typeof ent.srd === "string" ? ` (as &quot;${ent.srd}&quot;)` : ""}`
+			? `${isText ? "" : `<span title="系統參考文件（5.2）">`}SRD 5.2.1${isText ? "" : `</span>`}${typeof ent.srd === "string" ? `（名為「${ent.srd}」）` : ""}`
 			: ent.srd
-				? `${isText ? "" : `the <span title="Systems Reference Document (5.1)">`}SRD 5.1${isText ? "" : `</span>`}${typeof ent.srd === "string" ? ` (as &quot;${ent.srd}&quot;)` : ""}`
+				? `${isText ? "" : `<span title="系統參考文件（5.1）">`}SRD 5.1${isText ? "" : `</span>`}${typeof ent.srd === "string" ? `（名為「${ent.srd}」）` : ""}`
 				: "";
 		const basicRulesText = ent.basicRules2024
-			? `the Basic Rules (5.5e/2024)${typeof ent.basicRules2024 === "string" ? ` (as &quot;${ent.basicRules2024}&quot;)` : ""}`
+			? `基本規則（5.5e/2024）${typeof ent.basicRules2024 === "string" ? `（名為「${ent.basicRules2024}」）` : ""}`
 			: ent.basicRules
-				? `the Basic Rules (5e/2014)${typeof ent.basicRules === "string" ? ` (as &quot;${ent.basicRules}&quot;)` : ""}`
+				? `基本規則（5e/2014）${typeof ent.basicRules === "string" ? `（名為「${ent.basicRules}」）` : ""}`
 				: "";
-		const srdAndBasicRulesText = (srdText || basicRulesText) ? `Available in ${[srdText, basicRulesText].filter(it => it).join(" and ")}` : "";
+		const srdAndBasicRulesText = (srdText || basicRulesText) ? `收錄於 ${[srdText, basicRulesText].filter(it => it).join(" 與 ")}` : "";
 
-		return `${[baseText, addSourceText, reprintedAsText, otherSourceText, referenceSourceText, srdAndBasicRulesText, externalSourceText].filter(it => it).join(". ")}${baseText && (addSourceText || otherSourceText || referenceSourceText || srdAndBasicRulesText || externalSourceText) ? "." : ""}`;
+		return `${[baseText, addSourceText, reprintedAsText, otherSourceText, referenceSourceText, srdAndBasicRulesText, externalSourceText].filter(it => it).join("。")}${baseText && (addSourceText || otherSourceText || referenceSourceText || srdAndBasicRulesText || externalSourceText) ? "。" : ""}`;
 	}
 
 	static async _pHandleNameClick (ele) {

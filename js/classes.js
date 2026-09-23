@@ -2215,7 +2215,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		if (cls.otherSources) {
 			const htmlSource = Renderer.utils.getSourceAndPageHtml(cls);
 			const trClassFeature = ee`<tr data-feature-type="class"></tr>`
-				.html(`<td colspan="6"><hr class="ve-hr-1"><b>Class source:</b> ${htmlSource}</td>`)
+				.html(`<td colspan="6"><hr class="ve-hr-1"><b>職業來源：</b> ${htmlSource}</td>`)
 				.appendTo(wrpContent);
 		}
 
