@@ -1424,8 +1424,8 @@ globalThis.Renderer = function () {
 
 		if (this._SPELLCASTING_PROPS.some(prop => entry[prop])) {
 			const tempList = {type: "list", style: "list-hang-notitle", items: [], data: {isSpellList: true}};
-			if (entry.constant && !hidden.has("constant")) tempList.items.push({type: "itemSpell", name: `Constant:`, entry: this._renderSpellcasting_getRenderableList(entry.constant).join(", ")});
-			if (entry.will && !hidden.has("will")) tempList.items.push({type: "itemSpell", name: `At will:`, entry: this._renderSpellcasting_getRenderableList(entry.will).join(", ")});
+			if (entry.constant && !hidden.has("constant")) tempList.items.push({type: "itemSpell", name: `持續：`, entry: this._renderSpellcasting_getRenderableList(entry.constant).join("、")});
+			if (entry.will && !hidden.has("will")) tempList.items.push({type: "itemSpell", name: `隨意：`, entry: this._renderSpellcasting_getRenderableList(entry.will).join("、")});
 
 			this._renderSpellcasting_getEntries_procPerDuration({entry, tempList, hidden, prop: "recharge", fnGetDurationText: num => `{@recharge ${num}|m}`, isSkipPrefix: true});
 			this._renderSpellcasting_getEntries_procPerDuration({entry, tempList, hidden, prop: "legendary", fnGetDurationText: num => ` legendary action${num === 1 ? "" : "s"}`});
@@ -1437,7 +1437,7 @@ globalThis.Renderer = function () {
 			this._renderSpellcasting_getEntries_procPerDuration({entry, tempList, hidden, prop: "monthly", durationText: "/month"});
 			this._renderSpellcasting_getEntries_procPerDuration({entry, tempList, hidden, prop: "yearly", durationText: "/year"});
 
-			if (entry.ritual && !hidden.has("ritual")) tempList.items.push({type: "itemSpell", name: `Rituals:`, entry: this._renderSpellcasting_getRenderableList(entry.ritual).join(", ")});
+			if (entry.ritual && !hidden.has("ritual")) tempList.items.push({type: "itemSpell", name: `儀式：`, entry: this._renderSpellcasting_getRenderableList(entry.ritual).join("、")});
 			tempList.items = tempList.items.filter(it => it.entry !== "");
 			if (tempList.items.length) toRender[0].entries.push(tempList);
 		}
@@ -1452,15 +1452,15 @@ globalThis.Renderer = function () {
 			for (const lvl of lvls) {
 				const spells = entry.spells[lvl];
 				if (spells) {
-					let levelCantrip = `${Parser.spLevelToFull(lvl)}${(lvl === 0 ? "s" : " level")}`;
-					let slotsAtWill = ` (at will)`;
+					let levelCantrip = lvl === 0 ? "戲法" : `${lvl} 環`;
+					let slotsAtWill = `（隨意）`;
 					const slots = spells.slots;
-					if (slots >= 0) slotsAtWill = slots > 0 ? ` (${slots} slot${slots > 1 ? "s" : ""})` : ``;
+					if (slots >= 0) slotsAtWill = slots > 0 ? `（${slots} 個欄位）` : ``;
 					if (spells.lower && spells.lower !== lvl) {
-						levelCantrip = `${Parser.spLevelToFull(spells.lower)}-${levelCantrip}`;
-						if (slots >= 0) slotsAtWill = slots > 0 ? ` (${slots} ${Parser.spLevelToFull(lvl)}-level slot${slots > 1 ? "s" : ""})` : ``;
+						levelCantrip = `${spells.lower}–${lvl} 環`;
+						if (slots >= 0) slotsAtWill = slots > 0 ? `（${slots} 個 ${lvl} 環欄位）` : ``;
 					}
-					tempList.items.push({type: "itemSpell", name: `${levelCantrip}${slotsAtWill}:`, entry: this._renderSpellcasting_getRenderableList(spells.spells).join(", ") || "\u2014"});
+					tempList.items.push({type: "itemSpell", name: `${levelCantrip}${slotsAtWill}：`, entry: this._renderSpellcasting_getRenderableList(spells.spells).join("、") || "\u2014"});
 				}
 			}
 
@@ -1472,6 +1472,13 @@ globalThis.Renderer = function () {
 	};
 
 	this._renderSpellcasting_getEntries_procPerDuration = function ({entry, hidden, tempList, prop, durationText, fnGetDurationText, isSkipPrefix}) {
+		const __ZH_PER = {daily: "每日", weekly: "每週", monthly: "每月", yearly: "每年", rest: "每次休息", restLong: "每次長休"};
+		const __zhPer = (prop, n, each) => {
+			if (__ZH_PER[prop]) return `${__ZH_PER[prop]}${each ? "各" : ""} ${n} 次`;
+			if (prop === "legendary") return `${n} 個傳奇動作${each ? "（各）" : ""}`;
+			if (prop === "charges") return `${n} 充能${each ? "（各）" : ""}`;
+			return null;
+		};
 		if (!entry[prop] || hidden.has(prop)) return;
 
 		for (let lvl = 9; lvl > 0; lvl--) {
@@ -1479,8 +1486,8 @@ globalThis.Renderer = function () {
 			if (perDur[lvl]) {
 				tempList.items.push({
 					type: "itemSpell",
-					name: `${isSkipPrefix ? "" : lvl}${fnGetDurationText ? fnGetDurationText(lvl) : durationText}:`,
-					entry: this._renderSpellcasting_getRenderableList(perDur[lvl]).join(", "),
+					name: `${__zhPer(prop, lvl, false) ?? `${isSkipPrefix ? "" : lvl}${fnGetDurationText ? fnGetDurationText(lvl) : durationText}`}：`,
+					entry: this._renderSpellcasting_getRenderableList(perDur[lvl]).join("、"),
 				});
 			}
 
@@ -1489,8 +1496,8 @@ globalThis.Renderer = function () {
 				const isHideEach = !perDur[lvl] && perDur[lvlEach].length === 1;
 				tempList.items.push({
 					type: "itemSpell",
-					name: `${isSkipPrefix ? "" : lvl}${fnGetDurationText ? fnGetDurationText(lvl) : durationText}${isHideEach ? "" : ` each`}:`,
-					entry: this._renderSpellcasting_getRenderableList(perDur[lvlEach]).join(", "),
+					name: `${__zhPer(prop, lvl, !isHideEach) ?? `${isSkipPrefix ? "" : lvl}${fnGetDurationText ? fnGetDurationText(lvl) : durationText}${isHideEach ? "" : ` each`}`}：`,
+					entry: this._renderSpellcasting_getRenderableList(perDur[lvlEach]).join("、"),
 				});
 			}
 		}
