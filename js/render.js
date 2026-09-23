@@ -2586,7 +2586,7 @@ Renderer.ENTRIES_WITH_CHILDREN = [
 	{type: "table", key: "rows"},
 ];
 
-Renderer._INLINE_HEADER_TERMINATORS = new Set([".", ",", "!", "?", ";", ":", `"`]);
+Renderer._INLINE_HEADER_TERMINATORS = new Set([".", ",", "!", "?", ";", ":", `"`, "。", "，", "！", "？", "；", "：", "」"]);
 
 Renderer._STYLE_TAG_ID_TO_STYLE = {
 	"small-caps": "ve-small-caps",
@@ -11732,11 +11732,19 @@ Renderer.item = class {
 		if (!item.mastery) return "";
 
 		return [
-			isSkipPrefix ? "" : "Mastery: ",
+			isSkipPrefix ? "" : "精通屬性：",
 			item.mastery
 				.map(info => {
-					if (!info.uid) return renderer.render(`{@itemMastery ${info}}`);
-					return renderer.render(`{@itemMastery ${info.uid}} {@style (${info.note})|small}`);
+					const __zn = e => e?.name_zh && (e._zhOf == null || e._zhOf === e.name) ? e.name_zh : null;
+					const withZh = uid => {
+						const zh = __zn(Renderer.item._getMastery(uid));
+						if (!zh) return uid;
+						const parts = String(uid).split("|");
+						while (parts.length < 2) parts.push("");
+						return [...parts.slice(0, 2), zh].join("|");
+					};
+					if (!info.uid) return renderer.render(`{@itemMastery ${withZh(info)}}`);
+					return renderer.render(`{@itemMastery ${withZh(info.uid)}} {@style (${info.note})|small}`);
 				})
 				.join(", "),
 		]
@@ -12052,7 +12060,9 @@ Renderer.item = class {
 	/* -------------------------------------------- */
 
 	static getPropertyName (ent) {
-		return ent.name || (ent.entries || ent.entriesTemplate)[0]?.name || "Unknown";
+		const __zn = e => e?.name_zh && (e._zhOf == null || e._zhOf === e.name) ? e.name_zh : null;
+		const e0 = (ent.entries || ent.entriesTemplate)?.[0];
+		return __zn(ent) || __zn(e0) || ent.name || e0?.name || "Unknown";
 	}
 
 	static _propertyMap = {};
@@ -12805,7 +12815,7 @@ Renderer.item = class {
 					type: "wrapper",
 					wrapped: {
 						type: "entries",
-						name: `Mastery: ${mastery.name}`,
+						name: `精通屬性：${(e => e?.name_zh && (e._zhOf == null || e._zhOf === e.name) ? e.name_zh : null)(mastery) || mastery.name}`,
 						source: mastery.source,
 						page: mastery.page,
 						entries: Renderer.item._enhanceItem_getItemPropertyTypeEntries({item, ent: mastery}),
