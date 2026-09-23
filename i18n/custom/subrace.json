@@ -1,0 +1,4425 @@
+{
+	"Dragonborn|Draconblood|EGW": {
+		"name": "龍血裔",
+		"source": "EGW",
+		"raceName": "Dragonborn",
+		"raceSource": "PHB",
+		"page": 168,
+		"ability": [
+			{
+				"int": 2,
+				"cha": 1
+			}
+		],
+		"darkvision": 60,
+		"resist": null,
+		"entries": [
+			{
+				"type": "entries",
+				"name": "黑暗視覺",
+				"entries": [
+					"你能在你 60 呎內的微光中視物，如同在明亮光照中一樣；在黑暗中視物，如同在微光中一樣。你在黑暗中只能辨別灰階，無法辨別顏色。"
+				],
+				"ENG_name": "Darkvision"
+			},
+			{
+				"type": "entries",
+				"name": "強勢氣場",
+				"entries": [
+					"你可以運用你對創意外交或威嚇的理解，將對話導向對你有利的方向。當你進行魅力（{@skill Intimidation}或{@skill Persuasion}）檢定時，你可以使該檢定具有優勢。使用此特性後，直到你完成短休或長休前都無法再次使用。"
+				],
+				"data": {
+					"overwrite": "Damage Resistance"
+				},
+				"ENG_name": "Forceful Presence"
+			},
+			{
+				"name": "龍族血統",
+				"entries": [
+					"你擁有龍族血統。從「龍族血統」表中選擇一種龍。你的吐息武器由龍的種類決定，如表中所示。",
+					{
+						"type": "table",
+						"caption": "龍族血統",
+						"colLabels": [
+							"龍",
+							"傷害類型",
+							"吐息武器"
+						],
+						"colStyles": [
+							"col-3 text-center",
+							"col-3 text-center",
+							"col-6"
+						],
+						"rows": [
+							[
+								"黑龍",
+								"強酸",
+								"長 30 呎、寬 5 呎直線（敏捷豁免）"
+							],
+							[
+								"藍龍",
+								"閃電",
+								"長 30 呎、寬 5 呎直線（敏捷豁免）"
+							],
+							[
+								"黃銅龍",
+								"火焰",
+								"長 30 呎、寬 5 呎直線（敏捷豁免）"
+							],
+							[
+								"青銅龍",
+								"閃電",
+								"長 30 呎、寬 5 呎直線（敏捷豁免）"
+							],
+							[
+								"赤銅龍",
+								"強酸",
+								"長 30 呎、寬 5 呎直線（敏捷豁免）"
+							],
+							[
+								"金龍",
+								"火焰",
+								"15 呎錐形（敏捷豁免）"
+							],
+							[
+								"綠龍",
+								"毒素",
+								"15 呎錐形（體質豁免）"
+							],
+							[
+								"紅龍",
+								"火焰",
+								"15 呎錐形（敏捷豁免）"
+							],
+							[
+								"銀龍",
+								"寒冷",
+								"15 呎錐形（體質豁免）"
+							],
+							[
+								"白龍",
+								"寒冷",
+								"15 呎錐形（體質豁免）"
+							]
+						]
+					}
+				],
+				"type": "entries",
+				"data": {
+					"overwrite": "Draconic Ancestry"
+				},
+				"ENG_name": "Draconic Ancestry"
+			}
+		],
+		"overwrite": {
+			"ability": true,
+			"traitTags": true
+		},
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"_versions": [
+			{
+				"_abstract": {
+					"name": "Dragonborn (Draconblood; {{color}})",
+					"source": "EGW",
+					"_mod": {
+						"entries": [
+							{
+								"mode": "removeArr",
+								"names": "Draconic Ancestry"
+							},
+							{
+								"mode": "replaceArr",
+								"replace": "Breath Weapon",
+								"items": {
+									"type": "entries",
+									"name": "Breath Weapon",
+									"entries": [
+										"You can use your action to exhale destructive energy in a {{area}}.",
+										"When you use your breath weapon, each creature in the area of the exhalation must make a {{savingThrow}} saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} {{damageType}} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+										"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+									]
+								}
+							}
+						]
+					}
+				},
+				"_implementations": [
+					{
+						"_variables": {
+							"color": "Black",
+							"damageType": "acid",
+							"area": "5-foot-wide, 30-foot-long line",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Blue",
+							"damageType": "lightning",
+							"area": "5-foot-wide, 30-foot-long line",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Brass",
+							"damageType": "fire",
+							"area": "5-foot-wide, 30-foot-long line",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Bronze",
+							"damageType": "lightning",
+							"area": "5-foot-wide, 30-foot-long line",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Copper",
+							"damageType": "acid",
+							"area": "5-foot-wide, 30-foot-long line",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Gold",
+							"damageType": "fire",
+							"area": "15-foot cone",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Green",
+							"damageType": "poison",
+							"area": "15-foot cone",
+							"savingThrow": "Constitution"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Red",
+							"damageType": "fire",
+							"area": "15-foot cone",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Silver",
+							"damageType": "cold",
+							"area": "15-foot cone",
+							"savingThrow": "Constitution"
+						}
+					},
+					{
+						"_variables": {
+							"color": "White",
+							"damageType": "cold",
+							"area": "15-foot cone",
+							"savingThrow": "Constitution"
+						}
+					}
+				]
+			}
+		],
+		"ENG_name": "Draconblood"
+	},
+	"Dragonborn|Ravenite|EGW": {
+		"name": "渡鴉裔",
+		"source": "EGW",
+		"raceName": "Dragonborn",
+		"raceSource": "PHB",
+		"page": 168,
+		"ability": [
+			{
+				"str": 2,
+				"con": 1
+			}
+		],
+		"darkvision": 60,
+		"resist": null,
+		"entries": [
+			{
+				"type": "entries",
+				"name": "黑暗視覺",
+				"entries": [
+					"你能在你 60 呎內的微光中視物，如同在明亮光照中一樣；在黑暗中視物，如同在微光中一樣。你在黑暗中只能辨別灰階，無法辨別顏色。"
+				],
+				"ENG_name": "Darkvision"
+			},
+			{
+				"type": "entries",
+				"name": "復仇攻擊",
+				"entries": [
+					"當你受到位於你所持用武器攻擊範圍內之生物的傷害時，你可以使用你的反應，以該武器對該生物進行一次攻擊。使用此特性後，直到你完成短休或長休前都無法再次使用。"
+				],
+				"data": {
+					"overwrite": "Damage Resistance"
+				},
+				"ENG_name": "Vengeful Assault"
+			},
+			{
+				"name": "龍族血統",
+				"entries": [
+					"你擁有龍族血統。從「龍族血統」表中選擇一種龍。你的吐息武器由龍的種類決定，如表中所示。",
+					{
+						"type": "table",
+						"caption": "龍族血統",
+						"colLabels": [
+							"龍",
+							"傷害類型",
+							"吐息武器"
+						],
+						"colStyles": [
+							"col-3 text-center",
+							"col-3 text-center",
+							"col-6"
+						],
+						"rows": [
+							[
+								"黑龍",
+								"強酸",
+								"長 30 呎、寬 5 呎直線（敏捷豁免）"
+							],
+							[
+								"藍龍",
+								"閃電",
+								"長 30 呎、寬 5 呎直線（敏捷豁免）"
+							],
+							[
+								"黃銅龍",
+								"火焰",
+								"長 30 呎、寬 5 呎直線（敏捷豁免）"
+							],
+							[
+								"青銅龍",
+								"閃電",
+								"長 30 呎、寬 5 呎直線（敏捷豁免）"
+							],
+							[
+								"赤銅龍",
+								"強酸",
+								"長 30 呎、寬 5 呎直線（敏捷豁免）"
+							],
+							[
+								"金龍",
+								"火焰",
+								"15 呎錐形（敏捷豁免）"
+							],
+							[
+								"綠龍",
+								"毒素",
+								"15 呎錐形（體質豁免）"
+							],
+							[
+								"紅龍",
+								"火焰",
+								"15 呎錐形（敏捷豁免）"
+							],
+							[
+								"銀龍",
+								"寒冷",
+								"15 呎錐形（體質豁免）"
+							],
+							[
+								"白龍",
+								"寒冷",
+								"15 呎錐形（體質豁免）"
+							]
+						]
+					}
+				],
+				"type": "entries",
+				"data": {
+					"overwrite": "Draconic Ancestry"
+				},
+				"ENG_name": "Draconic Ancestry"
+			}
+		],
+		"overwrite": {
+			"ability": true,
+			"traitTags": true
+		},
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"_versions": [
+			{
+				"_abstract": {
+					"name": "Dragonborn (Ravenite; {{color}})",
+					"source": "EGW",
+					"_mod": {
+						"entries": [
+							{
+								"mode": "removeArr",
+								"names": "Draconic Ancestry"
+							},
+							{
+								"mode": "replaceArr",
+								"replace": "Breath Weapon",
+								"items": {
+									"type": "entries",
+									"name": "Breath Weapon",
+									"entries": [
+										"You can use your action to exhale destructive energy in a {{area}}.",
+										"When you use your breath weapon, each creature in the area of the exhalation must make a {{savingThrow}} saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} {{damageType}} damage on a failed save, and half as much damage on a successful one. The damage increases to {@damage 3d6} at 6th level, {@damage 4d6} at 11th level, and {@damage 5d6} at 16th level.",
+										"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+									]
+								}
+							}
+						]
+					}
+				},
+				"_implementations": [
+					{
+						"_variables": {
+							"color": "Black",
+							"damageType": "acid",
+							"area": "5-foot-wide, 30-foot-long line",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Blue",
+							"damageType": "lightning",
+							"area": "5-foot-wide, 30-foot-long line",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Brass",
+							"damageType": "fire",
+							"area": "5-foot-wide, 30-foot-long line",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Bronze",
+							"damageType": "lightning",
+							"area": "5-foot-wide, 30-foot-long line",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Copper",
+							"damageType": "acid",
+							"area": "5-foot-wide, 30-foot-long line",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Gold",
+							"damageType": "fire",
+							"area": "15-foot cone",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Green",
+							"damageType": "poison",
+							"area": "15-foot cone",
+							"savingThrow": "Constitution"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Red",
+							"damageType": "fire",
+							"area": "15-foot cone",
+							"savingThrow": "Dexterity"
+						}
+					},
+					{
+						"_variables": {
+							"color": "Silver",
+							"damageType": "cold",
+							"area": "15-foot cone",
+							"savingThrow": "Constitution"
+						}
+					},
+					{
+						"_variables": {
+							"color": "White",
+							"damageType": "cold",
+							"area": "15-foot cone",
+							"savingThrow": "Constitution"
+						}
+					}
+				]
+			}
+		],
+		"ENG_name": "Ravenite"
+	},
+	"Dwarf|Mark of Warding|ERLW": {
+		"name": "守護印記",
+		"source": "ERLW",
+		"raceName": "Dwarf",
+		"raceSource": "PHB",
+		"page": 51,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Warding|EFA",
+				"tag": "feat"
+			}
+		],
+		"ability": [
+			{
+				"int": 1
+			}
+		],
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice",
+			"Tool Bonus Dice"
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"alarm",
+						"armor of agathys"
+					],
+					"s2": [
+						"arcane lock",
+						"knock"
+					],
+					"s3": [
+						"glyph of warding",
+						"magic circle"
+					],
+					"s4": [
+						"leomund's secret chest",
+						"mordenkainen's faithful hound"
+					],
+					"s5": [
+						"antilife shell"
+					]
+				},
+				"ability": "int",
+				"known": {
+					"1": [
+						"alarm",
+						"mage armor"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "守護者直覺",
+				"entries": [
+					"進行智力（{@skill Investigation}）檢定或使用{@item thieves' tools|PHB}的屬性檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Warder's Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "結界與封印",
+				"entries": [
+					"你可以用此特性施展{@spell alarm}與{@spell mage armor}法術。從 3 級開始，你也可以用它施展{@spell arcane lock}法術。以此特性施展其中任一道法術後，直到你完成長休前都無法再以此特性施展該法術。智力是你施展這些法術的施法屬性，且以此特性施展時不需要材料成分。"
+				],
+				"ENG_name": "Wards and Seals"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「守護印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "守護印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell alarm}, {@spell armor of Agathys}"
+							],
+							[
+								"2 環",
+								"{@spell arcane lock}, {@spell knock}"
+							],
+							[
+								"3 環",
+								"{@spell glyph of warding}, {@spell magic circle}"
+							],
+							[
+								"4 環",
+								"{@spell Leomund's secret chest}, {@spell Mordenkainen's faithful hound}"
+							],
+							[
+								"5 環",
+								"{@spell antilife shell}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"ENG_name": "Mark of Warding"
+	},
+	"Elf (Kaladesh)|Bishatar and Tirahar|PSK": {
+		"name": "比夏塔與提拉哈",
+		"source": "PSK",
+		"raceName": "Elf (Kaladesh)",
+		"raceSource": "PSK",
+		"page": 21,
+		"speed": 35,
+		"entries": [
+			{
+				"name": "健步如飛",
+				"entries": [
+					"你的地面速度增加到 35 呎。"
+				],
+				"type": "entries",
+				"data": {
+					"overwrite": "Elf Culture"
+				},
+				"ENG_name": "Fleet of Foot"
+			},
+			{
+				"name": "荒野面具",
+				"entries": [
+					"即使你只受到樹葉、大雨、落雪、霧氣或其他自然現象的輕度遮蔽，你也可以嘗試躲藏。"
+				],
+				"type": "entries",
+				"ENG_name": "Mask of the Wild"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Bishatar and Tirahar"
+	},
+	"Elf (Kaladesh)|Vahadar|PSK": {
+		"name": "瓦哈達",
+		"source": "PSK",
+		"raceName": "Elf (Kaladesh)",
+		"raceSource": "PSK",
+		"page": 21,
+		"additionalSpells": [
+			{
+				"ability": "wis",
+				"known": {
+					"1": {
+						"_": [
+							{
+								"choose": "level=0|class=Druid"
+							}
+						]
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "戲法",
+				"entries": [
+					"你從{@filter 德魯伊法術列表|spells|class=druid|level=0}中知道一道自選戲法。感知是你施展它的施法屬性。"
+				],
+				"type": "entries",
+				"data": {
+					"overwrite": "Elf Culture"
+				},
+				"ENG_name": "Cantrip"
+			},
+			{
+				"name": "額外語言",
+				"entries": [
+					"你能說、讀、寫一種你所選的額外語言。"
+				],
+				"type": "entries",
+				"ENG_name": "Extra Language"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Vahadar"
+	},
+	"Elf (Zendikar)|Joraga Nation|PSZ": {
+		"name": "喬拉加族",
+		"source": "PSZ",
+		"raceName": "Elf (Zendikar)",
+		"raceSource": "PSZ",
+		"page": 19,
+		"speed": 35,
+		"ability": [
+			{
+				"dex": 1
+			}
+		],
+		"weaponProficiencies": [
+			{
+				"longsword|phb": true,
+				"shortsword|phb": true,
+				"shortbow|phb": true,
+				"longbow|phb": true
+			}
+		],
+		"entries": [
+			{
+				"name": "荒野面具",
+				"entries": [
+					"即使你只受到樹葉、大雨、落雪、霧氣或其他自然現象的輕度遮蔽，你也可以嘗試躲藏。"
+				],
+				"type": "entries",
+				"ENG_name": "Mask of the Wild"
+			},
+			{
+				"name": "精靈武器訓練",
+				"entries": [
+					"你熟練{@item longsword|phb}、{@item shortsword|phb}、{@item shortbow|phb}與{@item longbow|phb}。"
+				],
+				"type": "entries",
+				"ENG_name": "Elf Weapon Training"
+			},
+			{
+				"name": "健步如飛",
+				"entries": [
+					"你的地面速度增加到 35 呎。"
+				],
+				"type": "entries",
+				"ENG_name": "Fleet of Foot"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Joraga Nation"
+	},
+	"Elf (Zendikar)|Mul Daya Nation|PSZ": {
+		"name": "穆爾達亞族",
+		"source": "PSZ",
+		"raceName": "Elf (Zendikar)",
+		"raceSource": "PSZ",
+		"page": 19,
+		"ability": [
+			{
+				"str": 1
+			}
+		],
+		"darkvision": 120,
+		"traitTags": [
+			"Sunlight Sensitivity"
+		],
+		"weaponProficiencies": [
+			{
+				"longsword|phb": true,
+				"shortsword|phb": true,
+				"shortbow|phb": true,
+				"longbow|phb": true
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"hex"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"darkness"
+							]
+						}
+					}
+				},
+				"ability": "wis",
+				"known": {
+					"1": [
+						"chill touch#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "穆爾達亞魔法",
+				"entries": [
+					"你知道{@spell chill touch}戲法。當你達到 3 級時，你可以用此特性施展{@spell hex}法術一次，並在完成長休時恢復這麼做的能力。當你達到 5 級時，你可以用此特性施展{@spell darkness}法術一次，並在完成長休時恢復這麼做的能力。感知是你施展這些法術的施法屬性。"
+				],
+				"type": "entries",
+				"ENG_name": "Mul Daya Magic"
+			},
+			{
+				"name": "高等黑暗視覺",
+				"entries": [
+					"你的黑暗視覺範圍為 120 呎。"
+				],
+				"data": {
+					"overwrite": "Darkvision"
+				},
+				"type": "entries",
+				"ENG_name": "Superior Darkvision"
+			},
+			{
+				"name": "日光敏感",
+				"entries": [
+					"當你、你的攻擊目標或你試圖察覺的事物位於直射陽光下時，你的攻擊檢定與依賴視覺的感知（{@skill Perception}）檢定具有劣勢。"
+				],
+				"type": "entries",
+				"ENG_name": "Sunlight Sensitivity"
+			},
+			{
+				"name": "精靈武器訓練",
+				"entries": [
+					"你熟練{@item longsword|phb}、{@item shortsword|phb}、{@item shortbow|phb}與{@item longbow|phb}。"
+				],
+				"type": "entries",
+				"ENG_name": "Elf Weapon Training"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Mul Daya Nation"
+	},
+	"Elf (Zendikar)|Tajuru Nation|PSZ": {
+		"name": "塔朱魯族",
+		"source": "PSZ",
+		"raceName": "Elf (Zendikar)",
+		"raceSource": "PSZ",
+		"page": 18,
+		"ability": [
+			{
+				"cha": 1
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency",
+			"Tool Proficiency"
+		],
+		"skillToolLanguageProficiencies": [
+			{
+				"choose": [
+					{
+						"from": [
+							"anySkill",
+							"anyTool"
+						],
+						"count": 2
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"name": "技能多才",
+				"entries": [
+					"你獲得任意組合的兩項其他自選技能或{@book 工具|phb|5|tools}的熟練。"
+				],
+				"type": "entries",
+				"ENG_name": "Skill Versatility"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Tajuru Nation"
+	},
+	"Elf|Mark of Shadow|ERLW": {
+		"name": "陰影印記",
+		"source": "ERLW",
+		"raceName": "Elf",
+		"raceSource": "PHB",
+		"page": 49,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Shadow|EFA",
+				"tag": "feat"
+			}
+		],
+		"ability": [
+			{
+				"cha": 1
+			}
+		],
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice"
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"invisibility"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"disguise self",
+						"silent image"
+					],
+					"s2": [
+						"darkness",
+						"pass without trace"
+					],
+					"s3": [
+						"clairvoyance",
+						"major image"
+					],
+					"s4": [
+						"greater invisibility",
+						"hallucinatory terrain"
+					],
+					"s5": [
+						"mislead"
+					]
+				},
+				"ability": "cha",
+				"known": {
+					"1": [
+						"minor illusion#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "狡黠直覺",
+				"entries": [
+					"進行魅力（{@skill Performance}）或敏捷（{@skill Stealth}）檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Cunning Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "塑造陰影",
+				"entries": [
+					"你知道{@spell minor illusion}戲法。從 3 級開始，你可以用此特性施展{@spell invisibility}法術一次，並在完成長休時恢復施展它的能力。魅力是你施展這些法術的施法屬性。"
+				],
+				"ENG_name": "Shape Shadows"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「陰影印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "陰影印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell disguise self}, {@spell silent image}"
+							],
+							[
+								"2 環",
+								"{@spell darkness}, {@spell pass without trace}"
+							],
+							[
+								"3 環",
+								"{@spell clairvoyance}, {@spell major image}"
+							],
+							[
+								"4 環",
+								"{@spell greater invisibility}, {@spell hallucinatory terrain}"
+							],
+							[
+								"5 環",
+								"{@spell mislead}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"ENG_name": "Mark of Shadow"
+	},
+	"Elf|Pallid|EGW": {
+		"name": "蒼白",
+		"source": "EGW",
+		"raceName": "Elf",
+		"raceSource": "PHB",
+		"page": 21,
+		"ability": [
+			{
+				"wis": 1
+			}
+		],
+		"heightAndWeight": {
+			"baseHeight": 54,
+			"heightMod": "2d10",
+			"baseWeight": 90,
+			"weightMod": "1d4"
+		},
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"sleep"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"invisibility"
+							]
+						}
+					}
+				},
+				"ability": "wis",
+				"known": {
+					"1": [
+						"light#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "敏銳感知",
+				"entries": [
+					"你的智力（{@skill Investigation}）與感知（{@skill Insight}）檢定具有優勢。"
+				],
+				"type": "entries",
+				"ENG_name": "Incisive Sense"
+			},
+			{
+				"type": "entries",
+				"name": "月之織者的祝福",
+				"entries": [
+					"你知道{@spell light}戲法。當你達到 3 級時，你可以用此特性施展{@spell sleep}法術一次，並在完成長休時恢復這麼做的能力。當你達到 5 級時，你可以用此特性施展{@spell invisibility}法術（只能以自己為目標）一次，並在完成長休時恢復這麼做的能力。以此特性施展這些法術不需要材料成分。感知是你施展這些法術的施法屬性。"
+				],
+				"ENG_name": "Blessing of the Moon Weaver"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Pallid"
+	},
+	"Genasi|Air|MPMM": {
+		"name": "氣",
+		"source": "MPMM",
+		"raceName": "Genasi",
+		"raceSource": "MPMM",
+		"page": 16,
+		"speed": 35,
+		"resist": [
+			"lightning"
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"feather fall"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"levitate"
+							]
+						}
+					}
+				},
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"1": [
+						"shocking grasp#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "無盡氣息",
+				"entries": [
+					"只要你未處於{@condition incapacitated}狀態，你就能無限期屏住呼吸。"
+				],
+				"ENG_name": "Unending Breath"
+			},
+			{
+				"type": "entries",
+				"name": "閃電抗性",
+				"entries": [
+					"你具有閃電傷害抗性。"
+				],
+				"ENG_name": "Lightning Resistance"
+			},
+			{
+				"type": "entries",
+				"name": "與風交融",
+				"entries": [
+					"你知道{@spell shocking grasp}戲法。從 3 級開始，你可以用此特性施展{@spell feather fall}法術，且不需要材料成分。從 5 級開始，你也可以用此特性施展{@spell levitate}法術，且不需要材料成分。以此特性施展{@spell feather fall}或{@spell levitate}後，直到你完成長休前都無法再以此特性施展該法術。你也可以使用你擁有的適當環階法術欄位施展其中任一道法術。",
+					"以此特性施展這些法術時，智力、感知或魅力為你的施法屬性（於選擇此種族時決定）。"
+				],
+				"ENG_name": "Mingle with the Wind"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Air"
+	},
+	"Genasi|Earth|MPMM": {
+		"name": "土",
+		"source": "MPMM",
+		"raceName": "Genasi",
+		"raceSource": "MPMM",
+		"page": 17,
+		"additionalSpells": [
+			{
+				"innate": {
+					"5": [
+						"pass without trace"
+					]
+				},
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"1": [
+						"blade ward#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "大地行走",
+				"entries": [
+					"若你在地面或地板上使用步行速度移動，你可以穿越{@quickref difficult terrain||3|困難地形}而不消耗額外的移動。"
+				],
+				"ENG_name": "Earth Walk"
+			},
+			{
+				"type": "entries",
+				"name": "融入岩石",
+				"entries": [
+					"你知道{@spell blade ward}戲法。你可以照常施展它，也可以用附贈動作施展它，次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。",
+					"從 5 級開始，你可以用此特性施展{@spell pass without trace}法術，且不需要材料成分。以此特性施展此法術後，直到你完成長休前都無法再次這麼做。你也可以使用你擁有的任何 2 環或更高環的法術欄位施展它。",
+					"以此特性施展這些法術時，智力、感知或魅力為你的施法屬性（於選擇此種族時決定）。"
+				],
+				"ENG_name": "Merge with Stone"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Earth"
+	},
+	"Genasi|Fire|MPMM": {
+		"name": "火",
+		"source": "MPMM",
+		"raceName": "Genasi",
+		"raceSource": "MPMM",
+		"page": 17,
+		"resist": [
+			"fire"
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"burning hands"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"flame blade"
+							]
+						}
+					}
+				},
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"1": [
+						"produce flame#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "火焰抗性",
+				"entries": [
+					"你具有火焰傷害抗性。"
+				],
+				"ENG_name": "Fire Resistance"
+			},
+			{
+				"type": "entries",
+				"name": "觸及烈焰",
+				"entries": [
+					"你知道{@spell produce flame}戲法。從 3 級開始，你可以用此特性施展{@spell burning hands}法術。從 5 級開始，你也可以用此特性施展{@spell flame blade}法術，且不需要材料成分。以此特性施展{@spell burning hands}或{@spell flame blade}後，直到你完成長休前都無法再以此特性施展該法術。你也可以使用你擁有的適當環階法術欄位施展其中任一道法術。",
+					"以此特性施展這些法術時，智力、感知或魅力為你的施法屬性（於選擇此種族時決定）。"
+				],
+				"ENG_name": "Reach to the Blaze"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Fire"
+	},
+	"Genasi|Water|MPMM": {
+		"name": "水",
+		"source": "MPMM",
+		"raceName": "Genasi",
+		"raceSource": "MPMM",
+		"page": 17,
+		"speed": {
+			"walk": 30,
+			"swim": true
+		},
+		"traitTags": [
+			"Amphibious"
+		],
+		"resist": [
+			"acid"
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"create or destroy water"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"water walk"
+							]
+						}
+					}
+				},
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"1": [
+						"acid splash#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "速度",
+				"entries": [
+					"你的步行速度為 30 呎，並擁有等同於步行速度的游泳速度。"
+				],
+				"ENG_name": "Speed"
+			},
+			{
+				"type": "entries",
+				"name": "強酸抗性",
+				"entries": [
+					"你具有強酸傷害抗性。"
+				],
+				"ENG_name": "Acid Resistance"
+			},
+			{
+				"type": "entries",
+				"name": "兩棲",
+				"entries": [
+					"你能呼吸空氣與水。"
+				],
+				"ENG_name": "Amphibious"
+			},
+			{
+				"type": "entries",
+				"name": "呼喚浪潮",
+				"entries": [
+					"你知道{@spell acid splash}戲法。從 3 級開始，你可以用此特性施展{@spell create or destroy water}法術。從 5 級開始，你也可以用此特性施展{@spell water walk}法術，且不需要材料成分。以此特性施展{@spell create or destroy water}或{@spell water walk}後，直到你完成長休前都無法再以此特性施展該法術。你也可以使用你擁有的適當環階法術欄位施展其中任一道法術。",
+					"以此特性施展這些法術時，智力、感知或魅力為你的施法屬性（於選擇此種族時決定）。"
+				],
+				"ENG_name": "Call to the Wave"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Water"
+	},
+	"Gnome|Deep/Svirfneblin|SCAG": {
+		"name": "深地侏／斯弗尼布林",
+		"source": "SCAG",
+		"raceName": "Gnome",
+		"raceSource": "PHB",
+		"page": 115,
+		"otherSources": [
+			{
+				"source": "EEPC",
+				"page": 5
+			}
+		],
+		"reprintedAs": [
+			"Deep Gnome|MPMM"
+		],
+		"ability": [
+			{
+				"dex": 1
+			}
+		],
+		"age": {
+			"mature": 25,
+			"max": 250
+		},
+		"darkvision": 120,
+		"languageProficiencies": [
+			{
+				"common": true,
+				"gnomish": true,
+				"undercommon": true
+			}
+		],
+		"entries": [
+			{
+				"name": "年齡",
+				"type": "entries",
+				"entries": [
+					"深地侏以地侏來說壽命較短。他們成熟的速度與人類相同，25 歲時便被視為完全成年。他們可活 200 到 250 年，但辛苦的勞動與幽暗地域的危險常常讓他們英年早逝。"
+				],
+				"data": {
+					"overwrite": "Age"
+				},
+				"ENG_name": "Age"
+			},
+			{
+				"name": "陣營",
+				"type": "entries",
+				"entries": [
+					"斯弗尼布林相信生存之道在於避免與其他生物糾纏、不樹敵，因此偏好中立陣營。他們很少對他人懷有惡意，也不太可能為他人冒險。"
+				],
+				"data": {
+					"overwrite": "Alignment"
+				},
+				"ENG_name": "Alignment"
+			},
+			{
+				"type": "entries",
+				"name": "尺寸",
+				"entries": [
+					"典型的斯弗尼布林身高約 3 到 3½ 呎，體重 80 到 120 磅。你的體型為小型。"
+				],
+				"data": {
+					"overwrite": "Size"
+				},
+				"ENG_name": "Size"
+			},
+			{
+				"name": "高等黑暗視覺",
+				"entries": [
+					"由於習慣了地底生活，你在黑暗與微光環境中擁有優越的視力。你能在你 120 呎內的微光中視物，如同在明亮光照中一樣；在黑暗中視物，如同在微光中一樣。你在黑暗中無法辨別顏色，只能辨別灰階。"
+				],
+				"data": {
+					"overwrite": "Darkvision"
+				},
+				"type": "entries",
+				"ENG_name": "Superior Darkvision"
+			},
+			{
+				"name": "岩石偽裝",
+				"entries": [
+					"你為在岩石地形中躲藏而進行的敏捷（{@skill Stealth}）檢定具有優勢。"
+				],
+				"type": "entries",
+				"ENG_name": "Stone Camouflage"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能說、讀、寫通用語、地侏語與地底通用語。斯弗尼布林方言比地表的地侏語更多喉音，大多數斯弗尼布林只懂一點通用語，但與外人打交道的人（包括身為冒險者的你）會學到足以在其他地方應付的通用語。"
+				],
+				"data": {
+					"overwrite": "Languages"
+				},
+				"type": "entries",
+				"ENG_name": "Languages"
+			}
+		],
+		"overwrite": {
+			"languageProficiencies": true
+		},
+		"hasFluff": true,
+		"ENG_name": "Deep/Svirfneblin"
+	},
+	"Gnome|Mark of Scribing|ERLW": {
+		"name": "書記印記",
+		"source": "ERLW",
+		"raceName": "Gnome",
+		"raceSource": "PHB",
+		"page": 47,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Scribing|EFA",
+				"tag": "feat"
+			}
+		],
+		"ability": [
+			{
+				"cha": 1
+			}
+		],
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice",
+			"Tool Bonus Dice"
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"1": {
+						"rest": {
+							"1": [
+								"comprehend languages"
+							]
+						}
+					},
+					"3": {
+						"daily": {
+							"1": [
+								"magic mouth"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"comprehend languages",
+						"illusory script"
+					],
+					"s2": [
+						"animal messenger",
+						"silence"
+					],
+					"s3": [
+						"sending",
+						"tongues"
+					],
+					"s4": [
+						"arcane eye",
+						"confusion"
+					],
+					"s5": [
+						"dream"
+					]
+				},
+				"ability": "int",
+				"known": {
+					"1": [
+						"message#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "天賦書記",
+				"entries": [
+					"進行智力（{@skill History}）檢定或使用{@item calligrapher's supplies|PHB}的屬性檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Gifted Scribe"
+			},
+			{
+				"type": "entries",
+				"name": "書記的洞見",
+				"entries": [
+					"你知道{@spell message}戲法。你也可以用此特性施展{@spell comprehend languages}一次，並在完成短休或長休時恢復施展它的能力。從 3 級開始，你可以用此特性施展{@spell magic mouth}法術，並在完成長休時恢復施展它的能力。智力是你施展這些法術的施法屬性。"
+				],
+				"ENG_name": "Scribe's Insight"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「書記印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "書記印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell comprehend languages}, {@spell illusory script}"
+							],
+							[
+								"2 環",
+								"{@spell animal messenger}, {@spell silence}"
+							],
+							[
+								"3 環",
+								"{@spell sending}, {@spell tongues}"
+							],
+							[
+								"4 環",
+								"{@spell arcane eye}, {@spell confusion}"
+							],
+							[
+								"5 環",
+								"{@spell dream}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"ENG_name": "Mark of Scribing"
+	},
+	"Goblin|Ixalan|PSX": {
+		"name": "依夏蘭",
+		"source": "PSX",
+		"raceName": "Goblin",
+		"raceSource": "PSZ",
+		"page": 16,
+		"otherSources": null,
+		"ability": [
+			{
+				"dex": 2
+			}
+		],
+		"resist": null,
+		"entries": [
+			{
+				"name": "陣營",
+				"type": "entries",
+				"entries": [
+					"大多數哥布林都極度混亂，對善惡沒有特別的傾向，但有強烈的惡作劇傾向。"
+				],
+				"data": {
+					"overwrite": "Alignment"
+				},
+				"ENG_name": "Alignment"
+			},
+			{
+				"type": "entries",
+				"name": "敏捷攀爬者",
+				"entries": [
+					"你擁有 25 呎的攀爬速度。穿著中甲或重甲時，你無法使用攀爬速度。（若你的戰役使用{@variantrule encumbrance|PHB|負重}變體規則，你在負重時無法使用攀爬速度。）"
+				],
+				"ENG_name": "Agile Climber"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能說、讀、寫{@language Common Trade Pidgin|PSX|通用語}（若你的戰役中存在）與{@language Goblin|PHB}。"
+				],
+				"type": "entries",
+				"data": {
+					"overwrite": "Languages"
+				},
+				"ENG_name": "Languages"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ixalan"
+	},
+	"Goblin|Zendikar; Grotag Tribe|PSZ": {
+		"name": "贊迪卡；格羅塔格部落",
+		"source": "PSZ",
+		"raceName": "Goblin",
+		"raceSource": "PSZ",
+		"page": 17,
+		"otherSources": null,
+		"ability": [
+			{
+				"con": 2
+			}
+		],
+		"skillProficiencies": [
+			{
+				"animal handling": true
+			}
+		],
+		"entries": [
+			{
+				"name": "格羅塔格馴獸師",
+				"entries": [
+					"你獲得{@skill Animal Handling}技能的熟練。"
+				],
+				"type": "entries",
+				"ENG_name": "Grotag Tamer"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Zendikar; Grotag Tribe"
+	},
+	"Goblin|Zendikar; Lavastep Tribe|PSZ": {
+		"name": "贊迪卡；熔岩步部落",
+		"source": "PSZ",
+		"raceName": "Goblin",
+		"raceSource": "PSZ",
+		"page": 17,
+		"otherSources": null,
+		"ability": [
+			{
+				"con": 2
+			}
+		],
+		"entries": [
+			{
+				"name": "熔岩步堅毅",
+				"entries": [
+					"你為在岩石或地底環境中躲藏而進行的敏捷（{@skill Stealth}）檢定具有優勢。"
+				],
+				"type": "entries",
+				"ENG_name": "Lavastep Grit"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Zendikar; Lavastep Tribe"
+	},
+	"Goblin|Zendikar; Tuktuk Tribe|PSZ": {
+		"name": "贊迪卡；圖克圖克部落",
+		"source": "PSZ",
+		"raceName": "Goblin",
+		"raceSource": "PSZ",
+		"page": 17,
+		"otherSources": null,
+		"ability": [
+			{
+				"con": 2
+			}
+		],
+		"toolProficiencies": [
+			{
+				"thieves' tools": true
+			}
+		],
+		"entries": [
+			{
+				"name": "圖克圖克的狡黠",
+				"entries": [
+					"你獲得{@item thieves' tools|phb}的熟練。"
+				],
+				"type": "entries",
+				"ENG_name": "Tuktuk Cunning"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Zendikar; Tuktuk Tribe"
+	},
+	"Half-Elf|Variant; Aquatic Elf Descent|SCAG": {
+		"name": "變體；水精靈後裔",
+		"source": "SCAG",
+		"raceName": "Half-Elf",
+		"raceSource": "PHB",
+		"page": 116,
+		"speed": 30,
+		"entries": [
+			{
+				"type": "inset",
+				"name": "變體特性（擇一）",
+				"entries": [
+					{
+						"name": "技能多才",
+						"entries": [
+							"你獲得兩項自選技能的熟練。"
+						],
+						"type": "entries",
+						"ENG_name": "Skill Versatility"
+					},
+					{
+						"name": "游泳",
+						"entries": [
+							"你獲得 30 呎的游泳速度。"
+						],
+						"type": "entries",
+						"ENG_name": "Swim"
+					}
+				],
+				"data": {
+					"overwrite": "Skill Versatility"
+				},
+				"ENG_name": "Variant Feature (Choose 1)"
+			}
+		],
+		"_versions": [
+			{
+				"name": "Variant; Aquatic Elf Descent; Skill Versatility",
+				"source": "SCAG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Variant Feature (Choose 1)",
+						"items": {
+							"name": "Variant Feature; Skill Versatility",
+							"type": "entries",
+							"entries": [
+								"You gain proficiency in two skills of your choice."
+							]
+						}
+					}
+				},
+				"skillProficiencies": [
+					{
+						"any": 2
+					}
+				]
+			},
+			{
+				"name": "Variant; Aquatic Elf Descent; Swim Speed",
+				"source": "SCAG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Variant Feature (Choose 1)",
+						"items": {
+							"name": "Variant Feature; Swim Speed",
+							"type": "entries",
+							"entries": [
+								"You gain a swimming speed of 30 ft."
+							]
+						}
+					}
+				},
+				"speed": {
+					"walk": 30,
+					"swim": 30
+				},
+				"skillProficiencies": null,
+				"overwrite": {
+					"skillProficiencies": true
+				}
+			}
+		],
+		"ENG_name": "Variant; Aquatic Elf Descent"
+	},
+	"Half-Elf|Variant; Drow Descent|SCAG": {
+		"name": "變體；卓爾後裔",
+		"source": "SCAG",
+		"raceName": "Half-Elf",
+		"raceSource": "PHB",
+		"page": 116,
+		"skillProficiencies": [
+			{
+				"any": 2
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"faerie fire"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"darkness"
+							]
+						}
+					}
+				},
+				"ability": "cha",
+				"known": {
+					"1": [
+						"dancing lights#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "inset",
+				"name": "變體特性（擇一）",
+				"entries": [
+					{
+						"name": "技能多才",
+						"entries": [
+							"你獲得兩項自選技能的熟練。"
+						],
+						"type": "entries",
+						"ENG_name": "Skill Versatility"
+					},
+					{
+						"name": "卓爾魔法",
+						"entries": [
+							"你知道{@spell dancing lights}戲法。當你達到 3 級時，你可以每日施展{@spell faerie fire}法術一次；你必須完成長休才能再以此特性施展該法術。當你達到 5 級時，你也可以每日施展{@spell darkness}法術一次；你必須完成長休才能再以此特性施展該法術。魅力是你施展這些法術的施法屬性。"
+						],
+						"type": "entries",
+						"ENG_name": "Drow Magic"
+					}
+				],
+				"data": {
+					"overwrite": "Skill Versatility"
+				},
+				"ENG_name": "Variant Feature (Choose 1)"
+			}
+		],
+		"overwrite": {
+			"skillProficiencies": true
+		},
+		"_versions": [
+			{
+				"name": "Variant; Drow Descent; Drow Magic",
+				"source": "SCAG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Variant Feature (Choose 1)",
+						"items": {
+							"name": "Variant Feature; Drow Magic",
+							"type": "entries",
+							"entries": [
+								"You know the {@spell dancing lights} cantrip. When you reach 3rd level, you can cast the {@spell faerie fire} spell once per day; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell darkness} spell once per day; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+							]
+						}
+					}
+				},
+				"skillProficiencies": null
+			},
+			{
+				"name": "Variant; Drow Descent; Skill Versatility",
+				"source": "SCAG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Variant Feature (Choose 1)",
+						"items": {
+							"name": "Variant Feature; Skill Versatility",
+							"type": "entries",
+							"entries": [
+								"You gain proficiency in two skills of your choice."
+							]
+						}
+					}
+				},
+				"additionalSpells": null
+			}
+		],
+		"ENG_name": "Variant; Drow Descent"
+	},
+	"Half-Elf|Variant; Mark of Detection|ERLW": {
+		"name": "變體；偵測印記",
+		"source": "ERLW",
+		"raceName": "Half-Elf",
+		"raceSource": "PHB",
+		"page": 40,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Detection|EFA",
+				"tag": "feat"
+			}
+		],
+		"ability": [
+			{
+				"wis": 2,
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"cha"
+					],
+					"count": 1
+				}
+			}
+		],
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice"
+		],
+		"skillProficiencies": null,
+		"additionalSpells": [
+			{
+				"innate": {
+					"1": [
+						"detect magic",
+						"detect poison and disease"
+					],
+					"3": {
+						"daily": {
+							"1": [
+								"see invisibility"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"detect evil and good",
+						"detect poison and disease"
+					],
+					"s2": [
+						"detect thoughts",
+						"find traps"
+					],
+					"s3": [
+						"clairvoyance",
+						"nondetection"
+					],
+					"s4": [
+						"arcane eye",
+						"divination"
+					],
+					"s5": [
+						"legend lore"
+					]
+				},
+				"ability": "int"
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "演繹直覺",
+				"entries": [
+					"進行智力（{@skill Investigation}）或感知（{@skill Insight}）檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"data": {
+					"overwrite": "Skill Versatility"
+				},
+				"ENG_name": "Deductive Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "魔法偵測",
+				"entries": [
+					"你可以用此特性施展{@spell detect magic}與{@spell detect poison and disease}法術。從 3 級開始，你也可以用它施展{@spell see invisibility}法術。以此特性施展其中任一道法術後，直到你完成長休前都無法再以此特性施展該法術。感知是你施展這些法術的施法屬性，且不需要材料成分。"
+				],
+				"ENG_name": "Magical Detection"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「偵測印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "偵測印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell detect evil and good}, {@spell detect poison and disease}"
+							],
+							[
+								"2 環",
+								"{@spell detect thoughts}, {@spell find traps}"
+							],
+							[
+								"3 環",
+								"{@spell clairvoyance}, {@spell nondetection}"
+							],
+							[
+								"4 環",
+								"{@spell arcane eye}, {@spell divination}"
+							],
+							[
+								"5 環",
+								"{@spell legend lore}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"overwrite": {
+			"ability": true
+		},
+		"ENG_name": "Variant; Mark of Detection"
+	},
+	"Half-Elf|Variant; Mark of Storm|ERLW": {
+		"name": "變體；暴風印記",
+		"source": "ERLW",
+		"raceName": "Half-Elf",
+		"raceSource": "PHB",
+		"page": 50,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Storm|EFA",
+				"tag": "feat"
+			}
+		],
+		"ability": [
+			{
+				"cha": 2,
+				"dex": 1
+			}
+		],
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice",
+			"Tool Bonus Dice"
+		],
+		"skillProficiencies": null,
+		"resist": [
+			"lightning"
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"feather fall",
+						"fog cloud"
+					],
+					"s2": [
+						"gust of wind",
+						"levitate"
+					],
+					"s3": [
+						"sleet storm",
+						"wind wall"
+					],
+					"s4": [
+						"conjure minor elementals",
+						"control water"
+					],
+					"s5": [
+						"conjure elemental"
+					]
+				},
+				"ability": "cha",
+				"known": {
+					"1": [
+						"gust|xge#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "駕風者直覺",
+				"entries": [
+					"進行敏捷（{@skill Acrobatics}）檢定或任何涉及{@item navigator's tools|PHB}的屬性檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"data": {
+					"overwrite": "Skill Versatility"
+				},
+				"ENG_name": "Windwright's Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "風暴恩賜",
+				"entries": [
+					"你具有閃電傷害抗性。"
+				],
+				"ENG_name": "Storm's Boon"
+			},
+			{
+				"type": "entries",
+				"name": "逆風",
+				"entries": [
+					"你知道{@spell gust|XGE}戲法。從 3 級開始，你可以用此特性施展{@spell gust of wind}法術一次，並在完成長休時恢復施展它的能力。魅力是你施展這些法術的施法屬性。"
+				],
+				"ENG_name": "Headwinds"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「暴風印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "暴風印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell feather fall}, {@spell fog cloud}"
+							],
+							[
+								"2 環",
+								"{@spell gust of wind}, {@spell levitate}"
+							],
+							[
+								"3 環",
+								"{@spell sleet storm}, {@spell wind wall}"
+							],
+							[
+								"4 環",
+								"{@spell conjure minor elementals}, {@spell control water}"
+							],
+							[
+								"5 環",
+								"{@spell conjure elemental}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"overwrite": {
+			"ability": true
+		},
+		"ENG_name": "Variant; Mark of Storm"
+	},
+	"Half-Elf|Variant; Moon Elf or Sun Elf Descent|SCAG": {
+		"name": "變體；月精靈或日精靈後裔",
+		"source": "SCAG",
+		"raceName": "Half-Elf",
+		"raceSource": "PHB",
+		"page": 116,
+		"skillProficiencies": [
+			{
+				"any": 2
+			}
+		],
+		"weaponProficiencies": [
+			{
+				"longsword|phb": true,
+				"shortsword|phb": true,
+				"shortbow|phb": true,
+				"longbow|phb": true
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "int",
+				"known": {
+					"1": {
+						"_": [
+							{
+								"choose": "level=0|class=Wizard"
+							}
+						]
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "inset",
+				"name": "變體特性（擇一）",
+				"entries": [
+					{
+						"name": "技能多才",
+						"entries": [
+							"你獲得兩項自選技能的熟練。"
+						],
+						"type": "entries",
+						"ENG_name": "Skill Versatility"
+					},
+					{
+						"name": "精靈武器訓練",
+						"entries": [
+							"你熟練{@item longsword|phb}、{@item shortsword|phb}、{@item shortbow|phb}與{@item longbow|phb}。"
+						],
+						"type": "entries",
+						"ENG_name": "Elf Weapon Training"
+					},
+					{
+						"name": "戲法",
+						"entries": [
+							"你從{@filter 法師法術列表|spells|class=wizard|level=0}中知道一道自選戲法。智力是你施展它的施法屬性。"
+						],
+						"type": "entries",
+						"ENG_name": "Cantrip"
+					}
+				],
+				"data": {
+					"overwrite": "Skill Versatility"
+				},
+				"ENG_name": "Variant Feature (Choose 1)"
+			}
+		],
+		"overwrite": {
+			"skillProficiencies": true
+		},
+		"_versions": [
+			{
+				"name": "Variant; Moon Elf or Sun Elf Descent; Cantrip",
+				"source": "SCAG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Variant Feature (Choose 1)",
+						"items": {
+							"name": "Variant Feature; Cantrip",
+							"type": "entries",
+							"entries": [
+								"You know one cantrip of your choice from the {@filter wizard spell list|spells|class=wizard|level=0}. Intelligence is your spellcasting ability for it."
+							]
+						}
+					}
+				},
+				"skillProficiencies": null,
+				"weaponProficiencies": null
+			},
+			{
+				"name": "Variant; Moon Elf or Sun Elf Descent; Elf Weapon Training",
+				"source": "SCAG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Variant Feature (Choose 1)",
+						"items": {
+							"name": "Variant Feature; Elf Weapon Training",
+							"type": "entries",
+							"entries": [
+								"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+							]
+						}
+					}
+				},
+				"skillProficiencies": null,
+				"additionalSpells": null
+			},
+			{
+				"name": "Variant; Moon Elf or Sun Elf Descent; Skill Versatility",
+				"source": "SCAG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Variant Feature (Choose 1)",
+						"items": {
+							"name": "Variant Feature; Skill Versatility",
+							"type": "entries",
+							"entries": [
+								"You gain proficiency in two skills of your choice."
+							]
+						}
+					}
+				},
+				"weaponProficiencies": null,
+				"additionalSpells": null
+			}
+		],
+		"ENG_name": "Variant; Moon Elf or Sun Elf Descent"
+	},
+	"Half-Elf|Variant; Wood Elf Descent|SCAG": {
+		"name": "變體；木精靈後裔",
+		"source": "SCAG",
+		"raceName": "Half-Elf",
+		"raceSource": "PHB",
+		"page": 116,
+		"skillProficiencies": [
+			{
+				"any": 2
+			}
+		],
+		"weaponProficiencies": [
+			{
+				"longsword|phb": true,
+				"shortsword|phb": true,
+				"shortbow|phb": true,
+				"longbow|phb": true
+			}
+		],
+		"entries": [
+			{
+				"type": "inset",
+				"name": "變體特性（擇一）",
+				"entries": [
+					{
+						"name": "技能多才",
+						"entries": [
+							"你獲得兩項自選技能的熟練。"
+						],
+						"type": "entries",
+						"ENG_name": "Skill Versatility"
+					},
+					{
+						"name": "精靈武器訓練",
+						"entries": [
+							"你熟練{@item longsword|phb}、{@item shortsword|phb}、{@item shortbow|phb}與{@item longbow|phb}。"
+						],
+						"type": "entries",
+						"ENG_name": "Elf Weapon Training"
+					},
+					{
+						"name": "健步如飛",
+						"entries": [
+							"你的基礎步行速度增加到 35 呎。"
+						],
+						"type": "entries",
+						"ENG_name": "Fleet of Foot"
+					},
+					{
+						"name": "荒野面具",
+						"entries": [
+							"即使你只受到樹葉、大雨、落雪、霧氣或其他自然現象的輕度遮蔽，你也可以嘗試躲藏。"
+						],
+						"type": "entries",
+						"ENG_name": "Mask of the Wild"
+					}
+				],
+				"data": {
+					"overwrite": "Skill Versatility"
+				},
+				"ENG_name": "Variant Feature (Choose 1)"
+			}
+		],
+		"overwrite": {
+			"skillProficiencies": true
+		},
+		"_versions": [
+			{
+				"name": "Variant; Wood Elf Descent; Elf Weapon Training",
+				"source": "SCAG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Variant Feature (Choose 1)",
+						"items": {
+							"name": "Variant Feature; Elf Weapon Training",
+							"type": "entries",
+							"entries": [
+								"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+							]
+						}
+					}
+				},
+				"skillProficiencies": null
+			},
+			{
+				"name": "Variant; Wood Elf Descent; Fleet of Foot",
+				"source": "SCAG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Variant Feature (Choose 1)",
+						"items": {
+							"name": "Variant Feature; Fleet of Foot",
+							"type": "entries",
+							"entries": [
+								"Your base walking speed increases to 35 feet."
+							]
+						}
+					}
+				},
+				"speed": 35,
+				"skillProficiencies": null,
+				"weaponProficiencies": null
+			},
+			{
+				"name": "Variant; Wood Elf Descent; Mask of the Wild",
+				"source": "SCAG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Variant Feature (Choose 1)",
+						"items": {
+							"name": "Variant Feature; Mask of the Wild",
+							"type": "entries",
+							"entries": [
+								"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+							]
+						}
+					}
+				},
+				"skillProficiencies": null,
+				"weaponProficiencies": null
+			},
+			{
+				"name": "Variant; Wood Elf Descent; Skill Versatility",
+				"source": "SCAG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Variant Feature (Choose 1)",
+						"items": {
+							"name": "Variant Feature; Skill Versatility",
+							"type": "entries",
+							"entries": [
+								"You gain proficiency in two skills of your choice."
+							]
+						}
+					}
+				},
+				"weaponProficiencies": null
+			}
+		],
+		"ENG_name": "Variant; Wood Elf Descent"
+	},
+	"Half-Orc|Variant; Mark of Finding|ERLW": {
+		"name": "變體；尋覓印記",
+		"source": "ERLW",
+		"raceName": "Half-Orc",
+		"raceSource": "PHB",
+		"page": 41,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Finding|EFA",
+				"tag": "feat"
+			}
+		],
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice"
+		],
+		"skillProficiencies": null,
+		"languageProficiencies": [
+			{
+				"common": true,
+				"goblin": true
+			}
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/half-orc.mp3"
+		},
+		"additionalSpells": [
+			{
+				"innate": {
+					"1": [
+						"hunter's mark"
+					],
+					"3": {
+						"daily": {
+							"1": [
+								"locate object"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"faerie fire",
+						"longstrider"
+					],
+					"s2": [
+						"locate animals or plants",
+						"locate object"
+					],
+					"s3": [
+						"clairvoyance",
+						"speak with plants"
+					],
+					"s4": [
+						"divination",
+						"locate creature"
+					],
+					"s5": [
+						"commune with nature"
+					]
+				},
+				"ability": "wis"
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "黑暗視覺",
+				"entries": [
+					"你能在你 60 呎內的微光中視物，如同在明亮光照中一樣；在黑暗中視物，如同在微光中一樣。你在黑暗中只能辨別灰階，無法辨別顏色。"
+				],
+				"data": {
+					"overwrite": "Darkvision"
+				},
+				"ENG_name": "Darkvision"
+			},
+			{
+				"type": "entries",
+				"name": "獵人直覺",
+				"entries": [
+					"進行感知（{@skill Perception}）或感知（{@skill Survival}）檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"data": {
+					"overwrite": "Menacing"
+				},
+				"ENG_name": "Hunter's Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "尋覓者魔法",
+				"entries": [
+					"你可以用此特性施展{@spell hunter's mark}法術。從 3 級開始，你也可以用它施展{@spell locate object}法術。以此特性施展其中任一道法術後，直到你完成長休前都無法再以此特性施展該法術。感知是你施展這些法術的施法屬性。"
+				],
+				"data": {
+					"overwrite": "Relentless Endurance"
+				},
+				"ENG_name": "Finder's Magic"
+			},
+			{
+				"type": "entries",
+				"name": "語言",
+				"entries": [
+					"你能說、讀、寫通用語與哥布林語。"
+				],
+				"data": {
+					"overwrite": "Languages"
+				},
+				"ENG_name": "Languages"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「尋覓印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "尋覓印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell faerie fire}, {@spell longstrider}"
+							],
+							[
+								"2 環",
+								"{@spell locate animals or plants}, {@spell locate object}"
+							],
+							[
+								"3 環",
+								"{@spell clairvoyance}, {@spell speak with plants}"
+							],
+							[
+								"4 環",
+								"{@spell divination}, {@spell locate creature}"
+							],
+							[
+								"5 環",
+								"{@spell commune with nature}"
+							]
+						]
+					}
+				],
+				"data": {
+					"overwrite": "Savage Attacks"
+				},
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"ENG_name": "Variant; Mark of Finding"
+	},
+	"Halfling|Ghostwise|SCAG": {
+		"name": "靈智",
+		"source": "SCAG",
+		"raceName": "Halfling",
+		"raceSource": "PHB",
+		"page": 110,
+		"ability": [
+			{
+				"wis": 1
+			}
+		],
+		"entries": [
+			{
+				"name": "無聲話語",
+				"entries": [
+					"你可以用心靈感應與你 30 呎內的任何生物說話。只有當你們有共同語言時，該生物才能理解你。你一次只能以此方式與一個生物進行心靈感應交談。"
+				],
+				"type": "entries",
+				"ENG_name": "Silent Speech"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ghostwise"
+	},
+	"Halfling|Lotusden|EGW": {
+		"name": "朧蓮之地",
+		"source": "EGW",
+		"raceName": "Halfling",
+		"raceSource": "PHB",
+		"page": 164,
+		"ability": [
+			{
+				"wis": 1
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"entangle"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"spike growth"
+							]
+						}
+					}
+				},
+				"ability": "wis",
+				"known": {
+					"1": [
+						"druidcraft#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "森林之子",
+				"entries": [
+					"你知道{@spell druidcraft}戲法。當你達到 3 級時，你可以用此特性施展{@spell entangle}法術一次，並在完成長休時恢復這麼做的能力。當你達到 5 級時，你可以用此特性施展{@spell spike growth}法術一次，並在完成長休時恢復這麼做的能力。以此特性施展這些法術不需要材料成分。感知是你施展這些法術的施法屬性。"
+				],
+				"ENG_name": "Child of the Wood"
+			},
+			{
+				"type": "entries",
+				"name": "林中行",
+				"entries": [
+					"為追蹤你而進行的屬性檢定具有劣勢，且你可以穿越由非魔法植物與灌木叢構成的{@quickref difficult terrain||3|困難地形}而不消耗額外的移動。"
+				],
+				"ENG_name": "Timberwalk"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Lotusden"
+	},
+	"Halfling|Mark of Healing|ERLW": {
+		"name": "治療印記",
+		"source": "ERLW",
+		"raceName": "Halfling",
+		"raceSource": "PHB",
+		"page": 43,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Healing|EFA",
+				"tag": "feat"
+			}
+		],
+		"ability": [
+			{
+				"wis": 1
+			}
+		],
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice",
+			"Tool Bonus Dice"
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"1": [
+						"cure wounds"
+					],
+					"3": {
+						"daily": {
+							"1": [
+								"lesser restoration"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"cure wounds",
+						"healing word"
+					],
+					"s2": [
+						"lesser restoration",
+						"prayer of healing"
+					],
+					"s3": [
+						"aura of vitality",
+						"mass healing word"
+					],
+					"s4": [
+						"aura of purity",
+						"aura of life"
+					],
+					"s5": [
+						"greater restoration"
+					]
+				},
+				"ability": "wis"
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "醫療直覺",
+				"entries": [
+					"進行感知（{@skill Medicine}）檢定或使用{@item herbalism kit|phb}的屬性檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Medical Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "治療之觸",
+				"entries": [
+					"你可以用此特性施展{@spell cure wounds}法術。從 3 級開始，你也可以用它施展{@spell lesser restoration}。以此特性施展其中任一道法術後，直到你完成長休前都無法再以此特性施展該法術。感知是你施展這些法術的施法屬性。"
+				],
+				"ENG_name": "Healing Touch"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「治療印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "治療印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell cure wounds}, {@spell healing word}"
+							],
+							[
+								"2 環",
+								"{@spell lesser restoration}, {@spell prayer of healing}"
+							],
+							[
+								"3 環",
+								"{@spell aura of vitality}, {@spell mass healing word}"
+							],
+							[
+								"4 環",
+								"{@spell aura of purity}, {@spell aura of life}"
+							],
+							[
+								"5 環",
+								"{@spell greater restoration}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"ENG_name": "Mark of Healing"
+	},
+	"Halfling|Mark of Hospitality|ERLW": {
+		"name": "款待印記",
+		"source": "ERLW",
+		"raceName": "Halfling",
+		"raceSource": "PHB",
+		"page": 44,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Hospitality|EFA",
+				"tag": "feat"
+			}
+		],
+		"ability": [
+			{
+				"cha": 1
+			}
+		],
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice",
+			"Tool Bonus Dice"
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"goodberry",
+						"sleep"
+					],
+					"s2": [
+						"aid",
+						"calm emotions"
+					],
+					"s3": [
+						"create food and water",
+						"leomund's tiny hut"
+					],
+					"s4": [
+						"aura of purity",
+						"mordenkainen's private sanctum"
+					],
+					"s5": [
+						"hallow"
+					]
+				},
+				"ability": "cha",
+				"known": {
+					"1": [
+						"prestidigitation#c",
+						"purify food and drink",
+						"unseen servant"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "賓至如歸",
+				"entries": [
+					"進行魅力（{@skill Persuasion}）檢定或涉及{@item brewer's supplies|PHB}或{@item cook's utensils|PHB}的屬性檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Ever Hospitable"
+			},
+			{
+				"type": "entries",
+				"name": "旅店主人的魔法",
+				"entries": [
+					"你知道{@spell prestidigitation}戲法。你也可以用此特性施展{@spell purify food and drink}與{@spell unseen servant}法術。以此特性施展其中任一道法術後，直到你完成長休前都無法再以此特性施展該法術。魅力是你施展這些法術的施法屬性。"
+				],
+				"ENG_name": "Innkeeper's Magic"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「款待印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "款待印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell goodberry}, {@spell sleep}"
+							],
+							[
+								"2 環",
+								"{@spell aid}, {@spell calm emotions}"
+							],
+							[
+								"3 環",
+								"{@spell create food and water}, {@spell Leomund's tiny hut}"
+							],
+							[
+								"4 環",
+								"{@spell aura of purity}, {@spell Mordenkainen's private sanctum}"
+							],
+							[
+								"5 環",
+								"{@spell hallow}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"ENG_name": "Mark of Hospitality"
+	},
+	"Human|Mark of Handling|ERLW": {
+		"name": "馴獸印記",
+		"source": "ERLW",
+		"raceName": "Human",
+		"raceSource": "PHB",
+		"page": 42,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Handling|EFA",
+				"tag": "feat"
+			}
+		],
+		"ability": [
+			{
+				"wis": 2,
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"cha"
+					],
+					"count": 1
+				}
+			}
+		],
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice"
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"animal friendship",
+						"speak with animals"
+					],
+					"s2": [
+						"beast sense",
+						"calm emotions"
+					],
+					"s3": [
+						"beacon of hope",
+						"conjure animals"
+					],
+					"s4": [
+						"aura of life",
+						"dominate beast"
+					],
+					"s5": [
+						"awaken"
+					]
+				},
+				"ability": "wis",
+				"known": {
+					"1": {
+						"rest": {
+							"1": [
+								"animal friendship",
+								"speak with animals"
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "野性直覺",
+				"entries": [
+					"進行感知（{@skill Animal Handling}）或智力（{@skill Nature}）檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Wild Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "原初連結",
+				"entries": [
+					"你可以用此特性施展{@spell animal friendship}與{@spell speak with animals}法術，且不需要材料成分。以此特性施展其中任一道法術後，直到你完成短休或長休前都無法再以此特性施展該法術。感知是你施展這些法術的施法屬性。"
+				],
+				"ENG_name": "Primal Connection"
+			},
+			{
+				"type": "entries",
+				"name": "越大越好馴",
+				"entries": [
+					"從 3 級開始，當你施展{@spell animal friendship}或{@spell speak with animals}時，只要生物的智力值為 3 或更低，你可以將野獸或怪獸作為目標。"
+				],
+				"ENG_name": "The Bigger They Are"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「馴獸印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "馴獸印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell animal friendship}, {@spell speak with animals}"
+							],
+							[
+								"2 環",
+								"{@spell beast sense}, {@spell calm emotions}"
+							],
+							[
+								"3 環",
+								"{@spell beacon of hope}, {@spell conjure animals}"
+							],
+							[
+								"4 環",
+								"{@spell aura of life}, {@spell dominate beast}"
+							],
+							[
+								"5 環",
+								"{@spell awaken}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"ENG_name": "Mark of Handling"
+	},
+	"Human|Mark of Making|ERLW": {
+		"name": "製造印記",
+		"source": "ERLW",
+		"raceName": "Human",
+		"raceSource": "PHB",
+		"page": 45,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Making|EFA",
+				"tag": "feat"
+			}
+		],
+		"ability": [
+			{
+				"int": 2,
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"wis",
+						"cha"
+					],
+					"count": 1
+				}
+			}
+		],
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice",
+			"Tool Bonus Dice"
+		],
+		"toolProficiencies": [
+			{
+				"anyArtisansTool": 1
+			}
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"identify",
+						"tenser's floating disk"
+					],
+					"s2": [
+						"continual flame",
+						"magic weapon"
+					],
+					"s3": [
+						"conjure barrage",
+						"elemental weapon"
+					],
+					"s4": [
+						"fabricate",
+						"stone shape"
+					],
+					"s5": [
+						"creation"
+					]
+				},
+				"ability": "int",
+				"known": {
+					"1": [
+						"mending#c",
+						"magic weapon"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "工匠直覺",
+				"entries": [
+					"進行{@skill Arcana}檢定或涉及{@filter 工匠工具|items|source=phb|miscellaneous=mundane|type=artisan's tools}的屬性檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Artisan's Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "製造者的天賦",
+				"entries": [
+					"你獲得一種自選{@item artisan's tools|PHB}的熟練。"
+				],
+				"ENG_name": "Maker's Gift"
+			},
+			{
+				"type": "entries",
+				"name": "法術鍛造",
+				"entries": [
+					"你知道{@spell mending}戲法。你也可以用此特性施展{@spell magic weapon}法術。這麼做時，法術持續 1 小時且不需要{@status concentration}。以此特性施展此法術後，直到你完成長休前都無法再次這麼做。智力是你施展這些法術的施法屬性。"
+				],
+				"ENG_name": "Spellsmith"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「製造印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "製造印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell identify}, {@spell Tenser's floating disk}"
+							],
+							[
+								"2 環",
+								"{@spell continual flame}, {@spell magic weapon}"
+							],
+							[
+								"3 環",
+								"{@spell conjure barrage}, {@spell elemental weapon}"
+							],
+							[
+								"4 環",
+								"{@spell fabricate}, {@spell stone shape}"
+							],
+							[
+								"5 環",
+								"{@spell creation}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"ENG_name": "Mark of Making"
+	},
+	"Human|Mark of Passage|ERLW": {
+		"name": "通行印記",
+		"source": "ERLW",
+		"raceName": "Human",
+		"raceSource": "PHB",
+		"page": 46,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Passage|EFA",
+				"tag": "feat"
+			}
+		],
+		"speed": 35,
+		"ability": [
+			{
+				"dex": 2,
+				"choose": {
+					"from": [
+						"str",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"count": 1
+				}
+			}
+		],
+		"traitTags": [
+			"Dragonmark"
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"expeditious retreat",
+						"jump"
+					],
+					"s2": [
+						"misty step",
+						"pass without trace"
+					],
+					"s3": [
+						"blink",
+						"phantom steed"
+					],
+					"s4": [
+						"dimension door",
+						"freedom of movement"
+					],
+					"s5": [
+						"teleportation circle"
+					]
+				},
+				"ability": "dex",
+				"known": {
+					"1": [
+						"misty step"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "信使之速",
+				"entries": [
+					"你的基礎步行速度增加到 35 呎。"
+				],
+				"ENG_name": "Courier's Speed"
+			},
+			{
+				"type": "entries",
+				"name": "直覺行動",
+				"entries": [
+					"進行敏捷（{@skill Acrobatics}）檢定或任何操作或維護{@filter 陸上載具|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land)}的屬性檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Intuitive Motion"
+			},
+			{
+				"type": "entries",
+				"name": "魔法通行",
+				"entries": [
+					"你可以用此特性施展{@spell misty step}法術一次，並在完成長休時恢復施展它的能力。敏捷是你施展此法術的施法屬性。"
+				],
+				"ENG_name": "Magical Passage"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「通行印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "通行印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell expeditious retreat}, {@spell jump}"
+							],
+							[
+								"2 環",
+								"{@spell misty step}, {@spell pass without trace}"
+							],
+							[
+								"3 環",
+								"{@spell blink}, {@spell phantom steed}"
+							],
+							[
+								"4 環",
+								"{@spell dimension door}, {@spell freedom of movement}"
+							],
+							[
+								"5 環",
+								"{@spell teleportation circle}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"ENG_name": "Mark of Passage"
+	},
+	"Human|Mark of Sentinel|ERLW": {
+		"name": "哨兵印記",
+		"source": "ERLW",
+		"raceName": "Human",
+		"raceSource": "PHB",
+		"page": 48,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Sentinel|EFA",
+				"tag": "feat"
+			}
+		],
+		"ability": [
+			{
+				"con": 2,
+				"wis": 1
+			}
+		],
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice"
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"compelled duel",
+						"shield of faith"
+					],
+					"s2": [
+						"warding bond",
+						"zone of truth"
+					],
+					"s3": [
+						"counterspell",
+						"protection from energy"
+					],
+					"s4": [
+						"death ward",
+						"guardian of faith"
+					],
+					"s5": [
+						"bigby's hand"
+					]
+				},
+				"ability": "wis",
+				"known": {
+					"1": [
+						"shield"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "哨兵直覺",
+				"entries": [
+					"進行感知（{@skill Insight}）或感知（{@skill Perception}）檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Sentinel's Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "守護者之盾",
+				"entries": [
+					"你可以用此特性施展{@spell shield}法術一次，並在完成長休後恢復施展它的能力。感知是你施展此法術的施法屬性。"
+				],
+				"ENG_name": "Guardian's Shield"
+			},
+			{
+				"type": "entries",
+				"name": "警戒守護者",
+				"entries": [
+					"當你 5 呎內一個你能看見的生物被攻擊檢定命中時，你可以使用你的反應與該生物交換位置，改由你被該攻擊命中。使用此特性後，直到你完成長休前都無法再次使用。"
+				],
+				"ENG_name": "Vigilant Guardian"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「哨兵印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "哨兵印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell compelled duel}, {@spell shield of faith}"
+							],
+							[
+								"2 環",
+								"{@spell warding bond}, {@spell zone of truth}"
+							],
+							[
+								"3 環",
+								"{@spell counterspell}, {@spell protection from energy}"
+							],
+							[
+								"4 環",
+								"{@spell death ward}, {@spell guardian of faith}"
+							],
+							[
+								"5 環",
+								"{@spell Bigby's hand}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"ENG_name": "Mark of Sentinel"
+	},
+	"Human|Variant; Mark of Finding|ERLW": {
+		"name": "變體；尋覓印記",
+		"source": "ERLW",
+		"raceName": "Human",
+		"raceSource": "PHB",
+		"page": 41,
+		"reprintedAs": [
+			{
+				"uid": "Mark of Finding|EFA",
+				"tag": "feat"
+			}
+		],
+		"ability": [
+			{
+				"con": 1,
+				"wis": 2
+			}
+		],
+		"darkvision": 60,
+		"traitTags": [
+			"Dragonmark",
+			"Skill Bonus Dice"
+		],
+		"languageProficiencies": [
+			{
+				"common": true,
+				"goblin": true
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"1": [
+						"hunter's mark"
+					],
+					"3": {
+						"daily": {
+							"1": [
+								"locate object"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"faerie fire",
+						"longstrider"
+					],
+					"s2": [
+						"locate animals or plants",
+						"locate object"
+					],
+					"s3": [
+						"clairvoyance",
+						"speak with plants"
+					],
+					"s4": [
+						"divination",
+						"locate creature"
+					],
+					"s5": [
+						"commune with nature"
+					]
+				},
+				"ability": "wis"
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "黑暗視覺",
+				"entries": [
+					"你能在你 60 呎內的微光中視物，如同在明亮光照中一樣；在黑暗中視物，如同在微光中一樣。你在黑暗中只能辨別灰階，無法辨別顏色。"
+				],
+				"ENG_name": "Darkvision"
+			},
+			{
+				"type": "entries",
+				"name": "獵人直覺",
+				"entries": [
+					"進行感知（{@skill Perception}）或感知（{@skill Survival}）檢定時，你可以擲一顆 {@dice d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Hunter's Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "尋覓者魔法",
+				"entries": [
+					"你可以用此特性施展{@spell hunter's mark}法術。從 3 級開始，你也可以用它施展{@spell locate object}法術。以此特性施展其中任一道法術後，直到你完成長休前都無法再以此特性施展該法術。感知是你施展這些法術的施法屬性。"
+				],
+				"ENG_name": "Finder's Magic"
+			},
+			{
+				"type": "entries",
+				"name": "語言",
+				"entries": [
+					"你能說、讀、寫通用語與哥布林語。"
+				],
+				"data": {
+					"overwrite": "Languages"
+				},
+				"ENG_name": "Languages"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「尋覓印記法術」表中的法術會加入你施法職業的法術列表。",
+					{
+						"type": "table",
+						"caption": "尋覓印記法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell faerie fire}, {@spell longstrider}"
+							],
+							[
+								"2 環",
+								"{@spell locate animals or plants}, {@spell locate object}"
+							],
+							[
+								"3 環",
+								"{@spell clairvoyance}, {@spell speak with plants}"
+							],
+							[
+								"4 環",
+								"{@spell divination}, {@spell locate creature}"
+							],
+							[
+								"5 環",
+								"{@spell commune with nature}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"overwrite": {
+			"traitTags": true,
+			"languageProficiencies": true
+		},
+		"ENG_name": "Variant; Mark of Finding"
+	},
+	"Merfolk|Ixalan; Blue|PSX": {
+		"name": "依夏蘭；藍",
+		"source": "PSX",
+		"raceName": "Merfolk",
+		"raceSource": "PSZ",
+		"page": 12,
+		"otherSources": null,
+		"ability": [
+			{
+				"int": 2
+			}
+		],
+		"skillProficiencies": [
+			{
+				"history": true,
+				"nature": true
+			}
+		],
+		"languageProficiencies": [
+			{
+				"common": true,
+				"other": true,
+				"anyStandard": 1
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "wis",
+				"known": {
+					"1": {
+						"_": [
+							{
+								"choose": "level=0|class=Wizard"
+							}
+						]
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "戲法",
+				"entries": [
+					"你從{@filter 法師法術列表|spells|class=wizard|level=0}中知道一道自選戲法。智力是你施展它的施法屬性。"
+				],
+				"type": "entries",
+				"ENG_name": "Cantrip"
+			},
+			{
+				"name": "水之知識",
+				"entries": [
+					"你獲得{@skill History}與{@skill Nature}技能的熟練。"
+				],
+				"type": "entries",
+				"ENG_name": "Lore of the Waters"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能說、讀、寫{@language Common Trade Pidgin|PSX|通用語}（若你的戰役中存在）、{@language Merfolk|PSX}，以及一種自選的額外語言。"
+				],
+				"type": "entries",
+				"data": {
+					"overwrite": "Languages"
+				},
+				"ENG_name": "Languages"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ixalan; Blue"
+	},
+	"Merfolk|Ixalan; Green|PSX": {
+		"name": "依夏蘭；綠",
+		"source": "PSX",
+		"raceName": "Merfolk",
+		"raceSource": "PSZ",
+		"page": 12,
+		"otherSources": null,
+		"ability": [
+			{
+				"wis": 2
+			}
+		],
+		"languageProficiencies": [
+			{
+				"common": true,
+				"other": true,
+				"anyStandard": 1
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "wis",
+				"known": {
+					"1": {
+						"_": [
+							{
+								"choose": "level=0|class=Druid"
+							}
+						]
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "戲法",
+				"entries": [
+					"你從{@filter 德魯伊法術列表|spells|class=Druid|level=0}中知道一道自選戲法。感知是你施展它的施法屬性。"
+				],
+				"type": "entries",
+				"ENG_name": "Cantrip"
+			},
+			{
+				"name": "荒野面具",
+				"entries": [
+					"即使你只受到樹葉、大雨、落雪、霧氣或其他自然現象的輕度遮蔽，你也可以嘗試躲藏。"
+				],
+				"type": "entries",
+				"ENG_name": "Mask of the Wild"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能說、讀、寫{@language Common Trade Pidgin|PSX|通用語}（若你的戰役中存在）、{@language Merfolk|PSX}，以及一種自選的額外語言。"
+				],
+				"type": "entries",
+				"data": {
+					"overwrite": "Languages"
+				},
+				"ENG_name": "Languages"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ixalan; Green"
+	},
+	"Merfolk|Zendikar; Cosi Creed|PSZ": {
+		"name": "贊迪卡；寇西教義",
+		"source": "PSZ",
+		"raceName": "Merfolk",
+		"raceSource": "PSZ",
+		"page": 13,
+		"otherSources": null,
+		"ability": [
+			{
+				"int": 1,
+				"cha": 2
+			}
+		],
+		"skillProficiencies": [
+			{
+				"sleight of hand": true,
+				"stealth": true
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "cha",
+				"known": {
+					"1": {
+						"_": [
+							{
+								"choose": "level=0|class=Bard"
+							}
+						]
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "戲法",
+				"entries": [
+					"你從{@filter 吟遊詩人法術列表|spells|class=bard|level=0}中知道一道自選戲法。魅力是你施展它的施法屬性。"
+				],
+				"type": "entries",
+				"ENG_name": "Cantrip"
+			},
+			{
+				"name": "詐術師教義",
+				"entries": [
+					"你獲得{@skill Sleight of Hand}與{@skill Stealth}技能的熟練。"
+				],
+				"type": "entries",
+				"ENG_name": "Creed of the Trickster"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Zendikar; Cosi Creed"
+	},
+	"Merfolk|Zendikar; Emeria Creed|PSZ": {
+		"name": "贊迪卡；艾梅莉亞教義",
+		"source": "PSZ",
+		"raceName": "Merfolk",
+		"raceSource": "PSZ",
+		"page": 13,
+		"otherSources": null,
+		"ability": [
+			{
+				"wis": 2
+			}
+		],
+		"skillProficiencies": [
+			{
+				"deception": true,
+				"persuasion": true
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "wis",
+				"known": {
+					"1": {
+						"_": [
+							{
+								"choose": "level=0|class=Druid"
+							}
+						]
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "戲法",
+				"entries": [
+					"你從{@filter 德魯伊法術列表|spells|class=druid|level=0}中知道一道自選戲法。感知是你施展它的施法屬性。"
+				],
+				"type": "entries",
+				"ENG_name": "Cantrip"
+			},
+			{
+				"name": "風之教義操縱",
+				"entries": [
+					"你獲得{@skill Deception}與{@skill Persuasion}技能的熟練。"
+				],
+				"type": "entries",
+				"ENG_name": "Wind Creed Manipulation"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Zendikar; Emeria Creed"
+	},
+	"Merfolk|Zendikar; Ula Creed|PSZ": {
+		"name": "贊迪卡；烏拉教義",
+		"source": "PSZ",
+		"raceName": "Merfolk",
+		"raceSource": "PSZ",
+		"page": 13,
+		"otherSources": null,
+		"ability": [
+			{
+				"int": 2
+			}
+		],
+		"skillProficiencies": [
+			{
+				"survival": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"navigator's tools": true
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "int",
+				"known": {
+					"1": {
+						"_": [
+							{
+								"choose": "level=0|class=Wizard"
+							}
+						]
+					}
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "戲法",
+				"entries": [
+					"你從{@filter 法師法術列表|spells|class=wizard|level=0}中知道一道自選戲法。智力是你施展它的施法屬性。"
+				],
+				"type": "entries",
+				"ENG_name": "Cantrip"
+			},
+			{
+				"name": "水之教義導航",
+				"entries": [
+					"你獲得{@item navigator's tools|phb}與{@skill Survival}技能的熟練。"
+				],
+				"type": "entries",
+				"ENG_name": "Water Creed Navigation"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Zendikar; Ula Creed"
+	},
+	"Shifter|Beasthide|ERLW": {
+		"name": "獸皮",
+		"source": "ERLW",
+		"raceName": "Shifter",
+		"raceSource": "ERLW",
+		"page": 34,
+		"reprintedAs": [
+			"Shifter|MPMM",
+			"Shifter|EFA"
+		],
+		"ability": [
+			{
+				"con": 2,
+				"str": 1
+			}
+		],
+		"traitTags": [
+			"Natural Armor"
+		],
+		"skillProficiencies": [
+			{
+				"athletics": true
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "天生運動員",
+				"entries": [
+					"你熟練{@skill Athletics}技能。"
+				],
+				"ENG_name": "Natural Athlete"
+			},
+			{
+				"type": "entries",
+				"name": "變身特性",
+				"entries": [
+					"每當你變身時，你額外獲得 {@dice 1d6} 臨時生命值。變身期間，你的護甲等級獲得 +1 加值。"
+				],
+				"ENG_name": "Shifting Feature"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Beasthide"
+	},
+	"Shifter|Longtooth|ERLW": {
+		"name": "長牙",
+		"source": "ERLW",
+		"raceName": "Shifter",
+		"raceSource": "ERLW",
+		"page": 34,
+		"reprintedAs": [
+			"Shifter|MPMM",
+			"Shifter|EFA"
+		],
+		"ability": [
+			{
+				"str": 2,
+				"dex": 1
+			}
+		],
+		"traitTags": [
+			"Natural Weapon"
+		],
+		"skillProficiencies": [
+			{
+				"intimidation": true
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "兇猛",
+				"entries": [
+					"你熟練{@skill Intimidation}技能。"
+				],
+				"ENG_name": "Fierce"
+			},
+			{
+				"type": "entries",
+				"name": "變身特性",
+				"entries": [
+					"變身期間，你可以用附贈動作以伸長的尖牙進行一次徒手打擊。若你以尖牙命中，你可以造成等同於 {@damage 1d6} + 你力量調整值的穿刺傷害，取代徒手打擊一般的鈍擊傷害。"
+				],
+				"ENG_name": "Shifting Feature"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Longtooth"
+	},
+	"Shifter|Swiftstride|ERLW": {
+		"name": "迅步",
+		"source": "ERLW",
+		"raceName": "Shifter",
+		"raceSource": "ERLW",
+		"page": 34,
+		"reprintedAs": [
+			"Shifter|MPMM",
+			"Shifter|EFA"
+		],
+		"ability": [
+			{
+				"dex": 2,
+				"cha": 1
+			}
+		],
+		"skillProficiencies": [
+			{
+				"acrobatics": true
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "優雅",
+				"entries": [
+					"你熟練{@skill Acrobatics}技能。"
+				],
+				"ENG_name": "Graceful"
+			},
+			{
+				"type": "entries",
+				"name": "變身特性",
+				"entries": [
+					"變身期間，你的步行速度增加 10 呎。此外，當一個生物在你 5 呎內結束其回合時，你可以用反應移動至多 10 呎。此反應移動不會引發借機攻擊。"
+				],
+				"ENG_name": "Shifting Feature"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Swiftstride"
+	},
+	"Shifter|Wildhunt|ERLW": {
+		"name": "狂獵",
+		"source": "ERLW",
+		"raceName": "Shifter",
+		"raceSource": "ERLW",
+		"page": 34,
+		"reprintedAs": [
+			"Shifter|MPMM",
+			"Shifter|EFA"
+		],
+		"ability": [
+			{
+				"wis": 2,
+				"dex": 1
+			}
+		],
+		"skillProficiencies": [
+			{
+				"survival": true
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "天生追蹤者",
+				"entries": [
+					"你熟練{@skill Survival}技能。"
+				],
+				"ENG_name": "Natural Tracker"
+			},
+			{
+				"type": "entries",
+				"name": "變身特性",
+				"entries": [
+					"變身期間，你的感知檢定具有優勢，且除非你處於{@condition incapacitated}狀態，否則你 30 呎內沒有任何生物能以優勢對你進行攻擊檢定。"
+				],
+				"ENG_name": "Shifting Feature"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Wildhunt"
+	},
+	"Tiefling|Variant; Devil's Tongue|SCAG": {
+		"name": "變體；魔鬼之舌",
+		"source": "SCAG",
+		"raceName": "Tiefling",
+		"raceSource": "PHB",
+		"page": 118,
+		"ability": [
+			{
+				"int": 1,
+				"choose": {
+					"from": [
+						"dex",
+						"cha"
+					],
+					"count": 1,
+					"amount": 2
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"charm person#2"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"enthrall"
+							]
+						}
+					}
+				},
+				"ability": "cha",
+				"known": {
+					"1": [
+						"vicious mockery#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "外貌",
+				"entries": [
+					"你的提夫林可能看起來與其他提夫林不同。不採用《玩家手冊》中描述的外貌特徵，而是從下列特徵中選擇 {@dice 1d4+1} 項：小角；尖牙或利齒；分岔的舌頭；貓一般的眼睛；每隻手有六根手指；山羊般的腿；偶蹄；分岔的尾巴；皮革般或長鱗的皮膚；紅色或深藍色的皮膚；沒有影子或倒影；散發硫磺味。"
+				],
+				"type": "entries",
+				"ENG_name": "Appearance"
+			},
+			{
+				"type": "entries",
+				"name": "魔鬼之舌",
+				"entries": [
+					"你知道{@spell vicious mockery}戲法。當你達到 3 級時，你可以用此特性將{@spell charm person}法術作為 2 環法術施展一次。當你達到 5 級時，你可以用此特性施展{@spell enthrall}法術一次。你必須完成長休才能再以此特性施展這些法術。魅力是你施展它們的施法屬性。此特性取代煉獄傳承特性。"
+				],
+				"data": {
+					"overwrite": "Infernal Legacy"
+				},
+				"ENG_name": "Devil's Tongue"
+			}
+		],
+		"overwrite": {
+			"ability": true
+		},
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Variant; Devil's Tongue"
+	},
+	"Tiefling|Variant; Hellfire|SCAG": {
+		"name": "變體；地獄火",
+		"source": "SCAG",
+		"raceName": "Tiefling",
+		"raceSource": "PHB",
+		"page": 118,
+		"ability": [
+			{
+				"int": 1,
+				"choose": {
+					"from": [
+						"dex",
+						"cha"
+					],
+					"count": 1,
+					"amount": 2
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"burning hands#2"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"darkness"
+							]
+						}
+					}
+				},
+				"ability": "cha",
+				"known": {
+					"1": [
+						"thaumaturgy#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "外貌",
+				"entries": [
+					"你的提夫林可能看起來與其他提夫林不同。不採用《玩家手冊》中描述的外貌特徵，而是從下列特徵中選擇 {@dice 1d4+1} 項：小角；尖牙或利齒；分岔的舌頭；貓一般的眼睛；每隻手有六根手指；山羊般的腿；偶蹄；分岔的尾巴；皮革般或長鱗的皮膚；紅色或深藍色的皮膚；沒有影子或倒影；散發硫磺味。"
+				],
+				"type": "entries",
+				"ENG_name": "Appearance"
+			},
+			{
+				"type": "entries",
+				"name": "地獄火",
+				"entries": [
+					"你知道{@spell thaumaturgy}戲法。當你達到 3 級時，你可以每日將{@spell burning hands}法術作為 2 環法術施展一次；你必須完成長休才能再以此特性施展該法術。當你達到 5 級時，你也可以施展{@spell darkness}法術；你必須完成長休才能再以此特性施展該法術。魅力是你施展這些法術的施法屬性。"
+				],
+				"data": {
+					"overwrite": "Infernal Legacy"
+				},
+				"ENG_name": "Hellfire"
+			}
+		],
+		"overwrite": {
+			"ability": true
+		},
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Variant; Hellfire"
+	},
+	"Tiefling|Variant; Infernal Legacy|SCAG": {
+		"name": "變體；煉獄傳承",
+		"source": "SCAG",
+		"raceName": "Tiefling",
+		"raceSource": "PHB",
+		"page": 118,
+		"ability": [
+			{
+				"int": 1,
+				"choose": {
+					"from": [
+						"dex",
+						"cha"
+					],
+					"count": 1,
+					"amount": 2
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"hellish rebuke"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"darkness"
+							]
+						}
+					}
+				},
+				"ability": "cha",
+				"known": {
+					"1": [
+						"thaumaturgy#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "外貌",
+				"entries": [
+					"你的提夫林可能看起來與其他提夫林不同。不採用《玩家手冊》中描述的外貌特徵，而是從下列特徵中選擇 {@dice 1d4+1} 項：小角；尖牙或利齒；分岔的舌頭；貓一般的眼睛；每隻手有六根手指；山羊般的腿；偶蹄；分岔的尾巴；皮革般或長鱗的皮膚；紅色或深藍色的皮膚；沒有影子或倒影；散發硫磺味。"
+				],
+				"type": "entries",
+				"ENG_name": "Appearance"
+			}
+		],
+		"overwrite": {
+			"ability": true
+		},
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Variant; Infernal Legacy"
+	},
+	"Tiefling|Variant; Winged|SCAG": {
+		"name": "變體；有翼",
+		"source": "SCAG",
+		"raceName": "Tiefling",
+		"raceSource": "PHB",
+		"page": 118,
+		"speed": {
+			"walk": 30,
+			"fly": 30
+		},
+		"ability": [
+			{
+				"int": 1,
+				"choose": {
+					"from": [
+						"dex",
+						"cha"
+					],
+					"count": 1,
+					"amount": 2
+				}
+			}
+		],
+		"traitTags": [
+			"Uncommon Race"
+		],
+		"additionalSpells": null,
+		"entries": [
+			{
+				"name": "外貌",
+				"entries": [
+					"你的提夫林可能看起來與其他提夫林不同。不採用《玩家手冊》中描述的外貌特徵，而是從下列特徵中選擇 {@dice 1d4+1} 項：小角；尖牙或利齒；分岔的舌頭；貓一般的眼睛；每隻手有六根手指；山羊般的腿；偶蹄；分岔的尾巴；皮革般或長鱗的皮膚；紅色或深藍色的皮膚；沒有影子或倒影；散發硫磺味。"
+				],
+				"type": "entries",
+				"ENG_name": "Appearance"
+			},
+			{
+				"type": "entries",
+				"name": "有翼",
+				"entries": [
+					"你的肩胛骨長出蝙蝠般的翅膀。未穿著重甲時，你擁有 30 呎的飛行速度。"
+				],
+				"data": {
+					"overwrite": "Infernal Legacy"
+				},
+				"ENG_name": "Winged"
+			}
+		],
+		"overwrite": {
+			"ability": true,
+			"traitTags": true
+		},
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Variant; Winged"
+	},
+	"Vampire|Ixalan|PSX": {
+		"name": "依夏蘭",
+		"source": "PSX",
+		"raceName": "Vampire",
+		"raceSource": "PSZ",
+		"page": 14,
+		"otherSources": null,
+		"ability": [
+			{
+				"wis": 1
+			}
+		],
+		"entries": [
+			{
+				"name": "年齡",
+				"type": "entries",
+				"entries": [
+					"吸血鬼成熟與衰老的方式與其他種族不同。"
+				],
+				"data": {
+					"overwrite": "Age"
+				},
+				"ENG_name": "Age"
+			},
+			{
+				"name": "陣營",
+				"type": "entries",
+				"entries": [
+					"吸血鬼或許沒有天生的邪惡傾向，但他們之中許多人最終走向邪惡。無論邪惡與否，嚴格的階級制度使他們傾向守序陣營。"
+				],
+				"data": {
+					"overwrite": "Alignment"
+				},
+				"ENG_name": "Alignment"
+			},
+			{
+				"type": "entries",
+				"name": "尺寸",
+				"entries": [
+					"吸血鬼的體型與身材與人類相同。你的體型為中型。"
+				],
+				"data": {
+					"overwrite": "Size"
+				},
+				"ENG_name": "Size"
+			},
+			{
+				"type": "entries",
+				"name": "血之盛宴",
+				"entries": [
+					"當你以渴血能力汲取血液時，你會感到一股活力湧現。在 1 分鐘內，你的速度增加 10 呎，且你的力量與敏捷檢定及豁免檢定具有優勢。"
+				],
+				"ENG_name": "Feast of Blood"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能說、讀、寫{@language Common Trade Pidgin|PSX|通用語}（若你的戰役中存在）與{@language Vampire|PSX}。"
+				],
+				"type": "entries",
+				"data": {
+					"overwrite": "Languages"
+				},
+				"ENG_name": "Languages"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ixalan"
+	},
+	"Vampire|Zendikar|PSZ": {
+		"name": "贊迪卡",
+		"source": "PSZ",
+		"raceName": "Vampire",
+		"raceSource": "PSZ",
+		"page": 14,
+		"otherSources": null,
+		"ability": [
+			{
+				"int": 1
+			}
+		],
+		"entries": [
+			{
+				"name": "空無轉化",
+				"entries": [
+					"被你以渴血能力殺死的類人生物會成為{@creature Vampire Null|PSZ|空無者}。"
+				],
+				"type": "entries",
+				"ENG_name": "Null Transformation"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Zendikar"
+	}
+}

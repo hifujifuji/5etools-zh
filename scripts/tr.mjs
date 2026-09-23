@@ -34,6 +34,7 @@ const FILES_BY_PROP = {
 	optionalfeature: () => ["optionalfeatures.json"],
 	background: () => ["backgrounds.json"],
 	race: () => ["races.json"],
+	subrace: () => ["races.json"],
 	raceFluff: () => ["fluff-races.json"],
 	monster: () => fs.readdirSync(path.join(DATA, "bestiary")).filter(f => f.startsWith("bestiary-")).map(f => `bestiary/${f}`),
 	object: () => ["objects.json"],

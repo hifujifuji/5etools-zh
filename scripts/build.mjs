@@ -29,7 +29,7 @@ execFileSync("rsync", [
 
 // ---- 2. 載入翻譯 -----------------------------------------------------------
 // 全站統一用語（hazmole 與本站譯法不同者）
-const TERM_FIX = [[/睿知/g, "感知"]];
+const TERM_FIX = [[/睿知/g, "感知"], [/\{@5etools feat\|feats\.html\}/g, "{@5etools 專長|feats.html}"]];
 const readI18n = f => JSON.parse(TERM_FIX.reduce((s, [re, to]) => s.replace(re, to), fs.readFileSync(f, "utf8")));
 const loadDir = dir => {
 	const out = {};
@@ -154,6 +154,26 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 			for (const k of ["weapons", "armor", "tools"]) { tr1(cls.startingProficiencies?.[k]); tr1(cls.multiclassing?.proficienciesGained?.[k]); }
 		}
 	}
+}
+
+// ---- 3a'. 種族／背景／專長中完全比對的句子（含 _copy、_versions；i18n/exact-strings.json） --------
+{
+	const ex = readI18n(path.join(I18N, "exact-strings.json"));
+	const PROPS = new Set(["race", "subrace", "background", "feat"]);
+	// name 只在「巢狀的條目」（有 entries）裡翻；replace／names 等是 _copy 用來比對的鍵，不能動
+	// _copy 裡的條目名稱會被後續的 _copy 用來比對，一律不翻
+	const walk = (v, depth = 0, inCopy = false) => {
+		if (typeof v === "string") return ex[v] ?? v;
+		if (Array.isArray(v)) { for (let i = 0; i < v.length; ++i) v[i] = walk(v[i], depth + 1, inCopy); return v; }
+		if (v && typeof v === "object") {
+			for (const k of Object.keys(v)) {
+				if (k === "name") continue; // 條目名稱可能被其他 _copy 以英文比對，不動
+				if (!["source", "replace", "mode", "prop", "names"].includes(k)) v[k] = walk(v[k], depth + 1, inCopy || k === "_copy");
+			}
+		}
+		return v;
+	};
+	for (const {json} of loaded) for (const p of PROPS) for (const ent of json[p] || []) walk(ent);
 }
 
 // ---- 3b. 中文句子裡的標籤補上中文顯示名：{@spell Fireball|XPHB} → {@spell Fireball|XPHB|火球術} ------

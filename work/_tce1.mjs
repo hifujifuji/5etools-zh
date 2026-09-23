@@ -1,5 +1,5 @@
 import fill from "./_tcefill.mjs";
-const ASI = lv => [null, `當你達到 ${lv} 級時，你可以將一項自選屬性值提升 2，或將兩項自選屬性值各提升 1。一如往常，你無法以此特性將屬性值提升到 20 以上。`, "若你的 DM 允許使用專長，你可以改為選擇一個{@5etools feat|feats.html}。"];
+const ASI = lv => [null, `當你達到 ${lv} 級時，你可以將一項自選屬性值提升 2，或將兩項自選屬性值各提升 1。一如往常，你無法以此特性將屬性值提升到 20 以上。`, "若你的 DM 允許使用專長，你可以改為選擇一個{@5etools 專長|feats.html}。"];
 const SPEC = ["奇械師專精特性", "你獲得所選奇械師專精賦予的一項特性。"];
 fill("tce-art-class", [[null, "注能", "注能物品", null]]);
 fill("tce-art-classFeature", [
