@@ -194,6 +194,45 @@ const walkStrings = (v, inZh = false) => {
 	}
 	return v;
 };
+// 怪物法術清單：所有怪物（含 _copy 的 replaceSpells/addSpells）一律用同一個 fillTags 補中文名，
+// 基底與複製端的字串經過相同轉換，字串比對仍然對得上
+const SPELL_LIST_KEYS = new Set(["will", "daily", "spells", "weekly", "monthly", "yearly", "rest", "restLong", "ritual", "recharge", "charges", "legendary", "replace", "with"]);
+// 法術清單後綴「(level 7 version)」等；認不得的後綴就整串保留原樣
+const SPELL_SUFFIX_ZH = suf => {
+	const s = suf.trim().slice(1, -1);
+	const parts = s.split(/, | and /).map(p => {
+		let m;
+		if ((m = /^level (\d) version$/i.exec(p))) return `${m[1]} 環版本`;
+		if ((m = /^(\d)(?:st|nd|rd|th)[- ]level(?: version)?$/i.exec(p))) return `${m[1]} 環版本`;
+		return {
+			"included in AC": "已計入 AC", "self only": "僅限自身", "cast before combat": "戰鬥前施展", "self": "僅限自身",
+			"see below": "見下文", "see \"Actions\" below": "見下方「動作」", "as an action": "作為一個動作",
+			"can become invisible": "可以隱形", "Humanoid form only": "僅限類人形態", "humanoid form only": "僅限類人形態",
+		}[p] ?? null;
+	});
+	return parts.every(Boolean) ? `（${parts.join("，")}）` : null;
+};
+const fillSpellLists = v => {
+	if (typeof v === "string") {
+		if (RE_ONLY_TAGS.test(v)) return fillTags(v);
+		const m = /^(\{@spell [^{}]+\})( \(.+\))$/.exec(v);
+		if (!m) return v;
+		const suf = SPELL_SUFFIX_ZH(m[2]);
+		return suf ? fillTags(m[1]) + suf : v;
+	}
+	if (Array.isArray(v)) { for (let i = 0; i < v.length; ++i) v[i] = fillSpellLists(v[i]); return v; }
+	if (v && typeof v === "object") { for (const k of Object.keys(v)) if (SPELL_LIST_KEYS.has(k) || /^\d+e?$/.test(k)) v[k] = fillSpellLists(v[k]); }
+	return v;
+};
+for (const {json} of loaded) {
+	for (const mon of json.monster || []) {
+		for (const sc of mon.spellcasting || []) fillSpellLists(sc);
+		for (const m of Object.values(mon._copy?._mod || {}).flat()) {
+			if (m && typeof m === "object" && /Spells$/.test(m.mode || "")) fillSpellLists(m);
+		}
+	}
+}
+
 for (const {file, json} of loaded) {
 	walkStrings(json);
 	writeJson(file, json, {pretty: false});

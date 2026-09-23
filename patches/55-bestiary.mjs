@@ -84,6 +84,62 @@ Parser._getSpeedString_getSpeedName = ({prop, styleHint}) => prop === "walk" ? "
 	{
 		file: "js/render.js",
 		replace: [
+			// 怪物施法的法術清單標籤：「隨意：」「每日各 2 次：」「1 環（4 個欄位）：」
+			[
+				`name: \`Constant:\`, entry: this._renderSpellcasting_getRenderableList(entry.constant).join(", ")`,
+				`name: \`持續：\`, entry: this._renderSpellcasting_getRenderableList(entry.constant).join("、")`,
+			],
+			[
+				`name: \`At will:\`, entry: this._renderSpellcasting_getRenderableList(entry.will).join(", ")`,
+				`name: \`隨意：\`, entry: this._renderSpellcasting_getRenderableList(entry.will).join("、")`,
+			],
+			[
+				`name: \`Rituals:\`, entry: this._renderSpellcasting_getRenderableList(entry.ritual).join(", ")`,
+				`name: \`儀式：\`, entry: this._renderSpellcasting_getRenderableList(entry.ritual).join("、")`,
+			],
+			[
+				`					let levelCantrip = \`\${Parser.spLevelToFull(lvl)}\${(lvl === 0 ? "s" : " level")}\`;
+					let slotsAtWill = \` (at will)\`;
+					const slots = spells.slots;
+					if (slots >= 0) slotsAtWill = slots > 0 ? \` (\${slots} slot\${slots > 1 ? "s" : ""})\` : \`\`;
+					if (spells.lower && spells.lower !== lvl) {
+						levelCantrip = \`\${Parser.spLevelToFull(spells.lower)}-\${levelCantrip}\`;
+						if (slots >= 0) slotsAtWill = slots > 0 ? \` (\${slots} \${Parser.spLevelToFull(lvl)}-level slot\${slots > 1 ? "s" : ""})\` : \`\`;
+					}
+					tempList.items.push({type: "itemSpell", name: \`\${levelCantrip}\${slotsAtWill}:\`, entry: this._renderSpellcasting_getRenderableList(spells.spells).join(", ") || "\\u2014"});`,
+				`					let levelCantrip = lvl === 0 ? "戲法" : \`\${lvl} 環\`;
+					let slotsAtWill = \`（隨意）\`;
+					const slots = spells.slots;
+					if (slots >= 0) slotsAtWill = slots > 0 ? \`（\${slots} 個欄位）\` : \`\`;
+					if (spells.lower && spells.lower !== lvl) {
+						levelCantrip = \`\${spells.lower}–\${lvl} 環\`;
+						if (slots >= 0) slotsAtWill = slots > 0 ? \`（\${slots} 個 \${lvl} 環欄位）\` : \`\`;
+					}
+					tempList.items.push({type: "itemSpell", name: \`\${levelCantrip}\${slotsAtWill}：\`, entry: this._renderSpellcasting_getRenderableList(spells.spells).join("、") || "\\u2014"});`,
+			],
+			[
+				`					name: \`\${isSkipPrefix ? "" : lvl}\${fnGetDurationText ? fnGetDurationText(lvl) : durationText}:\`,
+					entry: this._renderSpellcasting_getRenderableList(perDur[lvl]).join(", "),`,
+				`					name: \`\${__zhPer(prop, lvl, false) ?? \`\${isSkipPrefix ? "" : lvl}\${fnGetDurationText ? fnGetDurationText(lvl) : durationText}\`}：\`,
+					entry: this._renderSpellcasting_getRenderableList(perDur[lvl]).join("、"),`,
+			],
+			[
+				`					name: \`\${isSkipPrefix ? "" : lvl}\${fnGetDurationText ? fnGetDurationText(lvl) : durationText}\${isHideEach ? "" : \` each\`}:\`,
+					entry: this._renderSpellcasting_getRenderableList(perDur[lvlEach]).join(", "),`,
+				`					name: \`\${__zhPer(prop, lvl, !isHideEach) ?? \`\${isSkipPrefix ? "" : lvl}\${fnGetDurationText ? fnGetDurationText(lvl) : durationText}\${isHideEach ? "" : \` each\`}\`}：\`,
+					entry: this._renderSpellcasting_getRenderableList(perDur[lvlEach]).join("、"),`,
+			],
+			[
+				`	this._renderSpellcasting_getEntries_procPerDuration = function ({entry, hidden, tempList, prop, durationText, fnGetDurationText, isSkipPrefix}) {`,
+				`	this._renderSpellcasting_getEntries_procPerDuration = function ({entry, hidden, tempList, prop, durationText, fnGetDurationText, isSkipPrefix}) {
+		const __ZH_PER = {daily: "每日", weekly: "每週", monthly: "每月", yearly: "每年", rest: "每次休息", restLong: "每次長休"};
+		const __zhPer = (prop, n, each) => {
+			if (__ZH_PER[prop]) return \`\${__ZH_PER[prop]}\${each ? "各" : ""} \${n} 次\`;
+			if (prop === "legendary") return \`\${n} 個傳奇動作\${each ? "（各）" : ""}\`;
+			if (prop === "charges") return \`\${n} 充能\${each ? "（各）" : ""}\`;
+			return null;
+		};`,
+			],
 			// 語言
 			[
 				`	static getRenderedLanguages (languages, {styleHint = null} = {}) {`,
