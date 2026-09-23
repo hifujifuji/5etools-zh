@@ -1,0 +1,625 @@
+{
+	"batch": "xphb-ranger",
+	"items": [
+		{
+			"prop": "class",
+			"key": "Ranger|XPHB",
+			"hint": {
+				"Ranger": "遊俠",
+				"Fighting Style": "戰鬥風格",
+				"Epic Boon": "史詩恩賜"
+			},
+			"s": [
+				"Ranger",
+				"Fighting Style",
+				"Epic Boon",
+				"{@i Choose A or B:} (A) {@item Studded Leather Armor|XPHB}, {@item Scimitar|XPHB}, {@item Shortsword|XPHB}, {@item Longbow|XPHB}, {@item Arrows (20)|XPHB|20 Arrows}, {@item Quiver|XPHB}, {@item Druidic Focus|XPHB} ({@item sprig of mistletoe|XPHB}), {@item Explorer's Pack|XPHB}, and 7 GP; or (B) 150 GP",
+				"Favored Enemy",
+				"Spell Slots per Spell Level"
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Favored Enemy|Ranger|XPHB|1",
+			"hint": {
+				"Favored Enemy": "宿敵"
+			},
+			"s": [
+				"Favored Enemy",
+				"You always have the {@spell Hunter's Mark|XPHB} spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a {@variantrule Long Rest|XPHB}.",
+				"The number of times you can cast the spell without a spell slot increases when you reach certain Ranger levels, as shown in the Favored Enemy column of the Ranger Features table."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Spellcasting|Ranger|XPHB|1",
+			"hint": {
+				"Spellcasting": "施法",
+				"Spell Slots": "法術欄位",
+				"Prepared Spells of Level 1+": "1 環以上的準備法術",
+				"Changing Your Prepared Spells": "更換準備法術",
+				"Spellcasting Ability": "施法屬性",
+				"Spellcasting Focus": "施法法器"
+			},
+			"s": [
+				"Spellcasting",
+				"You have learned to channel the magical essence of nature to cast spells. See {@book chapter 7|XPHB|7} for the rules on spellcasting. The information below details how you use those rules with Ranger spells, which appear in the {@filter Ranger spell list|spells|class=Ranger} later in the class's description.",
+				"Spell Slots",
+				"The Ranger Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|XPHB}.",
+				"Prepared Spells of Level 1+",
+				"You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two {@filter level 1 Ranger spells|spells|class=Ranger|level=1}. {@spell Cure Wounds|XPHB} and {@spell Ensnaring Strike|XPHB} are recommended.",
+				"The number of spells on your list increases as you gain Ranger levels, as shown in the Prepared Spells column of the Ranger Features table. Whenever that number increases, choose additional Ranger spells until the number of spells on your list matches the number in the Ranger Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Ranger, your list of prepared spells can include six Ranger spells of level 1 or 2 in any combination.",
+				"If another Ranger feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Ranger spells for you.",
+				"Changing Your Prepared Spells",
+				"Whenever you finish a {@variantrule Long Rest|XPHB}, you can replace one spell on your list with another Ranger spell for which you have spell slots.",
+				"Spellcasting Ability",
+				"Wisdom is your spellcasting ability for your Ranger spells.",
+				"Spellcasting Focus",
+				"You can use a {@item Druidic Focus|XPHB} as a {@variantrule Spellcasting Focus|XPHB} for your Ranger spells."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Weapon Mastery|Ranger|XPHB|1",
+			"hint": {
+				"Weapon Mastery": "武器精通"
+			},
+			"s": [
+				"Weapon Mastery",
+				"Your training with weapons allows you to use the {@variantrule weapon mastery properties|XPHB|mastery properties} of two kinds of {@filter weapons|items|type=simple weapon;martial weapon} of your choice with which you have proficiency, such as {@item Longbow|XPHB|Longbows} and {@item Shortsword|XPHB|Shortswords}.",
+				"Whenever you finish a {@variantrule Long Rest|XPHB}, you can change the kinds of weapons you chose. For example, you could switch to using the {@variantrule weapon mastery properties|XPHB|mastery properties} of {@item Scimitar|XPHB|Scimitars} and {@item Longsword|XPHB|Longswords}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Deft Explorer|Ranger|XPHB|2",
+			"hint": {
+				"Expertise": "專精"
+			},
+			"s": [
+				"Deft Explorer",
+				"Thanks to your travels, you gain the following benefits.",
+				"Expertise",
+				"Choose one of your skill proficiencies with which you lack {@variantrule Expertise|XPHB}. You gain {@variantrule Expertise|XPHB} in that skill.",
+				"Languages",
+				"You know two languages of your choice from the language tables in {@book chapter 2|XPHB|2|Choose Languages}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Fighting Style|Ranger|XPHB|2",
+			"hint": {
+				"Fighting Style": "戰鬥風格"
+			},
+			"s": [
+				"Fighting Style",
+				"You gain a {@filter Fighting Style feat|feats|category=FS} of your choice. Instead of choosing one of those feats, you can choose the option below."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ranger Subclass|Ranger|XPHB|3",
+			"s": [
+				"Ranger Subclass",
+				"You gain a Ranger subclass of your choice. A subclass is a specialization that grants you features at certain Ranger levels. For the rest of your career, you gain each of your subclass's features that are of your Ranger level or lower."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Ranger|XPHB|4",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Ranger levels 8, 12, and 16."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Extra Attack|Ranger|XPHB|5",
+			"hint": {
+				"Extra Attack": "額外攻擊"
+			},
+			"s": [
+				"Extra Attack",
+				"You can attack twice instead of once whenever you take the {@action Attack|XPHB} action on your turn."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Roving|Ranger|XPHB|6",
+			"s": [
+				"Roving",
+				"Your {@variantrule Speed|XPHB} increases by 10 feet while you aren't wearing Heavy armor. You also have a {@variantrule Climb Speed|XPHB} and a {@variantrule Swim Speed|XPHB} equal to your {@variantrule Speed|XPHB}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Subclass Feature|Ranger|XPHB|7",
+			"hint": {
+				"Subclass Feature": "子職業特性"
+			},
+			"s": [
+				"Subclass Feature",
+				"You gain a feature from your Ranger Subclass."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Ranger|XPHB|8",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Expertise|Ranger|XPHB|9",
+			"hint": {
+				"Expertise": "專精"
+			},
+			"s": [
+				"Expertise",
+				"Choose two of your skill proficiencies with which you lack {@variantrule Expertise|XPHB}. You gain {@variantrule Expertise|XPHB} in those skills."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Tireless|Ranger|XPHB|10",
+			"hint": {
+				"Temporary Hit Points": "臨時生命值"
+			},
+			"s": [
+				"Tireless",
+				"Primal forces now help fuel you on your journeys, granting you the following benefits.",
+				"Temporary Hit Points",
+				"As a {@action Magic|XPHB} action, you can give yourself a number of {@variantrule Temporary Hit Points|XPHB} equal to {@dice 1d8} plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+				"Decrease Exhaustion",
+				"Whenever you finish a {@variantrule Short Rest|XPHB}, your {@condition Exhaustion|XPHB} level, if any, decreases by 1."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Subclass Feature|Ranger|XPHB|11",
+			"hint": {
+				"Subclass Feature": "子職業特性"
+			},
+			"s": [
+				"Subclass Feature",
+				"You gain a feature from your Ranger Subclass."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Ranger|XPHB|12",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Relentless Hunter|Ranger|XPHB|13",
+			"s": [
+				"Relentless Hunter",
+				"Taking damage can't break your {@status Concentration|XPHB} on Hunter's Mark."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Nature's Veil|Ranger|XPHB|14",
+			"s": [
+				"Nature's Veil",
+				"You invoke spirits of nature to magically hide yourself. As a {@variantrule Bonus Action|XPHB}, you can give yourself the {@condition Invisible|XPHB} condition until the end of your next turn.",
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Subclass Feature|Ranger|XPHB|15",
+			"hint": {
+				"Subclass Feature": "子職業特性"
+			},
+			"s": [
+				"Subclass Feature",
+				"You gain a feature from your Ranger Subclass."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Ranger|XPHB|16",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Precise Hunter|Ranger|XPHB|17",
+			"s": [
+				"Precise Hunter",
+				"You have {@variantrule Advantage|XPHB} on attack rolls against the creature currently marked by your Hunter's Mark."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Feral Senses|Ranger|XPHB|18",
+			"hint": {
+				"Feral Senses": "野性感官"
+			},
+			"s": [
+				"Feral Senses",
+				"Your connection to the forces of nature grants you {@sense Blindsight|XPHB} with a range of 30 feet."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Epic Boon|Ranger|XPHB|19",
+			"hint": {
+				"Epic Boon": "史詩恩賜"
+			},
+			"s": [
+				"Epic Boon",
+				"You gain an {@filter Epic Boon feat|feats|category=EB} or another {@5etools feat|feats.html} of your choice for which you qualify. {@feat Boon of Dimensional Travel|XPHB} is recommended."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Foe Slayer|Ranger|XPHB|20",
+			"hint": {
+				"Foe Slayer": "眾敵屠戮"
+			},
+			"s": [
+				"Foe Slayer",
+				"The damage die of your Hunter's Mark is a {@damage d10} rather than a {@damage d6}."
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "Beast Master|Ranger|XPHB",
+			"hint": {
+				"Beast Master": "獸王"
+			},
+			"s": [
+				"Beast Master"
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "Fey Wanderer|Ranger|XPHB",
+			"s": [
+				"Fey Wanderer"
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "Gloom Stalker|Ranger|XPHB",
+			"hint": {
+				"Gloom Stalker": "幽域追蹤者"
+			},
+			"s": [
+				"Gloom Stalker"
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "Hunter|Ranger|XPHB",
+			"hint": {
+				"Hunter": "獵人"
+			},
+			"s": [
+				"Hunter"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Beast Master|Ranger|Beast Master|XPHB",
+			"hint": {
+				"Beast Master": "獸王"
+			},
+			"s": [
+				"Beast Master",
+				"A Beast Master forms a mystical bond with a special animal, drawing on primal magic and a deep connection to the natural world."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Dread Ambusher|Ranger|Gloom Stalker|XPHB",
+			"hint": {
+				"Dread Ambusher": "懼怖伏兵"
+			},
+			"s": [
+				"Dread Ambusher",
+				"You have mastered the art of creating fearsome ambushes, granting you the following benefits.",
+				"Ambusher's Leap",
+				"At the start of your first turn of each combat, your {@variantrule Speed|XPHB} increases by 10 feet until the end of that turn.",
+				"Dreadful Strike",
+				"When you attack a creature and hit it with a weapon, you can deal an extra {@damage 2d6} Psychic damage. You can use this benefit only once per turn, you can use it a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+				"Initiative Bonus",
+				"When you roll {@variantrule Initiative|XPHB}, you can add your Wisdom modifier to the roll."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Dreadful Strikes|Ranger|Fey Wanderer|XPHB",
+			"s": [
+				"Dreadful Strikes",
+				"You can augment your weapon strikes with mind-scarring magic drawn from the murky hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra {@damage 1d4} Psychic damage to the target, which can take this extra damage only once per turn. The extra damage increases to {@damage 1d6} when you reach Ranger level 11."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Fey Wanderer|Ranger|Fey Wanderer|XPHB",
+			"s": [
+				"Fey Wanderer",
+				"A fey mystique surrounds you, thanks to the boon of an archfey or a location in the Feywild that transformed you. However you gained fey magic, you are now a Fey Wanderer. Your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Fey Wanderer Spells|Ranger|Fey Wanderer|XPHB",
+			"s": [
+				"Fey Wanderer Spells",
+				"When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.",
+				"Fey Wanderer Spells",
+				"Ranger Level",
+				"Spells",
+				"3rd",
+				"5th",
+				"9th",
+				"13th",
+				"17th",
+				"You also possess a fey blessing. Choose it from the Feywild Gifts table or determine it randomly.",
+				"Feywild Gifts",
+				"1d6",
+				"Gift",
+				"Illusory butterflies flutter around you while you take a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
+				"Flowers bloom from your hair each dawn.",
+				"You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice.",
+				"Your shadow dances while no one is looking directly at it.",
+				"Horns or antlers sprout from your head.",
+				"Your skin and hair change color each dawn."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Gloom Stalker|Ranger|Gloom Stalker|XPHB",
+			"hint": {
+				"Gloom Stalker": "幽域追蹤者"
+			},
+			"s": [
+				"Gloom Stalker",
+				"Gloom Stalkers are at home in the darkest places, wielding magic drawn from the Shadowfell to combat enemies that lurk in darkness."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Gloom Stalker Spells|Ranger|Gloom Stalker|XPHB",
+			"s": [
+				"Gloom Stalker Spells",
+				"When you reach a Ranger level specified in the Gloom Stalker Spells table, you thereafter always have the listed spells prepared.",
+				"Gloom Stalker Spells",
+				"Ranger Level",
+				"Spells",
+				"3rd",
+				"5th",
+				"9th",
+				"13th",
+				"17th"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Hunter|Ranger|Hunter|XPHB",
+			"hint": {
+				"Hunter": "獵人"
+			},
+			"s": [
+				"Hunter",
+				"You stalk prey in the wilds and elsewhere, using your abilities as a Hunter to protect nature and people everywhere from forces that would destroy them."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Hunter's Lore|Ranger|Hunter|XPHB",
+			"s": [
+				"Hunter's Lore",
+				"You can call on the forces of nature to reveal certain strengths and weaknesses of your prey. While a creature is marked by your Hunter's Mark, you know whether that creature has any Immunities, Resistances, or Vulnerabilities, and if the creature has any, you know what they are."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Hunter's Prey|Ranger|Hunter|XPHB",
+			"hint": {
+				"Hunter's Prey": "狩者獵物"
+			},
+			"s": [
+				"Hunter's Prey",
+				"You gain one of the following feature options of your choice. Whenever you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}, you can replace the chosen option with the other one.",
+				"Colossus Slayer",
+				"Your tenacity can wear down even the most resilient foes. When you hit a creature with a weapon, the weapon deals an extra {@damage 1d8} damage to the target if it's missing any of its {@variantrule Hit Points|XPHB}. You can deal this extra damage only once per turn.",
+				"Horde Breaker",
+				"Once on each of your turns when you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target, that is within the weapon's range, and that you haven't attacked this turn."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Otherworldly Glamour|Ranger|Fey Wanderer|XPHB",
+			"s": [
+				"Otherworldly Glamour",
+				"Whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).",
+				"You also gain proficiency in one of these skills of your choice: {@skill Deception|XPHB}, {@skill Performance|XPHB}, or {@skill Persuasion|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Primal Companion|Ranger|Beast Master|XPHB",
+			"s": [
+				"Primal Companion",
+				"You magically summon a primal beast, which draws strength from your bond with nature. Choose its stat block: {@creature Beast of the Land|XPHB}, {@creature Beast of the Sea|XPHB}, or {@creature Beast of the Sky|XPHB}. You also determine the kind of animal it is, choosing a kind appropriate for the stat block. Whatever beast you choose, it bears primal markings indicating its supernatural origin.",
+				"The beast is Friendly to you and your allies and obeys your commands. It vanishes if you die.",
+				"The Beast in Combat",
+				"In combat, the beast acts during your turn. It can move and use its {@variantrule Reaction|XPHB} on its own, but the only action it takes is the {@action Dodge|XPHB} action unless you take a {@variantrule Bonus Action|XPHB} to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the {@action Attack|XPHB} action to command the beast to take the Beast's Strike action. If you have the {@condition Incapacitated|XPHB} condition, the beast acts on its own and isn't limited to the {@action Dodge|XPHB} action.",
+				"Restoring or Replacing the Beast",
+				"If the beast has died within the last hour, you can take a {@action Magic|XPHB} action to touch it and expend a spell slot. The beast returns to life after 1 minute with all its {@variantrule Hit Points|XPHB} restored.",
+				"Whenever you finish a {@variantrule Long Rest|XPHB}, you can summon a different primal beast, which appears in an unoccupied space within 5 feet of you. You choose its stat block and appearance. If you already have a beast from this feature, the old one vanishes when the new one appears."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Umbral Sight|Ranger|Gloom Stalker|XPHB",
+			"hint": {
+				"Umbral Sight": "幽影視覺"
+			},
+			"s": [
+				"Umbral Sight",
+				"You gain {@sense Darkvision|XPHB} with a range of 60 feet. If you already have {@sense Darkvision|XPHB} when you gain this feature, its range increases by 60 feet.",
+				"You are also adept at evading creatures that rely on {@sense Darkvision|XPHB}. While entirely in {@variantrule Darkness|XPHB}, you have the {@condition Invisible|XPHB} condition to any creature that relies on {@sense Darkvision|XPHB} to see you in that {@variantrule Darkness|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Beguiling Twist|Ranger|Fey Wanderer|XPHB",
+			"s": [
+				"Beguiling Twist",
+				"The magic of the Feywild guards your mind. You have {@variantrule Advantage|XPHB} on saving throws to avoid or end the {@condition Charmed|XPHB} or {@condition Frightened|XPHB} condition.",
+				"In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw to avoid or end the {@condition Charmed|XPHB} or {@condition Frightened|XPHB} condition, you can take a {@variantrule Reaction|XPHB} to force a different creature you can see within 120 feet of yourself to make a Wisdom save against your spell save DC. On a failed save, the target is {@condition Charmed|XPHB} or {@condition Frightened|XPHB} (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Defensive Tactics|Ranger|Hunter|XPHB",
+			"hint": {
+				"Defensive Tactics": "防禦性戰術"
+			},
+			"s": [
+				"Defensive Tactics",
+				"You gain one of the following feature options of your choice. Whenever you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}, you can replace the chosen option with the other one.",
+				"Escape the Horde",
+				"{@action Opportunity Attack|XPHB|Opportunity Attacks} have {@variantrule Disadvantage|XPHB} against you.",
+				"Multiattack Defense",
+				"When a creature hits you with an attack roll, that creature has {@variantrule Disadvantage|XPHB} on all other attack rolls against you this turn."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Exceptional Training|Ranger|Beast Master|XPHB",
+			"hint": {
+				"Exceptional Training": "超絕訓練"
+			},
+			"s": [
+				"Exceptional Training",
+				"When you take a {@variantrule Bonus Action|XPHB} to command your Primal Companion beast to take an action, you can also command it to take the {@action Dash|XPHB}, {@action Disengage|XPHB}, {@action Dodge|XPHB}, or {@action Help|XPHB} action using its {@variantrule Bonus Action|XPHB}.",
+				"In addition, whenever it hits with an attack roll and deals damage, it can deal your choice of Force damage or its normal damage type."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Iron Mind|Ranger|Gloom Stalker|XPHB",
+			"hint": {
+				"Iron Mind": "鋼鐵心智"
+			},
+			"s": [
+				"Iron Mind",
+				"You have honed your ability to resist mind-altering powers. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice)."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Bestial Fury|Ranger|Beast Master|XPHB",
+			"hint": {
+				"Bestial Fury": "野性狂怒"
+			},
+			"s": [
+				"Bestial Fury",
+				"When you command your Primal Companion beast to take the Beast's Strike action, the beast can use it twice.",
+				"In addition, the first time each turn it hits a creature under the effect of your {@spell Hunter's Mark|XPHB} spell, the beast deals extra Force damage equal to the bonus damage of that spell."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Fey Reinforcements|Ranger|Fey Wanderer|XPHB",
+			"s": [
+				"Fey Reinforcements",
+				"You can cast {@spell Summon Fey|XPHB} without a Material component. You can also cast it once without a spell slot, and you regain the ability to cast it in this way when you finish a {@variantrule Long Rest|XPHB}.",
+				"Whenever you start casting the spell, you can modify it so that it doesn't require {@status Concentration|XPHB}. If you do so, the spell's duration becomes 1 minute for that casting."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Stalker's Flurry|Ranger|Gloom Stalker|XPHB",
+			"hint": {
+				"Stalker's Flurry": "追獵如風",
+				"Sudden Strike": "突發猛擊"
+			},
+			"s": [
+				"Stalker's Flurry",
+				"The Psychic damage of your Dreadful Strike becomes {@damage 2d8}. In addition, when you use the Dreadful Strike effect of your Dread Ambusher feature, you can cause one of the following additional effects.",
+				"Sudden Strike",
+				"You can make another attack with the same weapon against a different creature that is within 5 feet of the original target and that is within the weapon's range.",
+				"Mass Fear",
+				"The target and each creature within 10 feet of it must make a Wisdom saving throw against your spell save DC. On a failed save, a creature has the {@condition Frightened|XPHB} condition until the start of your next turn."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Superior Hunter's Prey|Ranger|Hunter|XPHB",
+			"s": [
+				"Superior Hunter's Prey",
+				"Once per turn when you deal damage to a creature marked by your Hunter's Mark, you can also deal that spell's extra damage to a different creature that you can see within 30 feet of the first creature."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Misty Wanderer|Ranger|Fey Wanderer|XPHB",
+			"s": [
+				"Misty Wanderer",
+				"You can cast {@spell Misty Step|XPHB} without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+				"In addition, whenever you cast {@spell Misty Step|XPHB}, you can bring along one willing creature you can see within 5 feet of yourself. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Shadowy Dodge|Ranger|Gloom Stalker|XPHB",
+			"hint": {
+				"Shadowy Dodge": "暗影閃避"
+			},
+			"s": [
+				"Shadowy Dodge",
+				"When a creature makes an attack roll against you, you can take a {@variantrule Reaction|XPHB} to impose {@variantrule Disadvantage|XPHB} on that roll. Whether the attack hits or misses, you can then teleport up to 30 feet to an unoccupied space you can see."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Share Spells|Ranger|Beast Master|XPHB",
+			"hint": {
+				"Share Spells": "法術共享"
+			},
+			"s": [
+				"Share Spells",
+				"When you cast a spell targeting yourself, you can also affect your Primal Companion beast with the spell if the beast is within 30 feet of you."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Superior Hunter's Defense|Ranger|Hunter|XPHB",
+			"hint": {
+				"Superior Hunter's Defense": "卓越獵人防禦"
+			},
+			"s": [
+				"Superior Hunter's Defense",
+				"When you take damage, you can take a {@variantrule Reaction|XPHB} to give yourself {@variantrule Resistance|XPHB} to that damage and any other damage of the same type until the end of the current turn."
+			]
+		}
+	]
+}

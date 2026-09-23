@@ -13,6 +13,7 @@ import {execFileSync} from "node:child_process";
 import {ROOT, UPSTREAM, readJson, writeJson, hasCjk} from "./util.mjs";
 import {Merger} from "./merge.mjs";
 import {applyPatches} from "./patch.mjs";
+import {S, makeKeyFns, loadSubclassFullNames} from "./keys.mjs";
 
 const DIST = path.join(ROOT, "dist");
 const I18N = path.join(ROOT, "i18n");
@@ -70,35 +71,9 @@ for (const prop of ["classFeature", "subclassFeature", "subrace"]) {
 const merger = new Merger({glossary});
 
 // ---- 3. 合併資料 -----------------------------------------------------------
-const S = s => (s || "").toUpperCase();
-const KEY_FN = {
-	deity: e => `${e.name}|${S(e.source)}|${e.pantheon || ""}`,
-	subrace: e => `${e.raceName}|${e.name}|${S(e.source)}`,
-	classFeature: e => `${e.name}|${e.className}|${S(e.classSource)}|${e.level}`,
-	subclassFeature: e => `${e.name}|${e.className}|${subclassFullName[`${e.className}|${e.subclassShortName}|${S(e.subclassSource)}`]}`,
-	subclass: e => `${e.name}|${e.className}`,
-	magicvariant: e => `${e.name}|${S(e.inherits?.source || e.source)}`,
-};
+const {key: keyOf, altKeys} = makeKeyFns(loadSubclassFullNames(path.join(DIST, "data")));
 const FLUFF_PROP = {monsterFluff: "fluff-monster", raceFluff: "fluff-race", backgroundFluff: "fluff-background", itemFluff: "fluff-item"};
 const NAME_PROP = {magicvariant: "magicvariant", baseitem: "baseitem", itemGroup: "item"};
-
-// subclassFeature 只記 shortName，要查回子職業完整名稱
-const subclassFullName = {};
-for (const f of fs.readdirSync(path.join(DIST, "data", "class"))) {
-	if (!f.startsWith("class-")) continue;
-	for (const sc of readJson(path.join(DIST, "data", "class", f)).subclass || []) {
-		subclassFullName[`${sc.className}|${sc.shortName}|${S(sc.source)}`] = sc.name;
-	}
-}
-
-// 舊版名稱寫法不同：「Weapon +1」→ 新版「+1 Weapon」、「Shield, +1」→「+1 Shield」
-const altKeys = (prop, ent) => {
-	if (prop !== "magicvariant") return [];
-	const m = /^\+(\d) (.+)$/.exec(ent.name);
-	if (!m) return [];
-	const src = S(ent.inherits?.source || ent.source);
-	return [`${m[2]} +${m[1]}|${src}`, `${m[2]}, +${m[1]}|${src}`, `${m[2]} +${m[1]}|DMG`, `${m[2]}, +${m[1]}|DMG`];
-};
 
 const stats = {};
 const bump = (prop, k) => { (stats[prop] ||= {total: 0, full: 0, name: 0})[k]++; };
@@ -107,8 +82,7 @@ const translateEntity = (prop, ent) => {
 	if (!ent || typeof ent !== "object" || typeof ent.name !== "string") return;
 	bump(prop, "total");
 	const trProp = FLUFF_PROP[prop] || prop;
-	const key = (KEY_FN[prop] || (e => `${e.name}|${S(e.source)}`))(ent);
-	const old = tr[trProp]?.[key] ?? altKeys(prop, ent).map(k => tr[trProp]?.[k]).find(Boolean);
+	const old = [keyOf(prop, ent), ...altKeys(prop, ent)].map(k => tr[trProp]?.[k]).find(Boolean);
 	if (old) {
 		merger.mergeEntity(ent, old);
 		if (ent.name_zh) { bump(prop, "full"); return; }
@@ -142,6 +116,7 @@ const walkDataFiles = dir => {
 
 const SKIP_PROPS = new Set(["_meta", "data"]);
 let nFiles = 0;
+const loaded = [];
 for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	const rel = path.relative(path.join(DIST, "data"), file);
 	if (rel.startsWith("foundry") || rel.includes("/foundry")) continue;
@@ -162,8 +137,56 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 		for (const ent of arr) translateEntity(prop, ent);
 		touched = true;
 	}
-	if (touched) { writeJson(file, json, {pretty: false}); nFiles++; }
+	if (touched) loaded.push({file, json});
 }
+
+// ---- 3b. 中文句子裡的標籤補上中文顯示名：{@spell Fireball|XPHB} → {@spell Fireball|XPHB|火球術} ------
+const TAG_OF_PROP = {
+	spell: "spell", monster: "creature", item: "item", baseitem: "item", magicvariant: "item", itemGroup: "item",
+	race: "race", background: "background", feat: "feat", optionalfeature: "optfeature", condition: "condition",
+	disease: "disease", status: "status", trap: "trap", hazard: "hazard", reward: "reward", object: "object",
+	variantrule: "variantrule", action: "action", skill: "skill", sense: "sense", language: "language", class: "class",
+	cult: "cult", boon: "boon", psionic: "psionic", vehicle: "vehicle", table: "table", itemMastery: "itemMastery",
+	card: "card", deck: "deck",
+};
+const tagNames = new Map();
+for (const {json} of loaded) {
+	for (const [prop, arr] of Object.entries(json)) {
+		const tag = TAG_OF_PROP[prop];
+		if (!tag || !Array.isArray(arr)) continue;
+		for (const e of arr) {
+			if (!e?.name_zh || e._zhOf !== e.name) continue;
+			const lc = e.name.toLowerCase();
+			tagNames.set(`${tag}|${lc}|${S(e.source)}`, e.name_zh);
+			if (!tagNames.has(`${tag}|${lc}`)) tagNames.set(`${tag}|${lc}`, e.name_zh);
+		}
+	}
+}
+let nTagDisplay = 0;
+const RE_TAG = /\{@(\w+) ([^{}]*)\}/g;
+const fillTags = str => str.replace(RE_TAG, (m, tag, body) => {
+	const parts = body.split("|");
+	if (parts[2] || hasCjk(parts[0])) return m;
+	const lc = parts[0].trim().toLowerCase();
+	const zh = tagNames.get(`${tag}|${lc}|${S(parts[1])}`) ?? tagNames.get(`${tag}|${lc}`);
+	if (!zh) return m;
+	while (parts.length < 2) parts.push("");
+	parts[2] = zh;
+	nTagDisplay++;
+	return `{@${tag} ${parts.join("|")}}`;
+});
+const walkStrings = v => {
+	if (typeof v === "string") return hasCjk(v) && v.includes("{@") ? fillTags(v) : v;
+	if (Array.isArray(v)) { for (let i = 0; i < v.length; ++i) v[i] = walkStrings(v[i]); return v; }
+	if (v && typeof v === "object") { for (const k of Object.keys(v)) if (k !== "name") v[k] = walkStrings(v[k]); return v; }
+	return v;
+};
+for (const {file, json} of loaded) {
+	walkStrings(json);
+	writeJson(file, json, {pretty: false});
+	nFiles++;
+}
+console.log(`中文句子補上標籤中文名：${nTagDisplay} 處`);
 
 // ---- 4. 修改程式 -----------------------------------------------------------
 await applyPatches({dist: DIST, root: ROOT});

@@ -1,0 +1,701 @@
+{
+	"batch": "xphb-druid",
+	"items": [
+		{
+			"prop": "class",
+			"key": "Druid|XPHB",
+			"hint": {
+				"Druid": "德魯伊",
+				"Epic Boon": "史詩恩賜"
+			},
+			"s": [
+				"Druid",
+				"Epic Boon",
+				"{@i Choose A or B:} (A) {@item Leather Armor|XPHB}, {@item Shield|XPHB}, {@item Sickle|XPHB}, {@item Druidic Focus|XPHB|Druidic Focus (Quarterstaff)}, {@item Explorer's Pack|XPHB}, {@item Herbalism kit|XPHB}, 9 GP; or (B) 50 GP",
+				"Wild Shape",
+				"Spell Slots per Spell Level"
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Druidic|Druid|XPHB|1",
+			"hint": {
+				"Druidic": "德魯伊語"
+			},
+			"s": [
+				"Druidic",
+				"You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the {@spell Speak with Animals|XPHB} spell prepared.",
+				"You can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message's presence with a successful {@dc 15} Intelligence ({@skill Investigation|XPHB}) check but can't decipher it without magic."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Magician|Druid|XPHB|1",
+			"s": [
+				"Magician",
+				"You know one extra cantrip from the {@filter Druid spell list|spells|class=Druid}. In addition, your mystical connection to nature gives you a bonus to your Intelligence ({@skill Arcana|XPHB} or {@skill Nature|XPHB}) checks. The bonus equals your Wisdom modifier (minimum bonus of +1)."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Primal Order|Druid|XPHB|1",
+			"s": [
+				"Primal Order",
+				"You have dedicated yourself to one of the following sacred roles of your choice."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Spellcasting|Druid|XPHB|1",
+			"hint": {
+				"Spellcasting": "施法",
+				"Cantrips": "戲法",
+				"Spell Slots": "法術欄位",
+				"Prepared Spells of Level 1+": "1 環以上的準備法術",
+				"Changing Your Prepared Spells": "更換準備法術",
+				"Spellcasting Ability": "施法屬性",
+				"Spellcasting Focus": "施法法器"
+			},
+			"s": [
+				"Spellcasting",
+				"You have learned to cast spells through studying the mystical forces of nature. See {@book chapter 7|XPHB|7} for the rules on spellcasting. The information below details how you use those rules with Druid spells, which appear on the {@filter Druid spell list|spells|class=Druid} later in the class's description.",
+				"Cantrips",
+				"You know two cantrips of your choice from the {@filter Druid spell list|spells|class=Druid}. {@spell Druidcraft|XPHB} and {@spell Produce Flame|XPHB} are recommended.",
+				"Whenever you gain a Druid level, you can replace one of your cantrips with another cantrip of your choice from the {@filter Druid spell list|spells|class=Druid}.",
+				"When you reach Druid levels 4 and 10, you learn another cantrip of your choice from the {@filter Druid spell list|spells|class=Druid}, as shown in the Cantrips column of the Druid Features table.",
+				"Spell Slots",
+				"The Druid Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|XPHB}.",
+				"Prepared Spells of Level 1+",
+				"You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the {@filter Druid spell list|spells|class=Druid}. {@spell Animal Friendship|XPHB}, {@spell Cure Wounds|XPHB}, {@spell Faerie Fire|XPHB}, and {@spell Thunderwave|XPHB} are recommended.",
+				"The number of spells on your list increases as you gain Druid levels, as shown in the Prepared Spells column of the Druid Features table. Whenever that number increases, choose additional spells from the {@filter Druid spell list|spells|class=Druid} until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Druid, your list of prepared spells can include six spells of levels 1 and 2 in any combination.",
+				"If another Druid feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Druid spells for you.",
+				"Changing Your Prepared Spells",
+				"Whenever you finish a {@variantrule Long Rest|XPHB}, you can change your list of prepared spells, replacing any of the spells with other Druid spells for which you have spell slots.",
+				"Spellcasting Ability",
+				"Wisdom is your spellcasting ability for your Druid spells.",
+				"Spellcasting Focus",
+				"You can use a {@item Druidic Focus|XPHB} as a {@variantrule Spellcasting Focus|XPHB} for your Druid spells."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Warden|Druid|XPHB|1",
+			"s": [
+				"Warden",
+				"Trained for battle, you gain proficiency with {@filter Martial weapons|items|type=martial weapon} and training with {@filter Medium armor|items|type=Medium Armor}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Wild Companion|Druid|XPHB|2",
+			"s": [
+				"Wild Companion",
+				"You can summon a nature spirit that assumes an animal form to aid you. As a {@action Magic|XPHB} action, you can expend a spell slot or a use of Wild Shape to cast the {@spell Find Familiar|XPHB} spell without Material components.",
+				"When you cast the spell in this way, the familiar is Fey and disappears when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Wild Shape|Druid|XPHB|2",
+			"hint": {
+				"Wild Shape": "荒野形態",
+				"Number of Uses": "使用次數",
+				"Temporary Hit Points": "臨時生命值"
+			},
+			"s": [
+				"Wild Shape",
+				"The power of nature allows you to assume the form of an animal. As a {@variantrule Bonus Action|XPHB}, you shape-shift into a Beast form that you have learned for this feature (see \"Known Forms\" below). You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the {@condition Incapacitated|XPHB} condition, or die. You can also leave the form early as a {@variantrule Bonus Action|XPHB}.",
+				"Number of Uses",
+				"You can use Wild Shape twice. You regain one expended use when you finish a {@variantrule Short Rest|XPHB}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+				"You gain additional uses when you reach certain Druid levels, as shown in the Wild Shape column of the Druid Features table.",
+				"Known Forms",
+				"You know four Beast forms for this feature, chosen from among Beast stat blocks that have a maximum {@variantrule Challenge Rating|XPHB} of 1/4 and that lack a {@variantrule Fly Speed|XPHB} (see appendix B for stat block options). The {@creature Rat|XMM}, {@creature Riding Horse|XMM}, {@creature Spider|XMM}, and {@creature Wolf|XMM} are recommended. Whenever you finish a {@variantrule Long Rest|XPHB}, you can replace one of your known forms with another eligible form.",
+				"When you reach certain Druid levels, your number of known forms and the maximum {@variantrule Challenge Rating|XPHB} for those forms increases, as shown in the Beast Shapes table. In addition, starting at level 8, you can adopt a form that has a {@variantrule Fly Speed|XPHB}.",
+				"When choosing known forms, you may look in the {@book Monster Manual|XMM} or elsewhere for eligible Beasts if the Dungeon Master permits you to do so.",
+				"Beast Shapes",
+				"Druid Level",
+				"Known Forms",
+				"Max CR",
+				"Fly Speed",
+				"No",
+				"No",
+				"Yes",
+				"Rules While Shape-Shifted",
+				"While in a form, you retain your personality, memories, and ability to speak, and the following rules apply:",
+				"Temporary Hit Points",
+				"When you assume a Wild Shape form, you gain a number of {@variantrule Temporary Hit Points|XPHB} equal to your Druid level.",
+				"Game Statistics",
+				"Your game statistics are replaced by the Beast's stat block, but you retain your creature type; {@variantrule Hit Points|XPHB}; {@variantrule Hit Point Dice|XPHB}; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your {@variantrule Proficiency|XPHB|Proficiency Bonus} for them, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the Beast's stat block is higher than yours, use the one in the stat block.",
+				"No Spellcasting",
+				"You can't cast spells, but shape-shifting doesn't break your {@status Concentration|XPHB} or otherwise interfere with a spell you've already cast.",
+				"Objects",
+				"Your ability to handle objects is determined by the form's limbs rather than your own. In addition, you choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it's practical for the new form to wear a piece of equipment based on the creature's size and shape. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you're in that form."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Druid Subclass|Druid|XPHB|3",
+			"s": [
+				"Druid Subclass",
+				"You gain a Druid subclass of your choice. A subclass is a specialization that grants you features at certain Druid levels. For the rest of your career, you gain each of your subclass's features that are of your Druid level or lower."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Druid|XPHB|4",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Druid levels 8, 12, and 16."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Wild Resurgence|Druid|XPHB|5",
+			"s": [
+				"Wild Resurgence",
+				"Once on each of your turns, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot (no action required).",
+				"In addition, you can expend one use of Wild Shape (no action required) to give yourself a level 1 spell slot, but you can't do so again until you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Subclass Feature|Druid|XPHB|6",
+			"hint": {
+				"Subclass Feature": "子職業特性"
+			},
+			"s": [
+				"Subclass Feature",
+				"You gain a feature from your Druid Subclass."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Elemental Fury|Druid|XPHB|7",
+			"s": [
+				"Elemental Fury",
+				"The might of the elements flows through you. You gain one of the following options of your choice."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Potent Spellcasting|Druid|XPHB|7",
+			"hint": {
+				"Potent Spellcasting": "強效施法"
+			},
+			"s": [
+				"Potent Spellcasting",
+				"Add your Wisdom modifier to the damage you deal with any Druid cantrip."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Primal Strike|Druid|XPHB|7",
+			"hint": {
+				"Primal Strike": "原初打擊"
+			},
+			"s": [
+				"Primal Strike",
+				"Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra {@damage 1d8} Cold, Fire, Lightning, or Thunder damage (choose when you hit)."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Druid|XPHB|8",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} Feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Subclass Feature|Druid|XPHB|10",
+			"hint": {
+				"Subclass Feature": "子職業特性"
+			},
+			"s": [
+				"Subclass Feature",
+				"You gain a feature from your Druid Subclass."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Druid|XPHB|12",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} Feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Subclass Feature|Druid|XPHB|14",
+			"hint": {
+				"Subclass Feature": "子職業特性"
+			},
+			"s": [
+				"Subclass Feature",
+				"You gain a feature from your Druid Subclass."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Improved Elemental Fury|Druid|XPHB|15",
+			"hint": {
+				"Potent Spellcasting": "強效施法",
+				"Primal Strike": "原初打擊"
+			},
+			"s": [
+				"Improved Elemental Fury",
+				"The option you chose for Elemental Fury grows more powerful, as detailed below.",
+				"Potent Spellcasting",
+				"When you cast a Druid cantrip with a range of 10 feet or greater, the spell's range increases by 300 feet.",
+				"Primal Strike",
+				"The extra damage of your Primal Strike increases to {@damage 2d8}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Druid|XPHB|16",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} Feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Beast Spells|Druid|XPHB|18",
+			"hint": {
+				"Beast Spells": "野獸施法"
+			},
+			"s": [
+				"Beast Spells",
+				"While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Epic Boon|Druid|XPHB|19",
+			"hint": {
+				"Epic Boon": "史詩恩賜"
+			},
+			"s": [
+				"Epic Boon",
+				"You gain an {@filter Epic Boon feat|feats|category=EB} or another {@5etools feat|feats.html} of your choice for which you qualify. {@feat Boon of Dimensional Travel|XPHB} is recommended."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Archdruid|Druid|XPHB|20",
+			"hint": {
+				"Archdruid": "大德魯伊"
+			},
+			"s": [
+				"Archdruid",
+				"The vitality of nature constantly blooms within you, granting you the following benefits.",
+				"Evergreen Wild Shape",
+				"Whenever you roll {@variantrule Initiative|XPHB} and have no uses of Wild Shape left, you regain one expended use of it.",
+				"Nature Magician",
+				"You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels. For example, if you convert two uses of Wild Shape, you produce a level 4 spell slot. Once you use this benefit, you can't do so again until you finish a {@variantrule Long Rest|XPHB}.",
+				"Longevity",
+				"The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year."
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "Circle of the Land|Druid|XPHB",
+			"hint": {
+				"Circle of the Land": "大地結社"
+			},
+			"s": [
+				"Circle of the Land"
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "Circle of the Moon|Druid|XPHB",
+			"hint": {
+				"Circle of the Moon": "月亮結社"
+			},
+			"s": [
+				"Circle of the Moon"
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "Circle of the Sea|Druid|XPHB",
+			"s": [
+				"Circle of the Sea"
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "Circle of the Stars|Druid|XPHB",
+			"s": [
+				"Circle of the Stars"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Archer|Druid|Circle of the Stars|XPHB",
+			"hint": {
+				"Archer": "弓箭手"
+			},
+			"s": [
+				"Archer",
+				"A constellation of an archer appears on you. When you activate this form and as a {@variantrule Bonus Action|XPHB} on your subsequent turns while it lasts, you can make a ranged spell attack, hurling a luminous arrow that targets one creature within 60 feet of yourself. On a hit, the attack deals Radiant damage equal to {@damage 1d8} plus your Wisdom modifier."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Chalice|Druid|Circle of the Stars|XPHB",
+			"s": [
+				"Chalice",
+				"A constellation of a life-giving goblet appears on you. Whenever you cast a spell using a spell slot that restores {@variantrule Hit Points|XPHB} to a creature, you or another creature within 30 feet of you can regain {@variantrule Hit Points|XPHB} equal to {@dice 1d8} plus your Wisdom modifier."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Circle Forms|Druid|Circle of the Moon|XPHB",
+			"hint": {
+				"Circle Forms": "結社型態",
+				"Challenge Rating": "挑戰等級",
+				"Armor Class": "護甲等級",
+				"Temporary Hit Points": "臨時生命值"
+			},
+			"s": [
+				"Circle Forms",
+				"You can channel lunar magic when you assume a Wild Shape form, granting you the benefits below.",
+				"Challenge Rating",
+				"The maximum {@variantrule Challenge Rating|XPHB} for the form equals your Druid level divided by 3 (round down).",
+				"Armor Class",
+				"Until you leave the form, your AC equals 13 plus your Wisdom modifier if that total is higher than the Beast's AC.",
+				"Temporary Hit Points",
+				"You gain a number of {@variantrule Temporary Hit Points|XPHB} equal to three times your Druid level."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Circle of the Land|Druid|Circle of the Land|XPHB",
+			"hint": {
+				"Circle of the Land": "大地結社"
+			},
+			"s": [
+				"Circle of the Land",
+				"The Circle of the Land comprises mystics and sages who safeguard ancient knowledge and rites. These Druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of their communities."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Circle of the Land Spells|Druid|Circle of the Land|XPHB",
+			"s": [
+				"Circle of the Land Spells",
+				"Whenever you finish a {@variantrule Long Rest|XPHB}, choose one type of land: arid, polar, temperate, or tropical. Consult the table below that corresponds to the chosen type; you have the spells listed for your Druid level and lower prepared.",
+				"Arid Land",
+				"Druid Level",
+				"Circle Spells",
+				"3rd",
+				"{@spell Blur|XPHB}, {@spell Burning Hands|XPHB}, {@spell Fire Bolt|XPHB}",
+				"5th",
+				"7th",
+				"9th",
+				"Polar Land",
+				"Druid Level",
+				"Circle Spells",
+				"3rd",
+				"{@spell Fog Cloud|XPHB}, {@spell Hold Person|XPHB}, {@spell Ray of Frost|XPHB}",
+				"5th",
+				"7th",
+				"9th",
+				"Temperate Land",
+				"Druid Level",
+				"Circle Spells",
+				"3rd",
+				"{@spell Misty Step|XPHB}, {@spell Shocking Grasp|XPHB}, {@spell Sleep|XPHB}",
+				"5th",
+				"7th",
+				"9th",
+				"Tropical Land",
+				"Druid Level",
+				"Circle Spells",
+				"3rd",
+				"{@spell Acid Splash|XPHB}, {@spell Ray of Sickness|XPHB}, {@spell Web|XPHB}",
+				"5th",
+				"7th",
+				"9th"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Circle of the Moon|Druid|Circle of the Moon|XPHB",
+			"hint": {
+				"Circle of the Moon": "月亮結社"
+			},
+			"s": [
+				"Circle of the Moon",
+				"Druids of the Circle of the Moon draw on lunar magic to transform themselves. Their order gathers under the moon to share news and perform rituals.",
+				"Changeable as the moon, a Druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and then crash through undergrowth as a bear to drive off a trespassing monster. The wild is in the Druid's blood."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Circle of the Moon Spells|Druid|Circle of the Moon|XPHB",
+			"s": [
+				"Circle of the Moon Spells",
+				"When you reach a Druid level specified in the Circle of the Moon Spells table, you thereafter always have the listed spells prepared.",
+				"In addition, you can cast the spells from this feature while you're in a Wild Shape form.",
+				"Circle of the Moon Spells",
+				"Druid Level",
+				"Prepared Spells",
+				"{@spell Cure Wounds|XPHB}, {@spell Moonbeam|XPHB}, {@spell Starry Wisp|XPHB}"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Circle of the Sea|Druid|Circle of the Sea|XPHB",
+			"s": [
+				"Circle of the Sea",
+				"Druids of the Circle of the Sea draw on the tempestuous forces of oceans and storms. Some view themselves as embodiments of nature's wrath, seeking vengeance against those who despoil nature. Others seek mystical unity with nature by attuning themselves to the ebb and flow of the tides, following the rush of currents and waves and listening to the inscrutable whispers and roars of the winds."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Circle of the Sea Spells|Druid|Circle of the Sea|XPHB",
+			"s": [
+				"Circle of the Sea Spells",
+				"When you reach a Druid level specified in the Circle of the Sea Spells table, you thereafter always have the listed spells prepared.",
+				"Circle of the Sea Spells",
+				"Druid Level",
+				"Prepared Spells",
+				"3rd",
+				"{@spell Fog Cloud|XPHB}, {@spell Gust of Wind|XPHB}, {@spell Ray of Frost|XPHB}, {@spell Shatter|XPHB}, {@spell Thunderwave|XPHB}",
+				"5th",
+				"{@spell Lightning Bolt|XPHB}, {@spell Water Breathing|XPHB}",
+				"7th",
+				"{@spell Control Water|XPHB}, {@spell Ice Storm|XPHB}",
+				"9th",
+				"{@spell Conjure Elemental|XPHB}, {@spell Hold Monster|XPHB}"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Circle of the Stars|Druid|Circle of the Stars|XPHB",
+			"s": [
+				"Circle of the Stars",
+				"The Circle of the Stars has tracked heavenly patterns since time immemorial, discovering secrets hidden amid the constellations. By understanding these secrets, the Druids of this circle seek to harness the powers of the cosmos."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Dragon|Druid|Circle of the Stars|XPHB",
+			"s": [
+				"Dragon",
+				"A constellation of a wise dragon appears on you. When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain {@status Concentration|XPHB}, you can treat a roll of 9 or lower on the {@dice d20} as a 10."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Land's Aid|Druid|Circle of the Land|XPHB",
+			"s": [
+				"Land's Aid",
+				"As a {@action Magic|XPHB} action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point. Each creature of your choice in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} must make a Constitution saving throw against your spell save DC, taking {@damage 2d6} Necrotic damage on a failed save or half as much damage on a successful one. One creature of your choice in that area regains {@dice 2d6} {@variantrule Hit Points|XPHB}.",
+				"The damage and healing increase by {@dice 1d6} when you reach Druid levels 10 ({@dice 3d6}) and 14 ({@dice 4d6})."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Star Map|Druid|Circle of the Stars|XPHB",
+			"s": [
+				"Star Map",
+				"You've created a star chart as part of your heavenly studies. It is a Tiny object, and you can use it as a {@variantrule Spellcasting Focus|XPHB} for your Druid spells. You determine its form by rolling on the Star Map table or by choosing one.",
+				"While holding the map, you have the {@spell Guidance|XPHB} and {@spell Guiding Bolt|XPHB} spells prepared, and you can cast {@spell Guiding Bolt|XPHB} without expending a spell slot. You can cast it in that way a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+				"If you lose the map, you can perform a 1-hour ceremony to magically create a replacement. This ceremony can be performed during a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}, and it destroys the previous map.",
+				"Star Map",
+				"Map Form",
+				"A scroll bearing depictions of constellations",
+				"A stone tablet with fine holes drilled through it",
+				"An owlbear hide tooled with stellar symbols",
+				"A collection of maps bound in an ebony cover",
+				"A crystal engraved with starry patterns",
+				"A glass disk etched with constellations"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Starry Form|Druid|Circle of the Stars|XPHB",
+			"hint": {
+				"Wild Shape": "荒野形態"
+			},
+			"s": [
+				"Starry Form",
+				"Wild Shape",
+				"As a {@variantrule Bonus Action|XPHB}, you can expend a use of your Wild Shape feature to take on a starry form rather than shape-shifting.",
+				"While in your starry form, you retain your game statistics, but your body becomes luminous, your joints glimmer like stars, and glowing lines connect them as on a star chart. This form sheds {@variantrule Bright Light|XPHB} in a 10-foot radius and {@variantrule Dim Light|XPHB} for an additional 10 feet. The form lasts for 10 minutes. It ends early if you dismiss it (no action required), have the {@condition Incapacitated|XPHB} condition, or use this feature again.",
+				"Whenever you assume your starry form, choose which of the following constellations glimmers on your body; your choice gives you certain benefits while in the form."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Wrath of the Sea|Druid|Circle of the Sea|XPHB",
+			"s": [
+				"Wrath of the Sea",
+				"As a {@variantrule Bonus Action|XPHB}, you can expend a use of your Wild Shape to manifest a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} that takes the form of ocean spray that surrounds you for 10 minutes. It ends early if you dismiss it (no action required), manifest it again, or have the {@condition Incapacitated|XPHB} condition.",
+				"When you manifest the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} and as a {@variantrule Bonus Action|XPHB} on your subsequent turns, you can choose another creature you can see in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. The target must succeed on a Constitution saving throw against your spell save DC or take Cold damage and, if the creature is Large or smaller, be pushed up to 15 feet away from you. To determine this damage, roll a number of d6s equal to your Wisdom modifier (minimum of one die)."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Aquatic Affinity|Druid|Circle of the Sea|XPHB",
+			"s": [
+				"Aquatic Affinity",
+				"The size of the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} created by your Wrath of the Sea increases to 10 feet.",
+				"In addition, you gain a {@variantrule Swim Speed|XPHB} equal to your {@variantrule Speed|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Cosmic Omen|Druid|Circle of the Stars|XPHB",
+			"s": [
+				"Cosmic Omen",
+				"Whenever you finish a {@variantrule Long Rest|XPHB}, you can consult your Star Map for omens and roll a die. Until you finish your next {@variantrule Long Rest|XPHB}, you gain access to a special {@variantrule Reaction|XPHB} based on whether you rolled an even or an odd number on the die:",
+				"Weal (even)",
+				"Whenever a creature you can see within 30 feet of you is about to make a {@variantrule D20 Test|XPHB}, you can take a {@variantrule Reaction|XPHB} to roll {@dice 1d6} and add the number rolled to the total.",
+				"Woe (odd)",
+				"Whenever a creature you can see within 30 feet of you is about to make a {@variantrule D20 Test|XPHB}, you can take a {@variantrule Reaction|XPHB} to roll {@dice 1d6} and subtract the number rolled from the total.",
+				"You can use this {@variantrule Reaction|XPHB} a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Improved Circle Forms|Druid|Circle of the Moon|XPHB",
+			"s": [
+				"Improved Circle Forms",
+				"While in a Wild Shape form, you gain the following benefits.",
+				"Lunar Radiance",
+				"Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.",
+				"Increased Toughness",
+				"You can add your Wisdom modifier to your Constitution saving throws."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Natural Recovery|Druid|Circle of the Land|XPHB",
+			"hint": {
+				"Natural Recovery": "自然恢復"
+			},
+			"s": [
+				"Natural Recovery",
+				"You can cast one of the level 1+ spells that you have prepared from your Circle Spells feature without expending a spell slot, and you must finish a {@variantrule Long Rest|XPHB} before you do so again.",
+				"In addition, when you finish a {@variantrule Short Rest|XPHB}, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your Druid level (round up), and none of them can be level 6+. For example, if you're a level 6 Druid, you can recover up to three levels' worth of spell slots. You can recover a level 3 spell slot, a level 2 and a level 1 spell slot, or three level 1 spell slots. Once you recover spell slots with this feature, you can't do so again until you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Moonlight Step|Druid|Circle of the Moon|XPHB",
+			"s": [
+				"Moonlight Step",
+				"You magically transport yourself, reappearing amid a burst of moonlight. As a {@variantrule Bonus Action|XPHB}, you teleport up to 30 feet to an unoccupied space you can see, and you have {@variantrule Advantage|XPHB} on the next attack roll you make before the end of this turn.",
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}. You can also regain uses by expending a level 2+ spell slot for each use you want to restore (no action required)."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Nature's Ward|Druid|Circle of the Land|XPHB",
+			"hint": {
+				"Nature's Ward": "自然之護"
+			},
+			"s": [
+				"Nature's Ward",
+				"You are immune to the {@condition Poisoned|XPHB} condition, and you have {@variantrule Resistance|XPHB} to a damage type associated with your current land choice in the Circle Spells feature, as shown in the {@skill Nature|XPHB}'s Ward table.",
+				"Nature's Ward",
+				"Land Type",
+				"Resistance",
+				"Arid",
+				"Fire",
+				"Polar",
+				"Cold",
+				"Temperate",
+				"Lightning",
+				"Tropical",
+				"Poison"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Stormborn|Druid|Circle of the Sea|XPHB",
+			"hint": {
+				"Stormborn": "風暴之子",
+				"Flight": "飛行",
+				"Resistance": "抗性"
+			},
+			"s": [
+				"Stormborn",
+				"Your Wrath of the Sea confers two more benefits while active, as detailed below.",
+				"Flight",
+				"You gain a {@variantrule Fly Speed|XPHB} equal to your {@variantrule Speed|XPHB}.",
+				"Resistance",
+				"You have {@variantrule Resistance|XPHB} to Cold, Lightning, and Thunder damage."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Twinkling Constellations|Druid|Circle of the Stars|XPHB",
+			"s": [
+				"Twinkling Constellations",
+				"The constellations of your Starry Form improve. The {@damage 1d8} of the Archer and the Chalice becomes {@damage 2d8}, and while the Dragon is active, you have a {@variantrule Fly Speed|XPHB} of 20 feet and can hover.",
+				"Moreover, at the start of each of your turns while in your Starry Form, you can change which constellation glimmers on your body."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Full of Stars|Druid|Circle of the Stars|XPHB",
+			"s": [
+				"Full of Stars",
+				"While in your Starry Form, you become partially incorporeal, giving you {@variantrule Resistance|XPHB} to Bludgeoning, Piercing, and Slashing damage."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Lunar Form|Druid|Circle of the Moon|XPHB",
+			"s": [
+				"Lunar Form",
+				"The power of the moon suffuses you, granting you the following benefits.",
+				"Improved Lunar Radiance",
+				"Once per turn, you can deal an extra {@damage 2d10} Radiant damage to a target you hit with a Wild Shape form's attack.",
+				"Shared Moonlight",
+				"Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Nature's Sanctuary|Druid|Circle of the Land|XPHB",
+			"hint": {
+				"Nature's Sanctuary": "自然庇護"
+			},
+			"s": [
+				"Nature's Sanctuary",
+				"As a {@action Magic|XPHB} action, you can expend a use of your Wild Shape and cause spectral trees and vines to appear in a 15-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} on the ground within 120 feet of yourself. They last there for 1 minute or until you have the {@condition Incapacitated|XPHB} condition or die. You and your allies have {@variantrule Cover|XPHB|Half Cover} while in that area, and your allies gain the current {@variantrule Resistance|XPHB} of your {@skill Nature|XPHB}'s Ward while there.",
+				"As a {@variantrule Bonus Action|XPHB}, you can move the {@variantrule Cube [Area of Effect]|XPHB|Cube} up to 60 feet to ground within 120 feet of yourself."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Oceanic Gift|Druid|Circle of the Sea|XPHB",
+			"s": [
+				"Oceanic Gift",
+				"Instead of manifesting the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of Wrath of the Sea around yourself, you can manifest it around one willing creature within 60 feet of yourself. That creature gains all the benefits of the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} and uses your spell save DC and Wisdom modifier for it.",
+				"In addition, you can manifest the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} around both the other creature and yourself if you expend two uses of your Wild Shape instead of one when manifesting it."
+			]
+		}
+	]
+}

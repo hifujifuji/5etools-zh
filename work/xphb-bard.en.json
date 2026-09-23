@@ -1,0 +1,526 @@
+{
+	"batch": "xphb-bard",
+	"items": [
+		{
+			"prop": "class",
+			"key": "Bard|XPHB",
+			"hint": {
+				"Bard": "吟遊詩人",
+				"Epic Boon": "史詩恩賜"
+			},
+			"s": [
+				"Bard",
+				"Epic Boon",
+				"{@i Choose A or B:} (A) {@item Leather Armor|XPHB}, 2 {@item Dagger|XPHB}, {@item Musical Instrument|XPHB} of your choice, {@item Entertainer's Pack|XPHB}, 19 GP; or (B) 90 GP",
+				"Bardic Die",
+				"Spell Slots per Spell Level"
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Bardic Inspiration|Bard|XPHB|1",
+			"hint": {
+				"Bardic Inspiration": "吟遊激勵"
+			},
+			"s": [
+				"Bardic Inspiration",
+				"You can supernaturally inspire others through words, music, or dance. This inspiration is represented by your Bardic Inspiration die, which is a {@dice d6}.",
+				"Using Bardic Inspiration",
+				"As a {@variantrule Bonus Action|XPHB}, you can inspire another creature within 60 feet of yourself who can see or hear you. That creature gains one of your Bardic Inspiration dice. A creature can have only one Bardic Inspiration die at a time.",
+				"Once within the next hour when the creature fails a {@variantrule D20 Test|XPHB}, the creature can roll the Bardic Inspiration die and add the number rolled to the {@dice d20}, potentially turning the failure into a success. A Bardic Inspiration die is expended when it's rolled.",
+				"Number of Uses",
+				"You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+				"At Higher Levels",
+				"Your Bardic Inspiration die changes when you reach certain Bard levels, as shown in the Bardic Die column of the Bard Features table. The die becomes a {@dice d8} at level 5, a {@dice d10} at level 10, and a {@dice d12} at level 15."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Spellcasting|Bard|XPHB|1",
+			"hint": {
+				"Spellcasting": "施法",
+				"Spellcasting Focus": "施法法器"
+			},
+			"s": [
+				"Spellcasting",
+				"You have learned to cast spells through your bardic arts. See {@book chapter 7|XPHB|7} for the rules on spellcasting. The information below details how you use those rules with Bard spells, which appear in the {@filter Bard spell list|spells|class=Bard} later in the class's description.",
+				"Cantrips",
+				"You know two cantrips of your choice from the {@filter Bard spell list|spells|class=Bard}. {@spell Dancing Lights|XPHB} and {@spell Vicious Mockery|XPHB} are recommended.",
+				"Whenever you gain a Bard level, you can replace one of your cantrips with another cantrip of your choice from the {@filter Bard spell list|spells|class=Bard}.",
+				"When you reach Bard levels 4 and 10, you learn another cantrip of your choice from the {@filter Bard spell list|spells|class=Bard}, as shown in the Cantrips column of the Bard Features table.",
+				"Spell Slots",
+				"The Bard Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|XPHB}.",
+				"Prepared Spells of Level 1+",
+				"You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the {@filter Bard spell list|spells|class=Bard}. {@spell Charm Person|XPHB}, {@spell Color Spray|XPHB}, {@spell Dissonant Whispers|XPHB}, and {@spell Healing Word|XPHB} are recommended.",
+				"The number of spells on your list increases as you gain Bard levels, as shown in the Prepared Spells column of the Bard Features table. Whenever that number increases, choose additional spells from the {@filter Bard spell list|spells|class=Bard} until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Bard, your list of prepared spells can include six spells of levels 1 and 2 in any combination.",
+				"If another Bard feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Bard spells for you.",
+				"Changing Your Prepared Spells",
+				"Whenever you gain a Bard level, you can replace one spell on your list with another Bard spell for which you have spell slots.",
+				"Spellcasting Ability",
+				"Charisma is your spellcasting ability for your Bard spells.",
+				"Spellcasting Focus",
+				"You can use a {@item Musical Instrument|XPHB} as a {@variantrule Spellcasting Focus|XPHB} for your Bard spells."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Expertise|Bard|XPHB|2",
+			"hint": {
+				"Expertise": "專精"
+			},
+			"s": [
+				"Expertise",
+				"You gain {@variantrule Expertise|XPHB} in two of your skill proficiencies of your choice. {@skill Performance|XPHB} and {@skill Persuasion|XPHB} are recommended if you have proficiency in them.",
+				"At Bard level 9, you gain {@variantrule Expertise|XPHB} in two more of your skill proficiencies of your choice."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Jack of All Trades|Bard|XPHB|2",
+			"hint": {
+				"Jack of All Trades": "全能高手"
+			},
+			"s": [
+				"Jack of All Trades",
+				"You can add half your {@variantrule Proficiency|XPHB|Proficiency Bonus} (round down) to any ability check you make that uses a skill proficiency you lack and that doesn't otherwise use your {@variantrule Proficiency|XPHB|Proficiency Bonus}.",
+				"For example, if you make a Strength ({@skill Athletics|XPHB}) check and lack {@skill Athletics|XPHB} proficiency, you can add half your {@variantrule Proficiency|XPHB|Proficiency Bonus} to the check.",
+				"A Bard's Repertoire",
+				"Does your Bard beat a {@item drum|XPHB} while chanting the deeds of ancient heroes? Strum a {@item lute|XPHB} while crooning romantic tunes? Perform arias of stirring power? Recite dramatic monologues from classic tragedies? Use the rhythm of a folk dance to coordinate the movement of allies in battle? Compose naughty limericks?",
+				"When you play a Bard, consider the style of artistic performance you favor, the moods you might invoke, and the themes that inspire your own creations. Are your poems inspired by moments of natural beauty, or are they brooding reflections on loss? Do you prefer lofty hymns or rowdy tavern songs? Are you drawn to laments for the fallen or celebrations of joy? Do you dance merry jigs or perform elaborate interpretive choreography? Do you focus on one style of performance or strive to master them all?"
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Bard Subclass|Bard|XPHB|3",
+			"s": [
+				"Bard Subclass",
+				"You gain a Bard subclass of your choice. A subclass is a specialization that grants you features at certain Bard levels. For the rest of your career, you gain each of your subclass's features that are of your Bard level or lower."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Bard|XPHB|4",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Bard levels 8, 12, and 16."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Font of Inspiration|Bard|XPHB|5",
+			"hint": {
+				"Font of Inspiration": "激勵湧泉"
+			},
+			"s": [
+				"Font of Inspiration",
+				"You now regain all your expended uses of Bardic Inspiration when you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
+				"In addition, you can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Subclass Feature|Bard|XPHB|6",
+			"hint": {
+				"Subclass Feature": "子職業特性"
+			},
+			"s": [
+				"Subclass Feature",
+				"You gain a feature from your Bard Subclass."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Countercharm|Bard|XPHB|7",
+			"hint": {
+				"Countercharm": "反制迷惑"
+			},
+			"s": [
+				"Countercharm",
+				"You can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature within 30 feet of you fails a saving throw against an effect that applies the {@condition Charmed|XPHB} or {@condition Frightened|XPHB} condition, you can take a {@variantrule Reaction|XPHB} to cause the save to be rerolled, and the new roll has {@variantrule Advantage|XPHB}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Bard|XPHB|8",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Expertise|Bard|XPHB|9",
+			"hint": {
+				"Expertise": "專精"
+			},
+			"s": [
+				"Expertise",
+				"You gain {@variantrule Expertise|XPHB} in two of your Skill Proficiencies of your choice."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Magical Secrets|Bard|XPHB|10",
+			"hint": {
+				"Magical Secrets": "魔法秘密"
+			},
+			"s": [
+				"Magical Secrets",
+				"You've learned secrets from various magical traditions. Whenever you reach a Bard level (including this level) and the Prepared Spells number in the Bard Features table increases, you can choose any of your new prepared spells from the {@filter Bard|spells|class=Bard}, {@filter Cleric|spells|class=Cleric}, {@filter Druid|spells|class=Druid}, and {@filter Wizard|spells|class=Wizard} {@filter spell lists|spells|class=Bard;Cleric;Druid;Wizard}, and the chosen spells count as Bard spells for you (see a class's section for its spell list). In addition, whenever you replace a spell prepared for this class, you can replace it with a spell from those lists."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Bard|XPHB|12",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Subclass Feature|Bard|XPHB|14",
+			"hint": {
+				"Subclass Feature": "子職業特性"
+			},
+			"s": [
+				"Subclass Feature",
+				"You gain a feature from your Bard Subclass."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Bard|XPHB|16",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Superior Inspiration|Bard|XPHB|18",
+			"hint": {
+				"Superior Inspiration": "卓越激勵"
+			},
+			"s": [
+				"Superior Inspiration",
+				"When you roll {@variantrule Initiative|XPHB}, you regain expended uses of Bardic Inspiration until you have two if you have fewer than that."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Epic Boon|Bard|XPHB|19",
+			"hint": {
+				"Epic Boon": "史詩恩賜"
+			},
+			"s": [
+				"Epic Boon",
+				"You gain an {@filter Epic Boon feat|feats|category=EB} or another {@5etools feat|feats.html} of your choice for which you qualify. {@feat Boon of Spell Recall|XPHB} is recommended."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Words of Creation|Bard|XPHB|20",
+			"s": [
+				"Words of Creation",
+				"You have mastered two of the Words of Creation: the words of life and death. You therefore always have the {@spell Power Word Heal|XPHB} and {@spell Power Word Kill|XPHB} spells prepared. When you cast either spell, you can target a second creature with it if that creature is within 10 feet of the first target."
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "College of Dance|Bard|XPHB",
+			"s": [
+				"College of Dance"
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "College of Glamour|Bard|XPHB",
+			"hint": {
+				"College of Glamour": "迷惑學院"
+			},
+			"s": [
+				"College of Glamour"
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "College of Lore|Bard|XPHB",
+			"hint": {
+				"College of Lore": "知識學院"
+			},
+			"s": [
+				"College of Lore"
+			]
+		},
+		{
+			"prop": "subclass",
+			"key": "College of Valor|Bard|XPHB",
+			"hint": {
+				"College of Valor": "勇氣學院"
+			},
+			"s": [
+				"College of Valor"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Agile Strikes|Bard|College of Dance|XPHB",
+			"s": [
+				"Agile Strikes",
+				"When you expend a use of your Bardic Inspiration as part of an action, a {@variantrule Bonus Action|XPHB}, or a {@variantrule Reaction|XPHB}, you can make one {@variantrule Unarmed Strike|XPHB} as part of that action, {@variantrule Bonus Action|XPHB}, or {@variantrule Reaction|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Bardic Damage|Bard|College of Dance|XPHB",
+			"s": [
+				"Bardic Damage",
+				"You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes. When you deal damage with an {@variantrule Unarmed Strike|XPHB}, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier, instead of the strike's normal damage. This roll doesn't expend the die."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Beguiling Magic|Bard|College of Glamour|XPHB",
+			"s": [
+				"Beguiling Magic",
+				"You always have the {@spell Charm Person|XPHB} and {@spell Mirror Image|XPHB} spells prepared.",
+				"In addition, immediately after you cast an Enchantment or Illusion spell using a spell slot, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the {@condition Charmed|XPHB} or {@condition Frightened|XPHB} condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.",
+				"Once you use this benefit, you can't use it again until you finish a {@variantrule Long Rest|XPHB}. You can also restore your use of it by expending one use of your Bardic Inspiration (no action required)."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Bonus Proficiencies|Bard|College of Lore|XPHB",
+			"hint": {
+				"Bonus Proficiencies": "額外熟練"
+			},
+			"s": [
+				"Bonus Proficiencies",
+				"You gain proficiency with three skills of your choice."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "College of Dance|Bard|College of Dance|XPHB",
+			"s": [
+				"College of Dance",
+				"Bards of the College of Dance know that the Words of Creation can't be contained within speech or song; the words are uttered by the movements of celestial bodies and flow through the motions of the smallest creatures. These Bards practice a way of being in harmony with the whirling cosmos that emphasizes agility, speed, and grace."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "College of Glamour|Bard|College of Glamour|XPHB",
+			"hint": {
+				"College of Glamour": "迷惑學院"
+			},
+			"s": [
+				"College of Glamour",
+				"The College of Glamour traces its origins to the beguiling magic of the Feywild. Bards who study this magic weave threads of beauty and terror into their songs and stories, and the mightiest among them can cloak themselves in otherworldly majesty. Their performances stir up wistful longing for forgotten innocence, evoke unconscious memories of long-held fears, and tug at the emotions of even the most hard-hearted listeners."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "College of Lore|Bard|College of Lore|XPHB",
+			"hint": {
+				"College of Lore": "知識學院"
+			},
+			"s": [
+				"College of Lore",
+				"Bards of the College of Lore collect spells and secrets from diverse sources, such as scholarly tomes, mystical rites, and peasant tales. The college's members gather in libraries and universities to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "College of Valor|Bard|College of Valor|XPHB",
+			"hint": {
+				"College of Valor": "勇氣學院"
+			},
+			"s": [
+				"College of Valor",
+				"Bards of the College of Valor are daring storytellers whose tales preserve the memory of the great heroes of the past. These Bards sing the deeds of the mighty in vaulted halls or to crowds gathered around great bonfires. They travel to witness great events firsthand and to ensure that the memory of these events doesn't pass away. With their songs, they inspire new generations to reach the same heights of accomplishment as the heroes of old."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Combat Inspiration|Bard|College of Valor|XPHB",
+			"hint": {
+				"Combat Inspiration": "戰鬥激勵",
+				"Defense": "防禦"
+			},
+			"s": [
+				"Combat Inspiration",
+				"You can use your wit to turn the tide of battle. A creature that has a Bardic Inspiration die from you can use it for one of the following effects.",
+				"Defense",
+				"When the creature is hit by an attack roll, that creature can use its {@variantrule Reaction|XPHB} to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, potentially causing the attack to miss.",
+				"Offense",
+				"Immediately after the creature hits a target with an attack roll, the creature can roll the Bardic Inspiration die and add the number rolled to the attack's damage against the target."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Cutting Words|Bard|College of Lore|XPHB",
+			"hint": {
+				"Cutting Words": "語出驚人"
+			},
+			"s": [
+				"Cutting Words",
+				"You learn to use your wit to supernaturally distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of yourself makes a damage roll or succeeds on an ability check or attack roll, you can take a {@variantrule Reaction|XPHB} to expend one use of your Bardic Inspiration; roll your Bardic Inspiration die, and subtract the number rolled from the creature's roll, reducing the damage or potentially turning the success into a failure."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Dance Virtuoso|Bard|College of Dance|XPHB",
+			"s": [
+				"Dance Virtuoso",
+				"You have {@variantrule Advantage|XPHB} on any Charisma ({@skill Performance|XPHB}) check you make that involves you dancing."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Dazzling Footwork|Bard|College of Dance|XPHB",
+			"s": [
+				"Dazzling Footwork",
+				"While you aren't wearing armor or wielding a {@item Shield|XPHB}, you gain the following benefits."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Mantle of Inspiration|Bard|College of Glamour|XPHB",
+			"hint": {
+				"Mantle of Inspiration": "激勵光環"
+			},
+			"s": [
+				"Mantle of Inspiration",
+				"You can weave fey magic into a song or dance to fill others with vigor. As a {@variantrule Bonus Action|XPHB}, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of those creatures gains a number of {@variantrule Temporary Hit Points|XPHB} equal to two times the number rolled on the Bardic Inspiration die, and then each can use its {@variantrule Reaction|XPHB} to move up to its {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Martial Training|Bard|College of Valor|XPHB",
+			"s": [
+				"Martial Training",
+				"You gain proficiency with {@filter Martial weapons|items|type=martial weapon} and training with {@filter Medium armor|items|type=Medium Armor} and {@item Shield|XPHB|Shields}.",
+				"In addition, you can use a Simple or Martial weapon as a {@variantrule Spellcasting Focus|XPHB} to cast spells from your {@filter Bard spell list|spells|class=Bard}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Unarmored Defense|Bard|College of Dance|XPHB",
+			"hint": {
+				"Unarmored Defense": "無甲防禦"
+			},
+			"s": [
+				"Unarmored Defense",
+				"Your base {@variantrule Armor Class|XPHB} equals 10 plus your Dexterity and Charisma modifiers."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Extra Attack|Bard|College of Valor|XPHB",
+			"hint": {
+				"Extra Attack": "額外攻擊"
+			},
+			"s": [
+				"Extra Attack",
+				"You can attack twice instead of once whenever you take the {@action Attack|XPHB} action on your turn.",
+				"In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Inspiring Movement|Bard|College of Dance|XPHB",
+			"s": [
+				"Inspiring Movement",
+				"When an enemy you can see ends its turn within 5 feet of you, you can take a {@variantrule Reaction|XPHB} and expend one use of your Bardic Inspiration to move up to half your {@variantrule Speed|XPHB}. Then one ally of your choice within 30 feet of you can also move up to half their {@variantrule Speed|XPHB} using their {@variantrule Reaction|XPHB}.",
+				"None of this feature's movement provokes {@action Opportunity Attack|XPHB|Opportunity Attacks}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Magical Discoveries|Bard|College of Lore|XPHB",
+			"s": [
+				"Magical Discoveries",
+				"You learn two spells of your choice. These spells can come from the {@filter Cleric|spells|class=Cleric}, {@filter Druid|spells|class=Druid}, or {@filter Wizard spell list|spells|class=Wizard} or any combination thereof (see a class's section for its spell list). A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table.",
+				"You always have the chosen spells prepared, and whenever you gain a Bard level, you can replace one of the spells with another spell that meets these requirements."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Mantle of Majesty|Bard|College of Glamour|XPHB",
+			"hint": {
+				"Mantle of Majesty": "威嚴光環"
+			},
+			"s": [
+				"Mantle of Majesty",
+				"You always have the {@spell Command|XPHB} spell prepared.",
+				"As a {@variantrule Bonus Action|XPHB}, you cast {@spell Command|XPHB} without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your {@status Concentration|XPHB} ends. During this time, you can cast {@spell Command|XPHB} as a {@variantrule Bonus Action|XPHB} without expending a spell slot.",
+				"Any creature {@condition Charmed|XPHB} by you automatically fails its saving throw against the {@spell Command|XPHB} you cast with this feature.",
+				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}. You can also restore your use of it by expending a level 3+ spell slot (no action required)."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Tandem Footwork|Bard|College of Dance|XPHB",
+			"s": [
+				"Tandem Footwork",
+				"When you roll {@variantrule Initiative|XPHB}, you can expend one use of your Bardic Inspiration if you don't have the {@condition Incapacitated|XPHB} condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to {@variantrule Initiative|XPHB} equal to the number rolled."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Battle Magic|Bard|College of Valor|XPHB",
+			"hint": {
+				"Battle Magic": "戰鬥魔法"
+			},
+			"s": [
+				"Battle Magic",
+				"After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a {@variantrule Bonus Action|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Leading Evasion|Bard|College of Dance|XPHB",
+			"s": [
+				"Leading Evasion",
+				"When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity saving throw, you can share this benefit with them for that save.",
+				"You can't use this feature if you have the {@condition Incapacitated|XPHB} condition."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Peerless Skill|Bard|College of Lore|XPHB",
+			"hint": {
+				"Peerless Skill": "絕代技能"
+			},
+			"s": [
+				"Peerless Skill",
+				"When you make an ability check or attack roll and fail, you can expend one use of Bardic Inspiration; roll the Bardic Inspiration die, and add the number rolled to the {@dice d20}, potentially turning a failure into a success. On a failure, the Bardic Inspiration isn't expended."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Unbreakable Majesty|Bard|College of Glamour|XPHB",
+			"hint": {
+				"Unbreakable Majesty": "無敵威嚴"
+			},
+			"s": [
+				"Unbreakable Majesty",
+				"As a {@variantrule Bonus Action|XPHB}, you can assume a magically majestic presence for 1 minute or until you have the {@condition Incapacitated|XPHB} condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your spell save DC, or the attack misses instead, as the creature recoils from your majesty.",
+				"Once you assume this majestic presence, you can't do so again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
+			]
+		}
+	]
+}

@@ -9,11 +9,19 @@
 import {hasCjk} from "./util.mjs";
 
 // 注意：怪物施法的 will/daily/spells 不翻，_copy 的 replaceSpells 要靠原字串比對
-const TEXT_KEYS = new Set([
+export const TEXT_KEYS = new Set([
 	"entries", "entriesHigherLevel", "items", "colLabels", "rows", "caption", "entry", "headerEntries",
 	"footerEntries", "footnotes", "text", "legendaryHeader", "mythicHeader", "actionHeader", "bonusHeader",
 	"reactionHeader", "from", "condition", "title", "other", "note", "additionalEntries",
 	"row", "cells", "lower", "upper",
+]);
+
+// 這些欄位底下都是程式用的結構化資料（技能 key、法術清單…），整棵不碰
+export const SKIP_KEYS = new Set([
+	"startingProficiencies", "proficiency", "skillProficiencies", "toolProficiencies", "languageProficiencies",
+	"weaponProficiencies", "armorProficiencies", "skillToolLanguageProficiencies", "additionalSpells", "ability",
+	"feats", "expertise", "requirements", "proficienciesGained", "resist", "immune", "vulnerable", "conditionImmune",
+	"savingThrowForced", "abilityCheckForced", "classes", "subclasses", "otherSources", "reprintedAs", "srd", "srd52",
 ]);
 
 const engOf = o => (o?.ENG_name ?? o?.tENG_name ?? "").trim();
@@ -37,7 +45,7 @@ export class Merger {
 	mergeEntity (neu, old) {
 		if (hasCjk(old.name)) Merger.setName(neu, old.name);
 		for (const k of Object.keys(neu)) {
-			if (k === "name" || !(k in old)) continue;
+			if (k === "name" || SKIP_KEYS.has(k) || !(k in old)) continue;
 			neu[k] = this._mergeVal(neu[k], old[k], TEXT_KEYS.has(k));
 		}
 		return neu;
@@ -74,6 +82,7 @@ export class Merger {
 				}
 				continue;
 			}
+			if (SKIP_KEYS.has(k)) continue;
 			n[k] = this._mergeVal(n[k], o[k], TEXT_KEYS.has(k));
 		}
 		return n;

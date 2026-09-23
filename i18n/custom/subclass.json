@@ -1,0 +1,2515 @@
+{
+	"Aberrant Sorcery|Sorcerer|XPHB": {
+		"name": "異怪術法",
+		"shortName": "Aberrant",
+		"source": "XPHB",
+		"className": "Sorcerer",
+		"classSource": "XPHB",
+		"page": 145,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"arms of hadar|xphb",
+						"calm emotions|xphb",
+						"detect thoughts|xphb",
+						"dissonant whispers|xphb",
+						"mind sliver|xphb#c"
+					],
+					"5": [
+						"hunger of hadar|xphb",
+						"sending|xphb"
+					],
+					"7": [
+						"evard's black tentacles|xphb",
+						"summon aberration|xphb"
+					],
+					"9": [
+						"rary's telepathic bond|xphb",
+						"telekinesis|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Aberrant Sorcery|Sorcerer|XPHB|Aberrant|XPHB|3",
+			"Psionic Sorcery|Sorcerer|XPHB|Aberrant|XPHB|6",
+			"Psychic Defenses|Sorcerer|XPHB|Aberrant|XPHB|6",
+			"Revelation in Flesh|Sorcerer|XPHB|Aberrant|XPHB|14",
+			"Warping Implosion|Sorcerer|XPHB|Aberrant|XPHB|18"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Aberrant Sorcery"
+	},
+	"Abjurer|Wizard|XPHB": {
+		"name": "防護師",
+		"shortName": "Abjurer",
+		"source": "XPHB",
+		"className": "Wizard",
+		"classSource": "XPHB",
+		"page": 172,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"10": [
+						"counterspell|xphb",
+						"dispel magic|xphb"
+					]
+				},
+				"known": {
+					"3": [
+						{
+							"choose": "level=0;1;2|class=Wizard|school=A"
+						},
+						{
+							"choose": "level=0;1;2|class=Wizard|school=A"
+						}
+					],
+					"5": [
+						{
+							"choose": "level=0;1;2;3|class=Wizard|school=A"
+						}
+					],
+					"7": [
+						{
+							"choose": "level=0;1;2;3;4|class=Wizard|school=A"
+						}
+					],
+					"9": [
+						{
+							"choose": "level=0;1;2;3;4;5|class=Wizard|school=A"
+						}
+					],
+					"11": [
+						{
+							"choose": "level=0;1;2;3;4;5;6|class=Wizard|school=A"
+						}
+					],
+					"13": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7|class=Wizard|school=A"
+						}
+					],
+					"15": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7;8|class=Wizard|school=A"
+						}
+					],
+					"17": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7;8;9|class=Wizard|school=A"
+						}
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Abjurer|Wizard|XPHB|Abjurer|XPHB|3",
+			"Projected Ward|Wizard|XPHB|Abjurer|XPHB|6",
+			"Spell Breaker|Wizard|XPHB|Abjurer|XPHB|10",
+			"Spell Resistance|Wizard|XPHB|Abjurer|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Abjurer"
+	},
+	"Arcane Trickster|Rogue|XPHB": {
+		"name": "詭術師",
+		"shortName": "Arcane Trickster",
+		"source": "XPHB",
+		"className": "Rogue",
+		"classSource": "XPHB",
+		"page": 132,
+		"edition": "one",
+		"spellcastingAbility": "int",
+		"casterProgression": "1/3",
+		"preparedSpellsProgression": [
+			0,
+			0,
+			3,
+			4,
+			4,
+			4,
+			5,
+			6,
+			6,
+			7,
+			8,
+			8,
+			9,
+			10,
+			10,
+			11,
+			11,
+			11,
+			12,
+			13
+		],
+		"preparedSpellsChange": "level",
+		"cantripProgression": [
+			0,
+			0,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3
+		],
+		"additionalSpells": [
+			{
+				"known": {
+					"3": [
+						"mage hand|xphb#c"
+					]
+				},
+				"expanded": {
+					"3": [
+						{
+							"all": "level=0|class=Wizard"
+						},
+						{
+							"all": "level=1|class=Wizard"
+						}
+					],
+					"7": [
+						{
+							"all": "level=2|class=Wizard"
+						}
+					],
+					"13": [
+						{
+							"all": "level=3|class=Wizard"
+						}
+					],
+					"19": [
+						{
+							"all": "level=4|class=Wizard"
+						}
+					]
+				}
+			}
+		],
+		"subclassTableGroups": [
+			{
+				"subclasses": [
+					{
+						"name": "Arcane Trickster",
+						"source": "XPHB"
+					}
+				],
+				"colLabels": [
+					"{@filter Prepared Spells|spells|subclass=Rogue: Arcane Trickster}"
+				],
+				"rows": [
+					[
+						0
+					],
+					[
+						0
+					],
+					[
+						3
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						5
+					],
+					[
+						6
+					],
+					[
+						6
+					],
+					[
+						7
+					],
+					[
+						8
+					],
+					[
+						8
+					],
+					[
+						9
+					],
+					[
+						10
+					],
+					[
+						10
+					],
+					[
+						11
+					],
+					[
+						11
+					],
+					[
+						11
+					],
+					[
+						12
+					],
+					[
+						13
+					]
+				]
+			},
+			{
+				"title": "各環階法術欄位",
+				"subclasses": [
+					{
+						"name": "Arcane Trickster",
+						"source": "XPHB"
+					}
+				],
+				"colLabels": [
+					"{@filter 1st|spells|level=1|subclass=Rogue: Arcane Trickster}",
+					"{@filter 2nd|spells|level=2|subclass=Rogue: Arcane Trickster}",
+					"{@filter 3rd|spells|level=3|subclass=Rogue: Arcane Trickster}",
+					"{@filter 4th|spells|level=4|subclass=Rogue: Arcane Trickster}"
+				],
+				"rowsSpellProgression": [
+					[
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						2,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						2,
+						0,
+						0
+					],
+					[
+						4,
+						2,
+						0,
+						0
+					],
+					[
+						4,
+						2,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						2,
+						0
+					],
+					[
+						4,
+						3,
+						2,
+						0
+					],
+					[
+						4,
+						3,
+						2,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						1
+					],
+					[
+						4,
+						3,
+						3,
+						1
+					]
+				]
+			}
+		],
+		"subclassFeatures": [
+			"Arcane Trickster|Rogue|XPHB|Arcane Trickster|XPHB|3",
+			"Magical Ambush|Rogue|XPHB|Arcane Trickster|XPHB|9",
+			"Versatile Trickster|Rogue|XPHB|Arcane Trickster|XPHB|13",
+			"Spell Thief|Rogue|XPHB|Arcane Trickster|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Arcane Trickster"
+	},
+	"Archfey Patron|Warlock|XPHB": {
+		"name": "大妖精宗主",
+		"shortName": "Archfey",
+		"source": "XPHB",
+		"className": "Warlock",
+		"classSource": "XPHB",
+		"page": 159,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"calm emotions|xphb",
+						"faerie fire|xphb",
+						"misty step|xphb",
+						"phantasmal force|xphb",
+						"sleep|xphb"
+					],
+					"5": [
+						"blink|xphb",
+						"plant growth|xphb"
+					],
+					"7": [
+						"dominate beast|xphb",
+						"greater invisibility|xphb"
+					],
+					"9": [
+						"dominate person|xphb",
+						"seeming|xphb"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"cha": [
+								"misty step|xphb"
+							]
+						}
+					}
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Archfey Patron|Warlock|XPHB|Archfey|XPHB|3",
+			"Misty Escape|Warlock|XPHB|Archfey|XPHB|6",
+			"Beguiling Defenses|Warlock|XPHB|Archfey|XPHB|10",
+			"Bewitching Magic|Warlock|XPHB|Archfey|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Archfey Patron"
+	},
+	"Assassin|Rogue|XPHB": {
+		"name": "刺客",
+		"shortName": "Assassin",
+		"source": "XPHB",
+		"className": "Rogue",
+		"classSource": "XPHB",
+		"page": 134,
+		"edition": "one",
+		"subclassFeatures": [
+			"Assassin|Rogue|XPHB|Assassin|XPHB|3",
+			"Infiltration Expertise|Rogue|XPHB|Assassin|XPHB|9",
+			"Envenom Weapons|Rogue|XPHB|Assassin|XPHB|13",
+			"Death Strike|Rogue|XPHB|Assassin|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Assassin"
+	},
+	"Battle Master|Fighter|XPHB": {
+		"name": "戰鬥大師",
+		"shortName": "Battle Master",
+		"source": "XPHB",
+		"className": "Fighter",
+		"classSource": "XPHB",
+		"page": 93,
+		"edition": "one",
+		"optionalfeatureProgression": [
+			{
+				"name": "戰技",
+				"featureType": [
+					"MV:B"
+				],
+				"progression": {
+					"3": 3,
+					"7": 5,
+					"10": 7,
+					"15": 9
+				},
+				"ENG_name": "Maneuvers"
+			}
+		],
+		"subclassFeatures": [
+			"Battle Master|Fighter|XPHB|Battle Master|XPHB|3",
+			"Know Your Enemy|Fighter|XPHB|Battle Master|XPHB|7",
+			"Improved Combat Superiority|Fighter|XPHB|Battle Master|XPHB|10",
+			"Relentless|Fighter|XPHB|Battle Master|XPHB|15",
+			"Ultimate Combat Superiority|Fighter|XPHB|Battle Master|XPHB|18"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Battle Master"
+	},
+	"Beast Master|Ranger|XPHB": {
+		"name": "獸王",
+		"shortName": "Beast Master",
+		"source": "XPHB",
+		"className": "Ranger",
+		"classSource": "XPHB",
+		"page": 123,
+		"edition": "one",
+		"subclassFeatures": [
+			"Beast Master|Ranger|XPHB|Beast Master|XPHB|3",
+			"Exceptional Training|Ranger|XPHB|Beast Master|XPHB|7",
+			"Bestial Fury|Ranger|XPHB|Beast Master|XPHB|11",
+			"Share Spells|Ranger|XPHB|Beast Master|XPHB|15"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Beast Master"
+	},
+	"Celestial Patron|Warlock|XPHB": {
+		"name": "天界宗主",
+		"shortName": "Celestial",
+		"source": "XPHB",
+		"className": "Warlock",
+		"classSource": "XPHB",
+		"page": 160,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"known": {
+					"1": [
+						"sacred flame|xphb#c",
+						"light|xphb#c"
+					]
+				},
+				"prepared": {
+					"3": [
+						"aid|xphb",
+						"cure wounds|xphb",
+						"guiding bolt|xphb",
+						"lesser restoration|xphb"
+					],
+					"5": [
+						"daylight|xphb",
+						"revivify|xphb"
+					],
+					"7": [
+						"guardian of faith|xphb",
+						"wall of fire|xphb"
+					],
+					"9": [
+						"greater restoration|xphb",
+						"summon celestial|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Celestial Patron|Warlock|XPHB|Celestial|XPHB|3",
+			"Radiant Soul|Warlock|XPHB|Celestial|XPHB|6",
+			"Celestial Resilience|Warlock|XPHB|Celestial|XPHB|10",
+			"Searing Vengeance|Warlock|XPHB|Celestial|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Celestial Patron"
+	},
+	"Champion|Fighter|XPHB": {
+		"name": "勇士",
+		"shortName": "Champion",
+		"source": "XPHB",
+		"className": "Fighter",
+		"classSource": "XPHB",
+		"page": 96,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"featProgression": [
+			{
+				"name": "戰鬥風格",
+				"category": [
+					"FS"
+				],
+				"progression": {
+					"7": 1
+				},
+				"ENG_name": "Fighting Style"
+			}
+		],
+		"subclassFeatures": [
+			"Champion|Fighter|XPHB|Champion|XPHB|3",
+			"Additional Fighting Style|Fighter|XPHB|Champion|XPHB|7",
+			"Heroic Warrior|Fighter|XPHB|Champion|XPHB|10",
+			"Superior Critical|Fighter|XPHB|Champion|XPHB|15",
+			"Survivor|Fighter|XPHB|Champion|XPHB|18"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Champion"
+	},
+	"Circle of the Land|Druid|XPHB": {
+		"name": "大地結社",
+		"shortName": "Land",
+		"source": "XPHB",
+		"className": "Druid",
+		"classSource": "XPHB",
+		"page": 84,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"name": "Arid Land",
+				"prepared": {
+					"3": [
+						"blur|xphb",
+						"burning hands|xphb",
+						"fire bolt|xphb"
+					],
+					"5": [
+						"fireball|xphb"
+					],
+					"7": [
+						"blight|xphb"
+					],
+					"9": [
+						"wall of stone|xphb"
+					]
+				}
+			},
+			{
+				"name": "Polar Land",
+				"prepared": {
+					"3": [
+						"fog cloud|xphb",
+						"hold person|xphb",
+						"ray of frost|xphb"
+					],
+					"5": [
+						"sleet storm|xphb"
+					],
+					"7": [
+						"ice storm|xphb"
+					],
+					"9": [
+						"cone of cold|xphb"
+					]
+				}
+			},
+			{
+				"name": "Temperate Land",
+				"prepared": {
+					"3": [
+						"misty step|xphb",
+						"shocking grasp|xphb",
+						"sleep|xphb"
+					],
+					"5": [
+						"lightning bolt|xphb"
+					],
+					"7": [
+						"freedom of movement|xphb"
+					],
+					"9": [
+						"tree stride|xphb"
+					]
+				}
+			},
+			{
+				"name": "Tropical Land",
+				"prepared": {
+					"3": [
+						"acid splash|xphb",
+						"ray of sickness|xphb",
+						"web|xphb"
+					],
+					"5": [
+						"stinking cloud|xphb"
+					],
+					"7": [
+						"polymorph|xphb"
+					],
+					"9": [
+						"insect plague|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Circle of the Land|Druid|XPHB|Land|XPHB|3",
+			"Natural Recovery|Druid|XPHB|Land|XPHB|6",
+			"Nature's Ward|Druid|XPHB|Land|XPHB|10",
+			"Nature's Sanctuary|Druid|XPHB|Land|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Circle of the Land"
+	},
+	"Circle of the Moon|Druid|XPHB": {
+		"name": "月亮結社",
+		"shortName": "Moon",
+		"source": "XPHB",
+		"className": "Druid",
+		"classSource": "XPHB",
+		"page": 86,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"cure wounds|xphb",
+						"moonbeam|xphb",
+						"starry wisp|xphb"
+					],
+					"5": [
+						"conjure animals|xphb"
+					],
+					"7": [
+						"fount of moonlight|xphb"
+					],
+					"9": [
+						"mass cure wounds|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Circle of the Moon|Druid|XPHB|Moon|XPHB|3",
+			"Improved Circle Forms|Druid|XPHB|Moon|XPHB|6",
+			"Moonlight Step|Druid|XPHB|Moon|XPHB|10",
+			"Lunar Form|Druid|XPHB|Moon|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Circle of the Moon"
+	},
+	"Circle of the Sea|Druid|XPHB": {
+		"name": "海洋結社",
+		"shortName": "Sea",
+		"source": "XPHB",
+		"className": "Druid",
+		"classSource": "XPHB",
+		"page": 87,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"fog cloud|xphb",
+						"gust of wind|xphb",
+						"ray of frost|xphb",
+						"shatter|xphb",
+						"thunderwave|xphb"
+					],
+					"5": [
+						"lightning bolt|xphb",
+						"water breathing|xphb"
+					],
+					"7": [
+						"control water|xphb",
+						"ice storm|xphb"
+					],
+					"9": [
+						"conjure elemental|xphb",
+						"hold monster|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Circle of the Sea|Druid|XPHB|Sea|XPHB|3",
+			"Aquatic Affinity|Druid|XPHB|Sea|XPHB|6",
+			"Stormborn|Druid|XPHB|Sea|XPHB|10",
+			"Oceanic Gift|Druid|XPHB|Sea|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Circle of the Sea"
+	},
+	"Circle of the Stars|Druid|XPHB": {
+		"name": "星辰結社",
+		"shortName": "Stars",
+		"source": "XPHB",
+		"className": "Druid",
+		"classSource": "XPHB",
+		"page": 88,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"known": {
+					"3": [
+						"guidance|xphb#c"
+					]
+				},
+				"prepared": {
+					"3": [
+						"guiding bolt|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Circle of the Stars|Druid|XPHB|Stars|XPHB|3",
+			"Cosmic Omen|Druid|XPHB|Stars|XPHB|6",
+			"Twinkling Constellations|Druid|XPHB|Stars|XPHB|10",
+			"Full of Stars|Druid|XPHB|Stars|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Circle of the Stars"
+	},
+	"Clockwork Sorcery|Sorcerer|XPHB": {
+		"name": "機械術法",
+		"shortName": "Clockwork",
+		"source": "XPHB",
+		"className": "Sorcerer",
+		"classSource": "XPHB",
+		"page": 146,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"aid|xphb",
+						"alarm|xphb",
+						"lesser restoration|xphb",
+						"protection from evil and good|xphb"
+					],
+					"5": [
+						"dispel magic|xphb",
+						"protection from energy|xphb"
+					],
+					"7": [
+						"freedom of movement|xphb",
+						"summon construct|xphb"
+					],
+					"9": [
+						"greater restoration|xphb",
+						"wall of force|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Clockwork Sorcery|Sorcerer|XPHB|Clockwork|XPHB|3",
+			"Bastion of Law|Sorcerer|XPHB|Clockwork|XPHB|6",
+			"Trance of Order|Sorcerer|XPHB|Clockwork|XPHB|14",
+			"Clockwork Cavalcade|Sorcerer|XPHB|Clockwork|XPHB|18"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Clockwork Sorcery"
+	},
+	"College of Dance|Bard|XPHB": {
+		"name": "舞蹈學院",
+		"shortName": "Dance",
+		"source": "XPHB",
+		"className": "Bard",
+		"classSource": "XPHB",
+		"page": 64,
+		"edition": "one",
+		"subclassFeatures": [
+			"College of Dance|Bard|XPHB|Dance|XPHB|3",
+			"Inspiring Movement|Bard|XPHB|Dance|XPHB|6",
+			"Tandem Footwork|Bard|XPHB|Dance|XPHB|6",
+			"Leading Evasion|Bard|XPHB|Dance|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "College of Dance"
+	},
+	"College of Glamour|Bard|XPHB": {
+		"name": "魅惑學院",
+		"shortName": "Glamour",
+		"source": "XPHB",
+		"className": "Bard",
+		"classSource": "XPHB",
+		"page": 65,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"charm person|xphb",
+						"mirror image|xphb"
+					],
+					"6": [
+						"command|xphb"
+					]
+				},
+				"innate": {
+					"6": [
+						"command|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"College of Glamour|Bard|XPHB|Glamour|XPHB|3",
+			"Mantle of Majesty|Bard|XPHB|Glamour|XPHB|6",
+			"Unbreakable Majesty|Bard|XPHB|Glamour|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "College of Glamour"
+	},
+	"College of Lore|Bard|XPHB": {
+		"name": "知識學院",
+		"shortName": "Lore",
+		"source": "XPHB",
+		"className": "Bard",
+		"classSource": "XPHB",
+		"page": 66,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"6": [
+						{
+							"choose": "level=0;1;2;3|class=Cleric;Druid;Wizard"
+						},
+						{
+							"choose": "level=0;1;2;3|class=Cleric;Druid;Wizard"
+						}
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"College of Lore|Bard|XPHB|Lore|XPHB|3",
+			"Magical Discoveries|Bard|XPHB|Lore|XPHB|6",
+			"Peerless Skill|Bard|XPHB|Lore|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "College of Lore"
+	},
+	"College of Valor|Bard|XPHB": {
+		"name": "勇氣學院",
+		"shortName": "Valor",
+		"source": "XPHB",
+		"className": "Bard",
+		"classSource": "XPHB",
+		"page": 67,
+		"edition": "one",
+		"subclassFeatures": [
+			"College of Valor|Bard|XPHB|Valor|XPHB|3",
+			"Extra Attack|Bard|XPHB|Valor|XPHB|6",
+			"Battle Magic|Bard|XPHB|Valor|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "College of Valor"
+	},
+	"Diviner|Wizard|XPHB": {
+		"name": "預言師",
+		"shortName": "Diviner",
+		"source": "XPHB",
+		"className": "Wizard",
+		"classSource": "XPHB",
+		"page": 173,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"innate": {
+					"10": [
+						"see invisibility|xphb"
+					]
+				},
+				"known": {
+					"3": [
+						{
+							"choose": "level=0;1;2|class=Wizard|school=D"
+						},
+						{
+							"choose": "level=0;1;2|class=Wizard|school=D"
+						}
+					],
+					"5": [
+						{
+							"choose": "level=0;1;2;3|class=Wizard|school=D"
+						}
+					],
+					"7": [
+						{
+							"choose": "level=0;1;2;3;4|class=Wizard|school=D"
+						}
+					],
+					"9": [
+						{
+							"choose": "level=0;1;2;3;4;5|class=Wizard|school=D"
+						}
+					],
+					"11": [
+						{
+							"choose": "level=0;1;2;3;4;5;6|class=Wizard|school=D"
+						}
+					],
+					"13": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7|class=Wizard|school=D"
+						}
+					],
+					"15": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7;8|class=Wizard|school=D"
+						}
+					],
+					"17": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7;8;9|class=Wizard|school=D"
+						}
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Diviner|Wizard|XPHB|Diviner|XPHB|3",
+			"Expert Divination|Wizard|XPHB|Diviner|XPHB|6",
+			"The Third Eye|Wizard|XPHB|Diviner|XPHB|10",
+			"Greater Portent|Wizard|XPHB|Diviner|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Diviner"
+	},
+	"Draconic Sorcery|Sorcerer|XPHB": {
+		"name": "龍族術法",
+		"shortName": "Draconic",
+		"source": "XPHB",
+		"className": "Sorcerer",
+		"classSource": "XPHB",
+		"page": 148,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"alter self|xphb",
+						"chromatic orb|xphb",
+						"command|xphb",
+						"dragon's breath|xphb"
+					],
+					"5": [
+						"fear|xphb",
+						"fly|xphb"
+					],
+					"7": [
+						"arcane eye|xphb",
+						"charm monster|xphb"
+					],
+					"9": [
+						"legend lore|xphb",
+						"summon dragon|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Draconic Sorcery|Sorcerer|XPHB|Draconic|XPHB|3",
+			"Elemental Affinity|Sorcerer|XPHB|Draconic|XPHB|6",
+			"Dragon Wings|Sorcerer|XPHB|Draconic|XPHB|14",
+			"Dragon Companion|Sorcerer|XPHB|Draconic|XPHB|18"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Draconic Sorcery"
+	},
+	"Eldritch Knight|Fighter|XPHB": {
+		"name": "魔能騎士",
+		"shortName": "Eldritch Knight",
+		"source": "XPHB",
+		"className": "Fighter",
+		"classSource": "XPHB",
+		"page": 96,
+		"edition": "one",
+		"spellcastingAbility": "int",
+		"casterProgression": "1/3",
+		"preparedSpellsProgression": [
+			0,
+			0,
+			3,
+			4,
+			4,
+			4,
+			5,
+			6,
+			6,
+			7,
+			8,
+			8,
+			9,
+			10,
+			10,
+			11,
+			11,
+			11,
+			12,
+			13
+		],
+		"preparedSpellsChange": "level",
+		"cantripProgression": [
+			0,
+			0,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3,
+			3
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"3": [
+						{
+							"all": "level=0|class=Wizard"
+						},
+						{
+							"all": "level=1|class=Wizard"
+						}
+					],
+					"7": [
+						{
+							"all": "level=2|class=Wizard"
+						}
+					],
+					"13": [
+						{
+							"all": "level=3|class=Wizard"
+						}
+					],
+					"19": [
+						{
+							"all": "level=4|class=Wizard"
+						}
+					]
+				}
+			}
+		],
+		"subclassTableGroups": [
+			{
+				"subclasses": [
+					{
+						"name": "Eldritch Knight",
+						"source": "XPHB"
+					}
+				],
+				"colLabels": [
+					"{@filter Spells Prepared|spells|subclass=Fighter: Eldritch Knight}"
+				],
+				"rows": [
+					[
+						0
+					],
+					[
+						0
+					],
+					[
+						3
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						4
+					],
+					[
+						5
+					],
+					[
+						6
+					],
+					[
+						6
+					],
+					[
+						7
+					],
+					[
+						8
+					],
+					[
+						8
+					],
+					[
+						9
+					],
+					[
+						10
+					],
+					[
+						10
+					],
+					[
+						11
+					],
+					[
+						11
+					],
+					[
+						11
+					],
+					[
+						12
+					],
+					[
+						13
+					]
+				]
+			},
+			{
+				"title": "各環階法術欄位",
+				"subclasses": [
+					{
+						"name": "Eldritch Knight",
+						"source": "XPHB"
+					}
+				],
+				"colLabels": [
+					"{@filter 1st|spells|level=1|subclass=Fighter: Eldritch Knight}",
+					"{@filter 2nd|spells|level=2|subclass=Fighter: Eldritch Knight}",
+					"{@filter 3rd|spells|level=3|subclass=Fighter: Eldritch Knight}",
+					"{@filter 4th|spells|level=4|subclass=Fighter: Eldritch Knight}"
+				],
+				"rowsSpellProgression": [
+					[
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						2,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						2,
+						0,
+						0
+					],
+					[
+						4,
+						2,
+						0,
+						0
+					],
+					[
+						4,
+						2,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						2,
+						0
+					],
+					[
+						4,
+						3,
+						2,
+						0
+					],
+					[
+						4,
+						3,
+						2,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						1
+					],
+					[
+						4,
+						3,
+						3,
+						1
+					]
+				]
+			}
+		],
+		"subclassFeatures": [
+			"Eldritch Knight|Fighter|XPHB|Eldritch Knight|XPHB|3",
+			"War Magic|Fighter|XPHB|Eldritch Knight|XPHB|7",
+			"Eldritch Strike|Fighter|XPHB|Eldritch Knight|XPHB|10",
+			"Arcane Charge|Fighter|XPHB|Eldritch Knight|XPHB|15",
+			"Improved War Magic|Fighter|XPHB|Eldritch Knight|XPHB|18"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Eldritch Knight"
+	},
+	"Evoker|Wizard|XPHB": {
+		"name": "塑能師",
+		"shortName": "Evoker",
+		"source": "XPHB",
+		"className": "Wizard",
+		"classSource": "XPHB",
+		"page": 174,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"known": {
+					"3": [
+						{
+							"choose": "level=0;1;2|class=Wizard|school=V"
+						},
+						{
+							"choose": "level=0;1;2|class=Wizard|school=V"
+						}
+					],
+					"5": [
+						{
+							"choose": "level=0;1;2;3|class=Wizard|school=V"
+						}
+					],
+					"7": [
+						{
+							"choose": "level=0;1;2;3;4|class=Wizard|school=V"
+						}
+					],
+					"9": [
+						{
+							"choose": "level=0;1;2;3;4;5|class=Wizard|school=V"
+						}
+					],
+					"11": [
+						{
+							"choose": "level=0;1;2;3;4;5;6|class=Wizard|school=V"
+						}
+					],
+					"13": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7|class=Wizard|school=V"
+						}
+					],
+					"15": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7;8|class=Wizard|school=V"
+						}
+					],
+					"17": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7;8;9|class=Wizard|school=V"
+						}
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Evoker|Wizard|XPHB|Evoker|XPHB|3",
+			"Sculpt Spells|Wizard|XPHB|Evoker|XPHB|6",
+			"Empowered Evocation|Wizard|XPHB|Evoker|XPHB|10",
+			"Overchannel|Wizard|XPHB|Evoker|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Evoker"
+	},
+	"Fey Wanderer|Ranger|XPHB": {
+		"name": "妖精漫遊者",
+		"shortName": "Fey Wanderer",
+		"source": "XPHB",
+		"className": "Ranger",
+		"classSource": "XPHB",
+		"page": 124,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"known": {
+					"3": [
+						"charm person|xphb"
+					],
+					"5": [
+						"misty step|xphb"
+					],
+					"9": [
+						"summon fey|xphb"
+					],
+					"13": [
+						"dimension door|xphb"
+					],
+					"17": [
+						"mislead|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Fey Wanderer|Ranger|XPHB|Fey Wanderer|XPHB|3",
+			"Beguiling Twist|Ranger|XPHB|Fey Wanderer|XPHB|7",
+			"Fey Reinforcements|Ranger|XPHB|Fey Wanderer|XPHB|11",
+			"Misty Wanderer|Ranger|XPHB|Fey Wanderer|XPHB|15"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Fey Wanderer"
+	},
+	"Fiend Patron|Warlock|XPHB": {
+		"name": "邪魔宗主",
+		"shortName": "Fiend",
+		"source": "XPHB",
+		"className": "Warlock",
+		"classSource": "XPHB",
+		"page": 161,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"burning hands|xphb",
+						"command|xphb",
+						"scorching ray|xphb",
+						"suggestion|xphb"
+					],
+					"5": [
+						"fireball|xphb",
+						"stinking cloud|xphb"
+					],
+					"7": [
+						"fire shield|xphb",
+						"wall of fire|xphb"
+					],
+					"9": [
+						"geas|xphb",
+						"insect plague|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Fiend Patron|Warlock|XPHB|Fiend|XPHB|3",
+			"Dark One's Own Luck|Warlock|XPHB|Fiend|XPHB|6",
+			"Fiendish Resilience|Warlock|XPHB|Fiend|XPHB|10",
+			"Hurl Through Hell|Warlock|XPHB|Fiend|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Fiend Patron"
+	},
+	"Gloom Stalker|Ranger|XPHB": {
+		"name": "幽域追蹤者",
+		"shortName": "Gloom Stalker",
+		"source": "XPHB",
+		"className": "Ranger",
+		"classSource": "XPHB",
+		"page": 125,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"disguise self|xphb"
+					],
+					"5": [
+						"rope trick|xphb"
+					],
+					"9": [
+						"fear|xphb"
+					],
+					"13": [
+						"greater invisibility|xphb"
+					],
+					"17": [
+						"seeming|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Gloom Stalker|Ranger|XPHB|Gloom Stalker|XPHB|3",
+			"Iron Mind|Ranger|XPHB|Gloom Stalker|XPHB|7",
+			"Stalker's Flurry|Ranger|XPHB|Gloom Stalker|XPHB|11",
+			"Shadowy Dodge|Ranger|XPHB|Gloom Stalker|XPHB|15"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Gloom Stalker"
+	},
+	"Great Old One Patron|Warlock|XPHB": {
+		"name": "舊日支配者宗主",
+		"shortName": "Great Old One",
+		"source": "XPHB",
+		"className": "Warlock",
+		"classSource": "XPHB",
+		"page": 162,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"detect thoughts|xphb",
+						"dissonant whispers|xphb",
+						"phantasmal force|xphb",
+						"tasha's hideous laughter|xphb"
+					],
+					"5": [
+						"clairvoyance|xphb",
+						"hunger of hadar|xphb"
+					],
+					"7": [
+						"confusion|xphb",
+						"summon aberration|xphb"
+					],
+					"9": [
+						"modify memory|xphb",
+						"telekinesis|xphb"
+					]
+				},
+				"innate": {
+					"10": [
+						"hex|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Great Old One Patron|Warlock|XPHB|Great Old One|XPHB|3",
+			"Clairvoyant Combatant|Warlock|XPHB|Great Old One|XPHB|6",
+			"Eldritch Hex|Warlock|XPHB|Great Old One|XPHB|10",
+			"Thought Shield|Warlock|XPHB|Great Old One|XPHB|10",
+			"Create Thrall|Warlock|XPHB|Great Old One|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Great Old One Patron"
+	},
+	"Hunter|Ranger|XPHB": {
+		"name": "獵人",
+		"shortName": "Hunter",
+		"source": "XPHB",
+		"className": "Ranger",
+		"classSource": "XPHB",
+		"page": 127,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"subclassFeatures": [
+			"Hunter|Ranger|XPHB|Hunter|XPHB|3",
+			"Defensive Tactics|Ranger|XPHB|Hunter|XPHB|7",
+			"Superior Hunter's Prey|Ranger|XPHB|Hunter|XPHB|11",
+			"Superior Hunter's Defense|Ranger|XPHB|Hunter|XPHB|15"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Hunter"
+	},
+	"Illusionist|Wizard|XPHB": {
+		"name": "幻術師",
+		"shortName": "Illusionist",
+		"source": "XPHB",
+		"className": "Wizard",
+		"classSource": "XPHB",
+		"page": 175,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"known": {
+					"3": [
+						"minor illusion|xphb#c",
+						{
+							"choose": "level=0;1;2|class=Wizard|school=I"
+						},
+						{
+							"choose": "level=0;1;2|class=Wizard|school=I"
+						}
+					],
+					"5": [
+						{
+							"choose": "level=0;1;2;3|class=Wizard|school=I"
+						}
+					],
+					"7": [
+						{
+							"choose": "level=0;1;2;3;4|class=Wizard|school=I"
+						}
+					],
+					"9": [
+						{
+							"choose": "level=0;1;2;3;4;5|class=Wizard|school=I"
+						}
+					],
+					"11": [
+						{
+							"choose": "level=0;1;2;3;4;5;6|class=Wizard|school=I"
+						}
+					],
+					"13": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7|class=Wizard|school=I"
+						}
+					],
+					"15": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7;8|class=Wizard|school=I"
+						}
+					],
+					"17": [
+						{
+							"choose": "level=0;1;2;3;4;5;6;7;8;9|class=Wizard|school=I"
+						}
+					]
+				},
+				"prepared": {
+					"6": [
+						"summon beast|xphb",
+						"summon fey|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Illusionist|Wizard|XPHB|Illusionist|XPHB|3",
+			"Phantasmal Creatures|Wizard|XPHB|Illusionist|XPHB|6",
+			"Illusory Self|Wizard|XPHB|Illusionist|XPHB|10",
+			"Illusory Reality|Wizard|XPHB|Illusionist|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Illusionist"
+	},
+	"Life Domain|Cleric|XPHB": {
+		"name": "生命領域",
+		"shortName": "Life",
+		"source": "XPHB",
+		"className": "Cleric",
+		"classSource": "XPHB",
+		"page": 73,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"aid|xphb",
+						"bless|xphb",
+						"cure wounds|xphb",
+						"lesser restoration|xphb"
+					],
+					"5": [
+						"mass healing word|xphb",
+						"revivify|xphb"
+					],
+					"7": [
+						"aura of life|xphb",
+						"death ward|xphb"
+					],
+					"9": [
+						"greater restoration|xphb",
+						"mass cure wounds|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Life Domain|Cleric|XPHB|Life|XPHB|3",
+			"Blessed Healer|Cleric|XPHB|Life|XPHB|6",
+			"Supreme Healing|Cleric|XPHB|Life|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Life Domain"
+	},
+	"Light Domain|Cleric|XPHB": {
+		"name": "光明領域",
+		"shortName": "Light",
+		"source": "XPHB",
+		"className": "Cleric",
+		"classSource": "XPHB",
+		"page": 74,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"burning hands|xphb",
+						"faerie fire|xphb",
+						"scorching ray|xphb",
+						"see invisibility|xphb"
+					],
+					"5": [
+						"daylight|xphb",
+						"fireball|xphb"
+					],
+					"7": [
+						"arcane eye|xphb",
+						"wall of fire|xphb"
+					],
+					"9": [
+						"flame strike|xphb",
+						"scrying|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Light Domain|Cleric|XPHB|Light|XPHB|3",
+			"Improved Warding Flare|Cleric|XPHB|Light|XPHB|6",
+			"Corona of Light|Cleric|XPHB|Light|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Light Domain"
+	},
+	"Oath of Devotion|Paladin|XPHB": {
+		"name": "奉獻之誓",
+		"shortName": "Devotion",
+		"source": "XPHB",
+		"className": "Paladin",
+		"classSource": "XPHB",
+		"page": 113,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"protection from evil and good|xphb",
+						"shield of faith|xphb"
+					],
+					"5": [
+						"aid|xphb",
+						"zone of truth|xphb"
+					],
+					"9": [
+						"beacon of hope|xphb",
+						"dispel magic|xphb"
+					],
+					"13": [
+						"freedom of movement|xphb",
+						"guardian of faith|xphb"
+					],
+					"17": [
+						"commune|xphb",
+						"flame strike|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Oath of Devotion|Paladin|XPHB|Devotion|XPHB|3",
+			"Aura of Devotion|Paladin|XPHB|Devotion|XPHB|7",
+			"Smite of Protection|Paladin|XPHB|Devotion|XPHB|15",
+			"Holy Nimbus|Paladin|XPHB|Devotion|XPHB|20"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Oath of Devotion"
+	},
+	"Oath of Glory|Paladin|XPHB": {
+		"name": "榮耀之誓",
+		"shortName": "Glory",
+		"source": "XPHB",
+		"className": "Paladin",
+		"classSource": "XPHB",
+		"page": 114,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"guiding bolt|xphb",
+						"heroism|xphb"
+					],
+					"5": [
+						"enhance ability|xphb",
+						"magic weapon|xphb"
+					],
+					"9": [
+						"haste|xphb",
+						"protection from energy|xphb"
+					],
+					"13": [
+						"compulsion|xphb",
+						"freedom of movement|xphb"
+					],
+					"17": [
+						"legend lore|xphb",
+						"yolande's regal presence|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Oath of Glory|Paladin|XPHB|Glory|XPHB|3",
+			"Aura of Alacrity|Paladin|XPHB|Glory|XPHB|7",
+			"Glorious Defense|Paladin|XPHB|Glory|XPHB|15",
+			"Living Legend|Paladin|XPHB|Glory|XPHB|20"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Oath of Glory"
+	},
+	"Oath of the Ancients|Paladin|XPHB": {
+		"name": "遠古之誓",
+		"shortName": "Ancients",
+		"source": "XPHB",
+		"className": "Paladin",
+		"classSource": "XPHB",
+		"page": 115,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"ensnaring strike|xphb",
+						"speak with animals|xphb"
+					],
+					"5": [
+						"misty step|xphb",
+						"moonbeam|xphb"
+					],
+					"9": [
+						"plant growth|xphb",
+						"protection from energy|xphb"
+					],
+					"13": [
+						"ice storm|xphb",
+						"stoneskin|xphb"
+					],
+					"17": [
+						"commune with nature|xphb",
+						"tree stride|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Oath of the Ancients|Paladin|XPHB|Ancients|XPHB|3",
+			"Aura of Warding|Paladin|XPHB|Ancients|XPHB|7",
+			"Undying Sentinel|Paladin|XPHB|Ancients|XPHB|15",
+			"Elder Champion|Paladin|XPHB|Ancients|XPHB|20"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Oath of the Ancients"
+	},
+	"Oath of Vengeance|Paladin|XPHB": {
+		"name": "復仇之誓",
+		"shortName": "Vengeance",
+		"source": "XPHB",
+		"className": "Paladin",
+		"classSource": "XPHB",
+		"page": 116,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"bane|xphb",
+						"hunter's mark|xphb"
+					],
+					"5": [
+						"hold person|xphb",
+						"misty step|xphb"
+					],
+					"9": [
+						"haste|xphb",
+						"protection from energy|xphb"
+					],
+					"13": [
+						"banishment|xphb",
+						"dimension door|xphb"
+					],
+					"17": [
+						"hold monster|xphb",
+						"scrying|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Oath of Vengeance|Paladin|XPHB|Vengeance|XPHB|3",
+			"Relentless Avenger|Paladin|XPHB|Vengeance|XPHB|7",
+			"Soul of Vengeance|Paladin|XPHB|Vengeance|XPHB|15",
+			"Avenging Angel|Paladin|XPHB|Vengeance|XPHB|20"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Oath of Vengeance"
+	},
+	"Path of the Berserker|Barbarian|XPHB": {
+		"name": "狂戰士道途",
+		"shortName": "Berserker",
+		"source": "XPHB",
+		"className": "Barbarian",
+		"classSource": "XPHB",
+		"page": 54,
+		"srd52": true,
+		"edition": "one",
+		"subclassFeatures": [
+			"Path of the Berserker|Barbarian|XPHB|Berserker|XPHB|3",
+			"Mindless Rage|Barbarian|XPHB|Berserker|XPHB|6",
+			"Retaliation|Barbarian|XPHB|Berserker|XPHB|10",
+			"Intimidating Presence|Barbarian|XPHB|Berserker|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Path of the Berserker"
+	},
+	"Path of the Wild Heart|Barbarian|XPHB": {
+		"name": "野性之心道途",
+		"shortName": "Wild Heart",
+		"source": "XPHB",
+		"className": "Barbarian",
+		"classSource": "XPHB",
+		"page": 55,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"ritual": [
+							"beast sense|xphb",
+							"speak with animals|xphb"
+						]
+					},
+					"10": {
+						"ritual": [
+							"commune with nature|xphb"
+						]
+					}
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Path of the Wild Heart|Barbarian|XPHB|Wild Heart|XPHB|3",
+			"Aspect of the Wilds|Barbarian|XPHB|Wild Heart|XPHB|6",
+			"Nature Speaker|Barbarian|XPHB|Wild Heart|XPHB|10",
+			"Power of the Wilds|Barbarian|XPHB|Wild Heart|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Path of the Wild Heart"
+	},
+	"Path of the World Tree|Barbarian|XPHB": {
+		"name": "世界樹道途",
+		"shortName": "World Tree",
+		"source": "XPHB",
+		"className": "Barbarian",
+		"classSource": "XPHB",
+		"page": 56,
+		"edition": "one",
+		"subclassFeatures": [
+			"Path of the World Tree|Barbarian|XPHB|World Tree|XPHB|3",
+			"Branches of the Tree|Barbarian|XPHB|World Tree|XPHB|6",
+			"Battering Roots|Barbarian|XPHB|World Tree|XPHB|10",
+			"Travel Along the Tree|Barbarian|XPHB|World Tree|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Path of the World Tree"
+	},
+	"Path of the Zealot|Barbarian|XPHB": {
+		"name": "狂熱者道途",
+		"shortName": "Zealot",
+		"source": "XPHB",
+		"className": "Barbarian",
+		"classSource": "XPHB",
+		"page": 57,
+		"edition": "one",
+		"subclassFeatures": [
+			"Path of the Zealot|Barbarian|XPHB|Zealot|XPHB|3",
+			"Fanatical Focus|Barbarian|XPHB|Zealot|XPHB|6",
+			"Zealous Presence|Barbarian|XPHB|Zealot|XPHB|10",
+			"Rage of the Gods|Barbarian|XPHB|Zealot|XPHB|14"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Path of the Zealot"
+	},
+	"Psi Warrior|Fighter|XPHB": {
+		"name": "靈能戰士",
+		"shortName": "Psi Warrior",
+		"source": "XPHB",
+		"className": "Fighter",
+		"classSource": "XPHB",
+		"page": 98,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"innate": {
+					"18": {
+						"daily": {
+							"1": [
+								"telekinesis|xphb"
+							]
+						}
+					}
+				}
+			}
+		],
+		"subclassTableGroups": [
+			{
+				"subclasses": [
+					{
+						"name": "Psi Warrior",
+						"source": "XPHB"
+					}
+				],
+				"colLabels": [
+					"{@tip Die Size|Psionic Energy Die Size}",
+					"{@tip Number|Psionic Energy Die Number}"
+				],
+				"rows": [
+					[
+						0,
+						0
+					],
+					[
+						0,
+						0
+					],
+					[
+						"{@dice D6}",
+						4
+					],
+					[
+						"{@dice D6}",
+						4
+					],
+					[
+						"{@dice D8}",
+						6
+					],
+					[
+						"{@dice D8}",
+						6
+					],
+					[
+						"{@dice D8}",
+						6
+					],
+					[
+						"{@dice D8}",
+						6
+					],
+					[
+						"{@dice D8}",
+						8
+					],
+					[
+						"{@dice D8}",
+						8
+					],
+					[
+						"{@dice D10}",
+						8
+					],
+					[
+						"{@dice D10}",
+						8
+					],
+					[
+						"{@dice D10}",
+						10
+					],
+					[
+						"{@dice D10}",
+						10
+					],
+					[
+						"{@dice D10}",
+						10
+					],
+					[
+						"{@dice D10}",
+						10
+					],
+					[
+						"{@dice D12}",
+						12
+					],
+					[
+						"{@dice D12}",
+						12
+					],
+					[
+						"{@dice D12}",
+						12
+					],
+					[
+						"{@dice D12}",
+						12
+					]
+				]
+			}
+		],
+		"subclassFeatures": [
+			"Psi Warrior|Fighter|XPHB|Psi Warrior|XPHB|3",
+			"Telekinetic Adept|Fighter|XPHB|Psi Warrior|XPHB|7",
+			"Guarded Mind|Fighter|XPHB|Psi Warrior|XPHB|10",
+			"Bulwark of Force|Fighter|XPHB|Psi Warrior|XPHB|15",
+			"Telekinetic Master|Fighter|XPHB|Psi Warrior|XPHB|18"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Psi Warrior"
+	},
+	"Soulknife|Rogue|XPHB": {
+		"name": "靈魂之刃",
+		"shortName": "Soulknife",
+		"source": "XPHB",
+		"className": "Rogue",
+		"classSource": "XPHB",
+		"page": 135,
+		"edition": "one",
+		"subclassTableGroups": [
+			{
+				"subclasses": [
+					{
+						"name": "Soulknife",
+						"source": "XPHB"
+					}
+				],
+				"colLabels": [
+					"{@tip Die Size|Soulknife Energy Die Size}",
+					"{@tip Number|Soulknife Energy Die Number}"
+				],
+				"rows": [
+					[
+						0,
+						0
+					],
+					[
+						0,
+						0
+					],
+					[
+						"{@dice D6}",
+						4
+					],
+					[
+						"{@dice D6}",
+						4
+					],
+					[
+						"{@dice D8}",
+						6
+					],
+					[
+						"{@dice D8}",
+						6
+					],
+					[
+						"{@dice D8}",
+						6
+					],
+					[
+						"{@dice D8}",
+						6
+					],
+					[
+						"{@dice D8}",
+						8
+					],
+					[
+						"{@dice D8}",
+						8
+					],
+					[
+						"{@dice D10}",
+						8
+					],
+					[
+						"{@dice D10}",
+						8
+					],
+					[
+						"{@dice D10}",
+						10
+					],
+					[
+						"{@dice D10}",
+						10
+					],
+					[
+						"{@dice D10}",
+						10
+					],
+					[
+						"{@dice D10}",
+						10
+					],
+					[
+						"{@dice D12}",
+						12
+					],
+					[
+						"{@dice D12}",
+						12
+					],
+					[
+						"{@dice D12}",
+						12
+					],
+					[
+						"{@dice D12}",
+						12
+					]
+				]
+			}
+		],
+		"subclassFeatures": [
+			"Soulknife|Rogue|XPHB|Soulknife|XPHB|3",
+			"Soul Blades|Rogue|XPHB|Soulknife|XPHB|9",
+			"Psychic Veil|Rogue|XPHB|Soulknife|XPHB|13",
+			"Rend Mind|Rogue|XPHB|Soulknife|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Soulknife"
+	},
+	"Thief|Rogue|XPHB": {
+		"name": "竊賊",
+		"shortName": "Thief",
+		"source": "XPHB",
+		"className": "Rogue",
+		"classSource": "XPHB",
+		"page": 137,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"subclassFeatures": [
+			"Thief|Rogue|XPHB|Thief|XPHB|3",
+			"Supreme Sneak|Rogue|XPHB|Thief|XPHB|9",
+			"Use Magic Device|Rogue|XPHB|Thief|XPHB|13",
+			"Thief's Reflexes|Rogue|XPHB|Thief|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Thief"
+	},
+	"Trickery Domain|Cleric|XPHB": {
+		"name": "詭術領域",
+		"shortName": "Trickery",
+		"source": "XPHB",
+		"className": "Cleric",
+		"classSource": "XPHB",
+		"page": 75,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"charm person|xphb",
+						"disguise self|xphb",
+						"invisibility|xphb",
+						"pass without trace|xphb"
+					],
+					"5": [
+						"hypnotic pattern|xphb",
+						"nondetection|xphb"
+					],
+					"7": [
+						"confusion|xphb",
+						"dimension door|xphb"
+					],
+					"9": [
+						"dominate person|xphb",
+						"modify memory|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Trickery Domain|Cleric|XPHB|Trickery|XPHB|3",
+			"Trickster's Transposition|Cleric|XPHB|Trickery|XPHB|6",
+			"Improved Duplicity|Cleric|XPHB|Trickery|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Trickery Domain"
+	},
+	"War Domain|Cleric|XPHB": {
+		"name": "戰爭領域",
+		"shortName": "War",
+		"source": "XPHB",
+		"className": "Cleric",
+		"classSource": "XPHB",
+		"page": 76,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"guiding bolt|xphb",
+						"magic weapon|xphb",
+						"shield of faith|xphb",
+						"spiritual weapon|xphb"
+					],
+					"5": [
+						"crusader's mantle|xphb",
+						"spirit guardians|xphb"
+					],
+					"7": [
+						"fire shield|xphb",
+						"freedom of movement|xphb"
+					],
+					"9": [
+						"hold monster|xphb",
+						"steel wind strike|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"War Domain|Cleric|XPHB|War|XPHB|3",
+			"War God's Blessing|Cleric|XPHB|War|XPHB|6",
+			"Avatar of Battle|Cleric|XPHB|War|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "War Domain"
+	},
+	"Warrior of Mercy|Monk|XPHB": {
+		"name": "慈悲武者",
+		"shortName": "Mercy",
+		"source": "XPHB",
+		"className": "Monk",
+		"classSource": "XPHB",
+		"page": 104,
+		"edition": "one",
+		"subclassFeatures": [
+			"Warrior of Mercy|Monk|XPHB|Mercy|XPHB|3",
+			"Physician's Touch|Monk|XPHB|Mercy|XPHB|6",
+			"Flurry of Healing and Harm|Monk|XPHB|Mercy|XPHB|11",
+			"Hand of Ultimate Mercy|Monk|XPHB|Mercy|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Warrior of Mercy"
+	},
+	"Warrior of Shadow|Monk|XPHB": {
+		"name": "暗影武者",
+		"shortName": "Shadow",
+		"source": "XPHB",
+		"className": "Monk",
+		"classSource": "XPHB",
+		"page": 105,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"known": {
+					"3": [
+						"minor illusion|xphb#c"
+					]
+				},
+				"innate": {
+					"3": {
+						"resource": {
+							"1": [
+								"darkness|xphb"
+							]
+						}
+					}
+				},
+				"resourceName": "Focus Point",
+				"ability": "wis"
+			}
+		],
+		"subclassFeatures": [
+			"Warrior of Shadow|Monk|XPHB|Shadow|XPHB|3",
+			"Shadow Step|Monk|XPHB|Shadow|XPHB|6",
+			"Improved Shadow Step|Monk|XPHB|Shadow|XPHB|11",
+			"Cloak of Shadows|Monk|XPHB|Shadow|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Warrior of Shadow"
+	},
+	"Warrior of the Elements|Monk|XPHB": {
+		"name": "元素武者",
+		"shortName": "Elements",
+		"source": "XPHB",
+		"className": "Monk",
+		"classSource": "XPHB",
+		"page": 106,
+		"edition": "one",
+		"additionalSpells": [
+			{
+				"known": {
+					"3": [
+						"elementalism|xphb#c"
+					]
+				},
+				"ability": "wis"
+			}
+		],
+		"subclassFeatures": [
+			"Warrior of the Elements|Monk|XPHB|Elements|XPHB|3",
+			"Elemental Burst|Monk|XPHB|Elements|XPHB|6",
+			"Stride of the Elements|Monk|XPHB|Elements|XPHB|11",
+			"Elemental Epitome|Monk|XPHB|Elements|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Warrior of the Elements"
+	},
+	"Warrior of the Open Hand|Monk|XPHB": {
+		"name": "散打武者",
+		"shortName": "Open Hand",
+		"source": "XPHB",
+		"className": "Monk",
+		"classSource": "XPHB",
+		"page": 107,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"subclassFeatures": [
+			"Warrior of the Open Hand|Monk|XPHB|Open Hand|XPHB|3",
+			"Wholeness of Body|Monk|XPHB|Open Hand|XPHB|6",
+			"Fleet Step|Monk|XPHB|Open Hand|XPHB|11",
+			"Quivering Palm|Monk|XPHB|Open Hand|XPHB|17"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Warrior of the Open Hand"
+	},
+	"Wild Magic Sorcery|Sorcerer|XPHB": {
+		"name": "狂野魔法術法",
+		"shortName": "Wild Magic",
+		"source": "XPHB",
+		"className": "Sorcerer",
+		"classSource": "XPHB",
+		"page": 149,
+		"edition": "one",
+		"subclassFeatures": [
+			"Wild Magic Sorcery|Sorcerer|XPHB|Wild Magic|XPHB|3",
+			"Bend Luck|Sorcerer|XPHB|Wild Magic|XPHB|6",
+			"Controlled Chaos|Sorcerer|XPHB|Wild Magic|XPHB|14",
+			"Tamed Surge|Sorcerer|XPHB|Wild Magic|XPHB|18"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Wild Magic Sorcery"
+	}
+}
