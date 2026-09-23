@@ -1,0 +1,66 @@
+{
+	"Eldritch Cannon|EFA": {
+		"name": "異界砲",
+		"source": "EFA",
+		"page": 16,
+		"size": [
+			"T",
+			"S"
+		],
+		"objectType": "U",
+		"ac": 18,
+		"hp": {
+			"special": "5 × your artificer level (casting {@spell Mending|XPHB} on the cannon restores {@dice 2d6} hit points to it)"
+		},
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"entries": [
+			"{@note 由{@subclassFeature Eldritch Cannon|Artificer|EFA|Artillerist|EFA|3|EFA|異界砲}子職業特性創造。}"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "啟動砲（你必須位於砲的 60 呎內）",
+				"entries": [
+					"作為一個{@variantrule Bonus Action|XPHB}，你命令砲使用下方的噴火器、力場弩砲或守護者選項；你可以指揮砲在該選項之前或之後移動至多 15 呎：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"page": 10,
+						"items": [
+							{
+								"type": "item",
+								"name": "噴火器",
+								"entries": [
+									"砲在 15 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內噴出火焰。該區域內的每個生物對{@dcYourSpellSave}進行一次敏捷豁免檢定，失敗時受到 {@damage 2d8} 火焰傷害，成功時傷害減半。{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內未被穿戴或攜帶的易燃物體會開始燃燒。"
+								],
+								"ENG_name": "Flamethrower"
+							},
+							{
+								"type": "item",
+								"name": "力場弩砲",
+								"entries": [
+									"從砲發出一次遠程法術攻擊，目標為砲 120 呎內的一個生物或物體。命中時，目標受到 {@damage 2d8} 力場傷害；若目標是生物，它會被推離砲至多 5 呎。"
+								],
+								"ENG_name": "Force Ballista"
+							},
+							{
+								"type": "item",
+								"name": "守護者",
+								"entries": [
+									"砲釋放一陣正能量，使它自己以及砲 10 呎內每個由你選擇的生物，獲得等同於 {@dice 1d8} + 你智力調整值（至少 +1）的{@variantrule Temporary Hit Points|XPHB}。"
+								],
+								"ENG_name": "Protector"
+							}
+						]
+					}
+				],
+				"ENG_name": "Activate Cannon (Requires You to be within 60 Feet of the Cannon)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Eldritch Cannon"
+	}
+}

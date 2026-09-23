@@ -114,6 +114,64 @@
 		"hasFluffImages": true,
 		"ENG_name": "Abjurer"
 	},
+	"Alchemist|Artificer|EFA": {
+		"name": "煉金師",
+		"shortName": "Alchemist",
+		"source": "EFA",
+		"className": "Artificer",
+		"classSource": "EFA",
+		"page": 12,
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"healing word|xphb",
+						"ray of sickness|xphb"
+					],
+					"5": [
+						"flaming sphere|xphb",
+						"melf's acid arrow|xphb"
+					],
+					"9": [
+						"gaseous form|xphb",
+						"mass healing word|xphb"
+					],
+					"13": [
+						"death ward|xphb",
+						"vitriolic sphere|xphb"
+					],
+					"17": [
+						"cloudkill|xphb",
+						"raise dead|xphb"
+					]
+				},
+				"innate": {
+					"9": {
+						"daily": {
+							"int": [
+								"lesser restoration|xphb"
+							]
+						}
+					},
+					"15": {
+						"daily": {
+							"1": [
+								"tasha's bubbling cauldron|xphb"
+							]
+						}
+					}
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Alchemist|Artificer|EFA|Alchemist|EFA|3|EFA",
+			"Alchemical Savant|Artificer|EFA|Alchemist|EFA|5|EFA",
+			"Restorative Reagents|Artificer|EFA|Alchemist|EFA|9|EFA",
+			"Chemical Mastery|Artificer|EFA|Alchemist|EFA|15|EFA"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Alchemist"
+	},
 	"Arcane Trickster|Rogue|XPHB": {
 		"name": "詭術師",
 		"shortName": "Arcane Trickster",
@@ -475,6 +533,90 @@
 		"hasFluffImages": true,
 		"ENG_name": "Archfey Patron"
 	},
+	"Armorer|Artificer|EFA": {
+		"name": "裝甲師",
+		"shortName": "Armorer",
+		"source": "EFA",
+		"className": "Artificer",
+		"classSource": "EFA",
+		"page": 14,
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"magic missile|xphb",
+						"thunderwave|xphb"
+					],
+					"5": [
+						"mirror image|xphb",
+						"shatter|xphb"
+					],
+					"9": [
+						"hypnotic pattern|xphb",
+						"lightning bolt|xphb"
+					],
+					"13": [
+						"fire shield|xphb",
+						"greater invisibility|xphb"
+					],
+					"17": [
+						"passwall|xphb",
+						"wall of force|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Armorer|Artificer|EFA|Armorer|EFA|3|EFA",
+			"Extra Attack|Artificer|EFA|Armorer|EFA|5|EFA",
+			"Improved Armorer|Artificer|EFA|Armorer|EFA|9|EFA",
+			"Perfected Armor|Artificer|EFA|Armorer|EFA|15|EFA"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Armorer"
+	},
+	"Artillerist|Artificer|EFA": {
+		"name": "魔炮師",
+		"shortName": "Artillerist",
+		"source": "EFA",
+		"className": "Artificer",
+		"classSource": "EFA",
+		"page": 16,
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"shield|xphb",
+						"thunderwave|xphb"
+					],
+					"5": [
+						"scorching ray|xphb",
+						"shatter|xphb"
+					],
+					"9": [
+						"fireball|xphb",
+						"wind wall|xphb"
+					],
+					"13": [
+						"ice storm|xphb",
+						"wall of fire|xphb"
+					],
+					"17": [
+						"cone of cold|xphb",
+						"wall of force|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Artillerist|Artificer|EFA|Artillerist|EFA|3|EFA",
+			"Arcane Firearm|Artificer|EFA|Artillerist|EFA|5|EFA",
+			"Explosive Cannon|Artificer|EFA|Artillerist|EFA|9|EFA",
+			"Fortified Position|Artificer|EFA|Artillerist|EFA|15|EFA"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Artillerist"
+	},
 	"Assassin|Rogue|XPHB": {
 		"name": "刺客",
 		"shortName": "Assassin",
@@ -525,6 +667,48 @@
 		"hasFluffImages": true,
 		"ENG_name": "Battle Master"
 	},
+	"Battle Smith|Artificer|EFA": {
+		"name": "戰鬥鐵匠",
+		"shortName": "Battle Smith",
+		"source": "EFA",
+		"className": "Artificer",
+		"classSource": "EFA",
+		"page": 18,
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"heroism|xphb",
+						"shield|xphb"
+					],
+					"5": [
+						"shining smite|xphb",
+						"warding bond|xphb"
+					],
+					"9": [
+						"aura of vitality|xphb",
+						"conjure barrage|xphb"
+					],
+					"13": [
+						"aura of purity|xphb",
+						"fire shield|xphb"
+					],
+					"17": [
+						"banishing smite|xphb",
+						"mass cure wounds|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Battle Smith|Artificer|EFA|Battle Smith|EFA|3|EFA",
+			"Extra Attack|Artificer|EFA|Battle Smith|EFA|5|EFA",
+			"Arcane Jolt|Artificer|EFA|Battle Smith|EFA|9|EFA",
+			"Improved Defender|Artificer|EFA|Battle Smith|EFA|15|EFA"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Battle Smith"
+	},
 	"Beast Master|Ranger|XPHB": {
 		"name": "獸王",
 		"shortName": "Beast Master",
@@ -541,6 +725,49 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Beast Master"
+	},
+	"Cartographer|Artificer|EFA": {
+		"name": "製圖師",
+		"shortName": "Cartographer",
+		"source": "EFA",
+		"className": "Artificer",
+		"classSource": "EFA",
+		"page": 20,
+		"additionalSpells": [
+			{
+				"prepared": {
+					"3": [
+						"faerie fire|xphb",
+						"guiding bolt|xphb",
+						"healing word|xphb"
+					],
+					"5": [
+						"locate object|xphb",
+						"mind spike|xphb"
+					],
+					"9": [
+						"call lightning|xphb",
+						"clairvoyance|xphb"
+					],
+					"13": [
+						"banishment|xphb",
+						"locate creature|xphb"
+					],
+					"17": [
+						"scrying|xphb",
+						"teleportation circle|xphb"
+					]
+				}
+			}
+		],
+		"subclassFeatures": [
+			"Cartographer|Artificer|EFA|Cartographer|EFA|3|EFA",
+			"Guided Precision|Artificer|EFA|Cartographer|EFA|5|EFA",
+			"Ingenious Movement|Artificer|EFA|Cartographer|EFA|9|EFA",
+			"Superior Atlas|Artificer|EFA|Cartographer|EFA|15|EFA"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Cartographer"
 	},
 	"Celestial Patron|Warlock|XPHB": {
 		"name": "天界宗主",

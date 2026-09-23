@@ -165,9 +165,10 @@ for (const {json} of loaded) {
 }
 let nTagDisplay = 0;
 const RE_TAG = /\{@(\w+) ([^{}]*)\}/g;
-const fillTags = str => str.replace(RE_TAG, (m, tag, body) => {
+const fillTags = (str, isOverrideEn = false) => str.replace(RE_TAG, (m, tag, body) => {
 	const parts = body.split("|");
-	if (parts[2] || hasCjk(parts[0])) return m;
+	// 已有顯示文字就保留；但「只有標籤」的字串裡的英文顯示文字（如 Bottle, Glass）可以換成中文
+	if ((parts[2] && !(isOverrideEn && !hasCjk(parts[2]) && !/\d/.test(parts[2]) && parts.length === 3)) || hasCjk(parts[0])) return m;
 	const lc = parts[0].trim().toLowerCase();
 	const zh = tagNames.get(`${tag}|${lc}|${S(parts[1])}`) ?? tagNames.get(`${tag}|${lc}`);
 	if (!zh) return m;
@@ -179,7 +180,7 @@ const fillTags = str => str.replace(RE_TAG, (m, tag, body) => {
 // 已翻譯實體裡「只有標籤」的字串（例如法術表的一格 {@spell Cone of Cold|XPHB}）也補上中文名
 const RE_ONLY_TAGS = /^[\s\d,;:()+\-–]*(\{@[^{}]+\}[\s\d,;:()+\-–]*)+$/;
 const walkStrings = (v, inZh = false) => {
-	if (typeof v === "string") return v.includes("{@") && (hasCjk(v) || (inZh && RE_ONLY_TAGS.test(v))) ? fillTags(v) : v;
+	if (typeof v === "string") return v.includes("{@") && (hasCjk(v) || (inZh && RE_ONLY_TAGS.test(v))) ? fillTags(v, inZh && RE_ONLY_TAGS.test(v)) : v;
 	if (Array.isArray(v)) { for (let i = 0; i < v.length; ++i) v[i] = walkStrings(v[i], inZh); return v; }
 	if (v && typeof v === "object") {
 		const z = inZh || !!v.name_zh;

@@ -1,4 +1,518 @@
 {
+	"Artificer|EFA": {
+		"name": "奇械師",
+		"source": "EFA",
+		"page": 7,
+		"edition": "one",
+		"primaryAbility": [
+			{
+				"int": true
+			}
+		],
+		"hd": {
+			"number": 1,
+			"faces": 8
+		},
+		"proficiency": [
+			"con",
+			"int"
+		],
+		"spellcastingAbility": "int",
+		"casterProgression": "artificer",
+		"preparedSpellsProgression": [
+			2,
+			3,
+			4,
+			5,
+			6,
+			6,
+			7,
+			7,
+			9,
+			9,
+			10,
+			10,
+			11,
+			11,
+			12,
+			12,
+			14,
+			14,
+			15,
+			15
+		],
+		"preparedSpellsChange": "restLong",
+		"cantripProgression": [
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			2,
+			3,
+			3,
+			3,
+			3,
+			4,
+			4,
+			4,
+			4,
+			4,
+			4,
+			4
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"1": [
+						"mending|xphb#c"
+					]
+				}
+			}
+		],
+		"featProgression": [
+			{
+				"name": "史詩恩賜",
+				"category": [
+					"EB"
+				],
+				"progression": {
+					"19": 1
+				},
+				"ENG_name": "Epic Boon"
+			}
+		],
+		"startingProficiencies": {
+			"armor": [
+				"light",
+				"medium",
+				"shield"
+			],
+			"weapons": [
+				"simple"
+			],
+			"tools": [
+				"{@item Thieves' Tools|XPHB}",
+				"{@item Tinker's Tools|XPHB}",
+				"one type of {@item Artisan's Tools|XPHB} of your choice"
+			],
+			"toolProficiencies": [
+				{
+					"thieves' tools": true,
+					"tinker's tools": true,
+					"anyArtisansTool": 1
+				}
+			],
+			"skills": [
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"investigation",
+							"medicine",
+							"nature",
+							"perception",
+							"sleight of hand"
+						],
+						"count": 2
+					}
+				}
+			]
+		},
+		"startingEquipment": {
+			"additionalFromBackground": true,
+			"defaultData": [
+				{
+					"A": [
+						{
+							"item": "studded leather armor|xphb"
+						},
+						{
+							"item": "dagger|xphb"
+						},
+						{
+							"item": "thieves' tools|xphb"
+						},
+						{
+							"item": "tinker's tools|xphb"
+						},
+						{
+							"item": "dungeoneer's pack|xphb"
+						},
+						{
+							"value": 1600
+						}
+					],
+					"B": [
+						{
+							"value": 15000
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@i 選擇 A 或 B：}(A) {@item Studded Leather Armor|XPHB}、{@item Dagger|XPHB}、{@item Thieves' Tools|XPHB}、{@item Tinker's Tools|XPHB}、{@item Dungeoneer's Pack|XPHB}與 16 GP；或 (B) 150 GP"
+			]
+		},
+		"multiclassing": {
+			"proficienciesGained": {
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"tools": [
+					"{@item Tinker's Tools|XPHB}"
+				],
+				"toolProficiencies": [
+					{
+						"tinker's tools": true
+					}
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"investigation",
+								"medicine",
+								"nature",
+								"perception",
+								"sleight of hand"
+							],
+							"count": 1
+						}
+					}
+				]
+			}
+		},
+		"classTableGroups": [
+			{
+				"colLabels": [
+					"已知圖紙",
+					"魔法物品",
+					"{@filter Cantrips|spells|level=0|class=artificer}",
+					"{@filter Prepared Spells|spells|level=!0|class=artificer}"
+				],
+				"rows": [
+					[
+						"—",
+						"—",
+						2,
+						2
+					],
+					[
+						4,
+						2,
+						2,
+						3
+					],
+					[
+						4,
+						2,
+						2,
+						4
+					],
+					[
+						4,
+						2,
+						2,
+						5
+					],
+					[
+						4,
+						2,
+						2,
+						6
+					],
+					[
+						5,
+						3,
+						2,
+						6
+					],
+					[
+						5,
+						3,
+						2,
+						7
+					],
+					[
+						5,
+						3,
+						2,
+						7
+					],
+					[
+						5,
+						3,
+						2,
+						9
+					],
+					[
+						6,
+						4,
+						3,
+						9
+					],
+					[
+						6,
+						4,
+						3,
+						10
+					],
+					[
+						6,
+						4,
+						3,
+						10
+					],
+					[
+						6,
+						4,
+						3,
+						11
+					],
+					[
+						7,
+						5,
+						4,
+						11
+					],
+					[
+						7,
+						5,
+						4,
+						12
+					],
+					[
+						7,
+						5,
+						4,
+						12
+					],
+					[
+						7,
+						5,
+						4,
+						14
+					],
+					[
+						8,
+						6,
+						4,
+						14
+					],
+					[
+						8,
+						6,
+						4,
+						15
+					],
+					[
+						8,
+						6,
+						4,
+						15
+					]
+				]
+			},
+			{
+				"title": "各環法術欄位",
+				"colLabels": [
+					"{@filter 1st|spells|level=1|class=artificer}",
+					"{@filter 2nd|spells|level=2|class=artificer}",
+					"{@filter 3rd|spells|level=3|class=artificer}",
+					"{@filter 4th|spells|level=4|class=artificer}",
+					"{@filter 5th|spells|level=5|class=artificer}"
+				],
+				"rowsSpellProgression": [
+					[
+						2,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						2,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						3,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						2,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						2,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						0,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						2,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						2,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						0,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						1,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						1,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						2,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						2,
+						0
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						1
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						1
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2
+					],
+					[
+						4,
+						3,
+						3,
+						3,
+						2
+					]
+				]
+			}
+		],
+		"classFeatures": [
+			"Spellcasting|Artificer|EFA|1|EFA",
+			"Tinker's Magic|Artificer|EFA|1|EFA",
+			"Replicate Magic Item|Artificer|EFA|2|EFA",
+			{
+				"classFeature": "Artificer Subclass|Artificer|EFA|3|EFA",
+				"gainSubclassFeature": true
+			},
+			"Ability Score Improvement|Artificer|EFA|4|EFA",
+			{
+				"classFeature": "Subclass feature|Artificer|EFA|5|EFA",
+				"gainSubclassFeature": true
+			},
+			"Magic Item Tinker|Artificer|EFA|6|EFA",
+			"Flash of Genius|Artificer|EFA|7|EFA",
+			"Ability Score Improvement|Artificer|EFA|8|EFA",
+			{
+				"classFeature": "Subclass feature|Artificer|EFA|9|EFA",
+				"gainSubclassFeature": true
+			},
+			"Magic Item Adept|Artificer|EFA|10|EFA",
+			"Spell-Storing Item|Artificer|EFA|11|EFA",
+			"Ability Score Improvement|Artificer|EFA|12|EFA",
+			"Advanced Artifice|Artificer|EFA|14|EFA",
+			{
+				"classFeature": "Subclass Feature|Artificer|EFA|15|EFA",
+				"gainSubclassFeature": true
+			},
+			"Ability Score Improvement|Artificer|EFA|16|EFA",
+			"Magic Item Master|Artificer|EFA|18|EFA",
+			"Epic Boon|Artificer|EFA|19|EFA",
+			"Soul of Artifice|Artificer|EFA|20|EFA"
+		],
+		"subclassTitle": "Artificer Subclass",
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Artificer"
+	},
 	"Barbarian|XPHB": {
 		"name": "野蠻人",
 		"source": "XPHB",

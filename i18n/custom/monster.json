@@ -1,0 +1,90 @@
+{
+	"Steel Defender|EFA": {
+		"name": "鋼鐵衛士",
+		"source": "EFA",
+		"page": 19,
+		"summonedByClass": "Artificer|EFA",
+		"size": [
+			"M"
+		],
+		"type": "construct",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			{
+				"special": "12 + your Intelligence modifier"
+			}
+		],
+		"hp": {
+			"special": "5 + five times your Artificer level (the defender has a number of Hit Dice [d8s] equal to your Artificer level)"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 14,
+		"dex": 12,
+		"con": 14,
+		"int": 4,
+		"wis": 10,
+		"cha": 6,
+		"senses": [
+			"Darkvision 60 ft."
+		],
+		"passive": 10,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"poisoned"
+		],
+		"languages": [
+			"understands the languages you know"
+		],
+		"pbNote": "equals your Proficiency Bonus",
+		"trait": [
+			{
+				"name": "鋼鐵之絆",
+				"entries": [
+					"衛士進行的任何屬性檢定或豁免檢定都加上你的{@variantrule Proficiency|XPHB|熟練加值}。"
+				],
+				"ENG_name": "Steel Bond"
+			}
+		],
+		"action": [
+			{
+				"name": "力場強化撕裂",
+				"entries": [
+					"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}，觸及 5 呎。{@h}{@dice 1d8 + 2} + 你的智力調整值 力場傷害。"
+				],
+				"ENG_name": "Force-Empowered Rend"
+			},
+			{
+				"name": "修復（3/日）",
+				"entries": [
+					"衛士或其 5 呎內一個它能看見的構裝生物或物體，恢復等同於 {@dice 2d8} + 你智力調整值的{@variantrule Hit Points|XPHB}。"
+				],
+				"ENG_name": "Repair (3/Day)"
+			}
+		],
+		"reaction": [
+			{
+				"name": "偏轉攻擊",
+				"entries": [
+					"{@actTrigger} 衛士 5 呎內一個它能看見的生物，對衛士以外的生物進行攻擊檢定。{@actResponse} 觸發此反應的生物在該攻擊檢定上具有{@variantrule Disadvantage|XPHB}。"
+				],
+				"ENG_name": "Deflect Attack"
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"hasToken": true,
+		"ENG_name": "Steel Defender"
+	}
+}

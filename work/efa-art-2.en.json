@@ -1,0 +1,342 @@
+{
+	"batch": "efa-art-2",
+	"items": [
+		{
+			"prop": "classFeature",
+			"key": "Flash of Genius|Artificer|EFA|7",
+			"s": [
+				"Flash of Genius",
+				"When you or a creature you can see within 30 feet of you fails an ability check or a saving throw, you can take a {@variantrule Reaction|XPHB} to add a bonus to the roll, potentially causing it to succeed. The bonus equals your Intelligence modifier (minimum of +1).",
+				"You can take this {@variantrule Reaction|XPHB} a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Artificer|EFA|8",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Subclass feature|Artificer|EFA|9",
+			"hint": {
+				"Subclass feature": "子職業特性"
+			},
+			"s": [
+				"Subclass feature",
+				"You gain a feature from your Artificer Subclass."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Magic Item Adept|Artificer|EFA|10",
+			"s": [
+				"Magic Item Adept",
+				"You can now attune to up to four magic items at once."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Spell-Storing Item|Artificer|EFA|11",
+			"hint": {
+				"Spell-Storing Item": "儲法物品"
+			},
+			"s": [
+				"Spell-Storing Item",
+				"Whenever you finish a {@variantrule Long Rest|XPHB}, you can touch one Simple or Martial weapon or one item that you can use as a {@variantrule Spellcasting Focus|XPHB}, and you store a spell in it, choosing a level 1, 2, or 3 Artificer spell that has a casting time of an action and doesn't require a Material component that is consumed by the spell (you needn't have the spell prepared).",
+				"While holding the object, a creature can take a {@action Magic|XPHB} action to produce the spell's effect from it, using your spellcasting ability modifier. If the spell requires {@status Concentration|XPHB}, the creature must concentrate. Once a creature has used the object to produce the spell's effect, the object can't be used this way again until the start of the creature's next turn.",
+				"The spell stays in the object until it's been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Artificer|EFA|12",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Advanced Artifice|Artificer|EFA|14",
+			"s": [
+				"Advanced Artifice",
+				"You gain the following benefits.",
+				"Magic Item Savant",
+				"You can now attune to up to five magic items at once.",
+				"Refreshed Genius",
+				"When you finish a {@variantrule Short Rest|XPHB}, you regain one expended use of your {@classFeature Flash of Genius|Artificer|EFA|7|EFA} feature."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Subclass feature|Artificer|EFA|15",
+			"hint": {
+				"Subclass feature": "子職業特性"
+			},
+			"s": [
+				"Subclass feature",
+				"You gain a feature from your Artificer Subclass."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Artificer|EFA|16",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Magic Item Master|Artificer|EFA|18",
+			"s": [
+				"Magic Item Master",
+				"You can now attune to up to six magic items at once."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Epic Boon|Artificer|EFA|19",
+			"hint": {
+				"Epic Boon": "史詩恩賜"
+			},
+			"s": [
+				"Epic Boon",
+				"You gain an Epic Boon feat or another feat of your choice for which you qualify. {@feat Boon of Energy Resistance|XPHB} is recommended."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Soul of Artifice|Artificer|EFA|20",
+			"hint": {
+				"Soul of Artifice": "奇械之魂"
+			},
+			"s": [
+				"Soul of Artifice",
+				"You have developed a mystical connection to your magic items, which you can draw on for aid. You gain the following benefits.",
+				"Cheat Death",
+				"If you're reduced to 0 {@variantrule Hit Points|XPHB} but not killed outright, you can disintegrate any number of Uncommon or Rare magic items created by your Replicate Magic Item feature. If you do so, your {@variantrule Hit Points|XPHB} instead change to a number equal to 20 times the number of magic items disintegrated.",
+				"Magical Guidance",
+				"When you finish a {@variantrule Short Rest|XPHB}, you regain all expended uses of your {@classFeature Flash of Genius|Artificer|EFA|7|EFA} if you have {@variantrule Attunement|XPHB} to at least one magic item."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Adventurer's Atlas|Artificer|Cartographer|EFA",
+			"s": [
+				"Adventurer's Atlas",
+				"Whenever you finish a {@variantrule Long Rest|XPHB} while holding {@item Cartographer's Tools|XPHB}, you can use that tool to create a set of magical maps by touching at least two creatures (one of whom can be yourself), up to a maximum number of creatures equal to 1 plus your Intelligence modifier (minimum of two creatures). Each target receives a magical map, which constantly updates to show the relative position of all the map holders but is illegible to all others. The maps last until you die or until you use this feature again, at which point any existing maps created by this feature immediately vanish.",
+				"While carrying the map, a target gains the following benefits.",
+				"Awareness",
+				"The target adds {@dice 1d4} to its {@variantrule Initiative|XPHB} rolls.",
+				"Positioning",
+				"The target knows the location of all other map holders that are on the same plane of existence as itself. When casting a spell or creating another effect that requires being able to see the effect's target, a map holder can target another map holder regardless of sight or cover, so long as the other map holder is still within the effect's range."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Alchemist|Artificer|Alchemist|EFA",
+			"hint": {
+				"Alchemist": "煉金師"
+			},
+			"s": [
+				"Alchemist",
+				"An Alchemist is an expert at combining reagents to produce magical effects. Alchemists use their creations to give life and to leech it away."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Alchemist Spells|Artificer|Alchemist|EFA",
+			"hint": {
+				"Alchemist Spells": "煉金師法術"
+			},
+			"s": [
+				"Alchemist Spells",
+				"When you reach an Artificer level specified in the Alchemist Spells table, you thereafter always have the listed spells prepared.",
+				"Alchemist Spells",
+				"Artificer Level",
+				"Spells",
+				"{@spell Healing Word|XPHB}, {@spell Ray of Sickness|XPHB}",
+				"{@spell Flaming Sphere|XPHB}, {@spell Melf's Acid Arrow|XPHB}",
+				"{@spell Gaseous Form|XPHB}, {@spell Mass Healing Word|XPHB}",
+				"{@spell Death Ward|XPHB}, {@spell Vitriolic Sphere|XPHB}",
+				"{@spell Cloudkill|XPHB}, {@spell Raise Dead|XPHB}"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Arcane Armor|Artificer|Armorer|EFA",
+			"hint": {
+				"Spellcasting Focus": "施法法器"
+			},
+			"s": [
+				"Arcane Armor",
+				"As a {@action Magic|XPHB} action while you have {@item Smith's Tools|XPHB} in hand, you can turn a suit of armor you are wearing into Arcane Armor. The armor continues to be Arcane Armor until you don another suit of armor or you die.",
+				"You gain the following benefits while wearing your Arcane Armor.",
+				"No Strength Requirement",
+				"If the armor normally has a Strength requirement, the Arcane Armor lacks this requirement for you.",
+				"Quick Don and Doff",
+				"You can don or doff the armor as a {@action Utilize|XPHB} action. The armor can't be removed against your will.",
+				"Spellcasting Focus",
+				"You can use the Arcane Armor as a {@variantrule Spellcasting Focus|XPHB} for your Artificer spells."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Armor Model|Artificer|Armorer|EFA",
+			"s": [
+				"Armor Model",
+				"You can customize your Arcane Armor. When you do so, choose one of the following armor models: {@subclassFeature Dreadnaught|Artificer|EFA|Armorer|EFA|3|EFA}, {@subclassFeature Guardian|Artificer|EFA|Armorer|EFA|3|EFA}, or {@subclassFeature Infiltrator|Artificer|EFA|Armorer|EFA|3|EFA}. The model you choose gives you special benefits while you wear it.",
+				"Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of your Strength or Dexterity modifier, to the attack and damage rolls.",
+				"You can change the armor's model whenever you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB} if you have {@item Smith's Tools|XPHB} in hand."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Armorer|Artificer|Armorer|EFA",
+			"hint": {
+				"Armorer": "裝甲師"
+			},
+			"s": [
+				"Armorer",
+				"An Armorer modifies armor to function almost like a second skin. The armor is enhanced to hone the Armorer's magic, unleash potent attacks, and generate a formidable defense."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Armorer Spells|Artificer|Armorer|EFA",
+			"s": [
+				"Armorer Spells",
+				"When you reach an Artificer level specified in the Armorer Spells table, you thereafter always have the listed spells prepared.",
+				"Armorer Spells",
+				"Artificer Level",
+				"Spells",
+				"{@spell Magic Missile|XPHB}, {@spell Thunderwave|XPHB}",
+				"{@spell Mirror Image|XPHB}, {@spell Shatter|XPHB}",
+				"{@spell Hypnotic Pattern|XPHB}, {@spell Lightning Bolt|XPHB}",
+				"{@spell Fire Shield|XPHB}, {@spell Greater Invisibility|XPHB}",
+				"{@spell Passwall|XPHB}, {@spell Wall of Force|XPHB}"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Artillerist|Artificer|Artillerist|EFA",
+			"hint": {
+				"Artillerist": "魔炮師"
+			},
+			"s": [
+				"Artillerist",
+				"An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Artillerist Spells|Artificer|Artillerist|EFA",
+			"hint": {
+				"Artillerist Spells": "魔炮師法術"
+			},
+			"s": [
+				"Artillerist Spells",
+				"When you reach an Artificer level specified in the Artillerist Spells table, you thereafter always have the listed spells prepared.",
+				"Artillerist Spells",
+				"Artificer Level",
+				"Spells",
+				"{@spell Shield|XPHB}, {@spell Thunderwave|XPHB}",
+				"{@spell Scorching Ray|XPHB}, {@spell Shatter|XPHB}",
+				"{@spell Fireball|XPHB}, {@spell Wind Wall|XPHB}",
+				"{@spell Ice Storm|XPHB}, {@spell Wall of Fire|XPHB}",
+				"{@spell Cone of Cold|XPHB}, {@spell Wall of Force|XPHB}"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Battle Ready|Artificer|Battle Smith|EFA",
+			"s": [
+				"Battle Ready",
+				"Your combat training and your experiments with magic have paid off in two ways.",
+				"Arcane Empowerment",
+				"When you attack with a magic weapon, you can use your Intelligence modifier, instead of your Strength or Dexterity modifier, for the attack and damage rolls.",
+				"Weapon Knowledge",
+				"You gain proficiency with {@filter Martial weapons|items|type=martial weapon}. You can use a weapon with which you have proficiency as a {@variantrule Spellcasting Focus|XPHB} for your Artificer spells."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Battle Smith|Artificer|Battle Smith|EFA",
+			"hint": {
+				"Battle Smith": "戰鬥鐵匠"
+			},
+			"s": [
+				"Battle Smith",
+				"A Battle Smith is a combination of protector and medic, an expert at defending others and repairing both materiel and personnel. To aid in their work, Battle Smiths are accompanied by a {@creature Steel Defender|EFA}, a protective companion of their own creation."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Battle Smith Spells|Artificer|Battle Smith|EFA",
+			"s": [
+				"Battle Smith Spells",
+				"When you reach an Artificer level specified in the Battle Smith Spells table, you thereafter always have the listed spells prepared.",
+				"Battle Smith Spells",
+				"Artificer Level",
+				"Spells",
+				"{@spell Heroism|XPHB}, {@spell Shield|XPHB}",
+				"{@spell Shining Smite|XPHB}, {@spell Warding Bond|XPHB}",
+				"{@spell Aura of Vitality|XPHB}, {@spell Conjure Barrage|XPHB}",
+				"{@spell Aura of Purity|XPHB}, {@spell Fire Shield|XPHB}",
+				"{@spell Banishing Smite|XPHB}, {@spell Mass Cure Wounds|XPHB}"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Cartographer|Artificer|Cartographer|EFA",
+			"hint": {
+				"Cartographer": "製圖師"
+			},
+			"s": [
+				"Cartographer",
+				"Cartographers are the premier navigators and reconnaissance agents. Using their creations, Cartographers can highlight threats, safeguard allies, and carve portals to distant locations."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Cartographer Spells|Artificer|Cartographer|EFA",
+			"s": [
+				"Cartographer Spells",
+				"When you reach an Artificer level specified in the Cartographer Spells table, you thereafter always have the listed spells prepared.",
+				"Cartographer Spells",
+				"Artificer Level",
+				"Spells",
+				"{@spell Faerie Fire|XPHB}, {@spell Guiding Bolt|XPHB}, {@spell Healing Word|XPHB}",
+				"{@spell Locate Object|XPHB}, {@spell Mind Spike|XPHB}",
+				"{@spell Call Lightning|XPHB}, {@spell Clairvoyance|XPHB}",
+				"{@spell Banishment|XPHB}, {@spell Locate Creature|XPHB}",
+				"{@spell Scrying|XPHB}, {@spell Teleportation Circle|XPHB}"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Dreadnaught|Artificer|Armorer|EFA",
+			"s": [
+				"Dreadnaught",
+				"You design your armor to become a towering juggernaut in battle. It has the following features:",
+				"Force Demolisher",
+				"An arcane wrecking ball or sledgehammer projects from your armor. The demolisher counts as a Simple Melee weapon with the {@itemProperty R|XPHB|Reach} property, and it deals {@damage 1d10} Force damage on a hit. If you hit a creature that is at least one size smaller than you with the demolisher, you can push the creature up to 10 feet straight away from yourself or pull the creature up to 10 feet toward yourself.",
+				"Giant Stature",
+				"As a {@variantrule Bonus Action|XPHB}, you transform and enlarge your armor for 1 minute. For the duration, your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn't enough room for you to increase your size, your size doesn't change. You can use this {@variantrule Bonus Action|XPHB} a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		}
+	]
+}

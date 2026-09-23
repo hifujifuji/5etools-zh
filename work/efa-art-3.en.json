@@ -1,0 +1,356 @@
+{
+	"batch": "efa-art-3",
+	"items": [
+		{
+			"prop": "subclassFeature",
+			"key": "Eldritch Cannon|Artificer|Artillerist|EFA",
+			"s": [
+				"Eldritch Cannon",
+				"Using {@item Smith's Tools|XPHB} or {@item Woodcarver's Tools|XPHB}, you can take a {@action Magic|XPHB} action to create a Small or Tiny {@object Eldritch Cannon|EFA} in an unoccupied space on a horizontal surface within 5 feet of yourself. You determine its appearance, including whether you carry it or not (and your choice of legs or wheels, for the latter). It disappears if it is reduced to 0 {@variantrule Hit Points|XPHB} or after 1 hour. You can dismiss it early as a {@action Magic|XPHB} action.",
+				"Once you create a cannon, you can't do so again until you finish a {@variantrule Long Rest|XPHB} or expend a spell slot to create one. You can have only one cannon at a time and can't create one while you already have one."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Experimental Elixir|Artificer|Alchemist|EFA",
+			"s": [
+				"Experimental Elixir",
+				"Whenever you finish a {@variantrule Long Rest|XPHB} while holding {@item Alchemist's Supplies|XPHB}, you can use that tool to magically produce two elixirs. For each elixir, roll on the Experimental Elixir table for the elixir's effect, which is triggered when someone drinks the elixir. The elixir appears in a vial, and the vial vanishes when the elixir is drunk or poured out. If any elixir remains when you finish a {@variantrule Long Rest|XPHB}, the elixir and its vial vanish.",
+				"Drinking an Elixir",
+				"As a {@variantrule Bonus Action|XPHB}, a creature can drink the elixir or administer it to another creature within 5 feet of itself.",
+				"Creating Additional Elixirs",
+				"As a {@action Magic|XPHB} action while holding {@item Alchemist's Supplies|XPHB}, you can expend one spell slot to create another elixir. When you do so, you choose its effect from the Experimental Elixir table rather than rolling.",
+				"When you reach certain Artificer levels, you can make an additional elixir at the end of each {@variantrule Long Rest|XPHB}: a total of three at level 5, four at level 9, and five at level 15.",
+				"Experimental Elixir",
+				"1d6",
+				"Effect",
+				"{@b Healing.} The drinker regains a number of {@variantrule Hit Points|XPHB} equal to {@dice 2d8} plus your Intelligence modifier. The number of {@variantrule Hit Points|XPHB} restored increases by {@dice 1d8} when you reach Artificer levels 9 ({@dice 3d8}) and 15 ({@dice 4d8}).",
+				"{@b Swiftness.} The drinker's {@variantrule Speed|XPHB} increases by 10 feet for 1 hour. This bonus increases when you reach Artificer levels 9 (15 feet) and 15 (20 feet).",
+				"{@b Resilience.} The drinker gains a +1 bonus to AC for 10 minutes. The duration increases when you reach Artificer levels 9 (1 hour) and 15 (8 hours).",
+				"{@b Boldness.} The drinker can roll {@dice 1d4} and add the number rolled to every attack roll and saving throw they make for the next minute. The duration increases when you reach Artificer levels 9 (10 minutes) and 15 (1 hour).",
+				"{@b Flight.} The drinker gains a {@variantrule Fly Speed|XPHB} of 10 feet for 10 minutes. The {@variantrule Fly Speed|XPHB} increases when you reach Artificer levels 9 (20 feet) and 15 (30 feet).",
+				"You determine the elixir's effect by choosing one of the other rows in this table."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Guardian|Artificer|Armorer|EFA",
+			"hint": {
+				"Guardian": "守衛者"
+			},
+			"s": [
+				"Guardian",
+				"You design your armor to be in the front line of conflict. It has the following features:",
+				"Thunder Pulse",
+				"You can discharge concussive blasts with strikes from your armor. The pulse counts as a Simple Melee weapon and deals {@damage 1d8} Thunder damage on a hit. A creature hit by the pulse has {@variantrule Disadvantage|XPHB} on attack rolls against targets other than you until the start of your next turn.",
+				"Defensive Field",
+				"While {@status Bloodied|XPHB}, you can take a {@variantrule Bonus Action|XPHB} to gain {@variantrule Temporary Hit Points|XPHB} equal to your Artificer level. You lose these {@variantrule Temporary Hit Points|XPHB} if you doff the armor."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Infiltrator|Artificer|Armorer|EFA",
+			"s": [
+				"Infiltrator",
+				"You customize your armor for subtler undertakings. It has the following features:",
+				"Lightning Launcher",
+				"A gemlike node appears on your armor, from which you can shoot bolts of lightning. The launcher counts as a Simple Ranged weapon with a normal range of 90 feet and a long range of 300 feet, and it deals {@damage 1d6} Lightning damage on a hit. Once on each of your turns when you hit a creature with the launcher, you can deal an extra {@damage 1d6} Lightning damage to that target.",
+				"Powered Steps",
+				"Your {@variantrule Speed|XPHB} increases by 5 feet.",
+				"Dampening Field",
+				"You have {@variantrule Advantage|XPHB} on Dexterity ({@skill Stealth|XPHB}) checks. If the armor imposes {@variantrule Disadvantage|XPHB} on such checks, the {@variantrule Advantage|XPHB} and {@variantrule Disadvantage|XPHB} cancel each other, as normal."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Mapping Magic|Artificer|Cartographer|EFA",
+			"s": [
+				"Mapping Magic",
+				"You gain the following benefits.",
+				"Illuminated Cartography",
+				"You can cast {@spell Faerie Fire|XPHB} without expending a spell slot, outlining the affected creatures as if in ink. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+				"Portal Jump",
+				"On your turn, you can spend an amount of movement equal to half your {@variantrule Speed|XPHB} (round down) to teleport to an unoccupied space you can see within 10 feet of yourself or within 5 feet of a creature that is within 30 feet of you and holding one of your Adventurer's Atlas maps. You can't use this benefit if your {@variantrule Speed|XPHB} is 0."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Steel Defender|Artificer|Battle Smith|EFA",
+			"s": [
+				"Steel Defender",
+				"Your tinkering has borne you a companion, a {@creature Steel Defender|EFA}. You determine the defender's appearance and whether it has two legs or four; your choices don't affect the defender's game statistics.",
+				"The {@creature Steel Defender|EFA|defender} is {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies and obeys you. It vanishes if you die.",
+				"The Defender in Combat",
+				"In combat, the defender acts during your turn. It can move and take its {@variantrule Reaction|XPHB} on its own, but the only action it takes is the {@action Dodge|XPHB} action unless you take a {@variantrule Bonus Action|XPHB} to command it to take an action. If you have the {@condition Incapacitated|XPHB} condition, the defender acts on its own and isn't limited to the {@action Dodge|XPHB} action.",
+				"Restoring or Replacing the Defender",
+				"If the defender has died within the last hour, you can take a {@action Magic|XPHB} action to touch it and expend a spell slot. The defender returns to life after 1 minute with all its {@variantrule Hit Points|XPHB} restored.",
+				"Whenever you finish a {@variantrule Long Rest|XPHB}, you can create a new {@creature Steel Defender|EFA|defender} if you have {@item Smith's Tools|XPHB} in hand. If you already have a defender from this feature, the first one vanishes."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Tools of the Trade|Artificer|Alchemist|EFA",
+			"hint": {
+				"Tools of the Trade": "本職工具",
+				"Tool Proficiency": "工具熟練"
+			},
+			"s": [
+				"Tools of the Trade",
+				"You gain the following benefits.",
+				"Tool Proficiency",
+				"You gain proficiency with {@item Alchemist's Supplies|XPHB} and the {@item Herbalism Kit|XPHB}. If you already have one of these proficiencies, you gain proficiency with one other type of {@item Artisan's Tools|XPHB} of your choice (or with two other types if you have both).",
+				"Potion Crafting",
+				"When you brew a potion using the crafting rules in the {@book Dungeon Master's Guide|XDMG|6|Crafting Magic Items}, the amount of time required to craft it is halved."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Tools of the Trade|Artificer|Armorer|EFA",
+			"hint": {
+				"Tools of the Trade": "本職工具",
+				"Armor Training": "護甲受訓",
+				"Tool Proficiency": "工具熟練"
+			},
+			"s": [
+				"Tools of the Trade",
+				"You gain the following benefits.",
+				"Armor Training",
+				"You gain training with Heavy armor.",
+				"Tool Proficiency",
+				"You gain proficiency with {@item Smith's Tools|XPHB}. If you already have this tool proficiency, you gain proficiency with one other type of {@item Artisan's Tools|XPHB} of your choice.",
+				"Armor Crafting",
+				"When you craft nonmagical or magic armor, the amount of time required to craft it is halved."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Tools of the Trade|Artificer|Artillerist|EFA",
+			"hint": {
+				"Tools of the Trade": "本職工具",
+				"Tool Proficiency": "工具熟練"
+			},
+			"s": [
+				"Tools of the Trade",
+				"You gain the following benefits.",
+				"Ranged Weaponry",
+				"You gain proficiency with {@filter Martial Ranged weapons|items|type=martial weapon;ranged weapon=sand}.",
+				"Tool Proficiency",
+				"You gain proficiency with {@item Woodcarver's Tools|XPHB}. If you already have this proficiency, you gain proficiency with one other type of {@item Artisan's Tools|XPHB} of your choice.",
+				"Wand Crafting",
+				"When you craft a magic {@item Wand|XPHB}, the amount of time required to craft it is halved."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Tools of the Trade|Artificer|Battle Smith|EFA",
+			"hint": {
+				"Tools of the Trade": "本職工具",
+				"Tool Proficiency": "工具熟練"
+			},
+			"s": [
+				"Tools of the Trade",
+				"You gain the following benefits.",
+				"Tool Proficiency",
+				"You gain proficiency with {@item Smith's Tools|XPHB}. If you already have this proficiency, you gain proficiency with one other type of {@item Artisan's Tools|XPHB} of your choice.",
+				"Weapon Crafting",
+				"When you craft a nonmagical or magic weapon, the amount of time required to craft it is halved."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Tools of the Trade|Artificer|Cartographer|EFA",
+			"hint": {
+				"Tools of the Trade": "本職工具",
+				"Tool Proficiency": "工具熟練"
+			},
+			"s": [
+				"Tools of the Trade",
+				"You gain the following benefits.",
+				"Tool Proficiency",
+				"You gain proficiency with {@item Calligrapher's Supplies|XPHB} and {@item Cartographer's Tools|XPHB}. If you already have one of these proficiencies, you gain proficiency with one other type of {@item Artisan's Tools|XPHB} of your choice (or with two other types if you have both).",
+				"Scroll Crafting",
+				"When you scribe a {@item Spell Scroll|XDMG} using the crafting rules in the {@book Player's Handbook|PHB}, the amount of time required to craft it is halved."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Alchemical Savant|Artificer|Alchemist|EFA",
+			"s": [
+				"Alchemical Savant",
+				"Whenever you cast a spell using your {@item Alchemist's Supplies|XPHB} as the {@variantrule Spellcasting Focus|XPHB}, you gain a bonus to one roll of the spell. That roll must restore {@variantrule Hit Points|XPHB} or be a damage roll that deals Acid, Fire, or Poison damage. The bonus equals your Intelligence modifier (minimum bonus of +1)."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Arcane Firearm|Artificer|Artillerist|EFA",
+			"s": [
+				"Arcane Firearm",
+				"When you finish a {@variantrule Long Rest|XPHB}, you can use {@item Woodcarver's Tools|XPHB} to carve special sigils into a {@item Rod|XPHB}, {@item Staff|XPHB}, {@item Wand|XPHB}, or {@filter Martial Ranged weapon|items|type=martial weapon;ranged weapon=sand} and thereby turn it into your Arcane Firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely.",
+				"You can use your Arcane Firearm as a {@variantrule Spellcasting Focus|XPHB} for your Artificer spells. When you cast an Artificer spell through the firearm, roll {@damage 1d8}, and you gain a bonus to one of the spell's damage rolls equal to the number rolled."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Extra Attack|Artificer|Armorer|EFA",
+			"hint": {
+				"Extra Attack": "額外攻擊"
+			},
+			"s": [
+				"Extra Attack",
+				"You can attack twice instead of once whenever you take the {@action Attack|XPHB} action on your turn."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Extra Attack|Artificer|Battle Smith|EFA",
+			"hint": {
+				"Extra Attack": "額外攻擊"
+			},
+			"s": [
+				"Extra Attack",
+				"You can attack twice instead of once whenever you take the {@action Attack|XPHB} action on your turn. You can forgo one of your attacks when you take the {@action Attack|XPHB} action to command your {@creature Steel Defender|EFA} to take the Force-Empowered Rend action."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Guided Precision|Artificer|Cartographer|EFA",
+			"s": [
+				"Guided Precision",
+				"Once per turn, whenever you cast a spell from your Cartographer Spells list or hit a creature affected by your {@spell Faerie Fire|XPHB} with an attack roll, you can add your Intelligence modifier to one damage roll of the spell or attack.",
+				"In addition, taking damage can't cause you to lose {@status Concentration|XPHB} on {@spell Faerie Fire|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Arcane Jolt|Artificer|Battle Smith|EFA",
+			"s": [
+				"Arcane Jolt",
+				"When either you hit a target with an attack roll using a magic weapon or your {@creature Steel Defender|EFA} hits a target, you can channel magical energy through the strike to create one of the following effects:",
+				"Destructive Energy",
+				"The target takes an extra {@damage 2d6} Force damage.",
+				"Restorative Energy",
+				"Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring {@dice 2d6} {@variantrule Hit Points|XPHB} to it.",
+				"You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once per turn. You regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Explosive Cannon|Artificer|Artillerist|EFA",
+			"s": [
+				"Explosive Cannon",
+				"Every {@object Eldritch Cannon|EFA} you create is now more destructive. You gain the following benefits.",
+				"Detonate",
+				"When your cannon takes damage, you can take a {@variantrule Reaction|XPHB} to command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw against your spell save DC, taking {@damage 3d10} Force damage on a failed save or half as much damage on a successful one.",
+				"Firepower",
+				"The cannon's damage rolls and the number of {@variantrule Temporary Hit Points|XPHB} granted by Protector increase by {@dice 1d8}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Improved Armorer|Artificer|Armorer|EFA",
+			"s": [
+				"Improved Armorer",
+				"You gain the following benefits.",
+				"Armor Replication",
+				"You learn an additional plan for your Replicate Magic Item feature, and it must be in the Armor category. If you replace that plan, you must replace it with another Armor plan.",
+				"In addition, you can create an additional item with that feature, and the item must also be in the Armor category.",
+				"Improved Arsenal",
+				"You gain a +1 bonus to attack and damage rolls made with the special weapon of your Arcane Armor model."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Ingenious Movement|Artificer|Cartographer|EFA",
+			"s": [
+				"Ingenious Movement",
+				"When you use your {@classFeature Flash of Genius|Artificer|EFA|7|EFA}, you or a willing creature of your choice that you can see within 30 feet of yourself can teleport up to 30 feet to an unoccupied space you can see as part of that same {@variantrule Reaction|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Restorative Reagents|Artificer|Alchemist|EFA",
+			"s": [
+				"Restorative Reagents",
+				"You can cast {@spell Lesser Restoration|XPHB} without expending a spell slot and without preparing the spell, provided you use {@item Alchemist's Supplies|XPHB} as the {@variantrule Spellcasting Focus|XPHB}. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Chemical Mastery|Artificer|Alchemist|EFA",
+			"s": [
+				"Chemical Mastery",
+				"You gain the following benefits.",
+				"Alchemical Eruption",
+				"When you cast an Artificer spell that deals Acid, Fire, or Poison damage to a target, you can also deal {@damage 2d8} Force damage to that target. You can use this benefit only once on each of your turns.",
+				"Chemical Resistance",
+				"You gain {@variantrule Resistance|XPHB} to Acid damage and Poison damage. You also gain {@variantrule Immunity|XPHB} to the {@condition Poisoned|XPHB} condition.",
+				"Conjured Cauldron",
+				"You can cast {@spell Tasha's Bubbling Cauldron|XPHB} without expending a spell slot, without preparing the spell, and without Material components, provided you use {@item Alchemist's Supplies|XPHB} as the {@variantrule Spellcasting Focus|XPHB}. Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Fortified Position|Artificer|Artillerist|EFA",
+			"hint": {
+				"Fortified Position": "堅守要塞"
+			},
+			"s": [
+				"Fortified Position",
+				"You're a master at forming well-defended emplacements using your {@object Eldritch Cannon|EFA}. You gain the following benefits.",
+				"Double Firepower",
+				"You can now have two cannons at the same time, and you can create two with the same {@action Magic|XPHB} action. (If you expend a spell slot to create the first cannon, you must expend another spell slot to create the second.) You can activate both of them with the same {@variantrule Bonus Action|XPHB}, ordering them to use the same activation option or different ones. You can't create a third cannon while you have two.",
+				"Shimmering Field Projection",
+				"You and your allies have {@variantrule Cover|XPHB|Half Cover} while within 10 feet of your {@object Eldritch Cannon|EFA}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Improved Defender|Artificer|Battle Smith|EFA",
+			"s": [
+				"Improved Defender",
+				"Your {@subclassFeature Arcane Jolt|Artificer|EFA|Battle Smith|EFA|9|EFA} and {@creature Steel Defender|EFA} have become more powerful, granting these benefits.",
+				"Improved Jolt",
+				"The extra damage and healing of your Arcane Jolt both increase to {@dice 4d6}.",
+				"Improved Deflection",
+				"Whenever your {@creature Steel Defender|EFA} uses its Deflect Attack, the attacker takes Force damage equal to {@dice 1d4} plus your Intelligence modifier."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Perfected Armor|Artificer|Armorer|EFA",
+			"hint": {
+				"Dreadnaught": "無畏",
+				"Guardian": "守衛者"
+			},
+			"s": [
+				"Perfected Armor",
+				"Your Arcane Armor gains additional benefits based on its model, as detailed below.",
+				"Dreadnaught",
+				"The damage die of your Force Demolisher increases to {@damage 2d6} Force damage.",
+				"In addition, when you use your Giant Stature, your reach increases by 10 feet, your size can increase to Large or Huge (your choice), and you have {@variantrule Advantage|XPHB} on Strength checks and Strength saving throws for the duration.",
+				"Guardian",
+				"The damage die of your Thunder Pulse increases to {@damage 1d10} Thunder damage.",
+				"In addition, when a Huge or smaller creature you can see ends its turn within 30 feet of you, you can take a {@variantrule Reaction|XPHB} to magically force that creature to make a Strength saving throw against your spell save DC. On a failed save, you pull the creature up to 25 feet directly toward you to an unoccupied space. If you pull the target to a space within 5 feet of yourself, you can make a melee weapon attack against it as part of this {@variantrule Reaction|XPHB}.",
+				"You can take this {@variantrule Reaction|XPHB} a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+				"Infiltrator",
+				"The damage die of your Lightning Launcher increases to {@damage 2d6} Lightning damage. Any creature that takes Lightning damage from your Lightning Launcher glimmers with magical light until the start of your next turn. The glimmering creature sheds {@variantrule Dim Light|XPHB} in a 5-foot radius, and it has {@variantrule Disadvantage|XPHB} on attack rolls against you, as the light jolts it if it attacks you.",
+				"Additionally, as a {@variantrule Bonus Action|XPHB}, you can gain a {@variantrule Fly Speed|XPHB} equal to twice your {@variantrule Speed|XPHB} until the end of the current turn. You can take this {@variantrule Bonus Action|XPHB} a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Superior Atlas|Artificer|Cartographer|EFA",
+			"hint": {
+				"Safe Haven": "特性：避風港"
+			},
+			"s": [
+				"Superior Atlas",
+				"Your Adventurer's Atlas improves, gaining the following benefits.",
+				"Safe Haven",
+				"When a map holder would be reduced to 0 {@variantrule Hit Points|XPHB} but not killed outright, that creature can destroy its map. The creature's {@variantrule Hit Points|XPHB} instead change to a number equal to twice your Artificer level, and the creature is teleported to an unoccupied space within 5 feet of you or another map holder of its choice.",
+				"Unerring Path",
+				"If you are one of the map holders for your Adventurer's Atlas, you can cast {@spell Find the Path|XPHB} without expending a spell slot, without preparing the spell, and without needing spell components. Once you use this benefit, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+			]
+		}
+	]
+}
