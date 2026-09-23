@@ -1,0 +1,348 @@
+{
+	"batch": "xphb-spell-09",
+	"items": [
+		{
+			"prop": "spell",
+			"key": "Sleet Storm|XPHB",
+			"hint": {
+				"Sleet Storm": "雪雨暴"
+			},
+			"s": [
+				"Sleet Storm",
+				"Until the spell ends, sleet falls in a 40-foot-tall, 20-foot-radius {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on a point you choose within range. The area is {@variantrule Heavily Obscured|XPHB}, and exposed flames in the area are doused.",
+				"Ground in the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} is {@variantrule Difficult Terrain|XPHB}. When a creature enters the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} for the first time on a turn or starts its turn there, it must succeed on a Dexterity saving throw or have the {@condition Prone|XPHB} condition and lose {@status Concentration|XPHB}."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Slow|XPHB",
+			"hint": {
+				"Slow": "緩速術"
+			},
+			"s": [
+				"Slow",
+				"You alter time around up to six creatures of your choice in a 40-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.",
+				"An affected target's {@variantrule Speed|XPHB} is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't take Reactions. On its turns, it can take either an action or a {@variantrule Bonus Action|XPHB}, not both, and it can make only one attack if it takes the {@action Attack|XPHB} action. If it casts a spell with a Somatic component, there is a {@chance 25|||The spell fails!|The spell does not fail.} chance the spell fails as a result of the target making the spell's gestures too slowly.",
+				"An affected target repeats the save at the end of each of its turns, ending the spell on itself on a success."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Speak with Dead|XPHB",
+			"hint": {
+				"Speak with Dead": "死者交談術"
+			},
+			"s": [
+				"Speak with Dead",
+				"You grant the semblance of life to a corpse of your choice within range, allowing it to answer questions you pose. The corpse must have a mouth, and this spell fails if the deceased creature was Undead when it died. The spell also fails if the corpse was the target of this spell within the past 10 days.",
+				"Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are antagonistic toward it or it recognizes you as an enemy. This spell doesn't return the creature's soul to its body, only its animating spirit. Thus, the corpse can't learn new information, doesn't comprehend anything that has happened since it died, and can't speculate about future events."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Speak with Plants|XPHB",
+			"hint": {
+				"Speak with Plants": "植物交談術"
+			},
+			"s": [
+				"Speak with Plants",
+				"You imbue plants in an immobile 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell's area within the past day, gaining information about creatures that have passed, weather, and other circumstances.",
+				"You can also turn {@variantrule Difficult Terrain|XPHB} caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into {@variantrule Difficult Terrain|XPHB} that lasts for the duration.",
+				"The spell doesn't enable plants to uproot themselves and move about, but they can move their branches, tendrils, and stalks for you.",
+				"If a Plant creature is in the area, you can communicate with it as if you shared a common language."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Spirit Guardians|XPHB",
+			"hint": {
+				"Spirit Guardians": "靈體守衛",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Spirit Guardians",
+				"Protective spirits flit around you in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish.",
+				"When you cast this spell, you can designate creatures to be unaffected by it. Any other creature's {@variantrule Speed|XPHB} is halved in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, and whenever the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} enters a creature's space and whenever a creature enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or ends its turn there, the creature must make a Wisdom saving throw. On a failed save, the creature takes {@damage 3d8} Radiant damage (if you are good or neutral) or {@damage 3d8} Necrotic damage (if you are evil). On a successful save, the creature takes half as much damage. A creature makes this save only once per turn.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 3d8|3-9|1d8} for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Stinking Cloud|XPHB",
+			"hint": {
+				"Stinking Cloud": "臭雲術"
+			},
+			"s": [
+				"Stinking Cloud",
+				"You create a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} of yellow, nauseating gas centered on a point within range. The cloud is {@variantrule Heavily Obscured|XPHB}. The cloud lingers in the air for the duration or until a strong wind (such as the one created by {@spell Gust of Wind|XPHB}) disperses it.",
+				"Each creature that starts its turn in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} must succeed on a Constitution saving throw or have the {@condition Poisoned|XPHB} condition until the end of the current turn. While {@condition Poisoned|XPHB} in this way, the creature can't take an action or a {@variantrule Bonus Action|XPHB}."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Summon Fey|XPHB",
+			"hint": {
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Summon Fey",
+				"a gilded flower worth 300+ GP",
+				"You call forth a Fey spirit. It manifests in an unoccupied space that you can see within range and uses the {@creature Fey Spirit|XPHB} stat block. When you cast the spell, choose a mood: Fuming, Mirthful, or Tricksy. The creature resembles a Fey creature of your choice marked by the chosen mood, which determines certain details in its stat block. The creature disappears when it drops to 0 {@variantrule Hit Points|XPHB} or when the spell ends.",
+				"The creature is an ally to you and your allies. In combat, the creature shares your {@variantrule Initiative|XPHB} count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its movement to avoid danger.",
+				"Using a Higher-Level Spell Slot",
+				"Use the spell slot's level for the spell's level in the stat block."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Summon Undead|XPHB",
+			"hint": {
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Summon Undead",
+				"a gilded skull worth 300+ GP",
+				"You call forth an Undead spirit. It manifests in an unoccupied space that you can see within range and uses the {@creature Undead Spirit|XPHB} stat block. When you cast the spell, choose the creature's form: Ghostly, Putrid, or Skeletal. The spirit resembles an Undead creature with the chosen form, which determines certain details in its stat block. The creature disappears when it drops to 0 {@variantrule Hit Points|XPHB} or when the spell ends.",
+				"The creature is an ally to you and your allies. In combat, the creature shares your {@variantrule Initiative|XPHB} count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its movement to avoid danger.",
+				"Using a Higher-Level Spell Slot",
+				"Use the spell slot's level for the spell's level in the stat block."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Tongues|XPHB",
+			"hint": {
+				"Tongues": "巧舌術"
+			},
+			"s": [
+				"Tongues",
+				"This spell grants the creature you touch the ability to understand any spoken or signed language that it hears or sees. Moreover, when the target communicates by speaking or signing, any creature that knows at least one language can understand it if that creature can hear the speech or see the signing."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Vampiric Touch|XPHB",
+			"hint": {
+				"Vampiric Touch": "吸血鬼之觸",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Vampiric Touch",
+				"The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against one creature within reach. On a hit, the target takes {@damage 3d6} Necrotic damage, and you regain {@variantrule Hit Points|XPHB} equal to half the amount of Necrotic damage dealt.",
+				"Until the spell ends, you can make the attack again on each of your turns as a {@action Magic|XPHB} action, targeting the same creature or a different one.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 3d6|3-9|1d6} for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Water Breathing|XPHB",
+			"hint": {
+				"Water Breathing": "水下呼吸"
+			},
+			"s": [
+				"Water Breathing",
+				"This spell grants up to ten willing creatures of your choice within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Water Walk|XPHB",
+			"hint": {
+				"Water Walk": "水面行走"
+			},
+			"s": [
+				"Water Walk",
+				"This spell grants the ability to move across any liquid surface—such as water, acid, mud, snow, quicksand, or lava—as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures of your choice within range gain this ability for the duration.",
+				"An affected target must take a {@variantrule Bonus Action|XPHB} to pass from the liquid's surface into the liquid itself and vice versa, but if the target falls into the liquid, the target passes through the surface into the liquid below."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Wind Wall|XPHB",
+			"hint": {
+				"Wind Wall": "風牆術"
+			},
+			"s": [
+				"Wind Wall",
+				"A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.",
+				"When the wall appears, each creature in its area makes a Strength saving throw, taking {@damage 4d8} Bludgeoning damage on a failed save or half as much damage on a successful one.",
+				"The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and miss automatically. Boulders hurled by Giants or siege engines, and similar projectiles, are unaffected. Creatures in {@spell gaseous form|XPHB} can't pass through it."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Arcane Eye|XPHB",
+			"hint": {
+				"Arcane Eye": "祕法眼"
+			},
+			"s": [
+				"Arcane Eye",
+				"You create an {@condition Invisible|XPHB}, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has {@sense Darkvision|XPHB} with a range of 30 feet.",
+				"As a {@variantrule Bonus Action|XPHB}, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Aura of Life|XPHB",
+			"hint": {
+				"Aura of Life": "生命靈光"
+			},
+			"s": [
+				"Aura of Life",
+				"An aura radiates from you in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for the duration. While in the aura, you and your allies have {@variantrule Resistance|XPHB} to Necrotic damage, and your {@variantrule Hit Points|XPHB|Hit Point} maximums can't be reduced. If an ally with 0 {@variantrule Hit Points|XPHB} starts its turn in the aura, that ally regains 1 {@variantrule Hit Points|XPHB|Hit Point}."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Aura of Purity|XPHB",
+			"hint": {
+				"Aura of Purity": "淨化靈光"
+			},
+			"s": [
+				"Aura of Purity",
+				"An aura radiates from you in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for the duration. While in the aura, you and your allies have {@variantrule Resistance|XPHB} to Poison damage and {@variantrule Advantage|XPHB} on saving throws to avoid or end effects that include the {@condition Blinded|XPHB}, {@condition Charmed|XPHB}, {@condition Deafened|XPHB}, {@condition Frightened|XPHB}, {@condition Paralyzed|XPHB}, {@condition Poisoned|XPHB}, or {@condition Stunned|XPHB} condition."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Banishment|XPHB",
+			"hint": {
+				"Banishment": "放逐術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Banishment",
+				"One creature that you can see within range must succeed on a Charisma saving throw or be transported to a harmless demiplane for the duration. While there, the target has the {@condition Incapacitated|XPHB} condition. When the spell ends, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
+				"If the target is an Aberration, a Celestial, an Elemental, a Fey, or a Fiend, the target doesn't return if the spell lasts for 1 minute. The target is instead transported to a random location on a plane (DM's choice) associated with its creature type.",
+				"Using a Higher-Level Spell Slot",
+				"You can target one additional creature for each spell slot level above 4."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Blight|XPHB",
+			"hint": {
+				"Blight": "枯萎術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Blight",
+				"A creature that you can see within range makes a Constitution saving throw, taking {@damage 8d8} Necrotic damage on a failed save or half as much damage on a successful one. A Plant creature automatically fails the save.",
+				"Alternatively, target a nonmagical plant that isn't a creature, such as a tree or shrub. It doesn't make a save; it simply withers and dies.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 8d8|4-9|1d8} for each spell slot level above 4."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Charm Monster|XPHB",
+			"hint": {
+				"Charm Monster": "魅惑怪物",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Charm Monster",
+				"One creature you can see within range makes a Wisdom saving throw. It does so with {@variantrule Advantage|XPHB} if you or your allies are fighting it. On a failed save, the target has the {@condition Charmed|XPHB} condition until the spell ends or until you or your allies damage it. The {@condition Charmed|XPHB} creature is {@variantrule Friendly [Attitude]|XPHB|Friendly} to you. When the spell ends, the target knows it was {@condition Charmed|XPHB} by you.",
+				"Using a Higher-Level Spell Slot",
+				"You can target one additional creature for each spell slot level above 4."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Compulsion|XPHB",
+			"hint": {
+				"Compulsion": "強迫術"
+			},
+			"s": [
+				"Compulsion",
+				"Each creature of your choice that you can see within range must succeed on a Wisdom saving throw or have the {@condition Charmed|XPHB} condition until the spell ends.",
+				"For the duration, you can take a {@variantrule Bonus Action|XPHB} to designate a direction that is horizontal to you. Each {@condition Charmed|XPHB} target must use as much of its movement as possible to move in that direction on its next turn, taking the safest route. After moving in this way, a target repeats the save, ending the spell on itself on a success."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Confusion|XPHB",
+			"hint": {
+				"Confusion": "困惑術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Confusion",
+				"Each creature in a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point you choose within range must succeed on a Wisdom saving throw, or that target can't take Bonus Actions or Reactions and must roll {@dice 1d10} at the start of each of its turns to determine its behavior for that turn, consulting the table below.",
+				"1d10",
+				"Behavior for the Turn",
+				"The target doesn't take an action, and it uses all its movement to move. Roll {@dice 1d4} for the direction: {@b 1}, north; {@b 2}, east; {@b 3}, south; or {@b 4}, west.",
+				"The target doesn't move or take actions.",
+				"The target doesn't move, and it takes the {@action Attack|XPHB} action to make one melee attack against a random creature within reach. If none are within reach, the target takes no action.",
+				"The target chooses its behavior.",
+				"At the end of each of its turns, an affected target repeats the save, ending the spell on itself on a success.",
+				"Using a Higher-Level Spell Slot",
+				"The {@variantrule Sphere [Area of Effect]|XPHB|Sphere}'s radius increases by 5 feet for each spell slot level above 4."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Conjure Minor Elementals|XPHB",
+			"hint": {
+				"Conjure Minor Elementals": "召喚次級元素生物",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Conjure Minor Elementals",
+				"You conjure spirits from the Elemental Planes that flit around you in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for the duration. Until the spell ends, any attack you make deals an extra {@damage 2d8} damage when you hit a creature in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. This damage is Acid, Cold, Fire, or Lightning (your choice when you make the attack).",
+				"In addition, the ground in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} is {@variantrule Difficult Terrain|XPHB} for your enemies.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 2d8|4-9|1d8} for each spell slot level above 4."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Conjure Woodland Beings|XPHB",
+			"hint": {
+				"Conjure Woodland Beings": "召喚林地之精",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Conjure Woodland Beings",
+				"You conjure nature spirits that flit around you in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for the duration. Whenever the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} enters the space of a creature you can see and whenever a creature you can see enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or ends its turn there, you can force that creature to make a Wisdom saving throw. The creature takes {@damage 5d8} Force damage on a failed save or half as much damage on a successful one. A creature makes this save only once per turn.",
+				"In addition, you can take the {@action Disengage|XPHB} action as a {@variantrule Bonus Action|XPHB} for the spell's duration.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 5d8|4-9|1d8} for each spell slot level above 4."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Control Water|XPHB",
+			"hint": {
+				"Control Water": "操控水體"
+			},
+			"s": [
+				"Control Water",
+				"Until the spell ends, you control any water inside an area you choose that is a {@variantrule Cube [Area of Effect]|XPHB|Cube} up to 100 feet on a side, using one of the following effects. As a {@action Magic|XPHB} action on your later turns, you can repeat the same effect or choose a different one.",
+				"Flood",
+				"You cause the water level of all standing water in the area to rise by as much as 20 feet. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a {@chance 25|||Capsizes!|No effect} chance of capsizing.",
+				"The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts.",
+				"Part Water",
+				"You part water in the area and create a trench. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored.",
+				"Redirect Flow",
+				"You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on the terrain. The water continues to move in the direction you chose until the spell ends or you choose a different effect.",
+				"Whirlpool",
+				"You cause a whirlpool to form in the center of the area, which must be at least 50 feet square and 25 feet deep. The whirlpool lasts until you choose a different effect or the spell ends. The whirlpool is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature in the water and within 25 feet of the whirlpool is pulled 10 feet toward it. When a creature enters the whirlpool for the first time on a turn or ends its turn there, it makes a Strength saving throw. On a failed save, the creature takes {@damage 2d8} Bludgeoning damage. On a successful save, the creature takes half as much damage. A creature can swim away from the whirlpool only if it first takes an action to pull away and succeeds on a Strength ({@skill Athletics|XPHB}) check against your spell save DC."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Death Ward|XPHB",
+			"hint": {
+				"Death Ward": "防死護咒"
+			},
+			"s": [
+				"Death Ward",
+				"You touch a creature and grant it a measure of protection from death. The first time the target would drop to 0 {@variantrule Hit Points|XPHB} before the spell ends, the target instead drops to 1 {@variantrule Hit Points|XPHB|Hit Point}, and the spell ends.",
+				"If the spell is still in effect when the target is subjected to an effect that would kill it instantly without dealing damage, that effect is negated against the target, and the spell ends."
+			]
+		}
+	]
+}

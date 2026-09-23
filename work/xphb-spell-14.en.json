@@ -1,0 +1,367 @@
+{
+	"batch": "xphb-spell-14",
+	"items": [
+		{
+			"prop": "spell",
+			"key": "Planar Ally|XPHB",
+			"hint": {
+				"Planar Ally": "異界盟友"
+			},
+			"s": [
+				"Planar Ally",
+				"You beseech an otherworldly entity for aid. The being must be known to you: a god, a demon prince, or some other being of cosmic power. That entity sends a {@filter Celestial|bestiary|type=celestial|miscellaneous=!swarm}, an {@filter Elemental|bestiary|type=elemental|miscellaneous=!swarm}, or a {@filter Fiend|bestiary|type=fiend|miscellaneous=!swarm} loyal to it to aid you, making the creature appear in an unoccupied space within range. If you know a specific creature's name, you can speak that name when you cast this spell to request that creature, though you might get a different creature anyway (DM's choice).",
+				"When the creature appears, it is under no compulsion to behave a particular way. You can ask it to perform a service in exchange for payment, but it isn't obliged to do so. The requested task could range from simple (fly us across the chasm, or help us fight a battle) to complex (spy on our enemies, or protect us during our foray into the dungeon). You must be able to communicate with the creature to bargain for its services.",
+				"Payment can take a variety of forms. A Celestial might require a sizable donation of gold or magic items to an allied temple, while a Fiend might demand a living sacrifice or a gift of treasure. Some creatures might exchange their service for a quest undertaken by you.",
+				"A task that can be measured in minutes requires a payment worth 100 GP per minute. A task measured in hours requires 1,000 GP per hour. And a task measured in days (up to 10 days) requires 10,000 GP per day. The DM can adjust these payments based on the circumstances under which you cast the spell. If the task is aligned with the creature's ethos, the payment might be halved or even waived. Nonhazardous tasks typically require only half the suggested payment, while especially dangerous tasks might require a greater gift. Creatures rarely accept tasks that seem suicidal.",
+				"After the creature completes the task, or when the agreed-upon duration of service expires, the creature returns to its home plane after reporting back to you if possible. If you are unable to agree on a price for the creature's service, the creature immediately returns to its home plane."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Programmed Illusion|XPHB",
+			"hint": {
+				"Programmed Illusion": "預置幻象"
+			},
+			"s": [
+				"Programmed Illusion",
+				"jade dust worth 25+ GP",
+				"You create an illusion of an object, a creature, or some other visible phenomenon within range that activates when a specific trigger occurs. The illusion is imperceptible until then. It must be no larger than a 30-foot {@variantrule Cube [Area of Effect]|XPHB|Cube}, and you decide when you cast the spell how the illusion behaves and what sounds it makes. This scripted performance can last up to 5 minutes.",
+				"When the trigger you specify occurs, the illusion springs into existence and performs in the manner you described. Once the illusion finishes performing, it disappears and remains dormant for 10 minutes, after which the illusion can be activated again.",
+				"The trigger can be as general or as detailed as you like, though it must be based on visual or audible phenomena that occur within 30 feet of the area. For example, you could create an illusion of yourself to appear and warn off others who attempt to open a trapped door.",
+				"Physical interaction with the image reveals it to be illusory, since things can pass through it. A creature that takes the {@action Study|XPHB} action to examine the image can determine that it is an illusion with a successful Intelligence ({@skill Investigation|XPHB}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Summon Fiend|XPHB",
+			"hint": {
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Summon Fiend",
+				"a bloody vial worth 600+ GP",
+				"You call forth a fiendish spirit. It manifests in an unoccupied space that you can see within range and uses the {@creature Fiendish Spirit|XPHB} stat block. When you cast the spell, choose Demon, Devil, or Yugoloth. The creature resembles a Fiend of the chosen type, which determines certain details in its stat block. The creature disappears when it drops to 0 {@variantrule Hit Points|XPHB} or when the spell ends.",
+				"The creature is an ally to you and your allies. In combat, the creature shares your {@variantrule Initiative|XPHB} count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its movement to avoid danger.",
+				"Using a Higher-Level Spell Slot",
+				"Use the spell slot's level for the spell's level in the stat block."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Sunbeam|XPHB",
+			"hint": {
+				"Sunbeam": "烈日光束"
+			},
+			"s": [
+				"Sunbeam",
+				"You launch a sunbeam in a 5-foot-wide, 60-foot-long {@variantrule Line [Area of Effect]|XPHB|Line}. Each creature in the {@variantrule Line [Area of Effect]|XPHB|Line} makes a Constitution saving throw. On a failed save, a creature takes {@damage 6d8} Radiant damage and has the {@condition Blinded|XPHB} condition until the start of your next turn. On a successful save, it takes half as much damage only.",
+				"Until the spell ends, you can take a {@action Magic|XPHB} action to create a new {@variantrule Line [Area of Effect]|XPHB|Line} of radiance.",
+				"For the duration, a mote of brilliant radiance shines above you. It sheds {@variantrule Bright Light|XPHB} in a 30-foot radius and {@variantrule Dim Light|XPHB} for an additional 30 feet. This light is sunlight."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Tasha's Bubbling Cauldron|XPHB",
+			"s": [
+				"Tasha's Bubbling Cauldron",
+				"You conjure a claw-footed cauldron filled with bubbling liquid. The cauldron appears in an unoccupied space on the ground within 5 feet of you and lasts for the duration. The cauldron can't be moved and disappears when the spell ends, along with the bubbling liquid inside it.",
+				"The liquid in the cauldron duplicates the properties of a Common or an Uncommon potion of your choice (such as a {@item Potion of Healing|XDMG}). As a {@variantrule Bonus Action|XPHB}, you or an ally can reach into the cauldron and withdraw one potion of that kind. The potion is contained in a vial that disappears when the potion is consumed. The cauldron can produce a number of these potions equal to your spellcasting ability modifier (minimum 1). When the last of these potions is withdrawn from the cauldron, the cauldron disappears, and the spell ends.",
+				"Potions obtained from the cauldron that aren't consumed disappear when you cast this spell again."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Transport via Plants|XPHB",
+			"hint": {
+				"Transport via Plants": "植物遁走術"
+			},
+			"s": [
+				"Transport via Plants",
+				"This spell creates a magical link between a Large or larger inanimate plant within range and another plant, at any distance, on the same plane of existence. You must have seen or touched the destination plant at least once before. For the duration, any creature can step into the target plant and exit from the destination plant by using 5 feet of movement."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "True Seeing|XPHB",
+			"hint": {
+				"True Seeing": "真知術"
+			},
+			"s": [
+				"True Seeing",
+				"mushroom powder worth 25+ GP, which the spell consumes",
+				"For the duration, the willing creature you touch has {@sense Truesight|XPHB} with a range of 120 feet."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Wall of Ice|XPHB",
+			"hint": {
+				"Wall of Ice": "冰牆術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Wall of Ice",
+				"You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a globe with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration.",
+				"If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (you choose which side) and makes a Dexterity saving throw, taking {@damage 10d6} Cold damage on a failed save or half as much damage on a successful one.",
+				"The wall is an object that can be damaged and thus breached. It has AC 12 and 30 {@variantrule Hit Points|XPHB} per 10-foot section, and it has {@variantrule Immunity|XPHB} to Cold, Poison, and Psychic damage and {@variantrule Vulnerability|XPHB} to Fire damage. Reducing a 10-foot section of wall to 0 {@variantrule Hit Points|XPHB} destroys it and leaves behind a sheet of frigid air in the space the wall occupied.",
+				"A creature moving through the sheet of frigid air for the first time on a turn makes a Constitution saving throw, taking {@damage 5d6} Cold damage on a failed save or half as much damage on a successful one.",
+				"Using a Higher-Level Spell Slot",
+				"The damage the wall deals when it appears increases by {@scaledamage 10d6|6-9|2d6} and the damage from passing through the sheet of frigid air increases by {@scaledamage 5d6|6-9|1d6} for each spell slot level above 6."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Wall of Thorns|XPHB",
+			"hint": {
+				"Wall of Thorns": "棘牆術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Wall of Thorns",
+				"You create a wall of tangled brush bristling with needle-sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight.",
+				"When the wall appears, each creature in its area makes a Dexterity saving throw, taking {@damage 7d8} Piercing damage on a failed save or half as much damage on a successful one.",
+				"A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature moves through the wall, it must spend 4 feet of movement. Furthermore, the first time a creature enters a space in the wall on a turn or ends its turn there, the creature makes a Dexterity saving throw, taking {@damage 7d8} Slashing damage on a failed save or half as much damage on a successful one. A creature makes this save only once per turn.",
+				"Using a Higher-Level Spell Slot",
+				"Both types of damage increase by {@scaledamage 7d8|6-9|1d8} for each spell slot level above 6."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Wind Walk|XPHB",
+			"hint": {
+				"Wind Walk": "御風而行"
+			},
+			"s": [
+				"Wind Walk",
+				"You and up to ten willing creatures of your choice within range assume gaseous forms for the duration, appearing as wisps of cloud. While in this cloud form, a target has a {@variantrule Fly Speed|XPHB} of 300 feet and can hover; it has {@variantrule Immunity|XPHB} to the {@condition Prone|XPHB} condition; and it has {@variantrule Resistance|XPHB} to Bludgeoning, Piercing, and Slashing damage. The only actions a target can take in this form are the {@action Dash|XPHB} action or a {@action Magic|XPHB} action to begin reverting to its normal form. Reverting takes 1 minute, during which the target has the {@condition Stunned|XPHB} condition. Until the spell ends, the target can revert to cloud form, which also requires a {@action Magic|XPHB} action followed by a 1-minute transformation.",
+				"If a target is in cloud form and flying when the effect ends, the target descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, it falls the remaining distance."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Word of Recall|XPHB",
+			"hint": {
+				"Word of Recall": "回返真言"
+			},
+			"s": [
+				"Word of Recall",
+				"You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space to the spot you designated when you prepared your sanctuary (see below). If you cast this spell without first preparing a sanctuary, the spell has no effect.",
+				"You must designate a location, such as a temple, as a sanctuary by casting this spell there."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Conjure Celestial|XPHB",
+			"hint": {
+				"Conjure Celestial": "召喚天界生物",
+				"Healing Light": "治癒之光",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Conjure Celestial",
+				"You conjure a spirit from the Upper Planes, which manifests as a pillar of light in a 10-foot-radius, 40-foot-high {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on a point within range. For each creature you can see in the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, choose which of these lights shines on it:",
+				"Healing Light",
+				"The target regains {@variantrule Hit Points|XPHB} equal to {@dice 4d12} plus your spellcasting ability modifier.",
+				"Searing Light",
+				"The target makes a Dexterity saving throw, taking {@damage 6d12} Radiant damage on a failed save or half as much damage on a successful one.",
+				"Until the spell ends, {@variantrule Bright Light|XPHB} fills the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, and when you move on your turn, you can also move the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} up to 30 feet.",
+				"Whenever the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} moves into the space of a creature you can see and whenever a creature you can see enters the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} or ends its turn there, you can bathe it in one of the lights. A creature can be affected by this spell only once per turn.",
+				"Using a Higher-Level Spell Slot",
+				"The healing and damage increase by {@scaledamage 6d12|7-9|1d12} for each spell slot level above 7."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Delayed Blast Fireball|XPHB",
+			"hint": {
+				"Delayed Blast Fireball": "延遲爆裂火球",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Delayed Blast Fireball",
+				"A beam of yellow light flashes from you, then condenses at a chosen point within range as a glowing bead for the duration. When the spell ends, the bead explodes, and each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point makes a Dexterity saving throw. A creature takes Fire damage equal to the total accumulated damage on a failed save or half as much damage on a successful one.",
+				"The spell's base damage is {@damage 12d6}, and the damage increases by {@damage 1d6} whenever your turn ends and the spell hasn't ended.",
+				"If a creature touches the glowing bead before the spell ends, that creature makes a Dexterity saving throw. On a failed save, the spell ends, causing the bead to explode. On a successful save, the creature can throw the bead up to 40 feet. If the thrown bead enters a creature's space or collides with a solid object, the spell ends, and the bead explodes.",
+				"When the bead explodes, flammable objects in the explosion that aren't being worn or carried start {@hazard burning|XPHB}.",
+				"Using a Higher-Level Spell Slot",
+				"The base damage increases by {@scaledamage 12d6|7-9|1d6} for each spell slot level above 7."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Divine Word|XPHB",
+			"hint": {
+				"Divine Word": "聖言術"
+			},
+			"s": [
+				"Divine Word",
+				"You utter a word imbued with power from the Upper Planes. Each creature of your choice in range makes a Charisma saving throw. On a failed save, a target that has 50 {@variantrule Hit Points|XPHB} or fewer suffers an effect based on its current {@variantrule Hit Points|XPHB}, as shown in the Divine Word Effects table. Regardless of its {@variantrule Hit Points|XPHB}, a Celestial, an Elemental, a Fey, or a Fiend target that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to the current plane for 24 hours by any means short of a {@spell Wish|XPHB} spell.",
+				"Divine Word Effects",
+				"Hit Points",
+				"Effect",
+				"The target dies.",
+				"The target has the {@condition Blinded|XPHB}, {@condition Deafened|XPHB}, and {@condition Stunned|XPHB} conditions for 1 hour.",
+				"The target has the {@condition Blinded|XPHB} and {@condition Deafened|XPHB} conditions for 10 minutes.",
+				"The target has the {@condition Deafened|XPHB} condition for 1 minute."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Etherealness|XPHB",
+			"hint": {
+				"Etherealness": "跨入乙太界",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Etherealness",
+				"You step into the border regions of the Ethereal Plane, where it overlaps with your current plane. You remain in the Border Ethereal for the duration. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. You can perceive the plane you left, which looks gray, and you can't see anything there more than 60 feet away.",
+				"While on the Ethereal Plane, you can affect and be affected only by creatures, objects, and effects on that plane. Creatures that aren't on the Ethereal Plane can't perceive or interact with you unless a feature gives them the ability to do so.",
+				"When the spell ends, you return to the plane you left in the spot that corresponds to your space in the Border Ethereal. If you appear in an occupied space, you are shunted to the nearest unoccupied space and take Force damage equal to twice the number of feet you are moved.",
+				"This spell ends instantly if you cast it while you are on the Ethereal Plane or a plane that doesn't border it, such as one of the Outer Planes.",
+				"Using a Higher-Level Spell Slot",
+				"You can target up to three willing creatures (including yourself) for each spell slot level above 7. The creatures must be within 10 feet of you when you cast the spell."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Finger of Death|XPHB",
+			"hint": {
+				"Finger of Death": "死亡一指"
+			},
+			"s": [
+				"Finger of Death",
+				"You unleash negative energy toward a creature you can see within range. The target makes a Constitution saving throw, taking {@damage 7d8 + 30} Necrotic damage on a failed save or half as much damage on a successful one.",
+				"A Humanoid killed by this spell rises at the start of your next turn as a {@creature Zombie|XMM} that follows your verbal orders."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Fire Storm|XPHB",
+			"hint": {
+				"Fire Storm": "火焰風暴"
+			},
+			"s": [
+				"Fire Storm",
+				"A storm of fire appears within range. The area of the storm consists of up to ten 10-foot Cubes, which you arrange as you like. Each {@variantrule Cube [Area of Effect]|XPHB|Cube} must be contiguous with at least one other {@variantrule Cube [Area of Effect]|XPHB|Cube}. Each creature in the area makes a Dexterity saving throw, taking {@damage 7d10} Fire damage on a failed save or half as much damage on a successful one.",
+				"Flammable objects in the area that aren't being worn or carried start {@hazard burning|XPHB}."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Forcecage|XPHB",
+			"hint": {
+				"Forcecage": "力場監牢"
+			},
+			"s": [
+				"Forcecage",
+				"ruby dust worth 1,500+ GP, which the spell consumes",
+				"An immobile, {@condition Invisible|XPHB}, {@variantrule Cube [Area of Effect]|XPHB|Cube}-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box, as you choose.",
+				"A prison in the shape of a cage can be up to 20 feet on a side and is made from 1/2-inch diameter bars spaced 1/2 inch apart. A prison in the shape of a box can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out from the area.",
+				"When you cast the spell, any creature that is completely inside the cage's area is trapped. Creatures only partially within the area, or those too large to fit inside it, are pushed away from the center of the area until they are completely outside it.",
+				"A creature inside the cage can't leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave, it must first make a Charisma saving throw. On a successful save, the creature can use that magic to exit the cage. On a failed save, the creature doesn't exit the cage and wastes the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel.",
+				"This spell can't be dispelled by {@spell Dispel Magic|XPHB}."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Mirage Arcane|XPHB",
+			"hint": {
+				"Mirage Arcane": "海市蜃樓"
+			},
+			"s": [
+				"Mirage Arcane",
+				"You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain. Open fields or a road could be made to resemble a swamp, hill, crevasse, or some other rough or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road.",
+				"Similarly, you can alter the appearance of structures or add them where none are present. The spell doesn't disguise, conceal, or add creatures.",
+				"The illusion includes audible, visual, tactile, and olfactory elements, so it can turn clear ground into {@variantrule Difficult Terrain|XPHB} (or vice versa) or otherwise impede movement through the area. Any piece of the illusory terrain (such as a rock or stick) that is removed from the spell's area disappears immediately.",
+				"Creatures with {@sense Truesight|XPHB} can see through the illusion to the terrain's true form; however, all other elements of the illusion remain, so while the creature is aware of the illusion's presence, the creature can still physically interact with the illusion."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Mordenkainen's Magnificent Mansion|XPHB",
+			"hint": {
+				"Mordenkainen's Magnificent Mansion": "魔鄧肯豪宅術"
+			},
+			"s": [
+				"Mordenkainen's Magnificent Mansion",
+				"a miniature door worth 15+ GP",
+				"You conjure a shimmering door in range that lasts for the duration. The door leads to an extradimensional dwelling and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the spell can enter the extradimensional dwelling as long as the door remains open. You can open or close it (no action required) if you are within 30 feet of it. While closed, the door is imperceptible.",
+				"Beyond the door is a magnificent foyer with numerous chambers beyond. The dwelling's atmosphere is clean, fresh, and warm.",
+				"You can create any floor plan you like for the dwelling, but it can't exceed 50 contiguous 10-foot Cubes. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine-course banquet for up to 100 people. Furnishings and other objects created by this spell dissipate into smoke if removed from it.",
+				"A staff of 100 near-transparent servants attends all who enter. You determine the appearance of these servants and their attire. They are invulnerable and obey your commands. Each servant can perform tasks that a human could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can't leave the dwelling.",
+				"When the spell ends, any creatures or objects left inside the extradimensional space are expelled into the unoccupied spaces nearest to the entrance."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Mordenkainen's Sword|XPHB",
+			"hint": {
+				"Mordenkainen's Sword": "魔鄧肯之劍"
+			},
+			"s": [
+				"Mordenkainen's Sword",
+				"a miniature sword worth 250+ GP",
+				"You create a spectral sword that hovers within range. It lasts for the duration.",
+				"When the sword appears, you make a melee spell attack against a target within 5 feet of the sword. On a hit, the target takes Force damage equal to {@damage 4d12} plus your spellcasting ability modifier.",
+				"On your later turns, you can take a {@variantrule Bonus Action|XPHB} to move the sword up to 30 feet to a spot you can see and repeat the attack against the same target or a different one."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Plane Shift|XPHB",
+			"hint": {
+				"Plane Shift": "異界傳送"
+			},
+			"s": [
+				"Plane Shift",
+				"a forked, metal rod worth 250+ GP and attuned to a plane of existence",
+				"You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination, as determined by the DM.",
+				"Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Power Word Fortify|XPHB",
+			"s": [
+				"Power Word Fortify",
+				"You fortify up to six creatures you can see within range. The spell bestows 120 {@variantrule Temporary Hit Points|XPHB}, which you divide among the spell's recipients."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Prismatic Spray|XPHB",
+			"hint": {
+				"Prismatic Spray": "虹光噴射"
+			},
+			"s": [
+				"Prismatic Spray",
+				"Eight rays of light flash from you in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. Each creature in the {@variantrule Cone [Area of Effect]|XPHB|Cone} makes a Dexterity saving throw. For each target, roll {@dice 1d8} to determine which color ray affects it, consulting the Prismatic Rays table.",
+				"Prismatic Rays",
+				"1d8",
+				"Ray",
+				"{@b Red.} {@i Failed Save:} {@damage 12d6} Fire damage. {@i Successful Save:} Half as much damage.",
+				"{@b Orange.} {@i Failed Save:} {@damage 12d6} Acid damage. {@i Successful Save:} Half as much damage.",
+				"{@b Yellow.} {@i Failed Save:} {@damage 12d6} Lightning damage. {@i Successful Save:} Half as much damage.",
+				"{@b Green.} {@i Failed Save:} {@damage 12d6} Poison damage. {@i Successful Save:} Half as much damage.",
+				"{@b Blue.} {@i Failed Save:} {@damage 12d6} Cold damage. {@i Successful Save:} Half as much damage.",
+				"{@b Indigo.} {@i Failed Save:} The target has the {@condition Restrained|XPHB} condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the {@condition Petrified|XPHB} condition until it is freed by an effect like the {@spell Greater Restoration|XPHB} spell. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind.",
+				"{@b Violet.} {@i Failed Save:} The target has the {@condition Blinded|XPHB} condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM's choice).",
+				"{@b Special.} The target is struck by two rays. Roll twice, rerolling any 8."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Project Image|XPHB",
+			"hint": {
+				"Project Image": "投射幻影"
+			},
+			"s": [
+				"Project Image",
+				"a statuette of yourself worth 5+ GP",
+				"You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within range that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you, but it is intangible. If the illusion takes any damage, it disappears, and the spell ends.",
+				"You can see through the illusion's eyes and hear through its ears as if you were in its space. As a {@action Magic|XPHB} action, you can move it up to 60 feet and make it gesture, speak, and behave in whatever way you choose. It mimics your mannerisms perfectly.",
+				"Physical interaction with the image reveals it to be illusory, since things can pass through it. A creature that takes the {@action Study|XPHB} action to examine the image can determine that it is an illusion with a successful Intelligence ({@skill Investigation|XPHB}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature."
+			]
+		}
+	]
+}

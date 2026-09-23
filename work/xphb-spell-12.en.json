@@ -1,0 +1,401 @@
+{
+	"batch": "xphb-spell-12",
+	"items": [
+		{
+			"prop": "spell",
+			"key": "Greater Restoration|XPHB",
+			"hint": {
+				"Greater Restoration": "高等復原術"
+			},
+			"s": [
+				"Greater Restoration",
+				"diamond dust worth 100+ GP, which the spell consumes",
+				"You touch a creature and magically remove one of the following effects from it:",
+				"1 {@condition Exhaustion|XPHB} level",
+				"The {@condition Charmed|XPHB} or {@condition Petrified|XPHB} condition",
+				"A curse, including the target's {@variantrule Attunement|XPHB} to a cursed magic item",
+				"Any reduction to one of the target's ability scores",
+				"Any reduction to the target's {@variantrule Hit Points|XPHB|Hit Point} maximum"
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Hallow|XPHB",
+			"hint": {
+				"Hallow": "聖居",
+				"Darkness": "黑暗術",
+				"Daylight": "晝明術",
+				"Fear": "恐懼術",
+				"Resistance": "抗性",
+				"Silence": "沉默術",
+				"Tongues": "巧言術",
+				"Vulnerability": "易傷"
+			},
+			"s": [
+				"Hallow",
+				"incense worth 1,000+ GP, which the spell consumes",
+				"You touch a point and infuse an area around it with holy or unholy power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect of Hallow. The affected area has the following effects.",
+				"Hallowed Ward",
+				"Choose any of these creature types: Aberration, Celestial, Elemental, Fey, Fiend, or Undead. Creatures of the chosen types can't willingly enter the area, and any creature that is possessed by or that has the {@condition Charmed|XPHB} or {@condition Frightened|XPHB} condition from such creatures isn't possessed, {@condition Charmed|XPHB}, or {@condition Frightened|XPHB} by them while in the area.",
+				"Extra Effect",
+				"You bind an extra effect to the area from the list below:",
+				"Courage",
+				"Creatures of any types you choose can't gain the {@condition Frightened|XPHB} condition while in the area.",
+				"Darkness",
+				"{@variantrule Darkness|XPHB} fills the area. Normal light, as well as magical light created by spells of a level lower than this spell, can't illuminate the area.",
+				"Daylight",
+				"Bright light fills the area. Magical {@variantrule Darkness|XPHB} created by spells of a level lower than this spell can't extinguish the light.",
+				"Peaceful Rest",
+				"{@variantrule Dead|XPHB} bodies interred in the area can't be turned into Undead.",
+				"Extradimensional Interference",
+				"Creatures of any types you choose can't enter or exit the area using teleportation or interplanar travel.",
+				"Fear",
+				"Creatures of any types you choose have the {@condition Frightened|XPHB} condition while in the area.",
+				"Resistance",
+				"Creatures of any types you choose have {@variantrule Resistance|XPHB} to one damage type of your choice while in the area.",
+				"Silence",
+				"No sound can emanate from within the area, and no sound can reach into it.",
+				"Tongues",
+				"Creatures of any types you choose can communicate with any other creature in the area even if they don't share a common language.",
+				"Vulnerability",
+				"Creatures of any types you choose have {@variantrule Vulnerability|XPHB} to one damage type of your choice while in the area."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Hold Monster|XPHB",
+			"hint": {
+				"Hold Monster": "怪物定身術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Hold Monster",
+				"Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or have the {@condition Paralyzed|XPHB} condition for the duration. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success.",
+				"Using a Higher-Level Spell Slot",
+				"You can target one additional creature for each spell slot level above 5."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Insect Plague|XPHB",
+			"hint": {
+				"Insect Plague": "疫病蟲群",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Insect Plague",
+				"Swarming locusts fill a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point you choose within range. The {@variantrule Sphere [Area of Effect]|XPHB|Sphere} remains for the duration, and its area is {@variantrule Lightly Obscured|XPHB} and {@variantrule Difficult Terrain|XPHB}.",
+				"When the swarm appears, each creature in it makes a Constitution saving throw, taking {@damage 4d10} Piercing damage on a failed save or half as much damage on a successful one. A creature also makes this save when it enters the spell's area for the first time on a turn or ends its turn there. A creature makes this save only once per turn.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 4d10|5-9|1d10} for each spell slot level above 5."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Jallarzi's Storm of Radiance|XPHB",
+			"hint": {
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Jallarzi's Storm of Radiance",
+				"You unleash a storm of flashing light and raging thunder in a 10-foot-radius, 40-foot-high {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on a point you can see within range. While in this area, creatures have the {@condition Blinded|XPHB} and {@condition Deafened|XPHB} conditions, and they can't cast spells with a Verbal component.",
+				"When the storm appears, each creature in it makes a Constitution saving throw, taking {@damage 2d10} Radiant damage and {@damage 2d10} Thunder damage on a failed save or half as much damage on a successful one. A creature also makes this save when it enters the spell's area for the first time on a turn or ends its turn there. A creature makes this save only once per turn.",
+				"Using a Higher-Level Spell Slot",
+				"The Radiant and Thunder damage increase by {@scaledamage 2d10|5-9|1d10} for each spell slot level above 5."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Legend Lore|XPHB",
+			"hint": {
+				"Legend Lore": "通曉傳奇"
+			},
+			"s": [
+				"Legend Lore",
+				"incense worth 250+ GP, which the spell consumes, and four ivory strips worth 50+ GP each",
+				"Name or describe a famous person, place, or object. The spell brings to your mind a brief summary of the significant lore about that famous thing, as described by the DM.",
+				"The lore might consist of important details, amusing revelations, or even secret lore that has never been widely known. The more information you already know about the thing, the more precise and detailed the information you receive is. That information is accurate but might be couched in figurative language or poetry, as determined by the DM.",
+				"If the famous thing you chose isn't actually famous, you hear sad musical notes played on a trombone, and the spell fails."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Mass Cure Wounds|XPHB",
+			"hint": {
+				"Mass Cure Wounds": "群體治療傷勢",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Mass Cure Wounds",
+				"A wave of healing energy washes out from a point you can see within range. Choose up to six creatures in a 30-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point. Each target regains {@variantrule Hit Points|XPHB} equal to {@dice 5d8} plus your spellcasting ability modifier.",
+				"Using a Higher-Level Spell Slot",
+				"The healing increases by {@scaledice 5d8|5-9|1d8} for each spell slot level above 5."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Mislead|XPHB",
+			"hint": {
+				"Mislead": "假象術"
+			},
+			"s": [
+				"Mislead",
+				"You gain the {@condition Invisible|XPHB} condition at the same time that an illusory double of you appears where you are standing. The double lasts for the duration, but the invisibility ends immediately after you make an attack roll, deal damage, or cast a spell.",
+				"As a {@action Magic|XPHB} action, you can move the illusory double up to twice your {@variantrule Speed|XPHB} and make it gesture, speak, and behave in whatever way you choose. It is intangible and invulnerable.",
+				"You can see through its eyes and hear through its ears as if you were located where it is."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Modify Memory|XPHB",
+			"hint": {
+				"Modify Memory": "修改記憶",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Modify Memory",
+				"You attempt to reshape another creature's memories. One creature that you can see within range makes a Wisdom saving throw. If you are fighting the creature, it has {@variantrule Advantage|XPHB} on the save. On a failed save, the target has the {@condition Charmed|XPHB} condition for the duration. While {@condition Charmed|XPHB} in this way, the target also has the {@condition Incapacitated|XPHB} condition and is unaware of its surroundings, though it can hear you. If it takes any damage or is targeted by another spell, this spell ends, and no memories are modified.",
+				"While this charm lasts, you can affect the target's memory of an event that it experienced within the last 24 hours and that lasted no more than 10 minutes. You can permanently eliminate all memory of the event, allow the target to recall the event with perfect clarity, change its memory of the event's details, or create a memory of some other event.",
+				"You must speak to the target to describe how its memories are affected, and it must be able to understand your language for the modified memories to take root. Its mind fills in any gaps in the details of your description. If the spell ends before you finish describing the modified memories, the creature's memory isn't altered. Otherwise, the modified memories take hold when the spell ends.",
+				"A modified memory doesn't necessarily affect how a creature behaves, particularly if the memory contradicts the creature's natural inclinations, alignment, or beliefs. An illogical modified memory, such as a false memory of how much the creature enjoyed swimming in acid, is dismissed as a bad dream. The DM might deem a modified memory too nonsensical to affect a creature.",
+				"A {@spell Remove Curse|XPHB} or {@spell Greater Restoration|XPHB} spell cast on the target restores the creature's true memory.",
+				"Using a Higher-Level Spell Slot",
+				"You can alter the target's memories of an event that took place up to 7 days ago (level 6 spell slot), 30 days ago (level 7 spell slot), 365 days ago (level 8 spell slot), or any time in the creature's past (level 9 spell slot)."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Passwall|XPHB",
+			"hint": {
+				"Passwall": "穿牆術"
+			},
+			"s": [
+				"Passwall",
+				"A passage appears at a point that you can see on a wooden, plaster, or stone surface (such as a wall, ceiling, or floor) within range and lasts for the duration. You choose the opening's dimensions: up to 5 feet wide, 8 feet tall, and 20 feet deep. The passage creates no instability in a structure surrounding it.",
+				"When the opening disappears, any creatures or objects still in the passage created by the spell are safely ejected to an unoccupied space nearest to the surface on which you cast the spell."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Planar Binding|XPHB",
+			"hint": {
+				"Planar Binding": "異界誓縛",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Planar Binding",
+				"a jewel worth 1,000+ GP, which the spell consumes",
+				"You attempt to bind a Celestial, an Elemental, a Fey, or a Fiend to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of the inverted version of the {@spell Magic Circle|XPHB} spell to trap it while this spell is cast.) At the completion of the casting, the target must succeed on a Charisma saving throw or be bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is extended to match the duration of this spell.",
+				"A bound creature must follow your commands to the best of its ability. You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message. If the creature is {@variantrule Hostile [Attitude]|XPHB|Hostile}, it strives to twist your commands to achieve its own objectives. If the creature carries out your commands completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane, it returns to the place where you bound it and remains there until the spell ends.",
+				"Using a Higher-Level Spell Slot",
+				"The duration increases with a spell slot of level 6 (10 days), 7 (30 days), 8 (180 days), and 9 (366 days)."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Raise Dead|XPHB",
+			"hint": {
+				"Raise Dead": "喚醒死者"
+			},
+			"s": [
+				"Raise Dead",
+				"a diamond worth 500+ GP, which the spell consumes",
+				"With a touch, you revive a dead creature if it has been dead no longer than 10 days and it wasn't Undead when it died.",
+				"The creature returns to life with 1 {@variantrule Hit Points|XPHB|Hit Point}. This spell also neutralizes any poisons that affected the creature at the time of death.",
+				"This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival—its head, for instance—the spell automatically fails.",
+				"Coming back from the dead is an ordeal. The target takes a -4 penalty to {@variantrule D20 Test|XPHB|D20 Tests}. Every time the target finishes a {@variantrule Long Rest|XPHB}, the penalty is reduced by 1 until it becomes 0."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Rary's Telepathic Bond|XPHB",
+			"hint": {
+				"Rary's Telepathic Bond": "拉瑞心靈聯結"
+			},
+			"s": [
+				"Rary's Telepathic Bond",
+				"You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures that can't communicate in any languages aren't affected by this spell.",
+				"Until the spell ends, the targets can communicate telepathically through the bond whether or not they share a language. The communication is possible over any distance, though it can't extend to other planes of existence."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Reincarnate|XPHB",
+			"hint": {
+				"Reincarnate": "轉生術"
+			},
+			"s": [
+				"Reincarnate",
+				"rare oils worth 1,000+ GP, which the spell consumes",
+				"You touch a dead Humanoid or a piece of one. If the creature has been dead no longer than 10 days, the spell forms a new body for it and calls the soul to enter that body. Roll {@dice 1d10} and consult the table below to determine the body's species, or the DM chooses another playable species.",
+				"1d10",
+				"Species",
+				"The reincarnated creature makes any choices that a species' description offers, and the creature recalls its former life. It retains the capabilities it had in its original form, except it loses the traits of its previous species and gains the traits of its new one."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Scrying|XPHB",
+			"hint": {
+				"Scrying": "探知"
+			},
+			"s": [
+				"Scrying",
+				"a focus worth 1,000+ GP, such as a crystal ball, mirror, or water-filled font",
+				"You can see and hear a creature you choose that is on the same plane of existence as you. The target makes a Wisdom saving throw, which is modified (see the tables below) by how well you know the target and the sort of physical connection you have to it. The target doesn't know what it is making the save against, only that it feels uneasy.",
+				"Your Knowledge of the Target Is...",
+				"Save Modifier",
+				"Secondhand (heard of the target)",
+				"Firsthand (met the target)",
+				"Extensive (know the target well)",
+				"You Have the Target's...",
+				"Save Modifier",
+				"Picture or other likeness",
+				"Garment or other possession",
+				"Body part, lock of hair, or bit of nail",
+				"On a successful save, the target isn't affected, and you can't use this spell on it again for 24 hours.",
+				"On a failed save, the spell creates an {@condition Invisible|XPHB}, intangible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. If something can see the sensor, it appears as a luminous orb about the size of your fist.",
+				"Instead of targeting a creature, you can target a location you have seen. When you do so, the sensor appears at that location and doesn't move."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Seeming|XPHB",
+			"hint": {
+				"Seeming": "偽裝術"
+			},
+			"s": [
+				"Seeming",
+				"You give an illusory appearance to each creature of your choice that you can see within range. An unwilling target can make a Charisma saving throw, and if it succeeds, it is unaffected by this spell.",
+				"You can give the same appearance or different ones to the targets. The spell can change the appearance of the targets' bodies and equipment. You can make each creature seem 1 foot shorter or taller and appear heavier or lighter. A target's new appearance must have the same basic arrangement of limbs as the target, but the extent of the illusion is otherwise up to you. The spell lasts for the duration.",
+				"The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to a creature's outfit, objects pass through the hat.",
+				"A creature that takes the {@action Study|XPHB} action to examine a target can make an Intelligence ({@skill Investigation|XPHB}) check against your spell save DC. If it succeeds, it becomes aware that the target is disguised."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Steel Wind Strike|XPHB",
+			"hint": {
+				"Steel Wind Strike": "鋼風打擊"
+			},
+			"s": [
+				"Steel Wind Strike",
+				"a Melee weapon worth 1+ SP",
+				"You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes {@damage 6d10} Force damage.",
+				"You then teleport to an unoccupied space you can see within 5 feet of one of the targets."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Summon Celestial|XPHB",
+			"hint": {
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Summon Celestial",
+				"a reliquary worth 500+ GP",
+				"You call forth a Celestial spirit. It manifests in an angelic form in an unoccupied space that you can see within range and uses the {@creature Celestial Spirit|XPHB} stat block. When you cast the spell, choose Avenger or Defender. Your choice determines certain details in its stat block. The creature disappears when it drops to 0 {@variantrule Hit Points|XPHB} or when the spell ends.",
+				"The creature is an ally to you and your allies. In combat, the creature shares your {@variantrule Initiative|XPHB} count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its movement to avoid danger.",
+				"Using a Higher-Level Spell Slot",
+				"Use the spell slot's level for the spell's level in the stat block."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Summon Dragon|XPHB",
+			"hint": {
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Summon Dragon",
+				"an object with the image of a dragon engraved on it worth 500+ GP",
+				"You call forth a Dragon spirit. It manifests in an unoccupied space that you can see within range and uses the {@creature Draconic Spirit|XPHB} stat block. The creature disappears when it drops to 0 {@variantrule Hit Points|XPHB} or when the spell ends.",
+				"The creature is an ally to you and your allies. In combat, the creature shares your {@variantrule Initiative|XPHB} count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its movement to avoid danger.",
+				"Using a Higher-Level Spell Slot",
+				"Use the spell slot's level for the spell's level in the stat block."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Swift Quiver|XPHB",
+			"hint": {
+				"Swift Quiver": "迅捷箭袋"
+			},
+			"s": [
+				"Swift Quiver",
+				"a Quiver worth 1+ GP",
+				"When you cast the spell and as a {@variantrule Bonus Action|XPHB} until it ends, you can make two attacks with a weapon that fires Arrows or Bolts, such as a Longbow or a Light Crossbow. The spell magically creates the ammunition needed for each attack. Each Arrow or Bolt created by the spell deals damage like a nonmagical piece of ammunition of its kind and disintegrates immediately after it hits or misses."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Synaptic Static|XPHB",
+			"hint": {
+				"Synaptic Static": "突觸噪亂"
+			},
+			"s": [
+				"Synaptic Static",
+				"You cause psychic energy to erupt at a point within range. Each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point makes an Intelligence saving throw, taking {@damage 8d6} Psychic damage on a failed save or half as much damage on a successful one.",
+				"On a failed save, a target also has muddled thoughts for 1 minute. During that time, it subtracts {@dice 1d6} from all its attack rolls and ability checks, as well as any Constitution saving throws to maintain {@status Concentration|XPHB}. The target makes an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Telekinesis|XPHB",
+			"hint": {
+				"Telekinesis": "心靈遙控",
+				"Creature": "生物",
+				"Object": "物體"
+			},
+			"s": [
+				"Telekinesis",
+				"You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell and as a {@action Magic|XPHB} action on your later turns before the spell ends, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.",
+				"Creature",
+				"You can try to move a Huge or smaller creature. The target must succeed on a Strength saving throw, or you move it up to 30 feet in any direction within the spell's range. Until the end of your next turn, the creature has the {@condition Restrained|XPHB} condition, and if you lift it into the air, it is suspended there. It falls at the end of your next turn unless you use this option on it again and it fails the save.",
+				"Object",
+				"You can try to move a Huge or smaller object. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction within the spell's range.",
+				"If the object is worn or carried by a creature, that creature must succeed on a Strength saving throw, or you pull the object away and move it up to 30 feet in any direction within the spell's range.",
+				"You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Teleportation Circle|XPHB",
+			"hint": {
+				"Teleportation Circle": "傳送法陣"
+			},
+			"s": [
+				"Teleportation Circle",
+				"rare inks worth 50+ GP, which the spell consumes",
+				"As you cast the spell, you draw a 5-foot-radius circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. A shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.",
+				"Many major temples, guildhalls, and other important places have permanent teleportation circles. Each circle includes a unique sigil sequence—a string of runes arranged in a particular pattern.",
+				"When you first gain the ability to cast this spell, you learn the sigil sequences for two destinations on the Material Plane, determined by the DM. You might learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.",
+				"You can create a permanent teleportation circle by casting this spell in the same location every day for 365 days."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Tree Stride|XPHB",
+			"hint": {
+				"Tree Stride": "樹躍術"
+			},
+			"s": [
+				"Tree Stride",
+				"You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.",
+				"You can use this transportation ability only once on each of your turns. You must end each turn outside a tree."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Wall of Force|XPHB",
+			"hint": {
+				"Wall of Force": "力牆術"
+			},
+			"s": [
+				"Wall of Force",
+				"An {@condition Invisible|XPHB} wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a globe with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick and lasts for the duration. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (you choose which side).",
+				"Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by {@spell Dispel Magic|XPHB}. A {@spell Disintegrate|XPHB} spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane and blocks ethereal travel through the wall."
+			]
+		}
+	]
+}

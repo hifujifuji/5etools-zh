@@ -1,0 +1,374 @@
+{
+	"batch": "xphb-spell-13",
+	"items": [
+		{
+			"prop": "spell",
+			"key": "Wall of Stone|XPHB",
+			"hint": {
+				"Wall of Stone": "石牆術"
+			},
+			"s": [
+				"Wall of Stone",
+				"A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.",
+				"If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (you choose which side). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its {@variantrule Reaction|XPHB} to move up to its {@variantrule Speed|XPHB} so that it is no longer enclosed by the wall.",
+				"The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on a firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.",
+				"If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create battlements and the like.",
+				"The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 {@variantrule Hit Points|XPHB} per inch of thickness, and it has {@variantrule Immunity|XPHB} to Poison and Psychic damage. Reducing a panel to 0 {@variantrule Hit Points|XPHB} destroys it and might cause connected panels to collapse at the DM's discretion.",
+				"If you maintain your {@status Concentration|XPHB} on this spell for its full duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Yolande's Regal Presence|XPHB",
+			"s": [
+				"Yolande's Regal Presence",
+				"You surround yourself with unearthly majesty in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. Whenever the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} enters the space of a creature you can see and whenever a creature you can see enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or ends its turn there, you can force that creature to make a Wisdom saving throw. On a failed save, the target takes {@damage 4d6} Psychic damage and has the {@condition Prone|XPHB} condition, and you can push it up to 10 feet away. On a successful save, the target takes half as much damage only. A creature makes this save only once per turn."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Arcane Gate|XPHB",
+			"hint": {
+				"Arcane Gate": "祕法之門"
+			},
+			"s": [
+				"Arcane Gate",
+				"You create linked teleportation portals. Choose two Large, unoccupied spaces on the ground that you can see, one space within range and the other one within 10 feet of you. A circular portal opens in each of those spaces and remains for the duration.",
+				"The portals are two-dimensional glowing rings filled with mist that blocks sight. They hover inches from the ground and are perpendicular to it.",
+				"A portal is open on only one side (you choose which). Anything entering the open side of a portal exits from the open side of the other portal as if the two were adjacent to each other. As a {@variantrule Bonus Action|XPHB}, you can change the facing of the open sides."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Blade Barrier|XPHB",
+			"hint": {
+				"Blade Barrier": "劍刃障壁"
+			},
+			"s": [
+				"Blade Barrier",
+				"You create a wall of whirling blades made of magical energy. The wall appears within range and lasts for the duration. You make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides Three-Quarters {@variantrule Cover|XPHB}, and its space is {@variantrule Difficult Terrain|XPHB}.",
+				"Any creature in the wall's space makes a Dexterity saving throw, taking {@damage 6d10} Force damage on a failed save or half as much damage on a successful one. A creature also makes that save if it enters the wall's space or ends it turn there. A creature makes that save only once per turn."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Chain Lightning|XPHB",
+			"hint": {
+				"Chain Lightning": "連環閃電",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Chain Lightning",
+				"You launch a lightning bolt toward a target you can see within range. Three bolts then leap from that target to as many as three other targets of your choice, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.",
+				"Each target makes a Dexterity saving throw, taking {@damage 10d8} Lightning damage on a failed save or half as much damage on a successful one.",
+				"Using a Higher-Level Spell Slot",
+				"One additional bolt leaps from the first target to another target for each spell slot level above 6."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Circle of Death|XPHB",
+			"hint": {
+				"Circle of Death": "死亡之環",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Circle of Death",
+				"the powder of a crushed black pearl worth 500+ GP",
+				"Negative energy ripples out in a 60-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} from a point you choose within range. Each creature in that area makes a Constitution saving throw, taking {@damage 8d8} Necrotic damage on a failed save or half as much damage on a successful one.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 8d8|6-9|2d8} for each spell slot level above 6."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Conjure Fey|XPHB",
+			"hint": {
+				"Conjure Fey": "召喚精類生物",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Conjure Fey",
+				"You conjure a Medium spirit from the Feywild in an unoccupied space you can see within range. The spirit lasts for the duration, and it looks like a Fey creature of your choice. When the spirit appears, you can make one melee spell attack against a creature within 5 feet of it. On a hit, the target takes Psychic damage equal to {@damage 3d12} plus your spellcasting ability modifier, and the target has the {@condition Frightened|XPHB} condition until the start of your next turn, with both you and the spirit as the source of the fear.",
+				"As a {@variantrule Bonus Action|XPHB} on your later turns, you can teleport the spirit to an unoccupied space you can see within 30 feet of the space it left and make the attack against a creature within 5 feet of it.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 3d12|6-9|1d12} for each spell slot level above 6."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Contingency|XPHB",
+			"hint": {
+				"Contingency": "觸發術"
+			},
+			"s": [
+				"Contingency",
+				"a gem-encrusted statuette of yourself worth 1,500+ GP",
+				"Choose a spell of level 5 or lower that you can cast, that has a casting time of an action, and that can target you. You cast that spell—called the contingent spell—as part of casting Contingency, expending spell slots for both, but the contingent spell doesn't come into effect. Instead, it takes effect when a certain trigger occurs. You describe that trigger when you cast the two spells. For example, a Contingency cast with {@spell Water Breathing|XPHB} might stipulate that Water Breathing comes into effect when you are engulfed in water or a similar liquid.",
+				"The contingent spell takes effect immediately after the trigger occurs for the first time, whether or not you want it to, and then Contingency ends.",
+				"The contingent spell takes effect only on you, even if it can normally target others. You can use only one Contingency spell at a time. If you cast this spell again, the effect of another Contingency spell on you ends. Also, Contingency ends on you if its material component is ever not on your person."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Create Undead|XPHB",
+			"hint": {
+				"Create Undead": "創造不死生物",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Create Undead",
+				"one 150+ GP black onyx stone for each corpse",
+				"You can cast this spell only at night. Choose up to three corpses of Medium or Small Humanoids within range. Each one becomes a {@creature Ghoul|XMM} under your control (see the {@book Monster Manual|XMM} for its stat block).",
+				"As a {@variantrule Bonus Action|XPHB} on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to them). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a particular place. If you issue no commands, the creature takes the {@action Dodge|XPHB} action and moves only to avoid harm. Once given an order, the creature continues to follow the order until its task is complete.",
+				"The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell rather than animating new ones.",
+				"Using a Higher-Level Spell Slot",
+				"If you use a level 7 spell slot, you can animate or reassert control over four {@creature Ghoul|XMM|Ghouls}. If you use a level 8 spell slot, you can animate or reassert control over five {@creature Ghoul|XMM|Ghouls} or two {@creature Ghast|XMM|Ghasts} or {@creature Wight|XMM|Wights}. If you use a level 9 spell slot, you can animate or reassert control over six {@creature Ghoul|XMM|Ghouls}, three {@creature Ghast|XMM|Ghasts} or {@creature Wight|XMM|Wights}, or two {@creature Mummy|XMM|Mummies}. See the {@book Monster Manual|XMM} for these stat blocks."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Disintegrate|XPHB",
+			"hint": {
+				"Disintegrate": "解離術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Disintegrate",
+				"You launch a green ray at a target you can see within range. The target can be a creature, a nonmagical object, or a creation of magical force, such as the wall created by {@spell Wall of Force|XPHB}.",
+				"A creature targeted by this spell makes a Dexterity saving throw. On a failed save, the target takes {@damage 10d6 + 40} Force damage. If this damage reduces it to 0 {@variantrule Hit Points|XPHB}, it and everything nonmagical it is wearing and carrying are disintegrated into gray dust. The target can be revived only by a {@spell True Resurrection|XPHB} or a {@spell Wish|XPHB} spell.",
+				"This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If such a target is Huge or larger, this spell disintegrates a 10-foot-{@variantrule Cube [Area of Effect]|XPHB|Cube} portion of it.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 10d6 + 40|6-9|3d6} for each spell slot level above 6."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Drawmij's Instant Summons|XPHB",
+			"hint": {
+				"Drawmij's Instant Summons": "卓姆吉瞬間召喚"
+			},
+			"s": [
+				"Drawmij's Instant Summons",
+				"a sapphire worth 1,000+ GP",
+				"You touch the sapphire used in the casting and an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an {@condition Invisible|XPHB} mark on that object and invisibly inscribes the object's name on the sapphire. Each time you cast this spell, you must use a different sapphire.",
+				"Thereafter, you can take a {@action Magic|XPHB} action to speak the object's name and crush the sapphire. The object instantly appears in your hand regardless of physical or planar distances, and the spell ends.",
+				"If another creature is holding or carrying the object, crushing the sapphire doesn't transport it, but instead you learn who that creature is and where that creature is currently located."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Eyebite|XPHB",
+			"hint": {
+				"Eyebite": "攝心目光"
+			},
+			"s": [
+				"Eyebite",
+				"For the duration, your eyes become an inky void. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom saving throw or be affected by one of the following effects of your choice for the duration.",
+				"On each of your turns until the spell ends, you can take a {@action Magic|XPHB} action to target another creature but can't target a creature again if it has succeeded on a save against this casting of the spell.",
+				"Asleep",
+				"The target has the {@condition Unconscious|XPHB} condition. It wakes up if it takes any damage or if another creature takes an action to shake it awake.",
+				"Panicked",
+				"The target has the {@condition Frightened|XPHB} condition. On each of its turns, the {@condition Frightened|XPHB} target must take the {@action Dash|XPHB} action and move away from you by the safest and shortest route available. If the target moves to a space at least 60 feet away from you where it can't see you, this effect ends.",
+				"Sickened",
+				"The target has the {@condition Poisoned|XPHB} condition."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Find the Path|XPHB",
+			"hint": {
+				"Find the Path": "尋找捷徑"
+			},
+			"s": [
+				"Find the Path",
+				"a set of divination tools—such as cards or runes—worth 100+ GP",
+				"You magically sense the most direct physical route to a location you name. You must be familiar with the location, and the spell fails if you name a destination on another plane of existence, a moving destination (such as a mobile fortress), or an unspecific destination (such as \"a green dragon's lair\").",
+				"For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. Whenever you face a choice of paths along the way there, you know which path is the most direct."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Flesh to Stone|XPHB",
+			"hint": {
+				"Flesh to Stone": "石化術"
+			},
+			"s": [
+				"Flesh to Stone",
+				"You attempt to turn one creature that you can see within range into stone. The target makes a Constitution saving throw. On a failed save, it has the {@condition Restrained|XPHB} condition for the duration. On a successful save, its {@variantrule Speed|XPHB} is 0 until the start of your next turn. Constructs automatically succeed on the save.",
+				"A {@condition Restrained|XPHB} target makes another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is turned to stone and has the {@condition Petrified|XPHB} condition for the duration. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind.",
+				"If you maintain your {@status Concentration|XPHB} on this spell for the entire possible duration, the target is {@condition Petrified|XPHB} until the condition is ended by {@spell Greater Restoration|XPHB} or similar magic."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Forbiddance|XPHB",
+			"hint": {
+				"Forbiddance": "禁制術"
+			},
+			"s": [
+				"Forbiddance",
+				"ruby dust worth 1,000+ GP",
+				"You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the {@spell Gate|XPHB} spell, to enter the area. The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, the Ethereal Plane, the Feywild, the Shadowfell, or the {@spell Plane Shift|XPHB} spell.",
+				"In addition, the spell damages types of creatures that you choose when you cast it. Choose one or more of the following: Aberrations, Celestials, Elementals, Fey, Fiends, and Undead. When a creature of a chosen type enters the spell's area for the first time on a turn or ends its turn there, the creature takes {@damage 5d10} Radiant or Necrotic damage (your choice when you cast this spell).",
+				"You can designate a password when you cast the spell. A creature that speaks the password as it enters the area takes no damage from the spell.",
+				"The spell's area can't overlap with the area of another Forbiddance spell. If you cast {@spell Forbiddance|XPHB} every day for 30 days in the same location, the spell lasts until it is dispelled, and the Material components are consumed on the last casting."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Globe of Invulnerability|XPHB",
+			"hint": {
+				"Globe of Invulnerability": "法術無效結界",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Globe of Invulnerability",
+				"An immobile, shimmering barrier appears in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} around you and remains for the duration.",
+				"Any spell of level 5 or lower cast from outside the barrier can't affect anything within it. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from areas of effect created by such spells.",
+				"Using a Higher-Level Spell Slot",
+				"The barrier blocks spells of 1 level higher for each spell slot level above 6."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Guards and Wards|XPHB",
+			"hint": {
+				"Guards and Wards": "銅牆鐵壁"
+			},
+			"s": [
+				"Guards and Wards",
+				"a silver rod worth 10+ GP",
+				"You create a ward that protects up to 2,500 square feet of floor space. The warded area can be up to 20 feet tall, and you shape it as one 50-foot square, one hundred 5-foot squares that are contiguous, or twenty-five 10-foot squares that are contiguous.",
+				"When you cast this spell, you can specify individuals that are unaffected by the spell's effects. You can also specify a password that, when spoken aloud within 5 feet of the warded area, makes the speaker immune to its effects.",
+				"The spell creates the effects below within the warded area. {@spell Dispel Magic|XPHB} has no effect on Guards and Wards itself, but each of the following effects can be dispelled. If all four are dispelled, Guards and Wards ends. If you cast the spell every day for 365 days on the same area, the spell thereafter lasts until all its effects are dispelled.",
+				"Corridors",
+				"Fog fills all the warded corridors, making them {@variantrule Heavily Obscured|XPHB}. In addition, at each intersection or branching passage offering a choice of direction, there is a {@chance 50|||Disoriented!|No effect} chance that a creature other than you believes it is going in the opposite direction from the one it chooses.",
+				"Doors",
+				"All doors in the warded area are magically locked, as if sealed by the {@spell Arcane Lock|XPHB} spell. In addition, you can cover up to ten doors with an illusion to make them appear as plain sections of wall.",
+				"Stairs",
+				"Webs fill all stairs in the warded area from top to bottom, as in the {@spell Web|XPHB} spell. These strands regrow in 10 minutes if they are destroyed while Guards and Wards lasts.",
+				"Other Spell Effect",
+				"Place one of the following magical effects within the warded area:",
+				"{@spell Dancing Lights|XPHB} in four corridors, with a simple program that the lights repeat as long as Guards and Wards lasts",
+				"{@spell Magic Mouth|XPHB} in two locations",
+				"{@spell Stinking Cloud|XPHB} in two locations (the vapors return within 10 minutes if dispersed while Guards and Wards lasts)",
+				"{@spell Gust of Wind|XPHB} in one corridor or room (the wind blows continuously while the spell lasts)",
+				"{@spell Suggestion|XPHB} in one 5-foot square; any creature that enters that square receives the suggestion mentally"
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Harm|XPHB",
+			"hint": {
+				"Harm": "傷害術"
+			},
+			"s": [
+				"Harm",
+				"You unleash virulent magic on a creature you can see within range. The target makes a Constitution saving throw. On a failed save, it takes {@damage 14d6} Necrotic damage, and its {@variantrule Hit Points|XPHB|Hit Point} maximum is reduced by an amount equal to the Necrotic damage it took. On a successful save, it takes half as much damage only. This spell can't reduce a target's {@variantrule Hit Points|XPHB|Hit Point} maximum below 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Heal|XPHB",
+			"hint": {
+				"Heal": "治療",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Heal",
+				"Choose a creature that you can see within range. Positive energy washes through the target, restoring 70 {@variantrule Hit Points|XPHB}. This spell also ends the {@condition Blinded|XPHB}, {@condition Deafened|XPHB}, and {@condition Poisoned|XPHB} conditions on the target.",
+				"Using a Higher-Level Spell Slot",
+				"The healing increases by {@scaledice 70|6-9|10} for each spell slot level above 6."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Heroes' Feast|XPHB",
+			"hint": {
+				"Heroes' Feast": "英雄宴"
+			},
+			"s": [
+				"Heroes' Feast",
+				"a gem-encrusted bowl worth 1,000+ GP, which the spell consumes",
+				"You conjure a feast that appears on a surface in an unoccupied 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} next to you. The feast takes 1 hour to consume and disappears at the end of that time, and the beneficial effects don't set in until this hour is over. Up to twelve creatures can partake of the feast.",
+				"A creature that partakes gains several benefits, which last for 24 hours. The creature has {@variantrule Resistance|XPHB} to Poison damage, and it has {@variantrule Immunity|XPHB} to the {@condition Frightened|XPHB} and {@condition Poisoned|XPHB} conditions. Its {@variantrule Hit Points|XPHB|Hit Point} maximum also increases by {@dice 2d10}, and it gains the same number of {@variantrule Hit Points|XPHB}."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Magic Jar|XPHB",
+			"hint": {
+				"Magic Jar": "魔魂壺"
+			},
+			"s": [
+				"Magic Jar",
+				"a gem, crystal, or reliquary worth 500+ GP",
+				"Your body falls into a catatonic state as your soul leaves it and enters the container you used for the spell's Material component. While your soul inhabits the container, you are aware of your surroundings as if you were in the container's space. You can't move or take Reactions. The only action you can take is to project your soul up to 100 feet out of the container, either returning to your living body (and ending the spell) or attempting to possess a Humanoid's body.",
+				"You can attempt to possess any Humanoid within 100 feet of you that you can see (creatures warded by a {@spell Protection from Evil and Good|XPHB} or {@spell Magic Circle|XPHB} spell can't be possessed). The target makes a Charisma saving throw. On a failed save, your soul enters the target's body, and the target's soul becomes trapped in the container. On a successful save, the target resists your efforts to possess it, and you can't attempt to possess it again for 24 hours.",
+				"Once you possess a creature's body, you control it. Your {@variantrule Hit Points|XPHB}, {@variantrule Hit Point Dice|XPHB}, Strength, Dexterity, Constitution, {@variantrule Speed|XPHB}, and senses are replaced by the creature's. You otherwise keep your game statistics.",
+				"Meanwhile, the possessed creature's soul can perceive from the container using its own senses, but it can't move and it is {@condition Incapacitated|XPHB}.",
+				"While possessing a body, you can take a {@action Magic|XPHB} action to return from the host body to the container if it is within 100 feet of you, returning the host creature's soul to its body. If the host body dies while you're in it, the creature dies, and you make a Charisma saving throw against your own spellcasting DC. On a success, you return to the container if it is within 100 feet of you. Otherwise, you die.",
+				"If the container is destroyed or the spell ends, your soul returns to your body. If your body is more than 100 feet away from you or if your body is dead, you die. If another creature's soul is in the container when it is destroyed, the creature's soul returns to its body if the body is alive and within 100 feet. Otherwise, that creature dies.",
+				"When the spell ends, the container is destroyed."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Mass Suggestion|XPHB",
+			"hint": {
+				"Mass Suggestion": "群體暗示術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Mass Suggestion",
+				"You suggest a course of activity—described in no more than 25 words—to twelve or fewer creatures you can see within range that can hear and understand you. The suggestion must sound achievable and not involve anything that would obviously deal damage to any of the targets or their allies. For example, you could say, \"Walk to the village down that road, and help the villagers there harvest crops until sunset.\" Or you could say, \"Now is not the time for violence. Drop your weapons, and dance! Stop in an hour.\"",
+				"Each target must succeed on a Wisdom saving throw or have the {@condition Charmed|XPHB} condition for the duration or until you or your allies deal damage to the target. Each {@condition Charmed|XPHB} target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for a target upon completing it.",
+				"Using a Higher-Level Spell Slot",
+				"The duration is longer with a spell slot of level 7 (10 days), 8 (30 days), or 9 (366 days)."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Move Earth|XPHB",
+			"hint": {
+				"Move Earth": "地動術"
+			},
+			"s": [
+				"Move Earth",
+				"Choose an area of terrain no larger than 40 feet on a side within range. You can reshape dirt, sand, or clay in the area in any manner you choose for the duration. You can raise or lower the area's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 40-foot square, you can create a pillar up to 20 feet high, raise or lower the square's elevation by up to 20 feet, dig a trench up to 20 feet deep, and so on. It takes 10 minutes for these changes to complete. Because the terrain's transformation occurs slowly, creatures in the area can't usually be trapped or injured by the ground's movement.",
+				"At the end of every 10 minutes you spend {@status Concentration|XPHB|Concentrating} on the spell, you can choose a new area of terrain to affect within range.",
+				"This spell can't manipulate natural stone or stone construction. Rocks and structures shift to accommodate the new terrain. If the way you shape the terrain would make a structure unstable, it might collapse.",
+				"Similarly, this spell doesn't directly affect plant growth. The moved earth carries any plants along with it."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Otiluke's Freezing Sphere|XPHB",
+			"hint": {
+				"Otiluke's Freezing Sphere": "歐提路克冰凍法球",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Otiluke's Freezing Sphere",
+				"A frigid globe streaks from you to a point of your choice within range, where it explodes in a 60-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere}. Each creature in that area makes a Constitution saving throw, taking {@damage 10d6} Cold damage on failed save or half as much damage on a successful one.",
+				"If the globe strikes a body of water, it freezes the water to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice and have the {@condition Restrained|XPHB} condition. A trapped creature can take an action to make a Strength ({@skill Athletics|XPHB}) check against your spell save DC to break free.",
+				"You can refrain from firing the globe after completing the spell's casting. If you do so, a globe about the size of a sling bullet, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe (to a range of 40 feet) or hurl it with a sling (to the sling's normal range). It shatters on impact, with the same effect as a normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 10d6|6-9|1d6} for each spell slot level above 6."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Otto's Irresistible Dance|XPHB",
+			"hint": {
+				"Otto's Irresistible Dance": "奧圖狂舞術"
+			},
+			"s": [
+				"Otto's Irresistible Dance",
+				"One creature that you can see within range must make a Wisdom saving throw. On a successful save, the target dances comically until the end of its next turn, during which it must spend all its movement to dance in place.",
+				"On a failed save, the target has the {@condition Charmed|XPHB} condition for the duration. While {@condition Charmed|XPHB}, the target dances comically, must use all its movement to dance in place, and has {@variantrule Disadvantage|XPHB} on Dexterity saving throws and attack rolls, and other creatures have {@variantrule Advantage|XPHB} on attack rolls against it. On each of its turns, the target can take an action to collect itself and repeat the save, ending the spell on itself on a success."
+			]
+		}
+	]
+}
