@@ -1566,16 +1566,20 @@ globalThis.Renderer = function () {
 
 	this._renderAbilityDc = function (entry, textStack, meta, options) {
 		textStack[0] += `<div class="ve-rd__wrp-centered-ability"><b>`;
-		this._recursiveRender(entry.name, textStack, meta);
-		if (options.styleHint === "classic") textStack[0] += ` save DC</b> = 8 + your proficiency bonus + your ${Parser.attrChooseToFull(entry.attributes)}</div>`;
-		else textStack[0] += ` save DC</b> = 8 + ${Parser.attrChooseToFull(entry.attributes)} + Proficiency Bonus</div>`;
+		this._recursiveRender(Renderer.__zhAbilityName(entry.name), textStack, meta);
+		textStack[0] += `豁免 DC</b> = 8 + ${Renderer.__zhAttr(entry.attributes)} + 熟練加值</div>`;
 	};
 
 	this._renderAbilityAttackMod = function (entry, textStack, meta, options) {
 		textStack[0] += `<div class="ve-rd__wrp-centered-ability"><b>`;
-		this._recursiveRender(entry.name, textStack, meta);
-		if (options.styleHint === "classic") textStack[0] += ` attack modifier</b> = your proficiency bonus + your ${Parser.attrChooseToFull(entry.attributes)}</div>`;
-		else textStack[0] += ` attack modifier</b> = ${Parser.attrChooseToFull(entry.attributes)} + Proficiency Bonus</div>`;
+		this._recursiveRender(Renderer.__zhAbilityName(entry.name), textStack, meta);
+		textStack[0] += `攻擊調整值</b> = ${Renderer.__zhAttr(entry.attributes)} + 熟練加值</div>`;
+	};
+	Renderer.__zhAbilityName = n => ({Spell: "法術", Maneuver: "戰技", Ki: "氣", Discipline: "靈能訓練", "Arcane Shot": "奧術射擊", Focus: "功力", Psionic: "靈能"})[n] || n;
+	Renderer.__zhAttr = atts => {
+		const M = {str: "力量", dex: "敏捷", con: "體質", int: "智力", wis: "感知", cha: "魅力", spellcasting: "施法屬性"};
+		const names = atts.map(a => M[a] || Parser.attAbvToFull(a));
+		return names.length === 1 ? `${names[0]}調整值` : `${names.join("或")}調整值（自選）`;
 	};
 
 	this._renderAbilityGeneric = function (entry, textStack, meta, options) {
@@ -6905,8 +6909,8 @@ Renderer.class = class {
 		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
 		return styleHint === "classic"
-			? `${clsHd.number * clsHd.faces} + your Constitution modifier`
-			: `${clsHd.number * clsHd.faces} + Con. modifier`;
+			? `${clsHd.number * clsHd.faces} + 你的體質調整值`
+			: `${clsHd.number * clsHd.faces} + 體質調整值`;
 	}
 
 	/**
@@ -6920,8 +6924,8 @@ Renderer.class = class {
 		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
 		return styleHint === "classic"
-			? `${Renderer.get().render(Renderer.class.getHitDiceEntry(clsHd, {styleHint}))} (or ${((clsHd.number * clsHd.faces) / 2 + 1)}) + your Constitution modifier per ${className} level after 1st`
-			: `${Renderer.get().render(Renderer.class.getHitDiceEntry(clsHd, {styleHint}))} + your Con. modifier, or, ${((clsHd.number * clsHd.faces) / 2 + 1)} + your Con. modifier`;
+			? `1 級之後每個${className}等級 ${Renderer.get().render(Renderer.class.getHitDiceEntry(clsHd, {styleHint}))}（或 ${((clsHd.number * clsHd.faces) / 2 + 1)}）+ 你的體質調整值`
+			: `${Renderer.get().render(Renderer.class.getHitDiceEntry(clsHd, {styleHint}))} + 你的體質調整值，或 ${((clsHd.number * clsHd.faces) / 2 + 1)} + 你的體質調整值`;
 	}
 
 	/* -------------------------------------------- */
@@ -6937,32 +6941,21 @@ Renderer.class = class {
 			.segregate(it => ["light", "medium", "heavy"].includes(it));
 
 		const ptsArmor = profsArmor
-			.map((a, i, arr) => Renderer.get().render(`{@filter ${styleHint === "classic" ? a : a.toTitleCase()}${styleHint === "classic" || i === arr.length - 1 ? " armor" : ""}|items|type=${a} armor}`));
+			.map(a => Renderer.get().render(`{@filter ${({light: "輕甲", medium: "中甲", heavy: "重甲"})[a]}|items|type=${a} armor}`));
 
 		const ptsOther = profsOther
 			.map(a => {
 				if (a.full) return Renderer.get().render(a.full);
-				if (a === "shield") {
-					if (styleHint === "classic") Renderer.get().render(`{@item shield|PHB|shields}`);
-					return Renderer.get().render(`{@item shield|XPHB|Shields}`);
-				}
+				if (a === "shield") return Renderer.get().render(`{@item shield|${styleHint === "classic" ? "PHB" : "XPHB"}|盾牌}`);
 				return Renderer.get().render(a);
 			});
 
-		if (styleHint === "classic") {
-			return [
-				...ptsArmor,
-				...ptsOther,
-			]
-				.join(", ");
-		}
-
 		return [
-			ptsArmor.joinConjunct(", ", " and "),
+			...ptsArmor,
 			...ptsOther,
 		]
 			.filter(Boolean)
-			.joinConjunct(", ", " and ");
+			.joinConjunct("、", "與", true);
 	}
 
 	/**
@@ -6976,11 +6969,11 @@ Renderer.class = class {
 			.segregate(it => ["simple", "martial"].includes(it));
 
 		const ptsSimpleMartial = profsSimpleMartial
-			.map((w, i, arr) => Renderer.get().render(`{@filter ${styleHint === "classic" ? w : w.toTitleCase()}${styleHint === "classic" || i === arr.length - 1 ? " weapons" : ""}|items|type=${w} weapon}`));
+			.map(w => Renderer.get().render(`{@filter ${({simple: "簡易武器", martial: "軍用武器"})[w]}|items|type=${w} weapon}`));
 
 		const ptsOther = profsOther
 			.map(w => {
-				if (w.optional) return `<span class="ve-help ve-help--hover" title="Optional Proficiency">${Renderer.get().render(w.proficiency)}</span>`;
+				if (w.optional) return `<span class="ve-help ve-help--hover" title="選用熟練">${Renderer.get().render(({firearms: "火器"})[w.proficiency] || w.proficiency)}</span>`;
 				return Renderer.get().render(w);
 			});
 
@@ -6989,7 +6982,7 @@ Renderer.class = class {
 			...ptsOther,
 		];
 
-		return styleHint === "classic" ? pts.join(", ") : pts.joinConjunct(", ", " and ");
+		return pts.joinConjunct("、", "與", true);
 	}
 
 	/**
@@ -6998,7 +6991,7 @@ Renderer.class = class {
 	 */
 	static getRenderedToolProfs (toolProfs, {styleHint = null} = {}) {
 		const pts = toolProfs.map(it => Renderer.get().render(it));
-		return styleHint === "classic" ? pts.join(", ") : pts.joinConjunct(", ", " and ");
+		return pts.joinConjunct("、", "與", true);
 	}
 
 	/**
@@ -7008,7 +7001,8 @@ Renderer.class = class {
 	static getRenderedSkillProfs (skills, {styleHint = null} = {}) {
 		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
-		return `${Parser.skillProficienciesToFull(skills, {styleHint}).uppercaseFirst()}.`;
+		const __s = Parser.skillProficienciesToFull(skills, {styleHint});
+		return /[\u3400-\u9fff]/.test(__s) ? __s : `${__s.uppercaseFirst()}.`;
 	}
 
 	/* -------------------------------------------- */
@@ -7034,9 +7028,10 @@ Renderer.class = class {
 		renderer ||= Renderer.get();
 		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
-		return `<div><strong>Hit Point Die:</strong> ${renderer.render(Renderer.class.getHitDiceEntry(cls.hd, {styleHint}))} per ${cls.name} level</div>
-		<div><strong>Hit Points at Level 1:</strong> ${Renderer.class.getHitPointsAtFirstLevel(cls.hd, {styleHint})}</div>
-		<div><strong>Hit Points per additional ${cls.name} Level:</strong> ${Renderer.class.getHitPointsAtHigherLevels(cls.name, cls.hd, {styleHint})}</div>`;
+		const __clsZh = cls.name_zh || cls.name;
+		return `<div><strong>生命骰：</strong> 每個${__clsZh}等級 ${renderer.render(Renderer.class.getHitDiceEntry(cls.hd, {styleHint}))}</div>
+		<div><strong>1 級生命值：</strong> ${Renderer.class.getHitPointsAtFirstLevel(cls.hd, {styleHint})}</div>
+		<div><strong>每增加一個${__clsZh}等級的生命值：</strong> ${Renderer.class.getHitPointsAtHigherLevels(__clsZh, cls.hd, {styleHint})}</div>`;
 	}
 
 	static getHtmlPtSavingThrows (cls) {
@@ -7091,9 +7086,9 @@ Renderer.class = class {
 
 	static _getHtmlPtStartingEquipment_default ({equip, renderer}) {
 		return [
-			equip.additionalFromBackground ? "<p>You start with the following items, plus anything provided by your background.</p>" : "",
+			equip.additionalFromBackground ? "<p>你起始擁有下列物品，外加背景提供的任何物品。</p>" : "",
 			equip.default && equip.default.length ? `<ul class="ve-pl-4"><li>${equip.default.map(it => renderer.render(it)).join("</li><li>")}</ul>` : "",
-			equip.goldAlternative != null ? `<p>Alternatively, you may start with ${renderer.render(equip.goldAlternative)} gp to buy your own equipment.</p>` : "",
+			equip.goldAlternative != null ? `<p>或者，你可以改為起始擁有 ${renderer.render(equip.goldAlternative)} gp，自行購買裝備。</p>` : "",
 		]
 			.filter(Boolean)
 			.join("");

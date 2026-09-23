@@ -97,13 +97,13 @@ class _RenderClassesSidebarImplBase {
 	_getPtRequirements ({renderer, requirements, intro = null}) {
 		if (!requirements) return "";
 
-		const renderPart = (obj, joiner = ", ") => Object.keys(obj).filter(k => Parser.ABIL_ABVS.includes(k)).sort(SortUtil.ascSortAtts).map(k => `${Parser.attAbvToFull(k)} ${obj[k]}`).join(joiner);
-		const orPart = requirements.or ? requirements.or.map(obj => renderPart(obj, " or ")).join("; ") : "";
+		const renderPart = (obj, joiner = "、") => Object.keys(obj).filter(k => Parser.ABIL_ABVS.includes(k)).sort(SortUtil.ascSortAtts).map(k => `${({str: "力量", dex: "敏捷", con: "體質", int: "智力", wis: "感知", cha: "魅力"})[k] || Parser.attAbvToFull(k)} ${obj[k]}`).join(joiner);
+		const orPart = requirements.or ? requirements.or.map(obj => renderPart(obj, "或")).join("；") : "";
 		const basePart = renderPart(requirements);
-		const abilityPart = [orPart, basePart].filter(Boolean).join("; ");
+		const abilityPart = [orPart, basePart].filter(Boolean).join("；");
 
 		const allEntries = [
-			abilityPart ? `{@b Ability Score Minimum:} ${abilityPart}` : null,
+			abilityPart ? `{@b 屬性值下限：} ${abilityPart}` : null,
 			...requirements.entries || [],
 		]
 			.filter(Boolean);
@@ -140,22 +140,22 @@ class _RenderClassesSidebarImplBase {
 		const {multiclassing: mc} = cls;
 
 		const htmlMCcPrereqPreText = mc.requirements || mc.requirementsSpecial
-			? `<div>To qualify for a new class, you must meet the ${mc.requirementsSpecial ? "" : "ability score "}prerequisites for both your current class and your new one.</div>`
+			? `<div>要兼職一個新職業，你必須同時符合目前職業與新職業的${mc.requirementsSpecial ? "" : "屬性值"}先決條件。</div>`
 			: "";
 
 		const ptMcPrereq = cls.primaryAbility
-			? `To qualify for a new class, you must have a score of at least 13 in the primary ability of the new class and your current classes.`
+			? `要兼職一個新職業，你在新職業與目前各職業的主要屬性上都必須至少有 13 點。`
 			: this._getPtRequirements({renderer, requirements: mc.requirements});
 
 		const ptMcPrereqSpecial = mc.requirementsSpecial
 			? `<div>
 				${htmlMCcPrereqPreText}
-				<b>${htmlMCcPrereqPreText ? "Other " : ""}Prerequisites:</b> ${renderer.render(mc.requirementsSpecial || "")}
+				<b>${htmlMCcPrereqPreText ? "其他" : ""}先決條件：</b> ${renderer.render(mc.requirementsSpecial || "")}
 			</div>`
 			: "";
 
 		const ptMcProfsIntro = mc.requirements && mc.proficienciesGained
-			? `<div>When you gain a level in a class other than your first, you gain only some of that class's starting proficiencies.</div>`
+			? `<div>當你在初始職業以外的職業獲得等級時，只會獲得該職業部分的起始熟練。</div>`
 			: "";
 
 		const ptMcProfsArmor = mc.proficienciesGained?.armor

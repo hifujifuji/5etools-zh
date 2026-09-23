@@ -2284,7 +2284,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 
 		// Add a placeholder feature to display when no subclasses are active
 		const trSubclassFeature = ee`<tr class="cls-main__sc-feature" data-subclass-none-message="true"></tr>`
-			.html(`<td colspan="6">${Renderer.get().withDepthTracker([], ({renderer}) => renderer.render({type: "entries", entries: [{name: `{@note No Subclass Selected}`, type: "entries", entries: [`{@note <span class="ve-clickable ve-roller" data-jump-select-a-subclass="true">Select a subclass</span> to view its feature(s) here.}`]}]}))}</td>`)
+			.html(`<td colspan="6">${Renderer.get().withDepthTracker([], ({renderer}) => renderer.render({type: "entries", entries: [{name: `{@note No Subclass Selected}`, type: "entries", entries: [`{@note <span class="ve-clickable ve-roller" data-jump-select-a-subclass="true">選擇一個子職業</span>以在此檢視其特性。}`]}]}))}</td>`)
 			.appendTo(wrpContent);
 
 		await cls.subclasses.pSerialAwaitMap(async sc => {

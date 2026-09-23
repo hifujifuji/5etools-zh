@@ -298,7 +298,7 @@ Parser.getSpeedString = (ent, {isMetric = false, isSkipZeroWalk = false, isLongF
 
 		if (ent.speed.choose && !ent.speed.hidden?.includes("choose")) {
 			joiner = "；";
-			stack.push(`${ent.speed.choose.from.sort().map(prop => Parser._getSpeedString_getSpeedName({prop, styleHint}).trim()).joinConjunct("、", "或")} ${ent.speed.choose.amount} ${unit}${ent.speed.choose.note?.startsWith("（") ? ent.speed.choose.note : ent.speed.choose.note ? ` ${ent.speed.choose.note}` : ""}`);
+			stack.push(`${ent.speed.choose.from.sort().map(prop => Parser._getSpeedString_getSpeedName({prop, styleHint}).trim()).joinConjunct("、", "或", true)} ${ent.speed.choose.amount} ${unit}${ent.speed.choose.note?.startsWith("（") ? ent.speed.choose.note : ent.speed.choose.note ? ` ${ent.speed.choose.note}` : ""}`);
 			if (0) stack.push(`${ent.speed.choose.amount} ${unit}${ent.speed.choose.note ? ` ${ent.speed.choose.note}` : ""}`);
 		}
 
@@ -1134,12 +1134,12 @@ Parser.skillProficienciesToFull = function (skillProficiencies, {styleHint = nul
 				const count = chObj.count ?? 1;
 				if (chObj.from.length === 18) {
 					ptChoose = styleHint === "classic"
-						? `choose any ${count === 1 ? "skill" : chObj.count}`
-						: Renderer.get().render(`{@i Choose any ${chObj.count} ${count === 1 ? "skill" : "skills"}} (see {@book chapter 1|XPHB|1|Skill List})`);
+						? `任選 ${count} 項技能`
+						: Renderer.get().render(`{@i 任選 ${count} 項技能}（見{@book 第 1 章|XPHB|1|Skill List}）`);
 				} else {
 					ptChoose = styleHint === "classic"
-						? `choose ${count} from ${chObj.from.map(it => getRenderedSkill(it)).joinConjunct(", ", " and ")}`
-						: Renderer.get().render(`{@i Choose ${count}:} ${chObj.from.map(it => getRenderedSkill(it)).joinConjunct(", ", " or ")}`);
+						? `從${chObj.from.map(it => getRenderedSkill(it)).joinConjunct("、", "與", true)}中選擇 ${count} 項`
+						: Renderer.get().render(`{@i 選擇 ${count} 項：}${chObj.from.map(it => getRenderedSkill(it)).joinConjunct("、", "或", true)}`);
 				}
 			}
 
