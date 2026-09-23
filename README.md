@@ -50,3 +50,15 @@ node scripts/extract-hazmole.mjs /tmp/hazmole
 ```
 
 建置完會在 `.cache/report.json` 留下統計與無法解析的標籤清單。
+
+## 發佈到 GitHub Pages
+
+1. 在 GitHub 建立空的 repo（例如 `5etools-zh`，不要勾選 README）。
+2. 設定 remote 並推上原始碼：
+   `git remote add origin https://github.com/<帳號>/5etools-zh.git && git push -u origin main`
+3. 建置並部署：`node scripts/build.mjs && node scripts/deploy.mjs`
+   （把 `dist/` 推到 `gh-pages` 分支）
+4. GitHub repo → Settings → Pages → Source 選「Deploy from a branch」，分支選 `gh-pages` / `(root)`。
+5. 約一兩分鐘後可在 `https://<帳號>.github.io/5etools-zh/` 瀏覽。
+
+之後更新翻譯只要重複第 3 步。
