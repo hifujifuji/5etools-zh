@@ -3117,7 +3117,33 @@ Renderer.getAbilityData._doRenderOuter = function (abObj) {
 	}
 };
 
+Renderer._zhAbilityText = s => {
+	const N = {two: "兩", three: "三", four: "四", five: "五", six: "六", one: "一", any: "任意"};
+	const A = {Strength: "力量", Dexterity: "敏捷", Constitution: "體質", Intelligence: "智力", Wisdom: "感知", Charisma: "魅力"};
+	return String(s)
+		.replace(/Choose one of: /g, "擇一：")
+		.replace(/[Cc]hoose (one|two|three|four|five|six) different ([+-]\d)/g, (m, n, b) => `任選${N[n]}項不同屬性各 ${b}`)
+		.replace(/(^|[^\w])(one|two|three|four|five|six) different ([+-]\d)/g, (m, p, n, b) => `${p}任選${N[n]}項不同屬性各 ${b}`)
+		.replace(/[Cc]hoose any other (one|two|three|four|five|six) unique ([+-]\d)/g, (m, n, b) => `另選${N[n]}項不同屬性各 ${b}`)
+		.replace(/[Cc]hoose any (one|two|three|four|five|six) unique ([+-]\d)/g, (m, n, b) => `任選${N[n]}項不同屬性各 ${b}`)
+		.replace(/[Cc]hoose any other ([+-]\d)/g, "另選一項 $1")
+		.replace(/[Cc]hoose any ([+-]\d)/g, "任選一項 $1")
+		.replace(/\bany other ([+-]\d)/g, "另選一項 $1")
+		.replace(/\bany ([+-]\d)/g, "任選一項 $1")
+		.replace(/one other ability to increase by (\d)/g, "另一項屬性提升 $1")
+		.replace(/one ability to increase by (\d)/g, "一項屬性提升 $1")
+		.replace(/one other ability to decrease by (\d)/g, "另一項屬性降低 $1")
+		.replace(/one ability to decrease by (\d)/g, "一項屬性降低 $1")
+		.replace(/From (.+?) choose /g, (m, x) => `從${x}中選擇 `)
+		.replace(/\bChoose unique /g, "選擇不同的 ")
+		.replace(/\bChoose /g, "選擇 ")
+		.replace(/\b(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma)\b/g, m => A[m])
+		.replace(/, and |, | and /g, "、")
+		.replace(/ or /g, "或")
+		.replace(/; /g, "；");
+};
 Renderer._AbilityData = function ({asText, asTextShort, asCollection, areNegative} = {}) {
+	if (asText) asText = Renderer._zhAbilityText(asText);
 	this.asText = asText || "";
 	this.asTextShort = asTextShort || "";
 	this.asCollection = asCollection || [];
