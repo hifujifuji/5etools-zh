@@ -1,0 +1,74 @@
+{
+	"batch": "bg-AAG",
+	"items": [
+		{
+			"prop": "background",
+			"key": "Astral Drifter|AAG",
+			"hint": {
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Longevity": "長壽"
+			},
+			"s": [
+				"Astral Drifter",
+				"Skill Proficiencies:",
+				"{@skill Insight}, {@skill Religion}",
+				"Languages:",
+				"Two of your choice ({@language Celestial} or {@language Gith|MM} recommended)",
+				"Equipment:",
+				"A set of {@item traveler's clothes|PHB}, a diary, an {@item ink pen|PHB}, a {@item Ink (1-ounce bottle)|PHB|bottle of ink}, and a {@item pouch|phb} containing 10 gp",
+				"Longevity",
+				"You are {@dice 20d6} years older than you look, because you have spent that much time in the Astral Sea without aging.",
+				"Feature: Divine Contact",
+				"You gain the {@feat Magic Initiate||Magic Initiate feat} from the {@book Player's Handbook|PHB} and must choose cleric for the feat.",
+				"In the Astral Sea, you crossed paths with a wandering deity. The encounter was brief and nonviolent, yet it made a lasting impression on you. This deity saw fit to share one secret or obscure bit of cosmic lore with you. Work with your DM to determine the details of this knowledge and its impact on the campaign.",
+				"Roll on the Divine Contact table to determine which deity you encountered, or work with your DM to identify a more suitable choice.",
+				"Divine Contact",
+				"d10",
+				"Wandering Deity",
+				"Corellon, god of art and magic (chaotic good)",
+				"Tymora, god of good fortune (chaotic good)",
+				"Fharlanghn, god of horizons and travel (neutral good)",
+				"Istus, god of fate and destiny (neutral)",
+				"Nuada, god of war and warriors (neutral)",
+				"Zivilyn, god of wisdom (neutral)",
+				"Arawn, god of life and death (neutral evil)",
+				"Hecate, god of magic and moons (chaotic evil)",
+				"Celestian, god of stars and wanderers (neutral)",
+				"Ptah, god of knowledge and secrets (lawful neutral)"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Wildspacer|AAG",
+			"hint": {
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備："
+			},
+			"s": [
+				"Wildspacer",
+				"Skill Proficiencies:",
+				"{@skill Athletics}, {@skill Survival}",
+				"Tool Proficiencies:",
+				"{@item Navigator's tools|phb}, {@filter vehicles (space)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (space)}",
+				"Equipment:",
+				"A belaying pin ({@item club|phb}), a set of {@item traveler's clothes|PHB}, a {@item grappling hook|PHB}, {@item Hempen Rope (50 feet)|PHB|50 feet of hempen rope}, and a {@item pouch|phb} containing 10 gp",
+				"Close Encounter",
+				"You had a harrowing encounter with one of Wildspace's many terrors. You escaped with your life, but the encounter left you with a scar or two, or perhaps a recurring nightmare. Roll on the Close Encounter table to determine which creature nearly got the best of you. Creatures marked with an asterisk appear in {@book Boo's Astral Menagerie|BAM}; the others are described in the {@book Monster Manual|MM}.",
+				"Close Encounter",
+				"d10",
+				"Creature",
+				"{@creature Cosmic horror|BAM}*",
+				"{@creature Feyr|BAM}*",
+				"{@filter Lunar dragon|bestiary|source=BAM|search=lunar dragon}*",
+				"{@creature Neh-thalggu|BAM}*",
+				"{@creature Neogi|MPMM}*",
+				"{@creature Space clown|BAM}*",
+				"{@creature Vampirate|BAM}*",
+				"{@creature Void scavver|BAM}*",
+				"Feature: Wildspace Adaptation",
+				"You gain the {@feat Tough||Tough feat} from the {@book Player's Handbook|PHB}. In addition, you learned how to adapt to zero gravity. Being weightless doesn't give you disadvantage on any of your melee attack rolls (see \"{@book Weightlessness|AAG|2|Weightlessness}\" in {@book chapter 2|AAG|2})."
+			]
+		}
+	]
+}

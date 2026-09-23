@@ -7,6 +7,10 @@ export const RC = {
 	"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray.": DV(60),
 	"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.": DV(120),
 	"You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.": DV(120),
+	"Suggested Characteristics": "建議特徵", "Personality Trait": "個性特徵", "Ideal": "理想", "Bond": "牽絆", "Flaw": "缺點",
+	"Skill Proficiencies:": "技能熟練：", "Tool Proficiencies:": "工具熟練：", "Languages:": "語言：", "Equipment:": "裝備：", "Feature:": "特性：",
+	"d4": "d4", "d6": "d6", "d8": "d8", "d10": "d10", "d12": "d12", "d20": "d20",
+	"One of your choice": "一種自選語言", "Two of your choice": "兩種自選語言", "Any one of your choice": "任一種自選語言",
 	"Age": "年齡", "Size": "體型", "Alignment": "陣營", "Languages": "語言", "Speed": "速度", "Darkvision": "黑暗視覺",
 	"Your size is Medium.": "你的體型為中型。",
 	"Your size is Small.": "你的體型為小型。",
@@ -73,4 +77,29 @@ export const RN = {
 	Goliath: "歌利亞", Harengon: "兔人", Hobgoblin: "大哥布林", Kenku: "天狗", Kobold: "狗頭人", Lizardfolk: "蜥蜴人", Minotaur: "米諾陶", Orc: "獸人",
 	Satyr: "薩特羊人", "Sea Elf": "海精靈", "Shadar-Kai": "沙達凱", Shifter: "變身者", Tabaxi: "斑貓人", Tortle: "龜人", Triton: "梭螺魚人", "Yuan-Ti": "蛇人",
 	"Astral Elf": "星界精靈", Autognome: "自動地侏", Giff: "吉夫", Hadozee: "哈多齊", Plasmoid: "漿質體", "Thri-kreen": "斯里克林螳螂人", Kalashtar: "卡拉什塔", Warforged: "機關人", Khoravar: "柯拉瓦", Aetherborn: "以太生", Vedalken: "維多肯", Dhampir: "半吸血鬼", Hexblood: "咒血者", Reborn: "重生者", Kor: "寇族", Merfolk: "人魚", Vampire: "吸血鬼",
+};
+
+// 背景等的公式化字串：技能清單、屬性清單、「Choose A or B」裝備
+const ABL = {Strength: "力量", Dexterity: "敏捷", Constitution: "體質", Intelligence: "智力", Wisdom: "感知", Charisma: "魅力"};
+const LABELS = {"Tool Proficiencies:": "工具熟練：", "Tool Proficiency:": "工具熟練：", "Skill Proficiencies:": "技能熟練：", "Equipment:": "裝備：", "Feat:": "專長：", "Ability Scores:": "屬性值：", "Languages:": "語言：", "Feature:": "特性："};
+export const RULE = s => {
+	if (LABELS[s]) return LABELS[s];
+	if (/^(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma)(, (Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma))+$/.test(s)) return s.split(", ").map(a => ABL[a]).join("、");
+	if (/^(\{@skill [^}]+\})((, |,? and )\{@skill [^}]+\})+$/.test(s)) return s.replace(/,? and /g, "、").replace(/, /g, "、");
+	if (/^Choose A or B: /.test(s)) {
+		let t = s
+			.replace(/^Choose A or B: /, "選擇 A 或 B：")
+			.replace(/ \((\d+) days' worth\)/g, "（$1 天份）")
+			.replace(/ \((\d+) flasks?\)/g, "（$1 瓶）")
+			.replace(/ \((\d+) sheets?\)/g, "（$1 張）")
+			.replace(/ \((\d+) feet\)/g, "（$1 呎）")
+			.replace(/ \(same as above\)/g, "（同上）")
+			.replace(/ \((\{@item [^}]+\}) or (\{@item [^}]+\})\)/g, "（$1或$2）")
+			.replace(/\b2 Daggers\b/g, "2 把匕首")
+			.replace(/; or \(B\) /g, "；或 (B) ")
+			.replace(/, /g, "、")
+			.replace(/ (\d+ GP)/g, " $1");
+		return /[a-z]{3,} [a-z]{3,}/i.test(t.replace(/\{@[^}]+\}/g, "")) ? null : t;
+	}
+	return null;
 };

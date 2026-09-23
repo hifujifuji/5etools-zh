@@ -1,0 +1,460 @@
+{
+	"batch": "bgd-PHB",
+	"items": [
+		{
+			"prop": "background",
+			"key": "Acolyte|PHB",
+			"hint": {
+				"Acolyte": "侍僧",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Acolyte",
+				"Skill Proficiencies:",
+				"{@skill Insight||察言觀色}、{@skill Religion||宗教}",
+				"Languages:",
+				"Equipment:",
+				"一個{@item Holy Symbol|phb|聖徽}（一份當你成為教士時獲得的禮物）、一本禱經或轉經輪、5支焚香、祭祀服、一套{@item Common Clothes|phb|尋常服裝}、和一個裝有15金幣的尋常{@item Pouch|phb|囊袋}",
+				"Feature: Shelter of the Faithful",
+				"As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.",
+				"You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Charlatan|PHB",
+			"hint": {
+				"Charlatan": "詐欺師",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Favorite Schemes": "偏好騙術",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Charlatan",
+				"Skill Proficiencies:",
+				"{@skill Deception||欺瞞}, {@skill Sleight of Hand||手上把戲}",
+				"Tool Proficiencies:",
+				"{@item Disguise Kit|phb|易容工具組}, {@item Forgery Kit|phb|偽造工具組}",
+				"Equipment:",
+				"一套{@item Fine Clothes|phb|高級服裝}、一套{@item Disguise Kit|phb|易容工具組}、你自選的的行騙工具（十瓶裝滿各色液體的塞口瓶、一組灌鉛的骰子、一套有標記的紙牌、或一枚虛構公爵的璽戒）、和一個裝有15金幣的纏腰{@item Pouch|phb|囊袋}",
+				"Feature: False Identity",
+				"You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona. Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy.",
+				"Favorite Schemes",
+				"d6",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Criminal|PHB",
+			"hint": {
+				"Criminal": "罪犯",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Specialty": "特色",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Criminal",
+				"Skill Proficiencies:",
+				"{@skill Deception||欺瞞}, {@skill Stealth||隱匿}",
+				"Tool Proficiencies:",
+				"一種{@filter 遊戲套組|items|miscellaneous=mundane|type=gaming set}、{@item Thieves' Tools|phb|盜賊工具}",
+				"Equipment:",
+				"一根{@item Crowbar|phb|撬棍}、一套包含兜帽的暗色{@item Common Clothes|phb|尋常服裝}、和一個裝有15金幣的纏腰{@item Pouch|phb|囊袋}",
+				"Feature: Criminal Contact",
+				"You have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you.",
+				"Specialty",
+				"d8",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Custom Background|PHB",
+			"hint": {
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Custom Background",
+				"Skill Proficiencies:",
+				"Two of your choice",
+				"Languages and Tool Proficiencies:",
+				"Two of your choice",
+				"Equipment:",
+				"The equipment package from any background",
+				"Feature: Choose a Feature",
+				"Choose a feature from any background.",
+				"Suggested Characteristics",
+				"Use the suggested characteristics from any background.",
+				"{@note See the section on {@book Customizing a Background|PHB|4|Customizing a Background} in the {@book Player's Handbook|PHB} for more information.}"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Entertainer|PHB",
+			"hint": {
+				"Entertainer": "藝人",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Specialty": "特色",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Entertainer",
+				"Skill Proficiencies:",
+				"{@skill Acrobatics||特技}, {@skill Performance||表演}",
+				"Tool Proficiencies:",
+				"{@item Disguise Kit|phb|易容工具組}、一種{@filter 樂器|items|miscellaneous=mundane|type=instrument}",
+				"Equipment:",
+				"一件{@filter 樂器|items|miscellaneous=mundane|type=instrument}（自選一種）、一個仰慕者送的小禮物（情書、一縷秀髮、或小飾品）、{@item Costume Clothes|phb|戲服}、和一個裝有15金幣的纏腰{@item Pouch|phb|囊袋}",
+				"Feature: By Popular Demand",
+				"You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble's court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you.",
+				"Specialty",
+				"d10",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Folk Hero|PHB",
+			"hint": {
+				"Folk Hero": "平民英雄",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Specialty": "特色",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Folk Hero",
+				"Skill Proficiencies:",
+				"{@skill Animal Handling||動物馴養}, {@skill Survival||求生}",
+				"Tool Proficiencies:",
+				"一種{@filter 工匠工具|items|source=phb|miscellaneous=mundane|type=artisan tool}、載具（陸上）",
+				"Equipment:",
+				"一套{@filter 工匠工具|items|source=phb|miscellaneous=mundane|type=artisan tool}（自選一種）、一把{@item Shovel|phb|鏟子}、一個{@item Iron Pot|phb|鐵鍋}、一套{@item Common Clothes|phb|尋常服裝}、和一個裝有10金幣的纏腰{@item Pouch|phb|囊袋}",
+				"Feature: Rustic Hospitality",
+				"Since you come from the ranks of the common folk, you fit in among them with ease. You can find a place to hide, rest, or recuperate among other commoners, unless you have shown yourself to be a danger to them. They will shield you from the law or anyone else searching for you, though they will not risk their lives for you.",
+				"Specialty",
+				"d10",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Guild Artisan|PHB",
+			"hint": {
+				"Guild Artisan": "公會工匠",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Specialty": "特色",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Guild Artisan",
+				"Skill Proficiencies:",
+				"{@skill Insight||察言觀色}, {@skill Persuasion||說服}",
+				"Tool Proficiencies:",
+				"一種{@filter 工匠工具|items|source=phb|miscellaneous=mundane|type=artisan tool}",
+				"Languages:",
+				"Equipment:",
+				"一套{@filter 工匠工具|items|source=phb|miscellaneous=mundane|type=artisan tool}（自選一種），一封來自你公會的介紹信、一套{@item Traveler's Clothes|phb|旅行者服裝}、和一個裝有15金幣的纏腰{@item Pouch|phb|囊袋}",
+				"Feature: Guild Membership",
+				"As an established and respected member of a guild, you can rely on certain benefits that membership provides. Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.",
+				"Guilds often wield tremendous political power. If you are accused of a crime, your guild will support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the guild, if you are a member in good standing. Such connections might require the donation of money or magic items to the guild's coffers.",
+				"You must pay dues of 5 gp per month to the guild. If you miss payments, you must make up back dues to remain in the guild's good graces.",
+				"Specialty",
+				"公會通常會建在足以支撐眾多工匠的大城市中。然而，你的公會也可能是一個由不同村莊裡的工匠們所組成的鬆散聯絡網。與你的DM一同決定你的公會性質。你可以從公會生意表中選擇你的公會生意，或擲骰隨機決定。",
+				"d20",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Hermit|PHB",
+			"hint": {
+				"Hermit": "隱士",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Specialty": "特色",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Hermit",
+				"Skill Proficiencies:",
+				"{@skill Medicine||醫藥}, {@skill Religion||宗教}",
+				"Tool Proficiencies:",
+				"Languages:",
+				"Equipment:",
+				"一個裝滿你研究或祈禱筆記的{@item Map or Scroll Case|phb|卷軸筒}、一張{@item Blanket|phb|冬毯}、一套{@item Common Clothes|phb|尋常服裝}、一組{@item Herbalism Kit|phb|藥草師工具組}、以及5金幣",
+				"Feature: Discovery",
+				"The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society.",
+				"Work with your DM to determine the details of your discovery and its impact on the campaign.",
+				"Specialty",
+				"你與世隔絕的原因是什麼？又是什麼讓你結束了你的孤獨？你可以與DM一起決定你隱居的確切原因，或你也可以從下表選擇，或擲骰隨機決定你隱居的理由。",
+				"d8",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Noble|PHB",
+			"hint": {
+				"Noble": "貴族",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Noble",
+				"Skill Proficiencies:",
+				"{@skill History||歷史}, {@skill Persuasion||說服}",
+				"Tool Proficiencies:",
+				"一種{@filter 遊戲套組|items|miscellaneous=mundane|type=gaming set}",
+				"Languages:",
+				"Equipment:",
+				"一套{@item Fine Clothes|phb|高級服裝}、一枚{@item Signet Ring|phb|璽戒}、一卷家系族譜、和一個裝有25金幣的錢包",
+				"Feature: Position of Privilege",
+				"Thanks to your noble birth, people are inclined to think the best of you. You are welcome in high society, and people assume you have the right to be wherever you are. The common folk make every effort to accommodate you and avoid your displeasure, and other people of high birth treat you as a member of the same social sphere. You can secure an audience with a local noble if you need to.",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Outlander|PHB",
+			"hint": {
+				"Outlander": "化外之民",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Specialty": "特色",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Outlander",
+				"Skill Proficiencies:",
+				"{@skill Athletics||運動}, {@skill Survival||求生}",
+				"Tool Proficiencies:",
+				"一種{@filter 樂器|items|miscellaneous=mundane|type=instrument}",
+				"Languages:",
+				"Equipment:",
+				"一把{@item Staff|phb|法杖}、一個{@item Hunting Trap|phb|狩獵陷阱}、一個來自你所殺動物的戰利品、一套{@item Traveler's Clothes|phb|旅行者服裝}、和一個裝有10金幣的纏腰{@item Pouch|phb|囊袋}",
+				"Feature: Wanderer",
+				"You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth.",
+				"Specialty",
+				"d10",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Sage|PHB",
+			"hint": {
+				"Sage": "賢者",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Specialty": "特色",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Sage",
+				"Skill Proficiencies:",
+				"{@skill Arcana||奧秘}, {@skill History||歷史}",
+				"Languages:",
+				"Equipment:",
+				"一瓶黑色墨水、一支羽毛筆、一把小刀、一封來自你已死同僚所留下，提出了一個你尚未能解答的問題的信件、一套{@item Common Clothes|phb|尋常服裝}、和一個裝有10金幣的纏腰{@item Pouch|phb|囊袋}",
+				"Feature: Researcher",
+				"When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found. Unearthing the deepest secrets of the multiverse can require an adventure or even a whole campaign.",
+				"Specialty",
+				"要決定你學術訓練的性質，請從下表的選項中選擇一個或骰d8隨機決定。",
+				"d8",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6",
+				"為了拯救我自己或是其他人的生命，我什麼秘密都會說。I can't keep a secret to save my life, or anyone else's."
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Sailor|PHB",
+			"hint": {
+				"Sailor": "水手",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Sailor",
+				"Skill Proficiencies:",
+				"{@skill Athletics||運動}, {@skill Perception||感知}",
+				"Tool Proficiencies:",
+				"{@item Navigator's Tools|phb|領航員工具}、載具（水上）",
+				"Equipment:",
+				"一根繫繩栓（{@item Club|phb|棍棒}）、一條{@item Silk Rope (50 feet)|phb|絲繩(50呎)}、一個幸運護符，例如兔腳或中心開孔的小石頭（或你可以從第五章的飾品表中擲骰隨機決定）、一套{@item Common Clothes|phb|尋常服裝}、和一個裝有10金幣的纏腰{@item Pouch|phb|囊袋}",
+				"Feature: Ship's Passage",
+				"When you need to, you can secure free passage on a sailing ship for yourself and your adventuring companions. You might sail on the ship you served on, or another ship you have good relations with (perhaps one captained by a former crewmate). Because you're calling in a favor, you can't be certain of a schedule or route that will meet your every need. Your Dungeon Master will determine how long it takes to get where you need to go. In return for your free passage, you and your companions are expected to assist the crew during the voyage.",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Soldier|PHB",
+			"hint": {
+				"Soldier": "士兵",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Specialty": "特色",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Soldier",
+				"Skill Proficiencies:",
+				"{@skill Athletics||運動}, {@skill Intimidation||威嚇}",
+				"Tool Proficiencies:",
+				"一種{@filter 遊戲套組|items|miscellaneous=mundane|type=gaming set}、載具（陸上）",
+				"Equipment:",
+				"一枚軍階勳章、一個取自倒下敵人的紀念物（一把匕首、斷刃、一小片旗幟等）、一套骨製{@item Dice Set|phb|骰子套組}或{@item Playing Card Set|phb|撲克牌套組}、一套{@item Common Clothes|phb|尋常服裝}、和一個裝有10金幣的纏腰{@item Pouch|phb|囊袋}",
+				"Feature: Military Rank",
+				"You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized.",
+				"Specialty",
+				"在你做為士兵的期間，你在你所屬的單位或軍隊扮演著特定的職位。請從下表的選項中選擇一個或骰d8隨機決定你的職位：",
+				"d8",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Urchin|PHB",
+			"hint": {
+				"Urchin": "孤兒",
+				"Skill Proficiencies:": "技能熟練：",
+				"Equipment:": "裝備：",
+				"Suggested Characteristics": "建議特質"
+			},
+			"s": [
+				"Urchin",
+				"Skill Proficiencies:",
+				"{@skill Sleight of Hand||手上把戲}, {@skill Stealth||隱匿}",
+				"Tool Proficiencies:",
+				"{@item Disguise Kit|phb|易容工具組}、{@item Thieves' Tools|phb|盜賊工具}",
+				"Equipment:",
+				"一把小刀、一張你成長的城市的地圖、一隻寵物鼠、一件紀念你雙親的象徵物、一套{@item Common Clothes|phb|尋常服裝}、和一個裝有10金幣的纏腰{@item Pouch|phb|囊袋}",
+				"Feature: City Secrets",
+				"You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss. When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow.",
+				"Suggested Characteristics",
+				"d8",
+				"d6",
+				"d6",
+				"d6"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Variant Criminal (Spy)|PHB",
+			"hint": {
+				"Variant Criminal (Spy)": "變體罪犯 (間諜)"
+			},
+			"s": [
+				"Variant Criminal (Spy)"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Variant Entertainer (Gladiator)|PHB",
+			"hint": {
+				"Variant Entertainer (Gladiator)": "變體藝人 (角鬥士)"
+			},
+			"s": [
+				"Variant Entertainer (Gladiator)"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Variant Guild Artisan (Guild Merchant)|PHB",
+			"hint": {
+				"Variant Guild Artisan (Guild Merchant)": "變體公會工匠 (公會商人)"
+			},
+			"s": [
+				"Variant Guild Artisan (Guild Merchant)"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Variant Noble (Knight)|PHB",
+			"hint": {
+				"Variant Noble (Knight)": "變體貴族 (騎士)"
+			},
+			"s": [
+				"Variant Noble (Knight)"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Variant Noble (Retainers)|PHB",
+			"s": [
+				"Variant Noble (Retainers)"
+			]
+		},
+		{
+			"prop": "background",
+			"key": "Variant Sailor (Pirate)|PHB",
+			"hint": {
+				"Variant Sailor (Pirate)": "變體水手 (海盜)"
+			},
+			"s": [
+				"Variant Sailor (Pirate)"
+			]
+		}
+	]
+}
