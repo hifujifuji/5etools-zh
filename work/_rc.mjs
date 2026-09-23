@@ -97,6 +97,8 @@ export const RULE = s => {
 			.replace(/ \(same as above\)/g, "（同上）")
 			.replace(/ \((\{@item [^}]+\}) or (\{@item [^}]+\})\)/g, "（$1或$2）")
 			.replace(/\b2 Daggers\b/g, "2 把匕首")
+			.replace(/\{@item ([^|}]+)\|XPHB\|[A-Za-z' ]+\}/g, "{@item $1|XPHB}")
+			.replace(/\{@item ([^|}]+)\|XPHB\|[A-Za-z' ]+\}/g, "{@item $1|XPHB}")
 			.replace(/; or \(B\) /g, "；或 (B) ")
 			.replace(/, /g, "、")
 			.replace(/ (\d+ GP)/g, " $1");

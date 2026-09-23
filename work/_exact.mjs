@@ -2,6 +2,7 @@
 import fs from "fs";
 import {RC} from "./_rc.mjs";
 import tm from "./_tm.mjs";
+import {EBG} from "./_exactbg.mjs";
 const LV = (a, b) => `當你達到角色等級 3 時，你學會{@spell ${a}|XPHB}法術。當你達到角色等級 5 時，你也學會{@spell ${b}|XPHB}法術。你總是準備著這些法術，並可以不消耗法術欄位各施展它們一次。以此特性施展其中任一道法術後，直到你完成{@variantrule Long Rest|XPHB}前都無法再以此特性施展該法術。你也可以使用你擁有的適當環階法術欄位施展該法術。`;
 const LVEN = (a, b) => `When you reach character level 3, you learn the {@spell ${a}|XPHB} spell. When you reach character level 5, you also learn the {@spell ${b}|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.`;
 const E = {
@@ -113,6 +114,7 @@ const E = {
 for (const [a, b] of [["Command", "Silence"], ["Heroism", "Gentle Repose"], ["Faerie Fire", "Darkness"], ["Detect Magic", "Misty Step"], ["Longstrider", "Pass without Trace"], ["Ray of Sickness", "Hold Person"], ["False Life", "Ray of Enfeeblement"], ["Hellish Rebuke", "Darkness"]]) E[LVEN(a, b)] = LV(a, b);
 let LEFT = []; try { LEFT = JSON.parse(fs.readFileSync("work/_left.json")); } catch {}
 for (const s of LEFT) if (!E[s] && !RC[s] && tm[s]) E[s] = tm[s];
+Object.assign(E, EBG);
 const out = {_說明: "種族、背景、專長等資料中（含 _copy、_versions）完全比對才替換的英文句子。", ...RC, ...E};
 delete out["{@spell Gentle Repose|XPHB}"];
 fs.writeFileSync("i18n/exact-strings.json", JSON.stringify(out, null, "\t") + "\n");

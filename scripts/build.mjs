@@ -198,6 +198,12 @@ for (const {json} of loaded) {
 		}
 	}
 }
+// 語言標籤（語言實體沒有中文名時的後備）
+for (const [en, zh] of Object.entries({
+	Common: "通用語", Dwarvish: "矮人語", Elvish: "精靈語", Giant: "巨人語", Gnomish: "地侏語", Goblin: "哥布林語", Halfling: "半身人語", Orc: "獸人語",
+	Abyssal: "深淵語", Celestial: "天界語", "Deep Speech": "深幽語", Draconic: "龍語", Infernal: "煉獄語", Primordial: "原初語", Sylvan: "木族語",
+	Undercommon: "地底通用語", Druidic: "德魯伊語", "Thieves' Cant": "盜賊黑話", Gith: "吉斯語", Aquan: "水族語", Auran: "氣族語", Ignan: "火族語", Terran: "土族語",
+})) if (!tagNames.has(`language|${en.toLowerCase()}`)) tagNames.set(`language|${en.toLowerCase()}`, zh);
 let nTagDisplay = 0;
 const RE_TAG = /\{@(\w+) ([^{}]*)\}/g;
 const fillTags = (str, isOverrideEn = false) => str.replace(RE_TAG, (m, tag, body) => {
