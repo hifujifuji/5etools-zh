@@ -287,18 +287,19 @@ Parser.getSpeedString = (ent, {isMetric = false, isSkipZeroWalk = false, isLongF
 
 	const unit = isMetric
 		? Parser.metric.getMetricUnit({originalUnit: "ft.", isShortForm: !isLongForm})
-		: isLongForm ? "feet" : "ft.";
+		: "呎";
 	if (typeof ent.speed === "object") {
 		const stack = [];
-		let joiner = ", ";
+		let joiner = "，";
 
 		Parser.SPEED_MODES
 			.filter(mode => !ent.speed.hidden?.includes(mode))
 			.forEach(mode => Parser._getSpeedString_addSpeedMode({ent, prop: mode, stack, isMetric, isSkipZeroWalk, unit, styleHint}));
 
 		if (ent.speed.choose && !ent.speed.hidden?.includes("choose")) {
-			joiner = "; ";
-			stack.push(`${ent.speed.choose.from.sort().map(prop => Parser._getSpeedString_getSpeedName({prop, styleHint})).joinConjunct(", ", " or ")} ${ent.speed.choose.amount} ${unit}${ent.speed.choose.note ? ` ${ent.speed.choose.note}` : ""}`);
+			joiner = "；";
+			stack.push(`${ent.speed.choose.from.sort().map(prop => Parser._getSpeedString_getSpeedName({prop, styleHint}).trim()).joinConjunct("、", "或")} ${ent.speed.choose.amount} ${unit}${ent.speed.choose.note?.startsWith("（") ? ent.speed.choose.note : ent.speed.choose.note ? ` ${ent.speed.choose.note}` : ""}`);
+			if (0) stack.push(`${ent.speed.choose.amount} ${unit}${ent.speed.choose.note ? ` ${ent.speed.choose.note}` : ""}`);
 		}
 
 		return stack.join(joiner) + (ent.speed.note ? ` ${ent.speed.note}` : "");
@@ -319,7 +320,7 @@ Parser._getSpeedString_addSpeed = ({prop, speed, isMetric, unit, stack, styleHin
 	stack.push([ptName, ptValue, ptUnit, ptCondition].join(""));
 };
 Parser._getSpeedString_getVal = ({prop, speed, isMetric}) => {
-	if (speed === true && prop !== "walk") return "equal to your walking speed";
+	if (speed === true && prop !== "walk") return "等同步行速度";
 
 	const num = speed === true
 		? 0
@@ -327,8 +328,9 @@ Parser._getSpeedString_getVal = ({prop, speed, isMetric}) => {
 
 	return isMetric ? Parser.metric.getMetricNumber({originalValue: num, originalUnit: Parser.UNT_FEET}) : num;
 };
-Parser._getSpeedString_getCondition = ({speed}) => speed.condition ? ` ${Renderer.get().render(speed.condition)}` : "";
-Parser._getSpeedString_getSpeedName = ({prop, styleHint}) => prop === "walk" ? "" : `${prop[styleHint === "classic" ? "toString" : "toTitleCase"]()} `;
+Parser._getSpeedString_getCondition = ({speed}) => speed.condition ? (c => c.startsWith("（") ? c : ` ${c}`)(Renderer.get().render(speed.condition).replace(/^\(hover\)$/, "（懸浮）")) : "";
+Parser._SPEED_NAME_ZH = {burrow: "掘穴", climb: "攀爬", fly: "飛行", swim: "游泳"};
+Parser._getSpeedString_getSpeedName = ({prop, styleHint}) => prop === "walk" ? "" : `${Parser._SPEED_NAME_ZH[prop] || prop} `;
 
 Parser.SPEED_MODES = ["walk", "burrow", "climb", "fly", "swim"];
 
