@@ -1,0 +1,297 @@
+{
+	"batch": "xdmg-item-08",
+	"items": [
+		{
+			"prop": "item",
+			"key": "Gunpowder (keg)|XDMG",
+			"s": [
+				"Gunpowder (keg)",
+				"Setting fire to a keg full of Gunpowder causes it to explode. When a keg explodes, each creature in a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on the keg makes a {@dc 12} Dexterity saving throw, taking 24 ({@damage 7d6}) Fire damage on a failed save or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Gunpowder (powder horn)|XDMG",
+			"s": [
+				"Gunpowder (powder horn)",
+				"Setting fire to a powder horn full of Gunpowder causes it to explode. When a powder horn explodes, each creature in a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on the powder horn makes a {@dc 12} Dexterity saving throw, taking 10 ({@damage 3d6}) Fire damage on a failed save or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Hag Eye|XDMG",
+			"s": [
+				"Hag Eye",
+				"A Hag Eye has 3 charges. While wearing or holding this item, you can expend 1 charge to cast {@spell Darkvision|XPHB} (targeting yourself only) or {@spell See Invisibility|XPHB}. The Hag Eye regains all expended charges daily at dawn.",
+				"Coven Sensor",
+				"The Hag Eye is usually entrusted to a hag's minion for safekeeping and transport. As a {@action Magic|XPHB} action, a hag who belongs to the coven that created the Hag Eye can see what the Hag Eye sees if the hag and the Hag Eye are on the same plane of existence. This effect lasts as long as the hag maintains {@status Concentration|XPHB}. Multiple hags in the coven can see through the Hag Eye simultaneously.",
+				"Creating a Hag Eye",
+				"Only a hag coven can craft this item, which is made from a real eye coated in varnish and often fitted to a pendant or another wearable item. A hag coven can have only one Hag Eye at a time, and creating a new one requires all three members of the coven to perform a special rite. This rite takes 1 hour, and the hags can't perform it if one or more of them has the {@condition Incapacitated|XPHB} condition. If the hags take any other actions during this rite, the rite fails and ends."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Hand of Vecna|XDMG",
+			"hint": {
+				"Random Properties of the Eye and Hand": "眼與手的隨機屬性",
+				"Spellcasting": "施法",
+				"Destroying the Eye and Hand": "摧毀眼與手"
+			},
+			"s": [
+				"Hand of Vecna",
+				"{@book Vecna|XDMG|8|Vecna} was a mighty wizard who, through magic and conquest, forged a terrible empire. For all his power, however, Vecna feared death and took steps to prevent his demise by becoming a lich.",
+				"A treacherous lieutenant named Kas brought Vecna's rule to an end in a terrible battle. Of Vecna, all that remained were one hand and one eye, grisly Artifacts that still seek to work Vecna's will in the world.",
+				"The {@item Eye of Vecna|XDMG} and the Hand of Vecna are separate Artifacts that might be found together or separately. The eye looks like a bloodshot organ torn free from the socket. The hand is a shriveled left extremity.",
+				"Random Properties of the Eye and Hand",
+				"The Hand of Vecna has the following random properties:",
+				"1 {@table Artifact Properties; Minor Beneficial Properties|XDMG|minor beneficial} property",
+				"1 {@table Artifact Properties; Major Beneficial Properties|XDMG|major beneficial} property",
+				"1 {@table Artifact Properties; Minor Detrimental Properties|XDMG|minor detrimental} property",
+				"Attuning to the Hand",
+				"To attune to the hand, you must press it against the stump where your left hand was. The hand grafts itself to your arm and becomes a functioning appendage. If the hand is ever removed, you die.",
+				"Properties of the Hand",
+				"When you are attuned to the hand, your alignment is Neutral Evil, and you gain the following benefits:",
+				"Great Strength",
+				"Your Strength becomes 20 unless it is already 20 or higher.",
+				"Icy Touch",
+				"Any melee spell attack you make with the hand and any melee attack made with a weapon held by it deals an extra {@damage 2d8} Cold damage on a hit.",
+				"Spellcasting",
+				"The hand has 8 charges and regains {@dice 1d4 + 4} expended charges daily at dawn. You can cast a spell on the {@item Hand of Vecna|XDMG} Spells table from the hand (save {@dc 18}). The table indicates how many charges you must expend to cast the spell. Each time you cast a spell from it, the hand casts {@spell Suggestion|XPHB} on you (save {@dc 18}; no {@status Concentration|XPHB} required), demanding that you commit an evil act. The hand might have a specific act in mind or leave it up to you.",
+				"Hand of Vecna Spells",
+				"Spell",
+				"Charge Cost",
+				"Destroying the Eye and Hand",
+				"If the {@item Eye of Vecna|XDMG} and the Hand of Vecna are both attached to the same creature and that creature is slain by the {@item Sword of Kas|XDMG}, both the eye and the hand burst into flame, turn to ash, and are destroyed. Any other attempt to destroy the eye or hand seems to work, but the Artifact reappears in one of Vecna's many hidden vaults, where it waits to be rediscovered."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Handheld mirror set in a painted wooden frame|XDMG",
+			"s": [
+				"Handheld mirror set in a painted wooden frame"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Hat of Disguise|XDMG",
+			"hint": {
+				"Hat of Disguise": "易容帽"
+			},
+			"s": [
+				"Hat of Disguise",
+				"While wearing this hat, you can cast the {@spell Disguise Self|XPHB} spell. The spell ends if the hat is removed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Hat of Many Spells|XDMG",
+			"hint": {
+				"Spellcasting Focus": "施法法器",
+				"Unknown Spell": "未知法術"
+			},
+			"s": [
+				"Hat of Many Spells",
+				"This pointed hat has the following properties.",
+				"Spellcasting Focus",
+				"While holding the hat, you can use it as a {@variantrule Spellcasting Focus|XPHB} for your Wizard spells. Any spell you cast using the hat gains a special Somatic component: you must reach into the hat and \"pull\" the spell out of it.",
+				"Unknown Spell",
+				"While holding the hat, you can try to cast a level 1+ spell you don't know. The spell must be on the Wizard spell list, it must be of a level you can cast, and it can't have Material components costing more than 1,000 GP. Once you decide on the spell, you must expend a spell slot of the spell's level. Then, to determine whether you cast the spell, make an Intelligence ({@skill Arcana|XPHB}) check ({@dc 10} plus the spell's level). On a successful check, you cast the spell using its normal casting time, and you can't use this property again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}. On a failed check, you fail to cast the spell and a random effect occurs instead, determined by rolling on the following table.",
+				"Any spell you cast from the hat uses your spell save DC and spell attack bonus.",
+				"1d100",
+				"Effect",
+				"You cast a random spell determined by rolling {@dice 1d10}: on a {@b 1}, {@spell Enlarge/Reduce|XPHB} (enlarge effect); on a {@b 2}, {@spell Enlarge/Reduce|XPHB} (reduce effect); on a {@b 3}, {@spell Faerie Fire|XPHB}; on a {@b 4}, {@spell Fireball|XPHB}; on a {@b 5}, {@spell Gust of Wind|XPHB}; on a {@b 6}, {@spell Invisibility|XPHB} (cast on yourself); on a {@b 7}, {@spell Lightning Bolt|XPHB}; on an {@b 8}, {@spell Phantasmal Force|XPHB}; on a {@b 9}, {@spell Polymorph|XPHB}; on a {@b 10}, {@spell Stinking Cloud|XPHB}.",
+				"You have the {@condition Stunned|XPHB} condition until the end of your next turn, believing something awesome just happened.",
+				"A harmless swarm of butterflies fills a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} within 30 feet of yourself. The swarm disperses after 1 minute.",
+				"You pull a nonmagical object out of the hat. Roll {@dice 1d4} to determine the object: on a {@b 1}, a vial of Acid; on a {@b 2}, a flask of Alchemist's Fire; on a {@b 3}, a Crowbar; on a {@b 4}, a lit Torch.",
+				"You suffer a bout of \"magic sickness\" and have the {@condition Poisoned|XPHB} condition for 1 hour.",
+				"You have the {@condition Petrified|XPHB} condition until the end of your next turn.",
+				"You pull a nonmagical object out of the hat. Roll {@dice 1d4} to determine the object: on a {@b 1}, a {@item Dagger|XPHB}; on a {@b 2}, a {@item Rope|XPHB} with a {@item Grappling Hook|XPHB} tied to one end; on a {@b 3}, a bag of {@item Caltrops|XPHB}; on a {@b 4}, a gem worth 50 GP.",
+				"A creature appears in an unoccupied space as close to you as possible. The creature isn't under your control and acts as it normally would, and it disappears after 1 hour or when it drops to 0 {@variantrule Hit Points|XPHB}. Roll {@dice 1d4} to determine the creature: on a {@b 1}, a {@creature Camel|XMM}; on a {@b 2}, a {@creature Constrictor Snake|XMM}; on a {@b 3}, an {@creature Elephant|XMM}; on a {@b 4}, a {@creature Mule|XMM}.",
+				"A {@variantrule Hostile [Attitude]|XPHB|Hostile} {@creature Swarm of Bats|XMM} flies out of the hat, occupies your space, and attacks you.",
+				"A vertical, 10-foot-diameter, two-way portal to another plane of existence opens in an unoccupied space within 30 feet of you and remains open until the end of your next turn. The DM determines where it leads.",
+				"You pull a magic item out of the hat. Roll {@dice 1d6} to determine the item's rarity: on a {@b 1-3}, {@filter Common|items|rarity=Common}; on a {@b 4-5}, {@filter Uncommon|items|rarity=Uncommon}; on a {@b 6}, {@filter Rare|items|rarity=Rare}. The DM chooses the item, which disappears after 1 hour if it's not consumed or destroyed before then."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Hat of Vermin|XDMG",
+			"hint": {
+				"Hat of Vermin": "害蟲之帽"
+			},
+			"s": [
+				"Hat of Vermin",
+				"This hat has 3 charges. While holding the hat, you can take a {@action Magic|XPHB} action to expend 1 charge and summon your choice of a {@creature Bat|XMM}, a {@creature Frog|XMM}, or a {@creature Rat|XMM}. The summoned creature magically appears in the hat and tries to get away from you as quickly as possible. The creature is {@variantrule Indifferent [Attitude]|XPHB|Indifferent} toward you and other creatures, and it isn't under your control. It behaves as an ordinary creature of its kind and disappears after 1 hour or when it drops to 0 {@variantrule Hit Points|XPHB}. The hat regains all expended charges daily at dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Hat of Wizardry|XDMG",
+			"hint": {
+				"Hat of Wizardry": "巫術帽",
+				"Spellcasting Focus": "施法法器",
+				"Unknown Spell": "未知法術"
+			},
+			"s": [
+				"Hat of Wizardry",
+				"This cone-shaped hat is adorned with moons and stars. While you are wearing it, you gain the following benefits.",
+				"Spellcasting Focus",
+				"You can use the hat as a {@variantrule Spellcasting Focus|XPHB} for your Wizard spells.",
+				"Unknown Spell",
+				"As a {@action Magic|XPHB} action, you can try to cast a cantrip that you don't know. The cantrip must be on the Wizard spell list and have a casting time of an action, and you make a {@dc 10} Intelligence ({@skill Arcana|XPHB}) check. On a successful check, you cast the spell. On a failed check, the spell fails, and the action used to cast the spell is wasted. In either case, you can't use this property again until you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Headband of Intellect|XDMG",
+			"hint": {
+				"Headband of Intellect": "智力頭帶"
+			},
+			"s": [
+				"Headband of Intellect",
+				"Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is 19 or higher without it."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Helm of Brilliance|XDMG",
+			"hint": {
+				"Helm of Brilliance": "光輝頭盔",
+				"Spells": "法術"
+			},
+			"s": [
+				"Helm of Brilliance",
+				"This helm is set with {@dice 1d10} diamonds, {@dice 2d10} rubies, {@dice 3d10} fire opals, and {@dice 4d10} opals. Any gem pried from the helm crumbles to dust. When all the gems are removed or destroyed, the helm loses its magic.",
+				"You gain the following benefits while wearing the helm.",
+				"Diamond Light",
+				"As long as it has at least one diamond, the helm emits a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. When at least one Undead is within that area, the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} is filled with {@variantrule Dim Light|XPHB}. Any Undead that starts its turn in that area takes {@damage 1d6} Radiant damage.",
+				"Fire Opal Flames",
+				"As long as the helm has at least one fire opal, you can take a {@action Magic|XPHB} action to cause one weapon you are holding to burst into flames. The flames emit {@variantrule Bright Light|XPHB} in a 10-foot radius and {@variantrule Dim Light|XPHB} for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an attack using the blazing weapon, the target takes an extra {@damage 1d6} Fire damage. The flames last until you take a {@variantrule Bonus Action|XPHB} to extinguish them or until you drop or stow the weapon.",
+				"Ruby Resistance",
+				"As long as the helm has at least one ruby, you have {@variantrule Resistance|XPHB} to Fire damage.",
+				"Spells",
+				"You can cast one of the following spells (save {@dc 18}), using one of the helm's gems of the specified type as a component: {@spell Daylight|XPHB} (opal), {@spell Fireball|XPHB} (fire opal), {@spell Prismatic Spray|XPHB} (diamond), or {@spell Wall of Fire|XPHB} (ruby). The gem is destroyed when the spell is cast and disappears from the helm.",
+				"Taking Fire Damage",
+				"Roll {@dice 1d20} if you are wearing the helm and take Fire damage as a result of failing a saving throw against a spell. On a roll of 1, the helm emits beams of light from its remaining gems and is then destroyed. Each creature within a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you must succeed on a {@dc 17} Dexterity saving throw or be struck by a beam, taking Radiant damage equal to the number of gems in the helm."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Helm of Comprehending Languages|XDMG",
+			"hint": {
+				"Helm of Comprehending Languages": "通曉語言頭盔"
+			},
+			"s": [
+				"Helm of Comprehending Languages",
+				"While wearing this helm, you can cast {@spell Comprehend Languages|XPHB} from it."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Helm of Telepathy|XDMG",
+			"hint": {
+				"Helm of Telepathy": "心靈感應頭盔"
+			},
+			"s": [
+				"Helm of Telepathy",
+				"While wearing this helm, you have telepathy with a range of 30 feet, and you can cast {@spell Detect Thoughts|XPHB} or {@spell Suggestion|XPHB} (save {@dc 13}) from the helm. Once either spell is cast from the helm, that spell can't be cast from it again until the next dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Helm of Teleportation|XDMG",
+			"hint": {
+				"Helm of Teleportation": "傳送頭盔"
+			},
+			"s": [
+				"Helm of Teleportation",
+				"This helm has 3 charges. While wearing it, you can expend 1 charge to cast {@spell Teleport|XPHB} from it. The helm regains {@dice 1d3} expended charges daily at dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Hematite|XDMG",
+			"hint": {
+				"Hematite": "赤鐵礦"
+			},
+			"s": [
+				"Hematite",
+				"A gray black gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Heward's Handy Haversack|XDMG",
+			"hint": {
+				"Heward's Handy Haversack": "霍華德的便利袋"
+			},
+			"s": [
+				"Heward's Handy Haversack",
+				"This backpack has a central pouch and two side pouches, each of which is an extradimensional space. Each side pouch can hold up to 200 pounds of material, not exceeding a volume of 25 cubic feet. The central pouch can hold up to 500 pounds of material, not exceeding a volume of 64 cubic feet. The haversack always weighs 5 pounds, regardless of its contents.",
+				"Retrieving an item from the haversack requires a {@action Utilize|XPHB} action or a {@variantrule Bonus Action|XPHB} (your choice). When you reach into the haversack for a specific item, the item is always magically on top.",
+				"If any of its pouches is overloaded, pierced, or torn, the haversack ruptures and is destroyed. If the haversack is destroyed, its contents are lost forever, although an Artifact always turns up again somewhere. If the haversack is turned inside out, its contents spill forth unharmed, and the haversack must be put right before it can be used again.",
+				"Each pouch of the haversack holds enough air for 10 minutes of breathing, divided by the number of breathing creatures inside.",
+				"Placing the haversack inside an extradimensional space created by a {@item Bag of Holding|XDMG}, {@item Portable Hole|XDMG}, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate and not behind {@variantrule Cover|XPHB|Total Cover} is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Heward's Handy Spice Pouch|XDMG",
+			"hint": {
+				"Heward's Handy Spice Pouch": "霍華德的便利香料包"
+			},
+			"s": [
+				"Heward's Handy Spice Pouch",
+				"This belt pouch appears empty and has 10 charges. While holding the pouch, you can take a {@action Magic|XPHB} action to expend 1 charge, name any nonmagical food seasoning (such as salt, pepper, saffron, or cilantro), and remove a pinch of the desired seasoning from the pouch. A pinch is enough to season a single meal. The pouch regains {@dice 1d6 + 4} expended charges daily at dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Horn of Blasting|XDMG",
+			"hint": {
+				"Horn of Blasting": "音爆號角"
+			},
+			"s": [
+				"Horn of Blasting",
+				"You can take a {@action Magic|XPHB} action to blow the horn, which emits a thunderous blast in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} that is audible out to 600 feet. Each creature in the {@variantrule Cone [Area of Effect]|XPHB|Cone} makes a {@dc 15} Constitution saving throw. On a failed save, a creature takes {@damage 5d8} Thunder damage and has the {@condition Deafened|XPHB} condition for 1 minute. On a successful save, a creature takes half as much damage only. Glass or crystal objects in the {@variantrule Cone [Area of Effect]|XPHB|Cone} that aren't being worn or carried take {@damage 10d8} Thunder damage.",
+				"Each use of the horn's magic has a {@chance 20} chance of causing the horn to explode. The explosion deals {@damage 10d6} Force damage to the user and destroys the horn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Horn of Silent Alarm|XDMG",
+			"hint": {
+				"Horn of Silent Alarm": "靜報號角"
+			},
+			"s": [
+				"Horn of Silent Alarm",
+				"This horn has 4 charges and regains {@dice 1d4} expended charges daily at dawn. As a {@action Magic|XPHB} action, you can blow the horn while expending 1 charge. One creature of your choice hears the horn's blare, provided that creature is within 600 feet of the horn. No other creature hears the horn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Horn of Valhalla, Brass|XDMG",
+			"hint": {
+				"Horn of Valhalla, Brass": "瓦爾哈拉號角，黃銅"
+			},
+			"s": [
+				"Horn of Valhalla, Brass",
+				"You can take a {@action Magic|XPHB} action to blow this horn. In response, warrior spirits from the plane of Ysgard appear in unoccupied spaces within 60 feet of you. Each spirit uses the {@creature Berserker|XMM} stat block and returns to Ysgard after 1 hour or when it drops to 0 {@variantrule Hit Points|XPHB}. The spirits look like living, breathing warriors, and they have {@variantrule Immunity|XPHB} to the {@condition Charmed|XPHB} and {@condition Frightened|XPHB} conditions. Once you use the horn, it can't be used again until 7 days have passed.",
+				"A brass horn summons 3 {@creature Berserker|XMM|Berserkers}. To use the brass horn, you must have {@variantrule Proficiency|XPHB} with all Simple weapons.",
+				"If you blow the horn without meeting its requirement, the summoned {@creature Berserker|XMM|Berserkers} attack you. If you meet the requirement, they are {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies and follow your commands."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Horn of Valhalla, Bronze|XDMG",
+			"hint": {
+				"Horn of Valhalla, Bronze": "瓦爾哈拉號角，青銅"
+			},
+			"s": [
+				"Horn of Valhalla, Bronze",
+				"You can take a {@action Magic|XPHB} action to blow this horn. In response, warrior spirits from the plane of Ysgard appear in unoccupied spaces within 60 feet of you. Each spirit uses the {@creature Berserker|XMM} stat block and returns to Ysgard after 1 hour or when it drops to 0 {@variantrule Hit Points|XPHB}. The spirits look like living, breathing warriors, and they have {@variantrule Immunity|XPHB} to the {@condition Charmed|XPHB} and {@condition Frightened|XPHB} conditions. Once you use the horn, it can't be used again until 7 days have passed.",
+				"A bronze horn summons 4 {@creature Berserker|XMM|Berserkers}. To use the bronze horn, you must have training with all Medium armor.",
+				"If you blow the horn without meeting its requirement, the summoned {@creature Berserker|XMM|Berserkers} attack you. If you meet the requirement, they are {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies and follow your commands."
+			]
+		}
+	]
+}

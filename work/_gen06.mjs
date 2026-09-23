@@ -1,0 +1,29 @@
+import fs from "node:fs";
+import {FIG, ELEM, ENSPELL} from "./lib/common.mjs";
+const staff = (lv, dc, hit) => [`法術封存之杖（${lv === 0 ? "戲法" : `${lv} 環`}）`, ...ENSPELL(lv === 0 ? "一道戲法" : `一道{@filter ${lv} 環法術|spells|level=${lv}}`, "法杖", dc, hit, "把非魔法的{@item Quarterstaff|XPHB}")];
+const out = [
+["火巨靈之瓶","當你執行一個{@action Magic|XPHB}動作拔開這個彩繪黃銅瓶的瓶塞時，一團濃煙會從中流出。在你的回合結束時，煙霧伴隨一道無害的火光消失，一隻{@creature Efreeti|XMM}出現在你 30 呎內的一處未被佔據空間中。","瓶子第一次被打開時，DM 在下表擲骰決定會發生什麼事。","1d10","效果","{@creature efreeti|XMM|火巨靈}攻擊你。戰鬥 5 輪後，火巨靈消失，瓶子失去魔力。","{@creature efreeti|XMM|火巨靈}懂得你的語言，並服從你的命令 1 小時，之後它回到瓶中，並由一個新的瓶塞封住。此瓶塞 24 小時內無法拔開。接下來兩次打開瓶子時，會發生相同的效果。若瓶子被第四次打開，火巨靈會逃脫並消失，瓶子失去魔力。","{@creature efreeti|XMM|火巨靈}懂得你的語言，並可以為你施展一次{@spell Wish|XPHB}。它在實現願望後或 1 小時後消失，瓶子失去魔力。"],
+["元素寶石，藍寶石", ELEM("Air Elemental")],
+["元素寶石，祖母綠", ELEM("Water Elemental")],
+["元素寶石，紅剛玉", ELEM("Fire Elemental")],
+["元素寶石，黃鑽石", ELEM("Earth Elemental")],
+["健康靈藥","喝下這瓶藥水時，你會被治癒所有魔法疾病。此外，你身上的下列狀態結束：{@condition Blinded|XPHB}、{@condition Deafened|XPHB}、{@condition Paralyzed|XPHB}與{@condition Poisoned|XPHB}。","這種清澈的紅色液體中有微小的光泡。"],
+["鑲有寶石碎片的刺繡手套"],
+["鑲有眾多月長石的刺繡絲綢天鵝絨披風"],
+["刺繡絲綢手帕"],
+["祖母綠","一顆深而明亮的綠色寶石。"],
+["不朽法術書","這本法術書以及寫在其書頁上的任何內容，都不會被火或水損壞。此外，法術書不會隨著時間而劣化。"],
+staff(0, 13, 5), staff(1, 13, 5), staff(2, 13, 5), staff(3, 15, 7), staff(4, 15, 7), staff(5, 17, 9), staff(6, 17, 9), staff(7, 18, 10), staff(8, 18, 10),
+["人造義眼","這顆魔法眼睛可以取代遺失或被摘除的真眼。當人造義眼嵌在你的眼窩中時，你可以透過這顆小球視物，如同它是你天生的眼睛。你可以作為一個{@action Magic|XPHB}動作裝上或取下人造義眼，且在你活著時，它無法違背你的意願被取下。"],
+["乙醚精華","受到乙醚精華影響的生物必須通過一次 {@dc 15} 體質豁免檢定，否則處於{@condition Poisoned|XPHB}狀態 8 小時。以此方式{@condition Poisoned|XPHB}期間，該生物也處於{@condition Unconscious|XPHB}狀態。若該生物受到傷害，或另一個生物執行一個動作將它搖醒，它便會醒來。"],
+["無盡煙瓶","作為一個{@action Magic|XPHB}動作，你可以打開或關閉這個瓶子。","打開瓶子會使濃煙滾滾湧出，形成一團煙雲，填滿從瓶子發出的 60 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍。煙霧中的區域處於{@variantrule Heavily Obscured|XPHB}。","瓶子每保持開啟一分鐘，{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍便增加 10 呎，直到達到最大的 120 呎。","關閉瓶子會使煙雲固定在原處，直到 10 分鐘後散去。強風（例如{@spell Gust of Wind|XPHB}法術所產生的風）會使煙雲在 1 分鐘後散去。"],
+["眼紋瑪瑙","一顆帶有灰、白、棕、藍或綠色圓圈紋路的寶石。"],
+["維克那之眼","{@book 維克那|XDMG|8|Vecna}是一位強大的法師，他藉由魔法與征服建立了一個可怕的帝國。然而，儘管擁有如此力量，維克那仍畏懼死亡，並採取措施成為巫妖以避免自己的消亡。","一名名叫卡斯的奸詐副官在一場慘烈的戰役中終結了維克那的統治。維克那只留下了一隻手和一隻眼睛，這兩件可怖的神器仍在世上試圖實現維克那的意志。","維克那之眼與{@item Hand of Vecna|XDMG}是兩件獨立的神器，可能被一起或分別找到。眼睛看起來像一顆從眼窩中扯出、布滿血絲的器官。手則是一隻乾枯的左手。","眼與手的隨機屬性","維克那之眼具有以下隨機屬性：","1 個{@table Artifact Properties; Minor Beneficial Properties|XDMG|次要有益}屬性","1 個{@table Artifact Properties; Major Beneficial Properties|XDMG|主要有益}屬性","1 個{@table Artifact Properties; Minor Detrimental Properties|XDMG|次要有害}屬性","與眼同調","要與此眼同調，你必須將它按入你空著的眼窩中。眼睛會嫁接在你的頭上，並一直留在那裡直到你死亡。若眼睛被取出，你便會死亡。","眼的屬性","與此眼同調時，你的陣營變為中立邪惡，並獲得以下益處：","真實視覺","你擁有 240 呎的{@sense Truesight|XPHB}。","施法","此眼有 8 發充能，每天黎明恢復 {@dice 1d4 + 4} 發已消耗的充能。你可以從此眼施展「維克那之眼法術」表中的一道法術（豁免 {@dc 18}）。表中列出施展該法術需消耗的充能數。每次你從此眼施展法術時，有 {@chance 5} 的機率維克那會將你的靈魂從身體中扯出並吞噬，然後像操縱木偶般控制你的身體。若這種情況發生，你會成為受 DM 控制的 NPC。","維克那之眼法術","法術","充能消耗","透視視覺","你可以執行一個{@action Magic|XPHB}動作，獲得範圍 30 呎、持續 1 分鐘的透視視覺。對你而言，該半徑內的固體物體看起來是透明的，也不會阻擋光線穿過。此視覺可以穿透 1 呎厚的石頭、1 吋厚的普通金屬，或至多 3 呎厚的木頭或泥土。更厚的物質會阻擋視線，薄鉛片也會。","摧毀眼與手","若維克那之眼與{@item Hand of Vecna|XDMG}都附著在同一個生物身上，而該生物被{@item Sword of Kas|XDMG}殺死，眼與手都會燃起火焰、化為灰燼並被摧毀。任何其他摧毀眼或手的嘗試看似有效，但神器會重新出現在維克那眾多隱藏寶庫的其中之一，等待被再次發現。"],
+["飾有細小藍寶石與月長石的眼罩"],
+["魅惑之眼","這副水晶鏡片可戴在眼睛上，有 3 發充能。戴著它們時，你可以消耗 1 發或更多充能施展{@spell Charm Person|XPHB}（豁免 {@dc 13}）。消耗 1 發充能時，你施展該法術的 1 環版本。每多消耗 1 發充能，法術環階提升一環。鏡片每天黎明恢復所有已消耗的充能。"],
+["微視之眼","這副水晶鏡片可戴在眼睛上。戴著它們時，你在 1 呎範圍內的視力大幅提升，使你在該範圍內擁有{@sense Darkvision|XPHB}，且你為檢查該範圍內的事物而進行的智力（{@skill Investigation|XPHB}）檢定具有{@variantrule Advantage|XPHB}。"],
+["鷹眼","這副水晶鏡片可戴在眼睛上。戴著它們時，你依賴視覺的感知（{@skill Perception|XPHB}）檢定具有{@variantrule Advantage|XPHB}。在能見度良好的情況下，即使是極遠處的生物以及小至 2 呎寬的物體，你也能看清其細節。"],
+["異能塑像，青銅獅鷲", ...FIG, "青銅獅鷲（珍稀）","這尊青銅小雕像是一隻躍立的獅鷲。它可以變成一隻{@creature Griffon|XMM}，持續至多 6 小時。使用後，必須經過 5 天才能再次使用。"],
+["異能塑像，黑檀木蒼蠅", ...FIG, "黑檀木蒼蠅（珍稀）","這尊以牛虻為原型雕刻的黑檀木小雕像，可以變成一隻{@creature Giant Fly|XDMG}，持續至多 12 小時，並可作為坐騎騎乘。使用後，必須經過 2 天才能再次使用。"],
+];
+fs.writeFileSync(new URL("./xdmg-item-06.zh.json", import.meta.url), JSON.stringify(out));

@@ -1,0 +1,410 @@
+{
+	"batch": "xdmg-item-02",
+	"items": [
+		{
+			"prop": "item",
+			"key": "Bag of Devouring|XDMG",
+			"hint": {
+				"Bag of Devouring": "吞噬袋"
+			},
+			"s": [
+				"Bag of Devouring",
+				"This bag resembles a {@item Bag of Holding|XDMG} but is a feeding orifice for a gigantic extradimensional creature. Turning the bag inside out closes the orifice.",
+				"The extradimensional creature attached to the bag can sense whatever is placed inside the bag. Animal or vegetable matter placed wholly in the bag is devoured and lost forever. When part of a living creature is placed in the bag, as happens when someone reaches inside it, there is a {@chance 50} chance that the creature is pulled inside the bag. A creature inside the bag can take an action to try to escape, doing so with a successful {@dc 15} Strength ({@skill Athletics|XPHB}) check. Another creature can take an action to reach into the bag to pull a creature out, doing so with a successful {@dc 20} Strength ({@skill Athletics|XPHB}) check, provided the puller isn't pulled inside the bag first. Any creature that starts its turn inside the bag is devoured, its body destroyed.",
+				"Inanimate objects can be stored in the bag, which can hold a cubic foot of such material. However, once each day, the bag swallows any objects inside it and spits them out into another plane of existence. The DM determines the time and plane.",
+				"If the bag is pierced or torn, it is destroyed, and anything contained within it is transported to a random location on the Astral Plane."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bag of Holding|XDMG",
+			"hint": {
+				"Bag of Holding": "次元袋"
+			},
+			"s": [
+				"Bag of Holding",
+				"This bag has an interior space considerably larger than its outside dimensions—roughly 2 feet square and 4 feet deep on the inside. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 5 pounds, regardless of its contents. Retrieving an item from the bag requires a {@action Utilize|XPHB} action.",
+				"If the bag is overloaded, pierced, or torn, it is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth unharmed, but the bag must be put right before it can be used again. The bag holds enough air for 10 minutes of breathing, divided by the number of breathing creatures inside.",
+				"Placing a Bag of Holding inside an extradimensional space created by a {@item Heward's Handy Haversack|XDMG}, Portable Hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way and can't be reopened."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bag of Tricks, Gray|XDMG",
+			"hint": {
+				"Bag of Tricks, Gray": "魔術袋，灰色"
+			},
+			"s": [
+				"Bag of Tricks, Gray",
+				"This bag made from gray cloth appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object.",
+				"You can take a {@action Magic|XPHB} action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling on the table below. See the {@book Monster Manual|XMM} for the creature's stat block. The creature vanishes at the next dawn or when it is reduced to 0 {@variantrule Hit Points|XPHB}.",
+				"The creature is {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies, and it acts immediately after you on your {@variantrule Initiative|XPHB} count. You can take a {@variantrule Bonus Action|XPHB} to command how the creature moves and what action it takes on its next turn, such as attacking an enemy. In the absence of such orders, the creature acts in a fashion appropriate to its nature.",
+				"Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.",
+				"1d8",
+				"Creature"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bag of Tricks, Rust|XDMG",
+			"hint": {
+				"Bag of Tricks, Rust": "魔術袋，鐵鏽色"
+			},
+			"s": [
+				"Bag of Tricks, Rust",
+				"This bag made from rust cloth appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object.",
+				"You can take a {@action Magic|XPHB} action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling on the table below. See the {@book Monster Manual|XMM} for the creature's stat block. The creature vanishes at the next dawn or when it is reduced to 0 {@variantrule Hit Points|XPHB}.",
+				"The creature is {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies, and it acts immediately after you on your {@variantrule Initiative|XPHB} count. You can take a {@variantrule Bonus Action|XPHB} to command how the creature moves and what action it takes on its next turn, such as attacking an enemy. In the absence of such orders, the creature acts in a fashion appropriate to its nature.",
+				"Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.",
+				"1d8",
+				"Creature"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bag of Tricks, Tan|XDMG",
+			"hint": {
+				"Bag of Tricks, Tan": "魔術袋，棕褐色"
+			},
+			"s": [
+				"Bag of Tricks, Tan",
+				"This bag made from tan cloth appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object.",
+				"You can take a {@action Magic|XPHB} action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling on the table below. See the {@book Monster Manual|XMM} for the creature's stat block. The creature vanishes at the next dawn or when it is reduced to 0 {@variantrule Hit Points|XPHB}.",
+				"The creature is {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies, and it acts immediately after you on your {@variantrule Initiative|XPHB} count. You can take a {@variantrule Bonus Action|XPHB} to command how the creature moves and what action it takes on its next turn, such as attacking an enemy. In the absence of such orders, the creature acts in a fashion appropriate to its nature.",
+				"Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.",
+				"1d8",
+				"Creature"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Banded Agate|XDMG",
+			"hint": {
+				"Banded Agate": "條紋瑪瑙"
+			},
+			"s": [
+				"Banded Agate",
+				"A striped brown, blue, white, or red gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bead of Force|XDMG",
+			"hint": {
+				"Bead of Force": "力場珠"
+			},
+			"s": [
+				"Bead of Force",
+				"This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. Typically, {@dice 1d4 + 4} Beads of Force are found together.",
+				"You can take a {@action Magic|XPHB} action to throw the bead up to 60 feet. The bead explodes in a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} on impact and is destroyed. Each creature in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} must succeed on a {@dc 15} Dexterity saving throw or take {@damage 5d4} Force damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save or are partially within the area are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No attack or other effect can pass through.",
+				"An enclosed creature can take a {@action Utilize|XPHB} action to push against the sphere's wall, moving the sphere up to half the creature's {@variantrule Speed|XPHB}. The sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of creatures inside."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bead of Nourishment|XDMG",
+			"hint": {
+				"Bead of Nourishment": "營養珠"
+			},
+			"s": [
+				"Bead of Nourishment",
+				"This flavorless, gelatinous bead dissolves on your tongue and provides as much nourishment as 1 day of Rations."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bead of Refreshment|XDMG",
+			"hint": {
+				"Bead of Refreshment": "鮮水珠"
+			},
+			"s": [
+				"Bead of Refreshment",
+				"This flavorless, gelatinous bead dissolves in liquid, transforming up to a pint of the liquid into fresh, cold drinking water. The bead has no effect on magical liquids or harmful substances such as poison."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bejeweled gold bracelet|XDMG",
+			"s": [
+				"Bejeweled gold bracelet"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bejeweled ivory drinking horn with gold filigree|XDMG",
+			"hint": {
+				"Bejeweled ivory drinking horn with gold filigree": "鑲有珠寶的金絲象牙角杯"
+			},
+			"s": [
+				"Bejeweled ivory drinking horn with gold filigree"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Belt of Cloud Giant Strength|XDMG",
+			"hint": {
+				"Belt of Cloud Giant Strength": "雲巨人力量腰帶"
+			},
+			"s": [
+				"Belt of Cloud Giant Strength",
+				"While wearing this belt, your Strength score changes to 27. The item has no effect on you if your Strength without the belt is equal to or greater than the belt's score."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Belt of Dwarvenkind|XDMG",
+			"hint": {
+				"Belt of Dwarvenkind": "矮人腰帶",
+				"Darkvision": "黑暗視覺"
+			},
+			"s": [
+				"Belt of Dwarvenkind",
+				"While wearing this belt, you gain the following benefits:",
+				"Dwarvish",
+				"You know Dwarvish.",
+				"Friend of Dwarvenkind",
+				"You have {@variantrule Advantage|XPHB} on Charisma ({@skill Persuasion|XPHB}) checks made to interact with dwarves and duergar.",
+				"Toughness",
+				"Your Constitution increases by 2, to a maximum of 20.",
+				"In addition, while attuned to the belt, you have a {@chance 50} chance each day at dawn of growing a full beard if you can grow one, or a thicker beard if you already have one.",
+				"If you aren't a dwarf or duergar, you gain the following additional benefits while wearing the belt:",
+				"Darkvision",
+				"You have {@sense Darkvision|XPHB} with a range of 60 feet.",
+				"Resilience",
+				"You have {@variantrule Resistance|XPHB} to Poison damage. You also have {@variantrule Advantage|XPHB} on saving throws you make to avoid or end the {@condition Poisoned|XPHB} condition."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Belt of Fire Giant Strength|XDMG",
+			"hint": {
+				"Belt of Fire Giant Strength": "火巨人力量腰帶"
+			},
+			"s": [
+				"Belt of Fire Giant Strength",
+				"While wearing this belt, your Strength score changes to 25. The item has no effect on you if your Strength without the belt is equal to or greater than the belt's score."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Belt of Frost Giant Strength|XDMG",
+			"hint": {
+				"Belt of Frost Giant Strength": "霜巨人力量腰帶"
+			},
+			"s": [
+				"Belt of Frost Giant Strength",
+				"While wearing this belt, your Strength score changes to 23. The item has no effect on you if your Strength without the belt is equal to or greater than the belt's score."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Belt of Hill Giant Strength|XDMG",
+			"hint": {
+				"Belt of Hill Giant Strength": "山丘巨人力量腰帶"
+			},
+			"s": [
+				"Belt of Hill Giant Strength",
+				"While wearing this belt, your Strength score changes to 21. The item has no effect on you if your Strength without the belt is equal to or greater than the belt's score."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Belt of Stone Giant Strength|XDMG",
+			"hint": {
+				"Belt of Stone Giant Strength": "石巨人力量腰帶"
+			},
+			"s": [
+				"Belt of Stone Giant Strength",
+				"While wearing this belt, your Strength score changes to 23. The item has no effect on you if your Strength without the belt is equal to or greater than the belt's score."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Belt of Storm Giant Strength|XDMG",
+			"hint": {
+				"Belt of Storm Giant Strength": "風暴巨人力量腰帶"
+			},
+			"s": [
+				"Belt of Storm Giant Strength",
+				"While wearing this belt, your Strength score changes to 29. The item has no effect on you if your Strength without the belt is equal to or greater than the belt's score."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Black Dragon Scale Mail|XDMG",
+			"hint": {
+				"Black Dragon Scale Mail": "黑龍鱗甲"
+			},
+			"s": [
+				"Black Dragon Scale Mail",
+				"{#itemEntry Dragon Scale Mail|XDMG}"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Black Opal|XDMG",
+			"hint": {
+				"Black Opal": "黑蛋白石"
+			},
+			"s": [
+				"Black Opal",
+				"A dark green with black mottling and golden flecks gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Black Pearl|XDMG",
+			"hint": {
+				"Black Pearl": "黑珍珠"
+			},
+			"s": [
+				"Black Pearl",
+				"A pure black gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Black Sapphire|XDMG",
+			"hint": {
+				"Black Sapphire": "黑藍寶石"
+			},
+			"s": [
+				"Black Sapphire",
+				"A lustrous black with glowing highlights gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Black velvet mask stitched with silver thread|XDMG",
+			"hint": {
+				"Black velvet mask stitched with silver thread": "由銀絲縫製的漆黑天鵝絨面具"
+			},
+			"s": [
+				"Black velvet mask stitched with silver thread"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Blackrazor|XDMG",
+			"hint": {
+				"Blackrazor": "黑刃",
+				"Haste": "加速術"
+			},
+			"s": [
+				"Blackrazor",
+				"Hidden in the dungeon of White Plume Mountain, Blackrazor shines like a piece of night sky filled with stars. Its black scabbard is decorated with pieces of cut obsidian.",
+				"You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. If you hit an Undead with this weapon, you take {@damage 1d10} Necrotic damage, and the target regains {@dice 1d10} {@variantrule Hit Points|XPHB}. If this Necrotic damage reduces you to 0 {@variantrule Hit Points|XPHB}, Blackrazor devours your soul (see \"Devour Soul\" below).",
+				"While you hold this weapon, you have {@variantrule Immunity|XPHB} to the {@condition Charmed|XPHB} and {@condition Frightened|XPHB} conditions, and you have {@sense Blindsight|XPHB} with a range of 30 feet.",
+				"Devour Soul",
+				"Whenever you use Blackrazor to reduce a creature to 0 {@variantrule Hit Points|XPHB}, the sword slays the creature and devours its soul unless it is a Construct or an Undead. A creature whose soul has been devoured by Blackrazor can be restored to life only by a {@spell Wish|XPHB} spell.",
+				"When Blackrazor devours a soul that isn't yours, you gain {@variantrule Temporary Hit Points|XPHB} equal to the slain creature's {@variantrule Hit Points|XPHB|Hit Point} maximum.",
+				"Haste",
+				"Blackrazor can cast {@spell Haste|XPHB} on you, after which it can't cast this spell again until the next dawn. Blackrazor decides when to cast the spell, which takes effect at the start of your turn. The spell lasts for 1 minute (no {@status Concentration|XPHB} required) or until Blackrazor decides to end it, which it can do at the end of any of your turns.",
+				"Sentience",
+				"Blackrazor is a sentient Chaotic Neutral weapon with an Intelligence of 17, a Wisdom of 10, and a Charisma of 19. It has hearing and {@sense Darkvision|XPHB} out to 120 feet.",
+				"The weapon speaks Common and can communicate with its wielder telepathically. Its voice is deep and echoing. While you are attuned to it, Blackrazor also understands every language you know.",
+				"Personality",
+				"Blackrazor speaks with an imperious tone, as though accustomed to being obeyed.The sword's purpose is to consume souls. It doesn't care whose souls it eats, including the wielder's. The sword believes that all matter and energy sprang from a void of negative energy and will one day return to it. Blackrazor is meant to hurry that process along.",
+				"Despite its nihilism, Blackrazor feels a strange kinship to Wave and Whelm, two other weapons locked away under White Plume Mountain. It wants the three weapons to be reunited and wielded together in combat, even though it violently disagrees with Whelm and finds Wave tedious.",
+				"Blackrazor's hunger for souls must be regularly fed. If the sword goes 3 days or more without consuming a soul, a conflict between it and its wielder occurs at the next sunset.",
+				"Destroying Blackrazor",
+				"Blackrazor can be destroyed by crushing it in the great gears of Mechanus. Primus, the creator of the modrons, also knows a series of musical tones that Blackrazor can't stand to hear, causing the sword to shatter."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bloodstone|XDMG",
+			"hint": {
+				"Bloodstone": "血石"
+			},
+			"s": [
+				"Bloodstone",
+				"A dark gray with red flecks gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Blue Dragon Scale Mail|XDMG",
+			"hint": {
+				"Blue Dragon Scale Mail": "藍龍鱗甲"
+			},
+			"s": [
+				"Blue Dragon Scale Mail",
+				"{#itemEntry Dragon Scale Mail|XDMG}"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Blue Quartz|XDMG",
+			"hint": {
+				"Blue Quartz": "青石英"
+			},
+			"s": [
+				"Blue Quartz",
+				"A pale blue gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Blue Sapphire|XDMG",
+			"hint": {
+				"Blue Sapphire": "青藍寶石"
+			},
+			"s": [
+				"Blue Sapphire",
+				"A medium blue gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Blue Spinel|XDMG",
+			"hint": {
+				"Blue Spinel": "藍尖晶石"
+			},
+			"s": [
+				"Blue Spinel",
+				"A deep blue gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bomb|XDMG",
+			"hint": {
+				"Bomb": "炸彈"
+			},
+			"s": [
+				"Bomb",
+				"As an action, you can light a Bomb and throw it at a point up to 60 feet away, where it explodes. Each creature in a 5-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point makes a {@dc 12} Dexterity saving throw, taking {@damage 3d6} Fire damage on a failed save or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Book of Exalted Deeds|XDMG",
+			"hint": {
+				"Random Properties": "隨機屬性"
+			},
+			"s": [
+				"Book of Exalted Deeds",
+				"The definitive treatise on all that is good in the multiverse, the Book of Exalted Deeds figures prominently in many religions. Rather than being a scripture devoted to a particular faith, the book's authors filled the pages with their own visions of true virtue, providing guidance for defeating evil.",
+				"The Book of Exalted Deeds rarely lingers in one place. As soon as the book is read, it vanishes to some other corner of the multiverse where its moral guidance can bring hope to an endangered world. Although attempts have been made to copy the work, efforts to do so fail to capture its magical nature or translate the benefits it offers to those pure of heart and firm of purpose.",
+				"A heavy clasp, wrought to look like angel wings, keeps the book's contents secure. Only a creature that is attuned to the book can release the clasp that holds it shut. Once the book is opened, the attuned creature must spend 80 hours reading and studying the book to digest its contents and gain its benefits.",
+				"Other creatures that peruse the book's open pages can read the text but glean no deeper meaning and reap no benefits. A Fiend, an Undead, or a servant of a god from the Lower Planes that tries to read from the book takes {@damage 24d6} Radiant damage. This damage ignores {@variantrule Resistance|XPHB} and {@variantrule Immunity|XPHB}, and it can't be reduced or avoided by any means. A creature reduced to 0 {@variantrule Hit Points|XPHB} by this damage disappears in a flash and is destroyed, leaving its possessions behind. The book then vanishes, and the creature's {@variantrule Attunement|XPHB} to it ends.",
+				"Benefits granted by the Book of Exalted Deeds last only as long as you strive to do good. If you fail to perform at least one act of kindness or generosity within the span of 10 days, or if you willingly perform an evil act, you lose all the benefits granted by the book.",
+				"Celestial Calm",
+				"While attuned to the book, you have {@variantrule Immunity|XPHB} to the {@condition Charmed|XPHB} and {@condition Frightened|XPHB} conditions and {@variantrule Resistance|XPHB} to Psychic damage. These benefits become permanent after you spend the requisite amount of time reading and studying the book.",
+				"Divine Wisdom",
+				"After you spend the requisite amount of time reading and studying the book, your Wisdom increases by 2, to a maximum of 24. You can't gain this benefit from the book more than once.",
+				"Enlightened Magic",
+				"After you spend the requisite amount of time reading and studying the book, any spell slot you expend to cast a spell counts as a spell slot of one level higher.",
+				"Halo",
+				"After you spend the requisite amount of time reading and studying the book, you gain a protective halo. This halo sheds {@variantrule Bright Light|XPHB} in a 10-foot radius and {@variantrule Dim Light|XPHB} for an additional 10 feet. You can dismiss or manifest the halo as a {@variantrule Bonus Action|XPHB}. While present, the halo gives you {@variantrule Advantage|XPHB} on Charisma ({@skill Persuasion|XPHB}) checks. In addition, Fiends and Undead within the halo's {@variantrule Bright Light|XPHB} make attack rolls against you with {@variantrule Disadvantage|XPHB}.",
+				"Random Properties",
+				"The Book of Exalted Deeds has the following random properties:",
+				"2 {@table Artifact Properties; Minor Beneficial Properties|XDMG|minor beneficial} properties",
+				"2 {@table Artifact Properties; Major Beneficial Properties|XDMG|major beneficial} properties",
+				"Destroying the Book",
+				"The Book of Exalted Deeds can't be destroyed. However, drowning the book in the River Styx removes all writing and imagery from its pages and renders the book powerless for {@dice 1d100} years."
+			]
+		}
+	]
+}
