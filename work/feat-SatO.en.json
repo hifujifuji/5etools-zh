@@ -1,0 +1,97 @@
+{
+	"batch": "feat-SatO",
+	"items": [
+		{
+			"prop": "feat",
+			"key": "Agent of Order|SATO",
+			"s": [
+				"Agent of Order",
+				"You can channel cosmic forces of order to gain these benefits:",
+				"Stasis Strike",
+				"Once per turn, when you damage a creature you can see within 60 feet of yourself, you can deal an extra {@damage 1d8} force damage to the target, and it must make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + the modifier of the spellcasting ability you chose for the Scion of the Outer Planes feat) as spectral bindings try to ensnare it. On a successful save, the target escapes. On a failed save, the target has the restrained condition until the start of your next turn. These bindings manifest as chains or some other symbol of stasis. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Baleful Scion|SATO",
+			"s": [
+				"Baleful Scion",
+				"You can channel cosmic forces of evil to gain these benefits:",
+				"Grasp of Avarice",
+				"Once per turn, when you damage a creature you can see within 60 feet of yourself, you can also deal necrotic damage to it. The necrotic damage equals {@damage 1d6} + your proficiency bonus, and you regain a number of hit points equal to this necrotic damage dealt. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Cohort of Chaos|SATO",
+			"s": [
+				"Cohort of Chaos",
+				"You can channel cosmic forces of chaos to gain these benefits:",
+				"Chaotic Flare",
+				"When you roll a 1 or a 20 on an attack roll or a saving throw, the magic of chaos flows through you. Roll a d4 and consult the Chaotic Flares table to determine what happens. A flare lasts until the end of your next turn, and a new flare can't occur until after the first flare ends.",
+				"Chaotic Flares",
+				"d4",
+				"Flare",
+				"{@b Battle Fury.} A creature of your choice that you can see is filled with reckless fury. It has advantage on attack rolls and disadvantage on ability checks.",
+				"{@b Disruption Field.} Waves of energy ripple around you. Every creature that starts its turn within 5 feet of you, or that moves into that area for the first time on a turn, takes {@damage 1d8} force damage.",
+				"{@b Unbound.} When you move, you can use some or all of your walking speed to teleport yourself once, along with any equipment you're wearing or carrying, up to the distance used to an unoccupied space that you can see.",
+				"{@b Wailing Winds.} Winds swirl in a 15-foot-radius sphere centered on you. You and any other creatures in that area have disadvantage on Wisdom saving throws."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Outlands Envoy|SATO",
+			"s": [
+				"Outlands Envoy",
+				"You have spent significant time in Sigil or the Outlands, the crossroads of the multiverse. Being steeped in converging planar energies grants you these benefits:",
+				"Crossroads Emissary",
+				"You learn the {@spell misty step} and {@spell tongues} spells. You can cast each spell once using this feat without a spell slot, and you must finish a long rest before you can cast that spell in this way again. When you cast {@spell tongues} using this feat, you require no material components. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the one chosen when you gained the Scion of the Outer Planes feat."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Planar Wanderer|SATO",
+			"s": [
+				"Planar Wanderer",
+				"You can draw on the forces of the multiverse to survive cosmic extremes and to traverse its infinite realms, granting you these benefits:",
+				"Planar Adaptation",
+				"When you finish a long rest, you gain resistance to either acid, cold, or fire damage (your choice) until you finish your next long rest.",
+				"Portal Cracker",
+				"Your experience with portals allows you to open them without a portal key. As an action, you can concentrate on a portal you're aware of that is within 5 feet of yourself and make a {@dc 20} Intelligence ({@skill Arcana}) check. On a failed check, you take {@damage 3d8} psychic damage and can't use this benefit on that portal again until you finish a long rest. On a successful check, you can force the portal open or closed for 1 hour. For that duration, the portal doesn't respond to its portal key unless a creature employing the key succeeds on a {@dc 20} Intelligence ({@skill Arcana}) check as an action.",
+				"Portal Sense",
+				"You know the direction to the last planar portal you used while you and the portal are on the same plane of existence. Moreover, as an action, you can detect the location of any portals within 30 feet of you that aren't behind {@quickref Cover||3||total cover}. Once you detect a portal with this action, you can't use the action again until you finish a long rest."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Righteous Heritor|SATO",
+			"s": [
+				"Righteous Heritor",
+				"You can channel cosmic forces of good to gain these benefits:",
+				"Soothe Pain",
+				"When you or a creature within 30 feet of you takes damage, you can use your reaction to reduce that damage by {@dice 1d10} + your proficiency bonus. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Scion of the Outer Planes|SATO",
+			"s": [
+				"Scion of the Outer Planes",
+				"Your connection to an Outer Plane infuses you with the energy there. Choose a type of plane listed in the Planar Infusion table. Your choice gives you resistance to a damage type and the ability to cast a cantrip, as specified in the table. You can cast this cantrip without material components, and your spellcasting ability for it is Intelligence, Wisdom, or Charisma (choose when you select this feat).",
+				"Plane",
+				"Damage Resistance",
+				"Cantrip",
+				"Chaotic Outer Plane",
+				"Poison",
+				"Evil Outer Plane",
+				"Necrotic",
+				"Good Outer Plane",
+				"Radiant",
+				"Lawful Outer Plane",
+				"Force",
+				"The Outlands",
+				"Psychic"
+			]
+		}
+	]
+}

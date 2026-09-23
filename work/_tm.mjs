@@ -1,9 +1,11 @@
 import fs from "fs";
 const tm = {};
-for (const i of [1, 2, 3, 4]) {
-	const en = JSON.parse(fs.readFileSync(`work/efa-art-${i}.en.json`)).items;
-	const zh = JSON.parse(fs.readFileSync(`work/efa-art-${i}.zh.json`));
-	en.forEach((e, k) => { const z = Array.isArray(zh) ? zh[k] : zh[e.key]; e.s.forEach((s, j) => { if (z?.[j]) tm[s] = z[j]; }); });
+for (const f of fs.readdirSync("work").filter(f => f.endsWith(".zh.json"))) {
+	const b = f.replace(/\.zh\.json$/, "");
+	if (!fs.existsSync(`work/${b}.en.json`)) continue;
+	let en, zh;
+	try { en = JSON.parse(fs.readFileSync(`work/${b}.en.json`)).items; zh = JSON.parse(fs.readFileSync(`work/${f}`)); } catch { continue; }
+	en.forEach((e, k) => { const z = Array.isArray(zh) ? zh[k] : zh[e.key]; if (!Array.isArray(z)) return; e.s.forEach((s, j) => { if (typeof z[j] === "string" && z[j] !== s && /[㐀-鿿]/.test(z[j])) tm[s] ??= z[j]; }); });
 }
 export default tm;
 if (process.argv[2]) {

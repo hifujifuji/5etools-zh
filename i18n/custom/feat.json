@@ -1,4 +1,189 @@
 {
+	"Aberrant Dragonmark|EFA": {
+		"name": "異常龍紋",
+		"source": "EFA",
+		"page": 39,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "con",
+				"prepared": {
+					"_": {
+						"rest": {
+							"1": [
+								{
+									"choose": "level=1|class=Sorcerer"
+								}
+							]
+						}
+					}
+				},
+				"known": {
+					"_": [
+						{
+							"choose": "level=0|class=Sorcerer"
+						}
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "異常堅韌",
+				"entries": [
+					"當你的體質豁免檢定失敗時，你可以執行一個{@variantrule Reaction|XPHB}擲 {@dice 1d4}，並將結果加到該豁免上，可能使失敗轉為成功。使用此益處後，直到你完成{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Aberrant Fortitude"
+			},
+			{
+				"type": "entries",
+				"name": "異常魔法",
+				"entries": [
+					"你知道一道{@filter 術士法術列表中的自選戲法|spells|level=0|class=Sorcerer}。此外，從該法術列表中選擇一道 1 環法術。你總是準備著該法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的任何法術欄位施展此法術。體質為你施展此法術的施法屬性。"
+				],
+				"ENG_name": "Aberrant Magic"
+			},
+			{
+				"type": "entries",
+				"name": "異常湧動",
+				"entries": [
+					"當你施展來自此專長的 1 環法術時，你可以消耗一顆{@variantrule Hit Point Dice|XPHB}並擲骰。若擲出偶數，你獲得等同於擲骰結果的{@variantrule Temporary Hit Points|XPHB}。若擲出奇數，你 30 呎內的一個生物（不包括你）受到等同於擲骰結果的力場傷害。若範圍內沒有其他生物，則由你承受該傷害。"
+				],
+				"ENG_name": "Aberrant Surge"
+			}
+		],
+		"ENG_name": "Aberrant Dragonmark"
+	},
+	"Aberrant Dragonmark|ERLW": {
+		"name": "異常龍紋",
+		"source": "ERLW",
+		"page": 52,
+		"reprintedAs": [
+			"Aberrant Dragonmark|EFA"
+		],
+		"prerequisite": [
+			{
+				"other": "無其他龍紋"
+			}
+		],
+		"ability": [
+			{
+				"con": 1
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "con",
+				"innate": {
+					"_": {
+						"rest": {
+							"1": [
+								{
+									"choose": "level=1|class=Sorcerer"
+								}
+							]
+						}
+					}
+				},
+				"known": {
+					"_": [
+						{
+							"choose": "level=0|class=Sorcerer"
+						}
+					]
+				}
+			}
+		],
+		"entries": [
+			"你顯現了一個異常龍紋。決定它的外觀以及與之相關的缺陷。你獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"你學會一道{@filter 術士法術列表中的自選戲法|spells|level=0|class=Sorcerer}。此外，選擇一道{@filter 術士法術列表中的 1 環法術|spells|level=1|class=Sorcerer}。你學會該法術，並能透過你的印記施展它。施展後，你必須完成短休或長休才能再透過印記施展它。體質是你施展這些法術的施法屬性。",
+					"當你透過印記施展 1 環法術時，你可以消耗一顆生命骰並擲骰。若擲出偶數，你獲得等同於擲骰結果的臨時生命值。若擲出奇數，你 30 呎內一個隨機生物（不包括你）受到等同於擲骰結果的力場傷害。若範圍內沒有其他生物，則由你承受該傷害。"
+				]
+			},
+			"你也會從「異常龍紋缺陷」表中隨機獲得一項缺陷。",
+			{
+				"type": "table",
+				"caption": "異常龍紋缺陷",
+				"colLabels": [
+					"d8",
+					"缺陷"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"你的印記是持續身體疼痛的來源。"
+					],
+					[
+						"2",
+						"你的印記會對你低語。其含義可能晦澀難解。"
+					],
+					[
+						"3",
+						"當你感到壓力時，印記會發出清晰可聞的嘶嘶聲。"
+					],
+					[
+						"4",
+						"印記周圍的皮膚燒焦、長鱗或枯萎。"
+					],
+					[
+						"5",
+						"動物在你身邊會感到不安。"
+					],
+					[
+						"6",
+						"每當你使用印記時，你的情緒都會劇烈起伏。"
+					],
+					[
+						"7",
+						"每當你使用印記時，你的外貌都會略微改變。"
+					],
+					[
+						"8",
+						"使用印記後，你會做可怕的惡夢。"
+					]
+				]
+			},
+			{
+				"type": "section",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "選項：更強大的異常力量",
+								"entries": [
+									"若 DM 同意，擁有異常龍紋專長的角色有機會顯現更強大的力量。達到 10 級時，這樣的角色有 {@chance 10} 的機會從{@book Dungeon Master's Guide|DMG}第 7 章的選項中獲得一項{@filter 史詩恩賜|rewards|type=boon}。若角色未能獲得恩賜，則在下次獲得等級時仍有 {@chance 10} 的機會。",
+									"若角色獲得恩賜，由 DM 選擇或隨機決定。角色也會永久失去一顆生命骰，且其生命值上限減少等同於該骰擲骰結果加上其體質調整值的數值（至少減少 1）。此減少無法以任何方式逆轉。"
+								],
+								"ENG_name": "Option: Greater Aberrant Powers"
+							}
+						]
+					}
+				]
+			}
+		],
+		"ENG_name": "Aberrant Dragonmark"
+	},
 	"Ability Score Improvement|XPHB": {
 		"name": "屬性值提升",
 		"source": "XPHB",
@@ -97,6 +282,238 @@
 		],
 		"ENG_name": "Actor"
 	},
+	"Adept of the Black Robes|DSOTDQ": {
+		"name": "黑袍法師行家",
+		"source": "DSotDQ",
+		"page": 31,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"initiate of high sorcery|dsotdq|initiate of high sorcery (nuitari)"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								{
+									"choose": "level=2|school=E;N"
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你選擇讓月亮努塔瑞影響你的魔法，而你的野心與對黑袍法師會的忠誠已獲得認可，賦予你下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "野心魔法",
+						"entries": [
+							"你學會一道自選的 2 環法術。該{@filter 2 環法術|spells|level=2|school=E;N}必須屬於惑控系或死靈系學派。你可以不消耗法術欄位施展此專長的 2 環法術，且必須完成長休後才能再以此方式施展它。你也可以使用你擁有的適當環階法術欄位施展此法術。此法術的施法屬性為你獲得{@feat Initiate of High Sorcery|DSotDQ}專長時所選擇的屬性。"
+						],
+						"ENG_name": "Ambitious Magic"
+					},
+					{
+						"type": "item",
+						"name": "生命導引",
+						"entries": [
+							"你可以將生命力導入魔法的力量之中。當你 60 呎內一個你能看見的生物對你施展的傷害法術豁免失敗時，你可以消耗數量等同於該法術環階的生命骰。擲出消耗的生命骰並加總，該生物所受的傷害增加等同於總和的數值。"
+						],
+						"ENG_name": "Life Channel"
+					}
+				]
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Adept of the Black Robes"
+	},
+	"Adept of the Red Robes|DSOTDQ": {
+		"name": "紅袍法師行家",
+		"source": "DSotDQ",
+		"page": 32,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"initiate of high sorcery|dsotdq|initiate of high sorcery (lunitari)"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								{
+									"choose": "level=2|school=I;T"
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你選擇讓月亮魯尼塔瑞影響你的魔法，而你致力於維持萬物平衡的奉獻已獲得紅袍法師會的認可，賦予你下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "洞察魔法",
+						"entries": [
+							"你學會一道自選的 2 環法術。該{@filter 2 環法術|spells|level=2|school=I;T}必須屬於幻術系或變化系學派。你可以不消耗法術欄位施展此專長的 2 環法術，且必須完成長休後才能再以此方式施展它。你也可以使用你擁有的適當環階法術欄位施展此法術。此法術的施法屬性為你獲得{@feat Initiate of High Sorcery|DSotDQ}專長時所選擇的屬性。"
+						],
+						"ENG_name": "Insightful Magic"
+					},
+					{
+						"type": "item",
+						"name": "魔法平衡",
+						"entries": [
+							"當你進行攻擊檢定或屬性檢定，且在 {@dice d20} 上擲出 9 或更低時，你可以平衡命運，將該擲骰視為 10。你可以以此方式平衡命運的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Magical Balance"
+					}
+				]
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Adept of the Red Robes"
+	},
+	"Adept of the White Robes|DSOTDQ": {
+		"name": "白袍法師行家",
+		"source": "DSotDQ",
+		"page": 32,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"initiate of high sorcery|dsotdq|initiate of high sorcery (solinari)"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								{
+									"choose": "level=2|school=A;D"
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你選擇讓月亮索林納瑞影響你的魔法，而你以魔法讓世界更美好的誓言已獲得白袍法師會的認可，賦予你下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "防護魔法",
+						"entries": [
+							"你學會一道自選的 2 環法術。該{@filter 2 環法術|spells|level=2|school=A;D}必須屬於防護系或預言系學派。你可以不消耗法術欄位施展此專長的 2 環法術，且必須完成長休後才能再以此方式施展它。你也可以使用你擁有的適當環階法術欄位施展此法術。此法術的施法屬性為你獲得{@feat Initiate of High Sorcery|DSotDQ}專長時所選擇的屬性。"
+						],
+						"ENG_name": "Protective Magic"
+					},
+					{
+						"type": "item",
+						"name": "保護結界",
+						"entries": [
+							"當你或你 30 呎內一個你能看見的生物受到傷害時，你可以使用你的反應消耗一個法術欄位，在目標周圍編織保護魔法。擲數量等同於所消耗法術欄位環階的 d6，目標所受的傷害減少擲骰總和 + 你的施法屬性調整值。"
+						],
+						"ENG_name": "Protective Ward"
+					}
+				]
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Adept of the White Robes"
+	},
+	"Agent of Order|SATO": {
+		"name": "秩序特使",
+		"source": "SatO",
+		"page": 10,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"scion of the outer planes|sato|scion of the outer planes (lawful outer plane)"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你可以引導宇宙的秩序之力，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "靜滯打擊",
+						"entries": [
+							"每回合一次，當你對你 60 呎內一個你能看見的生物造成傷害時，你可以對目標額外造成 {@damage 1d8} 力場傷害，且目標必須進行一次感知豁免檢定（DC 等於 8 + 你的熟練加值 + 你為外層位面後裔專長所選施法屬性的調整值），因為幽靈般的束縛試圖困住它。豁免成功時，目標掙脫。豁免失敗時，目標處於束縛狀態，直到你的下個回合開始。這些束縛會顯現為鎖鏈或其他靜滯的象徵。你可以使用此益處的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Stasis Strike"
+					}
+				]
+			}
+		],
+		"ENG_name": "Agent of Order"
+	},
 	"Alert|XPHB": {
 		"name": "警覺",
 		"source": "XPHB",
@@ -143,6 +560,51 @@
 			"你以遠程武器進行的攻擊檢定獲得 +2 加值。"
 		],
 		"ENG_name": "Archery"
+	},
+	"Artificer Initiate|TCE": {
+		"name": "奇械新手",
+		"source": "TCE",
+		"page": 79,
+		"toolProficiencies": [
+			{
+				"anyArtisansTool": 1
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "int",
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=Artificer"
+								}
+							]
+						}
+					}
+				},
+				"known": {
+					"_": [
+						{
+							"choose": "level=0|class=Artificer"
+						}
+					]
+				}
+			}
+		],
+		"entries": [
+			"你學會了奇械師的一些發明巧思：",
+			{
+				"type": "list",
+				"items": [
+					"你從{@filter 奇械師法術列表|spells|level=0;1|class=artificer}中學會一道自選戲法，並從{@filter 該列表|spells|level=0;1|class=artificer}中學會一道自選的 1 環法術。智力是你施展這些法術的施法屬性。",
+					"你可以不消耗法術欄位施展此專長的 1 環法術，且必須完成長休後才能再以此方式施展它。你也可以使用你擁有的任何法術欄位施展此法術。",
+					"你獲得一種自選{@filter 工匠工具|items|type=artisan's tools}的熟練，並可以將該工具作為施法法器，用於你施展的任何以智力為施法屬性的法術。"
+				]
+			}
+		],
+		"ENG_name": "Artificer Initiate"
 	},
 	"Athlete|XPHB": {
 		"name": "運動健將",
@@ -206,6 +668,52 @@
 		],
 		"ENG_name": "Athlete"
 	},
+	"Baleful Scion|SATO": {
+		"name": "邪惡後裔",
+		"source": "SatO",
+		"page": 10,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"scion of the outer planes|sato|scion of the outer planes (evil outer plane)"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你可以引導宇宙的邪惡之力，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "貪婪之握",
+						"entries": [
+							"每回合一次，當你對你 60 呎內一個你能看見的生物造成傷害時，你也可以對它造成黯蝕傷害。黯蝕傷害等於 {@damage 1d6} + 你的熟練加值，且你恢復等同於所造成黯蝕傷害的生命值。你可以使用此益處的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Grasp of Avarice"
+					}
+				]
+			}
+		],
+		"ENG_name": "Baleful Scion"
+	},
 	"Blessed Warrior|XPHB": {
 		"name": "受祝福的戰士",
 		"source": "XPHB",
@@ -259,6 +767,234 @@
 		],
 		"ENG_name": "Blind Fighting"
 	},
+	"Bloodlust|ABH": {
+		"name": "嗜血",
+		"source": "ABH",
+		"page": 9,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "強力恢復",
+				"entries": [
+					"當你擲{@variantrule Hit Point Dice|XPHB|生命骰}來恢復{@variantrule Hit Points|XPHB}時，可以將擲出的任何 1 或 2 視為 3。"
+				],
+				"ENG_name": "Powerful Recovery"
+			},
+			{
+				"type": "entries",
+				"name": "血腥盛宴",
+				"entries": [
+					"每回合一次，當你以攻擊檢定命中一個處於{@status Bloodied|XPHB}狀態、且非構裝生物或不死生物的生物時，你可以消耗一顆{@variantrule Hit Point Dice|XPHB|生命骰}並擲骰，恢復等同於擲骰結果加上你體質調整值的{@variantrule Hit Points|XPHB}。",
+					"你可以使用此特性的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。"
+				],
+				"ENG_name": "Sanguine Feast"
+			}
+		],
+		"ENG_name": "Bloodlust"
+	},
+	"Bomber|ABH": {
+		"name": "投彈手",
+		"source": "ABH",
+		"page": 9,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"dex": 1
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "遠距投擲",
+				"entries": [
+					"當你使用{@action Attack|XPHB}動作投擲藥瓶或燒瓶時，你可以將你 40 呎內一個你能看見的物件或生物作為目標。"
+				],
+				"ENG_name": "Far Lobber"
+			},
+			{
+				"type": "entries",
+				"name": "長距離射擊",
+				"entries": [
+					"以長射程攻擊不會使你以{@itemProperty T|XPHB|投擲}武器進行的攻擊檢定具有{@variantrule Disadvantage|XPHB}。"
+				],
+				"ENG_name": "Long Shots"
+			}
+		],
+		"ENG_name": "Bomber"
+	},
+	"Boon of Blazing Dawn|ABH": {
+		"name": "熾烈黎明恩賜",
+		"source": "ABH",
+		"page": 11,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"immune": [
+			"radiant"
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "太陽所愛",
+				"entries": [
+					"你對光耀傷害具有{@variantrule Immunity|XPHB}。"
+				],
+				"ENG_name": "Beloved of the Sun"
+			},
+			{
+				"type": "entries",
+				"name": "熾烈打擊",
+				"entries": [
+					"當你以武器攻擊命中一個生物時，其傷害可以是光耀或該武器的一般傷害類型（由你選擇）。"
+				],
+				"ENG_name": "Blazing Strike"
+			},
+			{
+				"type": "entries",
+				"name": "陽光迸發",
+				"entries": [
+					"每回合一次，當你以造成光耀傷害的攻擊命中一個生物時，你可以從自身發出 30 呎半徑的{@variantrule Bright Light|XPHB}，並在其外額外 30 呎發出{@variantrule Dim Light|XPHB}，直到你的下個回合開始。此光為陽光。"
+				],
+				"ENG_name": "Burst of Sunlight"
+			}
+		],
+		"ENG_name": "Boon of Blazing Dawn"
+	},
+	"Boon of Bloodshed|FRHOF": {
+		"name": "血戮恩賜",
+		"source": "FRHoF",
+		"page": 42,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "殺手的好運",
+				"entries": [
+					"當一個你能看見的敵人降至 0 點{@variantrule Hit Points|XPHB}時，你在下個回合結束前進行的下一次攻擊檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Killer's Fortune"
+			},
+			{
+				"type": "entries",
+				"name": "痛苦之力",
+				"entries": [
+					"每回合一次，當你在{@status Bloodied|XPHB}狀態下進行攻擊檢定時，你可以對目標造成等同於你{@variantrule Proficiency|XPHB|熟練加值}的額外傷害。額外傷害的類型與該攻擊的傷害類型相同。"
+				],
+				"ENG_name": "Power from Pain"
+			}
+		],
+		"ENG_name": "Boon of Bloodshed"
+	},
+	"Boon of Bountiful Health|FRHOF": {
+		"name": "豐沛生命恩賜",
+		"source": "FRHoF",
+		"page": 42,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "強化生命",
+				"entries": [
+					"當你獲得{@variantrule Temporary Hit Points|XPHB}時，所獲得的{@variantrule Temporary Hit Points|XPHB}增加 5。"
+				],
+				"ENG_name": "Augmented Health"
+			},
+			{
+				"type": "entries",
+				"name": "卓越恢復",
+				"entries": [
+					"當你消耗一顆或多顆{@variantrule Hit Point Dice|XPHB}來恢復{@variantrule Hit Points|XPHB}時，你可以改為讓每顆骰子都取最大值。"
+				],
+				"ENG_name": "Superior Recuperation"
+			}
+		],
+		"ENG_name": "Boon of Bountiful Health"
+	},
 	"Boon of Combat Prowess|XPHB": {
 		"name": "英勇戰鬥之恩賜",
 		"source": "XPHB",
@@ -298,6 +1034,91 @@
 			}
 		],
 		"ENG_name": "Boon of Combat Prowess"
+	},
+	"Boon of Communication|FRHOF": {
+		"name": "溝通恩賜",
+		"source": "FRHoF",
+		"page": 42,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "狡黠說客",
+				"entries": [
+					"你為影響{@variantrule Hostile [Attitude]|XPHB|敵對}生物而進行的屬性檢定不會具有{@variantrule Disadvantage|XPHB}。"
+				],
+				"ENG_name": "Cunning Speaker"
+			},
+			{
+				"type": "entries",
+				"name": "天賦通譯",
+				"entries": [
+					"你能理解你聽到或看到比劃的任何語言的字面意思，也能理解你看到的任何書面語言的字面意思。"
+				],
+				"ENG_name": "Gifted Interpreter"
+			},
+			{
+				"type": "entries",
+				"name": "心靈交流",
+				"entries": [
+					"你獲得範圍 120 呎的心靈感應。"
+				],
+				"ENG_name": "Mental Communication"
+			}
+		],
+		"ENG_name": "Boon of Communication"
+	},
+	"Boon of Desperate Resilience|FRHOF": {
+		"name": "絕境堅韌恩賜",
+		"source": "FRHoF",
+		"page": 42,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"con"
+					]
+				},
+				"max": 30
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "身心防禦",
+				"entries": [
+					"當你處於{@status Bloodied|XPHB}狀態時，你對力場以外的所有傷害類型具有{@variantrule Resistance|XPHB}。"
+				],
+				"ENG_name": "Defense of Body and Mind"
+			}
+		],
+		"ENG_name": "Boon of Desperate Resilience"
 	},
 	"Boon of Dimensional Travel|XPHB": {
 		"name": "次元旅行之恩賜",
@@ -403,6 +1224,52 @@
 		],
 		"ENG_name": "Boon of Energy Resistance"
 	},
+	"Boon of Exquisite Radiance|FRHOF": {
+		"name": "至美光輝恩賜",
+		"source": "FRHoF",
+		"page": 42,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "永恆安息",
+				"entries": [
+					"被你降至 0 點{@variantrule Hit Points|XPHB}的生物無法成為不死生物。"
+				],
+				"ENG_name": "Eternal Rest"
+			},
+			{
+				"type": "entries",
+				"name": "強效光輝",
+				"entries": [
+					"當你進行造成光耀傷害的傷害擲骰時，你可以改為讓每顆傷害骰都取最大值。使用此益處後，直到你完成{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Powerful Radiance"
+			}
+		],
+		"ENG_name": "Boon of Exquisite Radiance"
+	},
 	"Boon of Fate|XPHB": {
 		"name": "扭曲命運之恩賜",
 		"source": "XPHB",
@@ -444,6 +1311,51 @@
 		"hasFluffImages": true,
 		"ENG_name": "Boon of Fate"
 	},
+	"Boon of Fluid Forms|FRHOF": {
+		"name": "流變形態恩賜",
+		"source": "FRHoF",
+		"page": 42,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "變形者",
+				"entries": [
+					"你可以執行一個{@action Magic|XPHB}動作，變形為一隻{@variantrule Challenge Rating|XPHB}不高於 10 的野獸、類人生物或怪獸。變形時，你獲得等同於該形態{@variantrule Hit Points|XPHB}的{@variantrule Temporary Hit Points|XPHB}。變形效果持續 1 小時；若你的{@variantrule Temporary Hit Points|XPHB}耗盡，或你執行一個{@action Magic|XPHB}動作變回真實形態，效果便提早結束。",
+					"你的遊戲數據由所選形態的數據區塊取代，但你保留你的生物類型；陣營；性格；智力、感知與魅力值；{@variantrule Hit Points|XPHB}；{@variantrule Hit Point Dice|XPHB}；熟練；以及溝通能力。若你擁有施法或契約魔法特性，你也保留它。變形時，由你決定你的裝備是掉落在地，還是在你處於新形態期間改變大小與形狀以配合新形態。",
+					"使用此益處後，直到你完成{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Shapechanger"
+			},
+			{
+				"type": "entries",
+				"name": "堅韌變身",
+				"entries": [
+					"當你因變形而獲得{@variantrule Temporary Hit Points|XPHB}時，所獲得的{@variantrule Temporary Hit Points|XPHB}增加 20。"
+				],
+				"ENG_name": "Hardy Transformation"
+			}
+		],
+		"ENG_name": "Boon of Fluid Forms"
+	},
 	"Boon of Fortitude|XPHB": {
 		"name": "超凡強韌之恩賜",
 		"source": "XPHB",
@@ -481,6 +1393,44 @@
 			}
 		],
 		"ENG_name": "Boon of Fortitude"
+	},
+	"Boon of Fortune's Favor|FRHOF": {
+		"name": "命運眷顧恩賜",
+		"source": "FRHoF",
+		"page": 43,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "豁免重擲",
+				"entries": [
+					"當你的豁免檢定失敗時，你可以重擲，且必須使用新的結果。使用此益處後，直到你的下個回合開始前都無法再次使用。"
+				],
+				"ENG_name": "Saving Throw Reroll"
+			}
+		],
+		"ENG_name": "Boon of Fortune's Favor"
 	},
 	"Boon of Irresistible Offense|XPHB": {
 		"name": "無敵攻勢之恩賜",
@@ -525,6 +1475,153 @@
 			}
 		],
 		"ENG_name": "Boon of Irresistible Offense"
+	},
+	"Boon of Looming Shadows|ABH": {
+		"name": "逼近陰影恩賜",
+		"source": "ABH",
+		"page": 11,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "陰影延伸",
+				"entries": [
+					"當你執行{@action Attack|XPHB}動作時，直到你的回合結束前，你的近戰武器攻擊觸及增加 10 呎。"
+				],
+				"ENG_name": "Shadowy Stretch"
+			},
+			{
+				"type": "entries",
+				"name": "舞動剪影",
+				"entries": [
+					"你可以用{@variantrule Bonus Action|XPHB}執行{@action Dodge|XPHB}動作。"
+				],
+				"ENG_name": "Dancing Silhouette"
+			}
+		],
+		"ENG_name": "Boon of Looming Shadows"
+	},
+	"Boon of Misty Escape|ABH": {
+		"name": "霧化逃脫恩賜",
+		"source": "ABH",
+		"page": 11,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								"gaseous form|xphb"
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "氣化形體",
+				"entries": [
+					"若你的{@variantrule Hit Points|XPHB}降至 0 但未被直接殺死，你可以改為降至 1 點{@variantrule Hit Points|XPHB|生命值}，並不消耗法術欄位施展{@spell Gaseous Form|XPHB}（無需動作）。以此方式施展此法術時，你只能以自己為目標，你的{@variantrule Fly Speed|XPHB}為 20 呎，且在法術持續期間，你在每個回合開始時恢復 10 點{@variantrule Hit Points|XPHB}。此法術的施法屬性為此專長所提升的屬性。",
+					"使用此益處後，直到你完成{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Gaseous Form"
+			}
+		],
+		"ENG_name": "Boon of Misty Escape"
+	},
+	"Boon of Poison Mastery|FRHOF": {
+		"name": "毒素精通恩賜",
+		"source": "FRHoF",
+		"page": 43,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "抗毒",
+				"entries": [
+					"你對毒素傷害與{@condition Poisoned|XPHB}狀態具有{@variantrule Immunity|XPHB}。"
+				],
+				"ENG_name": "Antitoxic"
+			},
+			{
+				"type": "entries",
+				"name": "完美施毒者",
+				"entries": [
+					"每回合一次，當你擲骰決定一個生物因你的攻擊、法術或特性所受的毒素傷害時，你可以改為讓每顆骰子都取最大值。"
+				],
+				"ENG_name": "Perfect Poisoner"
+			}
+		],
+		"ENG_name": "Boon of Poison Mastery"
 	},
 	"Boon of Recovery|XPHB": {
 		"name": "恢復活力之恩賜",
@@ -571,6 +1668,414 @@
 			}
 		],
 		"ENG_name": "Boon of Recovery"
+	},
+	"Boon of Revelry|FRHOF": {
+		"name": "狂歡恩賜",
+		"source": "FRHoF",
+		"page": 43,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"additionalSpells": [
+			{
+				"prepared": {
+					"_": [
+						"otto's irresistible dance|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "激發舞蹈",
+				"entries": [
+					"你總是準備著{@spell Otto's Irresistible Dance|XPHB}法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的適當環階法術欄位施展此法術。",
+					"你施展此法術時不需要法術成分，且受到傷害不會中斷你對它的{@status Concentration|XPHB}。"
+				],
+				"ENG_name": "Inspire Dance"
+			},
+			{
+				"type": "entries",
+				"name": "放聲高歌",
+				"entries": [
+					"當一個對你的{@spell Otto's Irresistible Dance|XPHB}豁免失敗的生物因該法術處於{@condition Charmed|XPHB}狀態時，它無法施展具有言語成分的法術，且若它能唱歌，便會唱起令人愉快的胡言亂語。"
+				],
+				"ENG_name": "Sing Out"
+			}
+		],
+		"ENG_name": "Boon of Revelry"
+	},
+	"Boon of Siberys|EFA": {
+		"name": "西伯瑞斯的恩賜",
+		"source": "EFA",
+		"page": 45,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19,
+				"campaign": [
+					"Eberron"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"additionalSpells": [
+			{
+				"name": "Mark of Handling",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"animal shapes|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Mark of Storm",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"control weather|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Mark of Making",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"demiplane|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Mark of Hospitality",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"heroes' feast|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Mark of Warding",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"maze|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Mark of Sentinel",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"mind blank|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Mark of Passage",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"plane shift|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Mark of Shadow",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"project image|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Mark of Healing",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"regenerate|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Mark of Scribing",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"symbol|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Mark of Finding",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"teleport|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Mark of Detection",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"true seeing|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Sorcerer Spell",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1;2;3;4;5;6;7;8|class=Sorcerer"
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "異常魔法",
+				"entries": [
+					"從{@filter 術士法術列表|spells|class=Sorcerer|level=0;1;2;3;4;5;6;7;8}中選擇一道 8 環或更低環的法術，或從「西伯瑞斯龍紋法術」表中選擇一道法術（若你想將法術與某種龍紋連結，表中附有建議的龍紋）。你總是準備著該法術。你可以不消耗法術欄位或法術成分施展它一次，並在完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的適當環階法術欄位施展此法術。智力、感知或魅力為你施展此法術的施法屬性（於獲得此專長時決定）。",
+					{
+						"type": "table",
+						"caption": "西伯瑞斯龍紋法術",
+						"colStyles": [
+							"col-6",
+							"col-6"
+						],
+						"colLabels": [
+							"法術",
+							"建議龍紋"
+						],
+						"rows": [
+							[
+								"{@spell Animal Shapes|XPHB}",
+								"馴獸"
+							],
+							[
+								"{@spell Control Weather|XPHB}",
+								"暴風"
+							],
+							[
+								"{@spell Demiplane|XPHB}",
+								"製造"
+							],
+							[
+								"{@spell Heroes' Feast|XPHB}",
+								"款待"
+							],
+							[
+								"{@spell Maze|XPHB}",
+								"守護"
+							],
+							[
+								"{@spell Mind Blank|XPHB}",
+								"哨兵"
+							],
+							[
+								"{@spell Plane Shift|XPHB}",
+								"通行"
+							],
+							[
+								"{@spell Project Image|XPHB}",
+								"陰影"
+							],
+							[
+								"{@spell Regenerate|XPHB}",
+								"治療"
+							],
+							[
+								"{@spell Symbol|XPHB}",
+								"書記"
+							],
+							[
+								"{@spell Teleport|XPHB}",
+								"尋覓"
+							],
+							[
+								"{@spell True Seeing|XPHB}",
+								"偵測"
+							]
+						]
+					}
+				],
+				"ENG_name": "Aberrant Magic"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Boon of Siberys"
 	},
 	"Boon of Skill|XPHB": {
 		"name": "技能之恩賜",
@@ -730,6 +2235,155 @@
 		],
 		"ENG_name": "Boon of Spell Recall"
 	},
+	"Boon of Terror|FRHOF": {
+		"name": "恐懼恩賜",
+		"source": "FRHoF",
+		"page": 43,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"cha": 1,
+				"max": 30
+			}
+		],
+		"skillProficiencies": [
+			{
+				"intimidation": true
+			}
+		],
+		"expertise": [
+			{
+				"intimidation": true
+			}
+		],
+		"conditionImmune": [
+			"frightened"
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "無所畏懼",
+				"entries": [
+					"你對{@condition Frightened|XPHB}狀態具有{@variantrule Immunity|XPHB}。"
+				],
+				"ENG_name": "Fearless"
+			},
+			{
+				"type": "entries",
+				"name": "快逃啊，蠢貨！",
+				"entries": [
+					"當一個處於{@condition Frightened|XPHB}狀態的生物在你 60 呎內開始其回合時，只要你能看見該生物且它不在{@variantrule Cover|XPHB|全遮蔽}之後，你可以執行一個{@variantrule Reaction|XPHB}加深它的恐懼。若你這麼做，該生物必須通過一次感知豁免檢定（DC 等於 8 加上你的魅力調整值與{@variantrule Proficiency|XPHB|熟練加值}），否則在其回合中以最快的可用方式遠離你。使用此益處後，直到你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Flee, Fools!"
+			},
+			{
+				"type": "entries",
+				"name": "威嚇",
+				"entries": [
+					"若你尚未具備{@skill Intimidation|XPHB}技能的{@variantrule Proficiency|XPHB|熟練}，你獲得該熟練。你也獲得{@skill Intimidation|XPHB}的{@variantrule Expertise|XPHB}。"
+				],
+				"ENG_name": "Intimidating"
+			}
+		],
+		"ENG_name": "Boon of Terror"
+	},
+	"Boon of the Bright Sun|FRHOF": {
+		"name": "烈日恩賜",
+		"source": "FRHoF",
+		"page": 43,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"con",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "白晝存在",
+				"entries": [
+					"作為一個{@variantrule Bonus Action|XPHB}，你散發出 30 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍的{@variantrule Bright Light|XPHB}，此光為陽光。若該{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍與法術創造的{@spell Darkness|XPHB}區域有任何重疊，該法術便被解除。此{@variantrule Emanation [Area of Effect]|XPHB|散發}持續到你解除它（無需動作）、死亡或處於{@condition Incapacitated|XPHB}狀態為止。"
+				],
+				"ENG_name": "Daylight Presence"
+			},
+			{
+				"type": "entries",
+				"name": "強化之光",
+				"entries": [
+					"當你的「白晝存在」啟動時，在你的每個回合開始時，你與位於你「白晝存在」中你能看見的盟友獲得 10 點{@variantrule Temporary Hit Points|XPHB}。"
+				],
+				"ENG_name": "Fortifying Light"
+			}
+		],
+		"ENG_name": "Boon of the Bright Sun"
+	},
+	"Boon of the Furious Storm|FRHOF": {
+		"name": "狂暴風暴恩賜",
+		"source": "FRHoF",
+		"page": 43,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19,
+				"spellcasting2020": true
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"resist": [
+			"lightning",
+			"thunder"
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "風暴之眼",
+				"entries": [
+					"你對閃電與雷鳴傷害具有{@variantrule Resistance|XPHB}。當你處於{@status Bloodied|XPHB}狀態時，你對閃電與雷鳴傷害具有{@variantrule Immunity|XPHB}。"
+				],
+				"ENG_name": "Eye of the Storm"
+			},
+			{
+				"type": "entries",
+				"name": "風暴之力",
+				"entries": [
+					"生物對你造成閃電或雷鳴傷害之法術的豁免檢定具有{@variantrule Disadvantage|XPHB}。"
+				],
+				"ENG_name": "Storm's Strength"
+			}
+		],
+		"ENG_name": "Boon of the Furious Storm"
+	},
 	"Boon of the Night Spirit|XPHB": {
 		"name": "夜之靈之恩賜",
 		"source": "XPHB",
@@ -778,6 +2432,56 @@
 		],
 		"ENG_name": "Boon of the Night Spirit"
 	},
+	"Boon of the Soul Drinker|FRHOF": {
+		"name": "噬魂者恩賜",
+		"source": "FRHoF",
+		"page": 43,
+		"category": "EB",
+		"prerequisite": [
+			{
+				"level": 19
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"max": 30
+			}
+		],
+		"resist": [
+			"cold",
+			"necrotic"
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "墓穴抗性",
+				"entries": [
+					"你對寒冷傷害與黯蝕傷害具有{@variantrule Resistance|XPHB}。"
+				],
+				"ENG_name": "Grave Resistance"
+			},
+			{
+				"type": "entries",
+				"name": "汲取生命",
+				"entries": [
+					"當你 120 呎內的一個敵人降至 0 點{@variantrule Hit Points|XPHB}時，你可以執行一個{@variantrule Reaction|XPHB}恢復 50 點{@variantrule Hit Points|XPHB}。使用此益處後，直到你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Siphon Life"
+			}
+		],
+		"ENG_name": "Boon of the Soul Drinker"
+	},
 	"Boon of Truesight|XPHB": {
 		"name": "真實視覺之恩賜",
 		"source": "XPHB",
@@ -822,6 +2526,52 @@
 			}
 		],
 		"ENG_name": "Boon of Truesight"
+	},
+	"Cartomancer|BMT": {
+		"name": "紙牌術士",
+		"source": "BMT",
+		"page": 49,
+		"prerequisite": [
+			{
+				"level": 4,
+				"spellcastingFeature": true
+			}
+		],
+		"additionalSpells": [
+			{
+				"known": {
+					"_": [
+						"prestidigitation#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你學會透過一副紙牌引導魔法。你可以將一副紙牌作為施法法器，並獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "紙牌戲法",
+						"entries": [
+							"你學會{@spell Prestidigitation}戲法，並可以用它創造重現舞台魔術效果的幻象。以此方式使用{@spell Prestidigitation}時，你可以將法術的言語與姿勢成分偽裝成一般的交談與洗牌動作。"
+						],
+						"ENG_name": "Card Tricks"
+					},
+					{
+						"type": "item",
+						"name": "暗藏王牌",
+						"entries": [
+							"當你完成長休時，你可以從你職業的法術列表中選擇一道法術，將它灌注到一張紙牌中。所選法術的施法時間必須為 1 動作，且其環階必須是你擁有法術欄位的環階。紙牌會保持灌注此法術 8 小時。紙牌灌注著法術時，你可以用一個附贈動作亮出紙牌並施展其中的法術。之後紙牌立即失去魔力。"
+						],
+						"ENG_name": "Hidden Ace"
+					}
+				]
+			}
+		],
+		"ENG_name": "Cartomancer"
 	},
 	"Charger|XPHB": {
 		"name": "衝鋒手",
@@ -877,6 +2627,42 @@
 		],
 		"ENG_name": "Charger"
 	},
+	"Chef|TCE": {
+		"name": "廚師",
+		"source": "TCE",
+		"page": 79,
+		"reprintedAs": [
+			"Chef|XPHB"
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"con",
+						"wis"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"toolProficiencies": [
+			{
+				"cook's utensils": true
+			}
+		],
+		"entries": [
+			"花時間精通烹飪藝術有了回報，你獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"若你尚未具備{@item cook's utensils|phb}的熟練，你獲得該熟練。",
+					"作為短休的一部分，只要手邊有食材與{@item cook's utensils|phb}，你可以烹調特殊的食物。你準備的食物足以供數量等同於 4 + 你熟練加值的生物食用。短休結束時，任何吃了這些食物並消耗一顆或多顆生命骰來恢復生命值的生物，會額外恢復 {@dice 1d8} 生命值。",
+					"花費一小時工作或完成長休時，你可以烹調數量等同於你熟練加值的點心。這些特殊點心在製作後可保存 8 小時。生物可以用一個附贈動作吃下一份點心，獲得等同於你熟練加值的臨時生命值。"
+				]
+			}
+		],
+		"ENG_name": "Chef"
+	},
 	"Chef|XPHB": {
 		"name": "廚師",
 		"source": "XPHB",
@@ -930,6 +2716,253 @@
 			}
 		],
 		"ENG_name": "Chef"
+	},
+	"Child of the Sun|LFL": {
+		"name": "太陽之子",
+		"source": "LFL",
+		"category": "O",
+		"additionalSpells": [
+			{
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								"faerie fire|xphb"
+							]
+						}
+					}
+				},
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "艾爾杜之眼",
+				"entries": [
+					"你與你 10 呎內的盟友為避免或結束{@condition Blinded|XPHB}狀態而進行的豁免檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Eyes of Eirdu"
+			},
+			{
+				"type": "entries",
+				"name": "妖火",
+				"entries": [
+					"你學會{@spell Faerie Fire|XPHB}法術。智力、感知或魅力為你施展此法術的施法屬性（於選擇此專長時決定）。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的任何法術欄位施展此法術。",
+					"當你以此益處不消耗法術欄位施展{@spell Faerie Fire|XPHB}時，受到傷害無法中斷你對該法術的{@status Concentration|XPHB}。"
+				],
+				"ENG_name": "Faerie Fire"
+			}
+		],
+		"ENG_name": "Child of the Sun"
+	},
+	"Cloying Mists|ABH": {
+		"name": "黏滯迷霧",
+		"source": "ABH",
+		"page": 9,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"prepared": {
+					"_": [
+						"fog cloud|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "起霧吧",
+				"entries": [
+					"你總是準備著{@spell Fog Cloud|XPHB}法術。你可以不消耗法術欄位施展它，且必須完成{@variantrule Long Rest|XPHB}後才能再以此方式施展它。你也可以使用你擁有的適當環階法術欄位施展它。此法術的施法屬性為此專長所提升的屬性。"
+				],
+				"ENG_name": "Arise, Fog"
+			},
+			{
+				"type": "entries",
+				"name": "攫抓之霧",
+				"entries": [
+					"每當你施展{@spell Fog Cloud|XPHB}時，該法術{@variantrule Sphere [Area of Effect]|XPHB|球狀}範圍內的非魔法火焰會熄滅，且你與你的盟友以外的生物位於該範圍內時，{@variantrule Speed|XPHB}降低 5 呎。"
+				],
+				"ENG_name": "Grasping Mist"
+			}
+		],
+		"ENG_name": "Cloying Mists"
+	},
+	"Cohort of Chaos|SATO": {
+		"name": "混沌同伴",
+		"source": "SatO",
+		"page": 10,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"scion of the outer planes|sato|scion of the outer planes (chaotic outer plane)"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你可以引導宇宙的混沌之力，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "混沌閃焰",
+						"entries": [
+							"當你在攻擊檢定或豁免檢定中擲出 1 或 20 時，混沌魔法會流過你的身體。擲一顆 d4 並查閱「混沌閃焰」表決定發生什麼事。閃焰持續到你的下個回合結束，且在第一次閃焰結束前不會發生新的閃焰。",
+							{
+								"type": "table",
+								"caption": "混沌閃焰",
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"colLabels": [
+									"d4",
+									"閃焰"
+								],
+								"rows": [
+									[
+										"1",
+										"{@b 戰鬥狂怒。}一個你能看見、由你選擇的生物充滿魯莽的狂怒。它的攻擊檢定具有優勢，屬性檢定具有劣勢。"
+									],
+									[
+										"2",
+										"{@b 干擾力場。}能量波在你周圍盪漾。每個在你 5 呎內開始其回合，或在一回合中首次進入該區域的生物，受到 {@damage 1d8} 力場傷害。"
+									],
+									[
+										"3",
+										"{@b 無拘無束。}當你移動時，你可以使用部分或全部步行速度傳送自己一次，連同你穿戴或攜帶的任何裝備，傳送至多所使用的距離，到一處你能看見的未被佔據空間。"
+									],
+									[
+										"4",
+										"{@b 哀嚎之風。}風在以你為中心、半徑 15 呎的球狀範圍內迴旋。你與該區域內的其他生物的感知豁免檢定具有劣勢。"
+									]
+								]
+							}
+						],
+						"ENG_name": "Chaotic Flare"
+					}
+				]
+			}
+		],
+		"ENG_name": "Cohort of Chaos"
+	},
+	"Cold Caster|FRHOF": {
+		"name": "寒冰施法者",
+		"source": "FRHoF",
+		"page": 39,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"ray of frost|xphb#c"
+					]
+				}
+			},
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						{
+							"choose": "level=0|class=Wizard"
+						}
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "戲法",
+				"entries": [
+					"你學會{@spell Ray of Frost|XPHB}戲法。若你已經知道它，則改為學會另一道自選的法師戲法。此法術的施法屬性為此專長所提升的屬性。"
+				],
+				"ENG_name": "Cantrip"
+			},
+			{
+				"type": "entries",
+				"name": "凍傷",
+				"entries": [
+					"每回合一次，當你以攻擊檢定命中一個生物並造成寒冷傷害時，你可以暫時削弱該生物的防禦。該生物在你的下個回合結束前進行的下一次豁免檢定要減去 {@dice 1d4}。"
+				],
+				"ENG_name": "Frostbite"
+			}
+		],
+		"ENG_name": "Cold Caster"
 	},
 	"Crafter|XPHB": {
 		"name": "工匠",
@@ -1077,6 +3110,36 @@
 		],
 		"ENG_name": "Crossbow Expert"
 	},
+	"Crusher|TCE": {
+		"name": "粉碎者",
+		"source": "TCE",
+		"page": 79,
+		"reprintedAs": [
+			"Crusher|XPHB"
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"con"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你擅長粉碎敵人的技藝，獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"每回合一次，當你以造成鈍擊傷害的攻擊命中一個生物時，只要目標的體型不比你大超過一級，你可以將它移動 5 呎到一處未被佔據空間。",
+					"當你對一個生物造成鈍擊傷害的重擊時，直到你的下個回合開始前，對該生物進行的攻擊檢定具有優勢。"
+				]
+			}
+		],
+		"ENG_name": "Crusher"
+	},
 	"Crusher|XPHB": {
 		"name": "粉碎者",
 		"source": "XPHB",
@@ -1117,6 +3180,48 @@
 			}
 		],
 		"ENG_name": "Crusher"
+	},
+	"Cult of the Dragon Initiate|FRHOF": {
+		"name": "龍之教團新手",
+		"source": "FRHoF",
+		"page": 37,
+		"category": "O",
+		"languageProficiencies": [
+			{
+				"draconic": true
+			},
+			{
+				"any": 1
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "龍之語",
+				"entries": [
+					"你懂得龍語。若你在選擇此專長時已經懂得龍語，則改為從《玩家手冊》或本書第 2 章的語言表中學會一種自選語言。"
+				],
+				"ENG_name": "Dragon's Tongue"
+			},
+			{
+				"type": "entries",
+				"name": "龍之威懾",
+				"entries": [
+					"你可以執行一個{@action Magic|XPHB}動作，讓你 30 呎內一個你能看見的生物心生恐懼。目標必須通過一次感知豁免檢定（DC 等於 8 加上你的感知調整值與{@variantrule Proficiency|XPHB|熟練加值}），否則處於{@condition Frightened|XPHB}狀態直到你的下個回合結束。若目標豁免成功，或該效果對目標結束時，目標在 24 小時內對此效果免疫。"
+				],
+				"ENG_name": "Dragon's Terror"
+			},
+			{
+				"type": "entries",
+				"name": "因懼而振",
+				"entries": [
+					"當你使一個生物處於{@condition Frightened|XPHB}狀態且你是其恐懼來源時，若你沒有{@variantrule Heroic Inspiration|XPHB}，你可以獲得它。使用此益處後，直到你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Inspired by Fear"
+			}
+		],
+		"ENG_name": "Cult of the Dragon Initiate"
 	},
 	"Defense|XPHB": {
 		"name": "防禦",
@@ -1169,6 +3274,239 @@
 			}
 		],
 		"ENG_name": "Defensive Duelist"
+	},
+	"Delicious Pain|ABH": {
+		"name": "甜美痛楚",
+		"source": "ABH",
+		"page": 9,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "強韌血肉",
+				"entries": [
+					"在你受到鈍擊、穿刺或揮砍傷害後，你可以立即執行一個{@variantrule Reaction|XPHB}，獲得對鈍擊、穿刺與揮砍傷害的{@variantrule Resistance|XPHB}，直到你的下個回合開始。使用此益處後，直到你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Toughened Flesh"
+			}
+		],
+		"ENG_name": "Delicious Pain"
+	},
+	"Divinely Favored|DSOTDQ": {
+		"name": "神眷者",
+		"source": "DSotDQ",
+		"page": 32,
+		"prerequisite": [
+			{
+				"level": 4,
+				"campaign": [
+					"Dragonlance"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"name": "Evil",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						{
+							"choose": "level=0|class=Cleric",
+							"count": 1
+						}
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								"augury",
+								{
+									"choose": "level=1|class=warlock"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Good",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						{
+							"choose": "level=0|class=Cleric",
+							"count": 1
+						}
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								"augury",
+								{
+									"choose": "level=1|class=cleric"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Neutral",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						{
+							"choose": "level=0|class=Cleric",
+							"count": 1
+						}
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								"augury",
+								{
+									"choose": "level=1|class=druid"
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"一位神祇選擇了你，讓你承載祂力量的火花。",
+			"你從{@filter 牧師法術列表|spells|level=0|class=cleric}中學會一道自選戲法，並依照你角色的陣營學會一道 1 環法術，如下方「陣營法術」表所示。你也學會{@spell augury}法術。",
+			{
+				"type": "table",
+				"caption": "陣營法術",
+				"colLabels": [
+					"陣營",
+					"1 環法術"
+				],
+				"colStyles": [
+					"col-2",
+					"col-10"
+				],
+				"rows": [
+					[
+						"邪惡",
+						"選擇一道{@filter 1 環邪術師法術|spells|level=1|class=warlock}"
+					],
+					[
+						"好",
+						"選擇一道{@filter 1 環牧師法術|spells|level=1|class=cleric}"
+					],
+					[
+						"中立",
+						"選擇一道{@filter 1 環德魯伊法術|spells|level=1|class=druid}"
+					]
+				]
+			},
+			"你可以不消耗法術欄位施展所選的 1 環法術與{@spell augury}法術，且必須完成長休後才能再以此方式施展其中任一道法術。你也可以使用你擁有的適當環階法術欄位施展這些法術。",
+			"此專長法術的施法屬性為智力、感知或魅力（於選擇此專長時決定）。",
+			"此外，你施展任何使用你選擇此專長時所選施法屬性的法術時，可以將聖徽作為施法法器。"
+		],
+		"ENG_name": "Divinely Favored"
+	},
+	"Dragonscarred|FRHOF": {
+		"name": "龍痕者",
+		"source": "FRHoF",
+		"page": 39,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"cult of the dragon initiate|frhof"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"con",
+						"cha"
+					]
+				}
+			}
+		],
+		"resist": [
+			{
+				"choose": {
+					"from": [
+						"acid",
+						"cold",
+						"fire",
+						"lightning",
+						"poison"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "傷害抗性",
+				"entries": [
+					"獲得此專長時，選擇強酸、寒冷、火焰、閃電或毒素。你對所選傷害類型具有{@variantrule Resistance|XPHB}。"
+				],
+				"ENG_name": "Damage Resistance"
+			},
+			{
+				"type": "entries",
+				"name": "駭人之力",
+				"entries": [
+					"當你在你的回合中執行攻擊或魔法動作的一部分而對生物造成傷害時，你可以在本回合以{@variantrule Bonus Action|XPHB}使用龍之教團新手專長的「龍之威懾」益處。"
+				],
+				"ENG_name": "Fearsome Power"
+			}
+		],
+		"ENG_name": "Dragonscarred"
 	},
 	"Druidic Warrior|XPHB": {
 		"name": "德魯伊戰士",
@@ -1308,6 +3646,34 @@
 		],
 		"ENG_name": "Durable"
 	},
+	"Eldritch Adept|TCE": {
+		"name": "魔能行家",
+		"source": "TCE",
+		"page": 79,
+		"prerequisite": [
+			{
+				"spellcasting2020": true
+			}
+		],
+		"optionalfeatureProgression": [
+			{
+				"name": "魔能祈喚",
+				"featureType": [
+					"EI"
+				],
+				"progression": {
+					"*": 1
+				},
+				"ENG_name": "Eldritch Invocations"
+			}
+		],
+		"entries": [
+			"透過研究神祕學知識，你從邪術師職業中學會一道自選的{@filter 魔能祈喚|optionalfeatures|Feature Type=EI}。此祈喚的施法屬性為智力、感知或魅力（於選擇此專長時決定）。若該祈喚有任何先決條件，只有當你是符合先決條件的邪術師時才能選擇它。",
+			"每當你獲得一個等級時，你可以將該祈喚替換為邪術師職業的另一道祈喚。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Eldritch Adept"
+	},
 	"Elemental Adept|XPHB": {
 		"name": "元素行家",
 		"source": "XPHB",
@@ -1352,6 +3718,256 @@
 			}
 		],
 		"ENG_name": "Elemental Adept"
+	},
+	"Ember of the Fire Giant|BGG": {
+		"name": "火巨人之燼",
+		"source": "BGG",
+		"page": 17,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"strike of the giants|BGG|strike of the giants (fire strike)"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"con",
+						"wis"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"resist": [
+			"fire"
+		],
+		"entries": [
+			"你展現了火巨人標誌性的熾焰戰鬥，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "生於烈焰",
+						"entries": [
+							"你具有火焰傷害抗性。"
+						],
+						"ENG_name": "Born of Flame"
+					},
+					{
+						"type": "item",
+						"name": "灼熱點燃",
+						"entries": [
+							"當你在你的回合中執行{@action Attack}動作時，你可以將一次攻擊替換為一陣魔法火焰爆發。以你為中心、半徑 15 呎球狀範圍內每個由你選擇的生物必須進行一次敏捷豁免檢定（DC 等於 8 + 你的熟練加值 + 此專長所提升屬性的調整值）。豁免失敗時，生物受到等同於 {@damage 1d8} + 你熟練加值的火焰傷害，並處於目盲狀態直到你的下個回合開始。豁免成功時，生物只受一半傷害。你可以使用灼熱點燃的次數等同於你的熟練加值（但每回合最多一次），並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Searing Ignition"
+					}
+				]
+			}
+		],
+		"ENG_name": "Ember of the Fire Giant"
+	},
+	"Emerald Enclave Fledgling|FRHOF": {
+		"name": "翡翠飛地雛鳥",
+		"source": "FRHoF",
+		"page": 37,
+		"category": "O",
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": [
+						"speak with animals|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "動物交談術",
+				"entries": [
+					"你總是準備著{@spell Speak with Animals|XPHB}法術，並可以使用你擁有的任何法術欄位施展它。智力、感知或魅力為你施展此法術的施法屬性（於選擇此專長時決定）。當你以{@variantrule Ritual|XPHB}施展此法術時，其持續時間為 8 小時。"
+				],
+				"ENG_name": "Speak with Animals"
+			},
+			{
+				"type": "entries",
+				"name": "搭檔合作",
+				"entries": [
+					"當你執行{@action Help|XPHB}動作時，你可以作為同一個動作的一部分，與你 5 呎內一名自願的盟友交換位置。此移動不會引發{@action Opportunity Attack|XPHB|借機攻擊}。若該盟友處於{@condition Incapacitated|XPHB}狀態，你便無法使用此益處。"
+				],
+				"ENG_name": "Tag Team"
+			}
+		],
+		"ENG_name": "Emerald Enclave Fledgling"
+	},
+	"Enclave Magic|FRHOF": {
+		"name": "飛地魔法",
+		"source": "FRHoF",
+		"page": 39,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"emerald enclave fledgling|frhof"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"beast sense|xphb"
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "動物之友",
+				"entries": [
+					"你對野獸執行{@action Influence|XPHB}動作時，屬性檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Friend to Animals"
+			},
+			{
+				"type": "entries",
+				"name": "兩心一意",
+				"entries": [
+					"你總是準備著{@spell Beast Sense|XPHB}法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。以此特性不消耗法術欄位施展時，它不需要{@status Concentration|XPHB}。你也可以使用你擁有的適當環階法術欄位施展此法術。此法術的施法屬性為此專長所提升的屬性。"
+				],
+				"ENG_name": "Two Hearts, One Mind"
+			}
+		],
+		"ENG_name": "Enclave Magic"
+	},
+	"Fairy Trickster|FRHOF": {
+		"name": "妖精搗蛋鬼",
+		"source": "FRHoF",
+		"page": 39,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"dex",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "妖精小徑行者",
+				"entries": [
+					"當你在你的回合中執行{@action Disengage|XPHB}動作時，該回合剩餘時間內{@variantrule Difficult Terrain|XPHB}不會讓你消耗額外的移動。"
+				],
+				"ENG_name": "Faerie Trod Trotter"
+			},
+			{
+				"type": "entries",
+				"name": "擾亂打擊",
+				"entries": [
+					"當你以攻擊檢定命中一個生物時，你可以嘗試擾亂目標。目標必須通過一次感知豁免檢定（DC 等於 8 加上此專長所提升屬性的調整值與你的{@variantrule Proficiency|XPHB|熟練加值}），否則在你的下個回合結束前，其豁免檢定具有{@variantrule Disadvantage|XPHB}。",
+					"你可以使用此益處的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。"
+				],
+				"ENG_name": "Flustering Strike"
+			}
+		],
+		"ENG_name": "Fairy Trickster"
+	},
+	"Fey Touched|TCE": {
+		"name": "妖精之觸",
+		"source": "TCE",
+		"page": 79,
+		"reprintedAs": [
+			"Fey-Touched|XPHB"
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "inherit",
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								"misty step",
+								{
+									"choose": "level=1|school=E;D"
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"接觸妖精荒野的魔法改變了你，賦予你下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"你學會{@spell misty step}法術，以及一道自選的{@filter 1 環法術|spells|level=1|school=E;D}。該{@filter 1 環法術|spells|level=1|school=E;D}必須屬於預言系或惑控系。你可以不消耗法術欄位各施展這些法術。以此方式施展其中任一道法術後，直到你完成長休前都無法再以此方式施展該法術。你也可以使用你擁有的適當環階法術欄位施展這些法術。這些法術的施法屬性為此專長所提升的屬性。"
+				]
+			}
+		],
+		"ENG_name": "Fey Touched"
 	},
 	"Fey-Touched|XPHB": {
 		"name": "妖精觸碰",
@@ -1404,6 +4020,245 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Fey-Touched"
+	},
+	"Fighting Initiate|TCE": {
+		"name": "戰鬥新手",
+		"source": "TCE",
+		"page": 80,
+		"prerequisite": [
+			{
+				"proficiency": [
+					{
+						"weapon": "martial"
+					}
+				]
+			}
+		],
+		"optionalfeatureProgression": [
+			{
+				"name": "戰鬥風格",
+				"featureType": [
+					"FS:F"
+				],
+				"progression": {
+					"*": 1
+				},
+				"ENG_name": "Fighting Style"
+			}
+		],
+		"entries": [
+			"你的武術訓練幫助你發展出特定的戰鬥風格。因此，你從戰士職業中學會一種自選的{@filter 戰鬥風格|optionalfeatures|Feature Type=FS:F}。若你已經擁有一種風格，所選的風格必須不同。",
+			"每當你達到賦予屬性值提升特性的等級時，你可以將此專長的戰鬥風格替換為戰士職業中另一種你尚未擁有的風格。"
+		],
+		"ENG_name": "Fighting Initiate"
+	},
+	"Fury of the Frost Giant|BGG": {
+		"name": "霜巨人之怒",
+		"source": "BGG",
+		"page": 17,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"strike of the giants|BGG|strike of the giants (frost strike)"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"con",
+						"wis"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"resist": [
+			"cold"
+		],
+		"entries": [
+			"你展現了霜巨人標誌性的冰寒之力，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "生於寒冰",
+						"entries": [
+							"你具有寒冷傷害抗性。"
+						],
+						"ENG_name": "Born of Ice"
+					},
+					{
+						"type": "item",
+						"name": "冰寒報復",
+						"entries": [
+							"當你 30 呎內一個你能看見的生物以攻擊檢定命中你並造成傷害後，你可以立即使用你的反應，召喚一陣冰暴還擊。該生物必須進行一次體質豁免檢定（DC 等於 8 + 你的熟練加值 + 此專長所提升屬性的調整值）。豁免失敗時，該生物受到等同於 {@damage 1d8} + 你熟練加值的寒冷傷害，且其速度降為 0 直到其下個回合結束。你可以使用此反應的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Frigid Retaliation"
+					}
+				]
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Fury of the Frost Giant"
+	},
+	"Genie Magic|FRHOF": {
+		"name": "巨靈魔法",
+		"source": "FRHoF",
+		"page": 39,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "願望魔法",
+				"entries": [
+					"作為一個{@action Magic|XPHB}動作，你可以施展一道施法時間為一個動作的{@filter 術士法術列表中自選的 1 環法術|spells|level=1|class=Sorcerer}。使用此益處後，直到你完成{@variantrule Long Rest|XPHB}前都無法再次使用。此法術的施法屬性為此專長所提升的屬性。",
+					"當你達到 11 級時，你以此專長施展的法術視為使用 2 環法術欄位施展。",
+					"當你達到 17 級時，該法術視為使用 3 環法術欄位施展。"
+				],
+				"ENG_name": "Wish Magic"
+			}
+		],
+		"ENG_name": "Genie Magic"
+	},
+	"Gift of the Chromatic Dragon|FTD": {
+		"name": "彩色龍的贈禮",
+		"source": "FTD",
+		"page": 17,
+		"entries": [
+			"你展現了彩色龍的部分力量，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "彩色灌注",
+						"entries": [
+							"作為一個附贈動作，你可以碰觸一把{@filter 簡易或軍用武器|items|source=phb|category=basic|type=martial weapon;simple weapon}，為它灌注下列一種傷害類型：強酸、寒冷、火焰、閃電或毒素。在接下來的 1 分鐘內，該武器命中時額外造成 {@damage 1d4} 所選類型的傷害。使用此附贈動作後，直到你完成長休前都無法再次這麼做。"
+						],
+						"ENG_name": "Chromatic Infusion"
+					},
+					{
+						"type": "item",
+						"name": "反應抗性",
+						"entries": [
+							"當你受到強酸、寒冷、火焰、閃電或毒素傷害時，你可以使用你的反應，使自己獲得對該次傷害的抗性。你可以使用此反應的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Reactive Resistance"
+					}
+				]
+			}
+		],
+		"ENG_name": "Gift of the Chromatic Dragon"
+	},
+	"Gift of the Gem Dragon|FTD": {
+		"name": "寶石龍的贈禮",
+		"source": "FTD",
+		"page": 17,
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你展現了寶石龍的部分力量，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "念力報復",
+						"entries": [
+							"當你受到你 10 呎內一個生物造成的傷害時，你可以使用你的反應釋放念力能量。對你造成傷害的生物必須進行一次力量豁免檢定（DC 等於 8 + 你的熟練加值 + 此專長所提升屬性的調整值）。豁免失敗時，該生物受到 {@damage 2d8} 力場傷害，並被推離你至多 10 呎。豁免成功時，該生物只受一半傷害且不會被推動。你可以使用此反應的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Telekinetic Reprisal"
+					}
+				]
+			}
+		],
+		"ENG_name": "Gift of the Gem Dragon"
+	},
+	"Gift of the Metallic Dragon|FTD": {
+		"name": "金屬龍的贈禮",
+		"source": "FTD",
+		"page": 17,
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								"cure wounds"
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你展現了金屬龍的部分力量，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "龍族治療",
+						"entries": [
+							"你學會{@spell cure wounds}法術。你可以不消耗法術欄位施展此法術。以此方式施展後，直到你完成長休前都無法再次這麼做。你也可以使用你擁有的法術欄位施展此法術。以此專長施展時，此法術的施法屬性為智力、感知或魅力（於獲得此專長時決定）。"
+						],
+						"ENG_name": "Draconic Healing"
+					},
+					{
+						"type": "item",
+						"name": "保護之翼",
+						"entries": [
+							"你可以顯現能保護你或他人的守護之翼。當你或你 5 呎內另一個你能看見的生物被攻擊檢定命中時，你可以使用你的反應，讓幽靈般的翅膀從你背後短暫顯現。你使目標的 AC 對該次攻擊檢定獲得等同於你熟練加值的加值，可能使其未命中。你可以使用此反應的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Protective Wings"
+					}
+				]
+			}
+		],
+		"ENG_name": "Gift of the Metallic Dragon"
 	},
 	"Grappler|XPHB": {
 		"name": "擒抱者",
@@ -1529,6 +4384,794 @@
 		],
 		"ENG_name": "Great Weapon Master"
 	},
+	"Greater Aberrant Mark|EFA": {
+		"name": "高等異常印記",
+		"source": "EFA",
+		"page": 43,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"aberrant dragonmark|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"con": 1
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "強化堅韌",
+				"entries": [
+					"當你使用異常龍紋專長的「異常堅韌」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。此外，現在每當你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}時，都會恢復「異常堅韌」的使用次數。"
+				],
+				"ENG_name": "Improved Fortitude"
+			},
+			{
+				"type": "entries",
+				"name": "靈感印記",
+				"entries": [
+					"當你施展戲法時，你可以擲一或兩顆未消耗的{@variantrule Hit Point Dice|XPHB}。你獲得等同於擲骰結果加上你體質調整值的{@variantrule Temporary Hit Points|XPHB}，且你 30 呎內一個由你選擇的生物（不包括你）受到等同於擲骰結果的力場傷害。之後那些骰子便被消耗。",
+					"你可以使用此益處的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。"
+				],
+				"ENG_name": "Mark of Inspiration"
+			}
+		],
+		"ENG_name": "Greater Aberrant Mark"
+	},
+	"Greater Mark of Detection|EFA": {
+		"name": "高等偵測印記",
+		"source": "EFA",
+		"page": 43,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of detection|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Detection|EFA}專長的「演繹直覺」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "共享偵測",
+				"entries": [
+					"當你使用{@feat Mark of Detection|EFA}專長的「魔法偵測」益處不消耗法術欄位施展{@spell See Invisibility|XPHB}時，你可以選擇你 30 呎內一個你能看見的生物。該生物在法術持續期間也獲得該法術的益處。"
+				],
+				"ENG_name": "Shared Detection"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Greater Mark of Detection"
+	},
+	"Greater Mark of Finding|EFA": {
+		"name": "高等尋覓印記",
+		"source": "EFA",
+		"page": 43,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of finding|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Finding|EFA}專長的「獵人直覺」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "強化尋覓",
+				"entries": [
+					"當你使用{@feat Mark of Finding|EFA}的「尋覓者魔法」益處不消耗法術欄位施展{@spell Hunter's Mark|XPHB}時，法術的射程加倍，且你可以調整該法術，使目標在持續期間無法受益於{@condition Invisible|XPHB}狀態。"
+				],
+				"ENG_name": "Improved Finding"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Greater Mark of Finding"
+	},
+	"Greater Mark of Handling|EFA": {
+		"name": "高等馴獸印記",
+		"source": "EFA",
+		"page": 43,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of handling|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Handling|EFA}專長的「野性直覺」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "強化馴獸",
+				"entries": [
+					"騎乘時，當你以近戰攻擊檢定命中你坐騎 5 呎內的目標後，你的坐騎可以立即執行一個{@variantrule Reaction|XPHB}，移動至多其{@variantrule Speed|XPHB}，或執行{@action Attack|XPHB}動作但只進行一次攻擊（由你選擇）。"
+				],
+				"ENG_name": "Improved Handling"
+			},
+			{
+				"type": "entries",
+				"name": "壓制動物",
+				"entries": [
+					"作為一個{@action Magic|XPHB}動作，你對你 30 呎內一個你能看見的野獸或怪獸施加支配力。目標必須通過一次感知豁免檢定（DC 等於 8 加上你的感知調整值與{@variantrule Proficiency|XPHB|熟練加值}），否則處於{@condition Frightened|XPHB}狀態直到你的下個回合開始。你可以使用此益處的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。"
+				],
+				"ENG_name": "Subdue Animal"
+			}
+		],
+		"ENG_name": "Greater Mark of Handling"
+	},
+	"Greater Mark of Healing|EFA": {
+		"name": "高等治療印記",
+		"source": "EFA",
+		"page": 44,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of healing|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Healing|EFA}專長的「醫療直覺」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "強化治療",
+				"entries": [
+					"你現在可以使用{@feat Mark of Healing|EFA}專長的「治療之觸」益處，不消耗法術欄位施展{@spell Cure Wounds|XPHB}，次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。此外，當你施展{@spell Cure Wounds|XPHB}並擲骰決定恢復的{@variantrule Hit Points|XPHB}時，可以將擲出的任何 1 或 2 視為 3。"
+				],
+				"ENG_name": "Improved Healing"
+			}
+		],
+		"ENG_name": "Greater Mark of Healing"
+	},
+	"Greater Mark of Hospitality|EFA": {
+		"name": "高等款待印記",
+		"source": "EFA",
+		"page": 44,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of hospitality|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Hospitality|EFA}專長的「賓至如歸」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "強化款待",
+				"entries": [
+					"當你施展{@spell Purify Food and Drink|XPHB}時，你可以調整該法術，使其不產生一般效果，而是讓你 30 呎內每個由你選擇的生物恢復精神。每個受影響生物的{@condition Exhaustion|XPHB}等級降低 1，並獲得等同於你{@variantrule Proficiency|XPHB|熟練加值}加上你智力、感知或魅力調整值（於選擇此專長時決定）的{@variantrule Temporary Hit Points|XPHB}。以此益處調整法術後，直到你完成{@variantrule Long Rest|XPHB}前都無法再次這麼做。"
+				],
+				"ENG_name": "Improved Hospitality"
+			}
+		],
+		"ENG_name": "Greater Mark of Hospitality"
+	},
+	"Greater Mark of Making|EFA": {
+		"name": "高等製造印記",
+		"source": "EFA",
+		"page": 44,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of making|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Making|EFA}專長的「工匠直覺」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "強化製造",
+				"entries": [
+					"當你使用{@feat Mark of Making|EFA}專長的「法術鍛造」益處不消耗法術欄位施展{@spell Magic Weapon|XPHB}時，你以其 3 環版本施展該法術。"
+				],
+				"ENG_name": "Improved Making"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Greater Mark of Making"
+	},
+	"Greater Mark of Passage|EFA": {
+		"name": "高等通行印記",
+		"source": "EFA",
+		"page": 44,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of passage|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Passage|EFA}專長的「直覺行動」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "強化通行",
+				"entries": [
+					"當你使用{@feat Mark of Passage|EFA}專長的「魔法通行」益處不消耗法術欄位施展{@spell Misty Step|XPHB}時，你也可以在傳送前選擇你 30 呎內至多兩個你能看見的自願生物。每個目標接著可以執行一個{@variantrule Reaction|XPHB}，也傳送至多 30 呎到一處它能看見的未被佔據空間。"
+				],
+				"ENG_name": "Improved Passage"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Greater Mark of Passage"
+	},
+	"Greater Mark of Scribing|EFA": {
+		"name": "高等書記印記",
+		"source": "EFA",
+		"page": 44,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of scribing|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Scribing|EFA}專長的「天賦書記」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "靈感書寫",
+				"entries": [
+					"當你施展{@spell Comprehend Languages|XPHB}時，你可以調整該法術，使其涵蓋你 30 呎內至多三個你能看見的自願生物。每個被選擇的生物在持續期間也獲得該法術的益處。此外，在法術持續期間，只要你與被選擇的生物彼此相距 1 哩內，就能互相以心靈感應交流。以此益處調整法術後，直到你完成{@variantrule Long Rest|XPHB}前都無法再次這麼做。"
+				],
+				"ENG_name": "Inspired Scribing"
+			}
+		],
+		"ENG_name": "Greater Mark of Scribing"
+	},
+	"Greater Mark of Sentinel|EFA": {
+		"name": "高等哨兵印記",
+		"source": "EFA",
+		"page": 44,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of sentinel|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Sentinel|EFA}專長的「哨兵直覺」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "強化哨兵",
+				"entries": [
+					"當你使用{@feat Mark of Sentinel|EFA}專長的「警戒守護者」益處時，你也可以在同一個{@variantrule Reaction|XPHB}中以武器或{@variantrule Unarmed Strike|XPHB}進行一次攻擊。"
+				],
+				"ENG_name": "Improved Sentinel"
+			}
+		],
+		"ENG_name": "Greater Mark of Sentinel"
+	},
+	"Greater Mark of Shadow|EFA": {
+		"name": "高等陰影印記",
+		"source": "EFA",
+		"page": 45,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of shadow|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Shadow|EFA}專長的「狡黠直覺」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "強化陰影",
+				"entries": [
+					"當你使用{@feat Mark of Shadow|EFA}專長的「塑造陰影」益處不消耗法術欄位施展{@spell Invisibility|XPHB}時，你以其 3 環版本施展該法術。"
+				],
+				"ENG_name": "Improved Shadow"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Greater Mark of Shadow"
+	},
+	"Greater Mark of Storm|EFA": {
+		"name": "高等暴風印記",
+		"source": "EFA",
+		"page": 45,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of storm|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Storm|EFA}專長的「駕風者直覺」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "強化暴風",
+				"entries": [
+					"當你使用{@feat Mark of Storm|EFA}專長的「風暴魔法」益處不消耗法術欄位施展{@spell Gust of Wind|XPHB}時，你在法術持續期間也獲得 60 呎的{@variantrule Fly Speed|XPHB}。"
+				],
+				"ENG_name": "Improved Storm"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Greater Mark of Storm"
+	},
+	"Greater Mark of Warding|EFA": {
+		"name": "高等守護印記",
+		"source": "EFA",
+		"page": 45,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"mark of warding|efa"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "增強直覺",
+				"entries": [
+					"當你使用{@feat Mark of Warding|EFA}專長的「守護者直覺」益處時，你可以改擲 {@dice 1d6} 而非 {@dice 1d4}。"
+				],
+				"ENG_name": "Improved Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "強化守護",
+				"entries": [
+					"當一個生物對你或你 30 呎內一個你能看見的生物進行攻擊檢定時，你可以執行一個{@variantrule Reaction|XPHB}，使該檢定具有{@variantrule Disadvantage|XPHB}。你可以使用此益處的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。"
+				],
+				"ENG_name": "Improved Warding"
+			}
+		],
+		"ENG_name": "Greater Mark of Warding"
+	},
+	"Guile of the Cloud Giant|BGG": {
+		"name": "雲巨人之詭",
+		"source": "BGG",
+		"page": 18,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"strike of the giants|BGG|strike of the giants (cloud strike)"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"con",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你展現了雲巨人標誌性的迷惑魔法，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "雲霧脫逃",
+						"entries": [
+							"當一個你能看見的生物以攻擊檢定命中你時，你可以使用你的反應，使自己獲得對該攻擊傷害的抗性。接著你傳送到你 30 呎內一處你能看見的未被佔據空間。你可以使用此反應的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Cloudy Escape"
+					}
+				]
+			}
+		],
+		"ENG_name": "Guile of the Cloud Giant"
+	},
+	"Gunner|TCE": {
+		"name": "槍手",
+		"source": "TCE",
+		"page": 80,
+		"ability": [
+			{
+				"dex": 1
+			}
+		],
+		"weaponProficiencies": [
+			{
+				"firearms": true
+			}
+		],
+		"entries": [
+			"你使用火器時手快眼尖，獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"你獲得火器的熟練（見《地下城主指南》中的「{@variantrule Firearms|DMG|火器}」）。",
+					"你無視火器的{@itemProperty LD|PHB|裝填}屬性。",
+					"位於敵對生物 5 呎內不會使你的遠程攻擊檢定具有劣勢。"
+				]
+			}
+		],
+		"ENG_name": "Gunner"
+	},
+	"Harper Agent|FRHOF": {
+		"name": "豎琴手特工",
+		"source": "FRHoF",
+		"page": 37,
+		"category": "O",
+		"languageProficiencies": [
+			{
+				"thieves' cant": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"anyMusicalInstrument": 3
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "盜賊黑話",
+				"entries": [
+					"你懂得盜賊黑話。"
+				],
+				"ENG_name": "Thieves' Cant"
+			},
+			{
+				"type": "entries",
+				"name": "樂器受訓",
+				"entries": [
+					"你獲得一種自選{@item Musical Instrument|XPHB}的熟練。"
+				],
+				"ENG_name": "Instrument Training"
+			},
+			{
+				"type": "entries",
+				"name": "分心旋律",
+				"entries": [
+					"當你執行{@action Help|XPHB}動作協助盟友的攻擊檢定時，只要被你干擾的敵人能看見或聽見你，它可以位於你 30 呎內，而不必位於你 5 呎內。"
+				],
+				"ENG_name": "Distracting Melody"
+			}
+		],
+		"ENG_name": "Harper Agent"
+	},
+	"Harper Teamwork|FRHOF": {
+		"name": "豎琴手團隊合作",
+		"source": "FRHoF",
+		"page": 39,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"harper agent|frhof"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"dex",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "削弱妙語",
+				"entries": [
+					"當你執行{@action Help|XPHB}動作協助盟友對敵人的攻擊檢定時，該敵人在你的下個回合開始前進行的第一次豁免檢定也具有{@variantrule Disadvantage|XPHB}。"
+				],
+				"ENG_name": "Withering Wordplay"
+			},
+			{
+				"type": "entries",
+				"name": "激勵意志",
+				"entries": [
+					"若你為結束自身的{@condition Frightened|XPHB}或{@condition Paralyzed|XPHB}狀態而進行的豁免檢定成功，你可以選擇你 30 呎內一個你能看見、具有相同狀態的盟友。該盟友的該狀態立即結束。"
+				],
+				"ENG_name": "Inspiring Willpower"
+			}
+		],
+		"ENG_name": "Harper Teamwork"
+	},
 	"Healer|XPHB": {
 		"name": "治療師",
 		"source": "XPHB",
@@ -1636,6 +5279,195 @@
 			}
 		],
 		"ENG_name": "Heavy Armor Master"
+	},
+	"Initiate of High Sorcery|DSOTDQ": {
+		"name": "高等巫術會新手",
+		"source": "DSotDQ",
+		"page": 32,
+		"prerequisite": [
+			{
+				"campaign": [
+					"Dragonlance"
+				],
+				"level": {
+					"level": 1,
+					"class": {
+						"name": "術士",
+						"visible": true,
+						"ENG_name": "Sorcerer"
+					}
+				}
+			},
+			{
+				"campaign": [
+					"Dragonlance"
+				],
+				"level": {
+					"level": 1,
+					"class": {
+						"name": "法師",
+						"visible": true,
+						"ENG_name": "Wizard"
+					}
+				}
+			},
+			{
+				"campaign": [
+					"Dragonlance"
+				],
+				"background": [
+					{
+						"name": "高等巫術法師",
+						"displayEntry": "{@background Mage of High Sorcery|DSotDQ}",
+						"ENG_name": "Mage of High Sorcery"
+					}
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"name": "Nuitari",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						{
+							"choose": "level=0|class=Wizard"
+						}
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								{
+									"choose": {
+										"from": [
+											"dissonant whispers",
+											"false life",
+											"hex",
+											"ray of sickness"
+										],
+										"count": 2
+									}
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Lunitari",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						{
+							"choose": "level=0|class=Wizard"
+						}
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								{
+									"choose": {
+										"from": [
+											"color spray",
+											"disguise self",
+											"feather fall",
+											"longstrider"
+										],
+										"count": 2
+									}
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Solinari",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						{
+							"choose": "level=0|class=Wizard"
+						}
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								{
+									"choose": {
+										"from": [
+											"comprehend languages",
+											"detect evil and good",
+											"protection from evil and good",
+											"shield"
+										],
+										"count": 2
+									}
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你曾接受隸屬高等巫術法師會的施法者訓練。",
+			"選擇克萊恩三顆月亮之一來影響你的魔法：黑月努塔瑞、紅月魯尼塔瑞或白月索林納瑞。你從法師法術列表中學會一道自選戲法，並依照你所選的月亮學會兩道 1 環法術，如「月之法術」表所示。",
+			{
+				"type": "table",
+				"caption": "月之法術",
+				"colLabels": [
+					"月亮",
+					"1 環法術"
+				],
+				"colStyles": [
+					"col-1",
+					"col-11"
+				],
+				"rows": [
+					[
+						"努塔瑞",
+						"從{@spell dissonant whispers}、{@spell false life}、{@spell hex}與{@spell ray of sickness}中選擇兩道"
+					],
+					[
+						"魯尼塔瑞",
+						"從{@spell color spray}、{@spell disguise self}、{@spell feather fall}與{@spell longstrider}中選擇兩道"
+					],
+					[
+						"索林納瑞",
+						"從{@spell comprehend languages}、{@spell detect evil and good}、{@spell protection from evil and good}與{@spell shield}中選擇兩道"
+					]
+				]
+			},
+			"你可以不消耗法術欄位各施展所選的 1 環法術一次，且必須完成長休後才能再以此方式施展它們。你也可以使用你擁有的任何法術欄位施展這些法術。",
+			"此專長法術的施法屬性為智力、感知或魅力（於選擇此專長時決定）。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Initiate of High Sorcery"
 	},
 	"Inspiring Leader|XPHB": {
 		"name": "激勵統御",
@@ -1754,6 +5586,286 @@
 		],
 		"ENG_name": "Keen Mind"
 	},
+	"Keenness of the Stone Giant|BGG": {
+		"name": "石巨人之敏",
+		"source": "BGG",
+		"page": 18,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"strike of the giants|BGG|strike of the giants (stone strike)"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"con",
+						"wis"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"bonusSenses": [
+			{
+				"darkvision": 60
+			}
+		],
+		"entries": [
+			"你展現了石巨人標誌性的身體天賦，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "洞穴視覺",
+						"entries": [
+							"你獲得範圍 60 呎的{@sense darkvision}。若你已從其他來源獲得{@sense darkvision}，其範圍增加 60 呎。"
+						],
+						"ENG_name": "Cavernous Sight"
+					},
+					{
+						"type": "item",
+						"name": "擲石",
+						"entries": [
+							"作為一個附贈動作，你可以拿起一塊石頭進行一次魔法攻擊。該攻擊是射程 60 呎的遠程法術攻擊，以你用此專長提升的屬性作為施法屬性。命中時，石頭造成 {@damage 1d10} 力場傷害，且目標必須通過一次力量豁免檢定（DC 等於 8 + 你的熟練加值 + 施法屬性調整值），否則處於倒地狀態。你可以使用此附贈動作的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Stone Throw"
+					}
+				]
+			}
+		],
+		"ENG_name": "Keenness of the Stone Giant"
+	},
+	"Knight of the Crown|DSOTDQ": {
+		"name": "王冠騎士",
+		"source": "DSotDQ",
+		"page": 32,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"squire of solamnia|dsotdq"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你是隸屬王冠騎士團的索蘭尼亞騎士，這個團體推崇合作、忠誠與服從的美德。你擅長團體戰鬥，並獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "號令集結",
+						"entries": [
+							"作為一個附贈動作，你可以命令你 30 呎內的一名盟友發動攻擊。若該盟友能看見或聽見你，它可以立即以反應進行一次武器攻擊。若攻擊命中，該盟友可以擲一顆 {@dice d8}，並將結果作為加值加到該攻擊的傷害擲骰上。你可以使用此附贈動作的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Commanding Rally"
+					}
+				]
+			},
+			{
+				"type": "inset",
+				"name": "騎士團成員資格",
+				"entries": [
+					"索蘭尼亞騎士永遠只屬於其組織中的一個騎士團。在受訓過程中，大多數騎士都從王冠騎士團成員開始，之後再加入其他騎士團。無論角色是否依循這條路，即使加入了另一個騎士團，他們仍保有身為前一騎士團成員時所學到的東西。角色可以更換所屬的騎士團，但始終能使用已獲得的任何索蘭尼亞騎士專長。"
+				],
+				"ENG_name": "Membership in Knightly Orders"
+			}
+		],
+		"ENG_name": "Knight of the Crown"
+	},
+	"Knight of the Rose|DSOTDQ": {
+		"name": "玫瑰騎士",
+		"source": "DSotDQ",
+		"page": 33,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"squire of solamnia|dsotdq"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"con",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你是隸屬玫瑰騎士團的索蘭尼亞騎士，這個團體以領導、正義與智慧聞名。你的決心賦予你下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "鼓舞集結",
+						"entries": [
+							"作為一個附贈動作，你可以激勵你 30 呎內一個你能看見的生物（可以選擇你自己）。若目標能看見或聽見你，它獲得等同於 {@dice 1d8} + 你的熟練加值 + 此專長所提升屬性調整值的臨時生命值。你可以使用此附贈動作的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Bolstering Rally"
+					}
+				]
+			},
+			{
+				"type": "inset",
+				"name": "騎士團成員資格",
+				"entries": [
+					"索蘭尼亞騎士永遠只屬於其組織中的一個騎士團。在受訓過程中，大多數騎士都從王冠騎士團成員開始，之後再加入其他騎士團。無論角色是否依循這條路，即使加入了另一個騎士團，他們仍保有身為前一騎士團成員時所學到的東西。角色可以更換所屬的騎士團，但始終能使用已獲得的任何索蘭尼亞騎士專長。"
+				],
+				"ENG_name": "Membership in Knightly Orders"
+			}
+		],
+		"ENG_name": "Knight of the Rose"
+	},
+	"Knight of the Sword|DSOTDQ": {
+		"name": "寶劍騎士",
+		"source": "DSotDQ",
+		"page": 33,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"squire of solamnia|dsotdq"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你是隸屬寶劍騎士團的索蘭尼亞騎士，這個團體致力於英勇與勇氣。勇氣淬鍊了你的精神，賦予你下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "挫志打擊",
+						"entries": [
+							"每回合一次，當你以武器攻擊檢定命中一個生物時，你可以嘗試威嚇該目標。目標必須進行一次感知豁免檢定（DC 等於 8 + 你的熟練加值 + 此專長所提升屬性的調整值）。豁免失敗時，目標對你{@condition frightened}直到你的下個回合結束。豁免成功時，目標在其下個回合結束前進行的下一次攻擊檢定具有劣勢。你可以使用此益處的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Demoralizing Strike"
+					}
+				]
+			},
+			{
+				"type": "inset",
+				"name": "騎士團成員資格",
+				"entries": [
+					"索蘭尼亞騎士永遠只屬於其組織中的一個騎士團。在受訓過程中，大多數騎士都從王冠騎士團成員開始，之後再加入其他騎士團。無論角色是否依循這條路，即使加入了另一個騎士團，他們仍保有身為前一騎士團成員時所學到的東西。角色可以更換所屬的騎士團，但始終能使用已獲得的任何索蘭尼亞騎士專長。"
+				],
+				"ENG_name": "Membership in Knightly Orders"
+			}
+		],
+		"ENG_name": "Knight of the Sword"
+	},
+	"Light Bringer|ABH": {
+		"name": "光明使者",
+		"source": "ABH",
+		"page": 10,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"name": "Light",
+				"known": {
+					"_": [
+						"light|xphb#c"
+					]
+				}
+			},
+			{
+				"name": "Cleric Cantrip",
+				"known": {
+					"_": [
+						{
+							"choose": "level=0|class=Cleric",
+							"count": 1
+						}
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "神聖魔法",
+				"entries": [
+					"你學會{@spell Light|XPHB}法術，並可以不需材料成分施展它。若你已經知道這道戲法，則改為學會另一道自選的牧師戲法。此法術的施法屬性為此專長所提升的屬性。"
+				],
+				"ENG_name": "Sacred Magic"
+			},
+			{
+				"type": "entries",
+				"name": "太陽光輝",
+				"entries": [
+					"當你施展{@spell Light|XPHB}時，可以讓法術發出的光為陽光。使用此益處後，直到你完成{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Solar Luminance"
+			},
+			{
+				"type": "entries",
+				"name": "太陽的治癒",
+				"entries": [
+					"位於陽光中時，你可以用一個{@variantrule Bonus Action|XPHB}消耗一顆{@variantrule Hit Point Dice|XPHB}並擲骰，恢復等同於擲骰結果的{@variantrule Hit Points|XPHB}。使用此益處後，直到你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Sun's Healing"
+			}
+		],
+		"ENG_name": "Light Bringer"
+	},
 	"Lightly Armored|XPHB": {
 		"name": "輕度著甲",
 		"source": "XPHB",
@@ -1792,6 +5904,106 @@
 			}
 		],
 		"ENG_name": "Lightly Armored"
+	},
+	"Lordly Resolve|FRHOF": {
+		"name": "領主的決心",
+		"source": "FRHoF",
+		"page": 40,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"lords' alliance agent|frhof"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "旗手",
+				"entries": [
+					"作為一個{@variantrule Bonus Action|XPHB}，選擇你 60 呎內至多三個能看見你的生物。只要目標的{@variantrule Speed|XPHB}不為 0，每個目標都可以立即執行一個{@variantrule Reaction|XPHB}起身並結束{@condition Prone|XPHB}狀態。此外，你鼓舞目標的決心，持續 1 分鐘或直到你處於{@condition Incapacitated|XPHB}狀態為止。受鼓舞期間，目標無法被附身，也不會陷入{@condition Charmed|XPHB}或{@condition Frightened|XPHB}狀態；若目標已經被附身、處於{@condition Charmed|XPHB}或{@condition Frightened|XPHB}狀態，它對相關效果進行的任何新豁免檢定具有{@variantrule Advantage|XPHB}。",
+					"使用此益處後，直到你完成{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Standard Bearer"
+			}
+		],
+		"ENG_name": "Lordly Resolve"
+	},
+	"Lords' Alliance Agent|FRHOF": {
+		"name": "領主聯盟特工",
+		"source": "FRHoF",
+		"page": 38,
+		"category": "O",
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "激勵打擊",
+				"entries": [
+					"每回合一次，當你對一個生物造成{@variantrule Critical Hit|XPHB}時，你可以選擇你 30 呎內一名能看見或聽見你、且沒有{@variantrule Heroic Inspiration|XPHB}的盟友。該盟友獲得{@variantrule Heroic Inspiration|XPHB}。"
+				],
+				"ENG_name": "Inspiring Strike"
+			},
+			{
+				"type": "entries",
+				"name": "重振榮譽",
+				"entries": [
+					"當一個你能看見的敵人對你 5 呎內的一名盟友造成傷害時，你在下個回合結束前對該敵人進行的下一次攻擊檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Reassert Honor"
+			}
+		],
+		"ENG_name": "Lords' Alliance Agent"
+	},
+	"Love Bites|ABH": {
+		"name": "愛之咬痕",
+		"source": "ABH",
+		"page": 10,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "惹人憐愛的痛楚",
+				"entries": [
+					"在你以近戰武器或{@variantrule Unarmed Strike|XPHB}對一個生物造成傷害後，你可以立即執行一個{@variantrule Bonus Action|XPHB}，使目標處於{@condition Charmed|XPHB}狀態，直到你的下個回合開始，或直到你或你的盟友對它造成傷害為止。使用此益處後，直到你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Endearing Pain"
+			}
+		],
+		"ENG_name": "Love Bites"
 	},
 	"Lucky|XPHB": {
 		"name": "幸運",
@@ -2179,6 +6391,1553 @@
 		],
 		"ENG_name": "Magic Initiate"
 	},
+	"Mark of Detection|EFA": {
+		"name": "偵測印記",
+		"source": "EFA",
+		"page": 39,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"3": {
+						"daily": {
+							"1": [
+								"see invisibility|xphb"
+							]
+						}
+					},
+					"_": {
+						"daily": {
+							"1": [
+								"detect magic|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"detect evil and good|xphb",
+						"identify|xphb"
+					],
+					"s2": [
+						"detect thoughts|xphb",
+						"find traps|xphb"
+					],
+					"s3": [
+						"clairvoyance|xphb",
+						"nondetection|xphb"
+					],
+					"s4": [
+						"arcane eye|xphb",
+						"divination|xphb"
+					],
+					"s5": [
+						"legend lore|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "演繹直覺",
+				"entries": [
+					"進行智力（{@skill Investigation|XPHB}）或感知（{@skill Insight|XPHB}）檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Deductive Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "魔法偵測",
+				"entries": [
+					"你總是準備著{@spell Detect Magic|XPHB}與{@spell Detect Poison and Disease|XPHB}法術。你可以不消耗法術欄位各施展它們一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它們的能力。你也可以使用你擁有的適當環階法術欄位施展這些法術。智力、感知或魅力為你施展這些法術的施法屬性（於選擇此專長時決定）。",
+					"當你達到角色等級 3 時，你也總是準備著{@spell See Invisibility|XPHB}法術，並能以同樣的方式施展它。"
+				],
+				"ENG_name": "Magical Detection"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「偵測印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "偵測印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell Detect Evil and Good|XPHB}, {@spell Identify|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Detect Thoughts|XPHB}, {@spell Find Traps|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Clairvoyance|XPHB}, {@spell Nondetection|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Arcane Eye|XPHB}, {@spell Divination|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Legend Lore|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Detection"
+	},
+	"Mark of Finding|EFA": {
+		"name": "尋覓印記",
+		"source": "EFA",
+		"page": 39,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"3": {
+						"daily": {
+							"1": [
+								"locate object|xphb"
+							]
+						}
+					},
+					"_": {
+						"daily": {
+							"1": [
+								"hunter's mark|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"faerie fire|xphb",
+						"longstrider|xphb"
+					],
+					"s2": [
+						"locate animals or plants|xphb",
+						"mind spike|xphb"
+					],
+					"s3": [
+						"clairvoyance|xphb",
+						"speak with plants|xphb"
+					],
+					"s4": [
+						"divination|xphb",
+						"locate creature|xphb"
+					],
+					"s5": [
+						"commune with nature|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "獵人直覺",
+				"entries": [
+					"進行感知（{@skill Perception|XPHB}或{@skill Survival|XPHB}）檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Hunter's Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "尋覓者魔法",
+				"entries": [
+					"你總是準備著{@spell Hunter's Mark|XPHB}法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的適當環階法術欄位施展它。智力、感知或魅力為你施展此法術的施法屬性（於選擇此專長時決定）。",
+					"當你達到角色等級 3 時，你也總是準備著{@spell Locate Object|XPHB}法術，並能以同樣的方式施展它。"
+				],
+				"ENG_name": "Finder's Magic"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「尋覓印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "尋覓印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell Faerie Fire|XPHB}, {@spell Longstrider|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Locate Animals or Plants|XPHB}, {@spell Mind Spike|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Clairvoyance|XPHB}, {@spell Speak with Plants|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Divination|XPHB}, {@spell Locate Creature|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Commune with Nature|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Finding"
+	},
+	"Mark of Handling|EFA": {
+		"name": "馴獸印記",
+		"source": "EFA",
+		"page": 39,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"animal friendship|xphb",
+								"speak with animals|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"command|xphb",
+						"find familiar|xphb"
+					],
+					"s2": [
+						"beast sense|xphb",
+						"calm emotions|xphb"
+					],
+					"s3": [
+						"beacon of hope|xphb",
+						"conjure animals|xphb"
+					],
+					"s4": [
+						"aura of life|xphb",
+						"dominate beast|xphb"
+					],
+					"s5": [
+						"awaken|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "野性直覺",
+				"entries": [
+					"進行智力（{@skill Nature|XPHB}）或感知（{@skill Animal Handling|XPHB}）檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Wild Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "原初連結",
+				"entries": [
+					"你總是準備著{@spell Animal Friendship|XPHB}與{@spell Speak with Animals|XPHB}法術。你可以不消耗法術欄位各施展它們一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它們的能力。你也可以使用你擁有的任何法術欄位施展這些法術。智力、感知或魅力為你施展這些法術的施法屬性（於選擇此專長時決定）。"
+				],
+				"ENG_name": "Primal Connection"
+			},
+			{
+				"type": "entries",
+				"name": "怪獸連結",
+				"entries": [
+					"當你達到角色等級 3 時，若怪獸的智力值為 3 或更低，你施展{@spell Animal Friendship|XPHB}或{@spell Speak with Animals|XPHB}時可以將其作為目標。"
+				],
+				"ENG_name": "Monstrous Connections"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「馴獸印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "馴獸印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell Command|XPHB}, {@spell Find Familiar|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Beast Sense|XPHB}, {@spell Calm Emotions|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Beacon of Hope|XPHB}, {@spell Conjure Animals|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Aura of Life|XPHB}, {@spell Dominate Beast|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Awaken|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Handling"
+	},
+	"Mark of Healing|EFA": {
+		"name": "治療印記",
+		"source": "EFA",
+		"page": 40,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"3": {
+						"daily": {
+							"1": [
+								"lesser restoration|xphb"
+							]
+						}
+					},
+					"_": {
+						"daily": {
+							"1": [
+								"cure wounds|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"false life|xphb",
+						"healing word|xphb"
+					],
+					"s2": [
+						"arcane vigor|xphb",
+						"prayer of healing|xphb"
+					],
+					"s3": [
+						"aura of vitality|xphb",
+						"mass healing word|xphb"
+					],
+					"s4": [
+						"aura of life|xphb",
+						"aura of purity|xphb"
+					],
+					"s5": [
+						"greater restoration|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "醫療直覺",
+				"entries": [
+					"進行感知（{@skill Medicine|XPHB}）檢定或使用{@item Herbalism Kit|XPHB}的屬性檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Medical Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "治療之觸",
+				"entries": [
+					"你總是準備著{@spell Cure Wounds|XPHB}法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的適當環階法術欄位施展它。智力、感知或魅力為你施展此法術的施法屬性（於選擇此專長時決定）。",
+					"當你達到角色等級 3 時，你也總是準備著{@spell Lesser Restoration|XPHB}法術，並能以同樣的方式施展它。"
+				],
+				"ENG_name": "Healing Touch"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「治療印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "治療印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell False Life|XPHB}, {@spell Healing Word|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Arcane Vigor|XPHB}, {@spell Prayer of Healing|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Aura of Vitality|XPHB}, {@spell Mass Healing Word|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Aura of Life|XPHB}, {@spell Aura of Purity|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Greater Restoration|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Healing"
+	},
+	"Mark of Hospitality|EFA": {
+		"name": "款待印記",
+		"source": "EFA",
+		"page": 40,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"3": {
+						"daily": {
+							"1": [
+								"calm emotions|xphb"
+							]
+						}
+					},
+					"_": {
+						"daily": {
+							"1": [
+								"purify food and drink|xphb",
+								"unseen servant|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"goodberry|xphb",
+						"sleep|xphb"
+					],
+					"s2": [
+						"aid|xphb",
+						"enhance ability|xphb"
+					],
+					"s3": [
+						"create food and water|xphb",
+						"leomund's tiny hut|xphb"
+					],
+					"s4": [
+						"aura of purity|xphb",
+						"mordenkainen's private sanctum|xphb"
+					],
+					"s5": [
+						"hallow|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "賓至如歸",
+				"entries": [
+					"進行魅力（{@skill Persuasion|XPHB}）檢定，或使用{@item Brewer's Supplies|XPHB}或{@item Cook's Utensils|XPHB}的屬性檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Ever Hospitable"
+			},
+			{
+				"type": "entries",
+				"name": "旅店主人的魔法",
+				"entries": [
+					"你總是準備著{@spell Purify Food and Drink|XPHB}與{@spell Unseen Servant|XPHB}法術。你可以不消耗法術欄位各施展它們一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它們的能力。你也可以使用你擁有的適當環階法術欄位施展這些法術。智力、感知或魅力為你施展這些法術的施法屬性（於選擇此專長時決定）。",
+					"當你達到角色等級 3 時，你也總是準備著{@spell Calm Emotions|XPHB}法術，並能以同樣的方式施展它。"
+				],
+				"ENG_name": "Innkeeper's Magic"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「款待印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "款待印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell Goodberry|XPHB}, {@spell Sleep|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Aid|XPHB}, {@spell Enhance Ability|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Create Food and Water|XPHB}, {@spell Leomund's Tiny Hut|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Aura of Purity|XPHB}, {@spell Mordenkainen's Private Sanctum|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Hallow|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Hospitality"
+	},
+	"Mark of Making|EFA": {
+		"name": "製造印記",
+		"source": "EFA",
+		"page": 40,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"mending|xphb#c"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"magic weapon|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"identify|xphb",
+						"tenser's floating disk|xphb"
+					],
+					"s2": [
+						"continual flame|xphb",
+						"spiritual weapon|xphb"
+					],
+					"s3": [
+						"conjure barrage|xphb",
+						"elemental weapon|xphb"
+					],
+					"s4": [
+						"fabricate|xphb",
+						"stone shape|xphb"
+					],
+					"s5": [
+						"creation|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "工匠直覺",
+				"entries": [
+					"進行智力（{@skill Arcana|XPHB}）檢定或使用{@item Artisan's Tools|XPHB}的屬性檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Artisan's Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "法術鍛造",
+				"entries": [
+					"你知道{@spell Mending|XPHB}戲法。你也總是準備著{@spell Magic Weapon|XPHB}法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的任何法術欄位施展它。智力、感知或魅力為你施展這些法術的施法屬性（於選擇此專長時決定）。"
+				],
+				"ENG_name": "Spellsmith"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「製造印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "製造印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell Identify|XPHB}, {@spell Tenser's Floating Disk|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Continual Flame|XPHB}, {@spell Spiritual Weapon|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Conjure Barrage|XPHB}, {@spell Elemental Weapon|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Fabricate|XPHB}, {@spell Stone Shape|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Creation|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Making"
+	},
+	"Mark of Passage|EFA": {
+		"name": "通行印記",
+		"source": "EFA",
+		"page": 41,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"misty step|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"expeditious retreat|xphb",
+						"jump|xphb"
+					],
+					"s2": [
+						"find steed|xphb",
+						"pass without trace|xphb"
+					],
+					"s3": [
+						"blink|xphb",
+						"phantom steed|xphb"
+					],
+					"s4": [
+						"dimension door|xphb",
+						"freedom of movement|xphb"
+					],
+					"s5": [
+						"teleportation circle|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "信使之速",
+				"entries": [
+					"你的{@variantrule Speed|XPHB}增加 5 呎。"
+				],
+				"ENG_name": "Courier's Speed"
+			},
+			{
+				"type": "entries",
+				"name": "直覺行動",
+				"entries": [
+					"進行力量（{@skill Athletics|XPHB}）或敏捷（{@skill Acrobatics|XPHB}）檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Intuitive Motion"
+			},
+			{
+				"type": "entries",
+				"name": "魔法通行",
+				"entries": [
+					"你總是準備著{@spell Misty Step|XPHB}法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的任何法術欄位施展它。智力、感知或魅力為你施展此法術的施法屬性（於選擇此專長時決定）。"
+				],
+				"ENG_name": "Magical Passage"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「通行印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "通行印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell Expeditious Retreat|XPHB}, {@spell Jump|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Find Steed|XPHB}, {@spell Pass without Trace|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Blink|XPHB}, {@spell Phantom Steed|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Dimension Door|XPHB}, {@spell Freedom of Movement|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Teleportation Circle|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Passage"
+	},
+	"Mark of Scribing|EFA": {
+		"name": "書記印記",
+		"source": "EFA",
+		"page": 41,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"message|xphb#c"
+					]
+				},
+				"prepared": {
+					"3": {
+						"daily": {
+							"1": [
+								"magic mouth|xphb"
+							]
+						}
+					},
+					"_": {
+						"daily": {
+							"1": [
+								"comprehend languages|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"command|xphb",
+						"illusory script|xphb"
+					],
+					"s2": [
+						"animal messenger|xphb",
+						"silence|xphb"
+					],
+					"s3": [
+						"sending|xphb",
+						"tongues|xphb"
+					],
+					"s4": [
+						"arcane eye|xphb",
+						"confusion|xphb"
+					],
+					"s5": [
+						"dream|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "天賦書記",
+				"entries": [
+					"進行智力（{@skill History|XPHB}）檢定或使用{@item Calligrapher's Supplies|XPHB}的屬性檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Gifted Scribe"
+			},
+			{
+				"type": "entries",
+				"name": "書記的洞見",
+				"entries": [
+					"你知道{@spell Message|XPHB}戲法。你也總是準備著{@spell Comprehend Languages|XPHB}法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的適當環階法術欄位施展它。智力、感知或魅力為你施展此法術的施法屬性（於選擇此專長時決定）。",
+					"當你達到角色等級 3 時，你也總是準備著{@spell Magic Mouth|XPHB}法術，並能以同樣的方式施展它。"
+				],
+				"ENG_name": "Scribe's Insight"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「書記印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "書記印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell Command|XPHB}, {@spell Illusory Script|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Animal Messenger|XPHB}, {@spell Silence|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Sending|XPHB}, {@spell Tongues|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Arcane Eye|XPHB}, {@spell Confusion|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Dream|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Scribing"
+	},
+	"Mark of Sentinel|EFA": {
+		"name": "哨兵印記",
+		"source": "EFA",
+		"page": 41,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"shield|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"compelled duel|xphb",
+						"shield of faith|xphb"
+					],
+					"s2": [
+						"warding bond|xphb",
+						"zone of truth|xphb"
+					],
+					"s3": [
+						"counterspell|xphb",
+						"protection from energy|xphb"
+					],
+					"s4": [
+						"death ward|xphb",
+						"guardian of faith|xphb"
+					],
+					"s5": [
+						"bigby's hand|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "哨兵直覺",
+				"entries": [
+					"進行感知（{@skill Insight|XPHB}或{@skill Perception|XPHB}）檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Sentinel's Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "守護者之盾",
+				"entries": [
+					"你總是準備著{@spell Shield|XPHB}法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的任何法術欄位施展它。智力、感知或魅力為你施展此法術的施法屬性（於選擇此專長時決定）。"
+				],
+				"ENG_name": "Guardian's Shield"
+			},
+			{
+				"type": "entries",
+				"name": "警戒守護者",
+				"entries": [
+					"當你 5 呎內一個你能看見的生物被攻擊檢定命中時，你可以執行一個{@variantrule Reaction|XPHB}與該生物交換位置，改由你被該攻擊命中。你可以使用此特性的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。"
+				],
+				"ENG_name": "Vigilant Guardian"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「哨兵印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "哨兵印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell Compelled Duel|XPHB}, {@spell Shield of Faith|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Warding Bond|XPHB}, {@spell Zone of Truth|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Counterspell|XPHB}, {@spell Protection from Energy|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Death Ward|XPHB}, {@spell Guardian of Faith|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Bigby's Hand|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Sentinel"
+	},
+	"Mark of Shadow|EFA": {
+		"name": "陰影印記",
+		"source": "EFA",
+		"page": 42,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"minor illusion|xphb#c"
+					]
+				},
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"invisibility|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"disguise self|xphb",
+						"silent image|xphb"
+					],
+					"s2": [
+						"darkness|xphb",
+						"pass without trace|xphb"
+					],
+					"s3": [
+						"clairvoyance|xphb",
+						"major image|xphb"
+					],
+					"s4": [
+						"greater invisibility|xphb",
+						"hallucinatory terrain|xphb"
+					],
+					"s5": [
+						"mislead|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "狡黠直覺",
+				"entries": [
+					"進行敏捷（{@skill Stealth|XPHB}）或魅力（{@skill Performance|XPHB}）檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Cunning Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "塑造陰影",
+				"entries": [
+					"你知道{@spell Minor Illusion|XPHB}戲法。你也總是準備著{@spell Invisibility|XPHB}法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的適當環階法術欄位施展它。智力、感知或魅力為你施展這些法術的施法屬性（於選擇此專長時決定）。"
+				],
+				"ENG_name": "Shape Shadows"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「陰影印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "陰影印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell Disguise Self|XPHB}, {@spell Silent Image|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Darkness|XPHB}, {@spell Pass without Trace|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Clairvoyance|XPHB}, {@spell Major Image|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Greater Invisibility|XPHB}, {@spell Hallucinatory Terrain|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Mislead|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Shadow"
+	},
+	"Mark of Storm|EFA": {
+		"name": "暴風印記",
+		"source": "EFA",
+		"page": 42,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"resist": [
+			"lightning"
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"thunderclap|xphb#c"
+					]
+				},
+				"prepared": {
+					"3": {
+						"daily": {
+							"1": [
+								"gust of wind|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"feather fall|xphb",
+						"fog cloud|xphb"
+					],
+					"s2": [
+						"levitate|xphb",
+						"shatter|xphb"
+					],
+					"s3": [
+						"sleet storm|xphb",
+						"wind wall|xphb"
+					],
+					"s4": [
+						"conjure minor elementals|xphb",
+						"control water|xphb"
+					],
+					"s5": [
+						"conjure elemental|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "駕風者直覺",
+				"entries": [
+					"進行敏捷（{@skill Acrobatics|XPHB}）檢定或使用{@item Navigator's Tools|XPHB}的屬性檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Windwright's Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "風暴恩賜",
+				"entries": [
+					"你對閃電傷害具有{@variantrule Resistance|XPHB}。"
+				],
+				"ENG_name": "Storm's Boon"
+			},
+			{
+				"type": "entries",
+				"name": "風暴魔法",
+				"entries": [
+					"你知道{@spell Thunderclap|XPHB}戲法。當你達到角色等級 3 時，你也總是準備著{@spell Gust of Wind|XPHB}法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的適當環階法術欄位施展它。智力、感知或魅力為你施展這些法術的施法屬性（於選擇此專長時決定）。"
+				],
+				"ENG_name": "Storm Magic"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「暴風印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "暴風印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell Feather Fall|XPHB}, {@spell Fog Cloud|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Levitate|XPHB}, {@spell Shatter|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Sleet Storm|XPHB}, {@spell Wind Wall|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Conjure Minor Elementals|XPHB}, {@spell Control Water|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Conjure Elemental|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Storm"
+	},
+	"Mark of Warding|EFA": {
+		"name": "守護印記",
+		"source": "EFA",
+		"page": 42,
+		"category": "D",
+		"prerequisite": [
+			{
+				"campaign": [
+					"Eberron"
+				],
+				"exclusiveFeatCategory": [
+					"D"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"prepared": {
+					"3": {
+						"daily": {
+							"1": [
+								"arcane lock|xphb"
+							]
+						}
+					},
+					"_": {
+						"daily": {
+							"1": [
+								"alarm|xphb",
+								"mage armor|xphb"
+							]
+						}
+					}
+				},
+				"expanded": {
+					"s1": [
+						"armor of agathys|xphb",
+						"sanctuary|xphb"
+					],
+					"s2": [
+						"knock|xphb",
+						"nystul's magic aura|xphb"
+					],
+					"s3": [
+						"glyph of warding|xphb",
+						"magic circle|xphb"
+					],
+					"s4": [
+						"leomund's secret chest|xphb",
+						"mordenkainen's faithful hound|xphb"
+					],
+					"s5": [
+						"antilife shell|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "守護者直覺",
+				"entries": [
+					"進行智力（{@skill Investigation|XPHB}）檢定或使用{@item Thieves' Tools|XPHB}的屬性檢定時，你可以擲 {@dice 1d4} 並將結果加到該屬性檢定上。"
+				],
+				"ENG_name": "Warder's Intuition"
+			},
+			{
+				"type": "entries",
+				"name": "結界與封印",
+				"entries": [
+					"你總是準備著{@spell Alarm|XPHB}與{@spell Mage Armor|XPHB}法術。你可以不消耗法術欄位各施展它們一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它們的能力。",
+					"你也可以使用你擁有的適當環階法術欄位施展這些法術。智力、感知或魅力為你施展這些法術的施法屬性（於選擇此專長時決定）。",
+					"當你達到角色等級 3 時，你也總是準備著{@spell Arcane Lock|XPHB}法術，並能以同樣的方式施展它。"
+				],
+				"ENG_name": "Wards and Seals"
+			},
+			{
+				"type": "entries",
+				"name": "印記法術",
+				"entries": [
+					"若你擁有施法或契約魔法職業特性，「守護印記法術」表中的法術會加入該特性的法術列表。",
+					{
+						"type": "table",
+						"caption": "守護印記法術",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"rows": [
+							[
+								"1",
+								"{@spell Armor of Agathys|XPHB}, {@spell Sanctuary|XPHB}"
+							],
+							[
+								"2",
+								"{@spell Knock|XPHB}, {@spell Nystul's Magic Aura|XPHB}"
+							],
+							[
+								"3",
+								"{@spell Glyph of Warding|XPHB}, {@spell Magic Circle|XPHB}"
+							],
+							[
+								"4",
+								"{@spell Leomund's Secret Chest|XPHB}, {@spell Mordenkainen's Faithful Hound|XPHB}"
+							],
+							[
+								"5",
+								"{@spell Antilife Shell|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spells of the Mark"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mark of Warding"
+	},
 	"Martial Weapon Training|XPHB": {
 		"name": "軍用武器訓練",
 		"source": "XPHB",
@@ -2254,6 +8013,39 @@
 			}
 		],
 		"ENG_name": "Medium Armor Master"
+	},
+	"Metamagic Adept|TCE": {
+		"name": "超魔行家",
+		"source": "TCE",
+		"page": 80,
+		"prerequisite": [
+			{
+				"spellcasting2020": true
+			}
+		],
+		"optionalfeatureProgression": [
+			{
+				"name": "超魔法",
+				"featureType": [
+					"MM"
+				],
+				"progression": {
+					"*": 2
+				},
+				"ENG_name": "Metamagic"
+			}
+		],
+		"entries": [
+			"你學會了如何將意志施加於法術上，改變它們的運作方式：",
+			{
+				"type": "list",
+				"items": [
+					"你從術士職業中學會兩種自選的{@filter 超魔法|optionalfeatures|Feature Type=MM}選項。除非選項另有說明，否則你施展法術時只能對其使用一種超魔法選項。每當你達到賦予屬性值提升特性的等級時，你可以將其中一種超魔法選項替換為術士職業的另一種選項。",
+					"你獲得 2 點術法點，用於超魔法（這些點數會加到你從其他來源獲得的術法點中，但只能用於超魔法）。完成長休時，你恢復所有已花費的術法點。"
+				]
+			}
+		],
+		"ENG_name": "Metamagic Adept"
 	},
 	"Moderately Armored|XPHB": {
 		"name": "中度著甲",
@@ -2379,6 +8171,82 @@
 		],
 		"ENG_name": "Musician"
 	},
+	"Mythal Touched|FRHOF": {
+		"name": "秘境之觸",
+		"source": "FRHoF",
+		"page": 40,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "秘境守護",
+				"entries": [
+					"若一次法術攻擊命中你，或你對法術的豁免檢定失敗，你可以執行一個{@variantrule Reaction|XPHB}，在「秘境之觸{@action Magic|XPHB}」表上擲骰以產生魔法效果。若效果需要豁免檢定，DC 等於 8 加上此專長所提升屬性的調整值與你的{@variantrule Proficiency|XPHB|熟練加值}。",
+					"你可以使用此益處的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。",
+					{
+						"type": "table",
+						"caption": "秘境之觸魔法",
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"colLabels": [
+							"1d20",
+							"效果"
+						],
+						"rows": [
+							[
+								"1-2",
+								"你與你 15 呎內的每個生物進行一次敏捷豁免檢定，豁免失敗時受到等同於 {@dice 1d8} 乘以觸發法術環階的力場傷害，成功則傷害減半。"
+							],
+							[
+								"3-7",
+								"你與觸發法術的施法者建立持續 1 小時的心靈連結。"
+							],
+							[
+								"8-10",
+								"以你為中心、半徑 15 呎、高 60 呎的{@variantrule Cylinder [Area of Effect]|XPHB|圓柱}範圍內重力反轉 1 分鐘，如同{@spell Reverse Gravity|XPHB}法術。"
+							],
+							[
+								"11-13",
+								"你與觸發法術的施法者各進行一次體質豁免檢定。豁免失敗的生物處於{@condition Stunned|XPHB}狀態直到其下個回合結束。"
+							],
+							[
+								"14-17",
+								"你的 AC 獲得 +2 加值，持續 1 分鐘；若觸發法術是法術攻擊，可能因此使其未命中。"
+							],
+							[
+								"18-19",
+								"觸發法術施法者 10 呎內任何未被其他生物穿戴或攜帶的易燃非魔法物件會起火，受到 {@damage 1d4} 火焰傷害，並持續燃燒。"
+							],
+							[
+								"20",
+								"觸發法術消散而沒有效果，用於施展它的動作、{@variantrule Bonus Action|XPHB}或{@variantrule Reaction|XPHB}被浪費。若該法術是以法術欄位施展，該欄位不會被消耗。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Mythal Ward"
+			}
+		],
+		"ENG_name": "Mythal Touched"
+	},
 	"Observant|XPHB": {
 		"name": "敏銳觀察",
 		"source": "XPHB",
@@ -2444,6 +8312,141 @@
 		],
 		"ENG_name": "Observant"
 	},
+	"Order's Resilience|FRHOF": {
+		"name": "騎士團的韌性",
+		"source": "FRHoF",
+		"page": 40,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"tyro of the gauntlet|frhof"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "再起",
+				"entries": [
+					"當你處於{@condition Prone|XPHB}狀態時，你只需消耗 5 呎移動即可起身。"
+				],
+				"ENG_name": "Resurge"
+			},
+			{
+				"type": "entries",
+				"name": "團結更強",
+				"entries": [
+					"若你位於一名未處於{@condition Incapacitated|XPHB}狀態的盟友 5 呎內，你與該盟友的力量豁免檢定具有{@variantrule Advantage|XPHB}。當你處於{@condition Incapacitated|XPHB}狀態時，無法使用此益處。"
+				],
+				"ENG_name": "Stronger Together"
+			}
+		],
+		"ENG_name": "Order's Resilience"
+	},
+	"Outlands Envoy|SATO": {
+		"name": "外域使節",
+		"source": "SatO",
+		"page": 10,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"scion of the outer planes|sato|scion of the outer planes (the outlands)"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								"misty step",
+								"tongues"
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你在多重宇宙的十字路口——印記城或外域——待了相當長的時間。浸淫於交匯的位面能量之中，賦予你下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "十字路口使者",
+						"entries": [
+							"你學會{@spell misty step}與{@spell tongues}法術。你可以使用此專長不消耗法術欄位各施展這些法術一次，且必須完成長休後才能再以此方式施展該法術。以此專長施展{@spell tongues}時，你不需要材料成分。你也可以使用你擁有的適當環階法術欄位施展這些法術。這些法術的施法屬性為你獲得外層位面後裔專長時所選擇的屬性。"
+						],
+						"ENG_name": "Crossroads Emissary"
+					}
+				]
+			}
+		],
+		"ENG_name": "Outlands Envoy"
+	},
+	"Piercer|TCE": {
+		"name": "穿刺者",
+		"source": "TCE",
+		"page": 80,
+		"reprintedAs": [
+			"Piercer|XPHB"
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你在戰鬥中達到了洞穿要害的精準，獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"每回合一次，當你以造成穿刺傷害的攻擊命中一個生物時，你可以重擲該攻擊的一顆傷害骰，且必須使用新的結果。",
+					"當你對一個生物造成穿刺傷害的重擊時，在決定目標所受的額外穿刺傷害時，你可以多擲一顆傷害骰。"
+				]
+			}
+		],
+		"ENG_name": "Piercer"
+	},
 	"Piercer|XPHB": {
 		"name": "穿刺者",
 		"source": "XPHB",
@@ -2484,6 +8487,82 @@
 			}
 		],
 		"ENG_name": "Piercer"
+	},
+	"Planar Wanderer|SATO": {
+		"name": "位面流浪者",
+		"source": "SatO",
+		"page": 11,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"scion of the outer planes|sato"
+				]
+			}
+		],
+		"traitTags": [
+			"Damage Resistance"
+		],
+		"entries": [
+			"你可以汲取多重宇宙的力量，在宇宙的極端環境中存活並穿越其無盡的領域，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "位面適應",
+						"entries": [
+							"當你完成長休時，你獲得對強酸、寒冷或火焰傷害（由你選擇）的抗性，直到你完成下一次長休。"
+						],
+						"ENG_name": "Planar Adaptation"
+					},
+					{
+						"type": "item",
+						"name": "傳送門破解者",
+						"entries": [
+							"你對傳送門的經驗讓你無需傳送門鑰匙就能開啟它們。作為一個動作，你可以專注於你 5 呎內一個你所知的傳送門，並進行一次 {@dc 20} 智力（{@skill Arcana}）檢定。檢定失敗時，你受到 {@damage 3d8} 心靈傷害，且直到你完成長休前無法再對該傳送門使用此益處。檢定成功時，你可以強制開啟或關閉該傳送門 1 小時。在此期間，除非使用鑰匙的生物以一個動作通過一次 {@dc 20} 智力（{@skill Arcana}）檢定，否則傳送門不會回應其鑰匙。"
+						],
+						"ENG_name": "Portal Cracker"
+					},
+					{
+						"type": "item",
+						"name": "傳送門感知",
+						"entries": [
+							"當你與你最後使用的位面傳送門位於同一個存在位面時，你知道它的方向。此外，作為一個動作，你可以偵測你 30 呎內任何不在{@quickref Cover||3||全遮蔽}之後的傳送門的位置。以此動作偵測到傳送門後，直到你完成長休前都無法再次使用此動作。"
+						],
+						"ENG_name": "Portal Sense"
+					}
+				]
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Planar Wanderer"
+	},
+	"Poisoner|TCE": {
+		"name": "用毒者",
+		"source": "TCE",
+		"page": 80,
+		"reprintedAs": [
+			"Poisoner|XPHB"
+		],
+		"toolProficiencies": [
+			{
+				"poisoner's kit": true
+			}
+		],
+		"entries": [
+			"你能調製並施用致命的毒藥，獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"當你進行造成毒素傷害的傷害擲骰時，該傷害無視對毒素傷害的抗性。",
+					"你可以用一個附贈動作（而非一個動作）將毒藥塗抹在武器或一發彈藥上。",
+					"若你尚未具備{@item poisoner's kit|phb}的熟練，你獲得該熟練。花費一小時使用{@item poisoner's kit|phb}並消耗價值 50 gp 的材料，你可以製作數量等同於你熟練加值的強效毒藥劑量。塗抹在武器或彈藥上後，毒藥的效力會保持 1 分鐘，或直到你以該武器或彈藥命中為止。當一個生物受到塗毒武器或彈藥的傷害時，該生物必須通過一次 {@dc 14} 體質豁免檢定，否則受到 {@damage 2d8} 毒素傷害，並{@condition poisoned}直到你的下個回合結束。"
+				]
+			}
+		],
+		"ENG_name": "Poisoner"
 	},
 	"Poisoner|XPHB": {
 		"name": "用毒者",
@@ -2586,6 +8665,56 @@
 		],
 		"ENG_name": "Polearm Master"
 	},
+	"Potent Dragonmark|EFA": {
+		"name": "強效龍紋",
+		"source": "EFA",
+		"page": 45,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"featCategory": [
+					"D"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1,
+					"entry": "Increase the spellcasting ability score used by your Dragonmark feat by 1, to a maximum of 20."
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "龍紋準備",
+				"entries": [
+					"你總是準備著你「印記法術」清單上的法術（若有的話）。"
+				],
+				"ENG_name": "Dragonmark Preparation"
+			},
+			{
+				"type": "entries",
+				"name": "龍紋施法",
+				"entries": [
+					"你擁有一個額外的法術欄位，用來施展你的龍紋專長所賦予的法術。該法術欄位的環階等於你等級的一半（向上取整），最高 5 環。完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}時，你恢復這個已消耗的欄位。你只能用這個法術欄位施展因龍紋專長或此專長「龍紋準備」益處而準備的法術。"
+				],
+				"ENG_name": "Dragonmark Spellcasting"
+			}
+		],
+		"ENG_name": "Potent Dragonmark"
+	},
 	"Protection|XPHB": {
 		"name": "守護",
 		"source": "XPHB",
@@ -2602,6 +8731,236 @@
 			"當一個你能看見的生物攻擊你 5 呎內除你以外的目標時，若你正持有{@item Shield|XPHB}，你可以執行一個{@variantrule Reaction|XPHB}以盾牌介入。觸發此反應的攻擊檢定，以及直到你的下個回合開始前所有針對該目標的其他攻擊檢定都具有{@variantrule Disadvantage|XPHB}，前提是你持續位於目標 5 呎內。"
 		],
 		"ENG_name": "Protection"
+	},
+	"Purple Dragon Commandant|FRHOF": {
+		"name": "紫龍騎士指揮官",
+		"source": "FRHoF",
+		"page": 40,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"purple dragon rook|frhof"
+				]
+			},
+			{
+				"proficiency": [
+					{
+						"weaponGroup": "martial"
+					}
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "鼓舞盟友",
+				"entries": [
+					"作為一個{@variantrule Bonus Action|XPHB}，你鼓舞你 30 呎內一名你能看見的盟友。該盟友獲得等同於 {@dice 2d6} 加上此專長所提升屬性調整值的{@variantrule Temporary Hit Points|XPHB}。你可以執行此{@variantrule Bonus Action|XPHB}的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有使用次數。"
+				],
+				"ENG_name": "Encourage Ally"
+			},
+			{
+				"type": "entries",
+				"name": "背水一戰",
+				"entries": [
+					"當你處於{@status Bloodied|XPHB}狀態時，你的攻擊檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Last Stand"
+			}
+		],
+		"ENG_name": "Purple Dragon Commandant"
+	},
+	"Purple Dragon Rook|FRHOF": {
+		"name": "紫龍騎士新兵",
+		"source": "FRHoF",
+		"page": 38,
+		"category": "O",
+		"skillProficiencies": [
+			{
+				"choose": {
+					"from": [
+						"insight",
+						"performance",
+						"persuasion"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "懇請",
+				"entries": [
+					"你獲得下列其中一項技能的熟練：{@skill Insight|XPHB}、{@skill Performance|XPHB}或{@skill Persuasion|XPHB}。"
+				],
+				"ENG_name": "Entreat"
+			},
+			{
+				"type": "entries",
+				"name": "集結吶喊",
+				"entries": [
+					"當你擲{@variantrule Initiative|XPHB}且未處於{@condition Incapacitated|XPHB}狀態時，你可以選擇你 30 呎內你能看見、數量等同於你{@variantrule Proficiency|XPHB|熟練加值}的生物。那些生物獲得{@variantrule Heroic Inspiration|XPHB}。",
+					"使用此益處後，直到你完成{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Rallying Cry"
+			}
+		],
+		"ENG_name": "Purple Dragon Rook"
+	},
+	"Putrefy|ABH": {
+		"name": "腐化",
+		"source": "ABH",
+		"page": 10,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "壞死",
+				"entries": [
+					"當你進行造成黯蝕傷害的傷害擲骰時，你可以使受到該傷害的一個生物處於{@condition Poisoned|XPHB}狀態，直到你的下個回合開始。使用此益處後，直到你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Necrosis"
+			}
+		],
+		"ENG_name": "Putrefy"
+	},
+	"Quicksmithing|PSK": {
+		"name": "快速鍛造",
+		"source": "PSK",
+		"page": 13,
+		"prerequisite": [
+			{
+				"ability": [
+					{
+						"int": 13
+					}
+				]
+			}
+		],
+		"toolProficiencies": [
+			{
+				"anyArtisansTool": 1
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "int",
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|components & miscellaneous=ritual",
+									"count": 2
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你精通了即興發明、改良與臨時拼湊的技藝。只要有時間和充足的以太供應，你就能運用才能創造類似法術的即時短期魔法效果。",
+			"選擇此專長時，你精通兩種魔法效果，每種效果都能重現一道具有儀式標記的 1 環法術。這些法術可以來自任何職業的法術列表，但你施展它們的施法屬性為智力。",
+			"若你發現適用於快速鍛造的設計圖，或與另一位快速鍛造師一起研究，你或許能在已精通的效果中再加入一道法術。該法術的環階不得高於你等級的一半（向上取整），且必須具有儀式標記。精通法術的過程每一環需要 2 小時，並花費每環 50 gp。這筆花費代表你在實驗法術效果以精通它時所消耗的以太。",
+			"此外，你具有{@item artisan's tools|PHB}（快速鍛造工具）的熟練。使用這些工具，你可以花費 1 小時與價值 10 gp 的材料，製作一個微型發條裝置（AC 5，1 hp）。除非你花費 1 小時修理以維持其運作，否則裝置會在 24 小時後停止運作。你可以用你的動作拆解裝置，並收回製作它所用的材料。你同時最多可以有三個這樣的裝置在運作。",
+			"製作裝置時，從下列選項中選擇一項：",
+			{
+				"type": "entries",
+				"name": "發條玩具",
+				"entries": [
+					"這個玩具是發條動物、怪物或人偶，例如青蛙、老鼠、鳥、龍或士兵。放在地上時，玩具會在你的每個回合中朝隨機方向在地面上移動 5 呎，並發出與其所代表生物相符的聲音。"
+				],
+				"ENG_name": "Clockwork Toy"
+			},
+			{
+				"type": "entries",
+				"name": "點火器",
+				"entries": [
+					"這個裝置會產生一小簇火焰，你可以用來點燃蠟燭、火把或營火。使用此裝置需要你的動作。"
+				],
+				"ENG_name": "Fire Starter"
+			},
+			{
+				"type": "entries",
+				"name": "音樂盒",
+				"entries": [
+					"打開時，這個音樂盒會以適中的音量播放一首歌曲。播放到歌曲結尾或被關上時，音樂盒便停止播放。"
+				],
+				"ENG_name": "Music Box"
+			}
+		],
+		"ENG_name": "Quicksmithing"
+	},
+	"Rebuke|ABH": {
+		"name": "斥責",
+		"source": "ABH",
+		"page": 10,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "光耀打擊",
+				"entries": [
+					"當你進行造成光耀傷害的傷害擲骰時，你可以使受到該傷害的一個超大型或更小生物處於{@condition Prone|XPHB}狀態。使用此益處後，直到你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Radiant Strike"
+			}
+		],
+		"ENG_name": "Rebuke"
 	},
 	"Resilient|XPHB": {
 		"name": "適應力",
@@ -2655,6 +9014,89 @@
 			}
 		],
 		"ENG_name": "Resilient"
+	},
+	"Revenant Blade|ERLW": {
+		"name": "亡魂之刃",
+		"source": "ERLW",
+		"page": 22,
+		"prerequisite": [
+			{
+				"race": [
+					{
+						"name": "精靈",
+						"ENG_name": "elf"
+					}
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你是{@item double-bladed scimitar|ERLW}大師的後裔，部分技藝傳承到了你身上。你獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"當你以雙手持握雙刃彎刀時，你的護甲等級獲得 +1 加值。",
+					"你持用雙刃彎刀時，它具有{@itemProperty F|PHB|靈巧}屬性。"
+				]
+			}
+		],
+		"ENG_name": "Revenant Blade"
+	},
+	"Righteous Heritor|SATO": {
+		"name": "正義傳承者",
+		"source": "SatO",
+		"page": 11,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"scion of the outer planes|sato|scion of the outer planes (good outer plane)"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你可以引導宇宙的善良之力，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "舒緩痛楚",
+						"entries": [
+							"當你或你 30 呎內的一個生物受到傷害時，你可以使用你的反應，使該傷害減少 {@dice 1d10} + 你的熟練加值。你可以使用此益處的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Soothe Pain"
+					}
+				]
+			}
+		],
+		"ENG_name": "Righteous Heritor"
 	},
 	"Ritual Caster|XPHB": {
 		"name": "儀式施法者",
@@ -2756,6 +9198,144 @@
 		"hasFluffImages": true,
 		"ENG_name": "Ritual Caster"
 	},
+	"Rune Shaper|BGG": {
+		"name": "符文塑造者",
+		"source": "BGG",
+		"page": 18,
+		"prerequisite": [
+			{
+				"spellcastingFeature": true
+			},
+			{
+				"background": [
+					{
+						"name": "符文雕刻師",
+						"displayEntry": "{@background Rune Carver|BGG}",
+						"ENG_name": "Rune Carver"
+					}
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								"comprehend languages",
+								"fog cloud",
+								"inflict wounds",
+								"chromatic orb",
+								"disguise self",
+								"burning hands",
+								"speak with animals",
+								"armor of agathys",
+								"goodberry",
+								"longstrider",
+								"command",
+								"entangle",
+								"sanctuary",
+								"thunderwave"
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你研究過巨人符文的魔法，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "通曉語言",
+						"entries": [
+							"你學會{@spell comprehend languages}法術。你可以不消耗法術欄位施展此法術，且必須完成長休後才能再以此方式施展它。你也可以使用你擁有的任何法術欄位施展此法術。"
+						],
+						"ENG_name": "Comprehend Languages"
+					},
+					{
+						"type": "item",
+						"name": "符文魔法",
+						"entries": [
+							"你知道數量等同於你熟練加值一半（向下取整）的符文，從「符文法術」表中選擇。每當你完成長休時，你可以將你知道的每個符文銘刻在你碰觸的一件非魔法武器、護甲、衣物或其他物件上。你暫時學會與所銘刻符文對應的 1 環法術（如「符文法術」表所示），並知道這些法術直到你完成長休、符文褪去為止。當你穿戴或攜帶任何刻有符文的物件時，你可以使用你擁有的任何法術欄位施展與這些符文相關的法術。",
+							"你也可以啟動你穿戴或攜帶之物件上所銘刻的符文，不消耗法術欄位也不需材料成分施展其相關法術。以此方式施展法術後，直到你完成長休前都無法再次這麼做。此專長的施法屬性為智力、感知或魅力（於選擇此專長時決定）。",
+							"每當你獲得一個等級時，你可以將一個已知的符文替換為「符文法術」表中的另一個符文。",
+							{
+								"type": "table",
+								"colStyles": [
+									"col-2",
+									"col-10"
+								],
+								"colLabels": [
+									"符文",
+									"法術"
+								],
+								"rows": [
+									[
+										"雲",
+										"{@spell Fog cloud}"
+									],
+									[
+										"死亡",
+										"{@spell Inflict wounds}"
+									],
+									[
+										"龍",
+										"{@spell Chromatic orb}"
+									],
+									[
+										"敵",
+										"{@spell Disguise self}"
+									],
+									[
+										"火",
+										"{@spell Burning hands}"
+									],
+									[
+										"友",
+										"{@spell Speak with animals}"
+									],
+									[
+										"霜",
+										"{@spell Armor of Agathys}"
+									],
+									[
+										"丘",
+										"{@spell Goodberry}"
+									],
+									[
+										"旅途",
+										"{@spell Longstrider}"
+									],
+									[
+										"王",
+										"{@spell Command}"
+									],
+									[
+										"山",
+										"{@spell Entangle}"
+									],
+									[
+										"石",
+										"{@spell Sanctuary}"
+									],
+									[
+										"暴風",
+										"{@spell Thunderwave}"
+									]
+								]
+							}
+						],
+						"ENG_name": "Rune Magic"
+					}
+				]
+			}
+		],
+		"ENG_name": "Rune Shaper"
+	},
 	"Savage Attacker|XPHB": {
 		"name": "野蠻攻擊者",
 		"source": "XPHB",
@@ -2767,6 +9347,152 @@
 			"你經過訓練，能打出格外具殺傷力的攻擊。每回合一次，當你以武器命中目標時，你可以擲兩次該武器的傷害骰，並對目標使用其中任一結果。"
 		],
 		"ENG_name": "Savage Attacker"
+	},
+	"Scion of the Outer Planes|SATO": {
+		"name": "外層位面後裔",
+		"source": "SatO",
+		"page": 12,
+		"prerequisite": [
+			{
+				"campaign": [
+					"Planescape"
+				]
+			}
+		],
+		"resist": [
+			{
+				"choose": {
+					"from": [
+						"poison",
+						"necrotic",
+						"radiant",
+						"force",
+						"psychic"
+					]
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"name": "Chaotic Outer Plane",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"minor illusion#c"
+					]
+				}
+			},
+			{
+				"name": "Evil Outer Plane",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"chill touch#c"
+					]
+				}
+			},
+			{
+				"name": "Good Outer Plane",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"sacred flame#c"
+					]
+				}
+			},
+			{
+				"name": "Lawful Outer Plane",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"guidance#c"
+					]
+				}
+			},
+			{
+				"name": "The Outlands",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"mage hand#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你與某個外層位面的連結讓你充滿了該處的能量。從「位面灌注」表中選擇一種位面類型。你的選擇會賦予你一種傷害類型的抗性以及施展一道戲法的能力，如表中所示。你可以不需材料成分施展此戲法，其施法屬性為智力、感知或魅力（於選擇此專長時決定）。",
+			{
+				"type": "table",
+				"colStyles": [
+					"col-4",
+					"col-4",
+					"col-4"
+				],
+				"colLabels": [
+					"位面",
+					"傷害抗性",
+					"戲法"
+				],
+				"rows": [
+					[
+						"混沌外層位面",
+						"毒素",
+						"{@spell Minor illusion}"
+					],
+					[
+						"邪惡外層位面",
+						"黯蝕",
+						"{@spell Chill touch}"
+					],
+					[
+						"善良外層位面",
+						"光耀",
+						"{@spell Sacred flame}"
+					],
+					[
+						"守序外層位面",
+						"力場",
+						"{@spell Guidance}"
+					],
+					[
+						"外域",
+						"心靈",
+						"{@spell Mage hand}"
+					]
+				]
+			}
+		],
+		"ENG_name": "Scion of the Outer Planes"
 	},
 	"Sentinel|XPHB": {
 		"name": "哨兵",
@@ -2822,6 +9548,85 @@
 		],
 		"ENG_name": "Sentinel"
 	},
+	"Servo Crafting|PSK": {
+		"name": "伺服機製作",
+		"source": "PSK",
+		"page": 13,
+		"prerequisite": [
+			{
+				"ability": [
+					{
+						"int": 13
+					}
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"_": {
+						"ritual": [
+							"find familiar"
+						]
+					}
+				}
+			}
+		],
+		"entries": [
+			"你擅長製作{@creature servo|psk|伺服機}——作為個人助理的微型構裝生物。你可以將{@spell find familiar}法術作為儀式施展，創造一台{@creature servo|psk}作為你的魔寵，而非動物。{@creature servo|psk}的數據見本文件的「神器生物」一節。除此之外，伺服機魔寵的運作方式皆如{@spell find familiar}法術所述。",
+			"只要你們位於同一個存在位面，你就能與伺服機魔寵心靈感應交流，並透過它的感官感知。你可以透過伺服機以你自己的聲音說話。",
+			"此外，當你執行{@action Attack}動作時，你可以放棄自己的一次攻擊，讓你的伺服機魔寵進行一次它自己的攻擊。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Servo Crafting"
+	},
+	"Shadow Touched|TCE": {
+		"name": "暗影之觸",
+		"source": "TCE",
+		"page": 80,
+		"reprintedAs": [
+			"Shadow-Touched|XPHB"
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "inherit",
+				"innate": {
+					"_": {
+						"daily": {
+							"1e": [
+								"invisibility",
+								{
+									"choose": "level=1|school=I;N"
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"接觸墮影冥界的魔法改變了你，賦予你下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"你學會{@spell invisibility}法術，以及一道自選的{@filter 1 環法術|spells|level=1|school=I;N}。該{@filter 1 環法術|spells|level=1|school=I;N}必須屬於幻術系或死靈系。你可以不消耗法術欄位各施展這些法術。以此方式施展其中任一道法術後，直到你完成長休前都無法再以此方式施展該法術。你也可以使用你擁有的適當環階法術欄位施展這些法術。這些法術的施法屬性為此專長所提升的屬性。"
+				]
+			}
+		],
+		"ENG_name": "Shadow Touched"
+	},
 	"Shadow-Touched|XPHB": {
 		"name": "暗影觸碰",
 		"source": "XPHB",
@@ -2872,6 +9677,51 @@
 			}
 		],
 		"ENG_name": "Shadow-Touched"
+	},
+	"Shadowmoor Hexer|LFL": {
+		"name": "影沼咒術師",
+		"source": "LFL",
+		"category": "O",
+		"additionalSpells": [
+			{
+				"prepared": {
+					"_": {
+						"daily": {
+							"1": [
+								"hex|xphb"
+							]
+						}
+					}
+				},
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "脆弱詛咒",
+				"entries": [
+					"你總是準備著{@spell Hex|XPHB}法術。智力、感知或魅力為你施展此法術的施法屬性（於選擇此專長時決定）。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的任何法術欄位施展此法術。"
+				],
+				"ENG_name": "Hex"
+			},
+			{
+				"type": "entries",
+				"name": "詛咒魔法",
+				"entries": [
+					"當一個被你以{@spell Hex|XPHB}詛咒的生物以攻擊檢定命中你時，該生物受到等同於你{@variantrule Proficiency|XPHB|熟練加值}的心靈傷害。生物每回合只會受到一次此傷害。"
+				],
+				"ENG_name": "Curse Magic"
+			}
+		],
+		"ENG_name": "Shadowmoor Hexer"
 	},
 	"Sharpshooter|XPHB": {
 		"name": "神射手",
@@ -2962,6 +9812,71 @@
 			}
 		],
 		"ENG_name": "Shield Master"
+	},
+	"Skill Expert|TCE": {
+		"name": "技能專家",
+		"source": "TCE",
+		"page": 80,
+		"reprintedAs": [
+			"Skill Expert|XPHB"
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"skillProficiencies": [
+			{
+				"choose": {
+					"from": [
+						"athletics",
+						"acrobatics",
+						"sleight of hand",
+						"stealth",
+						"arcana",
+						"history",
+						"investigation",
+						"nature",
+						"religion",
+						"animal handling",
+						"insight",
+						"medicine",
+						"perception",
+						"survival",
+						"deception",
+						"intimidation",
+						"performance",
+						"persuasion"
+					]
+				}
+			}
+		],
+		"expertise": [
+			{
+				"anyProficientSkill": 1
+			}
+		],
+		"entries": [
+			"你磨練了特定技能的熟練，獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"你獲得一項自選{@table skills|phb|技能}的熟練。",
+					"選擇一項你具有熟練的技能。你在該技能上獲得專精，這表示你以該技能進行任何屬性檢定時，熟練加值加倍。你選擇的技能必須是尚未受益於任何使熟練加值加倍之特性（例如專精）的技能。"
+				]
+			}
+		],
+		"ENG_name": "Skill Expert"
 	},
 	"Skill Expert|XPHB": {
 		"name": "技能專家",
@@ -3107,6 +10022,36 @@
 		],
 		"ENG_name": "Skulker"
 	},
+	"Slasher|TCE": {
+		"name": "揮砍者",
+		"source": "TCE",
+		"page": 81,
+		"reprintedAs": [
+			"Slasher|XPHB"
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你學會了從哪裡下刀才能發揮最大效果，獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"每回合一次，當你以造成揮砍傷害的攻擊命中一個生物時，你可以使目標的速度降低 10 呎，直到你的下個回合開始。",
+					"當你對一個生物造成揮砍傷害的重擊時，你會使它身受重創。直到你的下個回合開始前，目標的所有攻擊檢定具有劣勢。"
+				]
+			}
+		],
+		"ENG_name": "Slasher"
+	},
 	"Slasher|XPHB": {
 		"name": "揮砍者",
 		"source": "XPHB",
@@ -3147,6 +10092,49 @@
 			}
 		],
 		"ENG_name": "Slasher"
+	},
+	"Soul of the Storm Giant|BGG": {
+		"name": "風暴巨人之魂",
+		"source": "BGG",
+		"page": 19,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"strike of the giants|BGG|strike of the giants (storm strike)"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你展現了風暴巨人標誌性的暴風魔法，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "漩渦靈光",
+						"entries": [
+							"作為一個附贈動作，你用魔法風與閃電構成的靈光包圍自己，靈光從你向各方向延伸 10 呎，但無法穿過{@quickref Cover||3||全遮蔽}。靈光持續到你的下個回合開始，或直到你陷入無力狀態為止。靈光啟動期間，你具有閃電與雷鳴傷害抗性。此外，對你進行的攻擊檢定具有劣勢，且每當另一個生物在靈光內開始其回合時，你可以迫使該生物進行一次力量豁免檢定（DC 等於 8 + 你的熟練加值 + 此專長所提升屬性的調整值）。豁免失敗時，該生物的速度減半，直到其下個回合開始。你可以使用此附贈動作的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Maelstrom Aura"
+					}
+				]
+			}
+		],
+		"ENG_name": "Soul of the Storm Giant"
 	},
 	"Speedy|XPHB": {
 		"name": "迅捷",
@@ -3261,6 +10249,964 @@
 		],
 		"ENG_name": "Spell Sniper"
 	},
+	"Spellfire Adept|FRHOF": {
+		"name": "法術之火行家",
+		"source": "FRHoF",
+		"page": 41,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"spellfire spark|frhof"
+				]
+			},
+			{
+				"feature": [
+					"Spellcasting",
+					"Pact Magic"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "法術之火灌注",
+				"entries": [
+					"每回合一次，當你施展的法術造成光耀傷害時，你可以消耗至多兩顆{@variantrule Hit Point Dice|XPHB}並擲骰，將擲骰總和加到該法術的一次傷害擲骰上。"
+				],
+				"ENG_name": "Fueled Spellfire"
+			},
+			{
+				"type": "entries",
+				"name": "灼熱法術之火",
+				"entries": [
+					"當你進行造成光耀傷害的傷害擲骰時，該傷害無視對光耀傷害的{@variantrule Resistance|XPHB}。"
+				],
+				"ENG_name": "Searing Spellfire"
+			}
+		],
+		"ENG_name": "Spellfire Adept"
+	},
+	"Spellfire Spark|FRHOF": {
+		"name": "法術之火火花",
+		"source": "FRHoF",
+		"page": 38,
+		"category": "O",
+		"additionalSpells": [
+			{
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"sacred flame|xphb#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "魔法吸收",
+				"entries": [
+					"每回合一次，當你受到法術或魔法效果造成的傷害時，你所受的總傷害減少 {@dice 1d4}。若你處於{@condition Incapacitated|XPHB}狀態，便無法使用此益處。"
+				],
+				"ENG_name": "Magic Absorption"
+			},
+			{
+				"type": "entries",
+				"name": "法術之火焰",
+				"entries": [
+					"你學會{@spell Sacred Flame|XPHB}戲法。智力、感知或魅力為你施展此法術的施法屬性（於選擇此專長時決定）。你也可以作為{@variantrule Bonus Action|XPHB}施展此戲法，次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。"
+				],
+				"ENG_name": "Spellfire Flame"
+			}
+		],
+		"ENG_name": "Spellfire Spark"
+	},
+	"Squire of Solamnia|DSOTDQ": {
+		"name": "索蘭尼亞侍從",
+		"source": "DSotDQ",
+		"page": 34,
+		"prerequisite": [
+			{
+				"campaign": [
+					"Dragonlance"
+				],
+				"level": {
+					"level": 1,
+					"class": {
+						"name": "戰士",
+						"visible": true,
+						"ENG_name": "Fighter"
+					}
+				}
+			},
+			{
+				"campaign": [
+					"Dragonlance"
+				],
+				"level": {
+					"level": 1,
+					"class": {
+						"name": "聖騎士",
+						"visible": true,
+						"ENG_name": "Paladin"
+					}
+				}
+			},
+			{
+				"campaign": [
+					"Dragonlance"
+				],
+				"background": [
+					{
+						"name": "索蘭尼亞騎士",
+						"displayEntry": "{@background Knight of Solamnia|DSotDQ}",
+						"ENG_name": "Knight of Solamnia"
+					}
+				]
+			}
+		],
+		"entries": [
+			"你在索蘭尼亞騎士之道上的訓練賦予你下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "上馬",
+						"entries": [
+							"騎上或離開坐騎只需消耗你 5 呎的移動。"
+						],
+						"ENG_name": "Mount Up"
+					},
+					{
+						"type": "item",
+						"name": "精準打擊",
+						"entries": [
+							"每回合一次，當你對一個生物進行武器攻擊檢定時，你可以使該攻擊檢定具有優勢。若攻擊命中，你擲一顆 {@dice d8}，並將結果作為加值加到該攻擊的傷害擲骰上。你可以使用此益處的次數等同於你的熟練加值，但只有在攻擊命中時才會消耗使用次數。完成長休時，你恢復所有已消耗的使用次數。"
+						],
+						"ENG_name": "Precise Strike"
+					}
+				]
+			},
+			{
+				"type": "inset",
+				"name": "騎士團成員資格",
+				"entries": [
+					"索蘭尼亞騎士永遠只屬於其組織中的一個騎士團。在受訓過程中，大多數騎士都從王冠騎士團成員開始，之後再加入其他騎士團。無論角色是否依循這條路，即使加入了另一個騎士團，他們仍保有身為前一騎士團成員時所學到的東西。角色可以更換所屬的騎士團，但始終能使用已獲得的任何索蘭尼亞騎士專長。"
+				],
+				"ENG_name": "Membership in Knightly Orders"
+			}
+		],
+		"ENG_name": "Squire of Solamnia"
+	},
+	"Street Justice|FRHOF": {
+		"name": "街頭正義",
+		"source": "FRHoF",
+		"page": 41,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"dex"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "鎖頭",
+				"entries": [
+					"你的盟友對被你{@condition Grappled|XPHB}的生物進行的攻擊檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Headlock"
+			},
+			{
+				"type": "entries",
+				"name": "牢固繩結",
+				"entries": [
+					"當你使用{@item Chain|XPHB}、{@item Manacles|XPHB}或{@item Rope|XPHB}綁住一個生物時，將你的{@variantrule Proficiency|XPHB|熟練加值}加到掙脫或掙斷{@item Chain|XPHB}、{@item Manacles|XPHB}或{@item Rope|XPHB}的 DC 上。"
+				],
+				"ENG_name": "Sturdy Knot"
+			},
+			{
+				"type": "entries",
+				"name": "狠話",
+				"entries": [
+					"生物的{@variantrule Hostile [Attitude]|XPHB|敵對}態度不會使你為影響該生物而進行的魅力（{@skill Intimidation|XPHB}）檢定具有{@variantrule Disadvantage|XPHB}。"
+				],
+				"ENG_name": "Tough Talk"
+			}
+		],
+		"ENG_name": "Street Justice"
+	},
+	"Strike of the Giants|BGG": {
+		"name": "巨人之擊",
+		"source": "BGG",
+		"page": 19,
+		"prerequisite": [
+			{
+				"proficiency": [
+					{
+						"weaponGroup": "martial"
+					}
+				]
+			},
+			{
+				"background": [
+					{
+						"name": "巨人棄兒",
+						"displayEntry": "{@background Giant Foundling|BGG}",
+						"ENG_name": "Giant Foundling"
+					}
+				]
+			}
+		],
+		"entries": [
+			"你吸收了遠古魔法，獲得巨人之力的回響。選擇此專長時，從下列益處中選擇一項。每回合一次，當你以近戰武器攻擊或使用投擲武器的遠程武器攻擊命中目標時，你可以依照所選益處為該攻擊灌注額外效果：",
+			{
+				"type": "entries",
+				"name": "雲之擊",
+				"entries": [
+					"目標額外受到 {@damage 1d4} 雷鳴傷害。若目標是生物，它必須通過一次感知豁免檢定，否則你對它而言處於隱形狀態，直到你的下個回合開始，或直到你進行攻擊檢定或施展法術後為止。"
+				],
+				"ENG_name": "Cloud Strike"
+			},
+			{
+				"type": "entries",
+				"name": "火之擊",
+				"entries": [
+					"目標額外受到 {@damage 1d10} 火焰傷害。"
+				],
+				"ENG_name": "Fire Strike"
+			},
+			{
+				"type": "entries",
+				"name": "霜之擊",
+				"entries": [
+					"目標額外受到 {@damage 1d6} 寒冷傷害。若目標是生物，它必須通過一次體質豁免檢定，否則其速度降為 0，直到你的下個回合開始。"
+				],
+				"ENG_name": "Frost Strike"
+			},
+			{
+				"type": "entries",
+				"name": "丘之擊",
+				"entries": [
+					"目標額外受到 {@damage 1d6} 與武器相同類型的傷害。若目標是生物，它必須通過一次力量豁免檢定，否則處於倒地狀態。"
+				],
+				"ENG_name": "Hill Strike"
+			},
+			{
+				"type": "entries",
+				"name": "石之擊",
+				"entries": [
+					"目標額外受到 {@damage 1d6} 力場傷害。若目標是生物，它必須通過一次力量豁免檢定，否則被直線推離你 10 呎。"
+				],
+				"ENG_name": "Stone Strike"
+			},
+			{
+				"type": "entries",
+				"name": "風暴之擊",
+				"entries": [
+					"目標額外受到 {@damage 1d6} 閃電傷害。若目標是生物，它必須通過一次體質豁免檢定，否則其攻擊檢定具有劣勢，直到你的下個回合開始。",
+					"這些效果的豁免 DC 等於 8 + 你的熟練加值 + 你的力量或體質調整值。",
+					"你可以使用此專長的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+				],
+				"ENG_name": "Storm Strike"
+			}
+		],
+		"_versions": [
+			{
+				"name": "Strike of the Giants; Cloud",
+				"source": "BGG",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "replaceArr",
+							"replace": {
+								"index": 0
+							},
+							"items": [
+								"You have absorbed primeval magic that gives you an echo of the might of giants. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect:"
+							]
+						},
+						{
+							"mode": "removeArr",
+							"names": [
+								"Fire Strike",
+								"Frost Strike",
+								"Hill Strike",
+								"Stone Strike",
+								"Storm Strike"
+							]
+						}
+					]
+				}
+			},
+			{
+				"name": "Strike of the Giants; Fire",
+				"source": "BGG",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "replaceArr",
+							"replace": {
+								"index": 0
+							},
+							"items": [
+								"You have absorbed primeval magic that gives you an echo of the might of giants. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect:"
+							]
+						},
+						{
+							"mode": "removeArr",
+							"names": [
+								"Cloud Strike",
+								"Frost Strike",
+								"Hill Strike",
+								"Stone Strike",
+								"Storm Strike"
+							]
+						}
+					]
+				}
+			},
+			{
+				"name": "Strike of the Giants; Frost",
+				"source": "BGG",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "replaceArr",
+							"replace": {
+								"index": 0
+							},
+							"items": [
+								"You have absorbed primeval magic that gives you an echo of the might of giants. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect:"
+							]
+						},
+						{
+							"mode": "removeArr",
+							"names": [
+								"Cloud Strike",
+								"Fire Strike",
+								"Hill Strike",
+								"Stone Strike",
+								"Storm Strike"
+							]
+						}
+					]
+				}
+			},
+			{
+				"name": "Strike of the Giants; Hill",
+				"source": "BGG",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "replaceArr",
+							"replace": {
+								"index": 0
+							},
+							"items": [
+								"You have absorbed primeval magic that gives you an echo of the might of giants. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect:"
+							]
+						},
+						{
+							"mode": "removeArr",
+							"names": [
+								"Cloud Strike",
+								"Fire Strike",
+								"Frost Strike",
+								"Stone Strike",
+								"Storm Strike"
+							]
+						}
+					]
+				}
+			},
+			{
+				"name": "Strike of the Giants; Stone",
+				"source": "BGG",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "replaceArr",
+							"replace": {
+								"index": 0
+							},
+							"items": [
+								"You have absorbed primeval magic that gives you an echo of the might of giants. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect:"
+							]
+						},
+						{
+							"mode": "removeArr",
+							"names": [
+								"Cloud Strike",
+								"Fire Strike",
+								"Frost Strike",
+								"Hill Strike",
+								"Storm Strike"
+							]
+						}
+					]
+				}
+			},
+			{
+				"name": "Strike of the Giants; Storm",
+				"source": "BGG",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "replaceArr",
+							"replace": {
+								"index": 0
+							},
+							"items": [
+								"You have absorbed primeval magic that gives you an echo of the might of giants. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect:"
+							]
+						},
+						{
+							"mode": "removeArr",
+							"names": [
+								"Cloud Strike",
+								"Fire Strike",
+								"Frost Strike",
+								"Hill Strike",
+								"Stone Strike"
+							]
+						}
+					]
+				}
+			}
+		],
+		"ENG_name": "Strike of the Giants"
+	},
+	"Strixhaven Initiate|SCC": {
+		"name": "斯翠海文新生",
+		"source": "SCC",
+		"page": 36,
+		"additionalSpells": [
+			{
+				"name": "Lorehold 1",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"light#c",
+						"sacred flame#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=cleric;wizard"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Lorehold 2",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"light#c",
+						"thaumaturgy#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=cleric;wizard"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Lorehold 3",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"sacred flame#c",
+						"thaumaturgy#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=cleric;wizard"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Prismari 1",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"fire bolt#c",
+						"prestidigitation#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=bard;sorcerer"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Prismari 2",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"fire bolt#c",
+						"ray of frost#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=bard;sorcerer"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Prismari 3",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"prestidigitation#c",
+						"ray of frost#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=bard;sorcerer"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Quandrix 1",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"druidcraft#c",
+						"guidance#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=druid;wizard"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Quandrix 2",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"druidcraft#c",
+						"mage hand#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=druid;wizard"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Quandrix 3",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"guidance#c",
+						"mage hand#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=druid;wizard"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Silverquill 1",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"sacred flame#c",
+						"thaumaturgy#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=bard;cleric"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Silverquill 2",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"sacred flame#c",
+						"vicious mockery#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=bard;cleric"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Silverquill 3",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"thaumaturgy#c",
+						"vicious mockery#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=bard;cleric"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Witherbloom 1",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"chill touch#c",
+						"druidcraft#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=druid;wizard"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Witherbloom 2",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"chill touch#c",
+						"spare the dying#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=druid;wizard"
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Witherbloom 3",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"_": [
+						"druidcraft#c",
+						"spare the dying#c"
+					]
+				},
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								{
+									"choose": "level=1|class=druid;wizard"
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你研究過一些魔法理論，並學會了幾道與斯翠海文大學相關的法術。",
+			"選擇斯翠海文的其中一個學院：羅爾霍德、普里斯馬瑞、寬德里克斯、銀羽或凋花。你依照所選學院學會兩道戲法與一道 1 環法術，如「斯翠海文法術」表所示。",
+			"你可以不消耗法術欄位施展所選的 1 環法術，且必須完成長休後才能再以此方式施展它。你也可以使用你擁有的任何法術欄位施展此法術。",
+			"此專長法術的施法屬性為智力、感知或魅力（於選擇此專長時決定）。",
+			{
+				"type": "table",
+				"caption": "斯翠海文法術",
+				"colLabels": [
+					"學院",
+					"戲法",
+					"1 環法術"
+				],
+				"colStyles": [
+					"col-2",
+					"col-5",
+					"col-5"
+				],
+				"rows": [
+					[
+						"羅爾霍德",
+						"從{@spell light}、{@spell sacred flame}與{@spell thaumaturgy}中選擇兩道。",
+						"選擇一道 1 環{@filter 牧師或法師法術|spells|level=1|class=cleric;wizard}。"
+					],
+					[
+						"普里斯馬瑞",
+						"從{@spell fire bolt}、{@spell prestidigitation}與{@spell ray of frost}中選擇兩道。",
+						"選擇一道 1 環{@filter 吟遊詩人或術士法術|spells|level=1|class=bard;sorcerer}。"
+					],
+					[
+						"寬德里克斯",
+						"從{@spell druidcraft}、{@spell guidance}與{@spell mage hand}中選擇兩道。",
+						"選擇一道 1 環{@filter 德魯伊或法師法術|spells|level=1|class=druid;wizard}。"
+					],
+					[
+						"銀羽",
+						"從{@spell sacred flame}、{@spell thaumaturgy}與{@spell vicious mockery}中選擇兩道。",
+						"選擇一道 1 環{@filter 吟遊詩人或牧師法術|spells|level=1|class=bard;cleric}。"
+					],
+					[
+						"凋花",
+						"從{@spell chill touch}、{@spell druidcraft}與{@spell spare the dying}中選擇兩道。",
+						"選擇一道 1 環{@filter 德魯伊或法師法術|spells|level=1|class=druid;wizard}。"
+					]
+				]
+			}
+		],
+		"ENG_name": "Strixhaven Initiate"
+	},
+	"Strixhaven Mascot|SCC": {
+		"name": "斯翠海文吉祥物",
+		"source": "SCC",
+		"page": 37,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"strixhaven initiate|scc"
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"innate": {
+					"_": {
+						"ritual": [
+							"find familiar"
+						]
+					}
+				}
+			}
+		],
+		"entries": [
+			"你學會了如何召喚斯翠海文吉祥物來協助你，獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"你可以將{@spell find familiar}法術作為儀式施展。你的魔寵可以化為與你在斯翠海文新生專長所選學院相關的吉祥物形態：{@creature spirit statue mascot|scc}（羅爾霍德）、{@creature art elemental mascot|scc}（普里斯馬瑞）、{@creature fractal mascot|scc}（寬德里克斯）、{@creature inkling mascot|scc}（銀羽）或{@creature pest mascot|scc}（凋花）。",
+					"當你在你的回合中執行{@action Attack}動作時，你可以放棄一次攻擊，讓你的吉祥物魔寵以其反應進行一次它自己的攻擊。",
+					"若你的吉祥物魔寵位於你 60 呎內，你可以用一個動作傳送，與魔寵交換位置。若目的地空間太小容不下你，傳送便會失敗而被浪費。以此方式傳送後，除非你消耗一個 2 環或更高環的法術欄位再次傳送，否則直到你完成長休前都無法再次這麼做。"
+				]
+			}
+		],
+		"ENG_name": "Strixhaven Mascot"
+	},
 	"Tavern Brawler|XPHB": {
 		"name": "酒館拳王",
 		"source": "XPHB",
@@ -3307,6 +11253,47 @@
 			}
 		],
 		"ENG_name": "Tavern Brawler"
+	},
+	"Telekinetic|TCE": {
+		"name": "心靈遙控",
+		"source": "TCE",
+		"page": 81,
+		"reprintedAs": [
+			"Telekinetic|XPHB"
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "inherit",
+				"known": {
+					"_": [
+						"mage hand#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你學會以意念移動物體，獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"你學會{@spell mage hand}戲法。你可以不需言語或姿勢成分施展它，並可以使幽靈之手{@condition invisible}。若你已經知道這道法術，你施展它時射程增加 30 呎。其施法屬性為此專長所提升的屬性。",
+					"作為一個附贈動作，你可以嘗試以念力推動你 30 呎內一個你能看見的生物。這麼做時，目標必須通過一次力量豁免檢定（{@dc 8} + 你的熟練加值 + 此專長所提升屬性的調整值），否則被朝你移動 5 呎或遠離你 5 呎。生物可以自願讓此豁免失敗。"
+				]
+			}
+		],
+		"ENG_name": "Telekinetic"
 	},
 	"Telekinetic|XPHB": {
 		"name": "心靈遙控",
@@ -3359,6 +11346,52 @@
 			}
 		],
 		"ENG_name": "Telekinetic"
+	},
+	"Telepathic|TCE": {
+		"name": "心靈感應",
+		"source": "TCE",
+		"page": 81,
+		"reprintedAs": [
+			"Telepathic|XPHB"
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"ability": "inherit",
+				"innate": {
+					"_": {
+						"daily": {
+							"1": [
+								"detect thoughts"
+							]
+						}
+					}
+				}
+			}
+		],
+		"entries": [
+			"你喚醒了與他人心靈相連的能力，獲得下列益處：",
+			{
+				"type": "list",
+				"items": [
+					"你可以用心靈感應與你 60 呎內任何你能看見的生物說話。你的心靈話語使用一種你懂得的語言，只有懂得該語言的生物才能理解你。你的交流不會賦予該生物以心靈感應回應你的能力。",
+					"你可以不消耗法術欄位也不需任何成分施展{@spell detect thoughts}法術，且必須完成長休後才能再以此方式施展它。此法術的施法屬性為此專長所提升的屬性。若你擁有 2 環或更高環的法術欄位，你也可以用它們施展此法術。"
+				]
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Telepathic"
 	},
 	"Telepathic|XPHB": {
 		"name": "心靈感應",
@@ -3433,6 +11466,16 @@
 		],
 		"ENG_name": "Thrown Weapon Fighting"
 	},
+	"Tireless Reveler|ABH": {
+		"name": "不倦的狂歡者",
+		"source": "ABH",
+		"page": 8,
+		"category": "O",
+		"entries": [
+			"當你 60 呎內一名你能看見的盟友消耗{@variantrule Heroic Inspiration|XPHB}時，若你沒有{@variantrule Heroic Inspiration|XPHB}，你可以獲得它。你可以使用此益處的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Tireless Reveler"
+	},
 	"Tough|XPHB": {
 		"name": "健壯",
 		"source": "XPHB",
@@ -3442,6 +11485,57 @@
 			"當你獲得此專長時，你的{@variantrule Hit Points|XPHB|生命值}上限提升等同於你角色等級兩倍的數值。此後每當你獲得一個角色等級時，你的{@variantrule Hit Points|XPHB|生命值}上限額外提升 2 點{@variantrule Hit Points|XPHB}。"
 		],
 		"ENG_name": "Tough"
+	},
+	"Treacherous Allure|ABH": {
+		"name": "危險魅惑",
+		"source": "ABH",
+		"page": 10,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"prepared": {
+					"_": [
+						"charm person|xphb"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "迷人風采",
+				"entries": [
+					"你總是準備著{@spell Charm Person|XPHB}法術。你可以不消耗法術欄位施展它，且必須完成{@variantrule Long Rest|XPHB}後才能再以此方式施展它。你也可以使用你擁有的適當環階法術欄位施展它。此法術的施法屬性為此專長所提升的屬性。"
+				],
+				"ENG_name": "Enchanting Presence"
+			},
+			{
+				"type": "entries",
+				"name": "必然背叛",
+				"entries": [
+					"你對處於{@condition Charmed|XPHB}狀態的生物進行的攻擊檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Inevitable Betrayal"
+			}
+		],
+		"ENG_name": "Treacherous Allure"
 	},
 	"Two-Weapon Fighting|XPHB": {
 		"name": "雙武器戰鬥",
@@ -3463,6 +11557,32 @@
 		"hasFluffImages": true,
 		"ENG_name": "Two-Weapon Fighting"
 	},
+	"Tyro of the Gauntlet|FRHOF": {
+		"name": "鐵手套騎士團新手",
+		"source": "FRHoF",
+		"page": 38,
+		"category": "O",
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "同心協力",
+				"entries": [
+					"當你 5 呎內的一名盟友受到會推動或拉動它的效果影響時，你可以執行一個{@variantrule Reaction|XPHB}，防止該盟友被推動或拉動。要獲得此益處，該盟友不能處於{@condition Incapacitated|XPHB}狀態。"
+				],
+				"ENG_name": "Stand as One"
+			},
+			{
+				"type": "entries",
+				"name": "警戒",
+				"entries": [
+					"當你執行{@action Ready|XPHB}動作時，在你的下個回合開始前，對你進行的下一次攻擊檢定具有{@variantrule Disadvantage|XPHB}。"
+				],
+				"ENG_name": "Vigilant"
+			}
+		],
+		"ENG_name": "Tyro of the Gauntlet"
+	},
 	"Unarmed Fighting|XPHB": {
 		"name": "徒手戰鬥",
 		"source": "XPHB",
@@ -3480,6 +11600,182 @@
 			"在你每個回合開始時，你可以對一個被你{@condition Grappled|XPHB}的生物造成 {@damage 1d4} 鈍擊傷害。"
 		],
 		"ENG_name": "Unarmed Fighting"
+	},
+	"Vampire Hunter|ABH": {
+		"name": "吸血鬼獵人",
+		"source": "ABH",
+		"page": 8,
+		"category": "O",
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "靈巧脫身",
+				"entries": [
+					"你為掙脫非魔法束縛或{@condition Grappled|XPHB}狀態而進行的檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Adroit Escape"
+			},
+			{
+				"type": "entries",
+				"name": "生命結界",
+				"entries": [
+					"當你受到黯蝕傷害時，你可以執行一個{@variantrule Reaction|XPHB}減輕傷害。擲數量等同於你{@variantrule Proficiency|XPHB|熟練加值}的 d6 並加總，你所受的黯蝕傷害減少此總和。使用此益處後，直到你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Vitality Ward"
+			}
+		],
+		"ENG_name": "Vampire Hunter"
+	},
+	"Vampire Touched|ABH": {
+		"name": "吸血鬼之觸",
+		"source": "ABH",
+		"page": 10,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"int",
+						"wis",
+						"cha"
+					]
+				}
+			}
+		],
+		"additionalSpells": [
+			{
+				"prepared": {
+					"_": [
+						"spider climb|xphb",
+						{
+							"choose": "level=1|school=E;I"
+						}
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "吸血鬼魔法",
+				"entries": [
+					"從惑控系或幻術系中選擇一道 1 環法術。你總是準備著該法術與{@spell Spider Climb|XPHB}法術。你可以不消耗法術欄位各施展這些法術，但以此方式施展{@spell Spider Climb|XPHB}時必須以自己為目標，且必須完成{@variantrule Long Rest|XPHB}後才能再以此方式施展各道法術。你也可以使用你擁有的適當環階法術欄位施展其中任一道法術。這些法術的施法屬性為此專長所提升的屬性。"
+				],
+				"ENG_name": "Vampire Magic"
+			}
+		],
+		"ENG_name": "Vampire Touched"
+	},
+	"Vampire's Plaything|ABH": {
+		"name": "吸血鬼的玩物",
+		"source": "ABH",
+		"page": 9,
+		"category": "O",
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "調製",
+				"entries": [
+					"當你完成{@variantrule Long Rest|XPHB}時，只要你有一個空的{@item vial|XPHB}或{@item flask|XPHB}，你就可以製作一瓶{@item Potion of Healing|XDMG}或一瓶{@item Antitoxin|XPHB}。這些液體會在你完成下一次{@variantrule Long Rest|XPHB}時蒸發。"
+				],
+				"ENG_name": "Decanting"
+			},
+			{
+				"type": "entries",
+				"name": "適時撤退",
+				"entries": [
+					"你可以用一個{@variantrule Bonus Action|XPHB}執行{@action Dash|XPHB}或{@action Disengage|XPHB}動作。你可以使用此益處的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。"
+				],
+				"ENG_name": "Timely Retreat"
+			},
+			{
+				"type": "entries",
+				"name": "吸血鬼連結",
+				"entries": [
+					"由 DM 決定你前任吸血鬼主人的命運。當你與前任吸血鬼主人位於同一個存在位面時，吸血鬼可以用心靈感應與你交流，且你可以選擇允許吸血鬼透過你的感官感知。"
+				],
+				"ENG_name": "Vampiric Connection"
+			}
+		],
+		"ENG_name": "Vampire's Plaything"
+	},
+	"Vampiric Exultation|PSX": {
+		"name": "吸血鬼的狂喜",
+		"source": "PSX",
+		"page": 14,
+		"prerequisite": [
+			{
+				"race": [
+					{
+						"name": "吸血鬼（依夏蘭）",
+						"ENG_name": "Vampire (Ixalan)"
+					}
+				]
+			}
+		],
+		"entries": [
+			"作為一個動作，你可以將下半身化為墨黑的霧氣，讓你飄浮於空中。變身期間，你擁有 30 呎的飛行速度。你最多可以維持此形態 10 分鐘。使用此能力後，直到你完成短休或長休前都無法再次使用。"
+		],
+		"ENG_name": "Vampiric Exultation"
+	},
+	"Vigor of the Hill Giant|BGG": {
+		"name": "丘巨人之力",
+		"source": "BGG",
+		"page": 19,
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"strike of the giants|BGG|strike of the giants (hill strike)"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"str",
+						"con",
+						"wis"
+					],
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你展現了丘巨人標誌性的韌性，獲得下列益處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "堡壘",
+						"entries": [
+							"當你受到會使你移動至少 5 呎或使你倒地的效果影響時，你可以使用你的反應穩住自己。你不會被移動，也不會陷入倒地狀態。"
+						],
+						"ENG_name": "Bulwark"
+					},
+					{
+						"type": "item",
+						"name": "鐵胃",
+						"entries": [
+							"每當你在短休中進食，並消耗一顆或多顆生命骰來恢復生命值時，你額外恢復等同於你體質調整值 + 熟練加值的生命值。"
+						],
+						"ENG_name": "Iron Stomach"
+					}
+				]
+			}
+		],
+		"ENG_name": "Vigor of the Hill Giant"
 	},
 	"War Caster|XPHB": {
 		"name": "戰鬥施法者",
@@ -3565,5 +11861,75 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Weapon Master"
+	},
+	"Zhentarim Ruffian|FRHOF": {
+		"name": "桑達林暴徒",
+		"source": "FRHoF",
+		"page": 38,
+		"category": "O",
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "趁虛而入",
+				"entries": [
+					"當你為{@action Opportunity Attack|XPHB}擲傷害時，你可以擲兩次傷害骰，並對目標使用其中任一次的結果。"
+				],
+				"ENG_name": "Exploit Opening"
+			},
+			{
+				"type": "entries",
+				"name": "家族至上",
+				"entries": [
+					"若你在擲{@variantrule Initiative|XPHB}時擁有{@variantrule Heroic Inspiration|XPHB}，你可以消耗它，使你與你的盟友在該次{@variantrule Initiative|XPHB}擲骰上具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Family First"
+			}
+		],
+		"ENG_name": "Zhentarim Ruffian"
+	},
+	"Zhentarim Tactics|FRHOF": {
+		"name": "桑達林戰術",
+		"source": "FRHoF",
+		"page": 41,
+		"category": "G",
+		"prerequisite": [
+			{
+				"level": 4,
+				"feat": [
+					"zhentarim ruffian|frhof"
+				]
+			}
+		],
+		"ability": [
+			{
+				"choose": {
+					"from": [
+						"dex",
+						"cha"
+					]
+				}
+			}
+		],
+		"entries": [
+			"你獲得以下益處。",
+			{
+				"type": "entries",
+				"name": "報復",
+				"entries": [
+					"當你 5 呎內的一個生物以近戰攻擊命中你後，你可以立即對該生物進行一次{@action Opportunity Attack|XPHB}。"
+				],
+				"ENG_name": "Retaliate"
+			},
+			{
+				"type": "entries",
+				"name": "多才傭兵",
+				"entries": [
+					"當你完成{@variantrule Long Rest|XPHB}時，選擇一項你具有熟練的技能。直到你完成下一次{@variantrule Long Rest|XPHB}為止，你在該技能上具有{@variantrule Expertise|XPHB}。"
+				],
+				"ENG_name": "Versatile Merc"
+			}
+		],
+		"ENG_name": "Zhentarim Tactics"
 	}
 }
