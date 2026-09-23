@@ -13,7 +13,7 @@ export const TEXT_KEYS = new Set([
 	"entries", "entriesHigherLevel", "items", "colLabels", "rows", "caption", "entry", "headerEntries",
 	"footerEntries", "footnotes", "text", "legendaryHeader", "mythicHeader", "actionHeader", "bonusHeader",
 	"reactionHeader", "from", "condition", "title", "other", "note", "additionalEntries",
-	"row", "cells", "lower", "upper", "entriesTemplate",
+	"row", "cells", "lower", "upper", "entriesTemplate", "regionalEffects", "lairActions", "mythicEncounter",
 ]);
 
 // 這些欄位底下都是程式用的結構化資料（技能 key、法術清單…），整棵不碰

@@ -1,0 +1,746 @@
+{
+	"Aboleth|XMM": {
+		"name": "底棲魔魚",
+		"source": "XMM",
+		"page": 12,
+		"regionalEffects": [
+			"底棲魔魚巢穴所在的區域受其扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "污濁之水",
+						"entries": [
+							"巢穴 1 哩內的水源會受到超自然污染。底棲魔魚及其盟友以外的生物飲用這種水時，必須通過一次 {@dc 15} 體質豁免檢定，否則處於{@condition Poisoned|XPHB}狀態 1 小時。"
+						],
+						"ENG_name": "Foul Water"
+					},
+					{
+						"type": "item",
+						"name": "靈能投射",
+						"entries": [
+							"位於巢穴中時，底棲魔魚可以施展{@spell Project Image|XPHB}，無需法術成分，並以智力作為施法屬性（法術豁免 {@dc 16}）。以此方式施展該法術時，法術的射程為 1 哩，且底棲魔魚可以如同身處幻象所在空間般使用其心靈感應。"
+						],
+						"ENG_name": "Psionic Projection"
+					}
+				]
+			},
+			"若底棲魔魚死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Aboleth"
+	},
+	"Arch-hag|XMM": {
+		"name": "大鬼婆",
+		"source": "XMM",
+		"page": 20,
+		"regionalEffects": [
+			"大鬼婆巢穴所在的區域因其存在而改變，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "口誤",
+						"entries": [
+							"巢穴 1 哩內的生物（鬼婆及其盟友除外）執行{@action Influence|XPHB}動作時，所進行的任何屬性檢定都要減去 {@dice 1d10}。"
+						],
+						"ENG_name": "Lapsus Linguae"
+					},
+					{
+						"type": "item",
+						"name": "干擾魔法",
+						"entries": [
+							"每當鬼婆及其盟友以外的生物在巢穴 1 哩內完成一次{@variantrule Long Rest|XPHB}時，該生物下次使用法術欄位施展法術時，也會以自身為中心施展{@spell Confusion|XPHB}。該法術使用該生物的施法屬性，且不需要{@status Concentration|XPHB}。"
+						],
+						"ENG_name": "Meddlesome Magic"
+					}
+				]
+			},
+			"若大鬼婆被摧毀或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Arch-hag"
+	},
+	"Beholder|XMM": {
+		"name": "眼魔",
+		"source": "XMM",
+		"page": 35,
+		"regionalEffects": [
+			"眼魔巢穴所在的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "窺視恐懼",
+						"entries": [
+							"巢穴 1 哩內的生物會感覺自己正被注視。任何在巢穴 1 哩內完成{@variantrule Short Rest|XPHB}的生物（眼魔及其盟友除外）必須通過一次 {@dc 13} 感知豁免檢定，否則無法從該次休息中獲得任何益處。"
+						],
+						"ENG_name": "Scopophobia"
+					},
+					{
+						"type": "item",
+						"name": "扭曲地形",
+						"entries": [
+							"巢穴附近會出現輕微的現實扭曲；巢穴 1 哩內任何進行{@variantrule D20 Test|XPHB}並擲出 1 的生物（眼魔除外）會處於{@condition Prone|XPHB}狀態。"
+						],
+						"ENG_name": "Warping Terrain"
+					}
+				]
+			},
+			"若眼魔死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Beholder"
+	},
+	"Black Dragon|XMM": {
+		"name": "黑龍",
+		"source": "XMM",
+		"page": 40,
+		"regionalEffects": [
+			"成年或遠古黑龍巢穴所在的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "刺鼻霧霾",
+						"entries": [
+							"惡臭且令人窒息的霧氣籠罩巢穴 1 哩內的區域，使該區域成為{@variantrule Lightly Obscured|XPHB}。龍及其盟友以外的生物在該區域中旅行所需時間為平常的兩倍。"
+						],
+						"ENG_name": "Acrid Haze"
+					},
+					{
+						"type": "item",
+						"name": "污濁之水",
+						"entries": [
+							"巢穴 1 哩內的水源會受到超自然污染。飲用這種水的生物必須通過一次 {@dc 15} 體質豁免檢定，否則處於{@condition Poisoned|XPHB}狀態 1 小時。"
+						],
+						"ENG_name": "Foul Water"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Black Dragon"
+	},
+	"Blue Dragon|XMM": {
+		"name": "藍龍",
+		"source": "XMM",
+		"page": 50,
+		"regionalEffects": [
+			"成年或遠古藍龍巢穴所在的區域因其存在而改變，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "天坑",
+						"entries": [
+							"巢穴 1 哩內的區域更常形成天坑。每當該區域中龍及其盟友以外的生物完成一次{@variantrule Long Rest|XPHB}時，擲 {@dice 1d20}。擲出 1 時，該生物腳下會裂開一個天坑，該生物必須通過一次 {@dc 15} 敏捷豁免檢定，否則墜入天坑 {@dice 2d4 × 10} 呎深。"
+						],
+						"ENG_name": "Sinkholes"
+					},
+					{
+						"type": "item",
+						"name": "惡意風暴",
+						"entries": [
+							"巢穴 1 哩內肆虐著塵捲風與雷暴。該區域為{@variantrule Lightly Obscured|XPHB}。"
+						],
+						"ENG_name": "Spiteful Storms"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Blue Dragon"
+	},
+	"Brass Dragon|XMM": {
+		"name": "黃銅龍",
+		"source": "XMM",
+		"page": 56,
+		"regionalEffects": [
+			"成年或遠古黃銅龍巢穴所在的區域因其存在而改變，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "海市蜃樓",
+						"entries": [
+							"位於巢穴中時，龍可以施展{@spell Major Image|XPHB}，無需材料成分，並使用與其「施法」動作相同的施法屬性。以此方式施展該法術時，法術的射程為 1 哩，且龍不需要看見幻象出現的位置。"
+						],
+						"ENG_name": "Mirages"
+					},
+					{
+						"type": "item",
+						"name": "清涼之水",
+						"entries": [
+							"巢穴 1 哩內的水具有魔法般的清涼效果。飲用這種水的生物獲得 {@dice 2d4} 點{@variantrule Temporary Hit Points|XPHB}，且龍會立即察覺該生物的存在。"
+						],
+						"ENG_name": "Refreshing Water"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Brass Dragon"
+	},
+	"Bronze Dragon|XMM": {
+		"name": "青銅龍",
+		"source": "XMM",
+		"page": 60,
+		"regionalEffects": [
+			"成年或遠古青銅龍巢穴所在的區域因其存在而改變，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "浮力水流",
+						"entries": [
+							"巢穴 1 哩內缺少{@variantrule Swim Speed|XPHB}的生物游泳時，無視額外的移動消耗。"
+						],
+						"ENG_name": "Buoying Currents"
+					},
+					{
+						"type": "item",
+						"name": "驕陽與風暴",
+						"entries": [
+							"位於巢穴中時，龍可以施展{@spell Control Weather|XPHB}，無需材料成分，並使用與其「施法」動作相同的施法屬性。以此方式施展該法術時，無論龍身處巢穴內外，都能控制巢穴 1 哩內的天氣。"
+						],
+						"ENG_name": "Sun and Storms"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Bronze Dragon"
+	},
+	"Copper Dragon|XMM": {
+		"name": "赤銅龍",
+		"source": "XMM",
+		"page": 80,
+		"regionalEffects": [
+			"成年或遠古赤銅龍巢穴所在的區域因其存在而改變，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "話多的小動物",
+						"entries": [
+							"位於巢穴 6 哩內時，微型野獸會以魔法獲得說與理解龍語的能力。"
+						],
+						"ENG_name": "Chatty Critters"
+					},
+					{
+						"type": "item",
+						"name": "笑個不停",
+						"entries": [
+							"每當龍及其盟友以外的生物位於巢穴 1 哩內，並在{@variantrule D20 Test|XPHB}中擲出 1 時，它必須通過一次 {@dc 15} 感知豁免檢定，否則會因狂笑不止而處於{@condition Incapacitated|XPHB}狀態，直到其下個回合結束。"
+						],
+						"ENG_name": "Giggle Fits"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Copper Dragon"
+	},
+	"Death Tyrant|XMM": {
+		"name": "亡眼暴君",
+		"source": "XMM",
+		"page": 94,
+		"regionalEffects": [
+			"亡眼暴君巢穴所在的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "負能量浸潤",
+						"entries": [
+							"每當巢穴 1 哩內的生物從法術恢復{@variantrule Hit Points|XPHB}時，它恢復的{@variantrule Hit Points|XPHB}數值要減去 {@dice 1d10}。"
+						],
+						"ENG_name": "Negative Energy Suffusion"
+					},
+					{
+						"type": "item",
+						"name": "窺視恐懼",
+						"entries": [
+							"巢穴 1 哩內的生物會感覺自己正被注視。任何在巢穴 1 哩內完成{@variantrule Short Rest|XPHB}的生物（亡眼暴君及其盟友除外）必須通過一次 {@dc 15} 感知豁免檢定，否則無法從該次休息中獲得任何益處。"
+						],
+						"ENG_name": "Scopophobia"
+					}
+				]
+			},
+			"若亡眼暴君死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Death Tyrant"
+	},
+	"Demilich|XMM": {
+		"name": "半巫妖",
+		"source": "XMM",
+		"page": 96,
+		"regionalEffects": [
+			"半巫妖巢穴所在的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "衰竭領域",
+						"entries": [
+							"每當半巫妖及其盟友以外的生物在巢穴 1 哩內完成一次{@variantrule Long Rest|XPHB}時，該生物必須通過一次 {@dc 20} 體質豁免檢定，否則其{@variantrule Hit Points|XPHB|生命值}上限減少 {@dice 1d4}。此減少會持續到該生物在該區域外完成一次{@variantrule Long Rest|XPHB}為止。"
+						],
+						"ENG_name": "Enervating Domain"
+					},
+					{
+						"type": "item",
+						"name": "旅行結界",
+						"entries": [
+							"生物無法使用傳送或位面旅行進入或離開巢穴。"
+						],
+						"ENG_name": "Travel Ward"
+					}
+				]
+			},
+			"若半巫妖死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Demilich"
+	},
+	"Dracolich|XMM": {
+		"name": "巫妖龍",
+		"source": "XMM",
+		"page": 102,
+		"regionalEffects": [
+			"巫妖龍巢穴所在的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "汲力之霧",
+						"entries": [
+							"巢穴 1 哩內的區域被蒼白霧氣籠罩，成為{@variantrule Lightly Obscured|XPHB}。每當巫妖龍及其盟友以外的生物在該區域中完成一次{@variantrule Long Rest|XPHB}時，它必須通過一次 {@dc 15} 體質豁免檢定，否則獲得 1 級{@condition Exhaustion|XPHB}。"
+						],
+						"ENG_name": "Sapping Mist"
+					},
+					{
+						"type": "item",
+						"name": "靈魂汲取",
+						"entries": [
+							"巢穴 1 哩內的生物進行{@variantrule Death Saving Throw|XPHB|死亡豁免檢定}時具有{@variantrule Disadvantage|XPHB}。"
+						],
+						"ENG_name": "Soul Drain"
+					}
+				]
+			},
+			"若巫妖龍被摧毀或將巢穴遷往他處，這些效果便立即結束。若巫妖龍獲得新的軀體（見其「靈魂寶石」特性），這些效果便會恢復。"
+		],
+		"ENG_name": "Dracolich"
+	},
+	"Gold Dragon|XMM": {
+		"name": "金龍",
+		"source": "XMM",
+		"page": 146,
+		"regionalEffects": [
+			"成年或遠古金龍巢穴所在的區域因其存在而改變，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "夢境信使",
+						"entries": [
+							"位於巢穴中時，龍可以施展{@spell Dream|XPHB}，無需材料成分，並以魅力作為施法屬性。以此方式施展該法術時，龍可以指定 6 哩內的任何生物為目標。"
+						],
+						"ENG_name": "Dream Messenger"
+					},
+					{
+						"type": "item",
+						"name": "預言之霧",
+						"entries": [
+							"巢穴 1 哩內的區域被乳白色霧氣籠罩，成為{@variantrule Lightly Obscured|XPHB}。由於霧氣會旋繞成警示危險的形狀，位於該區域中的生物無法被{@status surprised|XPHB|突襲}。"
+						],
+						"ENG_name": "Foretelling Fog"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Gold Dragon"
+	},
+	"Green Dragon|XMM": {
+		"name": "綠龍",
+		"source": "XMM",
+		"page": 154,
+		"regionalEffects": [
+			"成年或遠古綠龍巢穴所在的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "野獸間諜",
+						"entries": [
+							"位於巢穴 1 哩內時，微型野獸會以魔法獲得理解龍語的能力，並能與龍進行心靈感應交流。"
+						],
+						"ENG_name": "Beast Spies"
+					},
+					{
+						"type": "item",
+						"name": "毒灌木叢",
+						"entries": [
+							"生長在巢穴 1 哩內的普通植物會毒化周遭空氣。每當龍及其盟友以外的生物在該區域中完成一次{@variantrule Long Rest|XPHB}時，它必須通過一次 {@dc 15} 體質豁免檢定，否則處於{@condition Poisoned|XPHB}狀態 1 小時。"
+						],
+						"ENG_name": "Poisonous Thicket"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Green Dragon"
+	},
+	"Kraken|XMM": {
+		"name": "克拉肯",
+		"source": "XMM",
+		"page": 187,
+		"regionalEffects": [
+			"克拉肯巢穴所在的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "海洋暴君",
+						"entries": [
+							"克拉肯對其領域中的動物施展支配力。巢穴 1 哩內的所有野獸在該區域中時處於{@condition Charmed|XPHB}狀態。"
+						],
+						"ENG_name": "Ocean Tyrant"
+					},
+					{
+						"type": "item",
+						"name": "海洋與風暴",
+						"entries": [
+							"位於巢穴中時，克拉肯可以施展{@spell Control Weather|XPHB}，無需法術成分，並以智力作為施法屬性。"
+						],
+						"ENG_name": "Sea and Storms"
+					}
+				]
+			},
+			"若克拉肯死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Kraken"
+	},
+	"Lich|XMM": {
+		"name": "巫妖",
+		"source": "XMM",
+		"page": 196,
+		"regionalEffects": [
+			"巫妖巢穴所在的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "全知之眼",
+						"entries": [
+							"位於巢穴中時，巫妖可以施展{@spell Clairvoyance|XPHB}，無需法術成分，並使用與其「施法」動作相同的施法屬性。"
+						],
+						"ENG_name": "All-Seeing"
+					},
+					{
+						"type": "item",
+						"name": "必然汲取",
+						"entries": [
+							"每當類人生物在巢穴 1 哩內死亡時，其靈魂會立即被巫妖吞噬。以此方式被吞噬靈魂的類人生物，只能藉由完全復生術或{@spell Wish|XPHB}法術復活。"
+						],
+						"ENG_name": "Inevitable Siphon"
+					}
+				]
+			},
+			"若巫妖被摧毀或將巢穴遷往他處，這些效果便立即結束。若巫妖獲得新的軀體（見其「靈魂罐」特性），這些效果便會恢復。"
+		],
+		"ENG_name": "Lich"
+	},
+	"Mummy Lord|XMM": {
+		"name": "木乃伊領主",
+		"source": "XMM",
+		"page": 221,
+		"regionalEffects": [
+			"木乃伊領主巢穴所在的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "受詛咒的命運",
+						"entries": [
+							"每當木乃伊及其盟友以外的生物在巢穴 1 哩內施展預言系法術時，該生物進行一次 {@dc 15} 體質豁免檢定。豁免失敗時，法術消散而沒有效果，用於施展該法術的動作、{@variantrule Bonus Action|XPHB}或{@variantrule Reaction|XPHB}被浪費，但施法所用的任何資源不會被消耗。"
+						],
+						"ENG_name": "Cursed Fate"
+					},
+					{
+						"type": "item",
+						"name": "靈魂汲取",
+						"entries": [
+							"巢穴 1 哩內的生物進行{@variantrule Death Saving Throw|XPHB|死亡豁免檢定}時具有{@variantrule Disadvantage|XPHB}。"
+						],
+						"ENG_name": "Soul Drain"
+					}
+				]
+			},
+			"若木乃伊領主被摧毀或將巢穴遷往他處，這些效果便立即結束。若木乃伊領主獲得新的軀體（見其「不死復原」特性），這些效果便會恢復。"
+		],
+		"ENG_name": "Mummy Lord"
+	},
+	"Red Dragon|XMM": {
+		"name": "紅龍",
+		"source": "XMM",
+		"page": 256,
+		"regionalEffects": [
+			"成年或遠古紅龍巢穴所在的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "灼熱高溫",
+						"entries": [
+							"巢穴 1 哩內的區域為酷熱區域。正在燃燒的生物或物件在其每個回合開始時額外受到 {@damage 1d4} 火焰傷害。"
+						],
+						"ENG_name": "Burning Heat"
+					},
+					{
+						"type": "item",
+						"name": "悶燃煙霾",
+						"entries": [
+							"巢穴 1 哩內的區域被灰燼雲籠罩，成為{@variantrule Lightly Obscured|XPHB}。每當龍及其盟友以外的生物在該區域中完成一次{@variantrule Long Rest|XPHB}時，該生物必須通過一次 {@dc 15} 體質豁免檢定，否則處於{@condition Poisoned|XPHB}狀態 1 小時。"
+						],
+						"ENG_name": "Smoldering Haze"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Red Dragon"
+	},
+	"Shadow Dragon|XMM": {
+		"name": "影龍",
+		"source": "XMM",
+		"page": 274,
+		"regionalEffects": [
+			"影龍巢穴周圍的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "負能量浸潤",
+						"entries": [
+							"每當巢穴 1 哩內的生物從法術恢復{@variantrule Hit Points|XPHB}時，它恢復的{@variantrule Hit Points|XPHB}數值要減去 {@dice 1d10}。"
+						],
+						"ENG_name": "Negative Energy Suffusion"
+					},
+					{
+						"type": "item",
+						"name": "窒息陰影",
+						"entries": [
+							"在巢穴 1 哩內，通常會產生{@variantrule Bright Light|XPHB}的效果改為產生{@variantrule Dim Light|XPHB}，且該處的生物進行敏捷（{@skill Stealth|XPHB}）檢定時具有{@variantrule Advantage|XPHB}。"
+						],
+						"ENG_name": "Stifling Shadows"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Shadow Dragon"
+	},
+	"Silver Dragon|XMM": {
+		"name": "銀龍",
+		"source": "XMM",
+		"page": 280,
+		"regionalEffects": [
+			"成年或遠古銀龍巢穴所在的區域因其魔法而改變，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "輕柔陣風",
+						"entries": [
+							"風會托住在巢穴 1 哩內墜落的生物。這些生物以每輪 60 呎的速度下降，且不會受到墜落傷害。"
+						],
+						"ENG_name": "Gentle Gusts"
+					},
+					{
+						"type": "item",
+						"name": "驕陽與風暴",
+						"entries": [
+							"位於巢穴中時，龍可以施展{@spell Control Weather|XPHB}，無需材料成分，並使用與其「施法」動作相同的施法屬性。"
+						],
+						"ENG_name": "Sun and Storms"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Silver Dragon"
+	},
+	"Sphinx|XMM": {
+		"name": "斯芬克斯",
+		"source": "XMM",
+		"page": 294,
+		"regionalEffects": [
+			"學識斯芬克斯或勇武斯芬克斯巢穴所在的區域因其存在而改變，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "遠方視野",
+						"entries": [
+							"位於巢穴中時，斯芬克斯可以施展{@spell Clairvoyance|XPHB}，無需法術成分，並使用與其「施法」動作相同的施法屬性。以此方式施展時，法術的射程為 1 哩。"
+						],
+						"ENG_name": "Distant Sight"
+					},
+					{
+						"type": "item",
+						"name": "知識灌注",
+						"entries": [
+							"每當斯芬克斯或其盟友在巢穴 1 哩內執行{@action Study|XPHB}動作時，它為該動作所進行的任何屬性檢定加上 {@dice 1d6}。"
+						],
+						"ENG_name": "Infusion of Knowledge"
+					}
+				]
+			},
+			"若斯芬克斯死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Sphinx"
+	},
+	"Unicorn|XMM": {
+		"name": "獨角獸",
+		"source": "XMM",
+		"page": 313,
+		"regionalEffects": [
+			"獨角獸巢穴所在的區域因其存在而改變，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "遮蔽枝葉",
+						"entries": [
+							"位於巢穴 1 哩內時，獨角獸及其盟友進行敏捷（{@skill Stealth|XPHB}）檢定時具有{@variantrule Advantage|XPHB}。"
+						],
+						"ENG_name": "Obscuring Foliage"
+					},
+					{
+						"type": "item",
+						"name": "正能量",
+						"entries": [
+							"每當巢穴 1 哩內的生物從法術恢復{@variantrule Hit Points|XPHB}時，它恢復可能的最大{@variantrule Hit Points|XPHB}數值。此外，詛咒的效果在巢穴 1 哩內會被壓制。"
+						],
+						"ENG_name": "Positive Energy"
+					}
+				]
+			},
+			"若獨角獸死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Unicorn"
+	},
+	"Vampire|XMM": {
+		"name": "吸血鬼",
+		"source": "XMM",
+		"page": 316,
+		"regionalEffects": [
+			"吸血鬼巢穴所在的區域因其存在而扭曲，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "暗夜之子",
+						"entries": [
+							"吸血鬼對其領域中的動物施加影響力。從黃昏到黎明，中型或更小的野獸位於巢穴 1 哩內時處於{@condition Charmed|XPHB}狀態。"
+						],
+						"ENG_name": "Children of the Night"
+					},
+					{
+						"type": "item",
+						"name": "逼近的陰影",
+						"entries": [
+							"巢穴 1 哩內的陰影彷彿活物般移動。任何在巢穴 1 哩內完成{@variantrule Short Rest|XPHB}的生物（吸血鬼及其盟友除外）必須通過一次 {@dc 15} 感知豁免檢定，否則無法從該次休息中獲得任何益處。"
+						],
+						"ENG_name": "Looming Shadows"
+					},
+					{
+						"type": "item",
+						"name": "霧氣",
+						"entries": [
+							"巢穴 1 哩內的區域被持續蔓延的霧氣籠罩，成為{@variantrule Lightly Obscured|XPHB}。吸血鬼及其選擇的任何生物不受霧氣影響。"
+						],
+						"ENG_name": "Mists"
+					}
+				]
+			},
+			"若吸血鬼死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "Vampire"
+	},
+	"White Dragon|XMM": {
+		"name": "白龍",
+		"source": "XMM",
+		"page": 330,
+		"regionalEffects": [
+			"成年或遠古白龍巢穴所在的區域因其存在而影響，產生下列效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "嚴寒",
+						"entries": [
+							"巢穴 1 哩內的區域為{@hazard extreme cold|XDMG|極寒}區域。該區域中的任何水都是{@hazard frigid water|XDMG|冰冷水域}。關於極寒與冰冷水域的規則，請參閱{@book 地下城主指南|DMG}。"
+						],
+						"ENG_name": "Frigid Cold"
+					},
+					{
+						"type": "item",
+						"name": "冰川陰霾",
+						"entries": [
+							"巢穴 1 哩內的區域被寒冷霧氣籠罩，成為{@variantrule Lightly Obscured|XPHB}。每當龍及其盟友以外的生物在該區域中完成一次{@variantrule Long Rest|XPHB}時，該生物必須通過一次 {@dc 15} 體質豁免檢定，否則其{@variantrule Speed|XPHB}降低 10 呎，持續 1 小時。"
+						],
+						"ENG_name": "Glacial Gloom"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效果便立即結束。"
+		],
+		"ENG_name": "White Dragon"
+	}
+}
