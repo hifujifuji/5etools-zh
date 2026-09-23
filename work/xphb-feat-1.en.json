@@ -1,0 +1,555 @@
+{
+	"batch": "xphb-feat-1",
+	"items": [
+		{
+			"prop": "feat",
+			"key": "Ability Score Improvement|XPHB",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升",
+				"Repeatable": "可重複"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. This feat can't increase an ability score above 20.",
+				"Repeatable",
+				"You can take this feat more than once."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Actor|XPHB",
+			"hint": {
+				"Actor": "演員"
+			},
+			"s": [
+				"Actor",
+				"You gain the following benefits.",
+				"Impersonation",
+				"While you're disguised as a real or fictional person, you have {@variantrule Advantage|XPHB} on Charisma ({@skill Deception|XPHB} or {@skill Performance|XPHB}) checks to convince others that you are that person.",
+				"Mimicry",
+				"You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a Wisdom ({@skill Insight|XPHB}) check to determine the effect is faked ({@dc 8} plus your Charisma modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus})."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Alert|XPHB",
+			"hint": {
+				"Alert": "警覺"
+			},
+			"s": [
+				"Alert",
+				"You gain the following benefits.",
+				"Initiative Proficiency",
+				"When you roll {@variantrule Initiative|XPHB}, you can add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to the roll.",
+				"Initiative Swap",
+				"Immediately after you roll {@variantrule Initiative|XPHB}, you can swap your {@variantrule Initiative|XPHB} with the {@variantrule Initiative|XPHB} of one willing ally in the same combat. You can't make this swap if you or the ally has the {@condition Incapacitated|XPHB} condition."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Archery|XPHB",
+			"hint": {
+				"Archery": "弓道"
+			},
+			"s": [
+				"Archery",
+				"You gain a +2 bonus to attack rolls you make with Ranged weapons."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Athlete|XPHB",
+			"hint": {
+				"Athlete": "運動健將",
+				"Climb Speed": "攀爬速度",
+				"Jumping": "跳躍"
+			},
+			"s": [
+				"Athlete",
+				"You gain the following benefits.",
+				"Climb Speed",
+				"You gain a {@variantrule Climb Speed|XPHB} equal to your {@variantrule Speed|XPHB}.",
+				"Hop Up",
+				"When you have the {@condition Prone|XPHB} condition, you can right yourself with only 5 feet of movement.",
+				"Jumping",
+				"You can make a running {@variantrule Long Jump|XPHB|Long} or {@variantrule High Jump|XPHB} after moving only 5 feet."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Blessed Warrior|XPHB",
+			"s": [
+				"Blessed Warrior",
+				"When Gaining the Level 2 Paladin \"Fighting Style\" Feature",
+				"You learn two {@filter Cleric cantrips|spells|level=0|class=Cleric} of your choice. {@spell Guidance|XPHB} and {@spell Sacred Flame|XPHB} are recommended. The chosen cantrips count as Paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a Paladin level, you can replace one of these cantrips with another Cleric cantrip."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Blind Fighting|XPHB",
+			"s": [
+				"Blind Fighting",
+				"You have {@sense Blindsight|XPHB} with a range of 10 feet."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of Combat Prowess|XPHB",
+			"hint": {
+				"Boon of Combat Prowess": "英勇戰鬥之恩惠"
+			},
+			"s": [
+				"Boon of Combat Prowess",
+				"You gain the following benefits.",
+				"Peerless Aim",
+				"When you miss with an attack roll, you can hit instead. Once you use this benefit, you can't use it again until the start of your next turn."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of Dimensional Travel|XPHB",
+			"hint": {
+				"Boon of Dimensional Travel": "次元旅行之恩惠"
+			},
+			"s": [
+				"Boon of Dimensional Travel",
+				"You gain the following benefits.",
+				"Blink Steps",
+				"Immediately after you take the {@action Attack|XPHB} action or the {@action Magic|XPHB} action, you can teleport up to 30 feet to an unoccupied space you can see."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of Energy Resistance|XPHB",
+			"s": [
+				"Boon of Energy Resistance",
+				"You gain the following benefits.",
+				"Energy Resistances",
+				"You gain {@variantrule Resistance|XPHB} to two of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. Whenever you finish a {@variantrule Long Rest|XPHB}, you can change your choices.",
+				"Energy Redirection",
+				"When you take damage of one of the types chosen for the Energy Resistances benefit, you can take a {@variantrule Reaction|XPHB} to direct damage of the same type toward another creature you can see within 60 feet of yourself that isn't behind {@variantrule Cover|XPHB|Total Cover}. If you do so, that creature must succeed on a Dexterity saving throw ({@dc 8} plus your Constitution modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}) or take damage equal to {@dice 2d12} plus your Constitution modifier."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of Fate|XPHB",
+			"hint": {
+				"Boon of Fate": "扭曲命運之恩惠"
+			},
+			"s": [
+				"Boon of Fate",
+				"You gain the following benefits.",
+				"Improve Fate",
+				"When you or another creature within 60 feet of you succeeds on or fails a {@variantrule D20 Test|XPHB}, you can roll {@dice 2d4} and apply the total rolled as a bonus or penalty to the {@dice d20} roll. Once you use this benefit, you can't use it again until you roll {@variantrule Initiative|XPHB} or finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of Fortitude|XPHB",
+			"hint": {
+				"Boon of Fortitude": "超凡強韌之恩惠"
+			},
+			"s": [
+				"Boon of Fortitude",
+				"You gain the following benefits.",
+				"Fortified Health",
+				"Your {@variantrule Hit Points|XPHB|Hit Point} maximum increases by 40. In addition, whenever you regain {@variantrule Hit Points|XPHB}, you can regain additional {@variantrule Hit Points|XPHB} equal to your Constitution modifier. Once you've regained these additional {@variantrule Hit Points|XPHB}, you can't do so again until the start of your next turn."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of Irresistible Offense|XPHB",
+			"hint": {
+				"Boon of Irresistible Offense": "無敵攻勢之恩惠"
+			},
+			"s": [
+				"Boon of Irresistible Offense",
+				"You gain the following benefits.",
+				"Overcome Defenses",
+				"The Bludgeoning, Piercing, and Slashing damage you deal always ignores {@variantrule Resistance|XPHB}.",
+				"Overwhelming Strike",
+				"When you roll a 20 on the {@dice d20} for an attack roll, you can deal extra damage to the target equal to the ability score increased by this feat. The extra damage's type is the same as the attack's type."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of Recovery|XPHB",
+			"hint": {
+				"Boon of Recovery": "恢復活力之恩惠"
+			},
+			"s": [
+				"Boon of Recovery",
+				"You gain the following benefits.",
+				"Last Stand",
+				"When you would be reduced to 0 {@variantrule Hit Points|XPHB}, you can drop to 1 {@variantrule Hit Points|XPHB|Hit Point} instead and regain a number of {@variantrule Hit Points|XPHB} equal to half your {@variantrule Hit Points|XPHB|Hit Point} maximum. Once you use this benefit, you can't use it again until you finish a {@variantrule Long Rest|XPHB}.",
+				"Recover Vitality",
+				"You have a pool of ten d10s. As a {@variantrule Bonus Action|XPHB}, you can expend dice from the pool, roll those dice, and regain a number of {@variantrule Hit Points|XPHB} equal to the roll's total. You regain all the expended dice when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of Skill|XPHB",
+			"hint": {
+				"Expertise": "專精"
+			},
+			"s": [
+				"Boon of Skill",
+				"You gain the following benefits.",
+				"All-Around Adept",
+				"You gain proficiency in all skills.",
+				"Expertise",
+				"Choose one skill in which you lack {@variantrule Expertise|XPHB}. You gain {@variantrule Expertise|XPHB} in that skill."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of Speed|XPHB",
+			"hint": {
+				"Boon of Speed": "速度爆發之恩惠"
+			},
+			"s": [
+				"Boon of Speed",
+				"You gain the following benefits.",
+				"Escape Artist",
+				"As a {@variantrule Bonus Action|XPHB}, you can take the {@action Disengage|XPHB} action, which also ends the {@condition Grappled|XPHB} condition on you.",
+				"Quickness",
+				"Your {@variantrule Speed|XPHB} increases by 30 feet."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of Spell Recall|XPHB",
+			"hint": {
+				"Boon of Spell Recall": "法術召返之恩惠"
+			},
+			"s": [
+				"Boon of Spell Recall",
+				"You gain the following benefits.",
+				"Free Casting",
+				"Whenever you cast a spell with a level 1-4 spell slot, roll {@dice 1d4}. If the number you roll is the same as the slot's level, the slot isn't expended."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of the Night Spirit|XPHB",
+			"s": [
+				"Boon of the Night Spirit",
+				"You gain the following benefits.",
+				"Merge with Shadows",
+				"While within {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, you can give yourself the {@condition Invisible|XPHB} condition as a {@variantrule Bonus Action|XPHB}. The condition ends on you immediately after you take an action, a {@variantrule Bonus Action|XPHB}, or a {@variantrule Reaction|XPHB}.",
+				"Shadowy Form",
+				"While within {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, you have {@variantrule Resistance|XPHB} to all damage except Psychic and Radiant."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Boon of Truesight|XPHB",
+			"hint": {
+				"Boon of Truesight": "真實視覺之恩惠",
+				"Truesight": "真實視覺"
+			},
+			"s": [
+				"Boon of Truesight",
+				"You gain the following benefits.",
+				"Truesight",
+				"You have {@sense Truesight|XPHB} with a range of 60 feet."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Charger|XPHB",
+			"hint": {
+				"Charger": "衝鋒手"
+			},
+			"s": [
+				"Charger",
+				"You gain the following benefits.",
+				"Improved Dash",
+				"When you take the {@action Dash|XPHB} action, your {@variantrule Speed|XPHB} increases by 10 feet for that action.",
+				"Charge Attack",
+				"If you move at least 10 feet in a straight line toward a target immediately before hitting it with a melee attack roll as part of the {@action Attack|XPHB} action, choose one of the following effects: gain a {@dice 1d8} bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Chef|XPHB",
+			"hint": {
+				"Cook's Utensils": "廚師炊具"
+			},
+			"s": [
+				"Chef",
+				"You gain the following benefits.",
+				"Cook's Utensils",
+				"You gain proficiency with {@item Cook's Utensils|XPHB} if you don't already have it.",
+				"Replenishing Meal",
+				"As part of a {@variantrule Short Rest|XPHB}, you can cook special food if you have ingredients and {@item Cook's Utensils|XPHB} on hand. You can prepare enough of this food for a number of creatures equal to 4 plus your {@variantrule Proficiency|XPHB|Proficiency Bonus}. At the end of the {@variantrule Short Rest|XPHB}, any creature who eats the food and spends one or more Hit Dice to regain {@variantrule Hit Points|XPHB} regains an extra {@dice 1d8} {@variantrule Hit Points|XPHB}.",
+				"Bolstering Treats",
+				"With 1 hour of work or when you finish a {@variantrule Long Rest|XPHB}, you can cook a number of treats equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus} if you have ingredients and {@item Cook's Utensils|XPHB} on hand. These special treats last 8 hours after being made. A creature can use a {@variantrule Bonus Action|XPHB} to eat one of those treats to gain a number of {@variantrule Temporary Hit Points|XPHB} equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Crafter|XPHB",
+			"s": [
+				"Crafter",
+				"You gain the following benefits.",
+				"Tool Proficiency",
+				"You gain proficiency with three different {@item Artisan's Tools|XPHB} of your choice from the Fast Crafting table.",
+				"Discount",
+				"Whenever you buy a nonmagical item, you receive a 20 percent discount on it.",
+				"Fast Crafting",
+				"When you finish a {@variantrule Long Rest|XPHB}, you can craft one piece of gear from the Fast Crafting table, provided you have the {@item Artisan's Tools|XPHB} associated with that item and have proficiency with those tools. The item lasts until you finish another {@variantrule Long Rest|XPHB}, at which point the item falls apart.",
+				"Fast Crafting",
+				"Artisan's Tools",
+				"Crafted Gear",
+				"{@item Ladder|XPHB}, {@item Torch|XPHB}",
+				"{@item Crossbow Bolt Case|XPHB}, {@item Map or Scroll Case|XPHB}, {@item Pouch|XPHB}",
+				"{@item Jug|XPHB}, {@item Lamp|XPHB}",
+				"{@item Ball Bearings|XPHB}, {@item Bucket|XPHB}, {@item Caltrops|XPHB}, {@item Grappling Hook|XPHB}, {@item Iron Pot|XPHB}",
+				"{@item Bell|XPHB}, {@item Shovel|XPHB}, {@item Tinderbox|XPHB}",
+				"{@item Basket|XPHB}, {@item Rope|XPHB}, {@item Net|XPHB}, {@item Tent|XPHB}",
+				"{@item Club|XPHB}, {@item Greatclub|XPHB}, {@item Quarterstaff|XPHB}"
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Crossbow Expert|XPHB",
+			"hint": {
+				"Crossbow Expert": "強弩專家"
+			},
+			"s": [
+				"Crossbow Expert",
+				"You gain the following benefits.",
+				"Ignore Loading",
+				"You ignore the {@itemProperty LD|XPHB|Loading} property of the {@item Hand Crossbow|XPHB}, {@item Heavy Crossbow|XPHB}, and {@item Light Crossbow|XPHB} (all called crossbows elsewhere in this feat). If you're holding one of them, you can load a piece of ammunition into it even if you lack a free hand.",
+				"Firing in Melee",
+				"Being within 5 feet of an enemy doesn't impose {@variantrule Disadvantage|XPHB} on your attack rolls with crossbows.",
+				"Dual Wielding",
+				"When you make the extra attack of the {@itemProperty L|XPHB|Light} property, you can add your ability modifier to the damage of the extra attack if that attack is with a crossbow that has the {@itemProperty L|XPHB|Light} property and you aren't already adding that modifier to the damage."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Crusher|XPHB",
+			"hint": {
+				"Push": "推擊"
+			},
+			"s": [
+				"Crusher",
+				"You gain the following benefits.",
+				"Push",
+				"Once per turn, when you hit a creature with an attack that deals Bludgeoning damage, you can move it 5 feet to an unoccupied space if the target is no more than one size larger than you.",
+				"Enhanced Critical",
+				"When you score a {@variantrule Critical Hit|XPHB} that deals Bludgeoning damage to a creature, attack rolls against that creature have {@variantrule Advantage|XPHB} until the start of your next turn."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Defense|XPHB",
+			"hint": {
+				"Defense": "防禦"
+			},
+			"s": [
+				"Defense",
+				"While you're wearing Light, Medium, or Heavy armor, you gain a +1 bonus to {@variantrule Armor Class|XPHB}."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Defensive Duelist|XPHB",
+			"hint": {
+				"Defensive Duelist": "防禦式決鬥",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Defensive Duelist",
+				"You gain the following benefits.",
+				"Parry",
+				"If you're holding a Finesse weapon and another creature hits you with a melee attack, you can take a {@variantrule Reaction|XPHB} to add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to your {@variantrule Armor Class|XPHB}, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Druidic Warrior|XPHB",
+			"s": [
+				"Druidic Warrior",
+				"When Gaining the Level 2 Ranger \"Fighting Style\" Feature",
+				"You learn two {@filter Druid cantrips|spells|level=0|class=druid} of your choice. {@spell Guidance|XPHB} and {@spell Starry Wisp|XPHB} are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Dual Wielder|XPHB",
+			"hint": {
+				"Dual Wielder": "雙持客"
+			},
+			"s": [
+				"Dual Wielder",
+				"You gain the following benefits.",
+				"Enhanced Dual Wielding",
+				"When you take the {@action Attack|XPHB} action on your turn and attack with a weapon that has the {@itemProperty L|XPHB|Light} property, you can make one extra attack as a {@variantrule Bonus Action|XPHB} later on the same turn with a different weapon, which must be a Melee weapon that lacks the {@itemProperty 2H|XPHB|Two-Handed} property. You don't add your ability modifier to the extra attack's damage unless that modifier is negative.",
+				"Quick Draw",
+				"You can draw or stow two weapons that lack the {@itemProperty 2H|XPHB|Two-Handed} property when you would normally be able to draw or stow only one."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Dueling|XPHB",
+			"hint": {
+				"Dueling": "決鬥"
+			},
+			"s": [
+				"Dueling",
+				"When you're holding a Melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Durable|XPHB",
+			"hint": {
+				"Durable": "耐性",
+				"Defy Death": "違抗死亡"
+			},
+			"s": [
+				"Durable",
+				"You gain the following benefits.",
+				"Defy Death",
+				"You have {@variantrule Advantage|XPHB} on {@variantrule Death Saving Throw|XPHB|Death Saving Throws}.",
+				"Speedy Recovery",
+				"As a {@variantrule Bonus Action|XPHB}, you can expend one of your {@variantrule Hit Point Dice|XPHB}, roll the die, and regain a number of {@variantrule Hit Points|XPHB} equal to the roll."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Elemental Adept|XPHB",
+			"hint": {
+				"Elemental Adept": "元素行家",
+				"Repeatable": "可重複"
+			},
+			"s": [
+				"Elemental Adept",
+				"You gain the following benefits.",
+				"Energy Mastery",
+				"Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore {@variantrule Resistance|XPHB} to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.",
+				"Repeatable",
+				"You can take this feat more than once, but you must choose a different damage type each time for Energy Mastery."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Fey-Touched|XPHB",
+			"s": [
+				"Fey-Touched",
+				"Your exposure to the Feywild's magic grants you the following benefits.",
+				"Fey Magic",
+				"Choose one {@filter level 1 spell from the Divination or Enchantment|spells|level=1|school=E;D} school of magic. You always have that spell and the {@spell Misty Step|XPHB} spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a {@variantrule Long Rest|XPHB}. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Grappler|XPHB",
+			"hint": {
+				"Grappler": "擒抱者"
+			},
+			"s": [
+				"Grappler",
+				"You gain the following benefits.",
+				"Punch and Grab",
+				"When you hit a creature with an {@variantrule Unarmed Strike|XPHB} as part of the {@action Attack|XPHB} action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.",
+				"Attack Advantage",
+				"You have {@variantrule Advantage|XPHB} on attack rolls against a creature {@condition Grappled|XPHB} by you.",
+				"Fast Wrestler",
+				"You don't have to spend extra movement to move a creature {@condition Grappled|XPHB} by you if the creature is your size or smaller."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Great Weapon Fighting|XPHB",
+			"hint": {
+				"Great Weapon Fighting": "巨武戰鬥"
+			},
+			"s": [
+				"Great Weapon Fighting",
+				"When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the {@itemProperty 2h|XPHB|Two-Handed} or {@itemProperty V|XPHB|Versatile} property to gain this benefit."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Great Weapon Master|XPHB",
+			"hint": {
+				"Great Weapon Master": "巨武大師"
+			},
+			"s": [
+				"Great Weapon Master",
+				"You gain the following benefits.",
+				"Heavy Weapon Mastery",
+				"When you hit a creature with a weapon that has the {@itemProperty H|XPHB|Heavy} property as part of the {@action Attack|XPHB} action on your turn, you can cause the weapon to deal extra damage to the target. The extra damage equals your {@variantrule Proficiency|XPHB|Proficiency Bonus}.",
+				"Hew",
+				"Immediately after you score a {@variantrule Critical Hit|XPHB} with a Melee weapon or reduce a creature to 0 {@variantrule Hit Points|XPHB} with one, you can make one attack with the same weapon as a {@variantrule Bonus Action|XPHB}."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Healer|XPHB",
+			"hint": {
+				"Healer": "治療師"
+			},
+			"s": [
+				"Healer",
+				"You gain the following benefits.",
+				"Battle Medic",
+				"If you have a {@item Healer's Kit|XPHB}, you can expend one use of it and tend to a creature within 5 feet of yourself as a {@action Utilize|XPHB} action. That creature can expend one of its {@variantrule Hit Point Dice|XPHB}, and you then roll that die. The creature regains a number of {@variantrule Hit Points|XPHB} equal to the roll plus your {@variantrule Proficiency|XPHB|Proficiency Bonus}.",
+				"Healing Rerolls",
+				"Whenever you roll a die to determine the number of {@variantrule Hit Points|XPHB} you restore with a spell or with this feat's Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Heavily Armored|XPHB",
+			"hint": {
+				"Heavily Armored": "重度著甲",
+				"Armor Training": "護甲受訓"
+			},
+			"s": [
+				"Heavily Armored",
+				"You gain the following benefits.",
+				"Armor Training",
+				"You gain training with Heavy armor."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Heavy Armor Master|XPHB",
+			"hint": {
+				"Heavy Armor Master": "重甲大師"
+			},
+			"s": [
+				"Heavy Armor Master",
+				"You gain the following benefits.",
+				"Damage Reduction",
+				"When you're hit by an attack while you're wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by an amount equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Inspiring Leader|XPHB",
+			"hint": {
+				"Inspiring Leader": "激勵統御"
+			},
+			"s": [
+				"Inspiring Leader",
+				"You gain the following benefits.",
+				"Bolstering Performance",
+				"When you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}, you can give an inspiring performance: a speech, song, or dance. When you do so, choose up to six allies (which can include yourself) within 30 feet of yourself who witness the performance. The chosen creatures each gain {@variantrule Temporary Hit Points|XPHB} equal to your character level plus the modifier of the ability you increased with this feat."
+			]
+		},
+		{
+			"prop": "feat",
+			"key": "Interception|XPHB",
+			"s": [
+				"Interception",
+				"When a creature you can see hits another creature within 5 feet of you with an attack roll, you can take a {@variantrule Reaction|XPHB} to reduce the damage dealt to the target by {@dice 1d10} plus your {@variantrule Proficiency|XPHB|Proficiency Bonus}. You must be holding a {@item Shield|XPHB} or a Simple or Martial weapon to use this {@variantrule Reaction|XPHB}."
+			]
+		}
+	]
+}

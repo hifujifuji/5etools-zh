@@ -196,7 +196,7 @@
 		"Dex": "敏",
 		"Con": "體",
 		"Int": "智",
-		"Wis": "睿",
+		"Wis": "感",
 		"Cha": "魅",
 		"Mod": "調整值",
 		"Save": "豁免",
@@ -1170,7 +1170,11 @@
 		"Shapechanger": "變形者",
 		"Titan": "泰坦",
 		"Any Race": "任意種族",
-		"any race": "任意種族"
+		"any race": "任意種族",
+		"Spellcasting Feature": "施法特性",
+		"Pact Magic Feature": "契約魔法特性",
+		"Spellcasting or Pact Magic Feature": "施法或契約魔法特性",
+		"Choose one ability in which you lack saving throw proficiency. Increase the chosen ability score by 1, to a maximum of 20.": "選擇一項你不具豁免檢定熟練的屬性，將該屬性值提升 1，最高至 20。"
 	},
 	"rules": [
 		[
@@ -1404,6 +1408,42 @@
 		[
 			"(\\w+) \\((\\w+)\\)",
 			"{1}（{2}）"
+		],
+		[
+			"(.+) Feat \\((.+)\\)",
+			"{1}專長（{2}）"
+		],
+		[
+			"Prerequisites?: (.+)",
+			"先決條件：{1}"
+		],
+		[
+			"Level (\\d+)\\+",
+			"$1 級以上"
+		],
+		[
+			"Lvl (\\d+)",
+			"$1 級"
+		],
+		[
+			"(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma) (\\d+)\\+",
+			"{1} $2+"
+		],
+		[
+			"(Str|Dex|Con|Int|Wis|Cha) (\\d+)\\+",
+			"{1} $2+"
+		],
+		[
+			"Increase your (\\w+) score by (\\d+), to a maximum of (\\d+)\\.",
+			"你的{1}值提升 $2，最高至 $3。"
+		],
+		[
+			"Increase one ability score of your choice by (\\d+), to a maximum of (\\d+)\\.",
+			"選擇一項屬性值提升 $1，最高至 $2。"
+		],
+		[
+			"Increase your (.+) by (\\d+), to a maximum of (\\d+)\\.",
+			"你的{1}值提升 $2，最高至 $3。"
 		]
 	]
 }
