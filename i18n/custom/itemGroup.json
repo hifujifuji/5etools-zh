@@ -1,0 +1,1650 @@
+{
+	"Arcane Focus|XPHB": {
+		"name": "奧術法器",
+		"source": "XPHB",
+		"page": 224,
+		"type": "SCF|XPHB",
+		"scfType": "arcane",
+		"rarity": "none",
+		"focus": [
+			"Sorcerer",
+			"Warlock",
+			"Wizard"
+		],
+		"items": [
+			"Crystal|XPHB",
+			"Orb|XPHB",
+			"Rod|XPHB",
+			"Staff|XPHB",
+			"Wand|XPHB"
+		],
+		"ENG_name": "Arcane Focus"
+	},
+	"Armor of Resistance|XDMG": {
+		"name": "抗性護甲",
+		"source": "XDMG",
+		"page": 231,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-BtS"
+		],
+		"type": "GV|XDMG",
+		"rarity": "rare",
+		"reqAttune": true,
+		"entries": [
+			"穿著此護甲時，你對一種傷害類型具有{@variantrule Resistance|XPHB}。類型由 DM 選擇，或在下表隨機擲骰決定。",
+			{
+				"type": "table",
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"colLabels": [
+					"d10",
+					"傷害類型"
+				],
+				"rows": [
+					[
+						"1",
+						"{@item Armor of Acid Resistance|XDMG|Acid}"
+					],
+					[
+						"2",
+						"{@item Armor of Cold Resistance|XDMG|Cold}"
+					],
+					[
+						"3",
+						"{@item Armor of Fire Resistance|XDMG|Fire}"
+					],
+					[
+						"4",
+						"{@item Armor of Force Resistance|XDMG|Force}"
+					],
+					[
+						"5",
+						"{@item Armor of Lightning Resistance|XDMG|Lightning}"
+					],
+					[
+						"6",
+						"{@item Armor of Necrotic Resistance|XDMG|Necrotic}"
+					],
+					[
+						"7",
+						"{@item Armor of Poison Resistance|XDMG|Poison}"
+					],
+					[
+						"8",
+						"{@item Armor of Psychic Resistance|XDMG|Psychic}"
+					],
+					[
+						"9",
+						"{@item Armor of Radiant Resistance|XDMG|Radiant}"
+					],
+					[
+						"10",
+						"{@item Armor of Thunder Resistance|XDMG|Thunder}"
+					]
+				]
+			}
+		],
+		"items": [
+			"Armor of Acid Resistance|XDMG",
+			"Armor of Cold Resistance|XDMG",
+			"Armor of Fire Resistance|XDMG",
+			"Armor of Force Resistance|XDMG",
+			"Armor of Lightning Resistance|XDMG",
+			"Armor of Necrotic Resistance|XDMG",
+			"Armor of Poison Resistance|XDMG",
+			"Armor of Psychic Resistance|XDMG",
+			"Armor of Radiant Resistance|XDMG",
+			"Armor of Thunder Resistance|XDMG"
+		],
+		"itemsHidden": true,
+		"classFeatures": [
+			"replicate magic item|artificer|efa|2|efa"
+		],
+		"lootTables": [
+			"Armaments - Rare|XDMG"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Armor of Resistance"
+	},
+	"Armor of Vulnerability|XDMG": {
+		"name": "易傷護甲",
+		"source": "XDMG",
+		"page": 231,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "GV|XDMG",
+		"rarity": "rare",
+		"reqAttune": true,
+		"curse": true,
+		"items": [
+			"Armor of Vulnerability (Bludgeoning)|XDMG",
+			"Armor of Vulnerability (Piercing)|XDMG",
+			"Armor of Vulnerability (Slashing)|XDMG"
+		],
+		"lootTables": [
+			"Armaments - Rare|XDMG"
+		],
+		"ENG_name": "Armor of Vulnerability"
+	},
+	"Artisan's Tools|XPHB": {
+		"name": "工匠工具",
+		"source": "XPHB",
+		"page": 220,
+		"srd52": true,
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"items": [
+			"Alchemist's Supplies|XPHB",
+			"Brewer's Supplies|XPHB",
+			"Calligrapher's Supplies|XPHB",
+			"Carpenter's Tools|XPHB",
+			"Cartographer's Tools|XPHB",
+			"Cobbler's Tools|XPHB",
+			"Cook's Utensils|XPHB",
+			"Glassblower's Tools|XPHB",
+			"Jeweler's Tools|XPHB",
+			"Leatherworker's Tools|XPHB",
+			"Mason's Tools|XPHB",
+			"Painter's Supplies|XPHB",
+			"Potter's Tools|XPHB",
+			"Smith's Tools|XPHB",
+			"Tinker's Tools|XPHB",
+			"Weaver's Tools|XPHB",
+			"Woodcarver's Tools|XPHB"
+		],
+		"ENG_name": "Artisan's Tools"
+	},
+	"Bag of Tricks|XDMG": {
+		"name": "魔術袋",
+		"source": "XDMG",
+		"page": 234,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-BD"
+		],
+		"rarity": "uncommon",
+		"wondrous": true,
+		"recharge": "dawn",
+		"items": [
+			"Bag of Tricks, Gray|XDMG",
+			"Bag of Tricks, Rust|XDMG",
+			"Bag of Tricks, Tan|XDMG"
+		],
+		"lootTables": [
+			"Arcana - Uncommon|XDMG"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Bag of Tricks"
+	},
+	"Belt of Giant Strength|XDMG": {
+		"name": "巨人力量腰帶",
+		"source": "XDMG",
+		"page": 236,
+		"srd52": true,
+		"basicRules2024": true,
+		"rarity": "varies",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			{
+				"type": "table",
+				"colLabels": [
+					"腰帶",
+					"力量",
+					"稀有度"
+				],
+				"colStyles": [
+					"col-8",
+					"col-2 text-center",
+					"col-2"
+				],
+				"rows": [
+					[
+						"{@item Belt of Hill Giant Strength|XDMG}",
+						"21",
+						"珍稀"
+					],
+					[
+						"{@item Belt of Frost Giant Strength|XDMG}或{@item Belt of Stone Giant Strength|XDMG}",
+						"23",
+						"極珍稀"
+					],
+					[
+						"{@item Belt of Fire Giant Strength|XDMG}",
+						"25",
+						"極珍稀"
+					],
+					[
+						"{@item Belt of Cloud Giant Strength|XDMG}",
+						"27",
+						"傳說"
+					],
+					[
+						"{@item Belt of Storm Giant Strength|XDMG}",
+						"29",
+						"傳說"
+					]
+				]
+			}
+		],
+		"items": [
+			"Belt of Cloud Giant Strength|XDMG",
+			"Belt of Fire Giant Strength|XDMG",
+			"Belt of Frost Giant Strength|XDMG",
+			"Belt of Hill Giant Strength|XDMG",
+			"Belt of Stone Giant Strength|XDMG",
+			"Belt of Storm Giant Strength|XDMG"
+		],
+		"itemsHidden": true,
+		"hasFluffImages": true,
+		"ENG_name": "Belt of Giant Strength"
+	},
+	"Carpet of Flying|XDMG": {
+		"name": "飛天魔毯",
+		"source": "XDMG",
+		"page": 242,
+		"srd52": true,
+		"basicRules2024": true,
+		"rarity": "very rare",
+		"wondrous": true,
+		"entries": [
+			"你可以執行一個{@action Magic|XPHB}動作並說出魔毯的命令詞，使魔毯懸浮並飛行。若你位於其 30 呎內，它會依你的指示移動。",
+			"飛天魔毯有四種尺寸。DM 選擇魔毯的尺寸，或在下表隨機擲骰決定。魔毯最多可載運表中所示重量的兩倍，但若載重超過其一般容量，其{@variantrule Fly Speed|XPHB}減半。",
+			{
+				"type": "table",
+				"caption": "適用的魔毯尺寸",
+				"colStyles": [
+					"col-2 text-center",
+					"col-4",
+					"col-3 text-center",
+					"col-3 text-center"
+				],
+				"colLabels": [
+					"1d100",
+					"尺寸",
+					"容量",
+					"飛行速度"
+				],
+				"rows": [
+					[
+						"01-20",
+						"{@item Carpet of Flying, 3 ft. × 5 ft.|XDMG}",
+						"200 磅",
+						"80 呎"
+					],
+					[
+						"21-55",
+						"{@item Carpet of Flying, 4 ft. × 6 ft.|XDMG}",
+						"400 磅",
+						"60 呎"
+					],
+					[
+						"56-80",
+						"{@item Carpet of Flying, 5 ft. × 7 ft.|XDMG}",
+						"600 磅",
+						"40 呎"
+					],
+					[
+						"81-00",
+						"{@item Carpet of Flying, 6 ft. × 9 ft.|XDMG}",
+						"800 磅",
+						"30 呎"
+					]
+				]
+			}
+		],
+		"items": [
+			"Carpet of Flying, 3 ft. × 5 ft.|XDMG",
+			"Carpet of Flying, 4 ft. × 6 ft.|XDMG",
+			"Carpet of Flying, 5 ft. × 7 ft.|XDMG",
+			"Carpet of Flying, 6 ft. × 9 ft.|XDMG"
+		],
+		"itemsHidden": true,
+		"lootTables": [
+			"Arcana - Very Rare|XDMG",
+			"Implements - Very Rare|XDMG"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Carpet of Flying"
+	},
+	"Dragon Scale Mail|XDMG": {
+		"name": "龍鱗甲",
+		"source": "XDMG",
+		"page": 254,
+		"srd52": true,
+		"basicRules2024": true,
+		"baseItem": "scale mail|xphb",
+		"type": "MA|XPHB",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"weight": 45,
+		"ac": 14,
+		"bonusAc": "+1",
+		"stealth": true,
+		"items": [
+			"Black Dragon Scale Mail|XDMG",
+			"Blue Dragon Scale Mail|XDMG",
+			"Brass Dragon Scale Mail|XDMG",
+			"Bronze Dragon Scale Mail|XDMG",
+			"Copper Dragon Scale Mail|XDMG",
+			"Gold Dragon Scale Mail|XDMG",
+			"Green Dragon Scale Mail|XDMG",
+			"Red Dragon Scale Mail|XDMG",
+			"Silver Dragon Scale Mail|XDMG",
+			"White Dragon Scale Mail|XDMG"
+		],
+		"lootTables": [
+			"Armaments - Very Rare|XDMG"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Dragon Scale Mail"
+	},
+	"Druidic Focus|XPHB": {
+		"name": "德魯伊法器",
+		"source": "XPHB",
+		"page": 225,
+		"type": "SCF|XPHB",
+		"scfType": "druid",
+		"rarity": "none",
+		"focus": [
+			"Druid"
+		],
+		"items": [
+			"Sprig of mistletoe|XPHB",
+			"Wooden staff|XPHB",
+			"Yew wand|XPHB"
+		],
+		"ENG_name": "Druidic Focus"
+	},
+	"Elemental Gem|XDMG": {
+		"name": "元素寶石",
+		"source": "XDMG",
+		"page": 257,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-BtS"
+		],
+		"rarity": "uncommon",
+		"wondrous": true,
+		"items": [
+			"Elemental Gem, Blue Sapphire|XDMG",
+			"Elemental Gem, Emerald|XDMG",
+			"Elemental Gem, Red Corundum|XDMG",
+			"Elemental Gem, Yellow Diamond|XDMG"
+		],
+		"lootTables": [
+			"Arcana - Uncommon|XDMG"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Elemental Gem"
+	},
+	"Enspelled Armor|XDMG": {
+		"name": "法術封存護甲",
+		"source": "XDMG",
+		"page": 258,
+		"type": "GV|XDMG",
+		"rarity": "varies",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d6}",
+		"charges": 6,
+		"items": [
+			"Enspelled Armor (Cantrip)|XDMG",
+			"Enspelled Armor (Level 1)|XDMG",
+			"Enspelled Armor (Level 2)|XDMG",
+			"Enspelled Armor (Level 3)|XDMG",
+			"Enspelled Armor (Level 4)|XDMG",
+			"Enspelled Armor (Level 5)|XDMG",
+			"Enspelled Armor (Level 6)|XDMG",
+			"Enspelled Armor (Level 7)|XDMG",
+			"Enspelled Armor (Level 8)|XDMG"
+		],
+		"lootTables": [
+			"Armaments - Uncommon|XDMG",
+			"Armaments - Rare|XDMG",
+			"Armaments - Very Rare|XDMG",
+			"Armaments - Legendary|XDMG"
+		],
+		"ENG_name": "Enspelled Armor"
+	},
+	"Enspelled Staff|XDMG": {
+		"name": "法術封存之杖",
+		"source": "XDMG",
+		"page": 258,
+		"type": "M|XPHB",
+		"rarity": "varies",
+		"reqAttune": "by a Spellcaster",
+		"reqAttuneTags": [
+			{
+				"spellcasting": true
+			}
+		],
+		"weight": 4,
+		"weaponCategory": "simple",
+		"property": [
+			"V|XPHB"
+		],
+		"mastery": [
+			"Topple|XPHB"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d6}",
+		"charges": 6,
+		"staff": true,
+		"items": [
+			"Enspelled Staff (Cantrip)|XDMG",
+			"Enspelled Staff (Level 1)|XDMG",
+			"Enspelled Staff (Level 2)|XDMG",
+			"Enspelled Staff (Level 3)|XDMG",
+			"Enspelled Staff (Level 4)|XDMG",
+			"Enspelled Staff (Level 5)|XDMG",
+			"Enspelled Staff (Level 6)|XDMG",
+			"Enspelled Staff (Level 7)|XDMG",
+			"Enspelled Staff (Level 8)|XDMG"
+		],
+		"lootTables": [
+			"Arcana - Uncommon|XDMG",
+			"Arcana - Rare|XDMG",
+			"Arcana - Very Rare|XDMG",
+			"Arcana - Legendary|XDMG",
+			"Relics - Uncommon|XDMG",
+			"Relics - Rare|XDMG",
+			"Relics - Very Rare|XDMG",
+			"Relics - Legendary|XDMG"
+		],
+		"ENG_name": "Enspelled Staff"
+	},
+	"Enspelled Weapon|XDMG": {
+		"name": "法術封存武器",
+		"source": "XDMG",
+		"page": 258,
+		"type": "GV|XDMG",
+		"rarity": "varies",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d6}",
+		"charges": 6,
+		"items": [
+			"Enspelled Weapon (Cantrip)|XDMG",
+			"Enspelled Weapon (Level 1)|XDMG",
+			"Enspelled Weapon (Level 2)|XDMG",
+			"Enspelled Weapon (Level 3)|XDMG",
+			"Enspelled Weapon (Level 4)|XDMG",
+			"Enspelled Weapon (Level 5)|XDMG",
+			"Enspelled Weapon (Level 6)|XDMG",
+			"Enspelled Weapon (Level 7)|XDMG",
+			"Enspelled Weapon (Level 8)|XDMG"
+		],
+		"lootTables": [
+			"Armaments - Uncommon|XDMG",
+			"Armaments - Rare|XDMG",
+			"Armaments - Very Rare|XDMG",
+			"Armaments - Legendary|XDMG",
+			"Implements - Uncommon|XDMG",
+			"Implements - Rare|XDMG",
+			"Implements - Very Rare|XDMG",
+			"Implements - Legendary|XDMG"
+		],
+		"ENG_name": "Enspelled Weapon"
+	},
+	"Eye and Hand of Vecna|XDMG": {
+		"name": "維克那之眼與手",
+		"source": "XDMG",
+		"page": 259,
+		"rarity": "artifact",
+		"reqAttune": true,
+		"wondrous": true,
+		"ability": {
+			"static": {
+				"str": 20
+			}
+		},
+		"entries": [
+			"{@book 維克那|XDMG|8|Vecna}是一位強大的法師，他藉由魔法與征服建立了一個可怕的帝國。然而，儘管擁有如此力量，維克那仍畏懼死亡，並採取措施成為巫妖以避免自己的消亡。",
+			"一名名叫卡斯的奸詐副官在一場慘烈的戰役中終結了維克那的統治。維克那只留下了一隻手和一隻眼睛，這兩件可怖的神器仍在世上試圖實現維克那的意志。",
+			"{@item Eye of Vecna|XDMG}與{@item Hand of Vecna|XDMG}是兩件獨立的神器，可能被一起或分別找到。眼睛看起來像一顆從眼窩中扯出、布滿血絲的器官。手則是一隻乾枯的左手。",
+			{
+				"type": "entries",
+				"name": "眼與手的隨機屬性",
+				"entries": [
+					"{@item Eye of Vecna|XDMG}與{@item Hand of Vecna|XDMG}各自具有以下隨機屬性",
+					{
+						"type": "list",
+						"items": [
+							"1 個{@table Artifact Properties; Minor Beneficial Properties|XDMG|次要有益}屬性",
+							"1 個{@table Artifact Properties; Major Beneficial Properties|XDMG|主要有益}屬性",
+							"1 個{@table Artifact Properties; Minor Detrimental Properties|XDMG|次要有害}屬性"
+						]
+					}
+				],
+				"ENG_name": "Random Properties of the Eye and Hand"
+			},
+			{
+				"type": "entries",
+				"name": "與眼同調",
+				"entries": [
+					"要與此眼同調，你必須將它按入你空著的眼窩中。眼睛會嫁接在你的頭上，並一直留在那裡直到你死亡。若眼睛被取出，你便會死亡。"
+				],
+				"ENG_name": "Attuning to the Eye"
+			},
+			{
+				"type": "entries",
+				"name": "眼的屬性",
+				"entries": [
+					"與此眼同調時，你的陣營變為中立邪惡，並獲得以下益處：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "真實視覺",
+								"entries": [
+									"你擁有 240 呎的{@sense Truesight|XPHB}。"
+								],
+								"ENG_name": "Truesight"
+							},
+							{
+								"type": "item",
+								"name": "施法",
+								"entries": [
+									"此眼有 8 發充能，每天黎明恢復 {@dice 1d4 + 4} 發已消耗的充能。你可以從此眼施展「{@item Eye of Vecna|XDMG}法術」表中的一道法術（豁免 {@dc 18}）。表中列出施展該法術需消耗的充能數。每次你從此眼施展法術時，有 {@chance 5} 的機率維克那會將你的靈魂從身體中扯出並吞噬，然後像操縱木偶般控制你的身體。若這種情況發生，你會成為受 DM 控制的 NPC。",
+									{
+										"type": "table",
+										"caption": "維克那之眼法術",
+										"colStyles": [
+											"col-10",
+											"col-2 text-center"
+										],
+										"colLabels": [
+											"法術",
+											"充能消耗"
+										],
+										"rows": [
+											[
+												"{@spell Clairvoyance|XPHB}",
+												"2"
+											],
+											[
+												"{@spell Crown of Madness|XPHB}",
+												"1"
+											],
+											[
+												"{@spell Disintegrate|XPHB}",
+												"4"
+											],
+											[
+												"{@spell Dominate Monster|XPHB}",
+												"5"
+											],
+											[
+												"{@spell Eyebite|XPHB}",
+												"4"
+											]
+										]
+									}
+								],
+								"ENG_name": "Spellcasting"
+							},
+							{
+								"type": "item",
+								"name": "透視視覺",
+								"entries": [
+									"你可以執行一個{@action Magic|XPHB}動作，獲得範圍 30 呎、持續 1 分鐘的透視視覺。對你而言，該半徑內的固體物體看起來是透明的，也不會阻擋光線穿過。此視覺可以穿透 1 呎厚的石頭、1 吋厚的普通金屬，或至多 3 呎厚的木頭或泥土。更厚的物質會阻擋視線，薄鉛片也會。"
+								],
+								"ENG_name": "X-ray Vision"
+							}
+						]
+					}
+				],
+				"ENG_name": "Properties of the Eye"
+			},
+			{
+				"type": "entries",
+				"name": "與手同調",
+				"entries": [
+					"要與此手同調，你必須將它按在你左手原本所在的斷肢處。這隻手會嫁接在你的手臂上，成為一隻能正常運作的肢體。若這隻手被取下，你便會死亡。"
+				],
+				"ENG_name": "Attuning to the Hand"
+			},
+			{
+				"type": "entries",
+				"name": "手的屬性",
+				"entries": [
+					"與此手同調時，你的陣營變為中立邪惡，並獲得以下益處：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "巨力",
+								"entries": [
+									"你的力量變為 20，除非它已達 20 或更高。"
+								],
+								"ENG_name": "Great Strength"
+							},
+							{
+								"type": "item",
+								"name": "冰冷之觸",
+								"entries": [
+									"你以此手進行的任何近戰法術攻擊，以及以它所持武器進行的任何近戰攻擊，命中時額外造成 {@damage 2d8} 寒冷傷害。"
+								],
+								"ENG_name": "Icy Touch"
+							},
+							{
+								"type": "item",
+								"name": "施法",
+								"entries": [
+									"此手有 8 發充能，每天黎明恢復 {@dice 1d4 + 4} 發已消耗的充能。你可以從此手施展「{@item Hand of Vecna|XDMG}法術」表中的一道法術（豁免 {@dc 18}）。表中列出施展該法術需消耗的充能數。每次你從它施展法術時，這隻手會對你施展{@spell Suggestion|XPHB}（豁免 {@dc 18}；無需{@status Concentration|XPHB}），要求你做出一件邪惡的行為。這隻手可能心中已有特定的行為，也可能交由你決定。",
+									{
+										"type": "table",
+										"caption": "維克那之手法術",
+										"colStyles": [
+											"col-10",
+											"col-2 text-center"
+										],
+										"colLabels": [
+											"法術",
+											"充能消耗"
+										],
+										"rows": [
+											[
+												"{@spell Finger of Death|XPHB}",
+												"5"
+											],
+											[
+												"{@spell Sleep|XPHB}",
+												"1"
+											],
+											[
+												"{@spell Slow|XPHB}",
+												"2"
+											],
+											[
+												"{@spell Teleport|XPHB}",
+												"3"
+											]
+										]
+									}
+								],
+								"ENG_name": "Spellcasting"
+							}
+						]
+					}
+				],
+				"ENG_name": "Properties of the Hand"
+			},
+			{
+				"type": "entries",
+				"name": "眼與手的屬性",
+				"entries": [
+					"同時與手和眼同調時，你獲得以下額外益處：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "險境感知",
+								"entries": [
+									"你的{@variantrule Initiative|XPHB}擲骰具有{@variantrule Advantage|XPHB}。"
+								],
+								"ENG_name": "Danger Sense"
+							},
+							{
+								"type": "item",
+								"name": "黯蝕消解",
+								"entries": [
+									"作為一個{@action Magic|XPHB}動作，你可以以你 5 呎內一個你能看見的生物為目標。目標進行一次 {@dc 18} 體質豁免檢定，失敗時受到 {@damage 7d6} 黯蝕傷害，成功時傷害減半。被此傷害使{@variantrule Hit Points|XPHB}降至 0 的生物會化為覆蓋其空間地面的{@hazard green slime|XDMG|綠史萊姆}（見第 3 章），每 5 呎見方的史萊姆代表一塊獨立的區塊。目標穿戴或攜帶、由金屬或有機材料製成的非魔法物體會被史萊姆摧毀。"
+								],
+								"ENG_name": "Necrotic Reduction"
+							},
+							{
+								"type": "item",
+								"name": "毒素免疫",
+								"entries": [
+									"你對毒素傷害與{@condition Poisoned|XPHB}狀態具有{@variantrule Immunity|XPHB}。"
+								],
+								"ENG_name": "Poison Immunity"
+							},
+							{
+								"type": "item",
+								"name": "再生",
+								"entries": [
+									"若你在回合開始時至少有 1 點{@variantrule Hit Points|XPHB|生命值}，你恢復 {@dice 1d10} {@variantrule Hit Points|XPHB}。"
+								],
+								"ENG_name": "Regeneration"
+							},
+							{
+								"type": "item",
+								"name": "祈願術",
+								"entries": [
+									"你可以施展{@spell Wish|XPHB}。此屬性使用後，必須經過 30 天才能再次使用。"
+								],
+								"ENG_name": "Wish"
+							}
+						]
+					}
+				],
+				"ENG_name": "Properties of the Eye and Hand"
+			},
+			{
+				"type": "entries",
+				"name": "摧毀眼與手",
+				"entries": [
+					"若{@item Eye of Vecna|XDMG}與{@item Hand of Vecna|XDMG}都附著在同一個生物身上，而該生物被{@item Sword of Kas|XDMG}殺死，眼與手都會燃起火焰、化為灰燼並被摧毀。任何其他摧毀眼或手的嘗試看似有效，但神器會重新出現在維克那眾多隱藏寶庫的其中之一，等待被再次發現。"
+				],
+				"ENG_name": "Destroying the Eye and Hand"
+			}
+		],
+		"items": [
+			"Eye of Vecna|XDMG",
+			"Hand of Vecna|XDMG"
+		],
+		"itemsHidden": true,
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"crown of madness|xphb",
+					"sleep|xphb"
+				],
+				"2": [
+					"clairvoyance|xphb",
+					"slow|xphb"
+				],
+				"3": [
+					"teleport|xphb"
+				],
+				"4": [
+					"disintegrate|xphb",
+					"eyebite|xphb"
+				],
+				"5": [
+					"dominate monster|xphb",
+					"finger of death|xphb"
+				]
+			},
+			"other": [
+				"wish|xphb"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Eye and Hand of Vecna"
+	},
+	"Figurine of Wondrous Power|XDMG": {
+		"name": "異能塑像",
+		"source": "XDMG",
+		"page": 261,
+		"srd52": true,
+		"basicRules2024": true,
+		"rarity": "varies",
+		"wondrous": true,
+		"items": [
+			"Figurine of Wondrous Power, Bronze Griffon|XDMG",
+			"Figurine of Wondrous Power, Ebony Fly|XDMG",
+			"Figurine of Wondrous Power, Golden Lions|XDMG",
+			"Figurine of Wondrous Power, Ivory Goats|XDMG",
+			"Figurine of Wondrous Power, Marble Elephant|XDMG",
+			"Figurine of Wondrous Power, Obsidian Steed|XDMG",
+			"Figurine of Wondrous Power, Onyx Dog|XDMG",
+			"Figurine of Wondrous Power, Serpentine Owl|XDMG",
+			"Figurine of Wondrous Power, Silver Raven|XDMG"
+		],
+		"ENG_name": "Figurine of Wondrous Power"
+	},
+	"Gaming Set|XPHB": {
+		"name": "遊戲套組",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "GS|XPHB",
+		"rarity": "none",
+		"items": [
+			"Dice Set|XPHB",
+			"Dragonchess Set|XPHB",
+			"Playing Cards|XPHB",
+			"Three-Dragon Ante Set|XPHB"
+		],
+		"ENG_name": "Gaming Set"
+	},
+	"Holy Symbol|XPHB": {
+		"name": "聖徽",
+		"source": "XPHB",
+		"page": 226,
+		"referenceSources": [
+			"DrDe-ACfaS"
+		],
+		"type": "SCF|XPHB",
+		"scfType": "holy",
+		"rarity": "none",
+		"focus": [
+			"Cleric",
+			"Paladin"
+		],
+		"items": [
+			"Amulet|XPHB",
+			"Emblem|XPHB",
+			"Reliquary|XPHB"
+		],
+		"ENG_name": "Holy Symbol"
+	},
+	"Horn of Valhalla|XDMG": {
+		"name": "瓦爾哈拉號角",
+		"source": "XDMG",
+		"page": 270,
+		"srd52": true,
+		"basicRules2024": true,
+		"rarity": "varies",
+		"wondrous": true,
+		"entries": [
+			"你可以執行一個{@action Magic|XPHB}動作吹響此號角。作為回應，來自伊斯嘉德位面的戰士之靈會出現在你 60 呎內的未被佔據空間中。每個戰士之靈使用{@creature Berserker|XMM}的數據資料，並在 1 小時後或其{@variantrule Hit Points|XPHB}降至 0 時返回伊斯嘉德。戰士之靈看起來像是活生生、有呼吸的戰士，並對{@condition Charmed|XPHB}與{@condition Frightened|XPHB}狀態具有{@variantrule Immunity|XPHB}。使用號角後，必須經過 7 天才能再次使用。",
+			"已知的瓦爾哈拉號角有四種，各以不同的金屬製成。號角的種類決定它能召喚多少戰士之靈，以及使用它的要求。DM 選擇號角的種類，或在下表隨機擲骰決定。若你在未符合要求的情況下吹響號角，被召喚的戰士之靈會攻擊你。",
+			"若你符合要求，他們會對你和你的盟友{@variantrule Friendly [Attitude]|XPHB|友善}，並聽從你的命令。",
+			{
+				"type": "table",
+				"colStyles": [
+					"col-2 text-center",
+					"col-2 text-center",
+					"col-2 text-center",
+					"col-6"
+				],
+				"colLabels": [
+					"1d100",
+					"號角種類",
+					"戰士之靈",
+					"要求"
+				],
+				"rows": [
+					[
+						"01-40",
+						"{@item Horn of Valhalla, Silver|XDMG|Silver}",
+						"2",
+						"無"
+					],
+					[
+						"41-75",
+						"{@item Horn of Valhalla, Brass|XDMG|Brass}",
+						"3",
+						"所有簡易武器的{@variantrule Proficiency|XPHB|熟練}"
+					],
+					[
+						"76-90",
+						"{@item Horn of Valhalla, Bronze|XDMG|Bronze}",
+						"4",
+						"所有中甲的訓練"
+					],
+					[
+						"91-00",
+						"{@item Horn of Valhalla, Iron|XDMG|Iron}",
+						"5",
+						"所有軍用武器的{@variantrule Proficiency|XPHB|熟練}"
+					]
+				]
+			}
+		],
+		"items": [
+			"Horn of Valhalla, Brass|XDMG",
+			"Horn of Valhalla, Bronze|XDMG",
+			"Horn of Valhalla, Iron|XDMG",
+			"Horn of Valhalla, Silver|XDMG"
+		],
+		"itemsHidden": true,
+		"hasFluffImages": true,
+		"ENG_name": "Horn of Valhalla"
+	},
+	"Instrument of the Bards|XDMG": {
+		"name": "吟遊詩人樂器",
+		"source": "XDMG",
+		"page": 272,
+		"rarity": "varies",
+		"reqAttune": "by a bard",
+		"reqAttuneTags": [
+			{
+				"class": "bard"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"吟遊詩人樂器在各方面都優於普通樂器。這類樂器共有七種，各以一個吟遊詩人學院命名。未與樂器同調而嘗試演奏它的生物，必須通過一次 {@dc 15} 感知豁免檢定，否則受到 {@damage 2d4} 心靈傷害。",
+			"你可以演奏樂器來施展其法術之一。一旦樂器被用來施展某道法術，直到下一個黎明前都無法再用它施展該法術。這些法術使用你的施法屬性與法術豁免 DC。",
+			"所有吟遊詩人樂器都可以用來施展下列法術：{@spell Fly|XPHB}、{@spell Invisibility|XPHB}、{@spell Levitate|XPHB}、{@spell Protection from Evil and Good|XPHB}"
+		],
+		"items": [
+			"Instrument of the Bards, Anstruth Harp|XDMG",
+			"Instrument of the Bards, Canaith Mandolin|XDMG",
+			"Instrument of the Bards, Cli Lyre|XDMG",
+			"Instrument of the Bards, Doss Lute|XDMG",
+			"Instrument of the Bards, Fochlucan Bandore|XDMG",
+			"Instrument of the Bards, Mac-Fuirmidh Cittern|XDMG",
+			"Instrument of the Bards, Ollamh Harp|XDMG"
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"fly|xphb",
+					"invisibility|xphb",
+					"levitate|xphb",
+					"protection from evil and good|xphb"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Instrument of the Bards"
+	},
+	"Ioun Stone|XDMG": {
+		"name": "艾恩石",
+		"source": "XDMG",
+		"page": 273,
+		"srd52": true,
+		"basicRules2024": true,
+		"rarity": "varies",
+		"reqAttune": true,
+		"wondrous": true,
+		"hasRefs": true,
+		"entries": [
+			"{#itemEntry Ioun Stone|XDMG}",
+			"石頭的種類決定其稀有度與效果。"
+		],
+		"items": [
+			"Ioun Stone, Absorption|XDMG",
+			"Ioun Stone, Agility|XDMG",
+			"Ioun Stone, Awareness|XDMG",
+			"Ioun Stone, Fortitude|XDMG",
+			"Ioun Stone, Greater Absorption|XDMG",
+			"Ioun Stone, Insight|XDMG",
+			"Ioun Stone, Intellect|XDMG",
+			"Ioun Stone, Leadership|XDMG",
+			"Ioun Stone, Mastery|XDMG",
+			"Ioun Stone, Protection|XDMG",
+			"Ioun Stone, Regeneration|XDMG",
+			"Ioun Stone, Reserve|XDMG",
+			"Ioun Stone, Strength|XDMG",
+			"Ioun Stone, Sustenance|XDMG"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Ioun Stone"
+	},
+	"Manual of Golems|XDMG": {
+		"name": "魔像手冊",
+		"source": "XDMG",
+		"page": 277,
+		"srd52": true,
+		"basicRules2024": true,
+		"rarity": "very rare",
+		"wondrous": true,
+		"weight": 5,
+		"entries": [
+			"這本巨著包含製作某種特定魔像所需的資訊與咒語。要解讀並使用此手冊，你必須是至少擁有兩個 5 環法術欄位的施法者。無法使用魔像手冊的生物若試圖閱讀它，會受到 {@damage 6d6} 心靈傷害。",
+			{
+				"type": "table",
+				"colStyles": [
+					"col-2 text-center",
+					"col-4",
+					"col-3 text-center",
+					"col-3 text-right"
+				],
+				"colLabels": [
+					"d20",
+					"魔像",
+					"時間",
+					"花費"
+				],
+				"rows": [
+					[
+						"1-5",
+						"{@item Manual of Clay Golems|XDMG}",
+						"30 天",
+						"65,000 GP"
+					],
+					[
+						"6-17",
+						"{@item Manual of Flesh Golems|XDMG}",
+						"60 天",
+						"50,000 GP"
+					],
+					[
+						"18",
+						"{@item Manual of Iron Golems|XDMG}",
+						"120 天",
+						"100,000 GP"
+					],
+					[
+						"19-20",
+						"{@item Manual of Stone Golems|XDMG}",
+						"90 天",
+						"80,000 GP"
+					]
+				]
+			},
+			"要製作一個魔像，你必須花費表中所示的時間，手邊帶著手冊不間斷地工作，且每天休息不超過 8 小時。你還必須支付指定的花費購買材料。",
+			"完成魔像後，此書會在異界火焰中焚毀。將手冊的灰燼灑在魔像身上時，魔像便會活化。它受你控制，並能理解且服從你口頭下達的命令。"
+		],
+		"items": [
+			"Manual of Clay Golems|XDMG",
+			"Manual of Flesh Golems|XDMG",
+			"Manual of Iron Golems|XDMG",
+			"Manual of Stone Golems|XDMG"
+		],
+		"itemsHidden": true,
+		"hasFluffImages": true,
+		"ENG_name": "Manual of Golems"
+	},
+	"Musical Instrument|XPHB": {
+		"name": "樂器",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "INS|XPHB",
+		"rarity": "none",
+		"items": [
+			"Bagpipes|XPHB",
+			"Drum|XPHB",
+			"Dulcimer|XPHB",
+			"Flute|XPHB",
+			"Horn|XPHB",
+			"Lute|XPHB",
+			"Lyre|XPHB",
+			"Pan Flute|XPHB",
+			"Shawm|XPHB",
+			"Viol|XPHB"
+		],
+		"ENG_name": "Musical Instrument"
+	},
+	"Potion of Giant Strength|XDMG": {
+		"name": "巨人之力藥水",
+		"source": "XDMG",
+		"page": 288,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-DaS"
+		],
+		"type": "P|XPHB",
+		"rarity": "varies",
+		"weight": 0.5,
+		"items": [
+			"Potion of Hill Giant Strength|XDMG",
+			"Potion of Frost Giant Strength|XDMG",
+			"Potion of Stone Giant Strength|XDMG",
+			"Potion of Fire Giant Strength|XDMG",
+			"Potion of Cloud Giant Strength|XDMG",
+			"Potion of Storm Giant Strength|XDMG"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potion of Giant Strength"
+	},
+	"Potion of Resistance|XDMG": {
+		"name": "抗性藥水",
+		"source": "XDMG",
+		"page": 289,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "P|XPHB",
+		"rarity": "uncommon",
+		"weight": 0.5,
+		"entries": [
+			"喝下這瓶藥水時，你在 1 小時內對一種傷害類型具有{@variantrule Resistance|XPHB}。類型由 DM 選擇，或在下表隨機擲骰決定。",
+			{
+				"type": "table",
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"colLabels": [
+					"d10",
+					"傷害類型"
+				],
+				"rows": [
+					[
+						"1",
+						"{@item Potion of Acid Resistance|XDMG|Acid}"
+					],
+					[
+						"2",
+						"{@item Potion of Cold Resistance|XDMG|Cold}"
+					],
+					[
+						"3",
+						"{@item Potion of Fire Resistance|XDMG|Fire}"
+					],
+					[
+						"4",
+						"{@item Potion of Force Resistance|XDMG|Force}"
+					],
+					[
+						"5",
+						"{@item Potion of Lightning Resistance|XDMG|Lightning}"
+					],
+					[
+						"6",
+						"{@item Potion of Necrotic Resistance|XDMG|Necrotic}"
+					],
+					[
+						"7",
+						"{@item Potion of Poison Resistance|XDMG|Poison}"
+					],
+					[
+						"8",
+						"{@item Potion of Psychic Resistance|XDMG|Psychic}"
+					],
+					[
+						"9",
+						"{@item Potion of Radiant Resistance|XDMG|Radiant}"
+					],
+					[
+						"10",
+						"{@item Potion of Thunder Resistance|XDMG|Thunder}"
+					]
+				]
+			}
+		],
+		"items": [
+			"Potion of Acid Resistance|XDMG",
+			"Potion of Cold Resistance|XDMG",
+			"Potion of Fire Resistance|XDMG",
+			"Potion of Force Resistance|XDMG",
+			"Potion of Lightning Resistance|XDMG",
+			"Potion of Necrotic Resistance|XDMG",
+			"Potion of Poison Resistance|XDMG",
+			"Potion of Psychic Resistance|XDMG",
+			"Potion of Radiant Resistance|XDMG",
+			"Potion of Thunder Resistance|XDMG"
+		],
+		"itemsHidden": true,
+		"lootTables": [
+			"Arcana - Uncommon|XDMG",
+			"Relics - Uncommon|XDMG"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potion of Resistance"
+	},
+	"Potions of Healing|XDMG": {
+		"name": "治療藥水",
+		"source": "XDMG",
+		"page": 288,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "P|XPHB",
+		"rarity": "varies",
+		"weight": 0.5,
+		"items": [
+			"Potion of Healing|XDMG",
+			"Potion of Greater Healing|XDMG",
+			"Potion of Superior Healing|XDMG",
+			"Potion of Supreme Healing|XDMG"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potions of Healing"
+	},
+	"Quaal's Feather Token|XDMG": {
+		"name": "誇爾的羽毛符記",
+		"source": "XDMG",
+		"page": 290,
+		"srd52": true,
+		"basicRules2024": true,
+		"rarity": "varies",
+		"wondrous": true,
+		"entries": [
+			"此物體看起來像一根羽毛。羽毛符記有不同種類，各有不同的一次性效果。DM 選擇符記的種類，或在「誇爾的羽毛符記」表上隨機擲骰決定。符記的種類決定其稀有度。",
+			{
+				"type": "table",
+				"caption": "誇爾的羽毛符記",
+				"colStyles": [
+					"col-2 text-center",
+					"col-5 text-center",
+					"col-5 text-center"
+				],
+				"colLabels": [
+					"1d100",
+					"符記",
+					"稀有度"
+				],
+				"rows": [
+					[
+						"01-20",
+						"{@item Quaal's Feather Token, Anchor|XDMG|Anchor}",
+						"非普通"
+					],
+					[
+						"21-35",
+						"{@item Quaal's Feather Token, Bird|XDMG|Bird}",
+						"珍稀"
+					],
+					[
+						"36-50",
+						"{@item Quaal's Feather Token, Fan|XDMG|Fan}",
+						"非普通"
+					],
+					[
+						"51-65",
+						"{@item Quaal's Feather Token, Swan boat|XDMG|Swan Boat}",
+						"珍稀"
+					],
+					[
+						"66-90",
+						"{@item Quaal's Feather Token, Tree|XDMG|Tree}",
+						"非普通"
+					],
+					[
+						"91-00",
+						"{@item Quaal's Feather Token, Whip|XDMG|Whip}",
+						"珍稀"
+					]
+				]
+			}
+		],
+		"items": [
+			"Quaal's Feather Token, Anchor|XDMG",
+			"Quaal's Feather Token, Bird|XDMG",
+			"Quaal's Feather Token, Fan|XDMG",
+			"Quaal's Feather Token, Swan Boat|XDMG",
+			"Quaal's Feather Token, Tree|XDMG",
+			"Quaal's Feather Token, Whip|XDMG"
+		],
+		"itemsHidden": true,
+		"hasFluffImages": true,
+		"ENG_name": "Quaal's Feather Token"
+	},
+	"Ring of Elemental Command|XDMG": {
+		"name": "元素指揮戒指",
+		"source": "XDMG",
+		"page": 292,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "RG|XDMG",
+		"rarity": "legendary",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d4 + 1}",
+		"charges": 5,
+		"items": [
+			"Ring of Elemental Command (Air)|XDMG",
+			"Ring of Elemental Command (Earth)|XDMG",
+			"Ring of Elemental Command (Fire)|XDMG",
+			"Ring of Elemental Command (Water)|XDMG"
+		],
+		"ENG_name": "Ring of Elemental Command"
+	},
+	"Ring of Resistance|XDMG": {
+		"name": "抗性戒指",
+		"source": "XDMG",
+		"page": 294,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "RG|XDMG",
+		"rarity": "rare",
+		"entries": [
+			"戴著此戒指時，你對一種傷害類型具有{@variantrule Resistance|XPHB}。戒指上的寶石代表其類型，由 DM 選擇或在下表隨機擲骰決定。",
+			{
+				"type": "table",
+				"colStyles": [
+					"col-2 text-center",
+					"col-5",
+					"col-5"
+				],
+				"colLabels": [
+					"d10",
+					"傷害類型",
+					"寶石"
+				],
+				"rows": [
+					[
+						"1",
+						"{@item Ring of Acid Resistance|XDMG|Acid}",
+						"珍珠"
+					],
+					[
+						"2",
+						"{@item Ring of Cold Resistance|XDMG|Cold}",
+						"碧璽"
+					],
+					[
+						"3",
+						"{@item Ring of Fire Resistance|XDMG|Fire}",
+						"石榴石"
+					],
+					[
+						"4",
+						"{@item Ring of Force Resistance|XDMG|Force}",
+						"藍寶石"
+					],
+					[
+						"5",
+						"{@item Ring of Lightning Resistance|XDMG|Lightning}",
+						"黃水晶"
+					],
+					[
+						"6",
+						"{@item Ring of Necrotic Resistance|XDMG|Necrotic}",
+						"煤玉"
+					],
+					[
+						"7",
+						"{@item Ring of Poison Resistance|XDMG|Poison}",
+						"紫晶"
+					],
+					[
+						"8",
+						"{@item Ring of Psychic Resistance|XDMG|Psychic}",
+						"翡翠"
+					],
+					[
+						"9",
+						"{@item Ring of Radiant Resistance|XDMG|Radiant}",
+						"黃玉"
+					],
+					[
+						"10",
+						"{@item Ring of Thunder Resistance|XDMG|Thunder}",
+						"尖晶石"
+					]
+				]
+			}
+		],
+		"items": [
+			"Ring of Acid Resistance|XDMG",
+			"Ring of Cold Resistance|XDMG",
+			"Ring of Fire Resistance|XDMG",
+			"Ring of Force Resistance|XDMG",
+			"Ring of Lightning Resistance|XDMG",
+			"Ring of Necrotic Resistance|XDMG",
+			"Ring of Poison Resistance|XDMG",
+			"Ring of Psychic Resistance|XDMG",
+			"Ring of Radiant Resistance|XDMG",
+			"Ring of Thunder Resistance|XDMG"
+		],
+		"itemsHidden": true,
+		"lootTables": [
+			"Relics - Rare|XDMG"
+		],
+		"ENG_name": "Ring of Resistance"
+	},
+	"Rod of the Pact Keeper|XDMG": {
+		"name": "掌契者權杖",
+		"source": "XDMG",
+		"page": 301,
+		"type": "RD|XDMG",
+		"rarity": "varies",
+		"reqAttune": "by a warlock",
+		"reqAttuneTags": [
+			{
+				"class": "warlock"
+			}
+		],
+		"weight": 2,
+		"items": [
+			"+1 Rod of the Pact Keeper|XDMG",
+			"+2 Rod of the Pact Keeper|XDMG",
+			"+3 Rod of the Pact Keeper|XDMG"
+		],
+		"lootTables": [
+			"Arcana - Uncommon|XDMG"
+		],
+		"ENG_name": "Rod of the Pact Keeper"
+	},
+	"Scroll of Protection|XDMG": {
+		"name": "防護卷軸",
+		"source": "XDMG",
+		"page": 302,
+		"type": "SC|XPHB",
+		"rarity": "rare",
+		"entries": [
+			"每份防護卷軸都針對某一特定類型的生物，類型由 DM 選擇或在下表擲骰決定。",
+			{
+				"type": "table",
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"colLabels": [
+					"1d100",
+					"生物類型"
+				],
+				"rows": [
+					[
+						"01-10",
+						"{@item Scroll of Protection (Aberrations)|XDMG|Aberrations}"
+					],
+					[
+						"11-15",
+						"{@item Scroll of Protection (Beasts)|XDMG|Beasts}"
+					],
+					[
+						"16-20",
+						"{@item Scroll of Protection (Celestials)|XDMG|Celestials}"
+					],
+					[
+						"21-25",
+						"{@item Scroll of Protection (Constructs)|XDMG|Constructs}"
+					],
+					[
+						"26-35",
+						"{@item Scroll of Protection (Dragons)|XDMG|Dragons}"
+					],
+					[
+						"36-45",
+						"{@item Scroll of Protection (Elementals)|XDMG|Elementals}"
+					],
+					[
+						"46-50",
+						"{@item Scroll of Protection (Humanoids)|XDMG|Humanoids}"
+					],
+					[
+						"51-60",
+						"{@item Scroll of Protection (Fey)|XDMG|Fey}"
+					],
+					[
+						"61-70",
+						"{@item Scroll of Protection (Fiends)|XDMG|Fiends}"
+					],
+					[
+						"71-75",
+						"{@item Scroll of Protection (Giants)|XDMG|Giants}"
+					],
+					[
+						"76-80",
+						"{@item Scroll of Protection (Monstrosities)|XDMG|Monstrosities}"
+					],
+					[
+						"81-85",
+						"{@item Scroll of Protection (Oozes)|XDMG|Oozes}"
+					],
+					[
+						"86-90",
+						"{@item Scroll of Protection (Plants)|XDMG|Plants}"
+					],
+					[
+						"91-00",
+						"{@item Scroll of Protection (Undead)|XDMG|Undead}"
+					]
+				]
+			},
+			"使用一個{@action Magic|XPHB}動作閱讀此卷軸，會創造一個從你發出的 5 呎散發範圍。在 5 分鐘內，指定類型的生物無法進入該區域或影響其中的任何東西。然而，若你的移動方式使得一個指定類型的生物會位於區域內，效果便會結束。",
+			"作為一個{@action Magic|XPHB}動作，位於散發範圍 5 呎內的生物可以嘗試突破它，這會迫使該生物進行一次 {@dc 15} 魅力豁免檢定。豁免成功時，該生物不再受到散發範圍的影響。"
+		],
+		"items": [
+			"Scroll of Protection (Aberrations)|XDMG",
+			"Scroll of Protection (Beasts)|XDMG",
+			"Scroll of Protection (Celestials)|XDMG",
+			"Scroll of Protection (Constructs)|XDMG",
+			"Scroll of Protection (Dragons)|XDMG",
+			"Scroll of Protection (Elementals)|XDMG",
+			"Scroll of Protection (Humanoids)|XDMG",
+			"Scroll of Protection (Fey)|XDMG",
+			"Scroll of Protection (Fiends)|XDMG",
+			"Scroll of Protection (Giants)|XDMG",
+			"Scroll of Protection (Monstrosities)|XDMG",
+			"Scroll of Protection (Oozes)|XDMG",
+			"Scroll of Protection (Plants)|XDMG",
+			"Scroll of Protection (Undead)|XDMG"
+		],
+		"itemsHidden": true,
+		"lootTables": [
+			"Arcana - Rare|XDMG",
+			"Relics - Rare|XDMG"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Scroll of Protection"
+	},
+	"Scroll of Titan Summoning|XDMG": {
+		"name": "泰坦召喚卷軸",
+		"source": "XDMG",
+		"page": 303,
+		"type": "SC|XPHB",
+		"rarity": "legendary",
+		"entries": [
+			"當你執行一個{@action Magic|XPHB}動作閱讀此卷軸時，卷軸中指名的特定泰坦會出現在你 1 哩內一處你能看見的地面或水中的未被佔據空間。DM 選擇適合的泰坦，或在下表隨機擲骰決定。",
+			"泰坦對所有其他生物都{@variantrule Hostile [Attitude]|XPHB|敵對}，並在其{@variantrule Hit Points|XPHB}降至 0 時消失。若泰坦被召喚到一個不足以容納牠的空間中，召喚會失敗，卷軸也會被浪費。",
+			{
+				"type": "table",
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"colLabels": [
+					"1d100",
+					"泰坦"
+				],
+				"rows": [
+					[
+						"01-15",
+						"{@item Scroll of Titan Summoning (Animal Lord)|XDMG|Animal Lord}"
+					],
+					[
+						"16-30",
+						"{@item Scroll of Titan Summoning (Blob of Annihilation)|XDMG|Blob of Annihilation}"
+					],
+					[
+						"31-45",
+						"{@item Scroll of Titan Summoning (Colossus)|XDMG|Colossus}"
+					],
+					[
+						"46-60",
+						"{@item Scroll of Titan Summoning (Elemental Cataclysm)|XDMG|Elemental Cataclysm}"
+					],
+					[
+						"61-75",
+						"{@item Scroll of Titan Summoning (Empyrean)|XDMG|Empyrean}"
+					],
+					[
+						"76-90",
+						"{@item Scroll of Titan Summoning (Kraken)|XDMG|克拉肯}（克拉肯需要一片大到足以容納牠的水域，否則召喚失敗，卷軸也會被浪費）"
+					],
+					[
+						"91-100",
+						"{@item Scroll of Titan Summoning (Tarrasque)|XDMG|Tarrasque}"
+					]
+				]
+			}
+		],
+		"items": [
+			"Scroll of Titan Summoning (Animal Lord)|XDMG",
+			"Scroll of Titan Summoning (Blob of Annihilation)|XDMG",
+			"Scroll of Titan Summoning (Colossus)|XDMG",
+			"Scroll of Titan Summoning (Elemental Cataclysm)|XDMG",
+			"Scroll of Titan Summoning (Empyrean)|XDMG",
+			"Scroll of Titan Summoning (Kraken)|XDMG",
+			"Scroll of Titan Summoning (Tarrasque)|XDMG"
+		],
+		"itemsHidden": true,
+		"lootTables": [
+			"Arcana - Legendary|XDMG",
+			"Relics - Legendary|XDMG"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Scroll of Titan Summoning"
+	},
+	"Spell Scroll|XDMG": {
+		"name": "法術卷軸",
+		"source": "XDMG",
+		"page": 305,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-DaS",
+			"DrDe-TWoO",
+			"DrDe-TDoN",
+			"DrDe-ACfaS",
+			"DrDe-DotSC",
+			"FRAiF",
+			"DrDe-BD"
+		],
+		"type": "SC|XPHB",
+		"rarity": "varies",
+		"items": [
+			"Spell Scroll (Cantrip)|XDMG",
+			"Spell Scroll (Level 1)|XDMG",
+			"Spell Scroll (Level 2)|XDMG",
+			"Spell Scroll (Level 3)|XDMG",
+			"Spell Scroll (Level 4)|XDMG",
+			"Spell Scroll (Level 5)|XDMG",
+			"Spell Scroll (Level 6)|XDMG",
+			"Spell Scroll (Level 7)|XDMG",
+			"Spell Scroll (Level 8)|XDMG",
+			"Spell Scroll (Level 9)|XDMG"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Spell Scroll"
+	},
+	"Wand of the War Mage|XDMG": {
+		"name": "戰法師魔杖",
+		"source": "XDMG",
+		"page": 322,
+		"srd52": true,
+		"type": "WD|XDMG",
+		"rarity": "varies",
+		"reqAttune": "by a spellcaster",
+		"reqAttuneTags": [
+			{
+				"spellcasting": true
+			}
+		],
+		"weight": 1,
+		"items": [
+			"+1 Wand of the War Mage|XDMG",
+			"+2 Wand of the War Mage|XDMG",
+			"+3 Wand of the War Mage|XDMG"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Wand of the War Mage"
+	},
+	"Wraps of Unarmed Power|XDMG": {
+		"name": "徒手之力裹布",
+		"source": "XDMG",
+		"page": 325,
+		"rarity": "varies",
+		"wondrous": true,
+		"items": [
+			"+1 Wraps of Unarmed Power|XDMG",
+			"+2 Wraps of Unarmed Power|XDMG",
+			"+3 Wraps of Unarmed Power|XDMG"
+		],
+		"ENG_name": "Wraps of Unarmed Power"
+	}
+}

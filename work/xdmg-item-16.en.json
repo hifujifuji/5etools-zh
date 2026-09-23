@@ -1,0 +1,642 @@
+{
+	"batch": "xdmg-item-16",
+	"items": [
+		{
+			"prop": "item",
+			"key": "Talisman of Ultimate Evil|XDMG",
+			"hint": {
+				"Talisman of Ultimate Evil": "至惡護符",
+				"Holy Symbol": "聖徽"
+			},
+			"s": [
+				"Talisman of Ultimate Evil",
+				"This item symbolizes unrepentant evil. A creature that isn't a Fiend or an Undead that touches the talisman takes {@damage 8d6} Necrotic damage and takes the damage again each time it ends its turn holding or carrying the talisman.",
+				"Holy Symbol",
+				"You can use the talisman as a Holy Symbol. You gain a +2 bonus to spell attack rolls while you wear or hold it.",
+				"Ultimate End",
+				"The talisman has 6 charges. While wearing or holding the talisman, you can take a {@action Magic|XPHB} action to expend 1 charge and target one creature you can see on the ground within 120 feet of yourself. A flaming fissure opens under the target, and the target makes a {@dc 20} Dexterity saving throw. If the target is a Celestial, it has {@variantrule Disadvantage|XPHB} on the save. On a failed save, the target falls into the fissure and is destroyed, leaving no remains. On a successful save, the target isn't cast into the fissure but takes {@damage 4d6} Psychic damage from the ordeal. In either case, the fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman dissolves into foul-smelling slime and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Talking Doll|XDMG",
+			"hint": {
+				"Talking Doll": "說話玩偶"
+			},
+			"s": [
+				"Talking Doll",
+				"While this doll is within 5 feet of you, you can spend a {@variantrule Short Rest|XPHB} telling it to say up to six phrases, none of which can be more than six words long, and set a condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, \"I want a piece of candy.\" The doll's phrases are lost when your {@variantrule Attunement|XPHB} to the doll ends."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Tankard of Sobriety|XDMG",
+			"hint": {
+				"Tankard of Sobriety": "清醒啤酒杯"
+			},
+			"s": [
+				"Tankard of Sobriety",
+				"This tankard has a stern face sculpted into one side. You can drink ale, wine, or any other nonmagical alcoholic beverage poured into it without becoming inebriated. The tankard has no effect on magical liquids or harmful substances such as poison."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Tentacle Rod|XDMG",
+			"hint": {
+				"Tentacle Rod": "觸手權杖"
+			},
+			"s": [
+				"Tentacle Rod",
+				"This rod ends in three rubbery tentacles. While holding the rod, you can take a {@action Magic|XPHB} action to direct the tentacles to stretch outward, each one attacking a creature you can see within 15 feet of yourself. For each tentacle, make a melee attack roll with a +9 bonus. A tentacle deals {@damage 1d6} Psychic damage on a hit. If you hit the same target with all three tentacles, the target must succeed on a {@dc 15} Dexterity saving throw or have the {@condition Restrained|XPHB} condition until you have the {@condition Incapacitated|XPHB} condition, until you take a {@variantrule Bonus Action|XPHB} to release the target, or until the target is no longer within 15 feet of you. While {@condition Restrained|XPHB} in this way, the target takes {@damage 3d6} Psychic damage at the start of each of its turns. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Thunderous Greatclub|XDMG",
+			"hint": {
+				"Earthquake": "地震術"
+			},
+			"s": [
+				"Thunderous Greatclub",
+				"While you are attuned to this magic weapon, your Strength is 20 unless your Strength is already equal to or greater than that score. The weapon deals an extra {@damage 1d8} Thunder damage to any creature it hits and an extra {@damage 3d8} Thunder damage to objects it hits that aren't being worn or carried.",
+				"The weapon has the following additional properties.",
+				"Clap of Thunder",
+				"As a {@action Magic|XPHB} action, you can strike the weapon against a hard surface to create a loud clap of thunder audible out to 300 feet. You also create a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} of thunderous energy. Each creature in the {@variantrule Cone [Area of Effect]|XPHB|Cone} must succeed on a {@dc 15} Strength saving throw or have the {@condition Prone|XPHB} condition. Nonmagical objects in the {@variantrule Cone [Area of Effect]|XPHB|Cone} that aren't being worn or carried take {@damage 3d8} Thunder damage.",
+				"Earthquake",
+				"As a {@action Magic|XPHB} action, you can strike the weapon against the ground to create an intense seismic disturbance in a 50-foot-radius circle centered on the point of impact. Structures in contact with the ground in that area take 50 Bludgeoning damage, and each creature on the ground in that area must succeed on a {@dc 20} Dexterity saving throw or have the {@condition Prone|XPHB} condition. If that creature is also {@status Concentration|XPHB|Concentrating}, it must succeed on a {@dc 20} Constitution saving throw or its {@status Concentration|XPHB} is broken. In addition, you can cause a 30-foot-deep, 10-foot-wide fissure to open up on the ground anywhere in the area. Any creature on a spot where the fissure opens must make a {@dc 20} Dexterity saving throw, falling into the fissure on a failed save or moving with the fissure's edge on a successful one. Any structure on a spot where the fissure opens collapses into the fissure. Once you use this property, it can't be used again until the next dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Tiger Eye|XDMG",
+			"hint": {
+				"Tiger Eye": "虎眼石"
+			},
+			"s": [
+				"Tiger Eye",
+				"A brown with golden center gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Tome of Clear Thought|XDMG",
+			"hint": {
+				"Tome of Clear Thought": "清澈思想卷冊"
+			},
+			"s": [
+				"Tome of Clear Thought",
+				"This book contains memory and logic exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Intelligence increases by 2, to a maximum of 30. The manual then loses its magic, but regains it in a century."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Tome of Leadership and Influence|XDMG",
+			"hint": {
+				"Tome of Leadership and Influence": "統御影響卷冊"
+			},
+			"s": [
+				"Tome of Leadership and Influence",
+				"This book contains guidelines for influencing and charming others, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Charisma increases by 2, to a maximum of 30. The manual then loses its magic, but regains it in a century."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Tome of the Stilled Tongue|XDMG",
+			"hint": {
+				"Tome of the Stilled Tongue": "靜語卷冊"
+			},
+			"s": [
+				"Tome of the Stilled Tongue",
+				"This book has a desiccated tongue pinned to its front cover. Five of these tomes exist, and it's unknown which one is the original. The tongue on the first Tome of the Stilled Tongue belonged to a treacherous former servant of the lich {@book Vecna|XDMG|8|Vecna}. The tongues pinned to the covers of the four copies came from other spellcasters who crossed Vecna. The first few pages of each tome are filled with indecipherable scrawls. The remaining pages are blank.",
+				"While attuned to this item, you can use it as a Spellbook and an Arcane Focus. In addition, while holding the tome, you can take a {@variantrule Bonus Action|XPHB} to cast a spell you have written in this tome, without expending a spell slot or using any Verbal or Somatic components. Once used, this property of the tome can't be used again until the next dawn.",
+				"Only you can remove the tongue from the book's cover. If you do so, all spells written in the book are permanently erased.",
+				"Vecna watches anyone using this tome and can write cryptic messages in it. These messages typically fade away after they are read."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Tome of Understanding|XDMG",
+			"hint": {
+				"Tome of Understanding": "通曉卷冊"
+			},
+			"s": [
+				"Tome of Understanding",
+				"This book contains intuition and insight exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Wisdom increases by 2, to a maximum of 30. The manual then loses its magic, but regains it in a century."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Topaz|XDMG",
+			"hint": {
+				"Topaz": "黃玉"
+			},
+			"s": [
+				"Topaz",
+				"A golden yellow gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Torpor|XDMG",
+			"s": [
+				"Torpor",
+				"A creature subjected to Torpor poison must succeed on a {@dc 15} Constitution saving throw or have the {@condition Poisoned|XPHB} condition for {@dice 4d6} hours. The creature's {@variantrule Speed|XPHB} is halved while the creature is {@condition Poisoned|XPHB} in this way."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Tourmaline|XDMG",
+			"hint": {
+				"Tourmaline": "電氣石"
+			},
+			"s": [
+				"Tourmaline",
+				"A pale green, blue, brown, or red gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Trident of Fish Command|XDMG",
+			"hint": {
+				"Trident of Fish Command": "命令魚類三叉戟"
+			},
+			"s": [
+				"Trident of Fish Command",
+				"This magic weapon has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. While you carry it, you can expend 1 charge to cast {@spell Dominate Beast|XPHB} (save {@dc 15}) from it on a Beast that has a {@variantrule Swim Speed|XPHB}."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Truth Serum|XDMG",
+			"s": [
+				"Truth Serum",
+				"A creature subjected to Truth Serum must succeed on a {@dc 11} Constitution saving throw or have the {@condition Poisoned|XPHB} condition for 1 hour. The {@condition Poisoned|XPHB} creature can't knowingly communicate a lie."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Turquoise|XDMG",
+			"hint": {
+				"Turquoise": "綠松石"
+			},
+			"s": [
+				"Turquoise",
+				"A light blue green gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Universal Solvent|XDMG",
+			"hint": {
+				"Universal Solvent": "萬溶劑"
+			},
+			"s": [
+				"Universal Solvent",
+				"This tube holds milky liquid with a strong alcohol smell. When found, a tube contains {@dice 1d6 + 1} ounces.",
+				"You can take a {@action Utilize|XPHB} action to pour 1 or more ounces of solvent from the tube onto a surface within reach. Each ounce instantly dissolves up to 1 square foot of adhesive it touches, including Sovereign Glue."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Veteran's Cane|XDMG",
+			"hint": {
+				"Veteran's Cane": "老兵手杖"
+			},
+			"s": [
+				"Veteran's Cane",
+				"As a {@variantrule Bonus Action|XPHB}, you can transform this walking cane into an ordinary Longsword or change the Longsword back into a walking cane. In either case, you must be holding the item."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Binding|XDMG",
+			"hint": {
+				"Wand of Binding": "定身魔杖",
+				"Spells": "法術",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Binding",
+				"This wand has 7 charges.",
+				"Spells",
+				"While holding the wand, you can cast one of the spells (save {@dc 17}) on the following table from it. The table indicates how many charges you must expend to cast the spell.",
+				"Spell",
+				"Charge Cost",
+				"Regaining Charges",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand crumbles into ashes and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Conducting|XDMG",
+			"hint": {
+				"Wand of Conducting": "指揮魔杖",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Conducting",
+				"This wand has 3 charges. While holding it, you can take a {@action Magic|XPHB} action to expend 1 charge and create orchestral music by waving it around. The music can be heard out to 120 feet and ends when you stop waving the wand.",
+				"Regaining Charges",
+				"The wand regains all expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, a sad tuba sound plays as the wand crumbles into dust and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Enemy Detection|XDMG",
+			"hint": {
+				"Wand of Enemy Detection": "搜敵魔杖",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Enemy Detection",
+				"This wand has 7 charges. While holding it, you can take a {@action Magic|XPHB} action to expend 1 charge. For 1 minute, you know the direction of the nearest creature {@variantrule Hostile [Attitude]|XPHB|Hostile} to you within 60 feet, but not its distance from you. The wand can sense the presence of {@variantrule Hostile [Attitude]|XPHB|Hostile} creatures that are {@condition Invisible|XPHB}, ethereal, disguised, or hidden, as well as those in plain sight. The effect ends if you stop holding the wand.",
+				"Regaining Charges",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand crumbles into ashes and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Fear|XDMG",
+			"hint": {
+				"Wand of Fear": "恐懼魔杖",
+				"Spells": "法術",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Fear",
+				"This wand has 7 charges.",
+				"Spells",
+				"While holding the wand, you can cast one of the spells (save {@dc 15}) on the following table from it. The table indicates how many charges you must expend to cast the spell.",
+				"Spell",
+				"Charge Cost",
+				"{@spell Command|XPHB} (\"flee\" or \"grovel\" only)",
+				"{@spell Fear|XPHB} (60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone})",
+				"Regaining Charges",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand crumbles into ashes and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Fireballs|XDMG",
+			"hint": {
+				"Wand of Fireballs": "火球魔杖",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Fireballs",
+				"This wand has 7 charges. While holding it, you can expend no more than 3 charges to cast {@spell Fireball|XPHB} (save {@dc 15}) from it. For 1 charge, you cast the level 3 version of the spell. You can increase the spell's level by 1 for each additional charge you expend.",
+				"Regaining Charges",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand crumbles into ashes and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Lightning Bolts|XDMG",
+			"hint": {
+				"Wand of Lightning Bolts": "閃電束魔杖",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Lightning Bolts",
+				"This wand has 7 charges. While holding it, you can expend no more than 3 charges to cast {@spell Lightning Bolt|XPHB} (save {@dc 15}) from it. For 1 charge, you cast the level 3 version of the spell. You can increase the spell's level by 1 for each additional charge you expend.",
+				"Regaining Charges",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand crumbles into ashes and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Magic Detection|XDMG",
+			"hint": {
+				"Wand of Magic Detection": "偵測魔法魔杖"
+			},
+			"s": [
+				"Wand of Magic Detection",
+				"This wand has 3 charges. While holding it, you can expend 1 charge to cast {@spell Detect Magic|XPHB} from it. The wand regains {@dice 1d3} expended charges daily at dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Magic Missiles|XDMG",
+			"hint": {
+				"Wand of Magic Missiles": "魔法飛彈魔杖",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Magic Missiles",
+				"This wand has 7 charges. While holding it, you can expend no more than 3 charges to cast {@spell Magic Missile|XPHB} from it. For 1 charge, you cast the level 1 version of the spell. You can increase the spell's level by 1 for each additional charge you expend.",
+				"Regaining Charges",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand crumbles into ashes and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Orcus|XDMG",
+			"hint": {
+				"Magic Weapon": "魔法武器",
+				"Random Properties": "隨機屬性",
+				"Protection": "守護",
+				"Spells": "法術",
+				"Sentience": "感知力",
+				"Personality": "個性"
+			},
+			"s": [
+				"Wand of Orcus",
+				"Crafted and wielded by {@creature Orcus|MPMM}, this ghastly wand slips from the demon lord's grasp from time to time. When it does, it magically appears wherever the demon lord senses an opportunity to achieve some fell goal.",
+				"The wand is topped with a skull that once belonged to a human hero slain by Orcus. The wand can magically change in size to better conform to the grip of its user. All Holy Water within 10 feet of the wand is destroyed.",
+				"Any creature besides Orcus that tries to attune to the wand makes a {@dc 17} Constitution saving throw. On a successful save, the creature takes {@damage 10d6} Necrotic damage. On a failed save, the creature dies and, if it is a Humanoid, turns into a {@creature Zombie|XMM}.",
+				"Magic Weapon",
+				"You can wield the wand as a magic {@item Mace|XPHB} that grants a +3 bonus to attack rolls and damage rolls made with it. The wand deals an extra {@damage 2d12} Necrotic damage on a hit.",
+				"Random Properties",
+				"The Wand of Orcus has the following random properties:",
+				"2 {@table Artifact Properties; Minor Beneficial Properties|XDMG|minor beneficial} properties",
+				"1 {@table Artifact Properties; Major Beneficial Properties|XDMG|major beneficial} property",
+				"2 {@table Artifact Properties; Minor Detrimental Properties|XDMG|minor detrimental} properties",
+				"1 {@table Artifact Properties; Major Detrimental Properties|XDMG|major detrimental} property",
+				"The detrimental properties of the Wand of Orcus are suppressed while the wand is attuned to Orcus.",
+				"Protection",
+				"You gain a +3 bonus to {@variantrule Armor Class|XPHB} while holding the wand.",
+				"Spells",
+				"The wand has 7 charges and regains {@dice 1d4 + 3} expended charges daily at dawn. While holding the wand, you can cast one of the spells on the following table from it (save {@dc 18}). The table indicates how many charges you must expend to cast the spell.",
+				"Spell",
+				"Charge Cost",
+				"While attuned to the wand, Orcus or a follower blessed by him can cast each of the wand's spells using 2 fewer charges (minimum of 0).",
+				"Call Undead",
+				"While holding the wand, you can take a {@action Magic|XPHB} action to conjure 15 {@creature Skeleton|XMM|Skeletons} and 15 {@creature Zombie|XMM|Zombies}. These Undead magically rise up from the ground or otherwise form in unoccupied spaces within 300 feet of you and obey your commands until they are destroyed or until the next dawn, when they collapse into inanimate piles of bones and rotting corpses. Once you use this property, you can't use it again until the next dawn.",
+				"While holding the wand, Orcus can summon any kind of Undead, not just skeletons and zombies. These Undead don't perish at dawn the following day, remaining until Orcus dismisses them.",
+				"Sentience",
+				"The Wand of Orcus is a sentient Chaotic Evil item with an Intelligence of 16, a Wisdom of 12, and a Charisma of 16. It has hearing and {@sense Darkvision|XPHB} out to 120 feet.",
+				"The wand communicates telepathically with its wielder and speaks Abyssal and Common.",
+				"Personality",
+				"The wand's purpose is to help satisfy Orcus's desire to slay everything in the multiverse. The wand is cruel, nihilistic, and bereft of humor.",
+				"To further Orcus's goals, the wand feigns devotion to its current user and makes grandiose promises that it has no intention of fulfilling, such as vowing to help its user overthrow Orcus.",
+				"Destroying the Wand",
+				"Destroying the Wand of Orcus requires that it be taken to the Positive Energy Plane by the ancient hero whose skull surmounts it. For this to happen, the long-lost hero must first be restored to life—no easy task, given the fact that Orcus has imprisoned the hero's soul and keeps it hidden and well guarded.",
+				"Bathing the wand in positive energy (such as that which permeates the Positive Plane) causes it to crack and explode, but unless the above conditions are met, the wand instantly re-forms on Orcus's layer of the Abyss."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Paralysis|XDMG",
+			"hint": {
+				"Wand of Paralysis": "麻痺魔杖",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Paralysis",
+				"This wand has 7 charges. While holding it, you can take a {@action Magic|XPHB} action to expend 1 charge to cause a thin blue ray to streak from the tip toward a creature you can see within 60 feet of yourself. The target must succeed on a {@dc 15} Constitution saving throw or have the {@condition Paralyzed|XPHB} condition for 1 minute. At the end of each of the target's turns, it repeats the save, ending the effect on itself on a success.",
+				"Regaining Charges",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand crumbles into ashes and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Polymorph|XDMG",
+			"hint": {
+				"Wand of Polymorph": "變形魔杖",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Polymorph",
+				"This wand has 7 charges. While holding it, you can expend 1 charge to cast {@spell Polymorph|XPHB} (save {@dc 15}) from it.",
+				"Regaining Charges",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand crumbles into ashes and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Pyrotechnics|XDMG",
+			"hint": {
+				"Wand of Pyrotechnics": "煙火魔杖",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Pyrotechnics",
+				"This wand has 7 charges. While holding it, you can take a {@action Magic|XPHB} action to expend 1 charge and create a harmless burst of multicolored light at a point you can see up to 120 feet away. The burst of light is accompanied by a crackling noise that can be heard up to 300 feet away. The light is as bright as a torch flame but lasts only a second.",
+				"Regaining Charges",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand erupts in a harmless pyrotechnic display and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Secrets|XDMG",
+			"hint": {
+				"Wand of Secrets": "探秘魔杖"
+			},
+			"s": [
+				"Wand of Secrets",
+				"This wand has 3 charges and regains {@dice 1d3} expended charges daily at dawn. While holding it, you can take a {@action Magic|XPHB} action to expend 1 charge, and if a secret door or trap is within 60 feet of you, the wand pulses and points at the one nearest to you."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Web|XDMG",
+			"hint": {
+				"Wand of Web": "蛛網魔杖",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Web",
+				"This wand has 7 charges. While holding it, you can expend 1 charge to cast {@spell Web|XPHB} (save {@dc 13}) from it.",
+				"Regaining Charges",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand crumbles into ashes and is destroyed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wand of Wonder|XDMG",
+			"hint": {
+				"Wand of Wonder": "驚奇魔杖",
+				"Regaining Charges": "充能恢復"
+			},
+			"s": [
+				"Wand of Wonder",
+				"This wand has 7 charges. While holding it, you can take a {@action Magic|XPHB} action to expend 1 charge while choosing a point within 120 feet of yourself. That location becomes the point of origin of a spell or other magical effect determined by rolling on the Wand of Wonder Effects table. Spells cast from the wand have a save DC of 15. If a spell's maximum range is normally less than 120 feet, it becomes 120 feet when cast from the wand. If an effect has multiple possible subjects, the DM determines randomly which among them are affected.",
+				"Regaining Charges",
+				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand crumbles into dust and is destroyed.",
+				"Wand of Wonder Effects",
+				"1d100",
+				"Effect",
+				"You cast a spell originating from the chosen point. Roll {@dice 1d10} to determine the spell: on a {@b 1-2}, {@spell Darkness|XPHB}; on a {@b 3-4}, {@spell Faerie Fire|XPHB}; on a {@b 5-6}, {@spell Fireball|XPHB}; on a {@b 7-8}, {@spell Slow|XPHB}; on a {@b 9-10}, {@spell Stinking Cloud|XPHB}.",
+				"Nothing happens at the chosen point of origin. Instead, you have the {@condition Stunned|XPHB} condition until the start of your next turn, believing something awesome just happened.",
+				"You cast {@spell Gust of Wind|XPHB}. The {@variantrule Line [Area of Effect]|XPHB|Line} created by the spell extends from you to the chosen point of origin.",
+				"Nothing happens at the chosen point of origin. Instead, you take {@damage 1d6} Psychic damage.",
+				"Heavy rain falls for 1 minute in a 120-foot-high, 60-foot-radius {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on the chosen point of origin. During that time, the area of effect is {@variantrule Lightly Obscured|XPHB}.",
+				"A cloud of 600 oversized butterflies fills a 60-foot-high, 30-foot-radius {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on the chosen point of origin. The butterflies remain for 10 minutes, during which time the area of effect is {@variantrule Heavily Obscured|XPHB}.",
+				"You cast {@spell Lightning Bolt|XPHB}. The {@variantrule Line [Area of Effect]|XPHB|Line} created by the spell extends from you to the chosen point of origin.",
+				"The creature closest to the chosen point of origin is enlarged as if you had cast {@spell Enlarge/Reduce|XPHB} on it. If the target isn't you and can't be affected by that spell, you become the target instead.",
+				"A magically formed creature appears in an unoccupied space as close to the chosen point of origin as possible. The creature isn't under your control, acts as it normally would, and disappears after 1 hour or when it drops to 0 {@variantrule Hit Points|XPHB}. Roll {@dice 1d4} to determine which creature appears. On a {@b 1}, a {@creature Rhinoceros|XMM} appears; on a {@b 2}, an {@creature Elephant|XMM} appears; and on a {@b 3-4}, a {@creature Rat|XMM} appears.",
+				"Grass covers a 60-foot-radius circle of ground, with the center of that circle as close to the chosen point of origin as possible. Grass that's already there grows to ten times its normal size and remains overgrown for 1 minute.",
+				"An object of the DM's choice disappears into the Ethereal Plane. The object must be neither worn nor carried, within 120 feet of the chosen point of origin, and no larger than 10 feet in any dimension. If there are no such objects in range, nothing happens.",
+				"Nothing happens at the chosen point of origin. Instead, you shrink as if you had cast {@spell Enlarge/Reduce|XPHB} on yourself and remain in that state for 1 minute.",
+				"Leaves grow from the creature nearest to the chosen point of origin. Unless they are picked off, the leaves turn brown and fall off after 24 hours.",
+				"Nothing happens at the chosen point of origin. Instead, a burst of colorful, shimmering light extends from you in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. Each creature in the area must succeed on a {@dc 15} Constitution saving throw or have the {@condition Blinded|XPHB} condition for 1 minute. A creature repeats the save at the end of each of its turns, ending the effect on itself on a success.",
+				"Nothing happens at the chosen point of origin. Instead, you cast {@spell Invisibility|XPHB} on yourself.",
+				"Nothing happens at the chosen point of origin. Instead, a stream of {@dice 1d4 × 10} gems, each worth 1 GP, shoots from the wand's tip in a {@variantrule Line [Area of Effect]|XPHB|Line} 30 feet long and 5 feet wide toward the chosen point of origin. Each gem deals 1 Bludgeoning damage, and the total damage of the gems is divided equally among all creatures in the {@variantrule Line [Area of Effect]|XPHB|Line}.",
+				"You cast {@spell Polymorph|XPHB}, targeting the creature closest to the chosen point of origin. Roll {@dice 1d4} to determine the target's new form. On a {@b 1}, the new form is a {@creature Black Bear|XMM}; on a {@b 2}, the new form is a {@creature Giant Wasp|XMM}; on a {@b 3-4}, the new form is a {@creature Frog|XMM}.",
+				"The creature closest to the chosen point of origin makes a {@dc 15} Constitution saving throw. On a failed save, the creature has the {@condition Restrained|XPHB} condition and begins to turn to stone. While {@condition Restrained|XPHB} in this way, the creature repeats the save at the end of its next turn. On a successful save, the effect ends. On a failed save, the creature has the {@condition Petrified|XPHB} condition instead of the {@condition Restrained|XPHB} condition. The petrification lasts until the creature is freed by the {@spell Greater Restoration|XPHB} spell or similar magic."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wave|XDMG",
+			"hint": {
+				"Wave": "波濤",
+				"Globe of Invulnerability": "無敵法球",
+				"Sentience": "感知力",
+				"Personality": "個性"
+			},
+			"s": [
+				"Wave",
+				"Held in the dungeon of White Plume Mountain, Wave is engraved with images of waves, shells, and sea creatures.",
+				"You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you roll a 20 on the {@dice d20} for an attack roll with this weapon, the target takes an extra 21 Necrotic damage.",
+				"While holding Wave, you gain the following benefits:",
+				"Combat Ready",
+				"You have {@variantrule Advantage|XPHB} on {@variantrule Initiative|XPHB} rolls.",
+				"Underwater Adaptation",
+				"A bubble of air forms around your head while you are underwater, allowing you to breathe normally in that environment.",
+				"Aquatic Command",
+				"Wave has 3 charges and regains {@dice 1d3} expended charges daily at dawn. While you carry it, you can expend 1 charge to cast {@spell Dominate Beast|XPHB} (save {@dc 20}) from it on a Beast that has a {@variantrule Swim Speed|XPHB}.",
+				"Globe of Invulnerability",
+				"While holding Wave, you can cast the level 9 version of {@spell Globe of Invulnerability|XPHB} from it. Once used, this property can't be used again until the next dawn.",
+				"Sentience",
+				"Wave is a sentient weapon of Neutral alignment, with an Intelligence of 14, a Wisdom of 10, and a Charisma of 18. It has hearing and {@sense Darkvision|XPHB} out to 120 feet.",
+				"The weapon communicates telepathically with its wielder and speaks Aquan.",
+				"Personality",
+				"Wave zealously encourages mortals to worship sea gods and has a habit of humming sea chanteys. Conflict arises if the wielder fails to further the weapon's objectives in the world.",
+				"Destroying Wave",
+				"Wave can be destroyed only on the island of Thunderforge, where it was forged. The weapon must be melted down by a {@creature storm giant|XMM} or someone imbued with a storm giant's strength. Destroying Wave angers a god of the sea, who sends powerful agents to attack the island and punish the destroyers."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Well of Many Worlds|XDMG",
+			"hint": {
+				"Well of Many Worlds": "諸界之井"
+			},
+			"s": [
+				"Well of Many Worlds",
+				"This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.",
+				"You can take a {@action Magic|XPHB} action to unfold the Well of Many Worlds and place it on a solid surface, whereupon it forms a two-way, 6-foot-diameter, circular portal to another world or plane of existence. Each time the item opens a portal, the DM decides where it leads. The portal remains open until a creature within 5 feet of it takes a {@action Magic|XPHB} action to close it by taking hold of the edges of the cloth and folding it up.",
+				"Once the Well of Many Worlds has opened a portal, it can't do so again for {@dice 1d8} hours."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Well-made tapestry that is 10 feet by 10 feet|XDMG",
+			"s": [
+				"Well-made tapestry that is 10 feet by 10 feet"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wheat|XDMG",
+			"hint": {
+				"Wheat": "小麥"
+			},
+			"s": [
+				"Wheat"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Whelm|XDMG",
+			"hint": {
+				"Whelm": "征服",
+				"Sentience": "感知力",
+				"Personality": "個性"
+			},
+			"s": [
+				"Whelm",
+				"Whelm is a powerful weapon forged by dwarves and lost in the dungeon of White Plume Mountain.",
+				"You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.",
+				"Hurl",
+				"Whelm has {@itemProperty T|XPHB|Thrown} with a normal range of 60 feet and a long range of 180 feet. When you hit with a ranged attack roll using Whelm, the target takes an extra {@damage 1d8} Force damage, or an extra {@damage 4d8} Force damage if the target is a Construct, an Elemental, or a Giant. Immediately after hitting or missing, the weapon flies back to your hand.",
+				"Shock Wave",
+				"You can take a {@action Magic|XPHB} action to strike the ground with Whelm and send a shock wave out from the point of impact. Each creature of your choice on the ground within 60 feet of that point must succeed on a {@dc 20} Constitution saving throw or have the {@condition Stunned|XPHB} condition for 1 minute. A creature repeats the save at the end of each of its turns, ending the effect on itself on a success. Once used, this property can't be used again until the next dawn.",
+				"Supernatural Awareness",
+				"While you are holding the weapon, it alerts you to the location of any secret or concealed doors within 30 feet of you. In addition, you can cast {@spell Detect Evil and Good|XPHB} or {@spell Locate Object|XPHB} from the weapon. Once you cast either spell, you can't cast it from the weapon again until the next dawn.",
+				"Sentience",
+				"Whelm is a sentient, Lawful Neutral weapon with an Intelligence of 15, a Wisdom of 12, and a Charisma of 15. It has hearing and {@sense Darkvision|XPHB} out to 120 feet.",
+				"The weapon communicates telepathically with its wielder and speaks Dwarvish, Giant, and Goblin.",
+				"Personality",
+				"Whelm has ties to the dwarf clan that created it, called the Dankil or the Mightyhammer clan. It longs to be returned to that clan. Whelm's purpose is to protect dwarves. Conflict arises if the wielder doesn't share this goal.",
+				"Destroying Whelm",
+				"Whelm can be dissolved in the acidic bile of a recently slain {@creature ancient black dragon|XMM}. It can also be melted down in the forges of the Mightyhammer dwarf clan, but only by the rightful leader of that clan."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "White Dragon Scale Mail|XDMG",
+			"hint": {
+				"White Dragon Scale Mail": "白龍鱗甲"
+			},
+			"s": [
+				"White Dragon Scale Mail",
+				"{#itemEntry Dragon Scale Mail|XDMG}"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wind Fan|XDMG",
+			"hint": {
+				"Wind Fan": "造風之扇"
+			},
+			"s": [
+				"Wind Fan",
+				"While holding this fan, you can cast {@spell Gust of Wind|XPHB} (save {@dc 13}) from it. Each subsequent time the fan is used before the next dawn, it has a cumulative {@chance 20} chance of not working; if the fan fails to work, it tears into useless, nonmagical tatters."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Winged Boots|XDMG",
+			"hint": {
+				"Winged Boots": "飛翼之靴"
+			},
+			"s": [
+				"Winged Boots",
+				"These boots have 4 charges and regain {@dice 1d4} expended charges daily at dawn. While wearing the boots, you can take a {@action Magic|XPHB} action to expend 1 charge, gaining a {@variantrule Fly Speed|XPHB} of 30 feet for 1 hour. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wings of Flying|XDMG",
+			"hint": {
+				"Wings of Flying": "飛行之翼"
+			},
+			"s": [
+				"Wings of Flying",
+				"While wearing this cloak, you can take a {@action Magic|XPHB} action to turn the cloak into a pair of wings on your back. The wings lasts for 1 hour or until you end the effect early as a {@action Magic|XPHB} action. The wings give you a {@variantrule Fly Speed|XPHB} of 60 feet. If you are aloft when the wings disappear, you fall. When the wings disappear, you can't use them again for {@dice 1d12} hours."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Wyvern Poison|XDMG",
+			"s": [
+				"Wyvern Poison",
+				"A creature subjected to Wyvern Poison makes a {@dc 14} Constitution saving throw, taking 24 ({@damage 7d6}) Poison damage on a failed save or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Yellow Sapphire|XDMG",
+			"hint": {
+				"Yellow Sapphire": "黃寶石"
+			},
+			"s": [
+				"Yellow Sapphire",
+				"A fiery yellow or yellow green gemstone."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Zircon|XDMG",
+			"hint": {
+				"Zircon": "鋯石"
+			},
+			"s": [
+				"Zircon",
+				"A pale blue green gemstone."
+			]
+		}
+	]
+}

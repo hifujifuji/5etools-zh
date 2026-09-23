@@ -176,10 +176,16 @@ const fillTags = str => str.replace(RE_TAG, (m, tag, body) => {
 	nTagDisplay++;
 	return `{@${tag} ${parts.join("|")}}`;
 });
-const walkStrings = v => {
-	if (typeof v === "string") return hasCjk(v) && v.includes("{@") ? fillTags(v) : v;
-	if (Array.isArray(v)) { for (let i = 0; i < v.length; ++i) v[i] = walkStrings(v[i]); return v; }
-	if (v && typeof v === "object") { for (const k of Object.keys(v)) if (k !== "name") v[k] = walkStrings(v[k]); return v; }
+// 已翻譯實體裡「只有標籤」的字串（例如法術表的一格 {@spell Cone of Cold|XPHB}）也補上中文名
+const RE_ONLY_TAGS = /^[\s\d,;:()+\-–]*(\{@[^{}]+\}[\s\d,;:()+\-–]*)+$/;
+const walkStrings = (v, inZh = false) => {
+	if (typeof v === "string") return v.includes("{@") && (hasCjk(v) || (inZh && RE_ONLY_TAGS.test(v))) ? fillTags(v) : v;
+	if (Array.isArray(v)) { for (let i = 0; i < v.length; ++i) v[i] = walkStrings(v[i], inZh); return v; }
+	if (v && typeof v === "object") {
+		const z = inZh || !!v.name_zh;
+		for (const k of Object.keys(v)) if (k !== "name") v[k] = walkStrings(v[k], z);
+		return v;
+	}
 	return v;
 };
 for (const {file, json} of loaded) {

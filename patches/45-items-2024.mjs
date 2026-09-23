@@ -47,6 +47,27 @@ export default [
 				"name: `Mastery: ${mastery.name}`,",
 				`name: \`精通屬性：\${(${ZN.replace(/^const __zn = /, "").replace(/;$/, "")})(mastery) || mastery.name}\`,`,
 			],
+			// 護甲的固定說明
+			[
+				`"The wearer has disadvantage on Dexterity ({@skill Stealth}) checks."`,
+				`"穿戴者的敏捷（{@skill Stealth}）檢定具有劣勢。"`,
+			],
+			[
+				`"The wearer has {@variantrule Disadvantage|XPHB} on Dexterity ({@skill Stealth|XPHB}) checks."`,
+				`"穿戴者的敏捷（{@skill Stealth|XPHB}）檢定具有{@variantrule Disadvantage|XPHB}。"`,
+			],
+			[
+				"wrapped: `If the wearer has a Strength score lower than ${item.strength}, their speed is reduced by 10 feet.`",
+				"wrapped: `若穿戴者的力量值低於 ${item.strength}，其速度降低 10 呎。`",
+			],
+			[
+				`wrapped: "Multiple variations of this item exist, as listed below:"`,
+				`wrapped: "此物品有多種變體，列於下方："`,
+			],
+			[
+				"const suffix = isAddDex ? ` + Dex${dexterityMax ? ` (max ${dexterityMax})` : \"\"}` : \"\";",
+				"const suffix = isAddDex ? ` + 敏捷${dexterityMax ? `（最多 ${dexterityMax}）` : \"\"}` : \"\";",
+			],
 		],
 	},
 ];

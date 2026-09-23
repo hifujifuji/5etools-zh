@@ -22,3 +22,7 @@ export const BARD = "吟遊詩人樂器在各方面都優於普通樂器。這�
 export const BARD_END = (n) => `一旦${n}被用來施展某道法術，直到下一個黎明前都無法再用它施展該法術。這些法術使用你的施法屬性與法術豁免 DC。`;
 export const BARD_BASE = "{@spell Fly|XPHB}、{@spell Invisibility|XPHB}、{@spell Levitate|XPHB}、{@spell Protection from Evil and Good|XPHB}";
 export const HORSESHOE = "這些馬蹄鐵四個一組。作為一個{@action Magic|XPHB}動作，你可以將其中一個馬蹄鐵碰觸馬或類似生物的蹄，馬蹄鐵便會固定在蹄上。取下馬蹄鐵同樣需要一個{@action Magic|XPHB}動作。";
+export const GIANT_POT = (zh, score, giant) => [`${zh}之力藥水`, `喝下這瓶藥水時，你的力量值在 1 小時內變為 ${score}。若你的力量已等於或高於該數值，則此藥水對你沒有效果。`, `這瓶藥水的透明液體中漂浮著一小片${giant}的指甲。`];
+export const RES_POT = zh => [`${zh}抗性藥水`, "{#itemEntry Potion of Resistance|XDMG}"];
+export const RES_RING = zh => [`${zh}抗性戒指`, "{#itemEntry Ring of Resistance|XDMG}"];
+export const ELEM_RING = (zh, plane, focusName, focus, spells) => [`元素指揮戒指（${zh}）`, `元素指揮戒指（${zh}）與${plane}相連。每枚元素指揮戒指都具有以下兩項屬性：`, "元素剋星", "戴著此戒指時，你對元素生物的攻擊檢定具有{@variantrule Advantage|XPHB}，而它們對你的攻擊檢定具有{@variantrule Disadvantage|XPHB}。", "元素驅使", "戴著此戒指時，你可以執行一個{@action Magic|XPHB}動作，嘗試驅使你 60 呎內一個你能看見的元素生物。該元素生物進行一次 {@dc 18} 感知豁免檢定。豁免失敗時，該元素生物處於{@condition Charmed|XPHB}狀態直到你的下個回合開始，並由你決定它在其下個回合中如何移動與執行什麼動作。", "元素專注", "戴著此戒指時，你獲得與戒指所連結之元素位面相應的額外屬性：", focusName, focus, "施法", `戒指有 5 發充能，每天黎明恢復 {@dice 1d4 + 1} 發已消耗的充能。戴著戒指時，你可以從中施展法術。從戒指施展的法術豁免 DC 為 18。從下列清單中選擇法術：${spells}`];

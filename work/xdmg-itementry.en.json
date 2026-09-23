@@ -1,0 +1,85 @@
+{
+	"batch": "xdmg-itementry",
+	"items": [
+		{
+			"prop": "itemEntry",
+			"key": "Armor of Resistance|XDMG",
+			"hint": {
+				"Armor of Resistance": "抗性護甲"
+			},
+			"s": [
+				"Armor of Resistance",
+				"You have {@variantrule Resistance|XPHB} to {{getFullImmRes item.resist}} damage while you wear this armor."
+			]
+		},
+		{
+			"prop": "itemEntry",
+			"key": "Dragon Scale Mail|XDMG",
+			"hint": {
+				"Dragon Scale Mail": "龍鱗甲"
+			},
+			"s": [
+				"Dragon Scale Mail",
+				"Dragon Scale Mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them. Other times, hunters carefully preserve the hide of a dead dragon. In either case, Dragon Scale Mail is highly valued.",
+				"While wearing this armor, you gain a +1 bonus to {@variantrule Armor Class|XPHB}, you have {@variantrule Advantage|XPHB} on saving throws against the breath weapons of Dragons, and you have {@variantrule Resistance|XPHB} to {{getFullImmRes item.resist}} damage.",
+				"Additionally, you can focus your senses as a {@action Magic|XPHB} action to discern the distance and direction to the closest {{item.detail1}} dragon within 30 miles of yourself. This action can't be used again until the next dawn."
+			]
+		},
+		{
+			"prop": "itemEntry",
+			"key": "Grenade|XDMG",
+			"s": [
+				"Grenade",
+				"As an action, you can either throw a grenade at a point up to 60 feet away or use a Grenade Launcher to propel the grenade to a point up to 1,000 feet away. The grenade explodes at that point, creating a particular effect in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere}."
+			]
+		},
+		{
+			"prop": "itemEntry",
+			"key": "Ioun Stone|XDMG",
+			"hint": {
+				"Ioun Stone": "艾恩石"
+			},
+			"s": [
+				"Ioun Stone",
+				"Roughly marble sized, {@i Ioun Stones} are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of {@i Ioun Stones} exist, each type a distinct combination of shape and color.",
+				"When you take a {@action Magic|XPHB} action to toss an {@i Ioun Stone} into the air, the stone orbits your head at a distance of {@dice 1d3} feet, conferring its benefit to you while doing so. You can have up to three {@i Ioun Stones} orbiting your head at the same time.",
+				"Each {@i Ioun Stone} orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.",
+				"As a {@action Utilize|XPHB} action, you can seize and stow any number of {@i Ioun Stones} orbiting your head. If your {@variantrule Attunement|XPHB} to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it."
+			]
+		},
+		{
+			"prop": "itemEntry",
+			"key": "Potion of Resistance|XDMG",
+			"hint": {
+				"Potion of Resistance": "抗性藥水"
+			},
+			"s": [
+				"Potion of Resistance",
+				"When you drink this potion, you have {@variantrule Resistance|XPHB} to {{getFullImmRes item.resist}} damage for 1 hour."
+			]
+		},
+		{
+			"prop": "itemEntry",
+			"key": "Ring of Resistance|XDMG",
+			"hint": {
+				"Ring of Resistance": "抗性戒指"
+			},
+			"s": [
+				"Ring of Resistance",
+				"You have {@variantrule Resistance|XPHB} to {{getFullImmRes item.resist}} damage while wearing this ring. The ring is set with {{item.detail1}}."
+			]
+		},
+		{
+			"prop": "itemEntry",
+			"key": "Scroll of Protection|XDMG",
+			"hint": {
+				"Scroll of Protection": "防護卷軸"
+			},
+			"s": [
+				"Scroll of Protection",
+				"Using a {@action Magic|XPHB} action to read the scroll creates a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you. For 5 minutes, {{item.detail2}} can't enter or affect anything in the area. However, if you move in such a way that an {{item.detail1}} would be inside the area, the effect ends.",
+				"As a {@action Magic|XPHB} action, a creature within 5 feet of the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} can attempt to overcome it, which forces the creature to make a {@dc 15} Charisma saving throw. On a successful save, the creature ceases to be affected by the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}."
+			]
+		}
+	]
+}

@@ -1,0 +1,64 @@
+{
+	"Armor of Resistance|XDMG": {
+		"name": "抗性護甲",
+		"source": "XDMG",
+		"entriesTemplate": [
+			"穿著此護甲時，你對 {{getFullImmRes item.resist}} 傷害具有{@variantrule Resistance|XPHB}。"
+		],
+		"ENG_name": "Armor of Resistance"
+	},
+	"Dragon Scale Mail|XDMG": {
+		"name": "龍鱗甲",
+		"source": "XDMG",
+		"entriesTemplate": [
+			"龍鱗甲以某一種龍的鱗片製成。有時龍會收集自己蛻下的鱗片並將其贈人；有時則是獵人小心保存了死龍的皮。無論哪種情況，龍鱗甲都極為珍貴。",
+			"穿著此護甲時，你的{@variantrule Armor Class|XPHB}獲得 +1 加值，你對龍類吐息武器的豁免檢定具有{@variantrule Advantage|XPHB}，且你對 {{getFullImmRes item.resist}} 傷害具有{@variantrule Resistance|XPHB}。",
+			"此外，你可以作為一個{@action Magic|XPHB}動作集中感官，辨別你 30 哩內最近的一條 {{item.detail1}} 龍的距離與方向。直到下一個黎明前，都無法再次使用此動作。"
+		],
+		"ENG_name": "Dragon Scale Mail"
+	},
+	"Grenade|XDMG": {
+		"name": "手榴彈",
+		"source": "XDMG",
+		"entriesTemplate": [
+			"作為一個動作，你可以將手榴彈投向至多 60 呎外的一點，或使用榴彈發射器將手榴彈射向至多 1,000 呎外的一點。手榴彈在該點爆炸，在 20 呎半徑的{@variantrule Sphere [Area of Effect]|XPHB|球形}範圍內產生特定效果。"
+		],
+		"ENG_name": "Grenade"
+	},
+	"Ioun Stone|XDMG": {
+		"name": "艾恩石",
+		"source": "XDMG",
+		"entriesTemplate": [
+			"{@i 艾恩石}約為彈珠大小，以艾恩——某些世界所崇敬的知識與預言之神——命名。{@i 艾恩石}有許多種類，每種都有獨特的形狀與顏色組合。",
+			"當你執行一個{@action Magic|XPHB}動作將一顆{@i 艾恩石}拋向空中時，石頭會在距你頭部 {@dice 1d3} 呎處環繞運行，並在運行期間賦予你其益處。你最多可以同時讓三顆{@i 艾恩石}繞著你的頭部運行。",
+			"每顆繞著你頭部運行的{@i 艾恩石}都視為你穿戴的物體。運行中的石頭會避免與其他生物和物體接觸，並調整軌道以避免碰撞，挫敗其他生物攻擊或奪取它的一切嘗試。",
+			"作為一個{@action Utilize|XPHB}動作，你可以抓住並收起任意數量繞著你頭部運行的{@i 艾恩石}。若艾恩石繞著你頭部運行時你與它的{@variantrule Attunement|XPHB}結束，石頭會如同被你丟下般掉落。"
+		],
+		"ENG_name": "Ioun Stone"
+	},
+	"Potion of Resistance|XDMG": {
+		"name": "抗性藥水",
+		"source": "XDMG",
+		"entriesTemplate": [
+			"喝下這瓶藥水時，你在 1 小時內對 {{getFullImmRes item.resist}} 傷害具有{@variantrule Resistance|XPHB}。"
+		],
+		"ENG_name": "Potion of Resistance"
+	},
+	"Ring of Resistance|XDMG": {
+		"name": "抗性戒指",
+		"source": "XDMG",
+		"entriesTemplate": [
+			"戴著此戒指時，你對 {{getFullImmRes item.resist}} 傷害具有{@variantrule Resistance|XPHB}。戒指上鑲著 {{item.detail1}}。"
+		],
+		"ENG_name": "Ring of Resistance"
+	},
+	"Scroll of Protection|XDMG": {
+		"name": "防護卷軸",
+		"source": "XDMG",
+		"entriesTemplate": [
+			"使用一個{@action Magic|XPHB}動作閱讀此卷軸，會創造一個從你發出的 5 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍。在 5 分鐘內，{{item.detail2}} 無法進入該區域或影響其中的任何東西。然而，若你的移動方式使得一個 {{item.detail1}} 會位於區域內，效果便會結束。",
+			"作為一個{@action Magic|XPHB}動作，位於{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍 5 呎內的生物可以嘗試突破它，這會迫使該生物進行一次 {@dc 15} 魅力豁免檢定。豁免成功時，該生物不再受到{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍的影響。"
+		],
+		"ENG_name": "Scroll of Protection"
+	}
+}

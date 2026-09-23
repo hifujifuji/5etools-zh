@@ -102,7 +102,7 @@
 		"Rarity": "稀有度",
 		"Attunement": "同調",
 		"Can Be Attuned": "可同調",
-		"Requires Attunement": "需要同調",
+		"Requires Attunement": "需同調",
 		"Subtype": "子類型",
 		"Class": "職業",
 		"Subclass": "子職業",
@@ -1174,7 +1174,76 @@
 		"Spellcasting Feature": "施法特性",
 		"Pact Magic Feature": "契約魔法特性",
 		"Spellcasting or Pact Magic Feature": "施法或契約魔法特性",
-		"Choose one ability in which you lack saving throw proficiency. Increase the chosen ability score by 1, to a maximum of 20.": "選擇一項你不具豁免檢定熟練的屬性，將該屬性值提升 1，最高至 20。"
+		"Choose one ability in which you lack saving throw proficiency. Increase the chosen ability score by 1, to a maximum of 20.": "選擇一項你不具豁免檢定熟練的屬性，將該屬性值提升 1，最高至 20。",
+		"spellcaster": "施法者",
+		"Foundry": "Foundry",
+		"Alchemist's Supplies": "煉金師設備",
+		"Arrow": "箭",
+		"Arrows (20)": "箭（20）",
+		"Bagpipes": "風笛",
+		"Blowgun": "吹箭筒",
+		"Bolt": "弩矢",
+		"Bolts (20)": "弩矢（20）",
+		"Breastplate": "護胸甲",
+		"Brewer's Supplies": "釀酒師設備",
+		"Calligrapher's Supplies": "書法家設備",
+		"Carpenter's Tools": "木匠工具",
+		"Cartographer's Tools": "制圖師工具",
+		"Chain Mail": "鎖子甲",
+		"Chain Shirt": "鏈甲衫",
+		"Cobbler's Tools": "鞋匠工具",
+		"Cook's Utensils": "廚師炊具",
+		"Crystal": "水晶",
+		"Dart": "飛鏢",
+		"Drum": "鼓",
+		"Dulcimer": "揚琴",
+		"Firearm Bullet": "火器子彈",
+		"Firearm Bullets (10)": "火器子彈（10）",
+		"Flute": "長笛",
+		"Glassblower's Tools": "玻璃匠工具",
+		"Half Plate Armor": "半身板甲",
+		"Hand Crossbow": "手弩",
+		"Hide Armor": "生皮甲",
+		"Horn": "號角",
+		"Jeweler's Tools": "珠寶匠工具",
+		"Lance": "騎槍",
+		"Leather Armor": "皮甲",
+		"Leatherworker's Tools": "皮匠工具",
+		"Light Hammer": "輕錘",
+		"Lute": "魯特琴",
+		"Lyre": "里拉琴",
+		"Mason's Tools": "石匠工具",
+		"Musket": "鳥銃",
+		"Needle": "吹針",
+		"Needles (50)": "吹針（50）",
+		"Orb": "法球",
+		"Padded Armor": "綿甲",
+		"Painter's Supplies": "畫家設備",
+		"Pan Flute": "排笛",
+		"Pistol": "手槍",
+		"Plate Armor": "全身板甲",
+		"Potter's Tools": "陶匠工具",
+		"Ring Mail": "環甲",
+		"Scale Mail": "鱗甲",
+		"Shawm": "蕭姆管",
+		"Sickle": "鐮刀",
+		"Sling Bullet": "投石索彈丸",
+		"Sling Bullets (20)": "投石索彈丸（20）",
+		"Smith's Tools": "鐵匠工具",
+		"Splint Armor": "條板甲",
+		"Studded Leather Armor": "鑲釘皮甲",
+		"Tinker's Tools": "修補匠工具",
+		"Viol": "古提琴",
+		"War Pick": "戰鎬",
+		"Weaver's Tools": "織布工工具",
+		"Woodcarver's Tools": "木雕師工具",
+		"Wooden Staff": "木質法杖",
+		"Light Armor (": "輕甲 (",
+		"Medium Armor (": "中甲 (",
+		"Heavy Armor (": "重甲 (",
+		"Weapon (": "武器 (",
+		"Shield (": "盾牌 (",
+		"Ammunition (": "彈藥 ("
 	},
 	"rules": [
 		[
@@ -1444,6 +1513,30 @@
 		[
 			"Increase your (.+) by (\\d+), to a maximum of (\\d+)\\.",
 			"你的{1}值提升 $2，最高至 $3。"
+		],
+		[
+			"(.+) \\(Requires Attunement\\)",
+			"{1}（需同調）"
+		],
+		[
+			"(.+) \\([Rr]equires [Aa]ttunement [Bb]y an? (.+)\\)",
+			"{1}（需由{2}同調）"
+		],
+		[
+			"(.+) \\([Rr]equires [Aa]ttunement [Bb]y (.+)\\)",
+			"{1}（需由{2}同調）"
+		],
+		[
+			"([A-Za-z]+), ([A-Za-z]+), or ([A-Za-z]+)",
+			"{1}、{2}或{3}"
+		],
+		[
+			"([A-Za-z]+), ([A-Za-z]+), ([A-Za-z]+), or ([A-Za-z]+)",
+			"{1}、{2}、{3}或{4}"
+		],
+		[
+			"((?:Light|Medium|Heavy) Armor|Weapon|Shield|Ammunition|Martial Weapon|Simple Weapon|Melee Weapon|Ranged Weapon) \\((.+)\\)",
+			"{1}（{2}）"
 		]
 	]
 }
