@@ -1,0 +1,354 @@
+{
+	"batch": "xphb-itemrule",
+	"items": [
+		{
+			"prop": "itemProperty",
+			"key": "2H|XPHB",
+			"s": [
+				"Two-Handed",
+				"A Two-Handed weapon requires two hands when you attack with it."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "A|XPHB",
+			"s": [
+				"Ammunition",
+				"You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "F|XPHB",
+			"s": [
+				"Finesse",
+				"When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "H|XPHB",
+			"s": [
+				"Heavy",
+				"You have {@variantrule Disadvantage|XPHB} on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "L|XPHB",
+			"hint": {
+				"Light": "光亮術"
+			},
+			"s": [
+				"Light",
+				"When you take the {@action Attack|XPHB} action on your turn and attack with a Light weapon, you can make one extra attack as a {@variantrule Bonus Action|XPHB} later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a {@item Shortsword|XPHB} in one hand and a {@item Dagger|XPHB} in the other using the {@action Attack|XPHB} action and a {@variantrule Bonus Action|XPHB}, but you don't add your Strength or Dexterity modifier to the damage roll of the {@variantrule Bonus Action|XPHB} unless that modifier is negative."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "LD|XPHB",
+			"s": [
+				"Loading",
+				"You can fire only one piece of ammunition from a Loading weapon when you use an action, a {@variantrule Bonus Action|XPHB}, or a {@variantrule Reaction|XPHB} to fire it, regardless of the number of attacks you can normally make."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "R|XPHB",
+			"hint": {
+				"Reach": "觸及"
+			},
+			"s": [
+				"Reach",
+				"A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for {@action Opportunity Attack|XPHB|Opportunity Attacks} with it."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "T|XPHB",
+			"s": [
+				"Thrown",
+				"If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "V|XPHB",
+			"s": [
+				"Versatile",
+				"A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+			]
+		},
+		{
+			"prop": "itemMastery",
+			"key": "Cleave|XPHB",
+			"hint": {
+				"Cleave": "劈裂"
+			},
+			"s": [
+				"Cleave",
+				"If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+			]
+		},
+		{
+			"prop": "itemMastery",
+			"key": "Graze|XPHB",
+			"hint": {
+				"Graze": "擦傷"
+			},
+			"s": [
+				"Graze",
+				"If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+			]
+		},
+		{
+			"prop": "itemMastery",
+			"key": "Nick|XPHB",
+			"hint": {
+				"Nick": "迅擊"
+			},
+			"s": [
+				"Nick",
+				"When you make the extra attack of the Light property, you can make it as part of the {@action Attack|XPHB} action instead of as a {@variantrule Bonus Action|XPHB}. You can make this extra attack only once per turn."
+			]
+		},
+		{
+			"prop": "itemMastery",
+			"key": "Push|XPHB",
+			"hint": {
+				"Push": "推擊"
+			},
+			"s": [
+				"Push",
+				"If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+			]
+		},
+		{
+			"prop": "itemMastery",
+			"key": "Sap|XPHB",
+			"hint": {
+				"Sap": "削弱"
+			},
+			"s": [
+				"Sap",
+				"If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
+			]
+		},
+		{
+			"prop": "itemMastery",
+			"key": "Slow|XPHB",
+			"hint": {
+				"Slow": "緩速術"
+			},
+			"s": [
+				"Slow",
+				"If you hit a creature with this weapon and deal damage to it, you can reduce its {@variantrule Speed|XPHB} by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the {@variantrule Speed|XPHB} reduction doesn't exceed 10 feet."
+			]
+		},
+		{
+			"prop": "itemMastery",
+			"key": "Topple|XPHB",
+			"hint": {
+				"Topple": "擊倒"
+			},
+			"s": [
+				"Topple",
+				"If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw ({@dc 8} plus the ability modifier used to make the attack roll and your {@variantrule Proficiency|XPHB|Proficiency Bonus}). On a failed save, the creature has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "itemMastery",
+			"key": "Vex|XPHB",
+			"hint": {
+				"Vex": "惱擾"
+			},
+			"s": [
+				"Vex",
+				"If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Adventuring Gear|XPHB",
+			"s": [
+				"Adventuring Gear"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Ammunition|XPHB",
+			"s": [
+				"Ammunition"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Artisan's Tools|XPHB",
+			"s": [
+				"Artisan's Tools",
+				"Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.",
+				"If you have proficiency with a tool, add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have {@variantrule Advantage|XPHB} on the check too."
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Food and Drink|XPHB",
+			"s": [
+				"Food and Drink"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Gaming Set|XPHB",
+			"s": [
+				"Gaming Set",
+				"If you have proficiency with a tool, add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have {@variantrule Advantage|XPHB} on the check too."
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Heavy Armor|XPHB",
+			"s": [
+				"Heavy Armor"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Instrument|XPHB",
+			"s": [
+				"Instrument",
+				"If you have proficiency with a tool, add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have {@variantrule Advantage|XPHB} on the check too."
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Light Armor|XPHB",
+			"s": [
+				"Light Armor"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Medium Armor|XPHB",
+			"s": [
+				"Medium Armor"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Melee Weapon|XPHB",
+			"s": [
+				"Melee Weapon"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Mount|XPHB",
+			"s": [
+				"Mount"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Potion|XPHB",
+			"s": [
+				"Potion"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Ranged Weapon|XPHB",
+			"s": [
+				"Ranged Weapon",
+				"Range",
+				"A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have {@variantrule Disadvantage|XPHB} on the attack roll. You can't attack a target beyond the long range."
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Scroll|XPHB",
+			"s": [
+				"Scroll"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Shield|XPHB",
+			"hint": {
+				"Shield": "護盾術"
+			},
+			"s": [
+				"Shield"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Spellcasting Focus|XPHB",
+			"hint": {
+				"Spellcasting Focus": "施法法器"
+			},
+			"s": [
+				"Spellcasting Focus"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Tack and Harness|XPHB",
+			"s": [
+				"Tack and Harness"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Tool|XPHB",
+			"s": [
+				"Tool",
+				"If you have proficiency with a tool, add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have {@variantrule Advantage|XPHB} on the check too."
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Treasure (Coinage)|XPHB",
+			"s": [
+				"Treasure (Coinage)",
+				"Characters often find coins on their adventures and can spend those coins in shops, inns, and other businesses. Coins come in different denominations based on the relative worth of their material. The Coin Values table lists coins and how much they're worth relative to the Gold Piece, which is the game's main coin. For example, 100 Copper Pieces are worth 1 Gold Piece.",
+				"A coin weighs about a third of an ounce, so fifty coins weigh a pound."
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Vehicle (Air)|XPHB",
+			"s": [
+				"Vehicle (Air)"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Vehicle (Land)|XPHB",
+			"s": [
+				"Vehicle (Land)"
+			]
+		},
+		{
+			"prop": "itemType",
+			"key": "Vehicle (Water)|XPHB",
+			"hint": {
+				"Speed": "速度",
+				"Damage Threshold": "傷害閾值"
+			},
+			"s": [
+				"Vehicle (Water)",
+				"Speed",
+				"A ship sailing against a strong wind moves at half speed. In a dead calm (no wind), waterborne ships can't move under sail and must be rowed. Keelboats and Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A Rowboat can be carried and weighs 100 pounds.",
+				"Crew",
+				"A ship larger than a Keelboat or Rowboat needs a crew of skilled hirelings (see \"{@book Services|XPHB|6|Services}\") to function. The minimum number of skilled hirelings needed to crew a ship depends on the type of ship.",
+				"Passengers",
+				"The number of Small and Medium passengers the ship can accommodate using hammocks. A ship outfitted with private accommodations can carry one-fifth as many passengers. A passenger usually pays 5 SP per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 GP per day.",
+				"Damage Threshold",
+				"See the {@variantrule Damage Threshold|XPHB|rules glossary}.",
+				"Ship Repair",
+				"Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 {@variantrule Hit Points|XPHB|Hit Point} of damage requires 1 day and costs 20 GP for materials and labor. If the repairs are made in a location where supplies and skilled labor are abundant, such as a city shipyard, the repair time and cost are halved."
+			]
+		}
+	]
+}

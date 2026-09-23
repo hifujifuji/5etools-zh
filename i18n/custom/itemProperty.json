@@ -1,0 +1,155 @@
+{
+	"2H|XPHB": {
+		"abbreviation": "2H",
+		"source": "XPHB",
+		"page": 214,
+		"basicRules2024": true,
+		"template": "{{prop_name}}",
+		"entries": [
+			{
+				"type": "entries",
+				"name": "雙手",
+				"entries": [
+					"雙手武器在你用它攻擊時需要用兩隻手持握。"
+				],
+				"ENG_name": "Two-Handed"
+			}
+		]
+	},
+	"A|XPHB": {
+		"abbreviation": "A",
+		"source": "XPHB",
+		"page": 213,
+		"basicRules2024": true,
+		"template": "{{prop_name}} (Range {{item.range}} ft.; {{item.ammoType}})",
+		"entries": [
+			{
+				"type": "entries",
+				"name": "彈藥",
+				"entries": [
+					"只有在你擁有可供發射的彈藥時，才能使用具有彈藥屬性的武器進行遠程攻擊。所需的彈藥類型標示於武器的射程旁。每次攻擊消耗一件彈藥。取出彈藥是攻擊的一部分（裝填單手武器時你需要一隻空手）。戰鬥結束後，你可以花費 1 分鐘回收戰鬥中所用彈藥的一半（向下取整），其餘的則會遺失。"
+				],
+				"ENG_name": "Ammunition"
+			}
+		]
+	},
+	"F|XPHB": {
+		"abbreviation": "F",
+		"source": "XPHB",
+		"page": 213,
+		"basicRules2024": true,
+		"template": "{{prop_name}}",
+		"entries": [
+			{
+				"type": "entries",
+				"name": "靈巧",
+				"entries": [
+					"以靈巧武器進行攻擊時，你可以選擇使用力量或敏捷調整值進行攻擊擲骰與傷害擲骰。兩次擲骰必須使用相同的調整值。"
+				],
+				"ENG_name": "Finesse"
+			}
+		]
+	},
+	"H|XPHB": {
+		"abbreviation": "H",
+		"source": "XPHB",
+		"page": 213,
+		"basicRules2024": true,
+		"template": "{{prop_name}}",
+		"entries": [
+			{
+				"type": "entries",
+				"name": "重型",
+				"entries": [
+					"若重型武器是近戰武器而你的力量值低於 13，或它是遠程武器而你的敏捷值低於 13，你以該武器進行的攻擊檢定具有{@variantrule Disadvantage|XPHB}。"
+				],
+				"ENG_name": "Heavy"
+			}
+		]
+	},
+	"L|XPHB": {
+		"abbreviation": "L",
+		"source": "XPHB",
+		"page": 213,
+		"basicRules2024": true,
+		"template": "{{prop_name}}",
+		"entries": [
+			{
+				"type": "entries",
+				"name": "輕型",
+				"entries": [
+					"當你在自己的回合執行{@action Attack|XPHB}動作並以輕型武器攻擊時，你可以在同一回合稍後作為一個{@variantrule Bonus Action|XPHB}進行一次額外攻擊。該額外攻擊必須使用另一把輕型武器，且除非屬性調整值為負，否則你不將屬性調整值加到額外攻擊的傷害上。例如，你可以一手持{@item Shortsword|XPHB}、另一手持{@item Dagger|XPHB}，分別以{@action Attack|XPHB}動作和{@variantrule Bonus Action|XPHB}進行攻擊，但除非力量或敏捷調整值為負，否則你不將其加到{@variantrule Bonus Action|XPHB}攻擊的傷害擲骰上。"
+				],
+				"ENG_name": "Light"
+			}
+		]
+	},
+	"LD|XPHB": {
+		"abbreviation": "LD",
+		"source": "XPHB",
+		"page": 214,
+		"basicRules2024": true,
+		"template": "{{prop_name}}",
+		"entries": [
+			{
+				"type": "entries",
+				"name": "裝填",
+				"entries": [
+					"當你使用一個動作、{@variantrule Bonus Action|XPHB}或{@variantrule Reaction|XPHB}發射裝填武器時，無論你通常能進行幾次攻擊，都只能從中發射一件彈藥。"
+				],
+				"ENG_name": "Loading"
+			}
+		]
+	},
+	"R|XPHB": {
+		"abbreviation": "R",
+		"source": "XPHB",
+		"page": 214,
+		"basicRules2024": true,
+		"template": "{{prop_name}}",
+		"entries": [
+			{
+				"type": "entries",
+				"name": "觸及",
+				"entries": [
+					"觸及武器在你用它攻擊時，以及用它決定{@action Opportunity Attack|XPHB|借機攻擊}的觸及範圍時，使你的觸及範圍增加 5 呎。"
+				],
+				"ENG_name": "Reach"
+			}
+		]
+	},
+	"T|XPHB": {
+		"abbreviation": "T",
+		"source": "XPHB",
+		"page": 214,
+		"basicRules2024": true,
+		"template": "{{prop_name}} ({{item.range}} ft.)",
+		"entries": [
+			{
+				"type": "entries",
+				"name": "投擲",
+				"entries": [
+					"若武器具有投擲屬性，你可以投擲該武器進行遠程攻擊，並可以在攻擊中拔出該武器。若該武器是近戰武器，攻擊擲骰與傷害擲骰使用與你以該武器進行近戰攻擊時相同的屬性調整值。"
+				],
+				"ENG_name": "Thrown"
+			}
+		]
+	},
+	"V|XPHB": {
+		"abbreviation": "V",
+		"source": "XPHB",
+		"page": 214,
+		"basicRules2024": true,
+		"template": "{{prop_name}} ({{item.dmg2}})",
+		"entries": [
+			{
+				"type": "entries",
+				"name": "多用",
+				"entries": [
+					"多用武器可以單手或雙手使用。此屬性旁會附上一個括號內的傷害值，這是以雙手使用該武器進行近戰攻擊時造成的傷害。"
+				],
+				"ENG_name": "Versatile"
+			}
+		]
+	}
+}

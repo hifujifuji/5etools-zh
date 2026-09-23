@@ -31,6 +31,7 @@ export function makeKeyFns (subclassFullName) {
 		classFeature: e => `${e.name}|${e.className}|${S(e.classSource)}|${e.level}`,
 		subclassFeature: e => `${e.name}|${e.className}|${scName(e)}|${S(e.source)}`,
 		subclass: e => `${e.name}|${e.className}|${S(e.source)}`,
+		itemProperty: e => `${e.abbreviation}|${S(e.source)}`,
 		magicvariant: e => `${e.name}|${S(e.inherits?.source || e.source)}`,
 	};
 	const LEGACY = {

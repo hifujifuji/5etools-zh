@@ -1,0 +1,642 @@
+{
+	"batch": "xphb-item-1",
+	"items": [
+		{
+			"prop": "item",
+			"key": "Acid|XPHB",
+			"s": [
+				"Acid",
+				"When you take the {@action Attack|XPHB} action, you can replace one of your attacks with throwing a vial of Acid. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw ({@dc 8} plus your Dexterity modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}) or take {@damage 2d6} Acid damage."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Airship|XPHB",
+			"hint": {
+				"Airship": "飛空船"
+			},
+			"s": [
+				"Airship"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Alchemist's Fire|XPHB",
+			"s": [
+				"Alchemist's Fire",
+				"When you take the {@action Attack|XPHB} action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw ({@dc 8} plus your Dexterity modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}) or take {@damage 1d4} Fire damage and start {@hazard burning|XPHB}."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Ale (mug)|XPHB",
+			"s": [
+				"Ale (mug)"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Amulet|XPHB",
+			"hint": {
+				"Amulet": "護符"
+			},
+			"s": [
+				"Amulet",
+				"For an Amulet to be an effective Holy Symbol, it must be worn or held."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Antitoxin|XPHB",
+			"hint": {
+				"Antitoxin": "解毒劑"
+			},
+			"s": [
+				"Antitoxin",
+				"As a {@variantrule Bonus Action|XPHB}, you can drink a vial of Antitoxin to gain {@variantrule Advantage|XPHB} on saving throws to avoid or end the {@condition Poisoned|XPHB} condition for 1 hour."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Backpack|XPHB",
+			"hint": {
+				"Backpack": "背包"
+			},
+			"s": [
+				"Backpack",
+				"A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Ball Bearings|XPHB",
+			"s": [
+				"Ball Bearings",
+				"As a {@action Utilize|XPHB} action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a {@dc 10} Dexterity saving throw or have the {@condition Prone|XPHB} condition. It takes 10 minutes to recover the Ball Bearings."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Barrel|XPHB",
+			"hint": {
+				"Barrel": "木桶"
+			},
+			"s": [
+				"Barrel",
+				"A Barrel holds up to 40 gallons of liquid or up to 4 cubic feet of dry goods."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Basic Poison|XPHB",
+			"s": [
+				"Basic Poison",
+				"As a {@variantrule Bonus Action|XPHB}, you can use a vial of Basic Poison to coat one weapon or up to three pieces of ammunition. A creature that takes Piercing or Slashing damage from the poisoned weapon or ammunition takes an extra {@damage 1d4} Poison damage. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Basket|XPHB",
+			"hint": {
+				"Basket": "籃子"
+			},
+			"s": [
+				"Basket",
+				"A Basket holds up to 40 pounds within 2 cubic feet."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bedroll|XPHB",
+			"hint": {
+				"Bedroll": "睡袋"
+			},
+			"s": [
+				"Bedroll",
+				"A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against {@hazard extreme cold|XDMG} (see the {@book Dungeon Master's Guide|XDMG})."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bell|XPHB",
+			"hint": {
+				"Bell": "鈴鐺"
+			},
+			"s": [
+				"Bell",
+				"When rung as a {@action Utilize|XPHB} action, a Bell produces a sound that can be heard up to 60 feet away."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Blanket|XPHB",
+			"hint": {
+				"Blanket": "毛毯"
+			},
+			"s": [
+				"Blanket",
+				"While wrapped in a blanket, you have {@variantrule Advantage|XPHB} on saving throws against {@hazard extreme cold|XDMG} (see the {@book Dungeon Master's Guide|XDMG})."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Block and Tackle|XPHB",
+			"hint": {
+				"Block and Tackle": "滑輪組"
+			},
+			"s": [
+				"Block and Tackle",
+				"A {@item Block and Tackle|XPHB} allows you to hoist up to four times the weight you can normally lift."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Book|XPHB",
+			"hint": {
+				"Book": "書"
+			},
+			"s": [
+				"Book",
+				"A Book contains fiction or nonfiction. If you consult an accurate nonfiction Book about its topic, you gain a +5 bonus to Intelligence ({@skill Arcana|XPHB}, {@skill History|XPHB}, {@skill Nature|XPHB}, or {@skill Religion|XPHB}) checks you make about that topic."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bread (loaf)|XPHB",
+			"s": [
+				"Bread (loaf)"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bucket|XPHB",
+			"hint": {
+				"Bucket": "水桶"
+			},
+			"s": [
+				"Bucket",
+				"A Bucket holds up to half a cubic foot of contents."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Bullseye Lantern|XPHB",
+			"hint": {
+				"Bullseye Lantern": "牛眼提燈"
+			},
+			"s": [
+				"Bullseye Lantern",
+				"A Bullseye Lantern burns Oil as fuel to cast {@variantrule Bright Light|XPHB} in a 60-foot Cone and {@variantrule Dim Light|XPHB} for an additional 60 feet."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Burglar's Pack|XPHB",
+			"hint": {
+				"Burglar's Pack": "竊賊套裝"
+			},
+			"s": [
+				"Burglar's Pack",
+				"A Burglar's Pack contains the following items: {@item Backpack|XPHB}, {@item Ball Bearings|XPHB}, {@item Bell|XPHB}, 10 {@item Candle|XPHB|Candles}, {@item Crowbar|XPHB}, {@item Hooded Lantern|XPHB}, 7 flasks of {@item Oil|XPHB}, 5 days of {@item Rations|XPHB}, {@item Rope|XPHB}, {@item Tinderbox|XPHB}, and {@item Waterskin|XPHB}."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Caltrops|XPHB",
+			"hint": {
+				"Caltrops": "鐵蒺藜"
+			},
+			"s": [
+				"Caltrops",
+				"As a {@action Utilize|XPHB} action, you can spread Caltrops from their bag to cover a 5-foot-square area within 5 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a {@dc 15} Dexterity saving throw or take 1 Piercing damage and have its {@variantrule Speed|XPHB} reduced to 0 until the start of its next turn. It takes 10 minutes to recover the Caltrops."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Camel|XPHB",
+			"hint": {
+				"Camel": "駱駝"
+			},
+			"s": [
+				"Camel"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Candle|XPHB",
+			"hint": {
+				"Candle": "蠟燭"
+			},
+			"s": [
+				"Candle",
+				"For 1 hour, a lit Candle sheds {@variantrule Bright Light|XPHB} in a 5-foot radius and {@variantrule Dim Light|XPHB} for an additional 5 feet."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Carriage|XPHB",
+			"hint": {
+				"Carriage": "四輪馬車"
+			},
+			"s": [
+				"Carriage"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Cart|XPHB",
+			"hint": {
+				"Cart": "運貨車"
+			},
+			"s": [
+				"Cart"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Chain|XPHB",
+			"s": [
+				"Chain",
+				"As a {@action Utilize|XPHB} action, you can wrap a Chain around an unwilling creature within 5 feet of yourself that has the {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, or {@condition Restrained|XPHB} condition if you succeed on a {@dc 13} Strength ({@skill Athletics|XPHB}) check. If the creature's legs are bound, the creature has the {@condition Restrained|XPHB} condition until it escapes. Escaping the Chain requires the creature to make a successful {@dc 18} Dexterity ({@skill Acrobatics|XPHB}) check as an action. Bursting the Chain requires a successful {@dc 20} Strength ({@skill Athletics|XPHB}) check as an action."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Chariot|XPHB",
+			"hint": {
+				"Chariot": "雙輪戰車"
+			},
+			"s": [
+				"Chariot"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Cheese (wedge)|XPHB",
+			"s": [
+				"Cheese (wedge)"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Chest|XPHB",
+			"hint": {
+				"Chest": "箱子"
+			},
+			"s": [
+				"Chest",
+				"A Chest holds up to 12 cubic feet of contents."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Climber's Kit|XPHB",
+			"hint": {
+				"Climber's Kit": "攀爬工具組"
+			},
+			"s": [
+				"Climber's Kit",
+				"A Climber's Kit includes boot tips, gloves, pitons, and a harness. As a {@action Utilize|XPHB} action, you can use the Climber's Kit to anchor yourself; when you do, you can't fall more than 25 feet from the anchor point, and you can't move more than 25 feet from there without undoing the anchor as a {@variantrule Bonus Action|XPHB}."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Common Wine (bottle)|XPHB",
+			"s": [
+				"Common Wine (bottle)"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Component Pouch|XPHB",
+			"hint": {
+				"Component Pouch": "材料包"
+			},
+			"s": [
+				"Component Pouch",
+				"A Component Pouch is watertight and filled with compartments that hold all the free Material components of your spells."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Costume|XPHB",
+			"s": [
+				"Costume",
+				"While wearing a Costume, you have {@variantrule Advantage|XPHB} on any ability check you make to impersonate the person or type of person it represents."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Crossbow Bolt Case|XPHB",
+			"hint": {
+				"Crossbow Bolt Case": "弩矢匣"
+			},
+			"s": [
+				"Crossbow Bolt Case",
+				"A {@item Crossbow Bolt Case|XPHB} holds up to 20 Bolts."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Crowbar|XPHB",
+			"hint": {
+				"Crowbar": "撬棍"
+			},
+			"s": [
+				"Crowbar",
+				"Using a Crowbar gives you {@variantrule Advantage|XPHB} on Strength checks where the Crowbar's leverage can be applied."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Dice Set|XPHB",
+			"hint": {
+				"Dice Set": "骰子套組",
+				"Ability:": "屬性：",
+				"Utilize:": "使用："
+			},
+			"s": [
+				"Dice Set",
+				"Ability:",
+				"Wisdom",
+				"Utilize:",
+				"Discern whether someone is cheating ({@dc 10}), or win the game ({@dc 20})"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Diplomat's Pack|XPHB",
+			"hint": {
+				"Diplomat's Pack": "大使套裝"
+			},
+			"s": [
+				"Diplomat's Pack",
+				"A Diplomat's Pack contains the following items: {@item Chest|XPHB}, {@item Fine Clothes|XPHB}, {@item Ink|XPHB}, 5 {@item Ink Pen|XPHB|Ink Pens}, {@item Lamp|XPHB}, 2 {@item Map or Scroll Case|XPHB|Map or Scroll Cases}, 4 flasks of {@item Oil|XPHB}, 5 sheets of {@item Paper|XPHB}, 5 sheets of {@item Parchment|XPHB}, {@item Perfume|XPHB}, and {@item Tinderbox|XPHB}."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Disguise Kit|XPHB",
+			"hint": {
+				"Disguise Kit": "易容工具組",
+				"Ability:": "屬性：",
+				"Utilize:": "使用：",
+				"Craft:": "製作："
+			},
+			"s": [
+				"Disguise Kit",
+				"Ability:",
+				"Charisma",
+				"Utilize:",
+				"Apply makeup ({@dc 10})",
+				"Craft:"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Draft Horse|XPHB",
+			"hint": {
+				"Draft Horse": "輓馬"
+			},
+			"s": [
+				"Draft Horse"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Dragonchess Set|XPHB",
+			"hint": {
+				"Dragonchess Set": "龍棋套組",
+				"Ability:": "屬性：",
+				"Utilize:": "使用："
+			},
+			"s": [
+				"Dragonchess Set",
+				"Ability:",
+				"Wisdom",
+				"Utilize:",
+				"Discern whether someone is cheating ({@dc 10}), or win the game ({@dc 20})"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Dungeoneer's Pack|XPHB",
+			"hint": {
+				"Dungeoneer's Pack": "地城探險家套裝"
+			},
+			"s": [
+				"Dungeoneer's Pack",
+				"A Dungeoneer's Pack contains the following items: {@item Backpack|XPHB}, {@item Caltrops|XPHB}, {@item Crowbar|XPHB}, 2 flasks of {@item Oil|XPHB}, 10 days of {@item Rations|XPHB}, {@item Rope|XPHB}, {@item Tinderbox|XPHB}, 10 {@item Torch|XPHB|Torches}, and {@item Waterskin|XPHB}."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Elephant|XPHB",
+			"hint": {
+				"Elephant": "象"
+			},
+			"s": [
+				"Elephant"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Emblem|XPHB",
+			"hint": {
+				"Emblem": "徽章"
+			},
+			"s": [
+				"Emblem",
+				"For an Emblem to be an effective Holy Symbol, it must be borne on fabric (such as a tabard or banner) or a {@item Shield|XPHB}."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Entertainer's Pack|XPHB",
+			"hint": {
+				"Entertainer's Pack": "表演家套裝"
+			},
+			"s": [
+				"Entertainer's Pack",
+				"An Entertainer's Pack contains the following items: {@item Backpack|XPHB}, {@item Bedroll|XPHB}, {@item Bell|XPHB}, {@item Bullseye Lantern|XPHB}, 3 {@item Costume|XPHB|Costumes}, {@item Mirror|XPHB}, 8 flasks of {@item Oil|XPHB}, 9 days of {@item Rations|XPHB}, {@item Tinderbox|XPHB}, and {@item Waterskin|XPHB}."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Exotic Saddle|XPHB",
+			"hint": {
+				"Exotic Saddle": "異種鞍座"
+			},
+			"s": [
+				"Exotic Saddle",
+				"A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle. An Exotic Saddle is required for riding an aquatic or a flying mount."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Explorer's Pack|XPHB",
+			"hint": {
+				"Explorer's Pack": "探索者套裝"
+			},
+			"s": [
+				"Explorer's Pack",
+				"An Explorer's Pack contains the following items: {@item Backpack|XPHB}, {@item Bedroll|XPHB}, 2 flasks of {@item Oil|XPHB}, 10 days of {@item Rations|XPHB}, {@item Rope|XPHB}, {@item Tinderbox|XPHB}, 10 {@item Torch|XPHB|Torches}, and {@item Waterskin|XPHB}."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Feed (per day)|XPHB",
+			"hint": {
+				"Feed (per day)": "飼料(每日)"
+			},
+			"s": [
+				"Feed (per day)"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Fine Clothes|XPHB",
+			"hint": {
+				"Fine Clothes": "高級服裝"
+			},
+			"s": [
+				"Fine Clothes",
+				"Fine Clothes are made of expensive fabrics and adorned with expertly crafted details. Some events and locations admit only people wearing these clothes."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Fine Wine (bottle)|XPHB",
+			"s": [
+				"Fine Wine (bottle)"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Flask|XPHB",
+			"hint": {
+				"Flask": "扁瓶"
+			},
+			"s": [
+				"Flask",
+				"A Flask holds up to 1 pint."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Forgery Kit|XPHB",
+			"hint": {
+				"Forgery Kit": "偽造工具組",
+				"Ability:": "屬性：",
+				"Utilize:": "使用："
+			},
+			"s": [
+				"Forgery Kit",
+				"Ability:",
+				"Dexterity",
+				"Utilize:",
+				"Mimic 10 or fewer words of someone else's handwriting ({@dc 15}), or duplicate a wax seal ({@dc 20})"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Galley|XPHB",
+			"hint": {
+				"Galley": "槳帆船"
+			},
+			"s": [
+				"Galley"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Glass Bottle|XPHB",
+			"hint": {
+				"Glass Bottle": "玻璃瓶"
+			},
+			"s": [
+				"Glass Bottle",
+				"A Glass Bottle holds up to 1½ pints."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Grappling Hook|XPHB",
+			"hint": {
+				"Grappling Hook": "爪鉤"
+			},
+			"s": [
+				"Grappling Hook",
+				"As a {@action Utilize|XPHB} action, you can throw the Grappling Hook at a railing, a ledge, or another catch within 50 feet of yourself, and the hook catches on if you succeed on a {@dc 13} Dexterity ({@skill Acrobatics|XPHB}) check. If you tied a Rope to the hook, you can then climb it."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Healer's Kit|XPHB",
+			"hint": {
+				"Healer's Kit": "醫療工具組"
+			},
+			"s": [
+				"Healer's Kit",
+				"A Healer's Kit has ten uses. As a {@action Utilize|XPHB} action, you can expend one of its uses to stabilize an {@condition Unconscious|XPHB} creature that has 0 {@variantrule Hit Points|XPHB} without needing to make a Wisdom ({@skill Medicine|XPHB}) check."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Herbalism Kit|XPHB",
+			"hint": {
+				"Herbalism Kit": "藥草師工具組",
+				"Ability:": "屬性：",
+				"Utilize:": "使用：",
+				"Craft:": "製作："
+			},
+			"s": [
+				"Herbalism Kit",
+				"Ability:",
+				"Intelligence",
+				"Utilize:",
+				"Identify a plant ({@dc 10})",
+				"Craft:",
+				"{@item Antitoxin|XPHB}, {@item Candle|XPHB}, {@item Healer's Kit|XPHB}, {@item Potion of Healing|XDMG}"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Holy Water|XPHB",
+			"s": [
+				"Holy Water",
+				"When you take the {@action Attack|XPHB} action, you can replace one of your attacks with throwing a flask of Holy Water. Target one creature you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw ({@dc 8} plus your Dexterity modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}) or take {@damage 2d8} Radiant damage if it is a Fiend or an Undead."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Hooded Lantern|XPHB",
+			"hint": {
+				"Hooded Lantern": "附蓋提燈"
+			},
+			"s": [
+				"Hooded Lantern",
+				"A Hooded Lantern burns Oil as fuel to cast {@variantrule Bright Light|XPHB} in a 30-foot radius and {@variantrule Dim Light|XPHB} for an additional 30 feet. As a {@variantrule Bonus Action|XPHB}, you can lower the hood, reducing the light to {@variantrule Dim Light|XPHB} in a 5-foot radius, or raise it again."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Hunting Trap|XPHB",
+			"hint": {
+				"Hunting Trap": "狩獵陷阱"
+			},
+			"s": [
+				"Hunting Trap",
+				"As a {@action Utilize|XPHB} action, you can set a Hunting Trap, which is a sawtooth steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a {@dc 13} Dexterity saving throw or take {@damage 1d4} Piercing damage and have its {@variantrule Speed|XPHB} reduced to 0 until the start of its next turn. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet). A creature can use its action to make a {@dc 13} Strength ({@skill Athletics|XPHB}) check, freeing itself or another creature within its reach on a success. Each failed check deals 1 Piercing damage to the trapped creature."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Ink|XPHB",
+			"s": [
+				"Ink",
+				"Ink comes in a 1-ounce bottle, which provides enough ink to write about 500 pages."
+			]
+		}
+	]
+}

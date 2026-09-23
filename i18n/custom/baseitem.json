@@ -1,0 +1,2762 @@
+{
+	"Alchemist's Supplies|XPHB": {
+		"name": "煉金師設備",
+		"source": "XPHB",
+		"page": 220,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TFV"
+		],
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 8,
+		"value": 5000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"智力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"辨識一種物質（{@dc 15}），或生火（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Acid|XPHB}、{@item Alchemist's Fire|XPHB}、{@item Component Pouch|XPHB}、{@item Oil|XPHB}、{@item Paper|XPHB}、{@item Perfume|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Alchemist's Supplies"
+	},
+	"Arrow|XPHB": {
+		"name": "箭",
+		"source": "XPHB",
+		"page": 222,
+		"srd52": true,
+		"edition": "one",
+		"type": "A|XPHB",
+		"rarity": "none",
+		"weight": 0.05,
+		"value": 5,
+		"arrow": true,
+		"entries": [
+			"箭需搭配具有彈藥屬性的武器進行遠程攻擊。每次以該武器攻擊時，你會消耗一件彈藥。從箭筒、箭匣或其他容器中取出彈藥是攻擊的一部分（裝填單手武器時你需要一隻空手）。戰鬥結束時，你可以花費一分鐘搜索戰場，回收一半已消耗的彈藥。",
+			"箭通常存放在{@item Quiver|XPHB}中（需另購）。"
+		],
+		"ENG_name": "Arrow"
+	},
+	"Arrows (20)|XPHB": {
+		"name": "箭（20）",
+		"source": "XPHB",
+		"page": 222,
+		"srd52": true,
+		"referenceSources": [
+			"DrDe-TWoO"
+		],
+		"edition": "one",
+		"type": "A|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 100,
+		"arrow": true,
+		"entries": [
+			"箭需搭配具有彈藥屬性的武器進行遠程攻擊。每次以該武器攻擊時，你會消耗一件彈藥。從箭筒、箭匣或其他容器中取出彈藥是攻擊的一部分（裝填單手武器時你需要一隻空手）。戰鬥結束時，你可以花費一分鐘搜索戰場，回收一半已消耗的彈藥。",
+			"箭通常存放在{@item Quiver|XPHB}中（需另購）。"
+		],
+		"packContents": [
+			{
+				"item": "arrow|xphb",
+				"quantity": 20
+			}
+		],
+		"ENG_name": "Arrows (20)"
+	},
+	"Bagpipes|XPHB": {
+		"name": "風笛",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "INS|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 3000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"魅力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"演奏一首熟悉的曲子（{@dc 10}），或即興創作一首歌（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Bagpipes"
+	},
+	"Battleaxe|XPHB": {
+		"name": "戰斧",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 1000,
+		"weaponCategory": "martial",
+		"property": [
+			"V|XPHB"
+		],
+		"mastery": [
+			"Topple|XPHB"
+		],
+		"dmg1": "1d8",
+		"dmgType": "S",
+		"dmg2": "1d10",
+		"axe": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Battleaxe"
+	},
+	"Blowgun|XPHB": {
+		"name": "吹箭筒",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "R|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 1000,
+		"weaponCategory": "martial",
+		"property": [
+			"A|XPHB",
+			"LD|XPHB"
+		],
+		"mastery": [
+			"Vex|XPHB"
+		],
+		"range": "25/100",
+		"dmg1": "1",
+		"dmgType": "P",
+		"weapon": true,
+		"ammoType": "needle|xphb",
+		"hasFluffImages": true,
+		"ENG_name": "Blowgun"
+	},
+	"Bolt|XPHB": {
+		"name": "弩矢",
+		"source": "XPHB",
+		"page": 222,
+		"srd52": true,
+		"edition": "one",
+		"type": "A|XPHB",
+		"rarity": "none",
+		"weight": 0.075,
+		"value": 5,
+		"bolt": true,
+		"entries": [
+			"弩矢需搭配具有彈藥屬性的武器進行遠程攻擊。每次以該武器攻擊時，你會消耗一件彈藥。從箭筒、箭匣或其他容器中取出彈藥是攻擊的一部分（裝填單手武器時你需要一隻空手）。戰鬥結束時，你可以花費一分鐘搜索戰場，回收一半已消耗的彈藥。",
+			"弩矢通常存放在{@item Crossbow Bolt Case|XPHB}中（需另購）。"
+		],
+		"ENG_name": "Bolt"
+	},
+	"Bolts (20)|XPHB": {
+		"name": "弩矢（20）",
+		"source": "XPHB",
+		"page": 222,
+		"srd52": true,
+		"edition": "one",
+		"type": "A|XPHB",
+		"rarity": "none",
+		"weight": 1.5,
+		"value": 100,
+		"bolt": true,
+		"entries": [
+			"弩矢需搭配具有彈藥屬性的武器進行遠程攻擊。每次以該武器攻擊時，你會消耗一件彈藥。從箭筒、箭匣或其他容器中取出彈藥是攻擊的一部分（裝填單手武器時你需要一隻空手）。戰鬥結束時，你可以花費一分鐘搜索戰場，回收一半已消耗的彈藥。",
+			"弩矢通常存放在{@item Crossbow Bolt Case|XPHB}中（需另購）。"
+		],
+		"packContents": [
+			{
+				"item": "bolt|xphb",
+				"quantity": 20
+			}
+		],
+		"ENG_name": "Bolts (20)"
+	},
+	"Breastplate|XPHB": {
+		"name": "護胸甲",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TFV",
+			"HotB"
+		],
+		"edition": "one",
+		"type": "MA|XPHB",
+		"rarity": "none",
+		"weight": 20,
+		"value": 40000,
+		"ac": 14,
+		"armor": true,
+		"hasFluffImages": true,
+		"ENG_name": "Breastplate"
+	},
+	"Brewer's Supplies|XPHB": {
+		"name": "釀酒師設備",
+		"source": "XPHB",
+		"page": 220,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN",
+			"DrDe-TFV"
+		],
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 9,
+		"value": 2000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"智力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"察覺飲料是否有毒（{@dc 15}），或辨識酒類（{@dc 10}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Antitoxin|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Brewer's Supplies"
+	},
+	"Calligrapher's Supplies|XPHB": {
+		"name": "書法家設備",
+		"source": "XPHB",
+		"page": 220,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 1000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"敏捷"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"以華麗的筆法書寫難以偽造的文字（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Ink|XPHB}、{@item Spell Scroll|XDMG}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Calligrapher's Supplies"
+	},
+	"Carpenter's Tools|XPHB": {
+		"name": "木匠工具",
+		"source": "XPHB",
+		"page": 220,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 800,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"力量"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"封死或撬開一扇門或一個容器（{@dc 20}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Club|XPHB}、{@item Greatclub|XPHB}、{@item Quarterstaff|XPHB}、{@item Barrel|XPHB}、{@item Chest|XPHB}、{@item Ladder|XPHB}、{@item Pole|XPHB}、{@item Portable Ram|XPHB}、{@item Torch|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Carpenter's Tools"
+	},
+	"Cartographer's Tools|XPHB": {
+		"name": "制圖師工具",
+		"source": "XPHB",
+		"page": 220,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 1500,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"感知"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"繪製一小塊區域的地圖（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Map|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Cartographer's Tools"
+	},
+	"Chain Mail|XPHB": {
+		"name": "鎖子甲",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "HA|XPHB",
+		"rarity": "none",
+		"weight": 55,
+		"value": 7500,
+		"ac": 16,
+		"strength": "13",
+		"armor": true,
+		"stealth": true,
+		"hasFluffImages": true,
+		"ENG_name": "Chain Mail"
+	},
+	"Chain Shirt|XPHB": {
+		"name": "鏈甲衫",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "MA|XPHB",
+		"rarity": "none",
+		"weight": 20,
+		"value": 5000,
+		"ac": 13,
+		"armor": true,
+		"hasFluffImages": true,
+		"ENG_name": "Chain Shirt"
+	},
+	"Club|XPHB": {
+		"name": "棍棒",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 10,
+		"weaponCategory": "simple",
+		"property": [
+			"L|XPHB"
+		],
+		"mastery": [
+			"Slow|XPHB"
+		],
+		"dmg1": "1d4",
+		"dmgType": "B",
+		"club": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Club"
+	},
+	"Cobbler's Tools|XPHB": {
+		"name": "鞋匠工具",
+		"source": "XPHB",
+		"page": 220,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 500,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"敏捷"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"改造鞋子，使穿著者下一次的敏捷（{@skill Acrobatics|XPHB}）檢定具有{@variantrule Advantage|XPHB}（{@dc 10}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Climber's Kit|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Cobbler's Tools"
+	},
+	"Cook's Utensils|XPHB": {
+		"name": "廚師炊具",
+		"source": "XPHB",
+		"page": 220,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 8,
+		"value": 100,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"感知"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"改善食物的風味（{@dc 10}），或察覺腐壞或有毒的食物（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Rations|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Cook's Utensils"
+	},
+	"Crystal|XPHB": {
+		"name": "水晶",
+		"group": [
+			"Arcane Focus"
+		],
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"edition": "one",
+		"type": "SCF|XPHB",
+		"scfType": "arcane",
+		"rarity": "none",
+		"weight": 1,
+		"value": 1000,
+		"ENG_name": "Crystal"
+	},
+	"Dagger|XPHB": {
+		"name": "匕首",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TWoO",
+			"DrDe-TFV"
+		],
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 200,
+		"weaponCategory": "simple",
+		"property": [
+			"F|XPHB",
+			"L|XPHB",
+			"T|XPHB"
+		],
+		"mastery": [
+			"Nick|XPHB"
+		],
+		"range": "20/60",
+		"dmg1": "1d4",
+		"dmgType": "P",
+		"dagger": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Dagger"
+	},
+	"Dart|XPHB": {
+		"name": "飛鏢",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "R|XPHB",
+		"rarity": "none",
+		"weight": 0.25,
+		"value": 5,
+		"weaponCategory": "simple",
+		"property": [
+			"F|XPHB",
+			"T|XPHB"
+		],
+		"mastery": [
+			"Vex|XPHB"
+		],
+		"range": "20/60",
+		"dmg1": "1d4",
+		"dmgType": "P",
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Dart"
+	},
+	"Drum|XPHB": {
+		"name": "鼓",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"edition": "one",
+		"type": "INS|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 600,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"魅力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"演奏一首熟悉的曲子（{@dc 10}），或即興創作一首歌（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Drum"
+	},
+	"Dulcimer|XPHB": {
+		"name": "揚琴",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "INS|XPHB",
+		"rarity": "none",
+		"weight": 10,
+		"value": 2500,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"魅力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"演奏一首熟悉的曲子（{@dc 10}），或即興創作一首歌（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Dulcimer"
+	},
+	"Firearm Bullet|XPHB": {
+		"name": "火器子彈",
+		"source": "XPHB",
+		"page": 222,
+		"edition": "one",
+		"type": "A|XPHB",
+		"rarity": "none",
+		"weight": 0.2,
+		"value": 30,
+		"bulletFirearm": true,
+		"entries": [
+			"火器子彈在現代火器中使用後即損毀。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Firearm Bullet"
+	},
+	"Firearm Bullets (10)|XPHB": {
+		"name": "火器子彈（10）",
+		"source": "XPHB",
+		"page": 222,
+		"edition": "one",
+		"type": "A|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 300,
+		"bulletFirearm": true,
+		"entries": [
+			"火器子彈在現代火器中使用後即損毀。"
+		],
+		"packContents": [
+			{
+				"item": "firearm bullet|xphb",
+				"quantity": 10
+			}
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Firearm Bullets (10)"
+	},
+	"Flail|XPHB": {
+		"name": "連枷",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 1000,
+		"weaponCategory": "martial",
+		"mastery": [
+			"Sap|XPHB"
+		],
+		"dmg1": "1d8",
+		"dmgType": "B",
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Flail"
+	},
+	"Flute|XPHB": {
+		"name": "長笛",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"edition": "one",
+		"type": "INS|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 200,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"魅力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"演奏一首熟悉的曲子（{@dc 10}），或即興創作一首歌（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Flute"
+	},
+	"Glaive|XPHB": {
+		"name": "長柄刀",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 2000,
+		"weaponCategory": "martial",
+		"property": [
+			"H|XPHB",
+			"R|XPHB",
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Graze|XPHB"
+		],
+		"dmg1": "1d10",
+		"dmgType": "S",
+		"polearm": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Glaive"
+	},
+	"Glassblower's Tools|XPHB": {
+		"name": "玻璃匠工具",
+		"source": "XPHB",
+		"page": 220,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 3000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"智力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"辨別一件玻璃物品在過去 24 小時內盛裝過什麼（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Glass Bottle|XPHB}、{@item Magnifying Glass|XPHB}、{@item Spyglass|XPHB}、{@item Vial|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Glassblower's Tools"
+	},
+	"Greataxe|XPHB": {
+		"name": "巨斧",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 7,
+		"value": 3000,
+		"weaponCategory": "martial",
+		"property": [
+			"H|XPHB",
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Cleave|XPHB"
+		],
+		"dmg1": "1d12",
+		"dmgType": "S",
+		"axe": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Greataxe"
+	},
+	"Greatclub|XPHB": {
+		"name": "巨棍",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-BD"
+		],
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 10,
+		"value": 20,
+		"weaponCategory": "simple",
+		"property": [
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Push|XPHB"
+		],
+		"dmg1": "1d8",
+		"dmgType": "B",
+		"club": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Greatclub"
+	},
+	"Greatsword|XPHB": {
+		"name": "巨劍",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 5000,
+		"weaponCategory": "martial",
+		"property": [
+			"H|XPHB",
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Graze|XPHB"
+		],
+		"dmg1": "2d6",
+		"dmgType": "S",
+		"sword": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Greatsword"
+	},
+	"Halberd|XPHB": {
+		"name": "斧槍",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 2000,
+		"weaponCategory": "martial",
+		"property": [
+			"H|XPHB",
+			"R|XPHB",
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Cleave|XPHB"
+		],
+		"dmg1": "1d10",
+		"dmgType": "S",
+		"polearm": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Halberd"
+	},
+	"Half Plate Armor|XPHB": {
+		"name": "半身板甲",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "MA|XPHB",
+		"rarity": "none",
+		"weight": 40,
+		"value": 75000,
+		"ac": 15,
+		"armor": true,
+		"stealth": true,
+		"hasFluffImages": true,
+		"ENG_name": "Half Plate Armor"
+	},
+	"Hand Crossbow|XPHB": {
+		"name": "手弩",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"edition": "one",
+		"type": "R|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 7500,
+		"weaponCategory": "martial",
+		"property": [
+			"A|XPHB",
+			"L|XPHB",
+			"LD|XPHB"
+		],
+		"mastery": [
+			"Vex|XPHB"
+		],
+		"range": "30/120",
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"crossbow": true,
+		"weapon": true,
+		"ammoType": "bolt|xphb",
+		"hasFluffImages": true,
+		"ENG_name": "Hand Crossbow"
+	},
+	"Handaxe|XPHB": {
+		"name": "手斧",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 500,
+		"weaponCategory": "simple",
+		"property": [
+			"L|XPHB",
+			"T|XPHB"
+		],
+		"mastery": [
+			"Vex|XPHB"
+		],
+		"range": "20/60",
+		"dmg1": "1d6",
+		"dmgType": "S",
+		"axe": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Handaxe"
+	},
+	"Heavy Crossbow|XPHB": {
+		"name": "重弩",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "R|XPHB",
+		"rarity": "none",
+		"weight": 18,
+		"value": 5000,
+		"weaponCategory": "martial",
+		"property": [
+			"A|XPHB",
+			"H|XPHB",
+			"LD|XPHB",
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Push|XPHB"
+		],
+		"range": "100/400",
+		"dmg1": "1d10",
+		"dmgType": "P",
+		"crossbow": true,
+		"weapon": true,
+		"ammoType": "bolt|xphb",
+		"hasFluffImages": true,
+		"ENG_name": "Heavy Crossbow"
+	},
+	"Hide Armor|XPHB": {
+		"name": "生皮甲",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "MA|XPHB",
+		"rarity": "none",
+		"weight": 12,
+		"value": 1000,
+		"ac": 12,
+		"armor": true,
+		"hasFluffImages": true,
+		"ENG_name": "Hide Armor"
+	},
+	"Horn|XPHB": {
+		"name": "號角",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "INS|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 300,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"魅力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"演奏一首熟悉的曲子（{@dc 10}），或即興創作一首歌（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Horn"
+	},
+	"Javelin|XPHB": {
+		"name": "標槍",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 50,
+		"weaponCategory": "simple",
+		"property": [
+			"T|XPHB"
+		],
+		"mastery": [
+			"Slow|XPHB"
+		],
+		"range": "30/120",
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"spear": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Javelin"
+	},
+	"Jeweler's Tools|XPHB": {
+		"name": "珠寶匠工具",
+		"source": "XPHB",
+		"page": 220,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TFV"
+		],
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 2500,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"智力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"辨別一顆寶石的價值（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Arcane Focus|XPHB}、{@item Holy Symbol|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Jeweler's Tools"
+	},
+	"Lance|XPHB": {
+		"name": "騎槍",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 1000,
+		"weaponCategory": "martial",
+		"property": [
+			"H|XPHB",
+			"R|XPHB",
+			{
+				"uid": "2H|XPHB",
+				"note": "除非騎乘中"
+			}
+		],
+		"mastery": [
+			"Topple|XPHB"
+		],
+		"dmg1": "1d10",
+		"dmgType": "P",
+		"lance": true,
+		"weapon": true,
+		"entries": [
+			"未騎乘時，騎槍需要雙手才能揮舞。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Lance"
+	},
+	"Leather Armor|XPHB": {
+		"name": "皮甲",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "LA|XPHB",
+		"rarity": "none",
+		"weight": 10,
+		"value": 1000,
+		"ac": 11,
+		"armor": true,
+		"hasFluffImages": true,
+		"ENG_name": "Leather Armor"
+	},
+	"Leatherworker's Tools|XPHB": {
+		"name": "皮匠工具",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 500,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"敏捷"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"在皮革物品上添加圖樣（{@dc 10}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Sling|XPHB}、{@item Whip|XPHB}、{@item Hide Armor|XPHB}、{@item Leather Armor|XPHB}、{@item Studded Leather Armor|XPHB}、{@item Backpack|XPHB}、{@item Crossbow Bolt Case|XPHB}、{@item Map or Scroll Case|XPHB}、{@item Parchment|XPHB}、{@item Pouch|XPHB}、{@item Quiver|XPHB}、{@item Waterskin|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Leatherworker's Tools"
+	},
+	"Light Crossbow|XPHB": {
+		"name": "輕弩",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-DaS"
+		],
+		"edition": "one",
+		"type": "R|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 2500,
+		"weaponCategory": "simple",
+		"property": [
+			"A|XPHB",
+			"LD|XPHB",
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Slow|XPHB"
+		],
+		"range": "80/320",
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"crossbow": true,
+		"weapon": true,
+		"ammoType": "bolt|xphb",
+		"hasFluffImages": true,
+		"ENG_name": "Light Crossbow"
+	},
+	"Light Hammer|XPHB": {
+		"name": "輕錘",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 200,
+		"weaponCategory": "simple",
+		"property": [
+			"L|XPHB",
+			"T|XPHB"
+		],
+		"mastery": [
+			"Nick|XPHB"
+		],
+		"range": "20/60",
+		"dmg1": "1d4",
+		"dmgType": "B",
+		"hammer": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Light Hammer"
+	},
+	"Longbow|XPHB": {
+		"name": "長弓",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "R|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 5000,
+		"weaponCategory": "martial",
+		"property": [
+			"A|XPHB",
+			"H|XPHB",
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Slow|XPHB"
+		],
+		"range": "150/600",
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"bow": true,
+		"weapon": true,
+		"ammoType": "arrow|xphb",
+		"hasFluffImages": true,
+		"ENG_name": "Longbow"
+	},
+	"Longsword|XPHB": {
+		"name": "長劍",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 1500,
+		"weaponCategory": "martial",
+		"property": [
+			"V|XPHB"
+		],
+		"mastery": [
+			"Sap|XPHB"
+		],
+		"dmg1": "1d8",
+		"dmgType": "S",
+		"dmg2": "1d10",
+		"sword": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Longsword"
+	},
+	"Lute|XPHB": {
+		"name": "魯特琴",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"edition": "one",
+		"type": "INS|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 3500,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"魅力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"演奏一首熟悉的曲子（{@dc 10}），或即興創作一首歌（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Lute"
+	},
+	"Lyre|XPHB": {
+		"name": "里拉琴",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "INS|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 3000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"魅力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"演奏一首熟悉的曲子（{@dc 10}），或即興創作一首歌（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Lyre"
+	},
+	"Mace|XPHB": {
+		"name": "硬頭錘",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 500,
+		"weaponCategory": "simple",
+		"mastery": [
+			"Sap|XPHB"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"mace": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Mace"
+	},
+	"Mason's Tools|XPHB": {
+		"name": "石匠工具",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN",
+			"DrDe-TFV"
+		],
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 8,
+		"value": 1000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"力量"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"在石頭上鑿出符號或孔洞（{@dc 10}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Block and Tackle|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Mason's Tools"
+	},
+	"Maul|XPHB": {
+		"name": "巨鎚",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 10,
+		"value": 1000,
+		"weaponCategory": "martial",
+		"property": [
+			"H|XPHB",
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Topple|XPHB"
+		],
+		"dmg1": "2d6",
+		"dmgType": "B",
+		"hammer": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Maul"
+	},
+	"Morningstar|XPHB": {
+		"name": "釘頭錘",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 1500,
+		"weaponCategory": "martial",
+		"mastery": [
+			"Sap|XPHB"
+		],
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"mace": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Morningstar"
+	},
+	"Musket|XPHB": {
+		"name": "鳥銃",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "R|XPHB",
+		"rarity": "none",
+		"weight": 10,
+		"value": 50000,
+		"weaponCategory": "martial",
+		"property": [
+			"A|XPHB",
+			"LD|XPHB",
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Slow|XPHB"
+		],
+		"range": "40/120",
+		"dmg1": "1d12",
+		"dmgType": "P",
+		"firearm": true,
+		"weapon": true,
+		"ammoType": "firearm bullet|xphb",
+		"hasFluffImages": true,
+		"ENG_name": "Musket"
+	},
+	"Needle|XPHB": {
+		"name": "吹針",
+		"source": "XPHB",
+		"page": 222,
+		"srd52": true,
+		"edition": "one",
+		"type": "A|XPHB",
+		"rarity": "none",
+		"weight": 0.02,
+		"value": 2,
+		"needleBlowgun": true,
+		"entries": [
+			"吹箭筒的吹針需搭配具有彈藥屬性的武器進行遠程攻擊。每次以該武器攻擊時，你會消耗一件彈藥。從箭筒、箭匣或其他容器中取出彈藥是攻擊的一部分（裝填單手武器時你需要一隻空手）。戰鬥結束時，你可以花費一分鐘搜索戰場，回收一半已消耗的彈藥。",
+			"吹針通常存放在{@item Pouch|XPHB}中（需另購）。"
+		],
+		"ENG_name": "Needle"
+	},
+	"Needles (50)|XPHB": {
+		"name": "吹針（50）",
+		"source": "XPHB",
+		"page": 222,
+		"srd52": true,
+		"edition": "one",
+		"type": "A|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 100,
+		"needleBlowgun": true,
+		"entries": [
+			"吹箭筒的吹針需搭配具有彈藥屬性的武器進行遠程攻擊。每次以該武器攻擊時，你會消耗一件彈藥。從箭筒、箭匣或其他容器中取出彈藥是攻擊的一部分（裝填單手武器時你需要一隻空手）。戰鬥結束時，你可以花費一分鐘搜索戰場，回收一半已消耗的彈藥。",
+			"吹針通常存放在{@item Pouch|XPHB}中（需另購）。"
+		],
+		"packContents": [
+			{
+				"item": "needle|xphb",
+				"quantity": 50
+			}
+		],
+		"ENG_name": "Needles (50)"
+	},
+	"Orb|XPHB": {
+		"name": "法球",
+		"group": [
+			"Arcane Focus"
+		],
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"edition": "one",
+		"type": "SCF|XPHB",
+		"scfType": "arcane",
+		"rarity": "none",
+		"weight": 3,
+		"value": 2000,
+		"ENG_name": "Orb"
+	},
+	"Padded Armor|XPHB": {
+		"name": "綿甲",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "LA|XPHB",
+		"rarity": "none",
+		"weight": 8,
+		"value": 500,
+		"ac": 11,
+		"armor": true,
+		"stealth": true,
+		"hasFluffImages": true,
+		"ENG_name": "Padded Armor"
+	},
+	"Painter's Supplies|XPHB": {
+		"name": "畫家設備",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 1000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"感知"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"畫出你看過之事物的可辨識圖像（{@dc 10}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Druidic Focus|XPHB}、{@item Holy Symbol|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Painter's Supplies"
+	},
+	"Pan Flute|XPHB": {
+		"name": "排笛",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "INS|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 1200,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"魅力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"演奏一首熟悉的曲子（{@dc 10}），或即興創作一首歌（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Pan Flute"
+	},
+	"Pike|XPHB": {
+		"name": "長柄槍",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 18,
+		"value": 500,
+		"weaponCategory": "martial",
+		"property": [
+			"H|XPHB",
+			"R|XPHB",
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Push|XPHB"
+		],
+		"dmg1": "1d10",
+		"dmgType": "P",
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Pike"
+	},
+	"Pistol|XPHB": {
+		"name": "手槍",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "R|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 25000,
+		"weaponCategory": "martial",
+		"property": [
+			"A|XPHB",
+			"LD|XPHB"
+		],
+		"mastery": [
+			"Vex|XPHB"
+		],
+		"range": "30/90",
+		"dmg1": "1d10",
+		"dmgType": "P",
+		"firearm": true,
+		"weapon": true,
+		"ammoType": "firearm bullet|xphb",
+		"hasFluffImages": true,
+		"ENG_name": "Pistol"
+	},
+	"Plate Armor|XPHB": {
+		"name": "全身板甲",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "HA|XPHB",
+		"rarity": "none",
+		"weight": 65,
+		"value": 150000,
+		"ac": 18,
+		"strength": "15",
+		"armor": true,
+		"stealth": true,
+		"hasFluffImages": true,
+		"ENG_name": "Plate Armor"
+	},
+	"Potter's Tools|XPHB": {
+		"name": "陶匠工具",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 1000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"智力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"辨別一件陶瓷物品在過去 24 小時內盛裝過什麼（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Jug|XPHB}、{@item Lamp|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Potter's Tools"
+	},
+	"Quarterstaff|XPHB": {
+		"name": "長棍",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 20,
+		"weaponCategory": "simple",
+		"property": [
+			"V|XPHB"
+		],
+		"mastery": [
+			"Topple|XPHB"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Quarterstaff"
+	},
+	"Rapier|XPHB": {
+		"name": "刺劍",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 2500,
+		"weaponCategory": "martial",
+		"property": [
+			"F|XPHB"
+		],
+		"mastery": [
+			"Vex|XPHB"
+		],
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"rapier": true,
+		"sword": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Rapier"
+	},
+	"Ring Mail|XPHB": {
+		"name": "環甲",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "HA|XPHB",
+		"rarity": "none",
+		"weight": 40,
+		"value": 3000,
+		"ac": 14,
+		"armor": true,
+		"stealth": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ring Mail"
+	},
+	"Rod|XPHB": {
+		"name": "權杖",
+		"group": [
+			"Arcane Focus"
+		],
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"edition": "one",
+		"type": "SCF|XPHB",
+		"scfType": "arcane",
+		"rarity": "none",
+		"weight": 2,
+		"value": 1000,
+		"ENG_name": "Rod"
+	},
+	"Scale Mail|XPHB": {
+		"name": "鱗甲",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FFotR"
+		],
+		"edition": "one",
+		"type": "MA|XPHB",
+		"rarity": "none",
+		"weight": 45,
+		"value": 5000,
+		"ac": 14,
+		"armor": true,
+		"stealth": true,
+		"hasFluffImages": true,
+		"ENG_name": "Scale Mail"
+	},
+	"Scimitar|XPHB": {
+		"name": "彎刀",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-DaS"
+		],
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 2500,
+		"weaponCategory": "martial",
+		"property": [
+			"F|XPHB",
+			"L|XPHB"
+		],
+		"mastery": [
+			"Nick|XPHB"
+		],
+		"dmg1": "1d6",
+		"dmgType": "S",
+		"sword": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Scimitar"
+	},
+	"Shawm|XPHB": {
+		"name": "蕭姆管",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "INS|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 200,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"魅力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"演奏一首熟悉的曲子（{@dc 10}），或即興創作一首歌（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Shawm"
+	},
+	"Shield|XPHB": {
+		"name": "盾牌",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TFV",
+			"HotB"
+		],
+		"edition": "one",
+		"type": "S|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 1000,
+		"ac": 2,
+		"hasFluffImages": true,
+		"ENG_name": "Shield"
+	},
+	"Shortbow|XPHB": {
+		"name": "短弓",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TWoO"
+		],
+		"edition": "one",
+		"type": "R|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 2500,
+		"weaponCategory": "simple",
+		"property": [
+			"A|XPHB",
+			"2H|XPHB"
+		],
+		"mastery": [
+			"Vex|XPHB"
+		],
+		"range": "80/320",
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"bow": true,
+		"weapon": true,
+		"ammoType": "arrow|xphb",
+		"hasFluffImages": true,
+		"ENG_name": "Shortbow"
+	},
+	"Shortsword|XPHB": {
+		"name": "短劍",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TWoO",
+			"DrDe-SD"
+		],
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 1000,
+		"weaponCategory": "martial",
+		"property": [
+			"F|XPHB",
+			"L|XPHB"
+		],
+		"mastery": [
+			"Vex|XPHB"
+		],
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"sword": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Shortsword"
+	},
+	"Sickle|XPHB": {
+		"name": "鐮刀",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 100,
+		"weaponCategory": "simple",
+		"property": [
+			"L|XPHB"
+		],
+		"mastery": [
+			"Nick|XPHB"
+		],
+		"dmg1": "1d4",
+		"dmgType": "S",
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Sickle"
+	},
+	"Sling Bullet|XPHB": {
+		"name": "投石索彈丸",
+		"source": "XPHB",
+		"page": 222,
+		"srd52": true,
+		"edition": "one",
+		"type": "A|XPHB",
+		"rarity": "none",
+		"weight": 0.075,
+		"value": 0.2,
+		"bulletSling": true,
+		"entries": [
+			"投石索彈丸需搭配具有彈藥屬性的武器進行遠程攻擊。每次以該武器攻擊時，你會消耗一件彈藥。從箭筒、箭匣或其他容器中取出彈藥是攻擊的一部分（裝填單手武器時你需要一隻空手）。戰鬥結束時，你可以花費一分鐘搜索戰場，回收一半已消耗的彈藥。",
+			"投石索彈丸通常存放在{@item Pouch|XPHB}中（需另購）。"
+		],
+		"ENG_name": "Sling Bullet"
+	},
+	"Sling Bullets (20)|XPHB": {
+		"name": "投石索彈丸（20）",
+		"source": "XPHB",
+		"page": 222,
+		"srd52": true,
+		"edition": "one",
+		"type": "A|XPHB",
+		"rarity": "none",
+		"weight": 1.5,
+		"value": 4,
+		"bulletSling": true,
+		"entries": [
+			"投石索彈丸需搭配具有彈藥屬性的武器進行遠程攻擊。每次以該武器攻擊時，你會消耗一件彈藥。從箭筒、箭匣或其他容器中取出彈藥是攻擊的一部分（裝填單手武器時你需要一隻空手）。戰鬥結束時，你可以花費一分鐘搜索戰場，回收一半已消耗的彈藥。",
+			"投石索彈丸通常存放在{@item Pouch|XPHB}中（需另購）。"
+		],
+		"packContents": [
+			{
+				"item": "sling bullet|xphb",
+				"quantity": 20
+			}
+		],
+		"ENG_name": "Sling Bullets (20)"
+	},
+	"Sling|XPHB": {
+		"name": "投石索",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "R|XPHB",
+		"rarity": "none",
+		"value": 10,
+		"weaponCategory": "simple",
+		"property": [
+			"A|XPHB"
+		],
+		"mastery": [
+			"Slow|XPHB"
+		],
+		"range": "30/120",
+		"dmg1": "1d4",
+		"dmgType": "B",
+		"weapon": true,
+		"ammoType": "sling bullet|xphb",
+		"hasFluffImages": true,
+		"ENG_name": "Sling"
+	},
+	"Smith's Tools|XPHB": {
+		"name": "鐵匠工具",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 8,
+		"value": 2000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"力量"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"撬開一扇門或一個容器（{@dc 20}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"任何近戰武器（{@item Club|XPHB}、{@item Greatclub|XPHB}、{@item Quarterstaff|XPHB}與{@item Whip|XPHB}除外）、中甲（{@item Hide Armor|XPHB|生皮甲}除外）、重甲、{@item Ball Bearings|XPHB}、{@item Bucket|XPHB}、{@item Caltrops|XPHB}、{@item Chain|XPHB}、{@item Crowbar|XPHB}、{@item Firearm Bullets (10)|XPHB|火器子彈}、{@item Grappling Hook|XPHB}、{@item Iron Pot|XPHB}、{@item Iron Spikes|XPHB}、{@item Sling Bullets (20)|XPHB|投石索彈丸}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Smith's Tools"
+	},
+	"Spear|XPHB": {
+		"name": "矛",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 100,
+		"weaponCategory": "simple",
+		"property": [
+			"T|XPHB",
+			"V|XPHB"
+		],
+		"mastery": [
+			"Sap|XPHB"
+		],
+		"range": "20/60",
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"dmg2": "1d8",
+		"spear": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Spear"
+	},
+	"Splint Armor|XPHB": {
+		"name": "條板甲",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"edition": "one",
+		"type": "HA|XPHB",
+		"rarity": "none",
+		"weight": 60,
+		"value": 20000,
+		"ac": 17,
+		"strength": "15",
+		"armor": true,
+		"stealth": true,
+		"hasFluffImages": true,
+		"ENG_name": "Splint Armor"
+	},
+	"Staff|XPHB": {
+		"name": "法杖",
+		"group": [
+			"Arcane Focus"
+		],
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"edition": "one",
+		"type": "SCF|XPHB",
+		"scfType": "arcane",
+		"rarity": "none",
+		"weight": 4,
+		"value": 500,
+		"weaponCategory": "simple",
+		"property": [
+			"V"
+		],
+		"mastery": [
+			"Topple|XPHB"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"staff": true,
+		"ENG_name": "Staff"
+	},
+	"Studded Leather Armor|XPHB": {
+		"name": "鑲釘皮甲",
+		"source": "XPHB",
+		"page": 219,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"edition": "one",
+		"type": "LA|XPHB",
+		"rarity": "none",
+		"weight": 13,
+		"value": 4500,
+		"ac": 12,
+		"armor": true,
+		"hasFluffImages": true,
+		"ENG_name": "Studded Leather Armor"
+	},
+	"Tinker's Tools|XPHB": {
+		"name": "修補匠工具",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 10,
+		"value": 5000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"敏捷"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"用廢料組裝一件微型物品，該物品會在 1 分鐘後散架（{@dc 20}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Musket|XPHB}、{@item Pistol|XPHB}、{@item Bell|XPHB}、{@item Bullseye Lantern|XPHB}、{@item Flask|XPHB}、{@item Hooded Lantern|XPHB}、{@item Hunting Trap|XPHB}、{@item Lock|XPHB}、{@item Manacles|XPHB}、{@item Mirror|XPHB}、{@item Shovel|XPHB}、{@item Signal Whistle|XPHB}、{@item Tinderbox|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Tinker's Tools"
+	},
+	"Trident|XPHB": {
+		"name": "三叉戟",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 500,
+		"weaponCategory": "martial",
+		"property": [
+			"T|XPHB",
+			"V|XPHB"
+		],
+		"mastery": [
+			"Topple|XPHB"
+		],
+		"range": "20/60",
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"dmg2": "1d10",
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Trident"
+	},
+	"Viol|XPHB": {
+		"name": "古提琴",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"edition": "one",
+		"type": "INS|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 3000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"魅力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"演奏一首熟悉的曲子（{@dc 10}），或即興創作一首歌（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Viol"
+	},
+	"Wand|XPHB": {
+		"name": "魔杖",
+		"group": [
+			"Arcane Focus"
+		],
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"edition": "one",
+		"type": "SCF|XPHB",
+		"scfType": "arcane",
+		"rarity": "none",
+		"weight": 1,
+		"value": 1000,
+		"ENG_name": "Wand"
+	},
+	"War Pick|XPHB": {
+		"name": "戰鎬",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 500,
+		"weaponCategory": "martial",
+		"property": [
+			"V|XPHB"
+		],
+		"mastery": [
+			"Sap|XPHB"
+		],
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"dmg2": "1d10",
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "War Pick"
+	},
+	"Warhammer|XPHB": {
+		"name": "戰錘",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 1500,
+		"weaponCategory": "martial",
+		"property": [
+			"V|XPHB"
+		],
+		"mastery": [
+			"Push|XPHB"
+		],
+		"dmg1": "1d8",
+		"dmgType": "B",
+		"dmg2": "1d10",
+		"hammer": true,
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Warhammer"
+	},
+	"Weaver's Tools|XPHB": {
+		"name": "織布工工具",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 100,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"敏捷"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"縫補衣物的破洞（{@dc 10}），或縫製一個微型圖樣（{@dc 10}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Padded Armor|XPHB}、{@item Basket|XPHB}、{@item Bedroll|XPHB}、{@item Blanket|XPHB}、{@item Fine Clothes|XPHB}、{@item Net|XPHB}、{@item Robe|XPHB}、{@item Rope|XPHB}、{@item Sack|XPHB}、{@item String|XPHB}、{@item Tent|XPHB}、{@item Traveler's Clothes|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Weaver's Tools"
+	},
+	"Whip|XPHB": {
+		"name": "鞭",
+		"source": "XPHB",
+		"page": 215,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"type": "M|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 200,
+		"weaponCategory": "martial",
+		"property": [
+			"F|XPHB",
+			"R|XPHB"
+		],
+		"mastery": [
+			"Slow|XPHB"
+		],
+		"dmg1": "1d4",
+		"dmgType": "S",
+		"weapon": true,
+		"hasFluffImages": true,
+		"ENG_name": "Whip"
+	},
+	"Woodcarver's Tools|XPHB": {
+		"name": "木雕師工具",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "AT|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 100,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"敏捷"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"在木頭上雕刻花紋（{@dc 10}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Club|XPHB}、{@item Greatclub|XPHB}、{@item Quarterstaff|XPHB}、遠程武器（{@item Pistol|XPHB}、{@item Musket|XPHB}與{@item Sling|XPHB}除外）、{@item Arcane Focus|XPHB}、{@item Arrows (20)|XPHB|箭}、{@item Bolts (20)|XPHB|弩矢}、{@item Druidic Focus|XPHB}、{@item Ink Pen|XPHB}、{@item Needles (50)|XPHB|吹針}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Woodcarver's Tools"
+	},
+	"Wooden Staff|XPHB": {
+		"name": "木質法杖",
+		"group": [
+			"Druidic Focus"
+		],
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"edition": "one",
+		"type": "SCF|XPHB",
+		"scfType": "druid",
+		"rarity": "none",
+		"weight": 4,
+		"value": 500,
+		"weaponCategory": "simple",
+		"property": [
+			"V"
+		],
+		"mastery": [
+			"Topple|XPHB"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"ENG_name": "Wooden Staff"
+	}
+}

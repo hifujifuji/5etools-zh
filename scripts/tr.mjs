@@ -36,6 +36,10 @@ const FILES_BY_PROP = {
 	race: () => ["races.json"],
 	item: () => ["items.json"],
 	baseitem: () => ["items-base.json"],
+	itemType: () => ["items-base.json"],
+	itemMastery: () => ["items-base.json"],
+	itemProperty: () => ["items-base.json"],
+	itemGroup: () => ["items.json"],
 	variantrule: () => ["variantrules.json"],
 	action: () => ["actions.json"],
 	condition: () => ["conditionsdiseases.json"],
@@ -59,7 +63,8 @@ function _loadEntities (prop) {
 // 回傳 [{path, text, isName}]；純數字、純標籤的字串不用翻，略過
 const RE_ONLY_TAG = /^\s*(\{@[^{}]+\}\s*)+$/;
 function collect (ent) {
-	const out = [{path: ["name"], text: ent.name, isName: true}];
+	// itemProperty 沒有頂層名稱（名稱在 entries[0].name）
+	const out = typeof ent.name === "string" ? [{path: ["name"], text: ent.name, isName: true}] : [];
 	const walk = (v, p, isText) => {
 		if (typeof v === "string") {
 			if (isText && /[A-Za-z]/.test(v) && !RE_ONLY_TAG.test(v)) out.push({path: p, text: v});
@@ -126,11 +131,11 @@ if (cmd === "export") {
 		for (const e of loadEntities(prop)) {
 			if (opts.source && S(e.source) !== S(opts.source)) continue;
 			if (opts.class && (e.className || e.name) !== opts.class) continue;
-			if (reName && !reName.test(e.name)) continue;
+			if (reName && !reName.test(e.name || e.abbreviation)) continue;
 			ents.push({prop, e});
 		}
 	}
-	ents.sort((a, b) => props.indexOf(a.prop) - props.indexOf(b.prop) || (a.e.level || 0) - (b.e.level || 0) || a.e.name.localeCompare(b.e.name));
+	ents.sort((a, b) => props.indexOf(a.prop) - props.indexOf(b.prop) || (a.e.level || 0) - (b.e.level || 0) || (a.e.name || a.e.abbreviation).localeCompare(b.e.name || b.e.abbreviation));
 	if (opts.from != null || opts.to != null) ents = ents.slice(Number(opts.from || 0), opts.to != null ? Number(opts.to) : undefined);
 
 	const hints = loadNameHints();
@@ -187,10 +192,10 @@ if (cmd === "export") {
 	const en = readJson(path.join(WORK, `${batch}.en.json`));
 	en.items.forEach((it, i) => console.log(`#${i} ${it.key}${it.hint ? ` 提示:${JSON.stringify(it.hint)}` : ""}\n${JSON.stringify(it.s)}`));
 } else if (cmd === "status") {
-	for (const prop of ["class", "subclass", "classFeature", "subclassFeature", "spell", "feat"]) {
+	for (const prop of ["class", "subclass", "classFeature", "subclassFeature", "spell", "feat", "baseitem", "item", "itemType", "itemMastery", "itemProperty"]) {
 		const f = path.join(CUSTOM, `${prop}.json`);
 		const done = fs.existsSync(f) ? readJson(f) : {};
-		const ents = loadEntities(prop).filter(e => SOURCES_2024_OR(e));
+		const ents = loadEntities(prop).filter(e => SOURCES_2024_OR(e) || (opts.all && S(e.source) === "XDMG"));
 		const n = ents.filter(e => done[keyOf(prop, e)]).length;
 		console.log(`${prop.padEnd(16)} ${String(n).padStart(4)} / ${ents.length}`);
 	}

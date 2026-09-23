@@ -1,0 +1,2934 @@
+{
+	"Acid|XPHB": {
+		"name": "強酸",
+		"source": "XPHB",
+		"page": 222,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 2500,
+		"entries": [
+			"當你執行{@action Attack|XPHB}動作時，你可以將其中一次攻擊替換為投擲一瓶強酸。以你 20 呎內一個你能看見的生物或物體為目標。目標必須通過一次敏捷豁免檢定（{@dc 8} + 你的敏捷調整值 + 你的{@variantrule Proficiency|XPHB|熟練加值}），否則受到 {@damage 2d6} 強酸傷害。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Acid"
+	},
+	"Airship|XPHB": {
+		"name": "飛空船",
+		"source": "XPHB",
+		"page": 230,
+		"basicRules2024": true,
+		"type": "AIR|XPHB",
+		"rarity": "none",
+		"value": 4000000,
+		"crew": 10,
+		"vehAc": 13,
+		"vehHp": 300,
+		"vehSpeed": 8,
+		"capPassenger": 20,
+		"capCargo": 1,
+		"ENG_name": "Airship"
+	},
+	"Alchemist's Fire|XPHB": {
+		"name": "煉金之火",
+		"source": "XPHB",
+		"page": 222,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-DaS"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 5000,
+		"entries": [
+			"當你執行{@action Attack|XPHB}動作時，你可以將其中一次攻擊替換為投擲一瓶煉金之火。以你 20 呎內一個你能看見的生物或物體為目標。目標必須通過一次敏捷豁免檢定（{@dc 8} + 你的敏捷調整值 + 你的{@variantrule Proficiency|XPHB|熟練加值}），否則受到 {@damage 1d4} 火焰傷害並開始{@hazard burning|XPHB|著火}。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Alchemist's Fire"
+	},
+	"Ale (mug)|XPHB": {
+		"name": "麥酒（馬克杯）",
+		"source": "XPHB",
+		"page": 231,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "FD|XPHB",
+		"rarity": "none",
+		"value": 4,
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Ale (mug)"
+	},
+	"Amulet|XPHB": {
+		"name": "護符",
+		"group": [
+			"Holy Symbol"
+		],
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "SCF|XPHB",
+		"scfType": "holy",
+		"rarity": "none",
+		"weight": 1,
+		"value": 500,
+		"entries": [
+			"護符必須被配戴或手持，才能作為有效的聖徽。"
+		],
+		"ENG_name": "Amulet"
+	},
+	"Antitoxin|XPHB": {
+		"name": "解毒劑",
+		"source": "XPHB",
+		"page": 222,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-DaS",
+			"HotB"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 5000,
+		"entries": [
+			"作為一個{@variantrule Bonus Action|XPHB}，你可以喝下一瓶解毒劑，在 1 小時內為避免或終止{@condition Poisoned|XPHB}狀態所進行的豁免檢定具有{@variantrule Advantage|XPHB}。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Antitoxin"
+	},
+	"Backpack|XPHB": {
+		"name": "背包",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"BQGT",
+			"FFotR"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 200,
+		"entries": [
+			"背包可在 1 立方呎的空間內容納至多 30 磅的物品，也可以當作鞍囊使用。"
+		],
+		"containerCapacity": {
+			"weight": [
+				30
+			]
+		},
+		"ENG_name": "Backpack"
+	},
+	"Ball Bearings|XPHB": {
+		"name": "滾珠",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 100,
+		"entries": [
+			"作為一個{@action Utilize|XPHB}動作，你可以將滾珠從袋中灑出，覆蓋你 10 呎內一塊平坦的 10 呎見方區域。在一個回合中首次進入此區域的生物必須通過一次 {@dc 10} 敏捷豁免檢定，否則處於{@condition Prone|XPHB}狀態。回收滾珠需要 10 分鐘。"
+		],
+		"ENG_name": "Ball Bearings"
+	},
+	"Barrel|XPHB": {
+		"name": "木桶",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 70,
+		"value": 200,
+		"entries": [
+			"木桶可容納至多 40 加侖的液體，或至多 4 立方呎的乾貨。"
+		],
+		"containerCapacity": {
+			"volume": [
+				4
+			]
+		},
+		"ENG_name": "Barrel"
+	},
+	"Basic Poison|XPHB": {
+		"name": "基礎毒藥",
+		"source": "XPHB",
+		"page": 227,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 10000,
+		"poison": true,
+		"entries": [
+			"作為一個{@variantrule Bonus Action|XPHB}，你可以用一瓶基礎毒藥塗抹一把武器或至多三件彈藥。受到塗毒武器或彈藥穿刺或揮砍傷害的生物，會額外受到 {@damage 1d4} 毒素傷害。塗抹後，毒藥會保持效力 1 分鐘，或直到其傷害被造成為止，以先發生者為準。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Basic Poison"
+	},
+	"Basket|XPHB": {
+		"name": "籃子",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 40,
+		"entries": [
+			"籃子可在 2 立方呎的空間內容納至多 40 磅的物品。"
+		],
+		"containerCapacity": {
+			"weight": [
+				40
+			]
+		},
+		"ENG_name": "Basket"
+	},
+	"Bedroll|XPHB": {
+		"name": "睡袋",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 7,
+		"value": 100,
+		"entries": [
+			"睡袋可供一個小型或中型生物睡眠。在睡袋中時，你針對{@hazard extreme cold|XDMG|極寒}的豁免檢定自動成功（見{@book 城主指南|XDMG}）。"
+		],
+		"ENG_name": "Bedroll"
+	},
+	"Bell|XPHB": {
+		"name": "鈴鐺",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 100,
+		"entries": [
+			"作為一個{@action Utilize|XPHB}動作搖響鈴鐺時，其聲音可在至多 60 呎外被聽見。"
+		],
+		"ENG_name": "Bell"
+	},
+	"Blanket|XPHB": {
+		"name": "毛毯",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 50,
+		"entries": [
+			"裹著毛毯時，你針對{@hazard extreme cold|XDMG|極寒}的豁免檢定具有{@variantrule Advantage|XPHB}（見{@book 城主指南|XDMG}）。"
+		],
+		"ENG_name": "Blanket"
+	},
+	"Block and Tackle|XPHB": {
+		"name": "滑輪組",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 100,
+		"entries": [
+			"{@item Block and Tackle|XPHB}能讓你吊起至多四倍於你平常能舉起的重量。"
+		],
+		"ENG_name": "Block and Tackle"
+	},
+	"Book|XPHB": {
+		"name": "書",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 2500,
+		"entries": [
+			"書的內容可能是虛構或非虛構作品。若你查閱一本關於某主題的準確非虛構書籍，你針對該主題進行的智力（{@skill Arcana|XPHB}、{@skill History|XPHB}、{@skill Nature|XPHB}或{@skill Religion|XPHB}）檢定獲得 +5 加值。"
+		],
+		"ENG_name": "Book"
+	},
+	"Bread (loaf)|XPHB": {
+		"name": "麵包（一條）",
+		"source": "XPHB",
+		"page": 231,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "FD|XPHB",
+		"rarity": "none",
+		"value": 2,
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Bread (loaf)"
+	},
+	"Bucket|XPHB": {
+		"name": "水桶",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 5,
+		"entries": [
+			"水桶可容納至多半立方呎的內容物。"
+		],
+		"containerCapacity": {
+			"volume": [
+				0.5
+			]
+		},
+		"ENG_name": "Bucket"
+	},
+	"Bullseye Lantern|XPHB": {
+		"name": "牛眼提燈",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 1000,
+		"entries": [
+			"牛眼提燈以燈油為燃料，在 60 呎錐形範圍內發出{@variantrule Bright Light|XPHB}，並在其外額外 60 呎發出{@variantrule Dim Light|XPHB}。"
+		],
+		"light": [
+			{
+				"bright": 60,
+				"dim": 120,
+				"shape": "cone"
+			}
+		],
+		"ENG_name": "Bullseye Lantern"
+	},
+	"Burglar's Pack|XPHB": {
+		"name": "竊賊套裝",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 47.5,
+		"value": 1600,
+		"entries": [
+			"竊賊套裝包含下列物品：{@item Backpack|XPHB}、{@item Ball Bearings|XPHB}、{@item Bell|XPHB}、10 根{@item Candle|XPHB|蠟燭}、{@item Crowbar|XPHB}、{@item Hooded Lantern|XPHB}、7 瓶{@item Oil|XPHB}、5 天份的{@item Rations|XPHB}、{@item Rope|XPHB}、{@item Tinderbox|XPHB}與{@item Waterskin|XPHB}。"
+		],
+		"packContents": [
+			"backpack|xphb",
+			"ball bearings|xphb",
+			"bell|xphb",
+			{
+				"item": "candle|xphb",
+				"quantity": 10
+			},
+			"crowbar|xphb",
+			"hooded lantern|xphb",
+			{
+				"item": "oil|xphb",
+				"quantity": 7
+			},
+			{
+				"item": "rations|xphb",
+				"quantity": 5
+			},
+			"rope|xphb",
+			"tinderbox|xphb",
+			"waterskin|xphb"
+		],
+		"ENG_name": "Burglar's Pack"
+	},
+	"Caltrops|XPHB": {
+		"name": "鐵蒺藜",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 100,
+		"entries": [
+			"作為一個{@action Utilize|XPHB}動作，你可以將鐵蒺藜從袋中撒出，覆蓋你 5 呎內一塊 5 呎見方的區域。在一個回合中首次進入此區域的生物必須通過一次 {@dc 15} 敏捷豁免檢定，否則受到 1 點穿刺傷害，且其{@variantrule Speed|XPHB}降為 0，直到其下個回合開始。回收鐵蒺藜需要 10 分鐘。"
+		],
+		"ENG_name": "Caltrops"
+	},
+	"Camel|XPHB": {
+		"name": "駱駝",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "MNT|XPHB",
+		"rarity": "none",
+		"value": 5000,
+		"carryingCapacity": 450,
+		"speed": 50,
+		"ENG_name": "Camel"
+	},
+	"Candle|XPHB": {
+		"name": "蠟燭",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 1,
+		"entries": [
+			"點燃的蠟燭在 1 小時內，於 5 呎半徑內發出{@variantrule Bright Light|XPHB}，並在其外額外 5 呎發出{@variantrule Dim Light|XPHB}。"
+		],
+		"light": [
+			{
+				"bright": 5,
+				"dim": 10
+			}
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Candle"
+	},
+	"Carriage|XPHB": {
+		"name": "四輪馬車",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "VEH|XPHB",
+		"rarity": "none",
+		"weight": 600,
+		"value": 10000,
+		"ENG_name": "Carriage"
+	},
+	"Cart|XPHB": {
+		"name": "運貨車",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "VEH|XPHB",
+		"rarity": "none",
+		"weight": 200,
+		"value": 1500,
+		"ENG_name": "Cart"
+	},
+	"Chain|XPHB": {
+		"name": "鎖鏈",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 10,
+		"value": 500,
+		"entries": [
+			"作為一個{@action Utilize|XPHB}動作，若你通過一次 {@dc 13} 力量（{@skill Athletics|XPHB}）檢定，你可以將鎖鏈纏繞在你 5 呎內一個處於{@condition Grappled|XPHB}、{@condition Incapacitated|XPHB}或{@condition Restrained|XPHB}狀態的非自願生物身上。若該生物的雙腿被綁住，它會處於{@condition Restrained|XPHB}狀態直到掙脫。要掙脫鎖鏈，該生物必須以一個動作成功通過一次 {@dc 18} 敏捷（{@skill Acrobatics|XPHB}）檢定。要扯斷鎖鏈，則需以一個動作成功通過一次 {@dc 20} 力量（{@skill Athletics|XPHB}）檢定。"
+		],
+		"ENG_name": "Chain"
+	},
+	"Chariot|XPHB": {
+		"name": "雙輪戰車",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "VEH|XPHB",
+		"rarity": "none",
+		"weight": 100,
+		"value": 25000,
+		"ENG_name": "Chariot"
+	},
+	"Cheese (wedge)|XPHB": {
+		"name": "乳酪（一塊）",
+		"source": "XPHB",
+		"page": 231,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "FD|XPHB",
+		"rarity": "none",
+		"value": 10,
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Cheese (wedge)"
+	},
+	"Chest|XPHB": {
+		"name": "箱子",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 25,
+		"value": 500,
+		"entries": [
+			"箱子可容納至多 12 立方呎的內容物。"
+		],
+		"containerCapacity": {
+			"volume": [
+				12
+			]
+		},
+		"ENG_name": "Chest"
+	},
+	"Climber's Kit|XPHB": {
+		"name": "攀爬工具組",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 12,
+		"value": 2500,
+		"entries": [
+			"攀爬工具組包含鞋尖釘、手套、岩釘與安全吊帶。作為一個{@action Utilize|XPHB}動作，你可以使用攀爬工具組固定自己；這麼做時，你從固定點墜落的距離不會超過 25 呎，且在未以一個{@variantrule Bonus Action|XPHB}解除固定前，你無法從該處移動超過 25 呎。"
+		],
+		"ENG_name": "Climber's Kit"
+	},
+	"Common Wine (bottle)|XPHB": {
+		"name": "普通葡萄酒（一瓶）",
+		"source": "XPHB",
+		"page": 231,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "FD|XPHB",
+		"rarity": "none",
+		"value": 20,
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Common Wine (bottle)"
+	},
+	"Component Pouch|XPHB": {
+		"name": "材料包",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 2500,
+		"entries": [
+			"材料包防水且分成許多隔層，裝有你法術所需的所有免費材料成分。"
+		],
+		"ENG_name": "Component Pouch"
+	},
+	"Costume|XPHB": {
+		"name": "戲服",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 500,
+		"entries": [
+			"穿著戲服時，你為假扮其所代表的人物或某類人物而進行的任何屬性檢定具有{@variantrule Advantage|XPHB}。"
+		],
+		"ENG_name": "Costume"
+	},
+	"Crossbow Bolt Case|XPHB": {
+		"name": "弩矢匣",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 100,
+		"entries": [
+			"{@item Crossbow Bolt Case|XPHB}可容納至多 20 支弩矢。"
+		],
+		"containerCapacity": {
+			"item": [
+				{
+					"bolt|xphb": 20
+				}
+			]
+		},
+		"ENG_name": "Crossbow Bolt Case"
+	},
+	"Crowbar|XPHB": {
+		"name": "撬棍",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TFV"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 200,
+		"entries": [
+			"在能利用撬棍槓桿作用的力量檢定上，使用撬棍能使你具有{@variantrule Advantage|XPHB}。"
+		],
+		"ENG_name": "Crowbar"
+	},
+	"Dice Set|XPHB": {
+		"name": "骰子套組",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "GS|XPHB",
+		"rarity": "none",
+		"value": 10,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"感知"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"看出是否有人作弊（{@dc 10}），或贏得遊戲（{@dc 20}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Dice Set"
+	},
+	"Diplomat's Pack|XPHB": {
+		"name": "大使套裝",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 39,
+		"value": 3900,
+		"entries": [
+			"大使套裝包含下列物品：{@item Chest|XPHB}、{@item Fine Clothes|XPHB}、{@item Ink|XPHB}、5 支{@item Ink Pen|XPHB|墨水筆}、{@item Lamp|XPHB}、2 個{@item Map or Scroll Case|XPHB|地圖或卷軸筒}、4 瓶{@item Oil|XPHB}、5 張{@item Paper|XPHB}、5 張{@item Parchment|XPHB}、{@item Perfume|XPHB}與{@item Tinderbox|XPHB}。"
+		],
+		"packContents": [
+			"chest|xphb",
+			"fine clothes|xphb",
+			"ink|xphb",
+			{
+				"item": "ink pen|xphb",
+				"quantity": 5
+			},
+			"lamp|xphb",
+			{
+				"item": "map or scroll case|xphb",
+				"quantity": 2
+			},
+			{
+				"item": "oil|xphb",
+				"quantity": 4
+			},
+			{
+				"item": "paper|xphb",
+				"quantity": 5
+			},
+			{
+				"item": "parchment|xphb",
+				"quantity": 5
+			},
+			"perfume|xphb",
+			"tinderbox|xphb"
+		],
+		"ENG_name": "Diplomat's Pack"
+	},
+	"Disguise Kit|XPHB": {
+		"name": "易容工具組",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "T|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 2500,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"魅力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"化妝（{@dc 10}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Costume|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Disguise Kit"
+	},
+	"Draft Horse|XPHB": {
+		"name": "輓馬",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "MNT|XPHB",
+		"rarity": "none",
+		"value": 5000,
+		"carryingCapacity": 540,
+		"speed": 40,
+		"ENG_name": "Draft Horse"
+	},
+	"Dragonchess Set|XPHB": {
+		"name": "龍棋套組",
+		"source": "XPHB",
+		"page": 221,
+		"basicRules2024": true,
+		"type": "GS|XPHB",
+		"rarity": "none",
+		"value": 100,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"感知"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"看出是否有人作弊（{@dc 10}），或贏得遊戲（{@dc 20}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Dragonchess Set"
+	},
+	"Dungeoneer's Pack|XPHB": {
+		"name": "地城探險家套裝",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 55,
+		"value": 1200,
+		"entries": [
+			"地城探險家套裝包含下列物品：{@item Backpack|XPHB}、{@item Caltrops|XPHB}、{@item Crowbar|XPHB}、2 瓶{@item Oil|XPHB}、10 天份的{@item Rations|XPHB}、{@item Rope|XPHB}、{@item Tinderbox|XPHB}、10 支{@item Torch|XPHB|火炬}與{@item Waterskin|XPHB}。"
+		],
+		"packContents": [
+			"backpack|xphb",
+			"caltrops|xphb",
+			"crowbar|xphb",
+			{
+				"item": "oil|xphb",
+				"quantity": 2
+			},
+			{
+				"item": "rations|xphb",
+				"quantity": 10
+			},
+			"rope|xphb",
+			"tinderbox|xphb",
+			{
+				"item": "torch|xphb",
+				"quantity": 10
+			},
+			"waterskin|xphb"
+		],
+		"ENG_name": "Dungeoneer's Pack"
+	},
+	"Elephant|XPHB": {
+		"name": "象",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "MNT|XPHB",
+		"rarity": "none",
+		"value": 20000,
+		"carryingCapacity": 1320,
+		"speed": 40,
+		"ENG_name": "Elephant"
+	},
+	"Emblem|XPHB": {
+		"name": "徽章",
+		"group": [
+			"Holy Symbol"
+		],
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "SCF|XPHB",
+		"scfType": "holy",
+		"rarity": "none",
+		"value": 500,
+		"entries": [
+			"徽章必須印在布料（例如罩袍或旗幟）或{@item Shield|XPHB}上，才能作為有效的聖徽。"
+		],
+		"ENG_name": "Emblem"
+	},
+	"Entertainer's Pack|XPHB": {
+		"name": "表演家套裝",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 58.5,
+		"value": 4000,
+		"entries": [
+			"表演家套裝包含下列物品：{@item Backpack|XPHB}、{@item Bedroll|XPHB}、{@item Bell|XPHB}、{@item Bullseye Lantern|XPHB}、3 套{@item Costume|XPHB|戲服}、{@item Mirror|XPHB}、8 瓶{@item Oil|XPHB}、9 天份的{@item Rations|XPHB}、{@item Tinderbox|XPHB}與{@item Waterskin|XPHB}。"
+		],
+		"packContents": [
+			"backpack|xphb",
+			"bedroll|xphb",
+			"bell|xphb",
+			"bullseye lantern|xphb",
+			{
+				"item": "costume|xphb",
+				"quantity": 3
+			},
+			"mirror|xphb",
+			{
+				"item": "oil|xphb",
+				"quantity": 8
+			},
+			{
+				"item": "rations|xphb",
+				"quantity": 9
+			},
+			"tinderbox|xphb",
+			"waterskin|xphb"
+		],
+		"ENG_name": "Entertainer's Pack"
+	},
+	"Exotic Saddle|XPHB": {
+		"name": "異種鞍座",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "TAH|XPHB",
+		"rarity": "none",
+		"weight": 40,
+		"value": 6000,
+		"entries": [
+			"鞍座附有馬銜、轡頭、韁繩以及使用鞍座所需的其他裝備。騎乘水生或飛行坐騎時需要使用異種鞍座。"
+		],
+		"ENG_name": "Exotic Saddle"
+	},
+	"Explorer's Pack|XPHB": {
+		"name": "探索者套裝",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-ACfaS"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 55,
+		"value": 1000,
+		"entries": [
+			"探索者套裝包含下列物品：{@item Backpack|XPHB}、{@item Bedroll|XPHB}、2 瓶{@item Oil|XPHB}、10 天份的{@item Rations|XPHB}、{@item Rope|XPHB}、{@item Tinderbox|XPHB}、10 支{@item Torch|XPHB|火炬}與{@item Waterskin|XPHB}。"
+		],
+		"packContents": [
+			"backpack|xphb",
+			"bedroll|xphb",
+			{
+				"item": "oil|xphb",
+				"quantity": 2
+			},
+			{
+				"item": "rations|xphb",
+				"quantity": 10
+			},
+			"rope|xphb",
+			"tinderbox|xphb",
+			{
+				"item": "torch|xphb",
+				"quantity": 10
+			},
+			"waterskin|xphb"
+		],
+		"ENG_name": "Explorer's Pack"
+	},
+	"Feed (per day)|XPHB": {
+		"name": "飼料（每日）",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "TAH|XPHB",
+		"rarity": "none",
+		"weight": 10,
+		"value": 5,
+		"ENG_name": "Feed (per day)"
+	},
+	"Fine Clothes|XPHB": {
+		"name": "高級服裝",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 1500,
+		"entries": [
+			"高級服裝以昂貴布料製成，並飾有精工細節。某些活動和場所只允許穿著這類服裝的人進入。"
+		],
+		"ENG_name": "Fine Clothes"
+	},
+	"Fine Wine (bottle)|XPHB": {
+		"name": "高級葡萄酒（一瓶）",
+		"source": "XPHB",
+		"page": 231,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "FD|XPHB",
+		"rarity": "none",
+		"value": 1000,
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Fine Wine (bottle)"
+	},
+	"Flask|XPHB": {
+		"name": "扁瓶",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 2,
+		"entries": [
+			"扁瓶可容納至多 1 品脫。"
+		],
+		"containerCapacity": {
+			"volume": [
+				0.02
+			]
+		},
+		"ENG_name": "Flask"
+	},
+	"Forgery Kit|XPHB": {
+		"name": "偽造工具組",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "T|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 1500,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"敏捷"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"模仿他人筆跡寫下 10 個字以內的內容（{@dc 15}），或複製一個蠟封（{@dc 20}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Forgery Kit"
+	},
+	"Galley|XPHB": {
+		"name": "槳帆船",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "SHP|XPHB",
+		"rarity": "none",
+		"value": 3000000,
+		"crew": 80,
+		"vehAc": 15,
+		"vehHp": 500,
+		"vehDmgThresh": 20,
+		"vehSpeed": 4,
+		"capCargo": 150,
+		"seeAlsoVehicle": [
+			"Galley"
+		],
+		"ENG_name": "Galley"
+	},
+	"Glass Bottle|XPHB": {
+		"name": "玻璃瓶",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 200,
+		"entries": [
+			"玻璃瓶可容納至多 1½ 品脫。"
+		],
+		"containerCapacity": {
+			"volume": [
+				0.03
+			]
+		},
+		"ENG_name": "Glass Bottle"
+	},
+	"Grappling Hook|XPHB": {
+		"name": "爪鉤",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 200,
+		"entries": [
+			"作為一個{@action Utilize|XPHB}動作，你可以將爪鉤拋向你 50 呎內的欄杆、突出岩架或其他可鉤住之處，若你通過一次 {@dc 13} 敏捷（{@skill Acrobatics|XPHB}）檢定，爪鉤便會鉤住。若你在爪鉤上綁了繩索，就可以沿著繩索攀爬。"
+		],
+		"ENG_name": "Grappling Hook"
+	},
+	"Healer's Kit|XPHB": {
+		"name": "醫療工具組",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-DaS",
+			"DrDe-TDoN",
+			"HotB"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 500,
+		"entries": [
+			"醫療工具組可使用十次。作為一個{@action Utilize|XPHB}動作，你可以消耗一次使用次數，穩定一個{@variantrule Hit Points|XPHB}為 0 的{@condition Unconscious|XPHB}生物，而無需進行感知（{@skill Medicine|XPHB}）檢定。"
+		],
+		"ENG_name": "Healer's Kit"
+	},
+	"Herbalism Kit|XPHB": {
+		"name": "藥草師工具組",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "T|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 500,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"智力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"辨識一種植物（{@dc 10}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Antitoxin|XPHB}、{@item Candle|XPHB}、{@item Healer's Kit|XPHB}、{@item Potion of Healing|XDMG}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Herbalism Kit"
+	},
+	"Holy Water|XPHB": {
+		"name": "聖水",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 2500,
+		"entries": [
+			"當你執行{@action Attack|XPHB}動作時，你可以將其中一次攻擊替換為投擲一瓶聖水。以你 20 呎內一個你能看見的生物為目標。若目標是邪魔或不死生物，它必須通過一次敏捷豁免檢定（{@dc 8} + 你的敏捷調整值 + 你的{@variantrule Proficiency|XPHB|熟練加值}），否則受到 {@damage 2d8} 光耀傷害。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Holy Water"
+	},
+	"Hooded Lantern|XPHB": {
+		"name": "附蓋提燈",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-DaS",
+			"DrDe-TDoN",
+			"HotB"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 500,
+		"entries": [
+			"附蓋提燈以燈油為燃料，在 30 呎半徑內發出{@variantrule Bright Light|XPHB}，並在其外額外 30 呎發出{@variantrule Dim Light|XPHB}。作為一個{@variantrule Bonus Action|XPHB}，你可以放下燈罩，使光線減弱為 5 呎半徑內的{@variantrule Dim Light|XPHB}，或再次掀起燈罩。"
+		],
+		"light": [
+			{
+				"bright": 30,
+				"dim": 60
+			},
+			{
+				"dim": 5
+			}
+		],
+		"ENG_name": "Hooded Lantern"
+	},
+	"Hunting Trap|XPHB": {
+		"name": "狩獵陷阱",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 25,
+		"value": 500,
+		"entries": [
+			"作為一個{@action Utilize|XPHB}動作，你可以設置一個狩獵陷阱。這是一個帶鋸齒的鋼圈，當生物踩到中央的壓板時便會猛然合攏。陷阱以一條粗重的鎖鏈固定在不可移動的物體上，例如一棵樹或打入地面的尖樁。踩到壓板的生物必須通過一次 {@dc 13} 敏捷豁免檢定，否則受到 {@damage 1d4} 穿刺傷害，且其{@variantrule Speed|XPHB}降為 0，直到其下個回合開始。此後，直到該生物掙脫陷阱之前，它的移動受限於鎖鏈的長度（通常為 3 呎）。生物可以使用其動作進行一次 {@dc 13} 力量（{@skill Athletics|XPHB}）檢定，成功時可使自己或其觸及範圍內的另一個生物脫困。每次檢定失敗都會對被困的生物造成 1 點穿刺傷害。"
+		],
+		"ENG_name": "Hunting Trap"
+	},
+	"Ink Pen|XPHB": {
+		"name": "墨水筆",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN",
+			"DrDe-SD"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 2,
+		"entries": [
+			"墨水筆搭配{@item Ink|XPHB}用來書寫或繪圖。"
+		],
+		"ENG_name": "Ink Pen"
+	},
+	"Ink|XPHB": {
+		"name": "墨水",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN",
+			"DrDe-SD"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 1000,
+		"entries": [
+			"墨水裝在 1 盎司的瓶子中，足夠書寫約 500 頁。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Ink"
+	},
+	"Iron Pot|XPHB": {
+		"name": "鐵鍋",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 10,
+		"value": 200,
+		"entries": [
+			"鐵鍋可容納至多 1 加侖。"
+		],
+		"containerCapacity": {
+			"volume": [
+				0.1
+			]
+		},
+		"ENG_name": "Iron Pot"
+	},
+	"Iron Spike|XPHB": {
+		"name": "鐵釘",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 0.5,
+		"value": 10,
+		"entries": [
+			"鐵釘以十根為一捆販售。作為一個{@action Utilize|XPHB}動作，你可以使用鈍器（例如{@item Light Hammer|XPHB}）將鐵釘敲入木頭、泥土或類似材質中。你可以藉此卡死一扇門，或在鐵釘上綁上{@item Rope|XPHB}或{@item Chain|XPHB}。"
+		],
+		"ENG_name": "Iron Spike"
+	},
+	"Iron Spikes|XPHB": {
+		"name": "鐵釘（10 根）",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 100,
+		"entries": [
+			"鐵釘以十根為一捆販售。作為一個{@action Utilize|XPHB}動作，你可以使用鈍器（例如{@item Light Hammer|XPHB}）將鐵釘敲入木頭、泥土或類似材質中。你可以藉此卡死一扇門，或在鐵釘上綁上{@item Rope|XPHB}或{@item Chain|XPHB}。"
+		],
+		"packContents": [
+			{
+				"item": "iron spike|xphb",
+				"quantity": 10
+			}
+		],
+		"ENG_name": "Iron Spikes"
+	},
+	"Jug|XPHB": {
+		"name": "壺",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 2,
+		"entries": [
+			"壺可容納至多 1 加侖。"
+		],
+		"containerCapacity": {
+			"volume": [
+				0.1
+			]
+		},
+		"ENG_name": "Jug"
+	},
+	"Keelboat|XPHB": {
+		"name": "龍骨船",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "SHP|XPHB",
+		"rarity": "none",
+		"value": 300000,
+		"crew": 1,
+		"vehAc": 15,
+		"vehHp": 100,
+		"vehDmgThresh": 10,
+		"vehSpeed": 1,
+		"capPassenger": 6,
+		"capCargo": 0.5,
+		"seeAlsoVehicle": [
+			"Keelboat"
+		],
+		"ENG_name": "Keelboat"
+	},
+	"Ladder|XPHB": {
+		"name": "梯子",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TWoO"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 25,
+		"value": 10,
+		"entries": [
+			"梯子高 10 呎。你必須攀爬才能在梯子上上下移動。"
+		],
+		"ENG_name": "Ladder"
+	},
+	"Lamp|XPHB": {
+		"name": "油燈",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 50,
+		"entries": [
+			"油燈以{@item Oil|XPHB}為燃料，在 15 呎半徑內發出{@variantrule Bright Light|XPHB}，並在其外額外 30 呎發出{@variantrule Dim Light|XPHB}。"
+		],
+		"light": [
+			{
+				"bright": 15,
+				"dim": 45
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Lamp"
+	},
+	"Lock|XPHB": {
+		"name": "鎖",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 1000,
+		"entries": [
+			"鎖附有一把鑰匙。沒有鑰匙時，生物可以使用{@item Thieves' Tools|XPHB}並成功通過一次 {@dc 15} 敏捷（{@skill Sleight of Hand|XPHB}）檢定來撬開此鎖。"
+		],
+		"ENG_name": "Lock"
+	},
+	"Longship|XPHB": {
+		"name": "維京長船",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "SHP|XPHB",
+		"rarity": "none",
+		"value": 1000000,
+		"crew": 40,
+		"vehAc": 15,
+		"vehHp": 300,
+		"vehDmgThresh": 15,
+		"vehSpeed": 3,
+		"capPassenger": 150,
+		"capCargo": 10,
+		"seeAlsoVehicle": [
+			"Longship"
+		],
+		"ENG_name": "Longship"
+	},
+	"Magnifying Glass|XPHB": {
+		"name": "放大鏡",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 10000,
+		"entries": [
+			"在為鑑定或檢視高度精細物品而進行的任何屬性檢定上，放大鏡能使你具有{@variantrule Advantage|XPHB}。用放大鏡生火需要像陽光一樣明亮的光線來聚焦、可點燃的火種，以及約 5 分鐘讓火燃起。"
+		],
+		"ENG_name": "Magnifying Glass"
+	},
+	"Manacles|XPHB": {
+		"name": "鐐銬",
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 200,
+		"entries": [
+			"作為一個{@action Utilize|XPHB}動作，若你通過一次 {@dc 13} 敏捷（{@skill Sleight of Hand|XPHB}）檢定，你可以用鐐銬銬住你 5 呎內一個處於{@condition Grappled|XPHB}、{@condition Incapacitated|XPHB}或{@condition Restrained|XPHB}狀態的非自願小型或中型生物。被銬住時，該生物的攻擊檢定具有{@variantrule Disadvantage|XPHB}；若鐐銬連接在固定的鎖鏈或掛鉤上，該生物處於{@condition Restrained|XPHB}狀態。要掙脫鐐銬，需以一個動作成功通過一次 {@dc 20} 敏捷（{@skill Sleight of Hand|XPHB}）檢定。要扯斷鐐銬，則需以一個動作成功通過一次 {@dc 25} 力量（{@skill Athletics|XPHB}）檢定。",
+			"每副鐐銬都附有一把鑰匙。沒有鑰匙時，生物可以使用{@item Thieves' Tools|XPHB}並成功通過一次 {@dc 15} 敏捷（{@skill Sleight of Hand|XPHB}）檢定來撬開鐐銬的鎖。"
+		],
+		"ENG_name": "Manacles"
+	},
+	"Map or Scroll Case|XPHB": {
+		"name": "地圖或卷軸筒",
+		"source": "XPHB",
+		"page": 224,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 100,
+		"entries": [
+			"{@item Map or Scroll Case|XPHB}可容納至多 10 張紙或 5 張羊皮紙。"
+		],
+		"containerCapacity": {
+			"item": [
+				{
+					"parchment|xphb": 5,
+					"paper|xphb": 10
+				}
+			]
+		},
+		"ENG_name": "Map or Scroll Case"
+	},
+	"Map|XPHB": {
+		"name": "地圖",
+		"source": "XPHB",
+		"page": 227,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 100,
+		"entries": [
+			"若你查閱一張準確的地圖，你在其所描繪的地點為找路而進行的感知（{@skill Survival|XPHB}）檢定獲得 +5 加值。"
+		],
+		"ENG_name": "Map"
+	},
+	"Mastiff|XPHB": {
+		"name": "獒犬",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "MNT|XPHB",
+		"rarity": "none",
+		"value": 2500,
+		"carryingCapacity": 195,
+		"speed": 40,
+		"ENG_name": "Mastiff"
+	},
+	"Military Saddle|XPHB": {
+		"name": "軍用鞍座",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "TAH|XPHB",
+		"rarity": "none",
+		"weight": 30,
+		"value": 2000,
+		"entries": [
+			"鞍座附有馬銜、轡頭、韁繩以及使用鞍座所需的其他裝備。在為保持騎乘而進行的任何屬性檢定上，軍用鞍座能使你具有{@variantrule Advantage|XPHB}。"
+		],
+		"ENG_name": "Military Saddle"
+	},
+	"Mirror|XPHB": {
+		"name": "鏡子",
+		"source": "XPHB",
+		"page": 227,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 0.5,
+		"value": 500,
+		"entries": [
+			"手持鋼鏡可用於整理儀容，也能用來窺看轉角後方，或反射光線作為訊號。"
+		],
+		"ENG_name": "Mirror"
+	},
+	"Mule|XPHB": {
+		"name": "騾子",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "MNT|XPHB",
+		"rarity": "none",
+		"value": 800,
+		"carryingCapacity": 420,
+		"speed": 40,
+		"ENG_name": "Mule"
+	},
+	"Navigator's Tools|XPHB": {
+		"name": "領航員工具",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "T|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 2500,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"感知"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"規劃航線（{@dc 10}），或觀星確定位置（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Navigator's Tools"
+	},
+	"Net|XPHB": {
+		"name": "捕網",
+		"source": "XPHB",
+		"page": 227,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"UtHftLH"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 100,
+		"entries": [
+			"當你執行{@action Attack|XPHB}動作時，你可以將其中一次攻擊替換為拋出捕網。以你 15 呎內一個你能看見的生物為目標。目標必須通過一次敏捷豁免檢定（{@dc 8} + 你的敏捷調整值 + 你的{@variantrule Proficiency|XPHB|熟練加值}），否則處於{@condition Restrained|XPHB}狀態直到掙脫。若目標為超大型或更大，則自動成功。",
+			"要掙脫，目標或其 5 呎內的一個生物必須使用一個動作進行一次 {@dc 10} 力量（{@skill Athletics|XPHB}）檢定，成功時可使{@condition Restrained|XPHB}的生物脫困。摧毀捕網（AC 10；5 HP；對鈍擊、毒素與心靈傷害具有{@variantrule Immunity|XPHB}）也能使目標脫困並結束此效果。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Net"
+	},
+	"Oil|XPHB": {
+		"name": "燈油",
+		"source": "XPHB",
+		"page": 227,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-DaS",
+			"DrDe-TDoN"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 10,
+		"entries": [
+			"你可以將燈油潑灑在生物、物體或空間上，或用作燃料，詳述如下。",
+			{
+				"name": "潑灑生物或物體",
+				"type": "entries",
+				"entries": [
+					"當你執行{@action Attack|XPHB}動作時，你可以將其中一次攻擊替換為投擲一瓶燈油。以你 20 呎內一個生物或物體為目標。目標必須通過一次敏捷豁免檢定（{@dc 8} + 你的敏捷調整值 + 你的{@variantrule Proficiency|XPHB|熟練加值}），否則會被燈油沾滿。若目標在燈油乾掉前（1 分鐘後）受到火焰傷害，它會因燃燒的燈油額外受到 5 點火焰傷害。"
+				],
+				"ENG_name": "Dousing a Creature or an Object"
+			},
+			{
+				"name": "潑灑空間",
+				"type": "entries",
+				"entries": [
+					"你可以執行{@action Utilize|XPHB}動作，將一瓶燈油倒在平地上，覆蓋你 5 呎內一塊 5 呎見方的區域。點燃後，燈油會燃燒到點燃後第 2 輪的回合結束（即 12 秒），並對任何進入該區域或在其中結束回合的生物造成 5 點火焰傷害。生物每回合只會受到一次此傷害。"
+				],
+				"ENG_name": "Dousing a Space"
+			},
+			{
+				"name": "燃料",
+				"type": "entries",
+				"entries": [
+					"燈油可作為油燈與提燈的燃料。點燃後，一瓶燈油在油燈或提燈中可燃燒 6 小時。此時間不需連續；你可以（以一個{@action Utilize|XPHB}動作）熄滅燃燒的燈油並再次點燃，直到累計燃燒滿 6 小時。"
+				],
+				"ENG_name": "Fuel"
+			}
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Oil"
+	},
+	"Paper|XPHB": {
+		"name": "紙",
+		"source": "XPHB",
+		"page": 227,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 20,
+		"entries": [
+			"一張紙大約可寫下 250 個手寫字。"
+		],
+		"ENG_name": "Paper"
+	},
+	"Parchment|XPHB": {
+		"name": "羊皮紙",
+		"source": "XPHB",
+		"page": 227,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN",
+			"DrDe-SD"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 10,
+		"entries": [
+			"一張羊皮紙大約可寫下 250 個手寫字。"
+		],
+		"ENG_name": "Parchment"
+	},
+	"Perfume|XPHB": {
+		"name": "香水",
+		"source": "XPHB",
+		"page": 227,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 500,
+		"entries": [
+			"香水裝在 4 盎司的小瓶中。在你身上擦香水後的 1 小時內，你為影響你 5 呎內一個態度冷淡的類人生物而進行的魅力（{@skill Persuasion|XPHB}）檢定具有{@variantrule Advantage|XPHB}。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Perfume"
+	},
+	"Playing Cards|XPHB": {
+		"name": "紙牌",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "GS|XPHB",
+		"rarity": "none",
+		"value": 50,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"感知"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"看出是否有人作弊（{@dc 10}），或贏得遊戲（{@dc 20}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Playing Cards"
+	},
+	"Poisoner's Kit|XPHB": {
+		"name": "製毒工具組",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "T|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 5000,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"智力"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"察覺一件物品是否有毒（{@dc 10}）"
+						],
+						"ENG_name": "Utilize:"
+					},
+					{
+						"name": "製作：",
+						"type": "item",
+						"entries": [
+							"{@item Basic Poison|XPHB}"
+						],
+						"ENG_name": "Craft:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Poisoner's Kit"
+	},
+	"Pole|XPHB": {
+		"name": "長竿",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 7,
+		"value": 5,
+		"entries": [
+			"長竿長 10 呎，你可以用它碰觸至多 10 呎外的東西。若你必須在跳高或{@variantrule Long Jump|XPHB}中進行力量（{@skill Athletics|XPHB}）檢定，你可以用長竿撐竿跳，使你在該檢定上具有{@variantrule Advantage|XPHB}。"
+		],
+		"ENG_name": "Pole"
+	},
+	"Pony|XPHB": {
+		"name": "矮種馬",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "MNT|XPHB",
+		"rarity": "none",
+		"value": 3000,
+		"carryingCapacity": 225,
+		"speed": 40,
+		"ENG_name": "Pony"
+	},
+	"Portable Ram|XPHB": {
+		"name": "便攜型攻城鎚",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 35,
+		"value": 400,
+		"entries": [
+			"你可以使用便攜型攻城鎚撞破門扉。這麼做時，你的力量檢定獲得 +4 加值。另一名角色可以協助你使用攻城鎚，使你在此檢定上具有{@variantrule Advantage|XPHB}。"
+		],
+		"ENG_name": "Portable Ram"
+	},
+	"Pouch|XPHB": {
+		"name": "囊袋",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 50,
+		"entries": [
+			"囊袋可在五分之一立方呎的空間內容納至多 6 磅的物品。"
+		],
+		"containerCapacity": {
+			"weight": [
+				6
+			],
+			"item": [
+				{
+					"firearm bullet|xphb": 10,
+					"sling bullet|xphb": 20,
+					"needle|xphb": 50
+				}
+			]
+		},
+		"ENG_name": "Pouch"
+	},
+	"Priest's Pack|XPHB": {
+		"name": "祭司套裝",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 29,
+		"value": 3300,
+		"entries": [
+			"祭司套裝包含下列物品：{@item Backpack|XPHB}、{@item Blanket|XPHB}、{@item Holy Water|XPHB}、{@item Lamp|XPHB}、7 天份的{@item Rations|XPHB}、{@item Robe|XPHB}與{@item Tinderbox|XPHB}。"
+		],
+		"packContents": [
+			"backpack|xphb",
+			"blanket|xphb",
+			"holy water|xphb",
+			"lamp|xphb",
+			{
+				"item": "rations|xphb",
+				"quantity": 7
+			},
+			"robe|xphb",
+			"tinderbox|xphb"
+		],
+		"ENG_name": "Priest's Pack"
+	},
+	"Psychic Blade|XPHB": {
+		"name": "精神之刃",
+		"source": "XPHB",
+		"page": 136,
+		"type": "M",
+		"rarity": "none",
+		"weaponCategory": "simple",
+		"property": [
+			"F|XPHB",
+			"T|XPHB"
+		],
+		"mastery": [
+			{
+				"uid": "Vex|XPHB",
+				"note": "你可以使用此屬性，且它不計入你透過武器精通可使用的屬性數量"
+			}
+		],
+		"range": "60/120",
+		"dmg1": "1d6",
+		"dmgType": "Y",
+		"ENG_name": "Psychic Blade"
+	},
+	"Quiver|XPHB": {
+		"name": "箭袋",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TWoO"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 100,
+		"entries": [
+			"箭袋可容納至多 20 支箭。"
+		],
+		"containerCapacity": {
+			"item": [
+				{
+					"arrow|xphb": 20
+				}
+			]
+		},
+		"ENG_name": "Quiver"
+	},
+	"Rations|XPHB": {
+		"name": "口糧",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 2,
+		"value": 50,
+		"entries": [
+			"口糧由便於旅行攜帶的食物組成，包括肉乾、果乾、硬餅乾與堅果。未進食的風險見「{@hazard Malnutrition|XPHB|營養不良}」。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Rations"
+	},
+	"Reliquary|XPHB": {
+		"name": "聖物匣",
+		"group": [
+			"Holy Symbol"
+		],
+		"source": "XPHB",
+		"page": 226,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "SCF|XPHB",
+		"scfType": "holy",
+		"rarity": "none",
+		"weight": 2,
+		"value": 500,
+		"entries": [
+			"聖物匣必須被手持，才能作為有效的聖徽。"
+		],
+		"ENG_name": "Reliquary"
+	},
+	"Riding Horse|XPHB": {
+		"name": "騎用馬",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "MNT|XPHB",
+		"rarity": "none",
+		"value": 7500,
+		"carryingCapacity": 480,
+		"speed": 60,
+		"ENG_name": "Riding Horse"
+	},
+	"Riding Saddle|XPHB": {
+		"name": "騎乘鞍座",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "TAH|XPHB",
+		"rarity": "none",
+		"weight": 25,
+		"value": 1000,
+		"entries": [
+			"鞍座附有馬銜、轡頭、韁繩以及使用鞍座所需的其他裝備。"
+		],
+		"ENG_name": "Riding Saddle"
+	},
+	"Robe|XPHB": {
+		"name": "長袍",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 100,
+		"entries": [
+			"長袍具有職業或儀式上的意義。某些活動和場所只允許穿著帶有特定顏色或符號之長袍的人進入。"
+		],
+		"ENG_name": "Robe"
+	},
+	"Rope|XPHB": {
+		"name": "繩索",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TWoO",
+			"HotB",
+			"BQGT"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 100,
+		"entries": [
+			"作為一個{@action Utilize|XPHB}動作，若你通過一次 {@dc 10} 敏捷（{@skill Sleight of Hand|XPHB}）檢定，你可以用繩索打一個結。成功通過一次 {@dc 20} 力量（{@skill Athletics|XPHB}）檢定即可扯斷繩索。",
+			"只有當非自願生物處於{@condition Grappled|XPHB}、{@condition Incapacitated|XPHB}或{@condition Restrained|XPHB}狀態時，你才能用繩索綑綁它。若該生物的雙腿被綁住，它會處於{@condition Restrained|XPHB}狀態直到掙脫。要掙脫繩索，該生物必須以一個動作成功通過一次 {@dc 15} 敏捷（{@skill Acrobatics|XPHB}）檢定。"
+		],
+		"ENG_name": "Rope"
+	},
+	"Rowboat|XPHB": {
+		"name": "划艇",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "SHP|XPHB",
+		"rarity": "none",
+		"value": 5000,
+		"crew": 1,
+		"vehAc": 11,
+		"vehHp": 50,
+		"vehSpeed": 1.5,
+		"capPassenger": 3,
+		"seeAlsoVehicle": [
+			"Rowboat"
+		],
+		"ENG_name": "Rowboat"
+	},
+	"Sack|XPHB": {
+		"name": "麻袋",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 0.5,
+		"value": 1,
+		"entries": [
+			"麻袋可在 1 立方呎的空間內容納至多 30 磅的物品。"
+		],
+		"containerCapacity": {
+			"weight": [
+				30
+			]
+		},
+		"ENG_name": "Sack"
+	},
+	"Sailing Ship|XPHB": {
+		"name": "帆船",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "SHP|XPHB",
+		"rarity": "none",
+		"value": 1000000,
+		"crew": 20,
+		"vehAc": 15,
+		"vehHp": 300,
+		"vehDmgThresh": 15,
+		"vehSpeed": 2,
+		"capPassenger": 20,
+		"capCargo": 100,
+		"seeAlsoVehicle": [
+			"Sailing Ship"
+		],
+		"ENG_name": "Sailing Ship"
+	},
+	"Scholar's Pack|XPHB": {
+		"name": "學者套裝",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 22,
+		"value": 4000,
+		"entries": [
+			"學者套裝包含下列物品：{@item Backpack|XPHB}、{@item Book|XPHB}、{@item Ink|XPHB}、{@item Ink Pen|XPHB}、{@item Lamp|XPHB}、10 瓶{@item Oil|XPHB}、10 張{@item Parchment|XPHB}與{@item Tinderbox|XPHB}。"
+		],
+		"packContents": [
+			"backpack|xphb",
+			"book|xphb",
+			"ink|xphb",
+			"ink pen|xphb",
+			"lamp|xphb",
+			{
+				"item": "oil|xphb",
+				"quantity": 10
+			},
+			{
+				"item": "parchment|xphb",
+				"quantity": 10
+			},
+			"tinderbox|xphb"
+		],
+		"ENG_name": "Scholar's Pack"
+	},
+	"Shovel|XPHB": {
+		"name": "鏟子",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-DaS"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"value": 200,
+		"entries": [
+			"工作 1 小時，你可以用鏟子在泥土或類似材質中挖出一個每邊 5 呎的洞。"
+		],
+		"ENG_name": "Shovel"
+	},
+	"Signal Whistle|XPHB": {
+		"name": "訊號哨",
+		"source": "XPHB",
+		"page": 228,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 5,
+		"entries": [
+			"作為一個{@action Utilize|XPHB}動作吹響訊號哨時，其聲音可在至多 600 呎外被聽見。"
+		],
+		"ENG_name": "Signal Whistle"
+	},
+	"Sled|XPHB": {
+		"name": "雪橇",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "VEH|XPHB",
+		"rarity": "none",
+		"weight": 300,
+		"value": 2000,
+		"ENG_name": "Sled"
+	},
+	"Sprig of Mistletoe|XPHB": {
+		"name": "槲寄生枝",
+		"group": [
+			"Druidic Focus"
+		],
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "SCF|XPHB",
+		"scfType": "druid",
+		"rarity": "none",
+		"value": 100,
+		"ENG_name": "Sprig of Mistletoe"
+	},
+	"Spyglass|XPHB": {
+		"name": "望遠鏡",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 100000,
+		"entries": [
+			"透過望遠鏡觀看的物體會被放大為兩倍大小。"
+		],
+		"ENG_name": "Spyglass"
+	},
+	"Stabling (per day)|XPHB": {
+		"name": "馬廄費（每日）",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "TAH|XPHB",
+		"rarity": "none",
+		"value": 5,
+		"ENG_name": "Stabling (per day)"
+	},
+	"String|XPHB": {
+		"name": "細繩",
+		"source": "XPHB",
+		"page": 229,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 10,
+		"entries": [
+			"細繩長 10 呎。你可以用一個{@action Utilize|XPHB}動作在細繩上打結。"
+		],
+		"ENG_name": "String"
+	},
+	"Tent|XPHB": {
+		"name": "帳篷",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 20,
+		"value": 200,
+		"entries": [
+			"帳篷可供至多兩個小型或中型生物睡眠。"
+		],
+		"ENG_name": "Tent"
+	},
+	"Thieves' Tools|XPHB": {
+		"name": "盜賊工具",
+		"source": "XPHB",
+		"page": 221,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN",
+			"WttHC",
+			"DrDe-BtS"
+		],
+		"type": "T|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 2500,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"敏捷"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"開鎖（{@dc 15}），或解除陷阱（{@dc 15}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Thieves' Tools"
+	},
+	"Three-Dragon Ante Set|XPHB": {
+		"name": "三龍牌套組",
+		"source": "XPHB",
+		"page": 221,
+		"basicRules2024": true,
+		"type": "GS|XPHB",
+		"rarity": "none",
+		"value": 100,
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"name": "屬性：",
+						"type": "item",
+						"entries": [
+							"感知"
+						],
+						"ENG_name": "Ability:"
+					},
+					{
+						"name": "使用：",
+						"type": "item",
+						"entries": [
+							"看出是否有人作弊（{@dc 10}），或贏得遊戲（{@dc 20}）"
+						],
+						"ENG_name": "Utilize:"
+					}
+				]
+			}
+		],
+		"ENG_name": "Three-Dragon Ante Set"
+	},
+	"Tinderbox|XPHB": {
+		"name": "打火匣",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN",
+			"DrDe-TFV"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 50,
+		"entries": [
+			"打火匣是一個小容器，裝有用於生火的燧石、火鋼與火絨（通常是浸過輕油的乾布）。用它點燃{@item Candle|XPHB}、{@item Lamp|XPHB}、{@item Hooded Lantern|XPHB|提燈}或{@item Torch|XPHB}（或任何有外露燃料的物品）需要一個{@variantrule Bonus Action|XPHB}。點燃其他任何火需要 1 分鐘。"
+		],
+		"ENG_name": "Tinderbox"
+	},
+	"Torch|XPHB": {
+		"name": "火炬",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-TDoN",
+			"BQGT"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 1,
+		"value": 1,
+		"entries": [
+			"火炬可燃燒 1 小時，在 20 呎半徑內發出{@variantrule Bright Light|XPHB}，並在其外額外 20 呎發出{@variantrule Dim Light|XPHB}。當你執行{@action Attack|XPHB}動作時，你可以用火炬攻擊，將其當作簡易近戰武器使用。命中時，目標受到 1 點火焰傷害。"
+		],
+		"light": [
+			{
+				"bright": 20,
+				"dim": 40
+			}
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Torch"
+	},
+	"Traveler's Clothes|XPHB": {
+		"name": "旅行者服裝",
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 200,
+		"entries": [
+			"旅行者服裝是耐用的衣物，專為在各種環境中旅行而設計。"
+		],
+		"ENG_name": "Traveler's Clothes"
+	},
+	"Trinket|XPHB": {
+		"name": "小飾品",
+		"source": "XPHB",
+		"page": 47,
+		"basicRules2024": true,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"entries": [
+			"創建角色時，你可以在「小飾品」表上擲骰一次，獲得一件微型小飾品——一件略帶神祕色彩的簡單物品。DM 也可能使用此表，用來佈置地城中的房間或填充生物的口袋。",
+			{
+				"type": "table",
+				"caption": "小飾品",
+				"colLabels": [
+					"{@dice 1d100}",
+					"小飾品"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"01",
+						"一隻木乃伊化的哥布林手"
+					],
+					[
+						"02",
+						"一塊在月光下會發出微光的水晶"
+					],
+					[
+						"03",
+						"一枚在未知國度鑄造的金幣"
+					],
+					[
+						"04",
+						"一本以你不懂的語言寫成的日記"
+					],
+					[
+						"05",
+						"一枚永不失去光澤的黃銅戒指"
+					],
+					[
+						"06",
+						"一枚玻璃製的古老棋子"
+					],
+					[
+						"07",
+						"一對指骨骰子，原本應顯示六點的那一面各刻著一個骷髏符號"
+					],
+					[
+						"08",
+						"一尊描繪夢魘生物的小神像，睡在它附近會讓你做噩夢"
+					],
+					[
+						"09",
+						"一綹某人的頭髮"
+					],
+					[
+						"10",
+						"一份位於你不知道之國度的土地地契"
+					],
+					[
+						"11",
+						"一塊以未知材料製成、重 1 盎司的方塊"
+					],
+					[
+						"12",
+						"一個插滿針的小布娃娃"
+					],
+					[
+						"13",
+						"一顆來自未知野獸的牙齒"
+					],
+					[
+						"14",
+						"一片巨大的鱗片，也許來自龍"
+					],
+					[
+						"15",
+						"一根亮綠色的羽毛"
+					],
+					[
+						"16",
+						"一張印有你肖像的古老占卜卡"
+					],
+					[
+						"17",
+						"一顆裝有流動煙霧的玻璃球"
+					],
+					[
+						"18",
+						"一顆重 1 磅、外殼鮮紅的蛋"
+					],
+					[
+						"19",
+						"一支會吹出泡泡的煙斗"
+					],
+					[
+						"20",
+						"一個玻璃罐，裡面有一小塊浸泡在醃漬液中的肉"
+					],
+					[
+						"21",
+						"一個侏儒製作的音樂盒，會播放一首你依稀記得的兒時歌曲"
+					],
+					[
+						"22",
+						"一尊洋洋得意的半身人木雕像"
+					],
+					[
+						"23",
+						"一顆刻有奇怪符文的黃銅球"
+					],
+					[
+						"24",
+						"一片多彩的石盤"
+					],
+					[
+						"25",
+						"一個烏鴉造型的銀質聖像"
+					],
+					[
+						"26",
+						"一個裝有四十七顆牙齒的袋子，其中一顆已經蛀掉"
+					],
+					[
+						"27",
+						"一塊摸起來總是溫熱的黑曜石碎片"
+					],
+					[
+						"28",
+						"一根串在皮革項鍊上的龍爪"
+					],
+					[
+						"29",
+						"一雙舊襪子"
+					],
+					[
+						"30",
+						"一本空白的書，其書頁無法留下墨水、粉筆、石墨或任何其他痕跡"
+					],
+					[
+						"31",
+						"一枚五芒星形狀的銀徽章"
+					],
+					[
+						"32",
+						"一把屬於某位親戚的小刀"
+					],
+					[
+						"33",
+						"一個裝滿指甲屑的玻璃小瓶"
+					],
+					[
+						"34",
+						"一個長方形的金屬裝置，一端有兩個小金屬杯，沾濕時會迸出火花"
+					],
+					[
+						"35",
+						"一隻適合人類尺寸、綴滿亮片的白手套"
+					],
+					[
+						"36",
+						"一件有一百個小口袋的背心"
+					],
+					[
+						"37",
+						"一塊沒有重量的石頭"
+					],
+					[
+						"38",
+						"一張哥布林的素描"
+					],
+					[
+						"39",
+						"一個散發香水味的空玻璃小瓶"
+					],
+					[
+						"40",
+						"一顆寶石，除了你之外，任何人檢視時都會覺得它像一塊煤"
+					],
+					[
+						"41",
+						"一塊來自舊旗幟的布片"
+					],
+					[
+						"42",
+						"一枚來自某位失蹤軍團士兵的階級徽章"
+					],
+					[
+						"43",
+						"一個沒有鈴舌的銀鈴"
+					],
+					[
+						"44",
+						"一隻裝在油燈裡的機械金絲雀"
+					],
+					[
+						"45",
+						"一個迷你箱子，底部雕成長了許多腳的樣子"
+					],
+					[
+						"46",
+						"一個透明玻璃瓶，裡面裝著一隻死去的小妖精"
+					],
+					[
+						"47",
+						"一個沒有開口的金屬罐，聽起來像是裝著液體、沙子、蜘蛛或碎玻璃（由你決定）"
+					],
+					[
+						"48",
+						"一顆裝滿水的玻璃球，裡面游著一條發條金魚"
+					],
+					[
+						"49",
+						"一把握柄上刻著 M 字的銀湯匙"
+					],
+					[
+						"50",
+						"一支用金色木頭製成的哨子"
+					],
+					[
+						"51",
+						"一隻手掌大小的死聖甲蟲"
+					],
+					[
+						"52",
+						"兩個玩具士兵，其中一個沒有頭"
+					],
+					[
+						"53",
+						"一個裝滿各種大小鈕扣的小盒子"
+					],
+					[
+						"54",
+						"一根無法點燃的蠟燭"
+					],
+					[
+						"55",
+						"一個沒有門的迷你籠子"
+					],
+					[
+						"56",
+						"一把舊鑰匙"
+					],
+					[
+						"57",
+						"一張無法解讀的藏寶圖"
+					],
+					[
+						"58",
+						"一把斷劍的劍柄"
+					],
+					[
+						"59",
+						"一隻兔腳"
+					],
+					[
+						"60",
+						"一顆玻璃眼珠"
+					],
+					[
+						"61",
+						"一枚刻有醜陋人像的浮雕"
+					],
+					[
+						"62",
+						"一個錢幣大小的銀骷髏"
+					],
+					[
+						"63",
+						"一副雪花石膏面具"
+					],
+					[
+						"64",
+						"一個散發惡臭的黏稠黑色錐形薰香"
+					],
+					[
+						"65",
+						"一頂戴上後會讓你做美夢的睡帽"
+					],
+					[
+						"66",
+						"一個以骨頭製成的鐵蒺藜"
+					],
+					[
+						"67",
+						"一副沒有鏡片的金色單片眼鏡框"
+					],
+					[
+						"68",
+						"一個 1 吋見方的立方體，每一面顏色都不同"
+					],
+					[
+						"69",
+						"一個水晶門把"
+					],
+					[
+						"70",
+						"一個裝滿粉紅色粉末的小包"
+					],
+					[
+						"71",
+						"一段優美歌曲的片段，以樂譜寫在兩張羊皮紙上"
+					],
+					[
+						"72",
+						"一只銀色淚滴耳環，裡面裝著一滴真正的眼淚"
+					],
+					[
+						"73",
+						"一個蛋殼，上面以令人不安的細節畫著悲慘的場景"
+					],
+					[
+						"74",
+						"一把扇子，展開時會顯示一隻昏昏欲睡的貓"
+					],
+					[
+						"75",
+						"一組骨製管笛"
+					],
+					[
+						"76",
+						"一片四葉草，夾在一本討論禮儀與禮節的書中"
+					],
+					[
+						"77",
+						"一張畫著機械裝置的羊皮紙"
+					],
+					[
+						"78",
+						"一個華麗的劍鞘，你找到的任何刀刃都放不進去"
+					],
+					[
+						"79",
+						"一張邀請函，邀請你參加一場曾發生謀殺案的宴會"
+					],
+					[
+						"80",
+						"一個青銅五芒星護符，中央刻著一個老鼠頭"
+					],
+					[
+						"81",
+						"一條紫色手帕，上面繡著某位大法師的名字"
+					],
+					[
+						"82",
+						"一座神殿、城堡或其他建築的半張平面圖"
+					],
+					[
+						"83",
+						"一塊摺起來的布，展開後會變成一頂時髦的帽子"
+					],
+					[
+						"84",
+						"一張遠方城市某家銀行的存款收據"
+					],
+					[
+						"85",
+						"一本缺了七頁的日記"
+					],
+					[
+						"86",
+						"一個空的銀質鼻煙盒，盒蓋上刻著「夢」"
+					],
+					[
+						"87",
+						"一個獻給某位未知神祇的鐵製聖徽"
+					],
+					[
+						"88",
+						"一本講述傳奇英雄興衰的書，缺了最後一章"
+					],
+					[
+						"89",
+						"一小瓶龍血"
+					],
+					[
+						"90",
+						"一支精靈設計的古老箭矢"
+					],
+					[
+						"91",
+						"一根永遠不會彎曲的針"
+					],
+					[
+						"92",
+						"一枚矮人設計的華麗胸針"
+					],
+					[
+						"93",
+						"一個空酒瓶，貼著漂亮的標籤，寫著「法師酒莊，紅龍壓榨，331422-W」"
+					],
+					[
+						"94",
+						"一片表面上了多彩釉的馬賽克磁磚"
+					],
+					[
+						"95",
+						"一隻石化的老鼠"
+					],
+					[
+						"96",
+						"一面黑色海盜旗，上面裝飾著龍的骷髏與交叉骨頭"
+					],
+					[
+						"97",
+						"一隻微型機械螃蟹或蜘蛛，沒有人看著時會四處移動"
+					],
+					[
+						"98",
+						"一個裝著豬油的玻璃罐，標籤上寫著「獅鷲油脂」"
+					],
+					[
+						"99",
+						"一個陶瓷底的木盒，裡面裝著一條身體兩端各有一個頭的活蟲"
+					],
+					[
+						"00",
+						"一個裝有某位英雄骨灰的金屬甕"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Trinket"
+	},
+	"Vial|XPHB": {
+		"name": "小瓶",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe-DaS",
+			"DrDe-TDoN"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 100,
+		"entries": [
+			"小瓶可容納至多 4 盎司。"
+		],
+		"containerCapacity": {
+			"weight": [
+				0.25
+			]
+		},
+		"ENG_name": "Vial"
+	},
+	"Wagon|XPHB": {
+		"name": "運貨馬車",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "VEH|XPHB",
+		"rarity": "none",
+		"weight": 400,
+		"value": 3500,
+		"ENG_name": "Wagon"
+	},
+	"Warhorse|XPHB": {
+		"name": "戰馬",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "MNT|XPHB",
+		"rarity": "none",
+		"value": 40000,
+		"carryingCapacity": 540,
+		"speed": 60,
+		"ENG_name": "Warhorse"
+	},
+	"Warship|XPHB": {
+		"name": "戰艦",
+		"source": "XPHB",
+		"page": 230,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "SHP|XPHB",
+		"rarity": "none",
+		"value": 2500000,
+		"crew": 60,
+		"vehAc": 15,
+		"vehHp": 500,
+		"vehDmgThresh": 20,
+		"vehSpeed": 2.5,
+		"capPassenger": 60,
+		"capCargo": 200,
+		"seeAlsoVehicle": [
+			"Warship"
+		],
+		"ENG_name": "Warship"
+	},
+	"Waterskin|XPHB": {
+		"name": "水袋",
+		"source": "XPHB",
+		"page": 229,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"BQGT",
+			"DrDe-ACfaS"
+		],
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 5,
+		"weightNote": "(full)",
+		"value": 20,
+		"entries": [
+			"水袋可容納至多 4 品脫。若你沒有喝足夠的水，就有脫水的風險。"
+		],
+		"containerCapacity": {
+			"volume": [
+				0.08
+			]
+		},
+		"ENG_name": "Waterskin"
+	},
+	"Yew Wand|XPHB": {
+		"name": "紫杉魔杖",
+		"group": [
+			"Druidic Focus"
+		],
+		"source": "XPHB",
+		"page": 225,
+		"srd52": true,
+		"basicRules2024": true,
+		"type": "SCF|XPHB",
+		"scfType": "druid",
+		"rarity": "none",
+		"weight": 1,
+		"value": 1000,
+		"ENG_name": "Yew Wand"
+	}
+}

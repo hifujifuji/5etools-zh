@@ -79,7 +79,8 @@ const stats = {};
 const bump = (prop, k) => { (stats[prop] ||= {total: 0, full: 0, name: 0})[k]++; };
 
 const translateEntity = (prop, ent) => {
-	if (!ent || typeof ent !== "object" || typeof ent.name !== "string") return;
+	if (!ent || typeof ent !== "object") return;
+	if (typeof ent.name !== "string" && !(prop === "itemProperty" && ent.abbreviation)) return;
 	bump(prop, "total");
 	const trProp = FLUFF_PROP[prop] || prop;
 	const old = [keyOf(prop, ent), ...altKeys(prop, ent)].map(k => tr[trProp]?.[k]).find(Boolean);
@@ -87,7 +88,7 @@ const translateEntity = (prop, ent) => {
 		merger.mergeEntity(ent, old);
 		if (ent.name_zh) { bump(prop, "full"); return; }
 	}
-	if (FLUFF_PROP[prop]) return;
+	if (FLUFF_PROP[prop] || typeof ent.name !== "string") return;
 	// 沒有全文翻譯：至少給中文名
 	const zh = lookupName(prop, ent.name);
 	if (zh) { Merger.setName(ent, zh); bump(prop, "name"); }
