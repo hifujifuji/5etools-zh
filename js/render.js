@@ -11656,7 +11656,7 @@ Renderer.item = class {
 			const isAddDex = item.dexterityMax !== undefined || ![Parser.ITM_TYP_ABV__HEAVY_ARMOR, Parser.ITM_TYP_ABV__SHIELD].includes(itemTypeAbv);
 
 			const prefix = itemTypeAbv === Parser.ITM_TYP_ABV__SHIELD ? "+" : "";
-			const suffix = isAddDex ? ` + Dex${dexterityMax ? ` (max ${dexterityMax})` : ""}` : "";
+			const suffix = isAddDex ? ` + 敏捷${dexterityMax ? `（最多 ${dexterityMax}）` : ""}` : "";
 
 			damageParts.push(`AC ${prefix}${item.ac}${suffix}`);
 		}
@@ -12746,13 +12746,13 @@ Renderer.item = class {
 			if (item.stealth) {
 				Renderer.item._initFullEntries(item);
 				const wrapped = styleHint === "classic"
-					? "The wearer has disadvantage on Dexterity ({@skill Stealth}) checks."
-					: "The wearer has {@variantrule Disadvantage|XPHB} on Dexterity ({@skill Stealth|XPHB}) checks.";
+					? "穿戴者的敏捷（{@skill Stealth}）檢定具有劣勢。"
+					: "穿戴者的敏捷（{@skill Stealth|XPHB}）檢定具有{@variantrule Disadvantage|XPHB}。";
 				item._fullEntries.push({type: "wrapper", wrapped, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type"}});
 			}
 			if (itemTypeAbv === Parser.ITM_TYP_ABV__HEAVY_ARMOR && item.strength) {
 				Renderer.item._initFullEntries(item);
-				item._fullEntries.push({type: "wrapper", wrapped: `If the wearer has a Strength score lower than ${item.strength}, their speed is reduced by 10 feet.`, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type"}});
+				item._fullEntries.push({type: "wrapper", wrapped: `若穿戴者的力量值低於 ${item.strength}，其速度降低 10 呎。`, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type"}});
 			}
 		}
 		if (itemTypeAbv === Parser.ITM_TYP_ABV__SPELLCASTING_FOCUS) {
@@ -12866,7 +12866,7 @@ Renderer.item = class {
 		// handle item groups
 		if (item._isItemGroup && item.items?.length && !item.itemsHidden) {
 			Renderer.item._initFullEntries(item);
-			item._fullEntries.push({type: "wrapper", wrapped: "Multiple variations of this item exist, as listed below:", data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "magicvariant"}});
+			item._fullEntries.push({type: "wrapper", wrapped: "此物品有多種變體，列於下方：", data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "magicvariant"}});
 			item._fullEntries.push({
 				type: "wrapper",
 				wrapped: {
