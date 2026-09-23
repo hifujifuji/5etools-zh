@@ -2,6 +2,7 @@
 
 以 [5etools](https://5e.tools) 2.25.3 為基礎的繁體中文 D&D 5e 資料站。
 翻譯沿用 [hazmole/TheGiddyLimit.github.io](https://github.com/hazmole/TheGiddyLimit.github.io)（2021 年停更的中文版）。
+提供給固桌自用。
 
 ## 使用
 
@@ -9,8 +10,6 @@
 node scripts/build.mjs      # 建置到 dist/
 node scripts/serve.mjs      # 本機預覽 http://127.0.0.1:5050/
 ```
-
-上游 5etools 預設路徑是 iCloud 裡的 `5etools-2.25.3`，要換版本用 `UPSTREAM=<路徑> node scripts/build.mjs`。
 
 ## 運作方式
 
@@ -50,15 +49,3 @@ node scripts/extract-hazmole.mjs /tmp/hazmole
 ```
 
 建置完會在 `.cache/report.json` 留下統計與無法解析的標籤清單。
-
-## 發佈到 GitHub Pages
-
-1. 在 GitHub 建立空的 repo（例如 `5etools-zh`，不要勾選 README）。
-2. 設定 remote 並推上原始碼：
-   `git remote add origin https://github.com/<帳號>/5etools-zh.git && git push -u origin main`
-3. 建置並部署：`node scripts/build.mjs && node scripts/deploy.mjs`
-   （把 `dist/` 推到 `gh-pages` 分支）
-4. GitHub repo → Settings → Pages → Source 選「Deploy from a branch」，分支選 `gh-pages` / `(root)`。
-5. 約一兩分鐘後可在 `https://<帳號>.github.io/5etools-zh/` 瀏覽（本站：https://hifujifuji.github.io/5etools-zh/）。
-
-之後更新翻譯只要重複第 3 步。
