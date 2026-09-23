@@ -1,0 +1,663 @@
+{
+	"batch": "xmm-17",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Tree Blight|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Tree Blight",
+				"Multiattack",
+				"The blight makes two Branch attacks and uses Grasping Root.",
+				"Branch",
+				"{@atkr m} {@hit 9}, reach 15 ft. {@h}16 ({@damage 3d6 + 6}) Bludgeoning damage.",
+				"Grasping Root",
+				"{@actSave str} {@dc 17}, one Large or smaller creature the blight can see within 15 feet. {@actSaveFail} The target is pulled up to 10 feet straight toward the blight and has the {@condition Grappled|XPHB} condition (escape {@dc 16}) from one of six roots. Until the grapple ends, the target takes 13 ({@damage 2d6 + 6}) Bludgeoning damage at the start of each of its turns.",
+				"Gnash",
+				"{@actSave dex} {@dc 17}, one creature {@condition Grappled|XPHB} by the blight. {@actSaveFail} 19 ({@damage 3d8 + 6}) Piercing damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Triceratops|XMM",
+			"hint": {
+				"Triceratops": "三角龍",
+				"Multiattack": "多重攻擊",
+				"Gore": "頂撞"
+			},
+			"s": [
+				"Triceratops",
+				"Multiattack",
+				"The triceratops makes two Gore attacks.",
+				"Gore",
+				"{@atkr m} {@hit 9}, reach 5 ft. {@h}19 ({@damage 2d12 + 6}) Piercing damage. If the target is Huge or smaller and the triceratops moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 ({@damage 2d8}) Piercing damage and has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Troglodyte|XMM",
+			"hint": {
+				"Troglodyte": "戰蜥人",
+				"Stench": "惡臭",
+				"Sunlight Sensitivity": "日光敏感",
+				"Rend": "撕裂"
+			},
+			"s": [
+				"Troglodyte",
+				"Stench",
+				"{@actSave con} {@dc 12}, any creature (other than a troglodyte) that starts its turn in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the troglodyte. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition until the start of its next turn. {@actSaveSuccess} The target is immune to the Stench of all troglodytes for 1 hour.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the troglodyte has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls.",
+				"Rend",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Troll|XMM",
+			"hint": {
+				"Troll": "巨魔",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Charge": "衝鋒"
+			},
+			"s": [
+				"Troll",
+				"Loathsome Limbs (4/Day)",
+				"If the troll ends any turn {@status Bloodied|XPHB} and took 15+ Slashing damage during that turn, one of the troll's limbs is severed, falls into the troll's space, and becomes a {@creature Troll Limb|XMM}. The limb acts immediately after the troll's turn. The troll has 1 {@condition Exhaustion|XPHB} level for each missing limb, and it grows replacement limbs the next time it regains {@variantrule Hit Points|XPHB}.",
+				"Regeneration",
+				"The troll regains 15 {@variantrule Hit Points|XPHB} at the start of each of its turns. If the troll takes Acid or Fire damage, this trait doesn't function on the troll's next turn. The troll dies only if it starts its turn with 0 {@variantrule Hit Points|XPHB} and doesn't regenerate.",
+				"Multiattack",
+				"The troll makes three Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}11 ({@damage 2d6 + 4}) Slashing damage.",
+				"Charge",
+				"The troll moves up to half its {@variantrule Speed|XPHB} straight toward an enemy it can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Troll Limb|XMM",
+			"hint": {
+				"Regeneration": "再生",
+				"Rend": "撕裂"
+			},
+			"s": [
+				"Troll Limb",
+				"Regeneration",
+				"The limb regains 5 {@variantrule Hit Points|XPHB} at the start of each of its turns. If the limb takes Acid or Fire damage, this trait doesn't function on the limb's next turn. The limb dies only if it starts its turn with 0 {@variantrule Hit Points|XPHB} and doesn't regenerate.",
+				"Troll Spawn",
+				"The limb uncannily has the same senses as a whole troll. If the limb isn't destroyed within 24 hours, roll {@dice 1d12}. On a 12, the limb turns into a {@creature Troll|XMM}. Otherwise, the limb withers away.",
+				"Rend",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}9 ({@damage 2d4 + 4}) Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Twig Blight|XMM",
+			"hint": {
+				"Twig Blight": "枯枝怪",
+				"Pack Tactics": "群體戰術",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Twig Blight",
+				"Pack Tactics",
+				"The blight has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the blight's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Claw",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}4 ({@damage 1d4 + 2}) Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tyrannosaurus Rex|XMM",
+			"hint": {
+				"Tyrannosaurus Rex": "霸王龍",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Tyrannosaurus Rex",
+				"Multiattack",
+				"The tyrannosaurus makes one Bite attack and one Tail attack.",
+				"Bite",
+				"{@atkr m} {@hit 10}, reach 10 ft. {@h}33 ({@damage 4d12 + 7}) Piercing damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 17}). While {@condition Grappled|XPHB}, the target has the {@condition Restrained|XPHB} condition and can't be targeted by the tyrannosaurus's Tail.",
+				"Tail",
+				"{@atkr m} {@hit 10}, reach 15 ft. {@h}25 ({@damage 4d8 + 7}) Bludgeoning damage. If the target is a Huge or smaller creature, it has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ultroloth|XMM",
+			"hint": {
+				"Ultroloth": "烏特羅斯魔",
+				"Spellcasting": "施法",
+				"Fiendish Restoration": "邪魔復原",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Hypnotic Gaze": "催眠凝視"
+			},
+			"s": [
+				"Ultroloth",
+				"(hover)",
+				"Spellcasting",
+				"The ultroloth casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 17}):",
+				"Fiendish Guile {@recharge 4}",
+				"The ultroloth casts {@spell Dispel Magic|XPHB}, {@spell Invisibility|XPHB} (self only), {@spell Misty Step|XPHB}, or {@spell Suggestion|XPHB}, requiring no Material components and using the same spellcasting ability as Spellcasting.",
+				"Fiendish Restoration",
+				"If the ultroloth dies outside Gehenna, its body dissolves into ichor, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in Gehenna.",
+				"Magic Resistance",
+				"The ultroloth has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The ultroloth uses Hypnotic Gaze and makes two Mercurial Whip attacks.",
+				"Mercurial Whip",
+				"{@atkr m} {@hit 9}, reach 15 ft. {@h}25 ({@damage 6d6 + 4}) Force damage, and the ultroloth can teleport the target up to 10 feet to an unoccupied space the ultroloth can see that isn't in the air.",
+				"Hypnotic Gaze",
+				"{@actSave wis} {@dc 17}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 10 ({@damage 3d6}) Psychic damage, and the target has the {@condition Stunned|XPHB} condition until the start of the ultroloth's next turn. {@actSaveSuccess} The target is immune to this ultroloth's Hypnotic Gaze for 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Umber Hulk|XMM",
+			"hint": {
+				"Umber Hulk": "土巨怪",
+				"Tunneler": "掘地者",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂"
+			},
+			"s": [
+				"Umber Hulk",
+				"Tunneler",
+				"The umber hulk can burrow through solid rock at half its {@variantrule Burrow Speed|XPHB} and leaves a 10-foot-diameter tunnel in its wake.",
+				"Multiattack",
+				"The umber hulk makes three Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 8}, reach 10 ft. {@h}12 ({@damage 2d6 + 5}) Slashing damage.",
+				"Confusing Gaze {@recharge 5}",
+				"{@actSave wis} {@dc 14}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target can't take Reactions until the start of the umber hulk's next turn, and the target rolls {@dice 1d8} to determine what it does on its next turn:",
+				"1-4",
+				"The target does nothing.",
+				"5-6",
+				"The target takes no action or {@variantrule Bonus Action|XPHB} and uses all its movement to move in a random direction.",
+				"7-8",
+				"The target makes a melee attack against a random creature within its reach or does nothing if it can't make such an attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Unicorn|XMM",
+			"hint": {
+				"Unicorn": "獨角獸",
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Hooves": "蹄擊"
+			},
+			"s": [
+				"Unicorn",
+				"Spellcasting",
+				"The unicorn casts one of the following spells, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 14}):",
+				"Unicorn's Blessing (3/Day)",
+				"The unicorn touches another creature with its horn and casts {@spell Cure Wounds|XPHB} or {@spell Lesser Restoration|XPHB} on that creature, using the same spellcasting ability as Spellcasting.",
+				"Legendary Resistance (3/Day)",
+				"If the unicorn fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The unicorn has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The unicorn makes one Hooves attack and one Radiant Horn attack.",
+				"Hooves",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Bludgeoning damage.",
+				"Radiant Horn",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}9 ({@damage 1d10 + 4}) Radiant damage.",
+				"Charging Horn",
+				"The unicorn moves up to half its {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}, and it makes one Radiant Horn attack.",
+				"Shimmering Shield",
+				"The unicorn targets itself or one creature it can see within 60 feet of itself. The target gains 10 ({@dice 3d6}) {@variantrule Temporary Hit Points|XPHB}, and its AC increases by 2 until the end of the unicorn's next turn. The unicorn can't take this action again until the start of its next turn.",
+				"Unicorn"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vampire|XMM",
+			"hint": {
+				"Vampire": "吸血鬼",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"Misty Escape": "霧遁",
+				"Spider Climb": "蛛行",
+				"Forbiddance": "禁制術",
+				"Sunlight": "日光",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Vampire",
+				"Charm {@recharge 5}",
+				"The vampire casts {@spell Charm Person|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 17}), and the duration is 24 hours. The Charmed target is a willing recipient of the vampire's Bite, the damage of which doesn't end the spell. When the spell ends, the target is unaware it was Charmed by the vampire.",
+				"Beguile",
+				"The vampire casts {@spell Command|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 17}). The vampire can't take this action again until the start of its next turn.",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the vampire fails a saving throw, it can choose to succeed instead.",
+				"Misty Escape",
+				"If the vampire drops to 0 {@variantrule Hit Points|XPHB} outside its resting place, the vampire uses Shape-Shift to become mist (no action required). If it can't use Shape-Shift, it is destroyed.",
+				"While it has 0 {@variantrule Hit Points|XPHB} in mist form, it can't return to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it returns to its vampire form and has the {@condition Paralyzed|XPHB} condition until it regains any {@variantrule Hit Points|XPHB}, and it regains 1 {@variantrule Hit Points|XPHB|Hit Point} after spending 1 hour there.",
+				"Spider Climb",
+				"The vampire can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Vampire Weakness",
+				"The vampire has these weaknesses:",
+				"Forbiddance",
+				"The vampire can't enter a residence without an invitation from an occupant.",
+				"Running Water",
+				"The vampire takes 20 Acid damage if it ends its turn in running water.",
+				"Stake to the Heart",
+				"If a weapon that deals Piercing damage is driven into the vampire's heart while the vampire has the {@condition Incapacitated|XPHB} condition in its resting place, the vampire has the {@condition Paralyzed|XPHB} condition until the weapon is removed.",
+				"Sunlight",
+				"The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks.",
+				"Multiattack (Vampire Form Only)",
+				"The vampire makes two Grave Strike attacks and uses Bite.",
+				"Grave Strike (Vampire Form Only)",
+				"{@atkr m} {@hit 9}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Bludgeoning damage plus 7 ({@damage 2d6}) Necrotic damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 14}) from one of two hands.",
+				"Bite (Bat or Vampire Form Only)",
+				"{@actSave con} {@dc 17}, one creature within 5 feet that is willing or that has the {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, or {@condition Restrained|XPHB} condition. {@actSaveFail} 6 ({@damage 1d4 + 4}) Piercing damage plus 13 ({@damage 3d8}) Necrotic damage. The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains {@variantrule Hit Points|XPHB} equal to that amount. A Humanoid reduced to 0 {@variantrule Hit Points|XPHB} by this damage and then buried rises the following sunset as a {@creature Vampire Spawn|XMM} under the vampire's control.",
+				"Shape-Shift",
+				"If the vampire isn't in sunlight or running water, it shape-shifts into a Tiny bat ({@variantrule Speed|XPHB} 5 ft., {@variantrule Fly Speed|XPHB} 30 ft.) or a Medium cloud of mist ({@variantrule Speed|XPHB} 5 ft., {@variantrule Fly Speed|XPHB} 20 ft. [hover]), or it returns to its vampire form. Anything it is wearing transforms with it.",
+				"While in bat form, the vampire can't speak. Its game statistics, other than its size and {@variantrule Speed|XPHB}, are unchanged.",
+				"While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless and can enter an enemy's space and stop there. If air can pass through a space, the mist can do so, but it can't pass through liquid. It has {@variantrule Resistance|XPHB} to all damage, except the damage it takes from sunlight.",
+				"Deathless Strike",
+				"The vampire moves up to half its {@variantrule Speed|XPHB}, and it makes one Grave Strike attack.",
+				"Vampire"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vampire Familiar|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Vampire Familiar",
+				"Vampiric Connection",
+				"While the familiar and its vampire master are on the same plane of existence, the vampire can communicate with the familiar telepathically, and the vampire can perceive through the familiar's senses.",
+				"Multiattack",
+				"The familiar makes two Umbral Dagger attacks.",
+				"Umbral Dagger",
+				"{@atkr m,r} {@hit 5}, reach 5 ft. or range 20/60 ft. {@h}5 ({@damage 1d4 + 3}) Piercing damage plus 7 ({@damage 3d4}) Necrotic damage. If the target is reduced to 0 {@variantrule Hit Points|XPHB} by this attack, the target becomes {@variantrule Stable|XPHB} but has the {@condition Poisoned|XPHB} condition for 1 hour. While it has the {@condition Poisoned|XPHB} condition, the target has the {@condition Paralyzed|XPHB} condition.",
+				"Deathless Agility",
+				"The familiar takes the {@action Dash|XPHB} or {@action Disengage|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vampire Nightbringer|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Shadow Stealth": "暗影潛行"
+			},
+			"s": [
+				"Vampire Nightbringer",
+				"(hover)",
+				"Sunlight Hypersensitivity",
+				"The vampire takes 10 Radiant damage if it starts its turn in sunlight. While in sunlight, it has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks.",
+				"Multiattack",
+				"The vampire makes one Bite attack and one Shadow Strike attack.",
+				"Bite",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}7 ({@damage 1d6 + 4}) Piercing damage plus 10 ({@damage 3d6}) Necrotic damage. The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains {@variantrule Hit Points|XPHB} equal to that amount.",
+				"Shadow Strike",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}7 ({@damage 1d6 + 4}) Slashing damage plus 14 ({@damage 4d6}) Cold damage.",
+				"Shadow Stealth",
+				"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the vampire takes the {@action Hide|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vampire Spawn|XMM",
+			"hint": {
+				"Vampire Spawn": "吸血鬼眷族",
+				"Spider Climb": "蛛行",
+				"Forbiddance": "禁制術",
+				"Sunlight": "日光",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Vampire Spawn",
+				"Spider Climb",
+				"The vampire can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Vampire Weakness",
+				"The vampire has these weaknesses:",
+				"Forbiddance",
+				"The vampire can't enter a residence without an invitation from an occupant.",
+				"Running Water",
+				"The vampire takes 20 Acid damage if it ends its turn in running water.",
+				"Stake to the Heart",
+				"The vampire is destroyed if a weapon that deals Piercing damage is driven into the vampire's heart while the vampire has the {@condition Incapacitated|XPHB} condition.",
+				"Sunlight",
+				"The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks.",
+				"Multiattack",
+				"The vampire makes two Claw attacks and uses Bite.",
+				"Claw",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 2d4 + 3}) Slashing damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from one of two claws.",
+				"Bite",
+				"{@actSave con} {@dc 14}, one creature within 5 feet that is willing or that has the {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, or {@condition Restrained|XPHB} condition. {@actSaveFail} 5 ({@damage 1d4 + 3}) Piercing damage plus 10 ({@damage 3d6}) Necrotic damage. The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains {@variantrule Hit Points|XPHB} equal to that amount.",
+				"Deathless Agility",
+				"The vampire takes the {@action Dash|XPHB} or {@action Disengage|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vampire Umbral Lord|XMM",
+			"hint": {
+				"Legendary Resistance (3/Day, or 4/Day in Lair)": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"Forbiddance": "禁制術",
+				"Sunlight": "日光",
+				"Multiattack": "多重攻擊",
+				"Sickening Ray": "致病射線",
+				"Vampire": "吸血鬼"
+			},
+			"s": [
+				"Vampire Umbral Lord",
+				"(hover)",
+				"Hunger of Hadar {@recharge 5}",
+				"The vampire casts {@spell Hunger of Hadar|XPHB} (level 5 version), requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 18}).",
+				"Beguile",
+				"The vampire casts {@spell Command|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 18}). The vampire can't take this action again until the start of its next turn.",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the vampire fails a saving throw, it can choose to succeed instead.",
+				"Shadow Escape",
+				"If the vampire drops to 0 {@variantrule Hit Points|XPHB} outside its resting place, it teleports into its resting place unless it is in running water or sunlight. If it can't teleport, it is destroyed. Once inside its resting place, it has the {@condition Paralyzed|XPHB} condition for 1 hour, after which it regains 1 {@variantrule Hit Points|XPHB|Hit Point}.",
+				"Vampire Weakness",
+				"The vampire has these weaknesses:",
+				"Forbiddance",
+				"The vampire can't enter a residence without an invitation from an occupant.",
+				"Running Water",
+				"The vampire takes 20 Acid damage if it ends its turn in running water.",
+				"Stake to the Heart",
+				"If a weapon that deals Piercing damage is driven into the vampire's heart while the vampire has the {@condition Incapacitated|XPHB} condition in its resting place, the vampire has the {@condition Paralyzed|XPHB} condition until the weapon is removed.",
+				"Sunlight",
+				"The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks.",
+				"Multiattack",
+				"The vampire makes two attacks, using Grave Strike or Sickening Ray in any combination.",
+				"Grave Strike",
+				"{@atkr m} {@hit 10}, reach 5 ft. {@h}9 ({@damage 1d8 + 5}) Slashing damage plus 13 ({@damage 3d8}) Necrotic damage.",
+				"Sickening Ray",
+				"{@atkr r} {@hit 10}, range 120 ft. {@h}16 ({@damage 2d10 + 5}) Necrotic damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the vampire's next turn.",
+				"Sanguine Drain",
+				"{@actSave con} {@dc 18}, one creature the vampire can see within 30 feet that isn't a Construct or an Undead. {@actSaveFail} 14 ({@damage 4d6}) Necrotic damage. The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the damage taken, and the vampire regains {@variantrule Hit Points|XPHB} equal to that amount.",
+				"Umbral Strike",
+				"The vampire moves up to half its {@variantrule Speed|XPHB}, and it makes one Grave Strike or Sickening Ray attack.",
+				"Vampire"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Venomous Snake|XMM",
+			"hint": {
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Venomous Snake",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}4 ({@damage 1d4 + 2}) Piercing damage plus 3 ({@damage 1d6}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vine Blight|XMM",
+			"hint": {
+				"Vine Blight": "枯藤怪"
+			},
+			"s": [
+				"Vine Blight",
+				"Entangling Plants {@recharge 5}",
+				"The blight casts the {@spell Entangle|XPHB} spell, using Constitution as the spellcasting ability (spell save {@dc 12}).",
+				"Constricting Vine",
+				"{@atkr m} {@hit 4}, reach 10 ft. {@h}6 ({@damage 1d8 + 2}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 12}). Until the grapple ends, the target takes 4 ({@damage 1d8}) Bludgeoning damage at the start of each of its turns, and the blight can't make Constricting Vine attacks."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Violet Fungus|XMM",
+			"hint": {
+				"Violet Fungus": "紫蕈",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Violet Fungus",
+				"Multiattack",
+				"The fungus makes two Rotting Touch attacks.",
+				"Rotting Touch",
+				"{@atkr m} {@hit 2}, reach 10 ft. {@h}4 ({@damage 1d8}) Necrotic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Violet Fungus Necrohulk|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Violet Fungus Necrohulk",
+				"Multiattack",
+				"The necrohulk makes two Rotting Slam attacks.",
+				"Rotting Slam",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}9 ({@damage 1d10 + 4}) Bludgeoning damage plus 7 ({@damage 2d6}) Necrotic damage.",
+				"Spore Bomb {@recharge 5}",
+				"{@actSave con} {@dc 15}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the necrohulk can see within 60 feet. {@actSaveFail} 28 ({@damage 8d6}) Necrotic damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the necrohulk's next turn. While {@condition Poisoned|XPHB}, the target can't regain {@variantrule Hit Points|XPHB}. {@actSaveSuccess} Half damage only.",
+				"Absorb Body",
+				"{@actSave str} {@dc 15}, one Medium or Small creature the necrohulk can see within 5 feet. {@actSaveFail} The target is pulled into the necrohulk's space and becomes grafted to its body. The necrohulk can have only one target grafted at a time.",
+				"While grafted, the target has the {@condition Restrained|XPHB} condition and {@variantrule Disadvantage|XPHB} on Constitution saving throws. When the necrohulk moves, the grafted target moves with it. If the target dies while grafted, its body is destroyed, and the necrohulk regains 10 {@variantrule Hit Points|XPHB}.",
+				"The grafted target or a creature within 5 feet of the necrohulk can take an action to make a {@dc 15} Strength ({@skill Athletics|XPHB}) check. On a successful check, the target is no longer grafted and moves to an unoccupied space within 5 feet of the necrohulk."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vrock|XMM",
+			"hint": {
+				"Vrock": "弗洛魔",
+				"Demonic Restoration": "惡魔復原",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Vrock",
+				"Demonic Restoration",
+				"If the vrock dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Abyss.",
+				"Magic Resistance",
+				"The vrock has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The vrock makes two Shred attacks.",
+				"Shred",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Piercing damage plus 10 ({@damage 3d6}) Poison damage.",
+				"Spores {@recharge}",
+				"{@actSave con} {@dc 15}, each creature in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the vrock. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. While {@condition Poisoned|XPHB}, the target takes 5 ({@damage 1d10}) Poison damage at the start of each of its turns. Emptying a flask of Holy Water on the target ends the effect early.",
+				"Stunning Screech (1/Day)",
+				"{@actSave con} {@dc 15}, each creature in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the vrock (demons succeed automatically). {@actSaveFail} 10 ({@damage 3d6}) Thunder damage, and the target has the {@condition Stunned|XPHB} condition until the end of the vrock's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vulture|XMM",
+			"hint": {
+				"Vulture": "禿鷲",
+				"Pack Tactics": "群體戰術",
+				"Beak": "啄擊"
+			},
+			"s": [
+				"Vulture",
+				"Pack Tactics",
+				"The vulture has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Beak",
+				"{@atkr m} {@hit 2}, reach 5 ft. {@h}2 ({@damage 1d4}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Warhorse|XMM",
+			"hint": {
+				"Warhorse": "戰馬",
+				"Hooves": "蹄擊"
+			},
+			"s": [
+				"Warhorse",
+				"Hooves",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}9 ({@damage 2d4 + 4}) Bludgeoning damage. If the target is a Large or smaller creature and the horse moved 20+ feet straight toward it immediately before the hit, the target takes an extra 5 ({@damage 2d4}) Bludgeoning damage and has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Warhorse Skeleton|XMM",
+			"hint": {
+				"Warhorse Skeleton": "骷髏戰馬",
+				"Hooves": "蹄擊"
+			},
+			"s": [
+				"Warhorse Skeleton",
+				"Hooves",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}7 ({@damage 1d6 + 4}) Bludgeoning damage. If the target is a Large or smaller creature and the skeleton moved 20+ feet straight toward it immediately before the hit, the target has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Warrior Commander|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Greatsword": "巨劍",
+				"Sap": "削弱",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Warrior Commander",
+				"Multiattack",
+				"The warrior makes three attacks, using Greatsword or Longbow in any combination.",
+				"Greatsword",
+				"{@atkr m} {@hit 9}, reach 5 ft. {@h}19 ({@damage 4d6 + 5}) Slashing damage. The warrior also creates one of the following effects:",
+				"Sap",
+				"The target has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of the warrior's next turn.",
+				"Maneuver",
+				"One ally who can see or hear the warrior can take a {@variantrule Reaction|XPHB} to move up to half the ally's {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}.",
+				"Longbow",
+				"{@atkr r} {@hit 9}, range 150/600 ft. {@h}18 ({@damage 3d8 + 5}) Piercing damage, and the target's {@variantrule Speed|XPHB} decreases by 10 feet until the end of the target's next turn.",
+				"Tactical Charge",
+				"The warrior moves up to half its {@variantrule Speed|XPHB} straight toward an enemy it can see without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}.",
+				"Counterattack",
+				"{@actTrigger} The warrior is hit by an attack roll. {@actResponse} The warrior adds 4 to its AC against that attack, possibly causing it to miss. On a miss, the warrior can make one Greatsword or Longbow attack against the attacker."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Warrior Infantry|XMM",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Spear": "矛"
+			},
+			"s": [
+				"Warrior Infantry",
+				"Pack Tactics",
+				"The warrior has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Spear",
+				"{@atkr m,r} {@hit 3}, reach 5 ft. or range 20/60 ft. {@h}4 ({@damage 1d6 + 1}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Warrior Veteran|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Greatsword": "巨劍",
+				"Heavy Crossbow": "重弩",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Warrior Veteran",
+				"Multiattack",
+				"The warrior makes two Greatsword or Heavy Crossbow attacks.",
+				"Greatsword",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Slashing damage.",
+				"Heavy Crossbow",
+				"{@atkr r} {@hit 3}, range 100/400 ft. {@h}12 ({@damage 2d10 + 1}) Piercing damage.",
+				"Parry",
+				"{@actTrigger} The warrior is hit by a melee attack roll while holding a weapon. {@actResponse} The warrior adds 2 to its AC against that attack, possibly causing it to miss."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Water Elemental|XMM",
+			"hint": {
+				"Water Elemental": "水元素",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Water Elemental",
+				"Freeze",
+				"If the elemental takes Cold damage, its {@variantrule Speed|XPHB} decreases by 20 feet until the end of its next turn.",
+				"Water Form",
+				"The elemental can enter an enemy's space and stop there. It can move through a space as narrow as 1 inch without expending extra movement to do so.",
+				"Multiattack",
+				"The elemental makes two Slam attacks.",
+				"Slam",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}13 ({@damage 2d8 + 4}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Prone|XPHB} condition.",
+				"Whelm {@recharge 4}",
+				"{@actSave str} {@dc 15}, each creature in the elemental's space. {@actSaveFail} 22 ({@damage 4d8 + 4}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 14}). Until the grapple ends, the target has the {@condition Restrained|XPHB} condition, is suffocating unless it can breathe water, and takes 9 ({@damage 2d8}) Bludgeoning damage at the start of each of the elemental's turns. The elemental can grapple one Large creature or up to two Medium or smaller creatures at a time with Whelm. As an action, a creature within 5 feet of the elemental can pull a creature out of it by succeeding on a {@dc 14} Strength ({@skill Athletics|XPHB}) check. {@actSaveSuccess} Half damage only."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Water Weird|XMM",
+			"hint": {
+				"Water Weird": "水詭"
+			},
+			"s": [
+				"Water Weird",
+				"Invisible in Water",
+				"The water weird has the {@condition Invisible|XPHB} condition while fully immersed in water.",
+				"Water Bound",
+				"The water weird dies if it leaves the water to which it is bound or if that water is destroyed.",
+				"Surge",
+				"{@atkr m} {@hit 5}, reach 10 ft. {@h}13 ({@damage 3d6 + 3}) Cold damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}), and it has the {@condition Restrained|XPHB} condition until the grapple ends."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Weasel|XMM",
+			"hint": {
+				"Weasel": "鼬鼠",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Weasel",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}1 Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Werebear|XMM",
+			"hint": {
+				"Werebear": "(獸化)熊人",
+				"Multiattack": "多重攻擊",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Werebear",
+				"(bear form only)",
+				"(bear form only)",
+				"Multiattack",
+				"The werebear makes two attacks, using Handaxe or Rend in any combination. It can replace one attack with a Bite attack.",
+				"Bite (Bear or Hybrid Form Only)",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}17 ({@damage 2d12 + 4}) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. {@actSave con} {@dc 14}. {@actSaveFail} The target is cursed. If the cursed target drops to 0 {@variantrule Hit Points|XPHB}, it instead becomes a Werebear under the DM's control and has 10 {@variantrule Hit Points|XPHB}. {@actSaveSuccess} The target is immune to this werebear's curse for 24 hours.",
+				"Handaxe (Humanoid or Hybrid Form Only)",
+				"{@atkr m,r} {@hit 7}, reach 5 ft or range 20/60 ft. {@h}14 ({@damage 3d6 + 4}) Slashing damage.",
+				"Rend (Bear or Hybrid Form Only)",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}13 ({@damage 2d8 + 4}) Slashing damage.",
+				"Shape-Shift",
+				"The werebear shape-shifts into a Large bear-humanoid hybrid form or a Large bear, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+			]
+		}
+	]
+}

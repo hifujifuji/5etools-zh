@@ -118,8 +118,8 @@ export function makeTranslator (dict, ent, zhName) {
 	};
 	const area = a => {
 		let m;
-		if ((m = /^each creature in an? (\d+)-foot (\{@variantrule (Cone|Cube|Emanation|Sphere) \[Area of Effect\]\|XPHB\|\w+\})( originating from the \{X\})?$/.exec(a)))
-			return `${m[4] ? `從${X}發出的 ` : ""}${m[1]} 呎${m[2].replace(/\|\w+\}$/, `|${{Cone: "錐形", Cube: "立方", Emanation: "散發", Sphere: "球形"}[m[3]]}}`)}範圍內的每個生物`;
+		if ((m = /^each (creature|enemy) in an? (\d+)-foot (\{@variantrule (Cone|Cube|Emanation|Sphere) \[Area of Effect\]\|XPHB\|\w+\})( originating from the \{X\})?$/.exec(a)))
+			return `${m[5] ? `從${X}發出的 ` : ""}${m[2]} 呎${m[3].replace(/\|\w+\}$/, `|${{Cone: "錐形", Cube: "立方", Emanation: "散發", Sphere: "球形"}[m[4]]}}`)}範圍內的每個${m[1] === "enemy" ? "敵人" : "生物"}`;
 		if ((m = /^each creature in an? (\d+)-foot-long, (\d+)-foot-wide \{@variantrule Line \[Area of Effect\]\|XPHB\|Line\}$/.exec(a)))
 			return `長 ${m[1]} 呎、寬 ${m[2]} 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物`;
 		if ((m = /^one creature the \{X\} can see within (\d+) feet$/.exec(a))) return `${X} ${m[1]} 呎內一個它能看見的生物`;

@@ -1,0 +1,583 @@
+{
+	"batch": "xmm-16",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Spider|XMM",
+			"hint": {
+				"Spider": "蜘蛛",
+				"Spider Climb": "蛛行",
+				"Web Walker": "蛛網行者",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Spider",
+				"Spider Climb",
+				"The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Web Walker",
+				"The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}1 Piercing damage plus 2 ({@damage 1d4}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spined Devil|XMM",
+			"hint": {
+				"Spined Devil": "棘魔",
+				"Flyby": "飛掠",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Spined Devil",
+				"Flyby",
+				"The devil doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.",
+				"Magic Resistance",
+				"The devil has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The devil makes two attacks, using Infernal Fork and Tail Spine in any combination.",
+				"Infernal Fork",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage plus 3 ({@damage 1d6}) Fire damage.",
+				"Tail Spine",
+				"{@atkr r} {@hit 4}, range 20/80 ft. {@h}4 ({@damage 1d4 + 2}) Piercing damage plus 3 ({@damage 1d6}) Fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spirit Naga|XMM",
+			"hint": {
+				"Spirit Naga": "精魂納迦",
+				"Spellcasting": "施法",
+				"Fiendish Restoration": "邪魔復原",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Spirit Naga",
+				"Spellcasting",
+				"The naga casts one of the following spells, requiring no Somatic or Material components and using Intelligence as the spellcasting ability (spell save {@dc 14}):",
+				"Fiendish Restoration",
+				"If it dies, the naga returns to life in {@dice 1d6} days and regains all its {@variantrule Hit Points|XPHB}. Only a {@spell Wish|XPHB} spell can prevent this trait from functioning.",
+				"Multiattack",
+				"The naga makes three attacks, using Bite or Necrotic Ray in any combination.",
+				"Bite",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}7 ({@damage 1d6 + 4}) Piercing damage plus 14 ({@damage 4d6}) Poison damage.",
+				"Necrotic Ray",
+				"{@atkr r} {@hit 6}, range 60 ft. {@h}21 ({@damage 6d6}) Necrotic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sprite|XMM",
+			"hint": {
+				"Sprite": "小妖精",
+				"Invisibility": "隱形"
+			},
+			"s": [
+				"Sprite",
+				"Invisibility",
+				"The sprite casts {@spell Invisibility|XPHB} on itself, requiring no spell components and using Charisma as the spellcasting ability.",
+				"Needle Sword",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}6 ({@damage 1d4 + 4}) Piercing damage.",
+				"Enchanting Bow",
+				"{@atkr r} {@hit 6}, range 40/160 ft. {@h}1 Piercing damage, and the target has the {@condition Charmed|XPHB} condition until the start of the sprite's next turn.",
+				"Heart Sight",
+				"{@actSave cha} {@dc 10}, one creature within 5 feet the sprite can see (Celestials, Fiends, and Undead automatically fail the save). {@actSaveFail} The sprite knows the target's emotions and alignment."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spy|XMM",
+			"hint": {
+				"Spy": "密探",
+				"Shortsword": "短劍",
+				"Hand Crossbow": "手弩",
+				"Cunning Action": "巧妙動作"
+			},
+			"s": [
+				"Spy",
+				"Shortsword",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage plus 7 ({@damage 2d6}) Poison damage.",
+				"Hand Crossbow",
+				"{@atkr r} {@hit 4}, range 30/120 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage plus 7 ({@damage 2d6}) Poison damage.",
+				"Cunning Action",
+				"The spy takes the {@action Dash|XPHB}, {@action Disengage|XPHB}, or {@action Hide|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spy Master|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Rapier": "刺劍",
+				"Hand Crossbow": "手弩",
+				"Cunning Action": "巧妙動作"
+			},
+			"s": [
+				"Spy Master",
+				"Multiattack",
+				"The spy makes three attacks, using Rapier or Hand Crossbow in any combination.",
+				"Rapier",
+				"{@atkr m} {@hit 9}, reach 5 ft. {@h}14 ({@damage 2d8 + 5}) Piercing damage plus 7 ({@damage 2d6}) Poison damage.",
+				"Hand Crossbow",
+				"{@atkr r} {@hit 9}, range 30/120 ft. {@h}12 ({@damage 2d6 + 5}) Piercing damage plus 9 ({@damage 2d8}) Poison damage.",
+				"Smoke Bomb (1/Day)",
+				"The spy throws a bomb to a point it can see within 30 feet of itself. {@actSave con} {@dc 16}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point. {@actSaveFail} 28 ({@damage 8d6}) Poison damage, and the target has the {@condition Blinded|XPHB} condition until the end of the spy's next turn. {@actSaveSuccess} Half damage only.",
+				"Cunning Action",
+				"The spy takes the {@action Dash|XPHB}, {@action Disengage|XPHB}, or {@action Hide|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Steam Mephit|XMM",
+			"hint": {
+				"Steam Mephit": "蒸氣魔蝠",
+				"Death Burst": "死亡爆發",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Steam Mephit",
+				"Blurred Form",
+				"Attack rolls against the mephit are made with {@variantrule Disadvantage|XPHB} unless the mephit has the {@condition Incapacitated|XPHB} condition.",
+				"Death Burst",
+				"The mephit explodes when it dies. {@actSave dex} {@dc 10}, each creature in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the mephit. {@actSaveFail} 5 ({@damage 2d4}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Claw",
+				"{@atkr m} {@hit 2}, reach 5 ft. {@h}2 ({@damage 1d4}) Slashing damage plus 2 ({@damage 1d4}) Fire damage.",
+				"Steam Breath {@recharge}",
+				"{@actSave con} {@dc 10}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 5 ({@damage 2d4}) Fire damage, and the target's {@variantrule Speed|XPHB} decreases by 10 feet until the end of the mephit's next turn. {@actSaveSuccess} Half damage only. {@actSaveSuccessOrFail} Being underwater doesn't grant {@variantrule Resistance|XPHB} to this Fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Stirge|XMM",
+			"hint": {
+				"Stirge": "蚊蝠",
+				"Proboscis": "口器"
+			},
+			"s": [
+				"Stirge",
+				"Proboscis",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Piercing damage, and the stirge attaches to the target. While attached, the stirge can't make Proboscis attacks, and the target takes 5 ({@damage 2d4}) Necrotic damage at the start of each of the stirge's turns.",
+				"The stirge can detach itself by spending 5 feet of its movement. The target or a creature within 5 feet of it can detach the stirge as an action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Stone Giant|XMM",
+			"hint": {
+				"Stone Giant": "石巨人",
+				"Multiattack": "多重攻擊",
+				"Stone Club": "石棍"
+			},
+			"s": [
+				"Stone Giant",
+				"Multiattack",
+				"The giant makes two attacks, using Stone Club or Boulder in any combination.",
+				"Stone Club",
+				"{@atkr m} {@hit 9}, reach 15 ft. {@h}22 ({@damage 3d10 + 6}) Bludgeoning damage.",
+				"Boulder",
+				"{@atkr r} {@hit 9}, range 60/240 ft. {@h}15 ({@damage 2d8 + 6}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition.",
+				"Deflect Missile {@recharge 5}",
+				"{@actTrigger} The giant is hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it. {@actResponse} The giant reduces the damage it takes from the attack by 11 ({@dice 1d10 + 6}), and if that damage is reduced to 0, the giant can redirect some of the attack's force. {@actSave dex} {@dc 17}, one creature the giant can see within 60 feet. {@actSaveFail} 11 ({@damage 1d10 + 6}) Force damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Stone Golem|XMM",
+			"hint": {
+				"Stone Golem": "石魔像",
+				"Immutable Form": "不變形體",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Stone Golem",
+				"Slow {@recharge 5}",
+				"The golem casts the {@spell Slow|XPHB} spell, requiring no spell components and using Constitution as the spellcasting ability (spell save {@dc 17}).",
+				"Immutable Form",
+				"The golem can't shape-shift.",
+				"Magic Resistance",
+				"The golem has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The golem makes two attacks, using Slam or Force Bolt in any combination.",
+				"Slam",
+				"{@atkr m} {@hit 10}, reach 5 ft. {@h}15 ({@damage 2d8 + 6}) Bludgeoning damage plus 9 ({@damage 2d8}) Force damage.",
+				"Force Bolt",
+				"{@atkr r} {@hit 9}, range 120 ft. {@h}22 ({@damage 4d10}) Force damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Storm Giant|XMM",
+			"hint": {
+				"Storm Giant": "風暴巨人",
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Storm Giant",
+				"(hover)",
+				"Spellcasting",
+				"The giant casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 18}):",
+				"Amphibious",
+				"The giant can breathe air and water.",
+				"Multiattack",
+				"The giant makes two attacks, using Storm Sword or Thunderbolt in any combination.",
+				"Storm Sword",
+				"{@atkr m} {@hit 14}, reach 10 ft. {@h}23 ({@damage 4d6 + 9}) Slashing damage plus 13 ({@damage 3d8}) Lightning damage.",
+				"Thunderbolt",
+				"{@atkr r} {@hit 14}, range 500 ft. {@h}22 ({@damage 2d12 + 9}) Lightning damage, and the target has the {@condition Blinded|XPHB} and {@condition Deafened|XPHB} conditions until the start of the giant's next turn.",
+				"Lightning Storm {@recharge 5}",
+				"{@actSave dex} {@dc 18}, each creature in a 10-foot-radius, 40-foot-high {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} originating from a point the giant can see within 500 feet. {@actSaveFail} 55 ({@damage 10d10}) Lightning damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Succubus|XMM",
+			"hint": {
+				"Succubus": "魅魔",
+				"Multiattack": "多重攻擊",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Succubus",
+				"Incubus Form",
+				"When the succubus finishes a {@variantrule Long Rest|XPHB}, it can shape-shift into an {@creature Incubus|XMM}, using that stat block instead of this one.",
+				"Multiattack",
+				"The succubus makes one Fiendish Touch attack and uses Charm or Draining Kiss.",
+				"Fiendish Touch",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}16 ({@damage 2d10 + 5}) Psychic damage.",
+				"Charm",
+				"The succubus casts {@spell Dominate Person|XPHB} (level 8 version), requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 15}).",
+				"Draining Kiss",
+				"{@actSave con} {@dc 15}, one creature {@condition Charmed|XPHB} by the succubus within 5 feet. {@actSaveFail} 13 ({@damage 3d8}) Psychic damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the damage taken.",
+				"Shape-Shift",
+				"The succubus shape-shifts to resemble a Medium or Small Humanoid or back into its true form. Its game statistics are the same in each form, except its {@variantrule Fly Speed|XPHB} is available only in its true form. Any equipment it's wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Bats|XMM",
+			"hint": {
+				"Swarm of Bats": "蝙蝠群"
+			},
+			"s": [
+				"Swarm of Bats",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}.",
+				"Bites",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 2d4}) Piercing damage, or 2 ({@damage 1d4}) Piercing damage if the swarm is {@status Bloodied|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Crawling Claws|XMM",
+			"s": [
+				"Swarm of Crawling Claws",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}.",
+				"Swarm of Grasping Hands",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}20 ({@damage 4d8 + 2}) Necrotic damage, or 11 ({@damage 2d8 + 2}) Necrotic damage if the swarm is {@status Bloodied|XPHB}. If the target is a Medium or smaller creature, it has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Dretches|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂"
+			},
+			"s": [
+				"Swarm of Dretches",
+				"Fetid Aura",
+				"{@actSave con} {@dc 12}, any creature that starts its turn in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the swarm. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition until the start of its next turn. While {@condition Poisoned|XPHB}, the target can take either an action or a {@variantrule Bonus Action|XPHB} on its turn, not both, and it can't take Reactions.",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Small creature. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}.",
+				"Multiattack",
+				"The swarm makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}12 ({@damage 3d6 + 2}) Slashing damage, or 9 ({@damage 3d4 + 2}) Slashing damage if the swarm is {@status Bloodied|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Insects|XMM",
+			"hint": {
+				"Swarm of Insects": "昆蟲群",
+				"Spider Climb": "蛛行"
+			},
+			"s": [
+				"Swarm of Insects",
+				"climb",
+				"fly",
+				"(DM's choice)",
+				"Spider Climb",
+				"If the swarm has a {@variantrule Climb Speed|XPHB}, the swarm can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}.",
+				"Bites",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}6 ({@damage 2d4 + 1}) Poison damage, or 3 ({@damage 1d4 + 1}) Poison damage if the swarm is {@status Bloodied|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Larvae|XMM",
+			"s": [
+				"Swarm of Larvae",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through an opening large enough for a Medium creature. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}.",
+				"Bites",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}9 ({@damage 2d6 + 2}) Necrotic damage, or 7 ({@damage 2d4 + 2}) Necrotic damage if the swarm is {@status Bloodied|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Lemures|XMM",
+			"hint": {
+				"Hellish Restoration": "煉獄復原",
+				"Multiattack": "多重攻擊",
+				"Vile Slime": "邪惡黏液"
+			},
+			"s": [
+				"Swarm of Lemures",
+				"Hellish Restoration",
+				"If the swarm dies in the Nine Hells, it revives with all its {@variantrule Hit Points|XPHB} in {@dice 1d10} days unless it is killed by a creature under the effects of a {@spell Bless|XPHB} spell or its remains are sprinkled with Holy Water.",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through an opening large enough for a Medium creature. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}.",
+				"Multiattack",
+				"The swarm makes two Vile Slime attacks.",
+				"Vile Slime",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}11 ({@damage 2d8 + 2}) Poison damage, or 9 ({@damage 2d6 + 2}) Poison damage if the swarm is {@status Bloodied|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Piranhas|XMM",
+			"hint": {
+				"Water Breathing": "水中呼吸"
+			},
+			"s": [
+				"Swarm of Piranhas",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny piranha. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}.",
+				"Water Breathing",
+				"The swarm can breathe only underwater.",
+				"Bites",
+				"{@atkr m} {@hit 5} (with {@variantrule Advantage|XPHB} if the target doesn't have all its {@variantrule Hit Points|XPHB}), reach 5 ft. {@h}8 ({@damage 2d4 + 3}) Piercing damage, or 5 ({@damage 1d4 + 3}) Piercing damage if the swarm is {@status Bloodied|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Rats|XMM",
+			"hint": {
+				"Swarm of Rats": "老鼠群"
+			},
+			"s": [
+				"Swarm of Rats",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}.",
+				"Bites",
+				"{@atkr m} {@hit 2}, reach 5 ft. {@h}5 ({@damage 2d4}) Piercing damage, or 2 ({@damage 1d4}) Piercing damage if the swarm is {@status Bloodied|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Ravens|XMM",
+			"hint": {
+				"Swarm of Ravens": "渡鴉群"
+			},
+			"s": [
+				"Swarm of Ravens",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}.",
+				"Beaks",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage, or 2 ({@damage 1d4}) Piercing damage if the swarm is {@status Bloodied|XPHB}.",
+				"Cacophony {@recharge}",
+				"{@actSave wis} {@dc 10}, one creature in the swarm's space. {@actSaveFail} The target has the {@condition Deafened|XPHB} condition until the start of the swarm's next turn. While {@condition Deafened|XPHB}, the target also has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Stirges|XMM",
+			"s": [
+				"Swarm of Stirges",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}.",
+				"Swarm of Proboscises",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}14 ({@damage 2d10 + 3}) Piercing damage, or 8 ({@damage 1d10 + 3}) Piercing damage if the swarm is {@status Bloodied|XPHB}. If the target is a Medium or smaller creature in the swarm's space, the target has the {@condition Grappled|XPHB} condition (escape {@dc 13}). Until the grapple ends, the target takes 7 ({@damage 2d6}) Necrotic damage at the end of each of its turns."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Venomous Snakes|XMM",
+			"s": [
+				"Swarm of Venomous Snakes",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}.",
+				"Bites",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Piercing damage—or 6 ({@damage 1d4 + 4}) Piercing damage if the swarm is {@status Bloodied|XPHB}—plus 10 ({@damage 3d6}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tarrasque|XMM",
+			"hint": {
+				"Tarrasque": "泰拉斯奎巨獸",
+				"Magic Resistance": "魔法抗性",
+				"Siege Monster": "攻城怪獸",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊",
+				"Tail": "尾擊",
+				"Swallow": "吞嚥"
+			},
+			"s": [
+				"Tarrasque",
+				"Legendary Resistance (6/Day)",
+				"If the tarrasque fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The tarrasque has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Reflective Carapace",
+				"If the tarrasque is targeted by a {@spell Magic Missile|XPHB} spell or a spell that requires a ranged attack roll, roll {@dice 1d6}. On a 1-5, the tarrasque is unaffected. On a 6, the tarrasque is unaffected and reflects the spell, turning the caster into the target.",
+				"Siege Monster",
+				"The tarrasque deals double damage to objects and structures.",
+				"Multiattack",
+				"The tarrasque makes one Bite attack and three other attacks, using Claw or Tail in any combination.",
+				"Bite",
+				"{@atkr m} {@hit 19}, reach 15 ft. {@h}36 ({@damage 4d12 + 10}) Piercing damage, and the target has the {@condition Grappled|XPHB} condition (escape {@dc 20}). Until the grapple ends, the target has the {@condition Restrained|XPHB} condition and can't teleport.",
+				"Claw",
+				"{@atkr m} {@hit 19}, reach 15 ft. {@h}28 ({@damage 4d8 + 10}) Slashing damage.",
+				"Tail",
+				"{@atkr m} {@hit 19}, reach 30 ft. {@h}23 ({@damage 3d8 + 10}) Bludgeoning damage. If the target is a Huge or smaller creature, it has the {@condition Prone|XPHB} condition.",
+				"Thunderous Bellow {@recharge 5}",
+				"{@actSave con} {@dc 27}, each creature and each object that isn't being worn or carried in a 150-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 78 ({@damage 12d12}) Thunder damage, and the target has the {@condition Deafened|XPHB} and {@condition Frightened|XPHB} conditions until the end of its next turn. {@actSaveSuccess} Half damage only.",
+				"Swallow",
+				"{@actSave str} {@dc 27}, one Large or smaller creature {@condition Grappled|XPHB} by the tarrasque (it can have up to six creatures swallowed at a time). {@actSaveFail} The target is swallowed, and the {@condition Grappled|XPHB} condition ends. A swallowed creature has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions and can't teleport, it has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects outside the tarrasque, and it takes 56 ({@damage 16d6}) Acid damage at the start of each of the tarrasque's turns.",
+				"If the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a {@dc 20} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the tarrasque and has the {@condition Prone|XPHB} condition. If the tarrasque dies, any swallowed creature no longer has the {@condition Restrained|XPHB} condition and can escape from the corpse using 20 feet of movement, exiting {@condition Prone|XPHB}.",
+				"Onslaught",
+				"The tarrasque moves up to half its {@variantrule Speed|XPHB}, and it makes one Claw or Tail attack.",
+				"World-Shaking Movement",
+				"The tarrasque moves up to its {@variantrule Speed|XPHB}. At the end of this movement, the tarrasque creates an instantaneous shock wave in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself. Creatures in that area lose {@status Concentration|XPHB} and, if Medium or smaller, have the {@condition Prone|XPHB} condition. The tarrasque can't take this action again until the start of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Thri-kreen Marauder|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Leap": "跳躍"
+			},
+			"s": [
+				"Thri-kreen Marauder",
+				"Multiattack",
+				"The thri-kreen makes two attacks, using Gythka or Chatkcha in any combination.",
+				"Gythka",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}5 ({@damage 1d8 + 1}) Slashing damage plus 2 ({@damage 1d4}) Poison damage.",
+				"Chatkcha",
+				"{@atkr r} {@hit 4}, range 30/120 ft. {@h}5 ({@damage 1d6 + 2}) Slashing damage.",
+				"Leap",
+				"The thri-kreen jumps up to 15 feet by spending 5 feet of movement."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Thri-kreen Psion|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Thri-kreen Psion",
+				"(hover)",
+				"Spellcasting",
+				"The thri-kreen casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 15}):",
+				"Multiattack",
+				"The thri-kreen makes three Psionic Lance attacks.",
+				"Psionic Lance",
+				"{@atkr m,r} {@hit 7}, reach 10 ft. or range 120 ft. {@h}18 ({@damage 4d6 + 4}) Psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tiger|XMM",
+			"hint": {
+				"Tiger": "老虎",
+				"Rend": "撕裂",
+				"Nimble Escape": "靈巧脫逃"
+			},
+			"s": [
+				"Tiger",
+				"Rend",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Slashing damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition.",
+				"Nimble Escape",
+				"The tiger takes the {@action Disengage|XPHB} or {@action Hide|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tough|XMM",
+			"hint": {
+				"Tough": "健壯",
+				"Pack Tactics": "群體戰術",
+				"Mace": "硬頭錘",
+				"Heavy Crossbow": "重弩"
+			},
+			"s": [
+				"Tough",
+				"Pack Tactics",
+				"The tough has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the tough's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Mace",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Bludgeoning damage.",
+				"Heavy Crossbow",
+				"{@atkr r} {@hit 3}, range 100/400 ft. {@h}6 ({@damage 1d10 + 1}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tough Boss|XMM",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Warhammer": "戰錘",
+				"Heavy Crossbow": "重弩"
+			},
+			"s": [
+				"Tough Boss",
+				"Pack Tactics",
+				"The tough has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the tough's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Multiattack",
+				"The tough makes two attacks, using Warhammer or Heavy Crossbow in any combination.",
+				"Warhammer",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}12 ({@damage 2d8 + 3}) Bludgeoning damage. If the target is a Large or smaller creature, the tough pushes the target up to 10 feet straight away from itself.",
+				"Heavy Crossbow",
+				"{@atkr r} {@hit 4}, range 100/400 ft. {@h}13 ({@damage 2d10 + 2}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Treant|XMM",
+			"hint": {
+				"Treant": "樹人",
+				"Siege Monster": "攻城怪獸",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Treant",
+				"Siege Monster",
+				"The treant deals double damage to objects and structures.",
+				"Multiattack",
+				"The treant makes two Slam attacks.",
+				"Slam",
+				"{@atkr m} {@hit 10}, reach 5 ft. {@h}16 ({@damage 3d6 + 6}) Bludgeoning damage.",
+				"Hail of Bark",
+				"{@atkr r} {@hit 10}, range 180 ft. {@h}28 ({@damage 4d10 + 6}) Piercing damage.",
+				"Animate Trees (1/Day)",
+				"The treant magically animates up to two trees it can see within 60 feet of itself. Each tree uses the Treant stat block, except it has Intelligence and Charisma scores of 1, it can't speak, and it lacks this action. The tree takes its turn immediately after the treant on the same {@variantrule Initiative|XPHB} count, and it obeys the treant. A tree remains animate for 1 day or until it dies, the treant dies, or it is more than 120 feet from the treant. The tree then takes root if possible."
+			]
+		}
+	]
+}

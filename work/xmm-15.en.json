@@ -1,0 +1,678 @@
+{
+	"batch": "xmm-15",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Sahuagin Priest|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Blood Frenzy": "血腥狂亂",
+				"Limited Amphibiousness": "有限兩棲",
+				"Shark Telepathy": "鯊魚心靈感應",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Sahuagin Priest",
+				"Spellcasting",
+				"The sahuagin casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 12}):",
+				"Fiendish Aid (2/Day)",
+				"The sahuagin casts {@spell Bless|XPHB} or {@spell Healing Word|XPHB}, using the same spellcasting ability as Spellcasting.",
+				"Blood Frenzy",
+				"The sahuagin has {@variantrule Advantage|XPHB} on attack rolls against any creature that doesn't have all its {@variantrule Hit Points|XPHB}.",
+				"Limited Amphibiousness",
+				"The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.",
+				"Shark Telepathy",
+				"The sahuagin can magically control sharks within 120 feet of itself, using a special telepathy.",
+				"Multiattack",
+				"The sahuagin makes two Spectral Jaws attacks.",
+				"Spectral Jaws",
+				"{@atkr m,r} {@hit 4}, reach 5 ft. or range 120 ft. {@h}11 ({@damage 2d8 + 2}) Force damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sahuagin Warrior|XMM",
+			"hint": {
+				"Blood Frenzy": "血腥狂亂",
+				"Limited Amphibiousness": "有限兩棲",
+				"Shark Telepathy": "鯊魚心靈感應",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Sahuagin Warrior",
+				"Blood Frenzy",
+				"The sahuagin has {@variantrule Advantage|XPHB} on attack rolls against any creature that doesn't have all its {@variantrule Hit Points|XPHB}.",
+				"Limited Amphibiousness",
+				"The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.",
+				"Shark Telepathy",
+				"The sahuagin can magically control sharks within 120 feet of itself, using a special telepathy.",
+				"Multiattack",
+				"The sahuagin makes two Claw attacks.",
+				"Claw",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}4 ({@damage 1d6 + 1}) Slashing damage.",
+				"Aquatic Charge",
+				"The sahuagin swims up to its {@variantrule Swim Speed|XPHB} straight toward an enemy it can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Salamander|XMM",
+			"hint": {
+				"Salamander": "火蜥蜴(沙拉曼達)",
+				"Fire Aura": "火焰靈光",
+				"Multiattack": "多重攻擊",
+				"Constrict": "纏勒"
+			},
+			"s": [
+				"Salamander",
+				"Fire Aura",
+				"At the end of each of the salamander's turns, each creature of the salamander's choice in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the salamander takes 7 ({@damage 2d6}) Fire damage.",
+				"Multiattack",
+				"The salamander makes two Flame Spear attacks. It can replace one attack with a use of Constrict.",
+				"Flame Spear",
+				"{@atkr m,r} {@hit 7}, reach 5 ft. or range 20/60 ft. {@h}13 ({@damage 2d8 + 4}) Piercing damage plus 7 ({@damage 2d6}) Fire damage. {@hom}The spear magically returns to the salamander's hand immediately after a ranged attack.",
+				"Constrict",
+				"{@actSave str} {@dc 15}, one Large or smaller creature the salamander can see within 10 feet. {@actSaveFail} 11 ({@damage 2d6 + 4}) Bludgeoning damage plus 7 ({@damage 2d6}) Fire damage. The target has the {@condition Grappled|XPHB} condition (escape {@dc 14}), and it has the {@condition Restrained|XPHB} condition until the grapple ends."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Salamander Fire Snake|XMM",
+			"hint": {
+				"Fire Aura": "火焰靈光",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Salamander Fire Snake",
+				"Fire Aura",
+				"At the end of each of the salamander's turns, each creature of the salamander's choice in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the salamander takes 3 ({@damage 1d6}) Fire damage.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage plus 3 ({@damage 1d6}) Fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Salamander Inferno Master|XMM",
+			"hint": {
+				"Fire Aura": "火焰靈光",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Salamander Inferno Master",
+				"Fire Aura",
+				"At the end of each of the salamander's turns, each creature of the salamander's choice in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the salamander takes 10 ({@damage 3d6}) Fire damage.",
+				"Magic Resistance",
+				"The salamander has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The salamander makes two Flame Trident attacks.",
+				"Flame Trident",
+				"{@atkr m,r} {@hit 12}, reach 5 ft. or range 30/90 ft. {@h}16 ({@damage 2d8 + 7}) Piercing damage plus 14 ({@damage 4d6}) Fire damage. {@hom}The trident magically returns to the salamander's hand immediately after a ranged attack.",
+				"Inferno Blast {@recharge 5}",
+				"{@actSave dex} {@dc 18}, each creature in a 30-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the salamander can see within 120 feet. {@actSaveFail} 35 ({@damage 10d6}) Fire damage, and the target starts {@hazard burning|XPHB}, taking 5 ({@damage 1d10}) Fire damage at the start of each of its turns instead of the normal {@hazard burning|XPHB} damage. The target gains 1 {@condition Exhaustion|XPHB} level whenever it takes this {@hazard burning|XPHB} damage. {@actSaveSuccess} Half damage only.",
+				"Blazing Movement",
+				"The salamander moves up to its {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}. During this movement, fire fills a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the salamander. When the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} enters a creature's space, that creature takes 7 ({@damage 2d6}) Fire damage. A creature can take this damage only once per turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Satyr|XMM",
+			"hint": {
+				"Satyr": "薩特羊人",
+				"Magic Resistance": "魔法抗性",
+				"Hooves": "蹄擊"
+			},
+			"s": [
+				"Satyr",
+				"Magic Resistance",
+				"The satyr has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Hooves",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Bludgeoning damage. If the target is a Medium or smaller creature, the satyr pushes the target up to 10 feet straight away from itself.",
+				"Mockery",
+				"{@actSave wis} {@dc 12}, one creature the satyr can see within 90 feet. {@actSaveFail} 5 ({@damage 1d6 + 2}) Psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Satyr Revelmaster|XMM",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Satyr Revelmaster",
+				"Magic Resistance",
+				"The satyr has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The satyr makes three Prance attacks.",
+				"Prance",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}13 ({@damage 2d8 + 4}) Bludgeoning damage, and the target has the {@condition Charmed|XPHB} condition until the start of the satyr's next turn.",
+				"Fey Melody {@recharge 4}",
+				"The satyr conjures a charming or frightening song. {@actSave wis} {@dc 14}, each enemy in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the satyr. {@actSaveFail} The target is subjected to the song's effect:",
+				"Charming",
+				"The target has the {@condition Charmed|XPHB} condition for 1 minute. While {@condition Charmed|XPHB}, the target has the {@condition Incapacitated|XPHB} condition and uses all its movement to dance in place. The effect ends on the target if it takes any damage.",
+				"Frightening",
+				"10 ({@damage 2d6 + 3}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition for 1 minute. If the target ends its turn out of line of sight from the satyr, the condition ends on it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Scarecrow|XMM",
+			"hint": {
+				"Scarecrow": "稻草人"
+			},
+			"s": [
+				"Scarecrow",
+				"Fearsome Claw",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}6 ({@damage 2d4 + 1}) Slashing damage, and the target has the {@condition Frightened|XPHB} condition until the end of the scarecrow's next turn.",
+				"Terrifying Glare",
+				"{@actSave wis} {@dc 11}, one creature the scarecrow can see within 30 feet. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition until the end of the scarecrow's next turn. While {@condition Frightened|XPHB}, the target has the {@condition Paralyzed|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Scorpion|XMM",
+			"hint": {
+				"Scorpion": "蠍子",
+				"Sting": "螫刺"
+			},
+			"s": [
+				"Scorpion",
+				"Sting",
+				"{@atkr m} {@hit 2}, reach 5 ft. {@h}1 Piercing damage plus 3 ({@damage 1d6}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Scout|XMM",
+			"hint": {
+				"Scout": "斥侯",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Scout",
+				"Multiattack",
+				"The scout makes two attacks, using Shortsword and Longbow in any combination.",
+				"Shortsword",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage.",
+				"Longbow",
+				"{@atkr r} {@hit 4}, range 150/600 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Scout Captain|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍",
+				"Longbow": "長弓",
+				"Uncanny Dodge": "直覺閃避"
+			},
+			"s": [
+				"Scout Captain",
+				"Multiattack",
+				"The scout makes two attacks, using Shortsword or Longbow in any combination.",
+				"Shortsword",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Piercing damage, plus 10 ({@damage 3d6}) Piercing damage if the attack was made with {@variantrule Advantage|XPHB}.",
+				"Longbow",
+				"{@atkr r} {@hit 5}, range 150/600 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage, plus 10 ({@damage 3d6}) Piercing damage if the attack was made with {@variantrule Advantage|XPHB}.",
+				"Aim",
+				"The scout has {@variantrule Advantage|XPHB} on the next attack roll it makes during the current turn.",
+				"Uncanny Dodge",
+				"{@actTrigger} The scout is hit by an attack roll. {@actResponse} The scout halves the damage (round down) it takes from that attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sea Hag|XMM",
+			"hint": {
+				"Sea Hag": "海鬼婆",
+				"Coven Magic": "集會魔法",
+				"Amphibious": "兩棲",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Sea Hag",
+				"Coven Magic",
+				"While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Intelligence as the spellcasting ability (spell save {@dc 11}): {@spell Augury|XPHB}, {@spell Find Familiar|XPHB}, {@spell Identify|XPHB}, {@spell Locate Object|XPHB}, {@spell Scrying|XPHB}, or {@spell Unseen Servant|XPHB}. The hag must finish a {@variantrule Long Rest|XPHB} before using this trait to cast that spell again.",
+				"Illusory Appearance",
+				"The hag casts {@spell Disguise Self|XPHB}, using Constitution as the spellcasting ability (spell save {@dc 13}). The spell's duration is 24 hours.",
+				"Amphibious",
+				"The hag can breathe air and water.",
+				"Vile Appearance",
+				"{@actSave wis} {@dc 11}, any Beast or Humanoid that starts its turn within 30 feet of the hag and can see the hag's true form. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition until the start of its next turn. {@actSaveSuccess} The target is immune to this hag's Vile Appearance for 24 hours.",
+				"Claw",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Slashing damage.",
+				"Death Glare {@recharge 5}",
+				"{@actSave wis} {@dc 11}, one {@condition Frightened|XPHB} creature the hag can see within 30 feet. {@actSaveFail} If the target has 20 {@variantrule Hit Points|XPHB} or fewer, it drops to 0 {@variantrule Hit Points|XPHB}. Otherwise, the target takes 13 ({@damage 3d8}) Psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Seahorse|XMM",
+			"hint": {
+				"Water Breathing": "水中呼吸",
+				"Bubble Dash": "氣泡衝刺"
+			},
+			"s": [
+				"Seahorse",
+				"Water Breathing",
+				"The seahorse can breathe only underwater.",
+				"Bubble Dash",
+				"While underwater, the seahorse moves up to its {@variantrule Swim Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shadow|XMM",
+			"hint": {
+				"Shadow": "陰影",
+				"Amorphous": "無定形",
+				"Shadow Stealth": "暗影潛行"
+			},
+			"s": [
+				"Shadow",
+				"Amorphous",
+				"The shadow can move through a space as narrow as 1 inch without expending extra movement to do so.",
+				"Sunlight Weakness",
+				"While in sunlight, the shadow has {@variantrule Disadvantage|XPHB} on {@variantrule D20 Test|XPHB|D20 Tests}.",
+				"Draining Swipe",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Necrotic damage, and the target's Strength score decreases by {@dice 1d4}. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a Shadow rises from the corpse {@dice 1d4} hours later.",
+				"Shadow Stealth",
+				"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the shadow takes the {@action Hide|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shadow Demon|XMM",
+			"hint": {
+				"Shadow Demon": "影魔",
+				"Demonic Restoration": "惡魔復原",
+				"Incorporeal Movement": "虛體移動",
+				"Light Sensitivity": "光線敏感",
+				"Shadow Stealth": "暗影潛行"
+			},
+			"s": [
+				"Shadow Demon",
+				"(hover)",
+				"Demonic Restoration",
+				"If the demon dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Abyss.",
+				"Incorporeal Movement",
+				"The demon can move through other creatures and objects as if they were {@variantrule Difficult Terrain|XPHB}. It takes 5 ({@damage 1d10}) Force damage if it ends its turn inside an object.",
+				"Light Sensitivity",
+				"While in {@variantrule Bright Light|XPHB}, the demon has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls.",
+				"Umbral Claw",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}16 ({@damage 3d8 + 3}) Psychic damage.",
+				"Shadow Stealth",
+				"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the demon takes the {@action Hide|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shadow Dragon|XMM",
+			"hint": {
+				"Legendary Resistance (3/Day, or 4/Day in Lair)": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"Living Shadow": "活體陰影",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Shadow Breath {@recharge 5}": "暗影吐息 {@recharge 5}",
+				"Shadow Stealth": "暗影潛行",
+				"Pounce": "撲擊"
+			},
+			"s": [
+				"Shadow Dragon",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Living Shadow",
+				"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the dragon has {@variantrule Resistance|XPHB} to damage that isn't Force, Psychic, or Radiant.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the dragon has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls.",
+				"Multiattack",
+				"The dragon makes three Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 10}, reach 10 ft. {@h}12 ({@damage 2d6 + 5}) Slashing damage plus 3 ({@damage 1d6}) Necrotic damage.",
+				"Shadow Breath {@recharge 5}",
+				"{@actSave dex} {@dc 17}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 35 ({@damage 10d6}) Necrotic damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} A Humanoid reduced to 0 {@variantrule Hit Points|XPHB} by this damage dies, and a {@creature Shadow|XMM} rises from the corpse. The shadow is under the dragon's control and shares the dragon's {@variantrule Initiative|XPHB} count but acts immediately after the dragon.",
+				"Shadow Stealth",
+				"While in {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, the dragon takes the {@action Hide|XPHB} action.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Veil of Shadow",
+				"The dragon uses Shadow Stealth, and one creature of its choice that it can see within 10 feet of it takes 10 ({@damage 3d6}) Necrotic damage. The dragon can't take this action again until the start of its next turn.",
+				"Shadow Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shambling Mound|XMM",
+			"hint": {
+				"Shambling Mound": "蔓生怪",
+				"Lightning Absorption": "吸收閃電",
+				"Multiattack": "多重攻擊",
+				"Engulf": "吞沒"
+			},
+			"s": [
+				"Shambling Mound",
+				"Lightning Absorption",
+				"Whenever the shambling mound is subjected to Lightning damage, it regains a number of {@variantrule Hit Points|XPHB} equal to the Lightning damage dealt.",
+				"Multiattack",
+				"The shambling mound makes three Charged Tendril attacks. It can replace one attack with a use of Engulf.",
+				"Charged Tendril",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}7 ({@damage 1d6 + 4}) Bludgeoning damage plus 5 ({@damage 2d4}) Lightning damage. If the target is a Medium or smaller creature, the shambling mound pulls the target 5 feet straight toward itself.",
+				"Engulf",
+				"{@actSave str} {@dc 15}, one Medium or smaller creature within 5 feet. {@actSaveFail} The target is pulled into the shambling mound's space and has the {@condition Grappled|XPHB} condition (escape {@dc 14}). Until the grapple ends, the target has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, and it takes 10 ({@damage 3d6}) Lightning damage at the start of each of its turns. When the shambling mound moves, the {@condition Grappled|XPHB} target moves with it, costing it no extra movement. The shambling mound can have only one creature {@condition Grappled|XPHB} by this action at a time."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shield Guardian|XMM",
+			"hint": {
+				"Shield Guardian": "構裝盾衛",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊",
+				"Fist": "拳擊",
+				"Protection": "守護"
+			},
+			"s": [
+				"Shield Guardian",
+				"Bound",
+				"The guardian is magically bound to an amulet. While the guardian and its amulet are on the same plane of existence, the amulet's wearer can telepathically call the guardian to travel to it, and the guardian knows the distance and direction to the amulet. If the guardian is within 60 feet of the amulet's wearer, half of any damage the wearer takes (round up) is transferred to the guardian.",
+				"Regeneration",
+				"The guardian regains 10 {@variantrule Hit Points|XPHB} at the start of each of its turns if it has at least 1 {@variantrule Hit Points|XPHB|Hit Point}.",
+				"Spell Storing",
+				"A spellcaster who wears the guardian's amulet can cause the guardian to store one spell of level 4 or lower. To do so, the wearer must cast the spell on the guardian while within 5 feet of it. The spell has no effect but is stored within the guardian. Any previously stored spell is lost when a new spell is stored. The guardian can cast the spell stored with any parameters set by the original caster, requiring no spell components and using the caster's spellcasting ability. The stored spell is then lost.",
+				"Multiattack",
+				"The guardian makes two Fist attacks.",
+				"Fist",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}11 ({@damage 2d6 + 4}) Bludgeoning damage plus 7 ({@damage 2d6}) Force damage.",
+				"Protection",
+				"{@actTrigger} An attack roll hits the wearer of the guardian's amulet while the wearer is within 5 feet of the guardian. {@actResponse} The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the guardian's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shrieker Fungus|XMM",
+			"s": [
+				"Shrieker Fungus",
+				"Shriek",
+				"{@actTrigger} A creature or a source of {@variantrule Bright Light|XPHB} moves within 30 feet of the shrieker. {@actResponse} The shrieker emits a shriek audible within 300 feet of itself for 1 minute or until the shrieker dies."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Silver Dragon Wyrmling|XMM",
+			"hint": {
+				"Silver Dragon Wyrmling": "銀龍幼龍",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Cold Breath {@recharge 5}": "寒冷吐息 {@recharge 5}",
+				"Paralyzing Breath": "麻痺吐息"
+			},
+			"s": [
+				"Silver Dragon Wyrmling",
+				"Multiattack",
+				"The dragon makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}9 ({@damage 1d10 + 4}) Piercing damage.",
+				"Cold Breath {@recharge 5}",
+				"{@actSave con} {@dc 13}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 18 ({@damage 4d8}) Cold damage. {@actSaveSuccess} Half damage.",
+				"Paralyzing Breath",
+				"{@actSave con} {@dc 13}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail 1} The target has the {@condition Incapacitated|XPHB} condition until the end of its next turn, when it repeats the save. {@actSaveFail 2} The target has the {@condition Paralyzed|XPHB} condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skeleton|XMM",
+			"hint": {
+				"Skeleton": "骷髏",
+				"Shortsword": "短劍",
+				"Shortbow": "短弓"
+			},
+			"s": [
+				"Skeleton",
+				"Shortsword",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Piercing damage.",
+				"Shortbow",
+				"{@atkr r} {@hit 5}, range 80/320 ft. {@h}6 ({@damage 1d6 + 3}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Slaad Tadpole|XMM",
+			"hint": {
+				"Slaad Tadpole": "史拉蟾蝌蚪",
+				"Magic Resistance": "魔法抗性",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Slaad Tadpole",
+				"Magic Resistance",
+				"The slaad has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Smoke Mephit|XMM",
+			"hint": {
+				"Smoke Mephit": "煙魔蝠",
+				"Death Burst": "死亡爆發",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Smoke Mephit",
+				"Death Burst",
+				"The mephit explodes when it dies. {@actSave con} {@dc 11}, each creature in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the mephit. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition until the end of its next turn.",
+				"Claw",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}4 ({@damage 1d4 + 2}) Slashing damage.",
+				"Cinder Breath {@recharge}",
+				"{@actSave dex} {@dc 11}, one creature the mephit can see within 15 feet. {@actSaveFail} The target has the {@condition Blinded|XPHB} condition until the end of the mephit's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Solar|XMM",
+			"hint": {
+				"Solar": "熾天神侍",
+				"Spellcasting": "施法",
+				"Divine Aid (3/Day)": "神聖援助（每日 3 次）",
+				"Divine Awareness": "神聖覺察",
+				"Exalted Restoration": "崇高復原",
+				"Legendary Resistance (4/Day)": "傳奇抗性（每日 4 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Flying Sword": "飛行劍"
+			},
+			"s": [
+				"Solar",
+				"(hover)",
+				"Spellcasting",
+				"The solar casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 25}):",
+				"Divine Aid (3/Day)",
+				"The solar casts {@spell Cure Wounds|XPHB} (level 2 version), {@spell Lesser Restoration|XPHB}, or {@spell Remove Curse|XPHB}, using the same spellcasting ability as Spellcasting.",
+				"Divine Awareness",
+				"The solar knows if it hears a lie.",
+				"Exalted Restoration",
+				"If the solar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in Mount Celestia.",
+				"Legendary Resistance (4/Day)",
+				"If the solar fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The solar has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The solar makes two Flying Sword attacks. It can replace one attack with a use of Slaying Bow.",
+				"Flying Sword",
+				"{@atkr m,r} {@hit 15}, reach 10 ft. or range 120 ft. {@h}22 ({@damage 4d6 + 8}) Slashing damage plus 36 ({@damage 8d8}) Radiant damage. {@hom}The sword magically returns to the solar's hand or hovers within 5 feet of the solar immediately after a ranged attack.",
+				"Slaying Bow",
+				"{@actSave dex} {@dc 21}, one creature the solar can see within 600 feet. {@actSaveFail} If the creature has 100 {@variantrule Hit Points|XPHB} or fewer, it dies. It otherwise takes 24 ({@damage 4d8 + 6}) Piercing damage plus 36 ({@damage 8d8}) Radiant damage.",
+				"Blinding Gaze",
+				"{@actSave con} {@dc 25}, one creature the solar can see within 120 feet. {@actSaveFail} The target has the {@condition Blinded|XPHB} condition for 1 minute. {@actSaveSuccessOrFail} The solar can't take this action again until the start of its next turn.",
+				"Radiant Teleport",
+				"The solar teleports up to 60 feet to an unoccupied space it can see. {@actSave dex} {@dc 25}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the solar at its destination space. {@actSaveFail} 11 ({@damage 2d10}) Radiant damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spectator|XMM",
+			"hint": {
+				"Spectator": "觀察者眼魔",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Eye Rays": "眼光射線",
+				"2: Paralyzing Ray": "2：麻痺射線",
+				"3: Fear Ray": "3：恐懼射線"
+			},
+			"s": [
+				"Spectator",
+				"(hover)",
+				"Multiattack",
+				"The spectator uses Eye Rays twice.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage.",
+				"Eye Rays",
+				"The spectator randomly shoots one of the following magical rays at a target it can see within 90 feet of itself (roll {@dice 1d4}; reroll if the spectator has already used that ray during this turn):",
+				"1: Confusion Ray",
+				"{@actSave wis} {@dc 12}. {@actSaveFail} 5 ({@damage 2d4}) Psychic damage, and the target can't take Reactions until the end of its next turn. On its next turn, the target can't move, and it uses its action to make a melee or ranged attack against a randomly determined creature within range. If the target can't attack, it does nothing on that turn.",
+				"2: Paralyzing Ray",
+				"{@actSave con} {@dc 12}. {@actSaveFail} The target has the {@condition Paralyzed|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+				"3: Fear Ray",
+				"{@actSave wis} {@dc 12}. {@actSaveFail} 5 ({@damage 2d4}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition until the end of its next turn.",
+				"4: Wounding Ray",
+				"{@actSave con} {@dc 12}. {@actSaveFail} 16 ({@damage 3d10}) Necrotic damage. {@actSaveSuccess} Half damage.",
+				"Spell Reflection",
+				"{@actTrigger} The spectator succeeds on a saving throw against a spell, or a spell's attack roll misses it. {@actResponse d}{@actSave dex} {@dc 12}, one creature the spectator can see within 120 feet. {@actSaveFail} 10 ({@damage 3d6}) Force damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Specter|XMM",
+			"hint": {
+				"Specter": "幽靈",
+				"Incorporeal Movement": "虛體移動",
+				"Sunlight Sensitivity": "日光敏感"
+			},
+			"s": [
+				"Specter",
+				"(hover)",
+				"Incorporeal Movement",
+				"The specter can move through other creatures and objects as if they were {@variantrule Difficult Terrain|XPHB}. It takes 5 ({@damage 1d10}) Force damage if it ends its turn inside an object.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the specter has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls.",
+				"Life Drain",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}7 ({@damage 2d6}) Necrotic damage. If the target is a creature, its {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the damage taken."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sphinx of Lore|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Sphinx of Lore",
+				"Spellcasting",
+				"The sphinx casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 16}):",
+				"Inscrutable",
+				"No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom ({@skill Insight|XPHB}) checks made to ascertain its intentions or sincerity are made with {@variantrule Disadvantage|XPHB}.",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the sphinx fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The sphinx makes three Claw attacks.",
+				"Claw",
+				"{@atkr m} {@hit 8}, reach 5 ft. {@h}14 ({@damage 3d6 + 4}) Slashing damage.",
+				"Mind-Rending Roar {@recharge 5}",
+				"{@actSave wis} {@dc 16}, each enemy in a 300-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the sphinx. {@actSaveFail} 35 ({@damage 10d6}) Psychic damage, and the target has the {@condition Incapacitated|XPHB} condition until the start of the sphinx's next turn.",
+				"Arcane Prowl",
+				"The sphinx can teleport up to 30 feet to an unoccupied space it can see, and it makes one Claw attack.",
+				"Weight of Years",
+				"{@actSave con} {@dc 16}, one creature the sphinx can see within 120 feet. {@actSaveFail} The target gains 1 {@condition Exhaustion|XPHB} level. While the target has any {@condition Exhaustion|XPHB} levels, it appears {@dice 3d10} years older. {@actSaveSuccessOrFail} The sphinx can't take this action again until the start of its next turn.",
+				"Sphinx"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sphinx of Secrets|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Sphinx of Secrets",
+				"Spellcasting",
+				"The sphinx casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 15}):",
+				"Inscrutable",
+				"No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom ({@skill Insight|XPHB}) checks made to ascertain its intentions or sincerity are made with {@variantrule Disadvantage|XPHB}.",
+				"Magic Resistance",
+				"The sphinx has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The sphinx makes three Claw attacks. It can replace one attack with a use of {@variantrule Curses|XPHB|Curse} of the Riddle.",
+				"Claw",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}13 ({@damage 2d8 + 4}) Slashing damage plus 7 ({@damage 2d6}) Radiant damage.",
+				"Curse of the Riddle",
+				"{@actSave int} {@dc 15}, one creature the sphinx can see within 60 feet. {@actSaveFail} 21 ({@damage 6d6}) Psychic damage, and the target is cursed with a riddle. The cursed target has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls. In addition, if it takes the Magic action, it must succeed on a {@dc 15} Intelligence saving throw or that action is wasted. The cursed target can take a Study action to make a {@dc 15} Intelligence check, solving the riddle and ending the curse on a success. The curse ends early if the sphinx curses another target."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sphinx of Valor|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Sphinx of Valor",
+				"Spellcasting",
+				"The sphinx casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 20}):",
+				"Inscrutable",
+				"No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom ({@skill Insight|XPHB}) checks made to ascertain its intentions or sincerity are made with {@variantrule Disadvantage|XPHB}.",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the sphinx fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The sphinx makes two Claw attacks and uses Roar.",
+				"Claw",
+				"{@atkr m} {@hit 12}, reach 5 ft. {@h}20 ({@damage 4d6 + 6}) Slashing damage.",
+				"Roar (3/Day)",
+				"The sphinx emits a magical roar. Whenever it roars, the roar has a different effect, as detailed below (the sequence resets when it takes a {@variantrule Long Rest|XPHB}):",
+				"First Roar",
+				"{@actSave wis} {@dc 20}, each enemy in a 500-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the sphinx. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition for 1 minute.",
+				"Second Roar",
+				"{@actSave wis} {@dc 20}, each enemy in a 500-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the sphinx. {@actSaveFail} The target has the {@condition Paralyzed|XPHB} condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+				"Third Roar",
+				"{@actSave con} {@dc 20}, each enemy in a 500-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the sphinx. {@actSaveFail} 44 ({@damage 8d10}) Thunder damage, and the target has the {@condition Prone|XPHB} condition. {@actSaveSuccess} Half damage only.",
+				"Arcane Prowl",
+				"The sphinx can teleport up to 30 feet to an unoccupied space it can see, and it makes one Claw attack.",
+				"Weight of Years",
+				"{@actSave con} {@dc 16}, one creature the sphinx can see within 120 feet. {@actSaveFail} The target gains 1 {@condition Exhaustion|XPHB} level. While the target has any {@condition Exhaustion|XPHB} levels, it appears {@dice 3d10} years older. {@actSaveSuccessOrFail} The sphinx can't take this action again until the start of its next turn.",
+				"Sphinx"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sphinx of Wonder|XMM",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Rend": "撕裂"
+			},
+			"s": [
+				"Sphinx of Wonder",
+				"Magic Resistance",
+				"The sphinx has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Rend",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Slashing damage plus 7 ({@damage 2d6}) Radiant damage.",
+				"Burst of Ingenuity (2/Day)",
+				"{@actTrigger} The sphinx or another creature within 30 feet makes an ability check or a saving throw. {@actResponse} The sphinx adds 2 to the roll."
+			]
+		}
+	]
+}

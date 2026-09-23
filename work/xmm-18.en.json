@@ -1,0 +1,755 @@
+{
+	"batch": "xmm-18",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Wereboar|XMM",
+			"hint": {
+				"Wereboar": "(獸化)野豬人",
+				"Multiattack": "多重攻擊",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Wereboar",
+				"(boar form only)",
+				"Multiattack",
+				"The wereboar makes two attacks, using Javelin or Tusk in any combination. It can replace one attack with a Gore attack.",
+				"Gore (Boar or Hybrid Form Only)",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}12 ({@damage 2d8 + 3}) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. {@actSave con} {@dc 12}. {@actSaveFail} The target is cursed. If the cursed target drops to 0 {@variantrule Hit Points|XPHB}, it instead becomes a Wereboar under the DM's control and has 10 {@variantrule Hit Points|XPHB}. {@actSaveSuccess} The target is immune to this wereboar's curse for 24 hours.",
+				"Javelin (Humanoid or Hybrid Form Only)",
+				"{@atkr m,r} {@hit 5}, reach 5 ft. or range 30/120 ft. {@h}13 ({@damage 3d6 + 3}) Piercing damage.",
+				"Tusk (Boar or Hybrid Form Only)",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Piercing damage. If the target is a Medium or smaller creature and the wereboar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 7 ({@damage 2d6}) Piercing damage and has the {@condition Prone|XPHB} condition.",
+				"Shape-Shift",
+				"The wereboar shape-shifts into a Medium boar-humanoid hybrid or a Small boar, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Wererat|XMM",
+			"hint": {
+				"Wererat": "(獸化)鼠人",
+				"Multiattack": "多重攻擊",
+				"Scratch": "抓撓",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Wererat",
+				"Multiattack",
+				"The wererat makes two attacks, using Scratch or Hand Crossbow in any combination. It can replace one attack with a Bite attack.",
+				"Bite (Rat or Hybrid Form Only)",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}8 ({@damage 2d4 + 3}) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. {@actSave con} {@dc 11}. {@actSaveFail} The target is cursed. If the cursed target drops to 0 {@variantrule Hit Points|XPHB}, it instead becomes a Wererat under the DM's control and has 10 {@variantrule Hit Points|XPHB}. {@actSaveSuccess} The target is immune to this wererat's curse for 24 hours.",
+				"Scratch",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Slashing damage.",
+				"Hand Crossbow (Humanoid or Hybrid Form Only)",
+				"{@atkr r} {@hit 5}, range 30/120 ft. {@h}6 ({@damage 1d6 + 3}) Piercing damage.",
+				"Shape-Shift",
+				"The wererat shape-shifts into a Medium rat-humanoid hybrid or a Small rat, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Weretiger|XMM",
+			"hint": {
+				"Weretiger": "(獸化)虎人",
+				"Multiattack": "多重攻擊",
+				"Scratch": "抓撓",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Weretiger",
+				"(tiger form only)",
+				"Multiattack",
+				"The weretiger makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.",
+				"Bite (Tiger or Hybrid Form Only)",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}12 ({@damage 2d8 + 3}) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. {@actSave con} {@dc 13}. {@actSaveFail} The target is cursed. If the cursed target drops to 0 {@variantrule Hit Points|XPHB}, it instead becomes a Weretiger under the DM's control and has 10 {@variantrule Hit Points|XPHB}. {@actSaveSuccess} The target is immune to this weretiger's curse for 24 hours.",
+				"Scratch",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Slashing damage.",
+				"Longbow (Humanoid or Hybrid Form Only)",
+				"{@atkr r} {@hit 4}, range 150/600 ft. {@h}11 ({@damage 2d8 + 2}) Piercing damage.",
+				"Prowl (Tiger or Hybrid Form Only)",
+				"The weretiger moves up to its {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}. At the end of this movement, the weretiger can take the {@action Hide|XPHB} action.",
+				"Shape-Shift",
+				"The weretiger shape-shifts into a Large tiger-humanoid hybrid or a Large tiger, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Werewolf|XMM",
+			"hint": {
+				"Werewolf": "(獸化)狼人",
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Scratch": "抓撓",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Werewolf",
+				"(wolf form only)",
+				"Pack Tactics",
+				"The werewolf has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the werewolf's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Multiattack",
+				"The werewolf makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.",
+				"Bite (Wolf or Hybrid Form Only)",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}12 ({@damage 2d8 + 3}) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. {@actSave con} {@dc 12}. {@actSaveFail} The target is cursed. If the cursed target drops to 0 {@variantrule Hit Points|XPHB}, it instead becomes a Werewolf under the DM's control and has 10 {@variantrule Hit Points|XPHB}. {@actSaveSuccess} The target is immune to this werewolf's curse for 24 hours.",
+				"Scratch",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Slashing damage.",
+				"Longbow (Humanoid or Hybrid Form Only)",
+				"{@atkr r} {@hit 4}, range 150/600 ft. {@h}11 ({@damage 2d8 + 2}) Piercing damage.",
+				"Shape-Shift",
+				"The werewolf shape-shifts into a Large wolf-humanoid hybrid or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "White Dragon Wyrmling|XMM",
+			"hint": {
+				"White Dragon Wyrmling": "白龍幼龍",
+				"Ice Walk": "冰上行走",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Cold Breath {@recharge 5}": "寒冷吐息 {@recharge 5}"
+			},
+			"s": [
+				"White Dragon Wyrmling",
+				"Ice Walk",
+				"The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, {@variantrule Difficult Terrain|XPHB} composed of ice or snow doesn't cost it extra movement.",
+				"Multiattack",
+				"The dragon makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Slashing damage plus 2 ({@damage 1d4}) Cold damage.",
+				"Cold Breath {@recharge 5}",
+				"{@actSave con} {@dc 12}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 22 ({@damage 5d8}) Cold damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Wight|XMM",
+			"hint": {
+				"Wight": "屍妖",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Life Drain": "生命汲取"
+			},
+			"s": [
+				"Wight",
+				"Sunlight Sensitivity",
+				"While in sunlight, the wight has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls.",
+				"Multiattack",
+				"The wight makes two attacks, using Necrotic Sword or Necrotic Bow in any combination. It can replace one attack with a use of Life Drain.",
+				"Necrotic Sword",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Slashing damage plus 4 ({@damage 1d8}) Necrotic damage.",
+				"Necrotic Bow",
+				"{@atkr r} {@hit 4}, range 150/600 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage plus 4 ({@damage 1d8}) Necrotic damage.",
+				"Life Drain",
+				"{@actSave con} {@dc 13}, one creature within 5 feet. {@actSaveFail} 6 ({@damage 1d8 + 2}) Necrotic damage, and the target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the damage taken.",
+				"A Humanoid slain by this attack rises 24 hours later as a {@creature Zombie|XMM} under the wight's control, unless the Humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at a time."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Will-o'-Wisp|XMM",
+			"hint": {
+				"Will-o'-Wisp": "鬼火",
+				"Illumination": "照明",
+				"Incorporeal Movement": "虛體移動",
+				"Vanish": "消失"
+			},
+			"s": [
+				"Will-o'-Wisp",
+				"(hover)",
+				"Ephemeral",
+				"The wisp can't wear or carry anything.",
+				"Illumination",
+				"The wisp sheds {@variantrule Bright Light|XPHB} in a 20-foot radius and {@variantrule Dim Light|XPHB} for an additional 20 feet.",
+				"Incorporeal Movement",
+				"The wisp can move through other creatures and objects as if they were {@variantrule Difficult Terrain|XPHB}. It takes 5 ({@damage 1d10}) Force damage if it ends its turn inside an object.",
+				"Shock",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}11 ({@damage 2d8 + 2}) Lightning damage.",
+				"Consume Life",
+				"{@actSave con} {@dc 10}, one living creature the wisp can see within 5 feet that has 0 {@variantrule Hit Points|XPHB}. {@actSaveFail} The target dies, and the wisp regains 10 ({@dice 3d6}) {@variantrule Hit Points|XPHB}.",
+				"Vanish",
+				"The wisp and its light have the {@condition Invisible|XPHB} condition until the wisp's {@status Concentration|XPHB} ends on this effect, which ends early immediately after the wisp makes an attack roll or uses Consume Life."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Winged Kobold|XMM",
+			"hint": {
+				"Winged Kobold": "帶翼狗頭人",
+				"Pack Tactics": "群體戰術",
+				"Sunlight Sensitivity": "日光敏感"
+			},
+			"s": [
+				"Winged Kobold",
+				"Pack Tactics",
+				"The kobold has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the kobold has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls.",
+				"Dragon-Tooth Blade",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Piercing damage.",
+				"Chromatic Spittle",
+				"{@atkr r} {@hit 5}, range 30 ft. {@h}6 ({@damage 1d6 + 3}) damage of a type chosen by the kobold: Acid, Cold, Fire, Lightning, or Poison."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Winter Wolf|XMM",
+			"hint": {
+				"Winter Wolf": "冬狼",
+				"Pack Tactics": "群體戰術",
+				"Bite": "啃咬",
+				"Cold Breath {@recharge 5}": "寒冷吐息 {@recharge 5}"
+			},
+			"s": [
+				"Winter Wolf",
+				"Pack Tactics",
+				"The wolf has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Bite",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Piercing damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition.",
+				"Cold Breath {@recharge 5}",
+				"{@actSave con} {@dc 12}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 18 ({@damage 4d8}) Cold damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Wolf|XMM",
+			"hint": {
+				"Wolf": "狼",
+				"Pack Tactics": "群體戰術",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Wolf",
+				"Pack Tactics",
+				"The wolf has {@variantrule Advantage|XPHB} on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage. If the target is a Medium or smaller creature, it has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Worg|XMM",
+			"hint": {
+				"Worg": "座狼",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Worg",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage, and the next attack roll made against the target before the start of the worg's next turn has {@variantrule Advantage|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Wraith|XMM",
+			"hint": {
+				"Wraith": "縛靈",
+				"Incorporeal Movement": "虛體移動",
+				"Sunlight Sensitivity": "日光敏感",
+				"Life Drain": "生命汲取"
+			},
+			"s": [
+				"Wraith",
+				"(hover)",
+				"Incorporeal Movement",
+				"The wraith can move through other creatures and objects as if they were {@variantrule Difficult Terrain|XPHB}. It takes 5 ({@damage 1d10}) Force damage if it ends its turn inside an object.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the wraith has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls.",
+				"Life Drain",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}21 ({@damage 4d8 + 3}) Necrotic damage. If the target is a creature, its {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the damage taken.",
+				"Create Specter",
+				"The wraith targets a Humanoid corpse within 10 feet of itself that has been dead for no longer than 1 minute. The target's spirit rises as a {@creature Specter|XMM} in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at a time."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Wyvern|XMM",
+			"hint": {
+				"Wyvern": "飛龍",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Sting": "螫刺"
+			},
+			"s": [
+				"Wyvern",
+				"Multiattack",
+				"The wyvern makes one Bite attack and one Sting attack.",
+				"Bite",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}13 ({@damage 2d8 + 4}) Piercing damage.",
+				"Sting",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}11 ({@damage 2d6 + 4}) Piercing damage plus 24 ({@damage 7d6}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the wyvern's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Xorn|XMM",
+			"hint": {
+				"Xorn": "索爾石怪",
+				"Earth Glide": "穿地滑行",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊",
+				"Charge": "衝鋒"
+			},
+			"s": [
+				"Xorn",
+				"Earth Glide",
+				"The xorn can burrow through nonmagical, unworked earth and stone. While doing so, the xorn doesn't disturb the material it moves through.",
+				"Treasure Sense",
+				"The xorn can pinpoint the location of precious metals and stones within 60 feet of itself.",
+				"Multiattack",
+				"The xorn makes one Bite attack and three Claw attacks.",
+				"Bite",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}17 ({@damage 4d6 + 3}) Piercing damage.",
+				"Claw",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 1d10 + 3}) Slashing damage.",
+				"Charge",
+				"The xorn moves up to its {@variantrule Speed|XPHB} or {@variantrule Burrow Speed|XPHB} straight toward an enemy it can sense."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yeti|XMM",
+			"hint": {
+				"Yeti": "耶提",
+				"Fear of Fire": "懼火",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Ice Throw": "擲冰",
+				"Chilling Gaze": "寒冰凝視"
+			},
+			"s": [
+				"Yeti",
+				"Fear of Fire",
+				"If the yeti takes Fire damage, it has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks until the end of its next turn.",
+				"Multiattack",
+				"The yeti can use its Chilling Gaze and makes two attacks, using Claw or Ice Throw in any combination.",
+				"Claw",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}7 ({@damage 1d6 + 4}) Slashing damage plus 3 ({@damage 1d6}) Cold damage.",
+				"Ice Throw",
+				"{@atkr r} {@hit 6}, range 30/120 ft. {@h}6 ({@damage 1d4 + 4}) Bludgeoning damage plus 2 ({@damage 1d4}) Cold damage.",
+				"Chilling Gaze",
+				"{@actSave con} {@dc 13}, one creature the yeti can see within 30 feet. {@actSaveFail} 5 ({@damage 2d4}) Cold damage, and the target has the {@condition Paralyzed|XPHB} condition until the start of the yeti's next turn unless the target has {@variantrule Immunity|XPHB} to Cold damage. {@actSaveSuccess} The target is immune to the Chilling Gaze of all yetis (but not abominable yetis) for 1 hour."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yochlol|XMM",
+			"hint": {
+				"Yochlol": "蠟融妖",
+				"Spellcasting": "施法",
+				"Demonic Restoration": "惡魔復原",
+				"Magic Resistance": "魔法抗性",
+				"Spider Climb": "蛛行",
+				"Web Walker": "蛛網行者",
+				"Multiattack": "多重攻擊",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Yochlol",
+				"Spellcasting",
+				"The yochlol casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 15}):",
+				"Demonic Restoration",
+				"If the yochlol dies outside the Abyss, its body dissolves, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} in the Abyss.",
+				"Magic Resistance",
+				"The yochlol has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Spider Climb",
+				"The yochlol can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Web Walker",
+				"The yochlol ignores movement restrictions caused by webs.",
+				"Multiattack",
+				"The yochlol makes two Caustic Lash attacks, and it can use Spellcasting to cast {@spell Web|XPHB} or {@spell Dominate Person|XPHB} if available.",
+				"Caustic Lash",
+				"{@atkr m,r} {@hit 8}, reach 10 ft. or range 120 ft. {@h}25 ({@damage 6d6 + 4}) Acid damage.",
+				"Shape-Shift",
+				"The yochlol shape-shifts into a Medium Humanoid or a Medium spider or back into its true form. Its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed.",
+				"Toxic Escape",
+				"{@actTrigger} The yochlol is hit by an attack roll. {@actResponse} The yochlol halves the attack's damage to itself (round down), and it teleports to an unoccupied space it can see within 30 feet of itself. {@actSave con} {@dc 15}, each creature within 5 feet of the yochlol's destination space. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition until the end of its next turn. While {@condition Poisoned|XPHB}, it has the {@condition Incapacitated|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Black Dragon|XMM",
+			"hint": {
+				"Young Black Dragon": "少年黑龍",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Acid Breath {@recharge 5}": "強酸吐息 {@recharge 5}"
+			},
+			"s": [
+				"Young Black Dragon",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Multiattack",
+				"The dragon makes three Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}9 ({@damage 2d4 + 4}) Slashing damage plus 3 ({@damage 1d6}) Acid damage.",
+				"Acid Breath {@recharge 5}",
+				"{@actSave dex} {@dc 14}, each creature in a 30-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 49 ({@damage 14d6}) Acid damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Blue Dragon|XMM",
+			"hint": {
+				"Young Blue Dragon": "少年藍龍",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Lightning Breath {@recharge 5}": "閃電吐息 {@recharge 5}"
+			},
+			"s": [
+				"Young Blue Dragon",
+				"Multiattack",
+				"The dragon makes three Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 9}, reach 10 ft. {@h}12 ({@damage 2d6 + 5}) Slashing damage plus 5 ({@damage 1d10}) Lightning damage.",
+				"Lightning Breath {@recharge 5}",
+				"{@actSave dex} {@dc 16}, each creature in a 60-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 55 ({@damage 10d10}) Lightning damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Brass Dragon|XMM",
+			"hint": {
+				"Young Brass Dragon": "少年黃銅龍",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Fire Breath {@recharge 5}": "火焰吐息 {@recharge 5}",
+				"Sleep Breath": "睡眠吐息"
+			},
+			"s": [
+				"Young Brass Dragon",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace two attacks with a use of Sleep Breath.",
+				"Rend",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}15 ({@damage 2d10 + 4}) Slashing damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 14}, each creature in a 40-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 38 ({@damage 11d6}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Sleep Breath",
+				"{@actSave con} {@dc 14}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target has the {@condition Incapacitated|XPHB} condition until the end of its next turn, at which point it repeats the save. {@actSaveFail 2} The target has the {@condition Unconscious|XPHB} condition for 1 minute. This effect ends for the target if it takes damage or a creature within 5 feet of it takes an action to wake it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Bronze Dragon|XMM",
+			"hint": {
+				"Young Bronze Dragon": "少年青銅龍",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Lightning Breath {@recharge 5}": "閃電吐息 {@recharge 5}",
+				"Repulsion Breath": "排斥吐息"
+			},
+			"s": [
+				"Young Bronze Dragon",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Repulsion Breath.",
+				"Rend",
+				"{@atkr m} {@hit 8}, reach 10 ft. {@h}16 ({@damage 2d10 + 5}) Slashing damage.",
+				"Lightning Breath {@recharge 5}",
+				"{@actSave dex} {@dc 15}, each creature in a 60-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 49 ({@damage 9d10}) Lightning damage. {@actSaveSuccess} Half damage.",
+				"Repulsion Breath",
+				"{@actSave str} {@dc 15}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target is pushed up to 40 feet straight away from the dragon and has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Copper Dragon|XMM",
+			"hint": {
+				"Young Copper Dragon": "少年赤銅龍",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Acid Breath {@recharge 5}": "強酸吐息 {@recharge 5}",
+				"Slowing Breath": "緩速吐息"
+			},
+			"s": [
+				"Young Copper Dragon",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Slowing Breath.",
+				"Rend",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}15 ({@damage 2d10 + 4}) Slashing damage.",
+				"Acid Breath {@recharge 5}",
+				"{@actSave dex} {@dc 14}, each creature in a 40-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 40 ({@damage 9d8}) Acid damage. {@actSaveSuccess} Half damage.",
+				"Slowing Breath",
+				"{@actSave con} {@dc 14}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target can't take Reactions; its {@variantrule Speed|XPHB} is halved; and it can take either an action or a {@variantrule Bonus Action|XPHB} on its turn, not both. This effect lasts until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Gold Dragon|XMM",
+			"hint": {
+				"Young Gold Dragon": "少年金龍",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Fire Breath {@recharge 5}": "火焰吐息 {@recharge 5}",
+				"Weakening Breath": "虛弱吐息"
+			},
+			"s": [
+				"Young Gold Dragon",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Weakening Breath.",
+				"Rend",
+				"{@atkr m} {@hit 10}, reach 10 ft. {@h}17 ({@damage 2d10 + 6}) Slashing damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 17}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 55 ({@damage 10d10}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Weakening Breath",
+				"{@actSave str} {@dc 17}, each creature that isn't currently affected by this breath in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target has {@variantrule Disadvantage|XPHB} on Strength-based {@variantrule D20 Test|XPHB|D20 Tests} and subtracts 3 ({@dice 1d6}) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Green Dragon|XMM",
+			"hint": {
+				"Young Green Dragon": "少年綠龍",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Poison Breath {@recharge 5}": "毒素吐息 {@recharge 5}"
+			},
+			"s": [
+				"Young Green Dragon",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Multiattack",
+				"The dragon makes three Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}11 ({@damage 2d6 + 4}) Slashing damage plus 7 ({@damage 2d6}) Poison damage.",
+				"Poison Breath {@recharge 5}",
+				"{@actSave con} {@dc 14}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 42 ({@damage 12d6}) Poison damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Red Dragon|XMM",
+			"hint": {
+				"Young Red Dragon": "少年紅龍",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Fire Breath {@recharge 5}": "火焰吐息 {@recharge 5}"
+			},
+			"s": [
+				"Young Red Dragon",
+				"Multiattack",
+				"The dragon makes three Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 10}, reach 10 ft. {@h}13 ({@damage 2d6 + 6}) Slashing damage plus 3 ({@damage 1d6}) Fire damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 17}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 56 ({@damage 16d6}) Fire damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Remorhaz|XMM",
+			"hint": {
+				"Young Remorhaz": "幼年百足魔獸",
+				"Heat Aura": "熱氣靈光",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Young Remorhaz",
+				"Heat Aura",
+				"At the end of each of the remorhaz's turns, each creature in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the remorhaz takes 11 ({@damage 2d10}) Fire damage.",
+				"Bite",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}15 ({@damage 2d10 + 4}) Piercing damage plus 13 ({@damage 3d8}) Fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Silver Dragon|XMM",
+			"hint": {
+				"Young Silver Dragon": "少年銀龍",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Cold Breath {@recharge 5}": "寒冷吐息 {@recharge 5}",
+				"Paralyzing Breath": "麻痺吐息"
+			},
+			"s": [
+				"Young Silver Dragon",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Paralyzing Breath.",
+				"Rend",
+				"{@atkr m} {@hit 10}, reach 10 ft. {@h}15 ({@damage 2d8 + 6}) Slashing damage.",
+				"Cold Breath {@recharge 5}",
+				"{@actSave con} {@dc 17}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 49 ({@damage 11d8}) Cold damage. {@actSaveSuccess} Half damage.",
+				"Paralyzing Breath",
+				"{@actSave con} {@dc 17}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail 1} The target has the {@condition Incapacitated|XPHB} condition until the end of its next turn, when it repeats the save. {@actSaveFail 2} The target has the {@condition Paralyzed|XPHB} condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young White Dragon|XMM",
+			"hint": {
+				"Young White Dragon": "少年白龍",
+				"Ice Walk": "冰上行走",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Cold Breath {@recharge 5}": "寒冷吐息 {@recharge 5}"
+			},
+			"s": [
+				"Young White Dragon",
+				"Ice Walk",
+				"The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, {@variantrule Difficult Terrain|XPHB} composed of ice or snow doesn't cost it extra movement.",
+				"Multiattack",
+				"The dragon makes three Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}9 ({@damage 2d4 + 4}) Slashing damage plus 2 ({@damage 1d4}) Cold damage.",
+				"Cold Breath {@recharge 5}",
+				"{@actSave con} {@dc 15}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 40 ({@damage 9d8}) Cold damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yuan-ti Abomination|XMM",
+			"hint": {
+				"Yuan-ti Abomination": "憎惡蛇人",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Constrict": "纏勒",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Yuan-ti Abomination",
+				"Spellcasting (Yuan-ti Form Only)",
+				"The yuan-ti casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15}):",
+				"Magic Resistance",
+				"The yuan-ti has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The yuan-ti makes two Bite attacks, and it can use Spellcasting to cast {@spell Suggestion|XPHB} if available.",
+				"Bite",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Piercing damage plus 10 ({@damage 3d6}) Poison damage.",
+				"Constrict",
+				"{@actSave str} {@dc 15}, one Large or smaller creature within 5 feet. {@actSaveFail} 28 ({@damage 7d6 + 4}) Bludgeoning damage. The target has the {@condition Grappled|XPHB} condition (escape {@dc 14}), and it has the {@condition Restrained|XPHB} condition until the grapple ends. {@actSaveSuccess} Half damage only.",
+				"Poison Spray {@recharge 5}",
+				"{@actSave con} {@dc 14}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 21 ({@damage 6d6}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the end of the yuan-ti's next turn. While {@condition Poisoned|XPHB}, the target has the {@condition Blinded|XPHB} condition. {@actSaveSuccess} Half damage only.",
+				"Shape-Shift",
+				"The yuan-ti shape-shifts into a Large snake or returns to its true form. If it dies, it stays in its current form. The yuan-ti's game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yuan-ti Infiltrator|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Scimitar": "彎刀",
+				"Poison Ray": "毒素射線"
+			},
+			"s": [
+				"Yuan-ti Infiltrator",
+				"Spellcasting",
+				"The yuan-ti casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 12}):",
+				"Magic Resistance",
+				"The yuan-ti has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The yuan-ti makes two Scimitar attacks.",
+				"Scimitar",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}4 ({@damage 1d6 + 1}) Slashing damage.",
+				"Poison Ray",
+				"{@atkr r} {@hit 4}, range 120 ft. {@h}9 ({@damage 2d6 + 2}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yuan-ti Malison (Type 1)|XMM",
+			"hint": {
+				"Yuan-ti Malison (Type 1)": "惡咒蛇人(類型1)",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Yuan-ti Malison (Type 1)",
+				"(snake form only)",
+				"Spellcasting (Yuan-ti Form Only)",
+				"The yuan-ti casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 13}):",
+				"Magic Resistance",
+				"The yuan-ti has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The yuan-ti makes two attacks, using Bite or Poison Ray in any combination, and it can use Spellcasting to cast {@spell Suggestion|XPHB} if available.",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Piercing damage plus 7 ({@damage 2d6}) Poison damage.",
+				"Poison Ray (Yuan-ti Form Only)",
+				"{@atkr r} {@hit 5}, range 120 ft. {@h}12 ({@damage 2d8 + 3}) Poison damage.",
+				"Shape-Shift",
+				"The yuan-ti shape-shifts into a Medium snake or returns to its true form. If it dies, it stays in its current form. The yuan-ti's game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yuan-ti Malison (Type 2)|XMM",
+			"hint": {
+				"Yuan-ti Malison (Type 2)": "惡咒蛇人(類型2)",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Yuan-ti Malison (Type 2)",
+				"(snake form only)",
+				"Spellcasting (Yuan-ti Form Only)",
+				"The yuan-ti casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 13}):",
+				"Magic Resistance",
+				"The yuan-ti has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The yuan-ti makes two Bite attacks, and it can use Spellcasting to cast {@spell Suggestion|XPHB} if available.",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 10 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage plus 7 ({@damage 2d6}) Poison damage.",
+				"Shape-Shift",
+				"The yuan-ti shape-shifts into a Medium snake or returns to its true form. If it dies, it stays in its current form. The yuan-ti's game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yuan-ti Malison (Type 3)|XMM",
+			"hint": {
+				"Yuan-ti Malison (Type 3)": "惡咒蛇人(類型3)",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Constrict": "纏勒",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Yuan-ti Malison (Type 3)",
+				"Spellcasting (Yuan-ti Form Only)",
+				"The yuan-ti casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 13}):",
+				"Magic Resistance",
+				"The yuan-ti has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The yuan-ti makes two Poison Burst attacks, and it can use Spellcasting to cast {@spell Suggestion|XPHB} if available.",
+				"Poison Burst (Yuan-ti Form Only)",
+				"{@atkr m,r} {@hit 5}, reach 5 ft. or range 120 ft. {@h}12 ({@damage 2d8 + 3}) Poison damage.",
+				"Constrict",
+				"{@actSave str} {@dc 13}, one Medium or smaller creature within 5 feet. {@actSaveFail} 21 ({@damage 4d8 + 3}) Bludgeoning damage. The target has the {@condition Grappled|XPHB} condition (escape {@dc 13}), and it has the {@condition Restrained|XPHB} condition until the grapple ends.",
+				"Shape-Shift",
+				"The yuan-ti shape-shifts into a Medium snake or returns to its true form. If it dies, it stays in its current form. The yuan-ti's game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zombie|XMM",
+			"hint": {
+				"Zombie": "殭屍",
+				"Undead Fortitude": "不死堅韌",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Zombie",
+				"Undead Fortitude",
+				"If damage reduces the zombie to 0 {@variantrule Hit Points|XPHB}, it makes a Constitution saving throw ({@dc 5} plus the damage taken) unless the damage is Radiant or from a {@variantrule Critical Hit|XPHB}. On a successful save, the zombie drops to 1 {@variantrule Hit Points|XPHB|Hit Point} instead.",
+				"Slam",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}5 ({@damage 1d8 + 1}) Bludgeoning damage."
+			]
+		}
+	]
+}

@@ -1,0 +1,615 @@
+{
+	"batch": "xmm-14",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Plesiosaurus|XMM",
+			"hint": {
+				"Plesiosaurus": "蛇頸龍",
+				"Hold Breath": "閉氣",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Plesiosaurus",
+				"Hold Breath",
+				"The plesiosaurus can hold its breath for 1 hour.",
+				"Bite",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}11 ({@damage 2d6 + 4}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Polar Bear|XMM",
+			"hint": {
+				"Polar Bear": "北極熊",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂"
+			},
+			"s": [
+				"Polar Bear",
+				"Multiattack",
+				"The bear makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}9 ({@damage 1d8 + 5}) Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Poltergeist|XMM",
+			"hint": {
+				"Poltergeist": "作祟幽靈",
+				"Incorporeal Movement": "虛體移動",
+				"Multiattack": "多重攻擊",
+				"Object Slam": "物體猛擊",
+				"Telekinetic Thrust": "心靈致動推擊",
+				"Vanish": "無蹤步"
+			},
+			"s": [
+				"Poltergeist",
+				"(hover)",
+				"Incorporeal Movement",
+				"The poltergeist can move through other creatures and objects as if they were {@variantrule Difficult Terrain|XPHB}. It takes 5 ({@damage 1d10}) Force damage if it ends its turn inside an object.",
+				"Multiattack",
+				"The poltergeist makes one Object Slam attack and uses Telekinetic Thrust.",
+				"Object Slam",
+				"{@atkr m,r} {@hit 4}, reach 5 ft. or range 30 ft. {@h}7 ({@damage 2d4 + 2}) Bludgeoning damage.",
+				"Telekinetic Thrust",
+				"{@actSave str} {@dc 12}, one creature the poltergeist can see within 30 feet. {@actSaveFail} 9 ({@damage 2d6 + 2}) Force damage, and the target is pushed up to 30 feet straight away from the poltergeist.",
+				"Vanish",
+				"The poltergeist gives itself the {@condition Invisible|XPHB} condition or ends that condition on itself."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Pony|XMM",
+			"hint": {
+				"Pony": "矮種馬",
+				"Hooves": "蹄擊"
+			},
+			"s": [
+				"Pony",
+				"Hooves",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}4 ({@damage 1d4 + 2}) Bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Priest|XMM",
+			"hint": {
+				"Priest": "祭司",
+				"Spellcasting": "施法",
+				"Divine Aid (3/Day)": "神聖援助（每日 3 次）",
+				"Multiattack": "多重攻擊",
+				"Mace": "硬頭錘"
+			},
+			"s": [
+				"Priest",
+				"Spellcasting",
+				"The priest casts one of the following spells, using Wisdom as the spellcasting ability:",
+				"Divine Aid (3/Day)",
+				"The priest casts {@spell Bless|XPHB}, {@spell Dispel Magic|XPHB}, {@spell Healing Word|XPHB}, or {@spell Lesser Restoration|XPHB}, using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The priest makes two attacks, using Mace or Radiant Flame in any combination.",
+				"Mace",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Bludgeoning damage plus 5 ({@damage 2d4}) Radiant damage.",
+				"Radiant Flame",
+				"{@atkr r} {@hit 5}, range 60 ft. {@h}11 ({@damage 2d10}) Radiant damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Priest Acolyte|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Mace": "硬頭錘"
+			},
+			"s": [
+				"Priest Acolyte",
+				"Spellcasting",
+				"The priest casts one of the following spells, using Wisdom as the spellcasting ability:",
+				"Divine Aid (1/Day)",
+				"The priest casts {@spell Bless|XPHB}, {@spell Healing Word|XPHB}, or {@spell Sanctuary|XPHB}, using the same spellcasting ability as Spellcasting.",
+				"Mace",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Bludgeoning damage plus 2 ({@damage 1d4}) Radiant damage.",
+				"Radiant Flame",
+				"{@atkr r} {@hit 4}, range 60 ft. {@h}7 ({@damage 2d6}) Radiant damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Primeval Owlbear|XMM",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Primeval Owlbear",
+				"Magic Resistance",
+				"The owlbear has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The owlbear makes two Ravage attacks.",
+				"Ravage",
+				"{@atkr m} {@hit 9}, reach 5 ft. {@h}15 ({@damage 2d8 + 6}) Slashing damage. If the target is a Huge or smaller creature and the owlbear moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 ({@damage 2d8}) Slashing damage and has the {@condition Prone|XPHB} condition.",
+				"Screech {@recharge 5}",
+				"{@actSave con} {@dc 15}, each creature in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the owlbear. {@actSaveFail} 27 ({@damage 6d8}) Thunder damage, and the target has the {@condition Incapacitated|XPHB} condition until the end of its next turn. {@actSaveSuccess} Half damage only."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Pseudodragon|XMM",
+			"hint": {
+				"Pseudodragon": "偽龍",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Sting": "螫刺"
+			},
+			"s": [
+				"Pseudodragon",
+				"Magic Resistance",
+				"The pseudodragon has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The pseudodragon makes two Bite attacks.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}4 ({@damage 1d4 + 2}) Piercing damage.",
+				"Sting",
+				"{@actSave con} {@dc 12}, one creature the pseudodragon can see within 5 feet. {@actSaveFail} 5 ({@damage 2d4}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition for 1 hour. While {@condition Poisoned|XPHB}, the target also has the {@condition Unconscious|XPHB} condition, which ends early if the target takes damage or a creature within 5 feet of it takes an action to wake it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Psychic Gray Ooze|XMM",
+			"hint": {
+				"Amorphous": "無定形",
+				"Pseudopod": "偽足"
+			},
+			"s": [
+				"Psychic Gray Ooze",
+				"Amorphous",
+				"The ooze can move through a space as narrow as 1 inch without expending extra movement to do so.",
+				"Pseudopod",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}11 ({@damage 3d6 + 1}) Acid damage, and the target has {@variantrule Disadvantage|XPHB} on Intelligence saving throws until the end of the ooze's next turn.",
+				"Psychic Crush",
+				"{@actSave int} {@dc 10}, one creature the ooze can see within 60 feet. {@actSaveFail} 13 ({@damage 3d8}) Psychic damage.",
+				"Mind Corrosion",
+				"{@actTrigger} The ooze fails a saving throw against a spell or another magical effect created by a creature. {@actResponse} The triggering creature takes 3 ({@damage 1d6}) Psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Pteranodon|XMM",
+			"hint": {
+				"Pteranodon": "翼龍",
+				"Flyby": "飛掠",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Pteranodon",
+				"Flyby",
+				"The pteranodon doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Purple Worm|XMM",
+			"hint": {
+				"Purple Worm": "巨紫蠕蟲",
+				"Tunneler": "掘地者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Swallow": "吞嚥"
+			},
+			"s": [
+				"Purple Worm",
+				"Tunneler",
+				"The worm can burrow through solid rock at half its {@variantrule Burrow Speed|XPHB} and leaves a 10-foot-diameter tunnel in its wake.",
+				"Multiattack",
+				"The worm makes one Bite attack and one Tail Stinger attack.",
+				"Bite",
+				"{@atkr m} {@hit 14}, reach 10 ft. {@h}22 ({@damage 3d8 + 9}) Piercing damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 19}), and it has the {@condition Restrained|XPHB} condition until the grapple ends.",
+				"Tail Stinger",
+				"{@atkr m} {@hit 14}, reach 10 ft. {@h}16 ({@damage 2d6 + 9}) Piercing damage plus 35 ({@damage 10d6}) Poison damage.",
+				"Swallow",
+				"{@actSave str} {@dc 19}, one Large or smaller creature {@condition Grappled|XPHB} by the worm (it can have up to three creatures swallowed at a time). {@actSaveFail} The target is swallowed by the worm, and the {@condition Grappled|XPHB} condition ends. A swallowed creature has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects outside the worm, and takes 17 ({@damage 5d6}) Acid damage at the start of each of the worm's turns.",
+				"If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 5 feet of the worm and has the {@condition Prone|XPHB} condition. If the worm dies, any swallowed creature no longer has the {@condition Restrained|XPHB} condition and can escape from the corpse using 20 feet of movement, exiting {@condition Prone|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Quaggoth|XMM",
+			"hint": {
+				"Quaggoth": "澤地熊人",
+				"Bloodied Fury": "浴血狂怒",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Quaggoth",
+				"Bloodied Fury",
+				"While {@status Bloodied|XPHB}, the quaggoth has {@variantrule Advantage|XPHB} on attack rolls.",
+				"Multiattack",
+				"The quaggoth makes two Claw attacks.",
+				"Claw",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Slashing damage, or 13 ({@damage 3d6 + 3}) Slashing damage if the quaggoth is {@status Bloodied|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Quaggoth Thonot|XMM",
+			"hint": {
+				"Quaggoth Thonot": "澤地熊人．索諾祭司",
+				"Spellcasting": "施法",
+				"Bloodied Fury": "浴血狂怒",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Quaggoth Thonot",
+				"Spellcasting",
+				"The quaggoth casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability (spell save {@dc 12}):",
+				"Psionic Defense (3/Day)",
+				"The quaggoth casts {@spell Feather Fall|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+				"Bloodied Fury",
+				"While {@status Bloodied|XPHB}, the quaggoth has {@variantrule Advantage|XPHB} on attack rolls.",
+				"Multiattack",
+				"The quaggoth makes two Claw attacks.",
+				"Claw",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Slashing damage plus 5 ({@damage 2d4}) Psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Quasit|XMM",
+			"hint": {
+				"Quasit": "夸塞魔",
+				"Invisibility": "隱形",
+				"Magic Resistance": "魔法抗性",
+				"Rend": "撕裂",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Quasit",
+				"Invisibility",
+				"The quasit casts {@spell Invisibility|XPHB} on itself, requiring no spell components and using Charisma as the spellcasting ability.",
+				"Magic Resistance",
+				"The quasit has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Rend",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Slashing damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the quasit's next turn.",
+				"Scare (1/Day)",
+				"{@actSave wis} {@dc 10}, one creature within 20 feet. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+				"Shape-Shift",
+				"The quasit shape-shifts to resemble a bat ({@variantrule Speed|XPHB} 10 ft., Fly 40 ft.), a centipede (40 ft., Climb 40 ft.), or a toad (40 ft., Swim 40 ft.), or it returns to its true form. Its game statistics are the same in each form, except for its {@variantrule Speed|XPHB}. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Questing Knight|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Greatsword": "巨劍",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Questing Knight",
+				"Spellcasting",
+				"The knight casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 16}):",
+				"Aura of Bravery",
+				"Creatures of the knight's choice in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from it have {@variantrule Immunity|XPHB} to the {@condition Charmed|XPHB} and {@condition Frightened|XPHB} conditions while there.",
+				"Multiattack",
+				"The knight makes three attacks, using Greatsword or Longbow in any combination.",
+				"Greatsword",
+				"{@atkr m} {@hit 9}, reach 5 ft. {@h}12 ({@damage 2d6 + 5}) Slashing damage plus 22 ({@damage 5d8}) Radiant damage.",
+				"Longbow",
+				"{@atkr r} {@hit 7}, range 150/600 ft. {@h}12 ({@damage 2d8 + 3}) Piercing damage plus 22 ({@damage 5d8}) Radiant damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rakshasa|XMM",
+			"hint": {
+				"Rakshasa": "羅剎",
+				"Spellcasting": "施法",
+				"Fiendish Restoration": "邪魔復原",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Rakshasa",
+				"Spellcasting",
+				"The rakshasa casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 18}):",
+				"Greater Magic Resistance",
+				"The rakshasa automatically succeeds on saving throws against spells and other magical effects, and the attack rolls of spells automatically miss it. Without the rakshasa's permission, no spell can observe the rakshasa remotely or detect its thoughts, creature type, or alignment.",
+				"Fiendish Restoration",
+				"If the rakshasa dies outside the Nine Hells, its body turns to ichor, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Nine Hells.",
+				"Multiattack",
+				"The rakshasa makes three Cursed Touch attacks.",
+				"Cursed Touch",
+				"{@atkr m} {@hit 10}, reach 5 ft. {@h}12 ({@damage 2d6 + 5}) Slashing damage plus 19 ({@damage 3d12}) Necrotic damage. If the target is a creature, it is cursed. While cursed, the target gains no benefit from finishing a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
+				"Baleful Command {@recharge 5}",
+				"{@actSave wis} {@dc 18}, each enemy in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the rakshasa. {@actSaveFail} 28 ({@damage 8d6}) Psychic damage, and the target has the {@condition Frightened|XPHB} and {@condition Incapacitated|XPHB} conditions until the start of the rakshasa's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rat|XMM",
+			"hint": {
+				"Rat": "老鼠",
+				"Agile": "敏捷",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Rat",
+				"Agile",
+				"The rat doesn't provoke {@action Opportunity Attack|XPHB|Opportunity Attacks} when it moves out of an enemy's reach.",
+				"Bite",
+				"{@atkr m} {@hit 2}, reach 5 ft. {@h}1 Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Raven|XMM",
+			"hint": {
+				"Raven": "渡鴉",
+				"Mimicry": "聲音模仿",
+				"Beak": "啄擊"
+			},
+			"s": [
+				"Raven",
+				"Mimicry",
+				"The raven can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful {@dc 10} Wisdom ({@skill Insight|XPHB}) check.",
+				"Beak",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}1 Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Red Dragon Wyrmling|XMM",
+			"hint": {
+				"Red Dragon Wyrmling": "紅龍幼龍",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Fire Breath {@recharge 5}": "火焰吐息 {@recharge 5}"
+			},
+			"s": [
+				"Red Dragon Wyrmling",
+				"Multiattack",
+				"The dragon makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}9 ({@damage 1d10 + 4}) Slashing damage plus 3 ({@damage 1d6}) Fire damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 13}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 24 ({@damage 7d6}) Fire damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Red Slaad|XMM",
+			"hint": {
+				"Red Slaad": "史拉紅蟾",
+				"Magic Resistance": "魔法抗性",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Red Slaad",
+				"Magic Resistance",
+				"The slaad has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Regeneration",
+				"The slaad regains 10 {@variantrule Hit Points|XPHB} at the start of each of its turns if it has at least 1 {@variantrule Hit Points|XPHB|Hit Point}.",
+				"Multiattack",
+				"The slaad makes three Injecting Claw attacks.",
+				"Injecting Claw",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}10 ({@damage 2d6 + 3}) Piercing damage. If the target is a Humanoid not cursed by a slaad, it is subjected to the following effect. {@actSave con} {@dc 14}. {@actSaveFail} The target is cursed unawares, and a minuscule slaad egg is implanted in it. Removing the curse destroys the egg.",
+				"Over {@dice 2d4 × 10} days, the egg gestates. In the final 24 hours, the cursed target feels unwell; its {@variantrule Speed|XPHB} is halved, and it has {@variantrule Disadvantage|XPHB} on {@variantrule D20 Test|XPHB|D20 Tests}. At the end of this time, the egg turns into a Slaad Tadpole, which chews out of the host and kills it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Reef Shark|XMM",
+			"hint": {
+				"Reef Shark": "礁鯊",
+				"Pack Tactics": "群體戰術",
+				"Water Breathing": "水中呼吸",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Reef Shark",
+				"Pack Tactics",
+				"The shark has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Water Breathing",
+				"The shark can breathe only underwater.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}7 ({@damage 2d4 + 2}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Remorhaz|XMM",
+			"hint": {
+				"Remorhaz": "百足魔獸",
+				"Bite": "啃咬",
+				"Swallow": "吞嚥"
+			},
+			"s": [
+				"Remorhaz",
+				"Heat Aura",
+				"At the end of each of the remorhaz's turns, each creature in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the remorhaz takes 16 ({@damage 3d10}) Fire damage.",
+				"Bite",
+				"{@atkr m} {@hit 11}, reach 10 ft. {@h}18 ({@damage 2d10 + 7}) Piercing damage plus 14 ({@damage 4d6}) Fire damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 17}), and it has the {@condition Restrained|XPHB} condition until the grapple ends.",
+				"Swallow",
+				"{@actSave str} {@dc 19}, one Large or smaller creature {@condition Grappled|XPHB} by the remorhaz (it can have up to two creatures swallowed at a time). {@actSaveFail} The target is swallowed by the remorhaz, and the {@condition Grappled|XPHB} condition ends. A swallowed creature has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, it has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects outside the remorhaz, and it takes 10 ({@damage 3d6}) Acid damage plus 10 ({@damage 3d6}) Fire damage at the start of each of the remorhaz's turns.",
+				"If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a {@dc 15} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 5 feet of the remorhaz and has the {@condition Prone|XPHB} condition. If the remorhaz dies, any swallowed creature no longer has the {@condition Restrained|XPHB} condition and can escape from the corpse by using 15 feet of movement, exiting {@condition Prone|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Revenant|XMM",
+			"hint": {
+				"Revenant": "還魂屍",
+				"Regeneration": "再生",
+				"Undead Restoration": "不死復原",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Revenant",
+				"Regeneration",
+				"The revenant regains 10 {@variantrule Hit Points|XPHB} at the start of each of its turns. If the revenant takes Fire or Radiant damage, this trait doesn't function at the start of its next turn. Its body is destroyed only if it starts its turn with 0 {@variantrule Hit Points|XPHB} and doesn't regenerate.",
+				"Undead Restoration",
+				"If the revenant dies, it revives 24 hours later in a different body unless {@spell Dispel Evil and Good|XPHB} is cast on its corpse. If it revives, it animates a Humanoid corpse elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its {@variantrule Hit Points|XPHB}.",
+				"Multiattack",
+				"The revenant uses Vengeful Glare and makes two Slam attacks.",
+				"Slam",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Necrotic damage.",
+				"Vengeful Glare",
+				"{@actSave wis} {@dc 15}, one creature the revenant can see within 30 feet. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. If the {@condition Frightened|XPHB} target is cursed by the revenant (see Vow of Revenge), the target also has the {@condition Paralyzed|XPHB} condition for the duration.",
+				"Vow of Revenge (1/Day)",
+				"The revenant curses one creature it can see within 30 feet of itself. The revenant knows the distance to and direction of the cursed target, even if it is on a different plane of existence. The curse ends on the target if the revenant uses this {@variantrule Bonus Action|XPHB} on a different creature."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rhinoceros|XMM",
+			"hint": {
+				"Rhinoceros": "犀牛",
+				"Gore": "頂撞"
+			},
+			"s": [
+				"Rhinoceros",
+				"Gore",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}14 ({@damage 2d8 + 5}) Piercing damage. If target is a Large or smaller creature and the rhinoceros moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 ({@damage 2d8}) Piercing damage and has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Riding Horse|XMM",
+			"hint": {
+				"Riding Horse": "騎用馬",
+				"Hooves": "蹄擊"
+			},
+			"s": [
+				"Riding Horse",
+				"Hooves",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Roc|XMM",
+			"hint": {
+				"Roc": "鵬鳥",
+				"Multiattack": "多重攻擊",
+				"Beak": "啄擊",
+				"Talons": "利爪"
+			},
+			"s": [
+				"Roc",
+				"Multiattack",
+				"The roc makes two Beak attacks. It can replace one attack with a Talons attack.",
+				"Beak",
+				"{@atkr m} {@hit 13}, reach 10 ft. {@h}28 ({@damage 3d12 + 9}) Piercing damage.",
+				"Talons",
+				"{@atkr m} {@hit 13}, reach 5 ft. {@h}23 ({@damage 4d6 + 9}) Slashing damage. If the target is a Huge or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 19}) from both talons, and it has the {@condition Restrained|XPHB} condition until the grapple ends.",
+				"Swoop {@recharge 5}",
+				"If the roc has a creature {@condition Grappled|XPHB}, the roc flies up to half its {@variantrule Fly Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks} and drops that creature."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Roper|XMM",
+			"hint": {
+				"Roper": "樹繩妖",
+				"Spider Climb": "蛛行",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tentacle": "觸手",
+				"Reel": "收線"
+			},
+			"s": [
+				"Roper",
+				"Spider Climb",
+				"The roper can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Multiattack",
+				"The roper makes two Tentacle attacks, uses Reel, and makes two Bite attacks.",
+				"Bite",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}17 ({@damage 3d8 + 4}) Piercing damage.",
+				"Tentacle",
+				"{@atkr m} {@hit 7}, reach 60 ft. {@h}The target has the {@condition Grappled|XPHB} condition (escape {@dc 14}) from one of six tentacles, and the target has the {@condition Poisoned|XPHB} condition until the grapple ends.",
+				"The tentacle can be damaged, freeing a creature it has {@condition Grappled|XPHB} when destroyed (AC 20, HP 10, {@variantrule Immunity|XPHB} to Poison and Psychic damage). Damaging the tentacle deals no damage to the roper, and a destroyed tentacle regrows at the start of the roper's next turn.",
+				"Reel",
+				"The roper pulls each creature {@condition Grappled|XPHB} by it up to 30 feet straight toward it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rust Monster|XMM",
+			"hint": {
+				"Rust Monster": "鏽蝕怪",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Rust Monster",
+				"Iron Scent",
+				"The rust monster can pinpoint the location of ferrous metal within 30 feet of itself.",
+				"Multiattack",
+				"The rust monster makes one Bite attack and uses Antennae twice.",
+				"Bite",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}5 ({@damage 1d8 + 1}) Piercing damage.",
+				"Antennae",
+				"The rust monster targets one nonmagical metal object—armor or a weapon—worn or carried by a creature within 5 feet of itself. {@actSave dex} {@dc 11}, the creature with the object. {@actSaveFail} The object takes a -1 penalty to the AC it offers (armor) or to its attack rolls (weapon). Armor is destroyed if the penalty reduces its AC to 10, and a weapon is destroyed if its penalty reaches -5. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the armor or weapon.",
+				"Destroy Metal",
+				"The rust monster touches a nonmagical metal object within 5 feet of itself that isn't being worn or carried. The touch destroys a 1-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} of the object.",
+				"Reflexive Antennae",
+				"{@actTrigger} An attack roll hits the rust monster. {@actResponse} The rust monster uses Antennae."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Saber-Toothed Tiger|XMM",
+			"hint": {
+				"Saber-Toothed Tiger": "劍齒虎",
+				"Running Leap": "助跑跳躍",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Nimble Escape": "靈巧脫逃"
+			},
+			"s": [
+				"Saber-Toothed Tiger",
+				"Running Leap",
+				"With a 10-foot running start, the tiger can {@variantrule Long Jump|XPHB} up to 25 feet.",
+				"Multiattack",
+				"The tiger makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Slashing damage.",
+				"Nimble Escape",
+				"The tiger takes the {@action Disengage|XPHB} or {@action Hide|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sahuagin Baron|XMM",
+			"hint": {
+				"Sahuagin Baron": "沙華魚人男爵",
+				"Multiattack": "多重攻擊",
+				"Trident": "三叉戟"
+			},
+			"s": [
+				"Sahuagin Baron",
+				"Blood Frenzy",
+				"The sahuagin has {@variantrule Advantage|XPHB} on attack rolls against any creature that doesn't have all its {@variantrule Hit Points|XPHB}.",
+				"Limited Amphibiousness",
+				"The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.",
+				"Shark Telepathy",
+				"The sahuagin can magically control sharks within 120 feet of itself, using a special telepathy.",
+				"Multiattack",
+				"The sahuagin makes three Trident attacks.",
+				"Trident",
+				"{@atkr m,r} {@hit 7}, reach 5 ft. or range 20/60 ft. {@h}13 ({@damage 2d8 + 4}) Piercing damage.",
+				"Fiendish Blood",
+				"{@actTrigger} The sahuagin takes Piercing or Slashing damage. {@actResponse d}{@actSave con} {@dc 14}, each creature of the sahuagin's choice in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the sahuagin. {@actSaveFail} 10 ({@damage 3d6}) Acid damage, and the target is cursed until it finishes a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}. While cursed, the target can't benefit from the {@condition Invisible|XPHB} condition, its {@variantrule Speed|XPHB} decreases by 10 feet, and all Fiends within 120 feet of the target can sense its location regardless of interposing obstacles."
+			]
+		}
+	]
+}
