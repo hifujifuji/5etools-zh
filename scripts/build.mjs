@@ -91,6 +91,15 @@ for (const f of fs.readdirSync(path.join(DIST, "data", "class"))) {
 	}
 }
 
+// 舊版名稱寫法不同：「Weapon +1」→ 新版「+1 Weapon」、「Shield, +1」→「+1 Shield」
+const altKeys = (prop, ent) => {
+	if (prop !== "magicvariant") return [];
+	const m = /^\+(\d) (.+)$/.exec(ent.name);
+	if (!m) return [];
+	const src = S(ent.inherits?.source || ent.source);
+	return [`${m[2]} +${m[1]}|${src}`, `${m[2]}, +${m[1]}|${src}`, `${m[2]} +${m[1]}|DMG`, `${m[2]}, +${m[1]}|DMG`];
+};
+
 const stats = {};
 const bump = (prop, k) => { (stats[prop] ||= {total: 0, full: 0, name: 0})[k]++; };
 
@@ -99,7 +108,7 @@ const translateEntity = (prop, ent) => {
 	bump(prop, "total");
 	const trProp = FLUFF_PROP[prop] || prop;
 	const key = (KEY_FN[prop] || (e => `${e.name}|${S(e.source)}`))(ent);
-	const old = tr[trProp]?.[key];
+	const old = tr[trProp]?.[key] ?? altKeys(prop, ent).map(k => tr[trProp]?.[k]).find(Boolean);
 	if (old) {
 		merger.mergeEntity(ent, old);
 		if (ent.name_zh) { bump(prop, "full"); return; }

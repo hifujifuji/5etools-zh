@@ -27,6 +27,8 @@ node scripts/serve.mjs      # 本機預覽 http://127.0.0.1:5050/
    - `10-names`：列表／標題顯示「中文 English」、渲染器顯示巢狀條目中文名、搜尋索引收錄中文名
    - `20-classes`：職業表、特性標題、子職業按鈕
    - `30-search`：全站搜尋支援中文（修正 elasticlunr 會刪掉中文字的問題、中文片段搜尋）
+   - `40-races-items`：執行期合成的「精靈（高等）」「+1 長劍」等中文名
+   - `50-books`：書本目錄導覽仍用英文標題比對
 3. **介面翻譯**（`src/zh.js` + `i18n/ui.json`）：用 MutationObserver 把「整段完全符合」詞典的介面文字換成中文，
    另外用正規式處理「3rd-level evocation」這類組合字串。只比對整段，不會動到內文。
 4. **搜尋索引**：用合併後的資料重新產生 `search/*.json`。

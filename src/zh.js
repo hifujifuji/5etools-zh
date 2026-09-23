@@ -11,18 +11,48 @@
 
 	const RULES = RULES_SRC.map(([re, repl]) => [new RegExp(`^${re}$`), repl]);
 
-	const t = (s) => {
-		if (s == null) return s;
+	const tOne = (s) => {
 		const hit = DICT[s];
 		if (hit != null) return hit;
 		for (const [re, repl] of RULES) {
-			if (re.test(s)) return s.replace(re, (...m) => repl.replace(/\$(\d)|\{(\d)\}/g, (_, a, b) => {
+			const m = re.exec(s);
+			if (!m) continue;
+			// {n}：遞迴翻譯捕獲的片段；規則裡有 {n} 卻一個都翻不出來，就不套用這條
+			let hasSub = false, nSub = 0;
+			const out = repl.replace(/\$(\d)|\{(\d)\}/g, (_, a, b) => {
 				const v = m[Number(a || b)] ?? "";
-				// {n}：遞迴翻譯捕獲的片段
-				return b != null ? (t(v) ?? v) : v;
-			}));
+				if (b == null) return v;
+				hasSub = true;
+				const x = t(v);
+				if (x != null) { ++nSub; return x; }
+				return v;
+			});
+			if (hasSub && !nSub) continue;
+			return out;
 		}
 		return null;
+	};
+
+	// 組合字串：「Dexterity +2; Intelligence +1」「Small/Medium」「Fire, Cold」
+	// 每一段都翻得出來（或只是數字符號）才算數
+	const RE_SPLIT = /(; |, | or | and |\/)/;
+	const SEP_ZH = {"; ": "；", ", ": "、", " or ": "或", " and ": "和", "/": "／"};
+	const RE_TRIVIAL = /^[\d\s+\-–—×().,/%]*$/;
+	const t = (s) => {
+		if (s == null) return s;
+		const one = tOne(s);
+		if (one != null) return one;
+		if (!RE_SPLIT.test(s)) return null;
+		const parts = s.split(RE_SPLIT);
+		let nTranslated = 0;
+		const out = parts.map((p, i) => {
+			if (i % 2) return SEP_ZH[p];
+			const x = tOne(p);
+			if (x != null) { ++nTranslated; return x; }
+			return RE_TRIVIAL.test(p) ? p : null;
+		});
+		if (!nTranslated || out.some(p => p == null)) return null;
+		return out.join("");
 	};
 
 	const ZH = {

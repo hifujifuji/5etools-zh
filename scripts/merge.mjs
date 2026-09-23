@@ -80,45 +80,92 @@ export class Merger {
 	}
 
 	_mergeList (n, o, isText) {
-		// 字串：數量一致才依序對應
-		const nStr = [], oStr = [];
-		n.forEach((v, i) => typeof v === "string" && nStr.push(i));
-		o.forEach((v, i) => typeof v === "string" && oStr.push(i));
-		if (nStr.length === oStr.length) nStr.forEach((ni, j) => n[ni] = this._mergeVal(n[ni], o[oStr[j]], isText));
-
-		// 巢狀陣列（表格列）：數量一致才依序對應
-		const nArr = [], oArr = [];
-		n.forEach((v, i) => Array.isArray(v) && nArr.push(i));
-		o.forEach((v, i) => Array.isArray(v) && oArr.push(i));
-		if (nArr.length === oArr.length) nArr.forEach((ni, j) => n[ni] = this._mergeList(n[ni], o[oArr[j]], isText));
-
-		// 物件：先用英文名對應，其餘在數量一致時依序對應
-		const nObj = [], oObj = [];
-		n.forEach((v, i) => isObj(v) && nObj.push(i));
-		o.forEach((v, i) => isObj(v) && oObj.push(i));
-		const usedO = new Set();
-		const pairs = new Map();
-		for (const ni of nObj) {
-			const nm = norm(typeof n[ni].name === "string" ? n[ni].name : "");
-			if (!nm) continue;
-			const oi = oObj.find(oi => !usedO.has(oi) && (norm(engOf(o[oi])) === nm || norm(o[oi].name) === nm));
-			if (oi != null) { usedO.add(oi); pairs.set(ni, oi); }
+		for (const [ni, oi] of this._alignList(n, o)) {
+			if (typeof n[ni] === "string") n[ni] = this._mergeVal(n[ni], o[oi], isText);
+			else if (Array.isArray(n[ni])) n[ni] = this._mergeList(n[ni], o[oi], isText);
+			else n[ni] = this._mergeObj(n[ni], o[oi]);
 		}
-		if (nObj.length === oObj.length) {
-			nObj.forEach((ni, j) => {
-				if (pairs.has(ni)) return;
-				const oi = oObj[j];
-				if (usedO.has(oi)) return;
-				const on = o[oi], nn = n[ni];
-				// 舊版有英文名但對不上 → 不是同一個東西
-				if (engOf(on) && typeof nn.name === "string" && norm(engOf(on)) !== norm(nn.name)) return;
-				if ((on.type || "entries") !== (nn.type || "entries")) return;
-				usedO.add(oi);
-				pairs.set(ni, oi);
-			});
-		}
-		for (const [ni, oi] of pairs) n[ni] = this._mergeObj(n[ni], o[oi]);
 		return n;
+	}
+
+	// ---- 清單對齊 ------------------------------------------------------------
+	// 1. 長度相同且每格種類一致 → 依序配對（最常見）
+	// 2. 否則用「錨點」：英文名相同，或段落裡的數字／標籤目標夠相似（DP 找最佳單調配對）
+	// 3. 相鄰錨點之間若兩邊剩下的元素數量、種類都一樣 → 依序補配對
+	_alignList (n, o) {
+		const kind = v => typeof v === "string" ? "s" : Array.isArray(v) ? "a" : isObj(v) ? `o:${v.type || "entries"}` : null;
+		const nk = n.map(kind), ok = o.map(kind);
+
+		if (n.length === o.length && nk.every((k, i) => k && k === ok[i])) {
+			return n.map((_, i) => [i, i]).filter(([i]) => !this._isNameConflict(n[i], o[i]));
+		}
+
+		const sim = (i, j) => {
+			if (!nk[i] || nk[i] !== ok[j]) return -1;
+			// 書本章節：頁碼相同是很強的線索；頁碼不同則不配
+			if (isObj(n[i]) && n[i].page != null && o[j].page != null) return n[i].page === o[j].page ? 1 : -1;
+			if (this._isNameConflict(n[i], o[j])) return -1;
+			if (isObj(n[i]) && typeof n[i].name === "string" && engOf(o[j]) && norm(engOf(o[j])) === norm(n[i].name)) return 1;
+			return this._sigSim(n[i], o[j]);
+		};
+
+		// DP：最大化相似度總和的單調配對（只算相似度 ≥ 0.34 的配對）
+		const N = n.length, M = o.length;
+		if (N * M > 40000) return [];
+		const S = Array.from({length: N}, (_, i) => Array.from({length: M}, (_, j) => sim(i, j)));
+		const dp = Array.from({length: N + 1}, () => new Float64Array(M + 1));
+		for (let i = N - 1; i >= 0; --i) {
+			for (let j = M - 1; j >= 0; --j) {
+				let best = Math.max(dp[i + 1][j], dp[i][j + 1]);
+				if (S[i][j] >= 0.34) best = Math.max(best, dp[i + 1][j + 1] + S[i][j]);
+				dp[i][j] = best;
+			}
+		}
+		const anchors = [];
+		for (let i = 0, j = 0; i < N && j < M;) {
+			if (S[i][j] >= 0.34 && dp[i][j] === dp[i + 1][j + 1] + S[i][j]) { anchors.push([i, j]); ++i; ++j; } else if (dp[i + 1][j] >= dp[i][j + 1]) ++i; else ++j;
+		}
+
+		// 錨點之間補配對：同種類的元素（字串對字串、entries 對 entries…）數量一樣就依序配對，
+		// 所以新版多插一張圖片不會打亂後面的段落
+		const out = [...anchors];
+		const bounds = [[-1, -1], ...anchors, [N, M]];
+		for (let b = 0; b < bounds.length - 1; ++b) {
+			const [i0, j0] = bounds[b], [i1, j1] = bounds[b + 1];
+			const byKindN = {}, byKindO = {};
+			for (let i = i0 + 1; i < i1; ++i) if (nk[i]) (byKindN[nk[i]] ||= []).push(i);
+			for (let j = j0 + 1; j < j1; ++j) if (ok[j]) (byKindO[ok[j]] ||= []).push(j);
+			for (const [k, is] of Object.entries(byKindN)) {
+				const js = byKindO[k];
+				if (!js || js.length !== is.length) continue;
+				is.forEach((i, x) => { if (!this._isNameConflict(n[i], o[js[x]])) out.push([i, js[x]]); });
+			}
+		}
+		return out;
+	}
+
+	/** 舊版有英文名，但跟新版名稱不同 → 不是同一個東西（書本章節頁碼相同時以頁碼為準，舊版 ENG_name 偶有錯字） */
+	_isNameConflict (nv, ov) {
+		if (!isObj(nv) || !isObj(ov) || !engOf(ov) || typeof nv.name !== "string") return false;
+		if (nv.page != null && nv.page === ov.page) return false;
+		return norm(engOf(ov)) !== norm(nv.name);
+	}
+
+	_sig (v, isOld) {
+		const str = typeof v === "string" ? v : JSON.stringify(v);
+		const s = isOld ? this.convertTags(str, {quiet: true}) : str;
+		const out = new Set();
+		for (const m of s.matchAll(/\{@(\w+) ([^|}]+)/g)) out.add(`${m[1]}:${m[2].trim().toLowerCase()}`);
+		for (const m of s.matchAll(/\d+(?:d\d+)?/g)) out.add(m[0]);
+		return out;
+	}
+
+	_sigSim (nv, ov) {
+		const a = this._sig(nv, false), b = this._sig(ov, true);
+		if (!a.size || !b.size) return 0;
+		let inter = 0;
+		for (const x of a) if (b.has(x)) ++inter;
+		return inter / (a.size + b.size - inter);
 	}
 
 	// {@spell 火球術} → {@spell Fireball||火球術}
@@ -129,7 +176,7 @@ export class Merger {
 		"subclassFeature", "subclass", "itemProperty", "itemMastery",
 	]);
 
-	convertTags (str) {
+	convertTags (str, {quiet = false} = {}) {
 		return str.replace(/\{@(\w+) ([^{}]*)\}/g, (m, tag, body) => {
 			if (!Merger._NAME_TAGS.has(tag)) return m;
 			const parts = body.split("|");
@@ -137,10 +184,11 @@ export class Merger {
 			if (!hasCjk(zh)) return m;
 			const en = this.lookup(tag, zh);
 			if (!en) {
+				if (quiet) return parts[2] || zh;
 				this.stats.tagsUnresolved[`${tag}:${zh}`] = (this.stats.tagsUnresolved[`${tag}:${zh}`] || 0) + 1;
 				return parts[2] || zh;
 			}
-			this.stats.tagsResolved++;
+			if (!quiet) this.stats.tagsResolved++;
 			parts[0] = en;
 			if (parts.length < 2) parts[1] = "";
 			if (!parts[2]) parts[2] = zh;
