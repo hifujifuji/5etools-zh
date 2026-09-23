@@ -28,12 +28,15 @@ execFileSync("rsync", [
 ], {stdio: "inherit"});
 
 // ---- 2. 載入翻譯 -----------------------------------------------------------
+// 全站統一用語（hazmole 與本站譯法不同者）
+const TERM_FIX = [[/睿知/g, "感知"]];
+const readI18n = f => JSON.parse(TERM_FIX.reduce((s, [re, to]) => s.replace(re, to), fs.readFileSync(f, "utf8")));
 const loadDir = dir => {
 	const out = {};
 	if (!fs.existsSync(dir)) return out;
 	for (const f of fs.readdirSync(dir)) {
 		if (!f.endsWith(".json") || f.startsWith("_")) continue;
-		out[f.replace(/\.json$/, "")] = readJson(path.join(dir, f));
+		out[f.replace(/\.json$/, "")] = readI18n(path.join(dir, f));
 	}
 	return out;
 };
@@ -49,7 +52,7 @@ for (const layer of ["hazmole", "custom"]) {
 	for (const [f, target] of [["_glossary.json", glossary], ["_names.json", names]]) {
 		const p = path.join(I18N, layer, f);
 		if (!fs.existsSync(p)) continue;
-		for (const [k, v] of Object.entries(readJson(p))) Object.assign(target[k] ||= {}, v);
+		for (const [k, v] of Object.entries(readI18n(p))) Object.assign(target[k] ||= {}, v);
 	}
 }
 // 手動詞彙（技能、動作、感官…）
