@@ -1,0 +1,347 @@
+{
+	"batch": "xphb-spell-03",
+	"items": [
+		{
+			"prop": "spell",
+			"key": "Detect Magic|XPHB",
+			"hint": {
+				"Detect Magic": "偵測魔法"
+			},
+			"s": [
+				"Detect Magic",
+				"For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the {@action Magic|XPHB} action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's {@book school of magic|XPHB|7|Schools of Magic}.",
+				"The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Detect Poison and Disease|XPHB",
+			"hint": {
+				"Detect Poison and Disease": "偵測毒素或疾病"
+			},
+			"s": [
+				"Detect Poison and Disease",
+				"For the duration, you sense the location of poisons, poisonous or venomous creatures, and magical contagions within 30 feet of yourself. You sense the kind of poison, creature, or contagion in each case.",
+				"The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Disguise Self|XPHB",
+			"hint": {
+				"Disguise Self": "易容術"
+			},
+			"s": [
+				"Disguise Self",
+				"You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends. You can seem 1 foot shorter or taller and can appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. Otherwise, the extent of the illusion is up to you.",
+				"The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing.",
+				"To discern that you are disguised, a creature must take the {@action Study|XPHB} action to inspect your appearance and succeed on an Intelligence ({@skill Investigation|XPHB}) check against your spell save DC."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Dissonant Whispers|XPHB",
+			"hint": {
+				"Dissonant Whispers": "噪音暗語",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Dissonant Whispers",
+				"One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes {@damage 3d6} Psychic damage and must immediately use its {@variantrule Reaction|XPHB}, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 3d6|1-9|1d6} for each spell slot level above 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Divine Favor|XPHB",
+			"hint": {
+				"Divine Favor": "神恩術"
+			},
+			"s": [
+				"Divine Favor",
+				"Until the spell ends, your attacks with weapons deal an extra {@damage 1d4} Radiant damage on a hit."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Divine Smite|XPHB",
+			"hint": {
+				"Divine Smite": "至聖斬",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Divine Smite",
+				"which you take immediately after hitting a target with a Melee weapon or an {@variantrule Unarmed Strike|XPHB}",
+				"The target takes an extra {@damage 2d8} Radiant damage from the attack. The damage increases by {@damage 1d8} if the target is a Fiend or an Undead.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 2d8|1-9|1d8} for each spell slot level above 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Ensnaring Strike|XPHB",
+			"hint": {
+				"Ensnaring Strike": "誘捕打擊",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Ensnaring Strike",
+				"which you take immediately after hitting a creature with a weapon",
+				"As you hit the target, grasping vines appear on it, and it makes a Strength saving throw. A Large or larger creature has {@variantrule Advantage|XPHB} on this save. On a failed save, the target has the {@condition Restrained|XPHB} condition until the spell ends. On a successful save, the vines shrivel away, and the spell ends.",
+				"While {@condition Restrained|XPHB}, the target takes {@damage 1d6} Piercing damage at the start of each of its turns. The target or a creature within reach of it can take an action to make a Strength ({@skill Athletics|XPHB}) check against your spell save DC. On a success, the spell ends.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 1d6|1-9|1d6} for each spell slot level above 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Entangle|XPHB",
+			"hint": {
+				"Entangle": "糾纏術"
+			},
+			"s": [
+				"Entangle",
+				"Grasping plants sprout from the ground in a 20-foot square within range. For the duration, these plants turn the ground in the area into {@variantrule Difficult Terrain|XPHB}. They disappear when the spell ends.",
+				"Each creature (other than you) in the area when you cast the spell must succeed on a Strength saving throw or have the {@condition Restrained|XPHB} condition until the spell ends. A {@condition Restrained|XPHB} creature can take an action to make a Strength ({@skill Athletics|XPHB}) check against your spell save DC. On a success, it frees itself from the grasping plants and is no longer {@condition Restrained|XPHB} by them."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Expeditious Retreat|XPHB",
+			"hint": {
+				"Expeditious Retreat": "腳底抹油"
+			},
+			"s": [
+				"Expeditious Retreat",
+				"You take the {@action Dash|XPHB} action, and until the spell ends, you can take that action again as a {@variantrule Bonus Action|XPHB}."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Faerie Fire|XPHB",
+			"hint": {
+				"Faerie Fire": "妖火術"
+			},
+			"s": [
+				"Faerie Fire",
+				"Objects in a 20-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} within range are outlined in blue, green, or violet light (your choice). Each creature in the {@variantrule Cube [Area of Effect]|XPHB|Cube} is also outlined if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed {@variantrule Dim Light|XPHB} in a 10-foot radius and can't benefit from the {@condition Invisible|XPHB} condition.",
+				"{@action Attack|XPHB} rolls against an affected creature or object have {@variantrule Advantage|XPHB} if the attacker can see it."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "False Life|XPHB",
+			"hint": {
+				"False Life": "摹造生命",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"False Life",
+				"You gain {@dice 2d4 + 4} {@variantrule Temporary Hit Points|XPHB}.",
+				"Using a Higher-Level Spell Slot",
+				"You gain 5 additional {@variantrule Temporary Hit Points|XPHB} for each spell slot level above 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Feather Fall|XPHB",
+			"hint": {
+				"Feather Fall": "羽落術"
+			},
+			"s": [
+				"Feather Fall",
+				"which you take when you or a creature you can see within 60 feet of you falls",
+				"Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Find Familiar|XPHB",
+			"hint": {
+				"Find Familiar": "尋獲魔寵"
+			},
+			"s": [
+				"Find Familiar",
+				"burning incense worth 10+ GP, which the spell consumes",
+				"You gain the service of a familiar, a spirit that takes an animal form you choose: {@creature Bat|XMM}, {@creature Cat|XMM}, {@creature Frog|XMM}, {@creature Hawk|XMM}, {@creature Lizard|XMM}, {@creature Octopus|XMM}, {@creature Owl|XMM}, {@creature Rat|XMM}, {@creature Raven|XMM}, {@creature Spider|XMM}, {@creature Weasel|XMM}, or another Beast that has a {@filter Challenge Rating of 0|bestiary|challenge rating=[&0]|type=beast|miscellaneous=!swarm}. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a Celestial, Fey, or Fiend (your choice) instead of a Beast. Your familiar acts independently of you, but it obeys your commands.",
+				"Telepathic Connection",
+				"While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a {@variantrule Bonus Action|XPHB}, you can see through the familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has.",
+				"Finally, when you cast a spell with a range of touch, your familiar can deliver the touch. Your familiar must be within 100 feet of you, and it must take a {@variantrule Reaction|XPHB} to deliver the touch when you cast the spell.",
+				"Combat",
+				"The familiar is an ally to you and your allies. It rolls its own {@variantrule Initiative|XPHB} and acts on its own turn. A familiar can't attack, but it can take other actions as normal.",
+				"Disappearance of the Familiar",
+				"When the familiar drops to 0 {@variantrule Hit Points|XPHB}, it disappears. It reappears after you cast this spell again. As a {@action Magic|XPHB} action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As a {@action Magic|XPHB} action while it is temporarily dismissed, you can cause it to reappear in an unoccupied space within 30 feet of you. Whenever the familiar drops to 0 {@variantrule Hit Points|XPHB} or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying.",
+				"One Familiar Only",
+				"You can't have more than one familiar at a time. If you cast this spell while you have a familiar, you instead cause it to adopt a new eligible form."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Fog Cloud|XPHB",
+			"hint": {
+				"Fog Cloud": "雲霧術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Fog Cloud",
+				"You create a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} of fog centered on a point within range. The {@variantrule Sphere [Area of Effect]|XPHB|Sphere} is {@variantrule Heavily Obscured|XPHB}. It lasts for the duration or until a strong wind (such as one created by {@spell Gust of Wind|XPHB}) disperses it.",
+				"Using a Higher-Level Spell Slot",
+				"The fog's radius increases by 20 feet for each spell slot level above 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Goodberry|XPHB",
+			"hint": {
+				"Goodberry": "神莓術"
+			},
+			"s": [
+				"Goodberry",
+				"Ten berries appear in your hand and are infused with magic for the duration. A creature can take a {@variantrule Bonus Action|XPHB} to eat one berry. Eating a berry restores 1 {@variantrule Hit Points|XPHB|Hit Point}, and the berry provides enough nourishment to sustain a creature for one day.",
+				"Uneaten berries disappear when the spell ends."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Grease|XPHB",
+			"hint": {
+				"Grease": "油膩術"
+			},
+			"s": [
+				"Grease",
+				"Nonflammable grease covers the ground in a 10-foot square centered on a point within range and turns it into {@variantrule Difficult Terrain|XPHB} for the duration.",
+				"When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or have the {@condition Prone|XPHB} condition. A creature that enters the area or ends its turn there must also succeed on that save or fall {@condition Prone|XPHB}."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Guiding Bolt|XPHB",
+			"hint": {
+				"Guiding Bolt": "光導箭",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Guiding Bolt",
+				"You hurl a bolt of light toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes {@damage 4d6} Radiant damage, and the next attack roll made against it before the end of your next turn has {@variantrule Advantage|XPHB}.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 4d6|1-9|1d6} for each spell slot level above 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Hail of Thorns|XPHB",
+			"hint": {
+				"Hail of Thorns": "棘刺雹",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Hail of Thorns",
+				"which you take immediately after hitting a creature with a Ranged weapon",
+				"As you hit the creature, this spell creates a rain of thorns that sprouts from your Ranged weapon or ammunition. The target of the attack and each creature within 5 feet of it make a Dexterity saving throw, taking {@damage 1d10} Piercing damage on a failed save or half as much damage on a successful one.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 1d10|1-9|1d10} for each spell slot level above 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Healing Word|XPHB",
+			"hint": {
+				"Healing Word": "治癒真言",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Healing Word",
+				"A creature of your choice that you can see within range regains {@variantrule Hit Points|XPHB} equal to {@dice 2d4} plus your spellcasting ability modifier.",
+				"Using a Higher-Level Spell Slot",
+				"The healing increases by {@scaledice 2d4|1-9|2d4} for each spell slot level above 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Hellish Rebuke|XPHB",
+			"hint": {
+				"Hellish Rebuke": "煉獄叱喝",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Hellish Rebuke",
+				"which you take in response to taking damage from a creature that you can see within 60 feet of yourself",
+				"The creature that damaged you is momentarily surrounded by green flames. It makes a Dexterity saving throw, taking {@damage 2d10} Fire damage on a failed save or half as much damage on a successful one.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 2d10|1-9|1d10} for each spell slot level above 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Heroism|XPHB",
+			"hint": {
+				"Heroism": "英雄氣概",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Heroism",
+				"A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to the {@condition Frightened|XPHB} condition and gains {@variantrule Temporary Hit Points|XPHB} equal to your spellcasting ability modifier at the start of each of its turns.",
+				"Using a Higher-Level Spell Slot",
+				"You can target one additional creature for each spell slot level above 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Hex|XPHB",
+			"hint": {
+				"Hex": "脆弱詛咒",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Hex",
+				"You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra {@damage 1d6} Necrotic damage to the target whenever you hit it with an attack roll. Also, choose one ability when you cast the spell. The target has {@variantrule Disadvantage|XPHB} on ability checks made with the chosen ability.",
+				"If the target drops to 0 {@variantrule Hit Points|XPHB} before this spell ends, you can take a {@variantrule Bonus Action|XPHB} on a later turn to curse a new creature.",
+				"Using a Higher-Level Spell Slot",
+				"Your {@status Concentration|XPHB} can last longer with a spell slot of level 2 (up to 4 hours), 3-4 (up to 8 hours), or 5+ (24 hours)."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Hunter's Mark|XPHB",
+			"hint": {
+				"Hunter's Mark": "獵人印記",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Hunter's Mark",
+				"You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra {@damage 1d6} Force damage to the target whenever you hit it with an attack roll. You also have {@variantrule Advantage|XPHB} on any Wisdom ({@skill Perception|XPHB} or {@skill Survival|XPHB}) check you make to find it.",
+				"If the target drops to 0 {@variantrule Hit Points|XPHB} before this spell ends, you can take a {@variantrule Bonus Action|XPHB} to move the mark to a new creature you can see within range.",
+				"Using a Higher-Level Spell Slot",
+				"Your {@status Concentration|XPHB} can last longer with a spell slot of level 3-4 (up to 8 hours) or 5+ (up to 24 hours)."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Ice Knife|XPHB",
+			"hint": {
+				"Ice Knife": "冰刃",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Ice Knife",
+				"You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} Piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take {@damage 2d6} Cold damage.",
+				"Using a Higher-Level Spell Slot",
+				"The Cold damage increases by {@scaledamage 2d6|1-9|1d6} for each spell slot level above 1."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Identify|XPHB",
+			"hint": {
+				"Identify": "鑑定術"
+			},
+			"s": [
+				"Identify",
+				"a pearl worth 100+ GP",
+				"You touch an object throughout the spell's casting. If the object is a magic item or some other magical object, you learn its properties and how to use them, whether it requires {@variantrule Attunement|XPHB}, and how many charges it has, if any. You learn whether any ongoing spells are affecting the item and what they are. If the item was created by a spell, you learn that spell's name.",
+				"If you instead touch a creature throughout the casting, you learn which ongoing spells, if any, are currently affecting it."
+			]
+		}
+	]
+}

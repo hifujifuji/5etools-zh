@@ -1,0 +1,345 @@
+{
+	"batch": "xphb-spell-07",
+	"items": [
+		{
+			"prop": "spell",
+			"key": "Shatter|XPHB",
+			"hint": {
+				"Shatter": "粉碎音波",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Shatter",
+				"A loud noise erupts from a point of your choice within range. Each creature in a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered there makes a Constitution saving throw, taking {@damage 3d8} Thunder damage on a failed save or half as much damage on a successful one. A Construct has {@variantrule Disadvantage|XPHB} on the save.",
+				"A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 3d8|2-9|1d8} for each spell slot level above 2."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Shining Smite|XPHB",
+			"hint": {
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Shining Smite",
+				"which you take immediately after hitting a creature with a Melee weapon or an {@variantrule Unarmed Strike|XPHB}",
+				"The target hit by the strike takes an extra {@damage 2d6} Radiant damage from the attack. Until the spell ends, the target sheds {@variantrule Bright Light|XPHB} in a 5-foot radius, attack rolls against it have {@variantrule Advantage|XPHB}, and it can't benefit from the {@condition Invisible|XPHB} condition.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 2d6|2-9|1d6} for each spell slot level above 2."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Silence|XPHB",
+			"hint": {
+				"Silence": "沉默術"
+			},
+			"s": [
+				"Silence",
+				"For the duration, no sound can be created within or pass through a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point you choose within range. Any creature or object entirely inside the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} has {@variantrule Immunity|XPHB} to Thunder damage, and creatures have the {@condition Deafened|XPHB} condition while entirely inside it. Casting a spell that includes a Verbal component is impossible there."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Spider Climb|XPHB",
+			"hint": {
+				"Spider Climb": "蛛行術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Spider Climb",
+				"Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and along ceilings, while leaving its hands free. The target also gains a {@variantrule Climb Speed|XPHB} equal to its {@variantrule Speed|XPHB}.",
+				"Using a Higher-Level Spell Slot",
+				"You can target one additional creature for each spell slot level above 2."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Spike Growth|XPHB",
+			"hint": {
+				"Spike Growth": "荊棘叢生"
+			},
+			"s": [
+				"Spike Growth",
+				"The ground in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point within range sprouts hard spikes and thorns. The area becomes {@variantrule Difficult Terrain|XPHB} for the duration. When a creature moves into or within the area, it takes {@damage 2d4} Piercing damage for every 5 feet it travels.",
+				"The transformation of the ground is camouflaged to look natural. Any creature that can't see the area when the spell is cast must take a {@action Search|XPHB} action and succeed on a Wisdom ({@skill Perception|XPHB} or {@skill Survival|XPHB}) check against your spell save DC to recognize the terrain as hazardous before entering it."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Spiritual Weapon|XPHB",
+			"hint": {
+				"Spiritual Weapon": "靈體武器",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Spiritual Weapon",
+				"You create a floating, spectral force that resembles a weapon of your choice and lasts for the duration. The force appears within range in a space of your choice, and you can immediately make one melee spell attack against one creature within 5 feet of the force. On a hit, the target takes Force damage equal to {@damage 1d8} plus your spellcasting ability modifier.",
+				"As a {@variantrule Bonus Action|XPHB} on your later turns, you can move the force up to 20 feet and repeat the attack against a creature within 5 feet of it.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 1d8|2-9|1d8} for every slot level above 2."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Suggestion|XPHB",
+			"hint": {
+				"Suggestion": "暗示術"
+			},
+			"s": [
+				"Suggestion",
+				"You suggest a course of activity—described in no more than 25 words—to one creature you can see within range that can hear and understand you. The suggestion must sound achievable and not involve anything that would obviously deal damage to the target or its allies. For example, you could say, \"Fetch the key to the cult's treasure vault, and give the key to me.\" Or you could say, \"Stop fighting, leave this library peacefully, and don't return.\"",
+				"The target must succeed on a Wisdom saving throw or have the {@condition Charmed|XPHB} condition for the duration or until you or your allies deal damage to the target. The {@condition Charmed|XPHB} target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for the target upon completing it."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Summon Beast|XPHB",
+			"hint": {
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Summon Beast",
+				"a feather, tuft of fur, and fish tail inside a gilded acorn worth 200+ GP",
+				"You call forth a bestial spirit. It manifests in an unoccupied space that you can see within range and uses the {@creature Bestial Spirit|XPHB} stat block. When you cast the spell, choose an environment: Air, Land, or Water. The creature resembles an animal of your choice that is native to the chosen environment, which determines certain details in its stat block. The creature disappears when it drops to 0 {@variantrule Hit Points|XPHB} or when the spell ends.",
+				"The creature is an ally to you and your allies. In combat, the creature shares your {@variantrule Initiative|XPHB} count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its movement to avoid danger.",
+				"Using a Higher-Level Spell Slot",
+				"Use the spell slot's level for the spell's level in the stat block."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Warding Bond|XPHB",
+			"hint": {
+				"Warding Bond": "守護聯結"
+			},
+			"s": [
+				"Warding Bond",
+				"a pair of platinum rings worth 50+ GP each, which you and the target must wear for the duration",
+				"You touch another creature that is willing and create a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has {@variantrule Resistance|XPHB} to all damage. Also, each time it takes damage, you take the same amount of damage.",
+				"The spell ends if you drop to 0 {@variantrule Hit Points|XPHB} or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Web|XPHB",
+			"hint": {
+				"Web": "蛛網術"
+			},
+			"s": [
+				"Web",
+				"You conjure a mass of sticky webbing at a point within range. The webs fill a 20-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} there for the duration. The webs are {@variantrule Difficult Terrain|XPHB}, and the area within them is {@variantrule Lightly Obscured|XPHB}.",
+				"If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.",
+				"The first time a creature enters the webs on a turn or starts its turn there, it must succeed on a Dexterity saving throw or have the {@condition Restrained|XPHB} condition while in the webs or until it breaks free.",
+				"A creature {@condition Restrained|XPHB} by the webs can take an action to make a Strength ({@skill Athletics|XPHB}) check against your spell save DC. If it succeeds, it is no longer {@condition Restrained|XPHB}.",
+				"The webs are flammable. Any 5-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} of webs exposed to fire burns away in 1 round, dealing {@damage 2d4} Fire damage to any creature that starts its turn in the fire."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Zone of Truth|XPHB",
+			"hint": {
+				"Zone of Truth": "誠實之域"
+			},
+			"s": [
+				"Zone of Truth",
+				"You create a magical zone that guards against deception in a 15-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there makes a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether a creature succeeds or fails on this save.",
+				"An affected creature is aware of the spell and can avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive yet must be truthful."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Animate Dead|XPHB",
+			"hint": {
+				"Animate Dead": "活化死屍",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Animate Dead",
+				"Choose a pile of bones or a corpse of a Medium or Small Humanoid within range. The target becomes an Undead creature: a {@creature Skeleton|XMM} if you chose bones or a {@creature Zombie|XMM} if you chose a corpse.",
+				"On each of your turns, you can take a {@variantrule Bonus Action|XPHB} to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a chamber or corridor. If you issue no commands, the creature takes the {@action Dodge|XPHB} action and moves only to avoid harm. Once given an order, the creature continues to follow it until its task is complete.",
+				"The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell rather than animating a new creature.",
+				"Using a Higher-Level Spell Slot",
+				"You animate or reassert control over two additional Undead creatures for each spell slot level above 3. Each of the creatures must come from a different corpse or pile of bones."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Aura of Vitality|XPHB",
+			"hint": {
+				"Aura of Vitality": "活力靈光"
+			},
+			"s": [
+				"Aura of Vitality",
+				"An aura radiates from you in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore {@dice 2d6} {@variantrule Hit Points|XPHB} to one creature in it."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Beacon of Hope|XPHB",
+			"hint": {
+				"Beacon of Hope": "希望信標"
+			},
+			"s": [
+				"Beacon of Hope",
+				"Choose any number of creatures within range. For the duration, each target has {@variantrule Advantage|XPHB} on Wisdom saving throws and {@variantrule Death Saving Throw|XPHB|Death Saving Throws} and regains the maximum number of {@variantrule Hit Points|XPHB} possible from any healing."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Bestow Curse|XPHB",
+			"hint": {
+				"Bestow Curse": "降咒",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Bestow Curse",
+				"You touch a creature, which must succeed on a Wisdom saving throw or become cursed for the duration. Until the curse ends, the target suffers one of the following effects of your choice:",
+				"Choose one ability. The target has {@variantrule Disadvantage|XPHB} on ability checks and saving throws made with that ability.",
+				"The target has {@variantrule Disadvantage|XPHB} on attack rolls against you.",
+				"In combat, the target must succeed on a Wisdom saving throw at the start of each of its turns or be forced to take the {@action Dodge|XPHB} action on that turn.",
+				"If you deal damage to the target with an attack roll or a spell, the target takes an extra {@damage 1d8} Necrotic damage.",
+				"Using a Higher-Level Spell Slot",
+				"If you cast this spell using a level 4 spell slot, you can maintain {@status Concentration|XPHB} on it for up to 10 minutes. If you use a level 5+ spell slot, the spell doesn't require {@status Concentration|XPHB}, and the duration becomes 8 hours (level 5-6 slot) or 24 hours (level 7-8 slot). If you use a level 9 spell slot, the spell lasts until dispelled."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Blinding Smite|XPHB",
+			"hint": {
+				"Blinding Smite": "致盲斬",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Blinding Smite",
+				"which you take immediately after hitting a creature with a Melee weapon or an {@variantrule Unarmed Strike|XPHB}",
+				"The target hit by the strike takes an extra {@damage 3d8} Radiant damage from the attack, and the target has the {@condition Blinded|XPHB} condition until the spell ends. At the end of each of its turns, the {@condition Blinded|XPHB} target makes a Constitution saving throw, ending the spell on itself on a success.",
+				"Using a Higher-Level Spell Slot",
+				"The extra damage increases by {@scaledamage 3d8|3-9|1d8} for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Blink|XPHB",
+			"hint": {
+				"Blink": "閃現術"
+			},
+			"s": [
+				"Blink",
+				"Roll {@dice 1d6} at the end of each of your turns for the duration. On a roll of 4-6, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell ends instantly if you are already on that plane). While on the Ethereal Plane, you can perceive the plane you left, which is cast in shades of gray, but you can't see anything there more than 60 feet away. You can affect and be affected only by other creatures on the Ethereal Plane, and creatures on the other plane can't perceive you unless they have a special ability that lets them perceive things on the Ethereal Plane.",
+				"You return to the other plane at the start of your next turn and when the spell ends if you are on the Ethereal Plane. You return to an unoccupied space of your choice that you can see within 10 feet of the space you left. If no unoccupied space is available within that range, you appear in the nearest unoccupied space."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Call Lightning|XPHB",
+			"hint": {
+				"Call Lightning": "召雷術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Call Lightning",
+				"A storm cloud appears at a point within range that you can see above yourself. It takes the shape of a {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} that is 10 feet tall with a 60-foot radius.",
+				"When you cast the spell, choose a point you can see under the cloud. A lightning bolt shoots from the cloud to that point. Each creature within 5 feet of that point makes a Dexterity saving throw, taking {@damage 3d10} Lightning damage on a failed save or half as much damage on a successful one.",
+				"Until the spell ends, you can take a {@action Magic|XPHB} action to call down lightning in that way again, targeting the same point or a different one.",
+				"If you're outdoors in a storm when you cast this spell, the spell gives you control over that storm instead of creating a new one. Under such conditions, the spell's damage increases by {@damage 1d10}.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 3d10|3-9|1d10} for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Clairvoyance|XPHB",
+			"hint": {
+				"Clairvoyance": "銳眼術"
+			},
+			"s": [
+				"Clairvoyance",
+				"a focus worth 100+ GP, either a jeweled horn for hearing or a glass eye for seeing",
+				"You create an {@condition Invisible|XPHB} sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The intangible, invulnerable sensor remains in place for the duration.",
+				"When you cast the spell, choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As a {@variantrule Bonus Action|XPHB}, you can switch between seeing and hearing.",
+				"A creature that sees the sensor (such as a creature benefiting from {@spell See Invisibility|XPHB} or {@sense Truesight|XPHB}) sees a luminous orb about the size of your fist."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Conjure Animals|XPHB",
+			"hint": {
+				"Conjure Animals": "召喚動物",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Conjure Animals",
+				"You conjure nature spirits that appear as a Large pack of spectral, intangible animals in an unoccupied space you can see within range. The pack lasts for the duration, and you choose the spirits' animal form, such as wolves, serpents, or birds.",
+				"You have {@variantrule Advantage|XPHB} on Strength saving throws while you're within 5 feet of the pack, and when you move on your turn, you can also move the pack up to 30 feet to an unoccupied space you can see.",
+				"Whenever the pack moves within 10 feet of a creature you can see and whenever a creature you can see enters a space within 10 feet of the pack or ends its turn there, you can force that creature to make a Dexterity saving throw. On a failed save, the creature takes {@damage 3d10} Slashing damage. A creature makes this save only once per turn.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 3d10|3-9|1d10} for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Conjure Barrage|XPHB",
+			"hint": {
+				"Conjure Barrage": "召喚箭幕",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Conjure Barrage",
+				"a Melee or Ranged weapon worth at least 1 CP",
+				"You brandish the weapon used to cast the spell and conjure similar spectral weapons (or ammunition appropriate to the weapon) that launch forward and then disappear. Each creature of your choice that you can see in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} makes a Dexterity saving throw, taking {@damage 5d8} Force damage on a failed save or half as much damage on a successful one.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 5d8|3-9|1d8} for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Counterspell|XPHB",
+			"hint": {
+				"Counterspell": "反制法術"
+			},
+			"s": [
+				"Counterspell",
+				"which you take when you see a creature within 60 feet of yourself casting a spell with Verbal, Somatic, or Material components",
+				"You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, {@variantrule Bonus Action|XPHB}, or {@variantrule Reaction|XPHB} used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Create Food and Water|XPHB",
+			"hint": {
+				"Create Food and Water": "創造飲食"
+			},
+			"s": [
+				"Create Food and Water",
+				"You create 45 pounds of food and 30 gallons of fresh water on the ground or in containers within range—both useful in fending off the hazards of malnutrition and dehydration. The food is bland but nourishing and looks like a food of your choice, and the water is clean. The food spoils after 24 hours if uneaten."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Crusader's Mantle|XPHB",
+			"hint": {
+				"Crusader's Mantle": "十字軍斗篷"
+			},
+			"s": [
+				"Crusader's Mantle",
+				"You radiate a magical aura in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. While in the aura, you and your allies each deal an extra {@damage 1d4} Radiant damage when hitting with a weapon or an {@variantrule Unarmed Strike|XPHB}."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Daylight|XPHB",
+			"hint": {
+				"Daylight": "晝明術"
+			},
+			"s": [
+				"Daylight",
+				"For the duration, sunlight spreads from a point within range and fills a 60-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere}. The sunlight's area is {@variantrule Bright Light|XPHB} and sheds {@variantrule Dim Light|XPHB} for an additional 60 feet.",
+				"Alternatively, you cast the spell on an object that isn't being worn or carried, causing the sunlight to fill a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from that object. Covering that object with something opaque, such as a bowl or helm, blocks the sunlight.",
+				"If any of this spell's area overlaps with an area of {@variantrule Darkness|XPHB} created by a spell of level 3 or lower, that other spell is dispelled."
+			]
+		}
+	]
+}

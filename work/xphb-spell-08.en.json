@@ -1,0 +1,362 @@
+{
+	"batch": "xphb-spell-08",
+	"items": [
+		{
+			"prop": "spell",
+			"key": "Dispel Magic|XPHB",
+			"hint": {
+				"Dispel Magic": "解除魔法",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Dispel Magic",
+				"Choose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level 4 or higher on the target, make an ability check using your spellcasting ability ({@dc 10} plus that spell's level). On a successful check, the spell ends.",
+				"Using a Higher-Level Spell Slot",
+				"You automatically end a spell on the target if the spell's level is equal to or less than the level of the spell slot you use."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Elemental Weapon|XPHB",
+			"hint": {
+				"Elemental Weapon": "元素武器",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Elemental Weapon",
+				"A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra {@damage 1d4} damage of the chosen type when it hits.",
+				"Using a Higher-Level Spell Slot",
+				"If you use a level 5-6 spell slot, the bonus to attack rolls increases to +2, and the extra damage increases to {@damage 2d4}. If you use a level 7+ spell slot, the bonus increases to +3, and the extra damage increases to {@damage 3d4}."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Fear|XPHB",
+			"hint": {
+				"Fear": "恐懼術"
+			},
+			"s": [
+				"Fear",
+				"Each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} must succeed on a Wisdom saving throw or drop whatever it is holding and have the {@condition Frightened|XPHB} condition for the duration.",
+				"A {@condition Frightened|XPHB} creature takes the {@action Dash|XPHB} action and moves away from you by the safest route on each of its turns unless there is nowhere to move. If the creature ends its turn in a space where it doesn't have line of sight to you, the creature makes a Wisdom saving throw. On a successful save, the spell ends on that creature."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Feign Death|XPHB",
+			"hint": {
+				"Feign Death": "假死術"
+			},
+			"s": [
+				"Feign Death",
+				"You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.",
+				"For the duration, the target appears dead to outward inspection and to spells used to determine the target's status. The target has the {@condition Blinded|XPHB} and {@condition Incapacitated|XPHB} conditions, and its {@variantrule Speed|XPHB} is 0.",
+				"The target also has {@variantrule Resistance|XPHB} to all damage except Psychic damage, and it has {@variantrule Immunity|XPHB} to the {@condition Poisoned|XPHB} condition."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Fireball|XPHB",
+			"hint": {
+				"Fireball": "火球術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Fireball",
+				"A bright streak flashes from you to a point you choose within range and then blossoms with a low roar into a fiery explosion. Each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point makes a Dexterity saving throw, taking {@damage 8d6} Fire damage on a failed save or half as much damage on a successful one.",
+				"Flammable objects in the area that aren't being worn or carried start {@hazard burning|XPHB}.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 8d6|3-9|1d6} for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Fly|XPHB",
+			"hint": {
+				"Fly": "飛行術",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Fly",
+				"You touch a willing creature. For the duration, the target gains a {@variantrule Fly Speed|XPHB} of 60 feet and can hover. When the spell ends, the target falls if it is still aloft unless it can stop the fall.",
+				"Using a Higher-Level Spell Slot",
+				"You can target one additional creature for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Gaseous Form|XPHB",
+			"hint": {
+				"Gaseous Form": "氣化形體",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Gaseous Form",
+				"A willing creature you touch shape-shifts, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends on the target if it drops to 0 {@variantrule Hit Points|XPHB} or if it takes a {@action Magic|XPHB} action to end the spell on itself.",
+				"While in this form, the target's only method of movement is a {@variantrule Fly Speed|XPHB} of 10 feet, and it can hover. The target can enter and occupy the space of another creature. The target has {@variantrule Resistance|XPHB} to Bludgeoning, Piercing, and Slashing damage; it has {@variantrule Immunity|XPHB} to the {@condition Prone|XPHB} condition; and it has {@variantrule Advantage|XPHB} on Strength, Dexterity, and Constitution saving throws. The target can pass through narrow openings, but it treats liquids as though they were solid surfaces.",
+				"The target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. Finally, the target can't attack or cast spells.",
+				"Using a Higher-Level Spell Slot",
+				"You can target one additional creature for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Glyph of Warding|XPHB",
+			"hint": {
+				"Glyph of Warding": "守衛銘文",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Glyph of Warding",
+				"powdered diamond worth 200+ GP, which the spell consumes",
+				"You inscribe a glyph that later unleashes a magical effect. You inscribe it either on a surface (such as a table or a section of floor) or within an object that can be closed (such as a book or chest) to conceal the glyph. The glyph can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.",
+				"The glyph is nearly imperceptible and requires a successful Wisdom ({@skill Perception|XPHB}) check against your spell save DC to notice.",
+				"When you inscribe the glyph, you set its trigger and choose whether it's an explosive rune or a spell glyph, as explained below.",
+				"Set the Trigger",
+				"You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, common triggers include touching or stepping on the glyph, removing another object covering it, or approaching within a certain distance of it. For glyphs inscribed within an object, common triggers include opening that object or seeing the glyph. Once a glyph is triggered, this spell ends.",
+				"You can refine the trigger so that only creatures of certain types activate it (for example, the glyph could be set to affect Aberrations). You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password.",
+				"Explosive Rune",
+				"When triggered, the glyph erupts with magical energy in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on the glyph. Each creature in the area makes a Dexterity saving throw. A creature takes {@damage 5d8} Acid, Cold, Fire, Lightning, or Thunder damage (your choice when you create the glyph) on a failed save or half as much damage on a successful one.",
+				"Spell Glyph",
+				"You can store a prepared spell of level 3 or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way.",
+				"When the glyph is triggered, the stored spell takes effect. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons {@variantrule Hostile [Attitude]|XPHB|Hostile} creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires {@status Concentration|XPHB}, it lasts until the end of its full duration.",
+				"Using a Higher-Level Spell Slot",
+				"The damage of an explosive rune increases by {@scaledamage 5d8|3-9|1d8} for each spell slot level above 3. If you create a spell glyph, you can store any spell of up to the same level as the spell slot you use for the Glyph of Warding."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Haste|XPHB",
+			"hint": {
+				"Haste": "加速術"
+			},
+			"s": [
+				"Haste",
+				"Choose a willing creature that you can see within range. Until the spell ends, the target's {@variantrule Speed|XPHB} is doubled, it gains a +2 bonus to {@variantrule Armor Class|XPHB}, it has {@variantrule Advantage|XPHB} on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used to take only the {@action Attack|XPHB} (one attack only), {@action Dash|XPHB}, {@action Disengage|XPHB}, {@action Hide|XPHB}, or {@action Utilize|XPHB} action.",
+				"When the spell ends, the target is {@condition Incapacitated|XPHB} and has a {@variantrule Speed|XPHB} of 0 until the end of its next turn, as a wave of lethargy washes over it."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Hunger of Hadar|XPHB",
+			"hint": {
+				"Hunger of Hadar": "哈達之欲",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Hunger of Hadar",
+				"You open a gateway to the Far Realm, a region infested with unspeakable horrors. A 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} of {@variantrule Darkness|XPHB} appears, centered on a point within range and lasting for the duration. The {@variantrule Sphere [Area of Effect]|XPHB|Sphere} is {@variantrule Difficult Terrain|XPHB}, and it is filled with strange whispers and slurping noises, which can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within it have the {@condition Blinded|XPHB} condition.",
+				"Any creature that starts its turn in the area takes {@damage 2d6} Cold damage. Any creature that ends its turn there must succeed on a Dexterity saving throw or take {@damage 2d6} Acid damage from otherworldly tentacles.",
+				"Using a Higher-Level Spell Slot",
+				"The Cold or Acid damage (your choice) increases by {@scaledamage 2d6|3-9|1d6} for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Hypnotic Pattern|XPHB",
+			"hint": {
+				"Hypnotic Pattern": "催眠圖紋"
+			},
+			"s": [
+				"Hypnotic Pattern",
+				"You create a twisting pattern of colors in a 30-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} within range. The pattern appears for a moment and vanishes. Each creature in the area who can see the pattern must succeed on a Wisdom saving throw or have the {@condition Charmed|XPHB} condition for the duration. While {@condition Charmed|XPHB}, the creature has the {@condition Incapacitated|XPHB} condition and a {@variantrule Speed|XPHB} of 0.",
+				"The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Leomund's Tiny Hut|XPHB",
+			"hint": {
+				"Leomund's Tiny Hut": "李歐蒙小屋"
+			},
+			"s": [
+				"Leomund's Tiny Hut",
+				"A 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} springs into existence around you and remains stationary for the duration. The spell fails when you cast it if the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} isn't big enough to fully encapsulate all creatures in its area.",
+				"Creatures and objects within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} when you cast the spell can move through it freely. All other creatures and objects are barred from passing through it. Spells of level 3 or lower can't be cast through it, and the effects of such spells can't extend into it.",
+				"The atmosphere inside the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} is comfortable and dry, regardless of the weather outside. Until the spell ends, you can command the interior to have {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB} (no action required). The {@variantrule Emanation [Area of Effect]|XPHB|Emanation} is opaque from the outside and of any color you choose, but it's transparent from the inside.",
+				"The spell ends early if you leave the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or if you cast it again."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Lightning Arrow|XPHB",
+			"hint": {
+				"Lightning Arrow": "閃電箭矢",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Lightning Arrow",
+				"which you take immediately after hitting or missing a target with a ranged attack using a weapon",
+				"As your attack hits or misses the target, the weapon or ammunition you're using transforms into a lightning bolt. Instead of taking any damage or other effects from the attack, the target takes {@damage 4d8} Lightning damage on a hit or half as much damage on a miss. Each creature within 10 feet of the target then makes a Dexterity saving throw, taking {@damage 2d8} Lightning damage on a failed save or half as much damage on a successful one.",
+				"The weapon or ammunition then returns to its normal form.",
+				"Using a Higher-Level Spell Slot",
+				"The damage for both effects of the spell increases by {@scaledamage 4d8;2d8|3-9|1d8} for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Lightning Bolt|XPHB",
+			"hint": {
+				"Lightning Bolt": "閃電束",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Lightning Bolt",
+				"A stroke of lightning forming a 100-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line} blasts out from you in a direction you choose. Each creature in the {@variantrule Line [Area of Effect]|XPHB|Line} makes a Dexterity saving throw, taking {@damage 8d6} Lightning damage on a failed save or half as much damage on a successful one.",
+				"Using a Higher-Level Spell Slot",
+				"The damage increases by {@scaledamage 8d6|3-9|1d6} for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Magic Circle|XPHB",
+			"hint": {
+				"Magic Circle": "防護法陣",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Magic Circle",
+				"salt and powdered silver worth 100+ GP, which the spell consumes",
+				"You create a 10-foot-radius, 20-foot-tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} intersects with the floor or other surface.",
+				"Choose one or more of the following types of creatures: Celestials, Elementals, Fey, Fiends, or Undead. The circle affects a creature of the chosen type in the following ways:",
+				"The creature can't willingly enter the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.",
+				"The creature has {@variantrule Disadvantage|XPHB} on attack rolls against targets within the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}.",
+				"Targets within the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} can't be possessed by or gain the {@condition Charmed|XPHB} or {@condition Frightened|XPHB} condition from the creature.",
+				"Each time you cast this spell, you can cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} and protecting targets outside it.",
+				"Using a Higher-Level Spell Slot",
+				"The duration increases by 1 hour for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Major Image|XPHB",
+			"hint": {
+				"Major Image": "強效幻影",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Major Image",
+				"You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot {@variantrule Cube [Area of Effect]|XPHB|Cube}. The image appears at a spot that you can see within range and lasts for the duration. It seems real, including sounds, smells, and temperature appropriate to the thing depicted, but it can't deal damage or cause conditions.",
+				"If you are within range of the illusion, you can take a {@action Magic|XPHB} action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example.",
+				"Physical interaction with the image reveals it to be an illusion, for things can pass through it. A creature that takes a {@action Study|XPHB} action to examine the image can determine that it is an illusion with a successful Intelligence ({@skill Investigation|XPHB}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature.",
+				"Using a Higher-Level Spell Slot",
+				"The spell lasts until dispelled, without requiring {@status Concentration|XPHB}, if cast with a level 4+ spell slot."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Mass Healing Word|XPHB",
+			"hint": {
+				"Mass Healing Word": "群體治癒真言",
+				"Using a Higher-Level Spell Slot": "使用更高環階的法術欄位"
+			},
+			"s": [
+				"Mass Healing Word",
+				"Up to six creatures of your choice that you can see within range regain {@variantrule Hit Points|XPHB} equal to {@dice 2d4} plus your spellcasting ability modifier.",
+				"Using a Higher-Level Spell Slot",
+				"The healing increases by {@scaledice 2d4|3-9|1d4} for each spell slot level above 3."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Meld into Stone|XPHB",
+			"hint": {
+				"Meld into Stone": "融身入石"
+			},
+			"s": [
+				"Meld into Stone",
+				"You step into a stone object or surface large enough to fully contain your body, merging yourself and your equipment with the stone for the duration. You must touch the stone to do so. Nothing of your presence remains visible or otherwise detectable by nonmagical senses.",
+				"While merged with the stone, you can't see what occurs outside it, and any Wisdom ({@skill Perception|XPHB}) checks you make to hear sounds outside it are made with {@variantrule Disadvantage|XPHB}. You remain aware of the passage of time and can cast spells on yourself while merged in the stone. You can use 5 feet of movement to leave the stone where you entered it, which ends the spell. You otherwise can't move.",
+				"Minor physical damage to the stone doesn't harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals {@damage 6d6} Force damage to you. The stone's complete destruction (or transmutation into a different substance) expels you and deals 50 Force damage to you. If expelled, you move into an unoccupied space closest to where you first entered and have the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Nondetection|XPHB",
+			"hint": {
+				"Nondetection": "迴避偵測"
+			},
+			"s": [
+				"Nondetection",
+				"a pinch of diamond dust worth 25+ GP, which the spell consumes",
+				"For the duration, you hide a target that you touch from Divination spells. The target can be a willing creature, or it can be a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any Divination spell or perceived through magical scrying sensors."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Phantom Steed|XPHB",
+			"hint": {
+				"Phantom Steed": "魅影駒"
+			},
+			"s": [
+				"Phantom Steed",
+				"A Large, quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, and it is equipped with a saddle, bit, and bridle. Any of the equipment created by the spell vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.",
+				"For the duration, you or a creature you choose can ride the steed. The steed uses the {@creature Riding Horse|XMM} stat block, except it has a {@variantrule Speed|XPHB} of 100 feet and can travel 13 miles in an hour. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends early if the steed takes any damage."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Plant Growth|XPHB",
+			"hint": {
+				"Plant Growth": "植物滋長"
+			},
+			"s": [
+				"Plant Growth",
+				"Overgrowth",
+				"Enrichment",
+				"This spell channels vitality into plants. The casting time you use determines whether the spell has the Overgrowth or the Enrichment effect below.",
+				"Overgrowth",
+				"Choose a point within range. All normal plants in a 100-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point become thick and overgrown. A creature moving through that area must spend 4 feet of movement for every 1 foot it moves. You can exclude one or more areas of any size within the spell's area from being affected.",
+				"Enrichment",
+				"All plants in a half-mile radius centered on a point within range become enriched for 365 days. The plants yield twice the normal amount of food when harvested. They can benefit from only one Plant Growth per year."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Protection from Energy|XPHB",
+			"hint": {
+				"Protection from Energy": "防護能量"
+			},
+			"s": [
+				"Protection from Energy",
+				"For the duration, the willing creature you touch has {@variantrule Resistance|XPHB} to one damage type of your choice: Acid, Cold, Fire, Lightning, or Thunder."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Remove Curse|XPHB",
+			"hint": {
+				"Remove Curse": "移除詛咒"
+			},
+			"s": [
+				"Remove Curse",
+				"At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's {@variantrule Attunement|XPHB} to the object so it can be removed or discarded."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Revivify|XPHB",
+			"hint": {
+				"Revivify": "回生術"
+			},
+			"s": [
+				"Revivify",
+				"a diamond worth 300+ GP, which the spell consumes",
+				"You touch a creature that has died within the last minute. That creature revives with 1 {@variantrule Hit Points|XPHB|Hit Point}. This spell can't revive a creature that has died of old age, nor does it restore any missing body parts."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Sending|XPHB",
+			"hint": {
+				"Sending": "短訊術"
+			},
+			"s": [
+				"Sending",
+				"You send a short message of 25 words or fewer to a creature you have met or a creature described to you by someone who has met it. The target hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables targets to understand the meaning of your message.",
+				"You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a {@chance 5|||Message lost!|Message arrives} chance that the message doesn't arrive. You know if the delivery fails.",
+				"Upon receiving your message, a creature can block your ability to reach it again with this spell for 8 hours. If you try to send another message during that time, you learn that you are blocked, and the spell fails."
+			]
+		}
+	]
+}
