@@ -1,0 +1,1370 @@
+{
+	"Antimatter Rifle|DMG": {
+		"name": "反物質步槍",
+		"ENG_name": "Antimatter Rifle",
+		"type": "R",
+		"technology": "Firearm",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"age": "Futuristic",
+		"rarity": "None",
+		"weight": "10",
+		"dmg1": "{@dice 6d8}",
+		"dmgType": "N",
+		"property": [
+			"AF",
+			"RLD",
+			"2H"
+		],
+		"range": "120/360",
+		"reload": "2",
+		"source": "DMG",
+		"page": 268
+	},
+	"Arrow|PHB": {
+		"name": "箭",
+		"ENG_name": "Arrow",
+		"type": "A",
+		"ammunition": true,
+		"rarity": "None",
+		"value": "5 cp",
+		"weight": "0.05",
+		"source": "PHB",
+		"page": 150
+	},
+	"Arrows (20)|PHB": {
+		"name": "箭(20)",
+		"ENG_name": "Arrows (20)",
+		"type": "A",
+		"ammunition": true,
+		"rarity": "None",
+		"value": "1 gp",
+		"weight": "1",
+		"source": "PHB",
+		"page": 150,
+		"quantity": 20
+	},
+	"Automatic Pistol|DMG": {
+		"name": "自動手槍",
+		"ENG_name": "Automatic Pistol",
+		"type": "R",
+		"technology": "Firearm",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"age": "Modern",
+		"rarity": "None",
+		"weight": "3",
+		"dmg1": "{@dice 2d6}",
+		"dmgType": "P",
+		"property": [
+			"AF",
+			"RLD"
+		],
+		"range": "50/150",
+		"reload": "15",
+		"source": "DMG",
+		"page": 268
+	},
+	"Automatic Rifle|DMG": {
+		"name": "自動步槍",
+		"ENG_name": "Automatic Rifle",
+		"type": "R",
+		"technology": "Firearm",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"age": "Modern",
+		"rarity": "None",
+		"weight": "8",
+		"dmg1": "{@dice 2d8}",
+		"dmgType": "P",
+		"property": [
+			"AF",
+			"BF",
+			"RLD",
+			"2H"
+		],
+		"range": "80/240",
+		"reload": "30",
+		"source": "DMG",
+		"page": 268
+	},
+	"Battleaxe|PHB": {
+		"name": "戰斧",
+		"ENG_name": "Battleaxe",
+		"type": "M",
+		"axe": true,
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "4",
+		"dmg1": "{@dice 1d8}",
+		"dmg2": "{@dice 1d10}",
+		"dmgType": "S",
+		"property": [
+			"V"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Blowgun|PHB": {
+		"name": "吹箭筒",
+		"ENG_name": "Blowgun",
+		"type": "R",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "1",
+		"dmg1": "1",
+		"dmgType": "P",
+		"property": [
+			"A",
+			"LD"
+		],
+		"range": "25/100",
+		"source": "PHB",
+		"page": 149
+	},
+	"Blowgun Needle|PHB": {
+		"name": "吹箭",
+		"ENG_name": "Blowgun Needle",
+		"type": "A",
+		"ammunition": true,
+		"rarity": "None",
+		"value": "2 cp",
+		"weight": "0.02",
+		"source": "PHB",
+		"page": 150
+	},
+	"Blowgun Needles (50)|PHB": {
+		"name": "吹箭(50)",
+		"ENG_name": "Blowgun Needles (50)",
+		"type": "A",
+		"ammunition": true,
+		"rarity": "None",
+		"value": "1 gp",
+		"weight": "1",
+		"source": "PHB",
+		"page": 150,
+		"quantity": 50
+	},
+	"Breastplate|PHB": {
+		"name": "護胸甲",
+		"ENG_name": "Breastplate",
+		"type": "MA",
+		"armor": true,
+		"rarity": "None",
+		"value": "400 gp",
+		"weight": "20",
+		"ac": 14,
+		"source": "PHB",
+		"page": 145,
+		"entries": [
+			"這套護甲是由一塊墊著柔軟皮革的合身鐵製胸板所構成。雖然它相對來說保護不了手和腳，但這套護甲能在為穿載者的重要器官提供良好保護的同時，而不太會妨礙穿載者的行動。"
+		]
+	},
+	"Chain Mail|PHB": {
+		"name": "鎖子甲",
+		"ENG_name": "Chain Mail",
+		"type": "HA",
+		"armor": true,
+		"rarity": "None",
+		"value": "75 gp",
+		"weight": "55",
+		"ac": 16,
+		"strength": "13",
+		"stealth": true,
+		"source": "PHB",
+		"page": 145,
+		"entries": [
+			"由交織的鐵環製成，鎖子甲還包括了一層襯墊在鎖甲下方的布料以避免擦傷和分散衝擊力。整套護甲還包含了一雙鐵手套。"
+		]
+	},
+	"Chain Shirt|PHB": {
+		"name": "鏈甲衫",
+		"ENG_name": "Chain Shirt",
+		"type": "MA",
+		"armor": true,
+		"rarity": "None",
+		"value": "50 gp",
+		"weight": "20",
+		"ac": 13,
+		"source": "PHB",
+		"page": 144,
+		"entries": [
+			"由交織的鐵環製成，鏈甲衫被穿在層層布料或皮革之間。這套護甲為穿戴者的上半身提供了適當的保護，且透過外層衣物蒙住鐵環彼此摩擦所發出的聲音。"
+		]
+	},
+	"Club|PHB": {
+		"name": "棍棒",
+		"ENG_name": "Club",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "1 sp",
+		"weight": "2",
+		"dmg1": "{@dice 1d4}",
+		"dmgType": "B",
+		"property": [
+			"L"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Crossbow Bolt|PHB": {
+		"name": "弩矢",
+		"ENG_name": "Crossbow Bolt",
+		"type": "A",
+		"ammunition": true,
+		"rarity": "None",
+		"value": "5 cp",
+		"weight": "0.075",
+		"source": "PHB",
+		"page": 150
+	},
+	"Crossbow Bolts (20)|PHB": {
+		"name": "弩矢(20)",
+		"ENG_name": "Crossbow Bolts (20)",
+		"type": "A",
+		"ammunition": true,
+		"rarity": "None",
+		"value": "1 gp",
+		"weight": "1.5",
+		"source": "PHB",
+		"page": 150,
+		"quantity": 20
+	},
+	"Crystal|PHB": {
+		"name": "水晶",
+		"ENG_name": "Crystal",
+		"type": "SCF",
+		"scfType": "arcane",
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "1",
+		"source": "PHB",
+		"page": 151
+	},
+	"Dagger|PHB": {
+		"name": "匕首",
+		"ENG_name": "Dagger",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "2 gp",
+		"weight": "1",
+		"dmg1": "{@dice 1d4}",
+		"dmgType": "P",
+		"property": [
+			"F",
+			"L",
+			"T"
+		],
+		"range": "20/60",
+		"source": "PHB",
+		"page": 149
+	},
+	"Dart|PHB": {
+		"name": "飛鏢",
+		"ENG_name": "Dart",
+		"type": "R",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "5 cp",
+		"weight": "0.25",
+		"dmg1": "{@dice 1d4}",
+		"dmgType": "P",
+		"property": [
+			"F",
+			"T"
+		],
+		"range": "20/60",
+		"source": "PHB",
+		"page": 149
+	},
+	"Double-Bladed Scimitar|UAWGE": {
+		"name": "雙刃彎刀",
+		"ENG_name": "Double-Bladed Scimitar",
+		"type": "M",
+		"weapon": true,
+		"sword": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "100 gp",
+		"weight": "6",
+		"dmg1": "{@dice 2d4}",
+		"dmg2": "{@dice 1d4}",
+		"dmgType": "S",
+		"property": [
+			"S",
+			"2H"
+		],
+		"source": "UAWGE",
+		"page": 74,
+		"entries": [
+			{
+				"type": "entries",
+				"name": "特殊",
+				"entries": [
+					"當你採取攻擊動作且以雙手使用雙刃彎刀進行攻擊時，你可以使用附贈動作以利用該武器另一側的刀刃進行一次近戰攻擊。這個攻擊使用和主要攻擊相同的屬性調整值。這個攻擊所使用的武器傷害骰為d4，且該攻擊造成劈砍傷害。"
+				]
+			}
+		]
+	},
+	"Energy Cell|DMG": {
+		"name": "能量電池",
+		"ENG_name": "Energy Cell",
+		"type": "AF",
+		"ammunition": true,
+		"age": "Futuristic",
+		"rarity": "None",
+		"weight": "0.3125",
+		"source": "DMG",
+		"page": 268
+	},
+	"Flail|PHB": {
+		"name": "連枷",
+		"ENG_name": "Flail",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "2",
+		"dmg1": "{@dice 1d8}",
+		"dmgType": "B",
+		"source": "PHB",
+		"page": 149
+	},
+	"Glaive|PHB": {
+		"name": "長柄刀",
+		"ENG_name": "Glaive",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "20 gp",
+		"weight": "6",
+		"dmg1": "{@dice 1d10}",
+		"dmgType": "S",
+		"property": [
+			"H",
+			"R",
+			"2H"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Greataxe|PHB": {
+		"name": "巨斧",
+		"ENG_name": "Greataxe",
+		"type": "M",
+		"weapon": true,
+		"axe": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "30 gp",
+		"weight": "7",
+		"dmg1": "{@dice 1d12}",
+		"dmgType": "S",
+		"property": [
+			"H",
+			"2H"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Greatclub|PHB": {
+		"name": "巨棍",
+		"ENG_name": "Greatclub",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "2 sp",
+		"weight": "10",
+		"dmg1": "{@dice 1d8}",
+		"dmgType": "B",
+		"property": [
+			"2H"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Greatsword|PHB": {
+		"name": "巨劍",
+		"ENG_name": "Greatsword",
+		"type": "M",
+		"weapon": true,
+		"sword": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "50 gp",
+		"weight": "6",
+		"dmg1": "{@dice 2d6}",
+		"dmgType": "S",
+		"property": [
+			"H",
+			"2H"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Halberd|PHB": {
+		"name": "斧槍",
+		"ENG_name": "Halberd",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "20 gp",
+		"weight": "6",
+		"dmg1": "{@dice 1d10}",
+		"dmgType": "S",
+		"property": [
+			"H",
+			"R",
+			"2H"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Half Plate Armor|PHB": {
+		"name": "半身板甲",
+		"ENG_name": "Half Plate Armor",
+		"type": "MA",
+		"armor": true,
+		"rarity": "None",
+		"value": "750 gp",
+		"weight": "40",
+		"ac": 15,
+		"stealth": true,
+		"source": "PHB",
+		"page": 145,
+		"entries": [
+			"半身板甲由一片片特別形狀的鐵板所構成，覆蓋穿載者大部分的上半身。它對腿部提供的保護僅止於以皮帶固定的護脛。"
+		]
+	},
+	"Hand Crossbow|PHB": {
+		"name": "手弩",
+		"ENG_name": "Hand Crossbow",
+		"type": "R",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "75 gp",
+		"weight": "3",
+		"dmg1": "{@dice 1d6}",
+		"dmgType": "P",
+		"property": [
+			"A",
+			"L",
+			"LD"
+		],
+		"range": "30/120",
+		"source": "PHB",
+		"page": 149
+	},
+	"Handaxe|PHB": {
+		"name": "手斧",
+		"ENG_name": "Handaxe",
+		"type": "M",
+		"weapon": true,
+		"axe": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "5 gp",
+		"weight": "2",
+		"dmg1": "{@dice 1d6}",
+		"dmgType": "S",
+		"property": [
+			"L",
+			"T"
+		],
+		"range": "20/60",
+		"source": "PHB",
+		"page": 149
+	},
+	"Heavy Crossbow|PHB": {
+		"name": "重弩",
+		"ENG_name": "Heavy Crossbow",
+		"type": "R",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "50 gp",
+		"weight": "18",
+		"dmg1": "{@dice 1d10}",
+		"dmgType": "P",
+		"property": [
+			"A",
+			"H",
+			"LD",
+			"2H"
+		],
+		"range": "100/400",
+		"source": "PHB",
+		"page": 149
+	},
+	"Hide Armor|PHB": {
+		"name": "生皮甲",
+		"ENG_name": "Hide Armor",
+		"type": "MA",
+		"armor": true,
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "12",
+		"ac": 12,
+		"source": "PHB",
+		"page": 144,
+		"entries": [
+			"這套粗糙的護甲由厚毛和生皮製成。它常見於蠻人部族，邪惡類人，和其他因欠缺適當的工具和材料而無法製造較好防具的族群。"
+		]
+	},
+	"Hunting Rifle|DMG": {
+		"name": "獵槍",
+		"ENG_name": "Hunting Rifle",
+		"type": "R",
+		"technology": "Firearm",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"age": "Modern",
+		"rarity": "None",
+		"weight": "8",
+		"dmg1": "{@dice 2d10}",
+		"dmgType": "P",
+		"property": [
+			"AF",
+			"RLD",
+			"2H"
+		],
+		"range": "80/240",
+		"reload": "5",
+		"source": "DMG",
+		"page": 268
+	},
+	"Javelin|PHB": {
+		"name": "標槍",
+		"ENG_name": "Javelin",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "5 sp",
+		"weight": "2",
+		"dmg1": "{@dice 1d6}",
+		"dmgType": "P",
+		"property": [
+			"T"
+		],
+		"range": "30/120",
+		"source": "PHB",
+		"page": 149
+	},
+	"Lance|PHB": {
+		"name": "騎槍",
+		"ENG_name": "Lance",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "6",
+		"dmg1": "{@dice 1d12}",
+		"dmgType": "P",
+		"property": [
+			"R",
+			"S"
+		],
+		"source": "PHB",
+		"page": 149,
+		"entries": [
+			{
+				"type": "entries",
+				"name": "特殊",
+				"entries": [
+					"你在使用騎槍攻擊距離你5呎內的目標時承受劣勢。並且當你非騎乘時，你必須使用雙手以持握騎槍。"
+				]
+			}
+		]
+	},
+	"Laser Pistol|DMG": {
+		"name": "雷射手槍",
+		"ENG_name": "Laser Pistol",
+		"type": "R",
+		"technology": "Firearm",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"age": "Futuristic",
+		"rarity": "None",
+		"weight": "2",
+		"dmg1": "{@dice 3d6}",
+		"dmgType": "R",
+		"property": [
+			"AF",
+			"RLD"
+		],
+		"range": "30/120",
+		"reload": "50",
+		"source": "DMG",
+		"page": 268
+	},
+	"Laser Rifle|DMG": {
+		"name": "雷射步槍",
+		"ENG_name": "Laser Rifle",
+		"type": "R",
+		"technology": "Firearm",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"age": "Futuristic",
+		"rarity": "None",
+		"weight": "7",
+		"dmg1": "{@dice 3d8}",
+		"dmgType": "R",
+		"property": [
+			"AF",
+			"RLD",
+			"2H"
+		],
+		"range": "100/300",
+		"reload": "30",
+		"source": "DMG",
+		"page": 268
+	},
+	"Leather Armor|PHB": {
+		"name": "皮甲",
+		"ENG_name": "Leather Armor",
+		"type": "LA",
+		"armor": true,
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "10",
+		"ac": 11,
+		"source": "PHB",
+		"page": 144,
+		"entries": [
+			"這套護甲的護胸和肩甲是由浸泡過滾油而硬化的皮革製成。護甲的其他部分則是用較柔軟且具彈性的材料製作。"
+		]
+	},
+	"Light Crossbow|PHB": {
+		"name": "輕弩",
+		"ENG_name": "Light Crossbow",
+		"type": "R",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "25 gp",
+		"weight": "5",
+		"dmg1": "{@dice 1d8}",
+		"dmgType": "P",
+		"property": [
+			"A",
+			"LD",
+			"2H"
+		],
+		"range": "80/320",
+		"source": "PHB",
+		"page": 149
+	},
+	"Light Hammer|PHB": {
+		"name": "輕錘",
+		"ENG_name": "Light Hammer",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "2 gp",
+		"weight": "2",
+		"dmg1": "{@dice 1d4}",
+		"dmgType": "B",
+		"property": [
+			"L",
+			"T"
+		],
+		"range": "20/60",
+		"source": "PHB",
+		"page": 149
+	},
+	"Longbow|PHB": {
+		"name": "長弓",
+		"ENG_name": "Longbow",
+		"type": "R",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "50 gp",
+		"weight": "2",
+		"dmg1": "{@dice 1d8}",
+		"dmgType": "P",
+		"property": [
+			"A",
+			"H",
+			"2H"
+		],
+		"range": "150/600",
+		"source": "PHB",
+		"page": 149
+	},
+	"Longsword|PHB": {
+		"name": "長劍",
+		"ENG_name": "Longsword",
+		"type": "M",
+		"weapon": true,
+		"sword": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "15 gp",
+		"weight": "3",
+		"dmg1": "{@dice 1d8}",
+		"dmg2": "{@dice 1d10}",
+		"dmgType": "S",
+		"property": [
+			"V"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Mace|PHB": {
+		"name": "硬頭錘",
+		"ENG_name": "Mace",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "5 gp",
+		"weight": "4",
+		"dmg1": "{@dice 1d6}",
+		"dmgType": "B",
+		"source": "PHB",
+		"page": 149
+	},
+	"Maul|PHB": {
+		"name": "巨鎚",
+		"ENG_name": "Maul",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "10",
+		"dmg1": "{@dice 2d6}",
+		"dmgType": "B",
+		"property": [
+			"H",
+			"2H"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Modern Bullets (10)|DMG": {
+		"name": "現代子彈(10)",
+		"ENG_name": "Modern Bullets (10)",
+		"type": "AF",
+		"ammunition": true,
+		"age": "Modern",
+		"rarity": "None",
+		"weight": "1",
+		"source": "DMG",
+		"page": 268,
+		"quantity": 10
+	},
+	"Morningstar|PHB": {
+		"name": "釘頭錘",
+		"ENG_name": "Morningstar",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "15 gp",
+		"weight": "4",
+		"dmg1": "{@dice 1d8}",
+		"dmgType": "P",
+		"source": "PHB",
+		"page": 149
+	},
+	"Musket|DMG": {
+		"name": "鳥銃",
+		"ENG_name": "Musket",
+		"type": "R",
+		"technology": "Firearm",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"age": "Renaissance",
+		"rarity": "None",
+		"value": "500 gp",
+		"weight": "10",
+		"dmg1": "{@dice 1d12}",
+		"dmgType": "P",
+		"property": [
+			"AF",
+			"LD",
+			"2H"
+		],
+		"range": "40/120",
+		"source": "DMG",
+		"page": 268
+	},
+	"Net|PHB": {
+		"name": "捕網",
+		"ENG_name": "Net",
+		"type": "R",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "1 gp",
+		"weight": "3",
+		"property": [
+			"S",
+			"T"
+		],
+		"range": "5/15",
+		"source": "PHB",
+		"page": 149,
+		"entries": [
+			{
+				"type": "entries",
+				"name": "特殊",
+				"entries": [
+					"體型為大型或更小的生物在被捕網命中時將被{@condition 束縛}，直到他被釋放。捕網對於不定型生物、或體型為巨型或以上的生物沒有任何效果。生物可以使用他的動作以進行一次DC10的力量檢定，成功則釋放他自己或位於他觸及距離內的另一個生物。對捕網（AC10）造成5點劈砍傷害同樣可以釋放該生物而不會傷害到他。當你使用動作、附贈動作、或反應以捕網攻擊時，無論你原本可以進行幾次攻擊，你都只能進行一次攻擊。"
+				]
+			}
+		]
+	},
+	"Orb|PHB": {
+		"name": "法球",
+		"ENG_name": "Orb",
+		"type": "SCF",
+		"scfType": "arcane",
+		"rarity": "None",
+		"value": "25 gp",
+		"weight": "3",
+		"source": "PHB",
+		"page": 151
+	},
+	"Padded Armor|PHB": {
+		"name": "綿甲",
+		"ENG_name": "Padded Armor",
+		"type": "LA",
+		"armor": true,
+		"rarity": "None",
+		"value": "5 gp",
+		"weight": "8",
+		"ac": 11,
+		"stealth": true,
+		"source": "PHB",
+		"page": 144,
+		"entries": [
+			"綿甲是由一層層縫起的布料和棉絮所製成。"
+		]
+	},
+	"Pike|PHB": {
+		"name": "長柄槍",
+		"ENG_name": "Pike",
+		"rarity": "None",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"value": "5 gp",
+		"weight": "18",
+		"dmg1": "{@dice 1d10}",
+		"dmgType": "P",
+		"property": [
+			"H",
+			"R",
+			"2H"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Pistol|DMG": {
+		"name": "手槍",
+		"ENG_name": "Pistol",
+		"type": "R",
+		"technology": "Firearm",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"age": "Renaissance",
+		"rarity": "None",
+		"value": "250 gp",
+		"weight": "3",
+		"dmg1": "{@dice 1d10}",
+		"dmgType": "P",
+		"property": [
+			"AF",
+			"LD"
+		],
+		"range": "30/90",
+		"source": "DMG",
+		"page": 268
+	},
+	"Plate Armor|PHB": {
+		"name": "全身板甲",
+		"ENG_name": "Plate Armor",
+		"type": "HA",
+		"armor": true,
+		"rarity": "None",
+		"value": "1500 gp",
+		"weight": "65",
+		"ac": 18,
+		"strength": "15",
+		"stealth": true,
+		"source": "PHB",
+		"page": 145,
+		"entries": [
+			"全身板甲由特定形狀、互相扣鎖的鐵板所構成以覆蓋全身。整套全身板甲還包括一雙鐵手套、重皮靴、附面甲的頭盔、和護甲底下墊著的厚厚襯墊。皮帶和索具將整套護甲的重量平均分佈到全身。"
+		]
+	},
+	"Quarterstaff|PHB": {
+		"name": "長棍",
+		"ENG_name": "Quarterstaff",
+		"type": "M",
+		"technology": "Staff",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "2 sp",
+		"weight": "4",
+		"dmg1": "{@dice 1d6}",
+		"dmg2": "{@dice 1d8}",
+		"dmgType": "B",
+		"property": [
+			"V"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Rapier|PHB": {
+		"name": "刺劍",
+		"ENG_name": "Rapier",
+		"type": "M",
+		"weapon": true,
+		"sword": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "25 gp",
+		"weight": "2",
+		"dmg1": "{@dice 1d8}",
+		"dmgType": "P",
+		"property": [
+			"F"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Renaissance Bullets (10)|DMG": {
+		"name": "文藝復興子彈(10)",
+		"ENG_name": "Renaissance Bullets (10)",
+		"type": "AF",
+		"ammunition": true,
+		"age": "Renaissance",
+		"rarity": "None",
+		"value": "3 gp",
+		"weight": "2",
+		"source": "DMG",
+		"page": 268,
+		"quantity": 10
+	},
+	"Revolver|DMG": {
+		"name": "左輪手槍",
+		"ENG_name": "Revolver",
+		"type": "R",
+		"technology": "Firearm",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"age": "Modern",
+		"rarity": "None",
+		"weight": "3",
+		"dmg1": "{@dice 2d8}",
+		"dmgType": "P",
+		"property": [
+			"AF",
+			"RLD"
+		],
+		"range": "40/120",
+		"reload": "6",
+		"source": "DMG",
+		"page": 268
+	},
+	"Ring Mail|PHB": {
+		"name": "環甲",
+		"ENG_name": "Ring Mail",
+		"type": "HA",
+		"armor": true,
+		"rarity": "None",
+		"value": "30 gp",
+		"weight": "40",
+		"ac": 14,
+		"stealth": true,
+		"source": "PHB",
+		"page": 145,
+		"entries": [
+			"這套護甲是縫上了重鐵環的皮甲。護甲上的鐵環能有效幫助抵擋劍和斧的斬擊。環甲略遜於鎖子甲，且因此通常被無法負擔更好護甲的人們穿戴。"
+		]
+	},
+	"Rod|PHB": {
+		"name": "權杖",
+		"ENG_name": "Rod",
+		"type": "SCF",
+		"scfType": "arcane",
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "2",
+		"source": "PHB",
+		"page": 151
+	},
+	"Scale Mail|PHB": {
+		"name": "鱗甲",
+		"ENG_name": "Scale Mail",
+		"type": "MA",
+		"armor": true,
+		"rarity": "None",
+		"value": "50 gp",
+		"weight": "45",
+		"ac": 14,
+		"stealth": true,
+		"source": "PHB",
+		"page": 144,
+		"entries": [
+			"這套護甲由皮革製的上衣及綁腿（或許還帶有一件短裙）構成，皮革表面覆蓋著彼此交疊的金屬片，就像是魚鱗一樣。整套護甲還包含了一雙鐵手套。"
+		]
+	},
+	"Scimitar|PHB": {
+		"name": "彎刀",
+		"ENG_name": "Scimitar",
+		"type": "M",
+		"weapon": true,
+		"sword": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "25 gp",
+		"weight": "3",
+		"dmg1": "{@dice 1d6}",
+		"dmgType": "S",
+		"property": [
+			"F",
+			"L"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Shield|PHB": {
+		"name": "盾牌",
+		"ENG_name": "Shield",
+		"type": "S",
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "6",
+		"ac": 2,
+		"source": "PHB",
+		"page": 144,
+		"entries": [
+			"盾牌由木頭或金屬打造，且可以用一隻手攜帶。持握一面盾牌會增加你的護甲等級2點。你同時只能受益於一面盾牌的效果。"
+		]
+	},
+	"Shortbow|PHB": {
+		"name": "短弓",
+		"ENG_name": "Shortbow",
+		"type": "R",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "25 gp",
+		"weight": "2",
+		"dmg1": "{@dice 1d6}",
+		"dmgType": "P",
+		"property": [
+			"A",
+			"2H"
+		],
+		"range": "80/320",
+		"source": "PHB",
+		"page": 149
+	},
+	"Shortsword|PHB": {
+		"name": "短劍",
+		"ENG_name": "Shortsword",
+		"type": "M",
+		"weapon": true,
+		"sword": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "2",
+		"dmg1": "{@dice 1d6}",
+		"dmgType": "P",
+		"property": [
+			"F",
+			"L"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Shotgun|DMG": {
+		"name": "霰彈槍",
+		"ENG_name": "Shotgun",
+		"type": "R",
+		"technology": "Firearm",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"age": "Modern",
+		"rarity": "None",
+		"weight": "7",
+		"dmg1": "{@dice 2d8}",
+		"dmgType": "P",
+		"property": [
+			"AF",
+			"RLD",
+			"2H"
+		],
+		"range": "30/90",
+		"reload": "2",
+		"source": "DMG",
+		"page": 268
+	},
+	"Sickle|PHB": {
+		"name": "鐮刀",
+		"ENG_name": "Sickle",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "1 gp",
+		"weight": "2",
+		"dmg1": "{@dice 1d4}",
+		"dmgType": "S",
+		"property": [
+			"L"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Sling|PHB": {
+		"name": "投石索",
+		"ENG_name": "Sling",
+		"type": "R",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "1 sp",
+		"dmg1": "{@dice 1d4}",
+		"dmgType": "B",
+		"property": [
+			"A"
+		],
+		"range": "30/120",
+		"source": "PHB",
+		"page": 149
+	},
+	"Sling Bullet|PHB": {
+		"name": "投石索彈丸",
+		"ENG_name": "Sling Bullet",
+		"type": "A",
+		"ammunition": true,
+		"rarity": "None",
+		"value": "0.2 cp",
+		"weight": "0.075",
+		"source": "PHB",
+		"page": 150
+	},
+	"Sling Bullets (20)|PHB": {
+		"name": "投石索彈丸(20)",
+		"ENG_name": "Sling Bullets (20)",
+		"type": "A",
+		"ammunition": true,
+		"rarity": "None",
+		"value": "4 cp",
+		"weight": "1.5",
+		"source": "PHB",
+		"page": 150,
+		"quantity": 20
+	},
+	"Spear|PHB": {
+		"name": "矛",
+		"ENG_name": "Spear",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "1 gp",
+		"weight": "3",
+		"dmg1": "{@dice 1d6}",
+		"dmg2": "{@dice 1d8}",
+		"dmgType": "P",
+		"property": [
+			"T",
+			"V"
+		],
+		"range": "20/60",
+		"source": "PHB",
+		"page": 149
+	},
+	"Spiked Armor|SCAG": {
+		"name": "釘刺甲",
+		"ENG_name": "Spiked Armor",
+		"type": "MA",
+		"armor": true,
+		"value": "75 gp",
+		"weight": "45",
+		"ac": 14,
+		"stealth": true,
+		"rarity": "Unknown",
+		"source": "SCAG",
+		"page": 121,
+		"entries": [
+			"釘刺甲是由矮人製造的一種稀有中甲。它是由被通常以金屬打造的尖刺覆蓋的皮製大衣所構成。"
+		]
+	},
+	"Splint Armor|PHB": {
+		"name": "條板甲",
+		"ENG_name": "Splint Armor",
+		"type": "HA",
+		"armor": true,
+		"rarity": "None",
+		"value": "200 gp",
+		"weight": "60",
+		"ac": 17,
+		"strength": "15",
+		"stealth": true,
+		"source": "PHB",
+		"page": 145,
+		"entries": [
+			"這套護甲是由狹長的直鐵條鉚接於穿在墊衣外層的皮襯上所製成。並以靈活的鎖子甲保護著關節。"
+		]
+	},
+	"Staff|PHB": {
+		"name": "法杖",
+		"ENG_name": "Staff",
+		"type": "SCF",
+		"technology": "Staff",
+		"scfType": "arcane",
+		"rarity": "None",
+		"value": "5 gp",
+		"weight": "4",
+		"source": "PHB",
+		"page": 151,
+		"entries": [
+			"{@note 法杖和木質法杖都可以被當作{@item 長棍|phb}使用。}"
+		]
+	},
+	"Studded Leather Armor|PHB": {
+		"name": "鑲釘皮甲",
+		"ENG_name": "Studded Leather Armor",
+		"type": "LA",
+		"armor": true,
+		"rarity": "None",
+		"value": "45 gp",
+		"weight": "13",
+		"ac": 12,
+		"source": "PHB",
+		"page": 144,
+		"entries": [
+			"由強韌而柔軟的皮革製成，鑲釘皮甲被以緊密的鉚釘或尖刺進一步強化。"
+		]
+	},
+	"Trident|PHB": {
+		"name": "三叉戟",
+		"ENG_name": "Trident",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "5 gp",
+		"weight": "4",
+		"dmg1": "{@dice 1d6}",
+		"dmg2": "{@dice 1d8}",
+		"dmgType": "P",
+		"property": [
+			"T",
+			"V"
+		],
+		"range": "20/60",
+		"source": "PHB",
+		"page": 149
+	},
+	"Wand|PHB": {
+		"name": "魔杖",
+		"ENG_name": "Wand",
+		"type": "SCF",
+		"scfType": "arcane",
+		"rarity": "None",
+		"value": "10 gp",
+		"weight": "1",
+		"source": "PHB",
+		"page": 151
+	},
+	"War Pick|PHB": {
+		"name": "戰鎬",
+		"ENG_name": "War Pick",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "5 gp",
+		"weight": "2",
+		"dmg1": "{@dice 1d8}",
+		"dmgType": "P",
+		"source": "PHB",
+		"page": 149
+	},
+	"Warhammer|PHB": {
+		"name": "戰錘",
+		"ENG_name": "Warhammer",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "15 gp",
+		"weight": "2",
+		"dmg1": "{@dice 1d8}",
+		"dmg2": "{@dice 1d10}",
+		"dmgType": "B",
+		"property": [
+			"V"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Whip|PHB": {
+		"name": "鞭",
+		"ENG_name": "Whip",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Martial",
+		"rarity": "None",
+		"value": "2 gp",
+		"weight": "3",
+		"dmg1": "{@dice 1d4}",
+		"dmgType": "S",
+		"property": [
+			"F",
+			"R"
+		],
+		"source": "PHB",
+		"page": 149
+	},
+	"Yklwa|TOA": {
+		"name": "伊庫瓦短矛",
+		"ENG_name": "Yklwa",
+		"type": "M",
+		"weapon": true,
+		"weaponCategory": "Simple",
+		"rarity": "None",
+		"value": "1 gp",
+		"weight": "3",
+		"dmg1": "{@dice 1d8}",
+		"dmgType": "P",
+		"property": [
+			"T"
+		],
+		"range": "10/30",
+		"source": "ToA",
+		"page": 32,
+		"entries": [
+			"A yklwa (pronounced YICK-ul-wah) is a simple melee weapon that is the traditional weapon of Chultan warriors. A yklwa consists of a 3-foot wooden shaft with a steel or stone blade up to 18 inches long. Although it has the thrown weapon property, the yklwa is not well balanced for throwing."
+		]
+	}
+}

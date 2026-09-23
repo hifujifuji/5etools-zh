@@ -1,0 +1,480 @@
+{
+	"Arcane Focus|PHB": {
+		"name": "奧術法器",
+		"ENG_name": "Arcane Focus",
+		"type": "SCF",
+		"scfType": "arcane",
+		"rarity": "None",
+		"source": "PHB",
+		"page": 151,
+		"items": [
+			"水晶|phb",
+			"法球|phb",
+			"權杖|phb",
+			"法杖|phb",
+			"魔杖|phb"
+		],
+		"focus": [
+			"Sorcerer",
+			"Warlock",
+			"Wizard"
+		]
+	},
+	"Druidic Focus|PHB": {
+		"name": "德魯伊法器",
+		"ENG_name": "Druidic Focus",
+		"type": "SCF",
+		"scfType": "druid",
+		"rarity": "None",
+		"source": "PHB",
+		"page": 151,
+		"items": [
+			"槲寄生枝|phb",
+			"圖騰|phb",
+			"木質法杖|phb",
+			"紫杉魔杖|phb"
+		],
+		"focus": [
+			"Druid"
+		]
+	},
+	"Holy Symbol|PHB": {
+		"name": "聖徽",
+		"ENG_name": "Holy Symbol",
+		"type": "SCF",
+		"scfType": "holy",
+		"rarity": "None",
+		"source": "PHB",
+		"page": 151,
+		"items": [
+			"護符|phb",
+			"徽章|phb",
+			"聖物匣|phb"
+		],
+		"focus": [
+			"Cleric",
+			"Paladin"
+		]
+	},
+	"Potion of Resistance|DMG": {
+		"name": "抗性藥水",
+		"ENG_name": "Potion of Resistance",
+		"type": "P",
+		"weight": "0.5",
+		"tier": "Minor",
+		"rarity": "Uncommon",
+		"source": "DMG",
+		"page": 188,
+		"items": [
+			"酸蝕抗性藥水",
+			"寒冰抗性藥水",
+			"火焰抗性藥水",
+			"力場抗性藥水",
+			"閃電抗性藥水",
+			"死靈抗性藥水",
+			"毒素抗性藥水",
+			"精神抗性藥水",
+			"光耀抗性藥水",
+			"雷鳴抗性藥水"
+		],
+		"lootTables": [
+			"魔法物品表B"
+		]
+	},
+	"Spell Scroll|DMG": {
+		"name": "法術卷軸",
+		"ENG_name": "Spell Scroll",
+		"type": "SC",
+		"rarity": "Varies",
+		"source": "DMG",
+		"page": 200,
+		"items": [
+			"法術卷軸(戲法)",
+			"法術卷軸(1環)",
+			"法術卷軸(2環)",
+			"法術卷軸(3環)",
+			"法術卷軸(4環)",
+			"法術卷軸(5環)",
+			"法術卷軸(6環)",
+			"法術卷軸(7環)",
+			"法術卷軸(8環)",
+			"法術卷軸(9環)"
+		]
+	},
+	"Scroll of Protection|DMG": {
+		"name": "防護卷軸",
+		"ENG_name": "Scroll of Protection",
+		"type": "SC",
+		"tier": "Minor",
+		"rarity": "Rare",
+		"source": "DMG",
+		"page": 199,
+		"items": [
+			"防護異怪卷軸",
+			"防護野獸卷軸",
+			"防護天界生物卷軸",
+			"防護元素卷軸",
+			"防護精類卷軸",
+			"防護邪魔卷軸",
+			"防護植物卷軸",
+			"防護不死生物卷軸"
+		],
+		"lootTables": [
+			"魔法物品表C"
+		]
+	},
+	"Elemental Gem|DMG": {
+		"name": "元素寶石",
+		"ENG_name": "Elemental Gem",
+		"wondrous": true,
+		"tier": "Minor",
+		"rarity": "Uncommon",
+		"source": "DMG",
+		"page": 167,
+		"attachedSpells": [
+			"conjure elemental"
+		],
+		"items": [
+			"元素寶石，藍寶石",
+			"元素寶石，翡翠",
+			"元素寶石，紅剛玉",
+			"元素寶石，黃鑽石"
+		],
+		"lootTables": [
+			"魔法物品表B"
+		]
+	},
+	"Dragon Scale Mail|DMG": {
+		"name": "龍鱗甲",
+		"ENG_name": "Dragon Scale Mail",
+		"type": "MA",
+		"armor": true,
+		"weight": "45",
+		"ac": 14,
+		"stealth": true,
+		"tier": "Major",
+		"rarity": "Very Rare",
+		"source": "DMG",
+		"page": 165,
+		"reqAttune": true,
+		"items": [
+			"黑龍鱗甲",
+			"藍龍鱗甲",
+			"黃銅龍鱗甲",
+			"青銅龍鱗甲",
+			"赤銅龍鱗甲",
+			"金龍鱗甲",
+			"綠龍鱗甲",
+			"紅龍鱗甲",
+			"銀龍鱗甲",
+			"白龍鱗甲"
+		],
+		"lootTables": [
+			"魔法物品表H"
+		]
+	},
+	"Armor of Resistance|DMG": {
+		"name": "抗性護甲",
+		"ENG_name": "Armor of Resistance",
+		"type": "GV",
+		"tier": "Major",
+		"rarity": "Rare",
+		"source": "DMG",
+		"page": 162,
+		"reqAttune": true,
+		"items": [
+			"酸蝕抗性護甲",
+			"寒冰抗性護甲",
+			"火焰抗性護甲",
+			"力場抗性護甲",
+			"閃電抗性護甲",
+			"死靈抗性護甲",
+			"毒素抗性護甲",
+			"精神抗性護甲",
+			"光耀抗性護甲",
+			"雷鳴抗性護甲"
+		]
+	},
+	"Ring of Resistance|DMG": {
+		"name": "抗性戒指",
+		"ENG_name": "Ring of Resistance",
+		"type": "RG",
+		"tier": "Major",
+		"rarity": "Rare",
+		"source": "DMG",
+		"page": 192,
+		"reqAttune": true,
+		"items": [
+			"酸蝕抗性戒指",
+			"寒冰抗性戒指",
+			"火焰抗性戒指",
+			"力場抗性戒指",
+			"閃電抗性戒指",
+			"死靈抗性戒指",
+			"毒素抗性戒指",
+			"精神抗性戒指",
+			"光耀抗性戒指",
+			"雷鳴抗性戒指"
+		],
+		"lootTables": [
+			"魔法物品表G"
+		]
+	},
+	"Sword of Answering|DMG": {
+		"name": "應答之劍",
+		"ENG_name": "Sword of Answering",
+		"type": "M",
+		"weaponCategory": "Martial",
+		"baseItem": "長劍|phb",
+		"weight": "3",
+		"dmg1": "{@dice 1d8}",
+		"dmg2": "{@dice 1d10}",
+		"dmgType": "S",
+		"property": [
+			"V"
+		],
+		"tier": "Major",
+		"rarity": "Legendary",
+		"source": "DMG",
+		"page": 206,
+		"reqAttune": true,
+		"items": [
+			"應答之劍(解答者)",
+			"應答之劍(頂嘴者)",
+			"應答之劍(定論者)",
+			"應答之劍(譏諷者)",
+			"應答之劍(喝斥者)",
+			"應答之劍(答覆者)",
+			"應答之劍(反駁者)",
+			"應答之劍(傷害者)",
+			"應答之劍(毀滅者)"
+		],
+		"lootTables": [
+			"魔法物品表I"
+		]
+	},
+	"Carpet of Flying|DMG": {
+		"name": "飛天魔毯",
+		"ENG_name": "Carpet of Flying",
+		"wondrous": true,
+		"tier": "Major",
+		"rarity": "Very Rare",
+		"source": "DMG",
+		"page": 157,
+		"items": [
+			"飛天魔毯，3呎x5呎",
+			"飛天魔毯，4呎x6呎",
+			"飛天魔毯，5呎x7呎",
+			"飛天魔毯，6呎x9呎"
+		],
+		"lootTables": [
+			"魔法物品表H"
+		]
+	},
+	"Bag of Tricks|DMG": {
+		"name": "魔術袋",
+		"ENG_name": "Bag of Tricks",
+		"wondrous": true,
+		"weight": "0.5",
+		"tier": "Major",
+		"rarity": "Uncommon",
+		"source": "DMG",
+		"page": 154,
+		"items": [
+			"魔術袋，灰色",
+			"魔術袋，鐵鏽色",
+			"魔術袋，棕褐色"
+		]
+	},
+	"Belt of Giant Strength|DMG": {
+		"name": "巨人力量腰帶",
+		"ENG_name": "Belt of Giant Strength",
+		"wondrous": true,
+		"rarity": "Varies",
+		"source": "DMG",
+		"page": 155,
+		"reqAttune": true,
+		"items": [
+			"雲巨人力量腰帶",
+			"火巨人力量腰帶",
+			"霜巨人力量腰帶",
+			"山丘巨人力量腰帶",
+			"石巨人力量腰帶",
+			"風暴巨人力量腰帶"
+		]
+	},
+	"Potion of Giant Strength|DMG": {
+		"name": "巨人之力藥水",
+		"ENG_name": "Potion of Giant Strength",
+		"type": "P",
+		"weight": "0.5",
+		"rarity": "Varies",
+		"source": "DMG",
+		"page": 187,
+		"items": [
+			"雲巨人之力藥水",
+			"火巨人之力藥水",
+			"霜巨人之力藥水",
+			"山丘巨人之力藥水",
+			"石巨人之力藥水",
+			"風暴巨人之力藥水"
+		]
+	},
+	"Manual of Golems|DMG": {
+		"name": "魔像手冊",
+		"ENG_name": "Manual of Golems",
+		"wondrous": true,
+		"weight": "5",
+		"tier": "Major",
+		"rarity": "Very Rare",
+		"source": "DMG",
+		"page": 180,
+		"items": [
+			"黏土魔像手冊",
+			"血肉魔像手冊",
+			"鋼鐵魔像手冊",
+			"石魔像手冊"
+		],
+		"lootTables": [
+			"魔法物品表H"
+		]
+	},
+	"Figurine of Wondrous Power|DMG": {
+		"name": "異能塑像",
+		"ENG_name": "Figurine of Wondrous Power",
+		"wondrous": true,
+		"rarity": "Varies",
+		"source": "DMG",
+		"page": 169,
+		"items": [
+			"異能塑像，青銅獅鷲",
+			"異能塑像，黑檀木蒼蠅",
+			"異能塑像，黃金獅子",
+			"異能塑像，象牙山羊",
+			"異能塑像，大理石象",
+			"異能塑像，黑曜石駒",
+			"異能塑像，瑪瑙犬",
+			"異能塑像，蛇紋石貓頭鷹",
+			"異能塑像，白銀渡鴉"
+		]
+	},
+	"Horn of Valhalla|DMG": {
+		"name": "瓦爾哈拉號角",
+		"ENG_name": "Horn of Valhalla",
+		"wondrous": true,
+		"rarity": "Varies",
+		"source": "DMG",
+		"page": 175,
+		"items": [
+			"瓦爾哈拉號角，黃銅",
+			"瓦爾哈拉號角，青銅",
+			"瓦爾哈拉號角，黑鐵",
+			"瓦爾哈拉號角，白銀"
+		]
+	},
+	"Quaal's Feather Token|DMG": {
+		"name": "誇爾羽符",
+		"ENG_name": "Quaal's Feather Token",
+		"wondrous": true,
+		"rarity": "Rare",
+		"source": "DMG",
+		"page": 188,
+		"items": [
+			"誇爾羽符，錨",
+			"誇爾羽符，鳥",
+			"誇爾羽符，扇",
+			"誇爾羽符，天鵝船",
+			"誇爾羽符，樹",
+			"誇爾羽符，鞭"
+		],
+		"lootTables": [
+			"魔法物品表C"
+		]
+	},
+	"Ioun Stone|DMG": {
+		"name": "艾恩石",
+		"ENG_name": "Ioun Stone",
+		"wondrous": true,
+		"rarity": "Varies",
+		"source": "DMG",
+		"page": 176,
+		"reqAttune": true,
+		"items": [
+			"艾恩石，吸收",
+			"艾恩石，機敏",
+			"艾恩石，警覺",
+			"艾恩石，堅韌",
+			"艾恩石，強效吸收",
+			"艾恩石，洞悉",
+			"艾恩石，才智",
+			"艾恩石，統御",
+			"艾恩石，精通",
+			"艾恩石，防護",
+			"艾恩石，再生",
+			"艾恩石，儲法",
+			"艾恩石，力量",
+			"艾恩石，維生"
+		]
+	},
+	"Instrument of the Bards|DMG": {
+		"name": "吟遊詩人樂器",
+		"ENG_name": "Instrument of the Bards",
+		"type": "INS",
+		"wondrous": true,
+		"rarity": "Varies",
+		"source": "DMG",
+		"page": 176,
+		"reqAttune": "由吟遊詩人",
+		"items": [
+			"吟遊詩人樂器，安斯翠瑟豎琴",
+			"吟遊詩人樂器，凱納斯曼陀林",
+			"吟遊詩人樂器，科里里拉琴",
+			"吟遊詩人樂器，安眠魯特琴",
+			"吟遊詩人樂器，麥克-弗瑞米西特琴",
+			"吟遊詩人樂器，佛克路坎三弦琴",
+			"吟遊詩人樂器，奧萊姆豎琴"
+		]
+	},
+	"Ring of Elemental Command|DMG": {
+		"name": "命令元素戒指",
+		"ENG_name": "Ring of Elemental Command",
+		"type": "RG",
+		"tier": "Major",
+		"rarity": "Legendary",
+		"source": "DMG",
+		"page": 190,
+		"reqAttune": true,
+		"charges": 5,
+		"items": [
+			"命令氣元素戒指",
+			"命令土元素戒指",
+			"命令火元素戒指",
+			"命令水元素戒指"
+		]
+	},
+	"Armor of Vulnerability|DMG": {
+		"name": "易傷護甲",
+		"ENG_name": "Armor of Vulnerability",
+		"type": "HA",
+		"armor": true,
+		"weight": "65",
+		"ac": 18,
+		"strength": "15",
+		"stealth": true,
+		"tier": "Major",
+		"rarity": "Rare",
+		"source": "DMG",
+		"page": 152,
+		"reqAttune": true,
+		"curse": true,
+		"baseItem": "全身板甲|phb",
+		"items": [
+			"易傷護甲（鈍擊）",
+			"易傷護甲（穿刺）",
+			"易傷護甲（劈砍）"
+		],
+		"lootTables": [
+			"魔法物品表G"
+		]
+	}
+}

@@ -1,0 +1,4059 @@
+{
+	"Artificer Specialist|Artificer|UAARTIFICER|1": {
+		"name": "奇械師專業",
+		"ENG_name": "Artificer Specialist",
+		"entries": [
+			"在1級時，你從可選列表中選擇一種奇械師專業。你的選擇將會在1級、3級、9級、14級、和19級時賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Magic Item Analysis|Artificer|UAARTIFICER|1": {
+		"name": "魔法物品分析",
+		"ENG_name": "Magic Item Analysis",
+		"entries": [
+			"從1級開始，你對於魔法物品的理解讓你得以分析並理解它們的秘密。你知曉奇械師法術：{@spell 偵測魔法}和{@spell 鑑定術}，且你可以將它們做為儀式施放。當你使用這個職業能力施放{@spell 鑑定術}時，你並不需要提供材料構材。"
+		]
+	},
+	"Tool Expertise|Artificer|UAARTIFICER|2": {
+		"name": "工具專精",
+		"ENG_name": "Tool Expertise",
+		"entries": [
+			"從2級開始，你的熟練加值在使用任何本職業賦予你的工具熟練項所進行的任何屬性檢定中變為兩倍。"
+		]
+	},
+	"Wondrous Invention|Artificer|UAARTIFICER|2": {
+		"name": "奇物發明",
+		"ENG_name": "Wondrous Invention",
+		"entries": [
+			"在2級時，你得以使用你製造的魔法物品。從下列的2級物品表中選擇一個魔法物品。製造魔法物品是一項困難的任務。當你從這個能力獲得一個魔法物品時，它反映著透過長時間的研究、加工、以及實驗，讓你終於得以完成這個物品。你被假定在你的閒暇時間致力打造這個物品，並在你升級時使之得以完工。當你在此職業升至5級、10級、15級、和20級時，你將得以完成另一件你所選擇的魔法物品。這個物品必須從你當前奇械師等級或更低等級的物品列表中選擇。這些魔法物品的詳情記載於《地下城主指南》。",
+			{
+				"type": "entries",
+				"name": "2級",
+				"entries": [
+					"{@item 次元袋}、{@item 水下呼吸帽}、{@item 漂浮光球}、{@item 夜視護目鏡}、{@item 傳訊石}"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "5級",
+				"entries": [
+					"{@item 煉金壺}、{@item 通曉語言頭盔}、{@item 顯像提燈}、{@item 游泳戒指}、{@item 雜貨法袍}、{@item 攀爬繩}、{@item 偵測魔法魔杖}、{@item 探秘魔杖}"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "10級",
+				"entries": [
+					"{@item 魔豆之袋}、{@item 開門鐘琴}、{@item 無盡水瓶}、{@item 微視鏡片}、{@item 摺疊船}、{@item 霍華德的便利袋}"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "15級",
+				"entries": [
+					"{@item 跑跳之靴}、{@item 射手護腕}、{@item 護盾胸針}、{@item 飛天掃帚}、{@item 易容帽}、{@item 蛛行拖鞋}"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "20級",
+				"entries": [
+					"{@item 鷹眼鏡片}、{@item 光彩奪目寶石}、{@item 避矢奪箭手套}、{@item 游泳攀爬手套}、{@item 跳躍戒指}、{@item 心靈護盾戒指}、{@item 飛行之翼}"
+				]
+			}
+		]
+	},
+	"Masterwork Feature|Artificer|UAARTIFICER|3": {
+		"name": "專業傑作",
+		"ENG_name": "Masterwork Feature",
+		"entries": [
+			"在3級時，你獲得一個由你奇械師專業所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Spellcasting|Artificer|UAARTIFICER|3": {
+		"name": "施法",
+		"ENG_name": "Spellcasting",
+		"entries": [
+			"做為你魔法研究的一部份，你在3級時獲得了施放法術的能力。你所學會的法術範圍相當受限，主要集中在改造生物和物體或是創造物品上。",
+			{
+				"type": "entries",
+				"name": "法術位",
+				"entries": [
+					"奇械師表中顯示了你有多少個法術位可以用來施放你一環或更高環的法術。要施放其中一個法術，你必須消耗一個與該法術環階相同或更高的法術位。你在完成一次長休後恢復所有你花費掉的法術位。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "一環或更高環的已知法術",
+				"entries": [
+					"你知曉三個從{@filter 奇械師法術列表|spells|class=artificer (uaa)}中自選的1環法術。奇械師表中的已知法術欄位顯示你將在何時學習到更多自選的奇械師法術。每個這些法術的環階都必須符合你所擁有奇械師法術位的環階。此外，當你提升這個職業的等級時，你可以從奇械師的法術列表中挑選一個法術來取代一個你從這個能力中獲得的已知法術，而它的環階也必須符合你所擁有奇械師法術位的環階。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法屬性",
+				"entries": [
+					"智力是你施展奇械師法術的施法屬性；你對於魔法背後理論的理解讓你能以優異的技巧操控這些法術。每當奇械師法術提及你的施法屬性時，你將使用你的智力。此外，當決定你奇械師法術的豁免DC、以及使用奇械師法術進行攻擊檢定時，你使用你的智力調整值。",
+					{
+						"type": "abilityDc",
+						"name": "法術",
+						"attributes": [
+							"int"
+						]
+					},
+					{
+						"type": "abilityAttackMod",
+						"name": "法術",
+						"attributes": [
+							"int"
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法法器",
+				"entries": [
+					"你可以使用一個{@item 奧術法器|phb}來做為你施放奇械師法術的法器。（參見《玩家手冊》第五章以查閱更多的奧術法器選項）"
+				]
+			}
+		]
+	},
+	"Infuse Magic|Artificer|UAARTIFICER|4": {
+		"name": "注入魔法",
+		"ENG_name": "Infuse Magic",
+		"entries": [
+			"從4級開始，你獲得將你的奇械師法術引導注入物品的能力，以供稍後使用。當你施放一個施法時間為一個動作的奇械師法術，你可以將它的施法時間增加至1分鐘。若你這麼做，且在施法期間持握一個非魔法物品，則你可以消耗其法術位，但不讓該法術的效果發揮作用。取而代之的是，若該物品尚未因此能力而容納一個法術，則該法術將被轉移到該物品中，以供稍後使用。",
+			"任何在此之後持握這個物品的生物，若它具有至少6點智力值，將可以使用一個動作啟動物品內容納的法術。該法術將使用你的施法屬性、以啟動該物品的生物做為目標。若該法術能夠選擇超過一個生物做為目標，則由啟動這個物品的生物選擇額外的目標。若該法術具有效果範圍，則其將以該物品為中心。若該法術的射程為自身，它將選擇啟動該物品的生物做為目標。",
+			"當你透過這個方式注入一個法術，它將必須在8小時內被使用。在這段時間後，該法術的魔力便會消散並被浪費。你同時只能有有限數量的法術被注入，其數量等同於你的智力調整值。"
+		]
+	},
+	"Ability Score Improvement|Artificer|UAARTIFICER|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級、8級、12級、16級、和18級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。"
+		]
+	},
+	"Superior Attunement|Artificer|UAARTIFICER|5": {
+		"name": "卓越同調",
+		"ENG_name": "Superior Attunement",
+		"entries": [
+			"在5級時，你對於魔法物品的卓越理解讓你精通於它們的使用方式。你可以同時和最多四個魔法物品維持同調，而非原本的三個。在15級時，同調數量的限制將提升至五個魔法物品。"
+		]
+	},
+	"Wondrous Invention|Artificer|UAARTIFICER|5": {
+		"name": "奇物發明",
+		"ENG_name": "Wondrous Invention",
+		"entries": [
+			"在5級時，你藉由你的奇物發明能力製造另一個魔法物品。"
+		]
+	},
+	"Mechanical Servant|Artificer|UAARTIFICER|6": {
+		"name": "機械僕從",
+		"ENG_name": "Mechanical Servant",
+		"entries": [
+			"在6級時，你對於工藝的研究和精通讓你得以製造一個機械樸從。這個僕從是構裝體，且會毫不猶豫地服從你的命令，並在戰鬥中保護你。儘管魔法驅動了它的創造過程，這個僕從本身並帶魔法性。你被假定已經研究製造這個僕役了好一段時間，並在你升至6級後的一次短休或長休期間終於完工。",
+			"選擇一個挑戰等級為2或更低的大型野獸。這個僕役將使用該野獸的遊戲數據，且只要它的外型符合其遊戲數據，則它的外貌將由你自由決定。除此之外，它具有下列的調整：",
+			{
+				"type": "list",
+				"items": [
+					"它的生物類型為構裝體，而非野獸。",
+					"它不會被{@condition 魅惑}。",
+					"它免疫於毒素傷害和{@condition 中毒}狀態。",
+					"若它原本沒有的話，它將獲得60呎範圍的黑暗視覺。",
+					"它理解你在創造它時所知道的所有語言，但它並不會說。",
+					"若你成為一次近戰攻擊的目標，且此僕役距離攻擊者5呎內，則你可以使用你的反應以命令僕役，指示它使用它的反應對該攻擊者進行一次近戰攻擊。"
+				]
+			},
+			"這個僕役將盡其所能地服從你的命令。在戰鬥中，它將骰自己的先攻，並自己行動。",
+			"若這個僕役被殺死，它可以透過尋常手段被起死回生（例如{@spell 回生術}法術）。此外，在一次長休的過程中，若你可以接觸它的身體，則你可以維修一個被殺死的機械僕役。它將在該次長休結束時以1點生命值的狀態被復活。若機械僕役無法被修復，則你可以藉由花費一個禮拜（每天八小時）的作業時間和價值1,000金幣的原料以建造一個新的機械僕役。"
+		]
+	},
+	"Ability Score Improvement|Artificer|UAARTIFICER|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"在8級時，你再一次獲得屬性值提升。"
+		]
+	},
+	"Masterwork Feature|Artificer|UAARTIFICER|9": {
+		"name": "專業傑作",
+		"ENG_name": "Masterwork Feature",
+		"entries": [
+			"在9級時，你獲得一個由你奇械師專業所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Wondrous Invention|Artificer|UAARTIFICER|10": {
+		"name": "奇物發明",
+		"ENG_name": "Wondrous Invention",
+		"entries": [
+			"在10級時，你藉由你的奇物發明能力製造另一個魔法物品。"
+		]
+	},
+	"Ability Score Improvement|Artificer|UAARTIFICER|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"在12級時，你再一次獲得屬性值提升。"
+		]
+	},
+	"Masterwork Feature|Artificer|UAARTIFICER|14": {
+		"name": "專業傑作",
+		"ENG_name": "Masterwork Feature",
+		"entries": [
+			"在14級時，你獲得一個由你奇械師專業所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Superior Attunement|Artificer|UAARTIFICER|15": {
+		"name": "卓越同調",
+		"ENG_name": "Superior Attunement",
+		"entries": [
+			"從15級開始，你可以同時和最多五個魔法物品維持同調。"
+		]
+	},
+	"Wondrous Invention|Artificer|UAARTIFICER|15": {
+		"name": "奇物發明",
+		"ENG_name": "Wondrous Invention",
+		"entries": [
+			"在15級時，你藉由你的奇物發明能力製造另一個魔法物品。"
+		]
+	},
+	"Ability Score Improvement|Artificer|UAARTIFICER|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"在16級時，你再一次獲得屬性值提升。"
+		]
+	},
+	"Masterwork Feature|Artificer|UAARTIFICER|17": {
+		"name": "專業傑作",
+		"ENG_name": "Masterwork Feature",
+		"entries": [
+			"在17級時，你獲得一個由你奇械師專業所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Artificer|UAARTIFICER|18": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"在18級時，你再一次獲得屬性值提升。"
+		]
+	},
+	"Soul of Artifice|Artificer|UAARTIFICER|20": {
+		"name": "奇械之魂",
+		"ENG_name": "Soul of Artifice",
+		"entries": [
+			"在20級時，你對魔法物品的理解已經無可匹敵，使你得以將你的靈魂與聯繫於你的魔法物品互相融合。你可以同時和最多六個魔法物品維持同調。此外，你當下每有一個同調中的魔法物品，你就在所有豁免檢定中獲得+1加值。"
+		]
+	},
+	"Magical Tinkering|Artificer (Revisited)|UAARTIFICERREVISITED|1": {
+		"name": "魔法工藝",
+		"ENG_name": "Magical Tinkering",
+		"entries": [
+			"在1級時，你學會如何在凡物中注入魔法的火花。要使用此能力，你的手上必須要先有盜賊工具、修補匠工具、或其他工匠工具。你接著以一個動作觸碰一個微型的非魔法物體，並賦予它下列其中一個你所選擇的魔法屬性：",
+			{
+				"type": "list",
+				"items": [
+					"該物體散發出5呎半徑的明亮光照以及再延伸5呎的微光光照。",
+					"每當被一個生物觸碰時，該物體將會發出一段可以在最遠10呎內被聽見的錄音訊息。你在賦予該物體這個屬性時說出這段訊息，且這段錄音訊息的長度不能超過6秒。",
+					"該物體將不斷發出你所選擇的一種氣味或非語言聲響（風聲、浪淘聲、鳥鳴、諸如此類）。你所選擇的現象可以在最遠10呎內被感知到。",
+					"一個靜態的視覺效果出現在物體的其中一個表面上。這個效果可以是一幅圖片、最多25個字的文字、線條和形狀、或這些要素的任意組合，由你自由決定。"
+				]
+			},
+			"所選的屬性將永久持續。以一個動作，你可以觸碰該物體並提早終止這個屬性。",
+			"你可以將這個能力的魔法賦予複數個物體，你每次使用這個能力時只能觸碰一個物體，且一個物體同時只能擁有其中一個屬性。你藉由這個能力同時所能影響的物體的最大數量等同於你的智力調整值（最少一個物體）。若你嘗試賦予超過你的最大值，則最舊的魔法屬性將會立即終止，且新的魔法屬性將被賦予上去。"
+		]
+	},
+	"Spellcasting|Artificer (Revisited)|UAARTIFICERREVISITED|1": {
+		"name": "施法",
+		"ENG_name": "Spellcasting",
+		"entries": [
+			"你已經鑽研了魔法的運作原理，理解如何將魔法引導注入物體，以及知道如何喚醒物體內部的魔法。因此，你獲得了有限的施法能力。在旁觀者眼中，你並不是以傳統方式施法；你看起來就像是透過各種物品以創造奇蹟。",
+			{
+				"type": "entries",
+				"name": "必要工具",
+				"entries": [
+					"你藉由你的工具產生出你的奇械師法術效果。當你使用這個施法能力施放任何法術時，你手上必須要持有一個法器—它必須是{@item 盜賊工具|phb}或其他種類的工匠工具。你必須熟練於該工具才能透過這個方式使用它。參見《玩家手冊》第五章的「{@book Equipment|phb|5|工具}」以查閱這些工具的描述。",
+					"在你於2級獲得注法奇物能力時，你也可以使用任意帶有你其中一個注法的物品做為你的法器。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "戲法",
+				"entries": [
+					"在1級時，你知曉二個從下列{@filter 奇械師法術列表|spells|class=artificer revisited (uaar)}自選的戲法。當你升至更高的等級時，你將學會額外的奇械師戲法，見奇械師表格中的已知戲法欄位。",
+					"當你提升這個職業的等級時，你可以從奇械師的法術列表中挑選一個法術來取代一個你目前已知的奇械師戲法。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "準備及施放法術",
+				"entries": [
+					"奇械師表中顯示了你有多少個法術位可以用來施放你的奇械師法術。要施放其中一個一環或更高環的奇械師法術，你必須消耗一個與該法術環階相同或更高的法術位。你在完成一次長休後恢復所有你花費掉的法術位。",
+					"你準備一份你所能施放的奇械師法術列表，從奇械師法術列表中選擇。當你這麼做時，選擇數量等同於你智力調整值 + 你奇械師等級一半的奇械師法術（最少一個法術）。這些法術的環階都必須符合你所擁有法術位的環階。",
+					"舉例來說，如果你是一個5級的奇械師，你擁有四個1環和二個2環的法術位。你的智力為14，則你已準備法術的列表中可以包含總共四個1環或2環的法術。若你準備了1環法術{@spell 治療傷勢}，你可以使用1環和2環的法術位來施放它。施放法術並不會將它從你的準備法術列表中移除。",
+					"你可以在你完成一次長休時改變你的準備法術列表。準備一份新的奇械師法術列表需要花費時間於調整改造你的法器：你需要為你列表上每個法術的每個環階都花費至少1分鐘的時間。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法屬性",
+				"entries": [
+					"智力是你施展奇械師法術的施法屬性；你對於魔法背後理論的理解讓你能以優異的技巧操控這些法術。每當奇械師法術提及你的施法屬性時，你將使用你的智力。此外，當決定你奇械師法術的豁免DC、以及使用奇械師法術進行攻擊檢定時，你使用你的智力調整值。",
+					{
+						"type": "abilityDc",
+						"name": "法術",
+						"attributes": [
+							"int"
+						]
+					},
+					{
+						"type": "abilityAttackMod",
+						"name": "法術",
+						"attributes": [
+							"int"
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "儀式施法",
+				"entries": [
+					"若一個奇械師法術具有儀式標籤，且你已準備了該法術，則你可以將它做為儀式法術施放。"
+				]
+			},
+			{
+				"type": "inset",
+				"name": "奇械魔法",
+				"tENG_name": "The Magic of Artifice",
+				"entries": [
+					"做為一名奇械師，你使用工具以施放你的法術。在描述你的施法過程時，請想想你是如何使用工具來執行這個法術效果的。若你是使用{@item 煉金師設備|phb}來施放{@spell 治療傷勢}，則你可能是迅速地製造出藥膏。若你是使用{@item 修補匠工具|phb}以施展該法術，則你可能會擁有一個用以縫合傷口的微型機械蜘蛛。當你施放{@spell 毒氣噴灑}時，你可能會扔出惡臭的化學物質、或是使用一根會噴射毒液的魔杖。這些法術的效果和其他的施法者相同，但你有著獨樹一格的施法方法。",
+					"同樣的原則也適用於你準備法術的時候。做為一名奇械師，你不需要研讀法術書、也不需要祈禱以準備你的法術。相反的，你需要使用你的工具來製造用於產生你法術效果的專門道具。若你將{@spell 治療傷勢}替換成了{@spell 電爪}，則你可能會破壞調你用於治療的裝置，並用它的部件製造出一個攻擊性的道具（或許是一個讓你得以引導衝擊性能量的護手）。",
+					"這類細節並不會在任何方面上限制你，或為你提供任何好處。你並不需要證明你是如何使用工具來施展法術。但是有創意地描述你的施法過程，是一種能夠讓你從其他施法者中脫穎而出的有趣方式。"
+				]
+			}
+		]
+	},
+	"Infuse Item|Artificer (Revisited)|UAARTIFICERREVISITED|2": {
+		"name": "注法奇物",
+		"ENG_name": "Infuse Item",
+		"entries": [
+			"在2級時，你獲得將特定魔法注法引導注入平凡物品的能力。你以這個能力製造的魔法物品實際上就是那些永久性魔法物品的原型。",
+			{
+				"type": "entries",
+				"name": "已知注法",
+				"tENG_name": "Infusions Known",
+				"entries": [
+					"當你獲得此能力時，選擇二個奇械師注法並習得。可選的奇械師注法選項列表請參見{@filter 職業能力選項|optionalfeatures|Feature Type=ai|source=UAArtificerRevisited}頁面。當你升至特定奇械師等級時，你將再習得額外的自選奇械師注法，參見奇械師表格中的已知注法欄位。",
+					"每當你提升這個職業的等級時，你可以將一個你已習得的奇械師注法替換成一個新的奇械師注法。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "為物品進行注能",
+				"tENG_name": "Infusing an Item",
+				"entries": [
+					"每當你完成一次長休，你可以觸碰一個非魔法物品並將你的一個奇械師注法灌入該物品，使它變成一件魔法物品。每個奇械師注法都只能作用於其描述中指定類型的物體。若該魔法物品需要同調，則你可以在你為該物品注能時使自己與之同調，或者你可以放棄同調，好讓其他人能夠和該物品同調。若你決定在那之後才與該物品同調，則你必須使用原本的同調流程（參見《地下城主指南》第136頁的{@book 同調|dmg|7|同調}章節）。",
+					"你灌入該物品內的注法將永久持續，但當你死亡，該注法將在等同於你智力調整值的天數之後消散（最短1天）。若你將已知的奇械師注法替換掉，則被替換掉的注法效果也將消散。",
+					"你可以在一次長休結束時為複數非魔法物體進行注能；其最大數量參見奇械師表格中的注法物品欄位。你必須觸碰每一個物體，且你的每個奇械師注法同時只能各自存在於一個物體內。若你嘗試注能超過你最大數量的物品，則最舊的奇械師注法將會立即終止，且新的奇械師注法將被注入。"
+				]
+			},
+			{
+				"type": "inset",
+				"name": "奇械師注法",
+				"tENG_name": "Artificer Infusions",
+				"entries": [
+					"奇械師發明了許多種魔能注法以快速地製造魔法物品。對於沒有受過訓練的人來說，奇械師就像是能夠創造奇蹟，能夠在數小時內就完成他人需要數週才能辦到的事情。",
+					"每個注法的描述都會說明它可以注入的物品類型。其描述也會說明它所產生的魔法物品是否需要同調。",
+					"有些注法規定了最低的奇械師等級。你在升至該等級之前都不能習得這類注法。",
+					"除非該注法另有說明，否則你不能重複習得同一個注法。",
+					"參見{@filter 職業能力選項頁面|optionalfeatures|feature type=ai|source=UAArtificerRevisited}以查閱完整的注法列表。"
+				]
+			}
+		]
+	},
+	"Artificer Specialist|Artificer (Revisited)|UAARTIFICERREVISITED|3": {
+		"name": "奇械師專業",
+		"ENG_name": "Artificer Specialist",
+		"entries": [
+			"在3級時，你選擇你的專業類型：煉金師、或魔炮師。你的選擇將會在3級、6級、和14級時賦予你新的能力。",
+			{
+				"type": "inset",
+				"name": "變體：製作",
+				"tENG_name": "Variant: Crafting",
+				"entries": [
+					"奇械師的子職業將使你在製作特定物品時更有效率。無論你是使用{@book 《玩家手冊》|phb|8|製作}、{@book 《地下城主指南》|dmg|6|crafting a magic item}、或是{@book 《姍納薩的萬事指南》|xge|2|crafting an item}的製作規則，你從子職業中獲得的這個能力都能夠發揮效果。"
+				]
+			}
+		],
+		"gainSubclassFeature": true
+	},
+	"Tool Expertise|Artificer (Revisited)|UAARTIFICERREVISITED|3": {
+		"name": "工具專精",
+		"ENG_name": "Tool Expertise",
+		"entries": [
+			"從3級開始，你的熟練加值在使用你的工具熟練項所進行的任何屬性檢定中變為兩倍。"
+		]
+	},
+	"Ability Score Improvement|Artificer (Revisited)|UAARTIFICERREVISITED|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Arcane Armament|Artificer (Revisited)|UAARTIFICERREVISITED|5": {
+		"name": "祕法戰備",
+		"ENG_name": "Arcane Armament",
+		"entries": [
+			"從5級開始，每當你在你的回合採取{@action 攻擊}動作，你可以攻擊二次，而非一次。但其中一次攻擊必須使用魔法武器進行，因為你需要透過其中的魔法能量來驅動攻擊。"
+		]
+	},
+	"Artificer Specialist Feature|Artificer (Revisited)|UAARTIFICERREVISITED|6": {
+		"name": "奇械師專業能力",
+		"ENG_name": "Artificer Specialist Feature",
+		"entries": [
+			"在6級時，你獲得一個由你所選奇械師專業賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Artificer (Revisited)|UAARTIFICERREVISITED|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"The Right Cantrip for the Job|Artificer (Revisited)|UAARTIFICERREVISITED|10": {
+		"name": "適切戲法",
+		"ENG_name": "The Right Cantrip for the Job",
+		"entries": [
+			"在10級時，你獲得能夠根據當下情境準備最適切魔法工具的能力。每當你完成一次短休或長休，你可以將你已知的一個奇械師戲法替換成另一個奇械師法術列表中的戲法。"
+		]
+	},
+	"Ability Score Improvement|Artificer (Revisited)|UAARTIFICERREVISITED|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Artificer Specialist Feature|Artificer (Revisited)|UAARTIFICERREVISITED|14": {
+		"name": "奇械師專業能力",
+		"ENG_name": "Artificer Specialist Feature",
+		"entries": [
+			"在14級時，你獲得一個由你所選奇械師專業賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Artificer (Revisited)|UAARTIFICERREVISITED|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Spell-Storing Item|Artificer (Revisited)|UAARTIFICERREVISITED|18": {
+		"name": "儲法物品",
+		"ENG_name": "Spell-Storing Item",
+		"entries": [
+			"當你升至18級時，你學會將法術儲存於物體內以供重複使用的方式。每當你完成一次長休，你可以觸碰一把簡易或軍用武器、或一個你能夠做為法器使用的物品，並從奇械師法術列表中選擇一個施法動作為1個動作的1環或2環法術（你並不需要準備該法術），將其儲存在該物體中。當這個物體在手中時，一個生物可以採取一個動作以從該物體中產生出該法術的效果，使用你的施法屬性調整值。",
+			"儲存於該物體內的法術將維持直到它被使用等同於你智力調整值的次數（最少二次）、或直到你再次使用這個能力。"
+		]
+	},
+	"Ability Score Improvement|Artificer (Revisited)|UAARTIFICERREVISITED|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Soul of Artifice|Artificer (Revisited)|UAARTIFICERREVISITED|20": {
+		"name": "奇械之魂",
+		"ENG_name": "Soul of Artifice",
+		"entries": [
+			"在20級時，你對魔法物品的理解已經無可匹敵，使你得以將你的靈魂與聯繫於你的魔法物品互相融合。你可以同時和最多六個魔法物品維持同調。此外，你當下每有一個同調中的魔法物品，你就在所有豁免檢定中獲得+1加值。"
+		]
+	},
+	"Rage|Barbarian|PHB|1": {
+		"name": "狂暴",
+		"ENG_name": "Rage",
+		"entries": [
+			"在戰鬥中，你帶著原初的狂怒作戰。在你的回合，你能夠以一個附贈動作進入狂暴。",
+			"當處於狂暴時，若你未穿戴重甲，你獲得下列好處：",
+			{
+				"type": "list",
+				"items": [
+					"你在力量檢定和力量豁免中具有優勢。",
+					"當你進行一次使用力量的近戰武器攻擊時，你在傷害骰上獲得+2加值。這個加值會隨著你的等級而增加。",
+					"你對鈍擊、穿刺、和劈砍傷害具有抗性。"
+				]
+			},
+			"若你能夠施放法術，則你在狂暴期間無法施放它們或維持法術上的專注。",
+			"你的狂暴持續1分鐘。它會在你被擊倒{@condition 昏迷}時提前結束，或若你從上回合到這回合結束時都沒有攻擊一個敵意生物或受到傷害，則狂暴也將提前結束。你也可以在你的回合以一個附贈動作結束你的狂暴﹐",
+			"一旦你狂暴的次數達到你當前野蠻人等級所能狂暴的最大次數，你就必須要完成一次長休才能夠再次狂暴。你在1級時可以狂暴二次，3級時三次，6級時四次，12級時五次，以及17級時六次。"
+		]
+	},
+	"Unarmored Defense|Barbarian|PHB|1": {
+		"name": "無甲防禦",
+		"ENG_name": "Unarmored Defense",
+		"entries": [
+			"當你未穿戴護甲時，你的AC等於10 + 你的敏捷調整值 + 你的體質調整值。你可以使用盾牌而仍獲得這個好處。"
+		]
+	},
+	"Danger Sense|Barbarian|PHB|2": {
+		"name": "險境感知",
+		"ENG_name": "Danger Sense",
+		"entries": [
+			"在2級時，你獲得一種能查覺到周遭異狀的超常感知能力，讓你在躲避危險時掌握先機。你在對抗你所能見的效果時所進行的敏捷豁免中具有優勢，像是陷阱和法術。要獲得此好處，你不能處於{@condition 目盲}、{@condition 耳聾}、或{@condition 無力}狀態。"
+		]
+	},
+	"Reckless Attack|Barbarian|PHB|2": {
+		"name": "魯莽攻擊",
+		"ENG_name": "Reckless Attack",
+		"entries": [
+			"從2級開始，你可以拋下防禦以展開不顧一切的猛烈攻擊。當你在你的回合進行你的第一次攻擊時，你可以選擇魯莽地攻擊。這麼做會讓你在該回合間所有使用力量的近戰武器攻擊檢定具有優勢，但直到你的下個回合，所有對你進行的攻擊檢定也將具有優勢。"
+		]
+	},
+	"Primal Path|Barbarian|PHB|3": {
+		"name": "原初道途",
+		"ENG_name": "Primal Path",
+		"entries": [
+			"在3級時，你從可選道途列表中選擇一種形塑你憤怒本質的道途。你的選擇將在3級、6級、10級、和14級時賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Barbarian|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Extra Attack|Barbarian|PHB|5": {
+		"name": "額外攻擊",
+		"ENG_name": "Extra Attack",
+		"entries": [
+			"從5級開始，每當你在你的回合採取{@action 攻擊}動作，你可以攻擊二次，而非一次。"
+		]
+	},
+	"Fast Movement|Barbarian|PHB|5": {
+		"name": "快速移動",
+		"ENG_name": "Fast Movement",
+		"entries": [
+			"從5級開始，當你未穿戴重甲時，你的移動速度增加10呎。"
+		]
+	},
+	"Path Feature|Barbarian|PHB|6": {
+		"name": "道途能力",
+		"ENG_name": "Path Feature",
+		"entries": [
+			"在6級時，你獲得一個來自你原初道途的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Feral Instinct|Barbarian|PHB|7": {
+		"name": "野性直覺",
+		"ENG_name": "Feral Instinct",
+		"entries": [
+			"從7級起，你的直覺是如此犀利，你在先攻骰中具有優勢。",
+			"此外，若你在戰鬥開始時被突襲且未陷入{@condition 無力}狀態，則你可以在你的第一個回合中如常行動。若你這麼做，你必須在該回合進行任何行動前進入狂暴。"
+		]
+	},
+	"Ability Score Improvement|Barbarian|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Brutal Critical|Barbarian|PHB|9": {
+		"name": "凶蠻重擊(1顆骰)",
+		"ENG_name": "Brutal Critical",
+		"entries": [
+			"從9級開始，你可以在決定近戰攻擊的重擊所造成的額外傷害時額外骰一顆武器傷害骰。",
+			"這個能力會在13級時增加至二顆額外的傷害骰，在17級時增加至三顆額外的傷害骰。"
+		]
+	},
+	"Path Feature|Barbarian|PHB|10": {
+		"name": "道途能力",
+		"ENG_name": "Path Feature",
+		"entries": [
+			"在10級時，你獲得一個來自你原初道途的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Relentless Rage|Barbarian|PHB|11": {
+		"name": "頑強狂暴",
+		"ENG_name": "Relentless Rage",
+		"entries": [
+			"從11級開始，你的狂暴讓你即使身受重傷也可以持續戰鬥。若你在狂暴中生命值歸零而沒有立即死亡，則你可以進行一次DC 10的體質豁免。若豁免成功，則改為將你的生命值減少至1。",
+			"在你首次使用此能力後的每次，這個豁免檢定的DC都會增加5。當你完成一次短休或長休後，這個豁免檢定的DC將會重置為10。"
+		]
+	},
+	"Ability Score Improvement|Barbarian|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Brutal Critical|Barbarian|PHB|13": {
+		"name": "凶蠻重擊(2顆骰)",
+		"ENG_name": "Brutal Critical",
+		"entries": [
+			"在13級時，你可以在決定近戰攻擊的重擊所造成的額外傷害時額外骰二顆武器傷害骰。",
+			"這個能力會在17級時增加至三顆額外的傷害骰。"
+		]
+	},
+	"Path Feature|Barbarian|PHB|14": {
+		"name": "道途能力",
+		"ENG_name": "Path Feature",
+		"entries": [
+			"在14級時，你獲得一個來自你原初道途的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Persistent Rage|Barbarian|PHB|15": {
+		"name": "持久狂暴",
+		"ENG_name": "Persistent Rage",
+		"entries": [
+			"從15級開始，你的狂暴是如此猛烈，以至於它只會在你陷入{@condition 昏迷}或你選擇結束它時提早結束。"
+		]
+	},
+	"Ability Score Improvement|Barbarian|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Brutal Critical|Barbarian|PHB|17": {
+		"name": "凶蠻重擊(3顆骰)",
+		"ENG_name": "Brutal Critical",
+		"entries": [
+			"在17級時，你可以在決定近戰攻擊的重擊所造成的額外傷害時額外骰三顆武器傷害骰。"
+		]
+	},
+	"Indomitable Might|Barbarian|PHB|18": {
+		"name": "不屈勇武",
+		"ENG_name": "Indomitable Might",
+		"entries": [
+			"從18級開始，若你力量檢定的總值低於你的力量值，則你可以使用該數值以取代該力量檢定的總值。"
+		]
+	},
+	"Ability Score Improvement|Barbarian|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Primal Champion|Barbarian|PHB|20": {
+		"name": "原初勇士",
+		"ENG_name": "Primal Champion",
+		"entries": [
+			"在20級時，你本身的存在就體現了荒野的力量。你的力量和體質增加4點。你這些數值的上限現在變更為24。"
+		]
+	},
+	"Bardic Inspiration|Bard|PHB|1": {
+		"name": "吟遊激勵",
+		"ENG_name": "Bardic Inspiration",
+		"entries": [
+			"你可以用振奮人心的言詞或音樂來激勵其他生物。在你的回合中使用一個附贈動作來選擇一個除你之外，距離你60呎內且可以聽見你的生物，該生物獲得一個吟遊激勵骰{@dice d6}。",
+			"在接下來的10分鐘內，該生物可以骰這顆激勵骰，並將骰出來的數字加到它所進行的一次屬性檢定、攻擊檢定、或豁免檢定中。該生物可以在骰{@dice d20}之後才決定是否使用使用吟遊激勵骰，但必須在DM宣布該檢定結果之前使用。一旦吟遊激勵骰被使用，它就消失。且一個生物同時只能擁有一顆吟遊激勵骰。",
+			"你可以使用這個能力的次數等同於你的魅力調整值（最少為1）。你在完成一次長休後恢復所有你花費掉的次數。",
+			"你的吟遊激勵骰會在你本職業升至特定等級時改變。在5級的時候變為{@dice d8}、10級時{@dice d10}、15級時{@dice d12}。"
+		]
+	},
+	"Spellcasting|Bard|PHB|1": {
+		"name": "施法",
+		"ENG_name": "Spellcasting",
+		"entries": [
+			"你習得用音樂和意志來解構並重塑現實的力量。你的法術是你龐大的樂章的一部份，也是你可以因應不同情況調律的魔法。請參閱{@book 第十章|PHB|10}以了解關於施法的規則，以及第十一章以查閱{@filter 吟遊詩人法術列表|spells|class=bard}。",
+			{
+				"type": "entries",
+				"name": "戲法",
+				"entries": [
+					"你知曉兩個從{@filter 吟遊詩人法術列表|spells|class=bard}自選的戲法。你將在升至更高的吟遊詩人等級時學會額外的吟遊詩人戲法：在4級的時候學會第3個戲法，在10級的時候學會第4個。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "法術位",
+				"entries": [
+					"吟遊詩人表中顯示了你有多少個法術位可以用來施放你一環或更高環的{@filter 吟遊詩人法術|spells|class=bard}。要施放其中一個法術，你必須消耗一個與該法術環階相同或更高的法術位。你在完成一次長休後恢復所有你花費掉的法術位。",
+					"舉例來說，如果你知曉一個1環的{@spell 治療傷勢}法術，且你擁有一個1環和一個2環的法術位，則你可以使用其中任意一個法術位來施放{@spell 治療傷勢}。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "一環或更高環的已知法術",
+				"entries": [
+					"你知曉四個從吟遊詩人法術列表中自選的1環法術。",
+					"你將在提升至在每個除了第12,16,19,和20級的吟遊詩人等級時，習得一個新的吟遊詩人法術。每個這些法術的環階都必須符合你所擁有法術位的環階。舉例來說，當你在此職業升至3級時，你可以學習一個新的1環或2環法術。",
+					"此外，當你提升這個職業的等級時，你可以從吟遊詩人的法術列表中挑選一個法術來取代一個你目前已知的法術，而它的環階也必須符合你所擁有法術位的環階。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法屬性",
+				"entries": [
+					"魅力是你施展吟遊詩人法術的施法屬性。你的魔法源自你傾注於音樂與演說表演的心神與靈魂。每當法術提及你的施法屬性時，你將使用你的魅力。此外，當決定你吟遊詩人法術的豁免DC、以及使用吟遊詩人法術進行攻擊檢定時，你使用你的魅力調整值。",
+					{
+						"type": "abilityDc",
+						"name": "法術",
+						"attributes": [
+							"cha"
+						]
+					},
+					{
+						"type": "abilityAttackMod",
+						"name": "法術",
+						"attributes": [
+							"cha"
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "儀式施法",
+				"entries": [
+					"你可以用儀式來施放任何具有儀式標籤，且你已知的吟遊詩人法術。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法法器",
+				"entries": [
+					"你可以使用你的樂器（{@book 第五章|PHB|5}），來做為你施放吟遊詩人法術的法器。"
+				]
+			}
+		]
+	},
+	"Jack of All Trades|Bard|PHB|2": {
+		"name": "全能高手",
+		"ENG_name": "Jack of All Trades",
+		"entries": [
+			"從2級開始，你可以將你熟練加值的一半（向下取整）加入任何你尚未熟練的屬性檢定中。"
+		]
+	},
+	"Song of Rest|Bard|PHB|2": {
+		"name": "紓壓曲(d6)",
+		"ENG_name": "Song of Rest",
+		"entries": [
+			"從2級開始，你可以在短休期間利用安撫人心的音樂或演說來使你受傷的隊友恢復活力。若你或任何可以聽見你表演的生物在短休結束時藉由消耗生命骰回復生命值，則每個這麼做的生物回復額外的{@dice 1d6}生命值。",
+			"這個額外的生命值將會在你本職業升至特定等級時隨之提升：9級時{@dice 1d8}、13級時{@dice 1d10}、17級時{@dice 1d12}。"
+		]
+	},
+	"Bard College|Bard|PHB|3": {
+		"name": "吟遊學院",
+		"ENG_name": "Bard College",
+		"entries": [
+			"在3級時，你從可選的學院列表中選擇一個吟遊詩人學院來深入你的技巧。這個選擇會在3級、6級、和14級的時候賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Expertise|Bard|PHB|3": {
+		"name": "專精",
+		"ENG_name": "Expertise",
+		"entries": [
+			"在3級時，選擇兩個你的技能熟練，你的熟練加值在使用所選熟練項所進行的任何屬性檢定中變為兩倍。",
+			"在10級時，你可以再選擇另外兩個技能熟練以獲得這個好處。"
+		]
+	},
+	"Ability Score Improvement|Bard|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Bardic Inspiration|Bard|PHB|5": {
+		"name": "吟遊激勵(d8)",
+		"ENG_name": "Bardic Inspiration",
+		"entries": [
+			"在5級時，你的吟遊激勵骰變更為{@dice d8}。"
+		]
+	},
+	"Font of Inspiration|Bard|PHB|5": {
+		"name": "激勵湧泉",
+		"ENG_name": "Font of Inspiration",
+		"entries": [
+			"從你升至5級開始，你在完成一次短休或長休後都會恢復所有你在吟遊激勵骰花費掉的次數。"
+		]
+	},
+	"Countercharm|Bard|PHB|6": {
+		"name": "反制迷惑",
+		"ENG_name": "Countercharm",
+		"entries": [
+			"在6級時，你獲得使用音樂或言語的力量來干擾會影響心靈效果的能力。以一個動作，你可以開始一段持續到你下個回合結束的表演。在這段期間，你和任何與你距離30呎內的友善生物在對抗{@condition 恐懼}或{@condition 魅惑}的豁免檢定中獲得優勢。只有能聽見你的生物可以獲得此效果。這段表演將在你陷入{@condition 無力}、被沉默、或是你自願停止（不需要動作）時提早結束。"
+		]
+	},
+	"Bard College|Bard|PHB|6": {
+		"name": "吟遊學院能力",
+		"ENG_name": "Bard College",
+		"entries": [
+			"在6級時，你獲得一個來自你吟遊詩人學院的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Bard|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Song of Rest|Bard|PHB|9": {
+		"name": "紓壓曲(d8)",
+		"ENG_name": "Song of Rest",
+		"entries": [
+			"在9級時，紓壓曲所給予的額外生命值增加至{@dice 1d8}。"
+		]
+	},
+	"Bardic Inspiration|Bard|PHB|10": {
+		"name": "吟遊激勵(d10)",
+		"ENG_name": "Bardic Inspiration",
+		"entries": [
+			"在10級時，你的吟遊激勵骰變更為{@dice d10}。"
+		]
+	},
+	"Expertise|Bard|PHB|10": {
+		"name": "專精",
+		"ENG_name": "Expertise",
+		"entries": [
+			"在10級時，你可以選擇另外兩個技能熟練。你的熟練加值在使用所選熟練項所進行的任何屬性檢定中變為兩倍。"
+		]
+	},
+	"Magical Secrets|Bard|PHB|10": {
+		"name": "魔法秘密",
+		"ENG_name": "Magical Secrets",
+		"entries": [
+			"在10級時，你從廣泛的學科中掠奪了它們的魔法知識。從任意職業中（包括本職業）中選擇二個法術。你所選擇的法術必須要是你所能施放的環階（見吟遊詩人表），或者是戲法。",
+			"對你而言，所選的法術將被視為吟遊詩人法術，且會被算在吟遊詩人表中的已知法術數量中。",
+			"你將會在14級和18級時再從任意職業中學會二個額外法術。"
+		]
+	},
+	"Ability Score Improvement|Bard|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Song of Rest|Bard|PHB|13": {
+		"name": "紓壓曲(d10)",
+		"ENG_name": "Song of Rest",
+		"entries": [
+			"在13級時，紓壓曲所給予的額外生命值增加至{@dice 1d10}。"
+		]
+	},
+	"Magical Secrets|Bard|PHB|14": {
+		"name": "魔法秘密",
+		"ENG_name": "Magical Secrets",
+		"entries": [
+			"在14級時，從任意職業中（包括本職業）額外選擇二個法術。你所選擇的法術必須要是你所能施放的環階（見吟遊詩人表），或者是戲法。",
+			"對你而言，所選的法術將被視為吟遊詩人法術，且會被算在吟遊詩人表中的已知法術數量中。"
+		]
+	},
+	"Bard College|Bard|PHB|14": {
+		"name": "吟遊學院能力",
+		"ENG_name": "Bard College",
+		"entries": [
+			"在14級時，你獲得一個來自你吟遊詩人學院的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Bardic Inspiration|Bard|PHB|15": {
+		"name": "吟遊激勵(d12)",
+		"ENG_name": "Bardic Inspiration",
+		"entries": [
+			"在15級時，你的吟遊激勵骰變更為{@dice d12}。"
+		]
+	},
+	"Ability Score Improvement|Bard|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Song of Rest|Bard|PHB|17": {
+		"name": "紓壓曲(d12)",
+		"ENG_name": "Song of Rest",
+		"entries": [
+			"在17級時，紓壓曲所給予的額外生命值增加至{@dice 1d12}。"
+		]
+	},
+	"Magical Secrets|Bard|PHB|18": {
+		"name": "魔法秘密",
+		"ENG_name": "Magical Secrets",
+		"entries": [
+			"在18級時，從任意職業中（包括本職業）額外選擇二個法術。你所選擇的法術必須要是你所能施放的環階（見吟遊詩人表），或者是戲法。",
+			"對你而言，所選的法術將被視為吟遊詩人法術，且會被算在吟遊詩人表中的已知法術數量中。"
+		]
+	},
+	"Ability Score Improvement|Bard|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Superior Inspiration|Bard|PHB|20": {
+		"name": "卓越激勵",
+		"ENG_name": "Superior Inspiration",
+		"entries": [
+			"在20級時，當你骰先攻時且吟遊激勵骰已經沒有剩下的使用次數，則你獲得一次使用次數。"
+		]
+	},
+	"Spellcasting|Cleric|PHB|1": {
+		"name": "施法",
+		"ENG_name": "Spellcasting",
+		"entries": [
+			"作為神性力量的通道，你可以施放牧師法術。請參閱{@book 第十章|PHB|10}以了解關於施法的規則，以及第十一章以查閱{@filter 牧師法術列表|spells|class=cleric}。",
+			{
+				"type": "entries",
+				"name": "戲法",
+				"entries": [
+					"在1級時，你知曉三個從{@filter 牧師法術列表|spells|class=cleric}自選的戲法。你將在升至更高的牧師等級時學會額外的牧師戲法，見牧師表格中的已知戲法欄位。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "準備及施放法術",
+				"entries": [
+					"牧師表中顯示了你有多少個法術位可以用來施放你一環或更高環的{@filter 牧師法術|spells|class=cleric}。要施放其中一個這些法術，你必須消耗一個與該法術環階相同或更高的法術位。你在完成一次長休後恢復所有你花費掉的法術位。",
+					"你準備一份你所能施放的牧師法術列表，從牧師法術列表中選擇。當你這麼做時，選擇數量等同於你睿知調整值 + 你牧師等級的牧師法術（最少一個法術）。這些法術的環階都必須符合你所擁有法術位的環階。",
+					"舉例來說，如果你是一個3級的牧師，你擁有四個1環和二個2環的法術位。你的睿知為16，則你已準備法術的列表中可以包含總共六個1環或2環的法術。若你準備了1環法術{@spell 治療傷勢}，你可以使用1環和2環的法術位來施放它。施放法術並不會將它從你的準備法術列表中移除。",
+					"你可以在你完成一次長休時改變你的準備法術列表。準備一份新的牧師法術列表需要花費時間於祈禱和冥想：你需要為你列表上每個法術的每個環階都花費至少1分鐘的時間。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法屬性",
+				"entries": [
+					"睿知是你施展牧師法術的施法屬性。你法術的力量來自於你對於你信仰的奉獻。每當一個牧師法術提及你的施法屬性時，你將使用你的睿知。此外，當決定你牧師法術的豁免DC、以及使用牧師法術進行攻擊檢定時，你使用你的睿知調整值。",
+					{
+						"type": "abilityDc",
+						"name": "法術",
+						"attributes": [
+							"wis"
+						]
+					},
+					{
+						"type": "abilityAttackMod",
+						"name": "法術",
+						"attributes": [
+							"wis"
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "儀式施法",
+				"entries": [
+					"若一個牧師法術具有儀式標籤，且你已準備了該法術，則你可以將它做為儀式法術施放。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法法器",
+				"entries": [
+					"你可以使用一個{@item 聖徽|phb}（第五章），來做為你施放牧師法術的法器。"
+				]
+			}
+		]
+	},
+	"Divine Domain|Cleric|PHB|1": {
+		"name": "神聖領域",
+		"ENG_name": "Divine Domain",
+		"entries": [
+			"從可用領域列表中選擇一個你所信仰神祇的關聯領域。每個領域在它們的能力說明中被詳述，且各自提供了與其相關的範例神祇。你的選擇將在1級時賦予你領域法術以及其他能力。它也將在2級時賦予你另一種使用引導神力能力的方式，並在6級、8級、和17級時賦予你其他額外好處。",
+			{
+				"type": "entries",
+				"name": "領域法術",
+				"ENG_name": "Domain Spells",
+				"entries": [
+					"每個領域都擁有一張法術列表—亦即領域法術—且你將在升至領域說明中指定的牧師等級時獲得這些法術。一旦你獲得領域法術，你將永遠視作已經準備了它，且它不會計入你每日可準備的法術數量中。",
+					"若你擁有一個不在牧師法術列表上的領域法術，則該法術對你而言仍然視作牧師法術。"
+				]
+			}
+		],
+		"gainSubclassFeature": true
+	},
+	"Channel Divinity|Cleric|PHB|2": {
+		"name": "引導神力(1/休息)",
+		"ENG_name": "Channel Divinity",
+		"entries": [
+			"在2級時，你獲得引導直接來自你神祇的神聖能量，並用其能量驅動魔法效果的能力。你起始擁有二個這種效果：驅散不死，以及一個由你神聖領域決定的效果。某些領域會在你升至更高等級時賦予你額外的效果，參見各領域的說明。",
+			"當你使用你的引導神力時，你選擇要創造出哪一個效果。你接著必須完成一次短休或長休後才能再使用你的引導神力。",
+			"某些引導神力的效果會需要豁免檢定。當你使用本職業的這類效果時，其DC等同於你的牧師法術豁免DC。",
+			"從6級開始，你可以在休息之間使用引導神力二次。且從18級開始，你可以在休息之間使用引導神力三次。你在完成一次短休或長休後恢復所有你花費掉的次數。",
+			{
+				"type": "entries",
+				"name": "驅散不死",
+				"ENG_name": "Turn Undead",
+				"entries": [
+					"以一個動作，你展現你的聖徽並說出斥責不死生物的禱詞。每個距離你30呎內且可以看見或聽見你的不死生物必須進行一次睿知豁免。若該生物豁免失敗，則它將被驅散長達1分鐘或直到它受到傷害。",
+					"一個被驅散的不死生物必須用它的回合嘗試盡可能的遠離你，且它無法自願的移動到距離你30呎內的空間。它無法採取反應。它的動作只能使用{@action 疾走}動作或嘗試掙脫阻止它移動的效果。若它無法移動，則該生物將使用{@action 閃避}動作。"
+				]
+			}
+		]
+	},
+	"Divine Domain feature|Cleric|PHB|2": {
+		"name": "神聖領域能力",
+		"ENG_name": "Divine Domain feature",
+		"entries": [
+			"在2級時，你獲得一個由你神聖領域所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Cleric|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Destroy Undead|Cleric|PHB|5": {
+		"name": "摧毀不死 (CR 1/2)",
+		"ENG_name": "Destroy Undead",
+		"entries": [
+			"從5級開始，當一個{@filter 挑戰等級為1/2或更低的不死生物|bestiary|challenge rating=0;1/8;1/4;1/2|type=undead|miscellaneous=!swarm}在對抗你驅散不死能力的豁免檢定中失敗，該生物將立即被摧毀。"
+		]
+	},
+	"Channel Divinity|Cleric|PHB|6": {
+		"name": "引導神力(2/休息)",
+		"ENG_name": "Channel Divinity",
+		"entries": [
+			"從6級開始，你可以在休息之間使用引導神力二次。"
+		]
+	},
+	"Divine Domain feature|Cleric|PHB|6": {
+		"name": "神聖領域能力",
+		"ENG_name": "Divine Domain feature",
+		"entries": [
+			"在6級時，你獲得一個由你神聖領域所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Cleric|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Destroy Undead|Cleric|PHB|8": {
+		"name": "摧毀不死 (CR 1)",
+		"ENG_name": "Destroy Undead",
+		"entries": [
+			"從8級開始，當一個{@filter 挑戰等級為1或更低的不死生物|bestiary|challenge rating=0;1/8;1/4;1/2;1|type=undead|miscellaneous=!swarm}在對抗你驅散不死能力的豁免檢定中失敗，該生物將立即被摧毀。"
+		]
+	},
+	"Divine Domain feature|Cleric|PHB|8": {
+		"name": "神聖領域能力",
+		"ENG_name": "Divine Domain feature",
+		"entries": [
+			"在8級時，你獲得一個由你神聖領域所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Divine Intervention|Cleric|PHB|10": {
+		"name": "神力干預",
+		"ENG_name": "Divine Intervention",
+		"entries": [
+			"從10級開始，你可以在你迫切需要的時候呼求你的神祇為你插手介入。",
+			"懇求你神祇的幫助需要你使用你的動作。描述你所尋求的協助，並骰一顆百面骰。若你骰出的數字等於或低於你的牧師等級，則你的神祇將出手干預。由DM決定這次干預的性質；任何牧師法術或牧師領域法術都會是適合的例子。若你的神祇出手干預，則你在7天內都不能再使用此能力。否則你可以在你完成一次長休後再次使用它。",
+			"在20級時，你呼求干預的動作將自動成功，不再需要擲骰。"
+		]
+	},
+	"Destroy Undead|Cleric|PHB|11": {
+		"name": "摧毀不死 (CR 2)",
+		"ENG_name": "Destroy Undead",
+		"entries": [
+			"從11級開始，當一個{@filter 挑戰等級為2或更低的不死生物|bestiary|challenge rating=0;1/8;1/4;1/2;1;2|type=undead|miscellaneous=!swarm}在對抗你驅散不死能力的豁免檢定中失敗，該生物將立即被摧毀。"
+		]
+	},
+	"Ability Score Improvement|Cleric|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Destroy Undead|Cleric|PHB|14": {
+		"name": "摧毀不死 (CR 3)",
+		"ENG_name": "Destroy Undead",
+		"entries": [
+			"從14級開始，當一個{@filter 挑戰等級為3或更低的不死生物|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3|type=undead|miscellaneous=!swarm}在對抗你驅散不死能力的豁免檢定中失敗，該生物將立即被摧毀。"
+		]
+	},
+	"Ability Score Improvement|Cleric|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Destroy Undead|Cleric|PHB|17": {
+		"name": "摧毀不死 (CR 4)",
+		"ENG_name": "Destroy Undead",
+		"entries": [
+			"從17級開始，當一個{@filter 挑戰等級為4或更低的不死生物|bestiary|challenge rating=0;1/8;1/4;1/2;1;2;3;4|type=undead|miscellaneous=!swarm}在對抗你驅散不死能力的豁免檢定中失敗，該生物將立即被摧毀。"
+		]
+	},
+	"Divine Domain feature|Cleric|PHB|17": {
+		"name": "神聖領域能力",
+		"ENG_name": "Divine Domain feature",
+		"entries": [
+			"在17級時，你獲得一個由你神聖領域所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Channel Divinity|Cleric|PHB|18": {
+		"name": "引導神力(3/休息)",
+		"ENG_name": "Channel Divinity",
+		"entries": [
+			"從18級開始，你可以在休息之間使用引導神力三次。"
+		]
+	},
+	"Ability Score Improvement|Cleric|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Divine Intervention Improvement|Cleric|PHB|20": {
+		"name": "神力干預強化",
+		"ENG_name": "Divine Intervention Improvement",
+		"entries": [
+			"在20級時，你呼求干預的動作將自動成功，不再需要擲骰。"
+		]
+	},
+	"Druidic|Druid|PHB|1": {
+		"name": "德魯伊語",
+		"ENG_name": "Druidic",
+		"entries": [
+			"你知曉德魯伊語，一種屬於德魯伊的秘密語言。你可以說這種語言，並用它來留下隱藏的信息。你和其他知曉這種語言的人將會自動注意到這類信息。其他人則可以透過成功通過一次DC 15的睿知（{@skill 感知}）檢定以察覺這個信息的存在，但不使用魔法就無法解讀它。"
+		]
+	},
+	"Spellcasting|Druid|PHB|1": {
+		"name": "施法",
+		"ENG_name": "Spellcasting",
+		"entries": [
+			"借助大自然本身的天授精粹，你可以施放法術以按照你的意願形塑它。請參閱{@book 第十章|PHB|10}以了解關於施法的規則，以及第十一章以查閱{@filter 德魯伊法術列表|spells|class=druid}。",
+			{
+				"type": "entries",
+				"name": "戲法",
+				"entries": [
+					"在1級時，你知曉兩個從{@filter 德魯伊法術列表|spells|class=druid}自選的戲法。你將在升至更高的德魯伊等級時學會額外的德魯伊戲法，見德魯伊表格中的已知戲法欄位。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "準備及施放法術",
+				"entries": [
+					"德魯伊表中顯示了你有多少個法術位可以用來施放你一環或更高環的{@filter 德魯伊法術|spells|class=druid}。要施放其中一個這些德魯伊法術，你必須消耗一個與該法術環階相同或更高的法術位。你在完成一次長休後恢復所有你花費掉的法術位。",
+					"你準備一份你所能施放的德魯伊法術列表，從德魯伊法術列表中選擇。當你這麼做時，選擇數量等同於你睿知調整值 + 你德魯伊等級的德魯伊法術（最少一個法術）。這些法術的環階都必須符合你所擁有法術位的環階。",
+					"舉例來說，如果你是一個3級的德魯伊，你擁有四個1環和二個2環的法術位。你的睿知為16，則你已準備法術的列表中可以包含總共六個1環或2環的法術。若你準備了1環法術{@spell 治療傷勢}，你可以使用1環和2環的法術位來施放它。施放法術並不會將它從你的準備法術列表中移除。",
+					"你也可以在你完成一次長休時改變你的準備法術列表。準備一份新的德魯伊法術列表需要花費時間於祈禱和冥想：你需要為你列表上每個法術的每個環階都花費至少1分鐘的時間。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法屬性",
+				"entries": [
+					"由於你的魔法是源自你對大自然的奉獻與協調，睿知是你施展德魯伊法術的施法屬性。每當法術提及你的施法屬性時，你將使用你的睿知。此外，當決定你德魯伊法術的豁免DC、以及使用德魯伊法術進行攻擊檢定時，你使用你的睿知調整值。",
+					{
+						"type": "abilityDc",
+						"name": "法術",
+						"attributes": [
+							"wis"
+						]
+					},
+					{
+						"type": "abilityAttackMod",
+						"name": "法術",
+						"attributes": [
+							"wis"
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "儀式施法",
+				"entries": [
+					"若一個德魯伊法術具有儀式標籤，且你已準備了該法術，則你可以將它做為儀式法術施放。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法法器",
+				"entries": [
+					"你可以使用一個{@item 德魯伊法器|phb}（第五章），來做為你施放德魯伊法術的法器。"
+				]
+			}
+		]
+	},
+	"Wild Shape|Druid|PHB|2": {
+		"name": "荒野形態",
+		"ENG_name": "Wild Shape",
+		"entries": [
+			"從2級開始，你可以使用你的動作以魔法變成一個你曾經見過野獸的型態。你可以使用這個能力二次。你在完成一次短休或長休後恢復所有你花費掉的次數。",
+			"你的德魯伊等級決定了你可以變化成的野獸，參見野獸型態表。舉例來說，在2級時，你可以轉變成任何挑戰等級為1/4或更低，且不具有飛行或游泳速度的野獸。",
+			{
+				"type": "table",
+				"caption": "野獸型態",
+				"colLabels": [
+					"等級",
+					"最高挑戰等級",
+					"限制",
+					"範例"
+				],
+				"colStyles": [
+					"col-2 text-align-center",
+					"col-2 text-align-center",
+					"col-5",
+					"col-3"
+				],
+				"rows": [
+					[
+						"{@filter 2級|bestiary|challenge rating=0;1/8;1/4|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
+						"1/4",
+						"沒有飛行或游泳速度",
+						"狼"
+					],
+					[
+						"{@filter 4級|bestiary|challenge rating=0;1/8;1/4;1/2|type=beast|speed type=!fly|miscellaneous=!swarm}",
+						"1/2",
+						"沒有飛行速度",
+						"鱷魚"
+					],
+					[
+						"{@filter 8級|bestiary|challenge rating=0;1/8;1/4;1/2;1|type=beast|miscellaneous=!swarm}",
+						"1",
+						"—",
+						"巨鷹"
+					]
+				]
+			},
+			"你可以保持野獸型態長達等同於你德魯伊等級一半的小時數。你接著將回復你原本的型態，除非你再花費此能力的一個次數。你可以透過在你的回合使用一個附贈動作以提早回復你原本的型態。你將在你陷入{@condition 昏迷}、生命值歸零、或死亡時自動回復原本的型態。",
+			"當你變形後，適用以下規則：",
+			{
+				"type": "list",
+				"items": [
+					"你的遊戲數據被該野獸的數據給取代，但你保留你的陣營、個性，和智力、睿知、和魅力值。你同時也保留你的所有技能和豁免熟練，並額外獲得該生物所具有的熟練。若該生物具有與你相同的熟練項，且它數據資料中列出的加值比你的還要高，則你使用該生物的加值取代你自己的。若該生物具有任何傳奇動作或巢穴動作，你不能使用它們。",
+					"當你變形時，你取用該野獸的生命值和生命骰。當你回復你原本的型態時，你將取回你變形之前的生命值。若你是因為生命值歸零而回復原本型態，則任何溢出傷害都將被帶到你原本的型態，扣減你原本的生命值。舉例來說，若你在處於動物型態時受到10點傷害，且只剩下1點生命值，你將回復原本的型態並承受9點傷害。只要這個溢出傷害沒有讓你原本型態的生命值歸零，你就不會被擊倒{@condition 昏迷}。",
+					"你不能施放法術，且你說話或採取任何需要雙手的動作的能力將受限於你的野獸型態。然而，變形並不會中斷你對已施放法術的專注，也不會讓你無法採取你已經施放法術所提供的動作，像是{@spell 召雷術}。",
+					"你保留任何來自你職業、種族、或其他來源的能力，且若新型態物理上有能力這麼做，你就能夠使用它們。然而，你無法使用你的特殊感官，像是黑暗視覺，除非你的新型態也具有該感官。",
+					"你選擇你的裝備是會掉在地上、融入新型態、或是被新型態穿戴。被穿戴的裝備將正常生效，但DM將根據該生物的體型和形狀以決定新型態是否可以正常穿戴你的每個裝備。你的裝備並不會改變形狀或尺寸以符合你的新形態，且任何新型態無法穿戴的裝備將會掉在地上或融入新型態。直到你解除該型態前，融入新型態的裝備將不會產生任何效果。"
+				]
+			}
+		]
+	},
+	"Druid Circle|Druid|PHB|2": {
+		"name": "德魯伊結社",
+		"ENG_name": "Druid Circle",
+		"entries": [
+			"在2級時，你從可選結社列表中選擇並參與一個德魯伊結社。你的選擇將在2級、6級、10級、和14級時賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Wild Shape Improvement|Druid|PHB|4": {
+		"name": "荒野形態強化",
+		"ENG_name": "Wild Shape Improvement",
+		"entries": [
+			"在4級時，你的荒野形態獲得強化，參見野獸型態表。"
+		]
+	},
+	"Ability Score Improvement|Druid|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Druid Circle feature|Druid|PHB|6": {
+		"name": "德魯伊結社能力",
+		"ENG_name": "Druid Circle feature",
+		"entries": [
+			"在6級時，你獲得一個由你德魯伊結社所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Wild Shape Improvement|Druid|PHB|8": {
+		"name": "荒野形態強化",
+		"ENG_name": "Wild Shape Improvement",
+		"entries": [
+			"在8級時，你的荒野形態獲得強化，參見野獸型態表。"
+		]
+	},
+	"Ability Score Improvement|Druid|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Druid Circle feature|Druid|PHB|10": {
+		"name": "德魯伊結社能力",
+		"ENG_name": "Druid Circle feature",
+		"entries": [
+			"在10級時，你獲得一個由你德魯伊結社所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Druid|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Druid Circle feature|Druid|PHB|14": {
+		"name": "德魯伊結社能力",
+		"ENG_name": "Druid Circle feature",
+		"entries": [
+			"在14級時，你獲得一個由你德魯伊結社所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Druid|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Timeless Body|Druid|PHB|18": {
+		"name": "不老身軀",
+		"ENG_name": "Timeless Body",
+		"entries": [
+			"從18級開始，你使用的原初魔法讓你老化的更加緩慢。每10年過去，你的身體只會老化1年。"
+		]
+	},
+	"Beast Spells|Druid|PHB|18": {
+		"name": "野獸施法",
+		"ENG_name": "Beast Spells",
+		"entries": [
+			"從18級開始，你可以在處於荒野形態所變成的任何型態時施放你的許多德魯伊法術。你可以在處於野獸型態時執行德魯伊法術的姿勢和聲音構材，但你無法提供材料構材。"
+		]
+	},
+	"Ability Score Improvement|Druid|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Archdruid|Druid|PHB|20": {
+		"name": "大德魯伊",
+		"ENG_name": "Archdruid",
+		"entries": [
+			"在20級時，你可以無限次的使用你的荒野形態。",
+			"此外，你可以忽略你德魯伊法術的姿勢和聲音構材、以及任何沒有價值且不會被法術消耗的材料構材。你在你的原本型態和來自荒野形態的野獸型態中都獲得這個好處。"
+		]
+	},
+	"Fighting Style|Fighter|PHB|1": {
+		"name": "戰鬥風格",
+		"ENG_name": "Fighting Style",
+		"entries": [
+			"你採用一種特殊的戰鬥風格以做為你的專業。從下列選項中選擇一種。你不能獲得相同的戰鬥風格選項超過一次，即使你有機會再選擇它也一樣。",
+			{
+				"type": "options",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "弓道",
+						"ENG_name": "Archery",
+						"entries": [
+							"你在使用遠程武器進行的攻擊檢定中獲得+2加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "近身射手",
+						"ENG_name": "Close Quarters Shooter",
+						"entries": [
+							"當你在距離一個敵意生物5呎以內時進行一次遠程攻擊，你在該攻擊檢定中並不會具有劣勢。你的遠程攻擊忽略距離你30呎內目標的半掩護和四分之三掩護。你在遠程攻擊的攻擊檢定中獲得+1加值。"
+						],
+						"source": "UALightDarkUnderdark"
+					},
+					{
+						"type": "entries",
+						"name": "防禦",
+						"ENG_name": "Defense",
+						"entries": [
+							"當你穿戴護甲時，你的AC獲得+1加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "決鬥",
+						"ENG_name": "Dueling",
+						"entries": [
+							"當你單手持用一把近戰武器，且沒有持用其他武器時，你在使用該武器所進行的傷害骰中獲得+2加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "巨武戰鬥",
+						"ENG_name": "Great Weapon Fighting",
+						"entries": [
+							"當你在使用一把以雙手持用的近戰武器所進行攻擊的傷害骰中骰出了1或2的結果，你可以重骰該骰，且必須使用新的擲骰結果，即使其結果仍然是1或2。該武器必須具有雙手或可雙手屬性才能讓你獲得這個好處。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "水手",
+						"ENG_name": "Mariner",
+						"entries": [
+							"只要你未穿戴重甲或使用盾牌，你就擁有等同於你正常移動速度的游泳速度和攀爬速度，且你的AC獲得+1加值。"
+						],
+						"source": "UAWaterborneAdventures"
+					},
+					{
+						"type": "entries",
+						"name": "守護",
+						"ENG_name": "Protection",
+						"entries": [
+							"當一個你所能看見的生物攻擊一個距離你5呎內你以外的目標，你可以使用你的反應以讓該攻擊檢定承受劣勢。你必須持握一面盾牌。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "坑道鬥士",
+						"ENG_name": "Tunnel Fighter",
+						"entries": [
+							"以一個附贈動作，你可以進入防禦架式並持續直到你的下個回合開始。當你處於防禦架式時，你可以進行藉機攻擊而無需使用你的反應，且你可以處於你觸及範圍內的生物移動超過5呎時使用你的反應對它進行一次近戰攻擊。"
+						],
+						"source": "UALightDarkUnderdark"
+					},
+					{
+						"type": "entries",
+						"name": "雙武器戰鬥",
+						"ENG_name": "Two-Weapon Fighting",
+						"entries": [
+							"當你進行雙武器戰鬥時，你可以將你的屬性調整值加入第二次攻擊的傷害中。"
+						]
+					}
+				]
+			}
+		]
+	},
+	"Second Wind|Fighter|PHB|1": {
+		"name": "回氣",
+		"ENG_name": "Second Wind",
+		"entries": [
+			"你擁有有限的充沛精力讓你得以利用於保護自己不受傷害。在你的回合，你可以使用一個附贈動作以回復等同於{@dice 1d10}+你的戰士等級的生命值。",
+			"一旦你使用此能力，你必須完成一次短休或長休後才能再使用它。"
+		]
+	},
+	"Action Surge|Fighter|PHB|2": {
+		"name": "動作如潮",
+		"ENG_name": "Action Surge",
+		"entries": [
+			"從2級開始，你可以短暫地驅策自己超越你的極限。在你的回合，你可以在你原本的動作和可能的附贈動作之後，另外再採取一次額外的動作。",
+			"一旦你使用此能力，你必須完成一次短休或長休後才能再使用它。從17級開始，你可以在一次休息前使用它二次，但同個回合只能使用一次。"
+		]
+	},
+	"Martial Archetype|Fighter|PHB|3": {
+		"name": "武術範型",
+		"ENG_name": "Martial Archetype",
+		"entries": [
+			"在3級時，你從可選列表中選擇一種你致力在你戰鬥風格和技巧中達成的範型。你所選擇的範型將在3級、7級、10級、15級、和18級時賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Fighter|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Extra Attack|Fighter|PHB|5": {
+		"name": "額外攻擊",
+		"ENG_name": "Extra Attack",
+		"entries": [
+			"從5級開始，每當你在你的回合採取{@action 攻擊}動作，你可以攻擊二次，而非一次。",
+			"當你在此職業升至11級時，攻擊的次數增加到三，且當你在此職業升至20級時，攻擊的次數增加到四。"
+		]
+	},
+	"Ability Score Improvement|Fighter|PHB|6": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至6級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Martial Archetype feature|Fighter|PHB|7": {
+		"name": "武術範型能力",
+		"ENG_name": "Martial Archetype feature",
+		"entries": [
+			"在7級時，你獲得一個由你武術範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Fighter|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Indomitable|Fighter|PHB|9": {
+		"name": "不屈",
+		"ENG_name": "Indomitable",
+		"entries": [
+			"從9級開始，你可以在你一次失敗的豁免檢定中重骰。若你這麼做，你必須使用新的擲骰結果，且你直到完成一次長休之前都不能再使用此能力。",
+			"從13級開始，你可以在長休之間使用此能力二次，且從17級開始，你可以在長休之間使用此能力三次。"
+		]
+	},
+	"Martial Archetype feature|Fighter|PHB|10": {
+		"name": "武術範型能力",
+		"ENG_name": "Martial Archetype feature",
+		"entries": [
+			"在10級時，你獲得一個由你武術範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Extra Attack|Fighter|PHB|11": {
+		"name": "額外攻擊(2)",
+		"ENG_name": "Extra Attack",
+		"entries": [
+			"從11級開始，每當你在你的回合採取{@action 攻擊}動作，你可以攻擊三次。"
+		]
+	},
+	"Ability Score Improvement|Fighter|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Indomitable|Fighter|PHB|13": {
+		"name": "不屈(2次)",
+		"ENG_name": "Indomitable",
+		"entries": [
+			"在13級時，你可以在長休之間使用不屈二次。"
+		]
+	},
+	"Ability Score Improvement|Fighter|PHB|14": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至14級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Martial Archetype feature|Fighter|PHB|15": {
+		"name": "武術範型能力",
+		"ENG_name": "Martial Archetype feature",
+		"entries": [
+			"在15級時，你獲得一個由你武術範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Fighter|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Action Surge|Fighter|PHB|17": {
+		"name": "動作如潮(2次)",
+		"ENG_name": "Action Surge",
+		"entries": [
+			"在17級時，你可以在一次休息前使用動作如潮二次，但同個回合只能使用一次。"
+		]
+	},
+	"Indomitable|Fighter|PHB|17": {
+		"name": "不屈(3次)",
+		"ENG_name": "Indomitable",
+		"entries": [
+			"在17級時，你可以在長休之間使用不屈三次。"
+		]
+	},
+	"Martial Archetype feature|Fighter|PHB|18": {
+		"name": "武術範型能力",
+		"ENG_name": "Martial Archetype feature",
+		"entries": [
+			"在18級時，你獲得一個由你武術範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Fighter|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Extra Attack|Fighter|PHB|20": {
+		"name": "額外攻擊(3)",
+		"ENG_name": "Extra Attack",
+		"entries": [
+			"從20級開始，每當你在你的回合採取{@action 攻擊}動作，你可以攻擊四次。"
+		]
+	},
+	"Unarmored Defense|Monk|PHB|1": {
+		"name": "無甲防禦",
+		"ENG_name": "Unarmored Defense",
+		"entries": [
+			"從1級開始，當你未穿戴護甲且未持用盾牌時，你的AC等於10 + 你的敏捷調整值 + 你的睿知調整值。"
+		]
+	},
+	"Martial Arts|Monk|PHB|1": {
+		"name": "武藝",
+		"ENG_name": "Martial Arts",
+		"entries": [
+			"你在武術上的練習讓你掌握了使用徒手打擊和武僧武器的戰鬥方式，武僧武器包含了{@item 短劍|phb}和任何並不具有雙手或重型屬性的簡易近戰武器。",
+			"當你徒手或只持用武僧武器，且未穿戴護甲或持用盾牌時，你獲得下列好處：",
+			{
+				"type": "list",
+				"items": [
+					"你可以在徒手打擊和武僧武器中使用敏捷而非力量來計算其攻擊檢定和傷害骰。",
+					"你可以骰一顆{@dice d4}以取代你徒手打擊或武僧武器的傷害。這顆骰子會隨著你提升武僧等級時變化，參見武僧表中的武藝欄位。",
+					"當你在你的回合以徒手打擊或一把武僧武器採取{@action 攻擊}動作，你能夠以附贈動作進行一次徒手打擊。舉例來說，若你採取{@action 攻擊}動作並使用{@item 長棍|phb}進行攻擊，只要你在該回合尚未採取附贈動作，你就能夠以一個附贈動作再進行一次徒手打擊。"
+				]
+			},
+			"某些宗派會使用特別外型的武僧武器。舉例來說，你可能使用二截用短鍊相連的木棍（名為雙節棍）、或一個刀刃較短而直的鐮刀（名為單鐮）。"
+		]
+	},
+	"Ki|Monk|PHB|2": {
+		"name": "氣",
+		"ENG_name": "Ki",
+		"entries": [
+			"從2級開始，你所受的訓練讓你得以駕馭這被稱為氣的神祕能量。你對於這股能量的掌握體現為你擁有一定數量的氣。你的武僧等級將決定你所擁有的氣的數量，參見武僧表中的氣的欄位。",
+			"你可以消耗這些氣以驅動多種與氣有關能力。你一開始知曉三個這類能力：疾風連擊、堅強防禦、以及飛簷走壁。你將在你於本職業升至特定等級時學到更多與氣有關的能力。",
+			"當你消耗一點氣時，直到你完成一次短休或長休前你都無法再使用被消耗的氣，且你將在短休或長休結束的時候恢復所有你花費掉的氣。你必須在休息中花費至少30分鐘的時間冥想才能恢復你的氣。",
+			"某些與氣有關的能力會要求你的目標進行一次豁免檢定對抗該能力的效果。該豁免檢定的DC計算方式如下：",
+			{
+				"type": "abilityDc",
+				"name": "氣",
+				"attributes": [
+					"wis"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "疾風連擊",
+				"ENG_name": "Flurry of Blows",
+				"entries": [
+					"緊接在你於你的回合採取{@action 攻擊}動作之後，你可以消耗1點氣以使用一個附贈動作進行二次徒手打擊。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "堅強防禦",
+				"ENG_name": "Patient Defense",
+				"entries": [
+					"你可以在你的回合消耗1點氣以使用一個附贈動作採取{@action 閃避}動作。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "飛簷走壁",
+				"ENG_name": "Step of the Wind",
+				"entries": [
+					"你可以在你的回合消耗1點氣以使用一個附贈動作採取{@action 撤離}或{@action 疾走}動作，且你的跳躍距離在該回合變為二倍。"
+				]
+			}
+		]
+	},
+	"Unarmored Movement|Monk|PHB|2": {
+		"name": "無甲移動",
+		"ENG_name": "Unarmored Movement",
+		"entries": [
+			"從2級開始，當你未穿戴護甲或持用盾牌時，你的移動速度增加10呎。這個加值會在你升至特定武僧等級時提升，參見武僧表中的無甲移動欄位。",
+			"在9級時，你獲得在你的回合移動期間，可以沿著垂直表面或橫越水面移動而不至於摔落的能力。"
+		]
+	},
+	"Deflect Missiles|Monk|PHB|3": {
+		"name": "撥擋飛彈",
+		"ENG_name": "Deflect Missiles",
+		"entries": [
+			"從3級開始，當你被一次遠程武器攻擊命中時，你可以使用你的反應以撥擋或抓住該投射物。當你這麼做時，你從該攻擊所受到的傷害將被減少{@dice 1d10} + 你的敏捷調整值 + 你的武僧等級。",
+			"若你將該傷害降低至零，且若該投射物的大小能夠被你單手抓住且你有至少一隻空手，則你可以抓住該投射物。若你透過這個方式抓住一個投射物，你可以消耗1點氣，做為你該次反應的一部份，使用你剛抓到的武器或彈藥進行一次遠程攻擊（範圍20/60）。無論你的武器熟練如何，你都熟練於該次攻擊，且該投射物在此攻擊中被視作武僧武器。"
+		]
+	},
+	"Monastic Tradition|Monk|PHB|3": {
+		"name": "宗派傳承",
+		"ENG_name": "Monastic Tradition",
+		"entries": [
+			"當你升至3級時，你將投身於一種宗派傳承，從可選宗派傳承列表中選擇。你的宗派將在3級、6級、11級、和17級時賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Monk|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Slow Fall|Monk|PHB|4": {
+		"name": "輕身墜",
+		"ENG_name": "Slow Fall",
+		"entries": [
+			"從4級開始，當你墜落時，你可以使用你的反應以將任何你所受到的墜落傷害減少等同於你五倍武僧等級的數值。"
+		]
+	},
+	"Extra Attack|Monk|PHB|5": {
+		"name": "額外攻擊",
+		"ENG_name": "Extra Attack",
+		"entries": [
+			"從5級開始，每當你在你的回合採取{@action 攻擊}動作，你可以攻擊二次，而非一次。"
+		]
+	},
+	"Stunning Strike|Monk|PHB|5": {
+		"name": "震懾拳",
+		"ENG_name": "Stunning Strike",
+		"entries": [
+			"從5級開始，你可以干擾一個對手體內氣的流動。當你以近戰武器攻擊命中另一個生物時，你可以消耗1點氣以嘗試進行一次震懾拳。目標必須成功通過一次體質豁免，否則被{@condition 震懾}直到你的下個回合結束。"
+		]
+	},
+	"Ki-Empowered Strikes|Monk|PHB|6": {
+		"name": "真氣駐拳",
+		"ENG_name": "Ki-Empowered Strikes",
+		"entries": [
+			"從6級開始，在克服對非魔法攻擊和傷害的抗性和免疫能力時，你的徒手打擊被視作魔法武器。"
+		]
+	},
+	"Monastic Tradition feature|Monk|PHB|6": {
+		"name": "宗派傳承能力",
+		"ENG_name": "Monastic Tradition feature",
+		"entries": [
+			"在6級時，你獲得一個來自你宗派傳承的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Evasion|Monk|PHB|7": {
+		"name": "反射閃避",
+		"ENG_name": "Evasion",
+		"entries": [
+			"在7級時，你直覺性的靈活身法讓你能夠躲開某些範圍效果，像是藍龍的閃電吐息、或{@spell 火球術}法術。當你成為一個允許你進行敏捷豁免以僅承受一半傷害的效果的目標時，你改為在豁免成功時不受任何傷害，且在豁免失敗時僅承受一半傷害。"
+		]
+	},
+	"Stillness of Mind|Monk|PHB|7": {
+		"name": "心頭滅卻",
+		"ENG_name": "Stillness of Mind",
+		"entries": [
+			"從7級開始，你可以使用你的動作以結束一個讓你被{@condition 魅惑}或{@condition 恐懼}的效果。"
+		]
+	},
+	"Ability Score Improvement|Monk|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Unarmored Movement improvement|Monk|PHB|9": {
+		"name": "無甲移動強化",
+		"ENG_name": "Unarmored Movement improvement",
+		"entries": [
+			"在9級時，你獲得在你的回合移動期間，可以沿著垂直表面或橫越水面移動而不至於摔落的能力。"
+		]
+	},
+	"Purity of Body|Monk|PHB|10": {
+		"name": "百病不侵",
+		"ENG_name": "Purity of Body",
+		"entries": [
+			"在10級時，流通於你周身的氣讓你免疫於疾病和毒素（包含中毒狀態）。"
+		]
+	},
+	"Monastic Tradition feature|Monk|PHB|11": {
+		"name": "宗派傳承能力",
+		"ENG_name": "Monastic Tradition feature",
+		"entries": [
+			"在11級時，你獲得一個來自你宗派傳承的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Monk|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Tongue of the Sun and Moon|Monk|PHB|13": {
+		"name": "天語通",
+		"ENG_name": "Tongue of the Sun and Moon",
+		"entries": [
+			"從13級開始，你習得接觸其他心靈中的氣魂，好讓你理解所有被說出的語言。同時，任何理解至少一種語言的生物也都可以理解你所說的話。"
+		]
+	},
+	"Diamond Soul|Monk|PHB|14": {
+		"name": "金剛魂",
+		"ENG_name": "Diamond Soul",
+		"entries": [
+			"從14級開始，你對氣的掌握讓你熟練於所有的豁免檢定。",
+			"此外，每當你進行一次豁免檢定且豁免失敗，你可以消耗1點氣以重骰它並使用第二個擲骰結果。"
+		]
+	},
+	"Timeless Body|Monk|PHB|15": {
+		"name": "不朽身軀",
+		"ENG_name": "Timeless Body",
+		"entries": [
+			"在15級時，你體內的氣將維持你免受任何衰老的弊害，且你不會被魔法變老。然而，你仍然會因為衰老而死亡。此外，你將不再需要食物和飲水。"
+		]
+	},
+	"Ability Score Improvement|Monk|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Monastic Tradition feature|Monk|PHB|17": {
+		"name": "宗派傳承能力",
+		"ENG_name": "Monastic Tradition feature",
+		"entries": [
+			"在17級時，你獲得一個來自你宗派傳承的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Empty Body|Monk|PHB|18": {
+		"name": "空靈體",
+		"ENG_name": "Empty Body",
+		"entries": [
+			"從18級開始，你可以使用你的動作消耗4點氣以變得{@condition 隱形}長達1分鐘。在這段期間，你同時獲得對除了力場傷害以外所有傷害的抗性。",
+			"此外，你可以消耗8點氣以施放{@spell 星界投影}法術，無需材料構材。當你這麼做時，你無法讓任何其他生物跟你一起被投影至星界。"
+		]
+	},
+	"Ability Score Improvement|Monk|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Perfect Soul|Monk|PHB|20": {
+		"name": "超凡魂",
+		"ENG_name": "Perfect Soul",
+		"entries": [
+			"在20級時，當你骰先攻時且已經沒有剩下的氣時，你獲得4點氣。"
+		]
+	},
+	"Divine Sense|Paladin|PHB|1": {
+		"name": "神聖感知",
+		"ENG_name": "Divine Sense",
+		"entries": [
+			"強大的邪惡對你來說就像是令人作嘔的臭氣，而強大的善良在你的耳中就如同仙樂般鳴響。以一個動作，你可以擴張你的意識以偵測這類力量。直到你的下個回合結束前，你知曉任何距離你60呎內，且未處於全掩護的天界生物、邪魔、或不死生物的位置。你知曉被你感知到的存在的種類（天界生物、邪魔、或不死生物），但無法知曉它的身分（例如吸血鬼伯爵，斯特拉德．馮．扎洛維奇）。在同樣的範圍內，你也可以偵測到任何被像是{@spell 聖居}法術給祝聖或褻瀆的場所或物體。",
+			"你可以使用這個能力的次數等同於1+你的魅力調整值。當你完成一次長休，你恢復所有你花費掉的次數。"
+		]
+	},
+	"Lay on Hands|Paladin|PHB|1": {
+		"name": "聖療",
+		"ENG_name": "Lay on Hands",
+		"entries": [
+			"你祝福的碰觸可以醫治傷口。你擁有一個治療能量池，會在你每次長休後補滿。藉由治療能量池，你可以回復總共等同於你聖騎士等級 x 5的生命值。",
+			"以一個動作，你可以觸碰一個生物並汲取治療池中的能量以讓該生物回復一定數量的生命值，最多等同於你治療池中剩餘的數量。",
+			"或者，你可以消耗你治療池中的5點生命值，以治療或中和一個正影響目標的疾病或毒素。你可以使用一次聖療治療複數個疾病並中和複數個毒素，但你必須為各疾病和毒素分別支付治療池中的生命值。",
+			"這個能力對不死生物和構裝體沒有任何效果。"
+		]
+	},
+	"Divine Smite|Paladin|PHB|2": {
+		"name": "至聖斬",
+		"ENG_name": "Divine Smite",
+		"entries": [
+			"從2級開始，當你使用一次近戰武器攻擊命中一個生物，除了武器傷害以外，你可以消耗一個法術位以對目標造成額外的光耀傷害。這個額外傷害在消耗1環法術位時為{@dice 2d8}點，高於一環的法術位則每環再加上{@dice 1d8}點傷害，最高至{@dice 5d8}。若目標為不死生物或邪魔，則傷害再增加{@dice 1d8}點，最高至{@dice 6d8}。"
+		]
+	},
+	"Fighting Style|Paladin|PHB|2": {
+		"name": "戰鬥風格",
+		"ENG_name": "Fighting Style",
+		"entries": [
+			"在2級時，你採用一種特殊的戰鬥風格以做為你的專業。從下列選項中選擇一種。你不能獲得相同的戰鬥風格選項超過一次，即使你有機會再選擇它也一樣。",
+			{
+				"type": "options",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "近身射手",
+						"ENG_name": "Close Quarters Shooter",
+						"entries": [
+							"當你在距離一個敵意生物5呎以內時進行一次遠程攻擊，你在該攻擊檢定中並不會具有劣勢。你的遠程攻擊忽略距離你30呎內目標的半掩護和四分之三掩護。你在遠程攻擊的攻擊檢定中獲得+1加值。"
+						],
+						"source": "UALightDarkUnderdark"
+					},
+					{
+						"type": "entries",
+						"name": "防禦",
+						"ENG_name": "Defense",
+						"entries": [
+							"當你穿戴護甲時，你的AC獲得+1加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "決鬥",
+						"ENG_name": "Dueling",
+						"entries": [
+							"當你單手持用一把近戰武器，且沒有持用其他武器時，你在使用該武器所進行的傷害骰中獲得+2加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "巨武戰鬥",
+						"ENG_name": "Great Weapon Fighting",
+						"entries": [
+							"當你在使用一把以雙手持用的近戰武器所進行攻擊的傷害骰中骰出了1或2的結果，你可以重骰該骰，且必須使用新的擲骰結果，即使其結果仍然是1或2。該武器必須具有雙手或可雙手屬性才能讓你獲得這個好處。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "水手",
+						"ENG_name": "Mariner",
+						"entries": [
+							"只要你未穿戴重甲或使用盾牌，你就擁有等同於你正常移動速度的游泳速度和攀爬速度，且你的AC獲得+1加值。"
+						],
+						"source": "UAWaterborneAdventures"
+					},
+					{
+						"type": "entries",
+						"name": "守護",
+						"ENG_name": "Protection",
+						"entries": [
+							"當一個你所能看見的生物攻擊一個距離你5呎內你以外的目標，你可以使用你的反應以讓該攻擊檢定承受劣勢。你必須持握一面盾牌。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "坑道鬥士",
+						"ENG_name": "Tunnel Fighter",
+						"entries": [
+							"以一個附贈動作，你可以進入防禦架式並持續直到你的下個回合開始。當你處於防禦架式時，你可以進行藉機攻擊而無需使用你的反應，且你可以處於你觸及範圍內的生物移動超過5呎時使用你的反應對它進行一次近戰攻擊。"
+						],
+						"source": "UALightDarkUnderdark"
+					}
+				]
+			}
+		]
+	},
+	"Spellcasting|Paladin|PHB|2": {
+		"name": "施法",
+		"ENG_name": "Spellcasting",
+		"entries": [
+			"從2級起，你學會了如牧師一般透過冥想和祈禱利用神聖魔法。請參閱{@book 第十章|PHB|10}以了解關於施法的規則，以及第十一章以查閱{@filter 聖騎士法術列表|spells|class=paladin}。",
+			{
+				"type": "entries",
+				"name": "準備及施放法術",
+				"entries": [
+					"聖騎士表中顯示了你有多少個法術位可以用來施放你一環或更高環的{@filter 聖騎士法術|spells|class=paladin}。要施放其中一個這些法術，你必須消耗一個與該法術環階相同或更高的法術位。你在完成一次長休後恢復所有你花費掉的法術位。",
+					"你準備一份你所能施放的聖騎士法術列表，從聖騎士法術列表中選擇。當你這麼做時，選擇數量等同於你魅力調整值 + 你聖騎士等級的一半（向下取整）的聖騎士法術（最少一個法術）。這些法術的環階都必須符合你所擁有法術位的環階。",
+					"舉例來說，如果你是一個5級的聖騎士，你擁有四個1環和二個2環的法術位。你的魅力為14，則你已準備法術的列表中可以包含總共四個1環或2環的法術。若你準備了1環法術{@spell 治療傷勢}，你可以使用1環和2環的法術位來施放它。施放法術並不會將它從你的準備法術列表中移除。",
+					"你可以在你完成一次長休時改變你的準備法術列表。準備一份新的聖騎士法術列表需要花費時間於祈禱和冥想：你需要為你列表上每個法術的每個環階都花費至少1分鐘的時間。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法屬性",
+				"entries": [
+					"因為你法術的能量源自於你信仰的強度，魅力是你施展聖騎士法術的施法屬性。每當一個法術提及你的施法屬性時，你將使用你的魅力。此外，當決定你聖騎士法術的豁免DC、以及使用聖騎士法術進行攻擊檢定時，你使用你的魅力調整值。",
+					{
+						"type": "abilityDc",
+						"name": "法術",
+						"attributes": [
+							"cha"
+						]
+					},
+					{
+						"type": "abilityAttackMod",
+						"name": "法術",
+						"attributes": [
+							"cha"
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法法器",
+				"entries": [
+					"你可以使用一個{@item 聖徽|phb}（第五章），來做為你施放聖騎士法術的法器。"
+				]
+			}
+		]
+	},
+	"Divine Health|Paladin|PHB|3": {
+		"name": "神性體魄",
+		"ENG_name": "Divine Health",
+		"entries": [
+			"從3級起，在你體內湧動的神聖魔法使你免疫於疾病。"
+		]
+	},
+	"Sacred Oath|Paladin|PHB|3": {
+		"name": "神聖誓言",
+		"ENG_name": "Sacred Oath",
+		"entries": [
+			"當你升至3級時，你立下永遠做為聖騎士的神聖誓言。在此之前，你僅是處於準備階段，投身於這條道途，但尚未立誓遵從它。現在，你從可選的聖誓列表中選擇一個。",
+			"你的選擇將在3級、7級、15級、和20級時賦予你新的能力。這些能力包括了聖誓法術以及引導神力能力。",
+			{
+				"name": "聖誓法術",
+				"ENG_name": "Oath Spells",
+				"entries": [
+					"每個聖誓都具有一張關聯法術列表。你將在升至各聖誓說明中指定的聖騎士等級時獲得這些法術。一旦你獲得聖誓法術，你將永遠視作已經準備了它，且它不會計入你每日可準備的法術數量中。",
+					"若你獲得一個不在聖騎士法術列表上的聖誓法術，則該法術對你而言仍然視作聖騎士法術。"
+				]
+			},
+			{
+				"name": "引導神力",
+				"ENG_name": "Channel Divinity",
+				"entries": [
+					"你的聖誓允許你引導神聖能量以驅動魔法效果。每個由你的聖誓所提供的引導神力都會說明使用它的方式。",
+					"當你使用你的引導神力時，你選擇要使用哪一個選項。你接著必須完成一次短休或長休後才能再使用你的引導神力。",
+					"某些引導神力的效果會需要豁免檢定。當你使用本職業的這類效果時，其DC等同於你的聖騎士法術豁免DC。"
+				]
+			},
+			{
+				"name": "背棄誓言",
+				"type": "inset",
+				"entries": [
+					"聖騎士嘗試於使自己符合最高的道德標準，但即使是最具美德的聖騎士也會犯錯。有時是因為正確的道路太過高不可攀，有時當下的情境迫使你在兩害相權取其輕，而有時狂熱的激情則會讓聖騎士的違背了他或她的誓言。",
+					"背棄誓言的聖騎士通常會向相同信仰的牧師或相同教團的聖騎士尋求赦罪。聖騎士可能會花費一整晚守夜祈禱以做為他懺悔的證明，或者齋戒禁食以表示自我否定，或者採取一個快速或類似的克己舉動。在執行認罪和饒恕的儀式後，聖騎士便重獲純潔。",
+					"若一個聖騎士蓄意地違背了他或她的誓言，且沒有展現出任何悔過的跡象，後果可能會更加嚴重。根據DM的裁斷，一個不知悔悟的聖騎士可能被迫放棄此職業而過繼為另一個職業，或是採用記載於《地下城主指南》中的破誓聖騎士選項。"
+				]
+			}
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Paladin|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Extra Attack|Paladin|PHB|5": {
+		"name": "額外攻擊",
+		"ENG_name": "Extra Attack",
+		"entries": [
+			"從5級開始，每當你在你的回合採取{@action 攻擊}動作，你可以攻擊二次，而非一次。"
+		]
+	},
+	"Aura of Protection|Paladin|PHB|6": {
+		"name": "守護靈光",
+		"ENG_name": "Aura of Protection",
+		"entries": [
+			"從6級開始，每當你或一個距離你10呎內的友善生物必須進行一次豁免檢定，該生物在該豁免檢定中獲得等同於你魅力調整值的加值（最少為+1）。你必須要意識清醒才能提供這個加值。",
+			"在18級時，這道靈光的範圍增加至30呎。"
+		]
+	},
+	"Sacred Oath feature|Paladin|PHB|7": {
+		"name": "神聖誓言能力",
+		"ENG_name": "Sacred Oath feature",
+		"entries": [
+			"在7級時，你獲得一個由你神聖誓言所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Paladin|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Aura of Courage|Paladin|PHB|10": {
+		"name": "勇氣靈光",
+		"ENG_name": "Aura of Courage",
+		"entries": [
+			"從10級開始，你和任何距離你10呎內的友善生物不會在你意識清醒的時候陷入{@condition 恐懼}。",
+			"在18級時，這道靈光的範圍增加至30呎。"
+		]
+	},
+	"Improved Divine Smite|Paladin|PHB|11": {
+		"name": "強化至聖斬",
+		"ENG_name": "Improved Divine Smite",
+		"entries": [
+			"從11級起，你是如此的充滿公義之力，以至於你的所有近戰武器打擊都帶著神聖的能量。每當你使用一把近戰武器命中一個生物，該生物將受到額外的{@dice 1d8}光耀傷害。"
+		]
+	},
+	"Ability Score Improvement|Paladin|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Cleansing Touch|Paladin|PHB|14": {
+		"name": "淨化之觸",
+		"ENG_name": "Cleansing Touch",
+		"entries": [
+			"從14級開始，你可以使用你的動作以結束一個作用於你自己或一個你所碰觸自願生物的法術。",
+			"你可以使用這個能力的次數等同於你的魅力調整值（最少一次）。你在完成一次長休後恢復所有你花費掉的次數。"
+		]
+	},
+	"Sacred Oath feature|Paladin|PHB|15": {
+		"name": "神聖誓言能力",
+		"ENG_name": "Sacred Oath feature",
+		"entries": [
+			"在15級時，你獲得一個由你神聖誓言所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Paladin|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Aura improvements|Paladin|PHB|18": {
+		"name": "靈光強化",
+		"ENG_name": "Aura improvements",
+		"entries": [
+			"在18級時，你的靈光的範圍增加至30呎。"
+		]
+	},
+	"Ability Score Improvement|Paladin|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Sacred Oath feature|Paladin|PHB|20": {
+		"name": "神聖誓言能力",
+		"ENG_name": "Sacred Oath feature",
+		"entries": [
+			"在20級時，你獲得一個由你神聖誓言所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Favored Enemy|Ranger|PHB|1": {
+		"name": "宿敵",
+		"ENG_name": "Favored Enemy",
+		"entries": [
+			"從1級開始，你在對一個特定類型的敵人的研究、追跡、狩獵、和甚至交談上已相當具備充足的經驗。",
+			"選擇一個宿敵類型：{@filter 異怪|bestiary|type=aberration}、{@filter 野獸|bestiary|type=beast}、{@filter 天界生物|bestiary|type=celestial}、{@filter 構裝體|bestiary|type=construct}、{@filter 龍|bestiary|type=dragon}、{@filter 元素|bestiary|type=elemental}、{@filter 精類|bestiary|type=fey}、{@filter 邪魔|bestiary|type=fiend}、{@filter 巨人|bestiary|type=giant}、{@filter 怪獸|bestiary|type=monstrosity}、{@filter 泥怪|bestiary|type=ooze}、{@filter 植物|bestiary|type=plant}、或{@filter 不死生物|bestiary|type=undead}。或者，你可以選擇二個{@filter 類人生物|bestiary|type=humanoid}種族（像是{@creature 豺狼人|mm}和{@creature 獸人|mm}）做為宿敵。",
+			"你在用於追蹤你宿敵的睿知（{@skill 求生}）檢定、以及用以回憶關於它們情報的智力檢定中具有優勢。",
+			"當你獲得此能力時，若你的宿敵擁有至少一種語言，你也選擇學會一種被它們所使用的語言。",
+			"你在6級和14級時選擇一種額外的宿敵以及一種關聯語言。隨著你提升等級，你的選擇必須反映你在你冒險中所遭遇過的怪物類型。"
+		]
+	},
+	"Natural Explorer|Ranger|PHB|1": {
+		"name": "自然探索者",
+		"ENG_name": "Natural Explorer",
+		"entries": [
+			"你特別熟悉於一種自然環境，且熟稔在這類區域中旅行和生存的方式。選擇一種偏好環境：極地、海岸、沙漠、森林、草地、高山、沼澤、或幽暗地域。當你進行一次關聯於你偏好環境的智力或睿知檢定時，若你使用一個你所熟練的技能，則你的熟練加值變為二倍。",
+			"當在你的偏好環境中旅行長達1個小時或更久，你將獲得下列好處：",
+			{
+				"type": "list",
+				"items": [
+					"困難地形不會減慢你們團隊的旅行速度。",
+					"除非是因為魔法的緣故，否則你們團隊不會迷路。",
+					"即使你在旅行途中正從事於其他行動（像是覓食、導航、或追跡），你仍保持對危險的警戒。",
+					"若你正獨自旅行，你能夠以正常步調隱匿移動。",
+					"當你覓食時，你能找到二倍你原本所能找到的食物。",
+					"當你追跡其他生物時，你也能得知它們確切的數量、它們的體型、以及它們在多久之前經過這片區域。"
+				]
+			},
+			"你在6級和10級時選擇一種額外的偏好環境。"
+		]
+	},
+	"Fighting Style|Ranger|PHB|2": {
+		"name": "戰鬥風格",
+		"ENG_name": "Fighting Style",
+		"entries": [
+			"在2級時，你採用一種特殊的戰鬥風格以做為你的專業。從下列選項中選擇一種。你不能獲得相同的戰鬥風格選項超過一次，即使你有機會再選擇它也一樣。",
+			{
+				"type": "options",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "弓道",
+						"ENG_name": "Archery",
+						"entries": [
+							"你在使用遠程武器進行的攻擊檢定中獲得+2加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "近身射手",
+						"ENG_name": "Close Quarters Shooter",
+						"entries": [
+							"當你在距離一個敵意生物5呎以內時進行一次遠程攻擊，你在該攻擊檢定中並不會具有劣勢。你的遠程攻擊忽略距離你30呎內目標的半掩護和四分之三掩護。你在遠程攻擊的攻擊檢定中獲得+1加值。"
+						],
+						"source": "UALightDarkUnderdark"
+					},
+					{
+						"type": "entries",
+						"name": "防禦",
+						"ENG_name": "Defense",
+						"entries": [
+							"當你穿戴護甲時，你的AC獲得+1加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "決鬥",
+						"ENG_name": "Dueling",
+						"entries": [
+							"當你單手持用一把近戰武器，且沒有持用其他武器時，你在使用該武器所進行的傷害骰中獲得+2加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "水手",
+						"ENG_name": "Mariner",
+						"entries": [
+							"只要你未穿戴重甲或使用盾牌，你就擁有等同於你正常移動速度的游泳速度和攀爬速度，且你的AC獲得+1加值。"
+						],
+						"source": "UAWaterborneAdventures"
+					},
+					{
+						"type": "entries",
+						"name": "坑道鬥士",
+						"ENG_name": "Tunnel Fighter",
+						"entries": [
+							"以一個附贈動作，你可以進入防禦架式並持續直到你的下個回合開始。當你處於防禦架式時，你可以進行藉機攻擊而無需使用你的反應，且你可以處於你觸及範圍內的生物移動超過5呎時使用你的反應對它進行一次近戰攻擊。"
+						],
+						"source": "UALightDarkUnderdark"
+					},
+					{
+						"type": "entries",
+						"name": "雙武器戰鬥",
+						"ENG_name": "Two-Weapon Fighting",
+						"entries": [
+							"當你進行雙武器戰鬥時，你可以將你的屬性調整值加入第二次攻擊的傷害中。"
+						]
+					}
+				]
+			}
+		]
+	},
+	"Spellcasting|Ranger|PHB|2": {
+		"name": "施法",
+		"ENG_name": "Spellcasting",
+		"entries": [
+			"在你升至2級時，你學會如同德魯伊的方式使用大自然的精粹以施放法術。請參閱{@book 第十章|PHB|10}以了解關於施法的規則，以及第十一章以查閱{@filter 遊俠法術列表|spells|class=ranger}。",
+			{
+				"type": "entries",
+				"name": "法術位",
+				"entries": [
+					"遊俠表中顯示了你有多少個法術位可以用來施放你一環或更高環的{@filter 遊俠法術|spells|class=ranger}。要施放其中一個法術，你必須消耗一個與該法術環階相同或更高的法術位。你在完成一次長休後恢復所有你花費掉的法術位。",
+					"舉例來說，如果你知曉一個1環的{@spell 化獸為友}法術，且你擁有一個1環和一個2環的法術位，則你可以使用其中任意一個法術位來施放{@spell 化獸為友}。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "一環或更高環的已知法術",
+				"entries": [
+					"你知曉二個從遊俠法術列表中自選的1環法術。",
+					"遊俠表中的已知法術欄位顯示你將在何時學習到更多自選的遊俠法術。每個這些法術的環階都必須符合你所擁有法術位的環階。舉例來說，當你在此職業升至5級時，你可以學習一個新的1環或2環法術。",
+					"此外，當你提升這個職業的等級時，你可以從遊俠的法術列表中挑選一個法術來取代一個你目前已知的法術，而它的環階也必須符合你所擁有法術位的環階。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法屬性",
+				"entries": [
+					"由於你的魔法是源自你與大自然的協調，睿知是你施展遊俠法術的施法屬性。每當法術提及你的施法屬性時，你將使用你的睿知。此外，當決定你遊俠法術的豁免DC、以及使用遊俠法術進行攻擊檢定時，你使用你的睿知調整值。",
+					{
+						"type": "abilityDc",
+						"name": "法術",
+						"attributes": [
+							"wis"
+						]
+					},
+					{
+						"type": "abilityAttackMod",
+						"name": "法術",
+						"attributes": [
+							"wis"
+						]
+					}
+				]
+			}
+		]
+	},
+	"Ranger Archetype|Ranger|PHB|3": {
+		"name": "遊俠範型",
+		"ENG_name": "Ranger Archetype",
+		"entries": [
+			"在3級時，你從可選範型列表中選擇一種你致力於達成的範型。你的選擇將在3級、7級、11級、和15級時賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Primeval Awareness|Ranger|PHB|3": {
+		"name": "原初意識",
+		"ENG_name": "Primeval Awareness",
+		"entries": [
+			"從3級開始，你可以使用你的動作並消耗一個遊俠法術位以集中你的意識於你周遭的區域。在為你所消耗法術位的每環階1分鐘內，你可以感知下列類型的生物是否存在於距離你1哩內的區域：異怪、天界生物、龍、元素、精類、邪魔、和不死生物。此能力無法揭露出該生物的位置和數量。"
+		]
+	},
+	"Ability Score Improvement|Ranger|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Extra Attack|Ranger|PHB|5": {
+		"name": "額外攻擊",
+		"ENG_name": "Extra Attack",
+		"entries": [
+			"從5級開始，每當你在你的回合採取{@action 攻擊}動作，你可以攻擊二次，而非一次。"
+		]
+	},
+	"Favored Enemy and Natural Explorer improvements|Ranger|PHB|6": {
+		"name": "宿敵和自然探索者強化",
+		"ENG_name": "Favored Enemy and Natural Explorer improvements",
+		"entries": [
+			"在6級時，你獲得一種額外的偏好環境。",
+			"在6級時，你選擇一種額外的宿敵以及一種關聯語言。你的選擇必須反映你在你冒險中所遭遇過的怪物類型。"
+		]
+	},
+	"Ranger Archetype feature|Ranger|PHB|7": {
+		"name": "遊俠範型能力",
+		"ENG_name": "Ranger Archetype feature",
+		"entries": [
+			"在7級時，你獲得一個由你遊俠範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Ranger|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Land's Stride|Ranger|PHB|8": {
+		"name": "大地行者",
+		"ENG_name": "Land's Stride",
+		"entries": [
+			"從8級開始，移動穿過非魔法的困難地形並不會花費你額外的移動速度。你也可以穿越非魔法植物而不會被它們減緩速度，若它們是荊棘、棘刺、或其他類似危險，你也不會被它們的傷害。",
+			"此外，在對抗由魔法創造或控制的植物所造成的阻礙移動效果時（像是{@spell 糾纏術}法術創造出的植物），你所進行的豁免檢定具有優勢。"
+		]
+	},
+	"Hide in Plain Sight|Ranger|PHB|10": {
+		"name": "避人耳目",
+		"ENG_name": "Hide in Plain Sight",
+		"entries": [
+			"從10級開始，你可以花費1分鐘的時間為自己創造一個偽裝。你必須要能取用新鮮的泥巴、土壤、植物、煙灰、和其他自然產出的材料以創造你的偽裝。",
+			"一旦你透過這個方式偽裝，你可以透過將自己貼合於一個高度和寬度至少與你一樣大的固體表面上，例如樹木或牆壁，以嘗試進行躲藏。只要你待於該處且不移動或採取動作，你就在敏捷（{@skill 隱匿}）檢定中獲得+10的加值。一旦你移動或採取動作或反應，你就必須再次偽裝自己以獲得這個好處。"
+		]
+	},
+	"Natural Explorer improvement|Ranger|PHB|10": {
+		"name": "自然探索者強化",
+		"ENG_name": "Natural Explorer improvement",
+		"entries": [
+			"在10級時，你獲得一種額外的偏好環境。"
+		]
+	},
+	"Ranger Archetype feature|Ranger|PHB|11": {
+		"name": "遊俠範型能力",
+		"ENG_name": "Ranger Archetype feature",
+		"entries": [
+			"在11級時，你獲得一個由你遊俠範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Ranger|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Vanish|Ranger|PHB|14": {
+		"name": "無蹤步",
+		"ENG_name": "Vanish",
+		"entries": [
+			"從14級開始，你可以在你的回合以一個附贈動作採取{@action 躲藏}動作。同時，你不會被非魔法的手段追蹤，除非你選擇留下蹤跡。"
+		]
+	},
+	"Favored Enemy improvement|Ranger|PHB|14": {
+		"name": "宿敵強化",
+		"ENG_name": "Favored Enemy improvement",
+		"entries": [
+			"在14級時，你選擇一種額外的宿敵以及一種關聯語言。你的選擇必須反映你在你冒險中所遭遇過的怪物類型。"
+		]
+	},
+	"Ranger Archetype feature|Ranger|PHB|15": {
+		"name": "遊俠範型能力",
+		"ENG_name": "Ranger Archetype feature",
+		"entries": [
+			"在15級時，你獲得一個由你遊俠範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Ranger|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Feral Senses|Ranger|PHB|18": {
+		"name": "野性感官",
+		"ENG_name": "Feral Senses",
+		"entries": [
+			"在18級時，你獲得超自然的感官以幫助你對抗看不見的生物。當你攻擊一個你看不見的生物時，你並不會因為無法看見它而在你對它進行的攻擊檢定中承受劣勢。同時，只要該生物沒有躲藏於你，且你不處於{@condition 目盲}或{@condition 耳聾}狀態，則你也能察覺到任何距離你30呎內{@condition 隱形}生物的位置。"
+		]
+	},
+	"Ability Score Improvement|Ranger|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Foe Slayer|Ranger|PHB|20": {
+		"name": "眾敵屠戮",
+		"ENG_name": "Foe Slayer",
+		"entries": [
+			"在20級時，你成為了一名針對你敵人的無雙獵手。在你的每個回合一次，你可以將你的睿知調整值加到你對你其中一個宿敵所進行的攻擊檢定或傷害骰中。你可以選擇在擲骰之前或之後使用此能力，但是必須在任何擲骰效果適用之前使用。"
+		]
+	},
+	"Favored Enemy|Ranger (Revised)|UATHERANGERREVISED|1": {
+		"name": "宿敵",
+		"ENG_name": "Favored Enemy",
+		"entries": [
+			"從1級開始，你在對荒野中經常遭遇到的一個特定類型敵人的研究、追跡、狩獵、和甚至交談上已相當具備充足的經驗。",
+			"選擇一個宿敵類型：{@filter 野獸|bestiary|type=beast}、{@filter 精類|bestiary|type=fey}、{@filter 類人生物|bestiary|type=humanoid}、{@filter 怪獸|bestiary|type=monstrosity}、或{@filter 不死生物|bestiary|type=undead}。你對所選類型的生物所進行的武器攻擊的傷害骰獲得+2加值。此外，你在用於追蹤你宿敵的睿知（{@skill 求生}）檢定、以及用以回憶關於它們情報的智力檢定中具有優勢。",
+			"當你獲得此能力時，你同時學會一種你所選擇的語言，這個語言通常會是你的宿敵、或與之有關的生物所使用的語言。然而，你可以自由選擇任意一種你想要學會的語言。"
+		]
+	},
+	"Natural Explorer|Ranger (Revised)|UATHERANGERREVISED|1": {
+		"name": "自然探索者",
+		"ENG_name": "Natural Explorer",
+		"entries": [
+			"你熟練於在自然世界中領航帶路，且你在被襲擊時也能迅速而果斷的做出反應。這賦予了你下列好處：",
+			{
+				"type": "list",
+				"items": [
+					"你無視困難地形。",
+					"你在先攻檢定中具有優勢。",
+					"在你戰鬥中的第一個回合，你在對任何尚未行動的生物所進行的攻擊檢定中具有優勢。"
+				]
+			},
+			"此外，你精通於在荒野中領航。當旅行長達1個小時或更久，你將獲得下列好處：",
+			{
+				"type": "list",
+				"items": [
+					"困難地形不會減慢你們團隊的旅行速度。",
+					"除非是因為魔法的緣故，否則你們團隊不會迷路。",
+					"即使你在旅行途中正從事於其他行動（像是覓食、導航、或追跡），你仍保持對危險的警戒。",
+					"若你正獨自旅行，你能夠以正常步調隱匿移動。",
+					"當你覓食時，你能找到二倍你原本所能找到的食物。",
+					"當你追跡其他生物時，你也能得知它們確切的數量、它們的體型、以及它們在多久之前經過這片區域。"
+				]
+			}
+		]
+	},
+	"Spellcasting|Ranger (Revised)|UATHERANGERREVISED|2": {
+		"name": "施法",
+		"ENG_name": "Spellcasting",
+		"entries": [
+			"在你升至2級時，你學會如同德魯伊的方式使用大自然的精粹以施放法術。請參閱{@book 第十章|PHB|10}以了解關於施法的規則，以及第十一章以查閱{@filter 遊俠法術列表|spells|class=ranger}。",
+			{
+				"type": "entries",
+				"name": "法術位",
+				"entries": [
+					"遊俠表中顯示了你有多少個法術位可以用來施放你一環或更高環的{@filter 遊俠法術|spells|class=ranger}。要施放其中一個法術，你必須消耗一個與該法術環階相同或更高的法術位。你在完成一次長休後恢復所有你花費掉的法術位。",
+					"舉例來說，如果你知曉一個1環的{@spell 化獸為友}法術，且你擁有一個1環和一個2環的法術位，則你可以使用其中任意一個法術位來施放{@spell 化獸為友}。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "一環或更高環的已知法術",
+				"entries": [
+					"你知曉二個從遊俠法術列表中自選的1環法術。",
+					"遊俠表中的已知法術欄位顯示你將在何時學習到更多自選的遊俠法術。每個這些法術的環階都必須符合你所擁有法術位的環階。舉例來說，當你在此職業升至5級時，你可以學習一個新的1環或2環法術。",
+					"此外，當你提升這個職業的等級時，你可以從遊俠的法術列表中挑選一個法術來取代一個你目前已知的法術，而它的環階也必須符合你所擁有法術位的環階。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法屬性",
+				"entries": [
+					"由於你的魔法是源自你與大自然的協調，睿知是你施展遊俠法術的施法屬性。每當法術提及你的施法屬性時，你將使用你的睿知。此外，當決定你遊俠法術的豁免DC、以及使用遊俠法術進行攻擊檢定時，你使用你的睿知調整值。",
+					{
+						"type": "abilityDc",
+						"name": "法術",
+						"attributes": [
+							"wis"
+						]
+					},
+					{
+						"type": "abilityAttackMod",
+						"name": "法術",
+						"attributes": [
+							"wis"
+						]
+					}
+				]
+			}
+		]
+	},
+	"Fighting Style|Ranger (Revised)|UATHERANGERREVISED|2": {
+		"name": "戰鬥風格",
+		"ENG_name": "Fighting Style",
+		"entries": [
+			"在2級時，你採用一種特殊的戰鬥風格以做為你的專業。從下列選項中選擇一種。你不能獲得相同的戰鬥風格選項超過一次，即使你有機會再選擇它也一樣。",
+			{
+				"type": "options",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "弓道",
+						"ENG_name": "Archery",
+						"entries": [
+							"你在使用遠程武器進行的攻擊檢定中獲得+2加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "近身射手",
+						"ENG_name": "Close Quarters Shooter",
+						"entries": [
+							"當你在距離一個敵意生物5呎以內時進行一次遠程攻擊，你在該攻擊檢定中並不會具有劣勢。你的遠程攻擊忽略距離你30呎內目標的半掩護和四分之三掩護。你在遠程攻擊的攻擊檢定中獲得+1加值。"
+						],
+						"source": "UALightDarkUnderdark"
+					},
+					{
+						"type": "entries",
+						"name": "防禦",
+						"ENG_name": "Defense",
+						"entries": [
+							"當你穿戴護甲時，你的AC獲得+1加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "決鬥",
+						"ENG_name": "Dueling",
+						"entries": [
+							"當你單手持用一把近戰武器，且沒有持用其他武器時，你在使用該武器所進行的傷害骰中獲得+2加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "水手",
+						"ENG_name": "Mariner",
+						"entries": [
+							"只要你未穿戴重甲或使用盾牌，你就擁有等同於你正常移動速度的游泳速度和攀爬速度，且你的AC獲得+1加值。"
+						],
+						"source": "UAWaterborneAdventures"
+					},
+					{
+						"type": "entries",
+						"name": "坑道鬥士",
+						"ENG_name": "Tunnel Fighter",
+						"entries": [
+							"以一個附贈動作，你可以進入防禦架式並持續直到你的下個回合開始。當你處於防禦架式時，你可以進行藉機攻擊而無需使用你的反應，且你可以處於你觸及範圍內的生物移動超過5呎時使用你的反應對它進行一次近戰攻擊。"
+						],
+						"source": "UALightDarkUnderdark"
+					},
+					{
+						"type": "entries",
+						"name": "雙武器戰鬥",
+						"ENG_name": "Two-Weapon Fighting",
+						"entries": [
+							"當你進行雙武器戰鬥時，你可以將你的屬性調整值加入第二次攻擊的傷害中。"
+						]
+					}
+				]
+			}
+		]
+	},
+	"Primeval Awareness|Ranger (Revised)|UATHERANGERREVISED|3": {
+		"name": "原初意識",
+		"ENG_name": "Primeval Awareness",
+		"entries": [
+			"從3級開始，你在遊俠學識上的專業讓你得以建立一道與你周圍野獸和環境之間的連結。",
+			"你具有一種與野獸交流的天賦能力，且它們將視你為精神上的同類。透過聲音和姿勢，你能夠以一個動作對一個野獸傳達簡單的想法，並可以理解它基本的情緒和意圖。你能得知它的情緒狀態、判斷它是否受到任何魔法的影響、它的短期需求（像是食物或安全的場所）、且你得知你要說服它不攻擊所應採取的行動（若有）。",
+			"你不能對一個你在最近10分鐘內曾經攻擊過的生物使用這個能力。",
+			"此外，你可以調整你的感官以判斷附近是否潛伏著你的宿敵。透過花費1分鐘不受干擾的專注（如同專注於法術），你可以感知到是否有任何宿敵存在於距離你5哩內的區域之中。這能力將揭露出你的宿敵是否存在、它們的數量、以及這些生物離你大致的方向和距離（以哩為單位）。",
+			"若範圍中有複數個宿敵群體，則你將得知它們各自的情報。"
+		]
+	},
+	"Ranger Conclave|Ranger (Revised)|UATHERANGERREVISED|3": {
+		"name": "遊俠密會",
+		"ENG_name": "Ranger Conclave",
+		"entries": [
+			"在3級時，你從可選密會列表中選擇一種你致力於達成的理想範型。你的選擇將在3級、5級、7級、11級、和15級時賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Ranger (Revised)|UATHERANGERREVISED|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Ranger Conclave feature|Ranger (Revised)|UATHERANGERREVISED|5": {
+		"name": "遊俠密會能力",
+		"ENG_name": "Ranger Conclave feature",
+		"entries": [
+			"在5級時，你獲得一個由你遊俠密會所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Greater Favored Enemy|Ranger (Revised)|UATHERANGERREVISED|6": {
+		"name": "高等宿敵",
+		"ENG_name": "Greater Favored Enemy",
+		"entries": [
+			"在6級時，你已經準備好狩獵更加致命的獵物。選擇一個高等宿敵類型：{@filter 異怪|bestiary|type=aberration}、{@filter 天界生物|bestiary|type=celestial}、{@filter 構裝|bestiary|type=construct}、{@filter 龍|bestiary|type=dragon}、{@filter 元素|bestiary|type=elemental}、{@filter 邪魔|bestiary|type=fiend}、或{@filter 巨人|bestiary|type=giant}。你獲得所有你在獲得宿敵能力時所會獲得的好處，包括一種額外語言。你對你所有宿敵的傷害骰加值提升至+4。",
+			"此外，你在對抗任何高等宿敵所使用的法術和能力時所進行豁免檢定中具有優勢。"
+		]
+	},
+	"Ranger Conclave feature|Ranger (Revised)|UATHERANGERREVISED|7": {
+		"name": "遊俠密會能力",
+		"ENG_name": "Ranger Conclave feature",
+		"entries": [
+			"在7級時，你獲得一個由你遊俠密會所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Ranger (Revised)|UATHERANGERREVISED|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Fleet of Foot|Ranger (Revised)|UATHERANGERREVISED|8": {
+		"name": "輕盈步伐",
+		"ENG_name": "Fleet of Foot",
+		"entries": [
+			"從8級開始，你可以在你的回合以一個附贈動作採取{@action 疾走}動作。"
+		]
+	},
+	"Hide in Plain Sight|Ranger (Revised)|UATHERANGERREVISED|10": {
+		"name": "避人耳目",
+		"ENG_name": "Hide in Plain Sight",
+		"entries": [
+			"從10級開始，你可以長時間保持完美的靜止以發動伏擊。",
+			"當你嘗試在你的回合躲藏時，你可以選擇不在該回合進行移動。若你不進行移動，則直到你的下個回合開始，其他生物在嘗試察覺你所進行的睿知（{@skill 感知}）檢定中將承受-10的罰值。無論是自願或因為某些外部效果所致，一旦你移動或倒下{@condition 伏地}，則你將失去這個好處。若任何效果或動作使你不再躲藏，則你仍將自動被察覺。",
+			"若你在你的下個回合仍然保持躲藏，你可以持續維持不動以在被察覺之前繼續獲得這個好處。"
+		]
+	},
+	"Ranger Conclave feature|Ranger (Revised)|UATHERANGERREVISED|11": {
+		"name": "遊俠密會能力",
+		"ENG_name": "Ranger Conclave feature",
+		"entries": [
+			"在11級時，你獲得一個由你遊俠密會所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Ranger (Revised)|UATHERANGERREVISED|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Vanish|Ranger (Revised)|UATHERANGERREVISED|14": {
+		"name": "無蹤步",
+		"ENG_name": "Vanish",
+		"entries": [
+			"從14級開始，你可以在你的回合以一個附贈動作採取{@action 躲藏}動作。同時，你不會被非魔法的手段追蹤，除非你選擇留下蹤跡。"
+		]
+	},
+	"Ranger Conclave feature|Ranger (Revised)|UATHERANGERREVISED|15": {
+		"name": "遊俠密會能力",
+		"ENG_name": "Ranger Conclave feature",
+		"entries": [
+			"在15級時，你獲得一個由你遊俠密會所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Ranger (Revised)|UATHERANGERREVISED|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Feral Senses|Ranger (Revised)|UATHERANGERREVISED|18": {
+		"name": "野性感官",
+		"ENG_name": "Feral Senses",
+		"entries": [
+			"在18級時，你獲得超自然的感官以幫助你對抗看不見的生物。當你攻擊一個你看不見的生物時，你並不會因為無法看見它而在你對它進行的攻擊檢定中承受劣勢。同時，只要該生物沒有躲藏於你，且你不處於{@condition 目盲}或{@condition 耳聾}狀態，則你也能察覺到任何距離你30呎內{@condition 隱形}生物的位置。"
+		]
+	},
+	"Ability Score Improvement|Ranger (Revised)|UATHERANGERREVISED|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Foe Slayer|Ranger (Revised)|UATHERANGERREVISED|20": {
+		"name": "眾敵屠戮",
+		"ENG_name": "Foe Slayer",
+		"entries": [
+			"在20級時，你成為了一名無可匹敵的獵手。在你的每個回合一次，你可以將你的睿知調整值加到你所進行的一次攻擊檢定或傷害骰中。你可以選擇在擲骰之前或之後使用此能力，但是必須在任何擲骰效果適用之前使用。"
+		]
+	},
+	"Favored Enemy|Ranger (Spell-less)|UAMODIFYINGCLASSES|1": {
+		"name": "宿敵",
+		"ENG_name": "Favored Enemy",
+		"entries": [
+			"從1級開始，你在對一個特定類型敵人的研究、追跡、狩獵、和甚至交談上已相當具備充足的經驗。",
+			"選擇一個宿敵類型：{@filter 異怪|bestiary|type=aberration}、{@filter 野獸|bestiary|type=beast}、{@filter 天界生物|bestiary|type=celestial}、{@filter 構裝體|bestiary|type=construct}、{@filter 龍|bestiary|type=dragon}、{@filter 元素|bestiary|type=elemental}、{@filter 精類|bestiary|type=fey}、{@filter 邪魔|bestiary|type=fiend}、{@filter 巨人|bestiary|type=giant}、{@filter 怪獸|bestiary|type=monstrosity}、{@filter 泥怪|bestiary|type=ooze}、{@filter 植物|bestiary|type=plant}、或{@filter 不死生物|bestiary|type=undead}。或者，你可以選擇二個{@filter 類人生物|bestiary|type=humanoid}種族（像是{@creature 豺狼人|mm}和{@creature 獸人|mm}）做為宿敵。",
+			"你在用於追蹤你宿敵的睿知（{@skill 求生}）檢定、以及用以回憶關於它們情報的智力檢定中具有優勢。",
+			"當你獲得此能力時，若你的宿敵擁有至少一種語言，你也選擇學會一種被它們所使用的語言。",
+			"你在6級和14級時選擇一種額外的宿敵以及一種關聯語言。隨著你提升等級，你的選擇必須反映你在你冒險中所遭遇過的怪物類型。"
+		]
+	},
+	"Natural Explorer|Ranger (Spell-less)|UAMODIFYINGCLASSES|1": {
+		"name": "自然探索者",
+		"ENG_name": "Natural Explorer",
+		"entries": [
+			"你特別熟悉於一種自然環境，且熟稔在這類區域中旅行和生存的方式。選擇一種偏好環境：極地、海岸、沙漠、森林、草地、高山、沼澤、或幽暗地域。當你進行一次關聯於你偏好環境的智力或睿知檢定時，若你使用一個你所熟練的技能，則你的熟練加值變為二倍。",
+			"當在你的偏好環境中旅行長達1個小時或更久，你將獲得下列好處：",
+			{
+				"type": "list",
+				"items": [
+					"困難地形不會減慢你們團隊的旅行速度。",
+					"除非是因為魔法的緣故，否則你們團隊不會迷路。",
+					"即使你在旅行途中正從事於其他行動（像是覓食、導航、或追跡），你仍保持對危險的警戒。",
+					"若你正獨自旅行，你能夠以正常步調隱匿移動。",
+					"當你覓食時，你能找到二倍你原本所能找到的食物。",
+					"當你追跡其他生物時，你也能得知它們確切的數量、它們的體型、以及它們在多久之前經過這片區域。"
+				]
+			},
+			"你在6級和10級時選擇一種額外的偏好環境。"
+		]
+	},
+	"Fighting Style|Ranger (Spell-less)|UAMODIFYINGCLASSES|2": {
+		"name": "戰鬥風格",
+		"ENG_name": "Fighting Style",
+		"entries": [
+			"在2級時，你採用一種特殊的戰鬥風格以做為你的專業。從下列選項中選擇一種。你不能獲得相同的戰鬥風格選項超過一次，即使你有機會再選擇它也一樣。",
+			{
+				"type": "options",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "弓道",
+						"ENG_name": "Archery",
+						"entries": [
+							"你在使用遠程武器進行的攻擊檢定中獲得+2加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "近身射手",
+						"ENG_name": "Close Quarters Shooter",
+						"entries": [
+							"當你在距離一個敵意生物5呎以內時進行一次遠程攻擊，你在該攻擊檢定中並不會具有劣勢。你的遠程攻擊忽略距離你30呎內目標的半掩護和四分之三掩護。你在遠程攻擊的攻擊檢定中獲得+1加值。"
+						],
+						"source": "UALightDarkUnderdark"
+					},
+					{
+						"type": "entries",
+						"name": "防禦",
+						"ENG_name": "Defense",
+						"entries": [
+							"當你穿戴護甲時，你的AC獲得+1加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "決鬥",
+						"ENG_name": "Dueling",
+						"entries": [
+							"當你單手持用一把近戰武器，且沒有持用其他武器時，你在使用該武器所進行的傷害骰中獲得+2加值。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "水手",
+						"ENG_name": "Mariner",
+						"entries": [
+							"只要你未穿戴重甲或使用盾牌，你就擁有等同於你正常移動速度的游泳速度和攀爬速度，且你的AC獲得+1加值。"
+						],
+						"source": "UAWaterborneAdventures"
+					},
+					{
+						"type": "entries",
+						"name": "坑道鬥士",
+						"ENG_name": "Tunnel Fighter",
+						"entries": [
+							"以一個附贈動作，你可以進入防禦架式並持續直到你的下個回合開始。當你處於防禦架式時，你可以進行藉機攻擊而無需使用你的反應，且你可以處於你觸及範圍內的生物移動超過5呎時使用你的反應對它進行一次近戰攻擊。"
+						],
+						"source": "UALightDarkUnderdark"
+					},
+					{
+						"type": "entries",
+						"name": "雙武器戰鬥",
+						"ENG_name": "Two-Weapon Fighting",
+						"entries": [
+							"當你進行雙武器戰鬥時，你可以將你的屬性調整值加入第二次攻擊的傷害中。"
+						]
+					}
+				]
+			}
+		]
+	},
+	"Combat Superiority|Ranger (Spell-less)|UAMODIFYINGCLASSES|2": {
+		"name": "戰鬥卓越",
+		"ENG_name": "Combat Superiority",
+		"entries": [
+			"在2級時，你學會各種戰技，並藉由被稱作卓越骰的特殊骰子驅動它們。",
+			{
+				"type": "entries",
+				"name": "戰技",
+				"entries": [
+					"你學會二個自選戰技，從戰士的戰鬥大師範型的可選戰技列表中選擇。許多戰技將以某些方式強化一次攻擊。你只能為每次攻擊使用一種戰技。",
+					"你將在5級、9級、13級、和17級時學會一個額外的戰技。每次你學會新的戰技時，你也可以將一個你已知的戰技取代成另一個不同的戰技。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "卓越骰",
+				"entries": [
+					"你擁有四顆卓越骰，這四顆卓越骰為d8。卓越骰將在你使用戰技時被花費。你在完成一次短休或長休後恢復你花費掉的卓越骰。",
+					"你將在9級、和17級時再獲得一顆額外的卓越骰。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "豁免檢定",
+				"entries": [
+					"你的部分戰技會要求你的目標進行一次豁免檢定以對抗戰技的效果。這個豁免檢定DC的計算方式如下：",
+					{
+						"type": "abilityDc",
+						"name": "戰技",
+						"attributes": [
+							"str",
+							"dex"
+						]
+					}
+				]
+			}
+		]
+	},
+	"Ranger Archetype|Ranger (Spell-less)|UAMODIFYINGCLASSES|3": {
+		"name": "遊俠範型",
+		"ENG_name": "Ranger Archetype",
+		"entries": [
+			"在3級時，你從可選範型列表中選擇一種你致力於達成的範型。你的選擇將在3級、7級、11級、和15級時賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Primeval Awareness|Ranger (Spell-less)|UAMODIFYINGCLASSES|3": {
+		"name": "原初意識",
+		"ENG_name": "Primeval Awareness",
+		"entries": [
+			"從3級開始，你可以使用你的動作以集中你的意識於你周遭的區域。在接下來一分鐘內，你可以感知下列類型的生物是否存在於距離你1哩內的區域（或若處於你的偏好環境則為6哩內）：異怪、天界生物、龍、元素、精類、邪魔、和不死生物。此能力無法揭露出該生物的位置和數量。",
+			"一旦你使用這個能力，你將必須完成一次短休或長休才能再次使用它。"
+		]
+	},
+	"Poultices|Ranger (Spell-less)|UAMODIFYINGCLASSES|3": {
+		"type": "entries",
+		"name": "草藥敷劑",
+		"ENG_name": "Poultices",
+		"entries": [
+			"在3級時，你可以製造一種特殊的草藥敷劑，蘊含著可與某些藥水匹配的治癒能量。你可以花費1小時的時間收集藥草並預備醫護繃帶，以製造出數量等同於你睿知調整值(最少為1)的草藥敷劑。你同時可以攜帶最多等同於你睿知調整值(最少為1)數量的草藥敷劑。你所製造的這些敷劑無法由你以外的人塗抹使用。在24小時之後，所有你尚未使用的敷劑都將失去效力。",
+			"若你花費1分鐘的時間將你的其中一個敷劑塗抹在一個受傷的類人生物身上，則你每有兩級遊俠等級，該生物就會回復{@dice 1d6}的生命值。"
+		]
+	},
+	"Ability Score Improvement|Ranger (Spell-less)|UAMODIFYINGCLASSES|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Extra Attack|Ranger (Spell-less)|UAMODIFYINGCLASSES|5": {
+		"name": "額外攻擊",
+		"ENG_name": "Extra Attack",
+		"entries": [
+			"從5級開始，每當你在你的回合採取{@action 攻擊}動作，你可以攻擊二次，而非一次。"
+		]
+	},
+	"Additional Maneuvers|Ranger (Spell-less)|UAMODIFYINGCLASSES|5": {
+		"type": "entries",
+		"name": "額外戰技",
+		"ENG_name": "Additional Maneuvers",
+		"entries": [
+			"在5級時，你學會一個你所選擇的額外戰技，從戰士的戰鬥大師範型的可選戰技列表中選擇。"
+		]
+	},
+	"Favored Enemy and Natural Explorer improvements|Ranger (Spell-less)|UAMODIFYINGCLASSES|6": {
+		"name": "宿敵和自然探索者強化",
+		"ENG_name": "Favored Enemy and Natural Explorer improvements",
+		"entries": [
+			"在6級時，你獲得一種額外的偏好環境。",
+			"在6級時，你選擇一種額外的宿敵以及一種關聯語言。你的選擇必須反映你在你冒險中所遭遇過的怪物類型。"
+		]
+	},
+	"Ranger Archetype feature|Ranger (Spell-less)|UAMODIFYINGCLASSES|7": {
+		"name": "遊俠範型能力",
+		"ENG_name": "Ranger Archetype feature",
+		"entries": [
+			"在7級時，你獲得一個由你遊俠範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Ranger (Spell-less)|UAMODIFYINGCLASSES|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Land's Stride|Ranger (Spell-less)|UAMODIFYINGCLASSES|8": {
+		"name": "大地行者",
+		"ENG_name": "Land's Stride",
+		"entries": [
+			"從8級開始，移動穿過非魔法的困難地形並不會花費你額外的移動速度。你也可以穿越非魔法植物而不會被它們減緩速度，若它們是荊棘、棘刺、或其他類似危險，你也不會被它們的傷害。",
+			"此外，在對抗由魔法創造或控制的植物所造成的阻礙移動效果時（像是{@spell 糾纏術}法術創造出的植物），你所進行的豁免檢定具有優勢。"
+		]
+	},
+	"Natural Antivenom|Ranger (Spell-less)|UAMODIFYINGCLASSES|9": {
+		"type": "entries",
+		"name": "天然血清",
+		"ENG_name": "Natural Antivenom",
+		"entries": [
+			"從9級開始，你在對抗毒素的豁免檢定中具有優勢，且具有對毒素傷害的抗性。此外，當你使用你的其中一個草藥敷劑塗抹在生物身上以回復它的生命值時，你也可以治療它身上的一種毒素效果。"
+		]
+	},
+	"Additional Maneuvers|Ranger (Spell-less)|UAMODIFYINGCLASSES|9": {
+		"type": "entries",
+		"name": "額外戰技",
+		"ENG_name": "Additional Maneuvers",
+		"entries": [
+			"在9級時，你學會一個你所選擇的額外戰技，從戰士的戰鬥大師範型的可選戰技列表中選擇。"
+		]
+	},
+	"Hide in Plain Sight|Ranger (Spell-less)|UAMODIFYINGCLASSES|10": {
+		"name": "避人耳目",
+		"ENG_name": "Hide in Plain Sight",
+		"entries": [
+			"從10級開始，你可以花費1分鐘的時間為自己創造一個偽裝。你必須要能取用新鮮的泥巴、土壤、植物、煙灰、和其他自然產出的材料以創造你的偽裝。",
+			"一旦你透過這個方式偽裝，你可以透過將自己貼合於一個高度和寬度至少與你一樣大的固體表面上，例如樹木或牆壁，以嘗試進行躲藏。只要你待於該處且不移動或採取動作，你就在敏捷（{@skill 隱匿}）檢定中獲得+10的加值。一旦你移動或採取動作或反應，你就必須再次偽裝自己以獲得這個好處。"
+		]
+	},
+	"Natural Explorer improvement|Ranger (Spell-less)|UAMODIFYINGCLASSES|10": {
+		"name": "自然探索者強化",
+		"ENG_name": "Natural Explorer improvement",
+		"entries": [
+			"在10級時，你獲得一種額外的偏好環境。"
+		]
+	},
+	"Ranger Archetype feature|Ranger (Spell-less)|UAMODIFYINGCLASSES|11": {
+		"name": "遊俠範型能力",
+		"ENG_name": "Ranger Archetype feature",
+		"entries": [
+			"在11級時，你獲得一個由你遊俠範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Ranger (Spell-less)|UAMODIFYINGCLASSES|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Call Natural Allies|Ranger (Spell-less)|UAMODIFYINGCLASSES|13": {
+		"type": "entries",
+		"name": "呼喚自然盟友",
+		"ENG_name": "Call Natural Allies",
+		"entries": [
+			"從13級開始，當你處於你偏好環境的區域時，你可以從環境中呼喚自然生物為你而戰，利用你與自然世界的協調說服牠們協助你。由DM從那些距離你1哩內，能夠聽見你的野獸中，選擇適合生存於該環境中的野獸以出來協助你，牠們屬於下列其中一種組合：",
+			{
+				"type": "list",
+				"items": [
+					"一隻{@filter 挑戰等級2或以下的野獸|bestiary|challenge rating=2|type=beast|miscellaneous=!swarm}",
+					"二隻{@filter 挑戰等級1或以下的野獸|bestiary|challenge rating=1|type=beast|miscellaneous=!swarm}",
+					"四隻{@filter 挑戰等級1/2或以下的野獸|bestiary|challenge rating=1/2|type=beast|miscellaneous=!swarm}",
+					"八隻{@filter 挑戰等級1/4或以下的野獸|bestiary|challenge rating=0;1/8;1/4|type=beast|miscellaneous=!swarm}"
+				]
+			},
+			"這些野獸將會從牠們當前所在的場所接近你，並會與你並肩作戰，攻擊任何與你敵對的生物。牠們對你和你的同伴友善，且牠們在骰先攻時作為一組擲骰，但有著各自的回合。這些生物的數據資料由DM掌控。",
+			"在1小時之後．這些野獸將會返回牠們先前的場所。一旦你使用這個能力，則因為同樣的動物不會再重複響應你的呼喚，你在24小時內將無法再在相同的區域內使用這個能力。"
+		]
+	},
+	"Additional Maneuvers|Ranger (Spell-less)|UAMODIFYINGCLASSES|13": {
+		"type": "entries",
+		"name": "額外戰技",
+		"ENG_name": "Additional Maneuvers",
+		"entries": [
+			"在13級時，你學會一個你所選擇的額外戰技，從戰士的戰鬥大師範型的可選戰技列表中選擇。"
+		]
+	},
+	"Vanish|Ranger (Spell-less)|UAMODIFYINGCLASSES|14": {
+		"name": "無蹤步",
+		"ENG_name": "Vanish",
+		"entries": [
+			"從14級開始，你可以在你的回合以一個附贈動作採取{@action 躲藏}動作。同時，你不會被非魔法的手段追蹤，除非你選擇留下蹤跡。"
+		]
+	},
+	"Favored Enemy improvement|Ranger (Spell-less)|UAMODIFYINGCLASSES|14": {
+		"name": "宿敵強化",
+		"ENG_name": "Favored Enemy improvement",
+		"entries": [
+			"在14級時，你選擇一種額外的宿敵以及一種關聯語言。你的選擇必須反映你在你冒險中所遭遇過的怪物類型。"
+		]
+	},
+	"Ranger Archetype feature|Ranger (Spell-less)|UAMODIFYINGCLASSES|15": {
+		"name": "遊俠範型能力",
+		"ENG_name": "Ranger Archetype feature",
+		"entries": [
+			"在15級時，你獲得一個由你遊俠範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Ranger (Spell-less)|UAMODIFYINGCLASSES|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Relentless|Ranger (Spell-less)|UAMODIFYINGCLASSES|17": {
+		"type": "entries",
+		"name": "頑強",
+		"ENG_name": "Relentless",
+		"entries": [
+			"從17級開始，當你骰先攻時且已經沒有剩下的卓越骰時，你獲得一顆卓越骰。"
+		]
+	},
+	"Additional Maneuvers|Ranger (Spell-less)|UAMODIFYINGCLASSES|17": {
+		"type": "entries",
+		"name": "額外戰技",
+		"ENG_name": "Additional Maneuvers",
+		"entries": [
+			"在17級時，你學會一個你所選擇的額外戰技，從戰士的戰鬥大師範型的可選戰技列表中選擇。"
+		]
+	},
+	"Feral Senses|Ranger (Spell-less)|UAMODIFYINGCLASSES|18": {
+		"name": "野性感官",
+		"ENG_name": "Feral Senses",
+		"entries": [
+			"在18級時，你獲得超自然的感官以幫助你對抗看不見的生物。當你攻擊一個你看不見的生物時，你並不會因為無法看見它而在你對它進行的攻擊檢定中承受劣勢。同時，只要該生物沒有躲藏於你，且你不處於{@condition 目盲}或{@condition 耳聾}狀態，則你也能察覺到任何距離你30呎內{@condition 隱形}生物的位置。"
+		]
+	},
+	"Ability Score Improvement|Ranger (Spell-less)|UAMODIFYINGCLASSES|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Foe Slayer|Ranger (Spell-less)|UAMODIFYINGCLASSES|20": {
+		"name": "眾敵屠戮",
+		"ENG_name": "Foe Slayer",
+		"entries": [
+			"在20級時，你成為了一名針對你敵人的無雙獵手。在你的每個回合一次，你可以將你的睿知調整值加到你對你其中一個宿敵所進行的攻擊檢定或傷害骰中。你可以選擇在擲骰之前或之後使用此能力，但是必須在任何擲骰效果適用之前使用。"
+		]
+	},
+	"Expertise|Rogue|PHB|1": {
+		"name": "專精",
+		"ENG_name": "Expertise",
+		"entries": [
+			"在1級時，選擇二個你的技能熟練，或一個你的技能熟練和你對{@item 盜賊工具|phb}的熟練。你的熟練加值在使用所選熟練項所進行的任何屬性檢定中變為兩倍。",
+			"在6級時，你可以再選擇另外兩個熟練項（技能或{@item 盜賊工具|phb}）以獲得這個好處。"
+		]
+	},
+	"Sneak Attack|Rogue|PHB|1": {
+		"name": "偷襲",
+		"ENG_name": "Sneak Attack",
+		"entries": [
+			"從1級開始，你知道如何利用敵人的分心以做出巧妙的攻擊。每個回合一次，若你在攻擊檢定中具有優勢，則你可以對一個你用該攻擊命中的生物造成額外的{@dice 1d6}傷害。該攻擊必須要使用一把靈巧或遠程武器。",
+			"若有另一個目標的敵人在距離目標5呎內的位置，該敵人未{@condition 無力}，且你在該攻擊檢定中未承受劣勢，則你在該攻擊檢定中不需要具有優勢也可以發動偷襲效果。",
+			"這個額外傷害的數值會隨著你提升本職業的等級時增加，參見盜賊表中的偷襲傷害欄位。"
+		]
+	},
+	"Thieves' Cant|Rogue|PHB|1": {
+		"name": "竊賊黑話",
+		"ENG_name": "Thieves' Cant",
+		"entries": [
+			"在你的盜賊訓練中，你學會了竊賊黑話，一種混雜了方言、黑話、以及暗碼的秘密語言，並讓你得以將訊息隱藏在看似尋常的對話中。只有知曉竊賊黑話的其他生物能夠理解這類訊息。傳達這類訊息需要花上比直白地說出相同意思還要長四倍以上的時間。",
+			"此外，你也理解一套用以傳達簡短單純訊息的秘密記號和符號，傳達像是這個區域是否危險或為盜賊公會的領地、附近是否有值錢的東西、或者這個區域的人們是否為老好人或為逃亡中的竊賊提供安全的居所。"
+		]
+	},
+	"Cunning Action|Rogue|PHB|2": {
+		"name": "巧妙動作",
+		"ENG_name": "Cunning Action",
+		"entries": [
+			"從2級開始，你的機智和靈巧讓你得以快速地移動和行動。你可以在戰鬥中每個你的回合採取一個附贈動作。這個附贈動作只能被用於採取{@action 疾走}、{@action 撤離}、或{@action 躲藏}動作。"
+		]
+	},
+	"Roguish Archetype|Rogue|PHB|3": {
+		"name": "盜賊範型",
+		"ENG_name": "Roguish Archetype",
+		"entries": [
+			"在3級時，你從可選範型列表中選擇一種你在行使你盜賊能力時仿效的範型。你所選擇的範型將在3級、9級、13級、和17級時賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Rogue|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Uncanny Dodge|Rogue|PHB|5": {
+		"name": "直覺閃避",
+		"ENG_name": "Uncanny Dodge",
+		"entries": [
+			"從5級開始，當一個你所能看見的攻擊者使用一次攻擊命中你，你可以使用你的反應以減半該次攻擊對你的傷害。"
+		]
+	},
+	"Expertise|Rogue|PHB|6": {
+		"name": "專精",
+		"ENG_name": "Expertise",
+		"entries": [
+			"在6級時，你可以再選擇另外兩個熟練項（技能或{@item 盜賊工具|phb}）以獲得專精的好處。"
+		]
+	},
+	"Evasion|Rogue|PHB|7": {
+		"name": "反射閃避",
+		"ENG_name": "Evasion",
+		"entries": [
+			"從7級開始，你可以靈活地躲開某些範圍效果，像是紅龍的火焰吐息、或{@spell 冰風暴}法術。當你成為一個允許你進行敏捷豁免以僅承受一半傷害的效果的目標時，你改為在豁免成功時不受任何傷害，且在豁免失敗時僅承受一半傷害。"
+		]
+	},
+	"Ability Score Improvement|Rogue|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Roguish Archetype feature|Rogue|PHB|9": {
+		"name": "盜賊範型能力",
+		"ENG_name": "Roguish Archetype feature",
+		"entries": [
+			"在9級時，你獲得一個由你盜賊範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Rogue|PHB|10": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至10級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Reliable Talent|Rogue|PHB|11": {
+		"name": "可靠才能",
+		"ENG_name": "Reliable Talent",
+		"entries": [
+			"從11級起，你已將你所選的的技能琢磨到臻近完美。每當你進行一個允許你加入你熟練加值的屬性檢定，你可以將其{@dice d20}骰出9或以下的擲骰結果視為10。"
+		]
+	},
+	"Ability Score Improvement|Rogue|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Roguish Archetype feature|Rogue|PHB|13": {
+		"name": "盜賊範型能力",
+		"ENG_name": "Roguish Archetype feature",
+		"entries": [
+			"在13級時，你獲得一個由你盜賊範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Blindsense|Rogue|PHB|14": {
+		"name": "盲感",
+		"ENG_name": "Blindsense",
+		"entries": [
+			"從14級開始，若你能夠聽見，則你能夠察覺到任何距離你10呎內躲藏起來或{@condition 隱形}的生物所在的位置。"
+		]
+	},
+	"Slippery Mind|Rogue|PHB|15": {
+		"name": "靈活心智",
+		"ENG_name": "Slippery Mind",
+		"entries": [
+			"從15級起，你養成了強大的心智力量。你獲得對睿知豁免的熟練。"
+		]
+	},
+	"Ability Score Improvement|Rogue|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Roguish Archetype feature|Rogue|PHB|17": {
+		"name": "盜賊範型能力",
+		"ENG_name": "Roguish Archetype feature",
+		"entries": [
+			"在17級時，你獲得一個由你盜賊範型所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Elusive|Rogue|PHB|18": {
+		"name": "捉摸不定",
+		"ENG_name": "Elusive",
+		"entries": [
+			"從18級開始，你是如此的難以捕捉以至於攻擊者很少有辦法在對付你時取得優勢。當你不處於{@condition 無力}狀態時，對你進行的所有攻擊檢定都不具有優勢。"
+		]
+	},
+	"Ability Score Improvement|Rogue|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Stroke of Luck|Rogue|PHB|20": {
+		"name": "幸運一擊",
+		"ENG_name": "Stroke of Luck",
+		"entries": [
+			"在20級時，你有著在你需要的時候成功的神奇訣竅。若你對一個範圍內目標的攻擊失手，你可以將該次攻擊從失手改成命中。或者，若你在一次屬性檢定中失敗，你可以將其{@dice d20}的擲骰結果視作骰出了20。",
+			"一旦你使用此能力，你直到完成一次短休或長休前都不能再使用它。"
+		]
+	},
+	"Spellcasting|Sorcerer|PHB|1": {
+		"name": "施法",
+		"ENG_name": "Spellcasting",
+		"entries": [
+			"過去的一個事件、或者你雙親或先祖的血脈，在你身上留下了不可磨滅的印記，使你充滿了奧秘魔法。不論其起源如何，這種魔法泉源驅動著你的法術。請參閱{@book 第十章|PHB|10}以了解關於施法的規則，以及第十一章以查閱{@filter 術士法術列表|spells|class=sorcerer}。",
+			{
+				"type": "entries",
+				"name": "戲法",
+				"entries": [
+					"在1級時，你知曉四個從{@filter 術士法術列表|spells|class=wizard}自選的戲法。你將在升至更高的術士等級時學會額外的術士戲法：在4級的時候學會第5個戲法，在10級的時候學會第6個。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "法術位",
+				"entries": [
+					"術士表中顯示了你有多少個法術位可以用來施放你一環或更高環的{@filter 術士法術|spells|class=wizard}。要施放其中一個術士法術，你必須消耗一個與該法術環階相同或更高的法術位。你在完成一次長休後恢復所有你花費掉的法術位。",
+					"舉例來說，如果你知曉一個1環的{@spell 燃燒之手}法術，且你擁有一個1環和一個2環的法術位，則你可以使用其中任意一個法術位來施放{@spell 燃燒之手}。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "一環或更高環的已知法術",
+				"entries": [
+					"你知曉二個從術士法術列表中自選的1環法術。",
+					"你將在提升至在每個除了第12,14,16,18,19,和20級的術士等級時，習得一個新的術士法術。每個這些法術的環階都必須符合你所擁有法術位的環階。舉例來說，當你在此職業升至3級時，你可以學習一個新的1環或2環法術。",
+					"此外，當你提升這個職業的等級時，你可以從術士的法術列表中挑選一個法術來取代一個你目前已知的法術，而它的環階也必須符合你所擁有法術位的環階。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法屬性",
+				"entries": [
+					"因為你魔法的力量依賴於你將自己的意志投射於世界的能力，魅力是你施展術士法術的施法屬性。每當法術提及你的施法屬性時，你將使用你的魅力。此外，當決定你術士法術的豁免DC、以及使用術士法術進行攻擊檢定時，你使用你的魅力調整值。",
+					{
+						"type": "abilityDc",
+						"name": "法術",
+						"attributes": [
+							"cha"
+						]
+					},
+					{
+						"type": "abilityAttackMod",
+						"name": "法術",
+						"attributes": [
+							"cha"
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法法器",
+				"entries": [
+					"你可以使用一個{@item 奧術法器|phb}（第五章），來做為你施放術士法術的法器。"
+				]
+			}
+		]
+	},
+	"Sorcerous Origin|Sorcerer|PHB|1": {
+		"name": "術法起源",
+		"ENG_name": "Sorcerous Origin",
+		"entries": [
+			"從可選的起源列表中選擇一個術法起源，它代表著你天生魔法力量的來源。",
+			"你的選擇會在1級、6級、14級、和18級的時候賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Font of Magic|Sorcerer|PHB|2": {
+		"name": "魔力泉湧",
+		"ENG_name": "Font of Magic",
+		"entries": [
+			"在2級時，你挖掘出深埋於你體內的魔力湧泉。這道魔力湧泉以術法點的形式呈現，讓你得以創造多種魔法效果。",
+			{
+				"type": "entries",
+				"name": "術法點",
+				"ENG_name": "Sorcery Points",
+				"entries": [
+					"你擁有2點術法點，且你每提升一級就能再額外獲得一點，並在20級時達到最大值20點。你所擁有的術法點永遠無法超過表格中對應你當前等級的數值。你在完成一次長休後恢復所有你花費掉的術法點。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "易變施法",
+				"ENG_name": "Flexible Casting",
+				"entries": [
+					"你可以使用你的術法點以獲得額外的法術位，或犧牲法術位以獲得額外的術法點。隨著你升至更高的等級，你將學會其他使用你術法點的方式。",
+					{
+						"type": "entries",
+						"name": "創造法術位",
+						"entries": [
+							"你可以在你的回合以一個附贈動作將尚未消耗的術法點轉變成一個法術位。被創造出來的法術位將在長休結束時消失。創造法術位表中顯示了創造各環階的法術位所需要消耗的術法點。你可以創造出不超過5環的法術位。",
+							{
+								"type": "table",
+								"caption": "創造法術位",
+								"colLabels": [
+									"法術位環階",
+									"術法點消耗"
+								],
+								"colStyles": [
+									"col-6 text-align-center",
+									"col-6 text-align-center"
+								],
+								"rows": [
+									[
+										"1環",
+										"2"
+									],
+									[
+										"2環",
+										"3"
+									],
+									[
+										"3環",
+										"5"
+									],
+									[
+										"4環",
+										"6"
+									],
+									[
+										"5環",
+										"7"
+									]
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "將法術位轉化為術法點",
+						"entries": [
+							"在你的回合以一個附贈動作，你可以消耗一個法術位以獲得等同於該法術位環階數量的術法點。"
+						]
+					}
+				]
+			}
+		]
+	},
+	"Metamagic|Sorcerer|PHB|3": {
+		"name": "超魔法",
+		"ENG_name": "Metamagic",
+		"entries": [
+			"在3級時，你獲得扭曲你的法術以使其符合你需求的能力。你獲得下列超魔法選項中的二個。你將在10級和17級時再各獲得一個。",
+			"除非另有說明，否則你只能在你施放一個法術時對其使用一個超魔法選項。",
+			{
+				"type": "options",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "謹慎法術",
+						"ENG_name": "Careful Spell",
+						"entries": [
+							"當你施放一個會強迫其他生物進行豁免檢定的法術時，你可以保護其中一些生物不受該法術的完整威力影響。要這麼做，你得消耗1點術法點，並選擇最多等同於你魅力調整值數量的生物（最少一個生物）。被選擇的生物將在對抗該法術的豁免檢定中自動成功。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "遠程法術",
+						"ENG_name": "Distant Spell",
+						"entries": [
+							"當你施放一個射程為5呎或更遠的法術時，你可以消耗1點術法點以將該法術的射程變為二倍。",
+							"當你施放一個射程為觸碰的法術時，你可以消耗1點術法點以將該法術的射程變為30呎。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "強效法術",
+						"ENG_name": "Empowered Spell",
+						"entries": [
+							"當你在為法術骰傷害時，你可以消耗1點術法點以重骰最多等同於你魅力調整值數量的骰子（最少一顆）。你必須使用新的擲骰結果。",
+							"即使你已經在施放此法術的期間已經使用了一個不同的超魔法選項，你仍然可以使用強效法術。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "延時法術",
+						"ENG_name": "Extended Spell",
+						"entries": [
+							"當你施放一個持續時間為1分鐘或更久的法術時，你可以消耗1點術法點以將它的持續時間變為二倍，最久到24小時。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "升階法術",
+						"ENG_name": "Heightened Spell",
+						"entries": [
+							"當你施放一個會強迫一個生物進行豁免檢定以抵抗它效果的法術時，你可以消耗3點術法點以讓一個該法術的目標在它對抗該法術的第一次豁免檢定中承受劣勢。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "瞬發法術",
+						"ENG_name": "Quickened Spell",
+						"entries": [
+							"當你施放一個施法時間為1個動作的法術時，你可以消耗2點術法點以將它在這次施法的的施法時間變為1個附贈動作。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "精妙法術",
+						"ENG_name": "Subtle Spell",
+						"entries": [
+							"當你施放一個法術時，你可以消耗1點術法點以施放它而無須提供任何姿勢或聲音構材。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "孿生法術",
+						"ENG_name": "Twinned Spell",
+						"entries": [
+							"當你施放一個射程不為自身，且在使用當前法術位時無法指定超過一個生物作為目標的法術時，你可以消耗等同於該法術環階數量的術法點以使用同個法術指定射程內的第二個生物做為目標（若該法術為戲法，則消耗1點術法點）。",
+							"要符合條件，該法術必須要在使用當前法術位時無法指定超過一個生物作為目標。舉例來說，{@spell 魔法飛彈}和{@spell 灼熱射線}並不符合條件，但{@spell 冷凍射線}和{@spell 幻色法球}則可。"
+						]
+					}
+				]
+			}
+		]
+	},
+	"Ability Score Improvement|Sorcerer|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Sorcerous Origin feature|Sorcerer|PHB|6": {
+		"name": "術法起源能力",
+		"ENG_name": "Sorcerous Origin feature",
+		"entries": [
+			"在6級時，你獲得一個由你術法起源所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Sorcerer|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Metamagic|Sorcerer|PHB|10": {
+		"name": "超魔法",
+		"ENG_name": "Metamagic",
+		"entries": [
+			"在10級時，你習得一個額外的超魔法選項。"
+		]
+	},
+	"Ability Score Improvement|Sorcerer|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Sorcerous Origin feature|Sorcerer|PHB|14": {
+		"name": "術法起源能力",
+		"ENG_name": "Sorcerous Origin feature",
+		"entries": [
+			"在14級時，你獲得一個由你術法起源所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Sorcerer|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Metamagic|Sorcerer|PHB|17": {
+		"name": "超魔法",
+		"ENG_name": "Metamagic",
+		"entries": [
+			"在17級時，你習得一個額外的超魔法選項。"
+		]
+	},
+	"Sorcerous Origin feature|Sorcerer|PHB|18": {
+		"name": "術法起源能力",
+		"ENG_name": "Sorcerous Origin feature",
+		"entries": [
+			"在18級時，你獲得一個由你術法起源所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Sorcerer|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Sorcerous Restoration|Sorcerer|PHB|20": {
+		"name": "術法復原",
+		"ENG_name": "Sorcerous Restoration",
+		"entries": [
+			"在20級時，每當你完成一次短休，你將恢復4點花費掉的術法點。"
+		]
+	},
+	"Pact Magic|Warlock|PHB|1": {
+		"name": "契約魔法",
+		"ENG_name": "Pact Magic",
+		"entries": [
+			"你在祕法上的研究和你宗主所賜與你的魔法給予了你施展法術的能力。請參閱{@book 第十章|PHB|10}以了解關於施法的通用規則，以及第十一章以查閱{@filter 契術師法術列表|spells|class=warlock}。",
+			{
+				"type": "entries",
+				"name": "戲法",
+				"entries": [
+					"你知曉兩個從{@filter 契術師法術列表|spells|class=warlock}自選的戲法。你將在升至更高的契術師等級時學會額外的契術師戲法，見契術師表格中的已知戲法欄位。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "法術位",
+				"entries": [
+					"契術師表中顯示了你有多少個法術位可以用來施放你一環到五環的{@filter 契術師法術|spells|class=warlock}。這張表也顯示了這些法術位的環階；你所有法術位的環階都是相同的。要施放其中一個一環或更高的契術師法術，你必須消耗一個法術位。你在完成一次短休或長休後恢復所有你花費掉的法術位。",
+					"舉例來說，當你在5級時，你擁有二個3環的法術位。當你要施放一環法術{@spell 巫術箭}時，你必須消耗其中一個法術位，且你將它做為一個3環法術施放。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "一環或更高環的已知法術",
+				"entries": [
+					"在1級時，你知曉二個從契術師法術列表中自選的1環法術。",
+					"契術師表中的已知法術欄位顯示你會在什麼時候習得更多自選的一環或更高環的契術師法術。一個你所選的法術的環階必須不超過你當前等級在表上對應的環階。舉例來說，當你在此職業升至6級時，你可以學會一個新的契術師法術，這個法術可以是1環、2環、或3環。",
+					"此外，當你提升這個職業的等級時，你可以從契術師的法術列表中挑選一個法術來取代一個你目前已知的法術，而它的環階也不能超過你現有法術位的環階。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法屬性",
+				"entries": [
+					"魅力是你施展契術師法術的施法屬性，所以每當法術提及你的施法屬性時，你將使用你的魅力。此外，當決定你契術師法術的豁免DC、以及使用契術師法術進行攻擊檢定時，你使用你的魅力調整值。",
+					{
+						"type": "abilityDc",
+						"name": "法術",
+						"attributes": [
+							"cha"
+						]
+					},
+					{
+						"type": "abilityAttackMod",
+						"name": "法術",
+						"attributes": [
+							"cha"
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法法器",
+				"entries": [
+					"你可以使用一個{@item 奧術法器|phb}（第五章），來做為你施放契術師法術的法器。"
+				]
+			}
+		]
+	},
+	"Otherworldly Patron|Warlock|PHB|1": {
+		"name": "異界宗主",
+		"ENG_name": "Otherworldly Patron",
+		"entries": [
+			"在1級時，你與你從可選宗主列表中選擇的一個的異界存在簽下了契約。你的選擇將在1級、6級、10級、和14級時賜予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Eldritch Invocations|Warlock|PHB|2": {
+		"name": "魔能祈喚",
+		"ENG_name": "Eldritch Invocations",
+		"entries": [
+			"在你對於神秘知識的研究中，你發掘出了魔能祈喚，一種賦予你恆久魔法能力的禁忌知識殘章。",
+			{
+				"type": "inlineBlock",
+				"entries": [
+					"在2級時，你獲得二個自選魔能祈喚。可選的魔能祈喚選項列表請參見{@filter 職業能力選項|optionalfeatures|Feature Type=EI}頁面。當你升至特定契術師等級時，你將再獲得額外的自選祈喚。"
+				]
+			},
+			"此外，當你提升這個職業的等級時，你可以選擇一個你在該等級可以習得的祈喚來取代一個你已知的祈喚。",
+			"祈喚的先決條件所提及的等級是指契術師等級，而非角色等級。"
+		]
+	},
+	"Pact Boon|Warlock|PHB|3": {
+		"name": "契約恩賜",
+		"ENG_name": "Pact Boon",
+		"entries": [
+			"在3級時，你的異界宗主將因為你忠誠的服務而賜予你一項贈禮。你從以下能力中選擇並獲得一項。",
+			{
+				"type": "options",
+				"entries": [
+					{
+						"type": "patron",
+						"name": "鎖鏈魔契",
+						"ENG_name": "Pact of the Chain",
+						"entries": [
+							"你習得{@spell 尋獲魔寵}法術，並可以將之做為儀式施放。此法術不會計入你的已知法術數量中。",
+							"當你施放此法術時，你可以為你的魔寵選擇一個正常的型態，或選擇下列其中一個特殊的型態：{@creature 小魔鬼}、{@creature 偽龍}、{@creature 夸塞魔}、或{@creature 小妖精}。",
+							"此外，當你採取{@action 攻擊}動作時，你可以放棄你其中一次攻擊以讓你的魔寵使用它的反應進行一次攻擊。"
+						]
+					},
+					{
+						"type": "patron",
+						"name": "鋒刃魔契",
+						"ENG_name": "Pact of the Blade",
+						"entries": [
+							"你可以使用你的動作以在你的一隻空著的手中創造一把契約武器。你可以在每次創造它時選擇這把近戰武器的型態（參見第五章的武器選項）。你在使用它時熟練於該武器。這把武器在克服對非魔法攻擊和傷害的抗性和免疫時視作魔法武器。",
+							"你的契約武器會在距離你超過5呎外的情況下長達1分鐘或更久時消失。這把武器也會在你再次使用這個能力創造武器、你解消武器（無需花費動作）、或你死亡時消失。",
+							"你可以在持握一把魔法武器時藉由施展一種特別儀式以將該武器轉化成你的契約武器。施展這個儀式的過程需要1小時，且可以在短休期間被施展。你可以解消這把武器，將它存放在一個異次元空間，且它將在往後每次你創造你的契約武器時出現。你不能用這個方式影響一件神器或一把智能武器。若你死亡、你對另一把武器施展了1小時儀式、或你施展一個1小時儀式以打破跟這把武器的連結時，它將不再做為你的契約武器。若這把武器在連結中斷時處於異次元空間，則它將出現在你的腳邊。"
+						]
+					},
+					{
+						"type": "patron",
+						"name": "書卷魔契",
+						"ENG_name": "Pact of the Tome",
+						"entries": [
+							"你的宗主賜予你一本被稱作「影之書」的魔法書。當你獲得這個能力時，從任何職業的法術列表中選擇三個戲法。這些戲法不需要來自同一個法術列表。當這本書在你身上時，你可以隨意施放這些戲法。它們不會計入你的已知戲法數量。任何你透過此能力施放的戲法對你而言都視作契術師戲法。若你失去了你的影之書，你可以施展一個長達1小時的儀式以從你的宗主那裏獲得一個替代品。這個儀式可以在短休或長休期間被施展，且它將摧毀前一本書卷。這本書會在你死亡的時候化作灰燼。"
+						]
+					},
+					{
+						"type": "patron",
+						"name": "星鏈魔契",
+						"ENG_name": "Pact of the Star Chain",
+						"entries": [
+							"在3級時，一個獻身於the Seeker的角色可以選擇這個選項，而非契術師既存的契約恩賜選項。",
+							"The Seeker賦予你一條由星光打造的鎖鏈，飾以七顆閃爍的光輝塵埃。當這條鎖鏈在你身上時，你知曉{@spell 卜筮}法術，並可以將之做為儀式施放。此法術不會計入你的已知法術數量中。",
+							"此外，你可以在你攜帶這個物品時引發the Seeker的力量以在一次智力檢定中獲得優勢。一旦你使用這個能力，直到完成一次短休或長休之前，你都不能再使用它。",
+							"若你失去了你的星光鎖鏈，你可以施展一個長達1小時的儀式以從The Seeker那裏獲得一個替代品。。這個儀式可以在短休或長休期間被施展，且它將摧毀前一條鎖鏈。這條鎖鏈會在你死亡的時候在一陣閃光中消失。",
+							"這個物品的實際外型可能會根據你的宗主而有所不同。星光鎖鍊是受到灰鷹世界的神祇塞莱斯汀所啟發。"
+						],
+						"source": "UATheFaithful",
+						"subclass": {
+							"name": "The Seeker (UA)",
+							"source": "UATheFaithful"
+						}
+					}
+				]
+			}
+		]
+	},
+	"Ability Score Improvement|Warlock|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Otherworldly Patron feature|Warlock|PHB|6": {
+		"name": "異界宗主能力",
+		"ENG_name": "Otherworldly Patron feature",
+		"entries": [
+			"在6級時，你獲得一個由你異界宗主所賜予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Warlock|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Otherworldly Patron feature|Warlock|PHB|10": {
+		"name": "異界宗主能力",
+		"ENG_name": "Otherworldly Patron feature",
+		"entries": [
+			"在10級時，你獲得一個由你異界宗主所賜予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Mystic Arcanum|Warlock|PHB|11": {
+		"name": "玄奧秘法(6環)",
+		"ENG_name": "Mystic Arcanum",
+		"entries": [
+			"在11級時，你的宗主將賜予你一項被稱為祕法的魔法秘密。從契術師法術列表中選擇一個{@filter 6環契術師法術|spells|level=6|class=Warlock}做為此祕法。",
+			"你可以施放你的祕法法術一次而不需要消耗法術位。你必須在完成一次長休之後才能再次施展。",
+			"在更高的等級，你將獲得更多可以透過這個方式施放的自選契術師法術：在13級時一個7環法術、在15級時一個8環法術、以及在17級時一個9環法術。你在完成一次長休後恢復所有你玄奧秘法的使用次數。"
+		]
+	},
+	"Ability Score Improvement|Warlock|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Mystic Arcanum|Warlock|PHB|13": {
+		"name": "玄奧秘法(7環)",
+		"ENG_name": "Mystic Arcanum",
+		"entries": [
+			"在13級時，你的宗主將賜予你一項被稱為祕法的魔法秘密。從契術師法術列表中選擇一個{@filter 7環契術師法術|spells|level=7|class=Warlock}做為此祕法。",
+			"你可以施放你的祕法法術一次而不需要消耗法術位。你必須在完成一次長休之後才能再次施展。"
+		]
+	},
+	"Otherworldly Patron feature|Warlock|PHB|14": {
+		"name": "異界宗主能力",
+		"ENG_name": "Otherworldly Patron feature",
+		"entries": [
+			"在14級時，你獲得一個由你異界宗主所賜予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Mystic Arcanum|Warlock|PHB|15": {
+		"name": "玄奧秘法(8環)",
+		"ENG_name": "Mystic Arcanum",
+		"entries": [
+			"在15級時，你的宗主將賜予你一項被稱為祕法的魔法秘密。從契術師法術列表中選擇一個{@filter 8環契術師法術|spells|level=8|class=Warlock}做為此祕法。",
+			"你可以施放你的祕法法術一次而不需要消耗法術位。你必須在完成一次長休之後才能再次施展。"
+		]
+	},
+	"Ability Score Improvement|Warlock|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Mystic Arcanum|Warlock|PHB|17": {
+		"name": "玄奧秘法(9環)",
+		"ENG_name": "Mystic Arcanum",
+		"entries": [
+			"在17級時，你的宗主將賜予你一項被稱為祕法的魔法秘密。從契術師法術列表中選擇一個{@filter 9環契術師法術|spells|level=9|class=Warlock}做為此祕法。",
+			"你可以施放你的祕法法術一次而不需要消耗法術位。你必須在完成一次長休之後才能再次施展。"
+		]
+	},
+	"Ability Score Improvement|Warlock|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Eldritch Master|Warlock|PHB|20": {
+		"name": "魔能大師",
+		"ENG_name": "Eldritch Master",
+		"entries": [
+			"在20級時，你可以在懇求你的宗主時動用你體內儲備的神祕能量以恢復你花費掉的法術位。你可以花費1分鐘的時間懇求你宗主的協助以恢復所有你花費掉的來自契約魔法的法術位。一旦你透過此能力恢復法術位，你必須在完成一次長休之後才能再次使用此能力。"
+		]
+	},
+	"Arcane Recovery|Wizard|PHB|1": {
+		"name": "奧術恢復",
+		"ENG_name": "Arcane Recovery",
+		"entries": [
+			"你學會了通過研讀法術書來恢復失去魔法能量的方法。每天一次，當你完成一次短休時，你可以選擇已消耗的法術位來恢復。這些法術位的環階總和必須小於或等於你法師等級的一半（小數點進位），且每個法術位都不能為6環或更高。",
+			"舉例來說，若你是個4級法師，你可以恢復最多共計2個環階的法術位。",
+			"你可以恢復一個2環法術位，或選擇恢復二個1環法術位。"
+		]
+	},
+	"Spellcasting|Wizard|PHB|1": {
+		"name": "施法",
+		"ENG_name": "Spellcasting",
+		"entries": [
+			"作為一介奧術魔法的學生，你擁有一本記載著法術的法術書，展示著你的真正力量的閃耀先兆。請參閱{@book 第十章|PHB|10}以了解關於施法的規則，以及第十一章以查閱{@filter 法師法術列表|spells|class=wizard}。",
+			{
+				"type": "entries",
+				"name": "戲法",
+				"entries": [
+					"在1級時，你知曉三個從{@filter 法師法術列表|spells|class=wizard}自選的戲法。你將在升至更高的法師等級時學會額外的法師戲法，見法師表格中的已知戲法欄位。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "法術書",
+				"entries": [
+					"在1級時，你擁有一本載有六個自選的1環{@filter 法師法術|spells|class=wizard}的法術書。你的法術書是儲存著你已知法師法術的容器；除了你的戲法之外，戲法則直接被記憶在你的心中。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "準備及施放法術",
+				"entries": [
+					"法師表中顯示了你有多少個法術位可以用來施放你一環或更高環的法師法術。要施放其中一個這些法術，你必須消耗一個與該法術環階相同或更高的法術位。你在完成一次長休後恢復所有你花費掉的法術位。",
+					"你準備一份你所能施放法師法術的列表。當你這麼做時，從你的法術書中選擇數量等同於你智力調整值 + 你法師等級的法師法術（最少一個法術）。這些法術的環階都必須符合你所擁有法術位的環階。",
+					"舉例來說，如果你是一個3級的法師，你擁有四個1環和二個2環的法術位。你的智力為16，則你已準備法術的列表中可以包含總共六個1環或2環的法術。若你準備了1環法術{@spell 魔法飛彈}，你可以使用1環和2環的法術位來施放它。施放法術並不會將它從你的準備法術列表中移除。",
+					"你可以在你完成一次長休時改變你的準備法術列表。準備一份新的法師法術列表需要花費時間於研讀你的法術書並記憶你施放該法術所必須的咒語和姿勢：你需要為你列表上每個法術的每個環階都花費至少1分鐘的時間。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法屬性",
+				"entries": [
+					"因為你是透過致力研讀與記憶習得你的法師法術，智力是你施展法師法術的施法屬性。每當法術提及你的施法屬性時，你將使用你的智力。此外，當決定你法師法術的豁免DC、以及使用法師法術進行攻擊檢定時，你使用你的智力調整值。",
+					{
+						"type": "abilityDc",
+						"name": "法術",
+						"attributes": [
+							"int"
+						]
+					},
+					{
+						"type": "abilityAttackMod",
+						"name": "法術",
+						"attributes": [
+							"int"
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "儀式施法",
+				"entries": [
+					"若一個法師法術具有儀式標籤且你的法術書中有記載該法術，則你可以將它做為儀式法術施放。你並不需要準備該法術。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "施法法器",
+				"entries": [
+					"你可以使用一個{@item 奧術法器|phb}（第五章），來做為你施放法師法術的法器。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "習得一環或更高環的法術",
+				"entries": [
+					"每當你提升法師等級時，你可以將二個自選的法師法術加入你的法術書。每個這些法術的環階都必須符合你所擁有法術位的環階，如法師表所示。舉例來說，當你在此職業升至3級時，你可以學習一個新的1環或2環法術。在你的冒險中，你可能會找到其他可以被加入你法術書的法術（參見「你的法術書」條目）。"
+				]
+			},
+			{
+				"type": "inset",
+				"name": "你的法術書",
+				"entries": [
+					"你在升級時加入法術書中的法術反映著你的自發研究、以及你在理解宇宙奥秘上的突破。你可能會在冒險過程中找到其他法術。舉例來說，你可能會發掘一個法術被抄寫在一個邪惡法師寶箱中的卷軸，或被記載於遠古書庫中滿布灰塵的典籍。",
+					"法術書中並不包含戲法。",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "抄寫法術至法術書",
+								"entries": [
+									"當你發現一個1環或更高環的法師法術，若該法術的環階是你可以準備，且你有時間可以破譯並抄寫它，則你將可以把它加入你的法術書中。",
+									"將一個法術抄寫到你法術書的過程包括了重構法術的基礎形式，並破譯撰寫該法術的法師所使用的獨特符號系統。你必須不斷練習該法術直到你理解施展它所需的聲音或姿勢，最後才能使用你自己的符號系統將它抄寫到你的法術書中。",
+									"這個過程會需要花費該法術每環階2個小時的時間和每環階50金幣的開銷。這個開銷代表著你在實驗於掌控該法術時所消耗的材料構才、以及你紀錄它時所需要的上好墨水。一旦你消耗了這些時間和金錢，你就可以如同你準備其它法術一樣準備該法術。",
+									"一個記載於法術卷軸中的法師法術可以被如同法術書中的法術一樣被抄寫。當你從法術卷軸中抄寫法術時，你必須成功通過一次智力（{@skill 奧秘}）檢定，DC等同於10 + 該法術的環階。若檢定成功，該法術將被成功抄寫。無論檢定成功或失敗，該法術卷軸都將被摧毀。"
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "替換法術書",
+								"entries": [
+									"你可以將法術從你自己的法術書抄錄到另一本書中—舉例來說，你可能會想要製作一本你的法術書備份。這就如同將新法術抄寫到你的法術書中，但因為你理解自己所用的符號系統，且已經知曉如何施放該法術，因此這個過程會更快，也更簡單。你需要為抄寫法術的每個環階花費1個小時的時間和10金幣的開銷。",
+									"若你遺失你的法術書，你可以使用相同的流程以將你已準備的法術抄寫到一本新的法術書中。你必須如常找到新的法術才能夠填補你法術書剩餘的部分。因為這個原因，許多法師會將法術書備份藏在安全的地方。"
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "法術書的外觀",
+								"entries": [
+									"你的法術書是一本獨一無二的法術總集，有著屬於它自己的裝飾紋路和邊註。它可能會是一本導師贈送給你，簡樸實用的皮冊、可能會是一本從遠古書庫中發現的精緻金邊典籍，甚至可能是你在一次事故中遺失你上一本法術書後匆匆湊起的一疊筆記。"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"Arcane Tradition|Wizard|PHB|2": {
+		"name": "奥法學派",
+		"ENG_name": "Arcane Tradition",
+		"entries": [
+			"當你升至2級時，你從可選的學派列表中選擇一個奥法學派，發展你的魔法實踐。你的選擇會在2級、6級、10級、和14級的時候賦予你新的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Wizard|PHB|4": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至4級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Arcane Tradition feature|Wizard|PHB|6": {
+		"name": "奥法學派能力",
+		"ENG_name": "Arcane Tradition feature",
+		"entries": [
+			"在6級時，你獲得一個由你奧法學派所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Wizard|PHB|8": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至8級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Arcane Tradition feature|Wizard|PHB|10": {
+		"name": "奥法學派能力",
+		"ENG_name": "Arcane Tradition feature",
+		"entries": [
+			"在10級時，你獲得一個由你奧法學派所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Wizard|PHB|12": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至12級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Arcane Tradition feature|Wizard|PHB|14": {
+		"name": "奥法學派能力",
+		"ENG_name": "Arcane Tradition feature",
+		"entries": [
+			"在14級時，你獲得一個由你奧法學派所賦予的能力。"
+		],
+		"gainSubclassFeature": true
+	},
+	"Ability Score Improvement|Wizard|PHB|16": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至16級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Spell Mastery|Wizard|PHB|18": {
+		"name": "法術精通",
+		"ENG_name": "Spell Mastery",
+		"entries": [
+			"在18級時，你對特定法術已經如此精通，以至於你可以隨意施放它們。選擇你法術書中的一個1環法術和一個2環法術。若你已經準備這些法術，則你能夠以它們的最低環階施放這些法術而無需消耗法術位。若你想要以更高環階施放這些法術，則你必須如常消耗法術位。",
+			"藉由花費8小時的研讀，你可以改變其中一個或這兩個所選法術為其他相同環階的不同法術。"
+		]
+	},
+	"Ability Score Improvement|Wizard|PHB|19": {
+		"name": "屬性值提升",
+		"ENG_name": "Ability Score Improvement",
+		"entries": [
+			"當你在此職業升至19級時，你可以增加一項自選屬性值2點，或著你可以增加二項自選屬性值各1點。如同平常一樣，你不能透過這個能力將一個屬性值提升至超過20。",
+			"如果你的DM允許使用專長的話，你也可以改為獲得一個{@5etools 專長|feats.html}。"
+		]
+	},
+	"Signature Spells|Wizard|PHB|20": {
+		"name": "招牌法術",
+		"ENG_name": "Signature Spells",
+		"entries": [
+			"當你升至20級時，你精通於二個強力法術而可以不費吹灰之力施放它們。選擇你法術書中的二個3環法術做為你的招牌法術。你永遠視作已經準備了這些法術，它們不會計入你已準備的法術數量中，且你可以各自施放它們一次而無需消耗法術位。當你這麼做後，你直到完成一次短休或長休之前都不能再使用此能力。",
+			"若你想要以更高環階施放這些法術，則你必須如常消耗法術位。"
+		]
+	}
+}

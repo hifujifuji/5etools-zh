@@ -1,0 +1,2484 @@
+{
+	"Genasi|Air|EEPC": {
+		"name": "氣",
+		"ENG_name": "Air",
+		"ability": {
+			"dex": 1
+		},
+		"entries": [
+			{
+				"name": "無盡氣息",
+				"entries": [
+					"當你並未{@condition 無力}，你就可以無限期的屏住呼吸。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "與風相混",
+				"entries": [
+					"你可以使用此特性施放一次{@spell 浮空術}，無需任何材料構材，且當你完成一次長休，你將重新獲得施放該法術的能力。你施展該法術的施法屬性為體質。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Genasi|Earth|EEPC": {
+		"name": "土",
+		"ENG_name": "Earth",
+		"ability": {
+			"str": 1
+		},
+		"entries": [
+			{
+				"name": "大地步行",
+				"entries": [
+					"你可以移動穿越由土或石構成的困難地形而不會消耗額外的移動速度。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "與石交融",
+				"entries": [
+					"你可以使用此特性施放一次{@spell 行蹤無跡}，無需任何材料構材，且當你完成一次長休，你將重新獲得施放該法術的能力。你施展該法術的施法屬性為體質。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Genasi|Fire|EEPC": {
+		"name": "火",
+		"ENG_name": "Fire",
+		"ability": {
+			"int": 1
+		},
+		"darkvision": 60,
+		"entries": [
+			{
+				"name": "黑暗視覺",
+				"entries": [
+					"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你與火元素位面的聯系使你的黑暗視覺與眾不同：任何你在黑暗中所看到的事物都有著紅色的輪廓。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "火焰抗性",
+				"entries": [
+					"你具有對火焰傷害的抗性。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "觸及烈焰",
+				"entries": [
+					"你知曉{@spell 燃火術}戲法。當你升至3級，你可以使用此特性以一環法術施放一次{@spell 燃燒之手}，無需任何材料構材，且當你完成一次長休，你將重新獲得施放該法術的能力。你施展該法術的施法屬性為體質。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Damage Resistance",
+			"Spellcasting"
+		]
+	},
+	"Genasi|Water|EEPC": {
+		"name": "水",
+		"ENG_name": "Water",
+		"speed": {
+			"walk": 30,
+			"swim": 30
+		},
+		"ability": {
+			"wis": 1
+		},
+		"entries": [
+			{
+				"name": "酸蝕抗性",
+				"entries": [
+					"你具有對酸蝕傷害的抗性。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "兩棲",
+				"entries": [
+					"你可以在空氣和水中呼吸。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "游泳",
+				"entries": [
+					"你擁有30呎的游泳速度。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "呼喚波濤",
+				"entries": [
+					"你知曉{@spell 塑水|xge}戲法。當你升至3級，你可以使用此特性以二環法術施放一次{@spell 造水/枯水術}，且當你完成一次長休，你將重新獲得施放該法術的能力。你施展該法術的施法屬性為體質。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Damage Resistance",
+			"Amphibious",
+			"Spellcasting"
+		]
+	},
+	"Elf|Drow|PHB": {
+		"name": "卓爾",
+		"ENG_name": "Drow",
+		"ability": {
+			"cha": 1
+		},
+		"darkvision": 120,
+		"entries": [
+			{
+				"name": "高級黑暗視覺",
+				"entries": [
+					"習慣了幽暗地域的深處，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你120呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
+				],
+				"data": {
+					"overwrite": "黑暗視覺"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "日光敏感",
+				"entries": [
+					"當你、你的攻擊目標、或你嘗試感知的東西直接暴露在陽光下，則你依賴於視覺的攻擊檢定以及睿知（{@skill 感知}）檢定具有劣勢。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "卓爾魔法",
+				"entries": [
+					"你知曉{@spell 舞光術}戲法。當你升至3級，你每天可以施放一次{@spell 妖火術}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你每天可以施放一次{@spell 黑暗術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展該法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "卓爾武器訓練",
+				"entries": [
+					"你熟練於{@item 刺劍|phb}、{@item 短劍|phb}、和{@item 手弩|phb}。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting",
+			"Weapon Proficiency"
+		]
+	},
+	"Elf|Eladrin|DMG": {
+		"name": "雅靈",
+		"ENG_name": "Eladrin",
+		"source": "DMG",
+		"page": 286,
+		"ability": {
+			"int": 1
+		},
+		"entries": [
+			{
+				"name": "精靈武器訓練",
+				"entries": [
+					"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "妖精步",
+				"entries": [
+					"你可以使用此特性施放一次{@spell 迷蹤步}。當你完成一次短休或長休，你將重新獲得施放該法術的能力。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Weapon Proficiency",
+			"Spellcasting"
+		]
+	},
+	"Elf|High|PHB": {
+		"name": "高等",
+		"ENG_name": "High",
+		"speed": 30,
+		"ability": {
+			"int": 1
+		},
+		"entries": [
+			{
+				"name": "精靈武器訓練",
+				"entries": [
+					"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "戲法",
+				"entries": [
+					"你知曉一個{@filter 從法師法術列表中自選的戲法|spells|level=0|class=Wizard}。你施展該法術的施法屬性為智力。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "額外語言",
+				"entries": [
+					"你可以額外說、讀、寫一種你選擇的語言。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Weapon Proficiency",
+			"Spellcasting"
+		]
+	},
+	"Elf|Wood|PHB": {
+		"name": "木",
+		"ENG_name": "Wood",
+		"speed": 35,
+		"ability": {
+			"wis": 1
+		},
+		"entries": [
+			{
+				"name": "精靈武器訓練",
+				"entries": [
+					"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "輕捷步伐",
+				"entries": [
+					"你的基礎步行速度提升到35呎。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "荒野隱蔽",
+				"entries": [
+					"當你處於樹叢、大雨、落雪、霧氣或其他自然現象所造成的輕度遮蔽時，你可以嘗試進行躲藏。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Weapon Proficiency"
+		]
+	},
+	"Elf|Eladrin|UAELADRINANDGITH": {
+		"name": "雅靈",
+		"ENG_name": "Eladrin",
+		"source": "UAEladrinAndGith",
+		"page": 1,
+		"ability": {
+			"choose": [
+				{
+					"from": [
+						"int",
+						"cha"
+					],
+					"count": 1
+				}
+			]
+		},
+		"entries": [
+			{
+				"name": "妖精步",
+				"entries": [
+					"以一個附贈動作，你可以魔法性的傳送最多30呎距離到一處未被佔據的可見空間。一旦你使用此特性，直到你完成一次短休或長休之前都無法再使用它。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "轉變季節",
+				"entries": [
+					"在每次短休或長休結束時，你可以使自己協律於一個季節的魔法，而跟正主宰你個性的季節無關。這麼做讓你得以施展一個特定戲法，如下列的轉變季節戲法表所示。當你使自己協律於一個季節的魔法，你將失去關聯於上一個季節的戲法，並獲得關聯於新季節的戲法。",
+					"你施展這些戲法的施法屬性為智力或魅力，看哪個較高。",
+					{
+						"type": "table",
+						"caption": "轉變季節戲法表",
+						"colLabels": [
+							"季節",
+							"戲法"
+						],
+						"colStyles": [
+							"col-6 text-align-center",
+							"col-6 text-align-center"
+						],
+						"rows": [
+							[
+								"春",
+								"{@spell 次級幻象}"
+							],
+							[
+								"夏",
+								"{@spell 火焰箭}"
+							],
+							[
+								"秋",
+								"{@spell 交友術}"
+							],
+							[
+								"冬",
+								"{@spell 寒顫之觸}"
+							]
+						]
+					}
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Elf|Avariel|UAELFSUBRACES": {
+		"name": "翼精靈",
+		"ENG_name": "Avariel",
+		"source": "UAElfSubraces",
+		"speed": {
+			"walk": 30,
+			"fly": 30
+		},
+		"entries": [
+			{
+				"name": "額外語言",
+				"entries": [
+					"你能夠說、讀、寫水族語。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "飛行",
+				"entries": [
+					"你擁有30呎的飛行速度。要使用此移動速度，你不能穿著中甲或重甲。"
+				],
+				"type": "entries"
+			}
+		],
+		"languageTags": [
+			"Auran"
+		]
+	},
+	"Elf|Grugach|UAELFSUBRACES": {
+		"name": "野精靈",
+		"ENG_name": "Grugach",
+		"source": "UAElfSubraces",
+		"ability": {
+			"str": 1
+		},
+		"entries": [
+			{
+				"name": "語言",
+				"entries": [
+					"你能夠說、讀、寫木族語、精靈語、和一個額外自選語言。精靈語如流體般流暢，有著精妙的語調變化和複雜的語法結構。精靈文學豐富而多元，他們的詩歌在其他種族之間也很受歡迎。許多吟遊詩人都會學習精靈語，並將其韻律運用在他們自己的詩作中。"
+				],
+				"data": {
+					"overwrite": "語言"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "野精靈武器訓練",
+				"entries": [
+					"你熟練於{@item 矛|phb}、{@item 短弓|phb}、{@item 長弓|phb}、和{@item 捕網|phb}。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "戲法",
+				"entries": [
+					"你知曉一個{@filter 從德魯伊法術列表中自選的戲法|spells|level=0|class=Druid}。你施展該法術的施法屬性為睿知。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Weapon Proficiency",
+			"Spellcasting"
+		],
+		"languageTags": [
+			"Sylvan",
+			"Elvish",
+			"Choose"
+		]
+	},
+	"Elf|Sea|UAELFSUBRACES": {
+		"name": "海",
+		"ENG_name": "Sea",
+		"source": "UAElfSubraces",
+		"speed": {
+			"walk": 30,
+			"swim": 30
+		},
+		"ability": {
+			"con": 1
+		},
+		"entries": [
+			{
+				"name": "額外語言",
+				"entries": [
+					"你能夠說、讀、寫水族語。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "海精靈武器訓練",
+				"entries": [
+					"你熟練於{@item 矛|phb}、{@item 三叉戟|phb}、{@item 輕弩|phb}、和{@item 捕網|phb}。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "海洋之子",
+				"entries": [
+					"你擁有30呎的游泳速度，且你可以在空氣與水中呼吸。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "海洋之友",
+				"entries": [
+					"利用手勢與聲音，你可以和任何擁有天生游泳速度，體型為小型或更小的野獸溝通簡單的想法。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Weapon Proficiency",
+			"Amphibious"
+		],
+		"languageTags": [
+			"Aquan"
+		]
+	},
+	"Elf|Shadar-kai|UAELFSUBRACES": {
+		"name": "影靈",
+		"ENG_name": "Shadar-kai",
+		"source": "UAElfSubraces",
+		"ability": {
+			"cha": 1
+		},
+		"entries": [
+			{
+				"name": "語言",
+				"entries": [
+					"你能夠說、讀、寫通用語、精靈語、和一個額外自選語言。精靈語如流體般流暢，有著精妙的語調變化和複雜的語法結構。精靈文學豐富而多元，他們的詩歌在其他種族之間也很受歡迎。許多吟遊詩人都會學習精靈語，並將其韻律運用在他們自己的詩作中。"
+				],
+				"data": {
+					"overwrite": "語言"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "戲法",
+				"entries": [
+					"你知曉下列其中一個戲法：{@spell 寒顫之觸}、{@spell 拯救瀕死}、或{@spell 奇術}。你施展該法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "鴉后的祝福",
+				"entries": [
+					"以一個附贈動作，你可以魔法性的傳送最多15呎距離到一處未被佔據的可見空間，且直到你的下個回合開始，你獲得對所有傷害的抗性。在這段期間，你變得朦朧且半透明。一旦你使用這個能力，直到你完成一次短休或長休之前都無法再使用它。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting",
+			"Damage Resistance"
+		],
+		"languageTags": [
+			"Common",
+			"Elvish",
+			"Choose"
+		]
+	},
+	"Elf|Eladrin|MTF": {
+		"name": "雅靈",
+		"ENG_name": "Eladrin",
+		"source": "MTF",
+		"page": 61,
+		"ability": {
+			"cha": 1
+		},
+		"entries": [
+			"{@i 選擇你的雅靈季節：春、夏、秋或冬。當完成一次長休，一個雅靈將可以改變他的季節。參見\"情報\"頁以獲得更多資訊。}",
+			{
+				"name": "妖精步",
+				"entries": [
+					"以一個附贈動作，你可以魔法性的傳送最多30呎距離到一處未被佔據的可見空間。一旦你使用此特性，直到你完成一次短休或長休之前都無法再使用它。",
+					"當你升至3級，你的妖精步將根據你的季節獲得一個額外效果；若該效果需要豁免，則DC等同8+你的熟練加值+你的魅力調整值：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "春",
+								"entry": "當你使用妖精步時，你可以觸碰一個距離你5呎內的自願生物。該生物將代替你被傳送，並出現在距離你30呎內的一處未被佔據的可見空間。"
+							},
+							{
+								"type": "item",
+								"name": "夏",
+								"entry": "緊接在你使用妖精步後，距離你5呎內每個你所選擇的生物將受到等同於你魅力調整值的火焰傷害（最少1點）。"
+							},
+							{
+								"type": "item",
+								"name": "秋",
+								"entry": "緊接在你使用妖精步後，距離你10呎內最多二個你所選擇的生物必須成功通過一次睿知豁免，否則被你{@condition 魅惑}1分鐘，或直到你或你的同伴對它造成傷害。"
+							},
+							{
+								"type": "item",
+								"name": "冬",
+								"entry": "當你使用妖精步時，一個你所選擇在你傳送前距離你5呎內的可見生物必須成功通過一次睿知豁免，否則對你感到{@condition 恐懼}直到你的下個回合結束。"
+							}
+						]
+					}
+				],
+				"type": "entries"
+			}
+		]
+	},
+	"Elf|Sea|MTF": {
+		"name": "海",
+		"ENG_name": "Sea",
+		"source": "MTF",
+		"page": 62,
+		"speed": {
+			"walk": 30,
+			"swim": 30
+		},
+		"ability": {
+			"con": 1
+		},
+		"entries": [
+			{
+				"name": "海精靈武器訓練",
+				"entries": [
+					"你熟練於{@item 矛|phb}、{@item 三叉戟|phb}、{@item 輕弩|phb}、和{@item 捕網|phb}。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "海洋之子",
+				"entries": [
+					"你擁有30呎的游泳速度，且你可以在空氣與水中呼吸。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "海洋之友",
+				"entries": [
+					"利用手勢與聲音，你可以和任何擁有天生游泳速度的野獸溝通簡單的想法。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "額外語言",
+				"entries": [
+					"你能夠說、讀、寫水族語。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Weapon Proficiency",
+			"Amphibious"
+		],
+		"languageTags": [
+			"Aquan"
+		]
+	},
+	"Elf|Shadar-kai|MTF": {
+		"name": "影靈",
+		"ENG_name": "Shadar-kai",
+		"source": "MTF",
+		"page": 62,
+		"ability": {
+			"con": 1
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "死靈抗性",
+				"entries": [
+					"你具有對死靈傷害的抗性。"
+				]
+			},
+			{
+				"name": "鴉后的祝福",
+				"entries": [
+					"以一個附贈動作，你可以魔法性的傳送最多30呎距離到一處未被佔據的可見空間。一旦你使用此特性，直到你完成一次長休之前都無法再使用它。",
+					"從3級開始，當你使用此特性傳送時，你也獲得對所有傷害的抗性。這個抗性持續到你的下個回合開始。在這段期間，你變得朦朧且半透明。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Damage Resistance"
+		]
+	},
+	"Elf|Aereni|UAWGE": {
+		"name": "艾瑞尼",
+		"ENG_name": "Aereni",
+		"source": "UAWGE",
+		"page": 73,
+		"speed": 30,
+		"ability": {
+			"int": 1
+		},
+		"entries": [
+			{
+				"name": "艾瑞尼熟練",
+				"entries": [
+					"艾瑞尼精靈可以選擇一個技能或工具熟練。當你使用所選熟練進行的任何檢定時，你的熟練加值視作兩倍。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "戲法",
+				"entries": [
+					"你知曉一個{@filter 從法師法術列表中自選的戲法|spells|level=0|class=Wizard}。你施展該法術的施法屬性為智力。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "額外語言",
+				"entries": [
+					"你可以額外說、讀、寫一種你選擇的語言。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency",
+			"Tool Proficiency",
+			"Spellcasting"
+		]
+	},
+	"Elf|Valenar|UAWGE": {
+		"name": "維歐諾爾",
+		"ENG_name": "Valenar",
+		"source": "UAWGE",
+		"page": 73,
+		"speed": 35,
+		"ability": {
+			"wis": 1
+		},
+		"entries": [
+			{
+				"name": "維歐諾爾熟練",
+				"entries": [
+					"維歐諾爾精靈熟練於{@item 彎刀|phb}、{@item 雙刃彎刀|uawge|雙刃彎刀}、{@item 長弓|phb}、和{@item 短弓|phb}."
+				],
+				"type": "entries"
+			},
+			{
+				"name": "輕捷步伐.",
+				"entries": [
+					"你的基礎步行速度提升到35呎。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "荒野隱蔽",
+				"entries": [
+					"當你處於樹叢、大雨、落雪、霧氣或其他自然現象所造成的輕度遮蔽時，你可以嘗試進行躲藏。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Weapon Proficiency"
+		]
+	},
+	"Elf|Mark of Shadow|UAWGE": {
+		"name": "影龍紋",
+		"ENG_name": "Mark of Shadow",
+		"source": "UAWGE",
+		"page": 105,
+		"ability": {
+			"cha": 1
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "天生才能",
+				"entries": [
+					"你熟練於一種樂器或{@skill 表演}技能。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "陰影恩賜",
+				"entries": [
+					"當你進行魅力（{@skill 表演}）或敏捷（{@skill 隱匿}）檢定時，你可以擲一顆d4直覺骰，並將骰出來的數字加到該屬性檢定中。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "形塑陰影",
+				"entries": [
+					"你知曉{@spell 次級幻象}戲法。你施展該法術的施法屬性為魅力。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "潛入陰影",
+				"entries": [
+					"你可以以一個附贈動作採取躲藏動作，即便你正被觀察或不在掩護中。無論你成功或失敗，一旦你使用這個能力，直到你完成一次短休或長休之前都無法再使用它。"
+				]
+			}
+		],
+		"traitTags": [
+			"Spellcasting",
+			"Dragonmark",
+			"Skill Proficiency",
+			"Tool Proficiency"
+		]
+	},
+	"Elf (Zendikar)|Joraga Nation|PSZ": {
+		"name": "玖瑞加族",
+		"ENG_name": "Joraga Nation",
+		"speed": 35,
+		"ability": {
+			"dex": 1
+		},
+		"entries": [
+			{
+				"name": "荒野隱蔽",
+				"entries": [
+					"當你處於樹叢、大雨、落雪、霧氣或其他自然現象所造成的輕度遮蔽時，你可以嘗試進行躲藏。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "精靈武器訓練",
+				"entries": [
+					"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "輕捷步伐",
+				"entries": [
+					"你的基礎步行速度提升到35呎。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Weapon Proficiency"
+		]
+	},
+	"Elf (Zendikar)|Mul Daya Nation|PSZ": {
+		"name": "慕達雅族",
+		"ENG_name": "Mul Daya Nation",
+		"ability": {
+			"str": 1
+		},
+		"darkvision": 120,
+		"entries": [
+			{
+				"name": "慕達雅魔法",
+				"entries": [
+					"你知曉{@spell 寒顫之觸}戲法。當你升至3級，你可以使用此特性施放一次{@spell 脆弱詛咒}並在完成一次長休之後重新獲得這麼做的能力。當你升至5級，你可以使用此特性施放一次{@spell 黑暗術}並在完成一次長休之後重新獲得這麼做的能力。你施展該法術的施法屬性為睿知。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "高級黑暗視覺",
+				"entries": [
+					"你黑暗視覺的範圍變為120呎半徑。"
+				],
+				"data": {
+					"overwrite": "黑暗視覺"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "日光敏感",
+				"entries": [
+					"當你、你的攻擊目標、或你嘗試感知的東西直接暴露在陽光下，則你依賴於視覺的攻擊檢定以及睿知（{@skill 感知}）檢定具有劣勢。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "精靈武器訓練",
+				"entries": [
+					"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting",
+			"Weapon Proficiency"
+		]
+	},
+	"Elf (Zendikar)|Tajuru Nation|PSZ": {
+		"name": "特裘如族",
+		"ENG_name": "Tajuru Nation",
+		"ability": {
+			"cha": 1
+		},
+		"entries": [
+			{
+				"name": "多才多藝",
+				"entries": [
+					"你熟練於總共二種自選技能或工具。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency",
+			"Tool Proficiency"
+		]
+	},
+	"Elf (Kaladesh)|Bishtahar and Tirahar|PSK": {
+		"name": "畢莎塔爾與塔拉哈爾",
+		"ENG_name": "Bishtahar and Tirahar",
+		"speed": 35,
+		"entries": [
+			{
+				"name": "輕捷步伐",
+				"entries": [
+					"你的基礎步行速度提升到35呎。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "荒野隱蔽",
+				"entries": [
+					"當你處於樹叢、大雨、落雪、霧氣或其他自然現象所造成的輕度遮蔽時，你可以嘗試進行躲藏。"
+				],
+				"type": "entries"
+			}
+		]
+	},
+	"Elf (Kaladesh)|Vadahar|PSK": {
+		"name": "法達拉爾",
+		"ENG_name": "Vadahar",
+		"entries": [
+			{
+				"name": "戲法",
+				"entries": [
+					"你知曉一個{@filter 從德魯伊法術列表中自選的戲法|spells|level=0|class=Druid}。你施展該法術的施法屬性為睿知。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "額外語言",
+				"entries": [
+					"你可以額外說、讀、寫一種你選擇的語言。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Gnome|Deep/Svirfneblin|EEPC": {
+		"name": "地底/斯奈布力",
+		"ENG_name": "Deep/Svirfneblin",
+		"source": "EEPC",
+		"page": 5,
+		"otherSources": [
+			{
+				"source": "SCAG",
+				"page": 115
+			}
+		],
+		"darkvision": 120,
+		"ability": {
+			"dex": 1
+		},
+		"entries": [
+			{
+				"name": "年齡",
+				"type": "entries",
+				"entries": [
+					"地底地侏相比其他地侏而言是短命的。他們的成熟速度和人類相同，且會在25歲時被視作成年。他們的壽命可達200到250歲，儘管幽暗地域中的艱苦勞動和危險經常在他們迎來大限之前就奪走他們的性命。"
+				],
+				"data": {
+					"overwrite": "年齡"
+				}
+			},
+			{
+				"name": "陣營",
+				"type": "entries",
+				"entries": [
+					"斯奈布力認為生存的關鍵取決於避免與其他生物牽連並避免樹敵，因此他們偏好中立陣營。他們很少希望別人倒楣，且除了他們最親近的人之外，他們也不太會為了其他人而冒險。"
+				],
+				"data": {
+					"overwrite": "陣營"
+				}
+			},
+			{
+				"type": "entries",
+				"name": "體型",
+				"entries": [
+					"一個典型斯奈布力的身高大約為3到3½呎高，且體重為80到120磅。你的體型為小型。"
+				],
+				"data": {
+					"overwrite": "體型"
+				}
+			},
+			{
+				"name": "高級黑暗視覺",
+				"entries": [
+					"習慣了地底的生活，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你120呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
+				],
+				"data": {
+					"overwrite": "黑暗視覺"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "岩地偽裝",
+				"entries": [
+					"你在岩石地形為躲藏所進行的敏捷（{@skill 隱匿}）檢定中具有優勢。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能夠說、讀、寫通用語、地侏語、和地底通用語。斯奈布力方言比地表所使用的地侏語有著更多喉音字，且大部分的斯奈布力們只知道一點點通用語。但那些常與外來者打交道的傢伙（包括做為冒險者的你）則學會了足夠多的通用語以在其他地區也能勉強生活。"
+				],
+				"data": {
+					"overwrite": "語言"
+				},
+				"type": "entries"
+			}
+		],
+		"languageTags": [
+			"Common",
+			"Gnomish",
+			"Undercommon"
+		]
+	},
+	"Gnome|Forest|PHB": {
+		"name": "林",
+		"ENG_name": "Forest",
+		"ability": {
+			"dex": 1
+		},
+		"entries": [
+			{
+				"name": "天生幻術",
+				"entries": [
+					"你知曉{@spell 次級幻象}戲法。你施展該法術的施法屬性為智力。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "小型野獸溝通",
+				"entries": [
+					"透過聲音和手勢，你可以和體型為小型或更小的野獸交流簡單的想法。林地侏喜愛動物，且經常飼養松鼠、獾、兔子、鼴鼠、啄木鳥、或其他生物做為他們心愛的寵物。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Gnome|Rock|PHB": {
+		"name": "岩",
+		"ENG_name": "Rock",
+		"ability": {
+			"con": 1
+		},
+		"entries": [
+			{
+				"name": "巧匠學識",
+				"entries": [
+					"每當你進行與魔法物品、煉金物體、或科技裝置有關的智力（{@skill 歷史}）檢定時，你可以加入你兩倍的熟練加值以取代任何你原有的熟練加值。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "修補匠",
+				"entries": [
+					"你熟練於工匠工具({@item 修補匠工具|phb})。藉由使用這些工具，你可以花費1小時的時間以及價值10金幣的材料以創造出一個微型的發條裝置（AC 5，1點生命值）。這個裝置將在24小時之後停止運轉（除非你花費1小時修理它以維持裝置的功能），或直到你使用你的動作將它拆卸；在這個時候，你可以取回你用於創造它的材料。你同時可以有最多三個正在運作的這類裝置。",
+					"當你創造一個裝置時，選擇下列其中一個選項：",
+					{
+						"type": "entries",
+						"name": "發條玩具",
+						"entries": [
+							"這個玩具是一個發條動物、怪物、或小人，像是青蛙、老鼠、小鳥、龍、或是士兵。當被擺放在地上，這個玩具將會在你的每個回合內沿著地面向隨機方向移動5呎。它會發出與其生物外型相符的聲音。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "打火機",
+						"entries": [
+							"這個裝置會產生出微小的火焰，你可以用以點燃蠟燭、火炬、或是篝火。使用這個裝置需要一個動作。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "音樂盒",
+						"entries": [
+							"當打開時，這個音樂盒將會以適中的音量演奏一首歌曲。這個音樂箱會在歌曲結束或被關上時停止演奏。"
+						]
+					}
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Tool Proficiency"
+		]
+	},
+	"Gnome|Deep|MTF": {
+		"name": "地底",
+		"ENG_name": "Deep",
+		"source": "MTF",
+		"darkvision": 120,
+		"page": 113,
+		"ability": {
+			"dex": 1
+		},
+		"entries": [
+			{
+				"name": "年齡",
+				"type": "entries",
+				"entries": [
+					"地底地侏相比其他地侏而言是短命的。他們的成熟速度和人類相同，且會在25歲時被視作成年。他們的壽命可達200到250歲，儘管幽暗地域中的艱苦勞動和危險經常在他們迎來大限之前就奪走他們的性命。"
+				],
+				"data": {
+					"overwrite": "年齡"
+				}
+			},
+			{
+				"type": "entries",
+				"name": "體型",
+				"entries": [
+					"不像其他地侏，斯奈布力的體重通常在80到120磅之間。你的體型為小型。"
+				],
+				"data": {
+					"overwrite": "體型"
+				}
+			},
+			{
+				"name": "陣營",
+				"type": "entries",
+				"entries": [
+					"斯奈布力認為，生存的關鍵取決於避免與其他生物牽連並避免樹敵，因此他們偏好中立陣營。他們很少希望別人倒楣，且除了他們最親近的人之外，他們也不太會為了其他人而冒險。"
+				],
+				"data": {
+					"overwrite": "陣營"
+				}
+			},
+			{
+				"name": "高級黑暗視覺",
+				"entries": [
+					"習慣了地底的生活，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你120呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
+				],
+				"data": {
+					"overwrite": "黑暗視覺"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "岩地偽裝",
+				"entries": [
+					"你在岩石地形為躲藏所進行的敏捷（{@skill 隱匿}）檢定中具有優勢。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能夠說、讀、寫通用語、地侏語、和地底通用語。"
+				],
+				"data": {
+					"overwrite": "語言"
+				},
+				"type": "entries"
+			}
+		],
+		"languageTags": [
+			"Common",
+			"Gnomish",
+			"Undercommon"
+		]
+	},
+	"Half-Elf|Wood Elf Descent|SCAG": {
+		"name": "木精靈血統",
+		"ENG_name": "Wood Elf Descent",
+		"source": "SCAG",
+		"page": 116,
+		"entries": [
+			{
+				"type": "inset",
+				"name": "變體特性 (選擇1種)",
+				"entries": [
+					{
+						"name": "多才多藝",
+						"entries": [
+							"你熟練於二個你所選擇的技能。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "敏銳感官",
+						"entries": [
+							"你熟練於{@skill 感知}技能。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "精靈武器訓練",
+						"entries": [
+							"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "輕捷步伐",
+						"entries": [
+							"你的基礎步行速度提升到35呎。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "荒野隱蔽",
+						"entries": [
+							"當你處於樹叢、大雨、落雪、霧氣或其他自然現象所造成的輕度遮蔽時，你可以嘗試進行躲藏。"
+						],
+						"type": "entries"
+					}
+				],
+				"data": {
+					"overwrite": "多才多藝"
+				}
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency",
+			"Weapon Proficiency"
+		]
+	},
+	"Half-Elf|Moon Elf or Sun Elf Descent|SCAG": {
+		"name": "月精靈或日精靈血統",
+		"ENG_name": "Moon Elf or Sun Elf Descent",
+		"source": "SCAG",
+		"page": 116,
+		"entries": [
+			{
+				"type": "inset",
+				"name": "變體特性 (選擇1種)",
+				"entries": [
+					{
+						"name": "多才多藝",
+						"entries": [
+							"你熟練於二個你所選擇的技能。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "敏銳感官",
+						"entries": [
+							"你熟練於{@skill 感知}技能。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "精靈武器訓練",
+						"entries": [
+							"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "戲法",
+						"entries": [
+							"你知曉一個{@filter 從法師法術列表中自選的戲法|spells|level=0|class=Wizard}。你施展該法術的施法屬性為智力。"
+						],
+						"type": "entries"
+					}
+				],
+				"data": {
+					"overwrite": "多才多藝"
+				}
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency",
+			"Weapon Proficiency",
+			"Spellcasting"
+		]
+	},
+	"Half-Elf|Drow Descent|SCAG": {
+		"name": "卓爾血統",
+		"ENG_name": "Drow Descent",
+		"source": "SCAG",
+		"page": 116,
+		"entries": [
+			{
+				"type": "inset",
+				"name": "變體特性 (選擇1種)",
+				"entries": [
+					{
+						"name": "多才多藝",
+						"entries": [
+							"你熟練於二個你所選擇的技能。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "敏銳感官",
+						"entries": [
+							"你熟練於{@skill 感知}技能。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "卓爾魔法",
+						"entries": [
+							"你知曉{@spell 舞光術}戲法。當你升至3級，你每天可以施放一次{@spell 妖火術}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你每天可以施放一次{@spell 黑暗術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+						],
+						"type": "entries"
+					}
+				],
+				"data": {
+					"overwrite": "多才多藝"
+				}
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency",
+			"Spellcasting"
+		]
+	},
+	"Half-Elf|Aquatic Elf Descent|SCAG": {
+		"name": "水生精靈血統",
+		"ENG_name": "Aquatic Elf Descent",
+		"speed": {
+			"walk": 30,
+			"swim": 30
+		},
+		"source": "SCAG",
+		"page": 116,
+		"entries": [
+			{
+				"type": "inset",
+				"name": "變體特性 (選擇1種)",
+				"entries": [
+					{
+						"name": "多才多藝",
+						"entries": [
+							"你熟練於二個你所選擇的技能。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "敏銳感官",
+						"entries": [
+							"你熟練於{@skill 感知}技能。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "游泳",
+						"entries": [
+							"你獲得30呎的游泳速度。"
+						],
+						"type": "entries"
+					}
+				],
+				"data": {
+					"overwrite": "多才多藝"
+				}
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency"
+		]
+	},
+	"Half-Elf|Mark of Detection|UAWGE": {
+		"name": "偵查龍紋",
+		"ENG_name": "Mark of Detection",
+		"speed": 30,
+		"source": "UAWGE",
+		"page": 96,
+		"ability": {
+			"cha": 1,
+			"int": 1,
+			"choose": [
+				{
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"count": 1
+				}
+			]
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "演繹直覺",
+				"entries": [
+					"當你進行智力（{@skill 調查}）檢定或睿知（{@skill 察言觀色}）檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中。"
+				],
+				"data": {
+					"overwrite": "多才多藝"
+				}
+			},
+			{
+				"type": "entries",
+				"name": "感知威脅",
+				"entries": [
+					"你可以施放{@spell 偵測魔法}和{@spell 偵測毒素或疾病}法術，但只能透過儀式施展。你施展這些法術的施法屬性為智力。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "語言",
+				"entries": [
+					"你能夠說、讀、寫通用語和精靈語。"
+				],
+				"data": {
+					"overwrite": "語言"
+				}
+			}
+		],
+		"traitTags": [
+			"Spellcasting",
+			"Dragonmark"
+		],
+		"languageTags": [
+			"Common",
+			"Elvish"
+		]
+	},
+	"Half-Elf|Mark of Storm|UAWGE": {
+		"name": "暴風龍紋",
+		"ENG_name": "Mark of Storm",
+		"speed": {
+			"walk": 30,
+			"swim": 30
+		},
+		"source": "UAWGE",
+		"page": 106,
+		"ability": {
+			"cha": 1,
+			"dex": 1,
+			"choose": [
+				{
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"count": 1
+				}
+			]
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "海猿",
+				"entries": [
+					"你的基礎步行速度為30呎，且你擁有30呎的游泳速度。"
+				],
+				"data": {
+					"overwrite": "多才多藝"
+				}
+			},
+			{
+				"type": "entries",
+				"name": "領風直覺",
+				"entries": [
+					"當你進行敏捷（{@skill 特技}）檢定或任何涉及操作或維修水上或空中載具的屬性檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "暴風祝福",
+				"entries": [
+					"你擁有對閃電傷害的抗性。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "迎風之手",
+				"entries": [
+					"你知曉{@spell 舞風|xge}戲法。當你升至3級，你每天可以施放一次{@spell 造風術}，並在你完成一次長休之後才能恢復使用此特性施放該法術的能力。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "語言",
+				"entries": [
+					"你能夠說、讀、寫通用語和精靈語。"
+				],
+				"data": {
+					"overwrite": "語言"
+				}
+			}
+		],
+		"traitTags": [
+			"Damage Resistance",
+			"Spellcasting",
+			"Dragonmark"
+		],
+		"languageTags": [
+			"Common",
+			"Elvish"
+		]
+	},
+	"Half-Orc|Mark of Finding|UAWGE": {
+		"name": "尋覓龍紋",
+		"ENG_name": "Mark of Finding",
+		"source": "UAWGE",
+		"page": 98,
+		"ability": {
+			"str": 1,
+			"wis": 1,
+			"choose": [
+				{
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"count": 1
+				}
+			],
+			"overwrite": true
+		},
+		"entries": [
+			{
+				"name": "獵人直覺",
+				"entries": [
+					"你的龍紋使你的感官更加鋒銳，並協助你找尋你的獵物。當你進行一次睿知（{@skill 感知}）或睿知（{@skill 求生}）檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中。"
+				],
+				"data": {
+					"overwrite": "兇惡"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "銘印獵物",
+				"entries": [
+					"以一個附贈動作，選擇一個距離你30呎內且你所能看見的生物。目標將被銘記在你心中直到它死亡或你再次使用此特性。或者，每當你成功通過一次睿知（{@skill 求生}）檢定以追蹤一個生物時，你可以將它銘記做為你的獵物。當追蹤你的獵物時，將你直覺骰的擲骰結果變為二倍。當你的獵物距離你60呎內，你將能察覺它的位置：它無法躲藏於你、對你獲得{@condition 隱形}的好處、且你對它進行的攻擊將忽略半掩護。一旦你使用此特性，直到你完成一次短休或長休之前你都不能再使用它。"
+				],
+				"data": {
+					"overwrite": "頑強耐性"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "自然之音",
+				"entries": [
+					"當你升至3級時，你獲得施放{@spell 動植物定位術}的能力，但只能透過儀式施展。"
+				],
+				"data": {
+					"overwrite": "野蠻攻擊"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能夠說、讀、寫通用語和哥布林語。"
+				],
+				"data": {
+					"overwrite": "語言"
+				},
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting",
+			"Dragonmark"
+		],
+		"languageTags": [
+			"Common",
+			"Goblin"
+		]
+	},
+	"Dwarf|Hill|PHB": {
+		"name": "丘陵",
+		"ENG_name": "Hill",
+		"ability": {
+			"wis": 1
+		},
+		"entries": [
+			{
+				"name": "矮人耐力",
+				"entries": [
+					"你的生命值最大值增加1點，且在每次你提升等級時再增加1點。"
+				],
+				"type": "entries"
+			}
+		]
+	},
+	"Dwarf|Mountain|PHB": {
+		"name": "高山",
+		"ENG_name": "Mountain",
+		"ability": {
+			"str": 2
+		},
+		"entries": [
+			{
+				"name": "矮人護甲訓練",
+				"entries": [
+					"你熟練於輕甲和中甲。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Armor Proficiency"
+		]
+	},
+	"Dwarf|Duergar|MTF": {
+		"name": "灰",
+		"ENG_name": "Duergar",
+		"source": "MTF",
+		"page": 81,
+		"otherSources": [
+			{
+				"source": "SCAG",
+				"page": 104
+			}
+		],
+		"darkvision": 120,
+		"ability": {
+			"str": 1
+		},
+		"entries": [
+			{
+				"name": "高級黑暗視覺",
+				"entries": [
+					"習慣了地底的生活，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你120呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
+				],
+				"data": {
+					"overwrite": "黑暗視覺"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "灰矮人韌性",
+				"entries": [
+					"你在對抗毒素的豁免檢定中具有優勢，且你對毒素傷害具有抗性。你也在對抗幻術以及對抗{@condition 魅惑}或{@condition 麻痺}的豁免檢定中具有優勢。"
+				],
+				"data": {
+					"overwrite": "矮人韌性"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能夠說、讀、寫通用語、矮人語、和地底通用語。"
+				],
+				"data": {
+					"overwrite": "語言"
+				},
+				"type": "entries"
+			},
+			{
+				"name": "灰矮人魔法",
+				"entries": [
+					"當你升至3級，你每天可以使用此特性對你自己施放一次{@spell 變巨/縮小術}，但只能使用變巨的選項。當你升至5級，你每天可以使用此特性對你自己施放一次{@spell 隱形術}。你不需要為這些法術提供材料構材，且你不能在自己暴露於陽光下時施放它們，儘管一旦施放後，陽光對它們不會有任何影響。你在完成一次長休後才能恢復再次使用此特性施放這些法術的能力。你施展這些法術的施法屬性為智力。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "日光敏感",
+				"entries": [
+					"當你、你的攻擊目標、或你嘗試感知的東西直接暴露在陽光下，則你依賴於視覺的攻擊檢定以及睿知（{@skill 感知}）檢定具有劣勢。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Damage Resistance",
+			"Spellcasting"
+		],
+		"languageTags": [
+			"Common",
+			"Dwarvish",
+			"Undercommon"
+		]
+	},
+	"Human|Variant|PHB": {
+		"name": "變體",
+		"ENG_name": "Variant",
+		"ability": {
+			"choose": [
+				{
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"count": 2
+				}
+			]
+		},
+		"entries": [
+			{
+				"name": "技能",
+				"entries": [
+					"你熟練於一個你所選擇的技能。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "專長",
+				"entries": [
+					"你獲得一個你所選擇的專長。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency"
+		]
+	},
+	"Human|Mark of Finding|UAWGE": {
+		"name": "尋覓龍紋",
+		"ENG_name": "Mark of Finding",
+		"source": "UAWGE",
+		"page": 98,
+		"darkvision": 60,
+		"ability": {
+			"dex": 1,
+			"wis": 1,
+			"choose": [
+				{
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"count": 1
+				}
+			]
+		},
+		"entries": [
+			{
+				"name": "黑暗視覺",
+				"entries": [
+					"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "獵人直覺",
+				"tENG_name": "Hunter's Intuition",
+				"entries": [
+					"你的龍紋使你的感官更加鋒銳，並協助你找尋你的獵物。當你進行一次睿知（{@skill 感知}）或睿知（{@skill 求生}）檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "銘印獵物",
+				"tENG_name": "Imprint Prey",
+				"entries": [
+					"以一個附贈動作，選擇一個距離你30呎內且你所能看見的生物。目標將被銘記在你心中直到它死亡或你再次使用此特性。或者，每當你成功通過一次睿知（{@skill 求生}）檢定以追蹤一個生物時，你可以將它銘記做為你的獵物。當追蹤你的獵物時，將你直覺骰的擲骰結果變為二倍。當你的獵物距離你60呎內，你將能察覺它的位置：它無法躲藏於你、對你獲得{@condition 隱形}的好處、且你對它進行的攻擊將忽略半掩護。一旦你使用此特性，直到你完成一次短休或長休之前你都不能再使用它。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "自然之音",
+				"tENG_name": "Nature's Voice",
+				"entries": [
+					"當你升至3級時，你獲得施放{@spell 動植物定位術}的能力，但只能透過儀式施展。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你可以說、讀、寫通用語和哥布林語。"
+				],
+				"data": {
+					"overwrite": "語言"
+				},
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting",
+			"Dragonmark"
+		],
+		"languageTags": [
+			"Common",
+			"Goblin"
+		]
+	},
+	"Human|Keldon|PSD": {
+		"name": "凱爾頓",
+		"ENG_name": "Keldon",
+		"source": "PSD",
+		"page": 19,
+		"ability": {
+			"str": 2,
+			"con": 1
+		},
+		"entries": [
+			{
+				"name": "年齡",
+				"type": "entries",
+				"entries": [
+					"凱爾頓人在近二十歲時成年，且可活不到一世紀。"
+				],
+				"data": {
+					"overwrite": "年齡"
+				}
+			},
+			{
+				"name": "陣營",
+				"type": "entries",
+				"entries": [
+					"凱爾頓人傾向混亂陣營，且他們許多徘徊於善與惡之間。"
+				],
+				"data": {
+					"overwrite": "陣營"
+				}
+			},
+			{
+				"type": "entries",
+				"name": "體型",
+				"entries": [
+					"凱爾頓人比其他文化的人類要來得更高更重，他們在身高幾乎都高於6呎，且甚至會達到7呎以上的高度。你的體型為中型。"
+				],
+				"data": {
+					"overwrite": "體型"
+				}
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能夠說、讀、寫通用語和凱爾頓語。"
+				],
+				"type": "entries",
+				"data": {
+					"overwrite": "語言"
+				}
+			},
+			{
+				"type": "entries",
+				"name": "天生健將",
+				"tENG_name": "Natural Athlete",
+				"entries": [
+					"你熟練於{@skill 運動}技能。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "凱爾頓韌性",
+				"tENG_name": "Keldon Resilience",
+				"entries": [
+					"你熟練於力量豁免。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "冰庇島之子",
+				"tENG_name": "Icehaven Born",
+				"entries": [
+					"你天生適應於寒冷的溫度，參見{@i 《地下城主指南》}第五章的敘述。"
+				]
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency"
+		],
+		"languageTags": [
+			"Common",
+			"Other"
+		]
+	},
+	"Halfling|Lightfoot|PHB": {
+		"name": "輕足",
+		"ENG_name": "Lightfoot",
+		"ability": {
+			"cha": 1
+		},
+		"entries": [
+			{
+				"name": "天生善匿",
+				"entries": [
+					"即使當你只處於體型至少大你一級的生物所造成的遮蔽後，你也可以嘗試進行躲藏。"
+				],
+				"type": "entries"
+			}
+		]
+	},
+	"Halfling|Stout|PHB": {
+		"name": "強魄",
+		"ENG_name": "Stout",
+		"ability": {
+			"con": 1
+		},
+		"entries": [
+			{
+				"name": "強魄韌性",
+				"entries": [
+					"你在對抗毒素的豁免檢定中具有優勢，且你對毒素傷害具有抗性。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Damage Resistance"
+		]
+	},
+	"Halfling|Ghostwise|SCAG": {
+		"name": "鬼智",
+		"ENG_name": "Ghostwise",
+		"source": "SCAG",
+		"page": 110,
+		"ability": {
+			"wis": 1
+		},
+		"entries": [
+			{
+				"name": "無聲傳話",
+				"entries": [
+					"你可以透過心靈感應向任何一個距離你30呎內的生物說話。該生物必須和你之間有共通語言才能理解你的意思。你同時只能以這個方式對一個生物透過心靈感應傳話。"
+				],
+				"type": "entries"
+			}
+		]
+	},
+	"Halfling|Mark of Healing|UAWGE": {
+		"name": "治療龍紋",
+		"ENG_name": "Mark of Healing",
+		"source": "UAWGE",
+		"page": 99,
+		"ability": {
+			"wis": 1
+		},
+		"entries": [
+			{
+				"name": "醫藥直覺",
+				"entries": [
+					"當你進行睿知（{@skill 醫藥}）檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "治療之觸",
+				"entries": [
+					"以一個動作，你可以從你的龍紋汲取能量以消耗你的其中一個生命骰，並使自己或一個你所觸碰的生物恢復活力。骰你的生命骰，並加上你的睿知調整值，該生物將回復等同於其總合的生命值。一旦你使用此能力，直到你完成一次短休或長休之前你都不能再使用它。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Dragonmark"
+		]
+	},
+	"Halfling|Mark of Hospitality|UAWGE": {
+		"name": "款待龍紋",
+		"ENG_name": "Mark of Hospitality",
+		"source": "UAWGE",
+		"page": 100,
+		"ability": {
+			"cha": 1
+		},
+		"entries": [
+			{
+				"name": "客棧老闆的魅力",
+				"entries": [
+					"你知曉{@spell 交友術}和{@spell 魔法技倆}戲法。你施展這些法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "常保殷勤",
+				"entries": [
+					"當你進行魅力（{@skill 說服}）檢定或任何涉及{@item 釀酒師設備|phb}或{@item 廚師炊具|phb}的屬性檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting",
+			"Dragonmark"
+		]
+	},
+	"Tiefling|Variant|SCAG": {
+		"name": "變體",
+		"ENG_name": "Variant",
+		"source": "SCAG",
+		"page": 118,
+		"ability": {
+			"int": 1,
+			"choose": [
+				{
+					"from": [
+						"dex",
+						"cha"
+					],
+					"count": 1,
+					"amount": 2
+				}
+			]
+		},
+		"entries": [
+			{
+				"name": "外貌",
+				"entries": [
+					"你的提夫林看起來或許和其他提夫林不太一樣。取代《玩家手冊》中描述的身體特徵，你從下列選項中選擇{@dice 1d4+1}項特徵：小型犄角、獠牙或尖銳的牙齒、分叉的舌頭、貓瞳、每隻手有六根手指、山羊腿、偶蹄、分叉的尾巴、革質或帶鱗的皮膚、紅色或深藍色的皮膚、不會產生影子或映像、發散出硫磺般的氣味。"
+				],
+				"type": "entries"
+			},
+			{
+				"type": "inset",
+				"name": "變體特性 (選擇1種)",
+				"entries": [
+					{
+						"name": "煉獄傳承 (PHB)",
+						"entries": [
+							"你知曉{@spell 奇術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 煉獄叱喝}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 黑暗術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "魔鬼之舌",
+						"entries": [
+							"你知曉{@spell 惡毒嘲笑}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 魅惑人類}。當你升至5級，你可以施放一次{@spell 注目術}；你必須完成一次長休才能再次使用此特性施放這些法術。你施展這些法術的施法屬性為魅力。這個特性取代煉獄傳承特性。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "地獄之火",
+						"entries": [
+							"你知曉{@spell 奇術}戲法。當你升至3級，你每天能夠以2環法術施放一次{@spell 燃燒之手}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 黑暗術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "飛翼",
+						"entries": [
+							"你擁有一對從肩胛骨長出的蝙蝠翅膀。當你未穿戴重甲時，你擁有30呎的飛行速度。"
+						],
+						"type": "entries"
+					}
+				]
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Tiefling|Asmodeus|MTF": {
+		"name": "阿斯莫德",
+		"ENG_name": "Asmodeus",
+		"source": "MTF",
+		"ability": {
+			"cha": 2,
+			"int": 1
+		},
+		"page": 21,
+		"entries": [
+			{
+				"name": "煉獄傳承",
+				"entries": [
+					"你知曉{@spell 奇術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 煉獄叱喝}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 黑暗術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Tiefling|Baalzebul|MTF": {
+		"name": "巴力西卜",
+		"ENG_name": "Baalzebul",
+		"source": "MTF",
+		"ability": {
+			"cha": 2,
+			"int": 1
+		},
+		"page": 21,
+		"entries": [
+			{
+				"name": "馬拉多米尼之遺贈",
+				"entries": [
+					"你知曉{@spell 奇術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 致病射線}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 瘋狂冠冕}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Tiefling|Dispater|MTF": {
+		"name": "狄斯帕特",
+		"ENG_name": "Dispater",
+		"source": "MTF",
+		"page": 21,
+		"ability": {
+			"cha": 2,
+			"dex": 1
+		},
+		"entries": [
+			{
+				"name": "迪斯之遺贈",
+				"entries": [
+					"你知曉{@spell 奇術}戲法。當你升至3級，你可以施放一次{@spell 易容術}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 偵測思想}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Tiefling|Fierna|MTF": {
+		"name": "菲爾娜",
+		"ENG_name": "Fierna",
+		"source": "MTF",
+		"page": 21,
+		"ability": {
+			"cha": 2,
+			"wis": 1
+		},
+		"entries": [
+			{
+				"name": "福萊格索斯之遺贈",
+				"entries": [
+					"你知曉{@spell 交友術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 魅惑人類}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 暗示術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Tiefling|Glasya|MTF": {
+		"name": "格萊希亞",
+		"ENG_name": "Glasya",
+		"source": "MTF",
+		"page": 22,
+		"ability": {
+			"cha": 2,
+			"dex": 1
+		},
+		"entries": [
+			{
+				"name": "馬爾伯吉之遺贈",
+				"entries": [
+					"你知曉{@spell 次級幻象}戲法。當你升至3級，你可以施放一次{@spell 易容術}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 隱形術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Tiefling|Levistus|MTF": {
+		"name": "萊維斯圖斯",
+		"ENG_name": "Levistus",
+		"source": "MTF",
+		"page": 22,
+		"ability": {
+			"cha": 2,
+			"con": 1
+		},
+		"entries": [
+			{
+				"name": "斯泰吉亞之遺贈",
+				"entries": [
+					"你知曉{@spell 冷凍射線}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 艾嘉西斯之鎧}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 黑暗術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Tiefling|Mammon|MTF": {
+		"name": "瑪門",
+		"ENG_name": "Mammon",
+		"source": "MTF",
+		"ability": {
+			"cha": 2,
+			"int": 1
+		},
+		"page": 22,
+		"entries": [
+			{
+				"name": "彌瑙洛斯之遺贈",
+				"entries": [
+					"你知曉{@spell 法師之手}戲法。當你升至3級，你可以施放一次{@spell 譚森浮碟術}；你必須完成一次短休或長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 祕法鎖}，無須材料構材；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Tiefling|Mephistopheles|MTF": {
+		"name": "梅菲斯托費勒斯",
+		"ENG_name": "Mephistopheles",
+		"source": "MTF",
+		"page": 23,
+		"ability": {
+			"cha": 2,
+			"int": 1
+		},
+		"entries": [
+			{
+				"name": "卡尼亞之遺贈",
+				"entries": [
+					"你知曉{@spell 法師之手}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 燃燒之手}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 火焰刀}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Tiefling|Zariel|MTF": {
+		"name": "扎瑞爾",
+		"ENG_name": "Zariel",
+		"source": "MTF",
+		"page": 23,
+		"ability": {
+			"cha": 2,
+			"str": 1
+		},
+		"entries": [
+			{
+				"name": "阿弗納斯之遺贈",
+				"entries": [
+					"你知曉{@spell 奇術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 熾炎斬}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 烙印斬}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	},
+	"Aasimar|Fallen|VGM": {
+		"name": "墮落",
+		"ENG_name": "Fallen",
+		"ability": {
+			"str": 1
+		},
+		"entries": [
+			{
+				"name": "死靈障幕",
+				"entries": [
+					"從3級開始，你可以使用你的動作以釋放你體內的神性能量，這將使你的雙眼轉變為一團黑暗，並從你的背上長出一對幽靈般，無法飛行的骨翼。在你轉變的瞬間，所有距離你10呎內且可以看見你的其他生物必須成功通過一次魅力豁免（DC 8+你的熟練加值+你的魅力調整值），否則將因你陷入{@condition 恐懼}直到你的下個回合結束。",
+					"你的轉變將會持續1分鐘，或直到你以一個附贈動作結束它。在轉變期間，在你的每個回合一次，你可以在以一次攻擊或法術對一個目標造成傷害時對它造成額外的死靈傷害。這個額外的死靈傷害等同於你的等級。",
+					"一旦你使用這個特性，直到你完成一次長休之前你都不能再使用它。"
+				],
+				"type": "entries"
+			}
+		]
+	},
+	"Aasimar|Protector|VGM": {
+		"name": "守護者",
+		"ENG_name": "Protector",
+		"ability": {
+			"wis": 1
+		},
+		"entries": [
+			{
+				"name": "光輝靈魂",
+				"entries": [
+					"從3級開始，你可以使用你的動作以釋放你體內的神性能量，這將使你的雙眼綻放光芒，並從你的背上長出一對輝煌的無實體羽翼。",
+					"你的轉變將會持續1分鐘，或直到你以一個附贈動作結束它。在轉變期間，你具有30呎的飛行速度，且在你的每個回合一次，你可以在以一次攻擊或法術對一個目標造成傷害時對它造成額外的光耀傷害。這個額外的光耀傷害等同於你的等級。",
+					"一旦你使用這個特性，直到你完成一次長休之前你都不能再使用它。"
+				],
+				"type": "entries"
+			}
+		]
+	},
+	"Aasimar|Scourge|VGM": {
+		"name": "天譴",
+		"ENG_name": "Scourge",
+		"ability": {
+			"con": 1
+		},
+		"entries": [
+			{
+				"name": "光輝焚化",
+				"entries": [
+					"從3級開始，你可以使用你的動作以釋放你體內的神性能量，這將使灼熱的光芒從你身上輻射而出，並從你的雙眼和口中湧出，威脅著就你焚燒殆盡。",
+					"你的轉變將會持續1分鐘，或直到你以一個附贈動作結束它。在轉變期間，你將散發出10呎半徑的明亮光照和再延伸10呎的微光光照，且在你的每個回合結束時，你和每個距離你10呎內的生物都將受到等同於你等級一半（向上取整）的光耀傷害。此外，在你的每個回合一次，你可以在以一次攻擊或法術對一個目標造成傷害時對它造成額外的光耀傷害。這個額外的光耀傷害等同於你的等級。",
+					"一旦你使用這個特性，直到你完成一次長休之前你都不能再使用它。"
+				],
+				"type": "entries"
+			}
+		]
+	},
+	"Human (Innistrad)|Gavony|PSI": {
+		"name": "加渥尼",
+		"ENG_name": "Gavony",
+		"ability": {
+			"str": 1,
+			"dex": 1,
+			"con": 1,
+			"int": 1,
+			"wis": 1,
+			"cha": 1
+		}
+	},
+	"Human (Innistrad)|Kessig|PSI": {
+		"name": "凱錫革",
+		"ENG_name": "Kessig",
+		"speed": 40,
+		"ability": {
+			"dex": 1,
+			"wis": 1
+		},
+		"entries": [
+			{
+				"name": "森林民族",
+				"tENG_name": "Forest Folk",
+				"entries": [
+					"你熟練於{@skill 求生}技能。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "輕捷步伐",
+				"tENG_name": "Fleet of Foot",
+				"entries": [
+					"你的基礎步行速度提升到40呎。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "穩妥步伐",
+				"tENG_name": "Sure-footed",
+				"entries": [
+					"當你採取{@action 疾走}動作時，你在該回合並不會因為困難地形而消耗額外的移動力。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "穿行攻擊",
+				"tENG_name": "Spring Attack",
+				"entries": [
+					"當你對一個生物進行了一次近戰攻擊，無論你命中與否，你在該回合都不會再引發該生物的藉機攻擊。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency"
+		]
+	},
+	"Human (Innistrad)|Nephalia|PSI": {
+		"name": "涅非利亞",
+		"ENG_name": "Nephalia",
+		"ability": {
+			"int": 1,
+			"cha": 1
+		},
+		"entries": [
+			{
+				"name": "淵博知識",
+				"tENG_name": "Breadth of Knowledge",
+				"entries": [
+					"你熟練於你所選擇的任意四個技能或四種工具。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency",
+			"Tool Proficiency"
+		]
+	},
+	"Human (Innistrad)|Stensia|PSI": {
+		"name": "史頓襄",
+		"ENG_name": "Stensia",
+		"ability": {
+			"str": 1,
+			"con": 1
+		},
+		"entries": [
+			{
+				"name": "望而生畏",
+				"tENG_name": "Daunting",
+				"entries": [
+					"你熟練於{@skill 威嚇}技能。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "健壯",
+				"tENG_name": "Tough",
+				"entries": [
+					"你的生命值最大值增加兩點，且每當你升級時，你的生命值最大值都會再額外增加2點。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency"
+		]
+	},
+	"Aven|Ibis-Headed|PSA": {
+		"name": "朱鷺首",
+		"ENG_name": "Ibis-Headed",
+		"ability": {
+			"int": 1
+		},
+		"entries": [
+			{
+				"name": "刻法涅的祝福",
+				"tENG_name": "Kefnet's Blessing",
+				"entries": [
+					"你可以將你熟練加值的一半（向下取整）加入任何未加入你熟練加值的智力檢定中。"
+				],
+				"type": "entries"
+			}
+		]
+	},
+	"Aven|Hawk-Headed|PSA": {
+		"name": "鷹首",
+		"ENG_name": "Hawk-Headed",
+		"ability": {
+			"wis": 2
+		},
+		"entries": [
+			{
+				"name": "鷹之眼",
+				"tENG_name": "Hawkeyed",
+				"entries": [
+					"你熟練於{@skill 感知}技能。此外，攻擊長射程範圍中的目標並不會讓你的遠程武器攻擊檢定因此承受劣勢。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Skill Proficiency"
+		]
+	},
+	"Gith|Githyanki|MTF": {
+		"name": "吉斯洋基",
+		"ENG_name": "Githyanki",
+		"ability": {
+			"str": 2
+		},
+		"entries": [
+			{
+				"name": "陣營",
+				"type": "entries",
+				"entries": [
+					"吉斯洋基人傾向於守序邪惡。他們好戰而傲慢，並對他們的巫妖女王維拉基斯忠心耿耿。叛變的吉斯洋基人則多傾向於混亂陣營。"
+				]
+			},
+			{
+				"name": "業餘愛好",
+				"entries": [
+					"你學會一種自選的語言，且你熟練於一個自選的技能或工具。在圖納拉斯這座永恆之城，吉斯洋基人有著大量的時間以掌握一些零碎的知識。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "軍事人才",
+				"entries": [
+					"你熟練於輕甲和中甲，以及{@item 短劍|phb}、{@item 長劍|phb}、和{@item 巨劍|phb}。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "吉斯洋基靈能",
+				"entries": [
+					"你知曉{@spell 法師之手}戲法，且當你使用此特性施放這個戲法時，這隻手是隱形的。",
+					"當你升至3級，你可以使用此特性施放一次{@spell 跳躍術}，且你在完成一次長休後才能恢復再次使用此特性這麼做的能力。當你升至5級，你使用此特性施放一次{@spell 迷蹤步}，且你在完成一次長休後才能恢復再次使用此特性這麼做的能力。",
+					"你施展這些法術的施法屬性為智力。當你使用此特性施放它們時，它們並不需要材料構材。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting",
+			"Armor Proficiency",
+			"Weapon Proficiency"
+		]
+	},
+	"Gith|Githzerai|MTF": {
+		"name": "吉斯澤萊",
+		"ENG_name": "Githzerai",
+		"ability": {
+			"wis": 2
+		},
+		"entries": [
+			{
+				"name": "陣營",
+				"type": "entries",
+				"entries": [
+					"吉斯澤萊人傾向於守序中立。他們嚴苛的靈能訓練要求著一種堅定不移的心靈紀律。"
+				]
+			},
+			{
+				"name": "心靈紀律",
+				"entries": [
+					"你在對抗{@condition 魅惑}和{@condition 恐懼}狀態的豁免檢定中具有優勢。在修道院的大師指導下，吉斯澤萊人學習如何掌握自己的心靈。"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "吉斯澤萊靈能",
+				"entries": [
+					"你知曉{@spell 法師之手}戲法，且當你使用此特性施放這個戲法時，這隻手是隱形的。",
+					"當你升至3級，你可以使用此特性施放一次{@spell 護盾術}，且你在完成一次長休後才能恢復再次使用此特性這麼做的能力。當你升至5級，你使用此特性施放一次{@spell 偵測思想}，且你在完成一次長休後才能恢復再次使用此特性這麼做的能力。",
+					"你施展這些法術的施法屬性為睿知。當你使用此特性施放它們時，它們並不需要材料構材。"
+				],
+				"type": "entries"
+			}
+		],
+		"traitTags": [
+			"Spellcasting"
+		]
+	}
+}
