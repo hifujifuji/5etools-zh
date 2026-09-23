@@ -1,0 +1,45 @@
+{
+	"batch": "tce-art-mon",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Homunculus Servant|TCE",
+			"hint": {
+				"Homunculus Servant": "侏儒僕從",
+				"Evasion": "反射閃避"
+			},
+			"s": [
+				"Homunculus Servant",
+				"natural armor",
+				"Evasion",
+				"If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can't use this trait if it's {@condition incapacitated}.",
+				"Force Strike",
+				"{@atk rw} {@hitYourSpellAttack} to hit, range 30 ft., one target you can see. {@h}{@damage 1d4 + PB} force damage.",
+				"Channel Magic",
+				"The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Steel Defender|TCE",
+			"hint": {
+				"Steel Defender": "鋼鐵衛士",
+				"Force-Empowered Rend": "力場強化撕裂",
+				"Repair (3/Day)": "修復（3/日）",
+				"Deflect Attack": "偏轉攻擊"
+			},
+			"s": [
+				"Steel Defender",
+				"natural armor",
+				"Vigilant",
+				"The defender can't be {@status surprised}.",
+				"Force-Empowered Rend",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d8 + PB} force damage.",
+				"Repair (3/Day)",
+				"The magical mechanisms inside the defender restore {@dice 2d8 + PB} hit points to itself or to one construct or object within 5 feet of it.",
+				"Deflect Attack",
+				"The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender."
+			]
+		}
+	]
+}

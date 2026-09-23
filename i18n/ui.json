@@ -1286,7 +1286,21 @@
 		"Melee  or Ranged Attack Roll:": "近戰或遠程攻擊擲骰：",
 		"Melee  or Ranged Weapon Attack:": "近戰或遠程武器攻擊：",
 		"Melee or Ranged Spell Attack:": "近戰或遠程法術攻擊：",
-		"Melee  or Ranged Spell Attack:": "近戰或遠程法術攻擊："
+		"Melee  or Ranged Spell Attack:": "近戰或遠程法術攻擊：",
+		"artificer": "奇械師",
+		"barbarian": "野蠻人",
+		"bard": "吟遊詩人",
+		"cleric": "牧師",
+		"druid": "德魯伊",
+		"fighter": "戰士",
+		"monk": "武僧",
+		"paladin": "聖騎士",
+		"ranger": "遊俠",
+		"rogue": "盜賊",
+		"sorcerer": "術士",
+		"warlock": "契術師",
+		"wizard": "法師",
+		"Core Traits": "核心特質"
 	},
 	"rules": [
 		[
@@ -1320,6 +1334,10 @@
 		[
 			"(.+) - 5etools",
 			"{1} - 5etools 中文版"
+		],
+		[
+			"(\\d+)(?:st|nd|rd|th)-level (\\w+) feature",
+			"$1 級{2}特性"
 		],
 		[
 			"(\\d+)(?:st|nd|rd|th)-level (\\w+)",

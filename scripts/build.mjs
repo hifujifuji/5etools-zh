@@ -141,6 +141,18 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	if (touched) loaded.push({file, json});
 }
 
+// ---- 3a. 職業起始裝備／熟練字串（i18n/class-equipment.json，完全比對） ----------------
+{
+	const eq = readJson(path.join(I18N, "class-equipment.json"));
+	const tr1 = arr => Array.isArray(arr) && arr.forEach((s, i) => { if (typeof s === "string" && eq[s]) arr[i] = eq[s]; });
+	for (const {json} of loaded) {
+		for (const cls of json.class || []) {
+			tr1(cls.startingEquipment?.default);
+			for (const k of ["weapons", "armor", "tools"]) { tr1(cls.startingProficiencies?.[k]); tr1(cls.multiclassing?.proficienciesGained?.[k]); }
+		}
+	}
+}
+
 // ---- 3b. 中文句子裡的標籤補上中文顯示名：{@spell Fireball|XPHB} → {@spell Fireball|XPHB|火球術} ------
 const TAG_OF_PROP = {
 	spell: "spell", monster: "creature", item: "item", baseitem: "item", magicvariant: "item", itemGroup: "item",

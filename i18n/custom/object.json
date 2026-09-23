@@ -1,4 +1,187 @@
 {
+	"Eldritch Cannon, Flamethrower|TCE": {
+		"name": "異界砲（噴火器）",
+		"source": "TCE",
+		"page": 17,
+		"size": [
+			"T",
+			"S"
+		],
+		"objectType": "U",
+		"ac": 18,
+		"hp": {
+			"special": "equal to five times your artificer level"
+		},
+		"str": 10,
+		"dex": 10,
+		"con": 10,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"grappled",
+			"incapacitated",
+			"invisible",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"prone",
+			"restrained",
+			"stunned",
+			"unconscious"
+		],
+		"entries": [
+			"{@note 由{@subclassFeature Eldritch Cannon|Artificer|TCE|Artillerist|TCE|3}子職業特性創造。}"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "噴火器",
+				"entries": [
+					"砲朝你指定的相鄰 15 呎錐形範圍噴吐火焰。該區域內的每個生物必須進行一次對抗你法術豁免 DC 的敏捷豁免檢定，豁免失敗時受到 {@damage 2d8} 火焰傷害，成功則傷害減半。火焰會點燃區域內未被穿戴或攜帶的易燃物件。"
+				],
+				"ENG_name": "Flamethrower"
+			}
+		],
+		"token": {
+			"name": "異界砲",
+			"source": "TCE",
+			"ENG_name": "Eldritch Cannon"
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Eldritch Cannon, Flamethrower"
+	},
+	"Eldritch Cannon, Force Ballista|TCE": {
+		"name": "異界砲（力場弩砲）",
+		"source": "TCE",
+		"page": 17,
+		"size": [
+			"T",
+			"S"
+		],
+		"objectType": "U",
+		"ac": 18,
+		"hp": {
+			"special": "equal to five times your artificer level"
+		},
+		"str": 10,
+		"dex": 10,
+		"con": 10,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"grappled",
+			"incapacitated",
+			"invisible",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"prone",
+			"restrained",
+			"stunned",
+			"unconscious"
+		],
+		"entries": [
+			"{@note 由{@subclassFeature Eldritch Cannon|Artificer|TCE|Artillerist|TCE|3}子職業特性創造。}"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "力場弩砲",
+				"entries": [
+					"以砲為起點，對其 120 呎內的一個生物或物件進行一次遠程法術攻擊。命中時，目標受到 {@damage 2d8} 力場傷害；若目標是生物，它被推離砲至多 5 呎。"
+				],
+				"ENG_name": "Force Ballista"
+			}
+		],
+		"token": {
+			"name": "異界砲",
+			"source": "TCE",
+			"ENG_name": "Eldritch Cannon"
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Eldritch Cannon, Force Ballista"
+	},
+	"Eldritch Cannon, Protector|TCE": {
+		"name": "異界砲（守護者）",
+		"source": "TCE",
+		"page": 17,
+		"size": [
+			"T",
+			"S"
+		],
+		"objectType": "U",
+		"ac": 18,
+		"hp": {
+			"special": "equal to five times your artificer level"
+		},
+		"str": 10,
+		"dex": 10,
+		"con": 10,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"grappled",
+			"incapacitated",
+			"invisible",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"prone",
+			"restrained",
+			"stunned",
+			"unconscious"
+		],
+		"entries": [
+			"{@note 由{@subclassFeature Eldritch Cannon|Artificer|TCE|Artillerist|TCE|3}子職業特性創造。}"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "守護者",
+				"entries": [
+					"砲釋放一陣正能量，使自身與其 10 呎內每個由你選擇的生物獲得臨時生命值，數值等同於 {@damage 1d8} + 你的智力調整值（至少 +1）。"
+				],
+				"ENG_name": "Protector"
+			}
+		],
+		"token": {
+			"name": "異界砲",
+			"source": "TCE",
+			"ENG_name": "Eldritch Cannon"
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Eldritch Cannon, Protector"
+	},
 	"Eldritch Cannon|EFA": {
 		"name": "異界砲",
 		"source": "EFA",

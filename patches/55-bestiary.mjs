@@ -65,7 +65,7 @@ export default [
 				`			joiner = "; ";
 			stack.push(\`\${ent.speed.choose.from.sort().map(prop => Parser._getSpeedString_getSpeedName({prop, styleHint})).joinConjunct(", ", " or ")} \${ent.speed.choose.amount} \${unit}`,
 				`			joiner = "；";
-			stack.push(\`\${ent.speed.choose.from.sort().map(prop => Parser._getSpeedString_getSpeedName({prop, styleHint}).trim()).joinConjunct("、", "或")} \${ent.speed.choose.amount} \${unit}\${ent.speed.choose.note?.startsWith("（") ? ent.speed.choose.note : ent.speed.choose.note ? \` \${ent.speed.choose.note}\` : ""}\`);
+			stack.push(\`\${ent.speed.choose.from.sort().map(prop => Parser._getSpeedString_getSpeedName({prop, styleHint}).trim()).joinConjunct("、", "或", true)} \${ent.speed.choose.amount} \${unit}\${ent.speed.choose.note?.startsWith("（") ? ent.speed.choose.note : ent.speed.choose.note ? \` \${ent.speed.choose.note}\` : ""}\`);
 			if (0) stack.push(\`\${ent.speed.choose.amount} \${unit}`,
 			],
 			[
@@ -139,6 +139,29 @@ Parser._getSpeedString_getSpeedName = ({prop, styleHint}) => prop === "walk" ? "
 			if (prop === "charges") return \`\${n} 充能\${each ? "（各）" : ""}\`;
 			return null;
 		};`,
+			],
+			// 「法術豁免 DC = 8 + 智力調整值 + 熟練加值」
+			[
+				`		this._recursiveRender(entry.name, textStack, meta);
+		if (options.styleHint === "classic") textStack[0] += \` save DC</b> = 8 + your proficiency bonus + your \${Parser.attrChooseToFull(entry.attributes)}</div>\`;
+		else textStack[0] += \` save DC</b> = 8 + \${Parser.attrChooseToFull(entry.attributes)} + Proficiency Bonus</div>\`;`,
+				`		this._recursiveRender(Renderer.__zhAbilityName(entry.name), textStack, meta);
+		textStack[0] += \`豁免 DC</b> = 8 + \${Renderer.__zhAttr(entry.attributes)} + 熟練加值</div>\`;`,
+			],
+			[
+				`		this._recursiveRender(entry.name, textStack, meta);
+		if (options.styleHint === "classic") textStack[0] += \` attack modifier</b> = your proficiency bonus + your \${Parser.attrChooseToFull(entry.attributes)}</div>\`;
+		else textStack[0] += \` attack modifier</b> = \${Parser.attrChooseToFull(entry.attributes)} + Proficiency Bonus</div>\`;
+	};`,
+				`		this._recursiveRender(Renderer.__zhAbilityName(entry.name), textStack, meta);
+		textStack[0] += \`攻擊調整值</b> = \${Renderer.__zhAttr(entry.attributes)} + 熟練加值</div>\`;
+	};
+	Renderer.__zhAbilityName = n => ({Spell: "法術", Maneuver: "戰技", Ki: "氣", Discipline: "靈能訓練", "Arcane Shot": "奧術射擊", Focus: "功力", Psionic: "靈能"})[n] || n;
+	Renderer.__zhAttr = atts => {
+		const M = {str: "力量", dex: "敏捷", con: "體質", int: "智力", wis: "感知", cha: "魅力", spellcasting: "施法屬性"};
+		const names = atts.map(a => M[a] || Parser.attAbvToFull(a));
+		return names.length === 1 ? \`\${names[0]}調整值\` : \`\${names.join("或")}調整值（自選）\`;
+	};`,
 			],
 			// 語言
 			[
