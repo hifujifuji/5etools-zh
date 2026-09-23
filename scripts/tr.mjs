@@ -34,6 +34,8 @@ const FILES_BY_PROP = {
 	optionalfeature: () => ["optionalfeatures.json"],
 	background: () => ["backgrounds.json"],
 	race: () => ["races.json"],
+	raceFluff: () => ["fluff-races.json"],
+	backgroundFluff: () => ["fluff-backgrounds.json"],
 	item: () => ["items.json"],
 	baseitem: () => ["items-base.json"],
 	itemType: () => ["items-base.json"],
@@ -48,6 +50,8 @@ const FILES_BY_PROP = {
 	disease: () => ["conditionsdiseases.json"],
 	status: () => ["conditionsdiseases.json"],
 };
+// 寫入的翻譯檔名（fluff 在 build 裡用 fluff-xxx 這個名稱）
+const OUT_FILE = {raceFluff: "fluff-race", backgroundFluff: "fluff-background", monsterFluff: "fluff-monster", itemFluff: "fluff-item"};
 const CLASS_PROPS = new Set(["class", "subclass", "classFeature", "subclassFeature"]);
 
 const _cacheEnts = {};
@@ -181,7 +185,7 @@ if (cmd === "export") {
 		(byProp[it.prop] ||= {})[it.key] = cpy;
 	}
 	for (const [prop, map] of Object.entries(byProp)) {
-		const f = path.join(CUSTOM, `${prop}.json`);
+		const f = path.join(CUSTOM, `${OUT_FILE[prop] || prop}.json`);
 		const cur = fs.existsSync(f) ? readJson(f) : {};
 		Object.assign(cur, map);
 		writeJson(f, Object.fromEntries(Object.entries(cur).sort(([a], [b]) => a.localeCompare(b))));
@@ -194,8 +198,8 @@ if (cmd === "export") {
 	const en = readJson(path.join(WORK, `${batch}.en.json`));
 	en.items.forEach((it, i) => console.log(`#${i} ${it.key}${it.hint ? ` 提示:${JSON.stringify(it.hint)}` : ""}\n${JSON.stringify(it.s)}`));
 } else if (cmd === "status") {
-	for (const prop of ["class", "subclass", "classFeature", "subclassFeature", "spell", "feat", "baseitem", "item", "itemType", "itemMastery", "itemProperty"]) {
-		const f = path.join(CUSTOM, `${prop}.json`);
+	for (const prop of ["class", "subclass", "classFeature", "subclassFeature", "spell", "feat", "baseitem", "item", "itemType", "itemMastery", "itemProperty", "race", "background", "raceFluff", "backgroundFluff"]) {
+		const f = path.join(CUSTOM, `${OUT_FILE[prop] || prop}.json`);
 		const done = fs.existsSync(f) ? readJson(f) : {};
 		const ents = loadEntities(prop).filter(e => SOURCES_2024_OR(e) || (opts.all && S(e.source) === "XDMG"));
 		const n = ents.filter(e => done[keyOf(prop, e)]).length;

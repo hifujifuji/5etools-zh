@@ -1,0 +1,2027 @@
+{
+	"Acolyte|XPHB": {
+		"name": "侍僧",
+		"source": "XPHB",
+		"page": 178,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"magic initiate; cleric|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"insight": true,
+				"religion": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"calligrapher's supplies": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "book|xphb",
+						"displayName": "Book (Prayers)"
+					},
+					{
+						"item": "calligrapher's supplies|xphb"
+					},
+					{
+						"item": "holy symbol|xphb"
+					},
+					{
+						"item": "parchment|xphb",
+						"quantity": 10
+					},
+					{
+						"item": "robe|xphb"
+					},
+					{
+						"value": 800
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "智力、感知、魅力",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Magic Initiate|XPHB}（牧師）",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Insight|XPHB}、{@skill Religion|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Calligrapher's Supplies|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Calligrapher's Supplies|XPHB}、{@item Book|XPHB|書（祈禱文）}、{@item Holy Symbol|XPHB}、{@item Parchment|XPHB}（10 張）、{@item Robe|xphb}、8 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Acolyte"
+	},
+	"Artisan|XPHB": {
+		"name": "工匠",
+		"source": "XPHB",
+		"page": 179,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"dex",
+							"int"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"dex",
+							"int"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"crafter|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"investigation": true,
+				"persuasion": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"anyArtisansTool": 1
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"equipmentType": "toolArtisan"
+					},
+					{
+						"item": "pouch|xphb",
+						"quantity": 2
+					},
+					{
+						"item": "traveler's clothes|xphb"
+					},
+					{
+						"value": 3200
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "力量、敏捷、智力",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Crafter|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Investigation|XPHB}、{@skill Persuasion|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "選擇一種{@item Artisan's Tools|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Artisan's Tools|XPHB}（同上）、2 {@item Pouch|XPHB|囊袋}、{@item Traveler's Clothes|XPHB}、32 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Artisan"
+	},
+	"Charlatan|XPHB": {
+		"name": "詐欺師",
+		"source": "XPHB",
+		"page": 180,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"dex",
+							"con",
+							"cha"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"dex",
+							"con",
+							"cha"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"skilled|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"deception": true,
+				"sleight of hand": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"forgery kit": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "forgery kit|xphb"
+					},
+					{
+						"item": "costume|xphb"
+					},
+					{
+						"item": "fine clothes|xphb"
+					},
+					{
+						"value": 1500
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "敏捷、體質、魅力",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Skilled|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Deception|XPHB}、{@skill Sleight of Hand|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Forgery Kit|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Forgery Kit|XPHB}、{@item Costume|XPHB}、{@item Fine Clothes|XPHB}、15 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Charlatan"
+	},
+	"Criminal|XPHB": {
+		"name": "罪犯",
+		"source": "XPHB",
+		"page": 180,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"dex",
+							"con",
+							"int"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"dex",
+							"con",
+							"int"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"alert|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"sleight of hand": true,
+				"stealth": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"thieves' tools": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "dagger|xphb",
+						"quantity": 2
+					},
+					{
+						"item": "thieves' tools|xphb"
+					},
+					{
+						"item": "crowbar|xphb"
+					},
+					{
+						"item": "pouch|xphb",
+						"quantity": 2
+					},
+					{
+						"item": "traveler's clothes|xphb"
+					},
+					{
+						"value": 1600
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "敏捷、體質、智力",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Alert|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Sleight of Hand|XPHB}、{@skill Stealth|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Thieves' Tools|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Dagger|XPHB|2 把匕首}、{@item Thieves' Tools|XPHB}、{@item Crowbar|XPHB}、{@item Pouch|XPHB|2 個囊袋}、{@item Traveler's Clothes|XPHB}、16 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Criminal"
+	},
+	"Entertainer|XPHB": {
+		"name": "藝人",
+		"source": "XPHB",
+		"page": 180,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"dex",
+							"cha"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"dex",
+							"cha"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"musician|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"acrobatics": true,
+				"performance": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"anyMusicalInstrument": 1
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"equipmentType": "instrumentMusical"
+					},
+					{
+						"item": "costume|xphb",
+						"quantity": 2
+					},
+					{
+						"item": "mirror|xphb"
+					},
+					{
+						"item": "perfume|xphb"
+					},
+					{
+						"item": "traveler's clothes|xphb"
+					},
+					{
+						"value": 1100
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "力量、敏捷、魅力",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Musician|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Acrobatics|XPHB}、{@skill Performance|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "選擇一種{@item Musical Instrument|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Musical Instrument|XPHB}（同上）、{@item Costume|XPHB|2 套戲服}、{@item Mirror|XPHB}、{@item Perfume|XPHB}、{@item Traveler's Clothes|XPHB}、11 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Entertainer"
+	},
+	"Farmer|XPHB": {
+		"name": "農夫",
+		"source": "XPHB",
+		"page": 180,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"con",
+							"wis"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"con",
+							"wis"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"tough|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"animal handling": true,
+				"nature": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"carpenter's tools": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "sickle|xphb"
+					},
+					{
+						"item": "carpenter's tools|xphb"
+					},
+					{
+						"item": "healer's kit|xphb"
+					},
+					{
+						"item": "iron pot|xphb"
+					},
+					{
+						"item": "shovel|xphb"
+					},
+					{
+						"item": "traveler's clothes|xphb"
+					},
+					{
+						"value": 3000
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "力量、體質、感知",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Tough|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Animal Handling|XPHB}、{@skill Nature|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Carpenter's Tools|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Sickle|XPHB}、{@item Carpenter's Tools|XPHB}、{@item Healer's Kit|XPHB}、{@item Iron Pot|XPHB}、{@item Shovel|XPHB}、30 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Farmer"
+	},
+	"Guard|XPHB": {
+		"name": "衛兵",
+		"source": "XPHB",
+		"page": 181,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"int",
+							"wis"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"int",
+							"wis"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"alert|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"athletics": true,
+				"perception": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"anyGamingSet": 1
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "spear|xphb"
+					},
+					{
+						"item": "light crossbow|xphb"
+					},
+					{
+						"item": "bolts (20)|xphb"
+					},
+					{
+						"equipmentType": "setGaming"
+					},
+					{
+						"item": "hooded lantern|xphb"
+					},
+					{
+						"item": "manacles|xphb"
+					},
+					{
+						"item": "quiver|xphb"
+					},
+					{
+						"item": "traveler's clothes|xphb"
+					},
+					{
+						"value": 1200
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "力量、智力、感知",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Alert|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Athletics|XPHB}、{@skill Perception|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "選擇一種{@item Gaming Set|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Spear|XPHB}、{@item Light Crossbow|XPHB}、20 {@item Bolt|XPHB|弩矢}、{@item Gaming Set|XPHB}（同上）、{@item Hooded Lantern|XPHB}、{@item Manacles|XPHB}、{@item Quiver|XPHB}、{@item Traveler's Clothes|XPHB}、12 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Guard"
+	},
+	"Guide|XPHB": {
+		"name": "嚮導",
+		"source": "XPHB",
+		"page": 181,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"dex",
+							"con",
+							"wis"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"dex",
+							"con",
+							"wis"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"magic initiate; druid|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"stealth": true,
+				"survival": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"cartographer's tools": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "shortbow|xphb"
+					},
+					{
+						"item": "arrows (20)|xphb"
+					},
+					{
+						"item": "cartographer's tools|xphb"
+					},
+					{
+						"item": "bedroll|xphb"
+					},
+					{
+						"item": "quiver|xphb"
+					},
+					{
+						"item": "tent|xphb"
+					},
+					{
+						"item": "traveler's clothes|xphb"
+					},
+					{
+						"value": 300
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "敏捷、體質、感知",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Magic Initiate|XPHB}（德魯伊）",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Stealth|XPHB}、{@skill Survival|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Cartographer's Tools|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Shortbow|XPHB}、{@item Arrow|XPHB|20 支箭}、{@item Cartographer's Tools|XPHB}、{@item Bedroll|XPHB}、{@item Quiver|XPHB}、{@item Tent|XPHB}、{@item Traveler's Clothes|XPHB}、3 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Guide"
+	},
+	"Hermit|XPHB": {
+		"name": "隱士",
+		"source": "XPHB",
+		"page": 182,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"con",
+							"wis",
+							"cha"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"con",
+							"wis",
+							"cha"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"healer|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"medicine": true,
+				"religion": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"herbalism kit": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "quarterstaff|xphb"
+					},
+					{
+						"item": "herbalism kit|xphb"
+					},
+					{
+						"item": "bedroll|xphb"
+					},
+					{
+						"item": "book|xphb"
+					},
+					{
+						"item": "lamp|xphb"
+					},
+					{
+						"item": "oil|xphb",
+						"quantity": 3
+					},
+					{
+						"item": "traveler's clothes|xphb"
+					},
+					{
+						"value": 1600
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "體質、感知、魅力",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Healer|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Medicine|XPHB}、{@skill Religion|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Herbalism Kit|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Quarterstaff|XPHB}、{@item Herbalism Kit|XPHB}、{@item Bedroll|XPHB}、{@item Book|XPHB}（哲學）、{@item Lamp|XPHB}、{@item Oil|XPHB}（3 瓶）、{@item Traveler's Clothes|XPHB}、16 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Hermit"
+	},
+	"Merchant|XPHB": {
+		"name": "商人",
+		"source": "XPHB",
+		"page": 182,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"con",
+							"int",
+							"cha"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"con",
+							"int",
+							"cha"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"lucky|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"animal handling": true,
+				"persuasion": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"navigator's tools": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "navigator's tools|xphb"
+					},
+					{
+						"item": "pouch|xphb",
+						"quantity": 2
+					},
+					{
+						"item": "traveler's clothes|xphb"
+					},
+					{
+						"value": 2200
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "體質、智力、魅力",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Lucky|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Animal Handling|XPHB}、{@skill Persuasion|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Navigator's Tools|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Navigator's Tools|XPHB}、{@item Pouch|XPHB|2 個囊袋}、{@item Traveler's Clothes|XPHB}、22 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Merchant"
+	},
+	"Noble|XPHB": {
+		"name": "貴族",
+		"source": "XPHB",
+		"page": 183,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"int",
+							"cha"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"int",
+							"cha"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"Skilled|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"history": true,
+				"persuasion": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"anyGamingSet": 1
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"equipmentType": "setGaming"
+					},
+					{
+						"item": "fine clothes|xphb"
+					},
+					{
+						"item": "perfume|xphb"
+					},
+					{
+						"value": 2900
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "力量、智力、魅力",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Skilled|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill History|XPHB}、{@skill Persuasion|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "選擇一種{@item Gaming Set|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Gaming Set|XPHB}（同上）、{@item Fine Clothes|XPHB}、{@item Perfume|XPHB}、29 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Noble"
+	},
+	"Sage|XPHB": {
+		"name": "賢者",
+		"source": "XPHB",
+		"page": 183,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"con",
+							"int",
+							"wis"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"con",
+							"int",
+							"wis"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"magic initiate; wizard|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"arcana": true,
+				"history": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"calligrapher's supplies": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "quarterstaff|xphb"
+					},
+					{
+						"item": "calligrapher's supplies|xphb"
+					},
+					{
+						"item": "book|xphb"
+					},
+					{
+						"item": "parchment|xphb",
+						"quantity": 8
+					},
+					{
+						"item": "robe|xphb"
+					},
+					{
+						"value": 800
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "體質、智力、感知",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Magic Initiate|XPHB}（法師）",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Arcana|XPHB}、{@skill History|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Calligrapher's Supplies|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Quarterstaff|XPHB}、{@item Calligrapher's Supplies|XPHB}、{@item Book|XPHB}（歷史）、{@item Parchment|XPHB}（8 張）、{@item Robe|XPHB}、8 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Sage"
+	},
+	"Sailor|XPHB": {
+		"name": "水手",
+		"source": "XPHB",
+		"page": 184,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"dex",
+							"wis"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"dex",
+							"wis"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"tavern brawler|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"acrobatics": true,
+				"perception": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"navigator's tools": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "dagger|xphb"
+					},
+					{
+						"item": "navigator's tools|xphb"
+					},
+					{
+						"item": "rope|xphb"
+					},
+					{
+						"item": "traveler's clothes|xphb"
+					},
+					{
+						"value": 2000
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "力量、敏捷、感知",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Tavern Brawler|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Acrobatics|XPHB}、{@skill Perception|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Navigator's Tools|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Dagger|XPHB}、{@item Navigator's Tools|XPHB}、{@item Rope|XPHB}、{@item Traveler's Clothes|XPHB}、20 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Sailor"
+	},
+	"Scribe|XPHB": {
+		"name": "抄寫員",
+		"source": "XPHB",
+		"page": 184,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"dex",
+							"int",
+							"wis"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"dex",
+							"int",
+							"wis"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"skilled|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"investigation": true,
+				"perception": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"calligrapher's supplies": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "calligrapher's supplies|xphb"
+					},
+					{
+						"item": "fine clothes|xphb"
+					},
+					{
+						"item": "lamp|xphb"
+					},
+					{
+						"item": "oil|xphb"
+					},
+					{
+						"item": "parchment|xphb"
+					},
+					{
+						"value": 2300
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "敏捷、智力、感知",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Skilled|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Investigation|XPHB}、{@skill Perception|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Calligrapher's Supplies|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Calligrapher's Supplies|XPHB}、{@item Fine Clothes|XPHB}、{@item Lamp|XPHB}、{@item Oil|XPHB}（3 瓶）、{@item Parchment|XPHB}（12 張）、23 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Scribe"
+	},
+	"Soldier|XPHB": {
+		"name": "士兵",
+		"source": "XPHB",
+		"page": 185,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"dex",
+							"con"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"str",
+							"dex",
+							"con"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"savage attacker|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"athletics": true,
+				"intimidation": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"anyGamingSet": 1
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "spear|xphb"
+					},
+					{
+						"item": "shortbow|xphb"
+					},
+					{
+						"item": "arrows (20)|xphb"
+					},
+					{
+						"equipmentType": "setGaming"
+					},
+					{
+						"item": "healer's kit|xphb"
+					},
+					{
+						"item": "quiver|xphb"
+					},
+					{
+						"item": "traveler's clothes|xphb"
+					},
+					{
+						"value": 1400
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "力量、敏捷、體質",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Savage Attacker|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Athletics|XPHB}、{@skill Intimidation|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "選擇一種{@item Gaming Set|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Spear|XPHB}、{@item Shortbow|XPHB}、{@item Arrow|XPHB|20 支箭}、{@item Gaming Set|XPHB}（同上）、{@item Healer's Kit|XPHB}、{@item Quiver|XPHB}、{@item Traveler's Clothes|XPHB}、14 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Soldier"
+	},
+	"Wayfarer|XPHB": {
+		"name": "流浪者",
+		"source": "XPHB",
+		"page": 185,
+		"edition": "one",
+		"ability": [
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"dex",
+							"wis",
+							"cha"
+						],
+						"weights": [
+							2,
+							1
+						]
+					}
+				}
+			},
+			{
+				"choose": {
+					"weighted": {
+						"from": [
+							"dex",
+							"wis",
+							"cha"
+						],
+						"weights": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		],
+		"feats": [
+			{
+				"lucky|xphb": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"insight": true,
+				"stealth": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"thieves' tools": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"A": [
+					{
+						"item": "dagger|xphb",
+						"quantity": 2
+					},
+					{
+						"item": "thieves' tools|xphb"
+					},
+					{
+						"equipmentType": "setGaming"
+					},
+					{
+						"item": "bedroll|xphb"
+					},
+					{
+						"item": "pouch|xphb",
+						"quantity": 2
+					},
+					{
+						"item": "traveler's clothes|xphb"
+					},
+					{
+						"value": 1600
+					}
+				],
+				"B": [
+					{
+						"value": 5000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性值：",
+						"entry": "敏捷、感知、魅力",
+						"ENG_name": "Ability Scores:"
+					},
+					{
+						"type": "item",
+						"name": "專長：",
+						"entry": "{@feat Lucky|XPHB}",
+						"ENG_name": "Feat:"
+					},
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Insight|XPHB}、{@skill Stealth|XPHB}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Thieves' Tools|XPHB}",
+						"ENG_name": "Tool Proficiency:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "選擇 A 或 B：(A) {@item Dagger|XPHB|2 把匕首}、{@item Thieves' Tools|XPHB}、{@item Gaming Set|XPHB}（任一種）、{@item Bedroll|XPHB}、{@item Pouch|XPHB|2 個囊袋}、{@item Traveler's Clothes|XPHB}、16 GP；或 (B) 50 GP",
+						"ENG_name": "Equipment:"
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Wayfarer"
+	}
+}

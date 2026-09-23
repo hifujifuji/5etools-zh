@@ -1,0 +1,1877 @@
+{
+	"Aasimar|XPHB": {
+		"name": "阿斯莫",
+		"source": "XPHB",
+		"page": 186,
+		"edition": "one",
+		"creatureTypes": [
+			"humanoid"
+		],
+		"size": [
+			"S",
+			"M"
+		],
+		"speed": 30,
+		"darkvision": 60,
+		"resist": [
+			"necrotic",
+			"radiant"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/aasimar.mp3"
+		},
+		"additionalSpells": [
+			{
+				"ability": "cha",
+				"known": {
+					"1": [
+						"light|xphb#c"
+					]
+				}
+			}
+		],
+		"sizeEntry": {
+			"type": "item",
+			"name": "體型：",
+			"entries": [
+				"中型（身高約 4–7 呎）或小型（身高約 2–4 呎），於選擇此種族時決定"
+			],
+			"ENG_name": "Size:"
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "天界抗性",
+				"entries": [
+					"你對黯蝕傷害與光耀傷害具有{@variantrule Resistance|XPHB}。"
+				],
+				"ENG_name": "Celestial Resistance"
+			},
+			{
+				"type": "entries",
+				"name": "黑暗視覺",
+				"entries": [
+					"你擁有範圍 60 呎的{@sense Darkvision|XPHB}。"
+				],
+				"ENG_name": "Darkvision"
+			},
+			{
+				"type": "entries",
+				"name": "治癒之手",
+				"entries": [
+					"作為一個{@action Magic|XPHB}動作，你碰觸一個生物，並擲數量等同於你{@variantrule Proficiency|XPHB|熟練加值}的 d4。該生物恢復等同於擲骰總和的{@variantrule Hit Points|XPHB}。使用此特性後，直到你完成一次{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Healing Hands"
+			},
+			{
+				"type": "entries",
+				"name": "光明使者",
+				"entries": [
+					"你知道{@spell Light|XPHB}戲法。魅力是你施展此戲法的施法屬性。"
+				],
+				"ENG_name": "Light Bearer"
+			},
+			{
+				"type": "entries",
+				"name": "天界啟示",
+				"entries": [
+					"當你達到角色等級 3 時，你可以作為一個{@variantrule Bonus Action|XPHB}進行變身，使用下列選項之一（每次變身時選擇）。變身持續 1 分鐘，或直到你結束它為止（無需動作）。變身後，直到你完成一次{@variantrule Long Rest|XPHB}前都無法再次變身。",
+					"在變身結束前，於你的每個回合中一次，當你以攻擊或法術對一個目標造成傷害時，你可以對該目標造成額外傷害。額外傷害等同於你的{@variantrule Proficiency|XPHB|熟練加值}；若為「黯蝕屍衣」，額外傷害類型為黯蝕，若為「天界之翼」與「內在光輝」則為光耀。",
+					"變身選項如下：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "天界之翼",
+								"entries": [
+									"兩片幽靈般的翅膀暫時從你背上長出。直到變身結束前，你擁有等同於你{@variantrule Speed|XPHB}的{@variantrule Fly Speed|XPHB}。"
+								],
+								"ENG_name": "Heavenly Wings"
+							},
+							{
+								"type": "item",
+								"name": "內在光輝",
+								"entries": [
+									"灼熱的光芒暫時從你的雙眼與口中散發出來。在持續時間內，你在 10 呎半徑內發出{@variantrule Bright Light|XPHB}，並在其外額外 10 呎發出{@variantrule Dim Light|XPHB}；在你的每個回合結束時，你 10 呎內的每個生物受到等同於你{@variantrule Proficiency|XPHB|熟練加值}的光耀傷害。"
+								],
+								"ENG_name": "Inner Radiance"
+							},
+							{
+								"type": "item",
+								"name": "黯蝕屍衣",
+								"entries": [
+									"你的雙眼短暫化為兩潭黑暗，無法飛行的翅膀暫時從你背上長出。你 10 呎內除盟友以外的生物，必須通過一次魅力豁免檢定（{@dc 8} + 你的魅力調整值 + 你的{@variantrule Proficiency|XPHB|熟練加值}），否則處於{@condition Frightened|XPHB}狀態直到你的下個回合結束。"
+								],
+								"ENG_name": "Necrotic Shroud"
+							}
+						]
+					}
+				],
+				"ENG_name": "Celestial Revelation"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Aasimar"
+	},
+	"Dragonborn|XPHB": {
+		"name": "龍裔",
+		"source": "XPHB",
+		"page": 187,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"creatureTypes": [
+			"humanoid"
+		],
+		"size": [
+			"M"
+		],
+		"speed": 30,
+		"darkvision": 60,
+		"resist": [
+			{
+				"choose": {
+					"from": [
+						"acid",
+						"lightning",
+						"fire",
+						"poison",
+						"cold"
+					]
+				}
+			}
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/dragonborn.mp3"
+		},
+		"sizeEntry": {
+			"type": "item",
+			"name": "體型：",
+			"entries": [
+				"中型（身高約 5–7 呎）"
+			],
+			"ENG_name": "Size:"
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "龍族血統",
+				"entries": [
+					"你的血脈源自一位龍族祖先。從「龍族祖先」表中選擇龍的種類。你的選擇會影響你的吐息武器與{@variantrule Damage|XPHB|傷害}{@variantrule Resistance|XPHB|抗性}特性，以及你的外貌。",
+					{
+						"type": "table",
+						"caption": "龍族祖先",
+						"colLabels": [
+							"龍",
+							"傷害類型"
+						],
+						"colStyles": [
+							"col-6",
+							"col-6"
+						],
+						"rows": [
+							[
+								"黑龍",
+								"強酸"
+							],
+							[
+								"藍龍",
+								"閃電"
+							],
+							[
+								"黃銅龍",
+								"火焰"
+							],
+							[
+								"青銅龍",
+								"閃電"
+							],
+							[
+								"赤銅龍",
+								"強酸"
+							],
+							[
+								"金龍",
+								"火焰"
+							],
+							[
+								"綠龍",
+								"毒素"
+							],
+							[
+								"紅龍",
+								"火焰"
+							],
+							[
+								"銀龍",
+								"寒冷"
+							],
+							[
+								"白龍",
+								"寒冷"
+							]
+						]
+					}
+				],
+				"ENG_name": "Draconic Ancestry"
+			},
+			{
+				"type": "entries",
+				"name": "吐息武器",
+				"entries": [
+					"當你在自己的回合執行{@action Attack|XPHB}動作時，你可以將其中一次攻擊替換為吐出魔法能量，形成 15 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}或長 30 呎、寬 5 呎的{@variantrule Line [Area of Effect]|XPHB|直線}（每次選擇形狀）。該區域內的每個生物必須進行一次敏捷豁免檢定（{@dc 8} + 你的體質調整值 + 你的{@variantrule Proficiency|XPHB|熟練加值}）。豁免失敗時，生物受到 {@damage 1d10} 傷害，類型由你的龍族血統特性決定。豁免成功時，生物受到的傷害減半。此傷害在你達到角色等級 5（{@damage 2d10}）、11（{@damage 3d10}）與 17（{@damage 4d10}）時各增加 {@damage 1d10}。",
+					"你可以使用此吐息武器的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成一次{@variantrule Long Rest|XPHB}時恢復所有已消耗的次數。"
+				],
+				"ENG_name": "Breath Weapon"
+			},
+			{
+				"type": "entries",
+				"name": "傷害抗性",
+				"entries": [
+					"你對你的龍族血統特性所決定的傷害類型具有{@variantrule Resistance|XPHB}。"
+				],
+				"ENG_name": "Damage Resistance"
+			},
+			{
+				"type": "entries",
+				"name": "黑暗視覺",
+				"entries": [
+					"你擁有範圍 60 呎的{@sense Darkvision|XPHB}。"
+				],
+				"ENG_name": "Darkvision"
+			},
+			{
+				"type": "entries",
+				"name": "龍族飛行",
+				"entries": [
+					"當你達到角色等級 5 時，你可以引導龍族魔法讓自己暫時飛行。作為一個{@variantrule Bonus Action|XPHB}，你的背上長出幽靈般的翅膀，持續 10 分鐘，或直到你收起翅膀（無需動作）或處於{@condition Incapacitated|XPHB}狀態為止。在此期間，你擁有等同於你{@variantrule Speed|XPHB}的{@variantrule Fly Speed|XPHB}。你的翅膀看起來是由與你吐息武器相同的能量構成。使用此特性後，直到你完成一次{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Draconic Flight"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"_versions": [
+			{
+				"_abstract": {
+					"name": "Dragonborn ({{color}})",
+					"source": "XPHB",
+					"_mod": {
+						"entries": [
+							{
+								"mode": "removeArr",
+								"names": "Draconic Ancestry"
+							},
+							{
+								"mode": "replaceArr",
+								"replace": "Breath Weapon",
+								"items": {
+									"type": "entries",
+									"name": "Breath Weapon",
+									"entries": [
+										"When you take the {@action Attack|XPHB} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} or a 30-foot {@variantrule Line [Area of Effect]|XPHB|Line} that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw ({@dc 8} plus your Constitution modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}). On a failed save, a creature takes {@damage 1d10} {{damageType}} damage. On a successful save, a creature takes half as much damage. This damage increases by {@damage 1d10} when you reach character levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10}).",
+										"You can use this Breath Weapon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+									]
+								}
+							},
+							{
+								"mode": "replaceArr",
+								"replace": "Damage Resistance",
+								"items": {
+									"type": "entries",
+									"name": "Damage Resistance",
+									"entries": [
+										"You have {@variantrule Resistance|XPHB} to {{damageType}} damage."
+									]
+								}
+							}
+						]
+					}
+				},
+				"_implementations": [
+					{
+						"_variables": {
+							"color": "Black",
+							"damageType": "Acid"
+						},
+						"resist": [
+							"acid"
+						]
+					},
+					{
+						"_variables": {
+							"color": "Blue",
+							"damageType": "Lightning"
+						},
+						"resist": [
+							"lightning"
+						]
+					},
+					{
+						"_variables": {
+							"color": "Brass",
+							"damageType": "Fire"
+						},
+						"resist": [
+							"fire"
+						]
+					},
+					{
+						"_variables": {
+							"color": "Bronze",
+							"damageType": "Lightning"
+						},
+						"resist": [
+							"lightning"
+						]
+					},
+					{
+						"_variables": {
+							"color": "Copper",
+							"damageType": "Acid"
+						},
+						"resist": [
+							"acid"
+						]
+					},
+					{
+						"_variables": {
+							"color": "Gold",
+							"damageType": "Fire"
+						},
+						"resist": [
+							"fire"
+						]
+					},
+					{
+						"_variables": {
+							"color": "Green",
+							"damageType": "Poison"
+						},
+						"resist": [
+							"poison"
+						]
+					},
+					{
+						"_variables": {
+							"color": "Red",
+							"damageType": "Fire"
+						},
+						"resist": [
+							"fire"
+						]
+					},
+					{
+						"_variables": {
+							"color": "Silver",
+							"damageType": "Cold"
+						},
+						"resist": [
+							"cold"
+						]
+					},
+					{
+						"_variables": {
+							"color": "White",
+							"damageType": "Cold"
+						},
+						"resist": [
+							"cold"
+						]
+					}
+				]
+			}
+		],
+		"ENG_name": "Dragonborn"
+	},
+	"Dwarf|XPHB": {
+		"name": "矮人",
+		"source": "XPHB",
+		"page": 188,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"creatureTypes": [
+			"humanoid"
+		],
+		"size": [
+			"M"
+		],
+		"speed": 30,
+		"darkvision": 120,
+		"resist": [
+			"poison"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/dwarf.mp3"
+		},
+		"sizeEntry": {
+			"type": "item",
+			"name": "體型：",
+			"entries": [
+				"中型（身高約 4–5 呎）"
+			],
+			"ENG_name": "Size:"
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "黑暗視覺",
+				"entries": [
+					"你擁有範圍 120 呎的{@sense Darkvision|XPHB}。"
+				],
+				"ENG_name": "Darkvision"
+			},
+			{
+				"type": "entries",
+				"name": "矮人韌性",
+				"entries": [
+					"你對毒素傷害具有{@variantrule Resistance|XPHB}。你為避免或終止{@condition Poisoned|XPHB}狀態所進行的豁免檢定也具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Dwarven Resilience"
+			},
+			{
+				"type": "entries",
+				"name": "矮人堅韌",
+				"entries": [
+					"你的{@variantrule Hit Points|XPHB|生命值}上限提升 1，且每當你獲得一個等級時再提升 1。"
+				],
+				"ENG_name": "Dwarven Toughness"
+			},
+			{
+				"type": "entries",
+				"name": "石材知識",
+				"entries": [
+					"作為一個{@variantrule Bonus Action|XPHB}，你獲得範圍 60 呎的{@sense Tremorsense|XPHB}，持續 10 分鐘。你必須位於石質表面上或碰觸石質表面，才能使用此{@sense Tremorsense|XPHB}。石頭可以是天然或經過加工的。",
+					"你可以使用此{@variantrule Bonus Action|XPHB}的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成一次{@variantrule Long Rest|XPHB}時恢復所有已消耗的次數。"
+				],
+				"ENG_name": "Stonecunning"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Dwarf"
+	},
+	"Elf|XPHB": {
+		"name": "精靈",
+		"source": "XPHB",
+		"page": 189,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"creatureTypes": [
+			"humanoid"
+		],
+		"size": [
+			"M"
+		],
+		"speed": 30,
+		"darkvision": 60,
+		"traitTags": [
+			"Improved Resting"
+		],
+		"skillProficiencies": [
+			{
+				"choose": {
+					"from": [
+						"insight",
+						"perception",
+						"survival"
+					]
+				}
+			}
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/elf.mp3"
+		},
+		"additionalSpells": [
+			{
+				"name": "Drow",
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"faerie fire|xphb"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"darkness|xphb"
+							]
+						}
+					}
+				},
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"1": [
+						"dancing lights|xphb#c"
+					]
+				}
+			},
+			{
+				"name": "High Elf",
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"detect magic|xphb"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"misty step|xphb"
+							]
+						}
+					}
+				},
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"1": {
+						"_": [
+							{
+								"choose": "level=0|class=Wizard"
+							}
+						]
+					}
+				}
+			},
+			{
+				"name": "Wood Elf",
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"longstrider|xphb"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"pass without trace|xphb"
+							]
+						}
+					}
+				},
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"1": [
+						"druidcraft|xphb#c"
+					]
+				}
+			}
+		],
+		"sizeEntry": {
+			"type": "item",
+			"name": "體型：",
+			"entries": [
+				"中型（身高約 5–6 呎）"
+			],
+			"ENG_name": "Size:"
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "黑暗視覺",
+				"entries": [
+					"你擁有範圍 60 呎的{@sense Darkvision|XPHB}。"
+				],
+				"ENG_name": "Darkvision"
+			},
+			{
+				"type": "entries",
+				"name": "精靈血系",
+				"entries": [
+					"你屬於一個賦予你超自然能力的血系。從「精靈血系」表中選擇一個血系。你獲得該血系的 1 級益處。",
+					"當你達到角色等級 3 與 5 時，你學會一道更高環的法術，如表中所示。你總是準備著該法術。你可以不消耗法術欄位施展它一次，並在完成一次{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的適當環階法術欄位施展該法術。",
+					"智力、感知或魅力為你以此特性施展之法術的施法屬性（於選擇血系時決定）。",
+					{
+						"type": "table",
+						"caption": "精靈血系",
+						"colLabels": [
+							"血系",
+							"1 級",
+							"3 級",
+							"5 級"
+						],
+						"colStyles": [
+							"col-2",
+							"col-6",
+							"col-2",
+							"col-2"
+						],
+						"rows": [
+							[
+								"卓爾",
+								"你的{@sense Darkvision|XPHB}範圍增加到 120 呎。你也知道{@spell Dancing Lights|XPHB}戲法。",
+								"{@spell Faerie Fire|XPHB}",
+								"{@spell Darkness|XPHB}"
+							],
+							[
+								"高等精靈",
+								"你知道{@spell Prestidigitation|XPHB}戲法。每當你完成一次{@variantrule Long Rest|XPHB}時，你可以將該戲法替換為另一道{@filter 法師法術列表上的戲法|spells|level=0|class=Wizard}。",
+								"{@spell Detect Magic|XPHB}",
+								"{@spell Misty Step|XPHB}"
+							],
+							[
+								"木精靈",
+								"你的{@variantrule Speed|XPHB}增加到 35 呎。你也知道{@spell Druidcraft|XPHB}戲法。",
+								"{@spell Longstrider|XPHB}",
+								"{@spell Pass without Trace|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Elven Lineage"
+			},
+			{
+				"type": "entries",
+				"name": "妖精血統",
+				"entries": [
+					"你為避免或終止{@condition Charmed|XPHB}狀態所進行的豁免檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Fey Ancestry"
+			},
+			{
+				"type": "entries",
+				"name": "敏銳感官",
+				"entries": [
+					"你獲得{@skill Insight|XPHB}、{@skill Perception|XPHB}或{@skill Survival|XPHB}技能其中一項的熟練。"
+				],
+				"ENG_name": "Keen Senses"
+			},
+			{
+				"type": "entries",
+				"name": "出神",
+				"entries": [
+					"你不需要睡眠，魔法也無法使你入睡。若你花費 4 小時進行出神般的冥想，並在期間保持意識，你就能完成一次{@variantrule Long Rest|XPHB}。"
+				],
+				"ENG_name": "Trance"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"_versions": [
+			{
+				"name": "Elf; Drow Lineage",
+				"source": "XPHB",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "replaceArr",
+							"replace": "Elven Lineage",
+							"items": {
+								"name": "Elven Lineage (Drow)",
+								"type": "entries",
+								"entries": [
+									"You are part of a lineage that grants you supernatural abilities. The range of your {@sense Darkvision|XPHB} increases to 120 feet. You also know the {@spell Dancing Lights|XPHB} cantrip.",
+									"When you reach character level 3, you learn the {@spell Faerie Fire|XPHB} spell. When you reach character level 5, you also learn the {@spell Darkness|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+									"Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage)."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Darkvision",
+							"items": {
+								"name": "Darkvision",
+								"type": "entries",
+								"entries": [
+									"You have {@sense Darkvision|XPHB} with a range of 120 feet."
+								]
+							}
+						}
+					]
+				},
+				"darkvision": 120,
+				"additionalSpells": [
+					{
+						"innate": {
+							"3": {
+								"daily": {
+									"1": [
+										"faerie fire|xphb"
+									]
+								}
+							},
+							"5": {
+								"daily": {
+									"1": [
+										"darkness|xphb"
+									]
+								}
+							}
+						},
+						"ability": {
+							"choose": [
+								"int",
+								"wis",
+								"cha"
+							]
+						},
+						"known": {
+							"1": [
+								"dancing lights|xphb#c"
+							]
+						}
+					}
+				]
+			},
+			{
+				"name": "Elf; High Elf Lineage",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Elven Lineage",
+						"items": {
+							"name": "Elven Lineage (High Elf)",
+							"type": "entries",
+							"entries": [
+								"You are part of a lineage that grants you supernatural abilities. You know the {@spell Prestidigitation|XPHB} cantrip. Whenever you finish a {@variantrule Long Rest|XPHB}, you can replace that cantrip with a different {@filter cantrip from the Wizard spell list|spells|level=0|class=Wizard}.",
+								"When you reach character level 3, you learn the {@spell Detect Magic|XPHB} spell. When you reach character level 5, you also learn the {@spell Misty Step|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+								"Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage)."
+							]
+						}
+					}
+				},
+				"additionalSpells": [
+					{
+						"innate": {
+							"3": {
+								"daily": {
+									"1": [
+										"detect magic|xphb"
+									]
+								}
+							},
+							"5": {
+								"daily": {
+									"1": [
+										"misty step|xphb"
+									]
+								}
+							}
+						},
+						"ability": {
+							"choose": [
+								"int",
+								"wis",
+								"cha"
+							]
+						},
+						"known": {
+							"1": {
+								"_": [
+									{
+										"choose": "level=0|class=Wizard"
+									}
+								]
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "Elf; Wood Elf Lineage",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Elven Lineage",
+						"items": {
+							"name": "Elven Lineage (Wood Elf)",
+							"type": "entries",
+							"entries": [
+								"You are part of a lineage that grants you supernatural abilities. Your {@variantrule Speed|XPHB} increases to 35 feet. You also know the {@spell Druidcraft|XPHB} cantrip.",
+								"When you reach character level 3, you learn the {@spell Longstrider|XPHB} spell. When you reach character level 5, you also learn the {@spell Pass without Trace|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+								"Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage)."
+							]
+						}
+					}
+				},
+				"speed": 35,
+				"additionalSpells": [
+					{
+						"innate": {
+							"3": {
+								"daily": {
+									"1": [
+										"longstrider|xphb"
+									]
+								}
+							},
+							"5": {
+								"daily": {
+									"1": [
+										"pass without trace|xphb"
+									]
+								}
+							}
+						},
+						"ability": {
+							"choose": [
+								"int",
+								"wis",
+								"cha"
+							]
+						},
+						"known": {
+							"1": [
+								"druidcraft|xphb#c"
+							]
+						}
+					}
+				]
+			}
+		],
+		"ENG_name": "Elf"
+	},
+	"Gnome|XPHB": {
+		"name": "地侏",
+		"source": "XPHB",
+		"page": 191,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"creatureTypes": [
+			"humanoid"
+		],
+		"size": [
+			"S"
+		],
+		"speed": 30,
+		"darkvision": 60,
+		"soundClip": {
+			"type": "internal",
+			"path": "races/gnome.mp3"
+		},
+		"sizeEntry": {
+			"type": "item",
+			"name": "體型：",
+			"entries": [
+				"小型（身高約 3–4 呎）"
+			],
+			"ENG_name": "Size:"
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "黑暗視覺",
+				"entries": [
+					"你擁有範圍 60 呎的{@sense Darkvision|XPHB}。"
+				],
+				"ENG_name": "Darkvision"
+			},
+			{
+				"type": "entries",
+				"name": "地侏狡黠",
+				"entries": [
+					"你的智力、感知與魅力豁免檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Gnomish Cunning"
+			},
+			{
+				"type": "entries",
+				"name": "地侏血系",
+				"entries": [
+					"你屬於一個賦予你超自然能力的血系。從下列選項中擇一；無論選擇哪一個，智力、感知或魅力為你以此特性施展之法術的施法屬性（於選擇血系時決定）：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "森林地侏",
+								"entries": [
+									"你知道{@spell Minor Illusion|XPHB}戲法。你也總是準備著{@spell Speak with Animals|XPHB}法術。你可以不消耗法術欄位施展它，次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成一次{@variantrule Long Rest|XPHB}時恢復所有已消耗的次數。你也可以使用你擁有的任何法術欄位施展該法術。"
+								],
+								"ENG_name": "Forest Gnome"
+							},
+							{
+								"type": "item",
+								"name": "岩石地侏",
+								"entries": [
+									"你知道{@spell Mending|XPHB}與{@spell Prestidigitation|XPHB}戲法。此外，你可以花費 10 分鐘施展{@spell Prestidigitation|XPHB}，製作一個微型發條裝置（AC 5，1 HP），例如玩具、點火器或音樂盒。製作裝置時，你從{@spell Prestidigitation|XPHB}中選擇一種效果來決定其功能；每當你或另一個生物執行一個{@variantrule Bonus Action|XPHB}碰觸裝置以啟動它時，裝置便會產生該效果。若所選效果中有多種選項，你在製作裝置時為其選擇其中一種。例如，若你選擇該法術的點火／熄火效果，你要決定裝置是點火還是熄火，裝置不會兩者皆可。你同時最多可以擁有三個這樣的裝置，每個裝置會在製作後 8 小時，或你作為一個{@action Utilize|XPHB}動作碰觸將其拆解時散架。"
+								],
+								"ENG_name": "Rock Gnome"
+							}
+						]
+					}
+				],
+				"ENG_name": "Gnomish Lineage"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"_versions": [
+			{
+				"name": "Gnome; Forest Gnome Lineage",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Gnomish Lineage",
+						"items": {
+							"name": "Gnomish Lineage (Forest Gnome)",
+							"type": "entries",
+							"entries": [
+								"You know the {@spell Minor Illusion|XPHB} cantrip. You also always have the {@spell Speak with Animals|XPHB} spell prepared. You can cast it without a spell slot a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}. You can also use any spell slots you have to cast the spell."
+							]
+						}
+					}
+				},
+				"additionalSpells": [
+					{
+						"innate": {
+							"3": {
+								"daily": {
+									"pb": [
+										"speak with animals|xphb"
+									]
+								}
+							}
+						},
+						"ability": {
+							"choose": [
+								"int",
+								"wis",
+								"cha"
+							]
+						},
+						"known": {
+							"1": [
+								"minor illusion|xphb#c"
+							]
+						}
+					}
+				]
+			},
+			{
+				"name": "Gnome; Rock Gnome Lineage",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Gnomish Lineage",
+						"items": {
+							"name": "Gnomish Lineage (Rock Gnome)",
+							"type": "entries",
+							"entries": [
+								"You know the {@spell Mending|XPHB} and {@spell Prestidigitation|XPHB} cantrips. In addition, you can spend 10 minutes casting {@spell Prestidigitation|XPHB} to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from {@spell Prestidigitation|XPHB}; the device produces that effect whenever you or another creature takes a {@variantrule Bonus Action|XPHB} to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a {@action Utilize|XPHB} action."
+							]
+						}
+					}
+				},
+				"additionalSpells": [
+					{
+						"ability": {
+							"choose": [
+								"int",
+								"wis",
+								"cha"
+							]
+						},
+						"known": {
+							"1": [
+								"mending|xphb#c",
+								"prestidigitation|xphb#c"
+							]
+						}
+					}
+				]
+			}
+		],
+		"ENG_name": "Gnome"
+	},
+	"Goliath|XPHB": {
+		"name": "歌利亞",
+		"source": "XPHB",
+		"page": 192,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"creatureTypes": [
+			"humanoid"
+		],
+		"size": [
+			"M"
+		],
+		"speed": 35,
+		"traitTags": [
+			"Powerful Build"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/goliath.mp3"
+		},
+		"sizeEntry": {
+			"type": "item",
+			"name": "體型：",
+			"entries": [
+				"中型（身高約 7–8 呎）"
+			],
+			"ENG_name": "Size:"
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "巨人血統",
+				"entries": [
+					"你是巨人的後裔。從下列益處中選擇一項——來自你血統的超自然恩賜；你可以使用所選益處的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成一次{@variantrule Long Rest|XPHB}時恢復所有已消耗的次數：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "雲之漫步（雲巨人）",
+								"entries": [
+									"作為一個{@variantrule Bonus Action|XPHB}，你以魔法傳送至多 30 呎，到達一處你能看見的未被佔據空間。"
+								],
+								"ENG_name": "Cloud's Jaunt (Cloud Giant)"
+							},
+							{
+								"type": "item",
+								"name": "火之灼燒（火巨人）",
+								"entries": [
+									"當你以攻擊檢定命中一個目標並對其造成傷害時，你也可以對該目標造成 {@damage 1d10} 火焰傷害。"
+								],
+								"ENG_name": "Fire's Burn (Fire Giant)"
+							},
+							{
+								"type": "item",
+								"name": "霜之寒意（霜巨人）",
+								"entries": [
+									"當你以攻擊檢定命中一個目標並對其造成傷害時，你也可以對該目標造成 {@damage 1d6} 寒冷傷害，並使其{@variantrule Speed|XPHB}降低 10 呎，直到你的下個回合開始。"
+								],
+								"ENG_name": "Frost's Chill (Frost Giant)"
+							},
+							{
+								"type": "item",
+								"name": "丘之翻滾（山丘巨人）",
+								"entries": [
+									"當你以攻擊檢定命中一個大型或更小的生物並對其造成傷害時，你可以使該目標處於{@condition Prone|XPHB}狀態。"
+								],
+								"ENG_name": "Hill's Tumble (Hill Giant)"
+							},
+							{
+								"type": "item",
+								"name": "石之堅忍（石巨人）",
+								"entries": [
+									"當你受到傷害時，你可以執行一個{@variantrule Reaction|XPHB}擲 {@dice 1d12}。將你的體質調整值加到擲骰結果上，並使傷害減少該總和。"
+								],
+								"ENG_name": "Stone's Endurance (Stone Giant)"
+							},
+							{
+								"type": "item",
+								"name": "暴風之雷（風暴巨人）",
+								"entries": [
+									"當你受到你 60 呎內一個生物的傷害時，你可以執行一個{@variantrule Reaction|XPHB}，對該生物造成 {@damage 1d8} 雷鳴傷害。"
+								],
+								"ENG_name": "Storm's Thunder (Storm Giant)"
+							}
+						]
+					}
+				],
+				"ENG_name": "Giant Ancestry"
+			},
+			{
+				"type": "entries",
+				"name": "大型形態",
+				"entries": [
+					"從角色等級 5 開始，若你所在的空間夠大，你可以作為一個{@variantrule Bonus Action|XPHB}將你的體型變為大型。此變身持續 10 分鐘，或直到你結束它為止（無需動作）。在此期間，你的力量檢定具有{@variantrule Advantage|XPHB}，且你的{@variantrule Speed|XPHB}增加 10 呎。使用此特性後，直到你完成一次{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Large Form"
+			},
+			{
+				"type": "entries",
+				"name": "強健體格",
+				"entries": [
+					"你為終止{@condition Grappled|XPHB}狀態而進行的任何屬性檢定具有{@variantrule Advantage|XPHB}。在決定你的負重能力時，你也視為大一級的體型。"
+				],
+				"ENG_name": "Powerful Build"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"_versions": [
+			{
+				"name": "Goliath; Cloud Giant Ancestry",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Giant Ancestry",
+						"items": {
+							"name": "Giant Ancestry (Cloud)",
+							"type": "entries",
+							"entries": [
+								"You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Cloud's Jaunt",
+											"entries": [
+												"As a {@variantrule Bonus Action|XPHB}, you magically teleport up to 30 feet to an unoccupied space you can see."
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Goliath; Fire Giant Ancestry",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Giant Ancestry",
+						"items": {
+							"name": "Giant Ancestry (Fire)",
+							"type": "entries",
+							"entries": [
+								"You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Fire's Burn",
+											"entries": [
+												"When you hit a target with an attack roll and deal damage to it, you can also deal {@damage 1d10} Fire damage to that target."
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Goliath; Frost Giant Ancestry",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Giant Ancestry",
+						"items": {
+							"name": "Giant Ancestry (Frost)",
+							"type": "entries",
+							"entries": [
+								"You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Frost's Chill",
+											"entries": [
+												"When you hit a target with an attack roll and deal damage to it, you can also deal {@damage 1d6} Cold damage to that target and reduce its {@variantrule Speed|XPHB} by 10 feet until the start of your next turn."
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Goliath; Hill Giant Ancestry",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Giant Ancestry",
+						"items": {
+							"name": "Giant Ancestry (Hill)",
+							"type": "entries",
+							"entries": [
+								"You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Hill's Tumble",
+											"entries": [
+												"When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the {@condition Prone|XPHB} condition."
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Goliath; Stone Giant Ancestry",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Giant Ancestry",
+						"items": {
+							"name": "Giant Ancestry (Stone)",
+							"type": "entries",
+							"entries": [
+								"You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Stone's Endurance",
+											"entries": [
+												"When you take damage, you can take a {@variantrule Reaction|XPHB} to roll {@dice 1d12}. Add your Constitution modifier to the number rolled and reduce the damage by that total."
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Goliath; Storm Giant Ancestry",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Giant Ancestry",
+						"items": {
+							"name": "Giant Ancestry (Storm)",
+							"type": "entries",
+							"entries": [
+								"You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Storm's Thunder",
+											"entries": [
+												"When you take damage from a creature within 60 feet of you, you can take a {@variantrule Reaction|XPHB} to deal {@damage 1d8} Thunder damage to that creature."
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"ENG_name": "Goliath"
+	},
+	"Halfling|XPHB": {
+		"name": "半身人",
+		"source": "XPHB",
+		"page": 193,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"creatureTypes": [
+			"humanoid"
+		],
+		"size": [
+			"S"
+		],
+		"speed": 30,
+		"soundClip": {
+			"type": "internal",
+			"path": "races/halfling.mp3"
+		},
+		"sizeEntry": {
+			"type": "item",
+			"name": "體型：",
+			"entries": [
+				"小型（身高約 2–3 呎）"
+			],
+			"ENG_name": "Size:"
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "勇敢",
+				"entries": [
+					"你為避免或終止{@condition Frightened|XPHB}狀態所進行的豁免檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Brave"
+			},
+			{
+				"type": "entries",
+				"name": "半身人靈巧",
+				"entries": [
+					"你可以穿過任何比你大一級或更大之生物的空間，但你不能停留在同一個空間中。"
+				],
+				"ENG_name": "Halfling Nimbleness"
+			},
+			{
+				"type": "entries",
+				"name": "幸運",
+				"entries": [
+					"當你在{@variantrule D20 Test|XPHB}的 {@dice d20} 上擲出 1 時，你可以重擲該骰子，且必須使用新的結果。"
+				],
+				"ENG_name": "Luck"
+			},
+			{
+				"type": "entries",
+				"name": "天生潛行",
+				"entries": [
+					"即使你只被一個比你至少大一級的生物遮蔽，你也可以執行{@action Hide|XPHB}動作。"
+				],
+				"ENG_name": "Naturally Stealthy"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Halfling"
+	},
+	"Human|XPHB": {
+		"name": "人類",
+		"source": "XPHB",
+		"page": 194,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"creatureTypes": [
+			"humanoid"
+		],
+		"size": [
+			"S",
+			"M"
+		],
+		"speed": 30,
+		"feats": [
+			{
+				"anyFromCategory": {
+					"category": [
+						"O"
+					],
+					"count": 1
+				}
+			}
+		],
+		"skillProficiencies": [
+			{
+				"any": 1
+			}
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/human.mp3"
+		},
+		"sizeEntry": {
+			"type": "item",
+			"name": "體型：",
+			"entries": [
+				"中型（身高約 4–7 呎）或小型（身高約 2–4 呎），於選擇此種族時決定"
+			],
+			"ENG_name": "Size:"
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "足智多謀",
+				"entries": [
+					"每當你完成一次{@variantrule Long Rest|XPHB}時，你獲得{@variantrule Heroic Inspiration|XPHB}。"
+				],
+				"ENG_name": "Resourceful"
+			},
+			{
+				"type": "entries",
+				"name": "技藝純熟",
+				"entries": [
+					"你獲得一項自選技能的熟練。"
+				],
+				"ENG_name": "Skillful"
+			},
+			{
+				"type": "entries",
+				"name": "多才多藝",
+				"entries": [
+					"你獲得一個自選的{@filter 起源專長|feats|category=o}。"
+				],
+				"ENG_name": "Versatile"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Human"
+	},
+	"Orc|XPHB": {
+		"name": "獸人",
+		"source": "XPHB",
+		"page": 195,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"creatureTypes": [
+			"humanoid"
+		],
+		"size": [
+			"M"
+		],
+		"speed": 30,
+		"darkvision": 120,
+		"soundClip": {
+			"type": "internal",
+			"path": "races/orc.mp3"
+		},
+		"sizeEntry": {
+			"type": "item",
+			"name": "體型：",
+			"entries": [
+				"中型（身高約 6–7 呎）"
+			],
+			"ENG_name": "Size:"
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "腎上腺素爆發",
+				"entries": [
+					"你可以作為一個{@variantrule Bonus Action|XPHB}執行{@action Dash|XPHB}動作。當你這麼做時，你獲得等同於你{@variantrule Proficiency|XPHB|熟練加值}的{@variantrule Temporary Hit Points|XPHB}。",
+					"你可以使用此特性的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成一次{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}時恢復所有已消耗的次數。"
+				],
+				"ENG_name": "Adrenaline Rush"
+			},
+			{
+				"type": "entries",
+				"name": "黑暗視覺",
+				"entries": [
+					"你擁有範圍 120 呎的{@sense Darkvision|XPHB}。"
+				],
+				"ENG_name": "Darkvision"
+			},
+			{
+				"type": "entries",
+				"name": "不屈堅忍",
+				"entries": [
+					"當你的{@variantrule Hit Points|XPHB}降至 0 但未被直接殺死時，你可以改為降至 1 點{@variantrule Hit Points|XPHB|生命值}。使用此特性後，直到你完成一次{@variantrule Long Rest|XPHB}前都無法再次使用。"
+				],
+				"ENG_name": "Relentless Endurance"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Orc"
+	},
+	"Tiefling|XPHB": {
+		"name": "提夫林",
+		"source": "XPHB",
+		"page": 197,
+		"srd52": true,
+		"basicRules2024": true,
+		"edition": "one",
+		"creatureTypes": [
+			"humanoid"
+		],
+		"size": [
+			"S",
+			"M"
+		],
+		"speed": 30,
+		"darkvision": 60,
+		"resist": [
+			{
+				"choose": {
+					"from": [
+						"poison",
+						"necrotic",
+						"fire"
+					]
+				}
+			}
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/tiefling.mp3"
+		},
+		"additionalSpells": [
+			{
+				"name": "Abyssal",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"1": [
+						"thaumaturgy|xphb#c",
+						"poison spray|xphb#c"
+					]
+				},
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"ray of sickness|xphb"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"hold person|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Chthonic",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"1": [
+						"thaumaturgy|xphb#c",
+						"chill touch|xphb#c"
+					]
+				},
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"false life|xphb"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"ray of enfeeblement|xphb"
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Infernal",
+				"ability": {
+					"choose": [
+						"int",
+						"wis",
+						"cha"
+					]
+				},
+				"known": {
+					"1": [
+						"thaumaturgy|xphb#c",
+						"fire bolt|xphb#c"
+					]
+				},
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"hellish rebuke|xphb"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"darkness|xphb"
+							]
+						}
+					}
+				}
+			}
+		],
+		"sizeEntry": {
+			"type": "item",
+			"name": "體型：",
+			"entries": [
+				"中型（身高約 4–7 呎）或小型（身高約 3–4 呎），於選擇此種族時決定"
+			],
+			"ENG_name": "Size:"
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "黑暗視覺",
+				"entries": [
+					"你擁有範圍 60 呎的{@sense Darkvision|XPHB}。"
+				],
+				"ENG_name": "Darkvision"
+			},
+			{
+				"type": "entries",
+				"name": "邪魔傳承",
+				"entries": [
+					"你繼承了一份賦予你超自然能力的傳承。從「邪魔傳承」表中選擇一個傳承。你獲得所選傳承的 1 級益處。",
+					"當你達到角色等級 3 與 5 時，你學會一道更高環的法術，如表中所示。你總是準備著該法術。你可以不消耗法術欄位施展它一次，並在完成一次{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。你也可以使用你擁有的適當環階法術欄位施展該法術。智力、感知或魅力為你以此特性施展之法術的施法屬性（於選擇傳承時決定）。",
+					{
+						"type": "table",
+						"caption": "邪魔傳承",
+						"colLabels": [
+							"傳承",
+							"1 級",
+							"3 級",
+							"5 級"
+						],
+						"colStyles": [
+							"col-2",
+							"col-6",
+							"col-2",
+							"col-2"
+						],
+						"rows": [
+							[
+								"深淵",
+								"你對毒素傷害具有{@variantrule Resistance|XPHB}。你也知道{@spell Poison Spray|XPHB}戲法。",
+								"{@spell Ray of Sickness|XPHB}",
+								"{@spell Hold Person|XPHB}"
+							],
+							[
+								"冥府",
+								"你對黯蝕傷害具有{@variantrule Resistance|XPHB}。你也知道{@spell Chill Touch|XPHB}戲法。",
+								"{@spell False Life|XPHB}",
+								"{@spell Ray of Enfeeblement|XPHB}"
+							],
+							[
+								"煉獄",
+								"你對火焰傷害具有{@variantrule Resistance|XPHB}。你也知道{@spell Fire Bolt|XPHB}戲法。",
+								"{@spell Hellish Rebuke|XPHB}",
+								"{@spell Darkness|XPHB}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Fiendish Legacy"
+			},
+			{
+				"type": "entries",
+				"name": "異界氣息",
+				"entries": [
+					"你知道{@spell Thaumaturgy|XPHB}戲法。當你以此特性施展它時，該法術使用與你的邪魔傳承特性相同的施法屬性。"
+				],
+				"ENG_name": "Otherworldly Presence"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"_versions": [
+			{
+				"name": "Tiefling; Abyssal Legacy",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Fiendish Legacy",
+						"items": {
+							"name": "Fiendish Legacy (Abyssal)",
+							"type": "entries",
+							"entries": [
+								"You are the recipient of a legacy that grants you supernatural abilities. You have {@variantrule Resistance|XPHB} to Poison damage. You also know the {@spell Poison Spray|XPHB} cantrip.",
+								"When you reach character level 3, you learn the {@spell Ray of Sickness|XPHB} spell. When you reach character level 5, you also learn the {@spell Hold Person|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+								"Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy)."
+							]
+						}
+					}
+				},
+				"darkvision": 120,
+				"resist": [
+					"poison"
+				],
+				"additionalSpells": [
+					{
+						"innate": {
+							"3": {
+								"daily": {
+									"1": [
+										"ray of sickness|xphb"
+									]
+								}
+							},
+							"5": {
+								"daily": {
+									"1": [
+										"hold person|xphb"
+									]
+								}
+							}
+						},
+						"ability": {
+							"choose": [
+								"int",
+								"wis",
+								"cha"
+							]
+						},
+						"known": {
+							"1": [
+								"thaumaturgy|xphb#c",
+								"poison spray|xphb#c"
+							]
+						}
+					}
+				]
+			},
+			{
+				"name": "Tiefling; Chthonic Legacy",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Fiendish Legacy",
+						"items": {
+							"name": "Fiendish Legacy (Chthonic)",
+							"type": "entries",
+							"entries": [
+								"You are the recipient of a legacy that grants you supernatural abilities. You have {@variantrule Resistance|XPHB} to Necrotic damage. You also know the {@spell Chill Touch|XPHB} cantrip.",
+								"When you reach character level 3, you learn the {@spell False Life|XPHB} spell. When you reach character level 5, you also learn the {@spell Ray of Enfeeblement|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+								"Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy)."
+							]
+						}
+					}
+				},
+				"resist": [
+					"necrotic"
+				],
+				"additionalSpells": [
+					{
+						"innate": {
+							"3": {
+								"daily": {
+									"1": [
+										"false life|xphb"
+									]
+								}
+							},
+							"5": {
+								"daily": {
+									"1": [
+										"ray of enfeeblement|xphb"
+									]
+								}
+							}
+						},
+						"ability": {
+							"choose": [
+								"int",
+								"wis",
+								"cha"
+							]
+						},
+						"known": {
+							"1": [
+								"thaumaturgy|xphb#c",
+								"chill touch|xphb#c"
+							]
+						}
+					}
+				]
+			},
+			{
+				"name": "Tiefling; Infernal Legacy",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "Fiendish Legacy",
+						"items": {
+							"name": "Fiendish Legacy (Infernal)",
+							"type": "entries",
+							"entries": [
+								"You are the recipient of a legacy that grants you supernatural abilities. You have {@variantrule Resistance|XPHB} to Fire damage. You also know the {@spell Fire Bolt|XPHB} cantrip.",
+								"When you reach character level 3, you learn the {@spell Hellish Rebuke|XPHB} spell. When you reach character level 5, you also learn the {@spell Darkness|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+								"Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy)."
+							]
+						}
+					}
+				},
+				"resist": [
+					"fire"
+				],
+				"additionalSpells": [
+					{
+						"innate": {
+							"3": {
+								"daily": {
+									"1": [
+										"hellish rebuke|xphb"
+									]
+								}
+							},
+							"5": {
+								"daily": {
+									"1": [
+										"darkness|xphb"
+									]
+								}
+							}
+						},
+						"ability": {
+							"choose": [
+								"int",
+								"wis",
+								"cha"
+							]
+						},
+						"known": {
+							"1": [
+								"thaumaturgy|xphb#c",
+								"fire bolt|xphb#c"
+							]
+						}
+					}
+				]
+			}
+		],
+		"ENG_name": "Tiefling"
+	}
+}

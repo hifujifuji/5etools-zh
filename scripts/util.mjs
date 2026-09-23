@@ -14,5 +14,5 @@ export const writeJson = (f, obj, {pretty = true} = {}) => {
 	fs.writeFileSync(f, pretty ? `${JSON.stringify(obj, null, "\t")}\n` : JSON.stringify(obj));
 };
 
-const RE_CJK = /[㐀-鿿豈-﫿]/;
+const RE_CJK = /[\u3001-\u303f\u3400-\u9fff\uf900-\ufaff\uff01-\uff5e]/;
 export const hasCjk = s => typeof s === "string" && RE_CJK.test(s);

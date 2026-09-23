@@ -1,0 +1,165 @@
+{
+	"batch": "xphb-race-1",
+	"items": [
+		{
+			"prop": "race",
+			"key": "Aasimar|XPHB",
+			"hint": {
+				"Aasimar": "阿斯莫",
+				"Darkvision": "黑暗視覺"
+			},
+			"s": [
+				"Aasimar",
+				"Size:",
+				"Medium (about 4-7 feet tall) or Small (about 2-4 feet tall), chosen when you select this species",
+				"Celestial Resistance",
+				"You have {@variantrule Resistance|XPHB} to Necrotic damage and Radiant damage.",
+				"Darkvision",
+				"You have {@sense Darkvision|XPHB} with a range of 60 feet.",
+				"Healing Hands",
+				"As a {@action Magic|XPHB} action, you touch a creature and roll a number of d4s equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}. The creature regains a number of {@variantrule Hit Points|XPHB} equal to the total rolled. Once you use this trait, you can't use it again until you finish a {@variantrule Long Rest|XPHB}.",
+				"Light Bearer",
+				"You know the {@spell Light|XPHB} cantrip. Charisma is your spellcasting ability for it.",
+				"Celestial Revelation",
+				"When you reach character level 3, you can transform as a {@variantrule Bonus Action|XPHB} using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a {@variantrule Long Rest|XPHB}.",
+				"Once on each of your turns before the transformation ends, you can deal extra damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and the extra damage's type is either Necrotic for Necrotic Shroud or Radiant for Heavenly Wings and Inner Radiance.",
+				"Here are the transformation options:",
+				"Heavenly Wings",
+				"Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a {@variantrule Fly Speed|XPHB} equal to your {@variantrule Speed|XPHB}.",
+				"Inner Radiance",
+				"Searing light temporarily radiates from your eyes and mouth. For the duration, you shed {@variantrule Bright Light|XPHB} in a 10-foot radius and {@variantrule Dim Light|XPHB} for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes Radiant damage equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}.",
+				"Necrotic Shroud",
+				"Your eyes briefly become pools of darkness, and flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw ({@dc 8} plus your Charisma modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}) or have the {@condition Frightened|XPHB} condition until the end of your next turn."
+			]
+		},
+		{
+			"prop": "race",
+			"key": "Dragonborn|XPHB",
+			"hint": {
+				"Dragonborn": "龍裔",
+				"Damage Resistance": "傷害抗性",
+				"Darkvision": "黑暗視覺"
+			},
+			"s": [
+				"Dragonborn",
+				"Size:",
+				"Medium (about 5-7 feet tall)",
+				"Draconic Ancestry",
+				"Your lineage stems from a dragon progenitor. Choose the kind of dragon from the Draconic Ancestors table. Your choice affects your Breath Weapon and {@variantrule Damage|XPHB} {@variantrule Resistance|XPHB} traits as well as your appearance.",
+				"Draconic Ancestors",
+				"Dragon",
+				"Damage Type",
+				"Black",
+				"Acid",
+				"Blue",
+				"Lightning",
+				"Brass",
+				"Fire",
+				"Bronze",
+				"Lightning",
+				"Copper",
+				"Acid",
+				"Gold",
+				"Fire",
+				"Green",
+				"Poison",
+				"Red",
+				"Fire",
+				"Silver",
+				"Cold",
+				"White",
+				"Cold",
+				"Breath Weapon",
+				"When you take the {@action Attack|XPHB} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} or a 30-foot {@variantrule Line [Area of Effect]|XPHB|Line} that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw ({@dc 8} plus your Constitution modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}). On a failed save, a creature takes {@damage 1d10} damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by {@damage 1d10} when you reach character levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10}).",
+				"You can use this Breath Weapon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+				"Damage Resistance",
+				"You have {@variantrule Resistance|XPHB} to the damage type determined by your Draconic Ancestry trait.",
+				"Darkvision",
+				"You have {@sense Darkvision|XPHB} with a range of 60 feet.",
+				"Draconic Flight",
+				"When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a {@variantrule Bonus Action|XPHB}, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the {@condition Incapacitated|XPHB} condition. During that time, you have a {@variantrule Fly Speed|XPHB} equal to your {@variantrule Speed|XPHB}. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "race",
+			"key": "Dwarf|XPHB",
+			"hint": {
+				"Dwarf": "矮人",
+				"Darkvision": "黑暗視覺"
+			},
+			"s": [
+				"Dwarf",
+				"Size:",
+				"Medium (about 4-5 feet tall)",
+				"Darkvision",
+				"You have {@sense Darkvision|XPHB} with a range of 120 feet.",
+				"Dwarven Resilience",
+				"You have {@variantrule Resistance|XPHB} to Poison damage. You also have {@variantrule Advantage|XPHB} on saving throws you make to avoid or end the {@condition Poisoned|XPHB} condition.",
+				"Dwarven Toughness",
+				"Your {@variantrule Hit Points|XPHB|Hit Point} maximum increases by 1, and it increases by 1 again whenever you gain a level.",
+				"Stonecunning",
+				"As a {@variantrule Bonus Action|XPHB}, you gain {@sense Tremorsense|XPHB} with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this {@sense Tremorsense|XPHB}. The stone can be natural or worked.",
+				"You can use this {@variantrule Bonus Action|XPHB} a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "race",
+			"key": "Elf|XPHB",
+			"hint": {
+				"Elf": "精靈",
+				"Darkvision": "黑暗視覺"
+			},
+			"s": [
+				"Elf",
+				"Size:",
+				"Medium (about 5-6 feet tall)",
+				"Darkvision",
+				"You have {@sense Darkvision|XPHB} with a range of 60 feet.",
+				"Elven Lineage",
+				"You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage.",
+				"When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+				"Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).",
+				"Elven Lineages",
+				"Lineage",
+				"Level 1",
+				"Level 3",
+				"Level 5",
+				"Drow",
+				"The range of your {@sense Darkvision|XPHB} increases to 120 feet. You also know the {@spell Dancing Lights|XPHB} cantrip.",
+				"High Elf",
+				"You know the {@spell Prestidigitation|XPHB} cantrip. Whenever you finish a {@variantrule Long Rest|XPHB}, you can replace that cantrip with a different {@filter cantrip from the Wizard spell list|spells|level=0|class=Wizard}.",
+				"Wood Elf",
+				"Your {@variantrule Speed|XPHB} increases to 35 feet. You also know the {@spell Druidcraft|XPHB} cantrip.",
+				"Fey Ancestry",
+				"You have {@variantrule Advantage|XPHB} on saving throws you make to avoid or end the {@condition Charmed|XPHB} condition.",
+				"Keen Senses",
+				"You have proficiency in the {@skill Insight|XPHB}, {@skill Perception|XPHB}, or {@skill Survival|XPHB} skill.",
+				"Trance",
+				"You don't need to sleep, and magic can't put you to sleep. You can finish a {@variantrule Long Rest|XPHB} in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness."
+			]
+		},
+		{
+			"prop": "race",
+			"key": "Gnome|XPHB",
+			"hint": {
+				"Gnome": "地侏",
+				"Darkvision": "黑暗視覺"
+			},
+			"s": [
+				"Gnome",
+				"Size:",
+				"Small (about 3-4 feet tall)",
+				"Darkvision",
+				"You have {@sense Darkvision|XPHB} with a range of 60 feet.",
+				"Gnomish Cunning",
+				"You have {@variantrule Advantage|XPHB} on Intelligence, Wisdom, and Charisma saving throws.",
+				"Gnomish Lineage",
+				"You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):",
+				"Forest Gnome",
+				"You know the {@spell Minor Illusion|XPHB} cantrip. You also always have the {@spell Speak with Animals|XPHB} spell prepared. You can cast it without a spell slot a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}. You can also use any spell slots you have to cast the spell.",
+				"Rock Gnome",
+				"You know the {@spell Mending|XPHB} and {@spell Prestidigitation|XPHB} cantrips. In addition, you can spend 10 minutes casting {@spell Prestidigitation|XPHB} to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from {@spell Prestidigitation|XPHB}; the device produces that effect whenever you or another creature takes a {@variantrule Bonus Action|XPHB} to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a {@action Utilize|XPHB} action."
+			]
+		}
+	]
+}
