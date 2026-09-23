@@ -86,6 +86,7 @@ export const RULE = s => {
 	if (LABELS[s]) return LABELS[s];
 	if (/^(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma)(, (Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma))+$/.test(s)) return s.split(", ").map(a => ABL[a]).join("、");
 	if (/^(\{@skill [^}]+\})((, |,? and )\{@skill [^}]+\})+$/.test(s)) return s.replace(/,? and /g, "、").replace(/, /g, "、");
+	if (/^(\{@spell [^}]+\})(, \{@spell [^}]+\})+$/.test(s)) return s.replace(/, /g, "、");
 	if (/^Choose A or B: /.test(s)) {
 		let t = s
 			.replace(/^Choose A or B: /, "選擇 A 或 B：")

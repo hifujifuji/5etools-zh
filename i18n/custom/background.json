@@ -3661,6 +3661,701 @@
 		"hasFluffImages": true,
 		"ENG_name": "Farmer"
 	},
+	"Feylost|WBTW": {
+		"name": "妖精迷途者",
+		"source": "WBtW",
+		"page": 9,
+		"skillProficiencies": [
+			{
+				"deception": true,
+				"survival": true
+			}
+		],
+		"languageProficiencies": [
+			{
+				"anyStandard": 1,
+				"choose": {
+					"from": [
+						"elvish",
+						"gnomish",
+						"goblin",
+						"sylvan"
+					]
+				}
+			}
+		],
+		"toolProficiencies": [
+			{
+				"anyMusicalInstrument": 1
+			}
+		],
+		"startingEquipment": [
+			{
+				"_": [
+					{
+						"equipmentType": "instrumentMusical"
+					},
+					"traveler's clothes|phb",
+					{
+						"item": "feywild trinket|wbtw",
+						"quantity": 3
+					},
+					{
+						"item": "pouch|phb",
+						"containsValue": 800
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Deception}、{@skill Survival}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "一種{@filter 樂器|items|source=phb|miscellaneous=mundane|type=instrument}",
+						"ENG_name": "Tool Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "語言：",
+						"entry": "從{@language Elvish}、{@language Gnomish}、{@language Goblin}或{@language Sylvan}中選擇一種",
+						"ENG_name": "Languages:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "一件{@filter 樂器|items|source=phb|miscellaneous=mundane|type=instrument}（自選一種）、一套{@item Traveler's Clothes|PHB|旅行服裝}、三件小飾品（各在{@item Feywild Trinket|WBtW|妖精荒野小飾品}表上擲骰決定），以及一個裝有 8 gp 的{@item pouch|phb}",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"name": "特性：妖精荒野連結",
+				"type": "entries",
+				"entries": [
+					"你的舉止與對妖精習俗的了解會被妖精荒野的原住民認出，他們會把你視為自己人。因此，若你在妖精荒野中迷路或需要幫助，友善的妖精生物會傾向伸出援手。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Feywild Connection"
+			},
+			{
+				"type": "entries",
+				"name": "妖精印記",
+				"entries": [
+					"你在妖精荒野的停留讓你產生了些微的轉變，並獲得了一個妖精印記，在「妖精印記」表上擲骰決定。",
+					{
+						"type": "table",
+						"caption": "妖精印記",
+						"colLabels": [
+							"d8",
+							"妖精印記"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"你的眼睛流轉著虹彩般的色彩。"
+							],
+							[
+								"2",
+								"你身上有一股甜甜的香味，像花蜜或蜂蜜。"
+							],
+							[
+								"3",
+								"你有像貓一樣的長鬍鬚。"
+							],
+							[
+								"4",
+								"你的耳朵覆蓋著柔軟的毛簇。"
+							],
+							[
+								"5",
+								"你的皮膚在月光下閃閃發光。"
+							],
+							[
+								"6",
+								"花朵在你面前會綻放或凋謝（由你選擇）。"
+							],
+							[
+								"7",
+								"你的頭髮由藤蔓或荊棘構成，剪斷後 1 小時內就會長回原本的長度。"
+							],
+							[
+								"8",
+								"你有一條像狗或其他動物的尾巴。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Fey Mark"
+			},
+			{
+				"type": "entries",
+				"name": "妖精荒野訪客",
+				"entries": [
+					"每當你在長休期間熟睡或深度出神時，若 DM 希望，一個妖精荒野的精魂可能會來拜訪你。在「妖精荒野訪客」表上擲骰決定精魂的形態。這種拜訪絕不會對你造成傷害，可能持續數分鐘或數小時，而你醒來時會記得每一次拜訪。與訪客的對話內容可以是任何事，從訊息與洞見到胡言亂語與誤導線索，由 DM 決定。這類對話總是以你能理解的語言進行，即使妖精荒野訪客通常不會說那種語言。",
+					{
+						"type": "table",
+						"caption": "妖精荒野訪客",
+						"colLabels": [
+							"d8",
+							"訪客"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"覺醒生物（被施展了{@spell awaken}法術的野獸或普通植物）"
+							],
+							[
+								"2",
+								"{@creature Centaur}"
+							],
+							[
+								"3",
+								"{@creature Dryad}"
+							],
+							[
+								"4",
+								"{@creature Faerie Dragon (Violet)||Faerie dragon}"
+							],
+							[
+								"5",
+								"{@creature Pixie}"
+							],
+							[
+								"6",
+								"{@creature Satyr}"
+							],
+							[
+								"7",
+								"{@creature Sprite}"
+							],
+							[
+								"8",
+								"{@creature Unicorn}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Feywild Visitor"
+			},
+			{
+				"type": "section",
+				"name": "角色特徵",
+				"entries": [
+					"玩家為角色選擇背景時，可以使用下列表格來協助決定角色的個性特徵、理想、牽絆與缺點。玩家可以用這些表格取代{@book Player's Handbook|PHB}中的表格，也可以混合搭配。若擲出的結果對角色而言不合理，玩家可以重擲，或從表中選擇更合適的條目。",
+					"這些表格雖然是選用的，但很適合以妖精荒野為主題的冒險，也非常適合擁有妖精迷途者或魔光工作人員背景的任何角色。",
+					{
+						"type": "table",
+						"caption": "個性特徵",
+						"colLabels": [
+							"d8",
+							"特徵"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我被只有我聽得見的妖精笑聲糾纏，雖然我知道那只是我的腦袋在捉弄我。"
+							],
+							[
+								"2",
+								"我像遊牧民族一樣，無法在一個地方久待。"
+							],
+							[
+								"3",
+								"好聽的音樂會讓我哭得像個嬰兒。"
+							],
+							[
+								"4",
+								"無論走到哪裡，我都試著帶著一點家的溫暖與寧靜。"
+							],
+							[
+								"5",
+								"我從未失去孩子般的好奇心。"
+							],
+							[
+								"6",
+								"當我有了新點子，我會興奮得不得了，直到我想出另一個更好的點子為止。"
+							],
+							[
+								"7",
+								"我依照自己一套古怪又奇妙的規則過活。"
+							],
+							[
+								"8",
+								"我沒辦法信任大多數大人。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "理想",
+						"colLabels": [
+							"d8",
+							"理想"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"友誼。我絕不丟下朋友。（善良）"
+							],
+							[
+								"2",
+								"同理。任何生物都不該受苦。（善良）"
+							],
+							[
+								"3",
+								"流浪癖。我比較喜歡走人跡罕至的路。（混亂）"
+							],
+							[
+								"4",
+								"多變。改變是好事，所以我依照一套不斷變化的規則過活。（混亂）"
+							],
+							[
+								"5",
+								"榮譽。說好的事就是說好的事，我絕不違約。（守序）"
+							],
+							[
+								"6",
+								"三之法則。多元宇宙中的一切都以三為單位發生。我到處都看得到「三之法則」。（守序）"
+							],
+							[
+								"7",
+								"執念。我不會放下怨恨。（邪惡）"
+							],
+							[
+								"8",
+								"貪婪。為了得到我想要的東西，我會不擇手段，不管可能造成什麼傷害。（邪惡）"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "牽絆",
+						"colLabels": [
+							"d8",
+							"牽絆"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我絕不食言。"
+							],
+							[
+								"2",
+								"我覺得各種形式的魔法都令人著迷。一個地方越有魔力，就越吸引我。"
+							],
+							[
+								"3",
+								"我盡我所能保護自然界。"
+							],
+							[
+								"4",
+								"對我來說，值得信賴的朋友是多元宇宙中最重要的東西。"
+							],
+							[
+								"5",
+								"我狠不下心傷害妖精生物，可能是因為我認為自己也是其中之一，或是因為我害怕後果。"
+							],
+							[
+								"6",
+								"魔光嘉年華對我來說就像家一樣。"
+							],
+							[
+								"7",
+								"我受妖精荒野吸引，渴望回到那裡，哪怕只是短暫停留。"
+							],
+							[
+								"8",
+								"我覺得虧欠{@creature Mister Witch|WBtW}與{@creature Mister Light|WBtW}，因為他們給了我一個家與人生目標。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "缺點",
+						"colLabels": [
+							"d8",
+							"缺點"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我很容易忘記時間。我的時間觀念很差，所以總是遲到。"
+							],
+							[
+								"2",
+								"我覺得整個多元宇宙都想害我。"
+							],
+							[
+								"3",
+								"我總是在緊迫的時間表下行動，執著於讓一切都按照進度進行。"
+							],
+							[
+								"4",
+								"我有偷竊癖，覬覦閃閃發亮的寶物。"
+							],
+							[
+								"5",
+								"我很健忘。有時連最簡單的事都記不起來。"
+							],
+							[
+								"6",
+								"我從不白白送出任何東西，總是期待得到回報。"
+							],
+							[
+								"7",
+								"我有很多惡習，而且往往放縱它們。"
+							],
+							[
+								"8",
+								"我總是在改變主意——嗯，幾乎總是。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Character Traits"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Feylost"
+	},
+	"Fisher|GOS": {
+		"name": "漁夫",
+		"source": "GoS",
+		"page": 29,
+		"skillProficiencies": [
+			{
+				"history": true,
+				"survival": true
+			}
+		],
+		"languageProficiencies": [
+			{
+				"anyStandard": 1
+			}
+		],
+		"startingEquipment": [
+			{
+				"_": [
+					"fishing tackle|phb",
+					"net|phb",
+					"traveler's clothes|phb",
+					{
+						"item": "pouch|phb",
+						"containsValue": 1000
+					}
+				]
+			},
+			{
+				"a": [
+					{
+						"special": "favorite fishing lure"
+					}
+				],
+				"b": [
+					{
+						"special": "oiled leather wading boots"
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill History}、{@skill Survival}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "語言：",
+						"entry": "一種自選語言",
+						"ENG_name": "Languages:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "{@item Fishing tackle|phb}、一張{@item net|phb}、一個心愛的魚餌或一雙上過油的皮革涉水靴、一套{@item traveler's clothes|phb}，以及一個裝有 10 gp 的腰間{@item pouch|phb}",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "特性：取之於水",
+				"entries": [
+					"你使用釣具進行的屬性檢定具有優勢。若你能接觸到孕育水生生物的水域，你就能以漁夫的工作維持中等的生活方式，而且每天都能捕到足夠的食物，餵飽你自己與至多十個人。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Harvest the Water"
+			},
+			{
+				"type": "entries",
+				"name": "釣魚故事",
+				"entries": [
+					"你能講述一個引人入勝的故事，無論是誇大還是真實的，都能讓他人印象深刻並感到有趣。每天一次，你可以向願意聆聽的人講述你的故事。由 DM 決定，一定數量的聽眾會對你變得友善；這不是魔法效果，他們是否持續友好取決於你的行為。你可以在下表擲骰來協助決定故事的主題，或選擇一個最符合你角色的主題。或者，與你的 DM 合作創作你自己的釣魚故事。",
+					{
+						"type": "table",
+						"colLabels": [
+							"d8",
+							"故事"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"與龍蝦搏鬥。你曾與一隻巨大的龍蝦徒手搏鬥。"
+							],
+							[
+								"2",
+								"它拖著船跑。你差點釣到一條巨大如怪物的魚，牠拖著你的船跑了好幾哩。"
+							],
+							[
+								"3",
+								"純金魚鰭。你曾捕到一隻魚鰭是純金打造的海洋動物，但被另一個漁夫偷走了。"
+							],
+							[
+								"4",
+								"幽靈魚。你被一條只有你看得見的幽靈魚糾纏。"
+							],
+							[
+								"5",
+								"宿敵蛤蜊。一隻裝有和你頭一樣大的珍珠的大蛤蜊，奪走了你一根手指後便噴射逃走；總有一天，你會找到那隻蛤蜊。"
+							],
+							[
+								"6",
+								"它吞下了太陽。你曾看見一條魚躍出水面，讓白晝變成黑夜。"
+							],
+							[
+								"7",
+								"潛入深淵。你發現自己身處一個通往無底深淵的水下洞穴，從那以後你的運氣就一直很差。"
+							],
+							[
+								"8",
+								"愛情故事。你愛上了一個由純水構成的生物，但你們短暫的戀情以悲劇收場。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Fishing Tale"
+			},
+			{
+				"type": "entries",
+				"name": "建議特徵",
+				"entries": [
+					"漁夫只有花時間在工作上才能成功。因此，大多數漁夫都有很強的職業道德，也欽佩那些誠實謀生的人。漁夫往往很迷信，會對特定的魚餌或特別的釣點產生依戀。他們與自己捕魚的水域有著連結，對那些行為損害他們生計的人評價很低。",
+					{
+						"type": "table",
+						"caption": "漁夫個性特徵",
+						"colLabels": [
+							"d8",
+							"個性特徵"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"大自然的憤怒動搖不了我。"
+							],
+							[
+								"2",
+								"我的朋友就是我的船員；我們同沉同浮。"
+							],
+							[
+								"3",
+								"我需要長時間的安靜來整理思緒。"
+							],
+							[
+								"4",
+								"有錢人不懂辛勤工作的滿足感。"
+							],
+							[
+								"5",
+								"我開懷大笑，感受深刻，無所畏懼。"
+							],
+							[
+								"6",
+								"我努力工作；大自然不會施捨。"
+							],
+							[
+								"7",
+								"我不喜歡討價還價；開個價，說話算話。"
+							],
+							[
+								"8",
+								"幸運眷顧我，我敢冒別人可能不敢冒的險。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "漁夫理想",
+						"colLabels": [
+							"d6",
+							"理想"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"{@b 同袍情誼。}好的夥伴能讓最漫長的航程也變得可以忍受。（善良）"
+							],
+							[
+								"2",
+								"{@b 好運。}我們的好運取決於是否尊重它的規矩——現在把這把鹽撒過你的肩膀。（守序）"
+							],
+							[
+								"3",
+								"{@b 膽識。}最豐厚的收穫屬於那些敢孤注一擲的人。（混亂）"
+							],
+							[
+								"4",
+								"{@b 掠奪。}能拿多少就拿多少，什麼都別留給拾荒者。（邪惡）"
+							],
+							[
+								"5",
+								"{@b 平衡。}不要連續兩次在同一個地方釣魚；克制你的貪婪，大自然就會回報你。（中立）"
+							],
+							[
+								"6",
+								"{@b 勤勞。}沒有任何浪濤能撼動一個勤奮工作的靈魂。（任意）"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "漁夫牽絆",
+						"colLabels": [
+							"d6",
+							"牽絆"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我在深海裡失去了一件重要的東西，我打算把它找回來。"
+							],
+							[
+								"2",
+								"別人的貪婪毀了我的生計，我要討回公道。"
+							],
+							[
+								"3",
+								"我要去這片土地上許多著名的水域釣魚。"
+							],
+							[
+								"4",
+								"眾神在一場可怕的暴風雨中救了我，我將敬重祂們的恩賜。"
+							],
+							[
+								"5",
+								"我的命運在妖精荒野某座池塘的底部等著我。"
+							],
+							[
+								"6",
+								"我必須償還我村子的債務。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "漁夫缺點",
+						"colLabels": [
+							"d6",
+							"缺點"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我喜歡評斷別人，特別是那些我認為是宅在家或懶惰的人。"
+							],
+							[
+								"2",
+								"如果離開大海太久，我就會變得沮喪又焦慮。"
+							],
+							[
+								"3",
+								"我過著艱苦的生活，很難同理他人。"
+							],
+							[
+								"4",
+								"我傾向在不恰當的時機講冗長的故事。"
+							],
+							[
+								"5",
+								"我努力工作，但更努力玩樂。"
+							],
+							[
+								"6",
+								"我執著於捕捉一隻難以捉摸的水生野獸，常常因此耽誤了其他事情。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Suggested Characteristics"
+			}
+		],
+		"hasFluff": true,
+		"ENG_name": "Fisher"
+	},
 	"Flaming Fist Mercenary|FRHOF": {
 		"name": "烈焰拳傭兵",
 		"source": "FRHoF",
@@ -4861,6 +5556,421 @@
 		"hasFluff": true,
 		"hasFluffImages": true,
 		"ENG_name": "Harper"
+	},
+	"Haunted One|VRGR": {
+		"name": "被糾纏者",
+		"source": "VRGR",
+		"page": 34,
+		"otherSources": [
+			{
+				"source": "CoS",
+				"page": 209
+			}
+		],
+		"skillProficiencies": [
+			{
+				"choose": {
+					"from": [
+						"arcana",
+						"investigation",
+						"religion",
+						"survival"
+					],
+					"count": 2
+				}
+			}
+		],
+		"languageProficiencies": [
+			{
+				"anyStandard": 1,
+				"choose": {
+					"from": [
+						"abyssal",
+						"celestial",
+						"deep speech",
+						"draconic",
+						"infernal",
+						"primordial",
+						"sylvan",
+						"undercommon"
+					]
+				}
+			}
+		],
+		"startingEquipment": [
+			{
+				"_": [
+					"monster hunter's pack|vrgr",
+					"common clothes|phb",
+					{
+						"item": "Horror Trinket|VRGR",
+						"displayName": "trinket of special significance (choose one or roll on the Horror Trinkets table)"
+					},
+					{
+						"value": 10
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "從{@skill Arcana}、{@skill Investigation}、{@skill Religion}或{@skill Survival}中選擇兩項",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "語言：",
+						"entry": "選擇兩種，其中一種必須是{@language Abyssal}、{@language Celestial}、{@language Deep Speech}、{@language Draconic}、{@language Infernal}、{@language Primordial}、{@language Sylvan}或{@language Undercommon}",
+						"ENG_name": "Languages:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "{@item Monster hunter's pack|VRGR}（內含一個{@item chest|PHB}、一根{@item crowbar|PHB}、一把{@item hammer|PHB}、三根木樁、一個{@item holy symbol|PHB}、一{@item Holy Water (flask)|PHB|瓶聖水}、一{@item Manacles|PHB|副鐐銬}、一面{@item steel mirror|PHB}、一{@item Oil (flask)|PHB|瓶油}、一個{@item tinderbox|PHB}與 3 支{@item Torch|PHB|火把}）、一套{@item common clothes|phb}、一件具有特殊意義的{@item trinket|CoS}（自選或在{@item Horror Trinket|VRGR|恐怖小飾品}表上擲骰），以及 1 sp",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"name": "特性：黑暗之心",
+				"type": "entries",
+				"entries": [
+					"看進你眼裡的人，都能看出你曾面對過難以想像的恐怖，對黑暗並不陌生。雖然他們可能害怕你，但平民會對你禮遇有加，並盡全力幫助你。除非你已表現出對他們有危險，否則若你發現自己獨自面對敵人，他們甚至會拿起武器與你並肩作戰。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Heart of Darkness"
+			},
+			{
+				"name": "痛苦經歷",
+				"type": "entries",
+				"entries": [
+					"成為冒險者之前，你的人生道路是由一個黑暗的時刻、一個命運的抉擇或一場悲劇所定義的。如今你感覺到一股黑暗正威脅著要吞噬你，你擔心自己可能毫無逃脫的希望。選擇一個糾纏你的痛苦經歷，或在「痛苦經歷」表上擲骰。",
+					{
+						"type": "table",
+						"caption": "痛苦經歷",
+						"colLabels": [
+							"d10",
+							"經歷"
+						],
+						"colStyles": [
+							"col-1 text-center",
+							"col-11"
+						],
+						"rows": [
+							[
+								"1",
+								"一隻屠殺了數十名無辜者的怪物饒了你一命，而你不知道為什麼。"
+							],
+							[
+								"2",
+								"你出生在一顆黑暗之星下。你能感覺到它冷漠而遙遠地注視著你。有時它會在深夜召喚你。"
+							],
+							[
+								"3",
+								"一個糾纏你家族好幾代的幽靈，如今糾纏著你。你不知道它想要什麼，而它不肯放過你。"
+							],
+							[
+								"4",
+								"你的家族有修習黑暗技藝的歷史。你曾涉足一次，感覺到某種可怕的東西攫住了你的靈魂，於是你驚恐地逃走了。"
+							],
+							[
+								"5",
+								"在一個寒冷黑暗的夜晚，一隻鬼（Oni）帶走了你的兄弟姊妹，而你無力阻止。"
+							],
+							[
+								"6",
+								"你曾被詛咒成獸化人，後來被治癒了。如今你被你所屠殺的無辜者糾纏著。"
+							],
+							[
+								"7",
+								"一個鬼婆綁架並撫養了你。你逃了出來，但鬼婆仍以魔法控制著你，讓你的腦海充滿邪惡的念頭。"
+							],
+							[
+								"8",
+								"你翻開了一本異界典籍，看見了正常心智無法承受的東西。你燒掉了那本書，但它的文字與圖像已烙印在你的心靈中。"
+							],
+							[
+								"9",
+								"你小時候被一個邪魔附身。你被關了起來，但逃了出來。那個邪魔仍在你體內，但如今你努力把它封住。"
+							],
+							[
+								"10",
+								"為了替被謀殺的心愛之人復仇，你做了可怕的事。你變成了一個怪物，這件事縈繞在你清醒時的夢境中。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Harrowing Event"
+			},
+			{
+				"type": "section",
+				"name": "恐怖特徵",
+				"id": "0a4",
+				"entries": [
+					"以恐怖為主題的戰役中，角色可能有獨特的動機與特徵。使用下列表格來補充你背景的建議特徵，或激發你自己設計特徵的靈感。",
+					{
+						"type": "table",
+						"caption": "恐怖角色個性特徵",
+						"colLabels": [
+							"d12",
+							"個性特徵"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我曾有過一次遭遇，我相信那讓我與某個超自然生物或事件有了特殊的親近感。"
+							],
+							[
+								"2",
+								"一件招牌服裝或一把獨特的武器是我身分的象徵。"
+							],
+							[
+								"3",
+								"我從不承認自己力有未逮。"
+							],
+							[
+								"4",
+								"我必須知道每個祕密的答案。在我面前沒有一扇門會保持關閉。"
+							],
+							[
+								"5",
+								"我讓別人低估我，只向親近的人展現我全部的本事。"
+							],
+							[
+								"6",
+								"我強迫性地收集旅途與勝利的紀念品。"
+							],
+							[
+								"7",
+								"就算全世界都與我為敵也無所謂。我永遠會做我認為對的事。"
+							],
+							[
+								"8",
+								"我有病態的興趣與陰森的審美觀。"
+							],
+							[
+								"9",
+								"我有一套個人的儀式、咒語或放鬆方法來應對壓力。"
+							],
+							[
+								"10",
+								"沒有什麼比生命更重要，我絕不丟下任何身陷危險的人。"
+							],
+							[
+								"11",
+								"我很快就會採取極端的解決方法。何必冒險嘗試可能無效的次要選項？"
+							],
+							[
+								"12",
+								"我很容易受驚，但我不是懦夫。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "恐怖角色理想",
+						"colLabels": [
+							"d12",
+							"理想"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"腎上腺素。我經歷過太多怪事，現在只有在極端情況下才覺得自己活著。"
+							],
+							[
+								"2",
+								"平衡。我努力抵銷某個我覺得自己應為其負責之人的所作所為。"
+							],
+							[
+								"3",
+								"束縛。我虧待了某人，必須聽從他的意志才能避免他的詛咒。"
+							],
+							[
+								"4",
+								"逃離。我相信在我所知的世界之外還有某種東西，而我必須找到它。"
+							],
+							[
+								"5",
+								"遺產。我必須做出一番大事才能被人記住，而我的時間所剩無幾。"
+							],
+							[
+								"6",
+								"誤導。我竭力不讓別人察覺我的缺點或惡行。"
+							],
+							[
+								"7",
+								"執念。我這樣活了這麼久，無法想像其他的活法。"
+							],
+							[
+								"8",
+								"義務。為了我的族人、信仰、家族或老師，我有責任延續一份備受讚譽的傳承。"
+							],
+							[
+								"9",
+								"承諾。我的生命已不再屬於我自己。我必須完成某個逝者的夢想。"
+							],
+							[
+								"10",
+								"啟示。我需要知道死亡、世界或迷霧的奧祕之外有什麼。"
+							],
+							[
+								"11",
+								"庇護。我知道世上運作的各種力量，並努力創造遠離它們的孤島。"
+							],
+							[
+								"12",
+								"真相。我在乎真相勝過一切，即使它對任何人都沒有好處。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "恐怖角色牽絆",
+						"colLabels": [
+							"d12",
+							"牽絆"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我迫切需要回到某人或某處身邊，但我在迷霧中失去了他們。"
+							],
+							[
+								"2",
+								"我所做的一切都是為了侍奉一位強大的主人，而我必須對所有人保守這個祕密。"
+							],
+							[
+								"3",
+								"我虧欠失蹤的導師很多。我一邊尋找他們，一邊努力延續他們的工作。"
+							],
+							[
+								"4",
+								"我見過巨大的黑暗，我決心成為對抗它的光——光中之光。"
+							],
+							[
+								"5",
+								"我所愛的人變成了怪物、殺人兇手或其他威脅。救贖他們是我的責任。"
+							],
+							[
+								"6",
+								"世界被一個可怕的謊言所蒙蔽。揭露真相是我的責任。"
+							],
+							[
+								"7",
+								"我深深思念某個人，很快就會接納讓我想起他們的人。"
+							],
+							[
+								"8",
+								"一股巨大的邪惡寄宿在我體內。只要我還能，我就會對抗它以及世上其他的邪惡。"
+							],
+							[
+								"9",
+								"我拼命尋找某種病痛或詛咒的解方，可能是為了我身邊的人，也可能是為了我自己。"
+							],
+							[
+								"10",
+								"靈魂會被我吸引。我盡我所能幫助他們找到安息。"
+							],
+							[
+								"11",
+								"我運用我機敏的頭腦解開謎團，為受冤屈的人伸張正義。"
+							],
+							[
+								"12",
+								"我失去了一個在乎的人，但我仍會在愧疚的幻象、反覆出現的夢境中，或以靈魂的形式看見他們。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "恐怖角色缺點",
+						"colLabels": [
+							"d12",
+							"缺點"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我相信厄運跟著我，任何接近我的人都會落得悲慘的下場。"
+							],
+							[
+								"2",
+								"我確信有某種東西在追我，它會出現在鏡子裡、夢裡，以及沒有人能出現的地方。"
+							],
+							[
+								"3",
+								"我特別迷信，一生都在設法避開厄運、邪靈或迷霧。"
+							],
+							[
+								"4",
+								"我做過難以啟齒的惡事，會不擇手段防止別人發現。"
+							],
+							[
+								"5",
+								"我特別容易輕信，會立刻相信任何故事或傳說。"
+							],
+							[
+								"6",
+								"我是懷疑論者，不相信儀式、宗教、迷信或靈魂的力量。"
+							],
+							[
+								"7",
+								"我知道我的未來已經寫好，無論我做什麼都會導向預言中的結局。"
+							],
+							[
+								"8",
+								"我必須在每個人與每件事上找到最好的一面，即使那意味著否認明顯的惡意。"
+							],
+							[
+								"9",
+								"我見識過某類地方——例如森林、城市或墓地——的邪惡，因此拒絕前往那裡。"
+							],
+							[
+								"10",
+								"我特別謹慎，會費盡心思規劃，並設想無數的應變方案。"
+							],
+							[
+								"11",
+								"我以擊敗一股巨大邪惡而聞名，但那是個謊言，而那股邪惡勢力心知肚明。"
+							],
+							[
+								"12",
+								"我知道目的總能合理化手段，為了達成目標，我很快就會做出犧牲。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Horror Characteristics"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Haunted One"
 	},
 	"Hermit|XPHB": {
 		"name": "隱士",
@@ -7591,6 +8701,395 @@
 		"hasFluffImages": true,
 		"ENG_name": "Inquisitor"
 	},
+	"Investigator|VRGR": {
+		"name": "調查員",
+		"source": "VRGR",
+		"page": 35,
+		"skillProficiencies": [
+			{
+				"choose": {
+					"from": [
+						"insight",
+						"investigation",
+						"perception"
+					],
+					"count": 2
+				}
+			}
+		],
+		"toolProficiencies": [
+			{
+				"disguise kit": true,
+				"thieves' tools": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"_": [
+					"magnifying glass|PHB",
+					"common clothes|phb",
+					{
+						"item": "Horror Trinket|VRGR",
+						"displayName": "evidence from a past case (choose one or roll for a trinket from the {@item Horror Trinket|VRGR|Horror Trinkets})"
+					},
+					{
+						"value": 10
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "從{@skill Insight}、{@skill Investigation}或{@skill Perception}中選擇兩項",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Disguise kit|phb}、{@item Thieves' tools|phb}",
+						"ENG_name": "Tool Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "一個{@item magnifying glass|PHB}、一件過去案件的證物（自選或從本章稍後的{@item Horror Trinket|VRGR|恐怖小飾品}中擲骰）、一{@item Common Clothes|PHB|套平民服裝}，以及 10 gp",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"name": "特性：官方調查",
+				"type": "entries",
+				"entries": [
+					"你擅長接觸到能提供所需資訊的人與地點。結合巧言善辯、決心與看起來很官方的文件，你可以進入與你所調查犯罪相關的地點或接觸相關的人。與你的調查無關的人會避免妨礙你，或轉達你的請求。此外，當地執法人員對你有明確的看法，把你視為麻煩人物或自己人。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Official Inquiry"
+			},
+			{
+				"name": "通往謎團之路",
+				"type": "entries",
+				"entries": [
+					"你的第一個案子影響了你感興趣的謎團類型。為什麼這個案子如此有衝擊力、如此私人或如此令人創傷？除了你之外還影響了誰？你為何、又如何捲入其中？案子破了嗎？它如何讓你走上調查其他謎團的道路？在「第一個案子」表上擲骰或選擇細節，來發展開啟你調查員生涯的謎團。",
+					{
+						"type": "table",
+						"caption": "第一個案子",
+						"colLabels": [
+							"d8",
+							"案件"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"一個朋友被誣陷謀殺。你追查到真正的兇手，證明了朋友的清白，也開啟了你的偵探生涯。"
+							],
+							[
+								"2",
+								"有人告訴你，你失蹤了好幾個星期。被找到時，你完全不記得自己曾經離開。如今你在尋找發生在你身上的事。"
+							],
+							[
+								"3",
+								"你找到一個靈魂遺失的屍體，幫助它找到了安息。從那以後，其他幽靈委託人都來找你幫他們安息。"
+							],
+							[
+								"4",
+								"你揭穿了恐嚇你家鄉的怪物，其實是一名殘忍法師所創造的幻象。那個施法者逃走了，但你持續揭發魔法騙局。"
+							],
+							[
+								"5",
+								"你被誣陷並判定犯下某項罪行。你設法逃了出來，一邊仍被法律追捕，一邊努力幫助他人避免遭受你所經歷的一切。"
+							],
+							[
+								"6",
+								"你在一個摧毀你家鄉的魔法裝置破壞中倖存下來。一個祕密組織的成員找到了你。你現在與他們合作，追蹤危險的超自然現象並防止它們造成傷害。"
+							],
+							[
+								"7",
+								"你發現了支撐整個社會的陰謀證據。你試圖揭露這個神祕的陰謀集團，但沒有人相信你。你仍在努力證明你所知道的真相。"
+							],
+							[
+								"8",
+								"你在一個調查當地執法人員無法破解之罪案的機構找到了工作。你常常懷疑自己比較看重的是真相，還是薪水。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Path to Mystery"
+			},
+			{
+				"type": "section",
+				"name": "恐怖特徵",
+				"id": "0a4",
+				"entries": [
+					"以恐怖為主題的戰役中，角色可能有獨特的動機與特徵。使用下列表格來補充你背景的建議特徵，或激發你自己設計特徵的靈感。",
+					{
+						"type": "table",
+						"caption": "恐怖角色個性特徵",
+						"colLabels": [
+							"d12",
+							"個性特徵"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我曾有過一次遭遇，我相信那讓我與某個超自然生物或事件有了特殊的親近感。"
+							],
+							[
+								"2",
+								"一件招牌服裝或一把獨特的武器是我身分的象徵。"
+							],
+							[
+								"3",
+								"我從不承認自己力有未逮。"
+							],
+							[
+								"4",
+								"我必須知道每個祕密的答案。在我面前沒有一扇門會保持關閉。"
+							],
+							[
+								"5",
+								"我讓別人低估我，只向親近的人展現我全部的本事。"
+							],
+							[
+								"6",
+								"我強迫性地收集旅途與勝利的紀念品。"
+							],
+							[
+								"7",
+								"就算全世界都與我為敵也無所謂。我永遠會做我認為對的事。"
+							],
+							[
+								"8",
+								"我有病態的興趣與陰森的審美觀。"
+							],
+							[
+								"9",
+								"我有一套個人的儀式、咒語或放鬆方法來應對壓力。"
+							],
+							[
+								"10",
+								"沒有什麼比生命更重要，我絕不丟下任何身陷危險的人。"
+							],
+							[
+								"11",
+								"我很快就會採取極端的解決方法。何必冒險嘗試可能無效的次要選項？"
+							],
+							[
+								"12",
+								"我很容易受驚，但我不是懦夫。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "恐怖角色理想",
+						"colLabels": [
+							"d12",
+							"理想"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"腎上腺素。我經歷過太多怪事，現在只有在極端情況下才覺得自己活著。"
+							],
+							[
+								"2",
+								"平衡。我努力抵銷某個我覺得自己應為其負責之人的所作所為。"
+							],
+							[
+								"3",
+								"束縛。我虧待了某人，必須聽從他的意志才能避免他的詛咒。"
+							],
+							[
+								"4",
+								"逃離。我相信在我所知的世界之外還有某種東西，而我必須找到它。"
+							],
+							[
+								"5",
+								"遺產。我必須做出一番大事才能被人記住，而我的時間所剩無幾。"
+							],
+							[
+								"6",
+								"誤導。我竭力不讓別人察覺我的缺點或惡行。"
+							],
+							[
+								"7",
+								"執念。我這樣活了這麼久，無法想像其他的活法。"
+							],
+							[
+								"8",
+								"義務。為了我的族人、信仰、家族或老師，我有責任延續一份備受讚譽的傳承。"
+							],
+							[
+								"9",
+								"承諾。我的生命已不再屬於我自己。我必須完成某個逝者的夢想。"
+							],
+							[
+								"10",
+								"啟示。我需要知道死亡、世界或迷霧的奧祕之外有什麼。"
+							],
+							[
+								"11",
+								"庇護。我知道世上運作的各種力量，並努力創造遠離它們的孤島。"
+							],
+							[
+								"12",
+								"真相。我在乎真相勝過一切，即使它對任何人都沒有好處。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "恐怖角色牽絆",
+						"colLabels": [
+							"d12",
+							"牽絆"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我迫切需要回到某人或某處身邊，但我在迷霧中失去了他們。"
+							],
+							[
+								"2",
+								"我所做的一切都是為了侍奉一位強大的主人，而我必須對所有人保守這個祕密。"
+							],
+							[
+								"3",
+								"我虧欠失蹤的導師很多。我一邊尋找他們，一邊努力延續他們的工作。"
+							],
+							[
+								"4",
+								"我見過巨大的黑暗，我決心成為對抗它的光——光中之光。"
+							],
+							[
+								"5",
+								"我所愛的人變成了怪物、殺人兇手或其他威脅。救贖他們是我的責任。"
+							],
+							[
+								"6",
+								"世界被一個可怕的謊言所蒙蔽。揭露真相是我的責任。"
+							],
+							[
+								"7",
+								"我深深思念某個人，很快就會接納讓我想起他們的人。"
+							],
+							[
+								"8",
+								"一股巨大的邪惡寄宿在我體內。只要我還能，我就會對抗它以及世上其他的邪惡。"
+							],
+							[
+								"9",
+								"我拼命尋找某種病痛或詛咒的解方，可能是為了我身邊的人，也可能是為了我自己。"
+							],
+							[
+								"10",
+								"靈魂會被我吸引。我盡我所能幫助他們找到安息。"
+							],
+							[
+								"11",
+								"我運用我機敏的頭腦解開謎團，為受冤屈的人伸張正義。"
+							],
+							[
+								"12",
+								"我失去了一個在乎的人，但我仍會在愧疚的幻象、反覆出現的夢境中，或以靈魂的形式看見他們。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "恐怖角色缺點",
+						"colLabels": [
+							"d12",
+							"缺點"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我相信厄運跟著我，任何接近我的人都會落得悲慘的下場。"
+							],
+							[
+								"2",
+								"我確信有某種東西在追我，它會出現在鏡子裡、夢裡，以及沒有人能出現的地方。"
+							],
+							[
+								"3",
+								"我特別迷信，一生都在設法避開厄運、邪靈或迷霧。"
+							],
+							[
+								"4",
+								"我做過難以啟齒的惡事，會不擇手段防止別人發現。"
+							],
+							[
+								"5",
+								"我特別容易輕信，會立刻相信任何故事或傳說。"
+							],
+							[
+								"6",
+								"我是懷疑論者，不相信儀式、宗教、迷信或靈魂的力量。"
+							],
+							[
+								"7",
+								"我知道我的未來已經寫好，無論我做什麼都會導向預言中的結局。"
+							],
+							[
+								"8",
+								"我必須在每個人與每件事上找到最好的一面，即使那意味著否認明顯的惡意。"
+							],
+							[
+								"9",
+								"我見識過某類地方——例如森林、城市或墓地——的邪惡，因此拒絕前往那裡。"
+							],
+							[
+								"10",
+								"我特別謹慎，會費盡心思規劃，並設想無數的應變方案。"
+							],
+							[
+								"11",
+								"我以擊敗一股巨大邪惡而聞名，但那是個謊言，而那股邪惡勢力心知肚明。"
+							],
+							[
+								"12",
+								"我知道目的總能合理化手段，為了達成目標，我很快就會做出犧牲。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Horror Characteristics"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Investigator"
+	},
 	"Knight of Solamnia|DSOTDQ": {
 		"name": "索蘭尼亞騎士",
 		"source": "DSotDQ",
@@ -7980,6 +9479,216 @@
 		"hasFluffImages": true,
 		"ENG_name": "Lords' Alliance Vassal"
 	},
+	"Lorehold Student|SCC": {
+		"name": "羅爾霍德學生",
+		"source": "SCC",
+		"page": 31,
+		"feats": [
+			{
+				"strixhaven initiate|scc": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"history": true,
+				"religion": true
+			}
+		],
+		"languageProficiencies": [
+			{
+				"anyStandard": 2
+			}
+		],
+		"startingEquipment": [
+			{
+				"_": [
+					"ink (1-ounce bottle)|phb",
+					"ink pen|phb",
+					"hammer|phb",
+					"hooded lantern|phb",
+					"tinderbox|phb",
+					{
+						"special": "tome of history"
+					},
+					{
+						"special": "school uniform"
+					},
+					{
+						"item": "pouch|phb",
+						"containsValue": 1500
+					}
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"comprehend languages",
+						"identify"
+					],
+					"s2": [
+						"borrowed knowledge|scc",
+						"locate object"
+					],
+					"s3": [
+						"speak with dead",
+						"spirit guardians"
+					],
+					"s4": [
+						"arcane eye",
+						"stone shape"
+					],
+					"s5": [
+						"flame strike",
+						"legend lore"
+					]
+				}
+			}
+		],
+		"fromFeature": {
+			"additionalSpells": true,
+			"feats": true
+		},
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill History}、{@skill Religion}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "語言：",
+						"entry": "兩種自選語言",
+						"ENG_name": "Languages:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "一{@item Ink (1-ounce bottle)|PHB|瓶黑墨水}、一支{@item ink pen|PHB}、一把{@item hammer|PHB}、一盞{@item hooded lantern|PHB}、一個{@item tinderbox|PHB}、一本歷史典籍、一套校服，以及一個裝有 15 gp 的{@item pouch|phb}",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "特性：羅爾霍德新生",
+				"entries": [
+					"你獲得{@feat Strixhaven Initiate|SCC}專長，且必須在其中選擇羅爾霍德。",
+					"此外，若你擁有施法或契約魔法特性，「羅爾霍德法術」表中的法術會加入你施法職業的法術列表。（若你是擁有多個法術列表的兼職角色，這些法術會加入所有列表。）",
+					{
+						"type": "table",
+						"caption": "羅爾霍德法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell Comprehend Languages}、{@spell Identify}"
+							],
+							[
+								"2 環",
+								"{@spell Borrowed Knowledge|SCC}、{@spell Locate Object}"
+							],
+							[
+								"3 環",
+								"{@spell Speak with Dead}、{@spell Spirit Guardians}"
+							],
+							[
+								"4 環",
+								"{@spell Arcane Eye}、{@spell Stone Shape}"
+							],
+							[
+								"5 環",
+								"{@spell Flame Strike}、{@spell Legend Lore}"
+							]
+						]
+					},
+					"可以考慮自訂你施法時法術的外觀。你的羅爾霍德法術可能會展現出金色光芒。你可能會用一本典籍或一卷卷軸作為施法法器，而你的法術效果可能會反映出你所研讀參考書的樣貌。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Lorehold Initiate"
+			},
+			{
+				"type": "entries",
+				"name": "建立羅爾霍德角色",
+				"entries": [
+					"任何與過去知識相關的職業或子職業都很適合羅爾霍德。吟遊詩人在羅爾霍德如魚得水，法師（特別是{@class Wizard|PHB|School of Divination|預言|PHB}學派的法師）在其學生中為數眾多。牧師（通常屬於{@class Cleric|PHB|Knowledge|知識|PHB}或{@class Cleric|PHB|Light|光明|PHB}領域）也相當常見。",
+					"若想以更不尋常的方式詮釋羅爾霍德學生，可以考慮扮演一名與過去有著原始連結的野蠻人（或許採用{@book Xanathar's Guide to Everything|XGE}中的{@class Barbarian|PHB|Path of the Ancestral Guardian|祖靈守護者|XGE}道途），或是一名以{@class Paladin|PHB|Oath of the Ancients|遠古|PHB}誓言與歷史建立具體連結的聖騎士。",
+					{
+						"type": "entries",
+						"name": "建議特徵",
+						"entries": [
+							"羅爾霍德學院的成員中，既有一絲不苟的歷史學家，也有大膽的冒險者。「羅爾霍德個性特徵」表提供了各種你可以為角色採用的特徵。",
+							{
+								"type": "table",
+								"caption": "羅爾霍德個性特徵",
+								"colLabels": [
+									"d6",
+									"個性特徵"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"我熱愛冷僻的知識。在日常對話中能引用的歷史典故越冷僻越好。"
+									],
+									[
+										"2",
+										"我希望在尋找這些失落神器的過程中，也能找到真正的自己。"
+									],
+									[
+										"3",
+										"我幾乎一分鐘都忍不住不談我的研究。我腦袋裡有這麼多知識，總得找個地方宣洩！"
+									],
+									[
+										"4",
+										"和死者的靈魂聊天，比和活著的同學聊天有趣多了。"
+									],
+									[
+										"5",
+										"我能口若懸河地談論一場古代戰爭的歷史影響。但叫我做兩位數加法，我就一團亂。"
+									],
+									[
+										"6",
+										"到頭來，一切都只是熵。萬物終有一天都會崩解。"
+									]
+								]
+							}
+						],
+						"ENG_name": "Suggested Characteristics"
+					},
+					{
+						"type": "entries",
+						"name": "羅爾霍德小飾品",
+						"entries": [
+							"創建角色時，你可以在{@item Lorehold Trinket|SCC|羅爾霍德小飾品}表上擲骰一次決定你的起始小飾品，而非{@book Player's Handbook|PHB}中的{@item trinket|phb|小飾品表}。"
+						],
+						"ENG_name": "Lorehold Trinkets"
+					}
+				],
+				"ENG_name": "Building a Lorehold Character"
+			}
+		],
+		"hasFluff": true,
+		"ENG_name": "Lorehold Student"
+	},
 	"Lorwyn Expert|LFL": {
 		"name": "洛溫專家",
 		"source": "LFL",
@@ -8249,6 +9958,293 @@
 		"hasFluff": true,
 		"hasFluffImages": true,
 		"ENG_name": "Mage of High Sorcery"
+	},
+	"Marine|GOS": {
+		"name": "海軍陸戰隊員",
+		"source": "GoS",
+		"page": 31,
+		"skillProficiencies": [
+			{
+				"athletics": true,
+				"survival": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"vehicles (water)": true,
+				"vehicles (land)": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"_": [
+					{
+						"item": "dagger|phb",
+						"displayName": "dagger that belonged to a fallen comrade"
+					},
+					{
+						"special": "folded flag emblazoned with the symbol of your ship or company"
+					},
+					"traveler's clothes|phb",
+					{
+						"item": "pouch|phb",
+						"containsValue": 1000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Athletics}、{@skill Survival}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@filter Vehicles (water, land)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land);vehicle (water)}",
+						"ENG_name": "Tool Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "一把屬於陣亡戰友的{@item dagger|phb}、一面印有你所屬船艦或部隊標誌的摺疊旗幟、一套{@item traveler's clothes|phb}，以及一個裝有 10 gp 的腰間{@item pouch|phb}",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "特性：沉穩",
+				"entries": [
+					"你每天可以移動正常時間的兩倍（至多 16 小時），才會受到強行軍的影響（見《玩家手冊》第 8 章的「旅行速度」）。此外，只要存在這樣的路線，你就能自動找到讓船安全靠岸的路線。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Steady"
+			},
+			{
+				"type": "entries",
+				"name": "經歷的磨難",
+				"entries": [
+					"過去的磨難將你鍛造成一件勢不可擋的活兵器。這段磨難對你而言至關重要，是常常指引你行動的個人哲學或信條的核心。你可以在下表擲骰決定這段磨難，或選擇一個最符合你角色的項目。",
+					{
+						"type": "table",
+						"colLabels": [
+							"d6",
+							"磨難"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"差點溺死。你躲在水下以免被敵人發現，並屏住呼吸極長的時間。就在你快要死去之前，你對自己的存在有了頓悟。"
+							],
+							[
+								"2",
+								"被俘。你在敵人手中忍受了數個月的口渴、飢餓與拷打，但你從未屈服。"
+							],
+							[
+								"3",
+								"犧牲。你讓你的戰友得以逃脫，但自己付出了巨大的代價。你過去的一些戰友可能以為你已經死了。"
+							],
+							[
+								"4",
+								"無堅不摧。你在某場戰役中的倖存無法以任何合理的方式解釋。每一支箭與弩矢都沒射中你。你單槍匹馬殺死了數十名敵人，並帶領戰友走向勝利。"
+							],
+							[
+								"5",
+								"偷渡者。你在敵船的艙底躲了好幾天，靠著鹹水與魯莽的老鼠維生。在恰當的時機，你悄悄爬上甲板，獨自奪下了整艘船。"
+							],
+							[
+								"6",
+								"不留下任何人。你背著一名受傷的陸戰隊員走了好幾哩，以免被俘與喪命。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Hardship Endured"
+			},
+			{
+				"type": "entries",
+				"name": "建議特徵",
+				"entries": [
+					"海軍陸戰隊員受到其他士兵的敬仰與長官的尊重。他們是在戰場上很少失去冷靜的老練戰士。退役的陸戰隊員往往成為傭兵，但他們的戰鬥經驗也讓他們成為出色的冒險者。雖然他們很獨立，但陸戰隊員往往在團體中表現最好，重視同袍情誼與志同道合者的陪伴。",
+					{
+						"type": "table",
+						"caption": "海軍陸戰隊員個性特徵",
+						"colLabels": [
+							"d8",
+							"個性特徵"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我很少說話，但說出的每個字都是認真的。"
+							],
+							[
+								"2",
+								"我笑得很大聲，能在壓力重重的情況中看見幽默。"
+							],
+							[
+								"3",
+								"我寧可不用暴力解決問題，但我會果斷地結束戰鬥。"
+							],
+							[
+								"4",
+								"我喜歡待在大自然中；壞天氣從來不會影響我的心情。"
+							],
+							[
+								"5",
+								"我很可靠。"
+							],
+							[
+								"6",
+								"我總是在進行某個計畫。"
+							],
+							[
+								"7",
+								"下雨時我會變得脾氣暴躁又沉默寡言。"
+							],
+							[
+								"8",
+								"只要看得見大海，我的心情就會愉快又樂觀。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "海軍陸戰隊員理想",
+						"colLabels": [
+							"d6",
+							"理想"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"{@b 團隊合作。}成功取決於合作與溝通。（善良）"
+							],
+							[
+								"2",
+								"{@b 守則。}陸戰隊的守則為每個問題都提供了解答，遵守它是必要的。（守序）"
+							],
+							[
+								"3",
+								"{@b 擁抱。}人生是一團亂。要完成任務，就必須投身到最糟的處境中。（混亂）"
+							],
+							[
+								"4",
+								"{@b 力量。}強者訓練自己，好統治弱者。（邪惡）"
+							],
+							[
+								"5",
+								"{@b 勇敢。}在別人嚇得發抖時採取行動——這就是戰士的本質。（任意）"
+							],
+							[
+								"6",
+								"{@b 堅毅。}沒有任何傷痛或障礙能讓我偏離目標。（任意）"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "海軍陸戰隊員牽絆",
+						"colLabels": [
+							"d6",
+							"牽絆"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我面對危險與邪惡，為了彌補過去一件無法救贖的行為。"
+							],
+							[
+								"2",
+								"我。會。完成。任。務。"
+							],
+							[
+								"3",
+								"我必須為那些已經放棄的人樹立希望的榜樣。"
+							],
+							[
+								"4",
+								"我在尋找一名被一個難以捉摸的敵人俘虜的陸戰隊戰友。"
+							],
+							[
+								"5",
+								"恐懼導致暴政，兩者都必須被根除。"
+							],
+							[
+								"6",
+								"我的指揮官背叛了我的部隊，我要報仇。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "海軍陸戰隊員缺點",
+						"colLabels": [
+							"d6",
+							"缺點"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我喝酒時會變得好鬥又難以預料。"
+							],
+							[
+								"2",
+								"我覺得平民生活很難適應，在社交場合很難說出得體的話。"
+							],
+							[
+								"3",
+								"我的強烈情緒可能會把別人推開。"
+							],
+							[
+								"4",
+								"我會記仇，很難原諒別人。"
+							],
+							[
+								"5",
+								"當無辜的人受到傷害時，我會失去理智。"
+							],
+							[
+								"6",
+								"我有時會整夜不睡，聆聽被我殺死的敵人的鬼魂。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Suggested Characteristics"
+			}
+		],
+		"hasFluff": true,
+		"ENG_name": "Marine"
 	},
 	"Merchant|XPHB": {
 		"name": "商人",
@@ -9210,6 +11206,243 @@
 		"hasFluffImages": true,
 		"ENG_name": "Planar Philosopher"
 	},
+	"Prismari Student|SCC": {
+		"name": "普里斯馬瑞學生",
+		"source": "SCC",
+		"page": 32,
+		"feats": [
+			{
+				"strixhaven initiate|scc": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"acrobatics": true,
+				"performance": true
+			}
+		],
+		"languageProficiencies": [
+			{
+				"anyStandard": 1
+			}
+		],
+		"toolProficiencies": [
+			{
+				"choose": {
+					"from": [
+						"anyArtisansTool",
+						"musical instrument"
+					]
+				}
+			}
+		],
+		"startingEquipment": [
+			{
+				"_": [
+					"ink (1-ounce bottle)|phb",
+					"ink pen|phb"
+				]
+			},
+			{
+				"a": [
+					{
+						"equipmentType": "toolArtisan"
+					}
+				],
+				"b": [
+					{
+						"equipmentType": "instrumentMusical"
+					}
+				]
+			},
+			{
+				"_": [
+					{
+						"special": "school uniform"
+					},
+					{
+						"item": "pouch|phb",
+						"containsValue": 1000
+					}
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"chromatic orb",
+						"thunderwave"
+					],
+					"s2": [
+						"flaming sphere",
+						"kinetic jaunt|scc"
+					],
+					"s3": [
+						"haste",
+						"water walk"
+					],
+					"s4": [
+						"freedom of movement",
+						"wall of fire"
+					],
+					"s5": [
+						"cone of cold",
+						"conjure elemental"
+					]
+				}
+			}
+		],
+		"fromFeature": {
+			"additionalSpells": true,
+			"feats": true
+		},
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Acrobatics}、{@skill Performance}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "一種{@filter 樂器|items|source=phb|miscellaneous=mundane|type=instrument}或{@filter 工匠工具|items|source=phb|miscellaneous=mundane|type=artisan's tools}",
+						"ENG_name": "Tool Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "語言：",
+						"entry": "一種自選語言",
+						"ENG_name": "Languages:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "一{@item Ink (1-ounce bottle)|PHB|瓶黑墨水}、一支{@item ink pen|PHB}、一套{@filter 工匠工具|items|source=phb|miscellaneous=mundane|type=artisan's tools}或一件{@filter 樂器|items|source=phb|miscellaneous=mundane|type=instrument}（自選一種）、一套校服，以及一個裝有 10 gp 的{@item pouch|phb}",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "特性：普里斯馬瑞新生",
+				"entries": [
+					"你獲得{@feat Strixhaven Initiate|SCC}專長，且必須在其中選擇普里斯馬瑞。",
+					"此外，若你擁有施法或契約魔法特性，「普里斯馬瑞法術」表中的法術會加入你施法職業的法術列表。（若你是擁有多個法術列表的兼職角色，這些法術會加入所有列表。）",
+					{
+						"type": "table",
+						"caption": "普里斯馬瑞法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell Chromatic Orb}、{@spell Thunderwave}"
+							],
+							[
+								"2 環",
+								"{@spell Flaming Sphere}、{@spell Kinetic Jaunt|SCC}"
+							],
+							[
+								"3 環",
+								"{@spell Haste}、{@spell Water Walk}"
+							],
+							[
+								"4 環",
+								"{@spell Freedom of Movement}、{@spell Wall of Fire}"
+							],
+							[
+								"5 環",
+								"{@spell Cone of Cold}、{@spell Conjure Elemental}"
+							]
+						]
+					},
+					"可以考慮自訂你施法時法術的外觀。你施展普里斯馬瑞法術時，可能伴隨著充滿動感的姿勢動作——既是舞蹈，也是姿勢成分。即使是你手中的一陣火焰，也是一件雕塑出的藝術品；當你擲出法術時，元素之力會化為宏偉的圖案。法術消散後，這些力量可能會以裝飾元素的形式殘留在你的身體或衣服上，例如火花在你的髮間跳躍，你的觸碰在任何東西上留下霜的痕跡。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Prismari Initiate"
+			},
+			{
+				"type": "entries",
+				"name": "建立普里斯馬瑞角色",
+				"entries": [
+					"任何運用寒冷、火焰、閃電與風等元素之力的職業或子職業都很適合普里斯馬瑞。德魯伊與術士在普里斯馬瑞很常見，研習{@class Wizard|PHB|Evocation|塑能|PHB}或{@class Wizard|PHB|Transmutation|變化|PHB}學派的法師也不少。牧師在這個學院並不常見，但有些{@class Cleric|PHB|Tempest domain|暴風|PHB}領域的牧師最後會來到這裡。",
+					"除了傳統的施法者之外，普里斯馬瑞的學生也包括奉行{@class Monk|PHB|Way of the Four Elements|四象|PHB}之道的武僧。一些擅長特技的遊蕩者與戰士（包括效法{@class Fighter|PHB|Eldritch Knight|奧法騎士|PHB}範型的戰士）也熱愛普里斯馬瑞表演的運動性。",
+					{
+						"type": "entries",
+						"name": "建議特徵",
+						"entries": [
+							"雖然普里斯馬瑞學院的課程吸引了許多外向又積極的藝術家，但學院中也不乏害羞的學者與懶散的吹牛大王。「普里斯馬瑞個性特徵」表提供了各種你可以為角色採用的特徵。",
+							{
+								"type": "table",
+								"caption": "普里斯馬瑞個性特徵",
+								"colLabels": [
+									"d6",
+									"個性特徵"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"我是派對的靈魂人物，走進房間時我期待所有人的注意。"
+									],
+									[
+										"2",
+										"兩週前，我還對我最新的作品著迷不已。現在，我覺得它是垃圾，應該被銷毀。"
+									],
+									[
+										"3",
+										"我相信每個人都能透過藝術表達最真實的自我，而我很樂意默默地推他們一把。"
+									],
+									[
+										"4",
+										"每個人都是評論家，而我努力贏得他們所有人的認可。"
+									],
+									[
+										"5",
+										"我對我的藝術感到一股排山倒海的倦怠。再也沒有什麼能真正吸引我的注意。"
+									],
+									[
+										"6",
+										"我不去面對負面情緒，而是把它們導入爆炸性的藝術表現中。"
+									]
+								]
+							}
+						],
+						"ENG_name": "Suggested Characteristics"
+					},
+					{
+						"type": "entries",
+						"name": "普里斯馬瑞小飾品",
+						"entries": [
+							"創建角色時，你可以在{@item Prismari Trinket|SCC|普里斯馬瑞小飾品}表上擲骰一次決定你的起始小飾品，而非{@book Player's Handbook|PHB}中的{@item trinket|phb|小飾品表}。"
+						],
+						"ENG_name": "Prismari Trinkets"
+					}
+				],
+				"ENG_name": "Building a Prismari Character"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Prismari Student"
+	},
 	"Purple Dragon Squire|FRHOF": {
 		"name": "紫龍騎士侍從",
 		"source": "FRHoF",
@@ -9322,6 +11555,226 @@
 		"hasFluff": true,
 		"hasFluffImages": true,
 		"ENG_name": "Purple Dragon Squire"
+	},
+	"Quandrix Student|SCC": {
+		"name": "寬德里克斯學生",
+		"source": "SCC",
+		"page": 33,
+		"feats": [
+			{
+				"strixhaven initiate|scc": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"arcana": true,
+				"nature": true
+			}
+		],
+		"languageProficiencies": [
+			{
+				"anyStandard": 1
+			}
+		],
+		"toolProficiencies": [
+			{
+				"anyArtisansTool": 1
+			}
+		],
+		"startingEquipment": [
+			{
+				"_": [
+					"ink (1-ounce bottle)|phb",
+					"ink pen|phb",
+					"abacus|phb",
+					{
+						"special": "book of arcane theory"
+					},
+					{
+						"special": "school uniform"
+					},
+					{
+						"item": "pouch|phb",
+						"containsValue": 1500
+					}
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"entangle",
+						"guiding bolt"
+					],
+					"s2": [
+						"enlarge/reduce",
+						"vortex warp|scc"
+					],
+					"s3": [
+						"aura of vitality",
+						"haste"
+					],
+					"s4": [
+						"control water",
+						"freedom of movement"
+					],
+					"s5": [
+						"circle of power",
+						"passwall"
+					]
+				}
+			}
+		],
+		"fromFeature": {
+			"additionalSpells": true,
+			"feats": true
+		},
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Arcana}、{@skill Nature}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "一種{@filter 工匠工具|items|source=phb|miscellaneous=mundane|type=artisan's tools}",
+						"ENG_name": "Tool Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "語言：",
+						"entry": "一種自選語言",
+						"ENG_name": "Languages:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "一{@item Ink (1-ounce bottle)|PHB|瓶黑墨水}、一支{@item ink pen|PHB}、一個{@item abacus|PHB}、一本奧術理論書、一套校服，以及一個裝有 15 gp 的{@item pouch|phb}",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "特性：寬德里克斯新生",
+				"entries": [
+					"你獲得{@feat Strixhaven Initiate|SCC}專長，且必須在其中選擇寬德里克斯。",
+					"此外，若你擁有施法或契約魔法特性，「寬德里克斯法術」表中的法術會加入你施法職業的法術列表。（若你是擁有多個法術列表的兼職角色，這些法術會加入所有列表。）",
+					{
+						"type": "table",
+						"caption": "寬德里克斯法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell Entangle}、{@spell Guiding Bolt}"
+							],
+							[
+								"2 環",
+								"{@spell Enlarge/Reduce}、{@spell Vortex Warp|SCC}"
+							],
+							[
+								"3 環",
+								"{@spell Aura of Vitality}、{@spell Haste}"
+							],
+							[
+								"4 環",
+								"{@spell Control Water}、{@spell Freedom of Movement}"
+							],
+							[
+								"5 環",
+								"{@spell Circle of Power}、{@spell Passwall}"
+							]
+						]
+					},
+					"可以考慮自訂你施法時法術的外觀。你的寬德里克斯法術可能會在萬花筒般旋轉的碎形圖案中顯現，放大你姿勢成分最細微的動作。當你的魔法創造或改變生物時，可能會短暫地以閃爍的碎形圖案或鑲嵌圖樣環繞目標。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Quandrix Initiate"
+			},
+			{
+				"type": "entries",
+				"name": "建立寬德里克斯角色",
+				"entries": [
+					"任何施法職業或子職業都很適合寬德里克斯角色。法師的學術專注（特別是研習{@class Wizard|PHB|Abjuration|防護|PHB}、{@class Wizard|PHB|Illusion|幻術|PHB}或{@class Wizard|PHB|Transmutation|變化|PHB}學派的法師）與術士的超魔法操控，在寬德里克斯都很受歡迎，許多德魯伊也在寬德里克斯探索自然的模式。少數牧師，特別是{@class Cleric|PHB|Knowledge|知識|PHB}或{@class Cleric|PHB|Nature|自然|PHB}領域的牧師，也在寬德里克斯學習。",
+					"除了傳統施法者之外，也有一些其他職業的角色在寬德里克斯找到歸屬。一些戰士、武僧、遊俠與遊蕩者在這裡學習，運用寬德里克斯的原理訓練他們的心智。",
+					{
+						"type": "entries",
+						"name": "建議特徵",
+						"entries": [
+							"寬德里克斯學院的學科從實際有形的事物到矛盾奇異的現象都有，學生群體也因此包羅萬象。「寬德里克斯個性特徵」表提供了各種你可以為角色採用的特徵。",
+							{
+								"type": "table",
+								"caption": "寬德里克斯個性特徵",
+								"colLabels": [
+									"d6",
+									"個性特徵"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"當我找到一個感興趣的主題時，不把它的一切都搞懂我絕不罷休。這讓我徹夜難眠。"
+									],
+									[
+										"2",
+										"我希望有一天這一切對我來說都能說得通。在那之前，我會繼續裝懂。"
+									],
+									[
+										"3",
+										"方程式與規律在我腦中自然而然地浮現。真希望友誼也能這麼容易。"
+									],
+									[
+										"4",
+										"我相信我永遠是房間裡最聰明的人。而且我會證明這一點，即使沒人要求。"
+									],
+									[
+										"5",
+										"如果這些課教會了我什麼，那就是現實是謊言，什麼都不重要。所以何必費心呢？"
+									],
+									[
+										"6",
+										"畢業之前，我要完成一件數學上不可能的事。我必須留下傳奇！"
+									]
+								]
+							}
+						],
+						"ENG_name": "Suggested Characteristics"
+					},
+					{
+						"type": "entries",
+						"name": "寬德里克斯小飾品",
+						"entries": [
+							"創建角色時，你可以在{@item Quandrix Trinket|SCC|寬德里克斯小飾品}表上擲骰一次決定你的起始小飾品，而非{@book Player's Handbook|PHB}中的{@item trinket|phb|小飾品表}。"
+						],
+						"ENG_name": "Quandrix Trinkets"
+					}
+				],
+				"ENG_name": "Building a Quandrix Character"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Quandrix Student"
 	},
 	"Rashemi Wanderer|FRHOF": {
 		"name": "拉申流浪者",
@@ -10687,6 +13140,794 @@
 		"hasFluffImages": true,
 		"ENG_name": "Shadowmoor Expert"
 	},
+	"Shipwright|GOS": {
+		"name": "造船匠",
+		"source": "GoS",
+		"page": 33,
+		"skillProficiencies": [
+			{
+				"history": true,
+				"perception": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"carpenter's tools": true,
+				"vehicles (water)": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"_": [
+					{
+						"item": "carpenter's tools|phb",
+						"displayName": "set of well-loved carpenter's tools"
+					},
+					{
+						"item": "book|phb",
+						"displayName": "blank book"
+					},
+					"ink (1-ounce bottle)|phb",
+					"ink pen|phb",
+					"traveler's clothes|phb",
+					{
+						"item": "pouch|phb",
+						"containsValue": 1000
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill History}、{@skill Perception}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Carpenter's tools|phb}、{@filter 載具（水上）|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}",
+						"ENG_name": "Tool Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "一套用得很順手的{@item carpenter's tools|phb}、一本空白的{@item book|phb}、{@item Ink (1-ounce bottle)|phb|1 盎司墨水}、一支{@item ink pen|phb}、一套{@item traveler's clothes|phb}，以及一個裝有 10 gp 的皮革{@item pouch|phb}",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "特性：我來補！",
+				"entries": [
+					"只要你有木匠工具與木材，你就能修理水上載具。使用此能力時，你為水上載具的船體恢復等同於 5 × 你熟練調整值的生命值。在該載具被拖上岸並完全修復之前，你無法再以此方式修補它。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: I'll Patch It!"
+			},
+			{
+				"type": "entries",
+				"name": "海上生活",
+				"entries": [
+					"你在海上與港口的生活塑造了你；你可以在下表擲骰決定它的影響，或選擇一個最符合你角色的元素。",
+					{
+						"type": "table",
+						"colLabels": [
+							"d6",
+							"大海的影響"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"{@b 宏大設計。}你正在設計一艘新型高速船的計畫與藍圖。你必須檢視盡可能多種不同的船隻，以確保你的設計成功。"
+							],
+							[
+								"2",
+								"{@b 堅固可靠。}你修補了一艘戰船，讓它免於沉沒。當地海軍把你當作朋友。"
+							],
+							[
+								"3",
+								"{@b 受到青睞。}你堅持為一艘商船的船體使用更厚的木板，讓它在撞上暗礁時免於沉沒。你隨時都受邀造訪那位商人遠方的宅邸。"
+							],
+							[
+								"4",
+								"{@b 武裝大師。}你專精於為海軍設計與安裝防禦設施。你能輕易辨認並判斷這類物品的品質。"
+							],
+							[
+								"5",
+								"{@b 下層社會。}你在沿岸的走私集團中有人脈；你偶爾會替這些罪犯修理船隻，換取金錢與人情。"
+							],
+							[
+								"6",
+								"{@b 深海之謎。}你獨自航行時，曾與一個可能是神聖的存在相遇。與你的 DM 合作決定這個存在向你揭示了關於深海的什麼祕密。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Life at Sea"
+			},
+			{
+				"type": "entries",
+				"name": "建議特徵",
+				"entries": [
+					"造船匠是足智多謀的木匠與設計師。他們常常在當地酒館有固定的座位，因為造船匠對沿海社群而言是無價之寶。有些人會隨海軍艦隊出航，若個性合適還可能擔任軍官。造船匠喜歡動手做事，常能完成別人可能視為奇蹟的木工壯舉。",
+					{
+						"type": "table",
+						"caption": "造船匠個性特徵",
+						"colLabels": [
+							"d8",
+							"個性特徵"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"比起傾聽，我更喜歡說話並被人聽見。"
+							],
+							[
+								"2",
+								"我超級喜歡解謎。"
+							],
+							[
+								"3",
+								"我在壓力下表現得更好。"
+							],
+							[
+								"4",
+								"我喜歡素描與設計物品，特別是船。"
+							],
+							[
+								"5",
+								"我不怕辛苦的工作——事實上，我更喜歡。"
+							],
+							[
+								"6",
+								"一支菸斗、一杯麥酒，還有海的味道：這就是天堂。"
+							],
+							[
+								"7",
+								"我有講不完的關於大海的警世故事。"
+							],
+							[
+								"8",
+								"我不介意弄髒雙手。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "造船匠理想",
+						"colLabels": [
+							"d6",
+							"理想"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"船員。只要甲板上每個人都出一份力，我們就永遠不會沉。（善良）"
+							],
+							[
+								"2",
+								"精準線條。船必須依照宇宙法則保持平衡。（守序）"
+							],
+							[
+								"3",
+								"發明。用手邊的任何東西做出你需要的東西。（混亂）"
+							],
+							[
+								"4",
+								"完美。衡量一個存在卻發現它有所欠缺，是最大的失望。（邪惡）"
+							],
+							[
+								"5",
+								"反思。混濁的水終究會變清澈。（任意）"
+							],
+							[
+								"6",
+								"希望。海上的地平線承載著最大的希望。（任意）"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "造船匠牽絆",
+						"colLabels": [
+							"d6",
+							"牽絆"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我必須造訪世界上所有的海洋，並親眼看看在那裡航行的船隻。"
+							],
+							[
+								"2",
+								"我獲得的大部分寶藏都將用來讓我的社群更富足。"
+							],
+							[
+								"3",
+								"我必須找到一種傳聞具有魔法特性的木材。"
+							],
+							[
+								"4",
+								"我修理破損的東西，是為了救贖我自己內心破碎的部分。"
+							],
+							[
+								"5",
+								"我要打造一艘能航行穿越最危險風暴的船。"
+							],
+							[
+								"6",
+								"一隻克拉肯摧毀了我的傑作；牠的牙齒將裝飾我的壁爐。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "造船匠缺點",
+						"colLabels": [
+							"d6",
+							"缺點"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我不知道什麼時候該丟東西。你永遠不知道它什麼時候可能又派上用場。"
+							],
+							[
+								"2",
+								"粗製濫造的工藝會讓我沮喪到分心。"
+							],
+							[
+								"3",
+								"雖然我是出色的工匠，但我的作品往往看起來像是屬於船上的東西。"
+							],
+							[
+								"4",
+								"我太沉迷於素描我那些複雜發明的構想，有時會忘了吃飯睡覺這種小事。"
+							],
+							[
+								"5",
+								"我會評斷那些不擅長使用任何工具的人。"
+							],
+							[
+								"6",
+								"我有時會拿走不屬於我的東西，特別是做工非常精良的東西。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Suggested Characteristics"
+			}
+		],
+		"hasFluff": true,
+		"ENG_name": "Shipwright"
+	},
+	"Silverquill Student|SCC": {
+		"name": "銀羽學生",
+		"source": "SCC",
+		"page": 35,
+		"feats": [
+			{
+				"strixhaven initiate|scc": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"intimidation": true,
+				"persuasion": true
+			}
+		],
+		"languageProficiencies": [
+			{
+				"anyStandard": 2
+			}
+		],
+		"startingEquipment": [
+			{
+				"_": [
+					"ink (1-ounce bottle)|phb",
+					"ink pen|phb",
+					{
+						"special": "book of poetry"
+					},
+					{
+						"special": "school uniform"
+					},
+					{
+						"item": "pouch|phb",
+						"containsValue": 1500
+					}
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"dissonant whispers",
+						"silvery barbs|scc"
+					],
+					"s2": [
+						"calm emotions",
+						"darkness"
+					],
+					"s3": [
+						"beacon of hope",
+						"daylight"
+					],
+					"s4": [
+						"compulsion",
+						"confusion"
+					],
+					"s5": [
+						"dominate person",
+						"rary's telepathic bond"
+					]
+				}
+			}
+		],
+		"fromFeature": {
+			"additionalSpells": true,
+			"feats": true
+		},
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Intimidation}、{@skill Persuasion}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "語言：",
+						"entry": "兩種自選語言",
+						"ENG_name": "Languages:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "一{@item Ink (1-ounce bottle)|PHB|瓶黑墨水}、一支{@item ink pen|PHB}、一本詩集、一套校服，以及一個裝有 15 gp 的{@item pouch|phb}",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "特性：銀羽新生",
+				"entries": [
+					"你獲得{@feat Strixhaven Initiate|SCC}專長，且必須在其中選擇銀羽。",
+					"此外，若你擁有施法或契約魔法特性，「銀羽法術」表中的法術會加入你施法職業的法術列表。（若你是擁有多個法術列表的兼職角色，這些法術會加入所有列表。）",
+					{
+						"type": "table",
+						"caption": "銀羽法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell Dissonant Whispers}、{@spell Silvery Barbs|SCC}"
+							],
+							[
+								"2 環",
+								"{@spell Calm Emotions}、{@spell Darkness}"
+							],
+							[
+								"3 環",
+								"{@spell Beacon of Hope}、{@spell Daylight}"
+							],
+							[
+								"4 環",
+								"{@spell Compulsion}、{@spell Confusion}"
+							],
+							[
+								"5 環",
+								"{@spell Dominate Person}、{@spell Rary's Telepathic Bond}"
+							]
+						]
+					},
+					"可以考慮自訂你施法時法術的外觀。你的銀羽法術可能伴隨著類似墨漬或金色光芒漣漪般擴散的視覺效果。你法術的任何聽覺效果，聽起來常像是你自己唸出法術言語成分時被放大的回聲——即使是在雷電轟鳴或烈焰爆發之中。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Silverquill Initiate"
+			},
+			{
+				"type": "entries",
+				"name": "建立銀羽角色",
+				"entries": [
+					"許多吟遊詩人在銀羽找到歸屬，將他們聲音的力量運用在銀羽魔法上。法師（特別是研習{@class Wizard|PHB|Illusion|幻術|PHB}與{@class Wizard|PHB|Enchantment|惑控|PHB}學派的法師）在銀羽很常見，邪術師也是。{@class Cleric|PHB|Light|光明|PHB}與{@class Cleric|PHB|Trickery|詭術|PHB}領域的牧師也能很好地融入銀羽的法師之中。",
+					"也有不少聖騎士與遊蕩者就讀銀羽學院，突顯了學生群體的多樣性。",
+					{
+						"type": "entries",
+						"name": "建議特徵",
+						"entries": [
+							"在學院嚴格標準的壓力下，銀羽學生從自大無情到不堪重負的完美主義者都有。「銀羽個性特徵」表提供了各種你可以為角色採用的特徵。",
+							{
+								"type": "table",
+								"caption": "銀羽個性特徵",
+								"colLabels": [
+									"d6",
+									"個性特徵"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"為了維持崇高的社會地位，我什麼話都說得出口。"
+									],
+									[
+										"2",
+										"比起漂亮的謊言，我寧可說出直白的真相，而且我不太在乎會傷到誰的感情。"
+									],
+									[
+										"3",
+										"我相信提攜同儕是成功的最佳方法。"
+									],
+									[
+										"4",
+										"我精通以幽默作為防禦的技巧，總是準備好一個迷人的笑話。"
+									],
+									[
+										"5",
+										"我說話前總會先等一下，分析情況，找出對我的目標最有利的角度。"
+									],
+									[
+										"6",
+										"沒人知道我為了讓我的魔法看起來毫不費力而熬了多少個通宵，而我打算繼續保密下去。"
+									]
+								]
+							}
+						],
+						"ENG_name": "Suggested Characteristics"
+					},
+					{
+						"type": "entries",
+						"name": "銀羽小飾品",
+						"entries": [
+							"創建角色時，你可以在{@item Silverquill Trinket|SCC|銀羽小飾品}表上擲骰一次決定你的起始小飾品，而非{@book Player's Handbook|PHB}中的{@item trinket|phb|小飾品表}。"
+						],
+						"ENG_name": "Silverquill Trinkets"
+					}
+				],
+				"ENG_name": "Building a Silverquill Character"
+			}
+		],
+		"hasFluff": true,
+		"ENG_name": "Silverquill Student"
+	},
+	"Smuggler|GOS": {
+		"name": "走私客",
+		"source": "GoS",
+		"page": 34,
+		"skillProficiencies": [
+			{
+				"athletics": true,
+				"deception": true
+			}
+		],
+		"toolProficiencies": [
+			{
+				"vehicles (water)": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"a": [
+					{
+						"special": "fancy leather vest"
+					}
+				],
+				"b": [
+					{
+						"special": "pair of leather boots"
+					}
+				]
+			},
+			{
+				"_": [
+					"common clothes|phb",
+					{
+						"item": "pouch|phb",
+						"containsValue": 1500
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Athletics}、{@skill Deception}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@filter Vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}",
+						"ENG_name": "Tool Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "一件華麗的皮背心或一雙皮靴、一套{@item common clothes|phb}，以及一個裝有 15 gp 的皮革{@item pouch|phb}",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "特性：低調行事",
+				"entries": [
+					"你認識一個願意幫你擺脫困境的走私客網絡。在特定的城鎮、城市或其他規模相近的社群中（由 DM 決定），你與你的同伴可以免費待在安全屋。安全屋提供貧困的生活方式。待在安全屋期間，你可以選擇對你（與你同伴）的存在保密。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Down Low"
+			},
+			{
+				"type": "entries",
+				"name": "成名事蹟",
+				"entries": [
+					"每個走私客都有一個讓他們與一般罪犯不同的故事。憑著機智、航海技術或三寸不爛之舌，你活下來講述這個故事——而且你常常講。你可以在下表擲骰決定你的成名事蹟，或選擇一個最符合你角色的項目。",
+					{
+						"type": "table",
+						"colLabels": [
+							"d6",
+							"事蹟"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"鯨魚之魂。你把偷來的矮人烈酒藏在一頭被漁船拖著的死鯨魚體內走私。交貨時，屍體突然爆炸，鯨肉與威士忌酒瓶飛散了半哩遠。"
+							],
+							[
+								"2",
+								"貨車與刀劍。你一邊唱著水手歌來迷惑交戰雙方，一邊駕著一輛裝滿贓物藝術品的貨車穿越戰場正中央。"
+							],
+							[
+								"3",
+								"新兵。你加入另一個國家的海軍，目的是把偷來的珠寶走私到遙遠的港口。你在從海軍消失並來到這裡之前，還混到了一個小官階。"
+							],
+							[
+								"4",
+								"陰影之河。你的河船意外地穿過帷幕進入墮影冥界好幾個小時。你在那裡時賣掉了一些偷來的龍裔神器，然後才回到這個位面划船回家。"
+							],
+							[
+								"5",
+								"金子般的心。你同意運送一個逃離戰爭的家庭。嬰兒在檢查站開始哭，你把所有的金子都給了守衛好讓你們通過。那個家庭從來不知道你做了這件事。"
+							],
+							[
+								"6",
+								"兩面討好。你曾同時走私一箱箱弩矢與一捆捆箭矢，分別要交給一場地區戰爭中對立的兩方。買家們前後只差片刻抵達，卻都沒發現你的詭計。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Claim to Fame"
+			},
+			{
+				"type": "entries",
+				"name": "建議特徵",
+				"entries": [
+					"一般而言，走私客最重視生存，其次是利潤。他們可能隸屬於一個較大的組織，也可能經營自己的小型走私船。走私客活在自己說過的謊言中，他們天生就能記住自己曾說過的所有謊話與半真半假的話。",
+					{
+						"type": "table",
+						"caption": "走私客個性特徵",
+						"colLabels": [
+							"d8",
+							"個性特徵"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我喜歡待在水上，但討厭釣魚。"
+							],
+							[
+								"2",
+								"我以金錢價值來看待一切。"
+							],
+							[
+								"3",
+								"我從不停止微笑。"
+							],
+							[
+								"4",
+								"沒什麼能讓我慌張；我在任何場合都有謊話可說。"
+							],
+							[
+								"5",
+								"我愛金子，但不會欺騙朋友。"
+							],
+							[
+								"6",
+								"我喜歡做別人認為不可能的事。"
+							],
+							[
+								"7",
+								"看見太陽從海上升起時，我會變得感傷。"
+							],
+							[
+								"8",
+								"我不是普通的罪犯；我是幕後主謀。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "走私客理想",
+						"colLabels": [
+							"d6",
+							"理想"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"{@b 財富}安全金庫裡成堆的錢幣就是我全部的夢想。（任意）"
+							],
+							[
+								"2",
+								"{@b 走私客守則}我維護走私客的不成文規則：不互相欺騙，也不直接傷害無辜的人。（守序）"
+							],
+							[
+								"3",
+								"{@b 一切為了錢}只要能賺錢，我幾乎什麼都願意做。（邪惡）"
+							],
+							[
+								"4",
+								"{@b 和平與繁榮}我走私只是為了達成一個有益於我社群的更大目標。（善良）"
+							],
+							[
+								"5",
+								"{@b 人情}儘管我說了那麼多謊，我非常重視友誼。（任意）"
+							],
+							[
+								"6",
+								"{@b 膽識}孤注一擲的時候我最快樂。（任意）"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "走私客牽絆",
+						"colLabels": [
+							"d6",
+							"牽絆"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我的船被偷了，我迫切地想把它找回來。"
+							],
+							[
+								"2",
+								"我打算成為我所屬走私客網絡的領袖。"
+							],
+							[
+								"3",
+								"我欠了一筆無法用金子償還的債。"
+							],
+							[
+								"4",
+								"再做最後一票，我就要金盆洗手了。"
+							],
+							[
+								"5",
+								"我被一個走私同行騙了，他偷走了我一件珍貴的東西。我會找到那個小偷。"
+							],
+							[
+								"6",
+								"我把大部分的利潤都捐給了一項慈善事業，但我不喜歡張揚。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "走私客缺點",
+						"colLabels": [
+							"d6",
+							"缺點"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"說謊是我的反射動作，有時我說了謊自己都沒察覺。"
+							],
+							[
+								"2",
+								"我傾向以利益得失來評估我的人際關係。"
+							],
+							[
+								"3",
+								"我相信每個人都有價碼，對那些自稱品德高尚的人抱持冷嘲熱諷的態度。"
+							],
+							[
+								"4",
+								"我很難相信別人的話。"
+							],
+							[
+								"5",
+								"很少人認識真正的我。"
+							],
+							[
+								"6",
+								"雖然我表現得很迷人，但我對他人毫無感覺，也不知道友誼是什麼。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Suggested Characteristics"
+			}
+		],
+		"hasFluff": true,
+		"ENG_name": "Smuggler"
+	},
 	"Soldier|XPHB": {
 		"name": "士兵",
 		"source": "XPHB",
@@ -11976,6 +15217,571 @@
 		"hasFluff": true,
 		"hasFluffImages": true,
 		"ENG_name": "Wildspacer"
+	},
+	"Witchlight Hand|WBTW": {
+		"name": "魔光工作人員",
+		"source": "WBtW",
+		"page": 11,
+		"skillProficiencies": [
+			{
+				"performance": true,
+				"sleight of hand": true
+			}
+		],
+		"languageProficiencies": [
+			{
+				"anyStandard": 1
+			}
+		],
+		"toolProficiencies": [
+			{
+				"choose": {
+					"from": [
+						"disguise kit",
+						"musical instrument"
+					]
+				}
+			}
+		],
+		"startingEquipment": [
+			{
+				"a": [
+					"disguise kit|phb"
+				],
+				"b": [
+					{
+						"equipmentType": "instrumentMusical"
+					}
+				]
+			},
+			{
+				"_": [
+					{
+						"special": "deck of cards"
+					},
+					"costume clothes|phb",
+					"feywild trinket|wbtw",
+					{
+						"item": "pouch|phb",
+						"containsValue": 800
+					}
+				]
+			}
+		],
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Performance}、{@skill Sleight of Hand}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Disguise kit|phb}或一種{@filter 樂器|items|source=phb|miscellaneous=mundane|type=instrument}",
+						"ENG_name": "Tool Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "語言：",
+						"entry": "一種自選語言",
+						"ENG_name": "Languages:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "一個{@item disguise kit|PHB}或一件自選的{@filter 樂器|items|source=phb|miscellaneous=mundane|type=instrument}、一副紙牌、一套嘉年華制服或{@item costume clothes|phb|戲服}、一件小飾品（在{@item Feywild Trinket|WBtW|妖精荒野小飾品}表上擲骰決定），以及一個裝有 8 gp 的{@item pouch|phb}",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"name": "特性：嘉年華常駐成員",
+				"type": "entries",
+				"entries": [
+					"魔光嘉年華為你提供免費的簡樸住宿與食物。此外，只要你不干擾表演或惹出其他麻煩，你可以在嘉年華中四處閒逛，免費享受它的眾多奇景。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Carnival Fixture"
+			},
+			{
+				"type": "entries",
+				"name": "嘉年華夥伴",
+				"entries": [
+					"多年來，你贏得了另一位嘉年華常駐成員的友誼。擲一顆 {@dice d8} 並查閱「嘉年華夥伴」表，決定你與誰或什麼成為朋友，或者你也可以選擇你喜歡的選項。與你的 DM 合作充實這段友誼。你在嘉年華中時，這位夥伴會在你身邊出沒，但它不會自願離開嘉年華。",
+					"DM 可以使用{@adventure 第 1 章|WBtW|1}中的{@creature Witchlight Hand (Medium)|WBtW|魔光工作人員}數據區塊，代表作為嘉年華夥伴的工作人員、表演者與馴獸師。其他夥伴的數據見{@book Monster Manual|MM}。",
+					{
+						"type": "table",
+						"caption": "嘉年華夥伴",
+						"colLabels": [
+							"d8",
+							"夥伴"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"年老、脾氣暴躁的魔光工作人員"
+							],
+							[
+								"2",
+								"年輕、容易受影響的魔光工作人員"
+							],
+							[
+								"3",
+								"表演者（例如特技演員、小丑或樂手）"
+							],
+							[
+								"4",
+								"退休的表演者"
+							],
+							[
+								"5",
+								"經驗豐富的馴獸師"
+							],
+							[
+								"6",
+								"年老的{@creature blink dog}"
+							],
+							[
+								"7",
+								"開朗的{@creature sprite}"
+							],
+							[
+								"8",
+								"無害的魔法光點（不需要數據區塊），擁有 30 呎的飛行速度，可以懸浮，並在 5 呎半徑內發出明亮光照，在其外額外 5 呎發出微光"
+							]
+						]
+					}
+				],
+				"ENG_name": "Carnival Companion"
+			},
+			{
+				"type": "section",
+				"name": "角色特徵",
+				"entries": [
+					"玩家為角色選擇背景時，可以使用下列表格來協助決定角色的個性特徵、理想、牽絆與缺點。玩家可以用這些表格取代{@book Player's Handbook|PHB}中的表格，也可以混合搭配。若擲出的結果對角色而言不合理，玩家可以重擲，或從表中選擇更合適的條目。",
+					"這些表格雖然是選用的，但很適合以妖精荒野為主題的冒險，也非常適合擁有妖精迷途者或魔光工作人員背景的任何角色。",
+					{
+						"type": "table",
+						"caption": "個性特徵",
+						"colLabels": [
+							"d8",
+							"特徵"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我被只有我聽得見的妖精笑聲糾纏，雖然我知道那只是我的腦袋在捉弄我。"
+							],
+							[
+								"2",
+								"我像遊牧民族一樣，無法在一個地方久待。"
+							],
+							[
+								"3",
+								"好聽的音樂會讓我哭得像個嬰兒。"
+							],
+							[
+								"4",
+								"無論走到哪裡，我都試著帶著一點家的溫暖與寧靜。"
+							],
+							[
+								"5",
+								"我從未失去孩子般的好奇心。"
+							],
+							[
+								"6",
+								"當我有了新點子，我會興奮得不得了，直到我想出另一個更好的點子為止。"
+							],
+							[
+								"7",
+								"我依照自己一套古怪又奇妙的規則過活。"
+							],
+							[
+								"8",
+								"我沒辦法信任大多數大人。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "理想",
+						"colLabels": [
+							"d8",
+							"理想"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"友誼。我絕不丟下朋友。（善良）"
+							],
+							[
+								"2",
+								"同理。任何生物都不該受苦。（善良）"
+							],
+							[
+								"3",
+								"流浪癖。我比較喜歡走人跡罕至的路。（混亂）"
+							],
+							[
+								"4",
+								"多變。改變是好事，所以我依照一套不斷變化的規則過活。（混亂）"
+							],
+							[
+								"5",
+								"榮譽。說好的事就是說好的事，我絕不違約。（守序）"
+							],
+							[
+								"6",
+								"三之法則。多元宇宙中的一切都以三為單位發生。我到處都看得到「三之法則」。（守序）"
+							],
+							[
+								"7",
+								"執念。我不會放下怨恨。（邪惡）"
+							],
+							[
+								"8",
+								"貪婪。為了得到我想要的東西，我會不擇手段，不管可能造成什麼傷害。（邪惡）"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "牽絆",
+						"colLabels": [
+							"d8",
+							"牽絆"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我絕不食言。"
+							],
+							[
+								"2",
+								"我覺得各種形式的魔法都令人著迷。一個地方越有魔力，就越吸引我。"
+							],
+							[
+								"3",
+								"我盡我所能保護自然界。"
+							],
+							[
+								"4",
+								"對我來說，值得信賴的朋友是多元宇宙中最重要的東西。"
+							],
+							[
+								"5",
+								"我狠不下心傷害妖精生物，可能是因為我認為自己也是其中之一，或是因為我害怕後果。"
+							],
+							[
+								"6",
+								"魔光嘉年華對我來說就像家一樣。"
+							],
+							[
+								"7",
+								"我受妖精荒野吸引，渴望回到那裡，哪怕只是短暫停留。"
+							],
+							[
+								"8",
+								"我覺得虧欠{@creature Mister Witch|WBtW}與{@creature Mister Light|WBtW}，因為他們給了我一個家與人生目標。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "缺點",
+						"colLabels": [
+							"d8",
+							"缺點"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"我很容易忘記時間。我的時間觀念很差，所以總是遲到。"
+							],
+							[
+								"2",
+								"我覺得整個多元宇宙都想害我。"
+							],
+							[
+								"3",
+								"我總是在緊迫的時間表下行動，執著於讓一切都按照進度進行。"
+							],
+							[
+								"4",
+								"我有偷竊癖，覬覦閃閃發亮的寶物。"
+							],
+							[
+								"5",
+								"我很健忘。有時連最簡單的事都記不起來。"
+							],
+							[
+								"6",
+								"我從不白白送出任何東西，總是期待得到回報。"
+							],
+							[
+								"7",
+								"我有很多惡習，而且往往放縱它們。"
+							],
+							[
+								"8",
+								"我總是在改變主意——嗯，幾乎總是。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Character Traits"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Witchlight Hand"
+	},
+	"Witherbloom Student|SCC": {
+		"name": "凋花學生",
+		"source": "SCC",
+		"page": 36,
+		"feats": [
+			{
+				"strixhaven initiate|scc": true
+			}
+		],
+		"skillProficiencies": [
+			{
+				"nature": true,
+				"survival": true
+			}
+		],
+		"languageProficiencies": [
+			{
+				"anyStandard": 1
+			}
+		],
+		"toolProficiencies": [
+			{
+				"herbalism kit": true
+			}
+		],
+		"startingEquipment": [
+			{
+				"_": [
+					"ink (1-ounce bottle)|phb",
+					"ink pen|phb",
+					{
+						"special": "book about plant identification"
+					},
+					"iron pot|phb",
+					"herbalism kit|phb",
+					{
+						"special": "school uniform"
+					},
+					{
+						"item": "pouch|phb",
+						"containsValue": 1500
+					}
+				]
+			}
+		],
+		"additionalSpells": [
+			{
+				"expanded": {
+					"s1": [
+						"cure wounds",
+						"inflict wounds"
+					],
+					"s2": [
+						"lesser restoration",
+						"wither and bloom|scc"
+					],
+					"s3": [
+						"revivify",
+						"vampiric touch"
+					],
+					"s4": [
+						"blight",
+						"death ward"
+					],
+					"s5": [
+						"antilife shell",
+						"greater restoration"
+					]
+				}
+			}
+		],
+		"fromFeature": {
+			"additionalSpells": true,
+			"feats": true
+		},
+		"entries": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "技能熟練：",
+						"entry": "{@skill Nature}、{@skill Survival}",
+						"ENG_name": "Skill Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "工具熟練：",
+						"entry": "{@item Herbalism kit|phb}",
+						"ENG_name": "Tool Proficiencies:"
+					},
+					{
+						"type": "item",
+						"name": "語言：",
+						"entry": "一種自選語言",
+						"ENG_name": "Languages:"
+					},
+					{
+						"type": "item",
+						"name": "裝備：",
+						"entry": "一{@item Ink (1-ounce bottle)|PHB|瓶黑墨水}、一支{@item ink pen|PHB}、一本植物鑑定書、一個{@item iron pot|PHB}、一個{@item herbalism kit|PHB}、一套校服，以及一個裝有 15 gp 的{@item pouch|phb}",
+						"ENG_name": "Equipment:"
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "特性：凋花新生",
+				"entries": [
+					"你獲得{@feat Strixhaven Initiate|SCC}專長，且必須在其中選擇凋花。",
+					"此外，若你擁有施法或契約魔法特性，「凋花法術」表中的法術會加入你施法職業的法術列表。（若你是擁有多個法術列表的兼職角色，這些法術會加入所有列表。）",
+					{
+						"type": "table",
+						"caption": "凋花法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell Cure Wounds}、{@spell Inflict Wounds}"
+							],
+							[
+								"2 環",
+								"{@spell Lesser Restoration}、{@spell Wither and Bloom|SCC}"
+							],
+							[
+								"3 環",
+								"{@spell Revivify}、{@spell Vampiric Touch}"
+							],
+							[
+								"4 環",
+								"{@spell Blight}、{@spell Death Ward}"
+							],
+							[
+								"5 環",
+								"{@spell Antilife Shell}、{@spell Greater Restoration}"
+							]
+						]
+					},
+					"可以考慮自訂你施法時法術的外觀。你的凋花法術可能依賴取自凋花沼澤環境的材料成分或施法法器，而你的法術可能呈現出暗示這些自然元素的外觀。沼澤動物或植物的幽靈形體可能會在你的法術效果中成形。"
+				],
+				"data": {
+					"isFeature": true
+				},
+				"ENG_name": "Feature: Witherbloom Initiate"
+			},
+			{
+				"type": "entries",
+				"name": "建立凋花角色",
+				"entries": [
+					"德魯伊與邪術師構成了凋花學生群體的大多數。少數法師（大多是研習{@class Wizard|PHB|School of Necromancy|死靈|PHB}學派的法師）與牧師（包括{@class Cleric|PHB|Life|生命|PHB}或{@class Cleric|PHB|Nature|自然|PHB}領域的牧師）也在凋花找到歸屬。",
+					"也有不少遊俠與野蠻人在凋花學習，一些遊蕩者則在這個學院學習如何製作與使用毒藥。",
+					{
+						"type": "entries",
+						"name": "建議特徵",
+						"entries": [
+							"凋花學院的學生，可能在為治療酊劑採集草藥，也可能騎著殭屍化的沼澤野獸穿越河口沼澤。「凋花個性特徵」表提供了各種你可以為角色採用的特徵。",
+							{
+								"type": "table",
+								"caption": "凋花個性特徵",
+								"colLabels": [
+									"d6",
+									"個性特徵"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"我喜歡調製新配方，即使有些人可能對我選擇的材料感到反感。或是對成品感到反感。或是兩者都有。"
+									],
+									[
+										"2",
+										"我的時尚品味就像我的花園：枯萎、黝黑又古怪。"
+									],
+									[
+										"3",
+										"就算要我拚上性命，我也要和這片沼澤裡的每一隻怪物交朋友。"
+									],
+									[
+										"4",
+										"這世上的一切終究會死。問題是，你要用剩下的時間做什麼？"
+									],
+									[
+										"5",
+										"我知道我們才剛認識，但你死了以後，可以把你的骨頭給我嗎？做研究用的。"
+									],
+									[
+										"6",
+										"別打擾我；我在沉思。"
+									]
+								]
+							}
+						],
+						"ENG_name": "Suggested Characteristics"
+					},
+					{
+						"type": "entries",
+						"name": "凋花小飾品",
+						"entries": [
+							"創建角色時，你可以在{@item Witherbloom Trinket|SCC|凋花小飾品}表上擲骰一次決定你的起始小飾品，而非{@book Player's Handbook|PHB}中的{@item trinket|phb|小飾品表}。"
+						],
+						"ENG_name": "Witherbloom Trinkets"
+					}
+				],
+				"ENG_name": "Building a Witherbloom Character"
+			}
+		],
+		"hasFluff": true,
+		"ENG_name": "Witherbloom Student"
 	},
 	"Zhentarim Mercenary|FRHOF": {
 		"name": "桑達林傭兵",
