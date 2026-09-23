@@ -1,0 +1,711 @@
+{
+	"batch": "xmm-01",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Aarakocra Aeromancer|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Aarakocra Aeromancer",
+				"Spellcasting",
+				"The aarakocra casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 13}):",
+				"Feather Fall (1/Day)",
+				"The aarakocra casts {@spell Feather Fall|XPHB} in response to that spell's trigger, using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The aarakocra makes two Wind Staff attacks, and it can use Spellcasting to cast {@spell Gust of Wind|XPHB}.",
+				"Wind Staff",
+				"{@atkr m,r} {@hit 5}, reach 5 ft. or range 120 ft. {@h}7 ({@damage 1d8 + 3}) Bludgeoning damage plus 11 ({@damage 2d10}) Lightning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aarakocra Skirmisher|XMM",
+			"hint": {
+				"Talons": "利爪"
+			},
+			"s": [
+				"Aarakocra Skirmisher",
+				"Talons",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}4 ({@damage 1d4 + 2}) Slashing damage, or 9 ({@damage 3d4 + 2}) Slashing damage if the aarakocra moved 30+ feet straight toward the target immediately before the hit.",
+				"Wind Javelin",
+				"{@atkr m,r} {@hit 4}, reach 5 ft. or range 30/120 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage plus 2 ({@damage 1d4}) Thunder damage. {@hom}The javelin magically returns to the aarakocra's hand immediately after a ranged attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aberrant Cultist|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Aberrant Cultist",
+				"Spellcasting",
+				"The cultist casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 15}):",
+				"Counterspell (2/Day)",
+				"The cultist casts {@spell Counterspell|XPHB} in response to that spell's trigger, using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The cultist makes two Tentacle Lash attacks. It can replace any attack with a use of Mind Rot.",
+				"Tentacle Lash",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}7 ({@damage 1d6 + 4}) Slashing damage plus 14 ({@damage 4d6}) Psychic damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 14}) from one of two tentacles, and it has the {@condition Restrained|XPHB} condition until the grapple ends.",
+				"Mind Rot",
+				"{@actSave wis} {@dc 15}, one creature the cultist can see within 90 feet. {@actSaveFail} 27 ({@damage 6d8}) Psychic damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the cultist's next turn. {@actSaveSuccess} Half damage only."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aboleth|XMM",
+			"hint": {
+				"Aboleth": "底棲魔魚",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Aboleth",
+				"Amphibious",
+				"The aboleth can breathe air and water.",
+				"Eldritch Restoration",
+				"If destroyed, the aboleth gains a new body in {@dice 5d10} days, reviving with all its {@variantrule Hit Points|XPHB} in the Far Realm or another location chosen by the DM.",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the aboleth fails a saving throw, it can choose to succeed instead.",
+				"Mucus Cloud",
+				"While underwater, the aboleth is surrounded by mucus. {@actSave con} {@dc 14}, each creature in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the aboleth at the end of the aboleth's turn. {@actSaveFail} The target is cursed. Until the curse ends, the target's skin becomes slimy, the target can breathe air and water, and it can't regain {@variantrule Hit Points|XPHB} unless it is underwater.",
+				"While the cursed creature is outside a body of water, the creature takes 6 ({@damage 1d12}) Acid damage at the end of every 10 minutes unless moisture is applied to its skin before those minutes have passed.",
+				"Probing Telepathy",
+				"If a creature the aboleth can see communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires.",
+				"Multiattack",
+				"The aboleth makes two Tentacle attacks and uses either Consume Memories or Dominate Mind if available.",
+				"Tentacle",
+				"{@atkr m} {@hit 9}, reach 15 ft. {@h}12 ({@damage 2d6 + 5}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 14}) from one of four tentacles.",
+				"Consume Memories",
+				"{@actSave int} {@dc 16}, one creature within 30 feet that is {@condition Charmed|XPHB} or {@condition Grappled|XPHB} by the aboleth. {@actSaveFail} 10 ({@damage 3d6}) Psychic damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The aboleth gains the target's memories if the target is a Humanoid and is reduced to 0 {@variantrule Hit Points|XPHB} by this action.",
+				"Dominate Mind (2/Day)",
+				"{@actSave wis} {@dc 16}, one creature the aboleth can see within 30 feet. {@actSaveFail} The target has the {@condition Charmed|XPHB} condition until the aboleth dies or is on a different plane of existence from the target. While {@condition Charmed|XPHB}, the target acts as an ally to the aboleth and is under its control while within 60 feet of it. In addition, the aboleth and the target can communicate telepathically with each other over any distance.",
+				"The target repeats the save whenever it takes damage as well as after every 24 hours it spends at least 1 mile away from the aboleth, ending the effect on itself on a success.",
+				"Lash",
+				"The aboleth makes one Tentacle attack.",
+				"Psychic Drain",
+				"If the aboleth has at least one creature {@condition Charmed|XPHB} or {@condition Grappled|XPHB}, it uses Consume Memories and regains 5 ({@dice 1d10}) {@variantrule Hit Points|XPHB}.",
+				"Aboleth"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Abominable Yeti|XMM",
+			"hint": {
+				"Abominable Yeti": "巨惡耶提",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Abominable Yeti",
+				"Fear of Fire",
+				"If the yeti takes Fire damage, it has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks until the end of its next turn.",
+				"Multiattack",
+				"The yeti can use its Chilling Gaze and makes two attacks, using Claw or Ice Throw in any combination.",
+				"Claw",
+				"{@atkr m} {@hit 11}, reach 5 ft. {@h}14 ({@damage 2d6 + 7}) Slashing damage plus 7 ({@damage 2d6}) Cold damage.",
+				"Ice Throw",
+				"{@atkr r} {@hit 11}, range 60/240 ft. {@h}12 ({@damage 2d4 + 7}) Bludgeoning damage plus 7 ({@damage 2d6}) Cold damage.",
+				"Chilling Gaze",
+				"{@actSave con} {@dc 18}, one creature the yeti can see within 30 feet. {@actSaveFail} 21 ({@damage 6d6}) Cold damage, and the target has the {@condition Paralyzed|XPHB} condition until the start of the yeti's next turn unless the target has {@variantrule Immunity|XPHB} to Cold damage. {@actSaveSuccess} The target is immune to this yeti's Chilling Gaze for 1 hour.",
+				"Cold Breath {@recharge}",
+				"{@actSave con} {@dc 18}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 45 ({@damage 10d8}) Cold damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Adult Black Dragon|XMM",
+			"hint": {
+				"Adult Black Dragon": "成年黑龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Adult Black Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 17}, {@hit 9} to hit with spell attacks):",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast {@spell Melf's Acid Arrow|XPHB} (level 3 version).",
+				"Rend",
+				"{@atkr m} {@hit 11}, reach 10 ft. {@h}13 ({@damage 2d6 + 6}) Slashing damage plus 4 ({@damage 1d8}) Acid damage.",
+				"Acid Breath {@recharge 5}",
+				"{@actSave dex} {@dc 18}, each creature in a 60-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 54 ({@damage 12d8}) Acid damage. {@actSaveSuccess} Half damage.",
+				"Cloud of Insects",
+				"{@actSave dex} {@dc 17}, one creature the dragon can see within 120 feet. {@actSaveFail} 22 ({@damage 4d10}) Poison damage, and the target has {@variantrule Disadvantage|XPHB} on saving throws to maintain {@status Concentration|XPHB} until the end of its next turn. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Frightful Presence",
+				"The dragon uses Spellcasting to cast {@spell Fear|XPHB}. The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon can move up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Black Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Adult Blue Dragon|XMM",
+			"hint": {
+				"Adult Blue Dragon": "成年藍龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Adult Blue Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 18}):",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast {@spell Shatter|XPHB}.",
+				"Rend",
+				"{@atkr m} {@hit 12}, reach 10 ft. {@h}16 ({@damage 2d8 + 7}) Slashing damage plus 5 ({@damage 1d10}) Lightning damage.",
+				"Lightning Breath {@recharge 5}",
+				"{@actSave dex} {@dc 19}, each creature in a 90-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 60 ({@damage 11d10}) Lightning damage. {@actSaveSuccess} Half damage.",
+				"Cloaked Flight",
+				"The dragon uses Spellcasting to cast {@spell Invisibility|XPHB} on itself, and it can fly up to half its {@variantrule Fly Speed|XPHB}. The dragon can't take this action again until the start of its next turn.",
+				"Sonic Boom",
+				"The dragon uses Spellcasting to cast {@spell Shatter|XPHB}. The dragon can't take this action again until the start of its next turn.",
+				"Tail Swipe",
+				"The dragon makes one Rend attack.",
+				"Blue Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Adult Brass Dragon|XMM",
+			"hint": {
+				"Adult Brass Dragon": "成年黃銅龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Adult Brass Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 16}):",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of (A) Sleep Breath or (B) Spellcasting to cast {@spell Scorching Ray|XPHB}.",
+				"Rend",
+				"{@atkr m} {@hit 11}, reach 10 ft. {@h}17 ({@damage 2d10 + 6}) Slashing damage plus 4 ({@damage 1d8}) Fire damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 18}, each creature in a 60-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 45 ({@damage 10d8}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Sleep Breath",
+				"{@actSave con} {@dc 18}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target has the {@condition Incapacitated|XPHB} condition until the end of its next turn, at which point it repeats the save. {@actSaveFail 2} The target has the {@condition Unconscious|XPHB} condition for 10 minutes. This effect ends for the target if it takes damage or a creature within 5 feet of it takes an action to wake it.",
+				"Blazing Light",
+				"The dragon uses Spellcasting to cast {@spell Scorching Ray|XPHB}.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Scorching Sands",
+				"{@actSave dex} {@dc 16}, one creature the dragon can see within 120 feet. {@actSaveFail} 27 ({@damage 6d8}) Fire damage, and the target's {@variantrule Speed|XPHB} is halved until the end of its next turn. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Brass Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Adult Bronze Dragon|XMM",
+			"hint": {
+				"Adult Bronze Dragon": "成年青銅龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Thunderclap": "雷鳴破"
+			},
+			"s": [
+				"Adult Bronze Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 17}, {@hit 10} to hit with spell attacks):",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of (A) Repulsion Breath or (B) Spellcasting to cast {@spell Guiding Bolt|XPHB} (level 2 version).",
+				"Rend",
+				"{@atkr m} {@hit 12}, reach 10 ft. {@h}16 ({@damage 2d8 + 7}) Slashing damage plus 5 ({@damage 1d10}) Lightning damage.",
+				"Lightning Breath {@recharge 5}",
+				"{@actSave dex} {@dc 19}, each creature in a 90-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 55 ({@damage 10d10}) Lightning damage. {@actSaveSuccess} Half damage.",
+				"Repulsion Breath",
+				"{@actSave str} {@dc 19}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target is pushed up to 60 feet straight away from the dragon and has the {@condition Prone|XPHB} condition.",
+				"Guiding Light",
+				"The dragon uses Spellcasting to cast {@spell Guiding Bolt|XPHB} (level 2 version).",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Thunderclap",
+				"{@actSave con} {@dc 17}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the dragon can see within 90 feet. {@actSaveFail} 10 ({@damage 3d6}) Thunder damage, and the target has the {@condition Deafened|XPHB} condition until the end of its next turn.",
+				"Bronze Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Adult Copper Dragon|XMM",
+			"hint": {
+				"Adult Copper Dragon": "成年赤銅龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Adult Copper Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 17}):",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of (A) Slowing Breath or (B) Spellcasting to cast {@spell Mind Spike|XPHB} (level 4 version).",
+				"Rend",
+				"{@atkr m} {@hit 11}, reach 10 ft. {@h}17 ({@damage 2d10 + 6}) Slashing damage plus 4 ({@damage 1d8}) Acid damage.",
+				"Acid Breath {@recharge 5}",
+				"{@actSave dex} {@dc 18}, each creature in an 60-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 54 ({@damage 12d8}) Acid damage. {@actSaveSuccess} Half damage.",
+				"Slowing Breath",
+				"{@actSave con} {@dc 18}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target can't take Reactions; its {@variantrule Speed|XPHB} is halved; and it can take either an action or a {@variantrule Bonus Action|XPHB} on its turn, not both. This effect lasts until the end of its next turn.",
+				"Giggling Magic",
+				"{@actSave cha} {@dc 17}, one creature the dragon can see within 90 feet. {@actSaveFail} 24 ({@damage 7d6}) Psychic damage. Until the end of its next turn, the target rolls {@dice 1d6} whenever it makes an ability check or attack roll and subtracts the number rolled from the {@variantrule D20 Test|XPHB}. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Mind Jolt",
+				"The dragon uses Spellcasting to cast {@spell Mind Spike|XPHB} (level 4 version). The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Copper Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Adult Gold Dragon|XMM",
+			"hint": {
+				"Adult Gold Dragon": "成年金龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Adult Gold Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 21}, {@hit 13} to hit with spell attacks):",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of (A) Spellcasting to cast {@spell Guiding Bolt|XPHB} (level 2 version) or (B) Weakening Breath.",
+				"Rend",
+				"{@atkr m} {@hit 14}, reach 10 ft. {@h}17 ({@damage 2d8 + 8}) Slashing damage plus 4 ({@damage 1d8}) Fire damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 21}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 66 ({@damage 12d10}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Weakening Breath",
+				"{@actSave str} {@dc 21}, each creature that isn't currently affected by this breath in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target has {@variantrule Disadvantage|XPHB} on Strength-based {@variantrule D20 Test|XPHB|D20 Tests} and subtracts 3 ({@dice 1d6}) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+				"Banish",
+				"{@actSave cha} {@dc 21}, one creature the dragon can see within 120 feet. {@actSaveFail} 10 ({@damage 3d6}) Force damage, and the target has the {@condition Incapacitated|XPHB} condition and is transported to a harmless demiplane until the start of the dragon's next turn, at which point it reappears in an unoccupied space of the dragon's choice within 120 feet of the dragon. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Guiding Light",
+				"The dragon uses Spellcasting to cast {@spell Guiding Bolt|XPHB} (level 2 version).",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Gold Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Adult Green Dragon|XMM",
+			"hint": {
+				"Adult Green Dragon": "成年綠龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Adult Green Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 17}):",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast {@spell Mind Spike|XPHB} (level 3 version).",
+				"Rend",
+				"{@atkr m} {@hit 11}, reach 10 ft. {@h}15 ({@damage 2d8 + 6}) Slashing damage plus 7 ({@damage 2d6}) Poison damage.",
+				"Poison Breath {@recharge 5}",
+				"{@actSave con} {@dc 18}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 56 ({@damage 16d6}) Poison damage. {@actSaveSuccess} Half damage.",
+				"Mind Invasion",
+				"The dragon uses Spellcasting to cast {@spell Mind Spike|XPHB} (level 3 version).",
+				"Noxious Miasma",
+				"{@actSave con} {@dc 17}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the dragon can see within 90 feet. {@actSaveFail} 7 ({@damage 2d6}) Poison damage, and the target takes a -2 penalty to AC until the end of its next turn. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Green Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Adult Red Dragon|XMM",
+			"hint": {
+				"Adult Red Dragon": "成年紅龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Commanding Presence": "統御氣勢"
+			},
+			"s": [
+				"Adult Red Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 20}, {@hit 12} to hit with spell attacks):",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast {@spell Scorching Ray|XPHB}.",
+				"Rend",
+				"{@atkr m} {@hit 14}, reach 10 ft. {@h}13 ({@damage 1d10 + 8}) Slashing damage plus 5 ({@damage 2d4}) Fire damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 21}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 59 ({@damage 17d6}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Commanding Presence",
+				"The dragon uses Spellcasting to cast {@spell Command|XPHB} (level 2 version). The dragon can't take this action again until the start of its next turn.",
+				"Fiery Rays",
+				"The dragon uses Spellcasting to cast {@spell Scorching Ray|XPHB}. The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Red Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Adult Silver Dragon|XMM",
+			"hint": {
+				"Adult Silver Dragon": "成年銀龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Adult Silver Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 19}, {@hit 11} to hit with spell attacks):",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of (A) Paralyzing Breath or (B) Spellcasting to cast {@spell Ice Knife|XPHB}.",
+				"Rend",
+				"{@atkr m} {@hit 13}, reach 10 ft. {@h}17 ({@damage 2d8 + 8}) Slashing damage plus 4 ({@damage 1d8}) Cold damage.",
+				"Cold Breath {@recharge 5}",
+				"{@actSave con} {@dc 20}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 54 ({@damage 12d8}) Cold damage. {@actSaveSuccess} Half damage.",
+				"Paralyzing Breath",
+				"{@actSave con} {@dc 20}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail 1} The target has the {@condition Incapacitated|XPHB} condition until the end of its next turn, when it repeats the save. {@actSaveFail 2} The target has the {@condition Paralyzed|XPHB} condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+				"Chill",
+				"The dragon uses Spellcasting to cast {@spell Hold Monster|XPHB}. The dragon can't take this action again until the start of its next turn.",
+				"Cold Gale",
+				"{@actSave dex} {@dc 19}, each creature in a 60-foot-long, 10-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 14 ({@damage 4d6}) Cold damage, and the target is pushed up to 30 feet straight away from the dragon. {@actSaveSuccess} Half damage only. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Silver Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Adult White Dragon|XMM",
+			"hint": {
+				"Adult White Dragon": "成年白龍",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Adult White Dragon",
+				"Frightful Presence",
+				"The dragon casts {@spell Fear|XPHB}, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 14}). The dragon can't take this action again until the start of its next turn.",
+				"Ice Walk",
+				"The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, {@variantrule Difficult Terrain|XPHB} composed of ice or snow doesn't cost it extra movement.",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 11}, reach 10 ft. {@h}13 ({@damage 2d6 + 6}) Slashing damage plus 4 ({@damage 1d8}) Cold damage.",
+				"Cold Breath {@recharge 5}",
+				"{@actSave con} {@dc 19}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 54 ({@damage 12d8}) Cold damage. {@actSaveSuccess} Half damage.",
+				"Freezing Burst",
+				"{@actSave con} {@dc 14}, each creature in a 30-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the dragon can see within 120 feet. {@actSaveFail} 7 ({@damage 2d6}) Cold damage, and the target's {@variantrule Speed|XPHB} is 0 until the end of the target's next turn. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"White Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Air Elemental|XMM",
+			"hint": {
+				"Air Elemental": "氣元素",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Air Elemental",
+				"(hover)",
+				"Air Form",
+				"The elemental can enter a creature's space and stop there. It can move through a space as narrow as 1 inch without expending extra movement to do so.",
+				"Multiattack",
+				"The elemental makes two Thunderous Slam attacks.",
+				"Thunderous Slam",
+				"{@atkr m} {@hit 8}, reach 10 ft. {@h}14 ({@damage 2d8 + 5}) Thunder damage.",
+				"Whirlwind {@recharge 4}",
+				"{@actSave str} {@dc 13}, one Medium or smaller creature in the elemental's space. {@actSaveFail} 24 ({@damage 4d10 + 2}) Thunder damage, and the target is pushed up to 20 feet straight away from the elemental and has the {@condition Prone|XPHB} condition. {@actSaveSuccess} Half damage only."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Allosaurus|XMM",
+			"hint": {
+				"Allosaurus": "異特龍"
+			},
+			"s": [
+				"Allosaurus",
+				"Bite",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}15 ({@damage 2d10 + 4}) Piercing damage.",
+				"Claws",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Slashing damage. If the target is a Large or smaller creature and the allosaurus moved 30+ feet straight toward it immediately before the hit, the target has the {@condition Prone|XPHB} condition, and the allosaurus can make one Bite attack against it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ancient Black Dragon|XMM",
+			"hint": {
+				"Ancient Black Dragon": "遠古黑龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Ancient Black Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 21}, {@hit 13} to hit with spell attacks):",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast {@spell Melf's Acid Arrow|XPHB} (level 4 version).",
+				"Rend",
+				"{@atkr m} {@hit 15}, reach 15 ft. {@h}17 ({@damage 2d8 + 8}) Slashing damage plus 9 ({@damage 2d8}) Acid damage.",
+				"Acid Breath {@recharge 5}",
+				"{@actSave dex} {@dc 22}, each creature in a 90-foot-long, 10-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 67 ({@damage 15d8}) Acid damage. {@actSaveSuccess} Half damage.",
+				"Cloud of Insects",
+				"{@actSave dex} {@dc 21}, one creature the dragon can see within 120 feet. {@actSaveFail} 33 ({@damage 6d10}) Poison damage, and the target has {@variantrule Disadvantage|XPHB} on saving throws to maintain {@status Concentration|XPHB} until the end of its next turn. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Frightful Presence",
+				"The dragon uses Spellcasting to cast {@spell Fear|XPHB}. The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Black Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ancient Blue Dragon|XMM",
+			"hint": {
+				"Ancient Blue Dragon": "遠古藍龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Ancient Blue Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 22}):",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast {@spell Shatter|XPHB} (level 3 version).",
+				"Rend",
+				"{@atkr m} {@hit 16}, reach 15 ft. {@h}18 ({@damage 2d8 + 9}) Slashing damage plus 11 ({@damage 2d10}) Lightning damage.",
+				"Lightning Breath {@recharge 5}",
+				"{@actSave dex} {@dc 23}, each creature in a 120-foot-long, 10-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 88 ({@damage 16d10}) Lightning damage. {@actSaveSuccess} Half damage.",
+				"Cloaked Flight",
+				"The dragon uses Spellcasting to cast {@spell Invisibility|XPHB} on itself, and it can fly up to half its {@variantrule Fly Speed|XPHB}. The dragon can't take this action again until the start of its next turn.",
+				"Sonic Boom",
+				"The dragon uses Spellcasting to cast {@spell Shatter|XPHB} (level 3 version). The dragon can't take this action again until the start of its next turn.",
+				"Tail Swipe",
+				"The dragon makes one Rend attack.",
+				"Blue Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ancient Brass Dragon|XMM",
+			"hint": {
+				"Ancient Brass Dragon": "遠古黃銅龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Ancient Brass Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 20}):",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of (A) Sleep Breath or (B) Spellcasting to cast {@spell Scorching Ray|XPHB} (level 3 version).",
+				"Rend",
+				"{@atkr m} {@hit 14}, reach 15 ft. {@h}19 ({@damage 2d10 + 8}) Slashing damage plus 7 ({@damage 2d6}) Fire damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 21}, each creature in a 90-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 58 ({@damage 13d8}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Sleep Breath",
+				"{@actSave con} {@dc 21}, each creature in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target has the {@condition Incapacitated|XPHB} condition until the end of its next turn, at which point it repeats the save. {@actSaveFail 2} The target has the {@condition Unconscious|XPHB} condition for 10 minutes. This effect ends for the target if it takes damage or a creature within 5 feet of it takes an action to wake it.",
+				"Blazing Light",
+				"The dragon uses Spellcasting to cast {@spell Scorching Ray|XPHB} (level 3 version).",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Scorching Sands",
+				"{@actSave dex} {@dc 20}, one creature the dragon can see within 120 feet. {@actSaveFail} 36 ({@damage 8d8}) Fire damage, and the target's {@variantrule Speed|XPHB} is halved until the end of its next turn. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Brass Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ancient Bronze Dragon|XMM",
+			"hint": {
+				"Ancient Bronze Dragon": "遠古青銅龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Thunderclap": "雷鳴破"
+			},
+			"s": [
+				"Ancient Bronze Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 22}, {@hit 14} to hit with spell attacks):",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of (A) Repulsion Breath or (B) Spellcasting to cast {@spell Guiding Bolt|XPHB} (level 2 version).",
+				"Rend",
+				"{@atkr m} {@hit 16}, reach 15 ft. {@h}18 ({@damage 2d8 + 9}) Slashing damage plus 9 ({@damage 2d8}) Lightning damage.",
+				"Lightning Breath {@recharge 5}",
+				"{@actSave dex} {@dc 23}, each creature in a 120-foot-long, 10-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 82 ({@damage 15d10}) Lightning damage. {@actSaveSuccess} Half damage.",
+				"Repulsion Breath",
+				"{@actSave str} {@dc 23}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target is pushed up to 60 feet straight away from the dragon and has the {@condition Prone|XPHB} condition.",
+				"Guiding Light",
+				"The dragon uses Spellcasting to cast {@spell Guiding Bolt|XPHB} (level 2 version).",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Thunderclap",
+				"{@actSave con} {@dc 22}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the dragon can see within 120 feet. {@actSaveFail} 13 ({@damage 3d8}) Thunder damage, and the target has the {@condition Deafened|XPHB} condition until the end of its next turn.",
+				"Bronze Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ancient Copper Dragon|XMM",
+			"hint": {
+				"Ancient Copper Dragon": "遠古赤銅龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Ancient Copper Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 21}):",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of (A) Slowing Breath or (B) Spellcasting to cast {@spell Mind Spike|XPHB} (level 5 version).",
+				"Rend",
+				"{@atkr m} {@hit 15}, reach 15 ft. {@h}19 ({@damage 2d10 + 8}) Slashing damage plus 9 ({@damage 2d8}) Acid damage.",
+				"Acid Breath {@recharge 5}",
+				"{@actSave dex} {@dc 22}, each creature in an 90-foot-long, 10-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 63 ({@damage 14d8}) Acid damage. {@actSaveSuccess} Half damage.",
+				"Slowing Breath",
+				"{@actSave con} {@dc 22}, each creature in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target can't take Reactions; its {@variantrule Speed|XPHB} is halved; and it can take either an action or a {@variantrule Bonus Action|XPHB} on its turn, not both. This effect lasts until the end of its next turn.",
+				"Giggling Magic",
+				"{@actSave cha} {@dc 21}, one creature the dragon can see within 120 feet. {@actSaveFail} 31 ({@damage 9d6}) Psychic damage. Until the end of its next turn, the target rolls {@dice 1d8} whenever it makes an ability check or attack roll and subtracts the number rolled from the {@variantrule D20 Test|XPHB}. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Mind Jolt",
+				"The dragon uses Spellcasting to cast {@spell Mind Spike|XPHB} (level 5 version). The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Copper Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ancient Gold Dragon|XMM",
+			"hint": {
+				"Ancient Gold Dragon": "遠古金龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Ancient Gold Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 24}, {@hit 16} to hit with spell attacks):",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of (A) Spellcasting to cast {@spell Guiding Bolt|XPHB} (level 4 version) or (B) Weakening Breath.",
+				"Rend",
+				"{@atkr m} {@hit 17} to hit, reach 15 ft. {@h}19 ({@damage 2d8 + 10}) Slashing damage plus 9 ({@damage 2d8}) Fire damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 24}, each creature in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 71 ({@damage 13d10}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Weakening Breath",
+				"{@actSave str} {@dc 24}, each creature that isn't currently affected by this breath in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target has {@variantrule Disadvantage|XPHB} on Strength-based {@variantrule D20 Test|XPHB|D20 Tests} and subtracts 5 ({@dice 1d10}) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+				"Banish",
+				"{@actSave cha} {@dc 24}, one creature the dragon can see within 120 feet. {@actSaveFail} 24 ({@damage 7d6}) Force damage, and the target has the {@condition Incapacitated|XPHB} condition and is transported to a harmless demiplane until the start of the dragon's next turn, at which point it reappears in an unoccupied space of the dragon's choice within 120 feet of the dragon. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Guiding Light",
+				"The dragon uses Spellcasting to cast {@spell Guiding Bolt|XPHB} (level 4 version).",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Gold Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ancient Green Dragon|XMM",
+			"hint": {
+				"Ancient Green Dragon": "遠古綠龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Ancient Green Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 21}):",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast {@spell Mind Spike|XPHB} (level 5 version).",
+				"Rend",
+				"{@atkr m} {@hit 15}, reach 15 ft. {@h}17 ({@damage 2d8 + 8}) Slashing damage plus 10 ({@damage 3d6}) Poison damage.",
+				"Poison Breath {@recharge 5}",
+				"{@actSave con} {@dc 22}, each creature in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 77 ({@damage 22d6}) Poison damage. {@actSaveSuccess} Half damage.",
+				"Mind Invasion",
+				"The dragon uses Spellcasting to cast {@spell Mind Spike|XPHB} (level 5 version).",
+				"Noxious Miasma",
+				"{@actSave con} {@dc 21}, each creature in a 30-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the dragon can see within 90 feet. {@actSaveFail} 17 ({@damage 5d6}) Poison damage, and the target takes a -2 penalty to AC until the end of its next turn. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Green Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ancient Red Dragon|XMM",
+			"hint": {
+				"Ancient Red Dragon": "遠古紅龍",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Commanding Presence": "統御氣勢"
+			},
+			"s": [
+				"Ancient Red Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 23}, {@hit 15} to hit with spell attacks):",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast {@spell Scorching Ray|XPHB} (level 3 version).",
+				"Rend",
+				"{@atkr m} {@hit 17}, reach 15 ft. {@h}19 ({@damage 2d8 + 10}) Slashing damage plus 10 ({@damage 3d6}) Fire damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 24}, each creature in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 91 ({@damage 26d6}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Commanding Presence",
+				"The dragon uses Spellcasting to cast {@spell Command|XPHB} (level 2 version). The dragon can't take this action again until the start of its next turn.",
+				"Fiery Rays",
+				"The dragon uses Spellcasting to cast {@spell Scorching Ray|XPHB} (level 3 version). The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Red Dragon"
+			]
+		}
+	]
+}

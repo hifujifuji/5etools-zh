@@ -1,0 +1,554 @@
+{
+	"batch": "_mon",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Bandit Captain|XMM",
+			"hint": {
+				"Bandit Captain": "強盜首領",
+				"Multiattack": "多重攻擊",
+				"Scimitar": "彎刀",
+				"Pistol": "手槍",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Bandit Captain",
+				"Multiattack",
+				"The bandit makes two attacks, using Scimitar and Pistol in any combination.",
+				"Scimitar",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Slashing damage.",
+				"Pistol",
+				"{@atkr r} {@hit 5}, range 30/90 ft. {@h}8 ({@damage 1d10 + 3}) Piercing damage.",
+				"Parry",
+				"{@actTrigger} The bandit is hit by a melee attack roll while holding a weapon. {@actResponse} The bandit adds 2 to its AC against that attack, possibly causing it to miss."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bandit Crime Lord|XMM",
+			"hint": {
+				"Evasion": "反射閃避",
+				"Multiattack": "多重攻擊",
+				"Scimitar": "彎刀",
+				"Pistol": "手槍"
+			},
+			"s": [
+				"Bandit Crime Lord",
+				"Evasion",
+				"If the bandit is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the bandit instead takes no damage if it succeeds on the save and only half damage if it fails. It can't use this trait if it has the {@condition Incapacitated|XPHB} condition.",
+				"Multiattack",
+				"The bandit makes three attacks, using Scimitar or Pistol in any combination.",
+				"Scimitar",
+				"{@atkr m} {@hit 9}, reach 5 ft. {@h}12 ({@damage 2d6 + 5}) Slashing damage plus 14 ({@damage 4d6}) Poison damage.",
+				"Pistol",
+				"{@atkr r} {@hit 9}, range 30/90 ft. {@h}10 ({@damage 1d10 + 5}) Piercing damage plus 14 ({@damage 4d6}) Poison damage.",
+				"Deadly Aim",
+				"The bandit gives itself {@variantrule Advantage|XPHB} on the next attack roll it makes during the current turn. If that attack hits, the target takes an extra 28 ({@damage 8d6}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bandit Deceiver|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Bandit Deceiver",
+				"Spellcasting",
+				"The bandit casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 14}):",
+				"Multiattack",
+				"The bandit makes three Dagger attacks.",
+				"Dagger",
+				"{@atkr m,r} {@hit 6}, reach 5 ft. or range 20/60 ft. {@h}8 ({@damage 2d4 + 3}) Piercing damage plus 10 ({@damage 3d6}) Poison damage.",
+				"Blinding Flash {@recharge 4}",
+				"{@actSave con} {@dc 14}, each creature in a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the bandit can see within 120 feet. {@actSaveFail} 13 ({@damage 3d6 + 3}) Radiant damage, and the target has the {@condition Blinded|XPHB} condition until the start of the bandit's next turn. {@actSaveSuccess} Half damage only."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Banshee|XMM",
+			"hint": {
+				"Banshee": "報喪女妖(班西)",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Banshee",
+				"(hover)",
+				"Detect Life",
+				"The banshee magically senses the direction of creatures up to 1 mile away that aren't Constructs or Undead.",
+				"Incorporeal Movement",
+				"The banshee can move through other creatures and objects as if they were {@variantrule Difficult Terrain|XPHB}. It takes 5 ({@damage 1d10}) Force damage if it ends its turn inside an object.",
+				"Multiattack",
+				"The banshee makes two Corrupting Touch attacks and uses Horrify.",
+				"Corrupting Touch",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Necrotic damage.",
+				"Horrify",
+				"{@actSave wis} {@dc 13}, one creature the banshee can see within 60 feet that can see the banshee. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition until the start of the banshee's next turn. {@actSaveSuccess} The target is immune to this banshee's Horrify for 24 hours.",
+				"Deathly Wail (1/Day)",
+				"The banshee releases a mournful wail if it isn't in sunlight. {@actSave con} {@dc 13}, each creature within 30 feet that can hear the wail and isn't a Construct or an Undead. {@actSaveFail} If the target has 25 {@variantrule Hit Points|XPHB} or fewer, it drops to 0 {@variantrule Hit Points|XPHB}. Otherwise, the target takes 10 ({@damage 3d6}) Psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Barbed Devil|XMM",
+			"hint": {
+				"Barbed Devil": "猬魔",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Claws": "爪擊",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Barbed Devil",
+				"Barbed Hide",
+				"At the start of each of its turns, the devil deals 5 ({@damage 1d10}) Piercing damage to any creature it is grappling or any creature grappling it.",
+				"Diabolical Restoration",
+				"If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Nine Hells.",
+				"Magic Resistance",
+				"The devil has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The devil makes one Claws attack and one Tail attack, or it makes two Hurl Flame attacks.",
+				"Claws",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Piercing damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from both claws.",
+				"Tail",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}14 ({@damage 2d10 + 3}) Slashing damage.",
+				"Hurl Flame",
+				"{@atkr r} {@hit 5}, range 150 ft. {@h}17 ({@damage 5d6}) Fire damage. If the target is a flammable object that isn't being worn or carried, it starts {@hazard burning|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Barlgura|XMM",
+			"hint": {
+				"Barlgura": "巴古拉魔",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Barlgura",
+				"Spellcasting",
+				"The barlgura casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 13}):",
+				"Demonic Restoration",
+				"If the barlgura dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Abyss.",
+				"Multiattack",
+				"The barlgura makes one Tormenting Bite attack and two Thrash attacks.",
+				"Tormenting Bite",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Piercing damage plus 13 ({@damage 2d12}) Psychic damage.",
+				"Thrash",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}9 ({@damage 1d10 + 4}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition.",
+				"Leap",
+				"The barlgura jumps up to 40 feet by spending 10 feet of movement."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Basilisk|XMM",
+			"hint": {
+				"Basilisk": "石化蜥蜴(巴西利斯克)",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Basilisk",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Piercing damage plus 7 ({@damage 2d6}) Poison damage.",
+				"Petrifying Gaze {@recharge 4}",
+				"{@actSave con} {@dc 12}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. If the basilisk sees its reflection within the {@variantrule Cone [Area of Effect]|XPHB|Cone}, the basilisk must make this save. {@actSaveFail 1} The target has the {@condition Restrained|XPHB} condition and repeats the save at the end of its next turn if it is still {@condition Restrained|XPHB}, ending the effect on itself on a success. {@actSaveFail 2} The target has the {@condition Petrified|XPHB} condition instead of the {@condition Restrained|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bat|XMM",
+			"hint": {
+				"Bat": "蝙蝠",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Bat",
+				"Bite",
+				"{@atkr m} {@hit 4} to hit, reach 5 ft. {@h}1 Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bearded Devil|XMM",
+			"hint": {
+				"Bearded Devil": "鬚魔",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Bearded Devil",
+				"Magic Resistance",
+				"The devil has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The devil makes one Beard attack and one Infernal Glaive attack.",
+				"Beard",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the devil's next turn. Until this poison ends, the target can't regain {@variantrule Hit Points|XPHB}.",
+				"Infernal Glaive",
+				"{@atkr m} {@hit 5}, reach 10 ft. {@h}8 ({@damage 1d10 + 3}) Slashing damage. If the target is a creature and doesn't already have an infernal wound, it is subjected to the following effect. {@actSave con} {@dc 12}. {@actSaveFail} The target receives an infernal wound. While wounded, the target loses 5 ({@dice 1d10}) {@variantrule Hit Points|XPHB} at the start of each of its turns. The wound closes after 1 minute, after a spell restores {@variantrule Hit Points|XPHB} to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a {@dc 12} Wisdom ({@skill Medicine|XPHB}) check."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Behir|XMM",
+			"hint": {
+				"Behir": "青足龍蛇",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Lightning Breath {@recharge 5}": "閃電吐息 {@recharge 5}"
+			},
+			"s": [
+				"Behir",
+				"Multiattack",
+				"The behir makes one Bite attack and uses Constrict.",
+				"Bite",
+				"{@atkr m} {@hit 10}, reach 10 ft. {@h}19 ({@damage 2d12 + 6}) Piercing damage plus 11 ({@damage 2d10}) Lightning damage.",
+				"Constrict",
+				"{@actSave str} {@dc 18}, one Large or smaller creature the behir can see within 5 feet. {@actSaveFail} 28 ({@damage 5d8 + 6}) Bludgeoning damage. The target has the {@condition Grappled|XPHB} condition (escape {@dc 16}), and it has the {@condition Restrained|XPHB} condition until the grapple ends.",
+				"Lightning Breath {@recharge 5}",
+				"{@actSave dex} {@dc 16}, each creature in a 90-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 66 ({@damage 12d10}) Lightning damage. {@actSaveSuccess} Half damage.",
+				"Swallow",
+				"{@actSave dex} {@dc 18}, one Large or smaller creature {@condition Grappled|XPHB} by the behir (the behir can have only one creature swallowed at a time). {@actSaveFail} The behir swallows the target, which is no longer {@condition Grappled|XPHB}. While swallowed, a creature has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects outside the behir, and takes 21 ({@damage 6d6}) Acid damage at the start of each of the behir's turns.",
+				"If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a {@dc 14} Constitution saving throw at the end of that turn or regurgitate the creature, which falls in a space within 10 feet of the behir and has the {@condition Prone|XPHB} condition. If the behir dies, a swallowed creature is no longer {@condition Restrained|XPHB} and can escape from the corpse by using 15 feet of movement, exiting {@condition Prone|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Beholder|XMM",
+			"hint": {
+				"Beholder": "眼魔",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Beholder",
+				"(hover)",
+				"Legendary Resistance (3/Day, or 4/Day in Lair)",
+				"If the beholder fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The beholder uses Eye Rays three times.",
+				"Bite",
+				"{@atkr m} {@hit 8}, reach 5 ft. {@h}13 ({@damage 3d6 + 3}) Piercing damage.",
+				"Eye Rays",
+				"The beholder randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll {@dice 1d10}; reroll if the beholder has already used that ray during this turn):",
+				"1: Charm Ray",
+				"{@actSave wis} {@dc 16}. {@actSaveFail} 13 ({@damage 3d8}) Psychic damage, and the target has the {@condition Charmed|XPHB} condition for 1 hour or until it takes damage. {@actSaveSuccess} Half damage only.",
+				"2: Paralyzing Ray",
+				"{@actSave con} {@dc 16}. {@actSaveFail} The target has the {@condition Paralyzed|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+				"3: Fear Ray",
+				"{@actSave wis} {@dc 16}. {@actSaveFail} 14 ({@damage 4d6}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition until the end of its next turn. {@actSaveSuccess} Half damage only.",
+				"4: Slowing Ray",
+				"{@actSave con} {@dc 16}. {@actSaveFail} 18 ({@damage 4d8}) Necrotic damage. Until the end of the target's next turn, the target's {@variantrule Speed|XPHB} is halved; the target can't take Reactions; and it can take either an action or a {@variantrule Bonus Action|XPHB} on its turn, not both. {@actSaveSuccess} Half damage only.",
+				"5: Enervation Ray",
+				"{@actSave con} {@dc 16}. {@actSaveFail} 13 ({@damage 3d8}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the end of its next turn. While {@condition Poisoned|XPHB}, the target can't regain {@variantrule Hit Points|XPHB}. {@actSaveSuccess} Half damage only.",
+				"6: Telekinetic Ray",
+				"{@actSave str} {@dc 16} (the target succeeds automatically if it is Gargantuan). {@actSaveFail} The beholder moves the target up to 30 feet in any direction. The target has the {@condition Restrained|XPHB} condition until the start of the beholder's next turn or until the beholder has the {@condition Incapacitated|XPHB} condition. The beholder can also exert fine control on objects with this ray, such as manipulating a tool or opening a door or container.",
+				"7: Sleep Ray",
+				"{@actSave wis} {@dc 16} (the target succeeds automatically if it is a Construct or an Undead). {@actSaveFail} The target has the {@condition Unconscious|XPHB} condition for 1 minute. The condition ends if the target takes damage or a creature within 5 feet of it takes an action to wake it.",
+				"8: Petrification Ray",
+				"{@actSave con} {@dc 16}. {@actSaveFail 1} The target has the {@condition Restrained|XPHB} condition and repeats the save at the end of its next turn if it is still {@condition Restrained|XPHB}, ending the effect on itself on a success. {@actSaveFail 2} The target has the {@condition Petrified|XPHB} condition instead of the {@condition Restrained|XPHB} condition.",
+				"9: Disintegration Ray",
+				"{@actSave dex} {@dc 16}. {@actSaveFail} 36 ({@damage 8d8}) Force damage. If the target is a nonmagical object or a creation of magical force, a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} of it disintegrates into dust. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} If the target is a creature and this damage reduces it to 0 {@variantrule Hit Points|XPHB}, it disintegrates into dust.",
+				"10: Death Ray",
+				"{@actSave dex} {@dc 16}. {@actSaveFail} 55 ({@damage 10d10}) Necrotic damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The target dies if the ray reduces it to 0 {@variantrule Hit Points|XPHB}.",
+				"Antimagic Cone",
+				"The beholder's central eye emits an antimagic wave in a 150-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. Until the start of the beholder's next turn, that area acts as an {@spell Antimagic Field|XPHB} spell, and that area works against the beholder's own Eye Rays.",
+				"Chomp",
+				"The beholder makes two Bite attacks.",
+				"Glare",
+				"The beholder uses Eye Rays.",
+				"Beholder"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Beholder Zombie|XMM",
+			"hint": {
+				"Beholder Zombie": "殭屍眼魔",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Beholder Zombie",
+				"(hover)",
+				"Undead Fortitude",
+				"If damage reduces the zombie to 0 {@variantrule Hit Points|XPHB}, it makes a Constitution saving throw ({@dc 5} plus the damage taken) unless the damage is Radiant or from a {@variantrule Critical Hit|XPHB}. On a successful save, the zombie drops to 1 {@variantrule Hit Points|XPHB|Hit Point} instead.",
+				"Multiattack",
+				"The zombie uses Eye Rays twice.",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}16 ({@damage 4d6 + 2}) Piercing damage.",
+				"Eye Rays",
+				"The zombie randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll {@dice 1d4}; reroll if the zombie has already used that ray during this turn):",
+				"1: Paralyzing Ray",
+				"{@actSave con} {@dc 14}. {@actSaveFail} The target has the {@condition Paralyzed|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+				"2: Fear Ray",
+				"{@actSave wis} {@dc 14}. {@actSaveFail} 13 ({@damage 3d8}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition until the end of its next turn.",
+				"3: Enervation Ray",
+				"{@actSave con} {@dc 14}. {@actSaveFail} 10 ({@damage 3d6}) Necrotic damage, and the target has the {@condition Poisoned|XPHB} condition until the end of its next turn. While {@condition Poisoned|XPHB}, the target can't regain {@variantrule Hit Points|XPHB}. {@actSaveSuccess} Half damage only.",
+				"4: Disintegration Ray",
+				"{@actSave dex} {@dc 14}. {@actSaveFail} 27 ({@damage 5d10}) Force damage. If the target is a nonmagical object or a creation of magical force, a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} of it disintegrates into dust. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} If the target is a creature and this damage reduces it to 0 {@variantrule Hit Points|XPHB}, it disintegrates into dust."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Berserker|XMM",
+			"hint": {
+				"Berserker": "狂戰士",
+				"Greataxe": "巨斧"
+			},
+			"s": [
+				"Berserker",
+				"Bloodied Frenzy",
+				"While {@status Bloodied|XPHB}, the berserker has {@variantrule Advantage|XPHB} on attack rolls and saving throws.",
+				"Greataxe",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}9 ({@damage 1d12 + 3}) Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Berserker Commander|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Greataxe": "巨斧",
+				"Javelin": "標槍"
+			},
+			"s": [
+				"Berserker Commander",
+				"Bloodied Frenzy",
+				"While {@status Bloodied|XPHB}, the berserker has {@variantrule Advantage|XPHB} on attack rolls and saving throws.",
+				"Multiattack",
+				"The berserker makes three attacks, using Greataxe or Javelin in any combination.",
+				"Greataxe",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}10 ({@damage 1d12 + 4}) Slashing damage, plus 10 ({@damage 3d6}) Thunder damage to the target or another creature within 5 feet of the target.",
+				"Javelin",
+				"{@atkr m,r} {@hit 7}, reach 5 ft. or range 30/120 ft. {@h}18 ({@damage 4d6 + 4}) Piercing damage, and the target's {@variantrule Speed|XPHB} decreases by 5 feet until the start of the berserker's next turn.",
+				"Frenzied Rush",
+				"Each ally within 30 feet of the berserker can take a {@variantrule Reaction|XPHB} to move up to half the ally's {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}. The berserker can also move up to half its {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Black Bear|XMM",
+			"hint": {
+				"Black Bear": "黑熊",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂"
+			},
+			"s": [
+				"Black Bear",
+				"Multiattack",
+				"The bear makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Black Dragon Wyrmling|XMM",
+			"hint": {
+				"Black Dragon Wyrmling": "黑龍幼龍",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Acid Breath {@recharge 5}": "強酸吐息 {@recharge 5}"
+			},
+			"s": [
+				"Black Dragon Wyrmling",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Multiattack",
+				"The dragon makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Slashing damage plus 2 ({@damage 1d4}) Acid damage.",
+				"Acid Breath {@recharge 5}",
+				"{@actSave dex} {@dc 11}, each creature in a 15-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 22 ({@damage 5d8}) Acid damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Black Pudding|XMM",
+			"hint": {
+				"Black Pudding": "黑布丁",
+				"Spider Climb": "蛛行"
+			},
+			"s": [
+				"Black Pudding",
+				"Amorphous",
+				"The pudding can move through a space as narrow as 1 inch without expending extra movement to do so.",
+				"Corrosive Form",
+				"A creature that hits the pudding with a melee attack roll takes 4 ({@damage 1d8}) Acid damage. Nonmagical ammunition is destroyed immediately after hitting the pudding and dealing any damage. Any nonmagical weapon takes a cumulative -1 penalty to attack rolls immediately after dealing damage to the pudding and coming into contact with it. The weapon is destroyed if the penalty reaches -5. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the weapon.",
+				"In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.",
+				"Spider Climb",
+				"The pudding can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Dissolving Pseudopod",
+				"{@atkr m} {@hit 5}, reach 10 ft. {@h}17 ({@damage 4d6 + 3}) Acid damage. Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the armor.",
+				"Split",
+				"{@actTrigger} While the pudding is Large or Medium and has 10+ {@variantrule Hit Points|XPHB}, it becomes {@status Bloodied|XPHB} or is subjected to Lightning or Slashing damage. {@actResponse} The pudding splits into two new Black Puddings. Each new pudding is one size smaller than the original pudding and acts on its {@variantrule Initiative|XPHB}. The original pudding's {@variantrule Hit Points|XPHB} are divided evenly between the new puddings (round down)."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blink Dog|XMM",
+			"hint": {
+				"Blink Dog": "閃現犬",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Blink Dog",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Piercing damage.",
+				"Teleport {@recharge 4}",
+				"The dog teleports up to 40 feet to an unoccupied space it can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blob of Annihilation|XMM",
+			"hint": {
+				"Legendary Resistance (4/Day)": "傳奇抗性（每日 4 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Blob of Annihilation",
+				"Astral Implosion",
+				"If the blob is reduced to 0 {@variantrule Hit Points|XPHB}, it implodes and ejects any creatures and objects engulfed by it into the Astral Sea. The blob itself vanishes, leaving behind a layer of slime on everything that was within 600 feet of it. In {@dice 1d20} years, the blob reconstitutes on a random world in the Material Plane.",
+				"Legendary Resistance (4/Day)",
+				"If the blob fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The blob has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The blob makes two Pseudopod attacks and uses Engulf. It can replace one attack with a use of Restraining Glob.",
+				"Pseudopod",
+				"{@atkr m} {@hit 15}, reach 30 ft. {@h}24 ({@damage 3d10 + 8}) Force damage.",
+				"Engulf",
+				"The blob moves up to its {@variantrule Speed|XPHB} and can move through the spaces of Huge or smaller creatures and objects. {@actSave str} {@dc 23}, each creature or object whose space the blob enters for the first time during this move. {@actSaveFail} The target is engulfed. While engulfed, a target has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects outside the blob, and when the blob moves, the engulfed target moves with it. A nonmagical object is destroyed after spending 1 minute engulfed.",
+				"While engulfed, a creature takes 21 ({@damage 6d6}) Force damage at the start of each of its turns, is suffocating, has the {@condition Restrained|XPHB} condition, and repeats the save at the end of each of its turns. An engulfed creature that is reduced to 0 {@variantrule Hit Points|XPHB} dissolves into ash, which is ejected into the Astral Sea. {@actSaveSuccess} The target escapes and enters the nearest unoccupied space.",
+				"Restraining Glob",
+				"The blob lobs a slimy glob at one Large or smaller creature it can see within 600 feet of itself. {@actSave dex} {@dc 23}, the targeted creature. {@actSaveFail} 18 ({@damage 3d6 + 8}) Acid damage. The glob rolls the target 60 feet straight toward the blob, and the target has the {@condition Restrained|XPHB} condition until the end of its next turn, when the glob harmlessly dissolves. {@actSaveSuccess} Half damage only.",
+				"Decay",
+				"The blob deals 14 ({@damage 4d6}) Necrotic damage to each creature engulfed by it. The blob can't take this action again until the start of its next turn.",
+				"Grasping Glob",
+				"The blob uses Restraining Glob. The blob can't take this action again until the start of its next turn.",
+				"Lashing Goop",
+				"The blob makes one Pseudopod attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blood Hawk|XMM",
+			"hint": {
+				"Blood Hawk": "血鷹",
+				"Pack Tactics": "群體戰術",
+				"Beak": "啄擊"
+			},
+			"s": [
+				"Blood Hawk",
+				"Pack Tactics",
+				"The hawk has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the hawk's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Beak",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}4 ({@damage 1d4 + 2}) Piercing damage, or 6 ({@damage 1d8 + 2}) Piercing damage if the target is {@status Bloodied|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blue Dragon Wyrmling|XMM",
+			"hint": {
+				"Blue Dragon Wyrmling": "藍龍幼龍",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Lightning Breath {@recharge 5}": "閃電吐息 {@recharge 5}"
+			},
+			"s": [
+				"Blue Dragon Wyrmling",
+				"Multiattack",
+				"The dragon makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}8 ({@damage 1d10 + 3}) Slashing damage plus 3 ({@damage 1d6}) Lightning damage.",
+				"Lightning Breath {@recharge 5}",
+				"{@actSave dex} {@dc 12}, each creature in a 30-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 21 ({@damage 6d6}) Lightning damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blue Slaad|XMM",
+			"hint": {
+				"Blue Slaad": "史拉藍蟾",
+				"Magic Resistance": "魔法抗性",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Blue Slaad",
+				"Magic Resistance",
+				"The slaad has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Regeneration",
+				"The slaad regains 10 {@variantrule Hit Points|XPHB} at the start of each of its turns if it has at least 1 {@variantrule Hit Points|XPHB|Hit Point}.",
+				"Multiattack",
+				"The slaad makes three Mutating Claw attacks.",
+				"Mutating Claw",
+				"{@atkr m} {@hit 8}, reach 10 ft. {@h}12 ({@damage 2d6 + 5}) Slashing damage plus 3 ({@damage 1d6}) Poison damage. If the target is a Humanoid not cursed by a slaad, it is subjected to the following effect. {@actSave con} {@dc 15}. {@actSaveFail} The target is cursed. The cursed target can't regain {@variantrule Hit Points|XPHB}, and its {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by 10 ({@dice 3d6}) after every 24 hours and doesn't return to normal after finishing a {@variantrule Long Rest|XPHB}. If the curse reduces the target's {@variantrule Hit Points|XPHB|Hit Point} maximum to 0, the curse ends, and instead of dying, the target instantly transforms into a {@creature Red Slaad|XMM} or, if it can cast spells of level 3 or higher, a {@creature Green Slaad|XMM}. Only a {@spell Wish|XPHB} spell can reverse this transformation."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Boar|XMM",
+			"hint": {
+				"Boar": "野豬"
+			},
+			"s": [
+				"Boar",
+				"Bloodied Fury",
+				"While {@status Bloodied|XPHB}, the boar has {@variantrule Advantage|XPHB} on attack rolls.",
+				"Gore",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}4 ({@damage 1d6 + 1}) Piercing damage. If the target is a Medium or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 ({@damage 1d6}) Piercing damage and has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bone Devil|XMM",
+			"hint": {
+				"Bone Devil": "骨魔",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Bone Devil",
+				"Diabolical Restoration",
+				"If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Nine Hells.",
+				"Magic Resistance",
+				"The devil has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The devil makes two Claw attacks and one Infernal Sting attack.",
+				"Claw",
+				"{@atkr m} {@hit 8}, reach 10 ft. {@h}13 ({@damage 2d8 + 4}) Slashing damage.",
+				"Infernal Sting",
+				"{@atkr m} {@hit 8}, reach 10 ft. {@h}15 ({@damage 2d10 + 4}) Piercing damage plus 18 ({@damage 4d8}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the devil's next turn. While {@condition Poisoned|XPHB}, the target can't regain {@variantrule Hit Points|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bone Naga|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Bone Naga",
+				"Spellcasting",
+				"The naga casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 13}):",
+				"Multiattack",
+				"The naga makes two Bite attacks. It can replace any attack with a use of Serpentine Gaze.",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 10 ft. {@h}10 ({@damage 2d6 + 3}) Piercing damage plus 7 ({@damage 2d6}) Necrotic damage.",
+				"Serpentine Gaze",
+				"{@actSave wis} {@dc 13}, one creature the naga can see within 60 feet. {@actSaveFail} 13 ({@damage 3d6 + 3}) Psychic damage, and the target has the {@condition Charmed|XPHB} condition until the start of the naga's next turn."
+			]
+		}
+	]
+}

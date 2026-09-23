@@ -1,0 +1,535 @@
+{
+	"batch": "xmm-02",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Ancient Silver Dragon|XMM",
+			"hint": {
+				"Ancient Silver Dragon": "遠古銀龍",
+				"Spellcasting": "施法",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Cold Breath {@recharge 5}": "寒冷吐息 {@recharge 5}",
+				"Paralyzing Breath": "麻痺吐息",
+				"Chill": "冰寒",
+				"Cold Gale": "寒風",
+				"Pounce": "撲擊",
+				"Silver Dragon": "銀龍"
+			},
+			"s": [
+				"Ancient Silver Dragon",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 23}, {@hit 15} to hit with spell attacks):",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks. It can replace one attack with a use of (A) Paralyzing Breath or (B) Spellcasting to cast {@spell Ice Knife|XPHB} (level 2 version).",
+				"Rend",
+				"{@atkr m} {@hit 17}, reach 15 ft. {@h}19 ({@damage 2d8 + 10}) Slashing damage plus 9 ({@damage 2d8}) Cold damage.",
+				"Cold Breath {@recharge 5}",
+				"{@actSave con} {@dc 24}, each creature in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 67 ({@damage 15d8}) Cold damage. {@actSaveSuccess} Half damage.",
+				"Paralyzing Breath",
+				"{@actSave con} {@dc 24}, each creature in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail 1} The target has the {@condition Incapacitated|XPHB} condition until the end of its next turn, when it repeats the save. {@actSaveFail 2} The target has the {@condition Paralyzed|XPHB} condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
+				"Chill",
+				"The dragon uses Spellcasting to cast {@spell Hold Monster|XPHB}. The dragon can't take this action again until the start of its next turn.",
+				"Cold Gale",
+				"{@actSave dex} {@dc 23}, each creature in a 60-foot-long, 10-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 14 ({@damage 4d6}) Cold damage, and the target is pushed up to 30 feet straight away from the dragon. {@actSaveSuccess} Half damage only. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"Silver Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ancient White Dragon|XMM",
+			"hint": {
+				"Ancient White Dragon": "遠古白龍",
+				"Frightful Presence": "駭人威儀",
+				"Ice Walk": "冰上行走",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Cold Breath {@recharge 5}": "寒冷吐息 {@recharge 5}",
+				"Freezing Burst": "冰凍爆發",
+				"Pounce": "撲擊",
+				"White Dragon": "白龍"
+			},
+			"s": [
+				"Ancient White Dragon",
+				"Frightful Presence",
+				"The dragon casts {@spell Fear|XPHB}, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 18}). The dragon can't take this action again until the start of its next turn.",
+				"Ice Walk",
+				"The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, {@variantrule Difficult Terrain|XPHB} composed of ice or snow doesn't cost it extra movement.",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)",
+				"If the dragon fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The dragon makes three Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 14}, reach 15 ft. {@h}17 ({@damage 2d8 + 8}) Slashing damage plus 7 ({@damage 2d6}) Cold damage.",
+				"Cold Breath {@recharge 5}",
+				"{@actSave con} {@dc 22}, each creature in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 63 ({@damage 14d8}) Cold damage. {@actSaveSuccess} Half damage.",
+				"Freezing Burst",
+				"{@actSave con} {@dc 20}, each creature in a 30-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the dragon can see within 120 feet. {@actSaveFail} 14 ({@damage 4d6}) Cold damage, and the target's {@variantrule Speed|XPHB} is 0 until the end of the target's next turn. {@actSaveSuccessOrFail} The dragon can't take this action again until the start of its next turn.",
+				"Pounce",
+				"The dragon moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack.",
+				"White Dragon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Animal Lord|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂"
+			},
+			"s": [
+				"Animal Lord",
+				"(hover)",
+				"Spellcasting",
+				"The animal lord casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 20}):",
+				"Animal Lordship",
+				"An animal lord represents a Forager, Hunter, or Sage (DM's choice), which determines certain traits in this stat block.",
+				"Legendary Resistance (4/Day)",
+				"If the animal lord fails a saving throw, it can choose to succeed instead.",
+				"Lordly Presence",
+				"{@actSave wis} {@dc 20}, any enemy that starts its turn in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the animal lord. {@actSaveFail} The target suffers one of the following effects:",
+				"Captivated (Forager Only)",
+				"The target has the {@condition Charmed|XPHB} condition until the end of its next turn. While {@condition Charmed|XPHB}, the target has the {@condition Incapacitated|XPHB} condition.",
+				"Fearful (Hunter Only)",
+				"The target has the {@condition Frightened|XPHB} condition until the end of its next turn.",
+				"Mired (Sage Only)",
+				"The target takes 10 ({@damage 3d6}) Psychic damage, and the target is magically bewildered until the end of its next turn. While bewildered, the target subtracts {@dice 1d4} from its saving throws.",
+				"Magic Resistance",
+				"The animal lord has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The animal lord makes two attacks, using Rend or Radiant Ray in any combination, and uses Animal Spirit.",
+				"Rend",
+				"{@atkr m} {@hit 13}, reach 5 ft. {@h}14 ({@damage 2d6 + 7}) Slashing damage plus 7 ({@damage 2d6}) Force damage.",
+				"Radiant Ray",
+				"{@atkr r} {@hit 12}, range 120 ft. {@h}20 ({@damage 4d6 + 6}) Radiant damage.",
+				"Animal Spirit",
+				"The animal lord conjures an animal spirit that strikes at a creature and then disappears. {@actSave dex} {@dc 20}, one creature the animal lord can see within 120 feet. {@actSaveFail} 28 ({@damage 4d10 + 6}) Radiant damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} One of the following effects occurs:",
+				"Fortify (Forager Only)",
+				"The animal lord gains 20 {@variantrule Temporary Hit Points|XPHB}.",
+				"Marked as Prey (Hunter Only)",
+				"The animal lord has {@variantrule Advantage|XPHB} on attack rolls against the target until the start of the animal lord's next turn.",
+				"Pesky Swarm (Sage Only)",
+				"The target has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks until the end of its next turn.",
+				"Shape-Shift",
+				"The animal lord shape-shifts into a Huge or smaller version of the animal it represents or a Medium or Small Humanoid, or it returns to its true form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.",
+				"Feral Strike",
+				"The animal lord moves up to its {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}, and it makes one Rend attack.",
+				"Radiant Strike",
+				"The animal lord makes one Radiant Ray attack.",
+				"Hunter Animal Lord"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Animated Armor|XMM",
+			"hint": {
+				"Animated Armor": "活化盔甲",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Animated Armor",
+				"Multiattack",
+				"The armor makes two Slam attacks.",
+				"Slam",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Animated Broom|XMM",
+			"s": [
+				"Animated Broom",
+				"(hover)",
+				"Flyby",
+				"The broom doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.",
+				"Slam",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Animated Flying Sword|XMM",
+			"s": [
+				"Animated Flying Sword",
+				"(hover)",
+				"Slash",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Animated Rug of Smothering|XMM",
+			"s": [
+				"Animated Rug of Smothering",
+				"Smother",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Bludgeoning damage. If the target is a Medium or smaller creature, the rug can give it the {@condition Grappled|XPHB} condition (escape {@dc 13}) instead of dealing damage. Until the grapple ends, the target has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, is suffocating, and takes 10 ({@damage 2d6 + 3}) Bludgeoning damage at the start of each of its turns. The rug can smother only one creature at a time.",
+				"While grappling the target, the rug can't take this action, the rug halves the damage it takes (round down), and the target takes the same amount of damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ankheg|XMM",
+			"hint": {
+				"Ankheg": "掘地蟲",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Ankheg",
+				"Tunneler",
+				"The ankheg can burrow through solid rock at half its {@variantrule Burrow Speed|XPHB} and leaves a 10-foot-diameter tunnel in its wake.",
+				"Bite",
+				"{@atkr m} {@hit 5} (with {@variantrule Advantage|XPHB} if the target is {@condition Grappled|XPHB} by the ankheg), reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Slashing damage plus 3 ({@damage 1d6}) Acid damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}).",
+				"Acid Spray {@recharge}",
+				"{@actSave dex} {@dc 12}, each creature in a 30-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 14 ({@damage 4d6}) Acid damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ankylosaurus|XMM",
+			"hint": {
+				"Ankylosaurus": "甲龍",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Ankylosaurus",
+				"Multiattack",
+				"The ankylosaurus makes two Tail attacks.",
+				"Tail",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}9 ({@damage 1d10 + 4}) Bludgeoning damage. If the target is a Huge or smaller creature, it has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ape|XMM",
+			"hint": {
+				"Ape": "猿",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Ape",
+				"Multiattack",
+				"The ape makes two Fist attacks.",
+				"Fist",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Bludgeoning damage.",
+				"Rock {@recharge}",
+				"{@atkr r} {@hit 5}, range 25/50 ft. {@h}10 ({@damage 2d6 + 3}) Bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Arcanaloth|XMM",
+			"hint": {
+				"Arcanaloth": "奧登羅斯魔",
+				"Spellcasting": "施法",
+				"Counterspell": "反制法術",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Teleport": "傳送術"
+			},
+			"s": [
+				"Arcanaloth",
+				"(hover)",
+				"Spellcasting",
+				"The arcanaloth casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 17}):",
+				"Counterspell",
+				"The arcanaloth casts {@spell Counterspell|XPHB} in response to that spell's trigger, using the same spellcasting ability as Spellcasting.",
+				"Fiendish Restoration",
+				"If the arcanaloth dies outside Gehenna, its body dissolves into ichor, and it gains a new body instantly and revives with all its {@variantrule Hit Points|XPHB} in Gehenna.",
+				"Magic Resistance",
+				"The arcanaloth has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Soul Tome",
+				"The arcanaloth has a magic tome. While holding or carrying the tome, the arcanaloth can use its Banishing Claw action.",
+				"The tome has AC 17; HP 35; and {@variantrule Immunity|XPHB} to Necrotic, Poison, and Psychic damage. The tome regains all its {@variantrule Hit Points|XPHB} at the end of every turn, but it turns to dust if reduced to 0 {@variantrule Hit Points|XPHB} or when the arcanaloth dies. If the tome is destroyed, the arcanaloth can create a new one when it finishes a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.",
+				"Multiattack",
+				"The arcanaloth makes three Fiendish Burst attacks. It can replace one attack with a Banishing Claw attack.",
+				"Fiendish Burst",
+				"{@atkr m,r} {@hit 9}, reach 5 ft. or range 120 ft. {@h}31 ({@damage 4d12 + 5}) Necrotic damage.",
+				"Banishing Claw (Requires Soul Tome)",
+				"{@atkr m} {@hit 9}, reach 5 ft. {@h}10 ({@damage 2d4 + 5}) Slashing damage plus 19 ({@damage 3d12}) Psychic damage. If the target is a creature, it is subjected to the following effect. {@actSave cha} {@dc 17}. {@actSaveFail} The target is trapped in a demiplane inside the Soul Tome. While trapped there, the target has the {@condition Incapacitated|XPHB} condition. At the end of each of its turns, the target repeats the save, escaping the tome on a success. When the target escapes, it appears in the space it left or, if that space is occupied, the nearest unoccupied space.",
+				"If the target fails three of these saves while in the demiplane, it becomes bound to the tome and can escape only if the tome is reduced to 0 {@variantrule Hit Points|XPHB}.",
+				"Teleport",
+				"The arcanaloth teleports up to 30 feet to an unoccupied space it can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Arch-hag|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Arch-hag",
+				"Coven Magic",
+				"While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Intelligence as the spellcasting ability (spell save {@dc 19}): {@spell Augury|XPHB}, {@spell Find Familiar|XPHB}, {@spell Identify|XPHB}, {@spell Locate Object|XPHB}, {@spell Scrying|XPHB}, or {@spell Unseen Servant|XPHB}. The hag must finish a {@variantrule Long Rest|XPHB} before using this trait to cast that spell again.",
+				"Spellcasting",
+				"The hag casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 22}):",
+				"Tongue Twister",
+				"The hag casts {@spell Counterspell|XPHB} in response to that spell's trigger, using the same spellcasting ability as Spellcasting. If the target fails its saving throw, it is cursed until the end of its next turn. Until the curse ends, the target can't cast spells with a Verbal component, and when it speaks, it says the opposite of what it means.",
+				"Legendary Resistance (4/Day, or 5/Day in Lair)",
+				"If the hag fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The hag has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Spiteful Escape",
+				"When the hag drops to 0 {@variantrule Hit Points|XPHB}, it dies only if it is within 30 feet of its anathema (a thing the DM chooses as the hag's most hated thing). Otherwise, the hag drops to 1 {@variantrule Hit Points|XPHB|Hit Point} and teleports to a harmless demiplane, and it can't return to the plane it left for {@dice 2d6} days. When the hag teleports away, each creature within 60 feet of the space it left is cursed. Until the curse ends, a creature has {@variantrule Disadvantage|XPHB} on ability checks and saving throws, and the hag knows its location anywhere in the multiverse.",
+				"Multiattack",
+				"The hag makes two Spectral Claw attacks and uses Crackling Wave.",
+				"Spectral Claw",
+				"{@atkr m,r} {@hit 14}, reach 10 ft. or range 60 ft. {@h}17 ({@damage 3d6 + 7}) Force damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition.",
+				"Crackling Wave",
+				"{@actSave dex} {@dc 22}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 32 ({@damage 5d12}) Lightning damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The target is cursed until the end of the hag's next turn. The target can't take Reactions until the curse ends.",
+				"Witch Strike",
+				"Each creature cursed by the hag and within 60 feet of it takes 14 ({@damage 4d6}) Lightning damage.",
+				"Hag's Swipe",
+				"The hag makes one Spectral Claw attack.",
+				"Malicious Magic",
+				"The hag uses Spellcasting to cast {@spell Dimension Door|XPHB} or {@spell Hypnotic Pattern|XPHB}. The hag can't take this action again until the start of its next turn.",
+				"Arch-hag"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Archelon|XMM",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Archelon",
+				"Amphibious",
+				"The archelon can breathe air and water.",
+				"Multiattack",
+				"The archelon makes two Bite attacks.",
+				"Bite",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}14 ({@damage 3d6 + 4}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Archmage|XMM",
+			"hint": {
+				"Archmage": "大法師",
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Archmage",
+				"Spellcasting",
+				"The archmage casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):",
+				"Misty Step (3/Day)",
+				"The mage casts {@spell Misty Step|XPHB}, using the same spellcasting ability as Spellcasting.",
+				"Protective Magic (3/Day)",
+				"The archmage casts {@spell Counterspell|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting.",
+				"Magic Resistance",
+				"The archmage has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The archmage makes four Arcane Burst attacks.",
+				"Arcane Burst",
+				"{@atkr m,r} {@hit 9}, reach 5 ft. or range 150 ft. {@h}27 ({@damage 4d10 + 5}) Force damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Archpriest|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Archpriest",
+				"Spellcasting",
+				"The archpriest casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 17}):",
+				"Divine Aid (3/Day)",
+				"The priest casts {@spell Bless|XPHB}, {@spell Dispel Magic|XPHB}, {@spell Healing Word|XPHB}, or {@spell Lesser Restoration|XPHB}, using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The archpriest makes three Radiant Burst attacks.",
+				"Radiant Burst",
+				"{@atkr m,r} {@hit 9}, reach 5 ft. or range 60 ft. {@h}27 ({@damage 4d10 + 5}) Radiant damage.",
+				"Holy Word {@recharge 4}",
+				"{@actSave wis} {@dc 17}, each enemy in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the archpriest. {@actSaveFail} 21 ({@damage 6d6}) Radiant damage, and the target has the {@condition Stunned|XPHB} condition until the end of the archpriest's next turn. {@actSaveSuccess} Half damage only."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Assassin|XMM",
+			"hint": {
+				"Assassin": "刺客",
+				"Evasion": "反射閃避",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍",
+				"Light Crossbow": "輕弩",
+				"Cunning Action": "巧妙動作"
+			},
+			"s": [
+				"Assassin",
+				"Evasion",
+				"If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the save and only half damage if it fails. It can't use this trait if it has the {@condition Incapacitated|XPHB} condition.",
+				"Multiattack",
+				"The assassin makes three attacks, using Shortsword or Light Crossbow in any combination.",
+				"Shortsword",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}7 ({@damage 1d6 + 4}) Piercing damage plus 17 ({@damage 5d6}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the assassin's next turn.",
+				"Light Crossbow",
+				"{@atkr r} {@hit 7}, range 80/320 ft. {@h}8 ({@damage 1d8 + 4}) Piercing damage plus 21 ({@damage 6d6}) Poison damage.",
+				"Cunning Action",
+				"The assassin takes the {@action Dash|XPHB}, {@action Disengage|XPHB}, or {@action Hide|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Awakened Shrub|XMM",
+			"hint": {
+				"Awakened Shrub": "啟蒙灌木"
+			},
+			"s": [
+				"Awakened Shrub",
+				"Rake",
+				"{@atkr m} {@hit 1}, reach 5 ft. {@h}1 Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Awakened Tree|XMM",
+			"hint": {
+				"Awakened Tree": "啟蒙樹木"
+			},
+			"s": [
+				"Awakened Tree",
+				"Slam",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}13 ({@damage 2d8 + 4}) Bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Axe Beak|XMM",
+			"hint": {
+				"Axe Beak": "斧喙鳥"
+			},
+			"s": [
+				"Axe Beak",
+				"Beak",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Azer Pyromancer|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Azer Pyromancer",
+				"Spellcasting",
+				"The azer casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15}):",
+				"Hellish Rebuke (2/Day)",
+				"The azer casts {@spell Hellish Rebuke|XPHB} in response to that spell's trigger, using the same spellcasting ability as Spellcasting.",
+				"Fire Aura",
+				"At the end of each of the azer's turns, each creature of the azer's choice in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the azer takes 11 ({@damage 2d10}) Fire damage unless the azer has the {@condition Incapacitated|XPHB} condition.",
+				"Illumination",
+				"The azer sheds {@variantrule Bright Light|XPHB} in a 10-foot radius and {@variantrule Dim Light|XPHB} for an additional 10 feet.",
+				"Multiattack",
+				"The azer makes two Flame Burst attacks.",
+				"Flame Burst",
+				"{@atkr m,r} {@hit 7}, reach 5 ft. or range 120 ft. {@h}15 ({@damage 2d10 + 4}) Fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Azer Sentinel|XMM",
+			"s": [
+				"Azer Sentinel",
+				"Fire Aura",
+				"At the end of each of the azer's turns, each creature of the azer's choice in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the azer takes 5 ({@damage 1d10}) Fire damage unless the azer has the {@condition Incapacitated|XPHB} condition.",
+				"Illumination",
+				"The azer sheds {@variantrule Bright Light|XPHB} in a 10-foot radius and {@variantrule Dim Light|XPHB} for an additional 10 feet.",
+				"Burning Hammer",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}8 ({@damage 1d10 + 3}) Bludgeoning damage plus 3 ({@damage 1d6}) Fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Baboon|XMM",
+			"hint": {
+				"Baboon": "狒狒",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Baboon",
+				"Pack Tactics",
+				"The baboon has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the baboon's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Bite",
+				"{@atkr m} {@hit 1}, reach 5 ft. {@h}1 ({@damage 1d4 - 1}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Badger|XMM",
+			"hint": {
+				"Badger": "獾",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Badger",
+				"Bite",
+				"{@atkr m} {@hit 2}, reach 5 ft. {@h}1 Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Balor|XMM",
+			"hint": {
+				"Balor": "巴洛炎魔",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Teleport": "傳送術"
+			},
+			"s": [
+				"Balor",
+				"Death Throes",
+				"The balor explodes when it dies. {@actSave dex} {@dc 20}, each creature in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the balor. {@actSaveFail} 31 ({@damage 9d6}) Fire damage plus 31 ({@damage 9d6}) Force damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} If the balor dies outside the Abyss, it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Abyss.",
+				"Fire Aura",
+				"At the end of each of the balor's turns, each creature in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the balor takes 13 ({@damage 3d8}) Fire damage.",
+				"Legendary Resistance (3/Day)",
+				"If the balor fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The balor has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The balor makes one Flame Whip attack and one Lightning Blade attack.",
+				"Flame Whip",
+				"{@atkr m} {@hit 14}, reach 30 ft. {@h}18 ({@damage 3d6 + 8}) Force damage plus 17 ({@damage 5d6}) Fire damage. If the target is a Huge or smaller creature, the balor pulls the target up to 25 feet straight toward itself, and the target has the {@condition Prone|XPHB} condition.",
+				"Lightning Blade",
+				"{@atkr m} {@hit 14}, reach 10 ft. {@h}21 ({@damage 3d8 + 8}) Force damage plus 22 ({@damage 4d10}) Lightning damage, and the target can't take Reactions until the start of the balor's next turn.",
+				"Teleport",
+				"The balor teleports itself or a willing demon within 10 feet of itself up to 60 feet to an unoccupied space the balor can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bandit|XMM",
+			"hint": {
+				"Bandit": "強盜",
+				"Scimitar": "彎刀",
+				"Light Crossbow": "輕弩"
+			},
+			"s": [
+				"Bandit",
+				"Scimitar",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}4 ({@damage 1d6 + 1}) Slashing damage.",
+				"Light Crossbow",
+				"{@atkr r} {@hit 3}, range 80/320 ft. {@h}5 ({@damage 1d8 + 1}) Piercing damage."
+			]
+		}
+	]
+}

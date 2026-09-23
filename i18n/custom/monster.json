@@ -1,4 +1,8379 @@
 {
+	"Aarakocra Aeromancer|XMM": {
+		"name": "阿蘭寇拉鷹人風術士",
+		"source": "XMM",
+		"page": 10,
+		"referenceSources": [
+			"FRAiF"
+		],
+		"size": [
+			"M"
+		],
+		"type": "elemental",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			16
+		],
+		"hp": {
+			"average": 66,
+			"formula": "12d8 + 12"
+		},
+		"speed": {
+			"walk": 20,
+			"fly": 50
+		},
+		"str": 10,
+		"dex": 16,
+		"con": 12,
+		"int": 13,
+		"wis": 17,
+		"cha": 12,
+		"save": {
+			"dex": "+5",
+			"wis": "+5"
+		},
+		"skill": {
+			"arcana": "+3",
+			"nature": "+5",
+			"perception": "+7"
+		},
+		"passive": 17,
+		"languages": [
+			"Aarakocra",
+			"Primordial (Auran)"
+		],
+		"cr": "4",
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"阿蘭寇拉鷹人風術士施展下列法術之一，無需材料成分，以感知作為施法屬性（法術豁免 {@dc 13}）："
+				],
+				"will": [
+					"{@spell Elementalism|XPHB}",
+					"{@spell Gust of Wind|XPHB}",
+					"{@spell Mage Hand|XPHB}",
+					"{@spell Message|XPHB}"
+				],
+				"daily": {
+					"1": [
+						"{@spell Lightning Bolt|XPHB}"
+					]
+				},
+				"ability": "wis",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			},
+			{
+				"name": "羽落術（每日 1 次）",
+				"type": "spellcasting",
+				"headerEntries": [
+					"阿蘭寇拉鷹人風術士在該法術的觸發條件發生時施展{@spell Feather Fall|XPHB}，使用與「施法」相同的施法屬性。"
+				],
+				"daily": {
+					"1": [
+						"{@spell Feather Fall|XPHB}"
+					]
+				},
+				"ability": "wis",
+				"displayAs": "reaction",
+				"hidden": [
+					"daily"
+				],
+				"ENG_name": "Feather Fall (1/Day)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"阿蘭寇拉鷹人風術士進行兩次風之杖攻擊，並可以使用「施法」施展{@spell Gust of Wind|XPHB}。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "風之杖",
+				"entries": [
+					"{@atkr m,r} {@hit 5}，觸及 5 呎或射程 120 呎。{@h}7（{@damage 1d8 + 3}）鈍擊傷害外加 11（{@damage 2d10}）閃電傷害。"
+				],
+				"ENG_name": "Wind Staff"
+			}
+		],
+		"environment": [
+			"mountain",
+			"planar, air"
+		],
+		"treasure": [
+			"implements",
+			"individual"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"AU",
+			"OTH",
+			"P"
+		],
+		"damageTags": [
+			"B",
+			"L"
+		],
+		"damageTagsSpell": [
+			"L"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RA"
+		],
+		"savingThrowForcedSpell": [
+			"dexterity",
+			"strength"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Aarakocra Aeromancer"
+	},
+	"Aarakocra Skirmisher|XMM": {
+		"name": "阿蘭寇拉鷹人散兵",
+		"source": "XMM",
+		"page": 10,
+		"size": [
+			"M"
+		],
+		"type": "elemental",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 11,
+			"formula": "2d8 + 2"
+		},
+		"speed": {
+			"walk": 20,
+			"fly": 50
+		},
+		"str": 10,
+		"dex": 14,
+		"con": 12,
+		"int": 11,
+		"wis": 12,
+		"cha": 11,
+		"skill": {
+			"perception": "+5"
+		},
+		"passive": 15,
+		"languages": [
+			"Aarakocra",
+			"Primordial (Auran)"
+		],
+		"cr": "1/4",
+		"action": [
+			{
+				"name": "利爪",
+				"entries": [
+					"{@atkr m} {@hit 4}，觸及 5 呎。{@h}4（{@damage 1d4 + 2}）揮砍傷害；若阿蘭寇拉鷹人散兵在命中前立即朝目標直線移動了 30 呎以上，則改為 9（{@damage 3d4 + 2}）揮砍傷害。"
+				],
+				"ENG_name": "Talons"
+			},
+			{
+				"name": "風之標槍",
+				"entries": [
+					"{@atkr m,r} {@hit 4}，觸及 5 呎或射程 30/120 呎。{@h}5（{@damage 1d6 + 2}）穿刺傷害外加 2（{@damage 1d4}）雷鳴傷害。{@hom}進行遠程攻擊後，標槍會立即以魔法回到阿蘭寇拉鷹人散兵手中。"
+				],
+				"ENG_name": "Wind Javelin"
+			}
+		],
+		"environment": [
+			"mountain",
+			"planar, air"
+		],
+		"treasure": [
+			"implements",
+			"individual"
+		],
+		"languageTags": [
+			"AU",
+			"OTH",
+			"P"
+		],
+		"damageTags": [
+			"P",
+			"S",
+			"T"
+		],
+		"miscTags": [
+			"MA",
+			"MLW",
+			"RA",
+			"THW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Aarakocra Skirmisher"
+	},
+	"Aberrant Cultist|XMM": {
+		"name": "異怪邪教徒",
+		"source": "XMM",
+		"page": 86,
+		"referenceSources": [
+			"FRAiF",
+			"EFA"
+		],
+		"size": [
+			"S",
+			"M"
+		],
+		"type": "humanoid",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			14
+		],
+		"hp": {
+			"average": 137,
+			"formula": "25d8 + 25"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"initiative": {
+			"proficiency": 1
+		},
+		"str": 10,
+		"dex": 19,
+		"con": 12,
+		"int": 16,
+		"wis": 18,
+		"cha": 15,
+		"save": {
+			"int": "+6",
+			"wis": "+7"
+		},
+		"skill": {
+			"arcana": "+6",
+			"perception": "+7",
+			"religion": "+6"
+		},
+		"senses": [
+			"Darkvision 90 ft."
+		],
+		"passive": 17,
+		"languages": [
+			"Common",
+			"Deep Speech; telepathy 30 ft."
+		],
+		"cr": "8",
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"異怪邪教徒施展下列法術之一，以感知作為施法屬性（法術豁免 {@dc 15}）："
+				],
+				"will": [
+					"{@spell Detect Thoughts|XPHB}",
+					"{@spell Minor Illusion|XPHB}"
+				],
+				"ability": "wis",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			},
+			{
+				"name": "法術反制（每日 2 次）",
+				"type": "spellcasting",
+				"headerEntries": [
+					"異怪邪教徒在該法術的觸發條件發生時施展{@spell Counterspell|XPHB}，使用與「施法」相同的施法屬性。"
+				],
+				"daily": {
+					"2": [
+						"{@spell Counterspell|XPHB}"
+					]
+				},
+				"ability": "wis",
+				"displayAs": "reaction",
+				"hidden": [
+					"daily"
+				],
+				"ENG_name": "Counterspell (2/Day)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"異怪邪教徒進行兩次觸手鞭擊攻擊。它可以將任何一次攻擊替換為使用「心智腐化」。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "觸手鞭擊",
+				"entries": [
+					"{@atkr m} {@hit 7}，觸及 10 呎。{@h}7（{@damage 1d6 + 4}）揮砍傷害外加 14（{@damage 4d6}）心靈傷害。若目標是大型或更小的生物，它會被兩條觸手之一{@condition Grappled|XPHB}（脫逃 {@dc 14}），且直到擒抱結束前處於{@condition Restrained|XPHB}狀態。"
+				],
+				"ENG_name": "Tentacle Lash"
+			},
+			{
+				"name": "心智腐化",
+				"entries": [
+					"{@actSave wis} {@dc 15}，異怪邪教徒 90 呎內一個它能看見的生物。{@actSaveFail}27（{@damage 6d8}）心靈傷害，且目標處於{@condition Poisoned|XPHB}狀態直到異怪邪教徒的下個回合開始。{@actSaveSuccess}僅受一半傷害。"
+				],
+				"ENG_name": "Mind Rot"
+			}
+		],
+		"environment": [
+			"any"
+		],
+		"treasure": [
+			"individual",
+			"relics"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DS",
+			"TP"
+		],
+		"damageTags": [
+			"S",
+			"Y"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"grappled",
+			"poisoned",
+			"restrained"
+		],
+		"savingThrowForced": [
+			"wisdom"
+		],
+		"savingThrowForcedSpell": [
+			"constitution",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Aberrant Cultist"
+	},
+	"Aboleth|XMM": {
+		"name": "底棲魔魚",
+		"source": "XMM",
+		"page": 12,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"L"
+		],
+		"type": "aberration",
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			17
+		],
+		"hp": {
+			"average": 150,
+			"formula": "20d10 + 40"
+		},
+		"speed": {
+			"walk": 10,
+			"swim": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 21,
+		"dex": 9,
+		"con": 15,
+		"int": 18,
+		"wis": 15,
+		"cha": 18,
+		"save": {
+			"dex": "+3",
+			"con": "+6",
+			"int": "+8",
+			"wis": "+6"
+		},
+		"skill": {
+			"history": "+12",
+			"perception": "+10"
+		},
+		"senses": [
+			"Darkvision 120 ft."
+		],
+		"passive": 20,
+		"languages": [
+			"Deep Speech; telepathy 120 ft."
+		],
+		"cr": {
+			"cr": "10",
+			"xpLair": 7200
+		},
+		"trait": [
+			{
+				"name": "兩棲",
+				"entries": [
+					"底棲魔魚可以呼吸空氣與水。"
+				],
+				"ENG_name": "Amphibious"
+			},
+			{
+				"name": "異界復原",
+				"entries": [
+					"若被摧毀，底棲魔魚會在 {@dice 5d10} 天後獲得新的身體，於遠域或 DM 選擇的其他地點以全部{@variantrule Hit Points|XPHB}復活。"
+				],
+				"ENG_name": "Eldritch Restoration"
+			},
+			{
+				"name": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"entries": [
+					"若底棲魔魚豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)"
+			},
+			{
+				"name": "黏液雲",
+				"entries": [
+					"位於水下時，底棲魔魚被黏液包圍。{@actSave con} {@dc 14}，在底棲魔魚的回合結束時，從底棲魔魚發出的 5 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內的每個生物。{@actSaveFail}目標受到詛咒。直到詛咒結束前，目標的皮膚會變得黏滑，目標可以呼吸空氣與水，且除非位於水下，否則無法恢復{@variantrule Hit Points|XPHB}。",
+					"受詛咒的生物位於水體之外時，除非在每 10 分鐘結束前為皮膚補充水分，否則它會在每 10 分鐘結束時受到 6（{@damage 1d12}）強酸傷害。"
+				],
+				"ENG_name": "Mucus Cloud"
+			},
+			{
+				"name": "探查心靈感應",
+				"entries": [
+					"若一個底棲魔魚能看見的生物以心靈感應與底棲魔魚溝通，底棲魔魚會得知該生物最大的渴望。"
+				],
+				"ENG_name": "Probing Telepathy"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"底棲魔魚進行兩次觸手攻擊，並在可用時使用「吞噬記憶」或「支配心智」。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "觸手",
+				"entries": [
+					"{@atkr m} {@hit 9}，觸及 15 呎。{@h}12（{@damage 2d6 + 5}）鈍擊傷害。若目標是大型或更小的生物，它會被四條觸手之一{@condition Grappled|XPHB}（脫逃 {@dc 14}）。"
+				],
+				"ENG_name": "Tentacle"
+			},
+			{
+				"name": "吞噬記憶",
+				"entries": [
+					"{@actSave int} {@dc 16}，底棲魔魚 30 呎內一個被其{@condition Charmed|XPHB}或{@condition Grappled|XPHB}的生物。{@actSaveFail}10（{@damage 3d6}）心靈傷害。{@actSaveSuccess}傷害減半。{@actSaveSuccessOrFail}若目標是類人生物且因此動作使{@variantrule Hit Points|XPHB}降至 0，底棲魔魚會獲得目標的記憶。"
+				],
+				"ENG_name": "Consume Memories"
+			},
+			{
+				"name": "支配心智（每日 2 次）",
+				"entries": [
+					"{@actSave wis} {@dc 16}，底棲魔魚 30 呎內一個它能看見的生物。{@actSaveFail}目標處於{@condition Charmed|XPHB}狀態，直到底棲魔魚死亡或與目標位於不同的存在位面為止。處於{@condition Charmed|XPHB}狀態時，目標視底棲魔魚為盟友，並在位於其 60 呎內時受其控制。此外，底棲魔魚與目標可以在任何距離下以心靈感應彼此溝通。",
+					"目標每次受到傷害時，以及每次在距離底棲魔魚至少 1 哩處度過 24 小時後，都會重複此豁免，成功時結束自身的效果。"
+				],
+				"ENG_name": "Dominate Mind (2/Day)"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "鞭擊",
+				"entries": [
+					"底棲魔魚進行一次觸手攻擊。"
+				],
+				"ENG_name": "Lash"
+			},
+			{
+				"name": "心靈汲取",
+				"entries": [
+					"若底棲魔魚至少使一個生物處於{@condition Charmed|XPHB}或{@condition Grappled|XPHB}狀態，它會使用「吞噬記憶」並恢復 5（{@dice 1d10}）{@variantrule Hit Points|XPHB}。"
+				],
+				"ENG_name": "Psychic Drain"
+			}
+		],
+		"legendaryGroup": {
+			"name": "底棲魔魚",
+			"source": "XMM",
+			"ENG_name": "Aboleth"
+		},
+		"environment": [
+			"underdark",
+			"underwater"
+		],
+		"treasure": [
+			"relics"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/aboleth.mp3"
+		},
+		"traitTags": [
+			"Amphibious",
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"actionTags": [
+			"Multiattack",
+			"Tentacles"
+		],
+		"languageTags": [
+			"DS",
+			"TP"
+		],
+		"damageTags": [
+			"A",
+			"B",
+			"Y"
+		],
+		"miscTags": [
+			"CUR",
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"charmed",
+			"grappled"
+		],
+		"savingThrowForced": [
+			"constitution",
+			"intelligence",
+			"wisdom"
+		],
+		"savingThrowForcedLegendary": [
+			"constitution"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Aboleth"
+	},
+	"Abominable Yeti|XMM": {
+		"name": "巨惡耶提",
+		"source": "XMM",
+		"page": 340,
+		"size": [
+			"H"
+		],
+		"type": "monstrosity",
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			15
+		],
+		"hp": {
+			"average": 137,
+			"formula": "11d12 + 66"
+		},
+		"speed": {
+			"walk": 40,
+			"climb": 40
+		},
+		"initiative": {
+			"proficiency": 1
+		},
+		"str": 24,
+		"dex": 10,
+		"con": 22,
+		"int": 9,
+		"wis": 13,
+		"cha": 9,
+		"skill": {
+			"perception": "+9",
+			"stealth": "+8"
+		},
+		"senses": [
+			"Darkvision 60 ft."
+		],
+		"passive": 19,
+		"immune": [
+			"cold"
+		],
+		"languages": [
+			"Yeti"
+		],
+		"cr": "9",
+		"trait": [
+			{
+				"name": "懼火",
+				"entries": [
+					"若巨惡耶提受到火焰傷害，直到其下個回合結束前，它的攻擊檢定與屬性檢定具有{@variantrule Disadvantage|XPHB}。"
+				],
+				"ENG_name": "Fear of Fire"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"巨惡耶提可以使用其「寒冰凝視」，並進行兩次攻擊，以爪擊或擲冰任意組合。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "爪擊",
+				"entries": [
+					"{@atkr m} {@hit 11}，觸及 5 呎。{@h}14（{@damage 2d6 + 7}）揮砍傷害外加 7（{@damage 2d6}）寒冷傷害。"
+				],
+				"ENG_name": "Claw"
+			},
+			{
+				"name": "擲冰",
+				"entries": [
+					"{@atkr r} {@hit 11}，射程 60/240 呎。{@h}12（{@damage 2d4 + 7}）鈍擊傷害外加 7（{@damage 2d6}）寒冷傷害。"
+				],
+				"ENG_name": "Ice Throw"
+			},
+			{
+				"name": "寒冰凝視",
+				"entries": [
+					"{@actSave con} {@dc 18}，巨惡耶提 30 呎內一個它能看見的生物。{@actSaveFail}21（{@damage 6d6}）寒冷傷害，且除非目標對寒冷傷害具有{@variantrule Immunity|XPHB}，否則它處於{@condition Paralyzed|XPHB}狀態直到巨惡耶提的下個回合開始。{@actSaveSuccess}目標在 1 小時內對此耶提的「寒冰凝視」免疫。"
+				],
+				"ENG_name": "Chilling Gaze"
+			},
+			{
+				"name": "寒冷吐息 {@recharge}",
+				"entries": [
+					"{@actSave con} {@dc 18}，30 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}45（{@damage 10d8}）寒冷傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Cold Breath {@recharge}"
+			}
+		],
+		"environment": [
+			"arctic"
+		],
+		"treasure": [
+			"any"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/abominable-yeti.mp3"
+		},
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"OTH"
+		],
+		"damageTags": [
+			"B",
+			"C",
+			"S"
+		],
+		"miscTags": [
+			"MA",
+			"RA"
+		],
+		"conditionInflict": [
+			"paralyzed"
+		],
+		"savingThrowForced": [
+			"constitution"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Abominable Yeti"
+	},
+	"Adult Black Dragon|XMM": {
+		"name": "成年黑龍",
+		"group": [
+			"Chromatic Dragons"
+		],
+		"source": "XMM",
+		"page": 39,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe",
+			"FRAiF"
+		],
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"chromatic"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			19
+		],
+		"hp": {
+			"average": 195,
+			"formula": "17d12 + 85"
+		},
+		"speed": {
+			"walk": 40,
+			"fly": 80,
+			"swim": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 23,
+		"dex": 14,
+		"con": 21,
+		"int": 14,
+		"wis": 13,
+		"cha": 19,
+		"save": {
+			"dex": "+7",
+			"wis": "+6"
+		},
+		"skill": {
+			"perception": "+11",
+			"stealth": "+7"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 21,
+		"immune": [
+			"acid"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "14",
+			"xpLair": 13000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"成年黑龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 17}，法術攻擊 {@hit 9}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Fear|XPHB}",
+					"{@spell Melf's Acid Arrow|XPHB} (level 3 version)"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Speak with Dead|XPHB}",
+						"{@spell Vitriolic Sphere|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "兩棲",
+				"entries": [
+					"成年黑龍可以呼吸空氣與水。"
+				],
+				"ENG_name": "Amphibious"
+			},
+			{
+				"name": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"entries": [
+					"若成年黑龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"成年黑龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用「施法」施展{@spell Melf's Acid Arrow|XPHB}（3 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 11}，觸及 10 呎。{@h}13（{@damage 2d6 + 6}）揮砍傷害外加 4（{@damage 1d8}）強酸傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "強酸吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 18}，長 60 呎、寬 5 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}54（{@damage 12d8}）強酸傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Acid Breath {@recharge 5}"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "蟲雲",
+				"entries": [
+					"{@actSave dex} {@dc 17}，成年黑龍 120 呎內一個它能看見的生物。{@actSaveFail}22（{@damage 4d10}）毒素傷害，且目標為維持{@status Concentration|XPHB}所進行的豁免檢定具有{@variantrule Disadvantage|XPHB}，直到其下個回合結束。{@actSaveSuccessOrFail}成年黑龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Cloud of Insects"
+			},
+			{
+				"name": "駭人威儀",
+				"entries": [
+					"成年黑龍使用「施法」施展{@spell Fear|XPHB}。成年黑龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Frightful Presence"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"成年黑龍可以移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "黑龍",
+			"source": "XMM",
+			"ENG_name": "Black Dragon"
+		},
+		"environment": [
+			"swamp"
+		],
+		"treasure": [
+			"relics"
+		],
+		"dragonAge": "adult",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/black-dragon.mp3"
+		},
+		"traitTags": [
+			"Amphibious",
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"A",
+			"I",
+			"S"
+		],
+		"damageTagsSpell": [
+			"A"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflictSpell": [
+			"frightened"
+		],
+		"savingThrowForced": [
+			"dexterity"
+		],
+		"savingThrowForcedLegendary": [
+			"constitution"
+		],
+		"savingThrowForcedSpell": [
+			"dexterity",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Adult Black Dragon"
+	},
+	"Adult Blue Dragon|XMM": {
+		"name": "成年藍龍",
+		"group": [
+			"Chromatic Dragons"
+		],
+		"source": "XMM",
+		"page": 49,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe"
+		],
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"chromatic"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			19
+		],
+		"hp": {
+			"average": 212,
+			"formula": "17d12 + 102"
+		},
+		"speed": {
+			"walk": 40,
+			"burrow": 30,
+			"fly": 80
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 25,
+		"dex": 10,
+		"con": 23,
+		"int": 16,
+		"wis": 15,
+		"cha": 20,
+		"save": {
+			"dex": "+5",
+			"wis": "+7"
+		},
+		"skill": {
+			"perception": "+12",
+			"stealth": "+5"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 22,
+		"immune": [
+			"lightning"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "16",
+			"xpLair": 18000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"成年藍龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 18}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Invisibility|XPHB}",
+					"{@spell Mage Hand|XPHB}",
+					"{@spell Shatter|XPHB}"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Scrying|XPHB}",
+						"{@spell Sending|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"entries": [
+					"若成年藍龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"成年藍龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用「施法」施展{@spell Shatter|XPHB}。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 12}，觸及 10 呎。{@h}16（{@damage 2d8 + 7}）揮砍傷害外加 5（{@damage 1d10}）閃電傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "閃電吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 19}，長 90 呎、寬 5 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}60（{@damage 11d10}）閃電傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Lightning Breath {@recharge 5}"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "隱蔽飛行",
+				"entries": [
+					"成年藍龍使用「施法」對自己施展{@spell Invisibility|XPHB}，並可以飛行至多其{@variantrule Fly Speed|XPHB}的一半。成年藍龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Cloaked Flight"
+			},
+			{
+				"name": "音爆",
+				"entries": [
+					"成年藍龍使用「施法」施展{@spell Shatter|XPHB}。成年藍龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Sonic Boom"
+			},
+			{
+				"name": "尾掃",
+				"entries": [
+					"成年藍龍進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Tail Swipe"
+			}
+		],
+		"legendaryGroup": {
+			"name": "藍龍",
+			"source": "XMM",
+			"ENG_name": "Blue Dragon"
+		},
+		"environment": [
+			"coastal",
+			"desert"
+		],
+		"treasure": [
+			"relics"
+		],
+		"dragonAge": "adult",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/blue-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"L",
+			"S"
+		],
+		"damageTagsSpell": [
+			"T"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflictSpell": [
+			"invisible"
+		],
+		"savingThrowForced": [
+			"dexterity"
+		],
+		"savingThrowForcedLegendary": [
+			"dexterity"
+		],
+		"savingThrowForcedSpell": [
+			"constitution",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Adult Blue Dragon"
+	},
+	"Adult Brass Dragon|XMM": {
+		"name": "成年黃銅龍",
+		"group": [
+			"Metallic Dragons"
+		],
+		"source": "XMM",
+		"page": 55,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"metallic"
+			]
+		},
+		"alignment": [
+			"C",
+			"G"
+		],
+		"ac": [
+			18
+		],
+		"hp": {
+			"average": 172,
+			"formula": "15d12 + 75"
+		},
+		"speed": {
+			"walk": 40,
+			"burrow": 30,
+			"fly": 80
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 23,
+		"dex": 10,
+		"con": 21,
+		"int": 14,
+		"wis": 13,
+		"cha": 17,
+		"save": {
+			"dex": "+5",
+			"wis": "+6"
+		},
+		"skill": {
+			"history": "+7",
+			"perception": "+11",
+			"persuasion": "+8",
+			"stealth": "+5"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 21,
+		"immune": [
+			"fire"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "13",
+			"xpLair": 11500
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"成年黃銅龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 16}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Minor Illusion|XPHB}",
+					"{@spell Scorching Ray|XPHB}",
+					"{@spell Shapechange|XPHB} (Beast or Humanoid form only, no {@variantrule Temporary Hit Points|XPHB} gained from the spell, and no Concentration or {@variantrule Temporary Hit Points|XPHB} required to maintain the spell)",
+					"{@spell Speak with Animals|XPHB}"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Detect Thoughts|XPHB}",
+						"{@spell Control Weather|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"entries": [
+					"若成年黃銅龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"成年黃銅龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用(A) 「睡眠吐息」或 (B) 「施法」施展{@spell Scorching Ray|XPHB}。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 11}，觸及 10 呎。{@h}17（{@damage 2d10 + 6}）揮砍傷害外加 4（{@damage 1d8}）火焰傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "火焰吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 18}，長 60 呎、寬 5 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}45（{@damage 10d8}）火焰傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Fire Breath {@recharge 5}"
+			},
+			{
+				"name": "睡眠吐息",
+				"entries": [
+					"{@actSave con} {@dc 18}，60 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}目標處於{@condition Incapacitated|XPHB}狀態直到其下個回合結束，屆時它重複此豁免。{@actSaveFail 2}目標處於{@condition Unconscious|XPHB}狀態 10 分鐘。若目標受到傷害，或其 5 呎內的生物執行一個動作將其喚醒，此效果便對其結束。"
+				],
+				"ENG_name": "Sleep Breath"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "熾烈光芒",
+				"entries": [
+					"成年黃銅龍使用「施法」施展{@spell Scorching Ray|XPHB}。"
+				],
+				"ENG_name": "Blazing Light"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"成年黃銅龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			},
+			{
+				"name": "灼熱之沙",
+				"entries": [
+					"{@actSave dex} {@dc 16}，成年黃銅龍 120 呎內一個它能看見的生物。{@actSaveFail}27（{@damage 6d8}）火焰傷害，且目標的{@variantrule Speed|XPHB}減半直到其下個回合結束。{@actSaveSuccessOrFail}成年黃銅龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Scorching Sands"
+			}
+		],
+		"legendaryGroup": {
+			"name": "黃銅龍",
+			"source": "XMM",
+			"ENG_name": "Brass Dragon"
+		},
+		"environment": [
+			"desert"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "adult",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/brass-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"F",
+			"S"
+		],
+		"damageTagsSpell": [
+			"F"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"incapacitated",
+			"unconscious"
+		],
+		"savingThrowForced": [
+			"constitution",
+			"dexterity"
+		],
+		"savingThrowForcedSpell": [
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Adult Brass Dragon"
+	},
+	"Adult Bronze Dragon|XMM": {
+		"name": "成年青銅龍",
+		"group": [
+			"Metallic Dragons"
+		],
+		"source": "XMM",
+		"page": 59,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"metallic"
+			]
+		},
+		"alignment": [
+			"L",
+			"G"
+		],
+		"ac": [
+			18
+		],
+		"hp": {
+			"average": 212,
+			"formula": "17d12 + 102"
+		},
+		"speed": {
+			"walk": 40,
+			"fly": 80,
+			"swim": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 25,
+		"dex": 10,
+		"con": 23,
+		"int": 16,
+		"wis": 15,
+		"cha": 20,
+		"save": {
+			"dex": "+5",
+			"wis": "+7"
+		},
+		"skill": {
+			"insight": "+7",
+			"perception": "+12",
+			"stealth": "+5"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 22,
+		"immune": [
+			"lightning"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "15",
+			"xpLair": 15000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"成年青銅龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 17}，法術攻擊 {@hit 10}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Guiding Bolt|XPHB} (level 2 version)",
+					"{@spell Shapechange|XPHB} (Beast or Humanoid form only, no {@variantrule Temporary Hit Points|XPHB} gained from the spell, and no Concentration or {@variantrule Temporary Hit Points|XPHB} required to maintain the spell)",
+					"{@spell Speak with Animals|XPHB}",
+					"{@spell Thaumaturgy|XPHB}"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Detect Thoughts|XPHB}",
+						"{@spell Water Breathing|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "兩棲",
+				"entries": [
+					"成年青銅龍可以呼吸空氣與水。"
+				],
+				"ENG_name": "Amphibious"
+			},
+			{
+				"name": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"entries": [
+					"若成年青銅龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"成年青銅龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用(A) 「排斥吐息」或 (B) 「施法」施展{@spell Guiding Bolt|XPHB}（2 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 12}，觸及 10 呎。{@h}16（{@damage 2d8 + 7}）揮砍傷害外加 5（{@damage 1d10}）閃電傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "閃電吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 19}，長 90 呎、寬 5 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}55（{@damage 10d10}）閃電傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Lightning Breath {@recharge 5}"
+			},
+			{
+				"name": "排斥吐息",
+				"entries": [
+					"{@actSave str} {@dc 19}，30 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}目標被直線推離成年青銅龍至多 60 呎，並處於{@condition Prone|XPHB}狀態。"
+				],
+				"ENG_name": "Repulsion Breath"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "指引之光",
+				"entries": [
+					"成年青銅龍使用「施法」施展{@spell Guiding Bolt|XPHB}（2 環版本）。"
+				],
+				"ENG_name": "Guiding Light"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"成年青銅龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			},
+			{
+				"name": "雷鳴破",
+				"entries": [
+					"{@actSave con} {@dc 17}，以成年青銅龍 90 呎內一個它能看見之點為中心、20 呎半徑{@variantrule Sphere [Area of Effect]|XPHB|球形}範圍內的每個生物。{@actSaveFail}10（{@damage 3d6}）雷鳴傷害，且目標處於{@condition Deafened|XPHB}狀態直到其下個回合結束。"
+				],
+				"ENG_name": "Thunderclap"
+			}
+		],
+		"legendaryGroup": {
+			"name": "青銅龍",
+			"source": "XMM",
+			"ENG_name": "Bronze Dragon"
+		},
+		"environment": [
+			"coastal"
+		],
+		"treasure": [
+			"implements"
+		],
+		"dragonAge": "adult",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/bronze-dragon.mp3"
+		},
+		"traitTags": [
+			"Amphibious",
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"L",
+			"S",
+			"T"
+		],
+		"damageTagsSpell": [
+			"R"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"AOE",
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"deafened",
+			"prone"
+		],
+		"savingThrowForced": [
+			"constitution",
+			"dexterity",
+			"strength"
+		],
+		"savingThrowForcedSpell": [
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Adult Bronze Dragon"
+	},
+	"Adult Copper Dragon|XMM": {
+		"name": "成年赤銅龍",
+		"group": [
+			"Metallic Dragons"
+		],
+		"source": "XMM",
+		"page": 79,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe",
+			"FRAiF"
+		],
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"metallic"
+			]
+		},
+		"alignment": [
+			"C",
+			"G"
+		],
+		"ac": [
+			18
+		],
+		"hp": {
+			"average": 184,
+			"formula": "16d12 + 80"
+		},
+		"speed": {
+			"walk": 40,
+			"climb": 40,
+			"fly": 80
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 23,
+		"dex": 12,
+		"con": 21,
+		"int": 18,
+		"wis": 15,
+		"cha": 18,
+		"save": {
+			"dex": "+6",
+			"wis": "+7"
+		},
+		"skill": {
+			"deception": "+9",
+			"perception": "+12",
+			"stealth": "+6"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 22,
+		"immune": [
+			"acid"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "14",
+			"xpLair": 13000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"成年赤銅龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 17}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Mind Spike|XPHB} (level 4 version)",
+					"{@spell Minor Illusion|XPHB}",
+					"{@spell Shapechange|XPHB} (Beast or Humanoid form only, no {@variantrule Temporary Hit Points|XPHB} gained from the spell, and no Concentration or {@variantrule Temporary Hit Points|XPHB} required to maintain the spell)"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Greater Restoration|XPHB}",
+						"{@spell Major Image|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"entries": [
+					"若成年赤銅龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"成年赤銅龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用(A) 「緩速吐息」或 (B) 「施法」施展{@spell Mind Spike|XPHB}（4 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 11}，觸及 10 呎。{@h}17（{@damage 2d10 + 6}）揮砍傷害外加 4（{@damage 1d8}）強酸傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "強酸吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 18}，長 60 呎、寬 5 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}54（{@damage 12d8}）強酸傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Acid Breath {@recharge 5}"
+			},
+			{
+				"name": "緩速吐息",
+				"entries": [
+					"{@actSave con} {@dc 18}，60 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}目標無法執行反應；其{@variantrule Speed|XPHB}減半；且它在其回合中只能執行一個動作或一個{@variantrule Bonus Action|XPHB}，不能兩者皆做。此效果持續到其下個回合結束。"
+				],
+				"ENG_name": "Slowing Breath"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "咯咯笑魔法",
+				"entries": [
+					"{@actSave cha} {@dc 17}，成年赤銅龍 90 呎內一個它能看見的生物。{@actSaveFail}24（{@damage 7d6}）心靈傷害。直到其下個回合結束前，目標每次進行屬性檢定或攻擊檢定時，都要擲 {@dice 1d6} 並從該{@variantrule D20 Test|XPHB}中減去擲出的數字。{@actSaveSuccessOrFail}成年赤銅龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Giggling Magic"
+			},
+			{
+				"name": "心靈震擊",
+				"entries": [
+					"成年赤銅龍使用「施法」施展{@spell Mind Spike|XPHB}（4 環版本）。成年赤銅龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Mind Jolt"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"成年赤銅龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "赤銅龍",
+			"source": "XMM",
+			"ENG_name": "Copper Dragon"
+		},
+		"environment": [
+			"hill"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "adult",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/copper-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"A",
+			"S",
+			"Y"
+		],
+		"damageTagsSpell": [
+			"Y"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"savingThrowForced": [
+			"charisma",
+			"constitution",
+			"dexterity"
+		],
+		"savingThrowForcedLegendary": [
+			"wisdom"
+		],
+		"savingThrowForcedSpell": [
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Adult Copper Dragon"
+	},
+	"Adult Gold Dragon|XMM": {
+		"name": "成年金龍",
+		"group": [
+			"Metallic Dragons"
+		],
+		"source": "XMM",
+		"page": 145,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRAiF"
+		],
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"metallic"
+			]
+		},
+		"alignment": [
+			"L",
+			"G"
+		],
+		"ac": [
+			19
+		],
+		"hp": {
+			"average": 243,
+			"formula": "18d12 + 126"
+		},
+		"speed": {
+			"walk": 40,
+			"fly": 80,
+			"swim": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 27,
+		"dex": 14,
+		"con": 25,
+		"int": 16,
+		"wis": 15,
+		"cha": 24,
+		"save": {
+			"dex": "+8",
+			"wis": "+8"
+		},
+		"skill": {
+			"insight": "+8",
+			"perception": "+14",
+			"persuasion": "+13",
+			"stealth": "+8"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 24,
+		"immune": [
+			"fire"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "17",
+			"xpLair": 20000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"成年金龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 21}，法術攻擊 {@hit 13}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Guiding Bolt|XPHB} (level 2 version)",
+					"{@spell Shapechange|XPHB} (Beast or Humanoid form only, no {@variantrule Temporary Hit Points|XPHB} gained from the spell, and no Concentration or {@variantrule Temporary Hit Points|XPHB} required to maintain the spell)"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Flame Strike|XPHB}",
+						"{@spell Zone of Truth|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "兩棲",
+				"entries": [
+					"成年金龍可以呼吸空氣與水。"
+				],
+				"ENG_name": "Amphibious"
+			},
+			{
+				"name": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"entries": [
+					"若成年金龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"成年金龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用(A) 「施法」施展{@spell Guiding Bolt|XPHB}（2 環版本）或 (B) 「虛弱吐息」。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 14}，觸及 10 呎。{@h}17（{@damage 2d8 + 8}）揮砍傷害外加 4（{@damage 1d8}）火焰傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "火焰吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 21}，60 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}66（{@damage 12d10}）火焰傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Fire Breath {@recharge 5}"
+			},
+			{
+				"name": "虛弱吐息",
+				"entries": [
+					"{@actSave str} {@dc 21}，60 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內每個目前未受此吐息影響的生物。{@actSaveFail}目標以力量為基礎的{@variantrule D20 Test|XPHB|D20 檢定}具有{@variantrule Disadvantage|XPHB}，且其傷害擲骰減去 3（{@dice 1d6}）。它在其每個回合結束時重複此豁免，成功時結束自身的效果。1 分鐘後，它自動成功。"
+				],
+				"ENG_name": "Weakening Breath"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "放逐",
+				"entries": [
+					"{@actSave cha} {@dc 21}，成年金龍 120 呎內一個它能看見的生物。{@actSaveFail}10（{@damage 3d6}）力場傷害，且目標處於{@condition Incapacitated|XPHB}狀態並被傳送到一個無害的半位面，直到成年金龍的下個回合開始，屆時它會重新出現在成年金龍 120 呎內一處由成年金龍選擇的未被佔據空間。{@actSaveSuccessOrFail}成年金龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Banish"
+			},
+			{
+				"name": "指引之光",
+				"entries": [
+					"成年金龍使用「施法」施展{@spell Guiding Bolt|XPHB}（2 環版本）。"
+				],
+				"ENG_name": "Guiding Light"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"成年金龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "金龍",
+			"source": "XMM",
+			"ENG_name": "Gold Dragon"
+		},
+		"environment": [
+			"forest",
+			"grassland"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "adult",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/gold-dragon.mp3"
+		},
+		"traitTags": [
+			"Amphibious",
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"F",
+			"O",
+			"S"
+		],
+		"damageTagsSpell": [
+			"F",
+			"R"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"incapacitated"
+		],
+		"savingThrowForced": [
+			"charisma",
+			"dexterity",
+			"strength"
+		],
+		"savingThrowForcedLegendary": [
+			"wisdom"
+		],
+		"savingThrowForcedSpell": [
+			"charisma",
+			"dexterity"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Adult Gold Dragon"
+	},
+	"Adult Green Dragon|XMM": {
+		"name": "成年綠龍",
+		"group": [
+			"Chromatic Dragons"
+		],
+		"source": "XMM",
+		"page": 153,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRAiF"
+		],
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"chromatic"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			19
+		],
+		"hp": {
+			"average": 207,
+			"formula": "18d12 + 90"
+		},
+		"speed": {
+			"walk": 40,
+			"fly": 80,
+			"swim": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 23,
+		"dex": 12,
+		"con": 21,
+		"int": 18,
+		"wis": 15,
+		"cha": 18,
+		"save": {
+			"dex": "+6",
+			"wis": "+7"
+		},
+		"skill": {
+			"deception": "+9",
+			"perception": "+12",
+			"persuasion": "+9",
+			"stealth": "+6"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 22,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "15",
+			"xpLair": 15000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"成年綠龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 17}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Mind Spike|XPHB} (level 3 version)"
+				],
+				"daily": {
+					"1": [
+						"{@spell Geas|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "兩棲",
+				"entries": [
+					"成年綠龍可以呼吸空氣與水。"
+				],
+				"ENG_name": "Amphibious"
+			},
+			{
+				"name": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"entries": [
+					"若成年綠龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"成年綠龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用「施法」施展{@spell Mind Spike|XPHB}（3 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 11}，觸及 10 呎。{@h}15（{@damage 2d8 + 6}）揮砍傷害外加 7（{@damage 2d6}）毒素傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "毒素吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave con} {@dc 18}，60 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}56（{@damage 16d6}）毒素傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Poison Breath {@recharge 5}"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "心靈入侵",
+				"entries": [
+					"成年綠龍使用「施法」施展{@spell Mind Spike|XPHB}（3 環版本）。"
+				],
+				"ENG_name": "Mind Invasion"
+			},
+			{
+				"name": "毒瘴",
+				"entries": [
+					"{@actSave con} {@dc 17}，以成年綠龍 90 呎內一個它能看見之點為中心、20 呎半徑{@variantrule Sphere [Area of Effect]|XPHB|球形}範圍內的每個生物。{@actSaveFail}7（{@damage 2d6}）毒素傷害，且目標的 AC 承受 -2 減值直到其下個回合結束。{@actSaveSuccessOrFail}成年綠龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Noxious Miasma"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"成年綠龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "綠龍",
+			"source": "XMM",
+			"ENG_name": "Green Dragon"
+		},
+		"environment": [
+			"forest"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "adult",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/green-dragon.mp3"
+		},
+		"traitTags": [
+			"Amphibious",
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"I",
+			"S"
+		],
+		"damageTagsSpell": [
+			"Y"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"AOE",
+			"MA",
+			"RCH"
+		],
+		"conditionInflictSpell": [
+			"charmed"
+		],
+		"savingThrowForced": [
+			"constitution"
+		],
+		"savingThrowForcedLegendary": [
+			"constitution"
+		],
+		"savingThrowForcedSpell": [
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Adult Green Dragon"
+	},
+	"Adult Red Dragon|XMM": {
+		"name": "成年紅龍",
+		"group": [
+			"Chromatic Dragons"
+		],
+		"source": "XMM",
+		"page": 255,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRAiF"
+		],
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"chromatic"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			19
+		],
+		"hp": {
+			"average": 256,
+			"formula": "19d12 + 133"
+		},
+		"speed": {
+			"walk": 40,
+			"climb": 40,
+			"fly": 80
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 27,
+		"dex": 10,
+		"con": 25,
+		"int": 16,
+		"wis": 13,
+		"cha": 23,
+		"save": {
+			"dex": "+6",
+			"wis": "+7"
+		},
+		"skill": {
+			"perception": "+13",
+			"stealth": "+6"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 23,
+		"immune": [
+			"fire"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "17",
+			"xpLair": 20000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"成年紅龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 20}，法術攻擊 {@hit 12}）："
+				],
+				"will": [
+					"{@spell Command|XPHB} (level 2 version)",
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Scorching Ray|XPHB}"
+				],
+				"daily": {
+					"1": [
+						"{@spell Fireball|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"entries": [
+					"若成年紅龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"成年紅龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用「施法」施展{@spell Scorching Ray|XPHB}。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 14}，觸及 10 呎。{@h}13（{@damage 1d10 + 8}）揮砍傷害外加 5（{@damage 2d4}）火焰傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "火焰吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 21}，60 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}59（{@damage 17d6}）火焰傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Fire Breath {@recharge 5}"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "威令氣場",
+				"entries": [
+					"成年紅龍使用「施法」施展{@spell Command|XPHB}（2 環版本）。成年紅龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Commanding Presence"
+			},
+			{
+				"name": "熾焰射線",
+				"entries": [
+					"成年紅龍使用「施法」施展{@spell Scorching Ray|XPHB}。成年紅龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Fiery Rays"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"成年紅龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "紅龍",
+			"source": "XMM",
+			"ENG_name": "Red Dragon"
+		},
+		"environment": [
+			"hill",
+			"mountain"
+		],
+		"treasure": [
+			"any"
+		],
+		"dragonAge": "adult",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/red-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"F",
+			"S"
+		],
+		"damageTagsSpell": [
+			"F"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflictSpell": [
+			"prone"
+		],
+		"savingThrowForced": [
+			"dexterity"
+		],
+		"savingThrowForcedLegendary": [
+			"constitution"
+		],
+		"savingThrowForcedSpell": [
+			"dexterity",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Adult Red Dragon"
+	},
+	"Adult Silver Dragon|XMM": {
+		"name": "成年銀龍",
+		"group": [
+			"Metallic Dragons"
+		],
+		"source": "XMM",
+		"page": 279,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"metallic"
+			]
+		},
+		"alignment": [
+			"L",
+			"G"
+		],
+		"ac": [
+			19
+		],
+		"hp": {
+			"average": 216,
+			"formula": "16d12 + 112"
+		},
+		"speed": {
+			"walk": 40,
+			"fly": 80
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 27,
+		"dex": 10,
+		"con": 25,
+		"int": 16,
+		"wis": 13,
+		"cha": 22,
+		"save": {
+			"dex": "+5",
+			"wis": "+6"
+		},
+		"skill": {
+			"history": "+8",
+			"perception": "+11",
+			"stealth": "+5"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 21,
+		"immune": [
+			"cold"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "16",
+			"xpLair": 18000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"成年銀龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 19}，法術攻擊 {@hit 11}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Hold Monster|XPHB}",
+					"{@spell Ice Knife|XPHB}",
+					"{@spell Shapechange|XPHB} (Beast or Humanoid form only, no {@variantrule Temporary Hit Points|XPHB} gained from the spell, and no Concentration or {@variantrule Temporary Hit Points|XPHB} required to maintain the spell)"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Ice Storm|XPHB} (level 5 version)",
+						"{@spell Zone of Truth|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"entries": [
+					"若成年銀龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"成年銀龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用(A) 「麻痺吐息」或 (B) 「施法」施展{@spell Ice Knife|XPHB}。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 13}，觸及 10 呎。{@h}17（{@damage 2d8 + 8}）揮砍傷害外加 4（{@damage 1d8}）寒冷傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "寒冷吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave con} {@dc 20}，60 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}54（{@damage 12d8}）寒冷傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Cold Breath {@recharge 5}"
+			},
+			{
+				"name": "麻痺吐息",
+				"entries": [
+					"{@actSave con} {@dc 20}，60 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail 1}目標處於{@condition Incapacitated|XPHB}狀態直到其下個回合結束，屆時它重複此豁免。{@actSaveFail 2}目標處於{@condition Paralyzed|XPHB}狀態，並在其每個回合結束時重複此豁免，成功時結束自身的效果。1 分鐘後，它自動成功。"
+				],
+				"ENG_name": "Paralyzing Breath"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "冰寒",
+				"entries": [
+					"成年銀龍使用「施法」施展{@spell Hold Monster|XPHB}。成年銀龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Chill"
+			},
+			{
+				"name": "寒風",
+				"entries": [
+					"{@actSave dex} {@dc 19}，長 60 呎、寬 10 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}14（{@damage 4d6}）寒冷傷害，且目標被直線推離成年銀龍至多 30 呎。{@actSaveSuccess}僅受一半傷害。{@actSaveSuccessOrFail}成年銀龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Cold Gale"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"成年銀龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "銀龍",
+			"source": "XMM",
+			"ENG_name": "Silver Dragon"
+		},
+		"environment": [
+			"mountain",
+			"urban"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "adult",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/silver-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"C",
+			"S"
+		],
+		"damageTagsSpell": [
+			"B",
+			"C",
+			"P"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"incapacitated",
+			"paralyzed"
+		],
+		"conditionInflictSpell": [
+			"paralyzed"
+		],
+		"savingThrowForced": [
+			"constitution",
+			"dexterity"
+		],
+		"savingThrowForcedSpell": [
+			"charisma",
+			"dexterity",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Adult Silver Dragon"
+	},
+	"Adult White Dragon|XMM": {
+		"name": "成年白龍",
+		"group": [
+			"Chromatic Dragons"
+		],
+		"source": "XMM",
+		"page": 329,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe",
+			"FRAiF"
+		],
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"chromatic"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			18
+		],
+		"hp": {
+			"average": 200,
+			"formula": "16d12 + 96"
+		},
+		"speed": {
+			"walk": 40,
+			"burrow": 30,
+			"fly": 80,
+			"swim": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 22,
+		"dex": 10,
+		"con": 22,
+		"int": 8,
+		"wis": 12,
+		"cha": 12,
+		"save": {
+			"dex": "+5",
+			"wis": "+6"
+		},
+		"skill": {
+			"perception": "+11",
+			"stealth": "+5"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 21,
+		"immune": [
+			"cold"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "13",
+			"xpLair": 11500
+		},
+		"spellcasting": [
+			{
+				"name": "駭人威儀",
+				"type": "spellcasting",
+				"headerEntries": [
+					"成年白龍施展{@spell Fear|XPHB}，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 14}）。成年白龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"legendary": {
+					"1": [
+						"{@spell Fear|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "legendary",
+				"hidden": [
+					"legendary"
+				],
+				"ENG_name": "Frightful Presence"
+			}
+		],
+		"trait": [
+			{
+				"name": "冰上行走",
+				"entries": [
+					"成年白龍可以在冰面上移動與攀爬，無需進行屬性檢定。此外，由冰或雪構成的{@variantrule Difficult Terrain|XPHB}不會使它消耗額外移動。"
+				],
+				"ENG_name": "Ice Walk"
+			},
+			{
+				"name": "傳奇抗性（每日 3 次，在巢穴中為每日 4 次）",
+				"entries": [
+					"若成年白龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"成年白龍進行三次撕裂攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 11}，觸及 10 呎。{@h}13（{@damage 2d6 + 6}）揮砍傷害外加 4（{@damage 1d8}）寒冷傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "寒冷吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave con} {@dc 19}，60 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}54（{@damage 12d8}）寒冷傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Cold Breath {@recharge 5}"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "冰凍爆發",
+				"entries": [
+					"{@actSave con} {@dc 14}，以成年白龍 120 呎內一個它能看見之點為中心、30 呎半徑{@variantrule Sphere [Area of Effect]|XPHB|球形}範圍內的每個生物。{@actSaveFail}7（{@damage 2d6}）寒冷傷害，且目標的{@variantrule Speed|XPHB}降為 0 直到目標的下個回合結束。{@actSaveSuccessOrFail}成年白龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Freezing Burst"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"成年白龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "白龍",
+			"source": "XMM",
+			"ENG_name": "White Dragon"
+		},
+		"environment": [
+			"arctic"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "adult",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/white-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"C",
+			"S"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"AOE",
+			"MA",
+			"RCH"
+		],
+		"conditionInflictSpell": [
+			"frightened"
+		],
+		"savingThrowForced": [
+			"constitution"
+		],
+		"savingThrowForcedLegendary": [
+			"constitution"
+		],
+		"savingThrowForcedSpell": [
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Adult White Dragon"
+	},
+	"Air Elemental|XMM": {
+		"name": "氣元素",
+		"source": "XMM",
+		"page": 13,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRHoF",
+			"FRAiF",
+			"EFA",
+			"FFotR"
+		],
+		"size": [
+			"L"
+		],
+		"type": "elemental",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			15
+		],
+		"hp": {
+			"average": 90,
+			"formula": "12d10 + 24"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": {
+				"number": 90,
+				"condition": "（懸浮）"
+			},
+			"canHover": true
+		},
+		"str": 14,
+		"dex": 20,
+		"con": 14,
+		"int": 6,
+		"wis": 10,
+		"cha": 6,
+		"senses": [
+			"Darkvision 60 ft."
+		],
+		"passive": 10,
+		"resist": [
+			"bludgeoning",
+			"lightning",
+			"piercing",
+			"slashing"
+		],
+		"immune": [
+			"poison",
+			"thunder"
+		],
+		"conditionImmune": [
+			"exhaustion",
+			"grappled",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"prone",
+			"restrained",
+			"unconscious"
+		],
+		"languages": [
+			"Primordial (Auran)"
+		],
+		"cr": "5",
+		"trait": [
+			{
+				"name": "氣體形態",
+				"entries": [
+					"氣元素可以進入生物的空間並停留在那裡。它可以穿過窄至 1 吋的空間，且無需為此消耗額外移動。"
+				],
+				"ENG_name": "Air Form"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"氣元素進行兩次雷霆猛擊攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "雷霆猛擊",
+				"entries": [
+					"{@atkr m} {@hit 8}，觸及 10 呎。{@h}14（{@damage 2d8 + 5}）雷鳴傷害。"
+				],
+				"ENG_name": "Thunderous Slam"
+			},
+			{
+				"name": "旋風 {@recharge 4}",
+				"entries": [
+					"{@actSave str} {@dc 13}，氣元素空間中一個中型或更小的生物。{@actSaveFail}24（{@damage 4d10 + 2}）雷鳴傷害，且目標被直線推離氣元素至多 20 呎並處於{@condition Prone|XPHB}狀態。{@actSaveSuccess}僅受一半傷害。"
+				],
+				"ENG_name": "Whirlwind {@recharge 4}"
+			}
+		],
+		"environment": [
+			"desert",
+			"mountain",
+			"planar, air"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/air-elemental.mp3"
+		},
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"AU",
+			"P"
+		],
+		"damageTags": [
+			"T"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"savingThrowForced": [
+			"strength"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Air Elemental"
+	},
+	"Allosaurus|XMM": {
+		"name": "異特龍",
+		"group": [
+			"Dinosaurs"
+		],
+		"source": "XMM",
+		"page": 348,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRAiF"
+		],
+		"size": [
+			"L"
+		],
+		"type": {
+			"type": "beast",
+			"tags": [
+				"dinosaur"
+			]
+		},
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 51,
+			"formula": "6d10 + 18"
+		},
+		"speed": {
+			"walk": 60
+		},
+		"str": 19,
+		"dex": 13,
+		"con": 17,
+		"int": 2,
+		"wis": 12,
+		"cha": 5,
+		"skill": {
+			"perception": "+5"
+		},
+		"passive": 15,
+		"cr": "2",
+		"action": [
+			{
+				"name": "啃咬",
+				"entries": [
+					"{@atkr m} {@hit 6}，觸及 5 呎。{@h}15（{@damage 2d10 + 4}）穿刺傷害。"
+				],
+				"ENG_name": "Bite"
+			},
+			{
+				"name": "爪擊",
+				"entries": [
+					"{@atkr m} {@hit 6}，觸及 5 呎。{@h}8（{@damage 1d8 + 4}）揮砍傷害。若目標是大型或更小的生物，且異特龍在命中前立即朝它直線移動了 30 呎以上，目標處於{@condition Prone|XPHB}狀態，且異特龍可以對它進行一次啃咬攻擊。"
+				],
+				"ENG_name": "Claws"
+			}
+		],
+		"environment": [
+			"grassland"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/allosaurus.mp3"
+		},
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Allosaurus"
+	},
+	"Ancient Black Dragon|XMM": {
+		"name": "遠古黑龍",
+		"group": [
+			"Chromatic Dragons"
+		],
+		"source": "XMM",
+		"page": 40,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"LFL"
+		],
+		"size": [
+			"G"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"chromatic"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			22
+		],
+		"hp": {
+			"average": 367,
+			"formula": "21d20 + 147"
+		},
+		"speed": {
+			"walk": 40,
+			"fly": 80,
+			"swim": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 27,
+		"dex": 14,
+		"con": 25,
+		"int": 16,
+		"wis": 15,
+		"cha": 22,
+		"save": {
+			"dex": "+9",
+			"wis": "+9"
+		},
+		"skill": {
+			"perception": "+16",
+			"stealth": "+9"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 26,
+		"immune": [
+			"acid"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "21",
+			"xpLair": 41000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"遠古黑龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 21}，法術攻擊 {@hit 13}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Fear|XPHB}",
+					"{@spell Melf's Acid Arrow|XPHB} (level 4 version)"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Create Undead|XPHB}",
+						"{@spell Speak with Dead|XPHB}",
+						"{@spell Vitriolic Sphere|XPHB} (level 5 version)"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "兩棲",
+				"entries": [
+					"遠古黑龍可以呼吸空氣與水。"
+				],
+				"ENG_name": "Amphibious"
+			},
+			{
+				"name": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"entries": [
+					"若遠古黑龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"遠古黑龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用「施法」施展{@spell Melf's Acid Arrow|XPHB}（4 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 15}，觸及 15 呎。{@h}17（{@damage 2d8 + 8}）揮砍傷害外加 9（{@damage 2d8}）強酸傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "強酸吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 22}，長 90 呎、寬 10 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}67（{@damage 15d8}）強酸傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Acid Breath {@recharge 5}"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "蟲雲",
+				"entries": [
+					"{@actSave dex} {@dc 21}，遠古黑龍 120 呎內一個它能看見的生物。{@actSaveFail}33（{@damage 6d10}）毒素傷害，且目標為維持{@status Concentration|XPHB}所進行的豁免檢定具有{@variantrule Disadvantage|XPHB}，直到其下個回合結束。{@actSaveSuccessOrFail}遠古黑龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Cloud of Insects"
+			},
+			{
+				"name": "駭人威儀",
+				"entries": [
+					"遠古黑龍使用「施法」施展{@spell Fear|XPHB}。遠古黑龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Frightful Presence"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"遠古黑龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "黑龍",
+			"source": "XMM",
+			"ENG_name": "Black Dragon"
+		},
+		"environment": [
+			"swamp"
+		],
+		"treasure": [
+			"relics"
+		],
+		"dragonAge": "ancient",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/black-dragon.mp3"
+		},
+		"traitTags": [
+			"Amphibious",
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"A",
+			"I",
+			"S"
+		],
+		"damageTagsSpell": [
+			"A"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflictSpell": [
+			"frightened"
+		],
+		"savingThrowForced": [
+			"dexterity"
+		],
+		"savingThrowForcedLegendary": [
+			"constitution"
+		],
+		"savingThrowForcedSpell": [
+			"dexterity",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ancient Black Dragon"
+	},
+	"Ancient Blue Dragon|XMM": {
+		"name": "遠古藍龍",
+		"group": [
+			"Chromatic Dragons"
+		],
+		"source": "XMM",
+		"page": 50,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe",
+			"FRAiF"
+		],
+		"size": [
+			"G"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"chromatic"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			22
+		],
+		"hp": {
+			"average": 481,
+			"formula": "26d20 + 208"
+		},
+		"speed": {
+			"walk": 40,
+			"burrow": 40,
+			"fly": 80
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 29,
+		"dex": 10,
+		"con": 27,
+		"int": 18,
+		"wis": 17,
+		"cha": 25,
+		"save": {
+			"dex": "+7",
+			"wis": "+10"
+		},
+		"skill": {
+			"perception": "+17",
+			"stealth": "+7"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 27,
+		"immune": [
+			"lightning"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "23",
+			"xpLair": 62000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"遠古藍龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 22}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Invisibility|XPHB}",
+					"{@spell Mage Hand|XPHB}",
+					"{@spell Shatter|XPHB} (level 3 version)"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Scrying|XPHB}",
+						"{@spell Sending|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"entries": [
+					"若遠古藍龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"遠古藍龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用「施法」施展{@spell Shatter|XPHB}（3 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 16}，觸及 15 呎。{@h}18（{@damage 2d8 + 9}）揮砍傷害外加 11（{@damage 2d10}）閃電傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "閃電吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 23}，長 120 呎、寬 10 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}88（{@damage 16d10}）閃電傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Lightning Breath {@recharge 5}"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "隱蔽飛行",
+				"entries": [
+					"遠古藍龍使用「施法」對自己施展{@spell Invisibility|XPHB}，並可以飛行至多其{@variantrule Fly Speed|XPHB}的一半。遠古藍龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Cloaked Flight"
+			},
+			{
+				"name": "音爆",
+				"entries": [
+					"遠古藍龍使用「施法」施展{@spell Shatter|XPHB}（3 環版本）。遠古藍龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Sonic Boom"
+			},
+			{
+				"name": "尾掃",
+				"entries": [
+					"遠古藍龍進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Tail Swipe"
+			}
+		],
+		"legendaryGroup": {
+			"name": "藍龍",
+			"source": "XMM",
+			"ENG_name": "Blue Dragon"
+		},
+		"environment": [
+			"coastal",
+			"desert"
+		],
+		"treasure": [
+			"relics"
+		],
+		"dragonAge": "ancient",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/blue-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"L",
+			"S"
+		],
+		"damageTagsSpell": [
+			"T"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflictSpell": [
+			"invisible"
+		],
+		"savingThrowForced": [
+			"dexterity"
+		],
+		"savingThrowForcedLegendary": [
+			"dexterity"
+		],
+		"savingThrowForcedSpell": [
+			"constitution",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ancient Blue Dragon"
+	},
+	"Ancient Brass Dragon|XMM": {
+		"name": "遠古黃銅龍",
+		"group": [
+			"Metallic Dragons"
+		],
+		"source": "XMM",
+		"page": 56,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"G"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"metallic"
+			]
+		},
+		"alignment": [
+			"C",
+			"G"
+		],
+		"ac": [
+			20
+		],
+		"hp": {
+			"average": 332,
+			"formula": "19d20 + 133"
+		},
+		"speed": {
+			"walk": 40,
+			"burrow": 40,
+			"fly": 80
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 27,
+		"dex": 10,
+		"con": 25,
+		"int": 16,
+		"wis": 15,
+		"cha": 22,
+		"save": {
+			"dex": "+6",
+			"wis": "+8"
+		},
+		"skill": {
+			"history": "+9",
+			"perception": "+14",
+			"persuasion": "+12",
+			"stealth": "+6"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 24,
+		"immune": [
+			"fire"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "20",
+			"xpLair": 33000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"遠古黃銅龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 20}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Minor Illusion|XPHB}",
+					"{@spell Scorching Ray|XPHB} (level 3 version)",
+					"{@spell Shapechange|XPHB} (Beast or Humanoid form only, no {@variantrule Temporary Hit Points|XPHB} gained from the spell, and no Concentration or {@variantrule Temporary Hit Points|XPHB} required to maintain the spell)",
+					"{@spell Speak with Animals|XPHB}"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Control Weather|XPHB}",
+						"{@spell Detect Thoughts|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"entries": [
+					"若遠古黃銅龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"遠古黃銅龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用(A) 「睡眠吐息」或 (B) 「施法」施展{@spell Scorching Ray|XPHB}（3 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 14}，觸及 15 呎。{@h}19（{@damage 2d10 + 8}）揮砍傷害外加 7（{@damage 2d6}）火焰傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "火焰吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 21}，長 90 呎、寬 5 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}58（{@damage 13d8}）火焰傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Fire Breath {@recharge 5}"
+			},
+			{
+				"name": "睡眠吐息",
+				"entries": [
+					"{@actSave con} {@dc 21}，90 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}目標處於{@condition Incapacitated|XPHB}狀態直到其下個回合結束，屆時它重複此豁免。{@actSaveFail 2}目標處於{@condition Unconscious|XPHB}狀態 10 分鐘。若目標受到傷害，或其 5 呎內的生物執行一個動作將其喚醒，此效果便對其結束。"
+				],
+				"ENG_name": "Sleep Breath"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "熾烈光芒",
+				"entries": [
+					"遠古黃銅龍使用「施法」施展{@spell Scorching Ray|XPHB}（3 環版本）。"
+				],
+				"ENG_name": "Blazing Light"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"遠古黃銅龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			},
+			{
+				"name": "灼熱之沙",
+				"entries": [
+					"{@actSave dex} {@dc 20}，遠古黃銅龍 120 呎內一個它能看見的生物。{@actSaveFail}36（{@damage 8d8}）火焰傷害，且目標的{@variantrule Speed|XPHB}減半直到其下個回合結束。{@actSaveSuccessOrFail}遠古黃銅龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Scorching Sands"
+			}
+		],
+		"legendaryGroup": {
+			"name": "黃銅龍",
+			"source": "XMM",
+			"ENG_name": "Brass Dragon"
+		},
+		"environment": [
+			"desert"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "ancient",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/brass-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"F",
+			"S"
+		],
+		"damageTagsSpell": [
+			"F"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"incapacitated",
+			"unconscious"
+		],
+		"savingThrowForced": [
+			"constitution",
+			"dexterity"
+		],
+		"savingThrowForcedSpell": [
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ancient Brass Dragon"
+	},
+	"Ancient Bronze Dragon|XMM": {
+		"name": "遠古青銅龍",
+		"group": [
+			"Metallic Dragons"
+		],
+		"source": "XMM",
+		"page": 60,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"G"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"metallic"
+			]
+		},
+		"alignment": [
+			"L",
+			"G"
+		],
+		"ac": [
+			22
+		],
+		"hp": {
+			"average": 444,
+			"formula": "24d20 + 192"
+		},
+		"speed": {
+			"walk": 40,
+			"fly": 80,
+			"swim": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 29,
+		"dex": 10,
+		"con": 27,
+		"int": 18,
+		"wis": 17,
+		"cha": 25,
+		"save": {
+			"dex": "+7",
+			"wis": "+10"
+		},
+		"skill": {
+			"insight": "+10",
+			"perception": "+17",
+			"stealth": "+7"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 27,
+		"immune": [
+			"lightning"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "22",
+			"xpLair": 50000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"遠古青銅龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 22}，法術攻擊 {@hit 14}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Guiding Bolt|XPHB} (level 2 version)",
+					"{@spell Shapechange|XPHB} (Beast or Humanoid form only, no {@variantrule Temporary Hit Points|XPHB} gained from the spell, and no Concentration or {@variantrule Temporary Hit Points|XPHB} required to maintain the spell)",
+					"{@spell Speak with Animals|XPHB}",
+					"{@spell Thaumaturgy|XPHB}"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Detect Thoughts|XPHB}",
+						"{@spell Control Water|XPHB}",
+						"{@spell Scrying|XPHB}",
+						"{@spell Water Breathing|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "兩棲",
+				"entries": [
+					"遠古青銅龍可以呼吸空氣與水。"
+				],
+				"ENG_name": "Amphibious"
+			},
+			{
+				"name": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"entries": [
+					"若遠古青銅龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"遠古青銅龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用(A) 「排斥吐息」或 (B) 「施法」施展{@spell Guiding Bolt|XPHB}（2 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 16}，觸及 15 呎。{@h}18（{@damage 2d8 + 9}）揮砍傷害外加 9（{@damage 2d8}）閃電傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "閃電吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 23}，長 120 呎、寬 10 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}82（{@damage 15d10}）閃電傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Lightning Breath {@recharge 5}"
+			},
+			{
+				"name": "排斥吐息",
+				"entries": [
+					"{@actSave str} {@dc 23}，30 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}目標被直線推離遠古青銅龍至多 60 呎，並處於{@condition Prone|XPHB}狀態。"
+				],
+				"ENG_name": "Repulsion Breath"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "指引之光",
+				"entries": [
+					"遠古青銅龍使用「施法」施展{@spell Guiding Bolt|XPHB}（2 環版本）。"
+				],
+				"ENG_name": "Guiding Light"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"遠古青銅龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			},
+			{
+				"name": "雷鳴破",
+				"entries": [
+					"{@actSave con} {@dc 22}，以遠古青銅龍 120 呎內一個它能看見之點為中心、20 呎半徑{@variantrule Sphere [Area of Effect]|XPHB|球形}範圍內的每個生物。{@actSaveFail}13（{@damage 3d8}）雷鳴傷害，且目標處於{@condition Deafened|XPHB}狀態直到其下個回合結束。"
+				],
+				"ENG_name": "Thunderclap"
+			}
+		],
+		"legendaryGroup": {
+			"name": "青銅龍",
+			"source": "XMM",
+			"ENG_name": "Bronze Dragon"
+		},
+		"environment": [
+			"coastal"
+		],
+		"treasure": [
+			"implements"
+		],
+		"dragonAge": "ancient",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/bronze-dragon.mp3"
+		},
+		"traitTags": [
+			"Amphibious",
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"L",
+			"S",
+			"T"
+		],
+		"damageTagsSpell": [
+			"B",
+			"R"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"AOE",
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"deafened",
+			"prone"
+		],
+		"savingThrowForced": [
+			"constitution",
+			"dexterity",
+			"strength"
+		],
+		"savingThrowForcedSpell": [
+			"strength",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ancient Bronze Dragon"
+	},
+	"Ancient Copper Dragon|XMM": {
+		"name": "遠古赤銅龍",
+		"group": [
+			"Metallic Dragons"
+		],
+		"source": "XMM",
+		"page": 80,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRAiF"
+		],
+		"size": [
+			"G"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"metallic"
+			]
+		},
+		"alignment": [
+			"C",
+			"G"
+		],
+		"ac": [
+			21
+		],
+		"hp": {
+			"average": 367,
+			"formula": "21d20 + 147"
+		},
+		"speed": {
+			"walk": 40,
+			"climb": 40,
+			"fly": 80
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 27,
+		"dex": 12,
+		"con": 25,
+		"int": 20,
+		"wis": 17,
+		"cha": 22,
+		"save": {
+			"dex": "+8",
+			"wis": "+10"
+		},
+		"skill": {
+			"deception": "+13",
+			"perception": "+17",
+			"stealth": "+8"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 27,
+		"immune": [
+			"acid"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "21",
+			"xpLair": 41000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"遠古赤銅龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 21}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Mind Spike|XPHB} (level 5 version)",
+					"{@spell Minor Illusion|XPHB}",
+					"{@spell Shapechange|XPHB} (Beast or Humanoid form only, no {@variantrule Temporary Hit Points|XPHB} gained from the spell, and no Concentration or {@variantrule Temporary Hit Points|XPHB} required to maintain the spell)"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Greater Restoration|XPHB}",
+						"{@spell Major Image|XPHB}",
+						"{@spell Project Image|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"entries": [
+					"若遠古赤銅龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"遠古赤銅龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用(A) 「緩速吐息」或 (B) 「施法」施展{@spell Mind Spike|XPHB}（5 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 15}，觸及 15 呎。{@h}19（{@damage 2d10 + 8}）揮砍傷害外加 9（{@damage 2d8}）強酸傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "強酸吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 22}，長 90 呎、寬 10 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}63（{@damage 14d8}）強酸傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Acid Breath {@recharge 5}"
+			},
+			{
+				"name": "緩速吐息",
+				"entries": [
+					"{@actSave con} {@dc 22}，90 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}目標無法執行反應；其{@variantrule Speed|XPHB}減半；且它在其回合中只能執行一個動作或一個{@variantrule Bonus Action|XPHB}，不能兩者皆做。此效果持續到其下個回合結束。"
+				],
+				"ENG_name": "Slowing Breath"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "咯咯笑魔法",
+				"entries": [
+					"{@actSave cha} {@dc 21}，遠古赤銅龍 120 呎內一個它能看見的生物。{@actSaveFail}31（{@damage 9d6}）心靈傷害。直到其下個回合結束前，目標每次進行屬性檢定或攻擊檢定時，都要擲 {@dice 1d8} 並從該{@variantrule D20 Test|XPHB}中減去擲出的數字。{@actSaveSuccessOrFail}遠古赤銅龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Giggling Magic"
+			},
+			{
+				"name": "心靈震擊",
+				"entries": [
+					"遠古赤銅龍使用「施法」施展{@spell Mind Spike|XPHB}（5 環版本）。遠古赤銅龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Mind Jolt"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"遠古赤銅龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "赤銅龍",
+			"source": "XMM",
+			"ENG_name": "Copper Dragon"
+		},
+		"environment": [
+			"hill"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "ancient",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/copper-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"A",
+			"S",
+			"Y"
+		],
+		"damageTagsSpell": [
+			"Y"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"savingThrowForced": [
+			"charisma",
+			"constitution",
+			"dexterity"
+		],
+		"savingThrowForcedLegendary": [
+			"wisdom"
+		],
+		"savingThrowForcedSpell": [
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ancient Copper Dragon"
+	},
+	"Ancient Gold Dragon|XMM": {
+		"name": "遠古金龍",
+		"group": [
+			"Metallic Dragons"
+		],
+		"source": "XMM",
+		"page": 146,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRAiF",
+			"LFL"
+		],
+		"size": [
+			"G"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"metallic"
+			]
+		},
+		"alignment": [
+			"L",
+			"G"
+		],
+		"ac": [
+			22
+		],
+		"hp": {
+			"average": 546,
+			"formula": "28d20 + 252"
+		},
+		"speed": {
+			"walk": 40,
+			"fly": 80,
+			"swim": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 30,
+		"dex": 14,
+		"con": 29,
+		"int": 18,
+		"wis": 17,
+		"cha": 28,
+		"save": {
+			"dex": "+9",
+			"wis": "+10"
+		},
+		"skill": {
+			"insight": "+10",
+			"perception": "+17",
+			"persuasion": "+16",
+			"stealth": "+9"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 27,
+		"immune": [
+			"fire"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "24",
+			"xpLair": 75000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"遠古金龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 24}，法術攻擊 {@hit 16}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Guiding Bolt|XPHB} (level 4 version)",
+					"{@spell Shapechange|XPHB} (Beast or Humanoid form only, no {@variantrule Temporary Hit Points|XPHB} gained from the spell, and no Concentration or {@variantrule Temporary Hit Points|XPHB} required to maintain the spell)"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Flame Strike|XPHB} (level 6 version)",
+						"{@spell Word of Recall|XPHB}",
+						"{@spell Zone of Truth|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "兩棲",
+				"entries": [
+					"遠古金龍可以呼吸空氣與水。"
+				],
+				"ENG_name": "Amphibious"
+			},
+			{
+				"name": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"entries": [
+					"若遠古金龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"遠古金龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用(A) 「施法」施展{@spell Guiding Bolt|XPHB}（4 環版本）或 (B) 「虛弱吐息」。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 17}，觸及 15 呎。{@h}19（{@damage 2d8 + 10}）揮砍傷害外加 9（{@damage 2d8}）火焰傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "火焰吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 24}，90 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}71（{@damage 13d10}）火焰傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Fire Breath {@recharge 5}"
+			},
+			{
+				"name": "虛弱吐息",
+				"entries": [
+					"{@actSave str} {@dc 24}，90 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內每個目前未受此吐息影響的生物。{@actSaveFail}目標以力量為基礎的{@variantrule D20 Test|XPHB|D20 檢定}具有{@variantrule Disadvantage|XPHB}，且其傷害擲骰減去 5（{@dice 1d10}）。它在其每個回合結束時重複此豁免，成功時結束自身的效果。1 分鐘後，它自動成功。"
+				],
+				"ENG_name": "Weakening Breath"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "放逐",
+				"entries": [
+					"{@actSave cha} {@dc 24}，遠古金龍 120 呎內一個它能看見的生物。{@actSaveFail}24（{@damage 7d6}）力場傷害，且目標處於{@condition Incapacitated|XPHB}狀態並被傳送到一個無害的半位面，直到遠古金龍的下個回合開始，屆時它會重新出現在遠古金龍 120 呎內一處由遠古金龍選擇的未被佔據空間。{@actSaveSuccessOrFail}遠古金龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Banish"
+			},
+			{
+				"name": "指引之光",
+				"entries": [
+					"遠古金龍使用「施法」施展{@spell Guiding Bolt|XPHB}（4 環版本）。"
+				],
+				"ENG_name": "Guiding Light"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"遠古金龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "金龍",
+			"source": "XMM",
+			"ENG_name": "Gold Dragon"
+		},
+		"environment": [
+			"forest",
+			"grassland"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "ancient",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/gold-dragon.mp3"
+		},
+		"traitTags": [
+			"Amphibious",
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"F",
+			"O",
+			"S"
+		],
+		"damageTagsSpell": [
+			"F",
+			"R"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"incapacitated"
+		],
+		"savingThrowForced": [
+			"charisma",
+			"dexterity",
+			"strength"
+		],
+		"savingThrowForcedLegendary": [
+			"wisdom"
+		],
+		"savingThrowForcedSpell": [
+			"charisma",
+			"dexterity"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ancient Gold Dragon"
+	},
+	"Ancient Green Dragon|XMM": {
+		"name": "遠古綠龍",
+		"group": [
+			"Chromatic Dragons"
+		],
+		"source": "XMM",
+		"page": 154,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"G"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"chromatic"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			21
+		],
+		"hp": {
+			"average": 402,
+			"formula": "23d20 + 161"
+		},
+		"speed": {
+			"walk": 40,
+			"fly": 80,
+			"swim": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 27,
+		"dex": 12,
+		"con": 25,
+		"int": 20,
+		"wis": 17,
+		"cha": 22,
+		"save": {
+			"dex": "+8",
+			"wis": "+10"
+		},
+		"skill": {
+			"deception": "+13",
+			"perception": "+17",
+			"persuasion": "+13",
+			"stealth": "+8"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 27,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "22",
+			"xpLair": 50000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"遠古綠龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 21}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Mind Spike|XPHB} (level 5 version)"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Geas|XPHB}",
+						"{@spell Modify Memory|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "兩棲",
+				"entries": [
+					"遠古綠龍可以呼吸空氣與水。"
+				],
+				"ENG_name": "Amphibious"
+			},
+			{
+				"name": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"entries": [
+					"若遠古綠龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"遠古綠龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用「施法」施展{@spell Mind Spike|XPHB}（5 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 15}，觸及 15 呎。{@h}17（{@damage 2d8 + 8}）揮砍傷害外加 10（{@damage 3d6}）毒素傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "毒素吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave con} {@dc 22}，90 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}77（{@damage 22d6}）毒素傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Poison Breath {@recharge 5}"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "心靈入侵",
+				"entries": [
+					"遠古綠龍使用「施法」施展{@spell Mind Spike|XPHB}（5 環版本）。"
+				],
+				"ENG_name": "Mind Invasion"
+			},
+			{
+				"name": "毒瘴",
+				"entries": [
+					"{@actSave con} {@dc 21}，以遠古綠龍 90 呎內一個它能看見之點為中心、30 呎半徑{@variantrule Sphere [Area of Effect]|XPHB|球形}範圍內的每個生物。{@actSaveFail}17（{@damage 5d6}）毒素傷害，且目標的 AC 承受 -2 減值直到其下個回合結束。{@actSaveSuccessOrFail}遠古綠龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Noxious Miasma"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"遠古綠龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "綠龍",
+			"source": "XMM",
+			"ENG_name": "Green Dragon"
+		},
+		"environment": [
+			"forest"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "ancient",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/green-dragon.mp3"
+		},
+		"traitTags": [
+			"Amphibious",
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"I",
+			"S"
+		],
+		"damageTagsSpell": [
+			"Y"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"AOE",
+			"MA",
+			"RCH"
+		],
+		"conditionInflictSpell": [
+			"charmed",
+			"incapacitated"
+		],
+		"savingThrowForced": [
+			"constitution"
+		],
+		"savingThrowForcedLegendary": [
+			"constitution"
+		],
+		"savingThrowForcedSpell": [
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ancient Green Dragon"
+	},
+	"Ancient Red Dragon|XMM": {
+		"name": "遠古紅龍",
+		"group": [
+			"Chromatic Dragons"
+		],
+		"source": "XMM",
+		"page": 256,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"LFL"
+		],
+		"size": [
+			"G"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"chromatic"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			22
+		],
+		"hp": {
+			"average": 507,
+			"formula": "26d20 + 234"
+		},
+		"speed": {
+			"walk": 40,
+			"climb": 40,
+			"fly": 80
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 30,
+		"dex": 10,
+		"con": 29,
+		"int": 18,
+		"wis": 15,
+		"cha": 27,
+		"save": {
+			"dex": "+7",
+			"wis": "+9"
+		},
+		"skill": {
+			"perception": "+16",
+			"stealth": "+7"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 26,
+		"immune": [
+			"fire"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "24",
+			"xpLair": 75000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"遠古紅龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 23}，法術攻擊 {@hit 15}）："
+				],
+				"will": [
+					"{@spell Command|XPHB} (level 2 version)",
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Scorching Ray|XPHB} (level 3 version)"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Fireball|XPHB} (level 6 version)",
+						"{@spell Scrying|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"entries": [
+					"若遠古紅龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"遠古紅龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用「施法」施展{@spell Scorching Ray|XPHB}（3 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 17}，觸及 15 呎。{@h}19（{@damage 2d8 + 10}）揮砍傷害外加 10（{@damage 3d6}）火焰傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "火焰吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave dex} {@dc 24}，90 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}91（{@damage 26d6}）火焰傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Fire Breath {@recharge 5}"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "威令氣場",
+				"entries": [
+					"遠古紅龍使用「施法」施展{@spell Command|XPHB}（2 環版本）。遠古紅龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Commanding Presence"
+			},
+			{
+				"name": "熾焰射線",
+				"entries": [
+					"遠古紅龍使用「施法」施展{@spell Scorching Ray|XPHB}（3 環版本）。遠古紅龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Fiery Rays"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"遠古紅龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "紅龍",
+			"source": "XMM",
+			"ENG_name": "Red Dragon"
+		},
+		"environment": [
+			"hill",
+			"mountain"
+		],
+		"treasure": [
+			"any"
+		],
+		"dragonAge": "ancient",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/red-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"F",
+			"S"
+		],
+		"damageTagsSpell": [
+			"F"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflictSpell": [
+			"prone"
+		],
+		"savingThrowForced": [
+			"dexterity"
+		],
+		"savingThrowForcedLegendary": [
+			"constitution"
+		],
+		"savingThrowForcedSpell": [
+			"dexterity",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ancient Red Dragon"
+	},
+	"Ancient Silver Dragon|XMM": {
+		"name": "遠古銀龍",
+		"group": [
+			"Metallic Dragons"
+		],
+		"source": "XMM",
+		"page": 280,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"G"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"metallic"
+			]
+		},
+		"alignment": [
+			"L",
+			"G"
+		],
+		"ac": [
+			22
+		],
+		"hp": {
+			"average": 468,
+			"formula": "24d20 + 216"
+		},
+		"speed": {
+			"walk": 40,
+			"fly": 80
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 30,
+		"dex": 10,
+		"con": 29,
+		"int": 18,
+		"wis": 15,
+		"cha": 26,
+		"save": {
+			"dex": "+7",
+			"wis": "+9"
+		},
+		"skill": {
+			"history": "+11",
+			"perception": "+16",
+			"stealth": "+7"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 26,
+		"immune": [
+			"cold"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "23",
+			"xpLair": 62000
+		},
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"遠古銀龍施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 23}，法術攻擊 {@hit 15}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Hold Monster|XPHB}",
+					"{@spell Ice Knife|XPHB} (level 2 version)",
+					"{@spell Shapechange|XPHB} (Beast or Humanoid form only, no {@variantrule Temporary Hit Points|XPHB} gained from the spell, and no Concentration or {@variantrule Temporary Hit Points|XPHB} required to maintain the spell)"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Control Weather|XPHB}",
+						"{@spell Ice Storm|XPHB} (level 7 version)",
+						"{@spell Teleport|XPHB}",
+						"{@spell Zone of Truth|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"entries": [
+					"若遠古銀龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"遠古銀龍進行三次撕裂攻擊。它可以將其中一次攻擊替換為使用(A) 「麻痺吐息」或 (B) 「施法」施展{@spell Ice Knife|XPHB}（2 環版本）。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 17}，觸及 15 呎。{@h}19（{@damage 2d8 + 10}）揮砍傷害外加 9（{@damage 2d8}）寒冷傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "寒冷吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave con} {@dc 24}，90 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}67（{@damage 15d8}）寒冷傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Cold Breath {@recharge 5}"
+			},
+			{
+				"name": "麻痺吐息",
+				"entries": [
+					"{@actSave con} {@dc 24}，90 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail 1}目標處於{@condition Incapacitated|XPHB}狀態直到其下個回合結束，屆時它重複此豁免。{@actSaveFail 2}目標處於{@condition Paralyzed|XPHB}狀態，並在其每個回合結束時重複此豁免，成功時結束自身的效果。1 分鐘後，它自動成功。"
+				],
+				"ENG_name": "Paralyzing Breath"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "冰寒",
+				"entries": [
+					"遠古銀龍使用「施法」施展{@spell Hold Monster|XPHB}。遠古銀龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Chill"
+			},
+			{
+				"name": "寒風",
+				"entries": [
+					"{@actSave dex} {@dc 23}，長 60 呎、寬 10 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}14（{@damage 4d6}）寒冷傷害，且目標被直線推離遠古銀龍至多 30 呎。{@actSaveSuccess}僅受一半傷害。{@actSaveSuccessOrFail}遠古銀龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Cold Gale"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"遠古銀龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "銀龍",
+			"source": "XMM",
+			"ENG_name": "Silver Dragon"
+		},
+		"environment": [
+			"mountain",
+			"urban"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "ancient",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/silver-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"C",
+			"S"
+		],
+		"damageTagsSpell": [
+			"B",
+			"C",
+			"O",
+			"P"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"incapacitated",
+			"paralyzed"
+		],
+		"conditionInflictSpell": [
+			"paralyzed"
+		],
+		"savingThrowForced": [
+			"constitution",
+			"dexterity"
+		],
+		"savingThrowForcedSpell": [
+			"charisma",
+			"dexterity",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ancient Silver Dragon"
+	},
+	"Ancient White Dragon|XMM": {
+		"name": "遠古白龍",
+		"group": [
+			"Chromatic Dragons"
+		],
+		"source": "XMM",
+		"page": 330,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"G"
+		],
+		"type": {
+			"type": "dragon",
+			"tags": [
+				"chromatic"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			20
+		],
+		"hp": {
+			"average": 333,
+			"formula": "18d20 + 144"
+		},
+		"speed": {
+			"walk": 40,
+			"burrow": 40,
+			"fly": 80,
+			"swim": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 26,
+		"dex": 10,
+		"con": 26,
+		"int": 10,
+		"wis": 13,
+		"cha": 18,
+		"save": {
+			"dex": "+6",
+			"wis": "+7"
+		},
+		"skill": {
+			"perception": "+13",
+			"stealth": "+6"
+		},
+		"senses": [
+			"Blindsight 60 ft.",
+			"Darkvision 120 ft."
+		],
+		"passive": 23,
+		"immune": [
+			"cold"
+		],
+		"languages": [
+			"Common",
+			"Draconic"
+		],
+		"cr": {
+			"cr": "20",
+			"xpLair": 33000
+		},
+		"spellcasting": [
+			{
+				"name": "駭人威儀",
+				"type": "spellcasting",
+				"headerEntries": [
+					"遠古白龍施展{@spell Fear|XPHB}，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 18}）。遠古白龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"legendary": {
+					"1": [
+						"{@spell Fear|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "legendary",
+				"hidden": [
+					"legendary"
+				],
+				"ENG_name": "Frightful Presence"
+			}
+		],
+		"trait": [
+			{
+				"name": "冰上行走",
+				"entries": [
+					"遠古白龍可以在冰面上移動與攀爬，無需進行屬性檢定。此外，由冰或雪構成的{@variantrule Difficult Terrain|XPHB}不會使它消耗額外移動。"
+				],
+				"ENG_name": "Ice Walk"
+			},
+			{
+				"name": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"entries": [
+					"若遠古白龍豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"遠古白龍進行三次撕裂攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 14}，觸及 15 呎。{@h}17（{@damage 2d8 + 8}）揮砍傷害外加 7（{@damage 2d6}）寒冷傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "寒冷吐息 {@recharge 5}",
+				"entries": [
+					"{@actSave con} {@dc 22}，90 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}63（{@damage 14d8}）寒冷傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Cold Breath {@recharge 5}"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "冰凍爆發",
+				"entries": [
+					"{@actSave con} {@dc 20}，以遠古白龍 120 呎內一個它能看見之點為中心、30 呎半徑{@variantrule Sphere [Area of Effect]|XPHB|球形}範圍內的每個生物。{@actSaveFail}14（{@damage 4d6}）寒冷傷害，且目標的{@variantrule Speed|XPHB}降為 0 直到目標的下個回合結束。{@actSaveSuccessOrFail}遠古白龍直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Freezing Burst"
+			},
+			{
+				"name": "撲擊",
+				"entries": [
+					"遠古白龍移動至多其{@variantrule Speed|XPHB}的一半，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Pounce"
+			}
+		],
+		"legendaryGroup": {
+			"name": "白龍",
+			"source": "XMM",
+			"ENG_name": "White Dragon"
+		},
+		"environment": [
+			"arctic"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"dragonAge": "ancient",
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/white-dragon.mp3"
+		},
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"B",
+			"SD"
+		],
+		"actionTags": [
+			"Breath Weapon",
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR"
+		],
+		"damageTags": [
+			"C",
+			"S"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"AOE",
+			"MA",
+			"RCH"
+		],
+		"conditionInflictSpell": [
+			"frightened"
+		],
+		"savingThrowForced": [
+			"constitution"
+		],
+		"savingThrowForcedLegendary": [
+			"constitution"
+		],
+		"savingThrowForcedSpell": [
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ancient White Dragon"
+	},
+	"Animal Lord|XMM": {
+		"name": "動物之王",
+		"source": "XMM",
+		"page": 15,
+		"referenceSources": [
+			"FRHoF"
+		],
+		"size": [
+			"M"
+		],
+		"type": "celestial",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			19
+		],
+		"hp": {
+			"average": 323,
+			"formula": "34d8 + 170"
+		},
+		"speed": {
+			"walk": 60,
+			"fly": {
+				"number": 60,
+				"condition": "（懸浮）"
+			},
+			"swim": 60,
+			"canHover": true
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 24,
+		"dex": 25,
+		"con": 20,
+		"int": 19,
+		"wis": 23,
+		"cha": 22,
+		"save": {
+			"con": "+11",
+			"wis": "+12"
+		},
+		"skill": {
+			"acrobatics": "+13",
+			"athletics": "+13",
+			"perception": "+18",
+			"stealth": "+13"
+		},
+		"senses": [
+			"Truesight 120 ft."
+		],
+		"passive": 28,
+		"resist": [
+			"cold",
+			"fire",
+			"necrotic",
+			"psychic",
+			"radiant"
+		],
+		"conditionImmune": [
+			"charmed",
+			"frightened",
+			"stunned"
+		],
+		"languages": [
+			"all"
+		],
+		"cr": "20",
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"動物之王施展下列法術之一，無需材料成分，以感知作為施法屬性（法術豁免 {@dc 20}）："
+				],
+				"will": [
+					"{@spell Animal Friendship|XPHB}",
+					"{@spell Animal Messenger|XPHB}",
+					"{@spell Speak with Animals|XPHB}"
+				],
+				"daily": {
+					"2e": [
+						"{@spell Awaken|XPHB}",
+						"{@spell Greater Restoration|XPHB}"
+					],
+					"1e": [
+						"{@spell Animal Shapes|XPHB}",
+						"{@spell Sunburst|XPHB}"
+					]
+				},
+				"ability": "wis",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "動物王權",
+				"entries": [
+					"動物之王代表覓食者、獵手或賢者（由 DM 選擇），這決定了此數據資料中的某些特性。"
+				],
+				"ENG_name": "Animal Lordship"
+			},
+			{
+				"name": "傳奇抗性（每日 4 次）",
+				"entries": [
+					"若動物之王豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day)"
+			},
+			{
+				"name": "王者威儀",
+				"entries": [
+					"{@actSave wis} {@dc 20}，在從動物之王發出的 30 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內開始其回合的任何敵人。{@actSaveFail}目標受到下列效果之一：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "著迷（僅限覓食者）",
+								"entries": [
+									"目標處於{@condition Charmed|XPHB}狀態直到其下個回合結束。處於{@condition Charmed|XPHB}狀態時，目標處於{@condition Incapacitated|XPHB}狀態。"
+								],
+								"ENG_name": "Captivated (Forager Only)"
+							},
+							{
+								"type": "item",
+								"name": "畏懼（僅限獵手）",
+								"entries": [
+									"目標處於{@condition Frightened|XPHB}狀態直到其下個回合結束。"
+								],
+								"ENG_name": "Fearful (Hunter Only)"
+							},
+							{
+								"type": "item",
+								"name": "困惑（僅限賢者）",
+								"entries": [
+									"目標受到 10（{@damage 3d6}）心靈傷害，並被魔法迷惑直到其下個回合結束。被迷惑時，目標的豁免檢定減去 {@dice 1d4}。"
+								],
+								"ENG_name": "Mired (Sage Only)"
+							}
+						]
+					}
+				],
+				"ENG_name": "Lordly Presence"
+			},
+			{
+				"name": "魔法抗性",
+				"entries": [
+					"動物之王對法術與其他魔法效果的豁免檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Magic Resistance"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"動物之王進行兩次攻擊，以撕裂或光耀射線任意組合，並使用「動物之靈」。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "撕裂",
+				"entries": [
+					"{@atkr m} {@hit 13}，觸及 5 呎。{@h}14（{@damage 2d6 + 7}）揮砍傷害外加 7（{@damage 2d6}）力場傷害。"
+				],
+				"ENG_name": "Rend"
+			},
+			{
+				"name": "光耀射線",
+				"entries": [
+					"{@atkr r} {@hit 12}，射程 120 呎。{@h}20（{@damage 4d6 + 6}）光耀傷害。"
+				],
+				"ENG_name": "Radiant Ray"
+			},
+			{
+				"name": "動物之靈",
+				"entries": [
+					"動物之王召喚一個動物之靈攻擊一個生物，然後消失。{@actSave dex} {@dc 20}，動物之王 120 呎內一個它能看見的生物。{@actSaveFail}28（{@damage 4d10 + 6}）光耀傷害。{@actSaveSuccess}傷害減半。{@actSaveSuccessOrFail}發生下列效果之一：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "強化（僅限覓食者）",
+								"entries": [
+									"動物之王獲得 20 點{@variantrule Temporary Hit Points|XPHB}。"
+								],
+								"ENG_name": "Fortify (Forager Only)"
+							},
+							{
+								"type": "item",
+								"name": "標記獵物（僅限獵手）",
+								"entries": [
+									"直到動物之王的下個回合開始前，動物之王對目標的攻擊檢定具有{@variantrule Advantage|XPHB}。"
+								],
+								"ENG_name": "Marked as Prey (Hunter Only)"
+							},
+							{
+								"type": "item",
+								"name": "惱人蟲群（僅限賢者）",
+								"entries": [
+									"直到其下個回合結束前，目標的攻擊檢定與屬性檢定具有{@variantrule Disadvantage|XPHB}。"
+								],
+								"ENG_name": "Pesky Swarm (Sage Only)"
+							}
+						]
+					}
+				],
+				"ENG_name": "Animal Spirit"
+			}
+		],
+		"bonus": [
+			{
+				"name": "變形",
+				"entries": [
+					"動物之王變形為其所代表之動物的超大型或更小版本，或變為中型或小型類人生物，或恢復其真實形態。除體型外，它在每種形態下的遊戲數據都相同。它穿戴或攜帶的任何裝備都不會隨之變形。"
+				],
+				"ENG_name": "Shape-Shift"
+			}
+		],
+		"legendary": [
+			{
+				"name": "野性打擊",
+				"entries": [
+					"動物之王移動至多其{@variantrule Speed|XPHB}而不引發{@action Opportunity Attack|XPHB|借機攻擊}，並進行一次撕裂攻擊。"
+				],
+				"ENG_name": "Feral Strike"
+			},
+			{
+				"name": "光耀打擊",
+				"entries": [
+					"動物之王進行一次光耀射線攻擊。"
+				],
+				"ENG_name": "Radiant Strike"
+			}
+		],
+		"environment": [
+			"planar, beastlands"
+		],
+		"treasure": [
+			"relics"
+		],
+		"altArt": [
+			{
+				"name": "獵手動物之王",
+				"source": "XMM",
+				"ENG_name": "Hunter Animal Lord"
+			}
+		],
+		"traitTags": [
+			"Legendary Resistances",
+			"Magic Resistance"
+		],
+		"senseTags": [
+			"U"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"XX"
+		],
+		"damageTags": [
+			"O",
+			"R",
+			"S",
+			"Y"
+		],
+		"damageTagsSpell": [
+			"R"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RA"
+		],
+		"conditionInflict": [
+			"charmed",
+			"frightened",
+			"incapacitated"
+		],
+		"conditionInflictSpell": [
+			"blinded",
+			"charmed"
+		],
+		"savingThrowForced": [
+			"dexterity",
+			"wisdom"
+		],
+		"savingThrowForcedSpell": [
+			"charisma",
+			"constitution",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"_versions": [
+			{
+				"name": "Animal Lord; Forager",
+				"source": "XMM",
+				"_mod": {
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "Lordly Presence",
+						"items": {
+							"name": "Lordly Presence",
+							"entries": [
+								"{@actSave wis} {@dc 20}, any enemy that starts its turn in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the animal lord. {@actSaveFail} The target has the {@condition Charmed|XPHB} condition until the end of its next turn. While {@condition Charmed|XPHB}, the target has the {@condition Incapacitated|XPHB} condition."
+							]
+						}
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Animal Spirit",
+						"items": {
+							"name": "Animal Spirit",
+							"entries": [
+								"The animal lord conjures an animal spirit that strikes at a creature and then disappears. {@actSave dex} {@dc 20}, one creature the animal lord can see within 120 feet. {@actSaveFail} 28 ({@damage 4d10 + 6}) Radiant damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The animal lord gains 20 {@variantrule Temporary Hit Points|XPHB}."
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Animal Lord; Hunter",
+				"source": "XMM",
+				"_mod": {
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "Lordly Presence",
+						"items": {
+							"name": "Lordly Presence",
+							"entries": [
+								"{@actSave wis} {@dc 20}, any enemy that starts its turn in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the animal lord. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition until the end of its next turn."
+							]
+						}
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Animal Spirit",
+						"items": {
+							"name": "Animal Spirit",
+							"entries": [
+								"The animal lord conjures an animal spirit that strikes at a creature and then disappears. {@actSave dex} {@dc 20}, one creature the animal lord can see within 120 feet. {@actSaveFail} 28 ({@damage 4d10 + 6}) Radiant damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The animal lord has {@variantrule Advantage|XPHB} on attack rolls against the target until the start of the animal lord's next turn."
+							]
+						}
+					}
+				}
+			},
+			{
+				"name": "Animal Lord; Sage",
+				"source": "XMM",
+				"_mod": {
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "Lordly Presence",
+						"items": {
+							"name": "Lordly Presence",
+							"entries": [
+								"{@actSave wis} {@dc 20}, any enemy that starts its turn in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the animal lord. {@actSaveFail} The target takes 10 ({@damage 3d6}) Psychic damage, and the target is magically bewildered until the end of its next turn. While bewildered, the target subtracts {@dice 1d4} from its saving throws."
+							]
+						}
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Animal Spirit",
+						"items": {
+							"name": "Animal Spirit",
+							"entries": [
+								"The animal lord conjures an animal spirit that strikes at a creature and then disappears. {@actSave dex} {@dc 20}, one creature the animal lord can see within 120 feet. {@actSaveFail} 28 ({@damage 4d10 + 6}) Radiant damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The target has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks until the end of its next turn."
+							]
+						}
+					}
+				}
+			}
+		],
+		"ENG_name": "Animal Lord"
+	},
+	"Animated Armor|XMM": {
+		"name": "活化盔甲",
+		"source": "XMM",
+		"page": 16,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRAiF",
+			"LFL",
+			"EFA"
+		],
+		"size": [
+			"M"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			18
+		],
+		"hp": {
+			"average": 33,
+			"formula": "6d8 + 6"
+		},
+		"speed": {
+			"walk": 25
+		},
+		"initiative": {
+			"proficiency": 1
+		},
+		"str": 14,
+		"dex": 11,
+		"con": 13,
+		"int": 1,
+		"wis": 3,
+		"cha": 1,
+		"senses": [
+			"Blindsight 60 ft."
+		],
+		"passive": 6,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"cr": "1",
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"活化盔甲進行兩次猛擊攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "猛擊",
+				"entries": [
+					"{@atkr m} {@hit 4}，觸及 5 呎。{@h}5（{@damage 1d6 + 2}）鈍擊傷害。"
+				],
+				"ENG_name": "Slam"
+			}
+		],
+		"environment": [
+			"urban"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/animated-armor.mp3"
+		},
+		"senseTags": [
+			"B"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Animated Armor"
+	},
+	"Animated Broom|XMM": {
+		"name": "活化掃帚",
+		"source": "XMM",
+		"page": 16,
+		"referenceSources": [
+			"LFL",
+			"EFA"
+		],
+		"size": [
+			"S"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			15
+		],
+		"hp": {
+			"average": 14,
+			"formula": "4d6"
+		},
+		"speed": {
+			"walk": 5,
+			"fly": {
+				"number": 50,
+				"condition": "（懸浮）"
+			},
+			"canHover": true
+		},
+		"initiative": {
+			"proficiency": 1
+		},
+		"str": 10,
+		"dex": 17,
+		"con": 10,
+		"int": 1,
+		"wis": 5,
+		"cha": 1,
+		"senses": [
+			"Blindsight 60 ft."
+		],
+		"passive": 7,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "飛掠",
+				"entries": [
+					"活化掃帚飛離敵人的觸及範圍時不會引發借機攻擊。"
+				],
+				"ENG_name": "Flyby"
+			}
+		],
+		"action": [
+			{
+				"name": "猛擊",
+				"entries": [
+					"{@atkr m} {@hit 5}，觸及 5 呎。{@h}5（{@damage 1d4 + 3}）鈍擊傷害。"
+				],
+				"ENG_name": "Slam"
+			}
+		],
+		"environment": [
+			"urban"
+		],
+		"traitTags": [
+			"Flyby"
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Animated Broom"
+	},
+	"Animated Flying Sword|XMM": {
+		"name": "活化飛劍",
+		"source": "XMM",
+		"page": 17,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"HotB",
+			"EFA"
+		],
+		"size": [
+			"S"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			17
+		],
+		"hp": {
+			"average": 14,
+			"formula": "4d6"
+		},
+		"speed": {
+			"walk": 5,
+			"fly": {
+				"number": 50,
+				"condition": "（懸浮）"
+			},
+			"canHover": true
+		},
+		"initiative": {
+			"proficiency": 1
+		},
+		"str": 12,
+		"dex": 15,
+		"con": 11,
+		"int": 1,
+		"wis": 5,
+		"cha": 1,
+		"save": {
+			"dex": "+4"
+		},
+		"senses": [
+			"Blindsight 60 ft."
+		],
+		"passive": 7,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"cr": "1/4",
+		"action": [
+			{
+				"name": "揮斬",
+				"entries": [
+					"{@atkr m} {@hit 4}，觸及 5 呎。{@h}6（{@damage 1d8 + 2}）揮砍傷害。"
+				],
+				"ENG_name": "Slash"
+			}
+		],
+		"environment": [
+			"urban"
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Animated Flying Sword"
+	},
+	"Animated Rug of Smothering|XMM": {
+		"name": "活化窒息地毯",
+		"source": "XMM",
+		"page": 17,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe",
+			"FRAiF",
+			"EFA"
+		],
+		"size": [
+			"L"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 27,
+			"formula": "5d10"
+		},
+		"speed": {
+			"walk": 10
+		},
+		"initiative": {
+			"proficiency": 1
+		},
+		"str": 17,
+		"dex": 14,
+		"con": 10,
+		"int": 1,
+		"wis": 3,
+		"cha": 1,
+		"senses": [
+			"Blindsight 60 ft."
+		],
+		"passive": 6,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"cr": "2",
+		"action": [
+			{
+				"name": "悶殺",
+				"entries": [
+					"{@atkr m} {@hit 5}，觸及 5 呎。{@h}10（{@damage 2d6 + 3}）鈍擊傷害。若目標是中型或更小的生物，活化窒息地毯可以改為使其處於{@condition Grappled|XPHB}狀態（脫逃 {@dc 13}），而非造成傷害。直到擒抱結束前，目標處於{@condition Blinded|XPHB}與{@condition Restrained|XPHB}狀態、正在窒息，並在其每個回合開始時受到 10（{@damage 2d6 + 3}）鈍擊傷害。活化窒息地毯一次只能悶殺一個生物。",
+					"擒抱目標期間，活化窒息地毯無法執行此動作，活化窒息地毯受到的傷害減半（向下取整），且目標受到相同數量的傷害。"
+				],
+				"ENG_name": "Smother"
+			}
+		],
+		"environment": [
+			"urban"
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Animated Rug of Smothering"
+	},
+	"Ankheg|XMM": {
+		"name": "掘地蟲",
+		"source": "XMM",
+		"page": 18,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRAiF"
+		],
+		"size": [
+			"L"
+		],
+		"type": "monstrosity",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			14
+		],
+		"hp": {
+			"average": 45,
+			"formula": "6d10 + 12"
+		},
+		"speed": {
+			"walk": 30,
+			"burrow": 10
+		},
+		"str": 17,
+		"dex": 11,
+		"con": 14,
+		"int": 1,
+		"wis": 13,
+		"cha": 6,
+		"senses": [
+			"Darkvision 60 ft.",
+			"Tremorsense 60 ft."
+		],
+		"passive": 11,
+		"cr": "2",
+		"trait": [
+			{
+				"name": "掘地者",
+				"entries": [
+					"掘地蟲可以以其{@variantrule Burrow Speed|XPHB}的一半穿過堅硬岩石，並在身後留下直徑 10 呎的隧道。"
+				],
+				"ENG_name": "Tunneler"
+			}
+		],
+		"action": [
+			{
+				"name": "啃咬",
+				"entries": [
+					"{@atkr m} {@hit 5}（若目標被掘地蟲{@condition Grappled|XPHB}則具有{@variantrule Advantage|XPHB}），觸及 5 呎。{@h}10（{@damage 2d6 + 3}）揮砍傷害外加 3（{@damage 1d6}）強酸傷害。若目標是大型或更小的生物，它處於{@condition Grappled|XPHB}狀態（脫逃 {@dc 13}）。"
+				],
+				"ENG_name": "Bite"
+			},
+			{
+				"name": "強酸噴射 {@recharge}",
+				"entries": [
+					"{@actSave dex} {@dc 12}，長 30 呎、寬 5 呎{@variantrule Line [Area of Effect]|XPHB|直線}範圍內的每個生物。{@actSaveFail}14（{@damage 4d6}）強酸傷害。{@actSaveSuccess}傷害減半。"
+				],
+				"ENG_name": "Acid Spray {@recharge}"
+			}
+		],
+		"environment": [
+			"forest",
+			"grassland"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/ankheg.mp3"
+		},
+		"traitTags": [
+			"Tunneler"
+		],
+		"senseTags": [
+			"D",
+			"T"
+		],
+		"damageTags": [
+			"A",
+			"S"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"conditionInflict": [
+			"grappled"
+		],
+		"savingThrowForced": [
+			"dexterity"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ankheg"
+	},
+	"Ankylosaurus|XMM": {
+		"name": "甲龍",
+		"group": [
+			"Dinosaurs"
+		],
+		"source": "XMM",
+		"page": 348,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "beast",
+			"tags": [
+				"dinosaur"
+			]
+		},
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			15
+		],
+		"hp": {
+			"average": 68,
+			"formula": "8d12 + 16"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 19,
+		"dex": 11,
+		"con": 15,
+		"int": 2,
+		"wis": 12,
+		"cha": 5,
+		"save": {
+			"str": "+6"
+		},
+		"passive": 11,
+		"cr": "3",
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"甲龍進行兩次尾擊攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "尾擊",
+				"entries": [
+					"{@atkr m} {@hit 6}，觸及 10 呎。{@h}9（{@damage 1d10 + 4}）鈍擊傷害。若目標是超大型或更小的生物，它處於{@condition Prone|XPHB}狀態。"
+				],
+				"ENG_name": "Tail"
+			}
+		],
+		"environment": [
+			"grassland"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/ankylosaurus.mp3"
+		},
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ankylosaurus"
+	},
+	"Ape|XMM": {
+		"name": "猿",
+		"source": "XMM",
+		"page": 348,
+		"srd52": true,
+		"basicRules2024": true,
+		"otherSources": [
+			{
+				"source": "XPHB",
+				"page": 346
+			}
+		],
+		"size": [
+			"M"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 19,
+			"formula": "3d8 + 6"
+		},
+		"speed": {
+			"walk": 30,
+			"climb": 30
+		},
+		"str": 16,
+		"dex": 14,
+		"con": 14,
+		"int": 6,
+		"wis": 12,
+		"cha": 7,
+		"skill": {
+			"athletics": "+5",
+			"perception": "+3"
+		},
+		"passive": 13,
+		"cr": "1/2",
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"猿進行兩次拳擊攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "拳擊",
+				"entries": [
+					"{@atkr m} {@hit 5}，觸及 5 呎。{@h}5（{@damage 1d4 + 3}）鈍擊傷害。"
+				],
+				"ENG_name": "Fist"
+			},
+			{
+				"name": "擲石 {@recharge}",
+				"entries": [
+					"{@atkr r} {@hit 5}，射程 25/50 呎。{@h}10（{@damage 2d6 + 3}）鈍擊傷害。"
+				],
+				"ENG_name": "Rock {@recharge}"
+			}
+		],
+		"environment": [
+			"forest"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/ape.mp3"
+		},
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MA",
+			"RA"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Ape"
+	},
+	"Arcanaloth|XMM": {
+		"name": "奧登羅斯魔",
+		"group": [
+			"Yugoloths"
+		],
+		"source": "XMM",
+		"page": 19,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "fiend",
+			"tags": [
+				"yugoloth"
+			]
+		},
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			18
+		],
+		"hp": {
+			"average": 175,
+			"formula": "27d8 + 54"
+		},
+		"speed": {
+			"walk": 30,
+			"fly": {
+				"number": 30,
+				"condition": "（懸浮）"
+			},
+			"canHover": true
+		},
+		"initiative": {
+			"proficiency": 1
+		},
+		"str": 17,
+		"dex": 12,
+		"con": 14,
+		"int": 20,
+		"wis": 16,
+		"cha": 17,
+		"save": {
+			"dex": "+5",
+			"con": "+6",
+			"int": "+9",
+			"wis": "+7"
+		},
+		"skill": {
+			"arcana": "+9",
+			"deception": "+7",
+			"insight": "+7",
+			"perception": "+7"
+		},
+		"senses": [
+			"Truesight 120 ft."
+		],
+		"passive": 17,
+		"resist": [
+			"cold",
+			"fire",
+			"lightning"
+		],
+		"immune": [
+			"acid",
+			"poison"
+		],
+		"conditionImmune": [
+			"charmed",
+			"poisoned"
+		],
+		"languages": [
+			"all; telepathy 120 ft."
+		],
+		"cr": "12",
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"奧登羅斯魔施展下列法術之一，無需材料成分，以智力作為施法屬性（法術豁免 {@dc 17}）："
+				],
+				"will": [
+					"{@spell Alter Self|XPHB}",
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Identify|XPHB}",
+					"{@spell Mage Hand|XPHB}",
+					"{@spell Prestidigitation|XPHB}"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Contact Other Plane|XPHB}",
+						"{@spell Detect Thoughts|XPHB}",
+						"{@spell Dimension Door|XPHB}",
+						"{@spell Mind Blank|XPHB}"
+					]
+				},
+				"ability": "int",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			},
+			{
+				"name": "法術反制",
+				"type": "spellcasting",
+				"headerEntries": [
+					"奧登羅斯魔在該法術的觸發條件發生時施展{@spell Counterspell|XPHB}，使用與「施法」相同的施法屬性。"
+				],
+				"will": [
+					"{@spell Counterspell|XPHB}"
+				],
+				"ability": "int",
+				"displayAs": "reaction",
+				"hidden": [
+					"will"
+				],
+				"ENG_name": "Counterspell"
+			}
+		],
+		"trait": [
+			{
+				"name": "邪魔復原",
+				"entries": [
+					"若奧登羅斯魔死於格漢那之外，其身體會溶解成膿液，並立即獲得新的身體，在格漢那以全部{@variantrule Hit Points|XPHB}復活。"
+				],
+				"ENG_name": "Fiendish Restoration"
+			},
+			{
+				"name": "魔法抗性",
+				"entries": [
+					"奧登羅斯魔對法術與其他魔法效果的豁免檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Magic Resistance"
+			},
+			{
+				"name": "靈魂之書",
+				"entries": [
+					"奧登羅斯魔擁有一本魔法書。持有或攜帶此書時，奧登羅斯魔可以使用其「放逐之爪」動作。",
+					"此書具有 AC 17；HP 35；並對黯蝕、毒素與心靈傷害具有{@variantrule Immunity|XPHB}。此書在每個回合結束時恢復其全部{@variantrule Hit Points|XPHB}，但若其{@variantrule Hit Points|XPHB}降至 0 或奧登羅斯魔死亡，它會化為塵土。若此書被摧毀，奧登羅斯魔可以在完成一次{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}時製作一本新的。"
+				],
+				"ENG_name": "Soul Tome"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"奧登羅斯魔進行三次邪魔爆發攻擊。它可以將其中一次攻擊替換為放逐之爪攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "邪魔爆發",
+				"entries": [
+					"{@atkr m,r} {@hit 9}，觸及 5 呎或射程 120 呎。{@h}31（{@damage 4d12 + 5}）黯蝕傷害。"
+				],
+				"ENG_name": "Fiendish Burst"
+			},
+			{
+				"name": "放逐之爪（需要靈魂之書）",
+				"entries": [
+					"{@atkr m} {@hit 9}，觸及 5 呎。{@h}10（{@damage 2d4 + 5}）揮砍傷害外加 19（{@damage 3d12}）心靈傷害。若目標是生物，它會受到下列效果影響。{@actSave cha} {@dc 17}。{@actSaveFail}目標被困在靈魂之書內的半位面中。被困在其中時，目標處於{@condition Incapacitated|XPHB}狀態。在其每個回合結束時，目標重複此豁免，成功時從書中脫逃。目標脫逃時，它會出現在其離開的空間；若該空間已被佔據，則出現在最近的未被佔據空間。",
+					"若目標在半位面中有三次豁免失敗，它便與此書綁定，只有在此書的{@variantrule Hit Points|XPHB}降至 0 時才能脫逃。"
+				],
+				"ENG_name": "Banishing Claw (Requires Soul Tome)"
+			}
+		],
+		"bonus": [
+			{
+				"name": "傳送",
+				"entries": [
+					"奧登羅斯魔傳送至多 30 呎，到達一處它能看見的未被佔據空間。"
+				],
+				"ENG_name": "Teleport"
+			}
+		],
+		"environment": [
+			"planar, lower"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/arcanaloth.mp3"
+		},
+		"traitTags": [
+			"Magic Resistance"
+		],
+		"senseTags": [
+			"U"
+		],
+		"actionTags": [
+			"Multiattack",
+			"Teleport"
+		],
+		"languageTags": [
+			"TP",
+			"XX"
+		],
+		"damageTags": [
+			"N",
+			"S",
+			"Y"
+		],
+		"damageTagsSpell": [
+			"B",
+			"O",
+			"P",
+			"S",
+			"Y"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RA"
+		],
+		"conditionInflict": [
+			"incapacitated"
+		],
+		"savingThrowForced": [
+			"charisma"
+		],
+		"savingThrowForcedSpell": [
+			"constitution",
+			"intelligence",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Arcanaloth"
+	},
+	"Arch-hag|XMM": {
+		"name": "大鬼婆",
+		"source": "XMM",
+		"page": 21,
+		"size": [
+			"L"
+		],
+		"type": "fey",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			20
+		],
+		"hp": {
+			"average": 333,
+			"formula": "29d10 + 174"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 24,
+		"dex": 15,
+		"con": 23,
+		"int": 19,
+		"wis": 19,
+		"cha": 25,
+		"save": {
+			"dex": "+9",
+			"wis": "+11"
+		},
+		"skill": {
+			"deception": "+14",
+			"perception": "+11",
+			"persuasion": "+21"
+		},
+		"senses": [
+			"Truesight 60 ft."
+		],
+		"passive": 21,
+		"resist": [
+			"cold",
+			"fire",
+			"psychic"
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened"
+		],
+		"languages": [
+			"all"
+		],
+		"cr": {
+			"cr": "21",
+			"xpLair": 41000
+		},
+		"spellcasting": [
+			{
+				"name": "集會魔法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"位於至少兩名鬼婆盟友 30 呎內時，大鬼婆可以施展下列法術之一，無需材料成分，使用法術的正常施法時間，並以智力作為施法屬性（法術豁免 {@dc 19}）：{@spell Augury|XPHB}、{@spell Find Familiar|XPHB}、{@spell Identify|XPHB}、{@spell Locate Object|XPHB}、{@spell Scrying|XPHB}或{@spell Unseen Servant|XPHB}。大鬼婆必須完成一次{@variantrule Long Rest|XPHB}，才能再次使用此特性施展該法術。"
+				],
+				"restLong": {
+					"1": [
+						"{@spell Augury|XPHB}",
+						"{@spell Find Familiar|XPHB}",
+						"{@spell Identify|XPHB}",
+						"{@spell Locate Object|XPHB}",
+						"{@spell Scrying|XPHB}",
+						"{@spell Unseen Servant|XPHB}"
+					]
+				},
+				"ability": "int",
+				"hidden": [
+					"restLong"
+				],
+				"ENG_name": "Coven Magic"
+			},
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"大鬼婆施展下列法術之一，無需材料成分，以魅力作為施法屬性（法術豁免 {@dc 22}）："
+				],
+				"will": [
+					"{@spell Detect Thoughts|XPHB}",
+					"{@spell Dimension Door|XPHB}",
+					"{@spell Dispel Magic|XPHB}",
+					"{@spell Hypnotic Pattern|XPHB}"
+				],
+				"daily": {
+					"2e": [
+						"{@spell Mass Suggestion|XPHB}",
+						"{@spell Modify Memory|XPHB}",
+						"{@spell Plane Shift|XPHB}"
+					]
+				},
+				"ability": "cha",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			},
+			{
+				"name": "繞舌咒",
+				"type": "spellcasting",
+				"headerEntries": [
+					"大鬼婆在該法術的觸發條件發生時施展{@spell Counterspell|XPHB}，使用與「施法」相同的施法屬性。若目標豁免失敗，它會受到詛咒直到其下個回合結束。直到詛咒結束前，目標無法施展具有言語成分的法術，且它說話時會說出與本意相反的話。"
+				],
+				"will": [
+					"{@spell Counterspell|XPHB}"
+				],
+				"ability": "cha",
+				"displayAs": "reaction",
+				"hidden": [
+					"will"
+				],
+				"ENG_name": "Tongue Twister"
+			}
+		],
+		"trait": [
+			{
+				"name": "傳奇抗性（每日 4 次，在巢穴中為每日 5 次）",
+				"entries": [
+					"若大鬼婆豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)"
+			},
+			{
+				"name": "魔法抗性",
+				"entries": [
+					"大鬼婆對法術與其他魔法效果的豁免檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Magic Resistance"
+			},
+			{
+				"name": "怨毒脫逃",
+				"entries": [
+					"當大鬼婆的{@variantrule Hit Points|XPHB}降至 0 時，只有在它位於其剋星（由 DM 選擇的大鬼婆最憎恨之物）30 呎內時才會死亡。否則，大鬼婆的{@variantrule Hit Points|XPHB|生命值}降為 1 並傳送到一個無害的半位面，且在 {@dice 2d6} 天內無法返回它離開的位面。當大鬼婆傳送離開時，它離開之空間 60 呎內的每個生物都會受到詛咒。直到詛咒結束前，該生物的屬性檢定與豁免檢定具有{@variantrule Disadvantage|XPHB}，且大鬼婆知道它在多元宇宙中任何地方的位置。"
+				],
+				"ENG_name": "Spiteful Escape"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"大鬼婆進行兩次幽靈之爪攻擊，並使用「劈啪波」。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "幽靈之爪",
+				"entries": [
+					"{@atkr m,r} {@hit 14}，觸及 10 呎或射程 60 呎。{@h}17（{@damage 3d6 + 7}）力場傷害。若目標是大型或更小的生物，它處於{@condition Prone|XPHB}狀態。"
+				],
+				"ENG_name": "Spectral Claw"
+			},
+			{
+				"name": "劈啪波",
+				"entries": [
+					"{@actSave dex} {@dc 22}，60 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}範圍內的每個生物。{@actSaveFail}32（{@damage 5d12}）閃電傷害。{@actSaveSuccess}傷害減半。{@actSaveSuccessOrFail}目標受到詛咒，直到大鬼婆的下個回合結束。直到詛咒結束前，目標無法執行反應。"
+				],
+				"ENG_name": "Crackling Wave"
+			}
+		],
+		"bonus": [
+			{
+				"name": "女巫打擊",
+				"entries": [
+					"每個受大鬼婆詛咒且位於其 60 呎內的生物受到 14（{@damage 4d6}）閃電傷害。"
+				],
+				"ENG_name": "Witch Strike"
+			}
+		],
+		"legendaryActionsLair": 4,
+		"legendary": [
+			{
+				"name": "鬼婆橫掃",
+				"entries": [
+					"大鬼婆進行一次幽靈之爪攻擊。"
+				],
+				"ENG_name": "Hag's Swipe"
+			},
+			{
+				"name": "惡意魔法",
+				"entries": [
+					"大鬼婆使用「施法」施展{@spell Dimension Door|XPHB}或{@spell Hypnotic Pattern|XPHB}。大鬼婆直到其下個回合開始前都無法再次執行此動作。"
+				],
+				"ENG_name": "Malicious Magic"
+			}
+		],
+		"legendaryGroup": {
+			"name": "大鬼婆",
+			"source": "XMM",
+			"ENG_name": "Arch-hag"
+		},
+		"environment": [
+			"any"
+		],
+		"treasure": [
+			"arcana"
+		],
+		"traitTags": [
+			"Legendary Resistances",
+			"Magic Resistance"
+		],
+		"senseTags": [
+			"U"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"XX"
+		],
+		"damageTags": [
+			"L",
+			"O"
+		],
+		"damageTagsSpell": [
+			"O"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"AOE",
+			"CUR",
+			"MA",
+			"RA",
+			"RCH"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"conditionInflictSpell": [
+			"charmed",
+			"incapacitated"
+		],
+		"savingThrowForced": [
+			"dexterity"
+		],
+		"savingThrowForcedLegendary": [
+			"wisdom"
+		],
+		"savingThrowForcedSpell": [
+			"constitution",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Arch-hag"
+	},
+	"Archelon|XMM": {
+		"name": "古巨龜",
+		"group": [
+			"Dinosaurs"
+		],
+		"source": "XMM",
+		"page": 349,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRAiF"
+		],
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "beast",
+			"tags": [
+				"dinosaur"
+			]
+		},
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			17
+		],
+		"hp": {
+			"average": 90,
+			"formula": "12d12 + 12"
+		},
+		"speed": {
+			"walk": 20,
+			"swim": 80
+		},
+		"str": 18,
+		"dex": 16,
+		"con": 13,
+		"int": 4,
+		"wis": 14,
+		"cha": 6,
+		"skill": {
+			"stealth": "+5"
+		},
+		"passive": 12,
+		"cr": "4",
+		"trait": [
+			{
+				"name": "兩棲",
+				"entries": [
+					"古巨龜可以呼吸空氣與水。"
+				],
+				"ENG_name": "Amphibious"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"古巨龜進行兩次啃咬攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "啃咬",
+				"entries": [
+					"{@atkr m} {@hit 6}，觸及 5 呎。{@h}14（{@damage 3d6 + 4}）穿刺傷害。"
+				],
+				"ENG_name": "Bite"
+			}
+		],
+		"environment": [
+			"underwater"
+		],
+		"traitTags": [
+			"Amphibious"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Archelon"
+	},
+	"Archmage|XMM": {
+		"name": "大法師",
+		"source": "XMM",
+		"page": 199,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRAiF",
+			"NF",
+			"EFA"
+		],
+		"size": [
+			"S",
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"wizard"
+			]
+		},
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			17
+		],
+		"hp": {
+			"average": 170,
+			"formula": "31d8 + 31"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"initiative": {
+			"proficiency": 1
+		},
+		"str": 10,
+		"dex": 14,
+		"con": 12,
+		"int": 20,
+		"wis": 15,
+		"cha": 16,
+		"save": {
+			"int": "+9",
+			"wis": "+6"
+		},
+		"skill": {
+			"arcana": "+13",
+			"history": "+9",
+			"perception": "+6"
+		},
+		"passive": 16,
+		"immune": [
+			"psychic"
+		],
+		"conditionImmune": [
+			{
+				"conditionImmune": [
+					"charmed"
+				],
+				"note": "(with Mind Blank)",
+				"cond": true
+			}
+		],
+		"languages": [
+			"Common plus five other languages"
+		],
+		"cr": "12",
+		"gear": [
+			"wand|xphb"
+		],
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"大法師施展下列法術之一，以智力作為施法屬性（法術豁免 {@dc 17}）："
+				],
+				"will": [
+					"{@spell Detect Magic|XPHB}",
+					"{@spell Detect Thoughts|XPHB}",
+					"{@spell Disguise Self|XPHB}",
+					"{@spell Invisibility|XPHB}",
+					"{@spell Light|XPHB}",
+					"{@spell Mage Armor|XPHB} (included in AC)",
+					"{@spell Mage Hand|XPHB}",
+					"{@spell Prestidigitation|XPHB}"
+				],
+				"daily": {
+					"2e": [
+						"{@spell Fly|XPHB}",
+						"{@spell Lightning Bolt|XPHB} (level 7 version)"
+					],
+					"1e": [
+						"{@spell Cone of Cold|XPHB} (level 9 version)",
+						"{@spell Mind Blank|XPHB} (cast before combat)",
+						"{@spell Scrying|XPHB}",
+						"{@spell Teleport|XPHB}"
+					]
+				},
+				"ability": "int",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			},
+			{
+				"name": "迷蹤步（每日 3 次）",
+				"type": "spellcasting",
+				"headerEntries": [
+					"大法師施展{@spell Misty Step|XPHB}，使用與「施法」相同的施法屬性。"
+				],
+				"daily": {
+					"3": [
+						"{@spell Misty Step|XPHB}"
+					]
+				},
+				"ability": "int",
+				"displayAs": "bonus",
+				"hidden": [
+					"daily"
+				],
+				"ENG_name": "Misty Step (3/Day)"
+			},
+			{
+				"name": "防護魔法（每日 3 次）",
+				"type": "spellcasting",
+				"headerEntries": [
+					"大法師在該法術的觸發條件發生時施展{@spell Counterspell|XPHB}或{@spell Shield|XPHB}，使用與「施法」相同的施法屬性。"
+				],
+				"daily": {
+					"3": [
+						"{@spell Counterspell|XPHB}",
+						"{@spell Shield|XPHB}"
+					]
+				},
+				"ability": "int",
+				"displayAs": "reaction",
+				"hidden": [
+					"daily"
+				],
+				"ENG_name": "Protective Magic (3/Day)"
+			}
+		],
+		"trait": [
+			{
+				"name": "魔法抗性",
+				"entries": [
+					"大法師對法術與其他魔法效果的豁免檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Magic Resistance"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"大法師進行四次奧術爆發攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "奧術爆發",
+				"entries": [
+					"{@atkr m,r} {@hit 9}，觸及 5 呎或射程 150 呎。{@h}27（{@damage 4d10 + 5}）力場傷害。"
+				],
+				"ENG_name": "Arcane Burst"
+			}
+		],
+		"environment": [
+			"any"
+		],
+		"treasure": [
+			"arcana",
+			"individual"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/archmage.mp3"
+		},
+		"traitTags": [
+			"Magic Resistance"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C"
+		],
+		"damageTags": [
+			"O"
+		],
+		"damageTagsSpell": [
+			"C",
+			"L",
+			"O"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RA"
+		],
+		"conditionInflictSpell": [
+			"invisible"
+		],
+		"savingThrowForcedSpell": [
+			"constitution",
+			"dexterity",
+			"wisdom"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Archmage"
+	},
+	"Archpriest|XMM": {
+		"name": "大祭司",
+		"source": "XMM",
+		"page": 248,
+		"referenceSources": [
+			"DrDe",
+			"FRAiF",
+			"NF",
+			"EFA"
+		],
+		"size": [
+			"S",
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"cleric"
+			]
+		},
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			16
+		],
+		"hp": {
+			"average": 240,
+			"formula": "32d8 + 96"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"initiative": {
+			"proficiency": 1
+		},
+		"str": 16,
+		"dex": 12,
+		"con": 17,
+		"int": 14,
+		"wis": 21,
+		"cha": 14,
+		"save": {
+			"str": "+7",
+			"con": "+7",
+			"int": "+6",
+			"wis": "+9"
+		},
+		"skill": {
+			"insight": "+9",
+			"medicine": "+9",
+			"perception": "+9",
+			"religion": "+10"
+		},
+		"passive": 19,
+		"languages": [
+			"Common plus two other languages"
+		],
+		"cr": "12",
+		"gear": [
+			"chain mail|xphb",
+			"holy symbol|xphb"
+		],
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"大祭司施展下列法術之一，無需材料成分，以感知作為施法屬性（法術豁免 {@dc 17}）："
+				],
+				"will": [
+					"{@spell Light|XPHB}",
+					"{@spell Thaumaturgy|XPHB}"
+				],
+				"daily": {
+					"1e": [
+						"{@spell Flame Strike|XPHB} (level 6 version)",
+						"{@spell Greater Restoration|XPHB}",
+						"{@spell Raise Dead|XPHB}",
+						"{@spell Zone of Truth|XPHB}"
+					]
+				},
+				"ability": "wis",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			},
+			{
+				"name": "神聖援助（每日 3 次）",
+				"type": "spellcasting",
+				"headerEntries": [
+					"大祭司施展{@spell Bless|XPHB}、{@spell Dispel Magic|XPHB}、{@spell Healing Word|XPHB}或{@spell Lesser Restoration|XPHB}，使用與「施法」相同的施法屬性。"
+				],
+				"daily": {
+					"3": [
+						"{@spell Bless|XPHB}",
+						"{@spell Dispel Magic|XPHB}",
+						"{@spell Healing Word|XPHB}",
+						"{@spell Lesser Restoration|XPHB}"
+					]
+				},
+				"ability": "wis",
+				"displayAs": "bonus",
+				"hidden": [
+					"daily"
+				],
+				"ENG_name": "Divine Aid (3/Day)"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"大祭司進行三次光耀爆發攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "光耀爆發",
+				"entries": [
+					"{@atkr m,r} {@hit 9}，觸及 5 呎或射程 60 呎。{@h}27（{@damage 4d10 + 5}）光耀傷害。"
+				],
+				"ENG_name": "Radiant Burst"
+			},
+			{
+				"name": "聖言 {@recharge 4}",
+				"entries": [
+					"{@actSave wis} {@dc 17}，從大祭司發出的 20 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內的每個敵人。{@actSaveFail}21（{@damage 6d6}）光耀傷害，且目標處於{@condition Stunned|XPHB}狀態直到大祭司的下個回合結束。{@actSaveSuccess}僅受一半傷害。"
+				],
+				"ENG_name": "Holy Word {@recharge 4}"
+			}
+		],
+		"environment": [
+			"any"
+		],
+		"treasure": [
+			"individual",
+			"relics"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"R"
+		],
+		"damageTagsSpell": [
+			"F",
+			"R"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"RA"
+		],
+		"conditionInflict": [
+			"stunned"
+		],
+		"savingThrowForced": [
+			"wisdom"
+		],
+		"savingThrowForcedSpell": [
+			"charisma",
+			"dexterity"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Archpriest"
+	},
+	"Assassin|XMM": {
+		"name": "刺客",
+		"source": "XMM",
+		"page": 22,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"DrDe",
+			"FRAiF",
+			"ABH",
+			"LFL",
+			"EFA"
+		],
+		"size": [
+			"S",
+			"M"
+		],
+		"type": "humanoid",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			16
+		],
+		"hp": {
+			"average": 97,
+			"formula": "15d8 + 30"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 11,
+		"dex": 18,
+		"con": 14,
+		"int": 16,
+		"wis": 11,
+		"cha": 10,
+		"save": {
+			"dex": "+7",
+			"int": "+6"
+		},
+		"skill": {
+			"acrobatics": "+7",
+			"perception": "+6",
+			"stealth": "+10"
+		},
+		"passive": 16,
+		"resist": [
+			"poison"
+		],
+		"languages": [
+			"Common",
+			"Thieves' cant"
+		],
+		"cr": "8",
+		"gear": [
+			"light crossbow|xphb",
+			"shortsword|xphb",
+			"studded leather armor|xphb"
+		],
+		"trait": [
+			{
+				"name": "閃避",
+				"entries": [
+					"若刺客受到允許其進行敏捷豁免檢定以只承受一半傷害的效果影響，刺客改為豁免成功時不受傷害，失敗時只受一半傷害。若它處於{@condition Incapacitated|XPHB}狀態，則無法使用此特性。"
+				],
+				"ENG_name": "Evasion"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"刺客進行三次攻擊，以短劍或輕弩任意組合。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "短劍",
+				"entries": [
+					"{@atkr m} {@hit 7}，觸及 5 呎。{@h}7（{@damage 1d6 + 4}）穿刺傷害外加 17（{@damage 5d6}）毒素傷害，且目標處於{@condition Poisoned|XPHB}狀態直到刺客的下個回合開始。"
+				],
+				"ENG_name": "Shortsword"
+			},
+			{
+				"name": "輕弩",
+				"entries": [
+					"{@atkr r} {@hit 7}，射程 80/320 呎。{@h}8（{@damage 1d8 + 4}）穿刺傷害外加 21（{@damage 6d6}）毒素傷害。"
+				],
+				"ENG_name": "Light Crossbow"
+			}
+		],
+		"bonus": [
+			{
+				"name": "靈巧動作",
+				"entries": [
+					"刺客執行{@action Dash|XPHB}、{@action Disengage|XPHB}或{@action Hide|XPHB}動作。"
+				],
+				"ENG_name": "Cunning Action"
+			}
+		],
+		"environment": [
+			"any"
+		],
+		"treasure": [
+			"implements",
+			"individual"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/assassin.mp3"
+		},
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"TC"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MA",
+			"MLW",
+			"RA",
+			"RNG"
+		],
+		"conditionInflict": [
+			"poisoned"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Assassin"
+	},
+	"Awakened Shrub|XMM": {
+		"name": "啟蒙灌木",
+		"source": "XMM",
+		"page": 23,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRHoF"
+		],
+		"size": [
+			"S"
+		],
+		"type": "plant",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			9
+		],
+		"hp": {
+			"average": 10,
+			"formula": "3d6"
+		},
+		"speed": {
+			"walk": 20
+		},
+		"str": 3,
+		"dex": 8,
+		"con": 11,
+		"int": 10,
+		"wis": 10,
+		"cha": 6,
+		"passive": 10,
+		"resist": [
+			"piercing"
+		],
+		"vulnerable": [
+			"fire"
+		],
+		"languages": [
+			"Common plus one other language"
+		],
+		"cr": "0",
+		"action": [
+			{
+				"name": "耙抓",
+				"entries": [
+					"{@atkr m} {@hit 1}，觸及 5 呎。{@h}1 點揮砍傷害。"
+				],
+				"ENG_name": "Rake"
+			}
+		],
+		"environment": [
+			"forest"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/awakened-shrub.mp3"
+		},
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Awakened Shrub"
+	},
+	"Awakened Tree|XMM": {
+		"name": "啟蒙樹木",
+		"source": "XMM",
+		"page": 23,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRHoF",
+			"FRAiF"
+		],
+		"size": [
+			"H"
+		],
+		"type": "plant",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 59,
+			"formula": "7d12 + 14"
+		},
+		"speed": {
+			"walk": 20
+		},
+		"str": 19,
+		"dex": 6,
+		"con": 15,
+		"int": 10,
+		"wis": 10,
+		"cha": 7,
+		"passive": 10,
+		"resist": [
+			"bludgeoning",
+			"piercing"
+		],
+		"vulnerable": [
+			"fire"
+		],
+		"languages": [
+			"Common plus one other language"
+		],
+		"cr": "2",
+		"action": [
+			{
+				"name": "猛擊",
+				"entries": [
+					"{@atkr m} {@hit 6}，觸及 10 呎。{@h}13（{@damage 2d8 + 4}）鈍擊傷害。"
+				],
+				"ENG_name": "Slam"
+			}
+		],
+		"environment": [
+			"forest"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/awakened-tree.mp3"
+		},
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MA",
+			"RCH"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Awakened Tree"
+	},
+	"Axe Beak|XMM": {
+		"name": "斧喙鳥",
+		"source": "XMM",
+		"page": 24,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRHoF"
+		],
+		"size": [
+			"L"
+		],
+		"type": "monstrosity",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			11
+		],
+		"hp": {
+			"average": 19,
+			"formula": "3d10 + 3"
+		},
+		"speed": {
+			"walk": 50
+		},
+		"str": 14,
+		"dex": 12,
+		"con": 12,
+		"int": 2,
+		"wis": 10,
+		"cha": 5,
+		"passive": 10,
+		"cr": "1/4",
+		"action": [
+			{
+				"name": "啄擊",
+				"entries": [
+					"{@atkr m} {@hit 4}，觸及 5 呎。{@h}5（{@damage 1d6 + 2}）揮砍傷害。"
+				],
+				"ENG_name": "Beak"
+			}
+		],
+		"environment": [
+			"arctic",
+			"grassland",
+			"hill"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/axe-beak.mp3"
+		},
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Axe Beak"
+	},
+	"Azer Pyromancer|XMM": {
+		"name": "阿澤爾火術士",
+		"source": "XMM",
+		"page": 25,
+		"referenceSources": [
+			"FRAiF"
+		],
+		"size": [
+			"M"
+		],
+		"type": "elemental",
+		"alignment": [
+			"L",
+			"N"
+		],
+		"ac": [
+			18
+		],
+		"hp": {
+			"average": 97,
+			"formula": "13d8 + 39"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 15,
+		"dex": 14,
+		"con": 16,
+		"int": 12,
+		"wis": 18,
+		"cha": 13,
+		"save": {
+			"con": "+6",
+			"wis": "+7"
+		},
+		"skill": {
+			"arcana": "+4",
+			"perception": "+7"
+		},
+		"passive": 17,
+		"immune": [
+			"fire",
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"Primordial (Ignan)"
+		],
+		"cr": "6",
+		"spellcasting": [
+			{
+				"name": "施法",
+				"type": "spellcasting",
+				"headerEntries": [
+					"阿澤爾火術士施展下列法術之一，無需材料成分，以感知作為施法屬性（法術豁免 {@dc 15}）："
+				],
+				"will": [
+					"{@spell Elementalism|XPHB}",
+					"{@spell Mage Hand|XPHB}"
+				],
+				"daily": {
+					"1": [
+						"{@spell Fireball|XPHB}"
+					]
+				},
+				"ability": "wis",
+				"displayAs": "action",
+				"ENG_name": "Spellcasting"
+			},
+			{
+				"name": "煉獄叱喝（每日 2 次）",
+				"type": "spellcasting",
+				"headerEntries": [
+					"阿澤爾火術士在該法術的觸發條件發生時施展{@spell Hellish Rebuke|XPHB}，使用與「施法」相同的施法屬性。"
+				],
+				"daily": {
+					"2": [
+						"{@spell Hellish Rebuke|XPHB}"
+					]
+				},
+				"ability": "wis",
+				"displayAs": "reaction",
+				"hidden": [
+					"daily"
+				],
+				"ENG_name": "Hellish Rebuke (2/Day)"
+			}
+		],
+		"trait": [
+			{
+				"name": "火焰靈光",
+				"entries": [
+					"在阿澤爾火術士的每個回合結束時，除非阿澤爾火術士處於{@condition Incapacitated|XPHB}狀態，否則從阿澤爾火術士發出的 5 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內每個由阿澤爾火術士選擇的生物受到 11（{@damage 2d10}）火焰傷害。"
+				],
+				"ENG_name": "Fire Aura"
+			},
+			{
+				"name": "照明",
+				"entries": [
+					"阿澤爾火術士在 10 呎半徑內發出{@variantrule Bright Light|XPHB}，並在其外額外 10 呎發出{@variantrule Dim Light|XPHB}。"
+				],
+				"ENG_name": "Illumination"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"阿澤爾火術士進行兩次火焰爆發攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "火焰爆發",
+				"entries": [
+					"{@atkr m,r} {@hit 7}，觸及 5 呎或射程 120 呎。{@h}15（{@damage 2d10 + 4}）火焰傷害。"
+				],
+				"ENG_name": "Flame Burst"
+			}
+		],
+		"environment": [
+			"mountain",
+			"planar, fire"
+		],
+		"treasure": [
+			"armaments",
+			"individual"
+		],
+		"traitTags": [
+			"Illumination"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"IG",
+			"P"
+		],
+		"damageTags": [
+			"F"
+		],
+		"damageTagsSpell": [
+			"F"
+		],
+		"spellcastingTags": [
+			"O"
+		],
+		"miscTags": [
+			"AOE",
+			"MA",
+			"RA"
+		],
+		"savingThrowForcedSpell": [
+			"dexterity"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Azer Pyromancer"
+	},
+	"Azer Sentinel|XMM": {
+		"name": "阿澤爾哨兵",
+		"source": "XMM",
+		"page": 25,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"FRAiF"
+		],
+		"size": [
+			"M"
+		],
+		"type": "elemental",
+		"alignment": [
+			"L",
+			"N"
+		],
+		"ac": [
+			17
+		],
+		"hp": {
+			"average": 39,
+			"formula": "6d8 + 12"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 17,
+		"dex": 12,
+		"con": 15,
+		"int": 12,
+		"wis": 13,
+		"cha": 10,
+		"save": {
+			"con": "+4"
+		},
+		"passive": 11,
+		"immune": [
+			"fire",
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"Primordial (Ignan)"
+		],
+		"cr": "2",
+		"trait": [
+			{
+				"name": "火焰靈光",
+				"entries": [
+					"在阿澤爾哨兵的每個回合結束時，除非阿澤爾哨兵處於{@condition Incapacitated|XPHB}狀態，否則從阿澤爾哨兵發出的 5 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內每個由阿澤爾哨兵選擇的生物受到 5（{@damage 1d10}）火焰傷害。"
+				],
+				"ENG_name": "Fire Aura"
+			},
+			{
+				"name": "照明",
+				"entries": [
+					"阿澤爾哨兵在 10 呎半徑內發出{@variantrule Bright Light|XPHB}，並在其外額外 10 呎發出{@variantrule Dim Light|XPHB}。"
+				],
+				"ENG_name": "Illumination"
+			}
+		],
+		"action": [
+			{
+				"name": "燃燒戰錘",
+				"entries": [
+					"{@atkr m} {@hit 5}，觸及 5 呎。{@h}8（{@damage 1d10 + 3}）鈍擊傷害外加 3（{@damage 1d6}）火焰傷害。"
+				],
+				"ENG_name": "Burning Hammer"
+			}
+		],
+		"environment": [
+			"mountain",
+			"planar, fire"
+		],
+		"treasure": [
+			"armaments",
+			"individual"
+		],
+		"traitTags": [
+			"Illumination"
+		],
+		"languageTags": [
+			"IG",
+			"P"
+		],
+		"damageTags": [
+			"B",
+			"F"
+		],
+		"miscTags": [
+			"AOE",
+			"MA"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Azer Sentinel"
+	},
+	"Baboon|XMM": {
+		"name": "狒狒",
+		"source": "XMM",
+		"page": 349,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"S"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 3,
+			"formula": "1d6"
+		},
+		"speed": {
+			"walk": 30,
+			"climb": 30
+		},
+		"str": 8,
+		"dex": 14,
+		"con": 11,
+		"int": 4,
+		"wis": 12,
+		"cha": 6,
+		"passive": 11,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "群體戰術",
+				"entries": [
+					"若狒狒至少有一名盟友位於某生物 5 呎內，且該盟友未處於{@condition Incapacitated|XPHB}狀態，狒狒對該生物的攻擊檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Pack Tactics"
+			}
+		],
+		"action": [
+			{
+				"name": "啃咬",
+				"entries": [
+					"{@atkr m} {@hit 1}，觸及 5 呎。{@h}1（{@damage 1d4 - 1}）穿刺傷害。"
+				],
+				"ENG_name": "Bite"
+			}
+		],
+		"environment": [
+			"forest",
+			"hill"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/baboon.mp3"
+		},
+		"traitTags": [
+			"Pack Tactics"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Baboon"
+	},
+	"Badger|XMM": {
+		"name": "獾",
+		"source": "XMM",
+		"page": 349,
+		"srd52": true,
+		"basicRules2024": true,
+		"otherSources": [
+			{
+				"source": "XPHB",
+				"page": 346
+			}
+		],
+		"size": [
+			"T"
+		],
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			11
+		],
+		"hp": {
+			"average": 5,
+			"formula": "1d4 + 3"
+		},
+		"speed": {
+			"walk": 20,
+			"burrow": 5
+		},
+		"str": 10,
+		"dex": 11,
+		"con": 16,
+		"int": 2,
+		"wis": 12,
+		"cha": 5,
+		"skill": {
+			"perception": "+3"
+		},
+		"senses": [
+			"Darkvision 30 ft."
+		],
+		"passive": 13,
+		"resist": [
+			"poison"
+		],
+		"cr": "0",
+		"action": [
+			{
+				"name": "啃咬",
+				"entries": [
+					"{@atkr m} {@hit 2}，觸及 5 呎。{@h}1 點穿刺傷害。"
+				],
+				"ENG_name": "Bite"
+			}
+		],
+		"environment": [
+			"forest"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/badger.mp3"
+		},
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MA"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Badger"
+	},
+	"Balor|XMM": {
+		"name": "巴洛炎魔",
+		"group": [
+			"Demons"
+		],
+		"source": "XMM",
+		"page": 26,
+		"srd52": true,
+		"basicRules2024": true,
+		"size": [
+			"H"
+		],
+		"type": {
+			"type": "fiend",
+			"tags": [
+				"demon"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			19
+		],
+		"hp": {
+			"average": 287,
+			"formula": "23d12 + 138"
+		},
+		"speed": {
+			"walk": 40,
+			"fly": 80
+		},
+		"initiative": {
+			"proficiency": 2
+		},
+		"str": 26,
+		"dex": 15,
+		"con": 22,
+		"int": 20,
+		"wis": 16,
+		"cha": 22,
+		"save": {
+			"con": "+12",
+			"wis": "+9"
+		},
+		"skill": {
+			"perception": "+9"
+		},
+		"senses": [
+			"Truesight 120 ft."
+		],
+		"passive": 19,
+		"resist": [
+			"cold",
+			"lightning"
+		],
+		"immune": [
+			"fire",
+			"poison"
+		],
+		"conditionImmune": [
+			"charmed",
+			"frightened",
+			"poisoned"
+		],
+		"languages": [
+			"Abyssal; telepathy 120 ft."
+		],
+		"cr": "19",
+		"trait": [
+			{
+				"name": "臨死掙扎",
+				"entries": [
+					"巴洛炎魔死亡時會爆炸。{@actSave dex} {@dc 20}，從巴洛炎魔發出的 30 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內的每個生物。{@actSaveFail}31（{@damage 9d6}）火焰傷害外加 31（{@damage 9d6}）力場傷害。{@actSaveSuccess}傷害減半。{@actSaveSuccessOrFail}若巴洛炎魔死於無底深淵之外，它會立即獲得新的身體，在無底深淵某處以全部{@variantrule Hit Points|XPHB}復活。"
+				],
+				"ENG_name": "Death Throes"
+			},
+			{
+				"name": "火焰靈光",
+				"entries": [
+					"在巴洛炎魔的每個回合結束時，從巴洛炎魔發出的 5 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內的每個生物受到 13（{@damage 3d8}）火焰傷害。"
+				],
+				"ENG_name": "Fire Aura"
+			},
+			{
+				"name": "傳奇抗性（每日 3 次）",
+				"entries": [
+					"若巴洛炎魔豁免檢定失敗，它可以選擇改為成功。"
+				],
+				"ENG_name": "Legendary Resistance (3/Day)"
+			},
+			{
+				"name": "魔法抗性",
+				"entries": [
+					"巴洛炎魔對法術與其他魔法效果的豁免檢定具有{@variantrule Advantage|XPHB}。"
+				],
+				"ENG_name": "Magic Resistance"
+			}
+		],
+		"action": [
+			{
+				"name": "多重攻擊",
+				"entries": [
+					"巴洛炎魔進行一次火焰鞭攻擊與一次閃電之刃攻擊。"
+				],
+				"ENG_name": "Multiattack"
+			},
+			{
+				"name": "火焰鞭",
+				"entries": [
+					"{@atkr m} {@hit 14}，觸及 30 呎。{@h}18（{@damage 3d6 + 8}）力場傷害外加 17（{@damage 5d6}）火焰傷害。若目標是超大型或更小的生物，巴洛炎魔將目標直線拉向自己至多 25 呎，且目標處於{@condition Prone|XPHB}狀態。"
+				],
+				"ENG_name": "Flame Whip"
+			},
+			{
+				"name": "閃電之刃",
+				"entries": [
+					"{@atkr m} {@hit 14}，觸及 10 呎。{@h}21（{@damage 3d8 + 8}）力場傷害外加 22（{@damage 4d10}）閃電傷害，且目標直到巴洛炎魔的下個回合開始前無法執行反應。"
+				],
+				"ENG_name": "Lightning Blade"
+			}
+		],
+		"bonus": [
+			{
+				"name": "傳送",
+				"entries": [
+					"巴洛炎魔將自己或其 10 呎內一個自願的惡魔傳送至多 60 呎，到達一處巴洛炎魔能看見的未被佔據空間。"
+				],
+				"ENG_name": "Teleport"
+			}
+		],
+		"environment": [
+			"planar, abyss"
+		],
+		"treasure": [
+			"armaments"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/balor.mp3"
+		},
+		"traitTags": [
+			"Death Burst",
+			"Legendary Resistances",
+			"Magic Resistance"
+		],
+		"senseTags": [
+			"U"
+		],
+		"actionTags": [
+			"Multiattack",
+			"Teleport"
+		],
+		"languageTags": [
+			"AB",
+			"TP"
+		],
+		"damageTags": [
+			"F",
+			"L",
+			"O"
+		],
+		"miscTags": [
+			"MA",
+			"MLW",
+			"RCH"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"savingThrowForced": [
+			"dexterity"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Balor"
+	},
+	"Bandit|XMM": {
+		"name": "強盜",
+		"source": "XMM",
+		"page": 27,
+		"srd52": true,
+		"basicRules2024": true,
+		"referenceSources": [
+			"BQGT",
+			"DrDe",
+			"HotB",
+			"FRAiF",
+			"ABH",
+			"EFA"
+		],
+		"size": [
+			"S",
+			"M"
+		],
+		"type": "humanoid",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 11,
+			"formula": "2d8 + 2"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 11,
+		"dex": 12,
+		"con": 12,
+		"int": 10,
+		"wis": 10,
+		"cha": 10,
+		"passive": 10,
+		"languages": [
+			"Common",
+			"Thieves' cant"
+		],
+		"cr": "1/8",
+		"gear": [
+			"leather armor|xphb",
+			"light crossbow|xphb",
+			"scimitar|xphb"
+		],
+		"action": [
+			{
+				"name": "彎刀",
+				"entries": [
+					"{@atkr m} {@hit 3}，觸及 5 呎。{@h}4（{@damage 1d6 + 1}）揮砍傷害。"
+				],
+				"ENG_name": "Scimitar"
+			},
+			{
+				"name": "輕弩",
+				"entries": [
+					"{@atkr r} {@hit 3}，射程 80/320 呎。{@h}5（{@damage 1d8 + 1}）穿刺傷害。"
+				],
+				"ENG_name": "Light Crossbow"
+			}
+		],
+		"environment": [
+			"any"
+		],
+		"treasure": [
+			"any"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/bandit.mp3"
+		},
+		"languageTags": [
+			"C",
+			"TC"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MA",
+			"MLW",
+			"RA",
+			"RNG"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Bandit"
+	},
 	"Steel Defender|EFA": {
 		"name": "鋼鐵衛士",
 		"source": "EFA",

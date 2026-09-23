@@ -179,12 +179,17 @@ const fillTags = (str, isOverrideEn = false) => str.replace(RE_TAG, (m, tag, bod
 });
 // 已翻譯實體裡「只有標籤」的字串（例如法術表的一格 {@spell Cone of Cold|XPHB}）也補上中文名
 const RE_ONLY_TAGS = /^[\s\d,;:()+\-–]*(\{@[^{}]+\}[\s\d,;:()+\-–]*)+$/;
+// 法術清單（怪物施法）會被 _copy 的 replaceSpells 用字串比對，不能動
+const NO_FILL_KEYS = new Set(["will", "daily", "spells", "weekly", "monthly", "yearly", "rest", "restLong", "ritual", "recharge", "charges", "legendary", "_copy", "_mod"]);
 const walkStrings = (v, inZh = false) => {
 	if (typeof v === "string") return v.includes("{@") && (hasCjk(v) || (inZh && RE_ONLY_TAGS.test(v))) ? fillTags(v, inZh && RE_ONLY_TAGS.test(v)) : v;
 	if (Array.isArray(v)) { for (let i = 0; i < v.length; ++i) v[i] = walkStrings(v[i], inZh); return v; }
 	if (v && typeof v === "object") {
 		const z = inZh || !!v.name_zh;
-		for (const k of Object.keys(v)) if (k !== "name") v[k] = walkStrings(v[k], z);
+		for (const k of Object.keys(v)) {
+			if (k === "name") continue;
+			v[k] = NO_FILL_KEYS.has(k) ? walkStrings(v[k], false) : walkStrings(v[k], z);
+		}
 		return v;
 	}
 	return v;
