@@ -1,0 +1,646 @@
+{
+	"batch": "xmm-09",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Gibbering Mouther|XMM",
+			"hint": {
+				"Gibbering Mouther": "懼噬體",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Gibbering Mouther",
+				"Aberrant Ground",
+				"The ground in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the mouther is {@variantrule Difficult Terrain|XPHB}.",
+				"Gibbering",
+				"The mouther babbles incoherently while it doesn't have the {@condition Incapacitated|XPHB} condition. {@actSave wis} {@dc 10}, any creature that starts its turn within 20 feet of the mouther while it is babbling. {@actSaveFail} The target rolls {@dice 1d8} to determine what it does during the current turn:",
+				"1-4",
+				"The target does nothing.",
+				"5-6",
+				"The target takes no action or {@variantrule Bonus Action|XPHB} and uses all its movement to move in a random direction.",
+				"7-8",
+				"The target makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.",
+				"Bite",
+				"{@atkr m} {@hit 2}, reach 5 ft. {@h}7 ({@damage 2d6}) Piercing damage. If the target is a Medium or smaller creature, it has the {@condition Prone|XPHB} condition. The target dies if it is reduced to 0 {@variantrule Hit Points|XPHB} by this attack. Its body is then absorbed into the mouther, leaving only equipment behind.",
+				"Blinding Spittle {@recharge 5}",
+				"{@actSave dex} {@dc 10}, each creature in a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point within 30 feet. {@actSaveFail} 7 ({@damage 2d6}) Radiant damage, and the target has the {@condition Blinded|XPHB} condition until the end of the mouther's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Githyanki Dracomancer|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Misty Step (3/Day)": "迷蹤步（每日 3 次）",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Githyanki Dracomancer",
+				"(hover)",
+				"Spellcasting",
+				"The githyanki casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 18}, {@hit 10} to hit with spell attacks):",
+				"Misty Step (3/Day)",
+				"The githyanki casts {@spell Misty Step|XPHB}, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The githyanki makes three Draconic Strike attacks.",
+				"Draconic Strike",
+				"{@atkr m,r} {@hit 10}, reach 10 ft. or range 120 ft. {@h}12 ({@damage 2d6 + 5}) Slashing damage plus 17 ({@damage 5d6}) Fire damage, and the target has the {@condition Frightened|XPHB} condition until the start of the githyanki's next turn.",
+				"Conjured Dragon's Breath {@recharge 5}",
+				"{@actSave dex} {@dc 18}, each creature in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 27 ({@damage 6d8}) Fire damage plus 27 ({@damage 6d8}) Force damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Githyanki Knight|XMM",
+			"hint": {
+				"Githyanki Knight": "吉斯洋基騎士",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Githyanki Knight",
+				"Spellcasting",
+				"The githyanki casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 13}):",
+				"Misty Step (2/Day)",
+				"The githyanki casts {@spell Misty Step|XPHB}, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The githyanki makes three Silver Sword attacks. It can replace one attack with a use of Spellcasting to cast {@spell Telekinesis|XPHB} if available.",
+				"Silver Sword",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Slashing damage plus 14 ({@damage 4d6}) Psychic damage. Critical {@h}If the target is in an astral body (as with the {@spell Astral Projection|XPHB} spell), the githyanki can cut the silvery cord that tethers the target to its material body instead of dealing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Githyanki Warrior|XMM",
+			"hint": {
+				"Githyanki Warrior": "吉斯洋基戰士",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Githyanki Warrior",
+				"Spellcasting",
+				"The githyanki casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability:",
+				"Misty Step (2/Day)",
+				"The githyanki casts {@spell Misty Step|XPHB}, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The githyanki makes two Psi Blade attacks.",
+				"Psi Blade",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}9 ({@damage 2d6 + 2}) Slashing damage plus 7 ({@damage 2d6}) Psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Githzerai Monk|XMM",
+			"hint": {
+				"Githzerai Monk": "吉斯澤萊武僧",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Githzerai Monk",
+				"Spellcasting",
+				"The githzerai casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability:",
+				"Psi-Powered Leap (2/Day)",
+				"The githzerai casts {@spell Jump|XPHB}, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+				"Psionic Defense (2/Day)",
+				"The githzerai casts {@spell Feather Fall|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The githzerai makes two Psi Strike attacks.",
+				"Psi Strike",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Bludgeoning damage plus 9 ({@damage 2d8}) Psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Githzerai Psion|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Githzerai Psion",
+				"(hover)",
+				"Spellcasting",
+				"The githzerai casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 16}):",
+				"Psionic Defense",
+				"The githzerai casts {@spell Feather Fall|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The githzerai makes three Psychic Warp attacks.",
+				"Psychic Warp",
+				"{@atkr m,r} {@hit 8}, reach 5 ft. or range 120 ft. {@h}26 ({@damage 4d10 + 4}) Psychic damage, and the target has the githzerai's choice of (A) the {@condition Charmed|XPHB} condition until the start of the githzerai's next turn or (B) the {@condition Prone|XPHB} condition, provided the target is a Large or smaller creature."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Githzerai Zerth|XMM",
+			"hint": {
+				"Githzerai Zerth": "吉斯澤萊澤斯修士",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Githzerai Zerth",
+				"Spellcasting",
+				"The githzerai casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability (spell save {@dc 14}):",
+				"Psi-Powered Leap (2/Day)",
+				"The githzerai casts {@spell Jump|XPHB}, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+				"Psionic Defense (2/Day)",
+				"The githzerai casts {@spell Feather Fall|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The githzerai makes two Psi Strike attacks.",
+				"Psi Strike",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Bludgeoning damage plus 13 ({@damage 3d8}) Psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Glabrezu|XMM",
+			"hint": {
+				"Glabrezu": "迷誘魔",
+				"Spellcasting": "施法",
+				"Demonic Restoration": "惡魔復原",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Pincer": "鉗擊"
+			},
+			"s": [
+				"Glabrezu",
+				"Spellcasting",
+				"The glabrezu casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save {@dc 16}):",
+				"Demonic Restoration",
+				"If the glabrezu dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Abyss.",
+				"Magic Resistance",
+				"The glabrezu has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The glabrezu makes two Pincer attacks and uses Pummel or Spellcasting.",
+				"Pincer",
+				"{@atkr m} {@hit 9}, reach 10 ft. {@h}16 ({@damage 2d10 + 5}) Slashing damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 15}) from one of two pincers.",
+				"Pummel",
+				"{@actSave dex} {@dc 17}, one creature {@condition Grappled|XPHB} by the glabrezu. {@actSaveFail} 15 ({@damage 3d6 + 5}) Bludgeoning damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gladiator|XMM",
+			"hint": {
+				"Gladiator": "角鬥士",
+				"Multiattack": "多重攻擊",
+				"Spear": "矛",
+				"Shield Bash": "盾擊",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Gladiator",
+				"Multiattack",
+				"The gladiator makes three Spear attacks. It can replace one attack with a use of Shield Bash.",
+				"Spear",
+				"{@atkr m,r} {@hit 7}, reach 5 ft. or range 20/60 ft. {@h}11 ({@damage 2d6 + 4}) Piercing damage.",
+				"Shield Bash",
+				"{@actSave str} {@dc 15}, one creature within 5 feet that the gladiator can see. {@actSaveFail} 9 ({@damage 2d4 + 4}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Prone|XPHB} condition.",
+				"Parry",
+				"{@actTrigger} The gladiator is hit by a melee attack roll while holding a weapon. {@actResponse} The gladiator adds 3 to its AC against that attack, possibly causing it to miss."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gnoll Demoniac|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Gnoll Demoniac",
+				"Multiattack",
+				"The gnoll makes two Abyssal Strike attacks.",
+				"Abyssal Strike",
+				"{@atkr m,r} {@hit 6}, reach 5 ft. or range 60 ft. {@h}20 ({@damage 5d6 + 3}) Poison damage.",
+				"Hunger of Yeenoghu {@recharge 5}",
+				"The gnoll conjures a 30-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} of magical {@variantrule Darkness|XPHB} originating from a point it can see within 60 feet, which lasts for 1 minute or until the gnoll's {@status Concentration|XPHB} ends on it. This area is {@variantrule Difficult Terrain|XPHB}. {@actSave dex} {@dc 14}, any creature that starts its turn in this area or enters it for the first time on a turn. {@actSaveFail} 28 ({@damage 8d6}) Necrotic damage, and the gnoll or a creature of its choice it can see gains 10 {@variantrule Temporary Hit Points|XPHB}. {@actSaveSuccess} Half damage only.",
+				"Rampage (2/Day)",
+				"Immediately after dealing damage to a creature that is already {@status Bloodied|XPHB}, the gnoll moves up to half its {@variantrule Speed|XPHB}, and it makes one Abyssal Strike attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gnoll Fang of Yeenoghu|XMM",
+			"hint": {
+				"Gnoll Fang of Yeenoghu": "豺狼人．耶諾古毒牙",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Gnoll Fang of Yeenoghu",
+				"Multiattack",
+				"The gnoll makes one Bite attack and two Bone Flail attacks.",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Piercing damage plus 7 ({@damage 2d6}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the gnoll's next turn.",
+				"Bone Flail",
+				"{@atkr m} {@hit 5}, reach 10 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage.",
+				"Rampage (2/Day)",
+				"Immediately after dealing damage to a creature that is already {@status Bloodied|XPHB}, the gnoll moves up to half its {@variantrule Speed|XPHB}, and it makes one Bite attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gnoll Pack Lord|XMM",
+			"hint": {
+				"Gnoll Pack Lord": "豺狼人頭領",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Gnoll Pack Lord",
+				"Multiattack",
+				"The gnoll makes two attacks, using Bone Whip or Bone Javelin in any combination, and it uses Incite Rampage if available.",
+				"Bone Whip",
+				"{@atkr m} {@hit 5}, reach 10 ft. {@h}8 ({@damage 2d4 + 3}) Slashing damage.",
+				"Bone Javelin",
+				"{@atkr r} {@hit 5}, range 30/120 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage.",
+				"Incite Rampage {@recharge 5}",
+				"The gnoll targets another creature it can see within 60 feet of itself that has the Rampage {@variantrule Bonus Action|XPHB}. The target can take a {@variantrule Reaction|XPHB} to make one melee attack.",
+				"Rampage (2/Day)",
+				"Immediately after dealing damage to a creature that is already {@status Bloodied|XPHB}, the gnoll moves up to half its {@variantrule Speed|XPHB}, and it makes one Bone Whip attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gnoll Warrior|XMM",
+			"hint": {
+				"Rend": "撕裂",
+				"Rampage (1/Day)": "暴走（每日 1 次）"
+			},
+			"s": [
+				"Gnoll Warrior",
+				"Rend",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage.",
+				"Bone Bow",
+				"{@atkr r} {@hit 3}, range 150/600 ft. {@h}6 ({@damage 1d10 + 1}) Piercing damage.",
+				"Rampage (1/Day)",
+				"Immediately after dealing damage to a creature that is already {@status Bloodied|XPHB}, the gnoll moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Goat|XMM",
+			"hint": {
+				"Goat": "山羊",
+				"Ram": "衝撞"
+			},
+			"s": [
+				"Goat",
+				"Ram",
+				"{@atkr m} {@hit 2}, reach 5 ft. {@h}1 Bludgeoning damage, or 2 ({@damage 1d4}) Bludgeoning damage if the goat moved 20+ feet straight toward the target immediately before the hit."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Goblin Boss|XMM",
+			"hint": {
+				"Goblin Boss": "哥布林頭目",
+				"Multiattack": "多重攻擊",
+				"Scimitar": "彎刀",
+				"Shortbow": "短弓"
+			},
+			"s": [
+				"Goblin Boss",
+				"Multiattack",
+				"The goblin makes two attacks, using Scimitar or Shortbow in any combination.",
+				"Scimitar",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Slashing damage, plus 2 ({@damage 1d4}) Slashing damage if the attack roll had {@variantrule Advantage|XPHB}.",
+				"Shortbow",
+				"{@atkr r} {@hit 4}, range 80/320 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage, plus 2 ({@damage 1d4}) Piercing damage if the attack roll had {@variantrule Advantage|XPHB}.",
+				"Nimble Escape",
+				"The goblin takes the {@action Disengage|XPHB} or {@action Hide|XPHB} action.",
+				"Redirect Attack",
+				"{@actTrigger} A creature the goblin can see makes an attack roll against it. {@actResponse} The goblin chooses a Small or Medium ally within 5 feet of itself. The goblin and that ally swap places, and the ally becomes the target of the attack instead."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Goblin Hexer|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Goblin Hexer",
+				"Spellcasting",
+				"The goblin casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 13}):",
+				"Multiattack",
+				"The goblin makes two Hex Stick attacks. It can replace one attack with a use of Spellcasting.",
+				"Hex Stick",
+				"{@atkr m,r} {@hit 5}, reach 5 ft. or range 60 ft. {@h}12 ({@damage 2d8 + 3}) Psychic damage.",
+				"Jinx",
+				"{@actTrigger} A creature the goblin can see hits it with an attack roll. {@actResponse d}{@actSave wis} {@dc 13}, the triggering creature. {@actSaveFail} The attack misses instead."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Goblin Minion|XMM",
+			"hint": {
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Goblin Minion",
+				"Dagger",
+				"{@atkr m,r} {@hit 4}, reach 5 ft. or range 20/60 ft. {@h}4 ({@damage 1d4 + 2}) Piercing damage.",
+				"Nimble Escape",
+				"The goblin takes the {@action Disengage|XPHB} or {@action Hide|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Goblin Warrior|XMM",
+			"hint": {
+				"Scimitar": "彎刀",
+				"Shortbow": "短弓"
+			},
+			"s": [
+				"Goblin Warrior",
+				"Scimitar",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Slashing damage, plus 2 ({@damage 1d4}) Slashing damage if the attack roll had {@variantrule Advantage|XPHB}.",
+				"Shortbow",
+				"{@atkr r} {@hit 4}, range 80/320 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage, plus 2 ({@damage 1d4}) Piercing damage if the attack roll had {@variantrule Advantage|XPHB}.",
+				"Nimble Escape",
+				"The goblin takes the {@action Disengage|XPHB} or {@action Hide|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gold Dragon Wyrmling|XMM",
+			"hint": {
+				"Gold Dragon Wyrmling": "金龍幼龍",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Fire Breath {@recharge 5}": "火焰吐息 {@recharge 5}",
+				"Weakening Breath": "虛弱吐息"
+			},
+			"s": [
+				"Gold Dragon Wyrmling",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Multiattack",
+				"The dragon makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}9 ({@damage 1d10 + 4}) Slashing damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 13}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 22 ({@damage 4d10}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Weakening Breath",
+				"{@actSave str} {@dc 13}, each creature that isn't currently affected by this breath in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target has {@variantrule Disadvantage|XPHB} on Strength-based {@variantrule D20 Test|XPHB|D20 Tests} and subtracts 2 ({@dice 1d4}) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gorgon|XMM",
+			"hint": {
+				"Gorgon": "石化牛(戈爾貢)",
+				"Gore": "頂撞",
+				"Trample": "踐踏"
+			},
+			"s": [
+				"Gorgon",
+				"Gore",
+				"{@atkr m} {@hit 8}, reach 5 ft. {@h}18 ({@damage 2d12 + 5}) Piercing damage. If the target is a Large or smaller creature and the gorgon moved 20+ feet straight toward it immediately before the hit, the target has the {@condition Prone|XPHB} condition.",
+				"Petrifying Breath {@recharge 5}",
+				"{@actSave con} {@dc 15}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail 1} The target has the {@condition Restrained|XPHB} condition and repeats the save at the end of its next turn if it is still {@condition Restrained|XPHB}, ending the effect on itself on a success. {@actSaveFail 2} The target has the {@condition Petrified|XPHB} condition instead of the {@condition Restrained|XPHB} condition.",
+				"Trample",
+				"{@actSave dex} {@dc 16}, one creature within 5 feet that has the {@condition Prone|XPHB} condition. {@actSaveFail} 16 ({@damage 2d10 + 5}) Bludgeoning damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Goristro|XMM",
+			"hint": {
+				"Goristro": "巨牛魔",
+				"Demonic Restoration": "惡魔復原",
+				"Magic Resistance": "魔法抗性",
+				"Siege Monster": "攻城怪獸",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Goristro",
+				"Demonic Restoration",
+				"If the goristro dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Abyss.",
+				"Magic Resistance",
+				"The goristro has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Siege Monster",
+				"The goristro deals double damage to objects and structures.",
+				"Multiattack",
+				"The goristro makes one Brutal Gore attack and two Slam attacks.",
+				"Brutal Gore",
+				"{@atkr m} {@hit 13}, reach 10 ft. {@h}40 ({@damage 6d10 + 7}) Piercing damage. If the target is a Huge or smaller creature, it is pushed up to 20 feet straight away from the goristro and has the {@condition Prone|XPHB} condition.",
+				"Slam",
+				"{@atkr m} {@hit 13}, reach 10 ft. {@h}29 ({@damage 4d10 + 7}) Bludgeoning damage.",
+				"Charge",
+				"The goristro moves up to half its {@variantrule Speed|XPHB} straight toward an enemy it can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Graveyard Revenant|XMM",
+			"hint": {
+				"Undead Restoration": "不死復原",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Graveyard Revenant",
+				"Undead Restoration",
+				"If the revenant dies, it revives 24 hours later unless {@spell Dispel Evil and Good|XPHB} is cast on its remains. If it revives, it animates another group of corpses elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its {@variantrule Hit Points|XPHB}.",
+				"Multiattack",
+				"The revenant makes two Suffocate attacks.",
+				"Suffocate",
+				"{@atkr m} {@hit 8}, reach 10 ft. {@h}10 ({@damage 1d10 + 5}) Bludgeoning damage plus 10 ({@damage 3d6}) Necrotic damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 15}). Until the grapple ends, the target is suffocating. The revenant can have up to two targets {@condition Grappled|XPHB} in this way at a time.",
+				"Haunting Glare {@recharge 5}",
+				"{@actSave wis} {@dc 15}, each creature in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the revenant. {@actSaveFail} The target has the {@condition Paralyzed|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gray Ooze|XMM",
+			"hint": {
+				"Gray Ooze": "灰泥怪",
+				"Amorphous": "無定形",
+				"Corrosive Form": "腐蝕形體",
+				"Pseudopod": "偽足"
+			},
+			"s": [
+				"Gray Ooze",
+				"Amorphous",
+				"The ooze can move through a space as narrow as 1 inch without expending extra movement to do so.",
+				"Corrosive Form",
+				"Nonmagical ammunition is destroyed immediately after hitting the ooze and dealing any damage. Any nonmagical weapon takes a cumulative -1 penalty to attack rolls immediately after dealing damage to the ooze and coming into contact with it. The weapon is destroyed if the penalty reaches -5. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the weapon.",
+				"The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.",
+				"Pseudopod",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}10 ({@damage 2d8 + 1}) Acid damage. Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the armor."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gray Slaad|XMM",
+			"hint": {
+				"Gray Slaad": "史拉灰蟾",
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Gray Slaad",
+				"Spellcasting",
+				"The slaad casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 16}):",
+				"Magic Resistance",
+				"The slaad has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Regeneration",
+				"The slaad regains 10 {@variantrule Hit Points|XPHB} at the start of each of its turns if it has at least 1 {@variantrule Hit Points|XPHB|Hit Point}.",
+				"Multiattack",
+				"The slaad makes two Chaos Claw attacks.",
+				"Chaos Claw",
+				"{@atkr m} {@hit 8}, reach 10 ft. {@h}9 ({@damage 1d10 + 4}) Slashing damage plus 11 ({@damage 2d10}) Necrotic damage. Until the start of the slaad's next turn, the target has a condition determined by rolling {@dice 1d4}: on a 1, {@condition Charmed|XPHB}; on a 2, {@condition Frightened|XPHB}; on a 3, {@condition Poisoned|XPHB}; or on a 4, {@condition Incapacitated|XPHB}.",
+				"Shape-Shift",
+				"The slaad shape-shifts into a Small or Medium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Green Dragon Wyrmling|XMM",
+			"hint": {
+				"Green Dragon Wyrmling": "綠龍幼龍",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Poison Breath {@recharge 5}": "毒素吐息 {@recharge 5}"
+			},
+			"s": [
+				"Green Dragon Wyrmling",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Multiattack",
+				"The dragon makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}7 ({@damage 1d10 + 2}) Slashing damage plus 3 ({@damage 1d6}) Poison damage.",
+				"Poison Breath {@recharge 5}",
+				"{@actSave con} {@dc 11}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 21 ({@damage 6d6}) Poison damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Green Hag|XMM",
+			"hint": {
+				"Green Hag": "綠鬼婆",
+				"Coven Magic": "集會魔法",
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Mimicry": "聲音模仿",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Green Hag",
+				"Coven Magic",
+				"While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Intelligence as the spellcasting ability (spell save {@dc 11}): {@spell Augury|XPHB}, {@spell Find Familiar|XPHB}, {@spell Identify|XPHB}, {@spell Locate Object|XPHB}, {@spell Scrying|XPHB}, or {@spell Unseen Servant|XPHB}. The hag must finish a {@variantrule Long Rest|XPHB} before using this trait to cast that spell again.",
+				"Spellcasting",
+				"The hag casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 12}, {@hit 4} to hit with spell attacks):",
+				"Amphibious",
+				"The hag can breathe air and water.",
+				"Mimicry",
+				"The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations only with a successful {@dc 14} Wisdom ({@skill Insight|XPHB}) check.",
+				"Multiattack",
+				"The hag makes two Claw attacks.",
+				"Claw",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Slashing damage plus 3 ({@damage 1d6}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Green Slaad|XMM",
+			"hint": {
+				"Green Slaad": "史拉綠蟾",
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Green Slaad",
+				"Spellcasting",
+				"The slaad casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 14}, {@hit 6} to hit with spell attacks):",
+				"Magic Resistance",
+				"The slaad has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Regeneration",
+				"The slaad regains 10 {@variantrule Hit Points|XPHB} at the start of each of its turns if it has at least 1 {@variantrule Hit Points|XPHB|Hit Point}.",
+				"Multiattack",
+				"The slaad makes three Chaos Staff attacks.",
+				"Chaos Staff",
+				"{@atkr m,r} {@hit 7}, reach 10 ft. or range 60 ft. {@h}8 ({@damage 1d8 + 4}) Force damage. Until the start of the slaad's next turn, the target has a condition determined by rolling {@dice 1d4}: on a 1, {@condition Charmed|XPHB}; on a 2, {@condition Frightened|XPHB}; on a 3, {@condition Poisoned|XPHB}; or on a 4, {@condition Incapacitated|XPHB}.",
+				"Shape-Shift",
+				"The slaad shape-shifts into a Small or Medium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Grell|XMM",
+			"hint": {
+				"Grell": "觸鬚怪",
+				"Abduct": "擄掠",
+				"Multiattack": "多重攻擊",
+				"Beak": "啄擊",
+				"Paralyzing Tentacles": "麻痺觸手"
+			},
+			"s": [
+				"Grell",
+				"(hover)",
+				"Abduct",
+				"The grell needn't spend extra movement to move a creature it is grappling.",
+				"Multiattack",
+				"The grell makes one Beak attack and one Paralyzing Tentacles attack.",
+				"Beak",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}11 ({@damage 2d8 + 2}) Piercing damage.",
+				"Paralyzing Tentacles",
+				"{@atkr m} {@hit 4}, reach 10 ft. {@h}7 ({@damage 1d10 + 2}) Piercing damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 12}) from two of ten tentacles. The target is also subjected to the following effect. {@actSave con} {@dc 11}. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While {@condition Poisoned|XPHB}, the target has the {@condition Paralyzed|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Grick|XMM",
+			"hint": {
+				"Grick": "穴居攫怪",
+				"Multiattack": "多重攻擊",
+				"Beak": "啄擊",
+				"Tentacles": "觸手"
+			},
+			"s": [
+				"Grick",
+				"Multiattack",
+				"The grick makes one Beak attack and one Tentacles attack.",
+				"Beak",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}9 ({@damage 2d6 + 2}) Piercing damage.",
+				"Tentacles",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}7 ({@damage 1d10 + 2}) Slashing damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 12}) from all four tentacles."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Grick Ancient|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Beak": "啄擊",
+				"Slam": "猛擊",
+				"Tentacles": "觸手"
+			},
+			"s": [
+				"Grick Ancient",
+				"Multiattack",
+				"The grick makes one Beak attack, one Slam attack, and one Tentacles attack.",
+				"Beak",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}22 ({@damage 4d8 + 4}) Piercing damage.",
+				"Slam",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}7 ({@damage 1d6 + 4}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition.",
+				"Tentacles",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}15 ({@damage 2d10 + 4}) Slashing damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 14}) from all four tentacles."
+			]
+		}
+	]
+}

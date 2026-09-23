@@ -27,7 +27,7 @@ const splitSentences = s => {
 	return m.split(/(?<=[.!?:])\s+(?=[A-Z\u0000(*"])/).map(x => unmask(x, tags));
 };
 // 以動作標記切段
-const MARK = /(\{@(?:h|hom|actSaveFail|actSaveSuccess|actSaveSuccessOrFail|actTrigger|actResponse)(?: \w+)?\})/;
+const MARK = /(\{@(?:h|hom|actSaveFail|actSaveFailBy|actSaveSuccess|actSaveSuccessOrFail|actTrigger|actResponse)(?: \w+)?\})/;
 
 const dmgList = s => {
 	// "7 ({@damage 1d8 + 3}) Bludgeoning damage plus 11 ({@damage 2d10}) Lightning damage"
@@ -105,10 +105,15 @@ export function makeTranslator (dict, ent, zhName) {
 			const a = names[m[2]] ?? dict[`NAME:${m[2]}`];
 			if (a) return `${X}進行${NUM[m[1]]}次${a}攻擊。`;
 		}
-		if ((m = /^The \{X\} casts one of the following spells, (requiring no Material components and )?using (\w+) as the spellcasting ability \(spell save (\{@dc \d+\})(?:, (\{@hit \d+\}) to hit with spell attacks)?\):$/.exec(s)))
-			return `${X}施展下列法術之一，${m[1] ? "無需材料成分，" : ""}以${ABIL[m[2]]}作為施法屬性（法術豁免 ${m[3]}${m[4] ? `，法術攻擊 ${m[4]}` : ""}）：`;
-		if ((m = /^The \{X\} casts one of the following spells, (requiring no Material components and )?using (\w+) as the spellcasting ability:$/.exec(s)))
-			return `${X}施展下列法術之一，${m[1] ? "無需材料成分，" : ""}以${ABIL[m[2]]}作為施法屬性：`;
+		const COMP = {Material: "材料", spell: "法術", "Somatic or Material": "姿勢或材料", "Verbal or Somatic": "言語或姿勢", Verbal: "言語", Somatic: "姿勢"};
+		if ((m = /^The \{X\} casts one of the following spells, (?:requiring no ([\w ]+?) components(?: and|,) )?using (\w+) as the spellcasting ability(?: \(spell save (\{@dc \d+\})(?:, (\{@hit \d+\}) to hit with spell attacks)?\))?:$/.exec(s)) && (!m[1] || COMP[m[1]]))
+			return `${X}施展下列法術之一，${m[1] ? `無需${COMP[m[1]]}成分，` : ""}以${ABIL[m[2]]}作為施法屬性${m[3] ? `（法術豁免 ${m[3]}${m[4] ? `，法術攻擊 ${m[4]}` : ""}）` : ""}：`;
+		if ((m = /^The \{X\} casts (?:the )?((?:\{@spell [^}]+\}(?:, | or |, or )?)+)(?: spell)?(?: on itself)?( in response to (?:that|the) spell's trigger)?,(?: requiring no ([\w ]+?) components and)? using the same spellcasting ability as Spellcasting\.$/.exec(s)) && (!m[3] || COMP[m[3]]))
+			return `${X}${m[2] ? "在該法術的觸發條件發生時" : ""}施展${m[1].replace(/, or /g, "或").replace(/ or /g, "或").replace(/, /g, "、")}${m[3] ? `，無需${COMP[m[3]]}成分` : ""}，使用與「施法」相同的施法屬性。`;
+		if ((m = /^The \{X\} casts (\{@spell [^}]+\})(?: \(level (\d) version\))?( on itself)?, requiring no ([\w ]+?) components and using (\w+) as the spellcasting ability(?: \(spell save (\{@dc \d+\})\))?\.$/.exec(s)) && COMP[m[4]])
+			return `${X}${m[3] ? "對自己" : ""}施展${m[1]}${m[2] ? `（${m[2]} 環版本）` : ""}，無需${COMP[m[4]]}成分，以${ABIL[m[5]]}作為施法屬性${m[6] ? `（法術豁免 ${m[6]}）` : ""}。`;
+		if ((m = /^Immediately after dealing damage to a creature that (?:is|was) already \{@status Bloodied\|XPHB\}, the \{X\} (can )?moves? up to half its \{@variantrule Speed\|XPHB\}, and it makes one (.+?) attack\.$/.exec(s)) && nm(m[2]))
+			return `在對一個已處於{@status Bloodied|XPHB}狀態的生物造成傷害後，${X}${m[1] ? "可以" : ""}立即移動至多其{@variantrule Speed|XPHB}的一半，並進行一次${nm(m[2])}攻擊。`;
 		return null;
 	};
 	const area = a => {

@@ -1,0 +1,430 @@
+{
+	"batch": "xmm-08",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Giant Centipede|XMM",
+			"hint": {
+				"Giant Centipede": "巨蜈蚣",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Centipede",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}4 ({@damage 1d4 + 2}) Piercing damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the centipede's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Constrictor Snake|XMM",
+			"hint": {
+				"Giant Constrictor Snake": "巨蟒蛇",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Constrict": "纏勒"
+			},
+			"s": [
+				"Giant Constrictor Snake",
+				"Multiattack",
+				"The snake makes one Bite attack and uses Constrict.",
+				"Bite",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}11 ({@damage 2d6 + 4}) Piercing damage.",
+				"Constrict",
+				"{@actSave str} {@dc 14}, one Large or smaller creature the snake can see within 10 feet. {@actSaveFail} 13 ({@damage 2d8 + 4}) Bludgeoning damage, and the target has the {@condition Grappled|XPHB} condition (escape {@dc 14})."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Crab|XMM",
+			"hint": {
+				"Giant Crab": "巨蟹",
+				"Amphibious": "兩棲",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Giant Crab",
+				"Amphibious",
+				"The crab can breathe air and water.",
+				"Claw",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}4 ({@damage 1d6 + 1}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 11}) from one of two claws."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Crocodile|XMM",
+			"hint": {
+				"Giant Crocodile": "巨鱷",
+				"Hold Breath": "閉氣",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Giant Crocodile",
+				"Hold Breath",
+				"The crocodile can hold its breath for 1 hour.",
+				"Multiattack",
+				"The crocodile makes one Bite attack and one Tail attack.",
+				"Bite",
+				"{@atkr m} {@hit 8}, reach 5 ft. {@h}21 ({@damage 3d10 + 5}) Piercing damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 15}). While {@condition Grappled|XPHB}, the target has the {@condition Restrained|XPHB} condition and can't be targeted by the crocodile's Tail.",
+				"Tail",
+				"{@atkr m} {@hit 8}, reach 10 ft. {@h}18 ({@damage 3d8 + 5}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Eagle|XMM",
+			"hint": {
+				"Giant Eagle": "巨鷹",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂"
+			},
+			"s": [
+				"Giant Eagle",
+				"Multiattack",
+				"The eagle makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Slashing damage plus 3 ({@damage 1d6}) Radiant damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Elk|XMM",
+			"hint": {
+				"Giant Elk": "巨麋鹿",
+				"Ram": "衝撞"
+			},
+			"s": [
+				"Giant Elk",
+				"Ram",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}11 ({@damage 2d6 + 4}) Bludgeoning damage plus 5 ({@damage 2d4}) Radiant damage. If the target is a Huge or smaller creature and the elk moved 20+ feet straight toward it immediately before the hit, the target takes an extra 5 ({@damage 2d4}) Bludgeoning damage and has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Fire Beetle|XMM",
+			"hint": {
+				"Giant Fire Beetle": "巨火甲蟲",
+				"Illumination": "照明",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Fire Beetle",
+				"Illumination",
+				"The beetle sheds {@variantrule Bright Light|XPHB} in a 10-foot radius and {@variantrule Dim Light|XPHB} for an additional 10 feet.",
+				"Bite",
+				"{@atkr m} {@hit 1}, reach 5 ft. {@h}1 Fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Frog|XMM",
+			"hint": {
+				"Giant Frog": "巨蛙",
+				"Amphibious": "兩棲",
+				"Standing Leap": "立定跳躍",
+				"Bite": "啃咬",
+				"Swallow": "吞嚥"
+			},
+			"s": [
+				"Giant Frog",
+				"Amphibious",
+				"The frog can breathe air and water.",
+				"Standing Leap",
+				"The frog's {@variantrule Long Jump|XPHB} is up to 20 feet and its {@variantrule High Jump|XPHB} is up to 10 feet with or without a running start.",
+				"Bite",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 11}).",
+				"Swallow",
+				"The frog swallows a Small or smaller target it is grappling. While swallowed, the target isn't {@condition Grappled|XPHB} but has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, and it has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects outside the frog. While swallowing the target, the frog can't use Bite, and if the frog dies, the swallowed target is no longer {@condition Restrained|XPHB} and can escape from the corpse using 5 feet of movement, exiting with the {@condition Prone|XPHB} condition.",
+				"At the end of the frog's next turn, the swallowed target takes 5 ({@damage 2d4}) Acid damage. If that damage doesn't kill it, the frog disgorges it, causing it to exit {@condition Prone|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Goat|XMM",
+			"hint": {
+				"Giant Goat": "巨山羊",
+				"Ram": "衝撞"
+			},
+			"s": [
+				"Giant Goat",
+				"Ram",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Bludgeoning damage. If the target is a Large or smaller creature and the goat moved 20+ feet straight toward it immediately before the hit, the target takes an extra 5 ({@damage 2d4}) Bludgeoning damage and has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Hyena|XMM",
+			"hint": {
+				"Giant Hyena": "巨鬣狗",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Hyena",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Piercing damage.",
+				"Rampage (1/Day)",
+				"Immediately after dealing damage to a creature that was already {@status Bloodied|XPHB}, the hyena can move up to half its {@variantrule Speed|XPHB}, and it makes one Bite attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Lizard|XMM",
+			"hint": {
+				"Giant Lizard": "巨蜥蜴",
+				"Spider Climb": "蛛行",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Lizard",
+				"Spider Climb",
+				"The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Octopus|XMM",
+			"hint": {
+				"Giant Octopus": "巨章魚",
+				"Water Breathing": "水中呼吸"
+			},
+			"s": [
+				"Giant Octopus",
+				"Water Breathing",
+				"The octopus can breathe only underwater. It can hold its breath for 1 hour outside water.",
+				"Tentacles",
+				"{@atkr m} {@hit 5}, reach 10 ft. {@h}10 ({@damage 2d6 + 3}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from all eight tentacles. While {@condition Grappled|XPHB}, the target has the {@condition Restrained|XPHB} condition.",
+				"Ink Cloud (1/Day)",
+				"{@actTrigger} The octopus takes damage while underwater. {@actResponse} The octopus releases ink that fills a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} centered on itself, and the octopus moves up to its {@variantrule Swim Speed|XPHB}. The {@variantrule Cube [Area of Effect]|XPHB|Cube} is {@variantrule Heavily Obscured|XPHB} for 1 minute or until a strong current or similar effect disperses the ink."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Owl|XMM",
+			"hint": {
+				"Giant Owl": "巨貓頭鷹",
+				"Spellcasting": "施法",
+				"Flyby": "飛掠",
+				"Talons": "利爪"
+			},
+			"s": [
+				"Giant Owl",
+				"Spellcasting",
+				"The owl casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability:",
+				"Flyby",
+				"The owl doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.",
+				"Talons",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}7 ({@damage 1d10 + 2}) Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Rat|XMM",
+			"hint": {
+				"Giant Rat": "巨鼠",
+				"Pack Tactics": "群體戰術",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Rat",
+				"Pack Tactics",
+				"The rat has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 feet. {@h}5 ({@damage 1d4 + 3}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Scorpion|XMM",
+			"hint": {
+				"Giant Scorpion": "巨蠍",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Giant Scorpion",
+				"Multiattack",
+				"The scorpion makes two Claw attacks and one Sting attack.",
+				"Claw",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from one of two claws.",
+				"Sting",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage plus 11 ({@damage 2d10}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Seahorse|XMM",
+			"hint": {
+				"Water Breathing": "水中呼吸",
+				"Ram": "衝撞"
+			},
+			"s": [
+				"Giant Seahorse",
+				"Water Breathing",
+				"The seahorse can breathe only underwater.",
+				"Ram",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}9 ({@damage 2d6 + 2}) Bludgeoning damage, or 11 ({@damage 2d8 + 2}) Bludgeoning damage if the seahorse moved 20+ feet straight toward the target immediately before the hit.",
+				"Bubble Dash",
+				"While underwater, the seahorse moves up to half its {@variantrule Swim Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Shark|XMM",
+			"hint": {
+				"Giant Shark": "巨鯊",
+				"Water Breathing": "水中呼吸",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Shark",
+				"Water Breathing",
+				"The shark can breathe only underwater.",
+				"Multiattack",
+				"The shark makes two Bite attacks.",
+				"Bite",
+				"{@atkr m} {@hit 9} (with {@variantrule Advantage|XPHB} if the target doesn't have all its {@variantrule Hit Points|XPHB}), reach 5 ft. {@h}22 ({@damage 3d10 + 6}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Spider|XMM",
+			"hint": {
+				"Giant Spider": "巨蜘蛛",
+				"Spider Climb": "蛛行",
+				"Web Walker": "蛛網行者",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Spider",
+				"Spider Climb",
+				"The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Web Walker",
+				"The spider ignores movement restrictions caused by webs, and it knows the location of any other creature in contact with the same web.",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage plus 7 ({@damage 2d6}) Poison damage.",
+				"Web {@recharge 5}",
+				"{@actSave dex} {@dc 13}, one creature the spider can see within 60 feet. {@actSaveFail} The target has the {@condition Restrained|XPHB} condition until the web is destroyed (AC 10; HP 5; {@variantrule Vulnerability|XPHB} to Fire damage; {@variantrule Immunity|XPHB} to Poison and Psychic damage)."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Squid|XMM",
+			"hint": {
+				"Water Breathing": "水中呼吸",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tentacle": "觸手"
+			},
+			"s": [
+				"Giant Squid",
+				"Water Breathing",
+				"The squid can breathe only underwater.",
+				"Multiattack",
+				"The squid makes one Bite attack and one Tentacle attack.",
+				"Bite",
+				"{@atkr m} {@hit 9}, reach 5 ft. {@h}28 ({@damage 4d10 + 6}) Piercing damage.",
+				"Tentacle",
+				"{@atkr m} {@hit 9}, reach 15 ft. {@h}19 ({@damage 3d8 + 6}) Bludgeoning damage. If the target is a Huge or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 16}) from one of two tentacles, and the squid can pull the target up to 10 feet straight toward itself.",
+				"Ink Cloud (1/Day)",
+				"{@actTrigger} The squid takes damage while underwater. {@actResponse} The squid releases ink that fills a 15-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} centered on itself, and the squid moves up to its {@variantrule Swim Speed|XPHB}. The {@variantrule Cube [Area of Effect]|XPHB|Cube} is {@variantrule Heavily Obscured|XPHB} for 1 minute or until a strong current or similar effect disperses the ink."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Toad|XMM",
+			"hint": {
+				"Giant Toad": "巨蟾蜍",
+				"Amphibious": "兩棲",
+				"Standing Leap": "立定跳躍",
+				"Bite": "啃咬",
+				"Swallow": "吞嚥"
+			},
+			"s": [
+				"Giant Toad",
+				"Amphibious",
+				"The toad can breathe air and water.",
+				"Standing Leap",
+				"The toad's {@variantrule Long Jump|XPHB} is up to 20 feet and its {@variantrule High Jump|XPHB} is up to 10 feet with or without a running start.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage plus 5 ({@damage 2d4}) Poison damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 12}).",
+				"Swallow",
+				"The toad swallows a Medium or smaller target it is grappling. While swallowed, the target isn't {@condition Grappled|XPHB} but has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, and it has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects outside the toad. In addition, the target takes 10 ({@damage 3d6}) Acid damage at the end of each of the toad's turns. The toad can have only one target swallowed at a time, and it can't use Bite while it has a swallowed target. If the toad dies, a swallowed creature is no longer {@condition Restrained|XPHB} and can escape from the corpse using 5 feet of movement, exiting with the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Venomous Snake|XMM",
+			"hint": {
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Venomous Snake",
+				"Bite",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}6 ({@damage 1d4 + 4}) Piercing damage plus 4 ({@damage 1d8}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Vulture|XMM",
+			"hint": {
+				"Giant Vulture": "巨禿鷲",
+				"Pack Tactics": "群體戰術"
+			},
+			"s": [
+				"Giant Vulture",
+				"Pack Tactics",
+				"The vulture has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition.",
+				"Gouge",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}9 ({@damage 2d6 + 2}) Piercing damage, and the target has the {@condition Poisoned|XPHB} condition until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Wasp|XMM",
+			"hint": {
+				"Giant Wasp": "巨黃蜂",
+				"Flyby": "飛掠"
+			},
+			"s": [
+				"Giant Wasp",
+				"Flyby",
+				"The wasp doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.",
+				"Sting",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage plus 5 ({@damage 2d4}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Weasel|XMM",
+			"hint": {
+				"Giant Weasel": "巨鼬鼠",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Weasel",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Wolf Spider|XMM",
+			"hint": {
+				"Giant Wolf Spider": "巨狼蛛",
+				"Spider Climb": "蛛行",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Wolf Spider",
+				"Spider Climb",
+				"The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Piercing damage plus 5 ({@damage 2d4}) Poison damage."
+			]
+		}
+	]
+}

@@ -1,0 +1,505 @@
+{
+	"batch": "xmm-07",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Faerie Dragon Youth|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Superior Invisibility": "高等隱形",
+				"Magic Resistance": "魔法抗性",
+				"Bite": "啃咬",
+				"Euphoria Breath {@recharge 5}": "欣快吐息 {@recharge 5}"
+			},
+			"s": [
+				"Faerie Dragon Youth",
+				"Spellcasting",
+				"The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 12}):",
+				"Superior Invisibility",
+				"The dragon casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using the same spellcasting ability as Spellcasting.",
+				"Magic Resistance",
+				"The dragon has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Piercing damage plus 2 ({@damage 1d4}) Psychic damage.",
+				"Euphoria Breath {@recharge 5}",
+				"{@actSave wis} {@dc 12}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target has the {@condition Incapacitated|XPHB} condition until the end of its next turn and uses all its movement on its turn to move in a random direction."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fiend Cultist|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Hellish Rebuke": "煉獄叱喝",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Fiend Cultist",
+				"Spellcasting",
+				"The cultist casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 15}, {@hit 7} to hit with spell attacks):",
+				"Hellish Rebuke",
+				"The cultist casts {@spell Hellish Rebuke|XPHB} in response to that spell's trigger, using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The cultist makes three Pact Axe attacks.",
+				"Pact Axe",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}10 ({@damage 1d12 + 4}) Slashing damage plus 13 ({@damage 3d8}) Fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fire Elemental|XMM",
+			"hint": {
+				"Fire Elemental": "火元素",
+				"Fire Aura": "火焰靈光",
+				"Illumination": "照明",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Fire Elemental",
+				"Fire Aura",
+				"At the end of each of the elemental's turns, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the elemental takes 5 ({@damage 1d10}) Fire damage. Creatures and flammable objects in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} start {@hazard burning|XPHB}.",
+				"Fire Form",
+				"The elemental can move through a space as narrow as 1 inch without expending extra movement to do so, and it can enter a creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 ({@damage 1d10}) Fire damage.",
+				"Illumination",
+				"The elemental sheds {@variantrule Bright Light|XPHB} in a 30-foot radius and {@variantrule Dim Light|XPHB} for an additional 30 feet.",
+				"Water Susceptibility",
+				"The elemental takes 3 ({@damage 1d6}) Cold damage for every 5 feet the elemental moves in water or for every gallon of water splashed on it.",
+				"Multiattack",
+				"The elemental makes two Burn attacks.",
+				"Burn",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Fire damage. If the target is a creature or a flammable object, it starts {@hazard burning|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fire Giant|XMM",
+			"hint": {
+				"Fire Giant": "火巨人",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Fire Giant",
+				"Multiattack",
+				"The giant makes two attacks, using Flame Sword or Hammer Throw in any combination.",
+				"Flame Sword",
+				"{@atkr m} {@hit 11}, reach 10 ft. {@h}21 ({@damage 4d6 + 7}) Slashing damage plus 10 ({@damage 3d6}) Fire damage.",
+				"Hammer Throw",
+				"{@atkr r} {@hit 11}, range 60/240 ft. {@h}23 ({@damage 3d10 + 7}) Bludgeoning damage plus 4 ({@damage 1d8}) Fire damage, and the target is pushed up to 15 feet straight away from the giant and has {@variantrule Disadvantage|XPHB} on the next attack roll it makes before the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Flameskull|XMM",
+			"hint": {
+				"Flameskull": "燃燒顱骨",
+				"Spellcasting": "施法",
+				"Illumination": "照明",
+				"Magic Resistance": "魔法抗性",
+				"Undead Restoration": "不死復原",
+				"Multiattack": "多重攻擊",
+				"Fire Ray": "火焰射線"
+			},
+			"s": [
+				"Flameskull",
+				"(hover)",
+				"Spellcasting",
+				"The flameskull casts one of the following spells, requiring no Somatic or Material components and using Intelligence as the spellcasting ability (spell save {@dc 13}):",
+				"Illumination",
+				"The flameskull sheds {@variantrule Bright Light|XPHB} in a 15-foot radius and {@variantrule Dim Light|XPHB} for an additional 15 feet.",
+				"Magic Resistance",
+				"The flameskull has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Undead Restoration",
+				"If the flameskull is destroyed, it regains all its {@variantrule Hit Points|XPHB} in 1 hour unless Holy Water is sprinkled on its remains or the {@spell Dispel Evil and Good|XPHB} spell is cast on them.",
+				"Multiattack",
+				"The flameskull makes two Fire Ray attacks.",
+				"Fire Ray",
+				"{@atkr m,r} {@hit 5}, reach 5 ft. or range 60 ft. {@h}13 ({@damage 3d6 + 3}) Fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Flaming Skeleton|XMM",
+			"hint": {
+				"Death Burst": "死亡爆發",
+				"Illumination": "照明",
+				"Multiattack": "多重攻擊",
+				"Hurl Flame": "擲火"
+			},
+			"s": [
+				"Flaming Skeleton",
+				"Death Burst",
+				"The skeleton explodes when it dies. {@actSave dex} {@dc 12}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the skeleton. {@actSaveFail} 14 ({@damage 4d6}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Illumination",
+				"The skeleton sheds {@variantrule Bright Light|XPHB} in a 15-foot radius and {@variantrule Dim Light|XPHB} for an additional 15 feet.",
+				"Multiattack",
+				"The skeleton makes two attacks, using Flame Scepter or Hurl Flame in any combination.",
+				"Flame Scepter",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Bludgeoning damage plus 3 ({@damage 1d6}) Fire damage.",
+				"Hurl Flame",
+				"{@atkr r} {@hit 4}, range 60 ft. {@h}7 ({@damage 1d10 + 2}) Fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Flesh Golem|XMM",
+			"hint": {
+				"Flesh Golem": "血肉魔像",
+				"Berserk": "狂暴",
+				"Immutable Form": "不變形體",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Flesh Golem",
+				"Aversion to Fire",
+				"If the golem takes Fire damage, it has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks until the end of its next turn.",
+				"Berserk",
+				"Whenever the golem starts its turn {@status Bloodied|XPHB}, roll {@dice 1d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it remains so until it is destroyed or it is no longer {@status Bloodied|XPHB}.",
+				"The golem's creator, if within 60 feet of the berserk golem, can try to calm it by taking an action to make a {@dc 15} Charisma ({@skill Persuasion|XPHB}) check; the golem must be able to hear its creator. If this check succeeds, the golem ceases being berserk until the start of its next turn, at which point it resumes rolling for the Berserk trait again if it is still {@status Bloodied|XPHB}.",
+				"Immutable Form",
+				"The golem can't shape-shift.",
+				"Lightning Absorption",
+				"Whenever the golem is subjected to Lightning damage, it regains a number of {@variantrule Hit Points|XPHB} equal to the Lightning damage dealt.",
+				"Magic Resistance",
+				"The golem has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The golem makes two Slam attacks.",
+				"Slam",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}13 ({@damage 2d8 + 4}) Bludgeoning damage plus 4 ({@damage 1d8}) Lightning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Flumph|XMM",
+			"hint": {
+				"Flumph": "呋嚕",
+				"Tentacle": "觸手"
+			},
+			"s": [
+				"Flumph",
+				"(hover)",
+				"Advanced Telepathy",
+				"The flumph perceives the content of any telepathic communication within 60 feet of it.",
+				"Prone Deficiency",
+				"If the flumph receives the {@condition Prone|XPHB} condition, roll a die. On an odd number, it has the {@condition Incapacitated|XPHB} condition. At the end of each of its turns, the flumph makes a {@dc 10} Dexterity saving throw, ending the {@condition Incapacitated|XPHB} condition on a success.",
+				"Telepathic Shroud",
+				"The flumph's thoughts can't be read by any means, and magic can't detect its location or observe it remotely.",
+				"Tentacle",
+				"{@atkr m} {@hit 4}, reach 5 feet. {@h}4 ({@damage 1d4 + 2}) Acid damage.",
+				"Stench Spray (1/Day)",
+				"{@actSave dex} {@dc 10}, one creature the flumph can see within 15 feet. {@actSaveFail} The target is coated in a foul-smelling liquid, exudes a stench for {@dice 1d4} hours, and has the {@condition Poisoned|XPHB} condition while the stench lasts. Other creatures have the {@condition Poisoned|XPHB} condition while in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the coated target. The target can remove the stench on itself if it bathes during a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Flying Snake|XMM",
+			"hint": {
+				"Flying Snake": "飛蛇",
+				"Flyby": "飛掠",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Flying Snake",
+				"Flyby",
+				"The snake doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}1 Piercing damage plus 5 ({@damage 2d4}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fomorian|XMM",
+			"hint": {
+				"Fomorian": "廢陋巨人(弗摩爾巨人)",
+				"Multiattack": "多重攻擊",
+				"Stone Club": "石棍"
+			},
+			"s": [
+				"Fomorian",
+				"Multiattack",
+				"The fomorian makes two Stone Club attacks. It can replace one attack with a use of Warping Hex if available.",
+				"Stone Club",
+				"{@atkr m} {@hit 9}, reach 15 ft. {@h}24 ({@damage 4d8 + 6}) Bludgeoning damage.",
+				"Warping Hex {@recharge 4}",
+				"{@actSave wis} {@dc 16}, one creature the fomorian can see within 120 feet. {@actSaveFail} 21 ({@damage 6d6}) Psychic damage, and the target gains 1 {@condition Exhaustion|XPHB} level. {@actSaveSuccess} Half damage only."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Frog|XMM",
+			"hint": {
+				"Frog": "青蛙",
+				"Amphibious": "兩棲",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Frog",
+				"Amphibious",
+				"The frog can breathe air and water.",
+				"Standing Leap",
+				"The frog's {@variantrule Long Jump|XPHB} is up to 10 feet and its {@variantrule High Jump|XPHB} is up to 5 feet with or without a running start.",
+				"Bite",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}1 Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Frost Giant|XMM",
+			"hint": {
+				"Frost Giant": "霜巨人",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Frost Giant",
+				"Multiattack",
+				"The giant makes two attacks, using Frost Axe or Great Bow in any combination.",
+				"Frost Axe",
+				"{@atkr m} {@hit 9}, reach 10 ft. {@h}19 ({@damage 2d12 + 6}) Slashing damage plus 9 ({@damage 2d8}) Cold damage.",
+				"Great Bow",
+				"{@atkr r} {@hit 9}, range 150/600 ft. {@h}17 ({@damage 2d10 + 6}) Piercing damage plus 7 ({@damage 2d6}) Cold damage, and the target's {@variantrule Speed|XPHB} decreases by 10 feet until the end of its next turn.",
+				"War Cry {@recharge 5}",
+				"The giant or one creature of its choice that can see or hear it gains 16 ({@dice 2d10 + 5}) {@variantrule Temporary Hit Points|XPHB} and has {@variantrule Advantage|XPHB} on attack rolls until the start of the giant's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Galeb Duhr|XMM",
+			"hint": {
+				"Galeb Duhr": "格萊石人"
+			},
+			"s": [
+				"Galeb Duhr",
+				"(30 ft. when rolling, 60 ft. rolling downhill)",
+				"Avalanche Slam",
+				"{@atkr m} {@hit 8}, reach 5 ft. {@h}12 ({@damage 2d6 + 5}) Bludgeoning damage. If the target is a Large or smaller creature and the galeb duhr moved 20+ feet straight toward it immediately before the hit, the target takes an extra 7 ({@damage 2d6}) Bludgeoning damage and has the {@condition Prone|XPHB} condition.",
+				"Animate Boulders (1/Day)",
+				"The galeb duhr magically animates one or two boulders it can see within 60 feet of itself. Each boulder uses the Galeb Duhr stat block, except it has Intelligence and Charisma scores of 1 and lacks this action. The boulder takes its turn immediately after the galeb duhr on the same {@variantrule Initiative|XPHB} count, and it obeys the galeb duhr. A boulder remains animate for 1 minute or until it or the galeb duhr dies."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gargoyle|XMM",
+			"hint": {
+				"Gargoyle": "石像鬼",
+				"Flyby": "飛掠",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Gargoyle",
+				"Flyby",
+				"The gargoyle doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.",
+				"Multiattack",
+				"The gargoyle makes two Claw attacks.",
+				"Claw",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}7 ({@damage 2d4 + 2}) Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gas Spore Fungus|XMM",
+			"hint": {
+				"Death Burst": "死亡爆發"
+			},
+			"s": [
+				"Gas Spore Fungus",
+				"(hover)",
+				"Death Burst",
+				"The gas spore bursts when it dies. {@actSave con} {@dc 10}, each creature in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the gas spore. {@actSaveFail} The target takes 10 ({@damage 3d6}) Poison damage and has the {@condition Poisoned|XPHB} condition for {@dice 1d12} hours. Unless the {@condition Poisoned|XPHB} condition is removed, the target dies at the end of that time and sprouts {@dice 2d4} Tiny Gas Spore Fungi (each with 1 {@variantrule Hit Points|XPHB|Hit Point}). After {@dice 2d6} days, they become Large and have 13 {@variantrule Hit Points|XPHB}.",
+				"Tendril",
+				"{@atkr m} {@hit 0}, reach 5 ft. {@h}3 ({@damage 1d6}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gelatinous Cube|XMM",
+			"hint": {
+				"Gelatinous Cube": "凝膠方塊",
+				"Pseudopod": "偽足",
+				"Engulf": "吞沒"
+			},
+			"s": [
+				"Gelatinous Cube",
+				"Ooze Cube",
+				"The cube fills its entire space and is transparent. Other creatures can enter that space, but a creature that does so is subjected to the cube's Engulf and has {@variantrule Disadvantage|XPHB} on the saving throw.",
+				"Creatures inside the cube have {@variantrule Cover|XPHB|Total Cover}, and the cube can hold one Large creature or up to four Medium or Small creatures inside itself at a time.",
+				"As an action, a creature within 5 feet of the cube can pull a creature or an object out of the cube by succeeding on a {@dc 12} Strength ({@skill Athletics|XPHB}) check, and the puller takes 10 ({@damage 3d6}) Acid damage.",
+				"Transparent",
+				"Even when the cube is in plain sight, a creature must succeed on a {@dc 15} Wisdom ({@skill Perception|XPHB}) check to notice the cube if the creature hasn't witnessed the cube move or otherwise act.",
+				"Pseudopod",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}12 ({@damage 3d6 + 2}) Acid damage.",
+				"Engulf",
+				"The cube moves up to its {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}. The cube can move through the spaces of Large or smaller creatures if it has room inside itself to contain them (see the Ooze {@variantrule Cube [Area of Effect]|XPHB|Cube} trait). {@actSave dex} {@dc 12}, each creature whose space the cube enters for the first time during this move. {@actSaveFail} 10 ({@damage 3d6}) Acid damage, and the target is engulfed. An engulfed target is suffocating, can't cast spells with a Verbal component, has the {@condition Restrained|XPHB} condition, and takes 10 ({@damage 3d6}) Acid damage at the start of each of the cube's turns. When the cube moves, the engulfed target moves with it. An engulfed target can try to escape by taking an action to make a {@dc 12} Strength ({@skill Athletics|XPHB}) check. On a successful check, the target escapes and enters the nearest unoccupied space. {@actSaveSuccess} Half damage, and the target moves to an unoccupied space within 5 feet of the cube. If there is no unoccupied space, the target fails the save instead."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ghast|XMM",
+			"hint": {
+				"Ghast": "妖鬼",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Ghast",
+				"Stench",
+				"{@actSave con} {@dc 10}, any creature that starts its turn in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the ghast. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition until the start of its next turn. {@actSaveSuccess} The target is immune to this ghast's Stench for 24 hours.",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage plus 9 ({@damage 2d8}) Necrotic damage.",
+				"Claw",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Slashing damage. If the target is a non-Undead creature, it is subjected to the following effect. {@actSave con} {@dc 10}. {@actSaveFail} The target has the {@condition Paralyzed|XPHB} condition until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ghast Gravecaller|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Ghast Gravecaller",
+				"Spellcasting",
+				"The ghast casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability:",
+				"Stench",
+				"{@actSave con} {@dc 13}, any creature that starts its turn in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the ghast. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition until the start of its next turn. {@actSaveSuccess} The target is immune to this ghast's Stench for 24 hours.",
+				"Multiattack",
+				"The ghast makes two Horrific Necrosis attacks. It can replace one attack with a Claw attack.",
+				"Claw",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}13 ({@damage 3d6 + 3}) Slashing damage. If the target isn't an Undead, it has the {@condition Paralyzed|XPHB} condition until the end of its next turn.",
+				"Horrific Necrosis",
+				"{@atkr m,r} {@hit 7}, reach 5 ft. or range 120 ft. {@h}15 ({@damage 2d10 + 4}) Necrotic damage, and the target has the {@condition Frightened|XPHB} condition until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ghost|XMM",
+			"hint": {
+				"Ghost": "鬼魂",
+				"Etherealness": "乙太化",
+				"Incorporeal Movement": "虛體移動",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Ghost",
+				"(hover)",
+				"Etherealness",
+				"The ghost casts the {@spell Etherealness|XPHB} spell, requiring no spell components and using Charisma as the spellcasting ability. The ghost is visible on the Material Plane while on the Border Ethereal and vice versa, but it can't affect or be affected by anything on the other plane.",
+				"Ethereal Sight",
+				"The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane.",
+				"Incorporeal Movement",
+				"The ghost can move through other creatures and objects as if they were {@variantrule Difficult Terrain|XPHB}. It takes 5 ({@damage 1d10}) Force damage if it ends its turn inside an object.",
+				"Multiattack",
+				"The ghost makes two Withering Touch attacks.",
+				"Withering Touch",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}19 ({@damage 3d10 + 3}) Necrotic damage.",
+				"Horrific Visage",
+				"{@actSave wis} {@dc 13}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} that can see the ghost and isn't an Undead. {@actSaveFail} 10 ({@damage 2d6 + 3}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition until the start of the ghost's next turn. {@actSaveSuccess} The target is immune to this ghost's Horrific Visage for 24 hours.",
+				"Possession {@recharge}",
+				"{@actSave cha} {@dc 13}, one Humanoid the ghost can see within 5 feet. {@actSaveFail} The target is possessed by the ghost; the ghost disappears, and the target has the {@condition Incapacitated|XPHB} condition and loses control of its body. The ghost now controls the body, but the target retains awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that specifically target Undead. The ghost's game statistics are the same, except it uses the possessed target's {@variantrule Speed|XPHB}, as well as the target's Strength, Dexterity, and Constitution modifiers.",
+				"The possession lasts until the body drops to 0 {@variantrule Hit Points|XPHB} or the ghost leaves as a {@variantrule Bonus Action|XPHB}. When the possession ends, the ghost appears in an unoccupied space within 5 feet of the target, and the target is immune to this ghost's {@variantrule Possession|XPHB} for 24 hours. {@actSaveSuccess} The target is immune to this ghost's {@variantrule Possession|XPHB} for 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ghoul|XMM",
+			"hint": {
+				"Ghoul": "食屍鬼",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Ghoul",
+				"Multiattack",
+				"The ghoul makes two Bite attacks.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage plus 3 ({@damage 1d6}) Necrotic damage.",
+				"Claw",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}4 ({@damage 1d4 + 2}) Slashing damage. If the target is a creature that isn't an Undead or elf, it is subjected to the following effect. {@actSave con} {@dc 10}. {@actSaveFail} The target has the {@condition Paralyzed|XPHB} condition until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Ape|XMM",
+			"hint": {
+				"Giant Ape": "巨猿",
+				"Multiattack": "多重攻擊",
+				"Fist": "拳擊",
+				"Leap": "跳躍"
+			},
+			"s": [
+				"Giant Ape",
+				"Multiattack",
+				"The ape makes two Fist attacks.",
+				"Fist",
+				"{@atkr m} {@hit 9}, reach 10 ft. {@h}22 ({@damage 3d10 + 6}) Bludgeoning damage.",
+				"Boulder Toss {@recharge}",
+				"The ape hurls a boulder at a point it can see within 90 feet. {@actSave dex} {@dc 17}, each creature in a 5-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point. {@actSaveFail} 24 ({@damage 7d6}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition. {@actSaveSuccess} Half damage only.",
+				"Leap",
+				"The ape jumps up to 30 feet by spending 10 feet of movement."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Axe Beak|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Talons": "利爪"
+			},
+			"s": [
+				"Giant Axe Beak",
+				"Multiattack",
+				"The axe beak makes one Sharpened Beak attack and one Talons attack.",
+				"Sharpened Beak",
+				"{@atkr m} {@hit 8}, reach 10 ft. {@h}18 ({@damage 2d12 + 5}) Slashing damage, and a creature within 5 feet of the target (axe beak's choice) takes 6 ({@damage 1d12}) Slashing damage.",
+				"Talons",
+				"{@atkr m} {@hit 8}, reach 5 ft. {@h}14 ({@damage 2d8 + 5}) Piercing damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Badger|XMM",
+			"hint": {
+				"Giant Badger": "巨獾",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Badger",
+				"Bite",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}6 ({@damage 2d4 + 1}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Bat|XMM",
+			"hint": {
+				"Giant Bat": "巨蝙蝠",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Bat",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Boar|XMM",
+			"hint": {
+				"Giant Boar": "巨野豬",
+				"Bloodied Fury": "浴血狂怒",
+				"Gore": "頂撞"
+			},
+			"s": [
+				"Giant Boar",
+				"Bloodied Fury",
+				"The boar has {@variantrule Advantage|XPHB} on melee attack rolls while it is {@status Bloodied|XPHB}.",
+				"Gore",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Piercing damage. If the target is a Large or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 7 ({@damage 2d6}) Piercing damage and has the {@condition Prone|XPHB} condition."
+			]
+		}
+	]
+}

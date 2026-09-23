@@ -1,214 +1,163 @@
 ## 名稱（寫成 "NAME:英文": "中文"）
-Dire Worg
-Dreadful Howl
-Warp Step
-Avoidance
-Displacement
-Storm Blade
-Storm Bolt
-Create Whirlwind
-Read Thoughts
-Unsettling Visage
-Dracolich
-Life Suppression
-Soul Gem
-Necrotic Breath
-Sickening Ray
-Terrifying Presence
-Steam Breath
-Fetid Cloud
-Magic of the Spider Queen
-Foreleg
-Poison Burst
-Vine Staff
-Verdant Wisp
-Speak with Beasts and Plants
-Vine Lash
-Thorn Burst
-Tree Stride
-Sleep
-Blinding Breath
-Rock Launch
-Heated Blade
-Elemental Cataclysm
-Control Weather
-Elemental Burst
-Cataclysmic Event
-1: Clinging Flames
-2: Freezing Waves
-3: Raging Storm
-4: Swallowing Earth
-Eruption
-Rumbling Movement
-Elemental Cultist
-Elemental Flail
-Elemental Claw
-Elemental Absorption
-Trample
-Sacred Weapon
-Divine Ray
-Bolster
-Shockwave of Glory
-Empyrean Iota
-Healing Word
-Otherworldly Strike
-Magic Rope
-Withering Sword
-Entangling Rope (Requires Magic Rope)
-Web Strand
-Reel
-Faerie Dragon Adult
-Superior Invisibility
-Euphoria Breath
+Bone Cudgel
+Guard Captain
+Celestial Restoration
+Poisonous Spittle
+Gulthias Blight
+Blight Seeds
+Thorn Volley
+Life-Draining Root
+Half-Dragon
+Draconic Origin
+Dragon's Breath
+Luring Song
+Haunting Revenant
+Haunted Zone
+Object Slam
+Invitation
+Spell Immunity
+Arcane Sword
+Tree Club
+Trash Lob
+Hippopotamus
+Aura of Authority
+Hobgoblin Warrior
+Telepathic Bond
+Hook
+Searing Fork
+Infernal Tail
+Multiple Heads
+Reactive Heads
+Ice Wall
+Ice Spear
+Fog Cloud
+Frost Breath
+Invisibility
+Succubus Form
+Restless Touch
+Detect Intelligence
+Devour Intellect
+Steal Body
 ## 句子
-Dreadful Howl {@recharge 5}
-{@actSave wis} {@dc 16}, each creature within 30 feet that isn't a worg.
-36 ({@damage 8d8}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition until the start of the {X}'s next turn.
-Warp Step
-The {X} teleports, along with a willing creature of its choice within 5 feet of it, up to 30 feet to an unoccupied space it can see.
-Avoidance
-If the {X} is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the save and half damage if it fails.
-Displacement
-Attack rolls against the {X} have {@variantrule Disadvantage|XPHB}, since it projects an illusion that makes it appear to be near its actual location.
-This trait is suppressed while the {X} has the {@condition Incapacitated|XPHB} condition.
-If target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition.
-If the {X} dies outside the Elemental Plane of Air, its body dissolves into mist, and it gains a new body in {@dice 1d4} days, reviving with all its {@variantrule Hit Points|XPHB} somewhere on the Plane of Air.
-The {X} makes three attacks, using Storm Blade or Storm Bolt in any combination.
-Storm Blade
-Storm Bolt
-{@atkr r} {@hit 9}, range 120 feet.
-Create Whirlwind
-The {X} conjures a whirlwind at a point it can see within 120 feet.
-The whirlwind fills a 20-foot-radius, 60-foot-high {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on that point.
-The whirlwind lasts until the {X}'s {@status Concentration|XPHB} on it ends.
-The {X} can move the whirlwind up to 20 feet at the start of each of its turns.
-Whenever the whirlwind enters a creature's space or a creature enters the whirlwind, that creature is subjected to the following effect.
-{@actSave str} {@dc 17} (a creature makes this save only once per turn, and the {X} is unaffected).
-While in the whirlwind, the target has the {@condition Restrained|XPHB} condition and moves with the whirlwind.
-At the start of each of its turns, the {@condition Restrained|XPHB} target takes 21 ({@damage 6d6}) Thunder damage.
-At the end of each of its turns, the target repeats the save, ending the effect on itself on a success.
-Read Thoughts
-The {X} casts {@spell Detect Thoughts|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 12}).
-The {X} makes two Slam attacks and uses Unsettling Visage if available.
-{@atkr m} {@hit 6} (with {@variantrule Advantage|XPHB} during the first round of each combat), reach 5 ft.
-Unsettling Visage {@recharge}
-{@actSave wis} {@dc 12}, each creature in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the {X} that can see the {X}.
-The target has the {@condition Frightened|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success.
-The {X} shape-shifts into a Medium or Small Humanoid, or it returns to its true form.
-Life Suppression
-Creatures within 60 feet of the {X} can't regain {@variantrule Hit Points|XPHB}.
-Soul Gem
-The {X} has a magical gem.
-If the {X} is destroyed while the gem is on the same plane of existence as it, the {X} gains a new body in {@dice 1d20} days, regaining all its {@variantrule Hit Points|XPHB} and appearing within 5 feet of the gem.
-The gem is a Tiny object that has AC 20; HP 50; and {@variantrule Immunity|XPHB} to Necrotic, Poison, and Psychic damage.
-The gem regains all its {@variantrule Hit Points|XPHB} at the end of every turn, but it turns to dust if reduced to 0 {@variantrule Hit Points|XPHB}.
-If the gem is destroyed, the {X} can create a new one by completing an 8-hour ritual using a gem worth 1,000+ GP and by expending 5,000 GP, which the ritual consumes.
-Necrotic Breath {@recharge 5}
-Sickening Ray
-Terrifying Presence
-Dracolich
-It can replace one attack with a Tail attack.
-Being underwater doesn't grant {@variantrule Resistance|XPHB} to this Fire damage.
-Steam Breath {@recharge 5}
-Fetid Cloud (1/Day)
-While {@condition Poisoned|XPHB}, the creature can take either an action or a {@variantrule Bonus Action|XPHB} on its turn, not both, and it can't take Reactions.
-Magic of the Spider Queen {@recharge 5}
-The {X} casts {@spell Darkness|XPHB}, {@spell Faerie Fire|XPHB}, or {@spell Web|XPHB}, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 14}).
-The {X} ignores movement restrictions caused by webs, and the {X} knows the location of any other creature in contact with the same web.
-The {X} makes three attacks, using Foreleg or Poison Burst in any combination.
-Foreleg
-Poison Burst
-The {X} makes two attacks, using Vine Staff or Verdant Wisp in any combination.
-Vine Staff
-Verdant Wisp
-Speak with Beasts and Plants
-The {X} can communicate with Beasts and Plants as if they shared a language.
-The {X} makes one Vine Lash or Thorn Burst attack, and it can use Spellcasting to cast {@spell Charm Monster|XPHB}.
-Vine Lash
-Thorn Burst
-Tree Stride
-If within 5 feet of a Large or bigger tree, the {X} teleports to an unoccupied space within 5 feet of a second Large or bigger tree that is within 60 feet of the previous tree.
-Sleep (1/Day)
-The {X} casts the {@spell Sleep|XPHB} spell, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 10}).
-Blinding Breath {@recharge}
-The {X} makes two attacks, using Slam or Rock Launch in any combination.
-Rock Launch
-If the {X} dies outside the Elemental Plane of Fire, its body dissolves into ash, and it gains a new body in {@dice 1d4} days, reviving with all its {@variantrule Hit Points|XPHB} somewhere on the Plane of Fire.
-The {X} makes three attacks, using Heated Blade or Hurl Flame in any combination.
-Heated Blade
-Control Weather
-The {X} casts the {@spell Control Weather|XPHB} spell, requiring no spell components and using Constitution as the spellcasting ability.
-The {X} makes two Elemental Burst attacks.
-Elemental Burst
-25 ({@damage 5d6 + 8}) damage of a type chosen by the {X}:
-Acid, Cold, Fire, Lightning, or Thunder.
-Cataclysmic Event {@recharge 4}
-The {X} creates one of the following effects at random (roll {@dice 1d4}):
-Clinging Flames
-The target starts {@hazard burning|XPHB}.
-Freezing Waves
-The target's {@variantrule Speed|XPHB} is reduced to 0 until the end of its next turn.
-Raging Storm
-A storm cloud fills a 60-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point the {X} can see within 150 feet.
-The cloud lasts for 1 minute or until the {X} uses Cataclysmic Event again.
-Creatures entirely in the cloud have the {@condition Blinded|XPHB} and {@condition Deafened|XPHB} conditions and can't cast spells with a Verbal component.
-{@actSave dex} {@dc 23}, each creature that enters the cloud for the first time on a turn or starts its turn there.
-Swallowing Earth
-{@actSave str} {@dc 23}, each creature in a 90-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} originating from a point on the ground within 150 feet.
-18 ({@damage 4d8}) Bludgeoning damage plus 18 ({@damage 4d8}) Acid damage, and the target has the {@condition Prone|XPHB} condition and is buried under rubble.
-A buried target has the {@condition Restrained|XPHB} condition, has {@variantrule Cover|XPHB|Total Cover}, and is suffocating.
-As an action, a buried creature or another creature within 5 feet of it can make a {@dc 18} Strength ({@skill Athletics|XPHB}) check.
-On a successful check, the creature is no longer buried.
-Eruption
-The {X} makes one Elemental Burst attack.
-Rumbling Movement
-The {X} moves up to its {@variantrule Speed|XPHB}, {@variantrule Fly Speed|XPHB}, or {@variantrule Swim Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}.
-The target has the {@condition Prone|XPHB} condition.
-The {X} makes three attacks, using Elemental Flail or Elemental Claw in any combination.
-Elemental Flail
-25 ({@damage 6d6 + 4}) damage of a type chosen by the {X}:
-Elemental Claw
-22 ({@damage 4d10}) damage of a type chosen by the {X}:
-If the target is a Medium or smaller creature, the {X} moves the target up to 10 feet straight toward or away from itself.
-Elemental Absorption (1/Day)
-The {X} takes Acid, Cold, Fire, Lightning, or Thunder damage.
-The {X} gives itself {@variantrule Resistance|XPHB} to that instance of damage and gains 10 {@variantrule Temporary Hit Points|XPHB}.
-If the target is a Huge or smaller creature and the {X} moved 20+ feet straight toward it immediately before the hit, the target has the {@condition Prone|XPHB} condition.
-Trample
-{@actSave dex} {@dc 16}, one creature within 5 feet that has the {@condition Prone|XPHB} condition.
-If the target is a Large or smaller creature and the {X} moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 ({@damage 1d6}) Bludgeoning damage and has the {@condition Prone|XPHB} condition.
-The {X} makes two attacks, using Sacred Weapon or Divine Ray in any combination.
-Sacred Weapon
-The target can choose not to be {@condition Stunned|XPHB}, in which case it takes an extra 21 Force damage that bypasses {@variantrule Resistance|XPHB} or {@variantrule Immunity|XPHB}.
-Divine Ray
-35 ({@damage 6d8 + 8}) Necrotic or Radiant damage (empyrean's choice).
-Bolster
-The {X} gains 10 {@variantrule Temporary Hit Points|XPHB}, and the {X} and each ally within 30 feet of it gain {@variantrule Advantage|XPHB} on {@variantrule D20 Test|XPHB|D20 Tests} until the end of the {X}'s next turn.
-Shockwave of Glory
-The {X} makes one Divine Ray attack.
-Healing Word (1/Day)
-Otherworldly Strike
-7 ({@damage 1d8 + 3}) Necrotic or Radiant damage (empyrean's choice).
-Magic Rope
-The {X} has a magic rope.
-While bearing it, the {X} can use the Entangling Rope action.
-The rope has AC 20, HP 90, and {@variantrule Immunity|XPHB} to Poison and Psychic damage.
-The rope turns to dust if reduced to 0 {@variantrule Hit Points|XPHB}, if it is 5+ feet away from the {X} for 1 hour or more, or if the {X} dies.
-If the rope is damaged or destroyed, the {X} can fully restore it when finishing a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}.
-The {X} makes three Withering Sword attacks and can use Entangling Rope.
-Withering Sword
-Entangling Rope (Requires Magic Rope)
-14 ({@damage 4d6}) Force damage, and the target has the {@condition Restrained|XPHB} condition until the rope is destroyed, the {X} uses a {@variantrule Bonus Action|XPHB} to release the target, or the {X} uses Entangling Rope again.
-Web Strand {@recharge 5}
-{@actSave dex} {@dc 12}, one Large or smaller creature the {X} can see within 30 feet.
-The target has the {@condition Restrained|XPHB} condition until the web is destroyed (AC 10; HP 5; {@variantrule Vulnerability|XPHB} to Fire damage; {@variantrule Immunity|XPHB} to Bludgeoning, Poison, and Psychic damage).
-Reel
-The {X} pulls one creature within 30 feet of itself that is {@condition Restrained|XPHB} by its Web Strand up to 25 feet straight toward itself.
-14 ({@damage 2d8 + 5}) Piercing damage, and the target has {@variantrule Disadvantage|XPHB} on the next attack roll it makes before the end of its next turn.
-Superior Invisibility
-The {X} casts {@spell Greater Invisibility|XPHB} on itself, requiring no spell components and using the same spellcasting ability as Spellcasting.
-Euphoria Breath {@recharge 5}
-The target has the {@condition Incapacitated|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success.
-While {@condition Incapacitated|XPHB}, the target uses all its movement on each of its turns to move in a random direction.
+If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 14}) from both of the {X}'s front claws.
+Bone Cudgel
+Celestial Restoration
+If the {X} dies, it returns to life in {@dice 1d6} days and regains all its {@variantrule Hit Points|XPHB} unless {@spell Dispel Evil and Good|XPHB} is cast on its remains.
+It can replace any attack with a use of Poisonous Spittle.
+Poisonous Spittle
+Blight Seeds
+When it finishes a {@variantrule Long Rest|XPHB}, the {X} expels {@dice 1d6} seeds into unoccupied spaces on the ground within 30 feet of itself.
+After 24 hours, the seeds become creatures under the {X}'s control.
+Roll {@dice 1d8} for each seed to determine the creature it becomes: on 1-4, {@creature Twig Blight|XMM}; on 5-6, {@creature Needle Blight|XMM}; on 7-8, {@creature Vine Blight|XMM}.
+The {X} makes two attacks, using Slam or Thorn Volley in any combination.
+It also uses Life-Draining Root.
+Thorn Volley
+Life-Draining Root
+{@actSave con} {@dc 20}, one Huge or smaller creature the {X} can see within 30 feet.
+14 ({@damage 2d6 + 7}) Necrotic damage, and the target has the {@condition Grappled|XPHB} condition (escape {@dc 17}) from one of six roots.
+Until the grapple ends, the target has the {@condition Restrained|XPHB} condition and takes 14 ({@damage 4d6}) Necrotic damage at the start of each of its turns.
+The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Necrotic damage taken, and the {X} regains {@variantrule Hit Points|XPHB} equal to that amount.
+Draconic Origin
+The {X} is related to a type of dragon associated with one of the following damage types (DM's choice):
+Acid, Cold, Fire, Lightning, or Poison.
+This choice affects other aspects of the stat block.
+6 ({@damage 1d4 + 4}) Slashing damage plus 7 ({@damage 2d6}) damage of the type chosen for the Draconic Origin trait.
+Dragon's Breath {@recharge 5}
+28 ({@damage 8d6}) damage of the type chosen for the Draconic Origin trait.
+Luring Song
+The {X} sings a magical melody, which lasts until the {X}'s {@status Concentration|XPHB} ends on it.
+{@actSave wis} {@dc 11}, each Humanoid and Giant in a 300-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the {X} when the song starts.
+The target has the {@condition Charmed|XPHB} condition until the song ends and repeats the save at the end of each of its turns.
+While {@condition Charmed|XPHB}, the target has the {@condition Incapacitated|XPHB} condition and ignores the Luring Song of other harpies.
+If the target is more than 5 feet from the {X}, the target moves on its turn toward the {X} by the most direct route, trying to get within 5 feet of the {X}.
+It doesn't avoid {@action Opportunity Attack|XPHB|Opportunity Attacks}; however, before moving into damaging terrain (such as lava or a pit) and whenever it takes damage from a source other than the {X}, the target repeats the save.
+The target is immune to this {X}'s Luring Song for 24 hours.
+Haunted Zone
+{@actSave con} {@dc 17}, any creature that casts a spell while inside the {X}'s space.
+The spell fails and is wasted.
+If it revives, it animates another Gargantuan object or structure elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its {@variantrule Hit Points|XPHB}.
+The {X} makes two Object Slam attacks and uses Invitation.
+Object Slam
+{@atkr m,r} {@hit 9} (with {@variantrule Advantage|XPHB} if the target is inside the {X}'s space), reach 10 ft. or range 30/90 ft.
+Invitation
+The target is teleported inside the {X}'s space and swallowed.
+A swallowed creature has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects outside the {X}.
+While the {X} has {@variantrule Hit Points|XPHB}, a swallowed creature can leave the {X}'s space only by using magic that enables planar travel, such as the {@spell Plane Shift|XPHB} spell.
+Spell Immunity
+The {X} is immune to three spells chosen by its creator.
+Typical choices include {@spell Heat Metal|XPHB}, {@spell Lightning Bolt|XPHB}, and {@spell Magic Missile|XPHB}.
+The {X} makes two Arcane Sword attacks.
+Arcane Sword
+{@actSave con} {@dc 16}, any creature that starts its turn in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the {X}.
+The {X} makes two attacks, using Tree Club or Trash Lob in any combination.
+Tree Club
+Trash Lob
+The {X} can hold its breath for 10 minutes.
+Aura of Authority
+While in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the {X}, the {X} and its allies have {@variantrule Advantage|XPHB} on attack rolls and saving throws, provided the {X} doesn't have the {@condition Incapacitated|XPHB} condition.
+While in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the {X}, the {X} and its allies have {@variantrule Advantage|XPHB} on attack rolls and saving throws, provided the {X} doesn't have the {@condition Incapacitated|XPHB} condition.
+11 ({@damage 2d6 + 4}) Piercing damage, and the target's {@variantrule Speed|XPHB} decreases by 10 feet until the start of the {X}'s next turn.
+Telepathic Bond
+While the {X} is on the same plane of existence as its master, the two of them can communicate telepathically with each other.
+1 Piercing damage, and the target is subjected to the following effect.
+{@actSaveFailBy 5} The target has the {@condition Poisoned|XPHB} condition for 1 minute.
+While {@condition Poisoned|XPHB}, the target has the {@condition Unconscious|XPHB} condition, which ends early if the target takes any damage.
+The {X} makes two Hook attacks.
+Hook
+If the target is a Large or smaller creature, the {X} moves the target 5 feet straight toward or away from itself.
+The {X} makes three attacks, using Searing Fork or Hurl Flame in any combination.
+It can replace one attack with a use of Infernal Tail.
+Searing Fork
+Infernal Tail
+10 ({@damage 1d8 + 6}) Necrotic damage, and the target receives an infernal wound if it doesn't have one.
+While wounded, the target loses 10 ({@dice 3d6}) {@variantrule Hit Points|XPHB} at the start of each of its turns.
+The wound closes after 1 minute, after a spell restores {@variantrule Hit Points|XPHB} to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a {@dc 17} Wisdom ({@skill Medicine|XPHB}) check.
+{@atkr m} {@hit 6} (with {@variantrule Advantage|XPHB} if the target doesn't have all its {@variantrule Hit Points|XPHB}), reach 5 ft.
+Multiple Heads
+The {X} has five heads.
+Whenever the {X} takes 25 damage or more on a single turn, one of its heads dies.
+The {X} dies if all its heads are dead.
+At the end of each of its turns when it has at least one living head, the {X} grows two heads for each of its heads that died since its last turn, unless it has taken Fire damage since its last turn.
+The {X} regains 20 {@variantrule Hit Points|XPHB} when it grows new heads.
+Reactive Heads
+For each head the {X} has beyond one, it gets an extra {@variantrule Reaction|XPHB} that can be used only for {@action Opportunity Attack|XPHB|Opportunity Attacks}.
+The {X} makes as many Bite attacks as it has heads.
+Ice Wall {@recharge}
+The {X} casts {@spell Wall of Ice|XPHB} (level 8 version), requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 17}).
+The {X} makes three Ice Spear attacks.
+Ice Spear
+Until the end of its next turn, the target can't take a {@variantrule Bonus Action|XPHB} or {@variantrule Reaction|XPHB}, its {@variantrule Speed|XPHB} decreases by 10 feet, and it can move or take one action on its turn, not both.
+The spear magically returns to the {X}'s hand immediately after a ranged attack.
+Fog Cloud (1/Day)
+The {X} casts {@spell Fog Cloud|XPHB}, requiring no spell components and using Charisma as the spellcasting ability.
+Frost Breath {@recharge}
+Invisibility
+The {X} casts {@spell Invisibility|XPHB} on itself, requiring no spell components and using Charisma as the spellcasting ability.
+The {X} shape-shifts to resemble a rat ({@variantrule Speed|XPHB} 20 ft.), a raven (20 ft., Fly 60 ft.), or a spider (20 ft., Climb 20 ft.), or it returns to its true form.
+Its statistics are the same in each form, except for its {@variantrule Speed|XPHB}.
+Succubus Form
+When the {X} finishes a {@variantrule Long Rest|XPHB}, it can shape-shift into a {@creature Succubus|XMM}, using that stat block instead of this one.
+Any equipment it's wearing or carrying isn't transformed.
+The {X} makes two Restless Touch attacks.
+Restless Touch
+15 ({@damage 3d6 + 5}) Psychic damage, and the target is cursed for 24 hours or until the {X} dies.
+Until the curse ends, the target gains no benefit from finishing Short Rests.
+If the target has 20 {@variantrule Hit Points|XPHB} or fewer, it has the {@condition Unconscious|XPHB} condition for 1 hour, until it takes damage, or until a creature within 5 feet of it takes an action to wake it.
+Otherwise, the target takes 18 ({@damage 4d8}) Psychic damage.
+Detect Intelligence
+The {X} magically senses the location of any creature within 300 feet of itself that has an Intelligence score of 3 or higher, regardless of interposing barriers.
+The {X} makes one Claw attack and uses Devour Intellect.
+Devour Intellect
+Steal Body
+{@actSave int} {@dc 12}, one Small or Medium creature within 5 feet that has the {@condition Incapacitated|XPHB} condition, is a Humanoid or Beast, and has 10 {@variantrule Hit Points|XPHB} or fewer.
+The {X} possesses the target, consumes its brain, and teleports inside its skull.
+While there, the {X} has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects originating outside its host.
+The {X} retains its Intelligence, Wisdom, and Charisma scores; its understanding of Deep Speech; its telepathy; and its Detect Intelligence trait.
+It otherwise adopts the target's game statistics.
+It knows everything the target knew, including spells and languages.
+If the host body dies, the {X} must leave it.
+The {X} is also forced out if the target regains its devoured brain by means of a {@spell Wish|XPHB} spell.
+By spending 5 feet of its movement, the {X} can voluntarily leave the body, teleporting to the nearest unoccupied space within 5 feet of it.
+The body then dies unless its brain is restored before the end of the {X}'s next turn.
 
-共 25 隻；待翻名稱 61、句子 149（11472 字元）
+共 30 隻；待翻名稱 39、句子 120（10272 字元）
