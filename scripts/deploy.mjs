@@ -46,4 +46,13 @@ if (!out(["status", "--porcelain"], WT)) {
 	console.log(`已 commit 到 ${BRANCH}`);
 }
 
-if (isPush) sh(["push", "-u", "origin", BRANCH], WT);
+// 大量檔案第一次推送偶爾會被 GitHub 中斷，重試幾次
+if (isPush) {
+	for (let i = 1; ; ++i) {
+		try { sh(["push", "-u", "origin", BRANCH], WT); break; } catch (e) {
+			if (i >= 3) throw e;
+			console.log(`推送失敗，重試（${i}/3）…`);
+		}
+	}
+	console.log("已部署，GitHub Pages 約一兩分鐘後更新");
+}

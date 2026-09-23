@@ -59,6 +59,6 @@ node scripts/extract-hazmole.mjs /tmp/hazmole
 3. 建置並部署：`node scripts/build.mjs && node scripts/deploy.mjs`
    （把 `dist/` 推到 `gh-pages` 分支）
 4. GitHub repo → Settings → Pages → Source 選「Deploy from a branch」，分支選 `gh-pages` / `(root)`。
-5. 約一兩分鐘後可在 `https://<帳號>.github.io/5etools-zh/` 瀏覽。
+5. 約一兩分鐘後可在 `https://<帳號>.github.io/5etools-zh/` 瀏覽（本站：https://hifujifuji.github.io/5etools-zh/）。
 
 之後更新翻譯只要重複第 3 步。
