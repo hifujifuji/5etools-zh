@@ -27,7 +27,7 @@ const splitSentences = s => {
 	return m.split(/(?<=[.!?:])\s+(?=[A-Z\u0000(*"])/).map(x => unmask(x, tags));
 };
 // 以動作標記切段
-const MARK = /(\{@(?:h|hom|actSaveFail|actSaveSuccess|actSaveSuccessOrFail|actTrigger|actResponse)(?: \d)?\})/;
+const MARK = /(\{@(?:h|hom|actSaveFail|actSaveSuccess|actSaveSuccessOrFail|actTrigger|actResponse)(?: \w+)?\})/;
 
 const dmgList = s => {
 	// "7 ({@damage 1d8 + 3}) Bludgeoning damage plus 11 ({@damage 2d10}) Lightning damage"
@@ -45,16 +45,19 @@ export function makeTranslator (dict, ent, zhName) {
 	for (let i = 0; i < words.length; ++i) for (let j = words.length; j > i; --j) refs.push(words.slice(i, j).join(" "));
 	for (const w of words) for (const p of w.split("-")) if (p.length > 2) refs.push(p);
 	for (const a of dict[`REF:${ent.name}`] || []) refs.push(a);
+	const noRef = new Set(dict[`NOREF:${ent.name}`] || []);
+	for (let i = refs.length - 1; i >= 0; --i) if (noRef.has(refs[i])) refs.splice(i, 1);
 	refs.sort((a, b) => b.length - a.length);
-	const reRef = refs.length ? new RegExp(`\\b([Tt])he (${refs.map(r => r.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})\\b`, "g") : null;
-	const norm = s => reRef ? s.replace(reRef, (_, t) => `${t}he {X}`) : s;
+	const reRef = refs.length ? new RegExp(`\\b([Tt]he|[Tt]his) (${refs.map(r => r.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})\\b`, "g") : null;
+	const norm = s => reRef ? s.replace(reRef, (_, t) => `${t} {X}`) : s;
 	const X = zhName;
 	const names = {}; // 本怪物的動作名稱 英→中（Multiattack 用）
 
 	const rule = s => {
 		let m;
+		const nm = o => names[o] ?? dict[`NAME:${o}`] ?? OLD[o.toLowerCase()];
 		if ((m = /^\{@atkr ([mr,]+)\} \{@hit (-?\d+)\}(?: to hit)?, (.+?)\.?$/.exec(s))) {
-			const rr = m[3].replace(/reach (\d+) ft\./, "觸及 $1 呎").replace(/reach (\d+) ft/, "觸及 $1 呎").replace(/range ([\d/]+) ft\.?/, "射程 $1 呎").replace(" or ", "或");
+			const rr = m[3].replace(/reach (\d+) (?:ft\.?|feet)/, "觸及 $1 呎").replace(/range ([\d/]+) (?:ft\.?|feet)/, "射程 $1 呎").replace(" or ", "或");
 			if (!/[a-z]{3}/.test(rr)) return `{@atkr ${m[1]}} {@hit ${m[2]}}，${rr}。`;
 		}
 		if ((m = /^(.+ damage)\.$/.exec(s))) { const d = dmgList(m[1]); if (d) return `${d}。`; }
@@ -71,13 +74,19 @@ export function makeTranslator (dict, ent, zhName) {
 		}
 		if ((m = /^\{@actSave (\w+)\} (\{@dc \d+\}), (.+)\.$/.exec(s))) { const a = area(m[3]); if (a) return `{@actSave ${m[1]}} ${m[2]}，${a}。`; }
 		if ((m = /^\{@actSave (\w+)\} (\{@dc \d+\})\.$/.exec(s))) return `{@actSave ${m[1]}} ${m[2]}。`;
+		if ((m = /^(\d+):$/.exec(s))) return `${m[1]}：`;
+		if ((m = /^The \{X\} adds (\d+) to its AC against that attack, possibly causing it to miss\.$/.exec(s))) return `${X}對該攻擊的 AC 加 ${m[1]}，可能使該攻擊未命中。`;
+		if ((m = /^(\{@actSave \w+\} \{@dc \d+\}) \((.+)\)\.$/.exec(s)) && dict[`PAREN:${m[2]}`]) return `${m[1]}（${dict[`PAREN:${m[2]}`]}）。`;
+		if ((m = /^The \{X\} makes (one|two|three|four) (.+?) attacks? or (one|two|three|four) (.+?) attacks?\.$/.exec(s))) {
+			const a = nm(m[2]), b = nm(m[4]);
+			if (a && b) return `${X}進行${NUM[m[1]]}次${a}攻擊或${NUM[m[3]]}次${b}攻擊。`;
+		}
 		if ((m = /^If the target is an? (\w+) or smaller creature, it has the (\{@condition [^}]+\}) condition( \(escape (\{@dc \d+\})\))?\.$/.exec(s)) && SIZE[m[1]])
 			return `若目標是${SIZE[m[1]]}或更小的生物，它處於${m[2]}狀態${m[3] ? `（脫逃 ${m[4]}）` : ""}。`;
 		const turn = t => t.replace(/^the end of its next turn$/, "其下個回合結束").replace(/^the start of its next turn$/, "其下個回合開始").replace(/^the end of the \{X\}'s next turn$/, `${X}的下個回合結束`).replace(/^the start of the \{X\}'s next turn$/, `${X}的下個回合開始`);
 		if ((m = /^The target has the (\{@condition [^}]+\}) condition until (.+)\.$/.exec(s)) && !/[a-z]/.test(turn(m[2]).replace(/\{@[^}]+\}/g, ""))) return `目標處於${m[1]}狀態直到${turn(m[2])}。`;
 		if ((m = /^(.+? damage), and the target has the (\{@condition [^}]+\}) condition until (.+)\.$/.exec(s)) && dmgList(m[1]) && !/[a-z]/.test(turn(m[3]))) return `${dmgList(m[1])}，且目標處於${m[2]}狀態直到${turn(m[3])}。`;
 		if ((m = /^(.+? damage), and the target has the (\{@condition [^}]+\}) condition\.$/.exec(s)) && dmgList(m[1])) return `${dmgList(m[1])}，且目標處於${m[2]}狀態。`;
-		const nm = o => names[o] ?? dict[`NAME:${o}`] ?? OLD[o.toLowerCase()];
 		if ((m = /^The \{X\} makes (one|two|three|four|five|six) attacks, using (.+?) or (.+?) in any combination(?:, and (?:it )?uses (.+?))?\.$/.exec(s))) {
 			const a = nm(m[2]), b = nm(m[3]), c = m[4] ? nm(m[4]) : "";
 			if (a && b && c != null) return `${X}進行${NUM[m[1]]}次攻擊，以${a}或${b}任意組合${m[4] ? `，並使用「${c}」` : ""}。`;
@@ -144,10 +153,18 @@ export function makeTranslator (dict, ent, zhName) {
 		let m;
 		const d = dict[`NAME:${s}`] ?? OLD[s.toLowerCase()];
 		if (d) return d;
+		if ((m = /^(\d+):$/.exec(s))) return `${m[1]}：`;
+		if ((m = /^The \{X\} adds (\d+) to its AC against that attack, possibly causing it to miss\.$/.exec(s))) return `${X}對該攻擊的 AC 加 ${m[1]}，可能使該攻擊未命中。`;
+		if ((m = /^(\{@actSave \w+\} \{@dc \d+\}) \((.+)\)\.$/.exec(s)) && dict[`PAREN:${m[2]}`]) return `${m[1]}（${dict[`PAREN:${m[2]}`]}）。`;
+		if ((m = /^The \{X\} makes (one|two|three|four) (.+?) attacks? or (one|two|three|four) (.+?) attacks?\.$/.exec(s))) {
+			const a = nm(m[2]), b = nm(m[4]);
+			if (a && b) return `${X}進行${NUM[m[1]]}次${a}攻擊或${NUM[m[3]]}次${b}攻擊。`;
+		}
+		if ((m = /^(\d+): (.+)$/.exec(s))) { const b = trName(m[2]); return b ? `${m[1]}：${b}` : null; }
 		if ((m = /^(.+?) \{@recharge( \d)?\}$/.exec(s))) { const b = trName(m[1]); return b ? `${b} {@recharge${m[2] ?? ""}}` : null; }
 		if ((m = /^(.+?) \((\d+)\/Day(?: Each)?\)$/.exec(s))) { const b = trName(m[1]); return b ? `${b}（每日 ${m[2]} 次）` : null; }
 		if ((m = /^(.+?) \((\d+)\/Day, or (\d+)\/Day in Lair\)$/.exec(s))) { const b = trName(m[1]); return b ? `${b}（每日 ${m[2]} 次，在巢穴中為每日 ${m[3]} 次）` : null; }
-		if ((m = /^(.+?) \(Recharges after a (Short or Long|Long) Rest\)$/.exec(s))) { const b = trName(m[1]); return b ? `${b}（${m[2] === "Long" ? "長休" : "短休或長休"}後充能）` : null; }
+		if ((m = /^(.+?) \(Recharges? after a (Short or Long|Long) Rest\)$/.exec(s))) { const b = trName(m[1]); return b ? `${b}（${m[2] === "Long" ? "長休" : "短休或長休"}後充能）` : null; }
 		if ((m = /^(.+?) \(([^()]+)\)$/.exec(s))) { const b = trName(m[1]), f = dict[`NAME:${m[2]}`]; return b && f ? `${b}（${f}）` : null; }
 		return null;
 	};

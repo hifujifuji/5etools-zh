@@ -1,0 +1,525 @@
+{
+	"batch": "xmm-04",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Brass Dragon Wyrmling|XMM",
+			"hint": {
+				"Brass Dragon Wyrmling": "黃銅龍幼龍",
+				"Rend": "撕裂",
+				"Fire Breath {@recharge 5}": "火焰吐息 {@recharge 5}",
+				"Sleep Breath": "睡眠吐息"
+			},
+			"s": [
+				"Brass Dragon Wyrmling",
+				"Rend",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}7 ({@damage 1d10 + 2}) Slashing damage.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 11}, each creature in a 20-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 14 ({@damage 4d6}) Fire damage. {@actSaveSuccess} Half damage.",
+				"Sleep Breath",
+				"{@actSave con} {@dc 11}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target has the {@condition Incapacitated|XPHB} condition until the end of its next turn, at which point it repeats the save. {@actSaveFail 2} The target has the {@condition Unconscious|XPHB} condition for 1 minute. This effect ends for the target if it takes damage or a creature within 5 feet of it takes an action to wake it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Brazen Gorgon|XMM",
+			"hint": {
+				"Illumination": "照明",
+				"Multiattack": "多重攻擊",
+				"Gore": "頂撞"
+			},
+			"s": [
+				"Brazen Gorgon",
+				"Flame Aura",
+				"At the end of each of the gorgon's turns, each creature in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the gorgon takes 13 ({@damage 3d8}) Fire damage.",
+				"Illumination",
+				"The gorgon sheds {@variantrule Bright Light|XPHB} in a 10-foot radius and {@variantrule Dim Light|XPHB} for an additional 10 feet.",
+				"Multiattack",
+				"The gorgon makes two Gore attacks.",
+				"Gore",
+				"{@atkr m} {@hit 8}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Piercing damage plus 10 ({@damage 3d6}) Fire damage.",
+				"Smelting Charge {@recharge 5}",
+				"The gorgon moves up to its {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks} and can move through the spaces of Medium or smaller creatures. Each time the gorgon enters a creature's space for the first time during this move, that target is subjected to the following effect. {@actSave dex} {@dc 16}. {@actSaveFail} 13 ({@damage 2d8 + 4}) Piercing damage plus 13 ({@damage 3d8}) Fire damage, and the target is pulled into the gorgon's space and has the {@condition Grappled|XPHB} condition (escape {@dc 14}); if the gorgon already has a creature {@condition Grappled|XPHB}, the target has the {@condition Prone|XPHB} condition instead. Until the grapple ends, the target has the {@condition Restrained|XPHB} condition. When the gorgon moves, the {@condition Grappled|XPHB} target moves with it, costing no extra movement."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bronze Dragon Wyrmling|XMM",
+			"hint": {
+				"Bronze Dragon Wyrmling": "青銅龍幼龍",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂",
+				"Lightning Breath {@recharge 5}": "閃電吐息 {@recharge 5}",
+				"Repulsion Breath": "排斥吐息"
+			},
+			"s": [
+				"Bronze Dragon Wyrmling",
+				"Amphibious",
+				"The dragon can breathe air and water.",
+				"Multiattack",
+				"The dragon makes two Rend attacks.",
+				"Rend",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}8 ({@damage 1d10 + 3}) Slashing damage.",
+				"Lightning Breath {@recharge 5}",
+				"{@actSave dex} {@dc 12}, each creature in a 40-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 16 ({@damage 3d10}) Lightning damage. {@actSaveSuccess} Half damage.",
+				"Repulsion Breath",
+				"{@actSave str} {@dc 12}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} The target is pushed up to 30 feet straight away from the dragon and has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Brown Bear|XMM",
+			"hint": {
+				"Brown Bear": "棕熊",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Brown Bear",
+				"Multiattack",
+				"The bear makes one Bite attack and one Claw attack.",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage.",
+				"Claw",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}5 ({@damage 1d4 + 3}) Slashing damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bugbear Stalker|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Javelin": "標槍",
+				"Morningstar": "釘頭錘"
+			},
+			"s": [
+				"Bugbear Stalker",
+				"Abduct",
+				"The bugbear needn't spend extra movement to move a creature it is grappling.",
+				"Multiattack",
+				"The bugbear makes two Javelin or Morningstar attacks.",
+				"Javelin",
+				"{@atkr m,r} {@hit 5}, reach 10 ft. or range 30/120 ft. {@h}13 ({@damage 3d6 + 3}) Piercing damage.",
+				"Morningstar",
+				"{@atkr m} {@hit 5} (with {@variantrule Advantage|XPHB} if the target is {@condition Grappled|XPHB} by the bugbear), reach 10 ft. {@h}12 ({@damage 2d8 + 3}) Piercing damage.",
+				"Quick Grapple",
+				"{@actSave dex} {@dc 13}, one Medium or smaller creature the bugbear can see within 10 feet. {@actSaveFail} The target has the {@condition Grappled|XPHB} condition (escape {@dc 13})."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bugbear Warrior|XMM",
+			"hint": {
+				"Light Hammer": "輕錘"
+			},
+			"s": [
+				"Bugbear Warrior",
+				"Abduct",
+				"The bugbear needn't spend extra movement to move a creature it is grappling.",
+				"Grab",
+				"{@atkr m} {@hit 4}, reach 10 ft. {@h}9 ({@damage 2d6 + 2}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 12}).",
+				"Light Hammer",
+				"{@atkr m,r} {@hit 4} (with {@variantrule Advantage|XPHB} if the target is {@condition Grappled|XPHB} by the bugbear), reach 10 ft. or range 20/60 ft. {@h}9 ({@damage 3d4 + 2}) Bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bulette|XMM",
+			"hint": {
+				"Bulette": "鯊蜥獸",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Leap": "跳躍"
+			},
+			"s": [
+				"Bulette",
+				"Multiattack",
+				"The bulette makes two Bite attacks.",
+				"Bite",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}17 ({@damage 2d12 + 4}) Piercing damage.",
+				"Deadly Leap",
+				"The bulette spends 5 feet of movement to jump to a space within 15 feet that contains one or more Large or smaller creatures. {@actSave dex} {@dc 15}, each creature in the bulette's destination space. {@actSaveFail} 19 ({@damage 3d12}) Bludgeoning damage, and the target has the {@condition Prone|XPHB} condition. {@actSaveSuccess} Half damage, and the target is pushed 5 feet straight away from the bulette.",
+				"Leap",
+				"The bulette jumps up to 30 feet by spending 10 feet of movement."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bulette Pup|XMM",
+			"hint": {
+				"Bite": "啃咬",
+				"Leap": "跳躍"
+			},
+			"s": [
+				"Bulette Pup",
+				"Bite",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}14 ({@damage 2d10 + 3}) Piercing damage.",
+				"Leap",
+				"The bulette jumps up to 30 feet by spending 10 feet of movement."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bullywug Bog Sage|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Leap": "跳躍"
+			},
+			"s": [
+				"Bullywug Bog Sage",
+				"Spellcasting",
+				"The bullywug casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 13}, {@hit 5} to hit with spell attacks):",
+				"Amphibious",
+				"The bullywug can breathe air and water.",
+				"Speak with Frogs and Toads",
+				"The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug.",
+				"Multiattack",
+				"The bullywug makes two Bog Staff attacks. It can replace any attack with a use of Spellcasting to cast {@spell Ray of Sickness|XPHB}.",
+				"Bog Staff",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Bludgeoning damage plus 10 ({@damage 3d6}) Poison damage.",
+				"Leap",
+				"The bullywug can jump up to 30 feet by spending 10 feet of movement."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bullywug Warrior|XMM",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Leap": "跳躍"
+			},
+			"s": [
+				"Bullywug Warrior",
+				"Amphibious",
+				"The bullywug can breathe air and water.",
+				"Speak with Frogs and Toads",
+				"The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug.",
+				"Insectile Rapier",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage plus 2 ({@damage 1d4}) Poison damage.",
+				"Leap",
+				"The bullywug can jump up to 30 feet by spending 10 feet of movement."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Cambion|XMM",
+			"hint": {
+				"Cambion": "魔裔",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Cambion",
+				"Spellcasting",
+				"The cambion casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 14}):",
+				"Multiattack",
+				"The cambion makes two attacks, using Claw or Fire Ray in any combination.",
+				"Claw",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Slashing damage plus 7 ({@damage 2d6}) Fire damage.",
+				"Fire Ray",
+				"{@atkr r} {@hit 7}, range 120 ft. {@h}13 ({@damage 3d6 + 3}) Fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Camel|XMM",
+			"hint": {
+				"Camel": "駱駝",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Camel",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}4 ({@damage 1d4 + 2}) Bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Carrion Crawler|XMM",
+			"hint": {
+				"Carrion Crawler": "食腐蟲",
+				"Spider Climb": "蛛行",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Carrion Crawler",
+				"Spider Climb",
+				"The carrion crawler can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Multiattack",
+				"The carrion crawler uses Paralyzing Tentacles and makes one Bite attack.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}7 ({@damage 2d4 + 2}) Piercing damage plus 3 ({@damage 1d6}) Poison damage.",
+				"Paralyzing Tentacles",
+				"{@actSave con} {@dc 12}, one creature the carrion crawler can see within 10 feet. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While {@condition Poisoned|XPHB}, the target has the {@condition Paralyzed|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Cat|XMM",
+			"hint": {
+				"Cat": "貓",
+				"Jumper": "跳躍者"
+			},
+			"s": [
+				"Cat",
+				"Jumper",
+				"The cat's jump distance is determined using its Dexterity rather than its Strength.",
+				"Scratch",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}1 Slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Centaur Trooper|XMM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Pike": "長柄槍",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Centaur Trooper",
+				"Multiattack",
+				"The centaur makes two attacks, using Pike or Longbow in any combination.",
+				"Pike",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}9 ({@damage 1d10 + 4}) Piercing damage.",
+				"Longbow",
+				"{@atkr r} {@hit 4}, range 150/600 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage.",
+				"Trampling Charge {@recharge 5}",
+				"The centaur moves up to its {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks} and can move through the spaces of Medium or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. {@actSave str} {@dc 14}. {@actSaveFail} 7 ({@damage 1d6 + 4}) Bludgeoning damage, and the target has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Centaur Warden|XMM",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Centaur Warden",
+				"Spellcasting",
+				"The centaur casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 15}):",
+				"Multiattack",
+				"The centaur makes two attacks, using Forest Staff or Sun Ray in any combination.",
+				"Forest Staff",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}13 ({@damage 2d8 + 4}) Bludgeoning damage plus 14 ({@damage 4d6}) Poison damage.",
+				"Sun Ray",
+				"{@atkr r} {@hit 7}, range 90 ft. {@h}14 ({@damage 3d6 + 4}) Radiant damage, and the target has the {@condition Blinded|XPHB} condition until the start of the centaur's next turn.",
+				"Entangling Trail {@recharge 5}",
+				"The centaur moves up to its {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}. Each creature within 5 feet of the centaur as it moves is targeted once by the following effect. {@actSave str} {@dc 15}. {@actSaveFail} 11 ({@damage 2d6 + 4}) Bludgeoning damage, and the target has the {@condition Restrained|XPHB} condition until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chain Devil|XMM",
+			"hint": {
+				"Chain Devil": "鏈魔",
+				"Diabolical Restoration": "魔鬼復原",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Chain": "鎖鏈"
+			},
+			"s": [
+				"Chain Devil",
+				"Diabolical Restoration",
+				"If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Nine Hells.",
+				"Magic Resistance",
+				"The devil has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The devil makes two Chain attacks and uses Conjure Infernal Chain.",
+				"Chain",
+				"{@atkr m} {@hit 7}, reach 10 ft. {@h}11 ({@damage 2d6 + 4}) Slashing damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 14}) from one of two chains, and it has the {@condition Restrained|XPHB} condition until the grapple ends.",
+				"Conjure Infernal Chain",
+				"The devil conjures a fiery chain to bind a creature. {@actSave dex} {@dc 15}, one creature the devil can see within 60 feet. {@actSaveFail} 9 ({@damage 2d4 + 4}) Fire damage, and the target has the {@condition Restrained|XPHB} condition until the end of the devil's next turn, at which point the chain disappears. If the target is Large or smaller, the devil moves the target up to 30 feet straight toward itself. {@actSaveSuccess} The chain disappears.",
+				"Unnerving Gaze",
+				"{@actTrigger} A creature the devil can see starts its turn within 30 feet of the devil and can see the devil. {@actResponse d}{@actSave wis} {@dc 15}, the triggering creature. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition until the end of its turn. {@actSaveSuccess} The target is immune to this devil's Unnerving Gaze for 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chasme|XMM",
+			"hint": {
+				"Chasme": "喀嘶魔",
+				"Demonic Restoration": "惡魔復原",
+				"Magic Resistance": "魔法抗性",
+				"Spider Climb": "蛛行"
+			},
+			"s": [
+				"Chasme",
+				"Demonic Restoration",
+				"If the chasme dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Abyss.",
+				"Magic Resistance",
+				"The chasme has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Spider Climb",
+				"The chasme can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+				"Proboscis",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}16 ({@damage 4d6 + 2}) Piercing damage plus 21 ({@damage 6d6}) Necrotic damage. If the target is a creature, its {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Necrotic damage taken.",
+				"Drone",
+				"{@actSave con} {@dc 12}, each creature in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the chasme (demons automatically succeed on this save). {@actSaveFail} The target has the {@condition Unconscious|XPHB} condition and repeats the save at the end of each of its turns. The target succeeds automatically after 10 minutes or if it takes damage or a creature within 5 feet of it takes an action to empty a flask of Holy Water on it. {@actSaveSuccess} The target is immune to this chasme's Drone for 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chimera|XMM",
+			"hint": {
+				"Chimera": "奇美拉",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊",
+				"Ram": "公羊",
+				"Fire Breath {@recharge 5}": "火焰吐息 {@recharge 5}"
+			},
+			"s": [
+				"Chimera",
+				"Multiattack",
+				"The chimera makes one Ram attack, one Bite attack, and one Claw attack. It can replace the Claw attack with a use of Fire Breath if available.",
+				"Bite",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Piercing damage, or 18 ({@damage 4d6 + 4}) Piercing damage if the chimera had {@variantrule Advantage|XPHB} on the attack roll.",
+				"Claw",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}7 ({@damage 1d6 + 4}) Slashing damage.",
+				"Ram",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}10 ({@damage 1d12 + 4}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Prone|XPHB} condition.",
+				"Fire Breath {@recharge 5}",
+				"{@actSave dex} {@dc 15}, each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 31 ({@damage 7d8}) Fire damage. {@actSaveSuccess} Half damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chuul|XMM",
+			"hint": {
+				"Chuul": "甲伏怪",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Chuul",
+				"Amphibious",
+				"The chuul can breathe air and water.",
+				"Sense Magic",
+				"The chuul senses magic within 120 feet of itself. This trait otherwise works like the {@spell Detect Magic|XPHB} spell but isn't itself magical.",
+				"Multiattack",
+				"The chuul makes two Pincer attacks and uses Paralyzing Tentacles.",
+				"Pincer",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}9 ({@damage 1d10 + 4}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 14}) from one of two pincers.",
+				"Paralyzing Tentacles",
+				"{@actSave con} {@dc 13}, one creature {@condition Grappled|XPHB} by the chuul. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While {@condition Poisoned|XPHB}, the target has the {@condition Paralyzed|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Clay Golem|XMM",
+			"hint": {
+				"Clay Golem": "黏土魔像",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Clay Golem",
+				"Acid Absorption",
+				"Whenever the golem is subjected to Acid damage, it takes no damage and instead regains a number of {@variantrule Hit Points|XPHB} equal to the Acid damage dealt.",
+				"Berserk",
+				"Whenever the golem starts its turn {@status Bloodied|XPHB}, roll {@dice 1d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it continues to be berserk until it is destroyed or it is no longer {@status Bloodied|XPHB}.",
+				"Immutable Form",
+				"The golem can't shape-shift.",
+				"Magic Resistance",
+				"The golem has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The golem makes two Slam attacks, or it makes three Slam attacks if it used Hasten this turn.",
+				"Slam",
+				"{@atkr m} {@hit 9}, reach 5 ft. {@h}10 ({@damage 1d10 + 5}) Bludgeoning damage plus 6 ({@damage 1d12}) Acid damage, and the target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Acid damage taken.",
+				"Hasten {@recharge 5}",
+				"The golem takes the {@action Dash|XPHB} and {@action Disengage|XPHB} actions."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Cloaker|XMM",
+			"hint": {
+				"Cloaker": "斗篷偽怪",
+				"Multiattack": "多重攻擊",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Cloaker",
+				"Phantasms (Recharge after a Short or Long Rest)",
+				"The cloaker casts the {@spell Mirror Image|XPHB} spell, requiring no spell components and using Wisdom as the spellcasting ability. The spell ends early if the cloaker starts or ends its turn in {@variantrule Bright Light|XPHB}.",
+				"Light Sensitivity",
+				"While in {@variantrule Bright Light|XPHB}, the cloaker has {@variantrule Disadvantage|XPHB} on attack rolls.",
+				"Multiattack",
+				"The cloaker makes one Attach attack and two Tail attacks.",
+				"Attach",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}13 ({@damage 3d6 + 3}) Piercing damage. If the target is a Large or smaller creature, the cloaker attaches to it. While the cloaker is attached, the target has the {@condition Blinded|XPHB} condition, and the cloaker can't make Attach attacks against other targets. In addition, the cloaker halves the damage it takes (round down), and the target takes the same amount of damage.",
+				"The cloaker can detach itself by spending 5 feet of movement. The target or a creature within 5 feet of it can take an action to try to detach the cloaker, doing so by succeeding on a {@dc 14} Strength ({@skill Athletics|XPHB}) check.",
+				"Tail",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}8 ({@damage 1d10 + 3}) Slashing damage.",
+				"Moan",
+				"{@actSave wis} {@dc 13}, each creature in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the cloaker. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition until the end of the cloaker's next turn. {@actSaveSuccess} The target is immune to this cloaker's Moan for the next 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Cloud Giant|XMM",
+			"hint": {
+				"Cloud Giant": "雲巨人",
+				"Spellcasting": "施法",
+				"Misty Step": "迷蹤步",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Cloud Giant",
+				"(hover)",
+				"Spellcasting",
+				"The giant casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 15}):",
+				"Misty Step",
+				"The giant casts the {@spell Misty Step|XPHB} spell, using the same spellcasting ability as Spellcasting.",
+				"Multiattack",
+				"The giant makes two attacks, using Thunderous Mace or Thundercloud in any combination. It can replace one attack with a use of Spellcasting to cast {@spell Fog Cloud|XPHB}.",
+				"Thunderous Mace",
+				"{@atkr m} {@hit 12}, reach 10 ft. {@h}21 ({@damage 3d8 + 8}) Bludgeoning damage plus 7 ({@damage 2d6}) Thunder damage.",
+				"Thundercloud",
+				"{@atkr r} {@hit 12}, range 240 ft. {@h}18 ({@damage 3d6 + 8}) Thunder damage, and the target has the {@condition Incapacitated|XPHB} condition until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Cockatrice|XMM",
+			"hint": {
+				"Cockatrice": "雞蛇獸"
+			},
+			"s": [
+				"Cockatrice",
+				"Petrifying Bite",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}3 ({@damage 1d4 + 1}) Piercing damage. If the target is a creature, it is subjected to the following effect. {@actSave con} {@dc 11}. {@actSaveFail 1} The target has the {@condition Restrained|XPHB} condition. The target repeats the save at the end of its next turn if it is still {@condition Restrained|XPHB}, ending the effect on itself on a success. {@actSaveFail 2} The target has the {@condition Petrified|XPHB} condition, instead of the {@condition Restrained|XPHB} condition, for 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Cockatrice Regent|XMM",
+			"hint": {
+				"Flyby": "飛掠",
+				"Multiattack": "多重攻擊",
+				"Talons": "利爪"
+			},
+			"s": [
+				"Cockatrice Regent",
+				"Flyby",
+				"The cockatrice doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.",
+				"Multiattack",
+				"The cockatrice makes one Petrifying Bite attack and two Talons attacks.",
+				"Petrifying Bite",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}13 ({@damage 2d8 + 4}) Piercing damage. If the target is a creature, it is subjected to the following effect. {@actSave con} {@dc 14}. {@actSaveFail 1} The target has the {@condition Restrained|XPHB} condition and repeats the save at the end of its next turn if it is still {@condition Restrained|XPHB}, ending the effect on itself on a success. {@actSaveFail 2} The target has the {@condition Petrified|XPHB} condition instead of the {@condition Restrained|XPHB} condition.",
+				"Talons",
+				"{@atkr m} {@hit 7}, reach 5 ft. {@h}18 ({@damage 4d6 + 4}) Slashing damage.",
+				"Magical Backlash",
+				"{@actTrigger} A creature within 120 feet of the cockatrice deals damage to it. {@actResponse d}{@actSave dex} {@dc 14}, the triggering creature. {@actSaveFail} 13 ({@damage 3d6 + 3}) Force damage."
+			]
+		}
+	]
+}
