@@ -13222,11 +13222,12 @@ Renderer.psionic = class {
 	static enhanceMode (mode) {
 		if (mode._isEnhanced) return;
 
-		mode.name = [mode.name, Renderer.psionic._enhanceMode_getModeTitleBracketPart({mode: mode})].filter(Boolean).join(" ");
+		const __zn = m => m.name_zh && (m._zhOf == null || m._zhOf === m.name) ? m.name_zh : m.name;
+		mode.name = [__zn(mode), Renderer.psionic._enhanceMode_getModeTitleBracketPart({mode: mode})].filter(Boolean).join("");
 
 		if (mode.submodes) {
 			mode.submodes.forEach(sm => {
-				sm.name = [sm.name, Renderer.psionic._enhanceMode_getModeTitleBracketPart({mode: sm})].filter(Boolean).join(" ");
+				sm.name = [__zn(sm), Renderer.psionic._enhanceMode_getModeTitleBracketPart({mode: sm})].filter(Boolean).join("");
 			});
 		}
 
@@ -13240,18 +13241,18 @@ Renderer.psionic = class {
 		if (mode.concentration) modeTitleBracketArray.push(Renderer.psionic._enhanceMode_getModeTitleConcentration({mode}));
 
 		if (modeTitleBracketArray.length === 0) return null;
-		return `(${modeTitleBracketArray.join("; ")})`;
+		return `（${modeTitleBracketArray.join("；")}）`;
 	}
 
 	static _enhanceMode_getModeTitleCost ({mode}) {
 		const costMin = mode.cost.min;
 		const costMax = mode.cost.max;
 		const costString = costMin === costMax ? costMin : `${costMin}-${costMax}`;
-		return `${costString} psi`;
+		return `${costString} 靈能點`;
 	}
 
 	static _enhanceMode_getModeTitleConcentration ({mode}) {
-		return `conc., ${mode.concentration.duration} ${mode.concentration.unit}.`;
+		return `專注，${mode.concentration.duration} ${({min: "分鐘", hr: "小時", rnd: "輪"})[mode.concentration.unit] || mode.concentration.unit}`;
 	}
 
 	/* -------------------------------------------- */
@@ -13262,7 +13263,7 @@ Renderer.psionic = class {
 		return {
 			entryTypeOrder: `{@i ${Renderer.psionic.getTypeOrderString(ent)}}`,
 			entryContent: ent.entries ? {entries: ent.entries, type: "entries"} : null,
-			entryFocus: ent.focus ? `{@b {@i Psychic Focus.}} ${ent.focus}` : null,
+			entryFocus: ent.focus ? `{@b {@i 心靈專注。}}${ent.focus}` : null,
 			entriesModes: ent.modes
 				? ent.modes
 					.flatMap(mode => Renderer.psionic._getModeEntries(mode))
@@ -13301,7 +13302,7 @@ Renderer.psionic = class {
 		const typeMeta = Parser.psiTypeToMeta(psi.type);
 		// if "isAltDisplay" is true, render as e.g. "Greater Discipline (Awakened)" rather than "Awakened Greater Discipline"
 		return typeMeta.hasOrder
-			? typeMeta.isAltDisplay ? `${typeMeta.full} (${psi.order})` : `${psi.order} ${typeMeta.full}`
+			? typeMeta.isAltDisplay ? `${typeMeta.full}（${Parser.psiOrderToFull(psi.order)}）` : `${Parser.psiOrderToFull(psi.order)}${typeMeta.full.replace(/^靈能/, "")}`
 			: typeMeta.full;
 	}
 

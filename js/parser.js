@@ -2253,13 +2253,13 @@ Parser.getTreasureTypeEntry = function (typ) {
 // psi-prefix functions are for parsing psionic data, and shared with the roll20 script
 Parser.PSI_ABV_TYPE_TALENT = "T";
 Parser.PSI_ABV_TYPE_DISCIPLINE = "D";
-Parser.PSI_ORDER_NONE = "None";
+Parser.PSI_ORDER_NONE = "無";
 Parser.psiTypeToFull = type => Parser.psiTypeToMeta(type).full;
 
 Parser.psiTypeToMeta = type => {
 	let out = {};
-	if (type === Parser.PSI_ABV_TYPE_TALENT) out = {hasOrder: false, full: "Talent"};
-	else if (type === Parser.PSI_ABV_TYPE_DISCIPLINE) out = {hasOrder: true, full: "Discipline"};
+	if (type === Parser.PSI_ABV_TYPE_TALENT) out = {hasOrder: false, full: "靈能天賦", short: "天賦"};
+	else if (type === Parser.PSI_ABV_TYPE_DISCIPLINE) out = {hasOrder: true, full: "靈能戒律", short: "戒律"};
 	else if (PrereleaseUtil.getMetaLookup("psionicTypes")?.[type]) out = MiscUtil.copyFast(PrereleaseUtil.getMetaLookup("psionicTypes")[type]);
 	else if (BrewUtil2.getMetaLookup("psionicTypes")?.[type]) out = MiscUtil.copyFast(BrewUtil2.getMetaLookup("psionicTypes")[type]);
 	out.full = out.full || "Unknown";
@@ -2276,7 +2276,7 @@ Parser.psiTypeAbvToStylePart = function (type) { // For prerelease/homebrew
 };
 
 Parser.psiOrderToFull = (order) => {
-	return order === undefined ? Parser.PSI_ORDER_NONE : order;
+	return order === undefined ? Parser.PSI_ORDER_NONE : ({Avatar: "化身", Awakened: "覺醒", Immortal: "不朽", Nomad: "遊牧", "Wu Jen": "巫人", "Soul Knife": "靈魂之刃"}[order] || order);
 };
 
 Parser.prereqSpellToFull = function (spell, {isTextOnly = false} = {}) {
