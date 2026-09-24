@@ -1,0 +1,271 @@
+{
+	"batch": "ru-cond",
+	"items": [
+		{
+			"prop": "condition",
+			"key": "Blinded|XPHB",
+			"hint": {
+				"Blinded": "目盲"
+			},
+			"s": [
+				"Blinded",
+				"While you have the Blinded condition, you experience the following effects.",
+				"Can't See",
+				"You can't see and automatically fail any ability check that requires sight.",
+				"Attacks Affected",
+				"{@action Attack|XPHB} rolls against you have {@variantrule Advantage|XPHB}, and your attack rolls have {@variantrule Disadvantage|XPHB}."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Charmed|XPHB",
+			"hint": {
+				"Charmed": "魅惑"
+			},
+			"s": [
+				"Charmed",
+				"While you have the Charmed condition, you experience the following effects.",
+				"Can't Harm the Charmer",
+				"You can't attack the charmer or target the charmer with damaging abilities or {@variantrule Magical Effect|XPHB|magical effects}.",
+				"Social Advantage",
+				"The charmer has {@variantrule Advantage|XPHB} on any ability check to interact with you socially."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Deafened|XPHB",
+			"hint": {
+				"Deafened": "耳聾"
+			},
+			"s": [
+				"Deafened",
+				"While you have the Deafened condition, you experience the following effect.",
+				"Can't Hear",
+				"You can't hear and automatically fail any ability check that requires hearing."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Exhaustion|XPHB",
+			"hint": {
+				"Exhaustion": "力竭"
+			},
+			"s": [
+				"Exhaustion",
+				"While you have the Exhaustion condition, you experience the following effects.",
+				"Exhaustion Levels",
+				"This condition is cumulative. Each time you receive it, you gain 1 Exhaustion level. You die if your Exhaustion level is 6.",
+				"D20 Tests Affected",
+				"When you make a D20 Test the roll is reduced by 2 times your Exhaustion level.",
+				"Speed Reduced",
+				"Your {@variantrule Speed|XPHB} is reduced by a number of feet equal to 5 times your Exhaustion level.",
+				"Removing Exhaustion Levels",
+				"Finishing a {@variantrule Long Rest|XPHB} removes 1 of your Exhaustion levels. When your Exhaustion level reaches 0, the condition ends."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Frightened|XPHB",
+			"hint": {
+				"Frightened": "恐懼"
+			},
+			"s": [
+				"Frightened",
+				"While you have the Frightened condition, you experience the following effects.",
+				"Ability Checks and Attacks Affected",
+				"You have {@variantrule Disadvantage|XPHB} on ability checks and attack rolls while the source of fear is within line of sight.",
+				"Can't Approach",
+				"You can't willingly move closer to the source of fear."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Grappled|XPHB",
+			"hint": {
+				"Grappled": "被擒"
+			},
+			"s": [
+				"Grappled",
+				"While you have the Grappled condition, you experience the following effects.",
+				"Speed 0",
+				"Your {@variantrule Speed|XPHB} is 0 and can't increase.",
+				"Attacks Affected",
+				"You have {@variantrule Disadvantage|XPHB} on attack rolls against any target other than the grappler.",
+				"Movable",
+				"The grappler can drag or carry you when it moves, but every foot of movement costs it 1 extra foot unless you are Tiny or two or more sizes smaller than it."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Incapacitated|XPHB",
+			"hint": {
+				"Incapacitated": "無力",
+				"Surprised": "突襲"
+			},
+			"s": [
+				"Incapacitated",
+				"While you have the Incapacitated condition, you experience the following effects.",
+				"Inactive",
+				"You can't take any {@variantrule Action|XPHB|action}, {@variantrule Bonus Action|XPHB}, or {@variantrule Reaction|XPHB}.",
+				"No Concentration",
+				"Your {@status Concentration|XPHB} is broken.",
+				"Speechless",
+				"You can't speak.",
+				"Surprised",
+				"If you're Incapacitated when you roll {@variantrule Initiative|XPHB}, you have {@variantrule Disadvantage|XPHB} on the roll."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Invisible|XPHB",
+			"hint": {
+				"Invisible": "隱形"
+			},
+			"s": [
+				"Invisible",
+				"While you have the Invisible condition, you experience the following effects.",
+				"Surprise",
+				"If you're Invisible when you roll {@variantrule Initiative|XPHB}, you have {@variantrule Advantage|XPHB} on the roll.",
+				"Concealed",
+				"You aren't affected by any effect that requires its target to be seen unless the effect's creator can somehow see you. Any equipment you are wearing or carrying is also concealed.",
+				"Attacks Affected",
+				"{@action Attack|XPHB} rolls against you have {@variantrule Disadvantage|XPHB}, and your attack rolls have {@variantrule Advantage|XPHB}. If a creature can somehow see you, you don't gain this benefit against that creature."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Paralyzed|XPHB",
+			"hint": {
+				"Paralyzed": "麻痺",
+				"Incapacitated": "無力"
+			},
+			"s": [
+				"Paralyzed",
+				"While you have the Paralyzed condition, you experience the following effects.",
+				"Incapacitated",
+				"You have the {@condition Incapacitated|XPHB} condition.",
+				"Speed 0",
+				"Your {@variantrule Speed|XPHB} is 0 and can't increase.",
+				"Saving Throws Affected",
+				"You automatically fail Strength and Dexterity {@variantrule Saving Throw|XPHB|saving throws}.",
+				"Attacks Affected",
+				"{@action Attack|XPHB} rolls against you have {@variantrule Advantage|XPHB}.",
+				"Automatic Critical Hits",
+				"Any attack roll that hits you is a {@variantrule Critical Hit|XPHB} if the attacker is within 5 feet of you."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Petrified|XPHB",
+			"hint": {
+				"Petrified": "石化",
+				"Incapacitated": "無力",
+				"Poison Immunity": "毒素免疫"
+			},
+			"s": [
+				"Petrified",
+				"While you have the Petrified condition, you experience the following effects.",
+				"Turned to Inanimate Substance",
+				"You are transformed, along with any nonmagical objects you are wearing and carrying, into a solid inanimate substance (usually stone). Your weight increases by a factor of ten, and you cease aging.",
+				"Incapacitated",
+				"You have the {@condition Incapacitated|XPHB} condition.",
+				"Speed 0",
+				"Your {@variantrule Speed|XPHB} is 0 and can't increase.",
+				"Attacks Affected",
+				"{@action Attack|XPHB} rolls against you have {@variantrule Advantage|XPHB}.",
+				"Saving Throws Affected",
+				"You automatically fail Strength and Dexterity {@variantrule Saving Throw|XPHB|saving throws}.",
+				"Resist Damage",
+				"You have {@variantrule Resistance|XPHB} to all damage.",
+				"Poison Immunity",
+				"You have {@variantrule Immunity|XPHB} to the {@condition Poisoned|XPHB} condition."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Poisoned|XPHB",
+			"hint": {
+				"Poisoned": "中毒"
+			},
+			"s": [
+				"Poisoned",
+				"While you have the Poisoned condition, you experience the following effect.",
+				"Ability Checks and Attacks Affected",
+				"You have {@variantrule Disadvantage|XPHB} on attack rolls and ability checks."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Prone|XPHB",
+			"hint": {
+				"Prone": "伏地"
+			},
+			"s": [
+				"Prone",
+				"While you have the Prone condition, you experience the following effects.",
+				"Restricted Movement",
+				"Your only movement options are to {@variantrule Crawling|XPHB|crawl} or to spend an amount of movement equal to half your {@variantrule Speed|XPHB} (round down) to right yourself and thereby end the condition. If your {@variantrule Speed|XPHB} is 0, you can't right yourself.",
+				"Attacks Affected",
+				"You have {@variantrule Disadvantage|XPHB} on attack rolls. An attack roll against you has {@variantrule Advantage|XPHB} if the attacker is within 5 feet of you. Otherwise, that attack roll has {@variantrule Disadvantage|XPHB}."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Restrained|XPHB",
+			"hint": {
+				"Restrained": "束縛"
+			},
+			"s": [
+				"Restrained",
+				"While you have the Restrained condition, you experience the following effects.",
+				"Speed 0",
+				"Your {@variantrule Speed|XPHB} is 0 and can't increase.",
+				"Attacks Affected",
+				"{@action Attack|XPHB} rolls against you have {@variantrule Advantage|XPHB}, and your attack rolls have {@variantrule Disadvantage|XPHB}.",
+				"Saving Throws Affected",
+				"You have {@variantrule Disadvantage|XPHB} on Dexterity {@variantrule Saving Throw|XPHB|saving throws}."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Stunned|XPHB",
+			"hint": {
+				"Stunned": "震懾",
+				"Incapacitated": "無力"
+			},
+			"s": [
+				"Stunned",
+				"While you have the Stunned condition, you experience the following effects.",
+				"Incapacitated",
+				"You have the {@condition Incapacitated|XPHB} condition.",
+				"Saving Throws Affected",
+				"You automatically fail Strength and Dexterity {@variantrule Saving Throw|XPHB|saving throws}.",
+				"Attacks Affected",
+				"{@action Attack|XPHB} rolls against you have {@variantrule Advantage|XPHB}."
+			]
+		},
+		{
+			"prop": "condition",
+			"key": "Unconscious|XPHB",
+			"hint": {
+				"Unconscious": "昏迷"
+			},
+			"s": [
+				"Unconscious",
+				"While you have the Unconscious condition, you experience the following effects.",
+				"Inert",
+				"You have the {@condition Incapacitated|XPHB} and {@condition Prone|XPHB} conditions, and you drop whatever you're holding. When this condition ends, you remain {@condition Prone|XPHB}.",
+				"Speed 0",
+				"Your {@variantrule Speed|XPHB} is 0 and can't increase.",
+				"Attacks Affected",
+				"{@action Attack|XPHB} rolls against you have {@variantrule Advantage|XPHB}.",
+				"Saving Throws Affected",
+				"You automatically fail Strength and Dexterity {@variantrule Saving Throw|XPHB|saving throws}.",
+				"Automatic Critical Hits",
+				"Any attack roll that hits you is a {@variantrule Critical Hit|XPHB} if the attacker is within 5 feet of you.",
+				"Unaware",
+				"You're unaware of your surroundings."
+			]
+		}
+	]
+}

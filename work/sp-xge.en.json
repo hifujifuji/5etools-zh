@@ -1,0 +1,41 @@
+{
+	"batch": "sp-xge",
+	"items": [
+		{
+			"prop": "spell",
+			"key": "Find Greater Steed|XGE",
+			"hint": {
+				"Find Greater Steed": "尋獲高等坐騎"
+			},
+			"s": [
+				"Find Greater Steed",
+				"You summon a spirit that assumes the form of a loyal, majestic mount. Appearing in an unoccupied space within range, the spirit takes on a form you choose: a {@creature griffon}, a {@creature pegasus}, a {@creature peryton}, a {@creature dire wolf}, a {@creature rhinoceros}, or a {@creature saber-toothed tiger}. The creature has the statistics provided in the Monster Manual for the chosen form, though it is a celestial, a fey, or a fiend (your choice) instead of its normal creature type. Additionally, if it has an Intelligence score of 5 or lower, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.",
+				"You control the mount in combat. While the mount is within 1 mile of you, you can communicate with it telepathically. While mounted on it, you can make any spell you cast that targets only you also target the mount.",
+				"The mount disappears temporarily when it drops to 0 hit points or when you dismiss it as an action. Casting this spell again re-summons the bonded mount, with all its hit points restored and any conditions removed.",
+				"You can't have more than one mount bonded by this spell or {@spell find steed} at the same time. As an action, you can release a mount from its bond, causing it to disappear permanently.",
+				"Whenever the mount disappears, it leaves behind any objects it was wearing or carrying.",
+				"Dragonnel Steeds",
+				"With the DM's permission, a paladin can summon a spirit in the form of a {@creature dragonnel|ftd} using the find greater steed spell, which appears in {@i Xanathar's Guide to Everything}."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Wrath of Nature|XGE",
+			"hint": {
+				"Wrath of Nature": "自然之怒"
+			},
+			"s": [
+				"Wrath of Nature",
+				"You call out to the spirits of nature to rouse them against your enemies. Choose a point you can see within range. The spirits cause trees, rocks, and grasses in a 60-foot cube centered on that point to become animated until the spell ends.",
+				"Grasses and Undergrowth",
+				"Any area of ground in the cube that is covered by grass or undergrowth is {@quickref difficult terrain||3} for your enemies.",
+				"Trees",
+				"At the start of each of your turns, each of your enemies within 10 feet of any tree in the cube must succeed on a Dexterity saving throw or take {@damage 4d6} slashing damage from whipping branches.",
+				"Roots and Vines",
+				"At the end of each of your turns, one creature of your choice that is on the ground in the cube must succeed on a Strength saving throw or become {@condition restrained} until the spell ends. A {@condition restrained} creature can use an action to make a Strength ({@skill Athletics}) check against your spell save DC, ending the effect on itself on a success.",
+				"Rocks",
+				"As a bonus action on your turn, you can cause a loose rock in the cube to launch at a creature you can see in the cube. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} nonmagical bludgeoning damage, and it must succeed on a Strength saving throw or fall {@condition prone}."
+			]
+		}
+	]
+}

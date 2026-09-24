@@ -1,0 +1,82 @@
+{
+	"batch": "sp-xphb",
+	"items": [
+		{
+			"prop": "spell",
+			"key": "Antipathy/Sympathy|XPHB",
+			"hint": {
+				"Antipathy/Sympathy": "反感／同感術",
+				"Antipathy": "反感",
+				"Sympathy": "同感",
+				"Ending the Effect": "結束效果"
+			},
+			"s": [
+				"Antipathy/Sympathy",
+				"As you cast the spell, choose whether it creates antipathy or sympathy, and target one creature or object that is Huge or smaller. Then specify a kind of creature, such as red dragons, goblins, or vampires. A creature of the chosen kind makes a Wisdom saving throw when it comes within 120 feet of the target. Your choice of antipathy or sympathy determines what happens to a creature when it fails that save:",
+				"Antipathy",
+				"The creature has the {@condition Frightened|XPHB} condition. The {@condition Frightened|XPHB} creature must use its movement on its turns to get as far away as possible from the target, moving by the safest route.",
+				"Sympathy",
+				"The creature has the {@condition Charmed|XPHB} condition. The {@condition Charmed|XPHB} creature must use its movement on its turns to get as close as possible to the target, moving by the safest route. If the creature is within 5 feet of the target, the creature can't willingly move away. If the target damages the {@condition Charmed|XPHB} creature, that creature can make a Wisdom saving throw to end the effect, as described below.",
+				"Ending the Effect",
+				"If the {@condition Frightened|XPHB} or {@condition Charmed|XPHB} creature ends its turn more than 120 feet away from the target, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target. A creature that successfully saves against this effect is immune to it for 1 minute, after which it can be affected again."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Imprisonment|XPHB",
+			"hint": {
+				"Imprisonment": "禁錮術",
+				"Burial": "埋葬",
+				"Chaining": "鎖鏈",
+				"Hedged Prison": "圍籬牢獄",
+				"Minimus Containment": "微縮拘禁",
+				"Slumber": "沉眠",
+				"Ending the Spell": "結束法術"
+			},
+			"s": [
+				"Imprisonment",
+				"a statuette of the target worth 5,000+ GP",
+				"You create a magical restraint to hold a creature that you can see within range. The target must make a Wisdom saving throw. On a successful save, the target is unaffected, and it is immune to this spell for the next 24 hours. On a failed save, the target is imprisoned. While imprisoned, the target doesn't need to breathe, eat, or drink, and it doesn't age. Divination spells can't locate or perceive the imprisoned target, and the target can't teleport.",
+				"Until the spell ends, the target is also affected by one of the following effects of your choice:",
+				"Burial",
+				"The target is entombed beneath the earth in a hollow globe of magical force that is just large enough to contain the target. Nothing can pass into or out of the globe.",
+				"Chaining",
+				"Chains firmly rooted in the ground hold the target in place. The target has the {@condition Restrained|XPHB} condition and can't be moved by any means.",
+				"Hedged Prison",
+				"The target is trapped in a demiplane that is warded against teleportation and planar travel. The demiplane is your choice of a labyrinth, a cage, a tower, or the like.",
+				"Minimus Containment",
+				"The target becomes 1 inch tall and is trapped inside an indestructible gemstone or a similar object. Light can pass through the gemstone (allowing the target to see out and other creatures to see in), but nothing else can pass through by any means.",
+				"Slumber",
+				"The target has the {@condition Unconscious|XPHB} condition and can't be awoken.",
+				"Ending the Spell",
+				"When you cast the spell, specify a trigger that will end it. The trigger can be as simple or as elaborate as you choose, but the DM must agree that it has a high likelihood of happening within the next decade. The trigger must be an observable action, such as someone making a particular offering at the temple of your god, saving your true love, or defeating a specific monster.",
+				"A {@spell Dispel Magic|XPHB} spell can end the spell only if it is cast with a level 9 spell slot, targeting either the prison or the component used to create it."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "True Polymorph|XPHB",
+			"hint": {
+				"True Polymorph": "完全變形術",
+				"Creature into Creature": "生物變生物",
+				"Object into Creature": "物體變生物",
+				"Creature into Object": "生物變物體"
+			},
+			"s": [
+				"True Polymorph",
+				"Choose one creature or nonmagical object that you can see within range. The creature shape-shifts into a different creature or a nonmagical object, or the object shape-shifts into a creature (the object must be neither worn nor carried). The transformation lasts for the duration or until the target dies or is destroyed, but if you maintain {@status Concentration|XPHB} on this spell for the full duration, the spell lasts until dispelled.",
+				"An unwilling creature can make a Wisdom saving throw, and if it succeeds, it isn't affected by this spell.",
+				"Creature into Creature",
+				"If you turn a creature into another kind of creature, the new form can be any kind you choose that has a {@variantrule Challenge Rating|XPHB} equal to or less than the target's {@variantrule Challenge Rating|XPHB} or level. The target's game statistics are replaced by the stat block of the new form, but it retains its {@variantrule Hit Points|XPHB}, {@variantrule Hit Point Dice|XPHB}, alignment, and personality.",
+				"The target gains a number of {@variantrule Temporary Hit Points|XPHB} equal to the {@variantrule Hit Points|XPHB} of the new form. These {@variantrule Temporary Hit Points|XPHB} vanish if any remain when the spell ends.",
+				"The target is limited in the actions it can perform by the anatomy of its new form, and it can't speak or cast spells.",
+				"The target's gear melds into the new form. The creature can't use or otherwise benefit from any of that equipment.",
+				"Object into Creature",
+				"You can turn an object into any kind of creature, as long as the creature's size is no larger than the object's size and the creature has a {@variantrule Challenge Rating|XPHB} of 9 or lower. The creature is {@variantrule Friendly [Attitude]|XPHB|Friendly} to you and your allies. In combat, it takes its turns immediately after yours, and it obeys your commands.",
+				"If the spell lasts more than an hour, you no longer control the creature. It might remain {@variantrule Friendly [Attitude]|XPHB|Friendly} to you, depending on how you have treated it.",
+				"Creature into Object",
+				"If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form after the spell ends and it returns to normal."
+			]
+		}
+	]
+}

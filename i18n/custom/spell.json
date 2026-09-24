@@ -124,6 +124,59 @@
 		],
 		"ENG_name": "Aid"
 	},
+	"Air Bubble|AAG": {
+		"name": "空氣泡",
+		"source": "AAG",
+		"page": 22,
+		"referenceSources": [
+			"LoX"
+		],
+		"level": 2,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 24
+				}
+			}
+		],
+		"entries": [
+			"你在射程內一個你能看見之自願生物的頭部周圍創造一個幽靈般的球體。球體內充滿新鮮空氣，持續到法術結束。若該生物有不只一個頭，空氣球只會出現在其中一個頭的周圍（假設它所有的頭共用同一個呼吸系統，這便足以讓該生物避免窒息）。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 3 環或更高環階的法術位施展此法術時，每高於 2 環一環，你可以多創造兩個新鮮空氣球。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Air Bubble"
+	},
 	"Alarm|XPHB": {
 		"name": "警報術",
 		"source": "XPHB",
@@ -262,6 +315,84 @@
 			"slashing"
 		],
 		"ENG_name": "Alter Self"
+	},
+	"Alustriel's Mooncloak|FRHOF": {
+		"name": "阿盧絲翠爾月之斗篷",
+		"source": "FRHoF",
+		"page": 142,
+		"level": 5,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "emanation",
+			"distance": {
+				"type": "feet",
+				"amount": 20
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一顆價值 50+ GP 的月光石",
+				"cost": 5000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"在持續時間內，月光以{@variantrule Dim Light|XPHB|微光}充滿以你為起點的 20 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}。位於該區域內時，你與你的盟友擁有{@variantrule Cover|XPHB|半掩護}，並具有對寒冷、閃電與光耀傷害的{@variantrule Resistance|XPHB|抗性}。",
+			"法術持續期間，你可以使用以下其中一個選項，並立即結束法術：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "解放",
+						"entries": [
+							"當你在避免或結束{@condition Frightened|XPHB}、{@condition Grappled|XPHB}或{@condition Restrained|XPHB}狀態的豁免檢定中失敗時，你可以採取一個{@variantrule Reaction|XPHB|反應}改為豁免成功。"
+						],
+						"ENG_name": "Liberation"
+					},
+					{
+						"type": "item",
+						"name": "喘息",
+						"entries": [
+							"作為一個{@action Magic|XPHB|魔法}動作，你或區域內一名盟友恢復等於 {@dice 4d10} 加上你施法屬性調整值的{@variantrule Hit Points|XPHB|生命值}。"
+						],
+						"ENG_name": "Respite"
+					}
+				]
+			}
+		],
+		"damageResist": [
+			"cold",
+			"lightning",
+			"radiant"
+		],
+		"miscTags": [
+			"HL",
+			"LGT"
+		],
+		"areaTags": [
+			"S"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Alustriel's Mooncloak"
 	},
 	"Animal Friendship|XPHB": {
 		"name": "化獸為友",
@@ -567,6 +698,59 @@
 		"hasFluffImages": true,
 		"ENG_name": "Animate Objects"
 	},
+	"Antagonize|BMT": {
+		"name": "挑釁術",
+		"source": "BMT",
+		"page": 50,
+		"level": 3,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a playing card depicting a rogue"
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你低聲說出挑釁射程內一個由你選擇之生物的魔法話語。目標必須進行一次感知豁免檢定。失敗時，目標受到 {@damage 4d4} 點心靈傷害，且必須立即使用其反應，對另一個你能看見、由你選擇的生物進行一次近戰攻擊。若目標無法進行此攻擊（例如其觸及範圍內沒有任何生物，或其反應無法使用），目標改為在你下個回合開始前進行的下一次攻擊檢定具有劣勢。成功時，目標只受到一半傷害。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 4 環或更高環階的法術位施展此法術時，每高於 3 環一環，傷害增加 {@scaledamage 4d4|3-9|1d4}。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"psychic"
+		],
+		"savingThrow": [
+			"wisdom"
+		],
+		"miscTags": [
+			"SGT"
+		],
+		"ENG_name": "Antagonize"
+	},
 	"Antilife Shell|XPHB": {
 		"name": "反生命護罩",
 		"source": "XPHB",
@@ -625,6 +809,129 @@
 		],
 		"ENG_name": "Antilife Shell"
 	},
+	"Antimagic Field|PHB": {
+		"name": "反魔法結界",
+		"source": "PHB",
+		"page": 213,
+		"srd": true,
+		"basicRules": true,
+		"referenceSources": [
+			"HotDQ",
+			"OotA",
+			"CoS",
+			"SKT",
+			"ToA",
+			"WDH",
+			"LLK",
+			"WDMM",
+			"DC",
+			"BGDIA",
+			"IDRotF",
+			"ToFW",
+			"VEoR"
+		],
+		"reprintedAs": [
+			"Antimagic Field|XPHB"
+		],
+		"level": 8,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "sphere",
+			"distance": {
+				"type": "feet",
+				"amount": 10
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a pinch of powdered iron or iron filings"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"一個半徑 10 呎、隱形的反魔法球形包圍著你。此區域與遍布多元宇宙的魔法能量隔絕。在球形內，無法施展法術，被召喚的生物會消失，甚至魔法物品也會變得平凡。直到法術結束，球形隨你移動，並以你為中心。",
+			"法術與其他魔法效果（神器或神祇所創造的除外）在球形內被壓制，也無法伸入其中。用來施展被壓制之法術的法術位仍會被消耗。效果被壓制期間不會運作，但被壓制的時間仍計入其持續時間。",
+			{
+				"type": "entries",
+				"name": "指定目標的效果",
+				"entries": [
+					"以球形內的生物或物體為目標的法術與其他魔法效果，例如{@spell magic missile}與{@spell charm person}，對該目標沒有效果。"
+				],
+				"ENG_name": "Targeted Effects"
+			},
+			{
+				"type": "entries",
+				"name": "魔法區域",
+				"entries": [
+					"其他法術或魔法效果的區域，例如{@spell fireball}，無法延伸進球形內。若球形與魔法區域重疊，被球形覆蓋的部分會被壓制。例如，火牆所創造的火焰在球形內被壓制，若重疊部分夠大，便會在牆上形成一個缺口。"
+				],
+				"ENG_name": "Areas of Magic"
+			},
+			{
+				"type": "entries",
+				"name": "法術",
+				"entries": [
+					"球形內生物或物體身上任何生效中的法術或其他魔法效果，在該生物或物體位於其中時被壓制。"
+				],
+				"ENG_name": "Spells"
+			},
+			{
+				"type": "entries",
+				"name": "魔法物品",
+				"entries": [
+					"魔法物品的屬性與能力在球形內被壓制。例如，球形內的 +1 長劍如同非魔法長劍般運作。",
+					"若魔法武器被用來對付球形內的目標，或由球形內的攻擊者揮舞，其屬性與能力會被壓制。若魔法武器或一件魔法彈藥完全離開球形（例如你向球形外的目標射出魔法箭矢或擲出魔法矛），該物品的魔法一離開球形便不再被壓制。"
+				],
+				"ENG_name": "Magic Items"
+			},
+			{
+				"type": "entries",
+				"name": "魔法旅行",
+				"entries": [
+					"無論球形是這類魔法旅行的目的地還是出發點，傳送與位面旅行都無法在球形內運作。通往其他地點、世界或存在位面的傳送門，以及通往異次元空間的開口（例如繩索戲法所創造的），位於球形內時會暫時關閉。"
+				],
+				"ENG_name": "Magical Travel"
+			},
+			{
+				"type": "entries",
+				"name": "生物與物體",
+				"entries": [
+					"以魔法召喚或創造的生物或物體，在球形內會暫時消失不見。一旦該生物所佔據的空間不再位於球形內，它便會立即重新出現。"
+				],
+				"ENG_name": "Creatures and Objects"
+			},
+			{
+				"type": "entries",
+				"name": "解除魔法",
+				"entries": [
+					"{@spell dispel magic}等法術與魔法效果對球形沒有效果。同樣地，不同{@spell antimagic field}法術所創造的球形也不會互相抵銷。"
+				],
+				"ENG_name": "Dispel Magic"
+			}
+		],
+		"miscTags": [
+			"OBJ"
+		],
+		"areaTags": [
+			"S"
+		],
+		"ENG_name": "Antimagic Field"
+	},
 	"Antimagic Field|XPHB": {
 		"name": "反魔法力場",
 		"source": "XPHB",
@@ -674,6 +981,94 @@
 			"S"
 		],
 		"ENG_name": "Antimagic Field"
+	},
+	"Antipathy/Sympathy|PHB": {
+		"name": "嫌惡/共感術",
+		"source": "PHB",
+		"page": 214,
+		"srd": true,
+		"referenceSources": [
+			"CoS",
+			"TftYP-ToH",
+			"ToA",
+			"WDMM",
+			"DitLCoT",
+			"QftIS"
+		],
+		"reprintedAs": [
+			"Antipathy/Sympathy|XPHB"
+		],
+		"level": 8,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "hour"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "either a lump of alum soaked in vinegar for the antipathy effect or a drop of honey for the sympathy effect"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "day",
+					"amount": 10
+				}
+			}
+		],
+		"entries": [
+			"此法術會吸引或排斥你所選擇的生物。你以射程內的某樣東西為目標，可以是巨型或更小的物體或生物，或不大於 200 呎立方的區域。然後指定一種有智慧的生物，例如紅龍、哥布林或吸血鬼。你為目標灌注一種靈光，在持續時間內吸引或排斥所指定的生物。選擇厭惡或共鳴作為靈光的效果。",
+			{
+				"type": "entries",
+				"name": "厭惡",
+				"entries": [
+					"此惑控使你所指定種類的生物感到強烈的衝動想離開該區域並避開目標。當這類生物能看見目標或來到其 60 呎內時，該生物必須成功通過一次感知豁免檢定，否則陷入{@condition frightened}。只要該生物能看見目標或位於其 60 呎內，它就保持{@condition frightened}。被目標{@condition frightened}期間，該生物必須用其移動前往最近一處看不見目標的安全地點。若該生物移動到距離目標超過 60 呎且看不見目標之處，它便不再{@condition frightened}，但若它重新看見目標或移動到其 60 呎內，便會再次{@condition frightened}。"
+				],
+				"ENG_name": "Antipathy"
+			},
+			{
+				"type": "entries",
+				"name": "共鳴",
+				"entries": [
+					"此惑控使所指定的生物在位於目標 60 呎內或能看見目標時，感到強烈的衝動想接近目標。當這類生物能看見目標或來到其 60 呎內時，該生物必須成功通過一次感知豁免檢定，否則在其每個回合都用其移動進入該區域或移動到目標的觸及範圍內。當該生物這麼做之後，它便無法自願遠離目標。",
+					"若目標對受影響的生物造成傷害或以其他方式傷害它，受影響的生物可以進行一次感知豁免檢定以結束效果，如下所述。"
+				],
+				"ENG_name": "Sympathy"
+			},
+			{
+				"type": "entries",
+				"name": "結束效果",
+				"entries": [
+					"若受影響的生物在不位於目標 60 呎內、也看不見目標的情況下結束其回合，該生物進行一次感知豁免檢定。豁免成功時，該生物不再受目標影響，並意識到那股厭惡或吸引的感覺是魔法所致。此外，在法術持續期間，受此法術影響的生物每 24 小時可以再進行一次感知豁免檢定。"
+				],
+				"ENG_name": "Ending the Effect"
+			},
+			"成功通過豁免的生物在 1 分鐘內對此效果免疫，之後便可能再次受其影響。"
+		],
+		"conditionInflict": [
+			"frightened"
+		],
+		"savingThrow": [
+			"wisdom"
+		],
+		"miscTags": [
+			"OBJ"
+		],
+		"areaTags": [
+			"C"
+		],
+		"ENG_name": "Antipathy/Sympathy"
 	},
 	"Antipathy/Sympathy|XPHB": {
 		"name": "反感／同感術",
@@ -1049,6 +1444,61 @@
 		"hasFluffImages": true,
 		"ENG_name": "Arms of Hadar"
 	},
+	"Ashardalon's Stride|FTD": {
+		"name": "阿沙達隆之步",
+		"source": "FTD",
+		"page": 19,
+		"level": 3,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"巨龍般的滾滾烈焰從你的腳下噴發，賦予你爆發性的速度。在持續時間內，你的速度增加 20 呎，且你的移動不會引發借機攻擊。",
+			"當你移動到一個生物或未被穿戴或攜帶的物體 5 呎內時，它會因你留下的熱痕受到 {@damage 1d6} 點火焰傷害。一個生物或物體每回合只會受到一次此傷害。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 4 環或更高環階的法術位施展此法術時，每高於 3 環一環，你的速度增加 5 呎，且法術額外造成 {@scaledamage 1d6|3-9|1d6} 點火焰傷害。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"fire"
+		],
+		"miscTags": [
+			"OBJ"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Ashardalon's Stride"
+	},
 	"Astral Projection|XPHB": {
 		"name": "星界投射",
 		"source": "XPHB",
@@ -1371,6 +1821,59 @@
 			"ST"
 		],
 		"ENG_name": "Awaken"
+	},
+	"Backlash|FRHOF": {
+		"name": "反噬",
+		"source": "FRHoF",
+		"page": 142,
+		"level": 4,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "reaction",
+				"condition": "當你受到傷害時作為回應採取"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你保護自己免受破壞性能量的傷害，使所受的傷害減少 {@dice 4d6} 加上你的施法屬性調整值。",
+			"若觸發的傷害來自射程內的生物，你可以迫使該生物進行一次體質豁免檢定。失敗時，該生物受到 {@damage 4d6} 點力場傷害，成功時傷害減半。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "使用更高環階的法術欄位",
+				"entries": [
+					"法術位每高於 4 環一環，此法術的傷害減免與力場傷害都增加 {@scaledamage 4d6|4-9|1d6}。"
+				],
+				"ENG_name": "Using a Higher-Level Spell Slot"
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Backlash"
 	},
 	"Bane|XPHB": {
 		"name": "災禍術",
@@ -1964,6 +2467,125 @@
 		],
 		"ENG_name": "Blade Barrier"
 	},
+	"Blade of Disaster|FRHOF": {
+		"name": "災厄之刃",
+		"source": "FRHoF",
+		"page": 143,
+		"level": 9,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你創造一道長 3 呎、刀刃狀的位面裂隙，持續到持續時間結束。裂隙出現在射程內你選擇的空間，你可以立即進行至多兩次近戰法術攻擊，每次攻擊裂隙 5 呎內的一個生物或物體。命中時，目標受到 {@damage 10d6} 點力場傷害。若 {@dice d20} 上的數字為 18 或更高，此攻擊造成{@variantrule Critical Hit|XPHB|重擊}。",
+			"在你之後的回合中，作為一個{@variantrule Bonus Action|XPHB|附贈動作}，你可以將裂隙移動至多 60 呎，並對其 5 呎內的生物或物體重複兩次攻擊。你可以讓攻擊針對同一個目標或不同目標。",
+			"刀刃可以無害地穿過任何屏障，包括由{@spell Wall of Force|XPHB}之類法術所創造的屏障。"
+		],
+		"damageInflict": [
+			"force"
+		],
+		"spellAttack": [
+			"M"
+		],
+		"miscTags": [
+			"OBJ",
+			"UBA"
+		],
+		"areaTags": [
+			"MT"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Blade of Disaster"
+	},
+	"Blade of Disaster|TCE": {
+		"name": "災厄之刃",
+		"source": "TCE",
+		"page": 106,
+		"otherSources": [
+			{
+				"source": "IDRotF",
+				"page": 318
+			}
+		],
+		"referenceSources": [
+			"IDRotF"
+		],
+		"reprintedAs": [
+			"Blade of Disaster|FRHoF"
+		],
+		"level": 9,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你在射程內一處你能看見的未佔據空間，創造一道長約 3 呎的刀刃狀位面裂隙。刀刃在持續時間內存在。施展此法術時，你可以用刀刃進行至多兩次近戰法術攻擊，每次攻擊刀刃 5 呎內的一個生物、未固定物體或建築物。命中時，目標受到 {@damage 4d12} 點力場傷害。若 {@dice d20} 上的數字為 18 或更高，此攻擊造成重擊。重擊時，刀刃額外造成 {@damage 8d12} 點力場傷害（總計 {@damage 12d12} 點力場傷害）。",
+			"在你的回合，作為一個附贈動作，你可以將刀刃移動至多 30 呎到一處你能看見的未佔據空間，然後再次用它進行至多兩次近戰法術攻擊。",
+			"刀刃可以無害地穿過任何屏障，包括{@spell wall of force}。"
+		],
+		"damageInflict": [
+			"force"
+		],
+		"spellAttack": [
+			"M"
+		],
+		"miscTags": [
+			"SGT",
+			"UBA"
+		],
+		"areaTags": [
+			"MT"
+		],
+		"ENG_name": "Blade of Disaster"
+	},
 	"Blade Ward|XPHB": {
 		"name": "劍刃防護",
 		"source": "XPHB",
@@ -2326,6 +2948,125 @@
 		],
 		"ENG_name": "Blur"
 	},
+	"Booming Blade|TCE": {
+		"name": "轟雷劍",
+		"source": "TCE",
+		"page": 106,
+		"otherSources": [
+			{
+				"source": "SCAG",
+				"page": 142
+			}
+		],
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "radius",
+			"distance": {
+				"type": "feet",
+				"amount": 5
+			}
+		},
+		"components": {
+			"s": true,
+			"m": {
+				"text": "一把價值至少 1 sp 的近戰武器",
+				"cost": 10
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "round",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你揮舞施法時使用的武器，對你 5 呎內的一個生物進行一次近戰攻擊。命中時，目標承受該武器攻擊的一般效果，然後被轟鳴能量包覆，直到你的下個回合開始。若目標在此之前自願移動 5 呎或更多，目標受到 {@damage 1d8} 點雷鳴傷害，且法術結束。",
+			"此法術的傷害在你達到特定等級時增加。在 5 級時，近戰攻擊命中時對目標額外造成 {@damage 1d8} 點雷鳴傷害，且目標因移動而受到的傷害增加至 {@damage 2d8}。兩項傷害擲骰在 11 級時（{@damage 2d8} 與 {@damage 3d8}）以及 17 級時（{@damage 3d8} 與 {@damage 4d8}）再各增加 1d8。"
+		],
+		"scalingLevelDice": [
+			{
+				"label": "thunder damage on moving",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			{
+				"label": "thunder damage on hit",
+				"scaling": {
+					"5": "1d8",
+					"11": "2d8",
+					"17": "3d8"
+				}
+			}
+		],
+		"damageInflict": [
+			"thunder"
+		],
+		"spellAttack": [
+			"M"
+		],
+		"miscTags": [
+			"AAD",
+			"SCL"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Booming Blade"
+	},
+	"Borrowed Knowledge|SCC": {
+		"name": "借用知識",
+		"source": "SCC",
+		"page": 37,
+		"level": 2,
+		"school": "D",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一本價值至少 25 gp 的書",
+				"cost": 2500
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你汲取過往靈魂的知識。選擇一項你不熟練的技能。在法術持續時間內，你熟練所選技能。若你再次施展此法術，法術會提前結束。"
+		],
+		"ENG_name": "Borrowed Knowledge"
+	},
 	"Burning Hands|XPHB": {
 		"name": "燃燒之手",
 		"source": "XPHB",
@@ -2386,6 +3127,70 @@
 			"N"
 		],
 		"ENG_name": "Burning Hands"
+	},
+	"Cacophonic Shield|FRHOF": {
+		"name": "刺耳護盾",
+		"source": "FRHoF",
+		"page": 143,
+		"level": 3,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "emanation",
+			"distance": {
+				"type": "feet",
+				"amount": 10
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 10
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"在持續時間內，雷鳴般的迴響充滿以你為起點的 10 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}。每當{@variantrule Emanation [Area of Effect]|XPHB|散發}進入一個生物的空間，以及每當一個生物進入{@variantrule Emanation [Area of Effect]|XPHB|散發}或在其中結束其回合時，該生物進行一次體質豁免檢定。失敗時，該生物受到 {@damage 3d6} 點雷鳴傷害，並陷入{@condition Deafened|XPHB}狀態直到你下個回合開始。成功時，該生物只受到一半傷害。生物每回合只進行一次此豁免。施展此法術時，你可以指定不受其影響的生物。",
+			"此外，你具有對雷鳴傷害的{@variantrule Resistance|XPHB|抗性}，且對你的遠程攻擊檢定具有{@variantrule Disadvantage|XPHB|劣勢}。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "使用更高環階的法術欄位",
+				"entries": [
+					"法術欄位每比 3 環高一環，傷害增加 {@scaledamage 3d6|3-9|1d6}。"
+				],
+				"ENG_name": "Using a Higher-Level Spell Slot"
+			}
+		],
+		"damageResist": [
+			"thunder"
+		],
+		"damageInflict": [
+			"thunder"
+		],
+		"conditionInflict": [
+			"deafened"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"areaTags": [
+			"S"
+		],
+		"ENG_name": "Cacophonic Shield"
 	},
 	"Call Lightning|XPHB": {
 		"name": "召雷術",
@@ -3901,6 +4706,92 @@
 		],
 		"ENG_name": "Conjure Celestial"
 	},
+	"Conjure Constructs|FRHOF": {
+		"name": "咒喚構裝體",
+		"source": "FRHoF",
+		"page": 143,
+		"level": 3,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a brass cog"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 10
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你咒喚一群無形、井然有序的靈體，它們在射程內一處你能看見的未佔據空間，以一群中型摩登或其他構裝體的樣貌出現。靈體持續到持續時間結束。施展此法術時，以及在之後的回合中作為一個{@action Magic|XPHB|魔法}動作，你可以命令靈體以其 5 呎內一個你能看見的生物或物體為目標，產生以下其中一種效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "發條之力",
+						"entries": [
+							"目標進行一次敏捷豁免檢定，失敗時受到 {@damage 3d6} 點力場傷害，成功時傷害減半。"
+						],
+						"ENG_name": "Clockwork Force"
+					},
+					{
+						"type": "item",
+						"name": "秩序守護",
+						"entries": [
+							"目標獲得等於 {@dice 1d6} 加上你施法屬性調整值的{@variantrule Temporary Hit Points|XPHB|臨時生命值}。"
+						],
+						"ENG_name": "Orderly Ward"
+					}
+				]
+			},
+			"當你在你的回合移動時，你也可以將靈體移動至多 30 呎到一處你能看見的未佔據空間。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "使用更高環階的法術欄位",
+				"entries": [
+					"法術位每高於 3 環一環，傷害與{@variantrule Temporary Hit Points|XPHB|臨時生命值}都增加 {@scaledamage 3d6|3-9|1d6}。"
+				],
+				"ENG_name": "Using a Higher-Level Spell Slot"
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"savingThrow": [
+			"dexterity"
+		],
+		"miscTags": [
+			"OBJ",
+			"SGT",
+			"THP"
+		],
+		"areaTags": [
+			"C"
+		],
+		"ENG_name": "Conjure Constructs"
+	},
 	"Conjure Elemental|XPHB": {
 		"name": "召喚元素",
 		"source": "XPHB",
@@ -4771,6 +5662,51 @@
 		],
 		"ENG_name": "Create Food and Water"
 	},
+	"Create Magen|IDROTF": {
+		"name": "製造魔像人",
+		"source": "IDRotF",
+		"page": 318,
+		"level": 7,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "hour"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "touch"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一瓶價值 500 gp 的水銀與一個真人大小的人偶，法術會消耗兩者；以及一根價值至少 1,500 gp、不會被消耗的精緻水晶棒",
+				"cost": 50000,
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"施展此法術時，你將一瓶水銀放入一個塞滿灰燼或塵土、真人大小的人偶胸中。然後你把人偶縫合，並將你的血滴在上面。施法結束時，你用水晶棒輕敲人偶，將它轉化為一個穿著人偶身上衣物的{@filter 魔像人|bestiary|search=magen|source=IDRotF}。魔像人的種類在施展法術時由你選擇。不同種類的魔像人及其數據見{@adventure 附錄 C|IDRotF|21}。",
+			"魔像人出現時，你的生命值上限減少等同於該魔像人挑戰等級的數值（最少減少 1）。只有{@spell wish}法術能恢復你生命值上限的此減少。",
+			"你以此法術創造的任何魔像人都會毫無疑問地服從你的命令。"
+		],
+		"miscTags": [
+			"PRM"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Create Magen"
+	},
 	"Create or Destroy Water|XPHB": {
 		"name": "造水/枯水術",
 		"source": "XPHB",
@@ -4848,6 +5784,43 @@
 			"C"
 		],
 		"ENG_name": "Create or Destroy Water"
+	},
+	"Create Spelljamming Helm|AAG": {
+		"name": "製造星界舵",
+		"source": "AAG",
+		"page": 22,
+		"level": 5,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "touch"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一根價值至少 5,000 gp 的水晶棒，法術會消耗此材料",
+				"cost": 500000,
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你手持施法時使用的水晶棒，觸碰一張無人坐的大型或更小的椅子。水晶棒消失，椅子轉化為一個{@item spelljamming helm|AAG}。"
+		],
+		"ENG_name": "Create Spelljamming Helm"
 	},
 	"Create Undead|XPHB": {
 		"name": "創造不死",
@@ -5192,6 +6165,68 @@
 		],
 		"ENG_name": "Dancing Lights"
 	},
+	"Dark Star|EGW": {
+		"name": "暗星",
+		"source": "EGW",
+		"page": 186,
+		"level": 8,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 150
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一片縞瑪瑙碎片與一滴施法者的血，法術會消耗這兩者",
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"此法術在射程內你選擇的一點上創造一個以該點為中心的球形。球形半徑至多 40 呎。球形內的區域充滿魔法黑暗與碾壓性的重力。",
+			"在持續時間內，法術區域為{@quickref difficult terrain||3}。擁有{@sense darkvision}的生物無法看穿此魔法黑暗，非魔法光線也無法照亮它。區域內無法產生聲音，聲音也無法穿過該區域。完全位於球形內的任何生物或物體對雷鳴傷害免疫，而完全位於其中的生物處於{@condition deafened}狀態。在那裡無法施展包含言語構材的法術。",
+			"任何在回合中首次進入法術區域或在其中開始其回合的生物，必須進行一次體質豁免檢定。失敗時，該生物受到 {@damage 8d10} 點力場傷害，成功時傷害減半。被此傷害降至 0 生命值的生物會被分解。被分解的生物及其穿戴與攜帶的一切物品（魔法物品除外）都化為一堆灰色細塵。"
+		],
+		"damageInflict": [
+			"force"
+		],
+		"conditionInflict": [
+			"deafened"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"miscTags": [
+			"DFT",
+			"OBJ",
+			"OBS"
+		],
+		"areaTags": [
+			"S"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Dark Star"
+	},
 	"Darkness|XPHB": {
 		"name": "黑暗術",
 		"source": "XPHB",
@@ -5335,6 +6370,57 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Daylight"
+	},
+	"Death Armor|FRHOF": {
+		"name": "死亡護甲",
+		"source": "FRHoF",
+		"page": 143,
+		"level": 2,
+		"school": "N",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "touch"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一顆價值 50+ GP 的縞瑪瑙，法術會消耗此材料",
+				"cost": 5000,
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"在持續時間內，一圈墨黑的靈光包圍一個你觸碰的生物。目標在{@variantrule Death Saving Throw|XPHB|死亡豁免檢定}上具有{@variantrule Advantage|XPHB|優勢}，且每回合一次，當目標 5 呎內的生物以近戰攻擊檢定命中它時，攻擊者受到 {@damage 2d4} 點黯蝕傷害。"
+		],
+		"damageInflict": [
+			"necrotic"
+		],
+		"miscTags": [
+			"ADV"
+		],
+		"areaTags": [
+			"S",
+			"ST"
+		],
+		"ENG_name": "Death Armor"
 	},
 	"Death Ward|XPHB": {
 		"name": "死亡守護",
@@ -5488,6 +6574,54 @@
 			"SGT"
 		],
 		"ENG_name": "Demiplane"
+	},
+	"Deryan's Helpful Homunculi|FRHOF": {
+		"name": "戴利安的熱心小侏儒",
+		"source": "FRHoF",
+		"page": 143,
+		"level": 2,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "價值 100+ GP 的寶石粉末，法術會消耗此材料；以及一套你熟練的工匠工具",
+				"cost": 10000,
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 8
+				}
+			}
+		],
+		"meta": {
+			"ritual": true
+		},
+		"entries": [
+			"你召喚一群熱心的靈體，持續到持續時間結束。這些靈體外觀為小侏儒人或其他由你選擇的構裝體，但它們無形且無法被傷害，並被視為熟練{@skill Arcana|XPHB|奧秘}技能以及施法時使用的那套{@item Artisan's Tools|XPHB|工匠工具}。",
+			"若你正在製作物品，這些靈體作為你製作時的單一助手，使製作時間減半。"
+		],
+		"miscTags": [
+			"SMN"
+		],
+		"ENG_name": "Deryan's Helpful Homunculi"
 	},
 	"Destructive Wave|XPHB": {
 		"name": "毀滅波",
@@ -5788,6 +6922,69 @@
 		],
 		"ENG_name": "Dimension Door"
 	},
+	"Dirge|FRHOF": {
+		"name": "輓歌",
+		"source": "FRHoF",
+		"page": 144,
+		"level": 6,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "emanation",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"在持續時間內，死亡之力充滿以你為起點的 60 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}。",
+			"施展此法術時，你可以指定不受其影響的生物。其他任何生物位於{@variantrule Emanation [Area of Effect]|XPHB|散發}內時無法恢復{@variantrule Hit Points|XPHB|生命值}。每當{@variantrule Emanation [Area of Effect]|XPHB|散發}進入一個生物的空間，以及每當一個生物進入{@variantrule Emanation [Area of Effect]|XPHB|散發}或在其中結束其回合時，該生物進行一次體質豁免檢定。失敗時，該生物受到 {@damage 3d10} 點黯蝕傷害並陷入{@condition Prone|XPHB}狀態。成功時，該生物受到一半傷害，且其{@variantrule Speed|XPHB|速度}減半。生物每回合只進行一次此豁免。",
+			{
+				"type": "entries",
+				"name": "以法陣法術施展",
+				"entries": [
+					"以法陣法術施展此法術時，至少需要兩名輔助施法者。若以法陣法術施展此法術，其持續時間變為{@status Concentration|XPHB|專注}，至多 10 分鐘。",
+					"對此法術效果豁免失敗的生物也會獲得 1 級{@condition Exhaustion|XPHB}。當該生物擁有{@condition Exhaustion|XPHB}等級時，完成{@variantrule Long Rest|XPHB|長休}既不會恢復失去的{@variantrule Hit Points|XPHB|生命值}，也不會降低該生物的{@condition Exhaustion|XPHB}等級。",
+					"施展法術時，每位輔助施法者都必須消耗一個 4 環以上的法術位；否則法術失敗。"
+				],
+				"ENG_name": "Casting as a Circle Spell"
+			}
+		],
+		"damageInflict": [
+			"necrotic"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"miscTags": [
+			"HL"
+		],
+		"areaTags": [
+			"S"
+		],
+		"ENG_name": "Dirge"
+	},
 	"Disguise Self|XPHB": {
 		"name": "易容術",
 		"source": "XPHB",
@@ -6081,6 +7278,52 @@
 			"ST"
 		],
 		"ENG_name": "Dissonant Whispers"
+	},
+	"Distort Value|AI": {
+		"name": "扭曲價值",
+		"source": "AI",
+		"page": 75,
+		"level": 1,
+		"school": "I",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "touch"
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 8
+				}
+			}
+		],
+		"entries": [
+			"你需要從商人那裡多榨出幾枚金幣，好賣掉你從混沌神殿「解放」出來的那尊怪異章魚雕像嗎？你需要在收稅員上門時壓低一些魔法資產的價值嗎？扭曲價值能幫你搞定。",
+			"你對一個每邊不超過 1 呎的物體施展此法術，藉由添加虛幻的裝飾或光澤使該物體的表面價值加倍，或藉由虛幻的刮痕、凹陷與其他難看的特徵使其表面價值減半。任何檢查該物體的人，只要成功通過一次對抗你法術豁免 DC 的智力（{@skill Investigation}）檢定，便能確定其真實價值。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 2 環或更高環階的法術位施展此法術時，每高於 1 環一環，物體的最大尺寸增加 1 呎。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"ENG_name": "Distort Value"
 	},
 	"Divination|XPHB": {
 		"name": "預言術",
@@ -6493,6 +7736,146 @@
 		],
 		"ENG_name": "Dominate Person"
 	},
+	"Doomtide|FRHOF": {
+		"name": "末日浪潮",
+		"source": "FRHoF",
+		"page": 144,
+		"level": 4,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "soot and a dried eel"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你在射程內創造一個半徑 20 呎、由墨黑濃霧構成的{@variantrule Sphere [Area of Effect]|XPHB|球形}。這團霧是魔法{@variantrule Darkness|XPHB|黑暗}，持續到持續時間結束，或直到強風（例如{@spell Gust of Wind|XPHB}法術所產生的風）將其吹散，使法術結束。",
+			"{@variantrule Sphere [Area of Effect]|XPHB|球形}出現時位於其中的每個生物進行一次感知豁免檢定。失敗時，生物受到 {@damage 5d6} 點心靈傷害，且直到其下個回合結束前，其豁免檢定要減去 {@dice 1d6}。成功時，生物只受到一半傷害。當{@variantrule Sphere [Area of Effect]|XPHB|球形}移入生物的空間、當生物進入{@variantrule Sphere [Area of Effect]|XPHB|球形}，或當生物在{@variantrule Sphere [Area of Effect]|XPHB|球形}內結束其回合時，也要進行此豁免。生物每回合只進行一次此豁免。",
+			"在你每個回合開始時，{@variantrule Sphere [Area of Effect]|XPHB|球形}朝遠離你的方向移動 10 呎。",
+			{
+				"type": "entries",
+				"name": "以法陣法術施展",
+				"entries": [
+					"以法陣法術施展此法術時，至少需要五名輔助施法者。除了法術平常的構材之外，你還必須提供一項特殊構材（一串來自混沌淵獄的三顆黑珍珠），法術會消耗此構材。法術的射程增加至 1 哩，持續時間變為直到被解除為止（不需要{@status Concentration|XPHB|專注}）。若任何參與此次施法的施法者參與了另一次以法陣法術施展的{@spell Doomtide|FRHoF}，法術便提前結束。",
+					"施展法術時，每位輔助施法者都必須消耗一個 3 環以上的法術位；否則法術失敗。"
+				],
+				"ENG_name": "Casting as a Circle Spell"
+			}
+		],
+		"damageInflict": [
+			"psychic"
+		],
+		"savingThrow": [
+			"wisdom"
+		],
+		"areaTags": [
+			"S"
+		],
+		"ENG_name": "Doomtide"
+	},
+	"Draconic Transformation|FTD": {
+		"name": "龍化術",
+		"source": "FTD",
+		"page": 19,
+		"level": 7,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一座龍的小雕像，價值至少 500 gp",
+				"cost": 50000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"伴隨一聲咆哮，你汲取龍的魔法轉化自己，獲得龍族的特徵。直到法術結束，你獲得以下好處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "盲視",
+						"entries": [
+							"你擁有範圍 30 呎的{@sense blindsight}。在該範圍內，即使你{@condition blinded}或身處黑暗中，你也能有效看見任何不在{@quickref Cover||3||完全掩護}之後的事物。此外，除非生物成功對你躲藏，否則你能看見{@condition invisible}的生物。"
+						],
+						"ENG_name": "Blindsight"
+					},
+					{
+						"type": "item",
+						"name": "吐息武器",
+						"entries": [
+							"施展此法術時，以及在持續時間內之後的回合中作為一個附贈動作，你可以在 60 呎錐形內呼出閃爍的能量。該區域內的每個生物必須進行一次敏捷豁免檢定，失敗時受到 {@damage 6d8} 點力場傷害，成功時傷害減半。"
+						],
+						"ENG_name": "Breath Weapon"
+					},
+					{
+						"type": "item",
+						"name": "翅膀",
+						"entries": [
+							"無形的翅膀從你的背上長出，給予你 60 呎的飛行速度。"
+						],
+						"ENG_name": "Wings"
+					}
+				]
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"savingThrow": [
+			"dexterity"
+		],
+		"miscTags": [
+			"SGT",
+			"UBA"
+		],
+		"ENG_name": "Draconic Transformation"
+	},
 	"Dragon's Breath|XPHB": {
 		"name": "龍息術",
 		"source": "XPHB",
@@ -6605,6 +7988,54 @@
 			"OBJ"
 		],
 		"ENG_name": "Drawmij's Instant Summons"
+	},
+	"Dream of the Blue Veil|TCE": {
+		"name": "藍帷之夢",
+		"source": "TCE",
+		"page": 106,
+		"level": 7,
+		"school": "C",
+		"time": [
+			{
+				"number": 10,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 20
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a magic item or a willing creature from the destination world"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 6
+				}
+			}
+		],
+		"entries": [
+			"你與射程內至多八個自願生物在法術持續時間內陷入{@condition unconscious}，並看見物質位面上另一個世界的幻象，例如奧爾斯、托瑞爾、克萊恩或艾伯倫。若法術達到完整持續時間，幻象會以你們每個人遇見並拉開一道神秘的藍色帷幕作結。法術隨即結束，你們在心智與肉體上都被傳送到幻象中的那個世界。",
+			"要施展此法術，你必須擁有一件源自你想前往之世界的魔法物品，且你必須知道該世界的存在，即使你不知道該世界的名字。你在另一個世界的目的地，是該魔法物品製作地點 1 哩內的一處安全地點。或者，若受影響的生物之一出生在另一個世界，你也可以施展此法術，這會使你的目的地成為該生物出生地點 1 哩內的一處安全地點。",
+			"若某個生物受到任何傷害，法術便會對該生物提前結束，且該生物不會被傳送。若你受到任何傷害，法術便會對你與所有其他生物結束，你們都不會被傳送。"
+		],
+		"conditionInflict": [
+			"unconscious"
+		],
+		"miscTags": [
+			"PS",
+			"TP"
+		],
+		"hasFluff": true,
+		"ENG_name": "Dream of the Blue Veil"
 	},
 	"Dream|XPHB": {
 		"name": "託夢術",
@@ -7001,6 +8432,140 @@
 			"Q"
 		],
 		"ENG_name": "Elementalism"
+	},
+	"Elminster's Effulgent Spheres|FRHOF": {
+		"name": "伊爾明斯特耀光法球",
+		"source": "FRHoF",
+		"page": 144,
+		"level": 6,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一顆價值 1,000 GP+ 的蛋白石",
+				"cost": 100000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"在持續時間內，六顆彩色法球環繞著你。",
+			"法球存在期間，你可以消耗法球產生以下效果：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "吸收能量",
+						"entries": [
+							"當你受到強酸、寒冷、火焰、閃電或雷鳴傷害時，你可以採取一個{@variantrule Reaction|XPHB|反應}消耗一顆法球，讓自己在你下個回合開始前具有對觸發傷害類型的{@variantrule Resistance|XPHB|抗性}。"
+						],
+						"ENG_name": "Absorb Energy"
+					},
+					{
+						"type": "item",
+						"name": "能量衝擊",
+						"entries": [
+							"作為一個{@variantrule Bonus Action|XPHB|附贈動作}，你將一顆法球擲向你 120 呎內的一個目標。進行一次遠程法術攻擊。命中時，目標受到 {@damage 3d6} 點強酸、寒冷、火焰、閃電或雷鳴傷害（由你選擇）。無論是否命中，該法球都會被消耗。"
+						],
+						"ENG_name": "Energy Blast"
+					}
+				]
+			},
+			"若你沒有剩餘的法球，法術便提前結束。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "使用更高環階的法術欄位",
+				"entries": [
+					"法術位每高於 6 環一環，法球數量增加 1 顆。"
+				],
+				"ENG_name": "Using a Higher-Level Spell Slot"
+			}
+		],
+		"damageInflict": [
+			"acid",
+			"cold",
+			"fire",
+			"lightning",
+			"thunder"
+		],
+		"spellAttack": [
+			"R"
+		],
+		"miscTags": [
+			"UBA"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Elminster's Effulgent Spheres"
+	},
+	"Elminster's Elusion|FRHOF": {
+		"name": "伊爾明斯特遁影術",
+		"source": "FRHoF",
+		"page": 144,
+		"level": 2,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 10
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"奧術守護在持續時間內保護你免受魔法侵害。你在對抗法術與魔法效果的豁免檢定上具有{@variantrule Advantage|XPHB|優勢}。此外，若你在對抗法術或魔法效果的豁免檢定中成功，而通常會受到一半傷害時，你改為不受傷害。"
+		],
+		"miscTags": [
+			"ADV"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Elminster's Elusion"
 	},
 	"Enhance Ability|XPHB": {
 		"name": "強化屬性",
@@ -7687,6 +9252,72 @@
 		],
 		"ENG_name": "False Life"
 	},
+	"Fast Friends|AI": {
+		"name": "速成朋友",
+		"source": "AI",
+		"page": 75,
+		"level": 3,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"當你需要確保某件事被完成時，你不能仰賴含糊的承諾、宣誓的誓言或有約束力的僱傭合約。施展此法術時，選擇射程內一個能看見並聽見你、且能理解你的類人生物。該生物必須成功通過一次感知豁免檢定，否則在持續時間內被你{@condition charmed}。以此方式被{@condition charmed}期間，該生物會盡其所能、友善地執行你要求它做的任何服務或活動。",
+			"當先前的任務完成時，或你決定結束其目前的任務時，你可以給該生物新的任務。若該服務或活動可能對該生物造成傷害，或與該生物的日常活動和慾望相衝突，該生物可以再進行一次感知豁免檢定試圖結束效果。若你或你的同伴正在與該生物戰鬥，此豁免具有優勢。若該活動會導致該生物必死無疑，法術便會結束。",
+			"法術結束時，該生物知道自己曾被你{@condition charmed}。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 4 環或更高環階的法術位施展此法術時，每高於 3 環一環，你可以多指定一個生物為目標。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"conditionInflict": [
+			"charmed"
+		],
+		"savingThrow": [
+			"wisdom"
+		],
+		"affectsCreatureType": [
+			"humanoid"
+		],
+		"miscTags": [
+			"SCT",
+			"SGT"
+		],
+		"areaTags": [
+			"MT",
+			"ST"
+		],
+		"ENG_name": "Fast Friends"
+	},
 	"Fear|XPHB": {
 		"name": "恐懼術",
 		"source": "XPHB",
@@ -7931,6 +9562,64 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Find Familiar"
+	},
+	"Find Greater Steed|XGE": {
+		"name": "尋獲高等坐騎",
+		"source": "XGE",
+		"page": 156,
+		"additionalSources": [
+			{
+				"source": "FTD",
+				"page": 190
+			}
+		],
+		"level": 4,
+		"school": "C",
+		"time": [
+			{
+				"number": 10,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你召喚一個靈體，它化身為一頭忠誠而威武的坐騎。該靈體出現在射程內一處未佔據空間，並呈現你選擇的形態：{@creature griffon}、{@creature pegasus}、{@creature peryton}、{@creature dire wolf}、{@creature rhinoceros}或{@creature saber-toothed tiger}。該生物擁有《怪物圖鑑》中所選形態提供的數據，但它是天界生物、精類或邪魔（由你選擇），而非其一般的生物類型。此外，若它的智力值為 5 或更低，其智力變為 6，並獲得理解一種由你選擇、你會說之語言的能力。",
+			"你在戰鬥中控制這頭坐騎。當坐騎位於你 1 哩內時，你可以透過心靈感應與它溝通。騎乘它時，你可以讓你施展的任何只以你為目標的法術也以坐騎為目標。",
+			"當坐騎降至 0 生命值，或你以一個動作解散它時，它會暫時消失。再次施展此法術會重新召喚這頭締結羈絆的坐騎，其生命值全滿且所有狀態被移除。",
+			"你無法同時擁有超過一頭由此法術或{@spell find steed}締結羈絆的坐騎。作為一個動作，你可以解除坐騎的羈絆，使它永久消失。",
+			"每當坐騎消失時，它會留下所有穿戴或攜帶的物品。",
+			{
+				"type": "inset",
+				"source": "FTD",
+				"page": 190,
+				"name": "龍駒坐騎",
+				"entries": [
+					"經 DM 允許，聖武士可以使用出自《{@i 萬事通手冊}》的尋找高等坐騎法術，召喚一個{@creature dragonnel|ftd}形態的靈體。"
+				],
+				"ENG_name": "Dragonnel Steeds"
+			}
+		],
+		"miscTags": [
+			"PRM",
+			"SMN"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Find Greater Steed"
 	},
 	"Find Steed|XPHB": {
 		"name": "尋獲坐騎",
@@ -8369,6 +10058,82 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Fireball"
+	},
+	"Fizban's Platinum Shield|FTD": {
+		"name": "費茲本白金盾",
+		"source": "FTD",
+		"page": 20,
+		"level": 6,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一片鍍鉑的龍鱗，價值至少 500 gp",
+				"cost": 50000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你創造一個銀色光場，包圍射程內一個由你選擇的生物（你可以選擇自己）。光場在 5 呎內散發微光。被光場包圍時，生物獲得以下好處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "掩護",
+						"entries": [
+							"該生物擁有{@quickref Cover||3||半掩護}。"
+						],
+						"ENG_name": "Cover"
+					},
+					{
+						"type": "item",
+						"name": "傷害抗性",
+						"entries": [
+							"該生物對強酸、寒冷、火焰、閃電與毒素傷害具有抗性。"
+						],
+						"ENG_name": "Damage Resistance"
+					},
+					{
+						"type": "item",
+						"name": "反射閃避",
+						"entries": [
+							"若該生物承受一個允許它進行敏捷豁免檢定以只受一半傷害的效果，該生物改為在豁免成功時不受傷害，失敗時只受一半傷害。"
+						],
+						"ENG_name": "Evasion"
+					}
+				]
+			},
+			"在之後的回合中，作為一個附贈動作，你可以將光場移到光場 60 呎內的另一個生物身上。"
+		],
+		"miscTags": [
+			"UBA"
+		],
+		"ENG_name": "Fizban's Platinum Shield"
 	},
 	"Flame Blade|XPHB": {
 		"name": "火焰刀",
@@ -8897,6 +10662,66 @@
 		],
 		"ENG_name": "Foresight"
 	},
+	"Fortune's Favor|EGW": {
+		"name": "命運眷顧",
+		"source": "EGW",
+		"page": 186,
+		"level": 2,
+		"school": "D",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一顆價值至少 100 gp 的白珍珠，法術會消耗此材料",
+				"cost": 10000,
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你將潛藏的好運賦予你自己或射程內一個你能看見的自願生物。當所選生物在法術結束前進行攻擊檢定、屬性檢定或豁免檢定時，它可以解除自身的此法術，額外擲一顆 {@dice d20}，並選擇要使用哪一顆 {@dice d20}。或者，當有攻擊檢定以所選生物為目標時，它可以解除自身的此法術，擲一顆 {@dice d20}，並選擇要使用哪一顆 {@dice d20}——它擲出的或攻擊者擲出的。",
+			"若原本的 {@dice d20} 擲骰具有優勢或劣勢，該生物在原擲骰套用優勢或劣勢之後，才擲額外的 {@dice d20}。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 3 環或更高環階的法術位施展此法術時，每高於 2 環一環，你可以多指定一個生物為目標。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SCT",
+			"SGT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Fortune's Favor"
+	},
 	"Fount of Moonlight|XPHB": {
 		"name": "月光之泉",
 		"source": "XPHB",
@@ -9064,6 +10889,59 @@
 		],
 		"ENG_name": "Friends"
 	},
+	"Frost Fingers|IDROTF": {
+		"name": "霜指術",
+		"source": "IDRotF",
+		"page": 318,
+		"level": 1,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "cone",
+			"distance": {
+				"type": "feet",
+				"amount": 15
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"凍結的寒氣從你的指尖以 15 呎錐形爆發。該區域內的每個生物必須進行一次體質豁免檢定，失敗時受到 {@damage 2d8} 點寒冷傷害，成功時傷害減半。",
+			"寒氣會凍結該區域內未被穿戴或攜帶的非魔法液體。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 2 環或更高環階的法術位施展此法術時，每高於 1 環一環，傷害增加 {@damage 1d8}。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"cold"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"areaTags": [
+			"N"
+		],
+		"ENG_name": "Frost Fingers"
+	},
 	"Gaseous Form|XPHB": {
 		"name": "氣化形體",
 		"source": "XPHB",
@@ -9125,6 +11003,60 @@
 			"ST"
 		],
 		"ENG_name": "Gaseous Form"
+	},
+	"Gate Seal|SATO": {
+		"name": "傳送門封印",
+		"source": "SatO",
+		"page": 12,
+		"level": 4,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一把損壞的傳送門鑰匙，法術會消耗此材料",
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 24
+				}
+			}
+		],
+		"entries": [
+			"你在射程內一個你能看見的 30 呎立方中強化位面的結構。在該區域內，傳送門會關閉，且在持續時間內無法開啟。允許位面旅行或開啟傳送門的法術與其他效果，例如{@spell gate}或{@spell plane shift}，若用來進入或離開該區域便會失敗。立方是固定不動的。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 6 環或更高環階的法術位施展此法術時，法術持續到被解除為止。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT"
+		],
+		"ENG_name": "Gate Seal"
 	},
 	"Gate|XPHB": {
 		"name": "異界之門",
@@ -9345,6 +11277,90 @@
 			"SMN"
 		],
 		"ENG_name": "Giant Insect"
+	},
+	"Gift of Alacrity|EGW": {
+		"name": "敏捷恩賜",
+		"source": "EGW",
+		"page": 186,
+		"level": 1,
+		"school": "D",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "touch"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 8
+				}
+			}
+		],
+		"entries": [
+			"你觸碰一個自願的生物。在持續時間內，目標可以在其先攻擲骰上加 {@dice 1d8}。"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Gift of Alacrity"
+	},
+	"Gift of Gab|AI": {
+		"name": "三寸之舌",
+		"source": "AI",
+		"page": 76,
+		"level": 2,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "reaction",
+				"condition": "當你對另一個生物說話時採取"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"r": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			{
+				"type": "quote",
+				"entries": [
+					"我第一次見到吉姆·暗魔時，很好奇他穿成那樣要怎麼做事。後來我才知道，他大部分的才能就是站著說話。他那身打扮完美適合這件事。"
+				],
+				"by": "Môrgæn"
+			},
+			"據說這道法術是吉姆·暗魔發明的，最初命名為{@i 我說了什麼？！}你是否曾和當地君主交談時，不小心提到他的兒子長得像你在家裡農場長大時最喜歡的那頭豬？我們都經歷過！但與其因為一時說溜嘴而被砍頭，你可以假裝這件事從未發生——只要確保沒有人知道它發生過。",
+			"施展此法術時，你巧妙地重塑你周遭聽眾的記憶，使你 5 呎內每個由你選擇的生物忘記你在過去 6 秒內說過的一切。這些生物接著會記得你其實說的是你作為此法術言語構材所說的話。"
+		],
+		"areaTags": [
+			"MT"
+		],
+		"ENG_name": "Gift of Gab"
 	},
 	"Glibness|XPHB": {
 		"name": "巧言術",
@@ -9651,6 +11667,116 @@
 		],
 		"ENG_name": "Grasping Vine"
 	},
+	"Gravity Fissure|EGW": {
+		"name": "重力裂隙",
+		"source": "EGW",
+		"page": 187,
+		"level": 6,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "line",
+			"distance": {
+				"type": "feet",
+				"amount": 100
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a fistful of iron filings"
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你顯現一道由你發出、長 100 呎、寬 5 呎的線形重力能量峽谷。線上的每個生物必須進行一次體質豁免檢定，失敗時受到 {@damage 8d8} 點力場傷害，成功時傷害減半。",
+			"位於該線 10 呎內但不在線上的每個生物，必須成功通過一次體質豁免檢定，否則受到 {@damage 8d8} 點力場傷害，並被拉向該線直到進入其範圍。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 7 環或更高環階的法術位施展此法術時，每高於 6 環一環，傷害增加 {@scaledamage 8d8|6-9|1d8}。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"areaTags": [
+			"L"
+		],
+		"ENG_name": "Gravity Fissure"
+	},
+	"Gravity Sinkhole|EGW": {
+		"name": "重力陷坑",
+		"source": "EGW",
+		"page": 187,
+		"level": 4,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a black marble"
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"一個半徑 20 呎、充滿碾壓力場的球形在射程內一個你能看見的點上形成，並拉扯其中的生物。球形內的每個生物必須進行一次體質豁免檢定。失敗時，生物受到 {@damage 5d10} 點力場傷害，並被沿直線拉向球形中心，停在盡可能接近中心的未佔據空間（即使該空間在空中）。成功時，生物受到一半傷害且不會被拉動。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 5 環或更高環階的法術位施展此法術時，每高於 4 環一環，傷害增加 {@scaledamage 5d10|4-9|1d10}。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"miscTags": [
+			"SGT"
+		],
+		"areaTags": [
+			"S"
+		],
+		"ENG_name": "Gravity Sinkhole"
+	},
 	"Grease|XPHB": {
 		"name": "油膩術",
 		"source": "XPHB",
@@ -9808,6 +11934,83 @@
 		],
 		"ENG_name": "Greater Restoration"
 	},
+	"Green-Flame Blade|TCE": {
+		"name": "翠炎劍",
+		"source": "TCE",
+		"page": 107,
+		"otherSources": [
+			{
+				"source": "SCAG",
+				"page": 143
+			}
+		],
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "radius",
+			"distance": {
+				"type": "feet",
+				"amount": 5
+			}
+		},
+		"components": {
+			"s": true,
+			"m": {
+				"text": "一把價值至少 1 sp 的近戰武器",
+				"cost": 10
+			}
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你揮舞施法時使用的武器，對你 5 呎內的一個生物進行一次近戰攻擊。命中時，目標承受該武器攻擊的一般效果，且你可以讓綠色火焰從目標躍向它 5 呎內一個你能看見、由你選擇的另一個生物。第二個生物受到等於你施法屬性調整值的火焰傷害。",
+			"此法術的傷害在你達到特定等級時增加。在 5 級時，近戰攻擊命中時對目標額外造成 {@damage 1d8} 點火焰傷害，且對第二個生物的火焰傷害增加至 {@damage 1d8} + 你的施法屬性調整值。兩項傷害擲骰在 11 級時（{@damage 2d8} 與 {@damage 2d8}）以及 17 級時（{@damage 3d8} 與 {@damage 3d8}）各增加 {@damage 1d8}。"
+		],
+		"scalingLevelDice": [
+			{
+				"label": "fire damage to secondary creature",
+				"scaling": {
+					"1": "{{spellcasting_mod}}",
+					"5": "1d8 + {{spellcasting_mod}}",
+					"11": "2d8 + {{spellcasting_mod}}",
+					"17": "3d8 + {{spellcasting_mod}}"
+				}
+			},
+			{
+				"label": "fire damage on hit",
+				"scaling": {
+					"5": "1d8",
+					"11": "2d8",
+					"17": "3d8"
+				}
+			}
+		],
+		"damageInflict": [
+			"fire"
+		],
+		"spellAttack": [
+			"M"
+		],
+		"miscTags": [
+			"AAD",
+			"SCL",
+			"SGT"
+		],
+		"areaTags": [
+			"MT",
+			"ST"
+		],
+		"ENG_name": "Green-Flame Blade"
+	},
 	"Guardian of Faith|XPHB": {
 		"name": "信仰守衛",
 		"source": "XPHB",
@@ -9856,6 +12059,110 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Guardian of Faith"
+	},
+	"Guards and Wards|PHB": {
+		"name": "銅牆鐵壁",
+		"source": "PHB",
+		"page": 248,
+		"srd": true,
+		"referenceSources": [
+			"OotA",
+			"IMR",
+			"CM",
+			"SKT"
+		],
+		"reprintedAs": [
+			"Guards and Wards|XPHB"
+		],
+		"level": 6,
+		"school": "A",
+		"time": [
+			{
+				"number": 10,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "touch"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "燃燒的焚香、少量硫磺與油、一條打結的繩子、少量土巨怪的血，以及一根價值至少 10 gp 的小銀棒",
+				"cost": 1000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 24
+				}
+			}
+		],
+		"entries": [
+			"你創造一個守護，保護至多 2,500 平方呎的地板空間（一個 50 呎見方的區域，或一百個 5 呎方格，或二十五個 10 呎方格）。受守護區域最高可達 20 呎，形狀由你決定。只要你在施法期間能走進每個相連的區域，你就可以將面積分配到要塞的數個樓層來守護它們。",
+			"施展此法術時，你可以指定不受你選擇之任何或所有效果影響的個人。你也可以指定一個密語，大聲說出時，說話者便對這些效果免疫。",
+			"守衛與結界會在受守護區域內產生以下效果。",
+			{
+				"type": "entries",
+				"name": "走廊",
+				"entries": [
+					"霧氣充滿所有受守護的走廊，使其{@quickref Vision and Light|PHB|2||重度遮蔽}。此外，在每個提供方向選擇的交叉口或分岔通道，除你以外的生物有{@chance 50|||迷失方向！|沒有效果}的機率會以為自己正朝著與所選方向相反的方向前進。"
+				],
+				"ENG_name": "Corridors"
+			},
+			{
+				"type": "entries",
+				"name": "門",
+				"entries": [
+					"受守護區域內的所有門都被魔法上鎖，如同被{@spell arcane lock}法術封住一般。此外，你可以用幻象（相當於{@spell minor illusion}法術的幻象物體功能）覆蓋至多十扇門，使它們看起來像一般的牆面。"
+				],
+				"ENG_name": "Doors"
+			},
+			{
+				"type": "entries",
+				"name": "樓梯",
+				"entries": [
+					"如同{@spell web}法術，蛛網從上到下充滿受守護區域內的所有樓梯。在守衛與結界持續期間，若這些蛛絲被燒掉或扯斷，會在 10 分鐘內重新長出。"
+				],
+				"ENG_name": "Stairs"
+			},
+			{
+				"type": "entries",
+				"name": "其他法術效果",
+				"entries": [
+					"你可以在要塞的受守護區域內放置以下其中一種你選擇的魔法效果。",
+					{
+						"type": "list",
+						"items": [
+							"在四條走廊放置{@spell dancing lights}。你可以指定一個簡單的程序，讓光芒在守衛與結界持續期間重複執行。",
+							"在兩個位置放置{@spell magic mouth}。",
+							"在兩個位置放置{@spell stinking cloud}。蒸氣出現在你指定的位置；在守衛與結界持續期間，若被風吹散，會在 10 分鐘內重新出現。",
+							"在一條走廊或一個房間放置持續的{@spell gust of wind}。",
+							"在一個位置放置{@spell suggestion}。你選擇一個至多 5 呎見方的區域，任何進入或穿過該區域的生物都會在心中接收到該暗示。"
+						]
+					}
+				],
+				"ENG_name": "Other Spell Effect"
+			},
+			"整個受守護區域都散發魔法。對特定效果施展的{@spell dispel magic}若成功，只會移除該效果。",
+			"你可以在一個建築物連續一年每天施展此法術，創造一座永久受守衛與結界保護的建築。"
+		],
+		"miscTags": [
+			"OBS",
+			"PIR",
+			"PRM"
+		],
+		"areaTags": [
+			"Q"
+		],
+		"ENG_name": "Guards and Wards"
 	},
 	"Guards and Wards|XPHB": {
 		"name": "警戒與守衛",
@@ -11094,6 +13401,117 @@
 		],
 		"ENG_name": "Holy Aura"
 	},
+	"Holy Star of Mystra|FRHOF": {
+		"name": "密斯特拉聖星",
+		"source": "FRHoF",
+		"page": 145,
+		"level": 8,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你創造一顆發光的能量微粒，在持續時間內懸浮在你上方。微粒在 5 呎半徑內散發{@variantrule Bright Light|XPHB|明亮光照}，並在額外 5 呎內散發{@variantrule Dim Light|XPHB|微光}。",
+			"施展此法術時，以及在之後的回合中作為一個{@variantrule Bonus Action|XPHB|附贈動作}，你可以從微粒射出一道閃耀的光束，瞄準你 120 呎內一個生物。進行一次遠程法術攻擊。命中時，目標受到等於 {@dice 4d10} 加上你施法屬性調整值的力場或光耀傷害（由你選擇）。",
+			"此外，微粒存在期間，你擁有{@variantrule Cover|XPHB|四分之三掩護}，且若你在對抗一道只以你為目標、且未產生效果範圍的 7 環或更低環階法術的豁免檢定中成功，你可以採取一個{@variantrule Reaction|XPHB|反應}將該法術反彈回其施法者；該施法者以自己的法術豁免 DC 對抗該法術進行豁免檢定。"
+		],
+		"spellAttack": [
+			"R"
+		],
+		"miscTags": [
+			"LGT",
+			"UBA"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Holy Star of Mystra"
+	},
+	"Homunculus Servant|EFA": {
+		"name": "侏儒僕從",
+		"source": "EFA",
+		"page": 21,
+		"level": 2,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "hour"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 10
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一顆價值 100+ GP 的寶石",
+				"cost": 10000
+			}
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"meta": {
+			"ritual": true
+		},
+		"entries": [
+			"你在射程內一處未佔據空間召喚一個特殊的侏儒人。此生物使用{@creature Homunculus Servant|EFA}數據區塊。若你已經擁有一個由此法術召喚的侏儒人，新的侏儒人會取代它。由你決定侏儒人的外觀，例如看起來像機械的鳥、有翅膀的小瓶或迷你的活化大鍋。",
+			{
+				"type": "entries",
+				"name": "戰鬥",
+				"entries": [
+					"該生物是你與你盟友的盟友。在戰鬥中，它與你共用{@variantrule Initiative|XPHB|先攻}順序，但在你的回合之後立即進行它的回合。它服從你的命令（你不需要動作）。若你沒有下達任何命令，它會採取{@action Dodge|XPHB}動作，並用它的移動避開危險。"
+				],
+				"ENG_name": "Combat"
+			}
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "使用更高環階的法術欄位",
+				"entries": [
+					"以法術欄位的環階作為數據中的法術環階。"
+				],
+				"ENG_name": "Using a Higher-Level Spell Slot"
+			}
+		],
+		"miscTags": [
+			"PRM",
+			"SMN"
+		],
+		"ENG_name": "Homunculus Servant"
+	},
 	"Hunger of Hadar|XPHB": {
 		"name": "哈達之欲",
 		"source": "XPHB",
@@ -11497,6 +13915,189 @@
 		],
 		"ENG_name": "Illusory Script"
 	},
+	"Immovable Object|EGW": {
+		"name": "不動之物",
+		"source": "EGW",
+		"page": 187,
+		"level": 2,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "touch"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "價值至少 25 gp 的金粉，法術會消耗此材料",
+				"cost": 2500,
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你觸碰一個重量不超過 10 磅的物體，使它以魔法固定在原地。你以及你施展此法術時指定的生物可以正常移動該物體。你也可以設定一個密語，在該物體 5 呎內說出時，能壓制此法術 1 分鐘。",
+			"若物體固定在空中，它最多可承受 4,000 磅的重量。更多的重量會使物體墜落。除此之外，生物可以使用一個動作進行一次對抗你法術豁免 DC 的力量檢定。成功時，該生物可以將物體移動至多 10 呎。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"若你使用 4 環或 5 環的法術位施展此法術，移動物體的 DC 增加 5，它最多可承受 8,000 磅的重量，且持續時間增加至 24 小時。若你使用 6 環或更高環階的法術位施展此法術，移動物體的 DC 增加 10，它最多可承受 20,000 磅的重量，且效果永久持續直到被解除。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"abilityCheck": [
+			"strength"
+		],
+		"miscTags": [
+			"OBJ",
+			"PRM"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Immovable Object"
+	},
+	"Imprisonment|PHB": {
+		"name": "禁錮術",
+		"source": "PHB",
+		"page": 252,
+		"srd": true,
+		"basicRules": true,
+		"referenceSources": [
+			"OotA",
+			"WDH",
+			"BGDIA",
+			"ToFW",
+			"WDMM"
+		],
+		"reprintedAs": [
+			"Imprisonment|XPHB"
+		],
+		"level": 9,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一張描繪目標樣貌的羊皮紙圖畫或一尊雕刻的小雕像，以及一項依你選擇之法術版本而異的特殊構材，每一目標生命骰價值至少 500 gp",
+				"cost": 50000
+			}
+		},
+		"duration": [
+			{
+				"type": "permanent",
+				"ends": [
+					"dispel"
+				]
+			}
+		],
+		"entries": [
+			"你創造一道魔法束縛，禁錮射程內一個你能看見的生物。目標必須成功通過一次感知豁免檢定，否則被法術束縛；若它成功，你再次施展此法術時它便對其免疫。受此法術影響期間，該生物不需要呼吸、進食或飲水，也不會老化。預言系法術無法定位或察覺目標。",
+			"施展此法術時，你從以下禁錮形式中選擇一種。",
+			{
+				"type": "entries",
+				"name": "埋葬",
+				"entries": [
+					"目標被埋葬在地底深處的一個魔法力場球體中，球體大小恰好能容納目標。任何東西都無法穿過該球體，也沒有任何生物能傳送或使用位面旅行進出其中。"
+				],
+				"ENG_name": "Burial"
+			},
+			"此版本法術的特殊構材是一顆小秘銀球。",
+			{
+				"type": "entries",
+				"name": "鎖鏈",
+				"entries": [
+					"牢牢紮根於地面的沉重鎖鏈將目標固定在原地。目標{@condition restrained}直到法術結束，且在此之前無法以任何方式移動或被移動。"
+				],
+				"ENG_name": "Chaining"
+			},
+			"此版本法術的特殊構材是一條貴金屬精製鎖鏈。",
+			{
+				"type": "entries",
+				"name": "圍籬監獄",
+				"entries": [
+					"此法術將目標傳送到一個防範傳送與位面旅行的微型半位面中。該半位面可以是迷宮、牢籠、高塔，或任何由你選擇的類似封閉建築或區域。"
+				],
+				"ENG_name": "Hedged Prison"
+			},
+			"此版本法術的特殊構材是一個以翡翠製成的監獄微縮模型。",
+			{
+				"type": "entries",
+				"name": "微縮收容",
+				"entries": [
+					"目標縮小至 1 吋高，並被囚禁在一顆寶石或類似物體中。光線能正常穿過寶石（讓目標能看到外面，其他生物也能看到裡面），但其他任何東西都無法穿過，即使透過傳送或位面旅行也不行。在法術持續生效期間，寶石無法被切割或打破。"
+				],
+				"ENG_name": "Minimus Containment"
+			},
+			"此版本法術的特殊構材是一顆大型透明寶石，例如剛玉、鑽石或紅寶石。",
+			{
+				"type": "entries",
+				"name": "沉睡",
+				"entries": [
+					"目標陷入沉睡，且無法被喚醒。"
+				],
+				"ENG_name": "Slumber"
+			},
+			"此版本法術的特殊構材由稀有的催眠草藥組成。",
+			{
+				"type": "entries",
+				"name": "結束法術",
+				"entries": [
+					"施展此法術時，無論是哪種版本，你都可以指定一個會使法術結束並釋放目標的條件。該條件可以隨你所願地具體或複雜，但 DM 必須同意該條件是合理的且有可能發生。條件可以基於生物的名字、身分或神祇，但除此之外必須基於可觀察的行為或特質，而不能基於等級、職業或生命值之類的無形事物。"
+				],
+				"ENG_name": "Ending the Spell"
+			},
+			"只有以 9 環法術施展、並以監獄或用來創造監獄的特殊構材為目標的{@spell dispel magic}法術，才能結束此法術。",
+			"一個特定的特殊構材一次只能用來創造一座監獄。若你使用同一個構材再次施展此法術，第一次施法的目標會立即從束縛中被釋放。"
+		],
+		"conditionInflict": [
+			"restrained",
+			"unconscious"
+		],
+		"savingThrow": [
+			"wisdom"
+		],
+		"miscTags": [
+			"SGT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Imprisonment"
+	},
 	"Imprisonment|XPHB": {
 		"name": "禁錮術",
 		"source": "XPHB",
@@ -11662,6 +14263,61 @@
 		],
 		"ENG_name": "Incendiary Cloud"
 	},
+	"Incite Greed|AI": {
+		"name": "煽動貪婪",
+		"source": "AI",
+		"page": 76,
+		"level": 3,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一顆價值至少 50 gp 的寶石",
+				"cost": 5000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"施展此法術時，你展示作為材料構材的寶石，並選擇射程內任意數量能看見你的生物。每個目標必須成功通過一次感知豁免檢定，否則被你{@condition charmed}直到法術結束，或直到你或你的同伴對它做出任何有害的事為止。以此方式被{@condition charmed}期間，生物除了用其移動以安全的方式接近你之外什麼也不能做。受影響的生物位於你 5 呎內時無法移動，只會貪婪地盯著你展示的寶石。",
+			"在其每個回合結束時，受影響的目標可以進行一次感知豁免檢定。若成功，此效果對該目標結束。"
+		],
+		"conditionInflict": [
+			"charmed"
+		],
+		"savingThrow": [
+			"wisdom"
+		],
+		"miscTags": [
+			"SGT"
+		],
+		"areaTags": [
+			"MT"
+		],
+		"ENG_name": "Incite Greed"
+	},
 	"Inflict Wounds|XPHB": {
 		"name": "造成傷口",
 		"source": "XPHB",
@@ -11779,6 +14435,62 @@
 			"S"
 		],
 		"ENG_name": "Insect Plague"
+	},
+	"Intellect Fortress|TCE": {
+		"name": "智識堡壘",
+		"source": "TCE",
+		"page": 107,
+		"level": 3,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"在持續時間內，你或射程內一個你能看見的自願生物具有對心靈傷害的抗性，並在智力、感知與魅力豁免檢定上具有優勢。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 4 環或更高環階的法術位施展此法術時，每高於 3 環一環，你可以多指定一個生物為目標。指定目標時，這些生物彼此必須在 30 呎內。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageResist": [
+			"psychic"
+		],
+		"miscTags": [
+			"ADV",
+			"SCT",
+			"SGT"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Intellect Fortress"
 	},
 	"Invisibility|XPHB": {
 		"name": "隱形術",
@@ -11912,6 +14624,119 @@
 		"hasFluffImages": true,
 		"ENG_name": "Jallarzi's Storm of Radiance"
 	},
+	"Jim's Glowing Coin|AI": {
+		"name": "吉姆的發光硬幣",
+		"source": "AI",
+		"page": 76,
+		"level": 2,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"s": true,
+			"m": "a coin",
+			"r": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"在大魔術師兼知名冒險者吉姆·暗魔所運用的眾多戰術中，老掉牙的發光硬幣把戲是歷久不衰的經典。施展此法術時，你將作為法術材料構材的硬幣扔向射程內的任一地點。硬幣如同受到{@spell light}法術效果般亮起。硬幣 30 呎內每個你能看見、由你選擇的生物必須成功通過一次感知豁免檢定，否則在持續時間內分心。分心時，生物在感知（{@skill Perception}）檢定與先攻擲骰上具有劣勢。"
+		],
+		"savingThrow": [
+			"wisdom"
+		],
+		"miscTags": [
+			"SGT"
+		],
+		"areaTags": [
+			"MT"
+		],
+		"ENG_name": "Jim's Glowing Coin"
+	},
+	"Jim's Magic Missile|AI": {
+		"name": "吉姆的魔法飛彈",
+		"source": "AI",
+		"page": 76,
+		"level": 1,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"r": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			{
+				"type": "quote",
+				"entries": [
+					"吉姆的魔法飛彈是一道古老而強大的法術，也是我在巫師學院時樂團的名字。"
+				],
+				"by": "Jim Darkmagic"
+			},
+			"任何法師學徒都能施展無聊的老魔法飛彈。沒錯，它總是命中目標。真無聊。用吉姆·暗魔所使用的這個改良版法術，擺脫你爺爺那一代魔法的單調乏味吧！",
+			"你創造三枚扭轉的、會發出哨音的、低過敏且無麩質的魔法力場飛鏢。每枚飛鏢瞄準射程內一個你能看見、由你選擇的生物。為每枚飛彈進行一次遠程法術攻擊。命中時，飛彈對其目標造成 {@damage 2d4} 點力場傷害。",
+			"若攻擊檢定造成重擊，該飛彈的目標受到 {@damage 5d4} 點力場傷害，而不是讓你為重擊擲兩次傷害。若任何一枚飛彈的攻擊檢定擲出 1，所有飛彈都會錯失目標並在你面前爆炸，每枚飛彈對你造成 1 點力場傷害。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 2 環或更高環階的法術位施展此法術時，每高於 1 環一環，法術多創造一枚飛鏢，且版稅構材增加 1 gp。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"spellAttack": [
+			"R"
+		],
+		"miscTags": [
+			"SGT"
+		],
+		"areaTags": [
+			"MT",
+			"ST"
+		],
+		"ENG_name": "Jim's Magic Missile"
+	},
 	"Jump|XPHB": {
 		"name": "跳躍術",
 		"source": "XPHB",
@@ -11970,6 +14795,53 @@
 		],
 		"ENG_name": "Jump"
 	},
+	"Kinetic Jaunt|SCC": {
+		"name": "動能疾行",
+		"source": "SCC",
+		"page": 37,
+		"level": 2,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你以魔法賦予你的移動如舞蹈般的步伐，讓你在持續時間內獲得以下好處。",
+			{
+				"type": "list",
+				"items": [
+					"你的步行速度增加 10 呎。",
+					"你不會引發借機攻擊。",
+					"你可以穿過另一個生物的空間，且不會視為{@quickref difficult terrain||3}。若你在另一個生物的空間中結束你的回合，你會被推回你最後佔據的未佔據空間，並受到 {@damage 1d8} 點力場傷害。"
+				]
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"ENG_name": "Kinetic Jaunt"
+	},
 	"Knock|XPHB": {
 		"name": "敲擊術",
 		"source": "XPHB",
@@ -12015,6 +14887,65 @@
 			"SGT"
 		],
 		"ENG_name": "Knock"
+	},
+	"Laeral's Silver Lance|FRHOF": {
+		"name": "萊拉銀槍",
+		"source": "FRHoF",
+		"page": 145,
+		"level": 3,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "line",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一根價值 250+ GP 的銀針",
+				"cost": 25000
+			}
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"銀色能量從你身上以長 120 呎、寬 5 呎的{@variantrule Line [Area of Effect]|XPHB|線形}爆發。{@variantrule Line [Area of Effect]|XPHB|線形}內每個由你選擇的生物進行一次力量豁免檢定。失敗時，生物受到 {@damage 3d10} 點力場傷害並陷入{@condition Prone|XPHB}狀態。成功時，生物只受到一半傷害。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "使用更高環階的法術欄位",
+				"entries": [
+					"法術位每高於 3 環一環，傷害增加 {@scaledamage 3d10|3-9|1d10}。"
+				],
+				"ENG_name": "Using a Higher-Level Spell Slot"
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"savingThrow": [
+			"strength"
+		],
+		"areaTags": [
+			"L"
+		],
+		"ENG_name": "Laeral's Silver Lance"
 	},
 	"Legend Lore|XPHB": {
 		"name": "通曉傳奇",
@@ -12413,6 +15344,154 @@
 			"L"
 		],
 		"ENG_name": "Lightning Bolt"
+	},
+	"Lightning Lure|TCE": {
+		"name": "閃電牽引",
+		"source": "TCE",
+		"page": 107,
+		"otherSources": [
+			{
+				"source": "SCAG",
+				"page": 143
+			}
+		],
+		"level": 0,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "radius",
+			"distance": {
+				"type": "feet",
+				"amount": 15
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你創造一道閃電能量之鞭，擊向你 15 呎內一個你能看見、由你選擇的生物。目標必須成功通過一次力量豁免檢定，否則被沿直線朝你拉近至多 10 呎，然後若它位於你 5 呎內，便受到 {@damage 1d8} 點閃電傷害。",
+			"此法術的傷害在你達到 5 級（{@damage 2d8}）、11 級（{@damage 3d8}）與 17 級（{@damage 4d8}）時各增加 {@damage 1d8}。"
+		],
+		"scalingLevelDice": {
+			"label": "lightning damage",
+			"scaling": {
+				"1": "1d8",
+				"5": "2d8",
+				"11": "3d8",
+				"17": "4d8"
+			}
+		},
+		"damageInflict": [
+			"lightning"
+		],
+		"savingThrow": [
+			"strength"
+		],
+		"miscTags": [
+			"FMV",
+			"SCL",
+			"SGT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Lightning Lure"
+	},
+	"Linked Glyphs|AITFR-AVT": {
+		"name": "連結符文",
+		"source": "AitFR-AVT",
+		"page": 9,
+		"otherSources": [
+			{
+				"source": "AitFR-FCD",
+				"page": 11
+			}
+		],
+		"referenceSources": [
+			"AitFR-FCD"
+		],
+		"level": 3,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "hour"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "touch"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "價值至少 300 gp 的焚香與鑽石粉，法術會消耗這些材料",
+				"cost": 30000,
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "permanent",
+				"ends": [
+					"dispel",
+					"trigger"
+				]
+			}
+		],
+		"entries": [
+			"施展此法術時，你銘刻一個偵測符文，它之後會在另一個相連符文所在之處啟動一個魔法效果。你將偵測符文銘刻在一個表面上（例如桌面或一段地板或牆面），或刻在一個可以闔上的物體內（例如一本書、一張卷軸或一個寶箱）以隱藏符文。符文所涵蓋的區域直徑不超過 10 呎。若該表面或物體從你施展此法術之處移動超過 10 呎，偵測符文便會損壞，法術在未被觸發的情況下結束。",
+			"兩個符文都幾乎看不見，要找到其中任何一個，都需要成功通過一次對抗你法術豁免 DC 的智力（{@skill Investigation}）檢定。",
+			"施展此法術時，你決定觸發偵測符文的條件。對於銘刻在表面上的符文，最常見的觸發條件包括觸碰或站在符文上、移開覆蓋符文的其他物體、接近符文到一定距離內，或操作刻有符文的物體。對於銘刻在物體內的符文，最常見的觸發條件包括打開該物體、接近該物體到一定距離內，或看見或閱讀符文。符文一旦被觸發，此法術便結束。",
+			"你可以進一步細化觸發條件，讓法術只在特定情況下，或依據體徵（例如身高或體重）、生物種類（例如此守護可以設定為影響異怪或卓爾）或陣營啟動。你也可以設定不會觸發符文之生物的條件，例如說出特定密語的人。",
+			"銘刻偵測符文時，選擇一個警報符文或法術符文與之相連。",
+			{
+				"type": "entries",
+				"name": "警報符文",
+				"entries": [
+					"你創造並以魔法連結兩個符文：一個偵測符文與一個效果符文。這兩個符文必須彼此保持在 100 哩內，否則法術效果結束。當偵測符文被觸發時，效果符文會像警報術一樣反應，若你位於效果符文 1 哩內，便會在你的心中發出一聲心靈提示。若你正在睡覺，這聲提示會喚醒你。"
+				],
+				"ENG_name": "Alarm Glyph"
+			},
+			{
+				"type": "entries",
+				"name": "法術符文",
+				"entries": [
+					"你創造並以魔法連結兩個符文：一個偵測符文與一個效果符文。這兩個符文必須彼此在 100 呎內。你可以在創造符文的過程中施展一道 4 環或更低環階的已準備法術，將它儲存在效果符文中。該法術必須以單一生物或一個區域為目標。以此方式施展的法術不會立即生效。當偵測符文被觸發時，儲存在效果符文中的法術便會施展。若該法術有目標，它會以觸發符文的生物為目標。若該法術影響一個區域，該區域以效果符文為中心。若該法術召喚敵對生物或創造有害的物體或陷阱，它們會盡可能出現在效果符文附近。若該法術需要{@status concentration}，它會持續到完整的持續時間結束為止。"
+				],
+				"ENG_name": "Spell Glyph"
+			}
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 5 環或更高環階的法術位施展此法術來創造法術符文時，你可以儲存任何環階不高於所用法術位的法術。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"conditionInflict": [
+			"invisible"
+		],
+		"miscTags": [
+			"PRM"
+		],
+		"ENG_name": "Linked Glyphs"
 	},
 	"Locate Animals or Plants|XPHB": {
 		"name": "動植物定位術",
@@ -13001,6 +16080,67 @@
 			}
 		],
 		"ENG_name": "Magic Weapon"
+	},
+	"Magnify Gravity|EGW": {
+		"name": "重力增幅",
+		"source": "EGW",
+		"page": 188,
+		"level": 1,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "round",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"以射程內一個你能看見的點為中心、半徑 10 呎的球形內，重力短暫增強。在你施展此法術的回合中位於球形內的每個生物必須進行一次體質豁免檢定。失敗時，生物受到 {@damage 2d8} 點力場傷害，且其速度減半直到其下個回合結束。成功時，生物受到一半傷害且速度不會減少。",
+			"直到你下個回合開始，球形內任何未被穿戴或攜帶的物體，都需要成功通過一次對抗你法術豁免 DC 的力量檢定才能拾起或移動。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 2 環或更高環階的法術位施展此法術時，每高於 1 環一環，傷害增加 {@scaledamage 2d8|1-9|1d8}。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"miscTags": [
+			"OBJ",
+			"SGT"
+		],
+		"areaTags": [
+			"S"
+		],
+		"ENG_name": "Magnify Gravity"
 	},
 	"Major Image|XPHB": {
 		"name": "高等幻象",
@@ -13613,6 +16753,69 @@
 			"ST"
 		],
 		"ENG_name": "Mind Blank"
+	},
+	"Mind Sliver|TCE": {
+		"name": "心靈碎片",
+		"source": "TCE",
+		"page": 108,
+		"reprintedAs": [
+			"Mind Sliver|XPHB"
+		],
+		"level": 0,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "round",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你將一根令人迷亂的心靈能量尖刺刺入射程內一個你能看見之生物的心智。目標必須成功通過一次智力豁免檢定，否則受到 {@damage 1d6} 點心靈傷害，且它在你下個回合結束前進行的下一次豁免檢定要減去 {@dice 1d4}。",
+			"此法術的傷害在你達到特定等級時增加 {@damage 1d6}：5 級（{@damage 2d6}）、11 級（{@damage 3d6}）與 17 級（{@damage 4d6}）。"
+		],
+		"scalingLevelDice": {
+			"label": "psychic damage",
+			"scaling": {
+				"1": "1d6",
+				"5": "2d6",
+				"11": "3d6",
+				"17": "4d6"
+			}
+		},
+		"damageInflict": [
+			"psychic"
+		],
+		"savingThrow": [
+			"intelligence"
+		],
+		"miscTags": [
+			"SCL",
+			"SGT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mind Sliver"
 	},
 	"Mind Sliver|XPHB": {
 		"name": "心靈碎片",
@@ -14332,6 +17535,67 @@
 		],
 		"ENG_name": "Mordenkainen's Sword"
 	},
+	"Motivational Speech|AI": {
+		"name": "激勵演說",
+		"source": "AI",
+		"page": 77,
+		"level": 3,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "minute"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			{
+				"type": "quote",
+				"entries": [
+					"我曾聽過一次吉姆的激勵演說，那是我人生中最糟糕的九十秒。歐明到底看上他哪一點？"
+				],
+				"by": "Walnut Dankgrass"
+			},
+			"你向盟友、員工或無辜的旁觀者喊話，激勵並鼓舞他們邁向偉大，不管他們有沒有什麼值得興奮的事。選擇射程內至多五個能聽見你的生物。在持續時間內，每個受影響的生物獲得 5 點臨時生命值，並在感知豁免檢定上具有優勢。若受影響的生物被攻擊命中，它進行的下一次攻擊檢定具有優勢。一旦受影響的生物失去此法術給予的臨時生命值，法術對該生物結束。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 4 環或更高環階的法術位施展此法術時，每高於 3 環一環，臨時生命值增加 5 點。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"ADV",
+			"SGT",
+			"THP"
+		],
+		"areaTags": [
+			"MT"
+		],
+		"ENG_name": "Motivational Speech"
+	},
 	"Move Earth|XPHB": {
 		"name": "移山倒海",
 		"source": "XPHB",
@@ -14381,6 +17645,82 @@
 			"Q"
 		],
 		"ENG_name": "Move Earth"
+	},
+	"Nathair's Mischief|FTD": {
+		"name": "納瑟爾的惡作劇",
+		"source": "FTD",
+		"page": 20,
+		"level": 2,
+		"school": "I",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"s": true,
+			"m": "a piece of crust from an apple pie"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你以精類與龍族魔法填滿射程內一個你能看見的 20 呎立方。在「惡作劇湧動」表上擲骰決定產生的魔法效果，並在法術結束前你每個回合開始時再擲一次。你可以在擲骰前將立方移動至多 10 呎。",
+			{
+				"type": "table",
+				"caption": "惡作劇湧動",
+				"colLabels": [
+					"d4",
+					"效果"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"空氣中瀰漫著蘋果派的香氣，立方內的每個生物必須成功通過一次感知豁免檢定，否則被你{@condition charmed}直到你下個回合開始。"
+					],
+					[
+						"2",
+						"四周出現一束束花朵，由於花朵朝它們臉上噴水，立方內的每個生物必須成功通過一次敏捷豁免檢定，否則{@condition blinded}直到你下個回合開始。"
+					],
+					[
+						"3",
+						"立方內的每個生物必須成功通過一次感知豁免檢定，否則開始咯咯傻笑直到你下個回合開始。傻笑中的生物處於{@condition incapacitated}狀態，並用它全部的移動朝隨機方向移動。"
+					],
+					[
+						"4",
+						"糖蜜液滴懸浮在立方內，使其成為{@quickref difficult terrain||3}直到你下個回合開始。"
+					]
+				]
+			}
+		],
+		"savingThrow": [
+			"dexterity",
+			"wisdom"
+		],
+		"miscTags": [
+			"RO",
+			"SGT"
+		],
+		"ENG_name": "Nathair's Mischief"
 	},
 	"Nondetection|XPHB": {
 		"name": "反偵測術",
@@ -16132,6 +19472,63 @@
 		],
 		"ENG_name": "Protection from Poison"
 	},
+	"Pulse Wave|EGW": {
+		"name": "脈衝波",
+		"source": "EGW",
+		"page": 188,
+		"level": 3,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "cone",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你製造強大的壓力，在 30 呎錐形內釋放，並決定此壓力要拉近還是推開生物與物體。錐形內的每個生物必須進行一次體質豁免檢定。失敗時，生物受到 {@damage 6d6} 點力場傷害，成功時傷害減半。每個豁免失敗的生物，依你為法術做的選擇，被拉向你 15 呎或被推離你 15 呎。",
+			"此外，完全位於錐形內的未固定物體，同樣被拉近或推開 15 呎。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 4 環或更高環階的法術位施展此法術時，每高於 3 環一環，傷害增加 {@scaledamage 6d6|3-9|1d6}，且拉近或推開的距離增加 5 呎。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"miscTags": [
+			"FMV",
+			"OBJ"
+		],
+		"areaTags": [
+			"N"
+		],
+		"ENG_name": "Pulse Wave"
+	},
 	"Purify Food and Drink|XPHB": {
 		"name": "淨化飲食",
 		"source": "XPHB",
@@ -16280,6 +19677,124 @@
 			"MT"
 		],
 		"ENG_name": "Rary's Telepathic Bond"
+	},
+	"Raulothim's Psychic Lance|FTD": {
+		"name": "勞洛席姆心靈長槍",
+		"source": "FTD",
+		"page": 21,
+		"level": 4,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你從前額向射程內一個你能看見的生物釋放一道閃爍的心靈力量長槍。或者，你可以說出一個生物的名字。若被點名的目標在射程內，即使你看不見它，它也會成為法術的目標。若被點名的目標不在射程內，長槍便會消散而沒有效果。",
+			"目標必須進行一次智力豁免檢定。失敗時，目標受到 {@damage 7d6} 點心靈傷害，並{@condition incapacitated}直到你下個回合開始。成功時，該生物受到一半傷害且不會{@condition incapacitated}。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 5 環或更高環階的法術位施展此法術時，每高於 4 環一環，傷害增加 {@scaledamage 7d6|4-9|1d6}。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"psychic"
+		],
+		"conditionInflict": [
+			"incapacitated"
+		],
+		"savingThrow": [
+			"intelligence"
+		],
+		"miscTags": [
+			"SGT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Raulothim's Psychic Lance"
+	},
+	"Ravenous Void|EGW": {
+		"name": "飢餓虛空",
+		"source": "EGW",
+		"page": 188,
+		"level": 9,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 1000
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a small, nine-pointed star made of iron"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你在射程內一個你能看見的點上，創造一個以該點為中心、半徑 20 呎的毀滅性重力球形。在法術持續時間內，球形及其 100 呎內的任何空間都是{@quickref difficult terrain||3}，且完全位於球形內的非魔法物體若未被穿戴或攜帶便會被摧毀。",
+			"當球形出現時，以及直到法術結束前你每個回合開始時，球形 100 呎內的未固定物體會被拉向球形中心，停在盡可能接近中心的未佔據空間。",
+			"在球形 100 呎內開始其回合的生物，必須成功通過一次力量豁免檢定，否則被直直拉向球形中心，停在盡可能接近中心的未佔據空間。在回合中首次進入球形或在其中開始其回合的生物，受到 {@damage 5d10} 點力場傷害，並{@condition restrained}直到它不再位於球形內為止。若球形在空中，{@condition restrained}的生物會懸浮在球形內。生物可以使用其動作進行一次對抗你法術豁免 DC 的力量檢定，成功時結束自己或其觸及範圍內球形中另一個生物的{@condition restrained}狀態。被此法術降至 0 生命值的生物會連同其穿戴或攜帶的任何非魔法物品一起被徹底抹滅。"
+		],
+		"damageInflict": [
+			"force"
+		],
+		"conditionInflict": [
+			"restrained"
+		],
+		"savingThrow": [
+			"strength"
+		],
+		"abilityCheck": [
+			"strength"
+		],
+		"miscTags": [
+			"OBJ",
+			"SGT"
+		],
+		"areaTags": [
+			"S"
+		],
+		"ENG_name": "Ravenous Void"
 	},
 	"Ray of Enfeeblement|XPHB": {
 		"name": "衰弱射線",
@@ -16456,6 +19971,98 @@
 			"ST"
 		],
 		"ENG_name": "Ray of Sickness"
+	},
+	"Reality Break|EGW": {
+		"name": "現實崩解",
+		"source": "EGW",
+		"page": 189,
+		"level": 8,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a crystal prism"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你粉碎現實與時間線之間的屏障，將一個生物拋入混亂與瘋狂之中。目標必須成功通過一次感知豁免檢定，否則直到法術結束前無法採取反應。受影響的目標在其每個回合開始時也必須擲一顆 {@dice d10}；擲出的數字決定目標會發生什麼事，如「現實崩解效果」表所示。",
+			"在其每個回合結束時，受影響的目標可以重複感知豁免檢定，成功時結束自身的法術效果。",
+			{
+				"type": "table",
+				"caption": "現實崩解效果",
+				"colLabels": [
+					"d10",
+					"效果"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1-2",
+						"{@b 遠域幻象。}目標受到 {@damage 6d12} 點心靈傷害，並{@condition stunned}直到該回合結束。"
+					],
+					[
+						"3-5",
+						"{@b 撕裂裂隙。}目標必須進行一次敏捷豁免檢定，失敗時受到 {@damage 8d12} 點力場傷害，成功時傷害減半。"
+					],
+					[
+						"6-8",
+						"{@b 蟲洞。}目標連同其穿戴與攜帶的一切被傳送至多 30 呎，到一處你能看見、由你選擇的未佔據空間。目標也受到 {@damage 10d12} 點力場傷害並被擊倒{@condition prone}。"
+					],
+					[
+						"9-10",
+						"{@b 黑暗虛空之寒。}目標受到 {@damage 10d12} 點寒冷傷害，並{@condition blinded}直到該回合結束。"
+					]
+				]
+			}
+		],
+		"damageInflict": [
+			"psychic",
+			"force",
+			"cold"
+		],
+		"conditionInflict": [
+			"stunned",
+			"prone",
+			"blinded"
+		],
+		"savingThrow": [
+			"wisdom",
+			"dexterity"
+		],
+		"miscTags": [
+			"RO",
+			"SGT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Reality Break"
 	},
 	"Regenerate|XPHB": {
 		"name": "再生術",
@@ -16840,6 +20447,59 @@
 		],
 		"ENG_name": "Revivify"
 	},
+	"Rime's Binding Ice|FTD": {
+		"name": "萊姆束縛寒冰",
+		"source": "FTD",
+		"page": 21,
+		"level": 2,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "cone",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"s": true,
+			"m": "a vial of meltwater"
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"一陣寒冷能量從你身上以 30 呎錐形爆發。該區域內的每個生物必須進行一次體質豁免檢定。失敗時，生物受到 {@damage 3d8} 點寒冷傷害，並被冰晶束縛 1 分鐘，或直到它或其觸及範圍內的另一個生物使用一個動作打碎冰塊為止。被冰束縛的生物速度降為 0。成功時，生物受到一半傷害且不會被冰束縛。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 3 環或更高環階的法術位施展此法術時，每高於 2 環一環，寒冷傷害增加 {@scaledamage 3d8|2-9|1d8}。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"cold"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"areaTags": [
+			"N"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Rime's Binding Ice"
+	},
 	"Rope Trick|XPHB": {
 		"name": "通天繩",
 		"source": "XPHB",
@@ -16996,6 +20656,65 @@
 			"ST"
 		],
 		"ENG_name": "Sanctuary"
+	},
+	"Sapping Sting|EGW": {
+		"name": "汲取之刺",
+		"source": "EGW",
+		"page": 189,
+		"level": 0,
+		"school": "N",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你汲取射程內一個你能看見之生物的活力。目標必須成功通過一次體質豁免檢定，否則受到 {@damage 1d4} 點黯蝕傷害並倒地{@condition prone}。",
+			"此法術的傷害在你達到 5 級（{@damage 2d4}）、11 級（{@damage 3d4}）與 17 級（{@damage 4d4}）時各增加 {@damage 1d4}。"
+		],
+		"scalingLevelDice": {
+			"label": "necrotic damage",
+			"scaling": {
+				"1": "1d4",
+				"5": "2d4",
+				"11": "3d4",
+				"17": "4d4"
+			}
+		},
+		"damageInflict": [
+			"necrotic"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"miscTags": [
+			"SCL",
+			"SGT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Sapping Sting"
 	},
 	"Scorching Ray|XPHB": {
 		"name": "灼熱射線",
@@ -17903,6 +21622,89 @@
 		"hasFluffImages": true,
 		"ENG_name": "Silent Image"
 	},
+	"Silvery Barbs|SCC": {
+		"name": "銀色倒刺",
+		"source": "SCC",
+		"page": 38,
+		"level": 1,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "reaction",
+				"condition": "當你 60 呎內一個你能看見的生物在攻擊檢定、屬性檢定或豁免檢定中成功時採取"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你以魔法讓觸發的生物分心，並將它一瞬間的遲疑轉化為對另一個生物的鼓舞。觸發的生物必須重擲該 {@dice d20}，並使用較低的結果。",
+			"然後你可以選擇射程內另一個你能看見的生物（你可以選擇自己）。所選生物在 1 分鐘內進行的下一次攻擊檢定、屬性檢定或豁免檢定具有優勢。一個生物一次只能受到此法術的一次強化。"
+		],
+		"miscTags": [
+			"ADV",
+			"SGT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Silvery Barbs"
+	},
+	"Simbul's Synostodweomer|FRHOF": {
+		"name": "辛布爾的咒轉療術",
+		"source": "FRHoF",
+		"page": 145,
+		"level": 7,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "touch"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"在持續時間內，你以魔法治療能量灌注一個你觸碰的生物。每當目標使用法術位施展法術時，目標可以立即擲出等同於該法術位環階數量的未消耗{@variantrule Hit Point Dice|XPHB|生命骰}，並恢復等於擲骰總和加上你施法屬性調整值的{@variantrule Hit Points|XPHB|生命值}；這些骰子隨即被消耗。"
+		],
+		"miscTags": [
+			"HL"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Simbul's Synostodweomer"
+	},
 	"Simulacrum|XPHB": {
 		"name": "擬像術",
 		"source": "XPHB",
@@ -18117,6 +21919,103 @@
 			"MT"
 		],
 		"ENG_name": "Slow"
+	},
+	"Songal's Elemental Suffusion|FRHOF": {
+		"name": "松格爾元素灌注",
+		"source": "FRHoF",
+		"page": 145,
+		"level": 5,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一顆價值 100 GP 以上的珍珠",
+				"cost": 10000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你以精靈的元素之力灌注自身。直到法術結束，你獲得以下好處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "元素免疫",
+						"entries": [
+							"施展此法術時，從以下傷害類型中選擇一種：強酸、寒冷、火焰、閃電或雷鳴。你具有對所選傷害類型的{@variantrule Resistance|XPHB|抗性}。"
+						],
+						"ENG_name": "Elemental Immunity"
+					},
+					{
+						"type": "item",
+						"name": "元素脈衝",
+						"entries": [
+							"施展此法術時，以及在你之後每個回合開始時，你從自身釋放一陣元素能量，形成 15 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}。該區域內每個由你選擇的生物進行一次敏捷豁免檢定。失敗時，生物受到 {@damage 2d6} 點強酸、寒冷、火焰、閃電或雷鳴傷害（由你選擇），並陷入{@condition Prone|XPHB}狀態。成功時，生物只受到一半傷害。"
+						],
+						"ENG_name": "Elemental Pulse"
+					},
+					{
+						"type": "item",
+						"name": "飛行",
+						"entries": [
+							"你獲得 30 呎的{@variantrule Fly Speed|XPHB|飛行速度}，並能懸浮。"
+						],
+						"ENG_name": "Flight"
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "以法陣法術施展",
+				"entries": [
+					"若以法陣法術施展此法術，其施法時間增加至 1 分鐘，持續時間增加為{@status Concentration|XPHB|專注}，至多 10 分鐘。每有一名輔助施法者參與施法，你可以多選擇一個生物，最多額外九個生物。所選生物在法術持續時間內也獲得法術的好處。",
+					"施展法術時，每位輔助施法者都必須消耗一個 2 環以上的法術位；否則法術失敗。"
+				],
+				"ENG_name": "Casting as a Circle Spell"
+			}
+		],
+		"damageInflict": [
+			"acid",
+			"cold",
+			"fire",
+			"lightning",
+			"thunder"
+		],
+		"conditionInflict": [
+			"prone"
+		],
+		"savingThrow": [
+			"dexterity"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Songal's Elemental Suffusion"
 	},
 	"Sorcerous Burst|XPHB": {
 		"name": "術法爆發",
@@ -18403,6 +22302,159 @@
 		],
 		"ENG_name": "Speak with Plants"
 	},
+	"Spellfire Flare|FRHOF": {
+		"name": "法火閃焰",
+		"source": "FRHoF",
+		"page": 146,
+		"level": 1,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你釋放一道耀眼的火焰衝擊。對射程內一個目標進行一次遠程法術攻擊；此次攻擊檢定中，目標無法受益於{@variantrule Cover|XPHB|半掩護}或{@variantrule Cover|XPHB|四分之三掩護}。命中時，目標受到 {@damage 2d10} 點光耀傷害。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "使用更高環階的法術欄位",
+				"entries": [
+					"法術位每高於 1 環一環，你多創造一道衝擊。你可以讓這些衝擊射向同一個目標或不同目標。為每道衝擊分別進行攻擊檢定。"
+				],
+				"ENG_name": "Using a Higher-Level Spell Slot"
+			}
+		],
+		"damageInflict": [
+			"radiant"
+		],
+		"spellAttack": [
+			"R"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Spellfire Flare"
+	},
+	"Spellfire Storm|FRHOF": {
+		"name": "法火風暴",
+		"source": "FRHoF",
+		"page": 146,
+		"level": 4,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你在射程內以一點為中心，咒喚一根法火之柱，形成半徑 20 呎、高 20 呎的{@variantrule Cylinder [Area of Effect]|XPHB|圓柱}。{@variantrule Cylinder [Area of Effect]|XPHB|圓柱}範圍內為{@variantrule Bright Light|XPHB|明亮光照}，其出現時位於其中的每個生物進行一次體質豁免檢定，失敗時受到 {@damage 4d10} 點光耀傷害，成功時傷害減半。當生物在回合中首次進入法術區域或在其中結束其回合時，也要進行此豁免。生物每回合只進行一次此豁免。",
+			"此外，每當{@variantrule Cylinder [Area of Effect]|XPHB|圓柱}內的生物施展法術時，該生物進行一次體質豁免檢定。失敗時，該法術消散而沒有效果，用來施展它的動作、{@variantrule Bonus Action|XPHB|附贈動作}或{@variantrule Reaction|XPHB|反應}也被浪費。若該法術是以法術位施展的，該法術位不會被消耗。",
+			"施展此法術時，你可以指定不受其影響的生物。",
+			{
+				"type": "entries",
+				"name": "以法陣法術施展",
+				"entries": [
+					"除了法術平常的構材之外，你還必須提供一項特殊構材（一顆價值 25,000+ GP 的藍色星彩藍寶石），法術會消耗此構材。法術的射程增加至 1 哩，且不再需要{@status Concentration|XPHB|專注}。施展法術時，每位輔助施法者都必須消耗一個 3 環以上的法術位；否則法術失敗。"
+				],
+				"ENG_name": "Casting as a Circle Spell"
+			}
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "使用更高環階的法術欄位",
+				"entries": [
+					"法術位每高於 4 環一環，傷害增加 {@scaledamage 4d10|4-9|1d10}。",
+					"輔助施法者的數量決定法術的效果範圍與持續時間，如下表所示。若任何參與此次施法的施法者參與了另一次以法陣法術施展的法火風暴，法術便提前結束。",
+					{
+						"type": "table",
+						"colStyles": [
+							"col-2 text-center",
+							"col-8",
+							"col-2"
+						],
+						"colLabels": [
+							"輔助施法者",
+							"效果範圍",
+							"Duration"
+						],
+						"rows": [
+							[
+								"1-3",
+								"半徑 40 呎、高 40 呎的{@variantrule Cylinder [Area of Effect]|XPHB|圓柱}",
+								"1 小時"
+							],
+							[
+								"4-6",
+								"半徑 60 呎、高 60 呎的{@variantrule Cylinder [Area of Effect]|XPHB|圓柱}",
+								"8 小時"
+							],
+							[
+								"7+",
+								"半徑 100 呎、高 100 呎的{@variantrule Cylinder [Area of Effect]|XPHB|圓柱}",
+								"24 小時"
+							]
+						]
+					}
+				],
+				"ENG_name": "Using a Higher-Level Spell Slot"
+			}
+		],
+		"damageInflict": [
+			"radiant"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"miscTags": [
+			"LGT"
+		],
+		"areaTags": [
+			"Y"
+		],
+		"ENG_name": "Spellfire Storm"
+	},
 	"Spider Climb|XPHB": {
 		"name": "蛛行術",
 		"source": "XPHB",
@@ -18578,6 +22630,121 @@
 		],
 		"ENG_name": "Spirit Guardians"
 	},
+	"Spirit of Death|BMT": {
+		"name": "死亡之靈",
+		"source": "BMT",
+		"page": 50,
+		"level": 4,
+		"school": "N",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一張描繪死亡化身、價值至少 400 gp 的鍍金撲克牌",
+				"cost": 40000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚出一個體現死亡的靈體。該靈體顯現在射程內一處你能看見的未佔據空間，並使用{@creature reaper spirit|BMT}數據區塊。當靈體降至 0 生命值或法術結束時，它便會消失。",
+			"該靈體是你與你同伴的盟友。在戰鬥中，靈體與你共用先攻順序，並在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要動作）。若你沒有對靈體下達任何命令，它會採取{@action Dodge}動作，並用它的移動避開危險。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 5 環或更高環階的法術位施展此法術時，在收割者靈體數據區塊中出現法術環階的地方都使用較高的環階。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT",
+			"SMN"
+		],
+		"ENG_name": "Spirit of Death"
+	},
+	"Spirit Shroud|TCE": {
+		"name": "靈魂帷幕",
+		"source": "TCE",
+		"page": 108,
+		"level": 3,
+		"school": "N",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚亡者之靈，在法術持續時間內於你身邊飛掠。這些靈魂無形且無法被傷害。",
+			"直到法術結束，你進行的任何攻擊命中你 10 呎內的生物時，額外造成 {@damage 1d8} 點傷害。此傷害為光耀、黯蝕或寒冷傷害（施展法術時由你選擇）。任何受到此傷害的生物，直到你下個回合開始前都無法恢復生命值。",
+			"此外，任何在你 10 呎內開始其回合、你能看見且由你選擇的生物，其速度減少 10 呎，直到你下個回合開始。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 4 環或更高環階的法術位施展此法術時，每高於 3 環兩環，傷害增加 {@scaledamage 1d8|3,5,7,9|1d8}。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"radiant",
+			"necrotic",
+			"cold"
+		],
+		"miscTags": [
+			"AAD",
+			"SGT"
+		],
+		"ENG_name": "Spirit Shroud"
+	},
 	"Spiritual Weapon|XPHB": {
 		"name": "靈體武器",
 		"source": "XPHB",
@@ -18644,6 +22811,59 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Spiritual Weapon"
+	},
+	"Spray of Cards|BMT": {
+		"name": "紙牌噴射",
+		"source": "BMT",
+		"page": 50,
+		"level": 2,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "cone",
+			"distance": {
+				"type": "feet",
+				"amount": 15
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a deck of cards"
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你噴射出一道 15 呎錐形的幽靈紙牌。該區域內的每個生物必須進行一次敏捷豁免檢定。失敗時，生物受到 {@damage 2d10} 點力場傷害，並陷入{@condition blinded}狀態直到其下個回合結束。成功時，生物只受到一半傷害。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 3 環或更高環階的法術位施展此法術時，每高於 2 環一環，傷害增加 {@scaledamage 2d10|2-9|1d10}。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"conditionInflict": [
+			"blinded"
+		],
+		"savingThrow": [
+			"dexterity"
+		],
+		"ENG_name": "Spray of Cards"
 	},
 	"Staggering Smite|XPHB": {
 		"name": "驚懾斬",
@@ -19117,6 +23337,66 @@
 		],
 		"ENG_name": "Suggestion"
 	},
+	"Summon Aberration|TCE": {
+		"name": "召喚異怪",
+		"source": "TCE",
+		"page": 109,
+		"reprintedAs": [
+			"Summon Aberration|XPHB"
+		],
+		"level": 4,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "裝在一只價值至少 400 gp、鑲鉑小瓶中的醃漬觸手與眼球",
+				"cost": 40000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚出一個異怪靈體。它顯現在你能看見的射程內一處未被佔據的空間。這個實體形態使用{@creature Aberrant Spirit|TCE}數據區塊。施展此法術時，選擇眼魔類、斯拉德或星之子嗣。該生物外觀類似該種類的異怪，這決定了其數據區塊中的某些特質。當該生物降至 0 生命值或法術結束時，它便會消失。",
+			"該生物是你與你同伴的盟友。在戰鬥中，該生物與你共用先攻順序，但在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要動作）。若你沒有下達任何命令，它會採取{@action Dodge}動作，並用它的移動避開危險。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 5 環或更高環階的法術位施展此法術時，在數據區塊中出現法術環階的地方都使用較高的環階。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT",
+			"SMN"
+		],
+		"ENG_name": "Summon Aberration"
+	},
 	"Summon Aberration|XPHB": {
 		"name": "召喚異怪",
 		"source": "XPHB",
@@ -19174,6 +23454,66 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Summon Aberration"
+	},
+	"Summon Beast|TCE": {
+		"name": "召喚野獸",
+		"source": "TCE",
+		"page": 109,
+		"reprintedAs": [
+			"Summon Beast|XPHB"
+		],
+		"level": 2,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一根羽毛、一撮毛皮與一條魚尾，裝在一顆價值至少 200 gp 的鍍金橡實中",
+				"cost": 20000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚出一個野獸靈體。它顯現在你能看見的射程內一處未被佔據的空間。這個實體形態使用{@creature Bestial Spirit|TCE}數據區塊。施展此法術時，選擇一種環境：空中、陸地或水中。該生物外觀類似一隻原生於所選環境、由你選擇的動物，這決定了其數據區塊中的某些特質。當該生物降至 0 生命值或法術結束時，它便會消失。",
+			"該生物是你與你同伴的盟友。在戰鬥中，該生物與你共用先攻順序，但在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要動作）。若你沒有下達任何命令，它會採取{@action Dodge}動作，並用它的移動避開危險。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 3 環或更高環階的法術位施展此法術時，在數據區塊中出現法術環階的地方都使用較高的環階。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT",
+			"SMN"
+		],
+		"ENG_name": "Summon Beast"
 	},
 	"Summon Beast|XPHB": {
 		"name": "召喚野獸",
@@ -19234,6 +23574,67 @@
 			"SMN"
 		],
 		"ENG_name": "Summon Beast"
+	},
+	"Summon Celestial|TCE": {
+		"name": "召喚天界生物",
+		"source": "TCE",
+		"page": 110,
+		"reprintedAs": [
+			"Summon Celestial|XPHB"
+		],
+		"level": 5,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一只價值至少 500 gp 的黃金聖物匣",
+				"cost": 50000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚出一個天界靈體。它以天使般的形態顯現在你能看見的射程內一處未被佔據的空間。這個實體形態使用{@creature Celestial Spirit|TCE}數據區塊。施展此法術時，選擇復仇者或守護者。你的選擇決定了其數據區塊中該生物的攻擊。當該生物降至 0 生命值或法術結束時，它便會消失。",
+			"該生物是你與你同伴的盟友。在戰鬥中，該生物與你共用先攻順序，但在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要動作）。若你沒有下達任何命令，它會採取{@action Dodge}動作，並用它的移動避開危險。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 6 環或更高環階的法術位施展此法術時，在數據區塊中出現法術環階的地方都使用較高的環階。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT",
+			"SMN"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Summon Celestial"
 	},
 	"Summon Celestial|XPHB": {
 		"name": "召喚天界生物",
@@ -19296,6 +23697,66 @@
 		"hasFluffImages": true,
 		"ENG_name": "Summon Celestial"
 	},
+	"Summon Construct|TCE": {
+		"name": "召喚構裝體",
+		"source": "TCE",
+		"page": 111,
+		"reprintedAs": [
+			"Summon Construct|XPHB"
+		],
+		"level": 4,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一個價值至少 400 gp、裝飾華麗的石製與金屬製上鎖盒",
+				"cost": 40000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚出一個構裝體之靈。它顯現在你能看見的射程內一處未被佔據的空間。這個實體形態使用{@creature Construct Spirit|TCE}數據區塊。施展此法術時，選擇一種材料：黏土、金屬或石頭。該生物外觀類似由所選材料製成的魔像或摩登（由你選擇），這決定了其數據區塊中的某些特質。當該生物降至 0 生命值或法術結束時，它便會消失。",
+			"該生物是你與你同伴的盟友。在戰鬥中，該生物與你共用先攻順序，但在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要動作）。若你沒有下達任何命令，它會採取{@action Dodge}動作，並用它的移動避開危險。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 4 環或更高環階的法術位施展此法術時，在數據區塊中出現法術環階的地方都使用較高的環階。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT",
+			"SMN"
+		],
+		"ENG_name": "Summon Construct"
+	},
 	"Summon Construct|XPHB": {
 		"name": "召喚構裝體",
 		"source": "XPHB",
@@ -19353,6 +23814,69 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Summon Construct"
+	},
+	"Summon Draconic Spirit|FTD": {
+		"name": "召喚龍靈",
+		"source": "FTD",
+		"page": 21,
+		"reprintedAs": [
+			"Summon Dragon|XPHB"
+		],
+		"level": 5,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一件刻有龍形圖像、價值至少 500 gp 的物品",
+				"cost": 50000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚出一個{@creature draconic spirit|FTD}。它顯現在你能看見的射程內一處未被佔據的空間。這個實體形態使用龍靈數據區塊。施展此法術時，選擇一個龍族家族：彩色、寶石或金屬。該生物外觀類似所選家族的龍，這決定了其數據區塊中的某些特質。當該生物降至 0 生命值或法術結束時，它便會消失。",
+			"該生物是你與你同伴的盟友。在戰鬥中，該生物與你共用先攻順序，但在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要動作）。若你沒有下達任何命令，它會採取{@action Dodge}動作，並用它的移動避開危險。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 6 環或更高環階的法術位施展此法術時，在數據區塊中出現法術環階的地方都使用較高的環階。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"savingThrow": [
+			"dexterity"
+		],
+		"miscTags": [
+			"SGT",
+			"SMN"
+		],
+		"ENG_name": "Summon Draconic Spirit"
 	},
 	"Summon Dragon|XPHB": {
 		"name": "召喚龍族",
@@ -19414,6 +23938,66 @@
 		"hasFluffImages": true,
 		"ENG_name": "Summon Dragon"
 	},
+	"Summon Elemental|TCE": {
+		"name": "召喚元素",
+		"source": "TCE",
+		"page": 111,
+		"reprintedAs": [
+			"Summon Elemental|XPHB"
+		],
+		"level": 4,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "裝在一只價值至少 400 gp、鑲金小瓶中的空氣、一顆小石子、灰燼與水",
+				"cost": 40000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚出一個元素靈體。它顯現在你能看見的射程內一處未被佔據的空間。這個實體形態使用{@creature Elemental Spirit|TCE}數據區塊。施展此法術時，選擇一種元素：氣、土、火或水。該生物外觀類似一個被所選元素包覆的雙足形體，這決定了其數據區塊中的某些特質。當該生物降至 0 生命值或法術結束時，它便會消失。",
+			"該生物是你與你同伴的盟友。在戰鬥中，該生物與你共用先攻順序，但在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要動作）。若你沒有下達任何命令，它會採取{@action Dodge}動作，並用它的移動避開危險。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 5 環或更高環階的法術位施展此法術時，在數據區塊中出現法術環階的地方都使用較高的環階。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT",
+			"SMN"
+		],
+		"ENG_name": "Summon Elemental"
+	},
 	"Summon Elemental|XPHB": {
 		"name": "召喚元素",
 		"source": "XPHB",
@@ -19470,6 +24054,66 @@
 			"SMN"
 		],
 		"ENG_name": "Summon Elemental"
+	},
+	"Summon Fey|TCE": {
+		"name": "召喚精類",
+		"source": "TCE",
+		"page": 112,
+		"reprintedAs": [
+			"Summon Fey|XPHB"
+		],
+		"level": 3,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一朵價值至少 300 gp 的鍍金花朵",
+				"cost": 30000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚出一個精類靈體。它顯現在你能看見的射程內一處未被佔據的空間。這個實體形態使用{@creature Fey Spirit|TCE}數據區塊。施展此法術時，選擇一種情緒：憤怒、歡樂或狡詐。該生物外觀類似一個帶有所選情緒特徵、由你選擇的精類生物，這決定了其數據區塊中的一項特質。當該生物降至 0 生命值或法術結束時，它便會消失。",
+			"該生物是你與你同伴的盟友。在戰鬥中，該生物與你共用先攻順序，但在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要動作）。若你沒有下達任何命令，它會採取{@action Dodge}動作，並用它的移動避開危險。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 4 環或更高環階的法術位施展此法術時，在數據區塊中出現法術環階的地方都使用較高的環階。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT",
+			"SMN"
+		],
+		"ENG_name": "Summon Fey"
 	},
 	"Summon Fey|XPHB": {
 		"name": "召喚精類",
@@ -19529,6 +24173,66 @@
 		"hasFluffImages": true,
 		"ENG_name": "Summon Fey"
 	},
+	"Summon Fiend|TCE": {
+		"name": "召喚邪魔",
+		"source": "TCE",
+		"page": 112,
+		"reprintedAs": [
+			"Summon Fiend|XPHB"
+		],
+		"level": 6,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "裝在一只價值至少 600 gp 之紅寶石小瓶中的類人生物血液",
+				"cost": 60000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚出一個邪魔靈體。它顯現在你能看見的射程內一處未被佔據的空間。這個實體形態使用{@creature Fiendish Spirit|TCE}數據區塊。施展此法術時，選擇惡魔、魔鬼或魔精。該生物外觀類似所選類型的邪魔，這決定了其數據區塊中的某些特質。當該生物降至 0 生命值或法術結束時，它便會消失。",
+			"該生物是你與你同伴的盟友。在戰鬥中，該生物與你共用先攻順序，但在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要動作）。若你沒有下達任何命令，它會採取{@action Dodge}動作，並用它的移動避開危險。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 7 環或更高環階的法術位施展此法術時，在數據區塊中出現法術環階的地方都使用較高的環階。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT",
+			"SMN"
+		],
+		"ENG_name": "Summon Fiend"
+	},
 	"Summon Fiend|XPHB": {
 		"name": "召喚邪魔",
 		"source": "XPHB",
@@ -19586,6 +24290,124 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Summon Fiend"
+	},
+	"Summon Shadowspawn|TCE": {
+		"name": "召喚暗影之子",
+		"source": "TCE",
+		"page": 113,
+		"level": 3,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "裝在一顆價值至少 300 gp 之寶石中的淚水",
+				"cost": 30000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚出一個暗影靈體。它顯現在你能看見的射程內一處未被佔據的空間。這個實體形態使用{@creature Shadow Spirit|TCE}數據區塊。施展此法術時，選擇一種情緒：狂怒、絕望或恐懼。該生物外觀類似一個帶有所選情緒特徵的畸形雙足生物，這決定了其數據區塊中的某些特質。當該生物降至 0 生命值或法術結束時，它便會消失。",
+			"該生物是你與你同伴的盟友。在戰鬥中，該生物與你共用先攻順序，但在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要動作）。若你沒有下達任何命令，它會採取{@action Dodge}動作，並用它的移動避開危險。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 4 環或更高環階的法術位施展此法術時，在數據區塊中出現法術環階的地方都使用較高的環階。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT",
+			"SMN"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Summon Shadowspawn"
+	},
+	"Summon Undead|TCE": {
+		"name": "召喚不死",
+		"source": "TCE",
+		"page": 114,
+		"reprintedAs": [
+			"Summon Undead|XPHB"
+		],
+		"level": 3,
+		"school": "N",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一顆價值至少 300 gp 的鍍金頭骨",
+				"cost": 30000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你召喚出一個不死靈體。它顯現在你能看見的射程內一處未被佔據的空間。這個實體形態使用{@creature Undead Spirit|TCE}數據區塊。施展此法術時，選擇該生物的形態：幽魂、腐爛或骸骨。該靈體外觀類似具有所選形態的不死生物，這決定了其數據區塊中的某些特質。當該生物降至 0 生命值或法術結束時，它便會消失。",
+			"該生物是你與你同伴的盟友。在戰鬥中，該生物與你共用先攻順序，但在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要動作）。若你沒有下達任何命令，它會採取{@action Dodge}動作，並用它的移動避開危險。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 4 環或更高環階的法術位施展此法術時，在數據區塊中出現法術環階的地方都使用較高的環階。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"miscTags": [
+			"SGT",
+			"SMN"
+		],
+		"ENG_name": "Summon Undead"
 	},
 	"Summon Undead|XPHB": {
 		"name": "召喚不死",
@@ -19800,6 +24622,152 @@
 			"UBA"
 		],
 		"ENG_name": "Swift Quiver"
+	},
+	"Sword Burst|TCE": {
+		"name": "劍刃爆發",
+		"source": "TCE",
+		"page": 115,
+		"otherSources": [
+			{
+				"source": "SCAG",
+				"page": 143
+			}
+		],
+		"level": 0,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "radius",
+			"distance": {
+				"type": "feet",
+				"amount": 5
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你創造一圈轉瞬即逝的幽靈刀刃，掃過你的周圍。你 5 呎內的所有其他生物必須成功通過一次敏捷豁免檢定，否則受到 {@damage 1d6} 點力場傷害。",
+			"此法術的傷害在你達到 5 級（{@damage 2d6}）、11 級（{@damage 3d6}）與 17 級（{@damage 4d6}）時各增加 {@damage 1d6}。"
+		],
+		"scalingLevelDice": {
+			"label": "force damage",
+			"scaling": {
+				"1": "1d6",
+				"5": "2d6",
+				"11": "3d6",
+				"17": "4d6"
+			}
+		},
+		"damageInflict": [
+			"force"
+		],
+		"savingThrow": [
+			"dexterity"
+		],
+		"miscTags": [
+			"SCL"
+		],
+		"areaTags": [
+			"S"
+		],
+		"ENG_name": "Sword Burst"
+	},
+	"Syluné's Viper|FRHOF": {
+		"name": "希露妮之蛇",
+		"source": "FRHoF",
+		"page": 147,
+		"level": 3,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a snake fang"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"在持續時間內，一條閃爍的幽靈之蛇盤繞在你身上。你獲得 15 點{@variantrule Temporary Hit Points|XPHB|臨時生命值}；若你沒有剩餘的{@variantrule Temporary Hit Points|XPHB|臨時生命值}，法術便提前結束。",
+			"法術生效期間，你獲得以下好處：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "攀爬",
+						"entries": [
+							"你獲得等同於你{@variantrule Speed|XPHB}的{@variantrule Climb Speed|XPHB}。"
+						],
+						"ENG_name": "Climbing"
+					},
+					{
+						"type": "item",
+						"name": "毒牙啃咬",
+						"entries": [
+							"作為一個{@action Magic|XPHB|魔法}動作，你可以用這條蛇對 50 呎內一個生物進行一次遠程法術攻擊。命中時，目標受到 {@damage 1d6} 點力場傷害，並陷入{@condition Poisoned|XPHB}狀態直到你下個回合開始。處於{@condition Poisoned|XPHB}狀態時，目標也陷入{@condition Incapacitated|XPHB}狀態。"
+						],
+						"ENG_name": "Venomous Bite"
+					}
+				]
+			}
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "使用更高環階的法術欄位",
+				"entries": [
+					"法術位每高於 3 環一環，你從此法術獲得的{@variantrule Temporary Hit Points|XPHB|臨時生命值}增加 5 點，且毒牙啃咬的傷害增加 {@scaledamage 1d6|3-9|1d6}。"
+				],
+				"ENG_name": "Using a Higher-Level Spell Slot"
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"conditionInflict": [
+			"incapacitated",
+			"poisoned"
+		],
+		"spellAttack": [
+			"R"
+		],
+		"miscTags": [
+			"THP"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Syluné's Viper"
 	},
 	"Symbol|XPHB": {
 		"name": "徽記術",
@@ -20017,6 +24985,61 @@
 		"hasFluffImages": true,
 		"ENG_name": "Tasha's Bubbling Cauldron"
 	},
+	"Tasha's Caustic Brew|TCE": {
+		"name": "塔莎腐蝕酸液",
+		"source": "TCE",
+		"page": 115,
+		"level": 1,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "line",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a bit of rotten food"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"一道強酸流從你身上朝你選擇的方向噴出，形成長 30 呎、寬 5 呎的線形。線上的每個生物必須成功通過一次敏捷豁免檢定，否則在法術持續時間內被強酸覆蓋，或直到有生物使用其動作刮除或洗掉自己或另一個生物身上的強酸為止。被強酸覆蓋的生物在其每個回合開始時受到 {@damage 2d4} 點強酸傷害。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 2 環或更高環階的法術位施展此法術時，每高於 1 環一環，傷害增加 {@scaledamage 2d4|1-9|2d4}。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"acid"
+		],
+		"savingThrow": [
+			"dexterity"
+		],
+		"ENG_name": "Tasha's Caustic Brew"
+	},
 	"Tasha's Hideous Laughter|XPHB": {
 		"name": "塔莎狂笑術",
 		"source": "XPHB",
@@ -20082,6 +25105,219 @@
 			"ST"
 		],
 		"ENG_name": "Tasha's Hideous Laughter"
+	},
+	"Tasha's Mind Whip|TCE": {
+		"name": "塔莎心靈鞭笞",
+		"source": "TCE",
+		"page": 115,
+		"level": 2,
+		"school": "E",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "round",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你以心靈之力鞭打射程內一個你能看見的生物。目標必須進行一次智力豁免檢定。失敗時，目標受到 {@damage 3d6} 點心靈傷害，且直到其下個回合結束前無法採取反應。此外，在其下個回合，它必須選擇要獲得移動、動作或附贈動作；三者只能擇一。成功時，目標受到一半傷害，且不受法術的其他效果影響。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 3 環或更高環階的法術位施展此法術時，每高於 2 環一環，你可以多指定一個生物為目標。指定目標時，這些生物彼此必須在 30 呎內。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"psychic"
+		],
+		"savingThrow": [
+			"intelligence"
+		],
+		"miscTags": [
+			"SCT",
+			"SGT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Tasha's Mind Whip"
+	},
+	"Tasha's Otherworldly Guise|TCE": {
+		"name": "塔莎異界形貌",
+		"source": "TCE",
+		"page": 116,
+		"level": 6,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一件刻有外層位面符號、價值至少 500 gp 的物品",
+				"cost": 50000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"念誦咒語時，你汲取下層位面或上層位面（由你選擇）的魔法來轉化自己。直到法術結束，你獲得以下好處：",
+			{
+				"type": "list",
+				"items": [
+					"你對火焰與毒素傷害免疫（下層位面），或對光耀與黯蝕傷害免疫（上層位面）。",
+					"你對{@condition poisoned}狀態免疫（下層位面），或對{@condition charmed}狀態免疫（上層位面）。",
+					"幽靈般的翅膀出現在你背上，給予你 40 呎的飛行速度。",
+					"你的 AC 獲得 +2 加值。",
+					"你所有的武器攻擊都是魔法攻擊，且當你進行武器攻擊時，你可以在攻擊與傷害擲骰中使用你的施法屬性調整值，取代力量或敏捷。",
+					"當你在你的回合採取{@action Attack}動作時，你可以攻擊兩次而非一次。若你已擁有額外攻擊之類、讓你在回合中採取攻擊動作時能攻擊不只一次的特性，則忽略此好處。"
+				]
+			}
+		],
+		"damageImmune": [
+			"fire",
+			"poison",
+			"radiant",
+			"necrotic"
+		],
+		"conditionImmune": [
+			"charmed",
+			"poisoned"
+		],
+		"miscTags": [
+			"MAC"
+		],
+		"ENG_name": "Tasha's Otherworldly Guise"
+	},
+	"Telekinesis|PHB": {
+		"name": "心靈遙控",
+		"source": "PHB",
+		"page": 280,
+		"srd": true,
+		"referenceSources": [
+			"TftYP-ToH",
+			"ToA",
+			"WDMM",
+			"IDRotF",
+			"AitFR-FCD",
+			"CRCotN",
+			"CoA",
+			"OotA",
+			"SKT",
+			"WDH",
+			"CM"
+		],
+		"reprintedAs": [
+			"Telekinesis|XPHB"
+		],
+		"level": 5,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 10
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你獲得以意念移動或操控生物或物體的能力。施展此法術時，以及在持續時間內每輪作為你的動作，你可以對射程內一個你能看見的生物或物體施加你的意志，產生下方相應的效果。你可以一輪又一輪地影響同一個目標，或隨時選擇新目標。若你更換目標，先前的目標便不再受此法術影響。",
+			{
+				"type": "entries",
+				"name": "生物",
+				"entries": [
+					"你可以嘗試移動一個巨型或更小的生物。以你的施法屬性進行一次屬性檢定，與該生物的力量檢定進行對抗。若你在對抗中勝出，你可以將該生物朝任意方向移動至多 30 呎，包括向上，但不能超出此法術的射程。直到你下個回合結束，該生物被你的心靈遙控之握{@condition restrained}。被向上抬起的生物懸浮在半空中。",
+					"在之後的輪次中，你可以使用你的動作重複該對抗，嘗試維持你對該生物的心靈遙控之握。"
+				],
+				"ENG_name": "Creature"
+			},
+			{
+				"type": "entries",
+				"name": "物體",
+				"entries": [
+					"你可以嘗試移動一個重量不超過 1,000 磅的物體。若該物體未被穿戴或攜帶，你會自動將其朝任意方向移動至多 30 呎，但不能超出此法術的射程。",
+					"若該物體被某個生物穿戴或攜帶，你必須以你的施法屬性進行一次屬性檢定，與該生物的力量檢定進行對抗。若你成功，你便將物體從該生物身上拉走，並可以將其朝任意方向移動至多 30 呎，但不能超出此法術的射程。",
+					"你可以用心靈遙控之握對物體進行精細的控制，例如操作簡單的工具、打開門或容器、收納或取出開放容器中的物品，或倒出小瓶中的內容物。"
+				],
+				"ENG_name": "Object"
+			}
+		],
+		"conditionInflict": [
+			"restrained"
+		],
+		"abilityCheck": [
+			"strength"
+		],
+		"miscTags": [
+			"FMV",
+			"OBJ",
+			"SGT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Telekinesis"
 	},
 	"Telekinesis|XPHB": {
 		"name": "心靈遙控",
@@ -20410,6 +25646,63 @@
 		],
 		"ENG_name": "Teleportation Circle"
 	},
+	"Temporal Shunt|EGW": {
+		"name": "時間轉移",
+		"source": "EGW",
+		"page": 189,
+		"level": 5,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "reaction",
+				"condition": "當一個你能看見的生物進行攻擊檢定或開始施展法術時採取"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "round",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"你以觸發的生物為目標，它必須成功通過一次感知豁免檢定，否則消失，被拋到另一個時間點，使該攻擊未命中或該法術被浪費。在其下個回合開始時，目標重新出現在原處或最近的未佔據空間。目標不會記得你施展了此法術或自己受其影響。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 6 環或更高環階的法術位施展此法術時，每高於 5 環一環，你可以多指定一個生物為目標。所有目標彼此必須在 30 呎內。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"savingThrow": [
+			"wisdom"
+		],
+		"miscTags": [
+			"SCT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Temporal Shunt"
+	},
 	"Tenser's Floating Disk|XPHB": {
 		"name": "譚森浮碟術",
 		"source": "XPHB",
@@ -20458,6 +25751,58 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Tenser's Floating Disk"
+	},
+	"Tether Essence|EGW": {
+		"name": "本質繫結",
+		"source": "EGW",
+		"page": 189,
+		"level": 7,
+		"school": "N",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一捲價值至少 250 gp 的鉑金繩，法術會消耗此材料",
+				"cost": 25000,
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"射程內兩個你能看見的生物必須進行一次體質豁免檢定，若它們彼此在 30 呎內則具有劣勢。任一生物都可以自願豁免失敗。若任一豁免成功，法術便沒有效果。若兩者豁免皆失敗，這兩個生物在持續時間內以魔法相連，不論彼此相距多遠。當其中一方受到傷害時，另一方也受到相同的傷害。若其中一方恢復生命值，另一方也恢復相同數量的生命值。若任一被繫結的生物降至 0 生命值，法術對雙方結束。若法術對其中一個生物結束，便對雙方結束。"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"miscTags": [
+			"SGT"
+		],
+		"areaTags": [
+			"MT"
+		],
+		"ENG_name": "Tether Essence"
 	},
 	"Thaumaturgy|XPHB": {
 		"name": "奇術",
@@ -20797,6 +26142,56 @@
 		],
 		"ENG_name": "Thunderwave"
 	},
+	"Time Ravage|EGW": {
+		"name": "時光摧殘",
+		"source": "EGW",
+		"page": 189,
+		"level": 9,
+		"school": "N",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "一個裝滿價值至少 5,000 gp 鑽石粉的沙漏，法術會消耗此材料",
+				"cost": 500000,
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你以射程內一個你能看見的生物為目標，讓它的肉體承受急速老化的摧殘。目標必須進行一次體質豁免檢定，失敗時受到 {@damage 10d12} 點黯蝕傷害，成功時傷害減半。若豁免失敗，目標也會老化到只剩 30 天便會壽終正寢的程度。處於這種老化狀態時，目標在攻擊檢定、屬性檢定與豁免檢定上具有劣勢，且其步行速度減半。只有{@spell wish}法術，或以 9 環法術位施展的{@spell greater restoration}，能終結這些效果並讓目標恢復原本的年齡。"
+		],
+		"damageInflict": [
+			"necrotic"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"miscTags": [
+			"SGT"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Time Ravage"
+	},
 	"Time Stop|XPHB": {
 		"name": "時間停止",
 		"source": "XPHB",
@@ -21037,6 +26432,96 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Tree Stride"
+	},
+	"True Polymorph|PHB": {
+		"name": "完全變形術",
+		"source": "PHB",
+		"page": 283,
+		"srd": true,
+		"referenceSources": [
+			"WDMM",
+			"IDRotF",
+			"CoA",
+			"TftYP-DiT"
+		],
+		"reprintedAs": [
+			"True Polymorph|XPHB"
+		],
+		"level": 9,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a drop of mercury, a dollop of gum arabic, and a wisp of smoke"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"選擇射程內一個你能看見的生物或非魔法物體。你將該生物轉化為另一種生物、將生物轉化為非魔法物體，或將物體轉化為生物（該物體不能被其他生物穿戴或攜帶）。轉化持續到持續時間結束，或直到目標降至 0 生命值或死亡為止。若你在整個持續時間內專注於此法術，轉化會持續到被解除為止。",
+			"此法術對變形者或 0 生命值的生物沒有效果。不情願的生物可以進行一次感知豁免檢定，若成功便不受此法術影響。",
+			{
+				"type": "entries",
+				"name": "生物變生物",
+				"entries": [
+					"若你將一個生物變成另一種生物，新形態可以是任何由你選擇、挑戰等級等於或低於目標挑戰等級（若目標沒有挑戰等級，則為其等級）的種類。目標的遊戲數據，包括心智屬性值，都被新形態的數據取代。它保留其陣營與個性。"
+				],
+				"ENG_name": "Creature into Creature"
+			},
+			"目標取得新形態的生命值，當它恢復正常形態時，該生物回到轉化前的生命值。若它因降至 0 生命值而恢復原形，任何多餘的傷害會轉移到其正常形態上。只要多餘的傷害沒有使該生物的正常形態降至 0 生命值，它就不會陷入{@condition unconscious}。",
+			"該生物能執行的動作受其新形態本質的限制，且除非其新形態能夠執行這類動作，否則它無法說話、施展法術，或採取任何需要雙手或言語的動作。",
+			"目標的裝備融入新形態中。該生物無法啟動、使用、揮舞其任何裝備，也無法以其他方式從中受益。",
+			{
+				"type": "entries",
+				"name": "物體變生物",
+				"entries": [
+					"你可以將一個物體變成任何種類的生物，只要該生物的體型不大於物體的尺寸，且該生物的挑戰等級為{@filter 9 或更低|bestiary|challenge rating=[&0;&9]|miscellaneous=!swarm}。該生物對你與你的同伴友善。它在你的每個回合行動。由你決定它採取什麼動作以及如何移動。DM 持有該生物的數據，並結算其所有動作與移動。"
+				],
+				"ENG_name": "Object into Creature"
+			},
+			"若法術變為永久，你便不再控制該生物。依你對待它的方式，它可能仍對你保持友善。",
+			{
+				"type": "entries",
+				"name": "生物變物體",
+				"entries": [
+					"若你將一個生物變成物體，它會連同其穿戴與攜帶的一切轉化為該形態，只要物體的尺寸不大於該生物的體型。該生物的數據變為該物體的數據，在法術結束並恢復正常形態後，該生物不會記得處於此形態時的任何事。"
+				],
+				"ENG_name": "Creature into Object"
+			}
+		],
+		"savingThrow": [
+			"wisdom"
+		],
+		"miscTags": [
+			"OBJ",
+			"PRM",
+			"SGT",
+			"SMN"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "True Polymorph"
 	},
 	"True Polymorph|XPHB": {
 		"name": "完全變形術",
@@ -21576,6 +27061,56 @@
 		"hasFluffImages": true,
 		"ENG_name": "Vitriolic Sphere"
 	},
+	"Vortex Warp|SCC": {
+		"name": "漩渦扭曲",
+		"source": "SCC",
+		"page": 38,
+		"level": 2,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 90
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你以魔法扭曲射程內另一個你能看見之生物周圍的空間。目標必須成功通過一次體質豁免檢定（目標可以選擇失敗），否則目標被傳送到射程內一處你能看見、由你選擇的未佔據空間。所選空間必須位於能支撐目標、且目標不需擠身的表面上或液體中。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 3 環或更高環階的法術位施展此法術時，每高於 2 環一環，法術射程增加 30 呎。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"miscTags": [
+			"SGT",
+			"TP"
+		],
+		"ENG_name": "Vortex Warp"
+	},
 	"Wall of Fire|XPHB": {
 		"name": "火牆術",
 		"source": "XPHB",
@@ -21866,6 +27401,60 @@
 		],
 		"ENG_name": "Wall of Thorns"
 	},
+	"Wardaway|FRHOF": {
+		"name": "驅護術",
+		"source": "FRHoF",
+		"page": 147,
+		"level": 1,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a miniature clay hand"
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你朝射程內一個生物擲出一股令人迷亂的魔法力量。目標進行一次體質豁免檢定；構裝體與不死生物在此豁免上自動成功。",
+			"豁免失敗時，目標受到 {@damage 2d4} 點力場傷害，其{@variantrule Speed|XPHB|速度}減半直到你下個回合開始，且在其下個回合，它只能採取一個動作或一個{@variantrule Bonus Action|XPHB|附贈動作}（不能兩者皆採取）。豁免成功時，目標只受到一半傷害。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "使用更高環階的法術欄位",
+				"entries": [
+					"法術位每高於 1 環一環，傷害增加 {@scaledamage 2d4|1-9|2d4}。"
+				],
+				"ENG_name": "Using a Higher-Level Spell Slot"
+			}
+		],
+		"damageInflict": [
+			"force"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Wardaway"
+	},
 	"Warding Bond|XPHB": {
 		"name": "守護聯結",
 		"source": "XPHB",
@@ -21914,6 +27503,46 @@
 			"ST"
 		],
 		"ENG_name": "Warding Bond"
+	},
+	"Warp Sense|SATO": {
+		"name": "扭曲感知",
+		"source": "SatO",
+		"page": 12,
+		"level": 2,
+		"school": "D",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a razorvine leaf"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"在持續時間內，你能感知你 30 呎內傳送門的存在，即使是未啟動的傳送門也一樣。",
+			"若你以此方式偵測到傳送門，你可以使用你的動作研究它。使用你的施法屬性進行一次 {@dc 15} 屬性檢定。成功時，你得知該傳送門的目的地位面以及它需要哪種傳送門鑰匙，然後法術結束。失敗時，你什麼也得不到，且在你再次施展此法術之前，無法再用此法術研究該傳送門。",
+			"此法術能穿透大多數屏障，但會被 1 呎厚的石頭、1 吋厚的一般金屬、一層薄鉛板，或 3 呎厚的木頭或泥土所阻擋。"
+		],
+		"ENG_name": "Warp Sense"
 	},
 	"Water Breathing|XPHB": {
 		"name": "水中呼吸",
@@ -22418,6 +28047,60 @@
 		"hasFluffImages": true,
 		"ENG_name": "Witch Bolt"
 	},
+	"Wither and Bloom|SCC": {
+		"name": "凋零與綻放",
+		"source": "SCC",
+		"page": 38,
+		"level": 2,
+		"school": "N",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a withered vine twisted into a loop"
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"你對射程內以一點為中心、半徑 10 呎的球形同時召喚死亡與生命。該區域內每個由你選擇的生物必須進行一次體質豁免檢定，失敗時受到 {@damage 2d6} 點黯蝕傷害，成功時傷害減半。該區域內的非魔法植物會枯萎。",
+			"此外，該區域內一個由你選擇的生物可以消耗並擲一顆未消耗的生命骰，恢復等於擲骰結果加上你施法屬性調整值的生命值。"
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "升環效果",
+				"entries": [
+					"當你使用 3 環或更高環階的法術位施展此法術時，每高於 2 環一環，傷害增加 {@scaledamage 2d6|2-9|1d6}，且可消耗並加到治療擲骰上的生命骰數量增加一顆。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"damageInflict": [
+			"necrotic"
+		],
+		"savingThrow": [
+			"constitution"
+		],
+		"miscTags": [
+			"HL"
+		],
+		"ENG_name": "Wither and Bloom"
+	},
 	"Word of Radiance|XPHB": {
 		"name": "光耀禱詞",
 		"source": "XPHB",
@@ -22522,6 +28205,103 @@
 		],
 		"ENG_name": "Word of Recall"
 	},
+	"Wrath of Nature|XGE": {
+		"name": "自然之怒",
+		"source": "XGE",
+		"page": 171,
+		"level": 5,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 120
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"你呼喚自然之靈，喚醒它們對抗你的敵人。選擇射程內一個你能看見的點。這些靈體使以該點為中心、60 呎立方內的樹木、岩石與草地活化，直到法術結束。",
+			{
+				"type": "entries",
+				"name": "草地與灌木叢",
+				"entries": [
+					"立方內任何被草地或灌木叢覆蓋的地面區域，對你的敵人而言都是{@quickref difficult terrain||3}。"
+				],
+				"ENG_name": "Grasses and Undergrowth"
+			},
+			{
+				"type": "entries",
+				"name": "樹木",
+				"entries": [
+					"在你每個回合開始時，位於立方內任何樹木 10 呎內的每個敵人必須成功通過一次敏捷豁免檢定，否則受到揮舞的樹枝造成的 {@damage 4d6} 點揮砍傷害。"
+				],
+				"ENG_name": "Trees"
+			},
+			{
+				"type": "entries",
+				"name": "樹根與藤蔓",
+				"entries": [
+					"在你每個回合結束時，立方內一個位於地面、由你選擇的生物必須成功通過一次力量豁免檢定，否則{@condition restrained}直到法術結束。{@condition restrained}的生物可以使用一個動作進行一次對抗你法術豁免 DC 的力量（{@skill Athletics}）檢定，成功時結束自身的效果。"
+				],
+				"ENG_name": "Roots and Vines"
+			},
+			{
+				"type": "entries",
+				"name": "岩石",
+				"entries": [
+					"在你的回合，作為一個附贈動作，你可以讓立方內一塊鬆動的岩石射向立方內一個你能看見的生物。對目標進行一次遠程法術攻擊。命中時，目標受到 {@damage 3d8} 點非魔法鈍擊傷害，且必須成功通過一次力量豁免檢定，否則倒地{@condition prone}。"
+				],
+				"ENG_name": "Rocks"
+			}
+		],
+		"damageInflict": [
+			"bludgeoning",
+			"slashing"
+		],
+		"conditionInflict": [
+			"prone",
+			"restrained"
+		],
+		"spellAttack": [
+			"R"
+		],
+		"savingThrow": [
+			"dexterity",
+			"strength"
+		],
+		"abilityCheck": [
+			"strength"
+		],
+		"miscTags": [
+			"DFT",
+			"SGT",
+			"UBA"
+		],
+		"areaTags": [
+			"C",
+			"ST"
+		],
+		"ENG_name": "Wrath of Nature"
+	},
 	"Wrathful Smite|XPHB": {
 		"name": "激憤斬",
 		"source": "XPHB",
@@ -22579,6 +28359,49 @@
 			"AAD"
 		],
 		"ENG_name": "Wrathful Smite"
+	},
+	"Wristpocket|EGW": {
+		"name": "腕袋術",
+		"source": "EGW",
+		"page": 190,
+		"level": 2,
+		"school": "C",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "self"
+			}
+		},
+		"components": {
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"meta": {
+			"ritual": true
+		},
+		"entries": [
+			"你輕彈手腕，讓手中的一個物體消失。該物體只能由你一人持有，重量不超過 5 磅，會被傳送到一個異次元空間，並在持續時間內待在那裡。",
+			"直到法術結束，你可以使用你的動作將該物體召喚到你空著的手中，也可以使用你的動作將該物體送回異次元空間。法術結束時仍在口袋位面中的物體，會出現在你所在空間、你的腳邊。"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"ENG_name": "Wristpocket"
 	},
 	"Yolande's Regal Presence|XPHB": {
 		"name": "約蘭德的王者威儀",

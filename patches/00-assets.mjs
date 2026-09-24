@@ -10,6 +10,17 @@ const titleNames = dist => {
 		if (!fs.existsSync(p)) continue;
 		for (const e of JSON.parse(fs.readFileSync(p, "utf8"))[prop] || []) if (e.name_zh && e.name) out[e.name] ??= e.name_zh;
 	}
+	// 法術（分頁標題）
+	const sd = path.join(dist, "data", "spells");
+	if (fs.existsSync(sd)) for (const f of fs.readdirSync(sd).filter(f => /^spells-.*\.json$/.test(f))) for (const e of JSON.parse(fs.readFileSync(path.join(sd, f), "utf8")).spell || []) if (e.name_zh) out[e.name] ??= e.name_zh;
+	return out;
+};
+
+// 子職業中文名：「職業|子職業簡稱」→ 中文（法術頁的子職業清單用）
+const subclassNames = dist => {
+	const out = {};
+	const cd = path.join(dist, "data", "class");
+	for (const f of fs.readdirSync(cd).filter(f => /^class-.*\.json$/.test(f))) for (const sc of JSON.parse(fs.readFileSync(path.join(cd, f), "utf8")).subclass || []) if (sc.name_zh && sc.shortName) out[`${sc.className}|${sc.shortName}`] ??= sc.name_zh;
 	return out;
 };
 
@@ -19,7 +30,8 @@ export default function ({dist, root}) {
 	const js = tpl
 		.replace("/* __ZH_DICT__ */ {}", JSON.stringify(ui.dict))
 		.replace("/* __ZH_RULES__ */ []", JSON.stringify(ui.rules))
-		.replace("/* __ZH_TITLE__ */ {}", JSON.stringify(titleNames(dist)));
+		.replace("/* __ZH_TITLE__ */ {}", JSON.stringify(titleNames(dist)))
+		.replace("/* __ZH_SUBCLASS__ */ {}", JSON.stringify(subclassNames(dist)));
 	fs.writeFileSync(path.join(dist, "js", "zh.js"), js);
 	fs.copyFileSync(path.join(root, "src", "zh.css"), path.join(dist, "css", "zh.css"));
 

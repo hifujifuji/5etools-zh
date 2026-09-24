@@ -29,7 +29,7 @@ execFileSync("rsync", [
 
 // ---- 2. 載入翻譯 -----------------------------------------------------------
 // 全站統一用語（hazmole 與本站譯法不同者）
-const TERM_FIX = [[/睿知/g, "感知"], [/铎/g, "鐸"], [/混沌海imbo\(或譯靈薄獄、迷失域\)/g, "混沌海（Limbo，或譯靈薄獄、迷失域）"], [/暗影界|幽影界/g, "墮影冥界"], [/混沌界/g, "混沌海"], [/"name": "尺寸"/g, '"name": "體型"'], [/\{@5etools feat\|feats\.html\}/g, "{@5etools 專長|feats.html}"]];
+const TERM_FIX = [[/睿知/g, "感知"], [/铎/g, "鐸"], [/混沌海imbo\(或譯靈薄獄、迷失域\)/g, "混沌海（Limbo，或譯靈薄獄、迷失域）"], [/暗影界|幽影界/g, "墮影冥界"], [/混沌界/g, "混沌海"], [/邪術師/g, "契術師"], [/"name": "尺寸"/g, '"name": "體型"'], [/\{@5etools feat\|feats\.html\}/g, "{@5etools 專長|feats.html}"]];
 // 中文譯文裡沒有顯示文字的規則速查標籤：補上中文顯示名
 const QUICKREF_ZH = {"difficult terrain": "困難地形", "cover": "掩護", "vision and light": "視覺與光照", "surprised": "突襲", "adventuring gear": "冒險裝備", "multiclassing": "兼職"};
 TERM_FIX.push([/\{@quickref ([^}|]+)((?:\|[^}|]*){0,2})\}/g, (m, name, rest) => {
@@ -213,6 +213,16 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 		for (const [k, x] of Object.entries(v)) if (k !== "name") walk(x);
 	};
 	for (const {json} of loaded) for (const arr of Object.values(json)) if (Array.isArray(arr)) for (const ent of arr) { if (ent?._copy) walk(ent._copy); if (ent?._versions) walk(ent._versions); }
+}
+
+// ---- 3a⁰ʹ. 法術材料構材（i18n/spell-materials.json，完全比對） ----------------
+{
+	const mat = readI18n(path.join(I18N, "spell-materials.json"));
+	for (const {json} of loaded) for (const sp of json.spell || []) {
+		const m = sp.components?.m;
+		if (typeof m === "string" && mat[m]) sp.components.m = mat[m];
+		else if (m && typeof m.text === "string" && mat[m.text]) m.text = mat[m.text];
+	}
 }
 
 // ---- 3a'. 種族／背景／專長中完全比對的句子（含 _copy、_versions；i18n/exact-strings.json） --------

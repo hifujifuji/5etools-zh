@@ -10,6 +10,8 @@
 	const RULES_SRC = /* __ZH_RULES__ */ [];
 	// 只用於分頁標題的實體名稱（背景、專長…），避免影響頁面其他文字
 	const TITLE = /* __ZH_TITLE__ */ {};
+	// 子職業中文名：「職業|子職業簡稱」→ 中文
+	const SUBCLASS = /* __ZH_SUBCLASS__ */ {};
 
 	const RULES = RULES_SRC.map(([re, repl]) => [new RegExp(`^${re}$`), repl]);
 
@@ -73,6 +75,10 @@
 			return `<span class="zh-nt">${zh}<span class="zh-en">${en}</span></span>`;
 		},
 		/** 純文字（title 屬性、排序…） */
+		/** 子職業中文名（找不到回傳 null） */
+		subclassName (className, shortName) {
+			return SUBCLASS[`${className}|${shortName}`] || null;
+		},
 		nameText (ent, fallback) {
 			const en = fallback ?? (ent?._displayName || ent?.name || "");
 			const zh = ZH.name(ent);

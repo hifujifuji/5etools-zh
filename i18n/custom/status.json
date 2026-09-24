@@ -1,0 +1,126 @@
+{
+	"Bloodied|XPHB": {
+		"name": "浴血",
+		"source": "XPHB",
+		"page": 362,
+		"srd52": true,
+		"basicRules2024": true,
+		"entries": [
+			"當生物剩餘的{@variantrule Hit Points|XPHB|生命值}為其一半或更少時，便處於浴血狀態。"
+		],
+		"ENG_name": "Bloodied"
+	},
+	"Concentration|PHB": {
+		"name": "專注",
+		"source": "PHB",
+		"page": 203,
+		"srd": true,
+		"basicRules": true,
+		"reprintedAs": [
+			"Concentration|XPHB"
+		],
+		"entries": [
+			"有些法術需要你維持{@status concentration}，才能讓其魔法保持生效。若你失去{@status concentration}，這類法術便會結束。",
+			"若法術必須以{@status concentration}維持，其持續時間項目中會註明這一點，法術也會說明你可以專注於它多久。你可以隨時結束{@status concentration}（不需要動作）。",
+			"移動與攻擊之類的一般活動不會干擾{@status concentration}。以下因素可能打斷{@status concentration}：",
+			{
+				"type": "list",
+				"items": [
+					{
+						"type": "entries",
+						"name": "施展另一道需要專注的法術",
+						"entries": [
+							"若你施展另一道需要{@status concentration}的法術，你會失去對原本法術的{@status concentration}。你無法同時專注於兩道法術。"
+						],
+						"ENG_name": "Casting another spell that requires concentration"
+					},
+					{
+						"type": "entries",
+						"name": "受到傷害",
+						"entries": [
+							"每當你在{@status concentration||專注}於法術時受到傷害，你必須進行一次體質豁免檢定以維持你的{@status concentration}。DC 等於 10 或你所受傷害的一半，取兩者中較高者。若你受到來自多個來源的傷害，例如一支箭與龍的吐息，你要為每個傷害來源分別進行豁免檢定。"
+						],
+						"ENG_name": "Taking damage"
+					},
+					{
+						"type": "entries",
+						"name": "陷入無力或死亡",
+						"entries": [
+							"若你陷入{@condition incapacitated}狀態或死亡，你會失去對法術的{@status concentration}。"
+						],
+						"ENG_name": "Being incapacitated or killed"
+					}
+				]
+			},
+			"DM 也可能決定某些環境現象，例如你在風暴肆虐的船上時一道浪打在你身上，需要你成功通過一次 {@dc 10} 體質豁免檢定，才能維持對法術的{@status concentration}。"
+		],
+		"ENG_name": "Concentration"
+	},
+	"Concentration|XPHB": {
+		"name": "專注",
+		"source": "XPHB",
+		"page": 363,
+		"srd52": true,
+		"basicRules2024": true,
+		"entries": [
+			"有些法術與其他效果需要專注才能保持生效，如其說明所述。若效果的創造者失去專注，效果便會結束。若效果有最長持續時間，效果的說明會註明創造者可以專注於它多久：至多 1 分鐘、1 小時或其他持續時間。創造者可以隨時結束專注（不需要動作）。以下因素會打斷專注。",
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "另一個專注效果",
+						"entries": [
+							"當你開始施展一道需要專注的法術，或啟動另一個需要專注的效果時，你會立即失去對原本效果的專注。"
+						],
+						"ENG_name": "Another Concentration Effect"
+					},
+					{
+						"type": "entries",
+						"name": "傷害",
+						"entries": [
+							"若你受到傷害，你必須成功通過一次體質{@variantrule Saving Throw|XPHB|豁免檢定}才能維持專注。DC 等於 10 或所受傷害的一半（無條件捨去），取兩者中較高者，最高 DC 為 30。"
+						],
+						"ENG_name": "Damage"
+					},
+					{
+						"type": "entries",
+						"name": "無力或死亡",
+						"entries": [
+							"若你處於{@condition Incapacitated|XPHB}狀態或死亡，你的專注便會結束。"
+						],
+						"ENG_name": "Incapacitated or Dead"
+					}
+				]
+			}
+		],
+		"ENG_name": "Concentration"
+	},
+	"Surprised|PHB": {
+		"name": "突襲",
+		"source": "PHB",
+		"page": 189,
+		"srd": true,
+		"basicRules": true,
+		"reprintedAs": [
+			"Surprised|XPHB"
+		],
+		"entries": [
+			"一群冒險者悄悄接近一處盜匪營地，從樹林中躍出攻擊他們。一個{@creature gelatinous cube}滑過地城通道，直到吞沒其中一名冒險者，冒險者們才注意到它。在這些情況下，戰鬥的一方對另一方取得突襲。",
+			"由 DM 決定誰可能被突襲。若雙方都沒有嘗試隱匿，他們會自動注意到彼此。否則，DM 會將所有躲藏者的敏捷（{@skill Stealth}）檢定與對方每個生物的被動感知（{@skill Perception}）值進行比較。任何沒有注意到威脅的角色或怪物，在遭遇開始時處於{@status surprised}狀態。",
+			"若你被突襲，你在戰鬥的第一個回合無法移動或採取動作，且在該回合結束前無法採取反應。即使團體中的其他成員沒有被突襲，團體中的某個成員仍可能處於{@status surprised}狀態。"
+		],
+		"ENG_name": "Surprised"
+	},
+	"Surprised|XPHB": {
+		"name": "突襲",
+		"source": "XPHB",
+		"page": 376,
+		"srd52": true,
+		"basicRules2024": true,
+		"entries": [
+			"若生物在戰鬥開始時毫無防備，該生物便處於突襲狀態，使它在{@variantrule Initiative|XPHB|先攻}擲骰上具有{@variantrule Disadvantage|XPHB|劣勢}。"
+		],
+		"ENG_name": "Surprised"
+	}
+}

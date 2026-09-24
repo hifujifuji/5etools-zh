@@ -1,0 +1,173 @@
+{
+	"batch": "sp-phb",
+	"items": [
+		{
+			"prop": "spell",
+			"key": "Telekinesis|PHB",
+			"hint": {
+				"Telekinesis": "心靈遙控",
+				"Creature": "生物",
+				"Object": "物體"
+			},
+			"s": [
+				"Telekinesis",
+				"You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.",
+				"Creature",
+				"You can try to move a Huge or smaller creature. Make an ability check with your spellcasting ability contested by the creature's Strength check. If you win the contest, you move the creature up to 30 feet in any direction, including upward but not beyond the range of this spell. Until the end of your next turn, the creature is {@condition restrained} in your telekinetic grip. A creature lifted upward is suspended in mid-air.",
+				"On subsequent rounds, you can use your action to attempt to maintain your telekinetic grip on the creature by repeating the contest.",
+				"Object",
+				"You can try to move an object that weighs up to 1,000 pounds. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction, but not beyond the range of this spell.",
+				"If the object is worn or carried by a creature, you must make an ability check with your spellcasting ability contested by that creature's Strength check. If you succeed, you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell.",
+				"You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Guards and Wards|PHB",
+			"hint": {
+				"Guards and Wards": "警戒與守衛",
+				"Corridors": "走廊",
+				"Doors": "門",
+				"Stairs": "樓梯",
+				"Other Spell Effect": "其他法術效果"
+			},
+			"s": [
+				"Guards and Wards",
+				"burning incense, a small measure of brimstone and oil, a knotted string, a small amount of umber hulk blood, and a small silver rod worth at least 10 gp",
+				"You create a ward that protects up to 2,500 square feet of floor space (an area 50 feet square, or one hundred 5-foot squares or twenty-five 10-foot squares). The warded area can be up to 20 feet tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the spell.",
+				"When you cast this spell, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.",
+				"Guards and wards creates the following effects within the warded area.",
+				"Corridors",
+				"Fog fills all the warded corridors, making them {@quickref Vision and Light|PHB|2||heavily obscured}. In addition, at each intersection or branching passage offering a choice of direction, there is a {@chance 50|||Disoriented!|No effect} chance that a creature other than you will believe it is going in the opposite direction from the one it chooses.",
+				"Doors",
+				"All doors in the warded area are magically locked, as if sealed by an {@spell arcane lock} spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the {@spell minor illusion} spell) to make them appear as plain sections of wall.",
+				"Stairs",
+				"Webs fill all stairs in the warded area from top to bottom, as the {@spell web} spell. These strands regrow in 10 minutes if they are burned or torn away while guards and wards lasts.",
+				"Other Spell Effect",
+				"You can place your choice of one of the following magical effects within the warded area of the stronghold.",
+				"Place {@spell dancing lights} in four corridors. You can designate a simple program that the lights repeat as long as guards and wards lasts.",
+				"Place {@spell magic mouth} in two locations.",
+				"Place {@spell stinking cloud} in two locations. The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.",
+				"Place a constant {@spell gust of wind} in one corridor or room.",
+				"Place a {@spell suggestion} in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally.",
+				"The whole warded area radiates magic. A {@spell dispel magic} cast on a specific effect, if successful, removes only that effect.",
+				"You can create a permanently guarded and warded structure by casting this spell there every day for one year."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Antimagic Field|PHB",
+			"hint": {
+				"Antimagic Field": "反魔法力場",
+				"Spells": "法術",
+				"Magic Items": "魔法物品",
+				"Dispel Magic": "解除魔法"
+			},
+			"s": [
+				"Antimagic Field",
+				"A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.",
+				"Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.",
+				"Targeted Effects",
+				"Spells and other magical effects, such as {@spell magic missile} and {@spell charm person}, that target a creature or an object in the sphere have no effect on that target.",
+				"Areas of Magic",
+				"The area of another spell or magical effect, such as {@spell fireball}, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough.",
+				"Spells",
+				"Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it.",
+				"Magic Items",
+				"The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword.",
+				"A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits.",
+				"Magical Travel",
+				"Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere.",
+				"Creatures and Objects",
+				"A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere.",
+				"Dispel Magic",
+				"Spells and magical effects such as {@spell dispel magic} have no effect on the sphere. Likewise, the spheres created by different {@spell antimagic field} spells don't nullify each other."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Antipathy/Sympathy|PHB",
+			"hint": {
+				"Antipathy/Sympathy": "反感／同感術",
+				"Antipathy": "反感",
+				"Sympathy": "同感",
+				"Ending the Effect": "結束效果"
+			},
+			"s": [
+				"Antipathy/Sympathy",
+				"This spell attracts or repels creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura's effect.",
+				"Antipathy",
+				"The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become {@condition frightened}. The creature remains {@condition frightened} while it can see the target or is within 60 feet of it. While {@condition frightened} by the target, the creature must use its movement to move to the nearest safe spot from which it can't see the target. If the creature moves more than 60 feet from the target and can't see it, the creature is no longer {@condition frightened}, but the creature becomes {@condition frightened} again if it regains sight of the target or moves within 60 feet of it.",
+				"Sympathy",
+				"The enchantment causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can't willingly move away from the target.",
+				"If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below.",
+				"Ending the Effect",
+				"If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another Wisdom saving throw every 24 hours while the spell persists.",
+				"A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "Imprisonment|PHB",
+			"hint": {
+				"Imprisonment": "禁錮術",
+				"Burial": "埋葬",
+				"Chaining": "鎖鏈",
+				"Hedged Prison": "圍籬牢獄",
+				"Minimus Containment": "微縮拘禁",
+				"Slumber": "沉眠",
+				"Ending the Spell": "結束法術"
+			},
+			"s": [
+				"Imprisonment",
+				"a vellum depiction or a carved statuette in the likeness of the target, and a special component that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target",
+				"You create a magical restraint to hold a creature that you can see within range. The target must succeed on a Wisdom saving throw or be bound by the spell; if it succeeds, it is immune to this spell if you cast it again. While affected by this spell, the creature doesn't need to breathe, eat, or drink, and it doesn't age. Divination spells can't locate or perceive the target.",
+				"When you cast the spell, you choose one of the following forms of imprisonment.",
+				"Burial",
+				"The target is entombed far beneath the earth in a sphere of magical force that is just large enough to contain the target. Nothing can pass through the sphere, nor can any creature teleport or use planar travel to get into or out of it.",
+				"The special component for this version of the spell is a small mithral orb.",
+				"Chaining",
+				"Heavy chains, firmly rooted in the ground, hold the target in place. The target is {@condition restrained} until the spell ends, and it can't move or be moved by any means until then.",
+				"The special component for this version of the spell is a fine chain of precious metal.",
+				"Hedged Prison",
+				"The spell transports the target into a tiny demiplane that is warded against teleportation and planar travel. The demiplane can be a labyrinth, a cage, a tower, or any similar confined structure or area of your choice.",
+				"The special component for this version of the spell is a miniature representation of the prison made from jade.",
+				"Minimus Containment",
+				"The target shrinks to a height of 1 inch and is imprisoned inside a gemstone or similar object. Light can pass through the gemstone normally (allowing the target to see out and other creatures to see in), but nothing else can pass through, even by means of teleportation or planar travel. The gemstone can't be cut or broken while the spell remains in effect.",
+				"The special component for this version of the spell is a large, transparent gemstone, such as a corundum, diamond, or ruby.",
+				"Slumber",
+				"The target falls asleep and can't be awoken.",
+				"The special component for this version of the spell consists of rare soporific herbs.",
+				"Ending the Spell",
+				"During the casting of the spell, in any of its versions, you can specify a condition that will cause the spell to end and release the target. The condition can be as specific or as elaborate as you choose, but the DM must agree that the condition is reasonable and has a likelihood of coming to pass. The conditions can be based on a creature's name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points.",
+				"A {@spell dispel magic} spell can end the spell only if it is cast as a 9th-level spell, targeting either the prison or the special component used to create it.",
+				"You can use a particular special component to create only one prison at a time. If you cast the spell again using the same component, the target of the first casting is immediately freed from its binding."
+			]
+		},
+		{
+			"prop": "spell",
+			"key": "True Polymorph|PHB",
+			"hint": {
+				"True Polymorph": "完全變形術",
+				"Creature into Creature": "生物變生物",
+				"Object into Creature": "物體變生物",
+				"Creature into Object": "生物變物體"
+			},
+			"s": [
+				"True Polymorph",
+				"Choose one creature or nonmagical object that you can see within range. You transform the creature into a different creature, the creature into a nonmagical object, or the object into a creature (the object must be neither worn nor carried by another creature). The transformation lasts for the duration, or until the target drops to 0 hit points or dies. If you concentrate on this spell for the full duration, the transformation lasts until it is dispelled.",
+				"This spell has no effect on a shapechanger or a creature with 0 hit points. An unwilling creature can make a Wisdom saving throw, and if it succeeds, it isn't affected by this spell.",
+				"Creature into Creature",
+				"If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the target's (or its level, if the target doesn't have a challenge rating). The target's game statistics, including mental ability scores, are replaced by the statistics of the new form. It retains its alignment and personality.",
+				"The target assumes the hit points of its new form, and when it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked {@condition unconscious}.",
+				"The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech unless its new form is capable of such actions.",
+				"The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.",
+				"Object into Creature",
+				"You can turn an object into any kind of creature, as long as the creature's size is no larger than the object's size and the creature's challenge rating is {@filter 9 or lower|bestiary|challenge rating=[&0;&9]|miscellaneous=!swarm}. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The DM has the creature's statistics and resolves all of its actions and movement.",
+				"If the spell becomes permanent, you no longer control the creature. It might remain friendly to you, depending on how you have treated it.",
+				"Creature into Object",
+				"If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature's statistics become those of the object, and the creature has no memory of time spent in this form, after the spell ends and it returns to its normal form."
+			]
+		}
+	]
+}
