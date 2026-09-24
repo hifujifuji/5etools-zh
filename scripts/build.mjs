@@ -113,7 +113,8 @@ const walkDataFiles = dir => {
 	const out = [];
 	for (const f of fs.readdirSync(dir, {withFileTypes: true})) {
 		const p = path.join(dir, f.name);
-		if (f.isDirectory()) { if (f.name !== "generated") out.push(...walkDataFiles(p)); } else if (f.name.endsWith(".json")) out.push(p);
+		// generated/ 只處理由書籍內文產生的變體規則（規則詞彙頁會載入）
+		if (f.isDirectory()) { if (f.name !== "generated") out.push(...walkDataFiles(p)); else out.push(path.join(p, "gendata-variantrules.json")); } else if (f.name.endsWith(".json")) out.push(p);
 	}
 	return out;
 };
@@ -196,7 +197,7 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 // ---- 3a'. 種族／背景／專長中完全比對的句子（含 _copy、_versions；i18n/exact-strings.json） --------
 {
 	const ex = readI18n(path.join(I18N, "exact-strings.json"));
-	const PROPS = new Set(["race", "subrace", "background", "feat", "raceFluff", "backgroundFluff"]);
+	const PROPS = new Set(["race", "subrace", "background", "feat", "raceFluff", "backgroundFluff", "variantrule"]);
 	// name 只在「巢狀的條目」（有 entries）裡翻；replace／names 等是 _copy 用來比對的鍵，不能動
 	// _copy 裡的條目名稱會被後續的 _copy 用來比對，一律不翻
 	const walk = (v, depth = 0, inCopy = false) => {

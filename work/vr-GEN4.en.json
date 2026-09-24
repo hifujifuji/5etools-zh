@@ -1,0 +1,22 @@
+{
+	"batch": "vr-GEN4",
+	"items": [
+		{
+			"prop": "variantrule",
+			"key": "Death Saving Throws|XSCREEN",
+			"s": [
+				"Death Saving Throws",
+				"When you start your turn with 0 HP, roll {@dice 1d20}, and you succeed on a 10+.",
+				"Third Success",
+				"You become {@variantrule Stable|XPHB}.",
+				"Third Failure",
+				"You die.",
+				"Rolling a 1",
+				"Counts as two failures.",
+				"Rolling a 20",
+				"You regain 1 Hit Point.",
+				"If you take damage at 0 HP, it counts as a failed {@variantrule Death Saving Throw|XPHB|Death Save} or two failures if the damage is from a {@variantrule Critical Hit|XPHB}."
+			]
+		}
+	]
+}
