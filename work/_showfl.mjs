@@ -4,13 +4,15 @@ import {RC, RULE} from "./_rc.mjs";
 import base from "./_fromdist.mjs";
 import {isNameList} from "./_namelist.mjs";
 const RN = JSON.parse(fs.readFileSync("work/_rn.json"));
+const BM = fs.existsSync("work/_bookmap.json") ? JSON.parse(fs.readFileSync("work/_bookmap.json")) : {};
+const HEAD = JSON.parse(fs.readFileSync("work/_headings.json"));
 const [b, from = 0, to = 1e9] = process.argv.slice(2);
 const en = JSON.parse(fs.readFileSync(`work/${b}.en.json`)).items;
 const bs = base(b);
 const sv = fs.existsSync(`work/${b}.salv.json`) ? JSON.parse(fs.readFileSync(`work/${b}.salv.json`)) : [];
 let n = 0;
 en.forEach((e, i) => {
-	const need = e.s.map((s, j) => [j, s]).filter(([j, s]) => !(bs[i][j] ?? sv[i]?.[j] ?? RC[s] ?? tm[s] ?? RULE(s)) && !isNameList(s) && !RN[s]);
+	const need = e.s.map((s, j) => [j, s]).filter(([j, s]) => !(bs[i][j] ?? sv[i]?.[j] ?? RC[s] ?? tm[s] ?? RULE(s)) && !isNameList(s) && !RN[s] && !BM[s] && !HEAD[s] && !/^[\d,]+ (gp|sp|cp|days?|weeks?|workweeks?)$/.test(s));
 	const len = need.reduce((a, [, s]) => a + s.length, 0); n += len;
 	if (!need.length || i < +from || i > +to) return;
 	console.log(`#${i} ${e.key}（${len}）`);

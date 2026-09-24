@@ -1,0 +1,80 @@
+{
+	"batch": "vr-AI-2",
+	"items": [
+		{
+			"prop": "variantrule",
+			"key": "Downtime and Franchise Activity: Headquarters Modification|AI",
+			"hint": {
+				"Downtime and Franchise Activity: Headquarters Modification": "休整期與加盟店活動：總部改造"
+			},
+			"s": [
+				"Downtime and Franchise Activity: Headquarters Modification",
+				"Major headquarters modifications are made as a regular part of franchise advancement (see \"{@book Franchise Advancement|AI|1|Franchise Advancement}\" earlier in this chapter). But it's sometimes desirable to update a previous modification in ways that don't provide any additional mechanical benefits.",
+				"Characters and franchise staff members can use this activity to modify an existing headquarters feature. This change is subject to DM approval, and is typically done within the same feature category, such as swapping one weapon option for another. In response to pressing need, the DM might allow a franchise to swap options between categories, such as losing a weapon option in favor of an arcane option. The DM can limit how often this activity is used.",
+				"Resources",
+				"Once a modification is approved, this activity requires the involvement of the franchise's majordomo and at least one other character or staff member. This team must dedicate at least three workweeks to this activity, and the franchise must spend 1,000 gp per franchise rank to cover expenses. The DM might also require a side trek to gather necessary materials or hire specialist labor before the activity can be commenced.",
+				"Resolution",
+				"One character or the majordomo acts as the lead for this activity, making an Intelligence ({@skill Arcana} or {@skill History}) check to draft the modifications. A character or the majordomo must then make two ability checks to complete the modifications, using either Strength ({@skill Athletics}) or an Intelligence check using appropriate tools. With DM approval, a different ability and skill appropriate for the modification can be substituted for any of the checks.",
+				"Each check receives a +1 bonus for every two staff participating who are skilled hirelings, and a +1 bonus if any participant has the cartographer, loremonger, or hoardsperson position. The number of successes is compared to the Headquarters Modification table.",
+				"Headquarters Modification",
+				"Successes",
+				"Benefit",
+				"The modification fails, and the franchise incurs cost overruns of 1,000 gp per franchise rank.",
+				"The modification fails, and the franchise incurs cost overruns of 500 gp per franchise rank. However, the cause of the failure is apparent, granting advantage on any future checks to perform the same modification.",
+				"The modification succeeds but incurs a cost overrun of 100 gp per franchise rank. The modification also has a minor drawback, as determined by the DM.",
+				"The modification succeeds with no cost overruns or drawbacks.",
+				"Complications",
+				"A result of 0 successes or 1 success automatically creates a complication. Other results might create a complication at the DM's determination. The DM can select a complication or roll on the Headquarters Modification Complications table.",
+				"Headquarters Modification Complications",
+				"d6",
+				"Complication",
+				"An accident during the modification injures a franchise staff member. That NPC's family demands compensation equal to 100 gp per franchise rank. It might be possible to instead appease the family by performing a service.",
+				"A spy makes a copy of the plans for the modification, learning its function and taking that information back to a rival organization.*",
+				"The modification was based on information originating with a rival. If the modification failed, the plans were intentionally faulty. If it succeeded, the characters detected the fault, but must decide how to respond to the attempted sabotage.*",
+				"A local official insists that permits were needed for the modification, and demands payment or a favor to make the problem go away.*",
+				"The work causes the franchise headquarters to develop a quirk, such as strange noises, unwelcome smells, weird vibrations while mobile, and the like. Resolving the problem might require consulting a sage or an expert in headquarters construction.",
+				"The modification work uncovers a previously unknown problem with the headquarters, such as a structural defect, a dormant monster, bodies interred in the foundations, a concealed cursed item, and so forth.",
+				"*Might involve a rival"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime and Franchise Activity: Marketeering|AI",
+			"hint": {
+				"Downtime and Franchise Activity: Marketeering": "休整期與加盟店活動：行銷"
+			},
+			"s": [
+				"Downtime and Franchise Activity: Marketeering",
+				"Every successful franchise knows that brands require constant management. Developing new markets, shaping catchy slogans, and surveying and engaging customers can all create new sources of revenue. Should you write and sell exciting chapbook serials based on the exploits of Omin, Jim, {@creature Môrgæn|AI}, and {@creature Viari|AI}? Should you sell a complex investment scheme to a city's guild masters? Should you create a branded stage production based on your franchise's exciting adventures, with a line of clothing to match? All those things and more are encompassed by the fine art of marketeering.",
+				"Resources",
+				"The players must first sketch out their marketeering plan and present it to the DM. A character or franchise staff member must spend at least one workweek to engage in marketeering, and must spend 100 gp per franchise rank in expenses. Spending more money increases the chance of the plan's success.",
+				"Resolution",
+				"A marketeering effort requires three ability checks, representing drafting the campaign, launching the campaign, and managing its success. Any of the characters or staff members involved in the marketeering can make a check. The DM decides which abilities and skills are applicable, based on the marketeering plan. For example, a plan involving selling a new line of religious items might require an Intelligence ({@skill Religion}) check to draft the idea and develop the products, a Charisma ({@skill Deception}) check to convince local temples to promote the idea, and a Charisma ({@skill Persuasion}) check to ensure the plan receives continued support.",
+				"Each check gains a +1 bonus for each additional 100 gp per franchise rank spent above the baseline expenses. When additional gold is spent, the character making the checks determines which checks the bonuses apply to. Additional gold can be spent at any point in the process, allowing the franchise to put more effort into subsequent checks if earlier checks are less than successful. If the character making the check has the obviator or secretarian position, they receive an additional +1 bonus to each check. A maximum bonus of +5 can be applied to each check.",
+				"The DC of each check is determined randomly, reflecting the always-unpredictable conditions of the market. The DM rolls {@dice 2d10 + 5} for the DC, generating a separate result for each check. The total number of successes determines the outcome of the activity, as noted on the Marketeering table.",
+				"The Magic Of Marketeering",
+				"Marketeering",
+				"Successes",
+				"Benefit",
+				"The marketeering plan fails. The franchise's monthly costs increase by 20 percent for 1 month.",
+				"The marketeering plan provides no improvements or setbacks.",
+				"The marketeering plan provides moderate benefits. The franchise's monthly costs decrease by 25 percent for 1 month.",
+				"The marketeering plan is a complete success. The franchise's monthly costs decrease by 25 percent for 2 months.",
+				"Complications",
+				"A result of 0 successes or 1 success typically indicates that the marketeering plan incurs a complication. However, even a successful result can trigger a complication at the DM's determination. The DM can choose a complication or roll on the Marketeering Complications table.",
+				"Marketeering Complications",
+				"d8",
+				"Complication",
+				"The marketeering plan attracts the attention of Head Office, where someone absolutely hates it. A NPC is sent to oversee the franchise \"for a while,\" with an outcome determined by the DM.*",
+				"Marketeering materials go missing right before launch, forcing the franchise to recreate them at the last minute. This might incur additional baseline costs or affect the reduction of franchise costs, as the DM determines.*",
+				"Just as the marketeering plan is released to the public, the characters realize that a competing group released a surprisingly similar plan just a tenday previous. Customers now think the franchise is copying its rival.*",
+				"The marketeering's message alienates or offends a crucial demographic. Protests spring up, and the affected group demands reparations.",
+				"A local official or noble begins to look into claims of deceptive advertising tactics or questionable hiring practices related to the marketeering plan.*",
+				"The marketeering plan creates great interest—but unfortunately steers customers toward similar products or services offered by a competitor.*",
+				"The catchphrase or theme song of the marketeering campaign is a surprise hit, and everyone repeats it endlessly! Until they tire of it and begin blaming the franchise for mental trauma.",
+				"The marketeering plan is undermined by rumors of a problem with the product or service, causing it to be dangerous to anyone using it.*",
+				"*Might involve a rival"
+			]
+		}
+	]
+}

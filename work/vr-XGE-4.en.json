@@ -1,0 +1,112 @@
+{
+	"batch": "vr-XGE-4",
+	"items": [
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Selling a Magic Item|XGE",
+			"hint": {
+				"Downtime Activity: Selling a Magic Item": "休整期活動：出售魔法物品"
+			},
+			"s": [
+				"Downtime Activity: Selling a Magic Item",
+				"Selling a magic item is by no means an easy task. Con artists and thieves are always looking out for an easy score, and there's no guarantee that a character will receive a good offer even if a legitimate buyer is found.",
+				"Resources",
+				"A character can find a buyer for one magic item by spending one workweek and 25 gp, which is used to spread word of the desired sale. A character must pick one item at a time to sell.",
+				"Resolution",
+				"A character who wants to sell an item must make a Charisma ({@skill Persuasion}) check to determine what kind of offer comes in. The character can always opt not to sell, instead forfeiting the workweek of effort and trying again later. Use the Magic Item Base Prices and Magic Item Offer tables to determine the sale price.",
+				"Magic Item Base Prices",
+				"Rarity",
+				"Base Price*",
+				"Common",
+				"100 gp",
+				"Uncommon",
+				"400 gp",
+				"Rare",
+				"4,000 gp",
+				"Very rare",
+				"40,000 gp",
+				"Legendary",
+				"200,000 gp",
+				"*Halved for a consumable item like a potion or scroll",
+				"Magic Item Offer",
+				"Check Total",
+				"Offer",
+				"50% of base price",
+				"100% of base price",
+				"150% of base price",
+				"Complications",
+				"The main risk in selling a magic item lies in attracting thieves and anyone else who wants the item but doesn't want to pay for it. Other folk might try to undermine a deal in order to bolster their own business or seek to discredit the character as a legitimate seller. Every workweek spent trying to sell an item brings a {@chance 10} chance of a complication, examples of which are on the Magic Item Sale Complications table.",
+				"Magic Item Sale Complications",
+				"d6",
+				"Complication",
+				"Your enemy secretly arranges to buy the item to use it against you.*",
+				"A thieves' guild, alerted to the sale, attempts to steal your item.*",
+				"A foe circulates rumors that your item is a fake.*",
+				"A sorcerer claims your item as a birthright and demands you hand it over.",
+				"Your item's previous owner, or surviving allies of the owner, vow to retake the item by force.",
+				"The buyer is murdered before the sale is finalized.*",
+				"*Might involve a rival"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Training|XGE",
+			"hint": {
+				"Downtime Activity: Training": "休整期活動：訓練"
+			},
+			"s": [
+				"Downtime Activity: Training",
+				"Given enough free time and the services of an instructor, a character can learn a language or pick up proficiency with a tool.",
+				"Resources",
+				"Receiving training in a language or tool typically takes at least ten workweeks, but this time is reduced by a number of workweeks equal to the character's Intelligence modifier (an Intelligence penalty doesn't increase the time needed). Training costs 25 gp per workweek.",
+				"Complications",
+				"Complications that arise while training typically involve the teacher. Every ten workweeks spent in training brings a {@chance 10} chance of a complication, examples of which are on the Training Complications table.",
+				"Training Complications",
+				"d6",
+				"Complication",
+				"Your instructor disappears, forcing you to spend one workweek finding a new one.*",
+				"Your teacher instructs you in rare, archaic methods, which draw comments from others.",
+				"Your teacher is a spy sent to learn your plans.*",
+				"Your teacher is a wanted criminal.",
+				"Your teacher is a cruel taskmaster.",
+				"Your teacher asks for help dealing with a threat.",
+				"*Might involve a rival"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Work|XGE",
+			"hint": {
+				"Downtime Activity: Work": "休整期活動：工作"
+			},
+			"s": [
+				"Downtime Activity: Work",
+				"When all else fails, an adventurer can turn to an honest trade to earn a living. This activity represents a character's attempt to find temporary work, the quality and wages of which are difficult to predict.",
+				"Resources",
+				"Performing a job requires one workweek of effort.",
+				"Resolution",
+				"To determine how much money a character earns, the character makes an ability check: Strength ({@skill Athletics}), Dexterity ({@skill Acrobatics}), Intelligence using a set of tools, Charisma ({@skill Performance}), or Charisma using a {@item musical instrument|PHB}. Consult the Wages table to see how much money is generated according to the total of the check.",
+				"Wages",
+				"Check Total",
+				"Earnings",
+				"9 or lower",
+				"Poor lifestyle for the week",
+				"Modest lifestyle for the week",
+				"Comfortable lifestyle for the week",
+				"Comfortable lifestyle for the week + 25 gp",
+				"Complications",
+				"Ordinary work is rarely filled with significant complications. Still, the Work Complications table can add some difficulties to a worker's life. Each workweek of activity brings a {@chance 10} chance that a character encounters a complication.",
+				"Work Complications",
+				"d6",
+				"Complication",
+				"A difficult customer or a fight with a coworker reduces the wages you earn by one category.*",
+				"Your employer's financial difficulties result in your not being paid.*",
+				"A coworker with ties to an important family in town takes a dislike to you.*",
+				"Your employer is involved with a dark cult or a criminal enterprise.",
+				"A crime ring targets your business for extortion.*",
+				"You gain a reputation for laziness (unjustified or not, as you choose), giving you disadvantage on checks made for this downtime activity for the next six workweeks you devote to it.*",
+				"*Might involve a rival"
+			]
+		}
+	]
+}

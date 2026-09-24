@@ -1,0 +1,1234 @@
+{
+	"batch": "vr-DMG",
+	"items": [
+		{
+			"prop": "variantrule",
+			"key": "Action Options|DMG",
+			"hint": {
+				"Action Options": "動作選項"
+			},
+			"s": [
+				"Action Options",
+				"This section provides new action options for combat. They can be added as a group or individually to your game.",
+				"Climb onto a Bigger Creature",
+				"If one creature wants to jump onto another creature, it can do so by grappling. A small or Medium creature has little chance of making a successful grapple against a Huge or Gargantuan creature, however, unless magic has granted the grappler supernatural might.",
+				"As an alternative, a suitably large opponent can be treated as terrain for the purpose of jumping onto its back or clinging to a limb. After making any ability checks necessary to get into position and onto the larger creature, the smaller creature uses its action to make a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check contested by the target's Dexterity ({@skill Acrobatics}) check. If it wins the contest, the smaller creature successfully moves into the target creature's space, the smaller creature moves with the target and has advantage on attack rolls against it.",
+				"The smaller creature can move around within the larger creature's space, treating the space as {@quickref difficult terrain||3}. The larger creature's ability to attack the smaller creature depends on the smaller creature's location, and is left to your discretion. The larger creature can dislodge the smaller creature as an action—knocking it off, scraping it against a wall, or grabbing and throwing it—by making a Strength ({@skill Athletics}) check contested by the smaller creature's Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check. The smaller creature chooses which ability to use.",
+				"Disarm",
+				"A creature can use a weapon attack to knock a weapon or another item from a target's grasp. The attacker makes an attack roll contested by the target's Strength ({@skill Athletics}) check or Dexterity ({@skill Acrobatics}) check. If the attacker wins the contest, the attack causes no damage or other ill effect, but the defender drops the item.",
+				"The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands. The target has advantage on its ability check if it is larger than the attacking creature, or disadvantage if it is smaller.",
+				"Mark",
+				"This option makes it easier for melee combatants to harry each other with opportunity attacks.",
+				"When a creature makes a melee attack, it can also mark its target. Until the end of the attacker's next turn, any opportunity attack it makes against the marked target has advantage. The opportunity attack doesn't expend the attacker's reaction, but the attacker can't make the attack if anything, such as the {@condition incapacitated} condition or the {@spell shocking grasp} spell, is preventing it from taking reactions. The attacker is limited to one opportunity attack per turn.",
+				"Overrun",
+				"When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature. As an action or a bonus action, the mover makes a Strength ({@skill Athletics}) check contested by the hostile creature's Strength ({@skill Athletics}) check. The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller. If the mover wins the contest, it can move through the hostile creature's space once this turn.",
+				"Shove Aside",
+				"With this option, a creature uses the special {@action shove} attack from the {@book Player's Handbook|PHB} to force a target to the side, rather than away. The attacker has disadvantage on its Strength ({@skill Athletics}) check when it does so. If that check is successful, the attacker moves the target 5 feet to a different space within its reach.",
+				"Tumble",
+				"A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent. As an action or a bonus action, the tumbler makes a Dexterity ({@skill Acrobatics}) check contested by the hostile creature's Dexterity ({@skill Acrobatics}) check. If the tumbler wins the contest, it can move through the hostile creature's space once this turn."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Alien Technology|DMG",
+			"hint": {
+				"Alien Technology": "異星科技"
+			},
+			"s": [
+				"Alien Technology",
+				"When adventurers find a piece of technology that isn't from their world or time period, the players might understand what the object is, but the characters rarely will. To simulate a character's ignorance about the technology, have the character make a series of Intelligence checks to figure it out.",
+				"To determine how the technology works, a character must succeed on a number of Intelligence checks based on the complexity of the item: two successes for a simple item (such as a cigarette lighter, calculator, or revolver) and four successes for a complex item (such as a computer, chainsaw, or hovercraft). Then consult the Figuring Out Alien Technology table. Consider making the item break if a character fails four or more times before taking a long rest.",
+				"A character who has seen an item used or has operated a similar item has advantage on Intelligence checks made to figure out its use.",
+				"Figuring Out Alien Technology",
+				"Int. Check Total",
+				"Result",
+				"9 or lower",
+				"One failure; one charge or use is wasted, if applicable; character has disadvantage on next check",
+				"One failure",
+				"One success",
+				"20 or higher",
+				"One success; character has advantage on next check"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Alternatives to Epic Boons|DMG",
+			"hint": {
+				"Alternatives to Epic Boons": "史詩恩賜的替代方案",
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Alternatives to Epic Boons",
+				"You might decide to grant one of the following rewards to a 20th-level character, instead of awarding an epic boon. These two options can be awarded to a character more than once.",
+				"Ability Score Improvement",
+				"The character can increase one ability score by 2 or increase two ability scores by 1 each. The ability score can now be increased above 20, up to a maximum of 30.",
+				"New Feat",
+				"The character gains a new feat chosen by the player, but subject to your approval."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Automatic Success|DMG",
+			"hint": {
+				"Automatic Success": "自動成功"
+			},
+			"s": [
+				"Automatic Success",
+				"Sometimes the randomness of a {@dice d20} roll leads to ludicrous results. Let's say a door requires a {@dc 15} Strength check to batter down. A fighter with Strength 20 might helplessly flail against the door due to bad die rolls. Meanwhile, the rogue with a 10 Strength rolls a natural 20 on her first check and knocks the door from its hinges.",
+				"If such results bother you, allow automatic success on checks for characters with high ability scores. Under this optional rule, a character automatically succeeds on any ability check with a DC less than or equal to the relevant ability score minus 5. So in the above example, the fighter would automatically kick in the door. This rule doesn't apply to contests, saving throws, or attack rolls.",
+				"The downside of this approach is its predictability. Once a character's ability score reaches 20, checks of {@dc 15} and lower using that ability become automatic successes. Smart players will then always try to match the character with the highest ability score against any given check. If you want some risk of failure, you need to set higher DCs. Doing this, though, can merely aggravate the problem you're trying to solve: higher DCs require higher die rolls, and thus rely even more on luck.",
+				"You can modify this rule to account for proficiencies using an additional option. If a character can apply a proficiency bonus to the check, he or she automatically succeeds if its DC is less than or equal to the relevant ability score. If you don't mind predictability, and you can resist the temptation to increase DCs, you might find that this variant speeds up play and focuses attention on truly difficult, tense situations."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Cleaving Through Creatures|DMG",
+			"hint": {
+				"Cleaving Through Creatures": "劈穿生物"
+			},
+			"s": [
+				"Cleaving Through Creatures",
+				"If your player characters regularly fight hordes of lower-level monsters, consider using this optional rule to help speed up such fights.",
+				"When a melee attack reduces an undamaged creature to 0 hit points, any excess damage from that attack might carry over to another creature nearby. The attacker targets another creature within reach and, if the original attack roll can hit it, applies any remaining damage to it. If that creature was undamaged and is likewise reduced to 0 hit points, repeat this process, carrying over the remaining damage until there are no valid targets, or until the damage carried over fails to reduce an undamaged creature to 0 hit points."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Diagonals|DMG",
+			"hint": {
+				"Diagonals": "斜向移動"
+			},
+			"s": [
+				"Diagonals",
+				"The {@book Player's Handbook|PHB} presents a simple method for counting movement and measuring range on a grid: count every square as 5 feet, even if you're moving diagonally. Though this is fast in play, it breaks the laws of geometry and is inaccurate over long distances. This optional rule provides more realism, but it requires more effort during combat.",
+				"When measuring range or moving diagonally on a grid, the first diagonal square counts as 5 feet, but the second diagonal square counts as 10 feet. This pattern of 5 feet and then 10 feet continues whenever you're counting diagonally, even if you move horizontally or vertically between different bits of diagonal movement.",
+				"For example, a character might move one square diagonally (5 feet), then three squares straight (15 feet), and then another square diagonally (10 feet) for a total movement of 30 feet."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Building a Stronghold|DMG",
+			"hint": {
+				"Downtime Activity: Building a Stronghold": "休整期活動：建造要塞"
+			},
+			"s": [
+				"Downtime Activity: Building a Stronghold",
+				"A character can spend time between adventures building a stronghold. Before work can begin, the character must acquire a plot of land. If the estate lies within a kingdom or similar domain, the character will need a royal charter (a legal document granting permission to oversee the estate in the name of the crown), a land grant (a legal document bequeathing custody of the land to the character for as long as he or she remains loyal to the crown), or a deed (a legal document that serves as proof of ownership). Land can also be acquired by inheritance or other means.",
+				"Royal charters and land grants are usually given by the crown as a reward for faithful service, although they can also be bought. Deeds can be bought or inherited. A small estate might sell for as little as 100 gp or as much as 1,000 gp. A large estate might cost 5,000 gp or more, if it can be bought at all.",
+				"Once the estate is secured, a character needs access to building materials and laborers. The Building a Stronghold table shows the cost of building the stronghold (including materials and labor) and the amount of time it takes, provided that the character is using downtime to oversee construction. Work can continue while the character is away, but each day the character is away adds 3 days to the construction time.",
+				"Building a Stronghold",
+				"Stronghold",
+				"Construction Cost",
+				"Construction Time",
+				"Abbey",
+				"50,000 gp",
+				"400 days",
+				"Guildhall, town or city",
+				"5,000 gp",
+				"60 days",
+				"Keep or small castle",
+				"50,000 gp",
+				"400 days",
+				"Noble estate with manor",
+				"25,000 gp",
+				"150 days",
+				"Outpost or fort",
+				"15,000 gp",
+				"100 days",
+				"Palace or large castle",
+				"500,000 gp",
+				"1,200 days",
+				"Temple",
+				"50,000 gp",
+				"400 days",
+				"Tower, fortified",
+				"15,000 gp",
+				"100 days",
+				"Trading post",
+				"5,000 gp",
+				"60 days"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Carousing|DMG",
+			"hint": {
+				"Downtime Activity: Carousing": "休整期活動：狂歡作樂"
+			},
+			"s": [
+				"Downtime Activity: Carousing",
+				"Characters can spend their downtime engaged in a variety of hedonistic activities such as attending parties, binge drinking, gambling, or anything else that helps them cope with the perils they face on their adventures.",
+				"A carousing character spends money as though maintaining a wealthy lifestyle (see chapter 5, \"{@book Equipment|PHB|5|Lifestyle Expenses},\" of the {@book Player's Handbook|PHB}). At the end of the period spent carousing, the player rolls percentile dice and adds the character's level, then compares the total to the Carousing table to determine what happens to the character, or you choose.",
+				"Carousing",
+				"d100 + Level",
+				"Result",
+				"You are jailed for {@dice 1d4} days at the end of the downtime period on charges of disorderly conduct and disturbing the peace. You can pay a fine of 10 gp to avoid jail time, or you can try to resist arrest.",
+				"You regain consciousness in a strange place with no memory of how you got there, and you have been robbed of {@dice 3d6 × 5} gp.",
+				"You make an enemy. This person, business, or organization is now hostile to you. The DM determines the offended party. You decide how you offended them.",
+				"You are caught up in a whirlwind romance. Roll a {@dice d20}. On a 1–5, the romance ends badly. On a 6–10, the romance ends amicably. On an 11–20, the romance is ongoing. You determine the identity of the love interest, subject to your DM's approval. If the romance ends badly, you might gain a new flaw. If it ends well or is ongoing, your new love interest might represent a new bond.",
+				"You earn modest winnings from gambling and recuperate your lifestyle expenses for the time spent carousing.",
+				"You earn modest winnings from gambling. You recuperate your lifestyle expenses for the time spent carousing and gain {@dice 1d20 × 4} gp.",
+				"You make a small fortune gambling. You recuperate your lifestyle expenses for the time spent carousing and gain {@dice 4d6 × 10} gp. Your carousing becomes the stuff of local legend."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Crafting a Magic Item|DMG",
+			"hint": {
+				"Downtime Activity: Crafting a Magic Item": "休整期活動：製作魔法物品"
+			},
+			"s": [
+				"Downtime Activity: Crafting a Magic Item",
+				"Magic items are the DM's purview, so you decide how they fall into the party's possession. As an option, you can allow player characters to craft magic items.",
+				"The creation of a magic item is a lengthy, expensive task. To start, a character must have a formula that describes the construction of the item. The character must also be a spellcaster with spell slots and must be able to cast any spells that the item can produce. Moreover, the character must meet a level minimum determined by the item's rarity, as shown in the Crafting Magic Items table. For example, a 3rd-level character could create a {@item wand of magic missiles} (an uncommon item), as long as the character has spell slots and can cast {@spell magic missile}. That same character could make a {@item +1 weapon} (another uncommon item), no particular spell required.",
+				"You can decide that certain items also require special materials or locations to be created. For example, a character might need {@item alchemist's supplies|phb} to brew a particular potion, or the formula for a {@item flame tongue} might require that the weapon be forged with lava.",
+				"Crafting Magic Items",
+				"Item Rarity",
+				"Creation Cost",
+				"Minimum Level",
+				"Common",
+				"100 gp",
+				"3rd",
+				"Uncommon",
+				"500 gp",
+				"3rd",
+				"Rare",
+				"5,000 gp",
+				"6th",
+				"Very rare",
+				"50,000 gp",
+				"11th",
+				"Legendary",
+				"500,000 gp",
+				"17th",
+				"An item has a creation cost specified in the Crafting Magic Items table. A character engaged in the crafting of a magic item makes progress in 25 gp increments, spending that amount for each day of work until the total cost is paid. The character is assumed to work for 8 hours each of those days. Thus, creating an uncommon magic item takes 20 days and 500 gp. You are free to adjust the costs to better suit your campaign.",
+				"If a spell will be produced by the item being created, the creator must expend one spell slot of the spell's level for each day of the creation process. The spell's material components must also be at hand throughout the process. If the spell normally consumes those components, they are consumed by the creation process. If the item will be able to produce the spell only once, as with a {@item spell scroll}, the components are consumed only once by the process. Otherwise, the components are consumed once each day of the item's creation.",
+				"Multiple characters can combine their efforts to create a magic item if each of them meets the level prerequisite. Each character can contribute spells, spell slots and components, as long as everyone participates during the entire crafting process. Each character can contribute 25 gp worth of effort for each day spent helping to craft the item.",
+				"Normally, a character who undertakes this activity creates a magic item described in chapter 7, \"Treasure.\" At your discretion, you can allow players to design their own magic items, using the guidelines in chapter 9, \"Dungeon Master's Workshop.\"",
+				"While crafting a magic item, a character can maintain modest lifestyle without having to pay the 1 gp per day, or a comfortable lifestyle at half the normal cost (see chapter 5, \"{@book Equipment|PHB|5|Lifestyle Expenses},\" of the {@book Player's Handbook|PHB}).",
+				"Magic Item Formulas",
+				"A magic item formula explains how to make a particular magic item. Such a formula can be an excellent reward if you allow player characters to craft magic items.",
+				"You can award a formula in place of a magic item. Usually written in a book or on a scroll, a formula is one step rarer than the item it allows a character to create. For example, the formula for a common magic item is uncommon. No formulas exist for legendary items.",
+				"If the creation of magic items is commonplace in your campaign, a formula can have a rarity that matches the rarity of the item it allows a character to create. Formulas for common and uncommon items might even be for sale, each with a cost double that of its magic item."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Gaining Renown|DMG",
+			"hint": {
+				"Downtime Activity: Gaining Renown": "休整期活動：贏得聲望"
+			},
+			"s": [
+				"Downtime Activity: Gaining Renown",
+				"A character can spend downtime improving his or her renown within a particular organization (see \"Renown\" in chapter 1). Between adventures, a character undertakes minor tasks for the organization and socializes with its members. After pursuing these activities for a combined number of days equal to his or her current renown multiplied by 10, the character's renown increases by 1."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Performing Sacred Rites|DMG",
+			"hint": {
+				"Downtime Activity: Performing Sacred Rites": "休整期活動：執行聖禮"
+			},
+			"s": [
+				"Downtime Activity: Performing Sacred Rites",
+				"A pious character can spend time between adventures performing sacred rites in a temple affiliated with a god he or she reveres. Between rites, the character spends time in meditation and prayer.",
+				"A character who is a priest in the temple can lead these rites, which might include weddings, funerals, and ordinations. A layperson can offer sacrifices in a temple or assist a priest with a rite.",
+				"A character who spends at least 10 days performing sacred rites gains {@book inspiration|PHB|4|Inspiration} (described in chapter 4 of the {@book Player's Handbook|PHB}) at the start of each day for the next {@dice 2d6} days."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Running a Business|DMG",
+			"hint": {
+				"Downtime Activity: Running a Business": "休整期活動：經營生意"
+			},
+			"s": [
+				"Downtime Activity: Running a Business",
+				"Adventurers can end up owning businesses that have nothing to do with delving into dungeons or saving the world. A character might inherit a smithy, or the party might be given a parcel of farmland or a tavern as a reward. If they hold on to the business, they might feel obliged to spend time between adventures maintaining the venture and making sure it runs smoothly.",
+				"A character rolls percentile dice and adds the number of days spent on this downtime activity (maximum 30), then compares the total to the Running a Business table to determine what happens.",
+				"If the character is required to pay a cost as a result of rolling on this table but fails to do so, the business begins to fail. For each unpaid debt incurred in this manner, the character takes a -10 penalty to subsequent rolls made on this table.",
+				"Running a Business",
+				"d100 + Days",
+				"Result",
+				"You must pay one and a half times the business's maintenance cost for each of the days.",
+				"You must pay the business's full maintenance cost for each of the days.",
+				"You must pay half the business's maintenance cost for each of the days. Profits cover the other half.",
+				"The business covers its own maintenance cost for each of the days.",
+				"The business covers its own maintenance cost for each of the days. It earns a profit of {@dice 1d6 × 5} gp.",
+				"The business covers its own maintenance cost for each of the days. It earns a profit of {@dice 2d8 × 5} gp.",
+				"The business covers its own maintenance cost for each of the days. It earns a profit of {@dice 3d10 × 5} gp."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Selling Magic Items|DMG",
+			"hint": {
+				"Downtime Activity: Selling Magic Items": "休整期活動：出售魔法物品"
+			},
+			"s": [
+				"Downtime Activity: Selling Magic Items",
+				"Few people can afford to buy a magic item, and fewer still know how to find one. Adventurers are exceptional in this regard due to the nature of their profession.",
+				"A character who comes into possession of a common, uncommon, rare, or very rare magic item that he or she wants to sell can spend downtime searching for a buyer. This downtime activity can be performed only in a city or another location where one can find wealthy individuals interested in buying magic items. Legendary magic items and priceless artifacts can't be sold during downtime. Finding someone to buy such an item can be the substance of an adventure or quest.",
+				"For each salable item, the character makes a {@dc 20} Intelligence ({@skill Investigation}) check to find buyers. Another character can use his or her downtime to assist with the search, granting advantage on the checks. On a failed check, no buyer for the item is found after a search that lasts 10 days. On a successful check, a buyer for the item is found after a number of days based on the item's rarity, as shown in the Salable Magic Item table.",
+				"A character can attempt to find buyers for multiple magic items at once. Although this requires multiple Intelligence ({@skill Investigation}) checks, the searches are occurring simultaneously, and the results of multiple failures or successes aren't added together. For example, if the character finds a buyer for a common magic item in 2 days and a buyer for an uncommon item in 5 days, but fails to find a buyer for a rare item up for grabs, the entire search takes 10 days.",
+				"For each item a character wishes to sell, the player rolls percentile dice and consults the Selling a Magic Item table, applying a modifier based on the item's rarity, as shown in the Salable Magic Items table. The character also makes a Charisma ({@skill Persuasion}) check and adds that check's total to the roll. The subsequent total determines what a buyer offers to pay for the item.",
+				"You determine a buyer's identity. Buyers sometimes procure rare and very rare items through proxies to ensure that their identities remain unknown. If the buyer is shady, it's up to you whether the sale creates legal complications for the party later.",
+				"Salable Magic Items",
+				"Rarity",
+				"Base Price",
+				"Days to Find Buyer",
+				"d100 Roll Modifier*",
+				"Common",
+				"100 gp",
+				"Uncommon",
+				"500 gp",
+				"Rare",
+				"5,000 gp",
+				"Very rare",
+				"50,000 gp",
+				"*Apply this modifier to rolls on the Selling a Magic Item table.",
+				"Selling a Magic Item",
+				"d100 + Mod",
+				"You Find...",
+				"20 or lower",
+				"A buyer offering a tenth of the base price",
+				"A buyer offering a quarter of the base price, and a shady buyer offering half the base price",
+				"A buyer offering half the base price, and a shady buyer offering the full base price",
+				"A buyer offering the full base price",
+				"91 or higher",
+				"A shady buyer offering one and a half times the base price, no questions asked"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Sowing Rumors|DMG",
+			"hint": {
+				"Downtime Activity: Sowing Rumors": "休整期活動：散播謠言"
+			},
+			"s": [
+				"Downtime Activity: Sowing Rumors",
+				"Swaying public opinion can be an effective way to bring down a villain or elevate a friend. Spreading rumors is an efficient, if underhanded, way to accomplish that goal. Well-placed rumors can increase the subject's standing in a community or embroil someone in scandal. A rumor needs to be simple, concrete, and hard to disprove. An effective rumor also has to be believable, playing off what people want to believe about the person in question.",
+				"Sowing a rumor about an individual or organization requires a number of days depending on the size of the community, as shown in the Sowing Rumors table. In a town or city, the time spent must be continuous. If the character spreads a rumor for ten days, disappears on an adventure for another few days and then returns, the rumor fades away without the benefit of constant repetition.",
+				"Sowing Rumors",
+				"Settlement Size",
+				"Time Required",
+				"Village",
+				"{@dice 2d6} days",
+				"Town",
+				"{@dice 4d6} days",
+				"City",
+				"{@dice 6d6} days",
+				"The character must spend 1 gp per day to cover the cost of drinks, social appearances, and the like. At the end of the time spent sowing the rumor, the character must make a {@dc 15} Charisma ({@skill Deception} or {@skill Persuasion}) check. If the check succeeds, the community's prevailing attitude toward the subject shifts one step toward friendly or hostile, as the character wishes. If the check fails, the rumor gains no traction, and further attempts to propagate it fail.",
+				"Shifting a community's general attitude toward a person or organization doesn't affect everyone in the community. Individuals might hold to their own opinions, particularly if they have personal experience in dealing with the subject of the rumors."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Training to Gain Levels|DMG",
+			"hint": {
+				"Downtime Activity: Training to Gain Levels": "休整期活動：訓練以提升等級"
+			},
+			"s": [
+				"Downtime Activity: Training to Gain Levels",
+				"As a variant rule, you can require characters to spend downtime training or studying before they gain the benefits of a new level. If you choose this option, once a character has earned enough experience points to attain a new level, he or she must train for a number of days before gaining any class features associated with the new level.",
+				"The training time required depends on the level to be gained, as shown on the Training to Gain Levels table. The training cost is for the total training time.",
+				"Training to Gain Levels",
+				"Level Attained",
+				"Training Time",
+				"Training Cost",
+				"2nd-4th",
+				"10 days",
+				"20 gp",
+				"5th-10th",
+				"20 days",
+				"40 gp",
+				"11th-16th",
+				"30 days",
+				"60 gp",
+				"17th-20th",
+				"40 days",
+				"80 gp"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Explosives|DMG",
+			"hint": {
+				"Explosives": "爆裂物",
+				"Bomb": "炸彈"
+			},
+			"s": [
+				"Explosives",
+				"A campaign might include explosives from the Renaissance or the modern world (the latter are priceless), as presented in the Explosives table.",
+				"Bomb",
+				"As an action, a character can light this bomb and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must succeed on a {@dc 12} Dexterity saving throw or take {@damage 3d6} fire damage.",
+				"Gunpowder",
+				"Gunpowder is chiefly used to propel a bullet out of the barrel of a pistol or rifle, or it is formed into a bomb. Gunpowder is sold in small wooden kegs and in water-resistant powder horns.",
+				"Setting fire to a container full of gunpowder can cause it to explode, dealing fire damage to creatures within 10 feet of it ({@dice 3d6} for a powder horn, {@dice 7d6} for a keg). A successful {@dc 12} Dexterity saving throw halves the damage. Setting fire to an ounce of gunpowder causes it to flare for 1 round, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
+				"Dynamite",
+				"As an action, a creature can light a stick of dynamite and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must make a {@dc 12} Dexterity saving throw, taking {@damage 3d6} bludgeoning damage on a failed save, or half as much damage on a successful one.",
+				"A character can bind sticks of dynamite together so they explode at the same time. Each additional stick increases the damage by {@damage 1d6} (to a maximum of {@damage 10d6}) and the burst radius by 5 feet (to a maximum of 20 feet).",
+				"Dynamite can be rigged with a longer fuse to explode after a set amount of time, usually 1 to 6 rounds. Roll initiative for the dynamite. After the set number of rounds goes by, the dynamite explodes on that initiative.",
+				"Grenades",
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"Each creature within 20 feet of an exploding fragmentation grenade must make a {@dc 15} Dexterity saving throw, taking {@damage 5d6} piercing damage on a failed save, or half as much damage on a successful one.",
+				"One round after a smoke grenade lands, it emits a cloud of smoke that creates a heavily obscured area in a 20-foot radius. A moderate wind (at least 10 miles per hour) disperses the smoke in 4 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Facing|DMG",
+			"hint": {
+				"Facing": "朝向"
+			},
+			"s": [
+				"Facing",
+				"If you want the precision of knowing which way a creature is facing, consider using this optional rule. Whenever a creature ends its move, it can change its facing. Each creature has a front arc (the direction it faces), left and right side arcs, and a rear arc. A creature can also change its facing as a reaction when any other creature moves.",
+				"A creature can normally target only creatures in its front or side arcs. It can't see into its rear arc. This means an attacker in the creature's rear arc makes attack rolls against it with advantage.",
+				"Shields apply their bonus to AC only against attacks from the front arc or the same side arc as the shield. For example, a fighter with a shield on the left arm can use it only against attacks from the front and left arcs.",
+				"Feel free to determine that not all creatures have every type of arc. For example, an amorphous ochre jelly could treat all of its arcs as front ones, while a hydra might have three front arcs and one rear one. On squares, you pick one side of a creature's space as the direction it is facing. Draw a diagonal line outward from each corner of this side to determine the squares in its front arc. The opposite side of the space determines its rear arc in the same way. The remaining spaces to either side of the creature form its side arcs.",
+				"On hexes, determining the front, rear, and side arcs requires more judgment. Pick one side of the creature's space and create a wedge shape expanding out from there for the front arc, and another on the opposite side of the creature for the rear arc. The remaining spaces to either side of the creature are its side arcs.",
+				"A square or hex might be in more than one arc, depending on how you draw the lines from a creature's space. If more than half of a square or hex lies in one arc, it is in that arc. If it is split exactly down the middle, use this rule: if half of it lies in the front arc, it's in that arc. If half of it is in a side arc and the rear arc, it's in the side arc."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Fear and Horror|DMG",
+			"hint": {
+				"Fear and Horror": "恐懼與驚駭",
+				"Fear": "恐懼術"
+			},
+			"s": [
+				"Fear and Horror",
+				"The rules for fear and horror can help you sustain an atmosphere of dread in a dark fantasy campaign.",
+				"Fear",
+				"When adventurers confront threats they have no hope of overcoming, you can call for them to make a Wisdom saving throw. Set the DC according to the circumstances. A character who fails the save becomes {@condition frightened} for 1 minute. The character can repeat the saving throw at the end of each of his or her turns, ending the effect on the character on a successful save.",
+				"Horror",
+				"Horror involves more than simple fright. It entails revulsion and anguish. Often it arises when adventurer see something completely contrary to the common understanding of what can and should occur in the world, or upon the realization of a dreadful truth.",
+				"In such a situation, you can call on characters to make a Charisma saving throw to resist the horror. Set the DC based on the magnitude of the horrific circumstances. On a failed save, a character gains a {@table short-Term Madness||short-term} or {@table Long-Term Madness||long-term} form of madness that you choose or determine randomly, as detailed in chapter 8, \"Running the Game.\""
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Firearms|DMG",
+			"hint": {
+				"Firearms": "火器",
+				"Proficiency": "熟練",
+				"Ammunition": "彈藥"
+			},
+			"s": [
+				"Firearms",
+				"If you want to model the swashbuckling style of The Three Musketeers and similar tales, you can introduce gunpowder weapon to your campaign that are associated with the Renaissance. Similarly, in a campaign where a spaceship has crashed or elements of modern-day Earth are present, futuristic or modern firearms might appear. The Firearms table provides examples of firearms from all three of those periods. The modern and futuristic items are priceless.",
+				"Proficiency",
+				"It's up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn't have such proficiency. During their downtime, characters can use the {@variantrule Downtime Activity: Training|PHB|training} rules in the {@book Player's Handbook|PHB} to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use.",
+				"Properties",
+				"Firearms use special ammunition, and some of them have the burst fire or reload property.",
+				"Ammunition",
+				"The ammunition of a firearm is destroyed upon use. Renaissance and modern firearms use bullets. Futuristic firearms are powered by a special type of ammunition called energy cells. An energy cell contains enough power for all the shots its firearm can make.",
+				"Burst Fire",
+				"A weapon that has the burst fire property can make a normal single-target attack, or it can spray a 10-foot-cube area within normal range with shots. Each creature in the area must succeed on a {@dc 15} Dexterity saving throw or take the weapon's normal damage. This action uses ten pieces of ammunition.",
+				"Reload",
+				"A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice)."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Flanking|DMG",
+			"hint": {
+				"Flanking": "夾擊"
+			},
+			"s": [
+				"Flanking",
+				"If you regularly use miniatures, flanking gives combatants a simple way to gain advantage on attack rolls against a common enemy.",
+				"A creature can't flank an enemy that it can't see. A creature also can't flank while it is {@condition incapacitated}. A Large or larger creature is flanking as long as at least one square or hex of its space qualifies for flanking.",
+				"Flanking on Squares",
+				"When a creature and at least one of its allies are adjacent to an enemy and on opposite sides or corners of the enemy's space, they flank that enemy, and each of them has advantage on melee attack rolls against that enemy.",
+				"When in doubt about whether two creatures flank an enemy on a grid, trace an imaginary line between the centers of the creatures' spaces. If the line passes through opposite sides or corners of the enemy's space, the enemy is flanked.",
+				"Flanking on Hexes",
+				"When a creature and at least one of its allies are adjacent to an enemy and on opposite sides of the enemy's space, they flank that enemy, and each of them has advantage on attack rolls against that enemy. On hexes, count around the enemy from one creature to its ally. Against a Medium or smaller creature, the allies flank if there are 2 hexes between them. Against a Large creature, the allies flank if there are 4 hexes between them. Against a Huge creature, they must have 5 hexes between them. Against a Gargantuan creature, they must have at least 6 hexes between them."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Healing|DMG",
+			"hint": {
+				"Healing": "治療"
+			},
+			"s": [
+				"Healing",
+				"These optional rules make it easier or harder for adventurers to recover from injury, either increasing or reducing the amount of time your players can spend adventuring before rest is required.",
+				"Healer's Kit Dependency",
+				"A character can't spend any Hit Dice after finishing a short rest until someone expends one use of a healer's kit to bandage and treat the character's wounds.",
+				"Healing Surges",
+				"This optional rule allows characters to heal up in the thick of combat and works well for parties that feature few or no characters with healing magic, or for campaigns in which magical healing is rare.",
+				"As an action, a character can use a healing surge and spend up to half his or her Hit Dice. For each Hit Die spent in this way, the player rolls the die and adds the character's Constitution modifier. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll.",
+				"A character who uses a healing surge can't do so again until he or she finishes a short or long rest. Under this optional rule, a character regains all spent Hit Dice at the end of a long rest. With a short rest, a character regains Hit Dice equal to his or her level divided by four (minimum of one dice).",
+				"For a more super-heroic feel, you can let a character use a healing surge as a bonus action, rather than as an action.",
+				"Slow Natural Healing",
+				"Characters don't regain hit points at the end of a long rest. Instead, a character can spend Hit Dice to heal at the end of a long rest, just as with a short rest.",
+				"This optional rule prolongs the amount of time that characters need to recover from their wounds without the benefits of magical healing and works well for grittier, more realistic campaigns."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Hero Points|DMG",
+			"hint": {
+				"Hero Points": "英雄點"
+			},
+			"s": [
+				"Hero Points",
+				"Hero points work well in epic fantasy and mythic campaigns in which the characters are meant to be more like superheroes than the average adventurer is.",
+				"With this option, a character starts with 5 hero points at 1st level. Each time the character gains a level, he or she loses any unspent hero points and gains a new total equal to 5 + half the character's level.",
+				"A player can spend a hero point whenever he or she makes an attack roll, an ability check, or a saving throw The player can spend the hero point after the roll is made but before any of its results are applied. Spending the hero point allows the player to roll a {@dice d6} and add it to the {@dice d20}, possibly turning a failure into a success. A player can spend only 1 hero point per roll.",
+				"In addition, whenever a character fails a death saving throw, the player can spend one hero point to turn the failure into a success."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Hitting Cover|DMG",
+			"hint": {
+				"Hitting Cover": "擊中掩護"
+			},
+			"s": [
+				"Hitting Cover",
+				"When a ranged attack misses a target that has cover, you can use this optional rule to determine whether the cover was struck by the attack.",
+				"First, determine whether the attack roll would have hit the protected target without the cover. If the attack roll falls within a range low enough to miss the target but high enough to strike the target if there had been no cover, the object used for cover is struck. If a creature is providing cover for the missed creature and the attack roll exceeds the AC of the covering creature, the covering creature is hit."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Initiative Variants|DMG",
+			"hint": {
+				"Initiative Variants": "先攻變體"
+			},
+			"s": [
+				"Initiative Variants",
+				"This section offers different ways to handle initiative.",
+				"Initiative Score",
+				"With this optional rule, creatures don't roll initiative at the start of combat. Instead, each creature has an initiative score, which is a passive Dexterity check: 10 + Dexterity modifier.",
+				"By cutting down on die rolls, math done on the fly, and the process of asking for and recording totals, you can speed your game up considerably—at the cost of an initiative order that is often predictable.",
+				"Side Initiative",
+				"Recording initiative for each PC and monster, arranging everyone in the correct order, and remembering where you are in the list can bog the game down. If you want quicker combats, at the risk of those combats becoming unbalanced, try using the side initiative rule.",
+				"Under this variant, the players roll a {@dice d20} for their initiative as a group, or side. You also roll a {@dice d20}. Neither roll receives any modifiers. Whoever rolls highest wins initiative. In case of a tie, keep rerolling until the tie is broken.",
+				"When it's a side's turn, the members of that side can act in any order they choose. Once everyone on the side has taken a turn, the other side goes. A round ends when both sides have completed their turns.",
+				"If more than two sides take part in a battle, each side rolls for initiative. Sides act from the highest roll to lowest. Combat continues in the initiative order until the battle is complete.",
+				"This variant encourages teamwork and makes your life as a DM easier, since you can more easily coordinate monsters. On the downside, the side that wins initiative can gang up on enemies and take them out before they have a chance to act.",
+				"Speed Factor",
+				"Some DMs find the regular progression of initiative too predictable and prone to abuse. Players can use their knowledge of the initiative order to influence their decisions. For example, a badly wounded fighter might charge a troll because he knows that the cleric goes before the monster and can heal him.",
+				"Speed factor is an option for initiative that introduces more uncertainty into combat, at the cost of speed of play. Under this variant, the participants in a battle roll initiative each round. Before rolling, each character or monster must choose an action.",
+				"Initiative Modifiers",
+				"Modifiers might apply to a creature's initiative depending on its size and the action it takes. For example, a creature that fights with a light weapon or casts a simple spell is more likely to act before a creature armed with a heavy or slow weapon. See the Speed Factor Initiative Modifiers table for details. If an action has no modifier listed, the action has no effect on initiative. If more than one modifier applies such as wielding a two-handed, heavy melee weapon, apply them all to the initiative roll.",
+				"Speed Factor Initiative Modifiers",
+				"Factor",
+				"Initiative Modifier",
+				"Spellcasting",
+				"Subtract the spell's level",
+				"Melee, heavy weapon",
+				"Melee, light or finesse weapon",
+				"Melee, two-handed weapon",
+				"Ranged, loading weapon",
+				"Creature Size",
+				"Initiative Modifier",
+				"Tiny",
+				"Small",
+				"Medium",
+				"Large",
+				"Huge",
+				"Gargantuan",
+				"Don't apply the same modifier more than once on a creature's turn. For example, a rogue fighting with two daggers gains the +2 bonus for using a light or finesse weapon only once. In the case of spellcasting, apply only the modifier from the highest-level spell.",
+				"Apply any modifiers for bonus actions to that creature's turn, remembering never to apply the same modifier twice. For instance, a paladin casts a 2nd-level spell as a bonus action and then attacks with a shortsword. The paladin takes a -2 penalty for the spell and gains a +2 bonus for using a light weapon, for a total modifier of +0.",
+				"The table is only a starting point. You can refer to it when adjudicating any actions a character takes that you think should be faster or slower. Quick, easy actions should grant a bonus, while slow, difficult ones should incur a penalty. As a rule of thumb, apply a bonus or penalty of 2 or 5 for an action.",
+				"For example, a fighter wants to turn a winch to raise a portcullis. This is a complex, difficult action. You could rule that it incurs a -5 initiative penalty.",
+				"Rolling Initiative",
+				"After deciding on an action, everyone rolls initiative and applies modifiers, keeping the result secret. You then announce an initiative number, starting with 30 and working down (it helps to call out ranges of numbers at the start). Break any ties by having the combatant with the highest Dexterity act first. Otherwise, roll to determine who goes first.",
+				"Turns",
+				"On its turn, a creature moves as normal but must take the action it selected or take no action at all.",
+				"Once everyone has acted, the process repeats. Everyone in the battle selects an action, rolls initiative, and takes turns in order."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Injuries|DMG",
+			"hint": {
+				"Injuries": "傷勢"
+			},
+			"s": [
+				"Injuries",
+				"Damage normally leaves no lingering effects. This option introduces the potential for long-term injuries.",
+				"It's up to you to decide when to check for a lingering injury. A creature might sustain a lingering injury under the following circumstances:",
+				"When it takes a critical hit",
+				"When it drops to 0 hit points but isn't killed outright",
+				"When it fails a death saving throw by 5 or more",
+				"To determine the nature of the injury, roll on the Lingering Injuries table. This table assumes a typical humanoid physiology, but you can adapt the results for creatures with different body types.",
+				"Lingering Injuries",
+				"d20",
+				"Injury",
+				"{@bold Lose an Eye.} You have disadvantage on Wisdom ({@skill Perception}) checks that rely on sight and on ranged attack rolls. Magic such as the {@spell regenerate} spell can restore the lost eye. If you have no eyes left after sustaining this injury, you're {@condition blinded}.",
+				"{@bold Lose an Arm or a Hand.} You can no longer hold anything with two hands, and you can hold only a single object at a time. Magic such as the {@spell regenerate} spell can restore the lost appendage.",
+				"{@bold Lose a Foot or Leg.} Your speed on foot is halved, and you must use a cane or crutch to move unless you have a peg leg or other prosthesis. You fall {@condition prone} after using the {@action Dash} action. You have disadvantage on Dexterity checks made to balance. Magic such as the {@spell regenerate} spell can restore the lost appendage.",
+				"{@bold Limp.} Your speed on foot is reduced by 5 feet. You must make a {@dc 10} Dexterity saving throw after using the {@action Dash} action. If you fail the save, you fall {@condition prone}. Magical healing removes the limp.",
+				"{@bold Internal Injury.} Whenever you attempt an action in combat, you must make a {@dc 15} Constitution saving throw. On a failed save, you lose your action and can't use reactions until the start of your next turn. The injury heals if you receive magical healing or if you spend ten days doing nothing but resting.",
+				"{@bold Broken Ribs.} This has the same effect as Internal Injury above, except that the save DC is 10.",
+				"{@bold Horrible Scar.} You are disfigured to the extent that the wound can't be easily concealed. You have disadvantage on Charisma ({@skill Persuasion}) checks and advantage on Charisma ({@skill Intimidation}) checks. Magical healing of 6th level or higher, such as {@spell heal} and {@spell regenerate}, removes the scar.",
+				"{@bold Festering Wound.} Your hit point maximum is reduced by 1 every 24 hours the wound persists. If your hit point maximum drops to 0, you die. The wound heals if you receive magical healing. Alternatively, someone can tend to the wound and make a {@dc 15} Wisdom ({@skill Medicine}) check once every 24 hours. After ten successes, the wound heals.",
+				"{@bold Minor Scar.} The scar doesn't have any adverse effect. Magical healing of 6th level or higher, such as {@spell heal} and {@spell regenerate}, removes the scar.",
+				"Instead of using the effect described in the table, you can put the responsibility of representing a character's lingering injury in the hands of the player. Roll on the Lingering Injuries table as usual, but instead of suffering the effect described for that result, that character gains a new flaw with the same name. It's up to the player to express the lingering injury during play, just like any other flaw, with the potential to gain inspiration when the injury affects the character in a meaningful way."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Inspiration|DMG",
+			"hint": {
+				"Inspiration": "激勵",
+				"Heroism": "英雄氣概"
+			},
+			"s": [
+				"Inspiration",
+				"Awarding inspiration is an effective way to encourage roleplaying and risk-taking. As explained in the {@book Player's Handbook|PHB}, having inspiration gives a character an obvious benefit: being able to gain advantage on one ability check, attack roll, or saving throw. Remember that a character can have no more than one inspiration at a time.",
+				"Awarding Inspiration",
+				"Think of inspiration as a spice that you can use to enhance your campaign. Some DMs forgo using inspiration, while others embrace it as a key part of the game. If you take away anything from this section, remember this golden rule: inspiration should make the game more enjoyable for everyone. Award inspiration when players take actions that make the game more exciting, amusing, or memorable.",
+				"As a rule of thumb, aim to award inspiration to each character about once per session of play. Over time, you might want to award inspiration more or less often, at a rate that works best for your table. You might use the same rate for your entire DMing career, or you might change it with each campaign.",
+				"Offering inspiration as a reward encourages certain types of behavior in your players. Think of your style as a DM and your group's preferences. What helps make the game more fun for your group? What type of action fit in with your campaign's style or genre? Your answer to those questions help determine when you award inspiration.",
+				"Roleplaying",
+				"Using inspiration to reward roleplaying is a good place to start for most groups. Reward a player with inspiration when that player causes his or her character to do something that is consistent with the character's personality trait, flaw, or bond. The character's action should be notable in some way. It might drive the story forward, push the adventurers into danger, or make everyone at the table laugh. In essence. you reward the player for roleplaying in a way that makes the game more enjoyable for everyone else.",
+				"Take into account each player's roleplaying style, and try not to favor one style over another. For example, Allison might be comfortable speaking in an accent and adopting her character's mannerisms, but Paul feels self-conscious when trying to act and prefers to describe his character's attitude and actions. Neither style is better than the other. Inspiration encourages players to take part and make a good effort, and awarding it fairly makes the game better for everyone.",
+				"Heroism",
+				"You can use inspiration to encourage player characters to take risks. A fighter might not normally hurl himself over a balcony to land in the mid of a pack of hungry ghouls, but you can reward the character's daring maneuver with inspiration. Such a reward tells the players that you want them to embrace swashbuckling action.",
+				"This approach is great for campaigns that emphasize action-packed heroics. For such campaigns, consider allowing inspiration to be spent after a {@dice d20} roll, rather than before. This approach turns inspiration into a cushion against failure—and a guarantee that it comes into play only when a player is faced directly by failure. Such an assurance makes risky tactics less daunting.",
+				"A Reward for Victory",
+				"Some DMs prefer to play an impartial role in their campaigns. Inspiration normally requires a DM's judgment to award, which might run against your style if you like a campaign where you let dice determine most outcomes. If that's your style, consider using inspiration as a reward when the characters achieve an important goal or victory, representing a surge of confidence and energy.",
+				"Under this model, give everyone in the party inspiration if the characters manage to defeat a powerful foe, execute a cunning plan to achieve a goal, or otherwise overcome a daunting obstacle in the campaign.",
+				"Genre Emulation",
+				"Inspiration is a handy tool for reinforcing the conventions of a particular genre. Under this approach, think of the motifs of a genre as personality traits, flaws, and bonds that can apply to any of the adventurers. For example, in a campaign inspired by film noir, characters could have an additional flaw: \"I can't resist helping a person I find alluring despite warnings that he or she is nothing but trouble.\" If the characters agree to help a suspicious but seductive noble and thereby become entangled in a web of intrigue and betrayal, reward them with inspiration.",
+				"Similarly, characters in a horror story typically can't help but spend a night in a haunted house to learn its secrets. They probably also go off alone when they shouldn't. If the party splits up, consider giving each character inspiration.",
+				"A sensible person would avoid the noble's intrigues and the haunted house, but in film noir or horror, we're not dealing with sensible people; we're dealing with protagonists in a particular type of story. For this approach to work, create a list of your genre's main conventions and share it with your players. Before the campaign begins, talk about the list to make sure your group is on board for embracing those conventions.",
+				"Players and Inspiration",
+				"Remember that a player with inspiration can award it to another player. Some groups even like to treat inspiration as a group resource, deciding collectively when to spend it on a roll. It's best to let players award their inspiration as they see fit, but feel free to talk to them about following certain guidelines, particularly if you're trying to reinforce conventions of a certain genre.",
+				"When Do You Award Inspiration",
+				"Consider the timing of your inspiration rewards. Some DMs like to award inspiration in response to an action. Other DMs like to encourage specific actions by offering inspiration while a player is considering options. Both approaches have their strengths and weaknesses.",
+				"Waiting until after an action preserves the flow of play, but it also means players don't know whether their decisions will earn them inspiration. It also means the player can't spend the inspiration on the act that earned it, unless you allow a player to retroactively spend it or are quick enough to award it before any rolls. This approach works best for groups that want to focus on immersion and player agency, where the DM steps back and gives the players more freedom to do what they want.",
+				"Telling a player that an action will earn inspiration provides clarity, but it can make it feel like you are manipulating the players or making choices for them. Offering inspiration before an action works great with groups that are comfortable with an emphasis on genre emulation and group storytelling, where character freedom isn't as important as weaving a compelling tale together.",
+				"Start with awarding inspiration after an action, especially for your first campaign or when playing with a new group. That approach is the least disruptive to the flow of play and avoids making the players feel as if you are being manipulative.",
+				"Tracking Inspiration",
+				"A player typically notes on a character sheet whether he or she has inspiration, or you can use poker chips or some other token. Alternatively, you can hand out special d20s to represent inspiration. When a player spends inspiration, he or she rolls the die and then hands it back to you. If the player instead gives the inspiration to someone else, the {@dice d20} can go to that other person.",
+				"Ignoring Inspiration",
+				"Inspiration might not work for your campaign. Some DMs feel it adds a layer of metagame thinking, and others feel that heroism, roleplaying, and other parts of the game are their own rewards that don't need incentives like inspiration.",
+				"If you choose to ignore inspiration, you're telling the players that your campaign is one where you let the dice fall where they may. It's a good option for gritty campaigns or ones where the DM focuses on playing an impartial role as a rules arbiter.",
+				"Variant: Only Players Award Inspiration",
+				"As a DM, you have a lot to track during the game. Sometimes you can lose track of inspiration and forget to award it. As a variant rule, you can allow the players to handle awarding inspiration entirely. During every session, each player can award inspiration to another player. A player follows whatever guidelines the group has agreed on for awarding inspiration.",
+				"This approach makes your life easier and also gives players the chance to recognize each other for good play. You still need to make sure that inspiration is being awarded fairly.",
+				"This approach works best with groups that are focused on the story. It falls flat if the players merely manipulate it to gain advantage in key situations, without earning inspiration by way of good roleplaying or whatever other criteria the group has established.",
+				"In this variant, you can allow each player to award inspiration more than once per session. If you do so, the first time that a player awards inspiration in a session is free. Whenever that player awards it later in the same session, you gain inspiration that you can spend to give advantage to any foe of the player characters. There's no limit to the number of inspirations you can gain in this way, and unspent inspiration carries over from one session to the next."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Level Advancement without XP|DMG",
+			"hint": {
+				"Level Advancement without XP": "不用經驗值的等級提升"
+			},
+			"s": [
+				"Level Advancement without XP",
+				"You can do away with experience points entirely and control the rate of character advancement. Advance characters based on how many sessions they play, or when they accomplish significant story goals in the campaign. In either case, you tell the players when their characters gain a level.",
+				"This method of level advancement can be particularly helpful if your campaign doesn't include much combat, or includes so much combat that tracking XP becomes tiresome.",
+				"Session-Based Advancement",
+				"A good rate of session-based advancement is to have characters reach 2nd level after the first session of play, 3rd level after another session, and 4th level after two more sessions. Then spend two or three sessions for each subsequent level. This rate mirrors the standard rate of advancement, assuming sessions are about four hours long.",
+				"Story-Based Advancement",
+				"When you let the story of the campaign drive advancement, you award levels when adventurers accomplish significant goals in the campaign."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Loyalty|DMG",
+			"hint": {
+				"Loyalty": "忠誠"
+			},
+			"s": [
+				"Loyalty",
+				"Loyalty is an optional rule you can use to determine how far an NPC party member will go to protect or assist the other members of the party (even those she doesn't particularly like). An NPC party member who is abused or ignored is likely to abandon the party, whereas an NPC who owes a life characters or shares their goals might fight to the death for them. Loyalty can be roleplayed or represented by this rule.",
+				"Loyalty Score",
+				"An NPC's loyalty is measured on a numerical scale from 0 to 20. The NPC's maximum loyalty score is equal to the highest Charisma score among all adventurers in the party, and its starting loyalty score is half that number. If the highest Charisma score changes—perhaps a character dies or leaves the group-adjust the NPC's loyalty score accordingly.",
+				"Tracking Loyalty",
+				"Keep track of an NPC's loyalty score in secret so that the players won't know for sure whether an NPC party member is loyal or disloyal (even if the NPC is currently under a player's control).",
+				"An NPC's loyalty score increases by {@dice 1d4} if other party members help the NPC achieve a goal tied to its bond. Likewise, an NPC's loyalty score increases by {@dice 1d4} if the NPC is treated particularly well (for example, given a magic weapon as a gift) or rescued by another party member. An NPC's loyalty score can never be raised above its maximum.",
+				"When other party members act in a manner that runs counter to the NPC's alignment or bond, reduce the PC's loyalty score by {@dice 1d4}. Reduce the NPC's loyalty score by {@dice 2d4} if the character is abused, misled, or endangered by other party members for purely selfish reasons.",
+				"An NPC whose loyalty score drops to 0 is no longer loyal to the party and might part ways with them. A loyalty score can never drop below 0.",
+				"An NPC with a loyalty score of 10 or higher risks life and limb to help fellow party members. If the NPC's loyalty score is between 1 and 10, its loyalty is tenuous. An NPC whose loyalty drops to 0 no longer acts in the party's best interests. The disloyal NPC either leaves the party (attacking characters who attempt to intervene) or works in secret to bring about the party's downfall."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Madness|DMG",
+			"hint": {
+				"Madness": "瘋狂"
+			},
+			"s": [
+				"Madness",
+				"In a typical campaign, characters aren't driven mad by the horrors they face and the carnage they inflict day after day, but sometimes the stress of being an adventurer can be too much to bear. If your campaign has a strong horror theme, you might want to use madness as a way to reinforce that theme, emphasizing the extraordinarily horrific nature of the threats the adventurers face.",
+				"Going Mad",
+				"Various magical effects can inflict madness on an otherwise stable mind. Certain spells, such as {@spell contact other plane} and {@spell symbol}, can cause insanity, and you can use the madness rules here instead of the spell effects in the {@book Player's Handbook|PHB}. Diseases, poisons, and planar effects such as psychic wind or the howling winds of Pandemonium can all inflict madness. Some artifacts can also break the psyche of a character who uses or becomes attuned to them.",
+				"Resisting a madness-inducing effect usually requires a Wisdom or Charisma saving throw. If your game includes the {@variantrule New Ability Scores: Honor and Sanity||Sanity score} (see chapter 9, \"Dungeon Master's Workshop\"), a creature makes a Sanity saving throw instead.",
+				"Madness Effects",
+				"Madness can be short-term, long-term, or indefinite. Most relatively mundane effects impose short-term madness, which lasts for just a few minutes. More horrific effects or cumulative effects can result in long-term or indefinite madness.",
+				"A character afflicted with {@b short-term madness} is subjected to an effect from the Short-Term Madness table for {@dice 1d10} minutes.",
+				"A character afflicted with {@b long-term madness} is subjected to an effect from the Long-Term Madness table for {@dice 1d10 × 10} hours.",
+				"A character afflicted with {@b indefinite madness} gains a new character flaw from the Indefinite Madness table that lasts until cured.",
+				"Short-Term Madness",
+				"d100",
+				"Effects (lasts {@dice 1d10} minutes)",
+				"The character retreats into his or her mind and becomes {@condition paralyzed}. The effect ends if the character takes any damage.",
+				"The character becomes {@condition incapacitated} and spends the duration screaming, laughing, or weeping.",
+				"The character becomes {@condition frightened} and must use his or her action and movement each round to flee from the source of the fear.",
+				"The character begins babbling and is incapable of normal speech or spellcasting.",
+				"The character must use his or her action each round to attack the nearest creature.",
+				"The character experiences vivid hallucinations and has disadvantage on ability checks.",
+				"The character does whatever anyone tells him or her to do that isn't obviously self-destructive.",
+				"The character experiences an overpowering urge to eat something strange such as dirt, slime, or offal.",
+				"The character is {@condition stunned}.",
+				"The character falls {@condition unconscious}.",
+				"Long-Term Madness",
+				"d100",
+				"Effects (lasts {@dice 1d10 × 10} hours)",
+				"The character feels compelled to repeat a specific activity over and over, such as washing hands, touching things, praying, or counting coins.",
+				"The character experiences vivid hallucinations and has disadvantage on ability checks.",
+				"The character suffers extreme paranoia. The character has disadvantage on Wisdom and Charisma checks.",
+				"The character regards something (usually the source of madness) with intense revulsion, as if affected by the antipathy effect of the {@spell antipathy/sympathy} spell.",
+				"The character experiences a powerful delusion. Choose a potion. The character imagines that he or she is under its effects.",
+				"The character becomes attached to a \"lucky charm,\" such as a person or an object, and has disadvantage on attack rolls, ability checks, and saving throws while more than 30 feet from it.",
+				"The character is {@condition blinded} (25%) or {@condition deafened} (75%).",
+				"The character experiences uncontrollable tremors or tics, which impose disadvantage on attack rolls, ability checks, and saving throws that involve Strength or Dexterity.",
+				"The character suffers from partial amnesia. The character knows who he or she is and retains racial traits and class features, but doesn't recognize other people or remember anything that happened before the madness took effect.",
+				"Whenever the character takes damage, he or she must succeed on a {@dc 15} Wisdom saving throw or be affected as though he or she failed a saving throw against the {@spell confusion} spell. The confusion effect lasts for 1 minute.",
+				"The character loses the ability to speak.",
+				"The character falls {@condition unconscious}. No amount of jostling or damage can wake the character.",
+				"Indefinite Madness",
+				"d100",
+				"Flaw (lasts until cured)",
+				"\"Being drunk keeps me sane.\"",
+				"\"I keep whatever I find.\"",
+				"\"I try to become more like someone else I know—adopting his or her style of dress, mannerisms, and name.\"",
+				"\"I must bend the truth, exaggerate, or outright lie to be interesting to other people.\"",
+				"\"Achieving my goal is the only thing of interest to me, and I'll ignore everything else to pursue it.\"",
+				"\"I find it hard to care about anything that goes on around me.\"",
+				"\"I don't like the way people judge me all the time.\"",
+				"\"I am the smartest, wisest, strongest, fastest, and most beautiful person I know.\"",
+				"\"I am convinced that powerful enemies are hunting me, and their agents are everywhere I go. I am sure they're watching me all the time.\"",
+				"\"There's only one person I can trust. And only I can see this special friend.\"",
+				"\"I can't take anything seriously. The more serious the situation, the funnier I find it.\"",
+				"\"I've discovered that I really like killing people.\"",
+				"Curing Madness",
+				"A {@spell calm emotions} spell can suppress the effects of madness, while a {@spell lesser restoration} spell can rid a character of a short-term or long-term madness. Depending on the source of the madness, {@spell remove curse} or {@spell dispel evil and good||dispel evil} might also prove effective. A {@spell greater restoration} spell or more powerful magic is required to rid a character of indefinite madness."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Massive Damage|DMG",
+			"hint": {
+				"Massive Damage": "巨量傷害"
+			},
+			"s": [
+				"Massive Damage",
+				"This optional rule makes it easier for a creature to be felled by massive damage.",
+				"When a creature takes damage from a single source equal to or greater than half its hit point maximum, it must succeed on a {@dc 15} Constitution saving throw or suffer a random effect determined by a roll on the System Shock table. For example, a creature that has a hit point maximum of 30 must make that Constitution save if it takes 15 damage or more from a single source.",
+				"System Shock",
+				"d10",
+				"Effect",
+				"The creature drops to 0 hit points.",
+				"The creature drops to 0 hit points but is stable.",
+				"The creature is {@condition stunned} until the end of its next turn.",
+				"The creature can't take reactions and has disadvantage on attack rolls and ability checks until the end of its next turn.",
+				"The creature can't take reactions until the end of its next turn."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Milestones|DMG",
+			"hint": {
+				"Milestones": "里程碑"
+			},
+			"s": [
+				"Milestones",
+				"You can also award XP when characters complete significant milestones. When preparing your adventure, designate certain events or challenges as milestones, as with the following examples:",
+				"Accomplishing one in a series of goals necessary to complete the adventure.",
+				"Discovering a hidden location or piece of information relevant to the adventure.",
+				"Reaching an important destination.",
+				"When awarding XP, treat a major milestone as a hard encounter and a minor milestone as an easy encounter. If you want to reward your players for their progress through an adventure with something more than XP and treasure, give them additional small rewards at milestone points. Here are some examples:",
+				"The adventurers gain the benefit of a short rest.",
+				"Characters can recover a Hit Die or a low-level spell slot.",
+				"Characters can regain the use of magic items that have had their limited uses expended."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Mixing Potions|DMG",
+			"hint": {
+				"Mixing Potions": "混合藥水"
+			},
+			"s": [
+				"Mixing Potions",
+				"A character might drink one potion while still under the effects of another, or pour several potions into a single container. The strange ingredients used in creating potions can result in unpredictable interactions.",
+				"When a character mixes two potions together, you can roll on the Potion Miscibility table. If more than two are combined, roll again for each subsequent potion, combining the results. Unless the effects are immediately obvious, reveal them only when they become evident.",
+				"Potion Miscibility",
+				"d100",
+				"Result",
+				"The mixture creates a magical explosion, dealing {@damage 6d10} force damage to the mixer and {@damage 1d10} force damage to each creature within 5 feet of the mixer.",
+				"The mixture becomes an ingested poison of the DM's choice.",
+				"Both potions lose their effects.",
+				"One potion loses its effect.",
+				"Both potions work, but with their numerical effects and durations halved. A potion has no effect if it can't be halved in this way.",
+				"Both potions work normally.",
+				"The numerical effects and duration of one potion are doubled. If neither potion has anything to double in this way, they work normally.",
+				"Only one potion works, but its effect is permanent. Choose the simplest effect to make permanent, or the one that seems the most fun. For example, a {@item potion of healing} might increase the drinker's hit point maximum by 4, or {@item oil of etherealness} might permanently trap the user in the Ethereal Plane. At your discretion, an appropriate spell, such as {@spell dispel magic} or {@spell remove curse}, might end this lasting effect."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Morale|DMG",
+			"hint": {
+				"Morale": "士氣"
+			},
+			"s": [
+				"Morale",
+				"Some combatants might run away when a fight turns against them. You can use this optional rule to help determine when monsters and NPCs flee.",
+				"A creature might flee under any of the following circumstances:",
+				"The creature is {@status surprised}.",
+				"The creature is reduced to half its hit points or fewer for the first time in the battle.",
+				"The creature has no way to harm the opposing side on its turn.",
+				"A group of creatures might flee under any of the following circumstances:",
+				"All the creatures in the group are {@status surprised}.",
+				"The group's leader is reduced to 0 hit points, {@condition incapacitated}, taken prisoner, or removed from battle.",
+				"The group is reduced to half its original size with no losses on the opposing side.",
+				"To determine whether a creature or group of creatures flees, make a {@dc 10} Wisdom saving throw for the creature or the group's leader. If the opposition is overwhelming, the saving throw is made with disadvantage, or you can decide that the save fails automatically. If a group's leader can't make the saving throw for whatever reason, have the creature in the group with the next highest Charisma score make the saving throw instead.",
+				"On a failed save, the affected creature or group flees by the most expeditious route. If escape is impossible, the creature or group surrenders. If a creature or group that surrenders is attacked by its conquerors, the battle might resume, and it's unlikely that further attempts to flee or surrender will be made.",
+				"A failed saving throw isn't always to the adventurers' benefit. For example, an ogre that flees from combat might put the rest of the dungeon on alert or run off with treasure that the characters had hoped to plunder."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "More Difficult Identification|DMG",
+			"hint": {
+				"More Difficult Identification": "更困難的鑑定"
+			},
+			"s": [
+				"More Difficult Identification",
+				"If you prefer magic items to have a greater mystique, consider removing the ability to identify the properties of a magic item during a short rest, and require the {@spell identify} spell, experimentation, or both to reveal what a magic item does."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "New Ability Scores: Honor and Sanity|DMG",
+			"hint": {
+				"New Ability Scores: Honor and Sanity": "新屬性值：榮譽與理智"
+			},
+			"s": [
+				"New Ability Scores: Honor and Sanity",
+				"If you're running a campaign shaped by a strict code of honor or the constant risk of insanity, consider adding one or both these new ability scores: Honor and Sanity.",
+				"These abilities function like the standard six abilities, with exceptions specified in each ability below.",
+				"Here's how to incorporate these optional abilities at character creation:",
+				"If your players use the standard array of ability scores, add one 11 to the array for each optional ability you add.",
+				"If your players use the optional point-buy system, add 3 points to the number of points for each optional ability you add.",
+				"If your players roll their ability scores, have them roll for the added ability scores.",
+				"If you ever need to make a check or saving throw for Honor or Sanity for a monster that lacks the score, you can use Charisma for Honor and Wisdom for Sanity.",
+				"Honor Score",
+				"If your campaign involves cultures where a rigid code of honor is part of daily life, consider using the Honor score as a means of measuring a character's devotion to that code. This ability fits well in a setting inspired by Asian cultures, such as Kara-Tur in the Forgotten Realms. The Honor ability is also useful in any campaign that revolves around orders of knights.",
+				"Honor measures not only a character's devotion to a code but also the character's understanding of it. The Honor score can also reflect how others perceive a character's honor. A character with a high Honor usually has a reputation that others know about, especially those who have high Honor scores themselves.",
+				"Unlike other abilities, Honor can't be raised with normal ability score increases. Instead, you can award increases to Honor—or impose reductions—based on a character's actions. At the end of an adventure, if you think a character's actions in the adventure reflected well or poorly on his or her understanding of the code, you can increase or decrease the character's Honor by 1. As with other ability scores, a character's Honor can't exceed 20 or fall below 1.",
+				"Honor Checks",
+				"Honor checks can be used in social situations, much as Charisma would, when a character's understanding of a code of conduct is the most defining factor in the way a social interaction will play out. You might also call for an Honor check when a character is in one of the following situations:",
+				"Being unsure how to act with honor",
+				"Surrendering while trying to save face",
+				"Trying to determine another character's Honor score",
+				"Trying to use the proper etiquette in a delicate social situation",
+				"Using his or her honorable or dishonorable reputation to influence someone else",
+				"Honor Saving Throws",
+				"An Honor saving throw comes into play when you want to determine whether a character might inadvertently do something dishonorable. You might call for an Honor saving throw in the following situations:",
+				"Avoiding an accidental breach of honor or etiquette",
+				"Resisting the urge to respond to goading or insults from an enemy",
+				"Recognizing when an enemy attempts to trick a character into a breach of honor",
+				"Sanity Score",
+				"Consider using the Sanity score if your campaign revolves around entities of an utterly alien and unspeakable nature, such as Great Cthulhu, whose powers and minions can shatter a character's mind.",
+				"A character with a high Sanity is level-headed even in the face of insane circumstances, while a character with low Sanity is unsteady, breaking easily when confronted by eldritch horrors that are beyond normal reason.",
+				"Sanity Checks",
+				"You might ask characters to make a Sanity check in place of an Intelligence check to recall lore about the alien creatures of madness featured in your campaign, to decipher the writings of raving lunatics, or to learn spells from tomes of forbidden lore. You might also call for a Sanity check when a character tries one of the following activities:",
+				"Deciphering a piece of text written in a language so alien that it threatens to break a character's mind",
+				"Overcoming the lingering effects of madness",
+				"Comprehending a piece of alien magic foreign to all normal understanding of magic",
+				"Sanity Saving Throws",
+				"You might call for a Sanity saving throw when a character runs the risk of succumbing to madness, such as in the following situations:",
+				"Seeing a creature from the Far Realm or other alien realms for the first time",
+				"Making direct contact with the mind of an alien creature",
+				"Being subjected to spells that affect mental stability, such as the insanity option of the {@spell symbol} spell",
+				"Passing through a demiplane built on alien physics",
+				"Resisting an effect conferred by an attack or spell that deals psychic damage",
+				"A failed Sanity save might result in {@table short-term madness||short-term}, {@table long-term madness||long-term}, or {@table indefinite madness}, as described in chapter 8, \"Running the Game.\" Any time a character suffers from long-term or indefinite madness, the character's Sanity is reduced by 1. A {@spell greater restoration} spell can restore Sanity lost in this way, and a character can increase his or her Sanity through level advancement."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Planar Effects|DMG",
+			"hint": {
+				"Planar Effects": "位面效果"
+			},
+			"s": [
+				"Planar Effects",
+				"When adventurers travel to other planes of existence, they undertake a legendary journey that might force them to face supernatural guardians and undergo various ordeals. You can choose to add effects to any or all of the planes, to better represent their uniqueness. The effects listed below apply to the default cosmological arrangement presented in the {@book Player's Handbook|PHB|13}, and are individually optional.",
+				"Feywild: Feywild Magic",
+				"Tales speak of children kidnapped by fey creatures and spirited away to the Feywild, only to return to their parents years later without having aged a day, and with no memories of their captors or the realm they came from. Likewise, adventurers who return from an excursion to the Feywild are often alarmed to discover upon their return that time flows differently on the Plane of Faerie, and that the memories of their visit are hazy. You can use these optional rules to reflect the strange magic that suffuses the plane.",
+				"Memory Loss",
+				"A creature that leaves the Feywild must make a {@dc 10} Wisdom saving throw. Fey creatures automatically succeed on the saving throw, as do any creatures, like elves, that have the Fey Ancestry trait. A creature that fails the saving throw remembers nothing from its time spent in the Feywild. On a successful save, the creature's memories remain intact but are a little hazy. Any spell that can end a curse can restore the creature's lost memories.",
+				"Time Warp",
+				"While time seems to pass normally in the Feywild, characters might spend a day there and realize, upon leaving the plane, that less or more time has elapsed everywhere else in the multiverse.",
+				"Whenever a creature or group of creatures leaves the Feywild after spending at least 1 day on that plane, you can choose a time change that works best for your campaign, if any, or roll on the Feywild Time Warp table. A {@spell wish} spell can be used to remove the effect on up to ten creatures. Some powerful fey have the ability to grant such wishes and might do so if the beneficiaries agree to subject themselves to a {@spell geas} spell and complete a quest after the {@spell wish} spell is cast.",
+				"Feywild Time Warp",
+				"d20",
+				"Result",
+				"Days become minutes",
+				"Days become hours",
+				"No change",
+				"Days become weeks",
+				"Days become months",
+				"Days become years",
+				"Shadowfell: Shadowfell Despair",
+				"A melancholic atmosphere pervades the Shadowfell. Extended forays to this plane can afflict characters with despair, as reflected in this optional rule.",
+				"When you deem it appropriate, though usually not more than once per day, you can require a character not native to the Shadowfell to make a {@dc 10} Wisdom saving throw. On a failure, the character is affected by despair. Roll a {@dice d6} to determine the effects, using the Shadowfell Despair table. You can substitute different despair effects of your own creation.",
+				"Shadowfell Despair",
+				"d6",
+				"Effect",
+				"{@bold Apathy.} The character has disadvantage on death saving throws and on Dexterity checks for initiative, and gains the following flaw: \"I don't believe I can make a difference to anyone or anything.\"",
+				"{@bold Dread.} The character has disadvantage on all saving throws and gains the following flaw: \"I am convinced that this place is going to kill me.\"",
+				"{@bold Madness.} The character has disadvantage on ability checks and saving throws that use Intelligence, Wisdom, or Charisma, and gains the following flaw: \"I can't tell what's real anymore.\"",
+				"If a character is already suffering a despair effect and fails the saving throw, the new despair effect replaces the old one. After finishing a long rest, a character can attempt to overcome the despair with a {@dc 15} Wisdom saving throw. (The DC is higher because it's harder to shake off despair once it has taken hold.) On a successful save, the despair effect ends for that character.",
+				"A {@spell calm emotions} spell removes despair, as does any spell or other magical effect that removes a curse.",
+				"Outer Planes: Psychic Dissonance",
+				"Each of the Outer Planes emanates a psychic dissonance that affects visitors of an incompatible alignment—good creatures on the Lower Planes, evil ones on the Upper Planes—if they spend too much time on the plane. You can reflect this dissonance with this optional rule. At the end of a long rest spent on an incompatible plane, a visitor must make a {@dc 10} Constitution saving throw. On a failed save, the creature gains one level of {@condition exhaustion}. Incompatibility between lawful and chaotic alignments doesn't have the same effect, so Mechanus and Limbo lack this quality.",
+				"Mount Celestia: Blessed Beneficence",
+				"In contrast to the dissonance experienced by evil creatures here, good creatures are literally blessed by the pervasive beneficence of the plane. Creatures of good alignment gain the benefit of the {@spell bless} spell as long as they remain on the plane. In addition, finishing a long rest on the plane grants a good creature the benefit of a {@spell lesser restoration} spell.",
+				"Bytopia: Pervasive Goodwill",
+				"At the end of each long rest taken on this plane, a visitor that is neither lawful good nor neutral good must make a {@dc 10} Wisdom saving throw. On a failed save, the creature's alignment changes to lawful good or neutral good (whichever is closer to the creature's current alignment). The change becomes permanent if the creature doesn't leave the plane within {@dice 1d4} days. Otherwise, the creature's alignment reverts to normal after one day spent on a plane other than Bytopia. Casting the {@spell dispel evil and good} spell on the creature also restores its original alignment.",
+				"Elysium: Overwhelming Joy",
+				"Visitors spending any time on this plane risk becoming trapped by overwhelming sensations of contentment and happiness. At the end of each long rest taken on this plane, a visitor must make a {@dc 10} Wisdom saving throw. On a failed save, the creature is unwilling to leave the plane before taking another long rest. After three failed saving throws, the creature never willingly leaves the plane and, if forcibly removed, does everything in its power to return to the plane. A {@spell dispel evil and good} spell removes this effect from the creature.",
+				"The Beastlands: Hunter's Paradise",
+				"Visitors to the Beastlands find their hunting and stalking capabilities improved, and characters have advantage on Wisdom ({@skill Animal Handling}), Wisdom ({@skill Perception}), and Wisdom ({@skill Survival}) checks while there.",
+				"The Beastlands: Beast Transformation",
+				"Whenever a visitor slays a beast native to the plane, the slayer must succeed on a {@dc 10} Charisma saving throw or become transformed (as the {@spell polymorph} spell) into the type of beast that was slain. In this form, the creature retains its intelligence and ability to speak. At the end of each long rest, the polymorphed creature can repeat the saving throw. On a successful saving throw, the creature returns to its true form. After three failed saving throws. the transformation can be undone only by a {@spell remove curse} spell or similar magic. ",
+				"Arborea: Intense Yearning",
+				"Keep track of how many days a visitor spends on Arborea. When the visitor leaves, it must make a Charisma saving throw against a DC of 5, plus 1 for each day spent on the plane. On a failed save, the creature becomes afflicted with a yearning to return to Arborea. As long as the effect persists the creature has disadvantage on ability checks. At the end of each long rest, the creature can repeat the saving throw, ending the effect on a success. A {@spell dispel evil and good} spell removes this effect from the creature.",
+				"Ysgard: Immortal Wrath",
+				"Ysgard is the home of slain heroes who wage eternal battle on fields of glory. Any creature, other than a construct or undead, that is killed by an attack or a spell while on Ysgard is restored to life at dawn the next day. The creature has all its hit points restored, and all conditions and afflictions it suffered before its death are removed.",
+				"Limbo: Power of the Mind",
+				"As an action, a creature on Limbo can make an Intelligence check to mentally move an object on the plane that it can see within 30 feet of it. The DC depends on the object's size: {@dc 5} for Tiny, {@dc 10} for Small, {@dc 15} for Medium, {@dc 20} for Large, and {@dc 25} for Huge or larger. On a successful check, the creature moves the object 5 feet plus 1 foot for every point by which it beat the DC.",
+				"A creature can also use an action to make an Intelligence check to alter a nonmagical object that isn't being worn or carried. The same rules for distance apply, and the DC is based on the object's size: {@dc 10} for Tiny, {@dc 15} for Small, {@dc 20} for Medium, and {@dc 25} for Large or larger. On a success, the creature changes the object into another nonliving form of the same size, such as turning a boulder into a ball of fire.",
+				"Finally, a creature can use an action to make an Intelligence check to stabilize a spherical area centered on the creature. The DC depends on the radius of the sphere. The base DC is 5 for a 10-foot-radius sphere; each additional 10 feet added to the radius increases the DC by 5. On a successful check, the creature prevents the area from being altered by the plane for 24 hours, or until the creature uses this ability again.",
+				"Pandemonium: Mad Winds",
+				"A visitor must make a {@dc 10} Wisdom saving throw after each hour spent among the howling winds. On a failed save, the creature gains one level of {@condition exhaustion}. A creature that reaches six levels of {@condition exhaustion} while on this plane doesn't die. Instead, the creature gains a random form of indefinite madness, as described in chapter 8, \"Running the Game.\" Finishing a long rest doesn't reduce a creature's {@condition exhaustion} level unless the creature can somehow escape the maddening winds.",
+				"The Abyss: Abyssal Corruption",
+				"A non-evil visitor that finishes a long rest in the Abyss must make a {@dc 10} Charisma saving throw. On a failure, the creature becomes corrupted. Refer to the Abyssal Corruption table to determine the effects of this corruption. You can substitute different corruption effects of your own creation.",
+				"After finishing a long rest, a corrupted creature can make a {@dc 15} Charisma saving throw. On a successful save, the corruption effect ends. A {@spell dispel evil and good} spell or any magic that removes a curse also ends the effect.",
+				"If a corrupted creature doesn't leave the plane within {@dice 1d4 + 2} days, its alignment changes to chaotic evil. Casting the {@spell dispel evil and good} spell on the creature restores its original alignment.",
+				"Abyssal Corruption",
+				"d10",
+				"Result",
+				"{@bold Treachery.} The character gains the following flaw: \"I can only achieve my goals by making sure that my companions don't achieve theirs.\"",
+				"{@bold Bloodlust.} The character gains the following flaw: \"I enjoy killing for its own sake, and once I start, it's hard to stop.\"",
+				"{@bold Mad Ambition.} The character gains the following flaw: \"I am destined to rule the Abyss, and my companions are tools to that end.\"",
+				"{@bold Demonic Possession.} The character is possessed by a demonic entity until freed by {@spell dispel evil and good} or similar magic. Whenever the possessed character rolls a 1 on an attack roll, ability check, or saving throw, the demon takes control of the character and determines the character's behavior. At the end of each of the possessed character's turns, he or she can make a {@dc 15} Charisma saving throw. On a success, the character regains control until he or she rolls another 1.",
+				"Carceri: Prison Plane",
+				"No one can leave Carceri easily. Magical efforts to leave the plane by any spell other than a wish simply fail.",
+				"Portals and gates that open onto the plane become one-way only. Secret ways out of the plane exist, but they are hidden and well guarded by traps and deadly monsters",
+				"Hades: Vile Transformation",
+				"At the end of each long rest taken on the plane, a visitor must make a {@dc 10} Wisdom saving throw. On a failed save, the creature gains one level of {@condition exhaustion}, which can't be removed while the creature remains in Hades. If the creature reaches six levels of {@condition exhaustion}, it doesn't die. Instead, the creature permanently transforms into a larva, whereupon all levels of {@condition exhaustion} afflicting the creature are removed.",
+				"A larva is a miserable fiend that retains the facial features of its previous form but has the body of a fat worm. A larva has only a few faint memories of its previous life and the statistics in the {@creature larva|dmg} stat block. Hades is crawling with larvae. Night hags, liches, and rakshasas harvest them for use in vile rituals. Other fiends like to feed on them.",
+				"Gehenna: Cruel Hindrance",
+				"The plane's cruel nature makes it difficult for visitors to help one another. Whenever a visitor casts a spell with a beneficial effect, including a spell that restores hit points or removes a condition, the caster must first make a {@dc 10} Charisma saving throw. On a failed save, the spell fails, the spell slot is expended, and the action is wasted.",
+				"The Nine Hells: Pervasive Evil",
+				"Evil pervades the Nine Hells, and visitors to this plane feel its influence. At the end of each long rest taken on this plane, a visitor that isn't evil must make a {@dc 10} Wisdom saving throw. On a failed save, the creature's alignment changes to lawful evil. The change becomes permanent if the creature doesn't leave the plane within {@dice 1d4} days. Otherwise, the creature's alignment reverts to normal after one day spent on a plane other than the Nine Hells. Casting the {@spell dispel evil and good} spell on the creature also restores its original alignment.",
+				"Acheron: Bloodlust",
+				"Acheron rewards a creature for harming other creatures by imbuing that creature with the strength to keep fighting. While on Acheron, a creature gains temporary hit points equal to half its hit point maximum whenever it reduces a hostile creature to 0 hit points.",
+				"Mechanus: Law of Averages",
+				"While on Mechanus, creatures always use the average damage result for attacks and spells. For example, an attack that normally deals {@damage 1d10 + 5} damage always deals 10 damage on Mechanus.",
+				"Mechanus: Imposing Order",
+				"At the end of each long rest taken on this plane, a visitor that isn't lawful neutral must make a {@dc 10} Wisdom saving throw. On a failed save, the creature's alignment changes to lawful neutral. The creature's alignment reverts to normal after one day spent on a plane other than Mechanus. Casting the {@spell dispel evil and good} spell on the creature also restores its original alignment.",
+				"Arcadia: Planar Vitality",
+				"While on this plane, creatures can't be {@condition frightened} or {@condition poisoned}, and they are immune to disease and poisons."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Plot Points|DMG",
+			"hint": {
+				"Plot Points": "劇情點"
+			},
+			"s": [
+				"Plot Points",
+				"Plot points allow players to change the course of the campaign, introduce plot complications, alter the world, and even assume the role of the DM. If your first reaction to reading this optional rule is to worry that your players might abuse it, it's probably not for you.",
+				"Using Plot Points",
+				"Each player starts with 1 plot point. During a session, a player can spend that point for one effect. The effect depends on your group's approach to this optional rule. Three options are presented below.",
+				"A player can spend no more than 1 plot point per session. You can increase this limit if you like, especially if you want the players to drive more of the story. Once every player at the table has spent a plot point, they each gain 1 plot point.",
+				"Option 1: What a Twist!",
+				"A player who spends a plot point gets to add some element to the setting or situation that the group (including you) must accept as true. For example, a player can spend a plot point and state that his or her character has found a secret door, an NPC appears, or a monster turns out to be a long-lost ally polymorphed into a horrid beast.",
+				"A player who wants to spend a plot point in this way should take a minute to discuss his or her idea with everyone else at the table and get feedback before settling on a plot development.",
+				"Option 2: The Plot Thickens",
+				"Whenever a player spends a plot point, the player to his or her right must add a complication to the scene. For example, if the player who spends the plot point decides that her character has found a secret door, the player to the right might state that opening the door triggers a magical trap that teleports the party to another part of the dungeon.",
+				"Option 3: The Gods Must Be Crazy",
+				"With this approach, there is no permanent DM. Everyone makes a character, and one person starts as the DM and runs the game as normal. That person's character becomes an NPC who can tag along with the group or remain on the sidelines, as the group wishes.",
+				"At any time, a player can spend a plot point to become the DM. That player's character becomes an NPC, and play continues. It's probably not a good idea to swap roles in the middle of combat, but it can happen if your group allows time for the new DM to settle into his or her role and pick up where the previous DM left off.",
+				"Using plot points in this way can make for an exciting campaign as each new DM steers the game in unexpected directions. This approach is also a great way for would-be DMs to try running a game in small, controlled doses.",
+				"In a campaign that uses plot points this way, everyone should come to the table with a bit of material prepared or specific encounters in mind. A player who isn't prepared or who doesn't feel like DMing can choose to not spend a plot point that session.",
+				"For this approach to work, it's a good idea to establish some shared assumptions about the campaign so that DMs aren't duplicating efforts or trampling on each other's plans."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Proficiency Dice|DMG",
+			"hint": {
+				"Proficiency Dice": "熟練骰"
+			},
+			"s": [
+				"Proficiency Dice",
+				"This optional rule replaces a character's proficiency bonus with a proficiency die, adding more randomness to the game and making proficiency a less reliable indicator of mastery. Instead of adding a proficiency bonus to an ability check, an attack roll, or saving throw, the character's player rolls a die. The Proficiency Die table shows which die or dice to roll, as determined by the character's level.",
+				"Whenever a feature, such as the rogue's Expertise, lets a character double his or her proficiency bonus, the player rolls the character's proficiency die twice instead of once.",
+				"This option is intended for player characters and nonplayer characters who have levels, as opposed to monsters who don't.",
+				"Proficiency Dice",
+				"Level",
+				"Proficiency Bonus",
+				"Proficiency Die",
+				"1st-4th",
+				"5th-8th",
+				"9th-12th",
+				"13th-16th",
+				"17th-20th"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Renown|DMG",
+			"hint": {
+				"Renown": "聲望"
+			},
+			"s": [
+				"Renown",
+				"Renown is an optional rule you can use to track an adventurer's standing within a particular faction or organization. Renown is a numerical value that starts at 0, then increases as a character earns favor and reputation within a particular organization. You can tie benefits to a character's renown, including ranks and titles within the organization and access to resources.",
+				"A player tracks renown separately for each organization his or her character is a member of. For example, an adventurer might have 5 renown within one faction and 20 renown within another, based on the character's interaction with each organization over the course of the campaign.",
+				"Gaining Renown",
+				"A character earns renown by completing missions or quests that serve an organization's interests or involve the organization directly. You award renown at your discretion as characters complete these missions or quests, typically at the same time you award experience points.",
+				"Advancing an organization's interests increases a character's renown within that organization by 1. Completing a mission specifically assigned by that organization, or which directly benefits the organization, increases the character's renown by 2 instead.",
+				"For example, characters with connections to the noble Order of the Gauntlet complete a mission in which they free a town from the tyranny of a blue dragon. Because the order likes to punish evildoers, you might increase each character's renown within the order by 1. Conversely, if killing the dragon was a mission given to the adventurers by a senior member of the order, completing the task might instead increase each character's renown by 2, showing the adventurers as effective allies.",
+				"Meanwhile, the party's rogue might have looted a box of rare poisons from the dragon's hoard and sold it to a fence who is secretly a Zhentarim agent. You might increase the rogue's renown within the Zhentarim by 2 since this action directly increased that group's power and wealth, even though the task was not assigned by an agent of the Zhentarim.",
+				"Benefits of Renown",
+				"The benefits of increasing renown within an organization can include rank and authority, friendly attitudes from members of the organization, and other perks.",
+				"Rank",
+				"Characters can earn promotions as their renown increases. You can establish certain thresholds of renown that serve as prerequisites (though not necessarily the only prerequisites) for advancing in rank, as shown in the Examples of Faction Ranks table. For example, a character might join the Lords' Alliance after earning 1 renown within that organization, gaining the title of cloak. As the character's renown within the organization increases, he or she might be eligible for further increases in rank.",
+				"You can add rank prerequisites. For example, a character affiliated with the Lords' Alliance might have to be at least 5th level before becoming a stingblade, at least 10th level to be a warduke, and at least 15th level to be a lioncrown.",
+				"You can set these thresholds of renown to any numbers that work for your game, creating appropriate ranks and titles for the organizations in your campaign.",
+				"Examples of Faction Ranks",
+				"Renown",
+				"Harpers",
+				"Order of the Gauntlet",
+				"Emerald Enclave",
+				"Lords' Alliance",
+				"Zhentarim",
+				"Watcher",
+				"Chevall",
+				"Springwarden",
+				"Cloak",
+				"Fang",
+				"Harpshadow",
+				"Marcheon",
+				"Summerstrider",
+				"Redknife",
+				"Wolf",
+				"Brightcandle",
+				"Whitehawk",
+				"Autumnreaver",
+				"Stingblade",
+				"Viper",
+				"Wise Owl",
+				"Vindicator",
+				"Winterstalker",
+				"Warduke",
+				"Ardragon",
+				"High Harper",
+				"Righteous Hand",
+				"Master of the Wild",
+				"Lioncrown",
+				"Dread Lord",
+				"Attitudes of Organization Members",
+				"As a character's renown within an organization grows, members of that organization are increasingly likely to have heard of the character. You can set thresholds at which the default attitude of an organization's members toward the character becomes indifferent or friendly. For example, members of the Emerald Enclave—a faction dedicated to preserving the natural order—might be less friendly toward characters who have not cultivated at least 3 renown within that organization, becoming friendly by default only when a character has gained 10 renown within the Emerald Enclave. These thresholds apply only to the default attitude of most members of an organization, and such attitudes aren't automatic. NPC faction members might dislike an adventurer despite that character's renown—or perhaps because of it.",
+				"Perks",
+				"Earning a rank within an organization comes with certain benefits, as defined by you. A character of low rank might gain access to a reliable contact and adventure leads, a safe house, or a trader willing to offer a discount on adventuring gear. A middle-ranked character might gain a follower (see chapter 4, \"Creating Nonplayer Characters\"), access to potions and scrolls, the ability to call in a favor, or backup on dangerous missions. A high-ranking character might be able to call on a small army, take custody of a rare magic item, gain access to a helpful spellcaster, or assign special missions to members of lower rank.",
+				"Downtime Activities",
+				"You might allow characters to spend downtime between adventures building relationships and gaining renown within an organization. For more information on downtime activities, see chapter 6, \"Between Adventures.\"",
+				"Losing Renown",
+				"Disagreements with members of an organization aren't enough to cause a loss of renown within that organization. However, serious offenses committed against the organization or its members can result in a loss of renown and rank within the organization. The extent of the loss depends on the infraction and is left to your discretion. A character's renown within an organization can never drop below 0.",
+				"Piety",
+				"With a few alterations, the renown system can also serve as a measure of a character's link to the gods. It's a great option for campaigns where the gods take active roles in the world.",
+				"Using this approach, you track renown based on specific divine figures in your campaign. Each character has the option to select a patron deity or pantheon with goals, doctrine, and taboos that you have created. Any renown he or she earns is called piety. A character gains piety for honoring his or her gods, fulfilling their commands, and respecting their taboos. A character loses piety for working against those gods, dishonoring them, defiling their temples, and foiling their aims.",
+				"The gods bestow favors on those who prove their devotion. With each rank of piety gained, a character can pray for divine favor once per day. This favor usually comes in the form of a cleric spell like bless. The favor often comes with a sign of the divine benefactor; for example, a character dedicated to Thor might receive a spell accompanied by the boom of thunder.",
+				"A high level of piety can also lead to a character gaining a more persistent benefit, in the form of a blessing or charm (see chapter 7, \"Treasure,\" for such supernatural gifts)."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Rest Variants|DMG",
+			"hint": {
+				"Rest Variants": "休息變體"
+			},
+			"s": [
+				"Rest Variants",
+				"The rules for short and long rests presented in chapter 8 of the {@book Player's Handbook|PHB|8|Resting} work well for a heroic-style campaign. Characters can go toe-to-toe with deadly foes, take damage to within an inch of their lives, yet still be ready to fight again the next day. If this approach doesn't fit your campaign, consider the following variants.",
+				"Epic Heroism",
+				"This variant uses a short rest of 5 minutes and a long rest of 1 hour. This change makes combat more routine, since characters can easily recover from every battle. You might want to make combat encounters more difficult to compensate.",
+				"Spellcasters using this system can afford to burn through spell slots quickly, especially at higher levels. Consider allowing spellcasters to restore expended spell slots equal to only half their maximum spell slots (rounded down) at the end of a long rest, and to limit spell slots restored to 5th level or lower. Only a full 8-hour rest will allow a spellcaster to restore all spell slots and to regain spell slots of 6th level or higher.",
+				"Gritty Realism",
+				"This variant uses a short rest of 8 hours and a long rest of 7 days. This puts the brakes on the campaign, requiring the players to carefully judge the benefits and drawbacks of combat. Characters can't afford to engage in too many battles in a row, and all adventuring requires careful planning.",
+				"This approach encourages the characters to spend time out of the dungeon. It's a good option for campaigns that emphasize intrigue, politics, and interactions among other PCs, and in which combat is rare or something to be avoided rather than rushed into."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Scroll Mishaps|DMG",
+			"hint": {
+				"Scroll Mishaps": "卷軸失誤"
+			},
+			"s": [
+				"Scroll Mishaps",
+				"A creature who tries and fails to cast a spell from a {@item spell scroll} must make a {@dc 10} Intelligence saving throw. If the saving throw fails, roll on the Scroll Mishap table.",
+				"Scroll Mishap",
+				"d6",
+				"Result",
+				"A surge of magical energy deals the caster {@damage 1d6} force damage per level of the spell.",
+				"The spell affects the caster or an ally (determined randomly) instead of the intended target, or it affects a random target nearby if the caster was the intended target. ",
+				"The spell affects a random location within the spell's range.",
+				"The spell's effect is contrary to its normal one, but neither harmful nor beneficial. For instance, a {@spell fireball} might produce an area of harmless cold.",
+				"The caster suffers a minor but bizarre effect related to the spell. Such effects last only as long as the original spell's duration, or {@dice 1d10} minutes for spells that take effect instantaneously. For example, a {@spell fireball} might cause smoke to billow from the caster's ears for {@dice 1d10} minutes. ",
+				"The spell activates after {@dice 1d12} hours. If the caster was the intended target, the spell takes effect normally. If the caster was not the intended target, the spell goes off in the general direction of the intended target, up to the spell's maximum range, if the target has moved away."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Skill Variants|DMG",
+			"hint": {
+				"Skill Variants": "技能變體"
+			},
+			"s": [
+				"Skill Variants",
+				"A skill dictates the circumstances under which a character can add his or her proficiency bonus to an ability check. Skills define those circumstances by referring to different aspects of the six ability scores. For example, {@skill Acrobatics} and {@skill Stealth} are two different aspects of Dexterity, and a character can specialize in either or both.",
+				"You can dispense with skills and use one of the following variants. Choose whichever one best suits your campaign.",
+				"Ability Check Proficiency",
+				"With this variant rule, characters don't have skill proficiencies. Instead, each character has proficiency in two abilities: one tied to the character's class and one tied to the character's background. The Ability Proficiencies by Class table suggests a proficiency for each class, and you choose which ability is tied to a given background. Starting at 1st level, a character adds his or her proficiency bonus to any ability check tied to one or the other of these two abilities.",
+				"Ability Check Proficiency by Class",
+				"Class",
+				"Ability Check",
+				"Strength, Dexterity, or Wisdom",
+				"Any one",
+				"Intelligence, Wisdom, or Charisma",
+				"Intelligence or Wisdom",
+				"Strength, Dexterity, or Wisdom",
+				"Strength, Dexterity, or Intelligence",
+				"Strength, Wisdom, or Charisma",
+				"Strength, Dexterity, or Wisdom",
+				"Dexterity, Intelligence, Wisdom, or Charisma",
+				"Intelligence or Charisma",
+				"Intelligence or Charisma",
+				"Intelligence or Wisdom",
+				"The Expertise feature works differently than normal under this rule. At 1st level, instead of choosing two skill proficiencies, a character with the Expertise class feature chooses one of the abilities in which he or she has proficiency. Selecting an ability counts as two of the character's Expertise choices. If the character would gain an additional skill proficiency, that character instead selects another ability check in which to gain proficiency.",
+				"This option removes skills from the game and doesn't allow for much distinction among characters. For example, a character can't choose to emphasize persuasion or intimidation; he or she is equally adept at both.",
+				"Background Proficiency",
+				"With this variant rule, characters don't have skill or tool proficiencies. Anything that would grant the character a skill or tool proficiency provides no benefit. Instead, a character can add his or her proficiency bonus to any ability check to which the character's prior training and experience (reflected in the character's background) reasonably applies. The DM is the ultimate judge of whether the character's background applies.",
+				"For example, the player of a character with the noble background could reasonably argue that the proficiency bonus should apply to a Charisma check the character makes to secure an audience with the king. The player should be encouraged to explain in specific terms how the character's background applies. Not simply \"I'm a noble,\" but \"I spent three years before starting my adventuring career serving as my family's ambassador to the court, and this sort of thing is second nature to me now.\"",
+				"This simple system relies heavily on players developing their characters' histories. Don't let it result in endless debates about whether a character's proficiency bonus applies in a given situation. Unless a player's attempt to explain the relevance of the character's background makes everyone else at the table roll their eyes at its absurdity, go ahead and reward the player for making the effort.",
+				"If a character has the Expertise feature, instead of choosing skills and tools to gain the benefit of that feature, the player defines aspects of his or her background to which the benefit applies. Continuing the noble example, the player might decide to apply Expertise to \"situations where courtly manners and etiquette are paramount\" and \"figuring out the secret plots that court members hatch against one another.\"",
+				"Personality Trait Proficiency",
+				"With this variant rule, characters don't have skill proficiencies. Instead, a character can add his or her proficiency bonus to any ability check directly related to the character's positive personality traits. For example, a character with a positive personality trait of \"I never have a plan, but I'm great at making things up as I go along\" might apply the bonus when engaging in some off-the-cuff deception to get out of a tight spot. A player should come up with at least four positive personality traits when creating a character.",
+				"When a character's negative personality trait directly impacts an ability check, the character has disadvantage on the check. For example, a hermit whose negative trait is \"I often get lost in my own thoughts and contemplation, oblivious to my surroundings\" might have disadvantage on an ability check made to notice creatures sneaking up.",
+				"If a character has the Expertise feature, the player can apply its benefit to personality traits related to ability checks, instead of to skills or tools. If a character would gain a new skill or tool proficiency, the character instead gains a new positive personality trait.",
+				"This system relies heavily on players developing their characters' personalities. Make sure that different characters' traits—positive and negative—come into play with about the same frequency. Don't let a player get away with a positive trait that always seems to apply and a negative trait that never does.",
+				"At your discretion, you can also tie a character's ideals, bonds, and flaws to this system."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Spell Points|DMG",
+			"hint": {
+				"Spell Points": "法術點"
+			},
+			"s": [
+				"Spell Points",
+				"One way to modify how a class feels is to change how it uses its spells. With this variant system, a character who has the Spellcasting feature uses spell points instead spell slots to fuel spells. Spell points give a caster more flexibility, at the cost of greater complexity.",
+				"In this variant, each spell has a point cost based on its level. The Spell Point Cost table summarizes the cost in spell points of slots from 1st to 9th level. Cantrips don't require slots and therefore don't require spell points.",
+				"Instead of gaining a number of spell slots to cast your spells from the Spellcasting feature, you gain a pool of spell points instead. You expend a number of spell points to create a spell slot of a given level, and then use that slot to cast a spell. You can't reduce your spell points total to less than 0, and you regain all spent spell points when you finish a long rest.",
+				"Spells of 6th level and higher are particularly taxing to cast. You can use spell points to create one slot of each level of 6th or higher. You can't create another slot of the same level until you finish a long rest.",
+				"The number of spell points you have to spend is based on your level as a spellcaster, as shown in the Spell Points by Level table. Your level also determines the maximum-level spell slot you can create. Even though you might have enough points to create a slot above this maximum, you can't do so.",
+				"The Spell Points by Level table applies to {@class bard||bards}, {@class cleric||clerics}, {@class druid||druids}, {@class sorcerer||sorcerers}, and {@class wizard||wizards}. For a {@class paladin} or {@class ranger}, halve the character's level in that class and then consult the table. For a {@class fighter|phb|fighter (Eldritch Knight)|Eldritch Knight} or {@class rogue|phb|rogue (Arcane Trickster)|Arcane Trickster}, divide the character's level in that class by three.",
+				"This system can be applied to monsters that cast spells using spell slots, but it isn't recommended that you do so. Tracking spell point expenditures for a monster can be a hassle.",
+				"Spell Point Cost",
+				"Spell Level",
+				"Point Cost",
+				"1st",
+				"2nd",
+				"3rd",
+				"4th",
+				"5th",
+				"6th",
+				"7th",
+				"8th",
+				"9th",
+				"Spell Points by Level",
+				"Class Level",
+				"Spell Points",
+				"Max Spell Level",
+				"1st",
+				"1st",
+				"2nd",
+				"1st",
+				"3rd",
+				"2nd",
+				"4th",
+				"2nd",
+				"5th",
+				"3rd",
+				"6th",
+				"3rd",
+				"7th",
+				"4th",
+				"8th",
+				"4th",
+				"9th",
+				"5th",
+				"10th",
+				"5th",
+				"11th",
+				"6th",
+				"12th",
+				"6th",
+				"13th",
+				"7th",
+				"14th",
+				"7th",
+				"15th",
+				"8th",
+				"16th",
+				"8th",
+				"17th",
+				"9th",
+				"18th",
+				"9th",
+				"19th",
+				"9th",
+				"20th",
+				"9th"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Wands That Don't Recharge|DMG",
+			"hint": {
+				"Wands That Don't Recharge": "不會充能的魔杖"
+			},
+			"s": [
+				"Wands That Don't Recharge",
+				"A typical wand has expendable charges. If you'd like wands to be a limited resource, you can make some of them incapable of regaining charges. Consider increasing the base number of charges in such a wand, to a maximum of 25 charges. These charges are never regained once they're expended."
+			]
+		}
+	]
+}

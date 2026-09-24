@@ -1,0 +1,60 @@
+{
+	"batch": "vr-MM",
+	"items": [
+		{
+			"prop": "variantrule",
+			"key": "Familiars|MM",
+			"hint": {
+				"Familiars": "魔寵"
+			},
+			"s": [
+				"Familiars",
+				"Any spellcaster that can cast the {@spell find familiar} spell (such as an apprentice, warlock, or wizard) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the {@book Player's Handbook|PHB}) or some other {@filter Tiny monster|bestiary|size=T|miscellaneous=!swarm}, such as a {@creature crawling claw}, an {@creature imp}, a {@creature pseudodragon}, or a {@creature quasit}.",
+				"{@note This variant is {@link intended for NPCs.|https://twitter.com/JeremyECrawford/status/920714594334654465}}"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Player Characters as Lycanthropes|MM",
+			"hint": {
+				"Player Characters as Lycanthropes": "身為獸化人的玩家角色"
+			},
+			"s": [
+				"Player Characters as Lycanthropes",
+				"A character who becomes a lycanthrope retains his or her statistics except as specified by lycanthrope type. The character gains the lycanthrope's speeds in non-humanoid form, damage immunities, traits, and actions that don't involve equipment. The character is proficient with the lycanthrope's natural attacks, such as its bite or claws, which deal damage as shown in the lycanthrope's statistics. The character can't speak while in animal form.",
+				"A non-lycanthrope humanoid hit by an attack that carries the curse of lycanthropy must succeed on a Constitution saving throw ({@dc 8} + the lycanthrope's proficiency bonus + the lycanthrope's Constitution modifier) or be cursed. If the character embraces the curse, his or her alignment becomes the one defined for the lycanthrope. The DM is free to decide that a change in alignment places the character under DM control until the curse of lycanthropy is removed.",
+				"The following information applies to specific lycanthropes.",
+				"{@creature Werebear}",
+				"The character gains a Strength of 19 if his or her score isn't already higher, and a +1 bonus to AC while in bear or hybrid form (from natural armor). Attack and damage rolls for the natural weapons are based on Strength.",
+				"{@creature Wereboar}",
+				"The character gains a Strength of 17 if his or her score isn't already higher, and a +1 bonus to AC while in boar or hybrid form (from natural armor). Attack and damage rolls for the tusks are based on Strength. For the Charge trait, the DC is 8 + the character's proficiency bonus + Strength modifier.",
+				"{@creature Wererat}",
+				"The character gains a Dexterity of 15 if his or her score isn't already higher. Attack and damage rolls for the bite are based on whichever is higher of the character's Strength and Dexterity.",
+				"{@creature Weretiger}",
+				"The character gains a Strength of 17 if his or her score isn't already higher. Attack and damage rolls for the natural weapons are based on Strength. For the Pounce trait, the DC is 8 + the character's proficiency bonus + Strength modifier.",
+				"{@creature Werewolf}",
+				"The character gains a Strength of 15 if his or her score isn't already higher, and a +1 bonus to AC while in wolf or hybrid form (from natural armor). Attack and damage rolls for the natural weapons are based on Strength.",
+				"{@creature Wereraven|VRGR}",
+				"A character cursed with wereraven lycanthropy gains a Dexterity of 15 if his or her score isn't already higher. Attack and damage rolls for the wereraven's bite are based on whichever is higher of the character's Strength and Dexterity. The bite of a wereraven in raven form deals 1 piercing damage (no ability modifier applies to this damage) and carries the curse of lycanthropy.",
+				"{@creature Werebat|WDMM}",
+				"A player character who becomes a werebat gains a Dexterity of 17 if their score isn't already higher. Attack and damage rolls for the werebat's bite attack are based on the character's Strength or Dexterity score, whichever is higher.",
+				"{@creature Loup Garou|VRGR}",
+				"A Humanoid who succumbs to a loup garou's lycanthropy becomes a {@creature werewolf} (see above). This form of lycanthropy can't be removed while the loup garou that inflicted the curse lives.",
+				"Once a loup garou is slain, a {@spell remove curse} spell cast during the night of a full moon on any afflicted werewolf it created forces the target to make a {@dc 17} Constitution saving throw. On a success, the curse is broken, and the target returns to its normal form and gains 3 levels of {@condition exhaustion}. On a failure, the curse remains, and the target automatically fails any saving throw made to break this curse for 1 month."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Player Characters as Vampires|MM",
+			"hint": {
+				"Player Characters as Vampires": "身為吸血鬼的玩家角色"
+			},
+			"s": [
+				"Player Characters as Vampires",
+				"The game statistics of a player character transformed into a {@creature vampire spawn} and then a {@creature vampire} don't change, except that the character's Strength, Dexterity, and Constitution scores become 18 if they aren't higher. In addition, the character gains the vampire's damage resistances, {@sense darkvision}, traits, and actions. Attack and damage rolls for the vampire's attacks are based on Strength. The save DC for Charm is 8 + the vampire's proficiency bonus + the vampire's Charisma modifier. The character's alignment becomes lawful evil, and the DM might take control of the character until the vampirism is reversed with a {@spell wish} spell or the character is killed and brought back to life.",
+				"Jiangshi",
+				"Humanoids killed by a {@creature jiangshi|VRGR} rise as life-hungry corpses and might turn into jiangshi themselves if they feed upon the living."
+			]
+		}
+	]
+}

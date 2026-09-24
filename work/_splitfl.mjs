@@ -3,13 +3,14 @@ import fs from "fs";
 import tm from "./_tm.mjs";
 import {RC, RULE} from "./_rc.mjs";
 import base from "./_fromdist.mjs";
+const BM = fs.existsSync("work/_bookmap.json") ? JSON.parse(fs.readFileSync("work/_bookmap.json")) : {};
 const [b, size = 10000] = process.argv.slice(2);
 const en = JSON.parse(fs.readFileSync(`work/${b}.en.json`));
 const bs = base(b);
 const sv = fs.existsSync(`work/${b}.salv.json`) ? JSON.parse(fs.readFileSync(`work/${b}.salv.json`)) : [];
 const groups = [[]]; let cur = 0;
 en.items.forEach((it, i) => {
-	const len = it.s.reduce((a, s, j) => a + ((bs[i][j] ?? sv[i]?.[j] ?? RC[s] ?? tm[s] ?? RULE(s)) ? 0 : s.length), 0);
+	const len = it.s.reduce((a, s, j) => a + ((bs[i][j] ?? sv[i]?.[j] ?? BM[s] ?? RC[s] ?? tm[s] ?? RULE(s)) ? 0 : s.length), 0);
 	if (!len) { groups[0].push(i); return; }
 	if (groups.length === 1 || cur + len > +size) { groups.push([]); cur = 0; }
 	groups.at(-1).push(i); cur += len;

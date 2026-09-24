@@ -1,0 +1,150 @@
+{
+	"batch": "vr-DMG-3",
+	"items": [
+		{
+			"prop": "variantrule",
+			"key": "Explosives|DMG",
+			"hint": {
+				"Explosives": "爆裂物",
+				"Bomb": "炸彈"
+			},
+			"s": [
+				"Explosives",
+				"A campaign might include explosives from the Renaissance or the modern world (the latter are priceless), as presented in the Explosives table.",
+				"Bomb",
+				"As an action, a character can light this bomb and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must succeed on a {@dc 12} Dexterity saving throw or take {@damage 3d6} fire damage.",
+				"Gunpowder",
+				"Gunpowder is chiefly used to propel a bullet out of the barrel of a pistol or rifle, or it is formed into a bomb. Gunpowder is sold in small wooden kegs and in water-resistant powder horns.",
+				"Setting fire to a container full of gunpowder can cause it to explode, dealing fire damage to creatures within 10 feet of it ({@dice 3d6} for a powder horn, {@dice 7d6} for a keg). A successful {@dc 12} Dexterity saving throw halves the damage. Setting fire to an ounce of gunpowder causes it to flare for 1 round, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
+				"Dynamite",
+				"As an action, a creature can light a stick of dynamite and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must make a {@dc 12} Dexterity saving throw, taking {@damage 3d6} bludgeoning damage on a failed save, or half as much damage on a successful one.",
+				"A character can bind sticks of dynamite together so they explode at the same time. Each additional stick increases the damage by {@damage 1d6} (to a maximum of {@damage 10d6}) and the burst radius by 5 feet (to a maximum of 20 feet).",
+				"Dynamite can be rigged with a longer fuse to explode after a set amount of time, usually 1 to 6 rounds. Roll initiative for the dynamite. After the set number of rounds goes by, the dynamite explodes on that initiative.",
+				"Grenades",
+				"As an action, a character can throw a grenade at a point up to 60 feet away. With a grenade launcher, the character can propel the grenade up to 120 feet away.",
+				"Each creature within 20 feet of an exploding fragmentation grenade must make a {@dc 15} Dexterity saving throw, taking {@damage 5d6} piercing damage on a failed save, or half as much damage on a successful one.",
+				"One round after a smoke grenade lands, it emits a cloud of smoke that creates a heavily obscured area in a 20-foot radius. A moderate wind (at least 10 miles per hour) disperses the smoke in 4 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Facing|DMG",
+			"hint": {
+				"Facing": "朝向"
+			},
+			"s": [
+				"Facing",
+				"If you want the precision of knowing which way a creature is facing, consider using this optional rule. Whenever a creature ends its move, it can change its facing. Each creature has a front arc (the direction it faces), left and right side arcs, and a rear arc. A creature can also change its facing as a reaction when any other creature moves.",
+				"A creature can normally target only creatures in its front or side arcs. It can't see into its rear arc. This means an attacker in the creature's rear arc makes attack rolls against it with advantage.",
+				"Shields apply their bonus to AC only against attacks from the front arc or the same side arc as the shield. For example, a fighter with a shield on the left arm can use it only against attacks from the front and left arcs.",
+				"Feel free to determine that not all creatures have every type of arc. For example, an amorphous ochre jelly could treat all of its arcs as front ones, while a hydra might have three front arcs and one rear one. On squares, you pick one side of a creature's space as the direction it is facing. Draw a diagonal line outward from each corner of this side to determine the squares in its front arc. The opposite side of the space determines its rear arc in the same way. The remaining spaces to either side of the creature form its side arcs.",
+				"On hexes, determining the front, rear, and side arcs requires more judgment. Pick one side of the creature's space and create a wedge shape expanding out from there for the front arc, and another on the opposite side of the creature for the rear arc. The remaining spaces to either side of the creature are its side arcs.",
+				"A square or hex might be in more than one arc, depending on how you draw the lines from a creature's space. If more than half of a square or hex lies in one arc, it is in that arc. If it is split exactly down the middle, use this rule: if half of it lies in the front arc, it's in that arc. If half of it is in a side arc and the rear arc, it's in the side arc."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Fear and Horror|DMG",
+			"hint": {
+				"Fear and Horror": "恐懼與驚駭",
+				"Fear": "恐懼術"
+			},
+			"s": [
+				"Fear and Horror",
+				"The rules for fear and horror can help you sustain an atmosphere of dread in a dark fantasy campaign.",
+				"Fear",
+				"When adventurers confront threats they have no hope of overcoming, you can call for them to make a Wisdom saving throw. Set the DC according to the circumstances. A character who fails the save becomes {@condition frightened} for 1 minute. The character can repeat the saving throw at the end of each of his or her turns, ending the effect on the character on a successful save.",
+				"Horror",
+				"Horror involves more than simple fright. It entails revulsion and anguish. Often it arises when adventurer see something completely contrary to the common understanding of what can and should occur in the world, or upon the realization of a dreadful truth.",
+				"In such a situation, you can call on characters to make a Charisma saving throw to resist the horror. Set the DC based on the magnitude of the horrific circumstances. On a failed save, a character gains a {@table short-Term Madness||short-term} or {@table Long-Term Madness||long-term} form of madness that you choose or determine randomly, as detailed in chapter 8, \"Running the Game.\""
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Firearms|DMG",
+			"hint": {
+				"Firearms": "火器",
+				"Proficiency": "熟練",
+				"Ammunition": "彈藥"
+			},
+			"s": [
+				"Firearms",
+				"If you want to model the swashbuckling style of The Three Musketeers and similar tales, you can introduce gunpowder weapon to your campaign that are associated with the Renaissance. Similarly, in a campaign where a spaceship has crashed or elements of modern-day Earth are present, futuristic or modern firearms might appear. The Firearms table provides examples of firearms from all three of those periods. The modern and futuristic items are priceless.",
+				"Proficiency",
+				"It's up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn't have such proficiency. During their downtime, characters can use the {@variantrule Downtime Activity: Training|PHB|training} rules in the {@book Player's Handbook|PHB} to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use.",
+				"Properties",
+				"Firearms use special ammunition, and some of them have the burst fire or reload property.",
+				"Ammunition",
+				"The ammunition of a firearm is destroyed upon use. Renaissance and modern firearms use bullets. Futuristic firearms are powered by a special type of ammunition called energy cells. An energy cell contains enough power for all the shots its firearm can make.",
+				"Burst Fire",
+				"A weapon that has the burst fire property can make a normal single-target attack, or it can spray a 10-foot-cube area within normal range with shots. Each creature in the area must succeed on a {@dc 15} Dexterity saving throw or take the weapon's normal damage. This action uses ten pieces of ammunition.",
+				"Reload",
+				"A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice)."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Flanking|DMG",
+			"hint": {
+				"Flanking": "夾擊"
+			},
+			"s": [
+				"Flanking",
+				"If you regularly use miniatures, flanking gives combatants a simple way to gain advantage on attack rolls against a common enemy.",
+				"A creature can't flank an enemy that it can't see. A creature also can't flank while it is {@condition incapacitated}. A Large or larger creature is flanking as long as at least one square or hex of its space qualifies for flanking.",
+				"Flanking on Squares",
+				"When a creature and at least one of its allies are adjacent to an enemy and on opposite sides or corners of the enemy's space, they flank that enemy, and each of them has advantage on melee attack rolls against that enemy.",
+				"When in doubt about whether two creatures flank an enemy on a grid, trace an imaginary line between the centers of the creatures' spaces. If the line passes through opposite sides or corners of the enemy's space, the enemy is flanked.",
+				"Flanking on Hexes",
+				"When a creature and at least one of its allies are adjacent to an enemy and on opposite sides of the enemy's space, they flank that enemy, and each of them has advantage on attack rolls against that enemy. On hexes, count around the enemy from one creature to its ally. Against a Medium or smaller creature, the allies flank if there are 2 hexes between them. Against a Large creature, the allies flank if there are 4 hexes between them. Against a Huge creature, they must have 5 hexes between them. Against a Gargantuan creature, they must have at least 6 hexes between them."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Healing|DMG",
+			"hint": {
+				"Healing": "治療"
+			},
+			"s": [
+				"Healing",
+				"These optional rules make it easier or harder for adventurers to recover from injury, either increasing or reducing the amount of time your players can spend adventuring before rest is required.",
+				"Healer's Kit Dependency",
+				"A character can't spend any Hit Dice after finishing a short rest until someone expends one use of a healer's kit to bandage and treat the character's wounds.",
+				"Healing Surges",
+				"This optional rule allows characters to heal up in the thick of combat and works well for parties that feature few or no characters with healing magic, or for campaigns in which magical healing is rare.",
+				"As an action, a character can use a healing surge and spend up to half his or her Hit Dice. For each Hit Die spent in this way, the player rolls the die and adds the character's Constitution modifier. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll.",
+				"A character who uses a healing surge can't do so again until he or she finishes a short or long rest. Under this optional rule, a character regains all spent Hit Dice at the end of a long rest. With a short rest, a character regains Hit Dice equal to his or her level divided by four (minimum of one dice).",
+				"For a more super-heroic feel, you can let a character use a healing surge as a bonus action, rather than as an action.",
+				"Slow Natural Healing",
+				"Characters don't regain hit points at the end of a long rest. Instead, a character can spend Hit Dice to heal at the end of a long rest, just as with a short rest.",
+				"This optional rule prolongs the amount of time that characters need to recover from their wounds without the benefits of magical healing and works well for grittier, more realistic campaigns."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Hero Points|DMG",
+			"hint": {
+				"Hero Points": "英雄點"
+			},
+			"s": [
+				"Hero Points",
+				"Hero points work well in epic fantasy and mythic campaigns in which the characters are meant to be more like superheroes than the average adventurer is.",
+				"With this option, a character starts with 5 hero points at 1st level. Each time the character gains a level, he or she loses any unspent hero points and gains a new total equal to 5 + half the character's level.",
+				"A player can spend a hero point whenever he or she makes an attack roll, an ability check, or a saving throw The player can spend the hero point after the roll is made but before any of its results are applied. Spending the hero point allows the player to roll a {@dice d6} and add it to the {@dice d20}, possibly turning a failure into a success. A player can spend only 1 hero point per roll.",
+				"In addition, whenever a character fails a death saving throw, the player can spend one hero point to turn the failure into a success."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Hitting Cover|DMG",
+			"hint": {
+				"Hitting Cover": "擊中掩護"
+			},
+			"s": [
+				"Hitting Cover",
+				"When a ranged attack misses a target that has cover, you can use this optional rule to determine whether the cover was struck by the attack.",
+				"First, determine whether the attack roll would have hit the protected target without the cover. If the attack roll falls within a range low enough to miss the target but high enough to strike the target if there had been no cover, the object used for cover is struck. If a creature is providing cover for the missed creature and the attack roll exceeds the AC of the covering creature, the covering creature is hit."
+			]
+		}
+	]
+}

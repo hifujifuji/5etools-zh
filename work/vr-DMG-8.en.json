@@ -1,0 +1,168 @@
+{
+	"batch": "vr-DMG-8",
+	"items": [
+		{
+			"prop": "variantrule",
+			"key": "Rest Variants|DMG",
+			"hint": {
+				"Rest Variants": "休息變體"
+			},
+			"s": [
+				"Rest Variants",
+				"The rules for short and long rests presented in chapter 8 of the {@book Player's Handbook|PHB|8|Resting} work well for a heroic-style campaign. Characters can go toe-to-toe with deadly foes, take damage to within an inch of their lives, yet still be ready to fight again the next day. If this approach doesn't fit your campaign, consider the following variants.",
+				"Epic Heroism",
+				"This variant uses a short rest of 5 minutes and a long rest of 1 hour. This change makes combat more routine, since characters can easily recover from every battle. You might want to make combat encounters more difficult to compensate.",
+				"Spellcasters using this system can afford to burn through spell slots quickly, especially at higher levels. Consider allowing spellcasters to restore expended spell slots equal to only half their maximum spell slots (rounded down) at the end of a long rest, and to limit spell slots restored to 5th level or lower. Only a full 8-hour rest will allow a spellcaster to restore all spell slots and to regain spell slots of 6th level or higher.",
+				"Gritty Realism",
+				"This variant uses a short rest of 8 hours and a long rest of 7 days. This puts the brakes on the campaign, requiring the players to carefully judge the benefits and drawbacks of combat. Characters can't afford to engage in too many battles in a row, and all adventuring requires careful planning.",
+				"This approach encourages the characters to spend time out of the dungeon. It's a good option for campaigns that emphasize intrigue, politics, and interactions among other PCs, and in which combat is rare or something to be avoided rather than rushed into."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Scroll Mishaps|DMG",
+			"hint": {
+				"Scroll Mishaps": "卷軸失誤"
+			},
+			"s": [
+				"Scroll Mishaps",
+				"A creature who tries and fails to cast a spell from a {@item spell scroll} must make a {@dc 10} Intelligence saving throw. If the saving throw fails, roll on the Scroll Mishap table.",
+				"Scroll Mishap",
+				"d6",
+				"Result",
+				"A surge of magical energy deals the caster {@damage 1d6} force damage per level of the spell.",
+				"The spell affects the caster or an ally (determined randomly) instead of the intended target, or it affects a random target nearby if the caster was the intended target. ",
+				"The spell affects a random location within the spell's range.",
+				"The spell's effect is contrary to its normal one, but neither harmful nor beneficial. For instance, a {@spell fireball} might produce an area of harmless cold.",
+				"The caster suffers a minor but bizarre effect related to the spell. Such effects last only as long as the original spell's duration, or {@dice 1d10} minutes for spells that take effect instantaneously. For example, a {@spell fireball} might cause smoke to billow from the caster's ears for {@dice 1d10} minutes. ",
+				"The spell activates after {@dice 1d12} hours. If the caster was the intended target, the spell takes effect normally. If the caster was not the intended target, the spell goes off in the general direction of the intended target, up to the spell's maximum range, if the target has moved away."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Skill Variants|DMG",
+			"hint": {
+				"Skill Variants": "技能變體"
+			},
+			"s": [
+				"Skill Variants",
+				"A skill dictates the circumstances under which a character can add his or her proficiency bonus to an ability check. Skills define those circumstances by referring to different aspects of the six ability scores. For example, {@skill Acrobatics} and {@skill Stealth} are two different aspects of Dexterity, and a character can specialize in either or both.",
+				"You can dispense with skills and use one of the following variants. Choose whichever one best suits your campaign.",
+				"Ability Check Proficiency",
+				"With this variant rule, characters don't have skill proficiencies. Instead, each character has proficiency in two abilities: one tied to the character's class and one tied to the character's background. The Ability Proficiencies by Class table suggests a proficiency for each class, and you choose which ability is tied to a given background. Starting at 1st level, a character adds his or her proficiency bonus to any ability check tied to one or the other of these two abilities.",
+				"Ability Check Proficiency by Class",
+				"Class",
+				"Ability Check",
+				"Strength, Dexterity, or Wisdom",
+				"Any one",
+				"Intelligence, Wisdom, or Charisma",
+				"Intelligence or Wisdom",
+				"Strength, Dexterity, or Wisdom",
+				"Strength, Dexterity, or Intelligence",
+				"Strength, Wisdom, or Charisma",
+				"Strength, Dexterity, or Wisdom",
+				"Dexterity, Intelligence, Wisdom, or Charisma",
+				"Intelligence or Charisma",
+				"Intelligence or Charisma",
+				"Intelligence or Wisdom",
+				"The Expertise feature works differently than normal under this rule. At 1st level, instead of choosing two skill proficiencies, a character with the Expertise class feature chooses one of the abilities in which he or she has proficiency. Selecting an ability counts as two of the character's Expertise choices. If the character would gain an additional skill proficiency, that character instead selects another ability check in which to gain proficiency.",
+				"This option removes skills from the game and doesn't allow for much distinction among characters. For example, a character can't choose to emphasize persuasion or intimidation; he or she is equally adept at both.",
+				"Background Proficiency",
+				"With this variant rule, characters don't have skill or tool proficiencies. Anything that would grant the character a skill or tool proficiency provides no benefit. Instead, a character can add his or her proficiency bonus to any ability check to which the character's prior training and experience (reflected in the character's background) reasonably applies. The DM is the ultimate judge of whether the character's background applies.",
+				"For example, the player of a character with the noble background could reasonably argue that the proficiency bonus should apply to a Charisma check the character makes to secure an audience with the king. The player should be encouraged to explain in specific terms how the character's background applies. Not simply \"I'm a noble,\" but \"I spent three years before starting my adventuring career serving as my family's ambassador to the court, and this sort of thing is second nature to me now.\"",
+				"This simple system relies heavily on players developing their characters' histories. Don't let it result in endless debates about whether a character's proficiency bonus applies in a given situation. Unless a player's attempt to explain the relevance of the character's background makes everyone else at the table roll their eyes at its absurdity, go ahead and reward the player for making the effort.",
+				"If a character has the Expertise feature, instead of choosing skills and tools to gain the benefit of that feature, the player defines aspects of his or her background to which the benefit applies. Continuing the noble example, the player might decide to apply Expertise to \"situations where courtly manners and etiquette are paramount\" and \"figuring out the secret plots that court members hatch against one another.\"",
+				"Personality Trait Proficiency",
+				"With this variant rule, characters don't have skill proficiencies. Instead, a character can add his or her proficiency bonus to any ability check directly related to the character's positive personality traits. For example, a character with a positive personality trait of \"I never have a plan, but I'm great at making things up as I go along\" might apply the bonus when engaging in some off-the-cuff deception to get out of a tight spot. A player should come up with at least four positive personality traits when creating a character.",
+				"When a character's negative personality trait directly impacts an ability check, the character has disadvantage on the check. For example, a hermit whose negative trait is \"I often get lost in my own thoughts and contemplation, oblivious to my surroundings\" might have disadvantage on an ability check made to notice creatures sneaking up.",
+				"If a character has the Expertise feature, the player can apply its benefit to personality traits related to ability checks, instead of to skills or tools. If a character would gain a new skill or tool proficiency, the character instead gains a new positive personality trait.",
+				"This system relies heavily on players developing their characters' personalities. Make sure that different characters' traits—positive and negative—come into play with about the same frequency. Don't let a player get away with a positive trait that always seems to apply and a negative trait that never does.",
+				"At your discretion, you can also tie a character's ideals, bonds, and flaws to this system."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Spell Points|DMG",
+			"hint": {
+				"Spell Points": "法術點"
+			},
+			"s": [
+				"Spell Points",
+				"One way to modify how a class feels is to change how it uses its spells. With this variant system, a character who has the Spellcasting feature uses spell points instead spell slots to fuel spells. Spell points give a caster more flexibility, at the cost of greater complexity.",
+				"In this variant, each spell has a point cost based on its level. The Spell Point Cost table summarizes the cost in spell points of slots from 1st to 9th level. Cantrips don't require slots and therefore don't require spell points.",
+				"Instead of gaining a number of spell slots to cast your spells from the Spellcasting feature, you gain a pool of spell points instead. You expend a number of spell points to create a spell slot of a given level, and then use that slot to cast a spell. You can't reduce your spell points total to less than 0, and you regain all spent spell points when you finish a long rest.",
+				"Spells of 6th level and higher are particularly taxing to cast. You can use spell points to create one slot of each level of 6th or higher. You can't create another slot of the same level until you finish a long rest.",
+				"The number of spell points you have to spend is based on your level as a spellcaster, as shown in the Spell Points by Level table. Your level also determines the maximum-level spell slot you can create. Even though you might have enough points to create a slot above this maximum, you can't do so.",
+				"The Spell Points by Level table applies to {@class bard||bards}, {@class cleric||clerics}, {@class druid||druids}, {@class sorcerer||sorcerers}, and {@class wizard||wizards}. For a {@class paladin} or {@class ranger}, halve the character's level in that class and then consult the table. For a {@class fighter|phb|fighter (Eldritch Knight)|Eldritch Knight} or {@class rogue|phb|rogue (Arcane Trickster)|Arcane Trickster}, divide the character's level in that class by three.",
+				"This system can be applied to monsters that cast spells using spell slots, but it isn't recommended that you do so. Tracking spell point expenditures for a monster can be a hassle.",
+				"Spell Point Cost",
+				"Spell Level",
+				"Point Cost",
+				"1st",
+				"2nd",
+				"3rd",
+				"4th",
+				"5th",
+				"6th",
+				"7th",
+				"8th",
+				"9th",
+				"Spell Points by Level",
+				"Class Level",
+				"Spell Points",
+				"Max Spell Level",
+				"1st",
+				"1st",
+				"2nd",
+				"1st",
+				"3rd",
+				"2nd",
+				"4th",
+				"2nd",
+				"5th",
+				"3rd",
+				"6th",
+				"3rd",
+				"7th",
+				"4th",
+				"8th",
+				"4th",
+				"9th",
+				"5th",
+				"10th",
+				"5th",
+				"11th",
+				"6th",
+				"12th",
+				"6th",
+				"13th",
+				"7th",
+				"14th",
+				"7th",
+				"15th",
+				"8th",
+				"16th",
+				"8th",
+				"17th",
+				"9th",
+				"18th",
+				"9th",
+				"19th",
+				"9th",
+				"20th",
+				"9th"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Wands That Don't Recharge|DMG",
+			"hint": {
+				"Wands That Don't Recharge": "不會充能的魔杖"
+			},
+			"s": [
+				"Wands That Don't Recharge",
+				"A typical wand has expendable charges. If you'd like wands to be a limited resource, you can make some of them incapable of regaining charges. Consider increasing the base number of charges in such a wand, to a maximum of 25 charges. These charges are never regained once they're expended."
+			]
+		}
+	]
+}

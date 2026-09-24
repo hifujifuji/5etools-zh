@@ -1,0 +1,120 @@
+{
+	"batch": "vr-GoS-6",
+	"items": [
+		{
+			"prop": "variantrule",
+			"key": "Ship Stat Blocks|GOS",
+			"hint": {
+				"Ship Stat Blocks": "船隻數據欄",
+				"Size": "尺寸",
+				"Ability Scores": "屬性值",
+				"Actions": "動作",
+				"Armor Class": "護甲等級",
+				"Hit Points": "生命值",
+				"Damage Threshold": "傷害閾值"
+			},
+			"s": [
+				"Ship Stat Blocks",
+				"To aid in running adventures where ships engage in combat, undertake precise navigation, or face situations where their various capabilities become relevant, the following section presents new rules and stat blocks for a spectrum of vessels.",
+				"Basic Statistics",
+				"A ship stat block has three main parts: basic statistics, components, and action options. Ships can't take any actions on their own. Without effort from its crew, a ship might drift on the water, come to a stop, or careen out of control.",
+				"Size",
+				"Most ships are Large, Huge, or Gargantuan. A ship's size category is determined by its length or width, whichever is longer. For instance, a ship that is 10 feet long and 20 feet wide would use the size category that has a 20-foot width, which means the ship is Gargantuan.",
+				"Space",
+				"A ship doesn't have a square space unless its stat block specifies otherwise. For example, a ship that is 20 feet long and 10 feet wide occupies a 20-by-10-foot space.",
+				"A ship can't move into a space that is too small to accommodate it. If it tries to do so, it crashes, as described in the \"Crashing a Ship\" section.",
+				"Capacity",
+				"A ship's stat block indicates how many creatures and how much cargo it can carry. Creatures include both the crew of the vessel and any passengers who might ride along. Passengers don't generally engage in running a ship, but they also don't need to be mere bystanders. Seasick merchants and marines thoroughly capable of facing menaces from the deep both count as passengers.",
+				"Cargo capacity notes the maximum amount of cargo a ship can carry. A vessel can't move—or might even start taking on water—if its cargo exceeds this capacity.",
+				"Travel Pace",
+				"A ship's travel pace determines how far the vessel can move per hour and per day. A ship's movement-related components (described later in the stat block) determine how far the vessel can move each round.",
+				"Ability Scores",
+				"A ship has the six ability scores (Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma) and the corresponding modifiers.",
+				"The Strength of a ship expresses its size and weight. Dexterity represents a ship's ease of handling. A ship's Constitution covers its durability and the quality of its construction. Ships usually have a score of 0 in Intelligence, Wisdom, and Charisma.",
+				"If a ship has a 0 in a score, it automatically fails any ability check or saving throw that uses that score.",
+				"Vulnerabilities, Resistances, and Immunities",
+				"A ship's vulnerabilities, resistances, and immunities apply to all its components, unless otherwise noted in the stat block.",
+				"Ships are typically immune to poison and psychic damage. Ships are also usually immune to the following conditions: {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition exhaustion}, {@condition frightened}, {@condition incapacitated}, {@condition paralyzed}, {@condition petrified}, {@condition poisoned}, {@condition prone}, {@condition stunned}, and {@condition unconscious}.",
+				"Actions",
+				"This part of the stat block specifies what the ship can do on its turn, using its special actions rather than the actions used by creatures. It even relies on its actions to move; it doesn't have a move otherwise. The ship's captain decides which actions to use. A given action can be chosen only once during a turn.",
+				"Components",
+				"A ship is composed of different components, each of which comprises multiple objects:",
+				"{@b Hull}. A ship's hull is its basic frame, on which the other components are mounted.",
+				"{@b Control}. A control component is used to steer a ship.",
+				"{@b Movement}. A movement component is the element of the ship that enables it to move, such as a set of sails or oars, and has a specific speed.",
+				"{@b Weapon}. A ship capable of being used in combat has one or more weapon components, each of which is operated separately.",
+				"A ship's component might have special rules, as described in the stat block.",
+				"Armor Class",
+				"A component has an Armor Class. Its AC reflects the materials used to construct it and any defensive plating used to augment its toughness.",
+				"Hit Points",
+				"A ship component is destroyed and becomes unusable when it drops to 0 hit points. A ship is wrecked if its hull is destroyed.",
+				"A ship doesn't have Hit Dice.",
+				"Damage Threshold",
+				"If a ship component has a damage threshold, that threshold appears after its hit points. A component has immunity to all damage unless it takes an amount of damage that equals or exceeds its threshold, in which case it takes damage as normal. Damage that fails to bypass the threshold is considered superficial and doesn't reduce the component's hit points.",
+				"Sample Ships",
+				"See the {@5etools vehicles page|vehicles.html} for stat blocks, deck plans, and other details for some of the most common ships.",
+				"Siege Weapons",
+				"Some ships are armed with siege weapons, the descriptions of which are in the \"{@book Siege Equipment|DMG|8|Siege Equipment}\" section of chapter 8 in the {@book Dungeon Master's Guide|DMG}. In this appendix, the name of a piece of siege equipment appears in bold with a parenthetical note ({@book DMG, ch. 8|DMG|8|Siege Equipment}), reminding you where to find the object's description."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Ships in Combat|GOS",
+			"hint": {
+				"Ships in Combat": "戰鬥中的船隻"
+			},
+			"s": [
+				"Ships in Combat",
+				"Whether sailing to war or hunting notorious pirates, ships make deadly weapons and dramatic battlefields. This section provides guidance on using ships in combat.",
+				"Ships and Initiative",
+				"A ship rolls initiative using its Dexterity, and it uses its crew's quality score as a modifier to that roll.",
+				"On a ship's turn, the captain decides which of the ship's actions to use.",
+				"Special Officer Actions",
+				"During an encounter, the captain, first mate, and bosun each have access to two special action options: Take Aim and Full Speed Ahead, both detailed below.",
+				"Take Aim",
+				"As an action, the captain, first mate, or bosun directs the crew's firing, aiding in aiming one of the ship's weapons. Select one of the ship's weapons that is within 10 feet of the officer. It gains advantage on the next attack roll it makes before the end of the ship's next turn.",
+				"Full Speed Ahead",
+				"As an action while on deck, the captain, first mate, or bosun can exhort the crew to work harder and drive the ship forward faster. Roll a {@dice d6} and multiply the result by 5. Apply the total as a bonus to the ship's speed until the end of the ship's next turn. If the ship is already benefiting from this action's bonus, don't add the bonuses together; the higher bonus applies.",
+				"Crew in Combat",
+				"Managing a ship's entire crew in combat can prove cumbersome, especially as larger ships often host dozens of sailors. Typically the crew is too busy managing the ship to do anything else during combat. Don't worry about tracking their specific positions unless you want to add that complexity. You can assume that the crew is evenly divided among the upper two decks of a ship.",
+				"Crew Casualties",
+				"Slaying a ship's crew reduces the number of actions most ships can take, making the crew a tempting target in combat. Resolve individual attacks as normal, using the guidelines for resolving many, identical attacks at once from the {@book Dungeon Master's Guide|DMG} as needed.",
+				"In the case of spells that cover an area, such as {@spell fireball} or {@spell lightning bolt}, you might track the exact location of the spell and crew to determine how many sailors it affects. Alternatively, you can roll {@dice 1d6} per level of the spell. The total of the dice is the number of crew members caught in the spell's area.",
+				"Crashing a Ship",
+				"If a ship moves into the space occupied by a creature or an object, the ship might crash. A ship avoids crashing if the creature or object is at least two sizes smaller than it.",
+				"When a ship crashes, it must immediately make a {@dc 10} Constitution saving throw. On a failed save, it takes damage to its hull based on the size of the creature or object it crashed into, as shown on the Crash Damage table. It also stops moving if the object or creature is one size smaller than it or larger. Otherwise the ship continues moving and the creature or object collided with moves to the nearest unoccupied space that isn't in the ship's path. At the DM's discretion, an object that is forced to move but is fixed in place is instead destroyed.",
+				"A creature struck by a ship must make a Dexterity saving throw with a DC equal to 10 + the ship's Strength modifier, taking damage based on the ship's size (as shown on the Crash Damage table) on a failed save, or half as much damage on a successful one.",
+				"Crash Damage",
+				"Size",
+				"Bludgeoning Damage",
+				"Small",
+				"Medium",
+				"Large",
+				"Huge",
+				"Gargantuan"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Superior Ship Upgrades|GOS",
+			"hint": {
+				"Superior Ship Upgrades": "高級船隻升級"
+			},
+			"s": [
+				"Superior Ship Upgrades",
+				"Some vessels possess extraordinary abilities, whether due to magic or superior artisanship. The upgrades below can replace a ship's existing components or provide a new element to augment a ship's abilities.",
+				"Adding an upgrade costs 15,000 gp and requires {@dice 1d4} weeks of work. During that time, the ship must remain in port. If the ship leaves, the work must start over, but you don't need to pay the gold piece cost a second time.",
+				"Hull Upgrades",
+				"Any ship with a hull can gain one of the following upgrades. In some cases, an upgrade also provides a benefit to the ship's other components.",
+				"Movement Upgrades",
+				"Each movement upgrade applies to a specific movement type. A component can gain the benefits of one upgrade.",
+				"Weapon Upgrades",
+				"The following upgrades can apply to any weapon mounted aboard a ship. A component can gain the benefits of one upgrade, or two upgrades if one of the upgrades is {@vehupgrade Arcane Artillery|GoS}.",
+				"Figurehead Upgrades",
+				"While figureheads are usually purely decorative, they might be magically treated to produce extraordinary effects. A ship can receive one figurehead upgrade.",
+				"Miscellaneous Upgrades",
+				"The following upgrades don't apply to a specific element of the ship. A ship can use any number of them, but it can gain a specific upgrade only once."
+			]
+		}
+	]
+}

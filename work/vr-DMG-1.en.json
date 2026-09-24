@@ -1,0 +1,159 @@
+{
+	"batch": "vr-DMG-1",
+	"items": [
+		{
+			"prop": "variantrule",
+			"key": "Action Options|DMG",
+			"hint": {
+				"Action Options": "動作選項"
+			},
+			"s": [
+				"Action Options",
+				"This section provides new action options for combat. They can be added as a group or individually to your game.",
+				"Climb onto a Bigger Creature",
+				"If one creature wants to jump onto another creature, it can do so by grappling. A small or Medium creature has little chance of making a successful grapple against a Huge or Gargantuan creature, however, unless magic has granted the grappler supernatural might.",
+				"As an alternative, a suitably large opponent can be treated as terrain for the purpose of jumping onto its back or clinging to a limb. After making any ability checks necessary to get into position and onto the larger creature, the smaller creature uses its action to make a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check contested by the target's Dexterity ({@skill Acrobatics}) check. If it wins the contest, the smaller creature successfully moves into the target creature's space, the smaller creature moves with the target and has advantage on attack rolls against it.",
+				"The smaller creature can move around within the larger creature's space, treating the space as {@quickref difficult terrain||3}. The larger creature's ability to attack the smaller creature depends on the smaller creature's location, and is left to your discretion. The larger creature can dislodge the smaller creature as an action—knocking it off, scraping it against a wall, or grabbing and throwing it—by making a Strength ({@skill Athletics}) check contested by the smaller creature's Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check. The smaller creature chooses which ability to use.",
+				"Disarm",
+				"A creature can use a weapon attack to knock a weapon or another item from a target's grasp. The attacker makes an attack roll contested by the target's Strength ({@skill Athletics}) check or Dexterity ({@skill Acrobatics}) check. If the attacker wins the contest, the attack causes no damage or other ill effect, but the defender drops the item.",
+				"The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands. The target has advantage on its ability check if it is larger than the attacking creature, or disadvantage if it is smaller.",
+				"Mark",
+				"This option makes it easier for melee combatants to harry each other with opportunity attacks.",
+				"When a creature makes a melee attack, it can also mark its target. Until the end of the attacker's next turn, any opportunity attack it makes against the marked target has advantage. The opportunity attack doesn't expend the attacker's reaction, but the attacker can't make the attack if anything, such as the {@condition incapacitated} condition or the {@spell shocking grasp} spell, is preventing it from taking reactions. The attacker is limited to one opportunity attack per turn.",
+				"Overrun",
+				"When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature. As an action or a bonus action, the mover makes a Strength ({@skill Athletics}) check contested by the hostile creature's Strength ({@skill Athletics}) check. The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller. If the mover wins the contest, it can move through the hostile creature's space once this turn.",
+				"Shove Aside",
+				"With this option, a creature uses the special {@action shove} attack from the {@book Player's Handbook|PHB} to force a target to the side, rather than away. The attacker has disadvantage on its Strength ({@skill Athletics}) check when it does so. If that check is successful, the attacker moves the target 5 feet to a different space within its reach.",
+				"Tumble",
+				"A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent. As an action or a bonus action, the tumbler makes a Dexterity ({@skill Acrobatics}) check contested by the hostile creature's Dexterity ({@skill Acrobatics}) check. If the tumbler wins the contest, it can move through the hostile creature's space once this turn."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Alien Technology|DMG",
+			"hint": {
+				"Alien Technology": "異星科技"
+			},
+			"s": [
+				"Alien Technology",
+				"When adventurers find a piece of technology that isn't from their world or time period, the players might understand what the object is, but the characters rarely will. To simulate a character's ignorance about the technology, have the character make a series of Intelligence checks to figure it out.",
+				"To determine how the technology works, a character must succeed on a number of Intelligence checks based on the complexity of the item: two successes for a simple item (such as a cigarette lighter, calculator, or revolver) and four successes for a complex item (such as a computer, chainsaw, or hovercraft). Then consult the Figuring Out Alien Technology table. Consider making the item break if a character fails four or more times before taking a long rest.",
+				"A character who has seen an item used or has operated a similar item has advantage on Intelligence checks made to figure out its use.",
+				"Figuring Out Alien Technology",
+				"Int. Check Total",
+				"Result",
+				"9 or lower",
+				"One failure; one charge or use is wasted, if applicable; character has disadvantage on next check",
+				"One failure",
+				"One success",
+				"20 or higher",
+				"One success; character has advantage on next check"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Automatic Success|DMG",
+			"hint": {
+				"Automatic Success": "自動成功"
+			},
+			"s": [
+				"Automatic Success",
+				"Sometimes the randomness of a {@dice d20} roll leads to ludicrous results. Let's say a door requires a {@dc 15} Strength check to batter down. A fighter with Strength 20 might helplessly flail against the door due to bad die rolls. Meanwhile, the rogue with a 10 Strength rolls a natural 20 on her first check and knocks the door from its hinges.",
+				"If such results bother you, allow automatic success on checks for characters with high ability scores. Under this optional rule, a character automatically succeeds on any ability check with a DC less than or equal to the relevant ability score minus 5. So in the above example, the fighter would automatically kick in the door. This rule doesn't apply to contests, saving throws, or attack rolls.",
+				"The downside of this approach is its predictability. Once a character's ability score reaches 20, checks of {@dc 15} and lower using that ability become automatic successes. Smart players will then always try to match the character with the highest ability score against any given check. If you want some risk of failure, you need to set higher DCs. Doing this, though, can merely aggravate the problem you're trying to solve: higher DCs require higher die rolls, and thus rely even more on luck.",
+				"You can modify this rule to account for proficiencies using an additional option. If a character can apply a proficiency bonus to the check, he or she automatically succeeds if its DC is less than or equal to the relevant ability score. If you don't mind predictability, and you can resist the temptation to increase DCs, you might find that this variant speeds up play and focuses attention on truly difficult, tense situations."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Cleaving Through Creatures|DMG",
+			"hint": {
+				"Cleaving Through Creatures": "劈穿生物"
+			},
+			"s": [
+				"Cleaving Through Creatures",
+				"If your player characters regularly fight hordes of lower-level monsters, consider using this optional rule to help speed up such fights.",
+				"When a melee attack reduces an undamaged creature to 0 hit points, any excess damage from that attack might carry over to another creature nearby. The attacker targets another creature within reach and, if the original attack roll can hit it, applies any remaining damage to it. If that creature was undamaged and is likewise reduced to 0 hit points, repeat this process, carrying over the remaining damage until there are no valid targets, or until the damage carried over fails to reduce an undamaged creature to 0 hit points."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Diagonals|DMG",
+			"hint": {
+				"Diagonals": "斜向移動"
+			},
+			"s": [
+				"Diagonals",
+				"The {@book Player's Handbook|PHB} presents a simple method for counting movement and measuring range on a grid: count every square as 5 feet, even if you're moving diagonally. Though this is fast in play, it breaks the laws of geometry and is inaccurate over long distances. This optional rule provides more realism, but it requires more effort during combat.",
+				"When measuring range or moving diagonally on a grid, the first diagonal square counts as 5 feet, but the second diagonal square counts as 10 feet. This pattern of 5 feet and then 10 feet continues whenever you're counting diagonally, even if you move horizontally or vertically between different bits of diagonal movement.",
+				"For example, a character might move one square diagonally (5 feet), then three squares straight (15 feet), and then another square diagonally (10 feet) for a total movement of 30 feet."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Building a Stronghold|DMG",
+			"hint": {
+				"Downtime Activity: Building a Stronghold": "休整期活動：建造要塞"
+			},
+			"s": [
+				"Downtime Activity: Building a Stronghold",
+				"A character can spend time between adventures building a stronghold. Before work can begin, the character must acquire a plot of land. If the estate lies within a kingdom or similar domain, the character will need a royal charter (a legal document granting permission to oversee the estate in the name of the crown), a land grant (a legal document bequeathing custody of the land to the character for as long as he or she remains loyal to the crown), or a deed (a legal document that serves as proof of ownership). Land can also be acquired by inheritance or other means.",
+				"Royal charters and land grants are usually given by the crown as a reward for faithful service, although they can also be bought. Deeds can be bought or inherited. A small estate might sell for as little as 100 gp or as much as 1,000 gp. A large estate might cost 5,000 gp or more, if it can be bought at all.",
+				"Once the estate is secured, a character needs access to building materials and laborers. The Building a Stronghold table shows the cost of building the stronghold (including materials and labor) and the amount of time it takes, provided that the character is using downtime to oversee construction. Work can continue while the character is away, but each day the character is away adds 3 days to the construction time.",
+				"Building a Stronghold",
+				"Stronghold",
+				"Construction Cost",
+				"Construction Time",
+				"Abbey",
+				"50,000 gp",
+				"400 days",
+				"Guildhall, town or city",
+				"5,000 gp",
+				"60 days",
+				"Keep or small castle",
+				"50,000 gp",
+				"400 days",
+				"Noble estate with manor",
+				"25,000 gp",
+				"150 days",
+				"Outpost or fort",
+				"15,000 gp",
+				"100 days",
+				"Palace or large castle",
+				"500,000 gp",
+				"1,200 days",
+				"Temple",
+				"50,000 gp",
+				"400 days",
+				"Tower, fortified",
+				"15,000 gp",
+				"100 days",
+				"Trading post",
+				"5,000 gp",
+				"60 days"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Downtime Activity: Carousing|DMG",
+			"hint": {
+				"Downtime Activity: Carousing": "休整期活動：狂歡作樂"
+			},
+			"s": [
+				"Downtime Activity: Carousing",
+				"Characters can spend their downtime engaged in a variety of hedonistic activities such as attending parties, binge drinking, gambling, or anything else that helps them cope with the perils they face on their adventures.",
+				"A carousing character spends money as though maintaining a wealthy lifestyle (see chapter 5, \"{@book Equipment|PHB|5|Lifestyle Expenses},\" of the {@book Player's Handbook|PHB}). At the end of the period spent carousing, the player rolls percentile dice and adds the character's level, then compares the total to the Carousing table to determine what happens to the character, or you choose.",
+				"Carousing",
+				"d100 + Level",
+				"Result",
+				"You are jailed for {@dice 1d4} days at the end of the downtime period on charges of disorderly conduct and disturbing the peace. You can pay a fine of 10 gp to avoid jail time, or you can try to resist arrest.",
+				"You regain consciousness in a strange place with no memory of how you got there, and you have been robbed of {@dice 3d6 × 5} gp.",
+				"You make an enemy. This person, business, or organization is now hostile to you. The DM determines the offended party. You decide how you offended them.",
+				"You are caught up in a whirlwind romance. Roll a {@dice d20}. On a 1–5, the romance ends badly. On a 6–10, the romance ends amicably. On an 11–20, the romance is ongoing. You determine the identity of the love interest, subject to your DM's approval. If the romance ends badly, you might gain a new flaw. If it ends well or is ongoing, your new love interest might represent a new bond.",
+				"You earn modest winnings from gambling and recuperate your lifestyle expenses for the time spent carousing.",
+				"You earn modest winnings from gambling. You recuperate your lifestyle expenses for the time spent carousing and gain {@dice 1d20 × 4} gp.",
+				"You make a small fortune gambling. You recuperate your lifestyle expenses for the time spent carousing and gain {@dice 4d6 × 10} gp. Your carousing becomes the stuff of local legend."
+			]
+		}
+	]
+}
