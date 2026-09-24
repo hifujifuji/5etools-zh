@@ -6241,6 +6241,61 @@
 		"hasFluffImages": true,
 		"ENG_name": "Kender"
 	},
+	"Kenku|DMG": {
+		"name": "天狗",
+		"source": "DMG",
+		"page": 282,
+		"size": [
+			"M"
+		],
+		"speed": 30,
+		"ability": [
+			{
+				"dex": 2
+			}
+		],
+		"darkvision": 60,
+		"traitTags": [
+			"NPC Race"
+		],
+		"languageProficiencies": [
+			{
+				"common": true,
+				"auran": true
+			}
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/kenku.mp3"
+		},
+		"entries": [
+			{
+				"name": "伏擊者",
+				"entries": [
+					"在戰鬥的第一輪中，你對任何{@status surprised}的生物進行的攻擊檢定具有優勢。"
+				],
+				"type": "entries",
+				"ENG_name": "Ambusher"
+			},
+			{
+				"name": "擬聲",
+				"entries": [
+					"你可以模仿任何你聽過的聲音，包括人聲。聽到這些聲音的生物，可以透過一次成功的 {@dc 14} 感知（{@skill Insight}）檢定辨別出它們是模仿的。"
+				],
+				"type": "entries",
+				"ENG_name": "Mimicry"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能讀、寫通用語與氣族語，但你只能透過你的擬聲特質說話。"
+				],
+				"type": "entries",
+				"ENG_name": "Languages"
+			}
+		],
+		"ENG_name": "Kenku"
+	},
 	"Kenku|MPMM": {
 		"name": "天狗",
 		"source": "MPMM",
@@ -7591,6 +7646,127 @@
 					"當你降至 0 點生命值但未被直接殺死時，你可以改為降至 1 點生命值。使用此特性後，直到你完成長休前都無法再次使用。"
 				],
 				"ENG_name": "Relentless Endurance"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Orc"
+	},
+	"Orc|VGM": {
+		"name": "獸人",
+		"source": "VGM",
+		"page": 120,
+		"reprintedAs": [
+			"Orc|MPMM",
+			"Orc|XPHB"
+		],
+		"size": [
+			"M"
+		],
+		"speed": 30,
+		"ability": [
+			{
+				"str": 2,
+				"con": 1
+			}
+		],
+		"heightAndWeight": {
+			"baseHeight": 64,
+			"heightMod": "2d8",
+			"baseWeight": 175,
+			"weightMod": "2d6"
+		},
+		"age": {
+			"mature": 12,
+			"max": 50
+		},
+		"darkvision": 60,
+		"traitTags": [
+			"Monstrous Race",
+			"Powerful Build"
+		],
+		"skillProficiencies": [
+			{
+				"choose": {
+					"from": [
+						"animal handling",
+						"insight",
+						"intimidation",
+						"medicine",
+						"nature",
+						"perception",
+						"survival"
+					],
+					"count": 2
+				}
+			}
+		],
+		"languageProficiencies": [
+			{
+				"common": true,
+				"orc": true
+			}
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/orc.mp3"
+		},
+		"entries": [
+			{
+				"name": "年齡",
+				"type": "entries",
+				"entries": [
+					"獸人在 12 歲成年，最多可活到 50 歲。"
+				],
+				"ENG_name": "Age"
+			},
+			{
+				"type": "entries",
+				"name": "體型",
+				"entries": [
+					"獸人身高通常超過 6 呎，體重介於 230 到 280 磅之間。你的體型為中型。"
+				],
+				"ENG_name": "Size"
+			},
+			{
+				"name": "黑暗視覺",
+				"entries": [
+					"你在 60 呎內的微光中視物如同明亮光照，在黑暗中視物如同微光。你在黑暗中無法分辨顏色，只能看見灰階。"
+				],
+				"type": "entries",
+				"ENG_name": "Darkvision"
+			},
+			{
+				"name": "侵略性",
+				"entries": [
+					"作為一個附贈動作，你可以朝一個你能看見或聽見的敵對生物移動最多等於你移動速度的距離。你必須在比開始時更接近該敵人的位置結束此移動。"
+				],
+				"type": "entries",
+				"ENG_name": "Aggressive"
+			},
+			{
+				"name": "原始直覺",
+				"entries": [
+					"你獲得下列兩項自選技能的熟練：{@skill Animal Handling}、{@skill Insight}、{@skill Intimidation}、{@skill Medicine}、{@skill Nature}、{@skill Perception}與{@skill Survival}。"
+				],
+				"type": "entries",
+				"ENG_name": "Primal Intuition"
+			},
+			{
+				"name": "強健體格",
+				"entries": [
+					"在決定你的負重能力以及你能推、拖或舉起的重量時，你視為大一級體型。"
+				],
+				"type": "entries",
+				"ENG_name": "Powerful Build"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能說、讀、寫通用語與獸人語。"
+				],
+				"type": "entries",
+				"ENG_name": "Languages"
 			}
 		],
 		"hasFluff": true,
@@ -9035,6 +9211,131 @@
 		"hasFluffImages": true,
 		"ENG_name": "Thri-kreen"
 	},
+	"Tiefling|PHB": {
+		"name": "提夫林",
+		"source": "PHB",
+		"page": 42,
+		"srd": true,
+		"reprintedAs": [
+			"Tiefling|XPHB"
+		],
+		"size": [
+			"M"
+		],
+		"speed": 30,
+		"ability": [
+			{
+				"cha": 2,
+				"int": 1
+			}
+		],
+		"heightAndWeight": {
+			"baseHeight": 57,
+			"heightMod": "2d8",
+			"baseWeight": 110,
+			"weightMod": "2d4"
+		},
+		"age": {
+			"mature": 20,
+			"max": 100
+		},
+		"darkvision": 60,
+		"traitTags": [
+			"Uncommon Race"
+		],
+		"languageProficiencies": [
+			{
+				"common": true,
+				"infernal": true
+			}
+		],
+		"resist": [
+			"fire"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/tiefling.mp3"
+		},
+		"additionalSpells": [
+			{
+				"innate": {
+					"3": {
+						"daily": {
+							"1": [
+								"hellish rebuke#2"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"darkness"
+							]
+						}
+					}
+				},
+				"ability": "cha",
+				"known": {
+					"1": [
+						"thaumaturgy#c"
+					]
+				}
+			}
+		],
+		"entries": [
+			{
+				"name": "年齡",
+				"type": "entries",
+				"entries": [
+					"提夫林的成長速度與人類相同，但壽命比人類長幾年。"
+				],
+				"ENG_name": "Age"
+			},
+			{
+				"type": "entries",
+				"name": "體型",
+				"entries": [
+					"提夫林的身材和體型與人類大致相同。你的體型為中型。"
+				],
+				"ENG_name": "Size"
+			},
+			{
+				"name": "黑暗視覺",
+				"entries": [
+					"拜你的煉獄血統所賜，你在黑暗與微光環境中擁有卓越的視覺。你在 60 呎內的微光中視物如同明亮光照，在黑暗中視物如同微光。你在黑暗中無法分辨顏色，只能看見灰階。"
+				],
+				"type": "entries",
+				"ENG_name": "Darkvision"
+			},
+			{
+				"name": "煉獄抗性",
+				"entries": [
+					"你具有對火焰傷害的抗性。"
+				],
+				"type": "entries",
+				"ENG_name": "Hellish Resistance"
+			},
+			{
+				"name": "煉獄傳承",
+				"entries": [
+					"你知道{@spell thaumaturgy}戲法。達到 3 級後，你可以用此特質以 2 環法術施展{@spell hellish rebuke}法術；你在完成長休時恢復這麼做的能力。達到 5 級後，你也可以用此特質每日施展{@spell darkness}法術一次；你在完成長休時恢復這麼做的能力。魅力是你施展這些法術的施法屬性。"
+				],
+				"type": "entries",
+				"ENG_name": "Infernal Legacy"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能說、讀、寫通用語與煉獄語。"
+				],
+				"type": "entries",
+				"ENG_name": "Languages"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Tiefling"
+	},
 	"Tiefling|XPHB": {
 		"name": "提夫林",
 		"source": "XPHB",
@@ -9638,6 +9939,160 @@
 		"hasFluffImages": true,
 		"ENG_name": "Triton"
 	},
+	"Triton|VGM": {
+		"name": "梭螺魚人",
+		"source": "VGM",
+		"page": 115,
+		"reprintedAs": [
+			"Triton|MPMM"
+		],
+		"size": [
+			"M"
+		],
+		"speed": {
+			"walk": 30,
+			"swim": 30
+		},
+		"ability": [
+			{
+				"str": 1,
+				"cha": 1,
+				"con": 1
+			}
+		],
+		"heightAndWeight": {
+			"baseHeight": 54,
+			"heightMod": "2d10",
+			"baseWeight": 90,
+			"weightMod": "2d4"
+		},
+		"age": {
+			"mature": 15,
+			"max": 200
+		},
+		"darkvision": 60,
+		"traitTags": [
+			"Amphibious"
+		],
+		"languageProficiencies": [
+			{
+				"common": true,
+				"primordial": true
+			}
+		],
+		"resist": [
+			"cold"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/triton.mp3"
+		},
+		"additionalSpells": [
+			{
+				"innate": {
+					"1": {
+						"daily": {
+							"1": [
+								"fog cloud"
+							]
+						}
+					},
+					"3": {
+						"daily": {
+							"1": [
+								"gust of wind"
+							]
+						}
+					},
+					"5": {
+						"daily": {
+							"1": [
+								"wall of water|xge"
+							]
+						}
+					}
+				},
+				"ability": "cha"
+			}
+		],
+		"entries": [
+			{
+				"name": "年齡",
+				"type": "entries",
+				"entries": [
+					"梭螺魚人約在 15 歲成熟，最多可活到 200 歲。"
+				],
+				"ENG_name": "Age"
+			},
+			{
+				"type": "entries",
+				"name": "體型",
+				"entries": [
+					"梭螺魚人比人類稍矮，平均身高約 5 呎。你的體型為中型。"
+				],
+				"ENG_name": "Size"
+			},
+			{
+				"name": "游泳速度",
+				"entries": [
+					"你擁有 30 呎的游泳速度。"
+				],
+				"type": "entries",
+				"ENG_name": "Swim Speed"
+			},
+			{
+				"name": "兩棲",
+				"entries": [
+					"你能呼吸空氣與水。"
+				],
+				"type": "entries",
+				"ENG_name": "Amphibious"
+			},
+			{
+				"name": "操控空氣與水",
+				"entries": [
+					"身為海洋之子，你能呼喚元素之氣與水的魔法。你可以用此特質施展{@spell fog cloud}。從 3 級開始，你可以用它施展{@spell gust of wind}；從 5 級開始，你也可以用它施展{@spell wall of water|xge}。以此特質施展一個法術後，你在完成長休之前無法再以此特質施展該法術。魅力是你施展這些法術的施法屬性。"
+				],
+				"type": "entries",
+				"ENG_name": "Control Air and Water"
+			},
+			{
+				"name": "黑暗視覺",
+				"type": "entries",
+				"entries": [
+					"你在 60 呎內的微光中視物如同明亮光照，在黑暗中視物如同微光。你在黑暗中無法分辨顏色，只能看見灰階。"
+				],
+				"ENG_name": "Darkvision"
+			},
+			{
+				"name": "海洋使者",
+				"entries": [
+					"水生野獸與你的族人有著非凡的親和力。你可以與能在水中呼吸的野獸溝通簡單的想法。牠們能理解你話語的意思，但你沒有特殊能力理解牠們的回應。"
+				],
+				"type": "entries",
+				"ENG_name": "Emissary of the Sea"
+			},
+			{
+				"name": "深淵守護者",
+				"entries": [
+					"你適應了即使是最極端的海洋深處，具有對寒冷傷害的抗性。"
+				],
+				"type": "entries",
+				"ENG_name": "Guardians of the Depths"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你能說、讀、寫通用語與原初語。"
+				],
+				"type": "entries",
+				"ENG_name": "Languages"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Triton"
+	},
 	"Vampire|PSZ": {
 		"name": "吸血鬼",
 		"source": "PSZ",
@@ -10235,5 +10690,84 @@
 		"hasFluff": true,
 		"hasFluffImages": true,
 		"ENG_name": "Yuan-Ti"
+	},
+	"Zombie|DMG": {
+		"name": "殭屍",
+		"source": "DMG",
+		"page": 282,
+		"creatureTypes": [
+			"undead"
+		],
+		"size": [
+			"M"
+		],
+		"speed": 30,
+		"ability": [
+			{
+				"str": 1,
+				"con": 2,
+				"int": -6,
+				"wis": -4,
+				"cha": -4
+			}
+		],
+		"darkvision": 60,
+		"traitTags": [
+			"Improved Resting",
+			"NPC Race"
+		],
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/zombie.mp3"
+		},
+		"entries": [
+			{
+				"type": "entries",
+				"name": "生物類型",
+				"entries": [
+					"你是不死生物。"
+				],
+				"ENG_name": "Creature Type"
+			},
+			{
+				"type": "entries",
+				"name": "不死韌性",
+				"entries": [
+					"若傷害使你的生命值降至 0，除非該傷害為光耀傷害或來自重擊，否則你必須進行一次 DC 為 5 + 所受傷害的體質豁免檢定。成功時，你改為降至 1 點生命值。"
+				],
+				"ENG_name": "Undead Fortitude"
+			},
+			{
+				"type": "entries",
+				"name": "不死本質",
+				"entries": [
+					"你對毒素傷害免疫，且不會陷入{@condition poisoned}狀態。你不需要空氣、食物、飲水或睡眠。"
+				],
+				"ENG_name": "Undead Nature"
+			},
+			{
+				"name": "黑暗視覺",
+				"entries": [
+					"你在 60 呎內的微光中視物如同明亮光照，在黑暗中視物如同微光。你在黑暗中無法分辨顏色，只能看見灰階。"
+				],
+				"type": "entries",
+				"ENG_name": "Darkvision"
+			},
+			{
+				"name": "語言",
+				"entries": [
+					"你無法說話，但能理解你生前所知的語言。"
+				],
+				"type": "entries",
+				"ENG_name": "Languages"
+			}
+		],
+		"ENG_name": "Zombie"
 	}
 }

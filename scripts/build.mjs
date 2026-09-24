@@ -29,7 +29,16 @@ execFileSync("rsync", [
 
 // ---- 2. 載入翻譯 -----------------------------------------------------------
 // 全站統一用語（hazmole 與本站譯法不同者）
-const TERM_FIX = [[/睿知/g, "感知"], [/铎/g, "鐸"], [/混沌海imbo\(或譯靈薄獄、迷失域\)/g, "混沌海（Limbo，或譯靈薄獄、迷失域）"], [/暗影界|幽影界/g, "墮影冥界"], [/混沌界/g, "混沌海"], [/\{@5etools feat\|feats\.html\}/g, "{@5etools 專長|feats.html}"]];
+const TERM_FIX = [[/睿知/g, "感知"], [/铎/g, "鐸"], [/混沌海imbo\(或譯靈薄獄、迷失域\)/g, "混沌海（Limbo，或譯靈薄獄、迷失域）"], [/暗影界|幽影界/g, "墮影冥界"], [/混沌界/g, "混沌海"], [/"name": "尺寸"/g, '"name": "體型"'], [/\{@5etools feat\|feats\.html\}/g, "{@5etools 專長|feats.html}"]];
+// 中文譯文裡沒有顯示文字的規則速查標籤：補上中文顯示名
+const QUICKREF_ZH = {"difficult terrain": "困難地形", "cover": "掩護", "vision and light": "視覺與光照", "surprised": "突襲", "adventuring gear": "冒險裝備", "multiclassing": "兼職"};
+TERM_FIX.push([/\{@quickref ([^}|]+)((?:\|[^}|]*){0,2})\}/g, (m, name, rest) => {
+	const zh = QUICKREF_ZH[name.toLowerCase()];
+	if (!zh) return m;
+	const parts = rest.split("|").slice(1);
+	while (parts.length < 2) parts.push("");
+	return `{@quickref ${name}|${parts[0]}|${parts[1]}|${zh}}`;
+}]);
 const readI18n = f => JSON.parse(TERM_FIX.reduce((s, [re, to]) => s.replace(re, to), fs.readFileSync(f, "utf8")));
 const loadDir = dir => {
 	const out = {};
@@ -194,6 +203,18 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	for (const {json} of loaded) for (const c of [...json.class || [], ...json.subclass || []]) for (const g of c.classTableGroups || c.subclassTableGroups || []) if (g.colLabels) g.colLabels = g.colLabels.map(col);
 }
 
+// ---- 3a⁰. _copy／_versions 內巢狀條目的中文名（i18n/copy-names.json；只設 name_zh，不改 name） ----------
+{
+	const cn = readI18n(path.join(I18N, "copy-names.json"));
+	const walk = v => {
+		if (Array.isArray(v)) return v.forEach(walk);
+		if (!v || typeof v !== "object") return;
+		if (typeof v.name === "string" && v.type && !v.name_zh && cn[v.name]) { v.name_zh = cn[v.name]; v._zhOf = v.name; }
+		for (const [k, x] of Object.entries(v)) if (k !== "name") walk(x);
+	};
+	for (const {json} of loaded) for (const arr of Object.values(json)) if (Array.isArray(arr)) for (const ent of arr) { if (ent?._copy) walk(ent._copy); if (ent?._versions) walk(ent._versions); }
+}
+
 // ---- 3a'. 種族／背景／專長中完全比對的句子（含 _copy、_versions；i18n/exact-strings.json） --------
 {
 	const ex = readI18n(path.join(I18N, "exact-strings.json"));
@@ -205,7 +226,7 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 		if (Array.isArray(v)) { for (let i = 0; i < v.length; ++i) v[i] = walk(v[i], depth + 1, inCopy); return v; }
 		if (v && typeof v === "object") {
 			for (const k of Object.keys(v)) {
-				if (k === "name") continue; // 條目名稱可能被其他 _copy 以英文比對，不動
+				if (k === "name" || k === "_zhOf") continue; // 條目名稱可能被其他 _copy 以英文比對，不動
 				if (!["source", "replace", "mode", "prop", "names"].includes(k)) v[k] = walk(v[k], depth + 1, inCopy || k === "_copy");
 			}
 		}

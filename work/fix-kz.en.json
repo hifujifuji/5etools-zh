@@ -1,0 +1,47 @@
+{
+	"batch": "fix-kz",
+	"items": [
+		{
+			"prop": "race",
+			"key": "Kenku|DMG",
+			"hint": {
+				"Kenku": "天狗",
+				"Mimicry": "聲音模仿",
+				"Languages": "語言"
+			},
+			"s": [
+				"Kenku",
+				"Ambusher",
+				"In the first round of a combat, you have advantage on attack rolls against any creature who is {@status surprised}.",
+				"Mimicry",
+				"You can mimic any sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom ({@skill Insight}) check.",
+				"Languages",
+				"You can read and write Common and Auran, but you can only speak using your Mimicry trait."
+			]
+		},
+		{
+			"prop": "race",
+			"key": "Zombie|DMG",
+			"hint": {
+				"Zombie": "殭屍",
+				"Creature Type": "生物類型",
+				"Undead Fortitude": "不死堅韌",
+				"Darkvision": "黑暗視覺",
+				"Languages": "語言"
+			},
+			"s": [
+				"Zombie",
+				"Creature Type",
+				"You are Undead.",
+				"Undead Fortitude",
+				"If damage reduces you to 0 hit points, you must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, you drop to 1 hit point instead.",
+				"Undead Nature",
+				"You are immune to poison damage, and you can't be {@condition poisoned}. You don't require air, food, drink, or sleep.",
+				"Darkvision",
+				"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+				"Languages",
+				"You can't speak, but you can understand the languages you knew in life."
+			]
+		}
+	]
+}

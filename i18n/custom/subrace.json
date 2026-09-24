@@ -836,6 +836,72 @@
 		"hasFluffImages": true,
 		"ENG_name": "Tajuru Nation"
 	},
+	"Elf|Eladrin|MTF": {
+		"name": "雅靈",
+		"source": "MTF",
+		"raceName": "Elf",
+		"raceSource": "PHB",
+		"page": 61,
+		"reprintedAs": [
+			"Eladrin|MPMM"
+		],
+		"ability": [
+			{
+				"cha": 1
+			}
+		],
+		"heightAndWeight": {
+			"baseHeight": 54,
+			"heightMod": "2d12",
+			"baseWeight": 90,
+			"weightMod": "1d4"
+		},
+		"entries": [
+			"{@i Choose your eladrin's season: autumn, winter, spring, or summer. When finishing a long rest, you can change your season. See the \"Info\" tab for more information.}",
+			{
+				"name": "妖精步",
+				"entries": [
+					"作為一個附贈動作，你可以魔法傳送最多 30 呎到一個你能看見的未佔據空間。使用此特質後，你在完成一次短休或長休之前無法再次使用。",
+					"當你達到 3 級時，你的妖精步依你的季節獲得一項額外效果；若該效果需要豁免檢定，DC 等於 8 + 你的熟練加值 + 你的魅力調整值：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "秋",
+								"entry": "在你使用妖精步後，你 10 呎內至多兩個你能看見、由你選擇的生物必須成功通過一次感知豁免檢定，否則被你{@condition charmed} 1 分鐘，或直到你或你的同伴對它造成任何傷害為止。",
+								"ENG_name": "Autumn"
+							},
+							{
+								"type": "item",
+								"name": "冬",
+								"entry": "當你使用妖精步時，在你傳送前位於你 5 呎內、你能看見且由你選擇的一個生物必須成功通過一次感知豁免檢定，否則對你{@condition frightened}直到你下個回合結束。",
+								"ENG_name": "Winter"
+							},
+							{
+								"type": "item",
+								"name": "春",
+								"entry": "當你使用妖精步時，你可以碰觸你 5 呎內一個自願的生物。改由該生物代替你傳送，出現在你 30 呎內一處你能看見、由你選擇的未佔據空間。",
+								"ENG_name": "Spring"
+							},
+							{
+								"type": "item",
+								"name": "夏",
+								"entry": "在你使用妖精步後，你 5 呎內每個你能看見、由你選擇的生物立即受到等同於你魅力調整值的火焰傷害（最少 1 點傷害）。",
+								"ENG_name": "Summer"
+							}
+						]
+					}
+				],
+				"type": "entries",
+				"ENG_name": "Fey Step"
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Eladrin"
+	},
 	"Elf|Mark of Shadow|ERLW": {
 		"name": "陰影印記",
 		"source": "ERLW",
