@@ -88,7 +88,7 @@ class BackgroundPage extends ListPage {
 		const source = Parser.sourceJsonToAbv(bg.source);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="ve-lst__row-border ve-lst__row-inner">
-			<span class="ve-bold ve-col-2-5 ve-pl-0 ve-pr-1">${name}</span>
+			<span class="ve-bold ve-col-2-5 ve-pl-0 ve-pr-1">${ZH.nameHtml(bg)}</span>
 			<span class="ve-col-3-5 ve-px-1 ${bg._slAbility === VeCt.STR_NONE ? "ve-italic" : ""}">${bg._slAbility}</span>
 			<span class="ve-col-4 ve-px-1">${bg._skillDisplay}</span>
 			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(bg.source)}  ve-pl-1 ve-pr-0" title="${Parser.sourceJsonToFull(bg.source)}">${source}</span>

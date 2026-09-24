@@ -2957,8 +2957,8 @@ Renderer.parseScaleDice = function (tag, text) {
 Renderer.getAbilityData = function (abArr, {isOnlyShort, isCurrentLineage = false, isBackgroundShortForm = false} = {}) {
 	if (isOnlyShort && isCurrentLineage) return new Renderer._AbilityData({asTextShort: "Lineage"});
 	if (isOnlyShort && isBackgroundShortForm) {
-		if (abArr.length === 2 && abArr[0].choose?.weighted?.from?.length === 3) return new Renderer._AbilityData({asTextShort: `Origin (${abArr[0].choose?.weighted?.from.map(it => it.uppercaseFirst()).join("/")})`});
-		if (abArr.length === 2 && abArr[0].choose?.weighted?.from?.length === 6) return new Renderer._AbilityData({asTextShort: `Origin (Any)`});
+		if (abArr.length === 2 && abArr[0].choose?.weighted?.from?.length === 3) return new Renderer._AbilityData({asTextShort: `起源（${abArr[0].choose?.weighted?.from.map(it => ({str: "力量", dex: "敏捷", con: "體質", int: "智力", wis: "感知", cha: "魅力"})[it] || it).join("／")}）`});
+		if (abArr.length === 2 && abArr[0].choose?.weighted?.from?.length === 6) return new Renderer._AbilityData({asTextShort: `起源（任意）`});
 	}
 
 	const outerStack = (abArr || [null]).map(it => Renderer.getAbilityData._doRenderOuter(it));
