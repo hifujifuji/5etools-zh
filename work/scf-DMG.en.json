@@ -1,0 +1,67 @@
+{
+	"batch": "scf-DMG",
+	"items": [
+		{
+			"prop": "subclassFeature",
+			"key": "Death Domain|Cleric|Death Domain|DMG",
+			"hint": {
+				"Death Domain": "死亡領域"
+			},
+			"s": [
+				"Death Domain",
+				"The Death domain is concerned with the forces that cause death, as well as the negative energy that gives rise to undead creatures. Deities such as {@deity Chemosh|Dragonlance}, {@deity Myrkul}, and {@deity Wee Jas|Greyhawk} are patrons of necromancers, death knights, liches, mummy lords, and vampires. Gods of the Death domain also embody murder ({@deity Anubis|Egyptian}, {@deity Bhaal}, and Pyremius), pain ({@deity Iuz|Greyhawk} or {@deity Loviatar}), disease or poison ({@deity Incabulos|Greyhawk}, {@deity Talona}, or {@deity Morgion|Dragonlance}), and the underworld ({@deity Hades|Greek} and {@deity Hel|Norse}).",
+				"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
+				"Death Domain Spells",
+				"Cleric Level",
+				"Spells",
+				"1st",
+				"{@spell false life}, {@spell ray of sickness}",
+				"3rd",
+				"{@spell blindness/deafness}, {@spell ray of enfeeblement}",
+				"5th",
+				"{@spell animate dead}, {@spell vampiric touch}",
+				"7th",
+				"{@spell blight}, {@spell death ward}",
+				"9th",
+				"{@spell antilife shell}, {@spell cloudkill}"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Channel Divinity|Paladin|Oathbreaker|DMG",
+			"hint": {
+				"Channel Divinity": "引導神力"
+			},
+			"s": [
+				"Channel Divinity",
+				"An Oathbreaker paladin of 3rd level or higher gains the following two Channel Divinity options."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Control Undead|Paladin|Oathbreaker|DMG",
+			"s": [
+				"Control Undead",
+				"As an action, the paladin targets one undead creature he or she can see within 30 feet of him or her. The target must make a Wisdom saving throw. On a failed save, the target must obey the paladin's commands for the next 24 hours, or until the paladin uses this Channel Divinity option again. An undead whose challenge rating is equal to or greater than the paladin's level is immune to this effect."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Death Domain|Cleric|Death Domain|DMG",
+			"hint": {
+				"Death Domain": "死亡領域"
+			},
+			"s": [
+				"Death Domain"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Dreadful Aspect|Paladin|Oathbreaker|DMG",
+			"s": [
+				"Dreadful Aspect",
+				"As an action, the paladin channels the darkest emotions and focuses them into a burst of magical menace. Each creature of the paladin's choice within 30 feet of the paladin must make a Wisdom saving throw if it can see the paladin. On a failed save, the target is {@condition frightened} of the paladin for 1 minute. If a creature {@condition frightened} by this effect ends its turn more than 30 feet away from the paladin, it can attempt another Wisdom saving throw to end the effect on it."
+			]
+		}
+	]
+}

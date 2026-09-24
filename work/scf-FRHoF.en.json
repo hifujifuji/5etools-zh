@@ -1,0 +1,604 @@
+{
+	"batch": "scf-FRHoF",
+	"items": [
+		{
+			"prop": "subclassFeature",
+			"key": "Banneret|Fighter|Banneret|FRHOF",
+			"s": [
+				"Banneret",
+				"Bannerets are paragons of valor and leadership who protect the innocent and rally fellow adventurers to the causes of justice and freedom. Many are knights serving in Cormyr, the Silver Marches, Damara, Chessenta, or other lands across Faerûn. They wander the realms as knights errant, taking the fight against evil beyond their kingdom's borders.",
+				"A Banneret relies on judgment, bravery, and fidelity to the code of chivalry to guide them in defeating evildoers. A lone Banneret is a skilled warrior, but when leading a band of allies one of these warriors can transform even a poorly equipped militia into a ferocious war band."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Bladesinger|Wizard|Bladesinger|FRHOF",
+			"s": [
+				"Bladesinger",
+				"Bladesingers master a tradition of wizardry that incorporates swordplay and dance. In combat, a Bladesinger uses intricate, elegant maneuvers that fend off harm and allow the Bladesinger to channel magic into devastating attacks and a cunning defense. Many who have observed a Bladesinger at work remember the display as one of the more beautiful experiences in their life—a glorious dance accompanied by a singing blade.",
+				"Bladesinging is associated with the ancient elven societies that first mastered the art and coined the term. Even today, most Bladesingers still hail from old elven realms, such as Myth Drannor, or from non-elven societies that share land and history with elves, such as the Silver Marches. Wherever they hail from, Bladesingers take their talents all across the Realms to help common people and perform heroic deeds. Most communities greet the arrival of a Bladesinger as a good omen."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Bladesong|Wizard|Bladesinger|FRHOF",
+			"hint": {
+				"Bladesong": "劍歌"
+			},
+			"s": [
+				"Bladesong",
+				"As a {@variantrule Bonus Action|XPHB}, you invoke an elven magic called the Bladesong, provided you aren't wearing armor or using a Shield.",
+				"The Bladesong lasts for 1 minute and ends early if you have the {@condition Incapacitated|XPHB} condition, if you don armor or a Shield, or if you use two hands to make an attack with a weapon. You can dismiss the Bladesong at any time (no action required).",
+				"While the Bladesong is active, you gain the following benefits. You can invoke the Bladesong a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}. You regain one expended use when you use Arcane Recovery.",
+				"Agility",
+				"You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1), and your {@variantrule Speed|XPHB} increases by 10 feet. In addition, you have {@variantrule Advantage|XPHB} on Dexterity ({@skill Acrobatics|XPHB}) checks.",
+				"Bladework",
+				"Whenever you attack with a weapon with which you have proficiency, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity.",
+				"Focus",
+				"When you make a Constitution saving throw to maintain {@status Concentration|XPHB}, you can add your Intelligence modifier to the total."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Bloodthirst|Rogue|Scion of the Three|FRHOF",
+			"hint": {
+				"Bloodthirst": "嗜血"
+			},
+			"s": [
+				"Bloodthirst",
+				"When an enemy you can see within 30 feet of yourself takes damage and is {@status Bloodied|XPHB} after taking that damage but not killed outright, you can take a {@variantrule Reaction|XPHB} and {@variantrule Teleportation|XPHB|teleport} to an unoccupied space you can see within 5 feet of that enemy. You can then make one melee attack. You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Bolstering Flames|Sorcerer|Spellfire Sorcery|FRHOF",
+			"s": [
+				"Bolstering Flames",
+				"You or one creature you can see within 30 feet of yourself gains {@variantrule Temporary Hit Points|XPHB} equal to {@dice 1d4} plus your Charisma modifier."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "College of the Moon|Bard|College of the Moon|FRHOF",
+			"s": [
+				"College of the Moon",
+				"The College of the Moon traces its origins to the ancient druidic circles of the Moonshae Isles, who entrusted the first Bards of this tradition with chronicling the stories of the islands and their people. Bards of this college draw from the isles' fey magic and the primal power of the moonwells to bolster their allies, protect the natural world, and inspire their bardic works."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Dao's Crush|Paladin|Oath of the Noble Genies|FRHOF",
+			"hint": {
+				"Channel Divinity": "引導神力"
+			},
+			"s": [
+				"Dao's Crush",
+				"Channel Divinity",
+				"Earth rises up around the target of your Divine Smite. The target has the {@condition Grappled|XPHB} condition (escape DC equal to your spell save DC). While {@condition Grappled|XPHB}, the target has the {@condition Restrained|XPHB} condition."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Djinni's Escape|Paladin|Oath of the Noble Genies|FRHOF",
+			"hint": {
+				"Channel Divinity": "引導神力"
+			},
+			"s": [
+				"Djinni's Escape",
+				"Channel Divinity",
+				"You {@variantrule Teleportation|XPHB|teleport} to an unoccupied space you can see within 30 feet of yourself and take on a semi-incorporeal form, which lasts until the end of your next turn. While in this form, you have {@variantrule Resistance|XPHB} to Bludgeoning, Piercing, and Slashing damage, and you have {@variantrule Immunity|XPHB} to the {@condition Grappled|XPHB}, {@condition Prone|XPHB}, and {@condition Restrained|XPHB} conditions."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Dread Allegiance|Rogue|Scion of the Three|FRHOF",
+			"s": [
+				"Dread Allegiance",
+				"Choose one of the Dead Three: {@deity Bane|Faerûnian|FRHoF}, {@deity Bhaal|Faerûnian|FRHoF}, or {@deity Myrkul|Faerûnian|FRHoF}. You gain {@variantrule Resistance|XPHB} to one type of damage and the ability to cast a cantrip, as detailed in the table below; Intelligence is your spellcasting ability for this cantrip. When you finish a {@variantrule Long Rest|XPHB}, you can change your choice.",
+				"God",
+				"Damage Resistance",
+				"Cantrip",
+				"Psychic",
+				"Poison",
+				"Necrotic"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Efreeti's Fury|Paladin|Oath of the Noble Genies|FRHOF",
+			"hint": {
+				"Channel Divinity": "引導神力"
+			},
+			"s": [
+				"Efreeti's Fury",
+				"Channel Divinity",
+				"The target of your Divine Smite takes an extra {@damage 2d4} Fire damage, and fire jumps from the target to another creature you can see within 30 feet of yourself. The second creature also takes {@damage 2d4} Fire damage."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Elemental Smite|Paladin|Oath of the Noble Genies|FRHOF",
+			"s": [
+				"Elemental Smite",
+				"Immediately after you cast {@spell Divine Smite|XPHB}, you can expend one use of your {@classFeature Channel Divinity|Paladin|XPHB|3|XPHB} and invoke one of the following effects."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Frigid Explorer|Ranger|Winter Walker|FRHOF",
+			"s": [
+				"Frigid Explorer",
+				"You gain the following benefits.",
+				"Biting Cold",
+				"Damage from your weapon attacks, Ranger spells, and Ranger features ignores {@variantrule Resistance|XPHB} to Cold damage.",
+				"Frost Resistance",
+				"You have {@variantrule Resistance|XPHB} to Cold damage.",
+				"Polar Strikes",
+				"When you hit a creature with an attack roll using a weapon, you can deal an extra {@damage 1d4} Cold damage to the target, which can take this extra damage only once per turn. When you reach Ranger level 11, this extra damage increases to {@dice 1d6}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Genie Spells|Paladin|Oath of the Noble Genies|FRHOF",
+			"s": [
+				"Genie Spells",
+				"When you reach a Paladin level specified in the Genie Spells table, you thereafter always have the listed spells prepared.",
+				"Paladin Level",
+				"Spells",
+				"{@spell Chromatic Orb|XPHB}, {@spell Elementalism|XPHB}, {@spell Thunderous Smite|XPHB}",
+				"{@spell Mirror Image|XPHB}, {@spell Phantasmal Force|XPHB}",
+				"{@spell Fly|XPHB}, {@spell Gaseous Form|XPHB}",
+				"{@spell Conjure Minor Elementals|XPHB}, {@spell Summon Elemental|XPHB}",
+				"{@spell Banishing Smite|XPHB}, {@spell Contact Other Plane|XPHB}"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Genie's Splendor|Paladin|Oath of the Noble Genies|FRHOF",
+			"s": [
+				"Genie's Splendor",
+				"When you aren't wearing any armor, your base {@variantrule Armor Class|XPHB} equals 10 plus your Dexterity and Charisma modifiers. You can use a Shield and still gain this benefit.",
+				"You also gain proficiency in one of the following skills of your choice: {@skill Acrobatics|XPHB}, {@skill Intimidation|XPHB}, {@skill Performance|XPHB}, or {@skill Persuasion|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Group Recovery|Fighter|Banneret|FRHOF",
+			"s": [
+				"Group Recovery",
+				"When you use your Second Wind to regain {@variantrule Hit Points|XPHB}, you can choose a number of allies within a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from yourself, up to a number of allies equal to your Charisma modifier (minimum of one). Each of those allies regains {@variantrule Hit Points|XPHB} equal to {@dice 1d4} plus your Fighter level. Once you use this ability, you can't use it again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Hunter's Rime|Ranger|Winter Walker|FRHOF",
+			"s": [
+				"Hunter's Rime",
+				"Ice rimes you and your prey, protecting you and slowing them. When you cast {@spell Hunter's Mark|XPHB}, you gain {@variantrule Temporary Hit Points|XPHB} equal to {@dice 1d10} plus your {@class Ranger|XPHB} level.",
+				"Additionally, while a creature is marked by your {@spell Hunter's Mark|XPHB}, it can't take the {@action Disengage|XPHB} action."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Knightly Envoy|Fighter|Banneret|FRHOF",
+			"s": [
+				"Knightly Envoy",
+				"You know how to conduct yourself with grace as a noble ambassador. You gain the following benefits.",
+				"Comprehension",
+				"You can cast the {@spell Comprehend Languages|XPHB} spell but only as a {@variantrule Ritual|XPHB}. Charisma is your spellcasting ability for it.",
+				"Polyglot",
+				"You learn one language from the language tables in the Player's Handbook or chapter 2 of this book. When you finish a {@variantrule Long Rest|XPHB}, you can replace a language learned from this benefit with another language you have heard, seen signed, or read in the past 24 hours.",
+				"Well Spoken",
+				"You gain proficiency in one of the following skills of your choice: {@skill Insight|XPHB}, {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB}, or {@skill Performance|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Knowledge Domain|Cleric|Knowledge Domain|FRHOF",
+			"hint": {
+				"Knowledge Domain": "知識領域"
+			},
+			"s": [
+				"Knowledge Domain",
+				"The Knowledge Domain values learning and understanding above all. Clerics who tap into this domain study esoteric lore, collect old tomes, delve into secret places, and examine the processes of the mind. To them, knowledge is more valuable than material wealth, and learning is an act of worship. Libraries, universities, and other educational institutions also draw on the power of the Knowledge Domain.",
+				"Gods of knowledge vary from masters of arcane magic to patrons of craft and invention. In Faerûn, Clerics of the Knowledge Domain worship deities of learning and ingenuity such as {@deity Oghma|Faerûnian|FRHoF} and {@deity Gond|Faerûnian|FRHoF}, among many others."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Knowledge Domain Spells|Cleric|Knowledge Domain|FRHOF",
+			"s": [
+				"Knowledge Domain Spells",
+				"When you reach a Cleric level specified in the Knowledge Domain Spells table, you thereafter always have the listed spells prepared.",
+				"Cleric Level",
+				"Spells",
+				"{@spell Command|XPHB}, {@spell Comprehend Languages|XPHB}*, {@spell Detect Magic|XPHB}*, {@spell Detect Thoughts|XPHB}*, {@spell Identify|XPHB}*, {@spell Mind Spike|XPHB}*",
+				"{@spell Dispel Magic|XPHB}, {@spell Nondetection|XPHB}, {@spell Tongues|XPHB}*",
+				"{@spell Arcane Eye|XPHB}*, {@spell Banishment|XPHB}, {@spell Confusion|XPHB}",
+				"{@spell Legend Lore|XPHB}*, {@spell Scrying|XPHB}*, {@spell Synaptic Static|XPHB}",
+				"*Spell of the Divination school"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Marid's Surge|Paladin|Oath of the Noble Genies|FRHOF",
+			"hint": {
+				"Channel Divinity": "引導神力"
+			},
+			"s": [
+				"Marid's Surge",
+				"Channel Divinity",
+				"The target of your Divine Smite and each creature of your choice in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you make a Strength saving throw against your spell save DC. On a failed save, a creature is pushed 15 feet straight away from you and has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Mind Magic|Cleric|Knowledge Domain|FRHOF",
+			"hint": {
+				"Channel Divinity": "引導神力"
+			},
+			"s": [
+				"Mind Magic",
+				"Channel Divinity",
+				"As a {@action Magic|XPHB} action, you can expend one use of your Channel Divinity to manifest your magical knowledge. Choose one spell from the Divination school on the Knowledge Domain Spells table that you have prepared. As part of that action, you cast that spell without expending a spell slot or needing Material components."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Moon's Inspiration|Bard|College of the Moon|FRHOF",
+			"s": [
+				"Moon's Inspiration",
+				"The primal and ever-changing power of the moon flows through you, granting you the following benefits.",
+				"Inspired Eclipse",
+				"When you take a {@variantrule Bonus Action|XPHB} to give a creature a Bardic Inspiration die, you can have the {@condition Invisible|XPHB} condition and teleport up to 30 feet to an unoccupied space you can see as part of that {@variantrule Bonus Action|XPHB}. This invisibility lasts until the start of your next turn and ends early immediately after you make an attack roll, deal damage, or cast a spell.",
+				"Lunar Vitality",
+				"Once per turn when you restore {@variantrule Hit Points|XPHB} to a creature with a spell, you can expend a Bardic Inspiration die and increase the amount of {@variantrule Hit Points|XPHB} restored by a number equal to a roll of the Bardic Inspiration die. The creature's {@variantrule Speed|XPHB} also increases by 10 feet until the end of its next turn."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Oath of the Noble Genies|Paladin|Oath of the Noble Genies|FRHOF",
+			"s": [
+				"Oath of the Noble Genies",
+				"Paladins sworn to the Oath of the Noble Genies revere the forces of the Elemental Planes. Through taking this oath, Paladins draw power from the four different types of genies—dao, masters of earth; djinn, masters of air; efreet, masters of fire; and marids, masters of water. In Faerûn, many Paladins who swear this oath hail from Calimshan, a land teeming with genies.",
+				"Paladins who swear this oath often undertake quests that take them all over the Realms and across the multiverse—including the Elemental Planes. These paladins share the following tenets:",
+				"Sow the seeds of creation amid the ashes of destruction.",
+				"Lead with splendor and grace.",
+				"Respect the elements, and fear their wrath."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Primal Lore|Bard|College of the Moon|FRHOF",
+			"s": [
+				"Primal Lore",
+				"You learn Druidic and one cantrip from the Druid spell list. It counts as a Bard spell for you but doesn't count against the number of cantrips you know. Whenever you gain a Bard level, you can replace this cantrip with another cantrip of your choice from the Druid spell list.",
+				"Additionally, choose one of the following skills: {@skill Animal Handling|XPHB}, {@skill Insight|XPHB}, {@skill Medicine|XPHB}, {@skill Nature|XPHB}, {@skill Perception|XPHB}, or {@skill Survival|XPHB}. You have proficiency in that skill."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Radiant Fire|Sorcerer|Spellfire Sorcery|FRHOF",
+			"s": [
+				"Radiant Fire",
+				"One creature you can see within 30 feet of yourself takes {@damage 1d4} Fire or Radiant damage (your choice)."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Scion of the Three|Rogue|Scion of the Three|FRHOF",
+			"s": [
+				"Scion of the Three",
+				"A Scion of the Three draws power from a group of malevolent gods known as the Dead Three: {@deity Bane|Faerûnian|FRHoF}, deity of tyranny; {@deity Bhaal|Faerûnian|FRHoF}, deity of violence and murder; and {@deity Myrkul|Faerûnian|FRHoF}, deity of death. While some Rogues of this subclass pledge themselves ardently to those three macabre gods, others find themselves thrust on this path by a curse. Either way, a scion's power manifests as various occult gifts, as well as an uncanny talent for striking and terrifying foes.",
+				"Scions of the Three are most common in Baldur's Gate, where the Dead Three have long competed for influence over mortal hearts. Underground cults to {@deity Bane|Faerûnian|FRHoF}, {@deity Bhaal|Faerûnian|FRHoF}, and {@deity Myrkul|Faerûnian|FRHoF} often count Scions of the Three among their most useful agents. Outside Baldur's Gate, secular thieves' guilds such as the Shadow Thieves of Amn or Xanathar's guild in Waterdeep might cautiously call on a Scion of the Three to undertake an especially violent contract."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Spellfire Burst|Sorcerer|Spellfire Sorcery|FRHOF",
+			"s": [
+				"Spellfire Burst",
+				"When you spend at least 1 Sorcery Point as part of the {@action Magic|XPHB} action or a {@variantrule Bonus Action|XPHB} on your turn, you can unleash one of the following magical effects of your choice. You can do so only once per turn."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Spellfire Sorcery|Sorcerer|Spellfire Sorcery|FRHOF",
+			"s": [
+				"Spellfire Sorcery",
+				"Your innate power stems from the source of magic itself: the Weave. This connection manifests as a rare ability known as spellfire, and you surge with radiant bursts of this raw magic. Your talent with spellfire allows you to heal allies, sear enemies, and absorb powerful spells.",
+				"Wielders of spellfire tend to have a penchant for wandering. Many travel between cosmopolitan settlements, such as those along the Sword Coast, and wield their magic in service of the common good. Others realize their own strange powers by roaming equally strange lands, from the magic-blasted wastes of the desert of Anauroch to the god-touched wilds of the Old Empires. Wherever they go in the Realms, spellfire Sorcerers are courted by factions with interests in the arcane arts, such as the Harpers, Cult of the Dragon, and Red Wizards."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Spellfire Spells|Sorcerer|Spellfire Sorcery|FRHOF",
+			"s": [
+				"Spellfire Spells",
+				"When you reach a Sorcerer level specified in the Spellfire Spells table, you thereafter always have the listed spells prepared.",
+				"Sorcerer Level",
+				"Spells",
+				"{@spell Cure Wounds|XPHB}, {@spell Guiding Bolt|XPHB}, {@spell Lesser Restoration|XPHB}, {@spell Scorching Ray|XPHB}",
+				"{@spell Aura of Vitality|XPHB}, {@spell Dispel Magic|XPHB}",
+				"{@spell Fire Shield|XPHB}, {@spell Wall of Fire|XPHB}",
+				"{@spell Greater Restoration|XPHB}, {@spell Flame Strike|XPHB}"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Training in War and Song|Wizard|Bladesinger|FRHOF",
+			"s": [
+				"Training in War and Song",
+				"You gain proficiency with all Melee Martial weapons that don't have the {@itemProperty 2H|XPHB|Two-Handed} or {@itemProperty H|XPHB|Heavy} property. You can use a Melee weapon with which you have proficiency as a {@variantrule Spellcasting Focus|XPHB} for your Wizard spells.",
+				"You also gain proficiency in one of the following skills of your choice: {@skill Acrobatics|XPHB}, {@skill Athletics|XPHB}, {@skill Performance|XPHB}, or {@skill Persuasion|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Winter Walker|Ranger|Winter Walker|FRHOF",
+			"s": [
+				"Winter Walker",
+				"Winter Walkers hone their craft in the bleak and frozen wilds of places like Icewind Dale. These ruthless, rimed Rangers hunt monsters that haunt arctic wastelands, eventually becoming frigid terrors themselves. Winter Walkers are well versed in the phenomena of Icewind Dale, including the latent magic of fallen Netherese cities, endemic monsters like {@creature yeti|XMM|yetis} and {@creature crag cat|SKT|crag cats}, and the rising threat of Underdark invaders. Due to their cold pragmatism, terrifying magic, and mastery of the region, Winter Walkers are regarded with equal parts respect and fear. Ten-Towns citizens say that Winter Walkers' frequent exposure to malignant entities gives them their fearsome powers. Many Reghed nomads, on the other hand, believe that nature spirits bestow on Winter Walkers a unique curse."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Winter Walker Spells|Ranger|Winter Walker|FRHOF",
+			"s": [
+				"Winter Walker Spells",
+				"When you reach a Ranger level specified in the Winter Walker Spells table, you thereafter always have the listed spells prepared.",
+				"Ranger Level",
+				"Spells"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Absorb Spells|Sorcerer|Spellfire Sorcery|FRHOF",
+			"s": [
+				"Absorb Spells",
+				"You always have {@spell Counterspell|XPHB} prepared.",
+				"Additionally, whenever a target fails the saving throw against a {@spell Counterspell|XPHB} you cast, you regain {@dice 1d4} Sorcery Points."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Blessing of Moonlight|Bard|College of the Moon|FRHOF",
+			"s": [
+				"Blessing of Moonlight",
+				"You always have the {@spell Moonbeam|XPHB} spell prepared.",
+				"When you cast {@spell Moonbeam|XPHB}, you can modify the spell so that you glow faintly while the spell is active. While glowing, you shed {@variantrule Dim Light|XPHB} out to 5 feet, and whenever a creature fails its saving throw against the effects of this Moonbeam, another creature of your choice that you can see within 60 feet of yourself regains {@dice 2d4} {@variantrule Hit Points|XPHB}.",
+				"Once you use this feature to modify a casting of Moonbeam, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Extra Attack|Wizard|Bladesinger|FRHOF",
+			"hint": {
+				"Extra Attack": "額外攻擊"
+			},
+			"s": [
+				"Extra Attack",
+				"You can attack twice, instead of once, whenever you take the {@action Attack|XPHB} action on your turn. Moreover, you can cast {@filter one of your Wizard cantrips that has a casting time of an action|spells|level=0|class=wizard|cast time=action} in place of one of those attacks."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Unfettered Mind|Cleric|Knowledge Domain|FRHOF",
+			"s": [
+				"Unfettered Mind",
+				"You gain {@variantrule telepathy|XPHB} out to 60 feet. When you use this {@variantrule telepathy|XPHB}, you can simultaneously contact a number of creatures equal to your Wisdom modifier (minimum of one).",
+				"Additionally, you gain proficiency in Intelligence saving throws. If you already have this proficiency, you instead gain saving throw proficiency with one ability in which you lack it."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Aura of Elemental Shielding|Paladin|Oath of the Noble Genies|FRHOF",
+			"s": [
+				"Aura of Elemental Shielding",
+				"Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You and your allies have {@variantrule Resistance|XPHB} to that damage type while in your Aura of Protection.",
+				"At the start of each of your turns, you can change the damage type affected by this feature to one of the other listed options (no action required)."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Fortifying Soul|Ranger|Winter Walker|FRHOF",
+			"s": [
+				"Fortifying Soul",
+				"Your experience surviving harrowing environments allows you to bolster your allies in addition to yourself. As a {@action Magic|XPHB} action, choose a number of creatures you can see equal to your Wisdom modifier (minimum of one). Each chosen creature regains {@variantrule Hit Points|XPHB} equal to {@dice 1d10} plus your Ranger level and has {@variantrule Advantage|XPHB} on saving throws to avoid or end the {@condition Frightened|XPHB} condition for 1 hour.",
+				"Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Team Tactics|Fighter|Banneret|FRHOF",
+			"s": [
+				"Team Tactics",
+				"When you use Group Recovery, each chosen ally has {@variantrule Advantage|XPHB} on {@variantrule D20 Test|XPHB|D20 Tests} until the start of your next turn."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Strike Fear|Rogue|Scion of the Three|FRHOF",
+			"s": [
+				"Strike Fear",
+				"You gain the following {@classFeature Cunning Strike|Rogue|XPHB|5|XPHB} option.",
+				"Terrify (Cost: {@dice 1d6})",
+				"The target must succeed on a Wisdom saving throw, or it has the {@condition Frightened|XPHB} condition for 1 minute. While the target is Frightened in this way, you have {@variantrule Advantage|XPHB} on attack rolls against the target.",
+				"The {@condition Frightened|XPHB} target repeats the save at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Rallying Surge|Fighter|Banneret|FRHOF",
+			"hint": {
+				"Attack": "攻擊",
+				"Move": "移動"
+			},
+			"s": [
+				"Rallying Surge",
+				"When you use your Action Surge, you can choose allies within a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from yourself, up to a number of allies equal to your Charisma modifier (minimum of one). Each of those allies can immediately take a {@variantrule Reaction|XPHB} to use one of the following options.",
+				"Attack",
+				"The ally makes one attack with a weapon or an {@variantrule Unarmed Strike|XPHB}.",
+				"Move",
+				"The ally moves up to half its {@variantrule Speed|XPHB} without provoking an {@action Opportunity Attack|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Song of Defense|Wizard|Bladesinger|FRHOF",
+			"hint": {
+				"Song of Defense": "防禦之歌"
+			},
+			"s": [
+				"Song of Defense",
+				"When you take damage while your Bladesong is active, you can take a {@variantrule Reaction|XPHB} to expend one spell slot and reduce the damage taken by an amount equal to five times the spell slot's level."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Chilling Retribution|Ranger|Winter Walker|FRHOF",
+			"s": [
+				"Chilling Retribution",
+				"When a creature hits you with an attack roll, you can take a {@variantrule Reaction|XPHB} to force the creature to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the {@condition Stunned|XPHB} condition until the end of your next turn. While the target is {@condition Stunned|XPHB}, its {@variantrule Speed|XPHB} is reduced to 0 feet.",
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Aura of Malevolence|Rogue|Scion of the Three|FRHOF",
+			"s": [
+				"Aura of Malevolence",
+				"You radiate malignant power associated with one of the Dead Three. When you use {@subclassFeature Bloodthirst|Rogue|XPHB|Scion of the Three|FRHoF|3|FRHoF} and teleport, each creature of your choice within 10 feet of either the space you left or your destination space (your choice) takes damage equal to your Intelligence modifier; the damage type is the same as the damage {@variantrule Resistance|XPHB} granted by your choice in the Dread Allegiance feature. Damage dealt by this feature ignores {@variantrule Resistance|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Eventide's Splendor|Bard|College of the Moon|FRHOF",
+			"s": [
+				"Eventide's Splendor",
+				"You become suffused with the might of the moon, improving your Moon's Inspiration in the following ways.",
+				"Shadow of the New Moon",
+				"When you use Inspired Eclipse, the creature who received the Bardic Inspiration die can also have the {@condition Invisible|XPHB} condition and immediately take a {@variantrule Reaction|XPHB} to teleport up to 30 feet to an unoccupied space it can see. The creature remains {@condition Invisible|XPHB} until the start of its next turn.",
+				"Vibrance of the Full Moon",
+				"When you use Lunar Vitality, you can roll {@dice 1d6} and use the number rolled in place of expending a Bardic Inspiration die."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Honed Spellfire|Sorcerer|Spellfire Sorcery|FRHOF",
+			"s": [
+				"Honed Spellfire",
+				"Your {@subclassFeature Spellfire Burst|Sorcerer|XPHB|Spellfire|FRHoF|3|FRHoF} improves. You add your {@class Sorcerer|XPHB} level to the {@variantrule Temporary Hit Points|XPHB} gained from {@subclassFeature Bolstering Flames|Sorcerer|XPHB|Spellfire|FRHoF|3|FRHoF}, and the damage of {@subclassFeature Radiant Fire|Sorcerer|XPHB|Spellfire|FRHoF|3|FRHoF} increases to {@dice 1d8}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Song of Victory|Wizard|Bladesinger|FRHOF",
+			"hint": {
+				"Song of Victory": "勝利之歌"
+			},
+			"s": [
+				"Song of Victory",
+				"After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a {@variantrule Bonus Action|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Elemental Rebuke|Paladin|Oath of the Noble Genies|FRHOF",
+			"s": [
+				"Elemental Rebuke",
+				"When you are hit by an attack roll, you can take a {@variantrule Reaction|XPHB} to halve the attack's damage against yourself (round down) and force the attacker to make a Dexterity saving throw against your spell save DC. On a failed save, the attacker takes damage equal to {@dice 2d10} plus your Charisma modifier of one of the following types (your choice): Acid, Cold, Fire, Lightning, or Thunder. On a successful save, the attacker takes half as much damage.",
+				"You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Frozen Haunt|Ranger|Winter Walker|FRHOF",
+			"hint": {
+				"Partially Incorporeal": "部分無形體"
+			},
+			"s": [
+				"Frozen Haunt",
+				"When you cast {@spell Hunter's Mark|XPHB}, you can adopt a ghostly, snowy form. This form lasts until the spell ends, and while you are in this form, you gain the following benefits. Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB} unless you expend a level 4+ spell slot (no action required).",
+				"Frozen Soul",
+				"You have {@variantrule Immunity|XPHB} to Cold damage. When you first adopt this form and at the start of each of your subsequent turns, each creature of your choice in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you takes {@damage 2d4} Cold damage.",
+				"Partially Incorporeal",
+				"You have {@variantrule Immunity|XPHB} to the {@condition Grappled|XPHB}, {@condition Prone|XPHB}, and {@condition Restrained|XPHB} conditions. You can move through creatures and objects as if they were {@variantrule Difficult Terrain|XPHB}, but you take {@damage 1d10} Force damage if you end your turn inside a creature or an object. If the form ends while you are inside a creature or an object, you are shunted to the nearest unoccupied space."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Shared Resilience|Fighter|Banneret|FRHOF",
+			"s": [
+				"Shared Resilience",
+				"When an ally you can see within 60 feet of yourself fails a saving throw, you can take a {@variantrule Reaction|XPHB} to expend a use of your Indomitable feature. The ally can immediately reroll the saving throw with a bonus equal to your Fighter level; the ally must use the new roll."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Divine Foreknowledge|Cleric|Knowledge Domain|FRHOF",
+			"s": [
+				"Divine Foreknowledge",
+				"As a {@variantrule Bonus Action|XPHB}, you magically expand your mind to the future. For 1 hour, you have {@variantrule Advantage|XPHB} on {@variantrule D20 Test|XPHB|D20 Tests}. Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}. You can also restore your use of this feature by expending a level 6+ spell slot (no action required)."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Dread Incarnate|Rogue|Scion of the Three|FRHOF",
+			"s": [
+				"Dread Incarnate",
+				"You gain the following benefits.",
+				"Cutthroat",
+				"You regain one expended use of {@subclassFeature Bloodthirst|Rogue|XPHB|Scion of the Three|FRHoF|3|FRHoF} when you finish a {@variantrule Short Rest|XPHB}.",
+				"Murderous Intent",
+				"When you roll for your {@classFeature Sneak Attack|Rogue|XPHB|1|XPHB} damage, you can treat a roll of a 1 or 2 on the die as a 3."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Crown of Spellfire|Sorcerer|Spellfire Sorcery|FRHOF",
+			"hint": {
+				"Sorcery Point": "術法點",
+				"Flight": "飛行"
+			},
+			"s": [
+				"Crown of Spellfire",
+				"Sorcery Point",
+				"When you use {@classFeature Innate Sorcery|Sorcerer|XPHB|1}, you can alter it and infuse yourself with the essence of spellfire, gaining the following benefits while this use of Innate Sorcery is active. Once you use this feature to alter Innate Sorcery, you can't use it again until you finish a {@variantrule Long Rest|XPHB} unless you spend 5 Sorcery Points (no action required) to restore your use of it.",
+				"Burning Life Force",
+				"Once per turn when you are hit by an attack roll, you can expend a number of {@variantrule Hit Point Dice|XPHB}, up to a maximum equal to your Charisma modifier (minimum of one). Roll the expended dice, and reduce the amount of damage from that attack equal to the total rolled.",
+				"Flight",
+				"You gain a {@variantrule Fly Speed|XPHB} of 60 feet and can hover.",
+				"Spell Avoidance",
+				"When you're subjected to a spell or magical effect that allows you to make a saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this benefit if you have the {@condition Incapacitated|XPHB} condition."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Inspiring Commander|Fighter|Banneret|FRHOF",
+			"s": [
+				"Inspiring Commander",
+				"You gain the following benefits.",
+				"Bolstered Rally",
+				"The area of effect for both Group Recovery and Rallying Surge is now a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}.",
+				"Unshakable Bravery",
+				"You have {@variantrule Immunity|XPHB} to the {@condition Charmed|XPHB} and {@condition Frightened|XPHB} conditions."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Noble Scion|Paladin|Oath of the Noble Genies|FRHOF",
+			"hint": {
+				"Flight": "飛行"
+			},
+			"s": [
+				"Noble Scion",
+				"As a {@variantrule Bonus Action|XPHB}, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}. You can also restore your use of it by expending a level 5 spell slot (no action required).",
+				"Flight",
+				"You have a {@variantrule Fly Speed|XPHB} of 60 feet and can hover.",
+				"Minor Wish",
+				"When you or an ally in your {@classFeature Aura of Protection|Paladin|XPHB|6|XPHB} fails a {@variantrule D20 Test|XPHB}, you can take a {@variantrule Reaction|XPHB} to make the {@variantrule D20 Test|XPHB} succeed instead."
+			]
+		}
+	]
+}

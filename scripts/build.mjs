@@ -156,6 +156,21 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	}
 }
 
+// ---- 3a''. 職業／子職業特性開頭的「{@i 3rd-level Echo Knight feature}」 ------------------------
+{
+	const zhName = {};
+	for (const prop of ["subclass", "class"]) {
+		for (const [k, o] of Object.entries(tr[prop] || {})) if (hasCjk(o?.name)) zhName[k.split("|")[0].toLowerCase()] ||= o.name.trim();
+	}
+	const RE = /^\{@i (\d+)(?:st|nd|rd|th)-[Ll]evel (.+?) [Ff]eature\}$/;
+	const fix = arr => Array.isArray(arr) && arr.forEach((s, i) => {
+		const m = typeof s === "string" && RE.exec(s);
+		const zh = m && (zhName[m[2].toLowerCase()] || zhName[`the ${m[2].toLowerCase()}`] || lookupName("class", m[2]));
+		if (zh) arr[i] = `{@i ${m[1]} 級${zh}特性}`;
+	});
+	for (const {json} of loaded) for (const f of [...json.subclassFeature || [], ...json.classFeature || []]) fix(f.entries);
+}
+
 // ---- 3a'. 種族／背景／專長中完全比對的句子（含 _copy、_versions；i18n/exact-strings.json） --------
 {
 	const ex = readI18n(path.join(I18N, "exact-strings.json"));
