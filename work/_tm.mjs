@@ -8,7 +8,7 @@ for (const f of fs.readdirSync("work").filter(f => f.endsWith(".zh.json"))) {
 	en.forEach((e, k) => { const z = Array.isArray(zh) ? zh[k] : zh[e.key]; if (!Array.isArray(z)) return; e.s.forEach((s, j) => { if (typeof z[j] === "string" && z[j] !== s && /[㐀-鿿]/.test(z[j])) tm[s] ??= z[j]; }); });
 }
 export default tm;
-if (process.argv[2]) {
+if (process.argv[1]?.endsWith("_tm.mjs") && process.argv[2]) {
 	for (const b of process.argv.slice(2)) {
 		const en = JSON.parse(fs.readFileSync(`work/${b}.en.json`)).items;
 		let hit = 0, tot = 0, ch = 0;

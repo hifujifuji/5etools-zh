@@ -15,7 +15,7 @@ export const SCN = {
  "The Fathomless": "深海宗主", "The Genie": "巨靈宗主", "The Undead": "不死宗主",
  "School of Conjuration": "咒法學派", "Chronurgy Magic": "時間魔法", "Graviturgy Magic": "重力魔法", "Order of Scribes": "抄寫者教團", "Bladesinger": "劍詠者",
 };
-if (process.argv[1].endsWith("_scnames.mjs")) {
+if (process.argv[1]?.endsWith("_scnames.mjs")) {
 	const p = "i18n/custom/subclass.json";
 	const cur = JSON.parse(fs.readFileSync(p));
 	let n = 0;
