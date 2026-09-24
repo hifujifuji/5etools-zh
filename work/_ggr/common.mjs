@@ -1,4 +1,4 @@
-export const G = {Azorius: "阿佐理斯", Boros: "波洛斯", Dimir: "底密爾", Golgari: "葛加理", Gruul: "古魯", Izzet: "伊捷", Orzhov: "歐佐夫", Rakdos: "拉铎斯", Selesnya: "瑟雷尼亞", Simic: "析米克"};
+export const G = {Azorius: "阿佐理斯", Boros: "波洛斯", Dimir: "底密爾", Golgari: "葛加理", Gruul: "古魯", Izzet: "伊捷", Orzhov: "歐佐夫", Rakdos: "拉鐸斯", Selesnya: "瑟雷尼亞", Simic: "析米克"};
 export const COMMON = {};
 for (const [en, zh] of Object.entries(G)) Object.assign(COMMON, {
 	[`${en} Guild Spells`]: `${zh}公會法術`,

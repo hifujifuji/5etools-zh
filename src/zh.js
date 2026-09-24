@@ -8,6 +8,8 @@
 (function () {
 	const DICT = /* __ZH_DICT__ */ {};
 	const RULES_SRC = /* __ZH_RULES__ */ [];
+	// 只用於分頁標題的實體名稱（背景、專長…），避免影響頁面其他文字
+	const TITLE = /* __ZH_TITLE__ */ {};
 
 	const RULES = RULES_SRC.map(([re, repl]) => [new RegExp(`^${re}$`), repl]);
 
@@ -171,7 +173,8 @@
 
 	const translateTitle = () => {
 		const tt = document.title;
-		const x = t(tt);
+		const mT = /^(.+) - 5etools$/.exec(tt);
+		const x = mT && TITLE[mT[1]] ? `${TITLE[mT[1]]} - 5etools 中文版` : t(tt);
 		if (x != null && x !== tt) document.title = x;
 	};
 

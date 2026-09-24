@@ -1,0 +1,414 @@
+{
+	"batch": "vr-XPHB-1",
+	"items": [
+		{
+			"prop": "variantrule",
+			"key": "Ability Check|XPHB",
+			"hint": {
+				"Ability Check": "屬性檢定"
+			},
+			"s": [
+				"Ability Check",
+				"An ability check is a {@variantrule D20 Test|XPHB} that represents using one of the six abilities—or a specific skill associated with an ability—to overcome a challenge."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Ability Score and Modifier|XPHB",
+			"hint": {
+				"Ability Score and Modifier": "屬性值與調整值"
+			},
+			"s": [
+				"Ability Score and Modifier",
+				"A creature has six ability scores—Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma—each of which has a corresponding modifier. Add the modifier when you make a {@variantrule D20 Test|XPHB} with the corresponding ability or when a rule asks you to do so."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Action|XPHB",
+			"hint": {
+				"Action": "動作"
+			},
+			"s": [
+				"Action",
+				"On your turn, you can take one action. Choose which action to take from those below or from the special actions provided by your features. These actions are defined elsewhere in this glossary:"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Advantage|XPHB",
+			"hint": {
+				"Advantage": "優勢"
+			},
+			"s": [
+				"Advantage",
+				"If you have Advantage on a {@variantrule D20 Test|XPHB}, roll two d20s, and use the higher roll. A roll can't be affected by more than one Advantage, and Advantage and {@variantrule Disadvantage|XPHB} on the same roll cancel each other."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Adventure|XPHB",
+			"hint": {
+				"Adventure": "冒險"
+			},
+			"s": [
+				"Adventure",
+				"An adventure is a series of {@variantrule Encounter|XPHB|encounters}. A story emerges through playing them."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Alignment|XPHB",
+			"hint": {
+				"Alignment": "陣營"
+			},
+			"s": [
+				"Alignment",
+				"A creature's alignment broadly describes its ethical attitudes and ideals. Alignment is a combination of two factors: one identifies morality (good, evil, or neutral), and the other describes attitudes toward order (lawful, chaotic, or neutral). These factors allow for nine possible combinations, such as Lawful Good and Neutral Evil."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Ally|XPHB",
+			"hint": {
+				"Ally": "盟友"
+			},
+			"s": [
+				"Ally",
+				"A creature is your ally if it is a member of your adventuring party, your friend, on your side in combat, or a creature that the rules or the DM designates as your ally."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Area of Effect|XPHB",
+			"hint": {
+				"Area of Effect": "效果範圍"
+			},
+			"s": [
+				"Area of Effect",
+				"The descriptions of many spells and other features specify that they have an area of effect, which typically has one of six shapes. These shapes are defined elsewhere in this glossary:",
+				"An area of effect has a point of origin, a location from which the effect's energy erupts. The rules for each shape specify how to position its point of origin. If all straight lines extending from the point of origin to a location in the area of effect are blocked, that location isn't included in the area of effect. To block a line, an obstruction must provide {@variantrule Cover|XPHB|Total Cover}.",
+				"If the creator of an area of effect places it at an unseen point and an obstruction—such as a wall—is between the creator and that point, the point of origin comes into being on the near side of the obstruction."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Armor Class|XPHB",
+			"hint": {
+				"Armor Class": "護甲等級"
+			},
+			"s": [
+				"Armor Class",
+				"An Armor Class (AC) is the target number for an attack roll. AC represents how difficult it is to hit a target.",
+				"Your base AC calculation is 10 plus your Dexterity modifier. If a rule gives you another base AC calculation, you choose which calculation to use; you can't use more than one."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Armor Training|XPHB",
+			"hint": {
+				"Armor Training": "護甲受訓"
+			},
+			"s": [
+				"Armor Training",
+				"Armor training allows you to use armor of a certain category without the following drawbacks. If you wear {@filter Light|items|type=Light Armor}, {@filter Medium|items|type=Medium Armor}, or {@filter Heavy|items|type=Heavy Armor} armor and lack training with it, you have {@variantrule Disadvantage|XPHB} on any {@variantrule D20 Test|XPHB} that involves Strength or Dexterity, and you can't cast spells. If you use a {@item Shield|XPHB} and lack training with it, you don't gain its AC bonus."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Attack Roll|XPHB",
+			"hint": {
+				"Attack Roll": "攻擊檢定"
+			},
+			"s": [
+				"Attack Roll",
+				"An attack roll is a {@variantrule D20 Test|XPHB} that represents making an attack with a weapon, an {@variantrule Unarmed Strike|XPHB}, or a spell."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Attitude|XPHB",
+			"hint": {
+				"Attitude": "態度"
+			},
+			"s": [
+				"Attitude",
+				"A {@variantrule Monster|XPHB|monster} has a starting attitude toward a {@variantrule Player Character|XPHB|player character}: {@variantrule Friendly [Attitude]|XPHB|Friendly}, {@variantrule Hostile [Attitude]|XPHB|Hostile}, or {@variantrule Indifferent [Attitude]|XPHB|Indifferent}."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Attunement|XPHB",
+			"hint": {
+				"Attunement": "同調"
+			},
+			"s": [
+				"Attunement",
+				"Some magic items require a creature to form a bond—called Attunement—with them before the creature can use an item's magical properties. A creature can have Attunement with no more than three magic items at a time."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Bonus Action|XPHB",
+			"hint": {
+				"Bonus Action": "附贈動作"
+			},
+			"s": [
+				"Bonus Action",
+				"A Bonus Action is a special action that you can take on the same turn that you take an action. You can't take more than one Bonus Action on a turn, and you have a Bonus Action to take only if a rule explicitly says so."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Breaking Objects|XPHB",
+			"hint": {
+				"Breaking Objects": "破壞物體",
+				"Armor Class": "護甲等級",
+				"Hit Points": "生命值",
+				"Damage Threshold": "傷害閾值"
+			},
+			"s": [
+				"Breaking Objects",
+				"Objects can be harmed by attacks and by some spells, using the rules below. If an object is exceedingly fragile, the DM may allow a creature to break it automatically with the {@action Attack|XPHB} or {@action Utilize|XPHB} action.",
+				"Armor Class",
+				"The Object {@variantrule Armor Class|XPHB} table suggests ACs for various substances.",
+				"Object Armor Class",
+				"AC",
+				"Substance",
+				"Cloth, paper, rope",
+				"Crystal, glass, ice",
+				"Wood",
+				"Stone",
+				"Iron, steel",
+				"Mithral",
+				"Adamantite",
+				"Hit Points",
+				"An object is destroyed when it has 0 Hit Points. The Object Hit Points table suggests {@variantrule Hit Points|XPHB} for fragile and resilient objects that are Large or smaller. To track Hit Points for a Huge or Gargantuan object, divide it into Large or smaller sections, and track each section's {@variantrule Hit Points|XPHB} separately. The DM determines whether destroying part of an object causes the whole thing to collapse.",
+				"Object Hit Points",
+				"Size",
+				"Fragile",
+				"Resilient",
+				"Tiny (bottle, lock)",
+				"2 ({@dice 1d4})",
+				"5 ({@dice 2d4})",
+				"Small (chest, lute)",
+				"3 ({@dice 1d6})",
+				"10 ({@dice 3d6})",
+				"Medium (barrel, chandelier)",
+				"4 ({@dice 1d8})",
+				"18 ({@dice 4d8})",
+				"Large (cart, dining table)",
+				"5 ({@dice 1d10})",
+				"27 ({@dice 5d10})",
+				"Damage Types and Objects",
+				"Objects have {@variantrule Immunity|XPHB} to Poison and Psychic damage. The DM might decide that some {@variantrule Damage Types|XPHB|damage types} are more or less effective against an object. For example, Bludgeoning damage works well for smashing things but not for cutting. Paper or cloth objects might have {@variantrule Vulnerability|XPHB} to Fire damage.",
+				"Damage Threshold",
+				"Big objects, such as castle walls, often have extra resilience represented by a damage threshold.",
+				"No Ability Scores",
+				"An object lacks ability scores unless a rule assigns scores to the object. Without ability scores, an object can't make ability checks, and it fails all saving throws."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Bright Light|XPHB",
+			"hint": {
+				"Bright Light": "明亮光照"
+			},
+			"s": [
+				"Bright Light",
+				"Bright Light is normal illumination."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Burrow Speed|XPHB",
+			"hint": {
+				"Burrow Speed": "掘地速度"
+			},
+			"s": [
+				"Burrow Speed",
+				"A creature that has a Burrow Speed can use that speed to move through sand, earth, mud, or ice. The creature can't burrow through solid rock unless the creature has a trait that allows it to do so."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Campaign|XPHB",
+			"hint": {
+				"Campaign": "戰役"
+			},
+			"s": [
+				"Campaign",
+				"A campaign is a series of {@variantrule Adventure|XPHB|adventures}."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Cantrip|XPHB",
+			"hint": {
+				"Cantrip": "戲法"
+			},
+			"s": [
+				"Cantrip",
+				"A cantrip is a level 0 spell, which is cast without a spell slot."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Carrying Capacity|XPHB",
+			"hint": {
+				"Carrying Capacity": "負重能力"
+			},
+			"s": [
+				"Carrying Capacity",
+				"Your size and Strength score determines the maximum weight in pounds that you can carry, as shown in the Carrying Capacity table. The table also shows the maximum weight you can drag, lift or push.",
+				"While dragging, lifting, or pushing weight in excess of the maximum weight you can carry, your Speed can be no more than 5 feet.",
+				"Carrying Capacity",
+				"Creature Size",
+				"Carry",
+				"Drag/Lift/Push",
+				"Tiny",
+				"{@dice #$prompt_number:title=Enter Strength Score$# × 7.5|Str. × 7.5} lb.",
+				"{@dice #$prompt_number:title=Enter Strength Score$# × 15|Str. × 15} lb.",
+				"Small/Medium",
+				"{@dice #$prompt_number:title=Enter Strength Score$# × 15|Str. × 15} lb.",
+				"{@dice #$prompt_number:title=Enter Strength Score$# × 30|Str. × 30} lb.",
+				"Large",
+				"{@dice #$prompt_number:title=Enter Strength Score$# × 30|Str. × 30} lb.",
+				"{@dice #$prompt_number:title=Enter Strength Score$# × 60|Str. × 60} lb.",
+				"Huge",
+				"{@dice #$prompt_number:title=Enter Strength Score$# × 60|Str. × 60} lb.",
+				"{@dice #$prompt_number:title=Enter Strength Score$# × 120|Str. × 120} lb.",
+				"Gargantuan",
+				"{@dice #$prompt_number:title=Enter Strength Score$# × 120|Str. × 120} lb.",
+				"{@dice #$prompt_number:title=Enter Strength Score$# × 240|Str. × 240} lb."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Challenge Rating|XPHB",
+			"hint": {
+				"Challenge Rating": "挑戰等級"
+			},
+			"s": [
+				"Challenge Rating",
+				"Challenge Rating (CR) summarizes the threat a {@variantrule Monster|XPHB|monster} poses to a group of four {@variantrule Player Character|XPHB|player characters}. Compare a {@variantrule Monster|XPHB|monster's} CR to the characters' level. If the CR is higher, the {@variantrule Monster|XPHB|monster} is likely a danger. If the CR is lower, the {@variantrule Monster|XPHB|monster} likely poses little threat. But circumstances and the number of {@variantrule Player Character|XPHB|player characters} can significantly alter how threatening a {@variantrule Monster|XPHB|monster} is in actual play. The {@book Dungeon Master's Guide|XDMG} provides guidance to the DM on using CR while planning potential combat {@variantrule Encounter|XPHB|encounters}."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Character Sheet|XPHB",
+			"hint": {
+				"Character Sheet": "角色卡"
+			},
+			"s": [
+				"Character Sheet",
+				"A character sheet is a paper or digital record that you use to track your character's information."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Climb Speed|XPHB",
+			"hint": {
+				"Climb Speed": "攀爬速度"
+			},
+			"s": [
+				"Climb Speed",
+				"A Climb Speed can be used in place of {@variantrule Speed|XPHB} to traverse a vertical surface without expending the extra movement normally associated with climbing."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Climbing|XPHB",
+			"hint": {
+				"Climbing": "攀爬"
+			},
+			"s": [
+				"Climbing",
+				"While you're climbing, each foot of movement costs 1 extra foot (2 extra feet in {@variantrule Difficult Terrain|XPHB|difficult terrain}). You ignore this extra cost if you have a {@variantrule Climb Speed|XPHB} and use it to climb. At the DM's option, climbing a slippery surface or one with few handholds might require a successful {@dc 15} Strength ({@skill Athletics|XPHB}) check."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Condition|XPHB",
+			"hint": {
+				"Condition": "狀態"
+			},
+			"s": [
+				"Condition",
+				"A condition is a temporary game state. The definition of a condition says how it affects its recipient, and various rules define how to end a condition. This glossary defines these conditions:",
+				"A condition doesn't stack with itself; a recipient either has a condition or doesn't. The {@condition Exhaustion|XPHB} condition is an exception to that rule."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Cone [Area of Effect]|XPHB",
+			"hint": {
+				"Cone [Area of Effect]": "錐形"
+			},
+			"s": [
+				"Cone [Area of Effect]",
+				"A Cone is an area of effect that extends in straight lines from a point of origin in a direction its creator chooses. A Cone's width at any point along its length is equal to that point's distance from the point of origin. For example, a Cone is 15 feet wide at a point along its length that is 15 feet from the point of origin. The effect that creates a Cone specifies its maximum length.",
+				"A Cone's point of origin isn't included in the area of effect unless its creator decides otherwise."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Cover|XPHB",
+			"hint": {
+				"Cover": "掩護"
+			},
+			"s": [
+				"Cover",
+				"Cover provides a degree of protection to a target behind it. There are three degrees of cover, each of which provides a different benefit to a target: Half Cover (+2 bonus to AC and Dexterity saving throws), Three-Quarters Cover (+5 bonus to AC and Dexterity {@variantrule Saving Throw|XPHB|saving throws}), and Total Cover (can't be targeted directly). If behind more than one degree of cover, a target benefits only from the most protective degree."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Crawling|XPHB",
+			"hint": {
+				"Crawling": "爬行"
+			},
+			"s": [
+				"Crawling",
+				"While you're crawling, each foot of movement costs 1 extra foot (2 extra feet in {@variantrule Difficult Terrain|XPHB|difficult terrain})."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Creature|XPHB",
+			"hint": {
+				"Creature": "生物"
+			},
+			"s": [
+				"Creature",
+				"Any being in the game, including {@variantrule Player Character|XPHB|a player's character}, is a creature."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Creature Type|XPHB",
+			"hint": {
+				"Creature Type": "生物類型"
+			},
+			"s": [
+				"Creature Type",
+				"Every creature, including every {@variantrule Player Character|XPHB|player character}, has a tag in the rules that identifies the type of creature it is. Most {@variantrule Player Character|XPHB|player characters} are of the Humanoid type. These are the game's creature types:",
+				"Aberration",
+				"Beast",
+				"Celestial",
+				"Construct",
+				"Dragon",
+				"Elemental",
+				"Fey",
+				"Fiend",
+				"Giant",
+				"Humanoid",
+				"Monstrosity",
+				"Ooze",
+				"Plant",
+				"Undead",
+				"The types don't have rules themselves, but some rules in the game affect creatures of certain types in different ways."
+			]
+		}
+	]
+}

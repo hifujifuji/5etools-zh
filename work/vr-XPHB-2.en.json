@@ -1,0 +1,428 @@
+{
+	"batch": "vr-XPHB-2",
+	"items": [
+		{
+			"prop": "variantrule",
+			"key": "Critical Hit|XPHB",
+			"hint": {
+				"Critical Hit": "重擊"
+			},
+			"s": [
+				"Critical Hit",
+				"If you roll a 20 on the {@dice d20} for an attack roll, you score a Critical Hit, and the attack hits regardless of any modifiers or the target's AC. A Critical Hit lets you roll extra dice for the attack's damage against the target. Roll all of the attack's damage dice twice and add them together. Then add any relevant modifiers."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Cube [Area of Effect]|XPHB",
+			"hint": {
+				"Cube [Area of Effect]": "立方"
+			},
+			"s": [
+				"Cube [Area of Effect]",
+				"A Cube is an area of effect that extends in straight lines from a point of origin located anywhere on a face of the Cube. The effect that creates a Cube specifies its size, which is the length of each side. A Cube's point of origin isn't included in the area of effect unless its creator decides otherwise."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Curses|XPHB",
+			"hint": {
+				"Curses": "詛咒"
+			},
+			"s": [
+				"Curses",
+				"Some game effects curse a creature or an object. The effect that confers a curse defines what the curse does. Curses can be removed by the {@spell Remove Curse|XPHB} and {@spell Greater Restoration|XPHB} spells or other magic that explicitly ends curses."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Cylinder [Area of Effect]|XPHB",
+			"hint": {
+				"Cylinder [Area of Effect]": "圓柱"
+			},
+			"s": [
+				"Cylinder [Area of Effect]",
+				"A Cylinder is an area of effect that extends in straight lines from a point of origin located at the center of the circular top or bottom of the Cylinder. The effect that creates a Cylinder specifies the radius of the Cylinder's base and the Cylinder's height.",
+				"A Cylinder's point of origin is included in the area of effect."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "D20 Test|XPHB",
+			"hint": {
+				"D20 Test": "d20 檢定"
+			},
+			"s": [
+				"D20 Test",
+				"D20 Tests encompass the three main d20 rolls of the game: {@variantrule Ability Check|XPHB|ability checks}, {@variantrule Attack Roll|XPHB|attack rolls}, and {@variantrule Saving Throw|XPHB|saving throws}. If something in the game affects D20 Tests, it affects all three of these rolls. The DM determines whether a D20 Test is warranted in a given circumstance."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Damage|XPHB",
+			"hint": {
+				"Damage": "傷害"
+			},
+			"s": [
+				"Damage",
+				"Damage represents harm that causes a creature or an object to lose {@variantrule Hit Points|XPHB}."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Damage Roll|XPHB",
+			"hint": {
+				"Damage Roll": "傷害骰"
+			},
+			"s": [
+				"Damage Roll",
+				"A damage roll is a die roll, adjusted by any applicable modifiers, that deals damage to a target."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Damage Threshold|XPHB",
+			"hint": {
+				"Damage Threshold": "傷害閾值"
+			},
+			"s": [
+				"Damage Threshold",
+				"A creature or an object that has a damage threshold has {@variantrule Immunity|XPHB} to all damage unless it takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, in which case it takes that entire instance of damage. Any damage that fails to meet or exceed the damage threshold is superficial and doesn't reduce {@variantrule Hit Points|XPHB}. For example, if an object has a damage threshold of 10, the object takes no damage if 9 damage is dealt to it, since that damage fails to exceed the threshold. If the same object is dealt 11 damage, it takes all of that damage."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Damage Types|XPHB",
+			"hint": {
+				"Damage Types": "傷害類型"
+			},
+			"s": [
+				"Damage Types",
+				"Attacks and other harmful effects deal different types of damage. Damage types have no rules of their own, but other rules, such as Resistance, rely on the types. The Damage Types table offers examples to help a DM assign a type to a new effect.",
+				"Damage Types",
+				"Type",
+				"Examples",
+				"Acid",
+				"Corrosive liquids, digestive enzymes",
+				"Bludgeoning",
+				"Blunt objects, constriction, falling",
+				"Cold",
+				"Freezing water, icy blasts",
+				"Fire",
+				"Flames, unbearable heat",
+				"Force",
+				"Pure magical energy",
+				"Lightning",
+				"Electricity",
+				"Necrotic",
+				"Life-draining energy",
+				"Piercing",
+				"Fangs, puncturing objects",
+				"Poison",
+				"Toxic gas, venom",
+				"Psychic",
+				"Mind-rending energy",
+				"Radiant",
+				"Holy energy, searing radiation",
+				"Slashing",
+				"Claws, cutting objects",
+				"Thunder",
+				"Concussive sound"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Darkness|XPHB",
+			"hint": {
+				"Darkness": "黑暗術"
+			},
+			"s": [
+				"Darkness",
+				"An area of Darkness is {@variantrule Heavily Obscured|XPHB}."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Dead|XPHB",
+			"hint": {
+				"Dead": "死亡"
+			},
+			"s": [
+				"Dead",
+				"A dead creature has no {@variantrule Hit Points|XPHB} and can't regain them unless it is first revived by magic such as the {@spell Raise Dead|XPHB} or {@spell Revivify|XPHB} spell. When such a spell is cast, the spirit knows who is casting it and can refuse. The spirit of a dead creature has left the body and departed for the Outer Planes, and reviving the creature requires calling the spirit back.",
+				"If the creature returns to life, the revival effect determines the creature's current {@variantrule Hit Points|XPHB}. Unless otherwise stated, the creature returns to life with any {@variantrule Condition|XPHB|conditions}, magical contagions, or curses that were affecting it at death if the durations of those effects are still ongoing. If the creature died with any {@condition Exhaustion|XPHB} levels, it returns with 1 fewer level. If the creature had {@variantrule Attunement|XPHB} to one or more magic items, it is no longer attuned to them."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Death Saving Throw|XPHB",
+			"hint": {
+				"Death Saving Throw": "死亡豁免"
+			},
+			"s": [
+				"Death Saving Throw",
+				"A {@variantrule Player Character|XPHB|player character} must make a Death Saving Throw (also called a Death Save) if they start their turn with 0 {@variantrule Hit Points|XPHB}."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Difficult Terrain|XPHB",
+			"hint": {
+				"Difficult Terrain": "困難地形"
+			},
+			"s": [
+				"Difficult Terrain",
+				"If a space is Difficult Terrain, every foot of movement in that space costs 1 extra foot. For example, moving 5 feet through Difficult Terrain costs 10 feet of movement. Difficult Terrain isn't cumulative; either a space is Difficult Terrain or it isn't.",
+				"A space is Difficult Terrain if the space contains any of the following or something similar:",
+				"A creature that isn't Tiny or your ally",
+				"Furniture that is sized for creatures of your size or larger",
+				"Heavy snow, ice, rubble, or undergrowth",
+				"Liquid that's between shin- and waist-deep",
+				"A narrow opening sized for a creature one size smaller than you",
+				"A slope of 20 degrees or more"
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Difficulty Class|XPHB",
+			"hint": {
+				"Difficulty Class": "難度等級"
+			},
+			"s": [
+				"Difficulty Class",
+				"A Difficulty Class (DC) is the target number for an ability check or a {@variantrule Saving Throw|XPHB|saving throw}."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Dim Light|XPHB",
+			"hint": {
+				"Dim Light": "微弱光照"
+			},
+			"s": [
+				"Dim Light",
+				"An area with Dim Light is {@variantrule Lightly Obscured|XPHB}."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Disadvantage|XPHB",
+			"hint": {
+				"Disadvantage": "劣勢"
+			},
+			"s": [
+				"Disadvantage",
+				"If you have Disadvantage on a {@variantrule D20 Test|XPHB}, roll two d20s and use the lower roll. A roll can't be affected by more than one Disadvantage, and {@variantrule Advantage|XPHB} and Disadvantage on the same roll cancel each other."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Emanation [Area of Effect]|XPHB",
+			"hint": {
+				"Emanation [Area of Effect]": "散發"
+			},
+			"s": [
+				"Emanation [Area of Effect]",
+				"An Emanation is an area of effect that extends in straight lines from a creature or an object in all directions. The effect that creates an Emanation specifies the distance it extends.",
+				"An Emanation moves with the creature or object that is its origin unless it is an instantaneous or a stationary effect.",
+				"An Emanation's origin (creature or object) isn't included in the area of effect unless its creator decides otherwise."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Encounter|XPHB",
+			"hint": {
+				"Encounter": "遭遇"
+			},
+			"s": [
+				"Encounter",
+				"An encounter is a scene in an adventure that is part of at least one of the game's three pillars: social interaction, exploration, or combat."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Enemy|XPHB",
+			"hint": {
+				"Enemy": "敵人"
+			},
+			"s": [
+				"Enemy",
+				"A creature is your enemy if it fights against you in combat, actively works to harm you, or is designated as your enemy by the rules or DM."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Experience Points|XPHB",
+			"hint": {
+				"Experience Points": "經驗值"
+			},
+			"s": [
+				"Experience Points",
+				"As they overcome challenges and complete adventures, characters earn Experience Points (XP) which are awarded by the Dungeon Master. When a character's XP total crosses certain thresholds, the character's level increases. The {@book Dungeon Master's Guide|XDMG} provides guidance on awarding XP."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Expertise|XPHB",
+			"hint": {
+				"Expertise": "專精"
+			},
+			"s": [
+				"Expertise",
+				"Expertise is a feature that enhances your use of a skill proficiency. When you make an ability check with a skill proficiency in which you have Expertise, your {@variantrule Proficiency|XPHB|Proficiency Bonus} is doubled for that check unless the bonus is doubled by another feature.",
+				"If you gain Expertise, you gain it in one {@variantrule skill|XPHB} in which you have proficiency. You can't have Expertise in the same skill proficiency more than once."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Fly Speed|XPHB",
+			"hint": {
+				"Fly Speed": "飛行速度"
+			},
+			"s": [
+				"Fly Speed",
+				"A Fly Speed can be used to travel through the air. While you have a Fly Speed, you can stay aloft until you land, fall, or die."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Flying|XPHB",
+			"hint": {
+				"Flying": "飛行"
+			},
+			"s": [
+				"Flying",
+				"A variety of effects allow a creature to fly. While flying, you fall if you have the {@condition Incapacitated|XPHB} or {@condition Prone|XPHB} condition or your {@variantrule Fly Speed|XPHB} is reduced to 0. You can stay aloft in those circumstances if you can hover."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Friendly [Attitude]|XPHB",
+			"hint": {
+				"Friendly [Attitude]": "友善"
+			},
+			"s": [
+				"Friendly [Attitude]",
+				"A Friendly creature views you favorably. You have {@variantrule Advantage|XPHB|advantage} on an ability check to influence a Friendly creature."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Grappling|XPHB",
+			"hint": {
+				"Grappling": "擒抱"
+			},
+			"s": [
+				"Grappling",
+				"A creature can grapple another creature. Characters typically grapple by using an {@variantrule Unarmed Strike|XPHB}. Many {@variantrule Monster|XPHB|monsters} have special attacks that allow them to quickly grapple prey. However a grapple is initiated, it follows these rules.",
+				"Grappled Condition",
+				"Successfully grappling a creature gives it the {@condition Grappled|XPHB} condition.",
+				"One Grapple per Hand",
+				"A creature must have a hand free to grapple another creature. Some stat blocks and game effects allow a creature to grapple using a tentacle, a maw, or another body part. Whatever part a grappler uses, it can grapple only one creature at a time with that part, and the grappler can't use that part to target another creature unless it ends the grapple.",
+				"Ending a Grapple",
+				"A Grappled creature can use its action to make a Strength ({@skill Athletics|XPHB}) or Dexterity ({@skill Acrobatics|XPHB}) check against the grapple's escape DC, ending the {@variantrule Condition|XPHB|condition} on itself on a success. The {@variantrule Condition|XPHB|condition} also ends if the grappler has the {@condition Incapacitated|XPHB} condition or if the distance between the Grappled target and the grappler exceeds the grapple's range. In addition, the grappler can release the target at any time (no action required)."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Hazard|XPHB",
+			"hint": {
+				"Hazard": "危害"
+			},
+			"s": [
+				"Hazard",
+				"A {@5etools hazard|trapshazards.html} is an environmental danger."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Healing|XPHB",
+			"hint": {
+				"Healing": "治療"
+			},
+			"s": [
+				"Healing",
+				"Healing is how you regain {@variantrule Hit Points|XPHB}."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Heavily Obscured|XPHB",
+			"hint": {
+				"Heavily Obscured": "重度遮蔽"
+			},
+			"s": [
+				"Heavily Obscured",
+				"You have the {@condition Blinded|XPHB} condition while trying to see something in a Heavily Obscured space."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Heroic Inspiration|XPHB",
+			"hint": {
+				"Heroic Inspiration": "英勇激勵"
+			},
+			"s": [
+				"Heroic Inspiration",
+				"If you ({@variantrule Player Character|XPHB|a player character}) have Heroic Inspiration, you can expend it to reroll any die immediately after rolling it, and you must use the new roll.",
+				"If you gain Heroic Inspiration but already have it, it's lost unless you give it to a {@variantrule Player Character|XPHB|player character} who lacks it."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "High Jump|XPHB",
+			"hint": {
+				"High Jump": "跳高"
+			},
+			"s": [
+				"High Jump",
+				"When you make a High Jump, you leap into the air a number of feet equal to 3 plus your Strength modifier (minimum of 0 feet) if you move at least 10 feet on foot immediately before the jump. When you make a standing High Jump, you can jump only half that distance. Either way, each foot of the jump costs a foot of movement.",
+				"You can extend your arms half your height above yourself during the jump. Thus, you can reach a distance equal to the height of the jump plus 1½ times your height."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Hit Point Dice|XPHB",
+			"hint": {
+				"Hit Point Dice": "生命骰"
+			},
+			"s": [
+				"Hit Point Dice",
+				"Hit Point Dice, or Hit Dice for short, help determine a {@variantrule Player Character|XPHB|player character's} Hit Point maximum, as explained in {@book chapter 2|XPHB|2}. Most {@variantrule Monster|XPHB|monsters} also have Hit Dice. A creature can spend Hit Dice during a {@variantrule Short Rest|XPHB} to regain {@variantrule Hit Points|XPHB}."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Hit Points|XPHB",
+			"hint": {
+				"Hit Points": "生命值"
+			},
+			"s": [
+				"Hit Points",
+				"Hit Points (HP) are a measure of how difficult it is to kill or destroy a creature or an object. Damage reduces Hit Points, and healing restores them. You can't have more Hit Points than your Hit Point maximum, and you can't have less than 0."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Hostile [Attitude]|XPHB",
+			"hint": {
+				"Hostile [Attitude]": "敵對"
+			},
+			"s": [
+				"Hostile [Attitude]",
+				"A Hostile creature views you unfavorably. You have {@variantrule Disadvantage|XPHB} on an ability check to influence a Hostile creature."
+			]
+		},
+		{
+			"prop": "variantrule",
+			"key": "Hover|XPHB",
+			"hint": {
+				"Hover": "懸浮"
+			},
+			"s": [
+				"Hover",
+				"Some creatures can hover, as noted in their stat blocks, and some spells and other effects grant the ability to hover. Hovering while {@variantrule Flying|XPHB|flying} prevents you from falling in certain circumstances."
+			]
+		}
+	]
+}
