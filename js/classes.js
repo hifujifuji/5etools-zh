@@ -1625,11 +1625,11 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 			});
 
 		const filterSets = [
-			{name: "View Default", subHashes: [], isClearSources: false},
-			{name: "View Standard Plus Partnered", subHashes: [], isClearSources: false, sourceCategories: [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_PARTNERED]},
-			{name: "View Standard Plus Homebrew", subHashes: [], isClearSources: false, sourceCategories: [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_HOMEBREW]},
-			{name: "View Most Recent", subHashes: [], isClearSources: true},
-			{name: "View All", subHashes: ["flstmiscellaneous:reprinted=0"], isClearSources: true},
+			{name: "預設", subHashes: [], isClearSources: false},
+			{name: "官方＋合作內容", subHashes: [], isClearSources: false, sourceCategories: [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_PARTNERED]},
+			{name: "官方＋自製內容", subHashes: [], isClearSources: false, sourceCategories: [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_HOMEBREW]},
+			{name: "僅最新版本", subHashes: [], isClearSources: true},
+			{name: "全部顯示", subHashes: ["flstmiscellaneous:reprinted=0"], isClearSources: true},
 		];
 		const setFilterSet = ix => {
 			const filterSet = filterSets[ix];
@@ -1679,7 +1679,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 			].filter(Boolean), {force: true});
 			selFilterPreset.val("-1");
 		};
-		const selFilterPreset = ee`<select class="ve-input-xs ve-form-control cls-tabs__sel-preset"><option value="-1" disabled>Filter...</option></select>`
+		const selFilterPreset = ee`<select class="ve-input-xs ve-form-control cls-tabs__sel-preset"><option value="-1" disabled>篩選…</option></select>`
 			.onn("change", () => {
 				const val = Number(selFilterPreset.val());
 				if (val == null) return;
@@ -1688,7 +1688,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		filterSets.forEach((it, i) => selFilterPreset.appends(`<option value="${i}">${it.name}</option>`));
 		selFilterPreset.val("-1");
 
-		const btnReset = ee`<button class="ve-btn ve-btn-xs ve-btn-default" title="Reset Selection"><span class="glyphicon glyphicon-refresh"></span></button>`
+		const btnReset = ee`<button class="ve-btn ve-btn-xs ve-btn-default" title="重設選取"><span class="glyphicon glyphicon-refresh"></span></button>`
 			.onn("click", () => {
 				this._proxyAssign("state", "_state", "__state", cls.subclasses.mergeMap(sc => ({[UrlUtil.getStateKeySubclass(sc)]: false})));
 			});
