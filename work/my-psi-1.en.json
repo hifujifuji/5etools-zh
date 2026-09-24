@@ -1,0 +1,152 @@
+{
+	"batch": "my-psi-1",
+	"items": [
+		{
+			"prop": "psionic",
+			"key": "Adaptive Body|UATHEMYSTICCLASS",
+			"s": [
+				"Adaptive Body",
+				"You can alter your body to match your surroundings, allowing you to withstand punishing environments. With greater psi energy, you can extend this protection to others.",
+				"While focused on this discipline, you don't need to eat, breathe, or sleep. To gain the benefits of a long rest, you can spend 8 hours engaged in light activity, rather than sleeping during any of it.",
+				"Environmental Adaptation",
+				"As an action, you or a creature you touch ignores the effects of extreme heat or cold (but not cold or fire damage) for the next hour.",
+				"Adaptive Shield",
+				"When you take acid, cold, fire, lightning, or thunder damage, you can use your reaction to gain resistance to damage of that type—including the triggering damage—until the end of your next turn.",
+				"Energy Adaptation",
+				"As an action, you can touch one creature and give it resistance to acid, cold, fire, lightning, or thunder damage (your choice), which lasts until your {@status concentration} ends.",
+				"Energy Immunity",
+				"As an action, you can touch one creature and give it immunity to acid, cold, fire, lightning, or thunder damage (your choice), which lasts until your {@status concentration} ends."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Aura Sight|UATHEMYSTICCLASS",
+			"s": [
+				"Aura Sight",
+				"You refocus your sight to see the energy that surrounds all creatures. You perceive auras, energy signatures that can reveal key elements of a creature's nature.",
+				"While focused on this discipline, you have advantage on Wisdom ({@skill Insight}) checks.",
+				"Assess Foe",
+				"As a bonus action, you analyze the aura of one creature you see. You learn its current hit point total and all its immunities, resistances, and vulnerabilities.",
+				"Read Moods",
+				"As a bonus action, you learn a one-word summary of the emotional state of up to six creatures you can see, such as happy, confused, afraid, or violent.",
+				"View Aura",
+				"As an action, you study one creature's aura. Until your {@status concentration} ends, while you can see the target, you learn if it's under the effect of any magical or psionic effects, its current hit point total, and its basic emotional state. While this effect lasts, you have advantage on Wisdom ({@skill Insight}) and Charisma checks you make against it.",
+				"Perceive the Unseen",
+				"As a bonus action, you gain the ability to see auras even of {@condition invisible} or hidden creatures. Until your {@status concentration} ends, you can see all creatures, including hidden and {@condition invisible} ones, regardless of lighting conditions."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Beacon|UATHEMYSTICCLASS",
+			"s": [
+				"Beacon",
+				"As a bonus action, you cause bright light to radiate from your body in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. The light lasts for 1 hour, and you can extinguish it earlier as a bonus action."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Bestial Form|UATHEMYSTICCLASS",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Climbing": "攀爬",
+				"Flight": "飛行",
+				"Keen Senses": "敏銳感官",
+				"Swimming": "游泳"
+			},
+			"s": [
+				"Bestial Form",
+				"You transform your body, gaining traits of different beasts.",
+				"While focused on this discipline, you have advantage on Wisdom ({@skill Animal Handling}) checks.",
+				"Bestial Claws",
+				"You manifest long claws for an instant and make a melee weapon attack against one creature within 5 feet of you. On a hit, this attack deals {@scaledamage 1d10|1-7|1d10|psi} slashing damage per psi point spent.",
+				"Bestial Transformation",
+				"As a bonus action, you alter your physical form to gain different characteristics. When you use this ability, you can choose one or more of the following effects. Each effect has its own psi point cost. Add them together to determine the total cost. This transformation lasts for 1 hour, until you die, or until you end it as a bonus action.",
+				"Amphibious",
+				"You gain gills; you can breathe air and water.",
+				"Climbing",
+				"You grow tiny hooked claws that give you gain a climbing speed equal to your walking speed.",
+				"Flight",
+				"Wings sprout from your back. You gain a flying speed equal to your walking speed.",
+				"Keen Senses",
+				"Your eyes and ears become more sensitive. You gain advantage on Wisdom ({@skill Perception}) checks.",
+				"Perfect Senses",
+				"You gain a keen sense of smell and an instinct to detect prey. You can see {@condition invisible} creatures and objects within 10 feet of you, even if you are {@condition blinded}.",
+				"Swimming",
+				"You gain fins and webbing between your fingers and toes; you gain a swimming speed equal to your walking speed.",
+				"Tough Hide",
+				"Your skin becomes as tough as leather; you gain a +2 bonus to AC."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Blade Meld|UATHEMYSTICCLASS",
+			"s": [
+				"Blade Meld",
+				"As a bonus action, a one-handed melee weapon you hold becomes one with your hand. For the next minute, you can't let go of the weapon nor can it be forced from your grasp."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Blind Spot|UATHEMYSTICCLASS",
+			"s": [
+				"Blind Spot",
+				"As an action, you erase your image from the mind of one creature you can see within 120 feet of you; the target must succeed on a Wisdom saving throw, or you are {@condition invisible} to it until the end of your next turn."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Brute Force|UATHEMYSTICCLASS",
+			"s": [
+				"Brute Force",
+				"You augment your natural strength with psionic energy, granting you the ability to achieve incredible feats of might.",
+				"While focused on this discipline, you have advantage on Strength ({@skill Athletics}) checks",
+				"Brute Strike",
+				"As a bonus action, you gain a bonus to your next damage roll against a target you hit with a melee attack during the current turn. The bonus equals +{@scaledamage 1d6|1-7|1d6|psi} per psi point spent, and the bonus damage is the same type as the attack. If the attack has more than one damage type, you choose which one to use for the bonus damage.",
+				"Knock Back",
+				"When you hit a target with a melee attack, you can activate this ability as a reaction. The target must succeed on a Strength saving throw or be knocked 10 feet away from you per psi point spent. The target moves in a straight line. If it hits an object, this movement immediately ends and the target takes {@scaledamage 1d6|1-7|1d6|psi} bludgeoning damage per psi point spent.",
+				"Mighty Leap",
+				"As part of your movement, you jump in any direction up to 20 feet per psi point spent.",
+				"Feat of Strength",
+				"As a bonus action, you gain a +5 bonus to Strength checks until the end of your next turn."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Celerity|UATHEMYSTICCLASS",
+			"s": [
+				"Celerity",
+				"You channel psionic power into your body, honing your reflexes and agility to an incredible degree. The world seems to slow down while you continue to move as normal.",
+				"While focused on this discipline, your walking speed increases by 10 feet.",
+				"Rapid Step",
+				"As a bonus action, you increase your walking speed by 10 feet per psi point spent until the end of the current turn. If you have a climbing or swimming speed, this increase applies to that speed as well.",
+				"Agile Defense",
+				"As a bonus action, you take the Dodge action.",
+				"Blur of Motion",
+				"As an action, you cause yourself to be {@condition invisible} during any of your movement during the current turn.",
+				"Surge of Speed",
+				"As a bonus action, you gain two benefits until the end of the current turn: you don't provoke opportunity attacks, and you have a climbing speed equal to your walking speed.",
+				"Surge of Action",
+				"As a bonus action, you can Dash or make one weapon attack."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Corrosive Metabolism|UATHEMYSTICCLASS",
+			"s": [
+				"Corrosive Metabolism",
+				"Your control over your body allows you to deliver acid or poison attacks.",
+				"While focused on this discipline, you have resistance to acid and poison damage.",
+				"Corrosive Touch",
+				"As an action, you deliver a touch of acid to one creature within your reach. The target must make a Dexterity saving throw, taking {@scaledamage 1d10|1-7|1d10|psi} acid damage per psi point spent on a failed save, or half as much damage on a successful one.",
+				"Venom Strike",
+				"As an action, you create a poison spray that targets one creature you can see within 30 feet of you. The target must make a Constitution saving throw. On a failed save, it takes {@scaledamage 1d6|1-7|1d6|psi} poison damage per psi point spent and is {@condition poisoned} until the end of your next turn. On a successful save, the target takes half as much damage and isn't {@condition poisoned}.",
+				"Acid Spray",
+				"As a reaction when you take piercing or slashing damage, you cause acid to spray from your wound; each creature within 5 feet of you takes {@damage 2d6} acid damage.",
+				"Breath of the Black Dragon",
+				"You exhale a wave of acid in a 60-foot line that is 5 feet wide. Each creature in the line must make a Constitution saving throw, taking {@damage 6d6} acid damage on a failed save, or half as much on a successful one. You can increase the damage by {@scaledamage 6d6|5-7|1d6|psi} per additional psi point spent on it.",
+				"Breath of the Green Dragon",
+				"You exhale a cloud of poison in a 90-foot cone. Each creature in the line must make a Constitution saving throw, taking {@damage 10d6} poison damage on a failed save, or half as much damage on a successful one."
+			]
+		}
+	]
+}

@@ -5,7 +5,7 @@ import path from "node:path";
 // 分頁標題用的名稱表：取自已合併翻譯的資料（name → name_zh）
 const titleNames = dist => {
 	const out = {};
-	for (const [f, prop] of [["backgrounds.json", "background"], ["feats.json", "feat"], ["optionalfeatures.json", "optionalfeature"], ["variantrules.json", "variantrule"], ["conditionsdiseases.json", "condition"], ["conditionsdiseases.json", "disease"], ["conditionsdiseases.json", "status"], ["actions.json", "action"]]) {
+	for (const [f, prop] of [["backgrounds.json", "background"], ["feats.json", "feat"], ["optionalfeatures.json", "optionalfeature"], ["variantrules.json", "variantrule"], ["conditionsdiseases.json", "condition"], ["conditionsdiseases.json", "disease"], ["conditionsdiseases.json", "status"], ["actions.json", "action"], ["psionics.json", "psionic"]]) {
 		const p = path.join(dist, "data", f);
 		if (!fs.existsSync(p)) continue;
 		for (const e of JSON.parse(fs.readFileSync(p, "utf8"))[prop] || []) if (e.name_zh && e.name) out[e.name] ??= e.name_zh;

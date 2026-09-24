@@ -1,0 +1,79 @@
+{
+	"batch": "my-psi-9",
+	"items": [
+		{
+			"prop": "psionic",
+			"key": "Psychic Inquisition|UATHEMYSTICCLASS",
+			"s": [
+				"Psychic Inquisition",
+				"You reach into a creature's mind to uncover information or plant ideas within it.",
+				"While focused on this discipline, you know when a creature communicating with you via telepathy is lying.",
+				"Hammer of Inquisition",
+				"As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it takes {@scaledamage 1d10|1-7|1d10|psi} psychic damage per psi point spent and suffers disadvantage on its next Wisdom saving throw before the end of your next turn. On a successful save, it takes half as much damage.",
+				"Forceful Query",
+				"As an action, you ask a question of one creature that can see and hear you within 30 feet of you. The question must be phrased so that it can be answered with a yes or no, otherwise this ability fails. The target must succeed on a Wisdom saving throw, or it replies with a truthful answer. A creature is immune to this ability if it is immune to being {@condition charmed}.",
+				"Ransack Mind",
+				"While you concentrate on this ability, you probe one creature's mind. The creature must remain within 30 feet of you, and you must be able to see it. If you reach the ability's full duration, the target must make three Intelligence saving throws, and you learn information from it based on the number of saving throws it fails. With one failed saving throw, you learn its key memories from the past 12 hours. With two failed saving throws, you learn its key memories from the past 24 hours. With three failed saving throws, you learn its key memories from the past 48 hours.",
+				"Phantom Idea",
+				"While you concentrate on this ability, you probe one creature's mind. The creature must remain within 30 feet of you, and you must be able to see it. If you reach the ability's full duration, the target must make three Intelligence saving throws, and you plant a memory or an idea in it, which lasts for a number of hours based on the number of saving throws it fails. You choose whether the idea or memory is trivial (such as \"I had porridge for breakfast\" or \"Ale is the worst\") or personality-defining (\"I failed to save my village from orc marauders and am therefore a coward\" or \"Magic is a scourge, so I renounce it\"). With one failed saving throw, the idea or memory lasts for the next 4 hours. With two failed saving throws, it lasts for 24 hours. With three failed saving throws, it lasts for 48 hours."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Psychic Phantoms|UATHEMYSTICCLASS",
+			"s": [
+				"Psychic Phantoms",
+				"Your power reaches into a creature's mind and causes it false perceptions.",
+				"While focused on this discipline, you have advantage on Charisma ({@skill Deception}) checks.",
+				"Distracting Figment",
+				"As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it takes {@scaledamage 1d10|1-7|1d10|psi} psychic damage per psi point spent and thinks it perceives a threatening creature just out of its sight; until the end of your next turn, it can't use reactions, and melee attack rolls against it have advantage. On a successful save, it takes half as much damage.",
+				"Phantom Foe",
+				"As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it perceives a horrid creature adjacent to it until your {@status concentration} ends. During this time, the target can't take reactions, and it takes {@damage 1d8} psychic damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can increase the damage by {@scaledamage 1d8|3-7|1d8|psi} for each additional psi point spent on the ability.",
+				"Phantom Betrayal",
+				"As an action, you plant delusional paranoia in a creature's mind. Choose one creature you can see within 60 feet of you. The target must succeed on an Intelligence saving throw, or until your {@status concentration} ends, it must target its allies with attacks and other damaging effects. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature is immune to this ability if it is immune to being {@condition charmed}.",
+				"Phantom Riches",
+				"As an action, you plant the phantom of a greatly desired object in a creature's mind. Choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, you gain partial control over the target's behavior until your {@status concentration} ends; the target moves as you wish on each of its turns, as it thinks it pursues the phantom object it desires. If it hasn't taken damage since its last turn, it can use its action only to admire the object you created in its perception. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Telepathic Contact|UATHEMYSTICCLASS",
+			"s": [
+				"Telepathic Contact",
+				"By channeling psionic power, you gain the ability to control other creatures by substituting your will for their own.",
+				"While focused on this discipline, you gain the ability to use your Telepathy class feature with up to six creatures at once. If you don't have that feature from the mystic class, you instead gain it while focused on this discipline.",
+				"Exacting Query",
+				"As an action, you target one creature you can communicate with via telepathy. The target must make an Intelligence saving throw. On a failed save, the target truthfully answers one question you ask it via telepathy. On a successful save, the target is unaffected, and you can't use this ability on it again until you finish a long rest. A creature is immune to this ability if it is immune to being {@condition charmed}.",
+				"Occluded Mind",
+				"As an action, you target one creature you can communicate with via telepathy. The target must make an Intelligence saving throw. On a failed save, the target believes one statement of your choice for the next 5 minutes that you communicate to it via telepathy. The statement can be up to ten words long, and it must describe you or a creature or an object the target can see. On a successful save, the target is unaffected, and you can't use this ability on it again until you finish a long rest. A creature is immune to this ability if it is immune to being {@condition charmed}.",
+				"Broken Will",
+				"As an action, you target one creature you can communicate with via telepathy. The target must make an Intelligence saving throw. On a failed save, you choose the target's movement and action on its next turn. On a successful save, the target is unaffected, and you can't use this ability on it again until you finish a long rest. A creature is immune to this ability if it is immune to being {@condition charmed}.",
+				"Psychic Grip",
+				"As an action, you target one creature you can see within 60 feet of you. The target must succeed on an Intelligence saving throw, or it is {@condition paralyzed} until your {@status concentration} ends. At the end of each of its turns, it can repeat the saving throw. On a success, this effect ends. On a failure, you can use your reaction to force the target to move up to half its speed, even though it's {@condition paralyzed}.",
+				"Psychic Domination",
+				"As an action, you target one creature you can see within 60 feet of you. The target must succeed on an Intelligence saving throw, or you choose the creature's actions and movement on its turns until your {@status concentration} ends. At the end of each of its turns, it can repeat the saving throw, ending the effect on itself on a success. A creature is immune to this ability if it is immune to being {@condition charmed}."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Third Eye|UATHEMYSTICCLASS",
+			"hint": {
+				"Tremorsense": "震顫感知",
+				"Truesight": "真實視覺"
+			},
+			"s": [
+				"Third Eye",
+				"You create a third, psychic eye in your mind, which you cast out into the world. It channels thoughts and knowledge back to you, greatly enhancing your senses.",
+				"While focused on this discipline, you have darkvision with a range of 60 feet. If you already have darkvision with that range or greater, increase its range by 10 feet.",
+				"Tremorsense",
+				"As a bonus action, you gain tremorsense with a radius of 30 feet, which lasts until your {@status concentration} ends.",
+				"Unwavering Eye",
+				"As a bonus action, you gain advantage on Wisdom checks for 1 minute.",
+				"Piercing Sight",
+				"As a bonus action, you gain the ability to see through objects that are up to 1 foot thick within 30 feet of you. This sight lasts until your {@status concentration} ends.",
+				"Truesight",
+				"As a bonus action, you gain truesight with a radius of 30 feet, which lasts until your {@status concentration} ends."
+			]
+		}
+	]
+}

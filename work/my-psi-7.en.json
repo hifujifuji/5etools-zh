@@ -1,0 +1,108 @@
+{
+	"batch": "my-psi-7",
+	"items": [
+		{
+			"prop": "psionic",
+			"key": "Mind Thrust|UATHEMYSTICCLASS",
+			"s": [
+				"Mind Thrust",
+				"As an action, you target one creature you can see within 120 feet of you. The target must succeed on an Intelligence saving throw or take {@damage 1d10} psychic damage.",
+				"The talent's damage increases by {@damage 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10})."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Mystic Charm|UATHEMYSTICCLASS",
+			"s": [
+				"Mystic Charm",
+				"As an action, you beguile one humanoid you can see within 120 feet of you. The target must succeed on a Charisma saving throw or be {@condition charmed} by you until the end of your next turn."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Mystic Hand|UATHEMYSTICCLASS",
+			"s": [
+				"Mystic Hand",
+				"You can use your action to manipulate or move one object within 30 feet of you. The object can't weigh more than 10 pounds, and you can't affect an object being worn or carried by another creature. If the object is loose, you can move it up to 30 feet in any direction.",
+				"This talent allows you to open an unlocked door, pour out a beer stein, and so on.",
+				"The object falls to the ground at the end of your turn if you leave it suspended in midair."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Nomadic Arrow|UATHEMYSTICCLASS",
+			"s": [
+				"Nomadic Arrow",
+				"You imbue a ranged weapon with a strange semblance of sentience, allowing it to unerringly find its mark.",
+				"While you are focused on this discipline, any attack roll you make for a ranged weapon attack ignores disadvantage. If disadvantage would normally apply to the roll, that roll also can't benefit from advantage.",
+				"Speed Dart",
+				"As a bonus action, you imbue one ranged weapon you hold with psionic power. The next attack you make with it that hits before the end of the current turn deals an extra {@scaledamage 1d10|1-7|1d10|psi} psychic damage per psi point spent.",
+				"Seeking Missile",
+				"As a reaction when you miss with a ranged weapon attack, you can repeat the attack roll against the same target.",
+				"Faithful Archer",
+				"As a bonus action, you imbue a ranged weapon with a limited sentience. Until your {@status concentration} ends, you can make an extra attack with the weapon at the start of each of your turns (no action required). If it is a thrown weapon, it returns to your grasp each time you make any attack with it."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Nomadic Chameleon|UATHEMYSTICCLASS",
+			"s": [
+				"Nomadic Chameleon",
+				"You create a screen of psychic power that distorts your appearance, allowing you to blend into the background or even turn invisible.",
+				"While focused on this discipline, you have advantage on Dexterity ({@skill Stealth}) checks.",
+				"Chameleon",
+				"As an action, you can attempt to hide even if you fail to meet the requirements needed to do so. At the end of the current turn, you remain hidden only if you then meet the normal requirements for hiding.",
+				"Step from Sight",
+				"As a bonus action, cloak yourself from sight. You can target one additional creature for every additional psi point you spend on this ability. The added targets must be visible to you and within 60 feet of you. Each target turns {@condition invisible} and remains so until your {@status concentration} ends or until immediately after it targets, damages, or otherwise affects any creature with an attack, a spell, or another ability.",
+				"Enduring Invisibility",
+				"As a bonus action, you turn {@condition invisible} and remain so until your {@status concentration} ends."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Nomadic Mind|UATHEMYSTICCLASS",
+			"s": [
+				"Nomadic Mind",
+				"You dispatch part of your psyche into the noosphere, the collective vista of minds and knowledge possessed by living things.",
+				"Whenever you focus on this discipline, you choose one skill or tool and have proficiency with it until your focus ends. Alternatively, you gain the ability to read and write one language of your choice until your focus ends.",
+				"Wandering Mind",
+				"You enter a deep contemplation. If you concentrate for this option's full duration, you then gain proficiency with up to three of the following skills (one skill for every 2 psi points spent): {@skill Animal Handling}, {@skill Arcana}, {@skill History}, {@skill Medicine}, {@skill Nature}, {@skill Performance}, {@skill Religion}, and {@skill Survival}. The benefit lasts for 1 hour, no {@status concentration} required.",
+				"Find Creature",
+				"You cast your mind about for information about a specific creature. If you concentrate for this option's full duration, you then gain a general understanding of the creature's current location. You learn the region, city, town, village, or district where it is, pinpointing an area between 1 and 3 miles on a side (DM's choice). If the creature is on another plane of existence, you instead learn which plane.",
+				"Item Lore",
+				"You carefully study an item. If you concentrate for this option's full duration while remaining within 5 feet of the item, you then gain the benefits of an identify spell cast on that item.",
+				"Psychic Speech",
+				"As an action, you attune your mind to the psychic imprint of all language. For 1 hour, you gain the ability to understand any language you hear or attempt to read. In addition, when you speak, all creatures that can understand a language understand what you say, regardless of what language you use.",
+				"Wandering Eye",
+				"As an action, you create a psychic sensor within 60 feet of you. The sensor lasts until your {@status concentration} ends. The sensor is invisible and hovers in the air. You mentally receive visual information from it, which has normal vision and darkvision with a range of 60 feet. The sensor can look in all directions. As an action, you can move the sensor up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.",
+				"Phasing Eye",
+				"As Wandering Eye above, except the eye can move through solid objects but can't end its movement in one. If it does so, the effect immediately ends."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Nomadic Step|UATHEMYSTICCLASS",
+			"s": [
+				"Nomadic Step",
+				"You exert your mind on the area around you, twisting the intraplanar pathways you perceive to allow instantaneous travel.",
+				"After you teleport on your turn while focused on this discipline, your walking speed increases by 10 feet until the end of the turn, as you are propelled by the magic of your teleportation. You can receive this increase only once per turn.",
+				"Step of a Dozen Paces",
+				"If you haven't moved yet on your turn, you take a bonus action to teleport up to 20 feet per psi point spent to an unoccupied space you can see, and your speed is reduced to 0 until the end of the turn.",
+				"Nomadic Anchor",
+				"As an action, you create an invisible, intangible teleportation anchor in a 5-foot cube you can see within 120 feet of you. For the next 8 hours, whenever you use this psionic discipline to teleport, you can instead teleport to the anchor, even if you can't see it, but it must be within range of the teleportation ability.",
+				"Defensive Step",
+				"When you are hit by an attack, you can use your reaction to gain a +4 bonus to AC against that attack, possibly turning it into a miss. You then teleport up to 10 feet to an unoccupied space you can see.",
+				"There and Back Again",
+				"As a bonus action, you teleport up to 20 feet to an unoccupied space you can see and then move up to half your speed. At the end of your turn, you can teleport back to the spot you occupied before teleporting, unless it is now occupied or on a different plane of existence.",
+				"Transposition",
+				"If you haven't moved yet on your turn, choose an ally you can see within 60 feet of you. As a bonus action, you and that creature teleport, swapping places, and your speed is reduced to 0 until the end of the turn. This ability fails and is wasted if either of you can't fit in the destination space.",
+				"Baleful Transposition",
+				"As an action, choose one creature you can see within 120 feet of you. That creature must make a Wisdom saving throw. On a failed save, you and that creature teleport, swapping places. This ability fails and is wasted if either of you can't fit in the destination space.",
+				"Phantom Caravan",
+				"As an action, you and up to six willing creatures of your choice that you can see within 60 feet of you teleport up to 1 mile to a spot you can see. If there isn't an open space for all the targets to occupy at the arrival point, this ability fails and is wasted.",
+				"Nomad's Gate",
+				"As an action, you create a 5-foot cube of dim, gray light within 5 feet of you. You create an identical cube at any point of your choice within 1 mile that you have viewed within the past 24 hours. Until your {@status concentration} ends, anyone entering one of the cubes immediately teleports to the other one, appearing in an unoccupied space next to it. The teleportation fails if there is no space for the creature to appear in."
+			]
+		}
+	]
+}

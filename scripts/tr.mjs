@@ -14,7 +14,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import {ROOT, UPSTREAM, readJson, writeJson, hasCjk} from "./util.mjs";
-import {TEXT_KEYS, SKIP_KEYS} from "./merge.mjs";
+import {isTextKey, SKIP_KEYS} from "./merge.mjs";
 import {S, makeKeyFns, loadSubclassFullNames} from "./keys.mjs";
 
 const DATA = path.join(UPSTREAM, "data");
@@ -50,6 +50,7 @@ const FILES_BY_PROP = {
 	itemGroup: () => ["items.json"],
 	itemEntry: () => ["items-base.json"],
 	itemTypeAdditionalEntries: () => ["items-base.json"],
+	psionic: () => ["psionics.json"],
 	variantrule: () => ["variantrules.json", "generated/gendata-variantrules.json"],
 	action: () => ["actions.json"],
 	condition: () => ["conditionsdiseases.json"],
@@ -90,13 +91,13 @@ function collect (ent) {
 					continue;
 				}
 				if (k.startsWith("_") || k === "source" || SKIP_KEYS.has(k)) continue;
-				walk(x, [...p, k], TEXT_KEYS.has(k));
+				walk(x, [...p, k], isTextKey(k, x));
 			}
 		}
 	};
 	for (const [k, x] of Object.entries(ent)) {
 		if (k === "name" || k.startsWith("_") || SKIP_KEYS.has(k)) continue;
-		walk(x, [k], TEXT_KEYS.has(k));
+		walk(x, [k], isTextKey(k, x));
 	}
 	return out;
 }

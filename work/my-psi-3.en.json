@@ -1,0 +1,115 @@
+{
+	"batch": "my-psi-3",
+	"items": [
+		{
+			"prop": "psionic",
+			"key": "Energy Beam|UATHEMYSTICCLASS",
+			"s": [
+				"Energy Beam",
+				"As an action, you target one creature you can see within 90 feet of you. The target must succeed on a Dexterity saving throw or take {@damage 1d8} acid, cold, fire, lightning, or thunder damage (your choice).",
+				"The talent's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Giant Growth|UATHEMYSTICCLASS",
+			"s": [
+				"Giant Growth",
+				"You infuse yourself with psionic energy to grow to tremendous size, bolstering your strength and durability.",
+				"While focused on this discipline, your reach increases by 5 feet.",
+				"Ogre Form",
+				"As a bonus action, you gain 10 temporary hit points. In addition, until your {@status concentration} ends, your melee weapon attacks deal an extra {@damage 1d4} bludgeoning damage on a hit, and your reach increases by 5 feet. If you're smaller than Large, you also become Large for the duration.",
+				"Giant Form",
+				"As a bonus action, you gain 30 temporary hit points. In addition, until your {@status concentration} ends, your melee weapon attacks deal an extra {@damage 2d6} bludgeoning damage on a hit, and your reach increases by 10 feet. If you're smaller than Huge, you also become Huge for the duration."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Intellect Fortress|UATHEMYSTICCLASS",
+			"s": [
+				"Intellect Fortress",
+				"You forge an indomitable wall of psionic energy around your mind—one that allows you to launch counterattacks against your opponents.",
+				"While focused on this discipline, you gain resistance to psychic damage.",
+				"Psychic Backlash",
+				"As a reaction, you can impose disadvantage on an attack roll against you if you can see the attacker. If the attack still hits you, the attacker takes {@damage 2d10} psychic damage.",
+				"Psychic Parry",
+				"As a reaction when you make an Intelligence, a Wisdom, or a Charisma saving throw, you gain a +1 bonus to that saving throw for each psi point you spend on this ability. You can use this ability after rolling the die but before suffering the results.",
+				"Psychic Redoubt",
+				"As an action, you create a field of protective psychic energy. Choose any number of creatures within 30 feet of you. Until your {@status concentration} ends, each target has resistance to psychic damage and advantage on Intelligence, Wisdom, and Charisma saving throws."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Iron Durability|UATHEMYSTICCLASS",
+			"s": [
+				"Iron Durability",
+				"You transform your body to become a living metal, allowing you to shrug off attacks that would cripple weaker creatures.",
+				"While focused on this discipline, you gain a +1 bonus to AC.",
+				"Iron Hide",
+				"As a reaction when you are hit by an attack, you gain a +1 bonus to AC for each psi point you spend on this ability. The bonus lasts until the end of your next turn. This bonus applies against the triggering attack.",
+				"Steel Hide",
+				"As a bonus action, you gain resistance to bludgeoning, piercing, and slashing damage until the end of your next turn.",
+				"Iron Resistance",
+				"As an action, you gain resistance to bludgeoning, piercing, or slashing damage (your choice), which lasts until your {@status concentration} ends."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Light Step|UATHEMYSTICCLASS",
+			"s": [
+				"Light Step",
+				"As a bonus action, you alter your density and weight to improve your mobility. For the rest of your turn, your walking speed increases by 10 feet, and the first time you stand up this turn, you do so without expending any of your movement if your speed is greater than 0."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Mantle of Awe|UATHEMYSTICCLASS",
+			"s": [
+				"Mantle of Awe",
+				"You learn to use psionic energy to manipulate others with a subtle combination of psi and your own, natural charm.",
+				"While focused on this discipline, you gain a bonus to Charisma checks. The bonus equals half your Intelligence modifier (minimum of +1).",
+				"Charming Presence",
+				"As an action, you exert an aura of sympathetic power. Roll {@dice 2d8} per psi point spent on this ability; the total is how many hit points worth of creatures this option can affect. Creatures within 30 feet of you are affected in ascending order of their hit point maximums, ignoring {@condition incapacitated} creatures, creatures immune to being {@condition charmed}, and creatures engaged in combat.",
+				"Starting with the creature that has the lowest hit point maximum, each creature affected by this option is {@condition charmed} by you for 10 minutes, regarding you as a friendly acquaintance. Subtract each creature's hit point maximum from the total before moving on to the next creature. A creature's hit point maximum must be equal to or less than the remaining total for that creature to be affected.",
+				"Center of Attention",
+				"As an action, you exert an aura of power that grabs a creature's attention. Choose one creature you can see within 60 feet of you. It must make a Charisma saving throw. On a failed save, the creature is so thoroughly distracted by you that all other creatures are {@condition invisible} to it until your {@status concentration} ends. This effect ends if the creature can no longer see or hear you or if it takes damage.",
+				"Invoke Awe",
+				"As an action, you exert an aura that inspires awe in others. Choose up to 5 creatures you can see within 60 feet of you. Each target must succeed on an Intelligence saving throw or be {@condition charmed} by you until your {@status concentration} ends. While {@condition charmed}, the target obeys all your verbal commands to the best of its ability and without doing anything obviously self-destructive. The {@condition charmed} target will attack only creatures that it has seen attack you since it was {@condition charmed} or that it was already hostile toward. At the end of each of its turns, it can repeat the saving throw, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Mantle of Command|UATHEMYSTICCLASS",
+			"s": [
+				"Mantle of Command",
+				"You exert an aura of trust and authority, enhancing the coordination among your allies.",
+				"While focused on this discipline, when you end your turn and didn't move during it, you can use your reaction to allow one ally you can see within 30 feet of you to move up to half their speed, following a path of your choice. To move in this way, the ally mustn't be {@condition incapacitated}.",
+				"Coordinated Movement",
+				"As a bonus action, choose up to five allies you can see within 60 feet of you. Each of those allies can use their reaction to move up to half their speed, following a path of your choice.",
+				"Commander's Sight",
+				"As an action, choose one creature you can see within 60 feet of you. Until the start of your next turn, your allies have advantage on attack rolls against that target.",
+				"Command to Strike",
+				"As an action, choose one ally you can see within 60 feet of you. That ally can use their reaction to immediately take the Attack action. You choose the targets.",
+				"Strategic Mind",
+				"As an action, you exert an aura of trust and command that unites your allies into a cohesive unit. Until your {@status concentration} ends, any ally within 60 feet of you on their turn can, as a bonus action, take the Dash or Disengage action or roll a {@dice d4} and add the number rolled to each attack roll they make that turn.",
+				"Overwhelming Attack",
+				"As an action, choose up to five allies you can see within 60 feet of you. Each of those allies can use their reaction to take the Attack action. You choose the target of the attacks."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Mantle of Courage|UATHEMYSTICCLASS",
+			"s": [
+				"Mantle of Courage",
+				"You focus your mind on courage, radiating confidence and bravado to your allies.",
+				"While focused on this discipline, you and allies within 10 feet of you who can see you have advantage on saving throws against being {@condition frightened}.",
+				"Incite Courage",
+				"As a bonus action, choose up to six creatures you can see within 60 feet of you. If any of those creatures is {@condition frightened}, that condition ends on that creature.",
+				"Aura of Victory",
+				"As a bonus action, you project psionic energy until your {@status concentration} ends. The energy fortifies you and your allies when your enemies are felled; whenever an enemy you can see is reduced to 0 hit points, you and each of your allies within 30 feet of you gain temporary hit points equal to double the psi points spent to activate this effect.",
+				"Pillar of Confidence",
+				"As an action, you and up to five creatures you can see within 60 feet of you each gain one extra action to use on your individual turns. The action goes away if not used before the end of your next turn. the action can be used only to make one weapon attack or to take the Dash or Disengage action."
+			]
+		}
+	]
+}

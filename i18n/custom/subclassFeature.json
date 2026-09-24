@@ -724,6 +724,57 @@
 		],
 		"ENG_name": "Arcane Charge"
 	},
+	"Arcane Dabbler|Mystic|Order of the Wu Jen|UATHEMYSTICCLASS": {
+		"name": "奧術涉獵",
+		"source": "UATheMysticClass",
+		"page": 8,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Wu Jen",
+		"subclassSource": "UATheMysticClass",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"在 6 級時，你學會三個自選的法師法術，並總是準備著它們。這些法術必須是{@filter 1 至 3 環|spells|level=1;2;3|class=wizard}。",
+			"作為一個附贈動作，你可以消耗靈能點創造法術位，用來施展這些法術以及你能施展的其他法術。每個法術位的靈能點花費詳見下表。",
+			{
+				"type": "table",
+				"colLabels": [
+					"法術位環階",
+					"靈能點花費"
+				],
+				"colStyles": [
+					"col-6 text-center",
+					"col-6 text-center"
+				],
+				"rows": [
+					[
+						"1環",
+						"2"
+					],
+					[
+						"2環",
+						"3"
+					],
+					[
+						"3環",
+						"5"
+					],
+					[
+						"4環",
+						"6"
+					],
+					[
+						"5環",
+						"7"
+					]
+				]
+			},
+			"該法術位會保留到你使用它或完成一次長休為止。消耗靈能點創造法術位時，你必須遵守你的靈能上限。",
+			"每當你在此職業中獲得一個等級時，你可以將其中一個所選的法師法術替換為另一個{@filter 1 至 3 環的法師法術|spells|level=1;2;3|class=wizard}。"
+		],
+		"ENG_name": "Arcane Dabbler"
+	},
 	"Arcane Firearm|Artificer|Artillerist|EFA": {
 		"name": "奧術火器",
 		"source": "EFA",
@@ -1103,6 +1154,21 @@
 			"你學會如何運用奇械師注能對奧術護甲進行特殊改裝。就「注能物品」特性而言，這套護甲現在視為多件獨立物品：護甲（胸甲）、靴子、頭盔，以及護甲的特殊武器。這些物品各能承載你的一種注能；若你以「護甲型號」特性更換護甲型號，注能也會隨之轉移。此外，你同時能注能的物品數量上限增加 2，但這些額外的物品必須是你奧術護甲的一部分。"
 		],
 		"ENG_name": "Armor Modifications"
+	},
+	"Armor Training|Mystic|Order of the Avatar|UATHEMYSTICCLASS": {
+		"name": "護甲訓練",
+		"source": "UATheMysticClass",
+		"page": 5,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Avatar",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"在 1 級時，你獲得中甲與盾牌的熟練。"
+		],
+		"ENG_name": "Armor Training"
 	},
 	"Armorer Spells|Artificer|Armorer|EFA": {
 		"name": "裝甲師法術",
@@ -1794,6 +1860,51 @@
 		],
 		"ENG_name": "Avatar of Battle"
 	},
+	"Avatar of Battle|Mystic|Order of the Avatar|UATHEMYSTICCLASS": {
+		"name": "戰鬥化身",
+		"source": "UATheMysticClass",
+		"page": 5,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Avatar",
+		"subclassSource": "UATheMysticClass",
+		"level": 3,
+		"header": 2,
+		"entries": [
+			"從 3 級開始，你散發出激勵人心的光環。當你沒有{@condition incapacitated}時，你 30 呎內每個能看見你的盟友在先攻擲骰上獲得 +2 加值。"
+		],
+		"ENG_name": "Avatar of Battle"
+	},
+	"Avatar of Healing|Mystic|Order of the Avatar|UATHEMYSTICCLASS": {
+		"name": "治療化身",
+		"source": "UATheMysticClass",
+		"page": 5,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Avatar",
+		"subclassSource": "UATheMysticClass",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"從 6 級開始，你散發出韌性光環。當你沒有{@condition incapacitated}時，你 30 呎內每個能看見你的盟友，每當從靈能戒律恢復生命值時，都額外恢復等於你智力調整值（最少為 0）的生命值。"
+		],
+		"ENG_name": "Avatar of Healing"
+	},
+	"Avatar of Speed|Mystic|Order of the Avatar|UATHEMYSTICCLASS": {
+		"name": "速度化身",
+		"source": "UATheMysticClass",
+		"page": 5,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Avatar",
+		"subclassSource": "UATheMysticClass",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"從 14 級開始，你散發出速度光環。當你沒有{@condition incapacitated}時，你 30 呎內任何能看見你的盟友都可以作為一個附贈動作採取{@action Dash}動作。"
+		],
+		"ENG_name": "Avatar of Speed"
+	},
 	"Avenging Angel|Paladin|Oath of Vengeance|XPHB": {
 		"name": "復仇天使",
 		"source": "XPHB",
@@ -1904,6 +2015,21 @@
 			"若有必要，你可以在一次短休期間替換這本書，方法是使用你的法師羽毛筆，在一本空白書籍或一本你同調的魔法法術書中寫下奧術符印。在休息結束時，你法術書的意識會被召喚到新書中，並將其連同所有法術轉化為你的法術書。若先前的書仍存在於某處，其書頁上的所有法術都會消失。"
 		],
 		"ENG_name": "Awakened Spellbook"
+	},
+	"Awakened Talent|Mystic|Order of the Awakened|UATHEMYSTICCLASS": {
+		"name": "覺醒天賦",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Awakened",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"在 1 級時，你從以下技能中選擇兩項獲得熟練：{@skill Animal Handling}、{@skill Deception}、{@skill Insight}、{@skill Intimidation}、{@skill Investigation}、{@skill Perception}與{@skill Persuasion}。"
+		],
+		"ENG_name": "Awakened Talent"
 	},
 	"Banneret|Fighter|Banneret|FRHOF": {
 		"name": "旗手",
@@ -3112,6 +3238,81 @@
 		],
 		"ENG_name": "Bond of Fang and Scale"
 	},
+	"Bonus Disciplines|Mystic|Order of the Avatar|UATHEMYSTICCLASS": {
+		"name": "額外戒律",
+		"source": "UATheMysticClass",
+		"page": 5,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Avatar",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"在 1 級時，你學會兩種額外的自選靈能戒律。它們必須從{@filter 化身戒律|psionics|type=D|order=Avatar}中選擇。"
+		],
+		"ENG_name": "Bonus Disciplines"
+	},
+	"Bonus Disciplines|Mystic|Order of the Awakened|UATHEMYSTICCLASS": {
+		"name": "額外戒律",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Awakened",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"在 1 級時，你學會兩種額外的自選靈能戒律。它們必須從{@filter 覺醒戒律|psionics|type=D|order=Awakened}中選擇。"
+		],
+		"ENG_name": "Bonus Disciplines"
+	},
+	"Bonus Disciplines|Mystic|Order of the Immortal|UATHEMYSTICCLASS": {
+		"name": "額外戒律",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Immortal",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"在 1 級時，你學會兩種額外的自選靈能戒律。它們必須從{@filter 不朽戒律|psionics|type=D|order=Immortal}中選擇。"
+		],
+		"ENG_name": "Bonus Disciplines"
+	},
+	"Bonus Disciplines|Mystic|Order of the Nomad|UATHEMYSTICCLASS": {
+		"name": "額外戒律",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Nomad",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"在 1 級時，你學會兩種額外的自選靈能戒律。它們必須從{@filter 遊牧戒律|psionics|type=D|order=Nomad}中選擇。"
+		],
+		"ENG_name": "Bonus Disciplines"
+	},
+	"Bonus Disciplines|Mystic|Order of the Wu Jen|UATHEMYSTICCLASS": {
+		"name": "額外戒律",
+		"source": "UATheMysticClass",
+		"page": 8,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Wu Jen",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"在 1 級時，你學會兩種額外的自選靈能戒律。它們必須從{@filter 巫人戒律|psionics|type=D|order=Wu Jen}中選擇。"
+		],
+		"ENG_name": "Bonus Disciplines"
+	},
 	"Bonus Proficiencies|Bard|College of Lore|XPHB": {
 		"name": "額外熟練",
 		"source": "XPHB",
@@ -3249,6 +3450,21 @@
 			"當你的狂暴生效時，每當一個你能看見的生物在你周圍 30 呎內開始它的回合，你可以採取一個{@variantrule Reaction|XPHB}，在它周圍召喚世界樹的幽靈枝條。目標必須成功通過一次力量豁免檢定（{@dc 8} 加上你的力量調整值與{@variantrule Proficiency|XPHB|熟練加值}），否則會被傳送到你周圍 5 呎內一個你能看見的未佔據空間，或你能看見的最近未佔據空間。目標傳送後，你可以將它的{@variantrule Speed|XPHB}降為 0，直到當前回合結束為止。"
 		],
 		"ENG_name": "Branches of the Tree"
+	},
+	"Breadth of Knowledge|Mystic|Order of the Nomad|UATHEMYSTICCLASS": {
+		"name": "博學",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Nomad",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"在 1 級時，你獲得擴展知識的能力。當你完成一次長休時，你獲得兩項自選的熟練：兩種工具、兩項技能，或各一。你可以將其中一項或兩項選擇替換為語言。此好處持續到你完成一次長休為止。"
+		],
+		"ENG_name": "Breadth of Knowledge"
 	},
 	"Breath of the Dragon|Monk|Way of the Ascendant Dragon|FTD": {
 		"name": "龍之吐息",
@@ -5357,6 +5573,21 @@
 		],
 		"ENG_name": "Conquering Presence"
 	},
+	"Consumptive Knife|Mystic|Order of the Soul Knife|UATHEMYSTICCLASS": {
+		"name": "吞噬之刃",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Soul Knife",
+		"subclassSource": "UATheMysticClass",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"從 6 級開始，每當你以靈魂之刃攻擊殺死一個敵對生物時，你立即恢復 2 點靈能點。"
+		],
+		"ENG_name": "Consumptive Knife"
+	},
 	"Control Undead|Paladin|Oathbreaker|DMG": {
 		"name": "控制不死生物",
 		"source": "DMG",
@@ -6745,6 +6976,21 @@
 		],
 		"ENG_name": "Echo Knight"
 	},
+	"Effortless Journey|Mystic|Order of the Nomad|UATHEMYSTICCLASS": {
+		"name": "無礙之旅",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Nomad",
+		"subclassSource": "UATheMysticClass",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"從 14 級開始，你的心智能以神秘的方式移動你的身體。在你的每個回合中一次，你可以放棄最多 30 呎的移動，以傳送你所放棄的距離。你必須傳送到一個你能看見的未佔據空間。"
+		],
+		"ENG_name": "Effortless Journey"
+	},
 	"Efreeti's Fury|Paladin|Oath of the Noble Genies|FRHOF": {
 		"name": "伊夫利特之怒",
 		"source": "FRHoF",
@@ -6978,6 +7224,21 @@
 		],
 		"ENG_name": "Elemental Attunement"
 	},
+	"Elemental Attunement|Mystic|Order of the Wu Jen|UATHEMYSTICCLASS": {
+		"name": "元素調和",
+		"source": "UATheMysticClass",
+		"page": 8,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Wu Jen",
+		"subclassSource": "UATheMysticClass",
+		"level": 3,
+		"header": 2,
+		"entries": [
+			"從 3 級開始，當某個生物的抗性減少了你的靈能戒律所造成的傷害時，你可以消耗 1 點靈能點，使該次戒律的使用無視該生物的抗性。若這麼做會使戒律的花費超過你的靈能上限，你就無法消耗此點數。"
+		],
+		"ENG_name": "Elemental Attunement"
+	},
 	"Elemental Burst|Monk|Warrior of the Elements|XPHB": {
 		"name": "元素爆發",
 		"source": "XPHB",
@@ -7182,6 +7443,21 @@
 			"此外，作為一個附贈動作，你可以讓自己獲得持續 10 分鐘的 30 呎飛行速度，期間你可以懸浮。你可以使用此附贈動作的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
 		],
 		"ENG_name": "Elemental Gift"
+	},
+	"Elemental Mastery|Mystic|Order of the Wu Jen|UATHEMYSTICCLASS": {
+		"name": "元素精通",
+		"source": "UATheMysticClass",
+		"page": 8,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Wu Jen",
+		"subclassSource": "UATheMysticClass",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"從 14 級開始，若你對某種傷害類型具有抗性，當你受到該類型的傷害時，你可以作為一個反應消耗 2 點靈能點來忽略該傷害；你對該傷害類型免疫直到你下個回合結束。"
+		],
+		"ENG_name": "Elemental Mastery"
 	},
 	"Elemental Rebuke|Paladin|Oath of the Noble Genies|FRHOF": {
 		"name": "元素斥責",
@@ -9646,6 +9922,21 @@
 		],
 		"ENG_name": "Heart of Fire"
 	},
+	"Hermit's Study|Mystic|Order of the Wu Jen|UATHEMYSTICCLASS": {
+		"name": "隱士研習",
+		"source": "UATheMysticClass",
+		"page": 8,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Wu Jen",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"在 1 級時，你從以下技能中選擇兩項獲得熟練：{@skill Animal Handling}、{@skill Arcana}、{@skill History}、{@skill Insight}、{@skill Medicine}、{@skill Nature}、{@skill Perception}、{@skill Religion}或{@skill Survival}。"
+		],
+		"ENG_name": "Hermit's Study"
+	},
 	"Heroic Warrior|Fighter|Champion|XPHB": {
 		"name": "英勇戰士",
 		"source": "XPHB",
@@ -9736,6 +10027,46 @@
 			"若你以{@item Psychic Blade|XPHB}進行攻擊檢定且未命中目標，你可以擲一顆靈能骰並將擲出的數字加到攻擊檢定上。若這使攻擊命中，該骰子便被消耗。"
 		],
 		"ENG_name": "Homing Strikes"
+	},
+	"Hone the Blade|Mystic|Order of the Soul Knife|UATHEMYSTICCLASS": {
+		"name": "磨利刀刃",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Soul Knife",
+		"subclassSource": "UATheMysticClass",
+		"level": 3,
+		"header": 2,
+		"entries": [
+			"從 3 級開始，你可以消耗靈能點強化你靈魂之刃的攻擊檢定與傷害。你依消耗的靈能點數量，在以靈魂之刃進行的攻擊與傷害擲骰上獲得加值，如下表所示。此加值持續 10 分鐘。",
+			{
+				"type": "table",
+				"colLabels": [
+					"靈能點",
+					"攻擊與傷害加值"
+				],
+				"colStyles": [
+					"col-6 text-center",
+					"col-6 text-center"
+				],
+				"rows": [
+					[
+						"2",
+						"+1"
+					],
+					[
+						"5",
+						"+2"
+					],
+					[
+						"7",
+						"+4"
+					]
+				]
+			}
+		],
+		"ENG_name": "Hone the Blade"
 	},
 	"Honed Spellfire|Sorcerer|Spellfire Sorcery|FRHOF": {
 		"name": "精煉法術火",
@@ -9974,6 +10305,37 @@
 			"使用此特性後，直到你完成短休或長休前都無法再次使用。"
 		],
 		"ENG_name": "Illusory Self"
+	},
+	"Immortal Durability|Mystic|Order of the Immortal|UATHEMYSTICCLASS": {
+		"name": "不朽韌性",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Immortal",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"從 1 級開始，你的生命值上限每一秘術士等級增加 1。",
+			"此外，當你沒有穿著護甲也沒有持用盾牌時，你的基礎 AC 等於 10 + 你的敏捷調整值 + 你的體質調整值。"
+		],
+		"ENG_name": "Immortal Durability"
+	},
+	"Immortal Will|Mystic|Order of the Immortal|UATHEMYSTICCLASS": {
+		"name": "不朽意志",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Immortal",
+		"subclassSource": "UATheMysticClass",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"從 14 級開始，你可以汲取靈能力量的儲備來超越死亡存活下來。當你在 0 生命值時的回合結束時，你可以消耗 5 點靈能點，立即恢復等於你秘術士等級 + 你體質調整值的生命值。"
+		],
+		"ENG_name": "Immortal Will"
 	},
 	"Implement of Peace|Cleric|Peace Domain|TCE": {
 		"name": "和平之器",
@@ -12007,6 +12369,21 @@
 		],
 		"ENG_name": "Martial Training"
 	},
+	"Martial Training|Mystic|Order of the Soul Knife|UATHEMYSTICCLASS": {
+		"name": "武術訓練",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Soul Knife",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"在 1 級時，你獲得中甲與軍用武器的熟練。"
+		],
+		"ENG_name": "Martial Training"
+	},
 	"Master of Runes|Fighter|Rune Knight|TCE": {
 		"name": "符文大師",
 		"source": "TCE",
@@ -12114,6 +12491,21 @@
 			}
 		],
 		"ENG_name": "Mastermind"
+	},
+	"Memory of One Thousand Steps|Mystic|Order of the Nomad|UATHEMYSTICCLASS": {
+		"name": "千步之憶",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Nomad",
+		"subclassSource": "UATheMysticClass",
+		"level": 3,
+		"header": 2,
+		"entries": [
+			"在 3 級時，你獲得運用靈能回溯自己足跡的能力。當你被攻擊命中時，作為一個反應，你可以傳送到一個你自上個回合開始以來曾佔據過的未佔據空間，且該攻擊未命中你。使用此特性後，你在完成一次短休或長休之前無法再次使用。"
+		],
+		"ENG_name": "Memory of One Thousand Steps"
 	},
 	"Mighty Impel|Barbarian|Path of the Giant|BGG": {
 		"name": "強力推擲",
@@ -13603,6 +13995,144 @@
 		],
 		"ENG_name": "Order of Scribes"
 	},
+	"Order of the Avatar|Mystic|Order of the Avatar|UATHEMYSTICCLASS": {
+		"name": "化身會",
+		"source": "UATheMysticClass",
+		"page": 5,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Avatar",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"entries": [
+			"化身會的秘術士深入情感的世界，精通自己的內在生活，以至於他們能像藝術家塑造黏土般輕鬆地操控並放大他人的情感。這些被稱為化身的秘術士，從暴君到受追隨者愛戴、激勵人心的領袖都有。",
+			"化身能激發身邊之人的極端情緒。對盟友，他們能給予希望、凶猛與勇氣，將一支戰鬥小隊轉化為致命而團結的力量。對敵人，他們帶來恐懼、厭惡與驚惶，足以讓最久經沙場的老兵表現得像個發抖的新兵。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bonus Disciplines|Mystic|UATheMysticClass|Avatar|UATheMysticClass|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Armor Training|Mystic|UATheMysticClass|Avatar|UATheMysticClass|1"
+			}
+		],
+		"ENG_name": "Order of the Avatar"
+	},
+	"Order of the Awakened|Mystic|Order of the Awakened|UATHEMYSTICCLASS": {
+		"name": "覺醒會",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Awakened",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"entries": [
+			"投身覺醒會的秘術士尋求解放心智的全部潛能。透過超越肉體，覺醒者希望達到一種專注於純粹智識與心靈能量的存在狀態。",
+			"覺醒者擅長扭曲心智與釋放毀滅性的靈能攻擊，並能透過靈能能量解讀世界的秘密。踏上冒險之路的覺醒秘術士，擅長解開謎團、破解謎題，以及把怪物變成不情願的棋子來擊敗它們。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bonus Disciplines|Mystic|UATheMysticClass|Awakened|UATheMysticClass|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Awakened Talent|Mystic|UATheMysticClass|Awakened|UATheMysticClass|1"
+			}
+		],
+		"ENG_name": "Order of the Awakened"
+	},
+	"Order of the Immortal|Mystic|Order of the Immortal|UATHEMYSTICCLASS": {
+		"name": "不朽會",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Immortal",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"entries": [
+			"不朽會運用靈能能量強化並改造肉體形態。此修會的追隨者被稱為不朽者。他們運用靈能能量改造身體，強化身體以抵禦攻擊，並將自己變成活生生的武器。",
+			"他們對肉體形態的精通為他們贏得了這個名號，因為不朽者出了名地難以殺死。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bonus Disciplines|Mystic|UATheMysticClass|Immortal|UATheMysticClass|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Immortal Durability|Mystic|UATheMysticClass|Immortal|UATheMysticClass|1"
+			}
+		],
+		"ENG_name": "Order of the Immortal"
+	},
+	"Order of the Nomad|Mystic|Order of the Nomad|UATHEMYSTICCLASS": {
+		"name": "遊牧會",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Nomad",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"entries": [
+			"遊牧會的秘術士讓心智保持在一種奇特而超然的狀態。他們在探求解開多元宇宙的奧秘、尋找萬物底層結構的同時，力求累積盡可能多的知識。與此同時，他們感知到一張被他們稱為「心智圈」的奇異、活生生的知識之網。",
+			"如其名所示，遊牧者熱愛旅行、探索與發現。他們渴望累積盡可能多的知識，對秘密與隱藏知識的追求可能成為他們的執念。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bonus Disciplines|Mystic|UATheMysticClass|Nomad|UATheMysticClass|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Breadth of Knowledge|Mystic|UATheMysticClass|Nomad|UATheMysticClass|1"
+			}
+		],
+		"ENG_name": "Order of the Nomad"
+	},
+	"Order of the Soul Knife|Mystic|Order of the Soul Knife|UATHEMYSTICCLASS": {
+		"name": "靈魂之刃會",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Soul Knife",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"entries": [
+			"靈魂之刃會犧牲其他秘術士所獲得的廣博知識，專注於一種特定的靈能技巧。這些秘術士學會顯現一把由純粹心靈能量構成的致命武器，用以劈斬敵人。",
+			"靈魂之刃們走上這條道路的方式大不相同。有些人是出於追求武術完美的渴望，另一些人則是冷酷無情、力求成為完美殺手的刺客。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Martial Training|Mystic|UATheMysticClass|Soul Knife|UATheMysticClass|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Soul Knife|Mystic|UATheMysticClass|Soul Knife|UATheMysticClass|1"
+			}
+		],
+		"ENG_name": "Order of the Soul Knife"
+	},
+	"Order of the Wu Jen|Mystic|Order of the Wu Jen|UATHEMYSTICCLASS": {
+		"name": "巫人會",
+		"source": "UATheMysticClass",
+		"page": 8,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Wu Jen",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"entries": [
+			"巫人會擁有一些最虔誠的秘術士。這些秘術士試圖將自己與世隔絕，否定物質世界的限制，並以他們為自己創造的現實取而代之。這些被稱為巫人的秘術士，將心智投向世界，掌控其基本法則，並將之重建。",
+			"實際上，巫人擅長控制自然世界的力量。他們能以心智投擲物體、控制四大元素，並改變現實以符合自己的慾望。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bonus Disciplines|Mystic|UATheMysticClass|Wu Jen|UATheMysticClass|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Hermit's Study|Mystic|UATheMysticClass|Wu Jen|UATheMysticClass|1"
+			}
+		],
+		"ENG_name": "Order of the Wu Jen"
+	},
 	"Otherworldly Glamour|Ranger|Fey Wanderer|TCE": {
 		"name": "異界魅力",
 		"source": "TCE",
@@ -14174,6 +14704,21 @@
 		],
 		"ENG_name": "Phantasmal Creatures"
 	},
+	"Phantom Knife|Mystic|Order of the Soul Knife|UATHEMYSTICCLASS": {
+		"name": "幻影之刃",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Soul Knife",
+		"subclassSource": "UATheMysticClass",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"從 14 級開始，你可以發動一次能穿透大多數防禦的攻擊。作為一個動作，你可以用靈魂之刃進行一次攻擊。無論目標實際的 AC 為何，此攻擊都將目標的 AC 視為 10。"
+		],
+		"ENG_name": "Phantom Knife"
+	},
 	"Phantom|Rogue|Phantom|TCE": {
 		"name": "幻影",
 		"source": "TCE",
@@ -14655,6 +15200,24 @@
 		],
 		"ENG_name": "Psi-Powered Leap"
 	},
+	"Psionic Investigation|Mystic|Order of the Awakened|UATHEMYSTICCLASS": {
+		"name": "靈能調查",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Awakened",
+		"subclassSource": "UATheMysticClass",
+		"level": 3,
+		"header": 2,
+		"entries": [
+			"從 3 級開始，你可以集中心智解讀物體上留下的靈能印記。若你手持一個物體並專注於它 10 分鐘（如同{@status concentration||專注}於靈能戒律），你會得知關於它的一些基本事實。你獲得一個從該物體視角看出去的心靈影像，顯示過去 24 小時內最後一個持有該物體的生物。",
+			"你也會得知過去一小時內在該物體 20 呎內發生的任何事件。你感知到的事件以該物體的視角展開。你如同身歷其境般看見並聽見這些事件，但無法使用其他感官。",
+			"此外，你可以在該物體內嵌入一個無形的靈能感應器。在接下來的 24 小時內，你可以使用一個動作得知該物體相對於你的位置（其距離與方向），並如同身歷其境般從其視角觀看該物體的周遭。此感知持續到你下個回合開始為止。",
+			"使用此特性後，直到你完成短休或長休前都無法再次使用。"
+		],
+		"ENG_name": "Psionic Investigation"
+	},
 	"Psionic Power|Fighter|Psi Warrior|TCE": {
 		"name": "靈能之力",
 		"source": "TCE",
@@ -14870,6 +15433,21 @@
 		],
 		"ENG_name": "Psionic Power"
 	},
+	"Psionic Resilience|Mystic|Order of the Immortal|UATHEMYSTICCLASS": {
+		"name": "靈能堅韌",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Immortal",
+		"subclassSource": "UATheMysticClass",
+		"level": 3,
+		"header": 2,
+		"entries": [
+			"從 3 級開始，你的靈能能量賦予你非凡的堅忍。在你每個回合開始時，若你至少有 1 點生命值，你獲得等於你智力調整值（最少為 0）的臨時生命值。"
+		],
+		"ENG_name": "Psionic Resilience"
+	},
 	"Psionic Sorcery|Sorcerer|Aberrant Mind|TCE": {
 		"name": "靈能術法",
 		"source": "TCE",
@@ -15034,6 +15612,22 @@
 			"你能以靈能之力推動你的武器。在你的每個回合中限一次，在你以一次攻擊命中你周圍 30 呎內的一個目標並以武器對它造成傷害後，你可以立即消耗一顆靈能骰，擲骰並對目標造成等同擲出數字加上你智力調整值的力場傷害。"
 		],
 		"ENG_name": "Psionic Strike"
+	},
+	"Psionic Surge|Mystic|Order of the Awakened|UATHEMYSTICCLASS": {
+		"name": "靈能湧動",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Awakened",
+		"subclassSource": "UATheMysticClass",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"從 6 級開始，你可以讓心靈專注超載，以擊潰對手的防禦。你可以讓目標對你使用的戒律或天賦所進行的豁免檢定具有劣勢，但代價是使用你的心靈專注。若心靈專注正在生效，它會立即結束，且在你完成一次短休或長休之前無法使用它。",
+			"若你無法使用心靈專注，便無法使用此特性。"
+		],
+		"ENG_name": "Psionic Surge"
 	},
 	"Psychic Blades|Rogue|Soulknife|TCE": {
 		"name": "精神之刃",
@@ -16527,6 +17121,23 @@
 		],
 		"ENG_name": "Soul Blades"
 	},
+	"Soul Knife|Mystic|Order of the Soul Knife|UATHEMYSTICCLASS": {
+		"name": "靈魂之刃",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Soul Knife",
+		"subclassSource": "UATheMysticClass",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"從 1 級開始，你獲得顯現心靈能量之刃的能力。作為一個附贈動作，你創造出從雙拳延伸而出、閃爍的能量之刃。顯現這些刀刃時，你的手中無法持握任何東西。你可以用一個附贈動作解除它們。",
+			"對你而言，靈魂之刃是具有輕型與靈巧屬性的軍用近戰武器。命中時造成 {@damage 1d8} 點心靈傷害。",
+			"作為一個附贈動作，你可以準備用刀刃格擋；你的 AC 獲得 +2 加值，直到你下個回合開始或你{@condition incapacitated}為止。"
+		],
+		"ENG_name": "Soul Knife"
+	},
 	"Soul of Vengeance|Paladin|Oath of Vengeance|XPHB": {
 		"name": "復仇之魂",
 		"source": "XPHB",
@@ -16588,6 +17199,22 @@
 			}
 		],
 		"ENG_name": "Soulknife"
+	},
+	"Spectral Form|Mystic|Order of the Awakened|UATHEMYSTICCLASS": {
+		"name": "靈體形態",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Awakened",
+		"subclassSource": "UATheMysticClass",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"在 14 級時，你獲得化為靈能能量構成之幽靈形體的能力。作為一個動作，你可以變成透明、幽靈般的自己。處於此形態時，你對所有傷害具有抗性，以半速移動，並能在移動時穿過物體與生物，但無法自願在它們的空間中結束移動。此形態持續 10 分鐘，或直到你使用一個動作結束它為止。",
+			"使用此特性後，直到你完成長休前都無法再次使用。"
+		],
+		"ENG_name": "Spectral Form"
 	},
 	"Spell Breaker|Wizard|Abjurer|XPHB": {
 		"name": "法術破除者",
@@ -17602,6 +18229,21 @@
 		],
 		"ENG_name": "Superior Hunter's Prey"
 	},
+	"Superior Teleportation|Mystic|Order of the Nomad|UATHEMYSTICCLASS": {
+		"name": "高等傳送",
+		"source": "UATheMysticClass",
+		"page": 7,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Nomad",
+		"subclassSource": "UATheMysticClass",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"在 6 級時，你獲得高超的傳送天賦。當你使用靈能戒律傳送任何距離時，你可以將該距離增加最多 10 呎。"
+		],
+		"ENG_name": "Superior Teleportation"
+	},
 	"Supreme Healing|Cleric|Life Domain|XPHB": {
 		"name": "至高治療",
 		"source": "XPHB",
@@ -17663,6 +18305,22 @@
 			}
 		],
 		"ENG_name": "Supreme Sneak"
+	},
+	"Surge of Health|Mystic|Order of the Immortal|UATHEMYSTICCLASS": {
+		"name": "生命湧動",
+		"source": "UATheMysticClass",
+		"page": 6,
+		"className": "Mystic",
+		"classSource": "UATheMysticClass",
+		"subclassShortName": "Immortal",
+		"subclassSource": "UATheMysticClass",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"從 6 級開始，你可以汲取心靈專注以逃離死亡的魔掌。當你受到傷害時，作為一個反應，你可以將該傷害減半。若心靈專注正在生效，它會立即結束，且在你完成一次短休或長休之前無法使用它。",
+			"若你無法使用心靈專注，便無法使用此特性。"
+		],
+		"ENG_name": "Surge of Health"
 	},
 	"Survivor|Fighter|Champion|XPHB": {
 		"name": "生還者",

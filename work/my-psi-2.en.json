@@ -1,0 +1,83 @@
+{
+	"batch": "my-psi-2",
+	"items": [
+		{
+			"prop": "psionic",
+			"key": "Crown of Despair|UATHEMYSTICCLASS",
+			"s": [
+				"Crown of Despair",
+				"You have learned to harvest seeds of despair in a creature's psyche, wracking it with self-doubt and inaction.",
+				"While focused on this discipline, you have advantage on Charisma ({@skill Intimidation}) checks.",
+				"Crowned in Sorrow",
+				"As an action, one creature you can see within 60 feet of you must make a Charisma saving throw. On a failed save, it takes {@damage 1d8} psychic damage per psi point spent, and it can't take reactions until the start of its next turn. On a successful save, it takes half as much damage.",
+				"Call to Inaction",
+				"If you spend 1 minute conversing with a creature, you can attempt to seed it with overwhelming ennui. At the end of the minute, you can use an action to force the creature to make a Wisdom saving throw. The save automatically succeeds if the target is immune to being {@condition charmed}. On a failed save, it sits and is {@condition incapacitated} until your {@status concentration} ends. This effect immediately ends if the target or any ally it can see is attacked or takes damage. On a successful save, the creature is unaffected and has no inkling of your attempt to bend its will.",
+				"Visions of Despair",
+				"As an action, you force one creature you can see within 60 feet of you to make a Charisma saving throw. On a failed save, it takes {@damage 3d6} psychic damage, and its speed is reduced to 0 until the end of its next turn. On a successful save, it takes half as much damage. You can increase the damage by {@scaledamage 3d6|3-7|1d6|psi} per additional psi point spent on it.",
+				"Dolorous Mind",
+				"As an action, you choose one creature you can see within 60 feet of you. It must succeed on a Charisma saving throw, or it is {@condition incapacitated} and has a speed of 0 until your {@status concentration} ends. It can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Crown of Disgust|UATHEMYSTICCLASS",
+			"s": [
+				"Crown of Disgust",
+				"You cause a creature to be flooded with emotions of disgust.",
+				"While you are focused on this discipline, the area in a 5 foot radius around you is {@quickref difficult terrain||3} for any enemy that isn't immune to being {@condition frightened}.",
+				"Eye of Horror",
+				"As an action, choose one creature you can see within 60 feet of you. The target must make a Charisma saving throw. On a failed save, it takes {@scaledamage 1d6|1-7|1d6|psi} psychic damage per psi point spent and can't move closer to you until the end of its next turn. On a successful save, it takes half as much damage.",
+				"Wall of Repulsion",
+				"As an action, you create an invisible, insubstantial wall of energy within 60 feet of you that is up to 30 feet long, 10 feet high, and 1 foot thick. The wall lasts until your {@status concentration} ends. Any creature attempting to move through it must make a Wisdom saving throw. On a failed save, a creature can't move through the wall until the start of its next turn. On a successful save, the creature can pass through it. A creature must make this save whenever it attempts to pass through the wall, whether willingly or unwillingly.",
+				"Visions of Disgust",
+				"You cause a creature to regard all other beings as horrid, alien entities. As an action, choose one creature you can see within 60 feet of you. The target must make a Wisdom saving throw. On a failed save, it takes {@damage 5d6} psychic damage, and until your {@status concentration} ends, it takes {@damage 1d6} psychic damage per creature within 5 feet of it at the end of each of its turns. On a successful save, the target takes only half the initial damage and suffers none of the other effects.",
+				"World of Horror",
+				"As an action, choose up to six creatures within 60 feet of you. Each target must make a Charisma saving throw. On a failed save, a target takes {@damage 8d6} psychic damage, and it is {@condition frightened} until your {@status concentration} ends. On a successful save, a target takes half as much damage. While {@condition frightened} by this effect, a target's speed is reduced to 0, and the target can use its action, and any bonus action it might have, only to make melee attacks. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Crown of Rage|UATHEMYSTICCLASS",
+			"s": [
+				"Crown of Rage",
+				"You place a mote of pure fury within a creature's mind, causing its bloodlust to overcome its senses and for it to act as you wish it to.",
+				"While you are focused on this discipline, any enemy within 5 feet of you that makes a melee attack roll against creatures other than you does so with disadvantage",
+				"Primal Fury",
+				"As an action, choose one creature you can see within 60 feet of you. The target must succeed on a Charisma saving throw or take {@scaledamage 1d6|1-7|1d6|psi} psychic damage per psi point spent on this ability and immediately use its reaction to move its speed in a straight line toward its nearest enemy. The save automatically succeeds if the target is immune to being {@condition charmed}.",
+				"Fighting Words",
+				"If you spend 1 minute conversing with a creature, you can attempt to leave a simmering violence in its mind. At the end of the minute, you can use an action to force the creature to make a Wisdom saving throw to resist feeling violent urges against one creature you describe to it or name. The save automatically succeeds if the target is immune to being {@condition charmed}. On a failed save, the target attacks the chosen creature if it sees that creature before your {@status concentration} ends, using weapons or spells against a creature it was already hostile toward or unarmed strikes against an ally or a creature it was neutral toward. Once the fight starts, it continues to attack for 5 rounds before this effect ends. This effect immediately ends if the target or any ally it can see is attacked or takes damage from any creature other than the one it has been incited against. On a successful save, the creature is unaffected and has no inkling of your attempt to bend its will.",
+				"Mindless Courage",
+				"You cause a creature's bloodlust to overcome its sense of preservation. As a bonus action, choose one creature you can see within 60 feet of you. The target must succeed on a Wisdom saving throw or, until the end of your next turn, it can't willingly move unless its movement brings it closer to its nearest enemy that it can see. The save automatically succeeds if the target is immune to being {@condition charmed}.",
+				"Punishing Fury",
+				"You cause a creature's rage to grow so hot that it attacks without heeding its own safety. As a bonus action, choose one creature you can see within 60 feet of you. The target must succeed on a Wisdom saving throw or, until your {@status concentration} ends, any creature within 5 feet of it can use a reaction to make a melee attack against it whenever the target makes a melee attack. The save automatically succeeds if the target is immune to being {@condition charmed}."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Delusion|UATHEMYSTICCLASS",
+			"s": [
+				"Delusion",
+				"As an action, you plant a false belief in the mind of one creature that you can see within 60 feet of you. You can create a sound or an image. Only the target of this talent perceives the sound or image you create.",
+				"If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a creature's roar, a musical instrument, or any other sound you pick. It lasts for 1 minute.",
+				"If you create an object, it must fit within a 5-foot cube and can't move or be reflective. The image can't create any effect that influences a sense other than sight. The image lasts for 1 minute, and it disappears if the creature touches it."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Diminution|UATHEMYSTICCLASS",
+			"s": [
+				"Diminution",
+				"You manipulate the matter that composes your body, drastically reducing your size without surrendering any of your might.",
+				"While focused on this discipline, you have advantage on Dexterity ({@skill Stealth}) checks.",
+				"Miniature Form",
+				"As a bonus action, you become Tiny until your {@status concentration} ends. While this size, you gain a +5 bonus to Dexterity ({@skill Stealth}) checks and can move through gaps up to 6 inches across without squeezing.",
+				"Toppling Shift",
+				"As a bonus action, you shift to an incredibly small size and then suddenly return to normal, sending an opponent flying backward. Choose one creature you can see within 5 feet of you. It must succeed on a Strength saving throw or be knocked {@condition prone}.",
+				"Sudden Shift",
+				"As a reaction when you are hit by an attack, you shift down to minute size to avoid the attack. The attack misses, and you move up to 5 feet without provoking opportunity attacks before returning to normal size.",
+				"Microscopic Form",
+				"As a bonus action, you become smaller than Tiny until your {@status concentration} ends. While this size, you gain a +10 bonus to Dexterity ({@skill Stealth}) checks and a +5 bonus to AC, you can move through gaps up to 1 inch across without squeezing, and you can't make weapon attacks."
+			]
+		}
+	]
+}

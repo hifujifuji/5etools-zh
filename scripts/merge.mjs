@@ -16,6 +16,9 @@ export const TEXT_KEYS = new Set([
 	"row", "cells", "lower", "upper", "entriesTemplate", "regionalEffects", "lairActions", "mythicEncounter",
 ]);
 
+// 靈能（psionic）的專注效果 focus 是字串；物品的 focus 是陣列／布林，不算文字
+export const isTextKey = (k, v) => TEXT_KEYS.has(k) || (k === "focus" && typeof v === "string");
+
 // 這些欄位底下都是程式用的結構化資料（技能 key、法術清單…），整棵不碰
 export const SKIP_KEYS = new Set([
 	"startingProficiencies", "proficiency", "skillProficiencies", "toolProficiencies", "languageProficiencies",
@@ -46,7 +49,7 @@ export class Merger {
 		if (hasCjk(old.name)) Merger.setName(neu, old.name);
 		for (const k of Object.keys(neu)) {
 			if (k === "name" || SKIP_KEYS.has(k) || !(k in old)) continue;
-			neu[k] = this._mergeVal(neu[k], old[k], TEXT_KEYS.has(k));
+			neu[k] = this._mergeVal(neu[k], old[k], isTextKey(k, neu[k]));
 		}
 		return neu;
 	}
@@ -83,7 +86,7 @@ export class Merger {
 				continue;
 			}
 			if (SKIP_KEYS.has(k)) continue;
-			n[k] = this._mergeVal(n[k], o[k], TEXT_KEYS.has(k));
+			n[k] = this._mergeVal(n[k], o[k], isTextKey(k, n[k]));
 		}
 		return n;
 	}

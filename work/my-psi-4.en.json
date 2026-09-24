@@ -1,0 +1,97 @@
+{
+	"batch": "my-psi-4",
+	"items": [
+		{
+			"prop": "psionic",
+			"key": "Mantle of Fear|UATHEMYSTICCLASS",
+			"s": [
+				"Mantle of Fear",
+				"You tap into a well of primal fear and turn yourself into a beacon of terror to your enemies.",
+				"While focused on this discipline, you have advantage on Charisma ({@skill Intimidation}) checks.",
+				"Incite Fear",
+				"As an action, choose one creature you can see within 60 feet of you. The target must succeed on a Wisdom saving throw or become {@condition frightened} of you until your {@status concentration} ends. Whenever the {@condition frightened} target ends its turn in a location where it can't see you, it can repeat the saving throw, ending the effect on itself on a success.",
+				"Unsettling Aura",
+				"As a bonus action, you cloak yourself in unsettling psychic energy. Until your {@status concentration} ends, any enemy within 60 feet of you that can see you must spend 1 extra foot of movement for every foot it moves toward you. A creature ignores this effect if immune to being {@condition frightened}.",
+				"Incite Panic",
+				"As an action, choose up to eight creatures you can see within 90 feet of you that can see you. At the start of each of a target's turns before your {@status concentration} ends, the target must make a Wisdom saving throw. On a failed save, the target is {@condition frightened} until the start of its next turn, and you roll a die. If you roll an odd number, the {@condition frightened} target moves half its speed in random direction and takes no action on that turn, other than to scream in terror. If you roll an even number, the {@condition frightened} target makes one melee attack against a random target within its reach. If there is no such target, it moves half its speed in a random direction and takes no action on that turn. This effect end on a target if it succeeds on three saving throws against it."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Mantle of Fury|UATHEMYSTICCLASS",
+			"s": [
+				"Mantle of Fury",
+				"You allow the primal fury lurking deep within your mind to burst forth, catching you and you allies in an implacable bloodthirst.",
+				"While focused on this discipline in combat, you and any ally who starts their turn within 10 feet of you gains a 5 foot increase to their walking speed during that turn.",
+				"Incite Fury",
+				"As a bonus action, choose up to three allies you can see within 60 feet of you (you can choose yourself in place of one of the allies). Until your {@status concentration} ends, each target can roll a {@dice d4} when rolling damage for a melee weapon attack and add the number rolled to the damage roll.",
+				"Mindless Charge",
+				"As a bonus action, choose up to three creatures you can see within 60 feet of you. Each target can immediately use its reaction to move up to its speed in a straight line toward its nearest enemy.",
+				"Aura of Bloodletting",
+				"As a bonus action, you unleash an aura of rage. Until your {@status concentration} ends, you and any creature within 60 feet of you has advantage on melee attack rolls.",
+				"Overwhelming Fury",
+				"As an action, you flood rage into one creature you can see within 60 feet of you. The target must succeed on a Charisma saving throw, or it can use its actions only to make melee attacks until your {@status concentration} ends. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Mantle of Joy|UATHEMYSTICCLASS",
+			"s": [
+				"Mantle of Joy",
+				"You tap into the joy within you, radiating it outward in soothing, psychic energy that brings hope and comfort to creatures around you.",
+				"While focused on this discipline, you have advantage on Charisma ({@skill Persuasion}) checks",
+				"Soothing Presence",
+				"As a bonus action, choose up to three creatures you can see within 60 feet of you. Each target gains 3 temporary hit points per psi point spent on this effect.",
+				"Comforting Aura",
+				"As a bonus action, choose up to three allies you can see (you can choose yourself in place of one of the allies). Until your {@status concentration} ends, each target can roll a {@dice d4} when making a saving throw and add the number rolled to the total.",
+				"Aura of Jubilation",
+				"As a bonus action, you radiate a distracting mirth until your {@status concentration} ends. Each creature within 60 feet of you that can see you suffers disadvantage on any checks using the {@skill Perception} and {@skill Investigation} skills.",
+				"Beacon of Recovery",
+				"As a bonus action, you and up to five allies you can see within 60 feet of you can immediately make saving throws against every effect they're suffering that allows a save at the start or end of their turns."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Mastery of Air|UATHEMYSTICCLASS",
+			"s": [
+				"Mastery of Air",
+				"You become one with the power of elemental air.",
+				"While focused on this discipline, you take no falling damage, and you ignore {@quickref difficult terrain||3} when walking.",
+				"Wind Step",
+				"As part of your move on your turn, you can fly up to 20 feet for each psi point spent. If you end this flight in the air, you fall unless something else holds you aloft.",
+				"Wind Stream",
+				"As an action, you create a line of focused air that is 30 feet long and 5 feet wide. Each creature in that area must make a Strength saving throw, taking {@scaledamage 1d8|1-7|1d8|psi} bludgeoning damage per psi point spent and being knocked {@condition prone} on a failed save, or half as much damage on a successful one.",
+				"Cloak of Air",
+				"As a bonus action, you seize control of the air around you to create a protective veil. Until your {@status concentration} ends, attack rolls against you have disadvantage, and when a creature you can see misses you with a melee attack, you can use your reaction to force the creature to repeat the attack roll against itself.",
+				"Wind Form",
+				"As a bonus action, you gain a flying speed of 60 feet, which lasts until your {@status concentration} ends.",
+				"Misty Form",
+				"As an action, your body becomes like a misty cloud until your {@status concentration} ends. In this form, you gain resistance to bludgeoning, piercing, and slashing damage, and you can't take actions other than the Dash action. You can pass through openings that are no more than 1 inch wide without squeezing.",
+				"Animate Air",
+				"As an action, you cause an {@creature air elemental} to appear in an unoccupied space you can see within 120 feet of you. The elemental lasts until your {@status concentration} ends, and it obeys your verbal commands. In combat, roll for its initiative, and choose its behavior during its turns. When this effect ends, the elemental disappears. See the Monster Manual for its stat block."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Mastery of Fire|UATHEMYSTICCLASS",
+			"hint": {
+				"Fire Form": "火焰形體"
+			},
+			"s": [
+				"Mastery of Fire",
+				"You align your mind with the energy of elemental fire.",
+				"While focused on this discipline, you gain resistance to fire damage, and you gain a +2 bonus to rolls for fire damage.",
+				"Combustion",
+				"As an action, choose one creature or object you can see within 120 feet of you. The target must make a Constitution save. On a failed save, the target takes {@scaledamage 1d10|1-7|1d10|psi} fire damage per psi point spent, and it catches on fire, taking {@damage 1d6} fire damage at the end of each of its turns until your {@status concentration} ends or until it or a creature adjacent to it extinguishes the flames with an action. On a successful save, the target takes half as much damage and doesn't catch on fire.",
+				"Rolling Flame",
+				"As an action, you create fire in a 20-foot-by-20-foot cube within 5 feet of you. The fire lasts until your {@status concentration} ends. Any creature in that area when you use this ability and any creature that ends its turn there takes 5 fire damage.",
+				"Detonation",
+				"As an action, you create a fiery explosion at a point you can see within 120 feet of you. Each creature in a 20-foot-radius sphere centered on that point must make a Constitution saving throw, taking {@damage 7d6} fire damage and being knocked {@condition prone} on a failed save, or half as much damage on a successful one.",
+				"Fire Form",
+				"As a bonus action, you become wreathed in flames until your {@status concentration} ends. Any creature that end its turn within 5 feet of you takes {@damage 3d6} fire damage.",
+				"Animate Fire",
+				"As an action, you cause a {@creature fire elemental} to appear in an unoccupied space you can see within 120 feet of you. The elemental lasts until your {@status concentration} ends, and it obeys your verbal commands. In combat, roll for its initiative, and choose its behavior during its turns. When this effect ends, the elemental disappears. See the Monster Manual for its stat block."
+			]
+		}
+	]
+}

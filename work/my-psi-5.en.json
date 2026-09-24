@@ -1,0 +1,87 @@
+{
+	"batch": "my-psi-5",
+	"items": [
+		{
+			"prop": "psionic",
+			"key": "Mastery of Force|UATHEMYSTICCLASS",
+			"hint": {
+				"Push": "推擊",
+				"Move": "移動",
+				"Crush": "壓碎"
+			},
+			"s": [
+				"Mastery of Force",
+				"As a student of psionic power, you perceive the potential energy that flows through all things. You reach out with your mind, transforming the potential into the actual. Objects and creatures move at your command.",
+				"While focused on this discipline, you have advantage on Strength checks.",
+				"Push",
+				"As an action, choose one creature you can see within 60 feet of you. The target must make a Strength saving throw. On a failed save, it takes {@scaledamage 1d8|1-7|1d8|psi} force damage per psi point spent and is pushed up to 5 feet per point spent in a straight line away from you. On a successful save, it takes half as much damage.",
+				"Move",
+				"Choose one object you can see within 60 feet of you that isn't being worn or carried by another creature and that isn't secured in place. It can't be larger than 20 feet on a side, and its maximum weight depends on the psi points spent on this ability, as shown below.",
+				"As an action, you move the object up to 60 feet, and you must keep the object within sight during this movement. If the object ends this movement in the air, it falls. If the object would fall on a creature, the creature must succeed on a {@dc 10} Dexterity saving throw or take damage as listed on the table below.",
+				"Psi Spent",
+				"Maximum Weight",
+				"Bludgeoning Damage",
+				"25 lbs.",
+				"50 lbs.",
+				"250 lbs.",
+				"500 lbs.",
+				"1,000 lbs.",
+				"Inertial Armor",
+				"As an action, you sheathe yourself in an intangible field of magical force. For 8 hours, your base AC is 14 + your Dexterity modifier, and you gain resistance to force damage. This effect ends if you are wearing or don armor.",
+				"Telekinetic Barrier",
+				"As an action, you create a transparent wall of telekinetic energy, at least one portion of which must be within 60 feet of you. The wall is 40 feet long, 10 feet high, and 1 inch thick. The wall lasts until your {@status concentration} ends. Each 10-foot section of the wall has an AC of 10 and 10 hit points.",
+				"Grasp",
+				"You attempt to grasp a creature in telekinetic energy and hold it captive. As an action, choose one creature you can see within 60 feet of you. The target must succeed on a Strength saving throw or be {@condition grappled} by you until your {@status concentration} ends or until the target leaves your reach, which is 60 feet for this grapple.",
+				"The {@condition grappled} target can escape by succeeding on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your psionic ability plus your proficiency bonus. When a target attempts to escape in this way, you can spend psi points to boost your check, abiding by your psi limit. You gain a +1 bonus per psi point spent.",
+				"While a target is {@condition grappled} in this manner, you create one of the following effects as an action:",
+				"Crush",
+				"The target takes {@scaledamage 1d6|1-7|1d6|psi} bludgeoning damage per psi point spent.",
+				"Move",
+				"You move the target up to 5 feet per psi point spent. You can move it in the air and hold it there. It falls if the grapple ends."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Mastery of Ice|UATHEMYSTICCLASS",
+			"s": [
+				"Mastery of Ice",
+				"You master the power of ice, shaping it to meet you demands.",
+				"While focused on this discipline, you have resistance to cold damage.",
+				"Ice Spike",
+				"As an action, you hurl a mote of ice at one creature you can see within 120 feet of you. The target must make a Dexterity saving throw. On a failed save, the target takes {@scaledamage 1d8|1-7|1d8|psi} cold damage per psi point spent and has its speed halved until the start of your next turn. On a successful save, the target takes half as much damage.",
+				"Ice Sheet",
+				"As an action, choose a point on the ground you can see within 60 feet of you. The ground in a 20-foot radius centered on that point becomes covered in ice for 10 minutes. It is {@quickref difficult terrain||3}, and any creature that moves more than 10 feet on it must succeed on a Dexterity saving throw or fall {@condition prone}. If the surface is sloped, a creature that falls {@condition prone} in the area immediately slides to the bottom of the slope.",
+				"Frozen Sanctuary",
+				"As a bonus action, you sheathe yourself with icy resilience. You gain 20 temporary hit points.",
+				"Frozen Rain",
+				"As an action, choose a point you can see within 120 feet of you. The air in a 20-foot-radius sphere centered on that point becomes deathly cold and saturated with moisture. Each creature in that area must make a Constitution saving throw. On a failed save, a target takes {@damage 6d6} cold damage, and its speed is reduced to 0 until your {@status concentration} ends. On a successful save, a target takes half as much damage.",
+				"As an action, a target that has its speed reduced can end the effect early if it succeeds on a Strength (Athletics) check with a DC equal to this effect's save DC.",
+				"You can increase this effect's damage by {@scaledamage 6d6|5-7|1d6|psi} per each additional psi point spent on it.",
+				"Ice Barrier",
+				"As an action, you create a wall of ice, at least one portion of which must be within 60 feet of you. The wall is 60 feet long, 15 feet high, and 1 foot thick. The wall lasts until your {@status concentration} ends. Each 10-foot section of the wall has AC 12 and 30 hit points. A creature that damages the wall with a melee attack takes cold damage equal to the damage the creature dealt to the wall."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Mastery of Light and Darkness|UATHEMYSTICCLASS",
+			"hint": {
+				"Darkness": "黑暗術",
+				"Light": "光明"
+			},
+			"s": [
+				"Mastery of Light and Darkness",
+				"You claim dominion over light and darkness with your mind.",
+				"While focused on this discipline, natural and magical darkness within 30 feet of you has no effect on your vision.",
+				"Darkness",
+				"As an action, you create an area of magical darkness, which foils darkvision. Choose a spot you can see within 60 feet of you. Magical darkness radiates from that point in a sphere with a 10-foot radius per psi point spent on this ability. The light produced by spells of 2nd level or less is suppressed in this area.",
+				"Light",
+				"As an action, an object you touch radiates light in a 20-foot radius and dim light for an additional 20 feet. The light lasts until your {@status concentration} ends. Alternatively, a creature you touch radiates light in the same manner if it fails a Dexterity saving throw. While lit in this manner, it can't hide, and attack rolls against it gain advantage.",
+				"Shadow Beasts",
+				"As an action, you cause two {@creature shadow||shadows} to appear in unoccupied spaces you can see within 60 feet of you. The {@creature shadow||shadows} last until your {@status concentration} ends, and they obey your verbal commands. In combat, roll for their initiative, and choose their behavior during their turns. When this effect ends, the {@creature shadow||shadows} disappear. See the Monster Manual for their stat block.",
+				"Radiant Beam",
+				"As an action, you project a beam of light at one creature you can see within 60 feet of you. The target must make a Dexterity saving throw. On a failed save, it takes {@damage 6d6} radiant damage and is {@condition blinded} until your {@status concentration} ends. On a successful save, it takes half as much damage. A {@condition blinded} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"You can increase this effect's damage by {@scaledamage 6d6|5-7|1d6|psi} per each additional psi point spent on it."
+			]
+		}
+	]
+}

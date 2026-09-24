@@ -3994,6 +3994,263 @@
 		"hasFluffImages": true,
 		"ENG_name": "Monk"
 	},
+	"Mystic|UATHEMYSTICCLASS": {
+		"name": "秘術士",
+		"source": "UATheMysticClass",
+		"page": 1,
+		"edition": "classic",
+		"hd": {
+			"number": 1,
+			"faces": 8
+		},
+		"proficiency": [
+			"int",
+			"wis"
+		],
+		"startingProficiencies": {
+			"armor": [
+				"light"
+			],
+			"weapons": [
+				"simple"
+			],
+			"skills": [
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"insight",
+							"medicine",
+							"nature",
+							"perception",
+							"religion"
+						],
+						"count": 2
+					}
+				}
+			]
+		},
+		"startingEquipment": {
+			"additionalFromBackground": true,
+			"default": [
+				"(a) a {@item spear|phb} or (b) a {@item mace|phb}",
+				"(a) {@item leather armor|phb} or (b) {@item studded leather armor|phb}",
+				"(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+				"(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}"
+			],
+			"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+			"defaultData": [
+				{
+					"a": [
+						"spear|phb"
+					],
+					"b": [
+						"mace|phb"
+					]
+				},
+				{
+					"a": [
+						"leather armor|phb"
+					],
+					"b": [
+						"studded leather armor|phb"
+					]
+				},
+				{
+					"a": [
+						"light crossbow|phb",
+						"crossbow bolts (20)|phb"
+					],
+					"b": [
+						{
+							"equipmentType": "weaponSimple"
+						}
+					]
+				},
+				{
+					"a": [
+						"scholar's pack|phb"
+					],
+					"b": [
+						"explorer's pack|phb"
+					]
+				}
+			]
+		},
+		"classTableGroups": [
+			{
+				"colLabels": [
+					"{@filter Talents Known|psionics|type=T}",
+					"{@filter Disciplines Known|psionics|type=D}",
+					"靈能點",
+					"靈能上限"
+				],
+				"rows": [
+					[
+						1,
+						1,
+						4,
+						2
+					],
+					[
+						1,
+						1,
+						6,
+						2
+					],
+					[
+						2,
+						2,
+						14,
+						3
+					],
+					[
+						2,
+						2,
+						17,
+						3
+					],
+					[
+						2,
+						3,
+						27,
+						5
+					],
+					[
+						2,
+						3,
+						32,
+						5
+					],
+					[
+						2,
+						4,
+						38,
+						6
+					],
+					[
+						2,
+						4,
+						44,
+						6
+					],
+					[
+						2,
+						5,
+						57,
+						7
+					],
+					[
+						3,
+						5,
+						64,
+						7
+					],
+					[
+						3,
+						5,
+						64,
+						7
+					],
+					[
+						3,
+						6,
+						64,
+						7
+					],
+					[
+						3,
+						6,
+						64,
+						7
+					],
+					[
+						3,
+						6,
+						64,
+						7
+					],
+					[
+						3,
+						7,
+						64,
+						7
+					],
+					[
+						3,
+						7,
+						64,
+						7
+					],
+					[
+						4,
+						7,
+						64,
+						7
+					],
+					[
+						4,
+						8,
+						71,
+						7
+					],
+					[
+						4,
+						8,
+						71,
+						7
+					],
+					[
+						4,
+						8,
+						71,
+						7
+					]
+				]
+			}
+		],
+		"classFeatures": [
+			"Psionics|Mystic|UATheMysticClass|1",
+			"Psionic Disciplines and Talents|Mystic|UATheMysticClass|1",
+			"Using a Discipline|Mystic|UATheMysticClass|1",
+			{
+				"classFeature": "Mystic Order|Mystic|UATheMysticClass|1",
+				"gainSubclassFeature": true
+			},
+			"Mystical Recovery|Mystic|UATheMysticClass|2",
+			"Telepathy|Mystic|UATheMysticClass|2",
+			{
+				"classFeature": "Mystic Order feature|Mystic|UATheMysticClass|3",
+				"gainSubclassFeature": true
+			},
+			"Ability Score Improvement|Mystic|UATheMysticClass|4",
+			"Strength of Mind|Mystic|UATheMysticClass|4",
+			{
+				"classFeature": "Mystic Order feature|Mystic|UATheMysticClass|6",
+				"gainSubclassFeature": true
+			},
+			"Ability Score Improvement|Mystic|UATheMysticClass|8",
+			"Potent Psionics (1d8)|Mystic|UATheMysticClass|8",
+			"Consumptive Power|Mystic|UATheMysticClass|10",
+			"Psionic Mastery (1/Day)|Mystic|UATheMysticClass|11",
+			"Ability Score Improvement|Mystic|UATheMysticClass|12",
+			"Psionic Mastery (2/Day)|Mystic|UATheMysticClass|13",
+			{
+				"classFeature": "Mystic Order feature|Mystic|UATheMysticClass|14",
+				"gainSubclassFeature": true
+			},
+			"Potent Psionics (2d8)|Mystic|UATheMysticClass|14",
+			"Psionic Mastery (3/Day)|Mystic|UATheMysticClass|15",
+			"Ability Score Improvement|Mystic|UATheMysticClass|16",
+			"Psionic Mastery (4/Day)|Mystic|UATheMysticClass|17",
+			"Ability Score Improvement|Mystic|UATheMysticClass|19",
+			"Psionic Body|Mystic|UATheMysticClass|20"
+		],
+		"subclassTitle": "Mystic Order",
+		"hasFluff": true,
+		"ENG_name": "Mystic"
+	},
 	"Paladin|XPHB": {
 		"name": "聖騎士",
 		"source": "XPHB",

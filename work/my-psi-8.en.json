@@ -1,0 +1,106 @@
+{
+	"batch": "my-psi-8",
+	"items": [
+		{
+			"prop": "psionic",
+			"key": "Precognition|UATHEMYSTICCLASS",
+			"hint": {
+				"Danger Sense": "險境感知"
+			},
+			"s": [
+				"Precognition",
+				"By analyzing information around you, from subtle hints to seemingly disconnected facts, you learn to weave a string of probabilities in an instant that gives you extraordinary insights.",
+				"While focused on this discipline, you have advantage on initiative rolls.",
+				"Precognitive Hunch",
+				"As a bonus action, you open yourself to receive momentary insights that improve your odds of success; until your {@status concentration} ends, whenever you make an attack roll, a saving throw, or an ability check, you roll a {@dice d4} and add it to the total.",
+				"All-Around Sight",
+				"In response to an attack hitting you, you use your reaction to impose disadvantage on that attack roll, possibly causing it to miss.",
+				"Danger Sense",
+				"As an action, you create a psychic model of reality in your mind and set it to show you a few seconds into the future. Until your {@status concentration} ends, you can't be {@status surprised}, attack rolls against you can't gain advantage, and you gain a +10 bonus to initiative.",
+				"Victory Before Battle",
+				"When you roll initiative, you can use this ability to grant yourself and up to five creatures of your choice within 60 feet of you a +10 bonus to initiative."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Psionic Restoration|UATHEMYSTICCLASS",
+			"hint": {
+				"Restore Life": "恢復生命"
+			},
+			"s": [
+				"Psionic Restoration",
+				"You wield psionic energy to cure wounds and restore health to yourself and others.",
+				"While focused on this discipline, you can use a bonus action to touch a creature that has 0 hit points and stabilize it.",
+				"Mend Wounds",
+				"As an action, you can spend psi points to restore hit points to one creature you touch. The creature regains {@scaledice 1d8|1-7|1d8|psi} hit points per psi point spent.",
+				"Restore Health",
+				"As an action, you touch one creature and remove one of the following conditions from it: {@condition blinded}, {@condition deafened}, {@condition paralyzed}, or {@condition poisoned}. Alternatively, you remove one disease from the creature.",
+				"Restore Life",
+				"As an action, you touch one creature that has died within the last minute. The creature returns to life with 1 hit point. This ability can't return to life a creature that has died of old age, nor can it restore a creature missing any vital body parts.",
+				"Restore Vigor",
+				"As an action, you can touch one creature and choose one of the following: remove any reductions to one of its ability scores, remove one effect that reduces its hit point maximum, or reduce its {@condition exhaustion} level by one."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Psionic Weapon|UATHEMYSTICCLASS",
+			"s": [
+				"Psionic Weapon",
+				"You have learned how to channel psionic energy into your attacks, lending them devastating power.",
+				"Whenever you focus on this discipline, choose one weapon you're holding or your unarmed strike. When you attack with it while focused on this discipline, its damage is psychic and magical, rather than its normal damage type. Until you reach 6th level as a mystic, you don't add your Strength or Dexterity modifier to the psychic attack's damage rolls.",
+				"Ethereal Weapon",
+				"As a bonus action, you temporarily transform one weapon you're holding or your unarmed strike into pure psionic energy. The next attack you make with it before the end of your turn ignores the target's armor, requiring no attack roll. Instead, the target makes a Dexterity saving throw against this discipline. On a failed save, the target takes the attack's normal damage and suffers its additional effects. On a successful save, the target takes half damage from the attack but suffers no additional effects that would normally be imposed on a hit.",
+				"Lethal Strike",
+				"As a bonus action, you imbue a weapon you're holding or your unarmed strike with psychic energy. The next time you hit with it before the end of your turn, it deals an extra {@scaledamage 1d10|1-7|1d10|psi} psychic damage per psi point spent.",
+				"Augmented Weapon",
+				"As a bonus action, touch one {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}. Until your {@status concentration} ends, that weapon becomes a magic weapon with a +3 bonus to its attack and damage rolls."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Psychic Assault|UATHEMYSTICCLASS",
+			"hint": {
+				"Psychic Crush": "心靈壓碎"
+			},
+			"s": [
+				"Psychic Assault",
+				"You wield your mind like a weapon, unleashing salvos of psionic energy.",
+				"While focused on this discipline, you gain a +2 bonus to damage rolls with psionic talents that deal psychic damage.",
+				"Psionic Blast",
+				"As an action, choose one creature you can see within 60 feet of you. The target takes {@scaledamage 1d8|1-7|1d8|psi} psychic damage per psi point spent on this ability.",
+				"Ego Whip",
+				"As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, the creature takes {@damage 3d8} psychic damage, and it is filled with self-doubt, leaving it able to use its action on its next turn only to take the Dodge, Disengage, or Hide action. On a successful saving throw, it takes half as much damage.",
+				"Id Insinuation",
+				"As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, the creature takes {@damage 5d8} psychic damage, and it goes into a fury, as its id runs rampant. On its next turn, it can use its action only to take the Dodge or Attack action. On a successful save, it takes half as much damage.",
+				"Psychic Blast",
+				"As an action, you unleash devastating psychic energy in a 60-foot cone. Each creature in that area must make an Intelligence saving throw, taking {@damage 8d8} psychic damage on a failed save, or half as much damage on a successful one. You can increase the damage by {@scaledamage 8d8|6-7|2d8|psi} if you spend 1 more psi point on this ability.",
+				"Psychic Crush",
+				"As an action, you create a 20-foot cube of psychic energy within 120 feet of you. Each creature in that area must make an Intelligence saving throw. On a failed save, a target takes {@damage 8d8} psychic damage and is {@condition stunned} until the end of your next turn. On a successful save, a target takes half as much damage."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Psychic Disruption|UATHEMYSTICCLASS",
+			"s": [
+				"Psychic Disruption",
+				"You create psychic static that disrupts other creatures' ability to think clearly.",
+				"While focused on this discipline, you have advantage on Charisma ({@skill Deception}) checks.",
+				"Distracting Haze",
+				"As an action, choose one creature you can see within 60 feet of you. That creature must make an Intelligence saving throw. On a failed save, it takes {@scaledamage 1d10|1-7|1d10|psi} psychic damage per psi point spent and can't see anything more than 10 feet from it until your {@status concentration} ends. On a successful save, it takes half as much damage.",
+				"Daze",
+				"As an action, choose one creature you can see within 60 feet of you. That creature must make an Intelligence saving throw. On a failed save, the target is {@condition incapacitated} until the end of your next turn or until it takes any damage.",
+				"Mind Storm",
+				"As an action, choose a point you can see within 60 feet of you. Each creature in a 20-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, a target takes {@damage 6d8} psychic damage and suffers disadvantage on all saving throws until the end of your next turn. On a successful save, a creature takes half as much damage. You can increase the damage by {@scaledamage 6d8|5-7|1d6|psi} per additional psi point spent on this ability."
+			]
+		},
+		{
+			"prop": "psionic",
+			"key": "Psychic Hammer|UATHEMYSTICCLASS",
+			"s": [
+				"Psychic Hammer",
+				"As an action, you try to grasp one creature you can see within 120 feet of you, with a hand crafted from telekinetic energy. The target must succeed on a Strength saving throw or take {@damage 1d6} force damage. If it takes any of this damage and is Large or smaller, you can move it up to 10 feet in a straight line in a direction of your choice. You can't lift the target off the ground unless it is already airborne or underwater.",
+				"The talent's damage increases by {@damage 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+			]
+		}
+	]
+}

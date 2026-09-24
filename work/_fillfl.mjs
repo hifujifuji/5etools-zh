@@ -7,7 +7,7 @@ const RN = JSON.parse(fs.readFileSync("work/_rn.json"));
 const HEAD = JSON.parse(fs.readFileSync("work/_headings.json"));
 const BM = fs.existsSync("work/_bookmap.json") ? JSON.parse(fs.readFileSync("work/_bookmap.json")) : {};
 const SUF = {Base: "基礎", Chromatic: "彩色", Gem: "寶石", Metallic: "金屬"};
-const AUTOX = s => /^[\d,]+ (gp|sp|cp|GP|SP|CP)$/.test(s) ? "=" : /^([\d,]+) days?$/.test(s) ? s.replace(/ days?$/, " 天") : /^([\d,]+) (weeks?)$/.test(s) ? s.replace(/ weeks?$/, " 週") : /^([\d,]+) workweeks?$/.test(s) ? s.replace(/ workweeks?$/, " 工作週") : /^[\d,/]+ lb\.$/.test(s) ? s.replace(/ lb\.$/, " 磅") : /^[\d,]+ ft\.$/.test(s) ? s.replace(/ ft\.$/, " 呎") : /^[\d,]+ \((\{@dice [^}]+\})\) ft\.$/.test(s) ? s.replace(/ \((\{@dice [^}]+\})\) ft\.$/, "（$1）呎") : /^[\d,]+ (miles?|hours?|minutes?)$/.test(s) ? s.replace(/ miles?$/, " 哩").replace(/ hours?$/, " 小時").replace(/ minutes?$/, " 分鐘") : null;
+const AUTOX = s => /^[\d,]+ (gp|sp|cp|GP|SP|CP)$/.test(s) ? "=" : /^([\d,]+) days?$/.test(s) ? s.replace(/ days?$/, " 天") : /^([\d,]+) (weeks?)$/.test(s) ? s.replace(/ weeks?$/, " 週") : /^([\d,]+) workweeks?$/.test(s) ? s.replace(/ workweeks?$/, " 工作週") : /^[\d,/]+ lbs?\.$/.test(s) ? s.replace(/ lbs?\.$/, " 磅") : /^[\d,]+ ft\.$/.test(s) ? s.replace(/ ft\.$/, " 呎") : /^[\d,]+ \((\{@dice [^}]+\})\) ft\.$/.test(s) ? s.replace(/ \((\{@dice [^}]+\})\) ft\.$/, "（$1）呎") : /^[\d,]+ (miles?|hours?|minutes?)$/.test(s) ? s.replace(/ miles?$/, " 哩").replace(/ hours?$/, " 小時").replace(/ minutes?$/, " 分鐘") : null;
 export const rnParen = s => { const m = /^(.+) \((.+)\)$/.exec(s); return m && RN[m[1]] ? `${RN[m[1]]}（${RN[m[2]] ?? SUF[m[2]] ?? m[2]}）` : null; };
 export default (batch, maps = [], dict = {}) => {
 	const bs = base(batch);
