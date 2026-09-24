@@ -1645,9 +1645,9 @@ Parser.spComponentsToFull = function (comp, level, {isPlainText = false} = {}) {
 };
 
 Parser.SP_END_TYPE_TO_FULL = {
-	"dispel": "dispelled",
-	"trigger": "triggered",
-	"discharge": "discharged",
+	"dispel": "被解除",
+	"trigger": "被觸發",
+	"discharge": "被釋放",
 };
 Parser.spEndTypeToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_END_TYPE_TO_FULL, type);
@@ -1737,7 +1737,8 @@ Parser.spSubclassesToFull = function (fromSubclassList, {isTextOnly = false, isI
 Parser._spSubclassItem = function ({fromSubclass, isTextOnly = false, isIncludeSource = false}) {
 	const c = fromSubclass.class;
 	const sc = fromSubclass.subclass;
-	const text = `${sc.shortName}${sc.subSubclass ? ` (${sc.subSubclass})` : ""}`;
+	const __scZh = globalThis.ZH?.subclassName?.(c.name, sc.shortName) || sc.shortName;
+	const text = `${__scZh}${sc.subSubclass ? `（${sc.subSubclass}）` : ""}`;
 	if (isTextOnly) {
 		if (isIncludeSource) return `${text} (${Parser.sourceJsonToAbv(sc.source)})`;
 		return text;

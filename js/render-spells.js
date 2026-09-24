@@ -170,7 +170,7 @@ class _RenderSpellsImplBase extends RenderPageImplBase {
 				stackFroms.push(`<div><span class="ve-bold">Classes: </span>${Parser.spMainClassesToFull(current)}</div>`);
 			}
 			if (settings.isDisplayClassesLegacy && legacy.length) {
-				stackFroms.push(`<div class="ve-muted"><span class="ve-bold">Classes (legacy): </span>${Parser.spMainClassesToFull(legacy)}</div>`);
+				stackFroms.push(`<div class="ve-muted"><span class="ve-bold">職業（舊版）：</span>${Parser.spMainClassesToFull(legacy)}</div>`);
 			}
 		}
 
@@ -181,7 +181,7 @@ class _RenderSpellsImplBase extends RenderPageImplBase {
 				stackFroms.push(`<div><span class="ve-bold">Subclasses: </span>${current}</div>`);
 			}
 			if (settings.isDisplaySubclassesLegacy && legacy.length) {
-				stackFroms.push(`<div class="ve-muted"><span class="ve-bold">Subclasses (legacy): </span>${legacy}</div>`);
+				stackFroms.push(`<div class="ve-muted"><span class="ve-bold">子職業（舊版）：</span>${legacy}</div>`);
 			}
 		}
 
@@ -189,10 +189,10 @@ class _RenderSpellsImplBase extends RenderPageImplBase {
 		if (fromClassListVariant.length) {
 			const [current, legacy] = Parser.spVariantClassesToCurrentAndLegacy(fromClassListVariant);
 			if (settings.isDisplayVariantClasses && current.length) {
-				stackFroms.push(`<div><span class="ve-bold" title="&quot;Optional&quot; spells may be added to a campaign by the DM. &quot;Variant&quot; spells are generally available, but may be made available to a class by the DM.">Optional/Variant Classes: </span>${Parser.spMainClassesToFull(current)}</div>`);
+				stackFroms.push(`<div><span class="ve-bold" title="&quot;Optional&quot; spells may be added to a campaign by the DM. &quot;Variant&quot; spells are generally available, but may be made available to a class by the DM.">選用／變體職業：</span>${Parser.spMainClassesToFull(current)}</div>`);
 			}
 			if (settings.isDisplayVariantClassesLegacy && legacy.length) {
-				stackFroms.push(`<div class="ve-muted"><span class="ve-bold" title="&quot;Optional&quot; spells may be added to a campaign by the DM. &quot;Variant&quot; spells are generally available, but may be made available to a class by the DM.">Optional/Variant Classes (legacy): </span>${Parser.spMainClassesToFull(legacy)}</div>`);
+				stackFroms.push(`<div class="ve-muted"><span class="ve-bold" title="&quot;Optional&quot; spells may be added to a campaign by the DM. &quot;Variant&quot; spells are generally available, but may be made available to a class by the DM.">選用／變體職業（舊版）：</span>${Parser.spMainClassesToFull(legacy)}</div>`);
 			}
 		}
 

@@ -7524,7 +7524,7 @@ class _RenderCompactSpellsImplBase extends _RenderCompactImplBase {
 		const fromClassListVariant = Renderer.spell.getCombinedClasses(ent, "fromClassListVariant");
 		if (fromClassListVariant.length) {
 			const [current, legacy] = Parser.spVariantClassesToCurrentAndLegacy(fromClassListVariant);
-			stack.push(`<div><span class="ve-bold" title="&quot;Optional&quot; spells may be added to a campaign by the DM. &quot;Variant&quot; spells are generally available, but may be made available to a class by the DM.">Optional/Variant Classes: </span>${Parser.spMainClassesToFull(current)}</div>`);
+			stack.push(`<div><span class="ve-bold" title="&quot;Optional&quot; spells may be added to a campaign by the DM. &quot;Variant&quot; spells are generally available, but may be made available to a class by the DM.">選用／變體職業：</span>${Parser.spMainClassesToFull(current)}</div>`);
 		}
 
 		return stack.join("");
@@ -15331,23 +15331,23 @@ Renderer.generic = class {
 				switch (duration.type) {
 					case "special":
 						if (duration.concentration) return `{@status Concentration${ptSrcStatus}}`;
-						return `Special${ptCondition}`;
+						return `特殊${ptCondition}`;
 					case "instant":
-						return `Instantaneous${ptCondition}`;
+						return `即效${ptCondition}`;
 					case "timed":
-						return `${duration.concentration ? `{@status Concentration${ptSrcStatus}}, ` : ""}${duration.concentration ? "u" : duration.duration.upTo ? "U" : ""}${duration.concentration || duration.duration.upTo ? "p to " : ""}${duration.duration.amount} ${duration.duration.amount === 1 ? duration.duration.type : `${duration.duration.type}s`}${ptCondition}`;
+						{ const __ZH_DUR_UNIT = {turn: "回合", round: "輪", minute: "分鐘", hour: "小時", day: "天", week: "週", month: "個月", year: "年"}; return `${duration.concentration ? `{@status Concentration${ptSrcStatus}}，` : ""}${duration.concentration || duration.duration.upTo ? "至多 " : ""}${duration.duration.amount} ${__ZH_DUR_UNIT[duration.duration.type] || duration.duration.type}${ptCondition}`; }
 					case "permanent": {
-						if (!duration.ends) return `Permanent${ptCondition}`;
+						if (!duration.ends) return `永久${ptCondition}`;
 
 						const endsToJoin = duration.ends.map(m => Parser.spEndTypeToFull(m));
 						hasSubOr = hasSubOr || endsToJoin.length > 1;
-						return `Until ${endsToJoin.joinConjunct(", ", " or ")}${ptCondition}`;
+						return `直到${endsToJoin.joinConjunct("、", "或")}${ptCondition}`;
 					}
 				}
 			});
 
 		return {
-			entryDuration: `${outParts.joinConjunct(hasSubOr ? "; " : ", ", " or ")}${durations.length > 1 ? " (see below)" : ""}`,
+			entryDuration: `${outParts.joinConjunct(hasSubOr ? "；" : "、", "或")}${durations.length > 1 ? "（見下文）" : ""}`,
 		};
 	}
 
