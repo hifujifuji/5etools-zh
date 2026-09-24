@@ -301,3 +301,21 @@ for (const [p, s] of Object.entries(stats).sort((a, b) => b[1].total - a[1].tota
 	if (!s.full && !s.name) continue;
 	console.log(p.padEnd(20), String(s.total).padStart(6), String(s.full).padStart(6), String(s.name).padStart(6));
 }
+
+// ---- 6. Service worker（離線快取；工具裝在 tools/sw，只在建置時用） -------------------
+{
+	const swMods = path.join(ROOT, "tools", "sw", "node_modules");
+	if (fs.existsSync(swMods)) {
+		const link = path.join(DIST, "node_modules");
+		fs.rmSync(link, {recursive: true, force: true});
+		fs.symlinkSync(swMods, link, "dir");
+		try {
+			execFileSync(process.execPath, ["node/build-sw.mjs", "prod"], {cwd: DIST, stdio: ["ignore", "pipe", "inherit"]});
+			console.log("已產生 service worker（sw.js、sw-injector.js）");
+		} finally {
+			fs.rmSync(link, {force: true});
+		}
+	} else {
+		console.log("略過 service worker：尚未安裝 tools/sw 的相依套件（cd tools/sw && npm install）");
+	}
+}
