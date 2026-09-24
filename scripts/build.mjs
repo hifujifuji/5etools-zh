@@ -29,7 +29,7 @@ execFileSync("rsync", [
 
 // ---- 2. 載入翻譯 -----------------------------------------------------------
 // 全站統一用語（hazmole 與本站譯法不同者）
-const TERM_FIX = [[/睿知/g, "感知"], [/铎/g, "鐸"], [/\{@5etools feat\|feats\.html\}/g, "{@5etools 專長|feats.html}"]];
+const TERM_FIX = [[/睿知/g, "感知"], [/铎/g, "鐸"], [/混沌海imbo\(或譯靈薄獄、迷失域\)/g, "混沌海（Limbo，或譯靈薄獄、迷失域）"], [/暗影界|幽影界/g, "墮影冥界"], [/混沌界/g, "混沌海"], [/\{@5etools feat\|feats\.html\}/g, "{@5etools 專長|feats.html}"]];
 const readI18n = f => JSON.parse(TERM_FIX.reduce((s, [re, to]) => s.replace(re, to), fs.readFileSync(f, "utf8")));
 const loadDir = dir => {
 	const out = {};
