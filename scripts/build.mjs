@@ -105,7 +105,7 @@ const lookupName = (prop, name) => {
 	if (hit) return hit;
 	// 「Extra Attack (2)」「Indomitable (two uses)」：翻譯本體、保留括號
 	const m = /^(.+?) \((.+)\)$/.exec(name);
-	if (m && dict?.[m[1].toLowerCase()]) return `${dict[m[1].toLowerCase()]}（${SUFFIX_ZH[m[2].toLowerCase()] || m[2]}）`;
+	if (m && dict?.[m[1].toLowerCase()]) return `${dict[m[1].toLowerCase()].replace(/\s*[(（][^()（）]*[)）]$/, "")}（${SUFFIX_ZH[m[2].toLowerCase()] || m[2]}）`;
 	return null;
 };
 
@@ -168,7 +168,26 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 		const zh = m && (zhName[m[2].toLowerCase()] || zhName[`the ${m[2].toLowerCase()}`] || lookupName("class", m[2]));
 		if (zh) arr[i] = `{@i ${m[1]} 級${zh}特性}`;
 	});
-	for (const {json} of loaded) for (const f of [...json.subclassFeature || [], ...json.classFeature || []]) fix(f.entries);
+	const walk = v => { if (Array.isArray(v)) { fix(v); v.forEach(walk); } else if (v && typeof v === "object") Object.values(v).forEach(walk); };
+	for (const {json} of loaded) for (const f of [...json.subclassFeature || [], ...json.classFeature || []]) walk(f.entries);
+	// 完全比對的字串（2024 子職業標語、子職業標題、表格標題…；i18n/class-strings.json）
+	const cs = readI18n(path.join(I18N, "class-strings.json"));
+	const KEEP = new Set(["name", "source", "className", "classSource", "subclassShortName", "subclassSource", "shortName", "classFeature", "subclassFeature", "classFeatures", "subclassFeatures", "_copy"]);
+	const walk2 = (v, k) => {
+		if (typeof v === "string") return cs[v] ?? v;
+		if (Array.isArray(v)) { for (let i = 0; i < v.length; ++i) v[i] = walk2(v[i], k); return v; }
+		if (v && typeof v === "object") for (const [kk, x] of Object.entries(v)) if (!KEEP.has(kk) && !kk.startsWith("_") && kk !== "name_zh") v[kk] = walk2(x, kk);
+		return v;
+	};
+	for (const {json} of loaded) for (const p of ["class", "subclass", "classFeature", "subclassFeature"]) for (const e of json[p] || []) walk2(e);
+	// 職業表欄位標題裡的 {@filter Cantrips Known|…} 之類
+	const COL = {"cantrips known": "已知戲法", "cantrips": "戲法", "prepared spells": "已準備法術", "spells known": "已知法術", "invocations": "祈喚", "invocations known": "已知祈喚", "infusions known": "已知注能", "infused items": "注能物品"};
+	const col = l => typeof l !== "string" ? l : l.replace(/^\{@filter ([^|}]+)\|/, (m, t) => {
+		const lv = /^(\d)(?:st|nd|rd|th)$/.exec(t);
+		const z = lv ? `${lv[1]}環` : COL[t.toLowerCase()];
+		return z ? `{@filter ${z}|` : m;
+	});
+	for (const {json} of loaded) for (const c of [...json.class || [], ...json.subclass || []]) for (const g of c.classTableGroups || c.subclassTableGroups || []) if (g.colLabels) g.colLabels = g.colLabels.map(col);
 }
 
 // ---- 3a'. 種族／背景／專長中完全比對的句子（含 _copy、_versions；i18n/exact-strings.json） --------
@@ -290,7 +309,9 @@ for (const {json} of loaded) {
 }
 
 for (const {file, json} of loaded) {
-	walkStrings(json);
+	// 職業資訊頁（fluff）的表格格子常只有標籤（如 {@creature Owl}），也補中文名
+	if (json.classFluff || json.subclassFluff) walkStrings(json, true);
+	else walkStrings(json);
 	writeJson(file, json, {pretty: false});
 	nFiles++;
 }

@@ -1,0 +1,497 @@
+{
+	"batch": "cf-PHB",
+	"items": [
+		{
+			"prop": "classFeature",
+			"key": "Fighting Style|Fighter|PHB|1",
+			"hint": {
+				"Fighting Style": "戰鬥風格"
+			},
+			"s": [
+				"Fighting Style",
+				"You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Spellcasting|Wizard|PHB|1",
+			"hint": {
+				"Spellcasting": "施法",
+				"Cantrips": "戲法",
+				"Spellbook": "法術書",
+				"Preparing and Casting Spells": "準備與施展法術",
+				"Spellcasting Ability": "施法屬性",
+				"Spell": "法術",
+				"Ritual Casting": "儀式施法",
+				"Spellcasting Focus": "施法法器",
+				"Copying a Spell into the Book": "將法術抄入書中"
+			},
+			"s": [
+				"Spellcasting",
+				"As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter wizard spell list|spells|class=wizard}.",
+				"Cantrips",
+				"At 1st level, you know three cantrips of your choice from the wizard spell list. You learn additional wizard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Wizard table.",
+				"Spellbook",
+				"At 1st level, you have a spellbook containing six 1st-level {@filter wizard spells|spells|class=wizard} of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind.",
+				"Preparing and Casting Spells",
+				"The Wizard table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+				"You prepare the list of wizard spells that are available for you to cast. To do so, choose a number of wizard spells from your spellbook equal to your Intelligence modifier + your wizard level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+				"For example, if you're a 3rd-level wizard, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell {@spell magic missile}, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+				"You can change your list of prepared spells when you finish a long rest. Preparing a new list of wizard spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list.",
+				"Spellcasting Ability",
+				"Intelligence is your spellcasting ability for your wizard spells, since you learn your wizard spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
+				"Spell",
+				"Spell",
+				"Ritual Casting",
+				"You can cast a wizard spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared.",
+				"Spellcasting Focus",
+				"You can use an {@item arcane focus|phb} as a spellcasting focus for your wizard spells.",
+				"Learning Spells of 1st Level and Higher",
+				"Each time you gain a wizard level, you can add two wizard spells of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Wizard table. On your adventures, you might find other spells that you can add to your spellbook (see \"Your Spellbook\").",
+				"Your Spellbook",
+				"The spells that you add to your spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other spells during your adventures. You could discover a spell recorded on a scroll in an evil wizard's chest, for example, or in a dusty tome in an ancient library.",
+				"A spellbook doesn't contain cantrips.",
+				"Copying a Spell into the Book",
+				"When you find a wizard spell of 1st level or higher, you can add it to your spellbook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it.",
+				"Copying a spell into your spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the wizard who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your spellbook using your own notation.",
+				"For each level of the spell, the process takes 2 hours and costs 50 gp. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent this time and money, you can prepare the spell just like your other spells.",
+				"Copying from a Spell Scroll",
+				"A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When you copy a spell from a spell scroll, you must succeed on an Intelligence ({@skill Arcana}) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.",
+				"Replacing the Book",
+				"You can copy a spell from your own spellbook into another book—for example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied spell.",
+				"If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place.",
+				"The Book's Appearance",
+				"Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Channel Divinity: Turn Undead|Cleric|PHB|2",
+			"hint": {
+				"Channel Divinity": "引導神力"
+			},
+			"s": [
+				"Channel Divinity: Turn Undead",
+				"Channel Divinity",
+				"As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
+				"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge} action."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Eldritch Invocations|Warlock|PHB|2",
+			"hint": {
+				"Eldritch Invocations": "魔能祈喚"
+			},
+			"s": [
+				"Eldritch Invocations",
+				"In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.",
+				"At 2nd level, you gain two eldritch invocations of your choice. A list of the available options can be found on the {@filter Optional Features|optionalfeatures|Feature Type=EI} page. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.",
+				"Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.",
+				"If an eldritch invocation has prerequisites, you must meet them to learn it. You can learn the invocation at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Fighting Style|Paladin|PHB|2",
+			"hint": {
+				"Fighting Style": "戰鬥風格"
+			},
+			"s": [
+				"Fighting Style",
+				"At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Fighting Style|Ranger|PHB|2",
+			"hint": {
+				"Fighting Style": "戰鬥風格"
+			},
+			"s": [
+				"Fighting Style",
+				"At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Flexible Casting|Sorcerer|PHB|2",
+			"hint": {
+				"Flexible Casting": "易變施法",
+				"Creating Spell Slots": "創造法術欄位"
+			},
+			"s": [
+				"Flexible Casting",
+				"You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.",
+				"Creating Spell Slots",
+				"You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a long rest. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.",
+				"Creating Spell Slots",
+				"Spell Slot Level",
+				"Sorcery Point Cost",
+				"1st",
+				"2nd",
+				"3rd",
+				"4th",
+				"5th",
+				"Converting a Spell Slot to Sorcery Points",
+				"As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Flurry of Blows|Monk|PHB|2",
+			"hint": {
+				"Flurry of Blows": "疾風連擊",
+				"Ki": "氣"
+			},
+			"s": [
+				"Flurry of Blows",
+				"Ki",
+				"Immediately after you take the {@action Attack} action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ki|Monk|PHB|2",
+			"hint": {
+				"Ki": "氣"
+			},
+			"s": [
+				"Ki",
+				"Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.",
+				"You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.",
+				"When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.",
+				"Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:",
+				"Ki"
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Patient Defense|Monk|PHB|2",
+			"hint": {
+				"Patient Defense": "堅強防禦",
+				"Ki": "氣"
+			},
+			"s": [
+				"Patient Defense",
+				"Ki",
+				"You can spend 1 ki point to take the {@action Dodge} action as a bonus action on your turn."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Song of Rest (d6)|Bard|PHB|2",
+			"s": [
+				"Song of Rest (d6)",
+				"Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures regains an extra {@dice 1d6} hit points.",
+				"The extra hit points increase when you reach certain levels in this class: to {@dice 1d8} at 9th level, to {@dice 1d10} at 13th level, and to {@dice 1d12} at 17th level."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Sorcery Points|Sorcerer|PHB|2",
+			"hint": {
+				"Sorcery Points": "術法點"
+			},
+			"s": [
+				"Sorcery Points",
+				"You have 2 sorcery points, and you gain one additional point every time you level up, to a maximum of 20 at level 20. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Step of the Wind|Monk|PHB|2",
+			"hint": {
+				"Step of the Wind": "飛簷走壁",
+				"Ki": "氣"
+			},
+			"s": [
+				"Step of the Wind",
+				"Ki",
+				"You can spend 1 ki point to take the {@action Disengage} or {@action Dash} action as a bonus action on your turn, and your jump distance is doubled for the turn."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Channel Divinity|Paladin|PHB|3",
+			"hint": {
+				"Channel Divinity": "引導神力"
+			},
+			"s": [
+				"Channel Divinity",
+				"Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.",
+				"When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.",
+				"Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Pact Boon|Warlock|PHB|3",
+			"hint": {
+				"Pact Boon": "契約恩賜"
+			},
+			"s": [
+				"Pact Boon",
+				"At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Sacred Oath|Paladin|PHB|3",
+			"hint": {
+				"Sacred Oath": "神聖誓言",
+				"Oath Spells": "誓言法術",
+				"Breaking Your Oath": "違背誓言"
+			},
+			"s": [
+				"Sacred Oath",
+				"When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose from the list of available oaths.",
+				"Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.",
+				"Oath Spells",
+				"Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.",
+				"If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you.",
+				"Breaking Your Oath",
+				"A paladin tries to hold to the highest standards of conduct, but even the most virtuous paladin is fallible. Sometimes the right path proves too demanding, sometimes a situation calls for the lesser of two evils, and sometimes the heat of emotion causes a paladin to transgress his or her oath.",
+				"A paladin who has broken a vow typically seeks absolution from a cleric who shares his or her faith or from another paladin of the same order. The paladin might spend an all-night vigil in prayer as a sign of penitence, or undertake a fast or similar act of self-denial. After a rite of confession and forgiveness, the paladin starts fresh.",
+				"If a paladin willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the DM's discretion, an impenitent paladin might be forced to abandon this class and adopt another, or perhaps to take the Oathbreaker paladin option that appears in the Dungeon Master's Guide."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Bardic Inspiration (d8)|Bard|PHB|5",
+			"s": [
+				"Bardic Inspiration (d8)",
+				"At 5th level, your Bardic Inspiration die changes to a {@dice d8}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Destroy Undead (CR 1/2)|Cleric|PHB|5",
+			"s": [
+				"Destroy Undead (CR 1/2)",
+				"Starting at 5th level, when an {@filter undead of CR 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Bard College feature|Bard|PHB|6",
+			"s": [
+				"Bard College feature",
+				"At 6th level, you gain a feature from your Bard College."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Destroy Undead (CR 1)|Cleric|PHB|8",
+			"s": [
+				"Destroy Undead (CR 1)",
+				"Starting at 8th level, when an {@filter undead of CR 1 or lower|bestiary|challenge rating=[&0;&1]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Brutal Critical (1 die)|Barbarian|PHB|9",
+			"s": [
+				"Brutal Critical (1 die)",
+				"Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.",
+				"This increases to two additional dice at 13th level and three additional dice at 17th level."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Song of Rest (d8)|Bard|PHB|9",
+			"s": [
+				"Song of Rest (d8)",
+				"At 9th level, the extra hit points gained from Song of Rest increases to {@dice 1d8}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Bardic Inspiration (d10)|Bard|PHB|10",
+			"s": [
+				"Bardic Inspiration (d10)",
+				"At 10th level, your Bardic Inspiration die changes to a {@dice d10}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Path feature|Barbarian|PHB|10",
+			"hint": {
+				"Path feature": "道途能力"
+			},
+			"s": [
+				"Path feature",
+				"At 10th level, you gain a feature from your Primal Path."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Destroy Undead (CR 2)|Cleric|PHB|11",
+			"s": [
+				"Destroy Undead (CR 2)",
+				"Starting at 11th level, when an {@filter undead of CR 2 or lower|bestiary|challenge rating=[&0;&2]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Extra Attack (2)|Fighter|PHB|11",
+			"s": [
+				"Extra Attack (2)",
+				"At 11th level, you can attack three times whenever you take the {@action Attack} action on your turn."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Mystic Arcanum (6th level)|Warlock|PHB|11",
+			"s": [
+				"Mystic Arcanum (6th level)",
+				"At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 6th-level spell from the warlock spell list|spells|level=6|class=Warlock} as this arcanum.",
+				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
+				"At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Brutal Critical (2 dice)|Barbarian|PHB|13",
+			"s": [
+				"Brutal Critical (2 dice)",
+				"At 13th level, you can roll two additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.",
+				"This increases to three additional dice at 17th level."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Indomitable (two uses)|Fighter|PHB|13",
+			"s": [
+				"Indomitable (two uses)",
+				"At 13th level, you can use Indomitable twice between long rests."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Mystic Arcanum (7th level)|Warlock|PHB|13",
+			"s": [
+				"Mystic Arcanum (7th level)",
+				"At 13th level, your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 7th-level spell from the warlock spell list|spells|level=7|class=Warlock} as this arcanum.",
+				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Song of Rest (d10)|Bard|PHB|13",
+			"s": [
+				"Song of Rest (d10)",
+				"At 13th level, the extra hit points gained from Song of Rest increases to {@dice 1d10}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Bard College feature|Bard|PHB|14",
+			"s": [
+				"Bard College feature",
+				"At 14th level, you gain a feature from your Bard College."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Destroy Undead (CR 3)|Cleric|PHB|14",
+			"s": [
+				"Destroy Undead (CR 3)",
+				"Starting at 14th level, when an {@filter undead of CR 3 or lower|bestiary|challenge rating=[&0;&3]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Path feature|Barbarian|PHB|14",
+			"hint": {
+				"Path feature": "道途能力"
+			},
+			"s": [
+				"Path feature",
+				"At 14th level, you gain a feature from your Primal Path."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Bardic Inspiration (d12)|Bard|PHB|15",
+			"s": [
+				"Bardic Inspiration (d12)",
+				"At 15th level, your Bardic Inspiration die changes to a {@dice d12}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Mystic Arcanum (8th level)|Warlock|PHB|15",
+			"s": [
+				"Mystic Arcanum (8th level)",
+				"At 15th level, your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 8th-level spell from the warlock spell list|spells|level=8|class=Warlock} as this arcanum.",
+				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Action Surge (two uses)|Fighter|PHB|17",
+			"s": [
+				"Action Surge (two uses)",
+				"At 17th level, you can use Action Surge twice before a rest, but only once on the same turn."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Brutal Critical (3 dice)|Barbarian|PHB|17",
+			"s": [
+				"Brutal Critical (3 dice)",
+				"At 17th level, you can roll three additional weapon damage dice when determining the extra damage for a critical hit with a melee attack."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Destroy Undead (CR 4)|Cleric|PHB|17",
+			"s": [
+				"Destroy Undead (CR 4)",
+				"Starting at 17th level, when an {@filter undead of CR 4 or lower|bestiary|challenge rating=[&0;&4]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Indomitable (three uses)|Fighter|PHB|17",
+			"s": [
+				"Indomitable (three uses)",
+				"At 17th level, you can use Indomitable three times between long rests."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Mystic Arcanum (9th level)|Warlock|PHB|17",
+			"s": [
+				"Mystic Arcanum (9th level)",
+				"At 17th level, your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 9th-level spell from the warlock spell list|spells|level=9|class=Warlock} as this arcanum.",
+				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Song of Rest (d12)|Bard|PHB|17",
+			"s": [
+				"Song of Rest (d12)",
+				"At 17th level, the extra hit points gained from Song of Rest increases to {@dice 1d12}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Extra Attack (3)|Fighter|PHB|20",
+			"s": [
+				"Extra Attack (3)",
+				"At 20th level, you can attack four times whenever you take the {@action Attack} action on your turn."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Perfect Self|Monk|PHB|20",
+			"s": [
+				"Perfect Self",
+				"At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points."
+			]
+		}
+	]
+}

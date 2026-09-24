@@ -1,0 +1,349 @@
+{
+	"batch": "cf-TCE",
+	"items": [
+		{
+			"prop": "classFeature",
+			"key": "Deft Explorer|Ranger|PHB|1",
+			"hint": {
+				"Deft Explorer": "熟練探索者"
+			},
+			"s": [
+				"Deft Explorer",
+				"{@i 1st-level ranger {@variantrule optional class features|tce|optional feature}, which replaces the Natural Explorer feature}",
+				"You are an unsurpassed explorer and survivor, both in the wilderness and in dealing with others on your travels. You gain the Canny benefit below, and you gain an additional benefit below when you reach 6th level and 10th level in this class.",
+				"Canny",
+				"Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill.",
+				"You can also speak, read, and write two additional languages of your choice."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Favored Foe|Ranger|PHB|1",
+			"s": [
+				"Favored Foe",
+				"{@i 1st-level ranger {@variantrule optional class features|tce|optional feature}, which replaces the Favored Enemy feature and works with the Foe Slayer feature}",
+				"When you hit a creature with an attack roll, you can call on your mystical bond with nature to mark the target as your favored enemy for 1 minute or until you lose your {@status concentration} (as if you were {@status concentration||concentrating} on a spell).",
+				"The first time on each of your turns that you hit the favored enemy and deal damage to it, including when you mark it, you can increase that damage by {@damage 1d4}.",
+				"You can use this feature to mark a favored enemy a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+				"This feature's extra damage increases when you reach certain levels in this class: to {@damage 1d6} at 6th level and to {@damage 1d8} at 14th level."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Channel Divinity: Harness Divine Power|Cleric|PHB|2",
+			"hint": {
+				"Channel Divinity": "引導神力"
+			},
+			"s": [
+				"Channel Divinity: Harness Divine Power",
+				"Channel Divinity",
+				"{@i 2nd-level cleric {@variantrule optional class features|tce|optional feature}}",
+				"You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 2nd level, once; 6th level, twice; and 18th level, thrice. You regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Dedicated Weapon|Monk|PHB|2",
+			"s": [
+				"Dedicated Weapon",
+				"{@i 2nd-level monk {@variantrule optional class features|tce|optional feature}}",
+				"You train yourself to use a variety of weapons as monk weapons, not just simple melee weapons and shortswords. Whenever you finish a short or long rest, you can touch one weapon, focus your ki on it, and then count that weapon as a monk weapon until you use this feature again.",
+				"The chosen weapon must meet these criteria:",
+				"The weapon must be a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon|property=!heavy;!special}.",
+				"You must be proficient with it.",
+				"It must lack the heavy and special properties."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Magical Inspiration|Bard|PHB|2",
+			"s": [
+				"Magical Inspiration",
+				"{@i 2nd-level bard {@variantrule optional class features|tce|optional feature}}",
+				"If a creature has a Bardic Inspiration die from you and casts a spell that restores hit points or deals damage, the creature can roll that die and choose a target affected by the spell. Add the number rolled as a bonus to the hit points regained or the damage dealt. The Bardic Inspiration die is then lost."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Spellcasting Focus|Ranger|PHB|2",
+			"hint": {
+				"Spellcasting Focus": "施法法器"
+			},
+			"s": [
+				"Spellcasting Focus",
+				"{@i 2nd-level ranger {@variantrule optional class features|tce|optional feature}}",
+				"You can use a {@item druidic focus|phb} as a spellcasting focus for your ranger spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Wild Companion|Druid|PHB|2",
+			"hint": {
+				"Wild Companion": "荒野夥伴",
+				"Wild Shape": "荒野形態"
+			},
+			"s": [
+				"Wild Companion",
+				"Wild Shape",
+				"{@i 2nd-level druid {@variantrule optional class features|tce|optional feature}}",
+				"You gain the ability to summon a spirit that assumes an animal form: as an action, you can expend a use of your Wild Shape feature to cast the {@spell find familiar} spell, without material components.",
+				"When you cast the spell in this way, the familiar is a fey instead of a beast, and the familiar disappears after a number of hours equal to half your druid level."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Cantrip Formulas|Wizard|PHB|3",
+			"s": [
+				"Cantrip Formulas",
+				"{@i 3rd-level wizard {@variantrule optional class features|tce|optional feature}}",
+				"You have scribed a set of arcane formulas in your spellbook that you can use to formulate a cantrip in your mind. Whenever you finish a long rest and consult those formulas in your spellbook, you can replace one wizard cantrip you know with another cantrip from the wizard spell list."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Channel Divinity: Harness Divine Power|Paladin|PHB|3",
+			"hint": {
+				"Channel Divinity": "引導神力"
+			},
+			"s": [
+				"Channel Divinity: Harness Divine Power",
+				"Channel Divinity",
+				"{@i 3rd-level paladin {@variantrule optional class features|tce|optional feature}}",
+				"You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ki-Fueled Attack|Monk|PHB|3",
+			"s": [
+				"Ki-Fueled Attack",
+				"{@i 3rd-level monk {@variantrule optional class features|tce|optional feature}}",
+				"If you spend 1 ki point or more as part of your action on your turn, you can make one attack with an unarmed strike or a monk weapon as a bonus action before the end of the turn."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Metamagic Options|Sorcerer|PHB|3",
+			"hint": {
+				"Metamagic Options": "超魔法選項"
+			},
+			"s": [
+				"Metamagic Options",
+				"{@i 3rd-level sorcerer {@variantrule optional class features|tce|optional feature}}",
+				"When you choose Metamagic options, you have access to the following additional options."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Primal Awareness|Ranger|PHB|3",
+			"s": [
+				"Primal Awareness",
+				"{@i 3rd-level ranger {@variantrule optional class features|tce|optional feature}, which replaces the Primeval Awareness feature}",
+				"You can focus your awareness through the interconnections of nature: you learn additional spells when you reach certain levels in this class if you don't already know them, as shown in the Primal Awareness Spells table. These spells don't count against the number of ranger spells you know.",
+				"Primal Awareness Spells",
+				"Ranger Level",
+				"Spell",
+				"3rd",
+				"5th",
+				"9th",
+				"13th",
+				"17th",
+				"You can cast each of these spells once without expending a spell slot. Once you cast a spell in this way, you can't do so again until you finish a long rest."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Primal Knowledge|Barbarian|PHB|3",
+			"hint": {
+				"Primal Knowledge": "原初知識"
+			},
+			"s": [
+				"Primal Knowledge",
+				"{@i 3rd-level barbarian {@variantrule optional class features|tce|optional feature}}",
+				"When you reach 3rd level and again at 10th level, you gain proficiency in one skill of your choice from the list of skills available to barbarians at 1st level."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Steady Aim|Rogue|PHB|3",
+			"hint": {
+				"Steady Aim": "穩定瞄準"
+			},
+			"s": [
+				"Steady Aim",
+				"{@i 3rd-level rogue {@variantrule optional class features|tce|optional feature}}",
+				"As a bonus action, you give yourself advantage on your next attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Bardic Versatility|Bard|PHB|4",
+			"s": [
+				"Bardic Versatility",
+				"{@i 4th-level bard {@variantrule optional class features|tce|optional feature}}",
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing a change in focus as you use your skills and magic:",
+				"Replace one of the skills you chose for the Expertise feature with one of your other skill proficiencies that isn't benefiting from Expertise.",
+				"Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the {@filter bard spell list|spells|level=0|class=bard}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Cantrip Versatility|Cleric|PHB|4",
+			"s": [
+				"Cantrip Versatility",
+				"{@i 4th-level cleric {@variantrule optional class features|tce|optional feature}}",
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the {@filter cleric spell list|spells|level=0|class=Cleric}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Cantrip Versatility|Druid|PHB|4",
+			"s": [
+				"Cantrip Versatility",
+				"{@i 4th-level druid {@variantrule optional class features|tce|optional feature}}",
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the {@filter druid spell list|spells|level=0|class=Druid}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Eldritch Versatility|Warlock|PHB|4",
+			"s": [
+				"Eldritch Versatility",
+				"{@i 4th-level warlock {@variantrule optional class features|tce|optional feature}}",
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing a change of focus in your occult studies:",
+				"Replace one cantrip you learned from this class's Pact Magic feature with another cantrip from the {@filter warlock spell list|spells|level=0|class=Warlock}.",
+				"Replace the option you chose for the Pact Boon feature with one of that feature's other options.",
+				"If you're 12th level or higher, replace one spell from your Mystic Arcanum feature with another warlock spell of the same level.",
+				"If this change makes you ineligible for any of your Eldritch Invocations, you must also replace them now, choosing invocations for which you qualify."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Martial Versatility|Fighter|PHB|4",
+			"s": [
+				"Martial Versatility",
+				"{@i 4th-level fighter {@variantrule optional class features|tce|optional feature}}",
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, as you shift the focus of your martial practice:",
+				"Replace a {@filter fighting style|optionalfeatures|feature type=FS:F} you know with another fighting style available to fighters.",
+				"If you know any {@filter maneuvers|optionalfeatures|feature type=MV:B} from the {@class fighter|phb|Battle Master|Battle Master|phb|2-0} archetype, you can replace one maneuver you know with a different maneuver."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Martial Versatility|Paladin|PHB|4",
+			"s": [
+				"Martial Versatility",
+				"{@i 4th-level paladin {@variantrule optional class features|tce|optional feature}}",
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a {@filter fighting style|optionalfeatures|feature type=FS:P} you know with another fighting style available to paladins. This replacement represents a shift of focus in your martial practice."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Martial Versatility|Ranger|PHB|4",
+			"s": [
+				"Martial Versatility",
+				"{@i 4th-level ranger {@variantrule optional class features|tce|optional feature}}",
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Quickened Healing|Monk|PHB|4",
+			"hint": {
+				"Ki": "氣"
+			},
+			"s": [
+				"Quickened Healing",
+				"Ki",
+				"{@i 4th-level monk {@variantrule optional class features|tce|optional feature}}",
+				"As an action, you can spend 2 ki points and roll a Martial Arts die. You regain a number of hit points equal to the number rolled plus your proficiency bonus."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Sorcerous Versatility|Sorcerer|PHB|4",
+			"s": [
+				"Sorcerous Versatility",
+				"{@i 4th-level sorcerer {@variantrule optional class features|tce|optional feature}}",
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing the magic within you flowing in new ways:",
+				"Replace one of the options you chose for the Metamagic feature with a different {@filter Metamagic option|optionalfeatures|Feature Type=MM} available to you.",
+				"Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the {@filter sorcerer spell list|spells|level=0|class=Sorcerer}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Focused Aim|Monk|PHB|5",
+			"s": [
+				"Focused Aim",
+				"{@i 5th-level monk {@variantrule optional class features|tce|optional feature}}",
+				"When you miss with an attack roll, you can spend 1 to 3 ki points to increase your attack roll by 2 for each of these ki points you spend, potentially turning the miss into a hit."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Magical Guidance|Sorcerer|PHB|5",
+			"hint": {
+				"Magical Guidance": "魔法指引",
+				"Sorcery Point": "術法點"
+			},
+			"s": [
+				"Magical Guidance",
+				"Sorcery Point",
+				"{@i 5th-level sorcerer {@variantrule optional class features|tce|optional feature}}",
+				"You can tap into your inner wellspring of magic to try to conjure success from failure. When you make an ability check that fails, you can spend 1 sorcery point to reroll the {@dice d20}, and you must use the new roll, potentially turning the failure into a success."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Deft Explorer Improvement|Ranger|PHB|6",
+			"hint": {
+				"Roving": "漫遊"
+			},
+			"s": [
+				"Deft Explorer Improvement",
+				"You gain an additional benefit when you reach 6th level in this class.",
+				"Roving",
+				"Your walking speed increases by 5, and you gain a climbing speed and a swimming speed equal to your walking speed."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Instinctive Pounce|Barbarian|PHB|7",
+			"hint": {
+				"Instinctive Pounce": "本能撲擊"
+			},
+			"s": [
+				"Instinctive Pounce",
+				"{@i 7th-level barbarian {@variantrule optional class features|tce|optional feature}}",
+				"As part of the bonus action you take to enter your rage, you can move up to half your speed."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Deft Explorer Improvement|Ranger|PHB|10",
+			"hint": {
+				"Tireless": "不知疲倦"
+			},
+			"s": [
+				"Deft Explorer Improvement",
+				"You gain an additional benefit when you reach 10th level in this class.",
+				"Tireless",
+				"As an action, you can give yourself a number of temporary hit points equal to {@dice 1d8} + your Wisdom modifier (minimum of 1 temporary hit point). You can use this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+				"In addition, whenever you finish a short rest, your {@condition exhaustion} level, if any, is decreased by 1."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Nature's Veil|Ranger|PHB|10",
+			"hint": {
+				"Nature's Veil": "自然帷幕"
+			},
+			"s": [
+				"Nature's Veil",
+				"{@i 10th-level ranger {@variantrule optional class features|tce|optional feature}, which replaces the Hide in Plain Sight feature}",
+				"You draw on the powers of nature to hide yourself from view briefly. As a bonus action, you can magically become {@condition invisible}, along with any equipment you are wearing or carrying, until the start of your next turn.",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		}
+	]
+}
