@@ -8444,19 +8444,19 @@ Renderer.race = class {
 	}
 
 	static getHeightAndWeightEntries (race, {isStatic = false} = {}) {
-		const colLabels = ["Base Height", "Base Weight", "Height Modifier", "Weight Modifier"];
+		const colLabels = ["基礎身高", "基礎體重", "身高調整值", "體重調整值"];
 		const colStyles = ["col-2-3 text-center", "col-2-3 text-center", "col-2-3 text-center", "col-2 text-center"];
 
 		const cellHeightMod = !isStatic
 			? `+<span data-race-heightmod="true">${race.heightAndWeight.heightMod}</span>`
 			: `+${race.heightAndWeight.heightMod}`;
 		const cellWeightMod = !isStatic
-			? `× <span data-race-weightmod="true">${race.heightAndWeight.weightMod || "1"}</span> lb.`
-			: `× ${race.heightAndWeight.weightMod || "1"} lb.`;
+			? `× <span data-race-weightmod="true">${race.heightAndWeight.weightMod || "1"}</span> 磅`
+			: `× ${race.heightAndWeight.weightMod || "1"} 磅`;
 
 		const row = [
 			Renderer.race.getRenderedHeight(race.heightAndWeight.baseHeight),
-			`${race.heightAndWeight.baseWeight} lb.`,
+			`${race.heightAndWeight.baseWeight} 磅`,
 			cellHeightMod,
 			cellWeightMod,
 		];
@@ -8470,17 +8470,17 @@ Renderer.race = class {
 					<div class="race__disp-result-height"></div>
 					<div class="ve-mr-2">; </div>
 					<div class="race__disp-result-weight ve-mr-1"></div>
-					<div class="small">lb.</div>
+					<div class="small">磅</div>
 				</div>
-				<button class="ve-btn ve-btn-default ve-btn-xs ve-my-1 race__btn-roll-height-weight">Roll</button>
+				<button class="ve-btn ve-btn-default ve-btn-xs ve-my-1 race__btn-roll-height-weight">擲骰</button>
 			</div>`);
 		}
 
 		return [
-			"You may roll for your character's height and weight on the Random Height and Weight table. The roll in the Height Modifier column adds a number (in inches) to the character's base height. To get a weight, multiply the number you rolled for height by the roll in the Weight Modifier column and add the result (in pounds) to the base weight.",
+			"你可以在「隨機身高與體重」表上擲骰決定角色的身高與體重。「身高調整值」欄的擲骰結果（以吋計）加到角色的基礎身高上。要決定體重，將你為身高擲出的數字乘以「體重調整值」欄的擲骰結果，再將結果（以磅計）加到基礎體重上。",
 			{
 				type: "table",
-				caption: "Random Height and Weight",
+				caption: "隨機身高與體重",
 				colLabels,
 				colStyles,
 				rows: [row],
@@ -8552,7 +8552,7 @@ Renderer.race = class {
 				race.entries.push({
 					type: "entries",
 					name: "Languages",
-					entries: ["You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."],
+					entries: ["你能說、讀、寫通用語，以及一種你與 DM 同意適合你角色的其他語言。"],
 				});
 
 				race.languageProficiencies = race.languageProficiencies || [{"common": true, "anyStandard": 1}];
