@@ -29,15 +29,15 @@ const load = () => ents ||= fs.readdirSync(path.join(DIST, "class")).filter(f =>
 	return ["class", "subclass", "classFeature", "subclassFeature"].flatMap(p => (j[p] || []).map(e => [p, e]));
 });
 import {UPSTREAM} from "../scripts/util.mjs";
-const loadFrom = dir => fs.readdirSync(path.join(dir, "class")).filter(f => f.startsWith("class-")).flatMap(f => {
+const loadFrom = dir => fs.readdirSync(path.join(dir, "class")).filter(f => /^(fluff-)?class-/.test(f)).flatMap(f => {
 	const j = JSON.parse(fs.readFileSync(path.join(dir, "class", f)));
-	return ["class", "subclass", "classFeature", "subclassFeature"].flatMap(p => (j[p] || []).map(e => [p, e]));
+	return ["class", "subclass", "classFeature", "subclassFeature", "classFluff", "subclassFluff"].flatMap(p => (j[p] || []).map(e => [p, e]));
 });
 let up = null;
 export default batch => {
 	const items = JSON.parse(fs.readFileSync(`work/${batch}.en.json`)).items;
 	up ||= loadFrom(path.join(UPSTREAM, "data"));
-	const dist = load();
+	const dist = loadFrom(DIST);
 	return items.map(it => {
 		const ups = up.filter(([p, e]) => p === it.prop && key(p, e) === it.key);
 		const ds = dist.filter(([p, e]) => p === it.prop && key(p, e) === it.key);

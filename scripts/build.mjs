@@ -147,7 +147,10 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 // ---- 3a. 職業起始裝備／熟練字串（i18n/class-equipment.json，完全比對） ----------------
 {
 	const eq = readJson(path.join(I18N, "class-equipment.json"));
-	const tr1 = arr => Array.isArray(arr) && arr.forEach((s, i) => { if (typeof s === "string" && eq[s]) arr[i] = eq[s]; });
+	const tr1 = arr => Array.isArray(arr) && arr.forEach((s, i) => {
+		if (typeof s === "string" && eq[s]) arr[i] = eq[s];
+		else if (s && typeof s.full === "string" && eq[s.full]) s.full = eq[s.full]; // {proficiency, full} 形式
+	});
 	for (const {json} of loaded) {
 		for (const cls of json.class || []) {
 			tr1(cls.startingEquipment?.default);

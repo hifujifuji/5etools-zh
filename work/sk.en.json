@@ -1,0 +1,544 @@
+{
+	"batch": "sk",
+	"items": [
+		{
+			"prop": "classFeature",
+			"key": "Bonus Proficiencies|Expert Sidekick|TCE|1",
+			"hint": {
+				"Bonus Proficiencies": "額外熟練"
+			},
+			"s": [
+				"Bonus Proficiencies",
+				"The sidekick gains proficiency in one saving throw of your choice: Dexterity, Intelligence, or Charisma.",
+				"In addition, the sidekick gains proficiency in five skills of your choice, and it gains proficiency with light armor. If it is a humanoid or has a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} in its stat block, it also gains proficiency with all simple weapons and with two tools of your choice."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Bonus Proficiencies|Spellcaster Sidekick|TCE|1",
+			"hint": {
+				"Bonus Proficiencies": "額外熟練"
+			},
+			"s": [
+				"Bonus Proficiencies",
+				"The sidekick gains proficiency in one saving throw of your choice: Wisdom, Intelligence, or Charisma.",
+				"In addition, the sidekick gains proficiency in two skills of your choice from the following list: {@skill Arcana}, {@skill History}, {@skill Insight}, {@skill Investigation}, {@skill Medicine}, {@skill Performance}, {@skill Persuasion}, and {@skill Religion}.",
+				"The sidekick gains proficiency with light armor, and if it is a humanoid or has a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} in its stat block, it also gains proficiency with all simple weapons."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Bonus Proficiencies|Warrior Sidekick|TCE|1",
+			"hint": {
+				"Bonus Proficiencies": "額外熟練"
+			},
+			"s": [
+				"Bonus Proficiencies",
+				"The sidekick gains proficiency in one saving throw of your choice: Strength, Dexterity, or Constitution.",
+				"In addition, the sidekick gains proficiency in two skills of your choice from the following list: {@skill Acrobatics}, {@skill Animal Handling}, {@skill Athletics}, {@skill Intimidation}, {@skill Nature}, {@skill Perception}, and {@skill Survival}.",
+				"The sidekick gains proficiency with all armor, and if it is a humanoid or has a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} in its stat block, it gains proficiency with shields and all simple and martial weapons."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Helpful|Expert Sidekick|TCE|1",
+			"s": [
+				"Helpful",
+				"The sidekick is adept at giving well-timed assistance; the sidekick can take the {@action Help} action as a bonus action."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Martial Role|Warrior Sidekick|TCE|1",
+			"hint": {
+				"Defender": "防禦者"
+			},
+			"s": [
+				"Martial Role",
+				"Each warrior focuses on offense or defense in their training. Choose one of the following options:",
+				"Attacker",
+				"The sidekick gains a +2 bonus to all attack rolls.",
+				"Defender",
+				"The sidekick can use its reaction to impose disadvantage on the attack roll of a creature within 5 feet of it whose target isn't the sidekick, provided the sidekick can see the attacker."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Sidekick Class|Expert Sidekick|TCE|1",
+			"s": [
+				"Sidekick Class",
+				"To gain the Expert class, a creature must have at least one language in its stat block that it can speak.",
+				"{@note Note: this class is intended for NPC {@variantrule sidekicks|tce}.}"
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Sidekick Class|Spellcaster Sidekick|TCE|1",
+			"s": [
+				"Sidekick Class",
+				"To gain the Spellcaster class, a creature must have at least one language in its stat block that it can speak.",
+				"{@note Note: this class is intended for NPC {@variantrule sidekicks|tce}.}"
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Sidekick Class|Warrior Sidekick|TCE|1",
+			"s": [
+				"Sidekick Class",
+				"{@note Note: this class is intended for NPC {@variantrule sidekicks|tce}.}"
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Spellcasting|Spellcaster Sidekick|TCE|1",
+			"hint": {
+				"Spellcasting": "施法",
+				"Spell Slots": "法術欄位",
+				"Spellcasting Ability": "施法屬性",
+				"Spell": "法術",
+				"Spellcasting Focus": "施法法器"
+			},
+			"s": [
+				"Spellcasting",
+				"The sidekick gains the ability to cast spells. (If the creature already has the Spellcasting trait, this feature replaces that trait.) Choose the Spellcaster's role: Mage, Healer, or Prodigy. This choice determines the spell list and spellcasting ability used by the sidekick, as shown on the Spellcasting table.",
+				"Spellcasting",
+				"Role",
+				"Spell List",
+				"Ability",
+				"Mage",
+				"Intelligence",
+				"Healer",
+				"Wisdom",
+				"Prodigy",
+				"Charisma",
+				"Spell Slots",
+				"The Spellcaster table shows how many spell slots the sidekick has to cast its Spellcaster spells of 1st level and higher. To cast one of these spells, the sidekick must expend a slot of the spell's level or higher. The sidekick regains all expended spell slots when it finishes a long rest.",
+				"Spells Known",
+				"The sidekick knows two cantrips and one 1st-level spell of your choice from its spell list. Here are recommendations for a 1st-level spellcaster of each role:",
+				"Mage:",
+				"{@spell mage hand}, {@spell ray of frost}, {@spell thunderwave}",
+				"Healer:",
+				"{@spell cure wounds}, {@spell guidance}, {@spell sacred flame}",
+				"Prodigy:",
+				"{@spell eldritch blast}, {@spell healing word}, {@spell light}",
+				"The Cantrips Known and Spells Known columns of the Spellcaster table shows when the sidekick learns more spells of your choice. Each of the spells in the Spells Known column must be of a level for which the sidekick has spell slots, as shown on the table. For instance, when the sidekick reaches 5th level in this class, it can learn one new spell of 1st or 2nd level.",
+				"Additionally, when the sidekick gains a level in this class, you can choose one of the spells it knows from this class and replace it with another spell from its spell list. The new spell must be a cantrip or of a level for which the sidekick has spell slots.",
+				"Spellcasting Ability",
+				"The sidekick's spellcasting ability for these spells depends on the choice you made on the Spellcasting table.",
+				"The sidekick uses its spellcasting ability whenever a spell refers to that ability. In addition, it uses its spellcasting ability modifier when setting the saving throw DC for a spell it casts and when making an attack roll with one.",
+				"Spell",
+				"Spell",
+				"Spellcasting Focus",
+				"The sidekick can use a focus for its spells depending on the choice you made on the Spellcasting table. A Mage can use an arcane focus, a Healer can use a holy symbol, and a Prodigy can use an arcane focus or a {@item musical instrument|PHB}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Cunning Action|Expert Sidekick|TCE|2",
+			"hint": {
+				"Cunning Action": "巧妙動作"
+			},
+			"s": [
+				"Cunning Action",
+				"The sidekick's agility or quick thinking allows it to act speedily. On its turn in combat, it can take the {@action Dash}, {@action Disengage}, or {@action Hide} action as a bonus action."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Second Wind|Warrior Sidekick|TCE|2",
+			"hint": {
+				"Second Wind": "回氣"
+			},
+			"s": [
+				"Second Wind",
+				"The sidekick can use a bonus action on its turn to regain hit points equal to {@dice 1d10} + its level in this class. Once it uses this feature, it must finish a short or long rest before it can use it again.",
+				"The sidekick can use this feature twice between rests starting at 20th level."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Expertise|Expert Sidekick|TCE|3",
+			"hint": {
+				"Expertise": "專精"
+			},
+			"s": [
+				"Expertise",
+				"Choose two of the sidekick's skill proficiencies. The sidekick's proficiency bonus is doubled for any ability check it makes that uses any of the chosen proficiencies.",
+				"At 15th level, choose two more of the sidekick's skill proficiencies to gain this benefit."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Improved Critical|Warrior Sidekick|TCE|3",
+			"hint": {
+				"Improved Critical": "強化重擊"
+			},
+			"s": [
+				"Improved Critical",
+				"The sidekick's attack rolls score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Expert Sidekick|TCE|4",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 10th, 12th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Spellcaster Sidekick|TCE|4",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 12th, 16th, and 18th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Warrior Sidekick|TCE|4",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 12th, 14th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Coordinated Strike|Expert Sidekick|TCE|6",
+			"s": [
+				"Coordinated Strike",
+				"The sidekick is adept at fighting in concert with a companion. When the sidekick uses its Helpful feature to aid an ally in attacking a creature, that target can be up to 30 feet away from the sidekick, and the sidekick can deal an extra {@damage 2d6} damage to it the next time the sidekick hits it with an attack roll before the end of the current turn. The extra damage is the same type of damage dealt by the attack."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Extra Attack|Warrior Sidekick|TCE|6",
+			"hint": {
+				"Extra Attack": "額外攻擊"
+			},
+			"s": [
+				"Extra Attack",
+				"The sidekick can attack twice, instead of once, whenever it takes the {@action Attack} action on its turn.",
+				"The number of attacks increases to three when the sidekick reaches 15th level.",
+				"If the sidekick has the Multiattack action, it can use Extra Attack or Multiattack on a turn, not both."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Potent Cantrips|Spellcaster Sidekick|TCE|6",
+			"s": [
+				"Potent Cantrips",
+				"The sidekick can add its spellcasting ability modifier to the damage it deals with any cantrip."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Battle Readiness|Warrior Sidekick|TCE|7",
+			"s": [
+				"Battle Readiness",
+				"The sidekick has advantage on initiative rolls."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Evasion|Expert Sidekick|TCE|7",
+			"hint": {
+				"Evasion": "反射閃避"
+			},
+			"s": [
+				"Evasion",
+				"Because of extraordinary good luck, the sidekick is skilled at avoiding danger. When the sidekick is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it failed. The sidekick doesn't benefit from this feature while {@condition incapacitated}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Expert Sidekick|TCE|8",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 10th, 12th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Spellcaster Sidekick|TCE|8",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 12th, 16th, and 18th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Warrior Sidekick|TCE|8",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 12th, 14th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Expert Sidekick|TCE|10",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 10th, 12th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Improved Defense|Warrior Sidekick|TCE|10",
+			"s": [
+				"Improved Defense",
+				"The sidekick's Armor Class increases by 1."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Indomitable|Warrior Sidekick|TCE|11",
+			"hint": {
+				"Indomitable": "不屈"
+			},
+			"s": [
+				"Indomitable",
+				"The sidekick can reroll a saving throw that it fails, but it must use the new roll. When it uses this feature, it can't use the feature again until it finishes a long rest.",
+				"The sidekick can use this feature twice between long rests starting at 18th level."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Inspiring Help|Expert Sidekick|TCE|11",
+			"s": [
+				"Inspiring Help",
+				"When the sidekick takes the {@action Help} action, the creature who receives the help also gains a {@dice 1d6} bonus to the {@dice d20} roll. If that roll is an attack roll, the creature can forgo adding the bonus to it, and then if the attack hits, the creature can add the bonus to the attack's damage roll against one target.",
+				"At 20th level, the bonus increases to {@dice 2d6}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Expert Sidekick|TCE|12",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 10th, 12th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Spellcaster Sidekick|TCE|12",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 12th, 16th, and 18th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Warrior Sidekick|TCE|12",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 12th, 14th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Warrior Sidekick|TCE|14",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 12th, 14th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Empowered Spells|Spellcaster Sidekick|TCE|14",
+			"s": [
+				"Empowered Spells",
+				"Choose one school of magic. Whenever the sidekick casts a spell of that school by expending a spell slot, the sidekick can add its spellcasting ability modifier to the spell's damage roll or healing roll, if any."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Reliable Talent|Expert Sidekick|TCE|14",
+			"hint": {
+				"Reliable Talent": "可靠才能"
+			},
+			"s": [
+				"Reliable Talent",
+				"The sidekick has refined its skills to an exceptional degree. Whenever the sidekick makes an ability check that includes its whole proficiency bonus, it can treat a {@dice d20} roll of 9 or lower as a 10."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Expertise|Expert Sidekick|TCE|15",
+			"hint": {
+				"Expertise": "專精"
+			},
+			"s": [
+				"Expertise",
+				"Choose two of the sidekick's skill proficiencies. The sidekick's proficiency bonus is doubled for any ability check it makes that uses any of the chosen proficiencies."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Extra Attack Improvement|Warrior Sidekick|TCE|15",
+			"s": [
+				"Extra Attack Improvement",
+				"The sidekick can attack twice, instead of once, whenever it takes the {@action Attack} action on its turn.",
+				"The number of attacks increases to three when the sidekick reaches 15th level.",
+				"If the sidekick has the Multiattack action, it can use Extra Attack or Multiattack on a turn, not both."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Expert Sidekick|TCE|16",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 10th, 12th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Spellcaster Sidekick|TCE|16",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 12th, 16th, and 18th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Warrior Sidekick|TCE|16",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 12th, 14th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Spellcaster Sidekick|TCE|18",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 12th, 16th, and 18th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Indomitable Improvement|Warrior Sidekick|TCE|18",
+			"s": [
+				"Indomitable Improvement",
+				"The sidekick can reroll a saving throw that it fails, but it must use the new roll. When it uses this feature, it can't use the feature again until it finishes a long rest.",
+				"The sidekick can use this feature twice between long rests starting at 18th level."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Sharp Mind|Expert Sidekick|TCE|18",
+			"s": [
+				"Sharp Mind",
+				"The sidekick gains proficiency in one of the following saving throws of your choice: Intelligence, Wisdom, or Charisma."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Expert Sidekick|TCE|19",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 10th, 12th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Ability Score Improvement|Warrior Sidekick|TCE|19",
+			"hint": {
+				"Ability Score Improvement": "屬性值提升"
+			},
+			"s": [
+				"Ability Score Improvement",
+				"At 4th level and again at 8th, 12th, 14th, 16th, and 19th level, the sidekick increases one ability score of your choice by 2, or the sidekick increases two ability scores of your choice by 1. The sidekick can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, the sidekick may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Focused Casting|Spellcaster Sidekick|TCE|20",
+			"s": [
+				"Focused Casting",
+				"Taking damage can't break the sidekick's {@status concentration} on a spell."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Inspiring Help Improvement|Expert Sidekick|TCE|20",
+			"s": [
+				"Inspiring Help Improvement",
+				"At 20th level, the bonus dice granted by the sidekick's Inspiring Help increases to {@dice 2d6}."
+			]
+		},
+		{
+			"prop": "classFeature",
+			"key": "Second Wind Improvement|Warrior Sidekick|TCE|20",
+			"s": [
+				"Second Wind Improvement",
+				"The sidekick can use their Second Wind feature twice between rests."
+			]
+		}
+	]
+}
