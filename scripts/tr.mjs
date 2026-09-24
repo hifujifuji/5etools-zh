@@ -172,8 +172,12 @@ if (cmd === "export") {
 		const tr = Array.isArray(zh) ? zh[ixItem] : zh[it.key];
 		if (!tr) { problems.push(`缺少：${it.key}`); continue; }
 		if (tr.length !== it.s.length) { problems.push(`${it.key}：字串數量 ${tr.length} ≠ ${it.s.length}`); continue; }
-		const ent = loadEntities(it.prop).find(e => keyOf(it.prop, e) === it.key);
-		if (!ent) { problems.push(`上游找不到：${it.key}`); continue; }
+		// 同 key 可能有多筆（例如不同 classSource 的子職業特性），挑字串相符的那筆
+		const cands = loadEntities(it.prop).filter(e => keyOf(it.prop, e) === it.key);
+		if (!cands.length) { problems.push(`上游找不到：${it.key}`); continue; }
+		const ent = cands.find(e => JSON.stringify(collect(e).map(x => x.text)) === JSON.stringify(it.s)) || cands[0];
+		// 同 key 已有較完整的翻譯時，不讓精簡版覆蓋
+		if ((byProp[it.prop]?.[it.key]?.__n || 0) > it.s.length) continue;
 		const strs = collect(ent);
 		const cpy = structuredClone(ent);
 		let bad = false;
@@ -188,6 +192,7 @@ if (cmd === "export") {
 			} else setAt(cpy, x.path, z);
 		});
 		if (bad) { problems.push(`${it.key}：上游資料已變動，請重新匯出`); continue; }
+		Object.defineProperty(cpy, "__n", {value: it.s.length, enumerable: false});
 		(byProp[it.prop] ||= {})[it.key] = cpy;
 	}
 	for (const [prop, map] of Object.entries(byProp)) {

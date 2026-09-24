@@ -1,4 +1,65 @@
 {
+	"Aberrant Mind|Sorcerer|Aberrant Mind|TCE": {
+		"name": "異怪心靈",
+		"source": "TCE",
+		"page": 66,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Aberrant Mind",
+		"subclassSource": "TCE",
+		"level": 1,
+		"entries": [
+			"一股異界的影響力將其觸手纏繞在你的心智上，賦予你靈能之力。你現在能以這股力量觸及其他心智，並運用它控制多元宇宙的魔法能量來改變你周遭的世界。這股力量會從你身上散發出來，成為他人充滿希望的燈塔嗎？還是你會成為那些感受到你心靈刺擊、目睹你力量奇異顯現之人的恐懼根源？",
+			"身為異怪心靈術士，你決定自己如何獲得這些力量。你是與生俱來的嗎？還是日後的某個事件讓你閃耀著靈能的覺知？參考「異怪身世」表，了解你力量可能的起源。",
+			{
+				"type": "table",
+				"caption": "異怪身世",
+				"colLabels": [
+					"d6",
+					"身世"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"你曾暴露於遙遠國度的扭曲影響之下。你深信自己身上正長出一條觸手，但其他人都看不見它。"
+					],
+					[
+						"2",
+						"一陣來自星界位面的心靈之風將靈能帶到你身上。當你使用你的力量時，微弱的光點會在你周圍閃爍。"
+					],
+					[
+						"3",
+						"你曾遭受一隻奧布莉斯的支配之力，在你的心智中留下一片心靈碎片。"
+					],
+					[
+						"4",
+						"你曾被植入一隻奪心魔蝌蚪，但奪心魔化從未完成。如今它的靈能之力歸你所有。當你使用它時，你的肌膚會閃耀著奇異的黏液。"
+					],
+					[
+						"5",
+						"小時候，你有一個看起來像弗倫普或某種奇怪鴨嘴獸般生物的想像朋友。有一天，它賜予你靈能之力，而這些力量最後證明並非只是想像。"
+					],
+					[
+						"6",
+						"你的噩夢向你低語著真相：你的靈能之力並不屬於你。你是從你寄生的雙胞胎身上汲取它們的！"
+					]
+				]
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Psionic Spells|Sorcerer||Aberrant Mind|TCE|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Telepathic Speech|Sorcerer||Aberrant Mind|TCE|1"
+			}
+		],
+		"ENG_name": "Aberrant Mind"
+	},
 	"Aberrant Sorcery|Sorcerer|Aberrant Sorcery|XPHB": {
 		"name": "異怪術法",
 		"source": "XPHB",
@@ -39,6 +100,26 @@
 		],
 		"ENG_name": "Abjuration Savant"
 	},
+	"Abjure the Extraplanar|Paladin|Oath of the Watchers|TCE": {
+		"name": "驅逐異界者",
+		"source": "TCE",
+		"page": 54,
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Watchers",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 2,
+		"consumes": {
+			"name": "引導神力",
+			"ENG_name": "Channel Divinity"
+		},
+		"entries": [
+			"你可以使用你的引導神力懲戒非此世的存在。作為一個動作，你展示你的聖徽，你 30 呎內每個能聽見你的異怪、天界生物、元素、精類或邪魔都必須進行一次感知豁免檢定。豁免失敗時，該生物被驅退 1 分鐘，或直到它受到傷害為止。",
+			"被驅退的生物必須在其回合中盡可能遠離你，且不能自願在你 30 呎內的空間結束其移動。它的動作只能使用{@action Dash}動作，或嘗試逃脫阻止它移動的效果。若無處可移動，該生物可以採取{@action Dodge}動作。"
+		],
+		"ENG_name": "Abjure the Extraplanar"
+	},
 	"Abjurer|Wizard|Abjurer|XPHB": {
 		"name": "防護師",
 		"source": "XPHB",
@@ -78,6 +159,22 @@
 			"你再獲得一個由你選擇的{@filter 戰鬥風格專長|feats|category=FS}。"
 		],
 		"ENG_name": "Additional Fighting Style"
+	},
+	"Additional Rune Known|Fighter|Rune Knight|TCE": {
+		"name": "額外習得符文",
+		"source": "TCE",
+		"page": 44,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Rune Knight",
+		"subclassSource": "TCE",
+		"level": 7,
+		"header": 2,
+		"entries": [
+			"{@i 7th-level Rune Knight feature}",
+			"你習得一個額外的符文。"
+		],
+		"ENG_name": "Additional Rune Known"
 	},
 	"Adventurer's Atlas|Artificer|Cartographer|EFA": {
 		"name": "冒險者地圖集",
@@ -339,6 +436,25 @@
 		],
 		"ENG_name": "Animal Speaker"
 	},
+	"Animating Performance|Bard|College of Creation|TCE": {
+		"name": "活化表演",
+		"source": "TCE",
+		"page": 27,
+		"className": "Bard",
+		"classSource": "PHB",
+		"subclassShortName": "Creation",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level College of Creation feature}",
+			"作為一個動作，你可以活化你 30 呎內一件未被穿戴或攜帶的大型或更小的非魔法物品。被活化的物品使用{@creature Dancing Item|TCE}數據區塊，其中使用你的熟練加值（PB）。該物品對你與你的同伴友善，並服從你的命令。它存活 1 小時，或直到其生命值降至 0，或直到你死亡為止。",
+			"戰鬥中，物品與你共用先攻值，但它緊接在你的回合之後行動。它可以自行移動並使用反應，但除非你在你的回合中執行一個附贈動作命令它執行其他動作，否則它在其回合中唯一會執行的動作是{@action Dodge}。該動作可以是其數據區塊中的動作，也可以是其他動作。若你處於{@condition incapacitated}狀態，物品可以執行任何它自選的動作，而不限於{@action Dodge}。",
+			"當你使用吟遊激勵特性時，你可以在使用吟遊激勵的同一個附贈動作中命令該物品。",
+			"以此特性活化物品後，除非你消耗一個 3 環或更高環的法術欄位再次使用此特性，否則直到你完成長休前都無法再次這麼做。你同時只能擁有一件以此特性活化的物品；若你使用此動作時已有一件來自此特性的{@creature dancing item|TCE}，前一件會立即變回無生命的物品。"
+		],
+		"ENG_name": "Animating Performance"
+	},
 	"Aquatic Affinity|Druid|Circle of the Sea|XPHB": {
 		"name": "水域親和",
 		"source": "XPHB",
@@ -579,6 +695,21 @@
 			"一旦你創造了守護，直到你完成一次{@variantrule Long Rest|XPHB}前都無法再次創造它。"
 		],
 		"ENG_name": "Arcane Ward"
+	},
+	"Archer|Druid|Circle of Stars|TCE": {
+		"name": "弓箭手",
+		"source": "TCE",
+		"page": 38,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Stars",
+		"subclassSource": "TCE",
+		"level": 2,
+		"header": 2,
+		"entries": [
+			"一名弓箭手的星座出現在你身上。當你啟動此形態時，以及在其持續期間你後續回合中作為一個附贈動作，你可以進行一次遠程法術攻擊，擲出一支發光的箭矢，目標為你 60 呎內的一個生物。命中時，此攻擊造成等同於 {@damage 1d8} + 你感知調整值的光耀傷害。"
+		],
+		"ENG_name": "Archer"
 	},
 	"Archer|Druid|Circle of the Stars|XPHB": {
 		"name": "弓箭手",
@@ -938,6 +1069,37 @@
 		],
 		"ENG_name": "Armorer"
 	},
+	"Arms of the Astral Self|Monk|Way of the Astral Self|TCE": {
+		"name": "星界自我之臂",
+		"source": "TCE",
+		"page": 50,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Astral Self",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"consumes": {
+			"name": "氣",
+			"ENG_name": "Ki"
+		},
+		"entries": [
+			"{@i 3rd-level Way of the Astral Self feature}",
+			"你對氣的精通讓你能召喚星界自我的一部分。作為一個附贈動作，你可以花費 1 氣點召喚你星界自我的手臂。當你這樣做時，你 10 呎內你能看見、由你選擇的每個生物都必須成功通過一次敏捷豁免檢定，否則受到等同於擲兩次你武藝骰的力場傷害。",
+			"在 10 分鐘內，這雙幽魂手臂會懸浮在你的肩膀附近或環繞你的手臂（由你選擇）。手臂的外觀由你決定，若你陷入{@condition incapacitated}或死亡，它們會提早消失。",
+			"幽魂手臂存在期間，你獲得下列好處：",
+			{
+				"type": "list",
+				"items": [
+					"進行力量檢定與力量豁免檢定時，你可以用感知調整值取代力量調整值。",
+					"你可以使用幽魂手臂進行徒手打擊。",
+					"當你在你的回合中以這雙手臂進行徒手打擊時，該次攻擊的觸及比平常多 5 呎。",
+					"你以這雙手臂進行的徒手打擊，其攻擊擲骰與傷害擲骰可以用感知調整值取代力量或敏捷調整值，且其傷害類型為力場。"
+				]
+			}
+		],
+		"ENG_name": "Arms of the Astral Self"
+	},
 	"Artillerist Spells|Artificer|Artillerist|EFA": {
 		"name": "魔炮師法術",
 		"source": "EFA",
@@ -1213,6 +1375,29 @@
 		],
 		"ENG_name": "Assassinate"
 	},
+	"Aura of Alacrity|Paladin|Oath of Glory|TCE": {
+		"name": "迅捷靈光",
+		"source": "TCE",
+		"page": 53,
+		"otherSources": [
+			{
+				"source": "MOT",
+				"page": 29
+			}
+		],
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Glory",
+		"subclassSource": "TCE",
+		"level": 7,
+		"header": 2,
+		"entries": [
+			"{@i 7th-level Oath of Glory feature}",
+			"你散發出一道靈光，讓你與你的同伴充滿超自然的速度，使你們能以隊形在戰場上疾馳。你的步行速度增加 10 呎。此外，若你沒有陷入{@condition incapacitated}，任何在你 5 呎內開始其回合的盟友，其步行速度增加 10 呎，直到該回合結束。",
+			"當你在此職業達到 18 級時，靈光的範圍增加為 10 呎。"
+		],
+		"ENG_name": "Aura of Alacrity"
+	},
 	"Aura of Alacrity|Paladin|Oath of Glory|XPHB": {
 		"name": "迅捷靈光",
 		"source": "XPHB",
@@ -1245,6 +1430,23 @@
 			"當你與你的盟友位於你的守護靈光中時，對{@condition Charmed|XPHB}狀態具有{@variantrule Immunity|XPHB}。若一名{@condition Charmed|XPHB}的盟友進入靈光，在其位於靈光中期間，該狀態對該盟友沒有效果。"
 		],
 		"ENG_name": "Aura of Devotion"
+	},
+	"Aura of the Sentinel|Paladin|Oath of the Watchers|TCE": {
+		"name": "哨兵靈光",
+		"source": "TCE",
+		"page": 54,
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Watchers",
+		"subclassSource": "TCE",
+		"level": 7,
+		"header": 2,
+		"entries": [
+			"{@i 7th-level Oath of the Watchers feature}",
+			"在你沒有陷入{@condition incapacitated}時，你會散發出一道警覺靈光。當你與你 10 呎內由你選擇的任何生物擲先攻時，你們全都在先攻上獲得等同於你熟練加值的加值。",
+			"在 18 級時，此靈光的範圍增加為 30 呎。"
+		],
+		"ENG_name": "Aura of the Sentinel"
 	},
 	"Aura of Warding|Paladin|Oath of the Ancients|XPHB": {
 		"name": "防護靈光",
@@ -1307,6 +1509,44 @@
 		],
 		"ENG_name": "Avenging Angel"
 	},
+	"Awakened Astral Self|Monk|Way of the Astral Self|TCE": {
+		"name": "覺醒星界自我",
+		"source": "TCE",
+		"page": 50,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Astral Self",
+		"subclassSource": "TCE",
+		"level": 17,
+		"header": 2,
+		"consumes": {
+			"name": "氣",
+			"amount": 5,
+			"ENG_name": "Ki"
+		},
+		"entries": [
+			"{@i 17th-level Way of the Astral Self feature}",
+			"你與星界自我的連結已臻完整，讓你能釋放其全部潛能。作為一個附贈動作，你可以花費 5 氣點召喚你星界自我的手臂、面容與軀體，並使其覺醒 10 分鐘。若你陷入{@condition incapacitated}或死亡，此覺醒會提早結束。",
+			"你的星界自我覺醒期間，你獲得下列好處。",
+			{
+				"type": "entries",
+				"name": "靈之護甲",
+				"entries": [
+					"你的護甲等級獲得 +2 加值。"
+				],
+				"ENG_name": "Armor of the Spirit"
+			},
+			{
+				"type": "entries",
+				"name": "星界連擊",
+				"entries": [
+					"每當你使用額外攻擊特性攻擊兩次時，若所有攻擊都以你的星界手臂進行，你可以改為攻擊三次。"
+				],
+				"ENG_name": "Astral Barrage"
+			}
+		],
+		"ENG_name": "Awakened Astral Self"
+	},
 	"Awakened Mind|Warlock|Great Old One Patron|XPHB": {
 		"name": "覺醒心靈",
 		"source": "XPHB",
@@ -1322,6 +1562,32 @@
 			"心靈感應連結持續的分鐘數等同你的契術師等級。若你使用此能力與另一個生物建立連結，它會提早結束。"
 		],
 		"ENG_name": "Awakened Mind"
+	},
+	"Awakened Spellbook|Wizard|Order of Scribes|TCE": {
+		"name": "覺醒法術書",
+		"source": "TCE",
+		"page": 77,
+		"className": "Wizard",
+		"classSource": "PHB",
+		"subclassShortName": "Scribes",
+		"subclassSource": "TCE",
+		"level": 2,
+		"header": 1,
+		"entries": [
+			"{@i 2nd-level Order of Scribes feature}",
+			"運用你的法師修會傳承下來的特製墨水與古老咒語，你喚醒了你法術書中的奧術意識。",
+			"當你持有這本書時，它給予你下列好處：",
+			{
+				"type": "list",
+				"items": [
+					"你可以將這本書作為你法師法術的法器。",
+					"當你以法術欄位施展一個法師法術時，你可以暫時將其傷害類型替換為你法術書中另一個法術所具有的類型，這會以魔法改變該法術的公式，僅限此次施法。後者必須與你消耗的法術欄位同環階。",
+					"當你以儀式施展一個法師法術時，你可以使用該法術的正常施法時間，而不是增加 10 分鐘。一旦你使用此好處，在完成長休前無法再次這樣做。"
+				]
+			},
+			"若有必要，你可以在一次短休期間替換這本書，方法是使用你的法師羽毛筆，在一本空白書籍或一本你同調的魔法法術書中寫下奧術符印。在休息結束時，你法術書的意識會被召喚到新書中，並將其連同所有法術轉化為你的法術書。若先前的書仍存在於某處，其書頁上的所有法術都會消失。"
+		],
+		"ENG_name": "Awakened Spellbook"
 	},
 	"Bardic Damage|Bard|College of Dance|XPHB": {
 		"name": "吟遊傷害",
@@ -1357,6 +1623,27 @@
 		"entries": [
 			"你能汲取存在的宏大方程式，為一個生物灌注一面閃爍的秩序之盾。你可以用一個{@action Magic|XPHB}動作花費 1 到 5 點術法點，在你自己或你周圍 30 呎內另一個你能看見的生物周圍創造一道魔法護盾。護盾以若干顆 d8 表示，數量等同創造它所花費的術法點。當受護盾保護的生物受到傷害時，它可以消耗其中若干顆骰子，擲骰並將所受傷害減少擲出的總和。",
 			"護盾持續到你完成一次{@variantrule Long Rest|XPHB}或再次使用此能力為止。"
+		],
+		"ENG_name": "Bastion of Law"
+	},
+	"Bastion of Law|Sorcerer|Clockwork Soul|TCE": {
+		"name": "律法堡壘",
+		"source": "TCE",
+		"page": 68,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Clockwork Soul",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"consumes": {
+			"name": "術法點",
+			"ENG_name": "Sorcery Point"
+		},
+		"entries": [
+			"{@i 6th-level Clockwork Soul feature}",
+			"你可以汲取存在的宏大方程式，為一個生物灌注閃爍的秩序護盾。作為一個動作，你可以消耗 1 到 5 點術法點，在你自己或你 30 呎內一個你能看見的其他生物周圍創造一道魔法結界。此結界持續到你完成長休，或直到你再次使用此特性為止。",
+			"此結界以數量等同於創造它所花費術法點數的 {@dice d8} 表示。當受結界保護的生物受到傷害時，它可以消耗其中若干顆骰子，擲出它們，並將所受傷害減少這些骰子的擲骰總和。"
 		],
 		"ENG_name": "Bastion of Law"
 	},
@@ -1699,6 +1986,23 @@
 		],
 		"ENG_name": "Beguiling Magic"
 	},
+	"Beguiling Twist|Ranger|Fey Wanderer|TCE": {
+		"name": "迷惑轉折",
+		"source": "TCE",
+		"page": 58,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Fey Wanderer",
+		"subclassSource": "TCE",
+		"level": 7,
+		"header": 2,
+		"entries": [
+			"{@i 7th-level Fey Wanderer feature}",
+			"妖精荒野的魔法守護著你的心靈。你在對抗{@condition charmed}或{@condition frightened}的豁免檢定上具有優勢。",
+			"此外，每當你或一個你能看見、位於你 120 呎內的生物成功通過一次對抗{@condition charmed}或{@condition frightened}的豁免檢定時，你可以使用你的反應，迫使另一個你能看見、位於你 120 呎內的生物進行一次對抗你法術豁免 DC 的感知豁免檢定。豁免失敗時，目標被你{@condition charmed}或{@condition frightened}（由你選擇）1 分鐘。目標可以在其每個回合結束時重複此豁免檢定，成功時結束自身的效果。"
+		],
+		"ENG_name": "Beguiling Twist"
+	},
 	"Beguiling Twist|Ranger|Fey Wanderer|XPHB": {
 		"name": "迷惑轉折",
 		"source": "XPHB",
@@ -1750,6 +2054,31 @@
 		],
 		"ENG_name": "Bestial Fury"
 	},
+	"Bestial Soul|Barbarian|Path of the Beast|TCE": {
+		"name": "獸性之魂",
+		"source": "TCE",
+		"page": 24,
+		"className": "Barbarian",
+		"classSource": "PHB",
+		"subclassShortName": "Beast",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Path of the Beast feature}",
+			"你體內的野性力量增強，使你野獸形態的天生武器在克服對非魔法攻擊與傷害的抗性和免疫時視為魔法武器。",
+			"你也可以改變形態來幫助自己適應環境。完成短休或長休時，從下列益處中選擇一項，持續到你完成下一次短休或長休為止：",
+			{
+				"type": "list",
+				"items": [
+					"你獲得等同於步行速度的游泳速度，並能在水下呼吸。",
+					"你獲得等同於步行速度的攀爬速度，並能攀爬困難的表面，包括倒掛在天花板上，而無需進行屬性檢定。",
+					"當你跳躍時，你可以進行一次力量（{@skill Athletics}）檢定，並將跳躍距離延長等同於檢定總值的呎數。每回合你只能進行一次這種特殊檢定。"
+				]
+			}
+		],
+		"ENG_name": "Bestial Soul"
+	},
 	"Bewitching Magic|Warlock|Archfey Patron|XPHB": {
 		"name": "蠱惑魔法",
 		"source": "XPHB",
@@ -1764,6 +2093,56 @@
 			"你的宗主賦予你將魔法與傳送交織的能力。在你使用一個動作與一個法術欄位施展一個惑控或幻術法術後，你可以立即在同一個動作中施展{@spell Misty Step|XPHB}，且不消耗法術欄位。"
 		],
 		"ENG_name": "Bewitching Magic"
+	},
+	"Bladesinging|Wizard|Bladesinging|TCE": {
+		"name": "劍詠",
+		"source": "TCE",
+		"page": 76,
+		"otherSources": [
+			{
+				"source": "SCAG",
+				"page": 141
+			}
+		],
+		"className": "Wizard",
+		"classSource": "PHB",
+		"subclassShortName": "Bladesinging",
+		"subclassSource": "TCE",
+		"level": 2,
+		"entries": [
+			"劍詠者精通一種融合劍術與舞蹈的法師傳統。此傳統最初由精靈創造，後來也為非精靈的修習者所採用，他們尊崇並拓展了精靈的道路。",
+			"在戰鬥中，劍詠者運用一連串繁複而優雅的動作抵擋傷害，並讓劍詠者得以將魔法引導至毀滅性的攻擊與巧妙的防禦之中。許多見過劍詠者施展身手的人，都將那場表演視為一生中最美麗的經歷之一——一場伴隨著歌唱之劍的輝煌舞蹈。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Training in War and Song (Bladesinging)|Wizard||Bladesinging|TCE|2"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bladesong|Wizard||Bladesinging|TCE|2"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bladesinger Styles|Wizard||Bladesinging|TCE|2"
+			}
+		],
+		"ENG_name": "Bladesinging"
+	},
+	"Blazing Revival|Druid|Circle of Wildfire|TCE": {
+		"name": "熾焰復生",
+		"source": "TCE",
+		"page": 39,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Wildfire",
+		"subclassSource": "TCE",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"{@i 14th-level Circle of Wildfire feature}",
+			"你與野火之靈的羈絆能將你從死亡中拯救出來。若你的生命值降至 0 而因此陷入{@condition unconscious}時，此靈位於你 120 呎內，你可以讓此靈的生命值降至 0。接著你恢復一半的生命值，並立即站起身。",
+			"一旦你使用此特性，在完成長休前無法再次使用。"
+		],
+		"ENG_name": "Blazing Revival"
 	},
 	"Blessed Healer|Cleric|Life Domain|XPHB": {
 		"name": "受祝福的醫者",
@@ -1782,6 +2161,312 @@
 		],
 		"ENG_name": "Blessed Healer"
 	},
+	"Blessed Strikes|Cleric|Ambition Domain (PSA)|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Ambition (PSA)",
+		"subclassSource": "PSA",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代強效施法特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Arcana Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Arcana",
+		"subclassSource": "SCAG",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代強效施法特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Death Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Death",
+		"subclassSource": "DMG",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Forge Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Forge",
+		"subclassSource": "XGE",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Grave Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Grave",
+		"subclassSource": "XGE",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代強效施法特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Knowledge Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Knowledge",
+		"subclassSource": "PHB",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代強效施法特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Life Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Life",
+		"subclassSource": "PHB",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Light Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Light",
+		"subclassSource": "PHB",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代強效施法特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Nature Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Nature",
+		"subclassSource": "PHB",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Order Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 31,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Order",
+		"subclassSource": "TCE",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Peace Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 32,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Peace",
+		"subclassSource": "TCE",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代強效施法特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Solidarity Domain (PSA)|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Solidarity (PSA)",
+		"subclassSource": "PSA",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Strength Domain (PSA)|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Strength (PSA)",
+		"subclassSource": "PSA",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Tempest Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Tempest",
+		"subclassSource": "PHB",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Trickery Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Trickery",
+		"subclassSource": "PHB",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Twilight Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 34,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Twilight",
+		"subclassSource": "TCE",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|War Domain|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "War",
+		"subclassSource": "PHB",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
+	"Blessed Strikes|Cleric|Zeal Domain (PSA)|TCE": {
+		"name": "神佑打擊",
+		"source": "TCE",
+		"page": 30,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Zeal (PSA)",
+		"subclassSource": "PSA",
+		"level": 8,
+		"isClassFeatureVariant": true,
+		"header": 2,
+		"entries": [
+			"{@i 8 級牧師{@variantrule optional class features|tce|選用特性}，取代神聖打擊特性}",
+			"你在戰鬥中受到神聖力量的祝福。當一個生物受到你的戲法或武器攻擊的傷害時，你也可以對該生物造成 {@damage 1d8} 光耀傷害。造成此傷害後，直到你的下個回合開始前都無法再次使用此特性。"
+		],
+		"ENG_name": "Blessed Strikes"
+	},
 	"Blessing of the Trickster|Cleric|Trickery Domain|XPHB": {
 		"name": "詭術師的祝福",
 		"source": "XPHB",
@@ -1796,6 +2481,63 @@
 			"你可以用一個{@action Magic|XPHB}動作，選擇你自己或你周圍 30 呎內一個自願的生物，使其在敏捷（{@skill Stealth|XPHB}）檢定上具有{@variantrule Advantage|XPHB}。此祝福持續到你完成一次{@variantrule Long Rest|XPHB}或你再次使用此能力為止。"
 		],
 		"ENG_name": "Blessing of the Trickster"
+	},
+	"Body of the Astral Self|Monk|Way of the Astral Self|TCE": {
+		"name": "星界自我之軀",
+		"source": "TCE",
+		"page": 50,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Astral Self",
+		"subclassSource": "TCE",
+		"level": 11,
+		"header": 2,
+		"entries": [
+			"{@i 11th-level Way of the Astral Self feature}",
+			"當你同時召喚了星界手臂與面容時，你可以使你星界自我的軀體顯現（不需動作）。此幽魂軀體如一套護甲般覆蓋你的肉身，並與手臂和面容相連。其外觀由你決定。",
+			"幽魂軀體存在期間，你獲得下列好處。",
+			{
+				"type": "entries",
+				"name": "偏轉能量",
+				"entries": [
+					"當你受到強酸、寒冷、火焰、力場、閃電或雷鳴傷害時，你可以使用你的反應偏轉它。當你這樣做時，你所受的傷害減少 {@dice 1d10} + 你的感知調整值（最少減少 1）。"
+				],
+				"ENG_name": "Deflect Energy"
+			},
+			{
+				"type": "entries",
+				"name": "強化之臂",
+				"entries": [
+					"在你的每個回合中一次，當你以星界自我之臂命中目標時，你可以對目標造成等同於你武藝骰的額外傷害。"
+				],
+				"ENG_name": "Empowered Arms"
+			}
+		],
+		"ENG_name": "Body of the Astral Self"
+	},
+	"Bolstering Magic|Barbarian|Path of Wild Magic|TCE": {
+		"name": "強化魔法",
+		"source": "TCE",
+		"page": 25,
+		"className": "Barbarian",
+		"classSource": "PHB",
+		"subclassShortName": "Wild Magic",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Path of Wild Magic feature}",
+			"你可以駕馭你的狂野魔法來強化自己或同伴。作為一個動作，你可以碰觸一個生物（可以是你自己），並賦予該生物下列一項自選益處：",
+			{
+				"type": "list",
+				"items": [
+					"在 10 分鐘內，該生物每次進行攻擊檢定或屬性檢定時，都可以擲一顆 {@dice d3} 並將結果加到 {@dice d20} 擲骰上。",
+					"擲一顆 {@dice d3}。該生物恢復一個已消耗的法術欄位，其環階等於擲骰結果或更低（由該生物選擇）。生物獲得此益處後，直到完成長休前都無法再次獲得。"
+				]
+			},
+			"你可以執行此動作的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Bolstering Magic"
 	},
 	"Bonus Proficiencies|Bard|College of Lore|XPHB": {
 		"name": "額外熟練",
@@ -1814,6 +2556,52 @@
 		],
 		"ENG_name": "Bonus Proficiencies"
 	},
+	"Bonus Proficiencies|Cleric|Twilight Domain|TCE": {
+		"name": "額外熟練",
+		"source": "TCE",
+		"page": 34,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Twilight",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Twilight Domain feature}",
+			"你獲得軍用武器與重甲的熟練。"
+		],
+		"ENG_name": "Bonus Proficiencies"
+	},
+	"Bonus Proficiencies|Fighter|Rune Knight|TCE": {
+		"name": "額外熟練",
+		"source": "TCE",
+		"page": 44,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Rune Knight",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Rune Knight feature}",
+			"你獲得{@item smith's tools|PHB}的熟練，並學會說、讀、寫{@language Giant}。"
+		],
+		"ENG_name": "Bonus Proficiencies"
+	},
+	"Bottled Respite|Warlock|The Genie|TCE": {
+		"name": "瓶中休憩",
+		"source": "TCE",
+		"page": 73,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Genie",
+		"subclassSource": "TCE",
+		"level": 1,
+		"entries": [
+			"作為一個動作，你可以以魔法消失並進入你的容器，容器留在你離開的空間中。容器內部是一個半徑 20 呎、高 20 呎的圓柱形異次元空間，外觀與你的容器相似。內部陳設著坐墊與矮桌，溫度宜人。在內部時，你能聽見容器周圍區域的聲音，如同你身處其空間一般。你可以在容器內停留的時數至多等同於你熟練加值的兩倍。若你使用一個附贈動作離開、你死亡或容器被摧毀，你會提早離開容器。當你離開容器時，你會出現在最靠近它的未佔據空間。留在容器中的任何物件會一直留在那裡，直到被帶出；若容器被摧毀，儲存在那裡的每個物件都會無害地出現在最靠近容器原本空間的未佔據空間。一旦你進入容器，在完成長休前無法再次進入。"
+		],
+		"ENG_name": "Bottled Respite"
+	},
 	"Branches of the Tree|Barbarian|Path of the World Tree|XPHB": {
 		"name": "世界樹之枝",
 		"source": "XPHB",
@@ -1828,6 +2616,23 @@
 			"當你的狂暴生效時，每當一個你能看見的生物在你周圍 30 呎內開始它的回合，你可以採取一個{@variantrule Reaction|XPHB}，在它周圍召喚世界樹的幽靈枝條。目標必須成功通過一次力量豁免檢定（{@dc 8} 加上你的力量調整值與{@variantrule Proficiency|XPHB|熟練加值}），否則會被傳送到你周圍 5 呎內一個你能看見的未佔據空間，或你能看見的最近未佔據空間。目標傳送後，你可以將它的{@variantrule Speed|XPHB}降為 0，直到當前回合結束為止。"
 		],
 		"ENG_name": "Branches of the Tree"
+	},
+	"Bulwark of Force|Fighter|Psi Warrior|TCE": {
+		"name": "力場壁壘",
+		"source": "TCE",
+		"page": 42,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Psi Warrior",
+		"subclassSource": "TCE",
+		"level": 15,
+		"header": 2,
+		"entries": [
+			"{@i 15th-level Psi Warrior feature}",
+			"你可以用心靈致動力場保護自己與他人。作為一個附贈動作，你可以選擇你 30 呎內你能看見的生物（可以包括你自己），數量至多等同於你的智力調整值（最少一個生物）。每個被選中的生物受到{@quickref Cover||3||半身掩護}保護，持續 1 分鐘或直到你陷入{@condition incapacitated}。",
+			"一旦你採取此附贈動作，在完成長休前無法再次這樣做，除非你消耗一顆靈能骰來再次採取此動作。"
+		],
+		"ENG_name": "Bulwark of Force"
 	},
 	"Bulwark of Force|Fighter|Psi Warrior|XPHB": {
 		"name": "力場壁壘",
@@ -1848,6 +2653,24 @@
 			"一旦你使用此能力，直到你完成一次{@variantrule Long Rest|XPHB}前都無法再次使用，除非你消耗一顆靈能骰（不需要動作）來恢復它的使用次數。"
 		],
 		"ENG_name": "Bulwark of Force"
+	},
+	"Call the Hunt|Barbarian|Path of the Beast|TCE": {
+		"name": "號召狩獵",
+		"source": "TCE",
+		"page": 24,
+		"className": "Barbarian",
+		"classSource": "PHB",
+		"subclassShortName": "Beast",
+		"subclassSource": "TCE",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"{@i 14th-level Path of the Beast feature}",
+			"你體內的野獸變得如此強大，你能將它的兇猛散播給他人，並因他們加入你的狩獵而獲得韌性。當你進入狂暴時，你可以選擇你 30 呎內數量等同於你體質調整值（至少一個生物）、你能看見的其他自願生物。",
+			"每個接受此特性的生物都讓你獲得 5 點臨時生命值。直到狂暴結束前，每個被選擇的生物都可以在其每個回合中使用一次下列益處：當該生物以攻擊檢定命中目標並對其造成傷害時，可以擲一顆 {@dice d6}，並使傷害獲得等同於擲骰結果的加值。",
+			"你可以使用此特性的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Call the Hunt"
 	},
 	"Cartographer Spells|Artificer|Cartographer|EFA": {
 		"name": "製圖師法術",
@@ -1928,6 +2751,23 @@
 			}
 		],
 		"ENG_name": "Cartographer"
+	},
+	"Cauterizing Flames|Druid|Circle of Wildfire|TCE": {
+		"name": "烙灼之焰",
+		"source": "TCE",
+		"page": 39,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Wildfire",
+		"subclassSource": "TCE",
+		"level": 10,
+		"header": 2,
+		"entries": [
+			"{@i 10th-level Circle of Wildfire feature}",
+			"你獲得將死亡轉化為能治療或焚燒的魔法火焰的能力。當一個小型或更大的生物在你或你的野火之靈 30 呎內死亡時，一道無害的幽魂火焰會在該死亡生物的空間中竄起，並在那裡閃爍 1 分鐘。當一個你能看見的生物進入該空間時，你可以使用你的反應熄滅那裡的幽魂火焰，並治療該生物或對其造成火焰傷害。治療量或傷害等同於 {@dice 2d10} + 你的感知調整值。",
+			"你可以使用此反應的次數等同於你的熟練加值，並在完成長休後恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Cauterizing Flames"
 	},
 	"Celestial Patron|Warlock|Celestial Patron|XPHB": {
 		"name": "天界宗主",
@@ -2012,6 +2852,21 @@
 		],
 		"ENG_name": "Celestial Spells"
 	},
+	"Chalice|Druid|Circle of Stars|TCE": {
+		"name": "聖杯",
+		"source": "TCE",
+		"page": 38,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Stars",
+		"subclassSource": "TCE",
+		"level": 2,
+		"header": 2,
+		"entries": [
+			"一只賦予生命的聖杯星座出現在你身上。每當你使用法術欄位施展一個為生物恢復生命值的法術時，你或你 30 呎內的另一個生物可以恢復等同於 {@dice 1d8} + 你感知調整值的生命值。"
+		],
+		"ENG_name": "Chalice"
+	},
 	"Chalice|Druid|Circle of the Stars|XPHB": {
 		"name": "聖杯",
 		"source": "XPHB",
@@ -2051,6 +2906,108 @@
 			}
 		],
 		"ENG_name": "Champion"
+	},
+	"Channel Divinity: Balm of Peace|Cleric|Peace Domain|TCE": {
+		"name": "引導神力：和平香膏",
+		"source": "TCE",
+		"page": 32,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Peace",
+		"subclassSource": "TCE",
+		"level": 2,
+		"header": 2,
+		"consumes": {
+			"name": "引導神力",
+			"ENG_name": "Channel Divinity"
+		},
+		"entries": [
+			"{@i 2nd-level Peace Domain feature}",
+			"你可以使用引導神力，讓你的存在本身成為撫慰人心的香膏。作為一個動作，你可以移動至多等同於你速度的距離，且不會引發借機攻擊；在此動作中，當你移動到任何其他生物 5 呎內時，你可以為該生物恢復等同於 {@dice 2d6} + 你感知調整值的生命值（至少 1 點生命值）。每次你執行此動作時，一個生物只能接受一次此治療。"
+		],
+		"ENG_name": "Channel Divinity: Balm of Peace"
+	},
+	"Channel Divinity: Twilight Sanctuary|Cleric|Twilight Domain|TCE": {
+		"name": "引導神力：暮光聖所",
+		"source": "TCE",
+		"page": 34,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Twilight",
+		"subclassSource": "TCE",
+		"level": 2,
+		"header": 2,
+		"consumes": {
+			"name": "引導神力",
+			"ENG_name": "Channel Divinity"
+		},
+		"entries": [
+			"{@i 2nd-level Twilight Domain feature}",
+			"你可以使用引導神力，以撫慰人心的暮光讓你的盟友恢復精神。",
+			"作為一個動作，你展示你的聖徽，一道暮光球體從你身上散發出來。球體以你為中心，半徑 30 呎，充滿微光。球體隨你移動，持續 1 分鐘，或直到你{@condition incapacitated}或死亡為止。每當一個生物（包括你）在球體中結束其回合時，你可以給予該生物下列益處之一：",
+			{
+				"type": "list",
+				"items": [
+					"你給予它等同於 {@dice 1d6} 加上你牧師等級的臨時生命值。",
+					"你結束它身上一個使其{@condition charmed}或{@condition frightened}的效果。"
+				]
+			}
+		],
+		"ENG_name": "Channel Divinity: Twilight Sanctuary"
+	},
+	"Channel Divinity|Paladin|Oath of Glory|TCE": {
+		"name": "引導神力",
+		"source": "TCE",
+		"page": 53,
+		"otherSources": [
+			{
+				"source": "MOT",
+				"page": 29
+			}
+		],
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Glory",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Oath of Glory feature}",
+			"你獲得下列兩個引導神力選項。關於引導神力的運作方式，請見神聖誓言職業特性。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Peerless Athlete|Paladin||Glory|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Inspiring Smite|Paladin||Glory|TCE|3"
+			}
+		],
+		"ENG_name": "Channel Divinity"
+	},
+	"Channel Divinity|Paladin|Oath of the Watchers|TCE": {
+		"name": "引導神力",
+		"source": "TCE",
+		"page": 54,
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Watchers",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Oath of the Watchers feature}",
+			"你獲得下列引導神力選項。關於引導神力的運作方式，請見神聖誓言職業特性。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Watcher's Will|Paladin||Watchers|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Abjure the Extraplanar|Paladin||Watchers|TCE|3"
+			}
+		],
+		"ENG_name": "Channel Divinity"
 	},
 	"Chemical Mastery|Artificer|Alchemist|EFA": {
 		"name": "化學精通",
@@ -2161,6 +3118,63 @@
 			}
 		],
 		"ENG_name": "Circle Forms"
+	},
+	"Circle of Spores|Druid|Circle of Spores|TCE": {
+		"name": "孢子結社",
+		"source": "TCE",
+		"page": 36,
+		"otherSources": [
+			{
+				"source": "GGR",
+				"page": 26
+			}
+		],
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Spores",
+		"subclassSource": "TCE",
+		"level": 2,
+		"entries": [
+			"孢子結社的德魯伊在腐朽中發現美。他們在黴菌與其他真菌中看見將無生命物質轉化為豐沛（儘管有些奇異）生命的能力。",
+			"這些德魯伊相信生與死是一個宏大循環的一部分，彼此相續、周而復始。死亡並非生命的終結，而是一種狀態的轉變，讓生命轉化為新的形式。",
+			"此結社的德魯伊與不死生物有著複雜的關係。不同於大多數德魯伊，他們並不認為不死本身有何錯誤，而將其視為生與死的伴侶。但這些德魯伊相信，唯有循環中的每一環都充滿活力且不斷變化，自然循環才最為健全。企圖以不死取代一切生命、或試圖逃避最終安息的不死生物，違背了此循環，必須加以阻止。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Circle Spells|Druid||Spores|TCE|2"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Halo of Spores|Druid||Spores|TCE|2"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Symbiotic Entity|Druid||Spores|TCE|2"
+			}
+		],
+		"ENG_name": "Circle of Spores"
+	},
+	"Circle of Stars|Druid|Circle of Stars|TCE": {
+		"name": "星辰結社",
+		"source": "TCE",
+		"page": 38,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Stars",
+		"subclassSource": "TCE",
+		"level": 2,
+		"entries": [
+			"星辰結社讓德魯伊得以汲取星光的力量。這些德魯伊自遠古以來便追蹤天體的運行規律，發掘隱藏於星座之間的奧秘。藉由揭示並理解這些奧秘，星辰結社力求駕馭宇宙的力量。",
+			"此結社的許多德魯伊會記錄星座以及群星對世界的影響。有些團體將這些觀測記錄在巨石遺址中，這些遺址成為神秘難解的知識寶庫。這些寶庫的形式可能是石陣、金字塔、岩刻或地下神殿——任何足以在大災變中保護結社神聖知識的堅固建築。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Star Map|Druid||Stars|TCE|2"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Starry Form|Druid||Stars|TCE|2"
+			}
+		],
+		"ENG_name": "Circle of Stars"
 	},
 	"Circle of the Land Spells|Druid|Circle of the Land|XPHB": {
 		"name": "大地結社法術",
@@ -2482,6 +3496,79 @@
 		],
 		"ENG_name": "Circle of the Stars"
 	},
+	"Circle of Wildfire|Druid|Circle of Wildfire|TCE": {
+		"name": "野火結社",
+		"source": "TCE",
+		"page": 39,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Wildfire",
+		"subclassSource": "TCE",
+		"level": 2,
+		"entries": [
+			"野火結社的德魯伊明白，毀滅有時是創造的先聲，例如森林大火會促進日後的新生。這些德魯伊與一個同時蘊含毀滅與創造之力的原初之靈締結羈絆，讓他們得以創造受控的火焰，燒盡一物卻賦予另一物生命。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Circle Spells|Druid||Wildfire|TCE|2"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Summon Wildfire Spirit|Druid||Wildfire|TCE|2"
+			}
+		],
+		"ENG_name": "Circle of Wildfire"
+	},
+	"Circle Spells|Druid|Circle of Wildfire|TCE": {
+		"name": "結社法術",
+		"source": "TCE",
+		"page": 39,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Wildfire",
+		"subclassSource": "TCE",
+		"level": 2,
+		"header": 1,
+		"entries": [
+			"{@i 2nd-level Circle of Wildfire feature}",
+			"你與一個野火之靈——一個兼具創造與毀滅的原初存在——締結了羈絆。當你在此職業達到特定等級時，你與此靈的連結讓你獲得一些法術，如「野火結社法術」表所示。",
+			"一旦你獲得其中一個法術，你便總是將其準備好，且它不計入你每天可準備的法術數量。若你獲得的法術不在德魯伊法術列表上，該法術對你而言仍視為德魯伊法術。",
+			{
+				"type": "table",
+				"caption": "野火結社法術",
+				"colLabels": [
+					"德魯伊等級",
+					"結社法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"2 級",
+						"{@spell burning hands}、{@spell cure wounds}"
+					],
+					[
+						"3 級",
+						"{@spell flaming sphere}、{@spell scorching ray}"
+					],
+					[
+						"5 級",
+						"{@spell plant growth}、{@spell revivify}"
+					],
+					[
+						"7 級",
+						"{@spell aura of life}、{@spell fire shield}"
+					],
+					[
+						"9 級",
+						"{@spell flame strike}、{@spell mass cure wounds}"
+					]
+				]
+			}
+		],
+		"ENG_name": "Circle Spells"
+	},
 	"Clairvoyant Combatant|Warlock|Great Old One Patron|XPHB": {
 		"name": "預知戰士",
 		"source": "XPHB",
@@ -2591,6 +3678,121 @@
 		],
 		"ENG_name": "Clockwork Cavalcade"
 	},
+	"Clockwork Cavalcade|Sorcerer|Clockwork Soul|TCE": {
+		"name": "發條行列",
+		"source": "TCE",
+		"page": 68,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Clockwork Soul",
+		"subclassSource": "TCE",
+		"level": 18,
+		"header": 2,
+		"entries": [
+			"{@i 18th-level Clockwork Soul feature}",
+			"你召喚秩序之靈來清除你周圍的混亂。作為一個動作，你在一個源自你的 30 呎立方中召喚這些靈。這些靈看起來像莫德隆或其他由你選擇的構裝生物。這些靈無形且無法被傷害，它們在消失前會在立方內產生下列效果：",
+			{
+				"type": "list",
+				"items": [
+					"這些靈恢復至多 100 點生命值，由你分配給立方內由你選擇的任意數量生物。",
+					"完全位於立方內的任何受損物件會立即修復。",
+					"立方內由你選擇的生物與物件身上，每個 6 環或更低的法術都會結束。"
+				]
+			},
+			"一旦你使用此動作，在完成長休前無法再次使用，除非你花費 7 點術法點來再次使用它。"
+		],
+		"ENG_name": "Clockwork Cavalcade"
+	},
+	"Clockwork Magic|Sorcerer|Clockwork Soul|TCE": {
+		"name": "發條魔法",
+		"source": "TCE",
+		"page": 68,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Clockwork Soul",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Clockwork Soul feature}",
+			"當你在此職業達到特定等級時，你會習得額外的法術，如「發條法術」表所示。這些法術對你而言都視為術士法術，但不計入你已知的術士法術數量。",
+			"每當你提升一個術士等級時，你可以將一個從此特性獲得的法術替換為另一個相同環階的法術。新法術必須是{@filter 術士、契術師或法師法術列表中的防護或變化法術|spells|class=sorcerer;warlock;wizard|school=A;T|level=1;2;3;4;5}。",
+			{
+				"type": "table",
+				"caption": "機械法術",
+				"colLabels": [
+					"術士等級",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1 級",
+						"{@spell alarm}、{@spell protection from evil and good}"
+					],
+					[
+						"3 級",
+						"{@spell aid}、{@spell lesser restoration}"
+					],
+					[
+						"5 級",
+						"{@spell dispel magic}、{@spell protection from energy}"
+					],
+					[
+						"7 級",
+						"{@spell freedom of movement}、{@spell summon construct|TCE}"
+					],
+					[
+						"9 級",
+						"{@spell greater restoration}、{@spell wall of force}"
+					]
+				]
+			},
+			"此外，參考「秩序顯現」表，選擇或隨機決定當你施展任何術士法術時，你與秩序的連結會以何種方式顯現。",
+			{
+				"type": "table",
+				"caption": "秩序顯現",
+				"colLabels": [
+					"d6",
+					"顯現"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"幽靈般的齒輪在你身後盤旋。"
+					],
+					[
+						"2",
+						"時鐘的指針在你眼中旋轉。"
+					],
+					[
+						"3",
+						"你的皮膚閃耀著黃銅般的光澤。"
+					],
+					[
+						"4",
+						"漂浮的方程式與幾何物體覆蓋在你的身體上。"
+					],
+					[
+						"5",
+						"你的法器暫時化為一個微型發條機械裝置的形態。"
+					],
+					[
+						"6",
+						"你以及受你魔法影響的生物，都能聽見齒輪的滴答聲或時鐘的鐘響。"
+					]
+				]
+			}
+		],
+		"ENG_name": "Clockwork Magic"
+	},
 	"Clockwork Sorcery|Sorcerer|Clockwork Sorcery|XPHB": {
 		"name": "機械術法",
 		"source": "XPHB",
@@ -2613,6 +3815,28 @@
 			}
 		],
 		"ENG_name": "Clockwork Sorcery"
+	},
+	"Clockwork Soul|Sorcerer|Clockwork Soul|TCE": {
+		"name": "發條靈魂",
+		"source": "TCE",
+		"page": 68,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Clockwork Soul",
+		"subclassSource": "TCE",
+		"level": 1,
+		"entries": [
+			"秩序的宇宙之力讓你充盈著魔法。這股力量源自機械境或類似的領域——一個完全由發條般的效率所塑造的存在位面。你或你血脈中的某人，可能曾被捲入莫德隆——居住在機械境的秩序生物——的算計之中。也許你的祖先甚至參與過莫德隆大遊行。無論它在你體內的起源為何，秩序之力在他人看來或許很奇怪，但對你而言，它是一個宏大而輝煌的體系的一部分。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Clockwork Magic|Sorcerer||Clockwork Soul|TCE|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Restore Balance|Sorcerer||Clockwork Soul|TCE|1"
+			}
+		],
+		"ENG_name": "Clockwork Soul"
 	},
 	"Clockwork Spells|Sorcerer|Clockwork Sorcery|XPHB": {
 		"name": "機械法術",
@@ -2698,6 +3922,30 @@
 		],
 		"ENG_name": "Clockwork Spells"
 	},
+	"College of Creation|Bard|College of Creation|TCE": {
+		"name": "創造學院",
+		"source": "TCE",
+		"page": 27,
+		"className": "Bard",
+		"classSource": "PHB",
+		"subclassShortName": "Creation",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"吟遊詩人相信宇宙是一件藝術品——是最初的龍與神祇的創作。這件創作包含了至今仍在存在中迴盪的和聲，一股被稱為「創造之歌」的力量。創造學院的吟遊詩人透過舞蹈、音樂與詩歌汲取那首原始之歌，而他們的老師會分享這樣的教誨：",
+			"「在太陽與月亮之前，就已有了那首歌，它的樂音喚醒了最初的黎明。它的旋律讓石頭與樹木如此歡欣，其中一些甚至獲得了自己的聲音。如今它們也在歌唱。學習那首歌吧，學生們，你們也能教會山岳唱歌跳舞。」",
+			"矮人與地侏常鼓勵他們的吟遊詩人成為創造之歌的學生。而在龍裔之間，創造之歌備受尊崇，因為傳說將巴哈姆特與提亞瑪特——最偉大的兩條龍——描繪為這首歌最初的兩位歌者。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Mote of Potential|Bard||Creation|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Performance of Creation|Bard||Creation|TCE|3"
+			}
+		],
+		"ENG_name": "College of Creation"
+	},
 	"College of Dance|Bard|College of Dance|XPHB": {
 		"name": "舞蹈學院",
 		"source": "XPHB",
@@ -2716,6 +3964,28 @@
 			}
 		],
 		"ENG_name": "College of Dance"
+	},
+	"College of Eloquence|Bard|College of Eloquence|TCE": {
+		"name": "雄辯學院",
+		"source": "TCE",
+		"page": 29,
+		"className": "Bard",
+		"classSource": "PHB",
+		"subclassShortName": "Eloquence",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"雄辯學院的信徒精通演說的藝術。說服被視為一門高深的藝術，一個論證嚴謹、表達出色的論點往往比事實更有說服力。這些吟遊詩人結合邏輯與戲劇性的文字遊戲，以合乎邏輯的論證說服懷疑者與批評者，並撥動心弦來打動聽眾的情感。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Silver Tongue|Bard||Eloquence|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Unsettling Words|Bard||Eloquence|TCE|3"
+			}
+		],
+		"ENG_name": "College of Eloquence"
 	},
 	"College of Glamour|Bard|College of Glamour|XPHB": {
 		"name": "魅惑學院",
@@ -2875,6 +4145,22 @@
 		],
 		"ENG_name": "Controlled Chaos"
 	},
+	"Controlled Surge|Barbarian|Path of Wild Magic|TCE": {
+		"name": "控制湧動",
+		"source": "TCE",
+		"page": 25,
+		"className": "Barbarian",
+		"classSource": "PHB",
+		"subclassShortName": "Wild Magic",
+		"subclassSource": "TCE",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"{@i 14th-level Path of Wild Magic feature}",
+			"每當你在「狂野魔法」表上擲骰時，你可以擲骰兩次，並選擇要釋放兩個效果中的哪一個。若兩次擲出相同的數字，你可以無視該數字，選擇表上的任何效果。"
+		],
+		"ENG_name": "Controlled Surge"
+	},
 	"Corona of Light|Cleric|Light Domain|XPHB": {
 		"name": "光之冠冕",
 		"source": "XPHB",
@@ -2890,6 +4176,41 @@
 			"你可以使用此能力的次數等同於你的睿知調整值（最少一次），並在完成一次{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。"
 		],
 		"ENG_name": "Corona of Light"
+	},
+	"Cosmic Omen|Druid|Circle of Stars|TCE": {
+		"name": "宇宙預兆",
+		"source": "TCE",
+		"page": 38,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Stars",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Circle of the Stars feature}",
+			"每當你完成一次長休時，你可以查閱你的星圖以獲得預兆。當你這樣做時，擲一顆骰子。直到你完成下一次長休前，依據你擲出偶數或奇數，你會獲得一個特殊反應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "吉兆（偶數）",
+						"entry": "每當一個你能看見、位於你 30 呎內的生物即將進行攻擊檢定、豁免檢定或屬性檢定時，你可以使用你的反應擲一顆 {@dice d6}，並將擲出的數字加到總值上。",
+						"ENG_name": "Weal (even)"
+					},
+					{
+						"type": "item",
+						"name": "凶兆（奇數）",
+						"entry": "每當一個你能看見、位於你 30 呎內的生物即將進行攻擊檢定、豁免檢定或屬性檢定時，你可以使用你的反應擲一顆 {@dice d6}，並從總值中減去擲出的數字。",
+						"ENG_name": "Woe (odd)"
+					}
+				]
+			},
+			"你可以使用此反應的次數等同於你的熟練加值，並在完成長休後恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Cosmic Omen"
 	},
 	"Cosmic Omen|Druid|Circle of the Stars|XPHB": {
 		"name": "宇宙預兆",
@@ -2944,6 +4265,23 @@
 			"此外，異怪每回合第一次命中一個受你{@spell Hex|XPHB}影響的生物時，額外對目標造成等同該法術額外傷害的精神傷害。"
 		],
 		"ENG_name": "Create Thrall"
+	},
+	"Creative Crescendo|Bard|College of Creation|TCE": {
+		"name": "創意高潮",
+		"source": "TCE",
+		"page": 27,
+		"className": "Bard",
+		"classSource": "PHB",
+		"subclassShortName": "Creation",
+		"subclassSource": "TCE",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"{@i 14th-level College of Creation feature}",
+			"當你使用創造表演特性時，你可以一次創造不只一件物品。物品的數量等於你的魅力調整值（至少兩件）。若你創造的物品會超過該數量，由你選擇先前創造的哪一件物品消失。這些物品中只能有一件是你能創造的最大體型；其餘必須是小型或微型。",
+			"以創造表演創造物品時，你不再受 gp 價值的限制。"
+		],
+		"ENG_name": "Creative Crescendo"
 	},
 	"Cutting Words|Bard|College of Lore|XPHB": {
 		"name": "語出驚人",
@@ -3107,6 +4445,29 @@
 		],
 		"ENG_name": "Death Strike"
 	},
+	"Death's Friend|Rogue|Phantom|TCE": {
+		"name": "死亡之友",
+		"source": "TCE",
+		"page": 62,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Phantom",
+		"subclassSource": "TCE",
+		"level": 17,
+		"header": 2,
+		"entries": [
+			"{@i 17th-level Phantom feature}",
+			"你與死亡的關係變得如此親近，讓你獲得下列好處：",
+			{
+				"type": "list",
+				"items": [
+					"當你使用墳墓哀號時，你可以對第一個與第二個生物都造成死靈傷害。",
+					"在長休結束時，若你沒有任何靈魂飾品，便會有一件靈魂飾品出現在你手中，因為亡者的靈魂受到你的吸引。"
+				]
+			}
+		],
+		"ENG_name": "Death's Friend"
+	},
 	"Defensive Field|Artificer|Armorer|TCE": {
 		"name": "防禦力場",
 		"source": "TCE",
@@ -3207,6 +4568,22 @@
 			"你能將神聖之力灌注於你的打擊中。在你狂暴生效期間的每個回合，你以武器或{@variantrule Unarmed Strike|XPHB}命中的第一個生物，會額外受到等同 {@dice 1d6} 加上你野蠻人等級一半（無條件捨去）的傷害。這份額外傷害為死靈或光耀傷害；你每次造成傷害時自行選擇類型。"
 		],
 		"ENG_name": "Divine Fury"
+	},
+	"Divine Strike|Cleric|Twilight Domain|TCE": {
+		"name": "神聖打擊",
+		"source": "TCE",
+		"page": 34,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Twilight",
+		"subclassSource": "TCE",
+		"level": 8,
+		"header": 2,
+		"entries": [
+			"{@i 8th-level Twilight Domain feature}",
+			"你獲得將神聖能量灌注到武器打擊中的能力。在你的每個回合中一次，當你以武器攻擊命中一個生物時，你可以使該攻擊額外造成 {@damage 1d8} 光耀傷害。當你達到 14 級時，額外傷害增加到 {@damage 2d8}。"
+		],
+		"ENG_name": "Divine Strike"
 	},
 	"Diviner|Wizard|Diviner|XPHB": {
 		"name": "預言師",
@@ -3362,6 +4739,21 @@
 		],
 		"ENG_name": "Dragon Wings"
 	},
+	"Dragon|Druid|Circle of Stars|TCE": {
+		"name": "龍",
+		"source": "TCE",
+		"page": 38,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Stars",
+		"subclassSource": "TCE",
+		"level": 2,
+		"header": 2,
+		"entries": [
+			"一條睿智巨龍的星座出現在你身上。當你進行智力或感知檢定，或為了維持法術{@status concentration}而進行體質豁免檢定時，你可以將 {@dice d20} 擲出的 9 或更低視為 10。"
+		],
+		"ENG_name": "Dragon"
+	},
 	"Dragon|Druid|Circle of the Stars|XPHB": {
 		"name": "龍",
 		"source": "XPHB",
@@ -3414,6 +4806,23 @@
 			}
 		],
 		"ENG_name": "Dread Ambusher"
+	},
+	"Dreadful Strikes|Ranger|Fey Wanderer|TCE": {
+		"name": "駭人打擊",
+		"source": "TCE",
+		"page": 58,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Fey Wanderer",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Fey Wanderer feature}",
+			"你能以汲取自妖精荒野陰鬱幽谷、會在心靈留下創傷的魔法增強你的武器打擊。當你以武器命中一個生物時，你可以對目標造成額外 {@damage 1d4} 心靈傷害，目標每回合只能受到此額外傷害一次。",
+			"當你在此職業達到 11 級時，額外傷害增加為 {@damage 1d6}。"
+		],
+		"ENG_name": "Dreadful Strikes"
 	},
 	"Dreadful Strikes|Ranger|Fey Wanderer|XPHB": {
 		"name": "駭人打擊",
@@ -3740,6 +5149,40 @@
 		],
 		"ENG_name": "Elemental Epitome"
 	},
+	"Elemental Gift|Warlock|The Genie|TCE": {
+		"name": "元素之賜",
+		"source": "TCE",
+		"page": 73,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Genie",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Genie feature}",
+			"你開始具備你宗主種類的特徵。你現在擁有一種由你宗主種類決定的傷害類型抗性：鈍擊（達歐）、雷鳴（燈神）、火焰（伊夫利特）或寒冷（馬利德）。",
+			"此外，作為一個附贈動作，你可以讓自己獲得持續 10 分鐘的 30 呎飛行速度，期間你可以懸浮。你可以使用此附贈動作的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Elemental Gift"
+	},
+	"Emboldening Bond|Cleric|Peace Domain|TCE": {
+		"name": "鼓舞羈絆",
+		"source": "TCE",
+		"page": 32,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Peace",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Peace Domain feature}",
+			"你能在彼此和平相處的人們之間建立賦予力量的羈絆。作為一個動作，你選擇你 30 呎內數量等同於你熟練加值的自願生物（可以包括你自己）。你在他們之間建立一道持續 10 分鐘的魔法羈絆，或直到你再次使用此特性為止。當任何受羈絆的生物位於另一個受羈絆生物 30 呎內時，該生物進行攻擊檢定、屬性檢定或豁免檢定時，可以擲一顆 {@dice d4} 並將結果加到檢定上。每個生物每回合最多只能加一次這顆 {@dice d4}。",
+			"你可以使用此特性的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Emboldening Bond"
+	},
 	"Empowered Evocation|Wizard|Evoker|XPHB": {
 		"name": "強效塑能",
 		"source": "XPHB",
@@ -3756,6 +5199,23 @@
 			"每當你施展一個塑能學派的法師法術時，你可以將你的智力調整值加到該法術的一次傷害擲骰上。"
 		],
 		"ENG_name": "Empowered Evocation"
+	},
+	"Enhanced Bond|Druid|Circle of Wildfire|TCE": {
+		"name": "強化羈絆",
+		"source": "TCE",
+		"page": 39,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Wildfire",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Circle of Wildfire feature}",
+			"你與野火之靈的羈絆強化了你的毀滅與復原法術。每當你的野火之靈處於被召喚狀態，而你施展一個造成火焰傷害或恢復生命值的法術時，擲一顆 {@dice d8}，你在該法術的一次傷害擲骰或治療擲骰上獲得等同於擲出數字的加值。",
+			"此外，當你施展一個射程不為自身的法術時，該法術可以從你或你的野火之靈處發出。"
+		],
+		"ENG_name": "Enhanced Bond"
 	},
 	"Envenom Weapons|Rogue|Assassin|XPHB": {
 		"name": "淬毒武器",
@@ -3830,6 +5290,22 @@
 			"此外，每當牠以攻擊檢定命中並造成傷害時，牠可以造成力場傷害或其原本的傷害類型，由你選擇。"
 		],
 		"ENG_name": "Exceptional Training"
+	},
+	"Expansive Bond|Cleric|Peace Domain|TCE": {
+		"name": "擴展羈絆",
+		"source": "TCE",
+		"page": 32,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Peace",
+		"subclassSource": "TCE",
+		"level": 17,
+		"header": 2,
+		"entries": [
+			"{@i 17th-level Peace Domain feature}",
+			"現在當受羈絆的生物彼此相距 60 呎內時，你的鼓舞羈絆與保護羈絆特性的益處就能生效。此外，當一個生物使用保護羈絆承受他人的傷害時，該生物對該傷害具有抗性。"
+		],
+		"ENG_name": "Expansive Bond"
 	},
 	"Experimental Elixir|Artificer|Alchemist|EFA": {
 		"name": "實驗靈藥",
@@ -4120,6 +5596,23 @@
 		],
 		"ENG_name": "Extra Attack"
 	},
+	"Eyes of Night|Cleric|Twilight Domain|TCE": {
+		"name": "夜之眼",
+		"source": "TCE",
+		"page": 34,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Twilight",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Twilight Domain feature}",
+			"你能看穿最深沉的幽暗。你擁有範圍 300 呎的{@sense darkvision}。在此範圍內，你能在微光中視物如同在明亮光照中一樣，在黑暗中視物如同在微光中一樣。",
+			"作為一個動作，你可以用魔法將此特性的{@sense darkvision}分享給你 10 呎內你能看見的自願生物，數量至多等同於你的感知調整值（至少一個生物）。分享的{@sense darkvision}持續 1 小時。分享後，除非你消耗任意環階的法術欄位再次分享，否則直到你完成長休前都無法再次這麼做。"
+		],
+		"ENG_name": "Eyes of Night"
+	},
 	"Fanatical Focus|Barbarian|Path of the Zealot|XPHB": {
 		"name": "狂熱專注",
 		"source": "XPHB",
@@ -4172,6 +5665,40 @@
 		],
 		"ENG_name": "Fast Hands"
 	},
+	"Fathomless Plunge|Warlock|The Fathomless|TCE": {
+		"name": "深淵躍入",
+		"source": "TCE",
+		"page": 72,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Fathomless",
+		"subclassSource": "TCE",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"{@i 14th-level Fathomless feature}",
+			"你可以以魔法開啟通往水域目的地的臨時通道。作為一個動作，你可以傳送你自己與你 30 呎內至多五個你能看見的其他自願生物。在觸手的漩渦中，你們全都消失，然後在至多 1 哩外一片你見過的水域（池塘大小或更大）中或其 30 呎內重新出現，每個人都出現在彼此 30 呎內的一個未佔據空間。",
+			"一旦你使用此特性，在完成短休或長休前無法再次使用。"
+		],
+		"ENG_name": "Fathomless Plunge"
+	},
+	"Fey Reinforcements|Ranger|Fey Wanderer|TCE": {
+		"name": "妖精援軍",
+		"source": "TCE",
+		"page": 58,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Fey Wanderer",
+		"subclassSource": "TCE",
+		"level": 11,
+		"header": 2,
+		"entries": [
+			"{@i 11th-level Fey Wanderer feature}",
+			"妖精荒野的王庭以妖精生物的協助祝福了你：你習得{@spell summon fey|tce}。它不計入你已知的遊俠法術數量，且你施展它時無需材料成分。你也可以不消耗法術欄位施展它一次，並在完成長休時恢復這樣做的能力。",
+			"每當你開始施展此法術時，你可以修改它，使其不需要{@status concentration}。若你這樣做，該次施法的法術持續時間變為 1 分鐘。"
+		],
+		"ENG_name": "Fey Reinforcements"
+	},
 	"Fey Reinforcements|Ranger|Fey Wanderer|XPHB": {
 		"name": "妖精援軍",
 		"source": "XPHB",
@@ -4187,6 +5714,95 @@
 			"每當你開始施展此法術時，你可以調整它，使其不需要{@status Concentration|XPHB}。若你這麼做，該次施法的持續時間變為 1 分鐘。"
 		],
 		"ENG_name": "Fey Reinforcements"
+	},
+	"Fey Wanderer Magic|Ranger|Fey Wanderer|TCE": {
+		"name": "妖精漫遊者魔法",
+		"source": "TCE",
+		"page": 58,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Fey Wanderer",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Fey Wanderer feature}",
+			"當你在此職業達到特定等級時，你會習得一個額外的法術，如「妖精漫遊者法術」表所示。每個法術對你而言都視為遊俠法術，但不計入你已知的遊俠法術數量。",
+			{
+				"type": "table",
+				"caption": "妖精漫遊者法術",
+				"colLabels": [
+					"遊俠等級",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"3 級",
+						"{@spell charm person}"
+					],
+					[
+						"5 級",
+						"{@spell misty step}"
+					],
+					[
+						"9 級",
+						"{@spell dispel magic}"
+					],
+					[
+						"13 級",
+						"{@spell dimension door}"
+					],
+					[
+						"17 級",
+						"{@spell mislead}"
+					]
+				]
+			},
+			"你也擁有來自妖精盟友或妖精力量之地的超自然祝福。從「妖精荒野贈禮」表中選擇你的祝福，或隨機決定。",
+			{
+				"type": "table",
+				"caption": "妖精荒野贈禮",
+				"colLabels": [
+					"d6",
+					"贈禮"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"當你進行短休或長休時，幻象蝴蝶會在你周圍飛舞。"
+					],
+					[
+						"2",
+						"每天黎明時，新鮮的當季花朵會從你的頭髮中綻放。"
+					],
+					[
+						"3",
+						"你身上隱約散發著肉桂、薰衣草、肉荳蔻或其他令人安心的香草或香料氣味。"
+					],
+					[
+						"4",
+						"當沒有人直視你的影子時，它會跳舞。"
+					],
+					[
+						"5",
+						"你的頭上長出了角或鹿角。"
+					],
+					[
+						"6",
+						"每天黎明時，你的皮膚與頭髮會改變顏色以配合季節。"
+					]
+				]
+			}
+		],
+		"ENG_name": "Fey Wanderer Magic"
 	},
 	"Fey Wanderer Spells|Ranger|Fey Wanderer|XPHB": {
 		"name": "妖精漫遊者法術",
@@ -4275,6 +5891,32 @@
 			}
 		],
 		"ENG_name": "Fey Wanderer Spells"
+	},
+	"Fey Wanderer|Ranger|Fey Wanderer|TCE": {
+		"name": "妖精漫遊者",
+		"source": "TCE",
+		"page": 58,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Fey Wanderer",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"由於大妖精的恩賜、你從會說話的樹上吃下的閃亮果實、你曾在其中游泳的魔法泉水，或其他某個吉兆事件，一股妖精的神秘氣息環繞著你。無論你如何獲得妖精魔法，你現在都是一名妖精漫遊者——一名同時代表凡人與妖精領域的遊俠。當你漫遊多元宇宙時，你愉快的笑聲照亮受壓迫者的心，而你的武藝令敵人膽寒，因為妖精的歡笑無比盛大，而他們的憤怒無比可怕。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Dreadful Strikes|Ranger||Fey Wanderer|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Fey Wanderer Magic|Ranger||Fey Wanderer|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Otherworldly Glamour|Ranger||Fey Wanderer|TCE|3"
+			}
+		],
+		"ENG_name": "Fey Wanderer"
 	},
 	"Fey Wanderer|Ranger|Fey Wanderer|XPHB": {
 		"name": "妖精漫遊者",
@@ -4426,6 +6068,81 @@
 		],
 		"ENG_name": "Flurry of Healing and Harm"
 	},
+	"Flurry of Healing and Harm|Monk|Way of Mercy|TCE": {
+		"name": "治療與傷害連擊",
+		"source": "TCE",
+		"page": 49,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Mercy",
+		"subclassSource": "TCE",
+		"level": 11,
+		"header": 2,
+		"entries": [
+			"{@i 11th-level Way of Mercy feature}",
+			"你現在能施予一連串的撫慰與傷痛。當你使用疾風連擊時，你現在可以將每次徒手打擊都替換為使用一次治療之手，且治療不需花費氣點。",
+			"此外，當你以疾風連擊進行徒手打擊時，你可以在該次打擊中使用傷害之手，而不需為傷害之手花費氣點。你仍然每回合只能使用傷害之手一次。"
+		],
+		"ENG_name": "Flurry of Healing and Harm"
+	},
+	"Form of the Beast|Barbarian|Path of the Beast|TCE": {
+		"name": "野獸形態",
+		"source": "TCE",
+		"page": 24,
+		"className": "Barbarian",
+		"classSource": "PHB",
+		"subclassShortName": "Beast",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Path of the Beast feature}",
+			"當你進入狂暴時，你可以變身，展現你體內的獸性力量。直到狂暴結束前，你會顯現一種天生武器。它對你而言視為簡易近戰武器，以它攻擊時，你照常將力量調整值加到攻擊檢定與傷害擲骰上。",
+			"每次狂暴時，你選擇武器的形態：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "啃咬",
+						"entry": "你的嘴變成野獸的口鼻或巨大的顎（由你選擇）。命中時造成 {@damage 1d8} 穿刺傷害。在你的每個回合中一次，當你以此啃咬對生物造成傷害時，若你命中時的生命值不到一半，你恢復等同於你熟練加值的生命值。",
+						"ENG_name": "Bite"
+					},
+					{
+						"type": "item",
+						"name": "爪擊",
+						"entry": "你的每隻手都變成一隻爪，若該手空著，你就能將它當作武器使用。命中時造成 {@damage 1d6} 揮砍傷害。在你的每個回合中一次，當你使用{@action Attack}動作以爪攻擊時，你可以作為同一動作的一部分再進行一次爪擊。",
+						"ENG_name": "Claws"
+					},
+					{
+						"type": "item",
+						"name": "尾擊",
+						"entry": "你長出一條會甩動、帶刺的尾巴，命中時造成 {@damage 1d8} 穿刺傷害，並具有觸及屬性。若你 10 呎內一個你能看見的生物以攻擊檢定命中你，你可以使用你的反應甩動尾巴並擲一顆 {@dice d8}，使你的 AC 獲得等同於擲骰結果的加值，可能使該攻擊未命中你。",
+						"ENG_name": "Tail"
+					}
+				]
+			}
+		],
+		"ENG_name": "Form of the Beast"
+	},
+	"Forms of Your Astral Self|Monk|Way of the Astral Self|TCE": {
+		"name": "星界自我的形貌",
+		"source": "TCE",
+		"page": 50,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Astral Self",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"type": "inset",
+		"entries": [
+			"星界自我是武僧靈魂的半透明化身。因此，星界自我可以反映武僧的背景、理想、缺點與羈絆，而星界自我的樣貌不一定與武僧相似。例如，一名瘦長人類的星界自我可能令人聯想到牛頭人——那是武僧在內心感受到的力量。同樣地，一名半獸人武僧可能顯現出輕紗般的手臂與纖細的面容，代表這名半獸人靈魂中溫柔的美。每個星界自我都是獨一無二的，此修道傳承中的某些武僧，因其星界自我的外貌而聞名，更勝於他們本身的外貌。",
+			"選擇此道途時，請思考定義你這名武僧的特質。你是否執著於某件事物？你是受正義還是私慾所驅使？這些動機都可能體現在你星界自我的形貌中。"
+		],
+		"ENG_name": "Forms of Your Astral Self"
+	},
 	"Fortified Position|Artificer|Artillerist|EFA": {
 		"name": "堅守要塞",
 		"source": "EFA",
@@ -4501,6 +6218,22 @@
 		],
 		"ENG_name": "Frenzy"
 	},
+	"Full of Stars|Druid|Circle of Stars|TCE": {
+		"name": "滿身星辰",
+		"source": "TCE",
+		"page": 38,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Stars",
+		"subclassSource": "TCE",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"{@i 14th-level Circle of the Stars feature}",
+			"處於星辰形態時，你會變得部分虛體化，使你獲得鈍擊、穿刺與揮砍傷害的抗性。"
+		],
+		"ENG_name": "Full of Stars"
+	},
 	"Full of Stars|Druid|Circle of the Stars|XPHB": {
 		"name": "滿身星辰",
 		"source": "XPHB",
@@ -4515,6 +6248,213 @@
 			"處於星辰形態時，你變得部分無形體，使你對鈍擊、穿刺與劈砍傷害具有{@variantrule Resistance|XPHB}。"
 		],
 		"ENG_name": "Full of Stars"
+	},
+	"Gathered Swarm|Ranger|Swarmkeeper|TCE": {
+		"name": "聚集之群",
+		"source": "TCE",
+		"page": 59,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Swarmkeeper",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Swarmkeeper feature}",
+			"一群無形的自然之靈與你締結了羈絆，能在戰鬥中協助你。只要你還活著，這群靈就會留在你的空間中，在你身上爬行，或在你的空間內繞著你飛舞、竄動。其外觀由你決定，或擲「群體外觀」表產生其外觀。",
+			{
+				"type": "table",
+				"caption": "群體外觀",
+				"colLabels": [
+					"d4",
+					"外貌"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"成群的昆蟲"
+					],
+					[
+						"2",
+						"迷你枝條枯萎怪"
+					],
+					[
+						"3",
+						"振翅的鳥兒"
+					],
+					[
+						"4",
+						"頑皮的小精靈"
+					]
+				]
+			},
+			"在你的每個回合中一次，當你以攻擊命中一個生物後，你可以立即讓這群靈以下列其中一種方式協助你：",
+			{
+				"type": "list",
+				"items": [
+					"該次攻擊的目標受到來自群體的 {@damage 1d6} 穿刺傷害。",
+					"該次攻擊的目標必須成功通過一次對抗你法術豁免 DC 的力量豁免檢定，否則被群體朝你選擇的方向水平移動至多 15 呎。",
+					"你被群體朝你選擇的方向水平移動 5 呎。"
+				]
+			},
+			{
+				"type": "inset",
+				"name": "這是你的群體",
+				"entries": [
+					"馭群者的群體與法術反映了角色與自然之靈的羈絆。把握機會在遊戲中描述群體與遊俠的魔法。例如，當你的遊俠施展氣化形體時，他們可能看起來是融入群體之中，而非化為一團霧氣；或者{@spell arcane eye}法術可能創造出你群體的一個延伸部分為你偵察。這類描述不會改變法術的效果，但它們是透過職業能力探索角色敘事的絕佳機會。關於自訂法術的更多指引，請見第 3 章的「個人化法術」一節。",
+					"此外，記得群體的外觀由你自訂，別覺得只能侷限於單一外觀。也許靈的樣貌會隨著遊俠的心情或季節而改變。由你決定！"
+				],
+				"ENG_name": "It's Your Swarm"
+			}
+		],
+		"ENG_name": "Gathered Swarm"
+	},
+	"Genie's Vessel|Warlock|The Genie|TCE": {
+		"name": "精靈容器",
+		"source": "TCE",
+		"page": 73,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Genie",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Genie feature}",
+			"你的宗主贈予你一個魔法容器，讓你獲得部分精靈的力量。此容器是一個微型物件，你可以將它作為你契術師法術的法器。物件是什麼由你決定，或擲「精靈容器」表隨機決定。",
+			{
+				"type": "table",
+				"caption": "精靈容器",
+				"colLabels": [
+					"d6",
+					"容器"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"油燈"
+					],
+					[
+						"2",
+						"甕"
+					],
+					[
+						"3",
+						"帶有暗格的戒指"
+					],
+					[
+						"4",
+						"塞住的瓶子"
+					],
+					[
+						"5",
+						"中空的小雕像"
+					],
+					[
+						"6",
+						"華麗的提燈"
+					]
+				]
+			},
+			"當你觸碰容器時，你可以用下列方式使用它：",
+			{
+				"type": "options",
+				"style": "list-hang-notitle",
+				"entries": [
+					{
+						"type": "refSubclassFeature",
+						"subclassFeature": "Bottled Respite|Warlock|PHB|Genie|TCE|1"
+					},
+					{
+						"type": "refSubclassFeature",
+						"subclassFeature": "Genie's Wrath|Warlock|PHB|Genie|TCE|1"
+					}
+				]
+			},
+			"容器的 AC 等於你的法術豁免 DC。它的生命值等於你的契術師等級加上你的熟練加值，且它免疫毒素與心靈傷害。",
+			"若容器被摧毀或你遺失了它，你可以進行一場 1 小時的儀式，從你的宗主處獲得替代品。此儀式可以在短休或長休期間進行，若先前的容器仍然存在，它會被摧毀。當你死亡時，容器會在一陣元素之力的閃光中消失。"
+		],
+		"ENG_name": "Genie's Vessel"
+	},
+	"Genie's Wrath|Warlock|The Genie|TCE": {
+		"name": "精靈之怒",
+		"source": "TCE",
+		"page": 73,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Genie",
+		"subclassSource": "TCE",
+		"level": 1,
+		"entries": [
+			"在你的每個回合中一次，當你以攻擊檢定命中時，你可以對目標造成等同於你熟練加值的額外傷害。此傷害的類型由你的宗主決定：鈍擊（達歐）、雷鳴（燈神）、火焰（伊夫利特）或寒冷（馬利德）。"
+		],
+		"ENG_name": "Genie's Wrath"
+	},
+	"Ghost Walk|Rogue|Phantom|TCE": {
+		"name": "幽魂行走",
+		"source": "TCE",
+		"page": 62,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Phantom",
+		"subclassSource": "TCE",
+		"level": 13,
+		"header": 2,
+		"entries": [
+			"{@i 13th-level Phantom feature}",
+			"你可以將身體部分相移至亡者的領域，變得如同鬼魂一般。作為一個附贈動作，你化為幽魂形態。處於此形態時，你擁有 10 呎的飛行速度並可以懸浮，且對你的攻擊檢定具有劣勢。你也可以穿過生物與物件，如同它們是{@quickref difficult terrain||3|困難地形}，但若你在生物或物件內部結束你的回合，你會受到 {@damage 1d10} 力場傷害。",
+			"你維持此形態 10 分鐘，或直到你以一個附贈動作結束它。要再次使用此特性，你必須完成一次長休，或在啟動幽魂行走的附贈動作中摧毀你的一件靈魂飾品。"
+		],
+		"ENG_name": "Ghost Walk"
+	},
+	"Giant's Might|Fighter|Rune Knight|TCE": {
+		"name": "巨人之力",
+		"source": "TCE",
+		"page": 44,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Rune Knight",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Rune Knight feature}",
+			"你學會了如何讓自己灌注巨人的力量。作為一個附贈動作，你以魔法獲得下列好處，持續 1 分鐘：",
+			{
+				"type": "list",
+				"items": [
+					"若你小於大型，你會連同身上穿戴的一切變為大型。若你沒有足夠的空間變為大型，你的體型不會改變。",
+					"你在力量檢定與力量豁免檢定上具有優勢。",
+					"在你的每個回合中一次，你的一次武器攻擊或徒手打擊命中時，可以對目標造成額外 {@damage 1d6} 傷害。"
+				]
+			},
+			"你可以使用此特性的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Giant's Might"
+	},
+	"Gift of the Sea|Warlock|The Fathomless|TCE": {
+		"name": "海洋之賜",
+		"source": "TCE",
+		"page": 72,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Fathomless",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Fathomless feature}",
+			"你獲得 40 呎的游泳速度，並能在水下呼吸。"
+		],
+		"ENG_name": "Gift of the Sea"
 	},
 	"Gloom Stalker Spells|Ranger|Gloom Stalker|XPHB": {
 		"name": "幽域追蹤者法術",
@@ -4591,6 +6531,29 @@
 		],
 		"ENG_name": "Gloom Stalker"
 	},
+	"Glorious Defense|Paladin|Oath of Glory|TCE": {
+		"name": "榮耀防禦",
+		"source": "TCE",
+		"page": 53,
+		"otherSources": [
+			{
+				"source": "MOT",
+				"page": 29
+			}
+		],
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Glory",
+		"subclassSource": "TCE",
+		"level": 15,
+		"header": 2,
+		"entries": [
+			"{@i 15th-level Oath of Glory feature}",
+			"你能將防禦化為突襲。當你或一個你能看見、位於你 10 呎內的其他生物被一次攻擊檢定命中時，你可以使用你的反應讓目標對該次攻擊的 AC 獲得加值，可能使攻擊落空。此加值等同於你的魅力調整值（最少 +1）。若攻擊落空，只要攻擊者位於你武器的觸及範圍內，你可以作為此反應的一部分對攻擊者進行一次武器攻擊。",
+			"你可以使用此特性的次數等同於你的魅力調整值（最少一次），並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Glorious Defense"
+	},
 	"Glorious Defense|Paladin|Oath of Glory|XPHB": {
 		"name": "榮耀防禦",
 		"source": "XPHB",
@@ -4606,6 +6569,23 @@
 			"你可以使用此能力的次數等同於你的魅力調整值（最少一次），並在完成一次{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。"
 		],
 		"ENG_name": "Glorious Defense"
+	},
+	"Grasping Tentacles|Warlock|The Fathomless|TCE": {
+		"name": "攫握觸手",
+		"source": "TCE",
+		"page": 72,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Fathomless",
+		"subclassSource": "TCE",
+		"level": 10,
+		"header": 2,
+		"entries": [
+			"{@i 10th-level Fathomless feature}",
+			"你習得{@spell Evard's black tentacles}法術。它對你而言視為契術師法術，但不計入你已知的法術數量。你也可以不消耗法術欄位施展它一次，並在完成長休時恢復這樣做的能力。",
+			"每當你施展此法術時，你宗主的魔法會強化你，給予你等同於你契術師等級的臨時生命值。此外，傷害無法打斷你對此法術的{@status concentration}。"
+		],
+		"ENG_name": "Grasping Tentacles"
 	},
 	"Great Old One Patron|Warlock|Great Old One Patron|XPHB": {
 		"name": "舊日支配者宗主",
@@ -4679,6 +6659,23 @@
 		],
 		"ENG_name": "Great Old One Spells"
 	},
+	"Great Stature|Fighter|Rune Knight|TCE": {
+		"name": "偉岸身形",
+		"source": "TCE",
+		"page": 44,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Rune Knight",
+		"subclassSource": "TCE",
+		"level": 10,
+		"header": 2,
+		"entries": [
+			"{@i 10th-level Rune Knight feature}",
+			"你的符文魔法永久地改變了你。當你獲得此特性時，擲 {@dice 3d4}。你的身高增加等同於擲骰結果的吋數。",
+			"此外，你以巨人之力特性造成的額外傷害增加為 {@dice 1d8}。"
+		],
+		"ENG_name": "Great Stature"
+	},
 	"Greater Portent|Wizard|Diviner|XPHB": {
 		"name": "高等預兆",
 		"source": "XPHB",
@@ -4693,6 +6690,22 @@
 			"你夢中的異象愈發強烈，在你心中描繪出對即將發生之事更精確的圖像。你的預兆能力改為擲三顆 d20，而非兩顆。"
 		],
 		"ENG_name": "Greater Portent"
+	},
+	"Guarded Mind|Fighter|Psi Warrior|TCE": {
+		"name": "守護心靈",
+		"source": "TCE",
+		"page": 42,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Psi Warrior",
+		"subclassSource": "TCE",
+		"level": 10,
+		"header": 2,
+		"entries": [
+			"{@i 10th-level Psi Warrior feature}",
+			"流經你體內的靈能強化了你的心靈。你擁有心靈傷害的抗性。此外，若你在回合開始時處於{@condition charmed}或{@condition frightened}狀態，你可以消耗一顆靈能骰，結束自身所有使你陷入這些狀態的效果。"
+		],
+		"ENG_name": "Guarded Mind"
 	},
 	"Guarded Mind|Fighter|Psi Warrior|XPHB": {
 		"name": "守護心靈",
@@ -4712,6 +6725,22 @@
 			"你對精神傷害具有{@variantrule Resistance|XPHB}。此外，若你在回合開始時處於{@condition Charmed|XPHB}或{@condition Frightened|XPHB}狀態，你可以消耗一顆靈能骰（不需要動作），結束你身上所有給予你這些狀態的效果。"
 		],
 		"ENG_name": "Guarded Mind"
+	},
+	"Guardian Coil|Warlock|The Fathomless|TCE": {
+		"name": "守護盤繞",
+		"source": "TCE",
+		"page": 72,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Fathomless",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Fathomless feature}",
+			"你的深淵觸手能保護你與他人，將自身擋在他們與傷害之間。當你或一個你能看見的生物在觸手 10 呎內受到傷害時，你可以使用你的反應選擇其中一個生物，並將該生物所受的傷害減少 {@dice 1d8}。當你在此職業達到 10 級時，觸手減少的傷害增加為 {@dice 2d8}。"
+		],
+		"ENG_name": "Guardian Coil"
 	},
 	"Guardian|Artificer|Armorer|EFA": {
 		"name": "守衛者",
@@ -4813,6 +6842,26 @@
 		],
 		"ENG_name": "Hand of Harm"
 	},
+	"Hand of Harm|Monk|Way of Mercy|TCE": {
+		"name": "傷害之手",
+		"source": "TCE",
+		"page": 49,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Mercy",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"consumes": {
+			"name": "氣",
+			"ENG_name": "Ki"
+		},
+		"entries": [
+			"{@i 3rd-level Way of Mercy feature}",
+			"你運用你的氣造成創傷。當你以徒手打擊命中一個生物時，你可以花費 1 氣點造成額外的死靈傷害，等同於擲一次你的武藝骰 + 你的感知調整值。你每回合只能使用此特性一次。"
+		],
+		"ENG_name": "Hand of Harm"
+	},
 	"Hand of Healing|Monk|Warrior of Mercy|XPHB": {
 		"name": "治療之手",
 		"source": "XPHB",
@@ -4829,6 +6878,27 @@
 		},
 		"entries": [
 			"你可以用一個{@action Magic|XPHB}動作消耗 1 點心力點觸碰一個生物，恢復等同一次武藝骰擲骰結果加上你睿知調整值的{@variantrule Hit Points|XPHB}。當你使用疾風連擊時，你可以將其中一次徒手打擊替換為使用一次此能力，且這次治療不需消耗心力點。"
+		],
+		"ENG_name": "Hand of Healing"
+	},
+	"Hand of Healing|Monk|Way of Mercy|TCE": {
+		"name": "治療之手",
+		"source": "TCE",
+		"page": 49,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Mercy",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"consumes": {
+			"name": "氣",
+			"ENG_name": "Ki"
+		},
+		"entries": [
+			"{@i 3rd-level Way of Mercy feature}",
+			"你神秘的觸碰能修復傷口。作為一個動作，你可以花費 1 氣點觸碰一個生物，恢復其等同於擲一次你的武藝骰 + 你感知調整值的生命值。",
+			"當你使用疾風連擊時，你可以將其中一次徒手打擊替換為使用此特性一次，且此次治療不需花費氣點。"
 		],
 		"ENG_name": "Hand of Healing"
 	},
@@ -4850,6 +6920,28 @@
 		"entries": [
 			"你對生命能量的精通，為你開啟了終極慈悲之門。你可以用一個{@action Magic|XPHB}動作觸碰一個在過去 24 小時內死亡的生物屍體，並消耗 5 點心力點。該生物隨即復活，並擁有等同 {@dice 4d10} 加上你睿知調整值的{@variantrule Hit Points|XPHB}。若該生物死亡時處於下列任何狀態，它復活時這些狀態會被移除：{@condition Blinded|XPHB}、{@condition Deafened|XPHB}、{@condition Paralyzed|XPHB}、{@condition Poisoned|XPHB}與{@condition Stunned|XPHB}。",
 			"一旦你使用此能力，直到你完成一次{@variantrule Long Rest|XPHB}前都無法再次使用。"
+		],
+		"ENG_name": "Hand of Ultimate Mercy"
+	},
+	"Hand of Ultimate Mercy|Monk|Way of Mercy|TCE": {
+		"name": "終極慈悲之手",
+		"source": "TCE",
+		"page": 49,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Mercy",
+		"subclassSource": "TCE",
+		"level": 17,
+		"header": 2,
+		"consumes": {
+			"name": "氣",
+			"amount": 5,
+			"ENG_name": "Ki"
+		},
+		"entries": [
+			"{@i 17th-level Way of Mercy feature}",
+			"你對生命能量的精通為終極的慈悲開啟了大門。作為一個動作，你可以觸碰一具在過去 24 小時內死亡的生物屍體，並消耗 5 氣點。該生物隨即復活，恢復等同於 {@dice 4d10} + 你感知調整值的生命值。若該生物死亡時處於下列任何狀態，它復活時這些狀態會被移除：{@condition blinded}、{@condition deafened}、{@condition paralyzed}、{@condition poisoned}與{@condition stunned}。",
+			"使用此特性後，直到你完成長休前都無法再次使用。"
 		],
 		"ENG_name": "Hand of Ultimate Mercy"
 	},
@@ -4926,6 +7018,20 @@
 			}
 		],
 		"ENG_name": "Holy Nimbus"
+	},
+	"Homing Strikes|Rogue|Soulknife|TCE": {
+		"name": "追蹤打擊",
+		"source": "TCE",
+		"page": 63,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Soulknife",
+		"subclassSource": "TCE",
+		"level": 9,
+		"entries": [
+			"若你以精神之刃進行攻擊檢定而未命中目標，你可以擲一顆靈能骰並將擲出的數字加到攻擊檢定上。若這使攻擊命中，你便消耗該靈能骰。"
+		],
+		"ENG_name": "Homing Strikes"
 	},
 	"Homing Strikes|Rogue|Soulknife|XPHB": {
 		"name": "追蹤打擊",
@@ -5112,6 +7218,22 @@
 		],
 		"ENG_name": "Illusory Self"
 	},
+	"Implement of Peace|Cleric|Peace Domain|TCE": {
+		"name": "和平之器",
+		"source": "TCE",
+		"page": 32,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Peace",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Peace Domain feature}",
+			"你獲得{@skill Insight}、{@skill Performance}或{@skill Persuasion}技能（由你選擇）的熟練。"
+		],
+		"ENG_name": "Implement of Peace"
+	},
 	"Implements of Mercy|Monk|Warrior of Mercy|XPHB": {
 		"name": "慈悲之具",
 		"source": "XPHB",
@@ -5124,6 +7246,61 @@
 		"header": 1,
 		"entries": [
 			"你獲得{@skill Insight|XPHB}與{@skill Medicine|XPHB}技能熟練，以及{@item Herbalism Kit|XPHB}熟練。"
+		],
+		"ENG_name": "Implements of Mercy"
+	},
+	"Implements of Mercy|Monk|Way of Mercy|TCE": {
+		"name": "慈悲之具",
+		"source": "TCE",
+		"page": 49,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Mercy",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Way of Mercy feature}",
+			"你獲得{@skill Insight}與{@skill Medicine}技能的熟練，並獲得{@item herbalism kit|PHB}的熟練。",
+			"你也獲得一副特殊的面具，你在使用此子職業的特性時經常戴著它。面具的外觀由你決定，或擲「慈悲面具」表隨機產生。",
+			{
+				"type": "table",
+				"caption": "慈悲面具",
+				"colLabels": [
+					"d6",
+					"面具外觀"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"渡鴉"
+					],
+					[
+						"2",
+						"空白純白"
+					],
+					[
+						"3",
+						"哭泣的面容"
+					],
+					[
+						"4",
+						"大笑的面容"
+					],
+					[
+						"5",
+						"骷髏"
+					],
+					[
+						"6",
+						"蝴蝶"
+					]
+				]
+			}
 		],
 		"ENG_name": "Implements of Mercy"
 	},
@@ -5391,6 +7568,47 @@
 		],
 		"ENG_name": "Improved Warding Flare"
 	},
+	"Infectious Fury|Barbarian|Path of the Beast|TCE": {
+		"name": "傳染之怒",
+		"source": "TCE",
+		"page": 24,
+		"className": "Barbarian",
+		"classSource": "PHB",
+		"subclassShortName": "Beast",
+		"subclassSource": "TCE",
+		"level": 10,
+		"header": 2,
+		"entries": [
+			"{@i 10th-level Path of the Beast feature}",
+			"當你在狂暴中以天生武器命中一個生物時，你體內的野獸可以用瘋狂的怒火詛咒你的目標。目標必須通過一次感知豁免檢定（DC 等於 8 + 你的體質調整值 + 你的熟練加值），否則承受下列一種效果（由你選擇）：",
+			{
+				"type": "list",
+				"items": [
+					"目標必須使用其反應，對另一個你能看見、由你選擇的生物進行一次近戰攻擊。",
+					"目標受到 {@damage 2d12} 心靈傷害。"
+				]
+			},
+			"你可以使用此特性的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Infectious Fury"
+	},
+	"Infectious Inspiration|Bard|College of Eloquence|TCE": {
+		"name": "感染激勵",
+		"source": "TCE",
+		"page": 29,
+		"className": "Bard",
+		"classSource": "PHB",
+		"subclassShortName": "Eloquence",
+		"subclassSource": "TCE",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"{@i 14th-level College of Eloquence feature}",
+			"當你成功激勵某人時，你雄辯的力量現在能擴散到其他人身上。當你 60 呎內的一個生物將你的吟遊激勵骰加到其屬性檢定、攻擊檢定或豁免檢定上，且該擲骰成功時，你可以使用你的反應鼓舞你 60 呎內另一個能聽見你的生物（你自己除外），給予它一顆吟遊激勵骰，且不消耗你的任何吟遊激勵使用次數。",
+			"你可以使用此反應的次數等同於你的魅力調整值（至少一次），並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Infectious Inspiration"
+	},
 	"Infiltration Expertise|Rogue|Assassin|XPHB": {
 		"name": "滲透專精",
 		"source": "XPHB",
@@ -5516,6 +7734,31 @@
 			"此能力造成的移動都不會引發{@action Opportunity Attack|XPHB|藉機攻擊}。"
 		],
 		"ENG_name": "Inspiring Movement"
+	},
+	"Inspiring Smite|Paladin|Oath of Glory|TCE": {
+		"name": "激勵斬擊",
+		"source": "TCE",
+		"page": 53,
+		"otherSources": [
+			{
+				"source": "MOT",
+				"page": 29
+			}
+		],
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Glory",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 2,
+		"consumes": {
+			"name": "引導神力",
+			"ENG_name": "Channel Divinity"
+		},
+		"entries": [
+			"在你以神聖斬擊特性對一個生物造成傷害後，你可以立即作為一個附贈動作使用你的引導神力，將臨時生命值分配給你 30 呎內由你選擇的生物（可以包括你自己）。臨時生命值總數等於 {@dice 2d8} + 你在此職業的等級，以你喜歡的任何方式分配給被選擇的生物。"
+		],
+		"ENG_name": "Inspiring Smite"
 	},
 	"Inspiring Smite|Paladin|Oath of Glory|XPHB": {
 		"name": "激勵斬擊",
@@ -5824,6 +8067,54 @@
 		],
 		"ENG_name": "Lightning Launcher"
 	},
+	"Limited Wish|Warlock|The Genie|TCE": {
+		"name": "有限願望",
+		"source": "TCE",
+		"page": 73,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Genie",
+		"subclassSource": "TCE",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"{@i 14th-level Genie feature}",
+			"你懇求你的宗主為你實現一個小小的願望。作為一個動作，你可以向你的精靈容器說出你的願望，請求一個{@filter 6 環或更低、施法時間為 1 動作的法術|spells|cast time=action|level=0;1;2;3;4;5;6}的效果。此法術可以來自任何職業的法術列表，且你不需要滿足該法術的需求，包括昂貴的成分；該法術會直接作為此動作的一部分生效。",
+			"一旦你使用此特性，在完成 {@dice 1d4} 次長休前無法再次使用。"
+		],
+		"ENG_name": "Limited Wish"
+	},
+	"Living Legend|Paladin|Oath of Glory|TCE": {
+		"name": "活傳奇",
+		"source": "TCE",
+		"page": 53,
+		"otherSources": [
+			{
+				"source": "MOT",
+				"page": 29
+			}
+		],
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Glory",
+		"subclassSource": "TCE",
+		"level": 20,
+		"header": 2,
+		"entries": [
+			"{@i 20th-level Oath of Glory feature}",
+			"你能以你偉大事蹟的傳說——無論真實或誇大——來強化自己。作為一個附贈動作，你獲得下列好處，持續 1 分鐘：",
+			{
+				"type": "list",
+				"items": [
+					"你受到超凡氣場的祝福，在所有魅力檢定上具有優勢。",
+					"在你的每個回合中一次，當你進行武器攻擊而未命中時，你可以使該次攻擊改為命中。",
+					"若你一次豁免檢定失敗，你可以使用你的反應重擲。你必須使用新的擲骰結果。"
+				]
+			},
+			"一旦你使用此特性，在完成長休前無法再次使用，除非你消耗一個 5 環法術欄位來再次使用它。"
+		],
+		"ENG_name": "Living Legend"
+	},
 	"Living Legend|Paladin|Oath of Glory|XPHB": {
 		"name": "活傳奇",
 		"source": "XPHB",
@@ -5913,6 +8204,23 @@
 		],
 		"ENG_name": "Mage Hand Legerdemain"
 	},
+	"Magic Awareness|Barbarian|Path of Wild Magic|TCE": {
+		"name": "魔法感知",
+		"source": "TCE",
+		"page": 25,
+		"className": "Barbarian",
+		"classSource": "PHB",
+		"subclassShortName": "Wild Magic",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Path of Wild Magic feature}",
+			"作為一個動作，你可以讓你的感知對集中的魔法敞開。直到你的下個回合結束前，你知道你 60 呎內任何不在{@quickref Cover||3||全遮蔽}之後的法術或魔法物品的位置。當你感知到一道法術時，你會得知它屬於哪個魔法學派。",
+			"你可以使用此特性的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Magic Awareness"
+	},
 	"Magical Ambush|Rogue|Arcane Trickster|XPHB": {
 		"name": "魔法伏擊",
 		"source": "XPHB",
@@ -5945,6 +8253,61 @@
 			"你總是準備著所選的法術，並且每當你獲得一個吟遊詩人等級時，你可以將其中一個法術替換為另一個符合這些條件的法術。"
 		],
 		"ENG_name": "Magical Discoveries"
+	},
+	"Maneuver Options|Fighter|Battle Master|TCE": {
+		"name": "戰技選項",
+		"source": "TCE",
+		"page": 41,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Battle Master",
+		"subclassSource": "PHB",
+		"level": 3,
+		"isClassFeatureVariant": true,
+		"header": 1,
+		"entries": [
+			"{@i 3 級戰士{@variantrule optional class features|tce|選用特性}}",
+			"若你能使用戰技，下列戰技會加入你可用的選項列表中。戰技可供戰鬥大師使用，也可供擁有特殊特性的角色使用，例如{@optfeature Superior Technique|TCE}戰鬥風格或{@feat Martial Adept}專長。",
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "options",
+						"entries": [
+							{
+								"type": "refOptionalfeature",
+								"optionalfeature": "Ambush|TCE"
+							},
+							{
+								"type": "refOptionalfeature",
+								"optionalfeature": "Bait and Switch|TCE"
+							},
+							{
+								"type": "refOptionalfeature",
+								"optionalfeature": "Brace|TCE"
+							},
+							{
+								"type": "refOptionalfeature",
+								"optionalfeature": "Commanding Presence|TCE"
+							},
+							{
+								"type": "refOptionalfeature",
+								"optionalfeature": "Grappling Strike|TCE"
+							},
+							{
+								"type": "refOptionalfeature",
+								"optionalfeature": "Quick Toss|TCE"
+							},
+							{
+								"type": "refOptionalfeature",
+								"optionalfeature": "Tactical Assessment|TCE"
+							}
+						]
+					}
+				]
+			}
+		],
+		"ENG_name": "Maneuver Options"
 	},
 	"Maneuver Options|Fighter|Battle Master|XPHB": {
 		"name": "戰技選項",
@@ -6047,6 +8410,27 @@
 		],
 		"ENG_name": "Maneuver Options"
 	},
+	"Manifest Mind|Wizard|Order of Scribes|TCE": {
+		"name": "心智顯現",
+		"source": "TCE",
+		"page": 78,
+		"className": "Wizard",
+		"classSource": "PHB",
+		"subclassShortName": "Scribes",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Order of Scribes feature}",
+			"你可以召喚出你覺醒法術書的心智。當這本書在你身上時，作為一個附贈動作，你可以讓此心智顯現為一個微型幽魂物件，懸浮在你 60 呎內一個由你選擇的未佔據空間。幽魂心智無形且不佔據其空間，並在 10 呎半徑內發出微光。它看起來像一本幽靈般的典籍、一道流瀉的文字，或一名過去的學者（由你選擇）。",
+			"顯現期間，幽魂心智能聽見與看見，並擁有範圍 60 呎的{@sense darkvision}。此心智可以透過心靈感應與你分享它所見所聞（不需動作）。",
+			"每當你在你的回合中施展一個法師法術時，你可以如同身處幽魂心智的空間而非你自己的空間一般施展它，並使用它的感官。你每天能這樣做的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。",
+			"作為一個附贈動作，你可以讓幽魂心智懸浮移動至多 30 呎，到一個你或它能看見的未佔據空間。它可以穿過生物，但無法穿過物件。",
+			"若幽魂心智與你相距超過 300 呎、有人對它施展{@spell dispel magic}、覺醒法術書被摧毀、你死亡，或你以一個附贈動作解除幽魂心智，它便會停止顯現。",
+			"一旦你召喚此心智，在完成長休前無法再次這樣做，除非你消耗一個任意環階的法術欄位來再次召喚它。"
+		],
+		"ENG_name": "Manifest Mind"
+	},
 	"Manipulate Elements|Monk|Warrior of the Elements|XPHB": {
 		"name": "操控元素",
 		"source": "XPHB",
@@ -6140,6 +8524,64 @@
 		],
 		"ENG_name": "Martial Training"
 	},
+	"Master of Runes|Fighter|Rune Knight|TCE": {
+		"name": "符文大師",
+		"source": "TCE",
+		"page": 44,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Rune Knight",
+		"subclassSource": "TCE",
+		"level": 15,
+		"header": 2,
+		"entries": [
+			"{@i 15th-level Rune Knight feature}",
+			"你可以喚起你從符文雕刻師特性習得的每個符文兩次，而非一次，並在完成短休或長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Master of Runes"
+	},
+	"Master Scrivener|Wizard|Order of Scribes|TCE": {
+		"name": "抄寫大師",
+		"source": "TCE",
+		"page": 78,
+		"className": "Wizard",
+		"classSource": "PHB",
+		"subclassShortName": "Scribes",
+		"subclassSource": "TCE",
+		"level": 10,
+		"header": 2,
+		"entries": [
+			"{@i 10th-level Order of Scribes feature}",
+			"每當你完成長休時，你可以用你的法師羽毛筆觸碰一張空白的紙或羊皮紙，將你覺醒法術書中的一個法術抄寫到卷軸上，藉此製作一張魔法卷軸。製作卷軸時，法術書必須位於你 5 呎內。",
+			"所選的法術必須是 1 環或 2 環，且施法時間必須為 1 動作。一旦抄入卷軸，該法術的力量會增強，視為比正常高一環。你可以作為一個動作閱讀卷軸來施展該法術。其他任何人都無法理解此卷軸，且當你施展該法術或完成下一次長休時，法術會從卷軸上消失。",
+			"你也擅長製作法術卷軸，其說明請見《地下城主指南》的寶藏章節。若你使用你的法師羽毛筆，製作此類卷軸所需花費的金幣與時間減半。"
+		],
+		"ENG_name": "Master Scrivener"
+	},
+	"Mighty Swarm|Ranger|Swarmkeeper|TCE": {
+		"name": "強大之群",
+		"source": "TCE",
+		"page": 59,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Swarmkeeper",
+		"subclassSource": "TCE",
+		"level": 11,
+		"header": 2,
+		"entries": [
+			"{@i 11th-level Swarmkeeper feature}",
+			"你的聚集之群以下列方式變得更加強大：",
+			{
+				"type": "list",
+				"items": [
+					"聚集之群的傷害增加為 {@damage 1d8}。",
+					"若一個生物在對抗被聚集之群移動的豁免檢定中失敗，你也可以讓群體將該生物擊倒{@condition prone}。",
+					"當你被聚集之群移動時，它會給予你{@quickref Cover||3||半身掩護}，直到你的下個回合開始。"
+				]
+			}
+		],
+		"ENG_name": "Mighty Swarm"
+	},
 	"Mindless Rage|Barbarian|Path of the Berserker|XPHB": {
 		"name": "無心狂暴",
 		"source": "XPHB",
@@ -6193,6 +8635,23 @@
 		],
 		"ENG_name": "Misty Escape"
 	},
+	"Misty Wanderer|Ranger|Fey Wanderer|TCE": {
+		"name": "霧中漫遊者",
+		"source": "TCE",
+		"page": 58,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Fey Wanderer",
+		"subclassSource": "TCE",
+		"level": 15,
+		"header": 2,
+		"entries": [
+			"{@i 15th-level Fey Wanderer feature}",
+			"你能在妖精荒野中穿梭進出，眨眼間便完成移動：你可以不消耗法術欄位施展{@spell misty step}。你能這樣做的次數等同於你的感知調整值（最少一次），並在完成長休時恢復所有已消耗的使用次數。",
+			"此外，每當你施展{@i 迷蹤步}時，你可以帶上一個你能看見、位於你 5 呎內的自願生物。該生物傳送到你目的地空間 5 呎內一個由你選擇的未佔據空間。"
+		],
+		"ENG_name": "Misty Wanderer"
+	},
 	"Misty Wanderer|Ranger|Fey Wanderer|XPHB": {
 		"name": "霧中漫遊者",
 		"source": "XPHB",
@@ -6224,6 +8683,72 @@
 			"你可以使用此能力的次數等同於你的睿知調整值（最少一次），並在完成一次{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。你也可以為每一次想恢復的使用次數消耗一個 2 環以上的法術欄位來恢復（不需要動作）。"
 		],
 		"ENG_name": "Moonlight Step"
+	},
+	"Mortal Bulwark|Paladin|Oath of the Watchers|TCE": {
+		"name": "凡界壁壘",
+		"source": "TCE",
+		"page": 54,
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Watchers",
+		"subclassSource": "TCE",
+		"level": 20,
+		"header": 2,
+		"entries": [
+			"{@i 20th-level Oath of the Watchers feature}",
+			"你顯現出一絲神聖之力的火花，以守護凡人領域。作為一個附贈動作，你獲得下列好處，持續 1 分鐘：",
+			{
+				"type": "list",
+				"items": [
+					"你獲得範圍 120 呎的{@sense truesight}。",
+					"你對異怪、天界生物、元素、精類與邪魔的攻擊檢定具有優勢。",
+					"當你以攻擊檢定命中一個生物並對其造成傷害時，你也可以迫使它進行一次對抗你法術豁免 DC 的魅力豁免檢定。豁免失敗時，若該生物目前不在其原生存在位面，它會被魔法放逐回去。豁免成功時，該生物在 24 小時內無法被此特性放逐。"
+				]
+			},
+			"一旦你使用此附贈動作，在完成長休前無法再次使用，除非你消耗一個 5 環法術欄位來再次使用它。"
+		],
+		"ENG_name": "Mortal Bulwark"
+	},
+	"Mote of Potential|Bard|College of Creation|TCE": {
+		"name": "潛能微粒",
+		"source": "TCE",
+		"page": 27,
+		"className": "Bard",
+		"classSource": "PHB",
+		"subclassShortName": "Creation",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level College of Creation feature}",
+			"每當你給予一個生物一顆吟遊激勵骰時，你可以唱出創造之歌的一個音符，創造一顆微型的潛能微粒，它會在該生物 5 呎內環繞。微粒無形且無法被傷害，持續到該吟遊激勵骰失去為止。微粒的外觀是一個音符、一顆星星、一朵花，或其他由你選擇的藝術或生命象徵。",
+			"當該生物使用吟遊激勵骰時，微粒會依據該骰子加在屬性檢定、攻擊檢定還是豁免檢定上而提供額外效果，詳述如下：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "屬性檢定",
+						"entry": "當該生物擲吟遊激勵骰並將其加到屬性檢定上時，該生物可以再擲一次吟遊激勵骰並選擇使用哪一次的結果，同時微粒會迸裂，短暫地放出繽紛無害的火花。",
+						"ENG_name": "Ability Check"
+					},
+					{
+						"type": "item",
+						"name": "攻擊檢定",
+						"entry": "在該生物擲吟遊激勵骰並將其加到對一個目標的攻擊檢定上後，微粒會立即轟然碎裂。目標以及其 5 呎內每個你能看見、由你選擇的生物必須通過一次對抗你法術豁免 DC 的體質豁免檢定，否則受到等同於吟遊激勵骰擲骰結果的雷鳴傷害。",
+						"ENG_name": "Attack Roll"
+					},
+					{
+						"type": "item",
+						"name": "豁免檢定",
+						"entry": "在該生物擲吟遊激勵骰並將其加到豁免檢定上後，微粒會伴隨著輕柔的樂聲立即消失，使該生物獲得等同於吟遊激勵骰擲骰結果加上你魅力調整值的臨時生命值（至少 1 點臨時生命值）。",
+						"ENG_name": "Saving Throw"
+					}
+				]
+			}
+		],
+		"ENG_name": "Mote of Potential"
 	},
 	"Natural Recovery|Druid|Circle of the Land|XPHB": {
 		"name": "自然恢復",
@@ -6479,6 +9004,38 @@
 		],
 		"ENG_name": "Oath of Glory Spells"
 	},
+	"Oath of Glory|Paladin|Oath of Glory|TCE": {
+		"name": "榮耀之誓",
+		"source": "TCE",
+		"page": 53,
+		"otherSources": [
+			{
+				"source": "MOT",
+				"page": 29
+			}
+		],
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Glory",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"立下榮耀之誓的聖騎士相信，他們與同伴注定會透過英勇事蹟獲得榮耀。他們勤奮訓練並激勵同伴，讓所有人在命運召喚時都已做好準備。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Tenets of Glory|Paladin||Glory|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Oath Spells|Paladin||Glory|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Channel Divinity|Paladin||Glory|TCE|3"
+			}
+		],
+		"ENG_name": "Oath of Glory"
+	},
 	"Oath of Glory|Paladin|Oath of Glory|XPHB": {
 		"name": "榮耀之誓",
 		"source": "XPHB",
@@ -6595,6 +9152,33 @@
 		],
 		"ENG_name": "Oath of the Ancients"
 	},
+	"Oath of the Watchers|Paladin|Oath of the Watchers|TCE": {
+		"name": "守望者之誓",
+		"source": "TCE",
+		"page": 54,
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Watchers",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"守望者之誓使聖騎士肩負保護凡人領域免受異界生物掠奪的職責，這些生物中有許多能輕易摧毀凡人士兵。因此，守望者磨練他們的心智、靈魂與身體，使自己成為對抗這類威脅的終極武器。",
+			"追隨守望者誓言的聖騎士時刻警惕，察覺異界勢力的影響，他們經常建立起密探與線人的網絡，以蒐集可疑教團的情報。對守望者而言，對周遭保持健康的懷疑與警覺，就如同在戰鬥中穿戴護甲一樣自然。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Tenets of the Watchers|Paladin||Watchers|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Oath Spells|Paladin||Watchers|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Channel Divinity|Paladin||Watchers|TCE|3"
+			}
+		],
+		"ENG_name": "Oath of the Watchers"
+	},
 	"Oath of Vengeance Spells|Paladin|Oath of Vengeance|XPHB": {
 		"name": "復仇之誓法術",
 		"source": "XPHB",
@@ -6675,6 +9259,112 @@
 		],
 		"ENG_name": "Oath of Vengeance"
 	},
+	"Oath Spells|Paladin|Oath of Glory|TCE": {
+		"name": "誓言法術",
+		"source": "TCE",
+		"page": 53,
+		"otherSources": [
+			{
+				"source": "MOT",
+				"page": 29
+			}
+		],
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Glory",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Oath of Glory feature}",
+			"你在「榮耀之誓法術」表所列的聖騎士等級獲得誓言法術。關於誓言法術的運作方式，請見神聖誓言職業特性。",
+			{
+				"type": "table",
+				"caption": "榮耀之誓法術",
+				"colLabels": [
+					"聖騎士等級",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"3 級",
+						"{@spell guiding bolt}、{@spell heroism}"
+					],
+					[
+						"5 級",
+						"{@spell enhance ability}、{@spell magic weapon}"
+					],
+					[
+						"9 級",
+						"{@spell haste}、{@spell protection from energy}"
+					],
+					[
+						"13 級",
+						"{@spell compulsion}、{@spell freedom of movement}"
+					],
+					[
+						"17 級",
+						"{@spell commune}、{@spell flame strike}"
+					]
+				]
+			}
+		],
+		"ENG_name": "Oath Spells"
+	},
+	"Oath Spells|Paladin|Oath of the Watchers|TCE": {
+		"name": "誓言法術",
+		"source": "TCE",
+		"page": 54,
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Watchers",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Oath of the Watchers feature}",
+			"你在「守望者之誓」表所列的聖騎士等級獲得誓言法術。關於誓言法術的運作方式，請見神聖誓言職業特性。",
+			{
+				"type": "table",
+				"caption": "守望者之誓法術",
+				"colLabels": [
+					"聖騎士等級",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"3 級",
+						"{@spell alarm}、{@spell detect magic}"
+					],
+					[
+						"5 級",
+						"{@spell moonbeam}、{@spell see invisibility}"
+					],
+					[
+						"9 級",
+						"{@spell counterspell}、{@spell nondetection}"
+					],
+					[
+						"13 級",
+						"{@spell aura of purity}、{@spell banishment}"
+					],
+					[
+						"17 級",
+						"{@spell hold monster}、{@spell scrying}"
+					]
+				]
+			}
+		],
+		"ENG_name": "Oath Spells"
+	},
 	"Oceanic Gift|Druid|Circle of the Sea|XPHB": {
 		"name": "海洋之禮",
 		"source": "XPHB",
@@ -6690,6 +9380,41 @@
 			"此外，若你在顯現時消耗兩次而非一次荒野形態使用次數，你可以同時在另一個生物與你自己周圍顯現該{@variantrule Emanation [Area of Effect]|XPHB|散發}。"
 		],
 		"ENG_name": "Oceanic Gift"
+	},
+	"Oceanic Soul|Warlock|The Fathomless|TCE": {
+		"name": "海洋之魂",
+		"source": "TCE",
+		"page": 72,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Fathomless",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Fathomless feature}",
+			"你現在在深海中更加自在。你獲得寒冷傷害的抗性。此外，當你完全沒入水中時，任何同樣完全沒入水中的生物都能理解你的話語，你也能理解它們的話語。"
+		],
+		"ENG_name": "Oceanic Soul"
+	},
+	"One with the Word|Wizard|Order of Scribes|TCE": {
+		"name": "與文字合一",
+		"source": "TCE",
+		"page": 78,
+		"className": "Wizard",
+		"classSource": "PHB",
+		"subclassShortName": "Scribes",
+		"subclassSource": "TCE",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"{@i 14th-level Order of Scribes feature}",
+			"你與覺醒法術書的連結變得如此深刻，使你的靈魂與它交織在一起。當這本書在你身上時，你在所有智力（{@skill Arcana}）檢定上具有優勢，因為法術書會幫助你回想魔法知識。",
+			"此外，若你在法術書的心智顯現期間受到傷害，你可以使用你的反應解除幽魂心智，運用它的魔法拯救自己，從而避免你所受的全部傷害。接著擲 {@dice 3d6}。法術書會暫時失去由你選擇、總環階等於或高於該擲骰結果的法術。例如，若擲骰總和為 9，書中會消失總環階至少為 9 的法術，可能是一個 9 環法術、三個 3 環法術，或其他組合。若書中沒有足夠的法術來支付此代價，你的生命值會降至 0。",
+			"直到你完成 {@dice 1d6} 次長休前，你都無法施展失去的法術，即使你在卷軸或另一本法術書中找到它們也一樣。在你完成所需次數的休息後，這些法術會重新出現在法術書中。",
+			"一旦你使用此反應，在完成長休前無法再次這樣做。"
+		],
+		"ENG_name": "One with the Word"
 	},
 	"Open Hand Technique|Monk|Warrior of the Open Hand|XPHB": {
 		"name": "散打技巧",
@@ -6731,6 +9456,111 @@
 		],
 		"ENG_name": "Open Hand Technique"
 	},
+	"Order Domain|Cleric|Order Domain|TCE": {
+		"name": "秩序領域",
+		"source": "TCE",
+		"page": 31,
+		"otherSources": [
+			{
+				"source": "GGR",
+				"page": 25
+			}
+		],
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Order",
+		"subclassSource": "TCE",
+		"level": 1,
+		"entries": [
+			"秩序領域代表紀律，以及對社會或機構的忠誠，與對其法律的嚴格服從。在拉尼卡，此領域受到阿佐理斯議會的牧師青睞，他們用它來維護與執行法律；歐佐夫教會的牧師也偏好此領域，他們利用法律與秩序謀取私利。在其他世界，賦予此領域的神祇包括{@deity Bane}、{@deity Tyr}、{@deity Majere|Dragonlance}、{@deity Erathis|Dawn War|DMG}、{@deity Pholtus|Greyhawk}、{@deity Wee Jas|Greyhawk}、{@deity Aureon|Eberron}、{@deity Maglubiyet|Nonhuman}、{@deity Nuada|Celtic}、{@deity Athena|Greek}、{@deity Anubis|Egyptian}、{@deity Forseti|Norse}與{@deity Asmodeus|Dawn War|DMG}。",
+			"秩序的理想是對法律的服從高於一切，而非對特定個人、一時的情緒或民意的服從。秩序牧師通常關心事情是如何完成的，而非行動的結果是否公正。遵守法律並服從其律令至關重要，特別是當這麼做對這些牧師及其公會或神祇有利時。",
+			"法律建立階級。被法律選為領導者的人必須被服從。服從者必須盡其所能地服從。以這種方式，法律創造出錯綜複雜的義務網絡，讓社會得以在混亂的多元宇宙中建立秩序與安全。",
+			"在每個標示的牧師等級，你將所列的法術加入你的已準備法術中。",
+			{
+				"type": "table",
+				"caption": "秩序領域法術",
+				"colLabels": [
+					"牧師等級",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1 級",
+						"{@spell command}、{@spell heroism}"
+					],
+					[
+						"3 級",
+						"{@spell hold person}、{@spell zone of truth}"
+					],
+					[
+						"5 級",
+						"{@spell mass healing word}、{@spell slow}"
+					],
+					[
+						"7 級",
+						"{@spell compulsion}、{@spell locate creature}"
+					],
+					[
+						"9 級",
+						"{@spell commune}、{@spell dominate person}"
+					]
+				]
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bonus Proficiencies|Cleric||Order|TCE|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Voice of Authority|Cleric||Order|TCE|1"
+			}
+		],
+		"ENG_name": "Order Domain"
+	},
+	"Order of Scribes|Wizard|Order of Scribes|TCE": {
+		"name": "抄寫士修會",
+		"source": "TCE",
+		"page": 77,
+		"className": "Wizard",
+		"classSource": "PHB",
+		"subclassShortName": "Scribes",
+		"subclassSource": "TCE",
+		"level": 2,
+		"entries": [
+			"書本魔法——許多人如此稱呼法師之術。考慮到法師花費多少時間埋首鑽研典籍、撰寫關於魔法本質的理論，這個名稱十分貼切。很少見到法師旅行時背包裡不塞滿書本與卷軸，而法師也會不遺餘力地探究古老知識的檔案庫。",
+			"在法師之中，抄寫士修會是最書卷氣的。它在不同的世界中有許多形式，但其主要使命在各處都相同：記錄魔法發現，讓法師之術得以蓬勃發展。雖然所有法師都珍視法術書，但抄寫士修會的法師會以魔法喚醒他們的書，將其變成值得信賴的夥伴。所有法師都研讀書本，但法師抄寫士會和自己的書說話！",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Wizardly Quill|Wizard||Scribes|TCE|2"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Awakened Spellbook|Wizard||Scribes|TCE|2"
+			}
+		],
+		"ENG_name": "Order of Scribes"
+	},
+	"Otherworldly Glamour|Ranger|Fey Wanderer|TCE": {
+		"name": "異界魅力",
+		"source": "TCE",
+		"page": 58,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Fey Wanderer",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Fey Wanderer feature}",
+			"你的妖精特質賦予你超自然的魅力。因此，每當你進行魅力檢定時，你在該檢定上獲得等同於你感知調整值的加值（最少 +1）。",
+			"此外，你從下列技能中選擇一項獲得熟練：{@skill Deception}、{@skill Performance}或{@skill Persuasion}。"
+		],
+		"ENG_name": "Otherworldly Glamour"
+	},
 	"Otherworldly Glamour|Ranger|Fey Wanderer|XPHB": {
 		"name": "異界魅力",
 		"source": "XPHB",
@@ -6765,6 +9595,55 @@
 			"在完成{@variantrule Long Rest|XPHB}前，你每再使用一次此能力，每一環階的死靈傷害就增加 {@damage 1d12}。"
 		],
 		"ENG_name": "Overchannel"
+	},
+	"Path of the Beast|Barbarian|Path of the Beast|TCE": {
+		"name": "野獸道途",
+		"source": "TCE",
+		"page": 24,
+		"className": "Barbarian",
+		"classSource": "PHB",
+		"subclassShortName": "Beast",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"走上野獸道途的野蠻人，從燃燒在靈魂中的獸性火花汲取怒火。那頭野獸會在狂暴的激烈情緒中迸發而出，使野蠻人的身體產生變化。",
+			"這樣的野蠻人可能被原始靈魂寄宿，或是變形者的後裔。你可以選擇你野性力量的起源，或在「野獸起源」表上擲骰決定。",
+			{
+				"type": "table",
+				"caption": "野獸起源",
+				"colLabels": [
+					"d4",
+					"身世"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"你的父母之一是獸化人，你繼承了他們的部分詛咒。"
+					],
+					[
+						"2",
+						"你是一位大德魯伊的後裔，繼承了部分變形的能力。"
+					],
+					[
+						"3",
+						"一個妖精精魂賦予你採用不同獸性特徵的能力。"
+					],
+					[
+						"4",
+						"一個遠古動物精魂寄宿在你體內，讓你得以走上這條道途。"
+					]
+				]
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Form of the Beast|Barbarian||Beast|TCE|3"
+			}
+		],
+		"ENG_name": "Path of the Beast"
 	},
 	"Path of the Berserker|Barbarian|Path of the Berserker|XPHB": {
 		"name": "狂戰士道途",
@@ -6850,6 +9729,165 @@
 			}
 		],
 		"ENG_name": "Path of the Zealot"
+	},
+	"Path of Wild Magic|Barbarian|Path of Wild Magic|TCE": {
+		"name": "狂野魔法道途",
+		"source": "TCE",
+		"page": 25,
+		"className": "Barbarian",
+		"classSource": "PHB",
+		"subclassShortName": "Wild Magic",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"多元宇宙中有許多地方充滿了美、強烈的情感與氾濫的魔法；妖精荒野、上層位面以及其他超自然力量的領域都散發著這樣的力量，並能深刻地影響人們。身為情感深刻的人，野蠻人特別容易受到這些狂野影響，有些野蠻人甚至被魔法轉變。這些浸透魔法的野蠻人走上了狂野魔法道途。精靈、提夫林、阿斯莫與元素裔的野蠻人常會追尋這條道途，渴望展現他們祖先的異界魔法。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Magic Awareness|Barbarian||Wild Magic|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Wild Surge|Barbarian||Wild Magic|TCE|3"
+			}
+		],
+		"ENG_name": "Path of Wild Magic"
+	},
+	"Peace Domain|Cleric|Peace Domain|TCE": {
+		"name": "和平領域",
+		"source": "TCE",
+		"page": 32,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Peace",
+		"subclassSource": "TCE",
+		"level": 1,
+		"entries": [
+			"和平的香膏在健全社群的核心、友好國家之間，以及善良之人的靈魂中蓬勃發展。和平之神激勵各式各樣的人解決衝突，並挺身對抗那些試圖阻止和平興盛的力量。與此領域相關的一些神祇，請見「和平神祇」表。",
+			"和平領域的牧師主持條約的簽署，也常被請來仲裁紛爭。這些牧師的祝福讓人們團結在一起，幫助他們分擔彼此的重擔，而牧師的魔法則協助那些為和平之道而戰的人。",
+			{
+				"type": "table",
+				"caption": "和平神祇",
+				"colLabels": [
+					"神祇範例",
+					"神系"
+				],
+				"colStyles": [
+					"col-6 text-center",
+					"col-6 text-center"
+				],
+				"rows": [
+					[
+						"{@deity Angharradh|Elven|SCAG}",
+						"精靈"
+					],
+					[
+						"{@deity Berronar Truesilver|Dwarven|SCAG}",
+						"矮人"
+					],
+					[
+						"{@deity Boldrei|Eberron}",
+						"艾伯倫"
+					],
+					[
+						"{@deity Cyrrollalee|Halfling|SCAG}",
+						"半身人"
+					],
+					[
+						"{@deity Eldath}",
+						"被遺忘國度"
+					],
+					[
+						"{@deity Gaerdal Ironhand|Gnomish|SCAG}",
+						"地侏"
+					],
+					[
+						"{@deity Paladine|Dragonlance}",
+						"龍槍"
+					],
+					[
+						"{@deity Rao|Greyhawk}",
+						"灰鷹"
+					]
+				]
+			},
+			{
+				"name": "領域法術",
+				"type": "entries",
+				"entries": [
+					"{@i 1st-level Peace Domain feature}",
+					"你在「和平領域法術」表所列的牧師等級獲得領域法術。關於領域法術的運作方式，請見神聖領域職業特性。",
+					{
+						"type": "table",
+						"caption": "和平領域法術",
+						"colLabels": [
+							"牧師等級",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 級",
+								"{@spell heroism}、{@spell sanctuary}"
+							],
+							[
+								"3 級",
+								"{@spell aid}、{@spell warding bond}"
+							],
+							[
+								"5 級",
+								"{@spell beacon of hope}、{@spell sending}"
+							],
+							[
+								"7 級",
+								"{@spell aura of purity}、{@spell Otiluke's resilient sphere}"
+							],
+							[
+								"9 級",
+								"{@spell greater restoration}、{@spell Rary's telepathic bond}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Domain Spells"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Implement of Peace|Cleric||Peace|TCE|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Emboldening Bond|Cleric||Peace|TCE|1"
+			}
+		],
+		"ENG_name": "Peace Domain"
+	},
+	"Peerless Athlete|Paladin|Oath of Glory|TCE": {
+		"name": "無雙運動員",
+		"source": "TCE",
+		"page": 53,
+		"otherSources": [
+			{
+				"source": "MOT",
+				"page": 29
+			}
+		],
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Glory",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 2,
+		"consumes": {
+			"name": "引導神力",
+			"ENG_name": "Channel Divinity"
+		},
+		"entries": [
+			"作為一個附贈動作，你可以使用你的引導神力增強你的運動能力。在接下來的 10 分鐘內，你在力量（{@skill Athletics}）與敏捷（{@skill Acrobatics}）檢定上具有優勢；你能攜帶、推、拖與舉起的重量是平常的兩倍；且你跳遠與跳高的距離增加 10 呎（此額外距離照常消耗移動）。"
+		],
+		"ENG_name": "Peerless Athlete"
 	},
 	"Peerless Athlete|Paladin|Oath of Glory|XPHB": {
 		"name": "無雙運動員",
@@ -6953,6 +9991,24 @@
 		],
 		"ENG_name": "Perfected Armor"
 	},
+	"Performance of Creation|Bard|College of Creation|TCE": {
+		"name": "創造表演",
+		"source": "TCE",
+		"page": 27,
+		"className": "Bard",
+		"classSource": "PHB",
+		"subclassShortName": "Creation",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level College of Creation feature}",
+			"作為一個動作，你可以引導創造之歌的魔法，在你 10 呎內的一處未被佔據空間創造一件自選的非魔法物品。該物品必須出現在能支撐它的表面上或液體中。物品的 gp 價值不能超過你吟遊詩人等級的 20 倍，且物品必須是中型或更小。物品會發出柔和的微光，生物碰觸它時能隱約聽見音樂。創造的物品會在經過等同於你熟練加值的小時數後消失。關於你能創造的物品範例，請見{@book Player's Handbook|PHB|5}的裝備章節。",
+			"以此特性創造物品後，除非你消耗一個 2 環或更高環的法術欄位再次使用此特性，否則直到你完成長休前都無法再次這麼做。你同時只能擁有一件以此特性創造的物品；若你使用此動作時已有一件以此特性創造的物品，前一件會立即消失。",
+			"當你達到 6 級（大型）與 14 級（超大型）時，你能以此特性創造的物品體型各增加一級。"
+		],
+		"ENG_name": "Performance of Creation"
+	},
 	"Phantasmal Creatures|Wizard|Illusionist|XPHB": {
 		"name": "幻影生物",
 		"source": "XPHB",
@@ -6967,6 +10023,30 @@
 			"你總是準備著{@spell Summon Beast|XPHB}與{@spell Summon Fey|XPHB}法術。每當你施展其中任一法術時，你可以將它的學派改為幻術，使被召喚的生物呈現幽靈般的外觀。你可以不消耗法術欄位施展每個法術的幻術版本，但不使用欄位施展時，生物的{@variantrule Hit Points|XPHB}減半。一旦你不使用法術欄位施展了其中任一法術，你必須完成一次{@variantrule Long Rest|XPHB}才能再以此方式施展該法術。"
 		],
 		"ENG_name": "Phantasmal Creatures"
+	},
+	"Phantom|Rogue|Phantom|TCE": {
+		"name": "幻影",
+		"source": "TCE",
+		"page": 62,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Phantom",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"許多盜賊行走在生死之間的細線上，冒著自己的生命危險，也奪取他人的性命。在這條線上冒險時，有些盜賊發現了與死亡本身的神秘連結。這些盜賊從亡者身上獲取知識，並沉浸於負能量之中，最終變得如同鬼魂一般。盜賊公會將他們視為極為高效的情報蒐集者與間諜，十分器重。",
+			"暗影界的許多夏達凱人都是這些陰森技藝的大師，其中有些人願意傳授此道。在被遺忘國度的塞爾與艾伯倫的卡納斯等許多死靈法師從事其技藝的地方，幻影可以成為法師的心腹與得力助手。在死亡之神的神殿中，幻影可能擔任特工，追捕那些企圖欺騙死亡的人，並找回原本可能隨死者埋入墳墓的知識。",
+			"你是如何發現這股陰森力量的？你是否曾在墓地中入睡，醒來時便擁有了新的能力？還是你在一座供奉死亡之神的神殿或盜賊公會中培養了它們？",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Whispers of the Dead|Rogue||Phantom|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Wails from the Grave|Rogue||Phantom|TCE|3"
+			}
+		],
+		"ENG_name": "Phantom"
 	},
 	"Physician's Touch|Monk|Warrior of Mercy|XPHB": {
 		"name": "醫者之觸",
@@ -7004,6 +10084,24 @@
 		],
 		"ENG_name": "Physician's Touch"
 	},
+	"Physician's Touch|Monk|Way of Mercy|TCE": {
+		"name": "醫者之觸",
+		"source": "TCE",
+		"page": 49,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Mercy",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Way of Mercy feature}",
+			"你能以觸碰施予更強大的治療，而若你認為必要，你也能運用你的知識造成傷害。",
+			"當你對一個生物使用治療之手時，你也可以結束影響該生物的一種疾病，或下列一種狀態：{@condition blinded}、{@condition deafened}、{@condition paralyzed}、{@condition poisoned}或{@condition stunned}。",
+			"當你對一個生物使用傷害之手時，你可以使該生物陷入{@condition poisoned}狀態，直到你的下個回合結束。"
+		],
+		"ENG_name": "Physician's Touch"
+	},
 	"Portent|Wizard|Diviner|XPHB": {
 		"name": "預兆",
 		"source": "XPHB",
@@ -7036,6 +10134,22 @@
 			"你的傷害性戲法甚至能影響避開主要效果的生物。當你對一個生物施展戲法，而你的攻擊檢定未命中或目標在對該戲法的豁免檢定中成功時，目標仍會受到該戲法一半的傷害（若有的話），但不會受到該戲法的其他額外效果。"
 		],
 		"ENG_name": "Potent Cantrip"
+	},
+	"Potent Spellcasting|Cleric|Peace Domain|TCE": {
+		"name": "強效施法",
+		"source": "TCE",
+		"page": 32,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Peace",
+		"subclassSource": "TCE",
+		"level": 8,
+		"header": 2,
+		"entries": [
+			"{@i 8th-level Peace Domain feature}",
+			"你將感知調整值加到你以任何牧師戲法造成的傷害上。"
+		],
+		"ENG_name": "Potent Spellcasting"
 	},
 	"Power of the Wilds|Barbarian|Path of the Wild Heart|XPHB": {
 		"name": "荒野之力",
@@ -7112,6 +10226,26 @@
 		],
 		"ENG_name": "Preserve Life"
 	},
+	"Primal Companion|Ranger|Beast Master|TCE": {
+		"name": "原初夥伴",
+		"source": "TCE",
+		"page": 61,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Beast Master",
+		"subclassSource": "PHB",
+		"level": 3,
+		"isClassFeatureVariant": true,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Beast Master variant feature, which replaces the Ranger's Companion feature}",
+			"你以魔法召喚一頭原初野獸，它從你與自然的羈絆中汲取力量。這頭野獸對你與你的同伴友善，並服從你的命令。選擇它的數據欄——{@creature Beast of the Land|TCE}、{@creature Beast of the Sea|TCE}或{@creature Beast of the Sky|TCE}——其中多處使用你的熟練加值（PB）。你也決定這頭野獸是哪種動物，選擇適合該數據欄的種類。無論你選擇哪一種，這頭野獸身上都帶有原初紋路，顯示其神秘的起源。",
+			"在戰鬥中，野獸在你的回合中行動。它可以自行移動並使用其反應，但它唯一採取的動作是{@action Dodge}動作，除非你在你的回合中使用一個附贈動作命令它採取另一個動作。該動作可以是其數據欄中的動作或其他動作。當你採取{@action Attack}動作時，你也可以犧牲你的一次攻擊，命令野獸採取{@action Attack}動作。若你陷入{@condition incapacitated}，野獸可以採取任何它所選擇的動作，而不僅限於{@action Dodge}。",
+			"若野獸在過去一小時內死亡，你可以使用你的動作觸碰它並消耗一個 1 環或更高的法術欄位。野獸會在 1 分鐘後復活，並恢復所有生命值。",
+			"當你完成長休時，你可以召喚一頭不同的原初野獸。新的野獸出現在你 5 呎內一個未佔據的空間，由你選擇其數據欄與外觀。若你已擁有一頭來自此特性的野獸，它會在新野獸出現時消失。若你死亡，野獸也會消失。"
+		],
+		"ENG_name": "Primal Companion"
+	},
 	"Primal Companion|Ranger|Beast Master|XPHB": {
 		"name": "原初夥伴",
 		"source": "XPHB",
@@ -7164,6 +10298,40 @@
 		],
 		"ENG_name": "Projected Ward"
 	},
+	"Protective Bond|Cleric|Peace Domain|TCE": {
+		"name": "保護羈絆",
+		"source": "TCE",
+		"page": 32,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Peace",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Peace Domain feature}",
+			"你在人們之間建立的羈絆，幫助他們互相保護。當一個受你鼓舞羈絆特性影響的生物即將受到傷害時，位於第一個生物 30 呎內的第二個受羈絆生物可以使用其反應，傳送到第一個生物 5 呎內的一處未被佔據空間。接著由第二個生物承受全部傷害。"
+		],
+		"ENG_name": "Protective Bond"
+	},
+	"Protective Field|Fighter|Psi Warrior|TCE": {
+		"name": "守護力場",
+		"source": "TCE",
+		"page": 42,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Psi Warrior",
+		"subclassSource": "TCE",
+		"level": 3,
+		"consumes": {
+			"name": "靈能骰",
+			"ENG_name": "Psionic Energy Die"
+		},
+		"entries": [
+			"當你或一個你能看見、位於你 30 呎內的其他生物受到傷害時，你可以使用你的反應消耗一顆靈能骰，擲出該骰，並將所受傷害減少擲出的數字加上你的智力調整值（最少減少 1），因為你創造出一面短暫的心靈致動力場護盾。"
+		],
+		"ENG_name": "Protective Field"
+	},
 	"Protective Field|Fighter|Psi Warrior|XPHB": {
 		"name": "保護力場",
 		"source": "XPHB",
@@ -7182,6 +10350,25 @@
 			"當你或你周圍 30 呎內另一個你能看見的生物受到傷害時，你可以採取一個{@variantrule Reaction|XPHB}消耗一顆靈能骰，擲骰並將所受傷害減少擲出的數字加上你的智力調整值（最少減少 1），因為你創造出一道短暫的心靈致動力場護盾。"
 		],
 		"ENG_name": "Protective Field"
+	},
+	"Psi Warrior|Fighter|Psi Warrior|TCE": {
+		"name": "靈能戰士",
+		"source": "TCE",
+		"page": 42,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Psi Warrior",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"靈能戰士是覺醒了內在靈能之力的戰士，以灌注靈能的武器打擊、心靈致動的鞭擊與精神力場屏障來增強他們的肉體力量。許多吉斯洋基人會接受訓練成為這樣的戰士，一些最有紀律的高等精靈亦然。在艾伯倫的世界中，許多年輕的卡拉什塔夢想成為靈能戰士。",
+			"身為靈能戰士，你可能是透過獨自修練磨練你的靈能，也可能是在大師的指導下解鎖它，或是在一所致力於將心靈之力同時作為武器與盾牌的學院中精進它。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Psionic Power|Fighter||Psi Warrior|TCE|3"
+			}
+		],
+		"ENG_name": "Psi Warrior"
 	},
 	"Psi Warrior|Fighter|Psi Warrior|XPHB": {
 		"name": "靈能戰士",
@@ -7202,6 +10389,24 @@
 		],
 		"ENG_name": "Psi Warrior"
 	},
+	"Psi-Bolstered Knack|Rogue|Soulknife|TCE": {
+		"name": "靈能加持的本領",
+		"source": "TCE",
+		"page": 63,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Soulknife",
+		"subclassSource": "TCE",
+		"level": 3,
+		"consumes": {
+			"name": "靈能骰",
+			"ENG_name": "Psionic Energy Die"
+		},
+		"entries": [
+			"當你非靈能的訓練讓你失敗時，你的靈能之力可以提供幫助：若你在一次使用你具有熟練的技能或工具進行的屬性檢定中失敗，你可以擲一顆靈能骰並將擲出的數字加到檢定上，有可能將失敗轉為成功。只有在擲骰使檢定成功時，你才會消耗該骰。"
+		],
+		"ENG_name": "Psi-Bolstered Knack"
+	},
 	"Psi-Bolstered Knack|Rogue|Soulknife|XPHB": {
 		"name": "靈能加持的本領",
 		"source": "XPHB",
@@ -7221,6 +10426,20 @@
 		],
 		"ENG_name": "Psi-Bolstered Knack"
 	},
+	"Psi-Powered Leap|Fighter|Psi Warrior|TCE": {
+		"name": "靈能飛躍",
+		"source": "TCE",
+		"page": 42,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Psi Warrior",
+		"subclassSource": "TCE",
+		"level": 7,
+		"entries": [
+			"作為一個附贈動作，你可以用心靈推動你的身體。直到當前回合結束前，你獲得等同於你步行速度兩倍的飛行速度。一旦你採取此附贈動作，在完成短休或長休前無法再次這樣做，除非你消耗一顆靈能骰來再次採取此動作。"
+		],
+		"ENG_name": "Psi-Powered Leap"
+	},
 	"Psi-Powered Leap|Fighter|Psi Warrior|XPHB": {
 		"name": "靈能飛躍",
 		"source": "XPHB",
@@ -7239,6 +10458,43 @@
 			"你可以用一個{@variantrule Bonus Action|XPHB}獲得等同於你{@variantrule Speed|XPHB}兩倍的{@variantrule Fly Speed|XPHB}，直到當前回合結束為止。一旦你採取此{@variantrule Bonus Action|XPHB}，直到你完成一次{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次這麼做，除非你消耗一顆靈能骰（不需要動作）來恢復它的使用次數。"
 		],
 		"ENG_name": "Psi-Powered Leap"
+	},
+	"Psionic Power|Fighter|Psi Warrior|TCE": {
+		"name": "靈能之力",
+		"source": "TCE",
+		"page": 42,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Psi Warrior",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Psi Warrior feature}",
+			"你體內蘊藏著靈能的泉源。此能量以你的靈能骰表示，每顆都是 {@dice d6}。你擁有的靈能骰數量等同於你熟練加值的兩倍，它們為你擁有的各種靈能之力提供能量，詳見下文。",
+			"你的部分能力會消耗其使用的靈能骰，如該能力的描述所述；若某能力需要你使用一顆骰子，而你的骰子已全部消耗，你便無法使用該能力。你在完成長休時恢復所有已消耗的靈能骰。此外，作為一個附贈動作，你可以恢復一顆已消耗的靈能骰，但在完成短休或長休前無法再次這樣做。",
+			"當你在此職業達到特定等級時，你的靈能骰大小會增加：5 級（{@dice d8}）、11 級（{@dice d10}）與 17 級（{@dice d12}）。",
+			"下列能力會使用你的靈能骰。",
+			{
+				"type": "options",
+				"style": "list-hang-notitle",
+				"entries": [
+					{
+						"type": "refSubclassFeature",
+						"subclassFeature": "Protective Field|Fighter|PHB|Psi Warrior|TCE|3"
+					},
+					{
+						"type": "refSubclassFeature",
+						"subclassFeature": "Psionic Strike|Fighter|PHB|Psi Warrior|TCE|3"
+					},
+					{
+						"type": "refSubclassFeature",
+						"subclassFeature": "Telekinetic Movement|Fighter|PHB|Psi Warrior|TCE|3"
+					}
+				]
+			}
+		],
+		"ENG_name": "Psionic Power"
 	},
 	"Psionic Power|Fighter|Psi Warrior|XPHB": {
 		"name": "靈能之力",
@@ -7310,6 +10566,38 @@
 			{
 				"type": "refSubclassFeature",
 				"subclassFeature": "Telekinetic Movement|Fighter|XPHB|Psi Warrior|XPHB|3"
+			}
+		],
+		"ENG_name": "Psionic Power"
+	},
+	"Psionic Power|Rogue|Soulknife|TCE": {
+		"name": "靈能之力",
+		"source": "TCE",
+		"page": 63,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Soulknife",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Soulknife feature}",
+			"你體內蘊藏著靈能的泉源。此能量以你的靈能骰表示，每顆都是 {@dice d6}。你擁有的靈能骰數量等同於你熟練加值的兩倍，它們為你擁有的各種靈能之力提供能量，詳見下文。",
+			"你的部分能力會消耗其使用的靈能骰，如該能力的描述所述；若某能力需要你使用一顆骰子，而你的骰子已全部消耗，你便無法使用該能力。你在完成長休時恢復所有已消耗的靈能骰。此外，作為一個附贈動作，你可以恢復一顆已消耗的靈能骰，但在完成短休或長休前無法再次這樣做。",
+			"當你在此職業達到特定等級時，你的靈能骰大小會增加：5 級（{@dice d8}）、11 級（{@dice d10}）與 17 級（{@dice d12}）。",
+			"下列能力會使用你的靈能骰。",
+			{
+				"type": "options",
+				"entries": [
+					{
+						"type": "refSubclassFeature",
+						"subclassFeature": "Psi-Bolstered Knack|Rogue|PHB|Soulknife|TCE|3"
+					},
+					{
+						"type": "refSubclassFeature",
+						"subclassFeature": "Psychic Whispers|Rogue|PHB|Soulknife|TCE|3"
+					}
+				]
 			}
 		],
 		"ENG_name": "Psionic Power"
@@ -7386,6 +10674,23 @@
 		],
 		"ENG_name": "Psionic Power"
 	},
+	"Psionic Sorcery|Sorcerer|Aberrant Mind|TCE": {
+		"name": "靈能術法",
+		"source": "TCE",
+		"page": 66,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Aberrant Mind",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Aberrant Mind feature}",
+			"當你施展任何來自靈能法術特性的 1 環或更高法術時，你可以照常消耗一個法術欄位施展它，或花費等同於該法術環階的術法點施展它。",
+			"若你使用術法點施展該法術，它不需要言語或姿勢成分，也不需要材料成分，除非材料會被該法術消耗。"
+		],
+		"ENG_name": "Psionic Sorcery"
+	},
 	"Psionic Sorcery|Sorcerer|Aberrant Sorcery|XPHB": {
 		"name": "靈能術法",
 		"source": "XPHB",
@@ -7400,6 +10705,57 @@
 			"當你施展任何一個來自靈能法術能力的 1 環以上法術時，你可以照常消耗法術欄位施展它，或花費等同法術環階的術法點來施展。若你使用術法點施展該法術，它不需要聲音或姿勢構材，也不需要材料構材，除非該材料會被法術消耗或標明了價格。"
 		],
 		"ENG_name": "Psionic Sorcery"
+	},
+	"Psionic Spells|Sorcerer|Aberrant Mind|TCE": {
+		"name": "靈能法術",
+		"source": "TCE",
+		"page": 66,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Aberrant Mind",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Aberrant Mind feature}",
+			"當你在此職業達到特定等級時，你會習得額外的法術，如「靈能法術」表所示。這些法術對你而言都視為術士法術，但不計入你已知的術士法術數量。",
+			"每當你提升一個術士等級時，你可以將一個從此特性獲得的法術替換為另一個相同環階的法術。新法術必須是{@filter 術士、契術師或法師法術列表中的預言或惑控法術|spells|class=sorcerer;warlock;wizard|school=D;E|level=1;2;3;4;5}。",
+			{
+				"type": "table",
+				"caption": "靈能法術",
+				"colLabels": [
+					"術士等級",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1 級",
+						"{@spell arms of Hadar}、{@spell dissonant whispers}、{@spell mind sliver|tce}"
+					],
+					[
+						"3 級",
+						"{@spell calm emotions}、{@spell detect thoughts}"
+					],
+					[
+						"5 級",
+						"{@spell hunger of Hadar}、{@spell sending}"
+					],
+					[
+						"7 級",
+						"{@spell Evard's black tentacles}、{@spell summon aberration|TCE}"
+					],
+					[
+						"9 級",
+						"{@spell Rary's telepathic bond}、{@spell telekinesis}"
+					]
+				]
+			}
+		],
+		"ENG_name": "Psionic Spells"
 	},
 	"Psionic Spells|Sorcerer|Aberrant Sorcery|XPHB": {
 		"name": "靈能法術",
@@ -7446,6 +10802,24 @@
 		],
 		"ENG_name": "Psionic Spells"
 	},
+	"Psionic Strike|Fighter|Psi Warrior|TCE": {
+		"name": "靈能打擊",
+		"source": "TCE",
+		"page": 42,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Psi Warrior",
+		"subclassSource": "TCE",
+		"level": 3,
+		"consumes": {
+			"name": "靈能骰",
+			"ENG_name": "Psionic Energy Die"
+		},
+		"entries": [
+			"你可以用靈能之力推動你的武器。在你的每個回合中一次，當你以攻擊命中你 30 呎內的一個目標並以武器對其造成傷害後，你可以立即消耗一顆靈能骰，擲出該骰，並對目標造成等同於擲出數字加上你智力調整值的力場傷害。"
+		],
+		"ENG_name": "Psionic Strike"
+	},
 	"Psionic Strike|Fighter|Psi Warrior|XPHB": {
 		"name": "靈能打擊",
 		"source": "XPHB",
@@ -7464,6 +10838,23 @@
 			"你能以靈能之力推動你的武器。在你的每個回合中限一次，在你以一次攻擊命中你周圍 30 呎內的一個目標並以武器對它造成傷害後，你可以立即消耗一顆靈能骰，擲骰並對目標造成等同擲出數字加上你智力調整值的力場傷害。"
 		],
 		"ENG_name": "Psionic Strike"
+	},
+	"Psychic Blades|Rogue|Soulknife|TCE": {
+		"name": "精神之刃",
+		"source": "TCE",
+		"page": 63,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Soulknife",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Soulknife feature}",
+			"你可以將你的靈能之力顯現為閃爍的精神能量之刃。每當你採取{@action Attack}動作時，你可以從你空著的手中顯現一把精神之刃，並以該刃進行攻擊。這把魔法刀刃是一把具有靈巧與投擲屬性的簡易近戰武器。它的正常射程為 60 呎，沒有長射程，命中時造成等同於 {@damage 1d6} 加上你用於攻擊檢定的屬性調整值的心靈傷害。刀刃在命中或未命中目標後立即消失，若造成傷害，也不會在目標身上留下任何痕跡。",
+			"在你以此刀刃攻擊後，只要你的另一隻手空著可以創造它，你可以在同一回合中作為一個附贈動作，以第二把精神之刃進行一次近戰或遠程武器攻擊。此附贈攻擊的傷害骰為 {@damage 1d4}，而非 {@damage 1d6}。"
+		],
+		"ENG_name": "Psychic Blades"
 	},
 	"Psychic Blades|Rogue|Soulknife|XPHB": {
 		"name": "精神之刃",
@@ -7488,6 +10879,22 @@
 			"在你於你的回合以這把刃攻擊後，若你的另一隻手空著可以創造第二把，你可以在同一回合中用一個{@variantrule Bonus Action|XPHB}以第二把精神之刃進行一次近戰或遠程攻擊。這次附贈攻擊的傷害骰為 {@damage 1d4} 而非 {@damage 1d6}。"
 		],
 		"ENG_name": "Psychic Blades"
+	},
+	"Psychic Defenses|Sorcerer|Aberrant Mind|TCE": {
+		"name": "精神防禦",
+		"source": "TCE",
+		"page": 66,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Aberrant Mind",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Aberrant Mind feature}",
+			"你獲得心靈傷害的抗性，且你在對抗{@condition charmed}或{@condition frightened}的豁免檢定上具有優勢。"
+		],
+		"ENG_name": "Psychic Defenses"
 	},
 	"Psychic Defenses|Sorcerer|Aberrant Sorcery|XPHB": {
 		"name": "精神防禦",
@@ -7519,6 +10926,20 @@
 		],
 		"ENG_name": "Psychic Spells"
 	},
+	"Psychic Teleportation|Rogue|Soulknife|TCE": {
+		"name": "精神傳送",
+		"source": "TCE",
+		"page": 63,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Soulknife",
+		"subclassSource": "TCE",
+		"level": 9,
+		"entries": [
+			"作為一個附贈動作，你顯現一把精神之刃，消耗一顆靈能骰並擲出它，然後將刀刃擲向一個你能看見的未佔據空間，距離至多等同於擲出數字的 10 倍呎數。接著你傳送到該空間，刀刃隨之消失。"
+		],
+		"ENG_name": "Psychic Teleportation"
+	},
 	"Psychic Teleportation|Rogue|Soulknife|XPHB": {
 		"name": "精神傳送",
 		"source": "XPHB",
@@ -7537,6 +10958,23 @@
 			"你可以用一個{@variantrule Bonus Action|XPHB}顯現一把{@item Psychic Blade|XPHB}，消耗一顆靈能骰並擲出，然後將這把刃擲向一個你能看見的未佔據空間，距離至多為擲出數字乘以 10 呎。接著你傳送到該空間，而這把刃隨即消失。"
 		],
 		"ENG_name": "Psychic Teleportation"
+	},
+	"Psychic Veil|Rogue|Soulknife|TCE": {
+		"name": "精神帷幕",
+		"source": "TCE",
+		"page": 63,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Soulknife",
+		"subclassSource": "TCE",
+		"level": 13,
+		"header": 2,
+		"entries": [
+			"{@i 13th-level Soulknife feature}",
+			"你可以編織一道精神雜訊的帷幕來掩蔽自己。作為一個動作，你可以連同你穿戴或攜帶的一切以魔法變為{@condition invisible}，持續 1 小時，或直到你解除此效果（不需動作）。在你對一個生物造成傷害或迫使一個生物進行豁免檢定後，此隱形會立即提早結束。",
+			"一旦你使用此特性，在完成長休前無法再次這樣做，除非你消耗一顆靈能骰來再次使用此特性。"
+		],
+		"ENG_name": "Psychic Veil"
 	},
 	"Psychic Veil|Rogue|Soulknife|XPHB": {
 		"name": "精神帷幕",
@@ -7557,6 +10995,21 @@
 			"一旦你使用此能力，直到你完成一次{@variantrule Long Rest|XPHB}前都無法再次使用，除非你消耗一顆靈能骰（不需要動作）來恢復它的使用次數。"
 		],
 		"ENG_name": "Psychic Veil"
+	},
+	"Psychic Whispers|Rogue|Soulknife|TCE": {
+		"name": "精神低語",
+		"source": "TCE",
+		"page": 63,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Soulknife",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"你可以在自己與他人之間建立心靈感應溝通——非常適合悄聲潛入。作為一個動作，選擇一個或多個你能看見的生物，數量至多等同於你的熟練加值，然後擲一顆靈能骰。在等同於擲出數字的小時數內，被選擇的生物可以與你進行心靈感應對話，你也可以與他們進行心靈感應對話。要傳送或接收訊息（不需動作），你與另一個生物必須彼此相距 1 哩以內。不會說任何語言的生物無法使用此心靈感應，且生物可以隨時結束心靈感應連結（不需動作）。你與該生物不需要說共通的語言也能理解彼此。",
+			"每次長休後第一次使用此能力時，你不會消耗靈能骰。其他任何時候使用此能力，你都會消耗該骰。"
+		],
+		"ENG_name": "Psychic Whispers"
 	},
 	"Psychic Whispers|Rogue|Soulknife|XPHB": {
 		"name": "精神低語",
@@ -7761,6 +11214,23 @@
 		],
 		"ENG_name": "Remarkable Athlete"
 	},
+	"Rend Mind|Rogue|Soulknife|TCE": {
+		"name": "撕裂心智",
+		"source": "TCE",
+		"page": 63,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Soulknife",
+		"subclassSource": "TCE",
+		"level": 17,
+		"header": 2,
+		"entries": [
+			"{@i 17th-level Soulknife feature}",
+			"你可以讓你的精神之刃直接掃過一個生物的心智。當你使用精神之刃對一個生物造成偷襲傷害時，你可以迫使該目標進行一次感知豁免檢定（DC 等於 8 + 你的熟練加值 + 你的敏捷調整值）。豁免失敗時，目標陷入{@condition stunned} 1 分鐘。{@condition stunned}的目標可以在其每個回合結束時重複此豁免檢定，成功時結束自身的效果。",
+			"一旦你使用此特性，在完成長休前無法再次這樣做，除非你消耗三顆靈能骰來再次使用它。"
+		],
+		"ENG_name": "Rend Mind"
+	},
 	"Rend Mind|Rogue|Soulknife|XPHB": {
 		"name": "撕裂心智",
 		"source": "XPHB",
@@ -7836,6 +11306,23 @@
 		],
 		"ENG_name": "Restore Balance"
 	},
+	"Restore Balance|Sorcerer|Clockwork Soul|TCE": {
+		"name": "恢復平衡",
+		"source": "TCE",
+		"page": 68,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Clockwork Soul",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Clockwork Soul feature}",
+			"你與絕對秩序位面的連結，讓你能平衡混亂的時刻。當一個你能看見、位於你 60 呎內的生物即將以優勢或劣勢擲 {@dice d20} 時，你可以使用你的反應，使該擲骰不受優勢與劣勢影響。",
+			"你可以使用此特性的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Restore Balance"
+	},
 	"Retaliation|Barbarian|Path of the Berserker|XPHB": {
 		"name": "報復",
 		"source": "XPHB",
@@ -7851,6 +11338,31 @@
 			"當你受到你周圍 5 呎內生物造成的傷害時，你可以採取一個{@variantrule Reaction|XPHB}，使用武器或{@variantrule Unarmed Strike|XPHB}對該生物進行一次近戰攻擊。"
 		],
 		"ENG_name": "Retaliation"
+	},
+	"Revelation in Flesh|Sorcerer|Aberrant Mind|TCE": {
+		"name": "血肉啟示",
+		"source": "TCE",
+		"page": 66,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Aberrant Mind",
+		"subclassSource": "TCE",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"{@i 14th-level Aberrant Mind feature}",
+			"你可以釋放隱藏在你體內的異怪真相。作為一個附贈動作，你可以花費 1 點或更多術法點，以魔法轉變你的身體，持續 10 分鐘。每花費一點術法點，你可以獲得下列由你選擇的一項好處，其效果持續到轉變結束：",
+			{
+				"type": "list",
+				"items": [
+					"你能看見你 60 呎內任何{@condition invisible}的生物，只要它不在{@quickref Cover||3||完全掩護}之後。你的雙眼也會變黑，或變成扭動的感官觸鬚。",
+					"你獲得等同於你步行速度的飛行速度，並可以懸浮。飛行時，你的皮膚閃耀著黏液的光澤，或散發出異界的光芒。",
+					"你獲得等同於你步行速度兩倍的游泳速度，並能在水下呼吸。此外，你的頸部長出鰓，或從耳後展開，你的手指長出蹼，或你長出穿透衣物伸展的扭動纖毛。",
+					"你的身體連同你穿戴或攜帶的任何裝備，會變得黏滑柔軟。你可以不需擠壓地穿過任何窄至 1 吋的空間，並可以花費 5 呎移動力掙脫非魔法的束縛或{@condition grappled}狀態。"
+				]
+			}
+		],
+		"ENG_name": "Revelation in Flesh"
 	},
 	"Revelation in Flesh|Sorcerer|Aberrant Sorcery|XPHB": {
 		"name": "血肉啟示",
@@ -7904,6 +11416,147 @@
 		],
 		"ENG_name": "Revelation in Flesh"
 	},
+	"Rune Carver|Fighter|Rune Knight|TCE": {
+		"name": "符文雕刻師",
+		"source": "TCE",
+		"page": 44,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Rune Knight",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Rune Knight feature}",
+			"你可以使用魔法符文強化你的裝備。你從下述符文中習得兩個由你選擇的符文，且每當你在此職業提升一個等級時，你可以將一個已知的符文替換為此特性中的另一個符文。當你在此職業達到特定等級時，你會習得額外的符文，如「已知符文」表所示。",
+			"每當你完成長休時，你可以觸碰數量等同於你已知符文數量的物件，並在每個物件上銘刻一個不同的符文。符合資格的物件必須是一把武器、一套護甲、一面盾牌、一件珠寶，或其他你能穿戴或手持的物品。你的符文會留在物件上，直到你完成長休，且一個物件同一時間只能承載你的一個符文。",
+			{
+				"type": "table",
+				"caption": "已知符文",
+				"colLabels": [
+					"戰士等級",
+					"符文數量"
+				],
+				"colStyles": [
+					"col-6 text-center",
+					"col-6 text-center"
+				],
+				"rows": [
+					[
+						"3 級",
+						"2"
+					],
+					[
+						"7 級",
+						"3"
+					],
+					[
+						"10 級",
+						"4"
+					],
+					[
+						"15 級",
+						"5"
+					]
+				]
+			},
+			"當你習得一個符文時，可以選擇下列符文。若某符文有等級需求，你在此職業的等級必須至少達到該等級才能習得該符文。若某符文需要豁免檢定，你的符文魔法豁免 DC 等於 8 + 你的熟練加值 + 你的體質調整值。",
+			{
+				"type": "options",
+				"count": 2,
+				"entries": [
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Cloud Rune|TCE"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Fire Rune|TCE"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Frost Rune|TCE"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Stone Rune|TCE"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Hill Rune|TCE",
+						"name": "丘陵符文（7 級或更高）",
+						"ENG_name": "Hill Rune (7th Level or Higher)"
+					},
+					{
+						"type": "refOptionalfeature",
+						"optionalfeature": "Storm Rune|TCE",
+						"name": "風暴符文（7 級或更高）",
+						"ENG_name": "Storm Rune (7th Level or Higher)"
+					}
+				]
+			}
+		],
+		"ENG_name": "Rune Carver"
+	},
+	"Rune Knight|Fighter|Rune Knight|TCE": {
+		"name": "符文騎士",
+		"source": "TCE",
+		"page": 44,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Rune Knight",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"符文騎士運用符文的超自然力量強化他們的武藝，這是一種源自巨人的古老技藝。任何巨人家族中都能找到符文雕刻師，你很可能是直接或間接地從這樣一位神秘工匠處學得你的技法。無論你是發現了刻在山丘或洞穴中的巨人作品、從賢者處得知符文，或是親自遇見了巨人，你都研究了巨人的技藝，並學會如何運用魔法符文來強化你的裝備。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bonus Proficiencies|Fighter||Rune Knight|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Rune Carver|Fighter||Rune Knight|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Giant's Might|Fighter||Rune Knight|TCE|3"
+			}
+		],
+		"ENG_name": "Rune Knight"
+	},
+	"Runic Juggernaut|Fighter|Rune Knight|TCE": {
+		"name": "符文巨像",
+		"source": "TCE",
+		"page": 44,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Rune Knight",
+		"subclassSource": "TCE",
+		"level": 18,
+		"header": 2,
+		"entries": [
+			"{@i 18th-level Rune Knight feature}",
+			"你學會如何增幅符文之力帶來的變身。因此，你以巨人之力特性造成的額外傷害增加為 {@dice 1d10}。此外，當你使用該特性時，你的體型可以增大為超大型，且處於該體型時，你的觸及增加 5 呎。"
+		],
+		"ENG_name": "Runic Juggernaut"
+	},
+	"Runic Shield|Fighter|Rune Knight|TCE": {
+		"name": "符文護盾",
+		"source": "TCE",
+		"page": 44,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Rune Knight",
+		"subclassSource": "TCE",
+		"level": 7,
+		"header": 2,
+		"entries": [
+			"{@i 7th-level Rune Knight feature}",
+			"你學會喚起你的符文魔法來保護你的盟友。當一個你能看見、位於你 60 呎內的其他生物被一次攻擊檢定命中時，你可以使用你的反應迫使攻擊者重擲 {@dice d20}，並使用新的擲骰結果。",
+			"你可以使用此特性的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Runic Shield"
+	},
 	"Sacred Weapon|Paladin|Oath of Devotion|XPHB": {
 		"name": "神聖武器",
 		"source": "XPHB",
@@ -7925,6 +11578,24 @@
 			"你可以提早結束此效果（不需要動作）。若你沒有攜帶該武器，此效果也會結束。"
 		],
 		"ENG_name": "Sacred Weapon"
+	},
+	"Sanctuary Vessel|Warlock|The Genie|TCE": {
+		"name": "庇護容器",
+		"source": "TCE",
+		"page": 73,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Genie",
+		"subclassSource": "TCE",
+		"level": 10,
+		"header": 2,
+		"entries": [
+			"{@i 10th-level Genie feature}",
+			"當你透過瓶中休憩特性進入你的精靈容器時，你現在可以選擇你 30 呎內至多五個你能看見的自願生物，被選擇的生物會與你一同被吸入容器中。",
+			"作為一個附贈動作，你可以將任意數量的生物逐出容器，且若你離開或死亡，或容器被摧毀，所有人都會被逐出。",
+			"此外，任何在容器內停留至少 10 分鐘的人（包括你）都會獲得完成一次短休的好處，且任何人若在那裡的短休中消耗任何生命骰，都可以將你的熟練加值加到他們恢復的生命值上。"
+		],
+		"ENG_name": "Sanctuary Vessel"
 	},
 	"Sculpt Spells|Wizard|Evoker|XPHB": {
 		"name": "塑形法術",
@@ -8082,6 +11753,22 @@
 		],
 		"ENG_name": "Share Spells"
 	},
+	"Silver Tongue|Bard|College of Eloquence|TCE": {
+		"name": "三寸不爛之舌",
+		"source": "TCE",
+		"page": 29,
+		"className": "Bard",
+		"classSource": "PHB",
+		"subclassShortName": "Eloquence",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level College of Eloquence feature}",
+			"你是在正確的時間說出正確的話的大師。當你進行魅力（{@skill Persuasion}）或魅力（{@skill Deception}）檢定時，你可以將 {@dice d20} 上擲出的 9 或更低視為 10。"
+		],
+		"ENG_name": "Silver Tongue"
+	},
 	"Smite of Protection|Paladin|Oath of Devotion|XPHB": {
 		"name": "守護斬擊",
 		"source": "XPHB",
@@ -8098,6 +11785,35 @@
 			"你的魔法斬擊如今散發出守護的能量。每當你施展{@spell Divine Smite|XPHB}時，你與你位於守護靈光中的盟友擁有{@variantrule Cover|XPHB|半掩護}。靈光的這項益處持續到你的下個回合開始為止。"
 		],
 		"ENG_name": "Smite of Protection"
+	},
+	"Soul Blades|Rogue|Soulknife|TCE": {
+		"name": "靈魂之刃",
+		"source": "TCE",
+		"page": 63,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Soulknife",
+		"subclassSource": "TCE",
+		"level": 9,
+		"header": 2,
+		"entries": [
+			"{@i 9th-level Soulknife feature}",
+			"你的精神之刃如今是你充盈靈能之靈魂的體現，賦予你下列使用靈能骰的能力：",
+			{
+				"type": "options",
+				"entries": [
+					{
+						"type": "refSubclassFeature",
+						"subclassFeature": "Homing Strikes|Rogue|PHB|Soulknife|TCE|9"
+					},
+					{
+						"type": "refSubclassFeature",
+						"subclassFeature": "Psychic Teleportation|Rogue|PHB|Soulknife|TCE|9"
+					}
+				]
+			}
+		],
+		"ENG_name": "Soul Blades"
 	},
 	"Soul Blades|Rogue|Soulknife|XPHB": {
 		"name": "靈魂之刃",
@@ -8136,6 +11852,30 @@
 			"在一個受你敵意誓言影響的生物以攻擊檢定命中或未命中後，若它位於射程內，你可以立即採取一個{@variantrule Reaction|XPHB}對該生物進行一次近戰攻擊。"
 		],
 		"ENG_name": "Soul of Vengeance"
+	},
+	"Soulknife|Rogue|Soulknife|TCE": {
+		"name": "靈魂之刃",
+		"source": "TCE",
+		"page": 63,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Soulknife",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"大多數刺客以實體武器出擊，許多竊賊與間諜使用{@item thieves' tools|PHB}潛入戒備森嚴的地點。相比之下，靈魂之刃以心靈出擊與潛入，同時突破實體與心靈的屏障。這些盜賊在自身之中發現了靈能之力，並引導它來完成盜賊的工作。他們很容易在盜賊公會中找到工作，但常受到那些對使用奇異心靈力量辦事之人抱持戒心的盜賊所猜疑。大多數政府也樂於僱用靈魂之刃擔任間諜。",
+			"在主物質位面與妖精荒野的遠古森林中，有些木精靈走上靈魂之刃之道，擔任他們森林沉默而致命的守護者。在吉斯人之間無盡的戰爭中，當需要以隱匿對付吉斯洋基敵人時，吉斯澤萊人會受到鼓勵成為靈魂之刃。",
+			"身為靈魂之刃，你的靈能可能從你還是孩子時就一直困擾著你，直到你經歷冒險的壓力時才展現其全部潛能。或者，你可能曾尋找一個隱世的心靈術士修會，花了數年學習如何顯現你的力量。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Psionic Power|Rogue||Soulknife|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Psychic Blades|Rogue||Soulknife|TCE|3"
+			}
+		],
+		"ENG_name": "Soulknife"
 	},
 	"Soulknife|Rogue|Soulknife|XPHB": {
 		"name": "靈魂之刃",
@@ -8394,6 +12134,70 @@
 		],
 		"ENG_name": "Stalker's Flurry"
 	},
+	"Star Map|Druid|Circle of Stars|TCE": {
+		"name": "星圖",
+		"source": "TCE",
+		"page": 38,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Stars",
+		"subclassSource": "TCE",
+		"level": 2,
+		"header": 1,
+		"entries": [
+			"{@i 2nd-level Circle of the Stars feature}",
+			"你在研究天象的過程中製作了一幅星圖。它是一個微型物件，可以作為你德魯伊法術的法器。你可以擲「星圖」表或自行選擇來決定它的形式。",
+			{
+				"type": "table",
+				"caption": "星圖",
+				"colLabels": [
+					"d6",
+					"星圖形式"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"一卷繪滿星座圖案的卷軸"
+					],
+					[
+						"2",
+						"一塊鑽有細孔的石板"
+					],
+					[
+						"3",
+						"一張有斑點的梟熊皮，上面壓有凸起的標記"
+					],
+					[
+						"4",
+						"一疊以烏木封面裝訂的星圖"
+					],
+					[
+						"5",
+						"一塊置於光源前便會投射出星空圖案的水晶"
+					],
+					[
+						"6",
+						"描繪星座的玻璃圓盤"
+					]
+				]
+			},
+			"持有此星圖時，你獲得以下好處：",
+			{
+				"type": "list",
+				"items": [
+					"你習得{@spell guidance}戲法。",
+					"你準備好{@spell guiding bolt}法術。它對你而言視為德魯伊法術，且不計入你可準備的法術數量。",
+					"你可以不消耗法術欄位施展{@spell guiding bolt}。你能這樣做的次數等同於你的熟練加值，並在完成長休後恢復所有已消耗的使用次數。"
+				]
+			},
+			"若你遺失星圖，你可以進行一場 1 小時的儀式，以魔法製作一份替代品。此儀式可以在短休或長休期間進行，且會摧毀先前的星圖。"
+		],
+		"ENG_name": "Star Map"
+	},
 	"Star Map|Druid|Circle of the Stars|XPHB": {
 		"name": "星圖",
 		"source": "XPHB",
@@ -8448,6 +12252,40 @@
 			}
 		],
 		"ENG_name": "Star Map"
+	},
+	"Starry Form|Druid|Circle of Stars|TCE": {
+		"name": "星辰形態",
+		"source": "TCE",
+		"page": 38,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Stars",
+		"subclassSource": "TCE",
+		"level": 2,
+		"header": 1,
+		"consumes": {
+			"name": "荒野形態",
+			"ENG_name": "Wild Shape"
+		},
+		"entries": [
+			"{@i 2nd-level Circle of the Stars feature}",
+			"作為一個附贈動作，你可以消耗一次荒野形態特性的使用次數，化為星辰形態，而非變形為野獸。",
+			"處於星辰形態時，你保留你的遊戲數據，但你的身體會發出光芒；你的關節如星辰般閃爍，並有發光的線條如星圖般將它們相連。此形態在 10 呎半徑內發出明亮光照，並在額外 10 呎內發出微光。此形態持續 10 分鐘。若你解除它（不需動作）、陷入{@condition incapacitated}、死亡或再次使用此特性，它會提早結束。",
+			"每當你化為星辰形態時，選擇下列哪一個星座在你身上閃耀；你的選擇會讓你在此形態期間獲得特定好處：",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Archer|Druid||Stars|TCE|2"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Chalice|Druid||Stars|TCE|2"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Dragon|Druid||Stars|TCE|2"
+			}
+		],
+		"ENG_name": "Starry Form"
 	},
 	"Starry Form|Druid|Circle of the Stars|XPHB": {
 		"name": "星辰形態",
@@ -8538,6 +12376,22 @@
 			"長休結束時，若你帶著{@item smith's tools|PHB}，你可以創造一名新的鋼鐵衛士。若你已經擁有一名來自此特性的鋼鐵衛士，原本的那名會立即毀壞。若你死亡，衛士也會毀壞。"
 		],
 		"ENG_name": "Steel Defender"
+	},
+	"Steps of Night|Cleric|Twilight Domain|TCE": {
+		"name": "夜之步",
+		"source": "TCE",
+		"page": 34,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Twilight",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level Twilight Domain feature}",
+			"你能汲取夜晚的神祕力量升上天空。當你身處微光或黑暗中時，你可以作為附贈動作，以魔法使自己獲得等同於步行速度的飛行速度，持續 1 分鐘。你可以使用此附贈動作的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Steps of Night"
 	},
 	"Steps of the Fey|Warlock|Archfey Patron|XPHB": {
 		"name": "妖精步伐",
@@ -8636,6 +12490,30 @@
 			"你獲得一種由你選擇的{@item Artisan's Tools|XPHB}熟練，並從戰士 1 級可選的技能中選擇一項技能並獲得熟練。"
 		],
 		"ENG_name": "Student of War"
+	},
+	"Summon Wildfire Spirit|Druid|Circle of Wildfire|TCE": {
+		"name": "召喚野火之靈",
+		"source": "TCE",
+		"page": 39,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Wildfire",
+		"subclassSource": "TCE",
+		"level": 2,
+		"header": 1,
+		"consumes": {
+			"name": "荒野形態",
+			"ENG_name": "Wild Shape"
+		},
+		"entries": [
+			"{@i 2nd-level Circle of Wildfire feature}",
+			"你可以召喚與你靈魂相繫的原初之靈。作為一個動作，你可以消耗一次荒野形態特性的使用次數來召喚你的野火之靈，而非化為野獸形態。",
+			"此靈出現在你 30 呎內一個你能看見、由你選擇的未佔據空間。此靈出現時，在其 10 呎內的每個生物（你除外）都必須成功通過一次對抗你法術豁免 DC 的敏捷豁免檢定，否則受到 {@damage 2d6} 火焰傷害。",
+			"此靈對你與你的同伴友善，並服從你的命令。此生物的遊戲數據請見{@creature Wildfire Spirit|TCE}數據欄，其中多處使用你的熟練加值（PB）。此靈的外觀由你決定。有些靈的形體是由燃燒著火焰的扭曲枝條構成的人形，其他則看起來像是被火焰包圍的野獸。",
+			"在戰鬥中，此靈與你共用先攻順序，但會在你的回合之後立即進行它的回合。它在其回合中唯一採取的動作是{@action Dodge}動作，除非你在你的回合中使用一個附贈動作命令它採取另一個動作。該動作可以是其數據欄中的動作或其他動作。若你陷入{@condition incapacitated}，此靈可以採取任何它所選擇的動作，而不僅限於{@action Dodge}。",
+			"此靈顯現 1 小時，直到其生命值降至 0、直到你使用此特性再次召喚此靈，或直到你死亡為止。"
+		],
+		"ENG_name": "Summon Wildfire Spirit"
 	},
 	"Superior Atlas|Artificer|Cartographer|EFA": {
 		"name": "高等地圖集",
@@ -8799,6 +12677,96 @@
 		],
 		"ENG_name": "Survivor"
 	},
+	"Swarming Dispersal|Ranger|Swarmkeeper|TCE": {
+		"name": "群散",
+		"source": "TCE",
+		"page": 59,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Swarmkeeper",
+		"subclassSource": "TCE",
+		"level": 15,
+		"header": 2,
+		"entries": [
+			"{@i 15th-level Swarmkeeper feature}",
+			"你可以化身為你的群體，躲避危險。當你受到傷害時，你可以使用你的反應讓自己獲得該傷害的抗性。你消失在你的群體之中，然後傳送到你 30 呎內一個你能看見的未佔據空間，並與群體一同在那裡重新現身。",
+			"你可以使用此特性的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Swarming Dispersal"
+	},
+	"Swarmkeeper Magic|Ranger|Swarmkeeper|TCE": {
+		"name": "馭群者魔法",
+		"source": "TCE",
+		"page": 59,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Swarmkeeper",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Swarmkeeper feature}",
+			"若你尚未習得{@spell mage hand}戲法，你會習得它。當你施展它時，那隻手會呈現你成群自然之靈的形態。",
+			"當你在此職業達到特定等級時，你也會習得一個額外的 1 環或更高法術，如「馭群者法術」表所示。每個法術對你而言都視為遊俠法術，但不計入你已知的遊俠法術數量。",
+			{
+				"type": "table",
+				"caption": "馭群者法術",
+				"colLabels": [
+					"遊俠等級",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"3 級",
+						"{@spell faerie fire}"
+					],
+					[
+						"5 級",
+						"{@spell web}"
+					],
+					[
+						"9 級",
+						"{@spell gaseous form}"
+					],
+					[
+						"13 級",
+						"{@spell arcane eye}"
+					],
+					[
+						"17 級",
+						"{@spell insect plague}"
+					]
+				]
+			}
+		],
+		"ENG_name": "Swarmkeeper Magic"
+	},
+	"Swarmkeeper|Ranger|Swarmkeeper|TCE": {
+		"name": "馭群者",
+		"source": "TCE",
+		"page": 59,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Swarmkeeper",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"有些遊俠與周遭環境有著深刻的連結，他們透過與世界的魔法連結伸出手，與一群自然之靈締結羈絆。這群靈在戰鬥中成為強大的力量，也是遊俠有益的夥伴。有些馭群者是被放逐者或隱士，寧可與自己和相隨的群體獨處，也不願應付與他人相處的不自在。另一些馭群者則樂於建立充滿活力的社群，為所有他們視為群體一份子的人謀求共同利益。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Gathered Swarm|Ranger||Swarmkeeper|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Swarmkeeper Magic|Ranger||Swarmkeeper|TCE|3"
+			}
+		],
+		"ENG_name": "Swarmkeeper"
+	},
 	"Tamed Surge|Sorcerer|Wild Magic Sorcery|XPHB": {
 		"name": "馴服浪湧",
 		"source": "XPHB",
@@ -8830,6 +12798,36 @@
 		],
 		"ENG_name": "Tandem Footwork"
 	},
+	"Telekinetic Adept|Fighter|Psi Warrior|TCE": {
+		"name": "心靈致動專家",
+		"source": "TCE",
+		"page": 42,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Psi Warrior",
+		"subclassSource": "TCE",
+		"level": 7,
+		"header": 2,
+		"entries": [
+			"{@i 7th-level Psi Warrior feature}",
+			"你精通了運用心靈致動能力的新方式，詳見下文。",
+			{
+				"type": "options",
+				"style": "list-hang-notitle",
+				"entries": [
+					{
+						"type": "refSubclassFeature",
+						"subclassFeature": "Psi-Powered Leap|Fighter|PHB|Psi Warrior|TCE|7"
+					},
+					{
+						"type": "refSubclassFeature",
+						"subclassFeature": "Telekinetic Thrust|Fighter|PHB|Psi Warrior|TCE|7"
+					}
+				]
+			}
+		],
+		"ENG_name": "Telekinetic Adept"
+	},
 	"Telekinetic Adept|Fighter|Psi Warrior|XPHB": {
 		"name": "心靈致動專家",
 		"source": "XPHB",
@@ -8853,6 +12851,23 @@
 		],
 		"ENG_name": "Telekinetic Adept"
 	},
+	"Telekinetic Master|Fighter|Psi Warrior|TCE": {
+		"name": "心靈致動大師",
+		"source": "TCE",
+		"page": 42,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Psi Warrior",
+		"subclassSource": "TCE",
+		"level": 18,
+		"header": 2,
+		"entries": [
+			"{@i 18th-level Psi Warrior feature}",
+			"能以心靈移動生物與物件的能力，鮮少有人能與你匹敵。你可以施展{@spell telekinesis}法術，無需任何成分，且你施展此法術的施法屬性為智力。在你專注於此法術期間的每個回合（包括施展它的回合），你可以作為一個附贈動作進行一次武器攻擊。",
+			"一旦你以此特性施展此法術，在完成長休前無法再次這樣做，除非你消耗一顆靈能骰來再次施展它。"
+		],
+		"ENG_name": "Telekinetic Master"
+	},
 	"Telekinetic Master|Fighter|Psi Warrior|XPHB": {
 		"name": "心靈致動大師",
 		"source": "XPHB",
@@ -8872,6 +12887,20 @@
 			"一旦你以此能力施展該法術，直到你完成一次{@variantrule Long Rest|XPHB}前都無法再以此方式施展，除非你消耗一顆靈能骰（不需要動作）來恢復它的使用次數。"
 		],
 		"ENG_name": "Telekinetic Master"
+	},
+	"Telekinetic Movement|Fighter|Psi Warrior|TCE": {
+		"name": "心靈致動移動",
+		"source": "TCE",
+		"page": 42,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Psi Warrior",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"你可以用心靈移動一個物件或生物。作為一個動作，你選擇一個大型或更小的未固定物件，或一個除你以外的自願生物作為目標。若你能看見目標且它位於你 30 呎內，你可以將它移動至多 30 呎，到一個你能看見的未佔據空間。或者，若它是微型物件，你可以將它移入或移出你的手中。無論哪種方式，你都可以水平、垂直或兩者兼具地移動目標。一旦你採取此動作，在完成短休或長休前無法再次這樣做，除非你消耗一顆靈能骰來再次採取此動作。"
+		],
+		"ENG_name": "Telekinetic Movement"
 	},
 	"Telekinetic Movement|Fighter|Psi Warrior|XPHB": {
 		"name": "心靈致動移動",
@@ -8893,6 +12922,20 @@
 		],
 		"ENG_name": "Telekinetic Movement"
 	},
+	"Telekinetic Thrust|Fighter|Psi Warrior|TCE": {
+		"name": "心靈遙控推擊",
+		"source": "TCE",
+		"page": 42,
+		"className": "Fighter",
+		"classSource": "PHB",
+		"subclassShortName": "Psi Warrior",
+		"subclassSource": "TCE",
+		"level": 7,
+		"entries": [
+			"當你以靈能打擊對目標造成傷害時，你可以迫使目標進行一次力量豁免檢定，DC 等於 8 + 你的熟練加值 + 你的智力調整值。若豁免失敗，你可以使目標陷入{@condition prone}，或將其朝任意水平方向移動至多 10 呎。"
+		],
+		"ENG_name": "Telekinetic Thrust"
+	},
 	"Telekinetic Thrust|Fighter|Psi Warrior|XPHB": {
 		"name": "心靈致動推擊",
 		"source": "XPHB",
@@ -8907,6 +12950,23 @@
 			"當你以靈能打擊對目標造成傷害時，你可以迫使目標進行一次力量豁免檢定（{@dc 8} 加上你的智力調整值與{@variantrule Proficiency|XPHB|熟練加值}）。豁免失敗時，你可以使目標陷入{@condition Prone|XPHB}狀態，或將它水平搬運至多 10 呎。"
 		],
 		"ENG_name": "Telekinetic Thrust"
+	},
+	"Telepathic Speech|Sorcerer|Aberrant Mind|TCE": {
+		"name": "心靈感應話語",
+		"source": "TCE",
+		"page": 66,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Aberrant Mind",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Aberrant Mind feature}",
+			"你可以在你的心智與另一個心智之間建立心靈感應連結。作為一個附贈動作，選擇你 30 呎內一個你能看見的生物。只要你們兩者彼此相距在等同於你魅力調整值的哩數以內（最少 1 哩），你與被選擇的生物就能彼此進行心靈感應對話。為了理解彼此，你們都必須以對方懂得的語言在心中說話。",
+			"此心靈感應連結持續的分鐘數等同於你的術士等級。若你陷入{@condition incapacitated}或死亡，或你使用此能力與另一個生物建立連結，它會提早結束。"
+		],
+		"ENG_name": "Telepathic Speech"
 	},
 	"Telepathic Speech|Sorcerer|Aberrant Sorcery|XPHB": {
 		"name": "心靈感應話語",
@@ -8923,6 +12983,318 @@
 			"心靈感應連結持續的分鐘數等同你的術士等級。若你使用此能力與另一個生物建立連結，它會提早結束。"
 		],
 		"ENG_name": "Telepathic Speech"
+	},
+	"Tenets of Glory|Paladin|Oath of Glory|TCE": {
+		"name": "榮耀信條",
+		"source": "TCE",
+		"page": 53,
+		"otherSources": [
+			{
+				"source": "MOT",
+				"page": 29
+			}
+		],
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Glory",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"榮耀之誓的信條驅使聖騎士嘗試那些有朝一日可能在傳說中閃耀的英勇事蹟。",
+			{
+				"type": "entries",
+				"name": "行勝於言",
+				"entries": [
+					"力求以光榮的事蹟而非言語為人所知。"
+				],
+				"ENG_name": "Actions over Words"
+			},
+			{
+				"type": "entries",
+				"name": "挑戰不過是考驗",
+				"entries": [
+					"以勇氣面對艱難，並鼓勵你的盟友與你一同面對。"
+				],
+				"ENG_name": "Challenges Are but Tests"
+			},
+			{
+				"type": "entries",
+				"name": "鍛鍊身體",
+				"entries": [
+					"如同原石一般，你的身體必須經過雕琢，才能發揮其潛能。"
+				],
+				"ENG_name": "Hone the Body"
+			},
+			{
+				"type": "entries",
+				"name": "修練靈魂",
+				"entries": [
+					"你必須凝聚紀律，克服自身那些可能使你與你的朋友的榮耀黯淡的缺點。"
+				],
+				"ENG_name": "Discipline the Soul"
+			}
+		],
+		"ENG_name": "Tenets of Glory"
+	},
+	"Tenets of the Watchers|Paladin|Oath of the Watchers|TCE": {
+		"name": "守望者信條",
+		"source": "TCE",
+		"page": 54,
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Watchers",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"立下守望者之誓的聖騎士發誓守護凡人領域，抵禦來自異世界的威脅。",
+			{
+				"type": "entries",
+				"name": "警惕",
+				"entries": [
+					"你所面對的威脅狡猾、強大且善於顛覆。時刻警覺它們的腐化。"
+				],
+				"ENG_name": "Vigilance"
+			},
+			{
+				"type": "entries",
+				"name": "忠誠",
+				"entries": [
+					"絕不接受邪魔或與其往來者的饋贈或恩惠。忠於你的修會、你的同袍與你的職責。"
+				],
+				"ENG_name": "Loyalty"
+			},
+			{
+				"type": "entries",
+				"name": "紀律",
+				"entries": [
+					"你是對抗群星之外無盡恐怖的盾牌。你的劍刃必須永遠鋒利，你的心智必須永遠敏銳，才能在彼方的事物面前存活。"
+				],
+				"ENG_name": "Discipline"
+			}
+		],
+		"ENG_name": "Tenets of the Watchers"
+	},
+	"Tentacle of the Deeps|Warlock|The Fathomless|TCE": {
+		"name": "深淵觸手",
+		"source": "TCE",
+		"page": 72,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Fathomless",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Fathomless feature}",
+			"你可以以魔法召喚一條打擊敵人的幽魂觸手。作為一個附贈動作，你在你 60 呎內一個你能看見的點創造一條 10 呎長的觸手。觸手持續 1 分鐘，或直到你使用此特性創造另一條觸手為止。",
+			"當你創造觸手時，你可以對其 10 呎內的一個生物進行一次近戰法術攻擊。命中時，目標受到 {@damage 1d8} 寒冷傷害，且其速度減少 10 呎，直到你的下個回合開始。當你在此職業達到 10 級時，傷害增加為 {@damage 2d8}。",
+			"在你的回合中作為一個附贈動作，你可以將觸手移動至多 30 呎，並重複此攻擊。",
+			"你可以召喚觸手的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Tentacle of the Deeps"
+	},
+	"The Fathomless|Warlock|The Fathomless|TCE": {
+		"name": "深淵者",
+		"source": "TCE",
+		"page": 72,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Fathomless",
+		"subclassSource": "TCE",
+		"level": 1,
+		"entries": [
+			"你投入了與深淵的契約。一個來自海洋、水元素位面或其他異界之海的存在，如今讓你得以汲取它的海洋之力。它只是利用你來了解陸地領域，還是希望你打開宇宙的閘門、淹沒這個世界？",
+			"也許你出生在一個世代崇敬深淵者及其眷屬的教團中。或者，你可能曾遭遇船難，在瀕臨溺斃之際，你宗主的掌握為你提供了活下去的機會。無論你締結契約的原因為何，大海及其未知的深處都在呼喚著你。",
+			"可能賦予契術師力量的深淵存在包括海妖、遠古水元素、由庫奧托人夢想成真的神祇般幻象、人魚半神，以及海鬼婆集會。",
+			{
+				"type": "entries",
+				"name": "擴充法術列表",
+				"entries": [
+					"{@i 1st-level Fathomless feature}",
+					"當你習得一個契術師法術時，深淵者讓你能從一份擴充的法術列表中選擇。下列法術會為你加入契術師法術列表。",
+					{
+						"type": "table",
+						"caption": "深淵者擴充法術",
+						"colLabels": [
+							"法術環階",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell create or destroy water}、{@spell thunderwave}"
+							],
+							[
+								"2 環",
+								"{@spell gust of wind}、{@spell silence}"
+							],
+							[
+								"3 環",
+								"{@spell lightning bolt}、{@spell sleet storm}"
+							],
+							[
+								"4 環",
+								"{@spell control water}、{@spell summon elemental|tce}（僅限水）"
+							],
+							[
+								"5 環",
+								"{@spell Bigby's hand}（顯現為觸手）、{@spell cone of cold}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Expanded Spell List"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Tentacle of the Deeps|Warlock||Fathomless|TCE|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Gift of the Sea|Warlock||Fathomless|TCE|1"
+			}
+		],
+		"ENG_name": "The Fathomless"
+	},
+	"The Genie|Warlock|The Genie|TCE": {
+		"name": "精靈",
+		"source": "TCE",
+		"page": 73,
+		"className": "Warlock",
+		"classSource": "PHB",
+		"subclassShortName": "Genie",
+		"subclassSource": "TCE",
+		"level": 1,
+		"entries": [
+			"你與最稀有的精靈之一——貴族精靈——締結了契約。這類存在統治著元素位面上廣大的封地，並對較低等的精靈與元素生物擁有巨大的影響力。貴族精靈的動機各異，但大多數都傲慢自大，其掌握的力量可與次等神祇匹敵。凡人經常將精靈束縛為僕從，而貴族精靈樂於反過來擺布凡人，並欣然締結能擴展其影響力的契約。",
+			"你選擇你宗主的種類，或使用「精靈種類」表隨機決定。",
+			{
+				"type": "table",
+				"caption": "精靈種類",
+				"colLabels": [
+					"d4",
+					"種類",
+					"元素"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-5",
+					"col-5"
+				],
+				"rows": [
+					[
+						1,
+						"{@creature Dao}",
+						"土"
+					],
+					[
+						2,
+						"{@creature Djinni}",
+						"氣"
+					],
+					[
+						3,
+						"{@creature Efreeti}",
+						"火"
+					],
+					[
+						4,
+						"{@creature Marid}",
+						"水"
+					]
+				]
+			},
+			{
+				"name": "擴充法術列表",
+				"type": "entries",
+				"entries": [
+					"{@i 1st-level Genie feature}",
+					"當你習得一個契術師法術時，精靈讓你能從一份擴充的法術列表中選擇。「精靈擴充法術」表列出會為你加入契術師法術列表的精靈法術，以及表中與你宗主種類相關的法術：達歐、燈神、伊夫利特或馬利德。",
+					{
+						"type": "table",
+						"caption": "精靈擴充法術",
+						"colLabels": [
+							"法術環階",
+							"精靈法術",
+							"達歐法術",
+							"燈神法術",
+							"伊夫利特法術",
+							"馬利德法術"
+						],
+						"colStyles": [
+							"col-1 text-center",
+							"col-2-2",
+							"col-2-2",
+							"col-2-2",
+							"col-2-2",
+							"col-2-2"
+						],
+						"rows": [
+							[
+								"1 環",
+								"{@spell detect evil and good}",
+								"{@spell sanctuary}",
+								"{@spell thunderwave}",
+								"{@spell burning hands}",
+								"{@spell fog cloud}"
+							],
+							[
+								"2 環",
+								"{@spell phantasmal force}",
+								"{@spell spike growth}",
+								"{@spell gust of wind}",
+								"{@spell scorching ray}",
+								"{@spell blur}"
+							],
+							[
+								"3 環",
+								"{@spell create food and water}",
+								"{@spell meld into stone}",
+								"{@spell wind wall}",
+								"{@spell fireball}",
+								"{@spell sleet storm}"
+							],
+							[
+								"4 環",
+								"{@spell phantasmal killer}",
+								"{@spell stone shape}",
+								"{@spell greater invisibility}",
+								"{@spell fire shield}",
+								"{@spell control water}"
+							],
+							[
+								"5 環",
+								"{@spell creation}",
+								"{@spell wall of stone}",
+								"{@spell seeming}",
+								"{@spell flame strike}",
+								"{@spell cone of cold}"
+							],
+							[
+								"9 環",
+								"{@spell wish}",
+								"—",
+								"—",
+								"—",
+								"—"
+							]
+						]
+					}
+				],
+				"ENG_name": "Expanded Spell List"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Genie's Vessel|Warlock||Genie|TCE|1"
+			}
+		],
+		"ENG_name": "The Genie"
 	},
 	"The Third Eye|Wizard|Diviner|XPHB": {
 		"name": "第三隻眼",
@@ -9055,6 +13427,31 @@
 			"若你在完成{@variantrule Long Rest|XPHB}之前確實以法術欄位施展了術士法術，你會自動在{@table Wild Magic Surge|XPHB|狂野魔法浪湧}表上擲骰。"
 		],
 		"ENG_name": "Tides of Chaos"
+	},
+	"Tokens of the Departed|Rogue|Phantom|TCE": {
+		"name": "逝者信物",
+		"source": "TCE",
+		"page": 62,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Phantom",
+		"subclassSource": "TCE",
+		"level": 9,
+		"header": 2,
+		"entries": [
+			"{@i 9th-level Phantom feature}",
+			"當一個生命在你面前終結時，你能從離去的靈魂中奪取一件信物，那是其生命精華的一小片化為實體：當一個你能看見的生物在你 30 呎內死亡時，作為一個反應，你可以張開你空著的手，讓一件微型小飾品出現在那裡——一件靈魂飾品。飾品的形式由 DM 決定，或讓你擲《{@i 玩家手冊}》中的{@item Trinket|phb|小飾品}表來產生。你擁有的靈魂飾品數量上限等同於你的熟練加值，達到上限時你無法再創造。",
+			"你可以用下列方式使用靈魂飾品：",
+			{
+				"type": "list",
+				"items": [
+					"當你身上帶著一件靈魂飾品時，你在死亡豁免檢定與體質豁免檢定上具有優勢，因為物件中的生命精華增強了你的活力。",
+					"當你在你的回合中造成偷襲傷害時，你可以摧毀一件你身上帶著的靈魂飾品，然後立即使用墳墓哀號，而不消耗該特性的使用次數。",
+					"作為一個動作，你可以摧毀你的一件靈魂飾品，無論它位於何處。當你這樣做時，你可以向與該飾品相關的靈魂詢問一個問題。靈魂會出現在你面前，並以它生前所知的一種語言回答。它沒有義務說實話，且會盡可能簡短地回答，急於獲得自由。靈魂只知道它生前所知的事，由 DM 決定。"
+				]
+			}
+		],
+		"ENG_name": "Tokens of the Departed"
 	},
 	"Tool Proficiency|Artificer|Alchemist|TCE": {
 		"name": "工具熟練",
@@ -9325,6 +13722,23 @@
 		],
 		"ENG_name": "Trance of Order"
 	},
+	"Trance of Order|Sorcerer|Clockwork Soul|TCE": {
+		"name": "秩序出神",
+		"source": "TCE",
+		"page": 68,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Clockwork Soul",
+		"subclassSource": "TCE",
+		"level": 14,
+		"header": 2,
+		"entries": [
+			"{@i 14th-level Clockwork Soul feature}",
+			"你獲得將意識與機械境無盡運算同步的能力。作為一個附贈動作，你可以進入此狀態 1 分鐘。在持續時間內，對你的攻擊檢定無法受益於優勢，且每當你進行攻擊檢定、屬性檢定或豁免檢定時，你可以將 {@dice d20} 擲出的 9 或更低視為 10。",
+			"一旦你使用此附贈動作，在完成長休前無法再次使用，除非你花費 5 點術法點來再次使用它。"
+		],
+		"ENG_name": "Trance of Order"
+	},
 	"Travel Along the Tree|Barbarian|Path of the World Tree|XPHB": {
 		"name": "循樹而行",
 		"source": "XPHB",
@@ -9429,6 +13843,155 @@
 		],
 		"ENG_name": "Trickster's Transposition"
 	},
+	"Twilight Domain|Cleric|Twilight Domain|TCE": {
+		"name": "暮光領域",
+		"source": "TCE",
+		"page": 34,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Twilight",
+		"subclassSource": "TCE",
+		"level": 1,
+		"entries": [
+			"從光明轉入黑暗的暮光時分，常帶來平靜甚至喜悅，因為一天的勞動結束，休息的時刻開始了。黑暗也可能帶來恐懼，但暮光之神會守護人們免受夜晚的恐怖侵擾。",
+			"侍奉這些神祇（範例見「暮光神祇」表）的牧師，為尋求休息的人帶來慰藉，並冒險深入逼近的黑暗來保護他們，確保黑暗是一種慰藉，而非恐懼。",
+			{
+				"type": "table",
+				"caption": "暮光神祇",
+				"colLabels": [
+					"神祇範例",
+					"神系"
+				],
+				"colStyles": [
+					"col-6 text-center",
+					"col-6 text-center"
+				],
+				"rows": [
+					[
+						"{@deity Boldrei|Eberron}",
+						"艾伯倫"
+					],
+					[
+						"{@deity Celestian|Greyhawk}",
+						"灰鷹"
+					],
+					[
+						"{@deity Dol Arrah|Eberron}",
+						"艾伯倫"
+					],
+					[
+						"{@deity Helm}",
+						"被遺忘國度"
+					],
+					[
+						"{@deity Ilmater}",
+						"被遺忘國度"
+					],
+					[
+						"{@deity Mishakal|Dragonlance}",
+						"龍槍"
+					],
+					[
+						"{@deity Selûne}",
+						"被遺忘國度"
+					],
+					[
+						"{@deity Yondalla|Nonhuman}",
+						"半身人"
+					]
+				]
+			},
+			{
+				"name": "領域法術",
+				"type": "entries",
+				"entries": [
+					"{@i 1st-level Twilight Domain feature}",
+					"你在「暮光領域法術」表所列的牧師等級獲得領域法術。關於領域法術的運作方式，請見神聖領域職業特性。",
+					{
+						"type": "table",
+						"caption": "暮光領域法術",
+						"colLabels": [
+							"牧師等級",
+							"法術"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1 級",
+								"{@spell faerie fire}、{@spell sleep}"
+							],
+							[
+								"3 級",
+								"{@spell moonbeam}、{@spell see invisibility}"
+							],
+							[
+								"5 級",
+								"{@spell aura of vitality}、{@spell Leomund's tiny hut}"
+							],
+							[
+								"7 級",
+								"{@spell aura of life}、{@spell greater invisibility}"
+							],
+							[
+								"9 級",
+								"{@spell circle of power}、{@spell mislead}"
+							]
+						]
+					}
+				],
+				"ENG_name": "Domain Spells"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bonus Proficiencies|Cleric||Twilight|TCE|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Eyes of Night|Cleric||Twilight|TCE|1"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Vigilant Blessing|Cleric||Twilight|TCE|1"
+			}
+		],
+		"ENG_name": "Twilight Domain"
+	},
+	"Twilight Shroud|Cleric|Twilight Domain|TCE": {
+		"name": "暮光帷幕",
+		"source": "TCE",
+		"page": 34,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Twilight",
+		"subclassSource": "TCE",
+		"level": 17,
+		"header": 2,
+		"entries": [
+			"{@i 17th-level Twilight Domain feature}",
+			"你召喚的暮光提供了保護的懷抱：位於你暮光聖所所創造的球體中時，你與你的盟友具有{@quickref Cover||3||半遮蔽}。"
+		],
+		"ENG_name": "Twilight Shroud"
+	},
+	"Twinkling Constellations|Druid|Circle of Stars|TCE": {
+		"name": "閃爍星座",
+		"source": "TCE",
+		"page": 38,
+		"className": "Druid",
+		"classSource": "PHB",
+		"subclassShortName": "Stars",
+		"subclassSource": "TCE",
+		"level": 10,
+		"header": 2,
+		"entries": [
+			"{@i 10th-level Circle of the Stars feature}",
+			"你星辰形態的星座獲得強化。弓箭手與聖杯的 {@damage 1d8} 變為 {@damage 2d8}，且當龍星座啟動時，你擁有 20 呎的飛行速度並可以懸浮。",
+			"此外，處於星辰形態時，在你每個回合開始時，你可以更換在你身上閃耀的星座。"
+		],
+		"ENG_name": "Twinkling Constellations"
+	},
 	"Twinkling Constellations|Druid|Circle of the Stars|XPHB": {
 		"name": "閃爍星座",
 		"source": "XPHB",
@@ -9522,6 +14085,71 @@
 		],
 		"ENG_name": "Undying Sentinel"
 	},
+	"Unfailing Inspiration|Bard|College of Eloquence|TCE": {
+		"name": "不敗激勵",
+		"source": "TCE",
+		"page": 29,
+		"className": "Bard",
+		"classSource": "PHB",
+		"subclassShortName": "Eloquence",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level College of Eloquence feature}",
+			"你激勵人心的話語如此有說服力，讓他人感到必須成功。當一個生物將你的吟遊激勵骰加到其屬性檢定、攻擊檢定或豁免檢定上，而該擲骰失敗時，該生物可以保留該吟遊激勵骰。"
+		],
+		"ENG_name": "Unfailing Inspiration"
+	},
+	"Universal Speech|Bard|College of Eloquence|TCE": {
+		"name": "通用話語",
+		"source": "TCE",
+		"page": 29,
+		"className": "Bard",
+		"classSource": "PHB",
+		"subclassShortName": "Eloquence",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"entries": [
+			"{@i 6th-level College of Eloquence feature}",
+			"你獲得了讓任何生物都能理解你話語的能力。作為一個動作，選擇你 60 呎內一個或多個生物，數量至多等同於你的魅力調整值（至少一個生物）。被選擇的生物在 1 小時內能以魔法理解你，無論你說的是什麼語言。",
+			"使用此特性後，除非你消耗一個法術欄位再次使用它，否則直到你完成長休前都無法再次使用。"
+		],
+		"ENG_name": "Universal Speech"
+	},
+	"Unsettling Words|Bard|College of Eloquence|TCE": {
+		"name": "動搖之語",
+		"source": "TCE",
+		"page": 29,
+		"className": "Bard",
+		"classSource": "PHB",
+		"subclassShortName": "Eloquence",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level College of Eloquence feature}",
+			"你能編織夾帶魔法的話語，動搖一個生物並使其懷疑自己。作為一個附贈動作，你可以消耗一次吟遊激勵的使用次數，並選擇你 60 呎內一個你能看見的生物。擲吟遊激勵骰。該生物在你的下個回合開始前進行的下一次豁免檢定，必須減去擲骰結果。"
+		],
+		"ENG_name": "Unsettling Words"
+	},
+	"Unstable Backlash|Barbarian|Path of Wild Magic|TCE": {
+		"name": "不穩定反衝",
+		"source": "TCE",
+		"page": 25,
+		"className": "Barbarian",
+		"classSource": "PHB",
+		"subclassShortName": "Wild Magic",
+		"subclassSource": "TCE",
+		"level": 10,
+		"header": 2,
+		"entries": [
+			"{@i 10th-level Path of Wild Magic feature}",
+			"當你在狂暴中身陷險境時，你體內的魔法可能會猛然爆發；在你於狂暴中受到傷害或豁免檢定失敗後，你可以立即使用你的反應在「狂野魔法」表上擲骰，並立即產生擲出的效果。此效果取代你目前的狂野魔法效果。"
+		],
+		"ENG_name": "Unstable Backlash"
+	},
 	"Use Magic Device|Rogue|Thief|XPHB": {
 		"name": "使用魔法裝置",
 		"source": "XPHB",
@@ -9578,6 +14206,84 @@
 		],
 		"ENG_name": "Versatile Trickster"
 	},
+	"Vigilant Blessing|Cleric|Twilight Domain|TCE": {
+		"name": "警覺祝福",
+		"source": "TCE",
+		"page": 34,
+		"className": "Cleric",
+		"classSource": "PHB",
+		"subclassShortName": "Twilight",
+		"subclassSource": "TCE",
+		"level": 1,
+		"header": 1,
+		"entries": [
+			"{@i 1st-level Twilight Domain feature}",
+			"黑夜教會了你保持警覺。作為一個動作，你讓一個你碰觸的生物（可以是你自己）在其下一次先攻擲骰上具有優勢。此益處在擲骰後立即結束，或在你再次使用此特性時結束。"
+		],
+		"ENG_name": "Vigilant Blessing"
+	},
+	"Vigilant Rebuke|Paladin|Oath of the Watchers|TCE": {
+		"name": "警戒斥責",
+		"source": "TCE",
+		"page": 54,
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Watchers",
+		"subclassSource": "TCE",
+		"level": 15,
+		"header": 2,
+		"entries": [
+			"{@i 15th-level Oath of the Watchers feature}",
+			"你已學會如何懲戒任何膽敢對你與你所守護之人施展蠱惑的人。每當你或一個你能看見、位於你 30 呎內的生物成功通過一次智力、感知或魅力豁免檢定時，你可以使用你的反應，對迫使進行該豁免檢定的生物造成 {@damage 2d8} + 你魅力調整值的力場傷害。"
+		],
+		"ENG_name": "Vigilant Rebuke"
+	},
+	"Visage of the Astral Self|Monk|Way of the Astral Self|TCE": {
+		"name": "星界自我之容",
+		"source": "TCE",
+		"page": 50,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Astral Self",
+		"subclassSource": "TCE",
+		"level": 6,
+		"header": 2,
+		"consumes": {
+			"name": "氣",
+			"ENG_name": "Ki"
+		},
+		"entries": [
+			"{@i 6th-level Way of the Astral Self feature}",
+			"你可以召喚你星界自我的面容。作為一個附贈動作，或作為你啟動星界自我之臂所採取的附贈動作的一部分，你可以花費 1 氣點召喚此面容，持續 10 分鐘。若你陷入{@condition incapacitated}或死亡，它會提早消失。",
+			"幽魂面容如頭盔或面具般覆蓋你的臉。其外觀由你決定。",
+			"幽魂面容存在期間，你獲得下列好處。",
+			{
+				"type": "entries",
+				"name": "星界視覺",
+				"entries": [
+					"你能在魔法與非魔法的黑暗中正常視物，距離 120 呎。"
+				],
+				"ENG_name": "Astral Sight"
+			},
+			{
+				"type": "entries",
+				"name": "靈之睿智",
+				"entries": [
+					"你在感知（{@skill Insight}）與魅力（{@skill Intimidation}）檢定上具有優勢。"
+				],
+				"ENG_name": "Wisdom of the Spirit"
+			},
+			{
+				"type": "entries",
+				"name": "靈之言語",
+				"entries": [
+					"當你說話時，你可以將話語傳給你 60 呎內一個你能看見、由你選擇的生物，使只有該生物能聽見你。或者，你可以放大你的聲音，讓 600 呎內的所有生物都能聽見你。"
+				],
+				"ENG_name": "Word of the Spirit"
+			}
+		],
+		"ENG_name": "Visage of the Astral Self"
+	},
 	"Vitality of the Tree|Barbarian|Path of the World Tree|XPHB": {
 		"name": "世界樹的活力",
 		"source": "XPHB",
@@ -9632,6 +14338,23 @@
 			"若該生物在誓言結束前生命值降至 0 {@variantrule Hit Points|XPHB}，你可以將誓言轉移到你周圍 30 呎內的另一個生物身上（不需要動作）。"
 		],
 		"ENG_name": "Vow of Enmity"
+	},
+	"Wails from the Grave|Rogue|Phantom|TCE": {
+		"name": "墳墓哀號",
+		"source": "TCE",
+		"page": 62,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Phantom",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Phantom feature}",
+			"當你將某人推向墳墓時，你也能引導死亡之力傷害另一個人。在你於你的回合中對一個生物造成偷襲傷害後，你可以立即以第一個生物 30 呎內一個你能看見的第二個生物為目標。擲你等級對應偷襲骰數的一半（向上取整），第二個生物受到等同於擲骰總和的死靈傷害，亡者的哀號在其周圍短暫迴響。",
+			"你可以使用此特性的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Wails from the Grave"
 	},
 	"War Bond|Fighter|Eldritch Knight|XPHB": {
 		"name": "戰爭羈絆",
@@ -9788,6 +14511,23 @@
 		],
 		"ENG_name": "Warding Flare"
 	},
+	"Warping Implosion|Sorcerer|Aberrant Mind|TCE": {
+		"name": "扭曲內爆",
+		"source": "TCE",
+		"page": 66,
+		"className": "Sorcerer",
+		"classSource": "PHB",
+		"subclassShortName": "Aberrant Mind",
+		"subclassSource": "TCE",
+		"level": 18,
+		"header": 2,
+		"entries": [
+			"{@i 18th-level Aberrant Mind feature}",
+			"你可以將你的異怪之力化為扭曲空間的異象釋放出來。作為一個動作，你可以傳送到你 120 呎內一個你能看見的未佔據空間。在你消失後，你離開的空間 30 呎內的每個生物都必須立即進行一次對抗你法術豁免 DC 的力量豁免檢定。豁免失敗時，生物受到 {@damage 3d10} 力場傷害，並被直直拉向你離開的空間，停在盡可能靠近你原本空間的一個未佔據空間。豁免成功時，生物受到一半傷害且不會被拉動。",
+			"一旦你使用此特性，在完成長休前無法再次這樣做，除非你花費 5 點術法點來再次使用它。"
+		],
+		"ENG_name": "Warping Implosion"
+	},
 	"Warping Implosion|Sorcerer|Aberrant Sorcery|XPHB": {
 		"name": "扭曲內爆",
 		"source": "XPHB",
@@ -9915,6 +14655,91 @@
 			}
 		],
 		"ENG_name": "Warrior of the Open Hand"
+	},
+	"Watcher's Will|Paladin|Oath of the Watchers|TCE": {
+		"name": "守望者意志",
+		"source": "TCE",
+		"page": 54,
+		"className": "Paladin",
+		"classSource": "PHB",
+		"subclassShortName": "Watchers",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 2,
+		"consumes": {
+			"name": "引導神力",
+			"ENG_name": "Channel Divinity"
+		},
+		"entries": [
+			"你可以使用你的引導神力，讓你的存在充滿信仰的守護之力。作為一個動作，你可以選擇你 30 呎內你能看見的生物，數量至多等同於你的魅力調整值（最少一個生物）。在 1 分鐘內，你與被選擇的生物在智力、感知與魅力豁免檢定上具有優勢。"
+		],
+		"ENG_name": "Watcher's Will"
+	},
+	"Way of Mercy|Monk|Way of Mercy|TCE": {
+		"name": "慈悲之道",
+		"source": "TCE",
+		"page": 49,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Mercy",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"慈悲之道的武僧學習操控他人的生命力，為有需要的人提供援助。他們是為貧苦與傷者服務的遊方醫者。然而，對於那些已無法救治的人，他們會出於慈悲帶來迅速的終結。",
+			"追隨慈悲之道的人可能是某個宗教修會的成員，照料需要幫助的人，並基於現實而非理想做出嚴峻的抉擇。有些人可能是深受社群愛戴、語調溫和的治療者，另一些人則可能是戴著面具、帶來陰森慈悲的使者。",
+			"行走此道的人通常身著帶有深兜帽的長袍，並常以面具遮掩面容，以無面的生死使者之姿示人。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Implements of Mercy|Monk||Mercy|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Hand of Healing|Monk||Mercy|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Hand of Harm|Monk||Mercy|TCE|3"
+			}
+		],
+		"ENG_name": "Way of Mercy"
+	},
+	"Way of the Astral Self|Monk|Way of the Astral Self|TCE": {
+		"name": "星界自我之道",
+		"source": "TCE",
+		"page": 50,
+		"className": "Monk",
+		"classSource": "PHB",
+		"subclassShortName": "Astral Self",
+		"subclassSource": "TCE",
+		"level": 3,
+		"entries": [
+			"追隨星界自我之道的武僧相信他們的身體是一種幻象。他們將自己的氣視為其真實形態——星界自我——的體現。這個星界自我可以成為秩序或混亂的力量，有些修道院訓練學生運用這股力量保護弱者，另一些則指導求道者如何為強者效力而顯現其真我。",
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Forms of Your Astral Self|Monk||Astral Self|TCE|3"
+			},
+			{
+				"type": "refSubclassFeature",
+				"subclassFeature": "Arms of the Astral Self|Monk||Astral Self|TCE|3"
+			}
+		],
+		"ENG_name": "Way of the Astral Self"
+	},
+	"Whispers of the Dead|Rogue|Phantom|TCE": {
+		"name": "亡者低語",
+		"source": "TCE",
+		"page": 62,
+		"className": "Rogue",
+		"classSource": "PHB",
+		"subclassShortName": "Phantom",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Phantom feature}",
+			"亡者的回聲縈繞著你。每當你完成短休或長休時，你可以選擇一項你所缺乏的技能或工具熟練並獲得它，因為一個幽魂般的存在與你分享了它的知識。當你使用此特性選擇另一項你缺乏的熟練時，你會失去此熟練。"
+		],
+		"ENG_name": "Whispers of the Dead"
 	},
 	"Wholeness of Body|Monk|Warrior of the Open Hand|XPHB": {
 		"name": "混元體",
@@ -10092,6 +14917,99 @@
 		],
 		"ENG_name": "Wild Magic Surge"
 	},
+	"Wild Surge|Barbarian|Path of Wild Magic|TCE": {
+		"name": "狂野湧動",
+		"source": "TCE",
+		"page": 25,
+		"className": "Barbarian",
+		"classSource": "PHB",
+		"subclassShortName": "Wild Magic",
+		"subclassSource": "TCE",
+		"level": 3,
+		"header": 1,
+		"entries": [
+			"{@i 3rd-level Path of Wild Magic feature}",
+			"在你體內翻騰的魔法能量有時會從你身上爆發出來。當你進入狂暴時，在「狂野魔法」表上擲骰決定產生的魔法效果。",
+			"若效果需要豁免檢定，DC 等於 8 + 你的熟練加值 + 你的體質調整值。",
+			{
+				"type": "table",
+				"caption": "狂野魔法",
+				"colLabels": [
+					"d8",
+					"魔法效果"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"陰影觸鬚在你周圍揮舞。你 30 呎內每個你能看見、由你選擇的生物必須通過一次體質豁免檢定，否則受到 {@damage 1d12} 黯蝕傷害。你也獲得 {@dice 1d12} 臨時生命值。"
+					],
+					[
+						"2",
+						"你傳送至多 30 呎到一處你能看見的未被佔據空間。直到你的狂暴結束前，你可以在你的每個回合中以附贈動作再次使用此效果。"
+					],
+					[
+						"3",
+						"一個看起來像{@creature flumph}或{@creature pixie}（由你選擇）的無形精魂，出現在你 30 呎內一個你能看見、由你選擇之生物的 5 呎內。在當前回合結束時，精魂會爆炸，其 5 呎內的每個生物必須通過一次敏捷豁免檢定，否則受到 {@damage 1d6} 力場傷害。直到你的狂暴結束前，你可以在你的每個回合中以附贈動作再次使用此效果，召喚另一個精魂。"
+					],
+					[
+						"4",
+						"魔法灌注到你所持的一把自選武器中。直到你的狂暴結束前，該武器的傷害類型變為力場，並獲得輕型與投擲屬性，一般射程 20 呎、長射程 60 呎。若武器離開你的手，它會在當前回合結束時重新出現在你手中。"
+					],
+					[
+						"5",
+						"在你的狂暴結束前，每當有生物以攻擊檢定命中你時，魔法都會反擊報復，使該生物受到 {@damage 1d6} 力場傷害。"
+					],
+					[
+						"6",
+						"直到你的狂暴結束前，你被多彩的保護光芒環繞；你的 AC 獲得 +1 加值，位於你 10 呎內的盟友也獲得相同的加值。"
+					],
+					[
+						"7",
+						"花朵與藤蔓暫時在你周圍生長。直到你的狂暴結束前，你 15 呎內的地面對你的敵人而言是{@quickref difficult terrain||3|困難地形}。"
+					],
+					[
+						"8",
+						"一道光束從你的胸口射出。你 30 呎內另一個你能看見、由你選擇的生物必須通過一次體質豁免檢定，否則受到 {@damage 1d6} 光耀傷害，並{@condition blinded}直到你的下個回合開始。直到你的狂暴結束前，你可以在你的每個回合中以附贈動作再次使用此效果。"
+					]
+				],
+				"data": {
+					"genTables": {
+						"tableInclude": true
+					}
+				}
+			}
+		],
+		"ENG_name": "Wild Surge"
+	},
+	"Wizardly Quill|Wizard|Order of Scribes|TCE": {
+		"name": "法師羽毛筆",
+		"source": "TCE",
+		"page": 77,
+		"className": "Wizard",
+		"classSource": "PHB",
+		"subclassShortName": "Scribes",
+		"subclassSource": "TCE",
+		"level": 2,
+		"header": 1,
+		"entries": [
+			"{@i 2nd-level Order of Scribes feature}",
+			"作為一個附贈動作，你可以以魔法在你空著的手中創造一支微型羽毛筆。這支魔法羽毛筆具有下列特性：",
+			{
+				"type": "list",
+				"items": [
+					"這支羽毛筆不需要墨水。當你用它書寫時，它會在書寫表面上產生由你選擇顏色的墨水。",
+					"若你使用這支羽毛筆謄寫，將一個法術抄入你法術書所需花費的時間為每法術環階 2 分鐘。",
+					"只要文字位於你 5 呎內，你可以作為一個附贈動作在文字上揮動羽毛，擦除你用這支羽毛筆寫下的任何內容。"
+				]
+			},
+			"若你創造另一支羽毛筆或你死亡，這支羽毛筆會消失。"
+		],
+		"ENG_name": "Wizardly Quill"
+	},
 	"Wrath of the Sea|Druid|Circle of the Sea|XPHB": {
 		"name": "海洋之怒",
 		"source": "XPHB",
@@ -10106,6 +15024,23 @@
 			"當你顯現該{@variantrule Emanation [Area of Effect]|XPHB|散發}時，以及在你之後的回合中作為一個{@variantrule Bonus Action|XPHB}，你可以選擇{@variantrule Emanation [Area of Effect]|XPHB|散發}中另一個你能看見的生物。目標必須在對你的法術豁免 DC 的體質豁免檢定中成功，否則受到寒冰傷害，且若該生物為大型或更小，會被推離你至多 15 呎。擲等同於你睿知調整值數量的 d6（最少一顆骰）來決定此傷害。"
 		],
 		"ENG_name": "Wrath of the Sea"
+	},
+	"Writhing Tide|Ranger|Swarmkeeper|TCE": {
+		"name": "翻騰之潮",
+		"source": "TCE",
+		"page": 59,
+		"className": "Ranger",
+		"classSource": "PHB",
+		"subclassShortName": "Swarmkeeper",
+		"subclassSource": "TCE",
+		"level": 7,
+		"header": 2,
+		"entries": [
+			"{@i 7th-level Swarmkeeper feature}",
+			"你可以將你的一部分群體凝聚成一團集中的群體，將你托起。作為一個附贈動作，你獲得 10 呎的飛行速度並可以懸浮。此效果持續 1 分鐘，或直到你陷入{@condition incapacitated}為止。",
+			"你可以使用此特性的次數等同於你的熟練加值，並在完成長休時恢復所有已消耗的使用次數。"
+		],
+		"ENG_name": "Writhing Tide"
 	},
 	"Zealous Presence|Barbarian|Path of the Zealot|XPHB": {
 		"name": "狂熱之姿",

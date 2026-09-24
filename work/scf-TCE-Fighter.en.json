@@ -1,0 +1,259 @@
+{
+	"batch": "scf-TCE-Fighter",
+	"items": [
+		{
+			"prop": "subclassFeature",
+			"key": "Bonus Proficiencies|Fighter|Rune Knight|TCE",
+			"hint": {
+				"Bonus Proficiencies": "額外熟練"
+			},
+			"s": [
+				"Bonus Proficiencies",
+				"You gain proficiency with {@item smith's tools|PHB}, and you learn to speak, read, and write {@language Giant}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Giant's Might|Fighter|Rune Knight|TCE",
+			"s": [
+				"Giant's Might",
+				"You have learned how to imbue yourself with the might of giants. As a bonus action, you magically gain the following benefits, which last for 1 minute:",
+				"If you are smaller than Large, you become Large, along with anything you are wearing. If you lack the room to become Large, your size doesn't change.",
+				"You have advantage on Strength checks and Strength saving throws.",
+				"Once on each of your turns, one of your attacks with a weapon or an unarmed strike can deal an extra {@damage 1d6} damage to a target on a hit.",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Maneuver Options|Fighter|Battle Master|TCE",
+			"hint": {
+				"Maneuver Options": "戰技選項"
+			},
+			"s": [
+				"Maneuver Options",
+				"{@i 3rd-level fighter {@variantrule optional class features|tce|optional feature}}",
+				"If you have access to maneuvers, the following maneuvers are added to the list of options available to you. Maneuvers are available to Battle Masters but also to characters who have a special feature like the {@optfeature Superior Technique|TCE} fighting style or the {@feat Martial Adept} feat."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Protective Field|Fighter|Psi Warrior|TCE",
+			"hint": {
+				"Protective Field": "守護力場",
+				"Psionic Energy Die": "靈能骰"
+			},
+			"s": [
+				"Protective Field",
+				"Psionic Energy Die",
+				"When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Psi Warrior|Fighter|Psi Warrior|TCE",
+			"hint": {
+				"Psi Warrior": "靈能戰士"
+			},
+			"s": [
+				"Psi Warrior",
+				"Awake to the psionic power within, a Psi Warrior is a fighter who augments their physical might with psi-infused weapon strikes, telekinetic lashes, and barriers of mental force. Many githyanki train to become such warriors, as do some of the most disciplined high elves. In the world of Eberron, many young kalashtar dream of becoming Psi Warriors.",
+				"As a Psi Warrior, you might have honed your psionic abilities through solo discipline, unlocked it under the tutelage of a master, or refined it at an academy dedicated to wielding the mind's power as both weapon and shield."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Psionic Power|Fighter|Psi Warrior|TCE",
+			"hint": {
+				"Psionic Power": "靈能之力"
+			},
+			"s": [
+				"Psionic Power",
+				"You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a {@dice d6}. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.",
+				"Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.",
+				"When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level ({@dice d8}), 11th level ({@dice d10}), and 17th level ({@dice d12}).",
+				"The powers below use your Psionic Energy dice."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Psionic Strike|Fighter|Psi Warrior|TCE",
+			"hint": {
+				"Psionic Strike": "靈能打擊",
+				"Psionic Energy Die": "靈能骰"
+			},
+			"s": [
+				"Psionic Strike",
+				"Psionic Energy Die",
+				"You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Rune Carver|Fighter|Rune Knight|TCE",
+			"hint": {
+				"Rune Carver": "符文雕刻師"
+			},
+			"s": [
+				"Rune Carver",
+				"You can use magic runes to enhance your gear. You learn two runes of your choice, from among the runes described below, and each time you gain a level in this class, you can replace one rune you know with a different one from this feature. When you reach certain levels in this class, you learn additional runes, as shown in the Runes Known table.",
+				"Whenever you finish a long rest, you can touch a number of objects equal to the number of runes you know, and you inscribe a different rune onto each of the objects. To be eligible, an object must be a weapon, a suit of armor, a shield, a piece of jewelry, or something else you can wear or hold in a hand. Your rune remains on an object until you finish a long rest, and an object can bear only one of your runes at a time.",
+				"Runes Known",
+				"Fighter Level",
+				"Number of Runes",
+				"3rd",
+				"7th",
+				"10th",
+				"15th",
+				"The following runes are available to you when you learn a rune. If a rune has a level requirement, you must be at least that level in this class to learn the rune. If a rune requires a saving throw, your Rune Magic save DC equals 8 + your proficiency bonus + your Constitution modifier.",
+				"Hill Rune (7th Level or Higher)",
+				"Storm Rune (7th Level or Higher)"
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Rune Knight|Fighter|Rune Knight|TCE",
+			"s": [
+				"Rune Knight",
+				"Rune Knights enhance their martial prowess using the supernatural power of runes, an ancient practice that originated with giants. Rune cutters can be found among any family of giants, and you likely learned your methods first or second hand from such a mystical artisan. Whether you found the giant's work carved into a hill or cave, learned of the runes from a sage, or met the giant in person, you studied the giant's craft and learned how to apply magic runes to empower your equipment."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Telekinetic Movement|Fighter|Psi Warrior|TCE",
+			"hint": {
+				"Telekinetic Movement": "心靈致動移動"
+			},
+			"s": [
+				"Telekinetic Movement",
+				"You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Additional Rune Known|Fighter|Rune Knight|TCE",
+			"s": [
+				"Additional Rune Known",
+				"You learn an additional Rune."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Psi-Powered Leap|Fighter|Psi Warrior|TCE",
+			"hint": {
+				"Psi-Powered Leap": "靈能飛躍"
+			},
+			"s": [
+				"Psi-Powered Leap",
+				"As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Runic Shield|Fighter|Rune Knight|TCE",
+			"s": [
+				"Runic Shield",
+				"You learn to invoke your rune magic to protect your allies. When another creature you can see within 60 feet of you is hit by an attack roll, you can use your reaction to force the attacker to reroll the {@dice d20} and use the new roll.",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Telekinetic Adept|Fighter|Psi Warrior|TCE",
+			"hint": {
+				"Telekinetic Adept": "心靈致動專家"
+			},
+			"s": [
+				"Telekinetic Adept",
+				"You have mastered new ways to use your telekinetic abilities, detailed below."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Telekinetic Thrust|Fighter|Psi Warrior|TCE",
+			"hint": {
+				"Telekinetic Thrust": "心靈遙控推擊"
+			},
+			"s": [
+				"Telekinetic Thrust",
+				"When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target {@condition prone} or move it up to 10 feet in any direction horizontally."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Additional Rune Known|Fighter|Rune Knight|TCE",
+			"s": [
+				"Additional Rune Known",
+				"You learn an additional Rune."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Great Stature|Fighter|Rune Knight|TCE",
+			"s": [
+				"Great Stature",
+				"The magic of your runes permanently alters you. When you gain this feature, roll {@dice 3d4}. You grow a number of inches in height equal to the roll.",
+				"Moreover, the extra damage you deal with your Giant's Might feature increases to {@dice 1d8}."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Guarded Mind|Fighter|Psi Warrior|TCE",
+			"hint": {
+				"Guarded Mind": "守護心靈"
+			},
+			"s": [
+				"Guarded Mind",
+				"The psionic energy flowing through you has bolstered your mind. You have resistance to psychic damage. Moreover, if you start your turn {@condition charmed} or {@condition frightened}, you can expend a Psionic Energy die and end every effect on yourself subjecting you to those conditions."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Additional Rune Known|Fighter|Rune Knight|TCE",
+			"s": [
+				"Additional Rune Known",
+				"You learn an additional Rune."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Bulwark of Force|Fighter|Psi Warrior|TCE",
+			"hint": {
+				"Bulwark of Force": "力場壁壘"
+			},
+			"s": [
+				"Bulwark of Force",
+				"You can shield yourself and others with telekinetic force. As a bonus action, you can choose creatures, which can include you, that you can see within 30 feet of you, up to a number of creatures equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures is protected by {@quickref Cover||3||half cover} for 1 minute or until you're {@condition incapacitated}.",
+				"Once you take this bonus action, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to take it again."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Master of Runes|Fighter|Rune Knight|TCE",
+			"s": [
+				"Master of Runes",
+				"You can invoke each rune you know from your Rune Carver feature twice, rather than once, and you regain all expended uses when you finish a short or long rest."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Runic Juggernaut|Fighter|Rune Knight|TCE",
+			"s": [
+				"Runic Juggernaut",
+				"You learn how to amplify your rune-powered transformation. As a result, the extra damage you deal with the Giant's Might feature increases to {@dice 1d10}. Moreover, when you use that feature, your size can increase to Huge, and while you are that size, your reach increases by 5 feet."
+			]
+		},
+		{
+			"prop": "subclassFeature",
+			"key": "Telekinetic Master|Fighter|Psi Warrior|TCE",
+			"hint": {
+				"Telekinetic Master": "心靈致動大師"
+			},
+			"s": [
+				"Telekinetic Master",
+				"Your ability to move creatures and objects with your mind is matched by few. You can cast the {@spell telekinesis} spell, requiring no components, and your spellcasting ability for the spell is Intelligence. On each of your turns while you concentrate on the spell, including the turn when you cast it, you can make one attack with a weapon as a bonus action.",
+				"Once you cast the spell with this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to cast it again."
+			]
+		}
+	]
+}
