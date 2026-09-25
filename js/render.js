@@ -12002,7 +12002,7 @@ Renderer.item = class {
 		Renderer.item._GET_RENDERED_ENTRIES_WALKER = Renderer.item._GET_RENDERED_ENTRIES_WALKER || MiscUtil.getWalker({
 			keyBlocklist: new Set([
 				...MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST,
-				"data",
+				"data", "_zhOf", "name_zh",
 			]),
 		});
 
