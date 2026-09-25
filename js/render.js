@@ -2902,7 +2902,7 @@ Renderer.getEntryDiceDisplayText = function (entry) {
 };
 
 Renderer._getEntryDiceDisplayText_getDiceAsStr = function (entry) {
-	if (entry.successThresh != null) return `${entry.successThresh} percent`;
+	if (entry.successThresh != null) return `${entry.successThresh}%`;
 	if (typeof entry.toRoll === "string") return entry.toRoll;
 	// handle legacy format
 	return Renderer.legacyDiceToString(entry.toRoll);
@@ -4974,7 +4974,7 @@ Renderer.utils = class {
 
 			// Args can either be a static property, or a function and a static property
 
-			const __tplZh = {"acid":"酸蝕","cold":"寒冷","fire":"火焰","force":"力場","lightning":"閃電","necrotic":"黯蝕","poison":"毒素","psychic":"心靈","radiant":"光耀","thunder":"雷鳴","bludgeoning":"鈍擊","piercing":"穿刺","slashing":"揮砍","green":"綠色","blue":"藍色","red":"紅色","white":"白色","yellow":"黃色","black":"黑色","violet":"紫色","silver":"銀色","gold":"金色","orange":"橙色","pearl":"珍珠","tourmaline":"電氣石","garnet":"石榴石","sapphire":"藍寶石","citrine":"黃水晶","jet":"煤玉","amethyst":"紫水晶","jade":"玉","topaz":"黃玉","spinel":"尖晶石","drips acid":"滴著酸液","crackles with lightning":"劈啪閃著電光","issues green gas":"冒出綠色氣體","is wreathed in fire":"被火焰環繞","is covered in frost":"覆上一層霜"};
+			const __tplZh = {"acid":"酸蝕","cold":"寒冷","fire":"火焰","force":"力場","lightning":"閃電","necrotic":"黯蝕","poison":"毒素","psychic":"心靈","radiant":"光耀","thunder":"雷鳴","bludgeoning":"鈍擊","piercing":"穿刺","slashing":"劈砍","green":"綠色","blue":"藍色","red":"紅色","white":"白色","yellow":"黃色","black":"黑色","violet":"紫色","silver":"銀色","gold":"金色","orange":"橙色","pearl":"珍珠","tourmaline":"電氣石","garnet":"石榴石","sapphire":"藍寶石","citrine":"黃水晶","jet":"煤玉","amethyst":"紫水晶","jade":"玉","topaz":"黃玉","spinel":"尖晶石","drips acid":"滴著酸液","crackles with lightning":"劈啪閃著電光","issues green gas":"冒出綠色氣體","is wreathed in fire":"被火焰環繞","is covered in frost":"覆上一層霜"};
 		const __tplMap = v => typeof v === "string" ? (__tplZh[v.toLowerCase()] || v)
 			: Array.isArray(v) && v.every(x => typeof x === "string") ? v.map(x => __tplZh[x.toLowerCase()] || x).join("、")
 			: v;
@@ -5567,7 +5567,7 @@ Renderer.tag = class {
 					return `(Recharge ${asNum}${asNum < 6 ? `\u20136` : ""})`;
 				}
 				case "@chance": {
-					return displayText || `${rollText} percent`;
+					return displayText || `${rollText}%`;
 				}
 				case "@ability": {
 					const [, rawScore] = rollText.split(" ").map(it => it.trim().toLowerCase()).filter(Boolean);
