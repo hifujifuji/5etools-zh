@@ -14,7 +14,7 @@ const loadDict = () => {
 
 // 舊翻譯裡的怪物／物品名稱（小寫），當作名稱的後備
 const OLD = (() => { try { const n = JSON.parse(fs.readFileSync(new URL("../../i18n/hazmole/_names.json", import.meta.url), "utf8")); return {...n.item, ...n.monster}; } catch { return {}; } })();
-export const DMG = {Acid: "強酸", Bludgeoning: "鈍擊", Cold: "寒冷", Fire: "火焰", Force: "力場", Lightning: "閃電", Necrotic: "黯蝕", Piercing: "穿刺", Poison: "毒素", Psychic: "心靈", Radiant: "光耀", Slashing: "揮砍", Thunder: "雷鳴"};
+export const DMG = {Acid: "強酸", Bludgeoning: "鈍擊", Cold: "寒冷", Fire: "火焰", Force: "力場", Lightning: "閃電", Necrotic: "黯蝕", Piercing: "穿刺", Poison: "毒素", Psychic: "心靈", Radiant: "光耀", Slashing: "劈砍", Thunder: "雷鳴"};
 const NUM = {one: "一", two: "兩", three: "三", four: "四", five: "五", six: "六", seven: "七", eight: "八"};
 const SIZE = {Tiny: "微型", Small: "小型", Medium: "中型", Large: "大型", Huge: "超大型", Gargantuan: "巨型"};
 const ABIL = {Strength: "力量", Dexterity: "敏捷", Constitution: "體質", Intelligence: "智力", Wisdom: "感知", Charisma: "魅力"};

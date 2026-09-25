@@ -18,7 +18,7 @@ Object.assign(m[3], {1: "法師、牧師等施法者，以及許多怪物，都�
 Object.assign(m[4], {1: "若一個生物想跳到另一個生物身上，它可以透過{@action grapple||擒抱}做到。然而，除非魔法賦予擒抱者超自然的力量，否則小型或中型生物對巨型或超巨型生物成功擒抱的機會很小。"});
 Object.assign(m[5], {1: "當你採取疾走動作時，你在本回合獲得額外的移動。增加量等於你套用任何調整後的速度。例如，速度為 30 呎時，若你疾走，你在你的回合可以移動至多 60 呎。", 2: "你速度的任何增減都會使此額外移動改變相同的數值。例如，若你 30 呎的速度降至 15 呎，你疾走時本回合可以移動至多 30 呎。"});
 Object.assign(m[6], {1: "當你採取疾走動作時，你在本回合獲得額外的移動。增加量等於你套用任何調整後的{@variantrule Speed|XPHB|速度}。例如，{@variantrule Speed|XPHB|速度}為 30 呎時，若你疾走，你在你的回合可以移動至多 60 呎。若你 30 呎的{@variantrule Speed|XPHB|速度}降至 15 呎，你疾走時本回合可以移動至多 30 呎。", 2: "若你擁有特殊速度，例如{@variantrule Fly Speed|XPHB|飛行速度}或{@variantrule Swim Speed|XPHB|游泳速度}，你採取此動作時可以使用該速度取代你的{@variantrule Speed|XPHB|速度}。你每次採取此動作時選擇使用哪一種速度。"});
-Object.assign(m[8], {1: "若你採取撤離動作，你在本回合剩餘時間內的移動不會引發借機攻擊。"});
+Object.assign(m[8], {1: "若你採取撤離動作，你在本回合剩餘時間內的移動不會引發藉機攻擊。"});
 Object.assign(m[9], {1: "若你採取撤離動作，你在本回合剩餘時間內的移動不會引發{@action Opportunity Attack|XPHB|藉機攻擊}。"});
 Object.assign(m[10], {1: "當你採取閃避動作時，你全神貫注於躲避攻擊。直到你下個回合開始，若你能看見攻擊者，任何對你進行的攻擊檢定都具有劣勢，且你的敏捷豁免檢定具有優勢。若你陷入無力狀態（如附錄所述）或你的速度降至 0，你便會失去此好處。"});
 Object.assign(m[11], {1: "若你採取閃避動作，你獲得以下好處：直到你下個回合開始，若你能看見攻擊者，任何對你進行的攻擊檢定都具有{@variantrule Disadvantage|XPHB|劣勢}，且你的敏捷{@variantrule Saving Throw|XPHB|豁免檢定}具有{@variantrule Advantage|XPHB|優勢}。", 2: "若你處於{@condition Incapacitated|XPHB}狀態或你的{@variantrule Speed|XPHB|速度}為 0，你便會失去這些好處。"});

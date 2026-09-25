@@ -1461,7 +1461,7 @@
 				"type": "entries",
 				"name": "突破防禦",
 				"entries": [
-					"你造成的鈍擊、穿刺與揮砍傷害總是無視{@variantrule Resistance|XPHB}。"
+					"你造成的鈍擊、穿刺與劈砍傷害總是無視{@variantrule Resistance|XPHB}。"
 				],
 				"ENG_name": "Overcome Defenses"
 			},
@@ -3305,7 +3305,7 @@
 				"type": "entries",
 				"name": "強韌血肉",
 				"entries": [
-					"在你受到鈍擊、穿刺或揮砍傷害後，你可以立即執行一個{@variantrule Reaction|XPHB}，獲得對鈍擊、穿刺與揮砍傷害的{@variantrule Resistance|XPHB}，直到你的下個回合開始。使用此益處後，直到你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"
+					"在你受到鈍擊、穿刺或劈砍傷害後，你可以立即執行一個{@variantrule Reaction|XPHB}，獲得對鈍擊、穿刺與劈砍傷害的{@variantrule Resistance|XPHB}，直到你的下個回合開始。使用此益處後，直到你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"
 				],
 				"ENG_name": "Toughened Flesh"
 			}
@@ -3808,7 +3808,7 @@
 				"type": "entries",
 				"name": "搭檔合作",
 				"entries": [
-					"當你執行{@action Help|XPHB}動作時，你可以作為同一個動作的一部分，與你 5 呎內一名自願的盟友交換位置。此移動不會引發{@action Opportunity Attack|XPHB|借機攻擊}。若該盟友處於{@condition Incapacitated|XPHB}狀態，你便無法使用此益處。"
+					"當你執行{@action Help|XPHB}動作時，你可以作為同一個動作的一部分，與你 5 呎內一名自願的盟友交換位置。此移動不會引發{@action Opportunity Attack|XPHB|藉機攻擊}。若該盟友處於{@condition Incapacitated|XPHB}狀態，你便無法使用此益處。"
 				],
 				"ENG_name": "Tag Team"
 			}
@@ -5273,7 +5273,7 @@
 				"type": "entries",
 				"name": "傷害減免",
 				"entries": [
-					"當你穿著重型護甲時被攻擊命中，該攻擊對你造成的所有鈍擊、穿刺與揮砍傷害都會減少等同於你{@variantrule Proficiency|XPHB|熟練加值}的數值。"
+					"當你穿著重型護甲時被攻擊命中，該攻擊對你造成的所有鈍擊、穿刺與劈砍傷害都會減少等同於你{@variantrule Proficiency|XPHB|熟練加值}的數值。"
 				],
 				"ENG_name": "Damage Reduction"
 			}
@@ -10023,7 +10023,7 @@
 		"ENG_name": "Skulker"
 	},
 	"Slasher|TCE": {
-		"name": "揮砍者",
+		"name": "劈砍者",
 		"source": "TCE",
 		"page": 81,
 		"reprintedAs": [
@@ -10045,15 +10045,15 @@
 			{
 				"type": "list",
 				"items": [
-					"每回合一次，當你以造成揮砍傷害的攻擊命中一個生物時，你可以使目標的速度降低 10 呎，直到你的下個回合開始。",
-					"當你對一個生物造成揮砍傷害的重擊時，你會使它身受重創。直到你的下個回合開始前，目標的所有攻擊檢定具有劣勢。"
+					"每回合一次，當你以造成劈砍傷害的攻擊命中一個生物時，你可以使目標的速度降低 10 呎，直到你的下個回合開始。",
+					"當你對一個生物造成劈砍傷害的重擊時，你會使它身受重創。直到你的下個回合開始前，目標的所有攻擊檢定具有劣勢。"
 				]
 			}
 		],
 		"ENG_name": "Slasher"
 	},
 	"Slasher|XPHB": {
-		"name": "揮砍者",
+		"name": "劈砍者",
 		"source": "XPHB",
 		"page": 208,
 		"category": "G",
@@ -10078,7 +10078,7 @@
 				"type": "entries",
 				"name": "斷筋",
 				"entries": [
-					"每回合一次，當你以造成揮砍傷害的攻擊命中一個生物時，你可以使該生物的{@variantrule Speed|XPHB}降低 10 呎，直到你的下個回合開始。"
+					"每回合一次，當你以造成劈砍傷害的攻擊命中一個生物時，你可以使該生物的{@variantrule Speed|XPHB}降低 10 呎，直到你的下個回合開始。"
 				],
 				"ENG_name": "Hamstring"
 			},
@@ -10086,7 +10086,7 @@
 				"type": "entries",
 				"name": "強化重擊",
 				"entries": [
-					"當你對一個生物造成揮砍傷害的{@variantrule Critical Hit|XPHB}時，直到你的下個回合開始前，該生物的攻擊檢定具有{@variantrule Disadvantage|XPHB}。"
+					"當你對一個生物造成劈砍傷害的{@variantrule Critical Hit|XPHB}時，直到你的下個回合開始前，該生物的攻擊檢定具有{@variantrule Disadvantage|XPHB}。"
 				],
 				"ENG_name": "Enhanced Critical"
 			}
@@ -10191,7 +10191,7 @@
 				"type": "entries",
 				"name": "敏捷移動",
 				"entries": [
-					"針對你的{@action Opportunity Attack|XPHB|借機攻擊}具有{@variantrule Disadvantage|XPHB}。"
+					"針對你的{@action Opportunity Attack|XPHB|藉機攻擊}具有{@variantrule Disadvantage|XPHB}。"
 				],
 				"ENG_name": "Agile Movement"
 			}

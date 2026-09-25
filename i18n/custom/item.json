@@ -1019,6 +1019,69 @@
 		],
 		"ENG_name": "Acid"
 	},
+	"Adze of Annam|BGG": {
+		"name": "安南之錛",
+		"source": "BGG",
+		"page": 110,
+		"baseItem": "greataxe|PHB",
+		"type": "M",
+		"rarity": "artifact",
+		"reqAttune": true,
+		"weight": 7,
+		"weaponCategory": "martial",
+		"property": [
+			"H",
+			"2H"
+		],
+		"dmg1": "1d12",
+		"dmgType": "S",
+		"bonusWeapon": "+3",
+		"entries": [
+			"據說這把巨大的錛曾由萬物之父安南所揮舞，但並非作為武器，而是作為他在萬古之前塑造主物質位面各個世界時所用的工具。",
+			{
+				"type": "entries",
+				"name": "隨機屬性",
+				"entries": [
+					"此物品具有以下隨機屬性，由在《地下城主指南》中對應的表上擲骰決定：",
+					{
+						"type": "list",
+						"items": [
+							"2 項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性",
+							"1 項{@table Artifact Properties; Major Beneficial Properties|dmg|主要有益}屬性",
+							"2 項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性"
+						]
+					}
+				],
+				"ENG_name": "Random Properties"
+			},
+			{
+				"type": "entries",
+				"name": "魔法武器",
+				"entries": [
+					"當一個生物與這把錛同調時，這件神器會以魔法調整大小，讓該生物能將它作為巨斧揮舞。這把錛是一把魔法武器，以它進行的攻擊檢定與傷害擲骰獲得 +3 加值。命中時，錛額外造成 {@damage 3d12} 點力場傷害。它對物體與建築也造成雙倍傷害。"
+				],
+				"ENG_name": "Magic Weapon"
+			},
+			{
+				"type": "entries",
+				"name": "神聖鶴嘴鋤",
+				"entries": [
+					"作為一個動作，你可以召喚萬物之父的力量，使用這把錛施展{@spell move earth}或{@spell fabricate}。此屬性使用後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Divine Mattock"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1": [
+					"fabricate",
+					"move earth"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Adze of Annam"
+	},
 	"Airship|XPHB": {
 		"name": "飛空船",
 		"source": "XPHB",
@@ -1259,6 +1322,15 @@
 			"一顆深紫色的寶石。"
 		],
 		"ENG_name": "Amethyst"
+	},
+	"Amulet of dinosaur feathers (Sun Empire)|PSX": {
+		"name": "恐龍羽毛護符（太陽帝國）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 2500,
+		"ENG_name": "Amulet of dinosaur feathers (Sun Empire)"
 	},
 	"Amulet of Health|XDMG": {
 		"name": "強健護符",
@@ -1646,12 +1718,12 @@
 		"strength": "15",
 		"stealth": true,
 		"entries": [
-			"穿著此護甲時，你對鈍擊、穿刺與揮砍傷害具有{@variantrule Resistance|XPHB}。",
+			"穿著此護甲時，你對鈍擊、穿刺與劈砍傷害具有{@variantrule Resistance|XPHB}。",
 			{
 				"type": "entries",
 				"name": "金屬外殼",
 				"entries": [
-					"你可以執行一個{@action Magic|XPHB}動作，使你在 10 分鐘內或直到你不再穿著此護甲為止，對鈍擊、穿刺與揮砍傷害具有{@variantrule Immunity|XPHB}。此屬性使用後，直到下一個黎明前都無法再次使用。"
+					"你可以執行一個{@action Magic|XPHB}動作，使你在 10 分鐘內或直到你不再穿著此護甲為止，對鈍擊、穿刺與劈砍傷害具有{@variantrule Immunity|XPHB}。此屬性使用後，直到下一個黎明前都無法再次使用。"
 				],
 				"ENG_name": "Metal Shell"
 			}
@@ -2002,7 +2074,7 @@
 				"name": "魔法武器",
 				"entries": [
 					"矮人王之斧是一把魔法武器，以它進行的攻擊檢定與傷害擲骰獲得 +3 加值。",
-					"當你用此斧攻擊一個生物，且攻擊檢定的 {@dice d20} 擲出 20 時，此斧額外造成 20 點揮砍傷害。",
+					"當你用此斧攻擊一個生物，且攻擊檢定的 {@dice d20} 擲出 20 時，此斧額外造成 20 點劈砍傷害。",
 					"此斧具有{@itemProperty T|XPHB|投擲}屬性，一般射程 20 呎，長射程 60 呎。當你以此武器的遠程攻擊命中時，它額外造成 {@damage 1d8} 力場傷害；若目標是巨人類型的生物，則額外造成 {@damage 2d8} 力場傷害。無論命中或未命中，武器都會立即飛回你手中。"
 				],
 				"ENG_name": "Magic Weapon"
@@ -2109,6 +2181,51 @@
 		},
 		"hasFluffImages": true,
 		"ENG_name": "Axe of the Dwarvish Lords"
+	},
+	"Azorius Guild Signet|GGR": {
+		"name": "阿佐理斯公會印戒",
+		"source": "GGR",
+		"page": 178,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這枚戒指飾有阿佐理斯的標誌，讓你能施展{@spell ensnaring strike}。公會印戒有時會頒給在該公會中聲望值達到 5 或更高的公會成員，作為為公會提供特殊服務的獎勵。除了魔法屬性之外，這枚戒指也象徵著阿佐理斯的認可與青睞。",
+			"印戒有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。戴著它時，你可以消耗 1 點充能施展相應的法術（豁免 {@dc 13}）。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"ensnaring strike"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Azorius Guild Signet"
+	},
+	"Azorius Keyrune|GGR": {
+		"name": "阿佐理斯鑰符",
+		"source": "GGR",
+		"page": 177,
+		"rarity": "rare",
+		"reqAttune": "by a member of the Azorius guild",
+		"reqAttuneTags": [
+			{
+				"background": "Azorius Functionary|GGR"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這枚鑰符以白色大理石與青金石雕成，形似一隻高貴的猛禽。它可以變成一隻{@creature giant eagle}，持續至多 1 小時。當變形後的鷹位於你 1 哩內時，你可以與牠以心靈感應溝通。作為一個動作，你可以透過鷹的眼睛觀看並聽見牠所聽到的聲音，直到你下個回合開始，並獲得牠敏銳視覺的益處。在此期間，你自身的感官處於目盲與耳聾狀態。",
+			"當你使用一個動作說出物品的命令語，並將鑰符放在你 5 呎內一個未被佔據空間的地面上時，鑰符會變成一隻{@creature giant eagle}。若沒有足夠的空間容納鷹，鑰符便不會變形。",
+			"該生物對你、你的同伴與你公會的其他成員友善（除非那些公會成員對你懷有敵意）。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，鷹會採取{@action Dodge}動作並移動以避開危險。",
+			"持續時間結束時，該生物會恢復為鑰符形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復原形。當該生物恢復為鑰符形態後，必須經過 36 小時才能再次變形。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Azorius Keyrune"
 	},
 	"Azurite|XDMG": {
 		"name": "藍銅礦",
@@ -2828,7 +2945,7 @@
 		"value": 10000,
 		"poison": true,
 		"entries": [
-			"作為一個{@variantrule Bonus Action|XPHB}，你可以用一瓶基礎毒藥塗抹一把武器或至多三件彈藥。受到塗毒武器或彈藥穿刺或揮砍傷害的生物，會額外受到 {@damage 1d4} 毒素傷害。塗抹後，毒藥會保持效力 1 分鐘，或直到其傷害被造成為止，以先發生者為準。"
+			"作為一個{@variantrule Bonus Action|XPHB}，你可以用一瓶基礎毒藥塗抹一把武器或至多三件彈藥。受到塗毒武器或彈藥穿刺或劈砍傷害的生物，會額外受到 {@damage 1d4} 毒素傷害。塗抹後，毒藥會保持效力 1 分鐘，或直到其傷害被造成為止，以先發生者為準。"
 		],
 		"miscTags": [
 			"CNS"
@@ -2983,6 +3100,15 @@
 		"rarity": "none",
 		"value": 750000,
 		"ENG_name": "Bejeweled ivory drinking horn with gold filigree"
+	},
+	"Bejeweled ivory drinking horn with gold inlay (Brazen Coalition)|PSX": {
+		"name": "鑲金嵌寶的象牙角杯（銅鑄聯盟）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 750000,
+		"ENG_name": "Bejeweled ivory drinking horn with gold inlay (Brazen Coalition)"
 	},
 	"Bell Branch|TCE": {
 		"name": "鈴枝",
@@ -3253,6 +3379,71 @@
 			"Armaments - Legendary|XDMG"
 		],
 		"ENG_name": "Belt of Storm Giant Strength"
+	},
+	"Bigby's Beneficent Bracelet|BGG": {
+		"name": "畢格比的慈惠手鐲",
+		"source": "BGG",
+		"page": 111,
+		"rarity": "artifact",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這件華麗的首飾由法師畢格比親手打造，由四枚金戒指組成，以精緻的鍊子連接到一個鑲滿藍寶石與鑽石的腕環上。",
+			{
+				"type": "entries",
+				"name": "隨機屬性",
+				"entries": [
+					"這只手鐲具有以下隨機屬性，由在《地下城主指南》中對應的表上擲骰決定：",
+					{
+						"type": "list",
+						"items": [
+							"1 項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性",
+							"1 項{@table Artifact Properties; Major Beneficial Properties|dmg|主要有益}屬性",
+							"1 項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性"
+						]
+					}
+				],
+				"ENG_name": "Random Properties"
+			},
+			{
+				"type": "entries",
+				"name": "靈巧手指",
+				"entries": [
+					"穿戴手鐲時，你可以施展{@spell mage hand}。"
+				],
+				"ENG_name": "Dexterous Fingers"
+			},
+			{
+				"type": "entries",
+				"name": "力場雕塑",
+				"entries": [
+					"透過專注並引導手鐲的魔法 1 分鐘，你可以創造一件大型或更小之非魔法物體的幽靈複製品。複製品出現在你 10 呎內一個未被佔據的空間，由有形但半透明的力場構成，模仿所複製物體的大小、重量與其他屬性。複製品必須出現在能支撐它的表面或液體上。生物可以如同對待非魔法物體般觸碰複製品並與之互動。",
+					"複製品免疫所有傷害且無法被解除，但{@spell disintegrate}法術能立即摧毀它。否則，複製品會在 8 小時後或你以一個動作解散它時消失。",
+					"手鐲最多可以創造三件複製品，並在黎明時恢復所有已消耗的使用次數。"
+				],
+				"ENG_name": "Force Sculpture"
+			},
+			{
+				"type": "entries",
+				"name": "援助之手",
+				"entries": [
+					"作為一個動作，你可以使用手鐲以 9 環法術施展{@spell Bigby's hand}（法術攻擊加值 +13）。以此方式施展該法術時，法術不需要{@status concentration}。此屬性使用後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Helpful Hand"
+			}
+		],
+		"attachedSpells": {
+			"will": [
+				"mage hand"
+			],
+			"daily": {
+				"1": [
+					"bigby's hand#9"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Bigby's Beneficent Bracelet"
 	},
 	"Black Dragon Scale Mail|XDMG": {
 		"name": "黑龍鱗甲",
@@ -4264,7 +4455,7 @@
 		"weight": 6,
 		"ac": 2,
 		"entries": [
-			"你可以用這面魔法盾牌進行遠程武器攻擊。它的一般射程為 20 呎，最大射程為 60 呎，攻擊檢定使用你的力量或敏捷（由你選擇）。若你熟練盾牌，你便熟練使用這面盾牌進行的攻擊。命中時，它造成 {@damage 1d6} 點揮砍傷害。若你擲出盾牌，它會在命中或未命中目標後的瞬間重新出現在你手中。"
+			"你可以用這面魔法盾牌進行遠程武器攻擊。它的一般射程為 20 呎，最大射程為 60 呎，攻擊檢定使用你的力量或敏捷（由你選擇）。若你熟練盾牌，你便熟練使用這面盾牌進行的攻擊。命中時，它造成 {@damage 1d6} 點劈砍傷害。若你擲出盾牌，它會在命中或未命中目標後的瞬間重新出現在你手中。"
 		],
 		"ENG_name": "Boomerang Shield"
 	},
@@ -4435,6 +4626,51 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Boots of the Winterlands"
+	},
+	"Boros Guild Signet|GGR": {
+		"name": "波洛斯公會印戒",
+		"source": "GGR",
+		"page": 178,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這枚戒指飾有波洛斯的標誌，讓你能施展{@spell heroism}。公會印戒有時會頒給在該公會中聲望值達到 5 或更高的公會成員，作為為公會提供特殊服務的獎勵。除了魔法屬性之外，這枚戒指也象徵著波洛斯的認可與青睞。",
+			"印戒有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。戴著它時，你可以消耗 1 點充能施展相應的法術（豁免 {@dc 13}）。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"heroism"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Boros Guild Signet"
+	},
+	"Boros Keyrune|GGR": {
+		"name": "波洛斯鑰符",
+		"source": "GGR",
+		"page": 177,
+		"rarity": "rare",
+		"reqAttune": "by a member of the Boros guild",
+		"reqAttuneTags": [
+			{
+				"background": "boros legionnaire|ggr"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這枚鑰符以紅色砂岩與白色花崗岩元素雕成，形似一名波洛斯軍團的成員，可以變成一名{@creature veteran}（人類），持續至多 8 小時。除了替你作戰之外，這名{@creature veteran}還會愉快地提供戰術建議，而且通常很中肯。任何與變形後的鑰符交談或仔細檢查它的人，都能輕易看出它是一個人造的人類。",
+			"當你使用一個動作說出物品的命令語，並將鑰符放在你 5 呎內一個未被佔據空間的地面上時，鑰符會變成一名{@creature veteran}（人類）。若沒有足夠的空間容納{@creature veteran}，鑰符便不會變形。",
+			"該生物對你、你的同伴與你公會的其他成員友善（除非那些公會成員對你懷有敵意）。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會採取{@action Dodge}動作並移動以避開危險。",
+			"持續時間結束時，該生物會恢復為鑰符形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復原形。當該生物恢復為鑰符形態後，必須經過 36 小時才能再次變形。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Boros Keyrune"
 	},
 	"Bottle stopper cork embossed with gold leaf and set with amethysts|XDMG": {
 		"name": "壓印金箔並鑲有紫晶的軟木瓶塞",
@@ -4689,6 +4925,15 @@
 		"hasFluffImages": true,
 		"ENG_name": "Bronze Dragon Scale Mail"
 	},
+	"Bronze spyglass (Brazen Coalition)|PSX": {
+		"name": "青銅望遠鏡（銅鑄聯盟）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 25000,
+		"ENG_name": "Bronze spyglass (Brazen Coalition)"
+	},
 	"Brooch of Living Essence|EGW": {
 		"name": "生命精華胸針",
 		"source": "EGW",
@@ -4894,7 +5139,7 @@
 				"type": "list",
 				"items": [
 					"每回合一次，當你為武器近戰攻擊擲傷害骰時，你可以重擲武器的傷害骰。若你這麼做，你必須使用第二次的總和。",
-					"你造成揮砍傷害的武器攻擊在 {@dice d20} 擲出 19 或 20 時即為重擊。"
+					"你造成劈砍傷害的武器攻擊在 {@dice d20} 擲出 19 或 20 時即為重擊。"
 				]
 			}
 		],
@@ -5380,6 +5625,15 @@
 		"value": 25000,
 		"ENG_name": "Carved ivory statuette"
 	},
+	"Carved jade statuette (River Heralds)|PSX": {
+		"name": "玉雕小像（河流先驅）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 25000,
+		"ENG_name": "Carved jade statuette (River Heralds)"
+	},
 	"Carved wooden harp with ivory inlay and zircon gems|XDMG": {
 		"name": "鑲嵌象牙與鋯石的雕花木豎琴",
 		"source": "XDMG",
@@ -5490,6 +5744,15 @@
 		"rarity": "none",
 		"value": 750000,
 		"ENG_name": "Ceremonial gold armor with black pearls"
+	},
+	"Ceremonial silver dagger with gold pommel and black pearl (Legion of Dusk)|PSX": {
+		"name": "金柄頭鑲黑珍珠的儀式銀匕首（暮影軍團）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 75000,
+		"ENG_name": "Ceremonial silver dagger with gold pommel and black pearl (Legion of Dusk)"
 	},
 	"Chain|XPHB": {
 		"name": "鎖鏈",
@@ -6150,6 +6413,15 @@
 		],
 		"ENG_name": "Component Pouch"
 	},
+	"Copper Alms-Coin|GGR": {
+		"name": "施捨銅幣",
+		"source": "GGR",
+		"page": 9,
+		"type": "$C",
+		"rarity": "none",
+		"value": 1,
+		"ENG_name": "Copper Alms-Coin"
+	},
 	"Copper chalice with silver filigree|XDMG": {
 		"name": "飾有銀絲的銅聖杯",
 		"source": "XDMG",
@@ -6183,6 +6455,24 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Copper Dragon Scale Mail"
+	},
+	"Copper stein with silver filigree (Brazen Coalition)|PSX": {
+		"name": "銀絲細工銅啤酒杯（銅鑄聯盟）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 2500,
+		"ENG_name": "Copper stein with silver filigree (Brazen Coalition)"
+	},
+	"Copper Zib|GGR": {
+		"name": "吉布銅幣",
+		"source": "GGR",
+		"page": 9,
+		"type": "$C",
+		"rarity": "none",
+		"value": 1,
+		"ENG_name": "Copper Zib"
 	},
 	"Copper|XDMG": {
 		"name": "銅",
@@ -6419,6 +6709,34 @@
 			"在能利用撬棍槓桿作用的力量檢定上，使用撬棍能使你具有{@variantrule Advantage|XPHB}。"
 		],
 		"ENG_name": "Crowbar"
+	},
+	"Crown of the Wrath Bringer|BGG": {
+		"name": "降怒者之冠",
+		"source": "BGG",
+		"page": 111,
+		"rarity": "rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這頂鋸齒狀的鐵製頭環上有敵之符文形狀的裝飾。戴上時，頭冠會發出蒼白的光芒，汲取佩戴者的怒火，以兇猛的恐懼打擊對手。",
+			"戴著這頂頭冠時，當你對一個生物進行攻擊檢定並命中它，你可以消耗並擲一顆你未使用的生命骰。該生物額外受到等於擲出數字的心靈傷害。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"作為一個動作，你可以引動頭冠的符文，用它施展{@spell fear}法術（豁免 {@dc 15}）；該法術的持續時間為 1 分鐘，且不需要{@status concentration}。符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"fear"
+				]
+			}
+		},
+		"ENG_name": "Crown of the Wrath Bringer"
 	},
 	"Crown of Whirling Comets|BMT": {
 		"name": "旋轉彗星之冠",
@@ -6815,7 +7133,7 @@
 		"entries": [
 			"作為一個{@action Magic|XPHB}動作，你可以將這尊 1 吋高的精金小雕像放在地上，並說出命令詞，使它迅速長成一座方形的精金塔。再次說出命令詞會使塔恢復為小雕像的形態，但只有在塔內無人時才有效。塔出現區域中的每個生物都會被推到塔外緊鄰塔的未被佔據空間。區域中未被穿戴或攜帶的物體也會被推離塔。",
 			"塔每邊 20 呎、高 30 呎，四面都有射箭孔，頂部有城垛。其內部分為兩層，以梯子、樓梯或斜坡（由你選擇）連接。此梯子、樓梯或斜坡的盡頭是一扇通往屋頂的活板門。創造時，塔在面向你的一側地面層有一扇門。這扇門只會依你的命令開啟，你可以作為一個{@variantrule Bonus Action|XPHB}下達命令。它對{@spell Knock|XPHB}法術及類似魔法免疫。",
-			"{@action Magic|XPHB}使塔無法被推倒。屋頂、門和牆壁各具有 AC 20；HP 100；對鈍擊、穿刺與揮砍傷害具有{@variantrule Immunity|XPHB}（攻城器械造成的除外）；並對所有其他傷害具有{@variantrule Resistance|XPHB}。將塔縮回小雕像形態不會修復塔所受的損傷。只有{@spell Wish|XPHB}法術能修復此塔（此用法視為複製 8 環或更低的法術）。每次施展祈願術都會使塔恢復其全部{@variantrule Hit Points|XPHB}。"
+			"{@action Magic|XPHB}使塔無法被推倒。屋頂、門和牆壁各具有 AC 20；HP 100；對鈍擊、穿刺與劈砍傷害具有{@variantrule Immunity|XPHB}（攻城器械造成的除外）；並對所有其他傷害具有{@variantrule Resistance|XPHB}。將塔縮回小雕像形態不會修復塔所受的損傷。只有{@spell Wish|XPHB}法術能修復此塔（此用法視為複製 8 環或更低的法術）。每次施展祈願術都會使塔恢復其全部{@variantrule Hit Points|XPHB}。"
 		],
 		"lootTables": [
 			"Arcana - Rare|XDMG",
@@ -9210,7 +9528,7 @@
 		"wondrous": true,
 		"entries": [
 			"這副厚重的犢皮紙卡牌嗡嗡作響，帶著元素混沌的魔法。",
-			"這副牌組的魔法只有在隨機抽牌時才會發揮作用（真實的撲克牌可以模擬這副牌組）。作為一個動作，你可以從這副牌組隨機抽一張牌並擲出，進行一次遠程法術攻擊，攻擊檢定使用敏捷。卡牌的射程為 30 呎。命中時，它造成 {@damage 1d4} 點揮砍傷害，並施加由其花色決定的魔法效果，詳見「狂野卡牌組」表。卡牌在命中或未命中目標後立即回到牌組。",
+			"這副牌組的魔法只有在隨機抽牌時才會發揮作用（真實的撲克牌可以模擬這副牌組）。作為一個動作，你可以從這副牌組隨機抽一張牌並擲出，進行一次遠程法術攻擊，攻擊檢定使用敏捷。卡牌的射程為 30 呎。命中時，它造成 {@damage 1d4} 點劈砍傷害，並施加由其花色決定的魔法效果，詳見「狂野卡牌組」表。卡牌在命中或未命中目標後立即回到牌組。",
 			{
 				"type": "table",
 				"caption": "狂野卡牌組",
@@ -9697,6 +10015,33 @@
 		"hasFluffImages": true,
 		"ENG_name": "Deck of Wonder"
 	},
+	"Delver's Claws|BGG": {
+		"name": "掘地者之爪",
+		"source": "BGG",
+		"page": 112,
+		"rarity": "rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"modifySpeed": {
+			"equal": {
+				"burrow": "walk"
+			}
+		},
+		"entries": [
+			"這隻飽經風霜的皮手套背面飾有三根形似鼴鼠爪子的大金屬鉤。手套的掌心縫著山之符文。",
+			"這隻手套視為一把具有靈巧與輕型屬性的簡易近戰武器，命中時造成 {@damage 1d4} 點劈砍傷害。與手套同調時，你獲得等同於你步行速度的掘穴速度，以及 15 呎的{@sense blindsight}。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"作為一個動作，你可以引動手套的符文，以大地的堅實強化自己。消耗並擲出你未使用的生命骰，數量至多等於你的熟練加值。你接著恢復等於擲骰總和加上你體質調整值的生命值。",
+					"符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"ENG_name": "Delver's Claws"
+	},
 	"Demonomicon of Iggwilv|TCE": {
 		"name": "伊格維爾的惡魔學",
 		"source": "TCE",
@@ -10050,6 +10395,51 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Dimensional Shackles"
+	},
+	"Dimir Guild Signet|GGR": {
+		"name": "底密爾公會印戒",
+		"source": "GGR",
+		"page": 178,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這枚戒指飾有底密爾的標誌，讓你能施展{@spell disguise self}。公會印戒有時會頒給在該公會中聲望值達到 5 或更高的公會成員，作為為公會提供特殊服務的獎勵。除了魔法屬性之外，這枚戒指也象徵著底密爾的認可與青睞。",
+			"印戒有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。戴著它時，你可以消耗 1 點充能施展相應的法術（豁免 {@dc 13}）。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"disguise self"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Dimir Guild Signet"
+	},
+	"Dimir Keyrune|GGR": {
+		"name": "底密爾鑰符",
+		"source": "GGR",
+		"page": 177,
+		"rarity": "very rare",
+		"reqAttune": "by a member of the Dimir guild",
+		"reqAttuneTags": [
+			{
+				"background": "dimir operative|ggr"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這枚鑰符以點綴著鋼鐵的黑色石頭雕成，形似一隻風格化的恐怖生物。一聲令下，它會變成一隻形似底密爾公會標誌、有六隻刀刃般腿部的{@creature intellect devourer}。該生物存在至多 24 小時。在此期間，它只會執行你交付的單一任務——通常是奪取某人的身體，以短暫假扮那個人，或從其心智中竊取秘密。任務完成時，該生物會回到你身邊，回報它的成功，並恢復為鑰符形態。",
+			"當你使用一個動作說出物品的命令語，並將鑰符放在你 5 呎內一個未被佔據空間的地面上時，鑰符會變成一隻{@creature intellect devourer}。若沒有足夠的空間容納該生物，鑰符便不會變形。",
+			"該生物對你、你的同伴與你公會的其他成員友善（除非那些公會成員對你懷有敵意）。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會採取{@action Dodge}動作並移動以避開危險。",
+			"持續時間結束時，該生物會恢復為鑰符形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復原形。當該生物恢復為鑰符形態後，必須經過 36 小時才能再次變形。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Dimir Keyrune"
 	},
 	"Diplomat's Pack|XPHB": {
 		"name": "大使套裝",
@@ -10695,6 +11085,15 @@
 		],
 		"ENG_name": "Eldritch Claw Tattoo"
 	},
+	"Electrum 50-Zib Coin|GGR": {
+		"name": "50 吉布琥珀金幣",
+		"source": "GGR",
+		"page": 9,
+		"type": "$C",
+		"rarity": "none",
+		"value": 50,
+		"ENG_name": "Electrum 50-Zib Coin"
+	},
 	"Elemental Essence Shard (Air)|TCE": {
 		"name": "元素精華碎片（氣）",
 		"source": "TCE",
@@ -10719,7 +11118,7 @@
 				"type": "entries",
 				"name": "屬性",
 				"entries": [
-					"你可以立即飛行至多 60 呎，且不會引發借機攻擊。"
+					"你可以立即飛行至多 60 呎，且不會引發藉機攻擊。"
 				],
 				"ENG_name": "Property"
 			}
@@ -10969,6 +11368,35 @@
 			"CNS"
 		],
 		"ENG_name": "Elixir of Health"
+	},
+	"Elven Thrower|BGG": {
+		"name": "精靈投擲器",
+		"source": "BGG",
+		"page": 64,
+		"baseItem": "spear|PHB",
+		"type": "M",
+		"rarity": "very rare",
+		"reqAttune": "by a elf",
+		"reqAttuneTags": [
+			{
+				"race": "elf"
+			}
+		],
+		"weight": 3,
+		"weaponCategory": "simple",
+		"property": [
+			"T",
+			"V"
+		],
+		"range": "20/60",
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"dmg2": "1d8",
+		"bonusWeapon": "+3",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +3 加值。它具有投擲屬性，一般射程為 20 呎，最大射程為 60 呎。當你以這把武器的遠程攻擊命中時，它額外造成 {@damage 1d8} 點傷害；若目標是巨人，則額外造成 {@damage 2d8} 點傷害。攻擊結束後，武器會立即飛回你手中。"
+		],
+		"ENG_name": "Elven Thrower"
 	},
 	"Emblem|XPHB": {
 		"name": "徽章",
@@ -12059,6 +12487,15 @@
 		"hasFluffImages": true,
 		"ENG_name": "Fates Card"
 	},
+	"Feathered mantle with emerald clasp (Sun Empire)|PSX": {
+		"name": "綠寶石扣環羽毛披風（太陽帝國）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 250000,
+		"ENG_name": "Feathered mantle with emerald clasp (Sun Empire)"
+	},
 	"Feed (per day)|XPHB": {
 		"name": "飼料（每日）",
 		"source": "XPHB",
@@ -12696,6 +13133,33 @@
 		"value": 250000,
 		"ENG_name": "Fine gold chain set with a fire opal"
 	},
+	"Fine gold chain with fire opals (Legion of Dusk)|PSX": {
+		"name": "鑲火蛋白石的精緻金鍊（暮影軍團）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 250000,
+		"ENG_name": "Fine gold chain with fire opals (Legion of Dusk)"
+	},
+	"Fine robe with dinosaur feathers and silver embroidery (Sun Empire)|PSX": {
+		"name": "飾有恐龍羽毛與銀線刺繡的華美長袍（太陽帝國）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 25000,
+		"ENG_name": "Fine robe with dinosaur feathers and silver embroidery (Sun Empire)"
+	},
+	"Fine steel rapier with gold filigree hilt (Legion of Dusk)|PSX": {
+		"name": "金絲細工劍柄的精鋼刺劍（暮影軍團）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 75000,
+		"ENG_name": "Fine steel rapier with gold filigree hilt (Legion of Dusk)"
+	},
 	"Fine Wine (bottle)|PHB": {
 		"name": "高級葡萄酒（一瓶）",
 		"source": "PHB",
@@ -12726,6 +13190,15 @@
 			"CNS"
 		],
 		"ENG_name": "Fine Wine (bottle)"
+	},
+	"Finely articulated jade glove (River Heralds)|PSX": {
+		"name": "關節精巧的玉手套（河流先驅）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 250000,
+		"ENG_name": "Finely articulated jade glove (River Heralds)"
 	},
 	"Fire Absorbing Tattoo|TCE": {
 		"name": "火焰吸收刺青",
@@ -13166,7 +13639,7 @@
 					{
 						"type": "list",
 						"items": [
-							"你對來自非魔法攻擊的鈍擊、穿刺與揮砍傷害具有抗性。",
+							"你對來自非魔法攻擊的鈍擊、穿刺與劈砍傷害具有抗性。",
 							"你無法被{@condition grappled}或{@condition restrained}。",
 							"你可以穿過生物與固體物體，如同它們是{@quickref difficult terrain||3}。若你在固體物體內結束你的回合，你受到 {@damage 1d10} 點力場傷害。若效果在你位於固體物體內時結束，你改為被推到最近的未佔據空間，並每移動 5 呎受到 {@damage 1d10} 點力場傷害。"
 						]
@@ -13176,6 +13649,58 @@
 			}
 		],
 		"ENG_name": "Ghost Step Tattoo"
+	},
+	"Giant Trinket|BGG": {
+		"name": "巨人小玩意",
+		"source": "BGG",
+		"page": 16,
+		"type": "G",
+		"rarity": "none",
+		"entries": [
+			"在探索你家的時候，你發現了古代居民留下的一些瑣碎遺物，由在「巨人小玩意」表上擲骰決定。括號中的物品是與所描述之巨人小玩意最相似的一般尺寸物體。",
+			{
+				"caption": "巨人小玩意",
+				"colLabels": [
+					"d6",
+					"巨人小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"巨人的牙籤（一把{@item dagger|PHB}）"
+					],
+					[
+						"2",
+						"巨人的手帕（一條{@item blanket|PHB}）"
+					],
+					[
+						"3",
+						"巨人的彈珠（一顆水晶球）"
+					],
+					[
+						"4",
+						"巨人的火柴（一支{@item torch|PHB}）"
+					],
+					[
+						"5",
+						"巨人的拆信刀（一把{@item longsword|PHB}）"
+					],
+					[
+						"6",
+						"巨人的頂針（一只{@item iron pot|PHB}）"
+					]
+				],
+				"type": "table"
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"ENG_name": "Giant Trinket"
 	},
 	"Gilded royal coach or funeral barge|XDMG": {
 		"name": "鍍金的皇家馬車或送葬駁船",
@@ -13304,6 +13829,59 @@
 		"hasFluffImages": true,
 		"ENG_name": "Gloves of Thievery"
 	},
+	"Glowrune Pigment|BGG": {
+		"name": "輝紋顏料",
+		"source": "BGG",
+		"page": 112,
+		"rarity": "rare",
+		"wondrous": true,
+		"entries": [
+			"這組 {@dice 1d4 + 2} 個小顏料罐內含以壓碎的發光寶石調製而成的顏料。這種魔法顏料會賜予皮膚上以它繪製符文的生物暫時的魔法天賦。",
+			"一罐顏料足以繪製一個符文。一個生物可以花費 10 分鐘，在自己或另一個生物身上繪製以下符文之一：",
+			{
+				"type": "entries",
+				"name": "旅之符文",
+				"entries": [
+					"{@quickref difficult terrain||3}不會讓被繪製的生物消耗額外的移動。"
+				],
+				"ENG_name": "Journey Rune"
+			},
+			{
+				"type": "entries",
+				"name": "生之符文",
+				"entries": [
+					"被繪製的生物獲得 10 點臨時生命值，並在死亡豁免檢定上具有優勢。"
+				],
+				"ENG_name": "Life Rune"
+			},
+			{
+				"type": "entries",
+				"name": "光之符文",
+				"entries": [
+					"被繪製的生物獲得範圍 30 呎的{@sense darkvision}。若被繪製的生物已經從其他來源擁有{@sense darkvision}，其{@sense darkvision}範圍增加 30 呎。"
+				],
+				"ENG_name": "Light Rune"
+			},
+			{
+				"type": "entries",
+				"name": "山之符文",
+				"entries": [
+					"被繪製的生物免疫被擊倒，並在力量與體質豁免檢定上具有優勢。"
+				],
+				"ENG_name": "Mountain Rune"
+			},
+			{
+				"type": "entries",
+				"name": "盾之符文",
+				"entries": [
+					"被繪製的生物在對抗造成傷害之效果的敏捷豁免檢定上具有優勢。",
+					"一個生物一次只能從一個繪製的符文中獲益，因此除非先移除舊的符文，否則在生物身上繪製新的符文沒有效果。符文的益處持續 8 小時，或直到被繪製的生物使用它的動作擦去符文為止。"
+				],
+				"ENG_name": "Shield Rune"
+			}
+		],
+		"ENG_name": "Glowrune Pigment"
+	},
 	"Goat|XDMG": {
 		"name": "山羊",
 		"source": "XDMG",
@@ -13357,6 +13935,15 @@
 		},
 		"ENG_name": "Goggles of Object Reading"
 	},
+	"Gold 5-Zino Coin|GGR": {
+		"name": "5 吉諾金幣",
+		"source": "GGR",
+		"page": 9,
+		"type": "$C",
+		"rarity": "none",
+		"value": 500,
+		"ENG_name": "Gold 5-Zino Coin"
+	},
 	"Gold Bar (5-pound)|XDMG": {
 		"name": "金條（5 磅）",
 		"source": "XDMG",
@@ -13371,6 +13958,15 @@
 			"h": 0.75
 		},
 		"ENG_name": "Gold Bar (5-pound)"
+	},
+	"Gold basin with rubies (Legion of Dusk)|PSX": {
+		"name": "鑲紅寶石的金盆（暮影軍團）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 750000,
+		"ENG_name": "Gold basin with rubies (Legion of Dusk)"
 	},
 	"Gold birdcage with electrum filigree|XDMG": {
 		"name": "飾有琥珀金絲的黃金鳥籠",
@@ -13389,6 +13985,24 @@
 		"rarity": "none",
 		"value": 2500,
 		"ENG_name": "Gold bracelet"
+	},
+	"Gold chalice (Legion of Dusk)|PSX": {
+		"name": "金聖杯（暮影軍團）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 75000,
+		"ENG_name": "Gold chalice (Legion of Dusk)"
+	},
+	"Gold chalice set with emeralds (Legion of Dusk)|PSX": {
+		"name": "鑲綠寶石的金聖杯（暮影軍團）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 750000,
+		"ENG_name": "Gold chalice set with emeralds (Legion of Dusk)"
 	},
 	"Gold circlet set with four aquamarines|XDMG": {
 		"name": "鑲有四顆海藍寶石的黃金頭環",
@@ -13478,6 +14092,15 @@
 		"value": 250000,
 		"ENG_name": "Gold music box"
 	},
+	"Gold pendant with black onyx (Legion of Dusk)|PSX": {
+		"name": "鑲黑縞瑪瑙的金墜飾（暮影軍團）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 25000,
+		"ENG_name": "Gold pendant with black onyx (Legion of Dusk)"
+	},
 	"Gold ring set with bloodstones|XDMG": {
 		"name": "鑲有血石的金戒指",
 		"source": "XDMG",
@@ -13487,6 +14110,15 @@
 		"value": 25000,
 		"ENG_name": "Gold ring set with bloodstones"
 	},
+	"Gold ring with turquoise (Legion of Dusk)|PSX": {
+		"name": "鑲綠松石的金戒指（暮影軍團）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 2500,
+		"ENG_name": "Gold ring with turquoise (Legion of Dusk)"
+	},
 	"Gold statuette set with rubies|XDMG": {
 		"name": "鑲有紅寶石的黃金小雕像",
 		"source": "XDMG",
@@ -13495,6 +14127,33 @@
 		"rarity": "none",
 		"value": 750000,
 		"ENG_name": "Gold statuette set with rubies"
+	},
+	"Gold Zino|GGR": {
+		"name": "吉諾金幣",
+		"source": "GGR",
+		"page": 9,
+		"type": "$C",
+		"rarity": "none",
+		"value": 100,
+		"ENG_name": "Gold Zino"
+	},
+	"Gold-plated ceremonial helmet and pauldrons (Legion of Dusk)|PSX": {
+		"name": "鍍金儀式頭盔與肩甲（暮影軍團）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 250000,
+		"ENG_name": "Gold-plated ceremonial helmet and pauldrons (Legion of Dusk)"
+	},
+	"Gold-plated sextant with topaz (Brazen Coalition)|PSX": {
+		"name": "鑲黃玉的鍍金六分儀（銅鑄聯盟）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 75000,
+		"ENG_name": "Gold-plated sextant with topaz (Brazen Coalition)"
 	},
 	"Gold|XDMG": {
 		"name": "黃金",
@@ -13506,6 +14165,112 @@
 		"weight": 1,
 		"value": 5000,
 		"ENG_name": "Gold"
+	},
+	"Golgari Guild Signet|GGR": {
+		"name": "葛加理公會印戒",
+		"source": "GGR",
+		"page": 178,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這枚戒指飾有葛加理的標誌，讓你能施展{@spell entangle}。公會印戒有時會頒給在該公會中聲望值達到 5 或更高的公會成員，作為為公會提供特殊服務的獎勵。除了魔法屬性之外，這枚戒指也象徵著葛加理的認可與青睞。",
+			"印戒有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。戴著它時，你可以消耗 1 點充能施展相應的法術（豁免 {@dc 13}）。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"entangle"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Golgari Guild Signet"
+	},
+	"Golgari Keyrune|GGR": {
+		"name": "葛加理鑰符",
+		"source": "GGR",
+		"page": 177,
+		"rarity": "very rare",
+		"reqAttune": "by a member of the Golgari guild",
+		"reqAttuneTags": [
+			{
+				"background": "golgari agent|ggr"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這枚鑰符以帶黑色紋理的深綠色玉石製成，呈昆蟲般的外形。它可以變成一隻{@creature giant scorpion}，持續至多 6 小時。蠍子的智力為 4，當牠位於你 60 呎內時可以與你以心靈感應溝通，不過牠的訊息大多只限於描述潛在獵物的經過。",
+			"當你使用一個動作說出物品的命令語，並將鑰符放在你 5 呎內一個未被佔據空間的地面上時，鑰符會變成一隻{@creature giant scorpion}。若沒有足夠的空間容納該生物，鑰符便不會變形。",
+			"該生物對你、你的同伴與你公會的其他成員友善（除非那些公會成員對你懷有敵意）。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會採取{@action Dodge}動作並移動以避開危險。",
+			"持續時間結束時，該生物會恢復為鑰符形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復原形。當該生物恢復為鑰符形態後，必須經過 36 小時才能再次變形。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Golgari Keyrune"
+	},
+	"Goose Egg Trinket|BGG": {
+		"name": "鵝蛋小玩意",
+		"source": "BGG",
+		"page": 150,
+		"type": "G",
+		"rarity": "none",
+		"entries": [
+			"有時候，一顆由{@creature giant goose|BGG}產下的蛋裡會莫名其妙地裝著某種小玩意或次級魔法物品。巨鵝產下一顆金蛋後，要過一年又一天才能再次如此。",
+			"你可以使用「鵝蛋小玩意」表決定金蛋的內容物。巨鵝的蛋是將對冒險或戰役故事很重要的物品交給角色的好方法。",
+			{
+				"type": "table",
+				"caption": "鵝蛋小玩意",
+				"colLabels": [
+					"d12",
+					"蛋的內容物"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"蛋是空的，但蛋殼內側刻有一首詩或一幅精緻的插圖。"
+					],
+					[
+						"2",
+						"金色蛋殼裡包著一顆糖果蛋。"
+					],
+					[
+						"3",
+						"蛋裡裝著一隻小玩具鵝，擠壓時會發出響亮的鳴叫聲。"
+					],
+					[
+						"4",
+						"蛋裡裝著一瓶沒有容器的{@item Potion of Hill Giant Strength||巨人力量藥水（山丘巨人）}。"
+					],
+					[
+						"5",
+						"蛋裡裝著一顆{@item pearl of power}。"
+					],
+					[
+						"6",
+						"蛋裡裝著一枚{@item brooch of shielding}。"
+					],
+					[
+						"7",
+						"蛋裡裝著一個{@item Figurine of Wondrous Power, Silver Raven||異能塑像（銀渡鴉）}，它會在蛋被打開時自動啟動，釋放出一隻看似活生生的鳥。"
+					],
+					[
+						"8–12",
+						"蛋是空的。"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"ENG_name": "Goose Egg Trinket"
 	},
 	"Grappling Hook|XPHB": {
 		"name": "爪鉤",
@@ -13834,6 +14599,51 @@
 		},
 		"hasFluffImages": true,
 		"ENG_name": "Grovelthrash (Exalted)"
+	},
+	"Gruul Guild Signet|GGR": {
+		"name": "古魯公會印戒",
+		"source": "GGR",
+		"page": 178,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這枚戒指飾有古魯的標誌，讓你能施展{@spell compelled duel}。公會印戒有時會頒給在該公會中聲望值達到 5 或更高的公會成員，作為為公會提供特殊服務的獎勵。除了魔法屬性之外，這枚戒指也象徵著古魯的認可與青睞。",
+			"印戒有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。戴著它時，你可以消耗 1 點充能施展相應的法術（豁免 {@dc 13}）。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"compelled duel"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Gruul Guild Signet"
+	},
+	"Gruul Keyrune|GGR": {
+		"name": "古魯鑰符",
+		"source": "GGR",
+		"page": 177,
+		"rarity": "rare",
+		"reqAttune": "by a member of the Gruul guild",
+		"reqAttuneTags": [
+			{
+				"background": "gruul anarch|ggr"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這枚粗糙的鑰符由碎石、碎玻璃、骨頭與獸毛拼湊而成。它的一端形似一頭有角的野獸。一聲令下，鑰符會變成一隻角獸——一種很像{@creature rhinoceros}（且數據相同）的有角生物。它會以角獸形態維持 1 小時。",
+			"當你使用一個動作說出物品的命令語，並將鑰符放在你 5 呎內一個未被佔據空間的地面上時，鑰符會變成一隻角獸。若沒有足夠的空間容納該生物，鑰符便不會變形。",
+			"該生物對你、你的同伴與你公會的其他成員友善（除非那些公會成員對你懷有敵意）。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會採取{@action Dodge}動作並移動以避開危險。",
+			"持續時間結束時，該生物會恢復為鑰符形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復原形。當該生物恢復為鑰符形態後，必須經過 36 小時才能再次變形。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Gruul Keyrune"
 	},
 	"Guardian Emblem|TCE": {
 		"name": "守護者徽章",
@@ -14219,6 +15029,65 @@
 		"rarity": "none",
 		"value": 2500,
 		"ENG_name": "Handheld mirror set in a painted wooden frame"
+	},
+	"Harp of Gilded Plenty|BGG": {
+		"name": "鍍金豐饒豎琴",
+		"source": "BGG",
+		"page": 112,
+		"type": "INS",
+		"rarity": "legendary",
+		"reqAttune": true,
+		"wondrous": true,
+		"sentient": true,
+		"entries": [
+			"這把金色豎琴雕成女神伊亞蘭妮絲的形象，她被描繪成一名年輕的雲巨人女子。當一個生物來到豎琴 5 呎內時，這件樂器會活過來，能夠自行說話、歌唱與演奏。",
+			"每當你嘗試與豎琴同調時，你必須先進行一次 {@dc 15} 魅力（{@skill Performance}）檢定或一次 {@dc 20} 魅力（{@skill Persuasion}）檢定，說服豎琴你配得上它，成功時便與豎琴同調。若你失敗，在下一個黎明之前無法再次嘗試與豎琴同調。你成功與豎琴同調後，豎琴會調整大小以適合你。",
+			{
+				"type": "entries",
+				"name": "堅毅之歌",
+				"entries": [
+					"與豎琴同調時，每當你進行魅力檢定，你可以將骰子擲出的 9 或更低視為 10。"
+				],
+				"ENG_name": "Stalwart Song"
+			},
+			{
+				"type": "entries",
+				"name": "豐饒盛宴",
+				"entries": [
+					"若你花費 10 分鐘演奏豎琴，你可以從它施展{@spell heroes' feast}法術。此屬性使用後，必須經過 {@dice 1d10 + 10} 天才能再次使用。"
+				],
+				"ENG_name": "Feast of Plenty"
+			},
+			{
+				"type": "entries",
+				"name": "撫慰旋律",
+				"entries": [
+					"作為一個動作，你可以使用豎琴施展{@spell calm emotions}法術（豁免 {@dc 19}）。以豎琴施展該法術時，只要你維持對法術的{@status concentration}，其持續時間增加至 1 小時。此屬性可以使用五次，並在黎明時恢復所有使用次數。"
+				],
+				"ENG_name": "Soothing Melody"
+			},
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"豎琴是一件具有知覺的混亂善良物體，智力 13、感知 15、魅力 20。它具有聽覺，以及範圍 120 呎的{@sense darkvision}。",
+					"豎琴能說、讀並理解通用語與巨人語。它也能以心靈感應與和它同調的生物溝通。",
+					"豎琴有著戲劇化且自負的個性，對自己琴弦奏出的音樂品質極為自豪。若豎琴高度不到 6 呎，它會哀嘆自己的身高。"
+				],
+				"ENG_name": "Sentience"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"5e": [
+					"calm emotions"
+				]
+			},
+			"other": [
+				"heroes' feast"
+			]
+		},
+		"ENG_name": "Harp of Gilded Plenty"
 	},
 	"Hat of Disguise|XDMG": {
 		"name": "易容帽",
@@ -14620,6 +15489,81 @@
 		"hasFluffImages": true,
 		"ENG_name": "Helm of Comprehending Languages"
 	},
+	"Helm of Perfect Potential|BGG": {
+		"name": "完美潛能頭盔",
+		"source": "BGG",
+		"page": 112,
+		"rarity": "artifact",
+		"reqAttune": true,
+		"wondrous": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d6}",
+		"charges": 6,
+		"entries": [
+			"這頂銅色頭盔的額頭上嵌著一塊元素混沌的碎片，周圍環繞著旭日圖騰。傳說安南為他的女兒迪安卡絲特拉打造了這頂頭盔，用來容納她用以向父親證明自身價值的那塊混沌碎片。",
+			{
+				"type": "entries",
+				"name": "隨機屬性",
+				"entries": [
+					"這頂頭盔具有以下隨機屬性，由在《地下城主指南》中對應的表上擲骰決定：",
+					{
+						"type": "list",
+						"items": [
+							"2 項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性",
+							"1 項{@table Artifact Properties; Major Beneficial Properties|dmg|主要有益}屬性",
+							"1 項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性"
+						]
+					}
+				],
+				"ENG_name": "Random Properties"
+			},
+			{
+				"type": "entries",
+				"name": "詭計大師",
+				"entries": [
+					"戴著頭盔時，你在魅力（{@skill Deception}）與感知（{@skill Insight}）檢定上具有優勢。"
+				],
+				"ENG_name": "Master of Guile"
+			},
+			{
+				"type": "entries",
+				"name": "元素浩劫之箭",
+				"entries": [
+					"戴著頭盔時，你可以使用一個附贈動作，向你 90 呎內一個你能看見的生物射出一道灼熱的元素能量箭。目標必須進行一次 {@dc 20} 敏捷豁免檢定。豁免失敗時，該生物受到 {@damage 4d6} 點酸蝕、寒冷、火焰、閃電或雷鳴傷害（由你選擇）。豁免成功時，該生物受到的傷害減半。"
+				],
+				"ENG_name": "Arrow of Elemental Havoc"
+			},
+			{
+				"type": "entries",
+				"name": "施法",
+				"entries": [
+					"頭盔有 6 點充能，每天黎明恢復 {@dice 1d6} 點充能。戴著頭盔時，你可以使用一個動作消耗 1 點或更多充能施展以下法術之一（豁免 {@dc 20}）：{@spell elemental weapon}（1 點充能）、{@spell call lightning}（2 點充能）、{@spell wall of fire}（3 點充能）、{@spell conjure elemental}（4 點充能）、{@spell tsunami}（5 點充能）。"
+				],
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"elemental weapon"
+				],
+				"2": [
+					"call lightning"
+				],
+				"3": [
+					"wall of fire"
+				],
+				"4": [
+					"conjure elemental"
+				],
+				"5": [
+					"tsunami"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Helm of Perfect Potential"
+	},
 	"Helm of Telepathy|XDMG": {
 		"name": "心靈感應頭盔",
 		"source": "XDMG",
@@ -14949,6 +15893,17 @@
 		],
 		"ENG_name": "Hooded Lantern"
 	},
+	"Horizon Puzzle Cube|BGG": {
+		"name": "地平線謎題方塊",
+		"source": "BGG",
+		"page": 86,
+		"rarity": "unknown (magic)",
+		"wondrous": true,
+		"entries": [
+			"地平線謎題方塊是一個以金、鐵、水晶與銅製成的 8 吋魔法方塊，對賢者或收藏家而言價值 5,000 gp。一個能運作的謎題方塊可以透過 30 分鐘的工作與一次成功的 {@dc 25} 智力（{@skill Investigation}）檢定解開。方塊被解開時，一道直徑 30 呎的傳送門會出現在解開方塊的生物面前，通往地平線之緣的東北平台。傳送門是雙向的，會保持開啟 10 分鐘，或直到一個生物使用一個動作改變謎題的配置為止。謎題方塊在地平線之緣上無法運作，但該半位面某處有一個裝置，能讓嵌入其中的方塊反向運作。"
+		],
+		"ENG_name": "Horizon Puzzle Cube"
+	},
 	"Horn of Blasting|XDMG": {
 		"name": "爆破號角",
 		"source": "XDMG",
@@ -15214,6 +16169,25 @@
 			}
 		],
 		"ENG_name": "Illuminator's Tattoo"
+	},
+	"Illusionist's Bracers|GGR": {
+		"name": "幻術師護腕",
+		"source": "GGR",
+		"page": 178,
+		"rarity": "very rare",
+		"reqAttune": "by a spellcaster",
+		"reqAttuneTags": [
+			{
+				"spellcasting": true
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這對護腕最初由底密爾家族一名強大的幻術師所開發，讓她能同時創造多個次級幻象。不過，這對護腕的力量遠不只於幻術。",
+			"穿戴這對護腕時，每當你施展一個戲法，你可以在同一回合使用一個附贈動作再次施展該戲法。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Illusionist's Bracers"
 	},
 	"Immovable Rod|XDMG": {
 		"name": "不動權杖",
@@ -16249,6 +17223,51 @@
 		"value": 10,
 		"ENG_name": "Iron"
 	},
+	"Izzet Guild Signet|GGR": {
+		"name": "伊捷公會印戒",
+		"source": "GGR",
+		"page": 178,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這枚戒指飾有伊捷的標誌，讓你能施展{@spell chaos bolt|XGE}。公會印戒有時會頒給在該公會中聲望值達到 5 或更高的公會成員，作為為公會提供特殊服務的獎勵。除了魔法屬性之外，這枚戒指也象徵著伊捷的認可與青睞。",
+			"印戒有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。戴著它時，你可以消耗 1 點充能施展相應的法術（豁免 {@dc 13}）。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"chaos bolt|XGE"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Izzet Guild Signet"
+	},
+	"Izzet Keyrune|GGR": {
+		"name": "伊捷鑰符",
+		"source": "GGR",
+		"page": 177,
+		"rarity": "rare",
+		"reqAttune": "by a member of the Izzet guild",
+		"reqAttuneTags": [
+			{
+				"background": "izzet engineer|ggr"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這枚鑰符以雕琢拋光的紅色與藍色石頭製成，還包含一些纜線與電線。它的一端形似一顆人類般的頭部，暗示著它能變成的{@creature galvanice weird|GGR}那鋸齒狀的元素形態，持續 3 小時。在此形態下，它會擔任你的保鏢、為你舉起與搬運物品、充當你實驗的受試者，或以它的能力所及的任何其他方式協助你。",
+			"當你使用一個動作說出物品的命令語，並將鑰符放在你 5 呎內一個未被佔據空間的地面上時，鑰符會變成一隻{@creature galvanice weird|GGR}。若沒有足夠的空間容納該生物，鑰符便不會變形。",
+			"該生物對你、你的同伴與你公會的其他成員友善（除非那些公會成員對你懷有敵意）。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會採取{@action Dodge}動作並移動以避開危險。",
+			"持續時間結束時，該生物會恢復為鑰符形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復原形。當該生物恢復為鑰符形態後，必須經過 36 小時才能再次變形。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Izzet Keyrune"
+	},
 	"Jacinth|XDMG": {
 		"name": "紅鋯石",
 		"source": "XDMG",
@@ -16261,6 +17280,24 @@
 		],
 		"ENG_name": "Jacinth"
 	},
+	"Jade bowl (River Heralds)|PSX": {
+		"name": "玉碗（河流先驅）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 25000,
+		"ENG_name": "Jade bowl (River Heralds)"
+	},
+	"Jade breastplate (River Heralds)|PSX": {
+		"name": "玉胸甲（河流先驅）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 750000,
+		"ENG_name": "Jade breastplate (River Heralds)"
+	},
 	"Jade game board with gold playing pieces|XDMG": {
 		"name": "附黃金棋子的翡翠棋盤",
 		"source": "XDMG",
@@ -16269,6 +17306,33 @@
 		"rarity": "none",
 		"value": 750000,
 		"ENG_name": "Jade game board with gold playing pieces"
+	},
+	"Jade headpiece (River Heralds)|PSX": {
+		"name": "玉頭飾（河流先驅）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 25000,
+		"ENG_name": "Jade headpiece (River Heralds)"
+	},
+	"Jade sword with amber (River Heralds)|PSX": {
+		"name": "鑲琥珀的玉劍（河流先驅）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 75000,
+		"ENG_name": "Jade sword with amber (River Heralds)"
+	},
+	"Jade totem with diamond eyes (River Heralds)|PSX": {
+		"name": "鑽石眼玉圖騰（河流先驅）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 750000,
+		"ENG_name": "Jade totem with diamond eyes (River Heralds)"
 	},
 	"Jade|XDMG": {
 		"name": "翡翠",
@@ -16628,6 +17692,46 @@
 		],
 		"ENG_name": "Lapis Lazuli"
 	},
+	"Large jade totem (River Heralds)|PSX": {
+		"name": "大型玉圖騰（河流先驅）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 75000,
+		"ENG_name": "Large jade totem (River Heralds)"
+	},
+	"Lash of Immolation|BGG": {
+		"name": "焚身之鞭",
+		"source": "BGG",
+		"page": 113,
+		"baseItem": "whip|PHB",
+		"type": "M",
+		"rarity": "rare",
+		"weight": 3,
+		"weaponCategory": "martial",
+		"property": [
+			"F",
+			"R"
+		],
+		"dmg1": "1d4",
+		"dmgType": "S",
+		"bonusWeapon": "+1",
+		"entries": [
+			"這條深色皮鞭的握柄上有火之符文，餘燼在鞭尾周圍飛舞。",
+			"你以這把武器進行的攻擊檢定與傷害擲骰獲得 +1 加值，且命中時鞭子額外造成 {@damage 1d6} 點火焰傷害。當你以這條鞭子的攻擊擊出重擊時，熾熱的火焰帶會纏住目標，使目標在你下個回合開始前也處於束縛狀態。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"當你以鞭子進行攻擊並命中時，你可以使用你的反應引動鞭子的符文。這麼做會使鞭子造成的額外火焰傷害提升至 {@dice 2d6}。",
+					"符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"ENG_name": "Lash of Immolation"
+	},
 	"Lash of Shadows (Awakened)|EGW": {
 		"name": "暗影之鞭（覺醒）",
 		"source": "EGW",
@@ -16967,6 +18071,66 @@
 		],
 		"ENG_name": "Lolth's Sting"
 	},
+	"Longbow of the Healing Hearth|BGG": {
+		"name": "療癒爐火長弓",
+		"source": "BGG",
+		"page": 113,
+		"baseItem": "longbow|PHB",
+		"type": "R",
+		"rarity": "legendary",
+		"reqAttune": true,
+		"weight": 2,
+		"weaponCategory": "martial",
+		"property": [
+			"A",
+			"H",
+			"2H"
+		],
+		"range": "150/600",
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"bonusWeapon": "+3",
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d4 + 1}",
+		"charges": 8,
+		"entries": [
+			"這把象牙長弓上刻著向女神海雅媞亞獻上的禱詞，其符文與麥稈及鹿角的鍍金雕紋交織在一起。",
+			"你以這把武器進行的攻擊檢定與傷害擲骰獲得 +3 加值。若你沒有在武器中裝填彈藥，它會自行產生，在你拉弓弦時自動創造一支魔法箭。弓創造的箭會在命中或未命中目標後的瞬間消失。",
+			"這把弓有 8 點充能，可用於以下屬性，你可以在持用弓時使用。弓每天黎明恢復 {@dice 1d4 + 1} 點充能。",
+			{
+				"type": "entries",
+				"name": "治療之箭",
+				"entries": [
+					"當你使用弓採取{@action Attack}動作時，你可以消耗 1 點充能，將你的一次攻擊替換為一支充滿治療魔法的熾熱之箭，自動命中你 150 呎內一個你能看見的生物。目標接著可以立即消耗並擲一顆它未使用的生命骰，並恢復等於擲骰結果加上你感知調整值（最低 +1）的生命值。",
+					"若目標沒有剩餘未使用的生命骰，則什麼也不會發生。你每回合只能使用一次治療之箭。"
+				],
+				"ENG_name": "Curative Arrow"
+			},
+			{
+				"type": "entries",
+				"name": "施法",
+				"entries": [
+					"持握弓時，你可以使用一個動作消耗 1 點或更多充能，從弓施展以下法術之一（豁免 {@dc 18}）：{@spell create food and water}（1 點充能）、{@spell warding bond}（2 點充能）、{@spell guardian of faith}（3 點充能）。"
+				],
+				"ENG_name": "Spellcasting"
+			}
+		],
+		"ammoType": "arrow|phb",
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"create food and water"
+				],
+				"2": [
+					"warding bond"
+				],
+				"3": [
+					"guardian of faith"
+				]
+			}
+		},
+		"ENG_name": "Longbow of the Healing Hearth"
+	},
 	"Longship|XPHB": {
 		"name": "維京長船",
 		"source": "XPHB",
@@ -17199,6 +18363,60 @@
 		"hasFluffImages": true,
 		"ENG_name": "Luba's Tarokka of Souls"
 	},
+	"Lucent Destroyer|BGG": {
+		"name": "明光毀滅者",
+		"source": "BGG",
+		"page": 113,
+		"baseItem": "musket|dmg",
+		"type": "R",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"weight": 10,
+		"weaponCategory": "martial",
+		"age": "renaissance",
+		"property": [
+			"2H"
+		],
+		"range": "40/120",
+		"dmg1": "1d12",
+		"dmgType": "P",
+		"bonusWeapon": "+1",
+		"firearm": true,
+		"entries": [
+			"這把魔法武器是一把三管青銅火槍。你以它進行的攻擊檢定與傷害擲骰獲得 +1 加值。它不需要彈藥，造成光耀傷害而非穿刺傷害，且不具有裝填屬性。武器的底座上飾有光之符文。",
+			"此外，與武器同調時，你可以隨意從火槍施展{@spell dancing lights}。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"作為一個動作，你可以引動武器的符文，用它施展{@spell sunbeam}法術（豁免 {@dc 17}）。符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"ammoType": "renaissance bullet",
+		"attachedSpells": {
+			"will": [
+				"dancing lights"
+			],
+			"daily": {
+				"1e": [
+					"sunbeam"
+				]
+			}
+		},
+		"ENG_name": "Lucent Destroyer"
+	},
+	"Lute crafted of exotic wood with mother-of-pearl inlay and zircon gems (Brazen Coalition)|PSX": {
+		"name": "以珍奇木材製成、鑲珍珠母貝與鋯石的魯特琴（銅鑄聯盟）",
+		"source": "PSX",
+		"page": 24,
+		"baseItem": "lute|phb",
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 75000,
+		"ENG_name": "Lute crafted of exotic wood with mother-of-pearl inlay and zircon gems (Brazen Coalition)"
+	},
 	"Lute of Thunderous Thumping|XDMG": {
 		"name": "雷鳴重擊魯特琴",
 		"source": "XDMG",
@@ -17420,7 +18638,7 @@
 		"rechargeAmount": "{@dice 1d3}",
 		"charges": 3,
 		"entries": [
-			"此魔法武器有 3 發充能，每天黎明恢復 {@dice 1d3} 發已消耗的充能。持有此武器時，你可以執行一個{@action Magic|XPHB}動作並消耗 1 發充能，從中釋放一波恐懼。你 30 呎內每個由你選擇的生物必須通過一次 {@dc 15} 感知豁免檢定，否則處於{@condition Frightened|XPHB}狀態 1 分鐘。以此方式{@condition Frightened|XPHB}期間，生物必須在其回合中盡可能遠離你，且無法進行{@action Opportunity Attack|XPHB|借機攻擊}。它的動作只能用於{@action Dash|XPHB}動作，或嘗試脫離阻止其移動的效果。若無處可移動，該生物可以執行{@action Dodge|XPHB}動作。在其每個回合結束時，生物重複此豁免，成功時結束自身的效果。"
+			"此魔法武器有 3 發充能，每天黎明恢復 {@dice 1d3} 發已消耗的充能。持有此武器時，你可以執行一個{@action Magic|XPHB}動作並消耗 1 發充能，從中釋放一波恐懼。你 30 呎內每個由你選擇的生物必須通過一次 {@dc 15} 感知豁免檢定，否則處於{@condition Frightened|XPHB}狀態 1 分鐘。以此方式{@condition Frightened|XPHB}期間，生物必須在其回合中盡可能遠離你，且無法進行{@action Opportunity Attack|XPHB|藉機攻擊}。它的動作只能用於{@action Dash|XPHB}動作，或嘗試脫離阻止其移動的效果。若無處可移動，該生物可以執行{@action Dodge|XPHB}動作。在其每個回合結束時，生物重複此豁免，成功時結束自身的效果。"
 		],
 		"lootTables": [
 			"Armaments - Rare|XDMG",
@@ -17862,6 +19080,15 @@
 		],
 		"ENG_name": "Map"
 	},
+	"Marble font with gold inlay (Legion of Dusk)|PSX": {
+		"name": "鑲金大理石洗禮盆（暮影軍團）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 750000,
+		"ENG_name": "Marble font with gold inlay (Legion of Dusk)"
+	},
 	"Masquerade Tattoo|TCE": {
 		"name": "假面刺青",
 		"source": "TCE",
@@ -17906,6 +19133,15 @@
 			}
 		},
 		"ENG_name": "Masquerade Tattoo"
+	},
+	"Masterpiece painting in mahogany frame with gold inlay (Legion of Dusk)|PSX": {
+		"name": "裝在鑲金桃花心木畫框中的名畫（暮影軍團）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 250000,
+		"ENG_name": "Masterpiece painting in mahogany frame with gold inlay (Legion of Dusk)"
 	},
 	"Mastiff|XPHB": {
 		"name": "獒犬",
@@ -18034,7 +19270,7 @@
 							"打開或關閉艙口（不需要動作，每回合一次）",
 							"讓僕從移動至多其速度（不需要動作）",
 							"作為一個動作，你可以命令僕從採取其數據區塊中的其中一個動作，或其他某個動作。",
-							"當一個生物引發僕從的借機攻擊時，你可以使用你的反應命令僕從對該生物進行一次毀滅之拳攻擊。"
+							"當一個生物引發僕從的藉機攻擊時，你可以使用你的反應命令僕從對該生物進行一次毀滅之拳攻擊。"
 						]
 					},
 					"當僕從內部沒有同調的生物時，它是一個無生命的物體。"
@@ -18130,6 +19366,291 @@
 		],
 		"ENG_name": "Mirror"
 	},
+	"Mistral Mantle|BGG": {
+		"name": "寒風披風",
+		"source": "BGG",
+		"page": 114,
+		"resist": [
+			"cold"
+		],
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這件厚實、毛皮襯裡的斗篷下擺以銀藍色的線繡著霜之符文。無論天氣如何，冰冷的風總在斗篷周圍盤旋。",
+			"穿著這件斗篷時，你具有寒冷傷害抗性。此外，當你移動到一個生物 5 呎內時，你可以讓斗篷的寒風吹襲該生物。該生物必須成功通過一次 {@dc 14} 敏捷豁免檢定，否則受到 {@damage 1d6} 點寒冷傷害並處於倒地狀態。一個生物每回合只會受到披風影響一次。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"作為一個動作，你可以引動披風的符文，用它施展{@spell sleet storm}法術（豁免 {@dc 14}）。當你使用披風施展該法術時，法術區域對你而言不是{@quickref difficult terrain||3}，且你能看穿風暴，無視{@quickref Vision and Light||2||重度遮蔽}區域的一般懲罰。",
+					"符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"sleet storm"
+				]
+			}
+		},
+		"ENG_name": "Mistral Mantle"
+	},
+	"Mizzium Apparatus|GGR": {
+		"name": "米茲鋁裝置",
+		"source": "GGR",
+		"page": 179,
+		"type": "SCF",
+		"rarity": "uncommon",
+		"reqAttune": "by a sorcerer, warlock, or wizard",
+		"reqAttuneTags": [
+			{
+				"class": "sorcerer"
+			},
+			{
+				"class": "warlock"
+			},
+			{
+				"class": "wizard"
+			}
+		],
+		"wondrous": true,
+		"weight": 8,
+		"focus": [
+			"Sorcerer",
+			"Warlock",
+			"Wizard"
+		],
+		"entries": [
+			"創新是一項危險的追求，至少伊捷聯盟的法師們從事創新的方式是如此。為了防範實驗出錯的風險，他們開發了一種裝置來幫助引導與控制他們的魔法。這個裝置由皮帶、軟管、玻璃圓筒，以及由一種名為米茲鋁的魔法灌注合金製成的護板、護腕與配件組成，全部組裝成一副挽具。此物品重 8 磅。",
+			"穿戴米茲鋁裝置時，你可以將它作為奧術法器。此外，你可以嘗試施展一道你不知道或未準備的法術。你選擇的法術必須在你職業的法術清單上，且其環階是你擁有法術位的環階，你也必須提供該法術的構材。",
+			"你照常消耗一個法術位施展該法術，但在結算之前，你必須進行一次智力（{@skill Arcana}）檢定。DC 等於 10 + 你為施展該法術所消耗之法術位環階的兩倍。",
+			"檢定成功時，你照常施展該法術，使用你的法術豁免 DC 與施法屬性調整值。檢定失敗時，你會施展一道與你預期不同的法術。在你所消耗法術位環階的表上擲骰，隨機決定你施展的法術。若法術位為 6 環或更高，則在 5 環法術表上擲骰。",
+			"若你嘗試施展一個你不知道的戲法，智力（{@skill Arcana}）檢定的 DC 為 10，檢定失敗時沒有效果。",
+			{
+				"type": "table",
+				"caption": "1 環法術",
+				"colLabels": [
+					"d6",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"{@spell burning hands}"
+					],
+					[
+						"2",
+						"{@spell chaos bolt|XGE}"
+					],
+					[
+						"3",
+						"{@spell color spray}"
+					],
+					[
+						"4",
+						"{@spell faerie fire}"
+					],
+					[
+						"5",
+						"{@spell fog cloud}"
+					],
+					[
+						"6",
+						"{@spell thunderwave}"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"caption": "2 環法術",
+				"colLabels": [
+					"d6",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"{@spell blur}"
+					],
+					[
+						"2",
+						"{@spell gust of wind}"
+					],
+					[
+						"3",
+						"{@spell heat metal}"
+					],
+					[
+						"4",
+						"{@spell Melf's acid arrow}"
+					],
+					[
+						"5",
+						"{@spell scorching ray}"
+					],
+					[
+						"6",
+						"{@spell shatter}"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"caption": "3 環法術",
+				"colLabels": [
+					"d6",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"{@spell fear}"
+					],
+					[
+						"2",
+						"{@spell feign death}"
+					],
+					[
+						"3",
+						"{@spell fireball}"
+					],
+					[
+						"4",
+						"{@spell gaseous form}"
+					],
+					[
+						"5",
+						"{@spell sleet storm}"
+					],
+					[
+						"6",
+						"{@spell stinking cloud}"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"caption": "4 環法術",
+				"colLabels": [
+					"d4",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"{@spell confusion}"
+					],
+					[
+						"2",
+						"{@spell conjure minor elementals}"
+					],
+					[
+						"3",
+						"{@spell Evard's black tentacles}"
+					],
+					[
+						"4",
+						"{@spell ice storm}"
+					]
+				]
+			},
+			{
+				"type": "table",
+				"caption": "5 環法術",
+				"colLabels": [
+					"d4",
+					"法術"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"{@spell animate objects}"
+					],
+					[
+						"2",
+						"{@spell cloudkill}"
+					],
+					[
+						"3",
+						"{@spell cone of cold}"
+					],
+					[
+						"4",
+						"{@spell flame strike}"
+					]
+				]
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mizzium Apparatus"
+	},
+	"Mizzium Mortar|GGR": {
+		"name": "米茲鋁迫擊砲",
+		"source": "GGR",
+		"page": 179,
+		"rarity": "rare",
+		"wondrous": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d4}",
+		"charges": 4,
+		"entries": [
+			"這根短管長約 2 呎、直徑 6 吋，以伊捷聯盟鍛造的魔法強化合金米茲鋁製成。朝向目標的一端是開口，只要迫擊砲還有至少 1 點充能，就能在另一端看見一顆發光的熔融金屬球。",
+			"迫擊砲有 4 點充能，用於以下屬性。它每天黎明恢復 {@dice 1d4} 點已消耗的充能。",
+			{
+				"type": "entries",
+				"name": "熔融噴射",
+				"entries": [
+					"你可以使用一個動作消耗 1 點充能，釋放出 30 呎錐形的熔融米茲鋁。區域內每個生物都必須進行一次 {@dc 15} 敏捷豁免檢定，失敗時受到 {@damage 5d4} 點火焰傷害，成功時傷害減半。"
+				],
+				"ENG_name": "Molten Spray"
+			},
+			{
+				"type": "entries",
+				"name": "米茲鋁轟擊",
+				"entries": [
+					"你可以使用一個動作消耗 3 點充能，向你 60 呎內一個你能看見的點發射一陣熔融彈雨，範圍是以該點為中心、半徑 20 呎、高 40 呎的圓柱。區域內每個生物都必須進行一次 {@dc 15} 敏捷豁免檢定。生物豁免失敗時受到 {@damage 5d8} 點火焰傷害，成功時傷害減半。"
+				],
+				"ENG_name": "Mizzium Bombard"
+			}
+		],
+		"ENG_name": "Mizzium Mortar"
+	},
+	"Moodmark Paint|GGR": {
+		"name": "情緒紋彩",
+		"source": "GGR",
+		"page": 180,
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			"這種濃稠的黑色顏料儲存在一個小罐子裡，份量足以為一個生物畫上情緒紋。顏料以斑點或紋路的形式點在臉上，這些紋路通常形似昆蟲或蜘蛛的眼睛。以此方式塗抹顏料需要 1 分鐘。",
+			"在接下來 8 小時內，紋路會變化以反映你的心理狀態。一個能看見你並成功通過一次 {@dc 10} 感知（{@skill Insight}）檢定的生物，能分辨出你是快樂、悲傷、憤怒、厭惡、驚訝還是恐懼，以及該情緒的主要來源。例如，你可能傳達出因剛在轉角看見的怪物而引起的恐懼、因失去朋友而生的悲痛，或因在戰鬥中表現出色而自豪的快樂。黑暗精靈在此檢定上具有優勢。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Moodmark Paint"
+	},
 	"Moon Card|BMT": {
 		"name": "月亮牌",
 		"source": "BMT",
@@ -18144,7 +19665,7 @@
 		"wondrous": true,
 		"recharge": "dawn",
 		"entries": [
-			"作為一個動作，你可以在觸碰這張牌時說出命令語，變形為一個類狼的雙足生物 1 分鐘。在此期間，你具有鈍擊、穿刺與揮砍傷害抗性，且當你以武器或徒手打擊命中目標時，目標額外受到 {@damage 1d6} 點力場傷害。此屬性使用後，在下一個黎明之前無法再次使用。"
+			"作為一個動作，你可以在觸碰這張牌時說出命令語，變形為一個類狼的雙足生物 1 分鐘。在此期間，你具有鈍擊、穿刺與劈砍傷害抗性，且當你以武器或徒手打擊命中目標時，目標額外受到 {@damage 1d6} 點力場傷害。此屬性使用後，在下一個黎明之前無法再次使用。"
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Moon Card"
@@ -18352,6 +19873,15 @@
 		"hasFluffImages": true,
 		"ENG_name": "Necklace of Adaptation"
 	},
+	"Necklace of electrum medallions with red and blue tourmalines (Brazen Coalition)|PSX": {
+		"name": "鑲紅、藍電氣石的琥珀金圓章項鍊（銅鑄聯盟）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 75000,
+		"ENG_name": "Necklace of electrum medallions with red and blue tourmalines (Brazen Coalition)"
+	},
 	"Necklace of Fireballs|XDMG": {
 		"name": "火球項鍊",
 		"source": "XDMG",
@@ -18377,6 +19907,15 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Necklace of Fireballs"
+	},
+	"Necklace of jade and pink pearls (River Heralds)|PSX": {
+		"name": "玉與粉紅珍珠項鍊（河流先驅）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 250000,
+		"ENG_name": "Necklace of jade and pink pearls (River Heralds)"
 	},
 	"Necklace of Prayer Beads|XDMG": {
 		"name": "念珠項鍊",
@@ -18553,6 +20092,34 @@
 		],
 		"ENG_name": "Nightfall Pearl"
 	},
+	"Nimbus Coronet|BGG": {
+		"name": "雲光冠冕",
+		"source": "BGG",
+		"page": 114,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"modifySpeed": {
+			"static": {
+				"fly": 60
+			}
+		},
+		"entries": [
+			"這頂青銅頭環的設計形似翻騰的雲朵。其中央鑲著一顆深藍色的寶石，上面刻著雲之符文。",
+			"戴著這頂頭環時，你不會受到墜落傷害。此外，作為一個附贈動作，你與你穿戴或攜帶的一切可以傳送到你 15 呎內一個你能看見的未被佔據空間，在一陣閃爍的雲霧中重新出現。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"作為一個動作，你可以引動頭環的符文，化為雲朵般的形態。此形態持續 1 分鐘，直到你處於無力狀態，或直到你解除它（不需要動作）。",
+					"處於雲形態時，你擁有 60 呎的飛行速度，並具有鈍擊、穿刺與劈砍傷害抗性。",
+					"符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"ENG_name": "Nimbus Coronet"
+	},
 	"Nolzur's Marvelous Pigments|XDMG": {
 		"name": "諾佐爾的神奇顏料",
 		"source": "XDMG",
@@ -18633,7 +20200,7 @@
 		"weight": 0.5,
 		"bonusWeapon": "+3",
 		"entries": [
-			"一瓶此油可以塗抹一把近戰武器或二十件彈藥，但只有非魔法、且造成揮砍或穿刺傷害的彈藥與近戰武器會受到影響。塗抹油需要 1 分鐘，之後油會以魔法滲入其所塗抹之物，使被塗抹的武器變成一把 +3 武器，或使被塗抹的彈藥變成 +3 彈藥。",
+			"一瓶此油可以塗抹一把近戰武器或二十件彈藥，但只有非魔法、且造成劈砍或穿刺傷害的彈藥與近戰武器會受到影響。塗抹油需要 1 分鐘，之後油會以魔法滲入其所塗抹之物，使被塗抹的武器變成一把 +3 武器，或使被塗抹的彈藥變成 +3 彈藥。",
 			"這種清澈的膠狀油中閃爍著微小、極薄的銀色碎片。"
 		],
 		"lootTables": [
@@ -19033,6 +20600,53 @@
 		"hasFluffImages": true,
 		"ENG_name": "Orb of Dragonkind"
 	},
+	"Orb of Skoraeus|BGG": {
+		"name": "司寇雷烏斯寶珠",
+		"source": "BGG",
+		"page": 114,
+		"rarity": "legendary",
+		"reqAttune": "by a spellcaster",
+		"reqAttuneTags": [
+			{
+				"spellcasting": true
+			}
+		],
+		"wondrous": true,
+		"weight": 8,
+		"bonusSavingThrowConcentration": "+2",
+		"recharge": "dawn",
+		"rechargeAmount": 3,
+		"charges": 3,
+		"entries": [
+			"據說這顆拋光的石球灌注了司寇雷烏斯神的智慧與力量，上面佈滿了彷彿從內部發光的虹彩水晶紋理。寶珠直徑 8 吋、重 8 磅，對石巨人而言是一個掌中大小的小玩意，但對中型生物來說使用起來較為笨重。",
+			"持握這顆寶珠時，你可以將它作為你法術的施法法器。你也獲得以下益處：",
+			{
+				"type": "entries",
+				"name": "豐富構材",
+				"entries": [
+					"寶珠有 3 點充能，並在黎明時恢復所有已消耗的充能。當你持握這顆寶珠施展法術時，你可以消耗至多 3 點充能，忽略該法術標有金幣價格的材料構材，每消耗 1 點充能至多可忽略 300 gp。"
+				],
+				"ENG_name": "Abundant Components"
+			},
+			{
+				"type": "entries",
+				"name": "敏銳心智",
+				"entries": [
+					"你為維持對法術的{@status concentration}而進行的體質豁免檢定獲得 +2 加值。"
+				],
+				"ENG_name": "Astute Mind"
+			},
+			{
+				"type": "entries",
+				"name": "神聖視野",
+				"entries": [
+					"你能在魔法與非魔法的黑暗中正常視物，距離 120 呎。"
+				],
+				"ENG_name": "Divine Sight"
+			}
+		],
+		"ENG_name": "Orb of Skoraeus"
+	},
 	"Orb of the Veil|EGW": {
 		"name": "帷幕寶珠",
 		"source": "EGW",
@@ -19083,6 +20697,51 @@
 			"Implements - Common|XDMG"
 		],
 		"ENG_name": "Orb of Time"
+	},
+	"Orzhov Guild Signet|GGR": {
+		"name": "歐佐夫公會印戒",
+		"source": "GGR",
+		"page": 178,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這枚戒指飾有歐佐夫的標誌，讓你能施展{@spell command}。公會印戒有時會頒給在該公會中聲望值達到 5 或更高的公會成員，作為為公會提供特殊服務的獎勵。除了魔法屬性之外，這枚戒指也象徵著歐佐夫的認可與青睞。",
+			"印戒有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。戴著它時，你可以消耗 1 點充能施展相應的法術（豁免 {@dc 13}）。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"command"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Orzhov Guild Signet"
+	},
+	"Orzhov Keyrune|GGR": {
+		"name": "歐佐夫鑰符",
+		"source": "GGR",
+		"page": 178,
+		"rarity": "rare",
+		"reqAttune": "by a member of the Orzhov guild",
+		"reqAttuneTags": [
+			{
+				"background": "orzhov representative|ggr"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這枚鑰符以帶黑色紋理的白色大理石雕成。它的一端形似一隻索魔的頭，上面固定著一片金色面甲。一聲令下，鑰符會變成一隻{@creature winged thrull|GGR}，持續至多 2 小時。若你並非出身於歐佐夫寡頭家族，它會不情不願地為你服務，在執行你的命令時小丑般地模仿你的動作與舉止。",
+			"當你使用一個動作說出物品的命令語，並將鑰符放在你 5 呎內一個未被佔據空間的地面上時，鑰符會變成一隻{@creature winged thrull|GGR}。若沒有足夠的空間容納該生物，鑰符便不會變形。",
+			"該生物對你、你的同伴與你公會的其他成員友善（除非那些公會成員對你懷有敵意）。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會採取{@action Dodge}動作並移動以避開危險。",
+			"持續時間結束時，該生物會恢復為鑰符形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復原形。當該生物恢復為鑰符形態後，必須經過 36 小時才能再次變形。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Orzhov Keyrune"
 	},
 	"Outer Essence Shard (Chaotic)|TCE": {
 		"name": "外層精華碎片（混亂）",
@@ -19373,6 +21032,24 @@
 		],
 		"ENG_name": "Parchment"
 	},
+	"Pariah's Shield|GGR": {
+		"name": "替罪者之盾",
+		"source": "GGR",
+		"page": 180,
+		"type": "S",
+		"rarity": "rare",
+		"reqAttune": true,
+		"weight": 6,
+		"ac": 2,
+		"bonusAc": "+1",
+		"entries": [
+			"波洛斯軍團的士兵視揹負這面盾牌為一種榮耀，即使他們知道這可能是他們得到的最後一份榮耀。盾牌正面雕刻著一張悲傷的人類臉孔。",
+			"持用這面盾牌時，你 5 呎內每有兩名盟友，你的 AC 就獲得 +1 加值（最多 +3）。此加值是在盾牌一般 AC 加值之外額外獲得的。",
+			"當你 5 呎內一個你能看見的生物受到傷害時，你可以使用你的反應代替該生物承受該傷害。當你這麼做時，傷害類型變為力場。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Pariah's Shield"
+	},
 	"Pearl of Power|XDMG": {
 		"name": "力量珍珠",
 		"source": "XDMG",
@@ -19418,6 +21095,24 @@
 		"weight": 1,
 		"value": 200,
 		"ENG_name": "Pepper"
+	},
+	"Peregrine Mask|GGR": {
+		"name": "游隼面具",
+		"source": "GGR",
+		"page": 180,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"modifySpeed": {
+			"static": {
+				"fly": 60
+			}
+		},
+		"entries": [
+			"戴著這頂有翼頭盔時，你擁有 60 呎的飛行速度。此外，你在先攻擲骰上具有優勢。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Peregrine Mask"
 	},
 	"Perfume of Bewitching|XDMG": {
 		"name": "蠱惑香水",
@@ -19587,6 +21282,15 @@
 		],
 		"ENG_name": "Peridot"
 	},
+	"Pewter mug with green spinels (Brazen Coalition)|PSX": {
+		"name": "鑲綠尖晶石的白鑞馬克杯（銅鑄聯盟）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 25000,
+		"ENG_name": "Pewter mug with green spinels (Brazen Coalition)"
+	},
 	"Philter of Love|XDMG": {
 		"name": "愛情靈藥",
 		"source": "XDMG",
@@ -19749,6 +21453,24 @@
 		],
 		"ENG_name": "Plate of Knight's Fellowship"
 	},
+	"Platinum 10-Zino Coin|GGR": {
+		"name": "10 吉諾白金幣",
+		"source": "GGR",
+		"page": 9,
+		"type": "$C",
+		"rarity": "none",
+		"value": 1000,
+		"ENG_name": "Platinum 10-Zino Coin"
+	},
+	"Platinum 100-Zino Coin|GGR": {
+		"name": "100 吉諾白金幣",
+		"source": "GGR",
+		"page": 9,
+		"type": "$C",
+		"rarity": "none",
+		"value": 10000,
+		"ENG_name": "Platinum 100-Zino Coin"
+	},
 	"Platinum bracelet set with an emerald|XDMG": {
 		"name": "鑲有祖母綠的白金手鐲",
 		"source": "XDMG",
@@ -19757,6 +21479,33 @@
 		"rarity": "none",
 		"value": 250000,
 		"ENG_name": "Platinum bracelet set with an emerald"
+	},
+	"Platinum headdress with topaz sun symbol (Sun Empire)|PSX": {
+		"name": "飾有黃玉太陽標誌的白金頭飾（太陽帝國）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 250000,
+		"ENG_name": "Platinum headdress with topaz sun symbol (Sun Empire)"
+	},
+	"Platinum ring with yellow sapphire (Sun Empire)|PSX": {
+		"name": "鑲黃色藍寶石的白金戒指（太陽帝國）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 750000,
+		"ENG_name": "Platinum ring with yellow sapphire (Sun Empire)"
+	},
+	"Platinum staff topped with amber (Sun Empire)|PSX": {
+		"name": "頂端鑲琥珀的白金手杖（太陽帝國）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 750000,
+		"ENG_name": "Platinum staff topped with amber (Sun Empire)"
 	},
 	"Platinum|XDMG": {
 		"name": "白金",
@@ -21026,6 +22775,103 @@
 		},
 		"ENG_name": "Pouch"
 	},
+	"Prehistoric Figurine of Wondrous Power, Carnelian Triceratops|BGG": {
+		"name": "史前異能塑像，紅玉髓三角龍",
+		"source": "BGG",
+		"page": 114,
+		"rarity": "very rare",
+		"wondrous": true,
+		"entries": [
+			"這些小雕像比一般的異能塑像更大、雕工更粗獷，描繪的是世界最初期的恐龍及相關生物。",
+			"作為一個動作，你可以在說出命令語的同時，將史前異能塑像擲向你 60 呎內地面上的一點，塑像隨即以魔法變成一隻活生生的生物。若該生物將出現的空間被其他生物或物體佔據，或沒有足夠的空間容納該生物，塑像便不會變成生物。",
+			"該生物對你與你的同伴友善。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會保護自己，但不採取其他行動。該生物的數據見《怪物圖鑑》。",
+			"該生物存在的持續時間依每個塑像而定。持續時間結束時，該生物會恢復為小雕像形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復為塑像。當該生物再次變回塑像後，必須經過一段時間才能再次使用它的屬性，如塑像的說明所述。",
+			{
+				"type": "entries",
+				"name": "{@creature triceratops||紅玉髓三角龍}",
+				"entries": [
+					"這個塑像會變成一隻{@creature triceratops}，持續至多 6 小時，並可作為坐騎騎乘。使用過後，必須經過 10 天才能再次使用。"
+				],
+				"ENG_name": "{@creature triceratops||Carnelian Triceratops}"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Prehistoric Figurine of Wondrous Power, Carnelian Triceratops"
+	},
+	"Prehistoric Figurine of Wondrous Power, Jasper Tyrannosaurus Rex|BGG": {
+		"name": "史前異能塑像，碧玉暴龍",
+		"source": "BGG",
+		"page": 114,
+		"rarity": "legendary",
+		"wondrous": true,
+		"entries": [
+			"這些小雕像比一般的異能塑像更大、雕工更粗獷，描繪的是世界最初期的恐龍及相關生物。",
+			"作為一個動作，你可以在說出命令語的同時，將史前異能塑像擲向你 60 呎內地面上的一點，塑像隨即以魔法變成一隻活生生的生物。若該生物將出現的空間被其他生物或物體佔據，或沒有足夠的空間容納該生物，塑像便不會變成生物。",
+			"該生物對你與你的同伴友善。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會保護自己，但不採取其他行動。該生物的數據見《怪物圖鑑》。",
+			"該生物存在的持續時間依每個塑像而定。持續時間結束時，該生物會恢復為小雕像形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復為塑像。當該生物再次變回塑像後，必須經過一段時間才能再次使用它的屬性，如塑像的說明所述。",
+			{
+				"type": "entries",
+				"name": "{@creature tyrannosaurus rex||碧玉暴龍}",
+				"entries": [
+					"這個以稀有綠色碧玉製成的塑像會變成一隻{@creature tyrannosaurus rex}，持續至多 1 小時。使用過後，必須經過 14 天才能再次使用。",
+					"每當你在塑像處於暴龍形態時對它下達命令（包括命令它恢復為塑像形態），你必須擲一顆 {@dice d20}。若擲出 1，你便失去對塑像的控制，它會對你與你的同伴懷有敵意，直到它的生命值降至 0，此時它會恢復為塑像形態。"
+				],
+				"ENG_name": "{@creature tyrannosaurus rex||Jasper Tyrannosaurus Rex}"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Prehistoric Figurine of Wondrous Power, Jasper Tyrannosaurus Rex"
+	},
+	"Prehistoric Figurine of Wondrous Power, Kyanite Pteranodon|BGG": {
+		"name": "史前異能塑像，藍晶石無齒翼龍",
+		"source": "BGG",
+		"page": 114,
+		"rarity": "rare",
+		"wondrous": true,
+		"entries": [
+			"這些小雕像比一般的異能塑像更大、雕工更粗獷，描繪的是世界最初期的恐龍及相關生物。",
+			"作為一個動作，你可以在說出命令語的同時，將史前異能塑像擲向你 60 呎內地面上的一點，塑像隨即以魔法變成一隻活生生的生物。若該生物將出現的空間被其他生物或物體佔據，或沒有足夠的空間容納該生物，塑像便不會變成生物。",
+			"該生物對你與你的同伴友善。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會保護自己，但不採取其他行動。該生物的數據見《怪物圖鑑》。",
+			"該生物存在的持續時間依每個塑像而定。持續時間結束時，該生物會恢復為小雕像形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復為塑像。當該生物再次變回塑像後，必須經過一段時間才能再次使用它的屬性，如塑像的說明所述。",
+			{
+				"type": "entries",
+				"name": "{@creature pteranodon||藍晶石無齒翼龍}",
+				"entries": [
+					"這個塑像會變成一隻{@creature pteranodon}，持續至多 8 小時。若你的體型為中型或更小，你可以將無齒翼龍作為坐騎騎乘。使用過後，必須經過 7 天才能再次使用。"
+				],
+				"ENG_name": "{@creature pteranodon||Kyanite Pteranodon}"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Prehistoric Figurine of Wondrous Power, Kyanite Pteranodon"
+	},
+	"Prehistoric Figurine of Wondrous Power, Pyrite Plesiosaurus|BGG": {
+		"name": "史前異能塑像，黃鐵礦蛇頸龍",
+		"source": "BGG",
+		"page": 114,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"這些小雕像比一般的異能塑像更大、雕工更粗獷，描繪的是世界最初期的恐龍及相關生物。",
+			"作為一個動作，你可以在說出命令語的同時，將史前異能塑像擲向你 60 呎內地面上的一點，塑像隨即以魔法變成一隻活生生的生物。若該生物將出現的空間被其他生物或物體佔據，或沒有足夠的空間容納該生物，塑像便不會變成生物。",
+			"該生物對你與你的同伴友善。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會保護自己，但不採取其他行動。該生物的數據見《怪物圖鑑》。",
+			"該生物存在的持續時間依每個塑像而定。持續時間結束時，該生物會恢復為小雕像形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復為塑像。當該生物再次變回塑像後，必須經過一段時間才能再次使用它的屬性，如塑像的說明所述。",
+			{
+				"type": "entries",
+				"name": "{@creature plesiosaurus||黃鐵礦蛇頸龍}",
+				"entries": [
+					"這個塑像會變成一隻{@creature plesiosaurus}，持續至多 12 小時，並可作為坐騎騎乘。使用過後，必須經過 4 天才能再次使用。",
+					"騎乘蛇頸龍時，你可以使用牠隨意施展{@spell water breathing}。"
+				],
+				"ENG_name": "{@creature plesiosaurus||Pyrite Plesiosaurus}"
+			}
+		],
+		"attachedSpells": [
+			"water breathing"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Prehistoric Figurine of Wondrous Power, Pyrite Plesiosaurus"
+	},
 	"Pride Silk Outfit|EGW": {
 		"name": "傲絲服裝",
 		"source": "EGW",
@@ -21268,6 +23114,21 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Puzzle Card"
+	},
+	"Pyroconverger|GGR": {
+		"name": "聚焰器",
+		"source": "GGR",
+		"page": 180,
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"聚焰器是伊捷製造的火焰噴射器。每次使用它都有故障的風險。",
+			"作為一個動作，你可以讓聚焰器噴出 10 呎錐形的火焰。該區域內每個生物都必須進行一次 {@dc 13} 敏捷豁免檢定，失敗時受到 {@damage 4d6} 點火焰傷害，成功時傷害減半。",
+			"每次你使用聚焰器時，擲一顆 {@dice d10}，並加上你自上次長休以來使用它的次數。若總和為 11 或更高，聚焰器便會故障：你受到 {@damage 4d6} 點火焰傷害，且在你完成一次長休之前無法再次使用聚焰器。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Pyroconverger"
 	},
 	"Quaal's Feather Token, Anchor|XDMG": {
 		"name": "誇爾的羽毛符記，錨",
@@ -21554,6 +23415,94 @@
 		],
 		"ENG_name": "Radiant Absorbing Tattoo"
 	},
+	"Rakdos Guild Signet|GGR": {
+		"name": "拉鐸斯公會印戒",
+		"source": "GGR",
+		"page": 178,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這枚戒指飾有拉鐸斯的標誌，讓你能施展{@spell hellish rebuke}。公會印戒有時會頒給在該公會中聲望值達到 5 或更高的公會成員，作為為公會提供特殊服務的獎勵。除了魔法屬性之外，這枚戒指也象徵著拉鐸斯的認可與青睞。",
+			"印戒有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。戴著它時，你可以消耗 1 點充能施展相應的法術（豁免 {@dc 13}）。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"hellish rebuke"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Rakdos Guild Signet"
+	},
+	"Rakdos Keyrune|GGR": {
+		"name": "拉鐸斯鑰符",
+		"source": "GGR",
+		"page": 178,
+		"rarity": "uncommon",
+		"reqAttune": "by a member of the Rakdos guild",
+		"reqAttuneTags": [
+			{
+				"background": "rakdos cultist|ggr"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這枚暗色花崗岩鑰符帶有猩紅色紋理，雕刻著一隻頑皮惡魔的斜睨面容。啟動時，它會變成一隻{@creature cackler|GGR}，持續至多 1 小時。",
+			"當你使用一個動作說出物品的命令語，並將鑰符放在你 5 呎內一個未被佔據空間的地面上時，鑰符會變成一隻{@creature cackler|GGR}。若沒有足夠的空間容納該生物，鑰符便不會變形。",
+			"該生物對你、你的同伴與你公會的其他成員友善（除非那些公會成員對你懷有敵意）。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會採取{@action Dodge}動作並移動以避開危險。",
+			"持續時間結束時，該生物會恢復為鑰符形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復原形。當該生物恢復為鑰符形態後，必須經過 36 小時才能再次變形。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Rakdos Keyrune"
+	},
+	"Rakdos Riteknife|GGR": {
+		"name": "拉鐸斯儀式刀",
+		"source": "GGR",
+		"page": 180,
+		"baseItem": "dagger|phb",
+		"type": "M",
+		"rarity": "legendary",
+		"reqAttune": true,
+		"weight": 1,
+		"weaponCategory": "simple",
+		"property": [
+			"F",
+			"L",
+			"T"
+		],
+		"range": "20/60",
+		"dmg1": "1d4",
+		"dmgType": "P",
+		"bonusWeapon": "+1",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。它的刀刃帶有殘忍的鋸齒，刀柄形似一顆惡魔頭顱與翅膀。每當你以這把匕首的攻擊殺死一個生物，該生物的靈魂會被囚禁在匕首中，且該生物只能以{@spell wish}法術復活。匕首最多可容納五個靈魂。",
+			"匕首中每囚禁一個靈魂，你以它進行的攻擊命中時就額外造成 {@damage 1d4} 點黯蝕傷害。當匕首位於你 5 呎內時，你的夢境會被受困靈魂的低語糾纏。",
+			"這把匕首具有以下額外屬性。",
+			{
+				"type": "entries",
+				"name": "汲取活力",
+				"entries": [
+					"作為一個附贈動作，你可以從匕首中釋放任意數量的儲存靈魂，每釋放一個靈魂恢復 {@dice 1d10} 點生命值。"
+				],
+				"ENG_name": "Siphon Vitality"
+			},
+			{
+				"type": "entries",
+				"name": "殲滅",
+				"entries": [
+					"若匕首容納了五個靈魂，你可以使用此屬性：當你以匕首命中一個生物並對該目標造成傷害後，你可以立即使用一個反應釋放全部五個靈魂。若目標此時的生命值少於 75 點，它必須成功通過一次 {@dc 15} 體質豁免檢定，否則死亡。若目標死亡，在你完成一次長休之前無法再次使用此屬性。"
+				],
+				"ENG_name": "Annihilation"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Rakdos Riteknife"
+	},
 	"Rations|XPHB": {
 		"name": "口糧",
 		"source": "XPHB",
@@ -21574,6 +23523,35 @@
 			"CNS"
 		],
 		"ENG_name": "Rations"
+	},
+	"Reaper's Scream|BGG": {
+		"name": "死神尖嘯",
+		"source": "BGG",
+		"page": 115,
+		"baseItem": "morningstar|PHB",
+		"type": "M",
+		"rarity": "legendary",
+		"reqAttune": true,
+		"weight": 4,
+		"weaponCategory": "martial",
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"bonusWeapon": "+2",
+		"entries": [
+			"這把鐵製釘頭錘的尖刺散發著病態、蒼白的光芒。它的柄上刻著死之符文，並以珍珠鑲嵌。",
+			"你以這把武器進行的攻擊檢定與傷害擲骰獲得 +2 加值，且以這把武器進行的攻擊造成黯蝕傷害而非穿刺傷害。",
+			"當你以這把武器攻擊一個生物且攻擊檢定擲出 20 時，你獲得 10 點臨時生命值。當你擁有 1 點或更多這些臨時生命值時，任何以近戰攻擊命中你的生物會受到 10 點黯蝕傷害。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"作為一個附贈動作，你可以引動武器的符文，將所有被這把武器殺死之生物的尖叫聲一次以刺耳的轟鳴釋放出來。你 60 呎內每個你選擇的生物都必須成功通過一次 {@dc 15} 感知豁免檢定，否則在你下個回合開始前處於震懾狀態。",
+					"符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"ENG_name": "Reaper's Scream"
 	},
 	"Red Dragon Scale Mail|XDMG": {
 		"name": "紅龍鱗甲",
@@ -21723,6 +23701,30 @@
 			"戴著此戒指時，你對強酸傷害具有{@variantrule Resistance|XPHB}。戒指上鑲著珍珠。"
 		],
 		"ENG_name": "Ring of Acid Resistance"
+	},
+	"Ring of Amity|BGG": {
+		"name": "友誼戒指",
+		"source": "BGG",
+		"page": 115,
+		"type": "RG|DMG",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"entries": [
+			"這枚戒指以赤鐵礦雕成，上面刻著友之符文。",
+			"當你第一次與這枚戒指同調時，你可以觸碰一個自願的生物，在你們兩者之間建立魔法羈絆。只要此羈絆持續，每當你受到恢復生命值的法術或魔法效果影響時，建立羈絆的生物也會獲得該法術或效果的益處。",
+			"每當你完成一次長休時，你可以與另一個生物建立羈絆，前提是你能觸碰該生物且該生物是自願的。",
+			"一個生物一次只能從一枚友誼戒指的羈絆中獲益。若你或該生物前往另一個存在位面、你在長休結束時與另一個生物建立羈絆，或你以一個附贈動作切斷羈絆，羈絆便會結束。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"當建立羈絆的生物以攻擊檢定命中一個目標時，若你位於該生物 60 呎內，你可以使用你的反應引動戒指的符文。建立羈絆之生物的攻擊隨即變為重擊。",
+					"符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"ENG_name": "Ring of Amity"
 	},
 	"Ring of Animal Influence|XDMG": {
 		"name": "動物影響戒指",
@@ -24166,6 +26168,36 @@
 		"value": 5,
 		"ENG_name": "Salt"
 	},
+	"Sanctum Amulet|BGG": {
+		"name": "聖所護符",
+		"source": "BGG",
+		"page": 116,
+		"resist": [
+			"necrotic"
+		],
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"一個黑色蛋白石墜飾懸掛在這條珍珠光澤鍊子的底端。墜飾背面刻著聖之符文。",
+			"穿戴此物品時，你具有黯蝕傷害抗性。此外，你可以使用一個動作或一個附贈動作施展{@spell spare the dying}戲法。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"當你 60 呎內一個你能看見的生物因受到傷害而使生命值降至 0 時，你可以使用你的反應引動物品的符文，使墜飾閃耀蒼白的光芒。該生物改為降至 1 點生命值。",
+					"符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"attachedSpells": {
+			"will": [
+				"spare the dying"
+			]
+		},
+		"ENG_name": "Sanctum Amulet"
+	},
 	"Sardonyx|XDMG": {
 		"name": "纏絲瑪瑙",
 		"source": "XDMG",
@@ -24704,6 +26736,51 @@
 		],
 		"ENG_name": "Secondhand Steal Trinket"
 	},
+	"Selesnya Guild Signet|GGR": {
+		"name": "瑟雷尼亞公會印戒",
+		"source": "GGR",
+		"page": 178,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這枚戒指飾有瑟雷尼亞的標誌，讓你能施展{@spell charm person}。公會印戒有時會頒給在該公會中聲望值達到 5 或更高的公會成員，作為為公會提供特殊服務的獎勵。除了魔法屬性之外，這枚戒指也象徵著瑟雷尼亞的認可與青睞。",
+			"印戒有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。戴著它時，你可以消耗 1 點充能施展相應的法術（豁免 {@dc 13}）。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"charm person"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Selesnya Guild Signet"
+	},
+	"Selesnya Keyrune|GGR": {
+		"name": "瑟雷尼亞鑰符",
+		"source": "GGR",
+		"page": 178,
+		"rarity": "rare",
+		"reqAttune": "by a member of the Selesnya guild",
+		"reqAttuneTags": [
+			{
+				"background": "selesnya initiate|ggr"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這枚鑰符以白色與綠色大理石雕成狼頭的形狀，會變成一隻{@creature dire wolf}。狼會存在 8 小時。牠的智力為 6，理解精靈語與木族語但無法說這些語言。當牠位於你 1 哩內時，你們可以互相以心靈感應溝通。",
+			"當你使用一個動作說出物品的命令語，並將鑰符放在你 5 呎內一個未被佔據空間的地面上時，鑰符會變成一隻{@creature dire wolf}。若沒有足夠的空間容納該生物，鑰符便不會變形。",
+			"該生物對你、你的同伴與你公會的其他成員友善（除非那些公會成員對你懷有敵意）。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會採取{@action Dodge}動作並移動以避開危險。",
+			"持續時間結束時，該生物會恢復為鑰符形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復原形。當該生物恢復為鑰符形態後，必須經過 36 小時才能再次變形。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Selesnya Keyrune"
+	},
 	"Sending Stones|XDMG": {
 		"name": "傳訊石",
 		"source": "XDMG",
@@ -24943,6 +27020,50 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Shield of Missile Attraction"
+	},
+	"Shield of the Blazing Dreadnought|BGG": {
+		"name": "熾焰無畏者之盾",
+		"source": "BGG",
+		"page": 116,
+		"baseItem": "shield|PHB",
+		"type": "S",
+		"immune": [
+			"fire"
+		],
+		"rarity": "legendary",
+		"reqAttune": true,
+		"weight": 6,
+		"ac": 2,
+		"entries": [
+			"這面鐵盾仿照某些火巨人揮舞的可怕尖刺塔盾打造，持續散發著溫暖。",
+			"你可以使用一個附贈動作啟動盾牌，讓發光的熔岩流過盾牌的溝槽 1 分鐘。盾牌啟動期間，你獲得以下益處：",
+			{
+				"type": "entries",
+				"name": "熾焰之魂",
+				"entries": [
+					"你免疫火焰傷害。"
+				],
+				"ENG_name": "Blazing Soul"
+			},
+			{
+				"type": "entries",
+				"name": "淨化之火",
+				"entries": [
+					"作為一個動作，你可以讓盾牌閃耀史爾特爾神的淨化之火。選擇你 30 呎內一個你能看見的生物（你可以選擇自己）。影響該生物的一種疾病或一種你選擇的狀態立即結束；該狀態可以是目盲、魅惑、耳聾或中毒。"
+				],
+				"ENG_name": "Cleansing Fire"
+			},
+			{
+				"type": "entries",
+				"name": "盾擊",
+				"entries": [
+					"當你在你的回合採取{@action Attack}動作時，你可以將你的一次攻擊替換為盾擊，以你 5 呎內一個你能看見的生物為目標。目標必須進行一次力量豁免檢定（DC 等於 8 + 你的熟練加值 + 你的力量調整值）。豁免失敗時，目標受到 {@damage 3d6} 點鈍擊傷害加上 {@damage 3d6} 點火焰傷害，並被擊倒為倒地。豁免成功時，目標只受到一半傷害。你每回合只能使用一次盾擊。",
+					"盾牌啟動後，在下一個黎明之前無法再次啟動。"
+				],
+				"ENG_name": "Shield Bash"
+			}
+		],
+		"ENG_name": "Shield of the Blazing Dreadnought"
 	},
 	"Shield of the Cavalier|XDMG": {
 		"name": "騎士之盾",
@@ -25249,6 +27370,15 @@
 		"bonusWeapon": "+3",
 		"ENG_name": "Silken Spite (Exalted)"
 	},
+	"Silver 25-Zib Coin|GGR": {
+		"name": "25 吉布銀幣",
+		"source": "GGR",
+		"page": 9,
+		"type": "$C",
+		"rarity": "none",
+		"value": 25,
+		"ENG_name": "Silver 25-Zib Coin"
+	},
 	"Silver and gold brooch|XDMG": {
 		"name": "金銀胸針",
 		"source": "XDMG",
@@ -25331,6 +27461,24 @@
 		"value": 2500,
 		"ENG_name": "Silver ewer"
 	},
+	"Silver headdress with amber and red-coral feathers (Sun Empire)|PSX": {
+		"name": "飾有琥珀與紅珊瑚羽毛的銀頭飾（太陽帝國）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 75000,
+		"ENG_name": "Silver headdress with amber and red-coral feathers (Sun Empire)"
+	},
+	"Silver medallion (Sun Empire)|PSX": {
+		"name": "銀圓章（太陽帝國）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 2500,
+		"ENG_name": "Silver medallion (Sun Empire)"
+	},
 	"Silver necklace with a gemstone pendant|XDMG": {
 		"name": "附寶石墜飾的銀項鍊",
 		"source": "XDMG",
@@ -25339,6 +27487,24 @@
 		"rarity": "none",
 		"value": 25000,
 		"ENG_name": "Silver necklace with a gemstone pendant"
+	},
+	"Silver necklace with an amber pendant (Sun Empire)|PSX": {
+		"name": "附琥珀墜飾的銀項鍊（太陽帝國）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 25000,
+		"ENG_name": "Silver necklace with an amber pendant (Sun Empire)"
+	},
+	"Silver shoulder piece with amber and garnet (Sun Empire)|PSX": {
+		"name": "鑲琥珀與石榴石的銀肩飾（太陽帝國）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 75000,
+		"ENG_name": "Silver shoulder piece with amber and garnet (Sun Empire)"
 	},
 	"Silver|XDMG": {
 		"name": "白銀",
@@ -25350,6 +27516,51 @@
 		"weight": 1,
 		"value": 500,
 		"ENG_name": "Silver"
+	},
+	"Simic Guild Signet|GGR": {
+		"name": "析米克公會印戒",
+		"source": "GGR",
+		"page": 178,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這枚戒指飾有析米克的標誌，讓你能施展{@spell expeditious retreat}。公會印戒有時會頒給在該公會中聲望值達到 5 或更高的公會成員，作為為公會提供特殊服務的獎勵。除了魔法屬性之外，這枚戒指也象徵著析米克的認可與青睞。",
+			"印戒有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。戴著它時，你可以消耗 1 點充能施展相應的法術（豁免 {@dc 13}）。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"expeditious retreat"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Simic Guild Signet"
+	},
+	"Simic Keyrune|GGR": {
+		"name": "析米克鑰符",
+		"source": "GGR",
+		"page": 178,
+		"rarity": "uncommon",
+		"reqAttune": "by a member of the Simic guild",
+		"reqAttuneTags": [
+			{
+				"background": "simic scientist|ggr"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這枚鑰符由珊瑚、珍珠母貝與鉻組裝而成，飾有析米克裝飾特有的螺旋與曲線。頭部形似一種海洋生物的外殼。一聲令下，鑰符會變成一隻具有抓握者與穩定腿部適應的{@creature category 1 krasis|GGR}。變形持續至多 5 小時。",
+			"當你使用一個動作說出物品的命令語，並將鑰符放在你 5 呎內一個未被佔據空間的地面上時，鑰符會變成一隻具有抓握者與穩定腿部適應的{@creature category 1 krasis|GGR}。若沒有足夠的空間容納該生物，鑰符便不會變形。",
+			"該生物對你、你的同伴與你公會的其他成員友善（除非那些公會成員對你懷有敵意）。它理解你的語言，並服從你的口頭命令。若你沒有下達命令，該生物會採取{@action Dodge}動作並移動以避開危險。",
+			"持續時間結束時，該生物會恢復為鑰符形態。若它的生命值降至 0，或你在觸碰它時使用一個動作再次說出命令語，它會提早恢復原形。當該生物恢復為鑰符形態後，必須經過 36 小時才能再次變形。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Simic Keyrune"
 	},
 	"Skull Card|BMT": {
 		"name": "骷髏牌",
@@ -25395,6 +27606,30 @@
 			}
 		},
 		"ENG_name": "Skull Helm"
+	},
+	"Skyblinder Staff|GGR": {
+		"name": "蔽空法杖",
+		"source": "GGR",
+		"page": 181,
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"weight": 4,
+		"weaponCategory": "simple",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"bonusWeapon": "+1",
+		"bonusSpellAttack": "+1",
+		"staff": true,
+		"entries": [
+			"你以這把魔法長棍進行的攻擊檢定與傷害擲骰獲得 +1 加值。持握它時，你的法術攻擊檢定獲得 +1 加值。",
+			"若你 30 呎內一個你能看見的飛行生物對你進行攻擊檢定，你可以使用你的反應高舉法杖，使它閃耀光芒。攻擊者在該次攻擊檢定上具有劣勢，且它必須成功通過一次 {@dc 15} 體質豁免檢定，否則在它下個回合開始前處於{@condition blinded}狀態。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Skyblinder Staff"
 	},
 	"Skyship|EGW": {
 		"name": "飛空艇",
@@ -26078,6 +28313,18 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Sphere of Annihilation"
+	},
+	"Spies' Murmur|GGR": {
+		"name": "間諜低語",
+		"source": "GGR",
+		"page": 181,
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這個以暗色金屬打造的頭飾彎曲地戴在耳朵周圍。若你認識另一名戴著間諜低語的生物，且該生物位於你 1 哩內，你們可以互相以心靈感應溝通。作為一個附贈動作，你可以讓該生物在 1 小時內聽見你所聽到的一切。你可以使用一個附贈動作結束此效果，且若你處於{@condition incapacitated}狀態，此效果也會結束。"
+		],
+		"ENG_name": "Spies' Murmur"
 	},
 	"Spindle of Fate|BMT": {
 		"name": "命運紡錘",
@@ -27380,6 +29627,46 @@
 		"hasFluffImages": true,
 		"ENG_name": "Staff of the Python"
 	},
+	"Staff of the Rooted Hills|BGG": {
+		"name": "扎根山丘法杖",
+		"source": "BGG",
+		"page": 116,
+		"type": "M",
+		"rarity": "rare",
+		"reqAttune": true,
+		"weight": 4,
+		"weaponCategory": "simple",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"bonusWeapon": "+1",
+		"staff": true,
+		"entries": [
+			"這根多瘤的木杖上刻著丘陵符文。法杖會以魔法調整大小，以配合任何與它同調之生物的身高。",
+			"這根法杖可以作為一把攻擊檢定與傷害擲骰具有 +1 加值的魔法長棍使用。你在你的回合第一次以法杖命中任何生物時，該生物必須成功通過一次 {@dc 12} 力量豁免檢定，否則被幽靈藤蔓束縛，直到你下個回合開始。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"作為一個動作，你可以引動法杖的符文，用法杖施展{@spell hold person}（豁免 {@dc 12}）或{@spell speak with plants}。當你使用法杖施展{@spell hold person}時，目標會被幽靈藤蔓纏繞。",
+					"符文被引動施展任一道法術後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1": [
+					"hold person",
+					"speak with plants"
+				]
+			}
+		},
+		"ENG_name": "Staff of the Rooted Hills"
+	},
 	"Staff of the Woodlands|XDMG": {
 		"name": "林地法杖",
 		"source": "XDMG",
@@ -27725,6 +30012,44 @@
 		"hasFluffImages": true,
 		"ENG_name": "Stone of Good Luck"
 	},
+	"Stonebreaker's Breastplate|BGG": {
+		"name": "碎石者胸甲",
+		"source": "BGG",
+		"page": 116,
+		"baseItem": "breastplate|PHB",
+		"type": "MA",
+		"resist": [
+			"bludgeoning",
+			"piercing",
+			"slashing"
+		],
+		"rarity": "legendary",
+		"reqAttune": true,
+		"weight": 20,
+		"ac": 14,
+		"entries": [
+			"這件胸甲以大理石紋花崗岩製成，但感覺並不比一般的金屬胸甲更重。它的胸前飾有石之符文。",
+			"穿著這件胸甲時，你具有鈍擊、穿刺與劈砍傷害抗性，並免疫被擊倒。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"作為一個動作，你可以引動胸甲的符文，用它施展{@spell wall of stone}法術（豁免 {@dc 14}）。以此方式施展該法術時，你為維持對法術的{@status concentration}而進行的豁免檢定具有優勢。",
+					"符文被引動後，在下一個黎明之前無法再次引動。",
+					"這套護甲是由一塊墊著柔軟皮革的合身鐵製胸板所構成。雖然它相對來說保護不了手和腳，但這套護甲能在為穿載者的重要器官提供良好保護的同時，而不太會妨礙穿載者的行動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"wall of stone"
+				]
+			}
+		},
+		"ENG_name": "Stonebreaker's Breastplate"
+	},
 	"Stonemaker War Pick|BMT": {
 		"name": "造石戰鎬",
 		"source": "BMT",
@@ -27837,7 +30162,7 @@
 						"type": "list",
 						"items": [
 							"你免疫閃電傷害與雷鳴傷害。",
-							"當你以通常造成鈍擊傷害的武器攻擊命中時，它改為造成雷鳴傷害。當你以通常造成穿刺或揮砍傷害的武器攻擊命中時，它改為造成閃電傷害。",
+							"當你以通常造成鈍擊傷害的武器攻擊命中時，它改為造成雷鳴傷害。當你以通常造成穿刺或劈砍傷害的武器攻擊命中時，它改為造成閃電傷害。",
 							"作為一個附贈動作，你可以選擇你 30 呎內一個你能看見的生物，讓它被閃電擊中。目標必須進行一次 {@dc 15} 敏捷豁免檢定，失敗時受到 {@damage 3d6} 點閃電傷害，成功時傷害減半。"
 						]
 					},
@@ -27902,6 +30227,15 @@
 		],
 		"ENG_name": "String"
 	},
+	"Sun amulet on a beaded chain (Sun Empire)|PSX": {
+		"name": "串珠鍊太陽護符（太陽帝國）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 2500,
+		"ENG_name": "Sun amulet on a beaded chain (Sun Empire)"
+	},
 	"Sun Blade|XDMG": {
 		"name": "太陽劍",
 		"source": "XDMG",
@@ -27932,7 +30266,7 @@
 				"name": "光耀之刃",
 				"entries": [
 					"握住劍柄時，你可以執行一個{@variantrule Bonus Action|XPHB}，使一道純粹光耀構成的劍刃憑空出現，或使劍刃消失。劍刃存在時，這把魔法武器的功能如同一把具有{@itemProperty F|XPHB|靈巧}屬性的長劍。若你熟練長劍或短劍，你就熟練太陽劍。",
-					"以此武器進行的攻擊檢定與傷害擲骰獲得 +2 加值，它造成光耀傷害而非揮砍傷害。當你用它命中一個不死生物時，該目標額外受到 {@damage 1d8} 光耀傷害。"
+					"以此武器進行的攻擊檢定與傷害擲骰獲得 +2 加值，它造成光耀傷害而非劈砍傷害。當你用它命中一個不死生物時，該目標額外受到 {@damage 1d8} 光耀傷害。"
 				],
 				"ENG_name": "Blade of Radiance"
 			},
@@ -28032,6 +30366,31 @@
 		],
 		"ENG_name": "Sun Staff"
 	},
+	"Sunforger|GGR": {
+		"name": "鑄日錘",
+		"source": "GGR",
+		"page": 181,
+		"baseItem": "warhammer|phb",
+		"type": "M",
+		"rarity": "rare",
+		"reqAttune": true,
+		"weight": 2,
+		"weaponCategory": "martial",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d8",
+		"dmgType": "B",
+		"dmg2": "1d10",
+		"bonusWeapon": "+2",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +2 加值。",
+			"作為一個動作，你可以將武器擲向至多 120 呎外一個你能看見的點。當它抵達該點時，武器會在一陣爆炸中消失，以該點為中心、半徑 20 呎球形內的每個生物都必須進行一次 {@dc 15} 敏捷豁免檢定，失敗時受到 {@damage 6d6} 點火焰傷害，成功時傷害減半。之後，你可以使用一個動作讓武器重新出現在你空著的手中。在你完成一次短休或長休之前，你無法再次讓它爆炸。",
+			"若你沒有將武器召回手中，當你不再與它同調或經過 24 小時時，它會重新出現在爆炸的地點。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Sunforger"
+	},
 	"Sword of Answering|XDMG": {
 		"name": "應答之劍",
 		"source": "XDMG",
@@ -28088,7 +30447,7 @@
 		"entries": [
 			"當維克那的力量逐漸壯大時，他任命了一名邪惡而冷酷的副手——血手卡斯——擔任他的護衛與左右手。這個卑劣的惡棍身兼顧問、軍閥與刺客。他的功績贏得了維克那的讚賞與一份獎賞：一把出身與其持有者同樣黑暗的劍。",
 			"很長一段時間，卡斯忠心侍奉這位{@creature lich}，但隨著卡斯的力量增長，他的狂妄也與日俱增。他的劍慫恿他取代維克那，好讓他們代替維克那統治{@creature lich||巫妖}的帝國。傳說維克那死於卡斯之手，但維克那也為他叛變的副手帶來了毀滅，只留下卡斯的劍。世界也因此變得更光明了。",
-			"卡斯之劍是一把有知覺的魔法長劍，以它進行的攻擊與傷害擲骰獲得 +3 加值。擲出 19 或 20 時造成重擊，並對不死生物額外造成 {@damage 2d10} 點揮砍傷害。",
+			"卡斯之劍是一把有知覺的魔法長劍，以它進行的攻擊與傷害擲骰獲得 +3 加值。擲出 19 或 20 時造成重擊，並對不死生物額外造成 {@damage 2d10} 點劈砍傷害。",
 			"若這把劍在從劍鞘中拔出後 1 分鐘內沒有沐浴在鮮血中，其持用者必須進行一次 {@dc 15} 魅力豁免檢定。成功時，持用者受到 {@damage 3d6} 點心靈傷害。失敗時，持用者如同受到{@spell dominate monster}法術般被劍支配，而劍會要求沐浴鮮血。當劍的要求被滿足時，法術效果結束。",
 			{
 				"name": "隨機屬性",
@@ -28198,7 +30557,7 @@
 				"type": "entries",
 				"name": "魔法武器",
 				"entries": [
-					"以此劍進行的攻擊檢定與傷害擲骰獲得 +3 加值，其 {@dice d20} 擲出 19 或 20 時造成{@variantrule Critical Hit|XPHB}，並對不死生物額外造成 {@damage 2d10} 揮砍傷害。"
+					"以此劍進行的攻擊檢定與傷害擲骰獲得 +3 加值，其 {@dice d20} 擲出 19 或 20 時造成{@variantrule Critical Hit|XPHB}，並對不死生物額外造成 {@damage 2d10} 劈砍傷害。"
 				],
 				"ENG_name": "Magic Weapon"
 			},
@@ -28312,6 +30671,37 @@
 		},
 		"hasFluffImages": true,
 		"ENG_name": "Sword of Kas"
+	},
+	"Sword of the Paruns|GGR": {
+		"name": "帕倫之劍",
+		"source": "GGR",
+		"page": 181,
+		"baseItem": "longsword|phb",
+		"type": "M",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"weight": 3,
+		"weaponCategory": "martial",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d8",
+		"dmgType": "S",
+		"dmg2": "1d10",
+		"bonusWeapon": "+1",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。此外，在你的每個回合一次，若你持握這把劍，你可以使用以下屬性之一：",
+			{
+				"type": "list",
+				"items": [
+					"在你使用{@action Attack}動作以劍攻擊後，你可以立即讓你 60 呎內的一個生物使用它的反應進行一次武器攻擊。",
+					"在你採取{@action Dash}動作後，你可以立即讓你 60 呎內的一個生物使用它的反應移動至多等於其速度的距離。",
+					"在你採取{@action Dodge}動作後，你可以立即讓你 60 呎內的一個生物使用它的反應獲得{@action Dodge}動作的益處。"
+				]
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Sword of the Paruns"
 	},
 	"Talisman of Pure Good|XDMG": {
 		"name": "至善護符",
@@ -28531,7 +30921,7 @@
 								"4",
 								"磨坊路謀殺案（半身人犬齒）",
 								"3 隻組成集會的{@creature green hag}",
-								"當你傷害一個在本場戰鬥中尚未進行過回合的目標時，該目標額外受到幽靈刀刃造成的 {@damage 3d10} 點揮砍傷害。"
+								"當你傷害一個在本場戰鬥中尚未進行過回合的目標時，該目標額外受到幽靈刀刃造成的 {@damage 3d10} 點劈砍傷害。"
 							],
 							[
 								"5",
@@ -29042,6 +31432,37 @@
 		],
 		"ENG_name": "Thunder Absorbing Tattoo"
 	},
+	"Thunderbuss|BGG": {
+		"name": "雷霆喇叭槍",
+		"source": "BGG",
+		"page": 116,
+		"baseItem": "pistol|dmg",
+		"type": "R",
+		"rarity": "very rare",
+		"weight": 3,
+		"weaponCategory": "martial",
+		"age": "renaissance",
+		"range": "30/90",
+		"dmg1": "1d10",
+		"dmgType": "P",
+		"bonusWeapon": "+1",
+		"firearm": true,
+		"entries": [
+			"這把魔法遠程武器是一把喇叭口手槍，槍管上刻著風暴符文。你以它進行的攻擊檢定與傷害擲骰獲得 +1 加值。它不需要彈藥，造成雷鳴傷害而非穿刺傷害，且不具有裝填屬性。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"作為一個附贈動作，你可以引動武器的符文，將一顆能量球發射到你 30 呎內一個你能看見的點。能量接著引爆，形成以該點為中心、半徑 10 呎的狂風雷鳴球形，該球形內的每個生物都必須進行一次 {@dc 14} 體質豁免檢定。豁免失敗時，生物受到 {@damage 3d6} 點雷鳴傷害，且在你下個回合結束前無法採取反應。豁免成功時，生物只受到一半傷害。",
+					"符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"ammoType": "renaissance bullet",
+		"hasFluffImages": true,
+		"ENG_name": "Thunderbuss"
+	},
 	"Thunderous Greatclub|XDMG": {
 		"name": "雷鳴巨棍",
 		"source": "XDMG",
@@ -29164,6 +31585,15 @@
 			"打火匣是一個小容器，裝有用於生火的燧石、火鋼與火絨（通常是浸過輕油的乾布）。用它點燃{@item Candle|XPHB}、{@item Lamp|XPHB}、{@item Hooded Lantern|XPHB|提燈}或{@item Torch|XPHB}（或任何有外露燃料的物品）需要一個{@variantrule Bonus Action|XPHB}。點燃其他任何火需要 1 分鐘。"
 		],
 		"ENG_name": "Tinderbox"
+	},
+	"Tiny jade figurine (River Heralds)|PSX": {
+		"name": "微型玉雕像（河流先驅）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 2500,
+		"ENG_name": "Tiny jade figurine (River Heralds)"
 	},
 	"Tome of Clear Thought|XDMG": {
 		"name": "清晰思緒之書",
@@ -29369,6 +31799,15 @@
 			"旅行者服裝是耐用的衣物，專為在各種環境中旅行而設計。"
 		],
 		"ENG_name": "Traveler's Clothes"
+	},
+	"Treasure chest crafted of exotic wood with gold fittings and opals (Brazen Coalition)|PSX": {
+		"name": "以珍奇木材製成、飾有金配件與蛋白石的寶箱（銅鑄聯盟）",
+		"source": "PSX",
+		"page": 25,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 750000,
+		"ENG_name": "Treasure chest crafted of exotic wood with gold fittings and opals (Brazen Coalition)"
 	},
 	"Trident of Fish Command|XDMG": {
 		"name": "御魚三叉戟",
@@ -30366,6 +32805,15 @@
 		"hasFluffImages": true,
 		"ENG_name": "Universal Solvent"
 	},
+	"Velvet doublet with gold buttons (Legion of Dusk)|PSX": {
+		"name": "金鈕扣天鵝絨緊身上衣（暮影軍團）",
+		"source": "PSX",
+		"page": 24,
+		"type": "$A|DMG",
+		"rarity": "none",
+		"value": 2500,
+		"ENG_name": "Velvet doublet with gold buttons (Legion of Dusk)"
+	},
 	"Verminshroud (Awakened)|EGW": {
 		"name": "蟲鼠斗篷（覺醒）",
 		"source": "EGW",
@@ -30583,6 +33031,57 @@
 			"這個發條裝置形似一隻晚餐盤大小的金屬螃蟹。每用一個動作為裝置上發條，它就能運作 1 分鐘，最多 10 分鐘。運作期間，此物品使用附帶的{@creature Vox Seeker|EGW}數據。這個自動機由 DM 控制。生命值降至 0 的聲音搜尋者會被摧毀。"
 		],
 		"ENG_name": "Vox Seeker"
+	},
+	"Voyager Staff|GGR": {
+		"name": "旅者法杖",
+		"source": "GGR",
+		"page": 181,
+		"rarity": "very rare",
+		"reqAttune": "by a spellcaster",
+		"reqAttuneTags": [
+			{
+				"spellcasting": true
+			}
+		],
+		"weight": 4,
+		"weaponCategory": "simple",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"bonusWeapon": "+1",
+		"bonusSpellAttack": "+1",
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d6 + 4}",
+		"charges": 10,
+		"staff": true,
+		"entries": [
+			"你以這把魔法長棍進行的攻擊檢定與傷害擲骰獲得 +1 加值。持握它時，你的法術攻擊檢定獲得 +1 加值。",
+			"這根法杖有 10 點充能。持握它時，你可以使用一個動作消耗 1 點或更多充能，使用你的法術豁免 DC 從法杖施展以下法術之一：{@spell banishment}（4 點充能）、{@spell blink}（3 點充能）、{@spell misty step}（2 點充能）、{@spell passwall}（5 點充能）或{@spell teleport}（7 點充能）。",
+			"法杖每天黎明恢復 {@dice 1d6 + 4} 點已消耗的充能。若你消耗最後 1 點充能，擲一顆 {@dice d20}。若擲出 1，法杖會永遠消失。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"2": [
+					"misty step"
+				],
+				"3": [
+					"blink"
+				],
+				"4": [
+					"banishment"
+				],
+				"5": [
+					"passwall"
+				],
+				"7": [
+					"teleport"
+				]
+			}
+		},
+		"ENG_name": "Voyager Staff"
 	},
 	"Wagon|XPHB": {
 		"name": "運貨馬車",
@@ -31561,6 +34060,30 @@
 		"hasFluffImages": true,
 		"ENG_name": "Wand of Wonder"
 	},
+	"War Horn of Valor|BGG": {
+		"name": "勇氣戰號",
+		"source": "BGG",
+		"page": 117,
+		"baseItem": "horn|phb",
+		"type": "INS",
+		"rarity": "rare",
+		"wondrous": true,
+		"bonusAc": "+1",
+		"entries": [
+			"這支黃銅戰號上刻著戰之符文，吹響時符文會發出紫色光芒。",
+			"你可以使用一個附贈動作吹響號角。當你這麼做時，若你處於恐懼狀態，你立即結束自身的該狀態。你也在你下個回合開始前於對抗恐懼的豁免檢定上具有優勢。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"當你吹響號角時，你也可以引動符文，為號角低沉的號聲灌注守護魔法，影響你 30 呎內你選擇的生物。你與所有受影響的生物在你下個回合開始前 AC 獲得 +1 加值。",
+					"符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Rune"
+			}
+		],
+		"ENG_name": "War Horn of Valor"
+	},
 	"Warhorse|XPHB": {
 		"name": "戰馬",
 		"source": "XPHB",
@@ -31751,6 +34274,33 @@
 			}
 		},
 		"ENG_name": "Wave"
+	},
+	"Wayfarer's Boots|BGG": {
+		"name": "旅人之靴",
+		"source": "BGG",
+		"page": 117,
+		"rarity": "rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這雙靴子以耐用的布料製成，每隻鞋跟上方都以金線繡著旅之符文。穿著此物品時，你的步行速度增加 10 呎，且你在感知（{@skill Survival}）檢定上具有優勢。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"作為一個附贈動作，你可以引動靴子的符文，用它們施展{@spell expeditious retreat}法術。符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Runes"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"expeditious retreat"
+				]
+			}
+		},
+		"ENG_name": "Wayfarer's Boots"
 	},
 	"Well of Many Worlds|XDMG": {
 		"name": "萬界之井",
@@ -32276,6 +34826,29 @@
 		},
 		"hasFluffImages": true,
 		"ENG_name": "Wreath of the Prism (Exalted)"
+	},
+	"Wyrmreaver Gauntlets|BGG": {
+		"name": "屠龍者護手",
+		"source": "BGG",
+		"page": 117,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這雙鑲釘護手最初是為了讓無法飛行的巨人鬥士對抗龍與其他巨大的空中掠食者而打造的，上面刻著龍之符文。",
+			"戴著這雙護手時，你的徒手打擊命中時額外造成 {@damage 1d6} 點力場傷害。此外，每當你完成一次長休時，選擇以下傷害類型之一：酸蝕、寒冷、火焰、閃電或毒素。在你完成下一次長休之前，你具有所選傷害類型的抗性。",
+			{
+				"type": "entries",
+				"name": "引動符文",
+				"entries": [
+					"作為一個附贈動作，你可以引動護手的符文，召喚兩隻巨大的幽靈拳頭，包覆護手並模仿你的手部動作。拳頭也能自行飛出打擊遠處的對手，在命中或未命中後立即回到你的空間。",
+					"拳頭持續 1 分鐘，或直到你處於無力狀態。幽靈拳頭啟動期間，你在你的回合進行的徒手打擊觸及範圍為 30 呎，且當你以徒手打擊進行的藉機攻擊命中一個生物時，該生物必須成功通過一次力量豁免檢定（DC 等於 8 + 你的熟練加值 + 你的力量調整值），否則處於倒地狀態。",
+					"符文被引動後，在下一個黎明之前無法再次引動。"
+				],
+				"ENG_name": "Invoking the Runes"
+			}
+		],
+		"ENG_name": "Wyrmreaver Gauntlets"
 	},
 	"Wyvern Poison|DMG": {
 		"name": "翼龍毒",

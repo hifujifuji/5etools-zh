@@ -1,0 +1,179 @@
+{
+	"batch": "ipr",
+	"items": [
+		{
+			"prop": "itemProperty",
+			"key": "2H|PHB",
+			"hint": {
+				"Two-Handed": "雙手"
+			},
+			"s": [
+				"Two-Handed",
+				"This weapon requires two hands to use. This property is relevant only when you attack with the weapon, not when you simply hold it."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "A|PHB",
+			"hint": {
+				"Ammunition": "彈藥"
+			},
+			"s": [
+				"Ammunition",
+				"You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack. Loading a one-handed weapon requires a free hand. At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+				"If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon. A sling must be loaded to deal any damage when used in this way."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "AF|DMG",
+			"hint": {
+				"Ammunition": "彈藥"
+			},
+			"s": [
+				"Ammunition",
+				"You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack. Loading a one-handed weapon requires a free hand. The ammunition of a firearm is destroyed upon use.",
+				"If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon. A sling must be loaded to deal any damage when used in this way."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "AF|XDMG",
+			"hint": {
+				"Ammunition": "彈藥"
+			},
+			"s": [
+				"Ammunition",
+				"Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "BF|DMG",
+			"hint": {
+				"Burst Fire": "連射"
+			},
+			"s": [
+				"Burst Fire",
+				"A weapon that has the burst fire property can make a single-target attack, or it can spray a 10-foot-cube area within normal range with shots. Each creature in the area must succeed on a {@dc 15} Dexterity saving throw or take the weapon's normal damage. This action uses ten pieces of ammunition."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "BF|XDMG",
+			"hint": {
+				"Burst Fire": "連射"
+			},
+			"s": [
+				"Burst Fire",
+				"As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} within the weapon's normal range. Each creature in that area must succeed on a {@dc 15} Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "F|PHB",
+			"hint": {
+				"Finesse": "靈巧"
+			},
+			"s": [
+				"Finesse",
+				"When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "H|PHB",
+			"hint": {
+				"Heavy": "重型"
+			},
+			"s": [
+				"Heavy",
+				"Creatures that are Small or Tiny have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small or Tiny creature to use effectively."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "L|PHB",
+			"hint": {
+				"Light": "光明"
+			},
+			"s": [
+				"Light",
+				"A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "LD|PHB",
+			"hint": {
+				"Loading": "裝填"
+			},
+			"s": [
+				"Loading",
+				"Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "R|PHB",
+			"hint": {
+				"Reach": "觸及"
+			},
+			"s": [
+				"Reach",
+				"This weapon adds 5 feet to your reach when you attack with it. This property also determines your reach for opportunity attacks with a reach weapon."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "RLD|DMG",
+			"hint": {
+				"Reload": "裝填"
+			},
+			"s": [
+				"Reload",
+				"A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice)."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "RLD|XDMG",
+			"hint": {
+				"Reload": "裝填"
+			},
+			"s": [
+				"Reload",
+				"You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a {@variantrule Bonus Action|XPHB}."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "S|PHB",
+			"s": [
+				"special"
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "T|PHB",
+			"hint": {
+				"Thrown": "投擲"
+			},
+			"s": [
+				"Thrown",
+				"If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon. For example, if you throw a handaxe, you use your Strength, but if you throw a dagger, you can use either your Strength or your Dexterity, since the dagger has the finesse property."
+			]
+		},
+		{
+			"prop": "itemProperty",
+			"key": "V|PHB",
+			"hint": {
+				"Versatile": "多用"
+			},
+			"s": [
+				"Versatile",
+				"This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee attack."
+			]
+		}
+	]
+}

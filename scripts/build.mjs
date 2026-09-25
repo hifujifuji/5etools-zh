@@ -29,7 +29,7 @@ execFileSync("rsync", [
 
 // ---- 2. 載入翻譯 -----------------------------------------------------------
 // 全站統一用語（hazmole 與本站譯法不同者）
-const TERM_FIX = [[/睿知/g, "感知"], [/铎/g, "鐸"], [/混沌海imbo\(或譯靈薄獄、迷失域\)/g, "混沌海（Limbo，或譯靈薄獄、迷失域）"], [/暗影界|幽影界/g, "墮影冥界"], [/混沌界/g, "混沌海"], [/邪術師/g, "契術師"], [/為了拯救我自己或是其他人的生命，我什麼秘密都會說。I can't keep a secret to save my life, or anyone else's\./g, "我守不住秘密，就算攸關我或別人的性命也一樣。"], [/"name": "尺寸"/g, '"name": "體型"'], [/\{@5etools feat\|feats\.html\}/g, "{@5etools 專長|feats.html}"]];
+const TERM_FIX = [[/睿知/g, "感知"], [/揮砍/g, "劈砍"], [/借機攻擊/g, "藉機攻擊"], [/铎/g, "鐸"], [/混沌海imbo\(或譯靈薄獄、迷失域\)/g, "混沌海（Limbo，或譯靈薄獄、迷失域）"], [/暗影界|幽影界/g, "墮影冥界"], [/混沌界/g, "混沌海"], [/邪術師/g, "契術師"], [/為了拯救我自己或是其他人的生命，我什麼秘密都會說。I can't keep a secret to save my life, or anyone else's\./g, "我守不住秘密，就算攸關我或別人的性命也一樣。"], [/"name": "尺寸"/g, '"name": "體型"'], [/\{@5etools feat\|feats\.html\}/g, "{@5etools 專長|feats.html}"]];
 // 中文譯文裡沒有顯示文字的規則速查標籤：補上中文顯示名
 const QUICKREF_ZH = {"difficult terrain": "困難地形", "cover": "掩護", "vision and light": "視覺與光照", "surprised": "突襲", "adventuring gear": "冒險裝備", "multiclassing": "兼職"};
 TERM_FIX.push([/\{@quickref ([^}|]+)((?:\|[^}|]*){0,2})\}/g, (m, name, rest) => {
@@ -213,6 +213,15 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 		for (const [k, x] of Object.entries(v)) if (k !== "name") walk(x);
 	};
 	for (const {json} of loaded) for (const arr of Object.values(json)) if (Array.isArray(arr)) for (const ent of arr) { if (ent?._copy) walk(ent._copy); if (ent?._versions) walk(ent._versions); }
+}
+
+// ---- 3a⁰ʺ. 物品同調需求（i18n/req-attune.json）：改成「by 中文」，保留 by 開頭讓篩選分類不變 ----------------
+{
+	const ra = readI18n(path.join(I18N, "req-attune.json"));
+	for (const {json} of loaded) for (const p of ["item", "magicvariant", "baseitem"]) for (const it of json[p] || []) {
+		for (const k of ["reqAttune", "reqAttuneAlt"]) if (typeof it[k] === "string" && ra[it[k]]) it[k] = `by ${ra[it[k]]}`;
+		if (it.inherits) for (const k of ["reqAttune", "reqAttuneAlt"]) if (typeof it.inherits[k] === "string" && ra[it.inherits[k]]) it.inherits[k] = `by ${ra[it.inherits[k]]}`;
+	}
 }
 
 // ---- 3a⁰ʹ. 法術材料構材（i18n/spell-materials.json，完全比對） ----------------

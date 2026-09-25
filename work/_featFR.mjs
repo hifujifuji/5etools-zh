@@ -36,7 +36,7 @@ fill("feat-FRHoF", [
 ["龍痕者", null, null, "獲得此專長時，選擇強酸、寒冷、火焰、閃電或毒素。你對所選傷害類型具有{@variantrule Resistance|XPHB}。",
  "駭人之力", "當你在你的回合中執行攻擊或魔法動作的一部分而對生物造成傷害時，你可以在本回合以{@variantrule Bonus Action|XPHB}使用龍之教團新手專長的「龍之威懾」益處。"],
 ["翡翠飛地雛鳥", null, null, "你總是準備著{@spell Speak with Animals|XPHB}法術，並可以使用你擁有的任何法術欄位施展它。智力、感知或魅力為你施展此法術的施法屬性（於選擇此專長時決定）。當你以{@variantrule Ritual|XPHB}施展此法術時，其持續時間為 8 小時。",
- "搭檔合作", "當你執行{@action Help|XPHB}動作時，你可以作為同一個動作的一部分，與你 5 呎內一名自願的盟友交換位置。此移動不會引發{@action Opportunity Attack|XPHB|借機攻擊}。若該盟友處於{@condition Incapacitated|XPHB}狀態，你便無法使用此益處。"],
+ "搭檔合作", "當你執行{@action Help|XPHB}動作時，你可以作為同一個動作的一部分，與你 5 呎內一名自願的盟友交換位置。此移動不會引發{@action Opportunity Attack|XPHB|藉機攻擊}。若該盟友處於{@condition Incapacitated|XPHB}狀態，你便無法使用此益處。"],
 ["飛地魔法", null, "動物之友", "你對野獸執行{@action Influence|XPHB}動作時，屬性檢定具有{@variantrule Advantage|XPHB}。",
  "兩心一意", "你總是準備著{@spell Beast Sense|XPHB}法術。你可以不消耗法術欄位施展它一次，並在完成{@variantrule Long Rest|XPHB}時恢復以此方式施展它的能力。以此特性不消耗法術欄位施展時，它不需要{@status Concentration|XPHB}。你也可以使用你擁有的適當環階法術欄位施展此法術。此法術的施法屬性為此專長所提升的屬性。"],
 ["妖精搗蛋鬼", null, "妖精小徑行者", "當你在你的回合中執行{@action Disengage|XPHB}動作時，該回合剩餘時間內{@variantrule Difficult Terrain|XPHB}不會讓你消耗額外的移動。",

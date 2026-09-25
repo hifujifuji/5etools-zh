@@ -70,7 +70,7 @@ fill("race-EFA", [
  "作為一個{@variantrule Bonus Action|XPHB}，你可以變形以呈現更具獸性的外貌。此變身持續 1 分鐘，或直到你以{@variantrule Bonus Action|XPHB}恢復正常外貌為止。變身時，你獲得等同於你{@variantrule Proficiency|XPHB|熟練加值} 2 倍的{@variantrule Temporary Hit Points|XPHB}。你可以變身的次數等同於你的{@variantrule Proficiency|XPHB|熟練加值}，並在完成{@variantrule Long Rest|XPHB}時恢復所有已消耗的使用次數。",
  "每當你變身時，你獲得下列一個選項的益處（於選擇此種族時決定）", null, "你額外獲得 {@dice 1d6} {@variantrule Temporary Hit Points|XPHB}。變身期間，你的{@variantrule Armor Class|XPHB}獲得 +1 加值。",
  null, "變身時，以及變身期間在你的其他回合中以{@variantrule Bonus Action|XPHB}，你可以用伸長的尖牙進行{@variantrule Unarmed Strike|XPHB}。若你以此{@variantrule Unarmed Strike|XPHB}命中並造成傷害，你可以造成等同於 {@dice 1d6} 加上你力量調整值的穿刺傷害，取代{@variantrule Unarmed Strike|XPHB}的一般傷害。",
- null, "變身期間，你的{@variantrule Speed|XPHB}增加 10 呎。此外，當一個生物在你 5 呎內結束其回合時，你可以用{@variantrule Reaction|XPHB}移動至多 10 呎。此反應移動不會引發{@action Opportunity Attack|XPHB|借機攻擊}。",
+ null, "變身期間，你的{@variantrule Speed|XPHB}增加 10 呎。此外，當一個生物在你 5 呎內結束其回合時，你可以用{@variantrule Reaction|XPHB}移動至多 10 呎。此反應移動不會引發{@action Opportunity Attack|XPHB|藉機攻擊}。",
  null, "變身期間，你的感知檢定具有{@variantrule Advantage|XPHB}。此外，除非你處於{@condition Incapacitated|XPHB}狀態，否則你 30 呎內沒有任何生物能在對你的攻擊檢定上具有{@variantrule Advantage|XPHB}。"],
 [RN.Warforged, null, "中型（身高約 6–8 呎）或小型（身高約 3–4 呎），於選擇此種族時決定", "構裝韌性", "你對毒素傷害具有{@variantrule Resistance|XPHB}。你為避免或結束{@condition Poisoned|XPHB}狀態而進行的豁免檢定也具有{@variantrule Advantage|XPHB}。",
  "整合防護", "你的{@variantrule Armor Class|XPHB}獲得 +1 加值。此外，只要你還活著，你所穿上的護甲就無法違背你的意願被移除。",

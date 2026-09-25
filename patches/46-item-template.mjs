@@ -4,7 +4,7 @@
 const TPL_ZH = {
 	acid: "酸蝕", cold: "寒冷", fire: "火焰", force: "力場", lightning: "閃電", necrotic: "黯蝕",
 	poison: "毒素", psychic: "心靈", radiant: "光耀", thunder: "雷鳴",
-	bludgeoning: "鈍擊", piercing: "穿刺", slashing: "揮砍",
+	bludgeoning: "鈍擊", piercing: "穿刺", slashing: "劈砍",
 	green: "綠色", blue: "藍色", red: "紅色", white: "白色", yellow: "黃色", black: "黑色",
 	violet: "紫色", silver: "銀色", gold: "金色", orange: "橙色",
 	pearl: "珍珠", tourmaline: "電氣石", garnet: "石榴石", sapphire: "藍寶石", citrine: "黃水晶",

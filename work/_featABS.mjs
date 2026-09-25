@@ -13,7 +13,7 @@ fill("feat-ABH", [
 ["霧化逃脫恩賜", null, null, "若你的{@variantrule Hit Points|XPHB}降至 0 但未被直接殺死，你可以改為降至 1 點{@variantrule Hit Points|XPHB|生命值}，並不消耗法術欄位施展{@spell Gaseous Form|XPHB}（無需動作）。以此方式施展此法術時，你只能以自己為目標，你的{@variantrule Fly Speed|XPHB}為 20 呎，且在法術持續期間，你在每個回合開始時恢復 10 點{@variantrule Hit Points|XPHB}。此法術的施法屬性為此專長所提升的屬性。", null],
 ["黏滯迷霧", null, "起霧吧", "你總是準備著{@spell Fog Cloud|XPHB}法術。你可以不消耗法術欄位施展它，且必須完成{@variantrule Long Rest|XPHB}後才能再以此方式施展它。你也可以使用你擁有的適當環階法術欄位施展它。此法術的施法屬性為此專長所提升的屬性。",
  "攫抓之霧", "每當你施展{@spell Fog Cloud|XPHB}時，該法術{@variantrule Sphere [Area of Effect]|XPHB|球狀}範圍內的非魔法火焰會熄滅，且你與你的盟友以外的生物位於該範圍內時，{@variantrule Speed|XPHB}降低 5 呎。"],
-["甜美痛楚", null, "強韌血肉", "在你受到鈍擊、穿刺或揮砍傷害後，你可以立即執行一個{@variantrule Reaction|XPHB}，獲得對鈍擊、穿刺與揮砍傷害的{@variantrule Resistance|XPHB}，直到你的下個回合開始。" + SLR],
+["甜美痛楚", null, "強韌血肉", "在你受到鈍擊、穿刺或劈砍傷害後，你可以立即執行一個{@variantrule Reaction|XPHB}，獲得對鈍擊、穿刺與劈砍傷害的{@variantrule Resistance|XPHB}，直到你的下個回合開始。" + SLR],
 ["光明使者", null, "神聖魔法", "你學會{@spell Light|XPHB}法術，並可以不需材料成分施展它。若你已經知道這道戲法，則改為學會另一道自選的牧師戲法。此法術的施法屬性為此專長所提升的屬性。",
  "太陽光輝", "當你施展{@spell Light|XPHB}時，可以讓法術發出的光為陽光。" + LR,
  "太陽的治癒", "位於陽光中時，你可以用一個{@variantrule Bonus Action|XPHB}消耗一顆{@variantrule Hit Point Dice|XPHB}並擲骰，恢復等同於擲骰結果的{@variantrule Hit Points|XPHB}。" + SLR],

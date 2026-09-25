@@ -11,7 +11,7 @@
 ["能量抗性之恩賜","你獲得以下益處。","能量抗性","從以下傷害類型中選擇兩種，你獲得對其的{@variantrule Resistance|XPHB}：強酸、寒冷、火焰、閃電、黯蝕、毒素、心靈、光耀或雷鳴。每當你完成一次{@variantrule Long Rest|XPHB}，你可以更改選擇。","能量轉向","當你受到「能量抗性」益處所選類型之一的傷害時，你可以執行一個{@variantrule Reaction|XPHB}，將同類型的傷害導向你 60 呎內一個你能看見、且未處於{@variantrule Cover|XPHB|全掩護}後方的生物。若你這麼做，該生物必須通過一次敏捷豁免檢定（{@dc 8} + 你的體質調整值 + 你的{@variantrule Proficiency|XPHB|熟練加值}），否則受到等同於 {@dice 2d12} + 你的體質調整值的傷害。"],
 ["扭曲命運之恩賜","你獲得以下益處。","改善命運","當你或你 60 呎內的另一個生物在一次{@variantrule D20 Test|XPHB}中成功或失敗時，你可以擲 {@dice 2d4}，並將擲骰總和作為加值或減值套用到該 {@dice d20} 擲骰上。一旦使用此益處，直到你擲{@variantrule Initiative|XPHB}或完成一次{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}前都無法再次使用。"],
 ["超凡強韌之恩賜","你獲得以下益處。","強化生命","你的{@variantrule Hit Points|XPHB|生命值}上限提升 40。此外，每當你恢復{@variantrule Hit Points|XPHB}時，你可以額外恢復等同於你體質調整值的{@variantrule Hit Points|XPHB}。一旦你恢復了這些額外的{@variantrule Hit Points|XPHB}，直到你的下個回合開始前都無法再這麼做。"],
-["無敵攻勢之恩賜","你獲得以下益處。","突破防禦","你造成的鈍擊、穿刺與揮砍傷害總是無視{@variantrule Resistance|XPHB}。","壓倒性打擊","當你的攻擊檢定在 {@dice d20} 上擲出 20 時，你可以對目標造成額外傷害，數值等同於此專長所提升的屬性值。額外傷害的類型與該攻擊的類型相同。"],
+["無敵攻勢之恩賜","你獲得以下益處。","突破防禦","你造成的鈍擊、穿刺與劈砍傷害總是無視{@variantrule Resistance|XPHB}。","壓倒性打擊","當你的攻擊檢定在 {@dice d20} 上擲出 20 時，你可以對目標造成額外傷害，數值等同於此專長所提升的屬性值。額外傷害的類型與該攻擊的類型相同。"],
 ["恢復活力之恩賜","你獲得以下益處。","背水一戰","當你的{@variantrule Hit Points|XPHB}將降至 0 時，你可以改為降至 1 點{@variantrule Hit Points|XPHB|生命值}，並恢復等同於你{@variantrule Hit Points|XPHB|生命值}上限一半的{@variantrule Hit Points|XPHB}。一旦使用此益處，直到你完成一次{@variantrule Long Rest|XPHB}前都無法再次使用。","恢復活力","你擁有一個由十顆 d10 組成的骰池。作為一個{@variantrule Bonus Action|XPHB}，你可以消耗骰池中的骰子並擲出，恢復等同於擲骰總和的{@variantrule Hit Points|XPHB}。當你完成一次{@variantrule Long Rest|XPHB}時，你會取回所有已消耗的骰子。"],
 ["技能之恩賜","你獲得以下益處。","全能行家","你獲得所有技能的熟練。","專精","選擇一項你尚未具有{@variantrule Expertise|XPHB}的技能，你獲得該技能的{@variantrule Expertise|XPHB}。"],
 ["速度爆發之恩賜","你獲得以下益處。","脫逃大師","作為一個{@variantrule Bonus Action|XPHB}，你可以執行{@action Disengage|XPHB}動作，此動作同時會終止你身上的{@condition Grappled|XPHB}狀態。","迅捷","你的{@variantrule Speed|XPHB}提升 30 呎。"],
@@ -36,7 +36,7 @@
 ["巨武大師","你獲得以下益處。","重武器精通","當你在自己的回合中作為{@action Attack|XPHB}動作的一部分，以具有{@itemProperty H|XPHB|重型}屬性的武器命中一個生物時，你可以使該武器對目標造成額外傷害，數值等同於你的{@variantrule Proficiency|XPHB|熟練加值}。","劈砍","在你以近戰武器造成{@variantrule Critical Hit|XPHB}，或以近戰武器將一個生物的{@variantrule Hit Points|XPHB}降至 0 後，你可以立即作為一個{@variantrule Bonus Action|XPHB}，以同一把武器進行一次攻擊。"],
 ["治療師","你獲得以下益處。","戰地醫護","若你擁有{@item Healer's Kit|XPHB}，你可以消耗其一次使用次數，並作為一個{@action Utilize|XPHB}動作照料你 5 呎內的一個生物。該生物可以消耗一顆{@variantrule Hit Point Dice|XPHB}，然後由你擲出該骰子。該生物恢復等同於擲骰結果 + 你{@variantrule Proficiency|XPHB|熟練加值}的{@variantrule Hit Points|XPHB}。","治療重擲","每當你擲骰以決定你透過法術或此專長的「戰地醫護」益處所恢復的{@variantrule Hit Points|XPHB}時，若骰子擲出 1，你可以重擲該骰子，且必須使用新的結果。"],
 ["重度著甲","你獲得以下益處。","護甲受訓","你獲得重型護甲的受訓。"],
-["重甲大師","你獲得以下益處。","傷害減免","當你穿著重型護甲時被攻擊命中，該攻擊對你造成的所有鈍擊、穿刺與揮砍傷害都會減少等同於你{@variantrule Proficiency|XPHB|熟練加值}的數值。"],
+["重甲大師","你獲得以下益處。","傷害減免","當你穿著重型護甲時被攻擊命中，該攻擊對你造成的所有鈍擊、穿刺與劈砍傷害都會減少等同於你{@variantrule Proficiency|XPHB|熟練加值}的數值。"],
 ["激勵統御","你獲得以下益處。","鼓舞表演","當你完成一次{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB}時，你可以進行一場鼓舞人心的表演：演說、歌唱或舞蹈。當你這麼做時，選擇至多六名位於你 30 呎內並目睹表演的盟友（可包括你自己）。每個被選擇的生物獲得等同於你角色等級 + 你以此專長提升之屬性調整值的{@variantrule Temporary Hit Points|XPHB}。"],
 ["攔截","當一個你能看見的生物以攻擊檢定命中你 5 呎內的另一個生物時，你可以執行一個{@variantrule Reaction|XPHB}，使目標受到的傷害減少 {@dice 1d10} + 你的{@variantrule Proficiency|XPHB|熟練加值}。你必須持有一面{@item Shield|XPHB}或一把簡易或軍用武器，才能使用此{@variantrule Reaction|XPHB}。"]
 ]

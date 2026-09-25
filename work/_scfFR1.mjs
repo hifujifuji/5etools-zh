@@ -20,7 +20,7 @@ export const M1 = [
 {1: "你或你 30 呎內一個你能看見的生物，獲得等同於 {@dice 1d4} 加上你魅力調整值的{@variantrule Temporary Hit Points|XPHB}。"},
 {1: "月亮學院的起源可追溯至月之海群島的古老德魯伊結社，他們委託此傳統的第一批吟遊詩人記錄群島及其人民的故事。此學院的吟遊詩人汲取群島的妖精魔法與月井的原初之力，來鼓舞盟友、保護自然世界，並激發他們的吟遊詩人創作。"},
 {2: "大地在你神聖斬擊的目標周圍隆起。目標陷入{@condition Grappled|XPHB}狀態（脫逃 DC 等於你的法術豁免 DC）。處於{@condition Grappled|XPHB}狀態時，目標陷入{@condition Restrained|XPHB}狀態。"},
-{2: "你{@variantrule Teleportation|XPHB|傳送}到你 30 呎內一個你能看見的未佔據空間，並化為半虛體的形態，持續到你的下個回合結束。處於此形態時，你擁有鈍擊、穿刺與揮砍傷害的{@variantrule Resistance|XPHB}，並對{@condition Grappled|XPHB}、{@condition Prone|XPHB}與{@condition Restrained|XPHB}狀態具有{@variantrule Immunity|XPHB}。"},
+{2: "你{@variantrule Teleportation|XPHB|傳送}到你 30 呎內一個你能看見的未佔據空間，並化為半虛體的形態，持續到你的下個回合結束。處於此形態時，你擁有鈍擊、穿刺與劈砍傷害的{@variantrule Resistance|XPHB}，並對{@condition Grappled|XPHB}、{@condition Prone|XPHB}與{@condition Restrained|XPHB}狀態具有{@variantrule Immunity|XPHB}。"},
 {1: `選擇死亡三神之一：{@deity Bane|Faerûnian|FRHoF}、{@deity Bhaal|Faerûnian|FRHoF}或{@deity Myrkul|Faerûnian|FRHoF}。你獲得一種傷害類型的{@variantrule Resistance|XPHB}，以及施展一個戲法的能力，詳見下表；智力是你施展此戲法的施法屬性。當你完成${LR}時，你可以改變你的選擇。`},
 {2: "你神聖斬擊的目標受到額外 {@damage 2d4} 火焰傷害，且火焰從目標跳到你 30 呎內另一個你能看見的生物身上。第二個生物也受到 {@damage 2d4} 火焰傷害。"},
 {1: "在你施展{@spell Divine Smite|XPHB}後，你可以立即消耗一次{@classFeature Channel Divinity|Paladin|XPHB|3|XPHB}的使用次數，並喚起下列其中一種效果。"},
