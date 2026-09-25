@@ -1,7 +1,7 @@
 // 從建置結果撈回已合併的中文（依路徑對應），給 _fillidx 當底：import base from "./_fromdist.mjs"; base(batch) → [{j: zh}]
 import fs from "fs";
 import path from "path";
-import {TEXT_KEYS, SKIP_KEYS} from "../scripts/merge.mjs";
+import {isTextKey, SKIP_KEYS} from "../scripts/merge.mjs";
 import {makeKeyFns, loadSubclassFullNames} from "../scripts/keys.mjs";
 const cjk = /[㐀-鿿]/;
 const DIST = "dist/data";
@@ -16,10 +16,10 @@ function collect (ent) {
 		if (v && typeof v === "object") for (const [k, x] of Object.entries(v)) {
 			if (k === "name") { if (p.length && typeof x === "string") out.push({path: [...p, "name"], isName: true}); continue; }
 			if (k.startsWith("_") || k === "source" || SKIP_KEYS.has(k)) continue;
-			walk(x, [...p, k], TEXT_KEYS.has(k));
+			walk(x, [...p, k], isTextKey(k, x));
 		}
 	};
-	for (const [k, x] of Object.entries(ent)) { if (k === "name" || k.startsWith("_") || SKIP_KEYS.has(k)) continue; walk(x, [k], TEXT_KEYS.has(k)); }
+	for (const [k, x] of Object.entries(ent)) { if (k === "name" || k.startsWith("_") || SKIP_KEYS.has(k)) continue; walk(x, [k], isTextKey(k, x)); }
 	return out;
 }
 const getAt = (o, p) => p.reduce((a, k) => a?.[k], o);
@@ -29,18 +29,31 @@ const load = () => ents ||= fs.readdirSync(path.join(DIST, "class")).filter(f =>
 	return ["class", "subclass", "classFeature", "subclassFeature"].flatMap(p => (j[p] || []).map(e => [p, e]));
 });
 import {UPSTREAM} from "../scripts/util.mjs";
-const loadFrom = dir => [
+// 其他類別：依 prop 載入對應檔案
+const EXTRA = {
+	item: ["items.json"], baseitem: ["items-base.json"], magicvariant: ["magicvariants.json"], itemGroup: ["items.json"],
+	condition: ["conditionsdiseases.json"], disease: ["conditionsdiseases.json"], status: ["conditionsdiseases.json"],
+	optionalfeature: ["optionalfeatures.json"], deity: ["deities.json"], reward: ["rewards.json"], trap: ["trapshazards.json"], hazard: ["trapshazards.json"],
+	object: ["objects.json"], vehicle: ["vehicles.json"], legendaryGroup: ["bestiary/legendarygroups.json"], itemFluff: ["fluff-items.json"],
+};
+const extraFiles = (dir, props) => [...new Set(props.flatMap(p => p === "monster" || p === "monsterFluff"
+	? fs.readdirSync(path.join(dir, "bestiary")).filter(f => p === "monster" ? /^bestiary-.*\.json$/.test(f) : /^fluff-bestiary-.*\.json$/.test(f)).map(f => path.join("bestiary", f))
+	: /^spell/.test(p) ? fs.readdirSync(path.join(dir, "spells")).filter(f => /^spells-.*\.json$/.test(f)).map(f => path.join("spells", f))
+	: EXTRA[p] || []))].map(f => path.join(dir, f));
+const loadFrom = (dir, props = []) => [
 	...fs.readdirSync(path.join(dir, "class")).filter(f => /^(fluff-)?class-/.test(f)).map(f => path.join(dir, "class", f)),
 	path.join(dir, "fluff-races.json"), path.join(dir, "fluff-backgrounds.json"),
+	...extraFiles(dir, props),
 ].flatMap(f => {
 	const j = JSON.parse(fs.readFileSync(f));
-	return ["class", "subclass", "classFeature", "subclassFeature", "classFluff", "subclassFluff", "raceFluff", "backgroundFluff"].flatMap(p => (j[p] || []).map(e => [p, e]));
+	return ["class", "subclass", "classFeature", "subclassFeature", "classFluff", "subclassFluff", "raceFluff", "backgroundFluff", ...props].flatMap(p => (j[p] || []).map(e => [p, e]));
 });
 let up = null;
 export default batch => {
 	const items = JSON.parse(fs.readFileSync(`work/${batch}.en.json`)).items;
-	up ||= loadFrom(path.join(UPSTREAM, "data"));
-	const dist = loadFrom(DIST);
+	const props = [...new Set(items.map(it => it.prop))];
+	up = loadFrom(path.join(UPSTREAM, "data"), props);
+	const dist = loadFrom(DIST, props);
 	return items.map(it => {
 		const ups = up.filter(([p, e]) => p === it.prop && key(p, e) === it.key);
 		const ds = dist.filter(([p, e]) => p === it.prop && key(p, e) === it.key);

@@ -1,0 +1,390 @@
+{
+	"batch": "it-tce-3",
+	"items": [
+		{
+			"prop": "item",
+			"key": "Far Realm Shard|TCE",
+			"s": [
+				"Far Realm Shard",
+				"This writhing crystal is steeped in the warped essence of the Far Realm. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.",
+				"When you use a Metamagic option on a spell while you are holding or wearing the shard, you can cause a slimy tentacle to rip through the fabric of reality and strike one creature you can see within 30 feet of you. The creature must succeed on a Charisma saving throw against your spell save DC or take {@damage 3d6} psychic damage and become {@condition frightened} of you until the start of your next turn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Feywild Shard|TCE",
+			"s": [
+				"Feywild Shard",
+				"This warm crystal glints with the sunset colors of the Feywild sky and evokes whispers of emotional memory. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.",
+				"When you use a Metamagic option on a spell while you are holding or wearing the shard, you can roll on the {@table Wild Magic Surge|PHB} table in the {@book Player's Handbook|PHB}. If the result is a spell, it is too wild to be affected by your Metamagic, and if it normally requires {@status concentration}, it doesn't require {@status concentration} in this case; the spell lasts for its full duration.",
+				"If you don't have the Wild Magic Sorcerous Origin, once this property is used to roll on the {@table Wild Magic Surge|PHB} table, it can't be used again until the next dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Fire Absorbing Tattoo|TCE",
+			"s": [
+				"Fire Absorbing Tattoo",
+				"{#itemEntry Absorbing Tattoo|TCE}"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Force Absorbing Tattoo|TCE",
+			"s": [
+				"Force Absorbing Tattoo",
+				"{#itemEntry Absorbing Tattoo|TCE}"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Fulminating Treatise|TCE",
+			"s": [
+				"Fulminating Treatise",
+				"This thick, scorched spellbook reeks of smoke and ozone, and sparks of energy crackles along the edges of its pages. When found, the book contains the following spells: {@spell contingency}, {@spell fireball}, {@spell gust of wind}, {@spell Leomund's tiny hut}, {@spell magic missile}, {@spell thunderwave}, and {@spell wall of force}. It functions as a spellbook for you.",
+				"While you are holding the book, you can use it as a spellcasting focus for your wizard spells.",
+				"The book has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. You can use the charges in the following ways while holding it:",
+				"If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the evocation school.",
+				"When one creature you can see takes damage from an evocation spell you cast, you can use your reaction and expend 1 charge to deal an extra {@damage 2d6} force damage to the creature and knock the creature {@condition prone} if it is Large or smaller."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Ghost Step Tattoo|TCE",
+			"hint": {
+				"Tattoo Attunement": "刺青同調"
+			},
+			"s": [
+				"Ghost Step Tattoo",
+				"Produced by a special needle, this tattoo shifts and wavers on the skin, parts of it appearing blurred.",
+				"Tattoo Attunement",
+				"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
+				"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.",
+				"Ghostly Form",
+				"The tattoo has 3 charges, and it regains all expended charges daily at dawn. As a bonus action while the tattoo is on your skin, you can expend 1 of the tattoo's charges to become incorporeal until the end of your next turn. For the duration, you gain the following benefits:",
+				"You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
+				"You can't be {@condition grappled} or {@condition restrained}.",
+				"You can move through creatures and solid objects as if they were {@quickref difficult terrain||3}. If you end your turn in a solid object, you take {@damage 1d10} force damage. If the effect ends while you are inside a solid object, you instead are shunted to the nearest unoccupied space, and you take {@damage 1d10} force damage for every 5 feet traveled."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Guardian Emblem|TCE",
+			"s": [
+				"Guardian Emblem",
+				"This emblem is the symbol of a deity or a spiritual tradition. As an action, you can attach the emblem to a suit of armor or a shield or remove it.",
+				"The emblem has 3 charges. When you or a creature you can see within 30 feet of you suffers a critical hit while you're wearing the armor or wielding the shield that bears the emblem, you can use your reaction to expend 1 charge to turn the critical hit into a normal hit instead.",
+				"The emblem regains all expended charges daily at dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Heart Weaver's Primer|TCE",
+			"s": [
+				"Heart Weaver's Primer",
+				"This pristine book smells faintly of a random scent you find pleasing. When found, the book contains the following spells: {@spell antipathy/sympathy}, {@spell charm person}, {@spell dominate person}, {@spell enthrall}, {@spell hypnotic pattern}, {@spell modify memory}, and {@spell suggestion}. It functions as a spellbook for you.",
+				"While you are holding the book, you can use it as a spellcasting focus for your wizard spells.",
+				"The book has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. You can use the charges in the following ways while holding it:",
+				"If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the enchantment school.",
+				"When you cast an enchantment spell, you can expend 1 charge to impose disadvantage on the first saving throw one target makes against the spell."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Illuminator's Tattoo|TCE",
+			"hint": {
+				"Tattoo Attunement": "刺青同調"
+			},
+			"s": [
+				"Illuminator's Tattoo",
+				"Produced by a special needle, this magic tattoo features beautiful calligraphy, images of writing implements, and the like.",
+				"Tattoo Attunement",
+				"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
+				"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.",
+				"Magical Scribing",
+				"While this tattoo is on your skin, you can write with your fingertip as if it were an ink pen that never runs out of ink.",
+				"As an action, you can touch a piece of writing up to one page in length and speak a creature's name. The writing becomes {@condition invisible} to everyone other than you and the named creature for the next 24 hours. Either of you can dismiss the invisibility by touching the script (no action required). Once used, this action can't be used again until the next dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Libram of Souls and Flesh|TCE",
+			"s": [
+				"Libram of Souls and Flesh",
+				"With covers made of skin and fittings of bone, this tome is cold to the touch, and it whispers faintly. When found, the book contains the following spells, which are wizard spells for you while you are attuned to the book: {@spell animate dead}, {@spell circle of death}, {@spell false life}, {@spell finger of death}, {@spell speak with dead}, {@spell summon undead|TCE}, and {@spell vampiric touch}. It functions as a spellbook for you.",
+				"While you are holding the book, you can use it as a spellcasting focus for your wizard spells.",
+				"The book has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. You can use the charges in the following ways while holding it:",
+				"If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the necromancy school.",
+				"As an action, you can expend 1 charge to take on a semblance of undeath for 10 minutes. For the duration, you take on a deathly appearance, and undead creatures are indifferent to you, unless you have damaged them. You also appear undead to all outward inspection and to spells used to determine the target's status. The effect ends if you deal damage or force a creature to make a saving throw."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Lifewell Tattoo|TCE",
+			"hint": {
+				"Tattoo Attunement": "刺青同調",
+				"Necrotic Resistance": "黯蝕抗性"
+			},
+			"s": [
+				"Lifewell Tattoo",
+				"Produced by a special needle, this magic tattoo features symbols of life and rebirth.",
+				"Tattoo Attunement",
+				"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
+				"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.",
+				"Necrotic Resistance",
+				"You have resistance to necrotic damage.",
+				"Life Ward",
+				"When you would be reduced to 0 hit points, you drop to 1 hit point instead. Once used, this property can't be used again until the next dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Lightning Absorbing Tattoo|TCE",
+			"s": [
+				"Lightning Absorbing Tattoo",
+				"{#itemEntry Absorbing Tattoo|TCE}"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Luba's Tarokka of Souls|TCE",
+			"hint": {
+				"Random Properties": "隨機屬性",
+				"Spells": "法術"
+			},
+			"s": [
+				"Luba's Tarokka of Souls",
+				"Not all lingering spirits are tragic souls, lost on their way to the hereafter. Some languish as prisoners, souls so wicked mortals dare not free them upon an unsuspecting afterlife.",
+				"Created by a figure of Vistani legend, Luba's Tarokka of Souls shaped the destiny of countless heroes. The prophecies of this deck of cards also revealed great evils and guided its creator into the path of nefarious forces. Untold times the deck's creator, Mother Luba, narrowly escaped doom, spared only by her keen insights. But even for her, not all wickedness could be escaped. In the most dire cases, Mother Luba managed to ensnare beings of pure evil amid the strands of fate, imprisoning them within her {@deck tarokka deck|CoS}. There these foul spirits dwell still, trapped within a nether-realm hidden amid shuffling cards, waiting for fate to turn foul—as it inevitably will.",
+				"Like all {@deck Tarokka Deck|CoS|tarokka decks}, the {@i Tarokka of Souls} is a lavishly illustrated collection of fifty-four cards, comprising the fourteen cards of the high deck and forty other cards divided into four suits: coins, glyphs, stars, and swords.",
+				"Random Properties",
+				"The artifact has the following random properties, which you can determine by rolling on the tables in the \"Artifacts\" section of the {@book Dungeon Master's Guide|DMG}:",
+				"2 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental} properties",
+				"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial} properties",
+				"Spells",
+				"While holding the deck, you can use an action to cast one of the following spells (save {@dc 18}) from it: {@spell comprehend languages}, {@spell detect evil and good}, {@spell detect magic}, {@spell detect poison and disease}, {@spell locate object}, or {@spell scrying}. Once you use the deck to cast a spell, you can't cast that spell again from it until the next dawn.",
+				"Enduring Vision",
+				"While holding the deck, you automatically succeed on Constitution saving throws made to maintain your {@status concentration} on divination spells.",
+				"Twist of Fate",
+				"As an action, you can draw a card from the deck and twist the fortune of another creature you can see within 15 feet of you. Choose one of the following effects:",
+				"Weal",
+				"The creature has advantage on attack rolls, ability checks, and saving throws for the next hour.",
+				"Woe",
+				"The creature has disadvantage on attack rolls, ability checks, and saving throws for the next hour.",
+				"The deck can be used in this way twice, and you regain all expended uses at the next dawn.",
+				"Prisoners of Fate",
+				"Whenever you use the Twist of Fate property, there is a chance that one of the souls trapped in the deck escapes. Roll {@dice d100} and consult the Souls of the Tarokka table. If you roll one of the high cards, the soul associated with it escapes. You can find its statistics in the {@book Monster Manual|MM}. If you roll a soul that has already escaped, roll again.",
+				"Souls of the Tarokka",
+				"d100",
+				"Card",
+				"Soul",
+				"Artifact",
+				"Beast",
+				"Broken",
+				"Darklord",
+				"Donjon",
+				"Executioner",
+				"Ghost",
+				"Horseman",
+				"Innocent",
+				"Marionette",
+				"Mists",
+				"Raven",
+				"Seer",
+				"Tempter",
+				"The released soul appears at a random location within {@dice 10d10} miles of you and terrorizes the living. Until the released soul is destroyed, it gains the benefit of a weal from the deck's Twist of Fate property, and both you and the original target of Twist of Fate suffer the effect of woe.",
+				"Shuffling Fate",
+				"If you go 7 days without using the Twist of Fate property, your attunement to Luba's Tarokka of Souls ends, and you can't attune to it again until after another creature uses Twist of Fate on you.",
+				"Destroying the Deck",
+				"Luba's Tarokka of Souls can be destroyed only if all fourteen souls within are released and destroyed. This reveals a fifteenth soul, a {@creature lich}, that inhabits the Nether card, which appears only when the fourteen souls are defeated. If this ancient entity is destroyed, the Nether card vanishes and the deck becomes a normal {@deck tarokka deck|CoS}, with no special properties, but it includes a new card of the DM's design.",
+				"Mother Luba and the Vistani",
+				"The creator of the Tarokka of Souls, Mother Luba was one of the most influential leaders of the Vistani. For untold generations, the Vistani have wandered the Shadowfell, which includes terrifying demiplanes like the vampire-haunted realm of Barovia. These travelers have learned many secrets of these domains and encountered countless others wandering amid the Shadowfell's horrors. Most Vistani bands accept well-intentioned wayfarers from diverse walks and of disparate origins, embracing any who seek to find a home amid the endless roads and vistas hidden amid the mists.",
+				"A halfling Vistani, Mother Luba led one of the largest groups of Vistani in the Shadowfell. She hailed from the same world that Count Strahd von Zarovich and Madam Eva came from, and she created a community of kindness and resilience-ever rare to find in the Plane of Shadow. She led her people in welcoming strangers, feeding the hungry, and defying the cruel. She and Madam Eva were once friends, until Madam Eva began bargaining with the creatures of the night. \"We may wander amid the shadows,\" Mother Luba said. \"But we must ever serve as a light to our fellow travelers.\"",
+				"Some years ago, Mother Luba disappeared into the mists, leaving behind only the Tarokka of Souls. It is said that if you draw the Mists card from it, you can hear the whispers of her kind voice."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Lyre of Building|TCE",
+			"s": [
+				"Lyre of Building",
+				"While holding this {@item lyre|PHB}, you can cast {@spell mending} as an action. You can also play the {@item lyre|PHB} as a reaction when an object or a structure you can see within 300 feet of you takes damage, causing it to be immune to that damage and any further damage of the same type until the start of your next turn.",
+				"In addition, you can play the {@item lyre|PHB} as an action to cast {@spell fabricate}, {@spell move earth}, {@spell passwall}, or {@spell summon construct|TCE}, and that spell can't be cast from it again until the next dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Masquerade Tattoo|TCE",
+			"hint": {
+				"Tattoo Attunement": "刺青同調",
+				"Disguise Self": "易容術"
+			},
+			"s": [
+				"Masquerade Tattoo",
+				"Produced by a special needle, this magic tattoo appears on your body as whatever you desire.",
+				"Tattoo Attunement",
+				"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
+				"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.",
+				"Fluid Ink",
+				"As a bonus action, you can shape the tattoo into any color or pattern and move it to any area of your skin. Whatever form it takes, it is always obviously a tattoo. It can range in size from no smaller than a copper piece to an intricate work of art that covers all your skin.",
+				"Disguise Self",
+				"As an action, you can use the tattoo to cast the {@spell disguise self} spell ({@dc 13} to discern the disguise). Once the spell is cast from the tattoo, it can't be cast from the tattoo again until the next dawn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Mighty Servant of Leuk-o|TCE",
+			"s": [
+				"Mighty Servant of Leuk-o",
+				"Named for the warlord who infamously employed it, the {@creature Mighty Servant of Leuk-o|TCE} is a fantastically powerful, 10-foot-tall machine that turns into an animate construct when piloted. Crafted of a gleaming black alloy of unknown origin, the servant is often described as a combination of a disproportioned dwarf and an oversized beetle. The servant contains enough space for 1 ton of cargo and a crew compartment within, from which up to two Medium creatures can control it-and potentially execute a spree of unstoppable destruction.",
+				"Tales of the servant's origins involve more conjecture than fact, often referring to otherworldly beings, the mysterious Barrier Peaks in Oerth, and the supposedly related device known as the {@i Machine of Lum the Mad}. The best details on the device's origins and operation can be found in the {@i Mind of Metal}, a tome of artificer's secrets that connects the device to the traditions of the lost Olman people, and which was written by Lum the Mad's several times over granddaughter, Lum the Maestro, while she reconstructed the long disassembled Mighty Servant of Leuk-o.",
+				"Dangerous Attunement",
+				"Two creatures can be attuned to the servant at a time. If a third creature tries to attune to it, nothing happens.",
+				"The servant's controls are accessed by a hatch in its upper back, which is easily opened while there are no creatures attuned to the artifact.",
+				"Attuning to the artifact requires two hours, which can be undertaken as part of a long rest, during which time you must be inside the servant, interacting with its controls. While crew members are attuning themselves, any creature or structure outside and within 50 feet of the servant has a {@chance 25} chance of being accidentally targeted by one of its Destructive Fist attacks once during the attunement. This process must be undergone every time a creature attunes itself to the artifact.",
+				"Controlling the Servant",
+				"While any creatures are attuned to the artifact, attuned creatures can open the hatch as easily as any other door. Other creatures can open the hatch as an action with a successful {@dc 25} Dexterity check using {@item thieves' tools|PHB}. A {@spell knock} spell cast on the hatch also opens it until the start of the caster's next turn.",
+				"A creature can enter or exit through the hatch by spending 10 feet of movement. Those inside the servant have {@quickref Cover||3||total cover} from effects originating outside it. The controls within it allow creatures to see outside without obstruction.",
+				"While you are inside the servant, you can command it by using the controls. During your turn (for either attuned creature), you can command it in the following ways:",
+				"Open or close the hatch (no action required, once per turn)",
+				"Move the servant up to its speed (no action required)",
+				"As an action, you can command the servant to take one of the actions in its stat block or some other action.",
+				"When a creature provokes an opportunity attack from the servant, you can use your reaction to command the servant to make one Destructive Fist attack against that creature.",
+				"While there are no attuned creatures inside the servant, it is an inert object.",
+				"Ghost in the Machine",
+				"Upon his death, the soul of the mighty warlord Leuk-o was drawn into the artifact and has become its animating force. The servant has been known to attack or move of its own accord, particularly if doing so will cause destruction. Once every 24 hours, the servant, at the DM's discretion, takes one action while uncrewed.",
+				"If the servant loses half of its hit points or more, each creature attuned to it must succeed on a {@dc 20} Wisdom saving throw or be {@condition charmed} for 24 hours. While {@condition charmed} in this way, the creature goes on a destructive spree, seeking to destroy structures and attack any unattuned creatures within sight of the servant, starting with those threatening the artifact-preferably using the servant, if possible.",
+				"Self-Destruct",
+				"By inputting a specific series of lever pulls and button presses, the servant's two crew members can cause it to explode. The self-destruct code is not revealed to crew members when they attune to the artifact. If the code is discovered (the DM determines how), it requires two attuned crew members to be inside the servant and spend their actions on 3 consecutive rounds performing the command. Should the crew members begin the process of entering the code, though, the servant uses its Ghost in the Machine property and turns the crew members against each other.",
+				"If the crew members successfully implement the code, at the end of the third round, the servant explodes. Every creature in a 100-foot-radius sphere centered on the servant must make a {@dc 25} Dexterity saving throw. On a failed save, a creature takes 87 ({@damage 25d6}) force damage, 87 ({@damage 25d6}) lightning damage, and 87 ({@damage 25d6}) thunder damage. On a successful save, a creature takes half as much damage. Objects and structures in the area take triple damage. Creatures inside the servant are slain instantly and leave behind no remains.",
+				"This does not destroy the servant permanently. Rather, {@dice 2d6} days later, its parts—left arm, left leg, right arm, right leg, lower torso, and upper torso—drop from the sky in random places within 1,000 miles of the explosion. If brought within 5 feet of one another, the pieces reconnect and reform the servant.",
+				"Destroying the Servant",
+				"The servant can be destroyed in two ways. After it has self-destructed, its disconnected pieces can be melted down in one of the forge-temples of its ancient Olman creators. Alternatively, if the servant strikes the Machine of Lum the Mad, both artifacts explode in an eruption that is three times the size and three times the damage as the servant's self-destruct property."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Nature's Mantle|TCE",
+			"hint": {
+				"Nature's Mantle": "自然斗篷"
+			},
+			"s": [
+				"Nature's Mantle",
+				"This cloak shifts color and texture to blend with the terrain surrounding you. While wearing the cloak, you can use it as a spellcasting focus for your druid and ranger spells.",
+				"While you are in an area that is lightly obscured, you can {@action Hide} as a bonus action even if you are being directly observed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Necrotic Absorbing Tattoo|TCE",
+			"s": [
+				"Necrotic Absorbing Tattoo",
+				"{#itemEntry Absorbing Tattoo|TCE}"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Outer Essence Shard|TCE",
+			"s": [
+				"Outer Essence Shard",
+				"This flickering crystal holds the essence of an Outer Plane. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.",
+				"Roll a {@dice d4} and consult the Outer Essence Shards table to determine the shard's essence and property. When you use a Metamagic option on a spell while you are holding or wearing the shard, you can use that property.",
+				"Outer Essence Shards",
+				"d4",
+				"Property",
+				"Shard",
+				"Lawful",
+				"Chaotic",
+				"Good",
+				"Evil"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Outer Essence Shard (Chaotic)|TCE",
+			"hint": {
+				"Property": "屬性"
+			},
+			"s": [
+				"Outer Essence Shard (Chaotic)",
+				"This flickering crystal holds the essence of an Outer Plane. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.",
+				"When you use a Metamagic option on a spell while you are holding or wearing the shard, you can use that property.",
+				"Property",
+				"Choose one creature who takes damage from the spell. That target has disadvantage on attack rolls and ability checks made before the start of your next turn."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Outer Essence Shard (Evil)|TCE",
+			"hint": {
+				"Property": "屬性"
+			},
+			"s": [
+				"Outer Essence Shard (Evil)",
+				"This flickering crystal holds the essence of an Outer Plane. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.",
+				"When you use a Metamagic option on a spell while you are holding or wearing the shard, you can use that property.",
+				"Property",
+				"Choose one creature who takes damage from the spell. That target takes an extra {@damage 3d6} necrotic damage."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Outer Essence Shard (Good)|TCE",
+			"hint": {
+				"Property": "屬性"
+			},
+			"s": [
+				"Outer Essence Shard (Good)",
+				"This flickering crystal holds the essence of an Outer Plane. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.",
+				"When you use a Metamagic option on a spell while you are holding or wearing the shard, you can use that property.",
+				"Property",
+				"You or one creature of your choice that you can see within 30 feet of you gains {@dice 3d6} temporary hit points."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Outer Essence Shard (Lawful)|TCE",
+			"hint": {
+				"Property": "屬性"
+			},
+			"s": [
+				"Outer Essence Shard (Lawful)",
+				"This flickering crystal holds the essence of an Outer Plane. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.",
+				"When you use a Metamagic option on a spell while you are holding or wearing the shard, you can use that property.",
+				"Property",
+				"You can end one of the following conditions affecting yourself or one creature you can see within 30 feet of you: {@condition charmed}, {@condition blinded}, {@condition deafened}, {@condition frightened}, {@condition poisoned}, or {@condition stunned}."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Planecaller's Codex|TCE",
+			"s": [
+				"Planecaller's Codex",
+				"The pages of this book are bound in fiend hide, and its cover is embossed with a diagram of the Great Wheel of the multiverse. When found, the book contains the following spells: {@spell banishment}, {@spell find familiar}, {@spell gate}, {@spell magic circle}, {@spell planar binding}, and {@spell summon elemental|TCE}. It functions as a spellbook for you.",
+				"While you are holding the book, you can use it as a spellcasting focus for your wizard spells.",
+				"The book has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. You can use the charges in the following ways while holding it:",
+				"If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the conjuration school.",
+				"When you cast a conjuration spell that summons or creates one creature, you can expend 1 charge to grant that creature advantage on attack rolls for 1 minute."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Poison Absorbing Tattoo|TCE",
+			"s": [
+				"Poison Absorbing Tattoo",
+				"{#itemEntry Absorbing Tattoo|TCE}"
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Prosthetic Limb|TCE",
+			"hint": {
+				"Prosthetic Limb": "義肢"
+			},
+			"s": [
+				"Prosthetic Limb",
+				"This item replaces a lost limb-a hand, an arm, a foot, a leg, or a similar body part. While the prosthetic is attached, it functions identically to the part it replaces. You can detach or reattach it as an action, and it can't be removed against your will. It detaches if you die."
+			]
+		}
+	]
+}

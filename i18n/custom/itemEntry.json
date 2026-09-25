@@ -1,4 +1,45 @@
 {
+	"Absorbing Tattoo|TCE": {
+		"name": "Absorbing Tattoo",
+		"source": "TCE",
+		"entriesTemplate": [
+			"由一根特殊的針所製成，這個魔法刺青的圖案強調一種顏色（{{item.detail1}}）。",
+			{
+				"type": "entries",
+				"name": "刺青同調",
+				"entries": [
+					"要與此物品同調，你將針抵在你希望刺青出現的皮膚上，並在整個同調過程中持續壓著針。同調完成時，針會化為成為刺青的墨水，刺青便出現在皮膚上。",
+					"若你與刺青的同調結束，刺青會消失，針則重新出現在你的空間中。"
+				],
+				"ENG_name": "Tattoo Attunement"
+			},
+			{
+				"type": "entries",
+				"name": "傷害抗性",
+				"entries": [
+					"當刺青在你皮膚上時，你具有對{{item.resist}}傷害的抗性。"
+				],
+				"ENG_name": "Damage Resistance"
+			},
+			{
+				"type": "entries",
+				"name":"傷害吸收",
+				"entries": [
+					"當你受到{{item.resist}}傷害時，你可以使用你的反應，對該次傷害獲得免疫，並恢復等於你原本會受到之傷害一半的生命值。此反應使用後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Damage Absorption"
+			}
+		],
+		"ENG_name": "Absorbing Tattoo"
+	},
+	"Armor of Resistance|DMG": {
+		"name": "抗性護甲",
+		"source": "DMG",
+		"entriesTemplate": [
+			"穿著這件護甲時，你具有對{{item.resist}}傷害的抗性。"
+		],
+		"ENG_name": "Armor of Resistance"
+	},
 	"Armor of Resistance|XDMG": {
 		"name": "抗性護甲",
 		"source": "XDMG",
@@ -6,6 +47,16 @@
 			"穿著此護甲時，你對 {{getFullImmRes item.resist}} 傷害具有{@variantrule Resistance|XPHB}。"
 		],
 		"ENG_name": "Armor of Resistance"
+	},
+	"Chromatic Rose|WBTW": {
+		"name": "Chromatic Rose",
+		"source": "WBtW",
+		"entriesTemplate": [
+			"持握這朵玫瑰時，它會{{item.detail1}}，作為一種無害的視覺效果。",
+			"以莖持握玫瑰時，你獲得對{{item.resist}}傷害的抗性。若你會從單一來源受到超過 10 點{{item.resist}}傷害（在套用抗性之後），玫瑰便會分解，而你改為不受傷害。",
+			"作為一個動作，你可以吹散玫瑰的花瓣，產生一道 20 呎錐形的{{item.resist}}。錐形內的每個生物必須進行一次 {@dc 15} 體質豁免檢定，失敗時受到 {@damage 3d10} 點{{item.resist}}傷害，成功時傷害減半。使用此屬性會摧毀玫瑰。"
+		],
+		"ENG_name": "Chromatic Rose"
 	},
 	"Dragon Scale Mail|XDMG": {
 		"name": "龍鱗甲",
@@ -17,8 +68,16 @@
 		],
 		"ENG_name": "Dragon Scale Mail"
 	},
+	"Grenade|DMG": {
+		"name": "Grenade",
+		"source": "DMG",
+		"entriesTemplate": [
+			"作為一個動作，角色可以將手榴彈扔向至多 60 呎外的一個點。使用榴彈發射器時，角色可以將手榴彈發射到至多 120 呎外。"
+		],
+		"ENG_name": "Grenade"
+	},
 	"Grenade|XDMG": {
-		"name": "手榴彈",
+		"name": "Grenade",
 		"source": "XDMG",
 		"entriesTemplate": [
 			"作為一個動作，你可以將手榴彈投向至多 60 呎外的一點，或使用榴彈發射器將手榴彈射向至多 1,000 呎外的一點。手榴彈在該點爆炸，在 20 呎半徑的{@variantrule Sphere [Area of Effect]|XPHB|球形}範圍內產生特定效果。"
@@ -36,6 +95,14 @@
 		],
 		"ENG_name": "Ioun Stone"
 	},
+	"Potion of Resistance|DMG": {
+		"name": "抗性藥水",
+		"source": "DMG",
+		"entriesTemplate": [
+			"當你喝下這瓶藥水時，你在 1 小時內獲得對{{item.resist}}傷害的抗性。"
+		],
+		"ENG_name": "Potion of Resistance"
+	},
 	"Potion of Resistance|XDMG": {
 		"name": "抗性藥水",
 		"source": "XDMG",
@@ -43,6 +110,14 @@
 			"喝下這瓶藥水時，你在 1 小時內對 {{getFullImmRes item.resist}} 傷害具有{@variantrule Resistance|XPHB}。"
 		],
 		"ENG_name": "Potion of Resistance"
+	},
+	"Ring of Resistance|DMG": {
+		"name": "抗性戒指",
+		"source": "DMG",
+		"entriesTemplate": [
+			"佩戴這枚戒指時，你具有對{{item.resist}}傷害的抗性。戒指上鑲著{{item.detail1}}。"
+		],
+		"ENG_name": "Ring of Resistance"
 	},
 	"Ring of Resistance|XDMG": {
 		"name": "抗性戒指",
