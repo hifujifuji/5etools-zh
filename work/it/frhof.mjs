@@ -1,0 +1,38 @@
+import F, {NEW} from "./_p.mjs";
+Object.assign(NEW, {"Adventurer's Ring": "冒險者戒指", "Axe Beak": "斧喙鳥", "Bright Fungal Cloak": "發光真菌斗篷", "Covered Wagon": "篷車", "Cult of the Dragon Trinket": "龍之教團小玩意",
+	"Desert Clothing": "沙漠服裝", "Devil Mask": "魔鬼面具", "Emerald Enclave Trinket": "翡翠飛地小玩意", "Flying Snake": "飛蛇", "Garb of Light and Shadow": "光影服飾", "Genie Robe": "燈神長袍",
+	"Harper Trinket": "豎琴手小玩意", "Locking Spellbook": "附鎖法術書", "Lords' Alliance Trinket": "領主聯盟小玩意", "Monster Camouflage": "怪物偽裝服", "Order of the Gauntlet Trinket": "鐵手套騎士團小玩意",
+	"Prosthetic Limb": "義肢", "Purple Dragon Knight Trinket": "紫龍騎士小玩意", "Red Wizard Trinket": "紅袍法師小玩意", "Sled Dog": "雪橇犬", "Thayan Spell Tattoo": "賽法術刺青",
+	"Warm Fungal Clothing": "保暖真菌服裝", "Winter Camouflage": "冬季偽裝服", "Zhentarim Trinket": "桑達林小玩意"});
+const T = (name, arr) => ({1: `${name}小玩意`, 2: "1d6", ...Object.fromEntries(arr.map((s, i) => [4 + i, s]))});
+const m = [
+/*0*/ {1: "這枚戒指的蓋子打開時，戒指會產生一道不發熱也不消耗燃料的火焰。它在 20 呎半徑內發出{@variantrule Bright Light|XPHB|明亮光線}，並在額外 20 呎內發出{@variantrule Dim Light|XPHB|微光}。作為一個{@variantrule Bonus Action|XPHB}，你可以蓋上蓋子熄滅火焰，或再次打開它。"},
+/*1*/ {1: "使用{@creature Axe Beak|XMM}的數據。"},
+/*2*/ {1: "穿著發光真菌斗篷時，你可以執行一個{@variantrule Bonus Action|XPHB}將它收起或展開。斗篷展開時，它在 5 呎半徑內發出{@variantrule Bright Light|XPHB|明亮光線}，並在額外 5 呎內發出{@variantrule Dim Light|XPHB|微光}。",
+ 2: "發光真菌斗篷中縫有一磅真菌。這些真菌可以當作食物食用。所有真菌被吃完後，斗篷會變成一套普通的{@item Traveler's Clothes|XPHB}。"},
+/*3*/ {1: "這種載具是以耐用帆布覆蓋的{@item Wagon|XPHB}。在這種載具內乘坐的生物具有{@variantrule Cover|XPHB|四分之三掩護}。"},
+/*4*/ T("龍之教團", ["一條繫在皮繩上的龍爪墜飾", "裝在小黃銅罐中的屍龍骨灰", "一張未知龍巢的地圖", "一顆刻有龍語符文的黑珍珠", "一滴保存在琥珀中的龍血", "一小塊紫色絲綢"]),
+/*5*/ {1: "當你穿著沙漠服裝且沒有穿著中甲或重甲時，你會自動通過對抗{@hazard extreme heat|XDMG}效果的豁免檢定。"},
+/*6*/ {1: "當你戴著魔鬼面具時，其他生物為辨識你的真實身分或意圖而進行的智力（{@skill Investigation|XPHB}）與感知（{@skill Insight|XPHB}）檢定具有{@variantrule Disadvantage|XPHB|劣勢}。"},
+/*7*/ T("翡翠飛地", ["一對以永不枯萎的橡葉製成的耳環", "一座以細枝製成的迷你小屋模型", "一隻裝在瓶中、發著綠光的螢火蟲", "一個貼在耳邊時會發出樹葉沙沙聲的葫蘆", "一隻繫在皮帶上的保存兔腳", "一根形似精靈語符文的鹿角"]),
+/*8*/ {1: "寵物飛蛇使用{@creature Flying Snake|XMM}的數據。"},
+/*9*/ {1: "這套服飾能吸引來自某個歡愉領域（例如暮光宮廷或夏之宮廷）的精類。穿著這套服飾時，你在為影響與該歡愉領域有關之精類而進行的屬性檢定上具有{@variantrule Advantage|XPHB|優勢}。"},
+/*10*/ {1: "這件長袍能吸引與某個特定元素位面（氣、土、火、水）有關的元素生物。穿著燈神長袍時，你在為影響與該位面有關之元素生物而進行的屬性檢定上具有{@variantrule Advantage|XPHB|優勢}。"},
+/*11*/ T("豎琴手", ["一支壞掉的口琴", "一個有暗格的粉盒", "一根 2 呎長的孔雀羽毛", "一枚兩面都是正面的魔術硬幣", "一副紅色鏡片的眼鏡", "一張為未知樂器所寫的樂譜卷軸"]),
+/*12*/ {1: "這本 100 頁的皮面典籍可以作為法術書使用。它以一把附有鑰匙的鎖鎖住。作為一個{@action Utilize|XPHB}動作，生物可以嘗試使用{@item Thieves' Tools|XPHB}撬鎖，成功通過一次 DC 15 敏捷（{@skill Sleight of Hand|XPHB}）檢定即可。"},
+/*13*/ T("領主聯盟", ["一塊戰敗軍隊旗幟的碎片", "一副刻有一匹名駒名字的馬銜與籠頭", "一把曾用於一場著名戰役的斷劍", "一位離奇失蹤的領主的左手手套", "一個關節可動的玩具馬與騎士", "一片印有不明領主紋章的肩甲"]),
+/*14*/ {1: "一套怪物偽裝服看起來像一隻野獸或怪獸，例如{@creature owlbear|XMM}。要看穿你的偽裝，生物必須執行{@action Study|XPHB}動作檢查你的外表，並成功通過一次 DC 10 智力（{@skill Investigation|XPHB}或{@skill Nature|XPHB}）檢定。若該生物位於你 30 呎內，它在此檢定上具有{@variantrule Advantage|XPHB|優勢}；若你做了任何你所偽裝的怪物做不到的事，它會自動通過此檢定。"},
+/*15*/ T("鐵手套騎士團", ["一根重如鉛的白色羽毛", "一個以彩繪玻璃製成的空瓶", "一支點綴著金箔的錐形香", "一條絲綢眼罩", "一副手銬的其中一半", "一支失去光澤的灑聖水器"]),
+/*16*/ {},
+/*17*/ T("紫龍騎士", ["一隻紫晶龍幼龍的爪子", "一塊切割成龍眼形狀的普通紫水晶", "一支只有紫晶龍聽得見的信號哨", "一顆包在琥珀中的知更鳥蛋", "一塊會讓磨過的刀刃微微閃亮的磨刀石", "一片從被擊敗的長槍比武對手身上取下的槍盤"]),
+/*18*/ T("紅袍法師", ["一根以石化紫杉製成的多瘤魔杖", "一個裝著某種未知動物保存心臟的玻璃罐", "一個以黑曜石雕成的獨角獸小雕像", "一根以你自己的一塊骨頭製成的刺青針", "一個蠍子形狀的青銅護符", "一把以深紅色鋼鐵製成的剃刀"]),
+/*19*/ {1: "雪橇犬使用{@creature Wolf|XMM}的數據（見《怪物圖鑑》）。單獨拉雪橇的雪橇犬在拉雪橇 1 小時後必須進行一次{@variantrule Short Rest|XPHB|短休}；否則，牠會獲得 1 級{@condition Exhaustion|XPHB|力竭}。"},
+/*20*/ {1: "這個魔法刺青蘊含一道由刺青製作者選擇的 1–3 環法術的精華。當刺青在你身上時，你總是準備著相關的法術，並可以使用你擁有的任何適當環階的法術位施展該法術。若你擁有施法或契約魔法特性，該法術使用你的施法屬性；否則，若法術需要豁免檢定或攻擊檢定，法術豁免 DC 為 13，攻擊加值為 +5。若你與刺青的{@variantrule Attunement|XPHB|同調}結束，刺青便會消失。",
+ 2: "你也可以不使用法術位與法術構材施展該法術一次。以此方式施展法術後，刺青便會消失。", 3: "刺上賽法術刺青",
+ 4: "賽的魔法刺青藝術被其施行者嚴加守護，因此賽法術刺青無法像其他魔法物品一樣被製作。要學習如何刺上賽法術刺青，你必須在紅袍法師中擁有 50 以上的聲望值。",
+ 5: "要刺上賽法術刺青，你必須熟練{@skill Arcana|XPHB}技能與{@item Calligrapher's Supplies|XPHB}，並在刺青的每一天都準備著該法術。你也必須備妥該法術所需的任何材料構材；若法術會消耗其材料構材，則在你完成刺青時消耗。刺上一個賽法術刺青所需的{@book 時間與金錢|XDMG|6|Time and Cost}，與抄寫同等環階的{@item Spell Scroll|XDMG}相同。"},
+/*21*/ {1: "當你穿著保暖真菌服裝時，你會自動通過對抗極端寒冷效果的豁免檢定。極端寒冷的規則見《地下城主指南》第 3 章。真菌服裝中縫有一磅真菌。這些真菌可以當作食物食用。所有真菌被吃完後，它會變成一套普通的{@item Traveler's Clothes|XPHB}。"},
+/*22*/ {1: "當你在適當的環境中穿著冬季偽裝服時，你在敏捷（{@skill Stealth|XPHB}）檢定上具有{@variantrule Advantage|XPHB|優勢}。"},
+/*23*/ T("桑達林", ["一把刻有你名字的斷匕首", "一隻總是轉向面對你的玻璃義眼", "一顆金色的蛇牙", "一枚偽造的金幣", "一根水晶刺青針", "一張不會起皺、撕裂或燃燒的羊皮紙契約"]),
+];
+F("it-frhof", m);

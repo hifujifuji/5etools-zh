@@ -4,7 +4,7 @@ Object.assign(NEW, {"Accounting and Valuation of All Things": "萬物帳目與�
 	"Infernal Plate Armor": "煉獄板甲", "Knife of Stolen Resistance": "竊抗之刀", "Ranseur of Torture": "折磨三叉戟", "Ring of Collecting": "收藏戒指", "Ring of the Copycat": "模仿者戒指",
 	"Ring of Treachery": "背信戒指", "Ruby Rod of Asmodeus": "阿斯莫德紅寶石權杖", "Sage's Mirror": "賢者之鏡", "Scourge of Shadow": "暗影之鞭笞", "Skull of Selfish Knowledge": "自私知識之顱",
 	"Soul Coin": "靈魂幣", "True-Ice Shards (Dagger)": "真冰碎片（匕首）", "True-Ice Shards (Rapier)": "真冰碎片（刺劍）", "Vial of Greed": "貪婪小瓶", "Wrought-Iron Tower": "鍛鐵之塔"});
-const CORR = "此物品會腐化。見「{@adventure Infernal Item Corruption|CoA|16|煉獄物品腐化}」一節。";
+const CORR = "此物品會腐化。見「{@adventure 煉獄物品腐化|CoA|16|Infernal Item Corruption}」一節。";
 const RC = "只有{@spell Remove Curse}法術能讓你結束與此物品的同調。";
 const RND = "具有以下隨機屬性：";
 const TIS = (w) => ({

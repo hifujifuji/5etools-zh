@@ -980,6 +980,26 @@
 		],
 		"ENG_name": "+3 Wraps of Unarmed Prowess"
 	},
+	"Abracadabrus|IDROTF": {
+		"name": "阿布拉卡達布拉箱",
+		"source": "IDRotF",
+		"page": 314,
+		"rarity": "very rare",
+		"wondrous": true,
+		"weight": 25,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d20}",
+		"charges": 20,
+		"entries": [
+			"阿布拉卡達布拉箱是一個華麗、鑲滿寶石的木箱，空箱時重 25 磅。它的內部空間是一個邊長 1½ 呎的立方體。",
+			"箱子有 20 點充能。生物可以使用一個動作觸碰箱子闔上的蓋子，並在說出一或多件總價值 1 gp 或更低的非魔法物體（包括原料、食物與液體）的同時消耗箱子的 1 點充能。只要說出的物體都放得進箱子，且箱子裡沒有其他東西，這些物體就會以魔法出現在箱子中。例如，箱子可以變出一盤草莓、一碗熱湯、一壺水、一隻填充動物玩偶，或一袋二十個鐵蒺藜。箱子變出的食物與飲料很美味，若 24 小時內沒有吃掉就會腐壞。箱子創造的寶石與貴金屬會在 1 分鐘後消失。",
+			"箱子每天黎明恢復 {@dice 1d20} 點已消耗的充能。若此物品的最後 1 點充能被消耗，擲一顆 {@dice d20}。若擲出 1，箱子會失去魔法（成為一個普通的箱子），其上的寶石會化為塵土。"
+		],
+		"miscTags": [
+			"CF/W"
+		],
+		"ENG_name": "Abracadabrus"
+	},
 	"Accounting and Valuation of All Things|COA": {
 		"name": "萬物帳目與估價",
 		"source": "CoA",
@@ -1099,6 +1119,25 @@
 			"穿上或脫下高蹺需要 1 分鐘。它們讓穿戴的任何類人生物身高增加 2 到 5 呎。每支高蹺重 8 磅，完全收合時長 1 呎。"
 		],
 		"ENG_name": "Adjustable Stilts"
+	},
+	"Adventurer's Ring|FRHOF": {
+		"name": "冒險者戒指",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "RG|XDMG",
+		"rarity": "common",
+		"entries": [
+			"這枚戒指的蓋子打開時，戒指會產生一道不發熱也不消耗燃料的火焰。它在 20 呎半徑內發出{@variantrule Bright Light|XPHB|明亮光線}，並在額外 20 呎內發出{@variantrule Dim Light|XPHB|微光}。作為一個{@variantrule Bonus Action|XPHB}，你可以蓋上蓋子熄滅火焰，或再次打開它。"
+		],
+		"light": [
+			{
+				"bright": 20,
+				"dim": 40
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Adventurer's Ring"
 	},
 	"Adze of Annam|BGG": {
 		"name": "安南之錛",
@@ -2333,6 +2372,36 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Atlas of Endless Horizons"
+	},
+	"Axe Beak|FRHOF": {
+		"name": "斧喙鳥",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "MNT|XPHB",
+		"rarity": "none",
+		"value": 5000,
+		"entries": [
+			"使用{@creature Axe Beak|XMM}的數據。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Axe Beak"
+	},
+	"Axe Beak|IDROTF": {
+		"name": "斧喙鳥",
+		"source": "IDRotF",
+		"page": 20,
+		"reprintedAs": [
+			"Axe Beak|FRHoF"
+		],
+		"type": "MNT",
+		"rarity": "none",
+		"value": 5000,
+		"entries": [
+			"{@creature axe beak}張開的腳趾讓牠能在雪地上奔跑，牠能負載的重量與騾子一樣多。在十鎮可以用 50 gp 買到一隻馴化的斧喙鳥。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Axe Beak"
 	},
 	"Axe of the Dwarvish Lords|DMG": {
 		"name": "矮人王之斧",
@@ -4029,6 +4098,32 @@
 		"hasFluffImages": true,
 		"ENG_name": "Bigby's Beneficent Bracelet"
 	},
+	"Black Crystal Tablet|WDMM": {
+		"name": "黑水晶石板",
+		"source": "WDMM",
+		"page": 284,
+		"rarity": "legendary",
+		"reqAttune": "by a creature that has proficiency in the {@skill Arcana} skill",
+		"reqAttuneTags": [
+			{
+				"skillProficiency": "arcana"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"任何與這塊石板同調的生物，都必須在它下一次長休結束時進行一次 {@dc 20} 感知豁免檢定。豁免失敗時，該生物會罹患一種隨機的長期瘋狂（見{@book Dungeon Master's Guide|dmg}第 8 章的「{@book 瘋狂|dmg|8|Madness}」）。",
+			"作為一個動作，與黑水晶石板同調的生物可以使用它施展{@spell eyebite}或{@spell gate}（此法術創造的傳送門只會通往遠域）。石板被用來施展法術後，在下一個黎明之前無法再次使用。"
+		],
+		"attachedSpells": {
+			"daily": {
+				"1": [
+					"eyebite",
+					"gate"
+				]
+			}
+		},
+		"ENG_name": "Black Crystal Tablet"
+	},
 	"Black Dragon Scale Mail|XDMG": {
 		"name": "黑龍鱗甲",
 		"source": "XDMG",
@@ -4530,6 +4625,30 @@
 		],
 		"ENG_name": "Blanket"
 	},
+	"Blast Scepter|WDMM": {
+		"name": "爆破權杖",
+		"source": "WDMM",
+		"page": 310,
+		"type": "RD|DMG",
+		"scfType": "arcane",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"focus": [
+			"Sorcerer",
+			"Warlock",
+			"Wizard"
+		],
+		"entries": [
+			"爆破權杖可以作為奧術法器使用。",
+			"與爆破權杖同調的人獲得火焰與閃電傷害抗性，並可以使用一個動作用它以 4 環法術施展{@spell thunderwave}（豁免 {@dc 16}），不需消耗法術位。"
+		],
+		"attachedSpells": {
+			"will": [
+				"thunderwave#4"
+			]
+		},
+		"ENG_name": "Blast Scepter"
+	},
 	"Blasted Goggles|BMT": {
 		"name": "爆裂護目鏡",
 		"source": "BMT",
@@ -4844,7 +4963,7 @@
 				"name": "開悟魔法",
 				"type": "entries",
 				"entries": [
-					"一旦你讀過並研究過這本書，你為施展牧師或聖武士法術而消耗的任何法術位，都視為高一環的法術位。"
+					"一旦你讀過並研究過這本書，你為施展牧師或聖騎士法術而消耗的任何法術位，都視為高一環的法術位。"
 				],
 				"ENG_name": "Enlightened Magic"
 			},
@@ -5584,12 +5703,25 @@
 				"type": "entries",
 				"name": "腐化",
 				"entries": [
-					"此物品會腐化。見「{@adventure Infernal Item Corruption|CoA|16|煉獄物品腐化}」一節。"
+					"此物品會腐化。見「{@adventure 煉獄物品腐化|CoA|16|Infernal Item Corruption}」一節。"
 				],
 				"ENG_name": "Corrupting"
 			}
 		],
 		"ENG_name": "Bracers of Asmodeus"
+	},
+	"Bracers of Celerity|PABTSO": {
+		"name": "迅捷護腕",
+		"source": "PaBTSO",
+		"page": 217,
+		"rarity": "rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這對輕盈的青銅護腕內襯柔軟的紫色天鵝絨，並刻有漩渦圖案。",
+			"穿戴這對護腕時，你所有的速度增加 10 呎，且你在為避免或結束自身麻痺或束縛狀態而進行的豁免檢定上具有優勢。"
+		],
+		"ENG_name": "Bracers of Celerity"
 	},
 	"Bracers of Defense|XDMG": {
 		"name": "防禦護腕",
@@ -5749,6 +5881,28 @@
 			"泡泡內含 1 小時份的可呼吸空氣。泡泡每天黎明恢復所有已消耗的空氣。"
 		],
 		"ENG_name": "Breathing Bubble"
+	},
+	"Bright Fungal Cloak|FRHOF": {
+		"name": "發光真菌斗篷",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 2500,
+		"entries": [
+			"穿著發光真菌斗篷時，你可以執行一個{@variantrule Bonus Action|XPHB}將它收起或展開。斗篷展開時，它在 5 呎半徑內發出{@variantrule Bright Light|XPHB|明亮光線}，並在額外 5 呎內發出{@variantrule Dim Light|XPHB|微光}。",
+			"發光真菌斗篷中縫有一磅真菌。這些真菌可以當作食物食用。所有真菌被吃完後，斗篷會變成一套普通的{@item Traveler's Clothes|XPHB}。"
+		],
+		"light": [
+			{
+				"bright": 5,
+				"dim": 10
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Bright Fungal Cloak"
 	},
 	"Bronze crown|XDMG": {
 		"name": "青銅王冠",
@@ -6266,7 +6420,7 @@
 				"type": "entries",
 				"name": "腐化",
 				"entries": [
-					"此物品會腐化。見「{@adventure Infernal Item Corruption|CoA|16|煉獄物品腐化}」一節。"
+					"此物品會腐化。見「{@adventure 煉獄物品腐化|CoA|16|Infernal Item Corruption}」一節。"
 				],
 				"ENG_name": "Corrupting"
 			}
@@ -6324,6 +6478,31 @@
 			"Implements - Uncommon|XDMG"
 		],
 		"ENG_name": "Cap of Water Breathing"
+	},
+	"Cape of Enlargement|PABTSO": {
+		"name": "巨大化斗篷",
+		"source": "PaBTSO",
+		"page": 217,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這件灰紫色斗篷的下擺以銀線繡著古老的符文。",
+			"斗篷有 3 點充能。穿著斗篷時，你可以使用一個附贈動作消耗 1 點充能讓自己變大，獲得以下益處：",
+			{
+				"type": "list",
+				"items": [
+					"你的體型增大一級——例如從中型變為大型。若沒有足夠的空間讓你的體型增大一級，你改為變成可用空間內可能的最大體型。",
+					"你在力量檢定與力量豁免檢定上具有優勢。",
+					"當你以武器或徒手打擊進行的攻擊檢定命中時，你可以將你的熟練加值加到該次攻擊的傷害上。"
+				]
+			},
+			"這些益處持續 10 分鐘，或直到你使用另一個附贈動作解除它們。斗篷每天黎明恢復 {@dice 1d3} 點已消耗的充能。"
+		],
+		"ENG_name": "Cape of Enlargement"
 	},
 	"Cape of the Mountebank|XDMG": {
 		"name": "江湖郎中披肩",
@@ -6529,6 +6708,79 @@
 		"value": 1500,
 		"ENG_name": "Cart"
 	},
+	"Cartographer's Map Case|AI": {
+		"name": "製圖師地圖筒",
+		"source": "AI",
+		"page": 20,
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			{
+				"type": "entries",
+				"name": "捷徑地圖",
+				"entries": [
+					"在等級 3 時，你的地圖筒成為一件普通魔法物品。除了存放一般地圖之外，你的製圖師地圖筒還可以用來產生一張標示捷徑的特殊地圖。你可以使用你的動作進行一次 {@dc 15} 感知（{@skill Perception}）檢定，成功時會在你的製圖師地圖筒中找到一張標示相關捷徑的地圖。當你沿著該路線前進時，你的旅行時間減半。若你的檢定成功 5 點或更多，地圖會附有地形註記，讓你在接下來 1 小時內為穿越地圖所示區域而進行的下一次屬性檢定具有優勢。你使用此特性後，在你完成一次長休之前無法再次使用。"
+				],
+				"ENG_name": "Map of Shortcuts"
+			},
+			{
+				"type": "entries",
+				"name": "當下地圖",
+				"entries": [
+					"從等級 3 開始，你可以使用一個動作進行一次 {@dc 15} 感知（{@skill Perception}）檢定，並搜索你的製圖師地圖筒，找出一張與你當前任務相關、或能啟發新任務的地圖。成功時，你會找到一張標有一個顯著地標的地圖。地圖上有該地標 1 哩內自然地形的資訊。你使用此特性後，在七天後的黎明之前無法再次使用。",
+					{
+						"type": "table",
+						"caption": "可能的地圖任務地標",
+						"colLabels": [
+							"d8",
+							"地標"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"傑拉德·史密斯的古老石棺"
+							],
+							[
+								"2",
+								"一棵標著「這棵樹」的樹"
+							],
+							[
+								"3",
+								"「我那也是熊洞的有錢兄弟的最後安息之地」"
+							],
+							[
+								"4",
+								"一片名為「有點搖晃尖塔群」的山峰"
+							],
+							[
+								"5",
+								"荒郊野外一個永遠流出純淨清水的非魔法水龍頭"
+							],
+							[
+								"6",
+								"一個滿是會尖叫的生物發光蠕蟲的洞穴"
+							],
+							[
+								"7",
+								"方圓十哩內鬧鬼最嚴重的森林"
+							],
+							[
+								"8",
+								"一大堆石頭，視線範圍內沒有其他石頭"
+							]
+						]
+					}
+				],
+				"ENG_name": "Map of the Moment"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Cartographer's Map Case"
+	},
 	"Carved bone statuette|XDMG": {
 		"name": "骨雕小像",
 		"source": "XDMG",
@@ -6564,6 +6816,23 @@
 		"rarity": "none",
 		"value": 75000,
 		"ENG_name": "Carved wooden harp with ivory inlay and zircon gems"
+	},
+	"Cauldron of Plenty|IDROTF": {
+		"name": "豐饒大鍋",
+		"source": "IDRotF",
+		"page": 314,
+		"rarity": "rare",
+		"wondrous": true,
+		"weight": 50,
+		"entries": [
+			"這口大鍋以厚實的銅製成，因年代久遠而泛綠。它寬 4 呎，鍋口直徑 3½ 呎，重 50 磅，最多可容納 30 加侖的液體。它鼓起的側面浮雕著手持湯杓、閒適休憩的薩堤爾與寧芙。大鍋附有蓋子與側把手，並以五隻防止它翻倒的小爪足立著。",
+			"若將水倒進大鍋並攪拌 1 分鐘，水會變成一鍋豐盛的熱燉菜，每加侖可供至多四人吃一頓營養的餐點。燉菜在大鍋中會保持熱度，取出後則自然冷卻。儘管燉菜很燙，大鍋的外側仍可安全觸碰。",
+			"大鍋可以煮三次燉菜。之後它會停止運作，直到下一個黎明恢復所有使用次數。"
+		],
+		"miscTags": [
+			"CF/W"
+		],
+		"ENG_name": "Cauldron of Plenty"
 	},
 	"Cauldron of Rebirth|TCE": {
 		"name": "重生之釜",
@@ -6761,6 +7030,18 @@
 		],
 		"ENG_name": "Cheese (wedge)"
 	},
+	"Chest of Preserving|WDMM": {
+		"name": "保鮮箱",
+		"source": "WDMM",
+		"page": 139,
+		"rarity": "common",
+		"wondrous": true,
+		"weight": 25,
+		"entries": [
+			"食物與其他易腐物品放在保鮮箱內時不會老化或腐壞。這個箱子長 2½ 呎、寬 1½ 呎、高 1 呎，有一個半圓桶形的蓋子。箱子有一把鎖，可以使用{@item thieves' tools|PHB}並成功通過一次 {@dc 15} 敏捷檢定來撬開。砸壞鎖或箱子的任何其他部分會使它失去魔法。"
+		],
+		"ENG_name": "Chest of Preserving"
+	},
 	"Chest|XPHB": {
 		"name": "箱子",
 		"source": "XPHB",
@@ -6812,6 +7093,43 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Chime of Opening"
+	},
+	"Chronolometer|AI": {
+		"name": "時計儀",
+		"source": "AI",
+		"page": 220,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"bonusSavingThrow": "+1",
+		"entries": [
+			"與這個裝置同調時，你的智力豁免檢定獲得 +1 加值。你第一次與時計儀同調時，選擇一種你不知道的語言。之後在與裝置同調期間，你便懂得那種語言。",
+			{
+				"type": "entries",
+				"name": "時間大盜",
+				"entries": [
+					"在你的回合開始時，擲一顆 {@dice d6}（不需要動作）。若擲出 1–3，你讓時間變慢，在你的回合獲得一個額外動作，並使你的速度加倍直到回合結束。若擲出 4–6，你前往未來警告自己即將發生的事。你下一次豁免檢定、攻擊檢定或屬性檢定失敗時，你可以重擲該檢定並採用任一結果。你使用時計儀的這項特性後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Time Bandit"
+			},
+			{
+				"type": "entries",
+				"name": "命運交換",
+				"entries": [
+					"作為你 30 呎內一個你能看見的生物受到傷害時的反應，若當時是該生物的回合，它獲得一個額外動作；若不是，它可以立即採取一個動作。你使用時計儀的這項特性後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Fate Swap"
+			},
+			{
+				"type": "entries",
+				"name": "整體的一部分",
+				"entries": [
+					"當這個零件未安裝在{@item Orrery of the Wanderer|AI}中時，它的魔法可能會時有時無地運作，或產生無法預測的副作用，由 DM 決定。"
+				],
+				"ENG_name": "Part of a Whole"
+			}
+		],
+		"ENG_name": "Chronolometer"
 	},
 	"Chrysoberyl|XDMG": {
 		"name": "金綠寶石",
@@ -6885,6 +7203,23 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Circlet of Blasting"
+	},
+	"Circlet of Human Perfection|WDMM": {
+		"name": "完美人類頭環",
+		"source": "WDMM",
+		"page": 30,
+		"type": "OTH",
+		"rarity": "uncommon",
+		"reqAttune": "by a humanoid",
+		"reqAttuneTags": [
+			{
+				"creatureType": "humanoid"
+			}
+		],
+		"entries": [
+			"完美人類頭環會將與它同調的佩戴者變成一名身高體重中等、外貌吸引人的人類。頭環會選擇該形態的外貌特徵，例如年齡、性別、膚色、髮色與聲音。除了體型之外，佩戴者的數據與種族特性不會改變，佩戴者穿戴或攜帶的物品也不會。取下頭環會結束此效果。"
+		],
+		"ENG_name": "Circlet of Human Perfection"
 	},
 	"Citrine|XDMG": {
 		"name": "黃水晶",
@@ -7229,6 +7564,20 @@
 		],
 		"ENG_name": "Clothes of Mending"
 	},
+	"Clothing, cold weather|IDROTF": {
+		"name": "禦寒衣物",
+		"source": "IDRotF",
+		"page": 20,
+		"type": "G",
+		"rarity": "none",
+		"weight": 5,
+		"value": 1000,
+		"entries": [
+			"這套服裝包括一件厚重的毛皮大衣或斗篷，裡面是多層羊毛衣物，還有一頂毛皮襯裡的帽子或兜帽、護目鏡，以及毛皮襯裡的皮靴與手套。",
+			"只要禦寒衣物保持乾燥，穿著者就會自動通過對抗{@hazard extreme cold}效果的豁免檢定。"
+		],
+		"ENG_name": "Clothing, cold weather"
+	},
 	"Cloves|XDMG": {
 		"name": "丁香",
 		"source": "XDMG",
@@ -7269,6 +7618,56 @@
 			}
 		],
 		"ENG_name": "Coiling Grasp Tattoo"
+	},
+	"Coin of Decisionry|AI": {
+		"name": "決策硬幣",
+		"source": "AI",
+		"page": 22,
+		"rarity": "varies",
+		"wondrous": true,
+		"entries": [
+			"從等級 2 開始，你的決策硬幣成為一件普通魔法物品。當你擲這枚硬幣時，它總是以收購股份有限公司標誌朝下落地，「反面」會出現一則訊息。在下表擲一顆 {@dice d4} 決定訊息。",
+			{
+				"type": "table",
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"colLabels": [
+					"d4",
+					"決定"
+				],
+				"rows": [
+					[
+						"1",
+						"有利可圖"
+					],
+					[
+						"2",
+						"品牌吸引力"
+					],
+					[
+						"3",
+						"不確定"
+					],
+					[
+						"4",
+						"毀滅性"
+					]
+				]
+			},
+			"這枚硬幣完全沒有任何預言能力，你使用它時的結果是隨機的。但其他人都不知道這件事。當你 10 呎內的一個生物擲這枚硬幣時（在它強大的預測能力被盡責地解說過之後），你可以使用一個附贈動作施展你的意志控制它的運作，選擇它落地後出現的結果，以此溫和地誘導使用者採取特定的行動方針。擲硬幣的生物可以成功通過一次 {@dc 13} 感知（{@skill Insight}）檢定來察覺你的操縱。",
+			{
+				"type": "entries",
+				"name": "更好的勝算",
+				"entries": [
+					"當你達到等級 3 時，你的決策硬幣獲得一些真正的預言力量，成為一件非普通魔法物品。除了其一般功能之外，你可以使用一個動作，在思考一項特定計畫或目標時擲兩次決策硬幣，記下兩個隨機結果。若你成功通過一次 {@dc 15} 智力（{@skill Arcana}）檢定，你會得知兩個結果中哪一個更適用於該行動方針。硬幣的此屬性在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Better Odds"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Coin of Decisionry"
 	},
 	"Coin of Delving|EGW": {
 		"name": "探深硬幣",
@@ -7494,6 +7893,21 @@
 		"value": 50,
 		"ENG_name": "Cotton Cloth (1 sq. yd.)"
 	},
+	"Covered Wagon|FRHOF": {
+		"name": "篷車",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "VEH|XPHB",
+		"rarity": "none",
+		"weight": 1300,
+		"value": 25000,
+		"entries": [
+			"這種載具是以耐用帆布覆蓋的{@item Wagon|XPHB}。在這種載具內乘坐的生物具有{@variantrule Cover|XPHB|四分之三掩護}。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Covered Wagon"
+	},
 	"Cow|XDMG": {
 		"name": "母牛",
 		"source": "XDMG",
@@ -7503,6 +7917,19 @@
 		"rarity": "none",
 		"value": 1000,
 		"ENG_name": "Cow"
+	},
+	"Crampons|IDROTF": {
+		"name": "冰爪",
+		"source": "IDRotF",
+		"page": 20,
+		"type": "G",
+		"rarity": "none",
+		"weight": 0.25,
+		"value": 200,
+		"entries": [
+			"冰爪是一塊綁在靴底、帶有尖刺的金屬板。穿著冰爪的生物在{@hazard slippery ice}上移動時不會倒地（{@condition prone}）。"
+		],
+		"ENG_name": "Crampons"
 	},
 	"Crook of Rao|TCE": {
 		"name": "拉奧牧杖",
@@ -8093,6 +8520,57 @@
 		"hasFluffImages": true,
 		"ENG_name": "Cubic Gate"
 	},
+	"Cult of the Dragon Trinket|FRHOF": {
+		"name": "龍之教團小玩意",
+		"source": "FRHoF",
+		"page": 152,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"entries": [
+			{
+				"type": "table",
+				"caption": "龍之教團小玩意",
+				"colLabels": [
+					"1d6",
+					"小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"一條繫在皮繩上的龍爪墜飾"
+					],
+					[
+						"2",
+						"裝在小黃銅罐中的屍龍骨灰"
+					],
+					[
+						"3",
+						"一張未知龍巢的地圖"
+					],
+					[
+						"4",
+						"一顆刻有龍語符文的黑珍珠"
+					],
+					[
+						"5",
+						"一滴保存在琥珀中的龍血"
+					],
+					[
+						"6",
+						"一小塊紫色絲綢"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"ENG_name": "Cult of the Dragon Trinket"
+	},
 	"Daern's Instant Fortress|XDMG": {
 		"name": "戴恩的瞬間要塞",
 		"source": "XDMG",
@@ -8113,6 +8591,52 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Daern's Instant Fortress"
+	},
+	"Dagger of Blindsight|WDMM": {
+		"name": "盲視匕首",
+		"source": "WDMM",
+		"page": 86,
+		"baseItem": "dagger|phb",
+		"type": "M",
+		"rarity": "rare",
+		"reqAttune": true,
+		"weight": 1,
+		"weaponCategory": "simple",
+		"property": [
+			"F",
+			"L",
+			"T"
+		],
+		"range": "20/60",
+		"dmg1": "1d4",
+		"dmgType": "P",
+		"entries": [
+			"這件珍稀魔法物品需要同調。與它同調的生物獲得範圍 30 呎的{@sense blindsight}。這把匕首有鋸齒狀的刃緣，柄頭嵌著一顆黑珍珠。"
+		],
+		"ENG_name": "Dagger of Blindsight"
+	},
+	"Dagger of Guitar Solos|WDMM": {
+		"name": "吉他獨奏匕首",
+		"source": "WDMM",
+		"page": 228,
+		"baseItem": "dagger|phb",
+		"type": "M",
+		"rarity": "unknown (magic)",
+		"weight": 1,
+		"value": 75000,
+		"weaponCategory": "simple",
+		"property": [
+			"F",
+			"L",
+			"T"
+		],
+		"range": "20/60",
+		"dmg1": "1d4",
+		"dmgType": "P",
+		"entries": [
+			"這把卓爾製的匕首飾有銀色蛛網細工。被敲擊或用來打擊敵人時，它會以魔法演奏一小段吉他獨奏。"
+		],
+		"ENG_name": "Dagger of Guitar Solos"
 	},
 	"Dagger of Venom|XDMG": {
 		"name": "淬毒匕首",
@@ -11277,6 +11801,21 @@
 		},
 		"ENG_name": "Demonomicon of Iggwilv"
 	},
+	"Desert Clothing|FRHOF": {
+		"name": "沙漠服裝",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 1000,
+		"entries": [
+			"當你穿著沙漠服裝且沒有穿著中甲或重甲時，你會自動通過對抗{@hazard extreme heat|XDMG}效果的豁免檢定。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Desert Clothing"
+	},
 	"Detailed, life-sized dragonborn skull cast in electrum|XDMG": {
 		"name": "以琥珀金鑄造、精雕細琢的真人大小龍裔頭骨",
 		"source": "XDMG",
@@ -11285,6 +11824,20 @@
 		"rarity": "none",
 		"value": 75000,
 		"ENG_name": "Detailed, life-sized dragonborn skull cast in electrum"
+	},
+	"Devil Mask|FRHOF": {
+		"name": "魔鬼面具",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 2500,
+		"entries": [
+			"當你戴著魔鬼面具時，其他生物為辨識你的真實身分或意圖而進行的智力（{@skill Investigation|XPHB}）與感知（{@skill Insight|XPHB}）檢定具有{@variantrule Disadvantage|XPHB|劣勢}。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Devil Mask"
 	},
 	"Devlin's Staff of Striking|TOA": {
 		"name": "德夫林的打擊法杖",
@@ -11376,6 +11929,43 @@
 			}
 		],
 		"ENG_name": "Dice Set"
+	},
+	"Dimensional Loop|AI": {
+		"name": "次元環",
+		"source": "AI",
+		"page": 220,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"bonusSavingThrow": "+1",
+		"entries": [
+			"與這個裝置同調時，你的力量豁免檢定獲得 +1 加值，並擁有範圍 60 呎的{@sense darkvision}。若你已經擁有{@sense darkvision}，其範圍增加 30 呎。",
+			{
+				"type": "entries",
+				"name": "次元斗篷",
+				"entries": [
+					"作為一個附贈動作，你讓身體與物質世界相位錯開 1 分鐘，使你為躲藏而進行的敏捷（{@skill Stealth}）檢定具有優勢，並使對你的攻擊檢定具有劣勢。你使用次元環的這項特性後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Dimensional Cloak"
+			},
+			{
+				"type": "entries",
+				"name": "摺疊空間",
+				"entries": [
+					"選擇你 60 呎內一個你能看見的空間（不需要動作）。直到你的回合結束，你將該空間視為位於你 5 呎內。這讓你可以立即移動到該空間而不引發藉機攻擊，或如同該空間中的物體或生物就在你旁邊一般與它們互動（包括讓你對該空間進行近戰攻擊）。你使用次元環的這項特性後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Fold Space"
+			},
+			{
+				"type": "entries",
+				"name": "整體的一部分",
+				"entries": [
+					"當這個零件未安裝在{@item Orrery of the Wanderer|AI}中時，它的魔法可能會時有時無地運作，或產生無法預測的副作用，由 DM 決定。"
+				],
+				"ENG_name": "Part of a Whole"
+			}
+		],
+		"ENG_name": "Dimensional Loop"
 	},
 	"Dimensional Shackles|XDMG": {
 		"name": "次元鐐銬",
@@ -11610,6 +12200,112 @@
 		"hasFluffImages": true,
 		"ENG_name": "Docent"
 	},
+	"Documancy Satchel|AI": {
+		"name": "文書術背包",
+		"source": "AI",
+		"page": 24,
+		"rarity": "varies",
+		"wondrous": true,
+		"entries": [
+			"在等級 2 時，你的文書術背包成為一件普通魔法物品，讓你能透過一個特殊的袋子以魔法與總部互相收發文件。你的文書術背包會依你的要求以魔法產生預先寫好、只待簽名的合約，涵蓋大多數常見的契約需求。它偶爾也會產生印有實用資訊與總部勵志語錄的便利貼。",
+			{
+				"type": "entries",
+				"name": "次元背包",
+				"entries": [
+					"在等級 3 時，你的文書術背包獲得額外特性，成為一件非普通魔法物品。背包的其中一個口袋現在具有{@item bag of holding}的功能。",
+					"此外，你可以使用一個動作從文書術背包中抽出一張{@spell comprehend languages}的{@item spell scroll}。卷軸在使用時消失，或在出現十分鐘後消失。背包的此屬性在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Satchel of Holding"
+			},
+			{
+				"type": "entries",
+				"name": "卷軸保濕盒",
+				"entries": [
+					"在等級 4 時，你的文書術背包獲得額外力量，成為一件珍稀魔法物品。背包中有一個專用的異次元空間，最多可容納三十份文件或{@item spell scroll||法術卷軸}。將一份文件放進卷軸保濕盒需要一個動作。抽出一張想要的卷軸需要一個附贈動作。"
+				],
+				"ENG_name": "Scroll Humidor"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"comprehend languages"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Documancy Satchel"
+	},
+	"Dodecahedron of Doom|WDMM": {
+		"name": "毀滅十二面體",
+		"source": "WDMM",
+		"page": 284,
+		"rarity": "rare",
+		"wondrous": true,
+		"entries": [
+			"這顆十二面金屬骰子寬 12 吋，五邊形的各面刻著數字 1 到 12。十二面體內含奧術發條機關，每當骰子被擲出時就會嗡嗡作響並發出喀嗒聲。",
+			"作為一個動作，十二面體可以被擲出至多 60 呎遠。骰子在地上滾動至少 10 呎後停下時，會發生一個隨機魔法效果。若效果需要目標但範圍內沒有合適的目標，則什麼也不會發生。十二面體施展的法術不需要構材。擲一顆 {@dice d12} 並查閱下表決定效果：",
+			{
+				"type": "table",
+				"colLabels": [
+					"d12",
+					"效果"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1–2",
+						"十二面體爆炸並被摧毀。爆炸的骰子 20 呎內的每個生物都必須進行一次 {@dc 13} 敏捷豁免檢定，失敗時受到 40（{@damage 9d8}）點力場傷害，成功時傷害減半。"
+					],
+					[
+						"3–4",
+						"十二面體對自己施展{@spell light}。效果持續到有生物觸碰骰子為止。"
+					],
+					[
+						"5–6",
+						"十二面體施展{@spell ray of frost}（命中 +5），以它 60 呎內一個隨機、且沒有{@quickref Cover||3||完全掩護}可抵擋攻擊的生物為目標。"
+					],
+					[
+						"7–8",
+						"十二面體對下一個觸碰它的生物施展{@spell shocking grasp}（命中 +5）。"
+					],
+					[
+						"9–10",
+						"十二面體對自己施展{@spell darkness}。效果持續 10 分鐘。"
+					],
+					[
+						"11–12",
+						"下一個觸碰十二面體的生物獲得 {@dice 1d10} 點臨時生命值，持續 1 小時。"
+					]
+				]
+			}
+		],
+		"attachedSpells": {
+			"other": [
+				"darkness",
+				"light",
+				"ray of frost",
+				"shocking grasp"
+			]
+		},
+		"ENG_name": "Dodecahedron of Doom"
+	},
+	"Dogsled|IDROTF": {
+		"name": "狗拉雪橇",
+		"source": "IDRotF",
+		"page": 20,
+		"type": "VEH",
+		"rarity": "none",
+		"weight": 300,
+		"value": 2000,
+		"entries": [
+			"一架空雪橇售價 20 gp，重 300 磅，後方有一名駕駛者的空間。"
+		],
+		"ENG_name": "Dogsled"
+	},
 	"Donjon Card|BMT": {
 		"name": "地牢牌",
 		"source": "BMT",
@@ -11749,6 +12445,23 @@
 			}
 		],
 		"ENG_name": "Dragonchess Set"
+	},
+	"Dragonguard|PABTSO": {
+		"name": "龍衛",
+		"source": "PaBTSO",
+		"page": 72,
+		"baseItem": "breastplate|PHB",
+		"type": "MA",
+		"rarity": "rare",
+		"weight": 20,
+		"ac": 14,
+		"bonusAc": "+1",
+		"entries": [
+			"穿著這件護甲時，你的 AC 獲得 +1 加值。",
+			"這件胸甲的設計中融入了金龍圖騰。它是為了古絕冬城一位名叫特爾岡的人類英雄所打造，讓穿戴者在對抗龍的吐息武器的豁免檢定上具有優勢。",
+			"這套護甲是由一塊墊著柔軟皮革的合身鐵製胸板所構成。雖然它相對來說保護不了手和腳，但這套護甲能在為穿載者的重要器官提供良好保護的同時，而不太會妨礙穿載者的行動。"
+		],
+		"ENG_name": "Dragonguard"
 	},
 	"Dragonstaff of Ahghairon|WDH": {
 		"name": "阿蓋隆的龍杖",
@@ -12282,6 +12995,17 @@
 		"hasFluffImages": true,
 		"ENG_name": "Efreeti Bottle"
 	},
+	"Elder Cartographer's Glossography|AI": {
+		"name": "資深製圖師詞彙集",
+		"source": "AI",
+		"page": 20,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"當你達到等級 4 時，你獲得一本小型典籍，它是一件非普通魔法物品。資深製圖師詞彙集讓你在與地理特徵或地點相關的智力或感知檢定上具有優勢。"
+		],
+		"ENG_name": "Elder Cartographer's Glossography"
+	},
 	"Eldritch Claw Tattoo|TCE": {
 		"name": "魔能之爪刺青",
 		"source": "TCE",
@@ -12678,6 +13402,57 @@
 		"rarity": "none",
 		"value": 2500,
 		"ENG_name": "Embroidered silk handkerchief"
+	},
+	"Emerald Enclave Trinket|FRHOF": {
+		"name": "翡翠飛地小玩意",
+		"source": "FRHoF",
+		"page": 156,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"entries": [
+			{
+				"type": "table",
+				"caption": "翡翠飛地小玩意",
+				"colLabels": [
+					"1d6",
+					"小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"一對以永不枯萎的橡葉製成的耳環"
+					],
+					[
+						"2",
+						"一座以細枝製成的迷你小屋模型"
+					],
+					[
+						"3",
+						"一隻裝在瓶中、發著綠光的螢火蟲"
+					],
+					[
+						"4",
+						"一個貼在耳邊時會發出樹葉沙沙聲的葫蘆"
+					],
+					[
+						"5",
+						"一隻繫在皮帶上的保存兔腳"
+					],
+					[
+						"6",
+						"一根形似精靈語符文的鹿角"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"ENG_name": "Emerald Enclave Trinket"
 	},
 	"Emerald|XDMG": {
 		"name": "祖母綠",
@@ -13676,6 +14451,94 @@
 		],
 		"ENG_name": "Fabulist Gem"
 	},
+	"Failed Experiment Wand|AI": {
+		"name": "失敗實驗魔杖",
+		"source": "AI",
+		"page": 162,
+		"type": "WD|DMG",
+		"rarity": "rare",
+		"reqAttune": "by a spellcaster",
+		"reqAttuneTags": [
+			{
+				"spellcasting": true
+			}
+		],
+		"weight": 1,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d6 + 1}",
+		"charges": 2,
+		"entries": [
+			"這根魔杖有 2 點充能。持握它時，你可以使用一個動作消耗 1 點或更多充能，從它隨機施展一道綠焰的{@spell fireball}或藍色的{@spell lightning bolt}（豁免 {@dc 15}）。",
+			"消耗 1 點充能時，你施展該法術的 3 環版本。每多消耗 1 點充能，你可以將法術位環階提升一環。",
+			"魔杖每天黎明恢復 {@dice 1d6 + 1} 點已消耗的充能。若你消耗魔杖的最後 1 點充能，擲一顆 {@dice d20}。若擲出 1，魔杖會碎成灰燼並被摧毀。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"fireball",
+					"lightning bolt"
+				]
+			}
+		},
+		"ENG_name": "Failed Experiment Wand"
+	},
+	"Falkir's Helm of Pigheadedness|WDMM": {
+		"name": "法爾基爾的固執頭盔",
+		"source": "WDMM",
+		"page": 141,
+		"type": "OTH",
+		"rarity": "unknown (magic)",
+		"curse": true,
+		"entries": [
+			"這頂鋼盔形似野豬的頭。一旦你戴上頭盔，在你死亡或有人對它施展{@spell remove curse}法術或類似魔法之前都無法取下。若你戴著頭盔且是類人生物，在頭盔被取下之前，你會獲得以下缺點：「我極度固執，總認為自己永遠是對的。」（此缺點取代任何與之衝突的缺點。）"
+		],
+		"ENG_name": "Falkir's Helm of Pigheadedness"
+	},
+	"Far Gear|AI": {
+		"name": "遠域齒輪",
+		"source": "AI",
+		"page": 221,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"bonusSavingThrow": "+1",
+		"entries": [
+			"與這個裝置同調時，你的魅力豁免檢定獲得 +1 加值，且你在魅力（{@skill Intimidation}）檢定上具有優勢。",
+			{
+				"type": "entries",
+				"name": "異常盟友",
+				"entries": [
+					"你可以從多元宇宙的混沌中召喚一隻異常生物為你效力。此特性如同{@spell conjure celestial}法術（不需要{@status concentration}）般運作，但你召喚的生物是一隻挑戰等級 4 或更低的異怪。你使用遠域齒輪的這項特性後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Aberrant Ally"
+			},
+			{
+				"type": "entries",
+				"name": "非自然災禍",
+				"entries": [
+					"你可以施展{@spell bane}法術（豁免 {@dc 15}），它會影響範圍內任意數量的生物，持續 1 分鐘。你使用遠域齒輪的這項特性後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Unnatural Bane"
+			},
+			{
+				"type": "entries",
+				"name": "整體的一部分",
+				"entries": [
+					"當這個零件未安裝在{@item Orrery of the Wanderer|AI}中時，它的魔法可能會時有時無地運作，或產生無法預測的副作用，由 DM 決定。"
+				],
+				"ENG_name": "Part of a Whole"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"bane",
+					"conjure celestial"
+				]
+			}
+		},
+		"ENG_name": "Far Gear"
+	},
 	"Far Realm Shard|TCE": {
 		"name": "遠域碎片",
 		"source": "TCE",
@@ -14594,6 +15457,29 @@
 		},
 		"ENG_name": "Flask"
 	},
+	"Flayer Slayer|PABTSO": {
+		"name": "屠奪心者",
+		"source": "PaBTSO",
+		"page": 217,
+		"baseItem": "greataxe|PHB",
+		"type": "M",
+		"rarity": "rare",
+		"reqAttune": true,
+		"weight": 7,
+		"weaponCategory": "martial",
+		"property": [
+			"H",
+			"2H"
+		],
+		"dmg1": "1d12",
+		"dmgType": "S",
+		"bonusWeapon": "+1",
+		"entries": [
+			"這把巨斧的金屬斧刃上刻著被斬首的奪心魔。你以這把巨斧進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+			"被這把巨斧命中的異怪額外受到 {@damage 1d12} 點劈砍傷害。若該異怪正在擒抱一個生物，它必須成功通過一次 {@dc 15} 力量豁免檢定，否則放開它正在擒抱的每個生物。"
+		],
+		"ENG_name": "Flayer Slayer"
+	},
 	"Flour|XDMG": {
 		"name": "麵粉",
 		"source": "XDMG",
@@ -14604,6 +15490,20 @@
 		"weight": 2,
 		"value": 2,
 		"ENG_name": "Flour"
+	},
+	"Flying Snake|FRHOF": {
+		"name": "飛蛇",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "MNT|XPHB",
+		"rarity": "none",
+		"value": 2500,
+		"entries": [
+			"寵物飛蛇使用{@creature Flying Snake|XMM}的數據。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Flying Snake"
 	},
 	"Folding Boat|XDMG": {
 		"name": "摺疊船",
@@ -14868,6 +15768,21 @@
 		],
 		"ENG_name": "Galley"
 	},
+	"Garb of Light and Shadow|FRHOF": {
+		"name": "光影服飾",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 5000,
+		"entries": [
+			"這套服飾能吸引來自某個歡愉領域（例如暮光宮廷或夏之宮廷）的精類。穿著這套服飾時，你在為影響與該歡愉領域有關之精類而進行的屬性檢定上具有{@variantrule Advantage|XPHB|優勢}。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Garb of Light and Shadow"
+	},
 	"Garnet|XDMG": {
 		"name": "石榴石",
 		"source": "XDMG",
@@ -15024,6 +15939,21 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Gem of Seeing"
+	},
+	"Genie Robe|FRHOF": {
+		"name": "燈神長袍",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 5000,
+		"entries": [
+			"這件長袍能吸引與某個特定元素位面（氣、土、火、水）有關的元素生物。穿著燈神長袍時，你在為影響與該位面有關之元素生物而進行的屬性檢定上具有{@variantrule Advantage|XPHB|優勢}。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Genie Robe"
 	},
 	"Ghost Lantern|TOA": {
 		"name": "幽魂提燈",
@@ -16544,6 +17474,57 @@
 		},
 		"ENG_name": "Harp of Gilded Plenty"
 	},
+	"Harper Trinket|FRHOF": {
+		"name": "豎琴手小玩意",
+		"source": "FRHoF",
+		"page": 160,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"entries": [
+			{
+				"type": "table",
+				"caption": "豎琴手小玩意",
+				"colLabels": [
+					"1d6",
+					"小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"一支壞掉的口琴"
+					],
+					[
+						"2",
+						"一個有暗格的粉盒"
+					],
+					[
+						"3",
+						"一根 2 呎長的孔雀羽毛"
+					],
+					[
+						"4",
+						"一枚兩面都是正面的魔術硬幣"
+					],
+					[
+						"5",
+						"一副紅色鏡片的眼鏡"
+					],
+					[
+						"6",
+						"一張為未知樂器所寫的樂譜卷軸"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"ENG_name": "Harper Trinket"
+	},
 	"Hat of Disguise|XDMG": {
 		"name": "易容帽",
 		"source": "XDMG",
@@ -17078,6 +18059,63 @@
 		"hasFluffImages": true,
 		"ENG_name": "Helm of Teleportation"
 	},
+	"Helm of the Scavenger|WDMM": {
+		"name": "拾荒者之舵",
+		"source": "WDMM",
+		"page": 297,
+		"rarity": "legendary",
+		"reqAttune": "by a spellcaster",
+		"reqAttuneTags": [
+			{
+				"spellcasting": true
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這張華麗的座椅設計用來推動並操縱船隻穿越太空。",
+			{
+				"type": "entries",
+				"name": "被動屬性",
+				"entries": [
+					"即使沒有生物與舵同調，舵的以下屬性仍會發揮作用：",
+					{
+						"type": "list",
+						"items": [
+							"放置在重量介於 1 到 100 噸的船隻上時，舵會在船處於太空虛空中（但不包括水下）時，於船隻周圍產生一層新鮮空氣。這層空氣從船體邊緣向所有方向延伸，距離等於船寬，讓船上與船附近的生物能在太空中正常呼吸。空氣層內的溫度為華氏 70 度。",
+							"放置在重量介於 1 到 100 噸的船隻上時，舵會在船處於太空虛空中時產生人工重力場，讓生物能像平常一樣在船的甲板上行走。落到船外的生物與物體會在一個從主甲板向外延伸、距離等於船寬的重力平面上浮沉。"
+						]
+					}
+				],
+				"ENG_name": "Passive Properties"
+			},
+			{
+				"type": "entries",
+				"name": "主動屬性",
+				"entries": [
+					"與舵同調的感覺就像浸泡在溫水中。與舵同調時，你坐在舵上時獲得以下能力：",
+					{
+						"type": "list",
+						"items": [
+							"你可以使用舵推動船隻在水與其他液體上或其中航行，最高速度（以每小時哩數計）等於你最高環階的未消耗法術位。",
+							"你可以使用舵推動船隻穿越空中或太空，最高速度（以每小時哩數計）等於你最高環階的未消耗法術位 × 10。",
+							"只要你至少有一個未消耗的法術位，你就可以駕駛船隻，雖然有些笨拙，但方式與槳或舵操縱航海船隻大致相同。",
+							"你可以隨時觀看船隻上與周圍發生的事，如同你站在船上一個你選擇的位置。"
+						]
+					}
+				],
+				"ENG_name": "Active Properties"
+			},
+			{
+				"type": "entries",
+				"name": "缺點",
+				"entries": [
+					"與舵同調時，你無法消耗你自己的法術位。"
+				],
+				"ENG_name": "Drawback"
+			}
+		],
+		"ENG_name": "Helm of the Scavenger"
+	},
 	"Hematite|XDMG": {
 		"name": "赤鐵礦",
 		"source": "XDMG",
@@ -17133,6 +18171,28 @@
 			}
 		],
 		"ENG_name": "Herbalism Kit"
+	},
+	"Hew|PABTSO": {
+		"name": "劈砍者",
+		"source": "PaBTSO",
+		"page": 54,
+		"baseItem": "battleaxe|PHB",
+		"type": "M",
+		"rarity": "uncommon",
+		"weight": 4,
+		"weaponCategory": "martial",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d8",
+		"dmgType": "S",
+		"dmg2": "1d10",
+		"bonusWeapon": "+1",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+			"劈砍者是一把 +1 戰斧，當持用者攻擊植物生物或木製物體時會造成最大傷害。這把斧頭的製作者在森林裡砍柴時，會用它來保護自己。"
+		],
+		"ENG_name": "Hew"
 	},
 	"Heward's Handy Haversack|XDMG": {
 		"name": "霍華德的便利背包",
@@ -17348,6 +18408,56 @@
 		],
 		"ENG_name": "Hooded Lantern"
 	},
+	"Hook of Fisher's Delight|IDROTF": {
+		"name": "漁人之樂魚鉤",
+		"source": "IDRotF",
+		"page": 314,
+		"rarity": "rare",
+		"wondrous": true,
+		"entries": [
+			"這個小巧的銀製魚鉤上繫著一根小金羽毛。要讓它發揮作用，必須將這個帶羽魚鉤綁在釣魚線末端，並浸入至少足以裝滿 10 呎立方體的水中。每不間斷浸泡滿 1 小時，擲一顆 {@dice d6}。若擲出 6，一條活蹦亂跳、6 吋長的魔法魚會出現在鉤子末端。被召喚之魚的顏色與屬性由在「漁人之樂魚鉤」表上擲骰決定。魚鉤召喚出一條魚後，在下一個黎明之前無法再次如此。",
+			{
+				"type": "table",
+				"caption": "漁人之樂魚鉤",
+				"colStyles": [
+					"col-2 text-center",
+					"col-1",
+					"col-9"
+				],
+				"colLabels": [
+					"d20",
+					"魚的顏色",
+					"結果"
+				],
+				"rows": [
+					[
+						"1-10",
+						"綠色帶銅色環紋",
+						"這條美味的魚能提供吃下牠的一個生物一天份的營養。若牠在被釣起後 24 小時內沒有被吃掉，便會失去此屬性並腐爛。"
+					],
+					[
+						"11-14",
+						"黃色帶黑色條紋",
+						"從鉤子上取下後，這條難吃的魚可以被擲出至多 120 呎，以投擲者能看見的一個生物為目標。目標必須成功通過一次 {@dc 15} 力量豁免檢定，否則被擊倒為{@condition prone}。這條魚接著會消失。"
+					],
+					[
+						"15-18",
+						"藍色帶白色環紋",
+						"從鉤子上放開時，這條魚會掙脫、長出翅膀、跟著你四處飛，並以水族語唱出優美的曲調。牠會在 {@dice 2d4} 小時後或生命值降至 0 時消失。這條魚使用{@creature quipper}的數據，但牠能呼吸空氣，並有 30 呎的飛行速度。"
+					],
+					[
+						"19-20",
+						"金色帶銀色條紋",
+						"這條美味的魚能提供吃下牠的一個生物一天份的營養，並給予該生物 {@dice 2d10} 點臨時生命值。若牠在被釣起後 24 小時內沒有被吃掉，便會失去這些屬性並腐爛。"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"CF/W"
+		],
+		"ENG_name": "Hook of Fisher's Delight"
+	},
 	"Horizon Puzzle Cube|BGG": {
 		"name": "地平線謎題方塊",
 		"source": "BGG",
@@ -17405,6 +18515,23 @@
 			"Implements - Common|XDMG"
 		],
 		"ENG_name": "Horn of Silent Alarm"
+	},
+	"Horn of the Endless Maze|WDMM": {
+		"name": "無盡迷宮號角",
+		"source": "WDMM",
+		"page": 163,
+		"_copy": {
+			"name": "Horn of Valhalla, Brass",
+			"source": "DMG"
+		},
+		"baseItem": "horn|phb",
+		"type": "INS",
+		"entries": [
+			"你可以使用一個動作吹響這支號角。作為回應，來自深淵的戰士靈魂會出現在你 60 呎內。這些靈魂看起來像米諾陶，並使用{@creature berserker}的數據。它們會在 1 小時後或生命值降至 0 時回到深淵。你使用號角後，必須經過 7 天才能再次使用。",
+			"號角會召喚 {@dice 3d4 + 3} 名{@creature berserker||狂戰士}。要使用號角，你必須熟練所有簡易武器。",
+			"若你在不符合要求的情況下吹響號角，被召喚的{@creature berserker||狂戰士}會攻擊你。若你符合要求，它們會對你與你的同伴友善，並聽從你的命令。"
+		],
+		"ENG_name": "Horn of the Endless Maze"
 	},
 	"Horn of Valhalla, Brass|XDMG": {
 		"name": "瓦爾哈拉號角，黃銅",
@@ -17492,6 +18619,18 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Horn of Valhalla, Silver"
+	},
+	"Horned Ring|WDMM": {
+		"name": "有角戒指",
+		"source": "WDMM",
+		"page": 108,
+		"type": "RG|DMG",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"entries": [
+			"讓與它同調的佩戴者無視地底山脈的魔法限制（見「魔法的變化」）。"
+		],
+		"ENG_name": "Horned Ring"
 	},
 	"Horseshoes of a Zephyr|XDMG": {
 		"name": "西風馬蹄鐵",
@@ -17594,6 +18733,134 @@
 		],
 		"ENG_name": "Hunting Trap"
 	},
+	"Icewind Dale Trinket|IDROTF": {
+		"name": "冰風谷小玩意",
+		"source": "IDRotF",
+		"page": 263,
+		"type": "G",
+		"rarity": "none",
+		"entries": [
+			{
+				"type": "table",
+				"caption": "冰風谷小玩意",
+				"colLabels": [
+					"d100",
+					"小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"01–04",
+						"一個塗著紅黑兩色、正在打哈欠的海象小木雕"
+					],
+					[
+						"05–08",
+						"一對刻有漁夫乘船圖案的骨雕袖扣"
+					],
+					[
+						"09–12",
+						"一把繫著磨損藍金色繩子的小鐵鑰匙"
+					],
+					[
+						"13–16",
+						"一本缺頁的北地人神話小插畫書"
+					],
+					[
+						"17–20",
+						"一枚描繪人魚、已損壞的骨雕浮雕"
+					],
+					[
+						"21–24",
+						"一塊來自墓塚、刻有小小矮人語符文的石頭"
+					],
+					[
+						"25–28",
+						"一片印著你認不出之符號的破布帆"
+					],
+					[
+						"29–32",
+						"一把骨雕握柄的烏魯刀"
+					],
+					[
+						"33–36",
+						"一個裝著無法辨識、香甜黏稠物質的罐子"
+					],
+					[
+						"37–40",
+						"一顆畫著雪花的精緻玻璃球，頂端有一個附小鉤子的金屬環"
+					],
+					[
+						"41–44",
+						"一本缺頁的探險日誌，夾著一朵當書籤用的壓花"
+					],
+					[
+						"45–48",
+						"一個以鯨骨雕成的貓頭鷹小雕像"
+					],
+					[
+						"49–52",
+						"一個散發舊木頭氣味、裡面有三捲藍線的針線盒"
+					],
+					[
+						"53–56",
+						"一支骨雕握柄的墨水筆，筆身刻著黑色符文圖案"
+					],
+					[
+						"57–60",
+						"一枚以包在琥珀中的小昆蟲製成的胸針"
+					],
+					[
+						"61–64",
+						"一個刻著字母 W 的骨雕胡椒罐"
+					],
+					[
+						"65–68",
+						"一把老舊的木柄冰錐，上面沾著洗不掉的血跡"
+					],
+					[
+						"69–72",
+						"一個帶著憤怒表情的布娃娃"
+					],
+					[
+						"73–76",
+						"一串以貝殼製成的風鈴"
+					],
+					[
+						"77–80",
+						"一個漂亮的銀罐，打開時會散發腐魚的臭味"
+					],
+					[
+						"81–84",
+						"一個以釣魚線、金線與雪白梟熊羽毛製成、沾有血跡的捕夢網"
+					],
+					[
+						"85–88",
+						"一個以永不融化的冰製成的北極熊小雕像"
+					],
+					[
+						"89–92",
+						"一個不需要搖晃的雪花球"
+					],
+					[
+						"93–96",
+						"一塊形似獨角獸角的海玻璃"
+					],
+					[
+						"97–00",
+						"一條深藍色圍巾，佩戴者所處的海拔越高，顏色就越淺"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Icewind Dale Trinket"
+	},
 	"Illuminator's Tattoo|TCE": {
 		"name": "繕寫者刺青",
 		"source": "TCE",
@@ -17685,7 +18952,7 @@
 				"type": "entries",
 				"name": "腐化",
 				"entries": [
-					"此物品會腐化。見「{@adventure Infernal Item Corruption|CoA|16|煉獄物品腐化}」一節。"
+					"此物品會腐化。見「{@adventure 煉獄物品腐化|CoA|16|Infernal Item Corruption}」一節。"
 				],
 				"ENG_name": "Corrupting"
 			}
@@ -17720,7 +18987,7 @@
 				"type": "entries",
 				"name": "腐化",
 				"entries": [
-					"此物品會腐化。見「{@adventure Infernal Item Corruption|CoA|16|煉獄物品腐化}」一節。"
+					"此物品會腐化。見「{@adventure 煉獄物品腐化|CoA|16|Infernal Item Corruption}」一節。"
 				],
 				"ENG_name": "Corrupting"
 			}
@@ -18515,6 +19782,25 @@
 		"hasFluffImages": true,
 		"ENG_name": "Ioun Stone, Sustenance"
 	},
+	"Iron Ball|IDROTF": {
+		"name": "鐵球",
+		"source": "IDRotF",
+		"page": 238,
+		"type": "R",
+		"rarity": "unknown",
+		"weaponCategory": "simple",
+		"property": [
+			"F",
+			"T"
+		],
+		"range": "120",
+		"dmg1": "1d4",
+		"dmgType": "B",
+		"entries": [
+			"這顆球用來玩{@adventure 連鎖閃電|IDRotF|17|Chain Lightning}遊戲。"
+		],
+		"ENG_name": "Iron Ball"
+	},
 	"Iron Bands of Bilarro|XDMG": {
 		"name": "比拉羅的鐵箍",
 		"source": "XDMG",
@@ -18862,6 +20148,25 @@
 		"rarity": "none",
 		"value": 25000,
 		"ENG_name": "Jade headpiece (River Heralds)"
+	},
+	"Jade Serpent Staff|WDMM": {
+		"name": "玉蛇法杖",
+		"source": "WDMM",
+		"page": 92,
+		"type": "OTH",
+		"rarity": "unknown (magic)",
+		"entries": [
+			"這根法杖斷成五截，光是玉石本身每截就價值 100 gp。整根法杖可以用{@spell mending}戲法修復；每施展一次法術可以修好法杖的一處斷裂。若法杖恢復完整，它會從一件物體轉變為一條活化的玉蛇，具有{@creature giant poisonous snake}的數據，並有以下變化：",
+			{
+				"type": "list",
+				"items": [
+					"這條蛇是一個構裝體，理解並服從它變形時持握法杖的人。",
+					"它免疫毒素傷害與{@condition poisoned}狀態。它不需要空氣、食物、飲水或睡眠。",
+					"當它的生命值降至 0 時，擲一顆 {@dice d6}。若擲出 1，蛇會化為塵土並被摧毀。擲出其他結果時，它會變回法杖並斷成 {@dice 1d4 + 1} 截，必須以魔法修復後才能再次使用。"
+				]
+			}
+		],
+		"ENG_name": "Jade Serpent Staff"
 	},
 	"Jade sword with amber (River Heralds)|PSX": {
 		"name": "鑲琥珀的玉劍（河流先驅）",
@@ -19275,7 +20580,7 @@
 		"wondrous": true,
 		"recharge": "dawn",
 		"entries": [
-			"作為一個動作，你可以在說出命令語的同時，將這張牌擲向你 60 呎內地面上一個未被佔據的空間，卡牌隨即以魔法變成一個{@creature deck defender|BMT}（其數據見{@book chapter 9|BMT|8|Deck Defender}），持續至多 1 分鐘，或直到你使用一個動作再次說出命令語，此時它會變回卡牌。牌組守衛會服從你的口頭命令。若你沒有下達命令，它會採取{@action Dodge}動作並移動以避開危險。若牌組守衛的生命值降至 0，它會提早變回卡牌。此屬性使用後，在下一個黎明之前無法再次使用。"
+			"作為一個動作，你可以在說出命令語的同時，將這張牌擲向你 60 呎內地面上一個未被佔據的空間，卡牌隨即以魔法變成一個{@creature deck defender|BMT}（其數據見{@book 第 9 章|BMT|8|Deck Defender}），持續至多 1 分鐘，或直到你使用一個動作再次說出命令語，此時它會變回卡牌。牌組守衛會服從你的口頭命令。若你沒有下達命令，它會採取{@action Dodge}動作並移動以避開危險。若牌組守衛的生命值降至 0，它會提早變回卡牌。此屬性使用後，在下一個黎明之前無法再次使用。"
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Knight Card"
@@ -19404,6 +20709,78 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Lantern of Revealing"
+	},
+	"Lantern of Tracking|IDROTF": {
+		"name": "追蹤提燈",
+		"source": "IDRotF",
+		"page": 314,
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			"這盞附遮罩的提燈使用 1 品脫油可以燃燒 6 小時，在 30 呎半徑內發出明亮光線，並在額外 30 呎內發出微光。",
+			"每盞追蹤提燈都設計用來追蹤某一類型的生物，由在「追蹤提燈」表上擲骰決定。一旦決定，此生物類型便無法更改。當提燈位於該類型任何生物 300 呎內時，它的火焰會變成亮綠色。不過，提燈無法精確指出該生物的確切位置。",
+			{
+				"type": "table",
+				"caption": "追蹤提燈",
+				"colLabels": [
+					"1d10",
+					"生物類型"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"異怪"
+					],
+					[
+						"2",
+						"天界生物"
+					],
+					[
+						"3",
+						"構裝生物"
+					],
+					[
+						"4",
+						"龍"
+					],
+					[
+						"5",
+						"元素"
+					],
+					[
+						"6",
+						"精類"
+					],
+					[
+						"7",
+						"邪魔"
+					],
+					[
+						"8",
+						"巨人"
+					],
+					[
+						"9",
+						"怪異"
+					],
+					[
+						"10",
+						"不死生物"
+					]
+				]
+			}
+		],
+		"light": [
+			{
+				"bright": 30,
+				"dim": 60
+			}
+		],
+		"ENG_name": "Lantern of Tracking"
 	},
 	"Lapis Lazuli|XDMG": {
 		"name": "青金石",
@@ -19698,6 +21075,24 @@
 		],
 		"ENG_name": "Lifewell Tattoo"
 	},
+	"Lightbringer|PABTSO": {
+		"name": "攜光者",
+		"source": "PaBTSO",
+		"page": 72,
+		"baseItem": "mace|PHB",
+		"type": "M",
+		"rarity": "uncommon",
+		"weight": 4,
+		"weaponCategory": "simple",
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"bonusWeapon": "+1",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+			"這把名為攜光者的武器是為黎明之神洛山達的一位牧師所打造。硬頭錘的錘頭形似旭日，以實心黃銅製成。持用者下令時，這把硬頭錘會發出如火把般明亮的光芒。發光時，這把硬頭錘對不死生物額外造成 {@damage 1d6} 點光耀傷害。"
+		],
+		"ENG_name": "Lightbringer"
+	},
 	"Lightning Absorbing Tattoo|TCE": {
 		"name": "火焰吸收刺青",
 		"source": "TCE",
@@ -19758,6 +21153,112 @@
 		],
 		"ENG_name": "Living Gloves"
 	},
+	"Living Loot Satchel|AI": {
+		"name": "活體戰利品背包",
+		"source": "AI",
+		"page": 25,
+		"rarity": "varies",
+		"wondrous": true,
+		"entries": [
+			"身為等級 2 的囤積人，你獲得一個活體戰利品背包的使用權，它是一件非普通魔法物品。它具有{@item bag of holding}的功能，並有各種顏色與款式可選。",
+			{
+				"type": "table",
+				"caption": "依職業分類的活體戰利品背包",
+				"colStyles": [
+					"col-2",
+					"col-10"
+				],
+				"colLabels": [
+					"職業",
+					"背包"
+				],
+				"rows": [
+					[
+						"野蠻人",
+						"掛著十幾個口袋的寬腰帶"
+					],
+					[
+						"吟遊詩人",
+						"魯特琴盒"
+					],
+					[
+						"牧師",
+						"挖空的聖典"
+					],
+					[
+						"德魯伊",
+						"以天然、有機、在地取材的編織纖維製成"
+					],
+					[
+						"戰士",
+						"一個厚重、飽經戰火的鐵製保險箱"
+					],
+					[
+						"聖騎士",
+						"一個有精細雕刻與卷軸紋飾的金屬盒"
+					],
+					[
+						"遊俠",
+						"一個毛皮襯裡的包袱"
+					],
+					[
+						"盜賊",
+						"一個毫不起眼的錢袋"
+					],
+					[
+						"術士",
+						"一個破舊的皮背包，接縫處常會噴出五顏六色的火花"
+					],
+					[
+						"契術師",
+						"一個以怪物皮革拼接而成的背包，上面有一張「純屬裝飾」的尖牙大嘴。"
+					],
+					[
+						"法師",
+						"一個藏在你袖子裡或帽子中的口袋次元"
+					]
+				]
+			},
+			"活體戰利品背包是一種魔法生命，負責保管加盟店的資金與貴重物品。它的內部與總部位於深水城的金庫中一個安全的保險庫相連，背包會定期將加盟店的財富轉移過去。作為一個動作，你可以成功通過一次 {@dc 15} 敏捷（{@skill Sleight of Hand}）檢定，將任意數量的加盟店資金轉回你的背包。",
+			{
+				"type": "entries",
+				"name": "秘密背包",
+				"entries": [
+					"身為等級 3 的囤積人，你的活體戰利品背包升級為{@spell Leomund's secret chest}法術所用的複製箱，成為一件珍稀魔法物品。你可以透過活體戰利品背包打開秘密箱子存入或取出物品——即使是通常放不進背包、但放得進箱子的物品也可以。多虧總部與你真的不會想知道的異界生物談成了你不會想知道的交易，這道法術不會有結束的可能。"
+				],
+				"ENG_name": "Secret Satchel"
+			},
+			{
+				"type": "entries",
+				"name": "你需要的那個東西",
+				"entries": [
+					"在等級 3 時，你可以使用一個附贈動作把手伸進你的活體戰利品背包，並進行一次 {@dc 15} 敏捷（{@skill Sleight of Hand}）檢定。成功時，你從中抽出《玩家手冊》第 5 章冒險裝備表上一件你選擇的物品。該物品的大小必須能放進你的秘密箱子，價值不得超過 15 gp。你嘗試從背包中抽出五件物品後，在下一個黎明之前無法再抽出任何物品。"
+				],
+				"ENG_name": "That Thing You Need"
+			},
+			{
+				"type": "entries",
+				"name": "攜帶洞背包",
+				"entries": [
+					"在等級 4 時，你的活體戰利品背包再次升級，成為一件極珍稀魔法物品。你的背包所連接的秘密箱子現在具有{@item portable hole}的儲存空間——直徑 6 呎、深 10 呎。和之前一樣，你可以將任何大小合適的物體放進這個攜帶洞大小的箱子中，即使它通常放不進你的背包。"
+				],
+				"ENG_name": "Portable Hole Satchel"
+			},
+			{
+				"type": "entries",
+				"name": "你需要的那個昂貴東西",
+				"entries": [
+					"同樣在等級 4 時，當你使用「你需要的那個東西」特性時，只要物品能放進你背包的攜帶洞範圍內，你可以調用任何價值至多 250 gp 的物品。"
+				],
+				"ENG_name": "That Expensive Thing You Need"
+			}
+		],
+		"attachedSpells": [
+			"Leomund's secret chest"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Living Loot Satchel"
+	},
 	"Loaf of Bread|PHB": {
 		"name": "一條麵包",
 		"source": "PHB",
@@ -19807,6 +21308,21 @@
 			"鎖附有一把鑰匙。沒有鑰匙時，生物可以使用{@item Thieves' Tools|XPHB}並成功通過一次 {@dc 15} 敏捷（{@skill Sleight of Hand|XPHB}）檢定來撬開此鎖。"
 		],
 		"ENG_name": "Lock"
+	},
+	"Locking Spellbook|FRHOF": {
+		"name": "附鎖法術書",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 3,
+		"value": 3500,
+		"entries": [
+			"這本 100 頁的皮面典籍可以作為法術書使用。它以一把附有鑰匙的鎖鎖住。作為一個{@action Utilize|XPHB}動作，生物可以嘗試使用{@item Thieves' Tools|XPHB}撬鎖，成功通過一次 DC 15 敏捷（{@skill Sleight of Hand|XPHB}）檢定即可。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Locking Spellbook"
 	},
 	"Lolth's Sting|XDMG": {
 		"name": "羅絲之螫",
@@ -19950,6 +21466,57 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Lord's Ensemble"
+	},
+	"Lords' Alliance Trinket|FRHOF": {
+		"name": "領主聯盟小玩意",
+		"source": "FRHoF",
+		"page": 164,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"entries": [
+			{
+				"type": "table",
+				"caption": "領主聯盟小玩意",
+				"colLabels": [
+					"1d6",
+					"小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"一塊戰敗軍隊旗幟的碎片"
+					],
+					[
+						"2",
+						"一副刻有一匹名駒名字的馬銜與籠頭"
+					],
+					[
+						"3",
+						"一把曾用於一場著名戰役的斷劍"
+					],
+					[
+						"4",
+						"一位離奇失蹤的領主的左手手套"
+					],
+					[
+						"5",
+						"一個關節可動的玩具馬與騎士"
+					],
+					[
+						"6",
+						"一片印有不明領主紋章的肩甲"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"ENG_name": "Lords' Alliance Trinket"
 	},
 	"Luba's Tarokka of Souls|TCE": {
 		"name": "露芭的靈魂塔羅卡牌",
@@ -20205,6 +21772,33 @@
 			}
 		},
 		"ENG_name": "Lucent Destroyer"
+	},
+	"Luminous War Pick|PABTSO": {
+		"name": "輝光戰鎬",
+		"source": "PaBTSO",
+		"page": 217,
+		"baseItem": "war pick|PHB",
+		"type": "M",
+		"rarity": "rare",
+		"reqAttune": true,
+		"weight": 2,
+		"weaponCategory": "martial",
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"bonusWeapon": "+1",
+		"entries": [
+			"這把戰鎬的柄上鑲嵌著碾碎的珍珠光澤石頭，使武器散發微弱的光芒。你以這把戰鎬進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+			"持用戰鎬時，你可以使用一個附贈動作施展{@spell daylight}法術，並選擇戰鎬上的一點作為目標。你使用此附贈動作後，在下一個黎明之前無法再次使用。"
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"daylight"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Luminous War Pick"
 	},
 	"Lute crafted of exotic wood with mother-of-pearl inlay and zircon gems (Brazen Coalition)|PSX": {
 		"name": "以珍奇木材製成、鑲珍珠母貝與鋯石的魯特琴（銅鑄聯盟）",
@@ -20593,6 +22187,23 @@
 		"bonusWeapon": "+3",
 		"hasFluffImages": true,
 		"ENG_name": "Mace of the Black Crown (Exalted)"
+	},
+	"Maddgoth's Helm|WDMM": {
+		"name": "瑪德戈斯的頭盔",
+		"source": "WDMM",
+		"page": 103,
+		"type": "OTH",
+		"rarity": "very rare",
+		"reqAttune": "by a humanoid",
+		"reqAttuneTags": [
+			{
+				"creatureType": "humanoid"
+			}
+		],
+		"entries": [
+			"當你戴著這頂頭盔並位於瑪德戈斯的城堡內、屋頂上或庭院中時，你免疫所有傷害。若頭盔被帶離城堡，它會化為塵土並被摧毀。"
+		],
+		"ENG_name": "Maddgoth's Helm"
 	},
 	"Magnifying Glass|XPHB": {
 		"name": "放大鏡",
@@ -21170,6 +22781,194 @@
 		],
 		"ENG_name": "Military Saddle"
 	},
+	"Mind Crystal (Careful)|PABTSO": {
+		"name": "心靈水晶（謹慎）",
+		"source": "PaBTSO",
+		"page": 218,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"這顆寶石內含一小塊結晶化的施法魔法。",
+			"當你持握心靈水晶施展一道施法時間為 1 個動作的法術時，你可以依下述方式修改該法術。你只能使用單一顆心靈水晶修改法術，且你無法在同一道法術上同時使用心靈水晶與超魔選項。你使用心靈水晶後，它會變成一顆價值 50 gp 的非魔法寶石。",
+			{
+				"type": "entries",
+				"name": "修改法術",
+				"entries": [
+					"選擇至多三個受法術影響的生物。所選生物會自動通過對抗該法術的豁免檢定。"
+				],
+				"ENG_name": "Modify Spell"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mind Crystal (Careful)"
+	},
+	"Mind Crystal (Distant)|PABTSO": {
+		"name": "心靈水晶（遠程）",
+		"source": "PaBTSO",
+		"page": 218,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"這顆寶石內含一小塊結晶化的施法魔法。",
+			"當你持握心靈水晶施展一道施法時間為 1 個動作的法術時，你可以依下述方式修改該法術。你只能使用單一顆心靈水晶修改法術，且你無法在同一道法術上同時使用心靈水晶與超魔選項。你使用心靈水晶後，它會變成一顆價值 50 gp 的非魔法寶石。",
+			{
+				"type": "entries",
+				"name": "修改法術",
+				"entries": [
+					"若法術的射程為 5 呎或更遠且不是自身，法術的射程增加 100 呎。若法術的射程為觸碰，其射程變為 30 呎。"
+				],
+				"ENG_name": "Modify Spell"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mind Crystal (Distant)"
+	},
+	"Mind Crystal (Empowered)|PABTSO": {
+		"name": "心靈水晶（強效）",
+		"source": "PaBTSO",
+		"page": 218,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"這顆寶石內含一小塊結晶化的施法魔法。",
+			"當你持握心靈水晶施展一道施法時間為 1 個動作的法術時，你可以依下述方式修改該法術。你只能使用單一顆心靈水晶修改法術，且你無法在同一道法術上同時使用心靈水晶與超魔選項。你使用心靈水晶後，它會變成一顆價值 50 gp 的非魔法寶石。",
+			{
+				"type": "entries",
+				"name": "修改法術",
+				"entries": [
+					"當你為法術擲傷害時，你可以重擲至多三顆傷害骰。你必須使用新的擲骰結果。"
+				],
+				"ENG_name": "Modify Spell"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mind Crystal (Empowered)"
+	},
+	"Mind Crystal (Extended)|PABTSO": {
+		"name": "心靈水晶（延時）",
+		"source": "PaBTSO",
+		"page": 218,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"這顆寶石內含一小塊結晶化的施法魔法。",
+			"當你持握心靈水晶施展一道施法時間為 1 個動作的法術時，你可以依下述方式修改該法術。你只能使用單一顆心靈水晶修改法術，且你無法在同一道法術上同時使用心靈水晶與超魔選項。你使用心靈水晶後，它會變成一顆價值 50 gp 的非魔法寶石。",
+			{
+				"type": "entries",
+				"name": "修改法術",
+				"entries": [
+					"若法術的持續時間為 1 分鐘或更長，將法術的持續時間加倍，最長為 24 小時。"
+				],
+				"ENG_name": "Modify Spell"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mind Crystal (Extended)"
+	},
+	"Mind Crystal (Heightened)|PABTSO": {
+		"name": "心靈水晶（升階）",
+		"source": "PaBTSO",
+		"page": 218,
+		"rarity": "rare",
+		"wondrous": true,
+		"entries": [
+			"這顆寶石內含一小塊結晶化的施法魔法。",
+			"當你持握心靈水晶施展一道施法時間為 1 個動作的法術時，你可以依下述方式修改該法術。你只能使用單一顆心靈水晶修改法術，且你無法在同一道法術上同時使用心靈水晶與超魔選項。你使用心靈水晶後，它會變成一顆價值 50 gp 的非魔法寶石。",
+			{
+				"type": "entries",
+				"name": "修改法術",
+				"entries": [
+					"選擇一個受法術影響的生物。該生物在對抗該法術的第一次豁免檢定上具有劣勢。"
+				],
+				"ENG_name": "Modify Spell"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mind Crystal (Heightened)"
+	},
+	"Mind Crystal (Quickened)|PABTSO": {
+		"name": "心靈水晶（瞬發）",
+		"source": "PaBTSO",
+		"page": 218,
+		"rarity": "rare",
+		"wondrous": true,
+		"entries": [
+			"這顆寶石內含一小塊結晶化的施法魔法。",
+			"當你持握心靈水晶施展一道施法時間為 1 個動作的法術時，你可以依下述方式修改該法術。你只能使用單一顆心靈水晶修改法術，且你無法在同一道法術上同時使用心靈水晶與超魔選項。你使用心靈水晶後，它會變成一顆價值 50 gp 的非魔法寶石。",
+			{
+				"type": "entries",
+				"name": "修改法術",
+				"entries": [
+					"此次施法時，你將法術的施法時間改為 1 個附贈動作。"
+				],
+				"ENG_name": "Modify Spell"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mind Crystal (Quickened)"
+	},
+	"Mind Crystal (Subtle)|PABTSO": {
+		"name": "心靈水晶（精妙）",
+		"source": "PaBTSO",
+		"page": 218,
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			"這顆寶石內含一小塊結晶化的施法魔法。",
+			"當你持握心靈水晶施展一道施法時間為 1 個動作的法術時，你可以依下述方式修改該法術。你只能使用單一顆心靈水晶修改法術，且你無法在同一道法術上同時使用心靈水晶與超魔選項。你使用心靈水晶後，它會變成一顆價值 50 gp 的非魔法寶石。",
+			{
+				"type": "entries",
+				"name": "修改法術",
+				"entries": [
+					"此次施法時，你施展該法術不需要任何姿勢或言語構材。"
+				],
+				"ENG_name": "Modify Spell"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mind Crystal (Subtle)"
+	},
+	"Mind Flayer Skull|WDMM": {
+		"name": "奪心魔頭骨",
+		"source": "WDMM",
+		"page": 197,
+		"type": "OTH",
+		"rarity": "unknown (magic)",
+		"entries": [
+			"當頭骨在你身上時，奪心魔看不見你以及你穿戴或攜帶的任何物品，如同你處於{@condition invisible}狀態。"
+		],
+		"ENG_name": "Mind Flayer Skull"
+	},
+	"Mindblasting Cap|PABTSO": {
+		"name": "心靈衝擊帽",
+		"source": "PaBTSO",
+		"page": 218,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這頂柔軟的紫羅蘭色帽子上縫著大腦皺褶圖案的線跡。",
+			"戴著帽子時，你可以使用一個附贈動作發出 60 呎錐形的心靈能量。該區域內每個生物都必須進行一次 {@dc 15} 智力豁免檢定。豁免失敗時，生物受到 {@damage 5d8} 點心靈傷害，並處於震懾狀態 1 分鐘。豁免成功時，生物只受到一半傷害。在它每個回合結束時，處於震懾狀態的生物可以重複豁免檢定，成功時結束自身的震懾狀態。",
+			"此附贈動作使用後，在下一個黎明之前無法再次使用。"
+		],
+		"ENG_name": "Mindblasting Cap"
+	},
+	"Mindguard Crown|PABTSO": {
+		"name": "心靈守護王冠",
+		"source": "PaBTSO",
+		"page": 218,
+		"resist": [
+			"psychic"
+		],
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"戴著這頂精金王冠時，你在智力、感知與魅力豁免檢定上具有優勢，並具有心靈傷害抗性。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mindguard Crown"
+	},
 	"Mirror of Life Trapping|XDMG": {
 		"name": "困命之鏡",
 		"source": "XDMG",
@@ -21485,6 +23284,21 @@
 		],
 		"ENG_name": "Mizzium Mortar"
 	},
+	"Monster Camouflage|FRHOF": {
+		"name": "怪物偽裝服",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 6,
+		"value": 5000,
+		"entries": [
+			"一套怪物偽裝服看起來像一隻野獸或怪獸，例如{@creature owlbear|XMM}。要看穿你的偽裝，生物必須執行{@action Study|XPHB}動作檢查你的外表，並成功通過一次 DC 10 智力（{@skill Investigation|XPHB}或{@skill Nature|XPHB}）檢定。若該生物位於你 30 呎內，它在此檢定上具有{@variantrule Advantage|XPHB|優勢}；若你做了任何你所偽裝的怪物做不到的事，它會自動通過此檢定。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Monster Camouflage"
+	},
 	"Moodmark Paint|GGR": {
 		"name": "情緒紋彩",
 		"source": "GGR",
@@ -21620,6 +23434,22 @@
 			"TT"
 		],
 		"ENG_name": "Mournland Trinket"
+	},
+	"Mudslick Tower|PABTSO": {
+		"name": "泥滑塔",
+		"source": "PaBTSO",
+		"page": 219,
+		"rarity": "very rare",
+		"wondrous": true,
+		"entries": [
+			"你可以使用一個動作將這顆直徑 1 吋的花崗岩球放在地上，並說出它的命令語——土族語的「石化」。球體會迅速長成一座堅固的高塔，並持續存在，直到你使用一個動作觸碰高塔並再次說出命令語，此時高塔會縮回一顆直徑 1 吋的花崗岩球。高塔必須是空的才能以此方式縮小。高塔上佈滿泥濘的瘤塊，不斷在表面伸出又縮回，彷彿高塔正透過一層厚厚的泥巴呼吸。",
+			"高塔出現區域內的每個生物都必須進行一次 {@dc 15} 敏捷豁免檢定，失敗時受到 {@damage 10d10} 點鈍擊傷害，成功時傷害減半。無論哪種情況，該生物都會被推到高塔外、緊鄰高塔的一個未被佔據空間。區域內未被穿戴或攜帶的物體會受到此傷害並被自動推開。",
+			"每當泥滑塔展開時，它會與它接觸到的任何天然石頭融合，笨拙地傾斜並卡入其中，以盡可能接觸更多天然石頭。",
+			"高塔每邊長 20 呎、高 30 呎，四面都有箭孔，頂端有城垛。其內部分為兩層，一面牆邊有梯子連接兩層。梯子通往一扇通往屋頂的活板門。啟動時，高塔在朝向你的那一面有一扇小門。門只在你下令時才會打開，你可以使用一個附贈動作下達命令。它免疫{@spell knock}法術與類似魔法，例如開門鈴的魔法。",
+			"雖然看起來像石頭，但高塔是以精金製成，且其魔法能防止生物將它推倒。屋頂、門與每面牆各有 100 點生命值，免疫攻城武器以外之非魔法武器造成的傷害，並具有所有其他傷害的抗性。與天然石頭融合時，泥滑塔免疫所有傷害。只有{@spell wish}法術能修復高塔（此法術的這種用法視為複製一道 8 環或更低的法術）。每施展一次{@spell wish}，可使屋頂、門或一面牆恢復 50 點生命值。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mudslick Tower"
 	},
 	"Mule|XPHB": {
 		"name": "騾子",
@@ -21994,6 +23824,21 @@
 		"hasFluffImages": true,
 		"ENG_name": "Net"
 	},
+	"Netherese Ring of Protection|PABTSO": {
+		"name": "耐瑟瑞爾防護戒指",
+		"source": "PaBTSO",
+		"page": 50,
+		"type": "RG|DMG",
+		"rarity": "rare",
+		"reqAttune": true,
+		"bonusAc": "+1",
+		"bonusSavingThrow": "+4",
+		"entries": [
+			"戴著這枚戒指時，你的 AC 與豁免檢定獲得 +1 加值。",
+			"這枚戒指以單一塊比鋼鐵更堅固的神秘綠玻璃製成。它還有一項額外屬性，讓佩戴者較不容易掉落或遺失戴著戒指那隻手所持的任何東西。佩戴者為避免那隻手所持的任何物品掉落或被繳械而進行的豁免檢定或檢定獲得 +4 加值。"
+		],
+		"ENG_name": "Netherese Ring of Protection"
+	},
 	"Nib|WDH": {
 		"name": "尼布",
 		"source": "WDH",
@@ -22098,6 +23943,132 @@
 			"一顆黑色的寶石。"
 		],
 		"ENG_name": "Obsidian"
+	},
+	"Obviator's Lenses|AI": {
+		"name": "明察員鏡片",
+		"source": "AI",
+		"page": 30,
+		"rarity": "varies",
+		"wondrous": true,
+		"entries": [
+			"同樣在等級 2 時，你獲得一件非普通魔法物品的使用權，它的形式可以是一副眼鏡、一支望遠鏡、一片單片眼鏡，或任何其他有一或兩片鏡片的裝置。當你透過明察員鏡片觀看時，你使用一個附贈動作讓它們具有{@item eyes of minute seeing}或{@item eyes of the eagle}的功能。你做出選擇後，在下一個黎明之前無法更改。",
+			{
+				"type": "entries",
+				"name": "強化鏡片",
+				"entries": [
+					"在等級 4 時，你的明察員鏡片獲得額外力量，成為一件珍稀魔法物品。鏡片現在同時具有{@item eyes of the eagle}與{@item eyes of minute seeing}的功能。",
+					"此外，你可以集中鏡片的力量提高戰鬥中的準確度，使一次武器攻擊檢定具有優勢（不需要動作）。若該次攻擊命中，額外擲一顆武器傷害骰。鏡片的此屬性在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Enhanced Lenses"
+			}
+		],
+		"ENG_name": "Obviator's Lenses"
+	},
+	"Occultant Abacus|AI": {
+		"name": "占亡師算盤",
+		"source": "AI",
+		"page": 31,
+		"rarity": "varies",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"總部授予你一件名為占亡師算盤（有時簡稱為占亡器）的獨特物品的使用權，它的算珠形似微小的骷髏。",
+			{
+				"type": "entries",
+				"name": "解讀擊殺",
+				"entries": [
+					"同樣在等級 1 時，你的占亡師算盤不只能記錄加盟店的擊殺數，還能幫助你判斷這些擊殺對加盟店命運的影響。在 1 分鐘內，你可以研究一個在過去 24 小時內被你加盟店中某人殺死的生物，然後給予擊殺它的角色一顆 {@dice d10}。在接下來 1 小時內一次，該角色可以將這顆 {@dice d10} 加到一次攻擊檢定、屬性檢定或豁免檢定上。若不清楚是誰給予了致命一擊，你將此益處給予參與戰鬥的一個隨機生物。你使用此特性後，在你完成一次長休之前無法再次使用。",
+					{
+						"type": "table",
+						"colLabels": [
+							"d6",
+							"解讀"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"用一個小風箱往屍體裡灌最後一口氣。"
+							],
+							[
+								"2",
+								"戴上特製的讀腸眼鏡解讀內臟。"
+							],
+							[
+								"3",
+								"燒掉屍體的一小塊，觀察煙霧中的形狀。"
+							],
+							[
+								"4",
+								"謹慎、合理、專業的推估。"
+							],
+							[
+								"5",
+								"仔細測量。鼻孔之間的距離。食指與中指的差距。耳垂的彈性。"
+							],
+							[
+								"6",
+								"你仔細端詳良久，然後根據最近哪位加盟店同事對你比較好來決定。"
+							]
+						]
+					}
+				],
+				"ENG_name": "Read the Kill"
+			},
+			{
+				"type": "entries",
+				"name": "魔能占亡師",
+				"entries": [
+					"從等級 2 開始，你的占亡師算盤成為一件非普通魔法物品，能追蹤被消滅與被拯救的生命。當你在一個過去 24 小時內被殺死之生物的 5 呎內持握你的占亡師算盤時，你可以施展{@spell augury}法術。你以該法術詢問的行動方針不需要與死去的生物有任何關聯。占亡師算盤的此屬性在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Eldritch Occultant"
+			},
+			{
+				"type": "entries",
+				"name": "把死者帶出來",
+				"entries": [
+					"同樣在等級 2 時，你在完成一次短休或長休後即可再次使用你的「解讀擊殺」特性。"
+				],
+				"ENG_name": "Bring Out Your Dead"
+			},
+			{
+				"type": "entries",
+				"name": "即時業報之珠",
+				"entries": [
+					"在等級 3 時，你占亡師算盤上的一顆算珠引導即時業報的力量，使占亡師算盤成為一件珍稀魔法物品。作為一個反應，你可以指定一個你能看見、即將進行屬性檢定、攻擊檢定或豁免檢定的生物，使該次擲骰具有優勢或劣勢。算珠使用後會碎成塵土，並在下一個黎明重新出現在你的占亡師算盤上。"
+				],
+				"ENG_name": "Bead of Instant Karma"
+			},
+			{
+				"type": "entries",
+				"name": "轉移業報之珠",
+				"entries": [
+					"在等級 4 時，你占亡師算盤上的一顆算珠讓你能將業報轉移到需要的地方，使占亡師算盤成為一件極珍稀魔法物品。在這顆算珠未使用期間，你會自動知道任何你能看見的生物即將以劣勢進行屬性檢定、攻擊檢定或豁免檢定。進行這類擲骰時，你可以使用反應給予另一個你能看見的生物一顆 {@dice d10}。該生物可以將這顆 {@dice d10} 加到它在接下來 1 分鐘內進行的任何屬性檢定、攻擊檢定或豁免檢定上。算珠使用後會碎成塵土，並在下一個黎明重新出現在你的占亡師算盤上。"
+				],
+				"ENG_name": "Bead of Diverted Karma"
+			},
+			{
+				"type": "entries",
+				"name": "修正平衡",
+				"entries": [
+					"身為等級 4 的占亡師，你領悟到有時一個生物的死亡會帶來意想不到的後果。在一個生物死亡後七天內，你可以使用你的占亡師算盤占卜逆轉或減輕該死亡所引發之事件的方法。作為一個動作，進行一次 {@dc 15} 智力（{@skill Religion}）檢定。成功時，你會依據該生物的性質與其在世上的地位，得知相關資訊。",
+					"若檢定失敗，占亡師算盤的此屬性在下一個黎明之前無法再次使用。若檢定成功，此屬性在七天後的黎明之前無法再次使用。"
+				],
+				"ENG_name": "Correct the Balance"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"augury"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Occultant Abacus"
 	},
 	"Oil of Etherealness|XDMG": {
 		"name": "虛體之油",
@@ -22537,6 +24508,18 @@
 		"hasFluffImages": true,
 		"ENG_name": "Orb of Dragonkind"
 	},
+	"Orb of Gonging|WDMM": {
+		"name": "鳴鑼寶珠",
+		"source": "WDMM",
+		"page": 174,
+		"rarity": "common",
+		"wondrous": true,
+		"weight": 5,
+		"entries": [
+			"這件普通奇物是一顆重 5 磅、直徑 5 吋的空心寶珠。它的外殼由帶有缺口的青銅環組成，可以轉動讓缺口對齊。對齊缺口需要一個動作，這麼做會讓寶珠發出響亮的鑼聲，直到缺口不再對齊為止。聲音每 6 秒響一次，可以在 600 呎外聽見。"
+		],
+		"ENG_name": "Orb of Gonging"
+	},
 	"Orb of Skoraeus|BGG": {
 		"name": "司寇雷烏斯寶珠",
 		"source": "BGG",
@@ -22634,6 +24617,164 @@
 			"Implements - Common|XDMG"
 		],
 		"ENG_name": "Orb of Time"
+	},
+	"Orc Stone|IDROTF": {
+		"name": "獸人石",
+		"source": "IDRotF",
+		"page": 264,
+		"rarity": "uncommon",
+		"reqAttune": "by a recipient only",
+		"wondrous": true,
+		"entries": [
+			"我救了一個獸人的命，他給了我一顆刻有萬箭部落標誌（一顆被三支箭貫穿的類人頭骨）的石頭。這顆石頭是一件需要同調的非普通魔法物品，而且只有我能與它同調。",
+			"作為一個動作，我可以使用石頭召喚一名獸人戰士的靈魂，它會出現在我 30 呎內。這個靈魂使用《怪物圖鑑》中{@creature orc war chief}的數據，並在 10 分鐘後或生命值降至 0 時消失。這個靈魂理解我說的任何語言，並服從我的命令。",
+			"石頭使用三次後會化為塵土。（見《冰風谷：霜少女之韻》附錄 B）"
+		],
+		"ENG_name": "Orc Stone"
+	},
+	"Order of the Gauntlet Trinket|FRHOF": {
+		"name": "鐵手套騎士團小玩意",
+		"source": "FRHoF",
+		"page": 168,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"entries": [
+			{
+				"type": "table",
+				"caption": "鐵手套騎士團小玩意",
+				"colLabels": [
+					"1d6",
+					"小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"一根重如鉛的白色羽毛"
+					],
+					[
+						"2",
+						"一個以彩繪玻璃製成的空瓶"
+					],
+					[
+						"3",
+						"一支點綴著金箔的錐形香"
+					],
+					[
+						"4",
+						"一條絲綢眼罩"
+					],
+					[
+						"5",
+						"一副手銬的其中一半"
+					],
+					[
+						"6",
+						"一支失去光澤的灑聖水器"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"ENG_name": "Order of the Gauntlet Trinket"
+	},
+	"Orrery of the Wanderer|AI": {
+		"name": "漫遊者天象儀",
+		"source": "AI",
+		"page": 220,
+		"type": "OTH",
+		"rarity": "artifact",
+		"reqAttune": true,
+		"wondrous": true,
+		"bonusAc": "+1",
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d4 + 4}",
+		"charges": 7,
+		"entries": [
+			"這座精巧細緻的發條天象儀具有多個齒輪零件，其掃動的指針與刻度盤代表著位面與魔法領域之間複雜的相互作用。天象儀的外殼高兩呎，本身就是一件灌注了魔法的奇妙裝置，但其六個發條零件的力量讓這件神器更加強大。",
+			"漫遊者天象儀由一位只以洛蒂之名為人所知的著名發條法師所創造。她打造這件聖物，作為汲取位面力量、引導星辰預言與預示之力的手段。但洛蒂很快就發現她的創造物遠比她原本預期的強大。隨著天象儀汲取位面魔法，它開始顯現某些位面固有的黑暗與惡意。最終，它會讓擁有者產生一股渴望，想要打開通往最受詛咒、最危險之世界（包括遠域）的傳送門。",
+			"為了防止天象儀被如此使用，洛蒂將驅動它的零件分散，藏匿在世界各地。但天象儀的求生本能很強，它的零件總有辦法在數十年或數百年間無可避免地重新聚集——被寶藏獵人找到、被怪物偷走、再被找到又被偷走——並且一直越來越靠近彼此。",
+			"隨機屬性。天象儀具有以下隨機決定的屬性：",
+			{
+				"type": "list",
+				"items": [
+					"2 {@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益屬性}",
+					"1 {@table Artifact Properties; Major Beneficial Properties|dmg|主要有益屬性}",
+					"1 項{@table Artifact Properties; Major Detrimental Properties|dmg|主要有害屬性}"
+				]
+			},
+			"天象儀的隨機屬性可能只在所有零件都安裝時才會發揮作用，也可能在缺少任何零件時時有時無地運作。",
+			{
+				"type": "entries",
+				"name": "零件的總和",
+				"entries": [
+					"驅動漫遊者天象儀的六個零件，每一個本身都是強大的魔法聖物：",
+					{
+						"type": "list",
+						"style": "list-no-bullets",
+						"items": [
+							"{@item chronolometer|AI}",
+							"{@item dimensional loop|AI}",
+							"{@item far gear|AI}",
+							"{@item rotor of return|AI}",
+							"{@item timepiece of travel|AI}",
+							"{@item wheel of stars|AI}"
+						]
+					},
+					"生物可以個別與天象儀的零件同調。若與單一零件同調，生物必須持握該零件才能使用其特性。生物也可以與天象儀以及安裝於其中的所有零件同調。與已安裝的零件同調不會計入你通常能同調的魔法物品數量。",
+					"當一個零件未安裝在天象儀中時，它的魔法可能會時有時無地運作，或產生無法預測的副作用，由 DM 決定。"
+				],
+				"ENG_name": "The Sum of Its Parts"
+			},
+			{
+				"type": "entries",
+				"name": "未來回聲",
+				"entries": [
+					"無論是否有零件，天象儀都讓你能短暫瞥見未來，警告你危險的到來。只要天象儀位於你 30 呎內，你的 AC 就獲得 +1 加值。"
+				],
+				"ENG_name": "Future Echoes"
+			},
+			{
+				"type": "entries",
+				"name": "進入虛空",
+				"entries": [
+					"無論是否有零件，已同調的天象儀都會為你的靈魂灌注位面的動盪能量。隨著時間過去，你的陣營會變為混亂中立，並被驅使去接觸與探索最危險的位面領域。"
+				],
+				"ENG_name": "Into the Void"
+			},
+			{
+				"type": "entries",
+				"name": "旅行大師",
+				"entries": [
+					"當漫遊者天象儀的六個零件全部安裝時，這件神器有 7 點充能。觸碰天象儀時，你可以使用一個動作消耗 1 點或更多充能，施展以下法術之一（豁免 {@dc 17}）：{@spell contact other plane}（3 點充能）、{@spell demiplane}（6 點充能）、{@spell gate}（7 點充能）、{@spell plane shift}（5 點充能）或{@spell teleportation circle}（3 點充能）。天象儀每天黎明恢復 {@dice 1d4 + 4} 點已消耗的充能。"
+				],
+				"ENG_name": "Master of Travel"
+			}
+		],
+		"attachedSpells": {
+			"charges": {
+				"3": [
+					"contact other plane",
+					"teleportation circle"
+				],
+				"5": [
+					"plane shift"
+				],
+				"6": [
+					"demiplane"
+				],
+				"7": [
+					"gate"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Orrery of the Wanderer"
 	},
 	"Orzhov Guild Signet|GGR": {
 		"name": "歐佐夫公會印戒",
@@ -23056,6 +25197,18 @@
 		],
 		"ENG_name": "Pearl of Power"
 	},
+	"Pearl of Undead Detection|WDMM": {
+		"name": "偵測不死珍珠",
+		"source": "WDMM",
+		"page": 76,
+		"type": "OTH",
+		"rarity": "unknown (magic)",
+		"value": 50000,
+		"entries": [
+			"當不死生物位於它 120 呎內時，這顆黑珍珠會微微發光。"
+		],
+		"ENG_name": "Pearl of Undead Detection"
+	},
 	"Pearl|XDMG": {
 		"name": "珍珠",
 		"source": "XDMG",
@@ -23316,6 +25469,29 @@
 			"CNS"
 		],
 		"ENG_name": "Philter of Love"
+	},
+	"Piercer|AI": {
+		"name": "刺穿者",
+		"source": "AI",
+		"page": 121,
+		"baseItem": "shortsword|phb",
+		"type": "M",
+		"rarity": "rare",
+		"reqAttune": true,
+		"weight": 2,
+		"weaponCategory": "martial",
+		"property": [
+			"F",
+			"L"
+		],
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"bonusWeapon": "+1",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+			"與這把劍同調的角色從消耗的生命骰恢復可能的最大生命值。然而，已同調的角色每天必須吃兩倍份量的食物（至少 2 磅），以避免{@condition exhaustion}（見《玩家手冊》第 8 章的「環境」）。"
+		],
+		"ENG_name": "Piercer"
 	},
 	"Pig|XDMG": {
 		"name": "豬",
@@ -23716,6 +25892,39 @@
 		],
 		"ENG_name": "Portable Ram"
 	},
+	"Portfolio Keeper|AI": {
+		"name": "作品集夾",
+		"source": "AI",
+		"page": 33,
+		"rarity": "varies",
+		"wondrous": true,
+		"entries": [
+			"在等級 2 時，你獲得一個飽經風霜的皮袋的使用權，它是一件非普通魔法物品。作品集夾能存放並整理筆記、手冊，以及印有你聯絡方式的名片。它也有取之不盡、與你加盟店當前品牌方案相關的手冊。",
+			"當你第一次見到某人時，對方的資料與一幅簡略的素描會以魔法儲存在作品集夾中的一張小羊皮紙卡片上。你可以使用一個附贈動作取得任何這類已儲存卡片的資料。",
+			{
+				"type": "entries",
+				"name": "傳訊名片",
+				"entries": [
+					"在等級 3 時，你的作品集夾的力量變得更強，成為一件珍稀魔法物品。當你發出一張儲存在作品集夾中的名片時，你可以選擇讓這張名片使收件人能透過你的{@item sending stone|AI}聯絡你，如同他們施展了{@spell sending}法術。名片在發出七天後失去這項力量，且同一時間最多只有五張名片具有這項力量。",
+					"你也可以使用你的{@item sending stone|AI}施展{@spell sending}，聯絡任何持有你名片的人。你使用石頭的這項特性後，在七天後的黎明之前無法再次使用。"
+				],
+				"ENG_name": "Cards of Sending"
+			},
+			{
+				"type": "entries",
+				"name": "迷人的自我介紹",
+				"entries": [
+					"同樣在等級 4 時，你能集中心力維持潛在客戶的注意力。當你將作品集夾中的一張名片交給一個類人生物時，你可以對其施展{@spell charm person}（豁免 {@dc 15}）。若該角色弄丟了名片，法術會提早結束。"
+				],
+				"ENG_name": "Charming Introduction"
+			}
+		],
+		"attachedSpells": [
+			"charm person",
+			"sending"
+		],
+		"ENG_name": "Portfolio Keeper"
+	},
 	"Pot of Awakening|XDMG": {
 		"name": "覺醒之盆",
 		"source": "XDMG",
@@ -23880,6 +26089,23 @@
 			"CNS"
 		],
 		"ENG_name": "Potion of Cold Resistance"
+	},
+	"Potion of Comprehension|WDMM": {
+		"name": "通曉藥水",
+		"source": "WDMM",
+		"page": 62,
+		"reprintedAs": [
+			"Potion of Comprehension|XDMG"
+		],
+		"type": "P",
+		"rarity": "common",
+		"entries": [
+			"當你喝下這瓶藥水時，你在 1 小時內獲得{@spell comprehend languages}法術的效果。這種液體是一種透明的調製品，其中漂浮著鹽粒與煤灰。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potion of Comprehension"
 	},
 	"Potion of Comprehension|XDMG": {
 		"name": "通曉藥水",
@@ -24499,6 +26725,21 @@
 		],
 		"ENG_name": "Potion of Possibility"
 	},
+	"Potion of Psionic Fortitude|PABTSO": {
+		"name": "靈能堅韌藥水",
+		"source": "PaBTSO",
+		"page": 219,
+		"type": "P",
+		"rarity": "uncommon",
+		"entries": [
+			"當你喝下這瓶藥水時，你在 1 小時內為避免或結束自身魅惑或震懾狀態而進行的豁免檢定具有優勢。",
+			"這種黑色藥水中旋轉著閃爍的粉紅與紫色斑點。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potion of Psionic Fortitude"
+	},
 	"Potion of Psychic Resistance|XDMG": {
 		"name": "心靈抗性藥水",
 		"source": "XDMG",
@@ -24730,6 +26971,20 @@
 		"hasFluffImages": true,
 		"ENG_name": "Potion of Vitality"
 	},
+	"Potion of Watchful Rest|WDMM": {
+		"name": "警醒休息藥水",
+		"source": "WDMM",
+		"page": 62,
+		"type": "P",
+		"rarity": "common",
+		"entries": [
+			"當你喝下這瓶藥水時，你在接下來 8 小時內獲得以下益處：魔法無法使你入睡，且你可以在長休期間保持清醒並仍獲得其益處。這種甜美的琥珀色飲品對不需要睡眠的生物（例如精靈）沒有效果。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potion of Watchful Rest"
+	},
 	"Potion of Water Breathing|XDMG": {
 		"name": "水下呼吸藥水",
 		"source": "XDMG",
@@ -24930,6 +27185,88 @@
 		],
 		"ENG_name": "Priest's Pack"
 	},
+	"Professor Orb|WDMM": {
+		"name": "教授寶珠",
+		"source": "WDMM",
+		"page": 131,
+		"referenceSources": [
+			"IDRotF"
+		],
+		"rarity": "rare",
+		"wondrous": true,
+		"sentient": true,
+		"weight": 5,
+		"entries": [
+			"每顆教授寶珠都是一顆光滑、實心、重 5 磅的煙灰色石英球，大小約如葡萄柚。仔細檢查會發現球體深處有兩個或更多針尖大小的銀色光點。",
+			"教授寶珠具有知覺，並有著學者的個性。它的陣營由在{@book Dungeon Master's Guide|dmg}第 7 章「{@book 知覺魔法物品|DMG|7|Sentient Magic Items}」一節的陣營表上擲骰決定。無論其性情如何，寶珠的智力為 18，感知與魅力值則各擲 {@dice 3d6} 決定。寶珠能說、讀並理解四種語言，並能在 60 呎範圍內正常視物與聽聞。與大多數知覺物品不同，寶珠沒有自己的意志，無法與持有它的生物發起衝突。",
+			"教授寶珠在四個狹窄的學術領域擁有廣博的知識。在進行智力檢定以回憶其專業領域的知識時，寶珠的擲骰獲得 +9 加值（包含其智力調整值）。",
+			"除了它擁有的知識之外，教授寶珠還可以隨意施展{@spell mage hand}戲法。它只會用這道法術移動自己。它的施法屬性是智力。"
+		],
+		"attachedSpells": {
+			"will": [
+				"mage hand"
+			],
+			"ability": "int"
+		},
+		"ENG_name": "Professor Orb"
+	},
+	"Professor Skant|IDROTF": {
+		"name": "斯坎特教授",
+		"source": "IDRotF",
+		"page": 315,
+		"_copy": {
+			"name": "Professor Orb",
+			"source": "WDMM"
+		},
+		"entries": [
+			"由薇琳·哈佩爾所有、被納斯·蘭托米爾偷走的{@item professor orb|WDMM}自稱斯坎特教授。它是守序善良陣營，感知為 11、魅力為 9{@note （身為教授寶珠，它的智力為 18）}。它能說並閱讀通用語、龍語、精靈語與洛羅斯語（耐瑟瑞爾帝國的死語言）。斯坎特教授是個話匣子，並認為所有類人生物都是笨蛋。在詳細闡述其專業領域時，它會不自覺地帶著居高臨下的語氣。它有以下四個專業領域：",
+			{
+				"type": "list",
+				"items": [
+					"耐瑟瑞爾的歷史（見「{@adventure 耐瑟瑞爾的命運|IDRotF|17|Fate of Netheril}」側欄）",
+					"吸血鬼化與吸血鬼的特性",
+					"製作、裝瓶與飲用精靈瓊漿（一種以陽光與稀有夏季水果蒸餾而成、紅寶石色的稀有精靈酒）的相關儀式",
+					"{@creature tarrasque}（見《怪物圖鑑》）"
+				]
+			},
+			"在進行智力檢定以回憶其專業領域的知識時，寶珠的擲骰獲得 +9 加值（包含其智力調整值）。",
+			"斯坎特教授的外形是一顆光滑、實心、重 5 磅的煙灰色石英球，大小約如葡萄柚。仔細檢查會發現球體深處有兩個或更多針尖大小的銀色光點。",
+			"斯坎特教授能在 60 呎範圍內正常視物與聽聞。與大多數知覺物品不同，這顆寶珠沒有自己的意志，無法與持有它的生物發起衝突。",
+			"除了它擁有的知識之外，斯坎特教授還可以隨意施展{@spell mage hand}戲法。它只會用這道法術移動自己。它的施法屬性是智力。"
+		],
+		"ENG_name": "Professor Skant"
+	},
+	"Propeller Helm|WDMM": {
+		"name": "螺旋槳頭盔",
+		"source": "WDMM",
+		"page": 251,
+		"rarity": "uncommon",
+		"reqAttune": "by a small humanoid",
+		"reqAttuneTags": [
+			{
+				"creatureType": "humanoid",
+				"size": "S"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"戴著這頂頭盔時，佩戴者可以使用一個動作施展{@spell levitate}法術，不需要構材。在法術結束前，頭盔的螺旋槳會旋轉並發出響亮的嗡嗡聲。每當法術結束時，頭盔有 {@chance 50} 的機率失去魔法而成為非魔法物品。"
+		],
+		"ENG_name": "Propeller Helm"
+	},
+	"Prosthetic Limb|FRHOF": {
+		"name": "義肢",
+		"source": "FRHoF",
+		"page": 132,
+		"_copy": {
+			"name": "Prosthetic Limb",
+			"source": "XDMG"
+		},
+		"value": 0,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Prosthetic Limb"
+	},
 	"Prosthetic Limb|TCE": {
 		"name": "義肢",
 		"source": "TCE",
@@ -25021,6 +27358,79 @@
 		],
 		"ENG_name": "Protective Verses"
 	},
+	"Psi Crystal|IDROTF": {
+		"name": "靈能水晶",
+		"source": "IDRotF",
+		"page": 315,
+		"rarity": "uncommon",
+		"reqAttune": "by a creature with an intelligence score of 3 or higher",
+		"reqAttuneTags": [
+			{
+				"int": 3
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"只要你與這顆水晶保持同調，它就會賦予你心靈感應。這種心靈感應的運作規則見{@book 《怪物圖鑑》導論|MM|0|Telepathy}。",
+			"你與這顆水晶同調時，它也會散發紫色的內部光芒。",
+			"你的智力越高，光芒的強度越大，心靈感應的範圍也越大（見「靈能水晶屬性」表）。",
+			{
+				"type": "table",
+				"caption": "靈能水晶屬性",
+				"colStyles": [
+					"col-2 text-center",
+					"col-2 text-center",
+					"col-8"
+				],
+				"colLabels": [
+					"智力值",
+					"心靈感應範圍",
+					"光芒強度"
+				],
+				"rows": [
+					[
+						"3-7",
+						"15 呎",
+						"5 呎範圍內的微光"
+					],
+					[
+						"8-11",
+						"30 呎",
+						"5 呎半徑內的明亮光線，並在額外 5 呎內發出微光"
+					],
+					[
+						"12-15",
+						"60 呎",
+						"10 呎半徑內的明亮光線，並在額外 10 呎內發出微光"
+					],
+					[
+						"16 或更高",
+						"120 呎",
+						"15 呎半徑內的明亮光線，並在額外 15 呎內發出微光"
+					]
+				]
+			}
+		],
+		"light": [
+			{
+				"dim": 5
+			},
+			{
+				"bright": 5,
+				"dim": 10
+			},
+			{
+				"bright": 10,
+				"dim": 20
+			},
+			{
+				"bright": 15,
+				"dim": 30
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Psi Crystal"
+	},
 	"Psychic Absorbing Tattoo|TCE": {
 		"name": "心靈吸收刺青",
 		"source": "TCE",
@@ -25060,6 +27470,57 @@
 		"dmg1": "1d6",
 		"dmgType": "Y",
 		"ENG_name": "Psychic Blade"
+	},
+	"Purple Dragon Knight Trinket|FRHOF": {
+		"name": "紫龍騎士小玩意",
+		"source": "FRHoF",
+		"page": 172,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"entries": [
+			{
+				"type": "table",
+				"caption": "紫龍騎士小玩意",
+				"colLabels": [
+					"1d6",
+					"小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"一隻紫晶龍幼龍的爪子"
+					],
+					[
+						"2",
+						"一塊切割成龍眼形狀的普通紫水晶"
+					],
+					[
+						"3",
+						"一支只有紫晶龍聽得見的信號哨"
+					],
+					[
+						"4",
+						"一顆包在琥珀中的知更鳥蛋"
+					],
+					[
+						"5",
+						"一塊會讓磨過的刀刃微微閃亮的磨刀石"
+					],
+					[
+						"6",
+						"一片從被擊敗的長槍比武對手身上取下的槍盤"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"ENG_name": "Purple Dragon Knight Trinket"
 	},
 	"Purple Worm Poison|DMG": {
 		"name": "紫蟲毒",
@@ -25677,6 +28138,57 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Red Dragon Scale Mail"
+	},
+	"Red Wizard Trinket|FRHOF": {
+		"name": "紅袍法師小玩意",
+		"source": "FRHoF",
+		"page": 176,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"entries": [
+			{
+				"type": "table",
+				"caption": "紅袍法師小玩意",
+				"colLabels": [
+					"1d6",
+					"小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"一根以石化紫杉製成的多瘤魔杖"
+					],
+					[
+						"2",
+						"一個裝著某種未知動物保存心臟的玻璃罐"
+					],
+					[
+						"3",
+						"一個以黑曜石雕成的獨角獸小雕像"
+					],
+					[
+						"4",
+						"一根以你自己的一塊骨頭製成的刺青針"
+					],
+					[
+						"5",
+						"一個蠍子形狀的青銅護符"
+					],
+					[
+						"6",
+						"一把以深紅色鋼鐵製成的剃刀"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"ENG_name": "Red Wizard Trinket"
 	},
 	"Reincarnation Dust|EGW": {
 		"name": "轉生之塵",
@@ -26846,6 +29358,22 @@
 		],
 		"ENG_name": "Ring of the Copycat"
 	},
+	"Ring of the Orator|PABTSO": {
+		"name": "演說家戒指",
+		"source": "PaBTSO",
+		"page": 219,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d6}",
+		"charges": 6,
+		"entries": [
+			"這枚戒指有 6 點充能。戴著它時，你可以消耗 1 點充能，讓你的聲音在 1 分鐘內傳送出去，無論中間有什麼噪音，你 1 哩內的所有生物都能清楚聽見。魔法寂靜、1 呎厚的石頭、1 吋厚的普通金屬、一層薄鉛板或 3 呎厚的木頭會阻擋這種傳聲。若你傳聲時說的是聆聽生物不懂的語言，你可以讓這些生物理解你在說什麼。你必須能看見這些生物才能讓它們理解。戒指每天黎明恢復 {@dice 1d6} 點已消耗的充能。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Ring of the Orator"
+	},
 	"Ring of the Ram|XDMG": {
 		"name": "公羊戒指",
 		"source": "XDMG",
@@ -27927,6 +30455,43 @@
 			"只有當非自願生物處於{@condition Grappled|XPHB}、{@condition Incapacitated|XPHB}或{@condition Restrained|XPHB}狀態時，你才能用繩索綑綁它。若該生物的雙腿被綁住，它會處於{@condition Restrained|XPHB}狀態直到掙脫。要掙脫繩索，該生物必須以一個動作成功通過一次 {@dc 15} 敏捷（{@skill Acrobatics|XPHB}）檢定。"
 		],
 		"ENG_name": "Rope"
+	},
+	"Rotor of Return|AI": {
+		"name": "歸返轉子",
+		"source": "AI",
+		"page": 221,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"bonusSavingThrow": "+1",
+		"entries": [
+			"與這個裝置同調時，你的體質豁免檢定獲得 +1 加值。你會週期性地閃回舊時的記憶，並能準確無誤地回想起過去 30 天內發生的任何事件。",
+			{
+				"type": "entries",
+				"name": "借用物品",
+				"entries": [
+					"你說出一件價值 50 gp 或更低的普通物品，它便會出現在你手中或腳邊。這可以是《玩家手冊》第 5 章「{@book 裝備|PHB|5}」中出現的任何物品，或經 DM 許可選擇的任何類似物品。被召喚的物品是從世界上其他某處傳送到你身邊的，但它是一般通用的物品，因此你可以召喚一把長劍，卻無法借用某個特定生物的長劍。物品在出現 10 分鐘後消失。你使用歸返轉子的這項特性後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Borrow Object"
+			},
+			{
+				"type": "entries",
+				"name": "回想密碼",
+				"entries": [
+					"作為一個動作，你可以將你目前的位置設定為鎖定在轉子上的歸返點。此後任何時候，只要你位於該點 500 呎內，你就可以使用一個附贈動作傳送到轉子的歸返點。你使用歸返轉子傳送後，此特性在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Recall Code"
+			},
+			{
+				"type": "entries",
+				"name": "整體的一部分",
+				"entries": [
+					"當這個零件未安裝在{@item Orrery of the Wanderer|AI}中時，它的魔法可能會時有時無地運作，或產生無法預測的副作用，由 DM 決定。"
+				],
+				"ENG_name": "Part of a Whole"
+			}
+		],
+		"ENG_name": "Rotor of Return"
 	},
 	"Rowboat|XPHB": {
 		"name": "划艇",
@@ -29153,6 +31718,38 @@
 		"hasFluffImages": true,
 		"ENG_name": "Scroll of Protection (Undead)"
 	},
+	"Scroll of Tarrasque Summoning|IDROTF": {
+		"name": "召喚泰拉斯克卷軸",
+		"source": "IDRotF",
+		"page": 315,
+		"reprintedAs": [
+			"Scroll of Titan Summoning (Tarrasque)|XDMG"
+		],
+		"type": "SC|DMG",
+		"rarity": "legendary",
+		"entries": [
+			"使用一個動作閱讀卷軸，會讓{@creature tarrasque}（見《怪物圖鑑》中該生物的條目）出現在你 1 哩內一個你能看見的未被佔據空間。泰拉斯克在生命值降至 0 時消失，並對自己以外的所有生物懷有敵意。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Scroll of Tarrasque Summoning"
+	},
+	"Scroll of the Comet|IDROTF": {
+		"name": "彗星卷軸",
+		"source": "IDRotF",
+		"page": 315,
+		"type": "SC|DMG",
+		"rarity": "legendary",
+		"entries": [
+			"使用一個動作閱讀卷軸，你會讓一顆彗星從天而降，撞擊在你至多 1 哩外一個你能看見的點。使用卷軸時你必須位於戶外，否則什麼也不會發生，卷軸也會被浪費。",
+			"彗星撞擊時會造成一個深 50 呎、半徑 500 呎的隕石坑。該半徑內的任何生物都必須進行一次 {@dc 20} 敏捷豁免檢定，失敗時受到 {@damage 30d10} 點力場傷害，成功時傷害減半。隕石坑內的所有建築都會被摧毀，所有未被穿戴或持握的非魔法物體也是。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Scroll of the Comet"
+	},
 	"Scroll of Titan Summoning (Animal Lord)|XDMG": {
 		"name": "泰坦召喚卷軸（動物之王）",
 		"source": "XDMG",
@@ -29362,6 +31959,84 @@
 		"hasFluffImages": true,
 		"ENG_name": "Selesnya Keyrune"
 	},
+	"Sending Stone|AI": {
+		"name": "傳訊石",
+		"source": "AI",
+		"page": 33,
+		"referenceSources": [
+			"CRCotN"
+		],
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"同樣在等級 1 時，你獲得一顆收購股份有限公司傳訊石的使用權，它是一件非普通魔法物品，外觀像一顆鑲在醒目底座上的寶石。它的功能如同一般的傳訊石，但它沒有配對的石頭，並能與總部、你認識的特定秘書員，以及離你所在位置最近的秘書員溝通。你必須成功通過一次 {@dc 15} 智力（{@skill Arcana}）檢定才能建立聯繫。石頭成功使用一次後，在下一個黎明之前無法再次使用。",
+			"與其他秘書員聯繫的前提是他們持有自己的傳訊石。",
+			{
+				"type": "table",
+				"caption": "你的傳訊石的怪癖",
+				"colLabels": [
+					"d8",
+					"怪癖"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"它是一顆翻蓋石。"
+					],
+					[
+						"2",
+						"它在任何地方收訊都很好，除了在你的總部。"
+					],
+					[
+						"3",
+						"它有時會接收到其他魔法對話。"
+					],
+					[
+						"4",
+						"它的大小、形狀與重量完美，可以拿來打水漂。"
+					],
+					[
+						"5",
+						"你使用它時它會發熱，熱到曾經燒穿你的手套。"
+					],
+					[
+						"6",
+						"它有一個惱人的鈴聲，你一直搞不懂怎麼換。"
+					],
+					[
+						"7",
+						"它有訊息傳入時不會通知你，只會發出微弱的脈動光芒。"
+					],
+					[
+						"8",
+						"它是聲控的，所以每次你跟別人說話時，它都會試著傳訊息給另一個人。"
+					]
+				]
+			},
+			{
+				"type": "entries",
+				"name": "傳聞工廠",
+				"entries": [
+					"同樣在等級 2 時，每當你的加盟店展開一項重大任務或使命時，進行一次 {@dc 15} 智力（{@skill History}）檢定。成功時，你可以得知至多三則與該任務所涉及之生物或組織相關的傳聞，這些傳聞會透過你的傳訊石傳到你這裡。這些傳聞反映了收購股份有限公司或該組織眾多人脈所擁有的當前或歷史知識。"
+				],
+				"ENG_name": "Rumor Mill"
+			},
+			{
+				"type": "entries",
+				"name": "進階傳聞工廠",
+				"entries": [
+					"在等級 3 時，當你使用你的「傳聞工廠」特性時，DM 會讓你感覺到某則傳聞中哪些部分不正確（如果有的話）。你不一定會得知那些錯誤傳聞背後的真相。"
+				],
+				"ENG_name": "Improved Rumor Mill"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Sending Stone"
+	},
 	"Sending Stones|XDMG": {
 		"name": "傳訊石",
 		"source": "XDMG",
@@ -29566,6 +32241,31 @@
 		"value": 200,
 		"ENG_name": "Sheep"
 	},
+	"Shield Guardian Amulet|IDROTF": {
+		"name": "盾衛傀儡護符",
+		"source": "IDRotF",
+		"page": 149,
+		"referenceSources": [
+			"RtG"
+		],
+		"rarity": "rare",
+		"reqAttune": "by a humanoid",
+		"reqAttuneTags": [
+			{
+				"creatureType": "humanoid"
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這個護符是一個寬 4 吋、以銀框木頭構成的圓盤，正面刻著一個符文。{@spell detect magic}法術能揭露護符周圍有惑控學派的魔法靈光。",
+			"每具{@creature shield guardian}都有一個以魔法與它連結的護符。一具盾衛傀儡只能有一個對應的護符，若該護符被摧毀，盾衛傀儡會處於{@condition incapacitated}狀態，直到製作出替代的護符為止。",
+			"若盾衛傀儡的護符沒有被穿戴或攜帶，它可以直接受到攻擊。它的 AC 為 10，有 10 點生命值，並免疫毒素與心靈傷害。製作一個護符需要 1 週，並花費 1,000 gp 的材料。",
+			"盾衛傀儡唯一的專注目標就是保護護符的佩戴者。護符的佩戴者可以命令傀儡攻擊其敵人，或保護持有者免受攻擊。若一次攻擊可能傷害佩戴者，這個構裝體可以用魔法將這次打擊吸收到自己身上，即使相隔一段距離也可以。",
+			"與這個護符同調的類人生物，只要護符與傀儡位於同一個存在位面，就知道盾衛傀儡的距離與方向。作為一個動作，護符的已同調佩戴者可以嘗試重新啟動盾衛傀儡，成功通過一次 {@dc 20} 智力（{@skill Arcana}）檢定即可。只有在護符與傀儡彼此相距 10 呎內時才能嘗試重新啟動。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Shield Guardian Amulet"
+	},
 	"Shield of Expression|XDMG": {
 		"name": "表情之盾",
 		"source": "XDMG",
@@ -29743,6 +32443,64 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Shield of the Tortoise"
+	},
+	"Shield of the Uven Rune|WDMM": {
+		"name": "敵之符文盾",
+		"source": "WDMM",
+		"page": 299,
+		"type": "S",
+		"immune": [
+			"cold"
+		],
+		"rarity": "very rare",
+		"reqAttune": true,
+		"weight": 6,
+		"ac": 2,
+		"bonusWeapon": "+1",
+		"entries": [
+			"這面盾牌以一條遠古白龍的鱗片製成。它朝外的一面烙著一個符文。檢查符文並成功通過一次 {@dc 20} 智力（{@skill History}）檢定的角色，能認出這是賦予強大力量的敵之符文（巨人語為 uven）。",
+			"持握盾牌時，你獲得以下屬性的益處。",
+			{
+				"type": "entries",
+				"name": "寒冬之友",
+				"entries": [
+					"你免疫寒冷傷害。"
+				],
+				"ENG_name": "Winter's Friend"
+			},
+			{
+				"type": "entries",
+				"name": "致命斥責",
+				"entries": [
+					"當一個生物以近戰攻擊命中你後，你可以立即使用你的反應對該生物造成 {@damage 3d6} 點黯蝕傷害。"
+				],
+				"ENG_name": "Deadly Rebuke"
+			},
+			{
+				"type": "entries",
+				"name": "災禍術",
+				"entries": [
+					"你可以從盾牌施展{@spell bane}法術（豁免 {@dc 17}）。該法術不需要{@status concentration}，持續 1 分鐘。你從盾牌施展該法術後，在你完成一次短休或長休之前無法再次如此。"
+				],
+				"ENG_name": "Bane"
+			},
+			{
+				"type": "entries",
+				"name": "復仇之禮",
+				"entries": [
+					"你可以用一根手指在非魔法武器上描繪敵之符文，將盾牌的魔法轉移到該武器上。轉移需要 8 小時的工作，期間兩件物品必須位於彼此 5 呎內。結束時，盾牌會被摧毀，符文則刻印或烙印在所選的武器上。這把武器成為一件需要同調的珍稀魔法物品。它具有 +1 武器的屬性。當武器用來對付以下生物類型之一（由你在打造魔法武器時選擇）時，加值提升至 +3：異怪、天界生物、構裝體、龍、元素、精類、邪魔、巨人或不死生物。"
+				],
+				"ENG_name": "Gift of Vengeance"
+			}
+		],
+		"attachedSpells": {
+			"rest": {
+				"1e": [
+					"bane"
+				]
+			}
+		},
+		"ENG_name": "Shield of the Uven Rune"
 	},
 	"Shiftweave|ERLW": {
 		"name": "變織衣",
@@ -30203,7 +32961,7 @@
 		"wondrous": true,
 		"recharge": "dawn",
 		"entries": [
-			"作為一個動作，你可以揮舞這張牌，用它以 6 環法術施展{@spell Spirit of Death|BMT}（見{@book chapter 7|BMT|6|Spirit of Death}）（法術攻擊加值 {@hit 9}，豁免 {@dc 17}）。此屬性使用後，在下一個黎明之前無法再次使用。"
+			"作為一個動作，你可以揮舞這張牌，用它以 6 環法術施展{@spell Spirit of Death|BMT}（見{@book 第 7 章|BMT|6|Spirit of Death}）（法術攻擊加值 {@hit 9}，豁免 {@dc 17}）。此屬性使用後，在下一個黎明之前無法再次使用。"
 		],
 		"attachedSpells": {
 			"daily": {
@@ -30291,6 +33049,35 @@
 		"travelCost": 200,
 		"shippingCost": 100,
 		"ENG_name": "Skyship"
+	},
+	"Sled Dog|FRHOF": {
+		"name": "雪橇犬",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "MNT|XPHB",
+		"rarity": "none",
+		"value": 5000,
+		"entries": [
+			"雪橇犬使用{@creature Wolf|XMM}的數據（見《怪物圖鑑》）。單獨拉雪橇的雪橇犬在拉雪橇 1 小時後必須進行一次{@variantrule Short Rest|XPHB|短休}；否則，牠會獲得 1 級{@condition Exhaustion|XPHB|力竭}。"
+		],
+		"hasFluff": true,
+		"ENG_name": "Sled Dog"
+	},
+	"Sled Dog|IDROTF": {
+		"name": "雪橇犬",
+		"source": "IDRotF",
+		"page": 20,
+		"reprintedAs": [
+			"Sled Dog|FRHoF"
+		],
+		"type": "MNT",
+		"rarity": "none",
+		"value": 5000,
+		"entries": [
+			"一隻雪橇犬（使用《怪物圖鑑》附錄 A 中{@creature wolf}的數據）售價 50 gp，可以拉動 360 磅。",
+			"雪橇犬在拉雪橇 1 小時後必須進行一次短休；否則，牠們會獲得 1 級{@condition exhaustion}。"
+		],
+		"ENG_name": "Sled Dog"
 	},
 	"Sled|XPHB": {
 		"name": "雪橇",
@@ -30386,6 +33173,19 @@
 			"對煙粉施展{@spell dispel magic}會使它永久失效。"
 		],
 		"ENG_name": "Smokepowder"
+	},
+	"Snowshoes|IDROTF": {
+		"name": "雪鞋",
+		"source": "IDRotF",
+		"page": 20,
+		"type": "G",
+		"rarity": "none",
+		"weight": 4,
+		"value": 200,
+		"entries": [
+			"雪鞋能降低穿著者陷入深雪中的可能性。"
+		],
+		"ENG_name": "Snowshoes"
 	},
 	"Soothsalts|EGW": {
 		"name": "舒緩鹽",
@@ -31073,6 +33873,63 @@
 		"hasFluffImages": true,
 		"ENG_name": "Sphere of Annihilation"
 	},
+	"Spider Staff|PABTSO": {
+		"name": "蜘蛛法杖",
+		"source": "PaBTSO",
+		"page": 220,
+		"type": "M",
+		"rarity": "rare",
+		"reqAttune": "by a bard, sorcerer, warlock, or wizard",
+		"reqAttuneTags": [
+			{
+				"class": "bard"
+			},
+			{
+				"class": "sorcerer"
+			},
+			{
+				"class": "warlock"
+			},
+			{
+				"class": "wizard"
+			}
+		],
+		"weight": 4,
+		"weaponCategory": "simple",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"recharge": "dusk",
+		"rechargeAmount": "{@dice 1d6 + 4}",
+		"charges": 10,
+		"staff": true,
+		"entries": [
+			"這把魔法長棍的頂端形似一隻蜘蛛。用來進行武器攻擊時，它命中時額外造成 {@damage 1d6} 點毒素傷害。",
+			{
+				"type": "entries",
+				"name": "法術",
+				"entries": [
+					"法杖有 10 點充能。持握它時，你可以消耗所需數量的充能，從法杖施展以下法術之一：{@spell spider climb}（1 點充能）或{@spell web}（2 點充能；法術豁免 {@dc 15}）。",
+					"法杖每天黃昏恢復 {@dice 1d6 + 4} 點已消耗的充能。若你消耗法杖的最後 1 點充能，擲一顆 {@dice d20}。若擲出 1，法杖會碎成塵土並被摧毀。"
+				],
+				"ENG_name": "Spells"
+			}
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"spider climb"
+				],
+				"2": [
+					"web"
+				]
+			}
+		},
+		"ENG_name": "Spider Staff"
+	},
 	"Spies' Murmur|GGR": {
 		"name": "間諜低語",
 		"source": "GGR",
@@ -31208,6 +34065,17 @@
 		"rarity": "none",
 		"value": 100,
 		"ENG_name": "Sprig of Mistletoe"
+	},
+	"Spyglass of Clairvoyance|AI": {
+		"name": "千里眼望遠鏡",
+		"source": "AI",
+		"page": 19,
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			"在等級 2 時，你由總部提供的望遠鏡成為一件普通魔法物品。作為一個動作，你可以透過千里眼望遠鏡觀看你 1 哩內一個擋住你視線的地點，例如一座山、城堡或森林。你接著必須成功通過一次使用{@item cartographer's tools|phb}的 {@dc 15} 感知檢定，繪製出所選地點三哩內的自然地形。你不會得知任何關於生物、建築或自然地形以外任何事物的資訊。望遠鏡的此屬性在下一個黎明之前無法再次使用。"
+		],
+		"ENG_name": "Spyglass of Clairvoyance"
 	},
 	"Spyglass|XPHB": {
 		"name": "望遠鏡",
@@ -31403,6 +34271,64 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Staff of Charming"
+	},
+	"Staff of Defense|PABTSO": {
+		"name": "防禦法杖",
+		"source": "PaBTSO",
+		"page": 220,
+		"type": "M",
+		"rarity": "rare",
+		"reqAttune": "by a bard, sorcerer, warlock, or wizard",
+		"reqAttuneTags": [
+			{
+				"class": "bard"
+			},
+			{
+				"class": "sorcerer"
+			},
+			{
+				"class": "warlock"
+			},
+			{
+				"class": "wizard"
+			}
+		],
+		"weight": 3,
+		"weaponCategory": "simple",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"bonusAc": "+1",
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d6 + 4}",
+		"charges": 10,
+		"staff": true,
+		"entries": [
+			"這根細長、中空的法杖以玻璃製成，卻如橡木般堅固。它重 3 磅。持握法杖時，你的護甲等級獲得 +1 加值。",
+			{
+				"type": "entries",
+				"name": "法術",
+				"entries": [
+					"法杖有 10 點充能。持握它時，你可以消耗所需數量的充能，從法杖施展以下法術之一：{@spell mage armor}（1 點充能）或{@spell shield}（2 點充能）。",
+					"法杖每天黎明恢復 {@dice 1d6 + 4} 點已消耗的充能。若你消耗法杖的最後 1 點充能，擲一顆 {@dice d20}。若擲出 1，法杖會碎裂並被摧毀。"
+				],
+				"ENG_name": "Spells"
+			}
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"mage armor"
+				],
+				"2": [
+					"shield"
+				]
+			}
+		},
+		"ENG_name": "Staff of Defense"
 	},
 	"Staff of Dunamancy|EGW": {
 		"name": "時空術法杖",
@@ -32800,6 +35726,20 @@
 		],
 		"ENG_name": "Star Sapphire"
 	},
+	"Statuette of Augury|PABTSO": {
+		"name": "卜筮小雕像",
+		"source": "PaBTSO",
+		"page": 62,
+		"rarity": "unknown (magic)",
+		"wondrous": true,
+		"entries": [
+			"這座精靈金雕像價值 100 gp，並灌注了預言魔法。一個握著雕像的非邪惡生物可以向它提出一個問題，並收到一個心靈感應回應，如同該生物施展了{@spell augury}。一個生物提出問題並收到回應後，就永遠無法再次啟動這座小雕像。"
+		],
+		"attachedSpells": [
+			"augury"
+		],
+		"ENG_name": "Statuette of Augury"
+	},
 	"Stone of Controlling Earth Elementals|XDMG": {
 		"name": "控制土元素之石",
 		"source": "XDMG",
@@ -33772,6 +36712,17 @@
 		"hasFluffImages": true,
 		"ENG_name": "Talons Card"
 	},
+	"Tangler Grenade|WDMM": {
+		"name": "纏絆手榴彈",
+		"source": "WDMM",
+		"page": 244,
+		"type": "OTH",
+		"rarity": "none",
+		"entries": [
+			"纏絆手榴彈是一種煉金、非魔法的物品，有一個撞擊時會碎裂的卵形樹脂外殼。作為一個動作，生物可以將纏絆手榴彈擲向至多 60 呎外的一點。碎裂的纏絆手榴彈 10 呎內的每個生物都必須成功通過一次 {@dc 15} 敏捷豁免檢定，否則被黏稠的白色蛛網{@condition restrained}。作為一個動作，生物可以嘗試讓自己或其觸及範圍內的另一個生物脫離蛛網，成功通過一次 {@dc 20} 力量（{@skill Athletics}）檢定即可。一加侖的酒精可以溶解單一纏絆手榴彈產生的蛛網。否則，蛛網會在 1 小時後自行溶解，釋放所有被它們{@condition restrained}的生物。"
+		],
+		"ENG_name": "Tangler Grenade"
+	},
 	"Tankard of Sobriety|XDMG": {
 		"name": "清醒酒杯",
 		"source": "XDMG",
@@ -33798,6 +36749,79 @@
 			"黃銅幣，約兩吋見方，中間有一個大到能放進{@item nib|wdh}的孔（1 陶爾幣 = 200 {@item nib|wdh|尼布}）"
 		],
 		"ENG_name": "Taol"
+	},
+	"Tearulai|WDMM": {
+		"name": "提魯萊",
+		"source": "WDMM",
+		"page": 70,
+		"baseItem": "longsword|phb",
+		"type": "M",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"sentient": true,
+		"weight": 3,
+		"weaponCategory": "martial",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d8",
+		"dmgType": "S",
+		"dmg2": "1d10",
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d4 + 2}",
+		"charges": 6,
+		"entries": [
+			"長劍提魯萊是一把具有知覺、陣營為中立善良的{@item sword of sharpness}，有著祖母綠色的劍刃，劍柄與柄頭嵌著珍貴寶石。在它從瓦德瑪的頭骨中被取出之前，劍的魔法屬性會被壓制。",
+			"邪惡生物無法與提魯萊同調；任何嘗試同調的邪惡生物會受到 20 點心靈傷害。這把武器的祖母綠劍刃無法被損壞或變鈍，且在劍與持用者彼此同調期間，劍無法在沒有持用者的情況下被傳送到任何地方。",
+			{
+				"type": "entries",
+				"name": "法術",
+				"entries": [
+					"這把劍有 6 點充能，每天黎明恢復 {@dice 1d4 + 2} 點已消耗的充能。與劍同調的生物可以使用一個動作消耗 1 點或更多充能，從劍施展以下法術之一，不需要材料構材：{@spell fly}（2 點充能）、{@spell polymorph}（3 點充能）或{@spell transport via plants}（4 點充能）。"
+				],
+				"ENG_name": "Spells"
+			},
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"這把劍的智力為 17、感知 12、魅力 20。它具有聽覺，以及範圍 120 呎的{@sense truesight}。它以心靈感應與已同調的持用者溝通，能說、讀並理解通用語、龍語、精靈語與木族語。此外，這把劍能確定任何被帶到它 5 呎內之寶石的真正價值。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"type": "entries",
+				"name": "個性",
+				"entries": [
+					"提魯萊欣賞極致的美、音樂、精美藝術與詩歌。這把虛榮的武器總是努力改善自己的外表。它渴望寶石，並尋找更好的寶石來裝飾自己。最重要的是，它渴望回到它被打造的迷斯卓諾周圍的森林。若持用者的目標與它的目標相悖，提魯萊會試圖控制持用者並逃離地底山脈，之後它便能使用{@spell transport via plants}法術回到它的來處。"
+				],
+				"ENG_name": "Personality"
+			},
+			"當你以這把魔法劍攻擊一件物體並命中時，你對目標的武器傷害骰取最大值。",
+			"當你以這把武器攻擊一個生物且攻擊檢定擲出 20 時，該目標額外受到 14 點劈砍傷害。接著再擲一顆 {@dice d20}。若擲出 20，你斬斷目標的一條肢體，此損失的效果由 DM 決定。若該生物沒有可斬斷的肢體，你改為斬下它身體的一部分。",
+			"{@note 註：根據 SRD，額外傷害為 {@damage 4d6} 點劈砍傷害，不過{@link 這是錯誤的|https://rpg.stackexchange.com/a/174522/53884}。}",
+			"此外，你可以說出劍的命令語，讓劍刃在 10 呎半徑內發出明亮光線，並在額外 10 呎內發出微光。再次說出命令語或將劍收入鞘中會熄滅光芒。"
+		],
+		"light": [
+			{
+				"bright": 10,
+				"dim": 20
+			}
+		],
+		"attachedSpells": {
+			"charges": {
+				"2": [
+					"fly"
+				],
+				"3": [
+					"polymorph"
+				],
+				"4": [
+					"transport via plants"
+				]
+			}
+		},
+		"ENG_name": "Tearulai"
 	},
 	"Teeth of Dahlver-Nar|TCE": {
 		"name": "達爾佛納之牙",
@@ -34125,6 +37149,28 @@
 		"hasFluffImages": true,
 		"ENG_name": "Tentacle Rod"
 	},
+	"Thayan Spell Tattoo|FRHOF": {
+		"name": "賽法術刺青",
+		"source": "FRHoF",
+		"page": 176,
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這個魔法刺青蘊含一道由刺青製作者選擇的 1–3 環法術的精華。當刺青在你身上時，你總是準備著相關的法術，並可以使用你擁有的任何適當環階的法術位施展該法術。若你擁有施法或契約魔法特性，該法術使用你的施法屬性；否則，若法術需要豁免檢定或攻擊檢定，法術豁免 DC 為 13，攻擊加值為 +5。若你與刺青的{@variantrule Attunement|XPHB|同調}結束，刺青便會消失。",
+			"你也可以不使用法術位與法術構材施展該法術一次。以此方式施展法術後，刺青便會消失。",
+			{
+				"type": "inset",
+				"name": "刺上賽法術刺青",
+				"entries": [
+					"賽的魔法刺青藝術被其施行者嚴加守護，因此賽法術刺青無法像其他魔法物品一樣被製作。要學習如何刺上賽法術刺青，你必須在紅袍法師中擁有 50 以上的聲望值。",
+					"要刺上賽法術刺青，你必須熟練{@skill Arcana|XPHB}技能與{@item Calligrapher's Supplies|XPHB}，並在刺青的每一天都準備著該法術。你也必須備妥該法術所需的任何材料構材；若法術會消耗其材料構材，則在你完成刺青時消耗。刺上一個賽法術刺青所需的{@book 時間與金錢|XDMG|6|Time and Cost}，與抄寫同等環階的{@item Spell Scroll|XDMG}相同。"
+				],
+				"ENG_name": "Inking Thayan Spell Tattoos"
+			}
+		],
+		"ENG_name": "Thayan Spell Tattoo"
+	},
 	"The Bloody End (Awakened)|EGW": {
 		"name": "血腥終結（覺醒）",
 		"source": "EGW",
@@ -34271,6 +37317,49 @@
 		"bonusWeapon": "+3",
 		"ENG_name": "The Bloody End (Exalted)"
 	},
+	"The Codicil of White|IDROTF": {
+		"name": "白之附錄",
+		"source": "IDRotF",
+		"page": 317,
+		"rarity": "unknown (magic)",
+		"wondrous": true,
+		"entries": [
+			"《白之附錄》是一本高而薄的書，以白色貂皮包覆在風乾的白松木板上，並以一個失去光澤的銀製扣環與鎖封住。書摸起來冰冷，毛皮的邊緣因使用而磨損。其中的二十七頁是外緣塗有銀箔的犢皮紙。整本書以肌腱條縫在皮革裝訂上，使它相當耐用。",
+			"持有這本附錄的生物具有寒冷傷害抗性。",
+			"這本附錄是歐呂爾的信徒所寫，作為崇拜她的入門書。第一頁是印有歐呂爾雪花標誌的扉頁。其餘頁面以令人不寒而慄的細節描述各種祭司儀式與典禮。在這些描述之中，藏著一道法師可以學習的法術（{@spell frost fingers|IDRotF}），以及一首名為〈霜少女之韻〉的詩（見附錄 E）。這首詩是一段咒語，其力量可以用來劈開冰河（見第 6 章）。這首詩可能還有其他能力，由你決定"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "The Codicil of White"
+	},
+	"The Incantations of Iriolarthas|IDROTF": {
+		"name": "伊瑞歐拉薩斯的咒語集",
+		"source": "IDRotF",
+		"page": 317,
+		"type": "G",
+		"rarity": "unknown",
+		"weight": 3,
+		"entries": [
+			"《伊瑞歐拉薩斯的咒語集》是一本沉重的法術書。它的黑色皮革封面上黏著死掉、長滿牙齒的蠕蟲，外面包覆著一層光亮的清漆。在前封面這片令人毛骨悚然的裝飾中，嵌著一個金色符文，形似一隻風格化的眼睛，瞳孔呈燭焰形狀——這是耐瑟瑞爾巫妖伊瑞歐拉薩斯的符印。",
+			"這本書有六十頁易碎的黃色犢皮紙。這些頁面上寫著以下法師法術：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					"1 環：{@spell alarm}、{@spell detect magic}、{@spell identify}、{@spell magic missile}、{@spell shield}、{@spell Tasha's hideous laughter}、{@spell thunderwave}",
+					"2 環：{@spell arcane lock}、{@spell continual flame}、{@spell invisibility}、{@spell knock}、{@spell levitate}、{@spell Melf's acid arrow}、{@spell mirror image}",
+					"3 環：{@spell animate dead}、{@spell bestow curse}、{@spell clairvoyance}、{@spell counterspell}、{@spell dispel magic}、{@spell fireball}、{@spell glyph of warding}",
+					"4 環：{@spell arcane eye}、{@spell banishment}、{@spell blight}、{@spell dimension door}、{@spell Evard's black tentacles}、{@spell phantasmal killer}",
+					"5 環：{@spell Bigby's hand}、{@spell cloudkill}、{@spell dominate person}、{@spell planar binding}、{@spell scrying}、{@spell telekinesis}",
+					"6 環：{@spell create undead}、{@spell disintegrate}、{@spell globe of invulnerability}、{@spell move earth}、{@spell Otto's irresistible dance}",
+					"7 環：{@spell create magen|IDRotF}、{@spell finger of death}、{@spell prismatic spray}、{@spell teleport}",
+					"8 環：{@spell demiplane}、{@spell dominate monster}、{@spell mind blank}、{@spell power word stun}",
+					"9 環：{@spell blade of disaster|TCE}、{@spell power word kill}"
+				]
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "The Incantations of Iriolarthas"
+	},
 	"Theki Root|EGW": {
 		"name": "塞基根",
 		"source": "EGW",
@@ -34285,6 +37374,17 @@
 			"CNS"
 		],
 		"ENG_name": "Theki Root"
+	},
+	"Thermal Cube|IDROTF": {
+		"name": "熱能方塊",
+		"source": "IDRotF",
+		"page": 316,
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			"這個 3 吋見方的實心硫磺方塊會產生足夠的乾熱，讓它 15 呎內的溫度保持在華氏 95 度（攝氏 35 度）。"
+		],
+		"ENG_name": "Thermal Cube"
 	},
 	"Thieves' Tools|XPHB": {
 		"name": "盜賊工具",
@@ -34534,6 +37634,54 @@
 		],
 		"ENG_name": "Tiger Eye"
 	},
+	"Timepiece of Travel|AI": {
+		"name": "旅行時計",
+		"source": "AI",
+		"page": 221,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"bonusSavingThrow": "+1",
+		"entries": [
+			"與這個裝置同調時，你的敏捷豁免檢定獲得 +1 加值，且你總是知道哪個方向是北方。此外，你可以隨意對自己施展{@spell longstrider}法術。",
+			{
+				"type": "entries",
+				"name": "逐步導航",
+				"entries": [
+					"你可以說出你目前位置 10 哩內任何一個地點，只要該地點 10 哩內至少有一個生物（包括你）知道它。你說出地點後，一個只有你聽得見的無形聲音會以最安全、最直接的路線提供前往該地點的方向。這個聲音知道要避開自然危害，因此不會讓你穿越無路可循的荒野或走進湖中。但它不知道也無法幫你避開怪物、敵人、陷阱、上鎖的門等。",
+					"時計對於前往完全保密或範圍內沒有任何生物知道的地點毫無用處。你使用旅行時計的這項特性後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Turn-by-Turn Directions"
+			},
+			{
+				"type": "entries",
+				"name": "遠離塵囂",
+				"entries": [
+					"作為一個動作，你可以施展{@spell teleport}法術。你使用旅行時計的這項特性後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Get Away From It All"
+			},
+			{
+				"type": "entries",
+				"name": "整體的一部分",
+				"entries": [
+					"當這個零件未安裝在{@item Orrery of the Wanderer|AI}中時，它的魔法可能會時有時無地運作，或產生無法預測的副作用，由 DM 決定。"
+				],
+				"ENG_name": "Part of a Whole"
+			}
+		],
+		"attachedSpells": {
+			"will": [
+				"longstrider"
+			],
+			"daily": {
+				"1e": [
+					"teleport"
+				]
+			}
+		},
+		"ENG_name": "Timepiece of Travel"
+	},
 	"Tinderbox|XPHB": {
 		"name": "打火匣",
 		"source": "XPHB",
@@ -34752,6 +37900,20 @@
 		],
 		"ENG_name": "Tourmaline"
 	},
+	"Travel Alchemical Kit|AI": {
+		"name": "旅行煉金工具組",
+		"source": "AI",
+		"page": 30,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"grantsProficiency": true,
+		"entries": [
+			"同樣在等級 3 時，總部會提供你一套旅行煉金工具組——一件非普通魔法物品，內含{@item alchemist's supplies|phb}與{@item poisoner's kit|phb}的迷你版本（玻璃小瓶、研缽與研杵、化學藥劑與玻璃攪拌棒）。作為這次升級的一部分，你獲得{@item poisoner's kit|phb}的熟練。",
+			"只要這套魔法工具組在你身上，你就可以使用它，不需要取出或收起。若你被搜身，找到你的旅行煉金工具組需要成功通過一次 {@dc 20} 智力（{@skill Investigation}）或感知（{@skill Insight}）檢定。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Travel Alchemical Kit"
+	},
 	"Traveler's Clothes|XPHB": {
 		"name": "旅行者服裝",
 		"source": "XPHB",
@@ -34820,6 +37982,435 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Trident of Fish Command"
+	},
+	"Trinket|AI": {
+		"name": "小玩意",
+		"source": "AI",
+		"page": 222,
+		"type": "G",
+		"rarity": "none",
+		"entries": [
+			"擔心自己在公司活動上拿出裝在透明玻璃瓶裡的死掉的精靈，卻發現加盟店裡另外三個人也有一個？那就考慮在收購股份有限公司小玩意表上擲骰，而不是{@item Trinket|phb|《玩家手冊》第 5 章的表}，在創建角色時獲得一件帶有收購公司風格的獨特小玩意。",
+			{
+				"type": "table",
+				"caption": "收購股份有限公司小玩意",
+				"colLabels": [
+					"d100",
+					"小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"一顆完美的打水漂石頭"
+					],
+					[
+						"2",
+						"三顆總是擲出小點數的灌鉛骰子"
+					],
+					[
+						"3",
+						"一個裝著吉姆·黑魔法照片的小盒墜"
+					],
+					[
+						"4",
+						"一個小鐵砧與鐵匠鎚"
+					],
+					[
+						"5",
+						"一根無法運作的定身桿"
+					],
+					[
+						"6",
+						"一套 DIY 針灸組"
+					],
+					[
+						"7",
+						"一個梟熊填充玩偶"
+					],
+					[
+						"8",
+						"一張新式戰爭魯特琴的設計圖"
+					],
+					[
+						"9",
+						"一份向一個沒人聽過的國家宣戰的宣言"
+					],
+					[
+						"10",
+						"一支會冒出綠煙的菸斗"
+					],
+					[
+						"11",
+						"一顆玻璃眼珠"
+					],
+					[
+						"12",
+						"一盞無價吊燈的中心裝飾"
+					],
+					[
+						"13",
+						"一根有暗格的精緻手杖"
+					],
+					[
+						"14",
+						"一封蘿西·蜂刺寫的信"
+					],
+					[
+						"15",
+						"一枚總是以側邊立著落地的硬幣"
+					],
+					[
+						"16",
+						"一座廢棄風車與三英畝可耕地的地契與產權證明，但你一直找不到那個地方"
+					],
+					[
+						"17",
+						"一份大老爹多納好吃小屋的菜單"
+					],
+					[
+						"18",
+						"一個打開時會大聲尖叫的小錢包"
+					],
+					[
+						"19",
+						"一支深淵鴉羽毛筆"
+					],
+					[
+						"20",
+						"一條總是散發淡淡蜂蜜味的馬褲"
+					],
+					[
+						"21",
+						"一個獨臂的維亞里娃娃（缺少天啟匕首配件）"
+					],
+					[
+						"22",
+						"一個裝滿來源不明各式指骨的皮袋"
+					],
+					[
+						"23",
+						"你童年寵物肉荳蔻的項圈"
+					],
+					[
+						"24",
+						"一個貼在耳邊時會以流暢韻文說話的貝殼"
+					],
+					[
+						"25",
+						"一本蘑菇料理食譜"
+					],
+					[
+						"26",
+						"一張過期的「免費奠基石」優惠券"
+					],
+					[
+						"27",
+						"一個可攜式蜂箱"
+					],
+					[
+						"28",
+						"一副真的會把一切都染成玫瑰色的護目鏡"
+					],
+					[
+						"29",
+						"一根只能施展修復術的奇異魔杖"
+					],
+					[
+						"30",
+						"一條以槲寄生編成的手鐲"
+					],
+					[
+						"31",
+						"一隻總是讓小孩害怕、來自未知野獸的彎爪"
+					],
+					[
+						"32",
+						"一把可以在 1 分鐘內摺起來藏進口袋的長劍"
+					],
+					[
+						"33",
+						"一段你相信是世界之樹的活體嫁接枝"
+					],
+					[
+						"34",
+						"一條印有收購股份有限公司標誌的破爛圍巾"
+					],
+					[
+						"35",
+						"一個裝著一封撕碎信件的盒子"
+					],
+					[
+						"36",
+						"一份標註「作廢」的舊合約"
+					],
+					[
+						"37",
+						"一隻關在籠子裡的小鴿子"
+					],
+					[
+						"38",
+						"一個收購股份有限公司「綠焰」加油手套"
+					],
+					[
+						"39",
+						"一個「C」隊便當盒"
+					],
+					[
+						"40",
+						"一盆每根枝條都結出不同果實的盆栽"
+					],
+					[
+						"41",
+						"一本兒童冒險故事書"
+					],
+					[
+						"42",
+						"一個附有可拆卸巨槌與聖徽的歐明公仔"
+					],
+					[
+						"43",
+						"一個刻著酒桶機器人圖案的品脫杯"
+					],
+					[
+						"44",
+						"一個巨大的冰球"
+					],
+					[
+						"45",
+						"一門真的能發射的迷你大砲"
+					],
+					[
+						"46",
+						"一條非常華麗的紅圍巾與搭配的手帕"
+					],
+					[
+						"47",
+						"一支莫爾根曾經射出的箭"
+					],
+					[
+						"48",
+						"一個紫蟲玩具"
+					],
+					[
+						"49",
+						"一個眼睛會在房間裡跟著你轉的燒焦娃娃"
+					],
+					[
+						"50",
+						"一個無限墨水瓶"
+					],
+					[
+						"51",
+						"一條繡著六人組標誌的頭帶"
+					],
+					[
+						"52",
+						"一個軟軟的仙人掌"
+					],
+					[
+						"53",
+						"一條天鵝絨眼罩"
+					],
+					[
+						"54",
+						"一個怎麼洗都洗不乾淨的三角龍小雕像"
+					],
+					[
+						"55",
+						"一把來自貴族之刃的用過（因此是非魔法的）貴族刀"
+					],
+					[
+						"56",
+						"一支會輪流變換彩虹所有顏色的羽毛筆"
+					],
+					[
+						"57",
+						"一顆只會擲出 4 的二十面骰"
+					],
+					[
+						"58",
+						"一頂在黑暗中發光的尖帽"
+					],
+					[
+						"59",
+						"一個裝了水就會哼歌的杯子"
+					],
+					[
+						"60",
+						"一個以別人的敵人頭骨製成的馬克杯"
+					],
+					[
+						"61",
+						"一個裝著一隻不死螢火蟲的小玻璃罐"
+					],
+					[
+						"62",
+						"一撇以地侏鬍鬚製成的假鬍子"
+					],
+					[
+						"63",
+						"一根石化的巨魔手指"
+					],
+					[
+						"64",
+						"半張地圖"
+					],
+					[
+						"65",
+						"另外半張地圖"
+					],
+					[
+						"66",
+						"多得不合理的口袋棉絮"
+					],
+					[
+						"67",
+						"一打當地地侏餐廳的傳單"
+					],
+					[
+						"68",
+						"歐明·德蘭的名片"
+					],
+					[
+						"69",
+						"一綹易形者的頭髮"
+					],
+					[
+						"70",
+						"一顆會往上坡滾的彈珠"
+					],
+					[
+						"71",
+						"一張寫著某件強大魔法物品命令語的羊皮紙"
+					],
+					[
+						"72",
+						"一本名為《巨人語會話》的書"
+					],
+					[
+						"73",
+						"一本夸利什裝置的使用手冊"
+					],
+					[
+						"74",
+						"一張著名吟遊詩人斯派斯·卡拉威的簽名大頭照"
+					],
+					[
+						"75",
+						"一顆裝在水晶盒中的石化蜥蜴眼睛"
+					],
+					[
+						"76",
+						"一張來自拉尼卡的明信片"
+					],
+					[
+						"77",
+						"一本郵票收藏冊"
+					],
+					[
+						"78",
+						"一小塊凝固的煙"
+					],
+					[
+						"79",
+						"一顆有時會擲出七的六面骰"
+					],
+					[
+						"80",
+						"一隻左手的護手"
+					],
+					[
+						"81",
+						"一個會演奏童謠的音樂盒"
+					],
+					[
+						"82",
+						"一個外面比裡面大的小盒墜"
+					],
+					[
+						"83",
+						"一盆長頭髮而非葉子的盆栽"
+					],
+					[
+						"84",
+						"一套牙齒收藏"
+					],
+					[
+						"85",
+						"一枚鑄造日期總是顯示三年後的硬幣"
+					],
+					[
+						"86",
+						"一個取自一頭非常巨大公牛的綠色角杯"
+					],
+					[
+						"87",
+						"一本裝著壓製乾燥植物標本的小書"
+					],
+					[
+						"88",
+						"一顆已孵化的奇美拉蛋"
+					],
+					[
+						"89",
+						"一副稍微用過的紅色盜匪面具"
+					],
+					[
+						"90",
+						"一隻包在琥珀中的小吸血蝠"
+					],
+					[
+						"91",
+						"一大瓶打不開的紅落葉松麥酒"
+					],
+					[
+						"92",
+						"一根頂端是風格化金色鬥牛犬的手杖"
+					],
+					[
+						"93",
+						"一張你自己筆跡、卻不記得寫過的便條"
+					],
+					[
+						"94",
+						"一枝來自你家花園的香草"
+					],
+					[
+						"95",
+						"一個從德蘭與廷臣酒館偷來的酒杯"
+					],
+					[
+						"96",
+						"一小截泡在酒精裡的斷觸手"
+					],
+					[
+						"97",
+						"一顆畫了臉的核桃"
+					],
+					[
+						"98",
+						"一小瓶來自光霧湖的液體"
+					],
+					[
+						"99",
+						"一塊永不融化的冰塊"
+					],
+					[
+						"00",
+						"一個雕工精湛、劍刃被乾淨俐落折斷的劍柄"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Trinket"
 	},
 	"Trinket|PHB": {
 		"name": "小飾品",
@@ -35970,6 +39561,23 @@
 		"hasFluffImages": true,
 		"ENG_name": "Universal Solvent"
 	},
+	"Vanrak's Mithral Shirt|WDMM": {
+		"name": "凡拉克的秘銀衫",
+		"source": "WDMM",
+		"page": 237,
+		"baseItem": "chain shirt|phb",
+		"type": "MA",
+		"rarity": "uncommon",
+		"weight": 20,
+		"ac": 13,
+		"strength": null,
+		"stealth": false,
+		"entries": [
+			"秘銀是一種輕盈、有彈性的金屬。秘銀鏈衫或胸甲可以穿在一般衣服底下。若該護甲通常會使敏捷（{@skill Stealth}）檢定具有劣勢或有力量需求，秘銀版本的護甲則沒有。",
+			"穿著這件護甲時，你獲得範圍 60 呎的{@sense darkvision}。"
+		],
+		"ENG_name": "Vanrak's Mithral Shirt"
+	},
 	"Velvet doublet with gold buttons (Legion of Dusk)|PSX": {
 		"name": "金鈕扣天鵝絨緊身上衣（暮影軍團）",
 		"source": "PSX",
@@ -36177,6 +39785,20 @@
 		],
 		"ENG_name": "Vial of Greed"
 	},
+	"Vial of Stardust|WDMM": {
+		"name": "星塵小瓶",
+		"source": "WDMM",
+		"page": 251,
+		"type": "OTH",
+		"rarity": "unknown",
+		"entries": [
+			"任何將星塵小瓶的內容物撒在自己身上的生物，都獲得使用一個動作施展一次{@spell dream}法術的能力（法術豁免 {@dc 15}），不需要構材。"
+		],
+		"attachedSpells": [
+			"dream"
+		],
+		"ENG_name": "Vial of Stardust"
+	},
 	"Vial|XPHB": {
 		"name": "小瓶",
 		"source": "XPHB",
@@ -36236,6 +39858,25 @@
 			}
 		],
 		"ENG_name": "Voidwalker Armor"
+	},
+	"Voting Kit|AI": {
+		"name": "投票工具組",
+		"source": "AI",
+		"page": 22,
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			"在等級 4 時，你的投票工具組成為一件普通魔法物品，其中藏有一個異次元空間。作為一個附贈動作，你可以將一套你熟練的工具組放進投票工具組中，或將它取出。其他類型的物體都無法放進這個異次元空間。搜查投票工具組的生物需成功通過一次 {@dc 20} 智力（{@skill Investigation}）或感知（{@skill Perception}）檢定，才能找到並取出該工具組。",
+			"此外，你可以使用投票工具組施展{@spell charm person}（豁免 {@dc 15}）。工具組的此屬性在下一個黎明之前無法再次使用。"
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"charm person"
+				]
+			}
+		},
+		"ENG_name": "Voting Kit"
 	},
 	"Vox Seeker|EGW": {
 		"name": "聲音搜尋者",
@@ -37339,6 +40980,21 @@
 		"speed": 60,
 		"ENG_name": "Warhorse"
 	},
+	"Warm Fungal Clothing|FRHOF": {
+		"name": "保暖真菌服裝",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 1500,
+		"entries": [
+			"當你穿著保暖真菌服裝時，你會自動通過對抗極端寒冷效果的豁免檢定。極端寒冷的規則見《地下城主指南》第 3 章。真菌服裝中縫有一磅真菌。這些真菌可以當作食物食用。所有真菌被吃完後，它會變成一套普通的{@item Traveler's Clothes|XPHB}。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Warm Fungal Clothing"
+	},
 	"Warrior's Passkey|BMT": {
 		"name": "戰士的萬能鑰匙",
 		"source": "BMT",
@@ -37582,6 +41238,56 @@
 		"value": 1,
 		"ENG_name": "Wheat"
 	},
+	"Wheel of Stars|AI": {
+		"name": "星辰之輪",
+		"source": "AI",
+		"page": 222,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"bonusSavingThrow": "+1",
+		"entries": [
+			"與這個裝置同調時，你的感知豁免檢定獲得 +1 加值，且你可以使用一個動作施展{@spell dancing lights}、{@spell guidance}或{@spell message}戲法。",
+			{
+				"type": "entries",
+				"name": "星辰預兆",
+				"entries": [
+					"作為你 60 呎內一個你能看見的生物進行攻擊檢定、豁免檢定或屬性檢定時的反應，你讓該生物擲一顆 {@dice d10}，並將擲出的數字加到或從該次擲骰中減去（由你選擇）。你使用星辰之輪的這項特性後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Portent of the Stars"
+			},
+			{
+				"type": "entries",
+				"name": "改變重力",
+				"entries": [
+					"作為一個動作，你可以對自己施展{@spell fly}，或施展{@spell levitate}（豁免 {@dc 15}）。你使用星辰之輪的這項特性後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Alter Gravity"
+			},
+			{
+				"type": "entries",
+				"name": "整體的一部分",
+				"entries": [
+					"當這個零件未安裝在{@item Orrery of the Wanderer|AI}中時，它的魔法可能會時有時無地運作，或產生無法預測的副作用，由 DM 決定。"
+				],
+				"ENG_name": "Part of a Whole"
+			}
+		],
+		"attachedSpells": {
+			"will": [
+				"dancing lights",
+				"guidance",
+				"message"
+			],
+			"daily": {
+				"1e": [
+					"fly",
+					"levitate"
+				]
+			}
+		},
+		"ENG_name": "Wheel of Stars"
+	},
 	"Wheel of Wind and Water|ERLW": {
 		"name": "風水之輪",
 		"source": "ERLW",
@@ -37684,6 +41390,101 @@
 			}
 		},
 		"ENG_name": "Whelm"
+	},
+	"Whisper Jar|AI": {
+		"name": "低語罐",
+		"source": "AI",
+		"page": 27,
+		"rarity": "varies",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"同樣在等級 1 時，你獲得一個低語罐——一件普通魔法物品，外觀像一個裝滿乙太、附有長導管的罐子。這個罐子用來記錄他人的故事與你自己的觀察，就像一本空間無限的語音筆記本。低語罐的記錄速度與生物對它說話的速度一樣快，並以錄製時的相同速度低語回放。啟動特定錄音的播放需要一個動作。",
+			{
+				"type": "table",
+				"caption": "錄在你低語罐中的東西",
+				"colLabels": [
+					"d8",
+					"錄音"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"一段幾乎被遺忘的舞台劇《熱錫屋頂上的虎人》唯一一場演出的現場錄音"
+					],
+					[
+						"2",
+						"在你之前擁有這個罐子的知識販子畢生的心血"
+					],
+					[
+						"3",
+						"你曾經有過的每一個勇敢念頭，用來掩飾你大部分時間有多害怕"
+					],
+					[
+						"4",
+						"所有事情，因為你周圍的每個人總有一天都會收回他們說過的話！"
+					],
+					[
+						"5",
+						"你去過的每個聚落中，吃炸老鼠串的前七名地點"
+					],
+					[
+						"6",
+						"費倫所有王室血脈（現存或已斷絕）的完整家譜"
+					],
+					[
+						"7",
+						"你最喜歡的吉姆·黑魔法舞台演出的逐刻評論"
+					],
+					[
+						"8",
+						"熱烈掌聲的聲音，你會大方地播放"
+					]
+				]
+			},
+			{
+				"type": "entries",
+				"name": "低語百科",
+				"entries": [
+					"在等級 2 時，你的低語罐成為一件非普通魔法物品，能汲取收購股份有限公司更廣泛的知識。作為一個附贈動作，你向罐子詢問某個特定主題的資訊，並進行一次 {@dc 15} 智力（{@skill History}）檢定。成功時，罐子會播放一段關於該主題的錄音，那是另一位收購公司知識販子在某時某地錄下的。低語罐的此屬性在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Whispered Encyclopedia"
+			},
+			{
+				"type": "entries",
+				"name": "低語警告",
+				"entries": [
+					"同樣在等級 3 時，你的低語罐獲得額外力量，成為一件珍稀魔法物品。作為一個動作，你可以讓罐子具有{@item wand of enemy detection}的功能，此時它會低語出範圍內敵人的方向。低語罐的此屬性在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Whispered Warnings"
+			},
+			{
+				"type": "entries",
+				"name": "低語奧秘",
+				"entries": [
+					"同樣在等級 4 時，你的低語罐獲得更多魔法。作為一個動作，對罐子低語以下法術之一的名稱，你就可以從罐子施展該法術：{@spell detect evil and good}、{@spell detect magic}、{@spell detect poison and disease}、{@spell find traps}、{@spell identify}或{@spell locate animals or plants}。低語罐的此屬性在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Whispered Arcana"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1": [
+					"detect evil and good",
+					"detect magic",
+					"detect poison and disease",
+					"find traps",
+					"identify",
+					"locate animals or plants"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Whisper Jar"
 	},
 	"White Dragon Scale Mail|XDMG": {
 		"name": "白龍鱗甲",
@@ -37995,6 +41796,21 @@
 		"hasFluffImages": true,
 		"ENG_name": "Wings of Flying"
 	},
+	"Winter Camouflage|FRHOF": {
+		"name": "冬季偽裝服",
+		"source": "FRHoF",
+		"page": 132,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"weight": 4,
+		"value": 5000,
+		"entries": [
+			"當你在適當的環境中穿著冬季偽裝服時，你在敏捷（{@skill Stealth|XPHB}）檢定上具有{@variantrule Advantage|XPHB|優勢}。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Winter Camouflage"
+	},
 	"Wreath of the Prism (Awakened)|EGW": {
 		"name": "稜彩花冠（覺醒）",
 		"source": "EGW",
@@ -38196,6 +42012,23 @@
 		],
 		"ENG_name": "Wukka Nut"
 	},
+	"Wyllow's Staff of Flowers|WDMM": {
+		"name": "薇洛的花之杖",
+		"source": "WDMM",
+		"page": 75,
+		"_copy": {
+			"name": "Staff of Flowers",
+			"source": "XGE",
+			"_mod": {
+				"entries": {
+					"mode": "appendArr",
+					"items": "Wyllow's staff is peculiar in that it can't create roses, which the archdruid dislikes. If a rose is chosen, a daisy grows instead."
+				}
+			}
+		},
+		"reqAttune": true,
+		"ENG_name": "Wyllow's Staff of Flowers"
+	},
 	"Wyrmreaver Gauntlets|BGG": {
 		"name": "屠龍者護手",
 		"source": "BGG",
@@ -38365,6 +42198,52 @@
 		"value": 1000,
 		"ENG_name": "Yew Wand"
 	},
+	"Ythryn Mythallar|IDROTF": {
+		"name": "伊斯林秘法核",
+		"source": "IDRotF",
+		"page": 316,
+		"rarity": "legendary",
+		"reqAttune": "by a spellcaster",
+		"reqAttuneTags": [
+			{
+				"spellcasting": true
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"秘法核看起來像一顆放在華麗底座上的巨大水晶球。球體在 300 呎半徑內發出明亮光線，並在額外 300 呎內發出微光。球體從魔網汲取魔法，這些魔法可以被運用於各種用途。例如，耐瑟瑞爾法師使用秘法核讓他們的城市浮在空中，並為他們的魔法物品提供力量。秘法核越大，能容納的魔法就越多。最大的秘法核直徑達 150 呎。",
+			"伊斯林秘法核是一個相對較小的裝置——直徑只有 50 呎。要與這個秘法核同調，生物必須在它 30 呎內完成一次短休，對秘法核進行冥想。同一時間最多可有八個生物與它同調；除此之外，伊斯林秘法核遵循《地下城主指南》中的同調規則。若第九個生物嘗試與秘法核同調，則什麼也不會發生。",
+			"所有與伊斯林秘法核同調的生物都能感知到裝置何時正在被使用。與裝置同調的生物可以使用其任何屬性，但前提是所有其他與裝置同調的生物都同意。伊斯林秘法核的屬性如下：",
+			{
+				"type": "list",
+				"items": [
+					"當你與伊斯林秘法核位於同一個存在位面時，你可以使用一個動作讓它以 30 呎的速度朝你選擇的任何方向飛行。裝置 500 呎內的所有物質都會隨它一起移動。伊斯林秘法核以及所有由它托起的建築在不移動時會懸停在原地。",
+					"作為一個動作，你可以讓你在伊斯林秘法核 30 呎內持握的一件魔法物品立即恢復所有已消耗的充能或使用次數。以此方式充能的魔法物品，在它自行恢復已消耗的充能或使用次數之前，無法再次由伊斯林秘法核充能。",
+					"你可以使用伊斯林秘法核施展{@spell control weather}法術，不需要任何構材，也不需要身處戶外。此次施法的半徑為 50 哩。在法術施展時間的持續期間，你必須位於伊斯林秘法核 30 呎內，否則法術會失敗。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "觸碰秘法核",
+				"entries": [
+					"任何觸碰秘法核球體的生物都必須進行一次 {@dc 22} 體質豁免檢定，失敗時受到 180（{@damage 20d10 + 70}）點光耀傷害，成功時傷害減半。不死生物在此豁免檢定上具有劣勢。任何觸碰球體的物體（神器或秘法核的底座除外）都會立即被分解（無豁免）。"
+				],
+				"ENG_name": "Touching the Mythallar"
+			}
+		],
+		"light": [
+			{
+				"bright": 300,
+				"dim": 600
+			}
+		],
+		"attachedSpells": {
+			"will": [
+				"control weather"
+			]
+		},
+		"ENG_name": "Ythryn Mythallar"
+	},
 	"Zabou|TOA": {
 		"name": "扎布菇",
 		"source": "ToA",
@@ -38376,6 +42255,57 @@
 			"扎布菇以內臟與枯樹的腐木為食。若小心處理，可以在不讓它釋放孢子的情況下摘下或拔起扎布菇。若被壓碎或擊打，扎布菇會在 10 呎半徑的球形內釋放孢子。扎布菇也可以投擲至多 30 呎遠，或像手榴彈一樣丟下，在撞擊時釋放孢子雲。該區域內任何生物都必須成功通過一次 {@dc 10} 體質豁免檢定，否則{@condition poisoned} 1 分鐘。{@condition poisoned}的生物在持續時間內皮膚發癢。該生物可以在它每個回合結束時重複豁免檢定，成功時結束自身的效果。"
 		],
 		"ENG_name": "Zabou"
+	},
+	"Zhentarim Trinket|FRHOF": {
+		"name": "桑達林小玩意",
+		"source": "FRHoF",
+		"page": 180,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"entries": [
+			{
+				"type": "table",
+				"caption": "桑達林小玩意",
+				"colLabels": [
+					"1d6",
+					"小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1",
+						"一把刻有你名字的斷匕首"
+					],
+					[
+						"2",
+						"一隻總是轉向面對你的玻璃義眼"
+					],
+					[
+						"3",
+						"一顆金色的蛇牙"
+					],
+					[
+						"4",
+						"一枚偽造的金幣"
+					],
+					[
+						"5",
+						"一根水晶刺青針"
+					],
+					[
+						"6",
+						"一張不會起皺、撕裂或燃燒的羊皮紙契約"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"ENG_name": "Zhentarim Trinket"
 	},
 	"Zircon|XDMG": {
 		"name": "鋯石",
