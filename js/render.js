@@ -4974,10 +4974,15 @@ Renderer.utils = class {
 
 			// Args can either be a static property, or a function and a static property
 
+			const __tplZh = {"acid":"酸蝕","cold":"寒冷","fire":"火焰","force":"力場","lightning":"閃電","necrotic":"黯蝕","poison":"毒素","psychic":"心靈","radiant":"光耀","thunder":"雷鳴","bludgeoning":"鈍擊","piercing":"穿刺","slashing":"揮砍","green":"綠色","blue":"藍色","red":"紅色","white":"白色","yellow":"黃色","black":"黑色","violet":"紫色","silver":"銀色","gold":"金色","orange":"橙色","pearl":"珍珠","tourmaline":"電氣石","garnet":"石榴石","sapphire":"藍寶石","citrine":"黃水晶","jet":"煤玉","amethyst":"紫水晶","jade":"玉","topaz":"黃玉","spinel":"尖晶石","drips acid":"滴著酸液","crackles with lightning":"劈啪閃著電光","issues green gas":"冒出綠色氣體","is wreathed in fire":"被火焰環繞","is covered in frost":"覆上一層霜"};
+		const __tplMap = v => typeof v === "string" ? (__tplZh[v.toLowerCase()] || v)
+			: Array.isArray(v) && v.every(x => typeof x === "string") ? v.map(x => __tplZh[x.toLowerCase()] || x).join("、")
+			: v;
 			if (args.length === 1) {
-				return Renderer.utils._applyTemplate_getValue(ent, args[0]);
+				return __tplMap(Renderer.utils._applyTemplate_getValue(ent, args[0]));
 			} else if (args.length === 2) {
 				const val = Renderer.utils._applyTemplate_getValue(ent, args[1]);
+				if (args[0] === "getFullImmRes" && Array.isArray(val) && val.every(x => typeof x === "string")) return __tplMap(val);
 				switch (args[0]) {
 					case "getFullImmRes": return Parser.getFullImmRes(val, {isTitleCase: VetoolsConfig.get("styleSwitcher", "style") === "one"});
 					default: throw new Error(`Unknown template function "${args[0]}"`);
