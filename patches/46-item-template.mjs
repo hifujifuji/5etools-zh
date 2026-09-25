@@ -38,6 +38,9 @@ export default [
 				switch (args[0]) {
 					case "getFullImmRes": return Parser.getFullImmRes(`,
 			],
+			// {@chance 5} →「5%」
+			["if (entry.successThresh != null) return `${entry.successThresh} percent`;", "if (entry.successThresh != null) return `${entry.successThresh}%`;"],
+			["return displayText || `${rollText} percent`;", "return displayText || `${rollText}%`;"],
 		],
 	},
 ];

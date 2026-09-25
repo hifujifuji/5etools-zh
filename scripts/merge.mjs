@@ -24,7 +24,7 @@ export const SKIP_KEYS = new Set([
 	"startingProficiencies", "proficiency", "skillProficiencies", "toolProficiencies", "languageProficiencies",
 	"weaponProficiencies", "armorProficiencies", "skillToolLanguageProficiencies", "additionalSpells", "ability",
 	"feats", "expertise", "requirements", "proficienciesGained", "resist", "immune", "vulnerable", "conditionImmune",
-	"savingThrowForced", "abilityCheckForced", "classes", "subclasses", "otherSources", "reprintedAs", "srd", "srd52",
+	"savingThrowForced", "abilityCheckForced", "attachedSpells", "classes", "subclasses", "otherSources", "reprintedAs", "srd", "srd52",
 ]);
 
 const engOf = o => (o?.ENG_name ?? o?.tENG_name ?? "").trim();

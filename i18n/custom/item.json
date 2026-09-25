@@ -1192,6 +1192,18 @@
 		"hasFluffImages": true,
 		"ENG_name": "Amulet of Proof against Detection and Location"
 	},
+	"Amulet of the Drunkard|EGW": {
+		"name": "醉漢護符",
+		"source": "EGW",
+		"page": 265,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"這個護符散發著陳年、沾滿麥酒的木頭氣味。穿戴它時，當你喝下一品脫的啤酒、麥酒、蜂蜜酒或葡萄酒時，你可以恢復 {@dice 4d4 + 4} 點生命值。護符恢復過生命值後，在下一個黎明之前無法再次如此。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Amulet of the Drunkard"
+	},
 	"Amulet of the Planes|XDMG": {
 		"name": "位面護符",
 		"source": "XDMG",
@@ -1449,6 +1461,58 @@
 			"一顆淡藍綠色的寶石。"
 		],
 		"ENG_name": "Aquamarine"
+	},
+	"Arcane Cannon|EGW": {
+		"name": "奧術火砲",
+		"source": "EGW",
+		"page": 265,
+		"rarity": "very rare",
+		"wondrous": true,
+		"entries": [
+			"這門大型火砲灌注了魔法。它不需要彈藥，也不需要裝填。瞄準火砲需要一個動作，發射火砲也需要一個動作。火砲發射後，必須充能 5 分鐘才能再次發射。",
+			"發射火砲的生物從以下選項中選擇效果：",
+			{
+				"type": "entries",
+				"name": "酸液噴射",
+				"entries": [
+					"火砲噴出一道長 300 呎、寬 5 呎的線狀酸液。線上每個生物都必須進行一次 {@dc 15} 敏捷豁免檢定，失敗時受到 22（{@damage 4d10}）點酸蝕傷害，成功時傷害減半。此外，豁免失敗的生物會在它每個回合開始時受到 11（{@damage 2d10}）點酸蝕傷害；生物可以使用它的動作，以一品脫以上的水洗去酸液來結束此傷害。"
+				],
+				"ENG_name": "Acid Jet"
+			},
+			{
+				"type": "entries",
+				"name": "火焰噴射",
+				"entries": [
+					"火砲噴出一道長 300 呎、寬 5 呎的線狀火焰。區域內每個生物都必須進行一次 {@dc 15} 敏捷豁免檢定，失敗時受到 33（{@damage 6d10}）點火焰傷害，成功時傷害減半。火焰會點燃區域內未被穿戴或攜帶的易燃物體。"
+				],
+				"ENG_name": "Fire Jet"
+			},
+			{
+				"type": "entries",
+				"name": "冰霜射擊",
+				"entries": [
+					"火砲將一顆冰霜球射向火砲 1,200 呎內一個你能看見的點。冰霜球接著擴散，形成以該點為中心、半徑 30 呎的球形。該區域內每個生物都必須進行一次 {@dc 15} 體質豁免檢定。豁免失敗時，生物受到 22（{@damage 4d10}）點寒冷傷害，且其速度在 1 分鐘內減少 10 呎。豁免成功時，生物受到的傷害減半，速度也不會減少。速度因此效果減少的生物可以在它每個回合結束時重複豁免，成功時結束自身的效果。"
+				],
+				"ENG_name": "Frost Shot"
+			},
+			{
+				"type": "entries",
+				"name": "閃電射擊",
+				"entries": [
+					"火砲將一顆閃電球射向火砲 1,200 呎內一個你能看見的點。閃電接著擴散，形成以該點為中心、半徑 20 呎的球形。該區域內每個生物都必須進行一次 {@dc 15} 敏捷豁免檢定，失敗時受到 33（{@damage 6d10}）點閃電傷害，成功時傷害減半。穿著金屬護甲的生物在此豁免上具有劣勢。"
+				],
+				"ENG_name": "Lightning Shot"
+			},
+			{
+				"type": "entries",
+				"name": "毒素噴霧",
+				"entries": [
+					"火砲噴出 60 呎錐形的毒氣。該區域內每個生物都必須進行一次 {@dc 15} 體質豁免檢定。豁免失敗時，生物受到 22（{@damage 4d10}）點毒素傷害，並{@condition poisoned} 1 分鐘。豁免成功時，生物受到的傷害減半，且不會{@condition poisoned}。以此方式{@condition poisoned}的生物可以在它每個回合結束時重複豁免檢定，成功時結束自身的效果。"
+				],
+				"ENG_name": "Poison Spray"
+			}
+		],
+		"ENG_name": "Arcane Cannon"
 	},
 	"Armor of Invulnerability|XDMG": {
 		"name": "堅不可摧護甲",
@@ -1777,7 +1841,7 @@
 				]
 			},
 			"other": [
-				"傳送術"
+				"teleport"
 			]
 		},
 		"hasFluffImages": true,
@@ -2637,6 +2701,26 @@
 		},
 		"ENG_name": "Basket"
 	},
+	"Battering Shield|EGW": {
+		"name": "衝撞盾",
+		"source": "EGW",
+		"page": 266,
+		"baseItem": "shield|PHB",
+		"type": "S",
+		"rarity": "rare",
+		"reqAttune": true,
+		"weight": 6,
+		"ac": 2,
+		"bonusAc": "+1",
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"持握這面鐵製塔盾時，你的 AC 獲得 +1 加值。此加值是在盾牌一般 AC 加值之外額外獲得的。",
+			"此外，盾牌有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。若你持握盾牌並將你觸及範圍內的一個生物推開至少 5 呎，你可以消耗 1 點充能，將該生物額外推開 10 呎、將它擊倒為{@condition prone}，或兩者皆是。"
+		],
+		"ENG_name": "Battering Shield"
+	},
 	"Bead of Force|XDMG": {
 		"name": "力場珠",
 		"source": "XDMG",
@@ -3065,6 +3149,22 @@
 		],
 		"ENG_name": "Black Pearl"
 	},
+	"Black Sap|EGW": {
+		"name": "黑樹汁",
+		"source": "EGW",
+		"page": 152,
+		"type": "G",
+		"rarity": "none",
+		"value": 30000,
+		"entries": [
+			"這種焦油般的物質採自死亡頭顱柳陰暗的枝條，是一種強效的麻醉品。它可以濃縮後吸食，也可以直接注入血液中。受到一劑黑樹汁影響的生物在 {@dice 1d6} 小時內無法被{@condition charmed}或{@condition frightened}。",
+			"每服用一劑黑樹汁，生物都必須成功通過一次 {@dc 15} 體質豁免檢定，否則{@condition poisoned} {@dice 2d4} 小時——多劑的效果會累加。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Black Sap"
+	},
 	"Black Sapphire|XDMG": {
 		"name": "黑藍寶石",
 		"source": "XDMG",
@@ -3166,6 +3266,158 @@
 		"hasFluffImages": true,
 		"ENG_name": "Blackrazor"
 	},
+	"Blade of Broken Mirrors (Awakened)|EGW": {
+		"name": "破鏡之刃（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Blade of Broken Mirrors (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"When the dagger reaches an awakened state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +2.",
+									"While holding the weapon, you can use an action to cast one of the following spells from it (save {@dc 15}): {@spell fabricate}, {@spell hallucinatory terrain}, {@spell major image}, or {@spell phantasmal killer}. Once a spell has been cast using the dagger, that spell can't be cast from the dagger again until the next dawn."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+2",
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"fabricate",
+					"hallucinatory terrain",
+					"major image",
+					"phantasmal killer"
+				]
+			}
+		},
+		"ENG_name": "Blade of Broken Mirrors (Awakened)"
+	},
+	"Blade of Broken Mirrors (Dormant)|EGW": {
+		"name": "破鏡之刃（休眠）",
+		"source": "EGW",
+		"page": 275,
+		"baseItem": "dagger|phb",
+		"type": "M",
+		"rarity": "artifact",
+		"reqAttune": "by a humanoid",
+		"reqAttuneTags": [
+			{
+				"creatureType": "humanoid"
+			}
+		],
+		"sentient": true,
+		"weight": 1,
+		"weaponCategory": "simple",
+		"property": [
+			"F",
+			"L",
+			"T",
+			"Vst|EGW"
+		],
+		"range": "20/60",
+		"dmg1": "1d4",
+		"dmgType": "P",
+		"grantsLanguage": true,
+		"bonusWeapon": "+1",
+		"entries": [
+			"這把匕首是薩瑞茲頓的武器，是一塊鋸齒狀的石頭，刀刃上刻著無始無終的迷宮般紋路。",
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"破鏡之刃是一把具有知覺的混亂邪惡武器，智力 21、感知 24、魅力 24。它具有聽覺，以及範圍 120 呎的{@sense darkvision}。",
+					"這把武器以心靈感應與持用者溝通，能說、讀並理解深淵語與通用語。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"type": "entries",
+				"name": "個性",
+				"entries": [
+					"一隻名叫拉加祖的瘋狂{@creature glabrezu}住在破鏡之刃中。這把武器渴望製造混亂。它會了解持用者的原則，再利用這些理念鼓動魯莽的行動。這把匕首會低語著革命的念頭。"
+				],
+				"ENG_name": "Personality"
+			},
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"這把匕首在休眠狀態下賦予以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"你能說、讀並寫深淵語。",
+							"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。你以這把武器進行遠程攻擊後，它會立刻回到你手中。",
+							"每當你以破鏡之刃的攻擊殺死一個類人生物時，刀刃會記住該生物的外貌。持握匕首時，你可以使用一個動作，將你的形體變為刀刃記得的任一類人生物的樣子。除了你的體型，你的數據不會改變。你穿戴或攜帶的任何裝備不會變形。你可以使用一個動作恢復原本的外貌。你死亡時會自動恢復原本的外貌。當破鏡之刃與新的持用者同調時，它殺死的類人生物外貌會從它的記憶中抹去。"
+						]
+					}
+				],
+				"ENG_name": "Dormant"
+			},
+			{
+				"type": "inset",
+				"name": "背叛者神器屬性",
+				"entries": [
+					"背叛者之武的力量成長方式與分歧遺物相同。在休眠狀態下，這些神器各有一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當神器進入覺醒狀態時，它會額外獲得一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當物品達到昇華狀態時，它會獲得一項{@table Artifact Properties; Major Beneficial Properties|dmg|主要有益}屬性。更多資訊請見《地下城主指南》第 7 章的「神器屬性」。"
+				],
+				"ENG_name": "Betrayer Artifact Properties"
+			}
+		],
+		"ENG_name": "Blade of Broken Mirrors (Dormant)"
+	},
+	"Blade of Broken Mirrors (Exalted)|EGW": {
+		"name": "破鏡之刃（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Blade of Broken Mirrors (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"When the dagger reaches an exalted state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +3.",
+									"The saving throw DC for spells cast from the dagger increases to 17.",
+									"While holding the dagger, you can turn {@condition invisible} as an action. Anything you are wearing or carrying is {@condition invisible} with you. You remain {@condition invisible} until you stop holding the dagger, until you attack or cast a spell that forces a creature to make a saving throw, or until you use a bonus action to become visible again."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+3",
+		"ENG_name": "Blade of Broken Mirrors (Exalted)"
+	},
 	"Blanket|XPHB": {
 		"name": "毛毯",
 		"source": "XPHB",
@@ -3183,6 +3435,33 @@
 			"裹著毛毯時，你針對{@hazard extreme cold|XDMG|極寒}的豁免檢定具有{@variantrule Advantage|XPHB}（見{@book 城主指南|XDMG}）。"
 		],
 		"ENG_name": "Blanket"
+	},
+	"Blasting Powder|EGW": {
+		"name": "爆破粉",
+		"source": "EGW",
+		"page": 225,
+		"type": "G",
+		"rarity": "none",
+		"entries": [
+			"這種不穩定的煉金粉末裝在一個小袋中。被明火或引信點燃時，粉末會爆炸。爆炸的袋子 5 呎內的每個生物都必須進行一次 {@dc 13} 敏捷豁免檢定，失敗時受到 {@damage 3d6} 點鈍擊傷害，成功時傷害減半。",
+			"角色可以把數袋爆破粉綁在一起，讓它們同時爆炸。每多一袋，傷害增加 {@dice 1d6}（最多 {@dice 10d6}），爆炸半徑增加 5 呎（最多 20 呎）。"
+		],
+		"ENG_name": "Blasting Powder"
+	},
+	"Blight Ichor|EGW": {
+		"name": "枯萎膿液",
+		"source": "EGW",
+		"page": 152,
+		"type": "G",
+		"rarity": "none",
+		"value": 20000,
+		"entries": [
+			"這種苦澀的黃綠色調製品是從枯萎海岸荒地原生的一種真菌中蒸餾而成。這種病態綠色的利口酒具有強烈的致幻性質。只要不是構裝體或不死生物，受到一劑枯萎膿液影響的生物在 1 小時內於智力與感知檢定上具有優勢，但也具有心靈傷害易傷。每服用一劑枯萎膿液，生物都必須成功通過一次 {@dc 15} 體質豁免檢定，否則{@condition poisoned} {@dice 1d6} 小時，並在 1 分鐘內承受{@spell confusion}法術的效果。受到一劑枯萎膿液影響的不死生物在 1 小時內於所有敏捷檢定上具有優勢，且免疫{@condition frightened}狀態。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Blight Ichor"
 	},
 	"Block and Tackle|XPHB": {
 		"name": "滑輪組",
@@ -3238,6 +3517,29 @@
 			}
 		],
 		"ENG_name": "Blood Fury Tattoo"
+	},
+	"Bloodaxe|EGW": {
+		"name": "血斧",
+		"source": "EGW",
+		"page": 266,
+		"baseItem": "greataxe|PHB",
+		"type": "M",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"weight": 7,
+		"weaponCategory": "martial",
+		"property": [
+			"H",
+			"2H"
+		],
+		"dmg1": "1d12",
+		"dmgType": "S",
+		"bonusWeapon": "+2",
+		"entries": [
+			"你以這把魔法斧進行的攻擊檢定與傷害擲骰獲得 +2 加值。這把斧頭對非構裝體或不死生物的生物額外造成 {@damage 1d6} 點黯蝕傷害。若你以這把斧頭的攻擊將這類生物的生命值降至 0，你獲得 10 點臨時生命值。",
+			"這把斧頭以暗沉、鏽色的金屬鍛造，曾屬於機械之聲的歌利亞野蠻人格羅格·強顎。"
+		],
+		"ENG_name": "Bloodaxe"
 	},
 	"Bloodstone|XDMG": {
 		"name": "血石",
@@ -4067,6 +4369,27 @@
 		],
 		"ENG_name": "Bread (loaf)"
 	},
+	"Breathing Bubble|EGW": {
+		"name": "呼吸泡泡",
+		"source": "EGW",
+		"page": 266,
+		"otherSources": [
+			{
+				"source": "CRCotN",
+				"page": 213
+			}
+		],
+		"referenceSources": [
+			"CRCotN"
+		],
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			"這個半透明、泡泡般的球體外層略帶黏性，只有像頭盔一樣套在頭上時，你才能獲得此物品的益處。",
+			"泡泡內含 1 小時份的可呼吸空氣。泡泡每天黎明恢復所有已消耗的空氣。"
+		],
+		"ENG_name": "Breathing Bubble"
+	},
 	"Bronze crown|XDMG": {
 		"name": "青銅王冠",
 		"source": "XDMG",
@@ -4100,6 +4423,18 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Bronze Dragon Scale Mail"
+	},
+	"Brooch of Living Essence|EGW": {
+		"name": "生命精華胸針",
+		"source": "EGW",
+		"page": 266,
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"穿戴這枚毫不起眼的胸針時，會偵測或揭露你生物類型的法術與其他任何效果都將你視為類人生物，而會揭露你陣營的效果則將你的陣營視為中立。"
+		],
+		"ENG_name": "Brooch of Living Essence"
 	},
 	"Brooch of Shielding|XDMG": {
 		"name": "護盾胸針",
@@ -4279,6 +4614,27 @@
 			"CNS"
 		],
 		"ENG_name": "Burnt Othur Fumes"
+	},
+	"Butcher's Bib|EGW": {
+		"name": "屠夫圍裙",
+		"source": "EGW",
+		"page": 266,
+		"rarity": "rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"critThreshold": 19,
+		"entries": [
+			"這件黑色皮革圍裙永遠沾滿鮮血，即使洗掉也一樣。穿著圍裙時，你獲得以下益處：",
+			{
+				"type": "list",
+				"items": [
+					"每回合一次，當你為武器近戰攻擊擲傷害骰時，你可以重擲武器的傷害骰。若你這麼做，你必須使用第二次的總和。",
+					"你造成揮砍傷害的武器攻擊在 {@dice d20} 擲出 19 或 20 時即為重擊。"
+				]
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Butcher's Bib"
 	},
 	"Caltrop|PHB": {
 		"name": "鐵蒺藜",
@@ -5396,6 +5752,22 @@
 		],
 		"ENG_name": "Coiling Grasp Tattoo"
 	},
+	"Coin of Delving|EGW": {
+		"name": "探深硬幣",
+		"source": "EGW",
+		"page": 266,
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			"這枚閃爍的銅幣在 5 呎半徑內發出微光。若從超過 5 呎的高度落下，硬幣碰到表面時會發出悅耳的鈴聲。任何能聽見鈴聲的生物都能根據音調判斷硬幣落下的距離。"
+		],
+		"light": [
+			{
+				"dim": 5
+			}
+		],
+		"ENG_name": "Coin of Delving"
+	},
 	"Cold Absorbing Tattoo|TCE": {
 		"name": "寒冷吸收刺青",
 		"source": "TCE",
@@ -6113,6 +6485,102 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Dagger of Venom"
+	},
+	"Danoth's Visor (Awakened)|EGW": {
+		"name": "達諾斯的護目鏡（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Danoth's Visor (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"When Danoth's Visor reaches an awakened state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"You see {@condition invisible} creatures and objects within 60 feet of you as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent.",
+									"As a bonus action, you can speak a command word and use the goggles to see into and through solid matter. This vision has a radius of 60 feet and lasts for 1 minute. To you, solid objects within that radius appear transparent. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead. This property can't be used again until the next dawn.",
+									"As a bonus action, you can speak a command word to switch the goggles into spyglass mode. While in this mode, creatures and objects viewed through the goggles are magnified to twice their size. Speaking the command word again reverts the goggles to their normal operation."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Danoth's Visor (Awakened)"
+	},
+	"Danoth's Visor (Dormant)|EGW": {
+		"name": "達諾斯的護目鏡（休眠）",
+		"source": "EGW",
+		"page": 270,
+		"rarity": "legendary",
+		"reqAttune": true,
+		"wondrous": true,
+		"property": [
+			"Vst|EGW"
+		],
+		"entries": [
+			"這副秘銀框架、透明鑽石鏡片的護目鏡曾為塑能師達諾斯·歐羅所用，用來發現{@condition invisible}的敵人並從遠處偵察區域。",
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"在休眠狀態下戴著護目鏡時，你能在 60 呎內的黑暗（無論是否為魔法黑暗）中正常視物。此外，你在依賴視覺的智力（{@skill Investigation}）與感知（{@skill Perception}）檢定上具有優勢。"
+				],
+				"ENG_name": "Dormant"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Danoth's Visor (Dormant)"
+	},
+	"Danoth's Visor (Exalted)|EGW": {
+		"name": "達諾斯的護目鏡（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Danoth's Visor (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"When Danoth's Visor reaches an exalted state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"You automatically detect illusions you can see and automatically succeed on saving throws against them. In addition, you see a bright aura around any creature that isn't in its true form.",
+									"As an action, you can cast the {@spell antimagic field} spell from the visor. This property can't be used again until the next dawn."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"attachedSpells": [
+			"antimagic field"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Danoth's Visor (Exalted)"
 	},
 	"Dark Shard Amulet|XDMG": {
 		"name": "暗影碎片護符",
@@ -7635,6 +8103,17 @@
 		],
 		"ENG_name": "Disguise Kit"
 	},
+	"Dispelling Stone|EGW": {
+		"name": "解咒石",
+		"source": "EGW",
+		"page": 266,
+		"rarity": "very rare",
+		"wondrous": true,
+		"entries": [
+			"這顆光滑、彩虹色的蛋形石頭可以投擲至多 30 呎遠，在撞擊時爆發成半徑 10 呎的魔法能量球形，並摧毀石頭。球形內任何作用中的 5 環或更低環階法術都會結束。"
+		],
+		"ENG_name": "Dispelling Stone"
+	},
 	"Draft Horse|XPHB": {
 		"name": "輓馬",
 		"source": "XPHB",
@@ -7833,6 +8312,55 @@
 			"silent image"
 		],
 		"ENG_name": "Duplicitous Manuscript"
+	},
+	"Duskcrusher|EGW": {
+		"name": "暮色粉碎者",
+		"source": "EGW",
+		"page": 266,
+		"baseItem": "warhammer|PHB",
+		"type": "M",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"weight": 2,
+		"weaponCategory": "martial",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d8",
+		"dmgType": "R",
+		"dmg2": "1d10",
+		"bonusWeapon": "+2",
+		"entries": [
+			"此物品的外形是一根以皮革包覆的金屬棒，上面飾有黎明之父培羅的聖徽。握住棒子時，你可以使用一個附贈動作，讓一個劈啪作響的光耀戰錘頭憑空出現。戰錘的光耀錘頭在 15 呎半徑內發出明亮光線，並在額外 15 呎內發出微光。此光線為陽光。你可以使用一個動作讓光耀錘頭消失。",
+			"光耀錘頭存在時，你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +2 加值，且武器的攻擊改為造成光耀傷害而非鈍擊傷害。被這把武器命中的不死生物額外受到 {@damage 1d8} 點光耀傷害。",
+			"當你持握暮色粉碎者且其光耀錘頭存在時，你可以使用一個動作從武器施展{@spell sunbeam}法術（豁免 {@dc 15}），此動作在下一個黎明之前無法再次使用。"
+		],
+		"light": [
+			{
+				"bright": 15,
+				"dim": 30
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"sunbeam"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Duskcrusher"
+	},
+	"Dust of Deliciousness|EGW": {
+		"name": "美味之塵",
+		"source": "EGW",
+		"page": 267,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"這種紅棕色的粉末可以撒在任何可食用的物質上，大幅改善風味。這種粉末也會使食用者的感官遲鈍：任何吃下以此粉末處理過之食物的人，在 1 小時內於感知屬性檢定與感知豁免檢定上具有劣勢。粉末的份量足以調味六份餐點。"
+		],
+		"ENG_name": "Dust of Deliciousness"
 	},
 	"Dust of Disappearance|XDMG": {
 		"name": "消失之塵",
@@ -8908,6 +9436,17 @@
 		],
 		"ENG_name": "Explorer's Pack"
 	},
+	"Explosive Seed|EGW": {
+		"name": "爆炸種子",
+		"source": "EGW",
+		"page": 225,
+		"type": "G",
+		"rarity": "none",
+		"entries": [
+			"這個橡實大小的黃銅球體內含少量爆破粉與一個發條觸發器。可以使用一個動作將爆炸種子投擲至多 30 呎遠，撞擊時引爆。爆炸的種子 5 呎內的每個生物都必須進行一次 {@dc 10} 敏捷豁免檢定，失敗時受到 {@damage 1d8} 點鈍擊傷害，成功時傷害減半。"
+		],
+		"ENG_name": "Explosive Seed"
+	},
 	"Eye Agate|XDMG": {
 		"name": "眼紋瑪瑙",
 		"source": "XDMG",
@@ -8938,7 +9477,7 @@
 		"charges": 8,
 		"entries": [
 			"維克那之名鮮少被說出口，除非是壓低聲音的耳語。維克那在他的時代是最強大的法師之一。透過黑暗魔法與征服，他打造了一個可怕的帝國。儘管擁有無比的力量，維克那仍無法逃脫自身的凡人命運。他開始畏懼死亡，並採取措施阻止自己的終結到來。",
-			"{@creature Orcus|MTF}，不死之惡魔王子，教導維克那一種儀式，讓他得以化為{@creature lich}繼續存活。超越死亡之後，他成為所有巫妖中最偉大的一位。即使他的身體逐漸枯萎腐朽，維克那仍持續擴張他的邪惡統治。他的脾氣如此可怕又令人憎惡，以致他的臣民不敢說出他的名字。他是低語者、蛛網王座之主、不死之王，以及腐朽之塔的領主。",
+			"{@creature Orcus|MTF|奧迦斯}，不死之惡魔王子，教導維克那一種儀式，讓他得以化為{@creature lich}繼續存活。超越死亡之後，他成為所有巫妖中最偉大的一位。即使他的身體逐漸枯萎腐朽，維克那仍持續擴張他的邪惡統治。他的脾氣如此可怕又令人憎惡，以致他的臣民不敢說出他的名字。他是低語者、蛛網王座之主、不死之王，以及腐朽之塔的領主。",
 			"有人說維克那的副手卡斯覬覦蛛網王座，或是他的主人為他打造的劍誘使他叛變。無論原因為何，卡斯在一場可怕的戰鬥中終結了不死之王的統治，那場戰鬥讓維克那的高塔化為一堆灰燼。維克那所剩下的只有一隻手與一隻眼睛，這兩件可怖的神器至今仍試圖在世上實現低語者的意志。",
 			"維克那之眼與{@item Hand of Vecna}可能一起被找到，也可能分別被找到。眼睛看起來像一個從眼窩扯下、佈滿血絲的器官。手則是一隻乾癟萎縮的木乃伊左手。",
 			"要與眼睛同調，你必須挖出自己的一隻眼睛，並將神器壓進空洞的眼窩。眼睛會與你的頭部接合，並一直留在那裡直到你死亡。一旦就位，眼睛會變成一隻有著細長瞳孔的金色眼睛，很像貓的眼睛。若眼睛被移除，你便會死亡。",
@@ -9020,7 +9559,7 @@
 				]
 			},
 			"other": [
-				"祈願術"
+				"wish"
 			]
 		},
 		"hasFluffImages": true,
@@ -10514,6 +11053,26 @@
 		"hasFluffImages": true,
 		"ENG_name": "Goggles of Night"
 	},
+	"Goggles of Object Reading|EGW": {
+		"name": "物品解讀護目鏡",
+		"source": "EGW",
+		"page": 267,
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這副皮框護目鏡配有紫色水晶鏡片。戴著護目鏡時，你為揭露一個你能看見之生物或物體的相關資訊而進行的智力（{@skill Arcana}）檢定具有優勢。",
+			"此外，你可以使用護目鏡施展{@spell identify}法術。你這麼做之後，在下一個黎明之前無法再次如此。"
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"identify"
+				]
+			}
+		},
+		"ENG_name": "Goggles of Object Reading"
+	},
 	"Gold Bar (5-pound)|XDMG": {
 		"name": "金條（5 磅）",
 		"source": "XDMG",
@@ -10719,6 +11278,258 @@
 		],
 		"ENG_name": "Grenade Launcher"
 	},
+	"Grimoire Infinitus (Awakened)|EGW": {
+		"name": "無盡魔典（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Grimoire Infinitus (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"When the Grimoire Infinitus reaches an awakened state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"While you carry the spellbook, you have advantage on saving throws against spells and magical effects.",
+									"When you prepare wizard spells using the grimoire as your spellbook, the number of spells you can prepare increases by 1 again."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Grimoire Infinitus (Awakened)"
+	},
+	"Grimoire Infinitus (Dormant)|EGW": {
+		"name": "無盡魔典（休眠）",
+		"source": "EGW",
+		"page": 271,
+		"rarity": "legendary",
+		"reqAttune": "by a wizard",
+		"reqAttuneTags": [
+			{
+				"class": "wizard"
+			}
+		],
+		"wondrous": true,
+		"weight": 3,
+		"property": [
+			"Vst|EGW"
+		],
+		"entries": [
+			"奧術時代曾製作出數本這種鍍金書頁、鍍銀封面的法術書，但大災變結束以來只找到過一本。這本書有無限多頁，厚 3 吋、寬 8 吋、長 12 吋，重 3 磅。",
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"書的大部分是空白的，但書的前幾頁記載了以下法術：{@spell alarm}、{@spell antimagic field}、{@spell Bigby's hand}、{@spell blight}、{@spell charm person}、{@spell confusion}、{@spell control weather}、{@spell create undead}、{@spell detect thoughts}、{@spell enlarge/reduce}、{@spell fear}、{@spell foresight}、{@spell gaseous form}、{@spell glyph of warding}、{@spell legend lore}、{@spell Leomund's tiny hut}、{@spell mass suggestion}、{@spell mislead}、{@spell misty step}、{@spell Mordenkainen's faithful hound}、{@spell prismatic spray}、{@spell ray of enfeeblement}、{@spell silent image}、{@spell teleport}與{@spell thunderwave}。",
+					"你可以將這本魔典當作你的法術書，並可以照常將新法術抄寫進去。當你使用這本魔典準備法師法術時，你可準備的法師法術數量增加 1。"
+				],
+				"ENG_name": "Dormant"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Grimoire Infinitus (Dormant)"
+	},
+	"Grimoire Infinitus (Exalted)|EGW": {
+		"name": "無盡魔典（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Grimoire Infinitus (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"When the Grimoire Infinitus reaches an exalted state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"You can now use your Arcane Recovery feature twice between long rests, rather than once.",
+									"When you prepare wizard spells using the grimoire as your spellbook, the number of spells you can prepare increases by 1 again."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Grimoire Infinitus (Exalted)"
+	},
+	"Grovelthrash (Awakened)|EGW": {
+		"name": "匍匐碎擊（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Grovelthrash (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"When the warhammer reaches an awakened state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +2.",
+									"You gain a burrowing speed equal to your walking speed. You can use your burrowing speed to move through sand, loose earth, mud, or ice, not solid rock.",
+									"When a creature you can see within 30 feet of you hits you with an attack while you are wielding the warhammer, you can use your reaction to deal an amount of psychic damage to that creature equal to the damage you took from the attack. This property can't be used again until the next dawn."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+2",
+		"modifySpeed": {
+			"equal": {
+				"burrow": "walk"
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Grovelthrash (Awakened)"
+	},
+	"Grovelthrash (Dormant)|EGW": {
+		"name": "匍匐碎擊（休眠）",
+		"source": "EGW",
+		"page": 275,
+		"baseItem": "warhammer|PHB",
+		"type": "M",
+		"rarity": "artifact",
+		"reqAttune": true,
+		"sentient": true,
+		"weight": 2,
+		"weaponCategory": "martial",
+		"property": [
+			"V",
+			"Vst|EGW"
+		],
+		"dmg1": "1d8",
+		"dmgType": "B",
+		"dmg2": "1d10",
+		"grantsLanguage": true,
+		"bonusWeapon": "+1",
+		"entries": [
+			"這把托洛格的戰錘由單一塊黑曜石打造而成，嗡嗡作響著魔法能量，上面刻著痛苦尖叫的臉孔。",
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"匍匐碎擊是一把具有知覺的中立邪惡武器，智力 18、感知 15、魅力 19。它具有聽覺，以及範圍 120 呎的{@sense darkvision}。",
+					"這把武器以心靈感應與持用者溝通，能說、讀並理解深淵語、通用語與煉獄語。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"type": "entries",
+				"name": "個性",
+				"entries": [
+					"一隻名叫希瑞亞的貪婪{@creature ultroloth}住在匍匐碎擊中。這把武器重視物質財產與施加痛苦。每當持用者取得寶藏，它都會讚美持用者，並以傷害他人為樂。"
+				],
+				"ENG_name": "Personality"
+			},
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"這把戰錘在休眠狀態下賦予以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"你能說、讀並寫深淵語與煉獄語。",
+							"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。當你以這把戰錘的攻擊命中時，你可以對目標額外造成 {@damage 2d6} 點鈍擊傷害。若你這麼做，你受到 {@damage 1d6} 點心靈傷害。這把戰錘對物體與建築造成雙倍傷害。",
+							"持握這把武器時，你為辨識以你理解之語言說出的謊言而進行的感知（{@skill Insight}）檢定具有優勢。"
+						]
+					}
+				],
+				"ENG_name": "Dormant"
+			},
+			{
+				"type": "inset",
+				"name": "背叛者神器屬性",
+				"entries": [
+					"背叛者之武的力量成長方式與分歧遺物相同。在休眠狀態下，這些神器各有一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當神器進入覺醒狀態時，它會額外獲得一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當物品達到昇華狀態時，它會獲得一項{@table Artifact Properties; Major Beneficial Properties|dmg|主要有益}屬性。更多資訊請見《地下城主指南》第 7 章的「神器屬性」。"
+				],
+				"ENG_name": "Betrayer Artifact Properties"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Grovelthrash (Dormant)"
+	},
+	"Grovelthrash (Exalted)|EGW": {
+		"name": "匍匐碎擊（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Grovelthrash (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"When the warhammer reaches an exalted state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +3.",
+									"When you have fewer hit points than half your hit point maximum, the warhammer deals an extra {@damage 2d6} bludgeoning damage on a hit. You can burrow through solid rock at half your burrowing speed and leave a 5-foot-diameter tunnel in your wake.",
+									"As an action, you can use the warhammer to cast one of the following spells from it (save {@dc 17}): {@spell earthquake}, {@spell meld into stone}, or {@spell stone shape}. Once a spell has been cast using the warhammer, that spell can't be cast from the warhammer again until the next dawn."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+3",
+		"attachedSpells": {
+			"daily": {
+				"1": [
+					"earthquake",
+					"meld into stone",
+					"stone shape"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Grovelthrash (Exalted)"
+	},
 	"Guardian Emblem|TCE": {
 		"name": "守護者徽章",
 		"source": "TCE",
@@ -10843,7 +11654,7 @@
 		"charges": 8,
 		"entries": [
 			"維克那之名鮮少被說出口，除非是壓低聲音的耳語。維克那在他的時代是最強大的法師之一。透過黑暗魔法與征服，他打造了一個可怕的帝國。儘管擁有無比的力量，維克那仍無法逃脫自身的凡人命運。他開始畏懼死亡，並採取措施阻止自己的終結到來。",
-			"{@creature Orcus|MTF}，不死之惡魔王子，教導維克那一種儀式，讓他得以化為{@creature lich}繼續存活。超越死亡之後，他成為所有巫妖中最偉大的一位。即使他的身體逐漸枯萎腐朽，維克那仍持續擴張他的邪惡統治。他的脾氣如此可怕又令人憎惡，以致他的臣民不敢說出他的名字。他是低語者、蛛網王座之主、不死之王，以及腐朽之塔的領主。",
+			"{@creature Orcus|MTF|奧迦斯}，不死之惡魔王子，教導維克那一種儀式，讓他得以化為{@creature lich}繼續存活。超越死亡之後，他成為所有巫妖中最偉大的一位。即使他的身體逐漸枯萎腐朽，維克那仍持續擴張他的邪惡統治。他的脾氣如此可怕又令人憎惡，以致他的臣民不敢說出他的名字。他是低語者、蛛網王座之主、不死之王，以及腐朽之塔的領主。",
 			"有人說維克那的副手卡斯覬覦蛛網王座，或是他的主人為他打造的劍誘使他叛變。無論原因為何，卡斯在一場可怕的戰鬥中終結了不死之王的統治，那場戰鬥讓維克那的高塔化為一堆灰燼。維克那所剩下的只有一隻手與一隻眼睛，這兩件可怖的神器至今仍試圖在世上實現低語者的意志。",
 			"{@item Eye of Vecna}與維克那之手可能一起被找到，也可能分別被找到。眼睛看起來像一個從眼窩扯下、佈滿血絲的器官。手則是一隻乾癟萎縮的木乃伊左手。",
 			"要與眼睛同調，你必須挖出自己的一隻眼睛，並將神器壓進空洞的眼窩。眼睛會與你的頭部接合，並一直留在那裡直到你死亡。一旦就位，眼睛會變成一隻有著細長瞳孔的金色眼睛，很像貓的眼睛。若眼睛被移除，你便會死亡。",
@@ -10924,7 +11735,7 @@
 				]
 			},
 			"other": [
-				"祈願術"
+				"wish"
 			]
 		},
 		"hasFluffImages": true,
@@ -11642,6 +12453,121 @@
 		],
 		"ENG_name": "Heward's Handy Spice Pouch"
 	},
+	"Hide of the Feral Guardian (Awakened)|EGW": {
+		"name": "野性守護者之皮（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Hide of the Feral Guardian (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"When the armor reaches an awakened state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The AC bonus of the armor increases to +2.",
+									"While you are transformed by an effect that replaces any of your game statistics with those of another creature, your bonus to melee attack and damage rolls increases by 1 (to +2).",
+									"When you cast the {@spell polymorph} spell using this armor, you can transform into a {@creature cave bear}."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+2",
+		"bonusAc": "+2",
+		"ENG_name": "Hide of the Feral Guardian (Awakened)"
+	},
+	"Hide of the Feral Guardian (Dormant)|EGW": {
+		"name": "野性守護者之皮（休眠）",
+		"source": "EGW",
+		"page": 271,
+		"baseItem": "studded leather armor|PHB",
+		"type": "LA",
+		"rarity": "legendary",
+		"reqAttune": true,
+		"weight": 13,
+		"property": [
+			"Vst|EGW"
+		],
+		"ac": 12,
+		"bonusWeapon": "+1",
+		"bonusAc": "+1",
+		"entries": [
+			"據信這件拋光且細節精美的皮甲是梅洛拉贈予的禮物，在大災變的恐怖降臨之前，賜給了一位早已被遺忘的大德魯伊暨自然界的捍衛者。",
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"在休眠狀態下穿著這件護甲時，你獲得以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"這件護甲使你的 AC 獲得 +1 加值。",
+							"當你被一個以另一生物的數據取代你任何遊戲數據的效果變形時，你的近戰攻擊檢定與傷害擲骰獲得 +1 加值，並保有這件護甲的益處。",
+							"作為一個動作，你可以使用護甲對自己施展{@spell polymorph}，變形為一隻{@creature giant owl}，同時保留你的智力、感知與魅力值。此屬性在下一個黎明之前無法再次使用。"
+						]
+					}
+				],
+				"ENG_name": "Dormant"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"polymorph"
+				]
+			}
+		},
+		"ENG_name": "Hide of the Feral Guardian (Dormant)"
+	},
+	"Hide of the Feral Guardian (Exalted)|EGW": {
+		"name": "野性守護者之皮（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Hide of the Feral Guardian (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"When the armor reaches an exalted state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The AC bonus of the armor increases to +3.",
+									"While you are transformed by an effect that replaces any of your game statistics with those of another creature, your bonus to melee attack and damage rolls increases by 1 (to +3).",
+									"When you cast the {@spell polymorph} spell using this armor, you can transform into a {@creature guardian wolf|EGW}."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+3",
+		"bonusAc": "+3",
+		"ENG_name": "Hide of the Feral Guardian (Exalted)"
+	},
 	"Holy Water|XPHB": {
 		"name": "聖水",
 		"source": "XPHB",
@@ -11879,6 +12805,27 @@
 		],
 		"ENG_name": "Hunk of Cheese"
 	},
+	"Hunter's Coat|EGW": {
+		"name": "獵人外套",
+		"source": "EGW",
+		"page": 267,
+		"baseItem": "leather armor|PHB",
+		"type": "LA",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"weight": 10,
+		"ac": 11,
+		"bonusAc": "+1",
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"穿著這件護甲時，你的 AC 獲得 +1 加值。",
+			"這件外套有 3 點充能。當你以攻擊命中一個生物，且該生物並非處於滿生命值時，你可以消耗 1 點充能，對目標額外造成 {@damage 1d10} 點黯蝕傷害。外套每天黎明恢復 {@dice 1d3} 點已消耗的充能。",
+			"這套護甲的護胸和肩甲是由浸泡過滾油而硬化的皮革製成。護甲的其他部分則是用較柔軟且具彈性的材料製作。"
+		],
+		"ENG_name": "Hunter's Coat"
+	},
 	"Hunting Trap|XPHB": {
 		"name": "狩獵陷阱",
 		"source": "XPHB",
@@ -11943,6 +12890,132 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Immovable Rod"
+	},
+	"Infiltrator's Key (Awakened)|EGW": {
+		"name": "滲透者之鑰（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Infiltrator's Key (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"When the Infiltrator's Key reaches an awakened state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"While holding the key, you can use a bonus action to transform the key into a magic dagger or back into a key. While the key is in the form of a dagger, you gain a +1 bonus to attack and damage rolls made with it, and it returns to your hand immediately after it is used to make a ranged attack.",
+									"While holding the key, you can use an action to cast one of the following spells from it: {@spell alter self}, {@spell invisibility}, {@spell knock}, or {@spell pass without trace}. Once a spell has been cast using the key, it can't be used to cast that spell again until the next dawn."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+2",
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"alter self",
+					"invisibility",
+					"knock",
+					"pass without trace"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Infiltrator's Key (Awakened)"
+	},
+	"Infiltrator's Key (Dormant)|EGW": {
+		"name": "滲透者之鑰（休眠）",
+		"source": "EGW",
+		"page": 272,
+		"rarity": "legendary",
+		"reqAttune": true,
+		"wondrous": true,
+		"property": [
+			"Vst|EGW"
+		],
+		"grantsProficiency": true,
+		"bonusWeapon": "+1",
+		"entries": [
+			"這把秘銀萬能鑰匙以十二名神偷大師的血鍛造而成，他們都因在奧術時代試圖偷竊魔法物品而遭處決。",
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"滲透者之鑰在休眠狀態下賦予以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"這把鑰匙可以作為{@item thieves' tools|phb}用於開鎖。使用鑰匙時，你視為熟練{@item thieves' tools|PHB}，且你為開鎖而進行的屬性檢定具有優勢。",
+							"持握鑰匙時，你的腳步聲會被消音，使你為悄然移動而進行的敏捷（{@skill Stealth}）檢定具有優勢。"
+						]
+					}
+				],
+				"ENG_name": "Dormant"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Infiltrator's Key (Dormant)"
+	},
+	"Infiltrator's Key (Exalted)|EGW": {
+		"name": "滲透者之鑰（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Infiltrator's Key (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"When the Infiltrator's Key reaches an exalted state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"As a bonus action, you can touch the key to a floor, wall, or ceiling that is no more than 5 feet thick and cause a magical opening to appear in the surface. When you create the opening, you choose its length and width, up to 10 feet for each dimension. The opening lasts until the key passes through it to the other side, at which point it disappears (if a creature is in the opening when the doorway closes, the creature is safely shunted to the nearest unoccupied space). The key can't be used to create another opening until the next dawn.",
+									"While holding the key, you can use an action to cast one of the following spells from it: {@spell dimension door}, {@spell gaseous form}, or {@spell mislead}. Once a spell has been cast using the key, it can't be used to cast that spell again until the next dawn."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+3",
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"alter self",
+					"dimension door",
+					"gaseous form",
+					"invisibility",
+					"knock",
+					"mislead",
+					"pass without trace"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Infiltrator's Key (Exalted)"
 	},
 	"Ink Pen|XPHB": {
 		"name": "墨水筆",
@@ -13101,6 +14174,163 @@
 		],
 		"ENG_name": "Lapis Lazuli"
 	},
+	"Lash of Shadows (Awakened)|EGW": {
+		"name": "暗影之鞭（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Lash of Shadows (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"When the whip reaches an awakened state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +2.",
+									"The saving throw DC for the weapon's poisons increases to 15.",
+									"The weapon gains a new poison option called Ghoul's Blood. A creature that fails the saving throw against this poison is {@condition poisoned} for 1 minute. While {@condition poisoned} in this way, the creature is {@condition paralyzed}. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+2",
+		"hasFluffImages": true,
+		"ENG_name": "Lash of Shadows (Awakened)"
+	},
+	"Lash of Shadows (Dormant)|EGW": {
+		"name": "暗影之鞭（休眠）",
+		"source": "EGW",
+		"page": 276,
+		"baseItem": "whip|PHB",
+		"type": "M",
+		"rarity": "artifact",
+		"reqAttune": true,
+		"sentient": true,
+		"weight": 3,
+		"weaponCategory": "martial",
+		"property": [
+			"F",
+			"R",
+			"Vst|EGW"
+		],
+		"dmg1": "1d4",
+		"dmgType": "S",
+		"grantsLanguage": true,
+		"bonusWeapon": "+1",
+		"entries": [
+			"這條蛇皮鞭帶有澤希爾的力量，末端是五顆活生生的蛇頭。",
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"暗影之鞭是一把具有知覺的混亂邪惡武器，智力 18、感知 16、魅力 20。它具有聽覺，以及範圍 120 呎的{@sense darkvision}。",
+					"這把武器以心靈感應與持用者溝通，能說、讀並理解深淵語、通用語與龍語。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"type": "entries",
+				"name": "個性",
+				"entries": [
+					"一隻名叫希茲麗菲絲的瘋狂{@creature marilith}住在暗影之鞭中。這把武器脾氣暴躁，只會體驗到極端的情緒。它在造成傷害時最為快樂。"
+				],
+				"ENG_name": "Personality"
+			},
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"這把鞭子在休眠狀態下賦予以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"你能說、讀並寫深淵語與龍語。",
+							"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+							"你可以嘗試讓被鞭子命中的任何生物中毒。該生物必須成功通過一次 {@dc 13} 體質豁免檢定，否則承受以下你選擇之一種毒素的效果；除了蛇毒以外的毒素使用過後，在下一個黎明之前無法再次使用：",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "死寂之眼",
+										"entry": "對此毒素豁免失敗的生物會{@condition poisoned} 1 小時。以此方式{@condition poisoned}時，該生物處於{@condition blinded}狀態。",
+										"ENG_name": "Dead Eyes"
+									},
+									{
+										"type": "item",
+										"name": "蛇毒",
+										"entry": "對此毒素豁免失敗的生物受到 {@damage 3d6} 點毒素傷害，豁免成功時傷害減半。",
+										"ENG_name": "Serpent Venom"
+									}
+								]
+							}
+						]
+					}
+				],
+				"ENG_name": "Dormant"
+			},
+			{
+				"type": "inset",
+				"name": "背叛者神器屬性",
+				"entries": [
+					"背叛者之武的力量成長方式與分歧遺物相同。在休眠狀態下，這些神器各有一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當神器進入覺醒狀態時，它會額外獲得一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當物品達到昇華狀態時，它會獲得一項{@table Artifact Properties; Major Beneficial Properties|dmg|主要有益}屬性。更多資訊請見《地下城主指南》第 7 章的「神器屬性」。"
+				],
+				"ENG_name": "Betrayer Artifact Properties"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Lash of Shadows (Dormant)"
+	},
+	"Lash of Shadows (Exalted)|EGW": {
+		"name": "暗影之鞭（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Lash of Shadows (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"When the whip reaches an exalted state, it gains the following additional properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +3.",
+									"The saving throw DC for the weapon's poisons increases to 17.",
+									"The weapon gains a new poison option called Cockatrice Tears. A creature that fails the saving throw against this poison begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} for 24 hours."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+3",
+		"hasFluffImages": true,
+		"ENG_name": "Lash of Shadows (Exalted)"
+	},
 	"Libram of Souls and Flesh|TCE": {
 		"name": "靈魂與血肉典籍",
 		"source": "TCE",
@@ -13549,6 +14779,36 @@
 		],
 		"ENG_name": "Lute of Thunderous Thumping"
 	},
+	"Luxon Beacon|EGW": {
+		"name": "盧克松信標",
+		"source": "EGW",
+		"page": 268,
+		"rarity": "legendary",
+		"wondrous": true,
+		"entries": [
+			"這個微微發光的水晶十二面體比外表看起來更重。它的側面裝有一組把手，觸摸時會脈動並發出嗡嗡聲。",
+			{
+				"type": "entries",
+				"name": "可能性碎片",
+				"entries": [
+					"觸摸信標並專注 1 分鐘的生物會獲得一枚可能性碎片，外觀是一顆微型、灰色的能量珠，會跟隨該生物，始終保持在它 1 呎內。碎片持續 8 小時，或直到被使用為止。信標賦予一枚可能性碎片後，在下一個黎明之前無法再賦予另一枚。擁有來自盧克松信標之可能性碎片的生物，無法從任何來源獲得另一枚可能性碎片。",
+					"當擁有可能性碎片的生物進行攻擊檢定、屬性檢定或豁免檢定時，它可以消耗碎片額外擲一顆 {@dice d20}，並選擇使用哪一顆 {@dice d20}。或者，當有攻擊檢定以該生物為目標時，它可以消耗碎片擲一顆 {@dice d20}，並選擇使用哪一顆 {@dice d20}——它擲出的那顆或攻擊者擲出的那顆。",
+					"若原本的 {@dice d20} 擲骰具有優勢或劣勢，生物會在原本的擲骰套用優勢或劣勢之後，再擲它的 {@dice d20}。"
+				],
+				"ENG_name": "Fragment of Possibility"
+			},
+			{
+				"type": "entries",
+				"name": "靈魂捕獲",
+				"entries": [
+					"若一名經歷過承續儀式的盧克松信徒在盧克松信標 100 哩內死亡，其靈魂會被信標捕獲。這個靈魂會轉生到信標 100 哩內一個正在發育的隨機類人生物嬰兒體內。"
+				],
+				"ENG_name": "Soul Snare"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Luxon Beacon"
+	},
 	"Lyre of Building|TCE": {
 		"name": "建築里拉琴",
 		"source": "TCE",
@@ -13714,6 +14974,154 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Mace of Terror"
+	},
+	"Mace of the Black Crown (Awakened)|EGW": {
+		"name": "黑冠硬頭錘（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Mace of the Black Crown (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"When the mace reaches an awakened state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +2, and the extra fire damage dealt by the weapon when it is ignited increases to {@dice 2d6}.",
+									"The weapon's Summon Devil feature can also be used to summon a {@creature bearded devil}.",
+									"You have resistance to poison damage while holding this weapon."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+2",
+		"hasFluffImages": true,
+		"ENG_name": "Mace of the Black Crown (Awakened)"
+	},
+	"Mace of the Black Crown (Dormant)|EGW": {
+		"name": "黑冠硬頭錘（休眠）",
+		"source": "EGW",
+		"page": 276,
+		"baseItem": "mace|PHB",
+		"type": "M",
+		"resist": [
+			"fire",
+			"poison"
+		],
+		"rarity": "artifact",
+		"reqAttune": true,
+		"sentient": true,
+		"weight": 4,
+		"weaponCategory": "simple",
+		"property": [
+			"Vst|EGW"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"grantsLanguage": true,
+		"bonusWeapon": "+1",
+		"entries": [
+			"這把硬頭錘有著黑鐵錘柄與一顆雕成魔鬼面容的紅寶石錘頭。它承載著阿斯莫德的恩賜，適合九層地獄最強大的僕從使用。",
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"黑冠硬頭錘是一把具有知覺的守序邪惡武器，智力 20、感知 12、魅力 18。它具有聽覺，以及範圍 120 呎的{@sense darkvision}。",
+					"這把武器以心靈感應與持用者溝通，能說、讀並理解通用語與煉獄語。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"type": "entries",
+				"name": "個性",
+				"entries": [
+					"一隻名叫薩塔札的貪婪{@creature erinyes}住在黑冠硬頭錘中。薩塔札想為阿斯莫德招募更多靈魂，因此這把武器會透過操縱持用者的夢境，推動持用者採取守序邪惡的行動。薩塔札曾是血戰中的一名將軍，憎恨惡魔，並樂於在任何衝突中擬定周密的作戰計畫。"
+				],
+				"ENG_name": "Personality"
+			},
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"這把硬頭錘在休眠狀態下賦予以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"你能說、讀並寫煉獄語。",
+							"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+							"持握硬頭錘時，你可以使用一個附贈動作說出它的煉獄語命令語，使火焰從錘頭噴發。這些火焰在 40 呎半徑內發出明亮光線，並在額外 40 呎內發出微光。硬頭錘燃燒時，對它命中的任何目標額外造成 {@damage 1d6} 點火焰傷害。火焰持續到你使用一個附贈動作再次說出命令語，或直到你不再持握硬頭錘為止。",
+							"持握硬頭錘時，你可以使用一個動作召喚一隻{@creature imp}。你以這把硬頭錘召喚的任何魔鬼在持續時間內對你與你的同伴友善。小魔鬼會服從你下達的任何口頭命令，並在你召喚它 10 分鐘後回到九層地獄。此屬性在下一個黎明之前無法再次使用。"
+						]
+					}
+				],
+				"ENG_name": "Dormant"
+			},
+			{
+				"type": "inset",
+				"name": "背叛者神器屬性",
+				"entries": [
+					"背叛者之武的力量成長方式與分歧遺物相同。在休眠狀態下，這些神器各有一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當神器進入覺醒狀態時，它會額外獲得一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當物品達到昇華狀態時，它會獲得一項{@table Artifact Properties; Major Beneficial Properties|dmg|主要有益}屬性。更多資訊請見《地下城主指南》第 7 章的「神器屬性」。"
+				],
+				"ENG_name": "Betrayer Artifact Properties"
+			}
+		],
+		"light": [
+			{
+				"bright": 40,
+				"dim": 80
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Mace of the Black Crown (Dormant)"
+	},
+	"Mace of the Black Crown (Exalted)|EGW": {
+		"name": "黑冠硬頭錘（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Mace of the Black Crown (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"When the mace reaches an exalted state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +3, and the extra fire damage dealt by the weapon when it is ignited increases to {@dice 3d6}. Fire damage dealt by the mace ignores resistance to fire damage.",
+									"The weapon's Summon Devil feature can also be used to summon a {@creature barbed devil}.",
+									"You have resistance to fire damage while you hold this weapon."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+3",
+		"hasFluffImages": true,
+		"ENG_name": "Mace of the Black Crown (Exalted)"
 	},
 	"Magnifying Glass|XPHB": {
 		"name": "放大鏡",
@@ -14280,6 +15688,19 @@
 		],
 		"ENG_name": "Moonstone"
 	},
+	"Moorbounder|EGW": {
+		"name": "荒原奔獸",
+		"source": "EGW",
+		"page": 132,
+		"type": "MNT",
+		"rarity": "none",
+		"value": 40000,
+		"entries": [
+			"馱獸在佐哈斯各地都很常見，馬匹與其他騎乘動物往往是最好或唯一的選擇。對於需要速度、手頭又稍微寬裕的人來說，最好的選擇往往是荒原奔獸。然而，未經適當訓練、或未與主人建立信任關係的荒原奔獸，往往會攻擊甚至吃掉騎手。",
+			"每隻荒原奔獸的價格在 300 到 500 gp 之間。在荒野上的城鎮，牠們通常比在羅索納這類城市更便宜、數量也更多。"
+		],
+		"ENG_name": "Moorbounder"
+	},
 	"Moss Agate|XDMG": {
 		"name": "苔紋瑪瑙",
 		"source": "XDMG",
@@ -14304,6 +15725,22 @@
 		"carryingCapacity": 420,
 		"speed": 40,
 		"ENG_name": "Mule"
+	},
+	"Muroosa Balm|EGW": {
+		"name": "穆盧薩膏",
+		"source": "EGW",
+		"page": 70,
+		"type": "G",
+		"resist": [
+			"fire"
+		],
+		"rarity": "none",
+		"value": 10000,
+		"entries": [
+			"這種以穆盧薩灌木製成的膏藥以預防曬傷聞名，但它也是一種防火劑。花費 1 分鐘將四分之一品脫的穆盧薩膏塗抹在皮膚上後，你在 1 小時內獲得火焰傷害抗性。",
+			"足以治療曬傷的一劑穆盧薩膏價格為 1 gp。"
+		],
+		"ENG_name": "Muroosa Balm"
 	},
 	"Mystery Key|XDMG": {
 		"name": "神秘鑰匙",
@@ -14581,6 +16018,36 @@
 		],
 		"ENG_name": "Necrotic Absorbing Tattoo"
 	},
+	"Needle of Mending|EGW": {
+		"name": "修補之針",
+		"source": "EGW",
+		"page": 268,
+		"baseItem": "dagger|PHB",
+		"type": "M",
+		"rarity": "rare",
+		"reqAttune": true,
+		"weight": 1,
+		"weaponCategory": "simple",
+		"property": [
+			"F",
+			"L",
+			"T"
+		],
+		"range": "20/60",
+		"dmg1": "1d4",
+		"dmgType": "P",
+		"bonusWeapon": "+1",
+		"entries": [
+			"這把武器是一把偽裝成縫衣針的魔法匕首。當你持握它並使用一個附贈動作說出它的命令語時，它會變成匕首，或變回縫衣針。",
+			"你以這把匕首進行的攻擊檢定與傷害擲骰獲得 +1 加值。持握它時，你可以使用一個動作從它施展{@spell mending}戲法。"
+		],
+		"attachedSpells": {
+			"will": [
+				"mending"
+			]
+		},
+		"ENG_name": "Needle of Mending"
+	},
 	"Net|XPHB": {
 		"name": "捕網",
 		"source": "XPHB",
@@ -14600,6 +16067,18 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Net"
+	},
+	"Nightfall Pearl|EGW": {
+		"name": "夜幕珍珠",
+		"source": "EGW",
+		"page": 268,
+		"rarity": "legendary",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這顆直徑 6 吋、漆黑的球體用來召喚黑夜，摸起來冰冷。你可以花費 10 分鐘啟動它，使啟動當下它 10 哩內的區域變為黑夜，即使當時是白天也一樣。這片黑夜持續 24 小時，直到你以一個動作取消它，或直到你與珍珠的同調結束。使用過後，珍珠在 24 小時內無法再次使用。"
+		],
+		"ENG_name": "Nightfall Pearl"
 	},
 	"Nolzur's Marvelous Pigments|XDMG": {
 		"name": "諾佐爾的神奇顏料",
@@ -14821,6 +16300,18 @@
 		"rarity": "none",
 		"value": 250000,
 		"ENG_name": "Old masterpiece painting"
+	},
+	"Olisuba Leaf|EGW": {
+		"name": "奧利蘇巴葉",
+		"source": "EGW",
+		"page": 70,
+		"type": "G",
+		"rarity": "none",
+		"value": 5000,
+		"entries": [
+			"奧利蘇巴樹的乾燥葉子泡成茶後，能幫助身體從劇烈活動中恢復。若你在長休期間喝下一劑奧利蘇巴茶，在該次長休結束時，你的{@condition exhaustion}等級減少 2 而非 1。"
+		],
+		"ENG_name": "Olisuba Leaf"
 	},
 	"Onyx|XDMG": {
 		"name": "縞瑪瑙",
@@ -15068,6 +16559,39 @@
 		},
 		"hasFluffImages": true,
 		"ENG_name": "Orb of Dragonkind"
+	},
+	"Orb of the Veil|EGW": {
+		"name": "帷幕寶珠",
+		"source": "EGW",
+		"page": 268,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"curse": true,
+		"weight": 3,
+		"ability": {
+			"wis": 2
+		},
+		"entries": [
+			"這顆縞瑪瑙球體上有深深的螺旋溝槽，懸掛在一條鐵鍊上。當寶珠在你身上時，你獲得以下益處：",
+			{
+				"type": "list",
+				"items": [
+					"你的感知值增加 2，該屬性值的上限也增加 2。",
+					"你獲得範圍 60 呎的{@sense darkvision}。若你已經擁有{@sense darkvision}，寶珠使其範圍增加 60 呎。",
+					"你為尋找隱藏的門與通道而進行的感知檢定具有優勢。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "詛咒",
+				"entries": [
+					"寶珠受到詛咒，與它同調會使詛咒延伸到你身上。只要你仍受到詛咒，你便不願與寶珠分離，會始終將它帶在身上。你 30 呎內所有非魔法火焰會自動熄滅，且你造成的火焰傷害減半。"
+				],
+				"ENG_name": "Curse"
+			}
+		],
+		"ENG_name": "Orb of the Veil"
 	},
 	"Orb of Time|XDMG": {
 		"name": "時間寶珠",
@@ -16605,6 +18129,21 @@
 		],
 		"ENG_name": "Potion of Longevity"
 	},
+	"Potion of Maximum Power|EGW": {
+		"name": "極限威力藥水",
+		"source": "EGW",
+		"page": 268,
+		"type": "P",
+		"rarity": "rare",
+		"entries": [
+			"喝下這瓶藥水後的 1 分鐘內，你第一次施展造成傷害的 4 環或更低環階法術時，你可以不擲骰決定造成的傷害，而是每顆骰子都使用可能的最大數值。",
+			"這種發光的紫色液體聞起來有糖與李子的氣味，但嚐起來有股泥味。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potion of Maximum Power"
+	},
 	"Potion of Mind Reading|XDMG": {
 		"name": "讀心藥水",
 		"source": "XDMG",
@@ -16694,6 +18233,23 @@
 			"CNS"
 		],
 		"ENG_name": "Potion of Poison"
+	},
+	"Potion of Possibility|EGW": {
+		"name": "可能性藥水",
+		"source": "EGW",
+		"page": 268,
+		"type": "P",
+		"rarity": "very rare",
+		"entries": [
+			"當你喝下這瓶透明藥水時，你獲得兩枚可能性碎片，每枚的外觀都是一顆微型、灰色的能量珠，會跟隨你，始終保持在你 1 呎內。每枚碎片持續 8 小時，或直到被使用為止。",
+			"當你進行攻擊檢定、屬性檢定或豁免檢定時，你可以消耗你的碎片額外擲一顆 {@dice d20}，並選擇使用哪一顆 {@dice d20}。或者，當有攻擊檢定以你為目標時，你可以消耗碎片擲一顆 {@dice d20}，並選擇使用哪一顆 {@dice d20}——你擲出的那顆或攻擊者擲出的那顆。",
+			"若原本的 {@dice d20} 擲骰具有優勢或劣勢，你會在原本的擲骰套用優勢或劣勢之後，再擲你的 {@dice d20}。",
+			"當你擁有一或多枚來自這瓶藥水的可能性碎片時，你無法從任何來源獲得另一枚可能性碎片。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potion of Possibility"
 	},
 	"Potion of Psychic Resistance|XDMG": {
 		"name": "心靈抗性藥水",
@@ -16975,6 +18531,32 @@
 			]
 		},
 		"ENG_name": "Pouch"
+	},
+	"Pride Silk Outfit|EGW": {
+		"name": "傲絲服裝",
+		"source": "EGW",
+		"page": 103,
+		"type": "G",
+		"rarity": "none",
+		"weight": 4,
+		"value": 50000,
+		"entries": [
+			"一套傲絲服裝重 4 磅，價格為 500 gp。若你沒有穿著護甲，穿著它時你的基礎護甲等級為 11 + 你的敏捷調整值。"
+		],
+		"ENG_name": "Pride Silk Outfit"
+	},
+	"Pride Silk|EGW": {
+		"name": "傲絲",
+		"source": "EGW",
+		"page": 103,
+		"type": "G",
+		"rarity": "none",
+		"weight": 1,
+		"value": 10000,
+		"entries": [
+			"這個地區特有的堅韌蠶絲長久以來都是當地人的驕傲。經過妥善加工與編織後，得到的布料就是傲絲：一種極具彈性、又有鞣製皮革般耐用度的材料。傲絲已成為軍艦船帆、戰旗與其他實用用途最受青睞的布料，但在富裕圈子中也越來越受歡迎。以傲絲製成的高級服裝既時髦又具防護力，使許多貴族與富商都想要以它製成的整套服裝與正式禮服。手藝足以製作這類服裝的裁縫少之又少，因此儘管傲絲作為原料可能已經很昂貴，以這種布料製成的服裝對大多數平民而言更是貴得令人卻步。"
+		],
+		"ENG_name": "Pride Silk"
 	},
 	"Priest's Pack|XPHB": {
 		"name": "祭司套裝",
@@ -17510,6 +19092,23 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Red Dragon Scale Mail"
+	},
+	"Reincarnation Dust|EGW": {
+		"name": "轉生之塵",
+		"source": "EGW",
+		"page": 268,
+		"rarity": "very rare",
+		"wondrous": true,
+		"entries": [
+			"當這一小袋紫色粉塵撒在死去的類人生物或死去類人生物的一部分上時，粉塵會被遺骸吸收。若死去的生物願意，它會以新的身體復活，如同對遺骸施展了{@spell reincarnate}法術。"
+		],
+		"attachedSpells": [
+			"reincarnate"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Reincarnation Dust"
 	},
 	"Reliquary|XPHB": {
 		"name": "聖物匣",
@@ -18280,6 +19879,29 @@
 		],
 		"ENG_name": "Ring of Necrotic Resistance"
 	},
+	"Ring of Obscuring|EGW": {
+		"name": "遮蔽戒指",
+		"source": "EGW",
+		"page": 269,
+		"type": "RG|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d3}",
+		"charges": 3,
+		"entries": [
+			"這枚鐵戒形似骷髏，摸起來冰冷。它有 3 點充能，每天黎明恢復 {@dice 1d3} 點已消耗的充能。戴著戒指時，你可以使用一個動作消耗 1 點充能，從戒指施展{@spell fog cloud}法術，並有以下變化：雲霧首次出現時以你為中心，且法術持續 1 分鐘（不需要{@status concentration}）。"
+		],
+		"attachedSpells": {
+			"charges": {
+				"1": [
+					"fog cloud"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Ring of Obscuring"
+	},
 	"Ring of Poison Resistance|XDMG": {
 		"name": "毒素抗性戒指",
 		"source": "XDMG",
@@ -18556,6 +20178,18 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Ring of Telekinesis"
+	},
+	"Ring of Temporal Salvation|EGW": {
+		"name": "時間救贖戒指",
+		"source": "EGW",
+		"page": 269,
+		"type": "RG|DMG",
+		"rarity": "rare",
+		"reqAttune": true,
+		"entries": [
+			"若你戴著這枚灰色水晶戒指時死亡，你會消失，並重新出現在你離開之空間 5 呎內的一個未被佔據的空間（或最近的未被佔據的空間）。你的生命值等於 {@dice 3d6} + 你的體質調整值。若你的生命值上限低於你恢復的生命值，你的生命值上限提升至相同的數值。若你有任何{@condition exhaustion}等級，你的{@condition exhaustion}等級減少 1。戒指使用過後會化為塵土並被摧毀。"
+		],
+		"ENG_name": "Ring of Temporal Salvation"
 	},
 	"Ring of the Ram|XDMG": {
 		"name": "公羊戒指",
@@ -19246,6 +20880,23 @@
 		"hasFluffImages": true,
 		"ENG_name": "Rod of Resurrection"
 	},
+	"Rod of Retribution|EGW": {
+		"name": "報復權杖",
+		"source": "EGW",
+		"page": 269,
+		"type": "RD|DMG",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"weight": 2,
+		"recharge": "dawn",
+		"rechargeAmount": 3,
+		"charges": 3,
+		"entries": [
+			"這根精金權杖頂端鑲著一顆發光的水晶眼。權杖有 3 點充能，每天黎明恢復所有已消耗的充能。",
+			"當你持握這根權杖時，若你 60 呎內一個你能看見的生物對你造成傷害，你可以使用你的反應消耗權杖的 1 點充能，迫使該生物進行一次 {@dc 13} 敏捷豁免檢定。該生物豁免失敗時受到 {@damage 2d10} 點閃電傷害，成功時傷害減半。"
+		],
+		"ENG_name": "Rod of Retribution"
+	},
 	"Rod of Rulership|XDMG": {
 		"name": "統御權杖",
 		"source": "XDMG",
@@ -19423,6 +21074,146 @@
 			"一顆從清澈紅色到深緋紅色的寶石。"
 		],
 		"ENG_name": "Ruby"
+	},
+	"Ruin's Wake (Awakened)|EGW": {
+		"name": "毀滅餘波（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Ruin's Wake (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"When the spear reaches an awakened state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +2, and the extra piercing damage dealt by the weapon increases to {@damage 2d8}.",
+									"When you hurl the spear and speak a command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a creature you can see within 120 feet of you. Each creature in the line, excluding you, must make a {@dc 15} Dexterity saving throw, taking {@damage 8d6} lightning damage on a failed save, or half as much damage on a successful one. Ruin's Wake then returns to your hand. This property can't be used again until the next dawn."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+2",
+		"hasFluffImages": true,
+		"ENG_name": "Ruin's Wake (Awakened)"
+	},
+	"Ruin's Wake (Dormant)|EGW": {
+		"name": "毀滅餘波（休眠）",
+		"source": "EGW",
+		"page": 277,
+		"baseItem": "spear|PHB",
+		"type": "M",
+		"rarity": "artifact",
+		"reqAttune": true,
+		"sentient": true,
+		"weight": 3,
+		"weaponCategory": "simple",
+		"property": [
+			"T",
+			"V",
+			"Vst|EGW"
+		],
+		"range": "20/60",
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"dmg2": "1d8",
+		"grantsLanguage": true,
+		"bonusWeapon": "+1",
+		"entries": [
+			"這支矛以一條遠古金龍的象牙色骨頭製成，上面刻著一首獻給格烏什的獸人讚美詩。",
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"毀滅餘波是一把具有知覺的混亂邪惡武器，智力 20、感知 16、魅力 22。它具有聽覺，以及範圍 120 呎的{@sense darkvision}。",
+					"這把武器以心靈感應與持用者溝通，能說、讀並理解深淵語、通用語與獸人語。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"type": "entries",
+				"name": "個性",
+				"entries": [
+					"一隻名叫亞羅維許、熱愛殺戮的{@creature balor}住在毀滅餘波中。這把武器只渴望見血，並促使持用者以暴力解決問題。"
+				],
+				"ENG_name": "Personality"
+			},
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"這把矛在休眠狀態下賦予以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"你能說、讀並寫深淵語與獸人語。",
+							"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值，且它對命中的任何目標額外造成 {@damage 1d8} 點穿刺傷害。你以這把武器進行遠程攻擊後，它會立刻飛回你手中。",
+							"當你被近戰攻擊命中時，你可以使用反應，以毀滅餘波對攻擊者進行一次具有優勢的近戰攻擊。在你完成一次短休或長休之前，你無法再次使用此屬性。"
+						]
+					}
+				],
+				"ENG_name": "Dormant"
+			},
+			{
+				"type": "inset",
+				"name": "背叛者神器屬性",
+				"entries": [
+					"背叛者之武的力量成長方式與分歧遺物相同。在休眠狀態下，這些神器各有一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當神器進入覺醒狀態時，它會額外獲得一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當物品達到昇華狀態時，它會獲得一項{@table Artifact Properties; Major Beneficial Properties|dmg|主要有益}屬性。更多資訊請見《地下城主指南》第 7 章的「神器屬性」。"
+				],
+				"ENG_name": "Betrayer Artifact Properties"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Ruin's Wake (Dormant)"
+	},
+	"Ruin's Wake (Exalted)|EGW": {
+		"name": "毀滅餘波（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Ruin's Wake (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"When the spear reaches an exalted state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +3.",
+									"While holding the spear, you can let out a battle cry as a bonus action. Each creature you choose within 30 feet of you gains advantage on attack rolls until the start of your next turn. This property can't be used again until the next dawn.",
+									"When you reduce a creature to 0 hit points with an attack from the spear, you can regain hit points equal to the damage you dealt with the attack. This property can't be used again until the next dawn."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+3",
+		"hasFluffImages": true,
+		"ENG_name": "Ruin's Wake (Exalted)"
 	},
 	"Sack|XPHB": {
 		"name": "麻袋",
@@ -20323,6 +22114,159 @@
 		"value": 1000,
 		"ENG_name": "Silk"
 	},
+	"Silken Spite (Awakened)|EGW": {
+		"name": "絲織怨毒（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Silken Spite (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"The rapier grants the following benefits in its awakened state:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +2.",
+									"The saving throw DC for the weapon's poison increases to 15.",
+									"While holding the rapier, you can use an action to cast one of the following spells from it (save {@dc 15}): {@spell cloudkill}, {@spell darkness}, {@spell levitate}, or {@spell web}. Once a spell has been cast using the rapier, that spell can't be cast from the rapier again until the next dawn."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+2",
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"cloudkill",
+					"darkness",
+					"levitate",
+					"web"
+				]
+			}
+		},
+		"ENG_name": "Silken Spite (Awakened)"
+	},
+	"Silken Spite (Dormant)|EGW": {
+		"name": "絲織怨毒（休眠）",
+		"source": "EGW",
+		"page": 277,
+		"baseItem": "rapier|PHB",
+		"type": "M",
+		"rarity": "artifact",
+		"reqAttune": true,
+		"sentient": true,
+		"weight": 2,
+		"weaponCategory": "martial",
+		"property": [
+			"F",
+			"Vst|EGW"
+		],
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"grantsLanguage": true,
+		"bonusWeapon": "+1",
+		"modifySpeed": {
+			"equal": {
+				"climb": "walk"
+			}
+		},
+		"entries": [
+			"這把刺劍的劍刃以蛛絲製成。它的縞瑪瑙劍柄頭鑲著一顆切割成蜘蛛形狀的紅寶石，劍刃承載著羅絲的祝福。",
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"絲織怨毒是一把具有知覺的混亂邪惡武器，智力 13、感知 15、魅力 15。它具有聽覺，以及範圍 120 呎的{@sense darkvision}。",
+					"這把武器以心靈感應與持用者溝通，能說、讀並理解深淵語、通用語、精靈語與地底通用語。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"type": "entries",
+				"name": "個性",
+				"entries": [
+					"一隻名叫辛娜菲克絲的嗜殺{@creature yochlol}住在絲織怨毒中。這把武器以低語說話，促使持用者不要信任任何人，並殺死任何造成最輕微冒犯的人。"
+				],
+				"ENG_name": "Personality"
+			},
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"這把刺劍在休眠狀態下賦予以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"你能說、讀並寫深淵語、精靈語與地底通用語。",
+							"你獲得範圍 60 呎的{@sense darkvision}。若你已經擁有{@sense darkvision}，與刺劍同調會使你的{@sense darkvision}範圍增加 60 呎。",
+							"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+							"你可以使用一個動作讓毒液覆蓋刺劍的劍刃。毒液持續 1 分鐘，或直到以這把武器進行的攻擊命中一個生物為止。該生物必須成功通過一次 {@dc 13} 體質豁免檢定，否則{@condition poisoned} 1 小時。若豁免檢定失敗 5 點或更多，該生物在以此方式{@condition poisoned}期間也處於{@condition unconscious}狀態。若該生物受到傷害，或另一個生物使用它的動作搖醒它，它就會醒來。",
+							"攜帶刺劍時，你可以在垂直表面上上下與橫向移動，也可以倒掛在天花板上移動，同時空出雙手。你獲得等同於你步行速度的攀爬速度。此外，你不會被任何種類的蛛網困住，並可以如同在{@quickref difficult terrain||3}中一般穿過蛛網。"
+						]
+					}
+				],
+				"ENG_name": "Dormant"
+			},
+			{
+				"type": "inset",
+				"name": "背叛者神器屬性",
+				"entries": [
+					"背叛者之武的力量成長方式與分歧遺物相同。在休眠狀態下，這些神器各有一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當神器進入覺醒狀態時，它會額外獲得一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當物品達到昇華狀態時，它會獲得一項{@table Artifact Properties; Major Beneficial Properties|dmg|主要有益}屬性。更多資訊請見《地下城主指南》第 7 章的「神器屬性」。"
+				],
+				"ENG_name": "Betrayer Artifact Properties"
+			}
+		],
+		"ENG_name": "Silken Spite (Dormant)"
+	},
+	"Silken Spite (Exalted)|EGW": {
+		"name": "絲織怨毒（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Silken Spite (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"The rapier grants the following benefits in its exalted state:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +3.",
+									"The saving throw DC for the weapon's poison and spells cast from the weapon increases to 17.",
+									"Magical darkness doesn't impede your {@sense darkvision}.",
+									"While holding the weapon in dim light or darkness, you can use a bonus action to teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. This property can't be used again until the next dawn."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+3",
+		"ENG_name": "Silken Spite (Exalted)"
+	},
 	"Silver and gold brooch|XDMG": {
 		"name": "金銀胸針",
 		"source": "XDMG",
@@ -20425,6 +22369,22 @@
 		"value": 500,
 		"ENG_name": "Silver"
 	},
+	"Skyship|EGW": {
+		"name": "飛空艇",
+		"source": "EGW",
+		"page": 72,
+		"type": "AIR|DMG",
+		"rarity": "none",
+		"value": 10000000,
+		"crewMin": 6,
+		"crewMax": 10,
+		"vehSpeed": 10,
+		"capPassenger": 30,
+		"capCargo": 10,
+		"travelCost": 200,
+		"shippingCost": 100,
+		"ENG_name": "Skyship"
+	},
 	"Sled|XPHB": {
 		"name": "雪橇",
 		"source": "XPHB",
@@ -20484,6 +22444,22 @@
 		],
 		"ENG_name": "Smoke Grenade"
 	},
+	"Soothsalts|EGW": {
+		"name": "舒緩鹽",
+		"source": "EGW",
+		"page": 152,
+		"type": "G",
+		"rarity": "none",
+		"value": 15000,
+		"entries": [
+			"舒緩鹽源自一種天然生成的結晶物質，在米斯卡斯海岸的荒野各處都有發現。這種深紅色晶體是從洞穴礦脈中開採出來的（例如米斯卡斯坑口的礦脈），也見於大災變肆虐過的地點附近較小的晶洞中。舒緩鹽以錠劑大小的劑量口服，常用者可以從嘴邊明顯的深紅色污漬辨認出來。受到一劑舒緩鹽影響的生物在 {@dice 1d4} 小時內於所有智力檢定上具有優勢。",
+			"每服用一劑舒緩鹽，生物都必須成功通過一次 {@dc 15} 體質豁免檢定，否則獲得 1 級{@condition exhaustion}——多劑的效果會累加。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Soothsalts"
+	},
 	"Sovereign Glue|XDMG": {
 		"name": "至尊膠",
 		"source": "XDMG",
@@ -20502,6 +22478,22 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Sovereign Glue"
+	},
+	"Spell Bottle|EGW": {
+		"name": "法術瓶",
+		"source": "EGW",
+		"page": 269,
+		"rarity": "legendary",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這個玻璃瓶一次可以儲存一道至多 5 環的法術。找到時，擲一顆 {@dice d6} 並減 1；結果決定瓶中法術的環階（由 DM 選擇法術，0 代表瓶子是空的）。瓶中儲存法術時，會充滿旋轉的藍色霧氣。",
+			"瓶子是空的時，任何生物都可以在施法時觸碰瓶子，將一道 1 至 5 環的法術施放進瓶中。該法術除了被儲存在瓶中以外沒有任何效果。",
+			"持握瓶子時，你可以施展儲存在其中的法術。該法術使用原施法者的法術位環階、法術豁免 DC、法術攻擊加值與施法屬性，除此之外視為由你施展。法術施展後，瓶子便會變空。",
+			"若你持握空瓶時看見一個生物在你 60 呎內施展法術，你可以使用反應打開瓶子，嘗試打斷該法術。若該生物施展的是 3 環或更低的法術，法術沒有效果，並被儲存在瓶中。若施展的是 4 環或更高的法術，進行一次智力檢定，DC 等於 10 + 法術環階。成功時，法術沒有效果，並被儲存在瓶中。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Spell Bottle"
 	},
 	"Spell Scroll (Cantrip)|DMG": {
 		"name": "法術卷軸(戲法)",
@@ -21312,6 +23304,56 @@
 		"hasFluffImages": true,
 		"ENG_name": "Staff of Charming"
 	},
+	"Staff of Dunamancy|EGW": {
+		"name": "時空術法杖",
+		"source": "EGW",
+		"page": 270,
+		"rarity": "very rare",
+		"reqAttune": "by a wizard",
+		"reqAttuneTags": [
+			{
+				"class": "wizard"
+			}
+		],
+		"weight": 4,
+		"weaponCategory": "simple",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d6 + 4}",
+		"charges": 10,
+		"staff": true,
+		"entries": [
+			"這根拋光的灰色木杖沿著杖身刻有許多符文。法杖有 10 點充能，每天黎明恢復 {@dice 1d6 + 4} 點已消耗的充能。若你消耗最後 1 點充能，擲一顆 {@dice d20}。若擲出 1，法杖會化為塵土並被摧毀。",
+			"持握法杖時，你可以使用一個動作消耗 2 點或更多充能，使用你的法術豁免 DC 與法術攻擊加值，從法杖施展以下法術之一：{@spell fortune's favor|egw}（2 點充能）、{@spell pulse wave|egw}（3 點充能）或{@spell gravity sinkhole|egw}（4 點充能）。",
+			{
+				"type": "entries",
+				"name": "新的可能性",
+				"entries": [
+					"若你持握法杖時對只以你為目標的法術豁免失敗，你可以將失敗的豁免改為成功。此屬性在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "New Possibility"
+			}
+		],
+		"attachedSpells": {
+			"charges": {
+				"2": [
+					"fortune's favor|egw"
+				],
+				"3": [
+					"pulse wave|egw"
+				],
+				"4": [
+					"gravity sinkhole|egw"
+				]
+			}
+		},
+		"ENG_name": "Staff of Dunamancy"
+	},
 	"Staff of Fire|XDMG": {
 		"name": "火焰法杖",
 		"source": "XDMG",
@@ -21980,6 +24022,32 @@
 		"hasFluffImages": true,
 		"ENG_name": "Staff of the Adder"
 	},
+	"Staff of the Ivory Claw|EGW": {
+		"name": "象牙爪法杖",
+		"source": "EGW",
+		"page": 270,
+		"rarity": "rare",
+		"reqAttune": "by a spellcaster",
+		"reqAttuneTags": [
+			{
+				"spellcasting": true
+			}
+		],
+		"weight": 4,
+		"weaponCategory": "simple",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"bonusSpellAttack": "+1",
+		"staff": true,
+		"entries": [
+			"這根灰藍相間的法杖頂端是一隻以象牙雕成的小龍爪。持握法杖時，你的法術攻擊檢定獲得 +1 加值。每當你以法術攻擊擊出重擊時，目標額外受到 {@damage 3d6} 點光耀傷害。"
+		],
+		"ENG_name": "Staff of the Ivory Claw"
+	},
 	"Staff of the Magi|XDMG": {
 		"name": "大法師法杖",
 		"source": "XDMG",
@@ -22549,6 +24617,122 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Stone of Good Luck"
+	},
+	"Stormgirdle (Awakened)|EGW": {
+		"name": "風暴腰帶（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Stormgirdle (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"While wearing the Stormgirdle in its awakened state, you gain the following benefits:",
+							{
+								"type": "list",
+								"items": [
+									"Your Strength score becomes 23 if it isn't already 23 or higher.",
+									"Your Storm Avatar's lightning strike deals {@damage 4d6} lightning damage (instead of {@dice 3d6}).",
+									"While transformed into a Storm Avatar, you gain a flying speed of 30 feet and can hover."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"ENG_name": "Stormgirdle (Awakened)"
+	},
+	"Stormgirdle (Dormant)|EGW": {
+		"name": "風暴腰帶（休眠）",
+		"source": "EGW",
+		"page": 273,
+		"resist": [
+			"lightning",
+			"thunder"
+		],
+		"rarity": "legendary",
+		"reqAttune": true,
+		"wondrous": true,
+		"property": [
+			"Vst|EGW"
+		],
+		"ability": {
+			"static": {
+				"str": 21
+			}
+		},
+		"entries": [
+			"風暴腰帶是一條以厚皮革製成的寬腰帶，上面烙著寇德的聖徽。腰帶的扣環以龍象牙製成。",
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"在休眠狀態下繫著風暴腰帶時，你具有閃電傷害與雷鳴傷害的抗性，且若你的力量值不到 21，它會變為 21。此外，你可以使用一個動作化身為風暴化身 1 分鐘，在持續時間內獲得以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"你免疫閃電傷害與雷鳴傷害。",
+							"當你以通常造成鈍擊傷害的武器攻擊命中時，它改為造成雷鳴傷害。當你以通常造成穿刺或揮砍傷害的武器攻擊命中時，它改為造成閃電傷害。",
+							"作為一個附贈動作，你可以選擇你 30 呎內一個你能看見的生物，讓它被閃電擊中。目標必須進行一次 {@dc 15} 敏捷豁免檢定，失敗時受到 {@damage 3d6} 點閃電傷害，成功時傷害減半。"
+						]
+					},
+					"你使用腰帶的風暴化身屬性後，該屬性在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Dormant"
+			}
+		],
+		"ENG_name": "Stormgirdle (Dormant)"
+	},
+	"Stormgirdle (Exalted)|EGW": {
+		"name": "風暴腰帶（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Stormgirdle (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"While wearing the Stormgirdle in its exalted state, you gain the following benefits:",
+							{
+								"type": "list",
+								"items": [
+									"Your Strength score becomes 25 if it isn't already 25 or higher.",
+									"Your Storm Avatar's lightning strike deals {@damage 5d6} lightning damage (instead of {@dice 3d6}).",
+									"You can cast the {@spell control weather} spell from the girdle. This property can't be used again until the next dawn."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"control weather"
+				]
+			}
+		},
+		"ENG_name": "Stormgirdle (Exalted)"
 	},
 	"String|XPHB": {
 		"name": "細繩",
@@ -23251,7 +25435,7 @@
 				]
 			},
 			"other": [
-				"庇護術"
+				"sanctuary"
 			]
 		},
 		"hasFluffImages": true,
@@ -23289,6 +25473,167 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Tentacle Rod"
+	},
+	"The Bloody End (Awakened)|EGW": {
+		"name": "血腥終結（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "The Bloody End (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"When the morningstar reaches an awakened state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +2.",
+									"The saving throw DC for spells cast from the morningstar increases to 15.",
+									"When you reduce a creature to 0 hit points with an attack using The Bloody End, you can cause the following effect: each creature of your choice within 15 feet of you must succeed on a {@dc 15} Wisdom saving throw or be {@condition frightened} of you until the end of your next turn. This property can't be used again until the next dawn.",
+									"When a creature hits you with a melee attack, you can use your reaction to deal {@damage 1d6} psychic damage to the attacker."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+2",
+		"ENG_name": "The Bloody End (Awakened)"
+	},
+	"The Bloody End (Dormant)|EGW": {
+		"name": "血腥終結（休眠）",
+		"source": "EGW",
+		"page": 278,
+		"baseItem": "morningstar|PHB",
+		"type": "M",
+		"rarity": "artifact",
+		"reqAttune": true,
+		"sentient": true,
+		"weight": 4,
+		"weaponCategory": "martial",
+		"property": [
+			"Vst|EGW"
+		],
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"grantsLanguage": true,
+		"bonusWeapon": "+1",
+		"entries": [
+			"這把精金釘頭錘承載著班恩的力量，有著一呎長的尖刺，柄頭上還有一片鋸齒狀的刀刃。",
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"血腥終結是一把具有知覺的守序邪惡武器，智力 22、感知 18、魅力 24。它具有聽覺，以及範圍 120 呎的{@sense darkvision}。",
+					"這把武器以心靈感應與持用者溝通，能說、讀並理解通用語與煉獄語。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"type": "entries",
+				"name": "個性",
+				"entries": [
+					"一隻名叫伊澤爾齊的專橫{@creature pit fiend}住在血腥終結中。這把武器喧鬧地促使持用者征服他人，面對挑戰永不退縮。若持用者不要求他人效忠，這把武器很樂意代替持用者提出要求。"
+				],
+				"ENG_name": "Personality"
+			},
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"這把釘頭錘在休眠狀態下賦予以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"你能說、讀並寫煉獄語。",
+							"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+							"持握釘頭錘時，你可以使用一個動作從它施展以下法術之一（豁免 {@dc 13}）：{@spell charm person}、{@spell dominate person}或{@spell fear}。以釘頭錘施展過某道法術後，在下一個黎明之前無法再從它施展該法術。",
+							"持握釘頭錘時，你在魅力（{@skill Intimidation}）檢定上具有優勢。"
+						]
+					}
+				],
+				"ENG_name": "Dormant"
+			},
+			{
+				"type": "inset",
+				"name": "背叛者神器屬性",
+				"entries": [
+					"背叛者之武的力量成長方式與分歧遺物相同。在休眠狀態下，這些神器各有一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當神器進入覺醒狀態時，它會額外獲得一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當物品達到昇華狀態時，它會獲得一項{@table Artifact Properties; Major Beneficial Properties|dmg|主要有益}屬性。更多資訊請見《地下城主指南》第 7 章的「神器屬性」。"
+				],
+				"ENG_name": "Betrayer Artifact Properties"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"charm person",
+					"dominate person",
+					"fear"
+				]
+			}
+		},
+		"ENG_name": "The Bloody End (Dormant)"
+	},
+	"The Bloody End (Exalted)|EGW": {
+		"name": "血腥終結（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "The Bloody End (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"When the morningstar reaches an exalted state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +3.",
+									"Add {@spell dominate monster} to the list of spells that can be cast from the morningstar.",
+									"The saving throw DC for spells cast from the morningstar, as well as for creatures to avoid being {@condition frightened} by it, increases to 17.",
+									"When you use your reaction to deal psychic damage to a creature that hits you with a melee attack, the amount of psychic damage increases to {@damage 2d6}."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+3",
+		"ENG_name": "The Bloody End (Exalted)"
+	},
+	"Theki Root|EGW": {
+		"name": "塞基根",
+		"source": "EGW",
+		"page": 70,
+		"type": "G",
+		"rarity": "none",
+		"value": 300,
+		"entries": [
+			"這種粗大的沼澤根嚐起來很苦，但被認為有助於消化健康。當你使用一個動作服用一劑時，你在 8 小時內對抗有毒或毒性物質效果的豁免檢定具有優勢。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Theki Root"
 	},
 	"Thieves' Tools|XPHB": {
 		"name": "盜賊工具",
@@ -24669,6 +27014,138 @@
 		"hasFluffImages": true,
 		"ENG_name": "Universal Solvent"
 	},
+	"Verminshroud (Awakened)|EGW": {
+		"name": "蟲鼠斗篷（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Verminshroud (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"While wearing the Verminshroud in its awakened state, you gain the following benefits:",
+							{
+								"type": "list",
+								"items": [
+									"You have resistance to poison damage.",
+									"You can use an action to cast the {@spell insect plague} spell (save {@dc 15}) from the Verminshroud, requiring no material components. This property can't be used again until the next dawn.",
+									"When you cast the {@spell polymorph} spell using the Verminshroud, you can transform into a {@creature giant wasp}."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"resist": [
+			"poison"
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"insect plague",
+					"polymorph"
+				]
+			}
+		},
+		"ENG_name": "Verminshroud (Awakened)"
+	},
+	"Verminshroud (Dormant)|EGW": {
+		"name": "蟲鼠斗篷（休眠）",
+		"source": "EGW",
+		"page": 273,
+		"conditionImmune": [
+			"disease"
+		],
+		"rarity": "legendary",
+		"reqAttune": true,
+		"wondrous": true,
+		"property": [
+			"Vst|EGW"
+		],
+		"entries": [
+			"這件斑駁的斗篷以在枯萎海岸啃食死者的老鼠毛皮拼接而成，接縫處點綴著以魔法保存、腫脹的昆蟲屍體。",
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"在休眠狀態下穿著蟲鼠斗篷時，你獲得以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"你在依賴嗅覺的感知（{@skill Perception}）檢定上具有優勢，你免疫疾病，且你擁有範圍 60 呎的{@sense darkvision}。若你已經擁有{@sense darkvision}，穿著斗篷會使你的{@sense darkvision}範圍增加 60 呎。",
+							"作為一個動作，你可以使用蟲鼠斗篷對自己施展{@spell polymorph}，變形為一隻{@creature giant rat}或{@creature rat}，同時保留你的智力、感知與魅力值，以及斗篷的屬性。此屬性在下一個黎明之前無法再次使用。"
+						]
+					}
+				],
+				"ENG_name": "Dormant"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"polymorph"
+				]
+			}
+		},
+		"ENG_name": "Verminshroud (Dormant)"
+	},
+	"Verminshroud (Exalted)|EGW": {
+		"name": "蟲鼠斗篷（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Verminshroud (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"While wearing the Verminshroud in its exalted state, you gain the following benefits:",
+							{
+								"type": "list",
+								"items": [
+									"You gain a climbing speed equal to your walking speed.",
+									"Your teeth become razor-sharp natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to {@dice 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. You can make this attack as a bonus action. When you bite a creature and deal damage to it, the creature must succeed on a {@dc 17} Constitution saving throw or be {@condition poisoned} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the condition on itself on a success.",
+									"When you cast the {@spell polymorph} spell using the Verminshroud, you can transform into a {@creature giant scorpion}."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"modifySpeed": {
+			"equal": {
+				"climb": "walk"
+			}
+		},
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"insect plague",
+					"polymorph"
+				]
+			}
+		},
+		"ENG_name": "Verminshroud (Exalted)"
+	},
 	"Veteran's Cane|XDMG": {
 		"name": "老兵手杖",
 		"source": "XDMG",
@@ -24706,6 +27183,17 @@
 			]
 		},
 		"ENG_name": "Vial"
+	},
+	"Vox Seeker|EGW": {
+		"name": "聲音搜尋者",
+		"source": "EGW",
+		"page": 270,
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			"這個發條裝置形似一隻晚餐盤大小的金屬螃蟹。每用一個動作為裝置上發條，它就能運作 1 分鐘，最多 10 分鐘。運作期間，此物品使用附帶的{@creature Vox Seeker|EGW}數據。這個自動機由 DM 控制。生命值降至 0 的聲音搜尋者會被摧毀。"
+		],
+		"ENG_name": "Vox Seeker"
 	},
 	"Wagon|XPHB": {
 		"name": "運貨馬車",
@@ -26000,6 +28488,203 @@
 		"hasFluffImages": true,
 		"ENG_name": "White Dragon Scale Mail"
 	},
+	"Will of the Talon (Awakened)|EGW": {
+		"name": "龍爪意志（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Will of the Talon (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"When the war pick reaches an awakened state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +2.",
+									"The saving throw DC for the war pick's Breath Weapon property increases to 15, and that property deals {@damage 4d6} damage on a failed save, or half as much damage on a successful one.",
+									"The saving throw DC for the war pick's Frightful Presence property increases to 15.",
+									"While carrying the weapon, you have resistance to acid, cold, fire, lightning, and poison damage."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"resist": [
+			"acid",
+			"cold",
+			"fire",
+			"lightning",
+			"poison"
+		],
+		"bonusWeapon": "+2",
+		"ENG_name": "Will of the Talon (Awakened)"
+	},
+	"Will of the Talon (Dormant)|EGW": {
+		"name": "龍爪意志（休眠）",
+		"source": "EGW",
+		"page": 279,
+		"baseItem": "war pick|PHB",
+		"type": "M",
+		"rarity": "artifact",
+		"reqAttune": true,
+		"sentient": true,
+		"weight": 2,
+		"weaponCategory": "martial",
+		"property": [
+			"Vst|EGW"
+		],
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"grantsLanguage": true,
+		"bonusWeapon": "+1",
+		"entries": [
+			"這把浮誇的黃金戰鎬上覆滿了雕成龍頭形狀的黑、藍、綠、紅、白色寶石，標誌著它是一把引導提雅瑪特力量的武器。",
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"龍爪意志是一把具有知覺的守序邪惡武器，智力 14、感知 15、魅力 19。它具有聽覺，以及範圍 120 呎的{@sense darkvision}。",
+					"這把武器以心靈感應與持用者溝通，能說、讀並理解通用語、龍語與煉獄語。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"type": "entries",
+				"name": "個性",
+				"entries": [
+					"一隻名叫阿什提隆、脾氣暴躁的{@creature bone devil}住在龍爪意志中。這把武器貪婪，重視強而有力的領導。它要求持用者在高壓情況下採取果斷行動以維持秩序——並且總是要拿回應得的一份寶藏作為回報。"
+				],
+				"ENG_name": "Personality"
+			},
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"這把戰鎬在休眠狀態下賦予以下益處：",
+					{
+						"type": "list",
+						"items": [
+							"你能說、讀並寫龍語與煉獄語。",
+							"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+							"持握戰鎬時，你可以使用一個附贈動作造成以下效果：你 30 呎內每個你選擇且察覺到你的生物都必須成功通過一次 {@dc 13} 感知豁免檢定，否則在 1 分鐘內對你{@condition frightened}。生物可以在它每個回合結束時重複豁免檢定，成功時結束自身的效果。若生物的豁免檢定成功或效果對它結束，該生物在接下來 24 小時內免疫你的駭人威儀。此屬性在下一個黎明之前無法再次使用。",
+							"持握戰鎬時，你可以使用你的動作呼出毀滅性的能量。從「龍爪意志吐息武器」表中選擇一種傷害類型。吐息區域內的每個生物都必須進行一次 {@dc 13} 豁免檢定，豁免類型如表中所示。生物豁免失敗時受到 {@damage 3d6} 點傷害，成功時傷害減半。"
+						]
+					},
+					"當你使用戰鎬釋放某一種傷害類型的吐息武器後，在下一個黎明之前無法再次選擇相同的傷害類型。"
+				],
+				"ENG_name": "Dormant"
+			},
+			{
+				"type": "table",
+				"caption": "龍爪意志吐息武器",
+				"colStyles": [
+					"col-3",
+					"col-7",
+					"col-3 text-center"
+				],
+				"colLabels": [
+					"傷害類型",
+					"範圍",
+					"豁免檢定"
+				],
+				"rows": [
+					[
+						"強酸",
+						"5 呎寬、30 呎長的線狀",
+						"敏捷"
+					],
+					[
+						"寒冷",
+						"15 呎錐形",
+						"體質"
+					],
+					[
+						"火焰",
+						"15 呎錐形",
+						"敏捷"
+					],
+					[
+						"閃電",
+						"5 呎寬、30 呎長的線狀",
+						"敏捷"
+					],
+					[
+						"毒素",
+						"15 呎錐形",
+						"體質"
+					]
+				]
+			},
+			{
+				"type": "inset",
+				"name": "背叛者神器屬性",
+				"entries": [
+					"背叛者之武的力量成長方式與分歧遺物相同。在休眠狀態下，這些神器各有一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當神器進入覺醒狀態時，它會額外獲得一項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性與一項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性。當物品達到昇華狀態時，它會獲得一項{@table Artifact Properties; Major Beneficial Properties|dmg|主要有益}屬性。更多資訊請見《地下城主指南》第 7 章的「神器屬性」。"
+				],
+				"ENG_name": "Betrayer Artifact Properties"
+			}
+		],
+		"ENG_name": "Will of the Talon (Dormant)"
+	},
+	"Will of the Talon (Exalted)|EGW": {
+		"name": "龍爪意志（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Will of the Talon (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"When the war pick reaches an exalted state, it gains the following properties:",
+							{
+								"type": "list",
+								"items": [
+									"The weapon's bonus to attack and damage rolls increases to +3.",
+									"The saving throw DC for the war pick's Breath Weapon property increases to 17, and that property deals {@damage 5d6} damage on a failed save, or half as much damage on a successful one.",
+									"The saving throw DC for the war pick's Frightful Presence property increases to 17."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"bonusWeapon": "+3",
+		"ENG_name": "Will of the Talon (Exalted)"
+	},
+	"Willowshade Oil|EGW": {
+		"name": "柳影油",
+		"source": "EGW",
+		"page": 70,
+		"type": "G",
+		"rarity": "none",
+		"value": 3000,
+		"entries": [
+			"從柳影植物稀有的果實中可以萃取出一種深藍色的油。生物可以使用它的動作，將這種油塗抹在另一個{@condition petrified}未滿 1 分鐘的生物身上，使該生物的{@condition petrified}狀態在它下一個回合開始時結束。"
+		],
+		"ENG_name": "Willowshade Oil"
+	},
 	"Wind Fan|XDMG": {
 		"name": "風之扇",
 		"source": "XDMG",
@@ -26075,6 +28760,104 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Wings of Flying"
+	},
+	"Wreath of the Prism (Awakened)|EGW": {
+		"name": "稜彩花冠（覺醒）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Wreath of the Prism (Dormant)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Awakened",
+						"entries": [
+							"Once the Wreath of the Prism reaches an awakened state, it gains the following benefits:",
+							{
+								"type": "list",
+								"items": [
+									"You can affect creatures of challenge rating 10 or lower with the wreath.",
+									"The save DC of the wreath's spell increases to 15."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Wreath of the Prism (Awakened)"
+	},
+	"Wreath of the Prism (Dormant)|EGW": {
+		"name": "稜彩花冠（休眠）",
+		"source": "EGW",
+		"page": 274,
+		"rarity": "legendary",
+		"reqAttune": true,
+		"wondrous": true,
+		"property": [
+			"Vst|EGW"
+		],
+		"entries": [
+			"這圈金色荊棘上鑲嵌著數十顆寶石，代表提雅瑪特的五種顏色。",
+			{
+				"type": "entries",
+				"name": "休眠",
+				"entries": [
+					"在休眠狀態下戴著花冠時，你擁有範圍 60 呎的{@sense darkvision}。若你已經擁有{@sense darkvision}，戴著花冠會使你的{@sense darkvision}範圍增加 60 呎。",
+					"當你以攻擊命中一隻挑戰等級 5 或更低的野獸、龍類或怪獸，或當你擒抱牠時，你可以使用花冠對該生物施展{@spell dominate monster}（豁免 {@dc 13}）。豁免成功時，目標在 24 小時內免疫花冠的力量。豁免失敗時，一個閃爍的金色花冠影像會以項圈的形式出現在目標頸上，或以王冠的形式出現在其頭上（由你選擇），直到它不再被該法術{@condition charmed}為止。若你使用花冠魅惑第二個生物，第一道法術會立即結束。法術結束時，目標會知道自己曾被你{@condition charmed}。"
+				],
+				"ENG_name": "Dormant"
+			}
+		],
+		"attachedSpells": {
+			"other": [
+				"dominate monster"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Wreath of the Prism (Dormant)"
+	},
+	"Wreath of the Prism (Exalted)|EGW": {
+		"name": "稜彩花冠（昇華）",
+		"source": "EGW",
+		"_copy": {
+			"name": "Wreath of the Prism (Awakened)",
+			"source": "EGW",
+			"_mod": {
+				"entries": {
+					"mode": "insertArr",
+					"index": -1,
+					"items": {
+						"type": "entries",
+						"name": "Exalted",
+						"entries": [
+							"Once the Wreath of the Prism reaches an exalted state, it gains the following benefits:",
+							{
+								"type": "list",
+								"items": [
+									"You can affect creatures of challenge rating 15 or lower with the wreath.",
+									"The save DC of the wreath's spell increases to 17."
+								]
+							}
+						]
+					}
+				}
+			},
+			"_preserve": {
+				"page": true,
+				"hasFluffImages": true
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Wreath of the Prism (Exalted)"
 	},
 	"Wyvern Poison|DMG": {
 		"name": "翼龍毒",

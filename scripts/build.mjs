@@ -228,7 +228,7 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 // ---- 3a'. 種族／背景／專長中完全比對的句子（含 _copy、_versions；i18n/exact-strings.json） --------
 {
 	const ex = readI18n(path.join(I18N, "exact-strings.json"));
-	const PROPS = new Set(["race", "subrace", "background", "feat", "raceFluff", "backgroundFluff", "variantrule"]);
+	const PROPS = new Set(["race", "subrace", "background", "feat", "raceFluff", "backgroundFluff", "variantrule", "item"]);
 	// name 只在「巢狀的條目」（有 entries）裡翻；replace／names 等是 _copy 用來比對的鍵，不能動
 	// _copy 裡的條目名稱會被後續的 _copy 用來比對，一律不翻
 	const walk = (v, depth = 0, inCopy = false) => {
