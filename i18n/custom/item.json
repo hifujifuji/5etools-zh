@@ -1606,6 +1606,20 @@
 		"hasFluffImages": true,
 		"ENG_name": "Amulet of Proof against Detection and Location"
 	},
+	"Amulet of Protection from Turning|TFTYP": {
+		"name": "防驅散護符",
+		"source": "TftYP",
+		"page": 228,
+		"rarity": "rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"weight": 1,
+		"entries": [
+			"戴著這個銀與綠松石製成的護符時，你在對抗驅散不死生物之效果的豁免檢定上具有優勢。",
+			"若你對抗這類效果的豁免檢定失敗，你可以選擇改為成功。你可以這麼做三次，已消耗的次數每天黎明恢復。每當有驅散不死生物的效果對你使用時，護符會發出銀藍色光芒數秒。"
+		],
+		"ENG_name": "Amulet of Protection from Turning"
+	},
 	"Amulet of the Black Skull|TOA": {
 		"name": "黑骷髏護符",
 		"source": "ToA",
@@ -3327,6 +3341,23 @@
 		"hasFluffImages": true,
 		"ENG_name": "Balance Card"
 	},
+	"Balance of Harmony|TFTYP": {
+		"name": "和諧天秤",
+		"source": "TftYP",
+		"page": 228,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"weight": 1,
+		"entries": [
+			"這座天秤的一個秤盤上有天界符號，另一個秤盤上有邪魔符號。你可以使用這座天秤以儀式施展{@spell detect evil and good}。這麼做需要你將天秤放在堅固的表面上，接著在秤盤上灑聖水，或在每個秤盤上各放一顆價值 100 gp 的透明寶石。若它什麼也沒偵測到，天秤會保持靜止；對於善良（聖化）或邪惡（褻瀆）的事物，它會傾向其中一側；若它偵測到符合法術條件但既非善良也非邪惡的生物，它會輕微擺動。在施展儀式後觸碰天秤，你會立即得知該法術通常能傳達的任何資訊，接著效果結束。"
+		],
+		"attachedSpells": {
+			"ritual": [
+				"detect evil and good"
+			]
+		},
+		"ENG_name": "Balance of Harmony"
+	},
 	"Baleful Talon|BMT": {
 		"name": "惡毒之爪",
 		"source": "BMT",
@@ -3526,6 +3557,53 @@
 			}
 		],
 		"ENG_name": "Barrier Tattoo (Small)"
+	},
+	"Basic Fishing Equipment|AAG": {
+		"name": "基本釣具",
+		"source": "AAG",
+		"page": 21,
+		"type": "G",
+		"rarity": "none",
+		"value": 10,
+		"entries": [
+			"基本釣具包括一根釣竿、一條釣線、一個魚鉤，以及一個假餌或一些餌。",
+			"釣魚是狂野太空與星界之海中很受歡迎的消遣，不過在移動速度超過其飛行速度的船上無法進行這項活動。每花費 1 小時釣魚結束時，角色可以進行一次 {@dc 15} 感知（{@skill Survival}）檢定。檢定失敗表示該小時內沒有釣到魚。檢定成功時，擲一顆 {@dice d10} 並查閱「釣魚」表決定漁獲。",
+			{
+				"type": "table",
+				"caption": "",
+				"colLabels": [
+					"d10",
+					"漁獲"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"1–2",
+						"微型、不可食用的魚（吃下它的生物會中毒 1 小時）"
+					],
+					[
+						"3–5",
+						"微型、可食用的魚（可餵飽一人）"
+					],
+					[
+						"6–8",
+						"小型、可食用的魚（可餵飽至多四人）"
+					],
+					[
+						"9",
+						"懷有敵意的{@creature space eel|BAM}（見{@book Boo's Astral Menagerie|BAM}；可餵飽至多十二人）"
+					],
+					[
+						"10",
+						"懷有敵意的{@creature gray scavver|BAM}（見{@book Boo's Astral Menagerie|BAM}；可餵飽至多二十人）、某種由 DM 選擇的其他生物，或一件由 DM 選擇的微型物體"
+					]
+				]
+			}
+		],
+		"ENG_name": "Basic Fishing Equipment"
 	},
 	"Basic Poison|XPHB": {
 		"name": "基礎毒藥",
@@ -4097,6 +4175,22 @@
 		},
 		"hasFluffImages": true,
 		"ENG_name": "Bigby's Beneficent Bracelet"
+	},
+	"Black Chromatic Rose|WBTW": {
+		"name": "黑色彩玫瑰",
+		"source": "WBtW",
+		"page": 208,
+		"resist": [
+			"acid"
+		],
+		"detail1": "drips acid",
+		"rarity": "rare",
+		"wondrous": true,
+		"hasRefs": true,
+		"entries": [
+			"{#itemEntry Chromatic Rose|WBtW}"
+		],
+		"ENG_name": "Black Chromatic Rose"
 	},
 	"Black Crystal Tablet|WDMM": {
 		"name": "黑水晶石板",
@@ -4812,6 +4906,22 @@
 		],
 		"ENG_name": "Bloodstone"
 	},
+	"Blue Chromatic Rose|WBTW": {
+		"name": "黑色彩玫瑰",
+		"source": "WBtW",
+		"page": 208,
+		"resist": [
+			"lightning"
+		],
+		"detail1": "crackles with lightning",
+		"rarity": "rare",
+		"wondrous": true,
+		"hasRefs": true,
+		"entries": [
+			"{#itemEntry Chromatic Rose|WBtW}"
+		],
+		"ENG_name": "Blue Chromatic Rose"
+	},
 	"Blue Dragon Scale Mail|XDMG": {
 		"name": "藍龍鱗甲",
 		"source": "XDMG",
@@ -4894,6 +5004,19 @@
 		],
 		"ENG_name": "Bob"
 	},
+	"Bobbing Lily Pad|WBTW": {
+		"name": "浮動睡蓮葉",
+		"source": "WBtW",
+		"page": 208,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這個魔法載具是一片直徑 10 呎、漂浮在水上的葉子。它有卷鬚，能推動它穿越陸地與水面（但不能在水下），也能在空中移動。它的步行、飛行與游泳速度都是 20 呎，並可以懸浮。當你乘坐它時，它會依照你的口頭指示移動。",
+			"睡蓮葉可以不受阻礙地運送至多 300 磅。它最多可以負載兩倍的重量，但若負載超過正常容量，它的移動速度減半。"
+		],
+		"ENG_name": "Bobbing Lily Pad"
+	},
 	"Bomb|XDMG": {
 		"name": "炸彈",
 		"source": "XDMG",
@@ -4909,6 +5032,28 @@
 			"CNS"
 		],
 		"ENG_name": "Bomb"
+	},
+	"Bombard|AAG": {
+		"name": "射石砲艦",
+		"source": "AAG",
+		"page": 26,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 5000000,
+		"crew": 12,
+		"vehAc": 15,
+		"vehHp": 300,
+		"vehDmgThresh": 20,
+		"vehSpeed": 4,
+		"capCargo": 150,
+		"entries": [
+			"射石砲艦由吉夫族建造。每艘船的主要特色是一門巨大的火砲，能發射足以將其他船隻炸成碎片的巨型砲彈。（火砲的費用包含在船價中。）射石砲艦最多可搭載十四顆巨型砲彈，每顆重 10 噸。這些砲彈佔了船隻貨物重量的大部分。安裝在後甲板上的絞盤用來將砲彈裝上船。",
+			"射石砲艦可以在水上漂浮與航行，但無法安全降落在地面上（它的龍骨會使它側翻）。"
+		],
+		"seeAlsoVehicle": [
+			"Bombard|AAG"
+		],
+		"ENG_name": "Bombard"
 	},
 	"Book of Exalted Deeds|DMG": {
 		"name": "崇德之書",
@@ -5645,6 +5790,38 @@
 		"value": 25000,
 		"ENG_name": "Box of turquoise animal figurines"
 	},
+	"Bracelet of Rock Magic|TFTYP": {
+		"name": "岩石魔法手鐲",
+		"source": "TftYP",
+		"page": 228,
+		"rarity": "very rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"curse": true,
+		"weight": 1,
+		"entries": [
+			"戴著這只金手鐲時，它讓你免疫{@condition petrified}，並讓你能使用一個動作施展{@spell flesh to stone}（豁免 {@dc 15}）。該法術被施展三次後，手鐲便無法再施展它。此後，你可以使用一個動作施展{@spell stone shape}。你這麼做十三次後，手鐲會失去魔法，並從金變成鉛。",
+			{
+				"type": "entries",
+				"name": "詛咒",
+				"entries": [
+					"手鐲與大地的親和力以一種不尋常的詛咒顯現。與大地和石頭關係密切的血肉生物，例如石巨人與矮人，在對抗從手鐲施展之{@spell flesh to stone}的豁免檢定上具有優勢。若這類生物的豁免成功，手鐲會中斷你與它的同調，並對你施展該法術。你以劣勢進行豁免檢定，豁免失敗時你會立即{@condition petrified}。"
+				],
+				"ENG_name": "Curse"
+			}
+		],
+		"attachedSpells": {
+			"limited": {
+				"3": [
+					"flesh to stone"
+				],
+				"13": [
+					"stone shape"
+				]
+			}
+		},
+		"ENG_name": "Bracelet of Rock Magic"
+	},
 	"Bracer of Flying Daggers|WDH": {
 		"name": "飛刃護腕",
 		"source": "WDH",
@@ -6158,6 +6335,129 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Butcher's Bib"
+	},
+	"Calimemnon Crystal|FRAIF": {
+		"name": "卡林曼儂水晶",
+		"source": "FRAiF",
+		"page": 243,
+		"scfType": "arcane",
+		"rarity": "artifact",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"這顆切工完美的六十面鑽石可以握在一隻手中，其中卻容納了整個燈神帝國。卡林曼儂水晶是以高等精靈魔法製成，用來囚禁惡名昭彰的燈神領主卡林與曼儂，他們曾統治並爭奪如今的卡林珊。",
+			"被具有{@sense Truesight|XPHB|真實視覺}的生物觀看時，這顆原本美麗的鑽石會呈現出怪誕的景象：寶石中困著超過一百名燈神，包括卡林與曼儂的實體。燈神們在痛苦的憤怒中尖叫掙扎，將他們好戰的臉孔抵在水晶監牢的牆上。",
+			{
+				"type": "entries",
+				"name": "水晶的屬性",
+				"entries": [
+					"與水晶同調時，你獲得以下益處：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "奧術法器",
+								"entries": [
+									"你可以將卡林曼儂水晶作為奧術法器使用。"
+								],
+								"ENG_name": "Arcane Focus"
+							},
+							{
+								"type": "item",
+								"name": "飛行",
+								"entries": [
+									"你擁有 30 呎的{@variantrule Fly Speed|XPHB|飛行速度}，並可以懸浮。"
+								],
+								"ENG_name": "Flight"
+							},
+							{
+								"type": "item",
+								"name": "法術",
+								"entries": [
+									"你可以用水晶施展這些法術（法術豁免 DC 18）：{@spell Create or Destroy Water|XPHB}、{@spell Enlarge/Reduce|XPHB}、{@spell Invisibility|XPHB}（只能以你自己為目標）與{@spell Major Image|XPHB}。"
+								],
+								"ENG_name": "Spells"
+							}
+						]
+					}
+				],
+				"ENG_name": "Properties of the Crystal"
+			},
+			{
+				"type": "entries",
+				"name": "寒冷靈光",
+				"entries": [
+					"從水晶發出的 20 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內溫度驟降。每當{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍進入一個生物的空間，以及每當一個生物進入{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍或在其中結束它的回合時，該生物受到（{@dice 2d6}）點寒冷傷害。一個生物每回合只會受到一次此傷害。與水晶同調時，你不受靈光影響，且你可以執行一個{@action Magic|XPHB}動作停用或啟用靈光。"
+				],
+				"ENG_name": "Aura of Cold"
+			},
+			{
+				"type": "entries",
+				"name": "治療／傷害射線",
+				"entries": [
+					"持握水晶時，你可以執行一個{@action Magic|XPHB}動作，從水晶向 60 呎內的一或多個生物發射六道不穩定的能量射線。你可以將射線瞄準一個目標或數個目標。每道射線選擇以下效果之一：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "傷害射線",
+								"entries": [
+									"目標進行一次 DC 18 敏捷豁免檢定，失敗時受到（{@dice 6d6 + 6}）點光耀傷害，成功時傷害減半。"
+								],
+								"ENG_name": "Damage Ray"
+							},
+							{
+								"type": "item",
+								"name": "治療射線",
+								"entries": [
+									"目標恢復 {@dice 2d6 + 2} 點{@variantrule Hit Points|XPHB|生命值}。",
+									"此屬性在下一個黎明之前無法再次使用。"
+								],
+								"ENG_name": "Healing Ray"
+							}
+						]
+					}
+				],
+				"ENG_name": "Healing/Damage Rays"
+			},
+			{
+				"type": "entries",
+				"name": "隨機屬性",
+				"entries": [
+					"此神器具有以下隨機屬性（見《地下城主指南》第 7 章）：",
+					{
+						"type": "list",
+						"items": [
+							"1 個{@table Artifact Properties; Minor Beneficial Properties|XDMG|次要有益}屬性",
+							"1 個{@table Artifact Properties; Major Beneficial Properties|XDMG|主要有益}屬性",
+							"1 個{@table Artifact Properties; Minor Detrimental Properties|XDMG|次要有害}屬性",
+							"1 個{@table Artifact Properties; Major Detrimental Properties|XDMG|主要有害}屬性"
+						]
+					}
+				],
+				"ENG_name": "Random Properties"
+			},
+			{
+				"type": "entries",
+				"name": "摧毀水晶",
+				"entries": [
+					"若與卡林曼儂水晶同調的生物施展{@spell Wish|XPHB}法術並許願摧毀水晶，水晶便會被摧毀。其他任何東西都無法傷害它。水晶被摧毀時，其中所有的燈神都會被釋放。"
+				],
+				"ENG_name": "Destroying the Crystal"
+			}
+		],
+		"attachedSpells": [
+			"create or destroy water|xphb",
+			"enlarge/reduce|xphb",
+			"invisibility|xphb",
+			"major image|xphb"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Calimemnon Crystal"
 	},
 	"Caltrop|PHB": {
 		"name": "鐵蒺藜",
@@ -6825,7 +7125,7 @@
 		"wondrous": true,
 		"weight": 50,
 		"entries": [
-			"這口大鍋以厚實的銅製成，因年代久遠而泛綠。它寬 4 呎，鍋口直徑 3½ 呎，重 50 磅，最多可容納 30 加侖的液體。它鼓起的側面浮雕著手持湯杓、閒適休憩的薩堤爾與寧芙。大鍋附有蓋子與側把手，並以五隻防止它翻倒的小爪足立著。",
+			"這口大鍋以厚實的銅製成，因年代久遠而泛綠。它寬 4 呎，鍋口直徑 3½ 呎，重 50 磅，最多可容納 30 加侖的液體。它鼓起的側面浮雕著手持湯杓、閒適休憩的薩特羊人與寧芙。大鍋附有蓋子與側把手，並以五隻防止它翻倒的小爪足立著。",
 			"若將水倒進大鍋並攪拌 1 分鐘，水會變成一鍋豐盛的熱燉菜，每加侖可供至多四人吃一頓營養的餐點。燉菜在大鍋中會保持熱度，取出後則自然冷卻。儘管燉菜很燙，大鍋的外側仍可安全觸碰。",
 			"大鍋可以煮三次燉菜。之後它會停止運作，直到下一個黎明恢復所有使用次數。"
 		],
@@ -8109,6 +8409,153 @@
 		],
 		"ENG_name": "Crowbar"
 	},
+	"Crown of Horns|FRAIF": {
+		"name": "角冠",
+		"source": "FRAiF",
+		"page": 243,
+		"rarity": "artifact",
+		"reqAttune": true,
+		"wondrous": true,
+		"curse": true,
+		"sentient": true,
+		"entries": [
+			"角冠蘊含死亡三神之一米爾寇的精華與智慧。這頂可怖的王冠是一個蒼白的銀頭環，邊緣立著四根彎曲的骨頭。王冠的額前鑲著一顆黑鑽石，其深處翻湧著詭異而惡毒的能量。",
+			"米爾寇在其力量的巔峰時期創造了角冠。當米爾寇被密斯特拉殺死時，他將自己臨死的精華灌注到王冠中。米爾寇此後已重返並成為死亡三神之一，而角冠則持續推動他可怖的意志，尋找凡人代理人，並逐漸將他們轉變為強大的不死後裔。若佩戴者被證明不配得到這份榮耀，王冠會傳送離開，為它的主人尋找另一個可以腐化的凡人。",
+			{
+				"type": "entries",
+				"name": "受詛咒",
+				"entries": [
+					"王冠受到詛咒。與王冠同調會使詛咒延伸到你身上。只有{@spell Wish|XPHB}法術或米爾寇的意志能移除這個詛咒。只要你仍受到詛咒，以下屬性便適用於你：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "束縛",
+								"entries": [
+									"你不願與王冠分離，會始終戴著它，且你無法自願結束與王冠的{@variantrule Attunement|XPHB|同調}。"
+								],
+								"ENG_name": "Bound"
+							},
+							{
+								"type": "item",
+								"name": "殘酷",
+								"entries": [
+									"你的陣營變為中立邪惡。"
+								],
+								"ENG_name": "Cruel"
+							},
+							{
+								"type": "item",
+								"name": "注定毀滅",
+								"entries": [
+									"你會在 365 天內慢慢轉變為米爾寇的怪物僕從。在此期間，轉變純粹是外觀上的；若你在轉變完成前結束與王冠的{@variantrule Attunement|XPHB|同調}，這些外觀變化會慢慢消退。轉變完成時，你會成為一隻由 DM 控制的{@creature Lich|XMM}。每當你使用這件神器的不死{@variantrule Cone [Area of Effect]|XPHB|錐形}或米爾寇之手益處時，就會有累加 10% 的機率使你立即完成這種轉變。"
+								],
+								"ENG_name": "Doomed"
+							}
+						]
+					}
+				],
+				"ENG_name": "Cursed"
+			},
+			{
+				"type": "entries",
+				"name": "不死錐形",
+				"entries": [
+					"你可以執行一個{@action Magic|XPHB}動作，在 60 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}內釋放一波邪惡之光。{@variantrule Cone [Area of Effect]|XPHB|錐形}內每個生物進行一次 DC 18 體質豁免檢定，失敗時受到（{@dice 4d8}）點黯蝕傷害，成功時傷害減半。被不死{@variantrule Cone [Area of Effect]|XPHB|錐形}殺死的類人生物會在你下個回合開始時以{@creature Specter|XMM}的形態起身，並聽從你的口頭命令。"
+				],
+				"ENG_name": "Cone of Undeath"
+			},
+			{
+				"type": "entries",
+				"name": "傷害免疫",
+				"entries": [
+					"你具有黯蝕傷害{@variantrule Immunity|XPHB|免疫}。"
+				],
+				"ENG_name": "Damage Immunity"
+			},
+			{
+				"type": "entries",
+				"name": "恐懼靈光",
+				"entries": [
+					"戴著王冠時，你會在 60 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內散發恐怖能量的靈光。在一個回合中首次進入此區域或在其中開始回合的生物，必須成功通過一次 DC 16 感知豁免檢定，否則處於{@condition Frightened|XPHB|恐懼}狀態。{@condition Frightened|XPHB|恐懼}的目標必須在它的回合中使用它的移動，以最安全的路線盡可能遠離你。",
+					"若你傷害一個{@condition Frightened|XPHB|恐懼}的目標，或一個{@condition Frightened|XPHB|恐懼}的目標在距離你超過 120 呎處結束它的回合，該目標可以重複感知豁免，成功時結束自身的狀態。對此效果豁免成功的生物在 1 分鐘內免疫它，之後可以再次受到影響。",
+					"當你處於{@condition Incapacitated|XPHB|無力}狀態時，靈光不會作用。你可以使用一個{@variantrule Bonus Action|XPHB|附贈動作}啟動或停用靈光。"
+				],
+				"ENG_name": "Fear Aura"
+			},
+			{
+				"type": "entries",
+				"name": "米爾寇之手",
+				"entries": [
+					"戴著王冠時，你可以從它施展{@spell Power Word Kill|XPHB}法術（豁免 DC 18）。被此法術殺死的類人生物會在你下個回合開始時以{@creature Wraith|XMM}的形態起身，並聽從你的口頭命令。你使用王冠施展此法術後，在下一個黎明之前無法再從王冠施展它。"
+				],
+				"ENG_name": "Myrkul's Hand"
+			},
+			{
+				"type": "entries",
+				"name": "傳送",
+				"entries": [
+					"戴著王冠時，你可以施展{@spell Teleport|XPHB}法術。王冠也可以依自己的意志施展此法術。以王冠施展此法術後，必須經過 7 天才能再次施展。"
+				],
+				"ENG_name": "Teleportation"
+			},
+			{
+				"type": "entries",
+				"name": "隨機屬性",
+				"entries": [
+					"此神器具有以下隨機屬性（見《地下城主指南》第 7 章）：",
+					{
+						"type": "list",
+						"items": [
+							"1 個{@table Artifact Properties; Minor Beneficial Properties|XDMG|次要有益}屬性",
+							"1 個{@table Artifact Properties; Minor Detrimental Properties|XDMG|次要有害}屬性",
+							"1 個{@table Artifact Properties; Major Detrimental Properties|XDMG|主要有害}屬性"
+						]
+					}
+				],
+				"ENG_name": "Random Properties"
+			},
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"角冠是一件具有知覺的中立邪惡神器，智力 10、感知 16、魅力 19。它具有聽覺，以及範圍 120 呎的{@sense Darkvision|XPHB|黑暗視覺}。",
+					"王冠以心靈感應與佩戴者溝通，並懂得通用語。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"type": "entries",
+				"name": "個性",
+				"entries": [
+					"王冠蘊含米爾寇的精華，其存在是為了傳播這位神祇的意志：殺戮生者、喚起死者，並在主物質位面散播恐懼。王冠會敦促佩戴者盡可能散播恐懼與毀滅。"
+				],
+				"ENG_name": "Personality"
+			},
+			{
+				"type": "entries",
+				"name": "摧毀王冠",
+				"entries": [
+					"若米爾寇的繼任者凱蘭沃坐在米爾寇昔日領域——骨堡——的王座上時戴上角冠，角冠便會被摧毀。"
+				],
+				"ENG_name": "Destroying the Crown"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"power word kill|xphb"
+				]
+			},
+			"other": [
+				"teleport|xphb"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Crown of Horns"
+	},
 	"Crown of the Wrath Bringer|BGG": {
 		"name": "降怒者之冠",
 		"source": "BGG",
@@ -8674,6 +9121,29 @@
 		"hasFluffImages": true,
 		"ENG_name": "Dagger of Venom"
 	},
+	"Damselfly Ship|AAG": {
+		"name": "豆娘船",
+		"source": "AAG",
+		"page": 28,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 2000000,
+		"crew": 9,
+		"vehAc": 19,
+		"vehHp": 200,
+		"vehDmgThresh": 15,
+		"vehSpeed": 8,
+		"capCargo": 5,
+		"entries": [
+			"這艘快速但狹窄的船大部分以金屬製成。它無法在水上漂浮，但它的腿讓它能安全降落在地面上。機翼正後方的滑動艙口可以通往船上的投石機砲塔。船的貨艙可以輕易改裝成船員艙房或另一層武器甲板。",
+			"豆娘船經常被用作信使船與裝甲運輸船。探險家與海盜喜歡它們，因為它們快速又堅固。軍事領袖也基於同樣的理由將它們用作指揮艦。",
+			"豆娘船的船主們是一群驕傲的人，喜歡把船漆上繽紛的圖案，並以特殊裝備改裝他們的船。大型的豆娘船船主私人聚會並不罕見；他們利用這些聚會炫耀自己的船，並在小行星帶與其他障礙賽道上互相競速，無論是為了獎賞還是為了炫耀的資本。"
+		],
+		"seeAlsoVehicle": [
+			"Damselfly Ship|AAG"
+		],
+		"ENG_name": "Damselfly Ship"
+	},
 	"Dancing Monkey Fruit|TOA": {
 		"name": "跳舞猴果",
 		"source": "ToA",
@@ -8824,6 +9294,25 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Dark Shard Amulet"
+	},
+	"Deathdance|FRAIF": {
+		"name": "死亡之舞",
+		"source": "FRAiF",
+		"page": 237,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 20000,
+		"poison": true,
+		"entries": [
+			"受到死亡之舞影響的生物必須成功通過一次 {@dc 13} 體質豁免檢定，否則處於{@condition Poisoned|XPHB|中毒}狀態 1 分鐘。類人生物會自動通過此豁免。以此方式{@condition Poisoned|XPHB|中毒}期間，該生物也會因無法控制地抽搐而處於{@condition Incapacitated|XPHB|無力}狀態。"
+		],
+		"poisonTypes": [
+			"injury"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Deathdance"
 	},
 	"Decanter of Endless Water|XDMG": {
 		"name": "無盡水瓶",
@@ -12700,6 +13189,18 @@
 		"hasFluffImages": true,
 		"ENG_name": "Duskcrusher"
 	},
+	"Dust of Corrosion|WBTW": {
+		"name": "腐蝕之塵",
+		"source": "WBtW",
+		"page": 209,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"作為一個動作，你可以將這種粉塵拋向空中，填滿從你延伸出去的一個 10 呎立方體。區域內以非魔法鐵類金屬製成的表面與物體會立即腐蝕並化為塵土，變得無用且無法修復。區域內任何全部或部分以鐵類金屬構成的生物，都必須進行一次 {@dc 13} 體質豁免檢定，失敗時受到 {@damage 4d8} 點黯蝕傷害，成功時傷害減半。",
+			"這種粉塵裝在小包中，以磨細的鏽蝕怪觸角製成。每包的份量足夠使用一次。"
+		],
+		"ENG_name": "Dust of Corrosion"
+	},
 	"Dust of Deliciousness|EGW": {
 		"name": "美味之塵",
 		"source": "EGW",
@@ -12884,6 +13385,26 @@
 		],
 		"ENG_name": "Dyrrn's Tentacle Whip"
 	},
+	"Eagle Whistle|TFTYP": {
+		"name": "鷹哨",
+		"source": "TftYP",
+		"page": 228,
+		"rarity": "rare",
+		"wondrous": true,
+		"weight": 1,
+		"modifySpeed": {
+			"equal": {
+				"fly": "walk"
+			},
+			"multiply": {
+				"fly": 2
+			}
+		},
+		"entries": [
+			"當你持續吹奏鷹哨時，你能以步行速度的兩倍飛行。你可以持續吹奏哨子的輪數等於 5 + 你體質調整值的五倍（至少 1 輪），或直到你說話、屏住呼吸或開始窒息為止。若你著陸，哨子的這次使用也會結束。若你停止吹哨時仍在空中，你會墜落。哨子有三次使用次數。它每天黎明恢復已消耗的使用次數。"
+		],
+		"ENG_name": "Eagle Whistle"
+	},
 	"Ear Horn of Hearing|XDMG": {
 		"name": "助聽號角",
 		"source": "XDMG",
@@ -13044,6 +13565,48 @@
 			}
 		],
 		"ENG_name": "Eldritch Claw Tattoo"
+	},
+	"Eldritch Staff|WBTW": {
+		"name": "魔能法杖",
+		"source": "WBtW",
+		"page": 209,
+		"type": "M",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"weight": 4,
+		"weaponCategory": "simple",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d6",
+		"dmgType": "B",
+		"dmg2": "1d8",
+		"bonusWeapon": "+1",
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d6 + 4}",
+		"charges": 10,
+		"staff": true,
+		"entries": [
+			"這根法杖可以作為一把攻擊檢定與傷害擲骰具有 +1 加值的魔法長棍使用。",
+			"法杖有 10 點充能，每天黎明恢復 {@dice 1d6 + 4} 點已消耗的充能。若你消耗最後 1 點充能，擲一顆 {@dice d20}。若擲出 1，法杖會在一陣除此之外無害的魔能爆發中被摧毀。",
+			{
+				"type": "entries",
+				"name": "魔能攻擊",
+				"entries": [
+					"當你以法杖的近戰攻擊命中時，你可以消耗至多 3 點充能。每消耗 1 點充能，目標額外受到 {@damage 1d8} 點閃電傷害。"
+				],
+				"ENG_name": "Eldritch Attack"
+			},
+			{
+				"type": "entries",
+				"name": "魔能脫逃",
+				"entries": [
+					"若你持握法杖時受到傷害，你可以使用你的反應消耗法杖的 3 點充能，此時你變為{@condition invisible}，並將你自己以及你穿戴或攜帶的任何裝備傳送至多 60 呎到一個你能看見的未被佔據空間。你會保持{@condition invisible}，直到你下個回合開始，或直到你攻擊、施展法術或造成傷害為止。"
+				],
+				"ENG_name": "Eldritch Escape"
+			}
+		],
+		"ENG_name": "Eldritch Staff"
 	},
 	"Electrum 50-Zib Coin|GGR": {
 		"name": "50 吉布琥珀金幣",
@@ -14693,6 +15256,451 @@
 		"hasFluffImages": true,
 		"ENG_name": "Feywild Shard"
 	},
+	"Feywild Trinket|WBTW": {
+		"name": "妖精荒野小玩意",
+		"source": "WBtW",
+		"page": 7,
+		"type": "G",
+		"rarity": "none",
+		"entries": [
+			"以下的妖精荒野小玩意表提供了一系列適合像本冒險這種以妖精荒野為主題之冒險的小玩意。角色具有妖精迷途者或魔光工作人員背景的玩家，可以在此表上擲骰，而非{@book Player's Handbook|PHB}中的{@book 小玩意|PHB|5|Trinkets}表，來決定他們的角色擁有什麼小玩意。本冒險包含幾場遭遇，需要你在此表上擲骰，決定角色在關鍵地點找到哪些隨機小玩意。",
+			{
+				"type": "table",
+				"caption": "妖精荒野小玩意",
+				"colLabels": [
+					"d100",
+					"小玩意"
+				],
+				"colStyles": [
+					"col-2 text-center",
+					"col-10"
+				],
+				"rows": [
+					[
+						"01",
+						"獨角獸形狀的餅乾模"
+					],
+					[
+						"02",
+						"兩個連在一起的紫杉木環"
+					],
+					[
+						"03",
+						"寧芙形握柄的銀手鏡"
+					],
+					[
+						"04",
+						"一把彩繪木鑰匙，鑰齒每天黎明都會改變形狀"
+					],
+					[
+						"05",
+						"一枚精緻的銀浮雕，兩面各有一個雙胞胎孩子的圖像"
+					],
+					[
+						"06",
+						"矮妖形狀的金色墜飾"
+					],
+					[
+						"07",
+						"一個小木盒，裡面裝著適合小精靈或妖精使用的槌球組"
+					],
+					[
+						"08",
+						"一把小巧鋒利的鐵剪刀"
+					],
+					[
+						"09",
+						"一枚形似戴著主教帽、握著多瘤手杖跳舞的薩特羊人的棋子"
+					],
+					[
+						"10",
+						"法師塔形狀的鹽罐"
+					],
+					[
+						"11",
+						"一顆能讓握著它的精靈入睡的水晶球"
+					],
+					[
+						"12",
+						"一個會顯示月相的墜飾"
+					],
+					[
+						"13",
+						"一片巨大的鐵指甲"
+					],
+					[
+						"14",
+						"一支只有精類聽得見的小琥珀金哨子"
+					],
+					[
+						"15",
+						"一片茶碟大小、畫著水壺圖案的木製拼圖"
+					],
+					[
+						"16",
+						"一捲閃閃發亮的銀線"
+					],
+					[
+						"17",
+						"一張地精聽到演奏或演唱時會感到不安的樂譜"
+					],
+					[
+						"18",
+						"一顆刻有精靈語「月亮」字形的腐爛食人魔牙齒"
+					],
+					[
+						"19",
+						"一顆位移獸的玻璃化眼珠"
+					],
+					[
+						"20",
+						"一口以暮木製成的小棺材，裡面裝著巨魔的骨灰"
+					],
+					[
+						"21",
+						"一張以木族語寫在犢皮紙上的舊邀請函，邀請參加夏之宮廷的宴會"
+					],
+					[
+						"22",
+						"一條在月光下微微發光的薄紗披肩"
+					],
+					[
+						"23",
+						"一個劍玉玩具，每當球落進杯子就會演奏一小段勝利樂曲"
+					],
+					[
+						"24",
+						"一顆沾滿墨水指紋的妖精頭骨"
+					],
+					[
+						"25",
+						"一支外側叉齒向旁彎曲的銀叉"
+					],
+					[
+						"26",
+						"一隻沾滿煤灰的襪子，每天黎明都會以魔法出現一塊煤"
+					],
+					[
+						"27",
+						"一張會讓握著它的人被木刺扎到的小木凳（適合小精靈或妖精的大小）"
+					],
+					[
+						"28",
+						"一隻小發條蜻蜓，上發條後會緩慢拍動翅膀（但無法飛）"
+					],
+					[
+						"29",
+						"一個塗著鮮豔色彩的木製獨角獸玩具"
+					],
+					[
+						"30",
+						"一個擠壓時會唱歌的小精靈絨毛玩偶"
+					],
+					[
+						"31",
+						"一幅 1 吋見方、畫著一位沉睡精靈的畫"
+					],
+					[
+						"32",
+						"一個戴著時能幫助你做白日夢的頂針"
+					],
+					[
+						"33",
+						"一個南瓜杯子蛋糕，每天黎明都會以魔法在紙杯中重新長出來"
+					],
+					[
+						"34",
+						"一張描繪妖精龍的偽造三龍賭牌"
+					],
+					[
+						"35",
+						"一個以上漆的蘑菇傘製成的茶杯，能以魔法讓其中的液體保持溫熱"
+					],
+					[
+						"36",
+						"一顆會漂浮、小到能藏在拳頭裡的石頭"
+					],
+					[
+						"37",
+						"一個裝滿從妖精荒野收集來的雨水的小瓶"
+					],
+					[
+						"38",
+						"一個貼在耳邊時會笑的乳白光澤海螺殼"
+					],
+					[
+						"39",
+						"一小瓶標著「弗摩爾巨人的口水。不可飲用！」的黏稠液體"
+					],
+					[
+						"40",
+						"一根點燃時會像篝火般轟鳴爆裂的蠟燭"
+					],
+					[
+						"41",
+						"一盆靠近音樂來源時會搖擺的水仙花"
+					],
+					[
+						"42",
+						"一個 8 盎司的玻璃酒瓶，被打破 1 分鐘後會以魔法自行復原"
+					],
+					[
+						"43",
+						"一個來自模型船的小木製風精船首像"
+					],
+					[
+						"44",
+						"一口以沼澤橡木雕成的南瓜形小鍋"
+					],
+					[
+						"45",
+						"一塊聞起來像你童年某個難忘事物的肥皂"
+					],
+					[
+						"46",
+						"一張摺成騎著獨角獸的騎士模樣的橘色羊皮紙"
+					],
+					[
+						"47",
+						"一副深到看不透的有色眼鏡"
+					],
+					[
+						"48",
+						"一個 8 吋長的玻璃螞蟻小雕像"
+					],
+					[
+						"49",
+						"一張畫著惡鬼的兒童塗鴉羊皮紙"
+					],
+					[
+						"50",
+						"一個沒有沙的小沙漏"
+					],
+					[
+						"51",
+						"一個上下兩端都有軟木塞的空瓶"
+					],
+					[
+						"52",
+						"一雙以鞋帶綁在一起的綠色矮妖靴子"
+					],
+					[
+						"53",
+						"一支以樹根製成的菸斗"
+					],
+					[
+						"54",
+						"一頂戴上時會垂到肩膀的紅帽子"
+					],
+					[
+						"55",
+						"一副睡覺時戴著能幫你記住夢境的面具"
+					],
+					[
+						"56",
+						"一本只有倒過來拿時才會顯示內容的筆記本"
+					],
+					[
+						"57",
+						"一個四面陀螺，每面都有一個孩子享受不同季節的圖像"
+					],
+					[
+						"58",
+						"一頂適合妖精或小精靈的小蜂窩假髮"
+					],
+					[
+						"59",
+						"一個握著時會吱吱叫的木製老鼠小雕像"
+					],
+					[
+						"60",
+						"一個有著詭異笑容、少了一隻眼睛的惡鬼填充玩偶"
+					],
+					[
+						"61",
+						"一個標著「糖果」的空袋子"
+					],
+					[
+						"62",
+						"一片讓東西看起來是綠色的有色單片眼鏡"
+					],
+					[
+						"63",
+						"一頂適合小精靈或妖精大小的黑色劊子手頭罩"
+					],
+					[
+						"64",
+						"一個以薩特羊人角雕成的琴鍵"
+					],
+					[
+						"65",
+						"一把以貓毛為弦的小木魯特琴"
+					],
+					[
+						"66",
+						"一根針眼不讓線穿過的鐵針"
+					],
+					[
+						"67",
+						"一個只在月光下才會投下影子的小日晷"
+					],
+					[
+						"68",
+						"一支吹奏時會吸引當地無害動物的木製排笛"
+					],
+					[
+						"69",
+						"一顆鍍銀的松果"
+					],
+					[
+						"70",
+						"一瓶幽靈螢火蟲，會變色以反映持瓶者的心情"
+					],
+					[
+						"71",
+						"一顆塗成藍色的木蘋果"
+					],
+					[
+						"72",
+						"一支發出 F 音的音叉"
+					],
+					[
+						"73",
+						"一副適合小精靈或妖精大小的雙節棍"
+					],
+					[
+						"74",
+						"一枚銅幣，一面是微笑的薩特羊人臉孔，另一面是薩特羊人的頭骨"
+					],
+					[
+						"75",
+						"一隻繫在皮繩上的斷雞爪"
+					],
+					[
+						"76",
+						"一個小木盒裡收藏的乳牙"
+					],
+					[
+						"77",
+						"一個即使沒有風也會旋轉的風車"
+					],
+					[
+						"78",
+						"一把覆滿苔蘚與樹葉的兒童陽傘"
+					],
+					[
+						"79",
+						"一個少了鏡片的木製放大鏡"
+					],
+					[
+						"80",
+						"一朵有著紅色鐘形傘蓋、搖晃時會叮噹作響的光亮蘑菇"
+					],
+					[
+						"81",
+						"一袋聞起來有家鄉味道的種子"
+					],
+					[
+						"82",
+						"一顆石化的知更鳥蛋"
+					],
+					[
+						"83",
+						"一支中間有個洞的木湯匙"
+					],
+					[
+						"84",
+						"一個裝在罐子裡的紙胡蜂巢"
+					],
+					[
+						"85",
+						"一枝一端繫著緞帶的迷迭香"
+					],
+					[
+						"86",
+						"一間適合小精靈孩子、沒有家具的小娃娃屋"
+					],
+					[
+						"87",
+						"一支完全以陶瓷製成的畫筆——連刷毛也是"
+					],
+					[
+						"88",
+						"一座燭光看起來像一個以火焰構成、正在跳舞的小妖精的燭台"
+					],
+					[
+						"89",
+						"一副蝴蝶翅膀形狀的眼鏡框"
+					],
+					[
+						"90",
+						"一副木製假牙"
+					],
+					[
+						"91",
+						"一本小童話書"
+					],
+					[
+						"92",
+						"一個每天黎明都會以魔法出現一顆馬鈴薯的背包"
+					],
+					[
+						"93",
+						"一件以狐狸毛皮襯裡的小精靈冬季外套"
+					],
+					[
+						"94",
+						"一個妖精形狀的流蘇酒杯標記"
+					],
+					[
+						"95",
+						"一根弱磁性的魔杖"
+					],
+					[
+						"96",
+						"一顆李子大小、以煤雕成的百面骰"
+					],
+					[
+						"97",
+						"一隻缺了另一隻的玻璃鞋"
+					],
+					[
+						"98",
+						"一個小捕夢網"
+					],
+					[
+						"99",
+						"一副適合小精靈或妖精大小的槓鈴"
+					],
+					[
+						"100",
+						"一個演奏你童年記憶中輕快曲調的音樂盒"
+					]
+				]
+			}
+		],
+		"miscTags": [
+			"TT"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Feywild Trinket"
+	},
+	"Ffolk Sailing Ship|FRAIF": {
+		"name": "弗佛克帆船",
+		"source": "FRAiF",
+		"page": 166,
+		"type": "SHP|XPHB",
+		"rarity": "none",
+		"value": 2000000,
+		"crew": 20,
+		"vehAc": 15,
+		"vehHp": 400,
+		"vehDmgThresh": 20,
+		"vehSpeed": 2,
+		"capPassenger": 20,
+		"capCargo": 100,
+		"ENG_name": "Ffolk Sailing Ship"
+	},
 	"Figurine of Wondrous Power, Bronze Griffon|DMG": {
 		"name": "異能塑像，青銅獅鷲",
 		"source": "DMG",
@@ -15424,6 +16432,49 @@
 		],
 		"ENG_name": "Fire Opal"
 	},
+	"Fish Suit|AAG": {
+		"name": "魚形服",
+		"source": "AAG",
+		"page": 22,
+		"referenceSources": [
+			"LoX"
+		],
+		"rarity": "very rare",
+		"wondrous": true,
+		"entries": [
+			"這套笨重的服裝完全包覆你的頭部與身體，穿上或脫下需要 1 分鐘。穿著時，它讓你能在沒有空氣的環境中呼吸，並使你免疫周圍任何氣體的有害效果。在水下時，這套服裝也讓你獲得等同於步行速度的游泳速度；在沒有重力的環境中，則獲得等同於步行速度的飛行速度。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Fish Suit"
+	},
+	"Flame Tongue Shortsword of Greed|TFTYP": {
+		"name": "貪婪火舌短劍",
+		"source": "TftYP",
+		"page": 179,
+		"baseItem": "shortsword|phb",
+		"type": "M",
+		"rarity": "unknown (magic)",
+		"reqAttune": true,
+		"weight": 2,
+		"weaponCategory": "martial",
+		"property": [
+			"F",
+			"L"
+		],
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"entries": [
+			"你可以使用一個附贈動作說出這把魔法劍的命令語，使火焰從劍刃噴發。這些火焰在 40 呎半徑內發出明亮光線，並在額外 40 呎內發出微光。劍燃燒時，對它命中的任何目標額外造成 {@damage 2d6} 點火焰傷害。火焰持續到你使用一個附贈動作再次說出命令語，或直到你丟下或收起劍為止。",
+			"與這把劍同調時，你可以使用一個動作以心靈命令它偵測寶石與珠寶。你會得知劍 60 呎內這類物體的種類與數量。"
+		],
+		"light": [
+			{
+				"bright": 40,
+				"dim": 80
+			}
+		],
+		"ENG_name": "Flame Tongue Shortsword of Greed"
+	},
 	"Flames Card|BMT": {
 		"name": "烈焰牌",
 		"source": "BMT",
@@ -15490,6 +16541,29 @@
 		"weight": 2,
 		"value": 2,
 		"ENG_name": "Flour"
+	},
+	"Flying Fish Ship|AAG": {
+		"name": "飛魚船",
+		"source": "AAG",
+		"page": 30,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 2000000,
+		"crew": 10,
+		"vehAc": 15,
+		"vehHp": 250,
+		"vehDmgThresh": 15,
+		"vehSpeed": 4.5,
+		"capCargo": 13,
+		"entries": [
+			"除了太空大帆船之外，飛魚船是狂野太空中最常見的船隻，受到商人與冒險者的喜愛。",
+			"飛魚船可以在水上漂浮與航行，但它並非為降落在地面上而建造（降落時腹鰭會被船的重量壓斷，龍骨也會使船側翻）。",
+			"飛魚船上的典型武器包括一架裝在船首的投石機與一架裝在船尾的弩砲。"
+		],
+		"seeAlsoVehicle": [
+			"Flying Fish Ship|AAG"
+		],
+		"ENG_name": "Flying Fish Ship"
 	},
 	"Flying Snake|FRHOF": {
 		"name": "飛蛇",
@@ -16681,6 +17755,22 @@
 		],
 		"ENG_name": "Grasping Whip"
 	},
+	"Green Chromatic Rose|WBTW": {
+		"name": "黑色彩玫瑰",
+		"source": "WBtW",
+		"page": 208,
+		"resist": [
+			"poison"
+		],
+		"detail1": "issues green gas",
+		"rarity": "rare",
+		"wondrous": true,
+		"hasRefs": true,
+		"entries": [
+			"{#itemEntry Chromatic Rose|WBtW}"
+		],
+		"ENG_name": "Green Chromatic Rose"
+	},
 	"Green Dragon Scale Mail|XDMG": {
 		"name": "綠龍鱗甲",
 		"source": "XDMG",
@@ -17144,6 +18234,32 @@
 		"hasFluffImages": true,
 		"ENG_name": "Hammer of Runic Focus"
 	},
+	"Hammerhead Ship|AAG": {
+		"name": "錘頭鯊船",
+		"source": "AAG",
+		"page": 32,
+		"otherSources": [
+			{
+				"source": "SjA"
+			}
+		],
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 4000000,
+		"crew": 15,
+		"vehAc": 15,
+		"vehHp": 400,
+		"vehDmgThresh": 15,
+		"vehSpeed": 4,
+		"capCargo": 30,
+		"entries": [
+			"錘頭鯊船是很受歡迎的船隻，尤其受到海盜與運送重型貨物的商人青睞。它們可以在水上漂浮與航行，但並非為降落在地面上而建造（它們的龍骨會使它們傾向一側）。錘頭鯊船的標準武器包括船首與船尾的投石機、一架弩砲，以及用於衝撞的強化船首。"
+		],
+		"seeAlsoVehicle": [
+			"Hammerhead Ship|AAG"
+		],
+		"ENG_name": "Hammerhead Ship"
+	},
 	"Hand of Vecna|DMG": {
 		"name": "維克那之手",
 		"source": "DMG",
@@ -17473,6 +18589,39 @@
 			]
 		},
 		"ENG_name": "Harp of Gilded Plenty"
+	},
+	"Harper Pin|FRAIF": {
+		"name": "豎琴手別針",
+		"source": "FRAiF",
+		"page": 244,
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"wondrous": true,
+		"entries": [
+			"當你與這枚別針同調時，選擇一個豎琴手假身分（範例見{@book 《被遺忘國度：費倫英雄》|FRHoF|6|Harper Personas}），包括陣營與生物類型。佩戴這枚別針時，當你成為判斷你生物類型、陣營或位置的魔法目標時，你會被判定為該假身分。",
+			"別針的種類決定其稀有度與效果。",
+			{
+				"type": "entries",
+				"name": "銀豎琴手別針",
+				"entries": [
+					"當你與這枚別針同調時，你可以設計一段 25 字以內的大致思路。佩戴這枚別針時，讀取你思想的生物會改為偵測到你預設的思路。在讀取你思想時執行{@action Study|XPHB}動作的生物，要進行一次 DC 13 智力（{@skill Investigation|XPHB}）檢定。檢定成功時，它會察覺到偵測到的思想是預設的。"
+				],
+				"ENG_name": "Silver Harper Pin"
+			},
+			{
+				"type": "entries",
+				"name": "金豎琴手別針",
+				"entries": [
+					"佩戴這枚別針時，你可以對自己施展{@spell Nondetection|XPHB}法術。此法術的持續時間為永久，直到你停用該效果（不需要動作）、取下別針，或不再與別針同調為止。"
+				],
+				"ENG_name": "Golden Harper Pin"
+			}
+		],
+		"attachedSpells": [
+			"nondetection|xphb"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Harper Pin"
 	},
 	"Harper Trinket|FRHOF": {
 		"name": "豎琴手小玩意",
@@ -17817,6 +18966,32 @@
 			"suggestion"
 		],
 		"ENG_name": "Heart Weaver's Primer"
+	},
+	"Hell Hound Cloak|TFTYP": {
+		"name": "地獄犬斗篷",
+		"source": "TftYP",
+		"page": 228,
+		"rarity": "rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"curse": true,
+		"weight": 1,
+		"entries": [
+			"這件深色斗篷以鞣製過的{@creature hell hound}獸皮製成。作為一個動作，你可以命令斗篷將你變成一隻{@creature hell hound}，持續至多 1 小時。除此之外，這種變形的運作方式如同{@spell polymorph}法術，但你可以使用一個附贈動作恢復正常形態。",
+			{
+				"type": "entries",
+				"name": "詛咒",
+				"entries": [
+					"這件斗篷被{@creature hell hound}的精華所詛咒，與它同調會使詛咒延伸到你身上。在詛咒被{@spell remove curse}或類似魔法破除之前，你不願與斗篷分離，會始終將它放在觸手可及之處。"
+				],
+				"ENG_name": "Curse"
+			},
+			"你第六次使用斗篷時，以及此後每一次，你都必須進行一次 {@dc 15} 魅力豁免檢定。豁免失敗時，變形會持續到被解除或你的生命值降至 0 為止，且你無法自願恢復正常形態。若你以{@creature hell hound}形態持續 6 小時，變形會變成永久性的，你也會失去自我意識。你所有的數據接著會被{@creature hell hound}的數據取代。此後，只有{@spell remove curse}或類似魔法能讓你恢復自我並回到正常狀態。若你維持這種永久形態 6 天，只有{@spell wish}法術能逆轉變形。"
+		],
+		"attachedSpells": [
+			"polymorph"
+		],
+		"ENG_name": "Hell Hound Cloak"
 	},
 	"Helm of Brilliance|XDMG": {
 		"name": "光輝頭盔",
@@ -18860,6 +20035,120 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Icewind Dale Trinket"
+	},
+	"Iggwilv's Cauldron|WBTW": {
+		"name": "伊格維爾的大鍋",
+		"source": "WBtW",
+		"page": 209,
+		"rarity": "artifact",
+		"reqAttune": "by a spellcaster",
+		"reqAttuneTags": [
+			{
+				"spellcasting": true
+			}
+		],
+		"wondrous": true,
+		"weight": 80,
+		"charges": 3,
+		"entries": [
+			"{@creature Iggwilv the Witch Queen|WBtW|Iggwilv}在她的養母、大妖精芭芭雅嘎的協助下打造了這口奇妙的大鍋。大鍋有兩種形態。只有伊格維爾或芭芭雅嘎能將大鍋從一種形態轉換為另一種（使用一個動作觸碰它），她們任一人都不需要與此物品同調就能這麼做。在第一種形態下，大鍋以純金製成，外側浮雕著光禿禿的樹枝、飄落的樹葉與掃帚。在第二種形態下，大鍋以鐵製成，外側浮雕著蝙蝠、蟾蜍、貓、蜥蜴與蛇——每種動物各八隻。無論哪種形態，大鍋直徑約 3 呎，鍋口寬 2 呎，有一個頂端鑄有把手的圓蓋，以及八隻用來穩定的爪足。大鍋空鍋時重 80 磅，最多可容納 100 加侖的液體。",
+			{
+				"type": "entries",
+				"name": "同調",
+				"entries": [
+					"任何與大鍋同調的類人生物，都必須成功通過一次 {@dc 15} 體質豁免檢定，否則會老化到衰朽的地步。處於此狀態時，該生物的速度減半，其視覺與聽覺範圍減少到 30 呎，且在所有屬性檢定、攻擊檢定與豁免檢定上具有劣勢。該生物會在 {@dice 3d8} 天內走到其自然壽命的盡頭。只有{@spell wish}法術或神聖介入能逆轉該生物身上的這種老化效果。",
+					"三名鬼婆可以同時與大鍋同調，前提是她們已組成集會。若集會解散，三名鬼婆的同調都會結束。"
+				],
+				"ENG_name": "Attunement"
+			},
+			{
+				"type": "entries",
+				"name": "隨機屬性",
+				"entries": [
+					"無論採取何種形態，大鍋都具有以下隨機屬性：",
+					{
+						"type": "list",
+						"items": [
+							"1 項{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性（由在《地下城主指南》的{@table Artifact Properties; Minor Beneficial Properties|dmg|次要有益}屬性表上擲骰決定）",
+							"1 項{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性（由在《地下城主指南》的{@table Artifact Properties; Minor Detrimental Properties|dmg|次要有害}屬性表上擲骰決定）"
+						]
+					}
+				],
+				"ENG_name": "Random Properties"
+			},
+			{
+				"type": "entries",
+				"name": "金大鍋",
+				"entries": [
+					"金大鍋具有以下屬性：",
+					{
+						"type": "list",
+						"items": [
+							"若將水倒進大鍋並攪拌 1 分鐘，水會變成一鍋豐盛的熱燉菜，每使用 1 加侖的水可供至多四人吃一頓營養的餐點。燉菜在大鍋中會保持熱度，取出後則自然冷卻。儘管燉菜很燙，大鍋的外側仍可安全觸碰。",
+							"若將葡萄酒倒進大鍋並攪拌 10 分鐘，它會變成一種魔法靈藥，每使用 1 加侖的葡萄酒可強化至多四人。任何喝下靈藥的生物獲得 10 點臨時生命值。任何沒有在 1 小時內喝掉的靈藥都會消失。大鍋的此屬性使用後，在下一個黎明之前無法再次使用。",
+							"當大鍋裝滿混有 10 加侖葡萄酒的 90 加侖水時，它可以作為{@spell scrying}法術的法器。以大鍋作為法器施展此法術時，法術的目標會自動豁免失敗，且即使施法者與目標位於不同的存在位面，法術也能生效。法術結束時，大鍋中所有的液體都會消失。",
+							"將一把普通掃帚的刷毛浸入裝滿水的大鍋，會使掃帚在 3 天內變成一把飛天掃帚。大鍋的此屬性使用後，在下一個黎明之前無法再次使用。"
+						]
+					}
+				],
+				"ENG_name": "Gold Cauldron"
+			},
+			{
+				"type": "entries",
+				"name": "鐵大鍋",
+				"entries": [
+					"鐵大鍋具有以下屬性：",
+					{
+						"type": "list",
+						"items": [
+							"你可以使用一個動作對著空的大鍋尖叫，以魔法召喚一群{@creature swarm of bats}，牠們會從大鍋中飛出，並在先攻順序中緊接在你之後行動。蝠群服從你的命令，若在 1 分鐘內沒有被消滅就會消失。大鍋的此屬性使用後，在下一個黎明之前無法再次使用。",
+							"若將至少 1 加侖的血倒進大鍋並攪拌 1 分鐘，它會變成一團無害的黑煙，從大鍋中噴出並迅速消散。同時，大鍋一定半徑內的所有類人生物都會{@condition unconscious} 1 小時，但與大鍋同調或免疫{@condition charmed}的生物除外。效果的半徑為每使用 1 加侖的血 100 呎。{@condition unconscious}的生物若受到傷害，或有人使用一個動作搖晃或拍打它，就會醒來。大鍋的此屬性使用後，在下一個黎明之前無法再次使用。",
+							"將一隻死青蛙或死蟾蜍綁在一根普通樹枝的末端，並將它浸入裝滿水的大鍋，會使樹枝變成一根有 3 點充能的{@item wand of polymorph}。這根魔杖無法充能，並在最後 1 點充能被消耗時化為灰燼。大鍋的此屬性使用後，在 8 天內無法再次使用。",
+							"若你花費 1 分鐘以獨角獸的角觸碰大鍋，同時朗誦名為〈巫后之鍋〉的詩（見附帶的側欄），大鍋 1,000 呎內除了與它同調者以外的所有生物都會被凍結在時間中。被時間凍結的生物處於{@condition incapacitated}狀態，無法移動或說話，不會老化，也察覺不到周圍環境或時間的流逝。此外，它無法被移動、以任何方式受到傷害，或受到任何其他魔法影響。在它不再被凍結於時間中之前，該生物身上的所有其他狀態與效果都會被壓制。摧毀大鍋、將它送往另一個存在位面，或一邊朗誦〈巫后之鍋〉一邊以獨角獸的角觸碰它 1 分鐘，會結束所有生物身上的時間凍結效果。任何接觸到反魔法場或被獨角獸之角觸碰的生物，其身上的效果也會結束。"
+						]
+					}
+				],
+				"ENG_name": "Iron Cauldron"
+			},
+			{
+				"type": "entries",
+				"name": "摧毀大鍋",
+				"entries": [
+					"大鍋是一個中型物體，AC 為 19，有 80 點生命值，並免疫火舌武器或霜寒武器以外任何來源的傷害。以這類武器將大鍋的生命值降至 0，會使大鍋碎成大小大致相同的八塊，此時大鍋會失去魔法，它所創造的所有持續效果也隨之結束。",
+					"伊格維爾大鍋的毀滅，會使多元宇宙中所有的鬼婆失去因組成集會而獲得的共享施法特性（見《怪物圖鑑》中的「鬼婆集會」側欄）。"
+				],
+				"ENG_name": "Destroying the Cauldron"
+			},
+			{
+				"type": "entries",
+				"name": "重建大鍋",
+				"entries": [
+					"若碎裂大鍋的全部八塊碎片都位於彼此 5 呎內，{@spell wish}法術可以將它們重新組合，恢復大鍋及其所有屬性。大鍋的重建也會恢復多元宇宙各處鬼婆集會的共享施法特性。"
+				],
+				"ENG_name": "Reconstructing the Cauldron"
+			},
+			{
+				"type": "inset",
+				"name": "巫后之鍋",
+				"entries": [
+					"如伊格維爾大鍋的說明所述，題為〈巫后之鍋〉的詩是一段暗示這件神器時間凍結屬性的咒語：",
+					{
+						"type": "quote",
+						"entries": [
+							"八隻貓棲於八具待葬亡者之上",
+							"八隻蜥蜴逃離八隻覓食的老鼠",
+							"八隻攀爬的蟾蜍遇上八具墜落的亡者",
+							"八條蛇潛行於八隻尖叫的蝙蝠之下",
+							"八隻眼睛睜開，永遠在做夢",
+							"一切都在那永遠彷彿存在的大鍋上"
+						]
+					}
+				],
+				"ENG_name": "The Witch Queen's Cauldron"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Iggwilv's Cauldron"
 	},
 	"Illuminator's Tattoo|TCE": {
 		"name": "繕寫者刺青",
@@ -20210,6 +21499,38 @@
 		],
 		"ENG_name": "Jasper"
 	},
+	"Javelin of Backbiting|TFTYP": {
+		"name": "反噬標槍",
+		"source": "TftYP",
+		"page": 229,
+		"baseItem": "javelin|phb",
+		"type": "M",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"curse": true,
+		"weight": 2,
+		"weaponCategory": "simple",
+		"property": [
+			"T"
+		],
+		"range": "60/150",
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"bonusWeapon": "+2",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +2 加值。當你擲出它時，它的一般射程與最大射程都增加 30 呎，且命中時額外造成一顆傷害骰的傷害。在你擲出它且命中或未命中之後，它會立即飛回你手中。",
+			{
+				"type": "entries",
+				"name": "詛咒",
+				"entries": [
+					"這把武器受到詛咒，與它同調會使詛咒延伸到你身上。在詛咒被{@spell remove curse}或類似魔法破除之前，你不願與這把武器分離，會始終將它放在觸手可及之處。此外，你以這把武器以外的武器進行的攻擊檢定具有劣勢。"
+				],
+				"ENG_name": "Curse"
+			},
+			"每當你以這把武器進行的攻擊檢定擲出 1 時，武器會彎曲或飛回來擊中你的背部。以優勢對你自己的 AC 進行一次新的攻擊檢定。若結果為命中，你受到如同你以標槍攻擊自己的傷害。"
+		],
+		"ENG_name": "Javelin of Backbiting"
+	},
 	"Javelin of Lightning|XDMG": {
 		"name": "閃電標槍",
 		"source": "XDMG",
@@ -20381,6 +21702,29 @@
 			]
 		},
 		"ENG_name": "Jug"
+	},
+	"Junky +1 Dagger|TFTYP": {
+		"name": "破爛 +1 匕首",
+		"source": "TftYP",
+		"page": 77,
+		"baseItem": "dagger|phb",
+		"type": "M",
+		"rarity": "unknown (magic)",
+		"weight": 1,
+		"weaponCategory": "simple",
+		"property": [
+			"F",
+			"L",
+			"T"
+		],
+		"range": "20/60",
+		"dmg1": "1d4",
+		"dmgType": "P",
+		"bonusWeapon": "+1",
+		"entries": [
+			"你以這把匕首進行的攻擊檢定與傷害擲骰獲得 +1 加值，它看起來像一堆破爛。使用時，它的握把會磨損、刀刃會崩裂，還會掉落鐵鏽。若你持用這把武器時在攻擊檢定上擲出天然 1，它會斷裂並成為非魔法物品。"
+		],
+		"ENG_name": "Junky +1 Dagger"
 	},
 	"Keelboat|XPHB": {
 		"name": "龍骨船",
@@ -20676,6 +22020,29 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Lamp"
+	},
+	"Lamprey Ship|AAG": {
+		"name": "七鰓鰻船",
+		"source": "AAG",
+		"page": 34,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 2000000,
+		"crew": 15,
+		"vehAc": 15,
+		"vehHp": 250,
+		"vehDmgThresh": 15,
+		"vehSpeed": 4,
+		"capCargo": 6,
+		"entries": [
+			"七鰓鰻船是過時的船隻，是仍在使用中的最古老航星船之一。蘇爾隆（見《布布的星界動物寓言集》）特別喜歡它們。",
+			"七鰓鰻船可以利用船首內建的金屬擒抱顎將自己附著在另一艘船上，這在登船行動中是關鍵特性。其他標準武器包括主甲板上的四架弩砲。",
+			"七鰓鰻船可以在水上漂浮，但無法安全降落在地面上。降落在地面上的七鰓鰻船有翻覆的惱人習性，不少船員都沮喪地發現了這一點。"
+		],
+		"seeAlsoVehicle": [
+			"Lamprey Ship|AAG"
+		],
+		"ENG_name": "Lamprey Ship"
 	},
 	"Lantern of Revealing|XDMG": {
 		"name": "顯形提燈",
@@ -21258,6 +22625,51 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Living Loot Satchel"
+	},
+	"Living Ship|AAG": {
+		"name": "活體船",
+		"source": "AAG",
+		"page": 36,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 2500000,
+		"crew": 5,
+		"vehAc": 15,
+		"vehHp": 250,
+		"vehDmgThresh": 15,
+		"vehSpeed": 4.5,
+		"capCargo": 10,
+		"entries": [
+			"德魯伊、遊俠與侍奉自然之神的牧師經常出現在活體船上，不想在長途航行中擔心船隻空氣層變得污濁的狂野太空探險家也是。",
+			"這艘船的主要特色是後甲板上一株完全成熟的{@creature treant}。樹人的速度為 0，因為它的根交織在甲板中；它與船密不可分。若船的生命值降至 0，樹人會因驚嚇而死。樹人死亡後船仍可運作，但樹人永遠無法以另一株取代。",
+			"當樹人完成一次長休時，它會修復船體，使船恢復 {@dice 4d12} 點生命值，並淨化船隻的空氣層（將致命空氣變為污濁空氣，或將污濁空氣變為新鮮空氣）。",
+			"活體船可以在水上漂浮與航行，但無法安全降落在地面上（它的龍骨會使它側翻）。它的標準武器是一架裝在船尾的弩砲。"
+		],
+		"seeAlsoVehicle": [
+			"Living Ship|AAG"
+		],
+		"ENG_name": "Living Ship"
+	},
+	"Loadstone|TFTYP": {
+		"name": "負重石",
+		"source": "TftYP",
+		"page": 228,
+		"rarity": "rare",
+		"wondrous": true,
+		"curse": true,
+		"weight": 1,
+		"entries": [
+			"這顆石頭是一顆價值 150 gp 的大寶石。",
+			{
+				"type": "entries",
+				"name": "詛咒",
+				"entries": [
+					"這顆石頭受到詛咒，但它的魔法本質是隱藏的；{@spell detect magic}偵測不到它。{@spell identify}法術能揭露石頭的真實本質。若石頭在你身上時你使用{@action Dash}或{@action Disengage}動作，它的詛咒便會啟動。在詛咒被{@spell remove curse}或類似魔法破除之前，你的速度減少 5 呎，且你的最大負重與最大舉重能力減半。你也會變得不願與這顆石頭分離。"
+				],
+				"ENG_name": "Curse"
+			}
+		],
+		"ENG_name": "Loadstone"
 	},
 	"Loaf of Bread|PHB": {
 		"name": "一條麵包",
@@ -22188,6 +23600,27 @@
 		"hasFluffImages": true,
 		"ENG_name": "Mace of the Black Crown (Exalted)"
 	},
+	"Macuahuitl|TFTYP": {
+		"name": "馬誇威特",
+		"source": "TftYP",
+		"page": 70,
+		"baseItem": "longsword|phb",
+		"type": "M",
+		"rarity": "unknown (magic)",
+		"weight": 3,
+		"weaponCategory": "martial",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d8",
+		"dmgType": "S",
+		"dmg2": "1d10",
+		"bonusWeapon": "+1",
+		"entries": [
+			"你以這把長劍進行的攻擊檢定與傷害擲骰獲得 +1 加值，它以層壓木材製成，鑲嵌著鋸齒狀的黑曜石牙齒。它對任何植物類型的生物額外造成 {@damage 2d6} 點傷害。"
+		],
+		"ENG_name": "Macuahuitl"
+	},
 	"Maddgoth's Helm|WDMM": {
 		"name": "瑪德戈斯的頭盔",
 		"source": "WDMM",
@@ -22600,6 +24033,72 @@
 		],
 		"ENG_name": "Matchless Pipe"
 	},
+	"Mechanical Wonder (Domestic)|FRAIF": {
+		"name": "機械奇物（家務）",
+		"source": "FRAiF",
+		"page": 245,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"value": 40000,
+		"entries": [
+			"機械奇物是一種灌注了魔法力量的半自主物體。機械奇物依其功能在大小與形式上差異很大。",
+			"機械奇物在啟動之前是休眠的物體。要啟動機械奇物，你必須用該奇物專屬的手持鑰匙為它上發條。為機械奇物上發條需要 1 分鐘。上發條期間，你每回合都必須執行{@action Utilize|XPHB}動作。",
+			"上好發條後，機械奇物會保持啟動，持續時間如該奇物的說明所述。",
+			"這個雙足奇物設計用來協助家務。它隱約形似其創造者作為靈感來源的某個種族。啟動的家務奇物使用{@creature Domestic Wonder|FRAiF}的數據。該奇物是你與你盟友的盟友。戰鬥中，該奇物與你共用{@variantrule Initiative|XPHB|先攻}順序，但會在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要使用動作）。若你沒有下達命令，它會執行{@action Dodge|XPHB}動作並用它的移動避開危險。若家務奇物的{@variantrule Hit Points|XPHB|生命值}降至 0，它便會被摧毀。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Mechanical Wonder (Domestic)"
+	},
+	"Mechanical Wonder (Flying)|FRAIF": {
+		"name": "機械奇物（飛行）",
+		"source": "FRAiF",
+		"page": 245,
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			"機械奇物是一種灌注了魔法力量的半自主物體。機械奇物依其功能在大小與形式上差異很大。",
+			"機械奇物在啟動之前是休眠的物體。要啟動機械奇物，你必須用該奇物專屬的手持鑰匙為它上發條。為機械奇物上發條需要 1 分鐘。上發條期間，你每回合都必須執行{@action Utilize|XPHB}動作。",
+			"上好發條後，機械奇物會保持啟動，持續時間如該奇物的說明所述。",
+			"啟動的飛行奇物使用{@creature Flying Wonder|FRAiF}的數據。該奇物是你與你盟友的盟友。戰鬥中，該奇物與你共用{@variantrule Initiative|XPHB|先攻}順序，但會在你的回合之後立即進行它的回合。它服從你的口頭命令（你不需要使用動作）。若你沒有下達命令，它會執行{@action Dodge|XPHB}動作並用它的移動避開危險。若飛行奇物的{@variantrule Hit Points|XPHB|生命值}降至 0，它便會被摧毀。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Mechanical Wonder (Flying)"
+	},
+	"Mechanical Wonder (Gyrocopter)|FRAIF": {
+		"name": "機械奇物（旋翼機）",
+		"source": "FRAiF",
+		"page": 245,
+		"rarity": "rare",
+		"wondrous": true,
+		"weight": 500,
+		"entries": [
+			"機械奇物是一種灌注了魔法力量的半自主物體。機械奇物依其功能在大小與形式上差異很大。",
+			"機械奇物在啟動之前是休眠的物體。要啟動機械奇物，你必須用該奇物專屬的手持鑰匙為它上發條。為機械奇物上發條需要 1 分鐘。上發條期間，你每回合都必須執行{@action Utilize|XPHB}動作。",
+			"這個馬車大小的載具以黃銅色金屬製成，頂端有一個螺旋形的螺旋槳。它的中段兩側是開放的。上好發條後，旋翼機奇物會保持啟動 8 小時。啟動期間，旋翼機可以作為載具使用；它需要一名駕駛員。",
+			"旋翼機奇物是一個重 500 磅的超大型物體，具有以下數據：AC 14、HP 50、{@variantrule Speed|XPHB|速度} 5 呎，以及{@variantrule Fly Speed|XPHB|飛行速度} 20 呎。旋翼機最多可承載 2,000 磅的貨物；若承載超過此重量，它便會停止運作。",
+			"貨艙內側裝有八條幽靈繩索。乘坐旋翼機奇物的生物可以執行一個{@action Utilize|XPHB}動作，將自己繫上或解開其中一條繩索。繫著繩索的生物可以從旋翼機奇物上跳下並滑翔，在空中每下降 1 呎可以水平移動至多 5 呎。若繫著繩索的生物距離旋翼機超過 500 呎，繩索會立即消失並回到奇物中。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Mechanical Wonder (Gyrocopter)"
+	},
+	"Mechanical Wonder (Mobility)|FRAIF": {
+		"name": "機械奇物（行動）",
+		"source": "FRAiF",
+		"page": 246,
+		"rarity": "common",
+		"wondrous": true,
+		"entries": [
+			"機械奇物是一種灌注了魔法力量的半自主物體。機械奇物依其功能在大小與形式上差異很大。",
+			"機械奇物在啟動之前是休眠的物體。要啟動機械奇物，你必須用該奇物專屬的手持鑰匙為它上發條。為機械奇物上發條需要 1 分鐘。上發條期間，你每回合都必須執行{@action Utilize|XPHB}動作。",
+			"未啟動時，行動奇物看起來像一個附有背帶的金屬龜殼。依你的身體構造，它設計成背在你的背上或側身。上好發條後，行動奇物會變成一個個人運輸裝置，並保持啟動 24 小時。啟動期間，行動奇物使你的{@variantrule Speed|XPHB|速度}提升至 30 呎。除非你允許，其他生物無法將你的行動奇物從你身上取下。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Mechanical Wonder (Mobility)"
+	},
 	"Medallion of Thoughts|XDMG": {
 		"name": "讀心獎章",
 		"source": "XDMG",
@@ -22996,6 +24495,18 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Mirror of Life Trapping"
+	},
+	"Mirror of the Past|TFTYP": {
+		"name": "往昔之鏡",
+		"source": "TftYP",
+		"page": 228,
+		"rarity": "rare",
+		"wondrous": true,
+		"weight": 1,
+		"entries": [
+			"這面白金手鏡的持有者可以使用一個動作凝視鏡子並想著目標，得知某個特定物體或生物歷史的一些事情。鏡子呈現的不是持有者的倒影，而是目標過去的場景。所傳達的資訊是準確的，但它是隨機而隱晦的，且沒有特定的順序。啟動後，鏡子會在 1 分鐘或更短的時間內提供資訊，接著恢復正常。它在下一個黎明之前無法再次使用。"
+		],
+		"ENG_name": "Mirror of the Past"
 	},
 	"Mirror|XPHB": {
 		"name": "鏡子",
@@ -23556,6 +25067,28 @@
 		"hasFluffImages": true,
 		"ENG_name": "Nature's Mantle"
 	},
+	"Nautiloid|AAG": {
+		"name": "鸚鵡螺艦",
+		"source": "AAG",
+		"page": 38,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 5000000,
+		"crew": 20,
+		"vehAc": 15,
+		"vehHp": 400,
+		"vehDmgThresh": 15,
+		"vehSpeed": 4.5,
+		"capCargo": 17,
+		"entries": [
+			"鸚鵡螺艦由奪心魔建造與使用，專為太空旅行而設計。它們無法在水上漂浮，也無法安全降落在地面上。",
+			"作為一個動作，一個與鸚鵡螺艦的航星舵同調、且與船有身體接觸的生物，可以將鸚鵡螺艦以及船上所有生物與物體傳送到另一個存在位面，抵達航星者所設想的目的地或其附近（若沒有設想目的地，則抵達該位面上的隨機地點）。此屬性是船隻的特性，而非航星舵的特性。每次使用此屬性時，擲一顆 {@dice d6}。若擲出 5–6，此屬性在 1 分鐘後恢復；否則，在 24 小時內無法再次使用。"
+		],
+		"seeAlsoVehicle": [
+			"Nautiloid|AAG"
+		],
+		"ENG_name": "Nautiloid"
+	},
 	"Navigator's Tools|XPHB": {
 		"name": "領航員工具",
 		"source": "XPHB",
@@ -23851,6 +25384,25 @@
 		],
 		"ENG_name": "Nib"
 	},
+	"Night Caller|TFTYP": {
+		"name": "夜之召喚者",
+		"source": "TftYP",
+		"page": 228,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"weight": 1,
+		"entries": [
+			"這支哨子以透明水晶雕成，形似一隻像蝸牛般蜷曲的小龍。哨子上以矮人語符文刻著「夜之召喚者」這個名字。若角色成功通過一次 {@dc 20} 智力（{@skill Arcana}或{@skill History}）檢定，便能回想起一段傳說：在過去的某個時代，{@creature duergar}為各個團體製作了數支這樣的哨子。",
+			"若你在黑暗中或夜空下吹響哨子，它能讓你施展{@spell animate dead}法術。目標可以隔著至多 10 呎厚的鬆軟泥土或類似物質受到影響，若是如此，它需要花 1 分鐘爬到地面來為你效力。哨子活化一隻不死生物後，必須經過 7 天才能再次如此。",
+			"每 24 小時一次，你可以吹響哨子，重新控制一或兩隻你以它活化的生物。"
+		],
+		"attachedSpells": {
+			"other": [
+				"animate dead"
+			]
+		},
+		"ENG_name": "Night Caller"
+	},
 	"Nightfall Pearl|EGW": {
 		"name": "夜幕珍珠",
 		"source": "EGW",
@@ -23862,6 +25414,29 @@
 			"這顆直徑 6 吋、漆黑的球體用來召喚黑夜，摸起來冰冷。你可以花費 10 分鐘啟動它，使啟動當下它 10 哩內的區域變為黑夜，即使當時是白天也一樣。這片黑夜持續 24 小時，直到你以一個動作取消它，或直到你與珍珠的同調結束。使用過後，珍珠在 24 小時內無法再次使用。"
 		],
 		"ENG_name": "Nightfall Pearl"
+	},
+	"Nightspider|AAG": {
+		"name": "夜蛛艦",
+		"source": "AAG",
+		"page": 40,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 5000000,
+		"crew": 25,
+		"vehAc": 19,
+		"vehHp": 300,
+		"vehDmgThresh": 15,
+		"vehSpeed": 4.5,
+		"capCargo": 50,
+		"entries": [
+			"尼奧吉乘著他們自己建造、被其他人稱為夜蛛艦的船隻在狂野太空中肆虐。這些船隻經常埋伏等待其他船隻。一旦找到目標船隻，尼奧吉就會試圖偷走它的航星舵並俘虜其船員。",
+			"夜蛛艦的船員通常由十九名尼奧吉以及至多六隻土巨怪組成，尼奧吉將土巨怪用作突擊部隊。",
+			"夜蛛艦只為太空旅行而設計，無法在水上漂浮或安全降落在地面上（船的重量會壓斷它細長的腿，並在過程中摧毀它蛛網般的索具）。夜蛛艦的標準武器包括四架弩砲（兩架朝前、兩架朝後）與一架朝前的投石機。"
+		],
+		"seeAlsoVehicle": [
+			"Nightspider|AAG"
+		],
+		"ENG_name": "Nightspider"
 	},
 	"Nimblewright Detector|WDH": {
 		"name": "巧手人偶偵測器",
@@ -23922,6 +25497,22 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Nolzur's Marvelous Pigments"
+	},
+	"Norlander Longship|FRAIF": {
+		"name": "北地人長船",
+		"source": "FRAiF",
+		"page": 166,
+		"type": "SHP|XPHB",
+		"rarity": "none",
+		"value": 2000000,
+		"crew": 50,
+		"vehAc": 17,
+		"vehHp": 300,
+		"vehDmgThresh": 15,
+		"vehSpeed": 6,
+		"capPassenger": 100,
+		"capCargo": 10,
+		"ENG_name": "Norlander Longship"
 	},
 	"Obsidian statuette with gold fittings and inlay|XDMG": {
 		"name": "飾有黃金配件與鑲嵌的黑曜石小雕像",
@@ -24284,6 +25875,149 @@
 			"一顆帶有綠色與金色斑紋的淡藍色寶石。"
 		],
 		"ENG_name": "Opal"
+	},
+	"Orb of Damara|FRAIF": {
+		"name": "達馬拉寶珠",
+		"source": "FRAiF",
+		"page": 246,
+		"rarity": "artifact",
+		"reqAttune": true,
+		"wondrous": true,
+		"recharge": "dawn",
+		"rechargeAmount": "{@dice 1d4 + 2}",
+		"charges": 6,
+		"entries": [
+			"一位名叫達馬拉的法師在設法成為龍的過程中創造了這顆寶珠。在一位神秘魔術師（其實是偽裝的提雅瑪特化身）的協助下，達馬拉最終創造出一件能讓他實現夢想的神器。然而，他的創造物所蘊含的潛在力量讓達馬拉恐懼到不敢使用這顆寶珠。這位法師反而將自己與神器一同埋葬，將它封印起來。",
+			"達馬拉寶珠直徑約 6 吋，以一種類似黑曜石但極為堅硬、帶有虹彩光澤的玻璃質材料製成。若以打算吞下它的意圖將它湊到自己的唇邊，寶珠會縮小到葡萄大小。",
+			{
+				"type": "entries",
+				"name": "寶珠的屬性",
+				"entries": [
+					"與寶珠同調時，你獲得以下益處：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "龍之吐息",
+								"entries": [
+									"你可以執行一個{@action Magic|XPHB}動作，呼出一道 15 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}。當你這麼做時，選擇酸蝕、寒冷、火焰、閃電或毒素。{@variantrule Cone [Area of Effect]|XPHB|錐形}內每個生物進行一次 DC 18 敏捷豁免檢定，失敗時受到 {@damage 6d6} 點所選類型的傷害，成功時傷害減半。"
+								],
+								"ENG_name": "Dragon's Breath"
+							},
+							{
+								"type": "item",
+								"name": "恐懼靈光",
+								"entries": [
+									"當你沒有處於{@condition Incapacitated|XPHB|無力}狀態時，你會在 20 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內散發恐怖的靈光。你可以執行一個{@action Magic|XPHB}動作停用或啟用此靈光。任何在靈光中開始其回合的敵人，都必須成功通過一次 DC 18 感知豁免檢定，否則在它下個回合開始前處於{@condition Frightened|XPHB|恐懼}狀態。此豁免成功的生物在 24 小時內免疫靈光的效果。"
+								],
+								"ENG_name": "Fear Aura"
+							},
+							{
+								"type": "item",
+								"name": "飛行",
+								"entries": [
+									"你擁有 60 呎的{@variantrule Fly Speed|XPHB}，並可以懸浮。"
+								],
+								"ENG_name": "Flight"
+							}
+						]
+					}
+				],
+				"ENG_name": "Properties of the Orb"
+			},
+			{
+				"type": "entries",
+				"name": "隨機屬性",
+				"entries": [
+					"此神器具有以下隨機屬性（見《地下城主指南》第 7 章）：",
+					{
+						"type": "list",
+						"items": [
+							"2 個{@table Artifact Properties; Minor Beneficial Properties|XDMG|次要有益}屬性",
+							"2 個{@table Artifact Properties; Minor Detrimental Properties|XDMG|次要有害}屬性"
+						]
+					}
+				],
+				"ENG_name": "Random Properties"
+			},
+			{
+				"type": "entries",
+				"name": "施法",
+				"entries": [
+					"寶珠有 6 點充能，每天黎明恢復 {@dice 1d4 + 2} 點已消耗的充能。與寶珠同調時，你可以從它施展下表中的法術之一（法術攻擊調整值 +10，法術豁免 DC 18）。表中列出施展該法術所需消耗的充能數。",
+					{
+						"type": "table",
+						"colStyles": [
+							"col-6",
+							"col-6 text-center"
+						],
+						"colLabels": [
+							"法術",
+							"充能花費"
+						],
+						"rows": [
+							[
+								"{@spell Disguise Self|XPHB}",
+								"0"
+							],
+							[
+								"{@spell Fire Shield|XPHB}",
+								"2"
+							],
+							[
+								"{@spell Hold Person|XPHB}",
+								"1"
+							],
+							[
+								"{@spell See Invisibility|XPHB}",
+								"1"
+							],
+							[
+								"{@spell Summon Dragon|XPHB}（9 環版本）",
+								"4"
+							]
+						]
+					}
+				],
+				"ENG_name": "Spellcasting"
+			},
+			{
+				"type": "entries",
+				"name": "化龍",
+				"entries": [
+					"若你吞下寶珠，你會變成一條由 DM 控制的成年彩色龍。彩色龍的種類取決於你的陣營與個性，由 DM 決定。這種轉變是永久的，但若這條龍被殺死，它的身體會恢復為原本的形態，寶珠也會重新出現在其體外。"
+				],
+				"ENG_name": "Dragon Transformation"
+			},
+			{
+				"type": "entries",
+				"name": "摧毀寶珠",
+				"entries": [
+					"若一條{@creature Ancient Gold Dragon|XMM}自願吞下寶珠，寶珠與這條龍都會被摧毀。"
+				],
+				"ENG_name": "Destroying the Orb"
+			}
+		],
+		"attachedSpells": {
+			"will": [
+				"disguise self|xphb"
+			],
+			"charges": {
+				"1": [
+					"hold person|xphb",
+					"see invisibility|xphb"
+				],
+				"2": [
+					"fire shield|xphb"
+				],
+				"4": [
+					"summon dragon|xphb#9"
+				]
+			}
+		},
+		"ENG_name": "Orb of Damara"
 	},
 	"Orb of Direction|XDMG": {
 		"name": "方向寶珠",
@@ -24682,6 +26416,20 @@
 			"TT"
 		],
 		"ENG_name": "Order of the Gauntlet Trinket"
+	},
+	"Ornithopter of Flying|WBTW": {
+		"name": "飛行撲翼機",
+		"source": "WBtW",
+		"page": 212,
+		"rarity": "very rare",
+		"wondrous": true,
+		"weight": 25,
+		"entries": [
+			"只要你的重量（包括你穿戴或攜帶的任何物品）不超過 300 磅，你就可以使用這台裝置飛行。撲翼機的飛行速度為 30 呎，當你乘坐它時，它會依照你的口頭指示移動。它無法懸浮。若撲翼機在空中時失去騎乘者，它會墜落，並在 {@dice 1d6 + 4} 天內無法再次飛行。",
+			"撲翼機長 8 呎，翼展 14 呎，重 25 磅。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Ornithopter of Flying"
 	},
 	"Orrery of the Wanderer|AI": {
 		"name": "漫遊者天象儀",
@@ -25571,6 +27319,18 @@
 		"hasFluffImages": true,
 		"ENG_name": "Pipes of the Sewers"
 	},
+	"Pixie Dust|WBTW": {
+		"name": "小精靈粉",
+		"source": "WBtW",
+		"page": 212,
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"作為一個動作，你可以將這種粉塵撒在你自己或你 5 呎內一個你能看見的其他生物身上。接受者獲得 30 呎的飛行速度與懸浮能力，持續 1 分鐘。若該生物在此效果結束時仍在空中，它會安全地落到地面，不受傷害並以雙腳著地。",
+			"一小包裝有足夠使用一次的小精靈粉。"
+		],
+		"ENG_name": "Pixie Dust"
+	},
 	"Planecaller's Codex|TCE": {
 		"name": "喚界者法典",
 		"source": "TCE",
@@ -25964,6 +27724,21 @@
 			"CNS"
 		],
 		"ENG_name": "Potion of Acid Resistance"
+	},
+	"Potion of Advantage|WBTW": {
+		"name": "優勢藥水",
+		"source": "WBtW",
+		"page": 212,
+		"type": "P",
+		"rarity": "uncommon",
+		"entries": [
+			"當你喝下這瓶藥水時，你在接下來 1 小時內進行的一次你選擇的屬性檢定、攻擊檢定或豁免檢定上獲得優勢。",
+			"這瓶藥水的形式是一團閃閃發亮的金色霧氣，會像水一樣流動與傾倒。"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potion of Advantage"
 	},
 	"Potion of Animal Friendship|XDMG": {
 		"name": "化獸為友藥水",
@@ -26618,6 +28393,60 @@
 		],
 		"ENG_name": "Potion of Maximum Power"
 	},
+	"Potion of Mind Control (beast)|TFTYP": {
+		"name": "心靈控制藥水（野獸）",
+		"source": "TftYP",
+		"page": 229,
+		"type": "P",
+		"rarity": "rare",
+		"entries": [
+			"當你喝下心靈控制藥水時，若你在你下個回合結束前這麼做，你可以對一個特定生物施展一道支配法術（豁免 {@dc 15}）。若你沒有這麼做，藥水便被浪費。",
+			"心靈控制藥水會產生{@spell dominate beast}法術的效果。若目標最初的豁免檢定失敗，效果持續 1 小時，且你不需要{@status concentration}。在此期間，{@condition charmed}的生物在為打破效果而進行的新豁免檢定上具有劣勢。"
+		],
+		"attachedSpells": [
+			"dominate beast"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potion of Mind Control (beast)"
+	},
+	"Potion of Mind Control (humanoid)|TFTYP": {
+		"name": "心靈控制藥水（類人生物）",
+		"source": "TftYP",
+		"page": 229,
+		"type": "P",
+		"rarity": "rare",
+		"entries": [
+			"當你喝下心靈控制藥水時，若你在你下個回合結束前這麼做，你可以對一個特定生物施展一道支配法術（豁免 {@dc 15}）。若你沒有這麼做，藥水便被浪費。",
+			"心靈控制藥水會產生{@spell dominate person}法術的效果。若目標最初的豁免檢定失敗，效果持續 1 小時，且你不需要{@status concentration}。在此期間，{@condition charmed}的生物在為打破效果而進行的新豁免檢定上具有劣勢。"
+		],
+		"attachedSpells": [
+			"dominate person"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potion of Mind Control (humanoid)"
+	},
+	"Potion of Mind Control (monster)|TFTYP": {
+		"name": "心靈控制藥水（怪物）",
+		"source": "TftYP",
+		"page": 229,
+		"type": "P",
+		"rarity": "very rare",
+		"entries": [
+			"當你喝下心靈控制藥水時，若你在你下個回合結束前這麼做，你可以對一個特定生物施展一道支配法術（豁免 {@dc 15}）。若你沒有這麼做，藥水便被浪費。",
+			"心靈控制藥水會產生{@spell dominate monster}法術的效果。若目標最初的豁免檢定失敗，效果持續 1 小時，且你不需要{@status concentration}。在此期間，{@condition charmed}的生物在為打破效果而進行的新豁免檢定上具有劣勢。"
+		],
+		"attachedSpells": [
+			"dominate monster"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Potion of Mind Control (monster)"
+	},
 	"Potion of Mind Reading|XDMG": {
 		"name": "讀心藥水",
 		"source": "XDMG",
@@ -27131,6 +28960,25 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Prehistoric Figurine of Wondrous Power, Pyrite Plesiosaurus"
+	},
+	"Prespra|FRAIF": {
+		"name": "普雷斯普拉",
+		"source": "FRAiF",
+		"page": 237,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 30000,
+		"poison": true,
+		"entries": [
+			"受到普雷斯普拉影響的生物必須成功通過一次 {@dc 11} 體質豁免檢定，否則受到 3（{@dice 1d6}）點毒素傷害並處於{@condition Poisoned|XPHB|中毒}狀態。以此方式{@condition Poisoned|XPHB|中毒}期間，該生物也處於{@condition Blinded|XPHB|目盲}狀態。該生物在它每個回合開始時重複豁免，失敗時受到 3（{@dice 1d6}）點毒素傷害。豁免成功時，效果對該生物結束。"
+		],
+		"poisonTypes": [
+			"ingested"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Prespra"
 	},
 	"Pride Silk Outfit|EGW": {
 		"name": "傲絲服裝",
@@ -28113,6 +29961,22 @@
 			}
 		],
 		"ENG_name": "Reaper's Scream"
+	},
+	"Red Chromatic Rose|WBTW": {
+		"name": "黑色彩玫瑰",
+		"source": "WBtW",
+		"page": 208,
+		"resist": [
+			"fire"
+		],
+		"detail1": "is wreathed in fire",
+		"rarity": "rare",
+		"wondrous": true,
+		"hasRefs": true,
+		"entries": [
+			"{#itemEntry Chromatic Rose|WBtW}"
+		],
+		"ENG_name": "Red Chromatic Rose"
 	},
 	"Red Dragon Scale Mail|XDMG": {
 		"name": "紅龍鱗甲",
@@ -29792,6 +31656,22 @@
 		"hasFluffImages": true,
 		"ENG_name": "Robe of Stars"
 	},
+	"Robe of Summer|TFTYP": {
+		"name": "夏日長袍",
+		"source": "TftYP",
+		"page": 229,
+		"resist": [
+			"cold"
+		],
+		"rarity": "rare",
+		"reqAttune": true,
+		"wondrous": true,
+		"weight": 1,
+		"entries": [
+			"這件優雅的衣物以紅、橙與金色調的精緻布料製成。穿著這件長袍時，你具有寒冷傷害抗性。此外，你會感到如同身處溫和宜人的日子般舒適，因此不會受到天氣極端溫度的任何不良影響。"
+		],
+		"ENG_name": "Robe of Summer"
+	},
 	"Robe of the Archmagi|XDMG": {
 		"name": "大法師長袍",
 		"source": "XDMG",
@@ -30815,6 +32695,22 @@
 		],
 		"ENG_name": "Ruinous Flail"
 	},
+	"Rusted Hulk|FRAIF": {
+		"name": "鏽蝕船殼",
+		"source": "FRAiF",
+		"page": 166,
+		"type": "SHP|XPHB",
+		"rarity": "none",
+		"value": 5000000,
+		"crew": 60,
+		"vehAc": 18,
+		"vehHp": 500,
+		"vehDmgThresh": 25,
+		"vehSpeed": 2,
+		"capPassenger": 90,
+		"capCargo": 250,
+		"ENG_name": "Rusted Hulk"
+	},
 	"Ryath Root|TOA": {
 		"name": "萊亞斯根",
 		"source": "ToA",
@@ -31340,6 +33236,35 @@
 		"hasFluffImages": true,
 		"ENG_name": "Scimitar of Speed"
 	},
+	"Scissors of Shadow Snipping|WBTW": {
+		"name": "剪影剪刀",
+		"source": "WBtW",
+		"page": 213,
+		"rarity": "rare",
+		"reqAttune": "by a fey or a spellcaster",
+		"reqAttuneTags": [
+			{
+				"creatureType": "fey"
+			},
+			{
+				"spellcasting": true
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"作為一個動作，你用這把鐵剪刀剪幾下，使你 5 呎內一個你能看見的類人生物的影子脫離其本體。若該生物不願放棄它的影子，它可以進行一次 {@dc 15} 魅力豁免檢定，成功時保住它的影子。無論影子是否被剪下，剪刀的此屬性在下一個黎明之前都無法再次使用。",
+			"脫離的影子會固定在它被剪下的地點，直到你使用一個附贈動作讓它以以下其中一種方式行動，兩者都只有在你能看見影子時才能進行：",
+			{
+				"type": "list",
+				"items": [
+					"你控制影子的移動，可以讓影子在堅硬或液體表面上朝你選擇的任何方向（包括沿著垂直表面）移動至多 30 呎，前提是它始終保持在你的視線內。影子是無害的，也無法被傷害，且在黑暗中處於{@condition invisible}狀態。它無法說話，也不需要空氣、睡眠或營養。",
+					"你可以放棄對影子的控制，此時它會變得自主，並依照 DM 的意願行動。它使用《怪物圖鑑》中{@creature shadow}的數據，但其生物類型為精類而非不死生物。被這個影子的力量汲取攻擊使力量降至 0 的生物不會死亡，而是改為陷入{@condition unconscious}。該生物在完成一次短休或長休後會恢復意識與所有力量。"
+				]
+			},
+			"影子脫離的生物會受到詛咒。若一個沒有影子的生物受到任何結束詛咒的法術影響，或它脫離的影子生命值降至 0，脫離的影子便會消失，該生物也會立即恢復正常的影子。"
+		],
+		"ENG_name": "Scissors of Shadow Snipping"
+	},
 	"Scorpion Armor|TOA": {
 		"name": "蠍甲",
 		"source": "ToA",
@@ -31371,6 +33296,27 @@
 			}
 		],
 		"ENG_name": "Scorpion Armor"
+	},
+	"Scorpion Ship|AAG": {
+		"name": "蠍船",
+		"source": "AAG",
+		"page": 42,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 2500000,
+		"crew": 12,
+		"vehAc": 19,
+		"vehHp": 250,
+		"vehDmgThresh": 15,
+		"vehSpeed": 3.5,
+		"capCargo": 12,
+		"entries": [
+			"蠍船是古老的金屬戰艦，但從未失去人氣，主要是因為它們用途多樣。關節腿讓蠍船能安全降落在地面上，並以 30 呎的步行速度在堅硬表面上移動。然而，這艘船無法在水上漂浮。頂層甲板上裝有一架弩砲，尾巴末端則架著一架投石機。船的兩隻螯在戰鬥中相對沒效率，但一隻抓住生物的螯可以迅速讓它失去戰鬥能力。"
+		],
+		"seeAlsoVehicle": [
+			"Scorpion Ship|AAG"
+		],
+		"ENG_name": "Scorpion Ship"
 	},
 	"Scourge of Shadow|COA": {
 		"name": "暗影之鞭笞",
@@ -32231,6 +34177,28 @@
 		],
 		"ENG_name": "Shard"
 	},
+	"Shatterspike|TFTYP": {
+		"name": "碎釘",
+		"source": "TftYP",
+		"page": 229,
+		"baseItem": "longsword|phb",
+		"type": "M",
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"weight": 3,
+		"weaponCategory": "martial",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d8",
+		"dmgType": "S",
+		"dmg2": "1d10",
+		"bonusWeapon": "+1",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。若它命中一件物體，該次命中自動成為重擊，且它可以對該物體造成鈍擊或劈砍傷害（由你選擇）。此外，非魔法來源的傷害無法傷害這把武器。"
+		],
+		"ENG_name": "Shatterspike"
+	},
 	"Sheep|XDMG": {
 		"name": "綿羊",
 		"source": "XDMG",
@@ -32557,6 +34525,28 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Shrieking Greaves"
+	},
+	"Shrike Ship|AAG": {
+		"name": "伯勞船",
+		"source": "AAG",
+		"page": 44,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 2000000,
+		"crew": 11,
+		"vehAc": 15,
+		"vehHp": 250,
+		"vehDmgThresh": 15,
+		"vehSpeed": 8,
+		"capCargo": 20,
+		"entries": [
+			"這艘快速的船是相對較新的設計，很快就受到商人與海盜的歡迎。伯勞船的腿讓它能安全降落在地面上。這艘船可以漂浮，但並非為水上旅行而建造，在波濤洶湧的海上會很快沉沒。",
+			"伯勞船的標準武器包括三架弩砲——一架在船首樓、一架在頂層甲板中央、一架在船尾樓。在絕境中，船的強化船首可以用作穿刺衝角。"
+		],
+		"seeAlsoVehicle": [
+			"Shrike Ship|AAG"
+		],
+		"ENG_name": "Shrike Ship"
 	},
 	"Signal Whistle|XPHB": {
 		"name": "訊號哨",
@@ -33174,6 +35164,52 @@
 		],
 		"ENG_name": "Smokepowder"
 	},
+	"Snicker-Snack|WBTW": {
+		"name": "咔嚓咔嚓",
+		"source": "WBtW",
+		"page": 213,
+		"baseItem": "greatsword|PHB",
+		"type": "M",
+		"rarity": "legendary",
+		"reqAttune": "by a non-evil creature",
+		"reqAttuneTags": [
+			{
+				"alignment": [
+					"L",
+					"NX",
+					"C",
+					"G",
+					"NY"
+				]
+			}
+		],
+		"sentient": true,
+		"weight": 6,
+		"weaponCategory": "martial",
+		"property": [
+			"H",
+			"2H"
+		],
+		"dmg1": "2d6",
+		"dmgType": "S",
+		"grantsProficiency": true,
+		"bonusWeapon": "+3",
+		"entries": [
+			"你以這把魔法斬首劍進行的攻擊檢定與傷害擲骰獲得 +3 加值。此外，這把武器無視劈砍傷害抗性。當你使用這把武器攻擊一個至少有一顆頭的生物且攻擊檢定擲出 20 時，你會砍下該生物的一顆頭。若該生物失去那顆頭便無法存活，它就會死亡。若一個生物免疫劈砍傷害、沒有或不需要頭、擁有傳奇動作，或 DM 判定該生物太大、這把武器無法砍下它的頭，它便免疫此效果。這類生物改為額外受到 {@damage 6d8} 點劈砍傷害。",
+			"與咔嚓咔嚓同調時，你熟練巨劍，並可以在以這把武器進行的攻擊檢定與傷害擲骰上使用你的魅力調整值取代力量調整值。",
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"咔嚓咔嚓是一把具有知覺的混亂善良巨劍，智力 9、感知 14、魅力 18。它具有聽覺，以及範圍 120 呎的{@sense darkvision}。它能說、讀並理解通用語，它的聲音聽起來銀鈴般悅耳而富有旋律。咔嚓咔嚓渴望消滅邪惡的龍，並敦促你尋找並殺死這些生物。",
+					"咔嚓咔嚓的個性反覆無常。若你以這把武器進行的攻擊檢定連續三次未命中，它會結束與你的同調。發生這種情況後，每當你完成一次長休時，你可以嘗試透過與咔嚓咔嚓進行一次魅力對抗檢定來重新贏得這把劍的信任。若你贏得對抗，你與這把武器的同調會立即恢復。你與這把武器的同調無法以任何其他方式恢復。"
+				],
+				"ENG_name": "Sentience"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Snicker-Snack"
+	},
 	"Snowshoes|IDROTF": {
 		"name": "雪鞋",
 		"source": "IDRotF",
@@ -33292,6 +35328,27 @@
 		"hasFluffImages": true,
 		"ENG_name": "Sovereign Glue"
 	},
+	"Space Galleon|AAG": {
+		"name": "太空大帆船",
+		"source": "AAG",
+		"page": 46,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 3000000,
+		"crew": 20,
+		"vehAc": 15,
+		"vehHp": 400,
+		"vehDmgThresh": 15,
+		"vehSpeed": 4,
+		"capCargo": 20,
+		"entries": [
+			"太空大帆船是往來於狂野太空與星界之海的眾多船隻中的主力。太空大帆船很容易被誤認為普通的航海大帆船。由於它們可以像同名船隻一樣降落在水上並在水面移動，它們能駛入陸地世界的港口而不引起過多注意。如同普通的大帆船，太空大帆船並非為降落在地面上而建造（它的龍骨會使它側翻）。船的標準武器包括兩架裝在船首的弩砲與一架裝在船尾的投石機。"
+		],
+		"seeAlsoVehicle": [
+			"Space Galleon|AAG"
+		],
+		"ENG_name": "Space Galleon"
+	},
 	"Speaking Stone|ERLW": {
 		"name": "傳話石",
 		"source": "ERLW",
@@ -33306,6 +35363,40 @@
 			"sending"
 		],
 		"ENG_name": "Speaking Stone"
+	},
+	"Spear of Backbiting|TFTYP": {
+		"name": "反噬之矛",
+		"source": "TftYP",
+		"page": 229,
+		"baseItem": "spear|phb",
+		"type": "M",
+		"rarity": "very rare",
+		"reqAttune": true,
+		"curse": true,
+		"weight": 3,
+		"weaponCategory": "simple",
+		"property": [
+			"T",
+			"V"
+		],
+		"range": "50/90",
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"dmg2": "1d8",
+		"bonusWeapon": "+2",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +2 加值。當你擲出它時，它的一般射程與最大射程都增加 30 呎，且命中時額外造成一顆傷害骰的傷害。在你擲出它且命中或未命中之後，它會立即飛回你手中。",
+			{
+				"type": "entries",
+				"name": "詛咒",
+				"entries": [
+					"這把武器受到詛咒，與它同調會使詛咒延伸到你身上。在詛咒被{@spell remove curse}或類似魔法破除之前，你不願與這把武器分離，會始終將它放在觸手可及之處。此外，你以這把武器以外的武器進行的攻擊檢定具有劣勢。"
+				],
+				"ENG_name": "Curse"
+			},
+			"每當你以這把武器進行的攻擊檢定擲出 1 時，武器會彎曲或飛回來擊中你的背部。以優勢對你自己的 AC 進行一次新的攻擊檢定。若結果為命中，你受到如同你以矛攻擊自己的傷害。"
+		],
+		"ENG_name": "Spear of Backbiting"
 	},
 	"Spell Bottle|EGW": {
 		"name": "法術瓶",
@@ -33699,6 +35790,54 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Spellguard Shield"
+	},
+	"Spelljamming Helm|AAG": {
+		"name": "航星舵",
+		"source": "AAG",
+		"page": 23,
+		"referenceSources": [
+			"LoX"
+		],
+		"rarity": "rare",
+		"reqAttune": "by a spellcaster",
+		"reqAttuneTags": [
+			{
+				"spellcasting": true
+			}
+		],
+		"wondrous": true,
+		"entries": [
+			"這張華麗座椅的功能是推動並操縱安裝了它的船隻穿越太空與空中。只要船隻是為這類旅行而建造的，它也能推動並操縱船隻在水上或水下航行。該船隻的重量必須達 1 噸或以上。",
+			"與航星舵同調的感覺，就像手臂或腿麻掉之後那種針刺般的感覺，但沒那麼痛。",
+			"與航星舵同調並坐在其上時，只要你維持{@status concentration}（如同{@status concentration||專注}於一道法術），你就獲得以下能力：",
+			{
+				"type": "list",
+				"items": [
+					"你可以使用航星舵讓船隻在太空、空中或水中移動，距離至多等於船的速度。若船位於太空中，且其 1 哩內沒有其他重量達 1 噸或以上的物體，你可以使用航星舵讓船以足以在 24 小時內航行 1 億哩的速度移動。",
+					"你可以駕駛船隻，雖然有些笨拙，但方式與舵或槳操縱航海船隻大致相同。",
+					"你可以隨時看見並聽見船上與周圍發生的事，如同你站在船上一個你選擇的位置。"
+				]
+			},
+			{
+				"type": "entries",
+				"name": "轉移同調",
+				"entries": [
+					"你可以使用一個動作觸碰一名自願的施法者。該生物立即與航星舵同調，而你與它的同調隨之結束。"
+				],
+				"ENG_name": "Transfer Attunement"
+			},
+			{
+				"type": "inset",
+				"name": "航星舵的價格",
+				"entries": [
+					"航星舵推動與駕駛船隻的方式，很像航海船隻上的帆、槳與舵，而且只要擁有適當的法術，航星舵很容易製作。{@spell Create spelljamming helm|AAG}的材料構材價值 5,000 gp，因此這是取得一具航星舵至少要付出的代價。",
+					"狂野太空的商人，包括{@creature dohwar|BAM|多哈瓦}與{@creature mercane|BAM|默坎}（兩者都記載於{@book Boo's Astral Menagerie|BAM}），販售航星舵的價格通常遠高於製作成本。高出多少取決於市場，但 7,500 gp 會是合理的要價。在賣方市場中，急需的買家可能會付出 10,000 gp 或更多。"
+				],
+				"ENG_name": "Cost of a Spelljamming Helm"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Spelljamming Helm"
 	},
 	"Spellshard|ERLW": {
 		"name": "法術晶",
@@ -34094,6 +36233,33 @@
 			"透過望遠鏡觀看的物體會被放大為兩倍大小。"
 		],
 		"ENG_name": "Spyglass"
+	},
+	"Squid Ship|AAG": {
+		"name": "烏賊船",
+		"source": "AAG",
+		"page": 48,
+		"otherSources": [
+			{
+				"source": "SjA"
+			}
+		],
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 2500000,
+		"crew": 13,
+		"vehAc": 15,
+		"vehHp": 300,
+		"vehDmgThresh": 15,
+		"vehSpeed": 3.5,
+		"capCargo": 20,
+		"entries": [
+			"烏賊船是最古老的航星船類型之一，受到私掠者歡迎，也經常被用作巡邏船。烏賊船的標準武器包括一架裝在船首的投石機、兩架裝在船尾的弩砲，以及用於衝撞的強化船首。從船首延伸出的觸手幾乎佔了船龍骨長度的一半。",
+			"烏賊船可以在水上漂浮與航行，也可以降落在地面上。"
+		],
+		"seeAlsoVehicle": [
+			"Squid Ship|AAG"
+		],
+		"ENG_name": "Squid Ship"
 	},
 	"Stabling (per day)|XPHB": {
 		"name": "馬廄費（每日）",
@@ -35690,6 +37856,28 @@
 		"hasFluffImages": true,
 		"ENG_name": "Star Card"
 	},
+	"Star Moth|AAG": {
+		"name": "星蛾船",
+		"source": "AAG",
+		"page": 50,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 4000000,
+		"crew": 13,
+		"vehAc": 13,
+		"vehHp": 400,
+		"vehDmgThresh": 15,
+		"vehSpeed": 5.5,
+		"capCargo": 30,
+		"entries": [
+			"星蛾船由星界精靈建造與駕駛，他們不喜歡這些船落入他人之手。",
+			"星蛾船的船體以培育並雕塑而成的有機物質製成，它巨大的裝飾性翅膀則以閃爍的水晶構成。這艘船是為太空旅行而建造，但它的設計確實讓它能在水上漂浮或安全降落在地面上。標準武器包括兩架嵌在星蛾眼孔中的弩砲，以及一架裝在艦橋上方的投石機。"
+		],
+		"seeAlsoVehicle": [
+			"Star Moth|AAG"
+		],
+		"ENG_name": "Star Moth"
+	},
 	"Star rose quartz|XDMG": {
 		"name": "星光粉晶",
 		"source": "XDMG",
@@ -35739,6 +37927,60 @@
 			"augury"
 		],
 		"ENG_name": "Statuette of Augury"
+	},
+	"Steel|WBTW": {
+		"name": "鋼鐵",
+		"source": "WBtW",
+		"page": 214,
+		"baseItem": "longsword|PHB",
+		"type": "M",
+		"rarity": "very rare",
+		"reqAttune": "by a good-aligned creature",
+		"reqAttuneTags": [
+			{
+				"alignment": [
+					"G"
+				]
+			}
+		],
+		"sentient": true,
+		"weight": 3,
+		"weaponCategory": "martial",
+		"property": [
+			"V"
+		],
+		"dmg1": "1d8",
+		"dmgType": "S",
+		"dmg2": "1d10",
+		"bonusWeapon": "+2",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +2 加值。",
+			{
+				"type": "entries",
+				"name": "回生術",
+				"entries": [
+					"你可以使用一個動作從劍施展{@spell revivify}法術。你必須以劍觸碰目標才能施展該法術。這把武器的此屬性使用後，在下一個黎明之前無法再次使用。"
+				],
+				"ENG_name": "Revivify"
+			},
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"鋼鐵是一把具有知覺的守序善良長劍，智力 8、感知 11、魅力 15。它能在 60 呎範圍內視物與聽聞。這把劍能說、讀並理解通用語與龍語。你與它同調時，它會為你的安危操心，而且它不喜歡在戰鬥中退縮。"
+				],
+				"ENG_name": "Sentience"
+			}
+		],
+		"attachedSpells": {
+			"daily": {
+				"1e": [
+					"revivify"
+				]
+			}
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Steel"
 	},
 	"Stone of Controlling Earth Elementals|XDMG": {
 		"name": "控制土元素之石",
@@ -35868,6 +38110,30 @@
 		],
 		"hasFluffImages": true,
 		"ENG_name": "Stone of Good Luck"
+	},
+	"Stone of Ill Luck|TFTYP": {
+		"name": "厄運石",
+		"source": "TftYP",
+		"page": 229,
+		"rarity": "uncommon",
+		"reqAttune": true,
+		"wondrous": true,
+		"curse": true,
+		"weight": 1,
+		"bonusSavingThrow": "-2",
+		"bonusAbilityCheck": "-2",
+		"entries": [
+			"對任何試圖鑑定它的人而言，這塊拋光的瑪瑙看起來都是一顆{@item stone of good luck}，且當它在你身上時會賦予該物品的屬性。",
+			{
+				"type": "entries",
+				"name": "詛咒",
+				"entries": [
+					"此物品受到詛咒。當它在你身上時，你的屬性檢定與豁免檢定承受 -2 減值。在詛咒被發現之前，DM 會暗中套用此減值，並假設你正在加上物品的加值。在詛咒被{@spell remove curse}或類似魔法破除之前，你不願與這顆石頭分離。"
+				],
+				"ENG_name": "Curse"
+			}
+		],
+		"ENG_name": "Stone of Ill Luck"
 	},
 	"Stonebreaker's Breastplate|BGG": {
 		"name": "碎石者胸甲",
@@ -37752,6 +40018,22 @@
 		"hasFluffImages": true,
 		"ENG_name": "Tome of Leadership and Influence"
 	},
+	"Tome of the Dragon|FRAIF": {
+		"name": "龍之典籍",
+		"source": "FRAiF",
+		"page": 247,
+		"rarity": "legendary",
+		"wondrous": true,
+		"entries": [
+			"這本沉重的典籍以龍皮裝訂，並以厚重的冷鐵帶加固。原始的抄本由{@book 龍之教團|FRHoF|6|Cult of the Dragon}的龍語者製作，封面上印有該教團的標誌。《龍之典籍》包含將一條龍或一具死龍的屍體轉變為屍龍的秘密儀式。",
+			"要解讀並使用《龍之典籍》，你必須是擁有至少兩個 5 環法術位的施法者，或是一條龍。一名助手（或在 DM 決定下更多名）可以協助你進行儀式，只要該助手也符合使用典籍的條件。",
+			"要使用《龍之典籍》創造屍龍，你必須能持續接觸一條成年或遠古龍的身體（無論是活的還是死的），以及價值 80,000 GP 的材料（其中包括一顆將作為屍龍靈魂錨點的寶石）。擁有必要的材料時，你必須進行一個持續 180 天除以進行儀式之生物數量的儀式。儀式期間，你與任何助手都必須不間斷地工作，每天休息不超過 8 小時。若你是一條龍，材料費用與儀式持續時間減半。",
+			"儀式完成時，典籍會爆發出紫羅蘭色的光芒，對你與每名助手造成（{@dice 12d6}）點黯蝕傷害。若此傷害使一個生物的{@variantrule Hit Points|XPHB|生命值}降至 0，該生物會被殺死，並立即以由 DM 控制的{@creature Zombie|XMM}形態重新活化。",
+			"儀式結束時，目標會轉變為一條{@creature Dracolich|XMM}。若儀式的目標是一條活龍，那條龍會立即死亡，它的靈魂會被轉移到為儀式準備的寶石中。若目標是一具死龍的屍體，屍體會重新活化，寶石則會被一個來自外層位面的邪惡龍魂所佔據。屍龍對它的創造者沒有任何義務，並依其本性行動。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Tome of the Dragon"
+	},
 	"Tome of the Stilled Tongue|XDMG": {
 		"name": "噤聲之書",
 		"source": "XDMG",
@@ -39530,6 +41812,69 @@
 		],
 		"ENG_name": "Turquoise"
 	},
+	"Turtle Ship|AAG": {
+		"name": "龜船",
+		"source": "AAG",
+		"page": 52,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 4000000,
+		"crew": 16,
+		"vehAc": 19,
+		"vehHp": 300,
+		"vehDmgThresh": 15,
+		"vehSpeed": 3,
+		"capCargo": 30,
+		"entries": [
+			"如其名稱所示，龜船包覆在一層保護性的金屬殼中，並佈滿武器。除了寬敞的艙房之外，它還能搭載相當份量的貨物，因此受到商人與其他需要大量貨物空間之人的歡迎。這艘船可以降落在地面上，也能在水上漂浮。滑動面板可以關閉以使船體密封，讓船能安全地在水下航行，甚至到達極深之處。若船在水上或水下時受到損傷，可以封閉內部艙口以防止船完全進水。",
+			"龜船的標準武器包括三架裝在船首的弩砲與一架朝後的投石機。船在水下時無法使用這些武器。"
+		],
+		"seeAlsoVehicle": [
+			"Turtle Ship|AAG"
+		],
+		"ENG_name": "Turtle Ship"
+	},
+	"Tyrant Ship|AAG": {
+		"name": "暴君艦",
+		"source": "AAG",
+		"page": 54,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"crew": 10,
+		"vehAc": 17,
+		"vehHp": 300,
+		"vehDmgThresh": 20,
+		"vehSpeed": 4.5,
+		"capCargo": 20,
+		"entries": [
+			"眼魔用它們的分解射線從石頭中雕出暴君艦，並使用這些船在星界位面中漫遊，尋找可以征服的世界與可以摧毀的敵對眼魔。沒有兩艘暴君艦長得一樣，但它們都有一個或多個讓人聯想到其創造者的特徵，例如球根般的外形與眼柄。",
+			"船上指揮甲板上的一個球形房間具有航星舵的功能，但只有眼魔能與它同調。任何佔據這個房間的眼魔都能與它同調。將暴君艦的生命值降至 0 不僅會摧毀它，也會摧毀船上的航星舵與眼柄砲。",
+			"暴君艦無法在水上漂浮，但可以安全降落在地面上。"
+		],
+		"seeAlsoVehicle": [
+			"Tyrant Ship|AAG"
+		],
+		"ENG_name": "Tyrant Ship"
+	},
+	"Ulcrun|FRAIF": {
+		"name": "烏爾克倫",
+		"source": "FRAiF",
+		"page": 237,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 100000,
+		"poison": true,
+		"entries": [
+			"受到烏爾克倫影響的生物必須成功通過一次 {@dc 15} 體質豁免檢定，否則受到 21（{@dice 6d6}）點毒素傷害，並獲得 1 級{@condition Exhaustion|XPHB|力竭}。"
+		],
+		"poisonTypes": [
+			"injury"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Ulcrun"
+	},
 	"Uncommon Glamerweave|ERLW": {
 		"name": "非普通幻織衣",
 		"source": "ERLW",
@@ -41045,6 +43390,28 @@
 		],
 		"ENG_name": "Warship"
 	},
+	"Wasp Ship|AAG": {
+		"name": "胡蜂船",
+		"source": "AAG",
+		"page": 56,
+		"type": "SPC|AAG",
+		"rarity": "none",
+		"value": 2000000,
+		"crew": 5,
+		"vehAc": 15,
+		"vehHp": 250,
+		"vehDmgThresh": 15,
+		"vehSpeed": 5.5,
+		"capCargo": 10,
+		"entries": [
+			"胡蜂船是輕型木造船隻，能安全降落在地面上，但無法降落在水上。它們吸引冒險者，因為價格實惠且不需要大量船員。海盜喜歡它們，因為它們很快。貴族喜歡將它們用作飛行遊艇，因為船的貨艙可以輕易改裝成豪華的起居空間。",
+			"船隆起的背部為武器砲座提供了高處，通常會裝設一架弩砲。"
+		],
+		"seeAlsoVehicle": [
+			"Wasp Ship|AAG"
+		],
+		"ENG_name": "Wasp Ship"
+	},
 	"Waterskin|XPHB": {
 		"name": "水袋",
 		"source": "XPHB",
@@ -41200,6 +43567,48 @@
 		},
 		"ENG_name": "Wayfarer's Boots"
 	},
+	"Waythe|TFTYP": {
+		"name": "威斯",
+		"source": "TftYP",
+		"page": 229,
+		"baseItem": "greatsword|phb",
+		"type": "M",
+		"rarity": "legendary",
+		"reqAttune": true,
+		"sentient": true,
+		"weight": 6,
+		"weaponCategory": "martial",
+		"property": [
+			"H",
+			"2H"
+		],
+		"dmg1": "2d6",
+		"dmgType": "S",
+		"bonusWeapon": "+1",
+		"entries": [
+			"威斯是一把獨特的巨劍，最近一次由一位地位崇高的{@creature cloud giant}大使持有。",
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。當你以它命中巨人類型的生物時，該巨人額外受到 {@damage 2d6} 點劈砍傷害，且必須成功通過一次 {@dc 15} 力量豁免檢定，否則倒地（{@condition prone}）。",
+			"這把劍也具有{@item wand of enemy detection}的功能。它在黎明時恢復所有已消耗的充能，且使用最後 1 點充能時不會有碎裂的風險。",
+			{
+				"name": "知覺",
+				"type": "entries",
+				"entries": [
+					"威斯是一把具有知覺的中立善良武器，智力 12、感知 2、魅力 14。它具有聽覺，以及範圍 120 呎的{@sense darkvision}。",
+					"這把武器能說並理解巨人語與通用語，並能以心靈感應與持用者溝通。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"name": "個性",
+				"type": "entries",
+				"entries": [
+					"這把劍相信自由，並讓他人依自己認為合適的方式生活。它會保護自己的朋友，並希望與志同道合的持用者成為朋友。（善良陣營的角色只需 1 分鐘就能與這把劍同調。）然而，威斯勇敢到近乎魯莽，會大聲敦促大膽的行動。它很可能與邪惡或膽小的持用者發生衝突。"
+				],
+				"ENG_name": "Personality"
+			}
+		],
+		"ENG_name": "Waythe"
+	},
 	"Well of Many Worlds|XDMG": {
 		"name": "萬界之井",
 		"source": "XDMG",
@@ -41226,6 +43635,21 @@
 		"rarity": "none",
 		"value": 25000,
 		"ENG_name": "Well-made tapestry that is 10 feet by 10 feet"
+	},
+	"Whaleboat|FRAIF": {
+		"name": "捕鯨小艇",
+		"source": "FRAiF",
+		"page": 166,
+		"type": "SHP|XPHB",
+		"rarity": "none",
+		"value": 50000,
+		"crew": 6,
+		"vehAc": 13,
+		"vehHp": 100,
+		"vehDmgThresh": 10,
+		"vehSpeed": 3,
+		"capPassenger": 1,
+		"ENG_name": "Whaleboat"
 	},
 	"Wheat|XDMG": {
 		"name": "小麥",
@@ -41486,6 +43910,36 @@
 		"hasFluffImages": true,
 		"ENG_name": "Whisper Jar"
 	},
+	"White Chromatic Rose|WBTW": {
+		"name": "黑色彩玫瑰",
+		"source": "WBtW",
+		"page": 208,
+		"resist": [
+			"cold"
+		],
+		"detail1": "is covered in frost",
+		"rarity": "rare",
+		"wondrous": true,
+		"hasRefs": true,
+		"entries": [
+			"{#itemEntry Chromatic Rose|WBtW}"
+		],
+		"ENG_name": "White Chromatic Rose"
+	},
+	"White Dragon Cape|TFTYP": {
+		"name": "白龍披風",
+		"source": "TftYP",
+		"page": 193,
+		"type": "OTH",
+		"resist": [
+			"cold"
+		],
+		"rarity": "unknown (magic)",
+		"entries": [
+			"穿戴這件披風時，你具有寒冷傷害抗性。"
+		],
+		"ENG_name": "White Dragon Cape"
+	},
 	"White Dragon Scale Mail|XDMG": {
 		"name": "白龍鱗甲",
 		"source": "XDMG",
@@ -41522,6 +43976,20 @@
 			"將野根的汁液注入一個{@condition poisoned}生物的血液中（例如塗在開放傷口上），可以解除該生物的{@condition poisoned}狀態。以此方式使用過後，野根便會失去這項屬性。"
 		],
 		"ENG_name": "Wildroot"
+	},
+	"Wildspace Orrery|AAG": {
+		"name": "狂野太空天象儀",
+		"source": "AAG",
+		"page": 23,
+		"referenceSources": [
+			"LoX"
+		],
+		"rarity": "uncommon",
+		"wondrous": true,
+		"entries": [
+			"在狂野太空星系內，這個可攜式奧術裝置會自動追蹤該星系中所有太陽、行星、衛星與彗星的位置與運動，並在其目前位置上方的空間投射出所有這些天體的顯示。在該顯示中，一個白色、脈動的針尖光點標示著天象儀的位置。"
+		],
+		"ENG_name": "Wildspace Orrery"
 	},
 	"Will of the Talon (Awakened)|EGW": {
 		"name": "龍爪意志（覺醒）",
@@ -41744,6 +44212,30 @@
 		"hasFluffImages": true,
 		"ENG_name": "Wind Fan"
 	},
+	"Windskiff|FRAIF": {
+		"name": "風帆板",
+		"source": "FRAiF",
+		"page": 247,
+		"otherSources": [
+			{
+				"source": "FRHoF",
+				"page": 134
+			}
+		],
+		"rarity": "rare",
+		"wondrous": true,
+		"value": 400000,
+		"recharge": "dawn",
+		"rechargeAmount": 3,
+		"charges": 3,
+		"entries": [
+			"這件小首飾有 3 點充能，每天黎明恢復所有已消耗的充能。持握它時，你可以執行一個{@action Magic|XPHB}動作消耗 1 點充能，使首飾變成一個以帆驅動的個人載具。這個載具的大小與形狀大致如同一扇家門，一側伸出一面 10 呎高的帆。1 小時後，或直到你說出此物品的命令語（不需要動作），變形便會結束，風帆板恢復為首飾形態。",
+			"在載具形態下，風帆板是一個中型物體，具有以下數據：AC 12、HP 30，以及{@variantrule Speed|XPHB|速度} 40 呎。風帆板會懸浮在其所在表面上方幾吋處，並可以滑翔；在空中每下降 1 呎可以水平移動 5 呎。風帆板與其乘客不會受到墜落傷害。"
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"ENG_name": "Windskiff"
+	},
 	"Winged Boots|XDMG": {
 		"name": "飛翼之靴",
 		"source": "XDMG",
@@ -41810,6 +44302,138 @@
 		"hasFluff": true,
 		"hasFluffImages": true,
 		"ENG_name": "Winter Camouflage"
+	},
+	"Witchlight Vane|WBTW": {
+		"name": "魔光風向標",
+		"source": "WBtW",
+		"page": 27,
+		"baseItem": "mace|phb",
+		"typeAlt": "M",
+		"rarity": "legendary",
+		"reqAttune": "by a mister light or his handpicked successor",
+		"sentient": true,
+		"weight": 3,
+		"bonusWeapon": "+3",
+		"entries": [
+			"這根華麗的權杖頂端有一對蝴蝶翅膀，杖身嵌有一些紅色玻璃。它重 3 磅。",
+			{
+				"type": "entries",
+				"name": "魔法武器",
+				"entries": [
+					"在與它同調者的手中，這根風向標可以作為一把攻擊檢定與傷害擲骰具有 +3 加值的魔法硬頭錘揮舞。此外，風向標命中時額外造成 {@damage 1d8} 點光耀傷害。"
+				],
+				"ENG_name": "Magic Weapon"
+			},
+			{
+				"type": "entries",
+				"name": "感知情緒",
+				"entries": [
+					"當風向標位於魔光嘉年華的範圍內時，它能感知嘉年華中每個智力 4 或更高之生物的情緒。作為一個動作，與風向標同調的生物可以使用它精確找出嘉年華中最快樂之生物的位置。",
+					"當嘉年華中的氣氛普遍高昂時，風向標頂端的蝴蝶會緩慢地順時針旋轉；若嘉年華中的整體氣氛陰鬱，風向標頂端則會緩慢地逆時針旋轉。"
+				],
+				"ENG_name": "Sense Mood"
+			},
+			{
+				"type": "entries",
+				"name": "知覺",
+				"entries": [
+					"這根風向標是一件具有知覺的混亂善良奇物，智力 11、感知 14、魅力 14。它具有聽覺，以及範圍 30 呎的一般視覺，並透過向與它同調的生物傳遞情緒來溝通。它的目的是確保魔光嘉年華中的每個人都玩得開心。"
+				],
+				"ENG_name": "Sentience"
+			},
+			{
+				"type": "entries",
+				"name": "額外屬性",
+				"entries": [
+					"風向標具有以下額外屬性：",
+					{
+						"type": "list",
+						"items": [
+							"持握風向標的生物易受閃電傷害。",
+							"與風向標同調的生物無法被{@condition blinded}、{@condition deafened}、{@condition petrified}或{@condition stunned}。",
+							"攜帶風向標時，與它同調的生物可以使用一個動作施展{@spell dancing lights}、{@spell polymorph}或{@spell ray of frost}法術，不需要法術構材，並使用魅力作為施法屬性。風向標施展{@spell polymorph}法術後，擲一顆 {@dice d8}；若擲出 3 或 8，風向標在下一個黎明之前無法再次用來施展此法術。"
+						]
+					}
+				],
+				"ENG_name": "Additional Properties"
+			}
+		],
+		"attachedSpells": {
+			"other": [
+				"dancing lights",
+				"polymorph",
+				"ray of frost"
+			],
+			"ability": "cha"
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Witchlight Vane"
+	},
+	"Witchlight Watch|WBTW": {
+		"name": "魔光懷錶",
+		"source": "WBtW",
+		"page": 25,
+		"rarity": "legendary",
+		"reqAttune": "by a mister witch or his handpicked successor",
+		"wondrous": true,
+		"entries": [
+			"這只華麗的懷錶繫在一條金鍊的末端。打開時它會發出微弱的金光，並發出只有持握它的生物才聽得見的輕柔滴答聲。錶面上是一幅魔光嘉年華的微型畫，周圍環繞著一座小巨石陣，夜晚時有一個小到能穿過針眼的光點繞著它運行。這個光點讓巨石陣投下影子，而這些影子讓懷錶的主人能追蹤時間的流逝。",
+			{
+				"type": "entries",
+				"name": "嘉年華的搭建與拆除",
+				"entries": [
+					"只要與懷錶同調的生物與嘉年華位於同一個存在位面，該生物就可以使用一個動作啟動魔光嘉年華的打包或展開。在 1 小時內，所有屬於嘉年華的物體都會以魔法飛快移動，直到一切都打包好準備出發，或展開並組裝完成。懷錶對生物沒有效果，在嘉年華搭建或拆除期間，生物可以自由且安全地四處移動。嘉年華的打包或展開過程一旦開始，就無法停止，直到任務完成為止。使用懷錶打包或展開嘉年華後，此屬性在經過 8 小時之前無法再次使用。"
+				],
+				"ENG_name": "Carnival Setup and Takedown"
+			},
+			{
+				"type": "entries",
+				"name": "額外屬性",
+				"entries": [
+					"這只懷錶具有以下額外屬性：",
+					{
+						"type": "list",
+						"items": [
+							"攜帶懷錶時，與它同調的生物可以使用一個動作施展{@spell fire bolt}、{@spell invisibility}或{@spell message}法術，不需要法術構材，並使用智力作為施法屬性。懷錶施展{@spell invisibility}法術後，擲一顆 {@dice d8}；若擲出 3 或 8，懷錶在下一個黎明之前無法再次用來施展此法術。",
+							"與懷錶同調的生物體重增加 30 磅。同調結束時，這些額外的重量會消失。",
+							"與懷錶同調的生物每天必須吃喝一般份量的八倍。"
+						]
+					}
+				],
+				"ENG_name": "Additional Properties"
+			}
+		],
+		"attachedSpells": {
+			"other": [
+				"fire bolt",
+				"invisibility",
+				"message"
+			],
+			"ability": "int"
+		},
+		"ENG_name": "Witchlight Watch"
+	},
+	"Woodcutter's Axe|WBTW": {
+		"name": "樵夫之斧",
+		"source": "WBtW",
+		"page": 214,
+		"baseItem": "greataxe|PHB",
+		"type": "M",
+		"rarity": "rare",
+		"weight": 7,
+		"weaponCategory": "martial",
+		"property": [
+			"H",
+			"2H"
+		],
+		"dmg1": "1d12",
+		"dmgType": "S",
+		"bonusWeapon": "+1",
+		"entries": [
+			"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+			"當你使用這把斧頭攻擊植物（普通植物或植物類型的生物）或未被穿戴或攜帶的木製物體時，攻擊命中時額外造成 {@damage 2d6} 點劈砍傷害。"
+		],
+		"ENG_name": "Woodcutter's Axe"
 	},
 	"Wreath of the Prism (Awakened)|EGW": {
 		"name": "稜彩花冠（覺醒）",
@@ -42169,6 +44793,25 @@
 			"雅恰甲蟲是一種無害、肉多的甲蟲，大小約如人類的手掌，以蠕蟲與蛆為食。牠移動緩慢（步行速度 10 呎），很容易捕捉。患有藍霧熱的生物吃下生的或煮熟的雅恰甲蟲後，可以立即對該疾病進行一次具有優勢的豁免檢定（見第 40 頁的「疾病」）。"
 		],
 		"ENG_name": "Yahcha"
+	},
+	"Yellow Death|FRAIF": {
+		"name": "黃死",
+		"source": "FRAiF",
+		"page": 237,
+		"type": "G|XPHB",
+		"rarity": "none",
+		"value": 15000,
+		"poison": true,
+		"entries": [
+			"受到黃死影響的生物進行一次 {@dc 13} 體質豁免檢定。豁免失敗時，該生物受到 14（{@dice 4d6}）點毒素傷害，並處於{@condition Poisoned|XPHB|中毒}狀態 1 分鐘。豁免成功時，該生物只受到一半傷害。"
+		],
+		"poisonTypes": [
+			"ingested"
+		],
+		"miscTags": [
+			"CNS"
+		],
+		"ENG_name": "Yellow Death"
 	},
 	"Yellow Sapphire|XDMG": {
 		"name": "黃藍寶石",
