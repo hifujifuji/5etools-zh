@@ -38,6 +38,14 @@ export default [
 				switch (args[0]) {
 					case "getFullImmRes": return Parser.getFullImmRes(`,
 			],
+			// 物品內文會把物品名改成斜體；_zhOf 也被改掉的話就和 name 對不上，中文小標便失效
+			[`		Renderer.item._GET_RENDERED_ENTRIES_WALKER = Renderer.item._GET_RENDERED_ENTRIES_WALKER || MiscUtil.getWalker({
+			keyBlocklist: new Set([
+				...MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST,
+				"data",`, `		Renderer.item._GET_RENDERED_ENTRIES_WALKER = Renderer.item._GET_RENDERED_ENTRIES_WALKER || MiscUtil.getWalker({
+			keyBlocklist: new Set([
+				...MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST,
+				"data", "_zhOf", "name_zh",`],
 			// {@chance 5} →「5%」
 			["if (entry.successThresh != null) return `${entry.successThresh} percent`;", "if (entry.successThresh != null) return `${entry.successThresh}%`;"],
 			["return displayText || `${rollText} percent`;", "return displayText || `${rollText}%`;"],
