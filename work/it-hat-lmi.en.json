@@ -1,0 +1,58 @@
+{
+	"batch": "it-hat-lmi",
+	"items": [
+		{
+			"prop": "item",
+			"key": "Helm of Disjunction|HAT-LMI",
+			"s": [
+				"Helm of Disjunction",
+				"The wizard Mordenkainen crafted this sleek, golden helmet. If he created other helms of disjunction, they have yet to be found.",
+				"As an action while wearing this helm, you can use it to emit an antimagic pulse in a 300-foot-radius sphere centered on yourself. The pulse has the following effects:",
+				"Magic Item Disjunction",
+				"Potions and scrolls in the area are destroyed. All other magic items in the area have their magical properties suppressed for 1 minute. Artifacts are unaffected by this property, as are magic items on your person.",
+				"Spell Disjunction",
+				"Any ongoing spell ends if the creature, object, or area affected by it is even partly in the pulse's area.",
+				"Wave of Force",
+				"The antimagic pulse is strong enough to knock down creatures close to you. Each creature within 30 feet of you must succeed on a {@dc 15} Strength saving throw or have the {@condition prone} condition.",
+				"Once you use the helm's property, it can't be used again until {@dice 1d4} days have passed."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Hither-Thither Staff|HAT-LMI",
+			"s": [
+				"Hither-Thither Staff",
+				"This walking stick has a brilliant gemstone fitted at the top. This staff has 4 charges and regains {@dice 1d4} expended charges daily at dawn.",
+				"As an action, you can expend 1 charge from the staff to create two linked teleportation portals, each one appearing on a flat surface of your choice that you can see within 1,500 feet of yourself. Alternatively, you can expend 1 charge as an action to relocate one or both portals, subject to the same limitation. The surface on which a portal appears must be big enough to accommodate it. Each portal is a two-dimensional, glowing oval ring, and together they create an open doorway up to 6 feet high and 4 feet wide. Any creature or object entering one portal exits from the other as if the two portals were a single opening that connects their locations.",
+				"A portal can appear on a moving surface, but the effect ends when the two portals move more than 1 mile apart. As a bonus action while holding the staff, you can close both portals (ending the effect) or suppress one portal, causing it to disappear until you relocate it (see above), during which time the remaining portal can't be used. The portals otherwise last for 24 hours."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Horn of Beckoning Death|HAT-LMI",
+			"s": [
+				"Horn of Beckoning Death",
+				"Resembling a small dragon's horn, this arcane device glows with a hellish internal light when held. As an action while holding this horn, you can invoke a necromantic effect called the Beckoning Death.",
+				"The Beckoning Death arrives at the start of your next turn and manifests as a crimson cloud of smoke that fills a 30-foot-radius sphere centered on the horn. The sphere doesn't move with the horn. At the start of each of your turns, the sphere's radius increases by 30 feet. The cloud disappears after 10 minutes or when your {@status concentration} on the effect ends. Any creature (including you) that has 9 or fewer hit points when it ends its turn in the cloud is slain by the Beckoning Death. A Humanoid killed in this way instantly transforms into a {@creature zombie} (see the Monster Manual). The zombie obeys the commands of the horn's creator, the lich Szass Tam.",
+				"Once you use the horn's property, it can't be used again for 1 year."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Red Wizard Blade|HAT-LMI",
+			"s": [
+				"Red Wizard Blade",
+				"Forged by Red Wizards using a secret process known only to them, this grim steel dagger draws its power from the Negative Plane. When you hit a creature with a melee attack using this magic dagger, the target takes an extra {@damage 3d12} necrotic damage.",
+				"A creature reduced to 0 hit points by this weapon dies and can't be raised from the dead except by a deity or by a creature using a {@item tablet of reawakening|HAT-LMI} to cast the {@spell true resurrection} spell."
+			]
+		},
+		{
+			"prop": "item",
+			"key": "Tablet of Reawakening|HAT-LMI",
+			"s": [
+				"Tablet of Reawakening",
+				"Witches of Rashemen created this Tiny stone tablet to counter the necromancy of the Red Wizards. As an action, you can cast {@spell true resurrection} from the tablet. Once used in this way, the tablet turns to dust and is destroyed."
+			]
+		}
+	]
+}
