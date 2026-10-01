@@ -1,0 +1,898 @@
+{
+	"batch": "egw-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Aeorian Absorber|EGW",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Pounce": "撲擊",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Aeorian Absorber",
+				"natural armor",
+				"Magic Resistance",
+				"The absorber has advantage on saving throws against spells and other magical effects.",
+				"Pounce",
+				"If the absorber moves at least 20 feet straight toward a creature and then hits its claws attack on the same turn, that target must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the absorber can make one bite attack against it as a bonus action.",
+				"Multiattack",
+				"The absorber makes three attacks: one with its bite or Mind Bolt and two with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}10 ({@damage 1d10 + 5}) piercing damage plus 5 ({@damage 1d10}) force damage.",
+				"Claws",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage plus 3 ({@damage 1d6}) force damage.",
+				"Mind Bolt",
+				"{@atk rs} {@hit 8} to hit, range 120 ft., one creature. {@h}22 ({@damage 4d10}) psychic damage.",
+				"Tail Ray",
+				"When the absorber takes damage from a spell, the absorber takes only half the triggering damage. If the spellcaster is within 60 feet of the absorber, the absorber can force the caster to make a {@dc 16} Dexterity saving throw. Unless the save succeeds, the caster takes the other half of the damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aeorian Nullifier|EGW",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bites": "啃咬",
+				"Claws": "爪擊",
+				"Counterspell": "法術反制"
+			},
+			"s": [
+				"Aeorian Nullifier",
+				"natural armor",
+				"Innate Spellcasting",
+				"The nullifier's innate spellcasting ability is Charisma (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:",
+				"Horrid Gnashing",
+				"The nullifier's mouths gnash incoherently while it can see any enemies. Each creature that starts its turn within 20 feet of the nullifier and can hear it must make a {@dc 16} Wisdom saving throw. Unless the save succeeds, the creature rolls a {@dice d8} to determine what it does during the current turn:",
+				"1-4:",
+				"The creature is {@condition stunned} until the end of the turn.",
+				"5-6:",
+				"The creature is {@condition frightened} until the end of the turn and uses its movement to get as far as possible from the nullifier.",
+				"7-8:",
+				"The creature doesn't move, and it uses its action to make one melee attack against a random creature (other than itself) if one is within reach. It otherwise does nothing",
+				"Magic Resistance",
+				"The nullifier has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The nullifier makes three attacks: one with its bites and two with its claws.",
+				"Bites",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}17 ({@damage 2d12 + 4}) piercing damage plus 11 ({@damage 2d10}) force damage.",
+				"Claws",
+				"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage plus 11 ({@damage 2d10}) force damage, and the target is {@condition grappled} (escape {@dc 16}) if it's a creature. The nullifier has two claws, each of which can grapple one creature.",
+				"Counterspell",
+				"The nullifier attempts to interrupt a creature that it can see within 60 feet in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, the nullifier makes a Charisma check with a DC equal to 10 + the spell's level. On a success, the creature's spell fails and has no effect."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aeorian Reverser|EGW",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Aeorian Reverser",
+				"natural armor",
+				"Magic Resistance",
+				"The reverser has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The reverser makes three attacks: one with its bite and two with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 8} to hit, range 5 ft., one creature. {@h}11 ({@damage 1d12 + 5}) piercing damage plus 6 ({@damage 1d12}) force damage.",
+				"Claws",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage plus 7 ({@damage 2d6}) force damage.",
+				"Reversal",
+				"When a creature the reverser can see within 30 feet of it regains hit points, the reverser reduces the number of hit points regained to 0, and the reverser deals 13 ({@damage 3d8}) force damage to the creature."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Allowak Abominable Yeti|EGW",
+			"s": [
+				"Allowak Abominable Yeti"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Allowak Yeti|EGW",
+			"s": [
+				"Allowak Yeti"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Animated Knife|EGW",
+			"s": [
+				"Animated Knife"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Animated Tree|EGW",
+			"s": [
+				"Animated Tree"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blood Hunter|EGW",
+			"hint": {
+				"Innate Spellcasting (1/Day)": "天生施法（每日 1 次）",
+				"Blood Frenzy": "血腥狂亂",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Greatsword": "巨劍",
+				"Heavy Crossbow": "重弩"
+			},
+			"s": [
+				"Blood Hunter",
+				"Innate Spellcasting (1/Day)",
+				"The blood hunter can innately cast {@spell hex}. Its innate spellcasting ability is Intelligence.",
+				"Blood Curse of Binding (1/Day)",
+				"As a bonus action, the blood hunter targets one creature it can see within 30 feet of it. The target must succeed on a {@dc 14} Strength saving throw or have its speed reduced to 0 and be unable to take reactions. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Blood Frenzy",
+				"The blood hunter has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+				"Magic Resistance",
+				"The blood hunter has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The blood hunter attacks twice with a weapon.",
+				"Greatsword",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage plus 3 ({@damage 1d6}) fire damage.",
+				"Heavy Crossbow",
+				"{@atk rw} {@hit 4} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bol'bara|EGW",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Dark One's Blessing": "黑暗者的祝福",
+				"Nimble Escape": "靈巧脫逃",
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Bol'bara",
+				"chaotic evil when fully possessed",
+				"with {@spell mage armor}",
+				"Innate Spellcasting",
+				"Bol'bara's innate spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). She can innately cast the following spells, requiring no material components:",
+				"Dark One's Blessing",
+				"When Bol'bara reduces a hostile creature to 0 hit points, she gains 6 temporary hit points.",
+				"Nimble Escape",
+				"Bol'bara can take the {@action Disengage} or {@action Hide} action as a bonus action on each of her turns.",
+				"Multiattack",
+				"Bol'bara makes two melee attacks.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage.",
+				"Eldritch Blast (Cantrip)",
+				"{@atk rs} {@hit 4} to hit, range 120 ft., one creature. {@h}7 ({@damage 1d10 + 2}) force damage.",
+				"Incorporeal Dash",
+				"Bol'bara moves up to her speed. She can move through other creatures and objects as if they were {@quickref difficult terrain||3}. She takes 5 ({@damage 1d10}) force damage if she ends her turn inside an object.",
+				"Zone of Calamity (Costs 2 Actions)",
+				"A 15-foot-radius sphere of magical confusion extends from a point Bol'bara can see within 60 feet of her and spreads around corners. Each creature that starts its turn in that area is treated as if targeted by the {@spell confusion} spell (save {@dc 12}). The sphere lasts as long as Bol'bara maintains {@status concentration}, up to 1 minute (as if {@status concentration||concentrating} on a spell)."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bristled Moorbounder|EGW",
+			"hint": {
+				"Standing Leap": "立定跳躍",
+				"Multiattack": "多重攻擊",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Bristled Moorbounder",
+				"natural armor",
+				"Bladed Hide",
+				"At the start of each of its turns, the moorbounder deals 5 ({@damage 2d4}) piercing damage to any creature grappling it.",
+				"Standing Leap",
+				"The moorbounder's long jump is up to 40 feet and its high jump is up to 20 feet, with or without a running start.",
+				"Multiattack",
+				"The moorbounder makes two attacks: one with its blades and one with its claws.",
+				"Blades",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage.",
+				"Claws",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d4 + 4}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Core Spawn Crawler|EGW",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Core Spawn Crawler",
+				"Pack Tactics",
+				"The crawler has advantage on an attack roll against a creature if at least one of the crawler's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The crawler makes four attacks: one with its bite, two with its claws, and one with its tail.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage and the target must succeed on a {@dc 11} Wisdom saving throw or become {@condition frightened} until the start of the crawler's next turn.",
+				"Claws",
+				"{@atk mw} {@hit 4} to hit, reach 15 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage.",
+				"Tail",
+				"{@atk mw} {@hit 4} to hit, reach 15 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Core Spawn Emissary|EGW",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Talons": "利爪"
+			},
+			"s": [
+				"Core Spawn Emissary",
+				"natural armor",
+				"(hover)",
+				"Magic Resistance",
+				"The emissary has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The emissary makes three talons attacks.",
+				"Talons",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}14 ({@damage 2d10 + 3}) slashing damage.",
+				"Alluring Thrum {@recharge 5}",
+				"The emissary emits a dreadful yet alluring hum. Each creature within 20 feet of the emissary that can hear it and that isn't an aberration must succeed on a {@dc 14} Constitution saving throw or be {@condition charmed} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Crystal Spores {@recharge}",
+				"A 15-foot-radius cloud of toxic crystalline spores extends out from the emissary. The spores spread around corners. Each creature in the area must succeed on a {@dc 14} Constitution saving throw or become {@condition poisoned}. While {@condition poisoned} in this way, a creature takes 11 ({@damage 2d10}) poison damage at the start of each of its turns. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Core Spawn Seer|EGW",
+			"hint": {
+				"Earth Glide": "穿地滑行",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Core Spawn Seer",
+				"natural armor",
+				"Earth Glide",
+				"The seer can traverse through nonmagical, unworked earth and stone. While doing so, the seer doesn't disturb the material it moves through.",
+				"Magic Resistance",
+				"The seer has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The seer uses Fission Staff twice, Psychedelic Orb twice, or each one once.",
+				"Fission Staff",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}9 ({@damage 1d6 + 6}) bludgeoning damage plus 18 ({@damage 4d8}) radiant damage, and the target is knocked {@condition prone}.",
+				"Psychedelic Orb",
+				"The seer hurls a glimmering orb at one creature it can see within 120 of it. The target must succeed on a {@dc 19} Wisdom saving throw or take 27 ({@damage 5d10}) psychic damage and suffer a random condition until the start of the seer's next turn. Roll a {@dice d6} for the condition: (1-2) {@condition blinded}, (3-4) {@condition frightened}, or (5-6) {@condition stunned}.",
+				"Fuse Damage",
+				"When the seer is hit by an attack, it takes only half of the triggering damage. The first time the seer hits with a melee attack on its next turn, the target takes an extra {@damage 1d6} radiant damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Core Spawn Worm|EGW",
+			"hint": {
+				"Illumination": "照明",
+				"Tunneler": "掘地者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Core Spawn Worm",
+				"natural armor",
+				"Illumination",
+				"The worm sheds dim light in a 20-foot radius.",
+				"Radiant Mirror",
+				"If the worm takes radiant damage, each creature within 20 feet of it takes that damage as well.",
+				"Tunneler",
+				"The worm can burrow through solid rock at half its burrowing speed and leaves a 10-foot-diameter tunnel in its wake.",
+				"Multiattack",
+				"The worm makes two attacks: one with its barbed tentacles and one with its bite.",
+				"Barbed Tentacles",
+				"{@atk mw} {@hit 13} to hit, reach 10 ft., one creature. {@h}25 ({@damage 5d6 + 8}) piercing damage, and the target is {@condition grappled} (escape {@dc 18}). Until this grapple ends, the target is {@condition restrained}. The tentacles can grapple only one creature at a time.",
+				"Bite",
+				"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}30 ({@damage 5d8 + 8}) piercing damage. If the target is a Large or smaller creature, it must succeed on a {@dc 18} Dexterity saving throw or be swallowed by the worm. A swallowed creature is {@condition blinded} and {@condition restrained}, has {@quickref Cover||3||total cover} against attacks and other effects outside the worm, and takes 21 ({@damage 6d6}) fire damage at the start of each of the worm's turns.",
+				"If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Damaged Flesh Golem|EGW",
+			"s": [
+				"Damaged Flesh Golem"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ferol Sal|EGW",
+			"s": [
+				"Ferol Sal"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Frost Giant Zombie|EGW",
+			"hint": {
+				"Undead Fortitude": "不死堅韌",
+				"Multiattack": "多重攻擊",
+				"Greataxe": "巨斧"
+			},
+			"s": [
+				"Frost Giant Zombie",
+				"patchwork armor",
+				"Numbing Aura",
+				"Any creature that starts its turn within 10 feet of the zombie must make a {@dc 17} Constitution saving throw. Unless the save succeeds, the creature can't make more than one attack, or take a bonus action on that turn.",
+				"Undead Fortitude",
+				"If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is fire, radiant, or from a critical hit. On a success, the zombie drops to 1 hit point instead.",
+				"Multiattack",
+				"The zombie makes two weapon attacks.",
+				"Greataxe",
+				"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}25 ({@damage 3d12 + 6}) slashing damage.",
+				"Hurl Rock",
+				"{@atk rw} {@hit 10} to hit, range 60/240 ft., one target. {@h}28 ({@damage 4d10 + 6}) bludgeoning damage.",
+				"Freezing Stare",
+				"The zombie targets one creature it can see within 60 feet of it. The target must succeed on a {@dc 17} Constitution saving throw or take 35 ({@damage 10d6}) cold damage and be {@condition paralyzed} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Frost Worm|EGW",
+			"hint": {
+				"Death Burst": "死亡爆發",
+				"Tunneler": "掘地者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Frost Worm",
+				"natural armor",
+				"Freezing Body",
+				"A creature that touches the worm or hits it with a melee attack while within 5 feet of it takes 10 ({@damage 3d6}) cold damage.",
+				"Death Burst",
+				"When the worm dies, it explodes in a burst of frigid energy. Each creature within 60 feet of it must make a {@dc 20} Dexterity saving throw, taking 28 ({@damage 8d6}) cold damage on a failed save, or half as much damage on a successful one. Creatures inside the worm when it dies automatically fail this saving throw.",
+				"Tunneler",
+				"The worm can burrow through solid rock at half its burrowing speed and leaves a 10-foot-diameter tunnel in its wake.",
+				"Multiattack",
+				"The worm makes two bite attacks, or uses its Trill and makes a bite attack.",
+				"Bite",
+				"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d8 + 9}) piercing damage plus 10 ({@damage 3d6}) cold damage. If the target is a Large or smaller creature, it must succeed on a {@dc 20} Dexterity saving throw or be swallowed by the worm. A swallowed creature is {@condition blinded} and {@condition restrained}, has {@quickref Cover||3||total cover} against attacks and other effects outside the worm, and takes 10 ({@damage 3d6}) acid damage and 10 ({@damage 3d6}) cold damage at the start of each of the worm's turns.",
+				"If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a {@dc 20} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the worm.",
+				"Trill",
+				"The frost worm emits a haunting cry. Each creature within 60 feet of the worm that can hear it must succeed on a {@dc 20} Wisdom saving throw or be {@condition stunned} for 1 minute. A creature can repeat the saving throw each time it takes damage and at the end of each of its turns, ending the effect on itself on a success. Once a creature successfully saves against this effect, or if this effect ends for it, that creature is immune to the Trill of all frost worms for the next 24 hours. Frost worms are immune to this effect."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gearkeeper Construct|EGW",
+			"hint": {
+				"Immutable Form": "不變形態",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Gearkeeper Construct",
+				"natural armor",
+				"Immutable Form",
+				"The gearkeeper is immune to any spell or effect that would alter its form.",
+				"Rapid Shifting",
+				"Opportunity attacks made against the gearkeeper have disadvantage.",
+				"Whirling Blades",
+				"Any creature that starts its turn within 5 feet of the gearkeeper takes 4 ({@damage 1d8}) slashing damage.",
+				"Multiattack",
+				"The gearkeeper makes two Arm Blade attacks, or one Arm Blade attack and one Spear Launcher attack.",
+				"Arm Blade",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) slashing damage.",
+				"Spear Launcher",
+				"{@atk rw} {@hit 9} to hit, range 90 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage, and the target is knocked {@condition prone}.",
+				"Shrapnel Blast {@recharge}",
+				"The gearkeeper jettisons a spray of jagged metal in a 30-foot cone. Each creature in the area must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) piercing damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gloomstalker|EGW",
+			"hint": {
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Gloomstalker",
+				"natural armor",
+				"Shadowstep",
+				"As a bonus action, the gloomstalker can teleport up to 40 feet to an unoccupied space it can see.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the gloomstalker has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Multiattack",
+				"The gloomstalker makes two attacks: one with its bite and one with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}15 ({@damage 2d8 + 6}) piercing damage plus 7 ({@damage 2d6}) necrotic damage.",
+				"Claws",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage plus 7 ({@damage 2d6}) necrotic damage.",
+				"Snatch",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one Medium or smaller creature. {@h}13 ({@damage 2d6 + 6}) slashing damage plus 7 ({@damage 2d6}) necrotic damage, and the target is {@condition grappled} (escape {@dc 17}). While {@condition grappled} in this way, the target is {@condition restrained}.",
+				"Shriek {@recharge}",
+				"The gloomstalker emits a terrible shriek. Each enemy within 60 feet of the gloomstalker that can hear it must succeed on a {@dc 13} Constitution saving throw or be {@condition paralyzed} until the end of the enemy's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Guardian Wolf|EGW",
+			"hint": {
+				"Keen Hearing and Smell": "敏銳聽覺與嗅覺",
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Guardian Wolf",
+				"natural armor",
+				"Keen Hearing and Smell",
+				"The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell.",
+				"Pack Tactics",
+				"The wolf has advantage on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The wolf makes two attacks: one with its bite and one with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 6}) piercing damage. If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}.",
+				"Claws",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Horizonback Tortoise|EGW",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Horizonback Tortoise",
+				"natural armor",
+				"while in its shell",
+				"Amphibious",
+				"The tortoise can breathe air and water.",
+				"Massive Frame",
+				"The tortoise can carry up to 20,000 pounds of weight atop its shell, but moves at half speed if the weight exceeds 10,000 pounds. Medium or smaller creatures can move underneath the tortoise while it's not {@condition prone}.",
+				"Any creature under the tortoise when it falls {@condition prone} is {@condition grappled} (escape {@dc 18}). Until the grapple ends, the creature is {@condition prone} and {@condition restrained}.",
+				"Bite",
+				"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}28 ({@damage 3d12 + 9}) bludgeoning damage.",
+				"Shell Defense {@recharge 4}",
+				"The tortoise withdraws into its shell, falls {@condition prone}, and gains a +5 bonus to AC. While the tortoise is in its shell, its speed is 0 and can't increase. The tortoise can emerge from its shell as an action, whereupon it is no longer {@condition prone}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hulil Lutan|EGW",
+			"s": [
+				"Hulil Lutan"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Husk Zombie|EGW",
+			"hint": {
+				"Undead Fortitude": "不死堅韌",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Husk Zombie",
+				"Curse of the Husk",
+				"A humanoid slain by a melee attack from the zombie revives as a husk zombie on its next turn.",
+				"Undead Fortitude",
+				"If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.",
+				"Multiattack",
+				"The zombie makes two claw attacks. For each of these attacks that reduces a creature to 0 hit points, the zombie can make an additional claw attack.",
+				"Claw",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage.",
+				"Husk Zombie Bursters",
+				"Some husk zombies become bloated with disease and bile, their frenzied state pushing them to rush other living creatures, explode, and spread their horrid infection. A husk zombie burster has the following additional action option:",
+				"Burst",
+				"The zombie explodes and is destroyed. Each creature within 5 feet of it must make a {@dc 12} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one. A humanoid creature killed by this damage rises as a {@creature husk zombie|EGW} after 1 minute."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ishel|EGW",
+			"s": [
+				"Ishel"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Karkethzerethzerus, the Sable Despoiler|EGW",
+			"s": [
+				"Karkethzerethzerus, the Sable Despoiler"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kobold Underling|EGW",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Sunlight Sensitivity": "日光敏感",
+				"Shortsword": "短劍",
+				"Hand Crossbow": "手弩"
+			},
+			"s": [
+				"Kobold Underling",
+				"Messy End",
+				"The kobold explodes 3 rounds after it dies, or immediately if it was killed by a critical hit. The explosion destroys the kobold's body, leaving its equipment behind. Each creature within 5 feet of the exploding kobold must make a {@dc 10} Dexterity saving throw, taking 4 ({@damage 1d8}) bludgeoning damage on a failed save, or half as much damage on a successful one.",
+				"Pack Tactics",
+				"The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Shortsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+				"Hand Crossbow",
+				"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Merrow Shallowpriest|EGW",
+			"hint": {
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Harpoon": "魚叉"
+			},
+			"s": [
+				"Merrow Shallowpriest",
+				"natural armor",
+				"Spellcasting",
+				"The merrow is a 6th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The merrow has the following druid spells prepared:",
+				"Amphibious",
+				"The merrow can breathe air and water.",
+				"Harpoon",
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. If the target is a Medium or smaller creature, the merrow can pull it 10 feet closer.",
+				"Lightning Bolt (3rd-Level Spell; Requires a Spell Slot)",
+				"The merrow unleashes a stroke of lightning in a line 100 feet long and 5 feet wide. Each creature in the line must make a {@dc 13} Dexterity saving throw, taking 28 ({@damage 8d6}) lightning damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Moorbounder|EGW",
+			"hint": {
+				"Moorbounder": "荒原奔獸",
+				"Standing Leap": "立定跳躍",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Moorbounder",
+				"natural armor",
+				"Standing Leap",
+				"The moorbounder's long jump is up to 40 feet and its high jump is up to 20 feet, with or without a running start.",
+				"Claws",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d4 + 4}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mossback Steward|EGW",
+			"hint": {
+				"Innate Spellcasting": "天生施法"
+			},
+			"s": [
+				"Mossback Steward",
+				"Innate Spellcasting",
+				"Mossback Steward's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no material components."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nergaliid|EGW",
+			"hint": {
+				"Shadow Stealth": "暗影潛行",
+				"Standing Leap": "立定跳躍",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Nergaliid",
+				"natural armor",
+				"Shadow Stealth",
+				"While in dim light or darkness, the nergaliid can take the {@action Hide} action as a bonus action.",
+				"Standing Leap",
+				"The nergaliid's long jump is up to 30 feet and its high jump is up to 20 feet, with or without a running start.",
+				"Bite",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}13 ({@damage 2d8 + 4}) piercing damage, and the target must succeed on a {@dc 15} Constitution saving throw or become {@condition poisoned} for 1 minute. The {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Tongue Lash",
+				"{@atk mw} {@hit 6} to hit, reach 20 ft., one target. {@h}10 ({@damage 1d12 + 4}) bludgeoning damage.",
+				"Siphon Life {@recharge 4}",
+				"The nergaliid magically draws the life from a humanoid it can see within 40 feet of it. The target must make a {@dc 15} Wisdom saving throw. An {@condition incapacitated} target fails the save automatically. On a failed save, the creature takes 10 ({@damage 3d6}) psychic damage, and the nergaliid gains temporary hit points equal to the damage taken. On a successful save, the target takes half as much damage, and the nergaliid doesn't gain temporary hit points. If this damage kills the target, its body rises at the end of the nergaliid's current turn as a {@creature husk zombie|EGW} (see earlier in this chapter)."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ogre Lord Buhfal II|EGW",
+			"s": [
+				"Ogre Lord Buhfal II"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Old Croaker|EGW",
+			"s": [
+				"Old Croaker"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Oracs the Enduring|EGW",
+			"s": [
+				"Oracs the Enduring"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Parson Pellinost|EGW",
+			"hint": {
+				"Spellcasting": "施法"
+			},
+			"s": [
+				"Parson Pellinost",
+				"Spellcasting",
+				"Pellinost is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). Pellinost has the following cleric spells prepared:"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Raegrin Mau|EGW",
+			"s": [
+				"Raegrin Mau"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sahuagin Warlock of Uk'otoa|EGW",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Blood Frenzy": "血腥狂亂",
+				"Limited Amphibiousness": "有限兩棲",
+				"Shark Telepathy": "鯊魚心靈感應",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Rod of Retribution": "報復權杖"
+			},
+			"s": [
+				"Sahuagin Warlock of Uk'otoa",
+				"natural armor",
+				"Innate Spellcasting",
+				"The warlock's innate spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
+				"Blood Frenzy",
+				"The warlock has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+				"Limited Amphibiousness",
+				"The warlock can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating.",
+				"Shark Telepathy",
+				"The warlock can magically command any shark within 120 feet of it, using a limited telepathy.",
+				"Multiattack",
+				"The warlock makes two attacks: one with its bite and one with its Sword of Fathoms.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage.",
+				"Sword of Fathoms",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) slashing damage, and if the target is a creature, it must succeed on a {@dc 13} Constitution saving throw or begin choking. The choking creature is {@condition incapacitated} until the end of its next turn, when the effect ends on it.",
+				"Eldritch Blast (Cantrip)",
+				"{@atk rs} {@hit 5} to hit, range 120 ft., one creature. {@h}5 ({@damage 1d10}) force damage.",
+				"Rod of Retribution",
+				"Sahuagin warlocks of Uk'otoa who have exceptional potential in the eyes of the leviathan lord are granted a {@item rod of retribution|egw} in addition to Uk'otoa's typical blessing, the Sword of Fathoms. A sahuagin warlock of Uk'otoa holding this rod gains the following reaction:",
+				"Retribution (3/Day)",
+				"When a creature the warlock can see within 60 feet of it damages the warlock, the creature must make a {@dc 13} Dexterity saving throw, taking 11 ({@damage 2d10}) lightning damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sea Fury|EGW",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Amphibious": "兩棲",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Sea Fury",
+				"natural armor",
+				"Innate Spellcasting",
+				"The sea fury's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
+				"Amphibious",
+				"The sea fury can breathe air and water.",
+				"Legendary Resistance (3/Day)",
+				"If the sea fury fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The sea fury has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The sea fury makes two attacks with its claws.",
+				"Claws",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage.",
+				"Death Glare",
+				"The sea fury targets one {@condition frightened} creature it can see within 30 feet of it. The target must succeed on a {@dc 16} Wisdom saving throw or drop to 0 hit points.",
+				"As Water",
+				"The sea fury transforms into a wave of foaming seawater, along with whatever it is wearing or carrying, and moves up to its speed without provoking opportunity attacks. While in this form, it can't be {@condition grappled} or {@condition restrained}. It reverts to its true form at the end of this movement.",
+				"Fearsome Apparition (Costs 2 Actions)",
+				"The sea fury conjures an apparition of one of its dead sisters, which appears in an unoccupied space the sea fury can see within 30 feet of it. Enemies of the sea fury that can see the apparition must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} of it until it vanishes at the end of the sea fury's next turn.",
+				"Conjure Snakes (Costs 3 Actions)",
+				"The sea fury disgorges a {@creature swarm of poisonous snakes}, which occupies the same space as the sea fury, acts on its own initiative count, and attacks as directed by the sea fury. The sea fury can control up to three of these swarms at a time.",
+				"Sea Fury"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shadowghast|EGW",
+			"hint": {
+				"Stench": "惡臭",
+				"Shadow Stealth": "暗影潛行",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Shadowghast",
+				"Stench",
+				"Any creature that starts its turn within 5 feet of the shadowghast must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} until the start of its next turn. On a successful saving throw, the creature is immune to this Stench for 24 hours.",
+				"Shadow Stealth",
+				"While in dim light or darkness, the shadowghast can take the {@action Hide} action as a bonus action.",
+				"Multiattack",
+				"The shadowghast makes two attacks: one with its bite and one with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}11 ({@damage 2d8 + 2}) slashing damage plus 5 ({@damage 1d10}) necrotic damage.",
+				"Claws",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage. If the target is a creature other than an undead, it must succeed on a {@dc 12} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sharkbody Abomination|EGW",
+			"s": [
+				"Sharkbody Abomination"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sken Zabriss|EGW",
+			"hint": {
+				"Powerful Build": "強健體格",
+				"Special Equipment": "特殊裝備",
+				"Longsword": "長劍"
+			},
+			"s": [
+				"Sken Zabriss",
+				"Powerful Build",
+				"Sken counts as one size larger when determining her carrying capacity and the weight she can push, drag, or lift.",
+				"Special Equipment",
+				"Sken wears a {@item ring of obscuring|EGW}. With it, she can cast the {@spell fog cloud} spell centered on herself three times per day. The cloud lasts for 1 minute (no {@status concentration} required).",
+				"Longsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage when used with two hands.",
+				"Stone's Endurance (Recharges after a Short or Long Rest)",
+				"When Sken takes damage, she can use her reaction to reduce the damage taken by 8 ({@dice 1d12 + 2})."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skr'a S'orsk|EGW",
+			"hint": {
+				"Spellcasting (Lizardfolk Form Only)": "施法（僅限蜥蜴人形態）"
+			},
+			"s": [
+				"Skr'a S'orsk",
+				"Spellcasting (Lizardfolk Form Only)",
+				"Skr'a S'orsk is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). Skr'a S'orsk has the following druid spells prepared:"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Undead Snakes|EGW",
+			"s": [
+				"Swarm of Undead Snakes"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swavain Basilisk|EGW",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Swavain Basilisk",
+				"natural armor",
+				"Amphibious",
+				"The basilisk can breathe air and water.",
+				"Petrifying Secretions",
+				"A creature must make a {@dc 13} Constitution saving throw if it hits the basilisk with a weapon attack while within 5 feet of it or if it starts its turn {@condition grappled} by the basilisk. Unless the save succeeds, the creature magically begins to turn to stone and is {@condition restrained}, and it must repeat the saving throw at the end of its next turn. On a successful save, the effect ends. On a failure, the creature is {@condition petrified}.",
+				"Multiattack",
+				"The basilisk makes two attacks: one with its bite and one with its tail.",
+				"Bite",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}13 ({@damage 3d6 + 3}) piercing damage plus 10 ({@damage 3d6}) poison damage.",
+				"Tail",
+				"{@atk mw} {@hit 6} to hit, reach 15 ft., one target. {@h}14 ({@damage 2d10 + 3}) bludgeoning damage. If the target is a Large or smaller creature, it is {@condition grappled} (escape {@dc 12})."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Three Earrings|EGW",
+			"s": [
+				"Three Earrings"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Udaak|EGW",
+			"hint": {
+				"Charge": "衝鋒",
+				"Siege Monster": "攻城怪獸",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Slam": "猛擊",
+				"Swallow": "吞嚥"
+			},
+			"s": [
+				"Udaak",
+				"natural armor",
+				"Charge",
+				"If the udaak moves at least 20 feet straight toward a target and then hits it with a slam attack on the same turn, the target takes an extra 27 ({@damage 6d8}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be pushed up to 20 feet away from the udaak and knocked {@condition prone}.",
+				"Siege Monster",
+				"The udaak deals double damage to objects and structures.",
+				"Multiattack",
+				"The udaak makes three attacks: one with its bite and two with its slam.",
+				"Bite",
+				"{@atk mw} {@hit 13} to hit, reach 5 ft., one creature. {@h}21 ({@damage 2d12 + 8}) piercing damage, and the target is {@condition grappled} (escape {@dc 21}). Until this grapple ends, the target is {@condition restrained}, and the udaak can't bite another target.",
+				"Slam",
+				"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d8 + 8}) bludgeoning damage.",
+				"Swallow",
+				"The udaak makes one bite attack against a Large or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. A swallowed creature is {@condition blinded} and {@condition restrained}, it has {@quickref Cover||3||total cover} against attacks and other effects outside the udaak, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the udaak's turns.",
+				"If the udaak takes 30 damage or more on a single turn from a creature inside it, the udaak must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the udaak. If the udaak dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vox Seeker|EGW",
+			"hint": {
+				"Vox Seeker": "聲音搜尋者",
+				"Spider Climb": "蛛行",
+				"Pincer": "鉗擊"
+			},
+			"s": [
+				"Vox Seeker",
+				"natural armor",
+				"Voice Lock",
+				"The vox seeker must move toward and attack the source of the nearest voice within 60 feet of it, to the exclusion of all other targets, for as long as it remains operational.",
+				"Spider Climb",
+				"The vox seeker can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Pincer",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage plus 3 lightning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yinra Emberwind|EGW",
+			"hint": {
+				"Fey Ancestry": "妖精血統",
+				"Keen Hearing and Sight": "敏銳聽覺與視覺",
+				"Shortsword": "短劍",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Yinra Emberwind",
+				"Fey Ancestry",
+				"Yinra has advantage on saving throws against being {@condition charmed}, and magic can't put her to sleep.",
+				"Keen Hearing and Sight",
+				"Yinra has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight.",
+				"Shortsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+				"Longbow",
+				"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+			]
+		}
+	]
+}
