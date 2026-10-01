@@ -1,0 +1,1377 @@
+{
+	"batch": "mot-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Abhorrent Overlord|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Abhorrent Overlord",
+				"natural armor",
+				"Innate Spellcasting",
+				"The abhorrent overlord's spellcasting ability is Charisma (spell save {@dc 15}). It can innately cast the following spells, requiring no material components:",
+				"Insatiable Greed",
+				"The abhorrent overlord can sense the presence of gold within 1,000 feet of itself. It can determine which location has the greatest amount of gold and can sense the direction to that site. If the gold is being moved, it knows the direction of the movement. It can't locate gold if any thickness of clay or lead, even a thin sheet, blocks a direct path between it and the gold.",
+				"Magic Resistance",
+				"The abhorrent overlord has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The abhorrent overlord makes two attacks with its claws.",
+				"Claws",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage plus 14 ({@damage 4d6}) necrotic damage. The abhorrent overlord regains hit points equal to half the amount of necrotic damage dealt if the target is a creature.",
+				"Storm of Crows {@recharge}",
+				"The abhorrent overlord conjures a swarm of spectral crows and harpies in a 20-foot-radius sphere centered on a point the overlord can see within 120 feet of it. The sphere remains for 1 minute or until the overlord loses {@status concentration} (as if {@status concentration||concentrating} on a spell), and its area is lightly obscured and {@quickref difficult terrain||3}.",
+				"Any creature that moves into the area for the first time on a turn or starts its turn there must make a {@dc 15} Constitution saving throw. A creature takes 16 ({@damage 3d10}) slashing damage plus 16 ({@damage 3d10}) psychic damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Akroan Hoplite|MOT",
+			"hint": {
+				"Hold the Line": "堅守戰線",
+				"Multiattack": "多重攻擊",
+				"Spear": "矛",
+				"Shield Bash": "盾擊"
+			},
+			"s": [
+				"Akroan Hoplite",
+				"Hold the Line",
+				"While the hoplite is holding a spear, other creatures provoke an opportunity attack from the hoplite when they move within 5 feet of it. When the hoplite hits a creature with an opportunity attack using its spear, the creature takes an extra 4 ({@damage 1d8}) piercing damage, and the creature's speed becomes 0 for the rest of the turn.",
+				"Multiattack",
+				"The hoplite makes three melee attacks or two ranged attacks.",
+				"Spear",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft., or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 7 ({@damage 1d8 + 3}) piercing damage if used with two hands to make a melee attack.",
+				"Shield Bash",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Alseid|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Hide in Plain Sight": "避人耳目",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Alseid",
+				"natural armor",
+				"Innate Spellcasting",
+				"The alseid's spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring no material components:",
+				"Hide in Plain Sight",
+				"The alseid has advantage on Dexterity ({@skill Stealth}) checks made to hide while it is in grassland.",
+				"Magic Resistance",
+				"The alseid has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The alseid makes two radiant touch attacks.",
+				"Radiant Touch",
+				"{@atk ms} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) radiant damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Anvilwrought Raptor|MOT",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Beak": "啄擊",
+				"Familiar": "魔寵"
+			},
+			"s": [
+				"Anvilwrought Raptor",
+				"natural armor",
+				"Keen Sight",
+				"The raptor has advantage on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Recorded Mimicry",
+				"The raptor can mimic any sound, including voices, it has heard in the last 24 hours. A creature that hears the sounds can tell they are imitations with a successful {@dc 12} Wisdom ({@skill Insight}) check.",
+				"Multiattack",
+				"The raptor makes two attacks with its beak.",
+				"Beak",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage.",
+				"Anvilwrought Raptor Familiar",
+				"Some anvilwrought raptors are created expressly to be familiars. Such creatures have the following trait.",
+				"Familiar",
+				"The anvilwrought can serve another creature as a familiar, forming a magical, telepathic bond with its willing master. While the two are bonded, the master can sense what the anvilwrought senses, as long as they are within 1 mile of each other."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aphemia|MOT",
+			"hint": {
+				"Legendary Resistance (2/Day)": "傳奇抗性（每日 2 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Aphemia",
+				"natural armor",
+				"Legendary Resistance (2/Day)",
+				"If Aphemia fails a saving throw, she can choose to succeed instead.",
+				"Magic Resistance",
+				"Aphemia has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"Aphemia makes two attacks: one with her bite and one with her claws.",
+				"Bite",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage plus 13 ({@damage 3d8}) necrotic damage.",
+				"Claws",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage.",
+				"Discordant Song",
+				"Aphemia shrieks a cacophony of magical sounds. Each humanoid within 120 feet of her must succeed on a {@dc 14} Wisdom saving throw or be {@condition frightened} of her until the song ends. A {@condition frightened} creature takes 7 ({@damage 2d6}) psychic damage at the start of its turn while Aphemia is singing. A {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Aphemia's Discordant Song for the next 24 hours. Aphemia must take a bonus action on her subsequent turns to continue singing. She can stop singing at any time. The song ends if Aphemia is {@condition incapacitated} or dies.",
+				"Grave Calling Song",
+				"Aphemia intones a low, growling magical melody. Every undead within 300 feet of her must succeed on a {@dc 14} Wisdom saving throw or fall under her control until the song ends. Aphemia must take a bonus action on her subsequent turns to continue singing, and she can mentally command the undead under her control as part of the same bonus action. She can stop singing at any time. The song ends if Aphemia is {@condition incapacitated} or dies."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Arasta|MOT",
+			"hint": {
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Spider Climb": "蛛行",
+				"Web Walker": "蛛網行者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊",
+				"Swipe": "揮擊"
+			},
+			"s": [
+				"Arasta",
+				"natural armor",
+				"Armor of Spiders (Mythic Trait; Recharges after a Short or Long Rest)",
+				"If Arasta is reduced to 0 hit points, she doesn't die or fall {@condition unconscious}. Instead, she regains 200 hit points. In addition, Arasta's children immediately swarm over her body to protect her, granting her 100 temporary hit points.",
+				"Legendary Resistance (3/Day)",
+				"If Arasta fails a saving throw, she can choose to succeed instead.",
+				"Magic Resistance",
+				"Arasta has advantage on saving throws against spells and other magical effects.",
+				"Spider Climb",
+				"Arasta can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Web Walker",
+				"Arasta ignores movement restrictions caused by webbing.",
+				"Multiattack",
+				"Arasta makes three attacks: one with her bite and two with her claws.",
+				"Bite",
+				"{@atk mw} {@hit 14} to hit, reach 5 ft., one creature. {@h}20 ({@damage 3d8 + 7}) piercing damage, and the target must make a {@dc 21} Constitution saving throw, taking 32 ({@damage 5d12}) poison damage on a failed save, or half as much damage on a successful one. If the damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way.",
+				"Claws",
+				"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d6 + 7}) slashing damage.",
+				"Web of Hair {@recharge 4}",
+				"Arasta unleashes her hair in the form of webbing that fills a 30-foot cube next to her. The web is {@quickref difficult terrain||3}, its area is lightly obscured, and it lasts for 1 minute. Any creature that moves into the web or that starts its turn there must make a {@dc 21} Dexterity saving throw. On a failed save, the creature is {@condition restrained} while in the web. A creature can use an action to make a {@dc 21} Strength check. On a success, it can free itself or a creature within 5 feet of it that is {@condition restrained} by the web. This webbing is immune to all damage except magical fire. A 5-foot cube of the web is destroyed if it takes at least 20 fire damage from a spell or other magical source on a single turn.",
+				"Claws",
+				"Arasta makes one attack with her claws.",
+				"Swarm (Costs 2 Actions)",
+				"Arasta causes two {@creature swarm of spiders||swarms of spiders} to appear in unoccupied spaces within 5 feet of her.",
+				"Toxic Web (Costs 3 Actions)",
+				"Each creature {@condition restrained} by Arasta's Web of Hair takes 18 ({@damage 4d8}) poison damage.",
+				"If Arasta's mythic trait is active, she can use the options below as legendary actions, as long as she has temporary hit points from her Armor of Spiders.",
+				"Swipe",
+				"Arasta makes two attacks with her claws.",
+				"Web of Hair (Costs 2 Actions)",
+				"Arasta recharges Web of Hair and uses it.",
+				"Nyx Weave (Costs 2 Actions)",
+				"Each creature {@condition restrained} by Arasta's Web of Hair must succeed on a {@dc 21} Constitution saving throw, or the creature takes 26 ({@damage 4d12}) force damage and any spell of 6th level or lower on it ends.",
+				"Arasta"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Archon of Falling Stars|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Resistance": "魔法抗性",
+				"Mount": "坐騎",
+				"Multiattack": "多重攻擊",
+				"Attack": "攻擊"
+			},
+			"s": [
+				"Archon of Falling Stars",
+				"Innate Spellcasting",
+				"The archon's spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The archon can innately cast the following spells, requiring no material components:",
+				"Magic Resistance",
+				"The archon has advantage on saving throws against spells and other magical effects.",
+				"Mount",
+				"If the archon isn't mounted, it can use a bonus action to magically teleport onto the creature serving as its mount, provided the archon and its mount are on the same plane of existence. When it teleports, the archon appears astride the mount, along with any equipment it is wearing or carrying. While mounted and not {@condition incapacitated}, the archon can't be {@status surprised}, and both it and its mount have advantage on Dexterity saving throws. If the archon is reduced to 0 hit points while riding its mount, the mount is reduced to 0 hit points as well.",
+				"Radiant Rebirth (Recharges after a Long Rest)",
+				"If the archon is reduced to 0 hit points, it regains 30 hit points and springs back to its feet with a burst of radiance. Each creature of the archon's choice within 30 feet of it must succeed on a {@dc 16} Constitution saving throw, or the creature takes 13 ({@damage 3d8}) radiant damage and is {@condition blinded} until the start of the archon's turn.",
+				"Multiattack",
+				"The archon makes two attacks with its radiant spear.",
+				"Radiant Spear",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 10 ({@damage 3d6}) radiant damage.",
+				"Attack",
+				"The archon makes a radiant spear attack or casts {@spell guiding bolt}.",
+				"Coordinated Assault (Costs 2 Actions)",
+				"The archon makes a radiant spear attack, and then its mount can use its reaction to make a melee weapon attack.",
+				"Return to Nyx (Costs 3 Actions)",
+				"The archon causes a corpse it can see within 30 feet of it to burst into a shower of radiant stars leaving no trace of it behind. Everything it is wearing or carrying remains. Each creature within 10 feet of the corpse when it bursts must succeed on a {@dc 16} Dexterity saving throw or take 22 ({@damage 4d10}) radiant damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashen Rider|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Mount": "坐騎",
+				"Multiattack": "多重攻擊",
+				"Attack": "攻擊"
+			},
+			"s": [
+				"Ashen Rider",
+				"Innate Spellcasting",
+				"The ashen rider's spellcasting ability is Wisdom (spell save {@dc 18}). The rider can innately cast the following spells, requiring no material components:",
+				"Aura of Silence",
+				"When a creature starts its turn within 30 feet of the ashen rider, the rider can force that creature to make a {@dc 18} Wisdom saving throw if the rider can see it. On a successful save, the creature is immune to this aura for the next 24 hours. On a failed save, the creature can't speak and is {@condition deafened} until the start of its next turn.",
+				"Mount",
+				"If the ashen rider isn't mounted, it can use a bonus action to magically teleport onto the creature serving as its mount, provided the ashen rider and its mount are on the same plane of existence. When it teleports, the ashen rider appears astride the mount along with any equipment it is wearing or carrying.",
+				"While mounted and not {@condition incapacitated}, the ashen rider can't be {@status surprised}, and both it and its mount have advantage on Dexterity saving throws. If the ashen rider is reduced to 0 hit points while riding its mount, the mount is reduced to 0 hit points as well.",
+				"Multiattack",
+				"The ashen rider makes three attacks with its ashen blade or two attacks with its bolt of ash.",
+				"Ashen Blade",
+				"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage plus 13 ({@damage 2d12}) radiant damage.",
+				"Bolt of Ash",
+				"{@atk rs} {@hit 10} to hit, range 120 ft., one creature. {@h}22 ({@damage 4d10}) necrotic damage, and the target can't regain hit points until the start of the ashen rider's next turn.",
+				"Attack",
+				"The ashen rider makes an attack using its ashen blade or bolt of ash.",
+				"Coordinated Assault (Costs 2 Actions)",
+				"The ashen rider makes an attack using its ashen blade or bolt of ash, and then its mount can use its reaction to make a melee weapon attack.",
+				"Reduce to Ash (Costs 3 Actions)",
+				"The ashen rider targets a creature it can see within 60 feet of it. The target must succeed on a {@dc 18} Constitution saving throw, or it takes 27 ({@damage 5d10}) necrotic damage and its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest. If the target's hit point maximum is reduced to 0, its body and everything it is wearing and carrying, except for magic items, are reduced to ash. A creature reduced to ash can't be revived by any means short of a {@spell wish} spell."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blood-Toll Harpy|MOT",
+			"hint": {
+				"Blood Frenzy": "血腥狂亂",
+				"Dark Devotion": "黑暗奉獻",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Blood-Toll Harpy",
+				"Blood Frenzy",
+				"The harpy has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+				"Dark Devotion",
+				"The harpy has advantage on saving throws against being {@condition charmed} or {@condition frightened}.",
+				"Multiattack",
+				"The harpy makes two melee attacks: one with its bite and one with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage.",
+				"Claws",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Broken King Antigonos|MOT",
+			"hint": {
+				"Charge": "衝鋒",
+				"Labyrinthine Recall": "迷宮記憶",
+				"Reckless": "魯莽",
+				"Greataxe": "巨斧",
+				"Gore": "頂撞"
+			},
+			"s": [
+				"Broken King Antigonos",
+				"natural armor",
+				"Charge",
+				"If Antigonos moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ({@damage 2d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}.",
+				"Labyrinthine Recall",
+				"Antigonos can perfectly recall any path he has traveled.",
+				"Reckless",
+				"At the start of his turn, Antigonos can gain advantage on all melee weapon attack rolls he makes during that turn, but attack rolls against him have advantage until the start of his next turn.",
+				"Decrepit State",
+				"Antigonos has disadvantage on his attack rolls.",
+				"Greataxe",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d12 + 4}) slashing damage.",
+				"Gore",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage.",
+				"Amphora",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one Medium or smaller creature. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. If there is not already a creature inside the amphora, the target is {@condition restrained} inside. As an action, the {@condition restrained} creature can make a {@dc 14} Dexterity ({@skill Acrobatics}) check, escaping from the amphora on a success. The effect also ends if the amphora is destroyed. The amphora has AC 8, 20 hit points, and immunity to poison and psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bronze Sable|MOT",
+			"hint": {
+				"False Appearance": "擬態",
+				"Pack Tactics": "群體戰術",
+				"Surprise Attack": "突襲",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Bronze Sable",
+				"natural armor",
+				"False Appearance",
+				"While the sable remains motionless, it is indistinguishable from a normal statue.",
+				"Pack Tactics",
+				"The sable has advantage on an attack roll against a creature if at least one of the sable's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Surprise Attack",
+				"If the sable surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 ({@damage 3d6}) damage from the attack.",
+				"Multiattack",
+				"The sable makes two bite attacks.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Burnished Hart|MOT",
+			"hint": {
+				"Charge": "衝鋒",
+				"Sure-Footed": "腳步穩健",
+				"Multiattack": "多重攻擊",
+				"Hooves": "蹄擊"
+			},
+			"s": [
+				"Burnished Hart",
+				"natural armor",
+				"Charge",
+				"If the hart moves at least 20 feet straight toward a target and then hits it with an antlers attack on the same turn, the target takes an extra 7 ({@damage 2d6}) fire damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}.",
+				"Heated Body",
+				"A creature that touches the hart or hits it with a melee attack while within 5 feet of it takes 5 ({@damage 1d10}) fire damage.",
+				"Sure-Footed",
+				"The hart has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}.",
+				"Multiattack",
+				"The hart makes two attacks: one with its antlers and one with its hooves.",
+				"Antlers",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage.",
+				"Hooves",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage plus 2 ({@damage 1d4}) fire damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Colossus of Akros|MOT",
+			"hint": {
+				"Fire Absorption": "吸收火焰",
+				"Immutable Form": "不變形態",
+				"Magic Weapons": "魔法武器",
+				"Siege Monster": "攻城怪獸",
+				"Multiattack": "多重攻擊",
+				"Spear": "矛"
+			},
+			"s": [
+				"Colossus of Akros",
+				"natural armor",
+				"Crumbling Destruction",
+				"When the colossus drops to 0 hit points, it crumbles and is destroyed. Any creature on the ground within 30 feet of the crumbling statue must make a {@dc 22} Dexterity saving throw, taking 22 ({@damage 4d10}) bludgeoning damage and 22 ({@damage 4d10}) fire damage on a failed save, or half as much damage on a successful one.",
+				"Fire Absorption",
+				"Whenever the colossus is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt.",
+				"Immutable Form",
+				"The colossus is immune to any spell or effect that would alter its form.",
+				"Magic Weapons",
+				"The colossus's weapon attacks are magical.",
+				"Siege Monster",
+				"The colossus deals double damage to objects and structures.",
+				"Multiattack",
+				"The colossus of Akros makes two melee attacks.",
+				"Spear",
+				"{@atk mw,rw} {@hit 16} to hit, reach 15 ft., or range 200/600 ft., one target. {@h}23 ({@damage 4d6 + 9}) piercing damage, or 27 ({@damage 4d8 + 9}) piercing damage if used with two hands to make a melee attack. If the colossus makes a ranged attack with this spear, the spear magically returns to its hand after the attack.",
+				"Sword",
+				"{@atk mw} {@hit 16} to hit, reach 15 ft., one target. {@h}36 ({@damage 6d8 + 9}) slashing damage.",
+				"Flames of Akros {@recharge}",
+				"Magical flames issue from the colossus toward up to three creatures the colossus can see within 90 feet of it. Each target must make a {@dc 24} Dexterity saving throw, taking 36 ({@damage 8d8}) fire damage on a failed save, or half as much damage on a successful one. On a failed save, a target also magically catches fire for 1 minute. At the end of each of its turns thereafter, the burning target repeats the saving throw. It takes 18 ({@damage 4d8}) fire damage on a failed save, and the effect ends on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Doomwake Giant|MOT",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Doomwake Giant",
+				"natural armor",
+				"Aura of Erebos",
+				"Any creature that starts its turn within 10 feet of the giant must succeed on a {@dc 18} Constitution saving throw, or it takes 10 ({@damage 3d6}) necrotic damage and can't regain hit points until the start of its next turn. On a successful saving throw, the creature is immune to the giant's Aura of Erebos for 24 hours.",
+				"Magic Resistance",
+				"The giant has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The giant makes two slam attacks.",
+				"Slam",
+				"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage plus 10 ({@damage 3d6}) necrotic damage.",
+				"Noxious Gust {@recharge 5}",
+				"The giant exhales a mighty gust that creates a blast of deadly mist in a 60-foot line that is 10 feet wide. Each creature in that line must make a {@dc 18} Constitution saving throw. On a failed save, the creature takes 36 ({@damage 8d8}) necrotic damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Eater of Hope|MOT",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Eater of Hope",
+				"natural armor",
+				"Insatiable Greed",
+				"The eater of hope can sense the presence of gold within 1,000 feet of itself. It can determine which location has the greatest amount of gold and can sense the direction to that site. If the gold is being moved, it knows the direction of the movement. It can't locate gold if any thickness of clay or lead, even a thin sheet, blocks a direct path between it and the gold.",
+				"Magic Resistance",
+				"The eater of hope has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The eater of hope makes two attacks with its claws.",
+				"Claws",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage plus 7 ({@damage 2d6}) necrotic damage.",
+				"Breath of Hopelessness {@recharge 5}",
+				"The eater of hope exhales a miasma of Underworld winds in a 30-foot cone. Each creature in that area must make a {@dc 14} Charisma saving throw. On a failed save, the target takes 26 ({@damage 4d12}) necrotic damage and is cursed for 1 minute. While cursed in this way, the target takes an extra 6 ({@damage 1d12}) necrotic damage whenever the eater of hope hits it with an attack. On a successful save, the target takes half as much damage and isn't cursed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fleecemane Lion|MOT",
+			"hint": {
+				"Keen Smell": "敏銳嗅覺",
+				"Pounce": "撲擊",
+				"Running Leap": "助跑跳躍",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Fleecemane Lion",
+				"natural armor",
+				"Keen Smell",
+				"The lion has advantage on Wisdom ({@skill Perception}) checks that rely on smell.",
+				"Pounce",
+				"If the lion moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the lion can make one bite attack against it as a bonus action.",
+				"Running Leap",
+				"With a 10-foot running start, the lion can long jump up to 25 feet.",
+				"Spell Turning",
+				"The lion has advantage on saving throws against any spell that targets only the lion (not an area). If the lion's saving throw succeeds and the spell is of 4th level or lower, the spell has no effect on the lion and instead targets the caster.",
+				"Multiattack",
+				"The lion makes two attacks: one with its bite and one with its claw.",
+				"Bite",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage.",
+				"Claw",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage.",
+				"Claw",
+				"The lion makes one claw attack.",
+				"Roar (Costs 2 Actions)",
+				"The lion emits a magical roar. Each creature within 60 feet of the lion that can hear the roar must succeed on a {@dc 12} Wisdom saving throw or be {@condition frightened} of the lion until the end of the lion's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Flitterstep Eidolon|MOT",
+			"hint": {
+				"Blurred Form": "模糊形體",
+				"Evasion": "反射閃避",
+				"Incorporeal Movement": "虛體移動",
+				"Turn Resistance": "抗驅散",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Flitterstep Eidolon",
+				"Blurred Form",
+				"Attack rolls against the eidolon are made with disadvantage unless the eidolon is {@condition incapacitated}.",
+				"Evasion",
+				"If the eidolon is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the eidolon instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can't use this trait if it's {@condition incapacitated}.",
+				"Incorporeal Movement",
+				"The eidolon can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object.",
+				"Turn Resistance",
+				"The eidolon has advantage on saving throws against any effect that turns undead.",
+				"Multiattack",
+				"The eidolon makes two melee attacks. Immediately before or after one of its attacks, it can use Flitterstep if it is available.",
+				"Flickering Dagger",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage plus 3 ({@damage 1d6}) psychic damage.",
+				"Flitterstep {@recharge 5}",
+				"The eidolon magically teleports to an unoccupied space it can see within 30 feet of it. If it makes an attack immediately after teleporting, it has advantage on the attack roll."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ghostblade Eidolon|MOT",
+			"hint": {
+				"Blurred Form": "模糊形體",
+				"Incorporeal Movement": "虛體移動",
+				"Turn Resistance": "抗驅散",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Ghostblade Eidolon",
+				"Blurred Form",
+				"Attack rolls against the eidolon are made with disadvantage unless the eidolon is {@condition incapacitated}.",
+				"Incorporeal Movement",
+				"The eidolon can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object.",
+				"Turn Resistance",
+				"The eidolon has advantage on saving throws against any effect that turns undead.",
+				"Multiattack",
+				"The eidolon makes two ghostblade attacks.",
+				"Ghostblade",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 3}) slashing damage plus 11 ({@damage 2d10}) force damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gold-Forged Sentinel|MOT",
+			"hint": {
+				"Charge": "衝鋒",
+				"Multiattack": "多重攻擊",
+				"Ram": "衝撞",
+				"Fire Breath {@recharge 5}": "火焰吐息 {@recharge 5}"
+			},
+			"s": [
+				"Gold-Forged Sentinel",
+				"natural armor",
+				"Charge",
+				"If the sentinel moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 10 ({@damage 3d6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}.",
+				"Spell Turning",
+				"The sentinel has advantage on saving throws against any spell that targets only the sentinel (not an area). If the sentinel's saving throw succeeds and the spell is of 4th level or lower, the spell has no effect on the sentinel and instead targets the caster.",
+				"Multiattack",
+				"The sentinel makes two ram attacks.",
+				"Ram",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage.",
+				"Fire Breath {@recharge 5}",
+				"The sentinel exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 15} Dexterity saving throw, taking 27 ({@damage 6d8}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hippocamp|MOT",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Charge": "衝鋒",
+				"Hooves": "蹄擊",
+				"Ram": "衝撞"
+			},
+			"s": [
+				"Hippocamp",
+				"natural armor",
+				"Amphibious",
+				"The hippocamp can breathe air and water.",
+				"Charge",
+				"If the hippocamp moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@damage 2d6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}.",
+				"Hooves",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage.",
+				"Ram",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hundred-Handed One|MOT",
+			"hint": {
+				"Reactive": "迅速反應",
+				"Vigilant": "警戒",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍",
+				"Rock": "擲石",
+				"Deflect Attack": "偏轉攻擊"
+			},
+			"s": [
+				"Hundred-Handed One",
+				"natural armor",
+				"Reactive",
+				"The giant can take one reaction on every turn in a combat.",
+				"Vigilant",
+				"The giant can't be {@status surprised}.",
+				"Multiattack",
+				"The giant makes four longsword attacks or two rock attacks.",
+				"Longsword",
+				"{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}21 ({@damage 3d8 + 8}) slashing damage.",
+				"Rock",
+				"{@atk rw} {@hit 13} to hit, range 60/240 ft., one target. {@h}30 ({@damage 4d10 + 8}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be knocked {@condition prone}.",
+				"Deflect Attack",
+				"The giant adds 5 to its AC against one weapon attack that would hit it. To do so, the giant must see the attacker and be wielding a melee weapon."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hythonia|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Multiattack": "多重攻擊",
+				"Claws": "爪擊",
+				"Constrict": "纏絞",
+				"Move": "移動"
+			},
+			"s": [
+				"Hythonia",
+				"natural armor",
+				"Innate Spellcasting",
+				"Hythonia's spellcasting ability is Charisma (spell save {@dc 18}). She can innately cast {@spell animate objects} once per day requiring no material components.",
+				"Legendary Resistance (3/Day)",
+				"If Hythonia fails a saving throw, she can choose to succeed instead.",
+				"Petrifying Gaze",
+				"When a creature that can see Hythonia's eyes starts its turn within 30 feet of her, Hythonia can force it to make a {@dc 18} Constitution saving throw if she isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, on a failed save the creature begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the {@spell greater restoration} spell or other magic. Unless {@status surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see Hythonia until the start of its next turn, when it can avert its eyes again. If the creature looks at Hythonia in the meantime, it must immediately make the save. If Hythonia sees herself reflected on a polished surface within 30 feet of her and in an area of bright light, she is affected by her own gaze.",
+				"Shed Skin (Mythic Trait; Recharges after a Short or Long Rest)",
+				"If Hythonia is reduced to 0 hit points, she doesn't die or fall {@condition unconscious}. Instead, she sheds her skin, regains 199 hit points, and moves up to her speed without provoking opportunity attacks.",
+				"Multiattack",
+				"Hythonia makes three attacks: one with her claws, one to constrict, and one with her snaky hair.",
+				"Claws",
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage plus 4 ({@damage 1d8}) poison damage.",
+				"Constrict",
+				"{@atk mw} {@hit 11} to hit, reach 15 ft., one Large or smaller creature. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the target is {@condition restrained} and takes 15 ({@damage 3d6 + 5}) bludgeoning damage at the start of each of its turns, and Hythonia can't constrict another target.",
+				"Snaky Hair",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}31 ({@damage 4d12 + 5}) bludgeoning damage, and Hythonia can pull the target up to 5 feet closer to her if it is a Large or smaller creature.",
+				"Move",
+				"Hythonia moves up to her speed without provoking opportunity attacks.",
+				"Snaky Hair",
+				"Hythonia makes one attack with her snaky hair.",
+				"Petrified Earth (Costs 2 Actions)",
+				"Hythonia causes stone spikes to erupt from the ground in a 30-foot radius centered on her. The area becomes {@quickref difficult terrain||3} until the start of her next turn. Any creature, other than Hythonia, takes 9 ({@damage 2d8}) piercing damage for every 5 feet it moves on those spikes.",
+				"If Hythonia's mythic trait is active, she can use the options below as legendary actions for 1 hour after using Shed Skin.",
+				"Numbing Claws",
+				"Hythonia makes two attacks with her claws. If both attacks hit the same creature, it takes an extra 7 ({@damage 2d6}) poison damage and must succeed on a {@dc 18} Constitution saving throw or become {@condition paralyzed} until the start of her next turn.",
+				"Look at Me (Costs 3 Actions)",
+				"Hythonia can force a sighted creature she has {@condition grappled} to see her eyes and be affected by her gaze.",
+				"Hythonia"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ironscale Hydra|MOT",
+			"hint": {
+				"Hold Breath": "閉氣",
+				"Multiple Heads": "多頭",
+				"Reactive Heads": "反應之頭",
+				"Wakeful": "警醒",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Ironscale Hydra",
+				"natural armor",
+				"Acidic Blood",
+				"When the hydra takes piercing or slashing damage, each creature within 5 feet of the hydra takes 9 ({@damage 2d8}) acid damage.",
+				"Hold Breath",
+				"The hydra can hold its breath for 1 hour.",
+				"Multiple Heads",
+				"The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, or knocked {@condition unconscious}. Whenever the hydra takes 35 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies. At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way.",
+				"Reactive Heads",
+				"For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks.",
+				"Wakeful",
+				"While the hydra sleeps, at least one of its heads is awake.",
+				"Multiattack",
+				"The hydra makes as many bite attacks as it has heads.",
+				"Bite",
+				"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lampad|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Chill Touch (Cantrip)": "顫慄之觸（戲法）"
+			},
+			"s": [
+				"Lampad",
+				"natural armor",
+				"Innate Spellcasting",
+				"The lampad's spellcasting ability is Charisma ({@hit 6} to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
+				"Corpse Stride",
+				"Once on its turn, the lampad can use 10 feet of its movement to step magically into one creature's corpse within its reach and emerge from a second creature's corpse within 60 feet of the first corpse, appearing in an unoccupied space within 5 feet of the second corpse. Both corpses must be Medium or bigger.",
+				"Magic Resistance",
+				"The lampad has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The lampad attacks twice with its necrotic touch or chill touch.",
+				"Necrotic Touch",
+				"{@atk ms} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) necrotic damage.",
+				"Chill Touch (Cantrip)",
+				"{@atk rs} {@hit 6} to hit, range 120 ft., one creature. {@h}9 ({@damage 2d8}) necrotic damage, and the target can't regain hit points until the start of the lampad's next turn. If the target is undead, it has disadvantage on attack rolls against the lampad until the end of the lampad's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Leonin Iconoclast|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Evasion": "反射閃避",
+				"Unarmored Defense": "無甲防禦",
+				"Multiattack": "多重攻擊",
+				"Claws": "爪擊",
+				"Dart": "飛鏢"
+			},
+			"s": [
+				"Leonin Iconoclast",
+				"Unarmored Defense",
+				"Innate Spellcasting",
+				"The leonin's spellcasting ability is Wisdom (spell save {@dc 14}). It can innately cast the following spells, requiring no material components:",
+				"Evasion",
+				"If the leonin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can't use this trait if it's {@condition incapacitated}.",
+				"Unarmored Defense",
+				"While the leonin is wearing no armor and wielding no shield, its AC includes its Wisdom modifier.",
+				"Multiattack",
+				"The leonin makes three weapon attacks.",
+				"Claws",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage plus 7 ({@damage 2d6}) force damage.",
+				"Dart",
+				"{@atk rw} {@hit 7} to hit, range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Medusa|MOT",
+			"hint": {
+				"Medusa": "梅杜莎"
+			},
+			"s": [
+				"Medusa"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Meletian Hoplite|MOT",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Spear": "矛",
+				"Shield Bash": "盾擊"
+			},
+			"s": [
+				"Meletian Hoplite",
+				"Spellcasting",
+				"The hoplite is a 3rd-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following wizard spells prepared:",
+				"Multiattack",
+				"The hoplite makes three weapon attacks. It can replace one weapon attack with ray of frost.",
+				"Spear",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 7 ({@damage 1d8 + 3}) piercing damage if used with two hands to make a melee attack.",
+				"Shield Bash",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}.",
+				"Ray of Frost (Cantrip)",
+				"{@atk rs} {@hit 5} to hit, range 60 ft., one creature. {@h}4 ({@damage 1d8}) cold damage, and the target's speed is reduced by 10 feet until the start of the hoplite's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Naiad|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Amphibious": "兩棲",
+				"Invisible in Water": "水中隱形",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Naiad",
+				"natural armor",
+				"Innate Spellcasting",
+				"The naiad's spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring no material components:",
+				"Amphibious",
+				"The naiad can breathe air and water.",
+				"Invisible in Water",
+				"The naiad is {@condition invisible} while fully immersed in water.",
+				"Magic Resistance",
+				"The naiad has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The naiad makes two psychic touch attacks.",
+				"Psychic Touch",
+				"{@atk ms} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nightmare Shepherd|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Claws": "爪擊",
+				"Staff": "法杖"
+			},
+			"s": [
+				"Nightmare Shepherd",
+				"natural armor",
+				"Innate Spellcasting",
+				"The shepherd's spellcasting ability is Charisma (spell save {@dc 17}). It can innately cast the following spells, requiring no material components:",
+				"Aura of Nightmares",
+				"Undead creatures within 30 feet of the shepherd gain a +5 bonus to attack and damage rolls. When any other creature that isn't undead or a construct starts its turn within 30 feet of the shepherd, that creature must succeed on a {@dc 17} Wisdom saving throw or take 11 ({@damage 2d10}) psychic damage.",
+				"Magic Resistance",
+				"The shepherd has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The shepherd makes two attacks: one with its claws and one with its staff.",
+				"Claws",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage plus 16 ({@damage 3d10}) necrotic damage.",
+				"Staff",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage, or 13 ({@damage 2d8 + 4}) bludgeoning damage if used with two hands, plus 26 ({@damage 4d12}) psychic damage.",
+				"Herd the Underworld (Recharges after a Short or Long Rest)",
+				"The shepherd pulls twisted souls from the Underworld; {@dice 1d6} {@creature shadow||shadows} (without Sunlight Weakness) arise in unoccupied spaces within 20 feet of the shepherd. The shadows act right after the shepherd on the same initiative count and fight until they're destroyed. They disappear when the shepherd dies."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nyx-Fleece Ram|MOT",
+			"hint": {
+				"Charge": "衝鋒",
+				"Magic Resistance": "魔法抗性",
+				"Sure-Footed": "腳步穩健",
+				"Ram": "衝撞"
+			},
+			"s": [
+				"Nyx-Fleece Ram",
+				"natural armor",
+				"Charge",
+				"If the ram moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 ({@damage 2d4}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}.",
+				"Magic Resistance",
+				"The ram has advantage on saving throws against spells and other magical effects.",
+				"Sure-Footed",
+				"The ram has advantage on Strength and Dexterity saving throws against effects that would knock it {@condition prone}.",
+				"Ram",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) bludgeoning damage plus 3 ({@damage 1d6}) force damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Oracle|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法"
+			},
+			"s": [
+				"Oracle",
+				"Blessings Of The Gods",
+				"Innate Spellcasting",
+				"The oracle's spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
+				"Blessings of the Gods",
+				"While the oracle is wearing no armor and wielding no shield, its AC includes its Wisdom modifier. In addition, a creature that hits the oracle with a melee attack while within 5 feet of it takes 9 ({@damage 2d8}) force damage.",
+				"Eldritch Touch",
+				"{@atk ms} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) force damage.",
+				"Divine Insight (3/Day)",
+				"When the oracle or a creature it can see makes an attack roll, a saving throw, or an ability check, the oracle can cause the roll to be made with advantage or disadvantage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Oread|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Oread",
+				"natural armor",
+				"Innate Spellcasting",
+				"The oread's spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
+				"Invisible in Fire",
+				"The oread is {@condition invisible} while fully immersed in fire.",
+				"Magic Resistance",
+				"The oread has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The oread attacks twice with its fiery touch or fire bolt.",
+				"Fiery Touch",
+				"{@atk ms} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) fire damage.",
+				"Fire Bolt (Cantrip)",
+				"{@atk rs} {@hit 6} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) fire damage.",
+				"Hellish Rebuke (2nd-Level Spell; 1/Day)",
+				"When the oread is damaged by a creature within 60 feet of the oread that it can see, the creature that damaged the oread must make a {@dc 14} Dexterity saving throw, taking 16 ({@damage 3d10}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Phylaskia|MOT",
+			"hint": {
+				"Undead Fortitude": "不死堅韌",
+				"Vigilant": "警戒",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍"
+			},
+			"s": [
+				"Phylaskia",
+				"Gatekeeper's Aura",
+				"Any creature that starts its turn within 10 feet of the phylaskia must make a {@dc 15} Wisdom saving throw. On a successful save, the creature is immune to this aura for the next 24 hours. On a failed save, the creature has disadvantage on saving throws and its speed is halved until the start of its next turn.",
+				"Undead Fortitude",
+				"If damage reduces the phylaskia to 0 hit points, it must make a Constitution saving throw with a DC equal to 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the phylaskia drops to 1 hit point instead.",
+				"Vigilant",
+				"The phylaskia can't be {@status surprised}.",
+				"Multiattack",
+				"The phylaskia makes two longsword attacks and uses its Strength Drain once.",
+				"Longsword",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage, or 16 ({@damage 2d10 + 5}) slashing damage if used with two hands, plus 11 ({@damage 2d10}) necrotic damage.",
+				"Strength Drain",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}12 ({@damage 2d6 + 5}) necrotic damage. Unless the target is immune to necrotic damage, its Strength score is reduced by {@dice 1d4}. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Polukranos|MOT",
+			"hint": {
+				"Hold Breath": "閉氣",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Multiple Heads": "多頭",
+				"Reactive Heads": "反應之頭",
+				"Siege Monster": "攻城怪獸",
+				"Wakeful": "警醒",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Stomp": "踐踏",
+				"Tail": "尾擊",
+				"Detect": "偵查",
+				"Tail Swipe": "尾掃"
+			},
+			"s": [
+				"Polukranos",
+				"natural armor",
+				"Acidic Blood",
+				"When Polukranos takes piercing or slashing damage, each creature within 5 feet of Polukranos takes 10 ({@damage 3d6}) acid damage.",
+				"Hold Breath",
+				"Polukranos can hold its breath for 1 hour.",
+				"Legendary Resistance (3/Day)",
+				"If Polukranos fails a saving throw, it can choose to succeed instead.",
+				"Multiple Heads",
+				"Polukranos has five heads. While it has more than one head, Polukranos has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, or knocked {@condition unconscious}. Whenever Polukranos takes 40 or more damage in a single turn, one of its heads dies. If all its heads die, Polukranos dies. At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken 40 or more fire damage since its last turn. Polukranos regains 20 hit points for each head regrown in this way.",
+				"Reactive Heads",
+				"For each head Polukranos has beyond one, it gets an extra reaction that can be used only to make opportunity attacks.",
+				"Siege Monster",
+				"Polukranos deals double damage to objects and structures.",
+				"Wakeful",
+				"While Polukranos sleeps, at least one of its heads is awake.",
+				"Multiattack",
+				"Polukranos makes as many bite attacks as it has heads.",
+				"Bite",
+				"{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage.",
+				"Stomp",
+				"{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}16 ({@damage 2d8 + 7}) bludgeoning damage.",
+				"Tail",
+				"{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}18 ({@damage 2d10 + 7}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be pushed up to 20 feet away from Polukranos.",
+				"Detect",
+				"Polukranos makes a Wisdom ({@skill Perception}) check.",
+				"Tail Swipe",
+				"Polukranos makes a tail attack.",
+				"Trampling Charge (Costs 3 Actions)",
+				"Polukranos moves up to 50 feet in a straight line and can move through the space of any creature Huge or smaller. The first time it enters each creature's space during this move, it can make a stomp attack against that creature."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Returned Drifter|MOT",
+			"hint": {
+				"Turn Resistance": "抗驅散",
+				"Scimitar": "彎刀",
+				"Sling": "投石索"
+			},
+			"s": [
+				"Returned Drifter",
+				"Turn Resistance",
+				"The Returned has advantage on saving throws against any effect that turns undead.",
+				"Unreadable Face",
+				"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom ({@skill Insight}) checks to ascertain the Returned's intentions or sincerity are made with disadvantage.",
+				"Scimitar",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage plus 3 ({@damage 1d6}) poison damage.",
+				"Sling",
+				"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Returned Kakomantis|MOT",
+			"hint": {
+				"Turn Resistance": "抗驅散",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Returned Kakomantis",
+				"natural armor",
+				"Fleeting Anger",
+				"If another creature deals damage to the Returned, the Returned makes attack rolls with advantage until the end of its next turn.",
+				"Turn Resistance",
+				"The Returned has advantage on saving throws against any effect that turns undead.",
+				"Unreadable Face",
+				"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom ({@skill Insight}) checks to ascertain the Returned's intentions or sincerity are made with disadvantage.",
+				"Shortsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 10 ({@damage 3d6}) poison damage.",
+				"Underworld Bolt",
+				"{@atk rs} {@hit 4} to hit, range 120 ft., one creature. {@h}13 ({@damage 2d8 + 2}) necrotic damage, and the target can't regain hit points until the start of the Returned's next turn. If the target is missing any of its hit points, it instead takes 17 ({@damage 2d12 + 2}) necrotic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Returned Palamnite|MOT",
+			"hint": {
+				"Turn Resistance": "抗驅散",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Returned Palamnite",
+				"natural armor",
+				"Fleeting Anger",
+				"If another creature deals damage to the Returned, the Returned makes attack rolls with advantage until the end of its next turn.",
+				"Turn Resistance",
+				"The Returned has advantage on saving throws against any effect that turns undead.",
+				"Unreadable Face",
+				"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom ({@skill Insight}) checks to ascertain the Returned's intentions or sincerity are made with disadvantage.",
+				"Multiattack",
+				"The Returned makes two shortsword attacks.",
+				"Shortsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 10 ({@damage 3d6}) poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Returned Sentry|MOT",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Turn Resistance": "抗驅散",
+				"Spear": "矛",
+				"Sling": "投石索"
+			},
+			"s": [
+				"Returned Sentry",
+				"Pack Tactics",
+				"The Returned has advantage on an attack roll against a creature if at least one of the Returned's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Turn Resistance",
+				"The Returned has advantage on saving throws against any effect that turns undead.",
+				"Unreadable Face",
+				"The Returned is immune to any effect that would sense its emotions or read its thoughts. Wisdom ({@skill Insight}) checks to ascertain the Returned's intentions or sincerity are made with disadvantage.",
+				"Spear",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 7 ({@damage 1d8 + 3}) piercing damage if used with two hands to make a melee attack, plus 7 ({@damage 2d6}) poison damage.",
+				"Sling",
+				"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Satyr Reveler|MOT",
+			"hint": {
+				"Enthralling Performance": "醉人表演",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Ram": "衝撞",
+				"Shortbow": "短弓"
+			},
+			"s": [
+				"Satyr Reveler",
+				"Enthralling Performance",
+				"If the satyr performs for at least 1 minute, it chooses up to four humanoids within 60 feet of it who watched or listened to the entire performance. Each target must succeed on a {@dc 13} Wisdom saving throw or be {@condition charmed}. While {@condition charmed} in this way, the target idolizes the satyr and will take part in the satyr's revels. The {@condition charmed} condition ends for the creature after 1 hour, if it takes any damage, if the satyr attacks the target, or if the target witnesses the satyr attacking or damaging any of the target's allies.",
+				"Magic Resistance",
+				"The satyr has advantage on saving throws against spells and other magical effects.",
+				"Sleepless Reveler",
+				"Magic can't put the satyr to sleep.",
+				"Multiattack",
+				"The satyr makes two ram attacks or two shortbow attacks.",
+				"Ram",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d4 + 1}) bludgeoning damage.",
+				"Shortbow",
+				"{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Satyr Thornbearer|MOT",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Ram": "衝撞",
+				"Shortbow": "短弓"
+			},
+			"s": [
+				"Satyr Thornbearer",
+				"Magic Resistance",
+				"The satyr has advantage on saving throws against spells and other magical effects.",
+				"Sleepless Reveler",
+				"Magic can't put the satyr to sleep.",
+				"Multiattack",
+				"The satyr makes three ram attacks or three shortbow attacks.",
+				"Ram",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d4 + 1}) bludgeoning damage.",
+				"Shortbow",
+				"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage.",
+				"Hail of Arrows (Recharges after a Short or Long Rest)",
+				"The satyr fires an arrow that magically transforms into a flurry of missiles in a 30-foot cone. Each creature in that area must make a {@dc 14} Dexterity saving throw, taking 17 ({@damage 5d6}) piercing damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Setessan Hoplite|MOT",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Scimitar": "彎刀",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Setessan Hoplite",
+				"Pack Tactics",
+				"The hoplite has advantage on an attack roll against a creature if at least one of the hoplite's allies is within 5 feet of the hoplite and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The hoplite makes two scimitar attacks or two longbow attacks.",
+				"Scimitar",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage plus 10 ({@damage 3d6}) poison damage.",
+				"Longbow",
+				"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 10 ({@damage 3d6}) poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Theran Chimera|MOT",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Claws": "爪擊",
+				"Tail": "尾擊",
+				"Breath Weapon {@recharge 5}": "吐息武器 {@recharge 5}"
+			},
+			"s": [
+				"Theran Chimera",
+				"natural armor",
+				"Spell Turning",
+				"The chimera has advantage on a saving throw against any spell that targets only the chimera (not an area). If the chimera's saving throw is successful and the spell is of 4th level or lower, the spell has no effect on the chimera and instead targets the caster.",
+				"Multiattack",
+				"The chimera makes three attacks: one with its claws, one with its head, and one with its tail. When its breath weapon is available, it can use the breath in place of its head or its claws.",
+				"Claws",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage.",
+				"Head",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) piercing damage.",
+				"Tail",
+				"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage.",
+				"Breath Weapon {@recharge 5}",
+				"The chimera exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 15} Dexterity saving throw, taking 32 ({@damage 5d12}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Triton Master of Waves|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Triton Master of Waves",
+				"natural armor",
+				"Innate Spellcasting",
+				"The triton's spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
+				"Amphibious",
+				"The triton can breathe air and water.",
+				"Summon Water Weird (Recharges after a Short or Long Rest)",
+				"As a bonus action, the triton magically summons {@dice 1d4} {@creature water weird||water weirds}. The summoned weirds appear in unoccupied spaces in water within 60 feet of the triton. The water weirds act immediately after the triton on the same initiative count and fight until they're destroyed. They disappear if the triton dies.",
+				"Multiattack",
+				"The triton makes two attacks using Wave Touch and casts {@spell ray of frost}.",
+				"Wave Touch",
+				"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}22 ({@damage 4d10}) cold damage.",
+				"Ray of Frost (Cantrip)",
+				"{@atk rs} {@hit 7} to hit, range 60 ft., one creature. {@h}13 ({@damage 3d8}) cold damage, and the target's speed is reduced by 10 feet until the start of the triton's next turn.",
+				"Frigid Shield",
+				"When a creature the triton can see targets the triton with an attack, the triton gains 10 temporary hit points. If the attack hits and reduces the temporary hit points to 0, each creature within 5 feet of the triton takes 9 ({@damage 2d8}) cold damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Triton Shorestalker|MOT",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Amphibious": "兩棲",
+				"Nimble Escape": "靈巧脫逃",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Triton Shorestalker",
+				"Innate Spellcasting",
+				"The triton's spellcasting ability is Wisdom (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:",
+				"Amphibious",
+				"The triton can breathe air and water.",
+				"Nimble Escape",
+				"The triton can take the {@action Disengage} or {@action Hide} actions as a bonus action on each of its turns.",
+				"Multiattack",
+				"The triton makes two urchin-spine shortsword attacks.",
+				"Urchin-Spine Shortsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 10 ({@damage 3d6}) poison damage. If the damage reduces a creature to 0 hit points, that creature is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way.",
+				"Poisoned Spine",
+				"{@atk rw} {@hit 5} to hit, range 30/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage plus 10 ({@damage 3d6}) poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tromokratis|MOT",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Weapons": "魔法武器",
+				"Siege Monster": "攻城怪獸",
+				"Spell-Resistant Carapace": "抗法甲殼",
+				"Multiattack": "多重攻擊",
+				"Pincer": "鉗擊",
+				"Tail": "尾擊",
+				"Bite": "啃咬",
+				"Move": "移動",
+				"Bite (Costs 3 Actions)": "啃咬（消耗 3 個動作）",
+				"Rampage": "暴走"
+			},
+			"s": [
+				"Tromokratis",
+				"natural armor",
+				"Amphibious",
+				"Tromokratis can breathe air and water.",
+				"Hearts of the Kraken (Mythic Trait; Recharges after a Short or Long Rest)",
+				"When Tromokratis is reduced to 0 hit points, it doesn't die or fall {@condition unconscious}. Instead, the damage creates cracks in its carapace, revealing its hearts. Tromokratis has four hearts: two on its chest, one on its back, and one at the base of its tail. A heart has an AC of 22 and 100 hit points. It is immune to bludgeoning, piercing, and slashing damage from nonmagical attacks, and it is immune to all conditions. If it is forced to make a saving throw, treat its ability scores as 10 (+0). If it finishes a short or long rest, the carapace heals, any destroyed hearts regenerate, and the hearts are covered again. Tromokratis dies when all the hearts are destroyed.",
+				"Legendary Resistance (3/Day)",
+				"If Tromokratis fails a saving throw, it can choose to succeed instead.",
+				"Magic Weapons",
+				"Tromokratis's weapon attacks are magical.",
+				"Siege Monster",
+				"Tromokratis deals double damage to objects and structures.",
+				"Spell-Resistant Carapace",
+				"Tromokratis has advantage on saving throws against spells, and any creature that makes a spell attack against Tromokratis has disadvantage on the attack roll.",
+				"Multiattack",
+				"Tromokratis makes three attacks: one with its pincer, one with its tail, and one with its tentacle grasp.",
+				"Pincer",
+				"{@atk mw} {@hit 18} to hit, reach 20 ft., one target. {@h}20 ({@damage 3d6 + 10}) bludgeoning damage, and if the target is a creature, it is {@condition grappled} (escape {@dc 26}). Until the grapple ends, the target is {@condition restrained}, and Tromokratis can't use this attack on anyone else.",
+				"Tail",
+				"{@atk mw} {@hit 18} to hit, reach 20 ft., one target. {@h}23 ({@damage 3d8 + 10}) bludgeoning damage, and if the target is a creature, it is knocked {@condition prone}.",
+				"Tentacle Grasp",
+				"{@atk mw} {@hit 18} to hit, reach 20 ft., one creature. {@h}20 ({@damage 3d6 + 10}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 26}). If the target doesn't escape by the end of its next turn, Tromokratis throws the target up to 60 feet in a straight line. The target lands {@condition prone} and takes 21 ({@damage 6d6}) bludgeoning damage.",
+				"Bite",
+				"{@atk mw} {@hit 18} to hit, reach 5 ft., one target. {@h}29 ({@damage 3d12 + 10}) piercing damage. If the target is a Large or smaller creature {@condition grappled} by Tromokratis, that creature is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has {@quickref Cover||3||total cover} against attacks and other effects outside Tromokratis, and it takes 42 ({@damage 12d6}) acid damage at the start of each of Tromokratis's turns. If Tromokratis takes 50 damage or more on a single turn from a creature inside it, Tromokratis must succeed on a {@dc 20} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of Tromokratis. If Tromokratis dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 15 feet of movement, exiting {@condition prone}.",
+				"Move",
+				"Tromokratis moves up to half its speed.",
+				"Tail",
+				"Tromokratis makes one tail attack.",
+				"Bite (Costs 3 Actions)",
+				"Tromokratis makes one bite attack.",
+				"If Tromokratis's mythic trait is active, it can use the options below as legendary actions for 1 hour after using Hearts of the Kraken.",
+				"Rampage",
+				"Tromokratis makes two attacks: one with its tail and one with its tentacle grasp.",
+				"Coral Growth (Costs 2 Actions)",
+				"Each creature within 10 feet of Tromokratis must make a {@dc 25} Dexterity saving throw, taking 13 ({@damage 3d8}) slashing damage on a failed save, or half as much damage on a successful one. Until the start of its next turn, Tromokratis and its hearts gain a +2 bonus to AC.",
+				"Tromokratis"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Two-Headed Cerberus|MOT",
+			"hint": {
+				"Aggressive": "兇猛",
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Breath Weapon {@recharge 5}": "吐息武器 {@recharge 5}"
+			},
+			"s": [
+				"Two-Headed Cerberus",
+				"Aggressive",
+				"As a bonus action, the cerberus can move up to its speed toward a hostile creature that it can see.",
+				"Multiheaded",
+				"The cerberus can't be {@status surprised}, and it has advantage on saving throws against being knocked {@condition unconscious}.",
+				"Pack Tactics",
+				"The cerberus has advantage on an attack roll against a creature if at least one of the cerberus's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The cerberus makes two bite attacks.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 2 ({@damage 1d4}) fire damage.",
+				"Breath Weapon {@recharge 5}",
+				"The cerberus exhales a 15-foot cone of molten rock. Each creature in the cone must make a {@dc 12} Dexterity saving throw, taking 10 ({@damage 3d6}) fire damage on a failed save, or half as much damage on a successful one. On a failed save, a creature is also {@condition restrained} by the hardening rock. A creature can make a {@dc 12} Strength ({@skill Athletics}) check as an action, freeing itself or a creature within reach from the rock on a success. The rock has AC 17 and 10 hit points, and it is immune to fire, poison, and psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Typhon|MOT",
+			"hint": {
+				"Keen Smell": "敏銳嗅覺",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊",
+				"Flurry of Bites": "啃咬連擊",
+				"Constrict": "纏絞"
+			},
+			"s": [
+				"Typhon",
+				"natural armor",
+				"Keen Smell",
+				"The typhon has advantage on Wisdom ({@skill Perception}) checks that rely on smell.",
+				"Regeneration",
+				"The typhon regains 20 hit points at the start of its turn. If it takes radiant damage, this trait doesn't function at the start of its next turn. The typhon dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+				"Multiattack",
+				"The typhon makes three attacks: one with its Flurry of Bites, one to constrict, and one with its maw.",
+				"Flurry of Bites",
+				"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}35 ({@damage 8d6 + 7}) piercing damage.",
+				"Constrict",
+				"{@atk mw} {@hit 12} to hit, reach 15 ft., one Large or smaller creature. {@h}17 ({@damage 3d6 + 7}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the target is {@condition restrained} and takes 17 ({@damage 3d6 + 7}) bludgeoning damage at the start of each of its turns. The typhon can have up to two creatures constricted.",
+				"Maw",
+				"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}26 ({@damage 3d12 + 7}) piercing damage plus 19 ({@damage 3d12}) acid damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Underworld Cerberus|MOT",
+			"hint": {
+				"Aggressive": "兇猛",
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Breath Weapon {@recharge 5}": "吐息武器 {@recharge 5}"
+			},
+			"s": [
+				"Underworld Cerberus",
+				"natural armor",
+				"Aggressive",
+				"As a bonus action, the cerberus can move up to its speed toward a hostile creature that it can see.",
+				"Multiheaded",
+				"The cerberus can't be {@status surprised}, and it has advantage on saving throws against being knocked {@condition unconscious}.",
+				"Pack Tactics",
+				"The cerberus has advantage on an attack roll against a creature if at least one of the cerberus's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The cerberus makes three bite attacks.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage plus 3 ({@damage 1d6}) fire damage.",
+				"Breath Weapon {@recharge 5}",
+				"The cerberus exhales a 30-foot cone of molten rock. Each creature in the cone must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much damage on a successful one. On a failed save, a creature is also {@condition restrained} by the hardening rock. A creature can make a {@dc 15} Strength ({@skill Athletics}) check as an action, freeing itself or a creature within reach from the rock on a success. The rock has AC 17 and 20 hit points, and it is immune to fire, poison, and psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Winged Bull|MOT",
+			"hint": {
+				"Charge": "衝鋒",
+				"Gore": "頂撞"
+			},
+			"s": [
+				"Winged Bull",
+				"Charge",
+				"If the bull moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, the target takes an extra 19 ({@damage 3d12}) piercing damage.",
+				"Gore",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Winged Lion|MOT",
+			"hint": {
+				"Pounce": "撲擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Winged Lion",
+				"Pounce",
+				"If the lion moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the lion can make one bite attack against it as a bonus action.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage.",
+				"Claw",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Woe Strider|MOT",
+			"hint": {
+				"Antimagic Cone": "反魔法錐",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Woe Strider",
+				"natural armor",
+				"Antimagic Cone",
+				"The woe strider's open mouth creates an area of antimagic, as in the {@spell antimagic field} spell, in a 60-foot cone. At the start of each of its turns, the woe strider decides which way the cone faces and whether its mouth is open or closed.",
+				"Multiattack",
+				"The woe strider makes two claw attacks and one bite attack. If both claws hit the same creature, the target is {@condition grappled} (escape {@dc 14}).",
+				"Claw",
+				"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage plus 3 ({@damage 1d6}) psychic damage.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature that is {@condition grappled}, {@condition incapacitated}, or {@condition restrained}. {@h}13 ({@damage 2d8 + 4}) piercing damage plus 16 ({@damage 3d10}) psychic damage. In addition, each magic item the creature is carrying that isn't an artifact has its magical properties suppressed for 1 minute."
+			]
+		}
+	]
+}
