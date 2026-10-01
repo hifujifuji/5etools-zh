@@ -1,0 +1,395 @@
+{
+	"batch": "tce-sum",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Aberrant Spirit|TCE",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Aberrant Spirit",
+				"(beholderkin only; hover)",
+				"Regeneration (Slaad Only)",
+				"The aberration regains 5 hit points at the start of its turn if it has at least 1 hit point.",
+				"Whispering Aura (Star Spawn Only)",
+				"At the start of each of the aberration's turns, each creature within 5 feet of the aberration must succeed on a Wisdom saving throw against your spell save DC or take {@damage 2d6} psychic damage, provided that the aberration isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The aberration makes a number of attacks equal to half this spell's level (rounded down).",
+				"Eye Ray (Beholderkin Only)",
+				"{@atk rs} {@hitYourSpellAttack} to hit, range 150 ft., one creature. {@h}{@damage 1d8 + 3 + summonSpellLevel} psychic damage.",
+				"Claws (Slaad Only)",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 3 + summonSpellLevel} slashing damage. If the target is a creature, it can't regain hit points until the start of the aberration's next turn.",
+				"Psychic Slam (Star Spawn Only)",
+				"{@atk ms} {@hitYourSpellAttack} to hit, reach 5 ft., one creature. {@h}{@damage 1d8 + 3 + summonSpellLevel} psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Adult Red Dracolich|TCE",
+			"s": [
+				"Adult Red Dracolich"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Beast of the Land|TCE",
+			"hint": {
+				"Charge": "衝鋒",
+				"Maul": "巨鎚"
+			},
+			"s": [
+				"Beast of the Land",
+				"Charge",
+				"If the beast moves at least 20 feet straight toward a target and then hits it with a maul attack on the same turn, the target takes an extra {@damage 1d6} slashing damage. If the target is a creature, it must succeed on a Strength saving throw against your spell save DC or be knocked {@condition prone}.",
+				"Primal Bond",
+				"You can add your proficiency bonus to any ability check or saving throw that the beast makes.",
+				"Maul",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d8 + 2 + PB} slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Beast of the Sea|TCE",
+			"hint": {
+				"Amphibious": "兩棲"
+			},
+			"s": [
+				"Beast of the Sea",
+				"Amphibious",
+				"The beast can breathe both air and water.",
+				"Primal Bond",
+				"You can add your proficiency bonus to any ability check or saving throw that the beast makes.",
+				"Binding Strike",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d6 + 2 + PB} piercing damage or {@damage 1d6 + 2 + PB} bludgeoning damage (your choice), and the target is {@condition grappled} (escape DC equal to your spellcasting save DC). Until this grapple ends, the beast can't use this attack on another target."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Beast of the Sky|TCE",
+			"hint": {
+				"Flyby": "飛掠",
+				"Shred": "撕裂"
+			},
+			"s": [
+				"Beast of the Sky",
+				"Flyby",
+				"The beast doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
+				"Primal Bond",
+				"You can add your proficiency bonus to any ability check or saving throw that the beast makes.",
+				"Shred",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d4 + 3 + PB} slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bestial Spirit|TCE",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Maul": "巨鎚"
+			},
+			"s": [
+				"Bestial Spirit",
+				"(land only)",
+				"(air only)",
+				"(water only)",
+				"Water Breathing (Water Only)",
+				"The beast can breathe only underwater.",
+				"Flyby (Air Only)",
+				"The beast doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
+				"Pack Tactics (Land and Water Only)",
+				"The beast has advantage on an attack roll against a creature if at least one of the beast's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The beast makes a number of attacks equal to half this spell's level (rounded down).",
+				"Maul",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d8 + 4 + summonSpellLevel} piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Celestial Spirit|TCE",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Healing Touch (1/Day)": "治癒之觸（每日 1 次）"
+			},
+			"s": [
+				"Celestial Spirit",
+				"Multiattack",
+				"The celestial makes a number of attacks equal to half this spell's level (rounded down).",
+				"Radiant Bow (Avenger Only)",
+				"{@atk rw} {@hitYourSpellAttack} to hit, range 150/600 ft., one target. {@h}{@damage 2d6 + 2 + summonSpellLevel} radiant damage.",
+				"Radiant Mace (Defender Only)",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 3 + summonSpellLevel} radiant damage, and the celestial can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains {@dice 1d10} temporary hit points.",
+				"Healing Touch (1/Day)",
+				"The celestial touches another creature. The target magically regains hit points equal to {@dice 2d8 + summonSpellLevel}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Construct Spirit|TCE",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Construct Spirit",
+				"Heated Body (Metal Only)",
+				"A creature that touches the construct or hits it with a melee attack while within 5 feet of it takes {@damage 1d10} fire damage.",
+				"Stony Lethargy (Stone Only)",
+				"When a creature the construct can see starts its turn within 10 feet of the construct, the construct can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target can't use reactions and its speed is halved until the start of its next turn.",
+				"Multiattack",
+				"The construct makes a number of attacks equal to half this spell's level (rounded down).",
+				"Slam",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d8 + 4 + summonSpellLevel} bludgeoning damage.",
+				"Berserk Lashing (Clay Only)",
+				"When the construct takes damage, it makes a slam attack against a random creature within 5 feet of it. If no creature is within reach, the construct moves up to half its speed toward an enemy it can see, without provoking opportunity attacks."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dancing Item|TCE",
+			"hint": {
+				"Immutable Form": "不變形態"
+			},
+			"s": [
+				"Dancing Item",
+				"natural armor",
+				"(hover)",
+				"Immutable Form",
+				"The item is immune to any spell or effect that would alter its form.",
+				"Irrepressible Dance",
+				"When any creature starts its turn within 10 feet of the item, the item can increase or decrease (your choice) the walking speed of that creature by 10 feet until the end of the turn, provided the item isn't {@condition incapacitated}.",
+				"Force-Empowered Slam",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d10 + PB} force damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Elemental Spirit|TCE",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Elemental Spirit",
+				"(air only; hover)",
+				"(earth only)",
+				"(water only)",
+				"Amorphous Form (Air, Fire, and Water Only)",
+				"The elemental can move through a space as narrow as 1 inch wide without squeezing.",
+				"Multiattack",
+				"The elemental makes a number of attacks equal to half this spell's level (rounded down).",
+				"Slam",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d10 + 4 + summonSpellLevel} bludgeoning damage (Air, Earth, and Water only) or fire damage (Fire only)."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fey Spirit|TCE",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍",
+				"Fey Step": "妖精步伐"
+			},
+			"s": [
+				"Fey Spirit",
+				"Multiattack",
+				"The fey makes a number of attacks equal to half this spell's level (rounded down).",
+				"Shortsword",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d6 + 3 + summonSpellLevel} piercing damage {@damage + 1d6} force damage.",
+				"Fey Step",
+				"The fey magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the fey's chosen mood:",
+				"Fuming",
+				"The fey has advantage on the next attack roll it makes before the end of this turn.",
+				"Mirthful",
+				"The fey can force one creature it can see within 10 feet of it to make a Wisdom saving throw against your spell save DC. Unless the save succeeds, the target is {@condition charmed} by you and the fey for 1 minute or until the target takes any damage.",
+				"Tricksy",
+				"The fey can fill a 5-foot cube within 5 feet of it with magical darkness, which lasts until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fiendish Spirit|TCE",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Fiendish Spirit",
+				"(demon only)",
+				"(devil only)",
+				"Magic Resistance",
+				"The fiend has advantage on saving throws against spells and other magical effects.",
+				"Death Throes (Demon Only)",
+				"When the fiend drops to 0 hit points or the spell ends, the fiend explodes, and each creature within 10 feet of it must make a Dexterity saving throw against your spell save DC. A creature takes {@damage 2d10 + summonSpellLevel} fire damage on a failed save, or half as much damage on a successful one.",
+				"Devil's Sight (Devil Only)",
+				"Magical darkness doesn't impede the fiend's darkvision.",
+				"Multiattack",
+				"The fiend makes a number of attacks equal to half this spell's level (rounded down).",
+				"Bite (Demon Only)",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d12 + 3 + summonSpellLevel} necrotic damage.",
+				"Claws (Yugoloth Only)",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d8 + 3 + summonSpellLevel} slashing damage. Immediately after the attack hits or misses, the fiend can magically teleport up to 30 feet to an unoccupied space it can see.",
+				"Hurl Flame (Devil Only)",
+				"{@atk rs} {@hitYourSpellAttack} to hit, range 150 ft., one target. {@h}{@damage 2d6 + 3 + summonSpellLevel} fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Homunculus Servant|TCE",
+			"hint": {
+				"Homunculus Servant": "侏儒僕從",
+				"Evasion": "反射閃避",
+				"Force Strike": "力場打擊",
+				"Channel Magic": "引導魔法"
+			},
+			"s": [
+				"Homunculus Servant",
+				"natural armor",
+				"Evasion",
+				"If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can't use this trait if it's {@condition incapacitated}.",
+				"Force Strike",
+				"{@atk rw} {@hitYourSpellAttack} to hit, range 30 ft., one target you can see. {@h}{@damage 1d4 + PB} force damage.",
+				"Channel Magic",
+				"The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Juvenile Mimic|TCE",
+			"hint": {
+				"Spider Climb": "蛛行",
+				"Bite": "啃咬",
+				"Shape-Shift": "變形"
+			},
+			"s": [
+				"Juvenile Mimic",
+				"False Appearance (Object Form Only)",
+				"While the mimic remains motionless, it is indistinguishable from an ordinary object.",
+				"Spider Climb",
+				"The mimic can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Bite",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}1 piercing damage plus 2 ({@damage 1d4}) acid damage.",
+				"Shape-Shift",
+				"The mimic polymorphs into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mighty Servant of Leuk-o|TCE",
+			"hint": {
+				"Mighty Servant of Leuk-o": "盧克歐的強大僕從",
+				"Magic Resistance": "魔法抗性",
+				"Regeneration": "再生",
+				"Standing Leap": "立定跳躍",
+				"Unusual Nature": "異常本質"
+			},
+			"s": [
+				"Mighty Servant of Leuk-o",
+				"natural armor",
+				"Immutable Existence",
+				"The servant is immune to any spell or effect that would alter its form or send it to another plane of existence.",
+				"Magic Resistance",
+				"The servant has advantage on saving throws against spells and other magical effects, and spell attacks made against it have disadvantage.",
+				"Regeneration",
+				"The servant regains 10 hit points at the start of its turn. If it is reduced to 0 hit points, this trait doesn't function until an attuned creature spends 24 hours repairing the artifact or until the artifact is subjected to lightning damage.",
+				"Standing Leap",
+				"The servant's long jump is up to 50 feet and its high jump is up to 25 feet, with or without a running start.",
+				"Unusual Nature",
+				"The servant doesn't require air, food, drink, or sleep.",
+				"Destructive Fist",
+				"{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) force damage. Or Ranged Weapon Attack: {@hit 17} to hit, range 120 ft., one target. {@h}36 ({@damage 4d12 + 10}) force damage. If the target is an object, it takes triple damage.",
+				"Crushing Leap",
+				"If the servant jumps at least 25 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures is pushed to an unoccupied space within 5 feet of the servant and must make a {@dc 25} Dexterity saving throw. On a failed save, a creature takes 26 ({@damage 4d12}) bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Reflection|TCE",
+			"s": [
+				"Reflection"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shadow Spirit|TCE",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Shadow Spirit",
+				"Terror Frenzy (Fury Only)",
+				"The spirit has advantage on attack rolls against {@condition frightened} creatures.",
+				"Weight of Sorrow (Despair Only)",
+				"Any creature, other than you, that starts its turn within 5 feet of the spirit has its speed reduced by 20 feet until the start of that creature's next turn.",
+				"Multiattack",
+				"The spirit makes a number of attacks equal to half this spell's level (rounded down).",
+				"Chilling Rend",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d12 + 3 + summonSpellLevel} cold damage.",
+				"Dreadful Scream (1/Day)",
+				"The spirit screams. Each creature within 30 feet of it must succeed on a Wisdom saving throw against your spell save DC or be {@condition frightened} for 1 minute. The {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Shadow Stealth (Fear Only)",
+				"While in dim light or darkness, the spirit takes the {@action Hide} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Steel Defender|TCE",
+			"hint": {
+				"Steel Defender": "鋼鐵衛士",
+				"Vigilant": "警戒",
+				"Force-Empowered Rend": "力場強化撕裂",
+				"Repair (3/Day)": "修復（3/日）",
+				"Deflect Attack": "偏轉攻擊"
+			},
+			"s": [
+				"Steel Defender",
+				"natural armor",
+				"Vigilant",
+				"The defender can't be {@status surprised}.",
+				"Force-Empowered Rend",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d8 + PB} force damage.",
+				"Repair (3/Day)",
+				"The magical mechanisms inside the defender restore {@dice 2d8 + PB} hit points to itself or to one construct or object within 5 feet of it.",
+				"Deflect Attack",
+				"The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Undead Spirit|TCE",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Undead Spirit",
+				"(ghostly only; hover)",
+				"Incorporeal Passage (Ghostly Only)",
+				"The spirit can move through other creatures and objects as if they were {@quickref difficult terrain||3}. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes {@damage 1d10} force damage for every 5 feet traveled.",
+				"Festering Aura (Putrid Only)",
+				"Any creature, other than you, that starts its turn within 5 feet of the spirit must succeed on a Constitution saving throw against your spell save DC or be {@condition poisoned} until the start of its next turn.",
+				"Multiattack",
+				"The spirit makes a number of attacks equal to half this spell's level (rounded down).",
+				"Deathly Touch (Ghostly Only)",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one creature. {@h}{@damage 1d8 + 3 + summonSpellLevel} necrotic damage, and the creature must succeed on a Wisdom saving throw against your spell save DC or be {@condition frightened} of the undead until the end of the target's next turn.",
+				"Grave Bolt (Skeletal Only)",
+				"{@atk rs} {@hitYourSpellAttack} to hit, range 150 ft., one target. {@h}{@damage 2d4 + 3 + summonSpellLevel} necrotic damage.",
+				"Rotting Claw (Putrid Only)",
+				"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target. {@h}{@damage 1d6 + 3 + summonSpellLevel} slashing damage. If the target is {@condition poisoned}, it must succeed on a Constitution saving throw against your spell save DC or be {@condition paralyzed} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Wildfire Spirit|TCE",
+			"s": [
+				"Wildfire Spirit",
+				"natural armor",
+				"(hover)",
+				"Flame Seed",
+				"{@atk rw} {@hitYourSpellAttack} to hit, range 60 ft., one target you can see. {@h}{@damage 1d6 + PB} fire damage.",
+				"Fiery Teleportation",
+				"The spirit and each willing creature of your choice within 5 feet of it teleport up to 15 feet to unoccupied spaces you can see. Then each creature within 5 feet of the space that the spirit left must succeed on a Dexterity saving throw against your spell save DC or take {@damage 1d6 + PB} fire damage."
+			]
+		}
+	]
+}

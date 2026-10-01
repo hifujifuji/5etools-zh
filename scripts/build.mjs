@@ -263,6 +263,44 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	for (const {json} of loaded) for (const p of PROPS) for (const ent of json[p] || []) walk(ent);
 }
 
+// ---- 3a''. 召喚物／夥伴數據的特殊 AC、HP、熟練加值欄位（"11 + the spell's level" 等） ----------------
+{
+	const CLS = {ranger: "遊俠", artificer: "奇械師", bard: "吟遊詩人", druid: "德魯伊"};
+	const ABL = {Wisdom: "感知", Intelligence: "智力", Charisma: "魅力", Strength: "力量", Dexterity: "敏捷", Constitution: "體質"};
+	const NUM = {four: "四", five: "五"};
+	const ONLY = {Defender: "守護者", Air: "天空", "Land and Water": "陸地與水", Demon: "惡魔", Devil: "魔鬼", Yugoloth: "尤格羅斯魔", "Ghostly and Putrid": "幽魂與腐屍", Skeletal: "骷髏"};
+	const FIXED = {
+		"equals your Proficiency Bonus": "等同於你的熟練加值", "equals your bonus": "等同於你的熟練加值", "equals its summoner's": "等同於其召喚者的熟練加值",
+		"half the hit point maximum of its summoner": "其召喚者生命值上限的一半", "Half the HP maximum of its summoner": "其召喚者生命值上限的一半",
+		"—(immune to damage)": "—（免疫傷害）", "10 (Medium or smaller), 20 (Large), 40 (Huge)": "10（中型或更小）、20（大型）、40（巨型）",
+		"10 + 1 per spell level": "10 + 每法術環階 1",
+		"understands the languages you speak": "懂得你會說的語言", "Understands the languages you know": "懂得你通曉的語言", "understands the languages you know": "懂得你通曉的語言", "understands the languages of its creator but can't speak": "懂得其創造者的語言，但無法說話",
+	};
+	const zhSpecial = str => {
+		if (FIXED[str]) return FIXED[str];
+		let s = str
+			.replace(/\(the (?:\w+ ?)+ has a number of Hit Dice \[d(\d+)s\] equal to (?:your (\w+) level|your level|the spell's level|the level of the spell)\)/gi, (m, d, c) => `（生命骰 [d${d}] 的數量等同於${c ? `你的${CLS[c.toLowerCase()] ?? c}等級` : /your level/.test(m) ? "你的等級" : "法術環階"}）`)
+			.replace(/\b(four|five) times your (\w+ )?level/gi, (m, n, c) => `${NUM[n.toLowerCase()]}倍的你的${c ? CLS[c.trim().toLowerCase()] ?? c.trim() : ""}等級`)
+			.replace(/\byour (\w+) level\b/g, (m, c) => CLS[c.toLowerCase()] ? `你的${CLS[c.toLowerCase()]}等級` : m)
+			.replace(/\byour (\w+) modifier\b/g, (m, a) => ABL[a] ? `你的${ABL[a]}調整值` : m)
+			.replace(/(\d+) for each spell level above (\d+)(?:st|nd|rd|th)?/g, "法術環階每比 $2 環高一環 $1")
+			.replace(/(\d+) per spell level/g, "每法術環階 $1")
+			.replace(/the level of the spell|the spell's level/g, "法術環階")
+			.replace(/ \(natural armor\)/g, "（天生護甲）")
+			.replace(/ \(([A-Za-z ]+) only\)/g, (m, x) => ONLY[x] ? `（僅限${ONLY[x]}）` : m)
+			.replace(/ plus /g, " + ").replace(/ or /g, "或 ");
+		return /[A-Za-z]{3}/.test(s.replace(/PB|\{@[^}]*\}/g, "")) ? str : s;
+	};
+	let n = 0;
+	for (const {json} of loaded) for (const m of json.monster || []) {
+		for (const a of m.ac || []) if (a?.special) { const z = zhSpecial(a.special); if (z !== a.special) { a.special = z; ++n; } }
+		if (m.hp?.special) { const z = zhSpecial(m.hp.special); if (z !== m.hp.special) { m.hp.special = z; ++n; } }
+		if (m.pbNote) { const z = zhSpecial(m.pbNote); if (z !== m.pbNote) { m.pbNote = z; ++n; } }
+		if (Array.isArray(m.languages)) m.languages = m.languages.map(l => FIXED[l] ?? l);
+	}
+	console.log(`怪物特殊 AC／HP 欄位：${n} 處`);
+}
+
 // ---- 3b. 中文句子裡的標籤補上中文顯示名：{@spell Fireball|XPHB} → {@spell Fireball|XPHB|火球術} ------
 const TAG_OF_PROP = {
 	spell: "spell", monster: "creature", item: "item", baseitem: "item", magicvariant: "item", itemGroup: "item",
@@ -293,6 +331,13 @@ for (const [en, zh] of Object.entries({
 	Abyssal: "深淵語", Celestial: "天界語", "Deep Speech": "深幽語", Draconic: "龍語", Infernal: "煉獄語", Primordial: "原初語", Sylvan: "木族語",
 	Undercommon: "地底通用語", Druidic: "德魯伊語", "Thieves' Cant": "盜賊黑話", Gith: "吉斯語", Aquan: "水族語", Auran: "氣族語", Ignan: "火族語", Terran: "土族語",
 })) if (!tagNames.has(`language|${en.toLowerCase()}`)) tagNames.set(`language|${en.toLowerCase()}`, zh);
+// 召喚物的「召喚自」法術連結補上中文名（{@spell 名稱|來源|顯示}）
+for (const {json} of loaded) for (const m of json.monster || []) {
+	if (typeof m.summonedBySpell !== "string" || m.summonedBySpell.split("|").length > 2) continue;
+	const [n, src] = m.summonedBySpell.split("|");
+	const zh = tagNames.get(`spell|${n.toLowerCase()}|${S(src || "PHB")}`) ?? tagNames.get(`spell|${n.toLowerCase()}`);
+	if (zh) m.summonedBySpell = `${n}|${src || ""}|${zh}`;
+}
 let nTagDisplay = 0;
 const RE_TAG = /\{@(\w+) ([^{}]*)\}/g;
 const fillTags = (str, isOverrideEn = false) => str.replace(RE_TAG, (m, tag, body) => {
