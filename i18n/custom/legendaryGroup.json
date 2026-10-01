@@ -60,6 +60,134 @@
 		],
 		"ENG_name": "Aboleth"
 	},
+	"Amethyst Dragon|FTD": {
+		"name": "紫水晶龍",
+		"source": "FTD",
+		"page": 160,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），龍可以採取下列巢穴動作之一；龍不能連續兩輪採取相同的巢穴動作：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "魅惑低語",
+						"entry": "龍以心靈感應向牠心靈感應範圍內的一個生物低語。該生物必須成功通過一次 {@dc 15} 感知豁免檢定，否則被龍{@condition charmed}，直到下一輪的先攻順位 20。以此方式被{@condition charmed}的生物會盡其所能服從龍下達的任何不會直接傷害該生物的命令。",
+						"ENG_name": "Beguiling Whisper"
+					},
+					{
+						"type": "item",
+						"name": "禁錮力場",
+						"entry": "龍施展{@spell forcecage}法術，使用牠的法術豁免 DC，且無需法術構材。若龍再次使用此巢穴動作或死亡，法術便會提早結束。",
+						"ENG_name": "Imprisoning Force"
+					},
+					{
+						"type": "item",
+						"name": "空間投影",
+						"entry": "龍選擇巢穴內一個能容納牠的空間。牠同時存在於自己的空間與所選的空間，直到下一輪的先攻順位 20。每當牠移動或採取動作時，牠選擇由哪一個自己來移動或行動。若某個效應或攻擊能同時以龍的兩個空間為目標，龍只會受到一次影響。",
+						"ENG_name": "Spatial Projection"
+					}
+				]
+			}
+		],
+		"regionalEffects": [
+			"傳奇紫水晶龍巢穴周圍的區域會被龍的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "身家調查",
+						"entry": "龍每天可以施展一次{@spell legend lore}法術，無需法術構材，並指定巢穴 1 哩內任何人物、地點或物件作為法術的對象。",
+						"ENG_name": "Background Check"
+					},
+					{
+						"type": "item",
+						"name": "水晶叢生",
+						"entry": "巢穴 6 哩內的泥濘岸邊與湖床會形成紫水晶晶體與晶洞。",
+						"ENG_name": "Crystal Profusion"
+					},
+					{
+						"type": "item",
+						"name": "野生動物繁盛",
+						"entry": "魚類與其他水棲野獸會在巢穴 6 哩內的水體中迅速繁殖、蓬勃生長。在這些水域覓食可獲得平常兩倍的食物。",
+						"ENG_name": "Thriving Wildlife"
+					},
+					{
+						"type": "item",
+						"name": "水之視界",
+						"entry": "巢穴 6 哩內的水是龍靈能存在的導管。龍可以用一個動作施展{@spell clairvoyance}法術，無需法術構材，並以該區域內任一水體為目標。",
+						"ENG_name": "Watery Sight"
+					}
+				]
+			},
+			"若龍死亡，巢穴附近的水生生物族群會在 {@dice 1d10} 天內恢復到正常水準。現有的大量紫水晶會保留下來，但新的晶體與晶洞會以正常速度形成。"
+		],
+		"ENG_name": "Amethyst Dragon"
+	},
+	"Ancient Dragon Turtle|FTD": {
+		"name": "遠古龍龜",
+		"source": "FTD",
+		"page": 191,
+		"lairActions": [
+			"依{@i 《怪物圖鑑》}所述，龍龜在巢穴中無法使用巢穴動作。由你決定，你可以讓成年或遠古龍龜能使用巢穴動作，並使其挑戰等級提升 1。在先攻順位 20（先攻相同時最後行動），遠古龍龜可以採取下列巢穴動作之一；遠古龍龜不能連續兩輪採取相同的巢穴動作：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "衝擊水流",
+						"entry": "一股強勁的水流穿過遠古龍龜的巢穴。遠古龍龜 30 呎內的每個生物必須成功通過一次 {@dc 15} 力量豁免檢定，否則被朝遠古龍龜選擇的方向移動 30 呎。成功時，該生物改為被移動 10 呎。",
+						"ENG_name": "Blasting Current"
+					},
+					{
+						"type": "item",
+						"name": "纏繞海帶",
+						"entry": "以巢穴內一個遠古龍龜能看見的點為中心，幽影般的海帶伸出並纏住半徑 20 呎球形範圍內的生物。該區域內的每個生物必須成功通過一次 {@dc 15} 力量豁免檢定，否則{@condition restrained}直到它的下個回合結束。",
+						"ENG_name": "Entangling Kelp"
+					},
+					{
+						"type": "item",
+						"name": "蒸氣噴發",
+						"entry": "蒸氣從遠古龍龜 120 呎內地面上一個牠能看見的點向 15 呎錐形範圍噴發。該區域內的每個生物必須進行一次 {@dc 15} 體質豁免檢定，豁免失敗受到 21（{@damage 6d6}）火焰傷害，成功則傷害減半。身處水中不會讓生物獲得對此傷害的抗性。",
+						"ENG_name": "Steam Eruption"
+					}
+				]
+			}
+		],
+		"regionalEffects": [
+			"龍龜巢穴所在的區域可能因牠的存在而改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "偏轉水流",
+						"entry": "水下的洋流會把不速之客推離巢穴。在這些洋流中游泳時，每移動 1 呎需額外花費 1 呎移動力（在{@quickref difficult terrain||3}中為額外 2 呎），即使生物具有游泳速度也一樣。",
+						"ENG_name": "Diverting Currents"
+					},
+					{
+						"type": "item",
+						"name": "元素傳送門",
+						"entry": "遠古龍龜的巢穴 1 哩內海床上的裂隙會形成通往水元素位面的雙向傳送門，讓水元素生物得以進入這個世界並棲居於附近。",
+						"ENG_name": "Elemental Portals"
+					},
+					{
+						"type": "item",
+						"name": "熱水",
+						"entry": "地熱噴口將遠古龍龜的巢穴 6 哩內的水加熱到華氏 100 度。",
+						"ENG_name": "Hot Water"
+					}
+				]
+			},
+			"若遠古龍龜死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Ancient Dragon Turtle"
+	},
 	"Annis Hag|VGM": {
 		"name": "妖鬼婆",
 		"source": "VGM",
@@ -1101,6 +1229,79 @@
 		],
 		"ENG_name": "Copper Dragon"
 	},
+	"Crystal Dragon|FTD": {
+		"name": "水晶龍",
+		"source": "FTD",
+		"page": 171,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），龍可以採取下列巢穴動作之一；龍不能連續兩輪採取相同的巢穴動作：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "魅惑低語",
+						"entry": "龍以心靈感應向牠心靈感應範圍內的一個生物低語。該生物必須成功通過一次 {@dc 15} 感知豁免檢定，否則被龍{@condition charmed}，直到下一輪的先攻順位 20。以此方式被{@condition charmed}的生物會盡其所能服從龍下達的任何不會直接傷害該生物的命令。",
+						"ENG_name": "Beguiling Whisper"
+					},
+					{
+						"type": "item",
+						"name": "冰之通道",
+						"entry": "龍可以在厚度至多 5 呎的冰牆或雪牆上開出一條通道，創造出寬與高各至多 30 呎的開口。",
+						"ENG_name": "Ice Passage"
+					},
+					{
+						"type": "item",
+						"name": "星光閃耀",
+						"entry": "龍選擇巢穴內一個牠能看見的點。閃耀的星光從該點向外放射，使半徑 10 呎的球形範圍充滿微光光照。光芒出現時，該區域內除龍以外的每個生物必須成功通過一次 {@dc 15} 敏捷豁免檢定，否則受到 13（{@damage 2d12}）光耀傷害並被光輝勾勒出輪廓。對被勾勒出輪廓的生物進行的{@action Attack||攻擊}檢定具有優勢，且該生物無法躲藏，也無法從{@condition invisible}中獲益。星光與生物周圍的光輝會在下一輪的先攻順位 20 消退。",
+						"ENG_name": "Starlight's Gleam"
+					}
+				]
+			}
+		],
+		"regionalEffects": [
+			"傳奇水晶龍巢穴周圍的區域會被龍的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "晴空",
+						"entry": "除非受到魔法改變，水晶龍巢穴上方的天空會保持晴朗且沒有降水。風勢輕柔，對接近巢穴者幾乎不構成威脅，能見度也是該時段所能達到的最佳狀態。",
+						"ENG_name": "Clear Skies"
+					},
+					{
+						"type": "item",
+						"name": "水晶叢生",
+						"entry": "巢穴 6 哩內的天然岩石中會形成大量石英晶體，在自然光能照到晶體的地方尤其如此。",
+						"ENG_name": "Crystal Profusion"
+					},
+					{
+						"type": "item",
+						"name": "冰之視界",
+						"entry": "巢穴 6 哩內的冰與石英會成為龍靈能存在的導管。龍可以用一個動作施展{@spell clairvoyance}法術，無需法術構材，並以該區域內任何冰或石英晶體為目標。",
+						"ENG_name": "Icy Sight"
+					},
+					{
+						"type": "item",
+						"name": "正能量",
+						"entry": "任何在巢穴 6 哩內完成長休的生物額外恢復兩顆已消耗的生命骰。",
+						"ENG_name": "Positive Energy"
+					},
+					{
+						"type": "item",
+						"name": "野生動物繁盛",
+						"entry": "巢穴 6 哩內的動物族群興旺繁盛。在該區域內以狩獵、捕魚或設陷阱覓食所進行的屬性檢定具有優勢。",
+						"ENG_name": "Thriving Wildlife"
+					}
+				]
+			},
+			"若龍死亡，巢穴附近的動物族群會在 {@dice 1d10} 天內恢復到正常水準。生命骰恢復量的提升立即結束。現有的大量石英晶體會保留下來，但新的晶體會以正常速度形成。"
+		],
+		"ENG_name": "Crystal Dragon"
+	},
 	"Death Tyrant|MM": {
 		"name": "亡眼暴君",
 		"source": "MM",
@@ -1161,6 +1362,67 @@
 			"若亡眼暴君死亡或將巢穴遷往他處，這些效果便立即結束。"
 		],
 		"ENG_name": "Death Tyrant"
+	},
+	"Deep Dragon|FTD": {
+		"name": "深地龍",
+		"source": "FTD",
+		"page": 174,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），龍可以採取下列巢穴動作之一；龍不能連續兩輪採取相同的巢穴動作：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "深沉麻木",
+						"entry": "龍施展{@spell slow}法術，無需法術構材，並以魅力作為施法屬性（法術豁免 {@dc 16}）。若龍再次使用此巢穴動作或死亡，法術便會提早結束。",
+						"ENG_name": "Deep Torpor"
+					},
+					{
+						"type": "item",
+						"name": "苔蘚淤泥",
+						"entry": "龍咒喚出淤泥般的苔蘚，短暫覆蓋巢穴內的各個表面。巢穴的天花板、地板與牆壁成為{@quickref difficult terrain||3}，直到下一輪的先攻順位 20。",
+						"ENG_name": "Mossy Sludge"
+					},
+					{
+						"type": "item",
+						"name": "毒性孢子",
+						"entry": "龍使牠 120 呎內一個牠能看見的 20 呎立方範圍充滿毒性孢子。該區域內的每個生物必須成功通過一次 {@dc 15} 體質豁免檢定，否則受到 14（{@damage 4d6}）毒素傷害並{@condition poisoned}，直到它的下個回合結束。",
+						"ENG_name": "Toxic Spores"
+					}
+				]
+			}
+		],
+		"regionalEffects": [
+			"傳奇深地龍巢穴周圍的區域會被龍的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "知識保存",
+						"entry": "龍的巢穴 6 哩內的書籍、信件與任何其他實體形式的文字都會充滿魔力，無法被非魔法手段損壞。",
+						"ENG_name": "Preservation of Knowledge"
+					},
+					{
+						"type": "item",
+						"name": "不安之眠",
+						"entry": "生物在巢穴 6 哩內完成長休時，必須先成功通過一次 {@dc 10} 體質豁免檢定，否則無法降低其{@condition exhaustion}等級。免疫{@condition poisoned}狀態的生物免疫此效應。",
+						"ENG_name": "Restless Sleep"
+					},
+					{
+						"type": "item",
+						"name": "蔥鬱生長",
+						"entry": "龍的巢穴 6 哩內的植被與真菌生長得比平常更快，覆蓋的面積也更廣。在此區域覓食可獲得平常兩倍的食物。",
+						"ENG_name": "Verdant Growth"
+					}
+				]
+			},
+			"若龍死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Deep Dragon"
 	},
 	"Demilich|MM": {
 		"name": "半巫妖",
@@ -1531,6 +1793,128 @@
 		],
 		"ENG_name": "Elder Brain"
 	},
+	"Emerald Dragon|FTD": {
+		"name": "翡翠龍",
+		"source": "FTD",
+		"page": 196,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），龍可以採取下列巢穴動作之一；龍不能連續兩輪採取相同的巢穴動作：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "魅惑低語",
+						"entry": "龍以心靈感應向牠心靈感應範圍內的一個生物低語。該生物必須成功通過一次 {@dc 15} 感知豁免檢定，否則被龍{@condition charmed}，直到下一輪的先攻順位 20。以此方式被{@condition charmed}的生物會盡其所能服從龍下達的任何不會直接傷害該生物的命令。",
+						"ENG_name": "Beguiling Whisper"
+					},
+					{
+						"type": "item",
+						"name": "扭曲感知",
+						"entry": "龍試圖改變巢穴內一個牠能看見的生物的感知。該生物必須成功通過一次 {@dc 15} 智力豁免檢定，否則受到 22（{@damage 4d10}）精神傷害，且豁免檢定具有劣勢，直到它的下個回合開始。",
+						"ENG_name": "Distort Perceptions"
+					},
+					{
+						"type": "item",
+						"name": "消失",
+						"entry": "龍變得{@condition invisible}，直到下一輪的先攻順位 20。",
+						"ENG_name": "Vanish"
+					}
+				]
+			}
+		],
+		"regionalEffects": [
+			"傳奇翡翠龍巢穴周圍的區域會被龍的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "水晶叢生",
+						"entry": "巢穴 6 哩內的天然岩石會長出大量晶簇與翡翠礦脈。",
+						"ENG_name": "Crystal Profusion"
+					},
+					{
+						"type": "item",
+						"name": "火之視界",
+						"entry": "巢穴 6 哩內的火焰與熔岩會成為龍靈能存在的導管。龍可以用一個動作施展{@spell clairvoyance}法術，無需法術構材，並以該區域內任一處火焰或熔岩為目標。",
+						"ENG_name": "Fiery Sight"
+					},
+					{
+						"type": "item",
+						"name": "微妙阻礙",
+						"entry": "龍的巢穴 6 哩內的岩石有時會自行移動，通常是在沒有人注視的時候。這些岩石常會阻礙通往翡翠龍巢穴的路：巨石移動堵住狹窄的隘道、路標滾離小徑，或是小石頭在旅人腳下滑動，讓他們滾下山坡或跌進河裡。",
+						"ENG_name": "Subtle Obstruction"
+					},
+					{
+						"type": "item",
+						"name": "野生動物繁盛",
+						"entry": "{@creature Giant lizard||巨蜥}會被吸引到巢穴 6 哩內的區域，並大量定居於此。",
+						"ENG_name": "Thriving Wildlife"
+					}
+				]
+			},
+			"若龍死亡，巢穴附近的巨蜥族群會在 {@dice 1d10} 天內恢復到正常水準。岩石立即停止自行移動。現有的大量晶體與翡翠會保留下來，但新的會以正常速度形成。"
+		],
+		"ENG_name": "Emerald Dragon"
+	},
+	"Faerie Dragon|FTD": {
+		"name": "妖精龍",
+		"source": "FTD",
+		"page": 118,
+		"lairActions": [
+			"依{@book 怪物圖鑑|MM}所述，妖精龍在巢穴中無法使用巢穴動作。由你決定，{@creature Faerie Dragon (Green)||綠色}或{@creature Faerie Dragon (Violet)||更年長的妖精龍}可以在先攻順位 20（先攻相同時最後行動）採取下列巢穴動作之一：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "混沌靈光",
+						"entry": "妖精龍在自身周圍創造出誤導方向的氣流與魔力亂流。直到下一輪的先攻順位 20，每當一次遠程攻擊檢定未命中龍，便對龍 30 呎內一個對該攻擊沒有{@quickref Cover||3||全掩護}的隨機生物重擲該攻擊。",
+						"ENG_name": "Chaotic Aura"
+					},
+					{
+						"type": "item",
+						"name": "攫抓植物",
+						"entry": "妖精龍使根鬚與藤蔓暫時在牠周圍生長；直到下一輪的先攻順位 20，龍 20 呎內的地面為{@book 困難地形|PHB|8|Difficult Terrain}。",
+						"ENG_name": "Grasping Plants"
+					}
+				]
+			}
+		],
+		"regionalEffects": [
+			"妖精龍巢穴所在的區域可能因牠的存在而改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "強制獻禮",
+						"entry": "生物首次進入妖精龍的巢穴 1 哩內時，必須成功通過一次 {@dc 15} 感知豁免檢定，否則會感到一股無法抗拒的衝動，要把價值至少 5 gp 的獻禮藏在一個偏僻的地方。龍會立即感知到這份禮物的位置。一個生物只會受這股強迫衝動影響一次。",
+						"ENG_name": "Compulsory Offering"
+					},
+					{
+						"type": "item",
+						"name": "可塑時間",
+						"entry": "妖精龍的巢穴 1 哩內的時間並不固定，流速介於正常速度的一半到兩倍之間。",
+						"ENG_name": "Malleable Time"
+					},
+					{
+						"type": "item",
+						"name": "惡作劇蔓延",
+						"entry": "在妖精龍的巢穴 5 哩內待上一年的智慧生物會不斷湧現對他人惡作劇的衝動。",
+						"ENG_name": "Mischief Afoot"
+					}
+				]
+			},
+			"若妖精龍死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Faerie Dragon"
+	},
 	"Fraz-Urb'luu|MPMM": {
 		"name": "弗拉茲厄布魯",
 		"source": "MPMM",
@@ -1799,7 +2183,7 @@
 						"name": "移動物件",
 						"type": "item",
 						"entries": [
-							"吉斯澤萊混沌師可以進行一次具有優勢的感知檢定，以魔法移動它 150 呎內一件它能看見的物件。DC 取決於物件的體型：微型為 {@dc 5}，小型為 {@dc 10}，中型為 {@dc 15}，大型為 {@dc 20}，超大型或更大為 {@dc 25}。"
+							"吉斯澤萊混沌師可以進行一次具有優勢的感知檢定，以魔法移動它 150 呎內一件它能看見的物件。DC 取決於物件的體型：微型為 {@dc 5}，小型為 {@dc 10}，中型為 {@dc 15}，大型為 {@dc 20}，巨型或更大為 {@dc 25}。"
 						],
 						"ENG_name": "Move Object"
 					},
@@ -1853,7 +2237,7 @@
 				"items": [
 					"吉斯澤萊混沌師施展{@spell lightning bolt}法術（5 環），但吉斯澤萊混沌師可以將傷害類型從閃電改為寒冰、火焰、精神、光耀或雷鳴。若該法術造成火焰或閃電以外的傷害，就不會點燃可燃物件。",
 					"吉斯澤萊混沌師施展{@spell creation}法術（視為 9 環法術），使用混沌海未成形的物質取代陰影材料。若在混沌海使用，無論其構成為何，該物件會持續存在到吉斯澤萊混沌師的{@status concentration}中斷為止。若吉斯澤萊混沌師移動到距離該物件超過 120 呎處，它的{@status concentration}會中斷。",
-					"吉斯澤萊混沌師可以進行一次具有優勢的感知檢定，以魔法移動它 150 呎內一件它能看見的物件。DC 取決於物件的體型：微型為 {@dc 5}，小型為 {@dc 10}，中型為 {@dc 15}，大型為 {@dc 20}，超大型或更大為 {@dc 25}。"
+					"吉斯澤萊混沌師可以進行一次具有優勢的感知檢定，以魔法移動它 150 呎內一件它能看見的物件。DC 取決於物件的體型：微型為 {@dc 5}，小型為 {@dc 10}，中型為 {@dc 15}，大型為 {@dc 20}，巨型或更大為 {@dc 25}。"
 				]
 			}
 		],
@@ -2799,6 +3183,61 @@
 		],
 		"ENG_name": "Merrenoloth"
 	},
+	"Moonstone Dragon|FTD": {
+		"name": "月長石龍",
+		"source": "FTD",
+		"page": 212,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），龍可以採取下列巢穴動作之一；龍不能連續兩輪採取相同的巢穴動作：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "放逐入夢",
+						"entry": "龍以牠 120 呎內一個牠能看見的生物為目標，試圖將該生物送往夢境位面。目標必須成功通過一次 {@dc 15} 魅力豁免檢定，否則被放逐到一個無害的半位面，直到下一輪的先攻順位 20。身處該處期間，目標處於{@condition stunned}狀態。效應結束時，目標重新出現在它離開的空間或最近的未被佔據空間。",
+						"ENG_name": "Banish into Dream"
+					},
+					{
+						"type": "item",
+						"name": "強制舞蹈",
+						"entry": "龍以巢穴內一個牠能看見的生物為目標，一首只有目標聽得見的歡快華爾滋隨之響起。目標必須成功通過一次 {@dc 15} 智力豁免檢定，否則會不停跳舞，直到下一輪的先攻順位 20。跳舞的生物處於{@condition incapacitated}狀態，且必須用盡所有移動力來跳舞。",
+						"ENG_name": "Compulsive Dance"
+					},
+					{
+						"type": "item",
+						"name": "迷亂幻象",
+						"entry": "令人迷亂的幻影在龍的巢穴中掠過。巢穴內的每個生物必須成功通過一次 {@dc 20} 感知豁免檢定，否則屬性檢定具有劣勢，直到下一輪的先攻順位 20。",
+						"ENG_name": "Disorienting Visions"
+					}
+				]
+			}
+		],
+		"regionalEffects": [
+			"傳奇月長石龍巢穴周圍的區域會被龍的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "夢境交流",
+						"entry": "每當能理解語言的生物在龍巢穴 6 哩內睡覺或進入出神或冥想狀態時，龍可以與該生物建立心靈感應聯繫，並在它的夢中與它交談。該生物醒來後會記得自己與龍的對話。",
+						"ENG_name": "Dream Communication"
+					},
+					{
+						"type": "item",
+						"name": "位面過渡",
+						"entry": "月長石龍巢穴附近，位面之間的帷幕變得稀薄。巢穴 6 哩內有各種傳送門連接主物質位面、妖精荒野與邊境乙太界。生物可以花費 5 呎移動力，從任一方向穿過傳送門。",
+						"ENG_name": "Planar Transition"
+					}
+				]
+			},
+			"若龍死亡，巢穴附近的所有傳送門都會立即關閉。"
+		],
+		"ENG_name": "Moonstone Dragon"
+	},
 	"Morkoth|MPMM": {
 		"name": "莫客魚怪",
 		"source": "MPMM",
@@ -3263,6 +3702,73 @@
 		],
 		"ENG_name": "Red Dragon"
 	},
+	"Sapphire Dragon|FTD": {
+		"name": "藍寶石龍",
+		"source": "FTD",
+		"page": 215,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），龍可以採取下列巢穴動作之一；龍不能連續兩輪採取相同的巢穴動作：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "懾人雷鳴",
+						"entry": "一陣 300 呎外都能聽見的雷鳴巨響，籠罩巢穴內一個龍能看見的生物。該生物必須成功通過一次 {@dc 15} 體質豁免檢定，否則受到 13（{@damage 3d8}）雷鳴傷害並{@condition stunned}，直到它的下個回合結束。",
+						"ENG_name": "Awesome Thunder"
+					},
+					{
+						"type": "item",
+						"name": "魅惑低語",
+						"entry": "龍以心靈感應向牠心靈感應範圍內的一個生物低語。該生物必須成功通過一次 {@dc 15} 感知豁免檢定，否則被龍{@condition charmed}，直到下一輪的先攻順位 20。以此方式被{@condition charmed}的生物會盡其所能服從龍下達的任何不會直接傷害該生物的命令。",
+						"ENG_name": "Beguiling Whisper"
+					},
+					{
+						"type": "item",
+						"name": "石之通道",
+						"entry": "龍觸碰一塊任一維度至多 30 呎的石頭。只要牆壁的厚度小於 10 呎，龍就可以塑造石頭，在牆上開啟或封閉一條通道。",
+						"ENG_name": "Stone Passage"
+					}
+				]
+			}
+		],
+		"regionalEffects": [
+			"傳奇藍寶石龍巢穴周圍的區域會被龍的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "水晶叢生",
+						"entry": "巢穴 6 哩內的天然岩石會長出大量晶簇與藍寶石礦脈，在地底尤其如此。",
+						"ENG_name": "Crystal Profusion"
+					},
+					{
+						"type": "item",
+						"name": "石之視界",
+						"entry": "巢穴 6 哩內的天然岩石是龍靈能存在的導管。龍可以用一個動作施展{@spell clairvoyance}法術，無需法術構材，並以該區域內任何天然岩層為目標。",
+						"ENG_name": "Stony Sight"
+					},
+					{
+						"type": "item",
+						"name": "心靈感應強化",
+						"entry": "龍的靈能會強化其他生物的心智力量。任何能以心靈感應交流的生物位於巢穴 1 哩內時，其心靈感應範圍加倍。這包括具有天生心靈感應的生物，以及{@spell Rary's telepathic bond}法術這類魔法心靈感應。",
+						"ENG_name": "Telepathic Enhancement"
+					},
+					{
+						"type": "item",
+						"name": "野生動物繁盛",
+						"entry": "{@creature Giant spider||巨蜘蛛}（藍寶石龍最愛的獵物）會被吸引到巢穴 6 哩內的區域，並大量定居於此。",
+						"ENG_name": "Thriving Wildlife"
+					}
+				]
+			},
+			"若龍死亡，該區域的巨蜘蛛族群會在 {@dice 1d10} 天內恢復到正常水準。心靈感應能力的強化立即結束。現有的大量晶體與藍寶石會保留下來，但新的會以正常速度形成。"
+		],
+		"ENG_name": "Sapphire Dragon"
+	},
 	"Sea Hag|MM": {
 		"name": "海鬼婆",
 		"source": "MM",
@@ -3301,6 +3807,61 @@
 			}
 		},
 		"ENG_name": "Sea Hag"
+	},
+	"Shadow Dragon|FTD": {
+		"name": "影龍",
+		"source": "FTD",
+		"page": 142,
+		"lairActions": [
+			{
+				"type": "entries",
+				"name": "額外的巢穴動作",
+				"entries": [
+					"影龍可以使用同種未轉化的龍所能使用的巢穴動作。這些動作的效應在外觀上可能有所改變，顯得更黑暗、更陰鬱、更黯淡。它們也可能改為造成死靈傷害，而非其他傷害類型。由你決定，傳奇的（成年或遠古）影龍在巢穴中可以使用下列額外的巢穴動作：",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "驅逐光明",
+								"entry": "以龍為中心、半徑 60 呎球形範圍內的任何非魔法光源都會熄滅，且同一區域內任何創造光亮的法術都會被解除。",
+								"ENG_name": "Banish Light"
+							}
+						]
+					}
+				],
+				"ENG_name": "Additional Lair Action"
+			}
+		],
+		"regionalEffects": [
+			"影龍在主物質位面建立巢穴時，巢穴周圍的區域會染上墮影冥界的一些特徵，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "陰鬱絕望",
+						"entry": "龍的巢穴 1 哩內智力值為 5 或更高的生物會感到孤寂而絕望。",
+						"ENG_name": "Brooding Despair"
+					},
+					{
+						"type": "item",
+						"name": "黯淡之光",
+						"entry": "龍的巢穴 6 哩內的光線變得黯淡，陰鬱的暗影使這片土地處於{@quickref Vision and Light|PHB|2||輕度遮蔽}。",
+						"ENG_name": "Dying Light"
+					},
+					{
+						"type": "item",
+						"name": "幽暗傳送門",
+						"entry": "龍的巢穴 1 哩內的一些洞穴、洞窟、坑洞與其他幽深昏暗之處會形成通往墮影冥界的傳送門，讓該位面的生物得以棲居於附近。",
+						"ENG_name": "Gloomy Portals"
+					}
+				]
+			}
+		],
+		"ENG_name": "Shadow Dragon"
 	},
 	"Shadow Dragon|XMM": {
 		"name": "影龍",
@@ -3571,6 +4132,73 @@
 			"若風暴巨人．昇華者死亡，閃電、雷聲與強風的區域效應會立即結束。雨、雪與飛揚的塵土會在 {@dice 1d8} 天內逐漸平息。"
 		],
 		"ENG_name": "Storm Giant Quintessent"
+	},
+	"Topaz Dragon|FTD": {
+		"name": "黃玉龍",
+		"source": "FTD",
+		"page": 221,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），龍可以採取下列巢穴動作之一；龍不能連續兩輪採取相同的巢穴動作：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "魅惑低語",
+						"entry": "龍以心靈感應向牠心靈感應範圍內的一個生物低語。該生物必須成功通過一次 {@dc 15} 感知豁免檢定，否則被龍{@condition charmed}，直到下一輪的先攻順位 20。以此方式被{@condition charmed}的生物會盡其所能服從龍下達的任何不會直接傷害該生物的命令。",
+						"ENG_name": "Beguiling Whisper"
+					},
+					{
+						"type": "item",
+						"name": "抵銷",
+						"entry": "龍選擇巢穴內一個牠察覺到、正在生效的 5 環或更低法術，並結束該法術。",
+						"ENG_name": "Cancellation"
+					},
+					{
+						"type": "item",
+						"name": "負能量灌注",
+						"entry": "巢穴內至多兩個龍能看見的生物必須各自成功通過一次 {@dc 15} 體質豁免檢定，否則受到 14（{@damage 4d6}）死靈傷害。負能量接著會灌注整個巢穴，直到下一輪的先攻順位 20。灌注持續期間，巢穴內除龍以外的生物無法恢復生命值。",
+						"ENG_name": "Negative Energy Infusion"
+					}
+				]
+			}
+		],
+		"regionalEffects": [
+			"傳奇黃玉龍巢穴周圍的區域會被龍的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "水晶叢生",
+						"entry": "巢穴 6 哩內的天然岩石會長出大量晶簇與黃玉礦脈，在地底尤其如此。",
+						"ENG_name": "Crystal Profusion"
+					},
+					{
+						"type": "item",
+						"name": "負能量",
+						"entry": "生物在巢穴 6 哩內完成長休時，必須先成功通過一次 {@dc 15} 體質豁免檢定，否則無法降低其{@condition exhaustion}等級，也無法恢復已消耗的生命骰。對死靈傷害具有抗性或免疫的生物免疫此區域效應。",
+						"ENG_name": "Negative Energy"
+					},
+					{
+						"type": "item",
+						"name": "野生動物繁盛",
+						"entry": "巨烏賊會被吸引到巢穴 6 哩內的海域，大量遷徙至此並在此獵食。",
+						"ENG_name": "Thriving Wildlife"
+					},
+					{
+						"type": "item",
+						"name": "水之視界",
+						"entry": "巢穴 6 哩內的水是龍靈能存在的導管。龍可以用一個動作施展{@spell clairvoyance}法術，無需法術構材，並以該區域內任一水體為目標。",
+						"ENG_name": "Watery Sight"
+					}
+				]
+			},
+			"若龍死亡，該區域的巨烏賊族群會在 {@dice 1d10} 天內恢復到正常水準。現有的大量晶體與黃玉會保留下來，但新的會以正常速度形成。"
+		],
+		"ENG_name": "Topaz Dragon"
 	},
 	"Unicorn|MM": {
 		"name": "獨角獸",

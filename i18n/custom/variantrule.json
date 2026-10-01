@@ -34,7 +34,7 @@
 				"name": "爬上更大的生物",
 				"type": "entries",
 				"entries": [
-					"若一個生物想跳到另一個生物身上，它可以透過擒抱來做到。然而，除非魔法賦予擒抱者超自然的力量，否則小型或中型生物很難成功擒抱超大型或巨型生物。",
+					"若一個生物想跳到另一個生物身上，它可以透過擒抱來做到。然而，除非魔法賦予擒抱者超自然的力量，否則小型或中型生物很難成功擒抱巨型或超巨型生物。",
 					"作為替代方案，體型足夠大的對手可以被視為地形，用來跳上其背部或攀附在其肢體上。在進行任何必要的屬性檢定以就定位並爬上較大的生物後，較小的生物使用其動作進行一次力量（{@skill Athletics}）或敏捷（{@skill Acrobatics}）檢定，與目標的敏捷（{@skill Acrobatics}）檢定進行對抗。若它贏得對抗，較小的生物便成功移入目標生物的空間，隨目標一起移動，並在對其進行的攻擊檢定上具有優勢。",
 					"較小的生物可以在較大生物的空間內四處移動，將該空間視為{@quickref difficult terrain||3}。較大的生物能否攻擊較小的生物，取決於較小生物的位置，由你裁量。較大的生物可以使用一個動作甩掉較小的生物——將它撞下來、在牆上摩擦，或抓住並扔出去——方法是進行一次力量（{@skill Athletics}）檢定，與較小生物的力量（{@skill Athletics}）或敏捷（{@skill Acrobatics}）檢定進行對抗。由較小的生物選擇使用哪種屬性。"
 				],
@@ -448,7 +448,7 @@
 						"type": "entries",
 						"name": "生命值",
 						"entries": [
-							"物件的生命值降至 0 時即被摧毀。「物件生命值」表建議了大型或更小之脆弱與堅固物件的{@variantrule Hit Points|XPHB}。要追蹤超大型或巨型物件的生命值，將其分成數個大型或更小的區塊，並分別追蹤每個區塊的{@variantrule Hit Points|XPHB}。由 DM 決定摧毀物件的一部分是否會導致整個物件崩塌。"
+							"物件的生命值降至 0 時即被摧毀。「物件生命值」表建議了大型或更小之脆弱與堅固物件的{@variantrule Hit Points|XPHB}。要追蹤巨型或超巨型物件的生命值，將其分成數個大型或更小的區塊，並分別追蹤每個區塊的{@variantrule Hit Points|XPHB}。由 DM 決定摧毀物件的一部分是否會導致整個物件崩塌。"
 						],
 						"ENG_name": "Hit Points"
 					}
@@ -610,12 +610,12 @@
 						"{@dice #$prompt_number:title=Enter Strength Score$# × 60|Str. × 60} lb."
 					],
 					[
-						"超大型",
+						"巨型",
 						"{@dice #$prompt_number:title=Enter Strength Score$# × 60|Str. × 60} lb.",
 						"{@dice #$prompt_number:title=Enter Strength Score$# × 120|Str. × 120} lb."
 					],
 					[
-						"巨型",
+						"超巨型",
 						"{@dice #$prompt_number:title=Enter Strength Score$# × 120|Str. × 120} lb.",
 						"{@dice #$prompt_number:title=Enter Strength Score$# × 240|Str. × 240} lb."
 					]
@@ -769,11 +769,11 @@
 						"{@damage 4d10}"
 					],
 					[
-						"超大型",
+						"巨型",
 						"{@damage 8d10}"
 					],
 					[
-						"巨型",
+						"超巨型",
 						"{@damage 16d10}"
 					]
 				]
@@ -6942,11 +6942,11 @@
 								"-2"
 							],
 							[
-								"超大型",
+								"巨型",
 								"-5"
 							],
 							[
-								"巨型",
+								"超巨型",
 								"-8"
 							]
 						]
@@ -14001,11 +14001,11 @@
 								"{@damage 4d10}"
 							],
 							[
-								"超大型",
+								"巨型",
 								"{@damage 8d10}"
 							],
 							[
-								"巨型",
+								"超巨型",
 								"{@damage 16d10}"
 							]
 						]
@@ -14498,7 +14498,7 @@
 		"basicRules2024": true,
 		"ruleType": "C",
 		"entries": [
-			"生物或物件屬於某個體型類別：微型、小型、中型、大型、超大型或巨型。生物的體型決定它在戰鬥中佔據多少空間。物件的體型會影響其{@variantrule Hit Points|XPHB}。"
+			"生物或物件屬於某個體型類別：微型、小型、中型、大型、巨型或超巨型。生物的體型決定它在戰鬥中佔據多少空間。物件的體型會影響其{@variantrule Hit Points|XPHB}。"
 		],
 		"ENG_name": "Size"
 	},
@@ -15102,7 +15102,7 @@
 						"type": "entries",
 						"name": "體型",
 						"entries": [
-							"{@variantrule Monster|XPHB|怪物}的體型為微型、小型、中型、大型、超大型或巨型。"
+							"{@variantrule Monster|XPHB|怪物}的體型為微型、小型、中型、大型、巨型或超巨型。"
 						],
 						"ENG_name": "Size"
 					},

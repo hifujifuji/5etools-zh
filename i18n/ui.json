@@ -1523,12 +1523,16 @@
 			"$1 級"
 		],
 		[
+			"[Tt]ypically (.+)",
+			"通常為{1}"
+		],
+		[
 			"(Tiny|Small|Medium|Large|Huge|Gargantuan) (\\w+)",
 			"{1}{2}"
 		],
 		[
 			"(Tiny|Small|Medium|Large|Huge|Gargantuan) (\\w+) \\((.+)\\)",
-			"{1}{2}（$3）"
+			"{1}{2}（{3}）"
 		],
 		[
 			"(Tiny|Small|Medium|Large|Huge|Gargantuan) or (Tiny|Small|Medium|Large|Huge|Gargantuan) (\\w+)",
