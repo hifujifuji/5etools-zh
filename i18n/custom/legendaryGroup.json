@@ -1564,6 +1564,45 @@
 		],
 		"ENG_name": "Death Tyrant"
 	},
+	"Deep Dragon|FRAIF": {
+		"name": "深地龍",
+		"source": "FRAiF",
+		"regionalEffects": [
+			"成年或遠古深地龍巢穴所在的區域會因牠的存在而改變，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "知識保存",
+						"entries": [
+							"巢穴 1 哩內的書籍與其他書面形式的文字會受到魔法保護，無法被非魔法手段損壞。"
+						],
+						"ENG_name": "Preservation of Knowledge"
+					},
+					{
+						"type": "item",
+						"name": "不安之眠",
+						"entries": [
+							"生物在巢穴 1 哩內完成長休時，進行一次 {@dc 10} 體質豁免檢定。豁免失敗的生物不會因完成那次長休而降低其力竭等級。免疫中毒狀態的生物免疫此效應。"
+						],
+						"ENG_name": "Restless Sleep"
+					},
+					{
+						"type": "item",
+						"name": "蔥鬱生長",
+						"entries": [
+							"龍的巢穴 1 哩內的植被與真菌生長得比平常更快，覆蓋的面積也更廣。在此區域覓食可獲得平常兩倍的食物。龍會立即察覺任何吃下這些強化植物的生物的存在。"
+						],
+						"ENG_name": "Verdant Growth"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效應會立即結束。"
+		],
+		"ENG_name": "Deep Dragon"
+	},
 	"Deep Dragon|FTD": {
 		"name": "深地龍",
 		"source": "FTD",
@@ -3235,6 +3274,37 @@
 		],
 		"ENG_name": "Juiblex"
 	},
+	"Karas Chembryl|FRAIF": {
+		"name": "卡拉斯·錢布瑞爾",
+		"source": "FRAiF",
+		"regionalEffects": [
+			"卡拉斯將她與死亡三神的連結延伸到她棲身的區域，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "蔓延恐懼",
+						"entries": [
+							"恐懼在卡拉斯的領域內肆虐。在巢穴 1 哩內，散塔林會成員以及班恩、巴爾或米爾寇的教徒以外的生物，在為避免或結束恐懼狀態而進行的豁免檢定上具有劣勢。"
+						],
+						"ENG_name": "Creeping Dread"
+					},
+					{
+						"type": "item",
+						"name": "亡者之識",
+						"entries": [
+							"類人生物在巢穴 1 哩內死亡時，卡拉斯會得知該類人生物知道的一個秘密。"
+						],
+						"ENG_name": "Death's Lore"
+					}
+				]
+			},
+			"若卡拉斯死亡或將巢穴遷往他處，這些效應會立即結束。"
+		],
+		"ENG_name": "Karas Chembryl"
+	},
 	"Ki-rin|MPMM": {
 		"name": "麒麟",
 		"source": "MPMM",
@@ -4829,6 +4899,37 @@
 			"若斯芬克斯死亡或將巢穴遷往他處，這些效果便立即結束。"
 		],
 		"ENG_name": "Sphinx"
+	},
+	"Spirit Dragon|FRAIF": {
+		"name": "靈龍",
+		"source": "FRAiF",
+		"regionalEffects": [
+			"成年或遠古靈龍巢穴所在的區域會因牠的存在而改變，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "魔化聲響",
+						"entries": [
+							"巢穴 1 哩內的生物在涉及歌唱或演奏音樂的魅力（{@skill Performance|XPHB}）檢定上具有優勢。該區域內除龍及其盟友以外的生物，在為避免或結束魅惑狀態而進行的豁免檢定上具有劣勢。"
+						],
+						"ENG_name": "Enchanted Acoustics"
+					},
+					{
+						"type": "item",
+						"name": "時間扭曲",
+						"entries": [
+							"位於巢穴 1 哩內時，生物的老化速度為平常的十分之一。"
+						],
+						"ENG_name": "Time Distortion"
+					}
+				]
+			},
+			"若龍死亡或將巢穴遷往他處，這些效應會立即結束。"
+		],
+		"ENG_name": "Spirit Dragon"
 	},
 	"Storm Giant Quintessent|MPMM": {
 		"name": "風暴巨人．昇華者",
