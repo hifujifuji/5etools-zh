@@ -238,7 +238,7 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 // ---- 3a'. 種族／背景／專長中完全比對的句子（含 _copy、_versions；i18n/exact-strings.json） --------
 {
 	const ex = readI18n(path.join(I18N, "exact-strings.json"));
-	const PROPS = new Set(["race", "subrace", "background", "feat", "raceFluff", "backgroundFluff", "variantrule", "item"]);
+	const PROPS = new Set(["race", "subrace", "background", "feat", "raceFluff", "backgroundFluff", "variantrule", "item", "card", "deck", "classFeature"]);
 	// name 只在「巢狀的條目」（有 entries）裡翻；replace／names 等是 _copy 用來比對的鍵，不能動
 	// _copy 裡的條目名稱會被後續的 _copy 用來比對，一律不翻
 	const walk = (v, depth = 0, inCopy = false) => {
@@ -247,7 +247,7 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 		if (v && typeof v === "object") {
 			for (const k of Object.keys(v)) {
 				if (k === "name" || k === "_zhOf") continue; // 條目名稱可能被其他 _copy 以英文比對，不動
-				if (!["source", "replace", "mode", "prop", "names"].includes(k)) v[k] = walk(v[k], depth + 1, inCopy || k === "_copy");
+				if (!["source", "replace", "mode", "prop", "names", "set", "suit", "valueName", "cards", "face", "back", "className", "classSource", "subclassShortName", "subclassSource"].includes(k)) v[k] = walk(v[k], depth + 1, inCopy || k === "_copy");
 			}
 		}
 		return v;
@@ -272,6 +272,8 @@ for (const {json} of loaded) {
 		for (const e of arr) {
 			if (!e?.name_zh || e._zhOf !== e.name) continue;
 			const lc = e.name.toLowerCase();
+			// 卡牌標籤是 {@card 名稱|牌組|來源|顯示}，同名卡牌很多，要連牌組一起比對
+			if (tag === "card") { tagNames.set(`card|${lc}|${(e.set || "").toLowerCase()}|${S(e.source)}`, e.name_zh); continue; }
 			tagNames.set(`${tag}|${lc}|${S(e.source)}`, e.name_zh);
 			if (!tagNames.has(`${tag}|${lc}`)) tagNames.set(`${tag}|${lc}`, e.name_zh);
 		}
@@ -287,6 +289,15 @@ let nTagDisplay = 0;
 const RE_TAG = /\{@(\w+) ([^{}]*)\}/g;
 const fillTags = (str, isOverrideEn = false) => str.replace(RE_TAG, (m, tag, body) => {
 	const parts = body.split("|");
+	if (tag === "card") {
+		if (parts[3] || hasCjk(parts[0])) return m;
+		const zh = tagNames.get(`card|${parts[0].trim().toLowerCase()}|${(parts[1] || "").trim().toLowerCase()}|${S(parts[2] || "DMG")}`);
+		if (!zh) return m;
+		while (parts.length < 3) parts.push("");
+		parts[3] = zh;
+		nTagDisplay++;
+		return `{@card ${parts.join("|")}}`;
+	}
 	// 已有顯示文字就保留；但「只有標籤」的字串裡的英文顯示文字（如 Bottle, Glass）可以換成中文
 	if ((parts[2] && !(isOverrideEn && !hasCjk(parts[2]) && !/\d/.test(parts[2]) && parts.length === 3)) || hasCjk(parts[0])) return m;
 	const lc = parts[0].trim().toLowerCase();
@@ -298,7 +309,7 @@ const fillTags = (str, isOverrideEn = false) => str.replace(RE_TAG, (m, tag, bod
 	return `{@${tag} ${parts.join("|")}}`;
 });
 // 已翻譯實體裡「只有標籤」的字串（例如法術表的一格 {@spell Cone of Cold|XPHB}）也補上中文名
-const RE_ONLY_TAGS = /^[\s\d,;:()+\-–]*(\{@[^{}]+\}[\s\d,;:()+\-–]*)+$/;
+const RE_ONLY_TAGS = /^[\s\d,;:()+\-–*]*(\{@[^{}]+\}[\s\d,;:()+\-–*]*)+$/;
 // 法術清單（怪物施法）會被 _copy 的 replaceSpells 用字串比對，不能動
 const NO_FILL_KEYS = new Set(["will", "daily", "spells", "weekly", "monthly", "yearly", "rest", "restLong", "ritual", "recharge", "charges", "legendary", "_copy", "_mod"]);
 const walkStrings = (v, inZh = false) => {

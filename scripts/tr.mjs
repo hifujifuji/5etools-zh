@@ -58,6 +58,8 @@ const FILES_BY_PROP = {
 	condition: () => ["conditionsdiseases.json"],
 	disease: () => ["conditionsdiseases.json"],
 	status: () => ["conditionsdiseases.json"],
+	card: () => ["decks.json"],
+	deck: () => ["decks.json"],
 };
 // 寫入的翻譯檔名（fluff 在 build 裡用 fluff-xxx 這個名稱）
 const OUT_FILE = {raceFluff: "fluff-race", backgroundFluff: "fluff-background", monsterFluff: "fluff-monster", itemFluff: "fluff-item"};
@@ -77,12 +79,14 @@ function _loadEntities (prop) {
 // ---- 走訪文字（與 merge.mjs 的規則一致） ---------------------------------------
 // 回傳 [{path, text, isName}]；純數字、純標籤的字串不用翻，略過
 const RE_ONLY_TAG = /^\s*(\{@[^{}]+\}\s*)+$/;
+// 整句包在 {@i}／{@note} 等文字標籤裡的句子仍要翻（例如卡牌開頭的斜體描述）
+const RE_TEXT_TAG = /\{@(i|b|note|style|u|bold|italic) [^{}|]*[A-Za-z]{3}/;
 function collect (ent) {
 	// itemProperty 沒有頂層名稱（名稱在 entries[0].name）
 	const out = typeof ent.name === "string" ? [{path: ["name"], text: ent.name, isName: true}] : [];
 	const walk = (v, p, isText) => {
 		if (typeof v === "string") {
-			if (isText && /[A-Za-z]/.test(v) && !RE_ONLY_TAG.test(v)) out.push({path: p, text: v});
+			if (isText && /[A-Za-z]/.test(v) && (!RE_ONLY_TAG.test(v) || RE_TEXT_TAG.test(v))) out.push({path: p, text: v});
 			return;
 		}
 		if (Array.isArray(v)) return v.forEach((x, i) => walk(x, [...p, i], isText));
@@ -178,10 +182,12 @@ if (cmd === "export") {
 		// 同 key 可能有多筆（例如不同 classSource 的子職業特性），挑字串相符的那筆
 		const cands = loadEntities(it.prop).filter(e => keyOf(it.prop, e) === it.key);
 		if (!cands.length) { problems.push(`上游找不到：${it.key}`); continue; }
-		const ent = cands.find(e => JSON.stringify(collect(e).map(x => x.text)) === JSON.stringify(it.s)) || cands[0];
+		// 舊批次匯出時不含「整句包在文字標籤裡」的句子；數量對不上時改用舊規則收集
+		const collectFor = e => { const all = collect(e); return all.length === it.s.length ? all : all.filter(x => !RE_ONLY_TAG.test(x.text)); };
+		const ent = cands.find(e => JSON.stringify(collectFor(e).map(x => x.text)) === JSON.stringify(it.s)) || cands[0];
 		// 同 key 已有較完整的翻譯時，不讓精簡版覆蓋
 		if ((byProp[it.prop]?.[it.key]?.__n || 0) > it.s.length) continue;
-		const strs = collect(ent);
+		const strs = collectFor(ent);
 		const cpy = structuredClone(ent);
 		let bad = false;
 		strs.forEach((x, i) => {

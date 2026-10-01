@@ -27,6 +27,7 @@ export function makeKeyFns (subclassFullName) {
 	const scName = e => subclassFullName[`${e.className}|${e.subclassShortName}|${S(e.subclassSource)}`];
 	const KEY = {
 		deity: e => `${e.name}|${S(e.source)}|${e.pantheon || ""}`,
+		card: e => `${e.name}|${S(e.source)}|${e.set}`,
 		subrace: e => `${e.raceName}|${e.name}|${S(e.source)}`,
 		classFeature: e => `${e.name}|${e.className}|${S(e.classSource)}|${e.level}`,
 		subclassFeature: e => `${e.name}|${e.className}|${scName(e)}|${S(e.source)}`,
