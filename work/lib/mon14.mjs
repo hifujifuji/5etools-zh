@@ -105,7 +105,9 @@ export function makeTranslator ({d, tpls}, name, zhName, hint = {}, strings = []
 	const norm = s => { if (!proper) return norm0(s); const [mk, tags] = mask(s); return unmask(mk.replace(reBare, (m0, pre, off) => `${pre}${off === 0 && !pre ? "The" : "the"} {X}`), tags); };
 	const X = zhName;
 	const names = {};
-	const nm = o => names[o] ?? d[`NAME:${o}`] ?? hint[o] ?? OLD[o.toLowerCase()];
+	const nm1 = o => names[o] ?? d[`NAME:${o}`] ?? hint[o];
+	// 2014 版內文常用小寫（two claw attacks、with its claws）：依序試原樣、字首大寫、單複數
+	const nm = o => { const t = o.toTitle(); for (const k of [o, t, t.replace(/s$/, ""), `${t}s`]) { const z = nm1(k); if (z) return z; } return OLD[o.toLowerCase()]; };
 	const fin = z => z.replaceAll("{X}", X);
 
 	const rule = s => {
@@ -140,6 +142,18 @@ export function makeTranslator ({d, tpls}, name, zhName, hint = {}, strings = []
 			};
 			const alts = m[1].split(/, or (?:it|he|she) makes /).map(alt);
 			if (alts.every(Boolean)) return `${X}進行${alts.join("，或進行")}。`;
+		}
+		if ((m = /^(\d+)(?:st|nd|rd|th) level \((\d+) slots?\):$/.exec(s))) return `${m[1]} 環（${m[2]} 個法術位）：`;
+		if (/^Cantrips? \(at will\):$/.test(s)) return "戲法（隨意）：";
+		// makes three attacks: one with its bite and two with its claws or greatsword
+		if ((m = /^The \{X\} makes (one|two|three|four|five|six|seven|eight) (?:melee )?attacks: (.+)\.$/.exec(s))) {
+			const items = m[2].split(/, and |, | and /).map(it => {
+				const k = /^(one|two|three|four|five|six|seven|eight) with its (.+)$/.exec(it);
+				if (!k) return null;
+				const ns = k[2].split(/ or (?:its )?/).map(nm);
+				return ns.every(Boolean) ? `${NUM[k[1]]}次${ns.join("或")}` : null;
+			});
+			if (items.every(Boolean)) return `${X}進行${NUM[m[1]]}次攻擊：${items.length > 1 ? `${items.slice(0, -1).join("、")}，以及${items.at(-1)}` : items[0]}。`;
 		}
 		const cnt = "(one|two|three|four|five|six|seven|eight)";
 		if ((m = new RegExp(`^The \\{X\\} makes ${cnt} (.+?) attacks?\\.$`).exec(s)) && nm(m[2])) return `${X}進行${NUM[m[1]]}次${nm(m[2])}攻擊。`;
@@ -214,12 +228,24 @@ export function makeTranslator ({d, tpls}, name, zhName, hint = {}, strings = []
 String.prototype.toTitle = function () { return this.replace(/\b[a-z]/g, c => c.toUpperCase()); };
 
 // ---- CLI ---------------------------------------------------------------------
-const [cmd, src, arg3] = process.argv.slice(2);
+const [cmd, src, arg3, prop = "monster"] = process.argv.slice(2); // 第 4 個參數可指定 prop（例如 legendaryGroup）
 if (["todo", "make", "names"].includes(cmd)) {
-	const tmp = cmd === "make" ? arg3 : `_m14-${src.toLowerCase()}`;
+	const tmp = cmd === "make" ? arg3 : `_m14-${prop === "monster" ? "" : prop + "-"}${src.toLowerCase()}`;
 	const enFile = new URL(`work/${tmp}.en.json`, ROOT);
-	if (!fs.existsSync(enFile)) execFileSync("node", ["scripts/tr.mjs", "export", tmp, "--prop", "monster", "--source", src], {cwd: ROOT});
+	if (!fs.existsSync(enFile)) execFileSync("node", ["scripts/tr.mjs", "export", tmp, "--prop", prop, "--source", src], {cwd: ROOT});
 	const en = JSON.parse(fs.readFileSync(enFile, "utf8"));
+	// 預設只處理 dist 中尚未完整翻譯的怪物（環境變數 ALL=1 則全部）；hazmole 已完整翻好的保留原譯
+	if (prop === "monster" && !process.env.ALL) {
+		const full = new Set();
+		const dir = new URL("dist/data/bestiary/", ROOT);
+		const isEn = v => typeof v === "string" ? /[A-Za-z]{4,}/.test(v.replace(/\{@[^{}]*(?:\{[^{}]*\}[^{}]*)*\}/g, "")) && !hasCjk(v) : Array.isArray(v) ? v.some(isEn) : v && typeof v === "object" ? Object.entries(v).some(([k, x]) => !["name", "_zhOf", "type", "style", "source", "ability", "spells", "will", "daily", "hidden", "displayAs", "rest", "ritual", "recharge", "charges"].includes(k) && isEn(x)) : false;
+		if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir).filter(f => f.startsWith("bestiary-"))) for (const m of JSON.parse(fs.readFileSync(new URL(f, dir), "utf8")).monster || []) {
+			if (m.name_zh && !["trait", "action", "bonus", "reaction", "legendary", "mythic", "spellcasting"].some(k => isEn(m[k]))) full.add(`${m.name}|${m.source.toUpperCase()}`);
+		}
+		const n0 = en.items.length;
+		en.items = en.items.filter(it => !full.has(it.key.toUpperCase().replace(/^(.*)\|/, (x, n) => `${it.s[0]}|`)));
+		if (en.items.length !== n0) console.error(`（略過 ${n0 - en.items.length} 隻已完整翻譯的怪物）`);
+	}
 	const dict = loadDict();
 	const zhOf = it => dict.d[`NAME:${it.s[0]}`] ?? it.hint?.[it.s[0]] ?? OLD[it.s[0].toLowerCase()];
 	if (cmd === "names") { for (const it of en.items) console.log(`${it.s[0]}\t${zhOf(it) ?? ""}`); process.exit(0); }
