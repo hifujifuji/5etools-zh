@@ -1,0 +1,960 @@
+{
+	"batch": "vrgr-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Bodytaker Plant|VRGR",
+			"hint": {
+				"Rejuvenation": "回春",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Vine Lash": "藤蔓鞭擊"
+			},
+			"s": [
+				"Bodytaker Plant",
+				"natural armor",
+				"Podling Link",
+				"The plant can see through and communicate telepathically with any of its podlings within 10 miles of it.",
+				"Rejuvenation",
+				"When the plant dies, it returns to life in the place where it died {@dice 1d12} months later, unless the ground where it took root is sown with salt or soaked with poison.",
+				"Unusual Nature",
+				"The plant doesn't require sleep.",
+				"Multiattack",
+				"The plant makes three Vine Lash attacks.",
+				"Vine Lash",
+				"{@atk mw} {@hit 7} to hit, reach 20 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 15}). Until the grapple ends, the target is {@condition restrained}. The plant has four vines, each of which can grapple one target.",
+				"Entrapping Pod",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one Medium or smaller creature {@condition grappled} by the plant. {@h}22 ({@damage 4d8 + 4}) acid damage, and the target is pulled into the plant's space and enveloped by the pod, and the grapple ends. While enveloped, the target is {@condition restrained}, and it has {@quickref Cover||3||total cover} against attacks and effects originating outside the pod. The enveloped target must also immediately succeed on a {@dc 16} Constitution saving throw or be {@condition stunned} by the plant's sapping enzymes until it is removed from the pod or the plant dies. The enveloped target doesn't require air and gains 1 level of {@condition exhaustion} for each hour it spends in the pod. If the target dies while enveloped, it immediately emerges from the pod as a living podling, wearing or carrying all of the original creature's equipment.",
+				"As an action, a creature within 5 feet of the bodytaker plant that is outside the pod can open the pod and pull the target free with a successful {@dc 15} Strength check. If the plant dies, the target is no longer {@condition restrained} and can escape from the pod by spending 10 feet of movement, exiting {@condition prone}. The plant has one pod, which can envelop one creature at a time."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Boneless|VRGR",
+			"hint": {
+				"Boneless": "無骨",
+				"Compression": "擠壓",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Boneless",
+				"Compression",
+				"The boneless can move through any opening at least 1 inch wide without squeezing. It can also squeeze to fit into a space that a Tiny creature could fit in.",
+				"Unusual Nature",
+				"The boneless doesn't require sleep.",
+				"Multiattack",
+				"The boneless makes two Slam attacks. If both attacks hit a Large or smaller creature, the creature is {@condition grappled} (escape {@dc 13}), and the boneless can use Crushing Embrace.",
+				"Slam",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage.",
+				"Crushing Embrace",
+				"The boneless wraps its body around a Large or smaller creature {@condition grappled} by it. While the boneless is attached, the target is {@condition blinded} and is unable to breathe. The target must succeed on a {@dc 13} Strength saving throw at the start of each of the boneless' turns or take 5 ({@damage 1d4 + 3}) bludgeoning damage. If something moves the target, the boneless moves with it. The boneless can detach itself by spending 5 feet of its movement. A creature, including the target, can use its action to try to detach the boneless and force it to move into the nearest unoccupied space, doing so with a successful {@dc 13} Strength check. When the boneless dies, it detaches from any creature it is attached to."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Brain in a Jar|VRGR",
+			"hint": {
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Magic Resistance": "魔法抗性",
+				"Unusual Nature": "異常本質",
+				"Mind Blast {@recharge 5}": "心靈衝擊 {@recharge 5}"
+			},
+			"s": [
+				"Brain in a Jar",
+				"natural armor",
+				"(hover)",
+				"Innate Spellcasting (Psionics)",
+				"The brain's innate spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It can innately cast the following spells, requiring no components:",
+				"Detect Sentience",
+				"The brain can sense the presence and location of any creature within 300 feet of it that has an Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by a {@spell mind blank} spell.",
+				"Magic Resistance",
+				"The brain has advantage on saving throws against spells and other magic effects.",
+				"Unusual Nature",
+				"The brain doesn't require air, food, drink, or sleep.",
+				"Chill Touch (Cantrip)",
+				"{@atk rs} {@hit 6} to hit, range 120 ft., one creature. {@h}13 ({@damage 3d8}) necrotic damage, and the target can't regain hit points until the start of the brain's next turn. If the target is undead, it also has disadvantage on attack rolls against the brain until the end of the brain's next turn.",
+				"Mind Blast {@recharge 5}",
+				"The brain magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 14} Intelligence saving throw or take 17 ({@damage 3d8 + 4}) psychic damage and be {@condition stunned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Carrion Stalker|VRGR",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Tentacle": "觸手"
+			},
+			"s": [
+				"Carrion Stalker",
+				"natural armor",
+				"Multiattack",
+				"The carrion stalker makes three Tentacle attacks. If it is attached to a creature, it can replace one Tentacle attack with Larval Burst, if available.",
+				"Tentacle",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d4 + 3}) piercing damage, and the carrion stalker attaches to the target and pulls itself into the target's space. While attached, the carrion stalker moves with the target and has advantage on attack rolls against it.",
+				"A creature can use its action to try to detach the carrion stalker and force it to move into the nearest unoccupied space, doing so with a successful {@dc 11} Strength check. On its turn, the carrion stalker can detach itself from the target by using 5 feet of movement. When it dies, the carrion stalker detaches from any creature it is attached to.",
+				"Larval Burst (1/Day)",
+				"The carrion stalker releases a burst of larvae in a 10-foot-radius sphere centered on itself. Each creature in that area must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned}. A creature {@condition poisoned} in this way takes 7 ({@damage 2d6}) poison damage at the start of each of its turns as larvae infest its body. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Any effect that cures disease or removes the {@condition poisoned} condition instantly kills the larvae in the creature, ending the effect on it.",
+				"If a creature is reduced to 0 hit points by the infestation, it dies. The larvae remain in the corpse, and one survives to become a fully grown carrion stalker in {@dice 1d4} weeks. Any effect that cures diseases or removes the {@condition poisoned} condition that targets the corpse instantly kills the larvae."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Carrionette|VRGR",
+			"hint": {
+				"Unusual Nature": "異常本質"
+			},
+			"s": [
+				"Carrionette",
+				"natural armor",
+				"False Object",
+				"If the carrionette is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the carrionette move or act, that creature must succeed on a {@dc 15} Wisdom ({@skill Perception}) check to discern that the carrionette is animate.",
+				"Unusual Nature",
+				"The carrionette doesn't require air, food, drink, or sleep.",
+				"Silver Needle",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}1 piercing damage plus 3 ({@damage 1d6}) necrotic damage, and the target must succeed on a {@dc 12} Charisma saving throw or become cursed for 1 minute. While cursed in this way, the target's speed is reduced by 10 feet, and it must roll a {@dice 1d4} and subtract the number rolled from each ability check or attack roll it makes.",
+				"Soul Swap",
+				"The carrionette targets a creature it can see within 15 feet of it that is cursed by its Silver Needle. Unless the target is protected by a {@spell protection from evil and good} spell, it must succeed on a {@dc 12} Charisma saving throw or have its consciousness swapped with the carrionette. The carrionette gains control of the target's body, and the target is {@condition unconscious} for 1 hour, after which it gains control of the carrionette's body. While controlling the target's body, the carrionette retains its Intelligence, Wisdom, and Charisma scores. It otherwise uses the controlled body's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
+				"If the carrionette's body is destroyed, both the carrionette and the target die. A {@spell protection from evil and good} spell cast on the controlled body drives the carrionette out and returns the consciousness of both creatures to their original bodies. The swap is also undone if the controlled body takes damage from the carrionette's Silver Needle."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Death's Head|VRGR",
+			"hint": {
+				"Unusual Nature": "異常本質"
+			},
+			"s": [
+				"Death's Head",
+				"natural armor",
+				"(hover)",
+				"Beheaded Form",
+				"When created, a death's head takes one of three forms: Aberrant Head, Gnashing Head, or Petrifying Head. This form determines the creature's attack.",
+				"Unusual Nature",
+				"The death's head doesn't require air, food, drink, or sleep.",
+				"Gnashing Bite (Gnashing Head Only)",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage plus 7 ({@damage 2d6}) necrotic damage.",
+				"Mind-Bending Bite (Aberrant Head Only)",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage plus 5 ({@damage 1d10}) necrotic damage, and the target must succeed on a {@dc 10} Intelligence saving throw or it can't take a reaction until the end of its next turn. Moreover, on its next turn, the target must choose whether it gets a move, an action, or a bonus action; it gets only one of the three.",
+				"Petrifying Bite (Petrifying Head Only)",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage, and the target must succeed on a {@dc 10} Constitution saving throw or be {@condition restrained} as it begins to turn to stone. The target must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the target is {@condition petrified} for 10 minutes."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dullahan|VRGR",
+			"hint": {
+				"Legendary Resistance (2/Day)": "傳奇抗性（每日 2 次）",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Battleaxe": "戰斧",
+				"Attack": "攻擊"
+			},
+			"s": [
+				"Dullahan",
+				"Headless Summoning (Recharges after a Short or Long Rest)",
+				"If the dullahan is reduced to 0 hit points, it doesn't die or fall {@condition unconscious}. Instead, it regains 97 hit points. In addition, it summons three {@creature death's head|VRGR|death's heads}, one of each type, in unoccupied spaces within 5 feet of it. The death's heads are under the dullahan's control and act immediately after the dullahan in the initiative order. Additionally, the dullahan can now use the options in the \"Mythic Actions\" section. Award a party an additional 5,900 XP (11,800 XP total) for defeating the dullahan after it uses Headless Summoning.",
+				"Legendary Resistance (2/Day)",
+				"If the dullahan fails a saving throw, it can choose to succeed instead.",
+				"Unusual Nature",
+				"The dullahan doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The dullahan makes two attacks.",
+				"Battleaxe",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) slashing damage if used with two hands, plus 11 ({@damage 2d10}) necrotic damage. If the dullahan scores a critical hit against a creature, the target must succeed on a {@dc 15} Constitution saving throw or the dullahan cuts off the target's head. The target dies if it can't survive without the lost head. A creature that doesn't have or need a head, or has legendary actions, instead takes an extra 27 ({@damage 6d8}) slashing damage.",
+				"Fiery Skull",
+				"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}14 ({@damage 2d10 + 3}) fire damage.",
+				"Attack",
+				"The dullahan makes one attack.",
+				"Frightful Presence (Costs 2 Actions)",
+				"Each creature of the dullahan's choice within 30 feet of it must succeed on a {@dc 15} Wisdom saving throw or become {@condition frightened} of the dullahan until the end of its next turn.",
+				"Head Hunt (Costs 3 Actions)",
+				"The dullahan moves up to its speed without provoking opportunity attacks and makes one Battleaxe attack with advantage. If the attack hits, but is not a critical hit, the attack deals an extra 27 ({@damage 6d8}) necrotic damage.",
+				"If the dullahan's Headless Summoning trait is active, it can use the options below as legendary actions.",
+				"Coordinated Assault",
+				"The dullahan makes a Battleaxe attack, and then one {@creature death's head|VRGR} the dullahan can see within 30 feet of it can use its reaction to make a melee attack.",
+				"Headless Wail (Costs 2 Actions)",
+				"An echoing shriek issues from the dullahan's headless stump. Each creature of the dullahan's choice within 10 feet of it must make a {@dc 15} Wisdom saving throw. Each creature takes 16 ({@damage 3d10}) psychic damage on a failed save, or half as much damage on a successful one. If one or more creatures fail the saving throw, the dullahan gains 10 temporary hit points."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Elise|VRGR",
+			"hint": {
+				"Immutable Form": "不變形態",
+				"Lightning Absorption": "吸收閃電",
+				"Magic Resistance": "魔法抗性",
+				"Magic Weapons": "魔法武器",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Elise",
+				"Immutable Form",
+				"Elise is immune to any spell or effect that would alter her form.",
+				"Lightning Absorption",
+				"Whenever Elise is subjected to lightning damage, she takes no damage and instead regains a number of hit points equal to the lightning damage dealt.",
+				"Magic Resistance",
+				"Elise has advantage on saving throws against spells and other magical effects.",
+				"Magic Weapons",
+				"Elise's weapon attacks are magical.",
+				"Multiattack",
+				"Elise makes two slam attacks.",
+				"Slam",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gallows Speaker|VRGR",
+			"hint": {
+				"Incorporeal Movement": "虛體移動",
+				"Unusual Nature": "異常本質"
+			},
+			"s": [
+				"Gallows Speaker",
+				"(hover)",
+				"Divination Senses",
+				"The gallows speaker can see 60 feet into the Ethereal Plane when it is on the Material Plane and vice versa.",
+				"Incorporeal Movement",
+				"The gallows speaker can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends it turn inside an object.",
+				"Unusual Nature",
+				"The gallows speaker doesn't require air, food, drink, or sleep.",
+				"Foretelling Touch",
+				"{@atk ms} {@hit 7} to hit, reach 5 ft., one creature. {@h}15 ({@damage 2d10 + 4}) psychic damage, and the target must roll a {@dice d4} and subtract the number rolled from the next attack roll or saving throw it makes before the start of the gallows speaker's next turn.",
+				"Suffering Echoes",
+				"The gallows speaker targets a creature it can see within 30 feet of it. The target must make a {@dc 15} Wisdom saving throw. On a failed save, the target takes 19 ({@damage 3d12}) psychic damage, and waves of painful memories leap from the target to up to three other creatures of the gallows speaker's choice that are within 30 feet of the target, each of which takes 13 ({@damage 3d8}) psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Greater Star Spawn Emissary|VRGR",
+			"hint": {
+				"Legendary Resistance (4/Day)": "傳奇抗性（每日 4 次）",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Psychic Orb": "心靈法球",
+				"Attack": "攻擊"
+			},
+			"s": [
+				"Greater Star Spawn Emissary",
+				"natural armor",
+				"(hover)",
+				"Legendary Resistance (4/Day)",
+				"If the emissary fails a saving throw, it can choose to succeed instead.",
+				"Unusual Nature",
+				"The emissary doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The emissary makes three attacks.",
+				"Lashing Maw",
+				"{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}20 ({@damage 2d10 + 7}) piercing damage plus 13 ({@damage 3d8}) acid damage.",
+				"Psychic Orb",
+				"{@atk rs} {@hit 15} to hit, range 120 ft., one creature. {@h}27 ({@damage 3d12 + 8}) psychic damage.",
+				"Unearthly Bile {@recharge 5}",
+				"The emissary expels bile that splashes all creatures in a 30-foot-radius sphere centered on a point within 120 feet of the emissary. Each creature in that area must make a {@dc 23} Dexterity saving throw, taking 55 ({@damage 10d10}) acid damage on a failed save, or half as much damage on a successful one. For each creature that fails the saving throw, a {@creature gibbering mouther} (see its entry in the Monster Manual) appears in an unoccupied space on a surface that can support it within 30 feet of that creature. The gibbering mouthers act right after the emissary on the same initiative count, gaining a +7 bonus to their attack and damage rolls, and fighting until they are destroyed. They disappear when the emissary dies.",
+				"Attack",
+				"The emissary teleports up to 30 feet to an unoccupied space it can see and makes one attack.",
+				"Warp Space (Costs 2 Actions)",
+				"The emissary causes the ground in a 20-foot square that it can see within 90 feet of it to turn into teeth and maws until the start of its next turn. The area becomes {@quickref difficult terrain||3} for the duration. Any creature takes 10 ({@damage 3d6}) piercing damage for each 5 feet it moves on this terrain.",
+				"Mind Cloud (Costs 3 Actions)",
+				"The emissary unleashes a psychic wave. Each creature within 30 feet of the emissary must succeed on a {@dc 23} Wisdom saving throw or take 32 ({@damage 5d12}) psychic damage. In addition, every spell ends on creatures and objects of the emissary's choice in that area."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gremishka|VRGR",
+			"hint": {
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Gremishka",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4 + 2}) piercing damage plus 3 ({@damage 1d6}) force damage.",
+				"Magic Allergy (1/Day)",
+				"Immediately after a creature within 30 feet of the gremishka casts a spell, the gremishka can spontaneously react to the magic. Roll a {@dice d6} to determine the effect:",
+				"1-2",
+				"The gremishka emanates magical energy. Each creature within 30 feet of the gremishka must succeed on a {@dc 10} Constitution saving throw or take 3 ({@damage 1d6}) force damage.",
+				"3-4",
+				"The gremishka surges with magical energy and regains 3 ({@dice 1d6}) hit points.",
+				"5-6",
+				"The gremishka explodes and dies, and one swarm of gremishkas instantly appears in the space where this gremishka died. The swarm uses the gremishka's initiative."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Inquisitor of the Mind Fire|VRGR",
+			"hint": {
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Inquisitor of the Mind Fire",
+				"Innate Spellcasting (Psionics)",
+				"The inquisitor casts one of the following spells, requiring no components and using Charisma as the spellcasting ability (spell save {@dc 15}):",
+				"Multiattack",
+				"The inquisitor attacks twice with its Silver Longsword or uses Mind Fire twice.",
+				"Silver Longsword",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@dice 1d10 + 4}) if used with two hands, plus 18 ({@damage 4d8}) force damage.",
+				"Mind Fire",
+				"The inquisitor targets one creature it can see within 120 feet of it. The target must succeed on a {@dc 15} Intelligence saving throw or take 17 ({@damage 3d8 + 4}) psychic damage and be {@condition stunned} until the start of the inquisitor's next turn.",
+				"Inquisitor's Command {@recharge 5}",
+				"Each creature of the inquisitor's choice that it can see within 60 feet of it must succeed on a {@dc 15} Wisdom saving throw or be {@condition charmed} until the start of the inquisitor's next turn. On the {@condition charmed} target's turn, the inquisitor can telepathically control the target's move, action, or both. When controlled in this way, the target can take only the Attack (inquisitor chooses the target) or {@action Dash} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Inquisitor of the Sword|VRGR",
+			"hint": {
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Inquisitor of the Sword",
+				"Innate Spellcasting (Psionics)",
+				"The inquisitor casts one of the following spells, requiring no components and using Wisdom as the spellcasting ability (spell save {@dc 15}):",
+				"Metabolic Control",
+				"At the start of each of its turns, the inquisitor regains 10 hit points and can end one condition on itself, provided the inquisitor has at least 1 hit point.",
+				"Multiattack",
+				"The inquisitor attacks twice with its Silver Longsword. After it hits or misses with an attack, the inquisitor can teleport up to 30 feet to an unoccupied space it can see.",
+				"Silver Longsword",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) if used with two hands, plus 18 ({@damage 4d8}) force damage.",
+				"Blink Step",
+				"The inquisitor teleports up to 60 feet to an unoccupied space it can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Inquisitor of the Tome|VRGR",
+			"hint": {
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Multiattack": "多重攻擊",
+				"Force Bolt": "力場箭"
+			},
+			"s": [
+				"Inquisitor of the Tome",
+				"Innate Spellcasting (Psionics)",
+				"The inquisitor casts one of the following spells, requiring no components and using Intelligence as the spellcasting ability (spell save {@dc 15}):",
+				"Multiattack",
+				"The inquisitor attacks twice.",
+				"Force Bolt",
+				"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}22 ({@damage 4d8 + 4}) force damage, and if the target is a Large or smaller creature, the inquisitor can push it up to 10 feet away.",
+				"Silver Longsword",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) if used with two hands, plus 18 ({@damage 4d8}) force damage.",
+				"Implode {@recharge 4}",
+				"Each creature in a 20-foot-radius sphere centered on a point the inquisitor can see within 120 feet of it must succeed on a {@dc 15} Constitution saving throw or take 31 ({@damage 6d8 + 4}) force damage and be knocked {@condition prone} and moved to the unoccupied space closest to the sphere's center. Large and smaller objects that aren't being worn or carried in the sphere automatically take the damage and are similarly moved.",
+				"Telekinetic Deflection",
+				"In response to being hit by an attack roll, the inquisitor increases its AC by 4 against the attack. If this causes the attack to miss, the attacker is hit by the attack instead."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Isolde|VRGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Fiendish Blessing": "邪魔祝福",
+				"Multiattack": "多重攻擊",
+				"Nepenthe": "忘憂",
+				"Fire Ray": "火焰射線",
+				"Fiendish Charm": "邪魔魅惑"
+			},
+			"s": [
+				"Isolde",
+				"Innate Spellcasting",
+				"Isolde's spellcasting ability is Charisma (spell save {@dc 14}). Isolde can innately cast the following spells, requiring no material components:",
+				"Fiendish Blessing",
+				"The AC of Isolde includes her Charisma bonus.",
+				"Magic Resistance Aura",
+				"While holding {@item Nepenthe|VRGR}, Isolde creates an aura in a 10-foot radius around her. While this aura is active, Isolde and all creatures friendly to her in the aura have advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"Isolde makes two melee attacks or uses its Fire Ray twice.",
+				"Nepenthe",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft.., one target. {@h}11 ({@damage 1d8 + 7}) slashing damage, or 12 ({@damage 1d10 + 7}) slashing damage if used with two hands to make a melee attack. If the target is a fiend or an undead, it takes an extra 11 ({@damage 2d10}) radiant damage.",
+				"Fire Ray",
+				"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}10 ({@damage 3d6}) fire damage.",
+				"Fiendish Charm",
+				"One humanoid Isolde can see within 30 feet of it must succeed on a {@dc 14} Wisdom saving throw or be magically {@condition charmed} for 1 day. The {@condition charmed} target obeys Isolde's spoken commands. If the target suffers any harm from Isolde or another creature or receives a suicidal command from Isolde, the target can repeat the saving throw, ending the effect on itself on a success. If a target's saving throw is successful, or if the effect ends for it, the creature is immune to Isolde's Fiendish Charm for the next 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jiangshi|VRGR",
+			"hint": {
+				"Jiangshi": "殭屍",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊",
+				"Change Shape": "變形"
+			},
+			"s": [
+				"Jiangshi",
+				"natural armor",
+				"Jiangshi Weaknesses",
+				"The jiangshi has the following flaws:",
+				"{@i Fear of Its Own Reflection.} If the jiangshi sees its own reflection, it immediately uses its reaction, if available, to move as far away from the reflection as possible.",
+				"{@i Susceptible to Holy Symbols.} While the jiangshi is wearing or touching a holy symbol, it automatically fails saving throws against effects that turn Undead.",
+				"Unusual Nature",
+				"The jiangshi doesn't require air.",
+				"Multiattack",
+				"The jiangshi makes three Slam attacks and uses Consume Energy.",
+				"Slam",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage.",
+				"Consume Energy",
+				"The jiangshi draws energy from a creature it can see within 30 feet of it. The target makes a {@dc 16} Constitution saving throw, taking 18 ({@damage 4d8}) necrotic damage on a failed save, or half as much damage on a successful one. The jiangshi regains hit points equal to the amount of necrotic damage dealt. After regaining hit points from this action, the jiangshi gains the following benefits for 7 days: its walking speed increases to 40 feet, and it gains a flying speed equal to its walking speed and can hover.",
+				"A Humanoid slain by this necrotic damage rises as a wight (see its entry in the Monster Manual) at the end of the jiangshi's turn. The wight acts immediately after the jiangshi in the initiative order. If this wight slays a Humanoid with its Life Drain, the wight transforms into a jiangshi 5 days later.",
+				"Change Shape",
+				"The jiangshi polymorphs into a Beast, a Humanoid, or an Undead that is Medium or Small or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying is absorbed or borne by the new form (the jiangshi's choice). It reverts to its true form if it dies."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lesser Star Spawn Emissary|VRGR",
+			"hint": {
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Psychic Orb": "心靈法球",
+				"Change Shape": "變形"
+			},
+			"s": [
+				"Lesser Star Spawn Emissary",
+				"natural armor",
+				"(hover)",
+				"Aberrant Rejuvenation",
+				"When the emissary drops to 0 hit points, its body melts away. A greater star spawn emissary instantly appears in an unoccupied space within 60 feet of where the lesser emissary disappeared. The greater emissary uses the lesser emissary's initiative count.",
+				"Legendary Resistance (3/Day)",
+				"If the emissary fails a saving throw, it can choose to succeed instead.",
+				"Unusual Nature",
+				"The emissary doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The emissary makes three attacks.",
+				"Lashing Maw",
+				"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage plus 13 ({@damage 3d8}) acid damage.",
+				"Psychic Orb",
+				"{@atk rs} {@hit 13} to hit, range 120 ft., one creature. {@h}18 ({@damage 2d10 + 7}) psychic damage.",
+				"Change Shape",
+				"The emissary polymorphs into a Small or Medium creature of its choice or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.",
+				"Psychic Orb",
+				"The emissary makes a Psychic Orb attack.",
+				"Teleportation Maw (Costs 2 Actions)",
+				"The emissary teleports to an unoccupied space it can see within 30 feet of it and can make a Lashing Maw attack.",
+				"Psychic Lash (Costs 3 Actions)",
+				"The emissary targets a creature it can see within 30 feet of it and psychically lashes at that creature's mind. The target must succeed on a {@dc 21} Wisdom saving throw or take 36 ({@damage 8d8}) psychic damage and be {@condition stunned} until the start of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Loup Garou|VRGR",
+			"hint": {
+				"Blood Frenzy": "血腥狂亂",
+				"Legendary Resistance (2/Day)": "傳奇抗性（每日 2 次）",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊",
+				"Change Shape": "變形"
+			},
+			"s": [
+				"Loup Garou",
+				"natural armor",
+				"(40 ft. in hybrid form, 50 ft. in dire wolf form)",
+				"Blood Frenzy",
+				"The loup garou has advantage on attack rolls against a creature that doesn't have all its hit points.",
+				"Legendary Resistance (2/Day)",
+				"When the loup garou fails a saving throw, it can choose to succeed instead.",
+				"Regeneration",
+				"The loup garou regains 10 hit points at the start of each of its turns. If the loup garou takes damage from a silver weapon, this trait doesn't function at the start of the loup garou's next turn. The loup garou dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+				"Multiattack",
+				"The loup garou makes two attacks: two with its Longsword (humanoid form) or one with its Bite and one with its Claws (dire wolf or hybrid form).",
+				"Bite (Dire Wolf or Hybrid Form Only)",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage plus 14 ({@damage 4d6}) necrotic damage. If the target is a Humanoid, it must succeed on a {@dc 17} Constitution saving throw or be cursed with loup garou lycanthropy.",
+				"Claws (Dire Wolf or Hybrid Form Only)",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage. If the target is a creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}.",
+				"Longsword (Humanoid Form Only)",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage, or 15 ({@damage 2d10 + 4}) slashing damage if used with two hands.",
+				"Change Shape",
+				"The loup garou polymorphs into a Large wolf-humanoid hybrid or into a Large dire wolf, or back into its true form, which appears humanoid. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+				"Swipe",
+				"The loup garou makes one Claws attack (dire wolf or hybrid form only) or one Longsword attack (humanoid form only).",
+				"Mauling Pounce (Costs 2 Actions)",
+				"The loup garou moves up to its speed without provoking opportunity attacks, and it can make one Claws attack (dire wolf or hybrid form only) or one Longsword attack (humanoid form only) against each creature it moves past.",
+				"Bite (Costs 3 Actions)",
+				"The loup garou changes into hybrid or dire wolf form and then makes one Bite attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Necrichor|VRGR",
+			"hint": {
+				"Legendary Resistance (2/Day)": "傳奇抗性（每日 2 次）",
+				"Rejuvenation": "回春",
+				"Spider Climb": "蛛行",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Pseudopod": "偽足",
+				"Necrotic Bolt": "死靈箭"
+			},
+			"s": [
+				"Necrichor",
+				"Legendary Resistance (2/Day)",
+				"If the necrichor fails a saving throw, it can choose to succeed instead.",
+				"Rejuvenation",
+				"Unless its lifeless remains are splashed with holy water or placed in a vessel under the effects of the {@spell hallow} spell, the destroyed necrichor re-forms in {@dice 1d10} days, regaining all its hits points and appearing in the place it died or in the nearest unoccupied space.",
+				"Spider Climb",
+				"The necrichor can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Unusual Nature",
+				"The necrichor doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The necrichor makes two attacks.",
+				"Pseudopod",
+				"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}5 ({@damage 1d6 + 2}) necrotic damage, and the target must succeed on a {@dc 14} Constitution saving throw or be {@condition paralyzed} until the start of the necrichor's next turn.",
+				"Necrotic Bolt",
+				"{@atk rs} {@hit 6} to hit, range 120 ft., one creature. {@h}12 ({@damage 2d8 + 3}) necrotic damage, and the target can't regain hit points until the start of the necrichor's next turn.",
+				"Blood Puppeteering {@recharge}",
+				"The necrichor targets a creature it can see within 5 feet of it that is missing any of its hit points. If the target isn't a Construct or an Undead, it must succeed on a {@dc 14} Constitution saving throw or the necrichor enters the target's space and attaches itself to the target for 1 minute. While attached, the necrichor takes only half damage dealt to it (round down), and the target takes the remaining damage. The necrichor can attach to only one creature at a time.",
+				"The attached necrichor can telepathically control the target's move, action, or both. When controlled this way, the target can take only the Attack action (necrichor chooses the target) or the {@action Dash} action. The attached target can repeat the saving throw at the end of each of its turns, detaching from the necrichor and forcing it to move into the nearest unoccupied space on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nosferatu|VRGR",
+			"hint": {
+				"Regeneration": "再生",
+				"Spider Climb": "蛛行",
+				"Sunlight Hypersensitivity": "日光過敏",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Nosferatu",
+				"natural armor",
+				"Regeneration",
+				"The nosferatu regains 10 hit points at the start of each of its turns if it has at least 1 hit point and isn't in sunlight. If the nosferatu takes radiant damage, this trait doesn't function until the start of the nosferatu's next turn.",
+				"Spider Climb",
+				"The nosferatu can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Sunlight Hypersensitivity",
+				"The nosferatu takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.",
+				"Unusual Nature",
+				"The nosferatu doesn't require air.",
+				"Multiattack",
+				"The nosferatu makes two Claw attacks followed by one Bite attack. If both Claw attacks hit the same creature, the Bite attack is made with advantage.",
+				"Claw",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage.",
+				"Bite",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}9 ({@damage 1d8 + 5}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. If the target is missing any of its hit points, it instead takes 11 ({@damage 2d10}) necrotic damage.",
+				"The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the nosferatu regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0. A Humanoid slain in this way and then buried in the ground rises as a nosferatu after {@dice 1d10} days.",
+				"Blood Disgorge {@recharge 5}",
+				"The nosferatu vomits blood in a 15-foot cone. Each creature in that area must make a {@dc 16} Constitution saving throw. On a failed save, a creature takes 18 ({@damage 4d8}) necrotic damage, and it can't regain hit points for 1 minute. On a successful save, the creature takes half as much damage with no additional effects."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Podling|VRGR",
+			"hint": {
+				"Unusual Nature": "異常本質",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Podling",
+				"Semblance of Life",
+				"The podling is a physical copy of a creature digested by a bodytaker plant. The podling has the digested creature's memories and behaves like that creature, but with occasional lapses. An observer familiar with the digested creature can recognize the discrepancies with a successful {@dc 20} Wisdom ({@skill Insight}) check, or automatically if the podling does something in direct contradiction to the digested creature's established beliefs or behavior. The podling melts into a slurry when it dies, when the bodytaker plant that created it dies, or when the bodytaker plant dismisses it (no action required).",
+				"Unusual Nature",
+				"The podling doesn't require sleep.",
+				"Slam",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Priest of Osybus|VRGR",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Necrotic Bolt": "死靈箭",
+				"Dread": "恐懼"
+			},
+			"s": [
+				"Priest of Osybus",
+				"natural armor",
+				"Tattoo of Osybus",
+				"If the priest drops to 0 hit points, roll on the Boons of Undeath table for the boon the priest receives. The priest dies if it receives a boon it already has. If it receives a new boon, it revives at the start of its next turn with half its hit points restored, and its creature type is now Undead.",
+				"To prevent this revival, the Tattoo of Osybus on the priest's body must be destroyed. The tattoo is invulnerable while the priest has at least 1 hit point. The tattoo is otherwise an object with AC 15, and it is immune to poison and psychic damage. It has 15 hit points, but it regains all its hit points at the end of every combatant's turn.",
+				"Multiattack",
+				"The priest attacks twice.",
+				"Soul Blade",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage, and if the target is a creature, it is {@condition paralyzed} until the start of the priest's next turn. If this damage reduces a Medium or smaller creature to 0 hit points, the creature dies, and its soul is trapped in the priest's body, manifesting as a shadowy Soul Tattoo on the priest. The soul is freed if the priest dies.",
+				"Necrotic Bolt",
+				"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}17 ({@damage 3d8 + 4}) necrotic damage, and the target can't regain hit points until the start of the priest's next turn.",
+				"Soul Tattoo {@recharge 5}",
+				"The priest touches one of the Soul Tattoos on its body. The tattoo vanishes as the trapped soul manifests as a shadowy creature that appears in an unoccupied space the priest can see within 30 feet of it. The creature has the size and silhouette of its original body, but it otherwise uses the stat block of a shadow.",
+				"The shadow obeys the priest's mental commands (no action required) and takes its turn immediately after the priest. If the creature is within 5 feet of the priest, it can turn back into a tattoo as an action, reappearing on the priest's flesh and regaining all its hit points.",
+				"Boons of Undeath",
+				"When a priest of Osybus drops to 0 hit points, the priest might revive with a benefit from the Boons of Undeath table. You can give a priest one or more of these boons of your choice before the priest faces adventurers. If you do so, the priest is Undead, rather than Humanoid, and a priest can receive each boon only once.",
+				"Boons of Undeath",
+				"d6",
+				"Boon",
+				"Dread",
+				"Eerie whispers can now be heard around the priest. Any non-Undead creature that starts its turn within 30 feet of the priest must succeed on a {@dc 15} Wisdom saving throw or be {@condition frightened} of the priest until the start of the creature's next turn.",
+				"Ectoplasmic",
+				"An otherworldly slime drips off the priest and fades away moments later, leaving a greenish stain. When any creature starts its turn within 10 feet of the priest, the priest can reduce that creature's speed by 10 feet until the start of the creature's next turn, until which the creature is covered by ectoplasm. In addition, as an action, the priest can use the slime to make itself look and feel like any creature that is Medium or Small, while retaining its game statistics. This transformation lasts for 8 hours or until the priest drops to 0 hit points.",
+				"Vampiric",
+				"When the priest deals necrotic damage to any creature, the priest gains a number of temporary hit points equal to half that necrotic damage. The priest's speed also increases by 10 feet.",
+				"Blazing",
+				"The priest sloughs off its flesh, and its skeleton crumbles away, leaving only its skull. Its stat block is replaced by that of a {@creature flameskull}, but it retains its Tattoo of Osybus trait, and all fire damage it deals becomes necrotic damage. The Tattoo of Osybus now appears carved into the skull's forehead.",
+				"Spectral",
+				"The priest now appears wraithlike, and its challenge rating increases by 1. It gains resistance to all damage but force, radiant, and psychic, and it is vulnerable to radiant damage. It can also move through creatures and objects as if they were {@quickref difficult terrain||3}, but it takes 5 ({@damage 1d10}) force damage if it ends its turn inside a creature or an object.",
+				"Deathly",
+				"The priest's visage becomes bone white, and its challenge rating increases by 1. It can cast {@spell animate dead} and {@spell create undead} once per day each, using Intelligence as the spellcasting ability, and it gains the following action:",
+				"Circle of Death (Spell; {@recharge 5|m})",
+				"Each creature in a 60-foot-radius sphere centered on a point the priest can see within 150 feet of it must make a {@dc 15} Constitution saving throw, taking 28 ({@damage 8d6}) necrotic damage on a failed save, or half as much damage on a successful one.)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Relentless Juggernaut|VRGR",
+			"hint": {
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Regeneration": "再生",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Fist": "拳擊"
+			},
+			"s": [
+				"Relentless Juggernaut",
+				"natural armor",
+				"Legendary Resistance (3/Day)",
+				"If the juggernaut fails a saving throw, it can choose to succeed instead.",
+				"Regeneration",
+				"The juggernaut regains 20 hit points at the start of its turn. If the juggernaut takes radiant damage, this trait doesn't function at the start of its next turn. The juggernaut dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+				"Unusual Nature",
+				"The juggernaut doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The juggernaut makes two attacks. It can replace one attack with Deadly Shaping if it is ready.",
+				"Executioner's Pick",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, and if the target is a creature, its speed is reduced by 10 feet until the start of the juggernaut's next turn.",
+				"Fist",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 6}) bludgeoning damage, and if the target is a Large or smaller creature, it must succeed on a {@dc 18} Strength saving throw or be knocked {@condition prone}.",
+				"Deadly Shaping {@recharge 5}",
+				"The juggernaut magically shapes a feature of its surroundings into a deadly implement. A creature the juggernaut can see within 60 feet of it must make a {@dc 18} Dexterity saving throw. If the saving throw fails, the targeted creature is struck by one of the following (juggernaut's choice):",
+				"Flying Stone",
+				"The target takes 22 ({@damage 5d8}) bludgeoning damage and is {@condition incapacitated} until the start of the juggernaut's next turn, and the implement vanishes.",
+				"Scything Shrapnel",
+				"The target takes 14 ({@damage 4d6}) slashing damage, and the implement vanishes. At the start of each of its turns, the target takes 10 ({@damage 3d6}) necrotic damage from the wound left by the shrapnel. The wound ends if the target regains any hit points or if a creature uses an action to stanch the wound, which requires a successful {@dc 15} Wisdom ({@skill Medicine}) check.",
+				"Implacable Advance",
+				"The juggernaut moves up to its speed, ignoring {@quickref difficult terrain||3}. Any object in its path takes 55 ({@damage 10d10}) bludgeoning damage if it isn't being worn or carried.",
+				"Rapid Shaping (Costs 3 Actions)",
+				"The juggernaut recharges Deadly Shaping and uses it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Relentless Slasher|VRGR",
+			"hint": {
+				"Legendary Resistance (1/Day)": "傳奇抗性（每日 1 次）",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Relentless Slasher",
+				"natural armor",
+				"Legendary Resistance (1/Day)",
+				"If the slasher fails a saving throw, it can choose to succeed instead.",
+				"Shrouded Presence",
+				"The slasher is immune to any effect that would sense its emotions or read its thoughts, and it can't be detected by abilities that sense Fiends.",
+				"Multiattack",
+				"The slasher makes two Slasher's Knife attacks.",
+				"Slasher's Knife",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 30/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) slashing damage plus 21 ({@damage 6d6}) necrotic damage. If the target is a creature, it suffers a lingering wound that causes it to take 7 ({@damage 2d6}) necrotic damage at the start of each of its turns. Each time the slasher hits the wounded target with this attack, the damage dealt by the wound increases by 3 ({@damage 1d6}). The wound ends if the target regains hit points or if a creature uses an action to stanch the wound, which requires a successful {@dc 15} Wisdom ({@skill Medicine}) check.",
+				"Slice",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 30/60 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage.",
+				"Vanishing Strike (Costs 3 Actions)",
+				"The slasher makes one Slasher's Knife attack. After the attack hits or misses, the slasher can teleport up to 30 feet to an unoccupied space it can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Strigoi|VRGR",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Proboscis": "口器"
+			},
+			"s": [
+				"Strigoi",
+				"natural armor",
+				"Stirge Telepathy",
+				"The strigoi can magically command any {@creature stirge} within 120 feet of it, using a limited form of telepathy.",
+				"Multiattack",
+				"The strigoi makes one Claw attack and makes one Proboscis attack.",
+				"Claw",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage plus 6 ({@damage 1d12}) acid damage.",
+				"Proboscis",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d10 + 3}) piercing damage plus 10 ({@damage 3d6}) necrotic damage, and the strigoi regains hit points equal to the amount of necrotic damage dealt. A creature reduced to 0 hit points from this attack dies and leaves nothing behind except its skin and its equipment.",
+				"Ravenous Children (1/Day)",
+				"The strigoi magically summons {@dice 1d4 + 2} {@creature stirge||stirges} (see their entry in the Monster Manual) in unoccupied spaces it can see within 30 feet of it. The stirges are under the strigoi's control and act immediately after the strigoi in the initiative order. The stirges disappear after 1 hour, when the strigoi dies, or when the strigoi dismisses them (no action required)."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Gremishkas|VRGR",
+			"hint": {
+				"Swarm": "蟲群",
+				"Bites": "啃咬"
+			},
+			"s": [
+				"Swarm of Gremishkas",
+				"Limited Spell Immunity",
+				"The swarm automatically succeeds on saving throws against spells of 3rd level or lower, and the attack rolls of such spells always miss it.",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny gremishka. The swarm can't regain hit points or gain temporary hit points.",
+				"Bites",
+				"{@atk mw} {@hit 4} to hit, reach 0 ft., one target in the swarm's space. {@h}12 ({@damage 3d6 + 2}) piercing damage, or 5 ({@damage 1d6 + 2}) piercing damage if the swarm has half of its hit points or fewer, plus 7 ({@damage 2d6}) force damage.",
+				"Spell Redirection",
+				"In response to a spell attack roll missing the swarm, the swarm causes that spell to hit another creature of its choice within 30 feet of it that it can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Maggots|VRGR",
+			"hint": {
+				"Swarm": "蟲群",
+				"Infestation": "侵擾"
+			},
+			"s": [
+				"Swarm of Maggots",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny maggot. The swarm can't regain hit points or gain temporary hit points.",
+				"Infestation",
+				"{@atk mw} {@hit 3} to hit, reach 0 ft., one target in the swarm's space. {@h}10 ({@damage 4d4}) piercing damage, or 5 ({@damage 2d4}) piercing damage if the swarm has half of its hit points or fewer. A creature damaged by the swarm must succeed on a {@dc 12} Constitution saving throw or contract a disease.",
+				"Each time the diseased creature finishes a long rest, roll a {@dice d6} to determine the disease's effect:",
+				"1-2",
+				"The creature is {@condition blinded} until it finishes a long rest.",
+				"3-4",
+				"The creature's hit point maximum decreases by 5 ({@dice 2d4}), and the reduction can't be removed until the disease ends. The creature dies if its hit point maximum drops to 0.",
+				"5-6",
+				"The creature has disadvantage on ability checks and attack rolls until it finishes its next long rest.",
+				"The disease lasts until it's removed by magic or until the creature rolls the same random effect for the disease two long rests in a row."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Scarabs|VRGR",
+			"hint": {
+				"Swarm": "蟲群",
+				"Spider Climb": "蛛行"
+			},
+			"s": [
+				"Swarm of Scarabs",
+				"natural armor",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny scarab. The swarm can't regain hit points or gain temporary hit points.",
+				"Skeletonize",
+				"If the swarm starts its turn in the same space as a dead creature that is Large or smaller, the corpse is destroyed, leaving behind only equipment and bones (or exoskeleton).",
+				"Spider Climb",
+				"The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Ravenous Bites",
+				"{@atk mw} {@hit 4} to hit, reach 0 ft., one target in the swarm's space. {@h}14 ({@damage 4d6}) piercing damage, or 7 ({@damage 2d6}) piercing damage if the swarm has half of its hit points or fewer. If the target is a creature, scarabs burrow into its body, and the creature takes 3 ({@damage 1d6}) piercing damage at the start of each of its turns. Any creature can use an action to kill or remove the scarabs with fire or a weapon that deals piercing damage, causing 1 damage of the appropriate type to the target. A creature reduced to 0 hit points by the swarm's piercing damage dies."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Zombie Limbs|VRGR",
+			"hint": {
+				"Swarm": "蟲群",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Swarm of Zombie Limbs",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny limb. The swarm can't regain hit points or gain temporary hit points.",
+				"Unusual Nature",
+				"The swarm doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The swarm makes one Undead Mass attack and one Grasping Limbs attack.",
+				"Undead Mass",
+				"{@atk mw} {@hit 4} to hit, reach 0 ft., one target in the swarm's space. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, or 4 ({@damage 1d4 + 2}) bludgeoning damage if the swarm has half of its hit points or fewer.",
+				"Grasping Limbs",
+				"{@atk mw} {@hit 4} to hit, reach 0 ft., one creature in the swarm's space. {@h}7 ({@damage 2d6}) necrotic damage, and the creature must succeed on a {@dc 12} Strength saving throw or be {@condition restrained}. The creature can repeat the saving throw at the end of each of its turns, taking 7 ({@damage 2d6}) necrotic damage on a failed save. The creature is freed if it succeeds on this saving throw, the swarm moves out of the creature's space, or the swarm dies."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "The Bagman|VRGR",
+			"s": [
+				"The Bagman"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Unspeakable Horror|VRGR",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Unspeakable Horror",
+				"natural armor",
+				"Aberrant Armor Only",
+				"Formed by the Mists",
+				"When created, the horror's body composition takes one of four forms: Aberrant Armor, Loathsome Limbs, Malleable Mass, or Oozing Organs. This form determines certain traits in this stat block.",
+				"Amorphous (Malleable Mass Only)",
+				"The horror can move through any opening at least 1 inch wide without squeezing.",
+				"Bile Body (Oozing Organs Only)",
+				"Any creature that touches the horror or hits it with a melee attack takes 5 ({@damage 1d10}) acid damage.",
+				"Relentless Stride (Loathsome Limbs Only)",
+				"The horror can move through the space of another creature. The first time on a turn that the horror enters a creature's space during this move, the creature must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}.",
+				"Multiattack",
+				"The horror makes two Limbs attacks.",
+				"Limbs",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage.",
+				"Hex Blast {@recharge 5}",
+				"The horror expels necrotic energy in a 30-foot cone. Each creature in that area must make a {@dc 15} Constitution saving throw, taking 45 ({@damage 7d12}) necrotic damage on a failed save, or half as much damage on a successful one.",
+				"Customizing a Horror",
+				"An unspeakable horror has one of four body compositions, determined by rolling on the Body Composition table. You can roll on the Limbs to customize it further, while results from the Hex Blast table replace that action in the stat block. If the results of multiple tables conflict, chose your preferred result.",
+				"The results of these tables are meant to be broad, so feel free to describe the details of an unspeakable horror's form and the interplay between its parts however you desire. The more discordant and unexpected a horror's parts, the more unsettling it might be.",
+				"Body Composition",
+				"d4",
+				"Body",
+				"Aberrant Armor",
+				"The horror's body is armored in petrified wood, alien crystal, rusted mechanisms, sculpted stone, or an exoskeleton.",
+				"Loathsome Limbs",
+				"The horror's body boasts spider like legs, many-jointed appendages, or thrashing tentacles.",
+				"Malleable Mass",
+				"The horror's body is composed of a clot of boneless flesh, shadowy tendrils, or mist.",
+				"Oozing Organs",
+				"The horror's body boasts exposed entrails, bloated parasites, or a gelatinous shroud, perhaps because it is inside out.",
+				"Hex Blast",
+				"d4",
+				"Hex",
+				"Beguiling Hex {@recharge 5}",
+				"The horror expels a wave of mind-altering magic. Each creature within 30 feet of the horror must make a {@dc 15} Wisdom saving throw, taking 33 ({@damage 6d10}) psychic damage and being {@condition incapacitated} until the end of the creature's next turn on a failed save, or taking half as much damage on a successful one.",
+				"Bile Hex {@recharge 5}",
+				"The horror expels acidic bile in a 60-foot line that is 5 feet wide. Each creature in that line must succeed on a {@dc 15} Dexterity saving throw or be covered in bile. A creature covered in bile takes 31 ({@damage 7d8}) acid damage at the start of each of its turns until it or another creature uses its action to scrape or wash off the bile that covers it.",
+				"Petrifying Hex {@recharge 5}",
+				"The horror expels petrifying gas in a 30-foot cone. Each creature in that area must succeed on a {@dc 15} Constitution saving throw or take 14 ({@damage 4d6}) necrotic damage and be {@condition restrained} as it begins to turn to stone. A {@condition restrained} creature must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is {@condition petrified} until freed by the {@spell greater restoration} spell or other magic.",
+				"Reality-Stealing Hex {@recharge 5}",
+				"The horror expels a wave of perception-distorting energy. Each creature within 30 feet of the horror must make a {@dc 15} Wisdom saving throw. On a failed save, the target takes 22 ({@damage 5d8}) psychic damage and is {@condition deafened} until the end of its next turn. If the saving throw fails by 5 or more, the target is also {@condition blinded} until the end of its next turn.",
+				"Limbs",
+				"d4",
+				"Attack",
+				"Bone Blade",
+				"The horror's limb ends in a blade made of bone, which deals slashing damage instead of bludgeoning damage. In addition, it scores a critical hit on a roll of 19 or 20 and rolls the damage dice of a crit three times, instead of twice.",
+				"Corrosive Pseudopod",
+				"The horror's limb attack deals an extra 9 ({@damage 2d8}) acid damage.",
+				"Grasping Tentacle",
+				"The horror's limb is a grasping tentacle. When the horror hits a creature with this limb, the creature is also {@condition grappled} (escape {@dc 16}). The limb can have only one creature {@condition grappled} at a time.",
+				"Poisonous Limb",
+				"The horror's limb deals piercing damage instead of bludgeoning damage. In addition, when the horror hits a creature with this limb, the creature must succeed on a {@dc 15} Constitution saving throw or take 7 ({@damage 2d6}) poison damage and be {@condition poisoned} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vampiric Mind Flayer|VRGR",
+			"hint": {
+				"Spider Climb": "蛛行",
+				"Sunlight Sensitivity": "日光敏感",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Tentacles": "觸手"
+			},
+			"s": [
+				"Vampiric Mind Flayer",
+				"natural armor",
+				"Spider Climb",
+				"The mind flayer can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the mind flayer has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Unusual Nature",
+				"The mind flayer doesn't require air, food, or sleep.",
+				"Multiattack",
+				"The mind flayer makes two Claw attacks or one Claw attack and one Tentacles attack.",
+				"Claw",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage plus 10 ({@damage 3d6}) necrotic damage.",
+				"Tentacles",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d6 + 4}) piercing damage, and if the target is a creature, it is {@condition grappled} (escape {@dc 15}).",
+				"Drink Sapience",
+				"The mind flayer targets one creature it is grappling. The target must succeed on a {@dc 15} Wisdom saving throw or take 14 ({@damage 4d6}) psychic damage and gain 1 level of {@condition exhaustion}. The mind flayer regains a number of hit points equal to the psychic damage dealt. A creature reduced to 0 hit points by the psychic damage dies.",
+				"Disrupt Psyche {@recharge 5}",
+				"The mind flayer magically emits psionic energy in a 30-foot-radius sphere centered on itself. Each creature in that area must succeed on a {@dc 15} Intelligence saving throw or be {@condition incapacitated} for 1 minute. The {@condition incapacitated} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Wereraven|VRGR",
+			"hint": {
+				"Shapechanger": "變形者",
+				"Mimicry": "聲音模仿",
+				"Regeneration": "再生"
+			},
+			"s": [
+				"Wereraven",
+				"(fly 50 ft. in raven and hybrid forms)",
+				"Shapechanger",
+				"The wereraven can use its action to polymorph into a raven-humanoid hybrid or into a raven, or back into its human form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its human form if it dies.",
+				"Mimicry",
+				"The wereraven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom ({@skill Insight}) check.",
+				"Regeneration",
+				"The wereraven regains 10 hit points at the start of its turn. If the wereraven takes damage from a silvered weapon or a spell, this trait doesn't function at the start of the wereraven's next turn. The wereraven dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+				"Multiattack (Human or Hybrid Form Only)",
+				"The wereraven makes two weapon attacks, one of which can be with its hand crossbow.",
+				"Beak (Raven or Hybrid Form Only)",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 piercing damage in raven form, or 4 ({@damage 1d4 + 2}) piercing damage in hybrid form. If the target is humanoid, it must succeed on a {@dc 10} Constitution saving throw or be cursed with wereraven lycanthropy.",
+				"Shortsword (Human or Hybrid Form Only)",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage.",
+				"Hand Crossbow (Human or Hybrid Form Only)",
+				"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zombie Clot|VRGR",
+			"hint": {
+				"Undead Fortitude": "不死堅韌",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Zombie Clot",
+				"natural armor",
+				"Deathly Stench",
+				"Any creature that starts its turn within 10 feet of the zombie must succeed on a {@dc 14} Constitution saving throw or take 9 ({@damage 2d8}) poison damage and be {@condition poisoned} until the start of the creature's next turn.",
+				"Undead Fortitude",
+				"If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.",
+				"Unusual Nature",
+				"The zombie doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The zombie makes two Slam attacks.",
+				"Slam",
+				"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage.",
+				"Flesh Entomb {@recharge 5}",
+				"The zombie flings a detached clump of corpses at a creature it can see within 30 feet of it. The target must succeed on a {@dc 16} Strength saving throw or take 16 ({@damage 3d10}) bludgeoning damage, and if the target is a Large or smaller creature, it becomes entombed in dead flesh.",
+				"A creature entombed in the dead flesh is {@condition restrained}, has {@quickref Cover||3||total cover} against attacks and other effects outside the dead flesh, and takes 10 ({@damage 3d6}) necrotic damage at the start of each of its turns. The creature can be freed if the dead flesh is destroyed. The dead flesh is a Large object with AC 10, 25 hit points, and immunity to poison and psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zombie Plague Spreader|VRGR",
+			"hint": {
+				"Undead Fortitude": "不死堅韌",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Zombie Plague Spreader",
+				"Undead Fortitude",
+				"If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.",
+				"Unusual Nature",
+				"The zombie doesn't require air, food, drink, or sleep.",
+				"Viral Aura",
+				"Any creature that starts its turn within 10 feet of the plague spreader must make a {@dc 12} Constitution saving throw. On a failed save, the creature is {@condition poisoned} and can't regain hit points until the end of its next turn. On a successful save, the creature is immune to this plague spreader's Viral Aura for 24 hours.",
+				"Multiattack",
+				"The plague spreader makes two Slam attacks.",
+				"Slam",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage plus 9 ({@damage 2d8}) necrotic damage.",
+				"Virulent Miasma (1/Day)",
+				"The plague spreader releases toxic gas in a 30-foot-radius sphere centered on itself. Each creature in that area must make a {@dc 12} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one. A Humanoid reduced to 0 hit points by this damage dies and rises as a zombie (see its stat block in the Monster Manual) 1 minute later. The zombie acts immediately after the plague spreader in the initiative count."
+			]
+		}
+	]
+}

@@ -3769,6 +3769,210 @@
 		],
 		"ENG_name": "Sapphire Dragon"
 	},
+	"Scion of Grolantor|BGG": {
+		"name": "葛洛藍托後裔",
+		"source": "BGG",
+		"page": 165,
+		"regionalEffects": [
+			"葛洛藍托後裔周圍的區域會被這個巨人的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "食物豐饒",
+						"entry": "葛洛藍托後裔 6 哩內的作物與家畜會快速生長與繁殖。",
+						"ENG_name": "Abundant Food"
+					},
+					{
+						"type": "item",
+						"name": "山丘巨人強化",
+						"entry": "葛洛藍托後裔 1,000 呎內的山丘巨人在攻擊檢定與傷害擲骰上獲得 +7 加值。",
+						"ENG_name": "Empowered Hill Giants"
+					},
+					{
+						"type": "item",
+						"name": "農耕天候",
+						"entry": "葛洛藍托後裔 6 哩內的天氣總是最適合農耕：晴朗溫暖，偶有陣雨。",
+						"ENG_name": "Farming Weather"
+					}
+				]
+			},
+			"若葛洛藍托後裔死亡，這些效應會立即結束。"
+		],
+		"ENG_name": "Scion of Grolantor"
+	},
+	"Scion of Memnor|BGG": {
+		"name": "曼諾後裔",
+		"source": "BGG",
+		"page": 167,
+		"regionalEffects": [
+			"曼諾後裔周圍的區域會被這個巨人的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "強制獻禮",
+						"entry": "智慧生物首次進入曼諾後裔 6 哩內時，必須成功通過一次 {@dc 15} 感知豁免檢定，否則會感到一股無法抗拒的衝動，要把價值至少 5 gp 的獻禮藏在一個偏僻的地方。搖籃或後裔 6 哩內的雲巨人會立即感知到這份禮物的位置。一個生物只會受這股強迫衝動影響一次。",
+						"ENG_name": "Compulsory Offering"
+					},
+					{
+						"type": "item",
+						"name": "雲巨人強化",
+						"entry": "曼諾後裔 1,000 呎內的雲巨人在攻擊檢定與傷害擲骰上獲得 +8 加值。",
+						"ENG_name": "Empowered Cloud Giants"
+					},
+					{
+						"type": "item",
+						"name": "惡作劇低語",
+						"entry": "曼諾後裔 1 哩內的風中可以聽見低語聲。話語模糊不清，但智力值為 5 或更高的生物會將其理解為可以對他人施展的惡作劇指示。",
+						"ENG_name": "Mischievous Whispers"
+					}
+				]
+			},
+			"若曼諾後裔死亡，這些效應會立即結束。"
+		],
+		"ENG_name": "Scion of Memnor"
+	},
+	"Scion of Skoraeus|BGG": {
+		"name": "司寇雷烏斯後裔",
+		"source": "BGG",
+		"page": 169,
+		"regionalEffects": [
+			"司寇雷烏斯後裔周圍的區域會被這個巨人的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "岩石與礦物豐饒",
+						"entry": "司寇雷烏斯後裔 6 哩內會長出光滑的石頭與寶石。",
+						"ENG_name": "Abundant Stone and Minerals"
+					},
+					{
+						"type": "item",
+						"name": "可食苔蘚",
+						"entry": "司寇雷烏斯後裔 6 哩內的洞窟牆上會長出一片片石巨人覺得美味的金色苔蘚。",
+						"ENG_name": "Edible Moss"
+					},
+					{
+						"type": "item",
+						"name": "石巨人強化",
+						"entry": "司寇雷烏斯後裔 1,000 呎內的石巨人在攻擊檢定與傷害擲骰上獲得 +7 加值。",
+						"ENG_name": "Empowered Stone Giants"
+					}
+				]
+			},
+			"若司寇雷烏斯後裔死亡，「石巨人強化」效應立即結束。其他效應不再產生新的苔蘚與礦物，現有的苔蘚會在 {@dice 1d10} 天內死去。"
+		],
+		"ENG_name": "Scion of Skoraeus"
+	},
+	"Scion of Stronmaus|BGG": {
+		"name": "斯壯茅斯後裔",
+		"source": "BGG",
+		"page": 171,
+		"regionalEffects": [
+			"斯壯茅斯後裔周圍的區域會被這個巨人的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "元素傳送門",
+						"entry": "搖籃或後裔 1 哩內會形成通往氣元素位面（若斯壯茅斯後裔位於空中）或水元素位面（若斯壯茅斯後裔位於海中）的雙向傳送門，讓元素生物得以進入這個世界。",
+						"ENG_name": "Elemental Portals"
+					},
+					{
+						"type": "item",
+						"name": "風暴巨人強化",
+						"entry": "斯壯茅斯後裔 1,000 呎內的風暴巨人在攻擊檢定與傷害擲骰上獲得 +8 加值。",
+						"ENG_name": "Empowered Storm Giants"
+					},
+					{
+						"type": "item",
+						"name": "極端天候",
+						"entry": "斯壯茅斯後裔 1 哩內的天氣每天劇烈變化，從宜人的晴天到猛烈的雹暴都有可能。",
+						"ENG_name": "Extreme Weather"
+					}
+				]
+			},
+			"若斯壯茅斯後裔死亡，這些效應會立即結束。"
+		],
+		"ENG_name": "Scion of Stronmaus"
+	},
+	"Scion of Surtur|BGG": {
+		"name": "史爾特爾後裔",
+		"source": "BGG",
+		"page": 173,
+		"regionalEffects": [
+			"史爾特爾後裔周圍的區域會被這個巨人的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "礦石豐饒",
+						"entry": "史爾特爾後裔 6 哩內的貴金屬與礦石礦脈更為常見。",
+						"ENG_name": "Abundant Ore"
+					},
+					{
+						"type": "item",
+						"name": "沙漠化",
+						"entry": "史爾特爾後裔 6 哩內幾乎沒有降水，土地乾裂，大多數植物枯萎。",
+						"ENG_name": "Desertification"
+					},
+					{
+						"type": "item",
+						"name": "火巨人強化",
+						"entry": "史爾特爾後裔 1,000 呎內的火巨人在攻擊檢定與傷害擲骰上獲得 +8 加值。",
+						"ENG_name": "Empowered Fire Giants"
+					}
+				]
+			},
+			"若史爾特爾後裔死亡，現有的礦石會保留下來，但不再形成新的礦脈。其他效應立即結束。"
+		],
+		"ENG_name": "Scion of Surtur"
+	},
+	"Scion of Thrym|BGG": {
+		"name": "索列姆後裔",
+		"source": "BGG",
+		"page": 175,
+		"regionalEffects": [
+			"索列姆後裔周圍的區域會被這個巨人的魔法改變，產生下列一種或多種效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "刺骨嚴寒",
+						"entry": "極度嚴寒籠罩索列姆後裔 6 哩內的土地（{@hazard extreme cold}的規則見{@book 地下城主指南|DMG}）。若該地區的氣候原本就極度嚴寒，這股寒意會令人麻木——該區域內不具寒冰傷害免疫或抗性的生物在力量與敏捷檢定上具有劣勢。",
+						"ENG_name": "Biting Chill"
+					},
+					{
+						"type": "item",
+						"name": "霜巨人強化",
+						"entry": "索列姆後裔 1,000 呎內的霜巨人在攻擊檢定與傷害擲骰上獲得 +7 加值。",
+						"ENG_name": "Empowered Frost Giants"
+					},
+					{
+						"type": "item",
+						"name": "野生動物繁盛",
+						"entry": "索列姆後裔 6 哩內的野獸會迅速繁殖、蓬勃生長。",
+						"ENG_name": "Thriving Wildlife"
+					}
+				]
+			},
+			"若索列姆後裔死亡，這些效應會立即結束。"
+		],
+		"ENG_name": "Scion of Thrym"
+	},
 	"Sea Hag|MM": {
 		"name": "海鬼婆",
 		"source": "MM",

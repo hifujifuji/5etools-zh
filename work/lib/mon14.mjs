@@ -217,6 +217,7 @@ export function makeTranslator ({d, tpls}, name, zhName, hint = {}, strings = []
 		const dd = nm(s);
 		if (dd) return dd;
 		if ((m = /^(.+?) \{@recharge( \d)?\}$/.exec(s))) { const b = trName(m[1]); return b ? `${b} {@recharge${m[2] ?? ""}}` : null; }
+		if ((m = /^(.+?) \(Spell; (\{@recharge[^}]*\})\)$/.exec(s))) { const b = trName(m[1]); return b ? `${b}（法術；${m[2]}）` : null; }
 		if ((m = /^(.+?) \((\d+)\/Day(?: Each)?\)$/.exec(s))) { const b = trName(m[1]); return b ? `${b}（每日 ${m[2]} 次）` : null; }
 		if ((m = /^(.+?) \(Costs (\d+) Actions\)$/.exec(s))) { const b = trName(m[1]); return b ? `${b}（消耗 ${m[2]} 個動作）` : null; }
 		if ((m = /^(.+?) \(Recharges? after a (Short or Long|Long) Rest\)$/.exec(s))) { const b = trName(m[1]); return b ? `${b}（${m[2] === "Long" ? "長休" : "短休或長休"}後充能）` : null; }
