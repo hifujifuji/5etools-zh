@@ -33,6 +33,14 @@ const TERM_FIX = [[/睿知/g, "感知"], [/揮砍/g, "劈砍"], [/聖武士/g, "
 // 中文譯文裡沒有顯示文字的規則速查標籤：補上中文顯示名
 const QUICKREF_ZH = {"difficult terrain": "困難地形", "cover": "掩護", "vision and light": "視覺與光照", "surprised": "突襲", "adventuring gear": "冒險裝備", "multiclassing": "兼職"};
 // quickref 標籤欄位：名稱|來源|章節索引|條目名|顯示文字；顯示文字在第 5 欄
+// 傷害類型統一用 i18n/terms-2024.md 的譯名（寒冰／死靈／精神／酸蝕）；「寒冷」「心靈」「強酸」只在傷害類型的語境才換
+const DMG_ZH = "酸蝕|強酸|鈍擊|寒冷|寒冰|火焰|力場|閃電|黯蝕|死靈|穿刺|毒素|心靈|精神|光耀|劈砍|雷鳴";
+TERM_FIX.push([/黯蝕/g, "死靈"]);
+TERM_FIX.push([new RegExp(`(寒冷|心靈|強酸)(?=(?:[、或與和及](?:${DMG_ZH}))*(?:傷害|抗性|易傷))`, "g"), m => ({寒冷: "寒冰", 心靈: "精神", 強酸: "酸蝕"})[m]]);
+// 傷害類型的列舉（後面沒有接「傷害」）：酸蝕、寒冷、火焰、閃電或毒素
+TERM_FIX.push([new RegExp(`(寒冷|心靈|強酸)(?=[、或與和及](?:${DMG_ZH})(?![\\u4e00-\\u9fff]{2}))`, "g"), m => ({寒冷: "寒冰", 心靈: "精神", 強酸: "酸蝕"})[m]]);
+TERM_FIX.push([new RegExp(`(?<=(?:${DMG_ZH})[、或與和及])(寒冷|心靈|強酸)(?![\\u4e00-\\u9fff])`, "g"), m => ({寒冷: "寒冰", 心靈: "精神", 強酸: "酸蝕"})[m]]);
+TERM_FIX.push([/寒冷吐息/g, "寒冰吐息"]);
 TERM_FIX.push([/\{@quickref ([^}|]+)((?:\|[^}|]*){0,3})\}/g, (m, name, rest) => {
 	const zh = QUICKREF_ZH[name.toLowerCase()];
 	if (!zh) return m;
