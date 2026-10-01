@@ -95,14 +95,14 @@ export function makeTranslator ({d, tpls}, name, zhName, hint = {}, strings = []
 	for (const a of extra) refs.push(a);
 	const noRef = new Set(d[`NOREF:${name}`] || []);
 	// 單字自稱若是常見的形容詞／名詞（the sea、the Astral Plane…）容易誤判，排除
-	const uniq = [...new Set(refs)].filter(r => !noRef.has(r) && !/^(of|the|and|in)$/.test(r) && (!STOP_REF.has(r) || extra.has(r))).sort((a, b) => b.length - a.length);
+	const uniq = [...new Set(refs)].filter(r => !noRef.has(r) && !/^(of|the|and|in)$/.test(r) && (!STOP_REF.has(r) || extra.has(r) || r === words.join(" "))).sort((a, b) => b.length - a.length);
 	const reRef = uniq.length ? new RegExp(`\\b([Tt]he|[Tt]his) (${uniq.map(escRe).join("|")})\\b`, "gi") : null;
 	const all = strings.join("\n");
-	const bare = name.replace(/\s*\(.*?\)/g, "");
+	const bare = name.replace(/\s*\(.*?\)/g, "").replace(/^The /, "");
 	const reBare = new RegExp(`(^|[^\\w{|])${escRe(bare)}(?![\\w}|])`, "g");
 	const proper = !new RegExp(`\\b[Tt]he ${escRe(bare)}\\b`, "i").test(all) && reBare.test(all);
 	const norm0 = s => reRef ? s.replace(reRef, (_, t) => `${t[0] === "T" ? "The" : "the"} {X}`) : s;
-	const norm = s => { if (!proper) return norm0(s); const [mk, tags] = mask(s); return unmask(mk.replace(reBare, (m0, pre, off) => `${pre}${off === 0 && !pre ? "The" : "the"} {X}`), tags); };
+	const norm = s0 => { const s = norm0(s0); if (!proper) return s; const [mk, tags] = mask(s); return unmask(mk.replace(reBare, (m0, pre, off) => `${pre}${off === 0 && !pre ? "The" : "the"} {X}`), tags); };
 	const X = zhName;
 	const names = {};
 	const nm1 = o => names[o] ?? d[`NAME:${o}`] ?? hint[o];
