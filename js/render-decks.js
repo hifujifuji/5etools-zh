@@ -24,7 +24,7 @@ class RenderDecks {
 		const ptText = Renderer.get()
 			.setFirstSection(true)
 			.setPartPageExpandCollapseDisabled(true)
-			.render({name: card.name, entries: Renderer.card.getFullEntries(card, {backCredit: deck?.back?.credit})}, 1);
+			.render({name: card.name, name_zh: card.name_zh, _zhOf: card._zhOf, entries: Renderer.card.getFullEntries(card, {backCredit: deck?.back?.credit})}, 1);
 		Renderer.get().setPartPageExpandCollapseDisabled(false);
 		return ptText;
 	}
@@ -103,7 +103,7 @@ class RenderDecks {
 		</div>`;
 
 		const ptCards = ee`<div class="ve-flex-col">
-			<h3 class="ve-dnd-font ve-my-0 ve-mb-1 decks__h-cards">Cards</h3>
+			<h3 class="ve-dnd-font ve-my-0 ve-mb-1 decks__h-cards">卡牌</h3>
 			${wrpCardRows}
 		</div>`;
 

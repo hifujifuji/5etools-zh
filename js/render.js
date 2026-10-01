@@ -14702,16 +14702,23 @@ Renderer.card = class {
 		const entries = [...ent.entries || []];
 		if (ent.suit && (ent.valueName || ent.value)) {
 			const suitAndValue = `${((ent.valueName || "") || Parser.numberToText(ent.value)).toTitleCase()} of ${ent.suit.toTitleCase()}`;
-			if (suitAndValue.toLowerCase() !== ent.name.toLowerCase()) entries.unshift(`{@i ${suitAndValue}}`);
+			if (suitAndValue.toLowerCase() !== ent.name.toLowerCase()) {
+				const __suitZh = {"hearts":"紅心","diamonds":"方塊","spades":"黑桃","clubs":"梅花","swords":"劍","coins":"錢幣","stars":"星辰","glyphs":"符印","strength":"力量","intelligence":"智力","wisdom":"感知","charisma":"魅力"}[ent.suit.toLowerCase()];
+				const __isPlaying = ["hearts", "diamonds", "spades", "clubs"].includes(ent.suit.toLowerCase());
+				const __vn = (ent.valueName || "").toLowerCase();
+				const __valZh = __isPlaying
+					? ({"ace":"A","king":"K","queen":"Q","jack":"J"}[__vn] || (ent.value != null ? `${ent.value}` : ent.valueName))
+					: ({"ace":"王牌","master":"大師","page":"侍從","knight":"騎士","queen":"王后","king":"國王","jack":"侍衛","joker":"鬼牌"}[__vn] || (ent.value != null ? "零一二三四五六七八九十".split("")[ent.value] || `${ent.value}` : ent.valueName));
+				entries.unshift(__suitZh && __valZh ? `{@i ${__suitZh}${__isPlaying ? " " : ""}${__valZh}}` : `{@i ${suitAndValue}}`);
+			}
 		}
 
 		const ptCredits = [
-			ent.face?.credit ? `art credit: ${ent.face?.credit}` : null,
-			(backCredit || ent.back?.credit) ? `art credit (reverse): ${backCredit || ent.back?.credit}` : null,
+			ent.face?.credit ? `繪者：${ent.face?.credit}` : null,
+			(backCredit || ent.back?.credit) ? `繪者（背面）：${backCredit || ent.back?.credit}` : null,
 		]
 			.filter(Boolean)
-			.join(", ")
-			.uppercaseFirst();
+			.join("、");
 		if (ptCredits) entries.push(`{@note {@style ${ptCredits}|small}}`);
 
 		return entries;
@@ -14733,12 +14740,12 @@ Renderer.card = class {
 Renderer.deck = class {
 	static getCompactRenderedString (ent) {
 		const lstCards = {
-			name: "Cards",
+			name: "卡牌",
 			entries: [
 				{
 					type: "list",
 					columns: 3,
-					items: ent.cards.map(card => `{@card ${card.name}|${card.set}|${card.source}}`),
+					items: ent.cards.map(card => `{@card ${card.name}|${card.set}|${card.source}${card.name_zh && card._zhOf === card.name ? `|${card.name_zh}` : ""}}`),
 				},
 			],
 		};
