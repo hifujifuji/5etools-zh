@@ -1,0 +1,1925 @@
+{
+	"batch": "ggr-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Anarch|GGR",
+			"hint": {
+				"Aggressive": "兇猛",
+				"Siege Monster": "攻城怪獸",
+				"Spiked Club": "尖刺棍棒"
+			},
+			"s": [
+				"Anarch",
+				"Aggressive",
+				"As a bonus action, the anarch can move up to its speed toward a hostile creature it can see.",
+				"Siege Monster",
+				"The anarch deals double damage to objects and structures.",
+				"Spiked Club",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage, or 7 ({@damage 1d10 + 2}) piercing damage if used with two hands."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Archon of the Triumvirate|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Mount": "坐騎",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Archon of the Triumvirate",
+				"Innate Spellcasting",
+				"The archon's innate spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The archon can innately cast the following spells, requiring no material components:",
+				"Eye of the Law",
+				"As a bonus action, the archon can target a creature it can see within 120 feet of it and determine which laws that creature has broken in the last 24 hours.",
+				"Mount",
+				"If the archon isn't mounted, it can use a bonus action to magically teleport onto the creature serving as its mount, provided the archon and its mount are on the same plane of existence. When it teleports, the archon appears astride the mount along with any equipment it is wearing or carrying. While mounted and not {@condition incapacitated}, the archon can't be {@status surprised}, and both it and its mount gain advantage on Dexterity saving throws. If the archon is reduced to 0 hit points while riding its mount, the mount is reduced to 0 hit points as well.",
+				"Multiattack",
+				"The archon makes two Hammer of Justice attacks.",
+				"Hammer of Justice",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage plus 18 ({@damage 4d8}) force damage. If the target is a creature, it must succeed on a {@dc 18} Strength saving throw or be knocked {@condition prone}.",
+				"Pacifying Presence",
+				"Each creature of the archon's choice that the archon can see within 120 feet of it must succeed on a {@dc 18} Wisdom saving throw, or else the target drops any weapons it is holding, ends its {@status concentration} on any spells or other effects, and becomes {@condition charmed} by the archon for 1 minute. The {@condition charmed} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the archon's Pacifying Presence for the next 24 hours.",
+				"Rejoin Mount",
+				"If the archon isn't mounted, it magically teleports to its steed and mounts it as long as the archon and its steed are on the same plane of existence.",
+				"Smite (Costs 2 Actions)",
+				"The archon makes a Hammer of Justice attack, and then its mount can use its reaction to make a melee weapon attack.",
+				"Detention (Costs 3 Actions)",
+				"The archon targets a creature it can see within 60 feet of it. The target must succeed on a {@dc 18} Charisma saving throw or be magically teleported to a harmless demiplane until the end of the archon's next turn, whereupon the target reappears in the space it left or the nearest unoccupied space if that space is occupied."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Arclight Phoenix|GGR",
+			"hint": {
+				"Flyby": "飛掠",
+				"Illumination": "照明",
+				"Lightning Form": "閃電形體"
+			},
+			"s": [
+				"Arclight Phoenix",
+				"Flyby",
+				"The arclight phoenix doesn't provoke an opportunity attack when it flies out of an enemy's reach.",
+				"Grounded Lightning",
+				"The first time on a turn that the arclight phoenix touches the ground, it takes 11 ({@damage 2d10}) force damage.",
+				"Illumination",
+				"The arclight phoenix sheds bright light in a 15-foot radius and dim light for an additional 15 feet.",
+				"Lightning Form",
+				"The arclight phoenix can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the phoenix or hits it with a melee attack while within 5 feet of it takes 9 ({@damage 2d8}) lightning damage. In addition, the arclight phoenix can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 9 ({@damage 2d8}) lightning damage.",
+				"Crackling Death",
+				"When the arclight phoenix dies, it explodes. Each creature within 30 feet of it must make a {@dc 18} Dexterity saving throw, taking 36 ({@damage 8d8}) lightning damage on a failed save, or half as much damage on a successful one. The explosion destroys the phoenix but leaves behind a Tiny, warm egg with a mizzium shell. The egg contains the embryo of a new arclight phoenix. It hatches when it is in the area of a spell that deals lightning damage, or if a creature touches the egg and expends spell slots whose combined levels equal 13 or more. When it hatches, the egg releases a new arclight phoenix that appears in the egg's space.",
+				"Arclight Touch",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}27 ({@damage 6d8}) lightning damage, and lightning jumps from the target to one creature of the phoenix's choice that it can see within 30 feet of the target. That second creature must succeed on a {@dc 18} Dexterity saving throw or take 27 ({@damage 6d8}) lightning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aurelia|GGR",
+			"hint": {
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍",
+				"Parry": "格擋",
+				"Unyielding": "不屈"
+			},
+			"s": [
+				"Aurelia",
+				"natural armor",
+				"Legendary Resistance (3/Day)",
+				"If Aurelia fails a saving throw, she can choose to succeed instead.",
+				"Magic Resistance",
+				"Aurelia has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"Aurelia makes three longsword attacks and uses Leadership.",
+				"Longsword",
+				"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) slashing damage, or 13 ({@damage 1d10 + 8}) slashing damage when used with two hands, plus 27 ({@damage 6d8}) radiant damage.",
+				"Leadership",
+				"Aurelia utters a few inspiring words to one creature she can see within 30 feet of her. If the creature can hear her, it can add a {@dice d10} to one attack roll or saving throw it makes before the start of Aurelia's next turn.",
+				"Warleader's Helix {@recharge 5}",
+				"{@atk rs} {@hit 17} to hit, range 60 ft., one creature. {@h}54 ({@damage 12d8}) radiant damage, and Aurelia can choose another creature she can see within 10 feet of the target. The second creature regains 27 ({@dice 6d8}) hit points.",
+				"Parry",
+				"Aurelia adds 7 to her AC against one melee attack that would hit her. To do so, Aurelia must see the attacker and be wielding a melee weapon.",
+				"Unyielding",
+				"When Aurelia is subjected to an effect that would move her, knock her {@condition prone}, or both, she can use her reaction to be neither moved nor knocked {@condition prone}.",
+				"Command Allies",
+				"Aurelia chooses up to three creatures she can see within 30 feet of her. If a chosen creature can see or hear Aurelia, it can immediately use its reaction to make one weapon attack, with advantage on the attack roll.",
+				"Longsword Attack (Costs 2 Actions)",
+				"Aurelia makes one longsword attack.",
+				"Frighten Foes (Costs 3 Actions)",
+				"Aurelia targets up to five creatures she can see within 30 feet of her. Each target must succeed on a {@dc 25} Wisdom saving throw or be {@condition frightened} of her until the end of her next turn. Any target within 5 feet of Aurelia has disadvantage on the saving throw."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Battleforce Angel|GGR",
+			"hint": {
+				"Flyby": "飛掠",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍"
+			},
+			"s": [
+				"Battleforce Angel",
+				"Flyby",
+				"The angel doesn't provoke an opportunity attack when it flies out of an enemy's reach.",
+				"Magic Resistance",
+				"The angel has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The angel makes two melee attacks. It also uses Battlefield Inspiration.",
+				"Longsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands, plus 18 ({@damage 4d8}) radiant damage. If the target is within 5 feet of any of the angel's allies, the target takes an extra 2 ({@damage 1d4}) radiant damage.",
+				"Battlefield Inspiration",
+				"The angel chooses up to three creatures it can see within 30 feet of it. Until the end of the angel's next turn, each target can add a {@dice d4} to its attack rolls and saving throws."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Biomancer|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Scimitar": "彎刀"
+			},
+			"s": [
+				"Biomancer",
+				"Spellcasting",
+				"The biomancer is a 16th-level Simic spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The biomancer has the following wizard spells prepared:",
+				"Bolstering Presence",
+				"The biomancer magically emanates life-giving energy within 30 feet of itself. Any ally of the biomancer that starts its turn there regains 5 ({@dice 1d10}) hit points.",
+				"Magic Resistance",
+				"The biomancer has advantage on saving throws against spells and other magical effects.",
+				"Scimitar",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blistercoil Weird|GGR",
+			"hint": {
+				"Heated Body": "熾熱之軀",
+				"Illumination": "照明",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Blistercoil Weird",
+				"Feed on Fire",
+				"If the weird takes fire damage from a spell or other magical effect, its size increases by one category. If there isn't enough room for the weird to increase in size, it attains the maximum size possible in the space available. While the weird is Large or bigger, it makes Strength checks and saving throws with advantage. If the weird starts its turn at Gargantuan size, the weird releases energy in an explosion. Each creature within 30 feet of the weird must make a {@dc 12} Dexterity saving throw, taking 28 ({@damage 8d6}) fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects in the area that aren't being worn or carried. The weird's size then becomes Medium.",
+				"Form of Fire and Water",
+				"The weird can move through a space as narrow as 1 inch wide without squeezing. In addition, the weird can enter a hostile creature's space and stop there. The first time the weird enters another creature's space on a turn, that creature takes 5 ({@damage 1d10}) fire damage and catches fire; until someone takes an action to douse the fire, the burning creature takes 5 ({@damage 1d10}) fire damage at the start of each of its turns.",
+				"Heated Body",
+				"A creature that touches the weird or hits it with a melee attack while within 5 feet of it takes 5 ({@damage 1d10}) fire damage.",
+				"Illumination",
+				"The weird sheds bright light in a 30-foot radius and dim light for an additional 30 feet.",
+				"Slam",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage plus 7 ({@damage 2d6}) fire damage, or 11 ({@damage 2d8 + 3}) bludgeoning damage plus 14 ({@damage 4d6}) fire damage if the weird is Large or bigger."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blood Drinker Vampire|GGR",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Rapier": "刺劍",
+				"Unarmed Strike": "徒手打擊",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Blood Drinker Vampire",
+				"natural armor",
+				"(hover)",
+				"Multiattack",
+				"The vampire makes three melee attacks, only one of which can be a bite attack.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. If the target is humanoid, it must succeed on a {@dc 15} Charisma saving throw or be {@condition charmed} by the vampire for 1 minute. While {@condition charmed} in this way, the target is infatuated with the vampire. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0.",
+				"Rapier",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage.",
+				"Unarmed Strike",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage. The vampire can also grapple the target (escape {@dc 14}) if it is a creature and the vampire has a hand free.",
+				"Parry",
+				"The vampire adds 3 to its AC against one melee attack that would hit it. To do so, the vampire must see the attacker and be wielding a melee weapon."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blood Witch|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Devil's Sight": "魔鬼視覺",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Blood Witch",
+				"with {@spell mage armor}",
+				"Innate Spellcasting",
+				"The witch's innate spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The witch can innately cast the following spells, requiring no material components:",
+				"Blood Witch Dance",
+				"The witch can use a bonus action to control the movement of one creature cursed by its {@spell hex} spell that it can see within 30 feet of it. The creature must succeed on a {@dc 15} Charisma saving throw or use its reaction to move up to 30 feet in a direction of the witch's choice.",
+				"Devil's Sight",
+				"Magical darkness doesn't impede the witch's darkvision.",
+				"Multiattack",
+				"The witch makes two attacks: one with its longsword and one with its shortsword.",
+				"Longsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage.",
+				"Shortsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bloodfray Giant|GGR",
+			"hint": {
+				"Chain": "鎖鏈",
+				"Rock": "擲石"
+			},
+			"s": [
+				"Bloodfray Giant",
+				"natural armor",
+				"Chain",
+				"{@atk mw} {@hit 9} to hit, reach 20 ft., one target. {@h}16 ({@damage 3d6 + 6}) bludgeoning damage. If the target is a creature, it is {@condition grappled} (escape {@dc 17}). Until the grapple ends, the target is {@condition restrained}, and the giant can't use this attack on anyone else.",
+				"Rock",
+				"{@atk rw} {@hit 9} to hit, range 60/240 ft., one target. {@h}16 ({@damage 3d6 + 6}) bludgeoning damage.",
+				"Furious Defense",
+				"After a creature the giant can see is dealt damage by a foe within 20 feet of the giant, the giant makes a chain attack against that foe."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Borborygmos|GGR",
+			"hint": {
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Siege Monster": "攻城怪獸",
+				"Multiattack": "多重攻擊",
+				"Maul": "巨鎚",
+				"Stomp": "踐踏",
+				"Rock": "擲石",
+				"Frightful Presence": "駭人威儀",
+				"Attack": "攻擊"
+			},
+			"s": [
+				"Borborygmos",
+				"natural armor",
+				"Legendary Resistance (3/Day)",
+				"If Borborygmos fails a saving throw, he can choose to succeed instead.",
+				"Poor Depth Perception",
+				"Borborygmos has disadvantage on any attack roll against a target more than 30 feet away.",
+				"Siege Monster",
+				"Borborygmos deals double damage to objects and structures.",
+				"Multiattack",
+				"Borborygmos can use his Frightful Presence. He also makes two attacks: one with his maul and one with his stomp.",
+				"Maul",
+				"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}28 ({@damage 6d6 + 7}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be knocked {@condition prone}.",
+				"Stomp",
+				"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d10 + 7}) bludgeoning damage.",
+				"Rock",
+				"{@atk rw} {@hit 13} to hit, range 30/120 ft., one target. {@h}29 ({@damage 4d10 + 7}) bludgeoning damage.",
+				"Frightful Presence",
+				"Each creature of Borborygmos's choice that is within 60 feet of him and can see or hear him must succeed on a {@dc 17} Wisdom saving throw or become {@condition frightened} of him for 1 minute. The {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Borborygmos's Frightful Presence for the next 24 hours.",
+				"Attack",
+				"Borborygmos makes a weapon attack.",
+				"Bellow (Costs 2 Actions)",
+				"Borborygmos yells menacingly at one creature he can see within 60 feet of him. That creature must succeed on a {@dc 17} Wisdom saving throw or become {@condition frightened} of him for 1 minute. If the creature is already {@condition frightened}, it becomes {@condition stunned} instead. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Borborygmos's Bellow for the next 24 hours.",
+				"Wide Berth (Costs 3 Actions)",
+				"Borborygmos moves up to half his speed and can move through the space of any creature smaller than Huge. The first time Borborygmos enters a creature's space during this move, the creature must make a {@dc 21} Dexterity saving throw. If the saving throw succeeds, the creature is pushed 5 feet away from Borborygmos. If the saving throw fails, that creature is knocked {@condition prone}, and Borborygmos can make a stomp attack against it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Cackler|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Mimicry": "聲音模仿",
+				"Bite": "啃咬",
+				"Spiked Chain": "刺鏈"
+			},
+			"s": [
+				"Cackler",
+				"natural armor",
+				"Innate Spellcasting",
+				"The cackler's innate spellcasting ability is Charisma (spell save {@dc 11}, {@hit 3} to hit with spell attacks). The cackler can innately cast the following spells, requiring no material components:",
+				"Last Laugh",
+				"When the cackler dies, it releases a dying laugh that scars the minds of other nearby creatures. Each creature within 10 feet of the cackler must succeed on a {@dc 11} Wisdom saving throw or take 2 ({@damage 1d4}) psychic damage.",
+				"Mimicry",
+				"The cackler can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 11} Wisdom ({@skill Insight}) check.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage.",
+				"Spiked Chain",
+				"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Category 1 Krasis|GGR",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Category 1 Krasis",
+				"natural armor",
+				"Amphibious",
+				"The krasis can breathe air and water.",
+				"Multiattack",
+				"The krasis makes two attacks: one with its bite and one with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d10 + 3}) piercing damage.",
+				"Claws",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Category 2 Krasis|GGR",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Category 2 Krasis",
+				"natural armor",
+				"Amphibious",
+				"The krasis can breathe air and water.",
+				"Multiattack",
+				"The krasis makes two attacks: one with its bite and one with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}17 ({@damage 2d12 + 4}) piercing damage.",
+				"Claws",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d12 + 4}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Category 3 Krasis|GGR",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Category 3 Krasis",
+				"natural armor",
+				"Amphibious",
+				"The krasis can breathe air and water.",
+				"Multiattack",
+				"The krasis makes three attacks: one with its bite, one with its claws, and one with its tail.",
+				"Bite",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one creature. {@h}27 ({@damage 6d6 + 6}) piercing damage.",
+				"Claws",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d10 + 6}) slashing damage.",
+				"Tail",
+				"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}33 ({@damage 6d8 + 6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 19} Strength saving throw or be knocked {@condition prone}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Conclave Dryad|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Resistance": "魔法抗性",
+				"Speak with Beasts and Plants": "與動植物交談",
+				"Multiattack": "多重攻擊",
+				"Vine Staff": "藤蔓法杖",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Conclave Dryad",
+				"natural armor",
+				"Innate Spellcasting",
+				"The dryad's innate spellcasting ability is Charisma (spell save {@dc 17}). The dryad can innately cast the following spells, requiring no material components:",
+				"Magic Resistance",
+				"The dryad has advantage on saving throws against spells and other magical effects.",
+				"Speak with Beasts and Plants",
+				"The dryad can communicate with beasts and plants as if they and the dryad shared a language.",
+				"Multiattack",
+				"The dryad makes three attacks, using its vine staff, its longbow, or both.",
+				"Vine Staff",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 17} Dexterity saving throw or become {@condition restrained} by twisting vines for 1 minute. A target {@condition restrained} in this way can use an action to make a {@dc 17} Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check, ending the effect on itself on a success.",
+				"Longbow",
+				"{@atk rw} {@hit 8} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage.",
+				"Summon Mount (1/Day)",
+				"The dryad magically summons a mount, which appears in an unoccupied space within 60 feet of the dryad. The mount remains for 8 hours, until it or the dryad dies, or until the dryad dismisses it as an action. The mount uses the stat block of an {@creature elk} (see the Monster Manual) with these changes: it is a plant instead of a beast, it has an Intelligence of 6, and it understands Sylvan but can't speak. While within 1 mile of the mount, the dryad can communicate with it telepathically.",
+				"Suppress Magic {@recharge 5}",
+				"The dryad targets one magic item it can see within 120 feet of it. If the magic item isn't an artifact, its magical properties are suppressed for 10 minutes, until the dryad is {@condition incapacitated} or dies, or until the dryad uses a bonus action to end the effect."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Cosmotronic Blastseeker|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Warhammer": "戰錘"
+			},
+			"s": [
+				"Cosmotronic Blastseeker",
+				"Innate Spellcasting",
+				"The blastseeker's innate spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The blastseeker can innately cast the following spells, requiring no components other than its Izzet gear, which doesn't function for others:",
+				"Empowered Spell (3/Day)",
+				"When the blastseeker rolls damage for a spell, it can reroll up to four dice of damage. It must use the new dice.",
+				"Tides of Chaos (1/Day)",
+				"The blastseeker makes one attack roll, ability check, or saving throw with advantage.",
+				"Warhammer",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage, or 7 ({@damage 1d10 + 2}) bludgeoning damage if used with two hands."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Counterflux Blastseeker|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Rapier": "刺劍"
+			},
+			"s": [
+				"Counterflux Blastseeker",
+				"with {@spell mage armor}",
+				"Innate Spellcasting",
+				"The blastseeker's innate spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The blastseeker can innately cast the following spells, requiring no components other than its Izzet gear, which doesn't function for others:",
+				"Counterflux Overcast {@recharge 5}",
+				"The blastseeker can create an additional effect immediately after casting a spell. Roll a {@dice d6} to determine the effect:",
+				"1–3.",
+				"The blastseeker creates a 15-foot-radius {@condition invisible} sphere centered on itself that lasts until the end of its next turn. Creatures in the sphere have disadvantage on saving throws against spells and other magical effects.",
+				"4–6.",
+				"The blastseeker creates a 15-foot-radius {@condition invisible} sphere centered on itself that lasts until the end of its next turn. Creatures in the sphere have advantage on saving throws against spells and other magical effects.",
+				"Rapier",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Deathpact Angel|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Flyby": "飛掠",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Scythe": "巨鐮"
+			},
+			"s": [
+				"Deathpact Angel",
+				"natural armor",
+				"Innate Spellcasting",
+				"The angel's innate spellcasting ability is Charisma (spell save {@dc 19}, {@hit 11} to hit with spell attacks). The angel can innately cast the following spells, requiring no material components:",
+				"Exploitation of the Debtors",
+				"As a bonus action, the angel targets a creature {@condition charmed} by it that it can see within 30 feet of it. The angel deals 11 ({@damage 2d10}) necrotic damage to the target, and the angel gains temporary hit points equal to the damage dealt.",
+				"Flyby",
+				"The angel doesn't provoke an opportunity attack when it flies out of an enemy's reach.",
+				"Magic Resistance",
+				"The angel has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The angel makes two attacks with its scythe. It can substitute Chains of Obligation for one of these attacks.",
+				"Scythe",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}9 ({@damage 2d4 + 4}) slashing damage plus 27 ({@damage 6d8}) necrotic damage.",
+				"Chains of Obligation",
+				"The angel targets one creature {@condition charmed} by it that it can see within 90 feet of it. The target must succeed on a {@dc 19} Charisma saving throw or become {@condition paralyzed} for 1 minute or until it takes any damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Devkarin Lich|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Regeneration": "再生",
+				"Turn Resistance": "抗驅散",
+				"Undead Fortitude": "不死堅韌",
+				"Cantrip": "戲法",
+				"Disrupt Life (Costs 3 Actions)": "瓦解生命（消耗 3 個動作）"
+			},
+			"s": [
+				"Devkarin Lich",
+				"natural armor",
+				"Spellcasting",
+				"The lich is a 14th-level Golgari spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The lich has the following wizard spells prepared:",
+				"Legendary Resistance (3/Day)",
+				"If the lich fails a saving throw, it can choose to succeed instead.",
+				"Regeneration",
+				"The lich regains 10 hit points at the start of its turn. If the lich takes fire or radiant damage, this trait doesn't function at the start of the lich's next turn. The lich dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+				"Turn Resistance",
+				"The lich has advantage on saving throws against any effect that turns undead.",
+				"Undead Fortitude",
+				"If damage reduces the lich to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the lich drops to 1 hit point instead.",
+				"Noxious Touch",
+				"{@atk ms} {@hit 9} to hit, reach 5 ft., one creature. {@h}14 ({@damage 4d6}) poison damage, and the target must succeed on a {@dc 17} Constitution saving throw or be {@condition poisoned} for 1 minute. The {@condition poisoned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Cantrip",
+				"The lich casts one of its cantrips.",
+				"Noxious Touch (Costs 2 Actions)",
+				"The lich uses Noxious Touch.",
+				"Disrupt Life (Costs 3 Actions)",
+				"Each creature within 30 feet of the lich must make a {@dc 17} Constitution saving throw, taking 21 ({@damage 6d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Druid of the Old Ways|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Siege Monster": "攻城怪獸",
+				"Speak with Beasts and Plants": "與動植物交談",
+				"Quarterstaff": "長棍"
+			},
+			"s": [
+				"Druid of the Old Ways",
+				"Spellcasting",
+				"The druid is a 12th-level Gruul spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It has the following druid spells prepared:",
+				"Siege Monster",
+				"The druid deals double damage to objects and structures.",
+				"Speak with Beasts and Plants",
+				"The druid can communicate with beasts and plants as if they shared a language.",
+				"Quarterstaff",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 4 ({@damage 1d8}) bludgeoning damage if used with two hands."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Felidar|GGR",
+			"hint": {
+				"Pounce": "撲擊",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Felidar",
+				"natural armor",
+				"Bonding",
+				"The felidar can magically bond with one creature it can see, right after spending at least 1 hour observing that creature while within 30 feet of it. The bond lasts until the felidar bonds with a different creature or until the bonded creature dies. This bond has the following effects: The felidar and the bonded creature can communicate telepathically with each other at a distance of up to 100 feet. The felidar can sense the direction and distance to the bonded creature if they're on the same plane of existence. As an action, the felidar or the bonded creature can sense what the other sees and hears, during which time it loses its own sight and hearing. This effect lasts until the start of its next turn.",
+				"Keen Hearing and Sight",
+				"The felidar has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight.",
+				"Pounce",
+				"If the felidar moves at least 20 feet straight toward a creature and hits it with a claw attack on the same turn, that target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the felidar can make one claw attack against it as a bonus action.",
+				"Multiattack",
+				"The felidar makes two attacks: one with its bite and one with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 4}) piercing damage.",
+				"Claws",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) slashing damage.",
+				"Winged Felidars",
+				"Some felidars boast huge, feathered wings. A winged felidar uses the same stat block as an ordinary felidar, with the addition of a flying speed of 40 feet."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Firefist|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Greatsword": "巨劍"
+			},
+			"s": [
+				"Firefist",
+				"Spellcasting",
+				"The firefist is a 9th-level Boros spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It has the following cleric spells prepared:",
+				"Multiattack",
+				"The firefist makes two greatsword attacks.",
+				"Greatsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage.",
+				"Guided Attack (Recharges after a Short or Long Rest)",
+				"When the firefist or one creature it can see within 30 feet of it makes an attack roll, the firefist grants a +10 bonus to that roll."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Firemane Angel|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Flyby": "飛掠",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍"
+			},
+			"s": [
+				"Firemane Angel",
+				"Innate Spellcasting",
+				"The angel's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The angel can innately cast the following spells, requiring no material components:",
+				"Flyby",
+				"The angel doesn't provoke an opportunity attack when it flies out of an enemy's reach.",
+				"Magic Resistance",
+				"The angel has advantage on saving throws against spells and other magical effects.",
+				"Relentless (Recharges after a Short or Long Rest)",
+				"If the angel takes 21 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.",
+				"Multiattack",
+				"The angel makes two melee attacks.",
+				"Longsword",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage, or 11 ({@damage 1d10 + 6}) slashing damage if used with two hands, plus 22 ({@damage 5d8}) fire or radiant damage (angel's choice)."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Flux Blastseeker|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Quarterstaff": "長棍"
+			},
+			"s": [
+				"Flux Blastseeker",
+				"with {@spell mage armor}",
+				"Innate Spellcasting",
+				"The blastseeker's innate spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). The blastseeker can innately cast the following spells, requiring no components other than its Izzet gear, which doesn't function for others:",
+				"Fluxbending Overcast {@recharge 5}",
+				"The blastseeker can create an additional effect immediately after casting a spell. Roll a {@dice d6} to determine the effect: 1-3. The blastseeker teleports, swapping places with a creature it can see within 30 feet of it. 4-6. The blastseeker and each creature within 10 feet of it must succeed on a {@dc 16} Constitution saving throw or take 11 ({@damage 2d10}) thunder damage.",
+				"Quarterstaff",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 4 ({@damage 1d8}) bludgeoning damage if used with two hands."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fluxcharger|GGR",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊",
+				"Arc Lightning": "弧形閃電"
+			},
+			"s": [
+				"Fluxcharger",
+				"natural armor",
+				"Amplify Lightning",
+				"Whenever a spell that deals lightning damage includes one or more fluxchargers in its area, the spell deals an extra 9 ({@damage 2d8}) lightning damage.",
+				"Multiattack",
+				"The fluxcharger makes two slam attacks or uses Arc Lightning twice.",
+				"Slam",
+				"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage plus 10 ({@damage 3d6}) fire damage.",
+				"Arc Lightning",
+				"{@atk rs} {@hit 7} to hit, range 30 ft., one target. {@h}16 ({@damage 3d10}) lightning damage, and lightning jumps from the target to one creature of the fluxcharger's choice that it can see within 30 feet of the target. That second creature must succeed on a {@dc 15} Dexterity saving throw or take 13 ({@damage 3d8}) lightning damage. {@hom}The fluxcharger takes 5 ({@damage 1d10}) force damage after resolving the attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Flying Horror|GGR",
+			"hint": {
+				"Sunlight Sensitivity": "日光敏感",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Flying Horror",
+				"natural armor",
+				"Fear Frenzy",
+				"The horror has advantage on attack rolls against {@condition frightened} creatures.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the horror has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Claws",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage plus 14 ({@damage 4d6}) psychic damage.",
+				"Frightening Screech {@recharge 5}",
+				"The horror screeches. Each creature within 30 feet of it that can hear it must succeed on a {@dc 13} Wisdom saving throw or be {@condition frightened} of it for 1 minute. The {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the horror's Frightening Screech for the next 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Frontline Medic|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Spear": "矛"
+			},
+			"s": [
+				"Frontline Medic",
+				"Spellcasting",
+				"The medic is a 3rd-level Boros spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 11}). The medic has the following cleric spells prepared:",
+				"Spear",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Galvanic Blastseeker|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Heart of the Storm": "暴風之心",
+				"Spear": "矛"
+			},
+			"s": [
+				"Galvanic Blastseeker",
+				"Innate Spellcasting",
+				"The blastseeker's innate spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The blastseeker can innately cast the following spells, requiring no components other than its Izzet gear, which doesn't function for others:",
+				"Galvanic Overcast {@recharge 5}",
+				"When the blastseeker casts {@spell lightning bolt} or thunderwave, it can roll a die. On an odd number, the blastseeker takes 9 ({@damage 2d8}) force damage. On an even number, the spell also deals 9 ({@damage 2d8}) lightning damage to each target that fails its saving throw.",
+				"Heart of the Storm",
+				"When the blastseeker casts {@spell lightning bolt} or thunderwave, all other creatures within 10 feet of the blastseeker each take 3 lightning damage.",
+				"Gust-Propelled Leap",
+				"The blastseeker can use a bonus action to fly up to 10 feet without provoking opportunity attacks.",
+				"Spear",
+				"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}3 ({@damage 1d6}) piercing damage, or 4 ({@damage 1d8}) piercing damage if used with two hands to make a melee attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Galvanice Weird|GGR",
+			"hint": {
+				"Death Burst": "死亡爆發",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Galvanice Weird",
+				"natural armor",
+				"Death Burst",
+				"When the galvanice weird dies, it explodes in a burst of ice and lightning. Each creature within 10 feet of the exploding weird must make a {@dc 13} Dexterity saving throw, taking 7 ({@damage 2d6}) lightning damage on a failed save, or half as much damage on a successful one.",
+				"Slam",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage plus 5 ({@damage 2d4}) lightning damage. If the target is a creature, it must succeed on a {@dc 13} Constitution saving throw or lose the ability to use reactions until the start of the weird's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gloamwing|GGR",
+			"hint": {
+				"Flyby": "飛掠",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Gloamwing",
+				"natural armor",
+				"Death Link",
+				"If its specter rider is reduced to 0 hit points, the gloamwing is destroyed.",
+				"Flyby",
+				"The gloamwing doesn't provoke an opportunity attack when it flies out of an enemy's reach.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the gloamwing has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Multiattack",
+				"The gloamwing makes two attacks: one with its bite and one with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) piercing damage.",
+				"Claws",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d6 + 5}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Golgari Shaman|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Fey Ancestry": "妖精血統",
+				"Quarterstaff": "長棍"
+			},
+			"s": [
+				"Golgari Shaman",
+				"Spellcasting",
+				"The shaman is an 8th-level Golgari spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The shaman has the following druid spells prepared:",
+				"Fey Ancestry",
+				"The shaman has advantage on saving throws against being {@condition charmed}, and magic can't put it to sleep.",
+				"Quarterstaff",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage if used with two hands.",
+				"Fungal Rot",
+				"{@atk ms} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d8}) necrotic damage, and the target must make a {@dc 14} Constitution saving throw, taking 18 ({@damage 4d8}) poison damage on a failed save, or half as much damage on a successful one.",
+				"Feed on Death",
+				"When a creature within 30 feet of the shaman drops to 0 hit points, the shaman gains 5 ({@dice 1d10}) temporary hit points."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Guardian Giant|GGR",
+			"hint": {
+				"Vigilant": "警戒",
+				"Multiattack": "多重攻擊",
+				"Spear": "矛",
+				"Protection": "守護"
+			},
+			"s": [
+				"Guardian Giant",
+				"Vigilant",
+				"The giant can't be {@status surprised}.",
+				"Multiattack",
+				"The giant makes three spear attacks.",
+				"Spear",
+				"{@atk mw,rw} {@hit 10} to hit, reach 10 ft. or range 60/240 ft., one target. {@h}17 ({@damage 3d6 + 7}) piercing damage, or 20 ({@damage 3d8 + 7}) piercing damage if used with two hands to make a melee attack.",
+				"Protection",
+				"When an attacker the giant can see makes an attack roll against a creature within 10 feet of the giant, the giant can impose disadvantage on the attack roll."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Horncaller|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Multiattack": "多重攻擊",
+				"Staff": "法杖"
+			},
+			"s": [
+				"Horncaller",
+				"Innate Spellcasting",
+				"The horncaller's innate spellcasting ability is Wisdom (spell save {@dc 14}). The horncaller can innately cast the following spells, requiring no material components:",
+				"Speak with Beasts",
+				"The horncaller can communicate with beasts as if they shared a language.",
+				"Multiattack",
+				"The horncaller makes two melee attacks with its staff and uses One with the Worldsoul.",
+				"Staff",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage, or 5 ({@damage 1d8 + 1}) bludgeoning damage if used with two hands.",
+				"One with the Worldsoul",
+				"The horncaller chooses one beast it can see within 30 feet of it. If the beast can hear the horncaller, the beast uses its reaction to make one melee attack against a target that the horncaller can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hybrid Brute|GGR",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Hybrid Brute",
+				"natural armor",
+				"Amphibious",
+				"The hybrid can breathe air and water.",
+				"Multiattack",
+				"The hybrid makes two claw attacks.",
+				"Claw",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hybrid Flier|GGR",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Javelin": "標槍"
+			},
+			"s": [
+				"Hybrid Flier",
+				"Multiattack",
+				"The hybrid makes two javelin attacks. It can replace one javelin attack with Spit Acid.",
+				"Javelin",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+				"Spit Acid",
+				"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}10 ({@damage 4d4}) acid damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hybrid Poisoner|GGR",
+			"hint": {
+				"Assassinate": "刺殺",
+				"Poisonous Skin": "毒性皮膚"
+			},
+			"s": [
+				"Hybrid Poisoner",
+				"Assassinate",
+				"During its first turn, the hybrid poisoner has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the hybrid scores against a {@status surprised} creature is a critical hit.",
+				"Poisonous Skin",
+				"Any creature that touches the hybrid or hits it with a melee attack while within 5 feet of it takes 3 ({@damage 1d6}) poison damage.",
+				"Toxic Touch",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6}) bludgeoning damage, and the target must succeed on a {@dc 12} Constitution saving throw or become {@condition poisoned} for 1 minute. At the end of each of the {@condition poisoned} target's turns, it must repeat the save, taking 3 ({@damage 1d6}) poison damage on a failed save, or ending the effect on itself on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hybrid Shocker|GGR",
+			"hint": {
+				"Illumination": "照明",
+				"Multiattack": "多重攻擊",
+				"Tentacles": "觸手"
+			},
+			"s": [
+				"Hybrid Shocker",
+				"Electrified Body",
+				"Any creature that touches the hybrid or hits it with a melee attack while within 5 feet of it takes 5 ({@damage 1d10}) lightning damage.",
+				"Illumination",
+				"The hybrid sheds bright light in a 10-foot radius and dim light for an additional 10 feet.",
+				"Multiattack",
+				"The hybrid makes two attacks: one with its shocking touch and one with its tentacles.",
+				"Shocking Touch",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d8}) lightning damage.",
+				"Tentacles",
+				"{@atk mw} {@hit 4} to hit, reach 15 ft., one creature. {@h}The target is {@condition grappled} (escape {@dc 11}), and the hybrid pulls the target up to 15 feet straight toward it. Until this grapple ends, the target takes 5 ({@damage 1d10}) lightning damage at the start of each of its turns, and the hybrid shocker can't use its tentacles on another creature."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hybrid Spy|GGR",
+			"hint": {
+				"Chameleon Skin": "變色皮膚",
+				"Spider Climb": "蛛行",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Hybrid Spy",
+				"Chameleon Skin",
+				"The hybrid has advantage on Dexterity ({@skill Stealth}) checks made to hide.",
+				"Spider Climb",
+				"The hybrid can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Multiattack",
+				"The hybrid makes two shortsword attacks.",
+				"Shortsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Indentured Spirit|GGR",
+			"hint": {
+				"Incorporeal Movement": "虛體移動",
+				"Withering Touch": "凋萎之觸"
+			},
+			"s": [
+				"Indentured Spirit",
+				"(hover)",
+				"Incorporeal Movement",
+				"The spirit can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object.",
+				"Withering Touch",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}10 ({@damage 3d6}) necrotic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Isperia|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Spellcasting": "施法",
+				"Inscrutable": "莫測高深",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Claw Attack": "爪擊攻擊",
+				"Cast a Spell (Costs 2 Actions)": "施展法術（消耗 2 個動作）"
+			},
+			"s": [
+				"Isperia",
+				"natural armor",
+				"Innate Spellcasting",
+				"Isperia's innate spellcasting ability is Wisdom (spell save {@dc 23}). Isperia can innately cast {@spell imprisonment} twice per day, requiring no material components.",
+				"Spellcasting",
+				"Isperia is a 15th-level Azorius spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 23}, {@hit 14} to hit with spell attacks). Isperia has the following cleric spells prepared:",
+				"Inscrutable",
+				"Isperia is immune to any effect that would sense her emotions or read her thoughts, as well as any divination spell that she refuses. Wisdom ({@skill Insight}) checks made to ascertain her intentions or sincerity have disadvantage.",
+				"Legendary Resistance (3/Day)",
+				"If Isperia fails a saving throw, she can choose to succeed instead.",
+				"Magic Resistance",
+				"Isperia has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"Isperia makes two claw attacks. She can cast a spell with a casting time of 1 action in place of one claw attack.",
+				"Claw",
+				"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}21 ({@damage 3d10 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 23} Wisdom saving throw or take 14 ({@damage 4d6}) psychic damage after each attack it makes against Isperia before the start of her next turn.",
+				"Supreme Legal Authority",
+				"Isperia chooses up to three creatures she can see within 90 feet of her. Each target must succeed on a {@dc 23} Intelligence saving throw or Isperia chooses an action for that target: {@action Attack}, {@action Cast a Spell}, {@action Dash}, {@action Disengage}, {@action Dodge}, {@action Help}, {@action Hide}, {@action Ready}, {@action Search}, or {@action Use an Object}. The affected target can't take that action for 1 minute. At the end of each of the target's turns, it can end the effect on itself with a successful {@dc 23} Intelligence saving throw. A target that succeeds on the saving throw becomes immune to Isperia's Supreme Legal Authority for 24 hours.",
+				"Claw Attack",
+				"Isperia makes one claw attack.",
+				"Cast a Spell (Costs 2 Actions)",
+				"Isperia casts a spell of 3rd level or lower from her list of prepared spells, using a spell slot as normal.",
+				"Supreme Legal Authority (Costs 3 Actions)",
+				"Isperia uses Supreme Legal Authority."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jarad Vod Savo|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Regeneration": "再生",
+				"Turn Resistance": "抗驅散",
+				"Undead Fortitude": "不死堅韌",
+				"Multiattack": "多重攻擊",
+				"Cantrip": "戲法",
+				"Disrupt Life (Costs 3 Actions)": "瓦解生命（消耗 3 個動作）"
+			},
+			"s": [
+				"Jarad Vod Savo",
+				"natural armor",
+				"Spellcasting",
+				"Jarad is a 14th-level Golgari spellcaster. His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). Jarad has the following wizard spells prepared:",
+				"Legendary Resistance (3/Day)",
+				"If Jarad fails a saving throw, he can choose to succeed instead.",
+				"Magic Resistance",
+				"Jarad has advantage on saving throws against spells and other magical effects.",
+				"Regeneration",
+				"Jarad regains 25 hit points at the start of his turn. If he takes fire or radiant damage, this trait doesn't function at the start of his next turn. He dies only if he starts its turn with 0 hit points and doesn't regenerate.",
+				"Spore Infusion",
+				"Jarad is surrounded by a cloud of spores. As a bonus action, he can cause the spores to deal 11 ({@damage 2d10}) poison damage to a creature he can see within 10 feet of him.",
+				"Turn Resistance",
+				"Jarad has advantage on saving throws against any effect that turns undead.",
+				"Undead Fortitude",
+				"If damage reduces Jarad to 0 hit points, he must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, he drops to 1 hit point instead.",
+				"Multiattack",
+				"Jarad makes two attacks: one with his Noxious Touch and one with his Staff of Svogthir. He can cast a spell with a casting time of 1 action in place of one of these attacks.",
+				"Noxious Touch",
+				"{@atk ms} {@hit 12} to hit, reach 5 ft., one creature. {@h}28 ({@damage 8d6}) poison damage, and the target must succeed on a {@dc 20} Constitution saving throw or be {@condition poisoned} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Staff of Svogthir",
+				"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage plus 13 ({@damage 3d8}) poison damage and 13 ({@damage 3d8}) necrotic damage.",
+				"Cantrip",
+				"Jarad casts one of his cantrips.",
+				"Noxious Touch (Costs 2 Actions)",
+				"Jarad uses Noxious Touch.",
+				"Disrupt Life (Costs 3 Actions)",
+				"Each creature within 30 feet of Jarad must make a {@dc 20} Constitution saving throw, taking 35 ({@damage 10d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kraul Death Priest|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Pack Tactics": "群體戰術",
+				"Spider Climb": "蛛行",
+				"Multiattack": "多重攻擊",
+				"Quarterstaff": "長棍"
+			},
+			"s": [
+				"Kraul Death Priest",
+				"natural armor",
+				"Innate Spellcasting",
+				"The kraul's innate spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The kraul can innately cast the following spells, requiring no material components:",
+				"Feed on Death",
+				"When a creature within 30 feet of the kraul drops to 0 hit points, the kraul or another creature of its choice within 30 feet of it gains 5 ({@dice 1d10}) temporary hit points, provided the kraul isn't {@condition incapacitated}.",
+				"Hive Mind",
+				"The kraul is immune to the {@condition charmed} and {@condition frightened} conditions while within 30 feet of at least one other kraul.",
+				"Pack Tactics",
+				"The kraul has advantage on an attack roll against a creature if at least one of the kraul's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Spider Climb",
+				"The kraul can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Multiattack",
+				"The kraul makes one attack with its quarterstaff and casts one of its spells with a casting time of 1 action.",
+				"Quarterstaff",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage, or 7 ({@damage 1d8 + 3}) bludgeoning damage if used with two hands."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kraul Warrior|GGR",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Spider Climb": "蛛行",
+				"Spear": "矛"
+			},
+			"s": [
+				"Kraul Warrior",
+				"natural armor",
+				"Hive Mind",
+				"The kraul is immune to the {@condition charmed} and {@condition frightened} conditions while within 30 feet of at least one other kraul.",
+				"Pack Tactics",
+				"The kraul has advantage on an attack roll against a creature if at least one of the kraul's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Spider Climb",
+				"The kraul can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Spear",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack.",
+				"Winged Kraul Warriors",
+				"Some kraul warriors have a flying speed of 40 feet, as a result of possessing gossamer wings. Their wings give them a higher station among the kraul soldiers. Winged kraul warriors serve the guild as scouts and shock troops."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lawmage|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Quarterstaff": "長棍"
+			},
+			"s": [
+				"Lawmage",
+				"Spellcasting",
+				"The lawmage is an 8th-level Azorius spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The lawmage has the following wizard spells prepared:",
+				"Quarterstaff",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage, or 5 ({@damage 1d8 + 1}) bludgeoning damage if used with two hands."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lazav|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Elusive": "捉摸不定",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Psychic Defenses": "精神防禦",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍",
+				"Attack": "攻擊",
+				"Cast a Spell (Costs 2 Actions)": "施展法術（消耗 2 個動作）"
+			},
+			"s": [
+				"Lazav",
+				"natural armor",
+				"Innate Spellcasting",
+				"Lazav's innate spellcasting ability is Intelligence (spell save {@dc 20}). He can innately cast the following spells, requiring no material components:",
+				"Elusive",
+				"No attack roll has advantage against Lazav unless he is {@condition incapacitated}.",
+				"Legendary Resistance (3/Day)",
+				"If Lazav fails a saving throw, he can choose to succeed instead.",
+				"Shapechanger Savant",
+				"Lazav can use a bonus action to polymorph into a Small or Medium humanoid he has seen. His statistics, other than his size, are the same in each form. Any equipment he is wearing or carrying isn't transformed.",
+				"Psychic Defenses",
+				"Unless Lazav is {@condition incapacitated}, he is immune to magic that allows other creatures to read his thoughts, determine whether he is lying, know his alignment, or know his creature type. Creatures can telepathically communicate with Lazav only if he allows it.",
+				"Multiattack",
+				"Lazav makes three shortsword attacks.",
+				"Shortsword",
+				"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d6 + 7}) piercing damage plus 10 ({@damage 3d6}) psychic damage, and the target has disadvantage on the next attack roll it makes before Lazav's next turn.",
+				"Attack",
+				"Lazav makes a weapon attack.",
+				"Cast a Spell (Costs 2 Actions)",
+				"Lazav casts one of his innate spells.",
+				"Shifting Nightmare (Costs 3 Actions)",
+				"Lazav rapidly takes the form of several nightmarish creatures, lashing out at all nearby. Each creature within 10 feet of Lazav must succeed on a {@dc 21} Dexterity saving throw or take 18 ({@damage 4d8}) damage of a type chosen by Lazav: acid, cold, fire, lightning, or necrotic."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Master of Cruelties|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Spear": "矛"
+			},
+			"s": [
+				"Master of Cruelties",
+				"Innate Spellcasting",
+				"The master's innate spellcasting ability is Charisma (spell save {@dc 17}). The master can innately cast the following spells, requiring no material components:",
+				"Aura of Blood Lust",
+				"When any other creature starts its turn within 30 feet of the master, that creature must succeed on a {@dc 17} Wisdom saving throw, or it must immediately take the Attack action, making one melee attack against a random creature within reach. If no creatures are within reach, it makes a ranged attack against a random creature within range, throwing its weapon if necessary.",
+				"Feed on the Crowd",
+				"Whenever a creature within 60 feet of the master dies, the master gains 15 temporary hit points and has advantage on all attack rolls, ability checks, and saving throws until the end of its next turn.",
+				"Magic Resistance",
+				"The master has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The master makes two melee attacks with its spear.",
+				"Spear",
+				"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage, or 13 ({@damage 2d8 + 4}) piercing damage if used with two hands to make a melee attack, plus 13 ({@damage 3d8}) psychic damage.",
+				"Captivating Presence {@recharge}",
+				"Each creature within 120 feet of the master must succeed on a {@dc 17} Wisdom saving throw or be {@condition charmed} by the master for 1 hour. While {@condition charmed} in this way, a creature's speed is 0. If the {@condition charmed} creature takes damage, it can repeat the saving throw, ending the effect on itself on a success. A target that succeeds on the saving throw is immune to the Captivating Presence of all masters of cruelties for the next 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mind Drinker Vampire|GGR",
+			"hint": {
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Shadow Stealth": "暗影潛行",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Unarmed Strike": "徒手打擊"
+			},
+			"s": [
+				"Mind Drinker Vampire",
+				"(hover)",
+				"Innate Spellcasting (Psionics)",
+				"The vampire's innate spellcasting ability is Intelligence (spell save {@dc 14}). It can innately cast the following spells, requiring no components:",
+				"Shadow Stealth",
+				"While in dim light or darkness, the vampire can take the {@action Hide} action as a bonus action.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the vampire has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Multiattack",
+				"The vampire makes two attacks, only one of which can be a bite attack.",
+				"Bite",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0.",
+				"Unarmed Strike",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. The vampire can also grapple the target (escape {@dc 13}) if it is a creature and the vampire has a hand free.",
+				"Mind Siphon {@recharge 5}",
+				"The vampire targets a creature it can see within 30 feet of it. The target must make a {@dc 14} Intelligence saving throw, with disadvantage if the vampire has previously consumed the target's blood. On a failed save, the target takes 28 ({@damage 8d6}) psychic damage, and the vampire discerns the target's surface emotions and thoughts. On a successful save, the target takes half as much damage, and the vampire discerns the target's general emotional state but not its thoughts."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mind Mage|GGR",
+			"hint": {
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Special Equipment": "特殊裝備",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Mind Mage",
+				"with {@spell mage armor}",
+				"Innate Spellcasting (Psionics)",
+				"The mage's spellcasting ability is Intelligence (spell save {@dc 16}). It can innately cast the following spells, requiring no components:",
+				"Special Equipment",
+				"The mage wears a {@item Spies' Murmur|GGR|spies' murmur} (see chapter 5).",
+				"Dagger",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nightveil Specter|GGR",
+			"hint": {
+				"Mount": "坐騎",
+				"Multiattack": "多重攻擊",
+				"Scythe": "巨鐮"
+			},
+			"s": [
+				"Nightveil Specter",
+				"natural armor",
+				"Mount",
+				"If the specter isn't mounted, it can use a bonus action to magically teleport onto its gloamwing mount, provided the specter and the gloamwing are on the same plane of existence. When it teleports, the specter appears astride the gloamwing along with any equipment it is wearing or carrying. While mounted and not {@condition incapacitated}, the specter can't be {@status surprised}, and both it and its mount gain advantage on Dexterity saving throws.",
+				"Multiattack",
+				"The specter makes two scythe attacks.",
+				"Scythe",
+				"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage plus 13 ({@damage 3d8}) psychic damage.",
+				"Mind Twist {@recharge 5}",
+				"The specter magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 15} Wisdom saving throw or take 22 ({@damage 5d8}) psychic damage and be {@condition stunned} for 1 minute. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Reap Memory (3/Day)",
+				"The specter touches one {@condition incapacitated} creature and chooses 1 hour from among the past 24. Unless the creature succeeds on a {@dc 15} Intelligence saving throw, the creature loses all memory of that hour. The creature regains the memory only if the specter dies within the next 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Niv-Mizzet|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊",
+				"Tail": "尾擊",
+				"Fire Breath {@recharge 5}": "火焰吐息 {@recharge 5}",
+				"Cantrip": "戲法",
+				"Wing Attack (Costs 2 Actions)": "振翅攻擊（消耗 2 個動作）"
+			},
+			"s": [
+				"Niv-Mizzet",
+				"natural armor",
+				"Spellcasting",
+				"Niv-Mizzet is a 20th-level Izzet spellcaster. His spellcasting ability is Intelligence (spell save {@dc 26}, {@hit 18} to hit with spell attacks). He has the following wizard spells prepared:",
+				"Legendary Resistance (3/Day)",
+				"If Niv-Mizzet fails a saving throw, he can choose to succeed instead.",
+				"Locus of the Firemind",
+				"Niv-Mizzet can maintain {@status concentration} on two different spells at the same time. In addition, he has advantage on saving throws to maintain {@status concentration} on spells.",
+				"Magic Resistance",
+				"Niv-Mizzet has advantage on saving throws against spells and other magical effects.",
+				"Master Chemister",
+				"When Niv-Mizzet casts a spell that deals damage, he can change the spell's damage to cold, fire, force, lightning, or thunder.",
+				"Multiattack",
+				"Niv-Mizzet makes three attacks: one with his bite and two with his claws.",
+				"Bite",
+				"{@atk mw} {@hit 17} to hit, reach 15 ft., one target. {@h}18 ({@damage 2d8 + 9}) piercing damage plus 14 ({@damage 4d6}) fire damage.",
+				"Claw",
+				"{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d4 + 9}) slashing damage.",
+				"Tail",
+				"{@atk mw} {@hit 17} to hit, reach 20 ft., one target. {@h}16 ({@damage 2d6 + 9}) bludgeoning damage.",
+				"Fire Breath {@recharge 5}",
+				"Niv-Mizzet exhales fire in a 90-foot cone. Each creature in that area must make a {@dc 25} Dexterity saving throw, taking 91 ({@damage 26d6}) fire damage on a failed save, or half as much damage on a successful one.",
+				"Cantrip",
+				"Niv-Mizzet casts one of his cantrips.",
+				"Tail Attack",
+				"Niv-Mizzet makes a tail attack.",
+				"Wing Attack (Costs 2 Actions)",
+				"Niv-Mizzet beats his wings. Each creature within 15 feet of him must succeed on a {@dc 25} Dexterity saving throw or take 14 ({@damage 2d4 + 9}) bludgeoning damage and be knocked {@condition prone}. Niv-Mizzet can then fly up to half his flying speed.",
+				"Dracogenius (Costs 3 Actions)",
+				"Niv-Mizzet regains a spell slot of 3rd level or lower."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nivix Cyclops|GGR",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Nivix Cyclops",
+				"Magic Resistance",
+				"The cyclops has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The cyclops makes two slam attacks.",
+				"Slam",
+				"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}23 ({@damage 3d10 + 7}) bludgeoning damage.",
+				"Spell Vitalization",
+				"Immediately after a creature casts a spell of 1st level or higher within 120 feet of the cyclops, the cyclops can move up to twice its speed without provoking opportunity attacks. It can then make one slam attack against a target of its choice."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Obzedat Ghost|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Ethereal Sight": "乙太視覺",
+				"Incorporeal Movement": "虛體移動",
+				"Legendary Resistance (1/Day)": "傳奇抗性（每日 1 次）",
+				"Life Drain": "生命汲取"
+			},
+			"s": [
+				"Obzedat Ghost",
+				"natural armor",
+				"plus 1 for each other Obzedat",
+				"(hover)",
+				"Innate Spellcasting",
+				"The ghost's innate spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no components:",
+				"Council of Five",
+				"The ghost has a trait based on who it is, as shown below:",
+				"Enezesku: Enfeebling Ray",
+				"Enezesku's Innate Spellcasting trait includes {@spell ray of enfeeblement}, which he can cast at will.",
+				"Fautomni: Undead Fortitude",
+				"If damage reduces Fautomni to 0 hit points, he must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, Fautomni drops to 1 hit point instead.",
+				"Karlov: Unnatural Vigor",
+				"When Karlov regains hit points, he has advantage on attack rolls he makes on his next turn.",
+				"Vuliev: Teleportation",
+				"Vuliev's Innate Spellcasting trait includes {@spell misty step}, which he can cast at will.",
+				"Xil Xaxosz: Lingering Spite",
+				"When Xil Xaxosz is reduced to 0 hit points, his incorporeal form explodes in a burst of necrotic energy. Each creature within 5 feet of him must make a {@dc 16} Constitution saving throw, taking 14 ({@damage 4d6}) necrotic damage on a failed save, or half as much damage on a successful one.",
+				"Ethereal Sight",
+				"The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.",
+				"Incorporeal Movement",
+				"The ghost can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object.",
+				"Legendary Resistance (1/Day)",
+				"If the ghost fails a saving throw, it can choose to succeed instead.",
+				"Life Drain",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}18 ({@damage 4d8}) necrotic damage, and the ghost regains hit points equal to half the amount of damage the target takes. The target must succeed on a {@dc 13} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. The target dies if its hit point maximum is reduced to 0. This reduction to the target's hit point maximum lasts until the target finishes a long rest.",
+				"Convene the Ghost Council",
+				"The ghost summons the other four members of the Obzedat. At the start of the ghost's next turn, the other members appear in unoccupied spaces within 30 feet of the summoner. The ghosts each roll initiative when they appear.",
+				"If five Obzedat ghosts are all within 30 feet of each other, they can collectively take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time, and only at the end of another creature's turn. Obzedat ghosts regain spent legendary actions at the start of the turn of the ghost with the highest initiative.",
+				"Forced Obedience",
+				"A target that all of the Obzedat ghosts can see must succeed on a {@dc 16} Wisdom saving throw or bow until the end of its next turn. Until this bow ends, the target can't take actions or reactions, and its speed is 0 and can't be increased.",
+				"Indentured Spirits (Costs 3 Actions)",
+				"The Obzedat ghosts conjure {@dice 1d6} {@creature indentured spirit|ggr|indentured spirits} (described in this chapter) within 60 feet of one of them."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Orzhov Giant|GGR",
+			"hint": {
+				"Focus": "專注",
+				"Multiattack": "多重攻擊",
+				"Greataxe": "巨斧",
+				"Rock": "擲石"
+			},
+			"s": [
+				"Orzhov Giant",
+				"Focus",
+				"As a bonus action, the giant can target a creature it can see within 30 feet of it and make that creature its focus. The target remains the giant's focus for 1 minute, or until either the target or the giant drops to 0 hit points. When the giant makes an attack roll against its focus, it adds a {@dice d4} to its attack roll. If the giant attacks a different target while it has a focus, it subtracts a {@dice d4} from its attack roll.",
+				"Multiattack",
+				"The giant makes two greataxe attacks.",
+				"Greataxe",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}25 ({@damage 3d12 + 6}) slashing damage. If the Orzhov giant scores a critical hit, it rolls the damage dice three times, instead of twice.",
+				"Rock",
+				"{@atk rw} {@hit 9} to hit, range 60/240 ft., one target. {@h}28 ({@damage 4d10 + 6}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Precognitive Mage|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Quarterstaff": "長棍"
+			},
+			"s": [
+				"Precognitive Mage",
+				"with {@spell mage armor}",
+				"Innate Spellcasting",
+				"The mage's innate spellcasting ability is Intelligence (spell save {@dc 14}). It can cast the following spells, requiring no material components:",
+				"Quarterstaff",
+				"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) bludgeoning damage, or 3 ({@damage 1d8 - 1}) bludgeoning damage if used with two hands.",
+				"Glimpse the Temporal Flood {@recharge 5}",
+				"The mage targets one creature within 120 feet of it that it can see. The target takes 18 ({@damage 4d8}) psychic damage, and it must succeed on a {@dc 14} Intelligence saving throw or be {@condition stunned} until the end of its next turn.",
+				"Precognitive Insight (3/Day)",
+				"When the mage or a creature it can see makes an attack roll, a saving throw, or an ability check, the mage can cause the roll to be made with advantage or disadvantage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rakdos|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Magic Weapons": "魔法武器",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Rakdos",
+				"natural armor",
+				"Innate Spellcasting",
+				"Rakdos's spellcasting ability is Charisma (spell save {@dc 25}). He can innately cast {@spell hellish rebuke} (at 5th level) at will, requiring no material components.",
+				"Captivating Presence",
+				"Any creature that starts its turn within 30 feet of Rakdos must make a {@dc 25} Wisdom saving throw. On a failed save, the creature becomes {@condition charmed} by Rakdos for 1 minute or until the creature is farther than 30 feet away from him. On a successful save, the creature becomes immune to Rakdos's Captivating Presence for 24 hours.",
+				"Cruel Entertainment",
+				"When a creature Rakdos can see within 60 feet of him is reduced to 0 hit points, Rakdos gains 25 temporary hit points.",
+				"Legendary Resistance (3/Day)",
+				"If Rakdos fails a saving throw, he can choose to succeed instead.",
+				"Magic Resistance",
+				"Rakdos has advantage on saving throws against spells and other magical effects.",
+				"Magic Weapons",
+				"Rakdos's weapon attacks are magical.",
+				"Multiattack",
+				"Rakdos makes two attacks with his Curtain-Call Scythe or his claws.",
+				"Curtain-Call Scythe",
+				"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}24 ({@damage 3d10 + 8}) slashing damage plus 13 ({@damage 3d8}) fire damage.",
+				"Claw",
+				"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d8 + 8}) slashing damage.",
+				"Sadistic Revelry",
+				"Each creature within 60 feet of Rakdos that is his ally or is {@condition charmed} by him must use its reaction to move up to half its speed toward the creature closest to it that it can see, provided it isn't already within 5 feet of that creature. It then must make one melee attack against that creature if it is able to do so.",
+				"Scythe (Costs 2 Actions)",
+				"Rakdos uses Curtain-Call Scythe.",
+				"Touch of Pain (Costs 3 Actions)",
+				"Rakdos makes a claw attack against one creature within 10 feet of him. The target must succeed on a {@dc 25} Constitution saving throw or be {@condition poisoned} for 1 minute. While {@condition poisoned} in this way, the creature can't maintain {@status concentration} on a spell or any other effect that requires {@status concentration}. The {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rakdos Lampooner|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Club": "棍棒"
+			},
+			"s": [
+				"Rakdos Lampooner",
+				"Spellcasting",
+				"The lampooner is a 4th-level Rakdos spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It knows the following bard spells:",
+				"Club",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rakdos Performer, Blade Juggler|GGR",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Rakdos Performer, Blade Juggler",
+				"Nimble",
+				"The performer can take the {@action Disengage} action as a bonus action on each of its turns.",
+				"Multiattack",
+				"The juggler makes three dagger attacks.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rakdos Performer, Fire Eater|GGR",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Rakdos Performer, Fire Eater",
+				"Nimble",
+				"The performer can take the {@action Disengage} action as a bonus action on each of its turns.",
+				"Multiattack",
+				"The fire eater makes two attacks with its bladed chain.",
+				"Bladed Chain",
+				"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage.",
+				"Spew Flame {@recharge 4}",
+				"The fire eater exhales flames. Each creature in a 15-foot cone must make a {@dc 13} Dexterity saving throw, taking 9 ({@damage 2d8}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rakdos Performer, High-Wire Acrobat|GGR",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Rakdos Performer, High-Wire Acrobat",
+				"Nimble",
+				"The performer can take the {@action Disengage} action as a bonus action on each of its turns.",
+				"Multiattack",
+				"The acrobat makes two attacks with its barbed pole.",
+				"Barbed Pole",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the acrobat can jump up to 20 feet. This movement doesn't provoke opportunity attacks."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Reckoner|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Longsword": "長劍"
+			},
+			"s": [
+				"Reckoner",
+				"Spellcasting",
+				"The reckoner is a 5th-level Boros spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The reckoner has the following wizard spells prepared:",
+				"First Strike",
+				"The reckoner has advantage on initiative rolls.",
+				"Longsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands.",
+				"Lightning Backlash {@recharge 5}",
+				"When a creature hits the reckoner with an attack, the attacker takes lightning damage equal to half the damage dealt by the attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rubblebelt Stalker|GGR",
+			"hint": {
+				"Ambusher": "伏擊者",
+				"Nimble Escape": "靈巧脫逃",
+				"Siege Monster": "攻城怪獸",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Rubblebelt Stalker",
+				"piecemeal armor",
+				"Ambusher",
+				"In the first round of a combat, the stalker has advantage on attack rolls against any creature that hasn't taken a turn yet.",
+				"Nimble Escape",
+				"The stalker can take the {@action Disengage} or {@action Hide} action as a bonus action on each of its turns.",
+				"Ruin Dweller",
+				"The stalker has advantage on Dexterity ({@skill Stealth}) checks made to hide in ruins, and its speed is not reduced in {@quickref difficult terrain||3} composed of rubble.",
+				"Siege Monster",
+				"The stalker deals double damage to objects and structures.",
+				"Multiattack",
+				"The stalker makes three attacks with its shortsword.",
+				"Shortsword",
+				"{@atk m} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Scorchbringer Guard|GGR",
+			"hint": {
+				"Light Hammer": "輕錘"
+			},
+			"s": [
+				"Scorchbringer Guard",
+				"Explosive Tank",
+				"When the guard dies, or if it rolls a 1 when checking whether its Scorchbringer action recharges, the tank on its back explodes in a 10-foot radius sphere. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 7 ({@damage 2d6}) fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects that aren't being worn or carried, and it destroys the scorchbringer.",
+				"Light Hammer",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage.",
+				"Scorchbringer {@recharge 4}",
+				"The guard's scorchbringer spouts a stream of flame in a line that is 30 feet long and 5 feet wide. Each creature in the line must make a {@dc 12} Dexterity saving throw, taking 7 ({@damage 2d6}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Servitor Thrull|GGR",
+			"hint": {
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Servitor Thrull",
+				"Claws",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage.",
+				"Self-Sacrifice",
+				"When a creature within 5 feet of the thrull is hit by an attack, the thrull swaps places with that creature and is hit instead."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shadow Horror|GGR",
+			"hint": {
+				"Incorporeal Movement": "虛體移動",
+				"Shadow Stealth": "暗影潛行",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Shadow Horror",
+				"Incorporeal Movement",
+				"The horror can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object.",
+				"Shadow Stealth",
+				"While in dim light or darkness, the horror can take the {@action Hide} action as a bonus action.",
+				"Shadow Stride",
+				"As a bonus action, the horror can step into a shadow within 5 feet of it and magically appear in an unoccupied space within 5 feet of a second shadow that is up to 60 feet away. Both shadows must be cast by a Small or larger creature or object.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the horror has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Multiattack",
+				"The horror makes three attacks: one with its bite and two with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}21 ({@damage 4d8 + 3}) piercing damage.",
+				"Claw",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d6 + 3}) slashing damage, and the target must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} of the horror until the end of the target's next turn.",
+				"Lashing Shadows {@recharge 5}",
+				"Each creature within 60 feet of the horror, except other horrors, must succeed on a {@dc 16} Dexterity saving throw or take 27 ({@damage 6d8}) necrotic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Simic Merfolk|GGR",
+			"s": [
+				"Simic Merfolk"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sire of Insanity|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Sire of Insanity",
+				"natural armor",
+				"Innate Spellcasting",
+				"The sire's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The sire can innately cast the following spells, requiring no material components:",
+				"Aura of Mind Erosion",
+				"Any creature that starts its turn within 30 feet of the sire must make a {@dc 18} Wisdom saving throw. On a successful save, the creature is immune to this aura for the next 24 hours. On a failed save, the creature has disadvantage for 1 minute on Wisdom and Charisma checks and on Wisdom and Charisma saves. At the start of each of its turns, the sire can suppress this aura until the start of its next turn.",
+				"Magic Resistance",
+				"The sire has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The sire makes two attacks: one with its bite and one with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one creature. {@h}25 ({@damage 3d12 + 6}) piercing damage plus 16 ({@damage 3d10}) psychic damage.",
+				"Claws",
+				"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage plus 9 ({@damage 2d8}) psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skittering Horror|GGR",
+			"hint": {
+				"Spider Climb": "蛛行",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Skittering Horror",
+				"natural armor",
+				"Spider Climb",
+				"The horror can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the horror has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Multiattack",
+				"The horror can use its Maddening Presence and make three attacks: one with its bite and two with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}28 ({@damage 4d10 + 6}) piercing damage.",
+				"Claws",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}24 ({@damage 4d8 + 6}) slashing damage.",
+				"Maddening Presence",
+				"The horror targets one creature it can see within 30 feet of it. If the target can see or hear the horror, the target must make a {@dc 17} Wisdom saving throw. On a failed saving throw, the target becomes {@condition paralyzed} until the end of its next turn. If a creature's saving throw is successful, the creature is immune to the horror's Maddening Presence for the next 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skyjek Roc|GGR",
+			"hint": {
+				"Keen Sight": "敏銳視覺",
+				"Multiattack": "多重攻擊",
+				"Beak": "啄擊",
+				"Talons": "利爪"
+			},
+			"s": [
+				"Skyjek Roc",
+				"Keen Sight",
+				"The roc has advantage on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Multiattack",
+				"The roc makes two attacks: one with its beak and one with its talons.",
+				"Beak",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage.",
+				"Talons",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skyswimmer|GGR",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Skyswimmer",
+				"natural armor",
+				"Amphibious",
+				"The skyswimmer can breathe air and water.",
+				"Multiattack",
+				"The skyswimmer makes three attacks: one with its bite and two with its slam.",
+				"Bite",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d10 + 6}) piercing damage. If the target is a Large or smaller creature, it must succeed on a {@dc 19} Dexterity saving throw or be swallowed by the skyswimmer. A swallowed creature is {@condition blinded} and {@condition restrained}, it has {@quickref Cover||3||total cover} against attacks and other effects outside the skyswimmer, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the skyswimmer's turns. If the skyswimmer takes 30 damage or more on a single turn from the swallowed creature, the skyswimmer must succeed on a {@dc 18} Constitution saving throw at the end of that turn or regurgitate the creature, which falls {@condition prone} in a space within 10 feet of the skyswimmer. If the skyswimmer dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 15 feet of movement, exiting {@condition prone}.",
+				"Slam",
+				"{@atk mw} {@hit 11} to hit, reach 30 ft., one target. {@h}19 ({@damage 2d12 + 6}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Soldier|GGR",
+			"hint": {
+				"Soldier": "士兵",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍"
+			},
+			"s": [
+				"Soldier",
+				"Formation Tactics",
+				"The soldier has advantage on saving throws against being {@condition charmed}, {@condition frightened}, {@condition grappled}, or {@condition restrained} while it is within 5 feet of at least one ally.",
+				"Multiattack",
+				"The soldier makes two melee attacks.",
+				"Longsword",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage, or 7 ({@damage 1d10 + 2}) slashing damage if used with two hands."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sphinx of Judgment|GGR",
+			"hint": {
+				"Spellcasting": "施法"
+			},
+			"s": [
+				"Sphinx of Judgment",
+				"Spellcasting",
+				"The sphinx is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following wizard spells prepared:"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sunder Shaman|GGR",
+			"hint": {
+				"Reckless": "魯莽",
+				"Siege Monster": "攻城怪獸",
+				"Stone Camouflage": "岩石偽裝",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊",
+				"Rock": "擲石"
+			},
+			"s": [
+				"Sunder Shaman",
+				"stone armor",
+				"Reckless",
+				"At the start of its turn, the giant can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.",
+				"Siege Monster",
+				"The giant deals double damage to objects and structures.",
+				"Stone Camouflage",
+				"The giant has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain.",
+				"Multiattack",
+				"The giant makes two slam attacks. The first of those attacks that hits deals an extra 18 ({@damage 4d8}) damage if the giant has taken damage since its last turn.",
+				"Slam",
+				"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}24 ({@damage 4d8 + 6}) bludgeoning damage.",
+				"Rock",
+				"{@atk rw} {@hit 10} to hit, range 60/240 ft., one target. {@h}28 ({@damage 4d10 + 6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 18} Strength saving throw or be knocked {@condition prone}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Thought Spy|GGR",
+			"hint": {
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Cunning Action": "巧妙動作",
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首",
+				"Rapier": "刺劍"
+			},
+			"s": [
+				"Thought Spy",
+				"Innate Spellcasting (Psionics)",
+				"The thought spy's innate spellcasting ability is Intelligence (spell save {@dc 13}). The thought spy can innately cast the following spells, requiring no components:",
+				"Cunning Action",
+				"On each of its turns, the thought spy can use a bonus action to take the {@action Dash}, {@action Disengage}, or {@action Hide} action.",
+				"Multiattack",
+				"The thought spy makes two melee attacks, or it makes three ranged attacks with its daggers.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage.",
+				"Rapier",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Trostani|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Magic Weapons": "魔法武器",
+				"Speak with Beasts and Plants": "與動植物交談",
+				"Tree Stride": "林間穿梭",
+				"Multiattack": "多重攻擊",
+				"Constrict": "纏絞"
+			},
+			"s": [
+				"Trostani",
+				"natural armor",
+				"Innate Spellcasting",
+				"Trostani's innate spellcasting ability is Wisdom (spell save {@dc 24}). She can innately cast the following spells, requiring no material components:",
+				"Legendary Resistance (3/Day)",
+				"If Trostani fails a saving throw, she can choose to succeed instead.",
+				"Magic Resistance",
+				"Trostani has advantage on saving throws against spells and other magical effects.",
+				"Magic Weapons",
+				"Trostani's weapon attacks are magical.",
+				"Speak with Beasts and Plants",
+				"Trostani can communicate with beasts and plants as if they shared a language.",
+				"Tree Stride",
+				"Once on her turn, Trostani can use 10 feet of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger.",
+				"Multiattack",
+				"Trostani takes three actions: she uses Constrict and Touch of Order, and she casts a spell with a casting time of 1 action.",
+				"Constrict",
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one creature. {@h}15 ({@damage 3d6 + 5}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the target is {@condition restrained}. Trostani can grapple no more than three targets at a time.",
+				"Touch of Order",
+				"{@atk ms} {@hit 16} to hit, reach 5 ft., one creature. {@h}23 ({@damage 3d8 + 10}) radiant damage, and Trostani can choose one magic item she can see in the target's possession. Unless it's an artifact, the item's magic is suppressed until the start of Trostani's next turn.",
+				"Wrath of Mat'Selesnya {@recharge 5}",
+				"Trostani conjures a momentary whirl of branches and vines at a point she can see within 60 feet of her. Each creature in a 30-foot cube on that point must make a {@dc 24} Dexterity saving throw, taking 21 ({@damage 6d6}) bludgeoning damage and 21 ({@damage 6d6}) slashing damage on a failed save, or half as much damage on a successful one.",
+				"Voice of Harmony",
+				"Trostani makes one melee attack, with advantage on the attack roll.",
+				"Voice of Life",
+				"Trostani bestows 20 temporary hit points on another creature she can see within 120 feet of her.",
+				"Voice of Order",
+				"Trostani casts {@spell dispel magic}.",
+				"Chorus of the Conclave (Costs 2 Actions)",
+				"Trostani casts {@spell suggestion}. This counts as one of her daily uses of the spell.",
+				"Awaken Grove Guardians (Costs 3 Actions)",
+				"Trostani animates one or two trees she can see within 120 feet of her, causing them to uproot themselves and become awakened trees (see the Monster Manual for their stat blocks) for 1 minute or until Trostani uses a bonus action to end the effect. These trees understand Druidic and obey Trostani's spoken commands, but can't speak. If she issues no commands to them, the trees do nothing but follow her and take the {@action Dodge} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Undercity Medusa|GGR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Resistance": "魔法抗性",
+				"Surprise Attack": "突襲",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Petrifying Gaze": "石化凝視"
+			},
+			"s": [
+				"Undercity Medusa",
+				"natural armor",
+				"Innate Spellcasting",
+				"The medusa's innate spellcasting ability is Intelligence (spell save {@dc 14}). The medusa can innately cast the following spells, requiring no material components:",
+				"Magic Resistance",
+				"The medusa has advantage on saving throws against spells and other magical effects.",
+				"Surprise Attack",
+				"During the first round of combat, the medusa has advantage on attack rolls against any creature that is {@status surprised}, and it deals an extra 10 ({@damage 3d6}) damage each time it hits such a creature with an attack.",
+				"Multiattack",
+				"The medusa makes two claw attacks. It can also use Petrifying Gaze before or after making these attacks.",
+				"Claw",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage.",
+				"Petrifying Gaze",
+				"The medusa fixes its gaze on one creature within 60 feet of it that it can see and that can see its eyes. The target must make a {@dc 14} Constitution saving throw. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by a {@spell greater restoration} spell or similar magic."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Winged Thrull|GGR",
+			"hint": {
+				"Claws": "爪擊",
+				"Rock": "擲石"
+			},
+			"s": [
+				"Winged Thrull",
+				"Claws",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) slashing damage.",
+				"Rock",
+				"{@atk rw} {@hit 4} to hit, range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage.",
+				"Self-Sacrifice",
+				"When a creature within 5 feet of the thrull is hit by an attack, the thrull swaps places with that creature and is hit instead."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Wurm|GGR",
+			"hint": {
+				"Siege Monster": "攻城怪獸",
+				"Tunneler": "掘地者",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Wurm",
+				"natural armor",
+				"Siege Monster",
+				"The wurm deals double damage to objects and structures.",
+				"Earth Tremors",
+				"The wurm creates earth tremors as it moves overland or underground. Any creature that comes within 30 feet of the moving wurm for the first time on a turn must succeed on a {@dc 20} Dexterity saving throw or take 10 ({@damage 3d6}) bludgeoning damage and fall {@condition prone}. Any structure or object anchored to the ground that comes within 30 feet of the moving wurm for the first time on a turn takes 10 ({@damage 3d6}) force damage.",
+				"Tunneler",
+				"The wurm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake.",
+				"Bite",
+				"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}24 ({@damage 5d6 + 7}) piercing damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 20} Dexterity saving throw or be swallowed by the wurm. A swallowed creature is {@condition blinded} and {@condition restrained}, has {@quickref Cover||3||total cover} against attacks and other effects outside the wurm, and takes 17 ({@damage 5d6}) acid damage at the start of each of the wurm's turns. If the wurm takes 30 damage or more on a single turn from a creature inside it, the wurm must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the wurm. If the wurm dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zegana|GGR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Trident": "三叉戟"
+			},
+			"s": [
+				"Zegana",
+				"natural armor",
+				"Spellcasting",
+				"Zegana is a 15th-level Simic spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). She has the following wizard spells prepared:",
+				"Amphibious",
+				"Zegana can breathe air and water.",
+				"Legendary Resistance (3/Day)",
+				"If Zegana fails a saving throw, she can choose to succeed instead.",
+				"Magic Resistance",
+				"Zegana has advantage on saving throws against spells and other magical effects.",
+				"Prime Speaker's Trident",
+				"{@atk mw,rw} {@hit 10} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage, and the trident emits a thunderous boom. Each creature in a 15-foot cube originating from the prongs of the trident must make a {@dc 18} Constitution saving throw. On a failed save, the creature takes 9 ({@damage 2d8}) thunder damage and is pushed 10 feet away from Zegana. If the creature is underwater, the damage is increased to 13 ({@dice 3d8}). On a successful save, the creature takes half as much damage and isn't pushed.",
+				"Deluge {@recharge 4}",
+				"Zegana conjures a wave of water that crashes down on an area within 120 feet of her. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a {@dc 18} Dexterity saving throw. On a failed save, a creature takes 18 ({@damage 4d8}) bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}. The water spreads out across the ground, extinguishing unprotected flames it comes in contact with, and then vanishes.",
+				"Adaptive Skin",
+				"Zegana gains resistance to one damage type of her choice-acid, fire, lightning, or thunder-until the start of her next turn.",
+				"Trident",
+				"Zegana makes one melee attack with the Prime Speaker's Trident.",
+				"Enlarge (Costs 2 Actions)",
+				"Zegana casts {@spell enlarge/reduce} on herself, using the enlarge option, without expending a spell slot.",
+				"Deluge (Costs 3 Actions)",
+				"Zegana uses Deluge, if available."
+			]
+		}
+	]
+}
