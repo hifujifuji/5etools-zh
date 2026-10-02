@@ -1344,7 +1344,7 @@ globalThis.Renderer = function () {
 			textStack,
 			meta,
 			options,
-			displayName: entry.name ? `Variant: ${entry.name}` : "Variant",
+			displayName: entry.name ? `變體：${entry.name}` : "變體",
 			headerTag: `h4`,
 			pagePart,
 			partPageExpandCollapse,
@@ -2219,9 +2219,9 @@ globalThis.Renderer = function () {
 				if (tag === "@recharge") {
 					const [, flagsRaw] = Renderer.splitTagByPipe(text);
 					const flags = flagsRaw ? flagsRaw.split("") : null;
-					textStack[0] += `${flags && flags.includes("m") ? "" : "("}Recharge `;
+					textStack[0] += `${flags && flags.includes("m") ? "" : "（"}充能 `;
 					this._recursiveRender(fauxEntry, textStack, meta);
-					textStack[0] += `${flags && flags.includes("m") ? "" : ")"}`;
+					textStack[0] += `${flags && flags.includes("m") ? "" : "）"}`;
 				} else {
 					this._recursiveRender(fauxEntry, textStack, meta);
 				}
@@ -4431,6 +4431,25 @@ Renderer.utils = class {
 	static _FN_TAG_SENSES = null;
 	static _SENSE_TAG_METAS = null;
 	static getSensesEntry (senses, {isTitleCase = false} = {}) {
+		
+const __zhSense = str => str
+	.replace(/(\d[\d,]*) ?ft\.?/g, "$1 呎")
+	.replace(/ ?\((?:\{@condition blinded\|\|blind\}|blind) beyond this (?:radius|distance)\)/gi, "（超出此範圍視為目盲）")
+	.replace(/ ?\(can't see beyond this radius\)/gi, "（無法看見此範圍以外）")
+	.replace(/ ?\(unimpeded by magical (\{@variantrule Darkness\|XPHB)\}\)/gi, "（不受魔法$1|黑暗}阻礙）")
+	.replace(/ ?\(penetrates magical darkness\)/gi, "（可穿透魔法黑暗）")
+	.replace(/ ?\(including magical darkness\)/gi, "（包括魔法黑暗）")
+	.replace(/ ?\(rat form only\)/gi, "（僅限鼠形態）")
+	.replace(/ ?\(beast form only\)/gi, "（僅限野獸形態）")
+	.replace(/ ?\(sentry only\)/gi, "（僅限哨兵）")
+	.replace(/ ?\(can see invisible creatures out to the same range\)/gi, "（可看見相同範圍內的隱形生物）")
+	.replace(/ or (\d+ 呎) while deafened/gi, "，耳聾時為 $1")
+	.replace(/, /g, "、");
+
+		return __zhSense(Renderer.utils.__getSensesEntryEn(senses, {isTitleCase}));
+	}
+
+	static __getSensesEntryEn (senses, {isTitleCase = false} = {}) {
 		if (typeof senses === "string") senses = [senses]; // handle legacy format
 
 		if (!Renderer.utils._FN_TAG_SENSES) {
@@ -5564,7 +5583,7 @@ Renderer.tag = class {
 					if (isNaN(asNum)) {
 						throw new Error(`Could not parse "${rollText}" as a number!`);
 					}
-					return `(Recharge ${asNum}${asNum < 6 ? `\u20136` : ""})`;
+					return `（充能 ${asNum}${asNum < 6 ? `\u20136` : ""}）`;
 				}
 				case "@chance": {
 					return displayText || `${rollText}%`;
@@ -10686,11 +10705,11 @@ Renderer.monster = class {
 		const pts = [
 			mon.senses ? Renderer.utils.getRenderedSenses(mon.senses, {isTitleCase}) : "",
 			passive != null
-				? `${isTitleCase ? "Passive" : "passive"} Perception ${passive}`
+				? `被動感知 ${passive}`
 				: (isForcePassive || mon.senses) ? "\u2014" : "",
 		]
 			.filter(Boolean);
-		return pts.join(", ");
+		return pts.join("、");
 	}
 
 	static getPbPart (mon, {isPlainText = false} = {}) {
@@ -11160,14 +11179,14 @@ Renderer.monster = class {
 
 		function doSortMapJoinSkillKeys (obj, keys, joinWithOr) {
 			const toJoin = keys.sort(SortUtil.ascSort).map(s => `<span data-mon-skill="${s.toTitleCase()}|${obj[s]}">${renderer.render(`{@skill ${s.toTitleCase()}}`)} ${Renderer.get().render(`{@skillCheck ${s.replace(/ /g, "_")} ${obj[s]}}`)}</span>`);
-			return joinWithOr ? toJoin.joinConjunct(", ", " or ") : toJoin.join(", ");
+			return joinWithOr ? toJoin.joinConjunct("、", "或", true) : toJoin.join(", ");
 		}
 
 		const skills = doSortMapJoinSkillKeys(mon.skill, Object.keys(mon.skill).filter(k => k !== "other" && k !== "special"));
 		if (mon.skill.other || mon.skill.special) {
 			const others = mon.skill.other && mon.skill.other.map(it => {
 				if (it.oneOf) {
-					return `plus one of the following: ${doSortMapJoinSkillKeys(it.oneOf, Object.keys(it.oneOf), true)}`;
+					return `另加下列之一：${doSortMapJoinSkillKeys(it.oneOf, Object.keys(it.oneOf), true)}`;
 				}
 				throw new Error(`Unhandled monster "other" skill properties!`);
 			});
@@ -11275,13 +11294,19 @@ const __ZH_LANG_NAMES = {
 	"Halfling": "半身人語", "Orc": "獸人語", "Abyssal": "深淵語", "Celestial": "天界語", "Deep Speech": "深幽語", "Draconic": "龍語",
 	"Infernal": "煉獄語", "Primordial": "原初語", "Auran": "氣族語", "Aquan": "水族語", "Ignan": "火族語", "Terran": "土族語",
 	"Sylvan": "木族語", "Undercommon": "地底通用語", "Druidic": "德魯伊語", "Thieves' cant": "盜賊黑話", "Thieves' Cant": "盜賊黑話",
-	"Aarakocra": "阿蘭寇拉鷹人語", "Bullywug": "蛙人語", "Gith": "吉斯語", "Gnoll": "豺狼人語", "Hook Horror": "鉤爪恐魔語",
+	"Aarakocra": "阿蘭寇拉鷹人語", "Bullywug": "狂蛙人語", "Gith": "吉斯語", "Gnoll": "豺狼人語", "Hook Horror": "恐爪怪語",
 	"Modron": "摩登語", "Otyugh": "奧提由語", "Sahuagin": "沙華魚人語", "Slaad": "斯拉德語", "Thri-kreen": "螳螂人語",
-	"Troglodyte": "穴居人語", "Umber Hulk": "土巨怪語", "Worg": "座狼語", "Yeti": "雪人語", "Blink Dog": "閃現犬語",
+	"Troglodyte": "戰蜥人語", "Umber Hulk": "土巨怪語", "Worg": "座狼語", "Yeti": "雪人語", "Blink Dog": "閃現犬語",
 	"Winter Wolf": "冬狼語", "Ice Toad": "冰蟾蜍語", "Grell": "葛雷爾語", "Kraul": "克勞爾語", "Loxodon": "象族語", "Minotaur": "牛頭人語",
+	"thieves' cant": "盜賊黑話", "Kruthik": "克魯希克語", "Vegepygmy": "植物矮人語", "Bothii": "波希語", "Sphinx": "斯芬克斯語", "Giant Owl": "巨梟語",
+	"Giant Eagle": "巨鷹語", "Giant Elk": "巨麋鹿語", "Ixitxachitl": "魔鬼魟語", "Aartuk": "阿爾圖克語", "Hadozee": "哈多澤語", "Solamnic": "索蘭尼亞語",
+	"Quori": "奎利語", "Demodand": "狄魔丹語", "Thayan": "塞爾語", "Grung": "格龍蛙人語", "Deep Crow": "深淵鴉語", "Skitterwidget": "竄行小器語",
+	"Formian": "蟻人語", "Kenderspeak": "坎德人語", "Merfolk": "人魚語", "Tasloi": "塔斯洛伊語", "Tlincalli": "特林卡利語", "Gibberling": "吉伯林語",
+	"Yikaria": "伊卡里亞語", "Olman": "歐曼語", "Dohwar": "多瓦語", "Grippli": "格里普利語", "Maelephant": "魔象語", "Netherese": "耐色瑞爾語",
+	"Tletlahtolli": "特萊特拉托利語", "Ziklight": "齊克萊特語", "Endspeech": "終末語", "Leonin": "獅族語", "Homarid": "蝦人語",
 };
 const __ZH_NUM = {one: "一", two: "兩", three: "三", four: "四", five: "五", six: "六"};
-const __ZH_FORM = {bear: "熊", boar: "野豬", rat: "鼠", tiger: "虎", wolf: "狼"};
+const __ZH_FORM = {bear: "熊", boar: "野豬", rat: "鼠", tiger: "虎", wolf: "狼", vulture: "禿鷲", jackal: "胡狼", canid: "犬", jaguar: "美洲豹", raven: "渡鴉", fox: "狐", bat: "蝙蝠", wyvern: "雙足飛龍"};
 const __zhLang = str => {
 	let s = str;
 	const names = Object.keys(__ZH_LANG_NAMES).sort((a, b) => b.length - a.length);
@@ -11290,6 +11315,63 @@ const __zhLang = str => {
 		.replace(/\(works only with creatures that understand ([^)]+)\)/g, "（僅對懂得$1的生物有效）")
 		.replace(/\(faerie dragons only\)/g, "（僅限妖精龍）")
 		.replace(/\(doesn't allow the receiving creature to respond telepathically\)/g, "（接收者無法以心靈感應回應）")
+		.replace(/^([A-Z])(?=nderstands |elepathy |ny |he languages|ll )/, c => c.toLowerCase())
+		.replace(/\b(?:all |any )?(?:the )?languages (?:it|he|she|the creature|the eidolon|the \{@creature eidolon\|MPMM\}) (?:knew|spoke) in life\b/g, "生前通曉的語言")
+		.replace(/\bany languages its component spirits knew in life\b/g, "其組成靈魂生前通曉的語言")
+		.replace(/\blanguages it knew in its previous form\b/g, "其先前形態通曉的語言")
+		.replace(/\b(?:and )?any languages it knew before becoming a vargouille\b/g, "及其變成飛頭蝠前通曉的語言")
+		.replace(/\bone language of its creator's choice\b/g, "其創造者選擇的一種語言")
+		.replace(/\bone language (?:known (?:by|to)|spoken by|of) its creator\b/g, "其創造者通曉的一種語言")
+		.replace(/\b(?:the )?languages (?:known by|spoken by|of) its creator\b/g, "其創造者通曉的語言")
+		.replace(/\bspeaks and understands 其創造者通曉的語言/g, "會說並懂得其創造者通曉的語言")
+		.replace(/\ball languages known to its summoner\b/g, "其召喚者通曉的所有語言")
+		.replace(/\ball languages known by any creature within 30 feet of it\b/g, "它 30 呎內任何生物通曉的所有語言")
+		.replace(/\bthe language of its owner\b/g, "其主人的語言")
+		.replace(/\bthe main language of its master\b/g, "其主人的主要語言")
+		.replace(/\bone language spoken by its master\b/g, "其主人會說的一種語言")
+		.replace(/\bthe languages of creatures attuned to it\b/g, "與它同調之生物的語言")
+		.replace(/\bthe languages of the Humanoid it is imitating\b/g, "它所模仿之類人生物的語言")
+		.replace(/\bone of your languages\b/g, "你的一種語言")
+		.replace(/^Languages of the host$/, "宿主的語言")
+		.replace(/\bcan speak with spiders\b/g, "能與蜘蛛交談")
+		.replace(/^all but rarely speaks$/, "所有語言，但鮮少開口")
+		.replace(/^all spoken languages$/, "所有口說語言")
+		.replace(/^all \(can read only\)/, "所有語言（僅能閱讀）")
+		.replace(/\bcan read all writing\b/g, "能閱讀所有文字")
+		.replace(/\bcan understand (.+?) but speaks only preprogrammed responses\b/g, "懂得$1，但只會說預設的回應")
+		.replace(/\bunderstands (.+?) but speaks only through the use of (?:its|her|his) Mimicry trait\b/g, "懂得$1，但只能透過其「模仿」特性說話")
+		.replace(/\bunderstands (.+?) but only speaks telepathically to its own kind\b/g, "懂得$1，但只以心靈感應與同類交談")
+		.replace(/\bunderstands (.+?) but utters only obscene nonsense\b/g, "懂得$1，但只會吐出汙穢的胡言亂語")
+		.replace(/\bunderstands (.+?) but doesn't speak and can't read or write\b/g, "懂得$1，但不會說話也無法讀寫")
+		.replace(/^understands simple phrases and concepts in (.+)$/, "懂得$1的簡單詞句與概念")
+		.replace(/\bunderstands commands given in any language but can't speak\b/g, "懂得以任何語言下達的命令，但無法說話")
+		.replace(/\bunderstands all(?: languages)? but can't speak\b/g, "懂得所有語言，但無法說話")
+		.replace(/\bunderstands all(?=$|,|;)/, "懂得所有語言")
+		.replace(/\bcommunicates via Symbol Speech\b/g, "透過符號語交流")
+		.replace(/\((?:usually|typically) ([^)]+)\)/g, "（通常為$1）")
+		.replace(/\(([^)]+) recommended\)/g, "（建議$1）")
+		.replace(/\((?:works )?only with you\)/g, "（僅對你有效）")
+		.replace(/\(with other hellwasps only\)/g, "（僅限與其他地獄黃蜂）")
+		.replace(/\(emotions only\)/g, "（僅限情緒）")
+		.replace(/ but can only project emotions\b/g, "，但只能投射情緒")
+		.replace(/\(when it is angry or frustrated\)/g, "（憤怒或沮喪時）")
+		.replace(/ ?\(see also ([^)]+?)(?: below)?\)/g, "（另見「$1」）")
+		.replace(/; see also (.+)$/, "；另見「$1」")
+		.replace(/^see (.+) below$/, "見下方「$1」")
+		.replace(/^(?:and )?any (one|two|three|four|five|six) languages?\b/, (m, n) => `任意${__ZH_NUM[n]}種語言`)
+		.replace(/,? (?:and |plus )?any (one|two|three|four|five|six) languages?\b/g, (m, n) => `及任意${__ZH_NUM[n]}種語言`)
+		.replace(/,? plus one of your choice\b/g, "及你選擇的一種語言")
+		.replace(/, or /g, "或").replace(/ or /g, "或")
+		.replace(/ (?:plus|and) (?:any )?(?:up to )?(one|two|three|four|five|six)(?: (?:other|more|additional))?(?: languages?)?(?=$| \(| but|,|;)/g, (m, n) => `及${/up to/.test(m) ? "至多" : /any/.test(m) ? "任意" : "其他"}${__ZH_NUM[n]}種語言`)
+		.replace(/^plus (?:any )?(?:up to )?(one|two|three|four|five|six)(?: other)? languages?$/, (m, n) => `另加${/up to/.test(m) ? "至多" : "任意"}${__ZH_NUM[n]}種語言`)
+		.replace(/^plus one of your choice$/, "另加你選擇的一種語言")
+		.replace(/\bone language\b/g, "一種語言")
+		.replace(/ plus /g, "及")
+		.replace(/\bunderstands (.+?),? but (?:can't|cannot|doesn't) speak(?: it| them)?\b/g, "懂得$1，但無法說話")
+		.replace(/,? but it can't speak$/, "，但無法說話")
+		.replace(/ but can't speak(?: it| them)?\b/g, "，但無法說話")
+		.replace(/\btelepathy ([\d,]+) (?:ft\.?|feet)/gi, "心靈感應 $1 呎")
+		.replace(/\btelepathy ([\d,]+) miles?/gi, "心靈感應 $1 哩")
 		.replace(/\bunderstands commands given in any language but can't speak\b/g, "懂得以任何語言下達的命令，但無法說話")
 		.replace(/\bunderstands all but can't speak\b/g, "懂得所有語言，但無法說話")
 		.replace(/^all\b/, "所有語言")
