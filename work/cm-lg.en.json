@@ -1,0 +1,65 @@
+{
+	"batch": "cm-lg",
+	"items": [
+		{
+			"prop": "legendaryGroup",
+			"key": "Lichen Lich|CM",
+			"hint": {
+				"Lichen Lich": "地衣巫妖"
+			},
+			"s": [
+				"Lichen Lich",
+				"On initiative count 20 (losing initiative ties), the lichen lich can take a lair action to cause one of the following effects:",
+				"Poisonous spores fill a 10-foot cube that the lich can see within 120 feet of it. Any creature that enters the cloud for the first time on a turn or starts its turn there must succeed on a {@dc 19} Constitution saving throw or be {@condition poisoned} until the end of its next turn. The cloud lasts for 1 minute or until it is dispersed by a strong wind.",
+				"The lich commands the might of its diseased grove, creating a shambling mound. The shambling mound appears in an unoccupied space within 30 feet of the lich, acts on its own initiative count, and obeys the lich's commands. The shambling mound dies after 1 hour or when the lich uses this lair action again.",
+				"Rotten roots and vines magically erupt in a 20-foot radius centered on a point on the ground that the lich can see within 120 feet of it. The lich is unaffected by the roots and vines. For all other creatures, the area becomes {@quickref difficult terrain||3}, and each creature in the area must succeed on a {@dc 19} Strength saving throw or be {@condition restrained} by the roots. As an action, a creature can try to free itself or another creature within its reach, doing so with a successful {@dc 19} Strength ({@skill Athletics}) check. The roots and vines wilt away when the lich uses this lair action again or when the lich dies."
+			]
+		},
+		{
+			"prop": "legendaryGroup",
+			"key": "Nintra Siotta|CM",
+			"hint": {
+				"Nintra Siotta": "寧特拉·席歐塔"
+			},
+			"s": [
+				"Nintra Siotta",
+				"On initiative count 20 (losing initiative ties) Nintra can take a lair action to cause one of the following effects; she can't use the same effect two rounds in a row:",
+				"Nintra targets one pane of shadow glass in her lair, causing it to explode into shards. Each creature within 20 feet of the exploding pane must make a {@dc 18} Dexterity saving throw, taking 13 ({@damage 3d8}) piercing damage on a failed save, or half as much damage on a successful one. The shards fade away to vapor and the pane is restored to normal at the next initiative count 20.",
+				"Nintra targets one pane of shadow glass in her lair, briefly transforming it into a swirling vortex. One creature of her choice within 20 feet of the pane must succeed on a {@dc 20} Strength saving throw or be drawn into the vortex, taking 11 ({@damage 2d10}) necrotic damage. The creature is then teleported to an unoccupied space within 5 feet of another pane of shadow glass in Nintra's lair (determined randomly)."
+			]
+		},
+		{
+			"prop": "legendaryGroup",
+			"key": "Valin Sarnaster|CM",
+			"hint": {
+				"Valin Sarnaster": "瓦林·薩納斯特"
+			},
+			"s": [
+				"Valin Sarnaster",
+				"On initiative count 20 (losing initiative ties), Valin takes a lair action to cause one of the following effects; Valin can't use the same effect two rounds in a row.",
+				"Each undead creature in the lair can pinpoint the location of each living creature within 120 feet of it until initiative count 20 on the next round.",
+				"Each undead in the lair has advantage on saving throws against effects that turn undead until initiative count 20 on the next round.",
+				"Until initiative count 20 on the next round, any non-undead creature that tries to cast a spell of 4th level or lower in Valin's lair is wracked with pain. The creature can choose another action, but if it tries to cast the spell, it must make a {@dc 16} Constitution saving throw. On a failed save, it takes {@damage 1d6} necrotic damage per level of the spell, and the spell has no effect and is wasted.",
+				"Valin's tomb is warped in any of the following ways by the creature's dark presence:",
+				"Food instantly molders and water instantly evaporates when brought into the lair. Other nonmagical drinks are spoiled—wine turning to vinegar, for instance.",
+				"{@spell Divination} spells cast within the lair by creatures other than Valin have a {@chance 25} chance to provide misleading results, as determined by the DM. If a {@spell divination} spell already has a chance to fail or become unreliable when cast multiple times, that chance increases by 25 percent.",
+				"A creature that takes treasure from the lair is cursed until the treasure is returned. The cursed target has disadvantage on all saving throws. The curse lasts until removed by a {@spell remove curse} spell or other magic.",
+				"If Valin is destroyed, these regional effects end immediately."
+			]
+		},
+		{
+			"prop": "legendaryGroup",
+			"key": "Zikzokrishka|CM",
+			"hint": {
+				"Zikzokrishka": "齊克佐克里什卡"
+			},
+			"s": [
+				"Zikzokrishka",
+				"On initiative count 20 (losing initiative ties) whenever she is in the are V3, Zikzokrishka can take a lair action to cause one of the following effects. She can't use the same effect two rounds in a row:",
+				"Part of the ceiling collapses above one creature that Zikzokrishka can see. The creature must succeed on a {@dc 15} Dexterity saving throw or take 21 ({@damage 6d6}) bludgeoning damage and be knocked {@condition prone} and buried under rubble. A buried creature is {@condition restrained} and unable to stand up. A creature can use an action to try to pull itself or another creature out of the rubble, doing so with a successful {@dc 10} Strength ({@skill Athletics}) check.",
+				"A cloud of sand swirls in a 20-foot-radius sphere centered on a point Zikzokrishka can see within 60 feet of it. The cloud spreads around corners. Each creature in the cloud must succeed on a {@dc 15} Constitution saving throw or be {@condition blinded} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Zikzokrishka chooses two points that it can see, each of which must be on a solid surface, and creates a 5-foot-wide line of lightning between them. The two points must be within 60 feet of Zikzokrishka and 60 feet of each other. Each creature in the line must succeed on a {@dc 15} Dexterity saving throw or take 10 ({@damage 3d6}) lightning damage."
+			]
+		}
+	]
+}

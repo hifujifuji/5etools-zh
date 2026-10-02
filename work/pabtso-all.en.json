@@ -1,0 +1,933 @@
+{
+	"batch": "pabtso-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Aberrant Zealot|PABTSO",
+			"hint": {
+				"Spellcasting (Psionics)": "施法（靈能）",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Aberrant Zealot",
+				"Spellcasting (Psionics)",
+				"The zealot casts one of the following spells, requiring no components and using Charisma as the spellcasting ability (spell save {@dc 15}):",
+				"Aberrant Form",
+				"The zealot exudes the chaos of the Far Realm. Any non-Aberration creature that starts its turn within 5 feet of the zealot must succeed on a {@dc 15} Wisdom saving throw or take 7 ({@damage 2d6}) psychic damage.",
+				"Weirdly Pliable",
+				"The zealot, along with any equipment it is wearing or carrying, is unnaturally flexible. The zealot can move through any space as narrow as 1 inch without squeezing.",
+				"Multiattack",
+				"The zealot makes one Psychic Rend attack and two Shortsword attacks.",
+				"Psychic Rend",
+				"{@atk ms,rs} {@hit 7} to hit, reach 15 ft. or range 120 ft., one target. {@h}14 ({@damage 3d6 + 4}) psychic damage, and the target must succeed on a {@dc 15} Wisdom saving throw or have the {@condition stunned} condition until the start of the zealot's next turn.",
+				"Shortsword",
+				"{@atk mw} {@hit 7} to hit, reach 15 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) psychic damage.",
+				"Void Warp {@recharge 5}",
+				"The zealot teleports, along with any equipment it is wearing or carrying, to an unoccupied space it can see within 120 feet of itself, leaving a churning void in the space it left. Immediately after it teleports, each creature within 30 feet of the void other than the zealot must make a {@dc 15} Strength saving throw. On a failed save, a creature takes 18 ({@damage 4d8}) force damage and is pulled to the unoccupied space closest to the void. On a successful save, the creature takes half as much damage only. The void then disappears."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aberrant Zealot (Tentacled)|PABTSO",
+			"s": [
+				"Aberrant Zealot (Tentacled)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ash Zombie|PABTSO",
+			"hint": {
+				"Ash Zombie": "灰燼殭屍"
+			},
+			"s": [
+				"Ash Zombie"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Brain Breaker|PABTSO",
+			"s": [
+				"Brain Breaker",
+				"(hover)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chishinix|PABTSO",
+			"s": [
+				"Chishinix"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chishinix' Head|PABTSO",
+			"s": [
+				"Chishinix' Head"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Cloaker Mutate|PABTSO",
+			"hint": {
+				"Avoidance": "迴避",
+				"Light Sensitivity": "光線敏感",
+				"Multiattack": "多重攻擊",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Cloaker Mutate",
+				"natural armor",
+				"Avoidance",
+				"If the mutate is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
+				"Light Sensitivity",
+				"While in bright light, the mutate has disadvantage on attack rolls.",
+				"Multiattack",
+				"The mutate makes one Corpse Swipe attack and two Tail attacks, or it makes four Tail attacks.",
+				"Corpse Swipe",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d10 + 4}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 16} Constitution saving throw or have the {@condition poisoned} condition for 1 minute. While {@condition poisoned} in this way, a creature can't regain hit points.",
+				"Tail",
+				"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage.",
+				"Phantasmal Duplicates",
+				"The mutate magically projects up to four illusory copies of itself. These duplicates make it difficult to ascertain the mutate's true location and last until the end of the mutate's next turn. While the copies exist, attack rolls against the mutate are made with disadvantage.",
+				"Psychic Moan {@recharge}",
+				"The mutate lets out a moan charged with psychic energy. Each creature within 60 feet of the mutate that isn't an Aberration must succeed on a {@dc 16} Wisdom saving throw or take 17 ({@damage 5d6}) psychic damage and have the {@condition frightened} condition until the end of the mutate's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dwarf Skeleton|PABTSO",
+			"hint": {
+				"Sure-Footed": "腳步穩健",
+				"Battleaxe": "戰斧"
+			},
+			"s": [
+				"Dwarf Skeleton",
+				"Sure-Footed",
+				"The skeleton has advantage on Strength and Dexterity saving throws made against effects that make it have the {@condition prone} condition.",
+				"Battleaxe",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Encephalon Cluster|PABTSO",
+			"hint": {
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Encephalon Cluster",
+				"natural armor",
+				"Legendary Resistance (3/Day)",
+				"If the cluster fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The cluster has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The cluster makes two Slam attacks. It can replace one of these attacks with Spawn Progeny if available.",
+				"Slam",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) bludgeoning damage plus 10 ({@damage 3d6}) psychic damage, and if the target is a creature, the target must succeed on a {@dc 18} Strength saving throw or have the {@condition prone} condition. If this attack reduces the target to 0 hit points, the target immediately dies and is consumed by the cluster.",
+				"Spawn Progeny (Recharges after a Short or Long Rest)",
+				"The cluster bulges and spews {@dice 1d4} mature eggs. Each egg lands in an unoccupied space of the cluster's choice within 30 feet of itself and immediately transforms into an {@creature encephalon gemmule|PaBTSO}. The gemmules obey the cluster's commands and take their turns immediately after it.",
+				"Aggressive Hunger",
+				"Immediately after being hit by an attack, the cluster moves up to its speed toward the attacker. This movement doesn't provoke opportunity attacks. If the cluster ends this movement within 5 feet of the attacker, it then makes one Slam attack against that attacker."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Encephalon Gemmule|PABTSO",
+			"hint": {
+				"Magic Resistance": "魔法抗性"
+			},
+			"s": [
+				"Encephalon Gemmule",
+				"Encephalon Progeny",
+				"The gemmule matures into an encephalon cluster if not killed within 30 ({@dice 4d12 + 4}) days of its creation.",
+				"Magic Resistance",
+				"The gemmule has advantage on saving throws against spells and other magical effects.",
+				"Psychic Slam",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d10}) psychic damage.",
+				"Leech",
+				"The gemmule targets one creature within 5 feet of itself and forces the target to make a {@dc 14} Dexterity saving throw. On a failed save, the gemmule enters the target's space and attaches to the target. While the gemmule is attached, the target takes 7 ({@damage 3d4}) piercing damage at the start of each of its turns, and the gemmule can't use Leech again until it detaches. It can detach itself by spending 5 feet of its movement. As an action, the target or a creature within 5 feet of the target can detach the gemmule by succeeding on a {@dc 15} Strength check."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Feral Ashenwight|PABTSO",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Feral Ashenwight",
+				"natural armor",
+				"Multiattack",
+				"The ashenwight makes two Necrotic Shard attacks.",
+				"Necrotic Shard",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 60 ft., one target. {@h}7 ({@damage 1d6 + 4}) necrotic damage. If the target is a creature, it has disadvantage on the next attack roll it makes before the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fiendish Auger|PABTSO",
+			"hint": {
+				"Siege Monster": "攻城怪獸",
+				"Tunneler": "掘地者"
+			},
+			"s": [
+				"Fiendish Auger",
+				"natural armor",
+				"Siege Monster",
+				"The auger deals double damage to objects and structures.",
+				"Tunneler",
+				"The auger can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake.",
+				"Flaming Drill",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage plus 7 ({@damage 2d6}) fire damage. If the auger moves at least 20 feet in a straight line toward the target immediately before the hit, the target takes an additional 11 ({@damage 2d10}) piercing damage, and if the target is a creature, it must succeed on a {@dc 17} Strength saving throw or have the {@condition prone} condition.",
+				"Burst of Heat {@recharge 5}",
+				"The auger releases an intense burst of heat in a 30-foot-radius sphere centered on itself. This heat spreads around corners. Each creature in this area must make a {@dc 17} Constitution saving throw, taking 13 ({@damage 3d8}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Flesh Meld|PABTSO",
+			"hint": {
+				"Amorphous": "無定形",
+				"Magic Resistance": "魔法抗性",
+				"Spider Climb": "蛛行",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Flesh Meld",
+				"Amorphous",
+				"The flesh meld can move through a space as narrow as 1 inch without squeezing.",
+				"Aura of Death",
+				"At the start of each of the flesh meld's turns, each creature within 5 feet of it must succeed on a {@dc 15} Constitution saving throw or take 3 ({@damage 1d6}) necrotic damage and have the {@condition poisoned} condition until the start of the flesh meld's next turn.",
+				"Magic Resistance",
+				"The flesh meld has advantage on saving throws against spells and other magical effects.",
+				"Spider Climb",
+				"The flesh meld can climb difficult surfaces, including ceilings, without needing to make an ability check.",
+				"Multiattack",
+				"The flesh meld makes two Bite attacks.",
+				"Bite",
+				"{@atk mw} {@hit 8} to hit, reach 30 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage, and if the target is a Large or smaller creature, it has the {@condition grappled} condition (escape {@dc 15}) and is pulled up to 15 feet toward the flesh meld.",
+				"Consume Creature",
+				"The flesh meld targets one Large or smaller creature within 5 feet of itself that it's grappling. The target must succeed on a {@dc 15} Dexterity saving throw or be swallowed by the flesh meld. The flesh meld can have one creature swallowed at a time.",
+				"A swallowed creature no longer has the {@condition grappled} condition. While swallowed, it has the {@condition blinded} and {@condition restrained} conditions, has {@quickref Cover||3||total cover} against attacks and other effects outside the flesh meld, and takes 10 ({@damage 3d6}) necrotic damage at the start of each of the flesh meld's turns. If this damage reduces a swallowed creature to 0 hit points, the creature dies, and the flesh meld consumes its body.",
+				"If the flesh meld takes 30 damage or more on a single turn from the swallowed creature, the flesh meld must succeed on a {@dc 15} Constitution saving throw at the end of that turn or regurgitate the creature, which falls with the {@condition prone} condition in a space within 5 feet of the flesh meld. If the flesh meld dies, the swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 10 feet of movement, exiting with the {@condition prone} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Goblin Boss Archer|PABTSO",
+			"s": [
+				"Goblin Boss Archer"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Goblin Psi Brawler|PABTSO",
+			"hint": {
+				"Mental Fortitude": "心智堅毅",
+				"Multiattack": "多重攻擊",
+				"Unarmed Strike": "徒手打擊",
+				"Nimble Escape": "靈巧脫逃",
+				"Telekinetic Shove": "心靈推撞"
+			},
+			"s": [
+				"Goblin Psi Brawler",
+				"Mental Burst",
+				"When the goblin dies, its pent-up mental energy explodes in a psychic blast. Each creature within 5 feet of it must succeed on a {@dc 13} Intelligence saving throw or take 5 ({@damage 2d4}) psychic damage.",
+				"Mental Fortitude",
+				"The goblin has advantage on saving throws against effects that would make it have the {@condition charmed} or {@condition frightened} condition.",
+				"Multiattack",
+				"The goblin makes two Unarmed Strike attacks.",
+				"Unarmed Strike",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage plus 3 ({@damage 1d6}) psychic damage.",
+				"Nimble Escape",
+				"The goblin takes the {@action Disengage} or {@action Hide} action.",
+				"Telekinetic Shove",
+				"The goblin targets one creature it can see within 30 feet of itself with a thrust of telekinetic force. The target must succeed on a {@dc 13} Strength saving throw or have the {@condition prone} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Goblin Psi Commander|PABTSO",
+			"hint": {
+				"Spellcasting (Psionics)": "施法（靈能）",
+				"Mental Fortitude": "心智堅毅",
+				"Multiattack": "多重攻擊",
+				"Psychic Blade": "精神之刃",
+				"Nimble Escape": "靈巧脫逃"
+			},
+			"s": [
+				"Goblin Psi Commander",
+				"Spellcasting (Psionics)",
+				"The goblin casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 13}):",
+				"Mental Burst",
+				"When the goblin dies, its pent-up mental energy explodes in a psychic blast. Each creature within 5 feet of it must succeed on a {@dc 13} Intelligence saving throw or take 10 ({@damage 4d4}) psychic damage.",
+				"Mental Fortitude",
+				"The goblin has advantage on saving throws against effects that would make it have the {@condition charmed} or {@condition frightened} conditions.",
+				"Multiattack",
+				"The goblin makes three Psychic Blade attacks.",
+				"Psychic Blade",
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 60 ft., one creature. {@h}11 ({@damage 2d6 + 4}) psychic damage, and the target must subtract {@dice 1d4} from the next attack roll or saving throw it makes before the end of the goblin's next turn.",
+				"Synaptic Rend {@recharge 5}",
+				"The goblin unleashes a 30-foot-radius sphere of psychic energy, centered on a point the goblin can see within 60 feet of itself. Each creature in that area must make a {@dc 13} Intelligence saving throw. On a failed save, a creature takes 14 ({@damage 4d6}) psychic damage and has the {@condition incapacitated} condition until the end of the goblin's next turn. On a successful save, a creature takes half as much damage only.",
+				"Nimble Escape",
+				"The goblin takes the {@action Disengage} or {@action Hide} action.",
+				"Psionic Shield",
+				"When the goblin or one of its allies within 15 feet of it is hit by an attack roll, the goblin conjures a shield of force. The target of the attack gains a +3 bonus to its AC against the triggering attack roll, potentially causing it to miss."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Grandlejaw|PABTSO",
+			"s": [
+				"Grandlejaw"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Grell Psychic|PABTSO",
+			"hint": {
+				"Spellcasting (Psionics)": "施法（靈能）",
+				"Multiattack": "多重攻擊",
+				"Beak": "啄擊",
+				"Tentacle": "觸手"
+			},
+			"s": [
+				"Grell Psychic",
+				"with {@spell mage armor}",
+				"(hover)",
+				"Spellcasting (Psionics)",
+				"The grell psychic casts one of the following spells, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 12}):",
+				"Multiattack",
+				"The grell psychic makes one Tentacle attack and one Beak attack.",
+				"Beak",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 3d4 + 3}) piercing damage.",
+				"Tentacle",
+				"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage, and the target must succeed on a {@dc 11} Constitution saving throw or have the {@condition poisoned} condition for 1 minute. While the target is {@condition poisoned}, it also has the {@condition paralyzed} condition. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The target also has the {@condition grappled} condition (escape {@dc 16}). While grappling the target, the grell can't make Tentacle attacks against other targets. When the grell moves, any Medium or smaller target it is grappling moves with it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gundren Rockseeker|PABTSO",
+			"hint": {
+				"Gundren Rockseeker": "岡德倫·尋岩者"
+			},
+			"s": [
+				"Gundren Rockseeker"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gwyn Oresong|PABTSO",
+			"s": [
+				"Gwyn Oresong"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hashutu|PABTSO",
+			"s": [
+				"Hashutu"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hjoldak Hollowhelm|PABTSO",
+			"s": [
+				"Hjoldak Hollowhelm"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Honna|PABTSO",
+			"s": [
+				"Honna"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Humanoid Mutate|PABTSO",
+			"hint": {
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Unarmed Strike": "徒手打擊"
+			},
+			"s": [
+				"Humanoid Mutate",
+				"Sunlight Sensitivity",
+				"While in sunlight, the mutate has disadvantage on attack rolls.",
+				"Multiattack",
+				"The mutate makes two Unarmed Strike or Nightmare Blast attacks.",
+				"Unarmed Strike",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage plus 10 ({@damage 3d6}) psychic damage.",
+				"Nightmare Blast",
+				"{@atk rw} {@hit 6} to hit, range 60 ft., one creature. {@h}7 ({@damage 2d6}) psychic damage, and the target must succeed on a {@dc 12} Wisdom saving throw or have the {@condition frightened} condition until the start of the mutate's next turn.",
+				"Defensive Flight",
+				"Immediately after taking damage, the mutate flies up to its speed. This movement doesn't provoke opportunity attacks."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Iarno \"Glasstaff\" Albrek|PABTSO",
+			"hint": {
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Iarno \"Glasstaff\" Albrek",
+				"with {@spell mage armor} and {@item staff of defense|PaBTSO}",
+				"Spellcasting",
+				"Glasstaff casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 13}):",
+				"Special Equipment",
+				"Glasstaff wields a {@item staff of defense|PaBTSO} (see appendix B). With the staff in hand, he can use an action to cast the {@spell mage armor} spell and use his reaction to cast the {@spell shield} spell.",
+				"Multiattack",
+				"Glasstaff makes two Shocking Burst attacks.",
+				"Shocking Burst",
+				"{@atk ms,rs} {@hit 5} to hit, reach 5 ft. or range 120 ft., one target. {@h}6 ({@damage 1d6 + 3}) lightning damage.",
+				"Teleport (2/Day)",
+				"Glasstaff magically teleports, along with any equipment he is wearing or carrying, up to 30 feet to an unoccupied space he can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Infected Elder Brain|PABTSO",
+			"hint": {
+				"Spellcasting (Psionics)": "施法（靈能）",
+				"Creature Sense": "生物感知",
+				"Magic Resistance": "魔法抗性",
+				"Telepathic Hub": "心靈感應樞紐",
+				"Multiattack": "多重攻擊",
+				"Tentacle": "觸手",
+				"Mind Blast {@recharge 5}": "心靈衝擊 {@recharge 5}",
+				"Psychic Link": "心靈連結"
+			},
+			"s": [
+				"Infected Elder Brain",
+				"Spellcasting (Psionics)",
+				"The elder brain casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 17}):",
+				"Creature Sense",
+				"The elder brain is aware of creatures within 1 mile of itself that have an Intelligence score of 4 or higher. It knows the distance and direction to each creature, as well as each one's Intelligence score, but can't sense anything else about it. A creature protected by a {@spell mind blank} spell, a {@spell nondetection} spell, or similar magic can't be perceived in this manner.",
+				"Magic Resistance",
+				"The elder brain has advantage on saving throws against spells and other magical effects.",
+				"Telepathic Hub",
+				"The elder brain can use its telepathy to initiate and maintain telepathic conversations with up to ten creatures at a time. The elder brain can let those creatures telepathically hear each other while connected in this way.",
+				"Multiattack",
+				"The elder brain makes two Tentacle attacks.",
+				"Tentacle",
+				"{@atk mw} {@hit 6} to hit, reach 30 ft., one target. {@h}15 ({@damage 3d8 + 2}) bludgeoning damage. If the target is a Huge or smaller creature, it has the {@condition grappled} condition (escape {@dc 14}) and takes 9 ({@damage 1d8 + 5}) psychic damage at the start of each of its turns until the grapple ends. The elder brain can have up to four targets {@condition grappled} at a time.",
+				"Mind Blast {@recharge 5}",
+				"Creatures of the elder brain's choice within 60 feet of itself must succeed on a {@dc 17} Intelligence saving throw or take 32 ({@damage 5d10 + 5}) psychic damage and have the {@condition stunned} condition for 1 minute. A {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Psychic Link",
+				"The elder brain targets one creature with the {@condition incapacitated} condition that the elder brain senses with its Creature Sense trait and establishes a psychic link with the target. Until the link ends, the elder brain can perceive everything the target senses. The target becomes aware that something is linked to its mind once it no longer has the {@condition incapacitated} condition, and the elder brain can terminate the link at any time (no action required). The target can use an action on its turn to attempt to break the link, doing so with a successful {@dc 17} Charisma check. If the target breaks the link this way, the target takes 10 ({@damage 3d6}) psychic damage. The link also ends if the target and the elder brain are more than 1 mile apart. The elder brain can form psychic links with up to ten creatures at a time."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Infected Townsperson|PABTSO",
+			"s": [
+				"Infected Townsperson"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Intellect Snare|PABTSO",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Tentacle": "觸手"
+			},
+			"s": [
+				"Intellect Snare",
+				"(hover)",
+				"Cacophony of Minds",
+				"Any creature that starts its turn within 30 feet of the intellect snare must succeed on a {@dc 17} Wisdom saving throw or have the {@condition incapacitated} condition for 1 minute. An {@condition incapacitated} creature can repeat the saving throw at the start of each of its turns, ending the effect on itself on a success. A creature that succeeds on the saving throw is immune to this intellect snare's Cacophony of Minds for 24 hours.",
+				"Magic Resistance",
+				"The intellect snare has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The intellect snare makes two Tentacle attacks.",
+				"Tentacle",
+				"{@atk mw} {@hit 9} to hit, reach 15 ft., one target. {@h}10 ({@damage 1d8 + 6}) force damage, and if the target is a Medium or smaller creature, the target has the {@condition grappled} condition (escape {@dc 17}).",
+				"Siphon Thoughts",
+				"The intellect snare targets one creature it is grappling. The target must make a {@dc 17} Intelligence saving throw, taking 21 ({@damage 6d6}) psychic damage on a failed save, or half as much damage on a successful one. The intellect snare then regains a number of hit points equal to the amount of damage taken."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kellikilli|PABTSO",
+			"s": [
+				"Kellikilli"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lowarnizel|PABTSO",
+			"hint": {
+				"Spellcasting (Psionics)": "施法（靈能）",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊",
+				"Singularity Breath {@recharge 5}": "奇點吐息 {@recharge 5}",
+				"Change Shape": "變形"
+			},
+			"s": [
+				"Lowarnizel",
+				"natural armor",
+				"(hover)",
+				"Spellcasting (Psionics)",
+				"Lowarnizel casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 16}):",
+				"Amphibious",
+				"Lowarnizel can breathe both air and water.",
+				"Multiattack",
+				"Lowarnizel makes one Bite attack and two Claw attacks.",
+				"Bite",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage plus 4 ({@damage 1d8}) force damage.",
+				"Claw",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage.",
+				"Singularity Breath {@recharge 5}",
+				"Lowarnizel creates a shining bead of gravitational force, then releases the energy in a 30-foot cone. Each creature in that area must make a {@dc 17} Strength saving throw. On a failed save, a creature takes 36 ({@damage 8d8}) force damage, and its speed becomes 0 until the start of the dragon's next turn. On a successful save, a creature takes half as much damage only.",
+				"Change Shape",
+				"Lowarnizel magically transforms into any creature that is Medium or Small, while retaining his game statistics (other than his size). This transformation ends if the dragon is reduced to 0 hit points or uses a bonus action to end it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Malinia|PABTSO",
+			"s": [
+				"Malinia"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mind Flayer Clairvoyant|PABTSO",
+			"hint": {
+				"Spellcasting (Psionics)": "施法（靈能）",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Tentacle": "觸手",
+				"Extract Brain": "取腦"
+			},
+			"s": [
+				"Mind Flayer Clairvoyant",
+				"(hover)",
+				"Spellcasting (Psionics)",
+				"The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 17}):",
+				"Legendary Resistance (3/Day)",
+				"If the mind flayer fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The mind flayer has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The mind flayer makes two Tentacle attacks.",
+				"Tentacle",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}21 ({@damage 3d10 + 5}) psychic damage. If the target is Medium or smaller, it has the {@condition grappled} condition (escape {@dc 17}) and must succeed on a {@dc 17} Intelligence saving throw or have the {@condition incapacitated} condition until the grapple ends.",
+				"Extract Brain",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one {@condition incapacitated} Humanoid {@condition grappled} by the mind flayer. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the mind flayer kills it by extracting and devouring its brain.",
+				"Unleash Void {@recharge 5}",
+				"The mind flayer opens a rift into the Far Realm, centered on a point the mind flayer can see within 60 feet of itself, and a tentacle lashes across creatures near the rift. Each creature other than mind flayers within 30 feet of the rift must make a {@dc 17} Intelligence saving throw, after which the tentacle disappears and the rift closes. On a failed save, a creature takes 18 ({@damage 4d8}) cold damage from the rift plus 18 ({@damage 4d8}) psychic damage from the tentacle and has the {@condition stunned} condition for 1 minute. On a successful save, a creature takes half as much damage only. A {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Warp Reality",
+				"When hit by an attack roll, the mind flayer gains a +4 bonus to its AC against that attack roll, potentially causing it to miss. Then the mind flayer, along with any equipment it is wearing or carrying, magically teleports up to 60 feet to an unoccupied space it can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mind Flayer Nothic|PABTSO",
+			"s": [
+				"Mind Flayer Nothic"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mind Flayer Prophet|PABTSO",
+			"hint": {
+				"Spellcasting (Psionics)": "施法（靈能）",
+				"Awareness": "警覺",
+				"Magic Resistance": "魔法抗性",
+				"Tentacles": "觸手",
+				"Extract Brain": "取腦"
+			},
+			"s": [
+				"Mind Flayer Prophet",
+				"natural armor",
+				"Spellcasting (Psionics)",
+				"The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 16}):",
+				"Awareness",
+				"The mind flayer has advantage on initiative rolls and can't be surprised as long as it doesn't have the {@condition incapacitated} condition.",
+				"Magic Resistance",
+				"The mind flayer has advantage on saving throws against spells and other magical effects.",
+				"Tentacles",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}16 ({@damage 2d10 + 5}) psychic damage. If the target is Medium or smaller, it has the {@condition grappled} condition (escape {@dc 16}) and must succeed on a {@dc 16} Intelligence saving throw or have the {@condition stunned} condition until the grapple ends.",
+				"Extract Brain",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one Humanoid {@condition grappled} by the mind flayer. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the mind flayer kills it by extracting and devouring its brain.",
+				"Mind Whip {@recharge 5}",
+				"The mind flayer lashes out with psychic energy, targeting up to two creatures it can see within 60 feet of itself. Each target must succeed on a {@dc 16} Intelligence saving throw or take 23 ({@damage 4d8 + 5}) psychic damage and have the {@condition stunned} condition for 1 minute. A {@condition stunned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mormesk the Wraith|PABTSO",
+			"hint": {
+				"Mormesk the Wraith": "縛靈莫梅斯克"
+			},
+			"s": [
+				"Mormesk the Wraith"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nellik|PABTSO",
+			"s": [
+				"Nellik"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nezznar the Spider|PABTSO",
+			"hint": {
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Fey Ancestry": "妖精血統",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Nezznar the Spider",
+				"with {@spell mage armor}",
+				"Spellcasting",
+				"Nezznar casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 13} unless otherwise noted):",
+				"Special Equipment",
+				"Nezznar has a fully charged {@item spider staff|LMoP} (see appendix B).",
+				"Fey Ancestry",
+				"Nezznar has advantage on saving throws to avoid or end the {@condition charmed} condition on himself, and magic can't put him to sleep.",
+				"Sunlight Sensitivity",
+				"Nezznar has disadvantage on attack rolls while he or his target is in sunlight.",
+				"Multiattack",
+				"Nezznar makes two Poison Blast attacks.",
+				"Poison Blast",
+				"{@atk ms,rs} {@hit 5} to hit, reach 5 ft. or range 120 ft., one creature. {@h}9 ({@damage 2d8}) poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nundro Rockseeker|PABTSO",
+			"hint": {
+				"Nundro Rockseeker": "努德羅·尋岩者"
+			},
+			"s": [
+				"Nundro Rockseeker"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nythalyn Henlifel|PABTSO",
+			"s": [
+				"Nythalyn Henlifel"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Oculorb|PABTSO",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Oculorb",
+				"natural armor",
+				"(hover)",
+				"Magic Resistance",
+				"The oculorb has advantage on saving throws against spells and other magical effects.",
+				"Watchful Eyes",
+				"The oculorb has advantage on initiative rolls and can't be surprised.",
+				"Multiattack",
+				"The oculorb makes two Dreadful Contact attacks or four Eye Beam attacks.",
+				"Dreadful Contact",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}14 ({@damage 3d6 + 4}) psychic damage, or 25 ({@damage 6d6 + 4}) psychic damage if the target has the {@condition frightened} condition.",
+				"Eye Beam",
+				"{@atk rs} {@hit 8} to hit, range 120 ft., one creature. {@h}14 ({@damage 3d6 + 4}) psychic damage.",
+				"Antipathic Flood {@recharge 5}",
+				"The oculorb releases a wave of negative emotions, choosing one of the following options:",
+				"Weeping Eyes",
+				"The oculorb weeps, releasing a wave of crushing despair. Each creature within 30 feet of the oculorb must make a {@dc 16} Constitution saving throw. On a failed save, a creature's speed is reduced to 0 feet until the end of the oculorb's next turn, and if the creature was {@status concentration||concentrating}, its {@status concentration} is broken.",
+				"Withering Glare",
+				"The oculorb's eyes unleash furious scarlet energy in a 60-foot cone. Each creature in that area must make a {@dc 16} Wisdom saving throw. On a failed save, a creature takes 33 ({@damage 6d10}) necrotic damage and has the {@condition frightened} condition for 1 minute. On a successful save, a creature takes half as much damage and isn't {@condition frightened}. A {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save.",
+				"Obsessive Rebuke",
+				"When the oculorb is damaged by a creature it can see within 60 feet of itself, it forces the creature to make a {@dc 16} Wisdom saving throw. The creature takes 10 ({@damage 3d6}) psychic damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ontharyx|PABTSO",
+			"s": [
+				"Ontharyx"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Oshundo the Alhoon|PABTSO",
+			"hint": {
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Chilling Grasp": "寒冰之握",
+				"Arcane Bolt": "奧術箭",
+				"Negate Spell (3/Day)": "否定法術（每日 3 次）"
+			},
+			"s": [
+				"Oshundo the Alhoon",
+				"natural armor",
+				"(hover)",
+				"Spellcasting",
+				"Oshundo casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 16}):",
+				"Magic Resistance",
+				"Oshundo has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"Oshundo makes two Chilling Grasp or Arcane Bolt attacks.",
+				"Chilling Grasp",
+				"{@atk ms} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) cold damage, and Oshundo regains 14 hit points if the target is a creature.",
+				"Arcane Bolt",
+				"{@atk rs} {@hit 8} to hit, range 120 ft., one target. {@h}28 ({@damage 8d6}) force damage.",
+				"Thundering Blast {@recharge 5}",
+				"Oshundo emits a wave of domineering energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 16} Intelligence saving throw or take 22 ({@damage 4d8 + 4}) thunder damage and have the {@condition stunned} condition for 1 minute. A {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Negate Spell (3/Day)",
+				"Oshundo targets one creature it can perceive within 60 feet of itself that is casting a spell. If the spell is 3rd level or lower, the spell fails, but any spell slots or charges aren't wasted."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Otyugh Mutate|PABTSO",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tentacle": "觸手"
+			},
+			"s": [
+				"Otyugh Mutate",
+				"natural armor",
+				"Virulent Breath",
+				"Noxious gas from the mutate's digestion of previous meals spews from its mouth. At the start of the mutate's turn, each creature within 5 feet of it must succeed on a {@dc 15} Constitution saving throw or take 3 ({@damage 1d6}) poison damage.",
+				"Multiattack",
+				"The mutate makes two Bite or Tentacle attacks. It can replace one of these attacks with Chitin Slam.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 15} Constitution saving throw or have the {@condition poisoned} condition. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 5 ({@dice 1d10}) on a failure. On a successful save, the target is no longer {@condition poisoned}. The target dies if its hit point maximum is reduced to 0. This reduction to the target's hit point maximum lasts until it no longer has the {@condition poisoned} condition.",
+				"Tentacle",
+				"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, and if the target is a Medium or smaller creature, it has the {@condition grappled} condition (escape {@dc 15}) and the {@condition restrained} condition until this grapple ends. The mutate has two tentacles that can grapple one target each.",
+				"Chitin Slam",
+				"The mutate targets one creature it is grappling, slamming the creature against its chitinous plating. The creature must succeed on a {@dc 15} Constitution saving throw or take 16 ({@damage 3d10}) bludgeoning damage and have the {@condition stunned} condition until the end of the mutate's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Psionic Ashenwight|PABTSO",
+			"hint": {
+				"Spellcasting (Psionics)": "施法（靈能）",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Psionic Ashenwight",
+				"natural armor",
+				"Spellcasting (Psionics)",
+				"The ashenwight casts one of the following spells, requiring no spellcasting components and using Intelligence as the spellcasting ability (spell save {@dc 14}):",
+				"Multiattack",
+				"The ashenwight makes two Necrotic Shard attacks. It also uses Psionic Crown if available.",
+				"Necrotic Shard",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 60 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 9 ({@damage 2d8}) necrotic damage. If the target is a creature, it has disadvantage on the next attack roll it makes before the end of its next turn.",
+				"Psionic Crown {@recharge 5}",
+				"The ashenwight wreathes the head of a creature it can see within 60 feet of itself with a crown of jagged, spectral crystals. The target must succeed on a {@dc 14} Wisdom saving throw or have the {@condition charmed} condition for 1 minute. While {@condition charmed} in this way, the target's thoughts are sluggish; it can't take reactions, its speed is halved, and it takes 9 ({@damage 2d8}) psychic damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Psionic Shambling Mound|PABTSO",
+			"hint": {
+				"Spellcasting (Psionics)": "施法（靈能）"
+			},
+			"s": [
+				"Psionic Shambling Mound",
+				"Spellcasting (Psionics)",
+				"The shambling mound casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 8}):"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Qunbraxel|PABTSO",
+			"hint": {
+				"Spellcasting (Psionics)": "施法（靈能）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Tentacle": "觸手",
+				"Eldritch Bolt": "魔能箭",
+				"Extract Brain": "取腦",
+				"Mind Blast {@recharge 5}": "心靈衝擊 {@recharge 5}"
+			},
+			"s": [
+				"Qunbraxel",
+				"with {@spell mage armor}",
+				"Spellcasting (Psionics)",
+				"Qunbraxel casts one of the following spells, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 16}):",
+				"Magic Resistance",
+				"Qunbraxel has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"Qunbraxel makes two Eldritch Bolt attacks, or one Eldritch Bolt attack and one Tentacle attack.",
+				"Tentacle",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}15 ({@damage 2d10 + 4}) psychic damage. If the target is Medium or smaller, it has the {@condition grappled} condition (escape {@dc 16}) and must succeed on a {@dc 16} Intelligence saving throw or have the {@condition stunned} condition until the grapple ends.",
+				"Eldritch Bolt",
+				"{@atk rs} {@hit 8} to hit, range 120 ft., one target. {@h}20 ({@damage 3d10 + 4}) force damage.",
+				"Extract Brain",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one Humanoid with the {@condition stunned} condition who is {@condition grappled} by Qunbraxel. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, Qunbraxel kills it by extracting and devouring its brain.",
+				"Mind Blast {@recharge 5}",
+				"Qunbraxel magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 16} Intelligence saving throw or take 26 ({@damage 5d8 + 4}) psychic damage and have the {@condition stunned} condition for 1 minute. A {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Redbrand Ruffian|PABTSO",
+			"hint": {
+				"Redbrand Ruffian": "紅標幫惡棍",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Redbrand Ruffian",
+				"Shortsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Refraction of Ilvaash|PABTSO",
+			"hint": {
+				"Spellcasting (Psionics)": "施法（靈能）",
+				"Creature Sense": "生物感知",
+				"Incorporeal Movement": "虛體移動",
+				"Legendary Resistance (5/Day)": "傳奇抗性（每日 5 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Mind Blast {@recharge 5}": "心靈衝擊 {@recharge 5}",
+				"Teleport": "傳送"
+			},
+			"s": [
+				"Refraction of Ilvaash",
+				"natural armor",
+				"(hover)",
+				"Spellcasting (Psionics)",
+				"The refraction casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save {@dc 19}):",
+				"Creature Sense",
+				"The refraction is aware of creatures within 100 miles of it that have an Intelligence score of 4 or higher. It knows the distance and direction to each creature, as well as each one's Intelligence score, but can't sense anything else about it. A creature protected by a {@spell mind blank} spell, a {@spell nondetection} spell, or similar magic can't be perceived in this manner.",
+				"Incorporeal Movement",
+				"The refraction can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object.",
+				"Legendary Resistance (5/Day)",
+				"If the refraction fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The refraction has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The refraction makes two Dissonant Claw attacks.",
+				"Dissonant Claw",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft. or range 120 ft., one creature. {@h}25 ({@damage 3d12 + 6}) psychic damage. If the target is a creature {@status concentration||concentrating} on a spell, its {@status concentration} is broken.",
+				"Mind Blast {@recharge 5}",
+				"Creatures of the refraction's choice within 60 feet of it must succeed on a {@dc 19} Intelligence saving throw or take 33 ({@damage 5d10 + 6}) psychic damage and have the {@condition stunned} condition for 1 minute. A {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Teleport",
+				"The refraction teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied place that it can see.",
+				"Mindbreaker",
+				"The refraction targets a creature within 120 feet of itself and disrupts its mental processes, causing the target to have disadvantage on all ability checks, attack rolls, and saving throws until the end of the target's next turn.",
+				"Projected Claw (Costs 2 Actions)",
+				"The refraction makes one Dissonant Claw attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rivibiddel|PABTSO",
+			"s": [
+				"Rivibiddel"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ruxithid the Chosen|PABTSO",
+			"hint": {
+				"Legendary Resistance (2/Day)": "傳奇抗性（每日 2 次）",
+				"Mental Fortitude": "心智堅毅",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Ruxithid the Chosen",
+				"(hover)",
+				"Legendary Resistance (2/Day)",
+				"When Ruxithid fails a saving throw, he can choose to succeed instead.",
+				"Mental Fortitude",
+				"Ruxithid has advantage on saving throws against the {@condition charmed} and {@condition frightened} conditions.",
+				"Multiattack",
+				"Ruxithid makes two Psi-Charged Scimitar attacks.",
+				"Psi-Charged Scimitar",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage plus 7 ({@damage 2d6}) psychic damage.",
+				"Brain Tendrils {@recharge 5}",
+				"Ruxithid unleashes a flurry of crystalline psychic tendrils from his brain, targeting one creature that he can see within 30 feet of himself. The target must succeed on a {@dc 15} Dexterity saving throw or take 9 ({@damage 2d8}) psychic damage and have the {@condition stunned} condition until the start of Ruxithid's next turn.",
+				"Combat Command",
+				"Ruxithid commands one allied creature he can see within 60 feet of himself to strike. The creature can immediately use its reaction to make one melee weapon attack against a target within its reach."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shalfi Lewin|PABTSO",
+			"s": [
+				"Shalfi Lewin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sildar Hallwinter|PABTSO",
+			"hint": {
+				"Sildar Hallwinter": "希爾達·霍溫特",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍",
+				"Heavy Crossbow": "重弩",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Sildar Hallwinter",
+				"Multiattack",
+				"Sildar makes two Longsword attacks.",
+				"Longsword",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage, or 6 ({@damage 1d10 + 1}) slashing damage if used with two hands.",
+				"Heavy Crossbow",
+				"{@atk rw} {@hit 2} to hit, range 100/400 ft., one target. {@h}5 ({@damage 1d10}) piercing damage.",
+				"Parry",
+				"When an attacker Sildar can see would hit him with a melee attack, he can roll a {@dice d6} and add the number rolled to his AC against the triggering attack, provided he's wielding a melee weapon."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Varakkta|PABTSO",
+			"s": [
+				"Varakkta"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Voalsh|PABTSO",
+			"s": [
+				"Voalsh",
+				"(hover)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yanthdel Henlifel|PABTSO",
+			"s": [
+				"Yanthdel Henlifel"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zeond|PABTSO",
+			"s": [
+				"Zeond"
+			]
+		}
+	]
+}

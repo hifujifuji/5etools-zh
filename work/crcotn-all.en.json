@@ -1,0 +1,1298 @@
+{
+	"batch": "crcotn-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Aboleth Spawn|CRCOTN",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Water Dependency": "依賴水分",
+				"Multiattack": "多重攻擊",
+				"Spear": "矛",
+				"Tentacle": "觸手",
+				"Psychic Lash": "心靈鞭笞"
+			},
+			"s": [
+				"Aboleth Spawn",
+				"natural armor",
+				"Abolethic Vessel",
+				"The spawn must obey its aboleth master.",
+				"Amphibious",
+				"The spawn can breathe air and water.",
+				"Water Dependency",
+				"The spawn takes 6 ({@damage 1d12}) acid damage every 10 minutes it goes without being immersed in water.",
+				"Multiattack",
+				"The spawn makes one Spear attack, two Tentacle attacks, and one Psychic Lash attack.",
+				"Spear",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, or 8 ({@damage 1d8 + 4}) piercing damage when used with two hands to make a melee attack.",
+				"Tentacle",
+				"{@atk mw} {@hit 7} to hit, reach 10 ft., one creature. {@h}The target is {@condition grappled} (escape {@dc 14}) and takes 9 ({@damage 2d8}) psychic damage at the start of each of its turns until the grapple ends. The spawn has four tentacles, each of which can grapple one creature.",
+				"Psychic Lash",
+				"{@atk rs} {@hit 7} to hit, range 120 ft., one creature. {@h}18 ({@damage 4d8}) psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Agathe Silverspoon|CRCOTN",
+			"s": [
+				"Agathe Silverspoon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aloysia Telfan|CRCOTN",
+			"s": [
+				"Aloysia Telfan"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Alyxian Aboleth|CRCOTN",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Mucous Cloud": "黏液雲團",
+				"Probing Telepathy": "探查心靈感應",
+				"Multiattack": "多重攻擊",
+				"Tentacle": "觸手",
+				"Tail": "尾擊",
+				"Tail Swipe": "尾掃",
+				"Psychic Drain (Costs 2 Actions)": "心靈汲取（消耗 2 個動作）"
+			},
+			"s": [
+				"Alyxian Aboleth",
+				"natural armor",
+				"Amphibious",
+				"The aboleth can breathe air and water.",
+				"Mucous Cloud",
+				"While underwater, the aboleth is surrounded by a cloud of sticky mucus. A creature that touches the aboleth or hits it with a melee attack while within 5 feet of it must succeed on a {@dc 14} Strength saving throw or be {@condition restrained} until the end of the aboleth's next turn.",
+				"Probing Telepathy",
+				"If a creature the aboleth can see communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires.",
+				"Multiattack",
+				"The aboleth makes two Tentacle attacks.",
+				"Tentacle",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage plus 3 ({@damage 1d6}) psychic damage.",
+				"Tail",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage.",
+				"Enslave {@recharge 4}",
+				"The aboleth targets one creature it can see within 30 feet of itself. The target must succeed on a {@dc 14} Wisdom saving throw or be magically {@condition charmed} by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The {@condition charmed} target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.",
+				"The {@condition charmed} target can repeat the saving throw whenever it takes damage, ending the effect on itself on a success. No more than once every 24 hours, the target can repeat the saving throw when it is at least 1 mile away from the aboleth.",
+				"Tail Swipe",
+				"The aboleth makes one Tail attack.",
+				"Psychic Drain (Costs 2 Actions)",
+				"One creature {@condition charmed} by the aboleth takes 10 ({@damage 3d6}) psychic damage, and the aboleth regains hit points equal to the damage dealt."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Alyxian the Absolved|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (2/Day)": "傳奇抗性（每日 2 次）",
+				"Multiattack": "多重攻擊",
+				"Spear": "矛",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Alyxian the Absolved",
+				"Spellcasting",
+				"Alyxian casts one of the following spells, requiring no material components and using Charisma as the spellcasting modifier (spell save {@dc 17}):",
+				"Divinely Blessed",
+				"Alyxian can't be {@status surprised} and can't be changed into another form against his will.",
+				"Legendary Resistance (2/Day)",
+				"If Alyxian fails a saving throw, he can choose to succeed instead.",
+				"Multiattack",
+				"Alyxian makes two Spear attacks.",
+				"Spear",
+				"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, or 8 ({@damage 1d8 + 4}) piercing damage when used with two hands to make a melee attack, plus 9 ({@damage 2d8}) radiant damage.",
+				"Force Wave (1/Day)",
+				"Alyxian strikes the ground, creating a burst of energy that ripples outward. Each creature he chooses within a 30-foot-radius sphere centered on himself must succeed on a {@dc 17} Constitution saving throw or take 35 ({@damage 10d6}) force damage and be knocked {@condition prone}. A creature that succeeds on the saving throw takes half as much damage and isn't knocked {@condition prone}.",
+				"Parry",
+				"Alyxian adds 3 to his AC against one attack roll that would hit him. To do so, Alyxian must see the attacker and be wielding a melee weapon.",
+				"Arch Heart's Strike",
+				"Alyxian makes one Spear attack, and all damage from this attack is radiant.",
+				"Change Bringer's Dance",
+				"Alyxian moves up to his speed. This movement doesn't provoke opportunity attacks.",
+				"Moon Weaver's Veil (Costs 2 Actions)",
+				"Alyxian becomes {@condition invisible} until the end of his next turn. Any equipment he is wearing or carrying becomes {@condition invisible} with him.",
+				"Alyxian the Absolved"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Alyxian the Callous|CRCOTN",
+			"hint": {
+				"Legendary Resistance (2/Day)": "傳奇抗性（每日 2 次）",
+				"Multiattack": "多重攻擊",
+				"Radiant Spear": "光耀之矛",
+				"Attack": "攻擊"
+			},
+			"s": [
+				"Alyxian the Callous",
+				"Apotheonic Rejuvenation",
+				"When Alyxian the Callous drops to 0 hit points, his body dies and sheds its wings, and he rises to his feet in his third form, Alyxian the Dispossessed. His initiative count doesn't change.",
+				"Divinely Blessed",
+				"Alyxian can't be {@status surprised} and can't be changed into another form against his will.",
+				"Legendary Resistance (2/Day)",
+				"If Alyxian fails a saving throw, he can choose to succeed instead.",
+				"Multiattack",
+				"Alyxian makes two Radiant Spear attacks. He can replace one of these attacks with Blinding Teleport.",
+				"Radiant Spear",
+				"{@atk mw,rw} {@hit 10} to hit, reach 5 ft. or range 120 ft., one target. {@h}15 ({@damage 2d8 + 6}) radiant damage.",
+				"Blinding Teleport",
+				"Alyxian teleports, along with any equipment he is wearing or carrying, to an unoccupied space he can see within 120 feet of himself. Each creature within 5 feet of his new location must succeed on a {@dc 17} Constitution saving throw or be {@condition blinded} until the end of its next turn.",
+				"Heavenly Destruction (1/Day)",
+				"Alyxian releases divine energy in a 60-foot cone. Each creature of his choice in that area must make a {@dc 17} Constitution saving throw. On a failed saving throw, the creature takes 31 ({@damage 7d8}) radiant damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}.",
+				"Attack",
+				"Alyxian makes one Radiant Spear attack.",
+				"Celestial Chains",
+				"Alyxian targets one creature he can see within 120 feet of himself. The target must succeed on a {@dc 17} Strength saving throw or be {@condition restrained} by magical chains for 1 minute. While {@condition restrained} in this way, the target can't leave the space by any means. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Flare (Costs 2 Actions)",
+				"Alyxian targets one creature he can see within 30 feet of himself. Light flares around the target, dealing 17 ({@damage 5d6}) radiant damage to it and creatures within 10 feet of it.",
+				"Alyxian the Callous"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Alyxian the Dispossessed|CRCOTN",
+			"hint": {
+				"Legendary Resistance (2/Day)": "傳奇抗性（每日 2 次）",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊",
+				"Spear": "矛",
+				"Parry": "格擋",
+				"Attack": "攻擊"
+			},
+			"s": [
+				"Alyxian the Dispossessed",
+				"Divinely Blessed",
+				"Alyxian can't be {@status surprised} and can't be changed into another form against his will.",
+				"Legendary Resistance (2/Day)",
+				"If Alyxian fails a saving throw, he can choose to succeed instead.",
+				"Special Equipment",
+				"Alyxian carries a magic dagger that he uses to make Stoneheart Dagger attacks. In the hands of creatures other than Alyxian, the dagger is nonmagical and has no special properties.",
+				"Multiattack",
+				"Alyxian makes two Spear attacks.",
+				"Spear",
+				"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, or 8 ({@damage 1d8 + 4}) piercing damage when used with two hands to make a melee attack, plus 9 ({@damage 2d8}) radiant damage.",
+				"Stoneheart Dagger",
+				"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}11 ({@damage 3d4 + 4}) force damage, and if the target is a creature, it must succeed on a {@dc 17} Constitution saving throw or become {@condition petrified} as the dagger lodges itself in the target's body. While the dagger is lodged in the target, magic can't end the {@condition petrified} condition on it and Alyxian can't make Stoneheart Dagger attacks. A creature within reach of the {@condition petrified} target can use an action to try to remove the dagger, doing so with a successful {@dc 17} Strength check.",
+				"Summon Dagger",
+				"Alyxian's Stoneheart Dagger teleports into his free hand, provided he has one.",
+				"Parry",
+				"Alyxian adds 3 to his AC against one attack roll that would hit him. To do so, Alyxian must see the attacker and be wielding a melee weapon.",
+				"Attack",
+				"Alyxian makes one Spear or Stoneheart Dagger attack.",
+				"Warrior's Stride",
+				"Alyxian moves up to his speed. This movement doesn't provoke opportunity attacks.",
+				"Ruidium Shard (Costs 2 Actions)",
+				"A gem-sized shard of ruidium appears at a point Alyxian can see within 120 feet of himself and explodes. Each creature, other than Alyxian, in a 10-foot-radius sphere centered on that point must succeed on a {@dc 18} Charisma saving throw or gain 1 level of {@condition exhaustion}. If a creature isn't suffering from ruidium corruption, it becomes corrupted when it fails the saving throw.",
+				"Alyxian the Dispossessed"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Alyxian the Hunter|CRCOTN",
+			"hint": {
+				"Immutable Form": "不變形態",
+				"Magic Resistance": "魔法抗性",
+				"Magic Weapons": "魔法武器",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊",
+				"Slow {@recharge 5}": "緩慢術 {@recharge 5}"
+			},
+			"s": [
+				"Alyxian the Hunter",
+				"natural armor",
+				"Immutable Form",
+				"The golem is immune to any spell or effect that would alter its form.",
+				"Magic Resistance",
+				"The golem has advantage on saving throws against spells and other magical effects.",
+				"Magic Weapons",
+				"The golem's weapon attacks are magical.",
+				"Multiattack",
+				"The golem makes two slam attacks.",
+				"Ruidium Dart",
+				"The golem can conjure a magic dart made of ruidium and hurl it at another creature it can see within 120 feet of itself. The dart strikes the target unerringly and vanishes on contact. The target must make a {@dc 17} Charisma saving throw. On a failed saving throw, the target takes 24 ({@damage 7d6}) psychic damage and gains 1 level of {@condition exhaustion}. In addition, if the target is not already suffering from ruidium corruption, it becomes corrupted when it fails the saving throw. On a successful saving throw, the target takes half as much damage and suffers no other effects.",
+				"Slam",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage.",
+				"Slow {@recharge 5}",
+				"The golem targets one or more creatures it can see within 10 feet of it. Each target must make a {@dc 17} Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Alyxian the Tormented|CRCOTN",
+			"hint": {
+				"Legendary Resistance (2/Day)": "傳奇抗性（每日 2 次）",
+				"Multiattack": "多重攻擊",
+				"Grasping Hand": "擒握之手",
+				"Attack": "攻擊"
+			},
+			"s": [
+				"Alyxian the Tormented",
+				"natural armor",
+				"Apotheonic Rejuvenation",
+				"When Alyxian drops to 0 hit points, his body dies and cracks open like a cocoon. Alyxian instantly emerges from the cocoon in his second form, Alyxian the Callous, in the space where his previous form died. His initiative count doesn't change.",
+				"Divinely Blessed",
+				"Alyxian can't be {@status surprised} and can't be changed into another form against his will.",
+				"Legendary Resistance (2/Day)",
+				"If Alyxian fails a saving throw, he can choose to succeed instead.",
+				"Multiattack",
+				"Alyxian makes two Grasping Hand attacks.",
+				"Grasping Hand",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d6 + 5}) force damage, and if the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 15}). Alyxian has six hands, each of which can grapple one target.",
+				"Void Eyes {@recharge 5}",
+				"Alyxian targets up to two creatures he can see within 120 feet of himself. Each target must make a {@dc 17} Constitution saving throw, taking 28 ({@damage 8d6}) necrotic damage on a failed save, or half as much damage on a successful one.",
+				"Attack",
+				"Alyxian makes one Grasping Hand attack.",
+				"Weapons of Yore (Costs 2 Actions)",
+				"Ancient weapons embedded in Alyxian's hide detach from Alyxian and fly about in a 10-foot-radius sphere centered on a point Alyxian can see within 60 feet of himself. A creature takes 18 ({@damage 4d8}) slashing damage when it enters that area for the first time on a turn or starts its turn there. The effect lasts until the end of Alyxian's next turn, when the weapons return to Alyxian and embed themselves in his hide once again (causing him no harm).",
+				"Alyxian the Tormented"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Animated Glass Statue|CRCOTN",
+			"hint": {
+				"Keen Sight and Smell": "敏銳視覺與嗅覺",
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Beak": "啄擊",
+				"Talons": "利爪"
+			},
+			"s": [
+				"Animated Glass Statue",
+				"Keen Sight and Smell",
+				"The statue has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell.",
+				"Pack Tactics",
+				"The statue has advantage on an attack roll against a creature if at least one of the statue's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The statue makes two attacks: one with its beak and one with its talons.",
+				"Beak",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage.",
+				"Talons",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aradrine the Owl|CRCOTN",
+			"s": [
+				"Aradrine the Owl"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashann|CRCOTN",
+			"s": [
+				"Ashann"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ayo Jabe (Tier 1)|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Harpoon": "魚叉",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Ayo Jabe (Tier 1)",
+				"Spellcasting",
+				"Ayo casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 11}):",
+				"Amphibious",
+				"Ayo can breathe air and water.",
+				"Multiattack",
+				"Ayo makes two Harpoon or Longbow attacks.",
+				"Harpoon",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage.",
+				"Longbow",
+				"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ayo Jabe (Tier 2)|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Harpoon": "魚叉",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Ayo Jabe (Tier 2)",
+				"Spellcasting",
+				"Ayo casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 13}):",
+				"Amphibious",
+				"Ayo can breathe air and water.",
+				"Multiattack",
+				"Ayo makes three Harpoon or Longbow attacks.",
+				"Harpoon",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage.",
+				"Longbow",
+				"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage.",
+				"Reposition",
+				"Ayo issues orders to one ally she can see within 30 feet of herself. If the target can see or hear Ayo, it can spend its reaction to move up to its speed. This movement doesn't provoke opportunity attacks."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ayo Jabe (Tier 3)|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Ayo Jabe (Tier 3)",
+				"Spellcasting",
+				"Ayo casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 14}):",
+				"Amphibious",
+				"Ayo can breathe air and water.",
+				"Special Equipment",
+				"Ayo wields a ruidium harpoon (see appendix B). If Ayo rolls a 1 on an attack roll made with the harpoon, she must succeed on a {@dc 20} Charisma saving throw or gain 1 level of {@condition exhaustion}.",
+				"Multiattack",
+				"Ayo makes three Harpoon or Longbow attacks.",
+				"Ruidium Harpoon",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage plus 7 ({@damage 2d6}) psychic damage.",
+				"Longbow",
+				"{@atk rw} {@hit 8} to hit, range 150/600 ft., one target. {@h}18 ({@damage 3d8 + 5}) piercing damage.",
+				"Reposition",
+				"Ayo issues orders to one ally she can see within 30 feet of herself. If the target can see or hear Ayo, it can spend its reaction to move up to its speed. This movement doesn't provoke opportunity attacks."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Celeste|CRCOTN",
+			"s": [
+				"Celeste"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Corrupted Giant Shark|CRCOTN",
+			"hint": {
+				"Regeneration": "再生",
+				"Water Breathing": "水下呼吸",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Corrupted Giant Shark",
+				"natural armor",
+				"Psychic Maelstrom",
+				"Any creature that starts its turn within 15 feet of the shark must succeed on a {@dc 17} Wisdom saving throw or take 11 ({@damage 2d10}) psychic damage.",
+				"Regeneration",
+				"The shark regains 10 hit points at the start of its turn. If the shark takes radiant damage or suffers a critical hit, this trait doesn't function at the start of its next turn. The shark dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+				"Water Breathing",
+				"The shark can breathe only underwater.",
+				"Bite",
+				"{@atk mw} {@hit 10} to hit (with advantage if the target is a creature missing any hit points), reach 5 ft., one target. {@h}22 ({@damage 3d10 + 6}) piercing damage, and if the target is a creature, it must succeed on a {@dc 17} Charisma saving throw or gain 1 level of {@condition exhaustion}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dancing Flame|CRCOTN",
+			"hint": {
+				"Telepathic Bond": "心靈連結",
+				"Claw": "爪擊",
+				"Charm": "魅惑",
+				"Draining Kiss": "汲取之吻"
+			},
+			"s": [
+				"Dancing Flame",
+				"natural armor",
+				"Telepathic Bond",
+				"The flame ignores the range restriction on its telepathy when communicating with a creature it has {@condition charmed}. The two don't even need to be on the same plane of existence.",
+				"Flame",
+				"The flame sheds bright light in a 20-foot radius and dim light for an additional 20 feet. If it leaves the hall or is reduced to 0 hit points, it is destroyed and can't re-form for 24 hours.",
+				"Claw",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) fire damage.",
+				"Charm",
+				"One humanoid the flame can see within 30 feet of it must succeed on a {@dc 15} Wisdom saving throw or be magically {@condition charmed} for 1 day. The {@condition charmed} target obeys the flame's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this flame's Charm for the next 24 hours.",
+				"The flame can have only one target {@condition charmed} at a time. If it charms another, the effect on the previous target ends.",
+				"Draining Kiss",
+				"The flame kisses a creature {@condition charmed} by it or a willing creature. The target must make a {@dc 15} Constitution saving throw against this magic, taking 32 ({@damage 5d10 + 5}) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Death Embrace|CRCOTN",
+			"hint": {
+				"Reel": "收線",
+				"Water Breathing": "水下呼吸",
+				"Multiattack": "多重攻擊",
+				"Tentacle": "觸手"
+			},
+			"s": [
+				"Death Embrace",
+				"natural armor",
+				"Petrifying Tendrils",
+				"Any creature that starts its turn in the death embrace's space must make a {@dc 16} Constitution saving throw. On a failed saving throw, the creature is {@condition restrained}. A creature {@condition restrained} in this way must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failed saving throw or ending the effect on a successful one. The {@condition petrified} condition lasts until the effect is ended by a greater restoration spell or similar magic.",
+				"Reel",
+				"At the start of each of its turns, the death embrace can pull each creature it is grappling up to 20 feet toward it (no action required).",
+				"Water Breathing",
+				"The death embrace can breathe only underwater.",
+				"Multiattack",
+				"The death embrace makes two Tentacle attacks.",
+				"Tentacle",
+				"{@atk mw} {@hit 10} to hit, reach 60 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage plus 11 ({@damage 2d10}) psychic damage. If the target is Large or smaller, it is also {@condition grappled} (escape {@dc 16}). The death embrace has six tentacles, each of which can grapple one target.",
+				"Body Shield",
+				"When the death embrace is hit by an attack, one creature the death embrace is grappling (chosen by the death embrace) takes the damage instead."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dermot Wurder (Tier 1)|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Warhammer": "戰錘"
+			},
+			"s": [
+				"Dermot Wurder (Tier 1)",
+				"Spellcasting",
+				"Dermot casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 13}):",
+				"Multiattack",
+				"Dermot makes one Warhammer attack and one Searing Wrath attack.",
+				"Warhammer",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, or 8 ({@damage 1d10 + 3}) bludgeoning damage when used with two hands.",
+				"Searing Wrath",
+				"{@atk rs} {@hit 5} to hit, range 60 ft., one creature. {@h}9 ({@damage 2d8}) radiant damage, and the target is {@condition blinded} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dermot Wurder (Tier 2)|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Warhammer": "戰錘"
+			},
+			"s": [
+				"Dermot Wurder (Tier 2)",
+				"splint mail",
+				"Spellcasting",
+				"Dermot casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 15}):",
+				"Multiattack",
+				"Dermot makes one Warhammer attack and one Searing Wrath attack.",
+				"Warhammer",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage, or 9 ({@damage 1d10 + 4}) bludgeoning damage when used with two hands.",
+				"Searing Wrath",
+				"{@atk rs} {@hit 7} to hit, range 60 ft., one creature. {@h}18 ({@damage 4d8}) radiant damage, and the target is {@condition blinded} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dermot Wurder (Tier 3)|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Dermot Wurder (Tier 3)",
+				"(mariner's armor)",
+				"Spellcasting",
+				"Dermot casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 16}):",
+				"Special Equipment",
+				"Dermot wears {@item mariner's armor} and wields a ruidium warhammer (see appendix B). If Dermot rolls a 1 on an attack roll made with the warhammer, he must succeed on a {@dc 20} Charisma saving throw or gain 1 level of {@condition exhaustion}.",
+				"Multiattack",
+				"Dermot makes one Ruidium Warhammer attack and one Searing Wrath attack.",
+				"Ruidium Warhammer",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage, or 9 ({@damage 1d10 + 4}) bludgeoning damage when used with two hands, plus 7 ({@damage 2d6}) psychic damage.",
+				"Searing Wrath",
+				"{@atk rs} {@hit 8} to hit, range 60 ft., one creature. {@h}22 ({@damage 5d8}) radiant damage, and the target is {@condition blinded} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fiendish Orc|CRCOTN",
+			"s": [
+				"Fiendish Orc"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Foghome|CRCOTN",
+			"s": [
+				"Foghome"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Galeokaerda|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Fey Ancestry": "妖精血統",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Galeokaerda",
+				"Spellcasting",
+				"The extollant casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 15}):",
+				"Fey Ancestry",
+				"Galeokaerda has advantage on saving throws against being {@condition charmed}, and magic can't put her to sleep.",
+				"Multiattack",
+				"The extollant makes two Crimson Bolt attacks.",
+				"Crimson Bolt",
+				"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 60 ft., one creature. {@h}20 ({@damage 3d10 + 4}) psychic damage.",
+				"Reflect Agony",
+				"When the extollant is damaged by a creature within 60 feet of it, the creature must make a {@dc 15} Wisdom saving throw, taking 16 ({@damage 3d10}) psychic damage on a failed saving throw, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Galsariad Ardyth (Tier 1)|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Fey Ancestry": "妖精血統"
+			},
+			"s": [
+				"Galsariad Ardyth (Tier 1)",
+				"Spellcasting",
+				"Galsariad casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 13}):",
+				"Fey Ancestry",
+				"Galsariad has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep.",
+				"Drain Potential",
+				"{@atk ms,rs} {@hit 5} to hit, reach 5 ft. or range 30 ft., one creature. {@h}16 ({@damage 3d10}) necrotic damage, and Galsariad gains 5 temporary hit points.",
+				"Gravity Wave {@recharge 5}",
+				"Galsariad causes a rippling wave of magical gravity to fill a 10-foot-radius sphere centered on a point he can see within 120 feet of himself. Each creature in that area must make a {@dc 13} Strength saving throw. On a failed saving throw, the creature takes 17 ({@damage 5d6}) force damage and is pulled up to 10 feet toward the sphere's center. On a successful save, the creature takes half as much damage and isn't pulled.",
+				"Distort Gravity (1/Day)",
+				"Galsariad targets himself or one willing creature that he can see within 60 feet of himself, magically distorting gravity around the target. Any creature within 5 feet of the target takes 3 ({@damage 1d6}) force damage. In addition, the target can use a reaction to float upward, up to 20 feet, without provoking opportunity attacks. When this effect ends at the start of Galsariad's next turn, the target floats gently down up to 20 feet."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Galsariad Ardyth (Tier 2)|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Fey Ancestry": "妖精血統"
+			},
+			"s": [
+				"Galsariad Ardyth (Tier 2)",
+				"(hover)",
+				"Spellcasting",
+				"Galsariad casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):",
+				"Fey Ancestry",
+				"Galsariad has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep.",
+				"Drain Potential",
+				"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 60 ft., one creature. {@h}22 ({@damage 4d10}) necrotic damage, and Galsariad gains 5 temporary hit points.",
+				"Gravity Wave {@recharge 5}",
+				"Galsariad causes a rippling wave of magical gravity to fill a 20-foot-radius sphere centered on a point he can see within 100 feet of himself. Each creature in that area must make a {@dc 15} Strength saving throw. On a failed saving throw, the creature takes 35 ({@damage 10d6}) force damage and is pulled up to 20 feet toward the sphere's center, and is knocked {@condition prone}. On a successful save, the creature takes half as much damage and isn't pulled or knocked {@condition prone}.",
+				"Distort Gravity (1/Day)",
+				"Galsariad targets himself or one willing creature that he can see within 60 feet of himself, magically distorting gravity around the target. Any creature within 5 feet of the target takes 7 ({@damage 2d6}) force damage. In addition, the target can use a reaction to float upward, up to 20 feet, without provoking opportunity attacks. When this effect ends at the start of Galsariad's next turn, the target floats gently down up to 20 feet."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Galsariad Ardyth (Tier 3)|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Deflection": "偏轉",
+				"Fey Ancestry": "妖精血統",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Galsariad Ardyth (Tier 3)",
+				"deflection",
+				"(hover)",
+				"(ring of swimming)",
+				"Spellcasting",
+				"Galsariad casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 16}):",
+				"Deflection",
+				"Galsariad warps gravity around himself to magically deflect incoming attacks. While Galsariad is wearing no armor and not {@condition incapacitated}, his AC includes his Intelligence modifier.",
+				"Fey Ancestry",
+				"Galsariad has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep.",
+				"Special Equipment",
+				"Galsariad wears a {@item ring of swimming} and carries a ruidium dagger (see appendix B). If he rolls a 1 on an attack roll made with the dagger, he must succeed on a {@dc 20} Charisma saving throw or gain 1 level of {@condition exhaustion}.",
+				"Multiattack",
+				"Galsariad makes one Drain Potential attack and one Ruidium Dagger attack.",
+				"Drain Potential",
+				"{@atk ms,rs} {@hit 8} to hit, reach 5 ft. or range 120 ft., one creature. {@h}22 ({@damage 4d10}) necrotic damage, and Galsariad gains 10 temporary hit points.",
+				"Ruidium Dagger",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 7 ({@damage 2d6}) psychic damage.",
+				"Gravity Wave {@recharge 5}",
+				"Galsariad causes a rippling wave of magical gravity to fill a 30-foot-radius sphere centered on a point he can see within 100 feet of himself. Each creature in that area must make a {@dc 16} Strength saving throw. On a failed saving throw, the creature takes 42 ({@damage 12d6}) force damage and is {@condition restrained} for 1 minute. On a successful save, the creature takes half as much damage and isn't {@condition restrained}. A {@condition restrained} creature can repeat the save at the end of each of its turns, ending the effect on itself on a success.",
+				"Distort Gravity (1/Day)",
+				"Galsariad targets himself or one willing creature that he can see within 60 feet of himself, magically distorting gravity around the target. Any creature within 5 feet of the target takes 14 ({@damage 4d6}) force damage. In addition, the target can use a reaction to float upward, up to 20 feet, without provoking opportunity attacks. When this effect ends at the start of Galsariad's next turn, the target floats gently down up to 20 feet."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gryz Alakritos|CRCOTN",
+			"s": [
+				"Gryz Alakritos"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Insight Acuere|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Insight Acuere",
+				"Spellcasting",
+				"{@skill Insight} casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 15}):",
+				"Multiattack",
+				"{@skill Insight} makes two Arcane Shock or Dagger of the Poisoned Mind attacks.",
+				"Arcane Shock",
+				"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 60 ft., one target. {@h}26 ({@damage 4d10 + 4}) lightning damage. If the target is a creature, it can't take reactions until the start of its next turn.",
+				"Dagger of the Poisoned Mind",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage plus 10 ({@damage 3d6}) psychic damage. If the target is a creature, it must succeed on a {@dc 15} Wisdom saving throw or be {@condition frightened} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Irvan Wastewalker (Tier 1)|CRCOTN",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Irvan Wastewalker (Tier 1)",
+				"Fortitude (Recharges after a Short or Long Rest)",
+				"If damage reduces Irvan to 0 hit points, he can make a Constitution saving throw with a DC equal to 5 + the damage taken. On a successful save, Irvan drops to 1 hit point instead.",
+				"Multiattack",
+				"Irvan makes two Dagger attacks.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Irvan Wastewalker (Tier 2)|CRCOTN",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Irvan Wastewalker (Tier 2)",
+				"Fortitude (Recharges after a Short or Long Rest)",
+				"If damage reduces Irvan to 0 hit points, he can make a Constitution saving throw with a DC equal to 5 + the damage taken. On a successful save, Irvan drops to 1 hit point instead.",
+				"Multiattack",
+				"Irvan makes two Dagger attacks.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage plus 14 ({@damage 4d6}) poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Irvan Wastewalker (Tier 3)|CRCOTN",
+			"hint": {
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Irvan Wastewalker (Tier 3)",
+				"(see special equipment)",
+				"Fortitude (Recharges after a Short or Long Rest)",
+				"If damage reduces Irvan to 0 hit points, he can make a Constitution saving throw with a DC equal to 5 + the damage taken. On a successful save, Irvan drops to 1 hit point instead.",
+				"Special Equipment",
+				"Irvan wears {@item gloves of swimming and climbing} and wields a ruidium shortsword (see appendix B). If Irvan rolls a 1 on an attack roll made with the shortsword, he must succeed on a {@dc 20} Charisma saving throw or gain 1 level of {@condition exhaustion}.",
+				"In addition, Irvan has a magical prosthetic arm. While the arm is attached to him, it functions the same as the body part it is replacing. Irvan can attach or detach the arm as an action, and it can't be removed by anyone else.",
+				"Multiattack",
+				"Irvan makes one Dagger attack and two Ruidium Shortsword attacks.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage plus 17 ({@damage 5d6}) poison damage.",
+				"Ruidium Shortsword",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage plus 7 ({@damage 2d6}) psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "James Cryon|CRCOTN",
+			"s": [
+				"James Cryon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jamil A'alithiya|CRCOTN",
+			"s": [
+				"Jamil A'alithiya"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Koris|CRCOTN",
+			"s": [
+				"Koris"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Laurin Ophidas|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Dark Devotion": "黑暗奉獻",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Laurin Ophidas",
+				"Spellcasting",
+				"The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). The fanatic has the following cleric spells prepared:",
+				"Dark Devotion",
+				"The fanatic has advantage on saving throws against being {@condition charmed} or {@condition frightened}.",
+				"Special Equipment",
+				"Laurin wields a {@item staff of the adder} and is attuned to it as though he were a cleric.",
+				"Multiattack",
+				"The fanatic makes two melee attacks.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Light Devourer|CRCOTN",
+			"hint": {
+				"Water Breathing": "水下呼吸",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Light Devourer",
+				"Light Absorption",
+				"If the light devourer spends any part of its turn in an area of bright light or is subjected to radiant damage, it radiates dim light in a 10-foot radius for 1 hour.",
+				"Water Breathing",
+				"The light devourer can breathe only underwater.",
+				"Multiattack",
+				"The light devourer makes two Bite attacks.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}21 ({@damage 5d6 + 4}) piercing damage, or radiant damage if the light devourer is radiating light (see Light Absorption).",
+				"Radiant Discharge",
+				"If the light devourer is radiating light (see Light Absorption), it releases the light stored in its body in a 20-foot-radius sphere centered on itself, then ceases to radiate light. Each creature in the sphere must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) radiant damage on a failed saving throw, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Maggie Keeneyes (Tier 1)|CRCOTN",
+			"s": [
+				"Maggie Keeneyes (Tier 1)",
+				"Tactical Readiness",
+				"Maggie and allies within 30 feet of her have advantage on initiative rolls, as long as Maggie isn't {@condition incapacitated}.",
+				"Giant Maul",
+				"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, and if the target is a creature, Maggie can force it to make a {@dc 14} Strength saving throw; on a failed save, the target is pushed 5 feet away from Maggie and knocked {@condition prone}.",
+				"Hammer Toss",
+				"{@atk rw} {@hit 6} to hit, range 20/60 ft., one target. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage, and if the target is a creature, Maggie can force it to make a {@dc 14} Strength saving throw; on a failed save, the target is pushed 5 feet away from Maggie and knocked {@condition prone}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Maggie Keeneyes (Tier 2)|CRCOTN",
+			"hint": {
+				"Push": "推擊",
+				"Multiattack": "多重攻擊",
+				"Rally (1/Day)": "號召（每日 1 次）"
+			},
+			"s": [
+				"Maggie Keeneyes (Tier 2)",
+				"Push",
+				"Once during each of her turns, after hitting a creature with an attack, Maggie can force the target to make a {@dc 15} Strength saving throw; on a failed save, the target is pushed up to 10 feet horizontally away from Maggie and knocked {@condition prone}.",
+				"Tactical Readiness",
+				"Maggie and allies within 30 feet of her have advantage on initiative rolls, as long as Maggie isn't {@condition incapacitated}.",
+				"Multiattack",
+				"Maggie makes two Giant Maul or Hammer Toss attacks.",
+				"Giant Maul",
+				"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage.",
+				"Hammer Toss",
+				"{@atk rw} {@hit 7} to hit, range 20/60 ft., one target. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage.",
+				"Rally (1/Day)",
+				"Maggie targets one creature she can see within 30 feet of herself and bolsters it with words of encouragement. The target gains 15 temporary hit points if it can see or hear Maggie."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Maggie Keeneyes (Tier 3)|CRCOTN",
+			"hint": {
+				"Push": "推擊",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊",
+				"Rally (1/Day)": "號召（每日 1 次）"
+			},
+			"s": [
+				"Maggie Keeneyes (Tier 3)",
+				"(ruidium armor)",
+				"Push",
+				"Once during each of her turns, after hitting a creature with an attack, Maggie can force the target to make a {@dc 16} Strength saving throw; on a failed save, the target is pushed up to 15 feet horizontally away from Maggie and knocked {@condition prone}.",
+				"Special Equipment",
+				"Maggie wears a suit of ruidium armor (plate; see appendix B). If Maggie rolls a 1 on a saving throw while wearing the armor, she must succeed on a {@dc 20} Charisma saving throw or gain 1 level of {@condition exhaustion}.",
+				"Tactical Readiness",
+				"Maggie and allies within 30 feet of her have advantage on initiative rolls, as long as Maggie isn't {@condition incapacitated}.",
+				"Multiattack",
+				"Maggie makes two Heavy Greataxe or Hammer Toss attacks.",
+				"Heavy Greataxe",
+				"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d12 + 5}) slashing damage.",
+				"Hammer Toss",
+				"{@atk rw} {@hit 8} to hit, range 20/60 ft., one target. {@h}15 ({@damage 4d4 + 5}) bludgeoning damage.",
+				"Rally (1/Day)",
+				"Maggie targets one creature she can see within 60 feet of herself and bolsters it with words of encouragement. The target gains 30 temporary hit points if it can see or hear Maggie."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Marisa|CRCOTN",
+			"s": [
+				"Marisa"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Meri|CRCOTN",
+			"s": [
+				"Meri"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Monastic High Curator|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Unarmored Defense": "無甲防禦",
+				"Multiattack": "多重攻擊",
+				"Force Strike": "力場打擊"
+			},
+			"s": [
+				"Monastic High Curator",
+				"Unarmored Defense",
+				"Spellcasting",
+				"The high curator casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 18}):",
+				"Unarmored Defense",
+				"While the high curator is wearing no armor and wielding no shield, its AC includes its Wisdom modifier.",
+				"Multiattack",
+				"The high curator makes three Force Strike attacks and uses Brain Burn (if available).",
+				"Force Strike",
+				"{@atk ms,rs} {@hit 10} to hit, reach 5 ft. or range 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) force damage.",
+				"Brain Burn {@recharge 4}",
+				"The high curator targets up to two creatures it can see within 30 feet of itself. Each target must make a {@dc 18} Constitution saving throw. On a failed saving throw, the target takes 28 ({@damage 8d6}) psychic damage and can't take reactions until the start of its next turn. On a successful save, the target takes half as much damage and suffers no other effect."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Monastic Infiltrator|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Guarded Mind": "守護心靈",
+				"Unarmored Defense": "無甲防禦",
+				"Multiattack": "多重攻擊",
+				"Unarmed Strike": "徒手打擊",
+				"Cunning Action": "巧妙動作"
+			},
+			"s": [
+				"Monastic Infiltrator",
+				"Unarmored Defense",
+				"Spellcasting",
+				"The infiltrator casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 14}):",
+				"Guarded Mind",
+				"Spells and other effects can't read the infiltrator's thoughts or determine if the infiltrator is lying. Creatures can communicate telepathically with the infiltrator only if it allows such contact.",
+				"Unarmored Defense",
+				"While the infiltrator is wearing no armor and wielding no shield, its AC includes its Wisdom modifier.",
+				"Multiattack",
+				"The infiltrator makes three Unarmed Strike attacks.",
+				"Unarmed Strike",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) force damage.",
+				"Cunning Action",
+				"The infiltrator takes the {@action Dash} or {@action Disengage} action.",
+				"Retaliating Strike",
+				"When a creature within 5 feet of the infiltrator hits or misses the infiltrator with a melee attack, the infiltrator makes one Unarmed Strike attack against the attacker."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Monastic Operative|CRCOTN",
+			"hint": {
+				"Unarmored Defense": "無甲防禦",
+				"Multiattack": "多重攻擊",
+				"Unarmed Strike": "徒手打擊"
+			},
+			"s": [
+				"Monastic Operative",
+				"Unarmored Defense",
+				"Unarmored Defense",
+				"While the operative is wearing no armor and wielding no shield, its AC includes its Wisdom modifier.",
+				"Multiattack",
+				"The operative makes three Unarmed Strike attacks, three Cobalt Dart attacks, or a combination thereof.",
+				"Unarmed Strike",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) bludgeoning damage.",
+				"Cobalt Dart",
+				"{@atk rw} {@hit 7} to hit, range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage plus 3 ({@damage 1d6}) force damage.",
+				"Retaliating Strike",
+				"When a creature within 5 feet of the operative hits or misses the operative with a melee attack, the operative makes one Unarmed Strike attack against the attacker."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Moonshark|CRCOTN",
+			"hint": {
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Moonshark",
+				"Bite",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 6}) piercing damage. If the shark misses, it can use a bonus action to swim up to 25 feet. This movement doesn't provoke opportunity attacks."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Occult Extollant|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Occult Extollant",
+				"Spellcasting",
+				"The extollant casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 15}):",
+				"Multiattack",
+				"The extollant makes two Crimson Bolt attacks.",
+				"Crimson Bolt",
+				"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 60 ft., one creature. {@h}20 ({@damage 3d10 + 4}) psychic damage.",
+				"Reflect Agony",
+				"When the extollant is damaged by a creature within 60 feet of it, the creature must make a {@dc 15} Wisdom saving throw, taking 16 ({@damage 3d10}) psychic damage on a failed saving throw, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Occult Initiate|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Occult Initiate",
+				"Spellcasting",
+				"The initiate casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 13}):",
+				"Shortsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 7 ({@damage 2d6}) psychic damage.",
+				"Arcane Blast {@recharge 5}",
+				"The initiate creates an explosion of magical force in a 20-foot-radius sphere centered on a point it can see within 120 feet of itself. Each creature in that area must make a {@dc 13} Dexterity saving throw. On a failed saving throw, the creature takes 10 ({@damage 3d6}) force damage and is pushed 10 feet away from the center of the area. On a successful save, it takes half as much damage and isn't pushed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Occult Silvertongue|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Alien Mind": "異界心智",
+				"Magic Resistance": "魔法抗性"
+			},
+			"s": [
+				"Occult Silvertongue",
+				"Spellcasting",
+				"The silvertongue casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 16}):",
+				"Alien Mind",
+				"If a creature tries to read the silvertongue's thoughts or deals psychic damage to the silvertongue, that creature must succeed on a {@dc 16} Intelligence saving throw or be {@condition stunned} until the start of its next turn.",
+				"Magic Resistance",
+				"The silvertongue has advantage on saving throws against spells and other magical effects.",
+				"Crimson Bolt",
+				"{@atk ms,rs} {@hit 8} to hit, reach 5 ft. or range 60 ft., one creature. {@h}27 ({@damage 4d10 + 5}) psychic damage.",
+				"Elemental Servitor (1/Day)",
+				"The silvertongue magically summons an earth elemental, which appears in an unoccupied space the silvertongue can see within 60 feet of itself. The earth elemental takes its turn immediately after the silvertongue on the same initiative count and obeys the silvertongue's commands. The earth elemental disappears after 1 minute or when it or the silvertongue dies."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Olara|CRCOTN",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Fey Ancestry": "妖精血統",
+				"Keen Hearing and Sight": "敏銳聽覺與視覺",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Olara",
+				"Amphibious",
+				"Olara can breathe air and water.",
+				"Fey Ancestry",
+				"Olara has advantage on saving throws to end the {@condition charmed} condition on herself, and magic can't put her to sleep.",
+				"Keen Hearing and Sight",
+				"The scout has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight.",
+				"Multiattack",
+				"Olara makes two melee attacks or two ranged attacks.",
+				"Shortsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage.",
+				"Longbow",
+				"{@atk rw} {@hit 4} to hit, ranged 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Perigee|CRCOTN",
+			"s": [
+				"Perigee"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Prolix Yusaf|CRCOTN",
+			"s": [
+				"Prolix Yusaf"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ruidium Elephant|CRCOTN",
+			"hint": {
+				"Trampling Charge": "踐踏衝鋒",
+				"Gore": "頂撞",
+				"Stomp": "踐踏"
+			},
+			"s": [
+				"Ruidium Elephant",
+				"natural armor",
+				"Trampling Charge",
+				"If the elephant moves at least 20 feet straight toward a creature and then hits it with a Gore attack on the same turn, that target must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the elephant can make one Stomp attack against it as a bonus action.",
+				"Gore",
+				"{@atk mw} {@hit 10} to hit (with advantage if the target is a creature missing any hit points), reach 10 ft., one target. {@h}25 ({@damage 4d8 + 7}) piercing damage plus 7 ({@damage 2d6}) psychic damage.",
+				"Stomp",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one {@condition prone} creature. {@h}29 ({@damage 4d10 + 7}) bludgeoning damage plus 7 ({@damage 2d6}) psychic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Scholarly Agent|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法"
+			},
+			"s": [
+				"Scholarly Agent",
+				"Spellcasting",
+				"The agent casts one of the following spells, using Intelligence as the spellcasting ability:",
+				"Arcane Shock",
+				"{@atk ms,rs} {@hit 5} to hit, reach 5 ft. or range 30 ft., one target. {@h}14 ({@damage 2d10 + 3}) lightning damage. If the target is a creature, it can't take reactions until the start of its next turn.",
+				"Glyph of Shielding",
+				"The agent adds 2 to its AC against one attack that would hit it. To do so, the agent must be able to see the attacker and have a free hand."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Scholarly Excavator|CRCOTN",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Scholarly Excavator",
+				"Siege Expert",
+				"The excavator deals double damage to objects and structures.",
+				"Multiattack",
+				"The excavator makes three Thunderous Warhammer attacks.",
+				"Thunderous Warhammer",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) thunder damage.",
+				"Telekinetic Toss {@recharge 5}",
+				"The excavator targets one Medium or smaller creature or an object weighing 300 pounds or less that isn't being worn or carried. The target, which must be within 30 feet of the excavator and visible to it, is magically pushed up to 20 feet horizontally in a direction of the excavator's choice. If the target is a creature, it can make a {@dc 13} Strength saving throw to resist the effect and is not pushed on a successful save."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Scholarly Mastermind|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Scholarly Mastermind",
+				"Spellcasting",
+				"The mastermind casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 15}):",
+				"Multiattack",
+				"The mastermind makes two Arcane Shock or Dagger of the Poisoned Mind attacks.",
+				"Arcane Shock",
+				"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 60 ft., one target. {@h}26 ({@damage 4d10 + 4}) lightning damage. If the target is a creature, it can't take reactions until the start of its next turn.",
+				"Dagger of the Poisoned Mind",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage plus 10 ({@damage 3d6}) psychic damage. If the target is a creature, it must succeed on a {@dc 15} Wisdom saving throw or be {@condition frightened} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Scribble|CRCOTN",
+			"s": [
+				"Scribble"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Scuttling Serpentmaw|CRCOTN",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Scuttling Serpentmaw",
+				"natural armor",
+				"Amphibious",
+				"The serpentmaw can breathe air and water.",
+				"Pack Tactics",
+				"The serpentmaw has advantage on an attack roll against a creature if at least one of the serpentmaw's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The serpentmaw makes one Bite attack and two Claw attacks.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 15 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage, or 17 ({@damage 4d6 + 3}) piercing damage if the serpentmaw had advantage on the attack roll.",
+				"Claw",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shira|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Club": "棍棒"
+			},
+			"s": [
+				"Shira",
+				"Spellcasting",
+				"Shira casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 10}, {@hit 2} to hit with spell attacks):",
+				"Club",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skeletal Bloodfin|CRCOTN",
+			"s": [
+				"Skeletal Bloodfin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Slithering Bloodfin|CRCOTN",
+			"hint": {
+				"Death Burst": "死亡爆發",
+				"Water Breathing": "水下呼吸",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tail": "尾擊",
+				"Swallow": "吞嚥"
+			},
+			"s": [
+				"Slithering Bloodfin",
+				"natural armor",
+				"Death Burst",
+				"When the bloodfin dies, it explodes in a cloud of toxic blood. Each creature in a 10-foot-radius sphere centered on the exploding bloodfin, including any creature swallowed by the bloodfin, must succeed on a {@dc 15} Constitution saving throw or take 10 ({@damage 3d6}) poison damage. A creature inside the bloodfin when it explodes falls {@condition prone} in the space formerly occupied by the bloodfin and is no longer {@condition blinded} or {@condition restrained} by it.",
+				"Water Breathing",
+				"The bloodfin can breathe only underwater.",
+				"Multiattack",
+				"The bloodfin makes one Bite attack and one Tail attack.",
+				"Bite",
+				"{@atk mw} {@hit 9} to hit (with advantage if the target is a creature missing any hit points), reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage, and if the target is a creature, it is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition restrained}, and the bloodfin can't bite another target.",
+				"Tail",
+				"{@atk mw} {@hit 9} to hit (with advantage if the target is a creature missing any hit points), reach 10 ft., one target. {@h}19 ({@damage 4d6 + 5}) bludgeoning damage.",
+				"Swallow",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one Medium or smaller creature the bloodfin is grappling. {@h}The bloodfin swallows the target. The swallowed creature is no longer {@condition grappled} but is {@condition blinded} and {@condition restrained}. It has {@quickref Cover||3||total cover} against attacks and other effects outside the bloodfin, it takes 14 ({@damage 4d6}) necrotic damage at the start of each of its turns, and the bloodfin regains hit points equal to the necrotic damage dealt. A bloodfin can have only one creature swallowed at a time.",
+				"If the bloodfin takes 30 damage or more on a single turn from the swallowed creature, the bloodfin must succeed on a {@dc 15} Constitution saving throw at the end of that turn or regurgitate the creature, which falls {@condition prone} in a space within 5 feet of the bloodfin and is no longer {@condition blinded} or {@condition restrained} by it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sorrowfish|CRCOTN",
+			"hint": {
+				"Blood Frenzy": "血腥狂亂",
+				"Water Breathing": "水下呼吸",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Sorrowfish",
+				"Blood Frenzy",
+				"The sorrowfish has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+				"Water Breathing",
+				"The Sorrowfish can breathe only underwater.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Sorrowfish|CRCOTN",
+			"hint": {
+				"Swarm": "蟲群",
+				"Water Breathing": "水下呼吸",
+				"Swarm of Bites": "群咬"
+			},
+			"s": [
+				"Swarm of Sorrowfish",
+				"Swarm",
+				"The swarm can occupy another creature's space and vice versa, and the swarm can move through an opening as narrow as 1 foot wide. The swarm can't regain hit points or gain temporary hit points.",
+				"Virulent Sorrow",
+				"Each time the swarm takes damage, any creature within 5 feet of it must make a {@dc 13} Wisdom saving throw. On a failed saving throw, the creature suffers the following effects until the end of its next turn: it has disadvantage on its attack rolls, it can't take reactions, and its speed is halved.",
+				"Water Breathing",
+				"The swarm can breathe only underwater.",
+				"Swarm of Bites",
+				"{@atk mw} {@hit 8} to hit, reach 0 ft., one target in the swarm's space. {@h}21 ({@damage 6d6}) piercing damage, or 10 ({@damage 3d6}) piercing damage if the swarm has half its hit points or fewer.",
+				"Desolate Drain {@recharge 5}",
+				"Each creature in the swarm's space must make a {@dc 13} Wisdom saving throw. On a failed saving throw, a creature takes 24 ({@damage 7d6}) psychic damage and is {@condition stunned} until the end of its next turn. The effect ends on a creature if the swarm moves out of the creature's space or if another creature within 5 feet of the swarm uses an action to make a {@dc 14} Strength check, pulling the affected creature out of the swarm on a successful check. On a successful saving throw, a creature takes half as much damage and suffers no other effects."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Verin Thelyss|CRCOTN",
+			"hint": {
+				"Spellcasting": "施法",
+				"Fey Ancestry": "妖精血統",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Glaive": "長柄刀",
+				"Hand Crossbow": "手弩",
+				"Manifest Echo": "顯現回聲",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Verin Thelyss",
+				"Spellcasting",
+				"Verin casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 14}):",
+				"Fey Ancestry",
+				"Verin has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep.",
+				"Sunlight Sensitivity",
+				"While in sunlight, Verin has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Multiattack",
+				"Verin makes three Glaive attacks.",
+				"Glaive",
+				"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage.",
+				"Hand Crossbow",
+				"{@atk rw} {@hit 7} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 22 ({@damage 4d10}) poison damage.",
+				"Manifest Echo",
+				"Verin magically creates an echo—a translucent, gray object that looks like him. The echo appears in an unoccupied space Verin can see within 15 feet of himself. While the echo exists, Verin chooses whether each of his attacks originates from his space or the echo's space. On Verin's turn, the echo can move in accordance with Verin's wishes. The echo has AC 17 and 1 hit point. It otherwise uses Verin's statistics. The echo lasts for 1 minute or until it is destroyed, until Verin ends his turn more than 30 feet away from it, until Verin manifests another echo, or until Verin is {@condition incapacitated}.",
+				"Reposition",
+				"Verin magically swaps places with his echo.",
+				"Parry",
+				"Verin adds 3 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Xot|CRCOTN",
+			"s": [
+				"Xot"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Horizonback Tortoise|CRCOTN",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Young Horizonback Tortoise",
+				"natural armor",
+				"Amphibious",
+				"The young horizonback tortoise can breathe air and water.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}18 ({@damage 4d6 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+			]
+		}
+	]
+}
