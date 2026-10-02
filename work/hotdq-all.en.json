@@ -1,0 +1,456 @@
+{
+	"batch": "hotdq-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Ambush Drake|HOTDQ",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Surprise Attack": "突襲",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Ambush Drake",
+				"natural armor",
+				"Pack Tactics",
+				"The drake has advantage on an attack roll against a creature if at least one of the drake's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Surprise Attack",
+				"If the drake surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 ({@damage 2d6}) damage from the attack.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Azbara Jos|HOTDQ",
+			"hint": {
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Potent Cantrips": "強效戲法",
+				"Sculpt Spells": "塑形法術",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Azbara Jos",
+				"with {@spell mage armor}",
+				"Spellcasting",
+				"Azbara is a 6th-level spellcaster that uses Intelligence as his spellcasting ability (spell save {@dc 13}, {@hit 5} to hit with spell attacks). Azbara has the following spells prepared from the wizard spell list:",
+				"Special Equipment",
+				"Azbara has two {@item spell scroll (1st level)||scrolls} of {@spell mage armor}.",
+				"Potent Cantrips",
+				"When Azbara casts an evocation Cantrips and misses, or the target succeeds on its saving throw, the target still takes half the cantrip's damage but suffers no other effect.",
+				"Sculpt Spells",
+				"When Azbara casts an evocation spell that affects other creatures that he can see, he can choose a number of them equal to 1+the spell's level to succeed on their saving throws against the spell. Those creatures take no damage if they would normally take half damage from the spell.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or ranged 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blagothkus|HOTDQ",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Spellcasting": "施法",
+				"Keen Smell": "敏銳嗅覺",
+				"Multiattack": "多重攻擊",
+				"Morningstar": "釘頭錘"
+			},
+			"s": [
+				"Blagothkus",
+				"Innate Spellcasting",
+				"Blagothkus can innately cast the following spells (spell save {@dc 15}), requiring no material components:",
+				"Spellcasting",
+				"Blagothkus is a 5th-level spellcaster that uses Intelligence as his spellcasting ability (spell save {@dc 15}, {@hit 7} to hit with spell attacks). Blagothkus has the following spells prepared from the wizard spell list:",
+				"Keen Smell",
+				"Blagothkus has advantage on Wisdom ({@skill Perception}) checks that rely on smell.",
+				"Multiattack",
+				"Blagothkus attacks twice with his morningstar.",
+				"Morningstar",
+				"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d8 + 8}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Captain Othelstan|HOTDQ",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Flail": "連枷",
+				"Spear": "矛"
+			},
+			"s": [
+				"Captain Othelstan",
+				"Action Surge (Recharges on a Short or Long Rest)",
+				"On his turn, Othelstan can take one additional action.",
+				"Tiamat's Blessing of Retribution",
+				"When Othelstan takes damage that reduces him to 0 hit points, he immediately regains 20 hit points. If he has 20 hit points or fewer at the end of his next turn, he dies.",
+				"Multiattack",
+				"Othelstan attacks twice with his flail or spear, or makes two ranged attacks with his spears.",
+				"Flail",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage.",
+				"Spear",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or ranged 20/60 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dragonclaw|HOTDQ",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Scimitar": "彎刀"
+			},
+			"s": [
+				"Dragonclaw",
+				"Dragon Fanatic",
+				"The dragonclaw has advantage on saving throws against being {@condition charmed} or {@condition frightened}. While the dragonclaw can see a dragon or higher-ranking Cult of the Dragon cultist friendly to it, the dragonclaw ignores the effects of being {@condition charmed} or {@condition frightened}.",
+				"Fanatic Advantage",
+				"Once per turn, if the dragonclaw makes a weapon attack with advantage on the attack roll and hits, it deals an extra 7 ({@damage 2d6}) damage.",
+				"Pack Tactics",
+				"The dragonclaw has advantage on an attack roll against a creature if at least one of the dragonclaw's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The dragonclaw attacks twice with its scimitar.",
+				"Scimitar",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dragonwing|HOTDQ",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Scimitar": "彎刀"
+			},
+			"s": [
+				"Dragonwing",
+				"Dragon Fanatic",
+				"The dragonwing has advantage on saving throws against being {@condition charmed} or {@condition frightened}. While the dragonwing can see a dragon or higher-ranking Cult of the Dragon cultist friendly to it, the dragonwing ignores the effects of being {@condition charmed} or {@condition frightened}.",
+				"Fanatic Advantage",
+				"Once per turn, if the dragonwing makes a weapon attack with advantage on the attack roll and hits, the target takes an extra 7 ({@damage 2d6}) damage.",
+				"Limited Flight",
+				"The dragonwing can use a bonus action to gain a flying speed of 30 feet until the end of its turn.",
+				"Pack Tactics",
+				"The dragonwing has advantage on an attack roll against a creature if at least one of the dragonwing's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The dragonwing attacks twice with its scimitar.",
+				"Scimitar",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage plus 3 ({@damage 1d6}) damage of the type to which the cultist has resistance."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dralmorrer Borngray|HOTDQ",
+			"hint": {
+				"Spellcasting": "施法",
+				"Fey Ancestry": "妖精血統",
+				"War Magic": "戰爭魔法",
+				"Weapon Bond": "武器聯結",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Dralmorrer Borngray",
+				"Spellcasting",
+				"Dralmorrer is a 7th-level spellcaster that uses Intelligence as his spellcasting ability (spell save {@dc 13}, {@hit 5} to hit with spell attacks). Dralmorrer has the following spells prepared from the wizard spell list:",
+				"Fey Ancestry",
+				"Dralmorrer has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep.",
+				"War Magic",
+				"When Dralmorrer uses his action to cast a cantrip, he can also take a bonus action to make one weapon attack.",
+				"Weapon Bond",
+				"Provided his longsword is on the same plane Dralmorrer can take a bonus action to teleport it to his hand.",
+				"Multiattack",
+				"Dralmorrer attacks twice, either with his longsword or dagger.",
+				"Longsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or ranged 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Four-Armed Troll|HOTDQ",
+			"s": [
+				"Four-Armed Troll"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Frulam Mondath|HOTDQ",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Halberd": "斧槍"
+			},
+			"s": [
+				"Frulam Mondath",
+				"Spellcasting",
+				"Frulam is a 5th-level spellcaster that uses Wisdom as her spellcasting ability (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Frulam has the following spells prepared from the cleric spell list:",
+				"Multiattack",
+				"Frulam attacks twice with her halberd.",
+				"Halberd",
+				"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d10 + 2}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Golden Stag|HOTDQ",
+			"s": [
+				"Golden Stag"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Guard Drake|HOTDQ",
+			"hint": {
+				"Guard Drake": "守衛龍獸",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Guard Drake",
+				"natural armor",
+				"Multiattack",
+				"The drake attacks twice, once with its bite and once with its tail.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage.",
+				"Tail",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jamna Gleamsilver|HOTDQ",
+			"hint": {
+				"Spellcasting": "施法",
+				"Cunning Action": "巧妙動作",
+				"Gnome Cunning": "地侏狡黠",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Jamna Gleamsilver",
+				"Spellcasting",
+				"Jamna is a 4th-level spellcaster that uses Intelligence as her spellcasting ability (spell save {@dc 12}, {@hit 4} to hit with spell attacks). Jamna has the following spells prepared from the wizard spell list.",
+				"Cunning Action",
+				"Jamna can take a bonus action to take the {@action Dash}, {@action Disengage}, or {@action Hide} action.",
+				"Gnome Cunning",
+				"Jamna has advantage on Intelligence, Wisdom and Charisma saving throws against magic.",
+				"Multiattack",
+				"Jamna attacks twice with her shortswords.",
+				"Shortsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 9 ({@damage 1d6 + 3}) plus ({@damage 1d6}) piercing damage if the target is Medium or larger."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Langdedrosa Cyanwrath|HOTDQ",
+			"hint": {
+				"Improved Critical": "強化重擊",
+				"Multiattack": "多重攻擊",
+				"Greatsword": "巨劍",
+				"Spear": "矛",
+				"Lightning Breath {@recharge 5}": "閃電吐息 {@recharge 5}"
+			},
+			"s": [
+				"Langdedrosa Cyanwrath",
+				"Action Surge (Recharges on a Short or Long Rest)",
+				"On his turn, Langdedrosa can take one additional action.",
+				"Improved Critical",
+				"Langdedrosa's weapon attacks score a critical hit on a roll of 19 or 20.",
+				"Multiattack",
+				"Langdedrosa attacks twice, either with his greatsword or spear.",
+				"Greatsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage.",
+				"Spear",
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or ranged 20/60 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage.",
+				"Lightning Breath {@recharge 5}",
+				"Langdedrosa breathes lightning in a 30-foot line that is 5 feet wide. Each creature in the line must make a {@dc 13} Dexterity saving throw, taking 22 ({@damage 4d10}) lightning damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Leosin Erlanthar|HOTDQ",
+			"s": [
+				"Leosin Erlanthar"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Linan Swift|HOTDQ",
+			"hint": {
+				"Spear": "矛"
+			},
+			"s": [
+				"Linan Swift",
+				"Spear",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ontharr Frume|HOTDQ",
+			"s": [
+				"Ontharr Frume"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Pharblex Spattergoo|HOTDQ",
+			"hint": {
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Standing Leap": "立定跳躍",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Spear": "矛"
+			},
+			"s": [
+				"Pharblex Spattergoo",
+				"Spellcasting",
+				"Pharblex is a 6th-level spellcaster that uses Wisdom as his spellcasting ability (spell save {@dc 13}, {@hit 5} to hit with spell attacks). Pharblex has the following spells prepared from the druid spell list:",
+				"Amphibious",
+				"Pharblex can breathe air and water.",
+				"Poison Strike (3/Day)",
+				"Once per turn, when Pharblex hits with a melee attack, he can expend a use of this trait to deal an extra 9 ({@damage 2d8}) poison damage.",
+				"Standing Leap",
+				"As part of his movement and without a running start, Pharblex can long jump up to 20 feet and high jump up to 10 feet.",
+				"Swamp Camouflage",
+				"Pharblex has advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain.",
+				"Multiattack",
+				"Pharblex attacks twice. Once with his bite and once with his spear.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage.",
+				"Spear",
+				"{@atk mw,rw} {@hit 5} to hit. reach 5 ft. or ranged 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Raggnar Redtooth|HOTDQ",
+			"s": [
+				"Raggnar Redtooth"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rath Modar|HOTDQ",
+			"hint": {
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Quarterstaff": "長棍"
+			},
+			"s": [
+				"Rath Modar",
+				"with {@spell mage armor}",
+				"Spellcasting",
+				"Rath is an 11th-level spellcaster who uses Intelligence as his spellcasting ability (spell save {@dc 15}, {@hit 7} to hit with spell attacks). Rath has the following spells prepared from the wizard spell list:",
+				"Special Equipment",
+				"Rath has a {@item staff of fire}, and scrolls of {@spell dimension door}, {@spell feather fall}, and {@spell fireball}.",
+				"Quarterstaff",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage.",
+				"Illusory Self (Recharges on a Short or Long Rest)",
+				"When a creature Rath can see makes an attack roll against him, he can interpose an illusory duplicate between the attacker and him. The attack automatically misses Rath, then the illusion dissipates."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rezmir|HOTDQ",
+			"hint": {
+				"Special Equipment": "特殊裝備",
+				"Amphibious": "兩棲",
+				"Draconic Majesty": "龍之威嚴",
+				"Immolation": "燔焚術",
+				"Legendary Resistance (1/Day)": "傳奇抗性（每日 1 次）",
+				"Acid Breath {@recharge 5}": "強酸吐息 {@recharge 5}",
+				"Melee Attack": "近戰攻擊",
+				"Hide": "躲藏"
+			},
+			"s": [
+				"Rezmir",
+				"with the Black Dragon Mask",
+				"Special Equipment",
+				"Rezmir has the {@item Black Dragon Mask|hotdq}, {@item Hazirawn|hotdq}, and an {@item insignia of claws|hotdq}.",
+				"Amphibious",
+				"Rezmir can breathe air and water.",
+				"Dark Advantage",
+				"Once per turn, Rezmir can deal an extra 10 ({@damage 3d6}) damage when she hits with a weapon attack, provided Rezmir has advantage on the attack roll.",
+				"Draconic Majesty",
+				"While wearing no armor and wearing the Black Dragon Mask, Rezmir adds her Charisma bonus to her AC (included).",
+				"Immolation",
+				"When Rezmir is reduced to 0 hit points, her body disintegrates into a pile of ash.",
+				"Legendary Resistance (1/Day)",
+				"If Rezmir fails a saving throw while wearing the Black Dragon Mask, she can choose to succeed instead.",
+				"Greatsword (Hazirawn)",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage plus 7 ({@damage 2d6}) necrotic damage. If the target is a creature, it can't regain hit points for 1 minute. The target can make a {@dc 15} Constitution saving throw at the end of each of its turns, ending this effect early on a success.",
+				"Caustic Bolt",
+				"{@atk rs} {@hit 8} to hit, range 90 ft., one target. {@h}18 ({@damage 4d8}) acid damage.",
+				"Acid Breath {@recharge 5}",
+				"Rezmir breathes acid in a 30-foot line that is 5 feet wide. Each creature in the line must make a {@dc 14} Dexterity saving throw, taking 22 ({@damage 5d8}) acid damage on a failed save, or half as much damage on a successful one.",
+				"If she is wearing the Black Dragon Mask, Rezmir can take up to two legendary actions between each of her turns, taking the actions all at once or spreading them over the round. A legendary action can be taken only at the start or end of a turn.",
+				"Darkness (Costs 2 Actions)",
+				"A 15-foot radius of magical darkness extends from a point Rezmir can see within 60 feet of her and spreads around corners. The darkness lasts as long as Rezmir maintains {@status concentration}, up to 1 minute. A creature with darkvision can't see through this darkness, and no natural light can illuminate it. If any of the area overlaps with a area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.",
+				"Melee Attack",
+				"Rezmir makes one melee attack.",
+				"Hide",
+				"Rezmir takes the {@action Hide} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sandesyl Morgia|HOTDQ",
+			"s": [
+				"Sandesyl Morgia"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Talis the White|HOTDQ",
+			"hint": {
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Fey Ancestry": "妖精血統",
+				"Spear": "矛"
+			},
+			"s": [
+				"Talis the White",
+				"Spellcasting",
+				"Talis is a 9th-level spellcaster that uses Wisdom as her spellcasting ability (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Talis has the following spells prepared from the cleric spell list:",
+				"Special Equipment",
+				"Talis has {@item +1 scale mail} and a {@item wand of winter|hotdq}.",
+				"Fey Ancestry",
+				"Talis has advantage on saving throws against being {@condition charmed}, and magic can't put her to sleep.",
+				"Winter Strike (3/Day)",
+				"Once per turn, when Talis hits with a melee attack, she can expend a use of this trait to deal an extra 9 ({@damage 2d8}) cold damage.",
+				"Spear",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or ranged 20/60 ft., one target. {@h}6 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Trepsin|HOTDQ",
+			"hint": {
+				"Keen Smell": "敏銳嗅覺",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Trepsin",
+				"natural armor",
+				"Keen Smell",
+				"The troll has advantage on Wisdom ({@skill Perception}) checks that rely on smell.",
+				"Regeneration",
+				"The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+				"Multiattack",
+				"The troll attacks five times, once with its bite and four times with its claws. If two or more claws hit the same target, the troll rends the target, dealing an extra {@damage 2d6} slashing damage.",
+				"Bite",
+				"{@atk mw} {@hit +7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage.",
+				"Claw",
+				"{@atk mw} {@hit +7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+			]
+		}
+	]
+}

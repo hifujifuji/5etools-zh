@@ -1,0 +1,141 @@
+{
+	"batch": "lmop-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Ash Zombie|LMOP",
+			"hint": {
+				"Undead Fortitude": "不死堅韌",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Ash Zombie",
+				"Undead Fortitude",
+				"If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.",
+				"Ash Puff",
+				"The first time the zombie takes damage, any living creature within 5 feet of the zombie must succeed on a {@dc 10} Constitution saving throw or gain disadvantage on attack rolls, saving throws, and ability checks for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on it early with a successful save.",
+				"Slam",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Evil Mage|LMOP",
+			"hint": {
+				"Spellcasting": "施法",
+				"Quarterstaff": "長棍"
+			},
+			"s": [
+				"Evil Mage",
+				"Spellcasting",
+				"The mage is a 4th-level spellcaster that uses Intelligence as its spellcasting ability (spell save {@dc 13}; {@hit 5} to hit with spell attacks). The mage knows the following spells from the wizard's spell list:",
+				"Quarterstaff",
+				"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d8 - 1}) bludgeoning damage.",
+				"Evil Mage"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gundren Rockseeker|LMOP",
+			"s": [
+				"Gundren Rockseeker"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mormesk the Wraith|LMOP",
+			"hint": {
+				"Incorporeal Movement": "虛體移動",
+				"Sunlight Sensitivity": "日光敏感",
+				"Life Drain": "生命汲取"
+			},
+			"s": [
+				"Mormesk the Wraith",
+				"Incorporeal Movement",
+				"The wraith can move through an object or another creature, but can't stop there.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the wraith has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Life Drain",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}16 ({@damage 3d8 + 3}) necrotic damage, and the target must succeed on a {@dc 13} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. If this attack reduces the target's hit point maximum to 0, the target dies. This reduction to the target's hit point maximum lasts until the target finishes a long rest."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nezznar the Black Spider|LMOP",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Fey Ancestry": "妖精血統",
+				"Sunlight Sensitivity": "日光敏感",
+				"Spider Staff": "蜘蛛法杖"
+			},
+			"s": [
+				"Nezznar the Black Spider",
+				"with {@spell mage armor}",
+				"Innate Spellcasting",
+				"Nezznar can innately cast the following spells, requiring no material components:",
+				"Spellcasting",
+				"Nezznar is a 4th-level spellcaster that uses Intelligence as his spellcasting ability (spell save {@dc 13}; {@hit 5} to hit with spell attacks). Nezznar has the following spells prepared from the wizard's spell list:",
+				"Special Equipment",
+				"Nezznar has a {@item spider staff|LMoP}.",
+				"Fey Ancestry",
+				"Nezznar has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep.",
+				"Sunlight Sensitivity",
+				"Nezznar has disadvantage on attack rolls when he or his target is in sunlight.",
+				"Spider Staff",
+				"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) bludgeoning damage plus 3 ({@damage 1d6}) poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nundro Rockseeker|LMOP",
+			"s": [
+				"Nundro Rockseeker"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Redbrand Ruffian|LMOP",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Redbrand Ruffian",
+				"Multiattack",
+				"The ruffian makes two melee attacks.",
+				"Shortsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sildar Hallwinter|LMOP",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍",
+				"Heavy Crossbow": "重弩",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Sildar Hallwinter",
+				"Multiattack",
+				"Sildar makes two melee attacks.",
+				"Longsword",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage.",
+				"Heavy Crossbow",
+				"{@atk rw} {@hit 2} to hit, range 100/400 ft., one target. {@h}5 ({@damage 1d10}) piercing damage.",
+				"Parry",
+				"When an attacker hits Sildar with a melee attack and Sildar can see the attacker, he can roll {@dice 1d6} and add the number rolled to his AC against the triggering attack, provided that he's wielding a melee weapon."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Venomfang|LMOP",
+			"s": [
+				"Venomfang"
+			]
+		}
+	]
+}

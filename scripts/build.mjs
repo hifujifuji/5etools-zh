@@ -382,10 +382,38 @@ const walkStrings = (v, inZh = false) => {
 // 基底與複製端的字串經過相同轉換，字串比對仍然對得上
 const SPELL_LIST_KEYS = new Set(["will", "daily", "spells", "weekly", "monthly", "yearly", "rest", "restLong", "ritual", "recharge", "charges", "legendary", "replace", "with"]);
 // 法術清單後綴「(level 7 version)」等；認不得的後綴就整串保留原樣
+const SPELL_SUFFIX_FULL = {
+	"the hand is invisible": "手為隱形", "the hand is Invisible": "手為隱形",
+	"can become Medium when changing his appearance": "改變外貌時可以變為中型", "can become Medium when changing her appearance": "改變外貌時可以變為中型",
+	"can become Medium": "可以變為中型", "including the form of a Medium Humanoid": "包括中型類人生物的形態", "any humanoid form": "任意類人形態",
+	"Beast or Humanoid form only, no {@variantrule Temporary Hit Points|XPHB} gained from the spell, and no Concentration or {@variantrule Temporary Hit Points|XPHB} required to maintain the spell": "僅限野獸或類人生物形態，不會從該法術獲得{@variantrule Temporary Hit Points|XPHB|臨時生命值}，且維持該法術無需專注或{@variantrule Temporary Hit Points|XPHB|臨時生命值}",
+	"only self and up to one incapacitated creature, which is considered willing for the spell": "僅限自身與至多一個無力的生物，該生物視為自願接受此法術",
+	"only self and up to one incapacitated creature which is considered willing for the spell": "僅限自身與至多一個無力的生物，該生物視為自願接受此法術",
+	"only itself and willing creatures": "僅限自身與自願的生物", "earth or fire elemental only": "僅限土元素或火元素",
+	"pain or insanity": "痛苦或瘋狂", "discord or sleep only": "僅限不和或睡眠", "can create wine instead of water": "可以創造酒而非水",
+	"with no chance of error": "不會出錯", "to Carceri only": "僅限前往卡瑟利", "see \"Reactions\" below": "見下方「反應」",
+	"range 300 ft., +3 bonus to each damage roll": "射程 300 呎，每次傷害擲骰 +3 加值", "Flood, Part Water, or Redirect Flow only": "僅限洪水、分水或改變水流",
+};
 const SPELL_SUFFIX_ZH = suf => {
 	const s = suf.trim().slice(1, -1);
+	if (SPELL_SUFFIX_FULL[s]) return `（${SPELL_SUFFIX_FULL[s]}）`;
 	const parts = s.split(/, | and /).map(p => {
 		let m;
+		if ((m = /^(?:cast )?at (\d+)(?:st|nd|rd|th) level$/i.exec(p))) return `以 ${m[1]} 環施展`;
+		if ((m = /^as (?:an? )?(\d+)(?:st|nd|rd|th)-level spell$/i.exec(p))) return `以 ${m[1]} 環法術施展`;
+		if ((m = /^(\d+)(?:st|nd|rd|th) level$/i.exec(p))) return `${m[1]} 級`;
+		if ((m = /^(\d+) brains?$/i.exec(p))) return `${m[1]} 個腦`;
+		if ((m = /^(\d+) or more brains$/i.exec(p))) return `${m[1]} 個腦或更多`;
+		if ((m = /^cast as (\d+) action$/i.exec(p))) return `以 ${m[1]} 個動作施展`;
+		if ((m = /^duration (\d+) years?$/i.exec(p))) return `持續時間 ${m[1]} 年`;
+		if ((m = /^see chapter (\d+)$/i.exec(p))) return `見第 ${m[1]} 章`;
+		if ((m = /^save (\{@dc \d+\})$/i.exec(p))) return `豁免 ${m[1]}`;
+		if ((m = /^(?:(\d+) \()?(\{@(?:damage|dice) [^}]+\})\)?(?: (\w+))? damage$/i.exec(p))) { const dt = m[3] ? {fire: "火焰", psychic: "精神", necrotic: "死靈", cold: "寒冰", lightning: "閃電", radiant: "光耀", force: "力場"}[m[3].toLowerCase()] : ""; if (dt != null) return m[1] ? `${m[1]}（${m[2]}）${dt}傷害` : `${m[2]} ${dt}傷害`; }
+		if ((m = /^(\{@dice [^}]+\})$/.exec(p))) return m[1];
+		if ((m = /^(\{@creature [^}]+\}) only$/.exec(p))) return `僅限${fillTags(m[1])}`;
+		if ((m = /^(snakes|reptiles|rats|spiders|demon|pain|hopelessness|discord|death|stunning) only$/i.exec(p))) return `僅限${{snakes: "蛇", reptiles: "爬蟲類", rats: "鼠類", spiders: "蜘蛛", demon: "惡魔", pain: "痛苦", hopelessness: "絕望", discord: "不和", death: "死亡", stunning: "震懾"}[m[1].toLowerCase()]}`;
+		if ((m = /^(\w+) form only$/i.exec(p))) { const f = {swan: "天鵝", humanoid: "類人", beast: "野獸"}[m[1].toLowerCase()]; if (f) return `僅限${f}形態`; }
+		if ({trident: 1, spear: 1, necrotic: 1}[p.toLowerCase()]) return {trident: "三叉戟", spear: "矛", necrotic: "死靈"}[p.toLowerCase()];
 		if ((m = /^level (\d) version$/i.exec(p))) return `${m[1]} 環版本`;
 		if ((m = /^(\d)(?:st|nd|rd|th)[- ]level(?: version)?$/i.exec(p))) return `${m[1]} 環版本`;
 		return {
