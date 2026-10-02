@@ -1,0 +1,1534 @@
+{
+	"batch": "idrotf-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Aruk Thundercaller Thuunlakalaga|IDROTF",
+			"s": [
+				"Aruk Thundercaller Thuunlakalaga"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Arveiaturace|IDROTF",
+			"s": [
+				"Arveiaturace"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Auril (First Form)|IDROTF",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Resistance": "魔法抗性",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Talons": "利爪",
+				"Chromatic Orb": "幻色法球",
+				"Teleport": "傳送"
+			},
+			"s": [
+				"Auril (First Form)",
+				"Innate Spellcasting",
+				"Auril's innate spellcasting ability is Charisma (spell save {@dc 21}, {@hit 13} to hit with spell attacks). She can innately cast the following spells, requiring no material components:",
+				"Divine Being",
+				"Auril can't be {@status surprised} and can't be changed into another form against her will.",
+				"Divine Rejuvenation",
+				"When Auril drops to 0 hit points, her body turns to slush and melts away. Auril instantly reappears in her {@creature Auril (second form)|IDRotF|second form}, in an unoccupied space within 60 feet of where her first form disappeared. Her initiative count doesn't change.",
+				"Legendary Resistance (2/Day in This Form)",
+				"If Auril fails a saving throw, she can choose to succeed instead.",
+				"Magic Resistance",
+				"Auril has advantage on saving throws against spells and other magical effects.",
+				"Unusual Nature",
+				"Auril doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"Auril attacks twice with her talons.",
+				"Talons",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 3 ({@damage 1d6}) cold damage.",
+				"Touch of Frost",
+				"{@atk ms} {@hit 13} to hit, reach 5 ft., one creature. {@h}13 ({@damage 3d8}) cold damage, and the target can't take reactions until the start of its next turn.",
+				"Chromatic Orb",
+				"{@atk rs} {@hit 13} to hit, range 90 ft., one creature. {@h}13 ({@damage 3d8}) cold damage.",
+				"Talons",
+				"Auril attacks once with her talons.",
+				"Teleport",
+				"Auril teleports to an unoccupied space she can see within 30 feet of her.",
+				"Touch of Frost (Costs 2 Actions)",
+				"Auril uses Touch of Frost."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Auril (Second Form)|IDROTF",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Attack": "攻擊"
+			},
+			"s": [
+				"Auril (Second Form)",
+				"natural armor",
+				"Divine Being",
+				"Auril can't be {@status surprised} and can't be changed into another form against her will.",
+				"Divine Rejuvenation",
+				"When Auril drops to 0 hit points, her body collapses into shards of ice, whereupon Auril instantly reappears in her {@creature Auril (third form)|IDRotF|third form}, in an unoccupied space within 60 feet of where her second form was destroyed. Her initiative count doesn't change.",
+				"Legendary Resistance (2/Day in This Form)",
+				"If Auril fails a saving throw, she can choose to succeed instead.",
+				"Magic Resistance",
+				"Auril has advantage on saving throws against spells and other magical effects.",
+				"Unusual Nature",
+				"Auril doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"Auril attacks twice with her ice morningstar or hurls three ice darts.",
+				"Ice Morningstar",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 9 ({@damage 2d8}) cold damage.",
+				"Ice Dart",
+				"{@atk rw} {@hit 7} to hit, range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage plus 3 ({@damage 1d6}) cold damage.",
+				"Cone of Cold (Recharges after a Short or Long Rest)",
+				"Auril causes a magical blast of cold air to erupt from her hand. Each creature in a 60-foot cone must make a {@dc 21} Constitution saving throw, taking 36 ({@damage 8d8}) cold damage on a failed save, or half as much damage on a successful one.",
+				"Create Ice Mephit (3/Day)",
+				"Auril breaks off an icicle from her body and hurls it into an unoccupied space she can see within 20 feet of her, where it magically transforms into an {@creature ice mephit} (see its entry in the Monster Manual). The mephit acts immediately after Auril in the initiative order and obeys her commands.",
+				"Ice Stasis {@recharge 5}",
+				"Auril magically creates a gem-sized ice crystal that hovers in a space within 5 feet of her. Auril then targets a creature she can see within 60 feet of the crystal. The target must succeed on a {@dc 21} Charisma saving throw or become trapped in the crystal, which is immovable. If the saving throw succeeds, the crystal shatters and nothing else happens. A creature trapped in the crystal is {@condition stunned}, has {@quickref Cover||3||total cover} against attacks and other effects outside the crystal, and takes 21 ({@damage 6d6}) cold damage at the start of each of its turns. The creature can repeat the saving throw at the end of each of its turns, freeing itself on a success. The creature is also freed if the crystal is destroyed, which is a Tiny object with AC 18, 9 hit points, and immunity to all damage except fire damage. The freed creature appears in an unoccupied space of its choice within 30 feet of the shattered crystal.",
+				"Attack",
+				"Auril makes one weapon attack.",
+				"Ice Flurry (Costs 2 Actions)",
+				"Each creature within 30 feet of Auril takes 5 ({@damage 2d4}) piercing damage from swirling ice, and nonmagical, open flames in that area are extinguished.",
+				"Splinter (Costs 3 Actions)",
+				"Auril uses Create Ice Mephit or causes one to ice mephit she can see within 60 feet of her to explode and die. A mephit that dies in this way does not use its Death Burst. Instead, each creature within 10 feet of the exploding mephit must succeed on a {@dc 21} Dexterity saving throw, taking 13 ({@damage 3d8}) piercing damage on a failed saving throw, and half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Auril (Third Form)|IDROTF",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Polar Ray": "極地射線"
+			},
+			"s": [
+				"Auril (Third Form)",
+				"natural armor",
+				"(hover)",
+				"Divine Being",
+				"Auril can't be {@status surprised} and can't be changed into another form against her will.",
+				"Divine Resurrection",
+				"When Auril drops to 0 hit points, her crystalline form shatters and her divine spark vanishes. She is dead until the next winter solstice, when she reappears at full health in a cold, remote location of her choosing.",
+				"Frigid Aura",
+				"So long as Auril has at least 1 hit point in this form, each creature within 10 feet of her takes 10 cold damage at the start of each of her turns.",
+				"Legendary Resistance (1/Day in This Form)",
+				"If Auril fails a saving throw, she can choose to succeed instead.",
+				"Magic Resistance",
+				"Auril has advantage on saving throws against spells and other magical effects.",
+				"Unusual Nature",
+				"Auril doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"Auril uses Polar Ray twice.",
+				"Polar Ray",
+				"{@atk rs} {@hit 13} to hit, range 120 ft., one target. {@h}14 ({@damage 4d6}) cold damage.",
+				"Blizzard Veil",
+				"Auril creates a magical blizzard in a 30-foot-radius sphere centered on herself. The area within the sphere is heavily obscured, and the sphere moves with Auril. The effect lasts until Auril drops to 0 hit points in this form, until she chooses to end the effect (no action required), or until her {@status concentration} is broken (as if {@status concentration||concentrating} on a spell).",
+				"Polar Ray",
+				"Auril uses Polar Ray.",
+				"Intensify Aura (Costs 2 Actions)",
+				"Auril's Frigid Aura deals an extra 10 cold damage until the end of her next turn.",
+				"Blinding Gleam (Costs 2 Actions)",
+				"Auril's form flares with a blue light. Each creature that can see Auril and is within 10 feet of her must succeed on a {@dc 17} Wisdom saving throw or be {@condition blinded} by Auril's magical gleam for 1 minute. The {@condition blinded} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Avarice|IDROTF",
+			"hint": {
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Fire Bolt (Cantrip)": "火焰箭（戲法）",
+				"Staff of Frost": "冰霜法杖"
+			},
+			"s": [
+				"Avarice",
+				"Spellcasting",
+				"Avarice is a 10th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 14}; {@hit 6} to hit with spell attacks). She has the following wizard spells prepared:",
+				"Icy Doom",
+				"When Avarice dies, her corpse freezes for 9 days, during which time it can't be thawed, harmed by fire, animated, or raised from the dead.",
+				"Special Equipment",
+				"Avarice wields a {@item staff of frost} with 10 charges (see \"Actions\" below).",
+				"Fire Bolt (Cantrip)",
+				"{@atk rs} {@hit 6} to hit, range 120 ft., one target. {@h}11 ({@damage 2d10}) fire damage.",
+				"Staff of Frost",
+				"While holding this staff, Avarice can expend 1 or more of its charges to cast one of the following spells from it (spell save {@dc 14}): {@spell cone of cold} (5 charges), {@spell fog cloud} (1 charge), {@spell ice storm} (4 charges), or {@spell wall of ice} (4 charges). The staff regains {@dice 1d6 + 4} charges daily at dawn. If its last charge is expended, roll a {@dice d20}; on a 1, the staff turns to water and is destroyed.",
+				"Banishing Rebuke (Recharges after a Long Rest)",
+				"When Avarice is damaged by a creature that she can see within 60 feet of her, she can banish that creature to a frigid extradimensional prison for 1 minute. While there, the creature is {@condition incapacitated} and takes 5 ({@damage 1d10}) cold damage at the start of each of its turns. At the end of each of its turns, the creature can make a {@dc 14} Charisma saving throw, escaping the prison on a success and reappearing in the space it left or in the nearest unoccupied space if that space is occupied. A creature that dies in the prison is trapped there indefinitely."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Awakened White Moose|IDROTF",
+			"hint": {
+				"Charge": "衝鋒",
+				"Sure-Footed": "腳步穩健",
+				"Multiattack": "多重攻擊",
+				"Antlers": "鹿角",
+				"Hooves": "蹄擊"
+			},
+			"s": [
+				"Awakened White Moose",
+				"natural armor",
+				"Charge",
+				"If the moose moves at least 20 feet straight toward a target and then hits it with an antlers attack on the same turn, the target takes an extra 9 ({@damage 2d8}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}.",
+				"Sure-Footed",
+				"The moose has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}.",
+				"Multiattack",
+				"The moose makes two attacks: one with its antlers and one with its hooves.",
+				"Antlers",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage.",
+				"Hooves",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Battlehammer Dwarf|IDROTF",
+			"s": [
+				"Battlehammer Dwarf"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bjornhild Solvigsdottir|IDROTF",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Greataxe": "巨斧",
+				"Spear": "矛"
+			},
+			"s": [
+				"Bjornhild Solvigsdottir",
+				"Auril's Blessing (3/Day)",
+				"When Bjornhild hits a creature with a weapon attack, the attack deals an extra 11 ({@damage 2d10}) cold damage.",
+				"Multiattack",
+				"Bjornhild makes two melee attacks.",
+				"Greataxe",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) slashing damage, plus 11 ({@damage 2d10}) cold damage if Bjornhild uses Auril's Blessing.",
+				"Spear",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, or 8 ({@damage 1d8 + 4}) piercing damage if used with two hands to make a melee attack, plus 11 ({@damage 2d10}) cold damage if Bjornhild uses Auril's Blessing."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chardalyn Berserker|IDROTF",
+			"hint": {
+				"Reckless": "魯莽",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Chardalyn Berserker",
+				"Chardalyn Madness",
+				"The berserker must roll a {@dice d6} at the start of each of its turns. On a 1, the berserker does nothing on its turn except speak to a nonexistent, evil master whom it has pledged to serve.",
+				"Reckless",
+				"At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn.",
+				"Multiattack",
+				"The berserker attacks three times with a melee weapon.",
+				"Chardalyn Flail",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the end of its next turn.",
+				"Chardalyn Javelin",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chardalyn Dragon|IDROTF",
+			"hint": {
+				"Immutable Form": "不變形態",
+				"Magic Resistance": "魔法抗性",
+				"Siege Monster": "攻城怪獸",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Tail": "尾擊",
+				"Wings": "翅膀",
+				"Radiant Breath {@recharge 5}": "光耀吐息 {@recharge 5}"
+			},
+			"s": [
+				"Chardalyn Dragon",
+				"natural armor",
+				"Immutable Form",
+				"The dragon is immune to any spell or effect that would alter its form.",
+				"Magic Resistance",
+				"The dragon has advantage on saving throws against spells and other magical effects.",
+				"Siege Monster",
+				"The dragon deals double damage to objects and structures.",
+				"Unusual Nature",
+				"The dragon doesn't require air, food, drink, or sleep, and it gains no benefit from finishing a short or long rest.",
+				"Multiattack",
+				"The dragon uses its Malevolent Presence. It then makes three attacks: two with its claws and one with its tail. If the dragon isn't flying, it can also make one attack with its wings.",
+				"Claw",
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage.",
+				"Tail",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d10 + 7}) bludgeoning damage.",
+				"Wings",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d4 + 7}) bludgeoning damage.",
+				"Malevolent Presence",
+				"Any creature with an Intelligence of 4 or more that is within 30 feet of the dragon must succeed on a {@dc 16} Wisdom saving throw or be {@condition charmed} by it for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Malevolent Presence for the next 24 hours. A creature {@condition charmed} in this way fixates on another creature or object that the dragon mentally chooses and must, on each of its turns, move as close as it can to that target and use its action to make a melee attack against it. If the dragon doesn't choose a target, the {@condition charmed} creature can act normally on its turn.",
+				"Radiant Breath {@recharge 5}",
+				"The dragon exhales a ray of radiant energy in a 120-foot line that is 5 feet wide. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 31 ({@damage 7d8}) radiant damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chimeric Baboon|IDROTF",
+			"s": [
+				"Chimeric Baboon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chimeric Cat|IDROTF",
+			"s": [
+				"Chimeric Cat"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chimeric Fox|IDROTF",
+			"s": [
+				"Chimeric Fox"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chimeric Hare|IDROTF",
+			"s": [
+				"Chimeric Hare"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chimeric Rat|IDROTF",
+			"s": [
+				"Chimeric Rat"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chimeric Weasel|IDROTF",
+			"s": [
+				"Chimeric Weasel"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chwinga|IDROTF",
+			"hint": {
+				"Chwinga": "奇溫加"
+			},
+			"s": [
+				"Chwinga"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Coldlight Walker|IDROTF",
+			"hint": {
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Coldlight Walker",
+				"natural armor",
+				"Blinding Light",
+				"The walker sheds bright light in a 20-foot radius and dim light for an additional 20 feet. As a bonus action, the walker can target one creature in its bright light that it can see and force it to succeed on a {@dc 14} Constitution saving throw or be {@condition blinded} until the start of the walker's next turn.",
+				"Icy Doom",
+				"Any creature killed by the walker freezes for 9 days, during which time it can't be thawed, harmed by fire, animated, or raised from the dead.",
+				"Unusual Nature",
+				"The walker doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The walker makes two attacks.",
+				"Slam",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 2}) bludgeoning damage plus 14 ({@damage 4d6}) cold damage.",
+				"Cold Ray",
+				"{@atk rs} {@hit 3} to hit, range 60 ft., one target. {@h}25 ({@damage 4d10 + 3}) cold damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Demos Magen|IDROTF",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Greatsword": "巨劍",
+				"Light Crossbow": "輕弩"
+			},
+			"s": [
+				"Demos Magen",
+				"Fiery End",
+				"If the magen dies, its body disintegrates in a harmless burst of fire and smoke, leaving behind anything it was wearing or carrying.",
+				"Magic Resistance",
+				"The magen has advantage on saving throws against spells and other magical effects.",
+				"Unusual Nature",
+				"The magen doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The magen makes two melee attacks.",
+				"Greatsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage.",
+				"Light Crossbow",
+				"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dzaan|IDROTF",
+			"hint": {
+				"Spellcasting": "施法"
+			},
+			"s": [
+				"Dzaan",
+				"Spellcasting",
+				"Dzaan is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He has the following wizard spells prepared:",
+				"*See \"Actions\" below."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dzaan's Simulacrum|IDROTF",
+			"hint": {
+				"Spellcasting": "施法"
+			},
+			"s": [
+				"Dzaan's Simulacrum",
+				"Spellcasting",
+				"The simulacrum is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following wizard spells prepared:",
+				"*See \"Actions\" below.",
+				"Shocking Grasp (Cantrip)",
+				"{@atk ms} {@hit 5} to hit, reach 5 ft., one creature (the attack roll has advantage if the target is wearing armor made of metal). {@h}9 ({@damage 2d8}) lightning damage, and the target can't take reactions until the start of its next turn.",
+				"Acid Splash (Cantrip)",
+				"The simulacrum hurls a bubble of acid at one creature it can see within 60 feet of it, or at two such creatures that are within 5 feet of each other. A target must succeed on a {@dc 13} Dexterity saving throw or take 7 ({@damage 2d6}) acid damage.",
+				"Magic Missile (1st-Level Spell; Requires a Spell Slot)",
+				"The simulacrum creates three darts of magical force. Each dart unerringly strikes one creature the simulacrum can see within 120 feet of it, dealing 3 ({@damage 1d4 + 1}) force damage. If the simulacrum casts this spell using a 2nd-level spell slot, it creates one more dart."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "F'yorl|IDROTF",
+			"s": [
+				"F'yorl"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fox|IDROTF",
+			"hint": {
+				"Keen Hearing": "敏銳聽覺",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Fox",
+				"Keen Hearing",
+				"The fox has advantage on Wisdom ({@skill Perception}) checks that rely on hearing.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}1 piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Frost Druid|IDROTF",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Change Shape": "變形"
+			},
+			"s": [
+				"Frost Druid",
+				"(wolf form only)",
+				"(fox form only)",
+				"(goat form only)",
+				"(owl form only)",
+				"Spellcasting (Humanoid Form Only)",
+				"The druid is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}; {@hit 6} to hit with spell attacks). It has the following druid spells prepared:",
+				"Multiattack",
+				"The druid makes two melee attacks.",
+				"Ice Sickle (Humanoid Form Only)",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) slashing damage plus 5 ({@damage 2d4}) cold damage.",
+				"Maul (Beast Form Only)",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage.",
+				"Change Shape",
+				"The druid magically polymorphs into a beast form—fox, mountain goat, owl, or wolf—or back into its humanoid form. Any equipment it is wearing or carrying is absorbed or borne by the beast form (the druid's choice). It reverts to its humanoid form when it dies. The druid's statistics are the same in each form, except where noted in this stat block."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Frost Giant Skeleton|IDROTF",
+			"hint": {
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Greataxe": "巨斧",
+				"Freezing Stare": "冰凍凝視"
+			},
+			"s": [
+				"Frost Giant Skeleton",
+				"armor scraps",
+				"Unusual Nature",
+				"The skeleton doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The skeleton makes two greataxe attacks.",
+				"Greataxe",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}25 ({@damage 3d12 + 6}) slashing damage.",
+				"Freezing Stare",
+				"The skeleton targets one creature it can see within 60 feet of it. The target must succeed on a {@dc 13} Constitution saving throw or take 35 ({@damage 10d6}) cold damage and be {@condition paralyzed} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Galvan Magen|IDROTF",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Shocking Touch": "電擊之觸"
+			},
+			"s": [
+				"Galvan Magen",
+				"(hover)",
+				"Fiery End",
+				"If the magen dies, its body disintegrates in a harmless burst of fire and smoke, leaving behind anything it was wearing or carrying.",
+				"Magic Resistance",
+				"The magen has advantage on saving throws against spells and other magical effects.",
+				"Unusual Nature",
+				"The magen doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The magen makes two Shocking Touch attacks.",
+				"Shocking Touch",
+				"{@atk ms} {@hit 6} to hit, reach 5 ft., one target (the magen has advantage on the attack roll if the target is wearing armor made of metal). {@h}7 ({@damage 1d6 + 4}) lightning damage.",
+				"Static Discharge {@recharge 5}",
+				"The magen discharges a lightning bolt in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 14} Dexterity saving throw (with disadvantage if the creature is wearing armor made of metal), taking 22 ({@damage 4d10}) lightning damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Walrus|IDROTF",
+			"hint": {
+				"Hold Breath": "閉氣",
+				"Multiattack": "多重攻擊",
+				"Tusks": "獠牙"
+			},
+			"s": [
+				"Giant Walrus",
+				"Hold Breath",
+				"The walrus can hold its breath for 30 minutes.",
+				"Multiattack",
+				"The walrus makes two attacks: one with its body flop and one with its tusks.",
+				"Body Flop",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage.",
+				"Tusks",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gnoll Vampire|IDROTF",
+			"hint": {
+				"Keen Smell": "敏銳嗅覺",
+				"Rampage": "暴走",
+				"Regeneration": "再生",
+				"Shapechanger": "變形者",
+				"Unusual Nature": "異常本質",
+				"Vampire Weaknesses": "吸血鬼弱點",
+				"Stake to the Heart": "木樁穿心",
+				"Sunlight Hypersensitivity": "日光過敏",
+				"Multiattack (Vampire Form Only)": "多重攻擊（僅限吸血鬼形態）"
+			},
+			"s": [
+				"Gnoll Vampire",
+				"natural armor",
+				"Keen Smell",
+				"The vampire has advantage on Wisdom ({@skill Perception}) checks that rely on smell.",
+				"Rampage",
+				"When it reduces a creature to 0 hit points with a melee attack on its turn, the vampire can take a bonus action to move up to half its speed and make a bite attack.",
+				"Regeneration",
+				"The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.",
+				"Shapechanger",
+				"If the vampire isn't in sunlight, it can use its action to polymorph into a Large hyena or a Medium cloud of mist, or back into its true form.",
+				"While in hyena form, the vampire can't speak, and its walking speed is 50 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.",
+				"While in mist form, the vampire can't take any actions, speak, or manipulate objects. it is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight.",
+				"Unusual Nature",
+				"The vampire doesn't require air.",
+				"Vampire Weaknesses",
+				"The vampire has the following flaws:",
+				"Enraged by Celestial",
+				"If it hears words of Celestial spoken, the vampire must try to attack the source of those spoken words on its next turn. If these words come from multiple sources and from opposite directions, the vampire is {@condition restrained}. Otherwise, it moves to attack what it perceives to be the closest source.",
+				"Repulsed by Perfume",
+				"The vampire has disadvantage on melee attack rolls made against any creature wearing perfume or carrying an open container of it.",
+				"Stake to the Heart",
+				"If a piercing weapon made of wood is driven into the vampire's heart while the vampire is {@condition incapacitated} in its resting place, the vampire is {@condition paralyzed} until the stake is removed.",
+				"Sunlight Hypersensitivity",
+				"The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.",
+				"Multiattack (Vampire Form Only)",
+				"The vampire makes two attacks: one with its bite and one with its claws.",
+				"Bite (Hyena or Vampire Form Only)",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 9 ({@damage 2d8}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. the target dies if its hit point maximum is reduced to 0.",
+				"Claws (Vampire Form Only)",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) slashing damage.",
+				"Frightful Cackle (Hyena or Vampire Form Only)",
+				"The vampire emits a bone-chilling cackle. Each creature of the vampire's choice that is within 120 feet of the vampire and can hear its cackle must succeed on a {@dc 15} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the vampire's Frightful Cackle for the next 24 hours.",
+				"Sickening Gaze (Hyena or Vampire Form Only)",
+				"The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a {@dc 15} Constitution saving throw against this magic or be {@condition poisoned} for 24 hours. A creature whose saving throw is successful is immune to this vampire's Sickening Gaze for 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gnome Ceremorph|IDROTF",
+			"hint": {
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Magic Resistance": "魔法抗性",
+				"Tentacles": "觸手",
+				"Extract Brain": "取腦",
+				"Laser Pistol": "雷射手槍",
+				"Mind Blast {@recharge 5}": "心靈衝擊 {@recharge 5}"
+			},
+			"s": [
+				"Gnome Ceremorph",
+				"Innate Spellcasting (Psionics)",
+				"The ceremorph's innate spellcasting ability is Intelligence (spell save {@dc 15}). It can innately cast the following spells, requiring no components:",
+				"Magic Resistance",
+				"The ceremorph has advantage on saving throws against spells and other magical effects.",
+				"Tentacles",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}15 ({@damage 2d10 + 4}) psychic damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 9}) and must succeed on a {@dc 15} Intelligence saving throw or be {@condition stunned} until this grapple ends.",
+				"Extract Brain",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one {@condition incapacitated} humanoid {@condition grappled} by the ceremorph. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the ceremorph kills the target by extracting and devouring its brain.",
+				"Laser Pistol",
+				"{@atk rw} {@hit 5} to hit, range 40/120 ft., one target. {@h}12 ({@damage 3d6 + 2}) radiant damage.",
+				"Mind Blast {@recharge 5}",
+				"The ceremorph magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 15} Intelligence saving throw or take 22 ({@damage 4d8 + 4}) psychic damage and be {@condition stunned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gnome Squidling|IDROTF",
+			"hint": {
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Magic Resistance": "魔法抗性",
+				"Tentacles": "觸手",
+				"Extract Brain": "取腦"
+			},
+			"s": [
+				"Gnome Squidling",
+				"Innate Spellcasting (Psionics)",
+				"The squidling's innate spellcasting ability is Intelligence (spell save {@dc 7}). It can innately cast {@spell levitate} at will, requiring no components.",
+				"Magic Resistance",
+				"The squidling has advantage on saving throws against spells and other magical effects.",
+				"Tentacles",
+				"{@atk mw} {@hit 0} to hit, reach 5 ft., one creature. {@h}5 ({@damage 2d4}) psychic damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 7}) and must succeed on a {@dc 7} Intelligence saving throw or be {@condition stunned} until this grapple ends.",
+				"Extract Brain",
+				"{@atk mw} {@hit 0} to hit, reach 5 ft., one {@condition incapacitated} creature {@condition grappled} by the squidling. {@h}27 ({@damage 5d10}) piercing damage. If this damage reduces the target to 0 hit points, the squidling kills the target by extracting and devouring its brain.",
+				"Mind Tickle {@recharge 5}",
+				"The squidling magically emits psychic energy in a 30-foot cone. Each creature in that area must succeed on a {@dc 7} Intelligence saving throw or take 2 ({@damage 1d4}) psychic damage and be {@condition stunned} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Goliath Warrior|IDROTF",
+			"hint": {
+				"Mountain Born": "山地出身",
+				"Powerful Build": "強健體格",
+				"Multiattack": "多重攻擊",
+				"Greataxe": "巨斧",
+				"Javelin": "標槍",
+				"Stone's Endurance (Recharges after a Short or Long Rest)": "磐石堅韌（短休或長休後充能）"
+			},
+			"s": [
+				"Goliath Warrior",
+				"Mountain Born",
+				"The goliath is acclimated to high altitude, including elevations above 20,000 feet.",
+				"Powerful Build",
+				"The goliath counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift.",
+				"Multiattack",
+				"The goliath makes two attacks with its greataxe or hurls two javelins.",
+				"Greataxe",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) slashing damage.",
+				"Javelin",
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage.",
+				"Stone's Endurance (Recharges after a Short or Long Rest)",
+				"When the goliath takes damage, it reduces the damage taken by 9 ({@dice 1d12 + 3})."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Goliath Werebear|IDROTF",
+			"hint": {
+				"Keen Smell": "敏銳嗅覺",
+				"Mountain Born": "山地出身",
+				"Shapechanger": "變形者",
+				"Multiattack": "多重攻擊",
+				"Bite (Bear or Hybrid Form Only)": "啃咬（僅限熊或混合形態）",
+				"Stone's Endurance (Recharges after a Short or Long Rest)": "磐石堅韌（短休或長休後充能）"
+			},
+			"s": [
+				"Goliath Werebear",
+				"in humanoid form",
+				"in bear or hybrid form",
+				"natural armor",
+				"(40 ft. swim 30 ft. in bear or hybrid form)",
+				"Keen Smell",
+				"The werebear has advantage on Wisdom ({@skill Perception}) checks that rely on smell.",
+				"Mountain Born",
+				"The werebear is acclimated to high altitude, including elevations above 20,000 feet.",
+				"Powerful Build (Humanoid Form Only)",
+				"The werebear counts as one size larger when determining its carrying capacity and the weight it can push, drag, or lift.",
+				"Shapechanger",
+				"The werebear can use its action to polymorph into a Large bear-humanoid hybrid or into a Large polar bear, or back into its goliath form. Its statistics, other than its size and AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+				"Multiattack",
+				"The werebear makes two melee attacks.",
+				"Bite (Bear or Hybrid Form Only)",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}16 ({@damage 2d10 + 5}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 15} Constitution saving throw or be cursed with werebear lycanthropy, as described in the Monster Manual.",
+				"Claw (Bear or Hybrid Form Only)",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage.",
+				"Greataxe (Humanoid or Hybrid Form Only)",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d12 + 5}) slashing damage.",
+				"Stone's Endurance (Recharges after a Short or Long Rest)",
+				"When the werebear takes damage, it reduces the damage taken by 10 ({@dice 1d12 + 4})."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Grandolpha Muzgardt|IDROTF",
+			"hint": {
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Duergar Resilience": "灰矮人韌性",
+				"Sunlight Sensitivity": "日光敏感"
+			},
+			"s": [
+				"Grandolpha Muzgardt",
+				"Innate Spellcasting (Psionics)",
+				"Grandolpha's innate spellcasting ability is Wisdom (spell save {@dc 13}). She can innately cast the following spells, requiring no material components:",
+				"Duergar Resilience",
+				"Grandolpha has advantage on saving throws against poison, spells, and illusions, as well as to resist being {@condition charmed} or {@condition paralyzed}.",
+				"Sunlight Sensitivity",
+				"While in sunlight, Grandolpha has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Poison Spray (Cantrip)",
+				"Grandolpha extends her hand toward a creature she can see within 10 feet of her and projects a puff of noxious gas from her palm. The creature must succeed on a {@dc 13} Constitution saving throw or take 13 ({@damage 2d12}) poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gunvald Halraggson|IDROTF",
+			"hint": {
+				"Indomitable (3/Day)": "不屈（每日 3 次）",
+				"Second Wind (Recharges after a Short or Long Rest)": "回氣（短休或長休後充能）",
+				"Multiattack": "多重攻擊",
+				"Battleaxe": "戰斧",
+				"Javelin": "標槍"
+			},
+			"s": [
+				"Gunvald Halraggson",
+				"Indomitable (3/Day)",
+				"Gunvald can reroll a saving throw he fails. He must use the new roll.",
+				"Menacing Blows (1/Turn)",
+				"Gunvald deals an extra 6 ({@damage 1d12}) damage when he hits a target with a weapon attack. If the target is a creature, it must succeed on a {@dc 14} Wisdom saving throw or be {@condition frightened} until the start of Gunvald's next turn.",
+				"Second Wind (Recharges after a Short or Long Rest)",
+				"As a bonus action, Gunvald can regain 15 hit points.",
+				"Multiattack",
+				"Gunvald makes three melee attacks.",
+				"Battleaxe",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage, or 10 ({@damage 1d10 + 5}) slashing damage when used with two hands, plus 6 ({@damage 1d12}) slashing damage if Gunvald uses Menacing Blows.",
+				"Javelin",
+				"{@atk mw,rw} {@hit 8} to hit, range 30/120 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage, plus 6 ({@damage 1d12}) piercing damage if Gunvald uses Menacing Blows."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hare|IDROTF",
+			"hint": {
+				"Escape": "脫逃"
+			},
+			"s": [
+				"Hare",
+				"Escape",
+				"The hare can take the {@action Dash}, {@action Disengage}, or {@action Hide} action as a bonus action on each of its turns."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Headless Iron Golem|IDROTF",
+			"s": [
+				"Headless Iron Golem"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hengar Aesnvaard|IDROTF",
+			"s": [
+				"Hengar Aesnvaard"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hypnos Magen|IDROTF",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Unusual Nature": "異常本質",
+				"Suggestion": "暗示術"
+			},
+			"s": [
+				"Hypnos Magen",
+				"Fiery End",
+				"If the magen dies, its body disintegrates in a harmless burst of fire and smoke, leaving behind anything it was wearing or carrying.",
+				"Magic Resistance",
+				"The magen has advantage on saving throws against spells and other magical effects.",
+				"Unusual Nature",
+				"The magen doesn't require air, food, drink, or sleep.",
+				"Psychic Lash",
+				"The magen's eyes glow silver as it targets one creature that it can see within 60 feet of it. The target must succeed on a {@dc 12} Wisdom saving throw or take 11 ({@damage 2d10}) psychic damage.",
+				"Suggestion",
+				"The magen casts the {@spell suggestion} spell (save {@dc 12}), requiring no material components. The target must be a creature that the magen can communicate with telepathically. If it succeeds on its saving throw, the target is immune to this magen's {@spell suggestion} spell for the next 24 hours. The magen's spellcasting ability is Intelligence."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ice Piercer|IDROTF",
+			"s": [
+				"Ice Piercer"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ice Troll|IDROTF",
+			"hint": {
+				"Ice Troll": "冰巨魔",
+				"Cold Aura": "寒冷靈光",
+				"Keen Smell": "敏銳嗅覺",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Ice Troll",
+				"natural armor",
+				"Cold Aura",
+				"While it's alive, the troll generates an aura of bitter cold that fills the area within 10 feet of it. At the start of the troll's turn, all nonmagical flames in the aura are extinguished. Any creature that starts its turn within 10 feet of the troll takes 10 ({@damage 3d6}) cold damage.",
+				"Keen Smell",
+				"The ice troll has advantage on Wisdom ({@skill Perception}) checks that rely on smell.",
+				"Regeneration",
+				"The ice troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The ice troll dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+				"Multiattack",
+				"The troll makes three attacks: one with its bite and two with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 9 ({@damage 2d8}) cold damage.",
+				"Claw",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage plus 9 ({@damage 2d8}) cold damage. If the target takes any of the cold damage, the target must succeed on a {@dc 15} Constitution saving throw or have disadvantage on its attack rolls until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Icewind Kobold|IDROTF",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Sunlight Sensitivity": "日光敏感",
+				"Dagger": "匕首",
+				"Javelin": "標槍"
+			},
+			"s": [
+				"Icewind Kobold",
+				"Pack Tactics",
+				"The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage.",
+				"Javelin",
+				"{@atk mw,rw} {@hit 0} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}1 ({@damage 1d6 - 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Icewind Kobold Zombie|IDROTF",
+			"hint": {
+				"Undead Fortitude": "不死堅韌",
+				"Unusual Nature": "異常本質",
+				"Javelin": "標槍"
+			},
+			"s": [
+				"Icewind Kobold Zombie",
+				"scraps of hide armor",
+				"Undead Fortitude",
+				"If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.",
+				"Unusual Nature",
+				"The zombie doesn't require air, food, drink, or sleep.",
+				"Javelin",
+				"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Isarr Kronenstrom|IDROTF",
+			"hint": {
+				"Blood Frenzy": "血腥狂亂",
+				"Indomitable (3/Day)": "不屈（每日 3 次）",
+				"Keen Hearing and Smell": "敏銳聽覺與嗅覺",
+				"Multiattack": "多重攻擊",
+				"Sickle": "鐮刀",
+				"Heavy Crossbow": "重弩"
+			},
+			"s": [
+				"Isarr Kronenstrom",
+				"Blood Frenzy",
+				"Isarr has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+				"Indomitable (3/Day)",
+				"Isarr can reroll a saving throw he fails. He must use the new roll.",
+				"Keen Hearing and Smell",
+				"Isarr has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell.",
+				"Multiattack",
+				"Isarr makes three melee attacks.",
+				"Sickle",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, plus 13 ({@damage 2d12}) piercing damage if the target has no allies it can see within 10 feet of it.",
+				"Heavy Crossbow",
+				"{@atk rw} {@hit 6} to hit, range 100/400 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jarund Elkhardt|IDROTF",
+			"hint": {
+				"Brute": "蠻力",
+				"Multiattack": "多重攻擊",
+				"Warhammer": "戰錘",
+				"Shield": "盾牌",
+				"Javelin": "標槍"
+			},
+			"s": [
+				"Jarund Elkhardt",
+				"Brute",
+				"A melee weapon deals one extra die of its damage when Jarund hits with it (included in the attack).",
+				"Multiattack",
+				"Jarund makes three melee attacks.",
+				"Warhammer",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, or 15 ({@damage 2d10 + 4}) bludgeoning damage when used with two hands.",
+				"Shield",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage, and Jarund pushes the target 5 feet away from him if it's Large or smaller. Jarund then enters the space vacated by the target. If the target is pushed to within 5 feet of a creature friendly to Jarund, that creature can make an attack against the target as a reaction.",
+				"Javelin",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kadroth|IDROTF",
+			"s": [
+				"Kadroth"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kingsport|IDROTF",
+			"hint": {
+				"Hold Breath": "閉氣",
+				"Beak": "啄擊"
+			},
+			"s": [
+				"Kingsport",
+				"Hold Breath",
+				"Kingsport can hold its breath for 20 minutes.",
+				"Beak",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Knight of the Black Sword|IDROTF",
+			"s": [
+				"Knight of the Black Sword"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Knucklehead Trout|IDROTF",
+			"hint": {
+				"Water Breathing": "水下呼吸",
+				"Bite": "啃咬",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Knucklehead Trout",
+				"Water Breathing",
+				"The trout can breathe only underwater.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage.",
+				"Tail",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kobold Vampire Spawn|IDROTF",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Regeneration": "再生",
+				"Unusual Nature": "異常本質",
+				"Vampire Weaknesses": "吸血鬼弱點",
+				"Forbiddance": "禁入",
+				"Harmed by Running Water": "流水傷害",
+				"Stake to the Heart": "木樁穿心",
+				"Sunlight Hypersensitivity": "日光過敏",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Kobold Vampire Spawn",
+				"Pack Tactics",
+				"The vampire has advantage on an attack roll against a creature if at least one of the vampire's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Regeneration",
+				"The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of its next turn.",
+				"Unusual Nature",
+				"The vampire doesn't require air.",
+				"Vampire Weaknesses",
+				"The vampire has the following flaws:",
+				"Forbiddance",
+				"The vampire can't enter a residence without an invitation from one of the occupants.",
+				"Harmed by Running Water",
+				"The vampire takes 20 acid damage when it starts its turn in running water.",
+				"Stake to the Heart",
+				"The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is {@condition incapacitated} in its resting place.",
+				"Sunlight Hypersensitivity",
+				"The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.",
+				"Bite",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d4 + 4}) piercing damage plus 5 ({@damage 2d4}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Living Bigby's Hand|IDROTF",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Unusual Nature": "異常本質",
+				"Grasping Hand": "擒握之手"
+			},
+			"s": [
+				"Living Bigby's Hand",
+				"natural armor",
+				"(hover)",
+				"Magic Resistance",
+				"The living spell has advantage on saving throws against spells and other magical effects.",
+				"Unusual Nature",
+				"The living spell doesn't require air, food, drink, or sleep.",
+				"Force Fist",
+				"{@atk ms} {@hit 10} to hit, reach 5 ft., one target. {@h}26 ({@damage 4d8 + 8}) force damage. If the target is a Large or smaller creature, the living spell can move it up to 5 feet and move with it, without provoking opportunity attacks.",
+				"Grasping Hand",
+				"The living spell attempts to grab a Huge or smaller creature within 5 feet of it. The target must succeed on a {@dc 15} Dexterity saving throw or be {@condition grappled} (escape {@dc 15}). Until the grapple ends, the target takes 15 ({@damage 2d6 + 8}) bludgeoning damage at the start of each of its turns. The living spell can grapple only one creature at a time and can't use Force Fist until the grapple ends."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Living Blade of Disaster|IDROTF",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Unusual Nature": "異常本質"
+			},
+			"s": [
+				"Living Blade of Disaster",
+				"natural armor",
+				"(hover)",
+				"Magic Resistance",
+				"The living spell has advantage on saving throws against spells and other magical effects.",
+				"Unfettered",
+				"The living spell can move through any barrier, even a wall of magical force.",
+				"Unusual Nature",
+				"The living spell doesn't require air, food, drink, or sleep.",
+				"Force Blade",
+				"{@atk ms} {@hit 6} to hit, reach 5 ft., one target. {@h}26 ({@damage 4d12}) force damage, unless the living spell rolled an 18 or higher on the {@dice d20} for the attack, in which case the attack is a critical hit that deals 78 ({@damage 12d12}) force damage instead.",
+				"Preemptive Strike",
+				"The living spell makes a melee attack against a creature that starts its turn within 5 feet of the living spell."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Living Demiplane|IDROTF",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Unusual Nature": "異常本質"
+			},
+			"s": [
+				"Living Demiplane",
+				"Dimensional Form",
+				"The living spell can enter another creature's space and vice versa, and it can move through a space as narrow as 1 inch wide without squeezing. The living spell can't detach from a solid surface, such as a wall, ceiling, or floor. If it has no surface to attach to, the living spell is destroyed (see \"Planar Destruction\" below).",
+				"Extradimensional Chamber",
+				"When the living spell enters another creature's space (or vice versa) for the first time on a turn, the other creature must succeed on a {@dc 10} Dexterity saving throw or be pulled into the living spell's extradimensional space, an unfurnished stone chamber 30 feet in every dimension. A creature too big to fit in this space succeeds on the saving throw automatically. Creatures in the chamber never run out of breathable air. Magic that enables transit between planes, such as plane shift, can be used to escape the chamber, which has no exits otherwise. Creatures trapped inside the extradimensional chamber can't see, target, or deal damage to the living spell; however, they can damage the room around them. Each 5-foot-square section of ceiling, wall, and floor in the chamber has AC 17, 50 hit points, immunity to poison and psychic damage, and immunity to bludgeoning, piercing, and slashing damage that is nonmagical. If any section is reduced to 0 hit points, the living spell and its chamber are destroyed (see \"Planar Destruction\" below).",
+				"Magic Resistance",
+				"The living spell has advantage on saving throws against spells and other magical effects.",
+				"Planar Destruction",
+				"The living spell is destroyed when it or a 5-foot-square section of its extradimensional chamber is reduced to 0 hit points, or when the living spell has no surface to attach to. When the living spell is destroyed, the contents of its extradimensional chamber are expelled, appearing as close to the living spell's previous location as possible. Each expelled creature appears in a randomly determined unoccupied space, along with whatever it is wearing or carrying.",
+				"Unusual Nature",
+				"The living spell doesn't require air, food, drink, or sleep."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lonelywood Banshee|IDROTF",
+			"s": [
+				"Lonelywood Banshee"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mjenir|IDROTF",
+			"s": [
+				"Mjenir"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mountain Goat|IDROTF",
+			"hint": {
+				"Charge": "衝鋒",
+				"Sure-Footed": "腳步穩健",
+				"Ram": "衝撞"
+			},
+			"s": [
+				"Mountain Goat",
+				"Charge",
+				"If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 3 ({@damage 1d6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}.",
+				"Sure-Footed",
+				"The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}.",
+				"Ram",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nass Lantomir's Ghost|IDROTF",
+			"hint": {
+				"Spellcasting": "施法",
+				"Ethereal Sight": "乙太視覺",
+				"Incorporeal Movement": "虛體移動",
+				"Withering Touch": "凋萎之觸",
+				"Etherealness": "虛體化",
+				"Horrifying Visage": "駭人面容",
+				"Possession {@recharge}": "附身 {@recharge}"
+			},
+			"s": [
+				"Nass Lantomir's Ghost",
+				"Spellcasting",
+				"The ghost is a 6th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}). The ghost has the following wizard spells prepared:",
+				"Ethereal Sight",
+				"The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.",
+				"Incorporeal Movement",
+				"The ghost can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object.",
+				"Withering Touch",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}17 ({@damage 4d6 + 3}) necrotic damage.",
+				"Etherealness",
+				"The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.",
+				"Horrifying Visage",
+				"Each non-undead creature within 60 feet of the ghost that can see it must succeed on a {@dc 14} Wisdom saving throw or be {@condition frightened} for 1 minute. If the save fails by 5 or more, the target also ages {@dice 1d4 × 10} years. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the {@condition frightened} condition on itself on a success. If the target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed by a {@spell greater restoration} spell, but only if it is cast within 24 hours.",
+				"Possession {@recharge}",
+				"One humanoid that the ghost can see within 5 feet of it must succeed on a {@dc 14} Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is {@condition incapacitated} and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies. The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the {@spell dispel evil and good} spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Prisoner 237|IDROTF",
+			"hint": {
+				"Spellcasting": "施法"
+			},
+			"s": [
+				"Prisoner 237",
+				"(10 ft. while shackled)",
+				"Spellcasting",
+				"Prisoner 237 is a 5th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 13}; {@hit 5} to hit with spell attacks). He has the following wizard spells prepared:",
+				"*Prisoner 237 needs material components to cast these spells.",
+				"Shocking Grasp (Cantrip)",
+				"{@atk ms} {@hit 5} to hit (with advantage on the attack if the target is wearing armor made of metal), reach 5 ft., one creature. {@h}9 ({@damage 2d8}) lightning damage, and the target can't take reactions until the start of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Reghed Chieftain|IDROTF",
+			"s": [
+				"Reghed Chieftain"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Reghed Great Warrior|IDROTF",
+			"s": [
+				"Reghed Great Warrior"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Reghed Shaman|IDROTF",
+			"s": [
+				"Reghed Shaman"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Reghed Warrior|IDROTF",
+			"s": [
+				"Reghed Warrior"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Reindeer|IDROTF",
+			"s": [
+				"Reindeer"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Seal|IDROTF",
+			"hint": {
+				"Hold Breath": "閉氣",
+				"Keen Smell": "敏銳嗅覺",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Seal",
+				"Hold Breath",
+				"The seal can hold its breath for 15 minutes.",
+				"Keen Smell",
+				"The seal has advantage on Wisdom ({@skill Perception}) checks that rely on smell.",
+				"Bite",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sephek Kaltro|IDROTF",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Sephek Kaltro",
+				"Innate Spellcasting",
+				"Sephek can innately cast {@spell misty step} up to three times per day, requiring no components. His innate spellcasting ability is Charisma.",
+				"Cold Regeneration",
+				"If the temperature around him is 0 degrees Fahrenheit or lower, Sephek regains 5 hit points at the start of his turn. If he takes fire damage, this trait doesn't function at the start of Sephek's next turn. Sephek dies only if he starts his turn with 0 hit points and doesn't regenerate.",
+				"Multiattack",
+				"Sephek attacks twice with a weapon.",
+				"Ice Longsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if Sephek uses the weapon with two hands, plus 5 ({@damage 2d4}) cold damage.",
+				"Ice Dagger",
+				"{@atk rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage plus 5 ({@damage 2d4}) cold damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Snow Golem|IDROTF",
+			"hint": {
+				"Immutable Form": "不變形態",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Snow Golem",
+				"Cold Absorption",
+				"Whenever the golem is subjected to cold damage, it takes no damage and instead regains a number of hit points equal to the cold damage dealt.",
+				"Immutable Form",
+				"The golem is immune to any spell or effect that would alter its form.",
+				"Melt",
+				"While in an area of extreme heat, the golem loses {@dice 1d6} hit points at the start of each of its turns.",
+				"Unusual Nature",
+				"The golem doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The golem makes three melee attacks.",
+				"Slam",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage plus 7 ({@damage 2d6}) cold damage.",
+				"Snowball",
+				"{@atk rw} {@hit 0} to hit, range 60 ft., one target. {@h}9 ({@damage 2d6 + 2}) cold damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Snowy Owlbear|IDROTF",
+			"s": [
+				"Snowy Owlbear"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spellix Romwod|IDROTF",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Gnome Cunning": "地侏狡黠",
+				"Fire Bolt (Cantrip)": "火焰箭（戲法）"
+			},
+			"s": [
+				"Spellix Romwod",
+				"Innate Spellcasting",
+				"Spellix's spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He can innately cast the following spells, requiring no material components:",
+				"*See \"Actions\" below.",
+				"Gnome Cunning",
+				"Spellix has advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.",
+				"Shocking Grasp (Cantrip)",
+				"{@atk ms} {@hit 5} to hit (with advantage on the attack roll if the target is wearing armor made of metal), reach 5 ft., one creature. {@h}4 ({@damage 1d8}) lightning damage, and the target can't take reactions until the start of its next turn.",
+				"Fire Bolt (Cantrip)",
+				"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sperm Whale|IDROTF",
+			"hint": {
+				"Echolocation": "回聲定位",
+				"Hold Breath": "閉氣",
+				"Keen Hearing": "敏銳聽覺",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Sperm Whale",
+				"natural armor",
+				"Echolocation",
+				"The whale can't use its blindsight while {@condition deafened}.",
+				"Hold Breath",
+				"The whale can hold its breath for 90 minutes.",
+				"Keen Hearing",
+				"The whale has advantage on Wisdom ({@skill Perception}) checks that rely on hearing.",
+				"Multiattack",
+				"The whale makes two attacks: one with its bite and one with its tail.",
+				"Bite",
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}21 ({@damage 3d8 + 8}) piercing damage. If the target is a Large or smaller creature, it must succeed on a {@dc 14} Dexterity saving throw or be swallowed by the whale. A swallowed creature has {@quickref Cover||3||total cover} against attacks and other effects outside the whale, and it takes 3 ({@damage 1d6}) acid damage at the start of each of the whale's turns. If the whale takes 30 damage or more on a single turn from a creature inside it, the whale must succeed on a {@dc 16} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the whale. If the whale dies, a swallowed creature can escape from the corpse by using 20 feet of movement, exiting {@condition prone}.",
+				"Tail",
+				"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}18 ({@damage 3d6 + 8}) bludgeoning damage, or 37 ({@damage 6d6 + 16}) bludgeoning damage if the target is an object."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spitting Mimic|IDROTF",
+			"hint": {
+				"Shapechanger": "變形者",
+				"Adhesive (Object Form Only)": "黏著（僅限物體形態）",
+				"False Appearance (Object Form Only)": "擬態（僅限物體形態）",
+				"Grappler": "擒抱者",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Spitting Mimic",
+				"natural armor",
+				"Shapechanger",
+				"The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+				"Adhesive (Object Form Only)",
+				"The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also {@condition grappled} by it (escape {@dc 16}). Ability checks made to escape this grapple have disadvantage.",
+				"False Appearance (Object Form Only)",
+				"While the mimic remains motionless, it is indistinguishable from an ordinary object.",
+				"Grappler",
+				"The mimic has advantage on attack rolls against any creature {@condition grappled} by it.",
+				"Magic Resistance",
+				"The mimic has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The mimic attacks three times: twice with its pseudopods and once with its bite.",
+				"Pseudopods",
+				"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait.",
+				"Bite",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}10 ({@damage 1d10 + 5}) piercing damage plus 7 ({@damage 2d6}) acid damage.",
+				"Spit Acid {@recharge 5}",
+				"The mimic spits acid at one creature it can see within 30 feet of it. The target must make a {@dc 14} Dexterity saving throw, taking 32 ({@damage 9d6 + 1}) acid damage on failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Telepathic Pentacle|IDROTF",
+			"s": [
+				"Telepathic Pentacle"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tomb Tapper|IDROTF",
+			"hint": {
+				"Sense Magic": "感知魔法",
+				"Tunneler": "掘地者",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊",
+				"Sledgehammer": "長柄鐵鎚"
+			},
+			"s": [
+				"Tomb Tapper",
+				"natural armor",
+				"Petrified Death",
+				"A tomb tapper reduced to 0 hit points turns into a lifeless stone statue. Anything it's wearing or carrying is not transformed.",
+				"Sense Magic",
+				"The tomb tapper senses magic within 30 feet of it and can use an action to pinpoint the location of any creature, object, or area in that range that bears magic. This sense penetrates barriers but is blocked by a thin sheet of lead.",
+				"Tunneler",
+				"The tomb tapper can burrow through solid rock at half its burrowing speed and leaves a 10-foot-wide, 20-foot-tall tunnel in its wake.",
+				"Unusual Nature",
+				"The tomb tapper doesn't require air or sleep.",
+				"Multiattack",
+				"The tomb tapper makes two melee attacks with its sledgehammer or with its claws. If it hits the same creature with both claws, it can pull that creature within 5 feet of its mouth and make a bite attack against it.",
+				"Bite",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 6}) slashing damage.",
+				"Claw",
+				"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage.",
+				"Sledgehammer",
+				"{@atk mw,rw} {@hit 10} to hit, reach 15 ft. or range 30/120 ft., one target. {@h}27 ({@damage 6d6 + 6}) bludgeoning or force damage (tomb tapper's choice). If thrown, the hammer returns to the tomb tapper at the end of its turn, landing at the tomb tapper's feet if it doesn't have a hand free to catch the weapon."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tribal Warrior Spore Servant|IDROTF",
+			"s": [
+				"Tribal Warrior Spore Servant"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vellynne Harpell|IDROTF",
+			"hint": {
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Chill Touch (Cantrip)": "顫慄之觸（戲法）",
+				"Wand of Magic Missiles": "魔法飛彈魔杖"
+			},
+			"s": [
+				"Vellynne Harpell",
+				"Spellcasting",
+				"Vellynne is an 8th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). She has the following wizard spells prepared:",
+				"Special Equipment",
+				"Vellynne wears {@item bracers of defense} and carries a {@item wand of magic missiles} (see \"Actions\" below).",
+				"Vampiric Touch (3rd-Level Spell; Requires a Spell Slot)",
+				"{@atk ms} {@hit 6} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) necrotic damage, and Vellynne regains hit points equal to half the necrotic damage dealt. If Vellynne casts this spell using a spell slot of 4th level or higher, the necrotic damage increases by {@damage 1d6} for each slot level above 3rd.",
+				"Chill Touch (Cantrip)",
+				"{@atk rs} {@hit 6} to hit, range 120 ft., one creature. {@h}9 ({@damage 2d8}) necrotic damage, and the target can't regain hit points until the start of Vellynne's next turn.",
+				"Wand of Magic Missiles",
+				"While holding this wand, Vellynne can expend 1 or more of its 7 charges to cast the {@spell magic missile} spell from it. She can expend 1 charge to cast the 1st-level version of the spell. She can increase the spell slot level by one for each additional charge she expends. The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If the wand's last charge is expended, roll a {@dice d20}; on a 1, the wand crumbles into ashes and is destroyed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Verbeeg Longstrider|IDROTF",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Multiattack": "多重攻擊",
+				"Spear": "矛",
+				"Sling": "投石索"
+			},
+			"s": [
+				"Verbeeg Longstrider",
+				"Innate Spellcasting",
+				"The verbeeg's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components:",
+				"Simple Weapon Wielder",
+				"A simple weapon deals one extra die of its damage when the verbeeg hits with it (included in the attack).",
+				"Multiattack",
+				"The verbeeg makes two melee attacks.",
+				"Spear",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}14 ({@damage 3d6 + 4}) piercing damage, or 17 ({@damage 3d8 + 4}) piercing damage if used to make a ranged attack or used with two hands to make a melee attack.",
+				"Sling",
+				"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}9 ({@damage 3d4 + 2}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 15} Constitution saving throw or be {@condition stunned} until the end of its next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Verbeeg Marauder|IDROTF",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Spear": "矛"
+			},
+			"s": [
+				"Verbeeg Marauder",
+				"Simple Weapon Wielder",
+				"A simple weapon deals one extra die of its damage when the verbeeg hits with it (included in the attack).",
+				"Multiattack",
+				"The verbeeg makes two melee attacks.",
+				"Spear",
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}14 ({@damage 3d6 + 4}) piercing damage, or 17 ({@damage 3d8 + 4}) piercing damage if used to make a ranged attack or used with two hands to make a melee attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Walrus|IDROTF",
+			"hint": {
+				"Hold Breath": "閉氣",
+				"Tusks": "獠牙"
+			},
+			"s": [
+				"Walrus",
+				"Hold Breath",
+				"The walrus can hold its breath for 10 minutes.",
+				"Tusks",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Xardorok Sunblight|IDROTF",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Duergar Resilience": "灰矮人韌性",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Spiked Gauntlet": "尖刺護手",
+				"Eldritch Blast (Cantrip)": "魔能爆（戲法）",
+				"Enlarge (Recharges after a Short or Long Rest)": "變巨（短休或長休後充能）",
+				"Invisibility {@recharge 4}": "隱形 {@recharge 4}",
+				"Hellish Rebuke (2/Day)": "煉獄叱喝（每日 2 次）"
+			},
+			"s": [
+				"Xardorok Sunblight",
+				"Innate Spellcasting",
+				"Xardorok's innate spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). He can innately cast the following spells, requiring no material components:",
+				"Duergar Resilience",
+				"Xardorok has advantage on saving throws against poison, spells, and illusions, as well as to resist being {@condition charmed} or {@condition paralyzed}.",
+				"Sunlight Sensitivity",
+				"While in sunlight, Xardorok has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Multiattack",
+				"Xardorok attacks twice with a weapon or casts {@spell eldritch blast} twice.",
+				"Spiked Gauntlet",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, or 8 ({@damage 2d4 + 3}) piercing damage while Xardorok is enlarged.",
+				"Eldritch Blast (Cantrip)",
+				"{@atk rs} {@hit 7} to hit, range 120 ft., one creature. {@h}9 ({@damage 1d10 + 4}) force damage.",
+				"Enlarge (Recharges after a Short or Long Rest)",
+				"For 1 minute, Xardorok magically increases in size, along with anything he is wearing or carrying. While enlarged, Xardorok is Large, doubles his damage dice on Strength-based weapon attacks (included in his attacks), and makes Strength checks and Strength saving throws with advantage. If Xardorok lacks the room to become Large, he attains the maximum size possible in the space available.",
+				"Invisibility {@recharge 4}",
+				"Xardorok magically turns {@condition invisible} until he attacks, he casts a spell, he uses his Enlarge, or his {@status concentration} is broken (as if {@status concentration||concentrating} on a spell). Any equipment Xardorok wears or carries is {@condition invisible} with him.",
+				"Hellish Rebuke (2/Day)",
+				"When Xardorok is damaged by a creature within 60 feet of him that he can see, the creature that damaged him is engulfed in hellish flames and must make a {@dc 15} Dexterity saving throw, taking 16 ({@damage 3d10}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yeti Tyke|IDROTF",
+			"hint": {
+				"Keen Smell": "敏銳嗅覺",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Yeti Tyke",
+				"natural armor",
+				"Keen Smell",
+				"The yeti has advantage on Wisdom ({@skill Perception}) checks that rely on smell.",
+				"Snow Camouflage",
+				"The yeti has advantage on Dexterity ({@skill Stealth}) checks made to hide in snowy terrain.",
+				"Claw",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) slashing damage plus 2 ({@damage 1d4}) cold damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Griffon (Medium)|IDROTF",
+			"s": [
+				"Young Griffon (Medium)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Griffon (Small)|IDROTF",
+			"s": [
+				"Young Griffon (Small)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Griffon (Tiny)|IDROTF",
+			"s": [
+				"Young Griffon (Tiny)"
+			]
+		}
+	]
+}
