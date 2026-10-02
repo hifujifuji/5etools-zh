@@ -509,6 +509,133 @@
 		],
 		"ENG_name": "Arch-hag"
 	},
+	"Archdevil|COA": {
+		"name": "大魔鬼",
+		"source": "CoA",
+		"page": 235,
+		"lairActions": [
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "攻擊",
+						"entries": [
+							"大魔鬼對單一敵人使用一項可用的近戰或遠程攻擊。"
+						],
+						"ENG_name": "Attack"
+					},
+					{
+						"type": "item",
+						"name": "施展法術",
+						"entries": [
+							"大魔鬼使用其施法特性施展一個可用的法術。若該法術通常需要{@status concentration||專注}，則改為持續完整的持續時間。"
+						],
+						"ENG_name": "Cast a Spell"
+					},
+					{
+						"type": "item",
+						"name": "欺瞞低語",
+						"entries": [
+							"大魔鬼向 30 呎內一個能看見的生物低語。目標必須進行一次 {@dc 22} 感知豁免檢定。豁免失敗時，目標陷入魅惑狀態直到其下個回合開始，並必須立即用反應對大魔鬼的一名敵人（由大魔鬼選擇）進行一次攻擊。"
+						],
+						"ENG_name": "Deceitful Whispers"
+					},
+					{
+						"type": "item",
+						"name": "邪魔堅毅",
+						"entries": [
+							"大魔鬼使一項已消耗的能力充能。"
+						],
+						"ENG_name": "Fiendish Fortitude"
+					},
+					{
+						"type": "item",
+						"name": "狂亂",
+						"entries": [
+							"大魔鬼對自己施展{@spell Haste}。此效應在下一輪的先攻順位 20 結束。"
+						],
+						"ENG_name": "Frenzy"
+					},
+					{
+						"type": "item",
+						"name": "召喚部下",
+						"entries": [
+							"大魔鬼召喚友方魔鬼。被召喚的魔鬼取決於使用此特性的大魔鬼。被召喚的魔鬼出現在大魔鬼能看見的未被佔據空間。{@table Archdevil Lair Action List; Summoned Underlings|CoA|召喚部下}表列出每位大魔鬼能召喚哪些魔鬼。"
+						],
+						"ENG_name": "Summon Underlings"
+					},
+					{
+						"type": "item",
+						"name": "傳送",
+						"entries": [
+							"大魔鬼將自己傳送到 120 呎內一處能看見的區域。"
+						],
+						"ENG_name": "Teleport"
+					},
+					{
+						"type": "item",
+						"name": "陷阱",
+						"entries": [
+							"大魔鬼施展{@spell Hold Monster}法術。"
+						],
+						"ENG_name": "Trap"
+					}
+				]
+			}
+		],
+		"ENG_name": "Archdevil"
+	},
+	"Asmodeus|COA": {
+		"name": "阿斯莫德",
+		"source": "CoA",
+		"page": 216,
+		"_copy": {
+			"name": "Archdevil",
+			"source": "CoA",
+			"_mod": {
+				"lairActions": {
+					"mode": "prependArr",
+					"items": [
+						"On initiative count 20 (losing initiative ties), Asmodeus can take one lair action to cause the following effect or one from the archdevil lair action list (page 214); he can't take the same lair action two rounds in a row:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Cleansing Flame",
+									"entries": [
+										"Asmodeus selects one spell effect on himself or a creature of his choice within 60 feet. That spell effect is removed."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"regionalEffects": [
+			"阿斯莫德巢穴所在的區域會被它的存在腐化，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "魔鬼的問候",
+						"entries": [
+							"在它巢穴 500 哩內，會出現一個阿斯莫德的幻象（如同它施展了{@spell Project Image}法術）。阿斯莫德試圖與角色交談並解讀他們的意圖。若他們懷有敵意，阿斯莫德會假裝準備戰鬥，藉此讓角色們浪費資源。"
+						],
+						"ENG_name": "The Devil's Greeting"
+					}
+				]
+			},
+			"若阿斯莫德死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Asmodeus"
+	},
 	"Aurnozci|BMT": {
 		"name": "奧諾茲奇",
 		"source": "BMT",
@@ -556,6 +683,83 @@
 			"若奧諾茲奇死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
 		],
 		"ENG_name": "Aurnozci"
+	},
+	"Baalzebul|COA": {
+		"name": "巴力西卜",
+		"source": "CoA",
+		"page": 218,
+		"_copy": {
+			"name": "Archdevil",
+			"source": "CoA",
+			"_mod": {
+				"lairActions": {
+					"mode": "prependArr",
+					"items": [
+						"On initiative count 20 (losing initiative ties), Baalzebul can take one lair action to cause the following effect or one from the archdevil lair action list (page 214); he can't take the same lair action two rounds in a row:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Protective Burrow",
+									"entries": [
+										"Baalzebul uses his burrow speed to dig into the ground. He gains half-cover when buried 10 feet and {@quickref Cover||3||three-quarters cover} at 20 feet."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"regionalEffects": [
+			"巴力西卜巢穴所在的區域會被它的存在腐化，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "污穢",
+						"entries": [
+							"在巢穴 1 哩內，惡臭的穢物堆會憑空累積。整個區域覆滿垃圾與糞便，視為{@quickref difficult terrain||3||困難地形}。"
+						],
+						"ENG_name": "Filth"
+					}
+				]
+			},
+			"若巴力西卜死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Baalzebul"
+	},
+	"Baalzebul|MABJOV": {
+		"name": "巴力西卜",
+		"source": "MaBJoV",
+		"page": 91,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），巴力西卜可以採取一個巢穴動作以產生下列效應之一；巴力西卜不能連續兩輪使用相同的效應：",
+			{
+				"type": "list",
+				"items": [
+					"巴力西卜施展它天生的怪物定身術。",
+					"巴力西卜在以它為中心、半徑 5 呎的範圍內放出黏液。任何在回合開始時站在這黏液中的生物視為陷入{@condition grappled}狀態，並必須用動作成功通過 {@dc 17} 力量（{@skill Athletics}）檢定才能掙脫。",
+					"巴力西卜以掘穴速度的一半鑽入地下。它埋入 10 呎深時獲得半掩護，20 呎深時獲得{@quickref Cover||3||四分之三掩護}。"
+				]
+			}
+		],
+		"regionalEffects": [
+			"巴力西卜巢穴所在的區域會被它的存在腐化，產生下列效應中的一項或多項：",
+			{
+				"type": "list",
+				"items": [
+					"在巴力西卜巢穴 1 哩內，惡臭的穢物堆會憑空累積。整個區域覆滿垃圾與糞便，視為{@quickref difficult terrain||3||困難地形}。",
+					"在巢穴 2 哩內，空中滿是嗡嗡作響的蒼蠅。任何在此區域內完成短休或長休的生物必須成功通過一次 {@dc 22} 感知豁免檢定，否則無法從該次休息中獲得任何益處。"
+				]
+			},
+			"若巴力西卜死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Baalzebul"
 	},
 	"Baernaloth|MPP": {
 		"name": "貝納羅斯魔",
@@ -909,6 +1113,55 @@
 		],
 		"ENG_name": "Beholder"
 	},
+	"Bel|COA": {
+		"name": "貝爾",
+		"source": "CoA",
+		"page": 234,
+		"_copy": {
+			"name": "Archdevil",
+			"source": "CoA",
+			"_mod": {
+				"lairActions": {
+					"mode": "prependArr",
+					"items": [
+						"On initiative count 20 (losing initiative ties), Bel can take one lair action to cause the following effect or one from the archdevil lair action list (page 214); he can't take the same lair action two rounds in a row:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Transmute",
+									"entries": [
+										"If Bel has cast {@spell Wall of Fire}, that wall becomes a permanent Wall of Stone instead (doesn't require {@status concentration})."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"regionalEffects": [
+			"貝爾巢穴所在的區域會被它的存在腐化，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "熔岩",
+						"entries": [
+							"巢穴 3 哩內有無數條熔岩河。任何首次進入熔岩或在其中開始其回合者受到 33（{@damage 6d10}）火焰傷害。"
+						],
+						"ENG_name": "Lava"
+					}
+				]
+			},
+			"若貝爾死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Bel"
+	},
 	"Belashyrra|ERLW": {
 		"name": "貝拉希拉",
 		"source": "ERLW",
@@ -937,6 +1190,55 @@
 			"若貝拉希拉死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
 		],
 		"ENG_name": "Belashyrra"
+	},
+	"Belial|COA": {
+		"name": "貝利爾",
+		"source": "CoA",
+		"page": 220,
+		"_copy": {
+			"name": "Archdevil",
+			"source": "CoA",
+			"_mod": {
+				"lairActions": {
+					"mode": "prependArr",
+					"items": [
+						"On initiative count 20 (losing initiative ties), Belial can take one lair action to cause the following effect or one from the archdevil lair action list (page 214); he can't take the same lair action two rounds in a row:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Slow Torture",
+									"entries": [
+										"Every creature within 100 feet whose movement is currently reduced because of the Ranseur of Torture, takes 11 ({@damage 2d10}) fire damage and 11 ({@damage 2d10}) piercing damage."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"regionalEffects": [
+			"貝利爾巢穴所在的區域會被它的存在腐化，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "煙雲",
+						"entries": [
+							"巢穴 1 哩內升起一片離地 3 呎高的廣闊濃霧，完全遮蔽地面。任何在回合開始時處於倒地狀態的生物必須成功通過一次 {@dc 22} 體質豁免檢定，否則因被毒煙嗆住而受到 7（{@damage 2d12}）死靈傷害。"
+						],
+						"ENG_name": "Smoke-cloud"
+					}
+				]
+			},
+			"若貝利爾死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Belial"
 	},
 	"Bheur Hag|VGM": {
 		"name": "冬靈鬼婆",
@@ -1626,6 +1928,35 @@
 		],
 		"ENG_name": "Copper Dragon"
 	},
+	"Cryonax|MABJOV": {
+		"name": "克里奧納斯",
+		"source": "MaBJoV",
+		"page": 97,
+		"lairActions": [
+			"克里奧納斯身處霜墜之地，或任何因它棲居至少一週而被腐化的區域時，可以號令周圍的冰雪來採取巢穴動作。在先攻順位 20（先攻相同時最後行動），克里奧納斯可以採取一個巢穴動作造成下列效應之一；克里奧納斯不能連續兩輪使用相同的效應：",
+			{
+				"type": "list",
+				"items": [
+					"冰雪在克里奧納斯周圍半徑 60 呎內爆開。這會產生一片夾雜冰雹與大塊冰塊的冰凍霧氣，使該區域重度遮蔽，並持續到下一輪的先攻順位 20。效應區域內的所有生物受到 13（{@damage 3d8}）寒冰傷害，並必須進行一次 {@dc 20} 感知豁免檢定，否則陷入{@condition blinded}狀態直到下一輪的先攻順位 20。",
+					"以克里奧納斯為中心、寬（與高）120 呎的半球內空氣凍結。此效應形成數百根銳利的冰柱。這些冰柱立即砸落地面，對效應區域內的所有人造成 14（{@damage 4d6}）劈砍傷害（若成功通過 {@dc 22} 敏捷豁免檢定則傷害減半）。之後該地形變為困難地形，且任何在其中陷入{@condition prone}狀態者會再次受到該傷害（無豁免檢定）。",
+					"冰凍的地面隆起，將巨大的岩塊與冰塊拋向空中。{@dice 1d8} 根三十呎高的石筍拔地而起，克里奧納斯周圍半徑 30 呎內的所有生物必須進行一次 {@dc 24} 敏捷豁免檢定，否則受到 9（{@damage 2d8}）鈍擊傷害並陷入{@condition prone}狀態。"
+				]
+			}
+		],
+		"regionalEffects": [
+			"克里奧納斯巢穴所在的區域會被它的存在扭曲，產生下列效應中的一項或多項：",
+			{
+				"type": "list",
+				"items": [
+					"在巢穴十哩內，所有的水都已結冰，任何降水都會變成厚重的雪與冰雹。",
+					"巢穴下方的地面正在凍結，使大地隆起變形。巢穴 5 哩內經常發生地震。五天後，任何木造或更脆弱的建築都會倒塌；10 天內，石造建築也會被摧毀。在此區域內每經過一小時，有十分之一的機率發生地震，迫使克里奧納斯以外的所有人進行一次 {@dc 22} 敏捷豁免檢定，否則陷入{@condition prone}狀態並受到 9（{@damage 2d8}）鈍擊傷害。",
+					"在巢穴內克里奧納斯所在位置的 1 哩內，空氣變得刺骨寒冷且難以呼吸。在此區域內每經過一小時，每個活物必須進行一次 {@dc 15} 體質豁免檢定，否則獲得一級{@condition exhaustion}。"
+				]
+			},
+			"若克里奧納斯被摧毀或被放逐回其故鄉位面，這些區域效應會在接下來 {@dice 1d10} 週內逐漸消退。"
+		],
+		"ENG_name": "Cryonax"
+	},
 	"Crystal Dragon|FTD": {
 		"name": "水晶龍",
 		"source": "FTD",
@@ -2088,6 +2419,55 @@
 		],
 		"ENG_name": "Demogorgon"
 	},
+	"Dispater|COA": {
+		"name": "狄斯帕特",
+		"source": "CoA",
+		"page": 222,
+		"_copy": {
+			"name": "Archdevil",
+			"source": "CoA",
+			"_mod": {
+				"lairActions": {
+					"mode": "prependArr",
+					"items": [
+						"On initiative count 20 (losing initiative ties), Dispater can take one lair action to cause the following effect or one from the archdevil lair action list (page 214); he can't take the same lair action two rounds in a row:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Buckle",
+									"entries": [
+										"The area in a 120-foot-radius around Dispater bends and twists, becoming {@quickref difficult terrain||3}. Dispater's Superheat Metal ability is recharged."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"regionalEffects": [
+			"狄斯帕特巢穴所在的區域會被它的存在腐化，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "喧囂",
+						"entries": [
+							"在巢穴 6 哩內，金屬敲打的聲響幾乎無處可躲。任何生物仍可以嘗試短休或長休，但之後必須進行一次 {@dc 21} 體質豁免檢定。失敗會使這次休息的所有益處失效。"
+						],
+						"ENG_name": "Din"
+					}
+				]
+			},
+			"若狄斯帕特死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Dispater"
+	},
 	"Dracolich|XMM": {
 		"name": "巫妖龍",
 		"source": "XMM",
@@ -2474,6 +2854,55 @@
 			}
 		],
 		"ENG_name": "Fazrian"
+	},
+	"Fierna|COA": {
+		"name": "菲爾娜",
+		"source": "CoA",
+		"page": 225,
+		"_copy": {
+			"name": "Archdevil",
+			"source": "CoA",
+			"_mod": {
+				"lairActions": {
+					"mode": "prependArr",
+					"items": [
+						"On initiative count 20 (losing initiative ties), Fierna can take one lair action to cause the following effect or one from the archdevil lair action list (page 214); she can't take the same lair action two rounds in a row:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Fiery Reversal",
+									"entries": [
+										"Fierna exchanges places with a creature she can see within 30 feet of her. Both her old location and her new location erupt into flames that persist for 1 minute. Anyone entering either flame must succeed on a {@dc 21} Constitution saving throw or take 28 ({@damage 8d6}) fire damage."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"regionalEffects": [
+			"菲爾娜巢穴所在的區域會被她的存在腐化，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "煙雲",
+						"entries": [
+							"巢穴 1 哩內升起一片離地 3 呎高的廣闊濃霧，完全遮蔽地面。任何在回合開始時處於倒地狀態的生物必須成功通過一次 {@dc 22} 體質豁免檢定，否則因被毒煙嗆住而受到 7（{@damage 2d12}）死靈傷害。"
+						],
+						"ENG_name": "Smoke-cloud"
+					}
+				]
+			},
+			"若菲爾娜死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Fierna"
 	},
 	"Fraz-Urb'luu|MPMM": {
 		"name": "弗拉茲厄布魯",
@@ -2890,6 +3319,55 @@
 		],
 		"ENG_name": "Githzerai Anarch"
 	},
+	"Glasya|COA": {
+		"name": "格萊希亞",
+		"source": "CoA",
+		"page": 226,
+		"_copy": {
+			"name": "Archdevil",
+			"source": "CoA",
+			"_mod": {
+				"lairActions": {
+					"mode": "prependArr",
+					"items": [
+						"On initiative count 20 (losing initiative ties), Glasya can take one lair action to cause the following effect or one from the archdevil lair action list (page 214); she can't take the same lair action two rounds in a row:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Change Appearance",
+									"entries": [
+										"Glasya polymorphs into a Small or Medium Humanoid she has seen, or back into her true form. Her statistics, other than her size, are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her true form if she dies."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"regionalEffects": [
+			"格萊希亞巢穴所在的區域會被她的存在腐化，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "鬼婆的凝視",
+						"entries": [
+							"善良生物在巢穴 1 哩內每行進一小時，便有一道火焰從巢穴的一個眼窩中噴出。若目標 {@dc 23} 敏捷豁免檢定失敗，受到 42（{@damage 12d6}）火焰傷害，成功則傷害減半。若該生物正在飛行且豁免失敗，它會墜落。每小時只會有一個這樣的生物成為目標。"
+						],
+						"ENG_name": "Hag's Gaze"
+					}
+				]
+			},
+			"若格萊希亞死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Glasya"
+	},
 	"Gold Dragon|MM": {
 		"name": "金龍",
 		"source": "MM",
@@ -3147,6 +3625,37 @@
 			}
 		],
 		"ENG_name": "Graz'zt"
+	},
+	"Greater Tyrant Shadow|COA": {
+		"name": "高等暴君陰影",
+		"source": "CoA",
+		"page": 254,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），高等暴君陰影可以採取一個巢穴動作以產生下列效應；它不能連續兩輪採取相同的巢穴動作：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "絕望",
+						"entries": [
+							"陰影 300 呎內的一個生物必須成功通過一次 {@dc 22} 魅力豁免檢定，否則被絕望與自我懷疑淹沒。該生物陷入震懾狀態 1 分鐘。該生物可以在它每個回合結束時重複豁免檢定，成功則結束此效應。"
+						],
+						"ENG_name": "Despair"
+					},
+					{
+						"type": "item",
+						"name": "更新",
+						"entries": [
+							"陰影使它的死亡陰影能力充能。"
+						],
+						"ENG_name": "Renewal"
+					}
+				]
+			}
+		],
+		"ENG_name": "Greater Tyrant Shadow"
 	},
 	"Green Dragon|MM": {
 		"name": "綠龍",
@@ -3902,6 +4411,55 @@
 		],
 		"ENG_name": "Kyrilla, Accursed Gorgon"
 	},
+	"Levistus|COA": {
+		"name": "萊維斯圖斯",
+		"source": "CoA",
+		"page": 228,
+		"_copy": {
+			"name": "Archdevil",
+			"source": "CoA",
+			"_mod": {
+				"lairActions": {
+					"mode": "prependArr",
+					"items": [
+						"On initiative count 20 (losing initiative ties), Levistus can take one lair action to cause the following effect or one from the archdevil lair action list (page 214); he can't take the same lair action two rounds in a row:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Icemaw",
+									"entries": [
+										"One creature within 60 feet of Levistus, that he can see, must make a {@dc 23} Dexterity saving throw. If a creature fails the saving throw, they sink half of their height into the ice and have the grappled condition (escape {@dc 21}) and their movement becomes 0. If a creature already affected by Icemaw is affected by it a second time, they sink completely into the ice and begin suffocating."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"regionalEffects": [
+			"萊維斯圖斯巢穴所在的冰封區域會被它的存在腐化，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "冰封大地",
+						"entries": [
+							"巢穴 1 哩內任何處於倒地或昏迷狀態的生物在其回合開始時受到 21（{@damage 6d6}）寒冰傷害。"
+						],
+						"ENG_name": "Frozen Landscape"
+					}
+				]
+			},
+			"若萊維斯圖斯死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Levistus"
+	},
 	"Lich|MM": {
 		"name": "巫妖",
 		"source": "MM",
@@ -4067,6 +4625,55 @@
 		],
 		"ENG_name": "Malaxxix"
 	},
+	"Mammon|COA": {
+		"name": "瑪門",
+		"source": "CoA",
+		"page": 230,
+		"_copy": {
+			"name": "Archdevil",
+			"source": "CoA",
+			"_mod": {
+				"lairActions": {
+					"mode": "prependArr",
+					"items": [
+						"On initiative count 20 (losing initiative ties), Mammon can take one lair action to cause the following effect or one from the archdevil lair action list (page 214); he can't take the same lair action two rounds in a row:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Greedy",
+									"entries": [
+										"A creature of Mammon's choice automatically fails their next saving throw."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"regionalEffects": [
+			"瑪門巢穴所在的區域會被它的存在腐化，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "腐爛植被",
+						"entries": [
+							"在巢穴 3 哩內，植物更加病弱腐敗，水源遭到污染且帶有毒性。不是邪魔的生物若食用或飲用這些來源的食物或水，必須成功通過一次 {@dc 19} 體質豁免檢定，否則死亡。"
+						],
+						"ENG_name": "Rotting Vegetation"
+					}
+				]
+			},
+			"若瑪門死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Mammon"
+	},
 	"Marlos Urnrayle|POTA": {
 		"name": "馬洛斯．沃雷",
 		"source": "PotA",
@@ -4076,6 +4683,82 @@
 			"馬洛斯的第二個巢穴動作選項是從土元素節點汲取力量以治療自己。這麼做時，他恢復 30（{@dice 6d8 + 3}）點生命值。"
 		],
 		"ENG_name": "Marlos Urnrayle"
+	},
+	"Mephistopheles|COA": {
+		"name": "梅菲斯托費勒斯",
+		"source": "CoA",
+		"page": 232,
+		"_copy": {
+			"name": "Archdevil",
+			"source": "CoA",
+			"_mod": {
+				"lairActions": {
+					"mode": "prependArr",
+					"items": [
+						"On initiative count 20 (losing initiative ties), Mephistopheles can take one lair action to cause the following effect or one from the archdevil lair action list (page 214); he can't take the same lair action two rounds in a row:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Conjure Hellfire",
+									"entries": [
+										"Mephistopheles covers a 5-foot square with Hellfire. Any creature that starts their turn in the Hellfire takes 27 ({@damage 6d8}) fire damage. The Hellfire remains until Mephistopheles dismisses it."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"regionalEffects": [
+			"梅菲斯托費勒斯巢穴所在的區域會被它的存在腐化，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "間歇泉",
+						"entries": [
+							"在梅菲斯托費勒斯巢穴 1 哩內，每移動 100 呎便會有一道火焰間歇泉噴發。間歇泉噴發時位於其 10 呎內的生物必須成功通過一次 {@dc 22} 敏捷豁免檢定，否則受到 10（{@damage 3d6}）火焰傷害。間歇泉會持續噴發 24 小時。"
+						],
+						"ENG_name": "Geysers"
+					}
+				]
+			},
+			"若梅菲斯托費勒斯死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Mephistopheles"
+	},
+	"Mephistopheles|MABJOV": {
+		"name": "梅菲斯托費勒斯",
+		"source": "MaBJoV",
+		"page": 99,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），梅菲斯托費勒斯可以採取一個巢穴動作以產生下列效應之一；梅菲斯托費勒斯不能連續兩輪使用相同的效應：",
+			{
+				"type": "list",
+				"items": [
+					"梅菲斯托費勒斯施展其法師法術列表中的任一法術；若該法術通常需要{@status concentration||專注}，則改為持續完整的持續時間。",
+					"梅菲斯托費勒斯以獄火覆蓋一塊 5 呎的區域。任何在該區域開始其回合的生物受到 27（{@damage 6d8}）火焰傷害。獄火會持續到梅菲斯托費勒斯將它解除或再次使用此能力為止。"
+				]
+			}
+		],
+		"regionalEffects": [
+			"梅菲斯托費勒斯巢穴所在的區域會被它的存在腐化，產生下列效應中的一項或多項：",
+			{
+				"type": "list",
+				"items": [
+					"烈焰之風席捲梅菲斯托費勒斯巢穴 2 哩內的區域。任何具有火焰傷害易傷的生物，在如此靠近巢穴之處每待一小時便獲得 1 級{@condition exhaustion}。",
+					"在梅菲斯托費勒斯巢穴 2 哩內，每移動 60 呎便會有一道火焰間歇泉噴發。間歇泉出現時，觸發它出現的生物若 DC 22 敏捷豁免檢定失敗，受到 10（{@damage 3d6}）火焰傷害。若豁免成功，傷害減半。間歇泉會持續一天。"
+				]
+			},
+			"若梅菲斯托費勒斯死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Mephistopheles"
 	},
 	"Merrenoloth|MPMM": {
 		"name": "梅倫羅斯魔",
@@ -4771,6 +5454,34 @@
 			}
 		],
 		"ENG_name": "Pazrodine"
+	},
+	"Pazuzu|MABJOV": {
+		"name": "帕祖祖",
+		"source": "MaBJoV",
+		"page": 103,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），帕祖祖可以採取一個巢穴動作造成下列效應之一；帕祖祖不能連續兩輪使用相同的效應：",
+			{
+				"type": "list",
+				"items": [
+					"帕祖祖開啟一道傳送門，召喚出 {@dice 1d4} 隻{@creature peryton||佩利冬}或{@creature gargoyle||石像鬼}。",
+					"帕祖祖施展{@spell insect plague}，但不需要專注來維持。這些昆蟲造成 33（{@damage 6d10}）穿刺傷害。",
+					"帕祖祖以心靈感應對它 120 呎內的所有生物說話，並向每個生物許以其最渴望之物。每個目標必須成功通過一次 {@dc 21} 魅力豁免檢定，否則因思索這個抉擇而失去下一個動作。善良陣營的目標可以自願讓豁免檢定失敗，並放棄其動作以同意帕祖祖的條件。若是如此，且它有{@spell wish}法術可用，只要看不出這麼做會有立即的負面後果，它便會施展該法術。帕祖祖不會承受施展{@spell wish}法術的任何負面效應。"
+				]
+			}
+		],
+		"regionalEffects": [
+			"帕祖祖巢穴所在的區域會被它的存在扭曲，產生下列效應中的一項或多項：",
+			{
+				"type": "list",
+				"items": [
+					"帕祖祖一哩內吹著一陣溫熱而甜膩得令人作嘔的勁風。每天首次遇到這陣風時，每個生物必須進行一次 {@dc 21} 體質豁免檢定，否則立即嘔吐並受到 14（{@damage 4d6}）死靈傷害。豁免失敗者同時陷入{@condition poisoned}狀態一小時。",
+					"任何 CR 2 或更低的飛行生物在帕祖祖 6 哩內待上一天後會變得扭曲。若它們原本並非邪惡陣營，也會變成邪惡陣營。飛蟲、鳥類與其他飛行生物會騷擾任何穿越此區域的其他生物，使其移動速度減半。"
+				]
+			},
+			"若帕祖祖死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Pazuzu"
 	},
 	"Red Dragon|MM": {
 		"name": "紅龍",
@@ -5609,6 +6320,33 @@
 			"若龍死亡或將巢穴遷往他處，這些效應會立即結束。"
 		],
 		"ENG_name": "Spirit Dragon"
+	},
+	"Ssendam, Lord of Madness|MABJOV": {
+		"name": "瘋狂之主森丹",
+		"source": "MaBJoV",
+		"page": 105,
+		"lairActions": [
+			"在先攻順位 20（先攻相同時最後行動），森丹可以採取一個巢穴動作以產生下列效應之一；森丹不能連續兩輪使用相同的效應：",
+			{
+				"type": "list",
+				"items": [
+					"森丹 30 呎內的所有生物必須成功通過一次 {@dc 20} 感知豁免檢定，否則受{@spell confusion}法術效應影響，直到其下個回合結束。",
+					"直到森丹的下個回合結束前，任何在森丹 60 呎內施展法術的生物必須擲《玩家手冊》中術士的狂野魔法浪湧表。"
+				]
+			}
+		],
+		"regionalEffects": [
+			"森丹巢穴所在的區域會被混沌噬體腐化，產生下列效應中的一項或多項：",
+			{
+				"type": "list",
+				"items": [
+					"在森丹巢穴 1 哩內，任何施展法術的生物有二十分之一的機率必須擲《玩家手冊》中術士的狂野魔法浪湧表。",
+					"在巢穴 10 哩內，任何進行長休或短休的生物必須成功通過一次 {@dc 20} 感知豁免檢定，否則陷入一種隨機的{@table short-term madness|DMG|短期瘋狂}。"
+				]
+			},
+			"若森丹死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Ssendam, Lord of Madness"
 	},
 	"Storm Giant Quintessent|MPMM": {
 		"name": "風暴巨人．昇華者",
@@ -6545,6 +7283,55 @@
 			"若札爾剛死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
 		],
 		"ENG_name": "Zargon the Returner"
+	},
+	"Zariel|COA": {
+		"name": "扎瑞爾",
+		"source": "CoA",
+		"page": 235,
+		"_copy": {
+			"name": "Archdevil",
+			"source": "CoA",
+			"_mod": {
+				"lairActions": {
+					"mode": "prependArr",
+					"items": [
+						"On initiative count 20 (losing initiative ties), Zariel can take one lair action to cause the following effect or one from the archdevil lair action list (page 214); she can't take the same lair action two rounds in a row:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Infernal Illusions",
+									"entries": [
+										"Zariel casts the {@spell Major Image} spell four times, targeting different areas with it. Zariel prefers to create images of intruders' loved ones being burned alive. Zariel doesn't need to concentrate on the spells, which end on initiative count 20 of the next round. Each creature that can see these illusions must succeed on a {@dc 26} Wisdom saving throw or have the frightened condition for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"regionalEffects": [
+			"扎瑞爾巢穴所在的區域會被她的魔法扭曲，產生下列效應：",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "地獄景象",
+						"entries": [
+							"巢穴 9 哩內的區域充斥著尖叫聲與燒焦肉類的惡臭。"
+						],
+						"ENG_name": "Hellscape"
+					}
+				]
+			},
+			"若扎瑞爾死亡，這些效應會在 {@dice 1d10} 天內逐漸消退。"
+		],
+		"ENG_name": "Zariel"
 	},
 	"Zariel|MPMM": {
 		"name": "扎瑞爾",

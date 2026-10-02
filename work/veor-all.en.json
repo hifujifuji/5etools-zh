@@ -1,0 +1,1343 @@
+{
+	"batch": "veor-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Alustriel Silverhand|VEOR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Alustriel Silverhand",
+				"with {@spell mage armor}",
+				"Spellcasting",
+				"Alustriel casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 22}):",
+				"Ear of the Chosen",
+				"Whenever a creature on the same plane of existence as Alustriel speaks Alustriel's name, Alustriel hears her name and the next nine words the speaker utters.",
+				"Legendary Resistance (3/Day)",
+				"If Alustriel fails a saving throw, she can choose to succeed instead.",
+				"Special Equipment",
+				"Alustriel carries a magic staff known as the Staff of Silverymoon. In the hands of anyone other than Alustriel, the Staff of Silverymoon is a {@item Staff of Power}.",
+				"Multiattack",
+				"Alustriel makes three Staff of Silverymoon attacks or two Reproving Ray attacks.",
+				"Staff of Silverymoon",
+				"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage plus 38 ({@damage 7d10}) radiant damage.",
+				"Reproving Ray",
+				"{@atk rs} {@hit 14} to hit, range 120 ft., one target. {@h}65 ({@damage 9d12 + 7}) force damage, and if the target is a creature, it must make a {@dc 22} Charisma saving throw. On a failed save, the target has the {@condition incapacitated} condition until the start of Alustriel's next turn. On a successful save, the target's speed is reduced by 10 feet until the start of Alustriel's next turn.",
+				"Argent Blaze (Requires Silver Fire)",
+				"Alustriel summons a 60-foot cone of silver fire. Each creature in that area must make a {@dc 22} Dexterity saving throw, taking 77 ({@damage 14d10}) radiant damage on a failed save or half as much damage on a successful one. Additionally, Alustriel or one creature of her choice within 60 feet of her then regains 10 ({@dice 3d6}) hit points.",
+				"Silver Fire (2/Day)",
+				"Brilliant silver fire harmlessly wreathes Alustriel and empowers her. The silver fire lasts for 1 hour or until she has the {@condition incapacitated} condition or uses another bonus action to quench it. While wreathed in silver fire, Alustriel gains truesight within 30 feet and can use her Argent Blaze action. In addition, Alustriel is unaffected by magic that would ascertain her alignment, creature type, thoughts, or truthfulness.",
+				"Shining Counterspell",
+				"Alustriel interrupts a creature she can see within 60 feet of herself that is casting a spell. If the spell is 5th level or lower, it fails and has no effect. If the spell is 6th level or higher, Alustriel makes an Intelligence check ({@dc 10} plus the spell's level). On a successful check, the spell fails and has no effect. Whatever the spell's level, the caster takes 11 ({@damage 2d10}) radiant damage if the spell fails."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Argentia Skywright|VEOR",
+			"s": [
+				"Argentia Skywright"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Black Rose Bearer|VEOR",
+			"hint": {
+				"Berserk": "狂暴",
+				"Undead Fortitude": "不死堅韌",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Black Rose Bearer",
+				"natural armor",
+				"Berserk",
+				"Whenever the bearer takes damage or makes a Strength or Dexterity saving throw, roll a {@dice d6}. On a 5 or 6, the bearer goes berserk. On each of its turns while berserk, the bearer has advantage on melee attack rolls, it can {@action Dash} as a bonus action, and it must attack the nearest creature it can see. If no creature is near enough to move to and attack, the bearer attacks an object, with preference for an object smaller than itself. Once the bearer goes berserk, it remains berserk until it is destroyed or its creator gives it a pristine black rose.",
+				"Undead Fortitude",
+				"If damage reduces the bearer to 0 hit points, it must make a Constitution saving throw with a DC of 5 plus the damage taken, unless the damage is radiant or from a critical hit. On a successful save, the bearer drops to 1 hit point instead.",
+				"Multiattack",
+				"The bearer makes two Slam attacks.",
+				"Slam",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) bludgeoning damage plus 11 ({@damage 2d10}) necrotic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blade Lieutenant|VEOR",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍",
+				"Command Ally": "號令盟友",
+				"Rally the Troops (1/Day)": "集結部隊（每日 1 次）",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Blade Lieutenant",
+				"natural armor",
+				"Pack Tactics",
+				"The lieutenant has advantage on an attack roll against a creature if at least one of the lieutenant's allies is within 5 feet of the creature and the ally doesn't have the {@condition incapacitated} condition.",
+				"Multiattack",
+				"The lieutenant makes three Longsword or Javelin Launcher attacks.",
+				"Longsword",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 4}) slashing damage, or 20 ({@damage 3d10 + 4}) slashing damage if used with two hands.",
+				"Javelin Launcher",
+				"{@atk rw} {@hit 8} to hit, range 30/120 ft., one target. {@h}14 ({@damage 3d6 + 4}) piercing damage, and the target has the {@condition prone} condition.",
+				"Command Ally",
+				"The lieutenant targets one ally it can see within 30 feet of itself. If the target can see or hear the lieutenant, the target can make one melee attack using its reaction, if available, and has advantage on the attack roll.",
+				"Rally the Troops (1/Day)",
+				"The lieutenant ends the {@condition charmed} and {@condition frightened} conditions on itself and each creature of its choice that it can see within 30 feet of itself.",
+				"Parry",
+				"The lieutenant adds 3 to its AC against one melee attack that would hit it. To do so, the lieutenant must see the attacker and be wielding a melee weapon."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blade Scout|VEOR",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Armblade": "臂刃",
+				"Bolt Launcher": "弩砲",
+				"Dash": "疾走"
+			},
+			"s": [
+				"Blade Scout",
+				"natural armor",
+				"Pack Tactics",
+				"The scout has advantage on an attack roll against a creature if at least one of the scout's allies is within 5 feet of the creature and the ally doesn't have the {@condition incapacitated} condition.",
+				"Multiattack",
+				"The scout makes three Armblade or Bolt Launcher attacks. It can replace one of the attacks with a use of Snare Trap.",
+				"Armblade",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage.",
+				"Bolt Launcher",
+				"{@atk rw} {@hit 8} to hit, range 80/320 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage.",
+				"Snare Trap (1/Day)",
+				"The scout deploys a Tiny mechanical trap on a solid surface within 5 feet of itself. The trap is hidden, requiring a successful {@dc 17} Intelligence ({@skill Investigation}) check to find. The trap lasts for 1 minute. Whenever an enemy enters a space within 10 feet of the trap or starts its turn there, it must succeed on a {@dc 16} Dexterity saving throw or take 21 ({@damage 6d6}) piercing damage and have the {@condition prone} condition. A creature makes this saving throw only once per turn.",
+				"Dash",
+				"The scout moves up to its speed without provoking opportunity attacks."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blazebear|VEOR",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Blazebear",
+				"natural armor",
+				"Magic Resistance",
+				"The blazebear has advantage on saving throws against spells and other magical effects.",
+				"Mist Sight",
+				"The blazebear can see normally through heavily obscured areas created by mist or fog, including areas created by spells such as Fog Cloud.",
+				"Multiattack",
+				"The blazebear makes two Bite attacks. It can replace one attack with Stunning Gaze if available.",
+				"Bite",
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}20 ({@damage 2d12 + 7}) piercing damage plus 11 ({@damage 2d10}) force damage.",
+				"Stunning Gaze {@recharge 5}",
+				"The blazebear targets two creatures it can see within 120 feet of itself. Each target must succeed on a {@dc 15} Wisdom saving throw or have the {@condition stunned} condition until the start of the blazebear's next turn.",
+				"Antimagic Swipe",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one creature casting a spell of 3rd level or lower. {@h}22 ({@damage 4d10}) force damage, and the target must succeed on a {@dc 15} Intelligence saving throw or the spell fails and has no effect."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bone Roc|VEOR",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Beak": "啄擊",
+				"Talons": "利爪"
+			},
+			"s": [
+				"Bone Roc",
+				"Multiattack",
+				"The bone roc makes one Beak attack and two Talons attacks.",
+				"Beak",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage.",
+				"Talons",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage plus 10 ({@damage 3d6}) necrotic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Borthak|VEOR",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Stomp": "踐踏",
+				"Move": "移動",
+				"Bite (Costs 2 Actions)": "啃咬（消耗 2 個動作）"
+			},
+			"s": [
+				"Borthak",
+				"natural armor",
+				"Glacial Aura",
+				"At the end of the borthak's turn, slippery ice covers surfaces within 10 feet of the borthak. This ice is difficult terrain. When a creature other than the borthak enters the ice's area for the first time on a turn or starts its turn there, it must succeed on a {@dc 16} Dexterity saving throw or have the {@condition prone} condition. The ice disappears at the start of the borthak's next turn.",
+				"Webbed Feet",
+				"The borthak can move across icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement.",
+				"Multiattack",
+				"The borthak makes one Bite attack or uses Noxious Regurgitation if available, and it makes two Stomp attacks.",
+				"Bite",
+				"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) piercing damage plus 7 ({@damage 2d6}) acid damage.",
+				"Stomp",
+				"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}11 ({@damage 1d8 + 7}) bludgeoning damage.",
+				"Noxious Regurgitation {@recharge 5}",
+				"The borthak spews acid at a creature it can see within 120 feet of itself. The target must make a {@dc 21} Constitution saving throw. On a failed save, the creature takes 24 ({@damage 7d6}) acid damage and has the {@condition poisoned} condition until the start of the borthak's next turn. On a successful save, the creature takes half as much damage only.",
+				"Reactive Tail",
+				"When a creature within 10 feet of the borthak hits the borthak with an attack roll, the borthak swings its tail in retaliation. The triggering creature and any creature within 5 feet of it must succeed on a {@dc 16} Dexterity saving throw or take 16 ({@damage 2d8 + 7}) bludgeoning damage.",
+				"Move",
+				"The borthak moves up to its speed without provoking opportunity attacks.",
+				"Bite (Costs 2 Actions)",
+				"The borthak makes one Bite attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Camlash|VEOR",
+			"hint": {
+				"Death Throes": "臨死掙扎",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Lightning Blade": "閃電之刃",
+				"Teleport": "傳送"
+			},
+			"s": [
+				"Camlash",
+				"natural armor",
+				"Death Throes",
+				"Camlash explodes when reduced to 0 hit points, and each creature within 30 feet of Camlash must make a {@dc 21} Dexterity saving throw, taking 70 ({@damage 20d6}) fire damage on a failed save or half as much damage on a successful one. The explosion ignites flammable objects in that area that aren't being worn or carried.",
+				"Magic Resistance",
+				"Camlash has advantage on saving throws against spells and other magical effects.",
+				"Spider Aura",
+				"Camlash is surrounded by tiny biting spiders that magically appear and disappear from moment to moment. At the start of each of Camlash's turns, each creature within 10 feet of Camlash takes 10 ({@damage 3d6}) poison damage and must succeed on a {@dc 21} Constitution saving throw or have the {@condition paralyzed} condition until the start of Camlash's next turn.",
+				"Multiattack",
+				"Camlash makes one Flaming Whip attack and one Lightning Blade attack. Camlash can replace one of these attacks with Teleport.",
+				"Flaming Whip",
+				"{@atk mw} {@hit 15} to hit, reach 30 ft., one target. {@h}25 ({@damage 5d6 + 8}) fire damage, and if the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be pulled up to 25 feet toward Camlash.",
+				"Lightning Blade",
+				"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d8 + 8}) slashing damage plus 13 ({@damage 3d8}) lightning damage.",
+				"Teleport",
+				"Camlash magically teleports, along with any equipment she is wearing or carrying, up to 120 feet to an unoccupied space she can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Citadel Spider|VEOR",
+			"hint": {
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Spider Climb": "蛛行",
+				"Web Walker": "蛛網行者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Citadel Spider",
+				"natural armor",
+				"Legendary Resistance (3/Day)",
+				"If the spider fails a saving throw, it can choose to succeed instead.",
+				"Spider Climb",
+				"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Web Walker",
+				"The spider ignores movement restrictions caused by webbing.",
+				"Multiattack",
+				"The spider makes two Bite attacks. It can replace one of these attacks with a use of Web Bomb.",
+				"Bite",
+				"{@atk mw} {@hit 14} to hit, reach 20 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage plus 7 ({@damage 2d6}) poison damage.",
+				"Web Bomb",
+				"{@atk rw} {@hit 14} to hit, range 300 ft./600 ft., one target. {@h}24 ({@damage 3d10 + 8}) bludgeoning damage, and the target and all creatures within 10 feet of it must succeed on a {@dc 19} Dexterity saving throw or take 10 ({@damage 3d6}) acid damage and have the {@condition restrained} condition until the start of the spider's next turn.",
+				"Absorb Blow",
+				"In response to being hit with an attack roll, the spider's carapace absorbs some of the blow, reducing the damage it takes by 11 ({@dice 2d10})."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Crunch|VEOR",
+			"s": [
+				"Crunch"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Deadbark Dryad|VEOR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Speak with Beasts and Plants": "與動植物交談",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Deadbark Dryad",
+				"natural armor",
+				"Spellcasting",
+				"The dryad casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 17}):",
+				"Bramble Walk",
+				"Difficult terrain composed of vegetation, such as foliage or thorns, doesn't cost the dryad extra movement.",
+				"Magic Resistance",
+				"The dryad has advantage on saving throws against spells and other magical effects.",
+				"Speak with Beasts and Plants",
+				"The dryad can communicate with Beasts and Plants as if they shared a language.",
+				"Multiattack",
+				"The dryad makes two Poisonous Thorn attacks and one Sapping Vine attack.",
+				"Poisonous Thorn",
+				"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 120 ft., one target. {@h}13 ({@damage 4d4 + 3}) piercing damage plus 10 ({@damage 3d6}) poison damage. If the target is a creature, it must succeed on a {@dc 17} Constitution saving throw or have the {@condition poisoned} condition until the start of the dryad's next turn.",
+				"Sapping Vine",
+				"{@atk mw} {@hit 8} to hit, reach 30 ft., one target. {@h}The target has the {@condition grappled} condition (escape {@dc 16}). Until the grapple ends, the target has the {@condition restrained} condition, and the dryad can't use the same vine on another target. A creature {@condition restrained} in this way takes 13 ({@damage 3d8}) necrotic damage at the start of its turn.",
+				"The dryad has six vines. Each vine can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a vine deals no damage to the dryad, but any creature {@condition grappled} by that vine no longer has the {@condition grappled} condition. All vines immediately wither and disappear when the dryad is reduced to 0 hit points."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Deathwolf|VEOR",
+			"hint": {
+				"Legendary Resistance (2/Day)": "傳奇抗性（每日 2 次）",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Deathwolf",
+				"natural armor",
+				"Legendary Resistance (2/Day)",
+				"If the deathwolf fails a saving throw, it can choose to succeed instead.",
+				"Moon's Grace",
+				"When the deathwolf falls, it descends at a rate of 60 feet per round and takes no falling damage.",
+				"Multiattack",
+				"The deathwolf makes one Bite attack and two Claw attacks. It can replace one of these attacks with Phantom Deathwolf if available.",
+				"Bite",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage plus 9 ({@damage 2d8}) necrotic damage. The target must succeed on a {@dc 16} Wisdom saving throw or have disadvantage on saving throws against the {@condition frightened} condition. This curse lasts until removed by the {@spell Remove Curse} spell or other magic.",
+				"Claw",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage plus 4 ({@damage 1d8}) necrotic damage.",
+				"Phantom Deathwolf {@recharge 5}",
+				"The deathwolf creates a terrifying phantom of itself in the mind of a creature the deathwolf can see within 60 feet of itself. The target must succeed on a {@dc 17} Intelligence saving throw or have the {@condition frightened} condition for 1 minute.",
+				"While the target is {@condition frightened}, the phantom deals 21 ({@damage 6d6}) psychic damage to the target at the start of each of the target's turns. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"The deathwolf can take up to two reactions per round but only one per turn.",
+				"Imposing Slash",
+				"When a creature within 5 feet of the deathwolf makes an attack roll against it, the deathwolf forces the creature to succeed on a {@dc 17} Wisdom saving throw or have disadvantage on that roll. After the attack hits or misses, the deathwolf makes one Claw attack against the creature.",
+				"Phase Step",
+				"Immediately after taking damage, the deathwolf teleports up to 30 feet to an unoccupied space it can see that is in dim light or darkness."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Degloth|VEOR",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Crush": "壓碎"
+			},
+			"s": [
+				"Degloth",
+				"natural armor",
+				"Magic Resistance",
+				"The degloth has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The degloth makes two Razor Fist attacks.",
+				"Razor Fist",
+				"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) slashing damage, and if the target is a Medium or smaller creature, the target has the {@condition grappled} condition (escape {@dc 18}). Until this grapple ends, the target has the {@condition restrained} condition, and the degloth can't use this fist to grapple another target. The degloth has two fists.",
+				"Crush",
+				"The degloth targets one creature currently {@condition grappled} by it. The target must make a {@dc 18} Strength saving throw, taking 15 ({@damage 2d8 + 6}) bludgeoning damage on a failed save or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Eldon Keyward|VEOR",
+			"s": [
+				"Eldon Keyward"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "False Lich|VEOR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Cast a Spell (Costs 2 Actions)": "施展法術（消耗 2 個動作）"
+			},
+			"s": [
+				"False Lich",
+				"natural armor",
+				"Spellcasting",
+				"The false lich casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 22}):",
+				"Legendary Resistance (3/Day)",
+				"If the false lich fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The false lich has advantage on saving throws against spells and magical effects.",
+				"Multiattack",
+				"The false lich makes two Death Rend attacks and uses Bloodcurdling Lament if available.",
+				"Death Rend",
+				"{@atk ms} {@hit 14} to hit, reach 5 ft., one target. {@h}23 ({@damage 3d10 + 7}) necrotic damage.",
+				"Bloodcurdling Lament {@recharge 5}",
+				"The false lich emits a hideous shriek charged with malignant energy. Each creature within 30 feet of the false lich must succeed on a {@dc 22} Wisdom saving throw or have the {@condition frightened} condition for 1 minute. While {@condition frightened} in this way, a creature also has the {@condition unconscious} condition. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Soul Siphon",
+				"The false lich targets one creature it can see within 120 feet of itself. The target must make a {@dc 22} Charisma saving throw; if the target has the {@condition unconscious} condition, it has disadvantage on this saving throw. The target takes 21 ({@damage 6d6}) force damage on a failed save or half as much damage on a successful one. The false lich then regains a number of hit points equal to the amount of force damage taken.",
+				"If this damage reduces the target to 0 hit points, the target immediately dies, its body disappears, and its soul is trapped inside one of the soul gems within the false lich's skull. After 24 hours, the gem transfers the soul to the false lich's creator.",
+				"When the false lich is reduced to 0 hit points, it is destroyed and disintegrates, leaving behind the gems. Crushing a gem releases any souls trapped within, at which point the soul's body re-forms in an unoccupied space nearest to the gem and in the same state as it was when its soul was trapped.",
+				"Spiteful Teleport",
+				"The false lich, along with anything it is wearing or carrying, teleports to an unoccupied space it can see within 60 feet of itself. It then makes one Death Rend attack if possible.",
+				"Cast a Spell (Costs 2 Actions)",
+				"The false lich uses Spellcasting."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fernitha|VEOR",
+			"s": [
+				"Fernitha"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Figaro|VEOR",
+			"s": [
+				"Figaro"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Glaive|VEOR",
+			"hint": {
+				"Glaive": "長柄刀",
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Glaive",
+				"natural armor",
+				"(50 ft. with overdrive)",
+				"Heatsink",
+				"When Glaive takes cold damage, her Overdrive immediately recharges.",
+				"Pack Tactics",
+				"Glaive has advantage on attack rolls if at least one ally is within 5 feet of the creature she's attacking and the ally doesn't have the {@condition incapacitated} condition.",
+				"Multiattack",
+				"Glaive makes two Spiked Glaive attacks and two Serrated Bolt attacks.",
+				"Spiked Glaive",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing or slashing damage, or 14 ({@damage 1d10 + 9}) piercing or slashing damage if Glaive is in overdrive.",
+				"Serrated Bolt",
+				"{@atk rw} {@hit 7} to hit, range 60 ft., one target. {@h}13 ({@damage 3d6 + 3}) piercing damage. If Glaive has advantage on the attack roll, the serrated bolt lodges in the target, and the target's speed is reduced by 10 feet until the serrated bolt is removed. A target's speed can be reduced by only one serrated bolt at a time. A creature can use its action to remove a serrated bolt lodged in itself or another creature within its reach; when the bolt is removed from a creature, that creature takes 5 ({@damage 2d4}) slashing damage.",
+				"Overdrive (Recharges after Finishing a Short or Long Rest)",
+				"Glaive enters a state of overdrive that lasts for 1 minute or until she has the {@condition incapacitated} condition. While in overdrive, Glaive gains the following benefits:",
+				"Glaive has advantage on Strength checks and Strength saving throws.",
+				"When Glaive makes a melee weapon attack, she gains a +4 bonus to the damage roll.",
+				"Glaive's speed increases to 50 feet.",
+				"Self-Preservation",
+				"In response to being hit by a weapon attack, Glaive reduces the damage by 11 ({@dice 2d10})."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Granite Juggernaut|VEOR",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Siege Monster": "攻城怪獸",
+				"Slam": "猛擊",
+				"Devastating Roll": "毀滅滾壓"
+			},
+			"s": [
+				"Granite Juggernaut",
+				"natural armor",
+				"(in a straight line)",
+				"Magic Resistance",
+				"The juggernaut has advantage on saving throws against spells and other magical effects.",
+				"Siege Monster",
+				"The juggernaut deals double damage to objects and structures.",
+				"Slam",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 6}) bludgeoning damage, and if the target is a Large or smaller creature, it must succeed on a {@dc 18} Strength saving throw or have the {@condition prone} condition.",
+				"Devastating Roll",
+				"The juggernaut moves up to its speed. During this movement, the juggernaut can move through the spaces of creatures with the {@condition prone} condition. When the juggernaut enters the space of a {@condition prone} creature for the first time during this movement, the creature must make a {@dc 18} Dexterity saving throw, taking 55 ({@damage 10d10}) bludgeoning damage on a failed save or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Grottenelle Stonecutter|VEOR",
+			"s": [
+				"Grottenelle Stonecutter"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hazvongel|VEOR",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Talon": "利爪"
+			},
+			"s": [
+				"Hazvongel",
+				"natural armor",
+				"Magic Resistance",
+				"The hazvongel has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The hazvongel makes three Talon attacks.",
+				"Talon",
+				"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}18 ({@damage 3d8 + 5}) piercing damage.",
+				"Blood Barrage {@recharge 5}",
+				"The hazvongel launches a spray of blood in a 90-foot cone. Each creature in that area must make a {@dc 18} Dexterity saving throw, taking 27 ({@damage 6d8}) necrotic damage on a failed save or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hertilod|VEOR",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Shock Susceptibility": "懼電",
+				"Spider Climb": "蛛行",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊",
+				"Sprint": "衝刺",
+				"Feed (Costs 2 Actions)": "進食（消耗 2 個動作）"
+			},
+			"s": [
+				"Hertilod",
+				"Legendary Resistances (3/Day)",
+				"If the hertilod fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The hertilod has advantage on saving throws against spells and other magical effects.",
+				"Shock Susceptibility",
+				"If the hertilod takes lightning damage, its speed is halved until the end of its next turn, and it must succeed on a {@dc 15} Constitution saving throw or immediately regurgitate all swallowed creatures, each of which lands in a space within 10 feet of the hertilod and has the {@condition prone} condition.",
+				"Spider Climb",
+				"The hertilod can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Multiattack",
+				"The hertilod makes one Bite attack and two Claw attacks.",
+				"Bite",
+				"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d8 + 6}) piercing damage plus 13 ({@damage 2d12}) poison damage. If the target is a Large or smaller creature, it must succeed on a {@dc 20} Strength saving throw or be swallowed by the hertilod. A swallowed creature has the {@condition blinded} and {@condition restrained} conditions, and it has {@quickref Cover||3||total cover} against attacks and other effects outside the hertilod. At the start of each of the hertilod's turns, each swallowed creature takes 13 ({@damage 2d12}) poison damage from the poisonous secretion in the hertilod's gullet.",
+				"The hertilod's gullet can hold up to two creatures at a time. If the hertilod takes 40 damage or more on a single turn from a swallowed creature, the hertilod must succeed on a {@dc 15} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which lands in a space within 10 feet of the hertilod and has the {@condition prone} condition. If the hertilod dies, a swallowed creature is no longer {@condition restrained} and can escape from the corpse by using 10 feet of movement, exiting with the {@condition prone} condition.",
+				"Claw",
+				"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) slashing damage.",
+				"Sprint",
+				"The hertilod moves up to its speed. This movement doesn't provoke opportunity attacks.",
+				"Feed (Costs 2 Actions)",
+				"The hertilod drains life from the creatures in its gullet to bolster itself. Each creature in the hertilod's gullet takes 10 ({@damage 3d6}) necrotic damage, and the hertilod regains a number of hit points equal to the damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Inda Malayuri|VEOR",
+			"s": [
+				"Inda Malayuri"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Indrina Lamsensettle|VEOR",
+			"s": [
+				"Indrina Lamsensettle"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jerot Galgin|VEOR",
+			"s": [
+				"Jerot Galgin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kakkuu Spyder-Fiend|VEOR",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Spider Climb": "蛛行",
+				"Web Sense": "蛛網感知",
+				"Web Walker": "蛛網行者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Reel": "收線"
+			},
+			"s": [
+				"Kakkuu Spyder-Fiend",
+				"natural armor",
+				"Magic Resistance",
+				"The kakkuu has advantage on saving throws against spells and other magical effects.",
+				"Spider Climb",
+				"The kakkuu can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Web Sense",
+				"When in contact with a web, the kakkuu knows the exact location of any other creature in contact with the same web.",
+				"Web Walker",
+				"The kakkuu ignores movement restrictions caused by webbing.",
+				"Multiattack",
+				"The kakkuu makes a Web Snare attack, uses Reel, and makes a Bite attack.",
+				"Bite",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 3}) piercing damage plus 10 ({@damage 3d6}) poison damage.",
+				"Reel",
+				"The kakkuu pulls each creature within 60 feet of itself that is {@condition grappled} by its Web Snare up to 30 feet straight toward itself.",
+				"Web Snare",
+				"{@atk rw} {@hit 6} to hit, reach 30/60 ft., one Large or smaller creature. {@h}The target has the {@condition grappled} condition (escape {@dc 13}). While {@condition grappled}, the target also has the {@condition restrained} condition. A web snare grappling a creature can be attacked and destroyed (AC 10; 10 hit points; immunity to bludgeoning, poison, and psychic damage)."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kas the Betrayer|VEOR",
+			"hint": {
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Regeneration": "再生",
+				"Special Equipment": "特殊裝備",
+				"Spider Climb": "蛛行",
+				"Sunlight Hypersensitivity": "日光過敏",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Change Shape": "變形",
+				"Move": "移動"
+			},
+			"s": [
+				"Kas the Betrayer",
+				"Eager Betrayer",
+				"Kas adds {@dice 1d10} to his initiative rolls. He has advantage on attack rolls against any creature that has the {@condition frightened} condition.",
+				"Legendary Resistance (3/Day)",
+				"If Kas fails a saving throw, he can choose to succeed instead.",
+				"Regeneration",
+				"Kas regains 20 hit points at the start of his turn if he has at least 1 hit point. If he takes radiant damage, this trait doesn't function at the start of his next turn.",
+				"Special Equipment",
+				"Kas wears the {@item Crown of Lies|VEoR} (see the Introduction of Vecna: Eve of Ruin).",
+				"Spider Climb",
+				"Kas can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Strength of the Night",
+				"Kas doesn't require a coffin, and he drinks blood to sow terror rather than for sustenance. If destroyed, Kas revives in {@dice 1d100} nights in an unoccupied space in Tovag, his Domain of Dread. He can be permanently destroyed only by having a stake driven through his heart and then being beheaded. The stake must be cut from a tree growing in soil from Oerth, Kas's home world.",
+				"Sunlight Hypersensitivity",
+				"While in sunlight, Kas takes 20 radiant damage at the start of his turn, has disadvantage on attack rolls and ability checks, and can't use his Change Shape bonus action.",
+				"Multiattack",
+				"Kas makes three Vengeful Sword attacks. He can replace one of these attacks with a Bite attack.",
+				"Vengeful Sword",
+				"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}20 ({@damage 2d8 + 11}) slashing damage. The sword scores a critical hit on a roll of 19 or 20.",
+				"Bite",
+				"{@atk mw} {@hit 15} to hit, reach 5 ft., one creature. {@h}11 ({@damage 1d6 + 8}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Kas regains a number of hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0. A Humanoid slain in this way and then buried rises the following night as a vampire spawn under Kas's control.",
+				"Change Shape",
+				"Kas transforms into a Medium cloud of mist. While in this form, Kas has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. While in mist form, Kas can pass through a space without squeezing as long as air can pass through that space, but he can't pass through water. Kas has advantage on Strength, Dexterity, and Constitution saving throws, and he is immune to all nonmagical damage except the damage he takes as part of his Vampire Weaknesses trait. While in mist form, Kas can't take any actions, speak, or manipulate objects.",
+				"Menacing Glare",
+				"Kas targets one creature he can see within 60 feet of himself. The target must succeed on a {@dc 23} Wisdom saving throw or have the {@condition frightened} condition until the start of Kas's next turn.",
+				"Parrying Riposte",
+				"Kas adds 3 to his AC against one melee attack roll that would hit him. He then makes one Vengeful Sword attack against the attacker if it is within his reach. On a hit, the target takes an additional 9 ({@damage 2d8}) slashing damage.",
+				"Move",
+				"Kas moves up to his speed without provoking opportunity attacks.",
+				"Sword (Costs 2 Actions)",
+				"Kas makes one Vengeful Sword attack.",
+				"Rise, Fallen Soldier (Costs 3 Actions)",
+				"Kas magically summons a specter. The specter appears in an unoccupied space within 30 feet of Kas, whom it obeys. The specter takes its turn immediately after Kas. It lasts for 1 hour, until Kas dies, or until Kas dismisses it as a bonus action. Kas can't have more than two specters summoned at a time."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kaylan Renaudon|VEOR",
+			"s": [
+				"Kaylan Renaudon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ker-arach|VEOR",
+			"s": [
+				"Ker-arach"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kevetta Dolindar|VEOR",
+			"s": [
+				"Kevetta Dolindar"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Khai Kiroth|VEOR",
+			"s": [
+				"Khai Kiroth"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Laysa Matulin|VEOR",
+			"s": [
+				"Laysa Matulin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lysan|VEOR",
+			"s": [
+				"Lysan"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Malaina van Talstiv|VEOR",
+			"s": [
+				"Malaina van Talstiv"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mirror Shade|VEOR",
+			"hint": {
+				"False Appearance": "擬態",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Mirror Shade",
+				"False Appearance",
+				"If the mirror shade is within 5 feet of a reflective surface—such as a mirror, glass pane, or still water—it has advantage on its initiative roll. If a creature hasn't observed the mirror shade move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the mirror shade isn't the creature's own reflection.",
+				"Mirror Movement",
+				"The mirror shade can move along the surface of reflective or translucent objects, such as mirrors, without provoking opportunity attacks. It can move through translucent objects as if they were difficult terrain.",
+				"Multiattack",
+				"The mirror shade makes two Phantasmal Strike attacks and uses Reflect Fear.",
+				"Phantasmal Strike",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) radiant damage plus 7 ({@damage 2d6}) psychic damage.",
+				"Reflect Fear",
+				"The mirror shade targets one creature it can see within 60 feet of itself and projects an illusion of that creature's greatest fear. The target must make a {@dc 16} Wisdom saving throw. On a failed save, the target takes 28 ({@damage 8d6}) psychic damage and has the {@condition frightened} condition until the start of the mirror shade's next turn. On a successful save, the target takes half as much damage only.",
+				"Mirror Stealth",
+				"While within 5 feet of a reflective surface, such as a mirror, the mirror shade takes the {@action Hide} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Miska the Wolf-Spider|VEOR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Spider Climb": "蛛行",
+				"Web Sense": "蛛網感知",
+				"Web Walker": "蛛網行者",
+				"Multiattack": "多重攻擊",
+				"Skitter": "疾竄",
+				"Cast a Spell (Costs 2 Actions)": "施展法術（消耗 2 個動作）"
+			},
+			"s": [
+				"Miska the Wolf-Spider",
+				"natural armor",
+				"Spellcasting",
+				"Miska casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 21}):",
+				"Foul Ichor",
+				"A creature that hits Miska with a melee weapon attack takes 7 ({@damage 2d6}) poison damage.",
+				"Legendary Resistance (3/Day)",
+				"If Miska fails a saving throw, he can choose to succeed instead.",
+				"Magic Resistance",
+				"Miska has advantage on saving throws against spells and other magical effects.",
+				"Spider Climb",
+				"Miska can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Web Sense",
+				"When in contact with a web, Miska knows the exact location of any other creature in contact with the same web.",
+				"Web Walker",
+				"Miska ignores movement restrictions caused by webbing.",
+				"Multiattack",
+				"Miska makes one Lupine Bite attack and two Trident of Chaos attacks.",
+				"Lupine Bite",
+				"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage plus 27 ({@damage 6d8}) poison damage. If the target is a creature, it must succeed on a {@dc 21} Constitution saving throw or have the {@condition poisoned} condition for 1 minute. While {@condition poisoned} in this way, a creature has the {@condition incapacitated} condition and can't regain hit points. A {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Trident of Chaos",
+				"{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage plus 9 ({@damage 2d8}) force damage.",
+				"Demand Loyalty",
+				"Miska magically ends the {@condition charmed} and {@condition frightened} conditions on himself and on any of his allies within 120 feet of himself.",
+				"Howl",
+				"Miska utters a bloodthirsty howl at one creature within 120 feet of himself that isn't a Fiend. The target must succeed on a {@dc 20} Wisdom saving throw or take 13 ({@damage 2d12}) psychic damage.",
+				"Skitter",
+				"Miska moves up to his speed without provoking opportunity attacks.",
+				"Cast a Spell (Costs 2 Actions)",
+				"Miska uses Spellcasting."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Moonlight Guardian|VEOR",
+			"hint": {
+				"Immutable Form": "不變形態",
+				"Magic Resistance": "魔法抗性",
+				"Radiant Absorption": "光耀吸收",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Moonlight Guardian",
+				"natural armor",
+				"Immutable Form",
+				"The guardian is immune to any spell or other effect that would alter its form.",
+				"Magic Resistance",
+				"The guardian has advantage on saving throws against spells and other magical effects.",
+				"Radiant Absorption",
+				"Whenever the guardian is subjected to radiant damage, it takes no damage and instead regains a number of hit points equal to the radiant damage.",
+				"Multiattack",
+				"The guardian makes two Moonlight Slam attacks.",
+				"Moonlight Slam",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage plus 4 ({@damage 1d8}) radiant damage.",
+				"Moonlight Blast {@recharge 5}",
+				"The guardian unleashes a magical blast of moonlight in a line 60 feet long and 5 feet wide. Each creature in that area must make a {@dc 14} Dexterity saving throw. Creatures that aren't in their true form have disadvantage on the save. On a failed save, a creature takes 22 ({@damage 5d8}) radiant damage, and if it isn't in its true form, it is forced into its true form and can't change forms until the end of the guardian's next turn. On a successful save, a creature takes half as much damage only."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Naxa|VEOR",
+			"s": [
+				"Naxa"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nyssa Otellion|VEOR",
+			"s": [
+				"Nyssa Otellion"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Orinix|VEOR",
+			"s": [
+				"Orinix"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Phisarazu Spyder-Fiend|VEOR",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Spider Climb": "蛛行",
+				"Web Sense": "蛛網感知",
+				"Web Walker": "蛛網行者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊",
+				"Change Shape": "變形"
+			},
+			"s": [
+				"Phisarazu Spyder-Fiend",
+				"natural armor",
+				"Magic Resistance",
+				"The phisarazu has advantage on saving throws against spells and other magical effects.",
+				"Spider Climb",
+				"The phisarazu can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Web Sense",
+				"When in contact with a web, the phisarazu knows the exact location of any other creature in contact with the same web.",
+				"Web Walker",
+				"The phisarazu ignores movement restrictions caused by webbing.",
+				"Multiattack",
+				"The phisarazu makes one Bite attack and two Claw attacks. It can replace one of these attacks with Scintillating Spray if available.",
+				"Bite",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage plus 9 ({@damage 2d8}) poison damage, and the target has the {@condition poisoned} condition until the start of the phisarazu's next turn.",
+				"Claw",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}22 ({@damage 4d8 + 4}) slashing damage.",
+				"Scintillating Spray {@recharge 5}",
+				"The phisarazu expels shimmering webs in a 60-foot cone. Creatures and objects in that area are outlined by the glittering webs for 1 minute, during which time they emit dim light for 10 feet and can't benefit from the {@condition invisible} condition. Additionally, creatures in that area must succeed on a {@dc 16} Wisdom saving throw or have the {@condition stunned} condition for 1 minute. A {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Change Shape",
+				"The phisarazu transforms into a crab, drider, or giant crab, or returns to its true form. Its game statistics, except for its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Quavilithku Spyder-Fiend|VEOR",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Spider Climb": "蛛行",
+				"Web Sense": "蛛網感知",
+				"Web Walker": "蛛網行者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Quavilithku Spyder-Fiend",
+				"natural armor",
+				"Magic Resistance",
+				"The quavilithku has advantage on saving throws against spells and other magical effects.",
+				"Spider Climb",
+				"The quavilithku can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Web Sense",
+				"When in contact with a web, the quavilithku knows the exact location of any other creature in contact with the same web.",
+				"Web Walker",
+				"The quavilithku ignores movement restrictions caused by webbing.",
+				"Multiattack",
+				"The quavilithku makes two Bite attacks.",
+				"Bite",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage plus 17 ({@damage 5d6}) poison damage. If the target is a creature, it must succeed on a {@dc 18} Constitution saving throw or have the {@condition poisoned} condition for 1 minute. While {@condition poisoned} in this way, a creature can't regain hit points. A {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Dissolving Web {@recharge 5}",
+				"The quavilithku expels acid-drenched webs in a 90-foot cone. Each creature in that area must make a {@dc 18} Constitution saving throw, taking 44 ({@damage 8d10}) acid damage on a failed save or half as much damage on a successful one. Nonmagical objects in the area that aren't being worn or carried take 44 ({@damage 8d10}) acid damage.",
+				"Assess Weakness",
+				"The quavilithku sizes up a creature it can see within 40 feet of itself. Until the start of the quavilithku's next turn, it has advantage on attack rolls against the creature."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rack|VEOR",
+			"s": [
+				"Rack"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Raklupis Spyder-Fiend|VEOR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Spider Climb": "蛛行",
+				"Web Sense": "蛛網感知",
+				"Web Walker": "蛛網行者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Serrated Sword": "鋸齒劍"
+			},
+			"s": [
+				"Raklupis Spyder-Fiend",
+				"natural armor",
+				"Spellcasting",
+				"The raklupis casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 20}).",
+				"Magic Resistance",
+				"The raklupis has advantage on saving throws against spells and other magical effects.",
+				"Spider Climb",
+				"The raklupis can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Web Sense",
+				"When in contact with a web, the raklupis knows the exact location of any other creature in contact with the same web.",
+				"Web Walker",
+				"The raklupis ignores movement restrictions caused by webbing.",
+				"Multiattack",
+				"The raklupis makes a Bite attack and two Serrated Sword attacks. It can use Venom Globe in place of one of these attacks.",
+				"Bite",
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage plus 18 ({@damage 4d8}) poison damage. If the target is a creature, it must succeed on a {@dc 20} Constitution saving throw or have the {@condition poisoned} condition for 1 minute. While {@condition poisoned} in this way, a creature has the {@condition incapacitated} condition and can't regain hit points. A {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Serrated Sword",
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) slashing damage plus 18 ({@damage 4d8}) poison damage.",
+				"Venom Globe",
+				"{@atk rw} {@hit 11} to hit, range 60/180 ft., one target. {@h}45 ({@damage 10d8}) poison damage.",
+				"Demand Loyalty",
+				"The raklupis magically ends the {@condition charmed} and {@condition frightened} conditions on itself and on any number of allies within 60 feet of itself."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Redbud|VEOR",
+			"s": [
+				"Redbud"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Relentless Impaler|VEOR",
+			"hint": {
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Multiattack": "多重攻擊",
+				"Spike": "尖刺"
+			},
+			"s": [
+				"Relentless Impaler",
+				"natural armor",
+				"Bloodheart Stake",
+				"The impaler is magically bound to the ceremonial stake and the sacrificed corpse the ritual caster used to create it. If the impaler is reduced to 0 hit points, it disappears, then re-forms {@dice 1d8} hours later in the nearest unoccupied space to the stake and regains all its hit points. The impaler dies only if it is reduced to 0 hit points while either the ceremonial stake is removed from the sacrifice's corpse or the impaler is on a different plane of existence from that corpse.",
+				"Legendary Resistance (3/Day)",
+				"If the impaler fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The impaler makes one Spike attack and two Wicked Spear attacks.",
+				"Spike",
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) piercing damage, and the target's speed is halved until the start of the impaler's next turn.",
+				"Wicked Spear",
+				"{@atk mw,rw} {@hit 11} to hit, reach 10 ft. or range 20/40 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage plus 13 ({@damage 3d8}) necrotic damage.",
+				"Spike Burst {@recharge 5}",
+				"Twisted, spectral spikes shoot out from the impaler's body. Each creature within 30 feet of the impaler must make a {@dc 19} Dexterity saving throw, taking 40 ({@damage 9d8}) force damage on a failed save or half as much damage on a successful one.",
+				"Speed Spike",
+				"The impaler teleports up to 30 feet to an unoccupied space it can see. It can then make a Spike attack.",
+				"Deepen Wounds (Costs 2 Actions)",
+				"Each creature whose speed is currently reduced by the impaler's Spike attack takes 18 ({@damage 4d8}) necrotic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rerak|VEOR",
+			"s": [
+				"Rerak"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rezran \"Snake Eyes\" Agrodro|VEOR",
+			"s": [
+				"Rezran \"Snake Eyes\" Agrodro"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Riffel|VEOR",
+			"s": [
+				"Riffel"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sangora|VEOR",
+			"s": [
+				"Sangora"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sarcelle Malinosh|VEOR",
+			"s": [
+				"Sarcelle Malinosh"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sarusanda Allester|VEOR",
+			"s": [
+				"Sarusanda Allester"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shanzezim|VEOR",
+			"s": [
+				"Shanzezim"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spiderdragon|VEOR",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Spider Climb": "蛛行",
+				"Web Walker": "蛛網行者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Spiderdragon",
+				"natural armor",
+				"Magic Resistance",
+				"The spiderdragon has advantage on saving throws against spells and other magical effects.",
+				"Spider Climb",
+				"The spiderdragon can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Web Walker",
+				"The spiderdragon ignores movement restrictions caused by webbing.",
+				"Multiattack",
+				"The spiderdragon makes one Bite attack and two Claw attacks.",
+				"Bite",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage plus 13 ({@damage 2d12}) poison damage.",
+				"Claw",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage.",
+				"Spiderling Breath {@recharge 5}",
+				"The spiderdragon exhales venomous spiderlings in a 30-foot cone. Each creature in that area must make a {@dc 15} Dexterity saving throw, taking 33 ({@damage 6d10}) piercing damage and 33 ({@damage 6d10}) poison damage on a failed save or half as much damage on a successful one.",
+				"Stifling Webs {@recharge 5}",
+				"The spiderdragon spins a 30-foot cube of strong, sticky webbing in an area adjacent to itself. The webbing lasts for 1 minute, is difficult terrain, and lightly obscures its area. A creature that starts its turn in the webbing or enters the webbing for the first time on its turn must succeed on a {@dc 15} Dexterity saving throw or have the {@condition restrained} condition while in the web. As an action, a creature can free itself or another creature from the web by succeeding on a {@dc 15} Strength check.",
+				"A 5-foot cube of the web is destroyed if it takes at least 10 acid, fire, or slashing damage on a single turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Star Angler|VEOR",
+			"hint": {
+				"Avoidance": "迴避",
+				"Illumination": "照明",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Star Angler",
+				"natural armor",
+				"Avoidance",
+				"If the star angler is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails.",
+				"Illumination",
+				"The star angler's lure sheds bright light in a 30-foot radius and dim light for an additional 30 feet.",
+				"Multiattack",
+				"The star angler makes three Bite attacks.",
+				"Bite",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage.",
+				"Lure Charm",
+				"The star angler's lure flares with enchanting starlight, targeting one creature the star angler can see within 120 feet of itself. The target must succeed on a {@dc 13} Wisdom saving throw or have the {@condition charmed} condition until the start of the star angler's next turn. While {@condition charmed} in this way, the target has the {@condition incapacitated} condition and must use its movement on its turn to move directly toward the star angler; a {@condition charmed} target doesn't avoid opportunity attacks, but it does avoid damaging terrain. A target can be {@condition charmed} by only one star angler at a time."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Strahd, Master of Death House|VEOR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Regeneration": "再生",
+				"Spider Climb": "蛛行",
+				"Vampire Weaknesses": "吸血鬼弱點",
+				"Harmed by Running Water": "流水傷害",
+				"Sunlight Hypersensitivity": "日光過敏",
+				"Multiattack": "多重攻擊",
+				"Death Strike": "死亡一擊",
+				"Charm": "魅惑",
+				"Bite": "啃咬",
+				"Change Shape": "變形",
+				"Mist Form": "霧化形態",
+				"Strike (Costs 2 Actions)": "打擊（消耗 2 個動作）"
+			},
+			"s": [
+				"Strahd, Master of Death House",
+				"natural armor",
+				"Spellcasting",
+				"Strahd casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 18}):",
+				"Legendary Resistance (3/Day)",
+				"If Strahd fails a saving throw, he can choose to succeed instead.",
+				"Master of the House",
+				"When Strahd is reduced to 0 hit points, he dissolves into mist and immediately teleports to his lair in Castle Ravenloft. After {@dice 1d4} hours, Strahd re-forms in a random unoccupied space within his lair, regaining all his hit points.",
+				"Regeneration",
+				"Strahd regains 20 hit points at the start of his turn if he has at least 1 hit point. If he takes radiant damage, this trait doesn't function at the start of his next turn.",
+				"Spider Climb",
+				"Strahd can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Vampire Weaknesses",
+				"Strahd has the following flaws:",
+				"Harmed by Running Water",
+				"While in running water, Strahd takes 20 acid damage if he ends his turn there, and he can't use his Change Shape.",
+				"Sunlight Hypersensitivity",
+				"While in sunlight, Strahd takes 20 radiant damage at the start of his turn, has disadvantage on attack rolls and ability checks, and can't use his Change Shape bonus action.",
+				"Multiattack",
+				"Strahd makes two Death Strike attacks. He can replace one of these attacks with Blighted Fire if available.",
+				"Death Strike",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage plus 14 ({@damage 4d6}) necrotic damage. If the target is a creature, Strahd can forgo dealing slashing damage; the target then has the {@condition grappled} condition (escape {@dc 18}) instead. Strahd can grapple only one creature at a time.",
+				"Blighted Fire {@recharge 5}",
+				"Strahd summons shadowy, necrotic fire that fills a 20-foot-radius sphere centered on a point he can see within 90 feet of himself. Each creature in that area must make a {@dc 18} Dexterity saving throw, taking 14 ({@damage 4d6}) fire damage plus 14 ({@damage 4d6}) necrotic damage on a failed save or half as much damage on a successful one.",
+				"Charm",
+				"Strahd targets one Humanoid he can see within 30 feet of himself. The target must succeed on a {@dc 17} Wisdom saving throw or have the {@condition charmed} condition. The {@condition charmed} target regards Strahd as a trusted friend to be heeded and protected. The target isn't under Strahd's control, but it takes Strahd's requests and actions in the most favorable way.",
+				"Each time Strahd or his companions deal damage to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until Strahd is reduced to 0 hit points, is on a different plane of existence than the target, or uses a bonus action to end the effect.",
+				"Bite",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature that has the {@condition charmed} or {@condition grappled} condition. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Strahd regains a number of hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0. A Humanoid slain in this way and then buried rises the following night as a vampire spawn under Strahd's control.",
+				"Change Shape",
+				"Strahd transforms into a new form or back into his true form. Anything he is wearing transforms with him, but nothing he is carrying does. He reverts to his true form if he dies. When transforming into a new form, Strahd chooses one of the following options:",
+				"Beast Form",
+				"Strahd transforms into a Tiny bat (flying speed 30 ft.) or a Medium wolf (speed 40 ft.). While in that form, he can't speak, and he retains his game statistics other than his size and speed.",
+				"Mist Form",
+				"Strahd transforms into a Medium cloud of mist. While in this form, Strahd has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. While in mist form, Strahd can pass through a space without squeezing as long as air can pass through that space, but he can't pass through water. Strahd has advantage on Strength, Dexterity, and Constitution saving throws, and he is immune to all nonmagical damage except the damage he takes as part of his Vampire Weaknesses trait. While in mist form, Strahd can't take any actions, speak, or manipulate objects.",
+				"Cunning Escape",
+				"Strahd moves up to his speed without provoking opportunity attacks.",
+				"Strike (Costs 2 Actions)",
+				"Strahd makes one Death Strike attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tasha the Witch|VEOR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Tasha the Witch",
+				"Spellcasting",
+				"Tasha casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 22}, {@hit 14} to hit with spell attacks):",
+				"Legendary Resistance (3/Day)",
+				"If Tasha fails a saving throw, she can choose to succeed instead.",
+				"Magic Resistance",
+				"Tasha has advantage on saving throws against spells and other magical effects. (This trait is bestowed by her Robe of the Archmagi.)",
+				"Special Equipment",
+				"Tasha wears a {@item Robe of the Archmagi}.",
+				"Multiattack",
+				"Tasha makes two Caustic Blast attacks and uses Psychic Whip once.",
+				"Caustic Blast",
+				"{@atk ms,rs} {@hit 14} to hit, reach 5 ft. or range 120 ft., one target. {@h}21 ({@damage 6d4 + 6}) acid damage.",
+				"Psychic Whip",
+				"Tasha psychically lashes out at one creature she can see within 90 feet of herself. The target must make a {@dc 20} Intelligence saving throw. On a failed save, the target takes 21 ({@damage 6d6}) psychic damage and has the {@condition stunned} condition until the start of Tasha's next turn. On a successful save, the target takes half as much damage only.",
+				"Abyssal Visage (2/Day)",
+				"For 1 minute, Tasha gains a flying speed of 30 feet, is immune to poison damage and the {@condition poisoned} condition, and has advantage on attack rolls against any creature that doesn't have all its hit points. These benefits end early if Tasha has the {@condition incapacitated} condition or if she uses another bonus action to dismiss them.",
+				"Arcane Rebuff",
+				"Immediately after Tasha takes damage, she unleashes arcane energy in a 10-foot-radius sphere centered on herself. All other creatures in that area must make a {@dc 20} Dexterity saving throw, taking 19 ({@damage 3d12}) lightning damage on a failed save or half as much damage on a successful one. Tasha then teleports, along with any equipment she is wearing or carrying, to an unoccupied space she can see within 60 feet of herself."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Teremini Nightsedge|VEOR",
+			"s": [
+				"Teremini Nightsedge"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Umberto Noblin|VEOR",
+			"s": [
+				"Umberto Noblin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Uvashar|VEOR",
+			"s": [
+				"Uvashar"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vaeve|VEOR",
+			"s": [
+				"Vaeve"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Valendar|VEOR",
+			"s": [
+				"Valendar"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vecna the Archlich|VEOR",
+			"hint": {
+				"Vecna the Archlich": "大巫妖維克那",
+				"Spellcasting": "施法",
+				"Legendary Resistance (5/Day)": "傳奇抗性（每日 5 次）",
+				"Special Equipment": "特殊裝備",
+				"Undying": "不死不滅",
+				"Multiattack": "多重攻擊",
+				"Afterthought": "餘念",
+				"Flight of the Damned {@recharge 5}": "受詛者飛魂 {@recharge 5}",
+				"Rotten Fate": "腐朽命運",
+				"Vile Teleport": "邪惡傳送",
+				"Dread Counterspell": "恐懼反制法術",
+				"Fell Rebuke": "凶殘斥責"
+			},
+			"s": [
+				"Vecna the Archlich",
+				"natural armor",
+				"Spellcasting",
+				"Vecna casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 22}):",
+				"Legendary Resistance (5/Day)",
+				"If Vecna fails a saving throw, he can choose to succeed instead.",
+				"Special Equipment",
+				"Vecna carries a magic dagger named Afterthought. In the hands of anyone other than Vecna, Afterthought is a {@item +2 Dagger}.",
+				"Undying",
+				"If Vecna is slain, his soul refuses to accept its fate and lives on as a disembodied spirit that fashions a new body for itself after {@dice 1d100} years. Vecna's new body appears within 100 miles of where he was slain. When the new body is complete, Vecna regains all his hit points and becomes active again.",
+				"Multiattack",
+				"Vecna uses Flight of the Damned (if available), Rotten Fate, or Spellcasting. He then makes two attacks with Afterthought.",
+				"Afterthought",
+				"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage plus 9 ({@damage 2d8}) necrotic damage. If the target is a creature, it is afflicted by entropic magic, taking 9 ({@damage 2d8}) necrotic damage at the start of each of its turns. Immediately after taking this damage on its turn, the target must make a {@dc 20} Constitution saving throw, ending the effect on itself on a success. Until it succeeds on this save, the afflicted target can't regain hit points.",
+				"Flight of the Damned {@recharge 5}",
+				"Vecna conjures a torrent of flying, spectral entities that fill a 120-foot cone and pass through all creatures in that area before dissipating. Each creature in that area must make a {@dc 22} Constitution saving throw. On a failed save, the creature takes 36 ({@damage 8d8}) necrotic damage and has the {@condition frightened} condition for 1 minute. On a successful save, the creature takes half as much damage only. A {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Rotten Fate",
+				"Vecna causes necrotic magic to engulf one creature he can see within 120 feet of himself. The target must make a {@dc 22} Constitution saving throw, taking 96 ({@damage 8d8 + 60}) necrotic damage on a failed save or half as much damage on a successful one. A Humanoid killed by this magic rises as a zombie at the start of Vecna's next turn and acts immediately after Vecna in the initiative order. The zombie is under Vecna's control.",
+				"Vile Teleport",
+				"Vecna teleports, along with any equipment he is wearing or carrying, up to 30 feet to an unoccupied space he can see. He can cause each creature of his choice within 15 feet of his destination space to take 10 ({@damage 3d6}) psychic damage. If at least one creature takes this damage, Vecna regains 80 hit points.",
+				"Vecna can take up to three reactions per round but only one per turn.",
+				"Dread Counterspell",
+				"Vecna utters a dread word to interrupt a creature he can see that is casting a spell. If the spell is 4th level or lower, it fails and has no effect. If the spell is 5th level or higher, Vecna makes an Intelligence check ({@dc 10} plus the spell's level). On a successful check, the spell fails and has no effect. Whatever the spell's level, the caster takes 10 ({@damage 3d6}) psychic damage if the spell fails.",
+				"Fell Rebuke",
+				"In response to being hit by an attack, Vecna utters a fell word, dealing 10 ({@damage 3d6}) necrotic damage to the attacker, and Vecna teleports, along with any equipment he is wearing or carrying, up to 30 feet to an unoccupied space he can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vlazok|VEOR",
+			"hint": {
+				"All-Around Vision": "全方位視覺",
+				"Blood Frenzy": "血腥狂亂",
+				"Magic Resistance": "魔法抗性",
+				"Spider Climb": "蛛行",
+				"Multiattack": "多重攻擊",
+				"Gore": "頂撞",
+				"Stomp": "踐踏"
+			},
+			"s": [
+				"Vlazok",
+				"natural armor",
+				"All-Around Vision",
+				"The vlazok can't be surprised.",
+				"Blood Frenzy",
+				"The vlazok has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+				"Magic Resistance",
+				"The vlazok has advantage on saving throws against spells and other magical effects.",
+				"Spider Climb",
+				"The vlazok can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Multiattack",
+				"The vlazok makes two Gore attacks.",
+				"Gore",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}23 ({@damage 4d8 + 5}) piercing damage, and if the target is a Large or smaller creature, it has the {@condition prone} condition.",
+				"Stomp",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one {@condition prone} creature. {@h}27 ({@damage 4d10 + 5}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Warforged Warrior|VEOR",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Armblade": "臂刃",
+				"Javelin": "標槍",
+				"Protection": "守護"
+			},
+			"s": [
+				"Warforged Warrior",
+				"natural armor",
+				"Multiattack",
+				"The warforged makes two Armblade attacks.",
+				"Armblade",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage.",
+				"Javelin",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+				"Protection",
+				"When an attacker the warforged can see makes an attack roll against a creature within 5 feet of the warforged, the warforged can impose disadvantage on the attack roll."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Whirling Chandelier|VEOR",
+			"hint": {
+				"False Appearance": "擬態",
+				"Multiattack": "多重攻擊",
+				"Chain": "鎖鏈",
+				"Lamp": "油燈"
+			},
+			"s": [
+				"Whirling Chandelier",
+				"natural armor",
+				"(hover)",
+				"False Appearance",
+				"If the chandelier is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the chandelier move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the chandelier is animate.",
+				"Fiery Aura",
+				"Any creature that starts its turn within 5 feet of the chandelier takes 7 ({@damage 2d6}) fire damage.",
+				"Multiattack",
+				"The chandelier makes three Chain attacks, three Lamp attacks, or a combination thereof.",
+				"Chain",
+				"{@atk mw} {@hit 7} to hit, reach 15 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, and the target must succeed on a {@dc 15} Strength saving throw or be pulled into an unoccupied space within 5 feet of the chandelier.",
+				"Lamp",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage plus 13 ({@damage 3d8}) fire damage.",
+				"Blazing Vortex {@recharge 5}",
+				"Each creature within 20 feet of the chandelier and not behind {@quickref Cover||3||total cover} must succeed on a {@dc 14} Constitution saving throw or take 36 ({@damage 8d8}) fire damage and have the {@condition blinded} condition until the start of the chandelier's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Windfall|VEOR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊",
+				"Cast a Spell (Costs 2 Actions)": "施展法術（消耗 2 個動作）"
+			},
+			"s": [
+				"Windfall",
+				"Spellcasting",
+				"Windfall casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 23}):",
+				"Dazzling Visage",
+				"A brilliant array of chromatic colors emanates from Windfall, causing attack rolls against her to have disadvantage. This trait ceases to function while Windfall has the {@condition incapacitated} condition or has a speed of 0.",
+				"Legendary Resistance (3/Day)",
+				"If Windfall fails a saving throw, she can choose to succeed instead.",
+				"Special Equipment",
+				"Windfall wears an iridescent magic coat that was tailored specifically for her and imbued with Tiamat's power. When she dies, the coat functions as a {@item Robe of Scintillating Colors}.",
+				"Multiattack",
+				"Windfall makes two Chromatic Rapier attacks and uses Dragon's Fury once.",
+				"Chromatic Rapier",
+				"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 7}) piercing damage plus 21 ({@damage 6d6}) acid, cold, fire, lightning, or poison damage (Windfall's choice).",
+				"Dragon's Fury",
+				"Windfall targets one creature she can see within 60 feet of herself and unleashes a burst of magical ire. The target must make a {@dc 23} Wisdom saving throw. On a failed save, the target takes 36 ({@damage 8d8}) psychic damage and has the {@condition frightened} condition until the start of Windfall's next turn. On a successful save, the target takes half as much damage only.",
+				"Stunning Scintillation {@recharge 5}",
+				"Windfall emits an overwhelming array of colors from her coat. Each creature within 30 feet of Windfall that can see her must succeed on a {@dc 23} Constitution saving throw or have the {@condition stunned} condition until the start of Windfall's next turn.",
+				"Deft Dance",
+				"Windfall moves up to her speed without provoking opportunity attacks.",
+				"Dragon's Flare",
+				"Windfall flares with multicolored flames and targets a creature she can see within 30 feet of herself. The target must make a {@dc 23} Dexterity saving throw. On a failed save, the target takes 26 ({@damage 4d12}) damage of a type chosen by Windfall: acid, cold, fire, lightning, or poison. On a successful save, the target takes half as much damage.",
+				"Cast a Spell (Costs 2 Actions)",
+				"Windfall uses Spellcasting."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zastra|VEOR",
+			"s": [
+				"Zastra"
+			]
+		}
+	]
+}
