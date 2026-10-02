@@ -11306,7 +11306,7 @@ const __ZH_LANG_NAMES = {
 	"Tletlahtolli": "特萊特拉托利語", "Ziklight": "齊克萊特語", "Endspeech": "終末語", "Leonin": "獅族語", "Homarid": "蝦人語",
 };
 const __ZH_NUM = {one: "一", two: "兩", three: "三", four: "四", five: "五", six: "六"};
-const __ZH_FORM = {bear: "熊", boar: "野豬", rat: "鼠", tiger: "虎", wolf: "狼", vulture: "禿鷲", jackal: "胡狼", canid: "犬", jaguar: "美洲豹", raven: "渡鴉", fox: "狐", bat: "蝙蝠", wyvern: "雙足飛龍"};
+const __ZH_FORM = {bear: "熊", boar: "野豬", rat: "鼠", tiger: "虎", wolf: "狼", vulture: "禿鷲", jackal: "胡狼", canid: "犬", jaguar: "美洲豹", raven: "渡鴉", fox: "狐", bat: "蝙蝠", wyvern: "飛龍"};
 const __zhLang = str => {
 	let s = str;
 	const names = Object.keys(__ZH_LANG_NAMES).sort((a, b) => b.length - a.length);
