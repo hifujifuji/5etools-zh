@@ -163,6 +163,19 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	if (touched) loaded.push({file, json});
 }
 
+// ---- 3‴. 怪物中文簡介（i18n/monster-intro.json；本站自撰的概述，以方塊置於資訊頁最前，原文保留） ----
+{
+	const intro = readJson(path.join(I18N, "monster-intro.json"));
+	for (const {json} of loaded) {
+		for (const f of json.monsterFluff || []) {
+			const t = intro[`${f.name}|${f.source}`];
+			if (!t || f._copy) continue;
+			(f.entries ||= []).unshift({type: "inset", name: "中文簡介", entries: [].concat(t)});
+			bump("monsterIntro", "full");
+		}
+	}
+}
+
 // ---- 3a. 職業起始裝備／熟練字串（i18n/class-equipment.json，完全比對） ----------------
 {
 	const eq = readJson(path.join(I18N, "class-equipment.json"));
