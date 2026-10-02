@@ -1,0 +1,17 @@
+// FTD：寶石龍與深地龍等依年齡分列的條目共用同一則簡介
+import fs from "fs";
+const T={
+"Amethyst Dragon":"紫水晶龍是寶石龍中最睿智、最威嚴的一種，居住在靠近其他位面裂隙的偏遠山區與湖畔，潛心研究多元宇宙的奧祕。牠們擁有強大的靈能，吐息是一顆扭曲重力的奇異能量球，並把遠域的異怪視為必須剷除的禍害。",
+"Crystal Dragon":"水晶龍是寶石龍中最友善、最好奇的一種，居住在雪峰與冰原上，喜歡在夜裡仰望星空，從星象中解讀預兆。牠們的鱗片晶瑩透亮，吐息是一道耀眼的光芒，並樂於與來訪的小生物交談。",
+"Deep Dragon":"深地龍是居住在幽暗地域的龍，據說是五色龍長年受地底魔力影響演變而來。牠們能在狹窄的洞穴中靈活穿行，噴出使人驚恐的孢子雲，喜歡蒐集祕密、珍稀的真菌與地底的寶物。",
+"Emerald Dragon":"翡翠龍是寶石龍中最多疑、最孤僻的一種，居住在火山附近的洞穴裡，熱衷於暗中觀察其他生物的歷史與習俗。牠們擅長以幻象隱藏自己，吐息是一陣擾亂心智的刺耳音波。",
+"Moonstone Dragon":"月長石龍是來自妖精荒野的龍，鱗片散發柔和的珠光，生性愛作夢且充滿好奇。牠們能進入他人的夢境與之交談，並喜歡結交藝術家與詩人，常以夢境給予他們靈感。",
+"Sapphire Dragon":"藍寶石龍是寶石龍中最好戰、領域性最強的一種，居住在地底深處的洞窟，把巨蜘蛛當作美食。牠們鑽研兵法與戰史，吐息是一道震懾心神的雷鳴音波，並與奪心魔等地底異怪勢不兩立。",
+"Topaz Dragon":"黃玉龍是寶石龍中脾氣最壞的一種，居住在偏僻的海岸與海蝕洞中，討厭被人打擾。牠們的吐息會抽乾生物體內的水分，使其枯萎脫水；儘管性情乖僻，牠們偶爾也會對有耐心的訪客敞開心房。",
+"Dragon Turtle":"龍龜是海洋中最可怕的生物之一，背甲堅硬如龍鱗，能噴出滾燙的蒸氣，足以掀翻船隻。牠和真龍一樣隨年歲增長而愈發強大，也同樣貪愛財寶，常向行經其領海的船隻索取貢品，並把沉船中的寶物堆在海底洞窟裡。",
+"Sea Serpent":"海蛇是身軀修長、沒有四肢的海生龍類，在深海中蜿蜒游動，會纏住船隻將其絞碎，並噴出刺骨的寒氣。牠與真龍有血緣關係，同樣會把沉船的財寶聚集在巢穴裡。"};
+const A={Wyrmling:n=>`${n} Wyrmling`,Young:n=>`Young ${n}`,Adult:n=>`Adult ${n}`,Ancient:n=>`Ancient ${n}`};
+const o={}; for(const [n,t] of Object.entries(T)) for(const f of Object.values(A)) o[`${f(n)}|FTD`]=t;
+const valid=new Set(JSON.parse(fs.readFileSync("dist/data/bestiary/fluff-bestiary-ftd.json","utf8")).monsterFluff.map(f=>`${f.name}|${f.source}`));
+for(const k of Object.keys(o)) if(!valid.has(k)) delete o[k];
+fs.writeFileSync("work/intro/ftd-auto.json",JSON.stringify(o,null,"\t")); console.log(Object.keys(o).length);

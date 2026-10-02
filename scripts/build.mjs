@@ -164,15 +164,27 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 }
 
 // ---- 3‴. 怪物中文簡介（i18n/monster-intro.json；本站自撰的概述，以方塊置於資訊頁最前，原文保留） ----
+// _copy 條目：自己有簡介就用自己的，否則沿用來源條目的；一律以 _mod 移到最前（先移除繼承來的方塊再前置）。
 {
 	const intro = readJson(path.join(I18N, "monster-intro.json"));
-	for (const {json} of loaded) {
-		for (const f of json.monsterFluff || []) {
-			const t = intro[`${f.name}|${f.source}`];
-			if (!t || f._copy) continue;
-			(f.entries ||= []).unshift({type: "inset", name: "中文簡介", entries: [].concat(t)});
-			bump("monsterIntro", "full");
+	const all = new Map();
+	for (const {json} of loaded) for (const f of json.monsterFluff || []) all.set(`${f.name}|${f.source}`, f);
+	const srcOf = f => f._copy && all.get(`${f._copy.name}|${f._copy.source}`);
+	const textOf = (f, depth = 0) => f && depth < 8 ? intro[`${f.name}|${f.source}`] || textOf(srcOf(f), depth + 1) : null;
+	const inset = t => ({type: "inset", name: "中文簡介", entries: [].concat(t)});
+	const plan = [];
+	for (const f of all.values()) { const t = textOf(f); if (t) plan.push([f, t, !!textOf(srcOf(f))]); }
+	for (const [f, t, srcHas] of plan) {
+		if (!f._copy) (f.entries ||= []).unshift(inset(t));
+		else {
+			const mod = f._copy._mod ||= {};
+			mod.entries = [
+				...(srcHas ? [{mode: "removeArr", names: "中文簡介", force: true}] : []),
+				...[].concat(mod.entries || []),
+				{mode: "prependArr", items: [inset(t)]},
+			];
 		}
+		bump("monsterIntro", "full");
 	}
 }
 
