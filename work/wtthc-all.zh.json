@@ -29,7 +29,7 @@
 		"啃咬",
 		"{@atkr m} {@hit 5}（若目標被魔蝠{@condition Grappled|XPHB|擒抱}則具有{@variantrule Advantage|XPHB}），觸及 5 呎。{@h}10（{@damage 2d6 + 3}）穿刺傷害。",
 		"觸手",
-		"{@atkr m} {@hit 5}，觸及 5 呎。{@h}7（{@damage 1d8 + 3}）劈砍傷害。若目標是中型或更小的生物，目標被全部四條觸手纏住而陷入{@condition Grappled|XPHB}狀態（逃脫 {@dc 13}）。"
+		"{@atkr m} {@hit 5}，觸及 5 呎。{@h}7（{@damage 1d8 + 3}）劈砍傷害。若目標是中型或更小的生物，目標被全部四條觸手纏住而陷入{@condition Grappled|XPHB}狀態（脫逃 {@dc 13}）。"
 	],
 	"Demodog|WTTHC": [
 		"魔犬",
@@ -138,7 +138,7 @@
 	"Vine Blight Tangler|WTTHC": [
 		"枯藤怪纏繞者",
 		"緊縛藤蔓",
-		"{@atkr m} {@hit 4}，觸及 10 呎。{@h}{@damage 1d10 + 2} 鈍擊傷害。若目標是大型或更小的生物，它被三條藤蔓之一纏住而陷入{@condition Grappled|XPHB}狀態（逃脫 {@dc 12}）。",
+		"{@atkr m} {@hit 4}，觸及 10 呎。{@h}{@damage 1d10 + 2} 鈍擊傷害。若目標是大型或更小的生物，它被三條藤蔓之一纏住而陷入{@condition Grappled|XPHB}狀態（脫逃 {@dc 12}）。",
 		"纏繞藤蔓 {@recharge 5}",
 		"抓攫的藤蔓短暫出現在一個半徑 10 呎{@variantrule Sphere [Area of Effect]|XPHB|球體}內的每個敵人身上，球體以枯藤怪纏繞者 60 呎內由它選擇的一點為中心。每個目標必須成功通過一次 {@dc 12} 力量豁免檢定，否則陷入{@condition Restrained|XPHB}狀態直到枯藤怪纏繞者的下個回合開始。"
 	]
