@@ -1,0 +1,914 @@
+{
+	"batch": "bgdia-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Abyssal Chicken|BGDIA",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Abyssal Chicken",
+				"natural armor",
+				"(see bad flier below)",
+				"Bad Flier",
+				"The abyssal chicken falls at the end of a turn if it's airborne and the only thing holding it aloft is its flying speed.",
+				"Multiattack",
+				"The abyssal chicken makes two attacks: one with its bite and one with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage.",
+				"Claws",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Amrik Vanthampur|BGDIA",
+			"hint": {
+				"Suave Defense": "瀟灑防禦",
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首",
+				"Smoke Bomb (1/Day)": "煙霧彈（每日 1 次）"
+			},
+			"s": [
+				"Amrik Vanthampur",
+				"charisma modifier",
+				"Suave Defense",
+				"While Amrik is wearing light or no armor and wielding no shield, his AC includes his Charisma modifier.",
+				"Multiattack",
+				"Amrik makes three dagger attacks.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage.",
+				"Smoke Bomb (1/Day)",
+				"Amrik hurls a smoke bomb up to 20 feet away. The bomb explodes on impact, creating a cloud of black smoke that fills a 10-foot-radius sphere. The area within the cloud is heavily obscured. A strong wind disperses the cloud, which otherwise remains until the end of Amrik's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Archduke Zariel of Avernus|BGDIA",
+			"s": [
+				"Archduke Zariel of Avernus"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Arkhan the Cruel|BGDIA",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Aura of Hate": "憎恨靈光",
+				"Hand of Vecna": "維克那之手",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊",
+				"Javelin": "標槍"
+			},
+			"s": [
+				"Arkhan the Cruel",
+				"Innate Spellcasting",
+				"Arkhan's spellcasting ability is Charisma (spell save {@dc 17}). He can cast the following spells, requiring no material components:",
+				"Aura of Hate",
+				"While Arkhan isn't {@condition incapacitated}, he and all fiends and undead within 30 feet of him deal 4 extra damage whenever they hit with a melee weapon attack (already factored into Arkhan's attacks). This extra damage is of the same type as the weapon's damage type.",
+				"Hand of Vecna",
+				"The {@item Hand of Vecna} has 8 charges and regains {@dice 1d4 + 4} expended charges daily at dawn. Arkhan can cast the following spells from the hand by expending the specified number of charges (spell save {@dc 18}): {@spell finger of death} (5 charges), {@spell sleep} (1 charge), {@spell slow} (2 charges), and {@spell teleport} (3 charges).",
+				"Special Equipment",
+				"Arkhan wields {@item Fane-Eater|BGDIA} and wears a suit of {@item Obsidian Flint Dragon Plate|BGDIA}. The armor gives Arkhan advantage on ability checks and saving throws made to avoid or end the {@condition grappled} condition on him.",
+				"Multiattack",
+				"Arkhan makes three weapon attacks.",
+				"Fane-Eater (Battleaxe)",
+				"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}16 ({@damage 1d8 + 12}) slashing damage, or 17 ({@damage 1d10 + 12}) slashing damage when used with two hands, plus 9 ({@damage 2d8}) cold damage. If the target is a creature and Arkhan rolls a 20 on the attack roll, the creature takes an extra 9 ({@damage 2d8}) necrotic damage, and Arkhan regains an amount of hit points equal to the necrotic damage dealt.",
+				"Javelin",
+				"{@atk mw,rw} {@hit 10} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage, plus 4 piercing damage and 9 ({@damage 2d8}) cold damage if the javelin was used to make a melee attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bel|BGDIA",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Fear Aura": "恐懼靈光",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Magic Weapons": "魔法武器",
+				"Multiattack": "多重攻擊",
+				"Greatsword": "巨劍",
+				"Tail": "尾擊",
+				"Fireball": "火球術"
+			},
+			"s": [
+				"Bel",
+				"natural armor",
+				"Innate Spellcasting",
+				"Bel's spellcasting ability is Charisma (spell save {@dc 23}). Bel can innately cast the following spells, requiring no material components:",
+				"Fear Aura",
+				"Any creature hostile to Bel that starts its turn within 20 feet of him must make a {@dc 23} Wisdom saving throw, unless Bel is {@condition incapacitated}. Unless the save succeeds, the creature is {@condition frightened} until the start of its next turn. If a creature's saving throw is successful, the creature is immune to Bel's Fear Aura for the next 24 hours.",
+				"Legendary Resistance (3/Day)",
+				"If Bel fails a saving throw, he can choose to succeed instead.",
+				"Magic Resistance",
+				"Bel has advantage on saving throws against spells and other magical effects.",
+				"Magic Weapons",
+				"Bel's weapon attacks are magical.",
+				"Multiattack",
+				"Bel makes three attacks: two with his greatsword and one with his tail.",
+				"Greatsword",
+				"{@atk mw} {@hit 16} to hit, reach 10 ft., one target. {@h}23 ({@damage 4d6 + 9}) slashing damage plus 21 ({@damage 6d6}) fire damage. If the target is a flammable object that is not being held or worn, it catches fire.",
+				"Tail",
+				"{@atk mw} {@hit 16} to hit, reach 10 ft., one target. {@h}25 ({@damage 3d10 + 9}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 23} Constitution saving throw or be {@condition stunned} until the end of its next turn.",
+				"Fireball",
+				"Bel casts {@spell fireball}.",
+				"Tactical Edge (Costs 2 Actions)",
+				"Roll a {@dice d6} for Bel. The number rolled on the die is subtracted from the next attack roll made against Bel or an ally of his choice within the next minute.",
+				"Summon Ice Devil (Costs 3 Actions)",
+				"Bel magically summons an ice devil with an ice spear (as described in the ice devil's entry in the Monster Manual). The ice devil appears in an unoccupied space within 60 feet of Bel, acts as Bel's ally, and can summon other devils if it has such power. The ice devil remains until Bel dies or until he dismisses it as an action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bitter Breath|BGDIA",
+			"s": [
+				"Bitter Breath"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Black Gauntlet of Bane|BGDIA",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Mace": "硬頭錘"
+			},
+			"s": [
+				"Black Gauntlet of Bane",
+				"Spellcasting",
+				"The black gauntlet is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following cleric spells prepared:",
+				"Aura of Terror",
+				"When a hostile creature within 5 feet of the black gauntlet makes an attack roll or a saving throw, it has disadvantage on the roll. Creatures that are immune to the {@condition frightened} condition are immune to this trait.",
+				"Tactical Discipline",
+				"The black gauntlet has advantage on all ability checks and saving throws made during combat.",
+				"Multiattack",
+				"The black gauntlet makes two attacks with its mace.",
+				"Mace",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage plus 13 ({@damage 3d8}) necrotic damage.",
+				"Guiding Bolt (1st-Level Spell; Requires a Spell Slot)",
+				"{@atk rs} {@hit 7} to hit, range 120 ft., one creature. {@h}14 ({@damage 4d6}) radiant damage, and the next attack roll made against the target before the end of the black gauntlet's next turn has advantage. If the black gauntlet casts this spell using a spell slot of 2nd level or higher, the damage increases by {@damage 1d6} for each slot level above 1st."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bone Whelk|BGDIA",
+			"hint": {
+				"Spider Climb": "蛛行",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Bone Whelk",
+				"natural armor",
+				"Adhesive",
+				"The bone whelk can cause Medium or smaller objects to adhere to it. A Medium or smaller creature that touches the bone whelk is {@condition grappled} by it (escape {@dc 10}).",
+				"Death Scream",
+				"When the bone whelk dies, it emits a blood-curdling shriek than can be heard out to a range of 120 feet. This shriek causes nonmagical, organic material within 10 feet of the bone whelk to rot. Each creature within 10 feet of the bone whelk when it dies takes 9 ({@damage 2d8}) necrotic damage.",
+				"Spider Climb",
+				"The bone whelk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Bite",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d8}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Burney the Barber|BGDIA",
+			"s": [
+				"Burney the Barber"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chukka|BGDIA",
+			"s": [
+				"Chukka",
+				"Silvered Pike",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d10}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Clonk|BGDIA",
+			"s": [
+				"Clonk",
+				"Hellfire Warhammer",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage, or 5 ({@damage 1d10 + 1}) bludgeoning damage if used with two hands to make a melee attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Crokek'toeck|BGDIA",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Magic Resistance": "魔法抗性",
+				"Magic Weapons": "魔法武器",
+				"Secure Memory": "牢固記憶",
+				"Standing Leap": "立定跳躍",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Crokek'toeck",
+				"natural armor",
+				"Amphibious",
+				"Crokek'toeck can breathe air and water.",
+				"Magic Resistance",
+				"Crokek'toeck has advantage on saving throws against spells and other magical effects.",
+				"Magic Weapons",
+				"Crokek'toeck's weapon attacks are magical.",
+				"Secure Memory",
+				"Crokek'toeck is immune to the waters of the River Styx as well as any effect that would steal or modify its memories or detect or read its thoughts.",
+				"Standing Leap",
+				"Crokek'toeck's long jump is up to 60 feet and its high jump is up to 30 feet, with or without a running start.",
+				"Bite",
+				"{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}44 ({@damage 10d6 + 9}) piercing damage.",
+				"Disgorge Allies {@recharge}",
+				"Crokek'toeck opens its mouth and disgorges {@dice 1d4} {@creature barlgura||barlguras}, {@dice 3d6} {@creature gnoll||gnolls} led by 1 {@creature gnoll fang of Yeenoghu}, {@dice 6d6} {@creature dretch||dretches}, or {@dice 1d3} {@creature vrock||vrocks}. Each creature it disgorges appears in an unoccupied space within 30 feet of Crokek'toeck's mouth, or the next closest unoccupied space."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Death's Head of Bhaal|BGDIA",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首",
+				"Stunning Gaze": "震懾凝視"
+			},
+			"s": [
+				"Death's Head of Bhaal",
+				"Aura of Murder",
+				"As long as the death's head is not {@condition incapacitated}, hostile creatures within 5 feet of it gain vulnerability to piercing damage unless they have resistance or immunity to such damage.",
+				"Magic Resistance",
+				"The death's head has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The death's head uses Stunning Gaze and makes two dagger attacks.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage.",
+				"Stunning Gaze",
+				"The death's head targets one creature it can see within 30 feet of it. The target must succeed on a {@dc 14} Wisdom saving throw or be {@condition stunned} until the end of its next turn.",
+				"Unstoppable (3/Day)",
+				"The death's head reduces the damage it takes from an attack to 0."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dryad Spirit|BGDIA",
+			"s": [
+				"Dryad Spirit"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Duke Thalamra Vanthampur|BGDIA",
+			"hint": {
+				"Dark Devotion": "黑暗奉獻",
+				"Devil's Sight": "魔鬼視覺",
+				"Multiattack": "多重攻擊",
+				"Eldritch Blast (Cantrip)": "魔能爆（戲法）",
+				"Unarmed Strike": "徒手打擊"
+			},
+			"s": [
+				"Duke Thalamra Vanthampur",
+				"Dark Devotion",
+				"Thalamra has advantage on saving throws against being {@condition charmed} or {@condition frightened}.",
+				"Devil's Sight",
+				"Thalamra can see normally in darkness, both magical and nonmagical, out to a distance of 120 feet.",
+				"Multiattack",
+				"Thalamra uses eldritch blast twice or makes two unarmed strikes.",
+				"Eldritch Blast (Cantrip)",
+				"{@atk rs} {@hit 6} to hit, range 120 ft., one creature. {@h}9 ({@damage 1d10 + 4}) force damage.",
+				"Unarmed Strike",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 bludgeoning damage.",
+				"Hellish Rebuke (1st-Level Spell; 2/Day)",
+				"When Thalamra is damaged by a creature within 60 feet of her that she can see, the creature that damaged her is engulfed in hellish flames and must make a {@dc 14} Dexterity saving throw, taking 16 ({@damage 3d10}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Elliach|BGDIA",
+			"hint": {
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Elliach",
+				"Dagger",
+				"{@atk mw,rw} {@hit 5} to hit, reach 10 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Feonor|BGDIA",
+			"s": [
+				"Feonor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fiendish Flesh Golem|BGDIA",
+			"hint": {
+				"Berserk": "狂暴",
+				"Immutable Form": "不變形態",
+				"Lightning Absorption": "吸收閃電",
+				"Magic Resistance": "魔法抗性",
+				"Magic Weapons": "魔法武器",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Fiendish Flesh Golem",
+				"natural armor",
+				"(hover)",
+				"Berserk",
+				"Whenever the golem starts its turn with 100 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points. If the golem's creator is within 60 feet of the berserk golem, the creator can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a {@dc 15} Charisma ({@skill Persuasion}) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 100 hit points or fewer, the golem might go berserk again.",
+				"Immutable Form",
+				"The golem is immune to any spell or effect that would alter its form.",
+				"Lightning Absorption",
+				"Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt.",
+				"Magic Resistance",
+				"The golem has advantage on saving throws against spells and other magical effects.",
+				"Magic Weapons",
+				"The golem's weapon attacks are magical.",
+				"Multiattack",
+				"The golem makes two slam attacks.",
+				"Slam",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fist of Bane|BGDIA",
+			"hint": {
+				"Mace": "硬頭錘",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Fist of Bane",
+				"Tactical Discipline",
+				"The fist of Bane has advantage on all ability checks and saving throws made during combat.",
+				"Mace",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage.",
+				"Longbow",
+				"{@atk rw} {@hit 2} to hit, range 150/600 ft., one target. {@h}4 ({@damage 1d8}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Flying Dagger|BGDIA",
+			"hint": {
+				"Flying Dagger": "飛刀"
+			},
+			"s": [
+				"Flying Dagger"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gideon Lightward|BGDIA",
+			"hint": {
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊",
+				"Fist": "拳擊",
+				"Withering Gaze": "凋零凝視"
+			},
+			"s": [
+				"Gideon Lightward",
+				"Regeneration",
+				"Gideon regains 10 hit points at the start of each of his turns. If he takes radiant damage, this trait doesn't function at the start of his next turn. Gideon is destroyed only if he starts his turn with 0 hit points and doesn't regenerate.",
+				"Multiattack",
+				"Gideon attacks twice with his fists.",
+				"Fist",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage.",
+				"Withering Gaze",
+				"Gideon targets one creature he can see within 60 feet of him. The target must make a {@dc 15} Constitution saving throw, taking 22 ({@damage 4d10}) necrotic damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Harkina Hunt|BGDIA",
+			"s": [
+				"Harkina Hunt"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hellwasp|BGDIA",
+			"hint": {
+				"Magic Weapons": "魔法武器",
+				"Multiattack": "多重攻擊",
+				"Sting": "螫刺"
+			},
+			"s": [
+				"Hellwasp",
+				"natural armor",
+				"(hover)",
+				"Magic Weapons",
+				"The hellwasp's weapon attacks are magical.",
+				"Multiattack",
+				"The hellwasp makes two attacks: one with its sting and one with its sword talons.",
+				"Sting",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage plus 7 ({@damage 2d6}) fire damage, and the target must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} for 1 minute. While {@condition poisoned} in this way, the target is also {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Sword Talons",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hellwasp Grub|BGDIA",
+			"s": [
+				"Hellwasp Grub"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hollyphant|BGDIA",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Weapons": "魔法武器"
+			},
+			"s": [
+				"Hollyphant",
+				"natural armor",
+				"Innate Spellcasting",
+				"The hollyphant's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no material components:",
+				"Aura of Invulnerability",
+				"An {@condition invisible} aura forms a 10-foot-radius sphere around the hollyphant for as long as it lives. Any spell of 5th level or lower cast from outside the barrier can't affect creatures or objects within it, even if the spell is cast using a higher level spell slot. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells. The hollyphant can use an action to suppress this trait until its {@status concentration} ends (as if {@status concentration||concentrating} on a spell).",
+				"Magic Weapons",
+				"The hollyphant's weapon attacks are magical.",
+				"Tusks",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) piercing damage.",
+				"Trumpet (3/Day)",
+				"The hollyphant blows air through its trunk, creating a trumpet sound that can be heard out to a range of 600 feet. The trumpet also creates a 30-foot cone of energy that has one of the following effects, chosen by the hollyphant:",
+				"Trumpet of Blasting",
+				"Each creature in the cone must make a {@dc 14} Constitution saving throw. On a failed save, a creature takes 17 ({@damage 5d6}) thunder damage and is {@condition deafened} for 1 minute. On a successful save, a creature takes half as much damage and isn't {@condition deafened}. Nonmagical objects in the cone that aren't being held or worn take 35 ({@damage 10d6}) thunder damage.",
+				"Trumpet of Sparkles",
+				"Creatures in the cone must make a {@dc 14} Constitution saving throw, taking 22 ({@damage 4d8 + 4}) radiant damage on a failed save, or half as much damage on a successful one. Evil creatures have disadvantage on the saving throw. Good creatures in the cone take no damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Iron Consul|BGDIA",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Spear": "矛"
+			},
+			"s": [
+				"Iron Consul",
+				"Tactical Discipline",
+				"The iron consul has advantage on all ability checks and saving throws made during combat.",
+				"Multiattack",
+				"The iron consul makes one attack with its spear and can use its Voice of Command ability.",
+				"Spear",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 7 ({@damage 1d8 + 3}) piercing damage when used with two hands to make a melee attack.",
+				"Voice of Command",
+				"The iron consul selects up to two allies within 90 feet of it that can hear its commands. Each ally can immediately use its reaction to make one melee attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kostchtchie|BGDIA",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Attack": "攻擊",
+				"Charge": "衝鋒"
+			},
+			"s": [
+				"Kostchtchie",
+				"natural armor",
+				"Innate Spellcasting",
+				"Kostchtchie's innate spellcasting ability is Charisma (spell save {@dc 20}). He can innately cast the following spells, requiring no material components:",
+				"Legendary Resistance (3/Day)",
+				"If Kostchtchie fails a saving throw, he can choose to succeed instead.",
+				"Magic Resistance",
+				"Kostchtchie has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"Kostchtchie makes two melee attacks, only one of which can be a bite attack.",
+				"Bite",
+				"{@atk mw} {@hit 18} to hit, reach 5 ft., one creature. {@h}13 ({@damage 1d6 + 10}) piercing damage.",
+				"Matalotok (Warhammer)",
+				"{@atk mw} {@hit 18} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d8 + 10}) bludgeoning damage, or 21 ({@damage 2d10 + 10}) bludgeoning damage when used with two hands, and the weapon emits a burst of cold that deals 10 ({@damage 3d6}) cold damage to each creature within 30 feet of it.",
+				"Attack",
+				"Kostchtchie makes one melee weapon attack.",
+				"Charge",
+				"Kostchtchie moves up to his speed.",
+				"Curse (Costs 2 Actions)",
+				"Kostchtchie curses one creature he can see within 60 feet of him. The cursed creature gains vulnerability to all damage dealt by Kostchtchie until the end of Kostchtchie's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Krull|BGDIA",
+			"hint": {
+				"Spellcasting": "施法",
+				"Hold Breath": "閉氣",
+				"Inescapable Destruction": "命定毀傷",
+				"Claws": "爪擊",
+				"Shell Defense": "甲殼防禦"
+			},
+			"s": [
+				"Krull",
+				"natural armor",
+				"Spellcasting",
+				"Krull is a 14th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). He has the following cleric spells prepared:",
+				"Hold Breath",
+				"Krull can hold his breath for 1 hour.",
+				"Inescapable Destruction",
+				"Necrotic damage dealt by Krull's spells ignores resistance to necrotic damage.",
+				"Claws",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage.",
+				"+1 Maul",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) bludgeoning damage plus 9 ({@damage 2d8}) necrotic damage.",
+				"Shell Defense",
+				"Krull withdraws into his shell. Until he emerges as a bonus action, he has a +4 bonus to AC and has advantage on Strength and Constitution saving throws. While in his shell, Krull is {@condition prone}, his speed is 0 and can't increase, he has disadvantage on Dexterity saving throws, he can't take reactions, and the only action he can take is to emerge from his shell."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lulu|BGDIA",
+			"s": [
+				"Lulu"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mad Maggie|BGDIA",
+			"s": [
+				"Mad Maggie"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mahadi the Rakshasa|BGDIA",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Limited Magic Immunity": "有限魔法免疫",
+				"Magic Weapons": "魔法武器",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Mahadi the Rakshasa",
+				"natural armor",
+				"Innate Spellcasting",
+				"Mahadi's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 9} to hit with spell attacks). He can innately cast the following spells, requiring no material components:",
+				"Limited Magic Immunity",
+				"Mahadi can't be affected or detected by spells of 6th level or lower unless he wishes to be. He has advantage on saving throws against all other spells and magical effects.",
+				"Magic Weapons",
+				"Mahadi's weapon attacks are magical.",
+				"Multiattack",
+				"Mahadi makes four claw attacks.",
+				"Claw",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage, and the target is cursed if it's a creature. The curse takes effect whenever the target takes a short or long rest, filling the target's thoughts with horrible images and dreams. The cursed target gains no benefit from finishing a short or long rest. The curse lasts until it is lifted by a {@spell remove curse} spell or similar magic.",
+				"Summon Erinyes (1/Day)",
+				"Mahadi summons Ilzabet, an erinyes bound to him by an infernal contract. The erinyes appears in an unoccupied space within 60 feet of him, acts as his ally, and can't summon other devils. The erinyes remains for 10 minutes or until Mahadi dismisses it as an action. If the erinyes dies, Mahadi loses this action option."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Master of Souls|BGDIA",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Chill Touch (Cantrip)": "顫慄之觸（戲法）"
+			},
+			"s": [
+				"Master of Souls",
+				"Spellcasting",
+				"The master of souls is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It has the following wizard spells prepared:",
+				"Grave Magic",
+				"When the master of souls cast a spell that deals damage, it can change the spell's damage type to necrotic.",
+				"Multiattack",
+				"The master of souls attacks twice with its flail.",
+				"Silvered Skull Flail",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage plus 14 ({@damage 4d6}) necrotic damage, and the target has disadvantage on all saving throws until the end of the master of souls' next turn.",
+				"Chill Touch (Cantrip)",
+				"{@atk rs} {@hit 6} to hit, range 120 ft., one creature. {@h}13 ({@damage 2d8}) necrotic damage, and the target can't regain hit points until the start of the master of souls' next turn. If the target is undead, it has disadvantage on attack rolls against the master of souls for the same duration.",
+				"Ray of Sickness (1st-Level Spell; Requires a Spell Slot)",
+				"{@atk rs} {@hit 6} to hit, range 60 ft., one creature. {@h}9 ({@damage 2d8}) poison damage, and the target must succeed on a {@dc 14} Constitution saving throw or be {@condition poisoned} until the end of the master of souls' next turn. If the master of souls casts this spell using a spell slot of 2nd level or higher, the damage increases by {@damage 1d8} for each slot level above 1st.",
+				"Scorching Ray (2nd-Level Spell; Requires a Spell Slot)",
+				"{@atk rs} {@hit 6} to hit, range 120 ft., one target per ray (3 rays if a 2nd-level spell slot is used, 4 rays if a 3rd-level spell slot is used). {@h}7 ({@damage 2d6}) fire damage per ray."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mortlock Vanthampur|BGDIA",
+			"hint": {
+				"Indomitable (2/Day)": "不屈（每日 2 次）",
+				"Multiattack": "多重攻擊",
+				"Greatclub": "巨棍",
+				"Heavy Crossbow": "重弩"
+			},
+			"s": [
+				"Mortlock Vanthampur",
+				"Indomitable (2/Day)",
+				"Mortlock can reroll a saving throw that he fails. He must use the new roll.",
+				"Multiattack",
+				"Mortlock makes two attacks with his greatclub.",
+				"Greatclub",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage, plus 5 ({@damage 2d4}) bludgeoning damage if Mortlock has taken any damage since his last turn.",
+				"Heavy Crossbow",
+				"{@atk rw} {@hit 4} to hit, range 100/400 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Necromite of Myrkul|BGDIA",
+			"s": [
+				"Necromite of Myrkul",
+				"Skull Flail",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage.",
+				"Claws of the Grave",
+				"{@atk rs} {@hit 5} to hit, range 90 ft., one target. {@h}8 ({@damage 2d4 + 3}) necrotic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Necrotic Centipede|BGDIA",
+			"s": [
+				"Necrotic Centipede",
+				"Necrotic Body",
+				"A creature that touches the centipede or hits it with a melee attack while within 5 feet of it takes 10 ({@damage 3d6}) necrotic damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Night Blade|BGDIA",
+			"hint": {
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Night Blade",
+				"Aura of Murder",
+				"As long as the night blade is not {@condition incapacitated}, hostile creatures within 5 feet of it gain vulnerability to piercing damage unless they have resistance or immunity to such damage.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nine-Fingers Keene|BGDIA",
+			"hint": {
+				"Cunning Action": "巧妙動作",
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首",
+				"Uncanny Dodge": "直覺閃避"
+			},
+			"s": [
+				"Nine-Fingers Keene",
+				"Cunning Action",
+				"On each of her turns in combat, Nine-Fingers can use a bonus action to take the {@action Dash}, {@action Disengage}, or {@action Hide} action.",
+				"Dagger Thrower",
+				"Nine-Fingers adds double her proficiency bonus to the damage she deals on ranged attacks made with daggers (already factored into her attacks).",
+				"Multiattack",
+				"Nine-Fingers attacks three times with her daggers.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage, plus 6 piercing damage if it's a ranged attack.",
+				"Uncanny Dodge",
+				"Nine-Fingers halves the damage that she takes from an attack that hits her. She must be able to see the attacker."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Peacock|BGDIA",
+			"s": [
+				"Peacock"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Princeps Kovik|BGDIA",
+			"s": [
+				"Princeps Kovik"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Raggadragga|BGDIA",
+			"s": [
+				"Raggadragga"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Reaper of Bhaal|BGDIA",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Reaper of Bhaal",
+				"Innate Spellcasting",
+				"The reaper's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no material components:",
+				"Aura of Murder",
+				"As long as the reaper is not {@condition incapacitated}, hostile creatures within 5 feet of it gain vulnerability to piercing damage unless they have resistance or immunity to such damage.",
+				"Multiattack",
+				"The reaper makes two dagger attacks and uses Shroud Self.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage.",
+				"Shroud Self",
+				"The reaper magically turns {@condition invisible} until the start of its next turn. This invisibility ends if the reaper makes an attack roll, makes a damage roll, or casts a spell."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rilsa Rael|BGDIA",
+			"hint": {
+				"Cunning Action": "巧妙動作",
+				"Focus": "專注",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Rilsa Rael",
+				"Cunning Action",
+				"On each of her turns in combat, Rilsa can use a bonus action to take the {@action Dash}, {@action Disengage}, or {@action Hide} action.",
+				"Focus",
+				"If Rilsa damages a creature with a weapon attack, she gains advantage on attack rolls against that target until the end of her next turn.",
+				"Tactical Leadership",
+				"As a bonus action, Rilsa chooses one creature she can see within 30 feet of her. The creature doesn't provoke opportunity attacks until the end of its next turn, provided it can hear Rilsa's commands.",
+				"Multiattack",
+				"Rilsa makes three weapon attacks.",
+				"Shortsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skeletal Rats|BGDIA",
+			"s": [
+				"Skeletal Rats"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skull Lasher of Myrkul|BGDIA",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Skull Lasher of Myrkul",
+				"Spellcasting",
+				"The skull lasher is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following wizard spells prepared:",
+				"Multiattack",
+				"The skull lasher makes two attacks with its flail.",
+				"Iron Skull Flail",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage plus 7 ({@damage 2d6}) necrotic damage, and the target has disadvantage on all saving throws until the end of the skull lasher's next turn.",
+				"Ray of Sickness (1st-Level Spell; Requires a Spell Slot)",
+				"{@atk rs} {@hit 5} to hit, range 60 ft., one creature. {@h}9 ({@damage 2d8}) poison damage, and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the end of the skull lasher's next turn. If the skull lasher casts this spell using a spell slot of 2nd level or higher, the damage increases by {@damage 1d8} for each slot level above 1st."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Smiler the Defiler|BGDIA",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Fey Step {@recharge 4}": "妖精步伐 {@recharge 4}",
+				"Magic Resistance": "魔法抗性",
+				"Equipment": "裝備",
+				"Multiattack": "多重攻擊",
+				"+1 Shortsword": "+1 短劍"
+			},
+			"s": [
+				"Smiler the Defiler",
+				"Innate Spellcasting",
+				"Smiler's innate spellcasting ability is Charisma (spell save {@dc 15}). He can innately cast the following spells, requiring no material components:",
+				"Fey Step {@recharge 4}",
+				"As a bonus action, Smiler can teleport up to 30 feet to an unoccupied space that he can see or to the empty seat of his infernal war machine.",
+				"Magic Resistance",
+				"Smiler has advantage on saving throws against spells and other magical effects.",
+				"Equipment",
+				"Smiler wears +2 leather armor. He carries seven soul coins in a bag and a +1 shortsword",
+				"Multiattack",
+				"Smiler makes two weapon attacks. He can cast a spell in place of one of these attacks.",
+				"+1 Shortsword",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sylvira Savikas|BGDIA",
+			"s": [
+				"Sylvira Savikas"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Thavius Kreeg|BGDIA",
+			"hint": {
+				"Mace": "硬頭錘"
+			},
+			"s": [
+				"Thavius Kreeg",
+				"Shadow of Guilt",
+				"Thavius's shadow is that of a pudgy, horned devil with small wings.",
+				"Mace",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Thurstwell Vanthampur|BGDIA",
+			"hint": {
+				"Spellcasting": "施法",
+				"Dark Devotion": "黑暗奉獻"
+			},
+			"s": [
+				"Thurstwell Vanthampur",
+				"Spellcasting",
+				"Thurstwell is a 2nd-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}). He has the following cleric spells prepared:",
+				"Dark Devotion",
+				"Thurstwell has advantage on saving throws against being {@condition charmed} or {@condition frightened}.",
+				"Sacred Flame (Cantrip)",
+				"Flame-like radiance descends on one creature Thurstwell can see within 60 feet of him. The target must succeed on a {@dc 13} Dexterity saving throw or take 4 ({@damage 1d8}) radiant damage, gaining no benefit from cover."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Torogar Steelfist|BGDIA",
+			"hint": {
+				"Goring Rush": "頂撞衝刺",
+				"Labyrinthine Recall": "迷宮記憶",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊",
+				"Scimitar": "彎刀",
+				"Horns": "角"
+			},
+			"s": [
+				"Torogar Steelfist",
+				"natural armor",
+				"Goring Rush",
+				"Immediately after using the {@action Dash} action, Torogar can make one melee attack with his horns.",
+				"Labyrinthine Recall",
+				"Torogar can perfectly recall any path he has traveled.",
+				"Rage (Recharges after a Short or Long Rest)",
+				"As a bonus action, Torogar can enter a rage that lasts for 1 minute. The rage ends early if Torogar is knocked {@condition unconscious} or if his turn ends and he hasn't attacked a hostile creature or taken damage since his last turn. While raging, Torogar gains the following benefits:",
+				"He has advantage on Strength checks and Strength saving throws.",
+				"He deals an extra 3 damage when he hits a target with a melee weapon attack.",
+				"He has resistance to bludgeoning, piercing, and slashing damage.",
+				"Special Equipment",
+				"Torogar wears {@item gauntlets of flaming fury|BGDIA} and a {@item belt of fire giant strength}. Without the belt, his Strength is 21. He also carries a {@item soul coin|BGDIA}.",
+				"Multiattack",
+				"Torogar makes three attacks: two with his scimitars and one with his horns.",
+				"Scimitar",
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage, or 17 ({@damage 2d6 + 10}) slashing damage while raging, plus 3 ({@damage 1d6}) fire damage from the gauntlets of flaming fury.",
+				"Horns",
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) piercing damage, or 19 ({@damage 2d8 + 10}) piercing damage while raging."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Traxigor|BGDIA",
+			"s": [
+				"Traxigor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tressym|BGDIA",
+			"hint": {
+				"Tressym": "翼貓"
+			},
+			"s": [
+				"Tressym"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ulder Ravengard|BGDIA",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"+1 Longsword": "+1 長劍",
+				"Shield": "盾牌"
+			},
+			"s": [
+				"Ulder Ravengard",
+				"Multiattack",
+				"Ulder makes three melee attacks, only one of which can be with his shield.",
+				"+1 Longsword",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) slashing damage when used with two hands.",
+				"Shield",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage, and Ulder pushes the target 5 feet away from him. Ulder then enters the space vacated by the target. If the target is pushed to within 5 feet of a creature friendly to Ulder, the target provokes an opportunity attack from that creature.",
+				"Guardian Strike",
+				"If an enemy within 5 feet of Ulder attacks a target other than him, Ulder can make a melee attack against that enemy."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Undead Tree|BGDIA",
+			"s": [
+				"Undead Tree"
+			]
+		}
+	]
+}
