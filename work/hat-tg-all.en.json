@@ -1,0 +1,204 @@
+{
+	"batch": "hat-tg-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Doric|HAT-TG",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Sling": "投石索"
+			},
+			"s": [
+				"Doric",
+				"Spellcasting",
+				"Doric casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 15}):",
+				"Multiattack",
+				"Doric makes two Shaped Claw or Sling attacks. She can replace one attack with a use of Spellcasting.",
+				"Shaped Claw",
+				"{@atk ms} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage.",
+				"Sling",
+				"{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. {@h}8 ({@damage 2d4 + 3}) bludgeoning damage.",
+				"Change Shape (5/Day)",
+				"Doric magically transforms into a Beast with a challenge rating of 3 or less or into an owlbear (see the Monster Manual).",
+				"Doric can remain in that form for up to 2 hours. She can choose whether her equipment falls to the ground, melds with her new form, or is worn by the new form. Doric reverts to her true form if she is {@condition incapacitated} or dies. She can revert to her true form using a bonus action.",
+				"While Doric is transformed, her stat block is replaced by the stat block of that form, except she keeps her current hit points, her hit point maximum, this bonus action, her alignment, and her Intelligence, Wisdom, and Charisma scores.",
+				"Fiery Rebuke (3/Day)",
+				"When Doric is damaged by a creature that she can see within 60 feet of herself, she magically engulfs the creature in flames. The creature must make a {@dc 15} Dexterity saving throw, taking 16 ({@damage 3d10}) fire damage on failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Edgin Darvis|HAT-TG",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Edgin Darvis",
+				"Spellcasting",
+				"Edgin casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 15}):",
+				"Multiattack",
+				"Edgin makes two Reinforced Lute or Shortsword attacks.",
+				"Reinforced Lute",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage plus 11 ({@damage 2d10}) thunder damage.",
+				"Shortsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 11 ({@damage 2d10}) thunder damage.",
+				"Disorienting Words",
+				"Edgin magically taunts up to three creatures he can see within 60 feet of himself. Each creature must succeed on a {@dc 15} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage and have disadvantage on the next attack roll it makes before the start of Edgin's next turn.",
+				"Inspiring Words (3/Day)",
+				"When a creature Edgin can see within 60 feet of himself fails an ability check, an attack roll, or a saving throw, Edgin grants the creature magical encouragement. The creature can roll a {@dice d8} and add the number rolled to the total, potentially turning the failure into a success."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Forge Fitzwilliam|HAT-TG",
+			"hint": {
+				"Evasion": "反射閃避",
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首",
+				"Heavy Crossbow": "重弩",
+				"Cunning": "狡詐",
+				"Uncanny Dodge": "直覺閃避"
+			},
+			"s": [
+				"Forge Fitzwilliam",
+				"disarming charm",
+				"Disarming Charm",
+				"While Forge isn't wearing armor, his AC includes his Charisma modifier.",
+				"Double-Cross",
+				"If Forge hits a creature friendly to him with an attack roll, the attack is automatically a critical hit.",
+				"Evasion",
+				"If Forge is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, he takes no damage if he succeeds on the saving throw, and only half damage if he fails, provided he isn't {@condition incapacitated}.",
+				"Multiattack",
+				"Forge makes two Dagger attacks, two Heavy Crossbow attacks, or one of each.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 24 ({@damage 7d6}) poison damage, and the target is {@condition poisoned} until the end of its next turn.",
+				"Heavy Crossbow",
+				"{@atk rw} {@hit 5} to hit, range 100/400 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage plus 24 ({@damage 7d6}) poison damage. {@hom}If the target is a creature, it has disadvantage on the next attack roll it makes before the start of Forge's next turn.",
+				"Cunning",
+				"Forge takes the {@action Dash}, {@action Disengage}, or {@action Hide} action, or he gives himself advantage on the next attack roll he makes before the end of this turn.",
+				"Uncanny Dodge",
+				"Forge halves the damage he takes from an attack that hits him. He must be able to see the attacker."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Holga Kilgore|HAT-TG",
+			"hint": {
+				"Reckless": "魯莽",
+				"Special Equipment": "特殊裝備",
+				"Unarmored Defense": "無甲防禦",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Holga Kilgore",
+				"Unarmored Defense",
+				"Reckless",
+				"At the start of her turn, Holga can gain advantage on melee weapon attack rolls during that turn, but attack rolls against her have advantage until the start of her next turn.",
+				"Special Equipment",
+				"Holga carries a darksteel greataxe, a magic weapon that grants her resistance to lightning damage while she carries it (included above).",
+				"Unarmored Defense",
+				"While Holga isn't wearing armor, her AC includes her Constitution modifier.",
+				"Multiattack",
+				"Holga makes three Darksteel Greataxe or Improvised Weapon attacks, in any combination.",
+				"Darksteel Greataxe",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) slashing damage.",
+				"Improvised Weapon",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft., or range 20/60 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage.",
+				"Wrestle",
+				"Holga shoves a creature within 5 feet of herself. That creature must succeed on a {@dc 15} Strength saving throw or be moved 5 feet into an unoccupied space of Holga's choice."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Simon Aumar|HAT-TG",
+			"hint": {
+				"Spellcasting": "施法",
+				"Fey Ancestry": "妖精血統",
+				"Special Equipment": "特殊裝備",
+				"Wild Magic": "狂野魔法",
+				"Multiattack": "多重攻擊",
+				"Quarterstaff": "長棍",
+				"Chaos Bolt": "混亂箭"
+			},
+			"s": [
+				"Simon Aumar",
+				"Spellcasting",
+				"Roll a {@dice d6}. On a roll of 1, Simon must roll on the Wild Magic Surge table in the Player's Handbook. On a roll of 2 or higher, Simon casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 14}):",
+				"Fey Ancestry",
+				"Simon has advantage on saving throws he makes to avoid or end the {@condition charmed} condition on himself, and magic can't put him to sleep.",
+				"Special Equipment",
+				"Simon carries a {@item bag of holding}, two pairs of {@item sending stones}, and a deathly token (see Spellcasting).",
+				"Wild Magic",
+				"When Simon takes 20 or more damage from a single source or takes damage from a critical hit, he must roll on the Wild Magic Surge table in the Player's Handbook.",
+				"Multiattack",
+				"Simon makes three Quarterstaff or Chaos Bolt attacks. He can replace one attack with one use of Spellcasting.",
+				"Quarterstaff",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) bludgeoning damage, or 3 ({@damage 1d8 - 1}) bludgeoning damage if used with two hands, plus 11 ({@damage 2d10}) force damage.",
+				"Chaos Bolt",
+				"{@atk rs} {@hit 6} to hit, range 60 ft., one target. {@h}14 ({@damage 2d10 + 3}) damage of a random type determined by rolling a {@dice d8}: 1, acid; 2, cold; 3, fire; 4, force; 5, lightning; 6, poison; 7, psychic; 8, thunder.",
+				"Sheltering Shield (3/Day)",
+				"When Simon or another creature he can see within 10 feet of himself would take damage, he conjures a shimmering, 10-foot-radius sphere of magical force centered on himself. Creatures inside the sphere have resistance to the damage that triggered this reaction."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sofina|HAT-TG",
+			"hint": {
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Multiattack": "多重攻擊",
+				"Necrotic Strike": "黯蝕打擊"
+			},
+			"s": [
+				"Sofina",
+				"Spellcasting",
+				"Sofina casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 18}):",
+				"Special Equipment",
+				"Sofina wears a magic robe that grants her a +2 bonus to AC and a +1 bonus to saving throws (included above).",
+				"Multiattack",
+				"Sofina makes three Necrotic Strike attacks.",
+				"Necrotic Strike",
+				"{@atk ms,rs} {@hit 10} to hit, reach 5 ft. or range 120 ft., one target. {@h}32 ({@damage 5d10 + 5}) necrotic damage.",
+				"Swarm of Meteors (1/Day)",
+				"Sofina magically calls down a meteor swarm that detonates in four 40-foot-radius spheres, each one centered on a point she can see within 1 mile of herself. These spheres can overlap. Each creature in one or more of these spheres must make a {@dc 18} Dexterity saving throw, taking 35 ({@damage 10d6}) fire damage and 35 ({@damage 10d6}) bludgeoning damage on a failed saving throw, or half as much damage on a successful one. A creature in multiple spheres takes this damage only once.",
+				"Summon Wraith (1/Day)",
+				"Sofina magically summons the spirit of a Thayan assassin, which appears as a wraith (see the Monster Manual). The summoned wraith appears in an unoccupied space within 60 feet of Sofina, whom it obeys. The summoned wraith takes its turn immediately after Sofina. It lasts for 1 hour, until it or Sofina dies, or until Sofina dismisses it as a bonus action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Xenk Yendar|HAT-TG",
+			"hint": {
+				"Aura of Protection": "守護靈光",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍"
+			},
+			"s": [
+				"Xenk Yendar",
+				"Aura of Protection",
+				"Xenk and his allies within 10 feet of him have advantage on saving throws.",
+				"Multiattack",
+				"Xenk makes three Daggersword attacks and uses Daggersword Flourish. He can replace Daggersword Flourish with Cleansing Touch if it's available.",
+				"Daggersword",
+				"Choose the attack that corresponds to the daggersword's current form (see Daggersword Shift below):",
+				"Longsword",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) slashing damage if used with two hands, plus 6 ({@damage 1d12}) radiant damage.",
+				"Shortsword and Dagger",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 6 ({@damage 1d12}) radiant damage.",
+				"Daggersword Flourish",
+				"Choose the option that corresponds to the daggersword's current form (see Daggersword Shift below):",
+				"Longsword",
+				"Xenk magically detaches the longsword's blade from its hilt, launching the blade at a creature he can see within 30 feet of himself. The target must make a {@dc 16} Dexterity saving throw. On a failed save, the target is impaled by the blade, taking 14 ({@damage 3d6 + 4}) piercing damage, and is knocked {@condition prone}. At the end of the current turn, the blade magically reattaches to its hilt.",
+				"Shortsword and Dagger",
+				"Xenk lashes out with both weapons. Each creature of his choice within 10 feet of him must make a {@dc 16} Dexterity throw. On a failed save, the creature takes 7 ({@damage 2d6}) piercing damage and has disadvantage on attack rolls until the start of Xenk's next turn. On a successful save, the creature takes half as much damage and suffers no other effect.",
+				"Cleansing Touch (1/Day)",
+				"Xenk touches a creature within 5 feet of himself. The target magically regains 27 ({@dice 6d8}) hit points and gains the benefit of a {@spell lesser restoration} spell.",
+				"Daggersword Shift",
+				"Xenk changes the form of his daggersword, choosing one of the following forms: a longsword, or a shortsword in one hand and a dagger in the other."
+			]
+		}
+	]
+}

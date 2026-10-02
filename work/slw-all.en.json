@@ -1,0 +1,164 @@
+{
+	"batch": "slw-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Skull Flier|SLW",
+			"hint": {
+				"Sting": "螫刺"
+			},
+			"s": [
+				"Skull Flier",
+				"natural armor",
+				"Sting",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Statue of Talos|SLW",
+			"hint": {
+				"False Appearance": "擬態",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Statue of Talos",
+				"natural armor",
+				"False Appearance",
+				"While the statue remains motionless, it is indistinguishable from an inanimate statue.",
+				"Multiattack",
+				"The statue makes five attacks: one with its headbutt and four with its lightning bolt blades.",
+				"Headbutt",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage.",
+				"Lightning Bolt Blades",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tooth-N-Claw|SLW",
+			"hint": {
+				"Keen Hearing and Smell": "敏銳聽覺與嗅覺",
+				"Pack Tactics": "群體戰術",
+				"Bite": "啃咬",
+				"Freezing Breath {@recharge 5}": "冰凍吐息 {@recharge 5}"
+			},
+			"s": [
+				"Tooth-N-Claw",
+				"natural armor",
+				"Keen Hearing and Smell",
+				"Tooth-N-Claw has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell.",
+				"Pack Tactics",
+				"Tooth-N-Claw has advantage on an attack roll against a creature if at least one of its allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 7 ({@damage 2d6}) cold damage.",
+				"Freezing Breath {@recharge 5}",
+				"Tooth-N-Claw exhales an icy blast in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 21 ({@damage 6d6}) cold damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Expert|SLW",
+			"hint": {
+				"Expert": "專家",
+				"Helpful": "樂於助人",
+				"Tools": "工具",
+				"Extra Attack": "額外攻擊",
+				"Shortsword": "短劍",
+				"Dagger": "匕首",
+				"Shortbow": "短弓"
+			},
+			"s": [
+				"Expert",
+				"Helpful",
+				"The expert can take the Help action as a bonus action, and the creature who receives the help gains a {@dice 1d6} bonus to the {@dice d20} roll. If that roll is an attack roll, the creature can forgo adding the bonus to it, and then if the attack hits, the creature can add the bonus to the attack's damage roll against one target.",
+				"Tools",
+				"The expert has {@item thieves' tools|phb} and a musical instrument.",
+				"Extra Attack",
+				"The expert can attack twice, instead of once, whenever it takes the {@action Attack} action on its turn.",
+				"Shortsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage.",
+				"Shortbow",
+				"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spellcaster (Healer)|SLW",
+			"hint": {
+				"Spellcaster (Healer)": "施法者（醫者）",
+				"Spellcasting (Healer)": "施法（醫者）",
+				"Potent Cantrip": "強效戲法",
+				"Quarterstaff": "長棍"
+			},
+			"s": [
+				"Spellcaster (Healer)",
+				"Spellcasting (Healer)",
+				"The spellcaster's spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The spellcaster has following cleric spells prepared:",
+				"Potent Cantrip",
+				"The spellcaster can add its spellcasting ability modifier to the damage it deals with any cantrip.",
+				"Quarterstaff",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 4 ({@damage 1d8}) bludgeoning damage if used with two hands."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spellcaster (Mage)|SLW",
+			"hint": {
+				"Spellcaster (Mage)": "施法者（法師）",
+				"Spellcasting (Mage)": "施法（法師）",
+				"Potent Cantrip": "強效戲法",
+				"Quarterstaff": "長棍"
+			},
+			"s": [
+				"Spellcaster (Mage)",
+				"Spellcasting (Mage)",
+				"The spellcaster's spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The spellcaster has following wizard spells prepared:",
+				"Potent Cantrip",
+				"The spellcaster can add its spellcasting ability modifier to the damage it deals with any cantrip.",
+				"Quarterstaff",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 4 ({@damage 1d8}) bludgeoning damage if used with two hands."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Warrior|SLW",
+			"hint": {
+				"Warrior": "戰士",
+				"Battle Readiness": "戰鬥準備",
+				"Improved Critical": "強化重擊",
+				"Martial Role": "武術角色",
+				"Attacker": "攻擊者",
+				"Defender": "防禦者",
+				"Extra Attack": "額外攻擊",
+				"Longsword": "長劍",
+				"Longbow": "長弓",
+				"Protection (Defender Only)": "守護（僅限防衛者）"
+			},
+			"s": [
+				"Warrior",
+				"Battle Readiness",
+				"The warrior has advantage on initiative rolls.",
+				"Improved Critical",
+				"The warrior's attack rolls score a critical hit on a roll of 19 or 20 on the d20.",
+				"Martial Role",
+				"The warrior has one of the following traits of your choice:",
+				"Attacker",
+				"The warrior gains a +2 bonus to attack rolls.",
+				"Defender",
+				"The warrior gains the Protection reaction below.",
+				"Extra Attack",
+				"The warrior can attack twice, instead of once, whenever it takes the {@action Attack} action on its turn.",
+				"Longsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands.",
+				"Longbow",
+				"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage.",
+				"Protection (Defender Only)",
+				"The warrior imposes disadvantage on the attack roll of a creature within 5 feet of it whose target isn't the warrior. The warrior must be able to see the attacker.",
+				"Warrior (Defender)"
+			]
+		}
+	]
+}

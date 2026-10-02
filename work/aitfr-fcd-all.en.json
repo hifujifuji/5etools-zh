@@ -1,0 +1,63 @@
+{
+	"batch": "aitfr-fcd-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Mercenary Envoy|AITFR-FCD",
+			"hint": {
+				"Martial Advantage": "軍事優勢",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍",
+				"Heavy Crossbow": "重弩"
+			},
+			"s": [
+				"Mercenary Envoy",
+				"Inspired Courage",
+				"The mercenary has advantage on savings throws against being {@condition charmed}, {@condition frightened}, {@condition grappled}, or {@condition restrained} while within 5 feet of at least one ally.",
+				"Martial Advantage",
+				"Once per turn, the mercenary can deal an extra 7 ({@damage 2d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the mercenary that isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The mercenary makes two longsword attacks.",
+				"Longsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage.",
+				"Heavy Crossbow",
+				"{@atk rw} {@hit 4} to hit, range",
+				"100/400 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tyreus, Illusionist|AITFR-FCD",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Illusory Reality": "亦真亦幻",
+				"Dagger": "匕首",
+				"Cast Cantrip": "施展戲法"
+			},
+			"s": [
+				"Tyreus, Illusionist",
+				"Spellcasting",
+				"Tyreus is a 16th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). He has the following wizard spells prepared.",
+				"*(Illusion spell of 1st level or higher)",
+				"Legendary Resistance (3/Day)",
+				"If Tyreus fails a saving throw, he can choose to succeed instead.",
+				"Illusory Reality",
+				"When Tyreus casts an illusion spell of 1st level or higher, he can choose one inanimate, nonmagical object that is part of the illusion and make that object real. He can do this on his turn as a bonus action while the spell is ongoing.",
+				"The object remains real for 1 minute. The object can't deal damage or otherwise directly harm anyone.",
+				"Displacement (Recharges after Tyreus Casts an Illusion Spell of 1st Level or Higher)",
+				"As a bonus action, Tyreus projects an illusion that makes him appear to be standing a few inches from his actual location, causing any creature to have disadvantage on attack rolls against Tyreus. The effect ends if Tyreus takes damage, he is {@condition incapacitated}, or his speed becomes 0.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage.",
+				"Modify Illusion",
+				"When Tyreus casts an illusion spell that has a duration of 1 minute or longer, he can use his action to change the nature of that illusion (using the spell's normal parameters for the illusion), provided that he can see the illusion.",
+				"Scrutinize",
+				"Tyreus makes an Intelligence ({@skill Investigation}) or Wisdom ({@skill Perception}) check.",
+				"Cast Cantrip",
+				"Tyreus casts a cantrip from his spell list.",
+				"Cast Spell (Costs 1-3 Actions)",
+				"Tyreus uses a spell slot to cast a 1st-, 2nd-, or 3rd-level spell that he has prepared. Doing so costs 1 legendary action per level of the spell."
+			]
+		}
+	]
+}

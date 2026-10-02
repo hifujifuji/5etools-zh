@@ -1,0 +1,113 @@
+{
+	"batch": "aitfr-dn-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Giant Zombie Constrictor Snake|AITFR-DN",
+			"hint": {
+				"Undead Fortitude": "不死堅韌",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Constrict": "纏絞"
+			},
+			"s": [
+				"Giant Zombie Constrictor Snake",
+				"natural armor",
+				"Sunlight Vulnerability",
+				"While in sunlight, the snake has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight. When the snake begins its turn in sunlight, it immediately suffers 10 radiant damage.",
+				"Undead Fortitude",
+				"If damage reduces the snake to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the snake drops to 1 hit point instead.",
+				"Multiattack",
+				"The snake makes two attacks: one with its bite and one with a constrict attack.",
+				"Bite",
+				"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}17 ({@damage 3d8 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 17 ({@damage 5d6}) poison damage on a failed save, or half as much damage on a successful one.",
+				"Constrict",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 4}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the creature is {@condition restrained} and the snake cannot constrict another target."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hamish Hewland|AITFR-DN",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Axe": "斧",
+				"Rock": "擲石",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Hamish Hewland",
+				"Multiattack",
+				"Hamish makes two attacks with his axe or throws two rocks.",
+				"Axe",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) slashing damage.",
+				"Rock",
+				"{@atk rw} {@hit 9} to hit, range 60/240 ft., one target. {@h}17 ({@damage 2d10 + 6}) bludgeoning damage.",
+				"Parry",
+				"Hamish adds 2 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon or a shield."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kyrilla, Accursed Gorgon|AITFR-DN",
+			"hint": {
+				"Legendary Resistance (2/Day)": "傳奇抗性（每日 2 次）",
+				"Petrifying Gaze": "石化凝視",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Constrict": "纏絞",
+				"Longbow": "長弓",
+				"Detect": "偵查"
+			},
+			"s": [
+				"Kyrilla, Accursed Gorgon",
+				"natural armor",
+				"Feed on Pain (2/Day)",
+				"The first time she hits with a weapon attack on her turn, Kyrilla can deal an extra 16 ({@damage 3d10}) poison damage to the target and regains a number of hit points equal to half the damage dealt.",
+				"Legendary Resistance (2/Day)",
+				"If she fails a saving throw, Kyrilla can choose to succeed instead.",
+				"Petrifying Gaze",
+				"When a creature that can see Kyrilla's eyes starts its turn within 30 feet of her, Kyrilla can force it to make a {@dc 14} Constitution saving throw if Kyrilla isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the {@spell greater restoration} spell or other magic.",
+				"Unless {@status surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see Kyrilla until the start of its next turn, when it can avert its eyes again. If the creature looks at Kyrilla in the meantime, it must immediately make the save.",
+				"Kyrilla's accursed gaze does not affect undead or constructs. If Kyrilla sees herself reflected on a polished surface within 30 feet of her and in an area of bright light, she is, due to her curse, affected by her own gaze.",
+				"Sunlight Sensitivity",
+				"While in sunlight, Kyrilla has disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Multiattack",
+				"Kyrilla makes one attack to constrict and two attacks with her claws, or she makes three attacks with her longbow.",
+				"Claw",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d6 + 3}) slashing damage.",
+				"Constrict",
+				"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}10 ({@damage 3d6}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 13}) if it is a Large or smaller creature. Until this grapple ends, the target is {@condition restrained}, and Kyrilla can't constrict another target.",
+				"Longbow",
+				"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}16 ({@damage 3d8 + 3}) piercing damage.",
+				"Summon Swarm of Poisonous Snakes {@recharge 5}",
+				"Kyrilla conjures a swarm of poisonous snakes into an empty space within 10 feet of her. The swarm is under Kyrilla's control and acts on her turn, immediately after her in the initiative order.",
+				"It remains in existence for up to 1 hour. She can summon no more than three swarms per day. Kyrilla can banish any or all of her summoned swarms with a bonus action.",
+				"Claw",
+				"Kyrilla or a swarm of poisonous snakes makes a weapon attack.",
+				"Detect",
+				"Kyrilla makes a Wisdom ({@skill Perception}) check.",
+				"Slither",
+				"Kyrilla moves up to her speed without provoking opportunity attacks.",
+				"Kyrilla, Accursed Gorgon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skeletal Horror|AITFR-DN",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Skeletal Horror",
+				"Multiattack",
+				"The horror makes two attacks with its claws.",
+				"Claw",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d10 + 3}) slashing damage.",
+				"Wave of Bones {@recharge 5}",
+				"The horror crashes into foes like a wave before quickly reforming. Each creature within 10 feet of the horror must make a {@dc 15} Dexterity saving throw, taking 18 ({@damage 4d8}) bludgeoning damage on a failed save, or half as much damage on a successful one. A creature that fails this saving throw is also knocked {@condition prone}."
+			]
+		}
+	]
+}

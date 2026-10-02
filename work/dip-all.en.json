@@ -1,0 +1,122 @@
+{
+	"batch": "dip-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Anchorite of Talos|DIP",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Shapechanger": "變形者"
+			},
+			"s": [
+				"Anchorite of Talos",
+				"Innate Spellcasting",
+				"The anchorite's innate spellcasting ability is Wisdom (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:",
+				"Shapechanger",
+				"The anchorite can use its action to polymorph into a boar or back into its true form, which is humanoid. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+				"Clawed Gauntlet (Humanoid Form Only)",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage.",
+				"Tusk (Boar Form Only)",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Don-Jon Raskin|DIP",
+			"hint": {
+				"Brave": "勇敢",
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首",
+				"Sling": "投石索"
+			},
+			"s": [
+				"Don-Jon Raskin",
+				"Brave",
+				"Don-Jon has advantage on saving throws against being {@condition frightened}.",
+				"Not Dead Yet (Recharges after a Long Rest)",
+				"If damage reduces Don-Jon to 0 hit points, he drops to 1 hit point instead and gains advantage on attack rolls until the end of his next turn.",
+				"Multiattack",
+				"Don-Jon makes three melee attacks.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 2} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}2 ({@damage 1d4}) piercing damage.",
+				"Sling",
+				"{@atk rw} {@hit 2} to hit, range 30/120 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Falcon the Hunter|DIP",
+			"hint": {
+				"Archer": "弓箭手",
+				"Sharpshooter": "神射手",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍",
+				"Longbow": "長弓"
+			},
+			"s": [
+				"Falcon the Hunter",
+				"Archer",
+				"A longbow or shortbow deals one extra die of its damage when Falcon hits with it (included in his longbow attack).",
+				"Sharpshooter",
+				"Falcon's ranged weapon attacks ignore {@quickref Cover||3||half cover} and {@quickref Cover||3||three-quarters cover}.",
+				"Multiattack",
+				"Falcon makes three melee attacks or two ranged attacks.",
+				"Longsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage, or 7 ({@damage 1d10 + 2}) slashing damage if used with two hands.",
+				"Longbow",
+				"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gorthok the Thunder Boar|DIP",
+			"hint": {
+				"Relentless (Recharges after a Short or Long Rest)": "不屈不撓（短休或長休後充能）",
+				"Multiattack": "多重攻擊",
+				"Thunder Hooves": "雷鳴蹄"
+			},
+			"s": [
+				"Gorthok the Thunder Boar",
+				"natural armor",
+				"Relentless (Recharges after a Short or Long Rest)",
+				"If Gorthok takes 27 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.",
+				"Multiattack",
+				"Gorthok makes two melee attacks: one with its lightning tusks and one with its thunder hooves.",
+				"Lightning Tusks",
+				"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage plus 7 ({@damage 2d6}) lightning damage.",
+				"Thunder Hooves",
+				"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage plus 7 ({@damage 2d6}) thunder damage.",
+				"Lightning Bolt {@recharge}",
+				"Gorthok shoots a bolt of lightning at one creature it can see within 120 feet of it. The target must make a {@dc 15} Dexterity saving throw, taking 18 ({@damage 4d8}) lightning damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rock Gnome Recluse|DIP",
+			"hint": {
+				"Spellcasting": "施法",
+				"Gnome Cunning": "地侏狡黠",
+				"Ray of Frost": "冷凍射線"
+			},
+			"s": [
+				"Rock Gnome Recluse",
+				"with {@spell mage armor}",
+				"Spellcasting",
+				"The gnome is a 2nd-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following wizard spells prepared:",
+				"Gnome Cunning",
+				"The gnome has advantage on Intelligence, Wisdom, and Charisma saving throws against magic.",
+				"Magic Missile (Expends a 1st-Level Spell Slot)",
+				"The gnome creates three magical darts. Each dart hits a creature the gnome chooses within 120 feet of it and deals 3 ({@damage 1d4 + 1}) force damage.",
+				"Ray of Frost",
+				"{@atk rs} {@hit 4} to hit, range 60 ft., one creature. {@h}4 ({@damage 1d8}) cold damage, and the target's speed is reduced by 10 feet until the start of the gnome's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skeletal Riding Horse|DIP",
+			"s": [
+				"Skeletal Riding Horse"
+			]
+		}
+	]
+}

@@ -1,0 +1,458 @@
+{
+	"batch": "psx-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Aegisaur|PSX",
+			"s": [
+				"Aegisaur"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aerosaur (Large)|PSX",
+			"s": [
+				"Aerosaur (Large)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aerosaur (Small)|PSX",
+			"s": [
+				"Aerosaur (Small)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Air Totem Elemental|PSX",
+			"s": [
+				"Air Totem Elemental"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Altisaur|PSX",
+			"hint": {
+				"Altisaur": "巍峨龍"
+			},
+			"s": [
+				"Altisaur"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Armasaur|PSX",
+			"s": [
+				"Armasaur"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Awakened Shrub Totem Elemental|PSX",
+			"s": [
+				"Awakened Shrub Totem Elemental"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blight Totem Elemental|PSX",
+			"s": [
+				"Blight Totem Elemental"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Brontodon|PSX",
+			"s": [
+				"Brontodon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ceratops|PSX",
+			"hint": {
+				"Ceratops": "角龍"
+			},
+			"s": [
+				"Ceratops"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chupacabra|PSX",
+			"hint": {
+				"Sunlight Sensitivity": "日光敏感",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Chupacabra",
+				"natural armor",
+				"Sunlight Sensitivity",
+				"While in sunlight, the chupacabra has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}.",
+				"Drain Blood",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature that is {@condition prone}, {@condition incapacitated}, or {@condition restrained}. {@h}5 ({@damage 1d6 + 2}) necrotic damage. The target must succeed on a {@dc 13} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken, and the chupacabra regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
+				"Pin",
+				"If a creature within 5 feet of the chupacabra stands up, the chupacabra can use its reaction to make a bite attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Coatl|PSX",
+			"s": [
+				"Coatl"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Demon|PSX",
+			"s": [
+				"Demon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dryad|PSX",
+			"hint": {
+				"Dryad": "樹精"
+			},
+			"s": [
+				"Dryad"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Earth Totem Elemental|PSX",
+			"s": [
+				"Earth Totem Elemental"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Elder Dinosaur|PSX",
+			"hint": {
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Siege Monster": "攻城怪獸",
+				"Frightful Presence": "駭人威儀",
+				"Swallow": "吞嚥",
+				"Attack": "攻擊",
+				"Move": "移動",
+				"Chomp (Costs 2 Actions)": "咬嚼（消耗 2 個動作）"
+			},
+			"s": [
+				"Elder Dinosaur",
+				"natural armor",
+				"Legendary Resistance (3/Day)",
+				"If the elder dinosaur fails a saving throw, it can choose to succeed instead.",
+				"Magic Resistance",
+				"The elder dinosaur has advantage on saving throws against spells and other magical effects.",
+				"Siege Monster",
+				"The elder dinosaur deals double damage to objects and structures.",
+				"Uniqueness",
+				"These statistics are shared by all six elder dinosaurs: {@creature Elder Dinosaur (Etali, Primal Storm)|PSX|Etali, Primal Storm}, {@creature Elder Dinosaur (Ghalta, Primal Hunger)|PSX|Ghalta, Primal Hunger}, {@creature Elder Dinosaur (Nezahal, Primal Tide)|PSX|Nezahal, Primal Tide}, {@creature Elder Dinosaur (Tetzimoc, Primal Death)|PSX|Tetzimoc, Primal Death}, {@creature Elder Dinosaur (Zacama, Primal Calamity)|PSX|Zacama, Primal Calamity}, {@creature Elder Dinosaur (Zetalpa, Primal Dawn)|PSX|Zetalpa, Primal Dawn}",
+				"Frightful Presence",
+				"Each creature of the elder dinosaur's choice within 120 feet of it and aware of it must succeed on a {@dc 17} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the elder dinosaur is within line of sight, ending the effect on itself ona success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the elder dinosaur's Frightful Presence for the next 24 hours.",
+				"Swallow",
+				"The elder dinosaur makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has {@quickref Cover||3||total cover} against attacks and other effects outside the elder dinosaur, and it takes 56 ({@damage 16d6}) acid damage at the start of each of the elder dinosaur's turns. If the elder dinosaur takes 60 damage or more on a single turn from a creature inside it, it must succeed on a {@dc 20} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of it. If the elder dinosaur dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}.",
+				"Attack",
+				"The elder dinosaur makes one claw attack, tail attack, wing attack, or flipper attack.",
+				"Move",
+				"The elder dinosaur moves up to half its speed.",
+				"Chomp (Costs 2 Actions)",
+				"The elder dinosaur makes one bite attack or uses its Swallow."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Elder Dinosaur (Etali, Primal Storm)|PSX",
+			"s": [
+				"Elder Dinosaur (Etali, Primal Storm)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Elder Dinosaur (Ghalta, Primal Hunger)|PSX",
+			"s": [
+				"Elder Dinosaur (Ghalta, Primal Hunger)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Elder Dinosaur (Nezahal, Primal Tide)|PSX",
+			"s": [
+				"Elder Dinosaur (Nezahal, Primal Tide)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Elder Dinosaur (Tetzimoc, Primal Death)|PSX",
+			"s": [
+				"Elder Dinosaur (Tetzimoc, Primal Death)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Elder Dinosaur (Zacama, Primal Calamity)|PSX",
+			"s": [
+				"Elder Dinosaur (Zacama, Primal Calamity)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Elder Dinosaur (Zetalpa, Primal Dawn)|PSX",
+			"s": [
+				"Elder Dinosaur (Zetalpa, Primal Dawn)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ferocidon|PSX",
+			"s": [
+				"Ferocidon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fire Guardian|PSX",
+			"s": [
+				"Fire Guardian"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Frilled Deathspitter|PSX",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊",
+				"Spit Poison": "噴吐毒液"
+			},
+			"s": [
+				"Frilled Deathspitter",
+				"natural armor",
+				"Multiattack",
+				"The deathspitter makes three attacks: one with its bite and two with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+				"Claw",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage.",
+				"Spit Poison",
+				"{@atk rw} {@hit 5} to hit, range 15/30 ft., one creature. {@h}The target must make a {@dc 13} Constitution saving throw, taking 18 ({@damage 4d8}) poison damage on a failed save, or half as much damage on a successful one. In addition, a creature that fails its saving throw is {@condition blinded} until the end of the deathspitter's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gishath, Sun's Avatar|PSX",
+			"hint": {
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Swallow": "吞嚥",
+				"Stomp": "踐踏",
+				"Tail": "尾擊",
+				"Attack": "攻擊",
+				"Roar (Costs 2 Actions)": "咆哮（消耗 2 個動作）"
+			},
+			"s": [
+				"Gishath, Sun's Avatar",
+				"natural armor",
+				"Legendary Resistance (3/Day)",
+				"If Gishath fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"Gishath makes two attacks: one with its bite and one with its stomp or tail. It can't make both attacks against the same target.",
+				"Bite",
+				"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}39 ({@damage 5d12 + 7}) piercing damage. If the target is a Large or smaller creature, it must succeed on a {@dc 19} Dexterity saving throw or it is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the target is {@condition restrained}, and Gishath can't bite another target.",
+				"Swallow",
+				"Gishath makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has {@quickref Cover||3||total cover} against attacks and other effects outside Gishath, and it takes 21 ({@damage 6d6}) acid damage at the start of each of Gishath's turns.",
+				"If Gishath takes 30 damage or more on a single turn from a creature inside it, it must succeed on a {@dc 18} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of it. If Gishath dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}.",
+				"Stomp",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}29 ({@damage 5d8 + 7}) bludgeoning damage, and the target must succeed on a {@dc 19} Strength saving throw or be knocked {@condition prone}.",
+				"Tail",
+				"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}25 ({@damage 4d8 + 7}) bludgeoning damage.",
+				"Attack",
+				"Gishath makes one stomp or tail attack.",
+				"Roar (Costs 2 Actions)",
+				"Each creature that is within 120 feet of Gishath and can hear it must succeed on a {@dc 19} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Gishath's Roar for the next 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Griffin|PSX",
+			"s": [
+				"Griffin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hadrosaur|PSX",
+			"s": [
+				"Hadrosaur"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hammerskull|PSX",
+			"s": [
+				"Hammerskull"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Harpy|PSX",
+			"hint": {
+				"Harpy": "鳥身女妖(哈耳庇厄)"
+			},
+			"s": [
+				"Harpy"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Horned Frog|PSX",
+			"s": [
+				"Horned Frog"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Macaw|PSX",
+			"s": [
+				"Macaw"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Parrot|PSX",
+			"s": [
+				"Parrot"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Piranha|PSX",
+			"hint": {
+				"Piranha": "食人魚"
+			},
+			"s": [
+				"Piranha"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sailback|PSX",
+			"s": [
+				"Sailback"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shambling Mound Totem Elemental|PSX",
+			"s": [
+				"Shambling Mound Totem Elemental"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Stone Guardian (Animated Armor)|PSX",
+			"s": [
+				"Stone Guardian (Animated Armor)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Stone Guardian (Helmed Horror)|PSX",
+			"s": [
+				"Stone Guardian (Helmed Horror)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Stone Guardian (Shield Guardian)|PSX",
+			"s": [
+				"Stone Guardian (Shield Guardian)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Stone Guardian (Stone Golem)|PSX",
+			"s": [
+				"Stone Guardian (Stone Golem)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sunbird|PSX",
+			"hint": {
+				"Death Throes": "臨死掙扎",
+				"Fire Aura": "火焰靈光",
+				"Flyby": "飛掠",
+				"Keen Hearing and Sight": "敏銳聽覺與視覺",
+				"Multiattack": "多重攻擊",
+				"Talon": "利爪"
+			},
+			"s": [
+				"Sunbird",
+				"natural armor",
+				"Death Throes",
+				"When the sunbird dies, it explodes, and each creature within 30 feet of it must make a {@dc 18} Dexterity saving throw, taking 42 ({@damage 12d6}) fire damage on a failed save, or half as much damage on a successful one. The explosion ignites flammable objects in that area that aren't being worn or carried. The sunbird's body turns to ash, but an egg is left where the sunbird was.",
+				"Fire Aura",
+				"At the start of each of the sunbird's turns, each creature within 5 feet of it takes 11 ({@damage 2d10}) fire damage, and flammable objects in the area that aren't being worn or carried ignite. A creature that touches the sunbird or hits it with a melee attack while within 5 feet of it takes 11 ({@damage 2d10}) fire damage. The aura also sheds bright light in a 60-foot radius and dim light for an additional 60 feet.",
+				"Flyby",
+				"The sunbird doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
+				"Keen Hearing and Sight",
+				"The sunbird has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight.",
+				"Multiattack",
+				"The sunbird makes two talon attacks.",
+				"Talon",
+				"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d6 + 9}) slashing damage plus 14 ({@damage 4d6}) fire damage, and the target is {@condition grappled} (escape {@dc 18}). Until this grapple ends, the target is {@condition restrained}, and the sunbird can't attack another target with that talon. A {@condition grappled} creature takes 11 ({@damage 2d10}) fire damage at the start of each of the sunbird's turns."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Swarm of Piranhas|PSX",
+			"hint": {
+				"Swarm of Piranhas": "食人魚群"
+			},
+			"s": [
+				"Swarm of Piranhas"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Treant Totem Elemental|PSX",
+			"s": [
+				"Treant Totem Elemental"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Trilobite|PSX",
+			"s": [
+				"Trilobite"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Trilobite (Giant)|PSX",
+			"s": [
+				"Trilobite (Giant)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tyrant|PSX",
+			"s": [
+				"Tyrant"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Water Totem Elemental|PSX",
+			"s": [
+				"Water Totem Elemental"
+			]
+		}
+	]
+}

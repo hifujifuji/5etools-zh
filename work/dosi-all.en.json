@@ -1,0 +1,148 @@
+{
+	"batch": "dosi-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Fume Drake|DOSI",
+			"hint": {
+				"Death Burst": "死亡爆發",
+				"Unusual Nature": "異常本質",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Fume Drake",
+				"Death Burst",
+				"When the fume drake dies, it explodes in a cloud of noxious fumes. Each creature within 5 feet of the fume drake must succeed on a {@dc 11} Constitution saving throw or take 4 ({@damage 1d8}) poison damage.",
+				"Unusual Nature",
+				"The fume drake doesn't require food, drink, or sleep.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) fire damage.",
+				"Scalding Breath {@recharge}",
+				"The fume drake exhales a 15-foot cone of scalding steam. Each creature in that area must make a {@dc 11} Dexterity saving throw, taking 4 ({@damage 1d8}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kobold Tinkerer|DOSI",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Sunlight Sensitivity": "日光敏感",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Kobold Tinkerer",
+				"Inquiring Mind (1/Day)",
+				"The kobold can cast {@spell detect magic}, requiring no spell components and using Intelligence as the spellcasting ability.",
+				"Pack Tactics",
+				"The kobold has advantage on an attack roll against a creature if at least one of its allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage.",
+				"Alchemical Flame {@recharge}",
+				"The kobold unleashes fire in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 10 ({@damage 3d6}) fire damage on a failed saving throw, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Merrow Extortionist|DOSI",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Rend": "撕裂"
+			},
+			"s": [
+				"Merrow Extortionist",
+				"natural armor",
+				"Amphibious",
+				"The merrow can breathe air and water.",
+				"Multiattack",
+				"The merrow makes two Rend attacks.",
+				"Rend",
+				"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Myla|DOSI",
+			"s": [
+				"Myla"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Runara|DOSI",
+			"s": [
+				"Runara"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sinensa|DOSI",
+			"s": [
+				"Sinensa"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spore Servant Octopus|DOSI",
+			"hint": {
+				"Hold Breath": "閉氣",
+				"Water Breathing": "水下呼吸",
+				"Tentacles": "觸手"
+			},
+			"s": [
+				"Spore Servant Octopus",
+				"Hold Breath",
+				"While out of water, the octopus can hold its breath for 1 hour.",
+				"Water Breathing",
+				"The octopus can breathe only underwater.",
+				"Tentacles",
+				"{@atk mw} {@hit 5} to hit, reach 15 ft., one target {@h}7 ({@damage 1d8 + 3}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tarak|DOSI",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Dagger": "匕首",
+				"Cunning Action": "巧妙動作"
+			},
+			"s": [
+				"Tarak",
+				"Multiattack",
+				"Tarak makes three Dagger attacks.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage.",
+				"Cunning Action",
+				"Tarak takes the {@action Dash}, {@action Disengage}, or {@action Hide} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Varnoth|DOSI",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Varnoth",
+				"Multiattack",
+				"Varnoth makes three Shortsword attacks.",
+				"Shortsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Violet Fungus|DOSI",
+			"hint": {
+				"Violet Fungus": "紫蕈"
+			},
+			"s": [
+				"Violet Fungus"
+			]
+		}
+	]
+}

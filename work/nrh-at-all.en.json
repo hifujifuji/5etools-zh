@@ -1,0 +1,43 @@
+{
+	"batch": "nrh-at-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Emo|NRH-AT",
+			"s": [
+				"Emo"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Maude|NRH-AT",
+			"s": [
+				"Maude"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mr. Greystone|NRH-AT",
+			"hint": {
+				"Brave": "勇敢",
+				"Brute": "蠻力",
+				"Multiattack": "多重攻擊",
+				"Club": "棍棒",
+				"Hand Crossbow": "手弩"
+			},
+			"s": [
+				"Mr. Greystone",
+				"Brave",
+				"Mr. Greystone has advantage on saving throws against being {@condition frightened}.",
+				"Brute",
+				"A melee weapon deals one extra die of its damage when Mr. Greystone hits with it (included in the attack).",
+				"Multiattack",
+				"Mr. Greystone makes two melee attacks or two ranged attacks.",
+				"Club",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage.",
+				"Hand Crossbow",
+				"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		}
+	]
+}

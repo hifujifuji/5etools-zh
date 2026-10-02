@@ -1,0 +1,219 @@
+{
+	"batch": "hotb-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Curate|HOTB",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Curate",
+				"Magic Resistance",
+				"The curate has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Raise the Dead (1/Day)",
+				"In a ritual that takes 8 hours, the curate touches a creature that has died within the past 7 days. That creature returns to life with 1 {@variantrule Hit Points|XPHB|Hit Point}. The curate can't revive a creature that died of old age.",
+				"Multiattack",
+				"The curate makes three Celestial Radiance attacks.",
+				"Celestial Radiance",
+				"{@atkr m,r} {@hit 7}, reach 5 ft. or range 60 ft. {@h}18 ({@damage 4d8}) Radiant damage.",
+				"Healer's Touch (2/Day)",
+				"The curate touches another creature. That creature regains 13 ({@dice 2d8 + 4}) {@variantrule Hit Points|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gray Ooze Glob|HOTB",
+			"hint": {
+				"Amorphous": "無定形",
+				"Corrosive Form": "腐蝕形體",
+				"Pseudopod": "偽足"
+			},
+			"s": [
+				"Gray Ooze Glob",
+				"Amorphous",
+				"The ooze can move through a space as narrow as 1 inch without expending extra movement to do so.",
+				"Corrosive Form",
+				"Whenever a creature hits the ooze with a melee attack, that creature takes 2 Acid damage.",
+				"Pseudopod",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}10 ({@damage 2d8 + 1}) Acid damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ivlis|HOTB",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Chaos Blast": "混沌衝擊"
+			},
+			"s": [
+				"Ivlis",
+				"Multiattack",
+				"Ivlis makes three Chaos Blast attacks. She can replace one attack with a use of Sinister Command if available.",
+				"Chaos Blast",
+				"{@atkr m,r} {@hit 4}, reach 5 ft. or range 60 ft. {@h}7 ({@damage 2d6}) damage. Roll {@dice 1d4} to determine the damage type: 1, Acid; 2, Cold; 3, Fire; 4, Lightning.",
+				"Sinister Command {@recharge 5}",
+				"{@actSave wis} {@dc 12}, one creature Ivlis can see within 60 feet. {@actSaveFail} The target has the {@condition Charmed|XPHB} condition until the end of its next turn. While {@condition Charmed|XPHB}, the target has the {@condition Incapacitated|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jacko|HOTB",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Poison Dagger": "毒匕首",
+				"Cunning Action": "巧妙動作"
+			},
+			"s": [
+				"Jacko",
+				"Quick Disguise",
+				"Jacko spends 1 minute to disguise himself as a different Humanoid of approximately his height and weight. While Jacko is disguised, a creature that takes the Study action to inspect Jacko's appearance can make a {@dc 13} Intelligence ({@skill Investigation|XPHB}) check, discerning his disguise on a successful check.",
+				"Multiattack",
+				"Jacko makes two Poison Dagger attacks.",
+				"Poison Dagger",
+				"{@atkr m,r} {@hit 5}, reach 5 ft. or range 20/60 ft. {@h}5 ({@damage 1d4 + 3}) Piercing damage plus 3 ({@damage 1d6}) Poison damage.",
+				"Cunning Action",
+				"Jacko takes the {@action Dash|XPHB}, {@action Disengage|XPHB}, or {@action Hide|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kuo-toa Marauder|HOTB",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Sunlight Sensitivity": "日光敏感",
+				"Slippery": "滑溜"
+			},
+			"s": [
+				"Kuo-toa Marauder",
+				"Amphibious",
+				"The kuo-toa can breathe air and water.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the kuo-toa has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls.",
+				"Brine Slicer",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}9 ({@damage 2d6 + 2}) Slashing damage.",
+				"Slippery",
+				"The kuo-toa takes the {@action Disengage|XPHB} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lizardfolk Warden|HOTB",
+			"hint": {
+				"Hold Breath": "閉氣",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Lizardfolk Warden",
+				"Hold Breath",
+				"The lizardfolk can hold its breath for 15 minutes.",
+				"Multiattack",
+				"The lizardfolk makes one Bite attack and one Bone Pike attack.",
+				"Bite",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage plus 3 ({@damage 1d6}) Poison damage.",
+				"Bone Pike",
+				"{@atkr m} {@hit 4}, reach 10 ft. {@h}7 ({@damage 1d10 + 2}) Piercing damage.",
+				"Poison Spit",
+				"{@atkr r} {@hit 4}, range 60 ft. {@h}12 ({@damage 3d6 + 2}) Poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Narthus|HOTB",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Narthus",
+				"Multiattack",
+				"Narthus makes two attacks using Vile Mace or Fateful Bolt in any combination.",
+				"Vile Mace",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Bludgeoning damage plus 3 ({@damage 1d6}) Necrotic damage.",
+				"Fateful Bolt",
+				"{@atkr r} {@hit 4}, range 120 ft. {@h}8 ({@damage 1d12 + 2}) Necrotic damage, and the next attack roll made against the target before the end of Narthus's next turn has {@variantrule Advantage|XPHB}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Pral|HOTB",
+			"hint": {
+				"Rapier": "刺劍",
+				"Light Crossbow": "輕弩",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Pral",
+				"Rapier",
+				"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage.",
+				"Light Crossbow",
+				"{@atkr r} {@hit 5}, range 80/320 ft. {@h}7 ({@damage 1d8 + 3}) Piercing damage.",
+				"Parry",
+				"{@actTrigger} Pral is hit with a melee attack roll while holding a weapon. {@actResponse} Pral adds 2 to his AC against that attack, potentially causing the attack to miss."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sprite Skirmisher|HOTB",
+			"hint": {
+				"Needle Sword": "針劍",
+				"Enchanting Bow": "魅惑之弓",
+				"Heart Sight": "洞悉內心",
+				"Invisibility": "隱形"
+			},
+			"s": [
+				"Sprite Skirmisher",
+				"Needle Sword",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}6 ({@damage 1d4 + 4}) Piercing damage.",
+				"Enchanting Bow",
+				"{@atkr r} {@hit 6}, range 40/160 ft. {@h}1 Piercing damage, and the target has the {@condition Charmed|XPHB} condition until the start of the sprite's next turn.",
+				"Heart Sight",
+				"{@actSave cha} {@dc 10}, one creature within 5 feet the sprite can see (Celestials, Fiends, Undead automatically fail the save). {@actSaveFail} The sprite knows the target's emotions.",
+				"Invisibility",
+				"The sprite has the {@condition Invisible|XPHB} condition for 1 minute. This effect ends early immediately after the sprite makes an attack roll or deals damage, or if the sprite has the {@condition Incapacitated|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vinx|HOTB",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍",
+				"Sling": "投石索"
+			},
+			"s": [
+				"Vinx",
+				"Multiattack",
+				"Vinx makes two attacks, using Shortsword and Sling in any combination.",
+				"Shortsword",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage.",
+				"Sling",
+				"{@atkr r} {@hit 4}, range 30/120 ft. {@h}4 ({@damage 1d4 + 2}) Bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Wight Lifedrinker|HOTB",
+			"hint": {
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Necrotic Sword": "黯蝕之劍",
+				"Necrotic Bow": "黯蝕之弓"
+			},
+			"s": [
+				"Wight Lifedrinker",
+				"Sunlight Sensitivity",
+				"While in sunlight, the wight has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls.",
+				"Multiattack",
+				"The wight makes two attacks, using Necrotic Sword or Necrotic Bow in any combination. It can replace one attack with a use of Drink Life.",
+				"Necrotic Sword",
+				"{@atkr m} {@hit 4}, reach 5 ft. {@h}6 ({@damage 1d8 + 2}) Slashing damage plus 4 ({@damage 1d8}) Necrotic damage.",
+				"Necrotic Bow",
+				"{@atkr r} {@hit 4}, range 150/600 ft. {@h}6 ({@damage 1d8 + 2}) Piercing damage plus 4 ({@damage 1d8}) Necrotic damage.",
+				"Drink Life {@recharge 5}",
+				"{@actSave con} {@dc 13}, one creature within 5 feet. {@actSaveFail} 6 ({@damage 1d8 + 2}) Necrotic damage, and the wight regains a number of {@variantrule Hit Points|XPHB} equal to the Necrotic damage taken."
+			]
+		}
+	]
+}

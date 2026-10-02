@@ -1,0 +1,80 @@
+{
+	"batch": "hftt-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Demogorgon|HFTT",
+			"hint": {
+				"Demogorgon": "狄摩高根",
+				"Keen Smell": "敏銳嗅覺",
+				"Blood Frenzy": "血腥狂亂",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Demogorgon",
+				"natural armor",
+				"Keen Smell",
+				"The demogorgon has advantage on Wisdom ({@skill Perception}) checks that rely on smell.",
+				"Blood Frenzy",
+				"The demogorgon has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+				"Regeneration",
+				"The demogorgon regains 10 hit points at the start of its turn. If the demogorgon takes acid or fire damage, this trait doesn't function at the start of the demogorgon's next turn. The demogorgon dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+				"Multiattack",
+				"The demogorgon makes three attacks: one with its bite and two with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage.",
+				"Claw",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Evil Mage|HFTT",
+			"hint": {
+				"Evil Mage": "邪惡法師",
+				"Spellcasting": "施法",
+				"Quarterstaff": "長棍"
+			},
+			"s": [
+				"Evil Mage",
+				"Spellcasting",
+				"The mage is a 4th-level spellcaster that uses Intelligence as its spellcasting ability (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The mage knows the following spells from the wizard's spell list:",
+				"Quarterstaff",
+				"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d8 -1}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Thessalhydra|HFTT",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Flurry of Bites": "啃咬連擊",
+				"Maw": "巨口",
+				"Acid Saliva {@recharge 5}": "酸性唾液 {@recharge 5}",
+				"Detect": "偵查",
+				"Tail Swipe": "尾掃"
+			},
+			"s": [
+				"Thessalhydra",
+				"natural armor",
+				"Multiattack",
+				"The thessalhydra makes one maw attack and one Flurry of Bites.",
+				"Flurry of Bites",
+				"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 10 ({@damage 4d4}) poison damage.",
+				"Maw",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage plus 5 ({@damage 1d10}) acid damage.",
+				"Tail Pincer",
+				"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d12 + 4}) slashing damage, and the target is {@condition grappled}. As an action, the target can escape the grapple by succeeding on a {@dc 14} Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check (its choice). Until this grapple ends, the thessalhydra can't use its tail pincer.",
+				"Acid Saliva {@recharge 5}",
+				"The thessalhydra spits a glob of acid at a point it can see within 30 feet of it. Each creature within 10 feet of that point must make a {@dc 15} Dexterity saving throw, taking 18 ({@damage 4d8}) acid damage on a failed save, or half as much damage on a successful one.",
+				"Detect",
+				"The thessalhydra makes a Wisdom ({@skill Perception}) check with advantage.",
+				"Tail Swipe",
+				"The thessalhydra makes a tail pincer attack."
+			]
+		}
+	]
+}

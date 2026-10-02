@@ -1,0 +1,160 @@
+{
+	"batch": "nf-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Caldron Magen|NF",
+			"hint": {
+				"Disintegration": "解離",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Caldron Magen",
+				"Disintegration",
+				"If the magen dies, it disintegrates into dust, leaving behind anything it was wearing or carrying.",
+				"Magic Resistance",
+				"The magen has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The magen makes two attacks, using Extended Fist or Acid Spittle in any combination.",
+				"Extended Fist",
+				"{@atkr m} {@hit 6}, reach 15 ft. {@h}8 ({@damage 1d8 + 4}) Bludgeoning damage plus 5 ({@damage 1d10}) Acid damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 14}) from one of two fists.",
+				"Acid Spittle",
+				"{@atkr r} {@hit 6}, range 60 ft. {@h}13 ({@damage 2d8 + 4}) Acid damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Eldritch Eddy|NF",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Arcane Bolt": "奧術箭"
+			},
+			"s": [
+				"Eldritch Eddy",
+				"(hover)",
+				"Magic Resistance",
+				"The eddy has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The eddy makes two attacks, using Searing Swipe or Arcane Bolt in any combination.",
+				"Searing Swipe",
+				"{@atkr m} {@hit 6}, reach 10 ft. {@h}13 ({@damage 3d6 + 3}) Fire or Lightning damage (eddy's choice).",
+				"Arcane Bolt",
+				"{@atkr r} {@hit 6}, range 120 ft. {@h}14 ({@damage 2d10 + 3}) Force damage.",
+				"Eldritch Overload",
+				"{@actTrigger} The eddy takes damage. {@actResponse d}{@actSave str} {@dc 14}, each creature of the eddy's choice in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the eddy. {@actSaveFail} 7 ({@damage 2d6}) Force damage, and the target has the {@condition Prone|XPHB} condition."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Phaerimm Elder|NF",
+			"hint": {
+				"Spellcasting": "施法",
+				"Protective Magic (3/Day)": "防護魔法（每日 3 次）",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Mind Lash": "心靈之鞭",
+				"Teleport": "傳送"
+			},
+			"s": [
+				"Phaerimm Elder",
+				"(hover)",
+				"Spellcasting",
+				"The phaerimm casts one of the following spells, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 17}):",
+				"Protective Magic (3/Day)",
+				"The phaerimm casts {@spell Counterspell|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting.",
+				"Magic Resistance",
+				"The phaerimm has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The phaerimm makes three Mind Lash attacks. It can replace one attack with either (A) a Vicious Stinger attack or (B) a use of Spellcasting to cast {@spell Command|XPHB} (level 3 version).",
+				"Mind Lash",
+				"{@atkr m,r} {@hit 9}, reach 10 ft. or range 120 ft. {@h}32 ({@damage 6d8 + 4}) Psychic damage.",
+				"Vicious Stinger",
+				"{@atkr m} {@hit 9}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Piercing damage plus 26 ({@damage 4d12}) Poison damage, and the target's {@variantrule Speed|XPHB} is reduced to 0 feet until the start of the phaerimm's next turn.",
+				"Siphon Magic {@recharge 5}",
+				"The phaerimm focuses on a magic item it can see within 10 feet. When it does, the phaerimm drains the magic item of any charges. Regardless of whether charges are drained, the phaerimm can cast {@spell Clairvoyance|XPHB}, {@spell Geas|XPHB}, {@spell Major Image|XPHB}, and {@spell Mirage Arcane|XPHB} one additional time that day.",
+				"Teleport",
+				"The phaerimm teleports up to 30 feet to an unoccupied space it can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Phaerimm Scout|NF",
+			"hint": {
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Stinger": "螫針",
+				"Mindwarp Ray": "扭心射線",
+				"Uncanny Dodge": "直覺閃避"
+			},
+			"s": [
+				"Phaerimm Scout",
+				"Spellcasting",
+				"The phaerimm casts one of the following spells, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 13}):",
+				"Magic Resistance",
+				"The phaerimm has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The phaerimm makes two attacks, using Stinger or Mindwarp Ray in any combination.",
+				"Stinger",
+				"{@atkr m} {@hit 3}, reach 5 ft. {@h}4 ({@damage 1d6 + 1}) Piercing damage plus 9 ({@damage 2d8}) Poison damage.",
+				"Mindwarp Ray",
+				"{@atkr r} {@hit 5}, range 120 ft. {@h}6 ({@damage 1d6 + 3}) Psychic damage, and the target has the {@condition Charmed|XPHB} condition until the start of the phaerimm's next turn.",
+				"Uncanny Dodge",
+				"{@actTrigger} The phaerimm is hit by an attack roll. {@actResponse} The phaerimm halves the damage (round down) it takes from that attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Terran Magen|NF",
+			"hint": {
+				"Spellcasting": "施法",
+				"Disintegration": "解離",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Terran Magen",
+				"(hover)",
+				"Spellcasting",
+				"The magen casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save {@dc 15}):",
+				"Disintegration",
+				"If the magen dies, it disintegrates into dust, leaving behind anything it was wearing or carrying.",
+				"Magic Resistance",
+				"The magen has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The magen makes two attacks, using Hammer Fist or Thunderous Boom in any combination.",
+				"Hammer Fist",
+				"{@atkr m} {@hit 6}, reach 5 ft. {@h}16 ({@damage 3d8 + 3}) Bludgeoning damage plus 13 ({@damage 3d8}) Force damage.",
+				"Thunderous Boom",
+				"{@atkr r} {@hit 7}, range 60 ft. {@h}28 ({@damage 8d6}) Thunder damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Virvos Magen|NF",
+			"hint": {
+				"Spellcasting": "施法",
+				"Disintegration": "解離",
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Psychic Blast": "心靈衝擊"
+			},
+			"s": [
+				"Virvos Magen",
+				"(hover)",
+				"Spellcasting",
+				"The magen casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 14}):",
+				"Disintegration",
+				"If the magen dies, it disintegrates into dust, leaving behind anything it was wearing or carrying.",
+				"Magic Resistance",
+				"The magen has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The magen makes two Psychic Blast attacks.",
+				"Psychic Blast",
+				"{@atkr m,r} {@hit 6}, reach 5 ft. or range 60 ft. {@h}21 ({@damage 6d6}) Psychic damage."
+			]
+		}
+	]
+}

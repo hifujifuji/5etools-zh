@@ -1,0 +1,726 @@
+{
+	"batch": "jttrc-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Afsoun Ghorbani|JTTRC",
+			"s": [
+				"Afsoun Ghorbani"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Amanisha Manivarshi|JTTRC",
+			"s": [
+				"Amanisha Manivarshi"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ameyali|JTTRC",
+			"s": [
+				"Ameyali"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashen Heir Anarchist|JTTRC",
+			"s": [
+				"Ashen Heir Anarchist"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashen Heir Assassin|JTTRC",
+			"s": [
+				"Ashen Heir Assassin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashen Heir Mage|JTTRC",
+			"s": [
+				"Ashen Heir Mage"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashen Heir Veteran|JTTRC",
+			"s": [
+				"Ashen Heir Veteran"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Atash|JTTRC",
+			"s": [
+				"Atash"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Atiba-Pa|JTTRC",
+			"s": [
+				"Atiba-Pa"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aunt Dellie|JTTRC",
+			"s": [
+				"Aunt Dellie"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aurumvorax|JTTRC",
+			"hint": {
+				"Tunneler": "掘地者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Aurumvorax",
+				"natural armor",
+				"Tunneler",
+				"The aurumvorax can burrow through solid rock and metal at half its burrowing speed and leaves a 5-foot-diameter tunnel in its wake.",
+				"Multiattack",
+				"The aurumvorax makes one Bite attack and two Claw attacks.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a creature wearing armor of any type, the aurumvorax regains 4 ({@dice 1d6 + 1}) hit points.",
+				"Claw",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage. If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the aurumvorax can't use its Claw attack on another target, and when it moves, it can drag the {@condition grappled} creature with it, without the aurumvorax's speed being halved."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Aurumvorax Den Leader|JTTRC",
+			"hint": {
+				"Tunneler": "掘地者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Frenzy": "狂亂",
+				"Claw": "爪擊"
+			},
+			"s": [
+				"Aurumvorax Den Leader",
+				"natural armor",
+				"Pack Leader",
+				"The aurumvorax's allies have advantage on attack rolls while within 10 feet of the aurumvorax, provided it isn't {@condition incapacitated}.",
+				"Tunneler",
+				"The aurumvorax can burrow through solid rock and metal at half its burrowing speed and leaves a 5-foot-diameter tunnel in its wake.",
+				"Multiattack",
+				"The aurumvorax makes one Bite attack and two Claw attacks.",
+				"Bite",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage. If the target is a creature wearing armor of any type, the aurumvorax gains one of the following benefits of its choice:",
+				"Frenzy",
+				"The aurumvorax has advantage on attack rolls until start of its next turn.",
+				"Invigorate",
+				"The aurumvorax regains 6 ({@dice 1d8 + 2}) hit points.",
+				"Claw",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage. If the target is a Large or smaller creature, it is {@condition grappled} (escape {@dc 14}). Until this grapple ends, the aurumvorax can't use its Claw attack on another target, and when it moves, it can drag the {@condition grappled} creature with it, without the aurumvorax's speed being halved."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Awa|JTTRC",
+			"s": [
+				"Awa"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Azra Nir|JTTRC",
+			"s": [
+				"Azra Nir"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bakunawa|JTTRC",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Bakunawa",
+				"natural armor",
+				"Amphibious",
+				"The bakunawa can breathe air and water.",
+				"Legendary Resistance (3/Day)",
+				"If the bakunawa fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The bakunawa makes one Bite attack and one Storm Slam attack.",
+				"Bite",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 7 ({@damage 2d6}) lightning damage. If the target is a Large or smaller creature, it must succeed on a {@dc 17} Strength saving throw or be swallowed by the bakunawa. A swallowed creature is {@condition blinded} and {@condition restrained}, and it has {@quickref Cover||3||total cover} against attacks and other effects outside the bakunawa. At the start of each of the bakunawa's turns, each swallowed creature takes 10 ({@damage 3d6}) lightning damage.",
+				"The bakunawa's gullet can hold up to two creatures at a time. If the bakunawa takes 30 damage or more on a single turn from a swallowed creature, the bakunawa must succeed on a {@dc 16} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 15 feet of the bakunawa. If the bakunawa dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 15 feet of movement, exiting {@condition prone}.",
+				"Storm Slam",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d8 + 5}) bludgeoning damage plus 5 ({@damage 1d10}) thunder damage, and the target is pushed up to 10 feet in a horizontal direction away from the bakunawa.",
+				"Nimble Glide",
+				"The bakunawa flies or swims up to half its speed. This movement doesn't provoke opportunity attacks.",
+				"Slam",
+				"The bakunawa makes one Storm Slam attack.",
+				"Lightning Strikes (Costs 3 Actions)",
+				"The bakunawa arcs lightning at up to two creatures it can see within 60 feet of itself. Each target must succeed on a {@dc 15} Dexterity saving throw or take 22 ({@damage 4d10}) lightning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Brother Broumane|JTTRC",
+			"s": [
+				"Brother Broumane"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dinosaur Skeleton|JTTRC",
+			"s": [
+				"Dinosaur Skeleton"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Diva|JTTRC",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Diva",
+				"Multiattack",
+				"The scout makes two melee attacks.",
+				"Broken Bottle",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Diva Luma|JTTRC",
+			"hint": {
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Diva Luma",
+				"Multiattack",
+				"Diva Luma makes two high-heeled shoe attacks.",
+				"High-Heeled Shoe",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Djeneba|JTTRC",
+			"s": [
+				"Djeneba"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dragon Hunter|JTTRC",
+			"s": [
+				"Dragon Hunter"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dukha Bhatiyali|JTTRC",
+			"s": [
+				"Dukha Bhatiyali"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Farmer|JTTRC",
+			"hint": {
+				"Farmer": "農夫"
+			},
+			"s": [
+				"Farmer"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gammon Xungoon|JTTRC",
+			"s": [
+				"Gammon Xungoon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Haint|JTTRC",
+			"hint": {
+				"Incorporeal Movement": "虛體移動",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Change Shape": "變形"
+			},
+			"s": [
+				"Haint",
+				"(hover)",
+				"Incorporeal Movement",
+				"The haint can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object.",
+				"Unusual Nature",
+				"The haint doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The haint makes two Sorrowful Touch attacks.",
+				"Sorrowful Touch",
+				"{@atk ms} {@hit 6} to hit, reach 5 ft., one creature. {@h}21 ({@damage 4d8 + 3}) psychic damage.",
+				"Change Shape",
+				"The haint magically assumes the appearance of the Humanoid it was in life, while retaining its game statistics. The assumed appearance ends if the haint is reduced to 0 hit points or uses an action to end it.",
+				"Shared Sorrow",
+				"The haint targets one creature it can see within 60 feet of itself that is missing any hit points, sharing its own torment with this pained soul. The target must succeed on a {@dc 14} Wisdom saving throw or be {@condition incapacitated}.",
+				"A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the haint's Shared Sorrow for the next 24 hours."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jade Statue|JTTRC",
+			"s": [
+				"Jade Statue"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jijibisha Manivarshi|JTTRC",
+			"s": [
+				"Jijibisha Manivarshi"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kala Mabarin|JTTRC",
+			"s": [
+				"Kala Mabarin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kasem Aroon|JTTRC",
+			"s": [
+				"Kasem Aroon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kedjou Kamal|JTTRC",
+			"s": [
+				"Kedjou Kamal"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kianna|JTTRC",
+			"s": [
+				"Kianna"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Koi Prawn|JTTRC",
+			"s": [
+				"Koi Prawn"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kun Ahn-Jun|JTTRC",
+			"s": [
+				"Kun Ahn-Jun"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kusa Xungoon|JTTRC",
+			"s": [
+				"Kusa Xungoon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lady Dre|JTTRC",
+			"s": [
+				"Lady Dre"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Laleh Ghorbani|JTTRC",
+			"s": [
+				"Laleh Ghorbani"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lamai Tyenmo|JTTRC",
+			"s": [
+				"Lamai Tyenmo"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lu Zhong Yin|JTTRC",
+			"s": [
+				"Lu Zhong Yin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lungtian|JTTRC",
+			"s": [
+				"Lungtian"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Madam Kulp|JTTRC",
+			"s": [
+				"Madam Kulp"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Myx Nargis Ruba|JTTRC",
+			"s": [
+				"Myx Nargis Ruba"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Navid|JTTRC",
+			"s": [
+				"Navid"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nene|JTTRC",
+			"s": [
+				"Nene"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nightsea Chil-liren|JTTRC",
+			"s": [
+				"Nightsea Chil-liren"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nimuel|JTTRC",
+			"s": [
+				"Nimuel"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ollin|JTTRC",
+			"s": [
+				"Ollin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Paloma|JTTRC",
+			"s": [
+				"Paloma"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Paolo Maykapal|JTTRC",
+			"s": [
+				"Paolo Maykapal"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Pari|JTTRC",
+			"hint": {
+				"Spellcasting": "施法",
+				"Magic Resistance": "魔法抗性",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊",
+				"Mace": "硬頭錘"
+			},
+			"s": [
+				"Pari",
+				"Spellcasting",
+				"The pari casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 19}):",
+				"Magic Resistance",
+				"The pari has advantage on saving throws against spells and other magical effects.",
+				"Unusual Nature",
+				"The pari doesn't require food, drink, or sleep.",
+				"Multiattack",
+				"The pari makes three Mace attacks.",
+				"Mace",
+				"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) bludgeoning damage plus 14 ({@damage 4d6}) radiant damage.",
+				"Disorienting Futures",
+				"The pari attempts to flood the mind of one creature it can see within 60 feet of itself with visions of the future. The target must succeed on a {@dc 19} Wisdom saving throw or take 27 ({@damage 5d10}) psychic damage and have disadvantage on attack rolls until the start of the pari's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Prince Kirina|JTTRC",
+			"s": [
+				"Prince Kirina"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Prince Simbon|JTTRC",
+			"s": [
+				"Prince Simbon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Riverine|JTTRC",
+			"hint": {
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Riverine",
+				"Spellcasting",
+				"The riverine casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 17}):",
+				"Amphibious",
+				"The riverine can breathe air and water.",
+				"Legendary Resistance (3/Day)",
+				"If the riverine fails a saving throw, it can choose to succeed instead.",
+				"Multiattack",
+				"The riverine makes two Flood Strike attacks.",
+				"Flood Strike",
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage plus 10 ({@damage 3d6}) cold damage.",
+				"Whirlpool Step",
+				"The riverine magically teleports to an unoccupied space it can see within 30 feet of itself. Both the space it leaves and its destination must be in or on the surface of water.",
+				"Whirlpool Rush",
+				"The riverine uses its Whirlpool Step. Immediately after it teleports, each creature within 5 feet of the riverine's destination space takes 5 ({@damage 1d10}) cold damage.",
+				"Raging Deluge (Costs 2 Actions)",
+				"The riverine unleashes a torrent of river water in a 30-foot line that is 5 feet wide. Each creature in that area must make a {@dc 17} Dexterity saving throw. On a failed save, a creature takes 11 ({@damage 2d10}) bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}.",
+				"Riverine"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rooster|JTTRC",
+			"s": [
+				"Rooster"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Samira Arah|JTTRC",
+			"s": [
+				"Samira Arah"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Serapio|JTTRC",
+			"s": [
+				"Serapio"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sholeh|JTTRC",
+			"s": [
+				"Sholeh"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Soul Shaker|JTTRC",
+			"hint": {
+				"Reconstruction": "重建",
+				"Unusual Nature": "異常本質"
+			},
+			"s": [
+				"Soul Shaker",
+				"natural armor",
+				"Enthralled Lure (1/Day)",
+				"The soul shaker can cast the {@spell geas} spell, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 12}).",
+				"Reconstruction",
+				"When the soul shaker is reduced to 0 hit points, it explodes into 7 ({@dice 1d4 + 5}) crawling claws. After 6 ({@dice 1d12}) days, if at least two of those crawling claws are alive, they teleport to the location of the soul shaker's death and merge together, whereupon the soul shaker reforms and regains all its hit points.",
+				"Unusual Nature",
+				"The soul shaker doesn't require air, food, drink, or sleep.",
+				"Crushing Grasp",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage. If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 15}). The soul shaker can have only one creature {@condition grappled} in this way at a time.",
+				"Consume Vitality",
+				"The soul shaker targets a creature it is grappling. If the target is not a Construct or an Undead, the target must succeed on a {@dc 14} Constitution saving throw or take 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the soul shaker regains hit points equal to that amount. This reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tlacatecolo|JTTRC",
+			"hint": {
+				"Magic Resistance": "魔法抗性",
+				"Multiattack": "多重攻擊",
+				"Talon": "利爪",
+				"Change Shape": "變形"
+			},
+			"s": [
+				"Tlacatecolo",
+				"Magic Resistance",
+				"The tlacatecolo has advantage on saving throws against spells and other magical effects.",
+				"Multiattack",
+				"The tlacatecolo makes two Talon attacks.",
+				"Talon",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 3}) piercing damage plus 14 ({@damage 3d8}) poison damage.",
+				"Change Shape",
+				"The tlacatecolo magically transforms into a Medium owl, while retaining its game statistics (other than its size). This transformation ends if the tlacatecolo is reduced to 0 hit points or if it uses its action to end it.",
+				"Plague Winds (Fiend Form Only; Recharge 5-6)",
+				"The tlacatecolo emits a chilling, disease-ridden wind in a 60-foot line that is 10 feet wide. Each creature in that area must succeed on a {@dc 13} Constitution saving throw or take 26 ({@damage 4d12}) cold damage and become {@condition poisoned}.",
+				"While {@condition poisoned} in this way, the creature can't regain hit points. At the end of every hour, the creature must succeed on a {@dc 13} Constitution saving throw or gain 1 level of {@condition exhaustion}. If the creature is in direct sunlight when it makes this saving throw, it automatically succeeds on the save.",
+				"If the creature is targeted by magic that ends a poison or disease, such as lesser restoration, while the creature isn't in direct sunlight, the effect does not end."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tlexolotl|JTTRC",
+			"hint": {
+				"Fire Aura": "火焰靈光",
+				"Illumination": "照明",
+				"Regeneration": "再生",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tail": "尾擊"
+			},
+			"s": [
+				"Tlexolotl",
+				"natural armor",
+				"Fire Aura",
+				"At the start of each of the tlexolotl's turns, each creature within 10 feet of it takes 7 ({@damage 2d6}) fire damage, and flammable objects in that aura that aren't being worn or carried ignite. A creature that touches the tlexolotl or hits it with a melee attack while within 5 feet of it takes 7 ({@damage 2d6}) fire damage.",
+				"Illumination",
+				"The tlexolotl sheds bright light in a 30-foot radius and dim light for an additional 30 feet.",
+				"Regeneration",
+				"The tlexolotl regains 10 hit points at the start of its turn. If the tlexolotl takes cold damage or is immersed in water, this trait doesn't function at the start of the tlexolotl's next turn. The tlexolotl dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+				"Multiattack",
+				"The tlexolotl makes one Bite attack and one Tail attack.",
+				"Bite",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}12 ({@damage 1d10 + 7}) piercing damage plus 18 ({@damage 4d8}) fire damage.",
+				"Tail",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}11 ({@damage 1d8 + 7}) bludgeoning damage plus 14 ({@damage 4d6}) fire damage. If the target is a Large or smaller creature, it must succeed on a {@dc 19} Strength saving throw or be pushed up to 10 feet away from the tlexolotl and knocked {@condition prone}.",
+				"Pyroclasm {@recharge 5}",
+				"Gouts of molten lava erupt from the tlexolotl's body. Each creature in a 30-foot-radius sphere centered on the tlexolotl must make a {@dc 15} Dexterity saving throw. On a failed saving throw, a creature takes 21 ({@damage 6d6}) fire damage and 21 ({@damage 6d6}) bludgeoning damage. On a successful saving throw, a creature takes half as much damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tonalli|JTTRC",
+			"s": [
+				"Tonalli"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tungsten Ward|JTTRC",
+			"s": [
+				"Tungsten Ward"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Uzoma Baten|JTTRC",
+			"s": [
+				"Uzoma Baten"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vi Aroon|JTTRC",
+			"s": [
+				"Vi Aroon"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Wei Feng Ying|JTTRC",
+			"s": [
+				"Wei Feng Ying"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Whistler|JTTRC",
+			"hint": {
+				"Blurred Form": "模糊形體",
+				"Unusual Nature": "異常本質",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Whistler",
+				"natural armor",
+				"Blurred Form",
+				"Attack rolls against the whistler are made with disadvantage unless the whistler is {@condition incapacitated}.",
+				"Unusual Nature",
+				"The whistler doesn't require air, food, drink, or sleep.",
+				"Multiattack",
+				"The whistler makes three Psychic Swipe attacks.",
+				"Psychic Swipe",
+				"{@atk ms} {@hit 8} to hit, reach 10 ft., one creature. {@h}15 ({@damage 2d10 + 4}) psychic damage.",
+				"Otherworldly Melody {@recharge 5}",
+				"The whistler telepathically whistles an otherworldly melody into the minds of up to two creatures it can see within range of its telepathy. Each target must succeed on a {@dc 16} Wisdom saving throw or take 33 ({@damage 6d10}) psychic damage and become {@condition frightened} of the whistler for 1 minute. A {@condition frightened} creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Surreal Step",
+				"The whistler teleports up to 20 feet to an unoccupied space it can see."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "White Jade Emperor|JTTRC",
+			"s": [
+				"White Jade Emperor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Wynling|JTTRC",
+			"hint": {
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Wynling",
+				"Slam",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d4 + 5}) bludgeoning damage.",
+				"Cloak of the Mountain {@recharge 4}",
+				"The wynling magically turns {@condition invisible}, along with any equipment it is wearing or carrying, for 1 minute or until it makes an attack roll.",
+				"Trickster's Flight",
+				"Immediately after a creature the wynling can see misses the wynling with an attack roll, the wynling can move up to 30 feet. This movement doesn't provoke opportunity attacks."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Xocopol|JTTRC",
+			"s": [
+				"Xocopol"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yarana|JTTRC",
+			"s": [
+				"Yarana"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young-Gi|JTTRC",
+			"s": [
+				"Young-Gi"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zisatta|JTTRC",
+			"s": [
+				"Zisatta"
+			]
+		}
+	]
+}

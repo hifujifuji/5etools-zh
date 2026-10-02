@@ -1,0 +1,47 @@
+{
+	"batch": "lrdt-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Alax Jadescales|LRDT",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Fire Strike": "火之擊",
+				"Breath Weapon (Recharges after a Short or Long Rest)": "吐息武器（短休或長休後充能）"
+			},
+			"s": [
+				"Alax Jadescales",
+				"Spellcasting",
+				"Alax casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 13}):",
+				"Multiattack",
+				"Alax makes two Fire Strike attacks.",
+				"Fire Strike",
+				"{@atk ms,rs} {@hit 5} to hit, reach 5 ft. or range 60 ft., one target. {@h}10 ({@damage 2d6 + 3}) fire damage.",
+				"Breath Weapon (Recharges after a Short or Long Rest)",
+				"Alax exhales a 15-foot cone of fire. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 14 ({@damage 4d6}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ervan Soulfallen|LRDT",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Arcane Blast": "奧術衝擊"
+			},
+			"s": [
+				"Ervan Soulfallen",
+				"with {@spell mage armor}",
+				"Spellcasting",
+				"Ervan casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 14}):",
+				"Multiattack",
+				"Ervan uses his staff to make three Arcane Blast attacks.",
+				"Arcane Blast",
+				"{@atk ms,rs} {@hit 6} to hit, reach 5 ft. or range 120 ft., one target. {@h}13 ({@damage 3d6 + 3}) force damage.",
+				"Acid Rain (Recharges after a Short or Long Rest)",
+				"Acid falls in a 10-foot-radius, 20-foot-high cylinder centered on a point Ervan can see within 120 feet of himself. Each creature in that area must make a {@dc 14} Dexterity saving throw, taking 22 ({@damage 4d10}) acid damage on a failed save, or half as much damage on a successful one."
+			]
+		}
+	]
+}

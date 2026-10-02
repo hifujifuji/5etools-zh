@@ -1,0 +1,157 @@
+{
+	"batch": "lr-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Amble|LR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Hearth of Moonlight and Shadow": "月光與陰影之家",
+				"Hold Breath": "閉氣",
+				"Change Shape (2/Day)": "變形（每日 2 次）",
+				"Claws": "爪擊",
+				"Club": "棍棒"
+			},
+			"s": [
+				"Amble",
+				"natural armor",
+				"Spellcasting",
+				"Amble is a 12th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). Amble has the following druid spells prepared:",
+				"Hearth of Moonlight and Shadow",
+				"At the start of a short or long rest, Amble can touch a point in space, and an {@condition invisible}, 30-foot-radius sphere of magic appears, centered on that point. {@quickref Cover||3||Total cover} blocks the sphere.",
+				"While within the sphere, Amble and their allies gain a +5 bonus to Dexterity ({@skill Stealth}) and Wisdom ({@skill Perception}) checks, and any light from open flames in the sphere isn't visible outside it.",
+				"The sphere vanishes at the end of the rest or when Amble leaves the sphere.",
+				"Hold Breath",
+				"Amble can hold their breath for up to 1 hour at a time.",
+				"Balm of the Summer Court (12d6)",
+				"(As a Bonus Action) Amble can choose one creature they can see within 120 feet of them and spend up to {@dice 6d6} of their die pool. Roll the spent dice and add them together. The target regains a number of hit points equal to the total. The target also gains 1 temporary hit point per die spent. Amble regains all expended dice when they finish a long rest.",
+				"Hidden Paths (4/Day)",
+				"(As a Bonus Action) Amble may teleport up to 60 feet to an unoccupied space they can see.",
+				"Change Shape (2/Day)",
+				"Amble magically polymorphs into a beast with a challenge rating of 1 or less, and can remain in this form for up to 6 hours. Amble's equipment melds with their new form. Amble reverts to their true form if they die or fall {@condition unconscious}. Amble can revert to their true form using a bonus action on their turn.",
+				"Amble's game statistics are replaced by the statistics of the beast, but they retain their alignment, personality, and Intelligence, Wisdom, and Charisma scores. Amble also retains all their skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as Amble and the bonus in its stat block is higher, use the creature's bonus instead of Amble's.",
+				"When Amble transforms, they assume the beast's hit points and Hit Dice. When Amble reverts to their normal form, they return to the number of hit points they had before they transformed. However, if Amble reverts as a result of dropping to 0 hit points, any excess damage carries over their normal form.",
+				"Amble can't cast spells, and their ability to speak or take any action that requires hands is limited to the capabilities of their beast form. Transforming doesn't break Amble's {@status concentration} on a spell they've already cast however, or prevent them from taking actions that are part of a spell.",
+				"Claws",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage.",
+				"Club",
+				"{@atk mw} {@hit 6} to hit ({@hit 8} to hit with shillelagh), reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, or 8 ({@damage 1d8 + 4}) bludgeoning damage with shillelagh."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fhenimore|LR",
+			"s": [
+				"Fhenimore",
+				"natural armor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gar Shatterkeel|LR",
+			"hint": {
+				"Gar Shatterkeel": "加爾．碎骨",
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Water Walk": "水上行走",
+				"Watery Fall": "化水而逝",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Wave": "波濤",
+				"Move": "移動"
+			},
+			"s": [
+				"Gar Shatterkeel",
+				"natural armor",
+				"Spellcasting",
+				"Gar is a 13th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). He has the following druid spells prepared:",
+				"*Circle spells don't count against spells prepared.",
+				"Amphibious",
+				"Gar can breathe air and water.",
+				"Legendary Resistance (3/Day)",
+				"If Gar fails a saving throw, he can choose to succeed instead.",
+				"Water Walk",
+				"Gar can stand and move on liquid surfaces as if they were solid ground.",
+				"Watery Fall",
+				"When Gar drops to 0 hit points, his body collapses into a pool of inky water that rapidly disperses. Except for {@item Wave} and his claw, anything he was wearing or carrying is left behind.",
+				"Multiattack",
+				"Gar makes two melee attacks, one with his claw and one with {@item Wave}.",
+				"Claw",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 16}). Until the grapple ends, Gar can't attack other creatures with his claw.",
+				"Wave",
+				"{@atk mw,rw} {@hit 11} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}9 ({@damage 1d6 + 6}) piercing damage or 10 ({@damage 1d8 + 6}) piercing damage when used with two hands. If Gar scores a critical hit with this weapon, the target takes extra necrotic damage equal to half its hit point maximum.",
+				"Umberlee's Wake {@recharge 5}",
+				"Power ripples out in a 60-foot radius sphere from a point within range (150 ft.) as the will of Umberlee affects all in her watery embrace. Each creature in that area must succeed on a {@dc 18} Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save. This only affects targets that are submerged or floating in water. Gar Shatterkeel and any undead serving him are immune to this effect.",
+				"Move",
+				"Gar moves up to his speed without provoking opportunity attacks.",
+				"Claw",
+				"Gar makes one attack with his claw.",
+				"Wave (Costs 2 Actions)",
+				"Gar makes one attack with {@item Wave} with advantage.",
+				"Gar Shatterkeel"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shoalar Quanderil|LR",
+			"hint": {
+				"Shoalar Quanderil": "索勒．剛卓",
+				"Innate Spellcasting": "天生施法",
+				"Spellcasting": "施法",
+				"Amphibious": "兩棲",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Shoalar Quanderil",
+				"with {@spell mage armor}",
+				"Innate Spellcasting",
+				"Shoalar's innate spellcasting ability is Constitution (spell save {@dc 14}, {@hit 6} to hit with spell attacks). He can innately cast the following spells:",
+				"Spellcasting",
+				"Shoalar is a 7th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). He knows the following sorcerer spells:",
+				"Amphibious",
+				"Shoalar can breathe air and water.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or ranged 20/60 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Whymsee|LR",
+			"s": [
+				"Whymsee",
+				"natural armor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Kraken|LR",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tentacle": "觸手",
+				"Fling": "拋擲",
+				"Lightning Strike": "閃電打擊"
+			},
+			"s": [
+				"Young Kraken",
+				"natural armor",
+				"Amphibious",
+				"The kraken can breathe air and water.",
+				"Multiattack",
+				"The kraken makes two tentacle attacks, each of which it can replace with one use of Fling.",
+				"Bite",
+				"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d8 + 7}) piercing damage.",
+				"If the target is a Medium or smaller creature {@condition grappled} by the kraken, that creature is swallowed and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has {@quickref Cover||3||total cover} against attacks and other effects outside the kraken, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the kraken's turns. One Medium or two smaller creatures can be swallowed at the same time.",
+				"If the kraken takes 35 damage or more on a single turn from a creature inside it, the kraken must succeed on a {@dc 23} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in spaces within 10 feet of the kraken. If the kraken dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 10 feet of movement, exiting {@condition prone}.",
+				"Tentacle",
+				"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}17 ({@damage 3d6 + 7}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 20}). Until the grapple ends, the target is {@condition restrained}. The kraken has ten tentacles, each of which can grapple one target.",
+				"Fling",
+				"One Medium or smaller object held or creature {@condition grappled} by the kraken is thrown up to 40 feet in a random direction and knocked {@condition prone}. If a thrown target strikes a solid surface, the target takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a {@dc 13} Dexterity saving throw or take the same damage and be knocked {@condition prone}.",
+				"Lightning Strike",
+				"The kraken magically create a bolt of lightning, which can strike a target the kraken can see within 90 feet of it. The target must make a {@dc 18} Dexterity saving throw, taking 22 ({@damage 4d10}) lightning damage on a failed save, or half as much damage on a successful one."
+			]
+		}
+	]
+}

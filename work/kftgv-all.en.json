@@ -1,0 +1,553 @@
+{
+	"batch": "kftgv-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Animatronic Allosaurus|KFTGV",
+			"s": [
+				"Animatronic Allosaurus"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Arlo Kettletoe (Levels 1-4)|KFTGV",
+			"s": [
+				"Arlo Kettletoe (Levels 1-4)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Arlo Kettletoe (Levels 5-8)|KFTGV",
+			"s": [
+				"Arlo Kettletoe (Levels 5-8)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Arlo Kettletoe (Levels 9-11)|KFTGV",
+			"s": [
+				"Arlo Kettletoe (Levels 9-11)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashen Animated Armor|KFTGV",
+			"s": [
+				"Ashen Animated Armor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashen Flying Sword|KFTGV",
+			"s": [
+				"Ashen Flying Sword"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashen Knight|KFTGV",
+			"s": [
+				"Ashen Knight"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashen Shambling Mound|KFTGV",
+			"s": [
+				"Ashen Shambling Mound"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashen Veteran|KFTGV",
+			"s": [
+				"Ashen Veteran"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ashen Warhorse|KFTGV",
+			"s": [
+				"Ashen Warhorse"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Charmayne Daymore|KFTGV",
+			"hint": {
+				"Spellcasting": "施法",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Multiattack": "多重攻擊",
+				"Elemental Rebuke": "元素斥責"
+			},
+			"s": [
+				"Charmayne Daymore",
+				"(hover)",
+				"Spellcasting",
+				"Charmayne casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):",
+				"Legendary Resistance (3/Day)",
+				"If Charmayne fails a saving throw, she can choose to succeed instead.",
+				"Multiattack",
+				"Charmayne makes three Ashen Burst attacks. She can replace one of these attacks with one use of Spellcasting.",
+				"Ashen Burst",
+				"{@atk ms,rs} {@hit 9} to hit, reach 5 ft. or range 60 ft., one target. {@h}17 ({@damage 5d6}) fire damage.",
+				"Cinder Spite {@recharge 5}",
+				"Charmayne creates a magical explosion of fire centered on a point she can see within 120 feet of herself. Each creature in a 20-foot-radius sphere centered on that point must make a {@dc 17} Dexterity saving throw, taking 35 ({@damage 10d6}) fire damage on a failed save, or half as much damage on a successful one. A Humanoid reduced to 0 hit points by this damage dies and is transformed into a Tiny charcoal figurine.",
+				"Elemental Rebuke",
+				"In response to being hit by an attack, Charmayne utters a word in Ignan, dealing 10 ({@damage 3d6}) fire damage to the attacker. Charmayne then teleports, along with any equipment she is wearing or carrying, up to 30 feet to an unoccupied space she can see, leaving a harmless cloud of ash and embers in the space she just left.",
+				"Fiery Counterspell",
+				"Charmayne interrupts a creature she can see within 60 feet of herself that is casting a spell. If the spell is 4th level or lower, it fails and has no effect. If the spell is 5th level or higher, Charmayne makes an Intelligence check ({@dc 10} + the spell's level). On a success, the spell fails and has no effect. Whatever the spell's level, the caster takes 10 ({@damage 3d6}) fire damage if the spell fails."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Clockwork Defender|KFTGV",
+			"hint": {
+				"Unusual Nature": "異常本質"
+			},
+			"s": [
+				"Clockwork Defender",
+				"natural armor",
+				"Unusual Nature",
+				"The defender doesn't need air, food, drink, or sleep.",
+				"Electrified Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 7 ({@damage 2d6}) lightning damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be {@condition grappled} (escape {@dc 13}). A creature {@condition grappled} by the defender takes the damage again at the start of each of the defender's turns. The defender can have only one creature {@condition grappled} in this way at a time, and the defender can't make Electrified Bite attacks while grappling.",
+				"Light Beam",
+				"The defender emits bright light from its eyes in a 60-foot cone, or it shuts off this light."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Clockwork Observer|KFTGV",
+			"hint": {
+				"Flyby": "飛掠",
+				"Telepathic Bond": "心靈連結",
+				"Unusual Nature": "異常本質",
+				"Shriek": "尖叫"
+			},
+			"s": [
+				"Clockwork Observer",
+				"natural armor",
+				"(hover)",
+				"Flyby",
+				"The observer doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
+				"Telepathic Bond",
+				"While the observer is within 1 mile of its creator, it can magically convey what it sees to its creator, and the two can communicate telepathically.",
+				"Unusual Nature",
+				"The observer doesn't need air, food, drink, or sleep.",
+				"Shriek",
+				"The observer emits a mechanical shriek until the start of its next turn or until it drops to 0 hit points. This shriek can be heard within a range of 300 feet."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Conservatory Student|KFTGV",
+			"s": [
+				"Conservatory Student"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Crimson Helmed Horror|KFTGV",
+			"s": [
+				"Crimson Helmed Horror",
+				"Conjure Sword",
+				"As a bonus action on its first turn in combat, the helmed horror conjures a longsword-sized blade of fire, which appears in its free hand. This sword disappears in a cloud of smoke when the helmed horror drops to 0 hit points."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dr. Cassee Dannell|KFTGV",
+			"s": [
+				"Dr. Cassee Dannell"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Eldritch Horror Hatchling|KFTGV",
+			"s": [
+				"Eldritch Horror Hatchling"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Eliphas Adulare|KFTGV",
+			"s": [
+				"Eliphas Adulare",
+				"Spellcasting (Humanoid or Hybrid Form Only)",
+				"Eliphas casts one of the following spells, using Intelligence as the spellcasting ability (save {@dc 15}):"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Enna Galakiir (Levels 1-4)|KFTGV",
+			"s": [
+				"Enna Galakiir (Levels 1-4)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Enna Galakiir (Levels 5-8)|KFTGV",
+			"s": [
+				"Enna Galakiir (Levels 5-8)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Enna Galakiir (Levels 9-11)|KFTGV",
+			"s": [
+				"Enna Galakiir (Levels 9-11)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fragment of Krokulmar|KFTGV",
+			"s": [
+				"Fragment of Krokulmar",
+				"Psionic Revitalization",
+				"The fragment touches one creature that has 0 hit points in the fragment's space. The target regains 10 hit points, and each creature within 10 feet of the healed creature takes 3 ({@damage 1d6}) psychic damage.",
+				"Squirming Dodge",
+				"Until the start of the fragment's next turn, any attack roll made against the fragment has disadvantage, and the fragment makes saving throws with advantage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Frody Dartwild|KFTGV",
+			"s": [
+				"Frody Dartwild"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gregir Fendelsohn (Levels 1-4)|KFTGV",
+			"s": [
+				"Gregir Fendelsohn (Levels 1-4)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gregir Fendelsohn (Levels 5-8)|KFTGV",
+			"s": [
+				"Gregir Fendelsohn (Levels 5-8)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gregir Fendelsohn (Levels 9-11)|KFTGV",
+			"s": [
+				"Gregir Fendelsohn (Levels 9-11)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Headless Body|KFTGV",
+			"s": [
+				"Headless Body"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ignatius Inkblot|KFTGV",
+			"s": [
+				"Ignatius Inkblot"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jalynvyr Nir'Thinn|KFTGV",
+			"s": [
+				"Jalynvyr Nir'Thinn"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jarazoun|KFTGV",
+			"s": [
+				"Jarazoun"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Joster Mareet|KFTGV",
+			"s": [
+				"Joster Mareet"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Juvenile Eldritch Horror|KFTGV",
+			"hint": {
+				"Spellcasting": "施法"
+			},
+			"s": [
+				"Juvenile Eldritch Horror",
+				"Spellcasting",
+				"The eldritch horror casts one of the following spells, requiring no components and using Intelligence as the spellcasting ability (save {@dc 14}):"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kavoda|KFTGV",
+			"s": [
+				"Kavoda"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "King Jhaeros|KFTGV",
+			"s": [
+				"King Jhaeros"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Markos Delphi|KFTGV",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Psychic Orb": "心靈法球"
+			},
+			"s": [
+				"Markos Delphi",
+				"Spellcasting",
+				"Markos casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 13}):",
+				"Multiattack",
+				"Markos makes two Ceremonial Blade attacks, two Psychic Orb attacks, or one of each.",
+				"Ceremonial Blade",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 3 ({@damage 1d6}) poison damage. If the target is a creature, it must succeed on a {@dc 13} Constitution saving throw or become {@condition poisoned} for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Psychic Orb",
+				"{@atk rs} {@hit 5} to hit, range 60 ft., one creature. {@h}10 ({@damage 2d6 + 3}) psychic damage.",
+				"Swap Space",
+				"Markos targets one Medium or Small creature he can see within 30 feet of himself. The target must succeed on a {@dc 13} Constitution saving throw or it teleports, along with any equipment it is wearing or carrying, exchanging positions with Markos."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Meera Raheer|KFTGV",
+			"s": [
+				"Meera Raheer"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Naevys Tharesso|KFTGV",
+			"s": [
+				"Naevys Tharesso"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Nixylanna Vidorant|KFTGV",
+			"s": [
+				"Nixylanna Vidorant"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Prisoner 13|KFTGV",
+			"hint": {
+				"Antimagic Susceptibility": "反魔法弱點",
+				"Multiattack": "多重攻擊"
+			},
+			"s": [
+				"Prisoner 13",
+				"mountain tattoo",
+				"Antimagic Susceptibility",
+				"In an area of antimagic, Prisoner 13's tattoos and reactions don't function, and she suffers the following modifications to her statistics: her AC becomes 13, she loses her immunity to psychic damage and the charmed condition, and her Tattooed Strike becomes a melee attack that deals 7 ({@damage 1d8 + 3}) bludgeoning damage on a hit.",
+				"Mindlink Tattoos",
+				"Prisoner 13 has telepathic links with dozens of agents operating throughout the land. The links allow Prisoner 13 to communicate telepathically with each of these agents while they are both on the same plane of existence.",
+				"Mountain Tattoo",
+				"Prisoner 13's AC includes her Constitution modifier.",
+				"Shroud Tattoo",
+				"Prisoner 13 can't be targeted by divination spells or any feature that would read her thoughts, and she can't be perceived through magical scrying sensors. She can't be contacted telepathically unless she allows such contact.",
+				"Multiattack",
+				"Prisoner 13 makes two Tattooed Strike attacks.",
+				"Tattooed Strike",
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 60 ft., one target. {@h}12 ({@damage 2d8 + 3}) force damage.",
+				"Firestorm Tattoo {@recharge 5}",
+				"Prisoner 13 magically unleashes flame from the tattoo across her back, filling a 20-foot-radius sphere centered on her. Each other creature in that area must make a {@dc 15} Dexterity saving throw. On a failed save, the creature takes 13 ({@damage 3d8}) fire damage and is knocked {@condition prone}. On a successful save, it takes half as much damage and isn't knocked {@condition prone}.",
+				"River Tattoo",
+				"Prisoner 13 magically ends any effects causing the {@condition grappled} or {@condition restrained} conditions on herself. If she is bound with nonmagical restraints, she slips out of them.",
+				"Readiness",
+				"When a creature Prisoner 13 can see within 60 feet of herself ends its turn, Prisoner 13 makes one Tattooed Strike attack or uses River Tattoo. She can then move up to her speed without provoking opportunity attacks."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rilago|KFTGV",
+			"s": [
+				"Rilago"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sabrina Kilgore (Levels 1-4)|KFTGV",
+			"s": [
+				"Sabrina Kilgore (Levels 1-4)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sabrina Kilgore (Levels 5-8)|KFTGV",
+			"s": [
+				"Sabrina Kilgore (Levels 5-8)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sabrina Kilgore (Levels 9-11)|KFTGV",
+			"s": [
+				"Sabrina Kilgore (Levels 9-11)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sythian Skalderang|KFTGV",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Poisoned Dart": "毒鏢",
+				"Fiendish Rebuke (3/Day)": "邪魔斥責（每日 3 次）"
+			},
+			"s": [
+				"Sythian Skalderang",
+				"Graz'zt's gift",
+				"Spellcasting",
+				"Sythian casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 14}):",
+				"Fear of Frogs and Toads",
+				"Sythian is {@condition frightened} while he is within 20 feet of a frog or a toad (of any size) that he can see.",
+				"Graz'zt's Gift",
+				"Sythian's AC includes his Charisma modifier.",
+				"Multiattack",
+				"Sythian makes two Poisoned Shortsword or Poisoned Dart attacks and uses Whispers of Azzagrat.",
+				"Poisoned Shortsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 5 ({@damage 1d10}) poison damage.",
+				"Poisoned Dart",
+				"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 5 ({@damage 1d10}) poison damage.",
+				"Whispers of Azzagrat",
+				"Each creature in a 15-foot cube originating from Sythian must make a {@dc 14} Wisdom saving throw. On a failed save, a creature takes 18 ({@damage 4d8}) psychic damage and is {@condition incapacitated} until the end of its next turn. On a successful save, the creature takes half as much damage and isn't {@condition incapacitated}.",
+				"Fiendish Rebuke (3/Day)",
+				"Immediately after a creature within 5 feet of Sythian hits him with an attack roll, Sythian forces that creature to make a {@dc 14} Constitution saving throw. The creature takes 14 ({@damage 4d6}) fire damage on a failed saving throw, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "The Stranger|KFTGV",
+			"hint": {
+				"Special Equipment": "特殊裝備",
+				"Magic Resistance": "魔法抗性"
+			},
+			"s": [
+				"The Stranger",
+				"Special Equipment",
+				"The Stranger wears an invisible {@item ring of mind shielding} that thwarts magical attempts to read their thoughts. The Stranger also wears {@item dimensional shackles} but is eager to be rid of them. One touch from Omid's mace-key causes the shackles to fall off, freeing the Stranger.",
+				"Magic Resistance",
+				"The archmage has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tiefling Acrobat|KFTGV",
+			"s": [
+				"Tiefling Acrobat"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tixie Tockworth|KFTGV",
+			"hint": {
+				"Spellcasting": "施法",
+				"Force Field": "力場",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍",
+				"Lightning Discharge": "閃電釋放"
+			},
+			"s": [
+				"Tixie Tockworth",
+				"natural armor",
+				"Spellcasting",
+				"Tockworth casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 14}):",
+				"Force Field",
+				"Tockworth generates a magical force field around herself. This force field has 15 hit points and regains all its hit points at the start of each of Tockworth's turns, but it ceases to function if Tockworth drops to 0 hit points. Any damage Tockworth takes is subtracted from the force field's hit points first. Each time the force field regains hit points, the following conditions end on Tockworth: {@condition grappled}, {@condition restrained}, and {@condition stunned}.",
+				"Multiattack",
+				"Tockworth makes three Shortsword or Lightning Discharge attacks.",
+				"Shortsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 10 ({@damage 3d6}) force damage.",
+				"Lightning Discharge",
+				"{@atk rs} {@hit 6} to hit, range 60 ft., one creature. {@h}16 ({@damage 3d10}) lightning damage.",
+				"Scalding Steam {@recharge 5}",
+				"Tockworth emits a jet of piping-hot steam in a 15-foot cone. Each creature in that cone must make a {@dc 15} Dexterity saving throw, taking 10 ({@damage 3d6}) fire damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tixie's Shield Guardian|KFTGV",
+			"s": [
+				"Tixie's Shield Guardian"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Torgja Stonecrusher (Levels 1-4)|KFTGV",
+			"s": [
+				"Torgja Stonecrusher (Levels 1-4)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Torgja Stonecrusher (Levels 5-8)|KFTGV",
+			"s": [
+				"Torgja Stonecrusher (Levels 5-8)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Torgja Stonecrusher (Levels 9-11)|KFTGV",
+			"s": [
+				"Torgja Stonecrusher (Levels 9-11)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tosh Starling (Levels 1-4)|KFTGV",
+			"s": [
+				"Tosh Starling (Levels 1-4)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tosh Starling (Levels 5-8)|KFTGV",
+			"s": [
+				"Tosh Starling (Levels 5-8)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tosh Starling (Levels 9-11)|KFTGV",
+			"s": [
+				"Tosh Starling (Levels 9-11)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zala Morphus|KFTGV",
+			"s": [
+				"Zala Morphus"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zorhanna Adulare|KFTGV",
+			"s": [
+				"Zorhanna Adulare"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zorhanna's Simulacrum|KFTGV",
+			"s": [
+				"Zorhanna's Simulacrum"
+			]
+		}
+	]
+}

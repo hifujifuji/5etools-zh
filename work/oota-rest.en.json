@@ -1,0 +1,1485 @@
+{
+	"batch": "oota-rest",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Aljanor Keenblade|OOTA",
+			"hint": {
+				"Aljanor Keenblade": "艾爾賈諾·利刃"
+			},
+			"s": [
+				"Aljanor Keenblade"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Amarith Coppervein|OOTA",
+			"hint": {
+				"Amarith Coppervein": "阿瑪瑞絲·銅脈"
+			},
+			"s": [
+				"Amarith Coppervein"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Animated Drow Statue|OOTA",
+			"hint": {
+				"Animated Drow Statue": "活化卓爾雕像"
+			},
+			"s": [
+				"Animated Drow Statue"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Asha Vandree|OOTA",
+			"hint": {
+				"Asha Vandree": "艾莎·凡德里"
+			},
+			"s": [
+				"Asha Vandree"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Awakened Zurkhwood|OOTA",
+			"hint": {
+				"Awakened Zurkhwood": "啟蒙祖克木",
+				"False Appearance": "擬態",
+				"Mute": "啞",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Awakened Zurkhwood",
+				"natural armor",
+				"False Appearance",
+				"While the tree remains motionless, it is indistinguishable from a normal zurkhwood mushroom.",
+				"Mute",
+				"If the awakened zurkhwood was created by a myconid sovereign, it can't speak.",
+				"Slam",
+				"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 3d6 + 4}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Blurg|OOTA",
+			"hint": {
+				"Blurg": "布魯格"
+			},
+			"s": [
+				"Blurg"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Bridesmaid of Zuggtmoy|OOTA",
+			"hint": {
+				"Bridesmaid of Zuggtmoy": "祖格特莫伊的伴娘",
+				"Fungus Stride": "真菌行走",
+				"Hallucination Spores": "幻覺孢子",
+				"Infestation Spores (1/Day)": "寄生孢子（每日 1 次）"
+			},
+			"s": [
+				"Bridesmaid of Zuggtmoy",
+				"natural armor",
+				"Fungus Stride",
+				"Once on its turn, the bridesmaid can use 10 feet of its movement to step magically into one living mushroom or fungus patch within 5 feet and emerge from another within 60 feet of the first one, appearing in an unoccupied space within 5 feet of the second mushroom or fungus patch. The mushrooms and patches must be large or bigger.",
+				"Hallucination Spores",
+				"The bridesmaid ejects spores at one creature it can see within 5 feet of it. The target must succeed on a {@dc 10} Constitution saving throw or be {@condition poisoned} for 1 minute. While {@condition poisoned} in this way, the target is {@condition incapacitated}. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Infestation Spores (1/Day)",
+				"The bridesmaid releases spores that burst out in a cloud that fills a 10-foot-radius sphere centered on it, and the cloud lingers for 1 minute. Any flesh-and-blood creature in the cloud when it appears, or that enters it later, must make a {@dc 10} Constitution saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the spores of Zuggtmoy and also gains a random form of indefinite madness (determined by rolling on the Madness of Zuggtmoy table in appendix D) that lasts until the creature is cured of the disease or dies. While infected in this way, the creature can't be reinfected, and it must be repeat the saving throw at the end of every 24 hours, ending the infection on a success. On a failure, the infected creature's body is slowly taken over by fungal growth, and after three such failed saves, the creature dies and is reanimated as a spore servant if it's a type of creature that can be (see the \"Myconids\" entry in the Monster Manual)."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Buppido|OOTA",
+			"hint": {
+				"Buppido": "布皮多"
+			},
+			"s": [
+				"Buppido"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Cave Badger|OOTA",
+			"hint": {
+				"Cave Badger": "洞穴獾"
+			},
+			"s": [
+				"Cave Badger",
+				"natural armor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chamberlain of Zuggtmoy|OOTA",
+			"hint": {
+				"Chamberlain of Zuggtmoy": "祖格特莫伊的內侍",
+				"Mushroom Portal": "蘑菇傳送門",
+				"Poison Spores": "劇毒孢子",
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊",
+				"Infestation Spores (1/Day)": "寄生孢子（每日 1 次）"
+			},
+			"s": [
+				"Chamberlain of Zuggtmoy",
+				"natural armor",
+				"Mushroom Portal",
+				"The chamberlain counts as a mushroom for the Fungus Stride feature of the bridesmaid of Zuggtmoy.",
+				"Poison Spores",
+				"Whenever the chamberlain takes damage, it releases a cloud of spores. Creatures within 5 feet of the chamberlain when this happens must succeed on a {@dc 12} Constitution saving throw or be {@condition poisoned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.",
+				"Multiattack",
+				"The chamberlain makes two slam attacks.",
+				"Slam",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage.",
+				"Infestation Spores (1/Day)",
+				"The chamberlain releases spores that burst out in a cloud that fills a 10-foot-radius sphere centered on it, and the cloud lingers for 1 minute. Any flesh-and-blood creature in the cloud when it appears, or that enters it later, must make a {@dc 12} Constitution saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the spores of Zuggtmoy and also gains a random form of indefinite madness (determined by rolling on the Madness of Zuggtmoy table in appendix D) that lasts until the creature is cured of the disease or dies. While infected in this way, the creature can't be reinfected, and it must be repeat the saving throw at the end of every 24 hours, ending the infection on a success. On a failure, the infected creature's body is slowly taken over by fungal growth, and after three such failed saves, the creature dies and is reanimated as a spore servant if it's a type of creature that can be (see the \"Myconids\" entry in the Monster Manual)."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Chuul Spore Servant|OOTA",
+			"hint": {
+				"Chuul Spore Servant": "甲伏怪孢子僕從",
+				"Multiattack": "多重攻擊",
+				"Pincer": "鉗擊"
+			},
+			"s": [
+				"Chuul Spore Servant",
+				"natural armor",
+				"Multiattack",
+				"The spore servant makes two pincer attacks.",
+				"Pincer",
+				"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage. The target is {@condition grappled} (Escape {@dc 14}) if it is a Large or smaller creature and the spore servant doesn't have two other creatures {@condition grappled}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Deepking Horgar Steelshadow V|OOTA",
+			"hint": {
+				"Deepking Horgar Steelshadow V": "深淵之王霍加·鋼影五世",
+				"Duergar Resilience": "灰矮人韌性",
+				"Sunlight Sensitivity": "日光敏感",
+				"Gauntlets of Ogre Power": "食人魔力量護手",
+				"Brave": "勇敢",
+				"Enlarge (Recharges after a Short or Long Rest)": "變巨（短休或長休後充能）",
+				"Invisibility (Recharges after a Short or Long Rest)": "隱形（短休或長休後充能）",
+				"Multiattack": "多重攻擊",
+				"+2 Warhammer": "+2 戰錘",
+				"Heavy Crossbow": "重弩",
+				"Leadership (Recharges after a Short or Long Rest)": "領導（短休或長休後充能）",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Deepking Horgar Steelshadow V",
+				"Duergar Resilience",
+				"Horgar has advantage on saving throws against poison, spells, and illusions, as well as to resist being {@condition charmed} or {@condition paralyzed}.",
+				"Sunlight Sensitivity",
+				"While in sunlight, Horgar has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Gauntlets of Ogre Power",
+				"Horgar wields {@item Gauntlets of Ogre Power} giving him a Strength score of 19 (+4).",
+				"Brave",
+				"Horgar has advantage on saving throws against being {@condition frightened}.",
+				"Enlarge (Recharges after a Short or Long Rest)",
+				"For 1 minute, Horgar magically increases in size, along with anything he is wearing or carrying. While enlarged, Horgar is Large, doubles his damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If Horgar lacks the room to become Large, he attains the maximum size possible in the space available.",
+				"Invisibility (Recharges after a Short or Long Rest)",
+				"Horgar magically turns {@condition invisible} until he attacks, casts a spell, or uses his Enlarge, or until his {@status concentration} is broken, up to 1 hour (as if {@status concentration||concentrating} on a spell). Any equipment Horgar wears or carries is {@condition invisible} with him.",
+				"Multiattack",
+				"Horgar makes two melee attacks.",
+				"+2 Warhammer",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) bludgeoning damage, or 11 ({@damage 1d10 + 6}) bludgeoning damage if used with two hands. While Horgar is enlarged, the damage increases to 15 ({@damage 2d8 + 6}) or 17 ({@damage 2d10 + 6}) bludgeoning damage, respectively.",
+				"Heavy Crossbow",
+				"{@atk rw} {@hit 2} to hit, range 100/400 ft., one target. {@h}5 ({@damage 1d10}) piercing damage.",
+				"Leadership (Recharges after a Short or Long Rest)",
+				"For 1 minute, Horgar can utter a special command or warning whenever a nonhostile creature that he can see within 30 feet of Horgar makes an attack roll or a saving throw. The creature can add a {@dice d4} to its roll provided it can hear and understand Horgar. A creature can benefit from only one Leadership die at a time. This effect ends if Horgar is {@condition incapacitated}.",
+				"Parry",
+				"Horgar adds 2 to its AC against one melee attack that would hit him. To do so, Horgar must see the attacker and be wielding a melee weapon."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Derro|OOTA",
+			"hint": {
+				"Derro": "德洛矮人",
+				"Insanity": "瘋狂",
+				"Magic Resistance": "魔法抗性",
+				"Sunlight Sensitivity": "日光敏感",
+				"Hooked Shortspear": "鉤刃短矛",
+				"Light Repeating Crossbow": "輕型連弩"
+			},
+			"s": [
+				"Derro",
+				"Insanity",
+				"The derro has advantage on saving throws against being {@condition charmed} or {@condition frightened}.",
+				"Magic Resistance",
+				"The derro has advantage on saving throws against spells and other magical effects.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the derro has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Hooked Shortspear",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d4 - 1}) piercing damage. If the target is a creature, the derro can choose to deal no damage and try to trip the target instead, in which case the target must succeed on a {@dc 9} Strength saving throw or fall {@condition prone}.",
+				"Light Repeating Crossbow",
+				"{@atk rw} {@hit 4} to hit, range 40/160 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Derro Savant|OOTA",
+			"hint": {
+				"Derro Savant": "德洛矮人學者",
+				"Spellcasting": "施法"
+			},
+			"s": [
+				"Derro Savant",
+				"Spellcasting",
+				"The derro savant is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The derro knows the following sorcerer spells:"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Droki|OOTA",
+			"hint": {
+				"Droki": "德洛奇",
+				"Innate Spellcasting": "天生施法",
+				"Special Equipment": "特殊裝備",
+				"Insanity": "瘋狂",
+				"Sneak Attack (1/Turn)": "偷襲（每回合 1 次）",
+				"Magic Resistance": "魔法抗性",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Droki",
+				"(60 ft. with boots of speed)",
+				"Innate Spellcasting",
+				"Droki's innate spellcasting ability is Charisma (spell save {@dc 13}). He can innately cast the following spells, requiring no material components:",
+				"Special Equipment",
+				"Droki wears {@item boots of speed}.",
+				"Insanity",
+				"Droki has advantage on saving throws against being {@condition charmed} or {@condition frightened}.",
+				"Sneak Attack (1/Turn)",
+				"Droki deals an extra 7 ({@damage 2d6}) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Droki that isn't {@condition incapacitated} and Droki doesn't have disadvantage on the attack roll.",
+				"Magic Resistance",
+				"The derro has advantage on saving throws against spells and other magical effects.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the derro has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Multiattack",
+				"Droki makes two attacks with his shortsword",
+				"Shortsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage. The sword is coated with serpent venom that wears off after the first hit. A target subjected to the venom must make a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one.",
+				"Parry",
+				"Droki adds 3 to his AC against one melee attack that would hit him. To do so, Droki must see the attacker and be wielding a melee weapon."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Drow Acolyte|OOTA",
+			"hint": {
+				"Drow Acolyte": "卓爾侍僧"
+			},
+			"s": [
+				"Drow Acolyte"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Drow Assassin|OOTA",
+			"hint": {
+				"Drow Assassin": "卓爾刺客"
+			},
+			"s": [
+				"Drow Assassin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Drow Bandit|OOTA",
+			"hint": {
+				"Drow Bandit": "卓爾強盜"
+			},
+			"s": [
+				"Drow Bandit"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Drow Commoner|OOTA",
+			"hint": {
+				"Drow Commoner": "卓爾平民"
+			},
+			"s": [
+				"Drow Commoner"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Drow Cultist|OOTA",
+			"hint": {
+				"Drow Cultist": "卓爾邪教徒"
+			},
+			"s": [
+				"Drow Cultist"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Drow Guard|OOTA",
+			"hint": {
+				"Drow Guard": "卓爾衛兵"
+			},
+			"s": [
+				"Drow Guard"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Drow Noble|OOTA",
+			"hint": {
+				"Drow Noble": "卓爾貴族"
+			},
+			"s": [
+				"Drow Noble"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Drow Scout|OOTA",
+			"hint": {
+				"Drow Scout": "卓爾斥侯"
+			},
+			"s": [
+				"Drow Scout"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Drow Spore Servant|OOTA",
+			"hint": {
+				"Drow Spore Servant": "卓爾孢子僕從",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Drow Spore Servant",
+				"Shortsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Drow Spy|OOTA",
+			"hint": {
+				"Drow Spy": "卓爾密探"
+			},
+			"s": [
+				"Drow Spy"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Duergar Alchemist|OOTA",
+			"hint": {
+				"Duergar Alchemist": "灰矮人鍊金術士"
+			},
+			"s": [
+				"Duergar Alchemist"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Duergar Darkhaft|OOTA",
+			"hint": {
+				"Duergar Darkhaft": "灰矮人暗柄",
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Duergar Resilience": "灰矮人韌性",
+				"Sunlight Sensitivity": "日光敏感",
+				"Enlarge (Recharges after a Short or Long Rest)": "變巨（短休或長休後充能）",
+				"War Pick": "戰鎬",
+				"Javelin": "標槍",
+				"Invisibility (Recharges after a Short or Long Rest)": "隱形（短休或長休後充能）"
+			},
+			"s": [
+				"Duergar Darkhaft",
+				"Innate Spellcasting (Psionics)",
+				"The darkhaft's innate spellcasting ability is Intelligence (spell save {@dc 10}) it can innately cast the following spells, requiring no components:",
+				"Duergar Resilience",
+				"The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being {@condition charmed} or {@condition paralyzed}.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Enlarge (Recharges after a Short or Long Rest)",
+				"For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available.",
+				"War Pick",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage, or 11 ({@damage 2d8 + 2}) piercing damage while enlarged.",
+				"Javelin",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 9 ({@damage 2d6 + 2}) piercing damage while enlarged.",
+				"Invisibility (Recharges after a Short or Long Rest)",
+				"The duergar magically turns {@condition invisible} until it attacks, casts a spell, or uses its Enlarge, or until its {@status concentration} is broken, up to 1 hour (as if {@status concentration||concentrating} on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Duergar Keeper of the Flame|OOTA",
+			"hint": {
+				"Duergar Keeper of the Flame": "灰矮人護焰者",
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Spellcasting": "施法",
+				"Duergar Resilience": "灰矮人韌性",
+				"Sunlight Sensitivity": "日光敏感",
+				"Enlarge (Recharges after a Short or Long Rest)": "變巨（短休或長休後充能）",
+				"War Pick": "戰鎬",
+				"Javelin": "標槍",
+				"Invisibility (Recharges after a Short or Long Rest)": "隱形（短休或長休後充能）"
+			},
+			"s": [
+				"Duergar Keeper of the Flame",
+				"Innate Spellcasting (Psionics)",
+				"The Keeper of the Flame's innate spellcasting ability is Wisdom (spell save {@dc 12}.) It can innately cast the following spells, requiring no components:",
+				"Spellcasting",
+				"The Keeper of the Flame is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The Keeper of the Flame has the following cleric spells prepared:",
+				"Duergar Resilience",
+				"The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being {@condition charmed} or {@condition paralyzed}.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Enlarge (Recharges after a Short or Long Rest)",
+				"For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available.",
+				"War Pick",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage, or 11 ({@damage 2d8 + 2}) piercing damage while enlarged.",
+				"Javelin",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 9 ({@damage 2d6 + 2}) piercing damage while enlarged.",
+				"Invisibility (Recharges after a Short or Long Rest)",
+				"The duergar magically turns {@condition invisible} until it attacks, casts a spell, or uses its Enlarge, or until its {@status concentration} is broken, up to 1 hour (as if {@status concentration||concentrating} on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Duergar Spore Servant|OOTA",
+			"hint": {
+				"Duergar Spore Servant": "灰矮人孢子僕從",
+				"War Pick": "戰鎬"
+			},
+			"s": [
+				"Duergar Spore Servant",
+				"War Pick",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Eldeth Feldrun|OOTA",
+			"hint": {
+				"Eldeth Feldrun": "艾爾黛絲·費爾德倫"
+			},
+			"s": [
+				"Eldeth Feldrun"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Emerald Enclave Scout|OOTA",
+			"hint": {
+				"Emerald Enclave Scout": "翡翠飛地斥侯",
+				"Dwarven Resilience": "矮人韌性",
+				"Keen Hearing and Sight": "敏銳聽覺與視覺",
+				"Multiattack": "多重攻擊",
+				"War Pick": "戰鎬",
+				"Heavy Crossbow": "重弩"
+			},
+			"s": [
+				"Emerald Enclave Scout",
+				"Dwarven Resilience",
+				"The scout has advantage on saving throws against poison.",
+				"Keen Hearing and Sight",
+				"The scout has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight.",
+				"Multiattack",
+				"The scout makes two melee attacks.",
+				"War Pick",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage.",
+				"Heavy Crossbow",
+				"{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}5 ({@damage 1d10}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Female Steeder|OOTA",
+			"hint": {
+				"Female Steeder": "雌性騎蛛",
+				"Spider Climb": "蛛行",
+				"Leap": "跳躍",
+				"Bite": "啃咬",
+				"Sticky Leg (Recharges when the Steeder Has No Creatures Grappled)": "黏性腿（雌性騎蛛未擒抱任何生物時充能）"
+			},
+			"s": [
+				"Female Steeder",
+				"natural armor",
+				"Spider Climb",
+				"The steeder can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Leap",
+				"The steeder can expend all its movement on its turn to jump up to 90 feet vertically or horizontally, provided that its speed is at least 30 feet.",
+				"Bite",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target must make a {@dc 12} Constitution saving throw, taking 9 ({@damage 2d8}) acid damage on a failed save, or half as much damage on a successful one.",
+				"Sticky Leg (Recharges when the Steeder Has No Creatures Grappled)",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one Medium or smaller creature. {@h}The target is stuck to the steeder's leg and {@condition grappled} until it escapes (escape {@dc 12})."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Fiendish Giant Spider|OOTA",
+			"hint": {
+				"Fiendish Giant Spider": "邪魔巨蜘蛛"
+			},
+			"s": [
+				"Fiendish Giant Spider"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Four-Armed Statue|OOTA",
+			"hint": {
+				"Four-Armed Statue": "四臂雕像"
+			},
+			"s": [
+				"Four-Armed Statue"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Gash|OOTA",
+			"hint": {
+				"Gash": "加許"
+			},
+			"s": [
+				"Gash"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ghazrim DuLoc|OOTA",
+			"hint": {
+				"Ghazrim DuLoc": "加茲林·杜洛克"
+			},
+			"s": [
+				"Ghazrim DuLoc"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Riding Lizard|OOTA",
+			"hint": {
+				"Giant Riding Lizard": "巨騎乘蜥蜴",
+				"Spider Climb": "蛛行",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Riding Lizard",
+				"natural armor",
+				"Spider Climb",
+				"The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Rocktopus|OOTA",
+			"hint": {
+				"Giant Rocktopus": "巨岩章魚"
+			},
+			"s": [
+				"Giant Rocktopus"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Glabbagool|OOTA",
+			"hint": {
+				"Glabbagool": "格拉巴古"
+			},
+			"s": [
+				"Glabbagool"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Glyphic Shroomlight|OOTA",
+			"hint": {
+				"Glyphic Shroomlight": "葛利菲克·菇光"
+			},
+			"s": [
+				"Glyphic Shroomlight"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Grazilaxx|OOTA",
+			"hint": {
+				"Grazilaxx": "格拉茲拉克斯"
+			},
+			"s": [
+				"Grazilaxx"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Grisha|OOTA",
+			"hint": {
+				"Grisha": "格里夏",
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"+1 Flail": "+1 連枷"
+			},
+			"s": [
+				"Grisha",
+				"Spellcasting",
+				"Grisha is a 6th-level-spellcaster. His spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). He has the following cleric spells prepared:",
+				"Multiattack",
+				"Grisha makes two attacks with his +1 flail.",
+				"+1 Flail",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hanne Hallen|OOTA",
+			"hint": {
+				"Hanne Hallen": "漢娜·哈倫"
+			},
+			"s": [
+				"Hanne Hallen",
+				"with {@spell mage armor}"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hook Horror Spore Servant|OOTA",
+			"hint": {
+				"Hook Horror Spore Servant": "恐爪怪孢子僕從",
+				"Multiattack": "多重攻擊",
+				"Hook": "鉤擊"
+			},
+			"s": [
+				"Hook Horror Spore Servant",
+				"natural armor",
+				"Multiattack",
+				"The spore servant makes two hook attacks.",
+				"Hook",
+				"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ilvara Mizzrym|OOTA",
+			"hint": {
+				"Ilvara Mizzrym": "伊爾瓦拉·米茲林"
+			},
+			"s": [
+				"Ilvara Mizzrym"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Infant Basilisk|OOTA",
+			"hint": {
+				"Infant Basilisk": "幼年石化蜥蜴",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Infant Basilisk",
+				"natural armor",
+				"Bite",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 piercing damage plus 1 poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Infant Hook Horror|OOTA",
+			"hint": {
+				"Infant Hook Horror": "幼年恐爪怪"
+			},
+			"s": [
+				"Infant Hook Horror",
+				"natural armor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ixitxachitl|OOTA",
+			"hint": {
+				"Ixitxachitl": "魔鬼魟",
+				"Bite": "啃咬",
+				"Barbed Tail": "倒刺尾"
+			},
+			"s": [
+				"Ixitxachitl",
+				"natural armor",
+				"Bite",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage.",
+				"Barbed Tail",
+				"When a creature provokes an opportunity attack from the ixitxachitl, the ixitxachitl can make the following attack instead of using its bite.",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ixitxachitl Cleric|OOTA",
+			"hint": {
+				"Ixitxachitl Cleric": "魔鬼魟牧師",
+				"Spellcasting": "施法",
+				"Bite": "啃咬",
+				"Barbed Tail": "倒刺尾"
+			},
+			"s": [
+				"Ixitxachitl Cleric",
+				"natural armor",
+				"Spellcasting",
+				"The ixitxachitl is a 5th-level spellcaster that uses Wisdom as its spellcasting ability (spell save {@dc 11}, {@hit 3} to hit with spell attacks). The ixitxachitl has the following cleric spells prepared:",
+				"Bite",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage.",
+				"Barbed Tail",
+				"When a creature provokes an opportunity attack from the ixitxachitl, the ixitxachitl can make the following attack instead of using its bite.",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jade Giant Spider|OOTA",
+			"hint": {
+				"Jade Giant Spider": "翡翠巨蜘蛛"
+			},
+			"s": [
+				"Jade Giant Spider"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Jimjar|OOTA",
+			"hint": {
+				"Jimjar": "金賈"
+			},
+			"s": [
+				"Jimjar"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Juvenile Hook Horror|OOTA",
+			"hint": {
+				"Juvenile Hook Horror": "青年恐爪怪"
+			},
+			"s": [
+				"Juvenile Hook Horror",
+				"natural armor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Khalessa Draga|OOTA",
+			"hint": {
+				"Khalessa Draga": "卡蕾莎·德拉加",
+				"Innate Spellcasting": "天生施法"
+			},
+			"s": [
+				"Khalessa Draga",
+				"Innate Spellcasting",
+				"Khalessa can innately cast the following spell, requiring no material components:"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kinyel Druu'giir|OOTA",
+			"hint": {
+				"Kinyel Druu'giir": "金耶爾·德魯吉爾"
+			},
+			"s": [
+				"Kinyel Druu'giir"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Kurr|OOTA",
+			"hint": {
+				"Kurr": "庫爾"
+			},
+			"s": [
+				"Kurr"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lords' Alliance Guard|OOTA",
+			"hint": {
+				"Lords' Alliance Guard": "領主聯盟衛兵",
+				"Dwarven Resilience": "矮人韌性",
+				"Halberd": "斧槍"
+			},
+			"s": [
+				"Lords' Alliance Guard",
+				"Dwarven Resilience",
+				"The guard has advantage on saving throws against poison.",
+				"Halberd",
+				"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d10 + 2}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lords' Alliance Spy|OOTA",
+			"hint": {
+				"Lords' Alliance Spy": "領主聯盟密探",
+				"Cunning Action": "巧妙動作",
+				"Sneak Attack (1/Turn)": "偷襲（每回合 1 次）",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍",
+				"Hand Crossbow": "手弩"
+			},
+			"s": [
+				"Lords' Alliance Spy",
+				"Cunning Action",
+				"On each of its turns, the spy can use a bonus action to take the {@action Dash}, {@action Disengage}, or {@action Hide} action.",
+				"Sneak Attack (1/Turn)",
+				"The spy deals an extra 7 ({@damage 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't {@condition incapacitated} and the spy doesn't have disadvantage on the attack roll.",
+				"Multiattack",
+				"The spy makes two melee attacks.",
+				"Shortsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage.",
+				"Hand Crossbow",
+				"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lorthuun|OOTA",
+			"hint": {
+				"Lorthuun": "洛爾圖恩"
+			},
+			"s": [
+				"Lorthuun"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Male Steeder|OOTA",
+			"hint": {
+				"Male Steeder": "雄性騎蛛",
+				"Spider Climb": "蛛行",
+				"Leap": "跳躍",
+				"Bite": "啃咬",
+				"Sticky Leg (Recharges when the Steeder Has No Creatures Grappled)": "黏性腿（雌性騎蛛未擒抱任何生物時充能）"
+			},
+			"s": [
+				"Male Steeder",
+				"natural armor",
+				"Spider Climb",
+				"The steeder can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Leap",
+				"The steeder can expend all its movement on its turn to jump up to 60 feet vertically or horizontally, provided that its speed is at least 30 feet.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 2}) piercing damage, and the target must make a {@dc 12} Constitution saving throw, taking 4 ({@damage 1d8}) acid damage on a failed save, or half as much damage on a successful one.",
+				"Sticky Leg (Recharges when the Steeder Has No Creatures Grappled)",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one Small or Tiny creature. {@h}The target is stuck to the steeder's leg and {@condition grappled} until it escapes (escape {@dc 12})."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Mev Flintknapper|OOTA",
+			"hint": {
+				"Mev Flintknapper": "梅芙·燧石匠"
+			},
+			"s": [
+				"Mev Flintknapper"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Narrak|OOTA",
+			"hint": {
+				"Narrak": "納拉克",
+				"Spellcasting": "施法",
+				"Insanity": "瘋狂",
+				"Magic Resistance": "魔法抗性",
+				"Sunlight Sensitivity": "日光敏感",
+				"Armor of Shadows (Recharges after a Short or Long Rest)": "暗影護甲（短休或長休後充能）",
+				"Shortsword": "短劍",
+				"One with Shadows": "與影同化"
+			},
+			"s": [
+				"Narrak",
+				"with {@spell mage armor}",
+				"Spellcasting",
+				"Narrak is a 5th-level spellcaster. His spellcasting ability is Charisma (Save {@dc 13}, {@hit 5} to hit with spell attacks) Narrak has two 2nd-level spell slots, which he regains after finishing a short or long rest, and knows the following warlock spells:",
+				"Insanity",
+				"Narrak has advantage on saving throws against being {@condition charmed} or {@condition frightened}.",
+				"Magic Resistance",
+				"Narrak has advantage on saving throws against spells and other magical effects.",
+				"Sunlight Sensitivity",
+				"While in sunlight, Narrak has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Armor of Shadows (Recharges after a Short or Long Rest)",
+				"Narrak casts {@spell mage armor} on himself",
+				"Shortsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage.",
+				"One with Shadows",
+				"While he is in a dim light or darkness, Narrak can become {@condition invisible}. He remains so until he moves or takes an action or reaction."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ougalop|OOTA",
+			"hint": {
+				"Ougalop": "奧加洛普"
+			},
+			"s": [
+				"Ougalop"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Peebles|OOTA",
+			"hint": {
+				"Peebles": "皮博斯"
+			},
+			"s": [
+				"Peebles"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Prince Derendil|OOTA",
+			"hint": {
+				"Prince Derendil": "德倫迪爾王子"
+			},
+			"s": [
+				"Prince Derendil"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Princess Ebonmire|OOTA",
+			"hint": {
+				"Princess Ebonmire": "黑沼公主",
+				"Pseudopod": "偽足"
+			},
+			"s": [
+				"Princess Ebonmire",
+				"Pseudopod",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or 30 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage plus 18 ({@damage 4d8}) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Quenthel Baenre|OOTA",
+			"hint": {
+				"Quenthel Baenre": "昆索·班瑞",
+				"Innate Spellcasting": "天生施法",
+				"Spellcasting": "施法"
+			},
+			"s": [
+				"Quenthel Baenre",
+				"Innate Spellcasting",
+				"Quenthel's spellcasting ability is Charisma (spell save {@dc 19}). She can innately cast the following spells, requiring no material components:",
+				"Spellcasting",
+				"Quenthel is a 20th-level spellcaster. Her spellcasting ability is Wisdom (save {@dc 20}, {@hit 12} to hit with spell attacks). Quenthel can cast any {@filter cleric spell up to 9th level|spells|level=0;1;2;3;4;5;6;7;8;9|class=cleric} at will."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Regenerating Black Pudding|OOTA",
+			"hint": {
+				"Regenerating Black Pudding": "再生黑布丁"
+			},
+			"s": [
+				"Regenerating Black Pudding"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rihuud|OOTA",
+			"hint": {
+				"Rihuud": "里胡德"
+			},
+			"s": [
+				"Rihuud"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Ront|OOTA",
+			"hint": {
+				"Ront": "朗特"
+			},
+			"s": [
+				"Ront"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rumpadump|OOTA",
+			"hint": {
+				"Rumpadump": "朗帕當普"
+			},
+			"s": [
+				"Rumpadump"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Rystia Zav|OOTA",
+			"hint": {
+				"Rystia Zav": "瑞絲緹亞·札夫"
+			},
+			"s": [
+				"Rystia Zav"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sarith Kzekarit|OOTA",
+			"hint": {
+				"Sarith Kzekarit": "薩瑞斯·克澤卡里特"
+			},
+			"s": [
+				"Sarith Kzekarit"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shedrak of the Eyes|OOTA",
+			"hint": {
+				"Shedrak of the Eyes": "眼之謝德拉克",
+				"Eye Tattoos": "眼睛刺青"
+			},
+			"s": [
+				"Shedrak of the Eyes",
+				"Eye Tattoos",
+				"Shedrak has ten small eyes tattooed on his bald head that allow him to see {@condition invisible} creatures and objects as if they were visible."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Shuushar the Awakened|OOTA",
+			"hint": {
+				"Shuushar the Awakened": "覺醒者舒夏"
+			},
+			"s": [
+				"Shuushar the Awakened"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skriss|OOTA",
+			"hint": {
+				"Skriss": "斯克里斯"
+			},
+			"s": [
+				"Skriss"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sladis Vadir|OOTA",
+			"hint": {
+				"Sladis Vadir": "斯拉迪斯·瓦迪爾"
+			},
+			"s": [
+				"Sladis Vadir"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sloopidoop|OOTA",
+			"hint": {
+				"Sloopidoop": "斯盧比杜普"
+			},
+			"s": [
+				"Sloopidoop"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sovereign Basidia|OOTA",
+			"hint": {
+				"Sovereign Basidia": "巴西迪亞王"
+			},
+			"s": [
+				"Sovereign Basidia"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spider King|OOTA",
+			"hint": {
+				"Spider King": "蜘蛛王"
+			},
+			"s": [
+				"Spider King"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spiderbait|OOTA",
+			"hint": {
+				"Spiderbait": "蛛餌"
+			},
+			"s": [
+				"Spiderbait"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Stool|OOTA",
+			"hint": {
+				"Stool": "小凳"
+			},
+			"s": [
+				"Stool"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Svirfneblin Wererat|OOTA",
+			"hint": {
+				"Svirfneblin Wererat": "斯奈布力鼠人"
+			},
+			"s": [
+				"Svirfneblin Wererat"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "The Pudding King|OOTA",
+			"hint": {
+				"The Pudding King": "布丁王",
+				"Innate Spellcasting": "天生施法",
+				"Spellcasting": "施法",
+				"Stone Camouflage": "岩石偽裝",
+				"Gnome Cunning": "地侏狡黠",
+				"Insanity": "瘋狂",
+				"War Pick": "戰鎬",
+				"Change Shape": "變形",
+				"Create Green Slime (Recharges after a Long Rest)": "創造綠黏液（長休後充能）"
+			},
+			"s": [
+				"The Pudding King",
+				"with {@spell mage armor}",
+				"Innate Spellcasting",
+				"The Pudding King's innate spellcasting ability is Intelligence (spell save {@dc 12}). He can innately cast the following spells, requiring no material components:",
+				"Spellcasting",
+				"The Pudding King is a 9th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The Pudding King knows the following sorcerer spells:",
+				"Stone Camouflage",
+				"The Pudding King has advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain.",
+				"Gnome Cunning",
+				"The Pudding King has advantage on Intelligence, Wisdom, and Charisma saving throws against magic.",
+				"Insanity",
+				"The Pudding King has advantage on saving throws against being {@condition charmed} or {@condition frightened}.",
+				"War Pick",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) piercing damage.",
+				"Change Shape",
+				"The Pudding King magically transforms into an {@filter ooze|bestiary|type=ooze}, or back into his true form. He reverts to his true form if he dies. Any equipment he is wearing or carrying is absorbed by the new form. In ooze form, the Pudding King retains his alignment, hit points, Hit Dice, and Intelligence, Wisdom, and Charisma scores, as well as this action. His statistics and capabilities are otherwise replaced by those of the new form.",
+				"Create Green Slime (Recharges after a Long Rest)",
+				"The Pudding King creates a patch of green slime (see \"Dungeon Hazards\" in chapter 5 of the Dungeon Master's Guide). The slime appears on a section of wall, ceiling, or floor within 30 feet of the Pudding King."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Themberchaud|OOTA",
+			"hint": {
+				"Themberchaud": "瑟姆伯查德"
+			},
+			"s": [
+				"Themberchaud"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Topsy|OOTA",
+			"hint": {
+				"Topsy": "托普西"
+			},
+			"s": [
+				"Topsy"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Troglodyte Champion of Laogzed|OOTA",
+			"hint": {
+				"Troglodyte Champion of Laogzed": "勞格澤德的戰蜥人勇士",
+				"Chameleon Skin": "變色皮膚",
+				"Stench": "惡臭",
+				"Sunlight Sensitivity": "日光敏感",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claw": "爪擊",
+				"Greatclub": "巨棍",
+				"Acid Spray {@recharge}": "強酸噴射 {@recharge}"
+			},
+			"s": [
+				"Troglodyte Champion of Laogzed",
+				"natural armor",
+				"Chameleon Skin",
+				"The troglodyte has advantage on Dexterity ({@skill Stealth}) checks made to hide.",
+				"Stench",
+				"Any creature other than a troglodyte that starts its turn within 5 feet of the troglodyte must succeed on a {@dc 14} Constitution saving throw or be {@condition poisoned} until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour.",
+				"Sunlight Sensitivity",
+				"While in sunlight, the troglodyte has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+				"Multiattack",
+				"The troglodyte makes three attacks: one with its bite and two with either its claws or its greatclub.",
+				"Bite",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage.",
+				"Claw",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) slashing damage.",
+				"Greatclub",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage.",
+				"Acid Spray {@recharge}",
+				"The troglodyte spits acid in a line 15 feet long and 5 feet wide. Each creature in that line must make a {@dc 14} Dexterity saving throw, taking 10 ({@damage 3d6}) acid damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Turvy|OOTA",
+			"hint": {
+				"Turvy": "特維"
+			},
+			"s": [
+				"Turvy"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Two-Headed Troll|OOTA",
+			"hint": {
+				"Two-Headed Troll": "雙頭巨魔",
+				"Extra Bite": "額外啃咬"
+			},
+			"s": [
+				"Two-Headed Troll",
+				"Extra Bite",
+				"As part of its Multiattack routine, the troll can make a Bite attack."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vampiric Ixitxachitl|OOTA",
+			"hint": {
+				"Vampiric Ixitxachitl": "吸血魔鬼魟",
+				"Vampiric Bite": "吸血啃咬",
+				"Barbed Tail": "倒刺尾"
+			},
+			"s": [
+				"Vampiric Ixitxachitl",
+				"natural armor",
+				"Vampiric Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. The target must succeed on a {@dc 11} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken, and the ixitxachitl regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0.",
+				"Barbed Tail",
+				"When a creature provokes an opportunity attack from the ixitxachitl, the ixitxachitl can make the following attack instead of using its bite.",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vampiric Ixitxachitl Cleric|OOTA",
+			"hint": {
+				"Vampiric Ixitxachitl Cleric": "吸血魔鬼魟牧師",
+				"Spellcasting": "施法",
+				"Vampiric Bite": "吸血啃咬",
+				"Barbed Tail": "倒刺尾"
+			},
+			"s": [
+				"Vampiric Ixitxachitl Cleric",
+				"natural armor",
+				"Spellcasting",
+				"The ixitxachitl is a 5th-level spellcaster that uses Wisdom as its spellcasting ability (Spell save {@dc 11}, {@hit 3} to hit with spell attacks). The ixitxachitl has the following cleric spells prepared:",
+				"Vampiric Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. The target must succeed on a {@dc 11} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken, and the ixitxachitl regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0.",
+				"Barbed Tail",
+				"When a creature provokes an opportunity attack from the ixitxachitl, the ixitxachitl can make the following attack instead of using its bite.",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Veldyskar|OOTA",
+			"hint": {
+				"Veldyskar": "維爾迪斯卡",
+				"Innate Spellcasting": "天生施法"
+			},
+			"s": [
+				"Veldyskar",
+				"Innate Spellcasting",
+				"Veldyskar can innately cast the following spell, requiring no material components:"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Veteran of the Gauntlet|OOTA",
+			"hint": {
+				"Veteran of the Gauntlet": "鐵腕教團老兵",
+				"Multiattack": "多重攻擊",
+				"Longsword": "長劍",
+				"Shortsword": "短劍",
+				"Heavy Crossbow": "重弩"
+			},
+			"s": [
+				"Veteran of the Gauntlet",
+				"Multiattack",
+				"The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.",
+				"Longsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands.",
+				"Shortsword",
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+				"Heavy Crossbow",
+				"{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Viln Tirin|OOTA",
+			"hint": {
+				"Viln Tirin": "維恩·提林"
+			},
+			"s": [
+				"Viln Tirin"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Vizeran DeVir|OOTA",
+			"hint": {
+				"Vizeran DeVir": "維澤蘭·迪佛"
+			},
+			"s": [
+				"Vizeran DeVir"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Xazax the Eyemonger|OOTA",
+			"hint": {
+				"Xazax the Eyemonger": "眼販子薩札克斯"
+			},
+			"s": [
+				"Xazax the Eyemonger"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Y|OOTA",
+			"s": [
+				"Y"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yantha Coaxrock|OOTA",
+			"hint": {
+				"Yantha Coaxrock": "楊莎·誘岩",
+				"Spellcasting": "施法"
+			},
+			"s": [
+				"Yantha Coaxrock",
+				"Spellcasting",
+				"Yantha is a 5th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 13}). She has the following wizard spells prepared:"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yestabrod|OOTA",
+			"hint": {
+				"Yestabrod": "葉斯塔布羅德",
+				"Legendary Resistance (1/Day)": "傳奇抗性（每日 1 次）",
+				"Slam": "猛擊",
+				"Caustic Spores (1/Day)": "腐蝕孢子（每日 1 次）",
+				"Infestation Spores (1/Day)": "寄生孢子（每日 1 次）",
+				"Corpse Burst": "屍爆",
+				"Foul Absorption": "汙穢吸收"
+			},
+			"s": [
+				"Yestabrod",
+				"natural armor",
+				"Legendary Resistance (1/Day)",
+				"If Yestabrod fails a saving throw, it can choose to succeed instead.",
+				"Slam",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}8 ({@damage 3d4 + 1}) bludgeoning damage plus 7 ({@damage 3d4}) poison damage.",
+				"Caustic Spores (1/Day)",
+				"Yestabrod releases spores in a 30-foot cone. Each creature in that area must succeed on a {@dc 12} Dexterity saving throw or take {@damage 1d6} acid damage at the start of each of Yestabrod's turns. A creature can repeat the saving throw at the end of each of its turn, ending the effect on itself on a success.",
+				"Infestation Spores (1/Day)",
+				"Yestabrod releases spores that burst out in a cloud that fills a 10-foot-radius sphere centered on it, and the cloud lingers for 1 minute. Any flesh-and-blood creature in the cloud when it appears, or that enters it later, must make a {@dc 12} Constitution saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the spores of Zuggtmoy and also gains a random form of indefinite madness (determined by rolling on the Madness of Zuggtmoy table in appendix D) that lasts until the creature is cured of the disease or dies. While infected in this way, the creature can't be reinfected, and it must be repeat the saving throw at the end of every 24 hours, ending the infection on a success. On a failure, the infected creature's body is slowly taken over by fungal growth, and after three such failed saves, the creature dies and is reanimated as a spore servant if it's a type of creature that can be (see the \"Myconids\" entry in the Monster Manual).",
+				"Corpse Burst",
+				"Gore, offal, and acid erupt from a corpse within 20 feet of Yestabrod. Creatures within 10 feet of the corpse must succeed on a {@dc 12} Dexterity saving throw or take 7 ({@damage 2d6}) acid damage.",
+				"Foul Absorption",
+				"Yestabrod absorbs putrescence from a corpse within 5 feet of it, regaining {@dice 1d8 + 2} hit points"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Basilisk|OOTA",
+			"hint": {
+				"Young Basilisk": "少年石化蜥蜴",
+				"Petrifying Gaze": "石化凝視",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Young Basilisk",
+				"natural armor",
+				"Petrifying Gaze",
+				"If a creature starts its turn within 15 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a {@dc 12} Constitution saving throw if the basilisk isn't {@condition incapacitated}. On a failed save, the creature magically begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} until freed by the  {@spell greater restoration} spell or other magic.",
+				"A creature that isn't {@status surprised} can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.",
+				"If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.",
+				"Bite",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage plus 2 ({@damage 1d4}) poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Young Hook Horror|OOTA",
+			"hint": {
+				"Young Hook Horror": "少年恐爪怪"
+			},
+			"s": [
+				"Young Hook Horror",
+				"natural armor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Yuk Yuk|OOTA",
+			"hint": {
+				"Yuk Yuk": "尤克尤克"
+			},
+			"s": [
+				"Yuk Yuk"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zhentarim Thug|OOTA",
+			"hint": {
+				"Zhentarim Thug": "散塔林會暴徒",
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Mace": "硬頭錘",
+				"Heavy Crossbow": "重弩"
+			},
+			"s": [
+				"Zhentarim Thug",
+				"Pack Tactics",
+				"The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"The thug makes two melee attacks",
+				"Mace",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage.",
+				"Heavy Crossbow",
+				"{@atk rw} {@hit 2} to hit, range 100/400 ft., one target. {@h}5 ({@damage 1d10}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Zilchyn Q'Leptin|OOTA",
+			"hint": {
+				"Zilchyn Q'Leptin": "齊爾欽·克雷普丁"
+			},
+			"s": [
+				"Zilchyn Q'Leptin"
+			]
+		}
+	]
+}

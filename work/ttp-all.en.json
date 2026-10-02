@@ -1,0 +1,96 @@
+{
+	"batch": "ttp-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Decapus|TTP",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tentacles": "觸手"
+			},
+			"s": [
+				"Decapus",
+				"natural armor",
+				"Multiattack",
+				"The decapus makes two attacks: one with its bite and one with its tentacles.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature {@condition grappled} by the decapus. {@h}7 ({@damage 2d4 + 2}) piercing damage.",
+				"Tentacles",
+				"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}24 ({@damage 9d4 + 2}) bludgeoning damage or 14 ({@damage 5d4 + 2}) bludgeoning damage if the decapus is grappling a creature other than the target or if the decapus is on the ground or floor. The target is also {@condition grappled} (escape {@dc 14}) unless the decapus is already grappling a creature. Until this grapple ends, the target is {@condition restrained}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Geonid|TTP",
+			"hint": {
+				"Club": "棍棒"
+			},
+			"s": [
+				"Geonid",
+				"natural armor",
+				"Boulder Guise",
+				"While fully withdrawn into its shell, the geonid can't see and is indistinguishable from a small boulder",
+				"Club",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) bludgeoning damage.",
+				"Stone Tell",
+				"The geonid touches a stone object or surface and knows what types of creatures have been within 10 feet of that stone in the past 24 hours. The geonid can also determine the number of creatures of each type, but not their identities."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Giant Slug|TTP",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Keen Smell": "敏銳嗅覺",
+				"Spider Climb": "蛛行",
+				"Multiattack": "多重攻擊",
+				"Tentacles": "觸手",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Giant Slug",
+				"natural armor",
+				"Innate Spellcasting",
+				"The slug's innate spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
+				"Keen Smell",
+				"The slug has advantage on Wisdom ({@skill Perception}) checks that rely on smell.",
+				"Spider Climb",
+				"The slug can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Multiattack",
+				"The slug makes two attacks: one with its tentacles and one with its bite.",
+				"Tentacles",
+				"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}4 ({@damage 1d4 + 2}) poison damage, and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage.",
+				"Animate Tentacle",
+				"When the slug takes damage in this cave ({@adventure Shrine of Umberlee|ttp|3|24. Shrine of Umberlee}), it can use its reaction to animate one of the tentacles of the kraken statue and cause it to   make a melee weapon attack ({@hit 3} to hit) against one creature within 20 feet of the statue that the slug can see. The tentacle deals 8 ({@damage 1d8 + 4}) bludgeoning damage on a hit."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Topi|TTP",
+			"hint": {
+				"Turn Resistance": "抗驅散",
+				"Undead Fortitude": "不死堅韌"
+			},
+			"s": [
+				"Topi",
+				"natural armor",
+				"Turn Resistance",
+				"The topi has advantage on saving throws against any effect that turns undead.",
+				"Undead Fortitude",
+				"If damage reduces the topi to 0 hit points, it must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the topi drops to 1 hit point instead.",
+				"Venomous Claws",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage plus 2 ({@damage 1d4}) poison damage, and the target must succeed on a {@dc 11} Constitution saving throw or be {@condition poisoned} until the end of the target's next turn."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Two-Headed Plesiosaurus|TTP",
+			"s": [
+				"Two-Headed Plesiosaurus"
+			]
+		}
+	]
+}

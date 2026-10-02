@@ -1,0 +1,73 @@
+{
+	"batch": "hol-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Apprentice|HOL",
+			"hint": {
+				"Spellcasting": "施法",
+				"Quarterstaff": "長棍",
+				"Fire Bolt (Cantrip)": "火焰箭（戲法）"
+			},
+			"s": [
+				"Apprentice",
+				"Spellcasting",
+				"You cast one of the following wizard spells (spell save {@dc 11}), using Intelligence as the spellcasting ability:",
+				"Quarterstaff",
+				"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) bludgeoning damage, or 3 ({@damage 1d8 - 1}) bludgeoning damage if used with two hands.",
+				"Burning Hands (1st-Level Spell; 2/Day)",
+				"You shoot forth a 15-foot cone of fire. Each creature in that area must make a {@dc 11} Dexterity saving throw. A creature takes 10 ({@damage 3d6}) fire damage on a failed save, or half as much damage on a successful one The fire ignites any flammable objects in the area that aren't being worn or carried.",
+				"Fire Bolt (Cantrip)",
+				"{@atk rs} Ranged Spell Attack: {@hit 3} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Disciple|HOL",
+			"hint": {
+				"Spellcasting": "施法",
+				"Mace": "硬頭錘",
+				"Sacred Flame (Cantrip)": "聖焰（戲法）"
+			},
+			"s": [
+				"Disciple",
+				"Spellcasting",
+				"You cast one the following cleric spells (spell save {@dc 11}), using Wisdom as the spellcasting ability:",
+				"Mace",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage.",
+				"Sacred Flame (Cantrip)",
+				"You target one creature you can see within 60 feet of you. The target must succeed on a {@dc 11} Dexterity saving throw or take 4 ({@damage 1d8}) radiant damage. The target gains no benefit from cover for this saving throw."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sneak|HOL",
+			"hint": {
+				"Dagger": "匕首",
+				"Disengage": "撤離"
+			},
+			"s": [
+				"Sneak",
+				"Dagger",
+				"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage.",
+				"Disengage",
+				"You take the {@action Disengage} action."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Squire|HOL",
+			"hint": {
+				"Longsword": "長劍",
+				"Shove": "推撞"
+			},
+			"s": [
+				"Squire",
+				"Longsword",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage, or 6 ({@damage 1d10 + 1}) slashing damage if used with two hands.",
+				"Shove",
+				"While wielding a shield, you try to shove one creature within 5 feet of you."
+			]
+		}
+	]
+}

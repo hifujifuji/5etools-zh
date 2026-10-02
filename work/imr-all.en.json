@@ -1,0 +1,453 @@
+{
+	"batch": "imr-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "\"The Demogorgon\"|IMR",
+			"hint": {
+				"Two Heads": "雙頭",
+				"Wakeful": "警醒",
+				"Multiattack": "多重攻擊",
+				"Battleaxe": "戰斧",
+				"Morningstar": "釘頭錘",
+				"Fire Breath {@recharge 5}": "火焰吐息 {@recharge 5}",
+				"Cold Breath {@recharge 5}": "寒冷吐息 {@recharge 5}",
+				"Gaze": "凝視",
+				"Hypnotic Gaze": "催眠凝視"
+			},
+			"s": [
+				"\"The Demogorgon\"",
+				"natural armor",
+				"Two Heads",
+				"The ettin has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}.",
+				"Wakeful",
+				"When one of the ettin's heads is asleep, its other head is awake.",
+				"Multiattack",
+				"The ettin makes two attacks: one with its battleaxe and one with its morningstar.",
+				"Battleaxe",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage.",
+				"Morningstar",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage.",
+				"Fire Breath {@recharge 5}",
+				"The ettin's right head exhales fire in a 30-foot cone. Each creature in that area must make a {@dc 14} Dexterity saving throw, taking 45 ({@damage 10d8}) fire damage on a failed save, or half as much damage on a successful one.",
+				"Cold Breath {@recharge 5}",
+				"The ettin's left head exhales an icy blast in a 30-foot cone. Each creature in that area must make a {@dc 14} Constitution saving throw, taking 45 ({@damage 10d8}) cold damage on a failed save, or half as much damage on a successful one.",
+				"Gaze",
+				"The ettin turns its magical gaze toward one creature that it can see within 120 feet of it. That target must make a {@dc 14} Wisdom saving throw. Unless the target is {@condition incapacitated}, it can avert its eyes to avoid the gaze and to automatically succeed on the save. If the target does so, it can't see the ettin until the start of the ettin's next turn. If the target looks at the ettin in the meantime, it must immediately make the save.",
+				"If the target fails the save, it suffers one of the following effects of the ettin's choice or at random:",
+				"Beguiling Gaze",
+				"The target is {@condition stunned} until the start of the ettin's next turn or until the ettin is no longer within line of sight.",
+				"Hypnotic Gaze",
+				"The target is {@condition charmed} by the ettin until the start of the ettin's next turn. The ettin chooses how the {@condition charmed} target uses its actions, reactions, and movement.",
+				"Insanity Gaze",
+				"The target suffers the effect of the {@spell confusion} spell without making a saving throw. The effect lasts until the start of the ettin's next turn. The ettin doesn't need to concentrate on the spell."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Andras|IMR",
+			"s": [
+				"Andras"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Banrion|IMR",
+			"s": [
+				"Banrion"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Barbatos|IMR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Multiattack": "多重攻擊",
+				"Light Crossbow": "輕弩"
+			},
+			"s": [
+				"Barbatos",
+				"Spellcasting",
+				"Barbatos is a 6th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). He has the following ranger spells prepared:",
+				"Rust Monster Cloak",
+				"Any nonmagical weapon made of metal that hits Barbatos corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits Barbatos is destroyed after dealing damage.",
+				"Heart of the Troll",
+				"Barbatos regains 10 hit points at the start of his turn. If Barbatos takes acid or fire damage, this trait doesn't function at the start of Barbatos's next turn. Barbatos dies only if he starts his turn with 0 hit points and doesn't regenerate.",
+				"Multiattack",
+				"Barbatos makes two bone shortsword attacks.",
+				"Bone Shortsword",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+				"Light Crossbow",
+				"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more, the target is also {@condition unconscious}. The target regains consciousness if it takes damage or if another creature takes an action to shake it.",
+				"Cloak Sweep",
+				"Barbatos corrodes a nonmagical ferrous metal object he can see within 5 feet of himself. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a {@dc 12} Dexterity saving throw to avoid Barbatos's touch.",
+				"If the object touched is either metal armor or a metal shield being worn or carried, it takes a permanent and cumulative 1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in Barbatos's Rust Monster Cloak trait."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Brain in Iron|IMR",
+			"s": [
+				"Brain in Iron",
+				"natural armor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dwarven Worker|IMR",
+			"s": [
+				"Dwarven Worker",
+				"Pick or Hammer",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d6 + 1}) bludgeoning or piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Enhanced Medusa|IMR",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Petrifying Gaze": "石化凝視"
+			},
+			"s": [
+				"Enhanced Medusa",
+				"Innate Spellcasting",
+				"The medusa's innate spellcasting ability is Charisma (spell save {@dc 13}). The medusa can innately cast the following spells, requiring no material components:",
+				"Petrifying Gaze",
+				"When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a {@dc 14} Constitution saving throw if the medusa isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to metal, wood, or porcelain (the medusa's choice) and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the  {@spell greater restoration} spell or other magic.",
+				"Unless {@status surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.",
+				"If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Grandfather Oak|IMR",
+			"s": [
+				"Grandfather Oak"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Lynx Creatlach|IMR",
+			"hint": {
+				"Special Equipment": "特殊裝備",
+				"Aversion of Fire": "畏火",
+				"Immutable Form": "不變形態",
+				"Lightning Absorption": "吸收閃電",
+				"Magic Resistance": "魔法抗性",
+				"Regeneration": "再生",
+				"Turn Immunity": "免疫驅散",
+				"Multiattack": "多重攻擊",
+				"Shortsword": "短劍"
+			},
+			"s": [
+				"Lynx Creatlach",
+				"Special Equipment",
+				"Lynx's crystal eye is a magically shrunken {@item crystal ball} of true seeing. One of her teeth is a refashioned {@item ring of mind shielding}, while another has been magicked to place her under a permanent {@spell Nystul's magic aura} spell, concealing the magic of these items and hiding her true nature from magic or features that can detect undead.",
+				"Aversion of Fire",
+				"If Lynx takes fire damage, she has disadvantage on attack rolls and ability checks until the end of her next turn.",
+				"Immutable Form",
+				"Lynx is immune to any spell or effect that would alter her form.",
+				"Lightning Absorption",
+				"Whenever Lynx is subjected to lightning damage, she takes no damage and instead regains a number of hit points equal to the lightning damage dealt.",
+				"Magic Resistance",
+				"Lynx has advantage on saving throws against spells and other magical effects.",
+				"Regeneration",
+				"Lynx regains 10 hit points at the start of her turn. If she takes fire or radiant damage, this trait doesn't function at the start of her next turn. Lynx's body is destroyed only if she starts her turn with 0 hit points and doesn't regenerate.",
+				"Turn Immunity",
+				"Lynx is immune to effects that turn undead.",
+				"Multiattack",
+				"Lynx makes two shortsword attacks.",
+				"Shortsword",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Moghadam|IMR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Ruinblade": "毀滅之刃"
+			},
+			"s": [
+				"Moghadam",
+				"Spellcasting",
+				"Moghadam is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). He has the following artificer spells prepared:",
+				"Special Equipment",
+				"Moghadam wields {@item Ruinblade|IMR} (see appendix C).",
+				"Artificial Mind",
+				"Moghadam can manifest an artificial mind as a floating spectral image of a {@creature demilich}'s jeweled skull. Moghadam can communicate telepathically with this mind, send it up to 300 feet away from him, and see and hear through it.",
+				"Infoportation (1/Day)",
+				"Moghadam can teleport himself into an unoccupied space next to his artificial mind.",
+				"Ruinblade",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage.",
+				"Blight (1/Day)",
+				"While wielding {@item Ruinblade|IMR}, Moghadam can cast the {@spell blight} spell ({@dc 15}).",
+				"Disintegrate (1/7 Days)",
+				"While wielding {@item Ruinblade|IMR}, Moghadam can cast the {@spell disintegrate} spell against any nonmagical object or creation of magical force.",
+				"Information Overload {@recharge 5}",
+				"Moghadam overloads the thoughts of one creature within 5 feet of either himself or his artificial mind. The target must succeed on a {@dc 16} Intelligence saving throw or take 22 ({@damage 4d8 + 4}) psychic damage, and the next attack roll made against the target before the end of Moghadam's next turn has advantage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Neo-Otyugh|IMR",
+			"hint": {
+				"Innate Spellcasting (Psionics)": "天生施法（靈能）",
+				"Limited Telepathy": "有限心靈感應",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tentacle": "觸手",
+				"Tentacle Slam": "觸手猛擊"
+			},
+			"s": [
+				"Neo-Otyugh",
+				"natural armor",
+				"Innate Spellcasting (Psionics)",
+				"The neo-otyugh's innate spellcasting ability is Intelligence (spell save {@dc 12}). It can innately cast the following spells, requiring no components:",
+				"Limited Telepathy",
+				"The otyugh can magically transmit simple messages and images to any creature within 120 feet of it that can understand a language. This form of telepathy doesn't allow the receiving creature to telepathically respond.",
+				"Multiattack",
+				"The neo-otyugh makes three attacks: one with its bite and two with its tentacles.",
+				"Bite",
+				"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage. If the target is a creature, it must succeed on a {@dc 17} Constitution saving throw against disease or become {@condition poisoned} until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 5 ({@dice 1d10}) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured.",
+				"Tentacle",
+				"{@atk mw} {@hit 8} to hit, reach 15 ft., one target. {@h}10 ({@damage 1d10 + 5}) bludgeoning damage. If the target is Large or smaller, it is {@condition grappled} (escape {@dc 16}) and {@condition restrained} until the grapple ends. The neo-otyugh has two tentacles, each of which can grapple one target.",
+				"Tentacle Slam",
+				"The neo-otyugh slams creatures {@condition grappled} by it into each other or a solid surface. Each creature must succeed on a {@dc 16} Constitution saving throw or take 15 ({@damage 3d6 + 5}) bludgeoning damage and be {@condition stunned} until the end of the neo-otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't {@condition stunned}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Seodra|IMR",
+			"s": [
+				"Seodra",
+				"natural armor"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Sir Ursas|IMR",
+			"hint": {
+				"Special Equipment": "特殊裝備",
+				"Brave": "勇敢",
+				"Brute": "蠻力",
+				"Multiattack": "多重攻擊",
+				"Claw": "爪擊",
+				"Spear": "矛",
+				"Shield Bash": "盾擊",
+				"Parry": "格擋"
+			},
+			"s": [
+				"Sir Ursas",
+				"Special Equipment",
+				"Sir Ursas wears a {@item ring of mind shielding} and {@item plate armor of fire resistance}.",
+				"Brave",
+				"Sir Ursas has advantage on saving throws against being {@condition frightened}.",
+				"Brute",
+				"A melee weapon deals one extra die of its damage when Sir Ursas hits with it (included in his attack).",
+				"Multiattack",
+				"Sir Ursas makes three melee attacks or two ranged attacks.",
+				"Claw",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage.",
+				"Spear",
+				"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. and range 20/60 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage, or 13 ({@damage 2d8 + 4}) piercing damage if used with two hands to make a melee attack.",
+				"Shield Bash",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage, and if the target is a Medium or smaller creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}.",
+				"Parry",
+				"Sir Ursas adds 3 to his AC against one melee attack that would hit him. To do so, he must see the attacker and be wielding a melee weapon."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skeletal Giant Owl|IMR",
+			"s": [
+				"Skeletal Giant Owl"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skeletal Owlbear|IMR",
+			"s": [
+				"Skeletal Owlbear"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skeletal Polar Bear|IMR",
+			"s": [
+				"Skeletal Polar Bear"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Skeletal Two-Headed Owlbear|IMR",
+			"s": [
+				"Skeletal Two-Headed Owlbear"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Stolos|IMR",
+			"hint": {
+				"Talons": "利爪"
+			},
+			"s": [
+				"Stolos",
+				"Talons",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d6 + 1}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tarnhem|IMR",
+			"s": [
+				"Tarnhem"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Thessalar|IMR",
+			"hint": {
+				"Spellcasting": "施法",
+				"Special Equipment": "特殊裝備",
+				"Alchemical Homunculus": "煉金人工生命體",
+				"Dagger": "匕首"
+			},
+			"s": [
+				"Thessalar",
+				"Spellcasting",
+				"Thessalar is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). He has the following artificer spells prepared:",
+				"Special Equipment",
+				"Thessalar wields a {@item +1 dagger} coated with {@item Thessaltoxin|IMR|thessaltoxin poison} (see appendix C).",
+				"Alchemical Homunculus",
+				"Thessalar is accompanied by his {@creature Thessalar's homunculus|IMR}. If the {@spell mending} spell is cast on it, the homunculus regains {@dice 2d6} hit points.",
+				"Healing Toxicity",
+				"Any magic item that restores hit points and can be applied to a piercing or slashing weapon (a potion, an ointment, and so forth) causes a hit with that weapon to deal extra damage to Thessalar equal to the amount the item would normally heal.",
+				"Greater Restoration (1/Day)",
+				"Thessalar can cast {@spell greater restoration} if he has access to {@item Alchemist's Supplies|phb|alchemical supplies}.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage, and the target must succeed on a {@dc 15} Constitution saving throw. On a failed save, the target is affected as if by the {@spell polymorph} spell, transforming into a random {@filter beast|bestiary|type=beast|miscellaneous=!swarm} or a creature it has seen within the last 24 hours (as chosen by the DM). This effect lasts until the target finishes a long rest."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Thessalar's Homunculus|IMR",
+			"s": [
+				"Thessalar's Homunculus"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Thessalheart Construct|IMR",
+			"hint": {
+				"Telepathic Bond": "心靈連結",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Thessalheart Construct",
+				"natural armor",
+				"Telepathic Bond",
+				"While the construct is on the same plane of existence as its master, it can magically convey what it senses to its master, and the two can communicate telepathically.",
+				"Claws",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 slashing damage, and the target must succeed on a {@dc 10} Constitution saving throw or be {@condition poisoned} for 1 minute. If the saving throw fails by 5 or more, the target is instead {@condition poisoned} for 5 ({@dice 1d10}) minutes and {@condition unconscious} while {@condition poisoned} in this way."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Thessalkraken|IMR",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Freedom of Movement": "行動自如",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tentacle": "觸手",
+				"Fling": "拋擲",
+				"Ink Cloud (Costs 3 Actions)": "墨雲（消耗 3 個動作）"
+			},
+			"s": [
+				"Thessalkraken",
+				"natural armor",
+				"Amphibious",
+				"The thessalkraken can breathe air and water.",
+				"Freedom of Movement",
+				"The thessalkraken ignores {@quickref difficult terrain||3}, and magical effects can't reduce its speed or cause it to be {@condition restrained}. It can spend 5 feet of movement to escape from nonmagical restraints or being {@condition grappled}.",
+				"Multiattack",
+				"The thessalkraken makes one bite attack and two tentacle attacks. It can replace each tentacle attack with one use of Fling.",
+				"Bite",
+				"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d8 + 7}) piercing damage plus 5 ({@damage 1d10}) acid damage. If the target is a Medium or smaller creature {@condition grappled} by the thessalkraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has {@quickref Cover||3||total cover} against attacks and other effects outside the thessalkraken, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the thessalkraken's turns.",
+				"If the thessalkraken takes 35 damage or more on a single turn from a creature inside it, it must succeed on a {@dc 23} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the thessalkraken. If the thessalkraken dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 10 feet of movement, exiting {@condition prone}.",
+				"Tentacle",
+				"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}17 ({@damage 3d6 + 7}) slashing damage, and the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}. The thessalkraken has ten tentacles, each of which can grapple one target.",
+				"Fling",
+				"One Medium or smaller object held or creature {@condition grappled} by the thessalkraken is thrown up to 40 feet in a random direction and knocked {@condition prone}. If a thrown target strikes a solid surface, the target takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a {@dc 16} Dexterity saving throw or take the same damage and be knocked {@condition prone}.",
+				"Acid Saliva {@recharge 5}",
+				"The thessalkraken spits a glob of acid at a point it can see within 60 feet of it. Each creature within 10 feet of that point must make a {@dc 18} Dexterity saving throw, taking 22 ({@damage 4d10}) acid damage on a failed save, or half as much damage on a successful one.",
+				"Tentacle Attack",
+				"The thessalkraken makes one tentacle attack.",
+				"Fling",
+				"The thessalkraken uses Fling.",
+				"Ink Cloud (Costs 3 Actions)",
+				"While underwater, the thessalkraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the thessalkraken. Each creature other than the thessalkraken that ends its turn there must succeed on a {@dc 18} Constitution saving throw, taking 16 ({@damage 3d10}) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the thessalkraken's next turn.",
+				"Thessalkraken"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Tiefling Muralist|IMR",
+			"s": [
+				"Tiefling Muralist"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Two-Headed Crocodile|IMR",
+			"hint": {
+				"Hold Breath": "閉氣",
+				"Two Heads": "雙頭",
+				"Wakeful": "警醒",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Two-Headed Crocodile",
+				"natural armor",
+				"Hold Breath",
+				"The two-headed crocodile can hold its breath for 15 minutes.",
+				"Two Heads",
+				"The two-headed crocodile has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}.",
+				"Wakeful",
+				"When one of the crocodile's heads is asleep, its other head is awake.",
+				"Multiattack",
+				"The two-headed crocodile makes two attacks with its bite.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage, and the target is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the target is {@condition restrained}, and that head of the crocodile can't bite another target."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Two-Headed Owlbear|IMR",
+			"hint": {
+				"Two Heads": "雙頭",
+				"Wakeful": "警醒",
+				"Multiattack": "多重攻擊",
+				"Beak": "啄擊",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Two-Headed Owlbear",
+				"natural armor",
+				"Two Heads",
+				"The two-headed owlbear has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}.",
+				"Wakeful",
+				"When one of the owlbear's heads is asleep, its other head is awake.",
+				"Multiattack",
+				"The two-headed owlbear makes three attacks: two with its beaks and one with its claws.",
+				"Beak",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage.",
+				"Claws",
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage."
+			]
+		}
+	]
+}

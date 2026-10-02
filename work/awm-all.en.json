@@ -1,0 +1,230 @@
+{
+	"batch": "awm-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Big Water Slurpent|AWM",
+			"hint": {
+				"Invisible in Water": "水中隱形",
+				"Water Bound": "水體束縛",
+				"Constrict": "纏絞"
+			},
+			"s": [
+				"Big Water Slurpent",
+				"Invisible in Water",
+				"The big water slurpent is {@condition invisible} while fully immersed in water.",
+				"Water Bound",
+				"The big water slurpent dies if it leaves the water to which it is bound or if that water is destroyed.",
+				"Constrict",
+				"{@atk mw} {@hit 5} to hit, one target. {@h}13 ({@damage 3d6+3}) bludgeoning damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 13}) and pulled 5 feet toward the big water slurpent. Until this {@action grapple} ends, the target is {@condition restrained}, the big water slurpent tries to drown it, and the big water slurpent can't constrict another target."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Birdsquirrel|AWM",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Birdsquirrel",
+				"Pack Tactics",
+				"Birdsquirrel has advantage on an attack roll against a creature if at least one of the Birdsquirrel's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Multiattack",
+				"Birdsquirrel makes two attacks: one with its bite and one with its claws.",
+				"Bite",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6+2}) piercing damage.",
+				"Claws",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4+2}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Boontu Monkey|AWM",
+			"hint": {
+				"Pack Tactics": "群體戰術",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Boontu Monkey",
+				"Pack Tactics",
+				"The Boontu monkey has advantage on an attack roll against a creature if at least one of the boontu monkey's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+				"Bite",
+				"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d4 - 1}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Crystal Cave Merfolk|AWM",
+			"hint": {
+				"Amphibious": "兩棲",
+				"Bite": "啃咬"
+			},
+			"s": [
+				"Crystal Cave Merfolk",
+				"Amphibious",
+				"The merfolk can breathe air and water.",
+				"Siren Song",
+				"Lovely singing voices charm every humanoid or giant within 300 feet. The targets must succeed on a {@dc 11} Wisdom saving throw or be {@condition charmed} until the song ends.",
+				"Bite",
+				"{@atk mw} {@hit 2} to hit, one target. {@h}3 ({@damage 1d6}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dankwood Hag|AWM",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Amphibious": "兩棲",
+				"Illusory Appearance": "幻象外貌",
+				"Invisible Passage": "隱形穿行",
+				"Claws": "爪擊"
+			},
+			"s": [
+				"Dankwood Hag",
+				"Innate Spellcasting",
+				"The hag's spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells:",
+				"Amphibious",
+				"The hag can breathe air and water.",
+				"Mimicry (Green Hag)",
+				"The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 14} Wisdom ({@skill Insight}) check.",
+				"Illusory Appearance",
+				"The hag covers herself with a magical illusion that allows her to look like another creature of her general size and shape. The illusion ends when the hag chooses, or if she dies. A {@dc 20} Intelligence ({@skill Investigation}) check will expose the hag's disguise.",
+				"Invisible Passage",
+				"The hag magically turns {@condition invisible} until she attacks or casts a spell, or until her {@status concentration} ends. While {@condition invisible}, she leaves no physical evidence of her passage, and can only be tracked by magic.",
+				"Claws",
+				"{@atk mw} {@hit 6} to hit, one target. {@h}17 ({@damage 2d8 + 4}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dum-Dum Goblin|AWM",
+			"hint": {
+				"Nimble Escape": "靈巧脫逃",
+				"Scimitar": "彎刀",
+				"Shortbow": "短弓"
+			},
+			"s": [
+				"Dum-Dum Goblin",
+				"Nimble Escape",
+				"The goblin can take the {@action Disengage} or {@action Hide} action as a bonus action on each of its turns.",
+				"Catch me if you can!",
+				"Dum-Dum Goblins will opt to run and hide before fighting! A {@dc 15} Dexterity check must be made before they can be attacked.",
+				"Scimitar",
+				"{@atk mw} {@hit 4} to hit, one target. {@h}3 ({@damage 1d6 +2}) slashing damage.",
+				"Shortbow",
+				"{@atk rw} {@hit 4} to hit, one target. {@h}6 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Dwarf|AWM",
+			"hint": {
+				"Dwarf": "矮人",
+				"Dwarven Resilience": "矮人韌性",
+				"Shortbow": "短弓"
+			},
+			"s": [
+				"Dwarf",
+				"Dwarven Resilience",
+				"They have advantage on saving throws against poison, and they have resistance to poison damage.",
+				"Shortbow",
+				"{@atk mw} {@hit 3} to hit, one target. {@h}4 ({@damage 1d6 + 1}) slashing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Great Kroom, Purple Worm|AWM",
+			"hint": {
+				"Tunneler": "掘地者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tail Stinger": "尾螫"
+			},
+			"s": [
+				"Great Kroom, Purple Worm",
+				"natural armor",
+				"Tunneler",
+				"The worm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake.",
+				"Multiattack",
+				"The worm makes two attacks:",
+				"Bite",
+				"{@atk mw} {@hit 14} to hit, one target. {@h}22 ({@damage 3d8}) piercing damage. Target must make a {@dc 19} Dexterity save, or be swallowed by the worm!",
+				"Tail Stinger",
+				"{@atk mw} {@hit 14} to hit, one creature. {@h}19 ({@damage 3d6 + 9}) piercing damage Target must make a {@dc 19} Constitution save, or take 42 ({@damage 12d6}) poison damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hangry Otyugh|AWM",
+			"hint": {
+				"Limited Telepathy": "有限心靈感應",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Tentacle": "觸手"
+			},
+			"s": [
+				"Hangry Otyugh",
+				"Limited Telepathy",
+				"The otyugh can magically transmit simple messages and images to any creature within 120 feet of it that can understand a language. This form of telepathy doesn't allow the receiving creature to telepathically respond.",
+				"Multiattack",
+				"The otyugh makes three attacks:",
+				"Bite",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage. Target must make a {@dc 15} Constitution save, or take 6 ({@damage 1d10}) poison damage until cured.",
+				"Tentacle",
+				"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage. Target must make a {@dc 19} Constitution save, or take 42 ({@damage 12d6}) poison damage.",
+				"Slam!",
+				"Target must make a {@dc 14} Constitution save, or be {@condition grappled}."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Hill Giant, Blorbo|AWM",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Greatclub": "巨棍",
+				"Rock": "擲石"
+			},
+			"s": [
+				"Hill Giant, Blorbo",
+				"Multiattack",
+				"The giant makes two greatclub attacks.",
+				"Greatclub",
+				"{@atk mw} {@hit 8} to hit, one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage.",
+				"Rock",
+				"{@atk rw} {@hit 8} to hit, one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Saleeth the Couatl|AWM",
+			"hint": {
+				"Innate Spellcasting": "天生施法",
+				"Magic Weapons": "魔法武器",
+				"Shielded Mind": "屏障心智",
+				"Bite": "啃咬",
+				"Constrict": "纏絞",
+				"Change Shape": "變形"
+			},
+			"s": [
+				"Saleeth the Couatl",
+				"natural armor",
+				"Innate Spellcasting",
+				"The couatl's spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring only verbal components:",
+				"Magic Weapons",
+				"The couatl's weapon attacks are magical.",
+				"Shielded Mind",
+				"The couatl is immune to {@spell scrying} and to any effect that would sense its emotions, read its thoughts, or detect its location.",
+				"Bite",
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d6 + 5}) piercing damage. Target must make a {@dc 13} Constitution save, or fall {@condition unconscious}. Another creature can use an action to shake the target awake.",
+				"Constrict",
+				"{@atk mw} {@hit 6} to hit, reach 10 ft., one Medium or smaller creature. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage. Target is {@condition grappled} (escape {@dc 15}). The couatl can constrain only one target at a time.",
+				"Change Shape",
+				"The couatl magically polymorphs into {@filter a humanoid or beast that has a challenge rating equal to or less than its own|bestiary|Challenge Rating=[&0;&4]|type=beast;humanoid}, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).",
+				"In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form."
+			]
+		}
+	]
+}

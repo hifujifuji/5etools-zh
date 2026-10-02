@@ -1,0 +1,48 @@
+{
+	"batch": "nrh-coi-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Clown|NRH-COI",
+			"s": [
+				"Clown",
+				"puffy shirt",
+				"Colorful Club",
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Imelda|NRH-COI",
+			"hint": {
+				"Reckless": "魯莽",
+				"Fist": "拳擊"
+			},
+			"s": [
+				"Imelda",
+				"Reckless",
+				"At the start of her turn, Imelda can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against her have advantage until the start of her next turn.",
+				"Fist",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Magnifico|NRH-COI",
+			"hint": {
+				"Cunning Action": "巧妙動作",
+				"Shortsword": "短劍",
+				"Hand Crossbow": "手弩"
+			},
+			"s": [
+				"Magnifico",
+				"Cunning Action",
+				"On each of his turns, Magnifico can use a bonus action to take the {@action Dash}, {@action Disengage}, or {@action Hide} action.",
+				"Shortsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage.",
+				"Hand Crossbow",
+				"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		}
+	]
+}

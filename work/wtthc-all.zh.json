@@ -1,0 +1,145 @@
+{
+	"Corrupted Rat|WTTHC": [
+		"腐化鼠",
+		"敏捷",
+		"腐化鼠移出敵人的觸及範圍時不會引發藉機攻擊。",
+		"死亡爆發",
+		"腐化鼠死亡時會爆炸。{@actSave con} {@dc 9}，從腐化鼠發出的 5 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內的每個生物。{@actSaveFail} 1 點酸蝕傷害。",
+		"啃咬",
+		"{@atkr m} {@hit 2}，觸及 5 呎。{@h}1 點穿刺傷害。"
+	],
+	"Cultist of Demogorgon|WTTHC": [
+		"狄摩高根邪教徒",
+		"儀式鐮刀",
+		"{@atkr m} {@hit 4}，觸及 5 呎。{@h}{@damage 1d4 + 2} 劈砍傷害外加 1 點死靈傷害。"
+	],
+	"Dardew|WTTHC": [
+		"達杜",
+		"多重攻擊",
+		"達杜以任意組合使用「烈焰之爪」或「強力和弦」進行兩次攻擊。",
+		"烈焰之爪",
+		"{@atkr m} {@hit 7}，觸及 5 呎。{@h}8（{@damage 1d8 + 4}）劈砍傷害外加 7（{@damage 2d6}）火焰傷害。",
+		"強力和弦",
+		"{@actSave con} {@dc 14}，達杜 120 呎內一個它能看見的生物。{@actSaveFail} 13（{@damage 3d6 + 3}）雷鳴傷害。",
+		"三寸不爛之舌",
+		"{@actSave cha} {@dc 14}，達杜 60 呎內一個它能看見的生物。{@actSaveFail} 該生物陷入{@condition Charmed|XPHB}狀態，直到達杜的下個回合開始。"
+	],
+	"Demobat|WTTHC": [
+		"魔蝠",
+		"啃咬",
+		"{@atkr m} {@hit 5}（若目標被魔蝠{@condition Grappled|XPHB|擒抱}則具有{@variantrule Advantage|XPHB}），觸及 5 呎。{@h}10（{@damage 2d6 + 3}）穿刺傷害。",
+		"觸手",
+		"{@atkr m} {@hit 5}，觸及 5 呎。{@h}7（{@damage 1d8 + 3}）劈砍傷害。若目標是中型或更小的生物，目標被全部四條觸手纏住而陷入{@condition Grappled|XPHB}狀態（逃脫 {@dc 13}）。"
+	],
+	"Demodog|WTTHC": [
+		"魔犬",
+		"群體戰術",
+		"若魔犬至少有一名盟友位於該生物 5 呎內且該盟友未處於{@condition Incapacitated|XPHB}狀態，魔犬對該生物的攻擊檢定具有{@variantrule Advantage|XPHB}。",
+		"啃咬",
+		"{@atkr m} {@hit 5}，觸及 5 呎。{@h}8（{@damage 1d10 + 3}）穿刺傷害。若目標是中型或更小的生物，它陷入{@condition Prone|XPHB}狀態。"
+	],
+	"Demodragon|WTTHC": [
+		"魔龍",
+		"凶惡氣息",
+		"源自魔龍的 120 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內的光源會劇烈閃爍。該區域內非魔法的{@variantrule Bright Light|XPHB}光源改為散發{@variantrule Dim Light|XPHB}。",
+		"再生",
+		"若魔龍至少有 1 點{@variantrule Hit Points|XPHB|生命值}，它在每個回合開始時恢復 10 點{@variantrule Hit Points|XPHB}",
+		"多重攻擊",
+		"魔龍進行兩次啃咬攻擊。",
+		"啃咬",
+		"{@atkr m} {@hit 7}，觸及 10 呎。{@h}11（{@damage 2d6 + 4}）穿刺傷害外加 4（{@damage 1d8}）酸蝕傷害。",
+		"強酸吐息 {@recharge 5}",
+		"{@actSave dex} {@dc 13}，一條長 30 呎、寬 5 呎{@variantrule Line [Area of Effect]|XPHB|直線}內的每個生物。{@actSaveFail} 22（{@damage 4d10}）酸蝕傷害。{@actSaveSuccess} 傷害減半。"
+	],
+	"Demogorgon Spawn|WTTHC": [
+		"狄摩高根衍體",
+		"凶惡氣息",
+		"源自狄摩高根衍體的 60 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內的光源會劇烈閃爍。該區域內非魔法的{@variantrule Bright Light|XPHB}光源改為散發{@variantrule Dim Light|XPHB}。",
+		"再生",
+		"若狄摩高根衍體至少有 1 點{@variantrule Hit Points|XPHB|生命值}，它在每個回合開始時恢復 5 點{@variantrule Hit Points|XPHB}。",
+		"助跑跳躍",
+		"助跑 10 呎後，狄摩高根衍體可以{@variantrule Long Jump|XPHB}至多 30 呎。",
+		"多重攻擊",
+		"狄摩高根衍體進行兩次爪擊攻擊。",
+		"爪擊",
+		"{@atkr m} {@hit 5}，觸及 10 呎。{@h}6（{@damage 1d6 + 3}）劈砍傷害。",
+		"啃咬",
+		"{@atkr m} {@hit 5}，觸及 5 呎。{@h}5（{@damage 1d4 + 3}）穿刺傷害。若目標是中型或更小的生物，它陷入{@condition Grappled|XPHB}狀態（脫逃 {@dc 13}）。處於{@condition Grappled|XPHB}狀態期間，目標同時處於{@condition Blinded|XPHB}狀態。"
+	],
+	"Flizzlebin|WTTHC": [
+		"弗利佐賓",
+		"魔法抗性",
+		"弗利佐賓在對抗法術與其他魔法效應的豁免檢定上具有{@variantrule Advantage|XPHB}。",
+		"腹語師",
+		"弗利佐賓能讓自己的聲音從自身 1 哩內的任何地方傳出。",
+		"炫目彩紙",
+		"{@atkr m,r} {@hit 5}，觸及 5 呎或射程 60 呎。{@h}10（{@damage 2d6 + 3}）光耀傷害。",
+		"消失戲法（每日 3 次）",
+		"弗利佐賓陷入{@condition Invisible|XPHB}狀態 10 分鐘。弗利佐賓進行攻擊檢定、造成傷害或陷入{@condition Incapacitated|XPHB}狀態後，或它的帽子被摘下時，此效應立即提前結束。",
+		"擾人閃粉",
+		"{@actTrigger} 弗利佐賓被一次攻擊檢定命中。{@actResponse} 弗利佐賓對抗該次攻擊時 AC 增加 2，有可能使攻擊落空。"
+	],
+	"Giant Corrupted Rat|WTTHC": [
+		"巨型腐化鼠",
+		"死亡爆發",
+		"巨型腐化鼠死亡時會爆炸。體質{@variantrule Saving Throw|XPHB} {@dc 11}，源自巨型腐化鼠的 5 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內的每個生物。{@actSaveFail} 5（{@damage 2d4}）酸蝕傷害。{@actSaveSuccess} 傷害減半。",
+		"啃咬",
+		"{@atkr m} {@hit 5}，觸及 5 呎。{@h}6（{@damage 1d6 + 3}）穿刺傷害外加 5（{@damage 2d4}）酸蝕傷害。"
+	],
+	"Gnoll Warrior|WTTHC": [
+		"豺狼人戰士"
+	],
+	"Goblin Warrior|WTTHC": [
+		"哥布林戰士"
+	],
+	"Imp Trickster|WTTHC": [
+		"小魔鬼詐術師",
+		"魔法抗性",
+		"小魔鬼詐術師在對抗法術與其他魔法效應的豁免檢定上具有{@variantrule Advantage|XPHB}。",
+		"螫刺",
+		"{@atkr m} {@hit 5}，觸及 5 呎。{@h}{@damage 1d6 + 3} 穿刺傷害外加 {@damage 2d6} 毒素傷害。",
+		"隱形",
+		"小魔鬼詐術師陷入{@condition Invisible|XPHB}狀態 1 分鐘。小魔鬼詐術師進行攻擊檢定或造成傷害後，或小魔鬼詐術師陷入{@condition Incapacitated|XPHB}狀態時，此效應立即提前結束。",
+		"變形",
+		"小魔鬼詐術師變形成老鼠（{@variantrule Speed|XPHB} 20 呎）、渡鴉（20 呎、飛行 60 呎）或蜘蛛（20 呎、攀爬 20 呎）的樣貌，或變回真實形態。除了{@variantrule Speed|XPHB}之外，它在每種形態下的遊戲數據都相同。它穿戴或攜帶的任何裝備都不會隨之變形。"
+	],
+	"Korex|WTTHC": [
+		"科雷克斯",
+		"下水道語",
+		"科雷克斯能理解怪獸並與之口頭交流。",
+		"腐臭小刀",
+		"{@atkr m} {@hit 5}，觸及 5 呎。{@h}8（{@damage 2d4 + 3}）穿刺傷害外加 7（{@damage 2d6}）毒素傷害，且目標陷入{@condition Poisoned|XPHB}狀態，直到科雷克斯的下個回合開始。",
+		"迷魂笛",
+		"{@actSave wis} {@dc 12}，科雷克斯 120 呎內一個它能看見的生物。{@actSaveFail} 14（{@damage 4d6}）精神傷害，且目標陷入{@condition Charmed|XPHB}狀態，直到科雷克斯的下個回合開始。{@actSaveSuccess} 僅傷害減半。",
+		"疾竄",
+		"科雷克斯採取{@action Dash|XPHB}或{@action Disengage|XPHB}動作。"
+	],
+	"Rilly June|WTTHC": [
+		"莉莉·茱恩",
+		"多重攻擊",
+		"莉莉·茱恩進行兩次乾草叉攻擊。",
+		"乾草叉",
+		"{@atkr m} {@hit 4}，觸及 5 呎。{@h}6（{@damage 1d8 + 2}）穿刺傷害。",
+		"去去，滾開！（每日 1 次）",
+		"{@actSave wis} {@dc 11}，莉莉·茱恩 60 呎內一個它能看見的生物。{@actSaveFail} 10（{@damage 3d6}）精神傷害，且目標陷入{@condition Frightened|XPHB}狀態，直到它的下個回合結束。{@actSaveSuccess} 僅傷害減半。"
+	],
+	"Shrieker Fungus|WTTHC": [
+		"尖叫蕈"
+	],
+	"Swarm of Corrupted Rats|WTTHC": [
+		"腐化鼠群",
+		"死亡爆發",
+		"這隻鼠死亡時會爆炸。{@actSave con} {@dc 10}，源自該鼠的 10 呎{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內的每個生物。{@actSaveFail} {@damage 2d4} 酸蝕傷害。{@actSaveSuccess} 傷害減半。",
+		"蟲群",
+		"腐化鼠群可以佔據其他生物的空間，反之亦然，且腐化鼠群可以穿過任何足以讓微型老鼠通過的開口。腐化鼠群無法恢復{@variantrule Hit Points|XPHB}。",
+		"啃咬",
+		"{@atkr m} {@hit 4}，觸及 5 呎。{@h}6（{@damage 2d4 + 2}）穿刺傷害；若腐化鼠群處於浴血狀態則為 {@damage 1d4 + 2} 穿刺傷害。"
+	],
+	"Vine Blight Tangler|WTTHC": [
+		"枯藤怪纏繞者",
+		"緊縛藤蔓",
+		"{@atkr m} {@hit 4}，觸及 10 呎。{@h}{@damage 1d10 + 2} 鈍擊傷害。若目標是大型或更小的生物，它被三條藤蔓之一纏住而陷入{@condition Grappled|XPHB}狀態（逃脫 {@dc 12}）。",
+		"纏繞藤蔓 {@recharge 5}",
+		"抓攫的藤蔓短暫出現在一個半徑 10 呎{@variantrule Sphere [Area of Effect]|XPHB|球體}內的每個敵人身上，球體以枯藤怪纏繞者 60 呎內由它選擇的一點為中心。每個目標必須成功通過一次 {@dc 12} 力量豁免檢定，否則陷入{@condition Restrained|XPHB}狀態直到枯藤怪纏繞者的下個回合開始。"
+	]
+}

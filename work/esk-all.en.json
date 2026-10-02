@@ -1,0 +1,82 @@
+{
+	"batch": "esk-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Expert|ESK",
+			"hint": {
+				"Expert": "專家",
+				"Helpful": "樂於助人",
+				"Tools": "工具",
+				"Shortsword": "短劍",
+				"Dagger": "匕首",
+				"Shortbow": "短弓"
+			},
+			"s": [
+				"Expert",
+				"Helpful",
+				"The expert can take the Help action as a bonus action.",
+				"Tools",
+				"The expert has {@item thieves' tools|phb} and a musical instrument.",
+				"Shortsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage.",
+				"Dagger",
+				"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage.",
+				"Shortbow",
+				"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Spellcaster|ESK",
+			"hint": {
+				"Spellcasting (Healer)": "施法（醫者）",
+				"Spellcasting (Mage)": "施法（法師）",
+				"Quarterstaff": "長棍",
+				"Spellcaster (Healer)": "施法者（醫者）"
+			},
+			"s": [
+				"Spellcaster",
+				"Spellcasting (Healer)",
+				"The spellcaster's spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The spellcaster has following cleric spells prepared:",
+				"Spellcasting (Mage)",
+				"The spellcaster's spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The spellcaster has following wizard spells prepared:",
+				"Magical Role",
+				"Choose a role for the spellcaster: healer or mage. Your choice determines which Spellcasting trait to use below.",
+				"Quarterstaff",
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 4 ({@damage 1d8}) bludgeoning damage if used with two hands.",
+				"Spellcaster (Healer)"
+			]
+		},
+		{
+			"prop": "monster",
+			"key": "Warrior|ESK",
+			"hint": {
+				"Warrior": "戰士",
+				"Martial Role": "武術角色",
+				"Attacker": "攻擊者",
+				"Defender": "防禦者",
+				"Longsword": "長劍",
+				"Longbow": "長弓",
+				"Protection (Defender Only)": "守護（僅限防衛者）",
+				"Warrior (Defender)": "戰士（防衛者）"
+			},
+			"s": [
+				"Warrior",
+				"Martial Role",
+				"The warrior has one of the following traits of your choice:",
+				"Attacker",
+				"The warrior gains a +2 bonus to attack rolls.",
+				"Defender",
+				"The warrior gains the Protection reaction below.",
+				"Longsword",
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage, or 7 ({@damage 1d10 + 2}) slashing damage if used with two hands.",
+				"Longbow",
+				"{@atk rw} {@hit 3} to hit, range 150/600 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage.",
+				"Protection (Defender Only)",
+				"The warrior imposes disadvantage on the attack roll of a creature within 5 feet of it whose target isn't the warrior. The warrior must be able to see the attacker.",
+				"Warrior (Defender)"
+			]
+		}
+	]
+}

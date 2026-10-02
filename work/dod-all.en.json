@@ -1,0 +1,44 @@
+{
+	"batch": "dod-all",
+	"items": [
+		{
+			"prop": "monster",
+			"key": "Yarnspinner|DOD",
+			"hint": {
+				"Spellcasting": "施法",
+				"Fey Rebirth": "精類重生",
+				"Legendary Resistance (3/Day)": "傳奇抗性（每日 3 次）",
+				"Spider Climb": "蛛行",
+				"Web Walker": "蛛網行者",
+				"Multiattack": "多重攻擊",
+				"Bite": "啃咬",
+				"Web": "蛛網"
+			},
+			"s": [
+				"Yarnspinner",
+				"natural armor",
+				"Spellcasting",
+				"Yarnspinner casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 17}):",
+				"Fey Rebirth",
+				"If Yarnspinner dies in his Domain of Delight, he revives with all his hit points {@dice 1d4} days later in a safe location in that domain.",
+				"Legendary Resistance (3/Day)",
+				"If Yarnspinner fails a saving throw, he can choose to succeed instead.",
+				"Spider Climb",
+				"Yarnspinner can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+				"Web Walker",
+				"Yarnspinner ignores movement restrictions caused by webbing.",
+				"Web Weaver (3/Day)",
+				"Yarnspinner can take 1 minute to craft one of the following structures out of webbing:",
+				"A 3-inch-thick, opaque wall of webbing consisting of up to three 10-foot-square sections, each of which must be anchored on at least two sides by other walls or surfaces. Each section has AC 12; 20 hit points; vulnerability to fire damage; and immunity to bludgeoning, poison, and psychic damage.",
+				"A hut small enough to fit in a 10-foot cube. The hut comes with a closable door and a comfortable bed made of webbing, sized for a Tiny, Small, or Medium creature.",
+				"A message consisting of no more than twenty-five characters, anchored at various points so it hangs in the air.",
+				"Multiattack",
+				"Yarnspinner makes two Bite attacks and uses Spellcasting or Web once.",
+				"Bite",
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 3d6 + 7}) piercing damage plus 11 ({@damage 2d10}) poison damage.",
+				"Web",
+				"Yarnspinner shoots webbing at one creature he can see within 120 feet of himself. The target must succeed on a {@dc 17} Strength saving throw or be {@condition restrained} for 1 hour. The target can repeat the save at the end of each of its turns, ending the effect on itself on a success."
+			]
+		}
+	]
+}
