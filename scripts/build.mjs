@@ -471,6 +471,18 @@ for (const {json} of loaded) {
 	}
 }
 
+// 引言署名（i18n/quote-by.json，完全比對）
+{
+	const by = readJson(path.join(I18N, "quote-by.json"));
+	const walkBy = o => {
+		if (Array.isArray(o)) return o.forEach(walkBy);
+		if (!o || typeof o !== "object") return;
+		if (o.type === "quote" && typeof o.by === "string" && by[o.by]) o.by = by[o.by];
+		for (const [k, v] of Object.entries(o)) if (k !== "_zhOf") walkBy(v);
+	};
+	for (const {json} of loaded) walkBy(json);
+}
+
 for (const {file, json} of loaded) {
 	// 職業資訊頁（fluff）的表格格子常只有標籤（如 {@creature Owl}），也補中文名
 	if (json.classFluff || json.subclassFluff) walkStrings(json, true);
