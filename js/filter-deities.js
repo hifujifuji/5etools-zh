@@ -14,8 +14,8 @@ class PageFilterDeities extends PageFilterBase {
 
 	constructor () {
 		super();
-		this._pantheonFilter = new Filter({header: "Pantheon", items: []});
-		this._categoryFilter = new Filter({header: "Category", items: [VeCt.STR_NONE]});
+		this._pantheonFilter = new Filter({header: "Pantheon", items: [], displayFn: it => Renderer.deity.__zhPantheon(it)});
+		this._categoryFilter = new Filter({header: "Category", items: [VeCt.STR_NONE], displayFn: it => Renderer.deity.__zhCategory(it)});
 		this._alignmentFilter = new Filter({
 			header: "Alignment",
 			items: ["L", "NX", "C", "G", "NY", "E", "N"],
@@ -25,6 +25,7 @@ class PageFilterDeities extends PageFilterBase {
 		this._domainFilter = new Filter({
 			header: "Domain",
 			items: ["Death", "Knowledge", "Life", "Light", "Nature", VeCt.STR_NONE, "Tempest", "Trickery", "War"],
+			displayFn: it => Renderer.deity.__zhDomain(it),
 		});
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",

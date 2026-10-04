@@ -28,8 +28,8 @@ class DeitiesSublistManager extends SublistManager {
 
 	pGetSublistItem (it, hash) {
 		const alignment = it.alignment ? it.alignment.join("") : "\u2014";
-		const domains = it.domains.join(", ");
-		const cellsText = [it.name, it.pantheon, alignment, domains];
+		const domains = it.domains.map(d => Renderer.deity.__zhDomain(d)).join("、");
+		const cellsText = [it.name, Renderer.deity.__zhPantheon(it.pantheon), alignment, domains];
 
 		const ele = ee`<div class="ve-lst__row ve-lst__row--sublist ve-flex-col">
 			<a href="#${hash}" class="ve-lst__row-border ve-lst__row-inner">
@@ -88,11 +88,11 @@ class DeitiesPage extends ListPage {
 		const source = Parser.sourceJsonToAbv(ent.source);
 		const hash = UrlUtil.autoEncodeHash(ent);
 		const alignment = ent.alignment ? ent.alignment.join("") : "\u2014";
-		const domains = ent.domains.join(", ");
+		const domains = ent.domains.map(d => Renderer.deity.__zhDomain(d)).join("、");
 
 		eleLi.innerHTML = `<a href="#${hash}" class="ve-lst__row-border ve-lst__row-inner">
 			<span class="ve-bold ve-col-3 ve-pl-0 ve-pr-1">${ZH.nameHtml(ent)}</span>
-			<span class="ve-col-2 ve-px-1 ve-text-center">${ent.pantheon}</span>
+			<span class="ve-col-2 ve-px-1 ve-text-center">${Renderer.deity.__zhPantheon(ent.pantheon)}</span>
 			<span class="ve-col-2 ve-px-1 ve-text-center">${alignment}</span>
 			<span class="ve-col-3 ve-px-1 ${ent.domains[0] === VeCt.STR_NONE ? `ve-italic` : ""}">${domains}</span>
 			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(ent.source)} ve-pl-1 ve-pr-0" title="${Parser.sourceJsonToFull(ent.source)}">${source}</span>

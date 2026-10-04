@@ -8950,43 +8950,48 @@ Renderer.raceFeature = class {
 };
 
 Renderer.deity = class {
+	static __zh = {"pantheon":{"Dwarven":"矮人","Norse":"北歐","Elven":"精靈","Faerûnian":"費倫","Egyptian":"埃及","Greek":"希臘","Eberron":"艾伯倫","Celtic":"凱爾特","Exandria":"艾克珊卓亞","Halfling":"半身人","Dawn War":"黎明之戰","Theros":"瑟洛斯","Forgotten Realms":"被遺忘的國度","Gnome":"地侏","Gnomish":"地侏","Nonhuman":"非人類","Orc":"獸人","Greyhawk":"灰鷹","Dragonlance":"龍槍","Duergar":"灰矮人","Yuan-ti":"蛇人","Drow":"卓爾","Unknown":"未知"},"category":{"The Mordinsamman":"摩丁薩曼（矮人神系）","The Seldarine":"瑟達林（精靈神系）","The Sovereign Host":"至高神眾","Lesser Idols":"次級偶像","Betrayer Gods":"背叛諸神","Prime Deities":"主神","Good":"善良","The Gods of Good":"善良諸神","Evil":"邪惡","The Gods of Evil":"邪惡諸神","Neutral":"中立","The Gods of Neutrality":"中立諸神","Other Faiths of Eberron":"艾伯倫的其他信仰","The Dark Seldarine":"黑暗瑟達林","Unknown":"未知","The Dark Six":"黑暗六神"},"domain":{"Arcana":"奧秘","Death":"死亡","Forge":"鍛造","Grave":"墳墓","Knowledge":"知識","Life":"生命","Light":"光明","Nature":"自然","Order":"秩序","Peace":"和平","Tempest":"暴風","Trickery":"詭術","Twilight":"暮光","War":"戰爭","Unknown":"未知","None":"無"}};
+	static __zhPantheon (it) { return Renderer.deity.__zh.pantheon[it] || it; }
+	static __zhDomain (it) { return Renderer.deity.__zh.domain[it] || it; }
+	static __zhCategory (it) { return Renderer.deity.__zh.category[it] || (globalThis.ZH?.t?.(it) ?? it); }
 	static _BASE_PART_TRANSLATORS = {
 		"alignment": {
-			name: "Alignment",
+			name: "陣營",
 			displayFn: (it) => it.map(a => Parser.alignmentAbvToFull(a)).join(" ").toTitleCase(),
 		},
 		"pantheon": {
-			name: "Pantheon",
+			name: "神系",
+			displayFn: it => Renderer.deity.__zhPantheon(it),
 		},
 		"category": {
-			name: "Category",
-			displayFn: it => typeof it === "string" ? it : it.join(", "),
+			name: "類別",
+			displayFn: it => [].concat(it).map(c => Renderer.deity.__zhCategory(c)).join("、"),
 		},
 		"domains": {
-			name: "Domains",
-			displayFn: (it) => it.join(", "),
+			name: "領域",
+			displayFn: (it) => it.map(d => Renderer.deity.__zhDomain(d)).join("、"),
 		},
 		"province": {
-			name: "Province",
+			name: "神職",
 		},
 		"dogma": {
-			name: "Dogma",
+			name: "教義",
 		},
 		"altNames": {
-			name: "Alternate Names",
-			displayFn: (it) => it.join(", "),
+			name: "別名",
+			displayFn: (it) => it.join("、"),
 		},
 		"plane": {
-			name: "Home Plane",
+			name: "所在位面",
 		},
 		"worshipers": {
-			name: "Typical Worshipers",
+			name: "常見信徒",
 		},
 		"symbol": {
-			name: "Symbol",
+			name: "聖徽",
 		},
 		"favoredWeapons": {
-			name: "Favored Weapons",
+			name: "偏好武器",
 		},
 	};
 
@@ -9000,17 +9005,16 @@ Renderer.deity = class {
 						const displayVal = displayFn ? displayFn(ent[prop]) : ent[prop];
 						return {
 							name,
-							entry: `{@b ${name}:} ${displayVal}`,
+							entry: `{@b ${name}：}${displayVal}`,
 						};
 					})
 					.filter(Boolean),
 				...Object.entries(ent.customProperties || {})
 					.map(([name, val]) => ({
 						name,
-						entry: `{@b ${name}:} ${val}`,
+						entry: `{@b ${name}：}${val}`,
 					})),
 			]
-				.sort(({name: nameA}, {name: nameB}) => SortUtil.ascSortLower(nameA, nameB))
 				.map(({entry}) => entry),
 		};
 	}
@@ -9020,7 +9024,7 @@ Renderer.deity = class {
 		const entriesMeta = Renderer.deity.getDeityRenderableEntriesMeta(ent);
 		return `
 			${Renderer.utils.getExcludedTr({entity: ent, dataProp: "deity", page: UrlUtil.PG_DEITIES})}
-			${Renderer.utils.getNameTr(ent, {suffix: ent.title ? `, ${ent.title.toTitleCase()}` : "", page: UrlUtil.PG_DEITIES})}
+			${Renderer.utils.getNameTr(ent, {suffix: ent.title ? `，${ent.title.toTitleCase()}` : "", page: UrlUtil.PG_DEITIES})}
 			<tr><td colspan="6">
 				${entriesMeta.entriesAttributes.map(entry => `<div class="ve-my-1p">${Renderer.get().render(entry)}</div>`).join("")}
 			</td>
