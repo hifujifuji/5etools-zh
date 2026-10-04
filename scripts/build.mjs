@@ -189,6 +189,27 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	}
 }
 
+// ---- 3⁗. 神祇：短欄位（i18n/deity-fields.json，完全比對）與中文簡介（i18n/deity-intro.json，鍵「英文名|來源|神系」） ----
+// pantheon／category 是篩選與網址用的值，資料不動，由 patches/80-deities.mjs 在顯示時翻。
+{
+	const df = readJson(path.join(I18N, "deity-fields.json"));
+	const intro = readJson(path.join(I18N, "deity-intro.json"));
+	for (const {json} of loaded) {
+		for (const d of json.deity || []) {
+			if (!d.name_zh && df.name[d.name]) Merger.setName(d, df.name[d.name]);
+			for (const f of ["title", "province", "symbol", "worshipers", "plane"]) {
+				if (typeof d[f] === "string" && df[f]?.[d[f]]) d[f] = df[f][d[f]];
+			}
+			if (Array.isArray(d.altNames)) d.altNames = d.altNames.map(s => df.altNames[s] || s);
+			const t = intro[`${d.name}|${d.source}|${d.pantheon}`];
+			if (t && Array.isArray(d.entries)) {
+				d.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(t)});
+				bump("deityIntro", "full");
+			}
+		}
+	}
+}
+
 // ---- 3a. 職業起始裝備／熟練字串（i18n/class-equipment.json，完全比對） ----------------
 {
 	const eq = readJson(path.join(I18N, "class-equipment.json"));
