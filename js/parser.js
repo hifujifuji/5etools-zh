@@ -2796,20 +2796,7 @@ Parser.trapHazTypeToFull = function (type) {
 	return Parser._parse_aToB(Parser.TRAP_HAZARD_TYPE_TO_FULL, type);
 };
 
-Parser.TRAP_HAZARD_TYPE_TO_FULL = {
-	"MECH": "Mechanical Trap",
-	"MAG": "Magical Trap",
-	"SMPL": "Simple Trap",
-	"CMPX": "Complex Trap",
-	"HAZ": "Hazard",
-	"WTH": "Weather",
-	"ENV": "Environmental Hazard",
-	"WLD": "Wilderness Hazard",
-	"GEN": "Generic",
-	"EST": "Eldritch Storm",
-	"TRP": "Trap",
-	"HAUNT": "Haunted Trap",
-};
+Parser.TRAP_HAZARD_TYPE_TO_FULL = {"MECH":"機械陷阱","MAG":"魔法陷阱","SMPL":"簡易陷阱","CMPX":"複雜陷阱","HAZ":"危害","WTH":"天氣","ENV":"環境危害","WLD":"荒野危害","GEN":"一般","EST":"異界風暴","TRP":"陷阱","HAUNT":"作祟陷阱"};
 
 Parser._TIER_TO_LEVEL_RANGE = {
 	"1": [1, 4],
@@ -2823,8 +2810,7 @@ Parser.tierToFullLevel = function (tier, {styleHint} = {}) {
 
 	styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
-	if (styleHint === "classic") return `${range.map(n => Parser.getOrdinalForm(n)).join("\u2013")} Level`;
-	return `Levels ${range.join("\u2013")}`;
+	return `${range.join("\u2013")} 級`;
 };
 
 Parser.trapInitToFull = function (init) {
@@ -2832,9 +2818,9 @@ Parser.trapInitToFull = function (init) {
 };
 
 Parser.TRAP_INIT_TO_FULL = {};
-Parser.TRAP_INIT_TO_FULL[1] = "initiative count 10";
-Parser.TRAP_INIT_TO_FULL[2] = "initiative count 20";
-Parser.TRAP_INIT_TO_FULL[3] = "initiative count 20 and initiative count 10";
+Parser.TRAP_INIT_TO_FULL[1] = "先攻順位 10";
+Parser.TRAP_INIT_TO_FULL[2] = "先攻順位 20";
+Parser.TRAP_INIT_TO_FULL[3] = "先攻順位 20 與先攻順位 10";
 
 Parser.ATK_TYPE_TO_FULL = {};
 Parser.ATK_TYPE_TO_FULL["MW"] = "Melee Weapon Attack";

@@ -2197,7 +2197,7 @@ globalThis.Renderer = function () {
 
 			case "@dcYourSpellSave": {
 				const [displayText] = Renderer.splitTagByPipe(text);
-				textStack[0] += displayText || "your spell save DC";
+				textStack[0] += displayText || "你的法術豁免 DC";
 				break;
 			}
 
@@ -5556,7 +5556,7 @@ Renderer.tag = class {
 
 		_getStripped (tag, text) {
 			const [displayText] = Renderer.splitTagByPipe(text);
-			return displayText || "your spell save DC";
+			return displayText || "你的法術豁免 DC";
 		}
 	};
 
@@ -9055,7 +9055,7 @@ Renderer.object = class {
 
 	static getObjectRenderableEntriesMeta (ent) {
 		return {
-			entrySize: `{@i ${ent.objectType !== "GEN" ? `${Renderer.utils.getRenderedSize(ent.size)} ${ent.creatureType ? Parser.monTypeToFullObj(ent.creatureType).asText : "object"}` : `Variable size object`}}`,
+			entrySize: `{@i ${ent.objectType !== "GEN" ? `${[ent.size].flat().map(sz => ({"T":"微型","S":"小型","M":"中型","L":"大型","H":"巨型","G":"超巨型"})[sz] ?? Renderer.utils.getRenderedSize(sz)).join("或")}${ent.creatureType ? Parser.monTypeToFullObj(ent.creatureType).asText : "物體"}` : `體型不定的物體`}}`,
 
 			entryCreatureCapacity: ent.capCrew != null || ent.capPassenger != null
 				? `{@b Creature Capacity:} ${Renderer.vehicle.getShipCreatureCapacity(ent)}`
@@ -9085,10 +9085,10 @@ Renderer.object = class {
 				? `{@b Damage Vulnerabilities:} ${Parser.getFullImmRes(ent.vulnerable)}`
 				: null,
 			entryConditionImmunities: ent.conditionImmune
-				? `{@b Condition Immunities:} ${Parser.getFullCondImm(ent.conditionImmune, {isEntry: true})}`
+				? `{@b Condition Immunities:} ${ent.conditionImmune.every(c => typeof c === "string") ? ent.conditionImmune.map(c => `{@condition ${c}||${({"blinded":"目盲","charmed":"魅惑","deafened":"耳聾","exhaustion":"力竭","frightened":"恐懼","grappled":"被擒","incapacitated":"無力","invisible":"隱形","paralyzed":"麻痺","petrified":"石化","poisoned":"中毒","prone":"伏地","restrained":"束縛","stunned":"震懾","unconscious":"昏迷"})[c] ?? c}}`).join("、") : Parser.getFullCondImm(ent.conditionImmune, {isEntry: true})}`
 				: null,
 			entrySenses: ent.senses
-				? `{@b Senses:} ${Renderer.utils.getSensesEntry(ent.senses)}`
+				? `{@b Senses:} ${Renderer.utils.getSensesEntry(ent.senses).replace(/\{@sense (\w+)(\|[^|}]*)?\}/g, (m, s, src) => `{@sense ${s}${src || "|"}|${({"blindsight":"盲視","darkvision":"黑暗視覺","tremorsense":"震顫感知","truesight":"真實視覺"})[s.toLowerCase()] ?? s}}`)}`
 				: null,
 		};
 	}
@@ -9155,25 +9155,25 @@ Renderer.trap = class {
 			const listItems = [
 				ent.trigger ? {
 					type: "item",
-					name: "Trigger:",
+					name: "觸發：",
 					entries: ent.trigger,
 				} : null,
 				ent.duration ? {
 					type: "item",
-					name: "Duration:",
+					name: "持續時間：",
 					entries: [
 						Renderer.generic.getRenderableDurationEntriesMeta(ent.duration, {styleHint}).entryDuration,
 					],
 				} : null,
 				ent.hauntBonus ? {
 					type: "item",
-					name: "Haunt Bonus:",
+					name: "作祟加值：",
 					entry: ent.hauntBonus,
 				} : null,
 				ent.hauntBonus && !isNaN(ent.hauntBonus) ? {
 					type: "item",
-					name: "Detection:",
-					entry: `passive Wisdom ({@skill Perception}) score equals or exceeds ${10 + Number(ent.hauntBonus)}`,
+					name: "偵測：",
+					entry: `被動感知（{@skill Perception}）值達到或超過 ${10 + Number(ent.hauntBonus)}`,
 				} : null,
 			]
 				.filter(Boolean);
@@ -9195,7 +9195,7 @@ Renderer.trap = class {
 				// region Shared between simple/complex
 				ent.trigger ? {
 					type: "entries",
-					name: "Trigger",
+					name: "觸發",
 					entries: ent.trigger,
 				} : null,
 				// endregion
@@ -9203,7 +9203,7 @@ Renderer.trap = class {
 				// region Simple traps
 				ent.effect ? {
 					type: "entries",
-					name: "Effect",
+					name: "效果",
 					entries: ent.effect,
 				} : null,
 				// endregion
@@ -9211,22 +9211,22 @@ Renderer.trap = class {
 				// region Complex traps
 				ent.initiative ? {
 					type: "entries",
-					name: "Initiative",
+					name: "先攻",
 					entries: Renderer.trap.getTrapInitiativeEntries(ent),
 				} : null,
 				ent.eActive ? {
 					type: "entries",
-					name: "Active Elements",
+					name: "主動要素",
 					entries: ent.eActive,
 				} : null,
 				ent.eDynamic ? {
 					type: "entries",
-					name: "Dynamic Elements",
+					name: "動態要素",
 					entries: ent.eDynamic,
 				} : null,
 				ent.eConstant ? {
 					type: "entries",
-					name: "Constant Elements",
+					name: "常駐要素",
 					entries: ent.eConstant,
 				} : null,
 				// endregion
@@ -9234,7 +9234,7 @@ Renderer.trap = class {
 				// region Shared between simple/complex
 				ent.countermeasures ? {
 					type: "entries",
-					name: "Countermeasures",
+					name: "反制手段",
 					entries: ent.countermeasures,
 				} : null,
 				// endregion
@@ -9243,7 +9243,7 @@ Renderer.trap = class {
 		};
 	}
 
-	static getTrapInitiativeEntries (ent) { return [`The trap acts on ${Parser.trapInitToFull(ent.initiative)}${ent.initiativeNote ? ` (${ent.initiativeNote})` : ""}.`]; }
+	static getTrapInitiativeEntries (ent) { return [`陷阱的行動時機為${Parser.trapInitToFull(ent.initiative)}${ent.initiativeNote ? `（${ent.initiativeNote}）` : ""}。`]; }
 
 	static _getRenderedTrapPart (renderer, ent, {styleHint = null} = {}) {
 		const entriesMeta = Renderer.trap.getTrapRenderableEntriesMeta(ent, {styleHint});
@@ -9298,23 +9298,23 @@ Renderer.traphazard = class {
 
 		return ent.rating
 			.map(rating => {
-				const ptThreat = rating.threat ? rating.threat.toTitleCase() : "";
+				const ptThreat = rating.threat ? ({"nuisance":"擾人","setback":"妨礙","moderate":"中等","dangerous":"危險","deadly":"致命"}[rating.threat] ?? rating.threat.toTitleCase()) : "";
 
 				const ptThreatType = [ptThreat, ptType]
 					.filter(Boolean)
-					.join(" ");
+					.join("");
 
 				const ptLevelTier = Renderer.traphazard.getRenderedTrapHazardRatingPart(rating, {styleHint});
 
 				return [
 					ptThreatType,
-					ptLevelTier ? `(${ptLevelTier})` : "",
+					ptLevelTier ? `（${ptLevelTier}）` : "",
 				]
 					.filter(Boolean)
-					.join(" ");
+					.join("");
 			})
 			.filter(Boolean)
-			.joinConjunct(", ", " or ");
+			.joinConjunct("、", "或");
 	}
 
 	static getRenderedTrapHazardRatingPart (rating, {styleHint} = {}) {
@@ -9324,8 +9324,7 @@ Renderer.traphazard = class {
 
 		if (rating.level?.min == null || rating.level?.max == null) return "";
 
-		const ptLevelLabel = styleHint === "classic" ? "level" : "Levels";
-		return `${ptLevelLabel} ${rating.level.min}${rating.level.min !== rating.level.max ? `\u2013${rating.level.max}` : ""}`;
+		return `${rating.level.min}${rating.level.min !== rating.level.max ? `\u2013${rating.level.max}` : ""} 級`;
 	}
 
 	static getCompactRenderedString (ent, opts) {
