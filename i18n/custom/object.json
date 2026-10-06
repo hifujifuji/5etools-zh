@@ -1,4 +1,336 @@
 {
+	"Automatic Ballista|HBTD": {
+		"name": "自動弩砲",
+		"source": "HBTD",
+		"page": 4,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 50,
+		"entries": [
+			"瞄準自動弩砲需要{@action Utilize|XPHB}動作。之後，生物可以採取「弩矢」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "弩矢（需瞄準）",
+				"entries": [
+					"{@atkr r} {@hit 6}，射程 120/480 呎。{@h}22（{@damage 4d10}）穿刺傷害。"
+				],
+				"ENG_name": "Ballista Bolt (Requires Aim)"
+			}
+		],
+		"tokenCredit": "Kim Jong Min",
+		"tokenCustom": true,
+		"altArt": [
+			{
+				"name": "自動弩砲（俯視）",
+				"source": "HBTD",
+				"ENG_name": "Automatic Ballista (Top-Down)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Automatic Ballista"
+	},
+	"Ballista|DMG": {
+		"name": "弩砲",
+		"source": "DMG",
+		"page": 255,
+		"reprintedAs": [
+			"Ballista|XDMG"
+		],
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 50,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"entries": [
+			"弩砲是一副發射重型弩矢的巨型十字弩。其攻擊發射前必須先進行裝填和瞄準作業。使用該武器時，進行裝填、瞄準以及攻擊發射三項作業需要分別花費一個動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "actions",
+				"name": "弩矢",
+				"entries": [
+					{
+						"type": "attack",
+						"attackType": "RW",
+						"attackEntries": [
+							"命中 {@hit +6}，射程 120/480 呎，單一目標。"
+						],
+						"hitEntries": [
+							"16（{@damage 3d10}）穿刺傷害。"
+						]
+					}
+				],
+				"ENG_name": "Bolt"
+			}
+		],
+		"tokenCredit": "warmtail",
+		"tokenCustom": true,
+		"hasToken": true,
+		"ENG_name": "Ballista"
+	},
+	"Ballista|XDMG": {
+		"name": "弩砲",
+		"source": "XDMG",
+		"page": 96,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 50,
+		"entries": [
+			"弩砲是一副發射重型弩矢的巨型十字弩。裝填弩砲需要{@action Utilize|XPHB}動作，瞄準則需要另一個{@action Utilize|XPHB}動作。之後，一名操作員可以採取「弩矢」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "弩矢（需裝填並瞄準）",
+				"entries": [
+					"{@atkr r} {@hit 6}，射程 120/480 呎。{@h}16（{@damage 3d10}）穿刺傷害。"
+				],
+				"ENG_name": "Ballista Bolt (Requires Load and Aim)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Ballista"
+	},
+	"Boilerdrak|DSOTDQ": {
+		"name": "龍形鍋爐砲",
+		"source": "DSotDQ",
+		"page": 189,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 100,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"entries": [
+			"這台貨車大小的裝置造型大致像一條龍。使用前，龍形鍋爐砲必須先點火並瞄準。點火需要 1 個動作，瞄準需要 1 個動作，發射需要 1 個動作。當你用動作發射時，擲一顆 {@dice d20}。擲出 2 或更高，使用「烈焰」動作。擲出 1，使用「爆炸」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "烈焰",
+				"entries": [
+					"龍形鍋爐砲向 60 呎錐形範圍噴出烈焰。該區域內的每個生物必須進行一次 {@dc 15} 敏捷豁免，失敗受到 27（{@damage 5d10}）點火焰傷害，成功則傷害減半。"
+				],
+				"ENG_name": "Flames"
+			},
+			{
+				"type": "entries",
+				"name": "爆炸",
+				"entries": [
+					"龍形鍋爐砲以半徑 30 呎的球形範圍爆炸，並被摧毀。該區域內的每個生物必須進行一次 {@dc 15} 敏捷豁免，失敗受到 27（{@damage 5d10}）點火焰傷害，成功則傷害減半。"
+				],
+				"ENG_name": "Explosion"
+			}
+		],
+		"hasToken": true,
+		"hasFluffImages": true,
+		"ENG_name": "Boilerdrak"
+	},
+	"Cannon|DMG": {
+		"name": "火砲",
+		"source": "DMG",
+		"page": 255,
+		"reprintedAs": [
+			"Cannon|XDMG"
+		],
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 19,
+		"hp": 75,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"entries": [
+			"火砲使用火藥推動重型鐵球，使其以毀滅性的速度從空中劃過進行政擊。在沒有火藥設定的戰役中，火砲可以設定為由聰明的侏儒或是工程法師所設計的奧法驅動設備。",
+			"火砲通常安裝在帶輪的木質砲台上。其攻擊發射前必須先進行裝填和瞄準作業。使用該武器時，進行裝填、瞄準以及攻擊發射三項作業需要分別花費一個動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "actions",
+				"name": "砲彈",
+				"entries": [
+					{
+						"type": "attack",
+						"attackType": "RW",
+						"attackEntries": [
+							"命中 {@hit +6}，射程 600/2,400 呎，單一目標。"
+						],
+						"hitEntries": [
+							"44（{@damage 8d10}）鈍擊傷害。"
+						]
+					}
+				],
+				"ENG_name": "Cannon Ball"
+			}
+		],
+		"tokenCredit": "Hitokiri",
+		"tokenCustom": true,
+		"hasToken": true,
+		"ENG_name": "Cannon"
+	},
+	"Cannon|XDMG": {
+		"name": "火砲",
+		"source": "XDMG",
+		"page": 96,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 19,
+		"hp": 75,
+		"entries": [
+			"火砲利用火藥或奧術力量，以毀滅性的速度射出沉重的鐵球。火砲通常裝在帶輪子的木架上。裝填火砲需要{@action Utilize|XPHB}動作，瞄準則需要另一個{@action Utilize|XPHB}動作。之後，一名操作員可以採取「砲彈」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "砲彈（需裝填並瞄準）",
+				"entries": [
+					"{@atkr r} {@hit 6}，射程 600/2,400 呎。{@h}44（{@damage 8d10}）鈍擊傷害。"
+				],
+				"ENG_name": "Cannonball (Requires Load and Aim)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Cannon"
+	},
+	"Captain A-Hole|RMBRE": {
+		"name": "混帳船長",
+		"isNpc": true,
+		"source": "RMBRE",
+		"page": 21,
+		"size": [
+			"L"
+		],
+		"objectType": "U",
+		"ac": 17,
+		"hp": 50,
+		"speed": 0,
+		"str": 14,
+		"dex": 10,
+		"int": 3,
+		"wis": 3,
+		"cha": 1,
+		"senses": [
+			"blindsight 30 ft. (blind beyond this radius)"
+		],
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"actionEntries": [
+			{
+				"type": "actions",
+				"name": "砲",
+				"entries": [
+					{
+						"type": "attack",
+						"attackType": "RW",
+						"attackEntries": [
+							"命中 {@hit +5}，射程 30 呎，單一目標。"
+						],
+						"hitEntries": [
+							"3（{@damage 1d6}）鈍擊傷害。"
+						]
+					}
+				],
+				"ENG_name": "Cannon"
+			}
+		],
+		"hasToken": true,
+		"hasFluffImages": true,
+		"ENG_name": "Captain A-Hole"
+	},
+	"Clockwork Trebuchet|HBTD": {
+		"name": "發條配重投石機",
+		"source": "HBTD",
+		"page": 4,
+		"size": [
+			"H"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 150,
+		"entries": [
+			"拉動發條配重投石機的拉桿需要{@action Utilize|XPHB}動作。之後，生物可以採取「投石」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "投石（需拉動拉桿）",
+				"entries": [
+					"{@atkr r} {@hit 5}，射程 200/800 呎（無法命中自身 30 呎內的目標）。命中：27（{@damage 5d10}）鈍擊傷害。"
+				],
+				"ENG_name": "Trebuchet Stone (Requires Lever Pull)"
+			}
+		],
+		"tokenCredit": "Ostap Mocanu",
+		"tokenCustom": true,
+		"altArt": [
+			{
+				"name": "發條配重投石機（俯視）",
+				"source": "HBTD",
+				"ENG_name": "Clockwork Trebuchet (Top-Down)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Clockwork Trebuchet"
+	},
+	"Decrepit Mangonel|HBTD": {
+		"name": "破舊的彈射投石機",
+		"source": "HBTD",
+		"page": 5,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 12,
+		"hp": 30,
+		"entries": [
+			"裝填破舊的彈射投石機需要兩個{@action Utilize|XPHB}動作，瞄準則需要一個{@action Utilize|XPHB}動作。之後，生物可以採取「一袋手」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "一袋手（需裝填並瞄準）",
+				"entries": [
+					"一袋蠕動的手被拋射出去，落在距離投石機 30 至 100 呎的一個空間內。袋子落地處出現一群{@creature Swarm of Crawling Claws|XMM}。"
+				],
+				"ENG_name": "Sack of Hands (Requires Load and Aim)"
+			}
+		],
+		"tokenCredit": "Ensemble Studios",
+		"tokenCustom": true,
+		"altArt": [
+			{
+				"name": "破舊的彈射投石機（俯視）",
+				"source": "HBTD",
+				"ENG_name": "Decrepit Mangonel (Top-Down)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Decrepit Mangonel"
+	},
 	"Eldritch Cannon, Flamethrower|TCE": {
 		"name": "異界砲（噴火器）",
 		"source": "TCE",
@@ -40,7 +372,7 @@
 			"unconscious"
 		],
 		"entries": [
-			"{@note 由{@subclassFeature Eldritch Cannon|Artificer|TCE|Artillerist|TCE|3}子職業特性創造。}"
+			"{@note 由{@subclassFeature Eldritch Cannon|Artificer|TCE|Artillerist|TCE|3|TCE|異界砲}子職業特性創造。}"
 		],
 		"actionEntries": [
 			{
@@ -101,7 +433,7 @@
 			"unconscious"
 		],
 		"entries": [
-			"{@note 由{@subclassFeature Eldritch Cannon|Artificer|TCE|Artillerist|TCE|3}子職業特性創造。}"
+			"{@note 由{@subclassFeature Eldritch Cannon|Artificer|TCE|Artillerist|TCE|3|TCE|異界砲}子職業特性創造。}"
 		],
 		"actionEntries": [
 			{
@@ -162,7 +494,7 @@
 			"unconscious"
 		],
 		"entries": [
-			"{@note 由{@subclassFeature Eldritch Cannon|Artificer|TCE|Artillerist|TCE|3}子職業特性創造。}"
+			"{@note 由{@subclassFeature Eldritch Cannon|Artificer|TCE|Artillerist|TCE|3|TCE|異界砲}子職業特性創造。}"
 		],
 		"actionEntries": [
 			{
@@ -245,5 +577,857 @@
 		],
 		"hasToken": true,
 		"ENG_name": "Eldritch Cannon"
+	},
+	"Enchanted Ballista|HBTD": {
+		"name": "附魔弩砲",
+		"source": "HBTD",
+		"page": 4,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 50,
+		"entries": [
+			"裝填附魔弩砲需要{@action Utilize|XPHB}動作。之後，生物可以採取「弩矢」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "弩矢（需裝填）",
+				"entries": [
+					"{@atkr r} {@hit 6}，射程 120/480 呎。{@h}22（{@damage 4d10}）穿刺傷害。"
+				],
+				"ENG_name": "Ballista Bolt (Requires Load)"
+			}
+		],
+		"tokenCredit": "Frank Pusateri",
+		"tokenCustom": true,
+		"altArt": [
+			{
+				"name": "附魔弩砲（俯視）",
+				"source": "HBTD",
+				"ENG_name": "Enchanted Ballista (Top-Down)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Enchanted Ballista"
+	},
+	"Flamethrower Coach|XDMG": {
+		"name": "噴火戰車",
+		"source": "XDMG",
+		"page": 96,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 19,
+		"hp": 100,
+		"entries": [
+			"這輛以魔法驅動的鐵製戰車，頂部架著一座噴火器砲塔。",
+			"戰車最多可容納兩個中型生物。車底的一道鐵艙門可供進出。戰車前方、兩側與後方的窄縫讓乘員能看見外面。戰車內的生物對源自車外的攻擊與其他效應具有{@table Cover|XPHB|四分之三掩護}。",
+			"戰車是為兩名乘員設計的：一名駕駛與一名砲手。駕駛可以採取{@action Utilize|XPHB}動作，利用車內的拉桿與踏板讓戰車移動與轉向；戰車的速度為 30 呎。砲手可以使用「噴火器」動作瞄準並發射。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "噴火器",
+				"entries": [
+					"{@actSave dex} {@dc 15}，60 呎長、5 呎寬{@variantrule Line [Area of Effect]|XPHB|線形}範圍內的每個生物。{@actSaveFail} 14（{@damage 4d6}）火焰傷害，且該生物開始燃燒。{@actSaveSuccess} 僅傷害減半。"
+				],
+				"ENG_name": "Flamethrower"
+			}
+		],
+		"tokenCredit": "Ruane Manning",
+		"tokenCustom": true,
+		"hasToken": true,
+		"ENG_name": "Flamethrower Coach"
+	},
+	"Forge Launcher|HBTD": {
+		"name": "熔爐發射器",
+		"source": "HBTD",
+		"page": 4,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 30,
+		"entries": [
+			"瞄準熔爐發射器需要{@action Utilize|XPHB}動作。之後，生物可以採取「烈焰罐」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "烈焰罐（需瞄準）",
+				"entries": [
+					"{@actSave dex} {@dc 15}，以距離發射器 30 至 300 呎的一點為中心、半徑 20 呎{@variantrule Sphere [Area of Effect]|XPHB|球形}範圍內的每個生物。{@actSaveFail} 14（{@damage 4d6}）火焰傷害。{@actSaveSuccess} 傷害減半。"
+				],
+				"ENG_name": "Fiery Canister (Requires Aim)"
+			}
+		],
+		"tokenCredit": "Sega, Games Workshop",
+		"tokenCustom": true,
+		"altArt": [
+			{
+				"name": "熔爐發射器（俯視）",
+				"source": "HBTD",
+				"ENG_name": "Forge Launcher (Top-Down)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Forge Launcher"
+	},
+	"Generic Object|DMG": {
+		"name": "一般物件",
+		"source": "DMG",
+		"page": 246,
+		"srd": true,
+		"size": [
+			"V"
+		],
+		"objectType": "GEN",
+		"ac": {
+			"special": "Varies (see below)"
+		},
+		"hp": {
+			"special": "Varies (see below)"
+		},
+		"immune": [
+			{
+				"special": "Varies (see below)"
+			}
+		],
+		"entries": [
+			"當角色需要鋸斷繩索、打破窗戶或砸爛吸血鬼的棺材時，唯一確定不變的規則是：只要有足夠的時間與合適的工具，角色能摧毀任何可被摧毀的物件。判定角色能否成功損壞物件時，請運用常識。戰士能用劍砍穿一段石牆嗎？不能，劍多半會比牆先斷。",
+			"就這些規則而言，物件是指單獨、無生命的物品，例如窗戶、門、劍、書、桌子、椅子或石頭，而不是由許多其他物件組成的建築或載具。",
+			{
+				"type": "entries",
+				"name": "物件的數據",
+				"entries": [
+					"當時間是關鍵因素時，你可以為可被摧毀的物件指定護甲等級與生命值，也可以讓它對特定傷害類型具有免疫、抗性與易傷。",
+					{
+						"type": "entries",
+						"name": "護甲等級",
+						"entries": [
+							"物件的護甲等級衡量的是擊打該物件時有多難對它造成傷害（因為物件不可能閃躲）。「物件護甲等級」表提供了各種材質的建議 AC 值。",
+							{
+								"type": "table",
+								"caption": "物件護甲等級",
+								"colLabels": [
+									"材質",
+									"AC"
+								],
+								"colStyles": [
+									"col-6",
+									"col-6"
+								],
+								"rows": [
+									[
+										"布、紙、繩索",
+										"11"
+									],
+									[
+										"水晶、玻璃、冰",
+										"13"
+									],
+									[
+										"木頭、骨頭",
+										"15"
+									],
+									[
+										"石頭",
+										"17"
+									],
+									[
+										"鐵、鋼",
+										"19"
+									],
+									[
+										"秘銀",
+										"21"
+									],
+									[
+										"精金",
+										"23"
+									]
+								]
+							}
+						],
+						"ENG_name": "Armor Class"
+					},
+					{
+						"type": "entries",
+						"name": "生命值",
+						"entries": [
+							"物件的生命值衡量它在喪失結構完整性之前能承受多少傷害。堅韌的物件比脆弱的物件有更多生命值。大的物件通常也比小的物件有更多生命值，除非打壞物件的一小部分就跟打壞整個物件一樣有效。「物件生命值」表提供了大型或更小的脆弱與堅韌物件的建議生命值。",
+							{
+								"type": "table",
+								"caption": "物件生命值",
+								"colLabels": [
+									"體型",
+									"脆弱",
+									"堅韌"
+								],
+								"colStyles": [
+									"col-6",
+									"col-6"
+								],
+								"rows": [
+									[
+										"微型（瓶子、鎖）",
+										"2（1d4）",
+										"5（2d4）"
+									],
+									[
+										"小型（箱子、魯特琴）",
+										"3（1d6）",
+										"10（3d6）"
+									],
+									[
+										"中型（木桶、吊燈）",
+										"4（1d8）",
+										"18（4d8）"
+									],
+									[
+										"大型（貨車、10 呎見方的窗戶）",
+										"5（1d10）",
+										"27（5d10）"
+									]
+								]
+							}
+						],
+						"ENG_name": "Hit Points"
+					},
+					{
+						"type": "entries",
+						"name": "巨型與超巨型物件",
+						"entries": [
+							"一般武器對許多巨型與超巨型物件幾乎沒有用處，例如龐大的雕像、高聳的石柱或巨大的岩石。話雖如此，一支火把就能燒掉一幅巨型掛毯，地震術也能把巨像化為瓦礫。你可以追蹤巨型或超巨型物件的生命值，也可以直接決定該物件能承受作用於它的武器或力量多久。若你要追蹤其生命值，請將它分成數個大型或更小的區段，並分別追蹤每個區段的生命值。摧毀其中一個區段就可能毀掉整個物件。舉例來說，一尊超巨型的人類雕像，可能在它的一條大型的腿降至 0 生命值時倒下。"
+						],
+						"ENG_name": "Huge and Gargantuan Objects"
+					},
+					{
+						"type": "entries",
+						"name": "物件與傷害類型",
+						"entries": [
+							"物件免疫毒素與精神傷害。你可以判定某些傷害類型對特定物件或材質比其他類型更有效。例如，鈍擊傷害很適合用來砸東西，卻不適合割斷繩索或皮革。紙製或布製物件可能對火焰與閃電傷害具有易傷。鎬可以鑿開石頭，卻無法有效地砍倒樹木。一如往常，請運用你的最佳判斷。"
+						],
+						"ENG_name": "Objects and Damage Types"
+					},
+					{
+						"type": "entries",
+						"name": "傷害閾值",
+						"entries": [
+							"城堡牆壁之類的大型物件往往格外堅固，這以傷害閾值來表現。具有傷害閾值的物件免疫所有傷害，除非它從單次攻擊或效應受到的傷害等於或高於其傷害閾值，此時它照常受到傷害。任何未達到或超過該物件傷害閾值的傷害都視為表面傷害，不會減少該物件的生命值。"
+						],
+						"ENG_name": "Damage Threshold"
+					}
+				],
+				"ENG_name": "Statistics for Objects"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Generic Object"
+	},
+	"Gnomeflinger|DSOTDQ": {
+		"name": "地侏拋射機",
+		"source": "DSotDQ",
+		"page": 189,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 100,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"entries": [
+			"地侏拋射機是一種投石機，設計來把生物（而非拋射物）以高拋物線拋出去。地侏拋射機是搭配{@item narycrash|DSotDQ}（見{@adventure 「冒險裝備」|DSotDQ|8|Adventuring Gear}一節）設計的，用來加快交通運輸。這台裝置可容納一個中型或更小的生物。使用前，地侏拋射機必須先裝載並瞄準。裝載需要 1 個動作，瞄準需要 1 個動作，發射需要 1 個動作。",
+			"用一個動作瞄準地侏拋射機時，你將「拋射人員」動作的最大水平距離設定為 60 呎、150 呎或 300 呎。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "拋射人員",
+				"entries": [
+					"地侏拋射機把一個中型或更小的生物拋到水平距離至少 60 呎外，最大水平距離為 60 呎、150 呎或 300 呎，依瞄準投石機時選擇的選項而定。在這段軌跡中，該生物必定會達到 60 呎的垂直高度。",
+					"在這段軌跡中撞上另一個生物或物件的生物，每距離地侏拋射機 10 呎就受到 3（{@damage 1d6}）點鈍擊傷害。"
+				],
+				"ENG_name": "Fling Personnel"
+			}
+		],
+		"hasToken": true,
+		"hasFluffImages": true,
+		"ENG_name": "Gnomeflinger"
+	},
+	"Gulthias Tree|TFTYP": {
+		"name": "古希亞斯樹",
+		"source": "TftYP",
+		"page": 31,
+		"size": [
+			"G"
+		],
+		"objectType": "U",
+		"ac": 10,
+		"hp": 35,
+		"immune": [
+			"necrotic",
+			"poison",
+			"psychic"
+		],
+		"resist": [
+			"piercing"
+		],
+		"vulnerable": [
+			"fire"
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "果實",
+				"entries": [
+					"這棵樹每年會結出兩顆魔法果實（塑能學派）。每顆果實都像蘋果，卻是像囊腫一樣從樹上緩緩擠出來的。",
+					"夏至前一週內，會長出一顆寶石紅的果實。構裝體以外的生物吃下四分之一顆以上，可恢復 70 點生命值。此外，食用者身上的{@condition blinded||目盲}、{@condition deafened||耳聾}與疾病都會終止。",
+					"冬至前一週內，會長出一顆病懨懨的白色果實。吃下四分之一顆以上的人受到 70 點死靈傷害。每顆果實有 {@dice 1d4} 粒種子，種下後會長成無葉的木質灌木，一年後活化為枯枝怪。"
+				],
+				"ENG_name": "Fruit"
+			},
+			{
+				"type": "entries",
+				"name": "樹之奴僕",
+				"entries": [
+					"若有類人生物被綁在古希亞斯樹的樹幹上，受害者會在接下來 24 小時內被整個吸進樹裡。一旦受害者被樹完全吸收，就會成為樹的奴僕，並在 1 小時內被排出來。古希亞斯樹同一時間只能擁有四名奴僕。受害者的皮膚粗糙、灰暗，有如樹皮。奴僕徹底腐化，陣營變為中立邪惡。這樣的生物只為服侍古希亞斯樹與照料它的人（例如貝拉克）而存在。它保有原本的所有能力，並獲得下列特性：",
+					{
+						"type": "entries",
+						"name": "樹膚術",
+						"entries": [
+							"奴僕的 AC 不會低於 16。"
+						],
+						"ENG_name": "Barkskin"
+					},
+					{
+						"type": "entries",
+						"name": "樹之奴僕",
+						"entries": [
+							"若古希亞斯樹死亡，奴僕會在 24 小時後死亡。"
+						],
+						"ENG_name": "Tree Thrall"
+					}
+				],
+				"ENG_name": "Tree Thralls"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Gulthias Tree"
+	},
+	"Ice Troll Heart|IDROTF": {
+		"name": "冰巨魔之心",
+		"source": "IDRotF",
+		"page": 294,
+		"size": [
+			"T"
+		],
+		"objectType": "U",
+		"ac": 13,
+		"hp": 4,
+		"immune": [
+			"acid",
+			"bludgeoning",
+			"cold",
+			"force",
+			"lightning",
+			"necrotic",
+			"piercing",
+			"poison",
+			"psychic",
+			"radiant",
+			"slashing",
+			"thunder"
+		],
+		"entries": [
+			{
+				"type": "entries",
+				"name": "心臟的效應",
+				"entries": [
+					"冰巨魔的心臟即使在巨魔被消滅後依然冰冷。只要巨魔無法再生，就可以安全地從殘骸中取出心臟、拿在手上並保存。冰巨魔的心臟取出後，會成為一件無害的微型物件。在接下來 24 小時內，心臟具有下列魔法特性：",
+					{
+						"type": "list",
+						"items": [
+							"吃下心臟的生物在接下來 24 小時內獲得再生能力，在它每個回合開始時恢復 5 點生命值。若該生物受到酸蝕或火焰傷害，這項特性在它的下個回合開始時不會生效。該生物只有在回合開始時生命值為 0 且未再生的情況下才會死亡。",
+							"若埋在地下一呎或更深的土裡，心臟會融化並召來一場暴風雪，如同{@spell control weather}法術所造成的那樣。心臟融化、暴風雪成形需要 10 分鐘。暴風雪持續 8 小時。",
+							"鬼婆或類似的生物可以舉行儀式，把心臟變成一件魔法護符，其作用如同一片棕黴菌（見{@book 《地下城主指南》|DMG}的「{@hazard Brown Mold}」）。這個效應持續到心臟被摧毀為止。",
+							"熟練煉金師設備的生物可以從心臟中擠出足夠的殘餘液體，與其他煉金材料混合，製成一瓶{@item Potion of Cold Resistance||寒冰抗性藥水}。製作這瓶藥水需要 1 小時。"
+						]
+					}
+				],
+				"ENG_name": "Heart Effects"
+			}
+		],
+		"tokenCredit": "Unfor art",
+		"tokenCustom": true,
+		"hasToken": true,
+		"ENG_name": "Ice Troll Heart"
+	},
+	"Keg Launcher|XDMG": {
+		"name": "毒桶發射器",
+		"source": "XDMG",
+		"page": 96,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 30,
+		"entries": [
+			"一具架在背上的木製投石機，用來拋射裝著毒氣的小木桶。裝填毒桶發射器需要{@action Utilize|XPHB}動作，瞄準則需要另一個{@action Utilize|XPHB}動作。之後，一名操作員可以採取「毒氣桶」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "毒氣桶（需裝填並瞄準）",
+				"entries": [
+					"{@actSave con} {@dc 15}，以距離發射器 30 至 300 呎的一點為中心、半徑 20 呎{@variantrule Sphere [Area of Effect]|XPHB|球形}範圍內的每個生物。{@actSaveFail} 14（{@damage 4d6}）毒素傷害。{@actSaveSuccess} 傷害減半。"
+				],
+				"ENG_name": "Toxic Keg (Requires Load and Aim)"
+			}
+		],
+		"hasToken": true,
+		"hasFluffImages": true,
+		"ENG_name": "Keg Launcher"
+	},
+	"Lightning Cannon|XDMG": {
+		"name": "閃電砲",
+		"source": "XDMG",
+		"page": 96,
+		"size": [
+			"M"
+		],
+		"objectType": "SW",
+		"ac": 19,
+		"hp": 30,
+		"entries": [
+			"閃電砲是一門鑲嵌著奧術符文的小型青銅砲，架在沉重的三腳架裝置上。它會發射劈啪作響的電球。瞄準閃電砲需要{@action Utilize|XPHB}動作，之後一名操作員可以採取「閃電球」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "閃電球（需瞄準）",
+				"entries": [
+					"{@atkr r} {@hit 6}，射程 300/1,200 呎。{@h}22（{@damage 4d10}）閃電傷害。"
+				],
+				"ENG_name": "Lightning Ball (Requires Aim)"
+			}
+		],
+		"tokenCredit": "Games Workshop",
+		"tokenCustom": true,
+		"hasToken": true,
+		"ENG_name": "Lightning Cannon"
+	},
+	"Mangonel|DMG": {
+		"name": "彈射投石機",
+		"source": "DMG",
+		"page": 255,
+		"reprintedAs": [
+			"Mangonel|XDMG"
+		],
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 100,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"entries": [
+			"彈射投石機是一種以弧線拋射重型投石的彈道武器，其投出的石彈可以擊中身處掩護的目標。彈射投石機進行攻擊前必須先進行裝填和瞄準作業。裝填該武器需要花費兩個動作，瞄準需要花費兩個動作，而發射則需要花費一個動作。",
+			"彈射投石機可以投擲標準的重型石彈，它也可以投擲其他彈藥並依不同種類而產生不同的效果。"
+		],
+		"actionEntries": [
+			{
+				"type": "actions",
+				"name": "彈射投石",
+				"entries": [
+					{
+						"type": "attack",
+						"attackType": "RW",
+						"attackEntries": [
+							"命中 {@hit +5}，射程 200/800 呎（無法命中它 60 呎內的目標），單一目標。"
+						],
+						"hitEntries": [
+							"27（{@damage 5d10}）鈍擊傷害。"
+						]
+					}
+				],
+				"ENG_name": "Mangonel Stone"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Mangonel"
+	},
+	"Mangonel|XDMG": {
+		"name": "彈射投石機",
+		"source": "XDMG",
+		"page": 97,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 100,
+		"entries": [
+			"彈射投石機是一種以高拋物線拋擲重型拋射物的投石機，因此能打到牆後的目標。裝填彈射投石機需要兩個{@action Utilize|XPHB}動作，瞄準則需要另外兩個{@action Utilize|XPHB}動作。之後，一名操作員可以採取「投石」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "投石（需裝填並瞄準）",
+				"entries": [
+					"{@atkr r} {@hit 5}，射程 200/800 呎（無法命中自身 60 呎內的目標）。{@h}27（{@damage 5d10}）鈍擊傷害。"
+				],
+				"ENG_name": "Mangonel Stone (Requires Load and Aim)"
+			}
+		],
+		"hasToken": true,
+		"hasFluffImages": true,
+		"ENG_name": "Mangonel"
+	},
+	"Ram|DMG": {
+		"name": "攻城槌",
+		"source": "DMG",
+		"page": 255,
+		"reprintedAs": [
+			"Ram|XDMG"
+		],
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 100,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"entries": [
+			"攻城槌由一座可移動的棚架構成，棚架上以鐵鍊從兩根頂樑懸吊著一根沉重的原木。",
+			"原木前端包著鐵，用來撞破門與路障。",
+			"操作攻城槌至少需要四個中型生物。由於有棚頂，這些操作者對來自上方的攻擊具有{@quickref Cover||3||全掩護}。"
+		],
+		"actionEntries": [
+			{
+				"type": "actions",
+				"name": "攻城槌",
+				"entries": [
+					{
+						"type": "attack",
+						"attackType": "MW",
+						"attackEntries": [
+							"命中 {@hit +8}，觸及 5 呎，單一物件。"
+						],
+						"hitEntries": [
+							"16（{@damage 3d10}）鈍擊傷害。"
+						]
+					}
+				],
+				"ENG_name": "Ram"
+			}
+		],
+		"tokenCredit": "WTactics",
+		"tokenCustom": true,
+		"hasToken": true,
+		"ENG_name": "Ram"
+	},
+	"Ram|XDMG": {
+		"name": "攻城槌",
+		"source": "XDMG",
+		"page": 97,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 100,
+		"entries": [
+			"攻城槌由一座可移動的棚架構成，棚架上以鐵鍊從兩根頂樑懸吊著一根沉重的原木。原木前端包著鐵，用來撞破門與路障。讓攻城槌就位需要三個{@action Utilize|XPHB}動作。之後，一名操作員可以使用「衝撞」動作。",
+			"棚頂讓操作者對來自上方的攻擊與其他效應具有{@table Cover|XPHB|全掩護}。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "衝撞（需就位）",
+				"entries": [
+					"{@atkr m} {@hit 8}，觸及 5 呎。{@h}16（{@damage 3d10}）鈍擊傷害。"
+				],
+				"ENG_name": "Ram (Requires Position)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Ram"
+	},
+	"Siege Tower|XDMG": {
+		"name": "攻城塔",
+		"source": "XDMG",
+		"page": 97,
+		"size": [
+			"G"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 200,
+		"entries": [
+			"攻城塔是一座可移動的木造結構，以樑柱為骨架，牆面釘有木板條。大型木輪或滾木讓士兵或馱獸得以推拉攻城塔。中型或更小的生物可以利用攻城塔登上最高 40 呎的牆頂。塔內的生物對源自塔外的攻擊與其他效應具有{@table Cover|XPHB|全掩護}。"
+		],
+		"hasToken": true,
+		"ENG_name": "Siege Tower"
+	},
+	"Spirit Blister|JTTRC": {
+		"name": "靈魂水泡",
+		"source": "JttRC",
+		"page": 142,
+		"size": [
+			"M"
+		],
+		"objectType": "SW",
+		"ac": 17,
+		"hp": 30,
+		"immune": [
+			"acid",
+			"necrotic",
+			"psychic"
+		],
+		"vulnerable": [
+			"fire",
+			"radiant"
+		],
+		"entries": [
+			"若被摧毀，水泡會伴隨一陣遙遠的齊聲嘆息而破裂。片刻之後，{@adventure 一個幽魂般的身影現身|JttRC|10|Memory of Peace}。"
+		],
+		"hasToken": true,
+		"hasFluffImages": true,
+		"ENG_name": "Spirit Blister"
+	},
+	"Storm Cannon|HBTD": {
+		"name": "風暴砲",
+		"source": "HBTD",
+		"page": 4,
+		"size": [
+			"M"
+		],
+		"objectType": "SW",
+		"ac": 18,
+		"hp": 30,
+		"entries": [
+			"瞄準風暴砲需要{@action Utilize|XPHB}動作，之後生物可以採取「閃電球」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "閃電球（需瞄準）",
+				"entries": [
+					"{@atkr r} {@hit 6}，射程 600/800 呎。{@h}22（{@damage 4d10}）閃電傷害。"
+				],
+				"ENG_name": "Lightning Ball (Requires Aim)"
+			}
+		],
+		"tokenCredit": "Sega, Games Workshop",
+		"tokenCustom": true,
+		"altArt": [
+			{
+				"name": "風暴砲（俯視）",
+				"source": "HBTD",
+				"ENG_name": "Storm Cannon (Top-Down)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Storm Cannon"
+	},
+	"Suspended Cauldron|DMG": {
+		"name": "懸吊大鍋",
+		"source": "DMG",
+		"page": 255,
+		"reprintedAs": [
+			"Suspended Cauldron|XDMG"
+		],
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 19,
+		"hp": 20,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"entries": [
+			"大鍋是一口懸吊起來的鐵鍋，可以輕易傾倒，把裡面的東西潑灑出去。大鍋倒空後必須重新裝滿（內容物通常還得重新加熱）才能再次使用。裝滿大鍋需要三個動作，傾倒需要一個動作。",
+			"大鍋也可以裝其他液體，例如酸液或{@hazard green slime}，效果各有不同。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "滾油",
+				"entries": [
+					"大鍋把滾油倒在正下方 10 呎見方的區域。該區域內的任何生物必須進行一次 {@dc 15} 敏捷豁免，失敗受到 10（{@damage 3d6}）點火焰傷害，成功則傷害減半。"
+				],
+				"ENG_name": "Boiling Oil"
+			}
+		],
+		"tokenCredit": "Funcom",
+		"tokenCustom": true,
+		"hasToken": true,
+		"ENG_name": "Suspended Cauldron"
+	},
+	"Suspended Cauldron|XDMG": {
+		"name": "懸吊大鍋",
+		"source": "XDMG",
+		"page": 97,
+		"size": [
+			"L"
+		],
+		"objectType": "SW",
+		"ac": 19,
+		"hp": 20,
+		"entries": [
+			"一口懸吊起來的鐵鍋，可以輕易傾倒，把裡面的東西潑灑出去。大鍋倒空後必須重新裝滿才能再次使用。裝滿大鍋需要三個{@action Utilize|XPHB}動作。之後，一名操作員可以採取「傾倒」動作。",
+			"大鍋通常裝滿滾油，但也可以裝其他物質，例如酸液或{@hazard green slime|XDMG}（見「{@book 危害|XDMG|2|Hazards}」），效果各有不同。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "傾倒（需大鍋已裝滿）",
+				"entries": [
+					"{@actSave dex} {@dc 15}，大鍋正下方 10 呎見方範圍內的每個生物。{@actSaveFail} 10（{@damage 3d6}）火焰傷害。{@actSaveSuccess} 傷害減半。"
+				],
+				"ENG_name": "Spill (Requires a Full Cauldron)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Suspended Cauldron"
+	},
+	"The Head|RMBRE": {
+		"name": "巨頭",
+		"isNpc": true,
+		"source": "RMBRE",
+		"page": 25,
+		"size": [
+			"L"
+		],
+		"objectType": "U",
+		"ac": 17,
+		"hp": 50,
+		"speed": 0,
+		"str": 14,
+		"dex": 3,
+		"int": 3,
+		"wis": 3,
+		"cha": 10,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"hasToken": true,
+		"ENG_name": "The Head"
+	},
+	"Trebuchet|DMG": {
+		"name": "配重投石機",
+		"source": "DMG",
+		"page": 256,
+		"reprintedAs": [
+			"Trebuchet|XDMG"
+		],
+		"size": [
+			"H"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 150,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"entries": [
+			"配重投石機是一種威力強大的投石機，以高拋物線拋擲彈體，因此能打到掩體後方的目標。",
+			"發射配重投石機之前，必須先裝填並瞄準。裝填這件武器需要兩個動作，瞄準需要兩個動作，發射需要一個動作。",
+			"配重投石機通常拋擲沉重的石塊，不過也可以發射其他種類的拋射物，例如成桶的油或穢物，效果各有不同。"
+		],
+		"actionEntries": [
+			{
+				"type": "actions",
+				"name": "配重投石",
+				"entries": [
+					{
+						"type": "attack",
+						"attackType": "RW",
+						"attackEntries": [
+							"命中 {@hit +5}，射程 300/1,200 呎（無法命中它 60 呎內的目標），單一目標。"
+						],
+						"hitEntries": [
+							"44（{@damage 8d10}）鈍擊傷害。"
+						]
+					}
+				],
+				"ENG_name": "Trebuchet Stone"
+			}
+		],
+		"tokenCredit": "Roman Topchiy",
+		"tokenCustom": true,
+		"hasToken": true,
+		"ENG_name": "Trebuchet"
+	},
+	"Trebuchet|XDMG": {
+		"name": "配重投石機",
+		"source": "XDMG",
+		"page": 97,
+		"size": [
+			"H"
+		],
+		"objectType": "SW",
+		"ac": 15,
+		"hp": 150,
+		"entries": [
+			"配重投石機是一種以高拋物線拋擲彈體的投石機，因此能打到牆後的目標。裝填配重投石機需要兩個{@action Utilize|XPHB}動作，瞄準則需要另外兩個{@action Utilize|XPHB}動作。之後，一名操作員可以採取「投石」動作。"
+		],
+		"actionEntries": [
+			{
+				"type": "entries",
+				"name": "投石（需裝填並瞄準）",
+				"entries": [
+					"{@atkr r} {@hit 5}，射程 300/1,200 呎（無法命中自身 60 呎內的目標）。{@h}44（{@damage 8d10}）鈍擊傷害。"
+				],
+				"ENG_name": "Trebuchet Stone (Requires Load and Aim)"
+			}
+		],
+		"hasToken": true,
+		"ENG_name": "Trebuchet"
+	},
+	"Unborn Palanquin|BMT": {
+		"name": "未生者轎輿",
+		"source": "BMT",
+		"page": 173,
+		"size": [
+			"G"
+		],
+		"objectType": "U",
+		"ac": 20,
+		"hp": 250,
+		"speed": {
+			"walk": 50,
+			"burrow": 30
+		},
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"entries": [
+			"未生者轎輿是一頭齒輪尖嘯作響的蠕蟲狀龐然巨物，由數百隻不知疲倦的{@creature mezzoloth||麥澤羅斯魔}組成。它是獨一無二的載具，既是{@creature Malaxxix|BMT}的主要座駕，也是這名邪魔的巢穴。"
+		],
+		"hasToken": true,
+		"hasFluffImages": true,
+		"ENG_name": "Unborn Palanquin"
 	}
 }

@@ -1,0 +1,1499 @@
+{
+	"Balance and Ruin|BMT": {
+		"name": "平衡與毀滅",
+		"source": "BMT",
+		"page": 29,
+		"trapHazType": "MECH",
+		"rating": [
+			{
+				"tier": 2,
+				"threat": "deadly"
+			}
+		],
+		"entries": [
+			{
+				"type": "inset",
+				"entries": [
+					"一根狹窄的木樑橫貫這間長一百呎、寬五十呎的房間。木樑跨過一個深二十五呎的坑，坑裡滿是緩緩轉動、沾著血跡的齒輪。房間兩側的牆壁各距平衡木 25 呎，由光滑的金屬板構成。"
+				]
+			},
+			"穿越房間最顯而易見的方法是沿著木樑走過去。但這裡藏著危險：木樑近端下方有一塊壓力板，會讓金屬牆發出強大的磁場。",
+			{
+				"type": "entries",
+				"name": "支點",
+				"entries": [
+					"等距排列的石柱看似撐著木樑，但木樑中央下方的那根石柱其實是支點（就像蹺蹺板的中心），讓木樑帶有幾乎看不出來的傾斜。檢視木樑並通過 {@dc 15} 智力（{@skill Investigation}）檢定的生物會注意到這個傾斜。角色們進入房間時，木樑的重量壓在遠端。只要角色與支點之間的那段木樑承受了任何重量，除非另一側放有配重，否則木樑這一端會下沉幾吋，壓住隱藏的壓力板。若木樑上的重量一次全部移除，木樑會停留在它最後所在的位置。"
+				],
+				"ENG_name": "Fulcrum"
+			},
+			{
+				"type": "entries",
+				"name": "平衡木",
+				"entries": [
+					"平衡木是{@book 困難地形|PHB|8|Difficult Terrain}。在木樑上結束回合，或木樑傾斜時位於其上的生物，必須進行一次 {@dc 12} 敏捷豁免以保持平衡。若牆壁已帶磁（見下文），且該生物穿著金屬護甲或持有金屬裝備，則它在這次豁免上具有劣勢。豁免失敗且差距為 4 以內的生物會滑倒、摔在木樑上，並陷入{@condition prone}狀態。豁免失敗且差距為 5 以上的生物會掉進齒輪坑（見下文「齒輪坑」）。"
+				],
+				"ENG_name": "Balance Beam"
+			},
+			{
+				"type": "entries",
+				"name": "磁力牆",
+				"entries": [
+					"當平衡木的重量壓在壓力板上時，金屬牆會發出磁場。任何穿著金屬護甲或持有金屬裝備、且不在木樑上的生物都會被拉向最近的金屬牆並吸附在上面，受到 11（{@damage 2d10}）點鈍擊傷害。吸附在牆上的生物陷入{@condition restrained}狀態，直到磁場解除為止。移除壓力板上的壓力（例如在木樑另一端放上更多重量）就能解除磁場。若全隊都能飛行，你可以拿掉壓力板，改讓磁場每隔 1 分鐘開關一次，或每當有生物在與回合開始時不同的一側結束回合時就開關一次，讓這個陷阱維持應有的挑戰性。穿著金屬護甲或持有金屬裝備的角色若在牆壁帶磁時飛越大廳，會被拉向牆壁並吸附在上面。"
+				],
+				"ENG_name": "Magnetic Walls"
+			},
+			{
+				"type": "entries",
+				"name": "齒輪坑",
+				"entries": [
+					"每當有生物掉進坑裡或在坑中結束回合，該生物必須通過一次 {@dc 17} 敏捷豁免，否則受到 55（{@damage 10d10}）點鈍擊傷害並陷入{@condition prone}狀態。在齒輪上{@condition prone}的生物無法以移動起身，除非先用一個動作拿一件微型物件卡住身下的齒輪。那些齒輪會保持卡住直到該角色的回合結束，屆時那件微型物件會鬆脫、從齒輪間掉落而遺失。"
+				],
+				"ENG_name": "Gear Pit"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Balance and Ruin"
+	},
+	"Bear Trap|XGE": {
+		"name": "捕熊陷阱",
+		"source": "XGE",
+		"page": 113,
+		"trapHazType": "SMPL",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "dangerous"
+			}
+		],
+		"effect": [
+			"{@atk mw} 命中 {@hit 8}，目標為觸發陷阱的生物。命中：5（{@damage 1d10}）點穿刺傷害。這次攻擊無法獲得優勢或劣勢。被陷阱命中的生物速度降為 0，且無法移動，直到它掙脫陷阱為止；掙脫需要該生物或與陷阱相鄰的另一個生物通過一次 {@dc 15} 力量檢定。"
+		],
+		"trigger": [
+			"踩上捕熊陷阱的生物會觸發它。"
+		],
+		"countermeasures": [
+			"通過 {@dc 10} 感知（{@skill Perception}）檢定可發現這個陷阱。使用{@item thieves' tools|phb}通過 {@dc 10} 敏捷檢定可將其解除。"
+		],
+		"entries": [
+			"捕熊陷阱看起來像是一副鋼鐵的利齒，會在被踩上時咬合，夾住生物的腿。這種陷阱被釘在地上，使受害者動彈不得。"
+		],
+		"ENG_name": "Bear Trap"
+	},
+	"Collapsing Roof|XDMG": {
+		"name": "塌方天花板",
+		"source": "XDMG",
+		"page": 100,
+		"srd52": true,
+		"trapHazType": "TRP",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "deadly"
+			}
+		],
+		"trigger": [
+			"有生物越過絆繩"
+		],
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"這個陷阱利用絆繩讓一段不穩固的天花板崩塌。絆繩離地 3 吋，拉在兩根脆弱的支柱之間，絆繩一被扯動支柱就會倒下。",
+			"第一個越過絆繩的生物會使支柱倒下，不穩固的那段天花板隨之崩塌。位於該段天花板下方的每個生物都必須進行一次 {@dc 13} 敏捷豁免，失敗受到 11（{@damage 2d10}）點鈍擊傷害，成功則傷害減半。崩落的瓦礫會讓陷阱所在區域變成{@variantrule Difficult Terrain|XPHB|困難地形}。",
+			{
+				"type": "entries",
+				"name": "偵測與解除",
+				"entries": [
+					"生物可以用一個{@action Search|XPHB|搜索}動作檢視陷阱所在區域，並進行一次 {@dc 11} 感知（{@skill Perception|XPHB|感知}）檢定，成功便會發現絆繩與那段不穩固的天花板。一旦被發現，絆繩可以輕易割斷或避開（無需屬性檢定）。"
+				],
+				"ENG_name": "Detect and Disarm"
+			},
+			{
+				"type": "entries",
+				"name": "更高等級",
+				"entries": [
+					"你可以提高傷害與豁免 DC，讓這個陷阱適用於更高等級，如下表所示。",
+					{
+						"type": "table",
+						"colLabels": [
+							"等級",
+							"鈍擊傷害",
+							"豁免 DC"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-5 text-center",
+							"col-5 text-center"
+						],
+						"rows": [
+							[
+								"5–10",
+								"22（{@damage 4d10}）",
+								"15"
+							],
+							[
+								"11–16",
+								"55（{@damage 10d10}）",
+								"17"
+							],
+							[
+								"17–20",
+								"99（{@damage 18d10}）",
+								"19"
+							]
+						]
+					}
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"ENG_name": "Collapsing Roof"
+	},
+	"Crossbow Trap|XGE": {
+		"name": "強弩陷阱",
+		"source": "XGE",
+		"page": 113,
+		"trapHazType": "SMPL",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "dangerous"
+			}
+		],
+		"effect": [
+			"陷阱對觸發的生物進行兩次攻擊。{@atk rw} 命中 {@hit 8}，兩次攻擊；命中：每次命中造成 5（{@damage 1d10}）點穿刺傷害。這次攻擊無法獲得優勢或劣勢。"
+		],
+		"trigger": [
+			"走過絆繩的生物會觸發陷阱。"
+		],
+		"countermeasures": [
+			"通過 {@dc 15} 感知（{@skill Perception}）檢定可發現絆繩。使用{@item thieves' tools|phb}通過 {@dc 15} 敏捷檢定可解除絆繩，檢定總值為 5 以下則會觸發陷阱。"
+		],
+		"entries": [
+			"強弩陷阱是狗頭人和其他依賴陷阱來保衛自己巢穴的生物們所偏愛的一種陷阱。它是由一條橫跨走廊並連接到一對被仔細藏起的重弩上的絆線所構成。這對重弩會向走廊中任何擾動絆線的對象進行射擊。"
+		],
+		"ENG_name": "Crossbow Trap"
+	},
+	"Danse Macabre|VRGR": {
+		"name": "骷髏之舞",
+		"source": "VRGR",
+		"page": 197,
+		"trapHazType": "HAUNT",
+		"hauntBonus": "+4",
+		"entries": [
+			"這個{@variantrule haunted traps|VRGR|作祟陷阱}影響以一件古老卻完好如新的樂器為中心、半徑 20 呎的球形區域。當有生物進入該區域時，陷阱的徵兆會顯現為遠方哀戚的樂聲。一輪之後，一名幻影演奏者現身，並在接下來 1 分鐘內演奏這件樂器。演奏者演奏期間，任何進入作祟陷阱區域或在其中開始回合的生物都必須通過一次 {@dc 14} 感知豁免，否則會飄升至 20 呎高的空中，並受到{@spell Otto's irresistible dance}法術的影響。虛幻的舞者會在空中加入它們，一同起舞直到演奏者的樂曲結束。起舞中的生物可以用一個動作重新進行豁免，成功則終止自身受到的效應，隨即墜落 20 呎並受到 {@damage 2d6} 點鈍擊傷害。若生物抵抗陷阱或停止起舞的豁免成功，該生物在接下來 24 小時內免疫這個作祟陷阱。",
+			"幻影演奏者演奏期間，作祟陷阱區域內的任何生物都可以用一個動作試著說服演奏者停止演奏，通過 {@dc 14} 魅力（{@skill Persuasion}）檢定即可成功。演奏者停止演奏時，所有受作祟陷阱影響的生物都會擺脫其效應，並安全地飄落地面。"
+		],
+		"ENG_name": "Danse Macabre"
+	},
+	"Death Fog Trap|RTG": {
+		"name": "死霧陷阱",
+		"source": "RtG",
+		"page": 19,
+		"trapHazType": "SMPL",
+		"rating": [
+			{
+				"tier": 2,
+				"threat": "dangerous"
+			}
+		],
+		"effect": [
+			"門猛然關上並鎖住，同時一團毒雲（視為 {@dc 15} 的{@spell cloudkill}法術）充滿整個房間。"
+		],
+		"trigger": [
+			"墓龕遭到盜賊或褻瀆者驚擾。"
+		],
+		"countermeasures": [
+			"通過 {@dc 15} 感知（{@skill Perception}）檢定可注意到門的背面與墓龕裡的奧術符文。通過 {@dc 15} 智力（{@skill Arcana}）檢定可看出它們與一道咒法守護相連。這些符文可以用解除魔法（{@dc 15} 或以 5 環施放）摧毀，如此便會驅散毒雲。"
+		],
+		"entries": [
+			"死者的遺骨設有守護，用來消滅任何盜賊。"
+		],
+		"ENG_name": "Death Fog Trap"
+	},
+	"Faceless Malice|VRGR": {
+		"name": "無面惡意",
+		"source": "VRGR",
+		"page": 197,
+		"trapHazType": "HAUNT",
+		"hauntBonus": "+2",
+		"entries": [
+			"這個{@variantrule haunted traps|VRGR|作祟陷阱}影響牆上一面華麗掛鏡前方邊長 15 呎的立方區域。當一個可見的生物進入該區域時，陷阱的徵兆會顯現為該生物在鏡中扭曲的倒影。若該生物在它下個回合開始時仍在區域內，它必須通過一次 {@dc 12} 感知豁免，否則陷入{@condition blinded}與{@condition deafened}狀態，且無法說話，持續 1 分鐘。此外，一道幻象會讓該生物看起來像是臉孔被抹去了。{@spell remove curse}法術可終止這個效應，摧毀鏡子也可以。鏡子的 AC 為 12，生命值 10，具有鈍擊傷害易傷，並免疫毒素與精神傷害。有生物對抗這個陷阱的豁免失敗後，陷阱在 24 小時內不會再次啟動。"
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Faceless Malice"
+	},
+	"Falling Net|XDMG": {
+		"name": "落網",
+		"source": "XDMG",
+		"page": 100,
+		"srd52": true,
+		"trapHazType": "TRP",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "nuisance"
+			}
+		],
+		"trigger": [
+			"有生物越過絆繩"
+		],
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"落網陷阱利用絆繩放下一張懸在天花板上、加了重物的 10 呎見方{@item Net|XPHB|捕網}。絆繩離地 3 吋，拉在兩根柱子或兩棵樹之間。",
+			"第一個越過絆繩的生物會讓捕網落在自己身上。目標必須通過一次 {@dc 10} 敏捷豁免，否則陷入{@condition Restrained|XPHB|束縛}狀態，直到脫身為止。巨型或更大的目標自動豁免成功。生物可以用一個動作進行一次 {@dc 10} 力量（{@skill Athletics|XPHB|運動}）檢定，成功便能讓自己或觸及範圍內的另一個生物脫離捕網。",
+			{
+				"type": "entries",
+				"name": "偵測與解除",
+				"entries": [
+					"生物可以用一個{@action Search|XPHB|搜索}動作檢視陷阱所在區域，並進行一次 {@dc 11} 感知（{@skill Perception|XPHB|感知}）檢定，成功便會發現絆繩與懸掛的捕網。一旦被發現，絆繩可以輕易割斷或避開（無需屬性檢定）。"
+				],
+				"ENG_name": "Detect and Disarm"
+			},
+			{
+				"type": "entries",
+				"name": "摧毀捕網",
+				"entries": [
+					"將捕網的生命值降至 0，便能釋放困在其中的所有生物（{@item Net|XPHB|捕網}的數據見《{@book 玩家手冊|XPHB}》）。"
+				],
+				"ENG_name": "Destroy the Net"
+			},
+			{
+				"type": "entries",
+				"name": "設置陷阱",
+				"entries": [
+					"持有{@item Thieves' Tools|XPHB|盜賊工具}與陷阱全部零件（包括一張捕網）的生物可以嘗試設置落網陷阱，需通過一次 {@dc 13} 敏捷（{@skill Sleight of Hand|XPHB|手上把戲}）檢定。每次嘗試設置這個陷阱需要 10 分鐘。"
+				],
+				"ENG_name": "Set the Trap"
+			},
+			{
+				"type": "entries",
+				"name": "更高等級",
+				"entries": [
+					"你可以加重捕網，讓這個陷阱適用於更高等級；豁免 DC 與力量（{@skill Athletics|XPHB|運動}）檢定的 DC 會隨之提高：5–10 級為 {@dc 12}，11–16 級為 {@dc 14}，17–20 級為 {@dc 16}。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"ENG_name": "Falling Net"
+	},
+	"Falling Portcullis|XGE": {
+		"name": "斷龍閘",
+		"source": "XGE",
+		"page": 113,
+		"trapHazType": "SMPL",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "moderate"
+			}
+		],
+		"effect": [
+			"一道鐵閘門從天花板落下，封住出口或通道。"
+		],
+		"trigger": [
+			"踩上壓力板的生物會觸發陷阱。"
+		],
+		"countermeasures": [
+			"通過 {@dc 20} 感知（{@skill Perception}）檢定可發現壓力板。使用{@item thieves' tools|phb}通過 {@dc 20} 敏捷檢定可將其解除，檢定總值為 5 以下則會觸發陷阱。"
+		],
+		"entries": [
+			"對某些建造地下城的傢伙而言（例如尋求更多受害者的瘋狂法師），他們可不把算讓他們受害者們輕易逃脫。斷龍閘陷阱可以被設計地特別狡詐，在這個陷阱的壓力板被觸發時，使一道與壓力板有著相當距離的閘門落下。儘管這個陷阱的觸發點位於地城深處，這道閘門仍將封鎖位於百呎之外的地城出口，這意味著直到冒險者們決定打道回府時，才會意識到他們被深困其中。"
+		],
+		"ENG_name": "Falling Portcullis"
+	},
+	"Fiery Blast Trap|XGE": {
+		"name": "爆炎陷阱",
+		"source": "XGE",
+		"page": 113,
+		"trapHazType": "SMPL",
+		"rating": [
+			{
+				"tier": 2,
+				"threat": "dangerous"
+			}
+		],
+		"effect": [
+			"一道邊長 15 呎的立方體火焰噴發，籠罩壓力板與其周圍區域。區域內的每個生物必須進行一次 {@dc 15} 敏捷豁免，失敗受到 24（{@damage 7d6}）點火焰傷害，成功則傷害減半。"
+		],
+		"trigger": [
+			"火神派瑞米烏斯的神殿正受到盜賊威脅，他們想偷走祭司們為向神致敬而陳列在此的火蛋白石。通往內殿入口地板上的鑲嵌畫，會以烈焰斥退入侵者。"
+		],
+		"countermeasures": [
+			"通過 {@dc 15} 感知（{@skill Perception}）檢定可發現這個陷阱影響區域內的灰燼與淡淡的焦痕。通過 {@dc 15} 智力（{@skill Religion}）檢定的生物能塗毀鑲嵌畫邊緣一個伸手可及的關鍵符文，藉此摧毀陷阱；檢定失敗則會使陷阱啟動。對符文成功施放{@spell dispel magic}（{@dc 15}）可摧毀陷阱。"
+		],
+		"entries": [
+			"火神皮雷謬思(Pyremius)的神廟總是承受著竊賊們的威脅。為了防止祭司們獻給他們神祇的火蛋白石不被竊走，通往聖殿內部的地面上裝飾著的馬賽克嵌畫將會對入侵者們降下烈焰的制裁。"
+		],
+		"ENG_name": "Fiery Blast Trap"
+	},
+	"Fire-Casting Statue|XDMG": {
+		"name": "施火雕像",
+		"source": "XDMG",
+		"page": 102,
+		"srd52": true,
+		"trapHazType": "TRP",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "deadly"
+			}
+		],
+		"trigger": [
+			"有生物踏上壓力板"
+		],
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"當生物在一回合內首次踏上這個陷阱的壓力板，或在壓力板上開始其回合時，附近的一尊雕像會噴出 15 呎{@variantrule Cone [Area of Effect]|XPHB|錐形}的魔法火焰。雕像可以是任何模樣，例如一條龍或一名法師。錐形內的每個生物都必須進行一次 {@dc 15} 敏捷豁免，失敗受到 11（{@damage 2d10}）點火焰傷害，成功則傷害減半。",
+			{
+				"type": "entries",
+				"name": "偵測與解除",
+				"entries": [
+					"{@spell Detect Magic|XPHB|偵測魔法}法術會顯示雕像周圍有塑能系魔法靈光。位於雕像 5 呎內的生物可以用一個{@action Search|XPHB|搜索}動作檢視它，並進行一次 {@dc 10} 感知（{@skill Perception|XPHB|感知}）檢定，成功便會在雕像上發現一個微小的符文。找到符文後，角色可以用一個{@action Study|XPHB|研究}動作檢視它，並進行一次 {@dc 15} 智力（{@skill Arcana|XPHB|奧秘}）檢定，成功便能確認該符文的意思是「火」。角色可以用一個動作以銳利的工具刮毀符文，藉此解除陷阱。",
+					"生物可以用一個{@action Search|XPHB|搜索}動作檢視構成壓力板的那塊地板，並進行一次 {@dc 15} 感知（{@skill Perception|XPHB|感知}）檢定，成功便會發現壓力板。將一根{@item Iron Spikes|XPHB|鐵釘}或類似物體楔入壓力板下方，可以防止陷阱觸發。"
+				],
+				"ENG_name": "Detect and Disarm"
+			},
+			{
+				"type": "entries",
+				"name": "更高等級",
+				"entries": [
+					"你可以提高傷害並擴大作用區域，讓這個陷阱適用於更高等級，如下表所示。",
+					{
+						"type": "table",
+						"colLabels": [
+							"等級",
+							"火焰傷害",
+							"作用區域"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-5 text-center",
+							"col-5 text-center"
+						],
+						"rows": [
+							[
+								"5–10",
+								"22（{@damage 4d10}）",
+								"30 呎錐形"
+							],
+							[
+								"11–16",
+								"55（{@damage 10d10}）",
+								"60 呎錐形"
+							],
+							[
+								"17–20",
+								"99（{@damage 18d10}）",
+								"120 呎錐形"
+							]
+						]
+					}
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"ENG_name": "Fire-Casting Statue"
+	},
+	"Hidden Pit|XDMG": {
+		"name": "隱藏陷坑",
+		"source": "XDMG",
+		"page": 102,
+		"srd52": true,
+		"trapHazType": "TRP",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "nuisance"
+			}
+		],
+		"trigger": [
+			"有生物踏上陷坑的蓋板"
+		],
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"這個 10 呎深的陷坑有一片以鉸鏈固定的蓋板，材質與周圍地板完全相同。生物踏上蓋板時，蓋板會像活板門一樣打開，使該生物跌入坑中。此後蓋板保持開啟。",
+			"跌入陷坑的生物受到 3（{@damage 1d6}）點墜落造成的鈍擊傷害。",
+			{
+				"type": "entries",
+				"name": "偵測與解除",
+				"entries": [
+					"生物可以用一個{@action Study|XPHB|研究}動作檢視構成陷坑蓋板的那塊地板，並進行一次 {@dc 15} 智力（{@skill Investigation|XPHB|調查}）檢定，成功便會發現陷坑。一旦發現陷坑，可以將一根鐵釘或類似物體楔入蓋板與周圍地板之間，防止蓋板打開，如此便能安全通過。也可以用{@spell Arcane Lock|XPHB|秘法鎖}或類似魔法讓蓋板保持關閉。"
+				],
+				"ENG_name": "Detect and Disarm"
+			},
+			{
+				"type": "entries",
+				"name": "脫逃",
+				"entries": [
+					"生物需要攀爬速度、攀爬裝備或{@spell Spider Climb|XPHB|蛛行術}之類的魔法，才能爬上陷坑光滑的坑壁。（你可以在坑壁上加些大到足以當作手腳支點的裂縫，讓陷坑比較容易脫身。）"
+				],
+				"ENG_name": "Escape"
+			},
+			{
+				"type": "entries",
+				"name": "更高等級",
+				"entries": [
+					"你可以增加陷坑的深度與傷害，讓這個陷阱適用於更高等級，如下表所示。",
+					{
+						"type": "table",
+						"colLabels": [
+							"等級",
+							"陷坑深度",
+							"鈍擊傷害"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-5 text-center",
+							"col-5 text-center"
+						],
+						"rows": [
+							[
+								"5–10",
+								"30 呎",
+								"10（{@damage 3d6}）"
+							],
+							[
+								"11–16",
+								"60 呎",
+								"21（{@damage 6d6}）"
+							],
+							[
+								"17–20",
+								"120 呎",
+								"42（{@damage 12d6}）"
+							]
+						]
+					}
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"ENG_name": "Hidden Pit"
+	},
+	"Icon of the Lower Aerial Kingdoms|VRGR": {
+		"name": "下層風界諸國聖像",
+		"source": "VRGR",
+		"page": 197,
+		"trapHazType": "HAUNT",
+		"hauntBonus": "+6",
+		"entries": [
+			"這個{@variantrule haunted traps|VRGR|作祟陷阱}附著於一尊不祥雕像周圍半徑 10 呎的球形區域；雕像高 1 呎，刻的是一個兇惡、長著四隻翅膀的鳥形身影。每天一次，當有生物進入該區域時，陷阱的徵兆會顯現為遠方的振翅聲與一陣暖風。若該生物在它下個回合開始時仍在區域內，它必須通過一次 {@dc 16} 感知豁免，否則陷入{@condition charmed}與{@condition incapacitated}狀態，持續 1 分鐘。這些狀態會持續到該生物受到傷害，或有其他人用一個動作搖醒它為止。若受影響的生物維持{@condition charmed}狀態滿 1 分鐘，它便會受到如同{@spell magic jar}法術的影響：它的靈魂進入雕像，並由一個無形邪魔的靈體取而代之。對受影響的生物施放{@spell dispel evil and good}或類似法術，或摧毀雕像，都能終止這個效應。雕像的 AC 為 17，生命值 15，並免疫毒素與精神傷害。",
+			"這個作祟陷阱因邪魔的影響而顯現。對雕像施放{@spell dispel evil and good}可永久解除這個作祟陷阱。"
+		],
+		"ENG_name": "Icon of the Lower Aerial Kingdoms"
+	},
+	"Malfunctioning Phase Transference Emitter|AZFYT": {
+		"name": "故障的相位轉移發射器",
+		"source": "AZfyT",
+		"page": 9,
+		"trapHazType": "CMPX",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "dangerous"
+			}
+		],
+		"trigger": [
+			"電源開關一扳下，陷阱就已經觸發了。"
+		],
+		"initiative": 3,
+		"eActive": [
+			"相位轉移發射器正在過載。發射器的射線與線圈矩陣都很危險。大量電力湧入，使發射器的外殼極為燙手。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "相位光束（先攻順位 20）",
+						"entry": "相位光束射向房間內隨機一個生物。光束的攻擊檢定具有 {@hit +5} 加值。命中時，目標與其所有裝備變得{@condition invisible}且無實體，持續一分鐘。目標唯一的移動方式是 10 呎的飛行速度。目標對非魔法傷害具有抗性，並在力量、敏捷與體質豁免上具有優勢。目標可以穿過固體表面與液體。目標不會墜落，即使陷入{@condition stunned}或其他{@condition incapacitated}的狀態也會維持懸浮在空中。受相位光束影響期間，目標無法操作、以物理方式攻擊未受相位光束影響的物件與生物，也無法與之互動。目標仍可說話與施法。",
+						"ENG_name": "Phase Beam (Initiative 20)"
+					},
+					{
+						"type": "item",
+						"name": "線圈放電（先攻順位 10）",
+						"entry": "弧形電光從矩陣中迸射而出。能源矩陣 30 呎內的每個生物必須進行一次 {@dc 11} 敏捷豁免，失敗則受到 10（{@damage 3d6}）點閃電傷害。",
+						"ENG_name": "Coil Discharge (Initiative 10)"
+					}
+				]
+			}
+		],
+		"eDynamic": [
+			"隨著時間過去，這台裝置會越來越不穩定，最終爆炸。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "相位光束發射得更頻繁",
+						"entry": "從陷阱的第四個回合開始，相位光束除了在先攻順位 20 攻擊，也會在先攻順位 10 攻擊。",
+						"ENG_name": "Phase Beam Fires More Often"
+					},
+					{
+						"type": "item",
+						"name": "房間升溫",
+						"entry": "發射器的熱度讓房間升到難以忍受的高溫。在陷阱第三個回合開始時，房間明顯變熱。在陷阱於先攻順位 20 的第六個回合開始時，所有生物必須通過一次 {@dc 10} 體質豁免，否則獲得一級{@condition exhaustion}。穿著中甲或重甲的生物在這次豁免上具有劣勢，具有火焰免疫或抗性的生物則無需進行這次豁免。在陷阱於先攻順位 20 的第九個回合開始時，須以 {@dc 13} 再進行一次這項豁免。",
+						"ENG_name": "Room Heats Up"
+					},
+					{
+						"type": "item",
+						"name": "爆炸",
+						"entry": "在陷阱第十個回合開始時，整個系統過載，能源矩陣爆炸，對房間內每個人造成 35（{@damage 10d6}）點火焰傷害，使整座設施斷電，並讓俄佐立派出應變小組前來查明狀況。陷阱就此摧毀，戴爾林從稜鏡大學畢業的希望也一併化為烏有。",
+						"ENG_name": "Explosion"
+					}
+				]
+			}
+		],
+		"eConstant": [
+			"發射器與能源線圈矩陣都不宜靠近。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "線圈放電",
+						"entry": "任何在能源矩陣 5 呎內結束回合的生物必須進行一次 {@dc 11} 敏捷豁免，失敗則受到 7（{@damage 2d6}）點閃電傷害。穿著金屬護甲的生物在這次豁免上具有劣勢。",
+						"ENG_name": "Coil Discharge"
+					},
+					{
+						"type": "item",
+						"name": "發射器高熱",
+						"entry": "發射器摸起來很燙。任何碰觸發射器的生物受到 3（{@damage 1d6}）點火焰傷害。",
+						"ENG_name": "Emitter Heat"
+					}
+				]
+			}
+		],
+		"countermeasures": [
+			"有幾種方法可以反制陷阱的主動要素，並阻止爆炸發生。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "相位光束",
+						"entry": "角色可以預判光束的發射順序、鎖住旋轉座，或切斷連接發射器與能源矩陣的電纜。",
+						"ENG_name": "Phase Beam"
+					},
+					{
+						"type": "itemSub",
+						"name": "智力（調查），{@dc 15}",
+						"entry": "能看見發射器的生物可以用一個動作嘗試進行一次智力（{@skill Investigation}）檢定。檢定成功表示該生物從此能預判發射器的發射順序，以該生物為目標的相位光束攻擊具有劣勢。",
+						"ENG_name": "Intelligence (Investigation), {@dc 15}"
+					},
+					{
+						"type": "itemSub",
+						"name": "使用盜賊工具的敏捷檢定或力量檢定，{@dc 15}",
+						"entry": "生物可以嘗試鎖住發射器的旋轉座，讓光束只指向同一處，如此便能輕易避開。檢定成功即視為相位光束攻擊已被解除。嘗試這麼做的生物必須碰觸發射器，因而受到發射器高熱的傷害。",
+						"ENG_name": "Dexterity check using thieves' tools or Strength check, {@dc 15}"
+					},
+					{
+						"type": "itemSub",
+						"name": "攻擊",
+						"entry": "生物可以用一個動作切斷連接發射器的十條電纜之一。每條電纜的 AC 為 5，生命值 3。每切斷兩條電纜（向下取整），相位光束的攻擊加值便減少 1。第十條電纜被切斷後，發射器停止運作，相位光束攻擊與發射器高熱這項常駐要素都會被解除。",
+						"ENG_name": "Attack"
+					},
+					{
+						"type": "item",
+						"name": "線圈放電",
+						"entry": "要關閉線圈，可以解除或癱瘓增幅其能量的魔法，也可以切斷電源。",
+						"ENG_name": "Coil Discharge"
+					},
+					{
+						"type": "itemSub",
+						"name": "智力（奧秘），{@dc 15}",
+						"entry": "通過三次檢定可以癱瘓增幅能源矩陣的魔法。或者，以線圈為目標成功施放一次{@spell dispel magic}（{@dc 13}）也能將其癱瘓。線圈一旦被癱瘓，線圈放電要素與爆炸這項動態要素也隨之解除。發射器仍在運作，從矩陣取得些許電力。嘗試這麼做的生物若在能源矩陣旁結束回合，會受到線圈放電常駐要素的影響。",
+						"ENG_name": "Intelligence (Arcana), {@dc 15}"
+					},
+					{
+						"type": "itemSub",
+						"name": "關閉主電纜",
+						"entry": "能源矩陣附近的牆上有一個以米捷姆合金強化的金屬箱，裡面裝著矩陣的主電源斷路器。若有人在實驗室裡尋找其他值得注意的東西，通過 {@dc 10} 感知（{@skill Perception}）檢定便能發現它。箱子鎖得很牢，要打開需要使用{@item thieves' tools|phb}通過兩次 {@dc 20} 敏捷檢定、通過兩次 {@dc 16} 智力（{@skill Arcana}）檢定，或以魔法武器造成 20 點傷害將其破開。打開之後，扳動開關即可關閉矩陣，解除陷阱的所有要素。",
+						"ENG_name": "Shut off the main power cable"
+					}
+				]
+			}
+		],
+		"entries": [
+			"故障的相位轉移發射器由兩個主要部件組成。供電的電池是一組直徑 10 呎的環形導電線圈矩陣，透過一條牢固的電纜直接接到發電機上。線圈有十個節點，連接到一具架在旋轉座上、高八呎的大型圓柱形鋼製發射器。"
+		],
+		"ENG_name": "Malfunctioning Phase Transference Emitter"
+	},
+	"Morbid Memory|VRGR": {
+		"name": "病態記憶",
+		"source": "VRGR",
+		"page": 198,
+		"trapHazType": "HAUNT",
+		"hauntBonus": "+0",
+		"entries": [
+			"病態記憶陷阱沒什麼危險，卻能揭露一個地方過去的重要片段，令人不安。這個{@variantrule haunted traps|VRGR|作祟陷阱}影響單一房間或 30 呎見方的區域。當有生物進入該區域時，陷阱的徵兆會顯現為微弱、無形的低語。若該生物在它下個回合開始時仍在區域內，一幕虛幻的場景便會上演，重現此地曾發生的某件可怕事件。這段幻景通常持續 1 分鐘。幻景結束時，區域內所有看見幻象的生物必須通過一次 {@dc 10} 感知豁免，否則在接下來 {@dice 1d4} 輪內對該區域陷入{@condition frightened}狀態。{@condition Frightened||恐懼}的生物在它的每個回合都必須採取{@action Dash}動作，並沿最安全的可行路線遠離作祟區域，除非無處可去。作祟陷阱啟動後，24 小時內不會再次啟動。"
+		],
+		"ENG_name": "Morbid Memory"
+	},
+	"Net Trap|XGE": {
+		"name": "捕網陷阱",
+		"source": "XGE",
+		"page": 113,
+		"trapHazType": "SMPL",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "dangerous"
+			}
+		],
+		"effect": [
+			"一張捕網隨著鈴聲落到地上，覆蓋以絆繩為中心、10 呎乘 10 呎的區域。任何完全位於該區域內的生物必須通過一次 {@dc 15} 敏捷豁免，否則陷入{@condition restrained}狀態。生物可以用它的動作進行一次 {@dc 10} 力量檢定，試著讓自己或網中另一個生物脫困。對捕網（AC 10，生命值 20）造成 5 點劈砍傷害也能讓一個生物脫困，且不會傷到該生物。"
+		],
+		"trigger": [
+			"一條橫拉過走廊的絆繩連著一張大網。若絆繩被扯斷，網子就會落在入侵者身上。絆繩上還裝了一只鐵鈴，陷阱啟動時會響起，驚動附近的守衛。"
+		],
+		"countermeasures": [
+			"通過 {@dc 15} 感知（{@skill Perception}）檢定可發現絆繩與捕網。使用{@item thieves' tools|phb}通過 {@dc 15} 敏捷檢定可解除絆繩，且不會讓捕網落下或鈴響；檢定失敗則會使陷阱啟動。"
+		],
+		"entries": [
+			"由於哥布林有著奴役他們敵人的習性，他們偏好使用這種能夠不傷害入侵者的陷阱，好讓其受害者能被用於他們的礦場或其他場所工作。"
+		],
+		"ENG_name": "Net Trap"
+	},
+	"Path of Blades|XGE": {
+		"name": "刀刃之路",
+		"source": "XGE",
+		"page": 118,
+		"trapHazType": "CMPX",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "dangerous"
+			}
+		],
+		"trigger": [
+			"只要有非不死生物進入走廊，這個陷阱就會啟動；只要走廊內還有任何非不死生物，它就會持續運作。"
+		],
+		"initiative": 3,
+		"eActive": [
+			"刀刃之路包括：陷阱前 80 呎的一組迴旋刀刃、接下來 50 呎內從天花板砸向地面再升回天花板的毀滅石柱，以及最後 30 呎的一道恐懼符文。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "迴旋刀刃 (先攻順序 20).",
+						"entry": "這組迴旋刀刃會攻擊每個位於走廊前80呎區域的生物，其攻擊檢定具有+5加值，且會在命中時造成11 ({@dice 2d10})劈砍傷害。",
+						"ENG_name": "Whirling Blades (Initiative 20)"
+					},
+					{
+						"type": "item",
+						"name": "毀滅石柱 (先攻順序 10).",
+						"entry": "每個位於走廊80呎至130呎區域的生物都必須進行一次DC 15的敏捷豁免。若豁免失敗，該生物將受到11 ({@dice 2d10})鈍擊傷害，並被擊倒{@condition Prone||伏地}。若豁免成功，該生物將只受到一半的傷害且不會被擊倒{@condition Prone||伏地}。",
+						"ENG_name": "Crushing Pillars (Initiative 10)"
+					},
+					{
+						"type": "item",
+						"name": "恐懼符文 (先攻順序 10).",
+						"entry": "每個在毀滅石柱區塊之後30呎區域內的生物都必須進行一次DC 15的感知豁免。若豁免失敗，該生物將因符文而陷入{@condition Frightened||恐懼}，且必須立即使用它的反應以向著石柱的方向移動等同於它移動速度的距離。直到陷入{@condition Frightened||恐懼}的生物使用它的動作以進行一次DC 15的感知豁免，並成功通過以解除{@condition Frightened||恐懼}狀態之前，它將無法向著走廊的盡頭移動。",
+						"ENG_name": "Rune of Fear (Initiative 10)"
+					}
+				]
+			}
+		],
+		"eDynamic": [
+			"陷阱運作得越久，刀刃與符文就越危險。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "加速刀刃",
+						"entry": "刀刃的轉動速度將越來越快，且只會在命中目標時慢下來。每當迴旋刀刃在一次攻擊中失手時，它的下一次攻擊將會變得更難以閃避。每次攻擊失手，迴旋刀刃的攻擊加值將會增加2，且它的傷害將會增加3 ({@dice 1d6})點。這些好處將持續直到刀刃命中一個目標，且它會在這之後回復原本的數值。",
+						"ENG_name": "Blades Accelerate"
+					},
+					{
+						"type": "item",
+						"name": "符文防護",
+						"entry": "解除恐懼符文的嘗試將會增強這個陷阱的力量。每當嘗試解除符文的檢定成功，迴旋刀刃和毀滅石柱都會因此各增加5 ({@dice 1d10})點傷害，且對抗恐懼符文的豁免DC將會增加1點。",
+						"ENG_name": "Rune's Defense"
+					}
+				]
+			}
+		],
+		"eConstant": [
+			"迴旋刀刃與恐懼符文會影響每個在這些要素影響區域內結束回合的生物。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "迴旋刀刃",
+						"entry": "任何在刀刃區域內結束它回合的生物都會成為一次攻擊的目標：攻擊加值+5，若命中則造成5 ({@dice 1d10})劈砍傷害。",
+						"ENG_name": "Whirling Blades"
+					},
+					{
+						"type": "item",
+						"name": "恐懼符文",
+						"entry": "任何在距離走廊盡頭30呎內區域結束它回合的生物都必須進行一次對抗恐懼符文效果的豁免檢定。",
+						"ENG_name": "Rune of Fear"
+					}
+				]
+			}
+		],
+		"countermeasures": [
+			"陷阱的每個主動要素都能以特定的反制手段化解。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "迴旋刀刃：",
+						"entry": "角色們可以猛擊刀刃、破壞它的部件、或辨別閃避它們的方式。這些刀刃會在它們的攻擊加值降至-8時被解除。降低其攻擊加值的方式如下。",
+						"ENG_name": "Whirling Blades"
+					},
+					{
+						"type": "itemSub",
+						"name": "智力 (調查), DC 15.",
+						"entry": "以一個動作，一個能夠看見迴旋刀刃的生物可以嘗試進行一次智力（調查）檢定。一次成功的檢定意味著角色已經得以預料刀刃的移動模式，在該生物尚未陷入{@condition Incapacitated||無力}狀態期間，迴旋刀刃對該生物的攻擊都將承受劣勢。",
+						"ENG_name": "Intelligence (Investigation), {@dc 15}"
+					},
+					{
+						"type": "itemSub",
+						"name": "攻擊.",
+						"entry": "一個在區域內的生物可以預備一次攻擊，以在其中一片迴旋刀刃經過時對其展開打擊。該刀刃在對該生物進行的攻擊將具有優勢，該生物接著將對刀刃進行攻擊。每片迴旋刀刃具有AC 15和15點生命值。破壞一片刀刃將會使迴旋刀刃的攻擊加值減少2點。",
+						"ENG_name": "Attack"
+					},
+					{
+						"type": "itemSub",
+						"name": "使用盜賊工具進行敏捷檢定, DC 15.",
+						"entry": "生物可以在被迴旋刀刃攻擊的區域內使用{@item Thieves' Tools|phb|盜賊工具}以挫敗其運作機關。一次成功的檢定將會使迴旋刀刃的攻擊加值減少2點。",
+						"ENG_name": "Dexterity check using thieves' tools, {@dc 15}"
+					},
+					{
+						"type": "item",
+						"name": "毀滅石柱：",
+						"entry": "毀滅石柱沒有任何有效的反制手段。",
+						"ENG_name": "Crushing Pillars"
+					},
+					{
+						"type": "item",
+						"name": "恐懼符文：",
+						"entry": "恐懼符文可以透過成功通過三次DC 15的智力（奧秘）檢定以解除。每次檢定都需要一個動作。一個生物必須要位於走廊的盡頭才能夠嘗試進行這個檢定，且同時只能有一個生物嘗試進行這項任務。一旦一個生物為了這項目的而嘗試進行這個檢定，則直到該生物的下個回合結束前，其他生物都不能嘗試這麼做。或者，藉由對這些符文成功施放三次{@spell Dispel Magic||解除魔法}(DC 13)也能夠解除恐懼符文。",
+						"ENG_name": "Rune of Fear"
+					}
+				]
+			}
+		],
+		"entries": [
+			"深藏在一座標示著失落之城悉尼德西亞(Cynidicea)所在位置的地底金字塔中，這裡是亞歷山大國王與芝諾比阿女王(King Alexander and Queen Zenobia)的陵墓。通往他們長眠處的入口是一條充斥著陷阱的長廊，只有藉由一個巧妙隱藏起來的密門才能進入此處。這座走廊寬20呎，長160呎。這座走廊大部分非常整潔，但在80呎到130呎之間的地面已經毀損且破碎，並被視作困難地形。"
+		],
+		"ENG_name": "Path of Blades"
+	},
+	"Pit Trap|XGE": {
+		"name": "陷坑陷阱",
+		"source": "XGE",
+		"page": 114,
+		"trapHazType": "SMPL",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "moderate"
+			}
+		],
+		"effect": [
+			"觸發陷阱的生物必須進行一次 {@dc 10} 敏捷豁免。豁免成功，該生物抓住坑緣或本能地後退一步。豁免失敗，該生物掉進坑裡，因墜落受到 3（{@damage 1d6}）點鈍擊傷害。"
+		],
+		"trigger": [
+			"任何踩上帆布的人都可能掉進坑裡。"
+		],
+		"countermeasures": [
+			"通過 {@dc 10} 感知（{@skill Perception}）檢定可發現帆布，以及坑緣四周可安全通行的 1 呎寬邊緣。"
+		],
+		"entries": [
+			"最簡易的陷坑陷阱是由地面上一個10呎直徑的坑洞，以及一個將其隱藏起來的破爛帆布所構成，這個帆布上覆蓋著樹葉和泥土以使其看起來像是結實的地面。這種類型的陷阱在堵住怪物巢穴的入口時相當實用，且通常在邊緣有著狹窄的空隙以讓他人能夠繞過陷坑移動。"
+		],
+		"ENG_name": "Pit Trap"
+	},
+	"Poison Needle Trap|XGE": {
+		"name": "毒針陷阱",
+		"source": "XGE",
+		"page": 114,
+		"trapHazType": "SMPL",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "deadly"
+			}
+		],
+		"effect": [
+			"觸發陷阱的生物必須進行一次 {@dc 20} 體質豁免。豁免失敗，該生物受到 14（{@damage 4d6}）點毒素傷害，並陷入{@condition poisoned}狀態 10 分鐘。以此方式{@condition poisoned}期間，該生物陷入{@condition paralyzed}狀態。豁免成功，該生物受到一半傷害，且不會{@condition poisoned}。"
+		],
+		"trigger": [
+			"任何試圖撬鎖或開鎖的人都會觸發陷阱。"
+		],
+		"countermeasures": [
+			"通過 {@dc 20} 感知（{@skill Perception}）檢定可發現毒針，但前提是角色有檢查鎖。使用{@item thieves' tools|phb}通過 {@dc 20} 敏捷檢定可解除毒針，檢定總值為 10 以下則會觸發陷阱。"
+		],
+		"entries": [
+			"埋藏在鎖頭中的一根微小的毒針是個讓掠奪財富的盜賊望而卻步的好方法。這類陷阱通常被安置在寶箱或是通往藏寶室的門上。"
+		],
+		"ENG_name": "Poison Needle Trap"
+	},
+	"Poisoned Darts|XDMG": {
+		"name": "毒鏢",
+		"source": "XDMG",
+		"page": 101,
+		"srd52": true,
+		"trapHazType": "TRP",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "deadly"
+			}
+		],
+		"trigger": [
+			"有生物踏上壓力板"
+		],
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"當生物在一回合內首次踏上這個陷阱的壓力板時，毒鏢會從嵌在周圍牆壁裡的管子射出。藏著這些管子的孔洞被灰塵與蛛網遮蔽，或巧妙地隱藏在淺浮雕、壁畫或濕壁畫之中。",
+			"位於毒鏢射擊路徑上的每個生物都必須通過一次 {@dc 13} 敏捷豁免，否則被 {@dice 1d3} 支毒鏢射中，每支毒鏢造成 3（{@damage 1d6}）點毒素傷害。",
+			{
+				"type": "entries",
+				"name": "偵測與解除",
+				"entries": [
+					"生物可以用一個{@action Search|XPHB|搜索}動作檢視牆壁，並進行一次 {@dc 15} 感知（{@skill Perception|XPHB|感知}）檢定，成功便會發現那些孔洞。用蠟、布或碎屑把所有孔洞塞住，毒鏢就無法射出。",
+					"生物可以用一個{@action Search|XPHB|搜索}動作檢視構成壓力板的那塊地板，並進行一次 {@dc 15} 感知（{@skill Perception|XPHB|感知}）檢定，成功便會發現壓力板。將一根{@item Iron Spikes|XPHB|鐵釘}或類似物體楔入壓力板下方，可以防止陷阱觸發。"
+				],
+				"ENG_name": "Detect and Disarm"
+			},
+			{
+				"type": "entries",
+				"name": "更高等級",
+				"entries": [
+					"你可以提高每支毒鏢的毒素傷害，讓這個陷阱適用於更高等級：5–10 級為 7（{@dice 2d6}），11–16 級為 14（{@dice 4d6}），17–20 級為 24（{@dice 7d6}）。"
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Poisoned Darts"
+	},
+	"Poisoned Needle|XDMG": {
+		"name": "毒針",
+		"source": "XDMG",
+		"page": 102,
+		"srd52": true,
+		"trapHazType": "TRP",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "nuisance"
+			}
+		],
+		"trigger": [
+			"有生物以不當方式開啟設有陷阱的鎖，或解除陷阱失敗"
+		],
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"鎖裡藏著一根毒針。當生物用正確鑰匙以外的任何物體開鎖時，毒針會彈出並刺中該生物。該生物進行一次 {@dc 11} 體質豁免，失敗受到 5（{@damage 1d10}）點毒素傷害，並陷入{@condition Poisoned|XPHB|中毒}狀態 1 小時；成功則只受到一半傷害。",
+			{
+				"type": "entries",
+				"name": "迴避",
+				"entries": [
+					"若以{@spell Knock|XPHB|敲擊術}法術或類似魔法開鎖，陷阱不會觸發。"
+				],
+				"ENG_name": "Avoid"
+			},
+			{
+				"type": "entries",
+				"name": "偵測與解除",
+				"entries": [
+					"生物可以用一個{@action Search|XPHB|搜索}動作檢視設有陷阱的鎖，並進行一次 {@dc 15} 感知（{@skill Perception|XPHB|感知}）檢定，成功便會發現毒針。一旦發現陷阱，角色可以用一個動作嘗試解除它，需通過一次 {@dc 15} 敏捷（{@skill Sleight of Hand|XPHB|手上把戲}）檢定。檢定失敗時，該生物會觸發陷阱。"
+				],
+				"ENG_name": "Detect and Disarm"
+			},
+			{
+				"type": "entries",
+				"name": "更高等級",
+				"entries": [
+					"你可以提高傷害與豁免 DC，讓這個陷阱適用於更高等級，如下表所示。",
+					{
+						"type": "table",
+						"colLabels": [
+							"等級",
+							"毒素傷害",
+							"豁免 DC"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-5 text-center",
+							"col-5 text-center"
+						],
+						"rows": [
+							[
+								"5–10",
+								"11（{@damage 2d10}）",
+								"13"
+							],
+							[
+								"11–16",
+								"22（{@damage 4d10}）",
+								"15"
+							],
+							[
+								"17–20",
+								"55（{@damage 10d10}）",
+								"17"
+							]
+						]
+					}
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"ENG_name": "Poisoned Needle"
+	},
+	"Poisoned Tempest|XGE": {
+		"name": "劇毒風暴",
+		"source": "XGE",
+		"page": 120,
+		"trapHazType": "CMPX",
+		"rating": [
+			{
+				"tier": 3,
+				"threat": "deadly"
+			}
+		],
+		"trigger": [
+			"從任一尊雕像上撬下紅寶石時，這個陷阱就會啟動。每尊雕像的嘴隨即滑開，露出一條沿著喉嚨往下延伸、寬 1 呎的管道。"
+		],
+		"initiative": 3,
+		"eActive": [
+			"這個陷阱會讓房間充滿毒氣與其他致命效應。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "閉鎖之門 (先攻順序 20).",
+						"entry": "房間的四扇門將會猛然關閉，並被魔法鎖住。這個效果只會被觸發一次，且只會在這個要素第一次被觸發時觸發。",
+						"ENG_name": "Locked Doors (Initiative 20)"
+					},
+					{
+						"type": "item",
+						"name": "劇毒氣體 (先攻順序 20).",
+						"entry": "劇毒氣體將淹沒整個房間。每個房間內的生物都必須進行一次DC 20的體質豁免，豁免失敗將受到33 ({@dice 6d10})毒素傷害，豁免成功則只受到一半的傷害。",
+						"ENG_name": "Poison Gas (Initiative 20)"
+					},
+					{
+						"type": "item",
+						"name": "毒氣風暴 (先攻順序 10).",
+						"entries": [
+							"空氣與氣體從陷阱中翻湧而出。擲一顆 d6 並查閱下表。",
+							{
+								"type": "table",
+								"caption": "風暴效果",
+								"colLabels": [
+									"d6",
+									"效果"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"致幻氣體擾亂心智與感官。在房間內進行的所有智力與感知檢定都具有劣勢，直到毒氣風暴要素再次啟動為止。"
+									],
+									[
+										"2",
+										"易爆氣體充滿區域。若有人持有明火，便會引發爆炸。區域內所有生物必須進行一次 {@dc 20} 敏捷豁免，失敗受到 22（{@damage 4d10}）點火焰傷害，成功則傷害減半。火焰隨後熄滅。"
+									],
+									[
+										"3",
+										"致弱氣體充滿房間。在房間內進行的所有力量與敏捷檢定都具有劣勢，直到毒氣風暴要素再次啟動為止。"
+									],
+									[
+										"4",
+										"強風猛襲，房間內每個生物必須通過一次 {@dc 20} 力量豁免，否則被擊倒而陷入{@condition prone}狀態。"
+									],
+									[
+										"5",
+										"煙霧充滿房間。能見度降至 1 呎，直到毒氣風暴要素下次啟動為止。"
+									],
+									[
+										"6",
+										"毒氣灌滿房間，迫使生物如同劇毒氣體要素一般進行豁免。"
+									]
+								]
+							}
+						],
+						"ENG_name": "Tempest (Initiative 10)"
+					}
+				]
+			}
+		],
+		"eDynamic": [
+			"毒氣在房間裡停留得越久，就越致命。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "毒性增強.",
+						"entry": "在它被啟動後每經過一輪，劇毒氣體要素的傷害都將再增加11 ({@dice 2d10})點，最高增加至 55 ({@dice 10d10})點傷害。",
+						"ENG_name": "Increased Potency"
+					}
+				]
+			}
+		],
+		"countermeasures": [
+			"有幾種方法可以克服這個陷阱。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "開啟房門.",
+						"entry": "打開房門是逃離這個陷阱最快的手段，但這幾扇房門都被魔法給守護著。若要打開房門，角色必須先成功通過一次DC 20的感知（感知）檢定以找尋門鎖機關。接著，角色需要成功通過一次DC 20的智力（奧秘）檢定已解除環繞在門鎖週遭的力場球體（{@spell Dispel Magic||解除魔法}對其無效）。使用{@item Thieves' Tools|phb|盜賊工具}成功通過一次DC 20的敏捷檢定可以將門鎖打開。最後，還需要成功通過一次DC 20的力量（運動）檢定以推開房門。上述每個檢定都需要花費一個動作。",
+						"ENG_name": "Open the Doors"
+					},
+					{
+						"type": "item",
+						"name": "關停雕像.",
+						"entry": "雕像的機關可以透過將其口中的管線堵塞而被解除。損壞雕像是一個糟糕的主意，因為這麼做將會使毒氣孔直接暴露敞開。將雕像的生命值歸零（AC 17；20點生命值；對火焰、穿刺、劈砍傷害具有抗性；免疫毒素和精神傷害）、或成功通過一次DC 20的力量檢定以破壞它將會使雕像裂損，並使劇毒氣體的傷害增加5 ({@dice 1d10})點。使用{@item Thieves' Tools|phb|盜賊工具}成功通過一次DC 20的敏捷檢定、或利用斗篷或類似物體成功通過一次DC 15的力量檢定以阻塞雕像的排氣，都會使劇毒氣體的傷害降低5 ({@dice 1d10})點。一旦角色成功通過該檢定，就必須有某個人站在雕像旁邊以維持其阻塞效果。當四個雕像都被這種方式阻塞時，這個陷阱將被解除。",
+						"ENG_name": "Disable the Statues"
+					}
+				]
+			}
+		],
+		"entries": [
+			"這個殘忍的陷阱被建造於消滅那些膽敢潛入蛇人神廟的入侵者。這個陷阱是一個各邊60呎的方形房間，各牆壁的中央都設有一扇5呎寬的石門。在房間的四個角落各自座落著一尊10呎高的巨蛇雕像，盤旋呈進攻之勢。這些雕像的每隻眼睛都是價值200金幣的紅寶石。"
+		],
+		"ENG_name": "Poisoned Tempest"
+	},
+	"Rolling Stone|XDMG": {
+		"name": "滾石",
+		"source": "XDMG",
+		"page": 102,
+		"srd52": true,
+		"trapHazType": "TRP",
+		"rating": [
+			{
+				"tier": 3,
+				"threat": "deadly"
+			},
+			{
+				"tier": 4,
+				"threat": "nuisance"
+			}
+		],
+		"trigger": [
+			"有生物踏上壓力板"
+		],
+		"duration": [
+			{
+				"type": "special",
+				"condition": "直到石球停止滾動"
+			}
+		],
+		"entries": [
+			"當生物踏上隱藏的壓力板時，一顆半徑 5 呎的實心石球會從暗格中釋出並開始滾動。石球與附近所有生物擲先攻；石球的先攻擲骰有 +8 加值。",
+			"在自己的回合，石球朝一個方向移動 60 呎，遇到障礙物改變其方向時則轉向。石球可以穿過生物的空間，生物也可以穿過石球的空間，並將其視為{@variantrule Difficult Terrain|XPHB|困難地形}。每當石球在一回合內首次進入某生物的空間，或有生物在石球滾動時進入石球的空間，該生物必須通過一次 {@dc 15} 敏捷豁免，否則受到 55（{@damage 10d10}）點鈍擊傷害並陷入{@condition Prone|XPHB|伏地}狀態。",
+			"石球撞上牆壁或類似屏障時會停下。它無法轉過直角，但有巧思的地城建造者會在附近通道中設計弧形彎道，讓石球得以繼續前進。",
+			{
+				"type": "entries",
+				"name": "偵測與解除",
+				"entries": [
+					"生物可以用一個{@action Study|XPHB|研究}動作檢視構成壓力板的那塊地板，並進行一次 {@dc 15} 智力（{@skill Investigation|XPHB|調查}）檢定，成功便能推斷出壓力板的作用。將一根鐵釘或類似物體楔入壓力板下方，可以防止陷阱觸發。"
+				],
+				"ENG_name": "Detect and Disarm"
+			},
+			{
+				"type": "entries",
+				"name": "摧毀石球",
+				"entries": [
+					"石球是一個大型物件，AC 17，HP 100，{@variantrule Damage Threshold|XPHB|傷害閾值}為 10，並對毒素與精神傷害具有{@variantrule Immunity|XPHB|免疫}。"
+				],
+				"ENG_name": "Destroy the Stone"
+			},
+			{
+				"type": "entries",
+				"name": "減緩石球",
+				"entries": [
+					"生物可以用一個動作嘗試減緩石球，需進行一次 {@dc 20} 力量（{@skill Athletics|XPHB|運動}）檢定。檢定成功時，石球在其回合的移動距離減少 15 呎。若該距離降為 0，石球便停止移動，不再構成威脅。"
+				],
+				"ENG_name": "Slow the Stone"
+			}
+		],
+		"ENG_name": "Rolling Stone"
+	},
+	"Scything Blade Trap|XGE": {
+		"name": "鐮刃陷阱",
+		"source": "XGE",
+		"page": 114,
+		"trapHazType": "SMPL",
+		"rating": [
+			{
+				"tier": 2,
+				"threat": "dangerous"
+			}
+		],
+		"effect": [
+			"5 呎寬、20 呎長區域內每個中型或更大的生物必須進行一次 {@dc 15} 敏捷豁免，失敗受到 14（{@damage 4d6}）點劈砍傷害，成功則傷害減半。"
+		],
+		"trigger": [
+			"拉桿被拉下時，陷阱啟動。"
+		],
+		"countermeasures": [
+			"拉桿並未隱藏。針對陷阱影響區域內的表面通過 {@dc 15} 感知（{@skill Perception}）檢定，可發現牆壁與地板上的刮痕和血跡。使用{@item thieves' tools|phb}通過 {@dc 15} 敏捷檢定可解除拉桿。"
+		],
+		"entries": [
+			"這個陷阱使用擺動的刀刃以掃過整個房間，威脅著所有附近的人們。通常來說，一個鐮刃陷阱會透過操作拉桿或是其他簡易裝置而被觸發。由於它可以擊敗大型的生物，因此狗頭人特別喜愛這類陷阱。"
+		],
+		"ENG_name": "Scything Blade Trap"
+	},
+	"Sleep of Ages Trap|XGE": {
+		"name": "長眠陷阱",
+		"source": "XGE",
+		"page": 114,
+		"trapHazType": "SMPL",
+		"rating": [
+			{
+				"tier": 3,
+				"threat": "deadly"
+			}
+		],
+		"effect": [
+			"啟動時，這個陷阱會以壓力板為中心，使用 9 環法術位施放{@spell sleep}法術。"
+		],
+		"trigger": [
+			"踩上壓力板會觸發這個陷阱。"
+		],
+		"countermeasures": [
+			"通過 {@dc 20} 感知（{@skill Perception}）檢定可發現壓力板。在壓力板 5 呎內通過 {@dc 20} 智力（{@skill Arcana}）檢定可解除陷阱，檢定總值為 10 以下則會觸發它。對壓力板成功施放{@spell dispel magic}（{@dc 19}）可摧毀陷阱。"
+		],
+		"entries": [
+			"當長眠陷阱被觸發，其壓力板將會釋放出法術，使入侵者們陷入深沉的睡眠中。這讓地城守衛們能夠更輕易地解決這些睡著的傢伙。"
+		],
+		"ENG_name": "Sleep of Ages Trap"
+	},
+	"Sphere of Crushing Doom|XGE": {
+		"name": "末日毀滅滾球",
+		"source": "XGE",
+		"page": 119,
+		"trapHazType": "CMPX",
+		"rating": [
+			{
+				"tier": 2,
+				"threat": "deadly"
+			}
+		],
+		"trigger": [
+			"通往小丑棺木的門一打開，這個陷阱就會啟動。走廊北端開啟一道魔法傳送門，吐出一顆巨大的鋼球，沿著斜坡急速滾下。鋼球抵達斜坡底部時，第二道傳送門會短暫出現，把鋼球傳送回斜坡頂端，如此周而復始。"
+		],
+		"initiative": 1,
+		"initiativeNote": "但請見下文的動態要素",
+		"eActive": [
+			"這個陷阱雖然屬於複雜陷阱，卻只有一個主動要素。這樣就夠了。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "末日毀滅滾球 (先攻順序 20).",
+						"entry": "這個陷阱的主動要素是一顆幾乎佔滿整個10呎寬走廊的鋼鐵滾球，並會在它的回合時向著斜坡底部滾動。每個在滾球路徑上的生物都必須進行一次DC 20的力量豁免。若豁免失敗，該生物將受到22 ({@dice 4d10})鈍擊傷害，並被擊倒{@condition Prone||伏地}。若豁免成功，該生物將只受到一半的傷害且不會被擊倒{@condition Prone||伏地}。阻擋滾球的物體（例如一道咒法牆）則會在其衝擊下受到最大傷害。",
+						"ENG_name": "Sphere of Crushing Doom (Initiative 10)"
+					}
+				]
+			}
+		],
+		"eDynamic": [
+			"滾得越久，滾球就越致命。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "高速輾殺.",
+						"entry": "在它的回合結束後，滾球的速度將會提升，表現為增加11 ({@dice 2d10})點傷害。當它的傷害變為55 ({@dice 10d10})或更高，則它將會在先攻順序20 和 先攻順序10 時行動。",
+						"ENG_name": "Speed Kills"
+					}
+				]
+			}
+		],
+		"countermeasures": [
+			"只要讓滾球停下，或阻止它傳送，就能使陷阱失效。",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "停止滾球.",
+						"entry": "將滾球停下是中斷這個陷阱最簡單的方法。一道{@spell Wall of Force||力牆術}創造的力場牆可以輕易達成這項任務，而任何被擺放在滾球移動路徑上，擁有足夠生命值以吸收滾球傷害而不至於被摧毀的物體也可以達到同樣的效果。",
+						"ENG_name": "Stop the Sphere"
+					},
+					{
+						"type": "item",
+						"name": "中斷傳送門.",
+						"entries": [
+							"每個傳送門都可以透過成功通過三次DC 20的智力（奧秘）檢定以將其無效化，但為了中斷傳送門所進行的分析過程會需要花上一些時間。位於走廊兩端天花板和地面上的黯淡符文涉及了傳送門的運作。一個生物必須先使用一個動作以檢視這組符文，接著再使用一個動作以嘗試破壞這些符文。因為滾球在通過被削弱的傳送門時會導致速度減緩，每次成功的檢定都會使滾球減少11 ({@dice 2d10})點傷害。",
+							"或者，藉由對一組符文成功施放三次{@spell Dispel Magic||解除魔法}(DC 19)也能夠解除一組符文。",
+							"若南端的傳送門被摧毀，則滾球將會猛烈撞上牆閉並停止下來。它會擋住通往小丑墳墓的門，但角色們可以逃脫了。"
+						],
+						"ENG_name": "Disrupt the Portals"
+					}
+				]
+			}
+		],
+		"entries": [
+			"宮廷小丑設計了一個致命的陷阱，以阻止任何打算偷走他魔法愚者帽(magical fool's cap)的竊賊。小丑的墳墓位於一座走廊的盡頭，走廊寬10呎，長150呎，自北向南向下呈現一個陡峭的斜坡。墳墓的入口是一扇位於斜坡底部，走廊南端盡頭的門，鑲嵌在東側的牆面上。"
+		],
+		"ENG_name": "Sphere of Crushing Doom"
+	},
+	"Spiked Pit|XDMG": {
+		"name": "尖刺陷坑",
+		"source": "XDMG",
+		"page": 103,
+		"srd52": true,
+		"trapHazType": "TRP",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "deadly"
+			}
+		],
+		"trigger": [
+			"有生物踏上陷坑的蓋板"
+		],
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"一個 10 呎深的陷坑有一片以鉸鏈固定的蓋板，材質與周圍地板完全相同。生物踏上蓋板時，蓋板會像活板門一樣打開，使該生物跌入坑中，坑底立著削尖的木樁或金屬尖刺。此後蓋板保持開啟。",
+			"跌入陷坑的生物會落在坑底，受到 3（{@damage 1d6}）點墜落造成的鈍擊傷害，外加尖刺造成的 9（{@damage 2d8}）點穿刺傷害。",
+			{
+				"type": "entries",
+				"name": "偵測與解除",
+				"entries": [
+					"生物可以用一個{@action Study|XPHB|研究}動作檢視構成陷坑蓋板的那塊地板，並進行一次 {@dc 15} 智力（{@skill Investigation|XPHB|調查}）檢定，成功便會發現陷坑。一旦發現隱藏的陷坑，可以將一根鐵釘或類似物體楔入蓋板與周圍地板之間，防止蓋板打開，如此便能安全通過。也可以用{@spell Arcane Lock|XPHB|秘法鎖}法術或類似魔法讓蓋板保持關閉。"
+				],
+				"ENG_name": "Detect and Disarm"
+			},
+			{
+				"type": "entries",
+				"name": "脫逃",
+				"entries": [
+					"生物需要攀爬速度、攀爬裝備或{@spell Spider Climb|XPHB|蛛行術}法術之類的魔法，才能爬上陷坑光滑的坑壁。你可以在坑壁上加些大到足以當作手腳支點的裂縫，讓陷坑比較容易脫身。"
+				],
+				"ENG_name": "Escape"
+			},
+			{
+				"type": "entries",
+				"name": "更高等級",
+				"entries": [
+					"你可以增加陷坑的深度與傷害，讓這個陷阱適用於更高等級，如下表所示。",
+					{
+						"type": "table",
+						"colLabels": [
+							"等級",
+							"陷坑深度",
+							"傷害"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-5 text-center",
+							"col-5 text-center"
+						],
+						"rows": [
+							[
+								"5–10",
+								"30 呎",
+								"10（{@damage 3d6}）點鈍擊加 13（{@damage 3d8}）點穿刺"
+							],
+							[
+								"11–16",
+								"60 呎",
+								"21（{@damage 6d6}）點鈍擊加 36（{@damage 8d8}）點穿刺"
+							],
+							[
+								"17–20",
+								"120 呎",
+								"42（{@damage 12d6}）點鈍擊加 57（{@damage 13d8}）點穿刺"
+							]
+						]
+					}
+				],
+				"ENG_name": "At Higher Levels"
+			}
+		],
+		"ENG_name": "Spiked Pit"
+	},
+	"Surface of the Sun|BMT": {
+		"name": "太陽表面",
+		"source": "BMT",
+		"page": 30,
+		"trapHazType": "MAG",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "dangerous"
+			}
+		],
+		"entries": [
+			{
+				"type": "inset",
+				"entries": [
+					"這間挑高房間的牆上爬滿粗壯的藤蔓。房間分成三條平行的長廊，由沒有砌到天花板的磚牆隔開。天花板散發著灼人的熾烈光芒。",
+					"最右邊那條長廊的盡頭，一把巨大的金鑰匙架在劍架上。中間那條長廊的盡頭是一座鳥爪朝上造型的臺座，爪中握著一顆銀球。最左邊那條長廊盡頭的牆壁塑成一顆大骷髏頭，鼻腔看起來像個鑰匙孔。"
+				]
+			},
+			"角色們必須用那把大鑰匙打開骷髏門。銀球是誘人的寶物，但它不順路，而每多耽擱一秒，就得在天花板的高熱下多待一會兒。",
+			"每條長廊寬 15 呎、長 100 呎。天花板高 50 呎，磚牆高 40 呎。",
+			{
+				"type": "entries",
+				"name": "日光傷害",
+				"entries": [
+					"充滿這間陷阱房的熾烈光芒會對區域內的每個生物造成傷害。在先攻順位 20（先攻相同時最後行動），區域內每個生物受到 5（{@damage 1d10}）點光耀傷害。"
+				],
+				"ENG_name": "Sun Damage"
+			},
+			{
+				"type": "entries",
+				"name": "鳥爪臺座",
+				"entries": [
+					"銀球直徑 1 呎，被鳥爪緊握時無法取下。臺座設有陷阱。碰觸銀球會使鳥爪猛然合攏。試圖拿取銀球的生物受到 11（{@damage 2d10}）點劈砍傷害，並因鳥爪鬆開銀球、轉而抓住它而陷入{@condition grappled}狀態（脫逃 {@dc 15}）。鳥爪的 AC 為 19，生命值 10，並免疫毒素與精神傷害。",
+					"通過 {@dc 12} 感知（{@skill Perception}）檢定的角色，可以透過臺座東側的一道窄縫發現啟動鳥爪的壓力板。角色使用盜賊工具通過 {@dc 13} 敏捷檢定可解除壓力板，使鳥爪張開。被鳥爪{@condition grappled||擒抱}的中型或小型生物搆不到這塊壓力板。",
+					"完好無損的銀球是價值 500 金幣的貴重藝術品。"
+				],
+				"ENG_name": "Talons Pedestal"
+			},
+			{
+				"type": "entries",
+				"name": "特大鑰匙",
+				"entries": [
+					"這把金鑰匙長 4 呎、重 100 磅。從劍架上取下一輪後，它會活過來，露出活化物件的真面目（使用{@creature flying sword}數據塊）。鑰匙會盡其所能回到架上，並攻擊任何試圖阻止它的人。若鑰匙因生命值降至 0 而被摧毀，必須先修復（例如使用{@spell Mending}法術）才能用在骷髏門上。"
+				],
+				"ENG_name": "Oversized Key"
+			},
+			{
+				"type": "entries",
+				"name": "骷髏門",
+				"entries": [
+					"特大鑰匙與骷髏雕塑的鼻孔吻合。插入鑰匙並順時針轉動即可打開門閂，門會向內開啟。"
+				],
+				"ENG_name": "Skull Door"
+			},
+			{
+				"type": "entries",
+				"name": "藤蔓",
+				"entries": [
+					"牆上的植物被熾光烤得很脆弱，對攀爬沒什麼幫助。角色必須通過一次 {@dc 12} 力量（{@skill Athletics}）檢定才能攀上牆壁。"
+				],
+				"ENG_name": "Vines"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Surface of the Sun"
+	},
+	"Test of the Empty Moon|BMT": {
+		"name": "空月試煉",
+		"source": "BMT",
+		"page": 31,
+		"trapHazType": "MECH",
+		"rating": [
+			{
+				"tier": 1,
+				"threat": "setback"
+			}
+		],
+		"entries": [
+			{
+				"type": "inset",
+				"entries": [
+					"這間方形地城房間的中央，地板下陷成一個巨大的銀碗。地板上的淺石槽朝碗傾斜。每道石槽上方的天花板都伸出一根下水管。",
+					"北牆的一道鐵閘門擋住去路。閘門上方有一個大型符印，畫的是漸盈的新月，右緣被一絲微光照亮。閘門右側的地板上豎著一根大鐵拉桿。"
+				]
+			},
+			"在碗下方隱藏的磅秤上加上足夠的重量，就能打開閘門。",
+			{
+				"type": "entries",
+				"name": "金屬碗",
+				"entries": [
+					"碗寬 30 呎、深 20 呎，重 2,000 磅。它光滑的質地與形狀使其成為困難地形。進入碗中或在碗內結束回合的生物必須通過一次 {@dc 15} 敏捷豁免，否則陷入{@condition prone}狀態。沒有繩索或魔法之類的協助，不可能爬出碗外。碗緣與地板齊平，但推它時碗會微微晃動。"
+				],
+				"ENG_name": "Metal Bowl"
+			},
+			{
+				"type": "entries",
+				"name": "磅秤與月亮符印",
+				"entries": [
+					"碗下方藏著一根{@item Immovable Rod}，把碗與正下方的大型磅秤隔開。使用{@spell Detect Magic}法術可以偵測到這根權杖。停用權杖（見下文「拉桿」）會使它脫落，讓碗落在磅秤上。這根權杖無法從這個房間取回。",
+					"變化魔法將磅秤與閘門上方的月亮符印連在一起。磅秤上的重量越多，閘門上方的月亮符印就越圓、越亮。當磅秤總共承受 4,000 磅的壓力時，符印會完全亮起，宛如滿月，閘門隨之開啟。只要月亮符印保持滿月，閘門就維持開啟。",
+					{
+						"type": "inset",
+						"entries": [
+							"壓力之下",
+							"機靈的角色或許會想到，把敵人推進碗裡是解決這個陷阱的捷徑。{@spell Telekinesis}或{@spell Levitate}這類法術也可行，能對碗下方的磅秤施加壓力。"
+						]
+					}
+				],
+				"ENG_name": "Weight Scale and Moon Glyph"
+			},
+			{
+				"type": "entries",
+				"name": "拉桿",
+				"entries": [
+					"拉下拉桿時，地板裡的機關會按下停用{@item Immovable Rod}的按鈕。碗的重量使月亮符印亮得像半月。同時，下水管內的閥門打開，放出四隻軟泥怪（見下文「怪物」）與洪水；水從每根水管湧出，順著地板上的石槽流進碗裡。水管每分鐘放出 1,000 磅的水。2 分鐘後，碗就滿了。4 分鐘後，地板積了幾吋深的水，湧入房間的水量足以點亮月亮符印；此時洪水停止，閘門開啟。"
+				],
+				"ENG_name": "Lever"
+			},
+			{
+				"type": "entries",
+				"name": "怪物",
+				"entries": [
+					"拉下拉桿時，四隻{@creature Ochre Jelly||赭凍怪}被放出來，每根水管各滑出一隻，沿著天花板爬行後落在角色身上。每隻赭凍怪重 500 磅。"
+				],
+				"ENG_name": "Monsters"
+			}
+		],
+		"hasFluffImages": true,
+		"ENG_name": "Test of the Empty Moon"
+	}
+}

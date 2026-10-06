@@ -14,6 +14,9 @@ export const TEXT_KEYS = new Set([
 	"footerEntries", "footnotes", "text", "legendaryHeader", "mythicHeader", "actionHeader", "bonusHeader",
 	"reactionHeader", "from", "condition", "title", "other", "note", "additionalEntries",
 	"row", "cells", "lower", "upper", "entriesTemplate", "regionalEffects", "lairActions", "mythicEncounter",
+	// 陷阱（trapshazards.json）與物件（objects.json）專用欄位
+	"trigger", "effect", "countermeasures", "eActive", "eDynamic", "eConstant", "initiativeNote",
+	"actionEntries", "attackEntries", "hitEntries",
 ]);
 
 // 靈能（psionic）的專注效果 focus 是字串；物品的 focus 是陣列／布林，不算文字

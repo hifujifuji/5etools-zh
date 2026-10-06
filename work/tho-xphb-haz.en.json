@@ -1,0 +1,80 @@
+{
+	"batch": "tho-xphb-haz",
+	"items": [
+		{
+			"prop": "hazard",
+			"key": "Burning|XPHB",
+			"s": [
+				"Burning",
+				"A burning creature or object takes {@damage 1d4} Fire damage at the start of each of its turns. As an action, you can extinguish fire on yourself by giving yourself the {@condition Prone|XPHB} condition and rolling on the ground. The fire also goes out if it is doused, submerged, or suffocated."
+			]
+		},
+		{
+			"prop": "hazard",
+			"key": "Dehydration|XPHB",
+			"s": [
+				"Dehydration",
+				"A creature requires an amount of water per day based on its size, as shown in the Water Needs per Day table. A creature that drinks less than half the required water for a day gains 1 {@condition Exhaustion|XPHB} level at the day's end. {@condition Exhaustion|XPHB} caused by dehydration can't be removed until the creature drinks the full amount of water required for a day.",
+				"Water Needs per Day",
+				"Size",
+				"Water",
+				"Tiny",
+				"1/4 gallon",
+				"Small",
+				"1 gallon",
+				"Medium",
+				"1 gallon",
+				"Large",
+				"4 gallons",
+				"Huge",
+				"16 gallons",
+				"Gargantuan",
+				"64 gallons"
+			]
+		},
+		{
+			"prop": "hazard",
+			"key": "Falling|XPHB",
+			"hint": {
+				"Falling": "墜落"
+			},
+			"s": [
+				"Falling",
+				"A creature that falls takes {@damage 1d6} Bludgeoning damage at the end of the fall for every 10 feet it fell, to a maximum of {@damage 20d6}. When the creature lands, it has the {@condition Prone|XPHB} condition unless it avoids taking any damage from the fall.",
+				"A creature that falls into water or another liquid can use its {@variantrule Reaction|XPHB} to make a {@dc 15} Strength ({@skill Athletics|XPHB}) or Dexterity ({@skill Acrobatics|XPHB}) check to hit the surface head or feet first. On a successful check, any damage resulting from the fall is halved."
+			]
+		},
+		{
+			"prop": "hazard",
+			"key": "Malnutrition|XPHB",
+			"s": [
+				"Malnutrition",
+				"A creature needs an amount of food per day based on its size, as shown in the Food Needs per Day table. A creature that eats but consumes less than half the required food for a day must succeed on a {@dc 10} Constitution {@variantrule Saving Throw|XPHB|saving throw} or gain 1 {@condition Exhaustion|XPHB} level at the day's end. A creature that eats nothing for 5 days automatically gains 1 {@condition Exhaustion|XPHB} level at the end of the fifth day as well as an additional level at the end of each subsequent day without food.",
+				"{@condition Exhaustion|XPHB} caused by malnutrition can't be removed until the creature eats the full amount of food required for a day.",
+				"Food Needs per Day",
+				"Size",
+				"Food",
+				"Tiny",
+				"1/4 pound",
+				"Small",
+				"1 pound",
+				"Medium",
+				"1 pound",
+				"Large",
+				"4 pounds",
+				"Huge",
+				"16 pounds",
+				"Gargantuan",
+				"64 pounds"
+			]
+		},
+		{
+			"prop": "hazard",
+			"key": "Suffocation|XPHB",
+			"s": [
+				"Suffocation",
+				"A creature can hold its breath for a number of minutes equal to 1 plus its Constitution modifier (minimum of 30 seconds) before suffocation begins. When a creature runs out of breath or is choking, it gains 1 {@condition Exhaustion|XPHB} level at the end of each of its turns. When a creature can breathe again, it removes all levels of {@condition Exhaustion|XPHB} it gained from suffocating."
+			]
+		}
+	]
+}
