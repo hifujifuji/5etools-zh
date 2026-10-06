@@ -8,6 +8,8 @@ export default [
 	{
 		file: "js/render.js",
 		replace: [
+			// 有無名亞種的種族會多出一筆「X (Base)」基礎條目：名稱被改過，要同步中文名才不會顯示成英文
+			["baseRace.name = `${baseRace.name} (Base)`;", "baseRace.name = `${baseRace.name} (Base)`;\n\t\t\t\t\tif (baseRace.name_zh && (baseRace._zhOf == null || baseRace._zhOf === baseRace._rawName)) { baseRace.name_zh = `${baseRace.name_zh}（基礎）`; baseRace._zhOf = baseRace.name; }"],
 			['entries: ["You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."],', 'entries: ["你能說、讀、寫通用語，以及一種你與 DM 同意適合你角色的其他語言。"],'],
 			['const colLabels = ["Base Height", "Base Weight", "Height Modifier", "Weight Modifier"];', 'const colLabels = ["基礎身高", "基礎體重", "身高調整值", "體重調整值"];'],
 			["weightMod || \"1\"}</span> lb.`", "weightMod || \"1\"}</span> 磅`"],
