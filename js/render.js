@@ -8602,6 +8602,7 @@ Renderer.race = class {
 				if (isAnyNoName) {
 					baseRace._rawName = baseRace.name;
 					baseRace.name = `${baseRace.name} (Base)`;
+					if (baseRace.name_zh && (baseRace._zhOf == null || baseRace._zhOf === baseRace._rawName)) { baseRace.name_zh = `${baseRace.name_zh}（基礎）`; baseRace._zhOf = baseRace.name; }
 				}
 
 				const nameCounts = {};
