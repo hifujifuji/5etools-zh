@@ -30,9 +30,9 @@ if (cmd === "todo") {
 	const {UPSTREAM} = await import("../scripts/util.mjs");
 	const en = JSON.parse(fs.readFileSync(enF));
 	const dist = {}, up = {};
-	for (const f of ["trapshazards.json", "objects.json"]) for (const [root, tgt] of [["dist/data", dist], [`${UPSTREAM}/data`, up]]) {
+	for (const f of ["trapshazards.json", "objects.json", "charcreationoptions.json", "bastions.json"]) for (const [root, tgt] of [["dist/data", dist], [`${UPSTREAM}/data`, up]]) {
 		const j = JSON.parse(fs.readFileSync(`${root}/${f}`));
-		for (const p of ["trap", "hazard", "object"]) for (const e of j[p] || []) tgt[`${p}|${e.name}|${e.source}`.toLowerCase()] = e;
+		for (const p of ["trap", "hazard", "object", "charoption", "facility"]) for (const e of j[p] || []) tgt[`${p}|${e.name}|${e.source}`.toLowerCase()] = e;
 	}
 	const items = [], pre = [];
 	for (const it of en.items) {
@@ -44,7 +44,7 @@ if (cmd === "todo") {
 			const dv = x.isName ? getAt(d, x.path.slice(0, -1))?.name_zh : getAt(d, x.path);
 			if (typeof dv === "string" && cjk(dv)) return dv;
 			if (typeof TM[s] === "string" && TM[s] !== s) return TM[s];
-			if (!/[A-Za-z]{2}/.test(s.replace(/\{@[^{}]*\}/g, ""))) return s.replace(/ \(/g, "（").replace(/\)/g, "）");
+			if (!RE_TEXT_TAG.test(s) && !/[A-Za-z]{2}/.test(s.replace(/\{@[^{}]*\}/g, ""))) return s.replace(/ \(/g, "（").replace(/\)/g, "）");
 			return null;
 		});
 		if (z.every(x => x != null) && !process.env.ALL) continue;

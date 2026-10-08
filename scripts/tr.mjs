@@ -40,6 +40,8 @@ const FILES_BY_PROP = {
 	object: () => ["objects.json"],
 	trap: () => ["trapshazards.json"],
 	hazard: () => ["trapshazards.json"],
+	charoption: () => ["charcreationoptions.json"],
+	facility: () => ["bastions.json"],
 	legendaryGroup: () => ["bestiary/legendarygroups.json"],
 	classFluff: () => fs.readdirSync(path.join(DATA, "class")).filter(f => f.startsWith("fluff-class-")).map(f => `class/${f}`),
 	subclassFluff: () => fs.readdirSync(path.join(DATA, "class")).filter(f => f.startsWith("fluff-class-")).map(f => `class/${f}`),

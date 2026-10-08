@@ -75,7 +75,7 @@ export default [
 					.join("");
 			})
 			.filter(Boolean)
-			.joinConjunct("、", "或");`,
+			.joinConjunct("、", "或").replace(/、或/g, "或");`,
 			],
 			[
 				`		const ptLevelLabel = styleHint === "classic" ? "level" : "Levels";
