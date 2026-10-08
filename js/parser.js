@@ -2362,13 +2362,7 @@ Parser.optFeatureTypeToFull = function (type) {
 	return type;
 };
 
-Parser.CHAR_OPTIONAL_FEATURE_TYPE_TO_FULL = {
-	"SG": "Supernatural Gift",
-	"OF": "Optional Feature",
-	"DG": "Dark Gift",
-	"RF:B": "Replacement Feature: Background",
-	"CS": "Character Secret", // Specific to IDRotF (rules on page 14)
-};
+Parser.CHAR_OPTIONAL_FEATURE_TYPE_TO_FULL = {"SG":"超自然贈禮","OF":"選用特性","DG":"黑暗贈禮","RF:B":"替換特性：背景","CS":"角色秘密"};
 
 Parser.charCreationOptionTypeToFull = function (type) {
 	if (Parser.CHAR_OPTIONAL_FEATURE_TYPE_TO_FULL[type]) return Parser.CHAR_OPTIONAL_FEATURE_TYPE_TO_FULL[type];

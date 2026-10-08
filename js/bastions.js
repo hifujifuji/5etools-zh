@@ -25,7 +25,7 @@ class BastionsSublistManager extends SublistManager {
 	}
 
 	pGetSublistItem (ent, hash) {
-		const facilityType = (ent.facilityType || "Unknown").toTitleCase();
+		const facilityType = ({"basic":"基礎","special":"特殊","unknown":"未知"})[ent.facilityType || "unknown"] ?? ent.facilityType.toTitleCase();
 
 		const cellsText = [
 			facilityType,
@@ -117,7 +117,7 @@ class BastionsPage extends ListPage {
 
 		const hash = UrlUtil.autoEncodeHash(ent);
 		const source = Parser.sourceJsonToAbv(ent.source);
-		const facilityType = (ent.facilityType || "Unknown").toTitleCase();
+		const facilityType = ({"basic":"基礎","special":"特殊","unknown":"未知"})[ent.facilityType || "unknown"] ?? ent.facilityType.toTitleCase();
 
 		eleLi.innerHTML = `<a href="#${hash}" class="ve-lst__row-border ve-lst__row-inner">
 			<span class="ve-col-2 ve-text-center ve-pl-0 ve-pr-1">${facilityType}</span>

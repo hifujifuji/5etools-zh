@@ -7,7 +7,7 @@ class PageFilterBastions extends PageFilterBase {
 		this._typeFilter = new Filter({
 			header: "Type",
 			items: ["basic", "special"],
-			displayFn: it => it.toTitleCase(),
+			displayFn: it => ({"basic":"基礎","special":"特殊","unknown":"未知"})[it] ?? it.toTitleCase(),
 			deselFn: (it) => it === "basic",
 		});
 		this._levelFilter = new RangeFilter({

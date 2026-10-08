@@ -3984,7 +3984,7 @@ Renderer.utils = class {
 
 					return [ptPrereqs, ptNote]
 						.filter(Boolean)
-						.join(". ");
+						.join(ptNote && /[\u4e00-\u9fff]/.test(ptNote) ? "。" : ". ");
 				})
 				.filter(Boolean);
 
@@ -4002,7 +4002,7 @@ Renderer.utils = class {
 					: listOfChoicesTrimmed.joinConjunct(listOfChoicesTrimmed.some(it => / or /.test(it)) ? "; " : ", ", " or ")
 			) + sharedSuffix;
 
-			const ptPrefix = isSkipPrefix ? "" : `Prerequisite${cntPrerequisites === 1 ? "" : "s"}: `;
+			const ptPrefix = isSkipPrefix ? "" : (__t => /[\u4e00-\u9fff]/.test(__t) && !/[A-Za-z]{3}/.test(__t))(`${shared || ""}${joinedChoices || ""}`.replace(/<[^>]*>/g, "")) ? "先決條件：" : `Prerequisite${cntPrerequisites === 1 ? "" : "s"}: `;
 			const ptsSharedOther = [shared, joinedChoices].filter(Boolean);
 			if (ptsSharedOther.length < 2) return `${ptPrefix}${ptsSharedOther.join(", ")}`;
 
@@ -4190,11 +4190,11 @@ Renderer.utils = class {
 				if (isListMode) {
 					return `${it.name.toTitleCase()}${it.subrace != null ? ` (${it.subrace})` : ""}`;
 				} else {
-					const raceName = it.displayEntry ? (isTextOnly ? Renderer.stripTags(it.displayEntry) : Renderer.get().render(it.displayEntry)) : (i === 0 || styleHint !== "classic") ? it.name.toTitleCase() : it.name;
+					const raceName = it.displayEntry ? (isTextOnly ? Renderer.stripTags(it.displayEntry) : Renderer.get().render(it.displayEntry)) : it.name_zh ? it.name_zh : (i === 0 || styleHint !== "classic") ? it.name.toTitleCase() : it.name;
 					return `${raceName}${it.subrace != null ? ` (${it.subrace})` : ""}`;
 				}
 			});
-			return isListMode ? parts.join("/") : parts.joinConjunct(", ", " or ");
+			return isListMode ? parts.join("/") : v.every(it => it.name_zh) ? parts.joinConjunct("、", "或").replace(/、或/g, "或") : parts.joinConjunct(", ", " or ");
 		}
 
 		static _getHtml_background ({v, isListMode, keyOptions, isTextOnly}) {
@@ -4305,7 +4305,7 @@ Renderer.utils = class {
 				return Object.entries(obj).map(([profType, prof]) => {
 					switch (profType) {
 						case "skill": {
-							if (prof === true) return isListMode ? `Skill Expertise` : `Expertise in a skill`;
+							if (prof === true) return isListMode ? `技能專精` : `專精一項技能`;
 							// TODO(Future) speculative; consider revising
 							return isListMode ? `${prof.toTitleCase()} Expertise` : `Expertise in ${prof.toTitleCase()}`;
 						}
@@ -4341,30 +4341,24 @@ Renderer.utils = class {
 		};
 		static _getHtml_spellcastingFocus ({v, isListMode, keyOptions, isTextOnly, styleHint}) {
 			if (isListMode) {
-				if (v === true) return `Spellcasting Focus`;
-				return v.map(n => this._SCF_TYPE_TO_NAME[n] || `Spellcasting ${n.toTitleCase()}`).join("/");
+				if (v === true) return `施法法器`;
+				return v.map(n => this.__zhScf[n] || n).join("/");
 			}
 
-			const ptScfSuffix = styleHint === "classic" ? "spellcasting focus" : "{@variantrule Spellcasting Focus|XPHB}";
+			const ptScfSuffix = styleHint === "classic" ? "施法法器" : "{@variantrule Spellcasting Focus|XPHB|施法法器}";
 			if (v === true) {
-				const ent = `Ability to use a ${ptScfSuffix}`;
+				const ent = `能使用${ptScfSuffix}`;
 				return isTextOnly ? Renderer.stripTags(ent) : Renderer.get().render(ent);
 			}
 
 			const ptScf = v
 				.map((scf, i) => {
-					if (!i) {
-						const a = Parser.getArticle(this._SCF_TYPE_TO_NAME[scf] || scf);
-						if (!this._SCF_TYPE_TO_NAME[scf]) return `${a} ${scf}`;
-						return `${a} {@item ${this._SCF_TYPE_TO_NAME[scf]}${styleHint === "classic" ? "" : "|XPHB"}}`;
-					}
-
-					if (!this._SCF_TYPE_TO_NAME[scf]) return scf;
-					return `{@item ${this._SCF_TYPE_TO_NAME[scf]}${styleHint === "classic" ? "" : "|XPHB"}}`;
+					if (!this._SCF_TYPE_TO_NAME[scf]) return this.__zhScf[scf] ?? scf;
+					return `{@item ${this._SCF_TYPE_TO_NAME[scf].replace("’", "'")}${styleHint === "classic" ? "" : "|XPHB"}|${this.__zhScf[scf] ?? ""}}`;
 				})
-				.joinConjunct(", ", " or ");
+				.joinConjunct("、", "或").replace(/、或/g, "或");
 
-			const ent = `Ability to use ${ptScf} as a ${ptScfSuffix}`;
+			const ent = `能使用${ptScf}作為${ptScfSuffix}`;
 
 			return (isTextOnly ? Renderer.stripTags : Renderer.get().render.bind(Renderer.get()))(ent);
 		}
@@ -4396,10 +4390,12 @@ Renderer.utils = class {
 				: `${v.joinConjunct(", ", " or ")} Culture`;
 		}
 
+		static __zhOrg = {"Purple Dragon Knights":"紫龍騎士","Cult of the Dragon":"龍之教團","Emerald Enclave":"翡翠飛地","Harpers":"豎琴手同盟","Lords' Alliance":"領主聯盟","Order of the Gauntlet":"鐵腕教團","Red Wizards":"紅袍法師","Zhentarim":"散塔林會"};
+		static __zhScf = {"arcane":"奧術法器","druid":"德魯伊法器","holy":"聖徽","tool":"工具","artisansTool":"工匠工具"};
 		static _getHtml_membership ({v, isListMode}) {
 			return isListMode
-				? v.join("/")
-				: `Membership in the ${v.joinConjunct(", ", " or ")}`;
+				? v.map(it => this.__zhOrg[it] ?? it).join("/")
+				: `${v.map(it => this.__zhOrg[it] ?? it).joinConjunct("、", "或").replace(/、或/g, "或")}的成員`;
 		}
 
 		static _getHtml_group ({v, isListMode}) {
@@ -9314,7 +9310,7 @@ Renderer.traphazard = class {
 					.join("");
 			})
 			.filter(Boolean)
-			.joinConjunct("、", "或");
+			.joinConjunct("、", "或").replace(/、或/g, "或");
 	}
 
 	static getRenderedTrapHazardRatingPart (rating, {styleHint} = {}) {
@@ -14413,8 +14409,8 @@ Renderer.charoption = class {
 	}
 
 	static _OPTION_TYPE_ENTRIES = {
-		"RF:B": `{@note You may replace the standard feature of your background with this feature.}`,
-		"CS": `{@note See the {@adventure Character Secrets|IDRotF|0|character secrets} section for more information.}`,
+		"RF:B": `{@note 你可以用這項特性取代你背景的標準特性。}`,
+		"CS": `{@note 更多資訊見{@adventure 角色秘密|IDRotF|0|character secrets}一節。}`,
 	};
 
 	static getOptionTypePreText (ent) {
@@ -14848,9 +14844,11 @@ Renderer.deck = class {
 };
 
 Renderer.facility = class {
+	static __zhSpace = {"cramped":"狹小","roomy":"寬敞","vast":"廣闊"};
+	static __zhOrder = {"craft":"製作","empower":"賦能","harvest":"收成","maintain":"維護","recruit":"招募","research":"研究","trade":"貿易"};
 	static _getFacilityRenderableEntriesMeta_space ({ent}) {
 		if (!ent.space) return null;
-		return ent.space.map(spc => Renderer.facility._getSpaceEntry(spc, {isIncludeCostTime: ent.facilityType === "basic"})).joinConjunct(", ", " or ");
+		return ent.space.map(spc => Renderer.facility._getSpaceEntry(spc, {isIncludeCostTime: ent.facilityType === "basic"})).joinConjunct("、", "或").replace(/、或/g, "或");
 	}
 
 	static _getFacilityRenderableEntriesMeta_hirelings ({ent}) {
@@ -14858,16 +14856,16 @@ Renderer.facility = class {
 
 		const out = ent.hirelings
 			.map(hire => {
-				const ptSpace = hire.space ? ` {@style (${hire.space.toTitleCase()})|muted}` : "";
+				const ptSpace = hire.space ? `{@style （${Renderer.facility.__zhSpace[hire.space] ?? hire.space.toTitleCase()}）|muted}` : "";
 
 				if (hire.exact != null) return `${hire.exact}${ptSpace}`;
 				if (hire.min != null && hire.max != null) return `${hire.min}\u2013${hire.max}${ptSpace}`;
-				if (hire.min != null) return `${hire.min}+ (see below${ptSpace ? ";" : ""}${ptSpace})`;
+				if (hire.min != null) return `${hire.min}+（見下文${ptSpace ? "；" : ""}${ptSpace}）`;
 
 				return null;
 			})
 			.filter(Boolean)
-			.joinConjunct(", ", " or ");
+			.joinConjunct("、", "或").replace(/、或/g, "或");
 
 		if (out) return out;
 		return null;
@@ -14875,7 +14873,7 @@ Renderer.facility = class {
 
 	static _getFacilityRenderableEntriesMeta_orders ({ent}) {
 		if (!ent.orders) return null;
-		return ent.orders.map(it => it.toTitleCase()).joinConjunct(", ", " or ");
+		return ent.orders.map(it => Renderer.facility.__zhOrder[it] ?? it.toTitleCase()).joinConjunct("、", "或").replace(/、或/g, "或");
 	}
 
 	static getFacilityRenderableEntriesMeta (ent) {
@@ -14887,22 +14885,22 @@ Renderer.facility = class {
 				type: "wrappedHtml",
 				html: Renderer.utils.prerequisite.getHtml(ent.prerequisite, {styleHint: "one", isSkipPrefix: true}),
 			};
-			entsList.push({type: "item", name: `Prerequisite:`, entry: entRendered});
+			entsList.push({type: "item", name: `先決條件：`, entry: entRendered});
 		} else if (ent.facilityType !== "basic") {
-			entsList.push({type: "item", name: `Prerequisite:`, entry: "None"});
+			entsList.push({type: "item", name: `先決條件：`, entry: "無"});
 		}
 
 		const entrySpace = this._getFacilityRenderableEntriesMeta_space({ent});
-		if (entrySpace) entsList.push({type: "item", name: `Space:`, entry: entrySpace});
+		if (entrySpace) entsList.push({type: "item", name: `空間：`, entry: entrySpace});
 
 		const entryHirelings = this._getFacilityRenderableEntriesMeta_hirelings({ent});
-		if (entryHirelings) entsList.push({type: "item", name: `Hirelings:`, entry: entryHirelings});
+		if (entryHirelings) entsList.push({type: "item", name: `雇工：`, entry: entryHirelings});
 
 		const entryOrders = this._getFacilityRenderableEntriesMeta_orders({ent});
-		if (entryOrders) entsList.push({type: "item", name: `Order${ent.orders.length !== 1 ? "s" : ""}:`, entry: entryOrders});
+		if (entryOrders) entsList.push({type: "item", name: `命令：`, entry: entryOrders});
 
 		return {
-			entryLevel: ent.level ? `{@i Level ${ent.level} Bastion Facility}` : null,
+			entryLevel: ent.level ? `{@i ${ent.level} 級堡壘設施}` : null,
 			entriesDescription: [
 				entsList.length
 					? {
@@ -14938,14 +14936,14 @@ Renderer.facility = class {
 		const sq = Renderer.facility._SPACE_TO_SQUARES[spc];
 
 		const ptAdditional = [
-			sq ? `{@tip ${sq} sq|${sq} squares}` : null,
+			sq ? `{@tip ${sq} 格|${sq} 格}` : null,
 			Renderer.facility._getSpaceEntry_getPriceTimeEntry({spc, isIncludeCostTime}),
 		]
 			.filter(Boolean)
-			.join("; ");
+			.join("；");
 		const ptSuffix = ptAdditional ? ` {@style [${ptAdditional}]|muted;small}` : "";
 
-		return [spc.toTitleCase(), ptSuffix].filter(Boolean).join(" ");
+		return [Renderer.facility.__zhSpace[spc] ?? spc.toTitleCase(), ptSuffix].filter(Boolean).join(" ");
 	}
 
 	static _getSpaceEntry_getPriceTimeEntry ({spc, isIncludeCostTime}) {
@@ -14955,8 +14953,8 @@ Renderer.facility = class {
 
 		const {cost, time} = costTimeInfo;
 
-		const ptTxt = `${cost} GP, ${time} days`;
-		const ptTipBasic = `${cost} GP and ${time} days to add`;
+		const ptTxt = `${cost} GP、${time} 天`;
+		const ptTipBasic = `增建需 ${cost} GP 與 ${time} 天`;
 
 		const spcPrev = Renderer.facility._SPACE_PROGRESSION[Renderer.facility._SPACE_PROGRESSION.indexOf(spc) - 1];
 		const costTimeInfoPrev = Renderer.facility._SPACE_TO_COST_TIME_BASIC[spcPrev];
@@ -14964,7 +14962,7 @@ Renderer.facility = class {
 
 		const {cost: costPrev, time: timePrev} = costTimeInfoPrev;
 
-		return `{@tip ${ptTxt}|${ptTipBasic}, or, ${cost - costPrev} GP and ${time - timePrev} days to expand from a ${spcPrev.toTitleCase()} facility}`;
+		return `{@tip ${ptTxt}|${ptTipBasic}；或從${Renderer.facility.__zhSpace[spcPrev]}設施擴建，需 ${cost - costPrev} GP 與 ${time - timePrev} 天}`;
 	}
 
 	/* -------------------------------------------- */
