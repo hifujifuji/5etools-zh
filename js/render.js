@@ -7180,7 +7180,7 @@ Renderer.class = class {
 
 		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
-		return `<div><b>Tool Proficiencies:</b> <span>${Renderer.class.getRenderedToolProfs(cls.startingProficiencies.tools, {styleHint})}</span></div>`;
+		return `<div><b>工具熟練：</b> <span>${Renderer.class.getRenderedToolProfs(cls.startingProficiencies.tools, {styleHint})}</span></div>`;
 	}
 
 	static getHtmlPtArmorProficiencies (cls, {styleHint = null}) {
@@ -13002,44 +13002,44 @@ Renderer.item = class {
 				if (item.scfType === "arcane" && item.source !== Parser.SRC_ERLW) {
 					Renderer.item._initFullEntries(item);
 					const wrapped = styleHint === "classic"
-						? "An arcane focus is a special item\u2014an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item\u2014designed to channel the power of arcane spells. A {@class sorcerer}, {@class warlock}, or {@class wizard} can use such an item as a spellcasting focus."
-						: "An Arcane Focus takes a specific form and is bejeweled or carved to channel arcane magic. A {@class Sorcerer|XPHB}, {@class Warlock|XPHB}, or {@class Wizard|XPHB} can use such an item as a {@variantrule Spellcasting Focus|XPHB}.";
+						? "奧術法器是一種特殊物品——法球、水晶、權杖、特製的法杖、魔杖般的木棒或類似物品——設計來引導奧術法術的力量。{@class sorcerer}、{@class warlock}或{@class wizard}可以用這類物品作為施法法器。"
+						: "奧術法器有特定的形式，並鑲有寶石或經過雕刻以引導奧術魔法。{@class Sorcerer|XPHB|術士}、{@class Warlock|XPHB|契術師}或{@class Wizard|XPHB|法師}可以用這類物品作為{@variantrule Spellcasting Focus|XPHB|施法法器}。";
 					item._fullEntries.push({type: "wrapper", wrapped, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type.SCF"}});
 				}
 				if (item.scfType === "druid") {
 					Renderer.item._initFullEntries(item);
 					const wrapped = styleHint === "classic"
-						? "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A {@class druid} can use such an object as a spellcasting focus."
-						: "A Druidic Focus takes a specific form and is carved, tied with ribbon, or painted to channel primal magic. A {@class Druid|XPHB} or {@class Ranger|XPHB} can use such an object as a {@variantrule Spellcasting Focus|XPHB}.";
+						? "德魯伊法器可以是一枝槲寄生或冬青、以紫杉或其他特殊木材製成的魔杖或權杖、從活樹上整根取下的法杖，或結合了聖獸羽毛、毛皮、骨頭與牙齒的圖騰物。{@class druid}可以用這類物件作為施法法器。"
+						: "德魯伊法器有特定的形式，並經過雕刻、繫上緞帶或彩繪以引導原初魔法。{@class Druid|XPHB|德魯伊}或{@class Ranger|XPHB|遊俠}可以用這類物件作為{@variantrule Spellcasting Focus|XPHB|施法法器}。";
 					item._fullEntries.push({type: "wrapper", wrapped, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type.SCF"}});
 				}
 				if (item.scfType === "holy") {
 					Renderer.item._initFullEntries(item);
 					const wrapped = styleHint === "classic"
-						? "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
-						: "A Holy Symbol takes a specific form and is bejeweled or painted to channel divine magic. A {@class Cleric|XPHB} or {@class Paladin|XPHB} can use a Holy Symbol as a {@variantrule Spellcasting Focus|XPHB}.";
+						? "聖徽是某位神祇或某個神系的象徵。它可以是一枚刻有神祇象徵符號的護符、以同樣的符號精心雕刻或鑲嵌在盾牌上的徽記，或一只裝著聖物碎片的小盒子。牧師或聖騎士可以用聖徽作為施法法器。要以此方式使用聖徽，施法者必須將它握在手中、明顯地佩戴在身上，或將它置於盾牌上。"
+						: "聖徽有特定的形式，並鑲有寶石或經過彩繪以引導神聖魔法。{@class Cleric|XPHB|牧師}或{@class Paladin|XPHB|聖騎士}可以用聖徽作為{@variantrule Spellcasting Focus|XPHB|施法法器}。";
 					item._fullEntries.push({type: "wrapper", wrapped, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type.SCF"}});
 				}
 			} else {
 				if (item.scfType === "arcane") {
 					Renderer.item._initFullEntries(item);
 					const wrapped = styleHint === "classic"
-						? "An arcane focus is a special item designed to channel the power of arcane spells. A {@class sorcerer}, {@class warlock}, or {@class wizard} can use such an item as a spellcasting focus."
-						: "An Arcane Focus takes a specific form and is bejeweled or carved to channel arcane magic. A {@class Sorcerer|XPHB}, {@class Warlock|XPHB}, or {@class Wizard|XPHB} can use such an item as a {@variantrule Spellcasting Focus|XPHB}.";
+						? "奧術法器是設計來引導奧術法術力量的特殊物品。{@class sorcerer}、{@class warlock}或{@class wizard}可以用這類物品作為施法法器。"
+						: "奧術法器有特定的形式，並鑲有寶石或經過雕刻以引導奧術魔法。{@class Sorcerer|XPHB|術士}、{@class Warlock|XPHB|契術師}或{@class Wizard|XPHB|法師}可以用這類物品作為{@variantrule Spellcasting Focus|XPHB|施法法器}。";
 					item._fullEntries.push({type: "wrapper", wrapped, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type.SCF"}});
 				}
 				if (item.scfType === "druid") {
 					Renderer.item._initFullEntries(item);
 					const wrapped = styleHint === "classic"
-						? "A {@class druid} can use this object as a spellcasting focus."
-						: "A Druidic Focus takes a specific form and is carved, tied with ribbon, or painted to channel primal magic. A {@class Druid|XPHB} or {@class Ranger|XPHB} can use such an object as a {@variantrule Spellcasting Focus|XPHB}.";
+						? "{@class druid}可以用這件物件作為施法法器。"
+						: "德魯伊法器有特定的形式，並經過雕刻、繫上緞帶或彩繪以引導原初魔法。{@class Druid|XPHB|德魯伊}或{@class Ranger|XPHB|遊俠}可以用這類物件作為{@variantrule Spellcasting Focus|XPHB|施法法器}。";
 					item._fullEntries.push({type: "wrapper", wrapped, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type.SCF"}});
 				}
 				if (item.scfType === "holy") {
 					Renderer.item._initFullEntries(item);
 					const wrapped = styleHint === "classic"
-						? "A holy symbol is a representation of a god or pantheon. A {@class cleric} or {@class paladin} can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
-						: "A Holy Symbol takes a specific form and is bejeweled or painted to channel divine magic. A {@class Cleric|XPHB} or {@class Paladin|XPHB} can use a Holy Symbol as a {@variantrule Spellcasting Focus|XPHB}.";
+						? "聖徽是某位神祇或某個神系的象徵。{@class cleric}或{@class paladin}可以用聖徽作為施法法器。要以此方式使用聖徽，施法者必須將它握在手中、明顯地佩戴在身上，或將它置於盾牌上。"
+						: "聖徽有特定的形式，並鑲有寶石或經過彩繪以引導神聖魔法。{@class Cleric|XPHB|牧師}或{@class Paladin|XPHB|聖騎士}可以用聖徽作為{@variantrule Spellcasting Focus|XPHB|施法法器}。";
 					item._fullEntries.push({type: "wrapper", wrapped, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type.SCF"}});
 				}
 			}
@@ -13072,7 +13072,7 @@ Renderer.item = class {
 		if (item.type === Parser.ITM_TYP__TOOL || item.type === Parser.ITM_TYP__ARTISAN_TOOL || item.type === Parser.ITM_TYP__INSTRUMENT || item.type === Parser.ITM_TYP__GAMING_SET) { // tools, artisan's tools, instruments, gaming sets
 			Renderer.item._initFullAdditionalEntries(item);
 			item._fullAdditionalEntries.push({type: "wrapper", wrapped: {type: "hr"}, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type"}});
-			item._fullAdditionalEntries.push({type: "wrapper", wrapped: `{@note See the {@variantrule Tool Proficiencies|XGE} entry for more information.}`, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type"}});
+			item._fullAdditionalEntries.push({type: "wrapper", wrapped: `{@note 更多資訊見{@variantrule Tool Proficiencies|XGE|工具熟練}條目。}`, data: {[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "type"}});
 		}
 
 		// Add additional sources for all instruments and gaming sets
@@ -13135,7 +13135,8 @@ Renderer.item = class {
 						{
 							type: "list",
 							items: item.variants.map(({base, specificVariant}) => {
-								return `{@item ${base.name}|${base.source}} ({@item ${specificVariant.name}|${specificVariant.source}})`;
+								const __z = e => e.name_zh && (e._zhOf == null || e._zhOf === e.name) ? `|${e.name_zh}` : "";
+								return `{@item ${base.name}|${base.source}${__z(base)}}（{@item ${specificVariant.name}|${specificVariant.source}${__z(specificVariant)}}）`;
 							}),
 						},
 					],
