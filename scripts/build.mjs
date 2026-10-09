@@ -210,6 +210,15 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	}
 }
 
+// ---- 3⁗ʹ. 異教中文簡介（i18n/cult-intro.json，鍵「英文名|來源」）：長篇設定敘事不全文翻譯，改以本站自撰的概述置頂，原文保留 ----
+{
+	const intro = readJson(path.join(I18N, "cult-intro.json"));
+	for (const {json} of loaded) for (const p of ["cult", "boon"]) for (const c of json[p] || []) {
+		const t = intro[`${c.name}|${c.source}`];
+		if (t && Array.isArray(c.entries)) { c.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(t)}); bump("cultIntro", "full"); }
+	}
+}
+
 // ---- 3a. 職業起始裝備／熟練字串（i18n/class-equipment.json，完全比對） ----------------
 {
 	const eq = readJson(path.join(I18N, "class-equipment.json"));
@@ -293,7 +302,7 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 // ---- 3a'. 種族／背景／專長中完全比對的句子（含 _copy、_versions；i18n/exact-strings.json） --------
 {
 	const ex = readI18n(path.join(I18N, "exact-strings.json"));
-	const PROPS = new Set(["race", "subrace", "background", "feat", "raceFluff", "backgroundFluff", "variantrule", "item", "card", "deck", "classFeature", "trap", "hazard", "object", "charoption", "facility", "reward", "optionalfeature"]);
+	const PROPS = new Set(["race", "subrace", "background", "feat", "raceFluff", "backgroundFluff", "variantrule", "item", "card", "deck", "classFeature", "trap", "hazard", "object", "charoption", "facility", "reward", "optionalfeature", "cult", "boon"]);
 	// name 只在「巢狀的條目」（有 entries）裡翻；replace／names 等是 _copy 用來比對的鍵，不能動
 	// _copy 裡的條目名稱會被後續的 _copy 用來比對，一律不翻
 	const walk = (v, depth = 0, inCopy = false) => {

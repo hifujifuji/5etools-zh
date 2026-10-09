@@ -30,9 +30,9 @@ if (cmd === "todo") {
 	const {UPSTREAM} = await import("../scripts/util.mjs");
 	const en = JSON.parse(fs.readFileSync(enF));
 	const dist = {}, up = {};
-	for (const f of ["trapshazards.json", "objects.json", "charcreationoptions.json", "bastions.json", "rewards.json", "magicvariants.json", "items.json", "items-base.json"]) for (const [root, tgt] of [["dist/data", dist], [`${UPSTREAM}/data`, up]]) {
+	for (const f of ["trapshazards.json", "objects.json", "charcreationoptions.json", "bastions.json", "rewards.json", "magicvariants.json", "items.json", "items-base.json", "cultsboons.json"]) for (const [root, tgt] of [["dist/data", dist], [`${UPSTREAM}/data`, up]]) {
 		const j = JSON.parse(fs.readFileSync(`${root}/${f}`));
-		for (const p of ["trap", "hazard", "object", "charoption", "facility", "reward", "magicvariant", "itemGroup", "baseitem", "itemTypeAdditionalEntries"]) for (const e of j[p] || []) tgt[`${p}|${e.name}|${e.source ?? e.inherits?.source}`.toLowerCase()] = e;
+		for (const p of ["trap", "hazard", "object", "charoption", "facility", "reward", "magicvariant", "itemGroup", "baseitem", "itemTypeAdditionalEntries", "cult", "boon"]) for (const e of j[p] || []) tgt[`${p}|${e.name}|${e.source ?? e.inherits?.source}`.toLowerCase()] = e;
 	}
 	const items = [], pre = [];
 	for (const it of en.items) {

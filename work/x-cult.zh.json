@@ -1,0 +1,322 @@
+[
+	[
+		"阿斯莫德教團",
+		"{@deity Asmodeus|Faerûnian|scag|阿斯莫德}要求九獄各教團中所有掌握權力與領導地位的教徒向他效忠。他的教團凌駕於其他所有教團之上。",
+		"任何領導魔鬼教團的 NPC 都必須承認阿斯莫德的權能。作為回報，這些領袖中最夠格的人會獲得「奈瑟斯的索求」特性。",
+		"奈瑟斯的索求",
+		"在這個生物的每個回合開始時，牠可以選擇牠 30 呎內一個牠看得見的盟友。被選中的盟友失去 10 點生命值，這個生物則恢復同樣數量的生命值。若這個生物陷入{@condition incapacitated}狀態，牠不做選擇；改由 30 呎內最近的盟友成為被選中的盟友。"
+	],
+	[
+		"死誕世界阿特羅普斯教團",
+		"腐化凝視 {@recharge}",
+		"教徒以牠 30 呎內一個牠看得見的生物為目標。目標必須通過一次 {@dc 15} 體質豁免，否則受到 16（{@damage 3d10}）點死靈傷害，並陷入{@condition poisoned}狀態 1 分鐘。{@condition poisoned||中毒}的目標可以在它每個回合結束時重新進行豁免，成功則終止自身受到的效應。"
+	],
+	[
+		"巴力西卜教團",
+		"恢復榮譽與敬重，並讓奪走它們的人付出代價",
+		"任何曾經失勢蒙羞的 NPC 或怪物",
+		"{@spell Minor illusion}（戲法）、{@spell disguise self}（1 環）、{@spell phantasmal force}（2 環）、{@spell major image}（3 環）",
+		"巴力西卜通常招攬的是個人而非教團。他向那些因失敗而渴求救贖的人提供希望。",
+		"他賜予一項恩賜，即「巴力西卜之道」特性，讓受寵的教徒能在盟友失敗之後顯得出色。",
+		"巴力西卜之道",
+		"這個生物可以在牠的回合用一個附贈動作，選擇牠 30 呎內一個牠看得見的盟友。直到這個生物的下個回合開始前，牠在所有屬性檢定與攻擊檢定上獲得優勢，被選中的盟友則在所有屬性檢定、攻擊檢定與豁免檢定上承受劣勢。"
+	],
+	[
+		"巴風特教團",
+		"巴風特賜予他的教徒特殊能力。他所有的信徒都獲得下方的「迷宮記憶」特性。他賜予一般追隨者「精準追蹤者」特性，教團領袖則獲得「煽動獵手」特性。",
+		"迷宮記憶",
+		"這個生物能完美記住牠走過的任何路徑。",
+		"精準追蹤者",
+		"這個生物可以用一個附贈動作，以魔法與一個牠看得見的生物建立心靈連結。在接下來一小時內，只要目標與牠位於同一存在位面，這個生物可以用一個附贈動作得知目標目前的距離與方向。若這個生物陷入{@condition incapacitated}狀態，或對另一個目標使用這項能力，連結便會終止。",
+		"煽動獵手（短休或長休後充能）",
+		"這個生物可以用一個動作，讓牠 30 呎內每個具有「精準追蹤者」特性的盟友，用反應對該盟友的「精準追蹤者」目標進行一次武器攻擊。"
+	],
+	[
+		"貝贊洛教團",
+		"信徒、新入教者與祭司使用{@creature acolyte||侍僧}、{@creature cultist||教徒}、{@creature cult fanatic||狂熱教徒}、{@creature mage||法師}或{@creature priest||祭司}；格林南特使用{@creature gladiator||角鬥士}、{@creature guard||衛兵}、{@creature knight||騎士}、{@creature veteran||老兵}，偶爾是騎著不死馬（數據同大型{@creature zombie||殭屍}）的{@creature wight||屍妖}；滲透者與刺客則使用{@creature assassin||刺客}、{@creature bandit||強盜}、{@creature bandit captain||強盜頭目}、{@creature spy||間諜}或{@creature thug||打手}。",
+		"{@spell Chill touch}（戲法）、{@spell hex}（1 環）、{@spell phantasmal force}（2 環）、{@spell fear}（3 環）",
+		"貝贊洛的教徒",
+		"Cabalists are uniformly fanatical, tormented into zealotry by pain, greed, and the distinctive power of their dementia magic. From the Cabal's beginning, spellcasters known as dementists have manipulated the very stuff of nightmares, reshaping reality and creating items and creatures from the parallel realm of \"dementia space.\" Though it has been greatly changed by centuries of hardship, dementia magic remains a powerful asset of the Cabal, and cabalists value prowess with such magic above everything except the favor of Belzenlok.",
+		"信徒、新入教者與祭司",
+		"Most members of the Cabal serve it in a religious capacity. Cells of Cabal cultists are found throughout the world, worshiping Belzenlok in secret. Once inducted into the Cabal more formally, cultists shave their heads and become initiates, assisting priests in their dark rites. As Cabal priests rise through the ranks, they dress more ornately, often wearing headgear or high collars that set them apart from initiates. Most Cabal clerics are dementists, and carry with them implements of sacrifice and veneration. But a few are more martial in nature, wielding heavy blades and viewing combat as the most active form of sacrifice to Belzenlok.",
+		"格林南特",
+		"Cabal knights are all members of an order called the Grimnant. The armor they wear has been melted down from scavenged or stolen pieces and forged anew, painted in a black lacquer and with its edges honed. Often, the armor is molded to mirror aspects of the demon Belzenlok, a form of idol worship that Grimnant knights believe gains them power and favor.",
+		"Grimnants are brutal combatants who arrive after the Cabal's infiltration has weakened a target. Most have some minor knowledge of dementia magic or carry trinkets that give them the ability to wield dark magic in battle, but they're not generally known as spellcasters. Appearing stoic from afar, most Grimnant knights experience a bloodlust in battle and enjoy going in close for the kill.",
+		"滲透者與刺客",
+		"In its cells throughout the world, the Cabal has need for more than prayer. Whether striking from the shadows or venturing out in full regalia to spread open terror, Belzenlok's infiltrators and assassins emphasize what many fear: that the Cabal is already everywhere.",
+		"貝贊洛的教徒可以獲得「惡魔活力」特性。受寵的教徒或教團領袖還可以擁有「不潔繫索」特性。",
+		"惡魔活力（1/日）",
+		"這個生物可以用一個附贈動作，或在生命值將降至 0 時用一個反應，恢復 1 點生命值，並獲得等同其體質調整值加上其生命骰上限數量的臨時生命值。",
+		"不潔繫索",
+		"當這個生物 30 呎內的一名盟友死亡時，牠可以用一個反應恢復等同該死亡生物體質調整值兩倍的生命值。"
+	],
+	[
+		"沸泥之湖的波瑞姆教團",
+		"波瑞姆的擁抱（1/日）",
+		"教徒碰觸牠 5 呎內的一個生物。目標必須通過一次 {@dc 15} 敏捷豁免，否則會被黏稠、冒著蒸氣的泥漿裹住。被裹住期間，目標的速度減半、無法使用反應，並在它每個回合開始時受到 10（{@damage 3d6}）點火焰傷害。這個效應持續 1 分鐘，或直到教徒陷入{@condition incapacitated}狀態或死亡，或直到目標浸入水中為止。"
+	],
+	[
+		"狄摩高根教團",
+		"狄摩高根的追隨者通常是受主人低語驅使的獨行殺手。他最受眷顧的追隨者獲得「混亂雙心」特性。",
+		"混亂雙心",
+		"這個生物在所有智力、感知與魅力豁免上具有優勢。"
+	],
+	[
+		"狄斯帕特教團",
+		"暗中取得並運用的權力、以勒索施加的影響力、掌握他人與組織的弱點和醜事藉以控制他們",
+		"{@creature Acolyte}, {@creature bandit}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature mage}, {@creature noble}, {@creature spy}",
+		"{@spell Guidance}（戲法）、{@spell identify}（1 環）、{@spell see invisibility}（2 環）、{@spell clairvoyance}（3 環）",
+		"狄斯帕特以秘密為交易籌碼，用秘密換取生物的靈魂。他的教團通常拿秘密向魔鬼換取其他情報，並常策劃陰謀，意圖推翻並取代政府或宗教組織。",
+		"叛逃的{@creature mind flayer||奪心魔}有時會與狄斯帕特締約，尋求永遠擺脫{@creature Elder Brain|vgm}支配所需的秘密。",
+		"教徒可以獲得「煉獄洞察」特性。教團領袖還可能擁有「惱人脫逃」特性。",
+		"煉獄洞察（短休或長休後充能）",
+		"這個生物可以用一個附贈動作，使牠在當前回合結束前進行的所有屬性檢定與攻擊檢定獲得優勢。",
+		"惱人脫逃（1/日）",
+		"當這個生物受到傷害時，牠可以用一個反應將該傷害降為 0，並傳送至多 60 呎到一處牠看得見的未被佔據空間。"
+	],
+	[
+		"菲爾娜教團",
+		"控制他人的情感，把他們變成傀儡與玩物",
+		"{@creature Acolyte}, {@creature archmage}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature knight}, {@creature noble}, {@creature priest}, {@creature spy}",
+		"{@spell Friends}（戲法）、{@spell charm person}（1 環）、{@spell suggestion}（2 環）、{@spell hypnotic pattern}（3 環）",
+		"菲爾娜是操弄人心的高手。渴望情場得意，或想成為一群狂熱追隨者所愛戴之領袖的凡人，會受吸引而與她交易。",
+		"她的教徒可以獲得「煉獄忠誠」特性。教團領袖還可以獲得「至死不渝」特性。",
+		"煉獄忠誠",
+		"當這個生物看得見牠 30 呎內一個具有「至死不渝」特性的生物時，牠在豁免檢定上具有優勢。",
+		"至死不渝（短休或長休後充能）",
+		"當這個生物看得見的一名盟友生命值降至 0 時，牠可以用一個反應讓該盟友改為降至 1 點生命值，並獲得等同這個生物魅力值 + 其生命骰數量一半的臨時生命值。"
+	],
+	[
+		"弗拉茲厄布魯教團",
+		"弗拉茲厄布魯賜予他的教徒「騙徒之眼」特性。",
+		"騙徒之眼",
+		"這個生物在感知（{@skill Insight}或{@skill Perception}）檢定上具有優勢。",
+		"這個生物可以用一個附贈動作，察覺牠 15 呎內所有幻象與躲藏生物的位置。"
+	],
+	[
+		"格里昂教團",
+		"格里昂賜予他的教徒特殊能力。教團成員可以獲得「粉碎重擊」特性。教團領袖還可以獲得「不屈之力」特性。",
+		"粉碎重擊（短休或長休後充能）",
+		"這個生物可以用一個附贈動作，使牠在接下來一分鐘內下一次命中的近戰武器攻擊檢定的傷害擲骰獲得加值。該加值等同其力量調整值（最低 +1）。",
+		"不屈之力 {@recharge 5}",
+		"當這個生物受到傷害時，牠可以用一個反應擲一顆 {@dice d10}，並從該傷害中減去擲出的數字。"
+	],
+	[
+		"格里昂教團",
+		"體能上的強悍、以力量支配他人、摧毀一切反對者",
+		"{@creature Bandit}, {@creature bandit captain}, {@creature berserker}, {@creature cult fanatic}, {@creature cultist}, {@creature gladiator}, {@creature thug}, {@creature tribal warrior}, {@creature veteran||veterans}",
+		"{@spell Shillelagh}（戲法）、{@spell wrathful smite}（1 環）、{@spell enhance ability}（2 環）、{@spell aura of vitality}（3 環）",
+		"格里昂雖已遭到罷黜，仍有締結交易的能力。他尤其愛與追求蠻力的人打交道。任何好戰的怪物——例如{@creature orc||獸人}、{@creature ogre||食人魔}與{@creature troll||巨魔}——都可能被引誘加入格里昂的教團。",
+		"他的教徒通常組成戰團與盜匪幫，藉著在戰鬥中擊敗他人、奪取想要的東西作為戰利品，來證明自己的力量。",
+		"教團成員可以獲得「粉碎重擊」特性。教團領袖還可以獲得「不屈之力」特性。",
+		"粉碎重擊（短休或長休後充能）",
+		"這個生物可以用一個附贈動作，使牠在接下來一分鐘內下一次命中的近戰武器攻擊的傷害擲骰獲得加值。該加值等同其力量調整值（最低 +1）。",
+		"不屈之力 {@recharge 5}",
+		"當這個生物受到傷害時，牠可以用一個反應擲一顆 {@dice d10}，並從該傷害中減去擲出的數字。"
+	],
+	[
+		"格萊希亞教團",
+		"讓體制反噬自身而取得的權力，這種權力不但絕對，在文化與法律上還名正言順",
+		"{@creature Bandit}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature knight}, {@creature noble}, {@creature spy}, {@creature thug}",
+		"{@spell Friends}（戲法）、{@spell charm person}（1 環）、{@spell invisibility}（2 環）、{@spell haste}（3 環）",
+		"格萊希亞擅長找出漏洞、利用法律為自己牟利，是盜賊與其他罪犯（尤其是腐敗貴族）的庇主。她的影響力照理說應當強化家族羈絆，但她對此做了寬鬆的解讀，提供能拿來對付家人的贈禮。",
+		"甘冒風險反抗{@creature hobgoblin}主子的{@creature goblin||哥布林}會與格萊希亞締約，組成犯罪幫派的{@creature kenku}也是。",
+		"格萊希亞賜予「踏入陰影」特性。教團領袖還可以獲得「煉獄首腦」特性。",
+		"踏入陰影（短休或長休後充能）",
+		"這個生物可以用一個動作，連同牠穿戴與攜帶的一切以魔法變得{@condition invisible}，直到牠的下個回合結束。",
+		"煉獄首腦",
+		"當這個生物被攻擊命中時，牠可以用一個反應選擇牠 5 呎內一個牠看得見的盟友，讓該盟友代替牠被這次攻擊命中。"
+	],
+	[
+		"格拉茲特教團",
+		"格拉茲特賜予他的教徒特殊能力。他的教徒可以獲得「以痛為樂」特性，教團領袖則可以獲得「歡愉主宰」特性。",
+		"以痛為樂",
+		"每當這個生物受到重擊時，牠可以用一個反應進行一次近戰武器攻擊。",
+		"歡愉主宰",
+		"當這個生物受到傷害時，牠可以用一個反應，以魔法讓自己與牠 30 呎內至多三名盟友各獲得 5 點臨時生命值。"
+	],
+	[
+		"哈古特之聲哈斯克教團",
+		"哈斯克的降臨（1/日）",
+		"教徒變成一個微型的蛞蝓狀存在，並傳送到牠 30 呎內一個牠看得見的類人生物肩上。被鎖定的類人生物必須通過一次 {@dc 15} 魅力豁免，否則被教徒{@condition charmed||魅惑}。目標被{@condition charmed||魅惑}期間，教徒在目標的下個回合控制它。該回合結束時，教徒傳送到牠 30 呎內一處牠看得見的未被佔據空間，並恢復原本的形態。教徒處於蛞蝓形態時，無法被任何攻擊或其他效應直接鎖定，但仍會照常受到範圍效應影響。"
+	],
+	[
+		"朱伊布雷克斯教團",
+		"無面之主賜予其教徒特殊能力。地位較低的追隨者可以獲得「液態移動」特性。最投入的軟泥信徒還可以獲得「黏滑臟器」特性。",
+		"液態移動",
+		"這個生物可以用一個動作，穿過直徑不超過一吋的空間移動至多 20 呎。牠必須在一處容得下其完整體型的空間結束這次移動。否則，牠受到 5 點力場傷害，並回到這次移動開始時所在的空間。",
+		"黏滑臟器",
+		"這個生物對非魔法攻擊造成的鈍擊、穿刺與劈砍傷害具有抗性。",
+		"每當這個生物受到重擊或生命值降至 0 時，牠會噴出酸液；牠 5 呎內的每個生物受到等同其生命骰數量的酸蝕傷害。"
+	],
+	[
+		"萊維斯圖斯教團",
+		"活下去，並終有一天向虧待自己的人復仇",
+		"{@creature Assassin}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature mage}, {@creature noble}, {@creature spy}, {@creature thug}",
+		"{@spell Blade ward}（戲法）、{@spell expeditious retreat}（1 環）、{@spell spider climb}（2 環）、{@spell gaseous form}（3 環）",
+		"萊維斯圖斯沒有傳統意義上的教團。他是向那些急於逃離看似無可避免之命運的人提供恩惠。",
+		"{@creature Drow}有時會崇拜萊維斯圖斯，因為他們殘酷的社會常把他們逼入自覺無路可逃的處境。",
+		"萊維斯圖斯通常只賜予獻上靈魂的人一次逃離危險的機會，但有些狡猾之徒會與萊維斯圖斯談成交易，以靈魂換取在未來某一刻脫身的機會。這項恩賜的形式是「萊維斯圖斯之道」特性。",
+		"萊維斯圖斯之道",
+		"這個生物以魔法傳送到牠所在位置 1 哩內、由萊維斯圖斯選擇的一處地點。使用這項能力還會恢復這個生物的所有生命值。這項能力可以由該生物用一個動作引動，或在該生物將要死亡時引動。該生物使用過一次後，便無法再次使用。"
+	],
+	[
+		"瑪門教團",
+		"財富——取得財富不只是為了保障自己的安逸與權力，也是為了讓別人得不到財富與它帶來的好處。",
+		"{@creature Bandit}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature noble}, {@creature spy}, {@creature thug}",
+		"{@spell Mending}（戲法）、{@spell Tenser's floating disk}（1 環）、{@spell arcane lock}（2 環）、{@spell glyph of warding}（3 環）",
+		"瑪門的貪婪壓倒了其他一切。他與渴求物質財富的凡人打交道，並賦予他們像傳染病一樣散播這種貪婪的能力。",
+		"貪婪的{@creature duergar}乃至某些龍都容易落入瑪門的誘惑，商人與貿易公會也難以抗拒他的交易。",
+		"瑪門的教徒可以獲得「攫取之手」特性。教團領袖還可以獲得「財富的許諾」特性。",
+		"攫取之手（短休或長休後充能）",
+		"這個生物可以用一個附贈動作進行一次敏捷（手上把戲）檢定，與牠 15 呎內一個牠看得見的生物的感知（察言觀色）檢定對抗。若這個生物勝出，目標身上一件牠看得見、由牠選擇的手持大小物品會以魔法傳送到牠空著的手中。該物品不能是目標正握著的東西，且重量不得超過 10 磅。",
+		"財富的許諾（短休或長休後充能）",
+		"這個生物可以用一個附贈動作選擇一個牠看得見的生物。至多五名由牠選擇的盟友會深信目標身懷巨富。直到這個生物的下個回合結束前，那些盟友對目標進行的所有攻擊檢定都獲得優勢。"
+	],
+	[
+		"梅菲斯托費勒斯教團",
+		"魔法技藝與力量，以及用它碾壓對手的意志",
+		"{@creature Archmage}, {@creature cult fanatic}, {@creature cultist}, {@creature mage}, {@creature priest}",
+		"{@spell Fire bolt}（戲法）、{@spell burning hands}（1 環）、{@spell flaming sphere}（2 環）、{@spell fireball}（3 環）",
+		"身為奧術技藝的大師，梅菲斯托費勒斯在研習魔法的人當中不乏熱切的新血。任何使用法術的怪物，例如{@creature storm giant||風暴巨人}與{@creature oni}，都可能追隨他，而法師公會與賢者集會最容易落入他的影響。",
+		"梅菲斯托費勒斯的教徒可以獲得「法術護盾」特性。教團領袖還可以獲得「法術汲取」特性。",
+		"法術護盾",
+		"這個生物在對抗法術的豁免檢定上獲得優勢。若牠通過這類豁免檢定，便獲得等同該法術環階的臨時生命值。",
+		"法術汲取",
+		"這個生物可以用一個附贈動作選擇牠 30 呎內一個牠看得見的盟友。目標失去其最低環階的一個法術位，這個生物則獲得它。"
+	],
+	[
+		"奧迦斯教團",
+		"奧迦斯賜予一般教徒「不死之魂」特性，教團領袖則可以獲得「死亡靈光」特性。",
+		"不死之魂（短休或長休後充能）",
+		"若這個生物的生命值降至 0，牠立即進行一次 {@dc 10} 體質豁免。若通過，牠改為降至 1 點生命值。",
+		"死亡靈光",
+		"只要這個生物未陷入無力狀態，牠就會散發一道死亡靈光，從其所在空間向每個方向延伸 30 呎。靈光會被{@quickref Cover||3||全掩護}阻擋。位於靈光內時，這個生物與任何友善的不死生物免疫{@condition frightened}狀態，並具有光耀傷害抗性。敵人位於靈光內時，在死亡豁免上具有劣勢。"
+	],
+	[
+		"受縛之神薩瑞茲頓教團",
+		"薩瑞茲頓的火花 {@recharge 6}",
+		"教徒用一個附贈動作碰觸一把{@filter 簡易或軍用武器|items|source=phb|category=basic|type=martial weapon;simple weapon}，或牠的天生武器（若有）。下一個被該武器命中的生物必須通過一次 {@dc 15} 感知豁免，否則在所有屬性檢定上具有劣勢。受影響的生物可以在每分鐘結束時重新進行豁免，成功則終止自身受到的效應。"
+	],
+	[
+		"黑土教團",
+		"The earth cult worships the implacable strength and unyielding resistance of elemental earth. Cultists seek the power to destroy the works of civilization with landslides, sinkholes, or mighty earthquakes, thus demonstrating the true power of elemental earth and the futility of resistance. Earth cultists see mines, quarries, and tilled fields as insults imposed upon the living rock and soil. They believe the earth thirsts for the blood of those who don't venerate it before all other powers and beings.",
+		"The Cult of the Black Earth appeals to those who draw their fortunes from the earth-directly or indirectly. In areas where the influence of Elemental Evil takes hold, animals and monsters that live or burrow in the ground accept the cultists as allies. Creatures such as ankhegs or bulettes, normally too stupid and ravenous to be trained, submit to the will of the Black Earth. The monsters allow themselves to be herded or ridden into battle against the enemies of the cult.",
+		"黑土教團的標誌",
+		"The symbol of the earth cult signifies purpose and stability. Cultists sometimes identify themselves with a hand gesture: they make a triangle by touching the thumbs and forefingers of both hands together.",
+		"戰術與理念",
+		"The Black Earth cult is the most defense-minded and patient of the four elemental cults. Earth cultists admire stoicism, endurance, and unyielding resolve. They are deliberate and slow to act, careful to consider their plans and gather their strength before beginning any new enterprise. Once earth cultists resolve to act, they are inflexible, grinding their way forward through any obstacle or unforeseen development. They are single-minded in the extreme, and most earth cultists have little use for social niceties. They see common courtesy as a way for the weak to put limits on the behavior of the strong, and they scorn empathy or friendship as weakness.",
+		"In battle, Black Earth cultists are brutal and straightforward. They overpower foes with direct assaults, although if they have the opportunity to undermine defenses or attack from below, they unhesitatingly put their skill at tunneling and mastery of burrowing monsters to good use. They are unflinching in the face of death. Surrender is never an option.",
+		"Earth cultists live and work underground. They craft weapons from stone or iron and \"bathe\" themselves in sand or dirt to feel close to their favored element. Black Earth initiates know the secret of creating armor from magically shaped stone, and even their robes include stone pauldrons or masks.",
+		"土之先知",
+		"A medusa named Marlos Urnrayle leads the Black Earth cult. He wields the elemental weapon {@item Ironfang|PotA}, a war pick infused with the power of Ogrémoch, the Prince of Evil Earth. Marlos is vain and cruel, an extreme narcissist who delights in surrounding himself with objects of beauty and luxurious comforts. Beneath this sneering self-assurance lies a bitter being who loathes himself and holds everyone around him in contempt.",
+		"Marlos began life as a human aristocrat, born into a wealthy Cormyrean family. He squandered his family's wealth on endless self-indulgence, seeking more questionable forms of entertainment through the years. The Urnrayle estate became known as a place of outrageous masquerades, bizarre banquets, and grotesque orgies. Marlos required his guests to don ugly or monstrous masks, thus ensuring that no ones beauty would outshine his own.",
+		"As he aged, Marlos turned to magic to preserve his fading beauty. After searching for years, he found a ring that contained the stolen vitality of a lovely fey creature. As long as he wore the ring, his imperfections vanished and no one could resist his physical charms-until the day the ring transformed Marlos into a medusa. The horror of his fate drove Marlos mad. He fled his ancestral home, taking his collection of masks with him.",
+		"After years of wandering and hiding in one ruined estate or another across the Western Heartlands, Marlos felt drawn to the desolate Sumber Hills by troubling dreams and visions. A long stairway beneath a ruined monastery brought him to an ancient cavern with a hideous altar, upon which lay a war pick of iron. When the medusa claimed {@item Ironfang|PotA}, his purpose finally became clear to him. He established his lair in the dungeon nearby and began building the Cult of the Black Earth.",
+		"特質",
+		"Unlike many of his followers, Marlos is genteel and well-spoken. He delights in witty banter and pointed repartee, although he is quick to make a cutting remark or jest at someone elses expense. Marlos takes pleasure in mocking others, especially if he can do so in a clever or elegant way. Marlos' previous life had been a constant search for pleasure, but the only thing that now stirs his loveless soul is refined cruelty. He can be driven to fits of blind, unreasoning jealousy if he is outshone by another urbane and attractive individual.",
+		"敵人與盟友",
+		"The Black Earth cultists are highly suspicious of the Cult of Howling Hatred. They believe that the air cultists are mercurial, unreliable, and generally out of touch with reality. The earth cultists respect the strength and ferocity of the Eternal Flame followers, but also find them maddeningly inconstant. Black Earth cultists ally most often with the Crushing Wave, since they admire the patience and pragmatism of the water cultists."
+	],
+	[
+		"粉碎浪潮教團",
+		"Cultists of the Crushing Wave worship the awesome power of water, from the surging tides and deadly maelstroms of the sea to the raging torrents of rivers in flood and the rock-crushing power of ice and glaciers. Crushing Wave cultists see all living creatures as nothing more than trapped water that could one day be free to return to the seas or skies in a new form. The seas and deep waters are eager to reclaim the parts of themselves currently held in the blood and bodies of living creatures, and it is the duty of Crushing Wave initiates to return nonbelievers to the primal waters by drowning them or shedding their blood.",
+		"The Crushing Wave cult appeals to those who live in or near bodies of water, as well as to those who appreciate subtlety and inevitability. Wicked sea creatures such as aquatic ghouls and merrows are friendly toward water cultists. Even non-sentient predators such as sharks or octopuses understand that water cultists are allies to be aided or masters to be obeyed.",
+		"粉碎浪潮教團的標誌",
+		"Water cultists use a simple hand sign to identify one another when a token of recognition is required: crossing the forefingers and overlapping the thumbs to create an X-shape linked by a line across the bottom. It stands for waters eternal surge and retreat, a cycle of unending change.",
+		"戰術與理念",
+		"Crushing Wave cultists are almost as patient and stoic as the followers of the earth cult. They understand the value of outlasting formidable foes and slowly eroding their defenses. However, they are far more flexible and opportunistic in their overall philosophy than the earth cultists are. Like a flood that seeks the weak point in a levee and then bursts through with ever-growing strength, water cultists are quick to sense an opening and then act to exploit it. This philosophy of pragmatism and opportunism means that the Crushing Wave is the most mercenary of the four elemental cults. Water cultists eagerly seek out rich prizes and use their ill-gotten loot to develop their schemes.",
+		"In combat, Crushing Wave cultists excel as skirmishers. They value mobility and opportunism, rarely making a stand in one place for long. Instead, they feign retreats, regroup, and launch new attacks, wearing down their foes like storm-driven waves eating away at a sandy beach. Almost all water cultists are excellent swimmers skilled at fighting in water, so they look for opportunities to surprise their enemies by using bodies of water to slip around or through defenses.",
+		"Because the cultists see water as the wellspring of all life and purpose, they spend as much time in or around it as possible. Many cult hideouts are located near large bodies of water, and those that aren't feature hidden pools or wells in which cult members can immerse themselves. Water cultists prize water-breathing magic and seek it out for no other reason than to spend hours meditating underwater. Few cultists gain any profound insights from these exercises.",
+		"水之先知",
+		"The former sailor Gar Shatterkeel leads the Crushing Wave cult. He wields the elemental weapon {@item Drown|PotA}, a trident imbued with the essence of Olhydra, Princess of Evil Water. Gar is a sullen man who says little, letting his actions speak for him. He believes he has been wronged by the world and hates all people except those as broken and unfortunate as himself. Gar also despises weakness in others.",
+		"Gar was born in a poor fishing village in the Nelanther Isles. At a young age, he lost his family to a sahuagin attack. The sea devils slaughtered almost everyone he knew. A Tethyrian merchant galley conscripted the young orphan into service, and Gar was forced into a brutal indentured servitude that was barely better than being enslaved. His unwilling service came to an end when pirates attacked the merchant ship. During the fighting, Gar was knocked overboard. For days he survived by clinging to the ships wreckage, until a shark ripped off his left arm. Death seemed imminent, but a powerful current arose and bore him away from the hungry predator. Within an hour he was cast upon the shores of the Sword Coast.",
+		"Gar believed that the current that had saved his life was an elemental sent by the sea. From that day forward, he devoted himself to the ocean, teaching himself its secrets and learning powerful water magic over years of lonely wandering. He despised all other people, remembering only his harsh treatment by the merchant crew and the brutality of the pirates. But in time he became aware of a call to a higher purpose, impelling him to find other examples of human flotsam and teach them about the power of the sea.",
+		"Gars visions led him to the secret waters beneath the Sumber Hills. He found a hidden cavern temple, on whose altar lay a powerful magical trident. Sensing its power, Gar took up the weapon and began to call his cult to join him in the Temple of the Crushing Wave.",
+		"特質",
+		"Gar is covered in barnacles, and he wears an artificial arm in the shape of a crabs claw over the stump of his left arm. He never uses two words when one will do, and he believes that anyone addressing him with courtesy is either insincere or subtly mocking him. The water prophets primary motivation is retribution; the world has been cruel to him, and he intends to make everyone else suffer as he has. He longs to be near the ocean again and is distressed by the fact that the driving force behind his visions keeps him so far from the sea.",
+		"敵人與盟友",
+		"The followers of the Crushing Wave detest the Cult of the Eternal Flame. They find the fire cultists to be hostile, short-tempered, and unforgivably rash. The Howling Hatred cultists aren't as hostile, but they are likewise given to sudden impulses and are unreliable. The water cultists get along with the Cult of the Black Earth. The earth cultists are deliberate and dependable, if perhaps too inflexible for their own good."
+	],
+	[
+		"永焰教團",
+		"The followers of the Eternal Flame cult worship the destructive power of fire in all its manifestations. They seek the power to burn away the \"corruption\" of both civilization and nature with volcanic eruptions, forest fires, heat waves, and droughts, creating a wasteland of ash and cinders ruled by fire alone. Eternal Flame cultists believe the world and all its peoples are wicked and malformed, and they consider it a sacred duty to \"purify\" everything around them by reducing their surroundings to smoking cinders.",
+		"The Eternal Flame appeals to those drawn to destruction for its own sake. Creatures of elemental fire are most likely to take up this reckless philosophy; even non-intelligent fire monsters sense the reckless lust for destruction lurking in the hearts of fire cultists and consider Eternal Flame believers to be their allies.",
+		"永焰教團的標誌",
+		"The symbol of the fire cult is reminiscent of a bowl-like brazier with a burning flame. Fire cultists sometimes identify themselves with a symbolic hand sign: holding one hand in a fist, thumb up, and laying the other hand over the fist as if to cover the bowl but allow the flame to show. Members of the cult can also be identified by their burn scars.",
+		"戰術與理念",
+		"Fire cultists are impetuous, hot-tempered, and violent. They aren't mindless savages; their impetuousness also encompasses fiendish inventiveness and a drive to devise new tools for their mad cause. They are masters of fire and forge, taking captives to work in their infernal foundries. Fire cultists see conquest and enslavement of the weak as necessary steps in bringing about the chaos they intend to unleash on the world.",
+		"In battle, fire cultists launch sudden, overwhelming assaults. They throw themselves into reckless attacks with no regard for their own lives, seeking to cause as much damage as possible before falling. They are fearless and would rather die fighting among a mob of enemies than retreat a single step.",
+		"Followers of the Eternal Flame cult surround themselves with the largest fires they can create. Their favorite tactic involves using magic to open volcanic fissures or vents and channel flows of molten rock. Widespread arson and deliberately set forest fires are acceptable alternatives. Most fire cultists believe that something important and beautiful should be set on fire every day, or else they're just not doing their part.",
+		"火之先知",
+		"Through all-consuming ambition and a desire to punish all who ever thwarted her dreams, the tiefling Vanifer has risen to leadership of the Eternal Flame cult. Beneath her refined exterior is a steel edge of scorned pride. And underneath her hard pride lies a desire for murder and mayhem. Vanifer harbors a fierce hatred for all who think themselves superior to her, and she stops at nothing to make them see her as a figure to be feared and respected.",
+		"Vanifer was born and raised in the crushing poverty of Calimport's poorest quarters, armed with only her cunning intelligence. In her youth, she learned to dance for coin and slowly worked her way up from the wine sinks of the laborers districts to the elegant chambers of the city's nobles. She mastered minor fire magic to distinguish herself from other dancers and incorporated flame into her routine. Her talents grew, and soon she caught the eye of a pasha and became his concubine. But even as she enjoyed the gifts he lavished on her, Vanifer hated the pasha for seeing her as a mere trophy. She left before long, robbing the pasha of a small fortune in jewelry and setting fire to his palace.",
+		"Vanifer fled to Zazesspur, but her former masters agents soon found her. She fled again to Baldur's Gate, taking up residence in the poor neighborhood known as Little Calimshan. There she opened a school of dance and discovered that her gift for fire attracted other sorts of students. She became the leader of a cult of fire worshipers. There she remained until a few months ago, when dreams and visions impelled her to seek out a lost dungeon in the North. On the altar of a forgotten temple she found the dagger {@item Tinderstrike|PotA}, imbued with the power of Imix, the Prince of Evil Fire. Armed with this powerful weapon, Vanifer resolved to establish a new chapter of her cult beneath the Sumber Hills.",
+		"特質",
+		"Vanifer is an extraordinary manipulator. She collects allies and followers with her wiles, using them as she needs and discarding them the moment they lose their usefulness. Its a testament to her natural talent that many of her victims are pathetically eager to bask in the glow of her attention again if she discovers she needs something else from them. While Vanifer puts on the airs of a rich noble, she despises those raised with great wealth, and her sensibilities favor the coarse. Vanifer is ambitious above all else, and as undisputed master of the fire cult, she intends to make the Eternal Flame the strongest and most feared cult of all.",
+		"敵人與盟友",
+		"Eternal Flame cultists detest the followers of the Crushing Wave. They see the water cultists as slippery and untrustworthy, perhaps even cowardly-after all, the Crushing Wave retreats quickly from opposition and seeks the path of least resistance before committing its strength. The earth cultists are stolid and courageous, but maddeningly slow to act. The cultists of the Howling Hatred share the fire cults impulse to act swiftly and show many of the same qualities of inventiveness and creativity in the service of Elemental Evil."
+	],
+	[
+		"嘯怨教團",
+		"The followers of elemental air call themselves the Cult of the Howling Hatred. They worship the destructive power of wind and storms, believing that those who venerate elemental air gain the power to punish those who have wronged them. More so than the members of the other cults, air cultists see their beliefs as a means to an end. Destruction for its own sake isn't particularly interesting, but destruction as an expression of personal freedom or to earn things wrongfully denied? Thats a different story.",
+		"The Cult of the Howling Hatred appeals to those who deal in perceptions over facts: illusionists, spies, and assassins, for example. Predatory or fierce winged creatures of any kind, even non-sentient monsters that would otherwise resist training, perceive the air cultists as allies and cooperate with them. Hippogriffs, griffons, and giant vultures are frequently used as air cult steeds.",
+		"嘯怨教團的標誌",
+		"The symbol of elemental air is an inverted triangle with three branching lines above it. Some believe it stands for the funnel cloud of a tornado, while others see it as the superiority of winged creatures over the ground. Some maintain it is an ancient rune that stands for the elemental lord Yan-C-Bin. Whatever their interpretations, the air cultists use the symbol as a secret password of sorts. By touching the thumbs and little fingers together and closing the rest of the fingers into a fist, an air cultist forms an inverted triangle that is a mark of membership in the cult.",
+		"戰術與理念",
+		"Howling Hatred cultists are clever, impulsive, and creative. They usually see themselves as smarter, quicker, and more capable than others they meet. Howling Hatred cultists dislike open battle. They prefer to work in secret, using stealth and illusion to gain their ends with a minimum of force. Tactics of deception and ambush provide the air cultists with opportunities to prove themselves smarter and more resourceful than their opponents. The wind doesn't blow down a castle, but flows around and through it. Infiltration and indirect attack are clearly superior tactics.",
+		"Air cultists seek out high places for their strongholds wherever possible, although they value subterranean spaces with wide chasms or lofty vaults. Places where flying is possible are mandatory. The followers of the Howling Hatred understand that sometimes they must put secrecy above other considerations.",
+		"氣之先知",
+		"The moon elf Aerisi Kalinoth leads the Cult of the Howling Hatred. Tall and slender, with illusory wings that gently fan the air, Aerisi speaks to her people in a whisper that sounds clearly in the ears of all in her presence. Aerisi regards her followers not as cultists, but as her noble subjects. Before them she is prophet and queen. Musicians and courtiers amuse and flatter her, and warriors mounted on hippogriffs serve as her knights.",
+		"Aerisi grew up in an enchanted castle in a remote part of Faerûn, surrounded by tales, histories, and tomes of magic. She passed her early years playing games, practicing enchantments, and imagining herself as one of the avariel (winged elves) from her storybooks. Her parents' sheltered her from the conflicts of Faerûn, and she came of age with a tender and fragile disposition.",
+		"Eventually her parents decided it was time for their daughter to engage in elven society, and they brought her to the hidden city of Evereska. Her parents then realized their grave mistake. In pampering and sheltering their daughter, they had raised not a young lady but a spoiled child. Accustomed to having all she desired, the princess erupted into tantrums whenever she was denied her slightest whim, and the moon elves of Evereska could hardly endure her.",
+		"Aerisi felt powerless among the moon elves. Although she had become a skilled enchanter in Faerie, her people were resistant to such charms. In her dreams she began to envision herself as one of the winged elves from her storybooks. She wished to control the wind and go wherever she liked, and to punish those who offended her. The childlike fantasies of her youth became dark visions where she ruled the storms and the air itself. She dreamed of an old mystic with brown skin and white hair, who promised to teach her all she desired to know-a vision of Yan-C-Bin, the Prince of Evil Air. Aerisi turned her study to elemental air, learning the secret of flight and escaping Evereska to follow the deluded visions of her dreams.",
+		"Aerisi's visions led her to a strange altar in a cavern beneath the Sumber Hills, where she acquired the spear {@item Windvane|PotA}. Driven by Yan-C-Bin, she dubbed herself a queen and set out to find followers to rule. Her enchantments helped fill the ranks of the Cult of the Howling Hatred with initiates hopelessly devoted to her.",
+		"特質",
+		"No one can deny Aerisi's grace, but she also possesses a violent temper that reveals itself whenever she is denied what she wants. Aerisi is prone to flights of fancy and impulsive decadence. She doesn't see herself as evil because she lacks the capacity to empathize with anyone else. Those who worship and please her are good, and those who defy her are wicked and must be punished. Her wish to lash the world with storms and destruction is, at its root, a temper tantrum against the elven society that dared to impose its strictures on her.",
+		"敵人與盟友",
+		"The cultists of the Howling Hatred find the Black Earth cultists to be coarse, rude, unimaginative, and stubborn to the point of stupidity. Most offensively, the earth cultists are bluntly unimpressed by the Howling Hatred cult and its achievements. Followers of the Crushing Wave are more flexible and inventive, but they are crass mercenaries and likewise too pragmatic to appreciate the finer points of the air cults philosophy. The Eternal Flame is the best of the lot, since the fire cultists share the decisiveness and creative energy of the Howling Hatred cult, even if they are overly proud and aggressive."
+	],
+	[
+		"烈焰者泰蘭斯拉瑟斯教團",
+		"光耀烈焰（1/日）",
+		"七彩火焰環繞教徒，持續 1 分鐘，或直到教徒陷入{@condition incapacitated}狀態或死亡，或直到教徒熄滅火焰（無需動作）為止。燃燒期間，教徒具有範圍 30 呎的心靈感應，並可以用一個附贈動作傳送至多 30 呎到一處牠看得見的未被佔據空間。此外，每個在教徒 5 呎內開始回合的生物必須進行一次 {@dc 15} 敏捷豁免，失敗受到 16（{@damage 3d10}）點光耀傷害，成功則傷害減半。"
+	],
+	[
+		"耶諾古教團",
+		"耶諾古賜予他的教徒特殊能力。他最虔誠的追隨者獲得「撕咬之顎」動作與「暴走」附贈動作，教團領袖則獲得「嗜血靈光」特性。",
+		"撕咬之顎",
+		"{@atk mw} 命中加值等同這個生物的熟練加值加上其力量調整值，觸及 5 呎，單一目標。{@h}{@damage 1d4} + 這個生物的力量調整值的穿刺傷害。",
+		"暴走",
+		"當這個生物在牠的回合以近戰攻擊使一個生物的生命值降至 0 時，牠可以用一個附贈動作移動至多其速度的一半，並進行一次「撕咬之顎」攻擊。",
+		"嗜血靈光",
+		"只要這個生物未陷入無力狀態，任何具有「暴走」的生物位於牠 10 呎內時，都可以用一個附贈動作進行「撕咬之顎」攻擊。"
+	],
+	[
+		"扎瑞爾教團",
+		"扎瑞爾賜予她最忠誠的教徒特殊能力。他們可以獲得「兇猛湧動」特性，教團領袖還可以獲得「煉獄戰術」特性。",
+		"兇猛湧動（短休或長休後充能）",
+		"當這個生物以未造成重擊的攻擊檢定命中時，牠可以將該次命中變為重擊。",
+		"煉獄戰術",
+		"擲完先攻後，只要這個生物未陷入{@condition incapacitated}狀態，牠可以立即選擇自己與至多三名牠看得見的盟友，並在被選中的生物之間交換先攻結果。"
+	],
+	[
+		"扎瑞爾教團",
+		"征服、戰場上的榮耀、來自軍事勝利的名聲與財富",
+		"{@creature Berserker}, {@creature cult fanatic}, {@creature cultist}, {@creature gladiator}, {@creature guard}, {@creature knight}, {@creature veteran}",
+		"{@spell True strike}（戲法）、{@spell heroism}（1 環）、{@spell spiritual weapon}（2 環）、{@spell crusader's mantle}（3 環）",
+		"扎瑞爾的教團提供軍事訓練與才能，在飽受戰火蹂躪的地區蓬勃發展。有戰鬥意志卻缺乏經驗的難民會受扎瑞爾吸引，因為她能給予他們求生所需的技能。此外，她最常招攬到的是想取得優勢的老練戰士。",
+		"騎士團、戰士公會與傭兵團最容易落入她的掌控。{@creature hobgoblin||大哥布林}有時也會投向她，但前提是已擺脫馬格魯比耶與其祭司的影響。",
+		"扎瑞爾的教徒可以獲得「兇猛湧動」特性。教團領袖還可以獲得「煉獄戰術」特性。",
+		"兇猛湧動（短休或長休後充能）",
+		"當這個生物以未造成重擊的攻擊命中時，牠可以將該次命中變為重擊。",
+		"煉獄戰術",
+		"這個生物善於抓住戰術優勢。擲完先攻後，只要牠未陷入{@condition incapacitated}狀態，牠可以立即選擇自己與至多三名牠看得見的盟友，並在被選中的生物之間交換先攻結果。"
+	],
+	[
+		"祖格特莫伊教團",
+		"祖格特莫伊的教徒主要是她子嗣那些奇異孢子的無心智受害者。孢子會鑽進受害者的腦中，將其變成狂熱的僕從。每個受害者都獲得「孢子之吻」特性。",
+		"孢子之吻",
+		"這個生物免疫{@condition charmed}與{@condition frightened}狀態。此外，若牠的生命值降至 0，牠 10 呎內的每個生物受到等同其生命骰數量的毒素傷害。"
+	]
+]
