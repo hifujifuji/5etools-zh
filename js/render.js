@@ -9437,7 +9437,7 @@ Renderer.cultboon = class {
 		if (ent.goal) {
 			fauxList.items.push({
 				type: "item",
-				name: "Goals:",
+				name: "目標：",
 				entry: ent.goal.entry,
 			});
 		}
@@ -9445,14 +9445,14 @@ Renderer.cultboon = class {
 		if (ent.cultists) {
 			fauxList.items.push({
 				type: "item",
-				name: "Typical Cultists:",
+				name: "典型教徒：",
 				entry: ent.cultists.entry,
 			});
 		}
 		if (ent.signatureSpells) {
 			fauxList.items.push({
 				type: "item",
-				name: "Signature Spells:",
+				name: "招牌法術：",
 				entry: ent.signatureSpells.entry,
 			});
 		}
@@ -9476,16 +9476,16 @@ Renderer.cultboon = class {
 		if (ent.ability) {
 			benefits.items.push({
 				type: "item",
-				name: "Ability Score Adjustment:",
-				entry: ent.ability ? ent.ability.entry : "None",
+				name: "屬性值調整：",
+				entry: ent.ability ? ent.ability.entry : "無",
 			});
 		}
 
 		if (ent.signatureSpells) {
 			benefits.items.push({
 				type: "item",
-				name: "Signature Spells:",
-				entry: ent.signatureSpells ? ent.signatureSpells.entry : "None",
+				name: "招牌法術：",
+				entry: ent.signatureSpells ? ent.signatureSpells.entry : "無",
 			});
 		}
 
