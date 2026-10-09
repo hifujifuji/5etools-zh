@@ -1,0 +1,948 @@
+{
+	"batch": "x-vehicle",
+	"items": [
+		{
+			"prop": "vehicle",
+			"key": "Apparatus of Kwalish|DMG",
+			"hint": {
+				"Apparatus of Kwalish": "夸力許裝置"
+			},
+			"s": [
+				"Apparatus of Kwalish",
+				"(or 0 ft. for both if the legs and tail aren't extended)",
+				"This item first appears to be a Large sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful {@dc 20} Intelligence ({@skill Investigation}) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move either up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.",
+				"To be used as a vehicle, the apparatus requires one pilot. While the apparatus's hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 10 hours of breathing, divided by the number of breathing creatures inside.",
+				"The apparatus floats on water. It can also go underwater to a depth of 900 feet. Below that, the vehicle takes {@damage 2d6} bludgeoning damage per minute from pressure.",
+				"A creature in the compartment can use an action to move as many as two of the apparatus's levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Apparatus of Kwalish Levers table.",
+				"Apparatus of Kwalish Levers:",
+				"Lever",
+				"Up",
+				"Down",
+				"Legs and tail extend, allowing the apparatus to walk and swim.",
+				"Legs and tail retract, reducing the apparatus's speed to 0 and making it unable to benefit from bonuses to speed.",
+				"Forward window shutter opens.",
+				"Forward window shutter closes.",
+				"Side window shutters open (two per side).",
+				"Side window shutters close (two per side).",
+				"Two claws extend from the front sides of the apparatus.",
+				"The claws retract.",
+				"Each extended claw makes the following melee weapon attack: {@hit 8} to hit, reach 5 ft., one target. {@h} 7 ({@damage 2d6}) bludgeoning damage.",
+				"Each extended claw makes the following melee weapon attack: {@hit 8} to hit, reach 5 ft., one target. {@h} The target is {@condition grappled} (escape {@dc 15}).",
+				"The apparatus walks or swims forward.",
+				"The apparatus walks or swims backward.",
+				"The apparatus turns 90 degrees left.",
+				"The apparatus turns 90 degrees right.",
+				"Eyelike fixtures emit bright light in a 30-foot radius and dim light for an additional 30 feet.",
+				"The light turns off.",
+				"The apparatus sinks as much as 20 feet in liquid.",
+				"The apparatus rises up to 20 feet in liquid.",
+				"The rear hatch unseals and opens.",
+				"The rear hatch closes and seals."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Apparatus of Kwalish|XDMG",
+			"hint": {
+				"Apparatus of Kwalish": "夸力許裝置"
+			},
+			"s": [
+				"Apparatus of Kwalish",
+				"(or 0 ft. for both if the legs aren't extended)",
+				"This item first appears to be a sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful {@dc 20} Intelligence ({@skill Investigation|XPHB}) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.",
+				"To be used as a vehicle, the apparatus requires one pilot. While the apparatus's hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 10 hours of breathing, divided by the number of breathing creatures inside.",
+				"The apparatus floats on water. It can also go underwater to a depth of 900 feet. Below that, the vehicle takes {@damage 2d6} Bludgeoning damage each minute from pressure.",
+				"A creature in the compartment can take a {@action Utilize|XPHB} action to move as many as two of the apparatus's levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Apparatus of Kwalish Levers table.",
+				"Apparatus of Kwalish Levers",
+				"Lever",
+				"Up",
+				"Down",
+				"Legs extend, allowing the apparatus to walk and swim.",
+				"Legs retract, reducing the apparatus's {@variantrule Speed|XPHB} and {@variantrule Swim Speed|XPHB} to 0 and making it unable to benefit from bonuses to speed.",
+				"Forward window shutter opens.",
+				"Forward window shutter closes.",
+				"Side window shutters open (two per side).",
+				"Side window shutters close (two per side).",
+				"Two claws extend from the front side of the apparatus.",
+				"The claws retract.",
+				"Each extended claw makes the following melee attack: {@hit 8} to hit, reach 5 ft. {@h}7 ({@damage 2d6}) Bludgeoning damage.",
+				"Each extended claw makes the following melee attack: {@hit 8} to hit, reach 5 ft. {@h}The target has the {@condition Grappled|XPHB} condition (escape {@dc 15}).",
+				"The apparatus walks or swims forward provided its legs are extended.",
+				"The apparatus walks or swims backward provided its legs are extended.",
+				"The apparatus turns 90 degrees counterclockwise provided its legs are extended.",
+				"The apparatus turns 90 degrees clockwise provided its legs are extended.",
+				"Eyelike fixtures emit {@variantrule Bright Light|XPHB} in a 30-foot radius and {@variantrule Dim Light|XPHB} for an additional 30 feet.",
+				"The light turns off.",
+				"The apparatus sinks up to 20 feet if it's in liquid.",
+				"The apparatus rises up to 20 feet if it's in liquid.",
+				"The rear hatch unseals and opens.",
+				"The rear hatch closes and seals."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Astral Brig|MTF",
+			"s": [
+				"Astral Brig",
+				"Ballistas",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Astral Skiff|MTF",
+			"s": [
+				"Astral Skiff"
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Battle Balloon|AI",
+			"hint": {
+				"Helm": "海姆",
+				"Move": "移動"
+			},
+			"s": [
+				"Battle Balloon",
+				"Helm",
+				"Move up to the speed of the ship's propeller, with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+				"Balloon",
+				"If its balloon is destroyed, a battle balloon cannot maintain altitude.",
+				"Propeller",
+				"80 ft.; 50 ft. while flying into the wind; 100 ft. while flying with the wind",
+				"Green Flame Arbalester",
+				"{@atk rw} {@hit 8} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it) one target. {@h}16 ({@damage 3d10}) piercing damage and 22 ({@damage 4d10}) fire damage. If the attack misses, the DM determines where the arbalester bolt hits. Each creature within 10 feet of that spot must make a {@dc 15} Dexterity saving throw to avoid the bolt as it shatters, taking 5 ({@damage 1d10}) piercing damage and 5 ({@damage 1d10}) fire damage on a failed save.",
+				"Harpoon Gun",
+				"{@atk rw} {@hit 8} to hit, range 120/480 ft., one target. {@h}11 ({@damage 2d10}) piercing damage, and the target is {@condition grappled} (escape {@dc 16}). Until the grapple ends, the target's speed is halved, and it can't move farther away from the battle balloon. Each of the battle balloon's harpoon guns can grapple one target. While it has one or more targets {@condition grappled} with its harpoon gun attack, the battle balloon's speed is not halved.",
+				"Fire Ballista",
+				"The battle balloon can fire its harpoon guns.",
+				"Fire Green Flame Arbalester",
+				"The battle balloon can fire its green flame arbalester.",
+				"Move",
+				"The battle balloon can use its helm to move using its propeller. If the battle balloon enters a Large or smaller creature's space, that creature is automatically pushed to the edge of the battle balloon's space. The creature must also succeed on a {@dc 15} Dexterity saving throw or take 5 ({@damage 1d10}) bludgeoning damage.",
+				"Harpoon Haul",
+				"The battle balloon can pull each target {@condition grappled} by it up to 30 feet toward the battle balloon."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Bombard|AAG",
+			"hint": {
+				"Bombard": "射石砲艦",
+				"Bolt": "弩矢",
+				"Cannon Ball": "砲彈"
+			},
+			"s": [
+				"Bombard",
+				"Ballistae",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Giant Cannon",
+				"cannon",
+				"giant cannon ball",
+				"It takes 3 actions to load the enormous cannon and 1 action to fire it.",
+				"Cannon Ball",
+				"{@atk rw} {@hit 6} to hit, range 600/2,400 ft., one target. {@h}88 ({@damage 16d10}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Damselfly Ship|AAG",
+			"hint": {
+				"Damselfly Ship": "豆娘船",
+				"Ballista": "弩砲",
+				"Bolt": "弩矢",
+				"Mangonel": "彈射投石機",
+				"Mangonel Stone": "彈射投石"
+			},
+			"s": [
+				"Damselfly Ship",
+				"Ballista",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonel",
+				"mangonel",
+				"stone",
+				"It takes 2 actions to load the mangonel, 1 action to aim it using the turret rotator (area 2 on the accompanying deck plan), and 1 action to fire it.",
+				"Mangonel Stone",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Demon Grinder|BGDIA",
+			"hint": {
+				"Magic Weapons": "魔法武器",
+				"Prone Deficiency": "倒地缺陷"
+			},
+			"s": [
+				"Demon Grinder",
+				"Crushing Wheels",
+				"The Demon Grinder can move through the space of any Large or smaller creature. When it does, the creature must succeed on a {@dc 11} Dexterity saving throw or take 22 ({@damage 4d10}) bludgeoning damage and be knocked {@condition prone}. If the creature was already {@condition prone}, it takes an extra 22 ({@damage 4d10}) bludgeoning damage. This trait can't be used against a particular creature more than once each turn.",
+				"Magic Weapons",
+				"The Demon Grinder's weapon attacks are magical.",
+				"Prone Deficiency",
+				"If the Demon Grinder rolls over and falls {@condition prone}, it can't right itself and is {@condition incapacitated} until flipped upright.",
+				"Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+				"Drive and steer the Demon Grinder.",
+				"Chomper (Requires 1 Crew and Grants Half Cover)",
+				"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}25 ({@damage 6d6 + 4}) piercing damage. A target reduced to 0 hit points by this damage is ground to bits and spit out through pipes on both sides of the Demon Grinder. Any nonmagical items the target was holding or carrying are destroyed as well.",
+				"Wrecking Ball (Requires 1 Crew and Grants Half Cover)",
+				"{@atk mw} {@hit 9} to hit, reach 15 ft., one target. {@h}40 ({@damage 8d8 + 4}) bludgeoning damage. Double the damage if the target is an object or a structure.",
+				"2 Harpoon Flingers (Each Station Requires 1 Crew and Grants Half Cover)",
+				"{@atk rw} {@hit 5} to hit, range 120 ft., one target. {@h}9 ({@damage 2d8}) piercing damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Devil's Ride|BGDIA",
+			"hint": {
+				"Jump": "跳躍術",
+				"Prone Deficiency": "倒地缺陷"
+			},
+			"s": [
+				"Devil's Ride",
+				"Jump",
+				"If the Devil's Ride moves at least 30 feet in a straight line, it can clear a distance of up to 60 feet when jumping over a chasm, ravine, or other gap. Each foot it clears on the jump costs a foot of movement.",
+				"Prone Deficiency",
+				"If the Devil's Ride falls {@condition prone}, it can't right itself and is {@condition incapacitated} until pulled upright.",
+				"Stunt",
+				"On its turn, the driver of the Devil's Ride can expend 10 feet of movement to perform one free vehicle stunt, such as a wheelie or a burnout. Before the stunt can be performed, the Devil's Ride must move at least 10 feet in a straight line. If the driver succeeds on a {@dc 10} Dexterity check using the bike's Dexterity, the stunt is successful. Otherwise, the driver is unable to perform the stunt and can't attempt another stunt until the start of its next turn. If the check fails by 5 or more, the Devil's Ride and all creatures riding it immediately fall {@condition prone} as the bike wipes out and comes to a dead stop.",
+				"Helm (Requires 1 Crew and Grants Half Cover)",
+				"Drive and steer the Devil's Ride.",
+				"Juke",
+				"If the Devil's Ride is able to move, the driver can use its reaction to grant the Devil's Ride advantage on a Dexterity saving throw."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Flying Fish Ship|AAG",
+			"hint": {
+				"Flying Fish Ship": "飛魚船",
+				"Ballista": "弩砲",
+				"Bolt": "弩矢",
+				"Mangonel": "彈射投石機",
+				"Mangonel Stone": "彈射投石"
+			},
+			"s": [
+				"Flying Fish Ship",
+				"Ballista",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonel",
+				"mangonel",
+				"stone",
+				"It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it.",
+				"Mangonel Stone",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Galley|GOS",
+			"hint": {
+				"Galley": "槳帆船",
+				"Helm": "海姆",
+				"Move": "移動"
+			},
+			"s": [
+				"Galley",
+				"Helm",
+				"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the galley can't turn.",
+				"Oars",
+				"30 ft. (requires at least 40 crew)",
+				"Sails",
+				"35 ft.; 15 ft. while sailing into the wind; 50 ft. while sailing with the wind",
+				"Ballistas",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonels",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage.",
+				"Naval Ram",
+				"The galley has advantage on all saving throws relating to crashing when it crashes into a creature or an object. Any damage it takes from the crash is applied to the naval ram rather than to the ship. These benefits don't apply if another vessel crashes into the galley.",
+				"Fire Ballistas",
+				"The galley can fire its {@object ballista||ballistas} (DMG, ch. 8).",
+				"Fire Mangonels",
+				"The galley can fire its {@object mangonel||mangonels} (DMG, ch. 8).",
+				"Move",
+				"The galley can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Hammerhead Ship|AAG",
+			"hint": {
+				"Hammerhead Ship": "錘頭鯊船",
+				"Ballista": "弩砲",
+				"Bolt": "弩矢",
+				"Mangonel Stone": "彈射投石"
+			},
+			"s": [
+				"Hammerhead Ship",
+				"Ballista",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonels",
+				"mangonel",
+				"stone",
+				"It takes 2 actions to load a mangonel, 2 actions to aim it, and 1 action to fire it.",
+				"Mangonel Stone",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage.",
+				"Blunt Ram",
+				"included in ship cost",
+				"The ship's spelljammer can make the following attack when the ship runs into another object or into a Gargantuan creature (see \"Crashing\" in chapter 2 of Astral Adventurer's Guide).",
+				"Blunt Ram",
+				"{@atk mw} {@hit 8} to hit, range 0 ft. one object or Gargantuan creature. {@h}88 ({@damage 16d10}) bludgeoning damage. The hammerhead ship takes half as much damage and comes to a dead stop. {@m}The attack deals no damage, the target moves into the nearest unoccupied space that isn't in the hammerhead ship's path, and the hammerhead ship can continue moving if it has any movement left."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Keelboat|GOS",
+			"hint": {
+				"Keelboat": "龍骨船",
+				"Helm": "海姆",
+				"Ballista": "弩砲",
+				"Move": "移動"
+			},
+			"s": [
+				"Keelboat",
+				"Helm",
+				"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the keelboat can't turn.",
+				"Oars",
+				"20 ft.",
+				"Sails",
+				"25 ft.; 15 ft. while sailing into the wind; 35 ft. while sailing with the wind.",
+				"Ballista",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Keelboats typically include a ballista only when they are equipped for combat.",
+				"Fire Ballista",
+				"The keelboat can fire its {@object ballista} (DMG, ch. 8).",
+				"Move",
+				"The keelboat can use its helm to move with its oars or sails."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Lamprey Ship|AAG",
+			"hint": {
+				"Lamprey Ship": "七鰓鰻船",
+				"Bolt": "弩矢"
+			},
+			"s": [
+				"Lamprey Ship",
+				"Ballistae",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Grappling Jaws",
+				"included in ship cost",
+				"It takes 1 action to make a Grappling Jaws attack.",
+				"Grappling Jaws",
+				"{@atk mw} {@hit 6} to hit, reach 10 ft., one ship or Gargantuan creature. {@h}22 ({@damage 4d10}) piercing damage, and the speed of the lamprey ship and the target become 0 until the grapple ends. As an action, a creature can use the grappling jaws' controls to release the target. Otherwise, the effect ends when the target or the lamprey ship drops to 0 hit points."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Living Ship|AAG",
+			"hint": {
+				"Living Ship": "活體船",
+				"Ballista": "弩砲",
+				"Bolt": "弩矢"
+			},
+			"s": [
+				"Living Ship",
+				"Ballista",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Longship|GOS",
+			"hint": {
+				"Longship": "維京長船",
+				"Helm": "海姆",
+				"Move": "移動"
+			},
+			"s": [
+				"Longship",
+				"Helm",
+				"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the longship can't turn.",
+				"Oars",
+				"20 ft. (requires at least 20 crew)",
+				"Sails",
+				"45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind.",
+				"Move",
+				"The longship can use its helm to move with its oars or sails."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Lyrandar Air Cruiser|EFA",
+			"hint": {
+				"Lightning Turret": "閃電砲塔",
+				"Helm": "海姆",
+				"Mark of Warding": "守護印記"
+			},
+			"s": [
+				"Lyrandar Air Cruiser",
+				"[hover]",
+				"Lightning Turret",
+				"This turret swivels to shoot lightning blasts and can accommodate up to one Medium creature.",
+				"A creature inside the turret has {@table Cover|XPHB|Three-Quarters Cover} against attacks and other effects that originate outside it. While inside, a creature can take the Lightning Blast action to aim and fire the turret.",
+				"Lightning Blast (Requires Elemental Core)",
+				"{@atkr rw} {@hit 9} to hit, range 80/320 ft. {@h}22 ({@damage 4d10}) Lightning damage.",
+				"Helm",
+				"The helm of an airship consists of a specialized wheel, levers, and other controls. One creature can operate this station at a time.",
+				"The pilot (the crew member operating an airship's Helm) must have the {@feat Mark of Storm|EFA} to interface with the controls. While operating the Helm, a crew member can take the station's Drive and Shift Engine actions.",
+				"Tilt and Roll",
+				"When taking the Helm's Drive action, a crew member can spend an amount of movement equal to half the ship's Fly Speed to invert the ship on its axis, either turning it upside down or righting it. All creatures and objects on the ship that aren't anchored fall when the ship moves in this way. A creature that succeeds on a {@dc 15} Dexterity saving throw can grab a fixed object within reach to avoid falling.",
+				"Drive (Requires Mark of Storm)",
+				"The ship moves up to its Fly Speed in any direction.",
+				"Shift Engine (Requires Mark of Storm)",
+				"The ship's elemental core is suppressed or reengaged.",
+				"Shield Station",
+				"This station is located on the airship's aft controls and augments the ship's wind wards. It can accommodate up to two Medium creatures.",
+				"The crew member operating this station can take the Calibrate action and then take the Activate Shields action. The ship can benefit from only one bonus to AC from a Shield Station at a time.",
+				"Mark of Warding",
+				"If a creature with the {@feat Mark of Warding|EFA} occupies this crew station, that creature can take the Activate Shields action as a {@variantrule Bonus Action|XPHB}.",
+				"Calibrate (Requires Elemental Core)",
+				"This action prepares the ship's wind wards to become shields, enabling the Activate Shields action.",
+				"Activate Shields (Requires Elemental Core and Calibrate)",
+				"The ship and its crew stations gain a +5 bonus to AC, and all creatures on the ship's deck have {@table Cover|XPHB|Half Cover}. These effects last for 1 minute, until this station is destroyed, or until the crew member that took this action loses Concentration or leaves this station."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Lyrandar Skyskiff|EFA",
+			"hint": {
+				"Harpoon": "魚叉",
+				"Helm": "海姆"
+			},
+			"s": [
+				"Lyrandar Skyskiff",
+				"[hover]",
+				"Tow Cable",
+				"This station consists of a compact grappling hook, reinforced rope, and launcher. One creature can operate this station at a time. The crew member operating this station can take the Harpoon and Reel actions.",
+				"Harpoon",
+				"{@atkr rw} {@hit 6}, range 50/100 ft. {@h}5 ({@damage 2d4}) Piercing damage, and the target is harpooned. While harpooned, the target and the ship can't move more than 100 feet away from each other, and if the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition. The crew member operating this station can release a harpooned target (no action required).",
+				"Reel (Requires Elemental Core)",
+				"A target Grappled by this station's Harpoon is pulled up to 50 feet in a straight line toward the ship.",
+				"Helm",
+				"The helm of an airship consists of a specialized wheel, levers, and other controls. One creature can operate this station at a time.",
+				"The pilot (the crew member operating an airship's Helm) must have the {@feat Mark of Storm|EFA} to interface with the controls. While operating the Helm, a crew member can take the station's Drive and Shift Engine actions.",
+				"Tilt and Roll",
+				"When taking the Helm's Drive action, a crew member can spend an amount of movement equal to half the ship's Fly Speed to invert the ship on its axis, either turning it upside down or righting it. All creatures and objects on the ship that aren't anchored fall when the ship moves in this way. A creature that succeeds on a {@dc 15} Dexterity saving throw can grab a fixed object within reach to avoid falling.",
+				"Drive (Requires Mark of Storm)",
+				"The ship moves up to its Fly Speed in any direction.",
+				"Shift Engine (Requires Mark of Storm)",
+				"The ship's elemental core is suppressed or reengaged."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Mechanical Beholder|AI",
+			"hint": {
+				"Helm": "海姆",
+				"Paralyzing Ray": "麻痺射線",
+				"Eye Rays": "眼光射線",
+				"Move": "移動"
+			},
+			"s": [
+				"Mechanical Beholder",
+				"Helm",
+				"Move up to the speed of the ship's magical propulsion unit, with one 90-degree turn. The helm can be attacked only if the hull has taken 100 or more damage. If the helm is destroyed, the mechanical beholder can't move.",
+				"Magical Propulsion Unit",
+				"burrow 30 ft., fly 30 ft. (hover), swim 30 ft.",
+				"Eye Ray Tentacles",
+				"{@atk g} The mechanical beholder shoots the following magical eye rays at up to three targets that would be visible to the crew and are within 120 feet of it.",
+				"Disintegration Ray",
+				"If the target is a creature, it must succeed on a {@dc 15} Dexterity saving throw or take 18 ({@damage 4d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
+				"Enervation Ray",
+				"The targeted creature must make a {@dc 15} Constitution saving throw, taking 18 ({@damage 4d8}) necrotic damage on a failed save, or half as much damage on a successful one.",
+				"Paralyzing Ray",
+				"The targeted creature must succeed on a {@dc 15} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Eye Rays",
+				"The mechanical beholder can use its eye ray tentacles.",
+				"Move",
+				"The mechanical beholder can use its helm to move using its magical propulsion unit."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Nautiloid|AAG",
+			"hint": {
+				"Nautiloid": "鸚鵡螺艦",
+				"Bolt": "弩矢",
+				"Mangonel": "彈射投石機",
+				"Mangonel Stone": "彈射投石",
+				"Tentacles": "觸手",
+				"Teleport": "傳送"
+			},
+			"s": [
+				"Nautiloid",
+				"Ballistae",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonel",
+				"mangonel",
+				"stone",
+				"It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it.",
+				"Mangonel Stone",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage.",
+				"Tentacles",
+				"included in ship cost",
+				"As an action, the ship's spelljammer can make one of the following attacks with the ship's tentacles.",
+				"Grappling Tentacles",
+				"{@atk mw} {@hit 8} to hit, reach 30 ft., one Huge or Gargantuan target. {@h}22 ({@damage 4d10}) bludgeoning damage, and the nautiloid's speed becomes 0 until its spelljammer uses an action to release the target. If the target is a creature, it is {@condition grappled} (escape {@dc 16}). If the target is another ship, the target's speed becomes 0 until the nautiloid releases it, or until the target or the nautiloid drops to 0 hit points.",
+				"Teleport",
+				"{@atk ms} {@hit 8} to hit, reach 30 ft., one creature. {@h}The target must succeed on a {@dc 15} Constitution saving throw or be teleported to an unoccupied space aboard the nautiloid that the nautiloid's spelljammer can see."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Nightspider|AAG",
+			"hint": {
+				"Nightspider": "夜蛛艦",
+				"Bolt": "弩矢",
+				"Mangonel": "彈射投石機",
+				"Mangonel Stone": "彈射投石"
+			},
+			"s": [
+				"Nightspider",
+				"Ballistae",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonel",
+				"mangonel",
+				"stone",
+				"It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it.",
+				"Mangonel Stone",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Planar Raider|MTF",
+			"hint": {
+				"Catapult": "彈射術"
+			},
+			"s": [
+				"Planar Raider",
+				"Ballistas",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Catapult",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Rowboat|GOS",
+			"hint": {
+				"Rowboat": "划艇",
+				"Move": "移動"
+			},
+			"s": [
+				"Rowboat",
+				"Oars",
+				"15 ft.",
+				"Move up to its speed, with one 90-degree turn. Without oars, the rowboat's speed is 0.",
+				"Move",
+				"The rowboat can move using its oars."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Sailing Ship|GOS",
+			"hint": {
+				"Sailing Ship": "帆船",
+				"Helm": "海姆",
+				"Ballista": "弩砲",
+				"Mangonel": "彈射投石機",
+				"Move": "移動"
+			},
+			"s": [
+				"Sailing Ship",
+				"Helm",
+				"Move up to the speed of its sails, with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+				"Sails",
+				"45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind.",
+				"Ballista",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonel",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage.",
+				"Fire Ballista",
+				"The ship can fire its {@object ballista} (DMG, ch. 8).",
+				"Fire Mangonel",
+				"The ship can fire its {@object mangonel} (DMG, ch. 8).",
+				"Move",
+				"The ship can use its helm to move with its sails."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Scavenger|BGDIA",
+			"hint": {
+				"Scavenger": "拾荒者號",
+				"Magic Weapons": "魔法武器",
+				"Prone Deficiency": "倒地缺陷"
+			},
+			"s": [
+				"Scavenger",
+				"Crushing Wheels",
+				"The Scavenger can move through the space of any Large or smaller creature. When it does, the creature must succeed on a {@dc 12} Dexterity saving throw or take 16 ({@damage 3d10}) bludgeoning damage and be knocked {@condition prone}. If the creature was already {@condition prone}, it takes an extra 16 ({@damage 3d10}) bludgeoning damage. This trait can't be used against a particular creature more than once each turn.",
+				"Magic Weapons",
+				"The Scavenger's weapon attacks are magical.",
+				"Prone Deficiency",
+				"If the Scavenger rolls over and falls {@condition prone}, it can't right itself and is {@condition incapacitated} until flipped upright.",
+				"Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+				"Drive and steer the Scavenger.",
+				"Grappling Claw (Requires 1 Crew and Grants Half Cover)",
+				"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}The target is {@condition grappled} (escape {@dc 12}). If the target is a creature, it is {@condition restrained} until the grapple ends. The grappling claw can grapple only one target at a time, and the claw's operator can use a bonus action to make the claw release whatever it's holding.",
+				"2 Harpoon Flingers (Each Station Requires 1 Crew and Grants Half Cover)",
+				"{@atk rw} {@hit 6} to hit, range 120 ft., one target. {@h}10 ({@damage 2d8 + 1}) piercing damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Scorpion Ship|AAG",
+			"hint": {
+				"Scorpion Ship": "蠍船",
+				"Ballista": "弩砲",
+				"Bolt": "弩矢",
+				"Claws": "爪擊",
+				"Claw": "爪擊",
+				"Mangonel": "彈射投石機",
+				"Mangonel Stone": "彈射投石"
+			},
+			"s": [
+				"Scorpion Ship",
+				"Ballista",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Claws",
+				"included in ship cost",
+				"It takes 1 action to make a Claw attack.",
+				"Claw",
+				"{@atk mw} {@hit 3} to hit, reach 20 ft., one target. {@h}11 ({@damage 2d10}) bludgeoning damage. If the target is a Huge or smaller creature, it is also {@condition grappled} (escape {@dc 13}). Until this grapple ends, the creature takes 11 ({@damage 2d10}) bludgeoning damage at the start of each of its turns.",
+				"Mangonel",
+				"mangonel",
+				"stone",
+				"It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it.",
+				"Mangonel Stone",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Shrike Ship|AAG",
+			"hint": {
+				"Shrike Ship": "伯勞船",
+				"Bolt": "弩矢"
+			},
+			"s": [
+				"Shrike Ship",
+				"Ballistae",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Piercing Ram",
+				"included in ship cost",
+				"The ship's spelljammer can make the following attack when the ship runs into another object or into a Gargantuan creature (see \"{@book Crashing|AAG|2|Crashing}\" earlier in the chapter).",
+				"Piercing Ram",
+				"{@atk mw} {@hit 8} to hit, range 0 ft., one object or Gargantuan creature. {@h}88 ({@damage 16d10}) piercing damage. The shrike ship takes half as much damage and comes to a dead stop. Miss: The attack deals no damage, the target moves into the nearest unoccupied space that isn't in the shrike ship's path, and the shrike ship can continue moving if it has any movement left."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Space Galleon|AAG",
+			"hint": {
+				"Space Galleon": "太空大帆船",
+				"Bolt": "弩矢",
+				"Mangonel": "彈射投石機",
+				"Mangonel Stone": "彈射投石"
+			},
+			"s": [
+				"Space Galleon",
+				"Ballistae",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonel",
+				"mangonel",
+				"stone",
+				"It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it.",
+				"Mangonel Stone",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Squid Ship|AAG",
+			"hint": {
+				"Squid Ship": "烏賊船",
+				"Ballista": "弩砲",
+				"Bolt": "弩矢",
+				"Mangonel Stone": "彈射投石"
+			},
+			"s": [
+				"Squid Ship",
+				"Ballista",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonels",
+				"mangonel",
+				"stone",
+				"It takes 2 actions to load a mangonel, 2 actions to aim it, and 1 action to fire it.",
+				"Mangonel Stone",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage.",
+				"Piercing Ram",
+				"included in ship cost",
+				"The ship's spelljammer can make the following attack when the ship runs into another object or into a Gargantuan creature (see \"Crashing\" in chapter 2 of Astral Adventurer's Guide).",
+				"Piercing Ram",
+				"{@atk mw} {@hit 8} to hit, range 0 ft. one object or Gargantuan creature. {@h}88 ({@damage 16d10}) piercing damage. The squid ship takes half as much damage and comes to a dead stop. {@m}The attack deals no damage, the target moves into the nearest unoccupied space that isn't in the squid ship's path, and the squid ship can continue moving if it has any movement left."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Stahlmaster|DD",
+			"hint": {
+				"Multiattack": "多重攻擊",
+				"Slam": "猛擊"
+			},
+			"s": [
+				"Stahlmaster",
+				"natural armor",
+				"Pilot",
+				"The Stahlmaster requires a Medium humanoid to pilot it. While inside the Stahlmaster, the pilot uses the vehicle's speed and action options and can't take reactions or use bonus actions, and the pilot has {@quickref Cover||3||total cover}. If the Stahlmaster drops to 0 hit points, the pilot is ejected from it and lands {@condition prone} in an unoccupied space within 5 feet of the vehicle.",
+				"Multiattack",
+				"The Stahlmaster makes two melee attacks, or one melee attack and one ranged attack.",
+				"Slam",
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) bludgeoning damage.",
+				"Shoulder-Mounted Crossbow",
+				"{@atk rw} {@hit 2} to hit, range 30/120 ft., one target. {@h}6 ({@damage 1d12}) piercing damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Star Moth|AAG",
+			"hint": {
+				"Star Moth": "星蛾船",
+				"Bolt": "弩矢",
+				"Mangonel": "彈射投石機",
+				"Mangonel Stone": "彈射投石"
+			},
+			"s": [
+				"Star Moth",
+				"Ballistae",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonel",
+				"mangonel",
+				"stone",
+				"It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it.",
+				"Mangonel Stone",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Strider Airship|EFA",
+			"hint": {
+				"Energy Blast": "能量衝擊",
+				"Helm": "海姆"
+			},
+			"s": [
+				"Strider Airship",
+				"[hover]",
+				"Arcane Launcher",
+				"This miniature cannon shoots bursts of magical force. A creature operating the Arcane Launcher can take the Energy Blast action to aim and fire the cannon.",
+				"Energy Blast",
+				"{@atkr rw} {@hit 7}, range 100/500 ft. {@h}14 ({@damage 4d6}) Force damage.",
+				"Helm",
+				"The helm of an airship consists of a specialized wheel, levers, and other controls. One creature can operate this station at a time.",
+				"The pilot (the crew member operating an airship's Helm) must have the {@feat Mark of Storm|EFA} to interface with the controls. While operating the Helm, a crew member can take the station's Drive and Shift Engine actions.",
+				"Tilt and Roll",
+				"When taking the Helm's Drive action, a crew member can spend an amount of movement equal to half the ship's Fly Speed to invert the ship on its axis, either turning it upside down or righting it. All creatures and objects on the ship that aren't anchored fall when the ship moves in this way. A creature that succeeds on a {@dc 15} Dexterity saving throw can grab a fixed object within reach to avoid falling.",
+				"Drive (Requires Mark of Storm)",
+				"The ship moves up to its Fly Speed in any direction.",
+				"Shift Engine (Requires Mark of Storm)",
+				"The ship's elemental core is suppressed or reengaged."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Tasha's Creeping Keelboat|DITLCOT",
+			"hint": {
+				"Tasha's Creeping Keelboat": "塔莎的爬行龍骨船"
+			},
+			"s": [
+				"Tasha's Creeping Keelboat",
+				"(can't travel underwater)",
+				"This magic vehicle has four legs that propel it across land and water. It moves according to your spoken directions while you are riding it, and creatures of your choice gain a +1 bonus to their Armor Class while on the boat.",
+				"The boat can transport up to 1,000 pounds without hindrance. It can carry up to twice this weight, but it moves at half speed if it carries more than its normal capacity."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Tormentor|BGDIA",
+			"hint": {
+				"Prone Deficiency": "倒地缺陷",
+				"Magic Weapons": "魔法武器"
+			},
+			"s": [
+				"Tormentor",
+				"Crushing Wheels",
+				"The Tormentor can move through the space of any Medium or smaller creature. When it does, the creature must succeed on a {@dc 13} Dexterity saving throw or take 11 ({@damage 2d10}) bludgeoning damage and be knocked {@condition prone}.If the creature was already {@condition prone}, it takes an extra 11 ({@damage 2d10}) bludgeoning damage.This trait can't be used against a particular creature more than once each turn.",
+				"Prone Deficiency",
+				"If the Tormentor rolls over and falls {@condition prone}, it can't right itself and is {@condition incapacitated} until flipped upright.",
+				"Magic Weapons",
+				"The Tormentor's weapon attacks are magical.",
+				"Raking Scythes",
+				"When the Tormentor moves within 5 feet of a creature that isn't {@condition prone} or another vehicle for the first time on a turn, it can rake the creature or vehicle with its protruding blades for 13 ({@damage 2d10 + 2}) slashing damage. A creature moves out of the way and takes no damage if it succeeds on a {@dc 13} Dexterity saving throw.A vehicle moves out of the way and takes no damage if its driver succeeds on the saving throw.",
+				"Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+				"Drive and steer the Tormentor",
+				"Harpoon Flinger (Requires 1 Crew and Grants Half Cover)",
+				"{@atk rw} {@hit 7} to hit, range 120 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage.",
+				"Juke",
+				"If the Tormentor is able to move, the driver can use its reaction to grant the Tormentor advantage on a Dexterity saving throw."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Turtle Ship|AAG",
+			"hint": {
+				"Turtle Ship": "龜船",
+				"Bolt": "弩矢",
+				"Mangonel": "彈射投石機",
+				"Mangonel Stone": "彈射投石"
+			},
+			"s": [
+				"Turtle Ship",
+				"Ballistae",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonel",
+				"mangonel",
+				"stone",
+				"It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it.",
+				"Mangonel Stone",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Tyrant Ship|AAG",
+			"hint": {
+				"Tyrant Ship": "暴君艦"
+			},
+			"s": [
+				"Tyrant Ship",
+				"Eyestalk Cannons",
+				"included in ship cost",
+				"This weapon looks like an eye mounted on an eyestalk. A beholder stationed in one of the tyrant ship's meditation pods can see through the eye by {@status concentration||concentrating} on it (as if {@status concentration||concentrating} on a spell) and use an action to make the following attack.",
+				"Destructive Ray",
+				"{@atk rs} {@hit 8} to hit, range 120/480 ft., one target. {@h}35 ({@damage 10d6}) force damage."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Venatrix|VEOR",
+			"s": [
+				"Venatrix",
+				"Helm (Requires 1 Crew)",
+				"Drive and steer the Venatrix.",
+				"2 Harpoon Guns (Each Station Requires 1 Crew)",
+				"{@atk rw} {@hit 6} to hit, range 120 ft., one target. {@h}10 ({@damage 2d8 + 1}) piercing damage.",
+				"Infernal Screamer (Requires 1 Crew)",
+				"One target the operator can see within 120 feet of itself must make a {@dc 15} Wisdom saving throw, taking 26 ({@damage 4d12}) psychic damage on a failed save or half as much damage on a successful one."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Warship|GOS",
+			"hint": {
+				"Warship": "戰艦",
+				"Helm": "海姆",
+				"Move": "移動"
+			},
+			"s": [
+				"Warship",
+				"Helm",
+				"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the warship can't turn.",
+				"Oars",
+				"20 ft. (requires at least 20 crew)",
+				"Sails",
+				"35 ft.; 15 ft. while sailing into the wind; 50 ft. while sailing with the wind.",
+				"Ballistas",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+				"Mangonels",
+				"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage.",
+				"Naval Ram",
+				"The warship has advantage on all saving throws relating to crashing when it crashes into a creature or object. Any damage it takes from the crash is applied to the naval ram rather than to the ship. These benefits don't apply if another vessel crashes into the warship.",
+				"Fire Ballistas",
+				"The warship can fire its {@object ballista||ballistas} (DMG, ch. 8).",
+				"Fire Mangonels",
+				"The warship can fire its {@object mangonel||mangonels} (DMG, ch. 8).",
+				"Move",
+				"The warship can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+			]
+		},
+		{
+			"prop": "vehicle",
+			"key": "Wasp Ship|AAG",
+			"hint": {
+				"Wasp Ship": "胡蜂船",
+				"Ballista": "弩砲",
+				"Bolt": "弩矢"
+			},
+			"s": [
+				"Wasp Ship",
+				"Ballista",
+				"ballista",
+				"bolt",
+				"It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it.",
+				"Bolt",
+				"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
+			]
+		}
+	]
+}
