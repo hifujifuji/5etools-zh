@@ -2641,6 +2641,9 @@ Renderer.applyProperties = function (entry, object) {
 		if (s.startsWith("{=")) {
 			const [path, modifiers] = s.slice(2, -1).split("/");
 			let fromProp = object[path];
+			if (fromProp == null && path === "genericBonus") fromProp = object.bonusWeapon ?? object.bonusAc ?? object.bonusSpellAttack ?? object.bonusSavingThrow ?? "";
+			if (path === "baseName" && object.__baseNameZh) { textStack += object.__baseNameZh; continue; }
+			if (path === "dmgType" && typeof fromProp === "string") fromProp = ({acid: "酸蝕", bludgeoning: "鈍擊", cold: "寒冰", fire: "火焰", force: "力場", lightning: "閃電", necrotic: "死靈", piercing: "穿刺", poison: "毒素", psychic: "精神", radiant: "光耀", slashing: "劈砍", thunder: "雷鳴"})[fromProp.toLowerCase()] ?? fromProp;
 
 			if (!modifiers) {
 				textStack += fromProp;
@@ -12184,7 +12187,7 @@ Renderer.item = class {
 		}
 
 		if (!isCompact && item.lootTables) {
-			renderStack.push(`<div><span class="ve-bold">Found On: </span>${item.lootTables.sort(SortUtil.ascSortLower).map(tbl => renderer.render(`{@table ${tbl}}`)).join(", ")}</div>`);
+			renderStack.push(`<div><span class="ve-bold">出現於：</span>${item.lootTables.sort(SortUtil.ascSortLower).map(tbl => renderer.render(`{@table ${tbl}}`)).join("、")}</div>`);
 		}
 
 		return renderStack.join("").trim();
@@ -12737,7 +12740,7 @@ Renderer.item = class {
 
 		{
 			const __zn = e => e?.name_zh && (e._zhOf == null || e._zhOf === e.name) ? e.name_zh : null;
-			const zv = __zn(genericVariant), zb = __zn(baseItem);
+			const zv = __zn(genericVariant)?.replace(/（\*）$/, ""), zb = __zn(baseItem);
 			const mBonus = /^\+(\d) /.exec(genericVariant.name);
 			let zh = null;
 			if (zb && mBonus) zh = `+${mBonus[1]} ${zb}`;
@@ -12773,7 +12776,7 @@ Renderer.item = class {
 			Renderer.item._initFullEntries(specificVariant);
 			specificVariant._fullEntries.unshift({
 				type: "wrapper",
-				wrapped: `{@note The {@item ${baseItem.name}|${baseItem.source}|base item} can be found in ${Parser.sourceJsonToFull(baseItem.source)}${baseItem.page ? `, page ${baseItem.page}` : ""}.}`,
+				wrapped: `{@note {@item ${baseItem.name}|${baseItem.source}|基礎物品}收錄於${globalThis.ZH?.t?.(Parser.sourceJsonToFull(baseItem.source)) ?? Parser.sourceJsonToFull(baseItem.source)}${baseItem.page ? `，第 ${baseItem.page} 頁` : ""}。}`,
 				data: {
 					[VeCt.ENTDATA_ITEM_MERGED_ENTRY_TAG]: "note",
 				},
@@ -12894,6 +12897,7 @@ Renderer.item = class {
 	static _getInjectableProps (baseItem, inherits) {
 		return {
 			baseName: baseItem.name,
+			__baseNameZh: baseItem.name_zh && (baseItem._zhOf == null || baseItem._zhOf === baseItem.name) ? baseItem.name_zh : null,
 			dmgType: baseItem.dmgType ? Parser.dmgTypeToFull(baseItem.dmgType) : null,
 			bonusAc: inherits.bonusAc,
 			bonusWeapon: inherits.bonusWeapon,
@@ -13125,9 +13129,9 @@ Renderer.item = class {
 				type: "wrapper",
 				wrapped: {
 					type: "entries",
-					name: "Base items",
+					name: "基礎物品",
 					entries: [
-						"This item variant can be applied to the following base items:",
+						"這個物品變體可以套用在下列基礎物品上：",
 						{
 							type: "list",
 							items: item.variants.map(({base, specificVariant}) => {
