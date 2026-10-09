@@ -41,6 +41,7 @@ const FILES_BY_PROP = {
 	trap: () => ["trapshazards.json"],
 	hazard: () => ["trapshazards.json"],
 	reward: () => ["rewards.json"],
+	magicvariant: () => ["magicvariants.json"],
 	charoption: () => ["charcreationoptions.json"],
 	facility: () => ["bastions.json"],
 	legendaryGroup: () => ["bestiary/legendarygroups.json"],

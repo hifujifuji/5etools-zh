@@ -45,7 +45,7 @@ export default [
 
 		{
 			${ZN}
-			const zv = __zn(genericVariant), zb = __zn(baseItem);
+			const zv = __zn(genericVariant)?.replace(/（\\*）$/, ""), zb = __zn(baseItem);
 			const mBonus = /^\\+(\\d) /.exec(genericVariant.name);
 			let zh = null;
 			if (zb && mBonus) zh = \`+\${mBonus[1]} \${zb}\`;

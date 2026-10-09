@@ -1,0 +1,6010 @@
+{
+	"+1 Ammunition|XDMG": {
+		"name": "彈藥+1",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "A|XPHB"
+			},
+			{
+				"type": "AF|XDMG"
+			}
+		],
+		"ammo": true,
+		"entries": [
+			"你以這枚魔法彈藥進行的攻擊檢定與傷害擲骰具有 +1 加值。一旦命中目標，這枚彈藥便不再具有魔法。",
+			"這種彈藥通常以十枚或二十枚為單位被發現或販售。十枚這種彈藥的價值等同於一瓶相同稀有度的藥水{@note （{@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|200 GP}）}。"
+		],
+		"inherits": {
+			"namePrefix": "+1 ",
+			"source": "XDMG",
+			"page": 228,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "uncommon",
+			"bonusWeapon": "+1",
+			"entries": [
+				"你在使用這發魔法彈藥進行的攻擊檢定和傷害骰上具有{=bonusWeapon}加值。一旦命中目標，這發彈藥就不再具有魔法效果。"
+			],
+			"lootTables": [
+				"Armaments - Uncommon|XDMG",
+				"Implements - Uncommon|XDMG"
+			]
+		},
+		"ENG_name": "+1 Ammunition"
+	},
+	"+1 Shield (*)|DMG": {
+		"name": "盾牌+1（*）",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "S"
+			},
+			{
+				"type": "S|XPHB"
+			}
+		],
+		"entries": [
+			"{@note * 這個通用變體與物品{@item +1 shield}的名稱與來源相同}。",
+			"持握這面盾牌時，你的 AC 具有 +1 加值。這項加值是在盾牌正常的 AC 加值之外額外獲得的。"
+		],
+		"inherits": {
+			"namePrefix": "+1 ",
+			"source": "DMG",
+			"page": 200,
+			"srd": true,
+			"reprintedAs": [
+				"+1 Shield (*)|XDMG"
+			],
+			"tier": "major",
+			"rarity": "uncommon",
+			"bonusAc": "+1",
+			"entries": [
+				"持握這面盾牌時，你的 AC 具有 {=bonusAc} 加值。這項加值是在盾牌正常的 AC 加值之外額外獲得的。"
+			]
+		},
+		"ENG_name": "+1 Shield (*)"
+	},
+	"+1 Shield (*)|XDMG": {
+		"name": "盾牌+1（*）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "S|XPHB"
+			}
+		],
+		"entries": [
+			"{@note * 這個通用變體與物品{@item +1 Shield|XDMG}的名稱與來源相同}。",
+			"持握這面盾牌時，你的{@variantrule Armor Class|XPHB|護甲等級}具有 +1 加值，這是在盾牌正常的 AC 加值之外額外獲得的。"
+		],
+		"inherits": {
+			"namePrefix": "+1 ",
+			"source": "XDMG",
+			"page": 303,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "uncommon",
+			"bonusAc": "+1",
+			"entries": [
+				"持握這面盾牌時，你的{@variantrule Armor Class|XPHB|護甲等級}具有 {=bonusAc} 加值，這是在盾牌正常的 AC 加值之外額外獲得的。"
+			],
+			"classFeatures": [
+				"replicate magic item|artificer|efa|2|efa"
+			],
+			"lootTables": [
+				"Armaments - Uncommon|XDMG"
+			]
+		},
+		"ENG_name": "+1 Shield (*)"
+	},
+	"+2 Ammunition|XDMG": {
+		"name": "彈藥+2",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "A|XPHB"
+			},
+			{
+				"type": "AF|XDMG"
+			}
+		],
+		"ammo": true,
+		"entries": [
+			"你以這枚魔法彈藥進行的攻擊檢定與傷害擲骰具有 +2 加值。一旦命中目標，這枚彈藥便不再具有魔法。",
+			"這種彈藥通常以十枚或二十枚為單位被發現或販售。十枚這種彈藥的價值等同於一瓶相同稀有度的藥水{@note （{@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|2,000 GP}）}。"
+		],
+		"inherits": {
+			"namePrefix": "+2 ",
+			"source": "XDMG",
+			"page": 228,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "rare",
+			"bonusWeapon": "+2",
+			"entries": [
+				"你在使用這發魔法彈藥進行的攻擊檢定和傷害骰上具有{=bonusWeapon}加值。一旦命中目標，這發彈藥就不再具有魔法效果。"
+			],
+			"lootTables": [
+				"Armaments - Rare|XDMG",
+				"Implements - Rare|XDMG"
+			]
+		},
+		"ENG_name": "+2 Ammunition"
+	},
+	"+2 Shield (*)|DMG": {
+		"name": "盾牌+2（*）",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "S"
+			},
+			{
+				"type": "S|XPHB"
+			}
+		],
+		"entries": [
+			"{@note * 這個通用變體與物品{@item +2 shield}的名稱與來源相同}。",
+			"持握這面盾牌時，你的 AC 獲得 +2 加值。此加值是在盾牌一般 AC 加值之外額外獲得的。"
+		],
+		"inherits": {
+			"namePrefix": "+2 ",
+			"source": "DMG",
+			"page": 200,
+			"srd": true,
+			"reprintedAs": [
+				"+2 Shield (*)|XDMG"
+			],
+			"tier": "major",
+			"rarity": "rare",
+			"bonusAc": "+2",
+			"entries": [
+				"持握這面盾牌時，你的 AC 具有 {=bonusAc} 加值。這項加值是在盾牌正常的 AC 加值之外額外獲得的。"
+			]
+		},
+		"ENG_name": "+2 Shield (*)"
+	},
+	"+2 Shield (*)|XDMG": {
+		"name": "盾牌+2（*）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "S|XPHB"
+			}
+		],
+		"entries": [
+			"{@note * 這個通用變體與物品{@item +2 Shield|XDMG}的名稱與來源相同}。",
+			"持握這面盾牌時，你的{@variantrule Armor Class|XPHB|護甲等級}具有 +2 加值，這是在盾牌正常的 AC 加值之外額外獲得的。"
+		],
+		"inherits": {
+			"namePrefix": "+2 ",
+			"source": "XDMG",
+			"page": 303,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "rare",
+			"bonusAc": "+2",
+			"entries": [
+				"持握這面盾牌時，你的{@variantrule Armor Class|XPHB|護甲等級}具有 {=bonusAc} 加值，這是在盾牌正常的 AC 加值之外額外獲得的。"
+			],
+			"classFeatures": [
+				"replicate magic item|artificer|efa|2|efa"
+			],
+			"lootTables": [
+				"Armaments - Rare|XDMG"
+			]
+		},
+		"ENG_name": "+2 Shield (*)"
+	},
+	"+3 Ammunition|XDMG": {
+		"name": "彈藥+3",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "A|XPHB"
+			},
+			{
+				"type": "AF|XDMG"
+			}
+		],
+		"ammo": true,
+		"entries": [
+			"你以這枚魔法彈藥進行的攻擊檢定與傷害擲骰具有 +3 加值。一旦命中目標，這枚彈藥便不再具有魔法。",
+			"這種彈藥通常以十枚或二十枚為單位被發現或販售。十枚這種彈藥的價值等同於一瓶相同稀有度的藥水{@note （{@table Magic Item Values by Rarity; Magic Item Rarities and Values|XDMG|20,000 GP}）}。"
+		],
+		"inherits": {
+			"namePrefix": "+3 ",
+			"source": "XDMG",
+			"page": 228,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "very rare",
+			"bonusWeapon": "+3",
+			"entries": [
+				"你在使用這發魔法彈藥進行的攻擊檢定和傷害骰上具有{=bonusWeapon}加值。一旦命中目標，這發彈藥就不再具有魔法效果。"
+			],
+			"lootTables": [
+				"Armaments - Very Rare|XDMG",
+				"Implements - Very Rare|XDMG"
+			]
+		},
+		"ENG_name": "+3 Ammunition"
+	},
+	"+3 Shield (*)|DMG": {
+		"name": "盾牌+3（*）",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "S"
+			},
+			{
+				"type": "S|XPHB"
+			}
+		],
+		"entries": [
+			"{@note * 這個通用變體與物品{@item +3 shield}的名稱與來源相同}。",
+			"持握這面盾牌時，你的 AC 具有 +3 加值。這項加值是在盾牌正常的 AC 加值之外額外獲得的。"
+		],
+		"inherits": {
+			"namePrefix": "+3 ",
+			"source": "DMG",
+			"page": 200,
+			"srd": true,
+			"reprintedAs": [
+				"+3 Shield (*)|XDMG"
+			],
+			"tier": "major",
+			"rarity": "very rare",
+			"bonusAc": "+3",
+			"entries": [
+				"持握這面盾牌時，你的 AC 具有 {=bonusAc} 加值。這項加值是在盾牌正常的 AC 加值之外額外獲得的。"
+			]
+		},
+		"ENG_name": "+3 Shield (*)"
+	},
+	"+3 Shield (*)|XDMG": {
+		"name": "盾牌+3（*）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "S|XPHB"
+			}
+		],
+		"entries": [
+			"{@note * 這個通用變體與物品{@item +3 Shield|XDMG}的名稱與來源相同}。",
+			"持握這面盾牌時，你的{@variantrule Armor Class|XPHB|護甲等級}具有 +3 加值，這是在盾牌正常的 AC 加值之外額外獲得的。"
+		],
+		"inherits": {
+			"namePrefix": "+3 ",
+			"source": "XDMG",
+			"page": 303,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "very rare",
+			"bonusAc": "+3",
+			"entries": [
+				"持握這面盾牌時，你的{@variantrule Armor Class|XPHB|護甲等級}具有 {=bonusAc} 加值，這是在盾牌正常的 AC 加值之外額外獲得的。"
+			],
+			"lootTables": [
+				"Armaments - Very Rare|XDMG"
+			]
+		},
+		"ENG_name": "+3 Shield (*)"
+	},
+	"Acheron Blade|EGW": {
+		"name": "阿刻戎之刃",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"sword": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Acheron Blade ",
+			"source": "EGW",
+			"page": 265,
+			"rarity": "rare",
+			"reqAttune": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"這把劍的黑色劍刃以一種神秘的奧術合金打造。你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。這把劍在你身上時，你免疫驅散不死生物的效應。",
+				{
+					"type": "entries",
+					"name": "黑暗祝福",
+					"entries": [
+						"持握這把劍時，你可以用一個動作讓自己獲得 {@dice 1d4 + 4} 點臨時生命值。這項屬性在下一個黃昏之前無法再次使用。"
+					],
+					"ENG_name": "Dark Blessing"
+				},
+				{
+					"type": "entries",
+					"name": "喪志打擊",
+					"entries": [
+						"當你以使用這把武器的攻擊命中一個生物時，你可以讓目標心中充滿不安的恐懼：目標在你的下個回合結束前進行的下一次豁免檢定具有劣勢。若該生物免疫{@condition frightened}狀態，則無視這個效應。使用這項屬性後，你在下一個黃昏之前無法再這麼做。"
+					],
+					"ENG_name": "Disheartening Strike"
+				}
+			]
+		},
+		"ENG_name": "Acheron Blade"
+	},
+	"Adamantine Armor|DMG": {
+		"name": "精金護甲",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "HA"
+			},
+			{
+				"type": "MA"
+			},
+			{
+				"type": "HA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			}
+		],
+		"excludes": {
+			"name": "生皮甲",
+			"ENG_name": "Hide Armor"
+		},
+		"inherits": {
+			"namePrefix": "Adamantine ",
+			"source": "DMG",
+			"page": 150,
+			"srd": true,
+			"reprintedAs": [
+				"Adamantine Armor|XDMG"
+			],
+			"tier": "major",
+			"rarity": "uncommon",
+			"entries": [
+				"這套護甲是由精金打造，現存最堅硬的物質之一。當你穿著此護甲時，任何對你的重擊都將變為普通命中。"
+			]
+		},
+		"ENG_name": "Adamantine Armor"
+	},
+	"Adamantine Armor|XDMG": {
+		"name": "精金護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"excludes": {
+			"name": "生皮甲",
+			"ENG_name": "Hide Armor"
+		},
+		"inherits": {
+			"namePrefix": "Adamantine ",
+			"source": "XDMG",
+			"page": 227,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "uncommon",
+			"entries": [
+				"這套護甲以精金強化，精金是現存最堅硬的物質之一。你穿著它時，任何對你造成的{@variantrule Critical Hit|XPHB|重擊}都變為普通命中。"
+			],
+			"lootTables": [
+				"Armaments - Uncommon|XDMG"
+			]
+		},
+		"ENG_name": "Adamantine Armor"
+	},
+	"Adamantine Weapon|XDMG": {
+		"name": "精金武器",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "A|XPHB"
+			},
+			{
+				"type": "AF|XDMG"
+			},
+			{
+				"type": "M|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Adamantine ",
+			"source": "XDMG",
+			"page": 227,
+			"rarity": "uncommon",
+			"entries": [
+				"這把武器或這枚彈藥以精金製成，精金是現存最堅硬的物質之一。每當這把武器或這枚彈藥命中一件物件時，該次命中即為{@variantrule Critical Hit|XPHB|重擊}。"
+			],
+			"lootTables": [
+				"Armaments - Uncommon|XDMG"
+			]
+		},
+		"ENG_name": "Adamantine Weapon"
+	},
+	"Ammunition of Slaying|XDMG": {
+		"name": "殺戮彈藥",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "A|XPHB"
+			},
+			{
+				"type": "AF|XDMG"
+			}
+		],
+		"ammo": true,
+		"inherits": {
+			"nameSuffix": " of Slaying",
+			"source": "XDMG",
+			"page": 228,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "very rare",
+			"entries": [
+				"這枚魔法彈藥是用來殺死特定類型的生物，類型由 DM 選擇或擲下表隨機決定。若該類型的生物受到這枚彈藥的傷害，該生物須進行一次 {@dc 17} 體質豁免，失敗額外受到 {@damage 6d10} 點力場傷害，成功則額外傷害減半。",
+				"對一個生物造成額外傷害後，這枚彈藥便不再具有魔法。",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"colLabels": [
+						"1d100",
+						"生物類型"
+					],
+					"rows": [
+						[
+							"01-10",
+							"異怪"
+						],
+						[
+							"11-15",
+							"野獸"
+						],
+						[
+							"16-20",
+							"天界生物"
+						],
+						[
+							"21-25",
+							"構裝體"
+						],
+						[
+							"26-35",
+							"龍"
+						],
+						[
+							"36-45",
+							"元素"
+						],
+						[
+							"46-50",
+							"類人生物"
+						],
+						[
+							"51-60",
+							"精類"
+						],
+						[
+							"61-70",
+							"邪魔"
+						],
+						[
+							"71-75",
+							"巨人"
+						],
+						[
+							"76-80",
+							"怪獸"
+						],
+						[
+							"81-85",
+							"泥怪"
+						],
+						[
+							"86-90",
+							"植物"
+						],
+						[
+							"91-00",
+							"不死生物"
+						]
+					]
+				}
+			],
+			"lootTables": [
+				"Armaments - Very Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Ammunition of Slaying"
+	},
+	"Antimagic Armor|BMT": {
+		"name": "反魔法護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "LA"
+			},
+			{
+				"type": "MA"
+			},
+			{
+				"type": "HA"
+			},
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Antimagic ",
+			"source": "BMT",
+			"page": 65,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"entries": [
+				"穿著這件護甲時，你可以用你的反應讓自己在對抗法術的一次豁免檢定上具有優勢。這項屬性使用後，在下一個黎明之前無法再次使用。",
+				"此外，穿著這件護甲時，你可以用它施放{@spell Antimagic Field}，無需法術構材。這項屬性使用後，在下一個黎明之前無法再次使用。"
+			],
+			"attachedSpells": {
+				"daily": {
+					"1e": [
+						"antimagic field"
+					]
+				}
+			}
+		},
+		"ENG_name": "Antimagic Armor"
+	},
+	"Armblade|ERLW": {
+		"name": "臂刃",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "M"
+			},
+			{
+				"type": "M|XPHB"
+			}
+		],
+		"excludes": {
+			"property": [
+				"2H",
+				"2H|XPHB"
+			]
+		},
+		"inherits": {
+			"nameSuffix": " Armblade",
+			"source": "ERLW",
+			"page": 276,
+			"rarity": "common",
+			"reqAttune": "by a warforged",
+			"reqAttuneTags": [
+				{
+					"race": "warforged|erlw"
+				}
+			],
+			"entries": [
+				"臂刃是一種附著在你手臂上的魔法武器，只要你與它同調，它就與你密不可分。要與這件物品同調，你必須在整個同調期間將它緊貼在前臂上。",
+				"你可以用一個附贈動作將臂刃收入前臂，或從前臂伸出。臂刃伸出時，你可以如同持握著它一樣使用這把武器，且無法將那隻手用於其他用途。"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Armblade"
+	},
+	"Armor of Acid Resistance|DMG": {
+		"name": "酸蝕抗性護甲",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Acid Resistance",
+			"source": "DMG",
+			"page": 152,
+			"srd": true,
+			"reprintedAs": [
+				"Armor of Acid Resistance|XDMG"
+			],
+			"resist": [
+				"acid"
+			],
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance}"
+			]
+		},
+		"ENG_name": "Armor of Acid Resistance"
+	},
+	"Armor of Acid Resistance|XDMG": {
+		"name": "酸蝕抗性護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Acid Resistance",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"acid"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance|XDMG}"
+			]
+		},
+		"ENG_name": "Armor of Acid Resistance"
+	},
+	"Armor of Cold Resistance|DMG": {
+		"name": "寒冰抗性護甲",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Cold Resistance",
+			"source": "DMG",
+			"page": 152,
+			"srd": true,
+			"reprintedAs": [
+				"Armor of Cold Resistance|XDMG"
+			],
+			"resist": [
+				"cold"
+			],
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance}"
+			]
+		},
+		"ENG_name": "Armor of Cold Resistance"
+	},
+	"Armor of Cold Resistance|XDMG": {
+		"name": "寒冰抗性護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Cold Resistance",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"cold"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance|XDMG}"
+			]
+		},
+		"ENG_name": "Armor of Cold Resistance"
+	},
+	"Armor of Fire Resistance|DMG": {
+		"name": "火焰抗性護甲",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Fire Resistance",
+			"source": "DMG",
+			"page": 152,
+			"srd": true,
+			"reprintedAs": [
+				"Armor of Fire Resistance|XDMG"
+			],
+			"resist": [
+				"fire"
+			],
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance}"
+			]
+		},
+		"ENG_name": "Armor of Fire Resistance"
+	},
+	"Armor of Fire Resistance|XDMG": {
+		"name": "火焰抗性護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Fire Resistance",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"fire"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance|XDMG}"
+			]
+		},
+		"ENG_name": "Armor of Fire Resistance"
+	},
+	"Armor of Force Resistance|DMG": {
+		"name": "力場抗性護甲",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Force Resistance",
+			"source": "DMG",
+			"page": 152,
+			"srd": true,
+			"reprintedAs": [
+				"Armor of Force Resistance|XDMG"
+			],
+			"resist": [
+				"force"
+			],
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance}"
+			]
+		},
+		"ENG_name": "Armor of Force Resistance"
+	},
+	"Armor of Force Resistance|XDMG": {
+		"name": "力場抗性護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Force Resistance",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"force"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance|XDMG}"
+			]
+		},
+		"ENG_name": "Armor of Force Resistance"
+	},
+	"Armor of Fungal Spores|BMT": {
+		"name": "真菌孢子護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "MA"
+			},
+			{
+				"type": "MA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Fungal Spores",
+			"source": "BMT",
+			"page": 65,
+			"rarity": "uncommon",
+			"entries": [
+				"穿著這件護甲時，你可以用一個附贈動作讓護甲散發有毒的孢子，充滿以你為中心、半徑 10 呎的球形範圍。該區域內的每個生物必須通過一次 {@dc 15} 體質豁免，否則陷入中毒狀態，直到你的下個回合結束。這項屬性使用後，在下一個黎明之前無法再次使用。"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Armor of Fungal Spores"
+	},
+	"Armor of Gleaming|XDMG": {
+		"name": "閃爍護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Gleaming",
+			"source": "XDMG",
+			"page": 230,
+			"rarity": "common",
+			"entries": [
+				"這件護甲永遠不會變髒。"
+			],
+			"lootTables": [
+				"Armaments - Common|XDMG"
+			]
+		},
+		"ENG_name": "Armor of Gleaming"
+	},
+	"Armor of Lightning Resistance|DMG": {
+		"name": "閃電抗性護甲",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Lightning Resistance",
+			"source": "DMG",
+			"page": 152,
+			"srd": true,
+			"reprintedAs": [
+				"Armor of Lightning Resistance|XDMG"
+			],
+			"resist": [
+				"lightning"
+			],
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance}"
+			]
+		},
+		"ENG_name": "Armor of Lightning Resistance"
+	},
+	"Armor of Lightning Resistance|XDMG": {
+		"name": "閃電抗性護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Lightning Resistance",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"lightning"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance|XDMG}"
+			]
+		},
+		"ENG_name": "Armor of Lightning Resistance"
+	},
+	"Armor of Necrotic Resistance|DMG": {
+		"name": "死靈抗性護甲",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Necrotic Resistance",
+			"source": "DMG",
+			"page": 152,
+			"srd": true,
+			"reprintedAs": [
+				"Armor of Necrotic Resistance|XDMG"
+			],
+			"resist": [
+				"necrotic"
+			],
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance}"
+			]
+		},
+		"ENG_name": "Armor of Necrotic Resistance"
+	},
+	"Armor of Necrotic Resistance|XDMG": {
+		"name": "死靈抗性護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Necrotic Resistance",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"necrotic"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance|XDMG}"
+			]
+		},
+		"ENG_name": "Armor of Necrotic Resistance"
+	},
+	"Armor of Poison Resistance|DMG": {
+		"name": "毒素抗性護甲",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Poison Resistance",
+			"source": "DMG",
+			"page": 152,
+			"srd": true,
+			"reprintedAs": [
+				"Armor of Poison Resistance|XDMG"
+			],
+			"resist": [
+				"poison"
+			],
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance}"
+			]
+		},
+		"ENG_name": "Armor of Poison Resistance"
+	},
+	"Armor of Poison Resistance|XDMG": {
+		"name": "毒素抗性護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Poison Resistance",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"poison"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance|XDMG}"
+			]
+		},
+		"ENG_name": "Armor of Poison Resistance"
+	},
+	"Armor of Psychic Resistance|DMG": {
+		"name": "精神抗性護甲",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Psychic Resistance",
+			"source": "DMG",
+			"page": 152,
+			"srd": true,
+			"reprintedAs": [
+				"Armor of Psychic Resistance|XDMG"
+			],
+			"resist": [
+				"psychic"
+			],
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance}"
+			]
+		},
+		"ENG_name": "Armor of Psychic Resistance"
+	},
+	"Armor of Psychic Resistance|XDMG": {
+		"name": "精神抗性護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Psychic Resistance",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"psychic"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance|XDMG}"
+			]
+		},
+		"ENG_name": "Armor of Psychic Resistance"
+	},
+	"Armor of Radiant Resistance|DMG": {
+		"name": "光耀抗性護甲",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Radiant Resistance",
+			"source": "DMG",
+			"page": 152,
+			"srd": true,
+			"reprintedAs": [
+				"Armor of Radiant Resistance|XDMG"
+			],
+			"resist": [
+				"radiant"
+			],
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance}"
+			]
+		},
+		"ENG_name": "Armor of Radiant Resistance"
+	},
+	"Armor of Radiant Resistance|XDMG": {
+		"name": "光耀抗性護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Radiant Resistance",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"radiant"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance|XDMG}"
+			]
+		},
+		"ENG_name": "Armor of Radiant Resistance"
+	},
+	"Armor of Safeguarding|BGG": {
+		"name": "守護護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "HA"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Safeguarding",
+			"source": "BGG",
+			"page": 111,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"entries": [
+				"這件護甲胸口中央鑲著一顆刻有盾牌符文的黃水晶。",
+				"穿著這件護甲時，你的生命值上限增加等同 10 + 你等級的數值。",
+				{
+					"type": "entries",
+					"name": "引動符文",
+					"entries": [
+						"你可以用一個動作引動護甲的符文，用它施放{@spell beacon of hope}法術；該法術的持續時間為 1 分鐘，且不需要{@status concentration}。符文被引動後，在下一個黎明之前無法再次引動。"
+					],
+					"ENG_name": "Invoking the Rune"
+				}
+			],
+			"attachedSpells": {
+				"daily": {
+					"1e": [
+						"beacon of hope"
+					]
+				}
+			}
+		},
+		"ENG_name": "Armor of Safeguarding"
+	},
+	"Armor of the Fallen|BMT": {
+		"name": "亡者護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "MA"
+			},
+			{
+				"type": "HA"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of the Fallen",
+			"source": "BMT",
+			"page": 65,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"entries": [
+				"穿著這件護甲時，你可以用它施放{@spell Speak with Dead}或{@spell Animate Dead}。護甲以此方式施放法術後，在下一個黎明之前無法施放這兩道法術中的任何一道。",
+				"你的靈魂維繫著這件護甲。若你在與護甲同調期間死亡，護甲便會被摧毀。"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Armor of the Fallen"
+	},
+	"Armor of Thunder Resistance|DMG": {
+		"name": "雷鳴抗性護甲",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Thunder Resistance",
+			"source": "DMG",
+			"page": 152,
+			"srd": true,
+			"reprintedAs": [
+				"Armor of Thunder Resistance|XDMG"
+			],
+			"resist": [
+				"thunder"
+			],
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance}"
+			]
+		},
+		"ENG_name": "Armor of Thunder Resistance"
+	},
+	"Armor of Thunder Resistance|XDMG": {
+		"name": "雷鳴抗性護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Thunder Resistance",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"thunder"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Armor of Resistance|XDMG}"
+			]
+		},
+		"ENG_name": "Armor of Thunder Resistance"
+	},
+	"Armor of Vulnerability (Bludgeoning)|XDMG": {
+		"name": "易傷護甲（鈍擊）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Vulnerability (Bludgeoning)",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"bludgeoning"
+			],
+			"vulnerable": [
+				"piercing",
+				"slashing"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"curse": true,
+			"entries": [
+				"穿著這件護甲時，你具有鈍擊傷害{@variantrule Resistance|XPHB|抗性}。",
+				{
+					"type": "entries",
+					"name": "詛咒",
+					"entries": [
+						"這件護甲受到詛咒，只有對護甲施放{@spell Identify|XPHB}法術或你與它同調時才會揭露這件事。與這件護甲同調會使你受到詛咒，直到你成為{@spell Remove Curse|XPHB}法術或類似魔法的目標為止；脫下護甲無法終止詛咒。受詛咒期間，你具有穿刺與劈砍傷害{@variantrule Vulnerability|XPHB|易傷}。"
+					],
+					"ENG_name": "Curse"
+				}
+			]
+		},
+		"ENG_name": "Armor of Vulnerability (Bludgeoning)"
+	},
+	"Armor of Vulnerability (Piercing)|XDMG": {
+		"name": "易傷護甲（穿刺）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Vulnerability (Piercing)",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"piercing"
+			],
+			"vulnerable": [
+				"bludgeoning",
+				"slashing"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"curse": true,
+			"entries": [
+				"穿著這件護甲時，你具有穿刺傷害{@variantrule Resistance|XPHB|抗性}。",
+				{
+					"type": "entries",
+					"name": "詛咒",
+					"entries": [
+						"這件護甲受到詛咒，只有對護甲施放{@spell Identify|XPHB}法術或你與它同調時才會揭露這件事。與這件護甲同調會使你受到詛咒，直到你成為{@spell Remove Curse|XPHB}法術或類似魔法的目標為止；脫下護甲無法終止詛咒。受詛咒期間，你具有鈍擊與劈砍傷害{@variantrule Vulnerability|XPHB|易傷}。"
+					],
+					"ENG_name": "Curse"
+				}
+			]
+		},
+		"ENG_name": "Armor of Vulnerability (Piercing)"
+	},
+	"Armor of Vulnerability (Slashing)|XDMG": {
+		"name": "易傷護甲（劈砍）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Vulnerability (Slashing)",
+			"source": "XDMG",
+			"page": 231,
+			"srd52": true,
+			"basicRules2024": true,
+			"resist": [
+				"slashing"
+			],
+			"vulnerable": [
+				"bludgeoning",
+				"piercing"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"curse": true,
+			"entries": [
+				"穿著這件護甲時，你具有劈砍傷害{@variantrule Resistance|XPHB|抗性}。",
+				{
+					"type": "entries",
+					"name": "詛咒",
+					"entries": [
+						"這件護甲受到詛咒，只有對護甲施放{@spell Identify|XPHB}法術或你與它同調時才會揭露這件事。與這件護甲同調會使你受到詛咒，直到你成為{@spell Remove Curse|XPHB}法術或類似魔法的目標為止；脫下護甲無法終止詛咒。受詛咒期間，你具有鈍擊與穿刺傷害{@variantrule Vulnerability|XPHB|易傷}。"
+					],
+					"ENG_name": "Curse"
+				}
+			]
+		},
+		"ENG_name": "Armor of Vulnerability (Slashing)"
+	},
+	"Armor of Weightlessness|BMT": {
+		"name": "失重護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "LA"
+			},
+			{
+				"type": "MA"
+			},
+			{
+				"type": "HA"
+			},
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Weightlessness",
+			"source": "BMT",
+			"page": 65,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4 + 1}",
+			"charges": 5,
+			"entries": [
+				"這件護甲有 5 點充能。穿著它時，你可以用一個附贈動作消耗 1 點或更多充能，從護甲施放下列法術之一，並以自己為目標：{@spell Jump}（1 點充能）或{@spell Levitate}（2 點充能）。",
+				"這件護甲每天黎明時恢復 {@dice 1d4 + 1} 點已消耗的充能。"
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"jump"
+					],
+					"2": [
+						"levitate"
+					]
+				}
+			}
+		},
+		"ENG_name": "Armor of Weightlessness"
+	},
+	"Arrow of Slaying (*)|DMG": {
+		"name": "殺戮彈藥（*）",
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"arrow": true
+			},
+			{
+				"bolt": true
+			}
+		],
+		"excludes": {
+			"cellEnergy": true,
+			"bulletFirearm": true
+		},
+		"ammo": true,
+		"entries": [
+			"{@note * 這個通用變體與物品{@item arrow of slaying}的名稱與來源相同}。",
+			"{@i 殺戮箭}是用來殺死特定種類生物的魔法武器。有些針對的對象較為明確；例如，既有{@i 屠龍箭}，也有{@i 屠藍龍箭}。若屬於{@i 殺戮箭}所對應類型、種族或群體的生物受到這支箭的傷害，該生物必須進行一次 {@dc 17} 體質豁免，失敗額外受到 {@damage 6d10} 點穿刺傷害，成功則額外傷害減半。",
+			"{@i 殺戮箭}對一個生物造成額外傷害後，就會變成非魔法的箭。",
+			"這類魔法彈藥還有其他種類，例如供弩使用的殺戮弩矢，不過以箭最為常見。"
+		],
+		"inherits": {
+			"nameSuffix": " of Slaying",
+			"source": "DMG",
+			"page": 152,
+			"srd": true,
+			"reprintedAs": [
+				"Ammunition of Slaying|XDMG"
+			],
+			"tier": "minor",
+			"rarity": "very rare",
+			"entries": [
+				"殺戮{=baseName/l}是用來殺死特定種類生物的魔法武器。有些針對的對象較為明確；例如，既有{@i 屠龍{=baseName/l}}，也有{@i 屠藍龍{=baseName/l}}。若屬於殺戮{=baseName/l}所對應類型、種族或群體的生物受到這枚{=baseName/l}的傷害，該生物必須進行一次 {@dc 17} 體質豁免，失敗額外受到 {@damage 6d10} 點穿刺傷害，成功則額外傷害減半。",
+				"殺戮{=baseName/l}對一個生物造成額外傷害後，就會變成非魔法的{=baseName/l}。"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Arrow of Slaying (*)"
+	},
+	"Ascendant Dragon's Wrath Weapon|FTD": {
+		"name": "飛升龍怒武器",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Ascendant Dragon's Wrath ",
+			"source": "FTD",
+			"page": 25,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"bonusWeapon": "+3",
+			"entries": [
+				"這把武器飾有龍首、龍爪、龍翼、龍鱗或龍語文字。浸潤在龍的寶藏中時，它會吸收該龍吐息武器的能量，並以其特殊屬性造成該類型的傷害。",
+				"每當你以這把武器進行攻擊檢定擲出 20 時，目標 5 呎內每個由你選擇的生物受到 5 點該龍吐息武器傷害類型的傷害。",
+				"你使用這把武器進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。命中時，這把武器額外造成 {@damage 3d6} 點該龍吐息武器傷害類型的傷害。",
+				"你可以用一個動作從武器釋放出 60 呎錐形範圍的毀滅能量。該區域內的每個生物必須進行一次 {@dc 18} 敏捷豁免，失敗受到 {@damage 12d6} 點該龍吐息武器傷害類型的傷害，成功則傷害減半。這個動作使用後，在下一個黎明之前無法再次使用。"
+			]
+		},
+		"ENG_name": "Ascendant Dragon's Wrath Weapon"
+	},
+	"Barding|PHB": {
+		"name": "護馬鎧甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " Barding",
+			"nameRemove": " Armor",
+			"source": "PHB",
+			"page": 157,
+			"srd": true,
+			"basicRules": true,
+			"type": "TAH",
+			"rarity": "none",
+			"weightMult": 2,
+			"weightExpression": "[[baseItem.weight]] * 2",
+			"valueMult": 4,
+			"valueExpression": "[[baseItem.value]] * 4",
+			"barding": true,
+			"entries": [
+				"護馬鎧甲是用來保護動物頭部、頸部、胸部與軀幹的護甲。本章「護甲」表所列的任何一種護甲都可以買到護馬鎧甲的版本。價格是為類人生物製作的同種護甲的四倍，重量則是兩倍。"
+			]
+		},
+		"ENG_name": "Barding"
+	},
+	"Berserker Axe|XDMG": {
+		"name": "狂戰士之斧",
+		"referenceSources": [
+			"DrDe-SD"
+		],
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "戰斧",
+				"source": "XPHB",
+				"ENG_name": "Battleaxe"
+			},
+			{
+				"name": "巨斧",
+				"source": "XPHB",
+				"ENG_name": "Greataxe"
+			},
+			{
+				"name": "斧槍",
+				"source": "XPHB",
+				"ENG_name": "Halberd"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Berserker ",
+			"source": "XDMG",
+			"page": 236,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "rare",
+			"reqAttune": true,
+			"curse": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。此外，你與這把武器同調期間，你每擁有一個等級，{@variantrule Hit Points|XPHB|生命值}上限就增加 1。",
+				{
+					"type": "entries",
+					"name": "詛咒",
+					"entries": [
+						"這把武器受到詛咒，與它同調會使詛咒延伸到你身上。只要你仍受詛咒，你就不願與這把武器分離，隨時把它放在伸手可及之處。你使用這把武器以外的武器進行攻擊檢定時也具有{@variantrule Disadvantage|XPHB|劣勢}。",
+						"每當你持有這把武器時被其他生物傷害，你必須通過一次 {@dc 15} 感知豁免，否則陷入狂暴。當你開始回合時，60 呎內沒有任何你看得見或聽得見的生物，這種狂暴狀態便會結束。",
+						"狂暴期間，你把離你最近、你看得見或聽得見的生物視為敵人。若有多個可能的生物，隨機選擇一個。在你的每個回合，你必須盡可能靠近該生物，並以該生物為目標採取{@action Attack|XPHB}動作。若你無法靠近到足以用這把武器攻擊該生物，你在用完所有可用的移動後回合結束。若該生物死亡，或你再也看不見、聽不見牠，下一個離你最近、你看得見或聽得見的生物便成為你的新目標。"
+					],
+					"ENG_name": "Curse"
+				}
+			],
+			"lootTables": [
+				"Armaments - Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Berserker Axe"
+	},
+	"Blade of the Medusa|LLK": {
+		"name": "梅杜莎之刃",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"sword": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of the Medusa",
+			"source": "LLK",
+			"page": 53,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"curse": true,
+			"entries": [
+				"當你以這把魔法武器攻擊一個生物並在攻擊檢定擲出 20 時，該生物除了承受攻擊的正常效果外，還必須進行一次 {@dc 15} 體質豁免。豁免失敗，該生物受到束縛，且必須在它每個回合結束時再進行一次體質豁免。若它對抗這個效應的豁免成功三次，效應便會終止。若它豁免失敗三次，便會化為石頭，陷入{@condition petrified}狀態 1 小時。",
+				"若生物免疫這把武器的傷害類型、沒有血肉之軀，或擁有傳奇動作，便免疫這個效應。",
+				{
+					"name": "詛咒",
+					"type": "entries",
+					"entries": [
+						"這把武器受到詛咒，與它同調會使詛咒延伸到你身上。在以{@spell remove curse}法術或類似魔法解除詛咒之前，你不願與這把武器分離。每當你以這把武器攻擊一個生物並在攻擊檢定擲出 1 時，你必須通過一次 {@dc 15} 體質豁免，否則陷入{@condition restrained}狀態，並如上所述被迫進行額外的豁免以對抗{@condition petrified}狀態。"
+					],
+					"ENG_name": "Curse"
+				}
+			]
+		},
+		"ENG_name": "Blade of the Medusa"
+	},
+	"Bloodseeker Ammunition|BMT": {
+		"name": "尋血彈藥",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "A"
+			},
+			{
+				"type": "AF|DMG"
+			},
+			{
+				"type": "A|XPHB"
+			},
+			{
+				"type": "AF|XDMG"
+			}
+		],
+		"ammo": true,
+		"inherits": {
+			"namePrefix": "Bloodseeker ",
+			"source": "BMT",
+			"page": 66,
+			"rarity": "very rare",
+			"entries": [
+				"以這枚彈藥進行的遠程攻擊檢定，對任何生命值未滿的生物具有優勢。"
+			]
+		},
+		"ENG_name": "Bloodseeker Ammunition"
+	},
+	"Bloodshed Blade|BGG": {
+		"name": "浴血之刃",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"sword": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Bloodshed ",
+			"source": "BGG",
+			"page": 111,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"bonusWeaponDamage": "+1",
+			"entries": [
+				"這把劍的劍柄上鑲著一顆刻有鮮血符文的紅玉髓。",
+				"你可以將你的體質調整值（最低為 {=bonusWeaponDamage}）加到以這把武器進行的攻擊的傷害擲骰上。",
+				{
+					"type": "entries",
+					"name": "引動符文",
+					"entries": [
+						"當你以使用這把武器的攻擊鎖定一個生物時，你可以引動劍上的符文，使它迸發深紅光芒，並為你的攻擊注入嗜血的精準。你隨即消耗並擲你一顆未使用的生命骰，將擲出的數字加到攻擊檢定上。你可以在擲出 {@dice d20} 之後再選擇是否引動符文。",
+						"若這次攻擊命中，你還可以消耗並擲任意數量未使用的生命骰，將擲出的總值加到這把武器的傷害上。",
+						"符文被引動後，在下一個黎明之前無法再次引動。"
+					],
+					"ENG_name": "Invoking the Rune"
+				}
+			]
+		},
+		"ENG_name": "Bloodshed Blade"
+	},
+	"Bow of Conflagration|BMT": {
+		"name": "烈焰之弓",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"bow": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Conflagration",
+			"source": "BMT",
+			"page": 66,
+			"rarity": "rare",
+			"reqAttune": true,
+			"entries": [
+				"從這把弓射出的彈藥會熊熊燃燒。當你以使用這把弓的攻擊檢定命中時，目標額外受到 {@damage 1d6} 點火焰傷害。若目標是易燃的非魔法物件，它會著火，在你每個回合開始時受到 {@damage 1d6} 點火焰傷害，直到有生物用一個動作撲滅火焰為止。"
+			]
+		},
+		"ENG_name": "Bow of Conflagration"
+	},
+	"Bow of Melodies|BMT": {
+		"name": "旋律之弓",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"bow": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Melodies",
+			"source": "BMT",
+			"page": 66,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"entries": [
+				"這把弓有多條弓弦，形似里拉琴或小豎琴。搭箭上弦時撥動弓弦，就能為箭注入魔力。",
+				"當你用這把弓進行遠程武器攻擊時，可以彈奏下列旋律之一。你必須在進行攻擊檢定前選擇這麼做，且每次攻擊只能彈奏一種旋律。",
+				{
+					"type": "entries",
+					"name": "精準旋律",
+					"entries": [
+						"若你熟練{@skill Performance}，攻擊檢定獲得 +1 加值。若你專精{@skill Performance}，則改為獲得 +2 加值。"
+					],
+					"ENG_name": "Melody of Precision"
+				},
+				{
+					"type": "entries",
+					"name": "迴響旋律",
+					"entries": [
+						"你撥出的旋律響亮地迴盪。命中時，目標額外受到等同你魅力調整值的雷鳴傷害。"
+					],
+					"ENG_name": "Melody of Reverberation"
+				}
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Bow of Melodies"
+	},
+	"Cast-Off Armor|XDMG": {
+		"name": "速脫護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Cast-Off ",
+			"source": "XDMG",
+			"page": 243,
+			"rarity": "common",
+			"entries": [
+				"你可以用一個{@action Magic|XPHB}動作脫下這件護甲。"
+			],
+			"lootTables": [
+				"Armaments - Common|XDMG"
+			]
+		},
+		"ENG_name": "Cast-Off Armor"
+	},
+	"Clockwork Armor|BMT": {
+		"name": "發條護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "HA"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Clockwork ",
+			"source": "BMT",
+			"page": 67,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4}",
+			"charges": 4,
+			"entries": [
+				"這件護甲的外表面與內部關節有彼此咬合的齒輪嗡嗡運轉，汲取著機械境位面井然有序的魔力。",
+				"這件護甲有 4 點充能。若你穿著這件護甲時擲 {@dice d20}，你可以消耗 1 點充能，將擲出的數字改為 10。護甲每天黎明時恢復 {@dice 1d4} 點已消耗的充能。"
+			]
+		},
+		"ENG_name": "Clockwork Armor"
+	},
+	"Corpse Slayer|EGW": {
+		"name": "屍體殺手",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Corpse Slayer ",
+			"source": "EGW",
+			"page": 266,
+			"rarity": "rare",
+			"reqAttune": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。",
+				"當你以使用這把武器的攻擊命中一個不死生物時，該次攻擊額外造成 {@damage 1d8} 點該武器傷害類型的傷害，且該生物在對抗驅散不死生物效應的豁免檢定上具有劣勢，直到你的下個回合開始。"
+			]
+		},
+		"ENG_name": "Corpse Slayer"
+	},
+	"Crystal Blade|FTD": {
+		"name": "水晶之刃",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"sword": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Crystal ",
+			"source": "FTD",
+			"page": 22,
+			"rarity": "rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d3}",
+			"charges": 3,
+			"entries": [
+				"這把魔法劍的劍刃以水晶龍的角或棘刺製成。當你以使用這把劍的攻擊檢定命中時，目標額外受到 {@damage 1d8} 點光耀傷害。",
+				"這把劍有 3 點充能，每天黎明時恢復 {@dice 1d3} 點已消耗的充能。當你以使用這把劍的攻擊檢定命中一個生物時，你可以消耗 1 點充能，恢復等同這把劍所造成額外光耀傷害的生命值。",
+				"持握這把劍時，你可以用一個附贈動作讓它散發半徑 30 呎的明亮光照與再往外 30 呎的微光光照、散發半徑 10 呎的微光光照，或熄滅光芒。"
+			],
+			"light": [
+				{
+					"bright": 30,
+					"dim": 60
+				},
+				{
+					"dim": 10
+				}
+			]
+		},
+		"ENG_name": "Crystal Blade"
+	},
+	"Dancing Sword|XDMG": {
+		"name": "舞空劍",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"sword": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Dancing ",
+			"source": "XDMG",
+			"page": 248,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"entries": [
+				"你可以用一個{@variantrule Bonus Action|XPHB|附贈動作}將這把魔法武器拋向空中。這麼做時，武器開始懸浮，飛行至多 30 呎，並攻擊它 5 呎內一個由你選擇的生物。這把武器使用你的攻擊檢定，並將你的屬性調整值加到傷害擲骰上。",
+				"武器懸浮期間，你可以用一個{@variantrule Bonus Action|XPHB|附贈動作}讓它飛行至多 30 呎，到你 30 呎內的另一處。作為同一個{@variantrule Bonus Action|XPHB|附贈動作}的一部分，你可以讓武器攻擊它 5 呎內的一個生物。",
+				"懸浮的武器進行第四次攻擊後，會飛回你身邊並試圖回到你手中。若你沒有空著的手，武器會落在你所在空間的地面上。若武器與你之間沒有暢通的路徑，它會盡可能靠近你，然後落到地上。若你握住它，或距離它超過 30 呎，它也會停止懸浮。"
+			],
+			"lootTables": [
+				"Arcana - Very Rare|XDMG",
+				"Armaments - Very Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Dancing Sword"
+	},
+	"Dazzling Weapon|EFA": {
+		"name": "炫目武器",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Dazzling ",
+			"source": "EFA",
+			"page": 112,
+			"rarity": "rare",
+			"reqAttune": true,
+			"bonusWeapon": "+1",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4}",
+			"charges": 4,
+			"entries": [
+				"這把魔法武器讓以它進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。持握它時，你可以用一個{@variantrule Bonus Action|XPHB|附贈動作}讓它散發半徑 30 呎的{@variantrule Bright Light|XPHB|明亮光照}，以及再往外 30 呎的{@variantrule Dim Light|XPHB|微光光照}。你可以用一個{@variantrule Bonus Action|XPHB|附贈動作}熄滅光芒。",
+				"這把武器有 4 點充能。被攻擊檢定命中後，你可以立即用一個{@variantrule Reaction|XPHB|反應}消耗 1 點充能，迫使攻擊者進行一次 DC 15 體質豁免。豁免失敗，攻擊者陷入{@condition Blinded|XPHB}狀態，直到它的下個回合結束。這把武器每天黎明時恢復 {@dice 1d4} 點已消耗的充能。"
+			],
+			"light": [
+				{
+					"bright": 30,
+					"dim": 60
+				}
+			],
+			"classFeatures": [
+				"replicate magic item|artificer|efa|2|efa"
+			]
+		},
+		"ENG_name": "Dazzling Weapon"
+	},
+	"Defender|XDMG": {
+		"name": "防禦者",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "M|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Defender ",
+			"source": "XDMG",
+			"page": 252,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"bonusWeapon": "+3",
+			"bonusAc": "+1",
+			"entries": [
+				"以此魔法武器進行的攻擊檢定與傷害擲骰獲得 +3 加值。",
+				"在你的每個回合第一次以這把武器攻擊時，你可以將武器的部分或全部加值轉移到你的{@variantrule Armor Class|XPHB|護甲等級}上。例如，你可以將攻擊檢定與傷害擲骰的加值降為 {=bonusAc}，並使{@variantrule Armor Class|XPHB|護甲等級}獲得 +2 加值。調整後的加值持續生效到你的下個回合開始，不過你必須持握這把武器才能從它獲得 AC 加值。"
+			],
+			"lootTables": [
+				"Armaments - Legendary|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Defender"
+	},
+	"Demon Armor|XDMG": {
+		"name": "惡魔護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Demon ",
+			"source": "XDMG",
+			"page": 252,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"curse": true,
+			"grantsLanguage": true,
+			"bonusWeapon": "+1",
+			"bonusAc": "+1",
+			"entries": [
+				"穿著這件護甲時，你的{@variantrule Armor Class|XPHB|護甲等級}獲得 {=bonusAc} 加值，且你通曉深淵語。此外，護甲的利爪護手讓你的徒手打擊造成 {@damage 1d8} 點劈砍傷害，而非一般的鈍擊傷害，且你徒手打擊的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。",
+				{
+					"type": "entries",
+					"name": "詛咒",
+					"entries": [
+						"一旦穿上這件受詛咒的護甲，除非你成為{@spell Remove Curse|XPHB}法術或類似魔法的目標，否則無法脫下它。穿著這件護甲時，你在對惡魔進行的攻擊檢定，以及對抗牠們法術與特殊能力的豁免檢定上具有{@variantrule Disadvantage|XPHB|劣勢}。"
+					],
+					"ENG_name": "Curse"
+				}
+			],
+			"lootTables": [
+				"Armaments - Very Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Demon Armor"
+	},
+	"Demon Skin|DITLCOT": {
+		"name": "惡魔之膚",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "HA"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Demon Skin ",
+			"source": "DitLCoT",
+			"page": 14,
+			"resist": [
+				"poison"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"stealth": false,
+			"entries": [
+				"這件魔法護甲的外觀是一罐冒泡的黑色膿血。當你與它同調時，膿血會附著並貼合你的皮膚，罐子隨之消失。這件護甲可以穿在一般衣物底下，且不會妨礙身體機能。一旦穿上，除非你選擇脫下或你死亡，否則無法將它移除；屆時罐子會重新出現，膿血流回其中。",
+				"穿著這件護甲時，你具有毒素傷害抗性。這件護甲也不會讓敏捷（{@skill Stealth}）檢定具有劣勢。"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Demon Skin"
+	},
+	"Demonbone Polearm|COA": {
+		"name": "魔骨長柄武器",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"polearm": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Demonbone ",
+			"source": "CoA",
+			"page": 268,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"curse": true,
+			"bonusWeapon": "+2",
+			"entries": [
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰具有 {=bonusWeapon} 加值。此外，當你被觸及範圍內的生物傷害時，你可以用你的反應以這把武器對牠進行一次近戰攻擊。",
+				{
+					"type": "entries",
+					"name": "詛咒",
+					"entries": [
+						"與這把武器同調期間，你不願與它分離。同調期間，你使用這把武器以外的武器進行攻擊檢定時具有劣勢。",
+						"每當敵對生物傷害你時，你必須通過一次 {@dc 15} 感知豁免，否則陷入狂暴。狂暴期間，你必須在你的每個回合用你的動作，以這把武器攻擊離你最近的生物。若你能在{@action Attack}動作中進行額外攻擊，你會使用那些額外攻擊，並在擊倒當前目標後移動去攻擊下一個最近的生物。若有多個可能的目標，你隨機攻擊其中一個。",
+						"你會持續狂暴，直到你開始回合時 60 呎內沒有任何你看得見或聽得見的生物為止。或者，盟友可以用一個動作進行一次 {@dc 15} 魅力（{@skill Persuasion}）檢定，成功則你不再狂暴。只有{@spell Remove Curse}法術能讓你終止與這件物品的同調。"
+					],
+					"ENG_name": "Curse"
+				},
+				{
+					"type": "entries",
+					"name": "腐化",
+					"entries": [
+						"此物品會腐化。見「{@adventure Infernal Item Corruption|CoA|16|煉獄物品腐化}」一節。"
+					],
+					"ENG_name": "Corrupting"
+				}
+			]
+		},
+		"ENG_name": "Demonbone Polearm"
+	},
+	"Dragon Slayer|XDMG": {
+		"name": "屠龍者",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Dragon Slayer ",
+			"source": "XDMG",
+			"page": 254,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "rare",
+			"bonusWeapon": "+1",
+			"entries": [
+				"以此魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+				"若目標是龍，這把武器額外造成 {@damage 3d6} 點該武器傷害類型的傷害。"
+			],
+			"lootTables": [
+				"Armaments - Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Dragon Slayer"
+	},
+	"Dragon Wing Bow|FTD": {
+		"name": "龍翼弓",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"bow": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Dragon Wing ",
+			"source": "FTD",
+			"page": 23,
+			"rarity": "rare",
+			"reqAttune": true,
+			"entries": [
+				"這把魔法弓的弓梢形如龍翼，並注入了色彩龍、寶石龍或金屬龍吐息的精華。當你以使用這把魔法弓的攻擊檢定命中時，目標額外受到 {@damage 1d6} 點傷害，類型與注入弓中的吐息相同——酸蝕、寒冰、火焰、力場、閃電、死靈、毒素、精神、光耀或雷鳴。",
+				"若你沒有為這把武器裝填彈藥，它會自行產生，在你拉弦時自動造出一枚魔法彈藥。弓所造出的彈藥在命中或未命中目標的瞬間便會消失。"
+			]
+		},
+		"ENG_name": "Dragon Wing Bow"
+	},
+	"Dragonlance|FTD": {
+		"name": "龍槍",
+		"referenceSources": [
+			"DSotDQ"
+		],
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"name": "長柄槍",
+				"ENG_name": "Pike"
+			},
+			{
+				"name": "騎槍",
+				"ENG_name": "Lance"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Dragonlance ",
+			"source": "FTD",
+			"page": 23,
+			"otherSources": [
+				{
+					"source": "DSotDQ",
+					"page": 23
+				}
+			],
+			"rarity": "legendary",
+			"reqAttune": true,
+			"bonusWeapon": "+3",
+			"entries": [
+				"屠龍槍是一種著名的武器，以稀有金屬在與巴哈姆特有關的強大神器協助下鍛造而成。供步兵使用的（長柄槍）與供騎手使用的（騎槍）是分別鍛造的，但兩者的魔法屬性相同。",
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。",
+				"當你以這把武器命中一條龍時，該龍額外受到 {@damage 3d6} 點力場傷害，且你 30 呎內任何一條由你選擇、你看得見的龍可以立即用牠的反應進行一次近戰攻擊。"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Dragonlance"
+	},
+	"Dried Leech|BMT": {
+		"name": "乾水蛭",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "A"
+			},
+			{
+				"type": "AF|DMG"
+			},
+			{
+				"type": "A|XPHB"
+			},
+			{
+				"type": "AF|XDMG"
+			}
+		],
+		"excludes": {
+			"cellEnergy": true
+		},
+		"ammo": true,
+		"inherits": {
+			"namePrefix": "Dried Leech ",
+			"source": "BMT",
+			"page": 67,
+			"rarity": "uncommon",
+			"entries": [
+				"這隻水蛭經過乾燥，並注入了一絲活化魔法。若你以使用這枚彈藥的遠程攻擊檢定命中一個生物，水蛭會活過來並咬住目標，在目標每個回合開始時造成 {@damage 1d4} 點穿刺傷害。若水蛭造成至少 10 點傷害或目標死亡，水蛭便會脫落。任何生物（包括目標）都可以用它的動作將水蛭拔除。水蛭一旦不再附著於目標，便會死亡且不再具有魔法。"
+			]
+		},
+		"ENG_name": "Dried Leech"
+	},
+	"Drow +1 Armor|MM": {
+		"name": "卓爾護甲+1",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Drow +1 ",
+			"source": "MM",
+			"page": 126,
+			"rarity": "unknown (magic)",
+			"bonusAc": "+1",
+			"entries": [
+				"穿著這件護甲時，你的 AC 具有 {=bonusAc} 加值。若暴露在陽光下 1 小時或更久，這件護甲會永久失去它的附魔加值。"
+			]
+		},
+		"ENG_name": "Drow +1 Armor"
+	},
+	"Drow +1 Weapon|MM": {
+		"name": "卓爾武器+1",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"excludes": {
+			"net": true
+		},
+		"inherits": {
+			"namePrefix": "Drow +1 ",
+			"source": "MM",
+			"page": 126,
+			"rarity": "unknown (magic)",
+			"bonusWeapon": "+1",
+			"entries": [
+				"你以這把武器進行的攻擊檢定與傷害擲骰具有 {=bonusWeapon} 加值。若暴露在陽光下 1 小時或更久，這把武器會永久失去它的附魔加值。"
+			]
+		},
+		"ENG_name": "Drow +1 Weapon"
+	},
+	"Drow +2 Armor|MM": {
+		"name": "卓爾護甲+2",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Drow +2 ",
+			"source": "MM",
+			"page": 126,
+			"rarity": "unknown (magic)",
+			"bonusAc": "+2",
+			"entries": [
+				"穿著這件護甲時，你的 AC 具有 {=bonusAc} 加值。若暴露在陽光下 1 小時或更久，這件護甲會永久失去它的附魔加值。"
+			]
+		},
+		"ENG_name": "Drow +2 Armor"
+	},
+	"Drow +2 Weapon|MM": {
+		"name": "卓爾武器+2",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"excludes": {
+			"net": true
+		},
+		"inherits": {
+			"namePrefix": "Drow +2 ",
+			"source": "MM",
+			"page": 126,
+			"rarity": "unknown (magic)",
+			"bonusWeapon": "+2",
+			"entries": [
+				"你以這把武器進行的攻擊檢定與傷害擲骰具有 {=bonusWeapon} 加值。若暴露在陽光下 1 小時或更久，這把武器會永久失去它的附魔加值。"
+			]
+		},
+		"ENG_name": "Drow +2 Weapon"
+	},
+	"Drow +3 Armor|MM": {
+		"name": "卓爾護甲+3",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Drow +3 ",
+			"source": "MM",
+			"page": 126,
+			"rarity": "unknown (magic)",
+			"bonusAc": "+3",
+			"entries": [
+				"穿著這件護甲時，你的 AC 具有 {=bonusAc} 加值。若暴露在陽光下 1 小時或更久，這件護甲會永久失去它的附魔加值。"
+			]
+		},
+		"ENG_name": "Drow +3 Armor"
+	},
+	"Drow +3 Weapon|MM": {
+		"name": "卓爾武器+3",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"excludes": {
+			"net": true
+		},
+		"inherits": {
+			"namePrefix": "Drow +3 ",
+			"source": "MM",
+			"page": 126,
+			"rarity": "unknown (magic)",
+			"bonusWeapon": "+3",
+			"entries": [
+				"你以這把武器進行的攻擊檢定與傷害擲骰具有 {=bonusWeapon} 加值。若暴露在陽光下 1 小時或更久，這把武器會永久失去它的附魔加值。"
+			]
+		},
+		"ENG_name": "Drow +3 Weapon"
+	},
+	"Dwarven Plate|XDMG": {
+		"name": "矮人板甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "半身板甲",
+				"source": "XPHB",
+				"ENG_name": "Half Plate Armor"
+			},
+			{
+				"name": "全身板甲",
+				"source": "XPHB",
+				"ENG_name": "Plate Armor"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Dwarven ",
+			"source": "XDMG",
+			"page": 255,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "very rare",
+			"bonusAc": "+2",
+			"entries": [
+				"穿著這件護甲時，你的{@variantrule Armor Class|XPHB|護甲等級}獲得 {=bonusAc} 加值。此外，若某個效應違反你的意願使你沿著地面移動，你可以用一個{@variantrule Reaction|XPHB|反應}讓被移動的距離減少至多 10 呎。"
+			],
+			"lootTables": [
+				"Armaments - Very Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Dwarven Plate"
+	},
+	"Efreeti Chain|XDMG": {
+		"name": "火巨靈鏈甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "鎖子甲",
+				"source": "XPHB",
+				"ENG_name": "Chain Mail"
+			},
+			{
+				"name": "鏈甲衫",
+				"source": "XPHB",
+				"ENG_name": "Chain Shirt"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Efreeti ",
+			"source": "XDMG",
+			"page": 257,
+			"basicRules2024": true,
+			"immune": [
+				"fire"
+			],
+			"rarity": "legendary",
+			"reqAttune": true,
+			"grantsLanguage": true,
+			"bonusAc": "+3",
+			"entries": [
+				"穿著這件護甲時，你的{@variantrule Armor Class|XPHB|護甲等級}獲得 {=bonusAc} 加值，你具有火焰傷害{@variantrule Immunity|XPHB|免疫}，且你通曉原初語。此外，你可以站在熔岩上並在其上移動，如同那是堅實的地面。"
+			],
+			"lootTables": [
+				"Armaments - Legendary|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Efreeti Chain"
+	},
+	"Elven Chain|XDMG": {
+		"name": "精靈鏈甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "鎖子甲",
+				"source": "XPHB",
+				"ENG_name": "Chain Mail"
+			},
+			{
+				"name": "鏈甲衫",
+				"source": "XPHB",
+				"ENG_name": "Chain Shirt"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Elven ",
+			"source": "XDMG",
+			"page": 257,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "rare",
+			"grantsProficiency": true,
+			"bonusAc": "+1",
+			"entries": [
+				"穿著這件護甲時，你的{@variantrule Armor Class|XPHB|護甲等級}獲得 {=bonusAc} 加值。即使你沒有受過中甲或重甲的訓練，也視為受過這件護甲的訓練。"
+			],
+			"classFeatures": [
+				"replicate magic item|artificer|efa|2|efa"
+			],
+			"lootTables": [
+				"Armaments - Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Elven Chain"
+	},
+	"Energy Bow|XDMG": {
+		"name": "能量弓",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "長弓",
+				"source": "XPHB",
+				"ENG_name": "Longbow"
+			},
+			{
+				"name": "短弓",
+				"source": "XPHB",
+				"ENG_name": "Shortbow"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Energy ",
+			"source": "XDMG",
+			"page": 257,
+			"srd52": true,
+			"basicRules2024": true,
+			"otherSources": [
+				{
+					"source": "UtHftLH"
+				}
+			],
+			"rarity": "very rare",
+			"reqAttune": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值；這把武器沒有弓弦。每次你做出拉弓的動作時，一支由金色能量構成的魔法箭就會出現在弦位上，蓄勢待發。這把武器產生的箭命中時造成力場傷害而非穿刺傷害，並在命中或未命中目標後消失。在消失之前，這支箭會散發半徑 20 呎的{@variantrule Bright Light|XPHB|明亮光照}，以及再往外 20 呎的{@variantrule Dim Light|XPHB|微光光照}。",
+				"這把武器具有下列額外屬性。",
+				{
+					"type": "entries",
+					"name": "束縛之箭",
+					"entries": [
+						"每當你用這把武器對一個生物進行遠程攻擊時，你可以試著束縛目標而非對它造成傷害。若箭命中，目標必須通過一次 {@dc 15} 力量豁免，否則陷入{@condition Restrained|XPHB}狀態 1 分鐘。被箭{@condition Restrained|XPHB|束縛}的生物可以用一個動作進行一次 {@dc 20} 力量（{@skill Athletics|XPHB}）檢定來試著掙脫束縛，檢定成功則終止自身受到的效應。"
+					],
+					"ENG_name": "Arrow of Restraint"
+				},
+				{
+					"type": "entries",
+					"name": "運送之箭",
+					"entries": [
+						"你可以用一個{@action Magic|XPHB}動作，從這把武器向你 60 呎內一個你看得見的目標射出一支能量箭。目標可以是一個自願的中型或更小的生物，也可以是一件未被穿戴或攜帶的物件，前提是該物件小到能放進邊長 5 呎的{@variantrule Cube [Area of Effect]|XPHB|立方}範圍。這支箭會將目標傳送到你 10 呎內一處你看得見的未被佔據空間。"
+					],
+					"ENG_name": "Arrow of Transport"
+				},
+				{
+					"type": "entries",
+					"name": "能量梯",
+					"entries": [
+						"你可以用一個{@action Magic|XPHB}動作，從這把武器向距離你至多 60 呎的一面牆射出一陣能量箭。這些箭會變成從牆上伸出的發光梯級，在牆上形成一道至多 60 呎長的魔法梯。這道梯子持續 1 分鐘後消失。"
+					],
+					"ENG_name": "Energy Ladder"
+				}
+			],
+			"light": [
+				{
+					"bright": 20,
+					"dim": 40
+				}
+			],
+			"lootTables": [
+				"Armaments - Very Rare|XDMG"
+			]
+		},
+		"ENG_name": "Energy Bow"
+	},
+	"Enspelled Armor (Cantrip)|XDMG": {
+		"name": "法術封存護甲（戲法）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Cantrip) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件護甲中封存著一道戲法。該戲法在護甲製作時決定，且必須屬於{@filter 防護或幻術|spells|school=A;I|level=0}學派。這件護甲有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。穿著這件護甲時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 13，攻擊加值為 {@hit 5}。"
+			],
+			"spellScrollLevel": 0
+		},
+		"ENG_name": "Enspelled Armor (Cantrip)"
+	},
+	"Enspelled Armor (Level 1)|XDMG": {
+		"name": "法術封存護甲（1 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 1) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件護甲中封存著一道1 環法術。該法術在護甲製作時決定，且必須屬於{@filter 防護或幻術|spells|school=A;I|level=1}學派。這件護甲有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。穿著這件護甲時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 13，攻擊加值為 {@hit 5}。"
+			],
+			"spellScrollLevel": 1
+		},
+		"ENG_name": "Enspelled Armor (Level 1)"
+	},
+	"Enspelled Armor (Level 2)|XDMG": {
+		"name": "法術封存護甲（2 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 2) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件護甲中封存著一道2 環法術。該法術在護甲製作時決定，且必須屬於{@filter 防護或幻術|spells|school=A;I|level=2}學派。這件護甲有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。穿著這件護甲時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 13，攻擊加值為 {@hit 5}。"
+			],
+			"spellScrollLevel": 2
+		},
+		"ENG_name": "Enspelled Armor (Level 2)"
+	},
+	"Enspelled Armor (Level 3)|XDMG": {
+		"name": "法術封存護甲（3 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 3) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件護甲中封存著一道3 環法術。該法術在護甲製作時決定，且必須屬於{@filter 防護或幻術|spells|school=A;I|level=3}學派。這件護甲有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。穿著這件護甲時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 15，攻擊加值為 {@hit 7}。"
+			],
+			"spellScrollLevel": 3
+		},
+		"ENG_name": "Enspelled Armor (Level 3)"
+	},
+	"Enspelled Armor (Level 4)|XDMG": {
+		"name": "法術封存護甲（4 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 4) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件護甲中封存著一道4 環法術。該法術在護甲製作時決定，且必須屬於{@filter 防護或幻術|spells|school=A;I|level=4}學派。這件護甲有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。穿著這件護甲時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 15，攻擊加值為 {@hit 7}。"
+			],
+			"spellScrollLevel": 4
+		},
+		"ENG_name": "Enspelled Armor (Level 4)"
+	},
+	"Enspelled Armor (Level 5)|XDMG": {
+		"name": "法術封存護甲（5 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 5) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件護甲中封存著一道5 環法術。該法術在護甲製作時決定，且必須屬於{@filter 防護或幻術|spells|school=A;I|level=5}學派。這件護甲有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。穿著這件護甲時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 17，攻擊加值為 {@hit 9}。"
+			],
+			"spellScrollLevel": 5
+		},
+		"ENG_name": "Enspelled Armor (Level 5)"
+	},
+	"Enspelled Armor (Level 6)|XDMG": {
+		"name": "法術封存護甲（6 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 6) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件護甲中封存著一道6 環法術。該法術在護甲製作時決定，且必須屬於{@filter 防護或幻術|spells|school=A;I|level=6}學派。這件護甲有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。穿著這件護甲時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 17，攻擊加值為 {@hit 9}。"
+			],
+			"spellScrollLevel": 6
+		},
+		"ENG_name": "Enspelled Armor (Level 6)"
+	},
+	"Enspelled Armor (Level 7)|XDMG": {
+		"name": "法術封存護甲（7 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 7) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件護甲中封存著一道7 環法術。該法術在護甲製作時決定，且必須屬於{@filter 防護或幻術|spells|school=A;I|level=7}學派。這件護甲有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。穿著這件護甲時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 18，攻擊加值為 {@hit 10}。"
+			],
+			"spellScrollLevel": 7
+		},
+		"ENG_name": "Enspelled Armor (Level 7)"
+	},
+	"Enspelled Armor (Level 8)|XDMG": {
+		"name": "法術封存護甲（8 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 8) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件護甲中封存著一道8 環法術。該法術在護甲製作時決定，且必須屬於{@filter 防護或幻術|spells|school=A;I|level=8}學派。這件護甲有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。穿著這件護甲時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 18，攻擊加值為 {@hit 10}。"
+			],
+			"spellScrollLevel": 8
+		},
+		"ENG_name": "Enspelled Armor (Level 8)"
+	},
+	"Enspelled Weapon (Cantrip)|XDMG": {
+		"name": "法術封存武器（戲法）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Cantrip) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件武器中封存著一道戲法。該戲法在武器製作時決定，且必須屬於{@filter 咒法、預言、塑能、死靈或變化|spells|school=C;D;V;N;T|level=0}學派。這件武器有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。持握這件武器時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 13，攻擊加值為 {@hit 5}。"
+			],
+			"spellScrollLevel": 0
+		},
+		"ENG_name": "Enspelled Weapon (Cantrip)"
+	},
+	"Enspelled Weapon (Level 1)|XDMG": {
+		"name": "法術封存武器（1 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 1) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件武器中封存著一道1 環法術。該法術在武器製作時決定，且必須屬於{@filter 咒法、預言、塑能、死靈或變化|spells|school=C;D;V;N;T|level=1}學派。這件武器有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。持握這件武器時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 13，攻擊加值為 {@hit 5}。"
+			],
+			"spellScrollLevel": 1
+		},
+		"ENG_name": "Enspelled Weapon (Level 1)"
+	},
+	"Enspelled Weapon (Level 2)|XDMG": {
+		"name": "法術封存武器（2 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 2) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件武器中封存著一道2 環法術。該法術在武器製作時決定，且必須屬於{@filter 咒法、預言、塑能、死靈或變化|spells|school=C;D;V;N;T|level=2}學派。這件武器有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。持握這件武器時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 13，攻擊加值為 {@hit 5}。"
+			],
+			"spellScrollLevel": 2
+		},
+		"ENG_name": "Enspelled Weapon (Level 2)"
+	},
+	"Enspelled Weapon (Level 3)|XDMG": {
+		"name": "法術封存武器（3 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 3) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件武器中封存著一道3 環法術。該法術在武器製作時決定，且必須屬於{@filter 咒法、預言、塑能、死靈或變化|spells|school=C;D;V;N;T|level=3}學派。這件武器有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。持握這件武器時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 15，攻擊加值為 {@hit 7}。"
+			],
+			"spellScrollLevel": 3
+		},
+		"ENG_name": "Enspelled Weapon (Level 3)"
+	},
+	"Enspelled Weapon (Level 4)|XDMG": {
+		"name": "法術封存武器（4 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 4) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件武器中封存著一道4 環法術。該法術在武器製作時決定，且必須屬於{@filter 咒法、預言、塑能、死靈或變化|spells|school=C;D;V;N;T|level=4}學派。這件武器有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。持握這件武器時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 15，攻擊加值為 {@hit 7}。"
+			],
+			"spellScrollLevel": 4
+		},
+		"ENG_name": "Enspelled Weapon (Level 4)"
+	},
+	"Enspelled Weapon (Level 5)|XDMG": {
+		"name": "法術封存武器（5 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 5) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件武器中封存著一道5 環法術。該法術在武器製作時決定，且必須屬於{@filter 咒法、預言、塑能、死靈或變化|spells|school=C;D;V;N;T|level=5}學派。這件武器有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。持握這件武器時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 17，攻擊加值為 {@hit 9}。"
+			],
+			"spellScrollLevel": 5
+		},
+		"ENG_name": "Enspelled Weapon (Level 5)"
+	},
+	"Enspelled Weapon (Level 6)|XDMG": {
+		"name": "法術封存武器（6 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 6) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件武器中封存著一道6 環法術。該法術在武器製作時決定，且必須屬於{@filter 咒法、預言、塑能、死靈或變化|spells|school=C;D;V;N;T|level=6}學派。這件武器有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。持握這件武器時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 17，攻擊加值為 {@hit 9}。"
+			],
+			"spellScrollLevel": 6
+		},
+		"ENG_name": "Enspelled Weapon (Level 6)"
+	},
+	"Enspelled Weapon (Level 7)|XDMG": {
+		"name": "法術封存武器（7 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 7) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件武器中封存著一道7 環法術。該法術在武器製作時決定，且必須屬於{@filter 咒法、預言、塑能、死靈或變化|spells|school=C;D;V;N;T|level=7}學派。這件武器有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。持握這件武器時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 18，攻擊加值為 {@hit 10}。"
+			],
+			"spellScrollLevel": 7
+		},
+		"ENG_name": "Enspelled Weapon (Level 7)"
+	},
+	"Enspelled Weapon (Level 8)|XDMG": {
+		"name": "法術封存武器（8 環）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Enspelled (Level 8) ",
+			"source": "XDMG",
+			"page": 258,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 6,
+			"entries": [
+				"這件武器中封存著一道8 環法術。該法術在武器製作時決定，且必須屬於{@filter 咒法、預言、塑能、死靈或變化|spells|school=C;D;V;N;T|level=8}學派。這件武器有 6 點充能，每天黎明時恢復 {@dice 1d6} 點已消耗的充能。持握這件武器時，你可以消耗 1 點充能來施放其中的法術。",
+				"此法術的豁免 DC 為 18，攻擊加值為 {@hit 10}。"
+			],
+			"spellScrollLevel": 8
+		},
+		"ENG_name": "Enspelled Weapon (Level 8)"
+	},
+	"Executioner's Axe|XDMG": {
+		"name": "劊子手之斧",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "戰斧",
+				"source": "XPHB",
+				"ENG_name": "Battleaxe"
+			},
+			{
+				"name": "巨斧",
+				"source": "XPHB",
+				"ENG_name": "Greataxe"
+			},
+			{
+				"name": "斧槍",
+				"source": "XPHB",
+				"ENG_name": "Halberd"
+			},
+			{
+				"name": "手斧",
+				"source": "XPHB",
+				"ENG_name": "Handaxe"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Executioner's ",
+			"source": "XDMG",
+			"page": 259,
+			"rarity": "very rare",
+			"bonusWeapon": "+1",
+			"entries": [
+				"以此魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+				"任何被你以這把武器命中的類人生物額外受到 {@damage 2d6} 點劈砍傷害，且你獲得等同所造成額外傷害的{@variantrule Temporary Hit Points|XPHB|臨時生命值}。"
+			],
+			"lootTables": [
+				"Armaments - Very Rare|XDMG"
+			]
+		},
+		"ENG_name": "Executioner's Axe"
+	},
+	"Feywrought Armor|BMT": {
+		"name": "妖境鑄護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "LA"
+			},
+			{
+				"type": "MA"
+			},
+			{
+				"type": "HA"
+			},
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Feywrought ",
+			"source": "BMT",
+			"page": 67,
+			"rarity": "rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d3}",
+			"charges": 3,
+			"entries": [
+				"這件色彩繽紛、綴滿花朵的護甲鍛造於妖精荒野，並注入了該位面迷人心神的魔力。",
+				"穿著這件護甲時，你在為了避免或終止自身{@condition charmed}狀態而進行的豁免檢定上具有優勢。",
+				"這件護甲有 3 點充能。你可以用一個動作消耗一點充能，從這件護甲施放{@spell Compulsion}法術（豁免 {@dc 15}）。護甲每天黎明時恢復 {@dice 1d3} 點已消耗的充能。"
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"compulsion"
+					]
+				}
+			}
+		},
+		"ENG_name": "Feywrought Armor"
+	},
+	"Flame Tongue|XDMG": {
+		"name": "焰舌",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "M|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Flame Tongue ",
+			"source": "XDMG",
+			"page": 263,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "rare",
+			"reqAttune": true,
+			"entries": [
+				"持握這把魔法武器時，你可以用一個{@variantrule Bonus Action|XPHB|附贈動作}說出命令語，讓火焰吞沒武器造成傷害的部分。這些火焰散發半徑 40 呎的{@variantrule Bright Light|XPHB|明亮光照}，以及再往外 40 呎的{@variantrule Dim Light|XPHB|微光光照}。武器燃燒期間，命中時額外造成 {@damage 2d6} 點火焰傷害。火焰會持續到你用一個{@variantrule Bonus Action|XPHB|附贈動作}再次下達命令，或直到你放下、收起武器或將它入鞘為止。"
+			],
+			"light": [
+				{
+					"bright": 40,
+					"dim": 80
+				}
+			],
+			"classFeatures": [
+				"replicate magic item|artificer|efa|2|efa"
+			],
+			"lootTables": [
+				"Armaments - Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Flame Tongue"
+	},
+	"Fool's Blade|BMT": {
+		"name": "愚者之刃",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"sword": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Fool's ",
+			"source": "BMT",
+			"page": 36,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"bonusWeapon": "+2",
+			"entries": [
+				"這把武器看似平凡，卻帶有強大的幻術魔法，讓持用者能巧妙地欺騙對手。",
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰具有 {=bonusWeapon} 加值。持用它時，你還獲得下列增益：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "愚者佯攻",
+							"entries": [
+								"你可以用一個附贈動作佯攻，選擇你 5 呎內的一個生物作為目標。直到你的下個回合開始前，你對該目標進行的攻擊檢定具有優勢。這個附贈動作使用後，在下一個黎明之前無法再次使用。"
+							],
+							"ENG_name": "Fool's Feint"
+						},
+						{
+							"type": "item",
+							"name": "誤導",
+							"entries": [
+								"當你 60 呎內的一個生物以攻擊檢定鎖定你時，你可以用你的反應要求該生物進行一次 {@dc 15} 智力豁免。豁免失敗，該次攻擊改為以攻擊者觸及範圍內、由你選擇的另一個生物為目標。這個反應使用後，在下一個黎明之前無法再次使用。"
+							],
+							"ENG_name": "Misdirect"
+						}
+					]
+				}
+			]
+		},
+		"ENG_name": "Fool's Blade"
+	},
+	"Forcebreaker Weapon|BMT": {
+		"name": "破力場武器",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"dmgType": "B"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Forcebreaker ",
+			"source": "BMT",
+			"page": 67,
+			"rarity": "very rare",
+			"bonusWeapon": "+2",
+			"entries": [
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。",
+				"這把武器是為了摧毀力場構成的結構而打造的，例如{@spell Forcecage}或{@spell Wall of Force}所造出的結構。以這把武器擊中大型或更小的魔法力場結構，會自動擊碎該結構。若目標是巨型或更大的力場結構，這把武器會擊碎其中邊長 20 呎的立方部分。"
+			]
+		},
+		"ENG_name": "Forcebreaker Weapon"
+	},
+	"Frost Brand|XDMG": {
+		"name": "霜銘",
+		"referenceSources": [
+			"DrDe-SD"
+		],
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "長柄刀",
+				"source": "XPHB",
+				"ENG_name": "Glaive"
+			},
+			{
+				"name": "巨劍",
+				"source": "XPHB",
+				"ENG_name": "Greatsword"
+			},
+			{
+				"name": "長劍",
+				"source": "XPHB",
+				"ENG_name": "Longsword"
+			},
+			{
+				"name": "刺劍",
+				"source": "XPHB",
+				"ENG_name": "Rapier"
+			},
+			{
+				"name": "彎刀",
+				"source": "XPHB",
+				"ENG_name": "Scimitar"
+			},
+			{
+				"name": "短劍",
+				"source": "XPHB",
+				"ENG_name": "Shortsword"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Frost Brand ",
+			"source": "XDMG",
+			"page": 263,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"entries": [
+				"當你以使用這把魔法武器的攻擊檢定命中時，目標額外受到 {@damage 1d6} 點寒冰傷害。此外，持握這把武器時，你具有火焰傷害{@variantrule Resistance|XPHB|抗性}。",
+				"在冰點以下的氣溫中，這把武器散發半徑 10 呎的{@variantrule Bright Light|XPHB|明亮光照}，以及再往外 10 呎的{@variantrule Dim Light|XPHB|微光光照}。",
+				"抽出這把武器時，你可以熄滅你 30 呎內所有非魔法的火焰。這項屬性使用後，1 小時內無法再次使用。"
+			],
+			"light": [
+				{
+					"bright": 10,
+					"dim": 20
+				}
+			],
+			"lootTables": [
+				"Armaments - Very Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Frost Brand"
+	},
+	"Gambler's Blade|LLK": {
+		"name": "賭徒之刃",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"sword": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Gambler's Blade ",
+			"source": "LLK",
+			"page": 55,
+			"rarity": "rare",
+			"reqAttune": true,
+			"curse": true,
+			"entries": [
+				"選擇 +1 到 +3 的魔法加值。這把劍的攻擊檢定與傷害擲骰獲得該加值。你為這把劍選擇的加值每有 1 點，你的死亡豁免就受到相應的減值（−1 到 −3）。你可以在每天黎明時更改這項魔法加值。",
+				{
+					"name": "詛咒",
+					"type": "entries",
+					"entries": [
+						"這把武器受到詛咒，與它同調會使詛咒延伸到你身上。在詛咒被{@spell remove curse}法術或類似魔法破除之前，你不願與這把武器分離。"
+					],
+					"ENG_name": "Curse"
+				}
+			]
+		},
+		"ENG_name": "Gambler's Blade"
+	},
+	"Giant Slayer|XDMG": {
+		"name": "巨人殺手",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Giant Slayer ",
+			"source": "XDMG",
+			"page": 264,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "rare",
+			"bonusWeapon": "+1",
+			"entries": [
+				"以此魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+				"當你以這把武器命中一名巨人時，該巨人額外受到 {@damage 2d6} 點該武器傷害類型的傷害，且必須通過一次 {@dc 15} 力量豁免，否則陷入{@condition Prone|XPHB}狀態。"
+			],
+			"lootTables": [
+				"Armaments - Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Giant Slayer"
+	},
+	"Glimmering Moonbow|BMT": {
+		"name": "微光月弓",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"bow": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Glimmering Moon ",
+			"source": "BMT",
+			"page": 36,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"這把銀黑相間的弓上刻著月相。你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。",
+				"當你以使用這把魔法弓的遠程攻擊檢定命中時，目標額外受到 {@damage 1d6} 點光耀傷害。若你沒有為這把武器裝填彈藥，它會自行產生，在你以它進行遠程攻擊時自動造出一枚魔法彈藥。弓所造出的彈藥在命中或未命中目標的瞬間便會消失。",
+				"持用這把魔法弓時，你可以用一個附贈動作進入半虛體狀態，直到你的下個回合開始。處於半虛體狀態時，你具有鈍擊、穿刺與劈砍傷害抗性。這個附贈動作使用後，在下一個黎明之前無法再次使用。"
+			]
+		},
+		"ENG_name": "Glimmering Moonbow"
+	},
+	"Gloomwrought Armor|BMT": {
+		"name": "幽影鑄護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "LA"
+			},
+			{
+				"type": "MA"
+			},
+			{
+				"type": "HA"
+			},
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Gloomwrought ",
+			"source": "BMT",
+			"page": 67,
+			"rarity": "rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d3}",
+			"charges": 3,
+			"entries": [
+				"這件精緻的灰階護甲鍛造於墮影冥界，並注入了該位面的陰鬱。",
+				"穿著這件護甲時，你在為了避免或終止自身恐懼狀態而進行的豁免檢定上具有優勢。",
+				"這件護甲有 3 點充能。你可以消耗一點充能，從護甲施放{@spell Calm Emotions}法術（豁免 {@dc 15}）。這件護甲每天黎明時恢復 {@dice 1d3} 點已消耗的充能。"
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"calm emotions"
+					]
+				}
+			}
+		},
+		"ENG_name": "Gloomwrought Armor"
+	},
+	"Hammer of Thunderbolts|XDMG": {
+		"name": "雷神之鎚",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "巨鎚",
+				"source": "XPHB",
+				"ENG_name": "Maul"
+			},
+			{
+				"name": "戰錘",
+				"source": "XPHB",
+				"ENG_name": "Warhammer"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Thunderbolts",
+			"source": "XDMG",
+			"page": 265,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"ability": {
+				"str": 4
+			},
+			"bonusWeapon": "+1",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4 + 1}",
+			"charges": 5,
+			"entries": [
+				"以此魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+				"這把武器有 5 點充能。你可以消耗 1 點充能並以這把武器進行一次遠程攻擊，將它擲出，如同它具有{@itemProperty T|XPHB|投擲}屬性，正常射程 20 呎、長射程 60 呎。",
+				"若攻擊命中，這把武器會發出 300 呎內都聽得見的雷鳴。目標以及它 30 呎內除你以外的每個生物必須通過一次 {@dc 17} 體質豁免，否則陷入{@condition Stunned|XPHB}狀態，直到你的下個回合結束。命中或失手之後，武器會立即飛回你手中。這把武器每天黎明時恢復 {@dice 1d4 + 1} 點已消耗的充能。",
+				{
+					"type": "entries",
+					"name": "巨人剋星",
+					"entries": [
+						"當你與這把武器同調，且穿戴著同樣已同調的{@item Belt of Giant Strength|XDMG}或{@item Gauntlets of Ogre Power|XDMG}時，你獲得下列增益：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "巨人剋星",
+									"entries": [
+										"當你以這把武器對巨人進行攻擊檢定並在 {@dice d20} 上擲出 20 時，該生物必須通過一次 {@dc 17} 體質豁免，否則死亡。"
+									],
+									"ENG_name": "Giants' Bane"
+								},
+								{
+									"type": "item",
+									"name": "巨人之力",
+									"entries": [
+										"你的{@item Belt of Giant Strength|XDMG}或{@item Gauntlets of Ogre Power|XDMG}所賦予的力量值增加 4，上限為 30。"
+									],
+									"ENG_name": "Might of Giants"
+								}
+							]
+						}
+					],
+					"ENG_name": "Giant's Bane"
+				}
+			],
+			"lootTables": [
+				"Armaments - Legendary|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Hammer of Thunderbolts"
+	},
+	"Hellfire Weapon|BGDIA": {
+		"name": "獄火武器",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Hellfire ",
+			"source": "BGDIA",
+			"page": 223,
+			"rarity": "uncommon",
+			"entries": [
+				"這把武器以煉獄鐵打造，上面佈滿獄火的紋路，散發半徑 5 呎的微光光照。",
+				"任何被以這把武器進行的攻擊殺死的類人生物，靈魂都會被導入冥河，並立即在那裡重生為一隻{@creature lemure}魔鬼。"
+			],
+			"light": [
+				{
+					"dim": 5
+				}
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Hellfire Weapon"
+	},
+	"Holy Avenger|XDMG": {
+		"name": "神聖復仇者",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Holy Avenger ",
+			"source": "XDMG",
+			"page": 269,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "legendary",
+			"reqAttune": "by a paladin",
+			"reqAttuneTags": [
+				{
+					"class": "paladin"
+				}
+			],
+			"bonusWeapon": "+3",
+			"entries": [
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +3 加值。當你以它命中邪魔或不死生物時，該生物額外受到 {@damage 2d10} 點光耀傷害。",
+				"當你持握出鞘的武器時，它會從你身上創造出 10 呎的{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍。你與{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍內所有對你{@variantrule Friendly [Attitude]|XPHB|友善}的生物，在對抗法術與其他魔法效應的豁免檢定上具有{@variantrule Advantage|XPHB|優勢}。若你擁有 17 級以上的聖騎士等級，{@variantrule Emanation [Area of Effect]|XPHB|散發}範圍的大小增加為 30 呎。"
+			],
+			"lootTables": [
+				"Armaments - Legendary|XDMG",
+				"Relics - Legendary|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Holy Avenger"
+	},
+	"Imbued Wood (Fernian Ash)|ERLW": {
+		"name": "蘊能木（費尼亞白蠟木）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Crystal",
+				"Orb"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Fernian Ash ",
+			"source": "ERLW",
+			"page": 277,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusSpellDamage": "+1",
+			"entries": [
+				"蘊能木法器是從注入了異位面能量的樹上截下的權杖、法杖或魔杖。若你是施法者，你可以用這件物品作為施法法器。",
+				"當你以這件物品作為施法法器施放造成傷害的法術時，該法術的一次火焰傷害擲骰獲得 +1 加值。"
+			]
+		},
+		"ENG_name": "Imbued Wood (Fernian Ash)"
+	},
+	"Imbued Wood (Irian Rosewood)|ERLW": {
+		"name": "蘊能木（伊里安玫瑰木）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Crystal",
+				"Orb"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Irian Rosewood ",
+			"source": "ERLW",
+			"page": 277,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusSpellDamage": "+1",
+			"entries": [
+				"蘊能木法器是從注入了異位面能量的樹上截下的權杖、法杖或魔杖。若你是施法者，你可以用這件物品作為施法法器。",
+				"當你以這件物品作為施法法器施放造成傷害的法術時，該法術的一次光耀傷害擲骰獲得 +1 加值。"
+			]
+		},
+		"ENG_name": "Imbued Wood (Irian Rosewood)"
+	},
+	"Imbued Wood (Kythrian Manchineel)|ERLW": {
+		"name": "蘊能木（基斯瑞毒番石榴木）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Crystal",
+				"Orb"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Kythrian Manchineel ",
+			"source": "ERLW",
+			"page": 277,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusSpellDamage": "+1",
+			"entries": [
+				"蘊能木法器是從注入了異位面能量的樹上截下的權杖、法杖或魔杖。若你是施法者，你可以用這件物品作為施法法器。",
+				"當你以這件物品作為施法法器施放造成傷害的法術時，該法術的一次酸蝕或毒素傷害擲骰獲得 +1 加值。"
+			]
+		},
+		"ENG_name": "Imbued Wood (Kythrian Manchineel)"
+	},
+	"Imbued Wood (Lamannian Oak)|ERLW": {
+		"name": "蘊能木（拉曼尼亞橡木）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Crystal",
+				"Orb"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Lamannian Oak ",
+			"source": "ERLW",
+			"page": 277,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusSpellDamage": "+1",
+			"entries": [
+				"蘊能木法器是從注入了異位面能量的樹上截下的權杖、法杖或魔杖。若你是施法者，你可以用這件物品作為施法法器。",
+				"當你以這件物品作為施法法器施放造成傷害的法術時，該法術的一次閃電或雷鳴傷害擲骰獲得 +1 加值。"
+			]
+		},
+		"ENG_name": "Imbued Wood (Lamannian Oak)"
+	},
+	"Imbued Wood (Mabaran Ebony)|ERLW": {
+		"name": "蘊能木（瑪巴爾烏木）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Crystal",
+				"Orb"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Mabaran Ebony ",
+			"source": "ERLW",
+			"page": 277,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusSpellDamage": "+1",
+			"entries": [
+				"蘊能木法器是從注入了異位面能量的樹上截下的權杖、法杖或魔杖。若你是施法者，你可以用這件物品作為施法法器。",
+				"當你以這件物品作為施法法器施放造成傷害的法術時，該法術的一次死靈傷害擲骰獲得 +1 加值。"
+			]
+		},
+		"ENG_name": "Imbued Wood (Mabaran Ebony)"
+	},
+	"Imbued Wood (Risian Pine)|ERLW": {
+		"name": "蘊能木（里西亞松木）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Crystal",
+				"Orb"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Risian Pine ",
+			"source": "ERLW",
+			"page": 277,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusSpellDamage": "+1",
+			"entries": [
+				"蘊能木法器是從注入了異位面能量的樹上截下的權杖、法杖或魔杖。若你是施法者，你可以用這件物品作為施法法器。",
+				"當你以這件物品作為施法法器施放造成傷害的法術時，該法術的一次寒冰傷害擲骰獲得 +1 加值。"
+			]
+		},
+		"ENG_name": "Imbued Wood (Risian Pine)"
+	},
+	"Imbued Wood (Shavarran Birch)|ERLW": {
+		"name": "蘊能木（沙瓦拉斯樺木）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Crystal",
+				"Orb"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Shavarran Birch ",
+			"source": "ERLW",
+			"page": 277,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusSpellDamage": "+1",
+			"entries": [
+				"蘊能木法器是從注入了異位面能量的樹上截下的權杖、法杖或魔杖。若你是施法者，你可以用這件物品作為施法法器。",
+				"當你以這件物品作為施法法器施放造成傷害的法術時，該法術的一次力場傷害擲骰獲得 +1 加值。"
+			]
+		},
+		"ENG_name": "Imbued Wood (Shavarran Birch)"
+	},
+	"Imbued Wood (Xorian Wenge)|ERLW": {
+		"name": "蘊能木（佐瑞亞特雞翅木）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Crystal",
+				"Orb"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Xorian Wenge ",
+			"source": "ERLW",
+			"page": 277,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"bonusSpellDamage": "+1",
+			"entries": [
+				"蘊能木法器是從注入了異位面能量的樹上截下的權杖、法杖或魔杖。若你是施法者，你可以用這件物品作為施法法器。",
+				"當你以這件物品作為施法法器施放造成傷害的法術時，該法術的一次精神傷害擲骰獲得 +1 加值。"
+			]
+		},
+		"ENG_name": "Imbued Wood (Xorian Wenge)"
+	},
+	"Last Stand Armor|EGW": {
+		"name": "背水一戰護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Last Stand ",
+			"source": "EGW",
+			"page": 267,
+			"rarity": "very rare",
+			"bonusAc": "+1",
+			"entries": [
+				"穿著這件護甲時，你的 AC 具有 {=bonusAc} 加值；護甲散發著柔和的微光。",
+				"若你穿著這件護甲時死亡，護甲會被摧毀，且你 30 呎內的每個天界生物、精類與邪魔必須通過一次 {@dc 15} 魅力豁免，否則被放逐回其原生的存在位面，除非牠已經在那裡。"
+			]
+		},
+		"ENG_name": "Last Stand Armor"
+	},
+	"Living Armor|ERLW": {
+		"name": "活體護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"armor": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Living ",
+			"source": "ERLW",
+			"page": 278,
+			"resist": [
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"rarity": "very rare",
+			"reqAttune": true,
+			"bonusAc": "+1",
+			"entries": [
+				"這件醜惡的護甲由黑色甲殼構成，甲殼底下有血管搏動、紅色筋腱閃著光澤。要與這件物品同調，你必須在整個同調期間穿著它，期間內側的觸鬚會鑽入你的體內。",
+				"穿著這件護甲時，你的護甲等級具有 {=bonusAc} 加值，且你具有下列傷害類型的抗性：死靈、毒素與精神。",
+				{
+					"type": "entries",
+					"name": "共生本質",
+					"entries": [
+						"你與這件護甲同調期間，無法將它從你身上移除，你也無法自願終止與它的同調。若你成為能終止詛咒的法術的目標，你與護甲的同調便會終止，它也會從你身上脫離。",
+						"這件護甲需要以鮮血餵養。在你完成任何一次長休後，你必須立即將你剩餘生命骰的一半（向上取整）餵給護甲，否則獲得 1 級{@condition exhaustion}。"
+					],
+					"ENG_name": "Symbiotic Nature"
+				}
+			]
+		},
+		"ENG_name": "Living Armor"
+	},
+	"Luck Blade|XDMG": {
+		"name": "吉兆之刃",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "長柄刀",
+				"source": "XPHB",
+				"ENG_name": "Glaive"
+			},
+			{
+				"name": "巨劍",
+				"source": "XPHB",
+				"ENG_name": "Greatsword"
+			},
+			{
+				"name": "長劍",
+				"source": "XPHB",
+				"ENG_name": "Longsword"
+			},
+			{
+				"name": "刺劍",
+				"source": "XPHB",
+				"ENG_name": "Rapier"
+			},
+			{
+				"name": "彎刀",
+				"source": "XPHB",
+				"ENG_name": "Scimitar"
+			},
+			{
+				"name": "鐮刀",
+				"source": "XPHB",
+				"ENG_name": "Sickle"
+			},
+			{
+				"name": "短劍",
+				"source": "XPHB",
+				"ENG_name": "Shortsword"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Luck ",
+			"source": "XDMG",
+			"page": 275,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"bonusWeapon": "+1",
+			"bonusSavingThrow": "+1",
+			"charges": "{@dice 1d3}",
+			"entries": [
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。這把武器在你身上時，你的豁免檢定也獲得 {=bonusSavingThrow} 加值。",
+				{
+					"type": "entries",
+					"name": "幸運",
+					"entries": [
+						"若這把武器在你身上，且你未陷入{@condition Incapacitated|XPHB}狀態，你可以召喚它的幸運（無需動作），重擲一次失敗的{@variantrule D20 Test|XPHB|D20 檢定}。你必須使用第二次的擲骰結果。這項屬性使用後，在下一個黎明之前無法再次使用。"
+					],
+					"ENG_name": "Luck"
+				},
+				{
+					"type": "entries",
+					"name": "祈願術",
+					"entries": [
+						"這把武器有 {@dice 1d3} 點充能。持握它時，你可以消耗 1 點充能，從它施放{@spell Wish|XPHB}。這項屬性使用後，在下一個黎明之前無法再次使用。若武器沒有充能，便會失去這項屬性。"
+					],
+					"ENG_name": "Wish"
+				}
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"wish|xphb"
+					]
+				}
+			},
+			"lootTables": [
+				"Armaments - Legendary|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Luck Blade"
+	},
+	"Mariner's Armor|XDMG": {
+		"name": "水手護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Mariner's ",
+			"source": "XDMG",
+			"page": 278,
+			"rarity": "uncommon",
+			"entries": [
+				"穿著這件護甲時，你具有等同你{@variantrule Speed|XPHB|速度}的{@variantrule Swim Speed|XPHB|游泳速度}。此外，若你在水中開始回合時{@variantrule Hit Points|XPHB|生命值}為 0，你立即恢復 {@dice 1d4} 點{@variantrule Hit Points|XPHB|生命值}。這件護甲在下一個黎明之前無法再治療任何人。",
+				"這件護甲飾有魚與貝殼的圖案。"
+			],
+			"lootTables": [
+				"Armaments - Uncommon|XDMG",
+				"Relics - Uncommon|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Mariner's Armor"
+	},
+	"Mithral +1 Armor|AI": {
+		"name": "秘銀護甲+1",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "HA"
+			},
+			{
+				"type": "MA"
+			},
+			{
+				"type": "HA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			}
+		],
+		"excludes": {
+			"name": "生皮甲",
+			"ENG_name": "Hide Armor"
+		},
+		"inherits": {
+			"namePrefix": "Mithral +1 ",
+			"source": "AI",
+			"page": 156,
+			"rarity": "rare",
+			"strength": null,
+			"bonusAc": "+1",
+			"stealth": false,
+			"entries": [
+				"穿著這件護甲時，你的 AC 具有 {=bonusAc} 加值。",
+				"秘銀是一種輕盈、有彈性的金屬。秘銀鏈衫或胸甲可以穿在一般衣服底下。若該護甲通常會使敏捷（{@skill Stealth}）檢定具有劣勢或有力量需求，秘銀版本的護甲則沒有。"
+			]
+		},
+		"ENG_name": "Mithral +1 Armor"
+	},
+	"Mithral Armor|DMG": {
+		"name": "秘銀護甲",
+		"referenceSources": [
+			"WDMM",
+			"IDRotF",
+			"KftGV",
+			"CoA",
+			"GoS"
+		],
+		"edition": "classic",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "HA"
+			},
+			{
+				"type": "MA"
+			},
+			{
+				"type": "HA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			}
+		],
+		"excludes": {
+			"name": "生皮甲",
+			"ENG_name": "Hide Armor"
+		},
+		"inherits": {
+			"namePrefix": "Mithral ",
+			"source": "DMG",
+			"page": 182,
+			"srd": true,
+			"reprintedAs": [
+				"Mithral Armor|XDMG"
+			],
+			"tier": "minor",
+			"rarity": "uncommon",
+			"strength": null,
+			"stealth": false,
+			"entries": [
+				"秘銀是一種輕盈柔韌的金屬。一件秘銀鏈甲衫或護胸甲可以被穿在普通衣物之下。若該護甲原本會導致敏捷（隱匿）檢定承受劣勢，或具有對穿戴者力量屬性的需求，則該護甲的秘銀版本不會具有這些特性。"
+			],
+			"lootTables": [
+				"Magic Item Table B"
+			]
+		},
+		"ENG_name": "Mithral Armor"
+	},
+	"Mithral Armor|XDMG": {
+		"name": "秘銀護甲",
+		"referenceSources": [
+			"DrDe-FWtVC"
+		],
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"excludes": {
+			"name": "生皮甲",
+			"ENG_name": "Hide Armor"
+		},
+		"inherits": {
+			"namePrefix": "Mithral ",
+			"source": "XDMG",
+			"page": 279,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "uncommon",
+			"entries": [
+				"秘銀是一種輕盈而柔韌的金屬。秘銀鏈甲衫或護胸甲可以穿在一般衣物底下。",
+				"若該護甲通常會讓敏捷（{@skill Stealth|XPHB}）檢定具有劣勢或有力量需求，秘銀版本的護甲則沒有這些限制。"
+			],
+			"lootTables": [
+				"Arcana - Uncommon|XDMG",
+				"Armaments - Uncommon|XDMG"
+			]
+		},
+		"ENG_name": "Mithral Armor"
+	},
+	"Mizzium Armor|GGR": {
+		"name": "米捷姆護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "HA"
+			},
+			{
+				"type": "MA"
+			},
+			{
+				"type": "HA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			}
+		],
+		"excludes": {
+			"name": "生皮甲",
+			"ENG_name": "Hide Armor"
+		},
+		"inherits": {
+			"namePrefix": "Mizzium ",
+			"source": "GGR",
+			"page": 179,
+			"rarity": "rare",
+			"entries": [
+				"這套護甲以一種稱為米捷姆的魔法強化合金加固，這種合金產自伊捷的鑄造廠。你穿著這件護甲時，任何對你造成的重擊都變為普通命中。此外，當你受到允許你進行力量或體質豁免以只受一半傷害的魔法效應影響時，若豁免成功，你改為不受任何傷害。"
+			]
+		},
+		"ENG_name": "Mizzium Armor"
+	},
+	"Molten Bronze Skin|MOT": {
+		"name": "熔銅之膚",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"name": "半身板甲",
+				"source": "PHB",
+				"ENG_name": "Half Plate Armor"
+			},
+			{
+				"name": "全身板甲",
+				"source": "PHB",
+				"ENG_name": "Plate Armor"
+			},
+			{
+				"name": "護胸甲",
+				"source": "PHB",
+				"ENG_name": "Breastplate"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Molten Bronze Skin ",
+			"source": "MOT",
+			"page": 197,
+			"resist": [
+				"fire"
+			],
+			"rarity": "rare",
+			"reqAttune": true,
+			"stealth": false,
+			"entries": [
+				"這件魔法護甲的外觀是一壺熔化的青銅。當你與它同調時，青銅會附著並貼合你的皮膚。這件護甲可以穿在一般衣物底下，且不會妨礙身體機能。一旦穿上，除非你選擇脫下，否則無法將它移除。",
+				"穿著這件護甲時，你具有火焰傷害抗性。這件護甲也不會讓敏捷（{@skill Stealth}）檢定具有劣勢。"
+			]
+		},
+		"ENG_name": "Molten Bronze Skin"
+	},
+	"Moon-Touched Sword|XDMG": {
+		"name": "觸月之劍",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"sword": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Moon-Touched ",
+			"source": "XDMG",
+			"page": 280,
+			"rarity": "common",
+			"entries": [
+				"在{@variantrule Darkness|XPHB|黑暗}中，這把武器出鞘的劍刃會散發月光，形成半徑 15 呎的{@variantrule Bright Light|XPHB|明亮光照}，以及再往外 15 呎的{@variantrule Dim Light|XPHB|微光光照}。"
+			],
+			"light": [
+				{
+					"bright": 15,
+					"dim": 30
+				}
+			],
+			"lootTables": [
+				"Armaments - Common|XDMG",
+				"Implements - Common|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Moon-Touched Sword"
+	},
+	"Moonblade|XDMG": {
+		"name": "月刃",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "巨劍",
+				"source": "XPHB",
+				"ENG_name": "Greatsword"
+			},
+			{
+				"name": "長劍",
+				"source": "XPHB",
+				"ENG_name": "Longsword"
+			},
+			{
+				"name": "刺劍",
+				"source": "XPHB",
+				"ENG_name": "Rapier"
+			},
+			{
+				"name": "彎刀",
+				"source": "XPHB",
+				"ENG_name": "Scimitar"
+			},
+			{
+				"name": "短劍",
+				"source": "XPHB",
+				"ENG_name": "Shortsword"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Moonblade ",
+			"source": "XDMG",
+			"page": 279,
+			"rarity": "legendary",
+			"reqAttune": "by a creature of the weapon's choice",
+			"sentient": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"在精靈創造的所有魔法物品中，月刃是最受珍視、也最被小心守護的一種。在遠古時代，幾乎每個精靈貴族家族都擁有一把這樣的武器。數百年來，其中一些武器已從世上消逝，它們的魔力隨著家族血脈斷絕而失落。另一些則在偉大的遠征中與持有者一同消失。因此，這類武器如今只剩寥寥幾把。",
+				"每把月刃都渴望一位性情與目標和它相契合的持有者。若你試圖與一把不願接受你為持有者的月刃同調，這把武器不但會拒絕你，還會對你降下詛咒，使你進行{@variantrule D20 Test|XPHB|D20 檢定}時具有{@variantrule Disadvantage|XPHB|劣勢}，持續 24 小時或直到詛咒被{@spell Remove Curse|XPHB}法術或類似魔法終止為止。若你被這把武器接納並試圖與它同調，你會立即與它同調，劍上也會出現一道新的符文。你會一直與這把武器同調，直到你死亡或武器被摧毀為止。對它所選持有者以外的任何人而言，月刃的功能如同同類的非魔法武器。",
+				"月刃每曾自願服侍過一位持有者，劍上就有一道符文（通常為 {@dice 1d6 + 1} 道）。第一道符文讓以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。第一道之後的每道符文都賦予月刃一項額外屬性。DM 選擇每項屬性，或擲「月刃屬性」表隨機決定。",
+				{
+					"type": "entries",
+					"name": "次要屬性",
+					"entries": [
+						"除了上述屬性之外，每把月刃還有一項次要屬性，由擲「魔法物品的次要屬性」表決定。"
+					],
+					"ENG_name": "Minor Property"
+				},
+				{
+					"type": "entries",
+					"name": "知覺",
+					"entries": [
+						"月刃是有知覺的武器，智力 12、感知 10、魅力 12。它具有聽覺與範圍 120 呎的{@sense Darkvision|XPHB}。它的陣營與其創造者相同。",
+						"這把武器以傳遞情緒的方式溝通；當它想傳達自己感知到的事物時，會讓持用者的手感到一陣刺麻。當持用者處於出神或睡眠狀態時，它可以透過異象或夢境溝通。"
+					],
+					"ENG_name": "Sentience"
+				},
+				{
+					"type": "entries",
+					"name": "個性",
+					"entries": [
+						"月刃的個性與其創造者相似。一旦月刃認定了主人，它便認為只有那個人才該持用它，即使持有者的陣營與武器不同，或持有者的目標日後與武器的目標相衝突也一樣。"
+					],
+					"ENG_name": "Personality"
+				},
+				{
+					"type": "table",
+					"caption": "月刃屬性",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"colLabels": [
+						"1d100",
+						"屬性"
+					],
+					"rows": [
+						[
+							"01-60",
+							"將這把武器的攻擊檢定與傷害擲骰加值增加 1，最高為 +3。若{@i 月刃}已有 +3 加值則重擲。"
+						],
+						[
+							"61-75",
+							"當你以使用{@i 月刃}的攻擊檢定命中時，額外造成 {@damage 1d6} 點力場傷害。這把武器在第一次之後每再獲得這項屬性一次，額外傷害增加 {@damage 1d6}，最高為 {@damage 3d6}。若{@i 月刃}命中時已額外造成 {@damage 3d6} 點力場傷害則重擲。"
+						],
+						[
+							"76-80",
+							"{@i 月刃}獲得{@itemProperty T|XPHB|投擲}屬性，正常射程 20 呎、長射程 60 呎。每次你擲出這把武器，它都會在攻擊後飛回你手中。"
+						],
+						[
+							"81-85",
+							"{@i 月刃}在 {@dice d20} 上擲出 19 或 20 時造成{@variantrule Critical Hit|XPHB|重擊}。"
+						],
+						[
+							"86-95",
+							"你可以用一個{@variantrule Bonus Action|XPHB|附贈動作}讓{@i 月刃}發出強烈閃光。你 30 呎內且不在{@variantrule Cover|XPHB|全掩護}後方的其他每個生物必須通過一次 {@dc 15} 體質豁免，否則陷入{@condition Blinded|XPHB}狀態 1 分鐘。生物在它每個回合結束時重新進行豁免，成功則終止自身受到的效應。在你完成{@variantrule Short Rest|XPHB|短休}或{@variantrule Long Rest|XPHB|長休}之前，無法再次使用這項屬性。"
+						],
+						[
+							"96-99",
+							"月刃具有{@item Ring of Spell Storing|XDMG}的屬性。"
+						],
+						[
+							"100",
+							"若你還沒有這樣的存在為你效力，你可以用一個{@action Magic|XPHB}動作咒喚出一個形似幽暗精靈的幽影實體。這個實體出現在你 120 呎內一處未被佔據的空間。它使用{@creature Shadow|XMM}數據塊，但有下列變更：它是精類、陣營為中立，且不會製造新的陰影。你控制這個實體，決定它如何行動與移動。它會一直存在，直到{@variantrule Hit Points|XPHB|生命值}降至 0，或你用一個{@action Magic|XPHB}動作將它遣散為止。"
+						]
+					]
+				}
+			],
+			"lootTables": [
+				"Armaments - Legendary|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Moonblade"
+	},
+	"Nine Lives Stealer|XDMG": {
+		"name": "九轉奪命劍",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Nine Lives Stealer ",
+			"source": "XDMG",
+			"page": 281,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"bonusWeapon": "+2",
+			"charges": "{@dice 1d8 + 1}",
+			"entries": [
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +2 加值。",
+				{
+					"type": "entries",
+					"name": "奪命",
+					"entries": [
+						"這把武器有 {@dice 1d8 + 1} 點充能。當你以這把武器攻擊一個{@variantrule Hit Points|XPHB|生命值}少於 100 的生物，並在攻擊檢定的 {@dice d20} 上擲出 20 時，該生物必須通過一次 {@dc 15} 體質豁免，否則立即被殺死，因為這把劍會將生命力從牠體內扯出。構裝體與不死生物自動通過這次豁免。若該生物被殺死，這把武器失去 1 點充能。武器沒有剩餘充能時，便會失去這項屬性。"
+					],
+					"ENG_name": "Life Stealing"
+				}
+			],
+			"lootTables": [
+				"Armaments - Very Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Nine Lives Stealer"
+	},
+	"Oathbow|XDMG": {
+		"name": "誓仇弓",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "長弓",
+				"source": "XPHB",
+				"ENG_name": "Longbow"
+			},
+			{
+				"name": "短弓",
+				"source": "XPHB",
+				"ENG_name": "Shortbow"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Oath ",
+			"source": "XDMG",
+			"page": 282,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"entries": [
+				"當你在這把弓上搭箭時，它會用精靈語低語：「願我的敵人速速敗亡。」當你用這把武器進行遠程攻擊時，你可以說出或以手語比出下列命令語：「傷害我的人啊，願你速死。」你攻擊的目標成為你的誓仇之敵，直到它死亡或直到 7 天後的黎明為止。你同一時間只能有一個這樣的誓仇之敵。你的誓仇之敵死亡後，你可以在下一個黎明之後選擇新的對象。",
+				"當你以這把武器對你的誓仇之敵進行遠程攻擊檢定時，該次擲骰具有{@variantrule Advantage|XPHB|優勢}。此外，你的目標無法從{@variantrule Cover|XPHB|半掩護}或{@variantrule Cover|XPHB|四分之三掩護}獲得任何好處，你也不會因長射程而承受{@variantrule Disadvantage|XPHB|劣勢}。若攻擊命中，你的誓仇之敵額外受到 {@damage 3d6} 點穿刺傷害。",
+				"你的誓仇之敵還活著時，你使用其他所有武器進行攻擊檢定時具有{@variantrule Disadvantage|XPHB|劣勢}。"
+			],
+			"lootTables": [
+				"Armaments - Very Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Oathbow"
+	},
+	"Orb of Shielding (Fernian Basalt)|ERLW": {
+		"name": "護盾法球（費尼亞玄武岩）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Staff",
+				"Rod",
+				"Wand"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Fernian Basalt ",
+			"source": "ERLW",
+			"page": 278,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"護盾法球是一顆經過拋光的球形水晶或石塊，與某個存在位面相契合。若你是施法者，你可以用這顆法球作為施法法器。",
+				"若你受到火焰傷害時正持握這顆法球，你可以用你的反應使該傷害減少 {@dice 1d4}（最低為 0）。"
+			]
+		},
+		"ENG_name": "Orb of Shielding (Fernian Basalt)"
+	},
+	"Orb of Shielding (Irian Quartz)|ERLW": {
+		"name": "護盾法球（伊里安石英）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Staff",
+				"Rod",
+				"Wand"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Irian Quartz ",
+			"source": "ERLW",
+			"page": 278,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"護盾法球是一顆經過拋光的球形水晶或石塊，與某個存在位面相契合。若你是施法者，你可以用這顆法球作為施法法器。",
+				"若你受到光耀傷害時正持握這顆法球，你可以用你的反應使該傷害減少 {@dice 1d4}（最低為 0）。"
+			]
+		},
+		"ENG_name": "Orb of Shielding (Irian Quartz)"
+	},
+	"Orb of Shielding (Kythrian Skarn)|ERLW": {
+		"name": "護盾法球（基斯瑞矽卡岩）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Staff",
+				"Rod",
+				"Wand"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Kythrian Skarn ",
+			"source": "ERLW",
+			"page": 278,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"護盾法球是一顆經過拋光的球形水晶或石塊，與某個存在位面相契合。若你是施法者，你可以用這顆法球作為施法法器。",
+				"若你受到酸蝕或毒素傷害時正持握這顆法球，你可以用你的反應使該傷害減少 {@dice 1d4}（最低為 0）。"
+			]
+		},
+		"ENG_name": "Orb of Shielding (Kythrian Skarn)"
+	},
+	"Orb of Shielding (Lamannian Flint)|ERLW": {
+		"name": "護盾法球（拉曼尼亞燧石）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Staff",
+				"Rod",
+				"Wand"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Lamannian Flint ",
+			"source": "ERLW",
+			"page": 278,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"護盾法球是一顆經過拋光的球形水晶或石塊，與某個存在位面相契合。若你是施法者，你可以用這顆法球作為施法法器。",
+				"若你受到閃電或雷鳴傷害時正持握這顆法球，你可以用你的反應使該傷害減少 {@dice 1d4}（最低為 0）。"
+			]
+		},
+		"ENG_name": "Orb of Shielding (Lamannian Flint)"
+	},
+	"Orb of Shielding (Mabaran Obsidian)|ERLW": {
+		"name": "護盾法球（瑪巴爾黑曜石）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Staff",
+				"Rod",
+				"Wand"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Mabaran Obsidian ",
+			"source": "ERLW",
+			"page": 278,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"護盾法球是一顆經過拋光的球形水晶或石塊，與某個存在位面相契合。若你是施法者，你可以用這顆法球作為施法法器。",
+				"若你受到死靈傷害時正持握這顆法球，你可以用你的反應使該傷害減少 {@dice 1d4}（最低為 0）。"
+			]
+		},
+		"ENG_name": "Orb of Shielding (Mabaran Obsidian)"
+	},
+	"Orb of Shielding (Risian Shale)|ERLW": {
+		"name": "護盾法球（里西亞頁岩）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Staff",
+				"Rod",
+				"Wand"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Risian Shale ",
+			"source": "ERLW",
+			"page": 278,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"護盾法球是一顆經過拋光的球形水晶或石塊，與某個存在位面相契合。若你是施法者，你可以用這顆法球作為施法法器。",
+				"若你受到寒冰傷害時正持握這顆法球，你可以用你的反應使該傷害減少 {@dice 1d4}（最低為 0）。"
+			]
+		},
+		"ENG_name": "Orb of Shielding (Risian Shale)"
+	},
+	"Orb of Shielding (Shavarran Chert)|ERLW": {
+		"name": "護盾法球（沙瓦拉斯燧岩）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Staff",
+				"Rod",
+				"Wand"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Shavarran Chert ",
+			"source": "ERLW",
+			"page": 278,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"護盾法球是一顆經過拋光的球形水晶或石塊，與某個存在位面相契合。若你是施法者，你可以用這顆法球作為施法法器。",
+				"若你受到力場傷害時正持握這顆法球，你可以用你的反應使該傷害減少 {@dice 1d4}（最低為 0）。"
+			]
+		},
+		"ENG_name": "Orb of Shielding (Shavarran Chert)"
+	},
+	"Orb of Shielding (Xorian Marble)|ERLW": {
+		"name": "護盾法球（佐瑞亞特大理石）",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "SCF",
+				"scfType": "arcane"
+			},
+			{
+				"type": "SCF|XPHB",
+				"scfType": "arcane"
+			}
+		],
+		"excludes": {
+			"name": [
+				"Staff",
+				"Rod",
+				"Wand"
+			]
+		},
+		"inherits": {
+			"namePrefix": "Xorian Marble ",
+			"source": "ERLW",
+			"page": 278,
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"護盾法球是一顆經過拋光的球形水晶或石塊，與某個存在位面相契合。若你是施法者，你可以用這顆法球作為施法法器。",
+				"若你受到精神傷害時正持握這顆法球，你可以用你的反應使該傷害減少 {@dice 1d4}（最低為 0）。"
+			]
+		},
+		"ENG_name": "Orb of Shielding (Xorian Marble)"
+	},
+	"Plate Armor of Etherealness (*)|XDMG": {
+		"name": "靈體護甲（*）",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "半身板甲",
+				"source": "XPHB",
+				"ENG_name": "Half Plate Armor"
+			},
+			{
+				"name": "全身板甲",
+				"source": "XPHB",
+				"ENG_name": "Plate Armor"
+			}
+		],
+		"entries": [
+			"{@note * 這個通用變體與物品{@item Plate Armor of Etherealness|XDMG}的名稱與來源相同}。",
+			"穿著這件護甲時，你可以用一個{@action Magic|XPHB}動作說出命令語，獲得{@spell Etherealness|XPHB}法術的效果。若你脫下護甲，或用一個{@action Magic|XPHB}動作重複命令語，法術便會立即結束。護甲的這項屬性在下一個黎明之前無法再次使用。"
+		],
+		"inherits": {
+			"nameSuffix": " of Etherealness",
+			"source": "XDMG",
+			"page": 286,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"entries": [
+				"穿著這件護甲時，你可以用一個{@action Magic|XPHB}動作說出命令語，獲得{@spell Etherealness|XPHB}法術的效果。若你脫下護甲，或用一個{@action Magic|XPHB}動作重複命令語，法術便會立即結束。護甲的這項屬性在下一個黎明之前無法再次使用。"
+			],
+			"attachedSpells": {
+				"daily": {
+					"1e": [
+						"etherealness|xphb"
+					]
+				}
+			},
+			"lootTables": [
+				"Armaments - Legendary|XDMG"
+			]
+		},
+		"ENG_name": "Plate Armor of Etherealness (*)"
+	},
+	"Polymorph Blade|LLK": {
+		"name": "變形之刃",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"sword": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Polymorph Blade ",
+			"source": "LLK",
+			"page": 56,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"curse": true,
+			"entries": [
+				"當你以這把魔法武器攻擊一個生物並在攻擊檢定擲出 20 時，該生物除了承受攻擊的正常效果外，還必須進行一次 {@dc 15} 感知豁免。豁免失敗，該生物還會受到{@spell polymorph}法術的效果。擲一顆 d20 並查閱下表，以決定目標生物變成什麼形態。",
+				{
+					"type": "table",
+					"caption": "",
+					"colLabels": [
+						"d20",
+						"新形態"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"{@creature Tyrannosaurus Rex}"
+						],
+						[
+							"2",
+							"{@creature Giant Ape}"
+						],
+						[
+							"3",
+							"{@creature Elephant}"
+						],
+						[
+							"4",
+							"{@creature Giant scorpion}"
+						],
+						[
+							"5",
+							"{@creature Rhinoceros}"
+						],
+						[
+							"6",
+							"{@creature Polar bear}"
+						],
+						[
+							"7",
+							"{@creature Giant toad}"
+						],
+						[
+							"8",
+							"{@creature Giant eagle}"
+						],
+						[
+							"9",
+							"{@creature Black bear}"
+						],
+						[
+							"10",
+							"{@creature Crocodile}"
+						],
+						[
+							"11",
+							"{@creature Wolf}"
+						],
+						[
+							"12",
+							"{@creature Riding Horse||Horse}"
+						],
+						[
+							"13",
+							"{@creature Ox|VGM}"
+						],
+						[
+							"14",
+							"{@creature Giant frog}"
+						],
+						[
+							"15",
+							"{@creature Poisonous snake}"
+						],
+						[
+							"16",
+							"{@creature Hawk}"
+						],
+						[
+							"17",
+							"{@creature Octopus}"
+						],
+						[
+							"18",
+							"{@creature Cat}"
+						],
+						[
+							"19",
+							"{@creature Rat}"
+						],
+						[
+							"20",
+							"兔子"
+						]
+					]
+				},
+				"若生物免疫這把武器的傷害類型、是變形者，或擁有傳奇動作，便免疫這個效應。",
+				{
+					"name": "詛咒",
+					"type": "entries",
+					"entries": [
+						"這把武器受到詛咒，與它同調會使詛咒延伸到你身上。在以{@spell remove curse}法術或類似魔法解除詛咒之前，你不願與這把武器分離。每當你以這把武器攻擊一個生物並在攻擊檢定擲出 1 時，你會受到{@spell polymorph}法術的效果 1 小時，並擲上表決定你的新形態。"
+					],
+					"ENG_name": "Curse"
+				}
+			]
+		},
+		"ENG_name": "Polymorph Blade"
+	},
+	"Repeating Shot|EFA": {
+		"name": "連發射擊",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple",
+				"property": "A|XPHB"
+			},
+			{
+				"weaponCategory": "martial",
+				"property": "A|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Repeating ",
+			"source": "EFA",
+			"page": 112,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"這把魔法武器用於進行遠程攻擊時，讓以它進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值；若它具有{@itemProperty LD|XPHB|裝填}屬性，則無視該屬性。",
+				"若這把武器沒有彈藥，它會自行產生，在持用者以它進行遠程攻擊檢定時自動造出一枚魔法彈藥。武器所造出的彈藥在命中或未命中目標的瞬間便會消失。"
+			],
+			"classFeatures": [
+				"replicate magic item|artificer|efa|2|efa"
+			]
+		},
+		"ENG_name": "Repeating Shot"
+	},
+	"Returning Weapon|EFA": {
+		"name": "迴力武器",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple",
+				"property": "T|XPHB"
+			},
+			{
+				"weaponCategory": "martial",
+				"property": "T|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Returning ",
+			"source": "EFA",
+			"page": 112,
+			"rarity": "uncommon",
+			"bonusWeapon": "+1",
+			"entries": [
+				"這把魔法武器讓以它進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值，且在你用它進行遠程攻擊檢定後會立即回到你手中。"
+			],
+			"classFeatures": [
+				"replicate magic item|artificer|efa|2|efa"
+			]
+		},
+		"ENG_name": "Returning Weapon"
+	},
+	"Ruidium Armor|CRCOTN": {
+		"name": "瑞迪姆護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "MA"
+			},
+			{
+				"type": "HA"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"excludes": {
+			"name": "生皮甲",
+			"ENG_name": "Hide Armor"
+		},
+		"inherits": {
+			"namePrefix": "Ruidium ",
+			"source": "CRCotN",
+			"page": 215,
+			"resist": [
+				"psychic"
+			],
+			"rarity": "very rare",
+			"reqAttune": true,
+			"bonusAc": "+1",
+			"modifySpeed": {
+				"equal": {
+					"swim": "walk"
+				}
+			},
+			"entries": [
+				"這件魔法護甲呈現暗沉的鏽色，或有瑞迪姆的紋脈貫穿其間。穿著這件護甲時，你獲得下列增益：",
+				{
+					"type": "list",
+					"items": [
+						"你具有精神傷害抗性。",
+						"你可以在水中呼吸。",
+						"你獲得等同於步行速度的游泳速度。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "瑞迪姆腐化",
+					"entries": [
+						"當你穿著這件護甲並在豁免檢定擲出 1 時，你必須進行一次 {@dc 15} 魅力豁免。豁免失敗，你獲得 1 級{@condition exhaustion}。若你尚未受到瑞迪姆腐化，你會在這次豁免失敗時遭到腐化。"
+					],
+					"ENG_name": "Ruidium Corruption"
+				},
+				{
+					"type": "entries",
+					"name": "若瑞迪姆被摧毀",
+					"entries": [
+						"若神化者被殺死或得到救贖，艾克桑德利亞所有的瑞迪姆都會立即被摧毀，瑞迪姆護甲則變成{@item +1 armor}。"
+					],
+					"ENG_name": "If Ruidium Is Destroyed"
+				}
+			]
+		},
+		"ENG_name": "Ruidium Armor"
+	},
+	"Ruidium Weapon|CRCOTN": {
+		"name": "瑞迪姆武器",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Ruidium ",
+			"source": "CRCotN",
+			"page": 216,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"bonusWeapon": "+2",
+			"modifySpeed": {
+				"equal": {
+					"swim": "walk"
+				}
+			},
+			"entries": [
+				"這把魔法武器呈現暗沉的鏽色，或有瑞迪姆的紋脈貫穿其間。這把武器在你身上時，你獲得下列增益：",
+				{
+					"type": "list",
+					"items": [
+						"你可以在水中呼吸。",
+						"你獲得等同於步行速度的游泳速度。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "瑞迪姆打擊",
+					"entries": [
+						"被你以這把武器命中的生物額外受到 {@damage 2d6} 點精神傷害。"
+					],
+					"ENG_name": "Ruidium Strike"
+				},
+				{
+					"type": "entries",
+					"name": "瑞迪姆腐化",
+					"entries": [
+						"當你以這把武器進行攻擊檢定擲出 1 時，你必須進行一次 {@dc 20} 魅力豁免。豁免失敗，你獲得 1 級{@condition exhaustion}。若你尚未受到瑞迪姆腐化，你會在這次豁免失敗時遭到腐化。"
+					],
+					"ENG_name": "Ruidium Corruption"
+				},
+				{
+					"type": "entries",
+					"name": "若瑞迪姆被摧毀",
+					"entries": [
+						"若神化者被殺死或得到救贖，艾克桑德利亞所有的瑞迪姆都會立即被摧毀，瑞迪姆武器則變成{@item +2 weapon}。"
+					],
+					"ENG_name": "If Ruidium Is Destroyed"
+				}
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Ruidium Weapon"
+	},
+	"Silvered Weapon|XDMG": {
+		"name": "銀質武器",
+		"referenceSources": [
+			"DrDe-TDoN"
+		],
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Silvered ",
+			"source": "XDMG",
+			"page": 304,
+			"rarity": "common",
+			"entries": [
+				"一道煉金工序將銀與這把魔法武器結合在一起。當你以它對處於變形狀態的生物造成{@variantrule Critical Hit|XPHB|重擊}時，這把武器額外造成一顆傷害骰的傷害。"
+			],
+			"lootTables": [
+				"Armaments - Common|XDMG"
+			]
+		},
+		"ENG_name": "Silvered Weapon"
+	},
+	"Slumbering Dragon's Wrath Weapon|FTD": {
+		"name": "沉睡龍怒武器",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Slumbering Dragon's Wrath ",
+			"source": "FTD",
+			"page": 25,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"entries": [
+				"這把武器飾有龍首、龍爪、龍翼、龍鱗或龍語文字。浸潤在龍的寶藏中時，它會吸收該龍吐息武器的能量，並以其特殊屬性造成該類型的傷害。",
+				"每當你以這把武器進行攻擊檢定擲出 20 時，目標 5 呎內每個由你選擇的生物受到 5 點該龍吐息武器傷害類型的傷害。"
+			]
+		},
+		"ENG_name": "Slumbering Dragon's Wrath Weapon"
+	},
+	"Smoldering Armor|XDMG": {
+		"name": "燜燃護甲",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "LA|XPHB"
+			},
+			{
+				"type": "MA|XPHB"
+			},
+			{
+				"type": "HA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Smoldering ",
+			"source": "XDMG",
+			"page": 305,
+			"rarity": "common",
+			"entries": [
+				"穿著這件護甲時，會有幾縷無害、無味的煙從上面升起。"
+			],
+			"lootTables": [
+				"Armaments - Common|XDMG",
+				"Relics - Common|XDMG"
+			]
+		},
+		"ENG_name": "Smoldering Armor"
+	},
+	"Starshot Crossbow|BMT": {
+		"name": "星射弩",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"crossbow": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Starshot ",
+			"source": "BMT",
+			"page": 38,
+			"rarity": "rare",
+			"reqAttune": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d3}",
+			"charges": 3,
+			"entries": [
+				"這把弩以燻黑的木料製成，弩臂上以珍珠鑲嵌出星座圖案。使用這把弩時，你無視裝填屬性。若你沒有為這把武器裝填彈藥，它會自行產生，在你以它進行遠程攻擊時自動造出一枚魔法彈藥。武器所造出的彈藥在命中或未命中目標的瞬間便會消失。這把弩有 3 點充能，每天黎明時恢復 {@dice 1d3} 點已消耗的充能。",
+				{
+					"type": "entries",
+					"name": "星座",
+					"entries": [
+						"這把弩飾有三個星座。你可以用一個附贈動作輕觸其中一個星座來引動它，消耗 1 點充能並產生下列效果之一：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "平衡",
+									"entries": [
+										"在你的下個回合結束前，下一次你以使用這把弩的遠程攻擊檢定命中一個生物時，你或你 30 呎內由你選擇的另一個生物可以恢復等同 {@dice 1d8} 加上你熟練加值的生命值。"
+									],
+									"ENG_name": "Balance"
+								},
+								{
+									"type": "item",
+									"name": "烈焰",
+									"entries": [
+										"直到你的下個回合結束前，當你以使用這把弩的遠程攻擊檢定命中一個生物時，該次攻擊額外造成 {@damage 2d8} 點火焰傷害。"
+									],
+									"ENG_name": "Flames"
+								},
+								{
+									"type": "item",
+									"name": "盜賊",
+									"entries": [
+										"直到你的下個回合結束前，你處於隱形狀態，你穿戴或攜帶的任何東西也都是隱形的。"
+									],
+									"ENG_name": "Rogue"
+								}
+							]
+						}
+					],
+					"ENG_name": "Constellations"
+				}
+			]
+		},
+		"ENG_name": "Starshot Crossbow"
+	},
+	"Stirring Dragon's Wrath Weapon|FTD": {
+		"name": "甦醒龍怒武器",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Stirring Dragon's Wrath ",
+			"source": "FTD",
+			"page": 25,
+			"rarity": "rare",
+			"reqAttune": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"這把武器飾有龍首、龍爪、龍翼、龍鱗或龍語文字。浸潤在龍的寶藏中時，它會吸收該龍吐息武器的能量，並以其特殊屬性造成該類型的傷害。",
+				"每當你以這把武器進行攻擊檢定擲出 20 時，目標 5 呎內每個由你選擇的生物受到 5 點該龍吐息武器傷害類型的傷害。",
+				"你使用這把武器進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。命中時，這把武器額外造成 {@damage 1d6} 點該龍吐息武器傷害類型的傷害。"
+			]
+		},
+		"ENG_name": "Stirring Dragon's Wrath Weapon"
+	},
+	"Stygian Spear|COA": {
+		"name": "冥河之矛",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"spear": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Stygian ",
+			"source": "CoA",
+			"page": 270,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"curse": true,
+			"bonusWeapon": "+2",
+			"entries": [
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰具有 {=bonusWeapon} 加值。當你擲出它時，命中會額外造成一顆傷害骰的傷害。擲出後無論命中或失手，它都會立即飛回你手中。",
+				{
+					"type": "entries",
+					"name": "詛咒",
+					"entries": [
+						"與這把武器同調期間，你不願與它分離。此外，你使用這把武器以外的武器進行攻擊檢定時具有劣勢。",
+						"每當你以這把武器進行攻擊檢定擲出 1 時，你的目標會變成離你最近的盟友。",
+						"若有多名盟友，隨機決定誰是目標。對你的盟友帶著優勢重新進行一次攻擊檢定。若攻擊命中，除了正常傷害外，你還額外造成 {@damage 2d6} 點毒素傷害。只有{@spell Remove Curse}法術能讓你終止與這件物品的同調。"
+					],
+					"ENG_name": "Curse"
+				},
+				{
+					"type": "entries",
+					"name": "腐化",
+					"entries": [
+						"此物品會腐化。見「{@adventure Infernal Item Corruption|CoA|16|煉獄物品腐化}」一節。"
+					],
+					"ENG_name": "Corrupting"
+				}
+			]
+		},
+		"ENG_name": "Stygian Spear"
+	},
+	"Sword of Life Stealing|XDMG": {
+		"name": "竊命之劍",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "長柄刀",
+				"source": "XPHB",
+				"ENG_name": "Glaive"
+			},
+			{
+				"name": "巨劍",
+				"source": "XPHB",
+				"ENG_name": "Greatsword"
+			},
+			{
+				"name": "長劍",
+				"source": "XPHB",
+				"ENG_name": "Longsword"
+			},
+			{
+				"name": "刺劍",
+				"source": "XPHB",
+				"ENG_name": "Rapier"
+			},
+			{
+				"name": "彎刀",
+				"source": "XPHB",
+				"ENG_name": "Scimitar"
+			},
+			{
+				"name": "短劍",
+				"source": "XPHB",
+				"ENG_name": "Shortsword"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Life Stealing",
+			"source": "XDMG",
+			"page": 314,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "rare",
+			"reqAttune": true,
+			"entries": [
+				"當你以這把魔法武器攻擊一個生物，並在攻擊檢定的 {@dice d20} 上擲出 20 時，若目標不是構裝體或不死生物，該目標額外受到 15 點死靈傷害，且你獲得等同所受死靈傷害量的{@variantrule Temporary Hit Points|XPHB|臨時生命值}。"
+			],
+			"lootTables": [
+				"Armaments - Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Sword of Life Stealing"
+	},
+	"Sword of Retribution|COA": {
+		"name": "報應之劍",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"sword": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Retribution",
+			"source": "CoA",
+			"page": 270,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"curse": true,
+			"bonusWeapon": "+3",
+			"entries": [
+				"你以這把劍進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。因這把武器的傷害而失去的生命值只能透過短休或長休恢復，無法透過再生、魔法或任何其他方式恢復。",
+				{
+					"type": "entries",
+					"name": "詛咒",
+					"entries": [
+						"與這把武器同調期間，你不願與它分離。與這把武器同調期間，你使用這把武器以外的武器進行攻擊檢定時也具有劣勢。",
+						"附在劍上的復仇之靈會與持用者分享它的過往與復仇的渴望。每次順利完成長休後，你都會夢見那個靈體的過去，並以它的死亡作結。醒來時，你必須進行一次 {@dc 11} 體質豁免。豁免失敗，你只獲得短休的增益。只有{@spell Remove Curse}法術能讓你終止與這件物品的同調。"
+					],
+					"ENG_name": "Curse"
+				},
+				{
+					"type": "entries",
+					"name": "腐化",
+					"entries": [
+						"此物品會腐化。見「{@adventure Infernal Item Corruption|CoA|16|煉獄物品腐化}」一節。"
+					],
+					"ENG_name": "Corrupting"
+				}
+			]
+		},
+		"ENG_name": "Sword of Retribution"
+	},
+	"Sword of Sharpness|XDMG": {
+		"name": "鋒銳之劍",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "長柄刀",
+				"source": "XPHB",
+				"ENG_name": "Glaive"
+			},
+			{
+				"name": "巨劍",
+				"source": "XPHB",
+				"ENG_name": "Greatsword"
+			},
+			{
+				"name": "長劍",
+				"source": "XPHB",
+				"ENG_name": "Longsword"
+			},
+			{
+				"name": "彎刀",
+				"source": "XPHB",
+				"ENG_name": "Scimitar"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Sharpness",
+			"source": "XDMG",
+			"page": 314,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"entries": [
+				"當你以這把魔法武器攻擊一件物件並命中時，對該目標的武器傷害骰取最大值。",
+				"當你以這把武器攻擊一個生物，並在攻擊檢定的 {@dice d20} 上擲出 20 時，該目標額外受到 14 點劈砍傷害，並獲得 1 級{@condition Exhaustion|XPHB}。"
+			],
+			"lootTables": [
+				"Armaments - Very Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Sword of Sharpness"
+	},
+	"Sword of the Planes|BMT": {
+		"name": "位面之劍",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"sword": true
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of the Planes",
+			"source": "BMT",
+			"page": 68,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"bonusWeapon": "+3",
+			"entries": [
+				"你以這把魔法劍進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。",
+				"這把劍能撕裂現實的織構，在位面之間造出一道暫時的裂隙。你可以用你的動作，選擇一個與你所在位面不同的存在位面，並劃開你 5 呎內一處未被佔據的空間，造出一道通往該位面的裂隙。裂隙最高 10 呎、最寬 10 呎，持續 1 分鐘。這項屬性使用後，在下一個黎明之前無法再次使用。",
+				"你可以指定目的地，例如火元素位面的黃銅城，或九層地獄第二層的狄斯帕特宮殿，裂隙便會在該目的地或其附近開啟（由 DM 裁定）。舉例來說，若你想前往黃銅城，裂隙可能出現在鋼鐵之街、灰燼之門前，或隔著火海面向城市之處，由 DM 裁定。",
+				"任何進入裂隙的東西都會立即被傳送到另一個位面，出現在離裂隙最近的未被佔據空間。"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Sword of the Planes"
+	},
+	"Sword of Vengeance|XDMG": {
+		"name": "復仇之劍",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "長柄刀",
+				"source": "XPHB",
+				"ENG_name": "Glaive"
+			},
+			{
+				"name": "巨劍",
+				"source": "XPHB",
+				"ENG_name": "Greatsword"
+			},
+			{
+				"name": "長劍",
+				"source": "XPHB",
+				"ENG_name": "Longsword"
+			},
+			{
+				"name": "刺劍",
+				"source": "XPHB",
+				"ENG_name": "Rapier"
+			},
+			{
+				"name": "彎刀",
+				"source": "XPHB",
+				"ENG_name": "Scimitar"
+			},
+			{
+				"name": "短劍",
+				"source": "XPHB",
+				"ENG_name": "Shortsword"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Vengeance",
+			"source": "XDMG",
+			"page": 206,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"curse": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"以此魔法武器進行的攻擊檢定與傷害擲骰獲得 +1 加值。",
+				{
+					"type": "entries",
+					"name": "詛咒",
+					"entries": [
+						"這把武器受到詛咒，並被一個復仇之靈附身。與它同調會使詛咒延伸到你身上。只要你仍受詛咒，你就不願與這把武器分離，隨時將它帶在身上。與這把武器同調期間，你使用這把武器以外的武器進行攻擊檢定時具有{@variantrule Disadvantage|XPHB|劣勢}。",
+						"此外，這把武器在你身上時，每當你在戰鬥中受到其他生物的傷害，你都必須通過一次 {@dc 15} 感知豁免。豁免失敗，你必須攻擊傷害你的那個生物，直到你或牠的{@variantrule Hit Points|XPHB|生命值}降至 0，或直到你無法靠近該生物對牠進行近戰攻擊為止。",
+						"你可以用一般的方式解除詛咒。或者，對這把武器施放{@spell Banishment|XPHB}會迫使復仇之靈離開它。之後這把武器會變成沒有其他屬性的 +1 武器。"
+					],
+					"ENG_name": "Curse"
+				}
+			],
+			"lootTables": [
+				"Armaments - Uncommon|XDMG"
+			]
+		},
+		"ENG_name": "Sword of Vengeance"
+	},
+	"Sword of Wounding|XDMG": {
+		"name": "重創之劍",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "長柄刀",
+				"source": "XPHB",
+				"ENG_name": "Glaive"
+			},
+			{
+				"name": "巨劍",
+				"source": "XPHB",
+				"ENG_name": "Greatsword"
+			},
+			{
+				"name": "長劍",
+				"source": "XPHB",
+				"ENG_name": "Longsword"
+			},
+			{
+				"name": "刺劍",
+				"source": "XPHB",
+				"ENG_name": "Rapier"
+			},
+			{
+				"name": "彎刀",
+				"source": "XPHB",
+				"ENG_name": "Scimitar"
+			},
+			{
+				"name": "短劍",
+				"source": "XPHB",
+				"ENG_name": "Shortsword"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Wounding",
+			"source": "XDMG",
+			"page": 314,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "rare",
+			"reqAttune": true,
+			"entries": [
+				"當你以使用這把魔法武器的攻擊命中一個生物時，目標額外受到 {@damage 2d6} 點死靈傷害，且必須通過一次 {@dc 15} 體質豁免，否則 1 小時內無法恢復{@variantrule Hit Points|XPHB|生命值}。目標在它每個回合結束時重新進行豁免，成功則終止自身受到的效應。"
+			],
+			"lootTables": [
+				"Armaments - Rare|XDMG"
+			]
+		},
+		"ENG_name": "Sword of Wounding"
+	},
+	"Sylvan Talon|XDMG": {
+		"name": "木族之爪",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "匕首",
+				"source": "XPHB",
+				"ENG_name": "Dagger"
+			},
+			{
+				"name": "刺劍",
+				"source": "XPHB",
+				"ENG_name": "Rapier"
+			},
+			{
+				"name": "彎刀",
+				"source": "XPHB",
+				"ENG_name": "Scimitar"
+			},
+			{
+				"name": "短劍",
+				"source": "XPHB",
+				"ENG_name": "Shortsword"
+			},
+			{
+				"name": "鐮刀",
+				"source": "XPHB",
+				"ENG_name": "Sickle"
+			},
+			{
+				"name": "矛",
+				"source": "XPHB",
+				"ENG_name": "Spear"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Sylvan Talon ",
+			"source": "XDMG",
+			"page": 314,
+			"rarity": "common",
+			"reqAttune": true,
+			"entries": [
+				"這把武器在你身上時，你能理解所有精類的非書面溝通，他們也能理解你的。",
+				{
+					"type": "entries",
+					"name": "秘密訊息",
+					"entries": [
+						"你可以用一個{@action Magic|XPHB}動作，以這把武器施放{@spell Message|XPHB}。這項屬性使用後，在下一個黎明之前無法再次使用。"
+					],
+					"ENG_name": "Secret Message"
+				}
+			],
+			"attachedSpells": {
+				"daily": {
+					"1e": [
+						"message|xphb"
+					]
+				}
+			},
+			"lootTables": [
+				"Armaments - Common|XDMG",
+				"Implements - Common|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Sylvan Talon"
+	},
+	"Vicious +1 Weapon|AI": {
+		"name": "惡毒武器+1",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"excludes": {
+			"net": true
+		},
+		"entries": [
+			"當你以這把魔法武器擲出 20 時，目標額外受到 7 點該武器傷害類型的傷害。",
+			"{@note 註：依據 SRD，額外傷害為 {@damage 2d6}，不過{@link 這並不正確|https://rpg.stackexchange.com/a/174522/53884}。}"
+		],
+		"inherits": {
+			"namePrefix": "Vicious +1 ",
+			"source": "AI",
+			"page": 149,
+			"rarity": "unknown (magic)",
+			"bonusWeapon": "+1",
+			"entries": [
+				"你以這把武器進行的攻擊檢定與傷害擲骰具有 {=bonusWeapon} 加值。",
+				"當你以這把魔法武器擲出 20 時，目標額外受到 7 點{=dmgType}傷害。",
+				"{@note 註：依據 SRD，額外傷害為 {@damage 2d6} 點{=dmgType}傷害，不過{@link 這並不正確|https://rpg.stackexchange.com/a/174522/53884}。}"
+			]
+		},
+		"ENG_name": "Vicious +1 Weapon"
+	},
+	"Vicious Weapon|XDMG": {
+		"name": "惡毒武器",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Vicious ",
+			"source": "XDMG",
+			"page": 318,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "rare",
+			"entries": [
+				"這把魔法武器對它命中的任何生物額外造成 {@damage 2d6} 點傷害。這項額外傷害的類型與該武器的正常傷害相同。"
+			],
+			"lootTables": [
+				"Armaments - Rare|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Vicious Weapon"
+	},
+	"Vorpal Sword|XDMG": {
+		"name": "斬首之劍",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"name": "長柄刀",
+				"source": "XPHB",
+				"ENG_name": "Glaive"
+			},
+			{
+				"name": "巨劍",
+				"source": "XPHB",
+				"ENG_name": "Greatsword"
+			},
+			{
+				"name": "長劍",
+				"source": "XPHB",
+				"ENG_name": "Longsword"
+			},
+			{
+				"name": "彎刀",
+				"source": "XPHB",
+				"ENG_name": "Scimitar"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Vorpal ",
+			"source": "XDMG",
+			"page": 318,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"bonusWeapon": "+3",
+			"entries": [
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰獲得 +3 加值。此外，這把武器無視劈砍傷害{@variantrule Resistance|XPHB|抗性}。",
+				"當你用這把武器攻擊至少有一顆頭的生物，並在攻擊檢定的 {@dice d20} 上擲出 20 時，你會砍下該生物的一顆頭。若該生物失去那顆頭便無法存活，牠就會死亡。若生物具有劈砍傷害{@variantrule Immunity|XPHB|免疫}、沒有頭或不需要頭，或 DM 判定該生物太大、無法用這把武器砍下牠的頭，便免疫這個效應。這樣的生物改為從這次命中額外受到 30 點劈砍傷害。若該生物具有傳奇{@variantrule Resistance|XPHB|抗性}，牠可以消耗該特性的一次每日使用次數來避免失去頭顱，改為受到額外傷害。"
+			],
+			"lootTables": [
+				"Armaments - Legendary|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Vorpal Sword"
+	},
+	"Wakened Dragon's Wrath Weapon|FTD": {
+		"name": "覺醒龍怒武器",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"inherits": {
+			"namePrefix": "Wakened Dragon's Wrath ",
+			"source": "FTD",
+			"page": 25,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"bonusWeapon": "+2",
+			"entries": [
+				"這把武器飾有龍首、龍爪、龍翼、龍鱗或龍語文字。浸潤在龍的寶藏中時，它會吸收該龍吐息武器的能量，並以其特殊屬性造成該類型的傷害。",
+				"每當你以這把武器進行攻擊檢定擲出 20 時，目標 5 呎內每個由你選擇的生物受到 5 點該龍吐息武器傷害類型的傷害。",
+				"你使用這把武器進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。命中時，這把武器額外造成 {@damage 2d6} 點該龍吐息武器傷害類型的傷害。",
+				"你可以用一個動作從武器釋放出 30 呎錐形範圍的毀滅能量。該區域內的每個生物必須進行一次 {@dc 16} 敏捷豁免，失敗受到 {@damage 8d6} 點該龍吐息武器傷害類型的傷害，成功則傷害減半。這個動作使用後，在下一個黎明之前無法再次使用。"
+			]
+		},
+		"ENG_name": "Wakened Dragon's Wrath Weapon"
+	},
+	"Walloping Ammunition|XDMG": {
+		"name": "衝擊彈藥",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"type": "A|XPHB"
+			},
+			{
+				"type": "AF|XDMG"
+			}
+		],
+		"ammo": true,
+		"inherits": {
+			"namePrefix": "Walloping ",
+			"source": "XDMG",
+			"page": 318,
+			"rarity": "common",
+			"entries": [
+				"被這枚彈藥命中的生物必須通過一次 {@dc 10} 力量豁免，否則陷入{@condition Prone|XPHB}狀態。"
+			],
+			"lootTables": [
+				"Armaments - Common|XDMG",
+				"Implements - Common|XDMG"
+			]
+		},
+		"ENG_name": "Walloping Ammunition"
+	},
+	"Weapon of Agonizing Paralysis|COA": {
+		"name": "劇痛麻痺武器",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "M"
+			},
+			{
+				"type": "M|XPHB"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Agonizing Paralysis",
+			"source": "CoA",
+			"page": 271,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"bonusWeapon": "+3",
+			"entries": [
+				"你以這把魔法武器進行的攻擊檢定與傷害擲骰具有 {=bonusWeapon} 加值。當這把武器使一個生物的生命值降至 0 時，該生物不會死亡。取而代之，煉獄符文會像刻進血肉般浮現在牠身上，並使牠恢復到 1 點生命值。牠從此陷入{@condition paralyzed}狀態，直到該狀態被{@spell Lesser Restoration}法術或類似魔法移除為止。狀態移除後，符文便會消失。處於{@condition paralyzed||麻痺}狀態期間，該生物在牠每個回合開始時承受劇烈的痛苦，並獲得一級{@condition exhaustion}。"
+			]
+		},
+		"ENG_name": "Weapon of Agonizing Paralysis"
+	},
+	"Weapon of Certain Death|EGW": {
+		"name": "必死武器",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weapon": true
+			}
+		],
+		"excludes": {
+			"net": true
+		},
+		"inherits": {
+			"nameSuffix": " of Certain Death",
+			"source": "EGW",
+			"page": 270,
+			"rarity": "rare",
+			"entries": [
+				"當你以使用這把魔法武器的攻擊對一個生物造成傷害時，目標在你的下個回合開始前無法恢復生命值。"
+			]
+		},
+		"ENG_name": "Weapon of Certain Death"
+	},
+	"Weapon of Throne's Command|BMT": {
+		"name": "王座號令武器",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Throne's Command",
+			"source": "BMT",
+			"page": 39,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"grantsProficiency": true,
+			"bonusWeapon": "+1",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4}",
+			"charges": 5,
+			"entries": [
+				"這把武器綴滿華麗的金絲細工與深藍、栗紅色的寶石。你以這把武器進行的攻擊檢定與傷害擲骰獲得 {=bonusWeapon} 加值。此外，若你尚未熟練{@skill Intimidation}與{@skill Persuasion}技能，你獲得這些技能的熟練。",
+				{
+					"type": "entries",
+					"name": "施法",
+					"entries": [
+						"這把武器有 5 點充能。你可以用一個附贈動作消耗 1 點或更多充能，施放下列法術之一（豁免 {@dc 16}）：{@spell Command}（1 點充能）、{@spell Zone of Truth}（2 點充能）、{@spell Compulsion}（4 點充能）、{@spell Banishment}（4 點充能）或{@spell Dominate Person}（5 點充能）。",
+						"這把武器每天黎明時恢復 {@dice 1d4} 點已消耗的充能。"
+					],
+					"ENG_name": "Spellcasting"
+				}
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"command"
+					],
+					"2": [
+						"zone of truth"
+					],
+					"4": [
+						"banishment",
+						"compulsion"
+					],
+					"5": [
+						"dominate person"
+					]
+				}
+			}
+		},
+		"ENG_name": "Weapon of Throne's Command"
+	},
+	"Weapon of Warning|XDMG": {
+		"name": "警戒武器",
+		"type": "GV|XDMG",
+		"requires": [
+			{
+				"weaponCategory": "simple"
+			},
+			{
+				"weaponCategory": "martial"
+			}
+		],
+		"inherits": {
+			"nameSuffix": " of Warning",
+			"source": "XDMG",
+			"page": 324,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"entries": [
+				"只要這把武器在你伸手可及之處，且你與它同調，你與你 30 呎內的盟友就獲得下列增益。",
+				{
+					"type": "entries",
+					"name": "警報術",
+					"entries": [
+						"戰鬥開始時，這把武器會以魔法喚醒每個自然入睡的對象。這項增益無法喚醒因魔法而入睡的對象。"
+					],
+					"ENG_name": "Alarm"
+				},
+				{
+					"type": "entries",
+					"name": "超自然戒備",
+					"entries": [
+						"每個對象在{@variantrule Initiative|XPHB|先攻}擲骰上具有{@variantrule Advantage|XPHB|優勢}。"
+					],
+					"ENG_name": "Supernatural Readiness"
+				}
+			],
+			"classFeatures": [
+				"replicate magic item|artificer|efa|2|efa"
+			],
+			"lootTables": [
+				"Armaments - Uncommon|XDMG"
+			]
+		},
+		"hasFluffImages": true,
+		"ENG_name": "Weapon of Warning"
+	},
+	"Winged Ammunition|BMT": {
+		"name": "有翼彈藥",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "A"
+			},
+			{
+				"type": "AF|DMG"
+			},
+			{
+				"type": "A|XPHB"
+			},
+			{
+				"type": "AF|XDMG"
+			}
+		],
+		"excludes": {
+			"cellEnergy": true
+		},
+		"ammo": true,
+		"inherits": {
+			"namePrefix": "Winged ",
+			"source": "BMT",
+			"page": 69,
+			"rarity": "uncommon",
+			"entries": [
+				"以這枚彈藥進行的遠程武器攻擊檢定無視半掩護與{@quickref Cover||3||四分之三掩護}。此外，在長射程攻擊不會讓以這枚彈藥進行的遠程武器攻擊檢定具有劣勢。"
+			]
+		},
+		"ENG_name": "Winged Ammunition"
+	},
+	"Zephyr Armor|BGG": {
+		"name": "和風護甲",
+		"type": "GV|DMG",
+		"requires": [
+			{
+				"type": "LA"
+			},
+			{
+				"type": "LA|XPHB"
+			}
+		],
+		"inherits": {
+			"namePrefix": "Zephyr ",
+			"source": "BGG",
+			"page": 117,
+			"rarity": "rare",
+			"reqAttune": true,
+			"entries": [
+				"這套精緻的銀白護甲胸口帶有風之符文。",
+				"穿著這件護甲時，和緩的氣流會助長你的動作，你在敏捷（{@skill Acrobatics}）檢定與敏捷豁免上具有優勢。",
+				{
+					"type": "entries",
+					"name": "引動符文",
+					"entries": [
+						"你可以用一個動作引動護甲的符文，用它施放{@spell wind wall}法術（豁免 {@dc 15}）。符文被引動後，在下一個黎明之前無法再次引動。"
+					],
+					"ENG_name": "Invoking the Rune"
+				}
+			],
+			"attachedSpells": {
+				"daily": {
+					"1e": [
+						"wind wall"
+					]
+				}
+			}
+		},
+		"ENG_name": "Zephyr Armor"
+	}
+}

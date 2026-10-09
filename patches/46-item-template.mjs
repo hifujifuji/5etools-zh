@@ -22,6 +22,28 @@ export default [
 	{
 		file: "js/render.js",
 		replace: [
+			["<span class=\"ve-bold\">Found On: </span>${item.lootTables.sort(SortUtil.ascSortLower).map(tbl => renderer.render(`{@table ${tbl}}`)).join(\", \")}", "<span class=\"ve-bold\">出現於：</span>${item.lootTables.sort(SortUtil.ascSortLower).map(tbl => renderer.render(`{@table ${tbl}}`)).join(\"、\")}"],
+			[`					name: "Base items",`, `					name: "基礎物品",`],
+			[`"This item variant can be applied to the following base items:",`, `"這個物品變體可以套用在下列基礎物品上：",`],
+			[
+				"wrapped: `{@note The {@item ${baseItem.name}|${baseItem.source}|base item} can be found in ${Parser.sourceJsonToFull(baseItem.source)}${baseItem.page ? `, page ${baseItem.page}` : \"\"}.}`,",
+				"wrapped: `{@note {@item ${baseItem.name}|${baseItem.source}|基礎物品}收錄於${globalThis.ZH?.t?.(Parser.sourceJsonToFull(baseItem.source)) ?? Parser.sourceJsonToFull(baseItem.source)}${baseItem.page ? `，第 ${baseItem.page} 頁` : \"\"}。}`,",
+			],
+			// {=prop} 代入：舊譯文的 {=genericBonus} 對應到現行的加值欄位；{=baseName} 用基礎物品的中文名
+			[
+				`			const [path, modifiers] = s.slice(2, -1).split("/");
+			let fromProp = object[path];`,
+				`			const [path, modifiers] = s.slice(2, -1).split("/");
+			let fromProp = object[path];
+			if (fromProp == null && path === "genericBonus") fromProp = object.bonusWeapon ?? object.bonusAc ?? object.bonusSpellAttack ?? object.bonusSavingThrow ?? "";
+			if (path === "baseName" && object.__baseNameZh) { textStack += object.__baseNameZh; continue; }
+			if (path === "dmgType" && typeof fromProp === "string") fromProp = ({acid: "酸蝕", bludgeoning: "鈍擊", cold: "寒冰", fire: "火焰", force: "力場", lightning: "閃電", necrotic: "死靈", piercing: "穿刺", poison: "毒素", psychic: "精神", radiant: "光耀", slashing: "劈砍", thunder: "雷鳴"})[fromProp.toLowerCase()] ?? fromProp;`,
+			],
+			[
+				`			baseName: baseItem.name,`,
+				`			baseName: baseItem.name,
+			__baseNameZh: baseItem.name_zh && (baseItem._zhOf == null || baseItem._zhOf === baseItem.name) ? baseItem.name_zh : null,`,
+			],
 			[
 				`			if (args.length === 1) {
 				return Renderer.utils._applyTemplate_getValue(ent, args[0]);
