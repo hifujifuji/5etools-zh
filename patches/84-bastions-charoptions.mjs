@@ -70,6 +70,19 @@ export default [
 		file: "js/render.js",
 		replace: [
 			...PREREQ,
+			// ---- 獎勵頁副標（類型、稀有度） ----
+			[
+				`			(ent.type || "").toTitleCase(),
+			ent.rarity ? ent.rarity.toTitleCase() : "",
+		]
+			.filter(Boolean)
+			.join(", ");`,
+				`			globalThis.ZH?.t?.(ent.type || "") ?? (ent.type || "").toTitleCase(),
+			ent.rarity ? (globalThis.ZH?.t?.(ent.rarity.toTitleCase()) ?? ent.rarity.toTitleCase()) : "",
+		]
+			.filter(Boolean)
+			.join("、");`,
+			],
 			[
 				`Renderer.facility = class {`,
 				`Renderer.facility = class {

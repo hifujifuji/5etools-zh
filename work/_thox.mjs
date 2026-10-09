@@ -30,24 +30,26 @@ if (cmd === "todo") {
 	const {UPSTREAM} = await import("../scripts/util.mjs");
 	const en = JSON.parse(fs.readFileSync(enF));
 	const dist = {}, up = {};
-	for (const f of ["trapshazards.json", "objects.json", "charcreationoptions.json", "bastions.json"]) for (const [root, tgt] of [["dist/data", dist], [`${UPSTREAM}/data`, up]]) {
+	for (const f of ["trapshazards.json", "objects.json", "charcreationoptions.json", "bastions.json", "rewards.json"]) for (const [root, tgt] of [["dist/data", dist], [`${UPSTREAM}/data`, up]]) {
 		const j = JSON.parse(fs.readFileSync(`${root}/${f}`));
-		for (const p of ["trap", "hazard", "object", "charoption", "facility"]) for (const e of j[p] || []) tgt[`${p}|${e.name}|${e.source}`.toLowerCase()] = e;
+		for (const p of ["trap", "hazard", "object", "charoption", "facility", "reward"]) for (const e of j[p] || []) tgt[`${p}|${e.name}|${e.source}`.toLowerCase()] = e;
 	}
 	const items = [], pre = [];
 	for (const it of en.items) {
 		const k = `${it.prop}|${it.key}`.toLowerCase(); const u = up[k], d = dist[k];
 		const paths = collect(u);
 		if (paths.length !== it.s.length) throw new Error(`${k}: ${paths.length} vs ${it.s.length}`);
+		let needImport = false;
 		const z = paths.map((x, j) => {
 			const s = it.s[j];
 			const dv = x.isName ? getAt(d, x.path.slice(0, -1))?.name_zh : getAt(d, x.path);
 			if (typeof dv === "string" && cjk(dv)) return dv;
+			needImport = true; // dist 還不是中文：即使翻譯記憶能補齊，也要保留這筆以便匯入
 			if (typeof TM[s] === "string" && TM[s] !== s) return TM[s];
 			if (!RE_TEXT_TAG.test(s) && !/[A-Za-z]{2}/.test(s.replace(/\{@[^{}]*\}/g, ""))) return s.replace(/ \(/g, "（").replace(/\)/g, "）");
 			return null;
 		});
-		if (z.every(x => x != null) && !process.env.ALL) continue;
+		if (z.every(x => x != null) && !needImport && !process.env.ALL) continue;
 		items.push(it); pre.push(z);
 	}
 	fs.writeFileSync(enF, JSON.stringify({batch, items}, null, "\t"));
