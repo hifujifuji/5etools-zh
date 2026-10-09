@@ -13660,7 +13660,7 @@ Renderer.vehicle = class {
 				? `{@b Damage Immunities} ${Parser.getFullImmRes(ent.immune)}`
 				: null,
 			entryConditionImmunities: ent.conditionImmune
-				? `{@b Condition Immunities} ${Parser.getFullCondImm(ent.conditionImmune, {isEntry: true})}`
+				? `{@b Condition Immunities} ${ent.conditionImmune.every(c => typeof c === "string") ? ent.conditionImmune.map(c => `{@condition ${c}||${({"blinded":"目盲","charmed":"魅惑","deafened":"耳聾","exhaustion":"力竭","frightened":"恐懼","grappled":"被擒","incapacitated":"無力","invisible":"隱形","paralyzed":"麻痺","petrified":"石化","poisoned":"中毒","prone":"伏地","restrained":"束縛","stunned":"震懾","unconscious":"昏迷"})[c] ?? c}}`).join("、") : Parser.getFullCondImm(ent.conditionImmune, {isEntry: true})}`
 				: null,
 		};
 	}
@@ -13701,18 +13701,18 @@ Renderer.vehicle = class {
 			const entriesOtherOthers = (ent.other || []).filter(it => it.name !== "Actions");
 
 			return {
-				entrySizeDimensions: `{@i ${Parser.sizeAbvToFull(ent.size)} vehicle${ent.dimensions ? ` (${ent.dimensions.join(" by ")})` : ""}}`,
+				entrySizeDimensions: `{@i ${(sz => ({T: "微型", S: "小型", M: "中型", L: "大型", H: "巨型", G: "超巨型"})[sz] ?? Parser.sizeAbvToFull(sz))(ent.size)}載具${ent.dimensions ? `（${ent.dimensions.join(" × ").replace(/ ft\./g, " 呎")}）` : ""}}`,
 				entryCreatureCapacity: ent.capCrew != null || ent.capPassenger != null
-					? `{@b Creature Capacity} ${Renderer.vehicle.getShipCreatureCapacity(ent)}`
+					? `{@b 生物容量} ${Renderer.vehicle.getShipCreatureCapacity(ent)}`
 					: null,
 				entryCargoCapacity: ent.capCargo != null
-					? `{@b Cargo Capacity} ${Renderer.vehicle.getShipCargoCapacity(ent)}`
+					? `{@b 載貨容量} ${Renderer.vehicle.getShipCargoCapacity(ent)}`
 					: null,
 				entryTravelPace: ent.pace != null
-					? `{@b Travel Pace} ${ent.pace} miles per hour (${ent.pace * 24} miles per day)`
+					? `{@b 旅行速度} 每小時 ${ent.pace} 哩（每天 ${ent.pace * 24} 哩）`
 					: null,
 				entryTravelPaceNote: ent.pace != null
-					? `[{@b Speed} ${ent.pace * 10} ft.]`
+					? `[{@b 速度} ${ent.pace * 10} 呎]`
 					: null,
 				entryTravelPaceNoteTitle: ent.pace != null
 					? VetoolsConfig.get("styleSwitcher", "style") === "classic"
@@ -13732,7 +13732,7 @@ Renderer.vehicle = class {
 				items: [
 					{
 						type: "item",
-						name: `Locomotion (${loc.mode})`,
+						name: `移動方式（${globalThis.ZH?.t?.(loc.mode) ?? loc.mode}）`,
 						entries: loc.entries,
 					},
 				],
@@ -13746,7 +13746,7 @@ Renderer.vehicle = class {
 				items: [
 					{
 						type: "item",
-						name: `Speed (${spd.mode})`,
+						name: `速度（${({air: "空中", water: "水上", land: "陸上"})[spd.mode] ?? spd.mode}）`,
 						entries: spd.entries,
 					},
 				],
@@ -13767,7 +13767,7 @@ Renderer.vehicle = class {
 					? `{@b Armor Class} ${entry.ac}`
 					: null,
 				entryHitPoints: entry.hp
-					? `{@b Hit Points} ${entry.hp}${isEach ? ` each` : ""}${entry.dt ? ` (damage threshold ${entry.dt})` : ""}${entry.hpNote ? `; ${entry.hpNote}` : ""}`
+					? `{@b Hit Points} ${entry.hp}${isEach ? `（每個）` : ""}${entry.dt ? `（傷害閾值 ${entry.dt}）` : ""}${entry.hpNote ? `; ${entry.hpNote}` : ""}`
 					: null,
 			};
 		}
@@ -13790,7 +13790,7 @@ Renderer.vehicle = class {
 		static getControlSection_ (renderer, control) {
 			if (!control) return "";
 			return `
-				<tr><td colspan="6"><h3 class="ve-stats__sect-header-inner">Control: ${control.name}</h3></td></tr>
+				<tr><td colspan="6"><h3 class="ve-stats__sect-header-inner">操控：${control.name_zh ?? control.name}</h3></td></tr>
 				<tr><td colspan="6" class="ve-stats__sect-row-inner">
 				${Renderer.vehicle.ship.getSectionHpPart_(renderer, control)}
 				<div class="ve-rd__b--1">${renderer.render({entries: control.entries})}</div>
@@ -13812,7 +13812,7 @@ Renderer.vehicle = class {
 			if (!move) return "";
 
 			return `
-				<tr><td colspan="6"><h3 class="ve-stats__sect-header-inner">${move.isControl ? `Control and ` : ""}Movement: ${move.name}</h3></td></tr>
+				<tr><td colspan="6"><h3 class="ve-stats__sect-header-inner">${move.isControl ? `操控與` : ""}移動：${move.name_zh ?? move.name}</h3></td></tr>
 				<tr><td colspan="6" class="ve-stats__sect-row-inner">
 				${Renderer.vehicle.ship.getSectionHpPart_(renderer, move)}
 				${(move.locomotion || []).map(entry => Renderer.vehicle.ship._getMovementSection_getLocomotionSection({renderer, entry})).join("")}
@@ -13823,7 +13823,7 @@ Renderer.vehicle = class {
 
 		static getWeaponSection_ (renderer, weap) {
 			return `
-				<tr><td colspan="6"><h3 class="ve-stats__sect-header-inner">Weapons: ${weap.name}${weap.count ? ` (${weap.count})` : ""}</h3></td></tr>
+				<tr><td colspan="6"><h3 class="ve-stats__sect-header-inner">武器：${weap.name_zh ?? weap.name}${weap.count ? `（${weap.count}）` : ""}</h3></td></tr>
 				<tr><td colspan="6" class="ve-stats__sect-row-inner">
 				${Renderer.vehicle.ship.getSectionHpPart_(renderer, weap, !!weap.count)}
 				${renderer.render({entries: weap.entries})}
@@ -13866,7 +13866,7 @@ Renderer.vehicle = class {
 					if (!pace) return null;
 
 					const asNum = Parser.vulgarToNumber(pace);
-					return `{@tip ${isMulti && mode !== "walk" ? `${mode} ` : ""}${pace} mph|${asNum * 24} miles per day}`;
+					return `{@tip ${isMulti && mode !== "walk" ? `${mode} ` : ""}時速 ${pace} 哩|每天 ${asNum * 24} 哩}`;
 				})
 				.filter(Boolean)
 				.join(", ");
@@ -13879,10 +13879,10 @@ Renderer.vehicle = class {
 
 			return {
 				entryAc: `{@b Armor Class:} ${ptAc}`,
-				entryCargo: `{@b Cargo:} ${ent.capCargo ? `${ent.capCargo} ton${ent.capCargo === 1 ? "" : "s"}` : "\u2014"}`,
+				entryCargo: `{@b 貨物：} ${ent.capCargo ? `${ent.capCargo} 噸` : "\u2014"}`,
 				entryHitPoints: `{@b Hit Points:} ${ent.hull?.hp ?? "\u2014"}`,
-				entryCrew: `{@b Crew:} ${ent.capCrew ?? "\u2014"}${ent.capCrewNote ? ` ${ent.capCrewNote}` : ""}`,
-				entryDamageThreshold: `{@b Damage Threshold:} ${ent.hull?.dt ?? "\u2014"}`,
+				entryCrew: `{@b 船員：} ${ent.capCrew ?? "\u2014"}${ent.capCrewNote ? ` ${ent.capCrewNote}` : ""}`,
+				entryDamageThreshold: `{@b 傷害閾值：} ${ent.hull?.dt ?? "\u2014"}`,
 				entryCost: `{@b Cost:} ${ent.cost != null ? Parser.vehicleCostToFull(ent) : "\u2014"}`,
 				entryPacePt: this._getRenderableEntriesMeta_getPtPace(ent),
 			};
@@ -13961,7 +13961,7 @@ Renderer.vehicle = class {
 						],
 						[
 							entryDamageThreshold,
-							`{@b Keel/Beam:} ${(ent.dimensions || ["\u2014"]).join("/")}`,
+							`{@b 龍骨長／船寬：} ${(ent.dimensions || ["\u2014"]).join("／").replace(/ ft\./g, " 呎")}`,
 						],
 						[
 							`{@b Speed:} ${ptSpeedPace}`,
@@ -13984,7 +13984,7 @@ Renderer.vehicle = class {
 			const isMultiple = entry.count != null && entry.count > 1;
 
 			return {
-				entryName: `${isMultiple ? `${entry.count} ` : ""}${entry.name}${entry.crew ? ` (Crew: ${entry.crew}${isMultiple ? " each" : ""})` : ""}`,
+				entryName: `${isMultiple ? `${entry.count} ` : ""}${entry.name_zh ?? entry.name}${entry.crew ? `（船員：${isMultiple ? "各 " : ""}${entry.crew}）` : ""}`,
 			};
 		}
 
@@ -14139,13 +14139,13 @@ Renderer.vehicle = class {
 
 	static getShipCreatureCapacity (veh) {
 		return [
-			veh.capCrew ? `${veh.capCrew} crew` : null,
-			veh.capPassenger ? `${veh.capPassenger} passenger${veh.capPassenger === 1 ? "" : "s"}` : null,
-		].filter(Boolean).join(", ");
+			veh.capCrew ? `${veh.capCrew} 名船員` : null,
+			veh.capPassenger ? `${veh.capPassenger} 名乘客` : null,
+		].filter(Boolean).join("、");
 	}
 
 	static getShipCargoCapacity (veh) {
-		return typeof veh.capCargo === "string" ? veh.capCargo : `${veh.capCargo} ton${veh.capCargo === 1 ? "" : "s"}`;
+		return typeof veh.capCargo === "string" ? veh.capCargo : `${veh.capCargo} 噸`;
 	}
 
 	static _getRenderedString_spelljammer (veh, opts) {
@@ -14188,22 +14188,22 @@ Renderer.vehicle = class {
 			const dexMod = Parser.getAbilityModNumber(ent.dex);
 
 			const ptDtMt = [
-				ent.hp.dt != null ? `damage threshold ${ent.hp.dt}` : null,
-				ent.hp.mt != null ? `mishap threshold ${ent.hp.mt}` : null,
+				ent.hp.dt != null ? `傷害閾值 ${ent.hp.dt}` : null,
+				ent.hp.mt != null ? `事故閾值 ${ent.hp.mt}` : null,
 			]
 				.filter(Boolean)
-				.join(", ");
+				.join("、");
 
-			const ptAc = ent.ac ?? dexMod === 0 ? `19` : `${19 + dexMod} (19 while motionless)`;
+			const ptAc = ent.ac ?? dexMod === 0 ? `19` : `${19 + dexMod}（靜止時 19）`;
 
 			return {
-				entrySizeWeight: `{@i ${Parser.sizeAbvToFull(ent.size)} vehicle (${ent.weight.toLocaleStringVe()} lb.)}`,
-				entryCreatureCapacity: `{@b Creature Capacity} ${Renderer.vehicle.getInfwarCreatureCapacity(ent)}`,
-				entryCargoCapacity: `{@b Cargo Capacity} ${Parser.weightToFull(ent.capCargo)}`,
+				entrySizeWeight: `{@i ${(sz => ({T: "微型", S: "小型", M: "中型", L: "大型", H: "巨型", G: "超巨型"})[sz] ?? Parser.sizeAbvToFull(sz))(ent.size)}載具（${ent.weight.toLocaleStringVe()} 磅）}`,
+				entryCreatureCapacity: `{@b 生物容量} ${Renderer.vehicle.getInfwarCreatureCapacity(ent)}`,
+				entryCargoCapacity: `{@b 載貨容量} ${Parser.weightToFull(ent.capCargo)}`,
 				entryArmorClass: `{@b Armor Class} ${ptAc}`,
 				entryHitPoints: `{@b Hit Points} ${ent.hp.hp}${ptDtMt ? ` (${ptDtMt})` : ""}`,
 				entrySpeed: `{@b Speed} ${ent.speed} ft.`,
-				entrySpeedNote: `[{@b Travel Pace} ${Math.floor(ent.speed / 10)} miles per hour (${Math.floor(ent.speed * 24 / 10)} miles per day)]`,
+				entrySpeedNote: `[{@b 旅行速度} 每小時 ${Math.floor(ent.speed / 10)} 哩（每天 ${Math.floor(ent.speed * 24 / 10)} 哩）]`,
 				entrySpeedNoteTitle: VetoolsConfig.get("styleSwitcher", "style") === "classic"
 					? `Based on "Special Travel Pace," ${Parser.sourceJsonToAbv(Parser.SRC_DMG)} p242`
 					: `Based on "Travel Pace," ${Parser.sourceJsonToAbv(Parser.SRC_XDMG)} p39`,
@@ -14221,7 +14221,7 @@ Renderer.vehicle = class {
 		const ptActionStation = Renderer.monster.getCompactRenderedStringSection({
 			ent,
 			renderer,
-			title: "Action Stations",
+			title: "動作崗位",
 			key: "actionStation",
 			depth: 2,
 			styleHint: opts.styleHint,
@@ -14252,7 +14252,7 @@ Renderer.vehicle = class {
 	}
 
 	static getInfwarCreatureCapacity (veh) {
-		return `${veh.capCreature} Medium creatures`;
+		return `${veh.capCreature} 個中型生物`;
 	}
 
 	static pGetFluff (veh) {

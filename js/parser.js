@@ -3090,22 +3090,7 @@ Parser.ruleTypeToFull = function (ruleType) {
 	return Parser._parse_aToB(Parser.RULE_TYPE_TO_FULL, ruleType);
 };
 
-Parser.VEHICLE_TYPE_TO_FULL = {
-	"SHIP": "Ship",
-	"SPELLJAMMER": "Spelljammer Ship",
-	"ELEMENTAL_AIRSHIP": "Elemental Airship",
-	"INFWAR": "Infernal War Machine",
-	"CREATURE": "Creature",
-	"OBJECT": "Object",
-	"SHP:H": "Ship Upgrade, Hull",
-	"SHP:M": "Ship Upgrade, Movement",
-	"SHP:W": "Ship Upgrade, Weapon",
-	"SHP:F": "Ship Upgrade, Figurehead",
-	"SHP:O": "Ship Upgrade, Miscellaneous",
-	"IWM:W": "Infernal War Machine Variant, Weapon",
-	"IWM:A": "Infernal War Machine Upgrade, Armor",
-	"IWM:G": "Infernal War Machine Upgrade, Gadget",
-};
+Parser.VEHICLE_TYPE_TO_FULL = {"SHIP":"船隻","SPELLJAMMER":"魔法航行船","ELEMENTAL_AIRSHIP":"元素飛空艇","INFWAR":"煉獄戰爭機器","CREATURE":"生物","OBJECT":"物件","SHP:H":"船隻升級：船身","SHP:M":"船隻升級：移動","SHP:W":"船隻升級：武器","SHP:F":"船隻升級：船艏像","SHP:O":"船隻升級：其他","IWM:W":"煉獄戰爭機器變體：武器","IWM:A":"煉獄戰爭機器升級：裝甲","IWM:G":"煉獄戰爭機器升級：機關"};
 
 Parser.vehicleTypeToFull = function (vehicleType) {
 	return Parser._parse_aToB(Parser.VEHICLE_TYPE_TO_FULL, vehicleType);
