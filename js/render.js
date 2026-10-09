@@ -8358,11 +8358,11 @@ Renderer.optionalfeature = class {
 Renderer.reward = class {
 	static getRewardRenderableEntriesMeta (ent) {
 		const ptSubtitle = [
-			(ent.type || "").toTitleCase(),
-			ent.rarity ? ent.rarity.toTitleCase() : "",
+			globalThis.ZH?.t?.(ent.type || "") ?? (ent.type || "").toTitleCase(),
+			ent.rarity ? (globalThis.ZH?.t?.(ent.rarity.toTitleCase()) ?? ent.rarity.toTitleCase()) : "",
 		]
 			.filter(Boolean)
-			.join(", ");
+			.join("、");
 
 		return {
 			entriesContent: [
