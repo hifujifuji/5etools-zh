@@ -57,7 +57,7 @@ export const PREREQ = [
 
 			const ent = \`Ability to use \${ptScf} as a \${ptScfSuffix}\`;`,
 		`					if (!this._SCF_TYPE_TO_NAME[scf]) return this.__zhScf[scf] ?? scf;
-					return \`{@item \${this._SCF_TYPE_TO_NAME[scf].replace("’", "'")}\${styleHint === "classic" ? "" : "|XPHB"}|\${this.__zhScf[scf] ?? ""}}\`;
+					return \`{@item \${this._SCF_TYPE_TO_NAME[scf].replace("’", "'")}\${styleHint === "classic" ? "|" : "|XPHB"}|\${this.__zhScf[scf] ?? ""}}\`;
 				})
 				.joinConjunct("、", "或").replace(/、或/g, "或");
 

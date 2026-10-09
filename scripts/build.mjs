@@ -293,7 +293,7 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 // ---- 3a'. 種族／背景／專長中完全比對的句子（含 _copy、_versions；i18n/exact-strings.json） --------
 {
 	const ex = readI18n(path.join(I18N, "exact-strings.json"));
-	const PROPS = new Set(["race", "subrace", "background", "feat", "raceFluff", "backgroundFluff", "variantrule", "item", "card", "deck", "classFeature", "trap", "hazard", "object", "charoption", "facility", "reward"]);
+	const PROPS = new Set(["race", "subrace", "background", "feat", "raceFluff", "backgroundFluff", "variantrule", "item", "card", "deck", "classFeature", "trap", "hazard", "object", "charoption", "facility", "reward", "optionalfeature"]);
 	// name 只在「巢狀的條目」（有 entries）裡翻；replace／names 等是 _copy 用來比對的鍵，不能動
 	// _copy 裡的條目名稱會被後續的 _copy 用來比對，一律不翻
 	const walk = (v, depth = 0, inCopy = false) => {
@@ -372,6 +372,13 @@ for (const {json} of loaded) {
 		}
 	}
 }
+// 標籤顯示名後備表（i18n/tag-names.json）：實體還沒有中文名時使用
+for (const [k, zh] of Object.entries(readI18n(path.join(I18N, "tag-names.json")))) {
+	if (k.startsWith("_") || tagNames.has(k)) continue;
+	tagNames.set(k, zh);
+	const k2 = k.split("|").slice(0, 2).join("|");
+	if (!tagNames.has(k2)) tagNames.set(k2, zh);
+}
 // 語言標籤（語言實體沒有中文名時的後備）
 for (const [en, zh] of Object.entries({
 	Common: "通用語", Dwarvish: "矮人語", Elvish: "精靈語", Giant: "巨人語", Gnomish: "地侏語", Goblin: "哥布林語", Halfling: "半身人語", Orc: "獸人語",
@@ -385,8 +392,35 @@ for (const {json} of loaded) for (const m of json.monster || []) {
 	const zh = tagNames.get(`spell|${n.toLowerCase()}|${S(src || "PHB")}`) ?? tagNames.get(`spell|${n.toLowerCase()}`);
 	if (zh) m.summonedBySpell = `${n}|${src || ""}|${zh}`;
 }
+// 先決條件裡的專長／選用特性連結（"name|source|顯示"）補上中文顯示名；括號內的變體（nuitari、fire strike…）一併翻
+{
+	const PAREN = {
+		nuitari: "努塔瑞", lunitari: "盧尼塔瑞", solinari: "索林那瑞",
+		"lawful outer plane": "守序外層位面", "chaotic outer plane": "混亂外層位面", "good outer plane": "善良外層位面", "evil outer plane": "邪惡外層位面", "the outlands": "外域",
+		"cloud strike": "雲之擊", "fire strike": "火之擊", "frost strike": "霜之擊", "hill strike": "丘之擊", "stone strike": "石之擊", "storm strike": "風暴之擊",
+	};
+	let n = 0;
+	for (const {json} of loaded) for (const arr of Object.values(json)) {
+		if (!Array.isArray(arr)) continue;
+		for (const e of arr) for (const pr of Array.isArray(e?.prerequisite) ? e.prerequisite : []) for (const [k, tag] of [["feat", "feat"], ["optionalfeature", "optfeature"]]) {
+			if (!pr || !Array.isArray(pr[k])) continue;
+			pr[k] = pr[k].map(uid => {
+				if (typeof uid !== "string") return uid;
+				const [nm, src, disp] = uid.split("|");
+				if (disp && hasCjk(disp)) return uid;
+				const zh = tagNames.get(`${tag}|${nm.toLowerCase()}|${S(src)}`) ?? tagNames.get(`${tag}|${nm.toLowerCase()}`);
+				if (!zh) return uid;
+				const m = /\(([^)]+)\)\s*$/.exec(disp || "");
+				++n;
+				return `${nm}|${src || ""}|${zh}${m ? `（${PAREN[m[1].toLowerCase()] ?? m[1]}）` : ""}`;
+			});
+		}
+	}
+	console.log(`先決條件連結補中文名：${n} 處`);
+}
 let nTagDisplay = 0;
 const RE_TAG = /\{@(\w+) ([^{}]*)\}/g;
+const tagTokens = t => t.toLowerCase().replace(/[,()]/g, " ").split(/\s+/).filter(Boolean).map(w => w.replace(/(?<=[a-z]{3})s$/, "")).sort().join(" ");
 const fillTags = (str, isOverrideEn = false) => str.replace(RE_TAG, (m, tag, body) => {
 	const parts = body.split("|");
 	if (tag === "card") {
@@ -399,9 +433,17 @@ const fillTags = (str, isOverrideEn = false) => str.replace(RE_TAG, (m, tag, bod
 		return `{@card ${parts.join("|")}}`;
 	}
 	// 已有顯示文字就保留；但「只有標籤」的字串裡的英文顯示文字（如 Bottle, Glass）可以換成中文
-	if ((parts[2] && !(isOverrideEn && !hasCjk(parts[2]) && !/\d/.test(parts[2]) && parts.length === 3)) || hasCjk(parts[0])) return m;
+	// 顯示文字只是英文名的變體（Wand of the War Mage +1、Shield, +2、複數）時也換成中文
+	const isNameVariant = parts[2] && parts.length === 3 && !hasCjk(parts[2]) && tagTokens(parts[2]) === tagTokens(parts[0]);
+	if ((parts[2] && !isNameVariant && !(isOverrideEn && !hasCjk(parts[2]) && !/\d/.test(parts[2]) && parts.length === 3)) || hasCjk(parts[0])) return m;
 	const lc = parts[0].trim().toLowerCase();
-	const zh = tagNames.get(`${tag}|${lc}|${S(parts[1])}`) ?? tagNames.get(`${tag}|${lc}`);
+	let zh = tagNames.get(`${tag}|${lc}|${S(parts[1])}`) ?? tagNames.get(`${tag}|${lc}`);
+	// 「+N 基礎物品」沒有自己的中文名時，用基礎物品的中文名組出來
+	if (!zh && tag === "item") {
+		const mPlus = /^\+(\d) (.+)$/.exec(lc);
+		const zhBase = mPlus && (tagNames.get(`item|${mPlus[2]}|${S(parts[1])}`) ?? tagNames.get(`item|${mPlus[2]}`));
+		if (zhBase) zh = `+${mPlus[1]} ${zhBase}`;
+	}
 	if (!zh) return m;
 	while (parts.length < 2) parts.push("");
 	parts[2] = zh;
