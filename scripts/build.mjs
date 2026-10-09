@@ -418,6 +418,25 @@ for (const {json} of loaded) for (const m of json.monster || []) {
 	}
 	console.log(`先決條件連結補中文名：${n} 處`);
 }
+// 物品群組的成員清單（itemGroup.items）是物品 UID，不能翻；還原成上游的值，再補上第三欄中文顯示名
+{
+	const upGroups = readJson(path.join(UPSTREAM, "data", "items.json")).itemGroup || [];
+	const byKey = new Map(upGroups.map(g => [`${g.name}|${S(g.source)}`, g.items]));
+	let n = 0;
+	for (const {json} of loaded) for (const g of json.itemGroup || []) {
+		const orig = byKey.get(`${g.name}|${S(g.source)}`);
+		if (!orig) continue;
+		g.items = orig.map(uid => {
+			if (typeof uid !== "string") return uid;
+			const [nm, src] = uid.split("|");
+			const zh = tagNames.get(`item|${nm.toLowerCase()}|${S(src || g.source)}`) ?? tagNames.get(`item|${nm.toLowerCase()}`);
+			if (!zh) return uid;
+			++n;
+			return `${nm}|${src || ""}|${zh}`;
+		});
+	}
+	console.log(`物品群組成員補中文名：${n} 處`);
+}
 let nTagDisplay = 0;
 const RE_TAG = /\{@(\w+) ([^{}]*)\}/g;
 const tagTokens = t => t.toLowerCase().replace(/[,()]/g, " ").split(/\s+/).filter(Boolean).map(w => w.replace(/(?<=[a-z]{3})s$/, "")).sort().join(" ");

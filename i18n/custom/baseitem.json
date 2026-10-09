@@ -1,4 +1,107 @@
 {
+	"Alchemist's Supplies|PHB": {
+		"name": "煉金師設備",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 79
+			}
+		],
+		"referenceSources": [
+			"TTP",
+			"WDMM",
+			"OoW",
+			"IMR",
+			"SCC-ARiR",
+			"JttRC",
+			"KftGV",
+			"PaBTSO",
+			"TftYP-TSC",
+			"ToA",
+			"RtG"
+		],
+		"reprintedAs": [
+			"Alchemist's Supplies|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 8,
+		"value": 5000,
+		"additionalEntries": [
+			"煉金師設備讓角色能調製有用的藥劑，例如強酸或煉金火。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"煉金師設備包括兩個玻璃燒杯、一個能把燒杯固定在明火上的金屬架、一根玻璃攪拌棒、一組小型研缽與杵，以及一袋常見的煉金材料，包括鹽、鐵粉與純水。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "奧秘",
+				"entries": [
+					"熟練煉金師設備讓你在涉及藥水與類似材料的{@skill Arcana}檢定中得知更多資訊。"
+				],
+				"ENG_name": "Arcana"
+			},
+			{
+				"type": "entries",
+				"name": "調查",
+				"entries": [
+					"當你檢查一處區域尋找線索時，熟練煉金師設備讓你對該區域可能使用過的任何化學藥劑或其他物質有額外的洞察。"
+				],
+				"ENG_name": "Investigation"
+			},
+			{
+				"type": "entries",
+				"name": "煉金製作",
+				"entries": [
+					"你可以用這項工具熟練製作煉金物品。角色可以花錢蒐集原料，每花費 50 gp 的原料重 1 磅。DM 可以允許角色以所示技能進行檢定時具有優勢。作為長休的一部分，你可以用煉金師設備製作一劑{@item acid (vial)|phb|強酸}、{@item alchemist's fire (flask)|phb|煉金火}、{@item antitoxin (vial)|phb|解毒劑}、{@item oil (flask)|phb|油}、{@item perfume (vial)|phb|香水}或{@item soap|phb}。從你攜帶的原料總 gp 價值中扣除所製物品價值的一半。"
+				],
+				"ENG_name": "Alchemical Crafting"
+			},
+			{
+				"type": "table",
+				"caption": "煉金師設備",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"製造一陣濃煙",
+						"10"
+					],
+					[
+						"辨識毒素",
+						"10"
+					],
+					[
+						"辨識物質",
+						"15"
+					],
+					[
+						"生火",
+						"15"
+					],
+					[
+						"中和強酸",
+						"20"
+					]
+				]
+			}
+		],
+		"ENG_name": "Alchemist's Supplies"
+	},
 	"Alchemist's Supplies|XPHB": {
 		"name": "煉金師設備",
 		"source": "XPHB",
@@ -152,6 +255,17 @@
 		"hasFluffImages": true,
 		"ENG_name": "Battleaxe"
 	},
+	"Birdpipes|SCAG": {
+		"name": "鳥笛",
+		"source": "SCAG",
+		"page": 124,
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"排笛或薩特笛，又稱蕭姆笛，是{@deity Lliira|Faerûnian|scag}的聖物，深受木精靈與野精靈吟遊詩人喜愛。"
+		],
+		"ENG_name": "Birdpipes"
+	},
 	"Blowgun|XPHB": {
 		"name": "吹箭筒",
 		"source": "XPHB",
@@ -239,6 +353,96 @@
 		"hasFluffImages": true,
 		"ENG_name": "Breastplate"
 	},
+	"Brewer's Supplies|PHB": {
+		"name": "釀酒師設備",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 79
+			}
+		],
+		"reprintedAs": [
+			"Brewer's Supplies|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 9,
+		"value": 2000,
+		"additionalEntries": [
+			"釀造是生產啤酒的技藝。啤酒不僅是一種酒精飲料，釀造的過程還能淨化水。製作啤酒需要數週的發酵，但只需要幾個小時的工作。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"釀酒師設備包括一個大玻璃壺、若干啤酒花、一根虹吸管，以及數呎長的管子。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "歷史",
+				"entries": [
+					"熟練釀酒師設備讓你在與酒有重大關聯的事件相關的智力（{@skill History}）檢定上有額外的洞察。"
+				],
+				"ENG_name": "History"
+			},
+			{
+				"type": "entries",
+				"name": "醫藥",
+				"entries": [
+					"當你治療任何酒精中毒的人，或能以酒精來減輕疼痛時，此工具熟練給予你額外的洞察。"
+				],
+				"ENG_name": "Medicine"
+			},
+			{
+				"type": "entries",
+				"name": "說服",
+				"entries": [
+					"一杯烈酒能軟化最硬的心腸。你對釀酒師設備的熟練能幫你勸人喝酒，讓對方喝下恰到好處的酒量來緩和情緒。"
+				],
+				"ENG_name": "Persuasion"
+			},
+			{
+				"type": "entries",
+				"name": "飲用水",
+				"entries": [
+					"你的釀造知識讓你能淨化原本無法飲用的水。作為長休的一部分，你可以淨化至多 6 加侖的水；作為短休的一部分則可淨化 1 加侖。"
+				],
+				"ENG_name": "Potable Water"
+			},
+			{
+				"type": "table",
+				"caption": "釀酒師設備",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"偵測飲料中的毒素或雜質",
+						"10"
+					],
+					[
+						"辨識酒類",
+						"15"
+					],
+					[
+						"無視酒精的效果",
+						"20"
+					]
+				]
+			}
+		],
+		"ENG_name": "Brewer's Supplies"
+	},
 	"Brewer's Supplies|XPHB": {
 		"name": "釀酒師設備",
 		"source": "XPHB",
@@ -287,6 +491,101 @@
 		],
 		"ENG_name": "Brewer's Supplies"
 	},
+	"Calligrapher's Supplies|PHB": {
+		"name": "書法家設備",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 79
+			}
+		],
+		"referenceSources": [
+			"BGDIA",
+			"IMR",
+			"CM",
+			"KftGV",
+			"ToFW",
+			"SCC-HfMT",
+			"PaBTSO"
+		],
+		"reprintedAs": [
+			"Calligrapher's Supplies|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 5,
+		"value": 1000,
+		"additionalEntries": [
+			"書法將書寫視為一門精緻而美麗的藝術。書法家寫出賞心悅目的文字，其風格難以偽造。他們的用品也讓他們有一定的能力檢查文字並判斷其是否真實，因為書法家的訓練包括長時間研究書寫，並嘗試複製其風格與設計。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"書法家設備包括墨水、十二張羊皮紙與三支羽毛筆。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "奧秘",
+				"entries": [
+					"雖然書法對解讀魔法文字的內容幫助不大，但具有這些用品的熟練，能協助辨識一段魔法性質文字的書寫者。"
+				],
+				"ENG_name": "Arcana"
+			},
+			{
+				"type": "entries",
+				"name": "歷史",
+				"entries": [
+					"此工具熟練能增強為了分析或調查古代文字、卷軸或其他文本（包括刻在石頭上的符文，或壁畫與其他展示品中的訊息）而進行之成功檢定的好處。"
+				],
+				"ENG_name": "History"
+			},
+			{
+				"type": "entries",
+				"name": "解讀藏寶圖",
+				"entries": [
+					"此工具熟練讓你在檢查地圖上具有專長。你可以進行一次智力檢定，以判斷地圖的年代、地圖是否包含任何隱藏的訊息，或類似的事實。"
+				],
+				"ENG_name": "Decipher Treasure Map"
+			},
+			{
+				"type": "table",
+				"caption": "書法家設備",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-6",
+					"col-6"
+				],
+				"rows": [
+					[
+						"辨識非魔法文字的書寫者",
+						"10"
+					],
+					[
+						"判斷書寫者的心理狀態",
+						"15"
+					],
+					[
+						"識破偽造的文字",
+						"15"
+					],
+					[
+						"偽造簽名",
+						"20"
+					]
+				]
+			}
+		],
+		"ENG_name": "Calligrapher's Supplies"
+	},
 	"Calligrapher's Supplies|XPHB": {
 		"name": "書法家設備",
 		"source": "XPHB",
@@ -331,6 +630,119 @@
 		],
 		"ENG_name": "Calligrapher's Supplies"
 	},
+	"Carpenter's Tools|PHB": {
+		"name": "木匠工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 80
+			}
+		],
+		"referenceSources": [
+			"OoW"
+		],
+		"reprintedAs": [
+			"Carpenter's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 6,
+		"value": 800,
+		"additionalEntries": [
+			"木工技術讓角色能建造木造結構。木匠可以建造房屋、棚屋、木櫃或類似的物品。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"木匠工具包括鋸子、鎚子、釘子、手斧、角尺、直尺、錛子、刨子與鑿子。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "歷史",
+				"entries": [
+					"此工具熟練幫助你辨識木造建築與其他大型木製物件的用途與來源。"
+				],
+				"ENG_name": "History"
+			},
+			{
+				"type": "entries",
+				"name": "調查",
+				"entries": [
+					"在檢查木造結構內的區域時，你會獲得額外的洞察，因為你知道能將區域隱藏起來、不被發現的建築技巧。"
+				],
+				"ENG_name": "Investigation"
+			},
+			{
+				"type": "entries",
+				"name": "感知",
+				"entries": [
+					"你能發現木牆或木地板中的不規則之處，讓你更容易找到活板門與秘密通道。"
+				],
+				"ENG_name": "Perception"
+			},
+			{
+				"type": "entries",
+				"name": "隱匿",
+				"entries": [
+					"你能迅速評估木地板的弱點，讓你更容易避開踩上去會嘎吱作響的地方。"
+				],
+				"ENG_name": "Stealth"
+			},
+			{
+				"type": "entries",
+				"name": "加固",
+				"entries": [
+					"只要 1 分鐘的工作與原料，你就能讓門或窗戶更難被強行打開。將打開它所需的 DC 提高 5。"
+				],
+				"ENG_name": "Fortify"
+			},
+			{
+				"type": "entries",
+				"name": "臨時庇護所",
+				"entries": [
+					"作為長休的一部分，你可以搭建一個單坡棚或類似的遮蔽處，在休息期間讓你的團體保持乾燥並遮蔭。由於它是用手邊任何可用的木材迅速搭建而成，這個遮蔽處會在搭建後 {@dice 1d3} 天倒塌。"
+				],
+				"ENG_name": "Temporary Shelter"
+			},
+			{
+				"type": "table",
+				"caption": "木匠工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"建造簡單的木造結構",
+						"10"
+					],
+					[
+						"設計複雜的木造結構",
+						"15"
+					],
+					[
+						"找出木牆的弱點",
+						"15"
+					],
+					[
+						"撬開門",
+						"20"
+					]
+				]
+			}
+		],
+		"ENG_name": "Carpenter's Tools"
+	},
 	"Carpenter's Tools|XPHB": {
 		"name": "木匠工具",
 		"source": "XPHB",
@@ -374,6 +786,106 @@
 			}
 		],
 		"ENG_name": "Carpenter's Tools"
+	},
+	"Cartographer's Tools|PHB": {
+		"name": "制圖師工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 80
+			}
+		],
+		"referenceSources": [
+			"ToA",
+			"PaBTSO",
+			"DoSI",
+			"KftGV"
+		],
+		"reprintedAs": [
+			"Cartographer's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 6,
+		"value": 1500,
+		"additionalEntries": [
+			"使用制圖師工具，你可以繪製精確的地圖，讓你自己與後來的人旅行起來更輕鬆。這些地圖小至呈現地城某一層格局的平面圖，大至描繪山脈的大比例尺地圖。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"制圖師工具包括一支羽毛筆、墨水、羊皮紙、一副圓規、卡尺與一把直尺。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "奧秘、歷史、宗教",
+				"entries": [
+					"使用這些技能時，你可以運用你對地圖與地點的知識挖掘出更詳細的資訊。例如，你可能發現地圖中隱藏的訊息、辨識地圖繪製的時間以判斷地理特徵自那時起是否有所改變等等。"
+				],
+				"ENG_name": "Arcana, History, Religion"
+			},
+			{
+				"type": "entries",
+				"name": "自然",
+				"entries": [
+					"你對自然地理的熟悉，讓你更容易回答與周遭地形有關的問題或解決相關的難題。"
+				],
+				"ENG_name": "Nature"
+			},
+			{
+				"type": "entries",
+				"name": "求生",
+				"entries": [
+					"你對地理的理解，讓你更容易找到通往文明的道路、預測可能找到村莊或城鎮的地區，並避免迷路。你研究過如此多的地圖，以至於常見的模式，例如貿易路線如何演變，以及聚落相對於地理位置在何處出現，對你而言都很熟悉。"
+				],
+				"ENG_name": "Survival"
+			},
+			{
+				"type": "entries",
+				"name": "繪製地圖",
+				"entries": [
+					"旅行時，你可以在從事其他活動的同時邊走邊畫地圖。"
+				],
+				"ENG_name": "Craft a Map"
+			},
+			{
+				"type": "table",
+				"caption": "制圖師工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"判斷地圖的年代與來源",
+						"10"
+					],
+					[
+						"估計到某地標的方向與距離",
+						"15"
+					],
+					[
+						"識破地圖是假的",
+						"15"
+					],
+					[
+						"補完地圖缺失的部分",
+						"20"
+					]
+				]
+			}
+		],
+		"ENG_name": "Cartographer's Tools"
 	},
 	"Cartographer's Tools|XPHB": {
 		"name": "制圖師工具",
@@ -478,6 +990,92 @@
 		"hasFluffImages": true,
 		"ENG_name": "Club"
 	},
+	"Cobbler's Tools|PHB": {
+		"name": "鞋匠工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 80
+			}
+		],
+		"reprintedAs": [
+			"Cobbler's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 5,
+		"value": 500,
+		"additionalEntries": [
+			"雖然鞋匠這一行對冒險者而言可能顯得太過卑微，但一雙好靴子能讓角色穿越崎嶇的荒野與致命的地城。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"鞋匠工具包括鎚子、錐子、刀、鞋架、裁刀、備用皮革與線。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "奧秘、歷史",
+				"entries": [
+					"你對鞋子的知識幫助你辨識附魔靴子的魔法特性或這類物品的歷史。"
+				],
+				"ENG_name": "Arcana, History"
+			},
+			{
+				"type": "entries",
+				"name": "調查",
+				"entries": [
+					"鞋子藏有數量驚人的秘密。藉由檢查某人鞋子上的磨損與累積的泥土，你可以得知他們最近去過哪裡。你修鞋的經驗讓你更容易辨識損傷可能來自何處。"
+				],
+				"ENG_name": "Investigation"
+			},
+			{
+				"type": "entries",
+				"name": "保養鞋子",
+				"entries": [
+					"作為長休的一部分，你可以修理同伴的鞋子。在接下來的 24 小時內，至多六個由你選擇、穿著你修過之鞋子的生物，每天可以旅行至多 10 小時，而不需要為了避免{@condition exhaustion}而進行豁免檢定。"
+				],
+				"ENG_name": "Maintain Shoes"
+			},
+			{
+				"type": "entries",
+				"name": "製作暗格",
+				"entries": [
+					"只要 8 小時的工作，你就能在一雙鞋子中加入一個暗格。暗格可以容納長至多 3 吋、寬與深至多 1 吋的物件。你使用你的工具熟練進行一次智力檢定，以決定找到暗格所需的智力（{@skill Investigation}）檢定 DC。"
+				],
+				"ENG_name": "Craft Hidden Compartment"
+			},
+			{
+				"type": "table",
+				"caption": "鞋匠工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"判斷鞋子的年代與來源",
+						"10"
+					],
+					[
+						"找出靴跟中的暗格",
+						"15"
+					]
+				]
+			}
+		],
+		"ENG_name": "Cobbler's Tools"
+	},
 	"Cobbler's Tools|XPHB": {
 		"name": "鞋匠工具",
 		"source": "XPHB",
@@ -524,6 +1122,100 @@
 			}
 		],
 		"ENG_name": "Cobbler's Tools"
+	},
+	"Cook's Utensils|PHB": {
+		"name": "廚師炊具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 80
+			}
+		],
+		"reprintedAs": [
+			"Cook's Utensils|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 8,
+		"value": 100,
+		"additionalEntries": [
+			"冒險是艱苦的生活。有廚師一同旅行，你的餐點會比一般的硬餅乾與果乾組合好得多。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"廚師炊具包括一口金屬鍋、刀、叉、攪拌匙與長柄勺。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "歷史",
+				"entries": [
+					"你對烹飪技巧的知識，讓你能評估一個文化的飲食習慣中所涉及的社會模式。"
+				],
+				"ENG_name": "History"
+			},
+			{
+				"type": "entries",
+				"name": "醫藥",
+				"entries": [
+					"在施予治療時，你可以將苦澀或酸澀的藥物變成可口的調合物。"
+				],
+				"ENG_name": "Medicine"
+			},
+			{
+				"type": "entries",
+				"name": "求生",
+				"entries": [
+					"在覓食時，你可以利用自己搜刮到、其他人無法做成營養餐點的食材將就一番。"
+				],
+				"ENG_name": "Survival"
+			},
+			{
+				"type": "entries",
+				"name": "準備餐點",
+				"entries": [
+					"作為短休的一部分，你可以準備一頓美味的餐點，幫助同伴恢復體力。只要你手邊有廚師炊具與足夠的食物，你與至多五個由你選擇的生物在短休期間每消耗一顆生命骰，就額外恢復 1 點生命值。"
+				],
+				"ENG_name": "Prepare Meals"
+			},
+			{
+				"type": "table",
+				"caption": "廚師炊具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"製作一般的餐點",
+						"10"
+					],
+					[
+						"複製一道餐點",
+						"10"
+					],
+					[
+						"發現食物中的毒素或雜質",
+						"15"
+					],
+					[
+						"製作美食佳餚",
+						"15"
+					]
+				]
+			}
+		],
+		"ENG_name": "Cook's Utensils"
 	},
 	"Cook's Utensils|XPHB": {
 		"name": "廚師炊具",
@@ -645,6 +1337,36 @@
 		"weapon": true,
 		"hasFluffImages": true,
 		"ENG_name": "Dart"
+	},
+	"Double-Bladed Scimitar|ERLW": {
+		"name": "雙刃彎刀",
+		"source": "ERLW",
+		"page": 21,
+		"type": "M",
+		"rarity": "none",
+		"weight": 6,
+		"value": 10000,
+		"weaponCategory": "martial",
+		"property": [
+			"S",
+			"2H"
+		],
+		"dmg1": "2d4",
+		"dmgType": "S",
+		"sword": true,
+		"weapon": true,
+		"entries": [
+			{
+				"type": "entries",
+				"name": "特殊",
+				"entries": [
+					"若你在你的回合以雙刃彎刀進行攻擊作為{@action Attack}動作的一部分，你可以緊接著用一個附贈動作以它進行一次近戰攻擊。這次攻擊命中時造成 {@damage 1d4} 點劈砍傷害，而非 {@damage 2d4}。"
+				],
+				"ENG_name": "Special"
+			}
+		],
+		"hasFluff": true,
+		"ENG_name": "Double-Bladed Scimitar"
 	},
 	"Drum|XPHB": {
 		"name": "鼓",
@@ -853,6 +1575,87 @@
 		"hasFluffImages": true,
 		"ENG_name": "Glaive"
 	},
+	"Glassblower's Tools|PHB": {
+		"name": "玻璃匠工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 82
+			}
+		],
+		"referenceSources": [
+			"IMR"
+		],
+		"reprintedAs": [
+			"Glassblower's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 5,
+		"value": 3000,
+		"additionalEntries": [
+			"熟練玻璃匠工具的人不只有塑造玻璃的能力，也具備製作玻璃物件所用工法的專門知識。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"這些工具包括吹管、一塊小滾料板、墊塊與鑷子。你需要熱源才能加工玻璃。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "奧秘、歷史",
+				"entries": [
+					"你對玻璃製作技術的知識，在你檢查玻璃物件時能提供幫助，例如藥水瓶或在寶藏中找到的玻璃物品。例如，你可以研究玻璃藥水瓶如何被其內容物改變，以幫助判斷藥水的效果。（藥水可能會留下殘留物、使玻璃變形或留下污漬。）"
+				],
+				"ENG_name": "Arcana, History"
+			},
+			{
+				"type": "entries",
+				"name": "調查",
+				"entries": [
+					"在你研究某個區域時，若線索包括碎玻璃或玻璃物件，你的知識能提供幫助。"
+				],
+				"ENG_name": "Investigation"
+			},
+			{
+				"type": "entries",
+				"name": "識別弱點",
+				"entries": [
+					"只要研究 1 分鐘，你就能辨識出玻璃物件的弱點。藉由擊中弱點而對該物件造成的任何傷害都會加倍。"
+				],
+				"ENG_name": "Identify Weakness"
+			},
+			{
+				"type": "table",
+				"caption": "玻璃匠工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"辨識玻璃的來源",
+						"10"
+					],
+					[
+						"判斷玻璃物件曾經裝過什麼",
+						"20"
+					]
+				]
+			}
+		],
+		"ENG_name": "Glassblower's Tools"
+	},
 	"Glassblower's Tools|XPHB": {
 		"name": "玻璃匠工具",
 		"source": "XPHB",
@@ -899,6 +1702,17 @@
 			}
 		],
 		"ENG_name": "Glassblower's Tools"
+	},
+	"Glaur|SCAG": {
+		"name": "格勞爾號",
+		"source": "SCAG",
+		"page": 124,
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"形如豐饒角的彎短號角。有活塞的格勞爾號音色像小號，沒有活塞的則稱為格隆號，音色較為哀戚。"
+		],
+		"ENG_name": "Glaur"
 	},
 	"Greataxe|XPHB": {
 		"name": "巨斧",
@@ -1056,6 +1870,17 @@
 		"hasFluffImages": true,
 		"ENG_name": "Hand Crossbow"
 	},
+	"Hand Drum|SCAG": {
+		"name": "手鼓",
+		"source": "SCAG",
+		"page": 124,
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"一種雙面皮鼓，側邊裝有把手。"
+		],
+		"ENG_name": "Hand Drum"
+	},
 	"Handaxe|XPHB": {
 		"name": "手斧",
 		"source": "XPHB",
@@ -1129,6 +1954,59 @@
 		"hasFluffImages": true,
 		"ENG_name": "Hide Armor"
 	},
+	"Hooked Shortspear|OOTA": {
+		"name": "鉤刃短矛",
+		"source": "OotA",
+		"page": 224,
+		"type": "M",
+		"rarity": "unknown",
+		"weight": 2,
+		"weaponCategory": "martial",
+		"property": [
+			"L"
+		],
+		"dmg1": "1d4",
+		"dmgType": "P",
+		"weapon": true,
+		"entries": [
+			"以這把武器命中時，持用者可以放棄造成傷害，改為試著絆倒目標；此時目標必須通過一次力量豁免，否則陷入{@condition prone}狀態。DC 為 8 + 持用者的力量調整值 + 持用者的熟練加值。"
+		],
+		"ENG_name": "Hooked Shortspear"
+	},
+	"Hoopak|DSOTDQ": {
+		"name": "胡帕克杖",
+		"source": "DSotDQ",
+		"page": 188,
+		"type": "M",
+		"rarity": "none",
+		"weight": 2,
+		"value": 10,
+		"weaponCategory": "martial",
+		"property": [
+			"A",
+			"F",
+			"S",
+			"2H"
+		],
+		"range": "40/160",
+		"dmg1": "1d6",
+		"dmgType": "P",
+		"weapon": true,
+		"entries": [
+			"胡帕克杖是一根結實的棍子，一端裝有投石索，另一端是尖頭。",
+			{
+				"type": "entries",
+				"name": "特殊",
+				"entries": [
+					"當你以這把武器進行近戰攻擊時，你無視它的彈藥屬性。你可以把胡帕克杖當作軍用遠程武器使用。這麼做時，它使用彈藥屬性、使用投石索彈丸，並在命中時造成 {@damage 1d4} 點鈍擊傷害。"
+				],
+				"ENG_name": "Special"
+			}
+		],
+		"ammoType": "sling bullet|phb",
+		"hasFluffImages": true,
+		"ENG_name": "Hoopak"
+	},
 	"Horn|XPHB": {
 		"name": "號角",
 		"source": "XPHB",
@@ -1191,6 +2069,89 @@
 		"weapon": true,
 		"hasFluffImages": true,
 		"ENG_name": "Javelin"
+	},
+	"Jeweler's Tools|PHB": {
+		"name": "珠寶匠工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 82
+			}
+		],
+		"referenceSources": [
+			"IMR",
+			"PaBTSO",
+			"RtG"
+		],
+		"reprintedAs": [
+			"Jeweler's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 2,
+		"value": 2500,
+		"additionalEntries": [
+			"珠寶匠工具的訓練包括美化寶石所需的基本技術，也讓你成為鑑別寶石的行家。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"珠寶匠工具包括一把小鋸與小鎚、銼刀、鉗子與鑷子。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "奧秘",
+				"entries": [
+					"熟練珠寶匠工具讓你知曉寶石在傳聞中的神秘用途。當你進行與寶石或鑲寶石物品有關的{@skill Arcana}檢定時，這份洞察很有幫助。"
+				],
+				"ENG_name": "Arcana"
+			},
+			{
+				"type": "entries",
+				"name": "調查",
+				"entries": [
+					"當你檢查鑲有珠寶的物件時，你對珠寶匠工具的熟練有助於你找出其中可能藏有的線索。"
+				],
+				"ENG_name": "Investigation"
+			},
+			{
+				"type": "entries",
+				"name": "識別寶石",
+				"entries": [
+					"你一眼就能辨識寶石並判斷其價值。"
+				],
+				"ENG_name": "Identify Gems"
+			},
+			{
+				"type": "table",
+				"caption": "珠寶匠工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"改變寶石的外觀",
+						"15"
+					],
+					[
+						"判斷寶石的歷史",
+						"20"
+					]
+				]
+			}
+		],
+		"ENG_name": "Jeweler's Tools"
 	},
 	"Jeweler's Tools|XPHB": {
 		"name": "珠寶匠工具",
@@ -1287,6 +2248,89 @@
 		"armor": true,
 		"hasFluffImages": true,
 		"ENG_name": "Leather Armor"
+	},
+	"Leatherworker's Tools|PHB": {
+		"name": "皮匠工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 82
+			}
+		],
+		"referenceSources": [
+			"RtG",
+			"KftGV",
+			"ToA"
+		],
+		"reprintedAs": [
+			"Leatherworker's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 5,
+		"value": 500,
+		"additionalEntries": [
+			"皮革加工的知識延伸到關於獸皮及其特性的學問。它也讓你了解皮甲及類似的物品。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"皮匠工具包括一把刀、一把小木槌、一把修邊器、一把打孔器、線與皮革碎料。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "奧秘",
+				"entries": [
+					"你在皮革加工上的專長，讓你在檢查以皮革製成的魔法物品時有額外的洞察，例如靴子與某些斗篷。"
+				],
+				"ENG_name": "Arcana"
+			},
+			{
+				"type": "entries",
+				"name": "調查",
+				"entries": [
+					"在研究皮革物品或與其相關的線索時，你會獲得額外的洞察，因為你會運用你對皮革的知識找出其他人會忽略的細節。"
+				],
+				"ENG_name": "Investigation"
+			},
+			{
+				"type": "entries",
+				"name": "識別獸皮",
+				"entries": [
+					"在查看獸皮或皮革物品時，你可以判斷皮革的來源以及用來處理它的任何特殊技術。例如，你能分辨以矮人方法製作的皮革與以半身人方法製作的皮革之間的差異。"
+				],
+				"ENG_name": "Identify Hides"
+			},
+			{
+				"type": "table",
+				"caption": "皮匠工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"改變皮革物品的外觀",
+						"10"
+					],
+					[
+						"判斷皮革物品的歷史",
+						"20"
+					]
+				]
+			}
+		],
+		"ENG_name": "Leatherworker's Tools"
 	},
 	"Leatherworker's Tools|XPHB": {
 		"name": "皮匠工具",
@@ -1391,6 +2435,29 @@
 		"hasFluffImages": true,
 		"ENG_name": "Light Hammer"
 	},
+	"Light Repeating Crossbow|OOTA": {
+		"name": "輕型連弩",
+		"source": "OotA",
+		"page": 224,
+		"type": "R",
+		"rarity": "unknown",
+		"weight": 5,
+		"weaponCategory": "simple",
+		"property": [
+			"A",
+			"2H"
+		],
+		"range": "40/160",
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"crossbow": true,
+		"weapon": true,
+		"entries": [
+			"這把弩裝有一個最多可容納六支弩矢的彈匣。射擊後它會自動重新上膛，直到彈匣的彈藥用完為止。重新裝填彈匣需要一個動作。"
+		],
+		"ammoType": "crossbow bolt|phb",
+		"ENG_name": "Light Repeating Crossbow"
+	},
 	"Longbow|XPHB": {
 		"name": "長弓",
 		"source": "XPHB",
@@ -1419,6 +2486,17 @@
 		"ammoType": "arrow|xphb",
 		"hasFluffImages": true,
 		"ENG_name": "Longbow"
+	},
+	"Longhorn|SCAG": {
+		"name": "長號角",
+		"source": "SCAG",
+		"page": 124,
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"一種作工精巧的費倫長笛，只見於有熟練工匠的地區，例如大城市或精靈聚落。"
+		],
+		"ENG_name": "Longhorn"
 	},
 	"Longsword|XPHB": {
 		"name": "長劍",
@@ -1547,6 +2625,102 @@
 		"weapon": true,
 		"hasFluffImages": true,
 		"ENG_name": "Mace"
+	},
+	"Mason's Tools|PHB": {
+		"name": "石匠工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 83
+			}
+		],
+		"referenceSources": [
+			"GoS",
+			"IMR",
+			"RtG",
+			"SCC-ARiR",
+			"CRCotN",
+			"PaBTSO",
+			"ToA",
+			"DSotDQ"
+		],
+		"reprintedAs": [
+			"Mason's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 8,
+		"value": 1000,
+		"additionalEntries": [
+			"石匠工具讓你能建造石造結構，包括以磚砌成的牆壁與建築。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"石匠工具包括抹刀、鎚子、鑿子、刷子與角尺。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "歷史",
+				"entries": [
+					"你的專長幫助你辨識石造建築的建造年代與用途，並洞察可能是誰建造了它。"
+				],
+				"ENG_name": "History"
+			},
+			{
+				"type": "entries",
+				"name": "調查",
+				"entries": [
+					"在檢查石造結構內的區域時，你會獲得額外的洞察。"
+				],
+				"ENG_name": "Investigation"
+			},
+			{
+				"type": "entries",
+				"name": "感知",
+				"entries": [
+					"你能發現石牆或石地板中的不規則之處，讓你更容易找到活板門與秘密通道。"
+				],
+				"ENG_name": "Perception"
+			},
+			{
+				"type": "entries",
+				"name": "拆除",
+				"entries": [
+					"你的石工知識讓你能發現磚牆的弱點。你以武器攻擊對這類結構造成雙倍傷害。"
+				],
+				"ENG_name": "Demolition"
+			},
+			{
+				"type": "table",
+				"caption": "石匠工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"在石牆上鑿一個小洞",
+						"10"
+					],
+					[
+						"找出石牆的弱點",
+						"15"
+					]
+				]
+			}
+		],
+		"ENG_name": "Mason's Tools"
 	},
 	"Mason's Tools|XPHB": {
 		"name": "石匠工具",
@@ -1749,6 +2923,87 @@
 		"hasFluffImages": true,
 		"ENG_name": "Padded Armor"
 	},
+	"Painter's Supplies|PHB": {
+		"name": "畫家設備",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 83
+			}
+		],
+		"referenceSources": [
+			"SCC-HfMT"
+		],
+		"reprintedAs": [
+			"Painter's Supplies|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 5,
+		"value": 1000,
+		"additionalEntries": [
+			"熟練畫家設備代表你繪畫與素描的能力。你也對藝術史有所了解，這有助於你檢視藝術品。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"畫家設備包括畫架、畫布、顏料、畫筆、炭筆與調色盤。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "奧秘、歷史、宗教",
+				"entries": [
+					"你的專長幫助你發掘與藝術作品有關的任何知識，例如某幅畫的魔法特性，或在地城中發現的一幅奇怪壁畫的來源。"
+				],
+				"ENG_name": "Arcana, History, Religion"
+			},
+			{
+				"type": "entries",
+				"name": "調查、感知",
+				"entries": [
+					"當你檢查一幅畫或類似的視覺藝術作品時，你對其創作手法的知識能給予你額外的洞察。"
+				],
+				"ENG_name": "Investigation, Perception"
+			},
+			{
+				"type": "entries",
+				"name": "繪畫與素描",
+				"entries": [
+					"作為短休或長休的一部分，你可以創作一件簡單的藝術作品。雖然你的作品可能不夠精確，但你能捕捉一個影像或一個場景，或快速臨摹一件你看過的藝術作品。"
+				],
+				"ENG_name": "Painting and Drawing"
+			},
+			{
+				"type": "table",
+				"caption": "畫家設備",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"畫一幅精確的肖像",
+						"10"
+					],
+					[
+						"創作一幅藏有隱藏訊息的畫",
+						"20"
+					]
+				]
+			}
+		],
+		"ENG_name": "Painter's Supplies"
+	},
 	"Painter's Supplies|XPHB": {
 		"name": "畫家設備",
 		"source": "XPHB",
@@ -1904,6 +3159,88 @@
 		"stealth": true,
 		"hasFluffImages": true,
 		"ENG_name": "Plate Armor"
+	},
+	"Potter's Tools|PHB": {
+		"name": "陶匠工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 84
+			}
+		],
+		"reprintedAs": [
+			"Potter's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 3,
+		"value": 1000,
+		"additionalEntries": [
+			"陶匠工具用來製作各種陶瓷物件，最典型的是陶罐與類似的容器。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"陶匠工具包括陶針、修坯片、刮刀、一把刀與卡尺。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "歷史",
+				"entries": [
+					"你的專長幫助你辨識陶瓷物件，包括它們製作的時間以及可能的產地或文化。"
+				],
+				"ENG_name": "History"
+			},
+			{
+				"type": "entries",
+				"name": "調查、感知",
+				"entries": [
+					"在檢查陶瓷時，你會獲得額外的洞察，藉由發現細微的不規則之處，找出其他人會忽略的線索。"
+				],
+				"ENG_name": "Investigation, Perception"
+			},
+			{
+				"type": "entries",
+				"name": "重建",
+				"entries": [
+					"藉由檢查陶器碎片，你可以判斷物件原本完整的形狀及其可能的用途。"
+				],
+				"ENG_name": "Reconstruction"
+			},
+			{
+				"type": "table",
+				"caption": "陶匠工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"判斷容器曾經裝過什麼",
+						"10"
+					],
+					[
+						"製作一個堪用的罐子",
+						"15"
+					],
+					[
+						"找出陶瓷物件的弱點",
+						"20"
+					]
+				]
+			}
+		],
+		"ENG_name": "Potter's Tools"
 	},
 	"Potter's Tools|XPHB": {
 		"name": "陶匠工具",
@@ -2087,6 +3424,21 @@
 		"weapon": true,
 		"hasFluffImages": true,
 		"ENG_name": "Scimitar"
+	},
+	"Shawm|SCAG": {
+		"name": "蕭姆管",
+		"source": "SCAG",
+		"page": 124,
+		"reprintedAs": [
+			"Shawm|XPHB"
+		],
+		"edition": "classic",
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"一種類似雙簧管或巴松管的雙簧樂器，深受地侏喜愛，他們還開發出以風箱驅動的版本。"
+		],
+		"ENG_name": "Shawm"
 	},
 	"Shawm|XPHB": {
 		"name": "蕭姆管",
@@ -2294,6 +3646,98 @@
 		"hasFluffImages": true,
 		"ENG_name": "Sling"
 	},
+	"Smith's Tools|PHB": {
+		"name": "鐵匠工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 84
+			}
+		],
+		"referenceSources": [
+			"ToA",
+			"TTP",
+			"WDH",
+			"BGDIA",
+			"IDRotF",
+			"CM",
+			"KftGV",
+			"QftIS"
+		],
+		"reprintedAs": [
+			"Smith's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 8,
+		"value": 2000,
+		"additionalEntries": [
+			"鐵匠工具讓你能加工金屬：加熱以改變形狀、修復損傷，或把粗鑄錠打造成有用的物品。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"鐵匠工具包括鎚子、火鉗、木炭、抹布與一塊磨刀石。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "奧秘與歷史",
+				"entries": [
+					"你的專長讓你在檢查金屬物件，例如武器時，有額外的洞察。"
+				],
+				"ENG_name": "Arcana and History"
+			},
+			{
+				"type": "entries",
+				"name": "調查",
+				"entries": [
+					"當調查涉及護甲、武器或其他金屬製品時，你能發現其他人可能忽略的線索並做出推斷。"
+				],
+				"ENG_name": "Investigation"
+			},
+			{
+				"type": "entries",
+				"name": "修復",
+				"entries": [
+					"只要能使用你的工具，以及一團熱到足以讓金屬變軟的明火，你每工作一小時就能為受損的金屬物件恢復 10 點生命值。"
+				],
+				"ENG_name": "Repair"
+			},
+			{
+				"type": "table",
+				"caption": "鐵匠工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"磨利鈍掉的刀刃",
+						"10"
+					],
+					[
+						"修理一套護甲",
+						"15"
+					],
+					[
+						"破壞一件非魔法金屬物件",
+						"15"
+					]
+				]
+			}
+		],
+		"ENG_name": "Smith's Tools"
+	},
 	"Smith's Tools|XPHB": {
 		"name": "鐵匠工具",
 		"source": "XPHB",
@@ -2337,6 +3781,17 @@
 			}
 		],
 		"ENG_name": "Smith's Tools"
+	},
+	"Songhorn|SCAG": {
+		"name": "歌號",
+		"source": "SCAG",
+		"page": 124,
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"一種直笛，是構造簡單的笛子，通常以木頭雕成。"
+		],
+		"ENG_name": "Songhorn"
 	},
 	"Spear|XPHB": {
 		"name": "矛",
@@ -2436,6 +3891,126 @@
 		"hasFluffImages": true,
 		"ENG_name": "Studded Leather Armor"
 	},
+	"Tantan|SCAG": {
+		"name": "坦坦鈴鼓",
+		"source": "SCAG",
+		"page": 124,
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"一種鈴鼓，在谷地以南的半身人與人類之間很流行。"
+		],
+		"ENG_name": "Tantan"
+	},
+	"Thelarr|SCAG": {
+		"name": "瑟拉爾笛",
+		"alias": [
+			"Whistlecane"
+		],
+		"source": "SCAG",
+		"page": 124,
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"又稱哨杖，是一種以蘆葦削成、簡單易做的管樂器。它簡單到技藝純熟的吟遊詩人常常做了送給孩子——讓父母或欣喜或懊惱。"
+		],
+		"ENG_name": "Thelarr"
+	},
+	"Tinker's Tools|PHB": {
+		"name": "修補匠工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 84
+			}
+		],
+		"referenceSources": [
+			"BGDIA",
+			"KftGV",
+			"PaBTSO",
+			"VEoR",
+			"QftIS",
+			"TTP",
+			"WDMM",
+			"OoW",
+			"IMR",
+			"IDRotF",
+			"RtG"
+		],
+		"reprintedAs": [
+			"Tinker's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 10,
+		"value": 5000,
+		"additionalEntries": [
+			"一套修補匠工具是設計來讓你修理許多尋常物件的。雖然用修補匠工具做不出多少東西，但你可以縫補破掉的衣服、磨利用鈍的劍，並修補破損的鎖子甲。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"修補匠工具包括各式手工具、線、針、一塊磨刀石、布料與皮革碎料，以及一小罐膠。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "歷史",
+				"entries": [
+					"即使你只剩下原物的幾片碎片，你也能判斷物件的年代與來源。"
+				],
+				"ENG_name": "History"
+			},
+			{
+				"type": "entries",
+				"name": "調查",
+				"entries": [
+					"當你檢查受損的物件時，你會得知它是如何受損的以及多久以前受損的。"
+				],
+				"ENG_name": "Investigation"
+			},
+			{
+				"type": "entries",
+				"name": "修復",
+				"entries": [
+					"你每工作一小時，就能為受損的物件恢復 10 點生命值。對任何物件而言，你都需要取得修理它所需的原料。對金屬物件而言，你需要一團熱到足以讓金屬變軟的明火。"
+				],
+				"ENG_name": "Repair"
+			},
+			{
+				"type": "table",
+				"caption": "修補匠工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"暫時修復一個失效的裝置",
+						"10"
+					],
+					[
+						"以一半的時間修理物品",
+						"15"
+					],
+					[
+						"用碎料臨時湊合出一件物品",
+						"20"
+					]
+				]
+			}
+		],
+		"ENG_name": "Tinker's Tools"
+	},
 	"Tinker's Tools|XPHB": {
 		"name": "修補匠工具",
 		"source": "XPHB",
@@ -2479,6 +4054,17 @@
 			}
 		],
 		"ENG_name": "Tinker's Tools"
+	},
+	"Tocken|SCAG": {
+		"name": "托肯鐘",
+		"source": "SCAG",
+		"page": 124,
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"一組懸掛起來、雕刻成橢圓形的鐘，通常以一對輕木槌（或徒手）敲奏。它們在地底文化中最為常見，因為渾厚的音色能在那裡傳得很遠。"
+		],
+		"ENG_name": "Tocken"
 	},
 	"Trident|XPHB": {
 		"name": "三叉戟",
@@ -2588,6 +4174,17 @@
 		"hasFluffImages": true,
 		"ENG_name": "War Pick"
 	},
+	"Wargong|SCAG": {
+		"name": "戰鑼",
+		"source": "SCAG",
+		"page": 124,
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"一種金屬鑼，傳統上以盾牌製成，尤其是敵人的盾牌。哥布林與矮人都會製作並敲奏戰鑼，鑼聲迴盪在幽暗地域的隧道中。"
+		],
+		"ENG_name": "Wargong"
+	},
 	"Warhammer|XPHB": {
 		"name": "戰錘",
 		"source": "XPHB",
@@ -2613,6 +4210,96 @@
 		"weapon": true,
 		"hasFluffImages": true,
 		"ENG_name": "Warhammer"
+	},
+	"Weaver's Tools|PHB": {
+		"name": "織布工工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 85
+			}
+		],
+		"reprintedAs": [
+			"Weaver's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 5,
+		"value": 100,
+		"additionalEntries": [
+			"織布工工具讓你能織布，並將布裁製成衣物。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"織布工工具包括線、針與布料碎片。你懂得如何操作織布機，但那種設備太大，無法隨身攜帶。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "奧秘、歷史",
+				"entries": [
+					"你的專長讓你在檢查布料物件，包括斗篷與長袍時，有額外的洞察。"
+				],
+				"ENG_name": "Arcana, History"
+			},
+			{
+				"type": "entries",
+				"name": "調查",
+				"entries": [
+					"運用你對布料物件製作過程的知識，你在檢查掛毯、室內裝潢、衣物以及其他編織物品時，能發現其他人會忽略的線索並做出推斷。"
+				],
+				"ENG_name": "Investigation"
+			},
+			{
+				"type": "entries",
+				"name": "修復",
+				"entries": [
+					"作為短休的一部分，你可以修理一件受損的布料物件。"
+				],
+				"ENG_name": "Repair"
+			},
+			{
+				"type": "entries",
+				"name": "製作衣物",
+				"entries": [
+					"只要你有足夠的布料與線，你可以作為長休的一部分為一個生物製作一套服裝。"
+				],
+				"ENG_name": "Craft Clothing"
+			},
+			{
+				"type": "table",
+				"caption": "織布工工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"改作布料的用途",
+						"10"
+					],
+					[
+						"縫補布料上的破洞",
+						"10"
+					],
+					[
+						"裁製一套服裝",
+						"15"
+					]
+				]
+			}
+		],
+		"ENG_name": "Weaver's Tools"
 	},
 	"Weaver's Tools|XPHB": {
 		"name": "織布工工具",
@@ -2686,6 +4373,97 @@
 		"hasFluffImages": true,
 		"ENG_name": "Whip"
 	},
+	"Woodcarver's Tools|PHB": {
+		"name": "木雕師工具",
+		"source": "PHB",
+		"page": 154,
+		"srd": true,
+		"basicRules": true,
+		"additionalSources": [
+			{
+				"source": "XGE",
+				"page": 85
+			}
+		],
+		"referenceSources": [
+			"IDRotF",
+			"RtG",
+			"VEoR"
+		],
+		"reprintedAs": [
+			"Woodcarver's Tools|XPHB"
+		],
+		"type": "AT",
+		"rarity": "none",
+		"weight": 5,
+		"value": 100,
+		"additionalEntries": [
+			"木雕師工具讓你能用木頭製作精細的物件，例如木製信物或箭矢。",
+			{
+				"type": "entries",
+				"name": "構材",
+				"entries": [
+					"木雕師工具包括一把刀、一把半圓鑿與一把小鋸。"
+				],
+				"ENG_name": "Components"
+			},
+			{
+				"type": "entries",
+				"name": "奧秘、歷史",
+				"entries": [
+					"你的專長讓你在檢查木製物件，例如小雕像或箭矢時，有額外的洞察。"
+				],
+				"ENG_name": "Arcana, History"
+			},
+			{
+				"type": "entries",
+				"name": "自然",
+				"entries": [
+					"你對木製物件的知識讓你在檢查樹木時有一些額外的洞察。"
+				],
+				"ENG_name": "Nature"
+			},
+			{
+				"type": "entries",
+				"name": "修復",
+				"entries": [
+					"作為短休的一部分，你可以修理一件受損的木製物件。"
+				],
+				"ENG_name": "Repair"
+			},
+			{
+				"type": "entries",
+				"name": "製作箭矢",
+				"entries": [
+					"作為短休的一部分，你可以製作至多五支箭矢。作為長休的一部分，你可以製作至多二十支。你手邊必須有足夠的木材才能製作它們。"
+				],
+				"ENG_name": "Craft Arrows"
+			},
+			{
+				"type": "table",
+				"caption": "木雕師工具",
+				"colLabels": [
+					"活動",
+					"DC"
+				],
+				"colStyles": [
+					"col-10",
+					"col-2 text-center"
+				],
+				"rows": [
+					[
+						"雕刻一個小木雕像",
+						"10"
+					],
+					[
+						"在木頭上雕刻精緻的圖案",
+						"15"
+					]
+				]
+			}
+		],
+		"ENG_name": "Woodcarver's Tools"
+	},
 	"Woodcarver's Tools|XPHB": {
 		"name": "木雕師工具",
 		"source": "XPHB",
@@ -2758,5 +4536,51 @@
 		"dmgType": "B",
 		"dmg2": "1d8",
 		"ENG_name": "Wooden Staff"
+	},
+	"Yarting|SCAG": {
+		"name": "雅廷琴",
+		"source": "SCAG",
+		"page": 124,
+		"reprintedAs": [
+			"Yarting|FRHoF"
+		],
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"一種來自安姆與卡林珊的南方樂器，相當於費倫的吉他。各種變體已傳遍整片大陸。"
+		],
+		"ENG_name": "Yarting"
+	},
+	"Yklwa|TOA": {
+		"name": "伊庫瓦短矛",
+		"source": "ToA",
+		"page": 32,
+		"type": "M",
+		"rarity": "none",
+		"weight": 3,
+		"value": 100,
+		"weaponCategory": "simple",
+		"property": [
+			"T"
+		],
+		"range": "10/30",
+		"dmg1": "1d8",
+		"dmgType": "P",
+		"weapon": true,
+		"entries": [
+			"伊庫瓦短矛（發音為 YICK-ul-wah）是一種簡易近戰武器，為楚爾特戰士的傳統武器。伊庫瓦短矛有一根 3 呎長的木柄，以及長達 18 吋的鋼製或石製矛刃。雖然它具有投擲武器屬性，但重心並不適合投擲。"
+		],
+		"ENG_name": "Yklwa"
+	},
+	"Zulkoon|SCAG": {
+		"name": "祖爾昆風琴",
+		"source": "SCAG",
+		"page": 124,
+		"type": "INS",
+		"rarity": "none",
+		"entries": [
+			"一種構造複雜的腳踏風琴，起源於賽的祖爾基爾，他們在施法時會用到它。一般認為它的音色富有戲劇性，卻也透著不祥。"
+		],
+		"ENG_name": "Zulkoon"
 	}
 }
