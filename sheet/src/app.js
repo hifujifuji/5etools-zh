@@ -158,7 +158,7 @@ function renderBuild(c, d) {
 		}
 		if (f.k === "magic initiate") {
 			const LZ = {cleric: "牧師", druid: "德魯伊", wizard: "法師"};
-			ftBody += `<div class="row"><label>法術列表${sel(`feats.${sl.id}.list`, f.list, Object.entries(LZ).map(([v, l]) => [v, sl.list === v ? `${l}（背景指定）` : l]), "class=sm")}</label><label>施法屬性${sel(`feats.${sl.id}.sa`, f.sa, ["int", "wis", "cha"].map(a => [a, ABZH[a]]), "class=sm")}</label></div>`;
+			ftBody += `<div class="row"><label>法術列表${sel(`feats.${sl.id}.list`, f.list, Object.entries(LZ), "class=sm")}</label><label>施法屬性${sel(`feats.${sl.id}.sa`, f.sa, ["int", "wis", "cha"].map(a => [a, ABZH[a]]), "class=sm")}</label></div>`;
 			const L1 = f.list[0].toUpperCase() + f.list.slice(1);
 			const p0 = Object.keys(D.spells).filter(x => D.spells[x].l === 0 && D.spells[x].cls.includes(L1));
 			const p1 = Object.keys(D.spells).filter(x => D.spells[x].l === 1 && D.spells[x].cls.includes(L1));

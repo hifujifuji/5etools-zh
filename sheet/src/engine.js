@@ -214,7 +214,7 @@ function fill(c) {
 	for (const sl of slots) {
 		const cur = c.feats[sl.id];
 		if (cur.k === "magic initiate") {
-			// 背景指定的列表是預設值，玩家仍可改選
+			// 牧師、德魯伊、法師三選一；背景的魔法學徒預設用背景名稱上的列表
 			const list = cur.list && ["cleric", "druid", "wizard"].includes(cur.list) ? cur.list : sl.list || ({Cleric: "cleric", Druid: "druid", Paladin: "cleric", Ranger: "druid"}[c.cls] || "wizard");
 			cur.list = list;
 			const L1 = list[0].toUpperCase() + list.slice(1);
