@@ -105,6 +105,10 @@ input[type=number] { width: 64px; }
 .build details { width: 100%; }
 details summary { cursor: pointer; font-size: 13px; color: var(--ink2); padding: 4px 0; }
 details .chips { margin: 4px 0 8px; }
+details.grp { margin-top: 8px; border-top: 1px dashed var(--line2); padding-top: 4px; }
+details.grp > summary small { margin-left: 6px; font-size: 11px; color: var(--muted); }
+details.grp .note { margin: 2px 0 6px; }
+details.grp .pick { white-space: normal; line-height: 1.25; }
 .opts { display: flex; flex-direction: column; gap: 6px; }
 .opt { text-align: left; padding: 8px 10px; border: 1px solid var(--line2); border-radius: 8px; background: transparent; font-size: 13px; line-height: 1.45; }
 .opt b { margin-right: 8px; }
@@ -163,6 +167,7 @@ a.tip:hover { color: var(--accent); border-color: var(--accent); }
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .st b { display: block; text-align: center; font-size: 22px; }
 .st small { font-size: 12px; color: var(--muted); font-weight: 400; }
+.st .sn { display: block; text-align: center; font-size: 10px; line-height: 1.2; }
 .tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
 .tbl th { text-align: left; font-weight: 500; font-size: 11px; color: var(--muted); border-bottom: 1px solid var(--line); padding: 2px 4px; white-space: nowrap; }
 .tbl td { border-bottom: 1px solid var(--line2); padding: 4px; vertical-align: top; }

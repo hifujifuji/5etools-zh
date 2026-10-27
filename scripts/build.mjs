@@ -42,6 +42,17 @@ TERM_FIX.push([new RegExp(`(寒冷|心靈|強酸)(?=(?:[、或與和及](?:${DMG
 TERM_FIX.push([new RegExp(`(寒冷|心靈|強酸)(?=[、或與和及](?:${DMG_ZH})(?![\\u4e00-\\u9fff]{2}))`, "g"), m => ({寒冷: "寒冰", 心靈: "精神", 強酸: "酸蝕"})[m]]);
 TERM_FIX.push([new RegExp(`(?<=(?:${DMG_ZH})[、或與和及])(寒冷|心靈|強酸)(?![\\u4e00-\\u9fff])`, "g"), m => ({寒冷: "寒冰", 心靈: "精神", 強酸: "酸蝕"})[m]]);
 TERM_FIX.push([/寒冷吐息/g, "寒冰吐息"]);
+// 技能譯名以 trpgline 2024 規則為準（terms-2024.md）：舊譯只在技能語境替換
+const SKILL_OLD = {動物馴養: "馴獸", 欺瞞: "欺騙", 察言觀色: "洞悉", 醫藥: "醫療", 感知: "察覺", 觀察: "察覺", 手上把戲: "巧手", 求生: "生存"};
+const SKILL_ZH = "特技|馴獸|奧秘|運動|欺騙|歷史|洞悉|威嚇|調查|醫療|自然|察覺|表演|說服|宗教|巧手|隱匿|生存|動物馴養|欺瞞|察言觀色|醫藥|手上把戲|求生";
+const skillWord = w => SKILL_OLD[w] || w;
+TERM_FIX.push([/\{@skill ([^}|]*)((?:\|[^}|]*)*)\}/g, (m, name, rest) => `{@skill ${skillWord(name)}${rest.replace(/[^|]+$/, w => skillWord(w))}}`]);
+TERM_FIX.push([/(力量|敏捷|體質|智力|感知|睿知|魅力)（([^（）{}]{1,24})）/g, (m, ab, inner) => `${ab}（${inner.replace(new RegExp(`${SKILL_ZH}|感知|觀察`, "g"), w => skillWord(w))}）`]);
+TERM_FIX.push([/(力量|敏捷|體質|智力|感知|睿知|魅力)\(([^(){}]{1,24})\)/g, (m, ab, inner) => `${ab}（${inner.replace(new RegExp(`${SKILL_ZH}|感知|觀察`, "g"), w => skillWord(w))}）`]);
+TERM_FIX.push([/被動感知(?!（)/g, "被動察覺"], [/熟練於感知技能/g, "熟練於察覺技能"]);
+TERM_FIX.push([/手上把戲|動物馴養|察言觀色/g, w => SKILL_OLD[w]]);
+TERM_FIX.push([/"name": "(醫藥|求生|欺瞞)"/g, (m, w) => `"name": "${SKILL_OLD[w]}"`]);
+TERM_FIX.push([new RegExp(`(?:${SKILL_ZH})(?:[、或和與及](?:${SKILL_ZH}))+`, "g"), m => m.replace(new RegExp(SKILL_ZH, "g"), w => skillWord(w))]);
 TERM_FIX.push([/\{@quickref ([^}|]+)((?:\|[^}|]*){0,3})\}/g, (m, name, rest) => {
 	const zh = QUICKREF_ZH[name.toLowerCase()];
 	if (!zh) return m;
@@ -167,7 +178,7 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 // ---- 3‴. 怪物中文簡介（i18n/monster-intro.json；本站自撰的概述，以方塊置於資訊頁最前，原文保留） ----
 // _copy 條目：自己有簡介就用自己的，否則沿用來源條目的；一律以 _mod 移到最前（先移除繼承來的方塊再前置）。
 {
-	const intro = readJson(path.join(I18N, "monster-intro.json"));
+	const intro = readI18n(path.join(I18N, "monster-intro.json"));
 	const all = new Map();
 	for (const {json} of loaded) for (const f of json.monsterFluff || []) all.set(`${f.name}|${f.source}`, f);
 	const srcOf = f => f._copy && all.get(`${f._copy.name}|${f._copy.source}`);
@@ -192,8 +203,8 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 // ---- 3⁗. 神祇：短欄位（i18n/deity-fields.json，完全比對）與中文簡介（i18n/deity-intro.json，鍵「英文名|來源|神系」） ----
 // pantheon／category 是篩選與網址用的值，資料不動，由 patches/80-deities.mjs 在顯示時翻。
 {
-	const df = readJson(path.join(I18N, "deity-fields.json"));
-	const intro = readJson(path.join(I18N, "deity-intro.json"));
+	const df = readI18n(path.join(I18N, "deity-fields.json"));
+	const intro = readI18n(path.join(I18N, "deity-intro.json"));
 	for (const {json} of loaded) {
 		for (const d of json.deity || []) {
 			if (!d.name_zh && df.name[d.name]) Merger.setName(d, df.name[d.name]);
@@ -215,15 +226,15 @@ const DISH_TYPE = {snack: "點心", cocktail: "調酒", entree: "主菜", side: 
 const ALLERGEN = {nuts: "堅果", gluten: "麩質", sulphites: "亞硫酸鹽", crustaceans: "甲殼類", molluscs: "軟體動物", mustard: "芥末", milk: "乳製品", eggs: "蛋", fish: "魚類", celery: "芹菜", lupin: "羽扇豆", peanuts: "花生", soya: "大豆", sesame: "芝麻"};
 // ---- 3⁗ʹ. 異教中文簡介（i18n/cult-intro.json，鍵「英文名|來源」）：長篇設定敘事不全文翻譯，改以本站自撰的概述置頂，原文保留 ----
 {
-	const intro = {...readJson(path.join(I18N, "cult-intro.json")), ...readJson(path.join(I18N, "vehicle-intro.json")), ...readJson(path.join(I18N, "language-intro.json"))};
-	const langScript = readJson(path.join(I18N, "language-fields.json")).script;
+	const intro = {...readI18n(path.join(I18N, "cult-intro.json")), ...readI18n(path.join(I18N, "vehicle-intro.json")), ...readI18n(path.join(I18N, "language-intro.json"))};
+	const langScript = readI18n(path.join(I18N, "language-fields.json")).script;
 	for (const {json} of loaded) for (const l of json.language || []) if (typeof l.script === "string" && langScript[l.script]) l.script = langScript[l.script];
 	for (const {json} of loaded) for (const p of ["cult", "boon", "vehicleUpgrade", "language"]) for (const c of json[p] || []) {
 		const t = intro[`${c.name}|${c.source}`];
 		if (t && Array.isArray(c.entries)) { c.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(t)}); bump("cultIntro", "full"); }
 	}
 	// 食譜：只給中文名（glossary names.recipe）與簡介（i18n/recipe-intro.json），簡介置於作法欄最前
-	const recipeIntro = readJson(path.join(I18N, "recipe-intro.json"));
+	const recipeIntro = readI18n(path.join(I18N, "recipe-intro.json"));
 	for (const {json} of loaded) for (const r of json.recipe || []) {
 		const t = recipeIntro[`${r.name}|${r.source}`];
 		if (t && Array.isArray(r.instructions)) { r.instructions.unshift({type: "inset", name: "中文簡介", entries: [].concat(t)}); bump("recipeIntro", "full"); }
@@ -237,7 +248,7 @@ const ALLERGEN = {nuts: "堅果", gluten: "麩質", sulphites: "亞硫酸鹽", c
 
 // ---- 3a. 職業起始裝備／熟練字串（i18n/class-equipment.json，完全比對） ----------------
 {
-	const eq = readJson(path.join(I18N, "class-equipment.json"));
+	const eq = readI18n(path.join(I18N, "class-equipment.json"));
 	const tr1 = arr => Array.isArray(arr) && arr.forEach((s, i) => {
 		if (typeof s === "string" && eq[s]) arr[i] = eq[s];
 		else if (s && typeof s.full === "string" && eq[s.full]) s.full = eq[s.full]; // {proficiency, full} 形式
@@ -580,7 +591,7 @@ for (const {json} of loaded) {
 
 // 引言署名（i18n/quote-by.json，完全比對）
 {
-	const by = readJson(path.join(I18N, "quote-by.json"));
+	const by = readI18n(path.join(I18N, "quote-by.json"));
 	const walkBy = o => {
 		if (Array.isArray(o)) return o.forEach(walkBy);
 		if (!o || typeof o !== "object") return;

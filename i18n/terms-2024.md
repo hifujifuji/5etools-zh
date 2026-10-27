@@ -35,6 +35,32 @@
 | Surprise | 突襲 | |
 | Exhaustion (level) | 力竭（等級） | |
 
+## 技能
+
+依使用者指示（2026-10-27），技能名稱以 trpgline 的 2024 規則譯名為準（https://trpgline.com/zh-TW/rules/dnd2024/playing ）。舊譯由 build TERM_FIX 在技能語境自動改正（{@skill} 標籤、「感知（…）」括號、技能列舉、被動感知→被動察覺）。其他用語維持本表，不跟 trpgline。
+
+| 英文 | 中文 | 舊譯 |
+| --- | --- | --- |
+| Acrobatics | 特技 | |
+| Animal Handling | 馴獸 | 動物馴養 |
+| Arcana | 奧秘 | |
+| Athletics | 運動 | |
+| Deception | 欺騙 | 欺瞞 |
+| History | 歷史 | |
+| Insight | 洞悉 | 察言觀色 |
+| Intimidation | 威嚇 | |
+| Investigation | 調查 | |
+| Medicine | 醫療 | 醫藥 |
+| Nature | 自然 | |
+| Perception | 察覺 | 感知、觀察 |
+| Performance | 表演 | |
+| Persuasion | 說服 | |
+| Religion | 宗教 | |
+| Sleight of Hand | 巧手 | 手上把戲 |
+| Stealth | 隱匿 | |
+| Survival | 生存 | 求生 |
+| Passive Perception | 被動察覺 | 被動感知 |
+
 ## 動作
 
 | 英文 | 中文 |

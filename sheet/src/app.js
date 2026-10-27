@@ -54,30 +54,43 @@ function renderBuild(c, d) {
 	// 職業
 	let clsBody = `<div class="grid g4">${D.classes.map(x => `<button type="button" class="pick ${x.id === c.cls ? "on" : ""}" data-pick="cls" data-v="${x.id}">${x.zh}</button>`).join("")}</div>`;
 	if (L >= 3) {
-		clsBody += `<div class="row"><label class="grow">${esc(k.subTitle || "子職業")}${sel("sub", c.sub, k.subs.map(x => [x.id, x.zh]))}</label>`;
+		clsBody += `<div class="row"><label class="grow">${esc(k.subTitle || "子職業")}${sel("sub", c.sub, k.subs.map(x => [x.id, `${x.zh}${srcTag(x)}`]))}</label>`;
 		const sub = subOf(c);
 		if (sub?.variants) clsBody += `<label class="grow">地形${sel("subVar", c.subVar, sub.variants.map(v => [v.en, {"Arid Land": "乾旱", "Polar Land": "極地", "Temperate Land": "溫帶", "Tropical Land": "熱帶"}[v.en] || v.en]))}</label>`;
 		clsBody += "</div>";
+		for (const ch of subChoices(c)) clsBody += `<p class="lab">${esc(sub.zh)}：自選法術（${ch.n}）</p>${chips(`subPick.${ch.id}`, c.subPick[ch.id], ch.pool.map(x => [x, spZh(x)]))}`;
 	} else clsBody += `<p class="note">3 級時選擇子職業</p>`;
 	if (c.cls === "Cleric") clsBody += `<div class="row"><span class="lab">神聖職序</span>${seg("order", c.order, [["protector", "守護者"], ["thaumaturge", "奇術師"]])}</div>`;
 	if (c.cls === "Druid") clsBody += `<div class="row"><span class="lab">原初職序</span>${seg("order", c.order, [["magician", "術者"], ["warden", "守望者"]])}</div>`;
 	out.push(sec("職業", clsBody));
 	// 種族
-	let spBody = `<div class="grid g5">${D.species.map(x => `<button type="button" class="pick ${x.id === c.sp ? "on" : ""}" data-pick="sp" data-v="${x.id}">${x.zh}</button>`).join("")}</div>`;
+	const pickBtn = (f, x) => `<button type="button" class="pick ${x.id === c[f] ? "on" : ""}" data-pick="${f}" data-v="${esc(x.id)}">${esc(x.zh)}</button>`;
+	const legacySp = D.species.filter(x => x.legacy);
+	let spBody = `<div class="grid g5">${D.species.filter(x => !x.legacy).map(x => pickBtn("sp", x)).join("")}</div>
+		<details class="grp" ${s.legacy ? "open" : ""}><summary>被遺忘的國度：舊版種族<small>劍灣冒險者指南</small></summary><p class="note">依 2024 規則，舊版種族不給屬性值加值，只用背景的加值。</p><div class="grid g4">${legacySp.map(x => pickBtn("sp", x)).join("")}</div></details>`;
 	const lin = LINEAGE[c.sp];
 	const row = [];
 	if (lin?.opts) row.push(`<label class="grow">${lin.label}${sel("lin", c.lin, lin.opts.map(o => [o.id, o.zh]))}</label>`);
+	if (s.legacy && s.opts.length > 1) row.push(`<label class="grow">亞種與變體${sel("lin", c.lin, s.opts.map(o => [o.id, o.zh]))}</label>`);
 	if (lin?.ab) row.push(`<label>施法屬性${sel("linSa", c.linSa, ["int", "wis", "cha"].map(a => [a, ABZH[a]]))}</label>`);
 	if (s.size.length > 1) row.push(`<label>體型${sel("size", c.size, s.size.map(z => [z, SIZE_ZH[z]]))}</label>`);
 	if (row.length) spBody += `<div class="row">${row.join("")}</div>`;
+	const lg = legacyOf(c);
+	if (lg?.sk?.any) spBody += `<p class="lab">種族技能（${lg.sk.any} 項）</p>${chips("spSkill", c.spSkill, D.skills.map(x => [x.id, x.zh]))}`;
+	if (c.linPick?.length) spBody += `<p class="lab">種族戲法</p>${chips("linPick", c.linPick, lg.sp.choose[0].pool.map(x => [x, spZh(x)]))}`;
 	if (c.sp === "Elf" || c.sp === "Human") spBody += `<div class="row"><span class="lab">${c.sp === "Elf" ? "敏銳感官" : "技藝純熟"}</span>${sel("spSkill.0", c.spSkill[0], (c.sp === "Elf" ? ["insight", "perception", "survival"] : D.skills.map(x => x.id)).map(x => [x, skZh(x)]))}</div>`;
 	out.push(sec("種族", spBody));
 	// 背景
-	let bgBody = `<div class="grid g4">${D.backgrounds.map(x => `<button type="button" class="pick ${x.id === c.bg ? "on" : ""}" data-pick="bg" data-v="${x.id}">${x.zh}</button>`).join("")}</div>`;
+	const bgGrp = (title, list, note = "") => `<details class="grp" ${list.some(x => x.id === c.bg) ? "open" : ""}><summary>${title}</summary>${note}<div class="grid g4">${list.map(x => pickBtn("bg", x)).join("")}</div></details>`;
+	let bgBody = `<div class="grid g4">${D.backgrounds.filter(x => !x.src).map(x => pickBtn("bg", x)).join("")}</div>`;
+	bgBody += bgGrp("被遺忘的國度<small>費倫英雄</small>", D.backgrounds.filter(x => x.src === "FRHoF"));
+	bgBody += bgGrp("被遺忘的國度：舊版背景<small>劍灣冒險者指南</small>", D.backgrounds.filter(x => x.legacy), `<p class="note">舊版背景的屬性加值可自選任何屬性，並可自選一個起源專長。</p>`);
 	bgBody += `<div class="row"><span class="lab">屬性加值</span>${seg("bgMode", c.bgMode, [["21", "+2／+1"], ["111", "+1／+1／+1"]])}</div>`;
 	if (c.bgMode === "21") bgBody += `<div class="row"><label class="grow">+2${sel("bgA", c.bgA, b.ab.map(a => [a, ABZH[a]]))}</label><label class="grow">+1${sel("bgB", c.bgB, b.ab.filter(a => a !== c.bgA).map(a => [a, ABZH[a]]))}</label></div>`;
+	else if (b.legacy) bgBody += chips("bg111", c.bg111, AB.map(a => [a, ABZH[a]]));
 	else bgBody += `<p class="note">${b.ab.map(a => ABZH[a]).join("、")}各 +1</p>`;
-	bgBody += `<p class="note">技能：${b.sk.map(skZh).join("、")}　專長：${esc(D.feats[b.feat.split(";")[0]]?.zh || "")}</p>`;
+	if (b.skCh) bgBody += `<p class="lab">背景技能（${b.skCh.n} 項）</p>${chips("bgSkill", c.bgSkill, b.skCh.from.map(x => [x, skZh(x)]))}`;
+	bgBody += `<p class="note">技能：${[...b.sk, ...(c.bgSkill || [])].map(skZh).join("、")}　專長：${esc(b.feat ? D.feats[b.feat.split(";")[0]]?.zh || "" : "自選起源專長")}${b.feature ? `　${esc(b.feature.zh)}` : ""}</p>`;
 	out.push(sec("背景", bgBody));
 	// 屬性值
 	let abBody = `<div class="row">${seg("method", c.method, [["array", "標準陣列"], ["point", "購點"], ["manual", "自訂"]])}</div><div class="abil">`;
@@ -106,7 +119,7 @@ function renderBuild(c, d) {
 		const f = c.feats[sl.id], fd = D.feats[f.k];
 		ftBody += `<div class="feat"><span class="lab">${esc(sl.src)}</span>`;
 		if (sl.fixed) ftBody += `<b>${esc(fd?.zh)}</b>`;
-		else ftBody += sel(`feats.${sl.id}.k`, f.k, featOptions(sl, L).map(x => [x, D.feats[x].zh]));
+		else ftBody += sel(`feats.${sl.id}.k`, f.k, featOptions(sl, L, c).map(x => [x, `${D.feats[x].zh}${srcTag(D.feats[x])}`]));
 		if (f.ab) {
 			const n = f.k === "ability score improvement" ? 2 : 1;
 			for (let i = 0; i < n; i++) if (fd.ab.length > 1) ftBody += sel(`feats.${sl.id}.ab.${i}`, f.ab[i], fd.ab.map(a => [a, `${ABZH[a]} +1`]), "class=sm");
@@ -192,14 +205,14 @@ function renderSheet(c, d) {
 	const colB = ["int", "wis", "cha"].map(abBlock).join("");
 	const stats = `<div class="stats">
 		<div class="box st"><div class="bt">先攻</div><b>${sgn(d.init)}</b></div>
-		<div class="box st"><div class="bt">速度</div><b>${d.speed}<small> 呎</small></b></div>
+		<div class="box st"><div class="bt">速度</div><b>${d.speed}<small> 呎</small></b>${d.speedNote ? `<small class="sn">${esc(d.speedNote)}</small>` : ""}</div>
 		<div class="box st"><div class="bt">體型</div><b>${esc(d.size)}</b></div>
 		<div class="box st"><div class="bt">被動察覺</div><b>${d.passive}</b></div></div>`;
 	const atk = box("武器與攻擊戲法", `<table class="tbl"><thead><tr><th>名稱</th><th>命中加值／DC</th><th>傷害／類型</th><th>備註</th></tr></thead><tbody>
 		${d.attacks.map(a => `<tr><td>${tipA(a.tip, a.name)}</td><td>${esc(a.hit)}</td><td>${esc(a.dmg)}</td><td class="sm">${esc(a.note)}</td></tr>`).join("") || `<tr><td colspan="4" class="muted">—</td></tr>`}</tbody></table>`);
 	const resLine = d.res.length ? `<div class="res">${d.res.map(r => `<span><small>${esc(r.col)}</small>${esc(r.v)}</span>`).join("")}</div>` : "";
 	const cf = box("職業能力", `${resLine}<ul class="flist">${d.feats.map((f, i) => `<li><small>${f.lv}</small>${tipA(`cf:${i}`, f.zh)}${f.sub ? `<em>${esc(sub.zh)}</em>` : ""}</li>`).join("")}</ul>`, "cfeat");
-	const tr = box("種族特性", `<ul class="flist">${d.linLabel ? `<li class="muted">${esc(d.linLabel)}</li>` : ""}${d.traits.map((t, i) => `<li>${tipA(`tr:${i}`, t.zh)}</li>`).join("")}
+	const tr = box(b.feature ? "種族與背景特性" : "種族特性", `<ul class="flist">${d.linLabel ? `<li class="muted">${esc(d.linLabel)}</li>` : ""}${d.traits.map((t, i) => `<li>${tipA(`tr:${i}`, t.zh)}</li>`).join("")}
 		${d.dv ? `<li class="muted">黑暗視覺 ${d.dv} 呎</li>` : ""}${d.resist.length ? `<li class="muted">抗性：${esc(d.resist.join("、"))}</li>` : ""}</ul>`);
 	const ft = box("專長", `<ul class="flist">${d.featList.map((f, i) => `<li>${tipA(`ft:${i}`, f.zh)}${f.note ? `<em>${esc(f.note)}</em>` : ""}<small class="src">${esc(f.src)}</small></li>`).join("")}</ul>`);
 	const pf = box("裝備與工具熟練", `<div class="arm"><span>護甲</span>${["light", "medium", "heavy", "shield"].map(a => `<span class="ck"><i class="dia ${d.armor.includes(a) ? "on" : ""}"></i>${d.armorZh[a]}</span>`).join("")}</div>
@@ -255,10 +268,13 @@ function tipContent(t) {
 			return {title: it.zh, sub, tx, url: link("items.html", it.en)};
 		}
 		case "cf": { const f = d.feats[+id]; return {title: f.zh, sub: `${f.lv} 級`, tx: f.tx}; }
-		case "tr": { const f = d.traits[+id]; return {title: f.zh, sub: spc(c).zh, tx: f.tx}; }
+		case "tr": { const f = d.traits[+id]; return {title: f.zh, sub: f.bg ? bgd(c).zh : spc(c).zh, tx: f.tx}; }
 		case "ft": { const f = d.featList[+id]; const fd = D.feats[f.k]; return {title: f.zh, sub: f.src, tx: f.tx, url: fd && link("feats.html", fd.en)}; }
-		case "bg": { const b = bgd(c); return {title: b.zh, sub: "背景", tx: [], url: link("backgrounds.html", b.id)}; }
-		case "sp": { const s = spc(c); return {title: s.zh, sub: "種族", tx: s.tr.map(t => `【${t.zh}】${t.tx.join(" ")}`), url: link("races.html", s.id)}; }
+		case "bg": { const b = bgd(c); return {title: b.zh, sub: `背景${srcTag(b)}`, tx: b.feature ? [`【${b.feature.zh}】${b.feature.tx.join(" ")}`] : [], url: link("backgrounds.html", b.id, (b.src || "xphb").toLowerCase())}; }
+		case "sp": {
+			const s = spc(c), lg = legacyOf(c);
+			return {title: lg ? `${s.zh}（${lg.zh}）` : s.zh, sub: `種族${srcTag(s)}`, tx: (lg ? lg.tr : s.tr).map(t => `【${t.zh}】${t.tx.join(" ")}`), url: lg ? null : link("races.html", s.id)};
+		}
 	}
 	return null;
 }
@@ -294,8 +310,8 @@ function bind() {
 				if (c[f] === v) return;
 				c[f] = v;
 				if (f === "cls") { c.feats = {}; c.sub = null; c.ex = {}; c.pin = {}; c.toolPick = {}; c.eqA = "A"; c.baseSet = c.bgSet = false; c.method = "array"; }
-				if (f === "sp") { c.lin = c.size = null; for (const p of ["spSkill", "langs"]) { delete c.pin?.[p]; delete c.ex?.[p]; } delete c.feats.hum; }
-				if (f === "bg") { c.bgSet = false; c.eqB = "A"; delete c.feats.bg; delete c.pin?.["toolPick.bg"]; }
+				if (f === "sp") { c.lin = c.size = null; for (const p of ["spSkill", "langs", "linPick"]) { delete c.pin?.[p]; delete c.ex?.[p]; } delete c.feats.hum; }
+				if (f === "bg") { c.bgSet = false; c.eqB = "A"; delete c.feats.bg; for (const p of Object.keys(c.pin || {})) if (/^(toolPick\.bg|bgSkill|bg111)/.test(p)) { delete c.pin[p]; delete c.ex?.[p]; } }
 			});
 			return;
 		}
@@ -370,6 +386,8 @@ function bind() {
 				}
 				setP(c, p, v);
 				if (p === "bgA" || p === "bgB") c.bgSet = true;
+				if (p === "lin") { for (const q of ["linPick", "spSkill"]) { delete c.pin?.[q]; delete c.ex?.[q]; } }
+				if (p === "sub") { for (const q of Object.keys(c.pin || {})) if (q.startsWith("subPick")) { delete c.pin[q]; delete c.ex?.[q]; } }
 				if (/^feats\.\w+\.k$/.test(p)) { const id = p.split(".")[1]; c.feats[id] = {k: v}; }
 				if (/^feats\.\w+\.list$/.test(p)) { const id = p.split(".")[1]; for (const k of ["can", "s1"]) delete c.pin?.[`feats.${id}.${k}`]; }
 				if (p.startsWith("spSkill.") || p.startsWith("toolPick.")) { c.pin ||= {}; c.pin[p.replace(/\.0$/, "")] = [v]; }

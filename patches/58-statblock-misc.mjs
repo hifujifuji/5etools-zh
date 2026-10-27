@@ -56,7 +56,7 @@ export default [
 			],
 			[
 				"				? `${isTitleCase ? \"Passive\" : \"passive\"} Perception ${passive}`\n				: (isForcePassive || mon.senses) ? \"\\u2014\" : \"\",\n		]\n			.filter(Boolean);\n		return pts.join(\", \");",
-				"				? `被動感知 ${passive}`\n				: (isForcePassive || mon.senses) ? \"\\u2014\" : \"\",\n		]\n			.filter(Boolean);\n		return pts.join(\"、\");",
+				"				? `被動察覺 ${passive}`\n				: (isForcePassive || mon.senses) ? \"\\u2014\" : \"\",\n		]\n			.filter(Boolean);\n		return pts.join(\"、\");",
 			],
 		],
 	},
