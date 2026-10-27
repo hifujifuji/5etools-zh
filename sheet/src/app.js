@@ -480,6 +480,9 @@ function dlMd() {
 
 function bind() {
 	document.addEventListener("click", e => {
+		// 點彈出視窗或選單以外的地方就關閉
+		if (e.target.id === "tip") { e.target.close(); return; }
+		for (const m of document.querySelectorAll("details.more[open]")) if (!m.contains(e.target)) m.removeAttribute("open");
 		const t = e.target.closest("button, a.tip");
 		if (!t) return;
 		const c = cur();
