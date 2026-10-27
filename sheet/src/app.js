@@ -288,7 +288,7 @@ function tipContent(t) {
 		case "spell": {
 			const s = D.spells[id];
 			const lv = s.l ? `${s.l} 環` : "戲法";
-			return {title: s.zh, sub: `${lv}　${s.time}　${s.range}　${s.comp}　${s.dur}${s.src ? `　${D.srcZh[s.src] || s.src}` : ""}`, tx: s.tx, url: link("spells.html", s.en, (s.src || "xphb").toLowerCase())};
+			return {title: s.zh, sub: `${lv}　${s.time}　${s.range}　${s.comp}　${s.dur}${s.src ? `　${D.srcZh[s.src] || s.src}` : ""}`, tx: s.mt ? [`構材：${s.mt}`, ...s.tx] : s.tx, url: link("spells.html", s.en, (s.src || "xphb").toLowerCase())};
 		}
 		case "item": {
 			const it = D.items[id];

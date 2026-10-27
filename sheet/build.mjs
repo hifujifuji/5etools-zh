@@ -2,6 +2,7 @@
 //   node sheet/build.mjs   需先執行 node scripts/build.mjs
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import {fileURLToPath} from "node:url";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -133,7 +134,12 @@ for (const file of fs.readdirSync(path.join(DATA, "spells")).filter(f => /^spell
 	const o = {zh: s.name_zh || s.name, en: s.name, l: s.level, sc: s.school, time, range, dur, cls: classes, tx: text};
 	if (d.concentration) o.c = 1;
 	if (s.meta?.ritual) o.r = 1;
-	if (s.components?.m) o.m = 1;
+	if (s.components?.m) {
+		o.m = 1;
+		const m = s.components.m;
+		const mt = stripTags(typeof m === "object" ? m.text || "" : m === true ? "" : String(m));
+		if (mt) o.mt = mt;
+	}
 	const comp = [s.components?.v && "V", s.components?.s && "S", s.components?.m && "M"].filter(Boolean).join("、");
 	o.comp = comp;
 	if (s.spellAttack) o.atk = s.spellAttack[0];
@@ -546,6 +552,14 @@ const out = {
 fs.mkdirSync(OUT, {recursive: true});
 fs.writeFileSync(path.join(OUT, "data.json"), JSON.stringify(out));
 for (const f of fs.readdirSync(path.join(HERE, "src"))) fs.copyFileSync(path.join(HERE, "src", f), path.join(OUT, f));
+// 檔名加上內容雜湊參數，更新後瀏覽器不會沿用舊的快取
+{
+	const ver = f => crypto.createHash("sha1").update(fs.readFileSync(path.join(OUT, f))).digest("hex").slice(0, 8);
+	const app = path.join(OUT, "app.js");
+	fs.writeFileSync(app, fs.readFileSync(app, "utf8").replace('fetch("data.json")', `fetch("data.json?v=${ver("data.json")}")`));
+	const idx = path.join(OUT, "index.html");
+	fs.writeFileSync(idx, fs.readFileSync(idx, "utf8").replace(/(href|src)="([\w.]+\.(?:js|css))"/g, (m, a, f) => `${a}="${f}?v=${ver(f)}"`));
+}
 
 // 檢查：引用到的物品、法術、專長都找得到
 const miss = new Set();
