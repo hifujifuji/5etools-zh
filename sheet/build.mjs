@@ -186,7 +186,7 @@ for (const f of rd("feats.json").feat.filter(f => inDef("feats", f.name, f.sourc
 	// 先決條件：另一個專長、施法能力、軍用武器熟練、種族、屬性值
 	for (const p of f.prerequisite || []) {
 		if (p.feat) o.preFeat = p.feat.map(key);
-		if (p.feature || p.spellcasting2020 || p.spellcasting || p.spellcastingFeature || p.spellcastingPrepared) o.preCast = 1;
+		if (p.feature?.some(x => /Spellcasting|Pact Magic/.test(x)) || p.spellcasting2020 || p.spellcasting || p.spellcastingFeature || p.spellcastingPrepared) o.preCast = 1;
 		if (p.proficiency?.some(x => x.weaponGroup === "martial")) o.preMartial = 1;
 		if (p.race) o.preRace = p.race.map(x => x.name.toLowerCase());
 		if (p.ability) o.preAb = p.ability.map(x => Object.entries(x)[0]);
@@ -200,6 +200,14 @@ for (const f of rd("feats.json").feat.filter(f => inDef("feats", f.name, f.sourc
 	if (lv) o.lv = Math.max(o.lv || 0, typeof lv === "object" ? lv.level || 1 : lv);
 	if (f.repeatable) o.rep = 1;
 	if (f.skillProficiencies) o.sk = 1;
+	// 專長給的法術（魔法學徒另外處理）；多組選項時（例如舊版儀式施法者）由玩家選一組
+	if (f.additionalSpells && !["magic initiate", "rune shaper"].includes(key(f.name))) {
+		const alts = f.additionalSpells.filter(a => !a.expanded).map(a => ({
+			cls: /^(\w+) Spells$/.exec(a.name || "")?.[1] || null, name: a.name || null,
+			sa: typeof a.ability === "string" ? a.ability : null, saCh: a.ability?.choose || null, ...spellPart(a),
+		})).filter(a => a.known.length || a.innate.length || a.choose.length);
+		if (alts.length) o.sp = alts;
+	}
 	feats[key(f.name)] = o;
 }
 
@@ -211,7 +219,22 @@ function chooseSpells(ch) {
 	if (ch.from) return ch.from.map(key).filter(k => spells[k]);
 	const q = Object.fromEntries(String(ch).split("|").map(x => x.split("=")));
 	const cl = q.class ? q.class[0].toUpperCase() + q.class.slice(1).toLowerCase() : null;
-	return Object.keys(spells).filter(k => (q.level == null || spells[k].l === +q.level) && (!cl || spells[k].cls.includes(cl)));
+	const sch = q.school ? q.school.split(";") : null;
+	const rit = /ritual/.test(q["components & miscellaneous"] || "");
+	return Object.keys(spells).filter(k => (q.level == null || spells[k].l === +q.level) && (!cl || spells[k].cls.includes(cl)) && (!sch || sch.includes(spells[k].sc)) && (!rit || spells[k].r));
+}
+// additionalSpells 的一組選項轉成 {known, innate, choose}；等級「_」視為 1 級，prepared 視為 known
+function spellPart(as) {
+	const known = [], choose = [], innate = [];
+	for (const part of ["known", "prepared", "innate"]) for (const [lv0, v] of Object.entries(as?.[part] || {})) {
+		const lv = /^\d+$/.test(lv0) ? +lv0 : 1;
+		const list = Array.isArray(v) ? v : Object.values(v).flatMap(x => (Array.isArray(x) ? x : typeof x === "object" ? Object.values(x).flat() : []));
+		for (const x of list) {
+			if (typeof x === "string") { const k = key(x.replace(/#.*$/, "")); if (spells[k]) (part === "innate" ? innate : known).push({lv, k}); }
+			else if (x?.choose) choose.push({lv, n: x.count || 1, pool: chooseSpells(x.choose), ...(part === "innate" ? {inn: 1} : {})});
+		}
+	}
+	return {known, innate, choose};
 }
 // 依引用字串（名稱|職業|職業來源|子職業|子職業來源|等級|特性來源）找出子職業特性，連同內含的子特性一起展開
 function subFeatures(d, refs) {

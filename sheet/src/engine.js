@@ -87,6 +87,14 @@ const featOptions = (slot, L, c) => Object.entries(D.feats).filter(([, f]) => f.
 		&& (!f.preRace || f.preRace.some(r => spcName(c).includes(r)))
 		&& (!f.preAb || f.preAb.some(([a, v]) => (abilityBase(c)[a] || 0) >= v))))).map(([k]) => k);
 // 種族名稱（含英文，給專長的種族先決條件比對）
+// 專長法術的施法屬性：寫明的屬性；可選時用專長提升的屬性，否則取最高的心智屬性
+const featSa = (c, a, f) => {
+	const ch = a.saCh || ["int", "wis", "cha"];
+	if (["str", "dex", "con", "int", "wis", "cha"].includes(a.sa)) return a.sa;
+	if (f.ab?.[0] && ch.includes(f.ab[0])) return f.ab[0];
+	const sc = abilityBase(c);
+	return [...ch].sort((x, y) => sc[y] - sc[x])[0];
+};
 const spcName = c => { const s = spc(c); return `${s.id} ${legacyOf(c)?.id || ""} ${c.lin || ""}`.toLowerCase(); };
 
 // ---- 自動補齊 ----
@@ -224,6 +232,18 @@ function fill(c) {
 			cur.s1 = freePick(c, `feats.${sl.id}.s1`, pool1, 1, SP_PRI[L1].s, known);
 			if (!["int", "wis", "cha"].includes(cur.sa)) cur.sa = ["int", "wis", "cha"].includes(k.sa) ? k.sa : byPri(["int", "wis", "cha"], pri)[0];
 		} else { delete cur.can; delete cur.s1; delete cur.list; delete cur.sa; }
+	}
+	// 其他專長給的法術：多組選項時預設與職業相同的那組，自選的部分預設推薦
+	for (const sl of slots) {
+		const cur = c.feats[sl.id], fd = D.feats[cur.k];
+		if (!fd?.sp) { delete cur.alt; delete cur.spc; continue; }
+		cur.alt = +cur.alt;
+		if (!(Number.isInteger(cur.alt) && cur.alt >= 0 && cur.alt < fd.sp.length)) cur.alt = Math.max(0, fd.sp.findIndex(a => a.cls === c.cls));
+		const a = fd.sp[cur.alt];
+		const sPri = [...(SP_PRI[c.cls]?.c || []), ...(SP_PRI[c.cls]?.s || []), ...SP_PRI.Wizard.c, ...SP_PRI.Wizard.s, ...SP_PRI.Cleric.s];
+		known.push(...a.known.map(x => x.k), ...a.innate.map(x => x.k));
+		cur.spc = a.choose.map((ch, i) => (ch.lv <= L ? freePick(c, `feats.${sl.id}.spc.${i}`, ch.pool, ch.n, sPri, known) : []));
+		known.push(...cur.spc.flat());
 	}
 	c.play ||= {};
 	return c;
@@ -516,6 +536,14 @@ function derive(c) {
 		for (const x of f.can) extraSpells.push({k: x, tag: "魔法學徒", sa: f.sa});
 		for (const x of f.s1) extraSpells.push({k: x, tag: "魔法學徒", sa: f.sa, note: "1 次／長休"});
 	}
+	for (const sl of featSlots(c)) {
+		const f = c.feats[sl.id], fd = D.feats[f?.k];
+		if (!fd?.sp) continue;
+		const a = fd.sp[f.alt || 0], sa = featSa(c, a, f);
+		for (const x of a.known) if (x.lv <= L) extraSpells.push({k: x.k, tag: fd.zh, sa});
+		for (const x of a.innate) if (x.lv <= L) extraSpells.push({k: x.k, tag: fd.zh, sa, note: D.spells[x.k]?.l ? "1 次／長休" : ""});
+		a.choose.forEach((ch, i) => { for (const x of f.spc?.[i] || []) extraSpells.push({k: x, tag: fd.zh, sa, note: ch.inn && D.spells[x]?.l ? "1 次／長休" : ""}); });
+	}
 	const spAb = sp ? sp.sa : null;
 	const spell = sp ? {ab: spAb, mod: m[spAb], dc: 8 + pb + m[spAb], atk: pb + m[spAb]} : null;
 	const addRow = (key, tag, extra = {}) => {
@@ -586,7 +614,7 @@ function derive(c) {
 	const coins = {gp: Math.floor(cp / 100), sp: Math.floor((cp % 100) / 10), cp: cp % 10};
 	return {
 		sc, m, pb, saves, skills, hp, ac: best, acOpts: opts, shield, speed, init, size: SIZE_ZH[c.size],
-		passive: 10 + sk("perception").v, attacks, spell, sp, spellRows, feats, res, wp,
+		passive: 10 + sk("perception").v, attacks, spell, sp, spellRows, extraSpells, feats, res, wp,
 		armor: [...aprof], armorZh, tools, langZh, traits, linLabel, resist, featList, items, coins,
 		dv: lg ? lg.dv : lin?.dv || s.dv, hd: k.hd, speedNote,
 	};

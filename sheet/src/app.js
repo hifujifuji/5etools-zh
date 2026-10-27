@@ -48,6 +48,13 @@ const skZh = id => D.skills.find(s => s.id === id)?.zh || id;
 const spZh = k => D.spells[k]?.zh || k;
 const itZh = k => D.items[k]?.zh || k;
 
+// 種族、背景、專長、子職業給的法術：像熟練一樣列成固定項目，依來源分組
+const otherSp = d => {
+	const g = new Map();
+	for (const e of d.extraSpells) (g.get(e.tag) || g.set(e.tag, []).get(e.tag)).includes(e.k) || g.get(e.tag).push(e.k);
+	return [...g].map(([tag, ks]) => `<p class="lab">${esc(tag)}</p>${chips("", ks, ks.map(x => [x, spZh(x)]), "", ks, "spell")}`).join("");
+};
+
 // ---- 建立角色面板 ----
 function renderBuild(c, d) {
 	const k = cls(c), s = spc(c), b = bgd(c), L = c.level;
@@ -156,6 +163,14 @@ function renderBuild(c, d) {
 			const n = f.k === "ability score improvement" ? 2 : 1;
 			for (let i = 0; i < n; i++) if (fd.ab.length > 1) ftBody += sel(`feats.${sl.id}.ab.${i}`, f.ab[i], fd.ab.map(a => [a, `${ABZH[a]} +1`]), "class=sm");
 		}
+		if (fd?.sp) {
+			const a = fd.sp[f.alt || 0];
+			if (fd.sp.length > 1) ftBody += `<label>法術選項${sel(`feats.${sl.id}.alt`, f.alt || 0, fd.sp.map((x, i) => [i, x.cls ? `${D.classes.find(k => k.id === x.cls)?.zh || x.cls}法術` : [...x.known, ...x.innate].map(y => spZh(y.k)).join("、") || `自選法術 ${i + 1}`]), "class=sm")}</label>`;
+			const fixedSp = [...a.known, ...a.innate].filter(x => x.lv <= L).map(x => x.k);
+			let b = fixedSp.length ? chips("", fixedSp, fixedSp.map(x => [x, spZh(x)]), "", fixedSp, "spell") : "";
+			a.choose.forEach((ch, i) => { if (ch.lv <= L) b += `<p class="lab">自選（${f.spc[i].length}／${ch.n}）</p>${chips(`feats.${sl.id}.spc.${i}`, f.spc[i], ch.pool.map(x => [x, spZh(x)]), "", [], "spell", ch.n)}`; });
+			if (b) ftBody += `<details data-k="fs-${sl.id}"><summary>專長法術：${[...fixedSp, ...f.spc.flat()].map(spZh).join("、")}</summary>${b}</details>`;
+		}
 		if (f.k === "magic initiate") {
 			const LZ = {cleric: "牧師", druid: "德魯伊", wizard: "法師"};
 			ftBody += `<div class="row"><label>法術列表${sel(`feats.${sl.id}.list`, f.list, Object.entries(LZ), "class=sm")}</label><label>施法屬性${sel(`feats.${sl.id}.sa`, f.sa, ["int", "wis", "cha"].map(a => [a, ABZH[a]]), "class=sm")}</label></div>`;
@@ -180,8 +195,9 @@ function renderBuild(c, d) {
 			spB += `<details data-k="sp-${lv}" ${lv === sp.maxLv || lv === 1 ? "open" : ""}><summary>${lv} 環（已選 ${n}）</summary>${chips("prepared", c.prepared, byPri(list, SP_PRI[sp.list].s).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell", sp.nP)}</details>`;
 		}
 		spB += `<button type="button" class="link" data-act="resetSpells">重新推薦法術</button>`;
+		spB += otherSp(d);
 		out.push(sec("法術", spB, "點選加入或取消"));
-	}
+	} else if (d.extraSpells.length) out.push(sec("法術", otherSp(d)));
 	// 裝備
 	const eqDesc = lst => lst.map(e => e.gp != null ? `${e.gp / 100} GP` : e.special || (e.choose ? "樂器／工具" : `${itZh(e.k)}${e.q > 1 ? `×${e.q}` : ""}`)).join("、");
 	let eqB = `<p class="lab">職業起始裝備</p><div class="opts">${Object.entries(k.eq).map(([o, lst]) => `<button type="button" class="opt ${c.eqA === o ? "on" : ""}" data-set="eqA" data-v="${o}"><b>${o}</b>${esc(eqDesc(lst))}</button>`).join("")}</div>`;
@@ -586,6 +602,7 @@ function bind() {
 				if (p === "lin") { for (const q of ["linPick", "spSkill"]) { delete c.pin?.[q]; delete c.ex?.[q]; delete c.free?.[q]; } }
 				if (p === "sub") { for (const q of Object.keys(c.pin || {})) if (q.startsWith("subPick")) { delete c.pin[q]; delete c.ex?.[q]; delete c.free?.[q]; } }
 				if (/^feats\.\w+\.k$/.test(p)) { const id = p.split(".")[1]; c.feats[id] = {k: v}; for (const q of Object.keys(c.free || {})) if (q.startsWith(`feats.${id}.`)) { delete c.free[q]; delete c.pin?.[q]; } }
+				if (/^feats\.\w+\.alt$/.test(p)) { const id = p.split(".")[1]; for (const q of Object.keys(c.pin || {})) if (q.startsWith(`feats.${id}.spc`)) { delete c.pin[q]; delete c.free?.[q]; delete c.ex?.[q]; } }
 				if (/^feats\.\w+\.list$/.test(p)) { const id = p.split(".")[1]; for (const k of ["can", "s1"]) { delete c.pin?.[`feats.${id}.${k}`]; delete c.free?.[`feats.${id}.${k}`]; } }
 				if (p.startsWith("spSkill.") || p.startsWith("toolPick.")) { c.pin ||= {}; c.pin[p.replace(/\.0$/, "")] = [v]; }
 			});
