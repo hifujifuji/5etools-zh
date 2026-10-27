@@ -88,6 +88,9 @@ const spcName = c => { const s = spc(c); return `${s.id} ${legacyOf(c)?.id || ""
 
 // ---- 自動補齊 ----
 function fill(c) {
+	// 資料移除的種族、背景（例如不再收錄的書）改回預設
+	if (!spc(c)) { c.sp = "Human"; c.lin = null; }
+	if (!bgd(c)) c.bg = "Soldier";
 	const k = cls(c), s = spc(c), b = bgd(c), L = c.level;
 	// 子職業
 	if (!k.subs.some(x => x.id === c.sub)) c.sub = k.subs[0].id;

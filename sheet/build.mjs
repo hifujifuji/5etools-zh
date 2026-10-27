@@ -112,6 +112,10 @@ const lookupAll = rd("generated/gendata-spell-source-lookup.json");
 const spells = {};
 // 所有正式書籍的法術（略過已被重印、UA 與 Plane Shift）；職業法術表依 2024 版職業與艾伯倫奇械師
 const isUA = s => /^(UA|XUA|PS[A-Z])/.test(s || "");
+// 非被遺忘的國度世界觀的書不收錄（奇械師與機關人例外）
+const OFF_CFG = JSON.parse(fs.readFileSync(path.join(HERE, "../scripts/off-settings.json"), "utf8"));
+const OFF = new Set(OFF_CFG.sources);
+const offKeep = (kind, name, src) => OFF_CFG.keep.includes(`${kind}|${name}|${src}`);
 for (const file of fs.readdirSync(path.join(DATA, "spells")).filter(f => /^spells-.*\.json$/.test(f))) for (const s of rd(`spells/${file}`).spell) {
 	if (s.reprintedAs || isUA(s.source)) continue;
 	const k = key(s.name);
@@ -131,6 +135,7 @@ for (const file of fs.readdirSync(path.join(DATA, "spells")).filter(f => /^spell
 	const dur = d.type === "instant" ? "立即" : d.type === "permanent" ? "永久" : d.type === "special" ? "特殊" : d.duration ? `${d.concentration ? "專注，" : ""}${d.duration.amount} ${{round: "輪", minute: "分鐘", hour: "小時", day: "天"}[d.duration.type] || d.duration.type}` : "";
 	const text = toText(s.entries);
 	if (s.entriesHigherLevel) text.push(...toText(s.entriesHigherLevel));
+	if (OFF.has(s.source) && !(s.source === "EFA" && classes.includes("Artificer"))) continue;
 	const o = {zh: s.name_zh || s.name, en: s.name, l: s.level, sc: s.school, time, range, dur, cls: classes, tx: text};
 	if (d.concentration) o.c = 1;
 	if (s.meta?.ritual) o.r = 1;
@@ -158,7 +163,7 @@ const ANY_TOOL = {anyArtisansTool: "toolArtisan", "musical instrument": "instrum
 // ---- 來源 ----
 // 5etools 種族、背景、專長頁預設列出的條目（defaults.json）；同名時 2024 玩家手冊優先，其次是較新的書
 const DEF = JSON.parse(fs.readFileSync(path.join(HERE, "defaults.json"), "utf8"));
-const inDef = (list, name, src) => DEF[list].includes(`${name}_${src}`.toLowerCase());
+const inDef = (list, name, src) => (!OFF.has(src) || offKeep({races: "race", backgrounds: "background", feats: "feat"}[list], name, src)) && DEF[list].includes(`${name}_${src}`.toLowerCase());
 const srcDate = {}, srcZh = {};
 const uiDict = JSON.parse(fs.readFileSync(path.join(HERE, "..", "i18n", "ui.json"), "utf8")).dict || {};
 const ZH_FIX = {EFA: "艾伯倫：奇械師熔爐", LFL: "洛溫：初光", AAG: "星界冒險者指南", SatO: "印記城與外域", LLK: "柯瓦利許的失落實驗室", "AitFR-AVT": "被遺忘的國度冒險：翠綠之墓", FRHoF: "費倫英雄", SCAG: "劍灣冒險者指南", ABH: "阿斯代倫的飢渴之書", DSotDQ: "龍槍：龍后之影"};
@@ -262,7 +267,7 @@ for (const fn of fs.readdirSync(path.join(DATA, "class")).filter(f => /^class-.*
 		const sp = c.startingProficiencies;
 		// 子職業：5etools 該職業頁預設列出的（同職業版本、未被重印、非 UA）；同名時取較新的書
 		const twinRep = s => (d.subclass || []).some(x => x.name === s.name && x.source === s.source && x.reprintedAs);
-		const subPool = (d.subclass || []).filter(s => s.classSource === CS && !twinRep(s) && !isUA(s.source)).sort((a, b) => newer(a.source, b.source));
+		const subPool = (d.subclass || []).filter(s => s.classSource === CS && !twinRep(s) && !isUA(s.source) && (!OFF.has(s.source) || offKeep("class", c.name, CS))).sort((a, b) => newer(a.source, b.source));
 		const subclasses = subPool.filter((s, i) => subPool.findIndex(x => x.name === s.name) === i).map(s => {
 			const legacy = s.source !== CS;
 			// 舊書子職業（SCAG）沿用 2014 版的資料，以 _copy 指向原版
@@ -536,7 +541,7 @@ backgrounds.sort((x, y) => (x.src ? 1 : 0) - (y.src ? 1 : 0) || (BG_ORDER.get(x.
 // ---- 技能、語言、工具 ----
 const skills = rd("skills.json").skill.filter(isX).map(s => ({id: s.name.toLowerCase(), zh: s.name_zh || s.name, ab: s.ability}));
 const languages = [];
-for (const l of languagesAll.filter(l => !isUA(l.source)).sort((a, b) => newer(a.source, b.source))) {
+for (const l of languagesAll.filter(l => !isUA(l.source) && !OFF.has(l.source)).sort((a, b) => newer(a.source, b.source))) {
 	if (languages.some(x => x.id === l.name)) continue;
 	languages.push({id: l.name, zh: l.name_zh || l.name, ...(isX(l) && l.type === "standard" ? {std: 1} : {})});
 }
