@@ -41,7 +41,7 @@ const info = tip => `<button type="button" class="info" data-tip="${esc(tip)}" a
 const chips = (path, list, pool, label, fixed = [], tip = null, max = 0) => `<div class="chips">${pool.map(([v, l]) => {
 	const f = fixed.includes(v);
 	const btn = `<button type="button" class="chip ${list.includes(v) ? "on" : ""} ${f ? "fixed" : ""}" ${f ? "disabled" : `data-chip="${path}" data-v="${esc(v)}"${max ? ` data-max="${max}"` : ""}`}>${esc(l)}</button>`;
-	return tip ? `<span class="cw ${list.includes(v) || f ? "on" : ""}">${btn}${info(`${tip}:${v}`)}</span>` : btn;
+	return tip ? `<span class="cw ${list.includes(v) && !f ? "on" : ""}">${btn}${info(`${tip}:${v}`)}</span>` : btn;
 }).join("")}</div>`;
 const sec = (title, body, extra = "") => `<section class="b-sec"><h3>${title}${extra ? `<span class="hint">${extra}</span>` : ""}</h3>${body}</section>`;
 const skZh = id => D.skills.find(s => s.id === id)?.zh || id;
