@@ -104,6 +104,19 @@ const featSa = (c, a, f) => {
 	const sc = abilityBase(c);
 	return [...ch].sort((x, y) => sc[y] - sc[x])[0];
 };
+// 種族、專長給的法術（取上一次補齊的結果），職業戲法與準備法術不再重複選
+function otherSpells(c) {
+	const L = c.level, lg = legacyOf(c), lin = lineageOf(c), out = [...(c.linPick || [])];
+	if (lg?.sp) for (const x of [...lg.sp.known, ...lg.sp.innate]) if (x.lv <= L) out.push(x.k);
+	const src = lin?.sp || LINEAGE[c.sp]?.sp;
+	if (src) for (const [lv, arr] of Object.entries(src)) if (+lv <= L) out.push(...arr);
+	for (const f of Object.values(c.feats || {})) {
+		out.push(...(f.can || []), ...(f.s1 || []), ...(f.spc || []).flat());
+		const a = D.feats[f.k]?.sp?.[f.alt || 0];
+		if (a) for (const x of [...a.known, ...a.innate]) if (x.lv <= L) out.push(x.k);
+	}
+	return uniq(out);
+}
 const spcName = c => { const s = spc(c); return `${s.id} ${legacyOf(c)?.id || ""} ${c.lin || ""}`.toLowerCase(); };
 
 // ---- 自動補齊 ----
@@ -221,8 +234,9 @@ function fill(c) {
 	// 法術
 	const sp = spellInfo(c);
 	if (sp) {
-		c.cantrips = freePick(c, "cantrips", sp.poolC, sp.nC, SP_PRI[sp.list].c, sp.alwaysKeys);
-		c.prepared = FREE(c, "prepared") ? freePick(c, "prepared", sp.poolS, sp.nP, [], sp.alwaysKeys) : pickPrepared(PIN(c, "prepared"), sp, EX(c, "prepared"));
+		const other = otherSpells(c);
+		c.cantrips = freePick(c, "cantrips", sp.poolC, sp.nC, SP_PRI[sp.list].c, [...sp.alwaysKeys, ...other]);
+		c.prepared = FREE(c, "prepared") ? freePick(c, "prepared", sp.poolS, sp.nP, [], [...sp.alwaysKeys, ...other]) : pickPrepared(PIN(c, "prepared").filter(x => !other.includes(x)), sp, [...EX(c, "prepared"), ...other]);
 	} else { c.cantrips = []; c.prepared = []; }
 	c.arcanum = Object.fromEntries(arcanumLevels(c).map(sl => [sl, freePick(c, `arcanum.${sl}`, arcanumPool(sl), 1, SP_PRI.Warlock?.s || [])]));
 	const bk = bookChoice(c);

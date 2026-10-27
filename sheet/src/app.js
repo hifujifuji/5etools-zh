@@ -38,8 +38,10 @@ const sel = (name, val, opts, attrs = "") => `<select data-set="${name}" ${attrs
 // 資訊小按鈕：開啟說明視窗（法術、專長、種族、背景、子職業共用）
 const info = tip => `<button type="button" class="info" data-tip="${esc(tip)}" aria-label="說明" title="說明">i</button>`;
 // max：自由選擇（法術），點選加入或取消，最多 max 個
+// 角色已經從其他地方得到的法術：在可選的法術清單中顯示為固定項目，不能重複選（法術書例外）
+let ownedSp = new Set();
 const chips = (path, list, pool, label, fixed = [], tip = null, max = 0) => `<div class="chips">${pool.map(([v, l]) => {
-	const f = fixed.includes(v);
+	const f = fixed.includes(v) || (max && tip === "spell" && path !== "subBook" && ownedSp.has(v) && !list.includes(v));
 	const btn = `<button type="button" class="chip ${list.includes(v) ? "on" : ""} ${f ? "fixed" : ""}" ${f ? "disabled" : `data-chip="${path}" data-v="${esc(v)}"${max ? ` data-max="${max}"` : ""}`}>${esc(l)}</button>`;
 	return tip ? `<span class="cw ${list.includes(v) && !f ? "on" : ""}">${btn}${info(`${tip}:${v}`)}</span>` : btn;
 }).join("")}</div>`;
@@ -57,6 +59,7 @@ const otherSp = d => {
 
 // ---- 建立角色面板 ----
 function renderBuild(c, d) {
+	ownedSp = new Set(d.spellRows.map(r => r.k));
 	const k = cls(c), s = spc(c), b = bgd(c), L = c.level;
 	const out = [];
 	out.push(sec("角色", `
