@@ -1,6 +1,7 @@
-// 把 dist/ 發佈到 gh-pages 分支，給 GitHub Pages 用
-//   node scripts/deploy.mjs            建置結果 commit 到 gh-pages 並 push
-//   node scripts/deploy.mjs --no-push  只 commit，不 push
+// 把 dist/ 發佈到 Cloudflare（https://5etools-zh.graphia.workers.dev/）
+//   node scripts/deploy.mjs               用 wrangler 上傳到 Cloudflare
+//   node scripts/deploy.mjs --gh-pages    改發佈到 gh-pages 分支（GitHub Pages）
+//   node scripts/deploy.mjs --gh-pages --no-push  只 commit，不 push
 import {execFileSync} from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
@@ -15,6 +16,13 @@ const sh = (args, cwd = ROOT) => execFileSync("git", args, {cwd, stdio: "inherit
 const out = (args, cwd = ROOT) => execFileSync("git", args, {cwd, encoding: "utf8"}).trim();
 
 if (!fs.existsSync(path.join(DIST, "index.html"))) throw new Error("找不到 dist/，請先執行 node scripts/build.mjs");
+
+if (!process.argv.includes("--gh-pages")) {
+	// 設定在 wrangler.jsonc（assets.directory 指向 dist/）
+	execFileSync("npx", ["-y", "wrangler@4.153.0", "deploy"], {cwd: ROOT, stdio: "inherit"});
+	console.log("已部署到 https://5etools-zh.graphia.workers.dev/");
+	process.exit(0);
+}
 
 // gh-pages 放在獨立的 worktree（.deploy/），不影響主分支
 if (!fs.existsSync(WT)) {

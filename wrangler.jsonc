@@ -1,0 +1,11 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "5etools-zh",
+  "compatibility_date": "2026-10-19",
+  // 關掉每個版本各自的預覽網址，舊版本才不會被連到
+  "preview_urls": false,
+  // 只上傳建置結果
+  "assets": {
+    "directory": "dist"
+  }
+}

@@ -210,6 +210,9 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	}
 }
 
+const RECIPE_TYPE = {"Uncommon Cuisine": "異域料理", "Human": "人類料理", "Dwarven": "矮人料理", "Elven": "精靈料理", "Halfling": "半身人料理", "Elixir/Ale": "藥酒與麥酒", "Sigil": "印記城", "Ravenloft": "鴉閣", "Solamnia": "索蘭尼亞", "The Feywild": "妖精荒野", "Lost in Realmspace": "迷失國度星域", "The Rock of Bral": "布拉爾之岩", "The Yawning Portal": "呵欠門酒館", "The Driftwood Tavern": "浮木酒館", "The Hearth": "爐火廳", "The Hissing Stones": "嘶石浴場", "The Moonstone Mask": "月石面具", "The Low Lantern": "低燈籠號", "The Gilded Horseshoe": "鍍金馬蹄酒館", "The Pink Flumph Theater": "粉紅呋嚕劇院", "The Halfway Inn": "半途旅店", "One-Eyed Jax": "獨眼傑克斯"};
+const DISH_TYPE = {snack: "點心", cocktail: "調酒", entree: "主菜", side: "配菜", dessert: "甜點", libation: "酒飲", soup: "湯品", bread: "麵包", drink: "飲品", appetizer: "開胃菜", sweet: "甜食", pastry: "糕點", salad: "沙拉"};
+const ALLERGEN = {nuts: "堅果", gluten: "麩質", sulphites: "亞硫酸鹽", crustaceans: "甲殼類", molluscs: "軟體動物", mustard: "芥末", milk: "乳製品", eggs: "蛋", fish: "魚類", celery: "芹菜", lupin: "羽扇豆", peanuts: "花生", soya: "大豆", sesame: "芝麻"};
 // ---- 3⁗ʹ. 異教中文簡介（i18n/cult-intro.json，鍵「英文名|來源」）：長篇設定敘事不全文翻譯，改以本站自撰的概述置頂，原文保留 ----
 {
 	const intro = {...readJson(path.join(I18N, "cult-intro.json")), ...readJson(path.join(I18N, "vehicle-intro.json")), ...readJson(path.join(I18N, "language-intro.json"))};
@@ -218,6 +221,17 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	for (const {json} of loaded) for (const p of ["cult", "boon", "vehicleUpgrade", "language"]) for (const c of json[p] || []) {
 		const t = intro[`${c.name}|${c.source}`];
 		if (t && Array.isArray(c.entries)) { c.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(t)}); bump("cultIntro", "full"); }
+	}
+	// 食譜：只給中文名（glossary names.recipe）與簡介（i18n/recipe-intro.json），簡介置於作法欄最前
+	const recipeIntro = readJson(path.join(I18N, "recipe-intro.json"));
+	for (const {json} of loaded) for (const r of json.recipe || []) {
+		const t = recipeIntro[`${r.name}|${r.source}`];
+		if (t && Array.isArray(r.instructions)) { r.instructions.unshift({type: "inset", name: "中文簡介", entries: [].concat(t)}); bump("recipeIntro", "full"); }
+		// 類別、菜色、過敏原只用於顯示與篩選，直接換成中文
+		if (RECIPE_TYPE[r.type]) r.type = RECIPE_TYPE[r.type];
+		if (Array.isArray(r.dishTypes)) r.dishTypes = r.dishTypes.map(d => DISH_TYPE[d] ?? d);
+		if (Array.isArray(r.allergenGroups)) r.allergenGroups = r.allergenGroups.map(a => ALLERGEN[a] ?? a);
+		if (r.serves?.note) r.serves.note = r.serves.note.replace(/^as an? (snack|appetizer)$/, (_, w) => w === "snack" ? "作為點心" : "作為開胃菜").replace(/^or 1 (\{@creature [^}]+\})$/, "或 1 位$1");
 	}
 }
 
