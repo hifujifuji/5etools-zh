@@ -109,9 +109,15 @@ const eqList = arr => arr.map(e => {
 // ---- 法術 ----
 const lookupAll = rd("generated/gendata-spell-source-lookup.json");
 const spells = {};
-for (const [lk, file] of [["xphb", "spells-xphb.json"], ["frhof", "spells-frhof.json"]]) for (const s of rd(`spells/${file}`).spell) {
+// 所有正式書籍的法術（略過已被重印、UA 與 Plane Shift）；職業法術表依 2024 版職業與艾伯倫奇械師
+const isUA = s => /^(UA|XUA|PS[A-Z])/.test(s || "");
+for (const file of fs.readdirSync(path.join(DATA, "spells")).filter(f => /^spells-.*\.json$/.test(f))) for (const s of rd(`spells/${file}`).spell) {
+	if (s.reprintedAs || isUA(s.source)) continue;
 	const k = key(s.name);
-	const classes = Object.keys(lookupAll[lk]?.[k]?.class?.XPHB || {});
+	if (spells[k] && s.source !== SRC) continue;
+	const lk = s.source.toLowerCase();
+	const cl = lookupAll[lk]?.[k]?.class || {};
+	const classes = [...Object.keys(cl.XPHB || {}), ...Object.keys(cl.EFA || {})];
 	const t = s.time?.[0];
 	const r = s.range;
 	let range = "";
@@ -138,27 +144,49 @@ for (const [lk, file] of [["xphb", "spells-xphb.json"], ["frhof", "spells-frhof.
 		o.scale = sd.scaling;
 	}
 	if (s.time?.[0]?.condition) o.cond = 1;
-	if (lk !== "xphb") o.src = s.source;
+	if (s.source !== SRC) o.src = s.source;
 	spells[k] = o;
 }
 
+const ANY_TOOL = {anyArtisansTool: "toolArtisan", "musical instrument": "instrumentMusical", anyMusicalInstrument: "instrumentMusical", "gaming set": "setGaming", anyGamingSet: "setGaming"};
+// ---- 來源 ----
+// 5etools 種族、背景、專長頁預設列出的條目（defaults.json）；同名時 2024 玩家手冊優先，其次是較新的書
+const DEF = JSON.parse(fs.readFileSync(path.join(HERE, "defaults.json"), "utf8"));
+const inDef = (list, name, src) => DEF[list].includes(`${name}_${src}`.toLowerCase());
+const srcDate = {}, srcZh = {};
+const uiDict = JSON.parse(fs.readFileSync(path.join(HERE, "..", "i18n", "ui.json"), "utf8")).dict || {};
+const ZH_FIX = {EFA: "艾伯倫：奇械師熔爐", LFL: "洛溫：初光", AAG: "星界冒險者指南", SatO: "印記城與外域", LLK: "柯瓦利許的失落實驗室", "AitFR-AVT": "被遺忘的國度冒險：翠綠之墓", FRHoF: "費倫英雄", SCAG: "劍灣冒險者指南", ABH: "阿斯代倫的飢渴之書", DSotDQ: "龍槍：龍后之影"};
+for (const b of [...rd("books.json").book, ...rd("adventures.json").adventure]) {
+	srcDate[b.id] = b.published || "";
+	srcZh[b.id] = ZH_FIX[b.id] || uiDict[b.name] || b.name;
+}
+const newer = (a, b) => (a === SRC ? -1 : b === SRC ? 1 : (srcDate[b] || "").localeCompare(srcDate[a] || ""));
+
 // ---- 專長 ----
 const feats = {};
-for (const f of rd("feats.json").feat.filter(f => f.source === SRC || f.source === "FRHoF")) {
-	const o = {zh: f.name_zh || f.name, en: f.name, cat: [].concat(f.category), tx: toText(f.entries)};
+const ABN = {str: 1, dex: 1, con: 1, int: 1, wis: 1, cha: 1};
+for (const f of rd("feats.json").feat.filter(f => inDef("feats", f.name, f.source)).sort((a, b) => newer(a.source, b.source))) {
+	if (feats[key(f.name)]) continue;
+	// 2014 版專長沒有類別，依 2024 規則當作通用專長（4 級起）
+	const legacy = !f.category;
+	const o = {zh: f.name_zh || f.name, en: f.name, cat: legacy ? ["G"] : [].concat(f.category), tx: toText(f.entries)};
 	if (f.source !== SRC) o.src = f.source;
-	// 先決條件：需要另一個專長、施法能力或軍用武器熟練
+	if (legacy) o.lv = 4;
+	// 先決條件：另一個專長、施法能力、軍用武器熟練、種族、屬性值
 	for (const p of f.prerequisite || []) {
 		if (p.feat) o.preFeat = p.feat.map(key);
-		if (p.feature || p.spellcasting2020 || p.spellcasting) o.preCast = 1;
+		if (p.feature || p.spellcasting2020 || p.spellcasting || p.spellcastingFeature || p.spellcastingPrepared) o.preCast = 1;
 		if (p.proficiency?.some(x => x.weaponGroup === "martial")) o.preMartial = 1;
+		if (p.race) o.preRace = p.race.map(x => x.name.toLowerCase());
+		if (p.ability) o.preAb = p.ability.map(x => Object.entries(x)[0]);
 	}
 	if (f.ability) {
 		const a = f.ability[0];
-		if (a.choose?.from) o.ab = a.choose.from; else o.ab = Object.keys(a).filter(x => x !== "max");
+		o.ab = (a.choose?.from || Object.keys(a)).filter(x => ABN[x]);
+		if (!o.ab.length) delete o.ab;
 	}
 	const lv = f.prerequisite?.find(p => p.level)?.level;
-	if (lv) o.lv = lv;
+	if (lv) o.lv = Math.max(o.lv || 0, typeof lv === "object" ? lv.level || 1 : lv);
 	if (f.repeatable) o.rep = 1;
 	if (f.skillProficiencies) o.sk = 1;
 	feats[key(f.name)] = o;
@@ -203,8 +231,9 @@ const ABIL = ["str", "dex", "con", "int", "wis", "cha"];
 const classes = [];
 for (const fn of fs.readdirSync(path.join(DATA, "class")).filter(f => /^class-.*\.json$/.test(f))) {
 	const d = rd(`class/${fn}`);
-	for (const c of (d.class || []).filter(isX)) {
-		const featIdx = new Map((d.classFeature || []).filter(f => f.classSource === SRC && f.source === SRC).map(f => [`${f.name}|${f.level}`, f]));
+	for (const c of (d.class || []).filter(c => isX(c) || (c.name === "Artificer" && c.source === "EFA"))) {
+		const CS = c.source;
+		const featIdx = new Map((d.classFeature || []).filter(f => f.classSource === CS && f.source === CS).map(f => [`${f.name}|${f.level}`, f]));
 		const features = [];
 		for (const ref of c.classFeatures) {
 			const r = typeof ref === "string" ? ref : ref.classFeature;
@@ -225,18 +254,23 @@ for (const fn of fs.readdirSync(path.join(DATA, "class")).filter(f => /^class-.*
 			});
 		}
 		const sp = c.startingProficiencies;
-		const subclasses = (d.subclass || []).filter(s => s.classSource === SRC && SUB_SRC.includes(s.source) && !s.reprintedAs).map(s => {
-			const legacy = s.source !== SRC;
+		// 子職業：5etools 該職業頁預設列出的（同職業版本、未被重印、非 UA）；同名時取較新的書
+		const twinRep = s => (d.subclass || []).some(x => x.name === s.name && x.source === s.source && x.reprintedAs);
+		const subPool = (d.subclass || []).filter(s => s.classSource === CS && !twinRep(s) && !isUA(s.source)).sort((a, b) => newer(a.source, b.source));
+		const subclasses = subPool.filter((s, i) => subPool.findIndex(x => x.name === s.name) === i).map(s => {
+			const legacy = s.source !== CS;
 			// 舊書子職業（SCAG）沿用 2014 版的資料，以 _copy 指向原版
 			const orig = s._copy ? d.subclass.find(x => x.name === s._copy.name && x.source === s._copy.source && x.classSource === s._copy.classSource) : null;
-			const fs_ = legacy ? subFeatures(d, s.subclassFeatures || orig?.subclassFeatures || [])
-				: (d.subclassFeature || []).filter(f => f.classSource === SRC && f.subclassSource === SRC && f.subclassShortName === s.shortName)
+			const refs = s.subclassFeatures || orig?.subclassFeatures || [];
+			// 2014 版的子職業（特性引用 2014 版職業）在 1、2 級取得的能力，2024 版統一延到 3 級
+			const old = !!s._copy || refs.some(x => ["", "PHB", "TCE"].includes((typeof x === "string" ? x : x.subclassFeature).split("|")[2]));
+			const fs_ = legacy ? subFeatures(d, refs)
+				: (d.subclassFeature || []).filter(f => f.classSource === CS && f.subclassSource === CS && f.subclassShortName === s.shortName)
 					.map(f => ({lv: f.level, en: f.name, zh: f.name_zh || f.name, tx: toText(f.entries)}));
 			const o = {id: legacy ? `${s.shortName}|${s.source}` : s.shortName, zh: (s.name_zh || s.name).replace(/\u200b/g, ""), en: s.name, f: fs_};
 			if (legacy) o.src = s.source;
-			let addSp = s.additionalSpells || (s.source === "SCAG" ? (orig || d.subclass.find(x => x.name === s.name && x.source === s.source && x.classSource === "PHB"))?.additionalSpells : null);
-			// 2014 版子職業在 1、2 級取得的能力，2024 版統一延到 3 級
-			const lvFix = v => (legacy ? Math.max(3, +v) : +v);
+			const addSp = s.additionalSpells || (old ? (orig || d.subclass.find(x => x.name === s.name && x.source === s.source && x.classSource === "PHB"))?.additionalSpells : null);
+			const lvFix = v => (old ? Math.max(3, +v) : +v);
 			const as = addSp?.[0];
 			const strs = v => (Array.isArray(v) ? v : Object.values(v || {}).flat()).filter(x => typeof x === "string").map(key);
 			if (as?.prepared) {
@@ -280,10 +314,13 @@ for (const fn of fs.readdirSync(path.join(DATA, "class")).filter(f => /^class-.*
 			always: c.additionalSpells?.[0]?.prepared ? Object.fromEntries(Object.entries(c.additionalSpells[0].prepared).map(([k, v]) => [k, v.filter(x => typeof x === "string").map(key)])) : null,
 			featProg: (c.featProgression || []).map(f => ({zh: f.name_zh || f.name, cat: f.category, prog: f.progression})),
 			subTitle: c.subclassTitle, table, f: features, subs: subclasses,
+			...(CS !== SRC ? {src: CS} : {}),
+			toolFix: Object.entries(sp.toolProficiencies?.[0] || {}).filter(([, v]) => v === true).map(([k]) => key(k)),
+			toolAny: Object.entries(sp.toolProficiencies?.[0] || {}).filter(([k, v]) => typeof v === "number").map(([k, v]) => ({from: ANY_TOOL[k], n: v})).filter(x => x.from),
 		});
 	}
 }
-const ORDER = ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"];
+const ORDER = ["Artificer", "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"];
 classes.sort((a, b) => ORDER.indexOf(a.id) - ORDER.indexOf(b.id));
 
 // ---- 種族 ----
@@ -293,114 +330,146 @@ const species = racesJson.race.filter(isX).map(r => ({
 	res: (r.resist || []).filter(x => typeof x === "string"),
 	tr: r.entries.filter(e => e.name).map(e => ({en: e.name, zh: e.name_zh || e.name, tx: toText(e.entries || [])})),
 }));
-// 舊版種族（劍灣冒險者指南）：以 2014 玩家手冊的種族為底，套上亞種與變體；屬性值加值依 2024 規則忽略
-const SKIP_TR = new Set(["Age", "Alignment", "Size", "Speed", "Languages", "Ability Score Increase", "Appearance"]);
+// 其他書的種族：依 5etools 預設清單（種族＋亞種合併），屬性值加值依 2024 規則一律忽略
+const SKIP_TR = new Set(["Age", "Alignment", "Size", "Speed", "Languages", "Ability Score Increase", "Ability Score Increases", "Appearance", "Creature Type"]);
 const spellRefs = as => {
 	const known = [], choose = [], innate = [];
 	for (const part of ["known", "innate"]) for (const [lv, v] of Object.entries(as?.[part] || {})) {
-		const list = Array.isArray(v) ? v : Object.values(v).flatMap(x => (Array.isArray(x) ? x : Object.values(x).flat()));
+		const list = Array.isArray(v) ? v : Object.values(v).flatMap(x => (Array.isArray(x) ? x : typeof x === "object" ? Object.values(x).flat() : []));
 		for (const x of list) {
-			if (typeof x === "string") (part === "known" ? known : innate).push({lv: +lv, k: key(x.replace(/#.*$/, ""))});
+			if (typeof x === "string") { const k = key(x.replace(/#.*$/, "")); if (spells[k]) (part === "known" ? known : innate).push({lv: +lv, k}); }
 			else if (x?.choose) choose.push({lv: +lv, n: x.count || 1, pool: chooseSpells(x.choose)});
 		}
 	}
 	return {known, innate, choose};
 };
+const languagesAll = rd("languages.json").language;
 const langOf = lp => {
 	const fixed = [], o = {fixed, any: 0};
 	for (const l of lp || []) for (const [k, v] of Object.entries(l)) {
-		if (k === "anyStandard") o.any += v;
-		else if (k !== "common" && v === true) fixed.push(languagesJson.find(x => x.name.toLowerCase() === k)?.name || k);
+		if (k === "anyStandard" || k === "any" || k === "anyLanguage") o.any += typeof v === "number" ? v : 1;
+		else if (k === "choose") o.any += v.count || 1;
+		else if (k !== "common" && v === true) fixed.push(languagesAll.find(x => x.name.toLowerCase() === k)?.name || k.replace(/\b\w/g, m => m.toUpperCase()));
 	}
 	return o;
 };
-const languagesJson = rd("languages.json").language.filter(isX);
-const legacyGroups = new Map();
-for (const sr of racesJson.subrace.filter(x => x.source === "SCAG")) {
-	const base = racesJson.race.find(x => x.name === sr.raceName && x.source === sr.raceSource);
-	if (!base) continue;
-	const versions = sr._versions?.length ? sr._versions : [null];
+const toolsOf = tp => {
+	const fixed = [], ch = [];
+	for (const t of tp || []) for (const [k, v] of Object.entries(t)) {
+		if (k === "choose") ch.push({from: v.from.map(x => ANY_TOOL[x] || key(x)), n: v.count || 1});
+		else if (k === "any") ch.push({from: ["toolArtisan", "instrumentMusical", "setGaming"], n: v});
+		else if (ANY_TOOL[k]) ch.push({from: [ANY_TOOL[k]], n: typeof v === "number" ? v : 1});
+		else if (v === true && items[key(k)]) fixed.push(key(k));
+	}
+	return {fixed, ch};
+};
+const skillsOf = sp => {
+	const o = {fixed: [], any: 0, ch: null};
+	for (const x of sp || []) for (const [k, v] of Object.entries(x)) {
+		if (k === "any") o.any += v;
+		else if (k === "choose") o.ch = {from: v.from, n: v.count || 1};
+		else if (v === true) o.fixed.push(k);
+	}
+	return o;
+};
+// 天生護甲：資料只有特性標籤，數值依書中規則
+const NAT_AC = {Tortle: {base: 17, dex: 0}, Lizardfolk: {base: 13, dex: 1}, Loxodon: {base: 12, con: 1}, Autognome: {base: 13, dex: 1}, "Thri-kreen": {base: 13, dex: 1}, Warforged: {bonus: 1}};
+const traitsOf = es => (es || []).filter(e => e.name && !SKIP_TR.has(e.name));
+// _mod 的 replaceArr／appendArr／removeArr（依名稱或索引）
+const applyMod = (entries, mod) => {
+	let out = entries.slice();
+	for (const m of [].concat(mod || [])) {
+		const idx = m.replace?.index ?? out.findIndex(e => e?.name === m.replace);
+		const items_ = [].concat(m.items || []);
+		if (m.mode === "replaceArr" && idx >= 0) out.splice(idx, 1, ...items_);
+		else if (m.mode === "appendArr" || m.mode === "insertArr") out.push(...items_);
+		else if (m.mode === "prependArr") out.unshift(...items_);
+		else if (m.mode === "removeArr") out = out.filter(e => ![].concat(m.names || []).includes(e?.name));
+	}
+	return out;
+};
+const resolveCopy = (o, list) => {
+	if (!o._copy) return o;
+	const base = list.find(x => x.name === o._copy.name && x.source === o._copy.source);
+	if (!base) return o;
+	const b = resolveCopy(base, list);
+	const m = {...b, ...o};
+	delete m._copy; delete m.reprintedAs;
+	m.entries = applyMod(o.entries || b.entries || [], o._copy._mod?.entries);
+	return m;
+};
+const raceList = racesJson.race.map(r => resolveCopy(r, racesJson.race));
+const entriesPool = [];
+for (const R of raceList) {
+	if (isUA(R.source)) continue;
+	const subs = racesJson.subrace.filter(s => s.raceName === R.name && s.raceSource === R.source);
+	if (inDef("races", R.name, R.source) && R.source !== SRC) entriesPool.push({R, S: null, name: R.name, src: R.source});
+	for (const S of subs) {
+		const nm = S.name ? `${R.name} (${S.name})` : R.name;
+		const src = S.source || R.source;
+		if (S.name && inDef("races", nm, src)) entriesPool.push({R, S, name: nm, src});
+	}
+}
+// 同名種族只留一個：2024 玩家手冊優先，其次是較新的書
+const byName = new Map();
+for (const e of entriesPool.sort((a, b) => newer(a.src, b.src))) if (!byName.has(e.name.toLowerCase()) && !species.some(x => x.id.toLowerCase() === e.name.toLowerCase())) byName.set(e.name.toLowerCase(), e);
+for (const {R, S, name, src} of byName.values()) {
+	const versions = (S?._versions || R._versions || []).length ? (S?._versions || R._versions) : [null];
+	const opts = [];
 	for (const v of versions) {
-		const m = {...base, ...sr, ...(v || {})};
+		const m = {...R, ...(S || {}), ...(v || {})};
 		for (const k of Object.keys(m)) if (m[k] === null) delete m[k];
-		// 特性：底層種族 → 亞種覆寫 → 變體替換「擇一」方塊
-		let tr = base.entries.filter(e => e.name && !SKIP_TR.has(e.name));
-		const srE = (sr.entries || []).filter(e => e.name && !SKIP_TR.has(e.name));
-		for (const e of srE) {
+		let tr = traitsOf(R.entries);
+		for (const e of traitsOf(S?.entries)) {
 			const ow = e.data?.overwrite;
 			const i = ow ? tr.findIndex(t => t.name === ow || t.name_zh === ow) : -1;
 			if (i >= 0) tr[i] = e; else tr.push(e);
 		}
-		const isHalfElfVar = base.name === "Half-Elf";
-		if (isHalfElfVar) tr = tr.filter(t => t.name !== "Skill Versatility");
-		const vItem = v?._mod?.entries?.items;
-		tr = tr.flatMap(t => (t.name === "Variant Feature (Choose 1)" ? (vItem ? [vItem] : []) : [t]));
-		const vName = vItem ? (vItem.name_zh || vItem.name).replace(/^變體特性[：:]\s*/, "") : null;
-		const sp = typeof m.speed === "number" ? {walk: m.speed} : m.speed || {walk: 30};
-		const sk = m.skillProficiencies?.[0];
-		const wp = m.weaponProficiencies?.[0] ? Object.keys(m.weaponProficiencies[0]).map(key) : [];
+		if (S && R.name === "Half-Elf") tr = tr.filter(t => t.name !== "Skill Versatility");
+		let vName = null;
+		if (v?._mod?.entries) {
+			const mods = [].concat(v._mod.entries);
+			const it = mods.flatMap(m => [].concat(m.items || [])).find(x => x?.name);
+			tr = applyMod(tr, mods);
+			const n = it ? it.name_zh || it.name : "";
+			vName = /（(.+)）$/.exec(n)?.[1] || (/[：:]/.test(n) ? n.replace(/^[^：:]*[：:]\s*/, "") : "") || ({Lorwyn: "洛溫", Shadowmoor: "影沼"})[v.name.split("; ").pop()] || v.name.split("; ").pop();
+		}
+		const sp = typeof m.speed === "number" ? {walk: m.speed} : {...(m.speed || {walk: 30})};
+		for (const k of ["fly", "swim", "climb", "burrow"]) if (sp[k] === true) sp[k] = sp.walk;
 		const as = m.additionalSpells?.[0];
-		const gid = `${base.name}|SCAG`;
-		if (!legacyGroups.has(gid)) legacyGroups.set(gid, {id: gid, zh: base.name_zh || base.name, legacy: 1, src: "SCAG", size: base.size, opts: []});
-		const srZh = (sr.name_zh || sr.name).replace(/^變體[；;]\s*/, "").replace(/\s+/g, "");
-		legacyGroups.get(gid).opts.push({
-			id: v ? v.name : sr.name, zh: vName ? `${srZh}：${vName}` : srZh,
-			speed: sp.walk, fly: sp.fly || 0, swim: sp.swim || 0, dv: m.darkvision || 0,
-			res: (m.resist || []).filter(x => typeof x === "string"),
-			sk: sk ? {any: sk.any || 0, fixed: Object.keys(sk).filter(x => x !== "any" && x !== "choose")} : null,
-			wp, lang: langOf(m.languageProficiencies), sa: as?.ability || null, sp: as ? spellRefs(as) : null,
+		const tools = toolsOf(m.toolProficiencies);
+		const featAny = (m.feats || []).reduce((n, f) => n + (f.any || f.anyFromCategory?.count || 0), 0);
+		opts.push({
+			id: v ? v.name : name, zh: vName || "",
+			size: m.size || ["M"], speed: sp.walk || 30, fly: sp.fly || 0, swim: sp.swim || 0, climb: sp.climb || 0, dv: m.darkvision || 0,
+			res: (m.resist || []).filter(x => typeof x === "string"), resCh: (m.resist || []).find(x => x?.choose)?.choose.from || null,
+			sk: skillsOf(m.skillProficiencies), wp: (m.weaponProficiencies || []).flatMap(w => Object.keys(w).filter(k => w[k] === true).map(key)),
+			tools, lang: langOf(m.languageProficiencies), feat: featAny,
+			sa: typeof as?.ability === "string" ? as.ability : null, saCh: as?.ability?.choose || null, sp: as ? spellRefs(as) : null,
+			ac: NAT_AC[R.name] || null,
 			tr: tr.map(e => ({en: e.name, zh: e.name_zh || e.name, tx: toText(e.entries || (e.entry ? [e.entry] : []))})),
 		});
 	}
+	const zhR = R.name_zh || R.name;
+	const zh = S?.name ? `${zhR}（${(S.name_zh || S.name).replace(/^變體[；;]\s*/, "")}）` : zhR;
+	species.push({id: `${name}|${src}`, zh, legacy: 1, src, size: opts[0].size, opts});
 }
-// 只有一個選項的群組直接用亞種名稱（深地侏、靈智半身人）
-for (const g of legacyGroups.values()) {
-	if (g.opts.length === 1) g.zh = g.opts[0].zh.replace(/^(.+)／.*$/, "$1") + (g.id.startsWith("Halfling") ? "半身人" : g.id.startsWith("Gnome") ? "" : "");
-	species.push(g);
-}
-
 // ---- 背景 ----
 const bgJson = rd("backgrounds.json").background;
 const BG_FEAT_FIX = {"Genie Touched": "magic initiate; wizard"}; // 資料缺專長欄位
-const backgrounds = bgJson.filter(b => b.source === SRC || b.source === "FRHoF").map(b => ({
-	id: b.name, zh: b.name_zh || b.name, ...(b.source !== SRC ? {src: b.source} : {}),
-	ab: b.ability[0].choose.weighted.from,
-	feat: BG_FEAT_FIX[b.name] || key(Object.keys(b.feats[0])[0]),
-	sk: Object.keys(b.skillProficiencies[0]),
-	tool: Object.entries(b.toolProficiencies[0]).map(([k, v]) => v === true ? {k: key(k)} : {choose: k})[0],
-	eq: Object.fromEntries(Object.entries(b.startingEquipment[0]).map(([k, v]) => [k, eqList(v)])),
-}));
-// 舊版背景（劍灣冒險者指南）：屬性值自選、沒有專長時可選一個起源專長
 const BG_FEATURE_ZH = Object.fromEntries(Object.entries({
 	"Watcher's Eye": "守望者之眼", "Respect of the Stout Folk": "矮人的敬重", "Library Access": "圖書館使用權", "Court Functionary": "宮廷官員",
 	"Safe Haven": "避風港", "All Eyes on You": "眾目焦點", "Inheritance": "繼承權", "Knightly Regard": "騎士的敬重", "Mercenary Life": "傭兵生涯",
 	"Ear to the Ground": "在地之耳", "Uthgardt Heritage": "烏斯伽傳統", "Kept in Style": "保持時尚",
+	"Researcher": "研究員", "Shelter of the Faithful": "信徒之家", "Criminal Contact": "罪犯人脈", "Ship's Passage": "船行水路", "False Identity": "虛假身分",
+	"By Popular Demand": "人見人愛", "Rustic Hospitality": "鄉民款待", "Guild Membership": "公會成員", "Discovery": "發現", "Wanderer": "漂泊者",
+	"Military Rank": "軍事階級", "City Secrets": "城市密徑", "Choose a Feature": "自選特性",
 }).map(([k, v]) => [`Feature: ${k}`, `特性：${v}`]));
-const ANY_TOOL = {anyArtisansTool: "toolArtisan", "musical instrument": "instrumentMusical", anyMusicalInstrument: "instrumentMusical", "gaming set": "setGaming", anyGamingSet: "setGaming"};
-for (const b of bgJson.filter(b => b.source === "SCAG")) {
-	const skl = b.skillProficiencies[0];
-	const tools = [], toolCh = [];
-	for (const [k, v] of Object.entries(b.toolProficiencies?.[0] || {})) {
-		if (k === "choose") toolCh.push({from: v.from.map(x => ANY_TOOL[x] || key(x)), n: v.count || 1});
-		else if (ANY_TOOL[k]) toolCh.push({from: [ANY_TOOL[k]], n: typeof v === "number" ? v : 1});
-		else if (v === true && items[key(k)]) tools.push(key(k));
-	}
-	// 裝備：能對應到 2024 物品的列入物品欄，其餘（特殊物品）取中文條目的文字
-	const eqEntry = b.entries.find(e => e.type === "list")?.items.find(i => i.name === "Equipment:")?.entry || "";
-	const eq = [];
-	let gp = 0;
-	for (const e of b.startingEquipment?.[0]?._ || []) {
-		const it = typeof e === "string" ? e : e.item;
-		if (e.containsValue) gp += e.containsValue;
-		if (e.value) gp += e.value;
-		const ik = it && [key(it), key(it).replace(/s$/, "")].find(x => items[x]);
-		if (ik) eq.push({k: ik, q: e.quantity || 1});
-		else if (e.equipmentType) eq.push({choose: e.equipmentType});
-	}
-	// 只在括號外的頓號切開；「你所熟練／所選擇的工具」已由工具選擇處理
+// 裝備文字（中文條目）裡沒有對應物品的特殊物品：只在括號外的頓號切開，「你所熟練／所選擇的工具」已由工具選擇處理
+const specialsOf = txt => {
 	const parts = [];
 	let depth = 0, buf = "";
-	for (const ch of eqEntry) {
+	for (const ch of txt) {
 		if ("（(".includes(ch)) depth++;
 		if ("）)".includes(ch)) depth--;
 		if (ch === "、" && !depth) { parts.push(buf); buf = ""; } else buf += ch;
@@ -410,27 +479,67 @@ for (const b of bgJson.filter(b => b.source === "SCAG")) {
 	for (const x of parts.map(x => x.trim().replace(/^(和|及|以及|與)/, ""))) {
 		if (merged.length && (x.length <= 3 || x.startsWith("或"))) merged[merged.length - 1] += `、${x}`; else merged.push(x);
 	}
-	const special = merged.filter(x => x && !/\{@item|金幣|gp|熟練的|所選擇的/i.test(x)).map(stripTags);
-	for (const x of special) eq.push({special: x});
+	return merged.filter(x => x && !/\{@item|\{@filter|金幣|gp|熟練的|所選擇的/i.test(x)).map(stripTags);
+};
+// 2014 版物品在 2024 版的對應
+const OLD_ITEM = {"common clothes": "traveler's clothes", "vestments": "robe", "clothes, common": "traveler's clothes", "clothes, fine": "fine clothes", "clothes, costume": "costume", "costume clothes": "costume", "belt pouch": "pouch", "bag of sand": "sack", "small knife": "dagger"};
+const legacyEq = (b, list) => {
+	const eqEntry = b.entries?.find(e => e.type === "list")?.items?.find(i => i.name === "Equipment:")?.entry || "";
+	const eq = [];
+	let gp = 0;
+	for (const e of list || []) {
+		const it = typeof e === "string" ? e : e.item;
+		if (e.containsValue) gp += e.containsValue;
+		if (e.value) gp += e.value;
+		const ik = it && [key(it), key(it).replace(/s$/, ""), OLD_ITEM[key(it)]].find(x => items[x]);
+		if (ik) eq.push({k: ik, q: e.quantity || 1});
+		else if (e.equipmentType) eq.push({choose: e.equipmentType});
+	}
+	for (const x of specialsOf(eqEntry)) eq.push({special: x});
 	if (gp) eq.push({gp});
-	const feat = b.entries.find(e => e.data?.isFeature);
-	backgrounds.push({
-		id: b.name, zh: b.name_zh || b.name, src: "SCAG", legacy: 1, ab: [...ABIL], feat: null,
-		sk: Object.keys(skl).filter(x => x !== "choose"), skCh: skl.choose ? {from: skl.choose.from, n: skl.choose.count || 1} : null,
-		tool: {}, tools, toolCh, lang: langOf(b.languageProficiencies), eq: {A: eq},
-		feature: feat ? {en: feat.name, zh: BG_FEATURE_ZH[feat.name] || feat.name_zh || feat.name, tx: toText(feat.entries)} : null,
-	});
+	return eq;
+};
+const bgList = bgJson.map(b => resolveCopy(b, bgJson));
+const backgrounds = [];
+const bgSeen = new Set();
+for (const b of bgList.filter(b => inDef("backgrounds", b.name, b.source)).sort((x, y) => newer(x.source, y.source))) {
+	if (bgSeen.has(b.name.toLowerCase())) continue;
+	bgSeen.add(b.name.toLowerCase());
+	const sk = skillsOf(b.skillProficiencies);
+	const tools = toolsOf(b.toolProficiencies);
+	const featKey = BG_FEAT_FIX[b.name] || (b.feats?.[0] ? key(Object.keys(b.feats[0])[0]) : null);
+	const featE = b.entries?.find(e => e.data?.isFeature);
+	const se = b.startingEquipment?.[0] || {};
+	const eqObj = {};
+	for (const [k, v] of Object.entries(se)) eqObj[k === "_" ? "A" : k.toUpperCase()] = b.ability ? eqList(v) : legacyEq(b, v);
+	if (!Object.keys(eqObj).length) eqObj.A = [{gp: 5000}];
+	const o = {
+		id: b.name, zh: b.name_zh || b.name,
+		ab: b.ability ? b.ability[0].choose.weighted.from : [...ABIL], feat: featKey && feats[featKey.split(";")[0]] ? featKey : null,
+		sk: sk.fixed, tool: {}, tools: tools.fixed, toolCh: tools.ch, lang: langOf(b.languageProficiencies), eq: eqObj,
+	};
+	if (b.source !== SRC) o.src = b.source;
+	if (!b.ability) o.legacy = 1;
+	if (sk.ch || sk.any) o.skCh = sk.ch || {from: null, n: sk.any};
+	if (featE) o.feature = {en: featE.name, zh: featE.name_zh || BG_FEATURE_ZH[featE.name] || featE.name.replace(/^Feature: /, "特性："), tx: toText(featE.entries)};
+	backgrounds.push(o);
 }
+const BG_ORDER = new Map(bgJson.filter(isX).map((b, i) => [b.name, i]));
+backgrounds.sort((x, y) => (x.src ? 1 : 0) - (y.src ? 1 : 0) || (BG_ORDER.get(x.id) ?? 0) - (BG_ORDER.get(y.id) ?? 0));
 
 // ---- 技能、語言、工具 ----
 const skills = rd("skills.json").skill.filter(isX).map(s => ({id: s.name.toLowerCase(), zh: s.name_zh || s.name, ab: s.ability}));
-const languages = rd("languages.json").language.filter(isX).map(l => ({id: l.name, zh: l.name_zh || l.name, std: l.type === "standard"}));
+const languages = [];
+for (const l of languagesAll.filter(l => !isUA(l.source)).sort((a, b) => newer(a.source, b.source))) {
+	if (languages.some(x => x.id === l.name)) continue;
+	languages.push({id: l.name, zh: l.name_zh || l.name, ...(isX(l) && l.type === "standard" ? {std: 1} : {})});
+}
 const toolsBy = t => Object.entries(items).filter(([, v]) => v.t === t).map(([k]) => k);
 const tools = {toolArtisan: toolsBy("AT"), instrumentMusical: toolsBy("INS"), setGaming: toolsBy("GS")};
 
 const out = {
 	v: new Date().toISOString().slice(0, 10),
-	srcZh: {FRHoF: "費倫英雄", SCAG: "劍灣冒險者指南"},
+	srcZh: Object.fromEntries(Object.entries(srcZh).filter(([k]) => [...species, ...backgrounds, ...Object.values(feats), ...Object.values(spells), ...classes, ...classes.flatMap(c => c.subs)].some(o => o.src === k))),
 	classes, species, backgrounds, feats, spells, items, skills, languages, tools,
 	propZh, masteryZh, masteryText,
 };
@@ -442,6 +551,6 @@ for (const f of fs.readdirSync(path.join(HERE, "src"))) fs.copyFileSync(path.joi
 const miss = new Set();
 const chkEq = l => l.forEach(e => e.k && !items[e.k] && miss.add(`item ${e.k}`));
 for (const c of classes) { Object.values(c.eq).forEach(chkEq); Object.values(c.always || {}).flat().forEach(s => !spells[s] && miss.add(`spell ${s}`)); for (const s of c.subs) Object.values(s.always || {}).flat().forEach(x => !spells[x] && miss.add(`spell ${x}`)); }
-for (const b of backgrounds) { Object.values(b.eq).forEach(chkEq); if (b.feat && !feats[b.feat.split(";")[0]]) miss.add(`feat ${b.feat}`); if (b.tool.k && !items[b.tool.k]) miss.add(`tool ${b.tool.k}`); }
+for (const b of backgrounds) { Object.values(b.eq).forEach(chkEq); if (b.feat && !feats[b.feat.split(";")[0]]) miss.add(`feat ${b.feat}`);  }
 if (miss.size) console.log("找不到：", [...miss].join(", "));
 console.log(`data.json ${(fs.statSync(path.join(OUT, "data.json")).size / 1024).toFixed(0)} KB；職業 ${classes.length}、種族 ${species.length}、背景 ${backgrounds.length}、專長 ${Object.keys(feats).length}、法術 ${Object.keys(spells).length}、物品 ${Object.keys(items).length}`);

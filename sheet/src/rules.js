@@ -16,6 +16,7 @@ const ALIGN = ["守序善良", "中立善良", "混亂善良", "守序中立", "
 
 // 屬性值優先順序（標準陣列由高到低分配）
 const AB_PRI = {
+	Artificer: ["int", "con", "dex", "wis", "str", "cha"],
 	Barbarian: ["str", "con", "dex", "wis", "cha", "int"],
 	Bard: ["cha", "dex", "con", "wis", "int", "str"],
 	Cleric: ["wis", "con", "str", "dex", "cha", "int"],
@@ -32,6 +33,7 @@ const AB_PRI = {
 
 const SK_ANY = ["perception", "stealth", "insight", "athletics", "persuasion", "survival", "acrobatics", "investigation", "arcana", "medicine", "deception", "intimidation", "nature", "history", "religion", "sleight of hand", "animal handling", "performance"];
 const SK_PRI = {
+	Artificer: ["arcana", "investigation", "perception", "sleight of hand", "history", "medicine", "nature"],
 	Barbarian: ["perception", "athletics", "intimidation", "survival", "animal handling", "nature"],
 	Bard: ["persuasion", "deception", "performance", "insight", "perception", "stealth", "arcana", "acrobatics", "sleight of hand", "investigation"],
 	Cleric: ["insight", "medicine", "persuasion", "religion", "history"],
@@ -48,6 +50,10 @@ const SK_PRI = {
 
 // 推薦法術（依優先順序；不在清單內的法術排在後面）
 const SP_PRI = {
+	Artificer: {
+		c: ["guidance", "fire bolt", "mage hand", "shocking grasp", "prestidigitation", "light", "ray of frost", "message", "thorn whip", "spare the dying", "acid splash", "poison spray", "resistance", "sorcerous burst"],
+		s: ["cure wounds", "faerie fire", "grease", "absorb elements", "detect magic", "feather fall", "shield of faith", "sanctuary", "heroism", "identify", "jump", "longstrider", "aid", "lesser restoration", "magic weapon", "heat metal", "web", "invisibility", "enhance ability", "spider climb", "see invisibility", "haste", "fly", "revivify", "dispel magic", "protection from energy", "glyph of warding", "blink", "freedom of movement", "stoneskin", "fire shield", "death ward", "greater restoration", "wall of stone", "animate objects", "bigby's hand", "creation"],
+	},
 	Bard: {
 		c: ["vicious mockery", "minor illusion", "mage hand", "prestidigitation", "light", "dancing lights", "friends", "message", "thunderclap", "starry wisp", "true strike", "mending", "blade ward"],
 		s: ["healing word", "dissonant whispers", "faerie fire", "charm person", "sleep", "heroism", "thunderwave", "bane", "cure wounds", "detect magic", "silence", "invisibility", "hold person", "shatter", "suggestion", "lesser restoration", "hypnotic pattern", "fear", "dispel magic", "leomund's tiny hut", "bestow curse", "greater invisibility", "polymorph", "dimension door", "confusion", "synaptic static", "animate objects", "raise dead", "mass cure wounds", "otto's irresistible dance", "mass suggestion", "forcecage", "teleport", "mind blank", "power word stun", "foresight"],
@@ -115,5 +121,5 @@ const LANG_ANY = ["Elvish", "Dwarvish", "Draconic", "Giant", "Halfling", "Gnomis
 
 // 起源專長（人類多才多藝）與史詩恩賜的預設
 const DEF_ORIGIN = "alert";
-const DEF_BOON = cls => (["Wizard", "Sorcerer", "Warlock", "Cleric", "Druid", "Bard"].includes(cls) ? "boon of spell recall" : "boon of fortitude");
+const DEF_BOON = cls => (["Artificer", "Wizard", "Sorcerer", "Warlock", "Cleric", "Druid", "Bard"].includes(cls) ? "boon of spell recall" : "boon of fortitude");
 const DEF_FS = (cls, eq) => (cls === "Ranger" || (cls === "Fighter" && eq === "B") ? "archery" : "defense");

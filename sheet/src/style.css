@@ -91,6 +91,30 @@ input[type=number] { width: 64px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { padding: 4px 10px; border: 1px solid var(--line2); border-radius: 999px; background: transparent; font-size: 13px; }
 .chip.fixed { background: var(--accent-soft); border-color: transparent; color: var(--ink2); cursor: default; }
+/* 資訊小按鈕：與選項並排，點開說明視窗 */
+.info { flex: none; width: 20px; height: 20px; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: var(--paper); color: var(--muted); font: italic 600 11px/18px Georgia, serif; text-align: center; vertical-align: middle; }
+.info:hover { color: var(--ink); border-color: var(--ink2); }
+.cw { display: inline-flex; align-items: center; border: 1px solid var(--line2); border-radius: 999px; }
+.cw .chip { border: 0; padding-right: 4px; }
+.cw .info { margin-right: 3px; border-color: transparent; background: transparent; }
+.cw.on { background: var(--on); border-color: var(--on); }
+.cw.on .chip.fixed { background: transparent; color: var(--paper); }
+.cw.on .info { color: var(--paper); }
+.cw:not(.on):has(.chip.fixed) { background: var(--accent-soft); border-color: transparent; }
+.row.other { align-items: flex-end; margin-top: 8px; }
+.row .info { margin-bottom: 7px; }
+select.on { border-color: var(--on); box-shadow: inset 0 0 0 1px var(--on); }
+label.blk { display: block; margin-top: 8px; font-size: 12px; color: var(--muted); }
+.build textarea, .feat textarea { display: block; width: 100%; margin-top: 4px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); resize: vertical; }
+.feat input[type=text] { margin-top: 4px; width: 100%; }
+.theme { width: 34px; padding: 0 !important; }
+.theme span::before { content: "◐"; }
+.theme[data-mode="light"] span::before { content: "☀"; }
+.theme[data-mode="dark"] span::before { content: "☾"; }
+.mdf textarea { width: 100%; font: 12px/1.5 ui-monospace, Menlo, monospace; padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); resize: vertical; }
+.mdbar { display: flex; gap: 8px; justify-content: flex-end; margin-top: 10px; }
+.mdbar button { height: 32px; padding: 0 14px; border: 1px solid var(--line); border-radius: var(--r); background: var(--paper); }
+.mdbar .primary { background: var(--on); border-color: var(--on); color: var(--paper); }
 .abil { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px; }
 .ab { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 4px; border: 1px solid var(--line2); border-radius: 8px; }
 .ab-n { font-size: 12px; color: var(--muted); }

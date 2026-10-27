@@ -25,8 +25,23 @@ const EX = (c, p) => c.ex?.[p] || [];
 // 使用者手動加入的項目，其餘每次依等級重新推薦
 const PIN = (c, p) => c.pin?.[p] || [];
 const cls = c => D.classes.find(x => x.id === c.cls);
-const spc = c => D.species.find(x => x.id === c.sp);
-const bgd = c => D.backgrounds.find(x => x.id === c.bg);
+// 自填模式：資料庫沒有的種族與背景，由玩家填寫名稱與特性
+const CUSTOM = "__custom";
+function customSpecies(c) {
+	const u = c.cust?.sp || {};
+	const size = u.size === "S" ? ["S"] : u.size === "SM" ? ["S", "M"] : ["M"];
+	const tr = String(u.tx || "").split(/\n+/).map(x => x.trim()).filter(Boolean).map((x, i) => {
+		const m = /^([^：:]{1,12})[：:]\s*(.+)$/.exec(x);
+		return m ? {zh: m[1], tx: [m[2]]} : x.length <= 12 ? {zh: x, tx: []} : {zh: `特性 ${i + 1}`, tx: [x]};
+	});
+	return {id: CUSTOM, zh: u.name || "自訂種族", custom: 1, legacy: 1, size, opts: [{id: CUSTOM, zh: "", size, speed: +u.speed || 30, dv: +u.dv || 0, fly: 0, swim: 0, climb: 0, res: [], sk: {fixed: [], any: +u.sk || 0, ch: null}, wp: [], tools: {fixed: [], ch: []}, lang: {fixed: [], any: 0}, feat: 0, tr}]};
+}
+function customBg(c) {
+	const u = c.cust?.bg || {};
+	return {id: CUSTOM, zh: u.name || "自訂背景", custom: 1, legacy: 1, ab: [...AB], feat: null, sk: [], skCh: {from: null, n: 2}, tool: {}, tools: [], toolCh: [], toolText: u.tool || "", lang: {fixed: [], any: 0}, eq: {A: [{gp: 5000}]}, feature: u.tx ? {zh: "背景特性", tx: [u.tx]} : null};
+}
+const spc = c => (c.sp === CUSTOM ? customSpecies(c) : D.species.find(x => x.id === c.sp));
+const bgd = c => (c.bg === CUSTOM ? customBg(c) : D.backgrounds.find(x => x.id === c.bg));
 const subOf = c => (c.level >= 3 ? cls(c).subs.find(s => s.id === c.sub) : null);
 const pbOf = lv => Math.ceil(lv / 4) + 1;
 const lineageOf = c => LINEAGE[c.sp]?.opts?.find(o => o.id === c.lin) || null;
@@ -47,6 +62,7 @@ function featSlots(c) {
 		slots.push({id: "bg", cat: ["O"], fixed: bf, list, src: `背景：${b.zh}`});
 	} else slots.push({id: "bg", cat: ["O"], src: `背景：${b.zh}（自選起源專長）`});
 	if (c.sp === "Human") slots.push({id: "hum", cat: ["O"], src: "人類：多才多藝"});
+	if (legacyOf(c)?.feat) slots.push({id: "spf", cat: ["O"], src: `${spc(c).zh}：專長`});
 	for (const fp of k.featProg) {
 		for (const [lv, n] of Object.entries(fp.prog)) {
 			if (+lv > L) continue;
@@ -64,7 +80,11 @@ function featSlots(c) {
 // 可選的專長：類別與等級相符，並滿足先決條件（另一個專長、施法能力、軍用武器熟練）
 const featOptions = (slot, L, c) => Object.entries(D.feats).filter(([, f]) => f.cat.some(x => slot.cat.includes(x)) && (!f.lv || f.lv <= L)
 	&& (!c || ((!f.preFeat || Object.entries(c.feats || {}).some(([id, x]) => id !== slot.id && f.preFeat.includes(x.k)))
-		&& (!f.preCast || canCast(c)) && (!f.preMartial || hasMartial(c))))).map(([k]) => k);
+		&& (!f.preCast || canCast(c)) && (!f.preMartial || hasMartial(c))
+		&& (!f.preRace || f.preRace.some(r => spcName(c).includes(r)))
+		&& (!f.preAb || f.preAb.some(([a, v]) => (abilityBase(c)[a] || 0) >= v))))).map(([k]) => k);
+// 種族名稱（含英文，給專長的種族先決條件比對）
+const spcName = c => { const s = spc(c); return `${s.id} ${legacyOf(c)?.id || ""} ${c.lin || ""}`.toLowerCase(); };
 
 // ---- 自動補齊 ----
 function fill(c) {
@@ -80,7 +100,8 @@ function fill(c) {
 	if (s.legacy) { if (!s.opts.some(o => o.id === c.lin)) c.lin = s.opts[0].id; }
 	else if (!lin?.opts) c.lin = null;
 	const lg = legacyOf(c);
-	if (!s.size.includes(c.size)) c.size = s.size.includes("M") ? "M" : s.size[0];
+	const sizes = lg?.size || s.size;
+	if (!sizes.includes(c.size)) c.size = sizes.includes("M") ? "M" : sizes[0];
 	// 屬性值
 	// 使用者沒動過屬性值時，依職業與子職業重新分配
 	if (!c.base || !c.baseSet || c.method === "array" && !isArray(c.base)) c.base = assignArray(pri);
@@ -97,7 +118,7 @@ function fill(c) {
 	for (const sl of slots) {
 		const cur = c.feats[sl.id] ||= {};
 		if (sl.fixed) cur.k = sl.fixed;
-		const opts = sl.fixed ? [sl.fixed] : featOptions(sl, L, c);
+		const opts = sl.fixed ? [sl.fixed] : [...featOptions(sl, L, c), CUSTOM];
 		if (!opts.includes(cur.k)) {
 			cur.k = sl.cat.includes("EB") ? DEF_BOON(c.cls) : sl.cat.includes("G") ? "ability score improvement" : sl.cat.some(x => x.startsWith("FS")) ? DEF_FS(c.cls, c.eqA) : DEF_ORIGIN;
 			cur.ab = null;
@@ -124,7 +145,7 @@ function fill(c) {
 	for (const id of Object.keys(c.feats)) if (!slots.some(s => s.id === id)) delete c.feats[id];
 	// 技能
 	const fixed = new Set([...b.sk, ...(lg?.sk?.fixed || [])]);
-	if (b.skCh) { c.bgSkill = fillPick(PIN(c, "bgSkill"), b.skCh.from, b.skCh.n, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "bgSkill")); c.bgSkill.forEach(x => fixed.add(x)); }
+	if (b.skCh) { c.bgSkill = fillPick(PIN(c, "bgSkill"), b.skCh.from || D.skills.map(x => x.id), b.skCh.n, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "bgSkill")); c.bgSkill.forEach(x => fixed.add(x)); }
 	else c.bgSkill = [];
 	const clsPool = k.skills.from || D.skills.map(x => x.id);
 	const clsN = k.skills.n || k.skills.any;
@@ -136,6 +157,11 @@ function fill(c) {
 	else if (lg?.sk?.any) { c.spSkill = fillPick(PIN(c, "spSkill"), allSk, lg.sk.any, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "spSkill")); }
 	else c.spSkill = [];
 	c.spSkill.forEach(x => fixed.add(x));
+	c.spSkill2 = lg?.sk?.ch ? fillPick(PIN(c, "spSkill2"), lg.sk.ch.from, lg.sk.ch.n, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "spSkill2")) : [];
+	c.spSkill2.forEach(x => fixed.add(x));
+	// 種族的抗性擇一、施法屬性自選
+	if (lg?.resCh && !lg.resCh.includes(c.resPick)) c.resPick = lg.resCh[0];
+	if (lg?.saCh && !lg.saCh.includes(c.linSa)) c.linSa = lg.saCh.includes(k.sa) ? k.sa : byPri(lg.saCh, pri)[0];
 	for (const sl of slots) {
 		const cur = c.feats[sl.id];
 		if (cur.k === "skilled") { cur.sk = fillPick(PIN(c, `feats.${sl.id}.sk`), allSk, 3, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, `feats.${sl.id}.sk`)); cur.sk.forEach(x => fixed.add(x)); } else delete cur.sk;
@@ -246,6 +272,9 @@ const masteryCount = c => +(tableVal(c, "武器精通") || (["Paladin", "Ranger"
 function toolChoices(c) {
 	const out = [];
 	const b = bgd(c), k = cls(c);
+	const catPool = from => from.flatMap(t => (D.tools[t] ? D.tools[t].filter(x => !/^(artisan's tools|musical instrument|gaming set)$/.test(x)) : [t]));
+	for (const [i, ch] of (legacyOf(c)?.tools.ch || []).entries()) out.push({id: `sp${i}`, label: "種族工具", pool: catPool(ch.from), n: ch.n});
+	if (!["Bard", "Monk"].includes(c.cls)) for (const [i, ch] of (k.toolAny || []).entries()) out.push({id: `cls${i}`, label: "職業工具", pool: catPool([ch.from]), n: ch.n});
 	if (b.tool.choose) {
 		const t = {anyArtisansTool: "toolArtisan", anyMusicalInstrument: "instrumentMusical", anyGamingSet: "setGaming"}[b.tool.choose];
 		out.push({id: "bg", label: "背景工具", pool: D.tools[t].filter(x => !/^(artisan's tools|musical instrument|gaming set)$/.test(x)), n: 1});
@@ -375,7 +404,7 @@ function derive(c) {
 	for (const sl of featSlots(c)) if (c.feats[sl.id]?.k === "resilient") saveProf.add(c.feats[sl.id].ab?.[0]);
 	const saves = Object.fromEntries(AB.map(a => [a, {p: saveProf.has(a), v: m[a] + (saveProf.has(a) ? pb : 0)}]));
 	// 技能
-	const prof = new Set([...b.sk, ...(c.bgSkill || []), ...(lg?.sk?.fixed || []), ...c.skills, ...c.spSkill, ...Object.values(c.feats).flatMap(f => f.sk || [])]);
+	const prof = new Set([...b.sk, ...(c.bgSkill || []), ...(lg?.sk?.fixed || []), ...c.skills, ...c.spSkill, ...(c.spSkill2 || []), ...Object.values(c.feats).flatMap(f => f.sk || [])]);
 	const exp = new Set(c.expertise);
 	const skills = D.skills.map(x => {
 		let v = m[x.ab];
@@ -399,16 +428,19 @@ function derive(c) {
 	const shield = items.some(i => i.it?.t === "S") && armorProf(c).has("shield");
 	const aprof = armorProf(c);
 	const opts = [];
-	const unarm = 10 + m.dex;
+	const unarm = 10 + m.dex + (lg?.ac?.bonus || 0);
 	opts.push({ac: unarm + (shield ? 2 : 0), note: "無甲"});
 	if (c.cls === "Barbarian") opts.push({ac: unarm + m.con + (shield ? 2 : 0), note: "無甲防禦（體質）"});
 	if (c.cls === "Monk") opts.push({ac: unarm + m.wis, note: "無甲防禦（感知）", noShield: true});
 	if (c.cls === "Sorcerer" && c.sub === "Draconic" && L >= 3) opts.push({ac: unarm + m.cha + (shield ? 2 : 0), note: "龍族韌性"});
+	// 天生護甲（龜人、蜥蜴人、象族…）
+	const nat = lg?.ac;
+	if (nat?.base) opts.push({ac: nat.base + (nat.dex ? m.dex : 0) + (nat.con ? m.con : 0) + (shield ? 2 : 0), note: "天生護甲"});
 	for (const a of armors) {
 		const t = a.it.t, cap = t === "LA" ? 99 : t === "MA" ? 2 : 0;
 		const okProf = aprof.has({LA: "light", MA: "medium", HA: "heavy"}[t]);
 		if (!okProf) continue;
-		let ac = a.it.ac + Math.min(m.dex, cap) + (shield ? 2 : 0);
+		let ac = a.it.ac + Math.min(m.dex, cap) + (shield ? 2 : 0) + (nat?.bonus || 0);
 		if (has("defense")) ac += 1;
 		opts.push({ac, note: a.it.zh, armor: a.k});
 	}
@@ -457,9 +489,10 @@ function derive(c) {
 	const spellRows = [];
 	const extraSpells = [];
 	if (lg?.sp) {
-		for (const x of lg.sp.known) if (x.lv <= L) extraSpells.push({k: x.k, tag: s.zh, sa: lg.sa || "cha"});
-		for (const x of lg.sp.innate) if (x.lv <= L) extraSpells.push({k: x.k, tag: s.zh, sa: lg.sa || "cha", note: D.spells[x.k]?.l ? "1 次／長休" : ""});
-		for (const x of c.linPick || []) extraSpells.push({k: x, tag: s.zh, sa: lg.sa || "int"});
+		const lsa = lg.sa || (lg.saCh ? c.linSa : null) || "cha";
+		for (const x of lg.sp.known) if (x.lv <= L) extraSpells.push({k: x.k, tag: s.zh, sa: lsa});
+		for (const x of lg.sp.innate) if (x.lv <= L) extraSpells.push({k: x.k, tag: s.zh, sa: lsa, note: D.spells[x.k]?.l ? "1 次／長休" : ""});
+		for (const x of c.linPick || []) extraSpells.push({k: x, tag: s.zh, sa: lg.sa || (lg.saCh ? c.linSa : null) || "int"});
 	}
 	// 不會施法的子職業（旗手、三神後裔）給的法術
 	if (sub && !spellInfo(c)) {
@@ -514,13 +547,12 @@ function derive(c) {
 	const armorZh = {light: "輕甲", medium: "中甲", heavy: "重甲", shield: "盾牌"};
 	const wp = k.weapons.map(w => w === "simple" ? "簡易武器" : w === "martial" ? "軍用武器" : /Finesse or Light/.test(w) ? "具靈巧或輕型屬性的軍用武器" : /Light/.test(w) ? "具輕型屬性的軍用武器" : w);
 	if ((c.order === "protector" || c.order === "warden") && !wp.includes("軍用武器")) wp.push("軍用武器");
-	const toolKeys = [...(b.tools || [])];
+	const toolKeys = [...(b.tools || []), ...(k.toolFix || []), ...(lg?.tools.fixed || [])];
 	if (b.tool.k) toolKeys.push(b.tool.k);
-	for (const [id, v] of Object.entries(c.toolPick)) if (/^bg\d*$/.test(id)) toolKeys.push(...v);
+	for (const [id, v] of Object.entries(c.toolPick)) if (/^(bg|sp|cls)\d+$|^bg$/.test(id)) toolKeys.push(...v);
 	if (c.toolPick.cls) toolKeys.push(...c.toolPick.cls);
-	if (c.cls === "Druid") toolKeys.push("herbalism kit");
-	if (c.cls === "Rogue") toolKeys.push("thieves' tools");
 	const tools = uniq(toolKeys).map(x => D.items[x]?.zh || x);
+	if (b.toolText) tools.push(b.toolText);
 	const langs = ["Common", ...fixedLangs(c), ...c.langs];
 	if (c.cls === "Druid") langs.push("Druidic");
 	if (c.cls === "Rogue") langs.push("Thieves' Cant");
@@ -528,9 +560,9 @@ function derive(c) {
 	// 種族特性
 	const traits = (lg ? lg.tr : s.tr).map(t => ({zh: t.zh, tx: t.tx}));
 	if (b.feature) traits.push({zh: b.feature.zh, tx: b.feature.tx, bg: true});
-	const linLabel = lg ? `亞種與變體：${lg.zh}` : LINEAGE[c.sp]?.opts ? `${LINEAGE[c.sp].label}：${lin.zh}` : null;
-	const resist = uniq([...(lg ? lg.res : s.res), lin?.res, lin?.dmg].filter(Boolean)).map(x => DMG_ZH[x]);
-	const speedNote = [lg?.fly && `飛行 ${lg.fly} 呎`, lg?.swim && `游泳 ${lg.swim} 呎`].filter(Boolean).join("、");
+	const linLabel = lg ? (lg.zh ? `亞種與變體：${lg.zh}` : null) : LINEAGE[c.sp]?.opts ? `${LINEAGE[c.sp].label}：${lin.zh}` : null;
+	const resist = uniq([...(lg ? lg.res : s.res), lg?.resCh ? c.resPick : null, lin?.res, lin?.dmg].filter(Boolean)).map(x => DMG_ZH[x] || x);
+	const speedNote = [lg?.fly && `飛行 ${lg.fly} 呎`, lg?.swim && `游泳 ${lg.swim} 呎`, lg?.climb && `攀爬 ${lg.climb} 呎`].filter(Boolean).join("、");
 	const featList = featSlots(c).map(sl => {
 		const f = c.feats[sl.id], fd = D.feats[f.k];
 		let note = "";
@@ -539,6 +571,7 @@ function derive(c) {
 		if (f.sk) note = f.sk.map(x => sk(x).zh).join("、");
 		if (fd?.src) note = [note, D.srcZh[fd.src]].filter(Boolean).join("；");
 		if (f.k === "magic initiate") note = `${{cleric: "牧師", druid: "德魯伊", wizard: "法師"}[f.list]}，${ABZH[f.sa]}`;
+		if (f.k === CUSTOM) return {zh: f.name || "自訂專長", k: f.k, src: sl.src, note: "", tx: f.tx ? [f.tx] : []};
 		return {zh: fd?.zh || f.k, k: f.k, src: sl.src, note, tx: fd?.tx || []};
 	});
 	// 錢幣

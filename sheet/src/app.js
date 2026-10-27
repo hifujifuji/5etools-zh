@@ -35,9 +35,12 @@ function update(fn, {build = true} = {}) {
 // ---- 共用小元件 ----
 const seg = (name, val, opts) => `<div class="seg" role="radiogroup">${opts.map(([v, l]) => `<button type="button" data-set="${name}" data-v="${esc(v)}" class="${String(val) === String(v) ? "on" : ""}">${l}</button>`).join("")}</div>`;
 const sel = (name, val, opts, attrs = "") => `<select data-set="${name}" ${attrs}>${opts.map(([v, l]) => `<option value="${esc(v)}" ${String(val) === String(v) ? "selected" : ""}>${esc(l)}</option>`).join("")}</select>`;
-const chips = (path, list, pool, label, fixed = []) => `<div class="chips">${pool.map(([v, l]) => {
+// 資訊小按鈕：開啟說明視窗（法術、專長、種族、背景、子職業共用）
+const info = tip => `<button type="button" class="info" data-tip="${esc(tip)}" aria-label="說明" title="說明">i</button>`;
+const chips = (path, list, pool, label, fixed = [], tip = null) => `<div class="chips">${pool.map(([v, l]) => {
 	const f = fixed.includes(v);
-	return `<button type="button" class="chip ${list.includes(v) ? "on" : ""} ${f ? "fixed" : ""}" ${f ? "disabled" : `data-chip="${path}" data-v="${esc(v)}"`}>${esc(l)}</button>`;
+	const btn = `<button type="button" class="chip ${list.includes(v) ? "on" : ""} ${f ? "fixed" : ""}" ${f ? "disabled" : `data-chip="${path}" data-v="${esc(v)}"`}>${esc(l)}</button>`;
+	return tip ? `<span class="cw ${list.includes(v) || f ? "on" : ""}">${btn}${info(`${tip}:${v}`)}</span>` : btn;
 }).join("")}</div>`;
 const sec = (title, body, extra = "") => `<section class="b-sec"><h3>${title}${extra ? `<span class="hint">${extra}</span>` : ""}</h3>${body}</section>`;
 const skZh = id => D.skills.find(s => s.id === id)?.zh || id;
@@ -54,42 +57,61 @@ function renderBuild(c, d) {
 	// 職業
 	let clsBody = `<div class="grid g4">${D.classes.map(x => `<button type="button" class="pick ${x.id === c.cls ? "on" : ""}" data-pick="cls" data-v="${x.id}">${x.zh}</button>`).join("")}</div>`;
 	if (L >= 3) {
-		clsBody += `<div class="row"><label class="grow">${esc(k.subTitle || "子職業")}${sel("sub", c.sub, k.subs.map(x => [x.id, `${x.zh}${srcTag(x)}`]))}</label>`;
+		clsBody += `<div class="row"><label class="grow">${esc(k.subTitle || "子職業")}${sel("sub", c.sub, k.subs.map(x => [x.id, `${x.zh}${srcTag(x)}`]))}</label>${info("sub:")}`;
 		const sub = subOf(c);
 		if (sub?.variants) clsBody += `<label class="grow">地形${sel("subVar", c.subVar, sub.variants.map(v => [v.en, {"Arid Land": "乾旱", "Polar Land": "極地", "Temperate Land": "溫帶", "Tropical Land": "熱帶"}[v.en] || v.en]))}</label>`;
 		clsBody += "</div>";
-		for (const ch of subChoices(c)) clsBody += `<p class="lab">${esc(sub.zh)}：自選法術（${ch.n}）</p>${chips(`subPick.${ch.id}`, c.subPick[ch.id], ch.pool.map(x => [x, spZh(x)]))}`;
+		for (const ch of subChoices(c)) clsBody += `<p class="lab">${esc(sub.zh)}：自選法術（${ch.n}）</p>${chips(`subPick.${ch.id}`, c.subPick[ch.id], ch.pool.map(x => [x, spZh(x)]), "", [], "spell")}`;
 	} else clsBody += `<p class="note">3 級時選擇子職業</p>`;
 	if (c.cls === "Cleric") clsBody += `<div class="row"><span class="lab">神聖職序</span>${seg("order", c.order, [["protector", "守護者"], ["thaumaturge", "奇術師"]])}</div>`;
 	if (c.cls === "Druid") clsBody += `<div class="row"><span class="lab">原初職序</span>${seg("order", c.order, [["magician", "術者"], ["warden", "守望者"]])}</div>`;
 	out.push(sec("職業", clsBody));
-	// 種族
+	// 種族：2024 玩家手冊的種族直接點選，其他書的種族從選單挑；最後一項是自填
 	const pickBtn = (f, x) => `<button type="button" class="pick ${x.id === c[f] ? "on" : ""}" data-pick="${f}" data-v="${esc(x.id)}">${esc(x.zh)}</button>`;
-	const legacySp = D.species.filter(x => x.legacy);
-	let spBody = `<div class="grid g5">${D.species.filter(x => !x.legacy).map(x => pickBtn("sp", x)).join("")}</div>
-		<details class="grp" ${s.legacy ? "open" : ""}><summary>被遺忘的國度：舊版種族<small>劍灣冒險者指南</small></summary><p class="note">依 2024 規則，舊版種族不給屬性值加值，只用背景的加值。</p><div class="grid g4">${legacySp.map(x => pickBtn("sp", x)).join("")}</div></details>`;
+	const otherSel = (f, list, label, customLabel) => {
+		const groups = new Map();
+		for (const x of list) (groups.get(x.src) || groups.set(x.src, []).get(x.src)).push(x);
+		const cur_ = list.some(x => x.id === c[f]) || c[f] === CUSTOM ? c[f] : "";
+		return `<div class="row other"><label class="grow">${label}<select data-pick-sel="${f}" class="${cur_ ? "on" : ""}"><option value="">— 其他書籍 —</option>${[...groups].map(([src, xs]) => `<optgroup label="${esc(D.srcZh[src] || src)}">${xs.map(x => `<option value="${esc(x.id)}" ${x.id === cur_ ? "selected" : ""}>${esc(x.zh)}</option>`).join("")}</optgroup>`).join("")}<optgroup label="自填"><option value="${CUSTOM}" ${cur_ === CUSTOM ? "selected" : ""}>${customLabel}</option></optgroup></select></label>${info(f === "sp" ? "sp:" : "bg:")}</div>`;
+	};
+	let spBody = `<div class="grid g5">${D.species.filter(x => !x.legacy).map(x => pickBtn("sp", x)).join("")}</div>${otherSel("sp", D.species.filter(x => x.legacy), "其他種族", "自填種族…")}`;
+	if (s.legacy && !s.custom) spBody += `<p class="note">${esc(D.srcZh[s.src] || s.src)}。依 2024 規則，舊版種族的屬性值加值不採用，只用背景的加值。</p>`;
 	const lin = LINEAGE[c.sp];
+	const lg = legacyOf(c);
+	if (s.custom) {
+		const u = c.cust?.sp || {};
+		spBody += `<div class="row"><label class="grow">名稱<input type="text" data-in="cust.sp.name" value="${esc(u.name)}" placeholder="種族名稱"></label>
+			<label>體型${sel("cust.sp.size", u.size || "M", [["M", "中型"], ["S", "小型"], ["SM", "小型或中型"]])}</label></div>
+			<div class="row"><label>速度<input type="number" data-num2="cust.sp.speed" value="${u.speed ?? 30}" min="0" max="120" step="5"></label><label>黑暗視覺<input type="number" data-num2="cust.sp.dv" value="${u.dv ?? 0}" min="0" max="300" step="30"></label><label>技能數<input type="number" data-num2="cust.sp.sk" value="${u.sk ?? 0}" min="0" max="4"></label></div>
+			<label class="blk">特性（每行一項，可寫成「名稱：說明」）<textarea data-in="cust.sp.tx" rows="4" placeholder="黑暗視覺：你能看見 60 呎內的黑暗。">${esc(u.tx)}</textarea></label>`;
+	}
 	const row = [];
 	if (lin?.opts) row.push(`<label class="grow">${lin.label}${sel("lin", c.lin, lin.opts.map(o => [o.id, o.zh]))}</label>`);
 	if (s.legacy && s.opts.length > 1) row.push(`<label class="grow">亞種與變體${sel("lin", c.lin, s.opts.map(o => [o.id, o.zh]))}</label>`);
-	if (lin?.ab) row.push(`<label>施法屬性${sel("linSa", c.linSa, ["int", "wis", "cha"].map(a => [a, ABZH[a]]))}</label>`);
-	if (s.size.length > 1) row.push(`<label>體型${sel("size", c.size, s.size.map(z => [z, SIZE_ZH[z]]))}</label>`);
+	if (lin?.ab || lg?.saCh) row.push(`<label>施法屬性${sel("linSa", c.linSa, (lg?.saCh || ["int", "wis", "cha"]).map(a => [a, ABZH[a]]))}</label>`);
+	if (lg?.resCh) row.push(`<label>抗性${sel("resPick", c.resPick, lg.resCh.map(x => [x, DMG_ZH[x] || x]))}</label>`);
+	const sizes = lg?.size || s.size;
+	if (sizes.length > 1 && !s.custom) row.push(`<label>體型${sel("size", c.size, sizes.map(z => [z, SIZE_ZH[z]]))}</label>`);
 	if (row.length) spBody += `<div class="row">${row.join("")}</div>`;
-	const lg = legacyOf(c);
 	if (lg?.sk?.any) spBody += `<p class="lab">種族技能（${lg.sk.any} 項）</p>${chips("spSkill", c.spSkill, D.skills.map(x => [x.id, x.zh]))}`;
-	if (c.linPick?.length) spBody += `<p class="lab">種族戲法</p>${chips("linPick", c.linPick, lg.sp.choose[0].pool.map(x => [x, spZh(x)]))}`;
+	if (lg?.sk?.ch) spBody += `<p class="lab">種族技能（${lg.sk.ch.n} 項）</p>${chips("spSkill2", c.spSkill2, lg.sk.ch.from.map(x => [x, skZh(x)]))}`;
+	if (c.linPick?.length) spBody += `<p class="lab">種族戲法</p>${chips("linPick", c.linPick, lg.sp.choose[0].pool.map(x => [x, spZh(x)]), "", [], "spell")}`;
 	if (c.sp === "Elf" || c.sp === "Human") spBody += `<div class="row"><span class="lab">${c.sp === "Elf" ? "敏銳感官" : "技藝純熟"}</span>${sel("spSkill.0", c.spSkill[0], (c.sp === "Elf" ? ["insight", "perception", "survival"] : D.skills.map(x => x.id)).map(x => [x, skZh(x)]))}</div>`;
 	out.push(sec("種族", spBody));
 	// 背景
-	const bgGrp = (title, list, note = "") => `<details class="grp" ${list.some(x => x.id === c.bg) ? "open" : ""}><summary>${title}</summary>${note}<div class="grid g4">${list.map(x => pickBtn("bg", x)).join("")}</div></details>`;
-	let bgBody = `<div class="grid g4">${D.backgrounds.filter(x => !x.src).map(x => pickBtn("bg", x)).join("")}</div>`;
-	bgBody += bgGrp("被遺忘的國度<small>費倫英雄</small>", D.backgrounds.filter(x => x.src === "FRHoF"));
-	bgBody += bgGrp("被遺忘的國度：舊版背景<small>劍灣冒險者指南</small>", D.backgrounds.filter(x => x.legacy), `<p class="note">舊版背景的屬性加值可自選任何屬性，並可自選一個起源專長。</p>`);
+	let bgBody = `<div class="grid g4">${D.backgrounds.filter(x => !x.src).map(x => pickBtn("bg", x)).join("")}</div>${otherSel("bg", D.backgrounds.filter(x => x.src), "其他背景", "自填背景…")}`;
+	if (b.legacy && !b.custom) bgBody += `<p class="note">${esc(D.srcZh[b.src] || b.src)}的舊版背景：屬性加值可加在任何屬性，並可自選一個起源專長。</p>`;
+	else if (b.src) bgBody += `<p class="note">${esc(D.srcZh[b.src] || b.src)}</p>`;
+	if (b.custom) {
+		const u = c.cust?.bg || {};
+		bgBody += `<div class="row"><label class="grow">名稱<input type="text" data-in="cust.bg.name" value="${esc(u.name)}" placeholder="背景名稱"></label><label class="grow">工具熟練<input type="text" data-in="cust.bg.tool" value="${esc(u.tool)}" placeholder="例如：盜賊工具"></label></div>
+			<label class="blk">背景特性<textarea data-in="cust.bg.tx" rows="3" placeholder="背景給的特殊能力或說明">${esc(u.tx)}</textarea></label>`;
+	}
 	bgBody += `<div class="row"><span class="lab">屬性加值</span>${seg("bgMode", c.bgMode, [["21", "+2／+1"], ["111", "+1／+1／+1"]])}</div>`;
 	if (c.bgMode === "21") bgBody += `<div class="row"><label class="grow">+2${sel("bgA", c.bgA, b.ab.map(a => [a, ABZH[a]]))}</label><label class="grow">+1${sel("bgB", c.bgB, b.ab.filter(a => a !== c.bgA).map(a => [a, ABZH[a]]))}</label></div>`;
 	else if (b.legacy) bgBody += chips("bg111", c.bg111, AB.map(a => [a, ABZH[a]]));
 	else bgBody += `<p class="note">${b.ab.map(a => ABZH[a]).join("、")}各 +1</p>`;
-	if (b.skCh) bgBody += `<p class="lab">背景技能（${b.skCh.n} 項）</p>${chips("bgSkill", c.bgSkill, b.skCh.from.map(x => [x, skZh(x)]))}`;
+	if (b.skCh) bgBody += `<p class="lab">背景技能（${b.skCh.n} 項）</p>${chips("bgSkill", c.bgSkill, (b.skCh.from || D.skills.map(x => x.id)).map(x => [x, skZh(x)]))}`;
 	bgBody += `<p class="note">技能：${[...b.sk, ...(c.bgSkill || [])].map(skZh).join("、")}　專長：${esc(b.feat ? D.feats[b.feat.split(";")[0]]?.zh || "" : "自選起源專長")}${b.feature ? `　${esc(b.feature.zh)}` : ""}</p>`;
 	out.push(sec("背景", bgBody));
 	// 屬性值
@@ -119,7 +141,16 @@ function renderBuild(c, d) {
 		const f = c.feats[sl.id], fd = D.feats[f.k];
 		ftBody += `<div class="feat"><span class="lab">${esc(sl.src)}</span>`;
 		if (sl.fixed) ftBody += `<b>${esc(fd?.zh)}</b>`;
-		else ftBody += sel(`feats.${sl.id}.k`, f.k, featOptions(sl, L, c).map(x => [x, `${D.feats[x].zh}${srcTag(D.feats[x])}`]));
+		else {
+			const opts = featOptions(sl, L, c);
+			const core = opts.filter(x => !D.feats[x].src), more = opts.filter(x => D.feats[x].src);
+			const groups = new Map();
+			for (const x of more) (groups.get(D.feats[x].src) || groups.set(D.feats[x].src, []).get(D.feats[x].src)).push(x);
+			const o = (x, l) => `<option value="${esc(x)}" ${x === f.k ? "selected" : ""}>${esc(l)}</option>`;
+			ftBody += `<select data-set="feats.${sl.id}.k">${core.map(x => o(x, D.feats[x].zh)).join("")}${[...groups].map(([src, xs]) => `<optgroup label="${esc(D.srcZh[src] || src)}">${xs.map(x => o(x, D.feats[x].zh)).join("")}</optgroup>`).join("")}<optgroup label="自填">${o(CUSTOM, "自填專長…")}</optgroup></select>`;
+		}
+		if (f.k !== CUSTOM) ftBody += info(`feat:${f.k}`);
+		else ftBody += `<input type="text" class="sm" data-in="feats.${sl.id}.name" value="${esc(f.name)}" placeholder="專長名稱"><textarea data-in="feats.${sl.id}.tx" rows="2" placeholder="專長說明（選填）">${esc(f.tx)}</textarea>`;
 		if (f.ab) {
 			const n = f.k === "ability score improvement" ? 2 : 1;
 			for (let i = 0; i < n; i++) if (fd.ab.length > 1) ftBody += sel(`feats.${sl.id}.ab.${i}`, f.ab[i], fd.ab.map(a => [a, `${ABZH[a]} +1`]), "class=sm");
@@ -130,7 +161,7 @@ function renderBuild(c, d) {
 			const L1 = f.list[0].toUpperCase() + f.list.slice(1);
 			const p0 = Object.keys(D.spells).filter(x => D.spells[x].l === 0 && D.spells[x].cls.includes(L1));
 			const p1 = Object.keys(D.spells).filter(x => D.spells[x].l === 1 && D.spells[x].cls.includes(L1));
-			ftBody += `<details><summary>魔法學徒法術：${[...f.can, ...f.s1].map(spZh).join("、")}</summary><p class="lab">戲法（2）</p>${chips(`feats.${sl.id}.can`, f.can, p0.map(x => [x, spZh(x)]))}<p class="lab">1 環（1）</p>${chips(`feats.${sl.id}.s1`, f.s1, p1.map(x => [x, spZh(x)]))}</details>`;
+			ftBody += `<details><summary>魔法學徒法術：${[...f.can, ...f.s1].map(spZh).join("、")}</summary><p class="lab">戲法（2）</p>${chips(`feats.${sl.id}.can`, f.can, p0.map(x => [x, spZh(x)]), "", [], "spell")}<p class="lab">1 環（1）</p>${chips(`feats.${sl.id}.s1`, f.s1, p1.map(x => [x, spZh(x)]), "", [], "spell")}</details>`;
 		}
 		if (f.sk) ftBody += `<details><summary>技巧嫻熟：${f.sk.map(skZh).join("、")}</summary>${chips(`feats.${sl.id}.sk`, f.sk, D.skills.map(x => [x.id, x.zh]))}</details>`;
 		ftBody += "</div>";
@@ -140,12 +171,12 @@ function renderBuild(c, d) {
 	if (d.sp) {
 		const sp = d.sp;
 		let spB = "";
-		if (sp.nC) spB += `<p class="lab">戲法（${c.cantrips.length}／${sp.nC}）</p>${chips("cantrips", c.cantrips, byPri(sp.poolC, SP_PRI[sp.list].c).map(x => [x, spZh(x)]), "", sp.alwaysKeys)}`;
+		if (sp.nC) spB += `<p class="lab">戲法（${c.cantrips.length}／${sp.nC}）</p>${chips("cantrips", c.cantrips, byPri(sp.poolC, SP_PRI[sp.list].c).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell")}`;
 		spB += `<p class="lab">準備法術（${c.prepared.length}／${sp.nP}）${sp.always.length ? `　另有常備 ${sp.always.length} 道` : ""}</p>`;
 		for (let lv = 1; lv <= sp.maxLv; lv++) {
 			const list = sp.poolS.filter(x => D.spells[x].l === lv);
 			const n = c.prepared.filter(x => D.spells[x].l === lv).length;
-			spB += `<details ${lv === sp.maxLv || lv === 1 ? "open" : ""}><summary>${lv} 環（已選 ${n}）</summary>${chips("prepared", c.prepared, byPri(list, SP_PRI[sp.list].s).map(x => [x, spZh(x)]), "", sp.alwaysKeys)}</details>`;
+			spB += `<details ${lv === sp.maxLv || lv === 1 ? "open" : ""}><summary>${lv} 環（已選 ${n}）</summary>${chips("prepared", c.prepared, byPri(list, SP_PRI[sp.list].s).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell")}</details>`;
 		}
 		spB += `<button type="button" class="link" data-act="resetSpells">重新推薦法術</button>`;
 		out.push(sec("法術", spB, "點選即可替換"));
@@ -257,7 +288,7 @@ function tipContent(t) {
 		case "spell": {
 			const s = D.spells[id];
 			const lv = s.l ? `${s.l} 環` : "戲法";
-			return {title: s.zh, sub: `${lv}　${s.time}　${s.range}　${s.comp}　${s.dur}`, tx: s.tx, url: link("spells.html", s.en)};
+			return {title: s.zh, sub: `${lv}　${s.time}　${s.range}　${s.comp}　${s.dur}${s.src ? `　${D.srcZh[s.src] || s.src}` : ""}`, tx: s.tx, url: link("spells.html", s.en, (s.src || "xphb").toLowerCase())};
 		}
 		case "item": {
 			const it = D.items[id];
@@ -269,11 +300,27 @@ function tipContent(t) {
 		}
 		case "cf": { const f = d.feats[+id]; return {title: f.zh, sub: `${f.lv} 級`, tx: f.tx}; }
 		case "tr": { const f = d.traits[+id]; return {title: f.zh, sub: f.bg ? bgd(c).zh : spc(c).zh, tx: f.tx}; }
-		case "ft": { const f = d.featList[+id]; const fd = D.feats[f.k]; return {title: f.zh, sub: f.src, tx: f.tx, url: fd && link("feats.html", fd.en)}; }
-		case "bg": { const b = bgd(c); return {title: b.zh, sub: `背景${srcTag(b)}`, tx: b.feature ? [`【${b.feature.zh}】${b.feature.tx.join(" ")}`] : [], url: link("backgrounds.html", b.id, (b.src || "xphb").toLowerCase())}; }
+		case "ft": { const f = d.featList[+id]; const fd = D.feats[f.k]; return {title: f.zh, sub: f.src, tx: f.tx, url: fd && link("feats.html", fd.en, (fd.src || "xphb").toLowerCase())}; }
+		case "feat": {
+			const fd = D.feats[id];
+			if (!fd) return null;
+			const pre = [fd.lv && `${fd.lv} 級以上`, fd.preFeat && `需要專長：${fd.preFeat.map(x => D.feats[x]?.zh || x).join("或")}`, fd.preCast && "需要施法能力", fd.preMartial && "需要軍用武器熟練", fd.preRace && "需要特定種族", fd.preAb && `需要${fd.preAb.map(([a, v]) => `${ABZH[a]} ${v}`).join("或")}`].filter(Boolean).join("；");
+			return {title: fd.zh, sub: [{O: "起源專長", G: "通用專長", EB: "史詩恩賜"}[fd.cat[0]] || "戰鬥風格專長", D.srcZh[fd.src], pre].filter(Boolean).join("　"), tx: fd.tx, url: link("feats.html", fd.en, (fd.src || "xphb").toLowerCase())};
+		}
+		case "sub": {
+			const sub = cls(c).subs.find(x => x.id === c.sub);
+			if (!sub) return null;
+			return {title: sub.zh, sub: [cls(c).zh, D.srcZh[sub.src]].filter(Boolean).join("　"), tx: sub.f.filter(f => f.en !== sub.en).map(f => `【${f.lv} 級：${f.zh}】${f.tx.join(" ")}`)};
+		}
+		case "bg": {
+			const b = bgd(c);
+			const tx = [`技能：${[...b.sk, ...(c.bgSkill || [])].map(skZh).join("、") || "—"}`, `專長：${b.feat ? D.feats[b.feat.split(";")[0]]?.zh || b.feat : "自選起源專長"}`];
+			if (b.feature) tx.push(`【${b.feature.zh}】${b.feature.tx.join(" ")}`);
+			return {title: b.zh, sub: `背景${srcTag(b)}`, tx, url: b.custom ? null : link("backgrounds.html", b.id, (b.src || "xphb").toLowerCase())};
+		}
 		case "sp": {
 			const s = spc(c), lg = legacyOf(c);
-			return {title: lg ? `${s.zh}（${lg.zh}）` : s.zh, sub: `種族${srcTag(s)}`, tx: (lg ? lg.tr : s.tr).map(t => `【${t.zh}】${t.tx.join(" ")}`), url: lg ? null : link("races.html", s.id)};
+			return {title: lg?.zh ? `${s.zh}（${lg.zh}）` : s.zh, sub: `種族${srcTag(s)}`, tx: (lg ? lg.tr : s.tr).map(t => `【${t.zh}】${t.tx.join(" ")}`), url: s.custom ? null : link("races.html", s.id.split("|")[0], (s.src || "xphb").toLowerCase())};
 		}
 	}
 	return null;
@@ -298,23 +345,150 @@ function render({build = true} = {}) {
 	document.title = `${c.name || "未命名角色"} - 自動角色卡`;
 }
 
+// 換職業、種族、背景時，清掉只屬於舊選擇的手動設定
+function doPick(f, v) {
+	update(c => {
+		if (c[f] === v) return;
+		c[f] = v;
+		if (f === "cls") { c.feats = {}; c.sub = null; c.ex = {}; c.pin = {}; c.toolPick = {}; c.eqA = "A"; c.baseSet = c.bgSet = false; c.method = "array"; }
+		if (f === "sp") { c.lin = c.size = null; for (const p of Object.keys(c.pin || {})) if (/^(spSkill|langs|linPick|toolPick\.sp)/.test(p)) { delete c.pin[p]; delete c.ex?.[p]; } delete c.feats.hum; delete c.feats.spf; }
+		if (f === "bg") { c.bgSet = false; c.eqB = "A"; delete c.feats.bg; for (const p of Object.keys(c.pin || {})) if (/^(toolPick\.bg|bgSkill|bg111)/.test(p)) { delete c.pin[p]; delete c.ex?.[p]; } }
+	});
+}
+
+// ---- 明暗模式：跟隨系統 → 亮 → 暗 ----
+const THEME_KEY = "dnd-sheet:theme";
+const THEME_ZH = {auto: "跟隨系統", light: "明亮", dark: "黑暗"};
+function applyTheme(t) {
+	if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
+	const b = $("[data-act=theme]");
+	if (b) { b.dataset.mode = t; b.title = `顯示模式：${THEME_ZH[t]}`; b.setAttribute("aria-label", b.title); }
+}
+function cycleTheme() {
+	let t = "auto";
+	try { t = localStorage.getItem(THEME_KEY) || "auto"; } catch { /* 無法讀取 */ }
+	t = {auto: "light", light: "dark", dark: "auto"}[t];
+	try { localStorage.setItem(THEME_KEY, t); } catch { /* 無法儲存 */ }
+	applyTheme(t);
+	toast(`顯示模式：${THEME_ZH[t]}`);
+}
+
+// ---- 文字版（Markdown）----
+function toMarkdown(c, d) {
+	const k = cls(c), s = spc(c), b = bgd(c), sub = subOf(c), lg = legacyOf(c), P = c.play || {};
+	const L = [];
+	const line = (...x) => L.push(x.join(""));
+	line(`# ${c.name || "未命名角色"}`);
+	line("");
+	line(`- **職業**：${k.zh} ${c.level} 級${sub ? `（${sub.zh}）` : ""}`);
+	line(`- **種族**：${s.zh}${lg?.zh ? `（${lg.zh}）` : d.linLabel && !lg ? `（${d.linLabel}）` : ""}`);
+	line(`- **背景**：${b.zh}`);
+	if (P.align) line(`- **陣營**：${P.align}`);
+	line("");
+	line("## 基本數值");
+	line("");
+	line(`| 護甲等級 | 生命值上限 | 生命骰 | 先攻 | 速度 | 體型 | 被動察覺 | 熟練加值 |`);
+	line(`| --- | --- | --- | --- | --- | --- | --- | --- |`);
+	line(`| ${d.ac.ac}（${d.ac.note}${d.shield && !d.ac.noShield ? "＋盾" : ""}） | ${d.hp} | ${c.level}d${d.hd} | ${sgn(d.init)} | ${d.speed} 呎${d.speedNote ? `（${d.speedNote}）` : ""} | ${d.size} | ${d.passive} | ${sgn(d.pb)} |`);
+	line("");
+	line("## 屬性值");
+	line("");
+	line(`| 屬性 | 數值 | 調整值 | 豁免 | 技能 |`);
+	line(`| --- | --- | --- | --- | --- |`);
+	for (const a of AB) {
+		const sks = d.skills.filter(x => x.ab === a).map(x => `${x.zh} ${sgn(x.v)}${x.e ? "（專精）" : x.p ? "（熟練）" : ""}`).join("、");
+		line(`| ${ABZH[a]} | ${d.sc[a]} | ${sgn(d.m[a])} | ${sgn(d.saves[a].v)}${d.saves[a].p ? "（熟練）" : ""} | ${sks || "—"} |`);
+	}
+	line("");
+	line("## 攻擊");
+	line("");
+	if (d.attacks.length) {
+		line(`| 名稱 | 命中／DC | 傷害 | 備註 |`);
+		line(`| --- | --- | --- | --- |`);
+		for (const a of d.attacks) line(`| ${a.name} | ${a.hit} | ${a.dmg} | ${a.note || ""} |`);
+	} else line("—");
+	line("");
+	line("## 職業能力");
+	line("");
+	for (const r of d.res) line(`- ${r.col}：${r.v}`);
+	for (const f of d.feats) line(`- ${f.lv} 級：${f.zh}${f.sub ? `（${sub.zh}）` : ""}`);
+	line("");
+	line(`## ${b.feature ? "種族與背景特性" : "種族特性"}`);
+	line("");
+	if (d.linLabel) line(`- ${d.linLabel}`);
+	for (const t of d.traits) line(`- ${t.zh}`);
+	if (d.dv) line(`- 黑暗視覺 ${d.dv} 呎`);
+	if (d.resist.length) line(`- 抗性：${d.resist.join("、")}`);
+	line("");
+	line("## 專長");
+	line("");
+	for (const f of d.featList) line(`- ${f.zh}${f.note ? `（${f.note}）` : ""}　— ${f.src}`);
+	line("");
+	line("## 熟練");
+	line("");
+	line(`- **護甲**：${d.armor.map(a => d.armorZh[a]).join("、") || "—"}`);
+	line(`- **武器**：${d.wp.join("、") || "—"}`);
+	line(`- **工具**：${d.tools.join("、") || "—"}`);
+	line(`- **語言**：${d.langZh.join("、")}`);
+	if (d.spell || d.spellRows.length) {
+		line("");
+		line("## 法術");
+		line("");
+		if (d.spell) line(`施法屬性 ${ABZH[d.spell.ab]}；法術豁免 DC ${d.spell.dc}；法術攻擊 ${sgn(d.spell.atk)}`);
+		const slots = (d.sp?.slots || []).map((n, i) => (n ? `${i + 1} 環 ×${n}` : "")).filter(Boolean);
+		if (slots.length) line(`法術位：${slots.join("、")}${d.sp.pact ? "（契約魔法）" : ""}`);
+		line("");
+		line(`| 環數 | 法術 | 施法時間 | 射程 | 持續時間 | 備註 |`);
+		line(`| --- | --- | --- | --- | --- | --- |`);
+		for (const r of d.spellRows) line(`| ${r.d.l || "戲法"} | ${r.d.zh} | ${r.d.time} | ${r.d.range} | ${r.d.dur} | ${[r.d.c && "專注", r.d.r && "儀式", r.tag, r.note].filter(Boolean).join("、")} |`);
+	}
+	line("");
+	line("## 裝備");
+	line("");
+	for (const i of d.items) line(`- ${i.k ? itZh(i.k) : i.n}${i.q > 1 ? ` ×${i.q}` : ""}`);
+	if (P.eqx) line(`- ${P.eqx.replace(/\n+/g, "、")}`);
+	const coin = [["pp", "白金幣"], ["gp", "金幣"], ["ep", "銀金幣"], ["sp", "銀幣"], ["cp", "銅幣"]].map(([x, z]) => [z, P.coin?.[x] ?? d.coins[x] ?? 0]).filter(([, v]) => +v).map(([z, v]) => `${v} ${z}`);
+	line(`- 錢幣：${coin.join("、") || "0"}`);
+	if (P.look || P.story) {
+		line("");
+		line("## 外貌與背景故事");
+		line("");
+		if (P.look) line(P.look);
+		if (P.look && P.story) line("");
+		if (P.story) line(P.story);
+	}
+	return L.join("\n") + "\n";
+}
+function showMarkdown() {
+	const md = toMarkdown(cur(), lastD);
+	const dlg = $("#tip");
+	dlg.innerHTML = `<form method="dialog" class="mdf"><header><h4>文字版</h4><button aria-label="關閉">✕</button></header><p class="sub">Markdown 格式，可直接貼到筆記、Discord 或論壇。</p><textarea id="mdtx" readonly rows="18">${esc(md)}</textarea><div class="mdbar"><button type="button" data-act="copyMd" class="primary">複製</button><button type="button" data-act="dlMd">下載 .md</button></div></form>`;
+	dlg.showModal();
+}
+async function copyMd() {
+	const t = $("#mdtx");
+	try { await navigator.clipboard.writeText(t.value); toast("已複製文字版"); } catch { t.select(); document.execCommand("copy"); toast("已複製文字版"); }
+}
+function dlMd() {
+	const c = cur();
+	const a = document.createElement("a");
+	a.href = URL.createObjectURL(new Blob([$("#mdtx").value], {type: "text/markdown"}));
+	a.download = `${c.name || "角色"}.md`;
+	a.click();
+	setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
 function bind() {
 	document.addEventListener("click", e => {
 		const t = e.target.closest("button, a.tip");
 		if (!t) return;
 		const c = cur();
 		if (t.dataset.tip) { e.preventDefault(); showTip(t.dataset.tip); return; }
-		if (t.dataset.pick) {
-			const f = t.dataset.pick, v = t.dataset.v;
-			update(c => {
-				if (c[f] === v) return;
-				c[f] = v;
-				if (f === "cls") { c.feats = {}; c.sub = null; c.ex = {}; c.pin = {}; c.toolPick = {}; c.eqA = "A"; c.baseSet = c.bgSet = false; c.method = "array"; }
-				if (f === "sp") { c.lin = c.size = null; for (const p of ["spSkill", "langs", "linPick"]) { delete c.pin?.[p]; delete c.ex?.[p]; } delete c.feats.hum; }
-				if (f === "bg") { c.bgSet = false; c.eqB = "A"; delete c.feats.bg; for (const p of Object.keys(c.pin || {})) if (/^(toolPick\.bg|bgSkill|bg111)/.test(p)) { delete c.pin[p]; delete c.ex?.[p]; } }
-			});
-			return;
-		}
+		if (t.dataset.pick) { doPick(t.dataset.pick, t.dataset.v); return; }
+		if (t.dataset.act === "theme") { cycleTheme(); return; }
+		if (t.dataset.act === "md") { showMarkdown(); t.closest("details.more")?.removeAttribute("open"); return; }
+		if (t.dataset.act === "copyMd") { copyMd(); return; }
+		if (t.dataset.act === "dlMd") { dlMd(); return; }
 		if (t.dataset.set) {
 			const p = t.dataset.set, v = t.dataset.v;
 			update(c => {
@@ -373,6 +547,8 @@ function bind() {
 		const t = e.target;
 		if (t.id === "who") { store.cur = t.value; save(); render(); return; }
 		if (t.id === "file") { importFile(t.files[0]); t.value = ""; return; }
+		if (t.dataset.pickSel) { if (t.value) doPick(t.dataset.pickSel, t.value); return; }
+		if (t.dataset.num2) { update(c => { setP(c, t.dataset.num2, Math.max(0, +t.value || 0)); }); return; }
 		if (t.dataset.set) {
 			const p = t.dataset.set, v = t.value;
 			update(c => {
@@ -399,7 +575,7 @@ function bind() {
 	});
 	document.addEventListener("input", e => {
 		const t = e.target;
-		if (t.dataset.in) { const c = cur(); c[t.dataset.in] = t.value; save(); render({build: false}); return; }
+		if (t.dataset.in) { const c = cur(); setP(c, t.dataset.in, t.value); save(); render({build: false}); return; }
 		if (t.dataset.play) { setP(cur().play, t.dataset.play, t.value); save(); }
 	});
 }
@@ -464,6 +640,9 @@ function toast(msg) {
 		else { const n = newChar(); store.chars[n.id] = n; store.cur = n.id; }
 	}
 	bind();
+	let th = "auto";
+	try { th = localStorage.getItem(THEME_KEY) || "auto"; } catch { /* 無法讀取 */ }
+	applyTheme(th);
 	render();
 	document.querySelectorAll("[data-act=view]").forEach(b => b.classList.toggle("on", b.dataset.v === store.view));
 })();
