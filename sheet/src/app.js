@@ -20,6 +20,22 @@ function newChar(base = {}) {
 	return fill({id: uid(), name: "", level: 1, cls: "Fighter", sp: "Human", bg: "Soldier", method: "array", bgMode: "21", eqA: "A", eqB: "A", ...base});
 }
 
+// 刪除釘選、排除、自由選擇的紀錄
+const dropKeys = (c, test) => { for (const o of [c.pin, c.ex, c.free]) if (o) for (const q of Object.keys(o)) if (test(q)) delete o[q]; };
+// 移除第 i 個兼職；後面的兼職序號往前移，紀錄的路徑跟著改
+function dropMc(c, i) {
+	c.mc.splice(i, 1);
+	for (const o of [c.pin, c.ex, c.free]) {
+		if (!o) continue;
+		for (const q of Object.keys(o)) {
+			const m = /^mc\.(\d+)\.(.*)$/.exec(q);
+			if (!m || +m[1] < i) continue;
+			if (+m[1] > i) o[`mc.${+m[1] - 1}.${m[2]}`] = o[q];
+			delete o[q];
+		}
+	}
+	for (const q of Object.keys(c.toolPick || {})) if (/^mc\d/.test(q)) delete c.toolPick[q];
+}
 // ---- 路徑存取（給 chip 與選單用）----
 const getP = (o, p) => p.split(".").reduce((a, k) => a?.[k], o);
 const setP = (o, p, v) => { const ks = p.split("."); const last = ks.pop(); const t = ks.reduce((a, k) => (a[k] ||= {}), o); t[last] = v; };
@@ -41,11 +57,12 @@ const info = tip => `<button type="button" class="info" data-tip="${esc(tip)}" a
 // 角色已經從其他地方得到的法術：在可選的法術清單中顯示為固定項目，不能重複選（法術書例外）
 let ownedSp = new Set();
 const chips = (path, list, pool, label, fixed = [], tip = null, max = 0) => `<div class="chips">${pool.map(([v, l]) => {
-	const f = fixed.includes(v) || (max && tip === "spell" && path !== "subBook" && ownedSp.has(v) && !list.includes(v));
+	const f = fixed.includes(v) || (max && tip === "spell" && !path.endsWith("subBook") && ownedSp.has(v) && !list.includes(v));
 	const btn = `<button type="button" class="chip ${list.includes(v) ? "on" : ""} ${f ? "fixed" : ""}" ${f ? "disabled" : `data-chip="${path}" data-v="${esc(v)}"${max ? ` data-max="${max}"` : ""}`}>${esc(l)}</button>`;
 	return tip ? `<span class="cw ${list.includes(v) && !f ? "on" : ""}">${btn}${info(`${tip}:${v}`)}</span>` : btn;
 }).join("")}</div>`;
 const sec = (title, body, extra = "") => `<section class="b-sec"><h3>${title}${extra ? `<span class="hint">${extra}</span>` : ""}</h3>${body}</section>`;
+const ARMOR_ZH = {light: "輕甲", medium: "中甲", heavy: "重甲", shield: "盾牌"};
 const skZh = id => D.skills.find(s => s.id === id)?.zh || id;
 const spZh = k => D.spells[k]?.zh || k;
 const itZh = k => D.items[k]?.zh || k;
@@ -62,22 +79,48 @@ function renderBuild(c, d) {
 	ownedSp = new Set(d.spellRows.map(r => r.k));
 	const k = cls(c), s = spc(c), b = bgd(c), L = c.level;
 	const out = [];
+	// 子職業、子職業法術、職序（主職業 pre 為空字串，兼職為「mc.序號.」）
+	const classOpts = (v, pre, tipId) => {
+		const vk = cls(v);
+		let h = "";
+		if (clv(v) >= 3) {
+			h += `<div class="row"><label class="grow">${esc(vk.subTitle || "子職業")}${sel(`${pre}sub`, v.sub, vk.subs.map(x => [x.id, `${x.zh}${srcTag(x)}`]))}</label>${info(`sub:${tipId}`)}`;
+			const sub = subOf(v);
+			if (sub?.variants) h += `<label class="grow">地形${sel(`${pre}subVar`, v.subVar, sub.variants.map(x => [x.en, {"Arid Land": "乾旱", "Polar Land": "極地", "Temperate Land": "溫帶", "Tropical Land": "熱帶"}[x.en] || x.en]))}</label>`;
+			h += "</div>";
+			for (const ch of subChoices(v)) h += `<p class="lab">${esc(sub.zh)}：自選法術（${v.subPick[ch.id].length}／${ch.n}）</p>${chips(`${pre}subPick.${ch.id}`, v.subPick[ch.id], ch.pool.map(x => [x, spZh(x)]), "", [], "spell", ch.n)}`;
+			const bk = bookChoice(v);
+			if (bk) h += `<p class="lab">${esc(sub.zh)}：免費加入法術書（${v.subBook.length}／${bk.n}）</p>${chips(`${pre}subBook`, v.subBook, bk.pool.map(x => [x, `${spZh(x)}・${D.spells[x].l} 環`]), "", [], "spell", bk.n)}`;
+		} else h += `<p class="note">${pre ? `${esc(vk.zh)} ` : ""}3 級時選擇子職業</p>`;
+		if (v.cls === "Cleric") h += `<div class="row"><span class="lab">神聖職序</span>${seg(`${pre}order`, v.order, [["protector", "守護者"], ["thaumaturge", "奇術師"]])}</div>`;
+		if (v.cls === "Druid") h += `<div class="row"><span class="lab">原初職序</span>${seg(`${pre}order`, v.order, [["magician", "術者"], ["warden", "守望者"]])}</div>`;
+		return h;
+	};
 	out.push(sec("角色", `
 		<div class="row"><label class="grow">名稱<input type="text" data-in="name" value="${esc(c.name)}" placeholder="未命名角色"></label>
 		<label>等級<span class="stepper"><button type="button" data-step="-1" aria-label="降一級">−</button><b>${L}</b><button type="button" data-step="1" aria-label="升一級">＋</button></span></label></div>`));
 	// 職業
 	let clsBody = `<div class="grid g4">${D.classes.map(x => `<button type="button" class="pick ${x.id === c.cls ? "on" : ""}" data-pick="cls" data-v="${x.id}">${x.zh}</button>`).join("")}</div>`;
-	if (L >= 3) {
-		clsBody += `<div class="row"><label class="grow">${esc(k.subTitle || "子職業")}${sel("sub", c.sub, k.subs.map(x => [x.id, `${x.zh}${srcTag(x)}`]))}</label>${info("sub:")}`;
-		const sub = subOf(c);
-		if (sub?.variants) clsBody += `<label class="grow">地形${sel("subVar", c.subVar, sub.variants.map(v => [v.en, {"Arid Land": "乾旱", "Polar Land": "極地", "Temperate Land": "溫帶", "Tropical Land": "熱帶"}[v.en] || v.en]))}</label>`;
-		clsBody += "</div>";
-		for (const ch of subChoices(c)) clsBody += `<p class="lab">${esc(sub.zh)}：自選法術（${c.subPick[ch.id].length}／${ch.n}）</p>${chips(`subPick.${ch.id}`, c.subPick[ch.id], ch.pool.map(x => [x, spZh(x)]), "", [], "spell", ch.n)}`;
-		const bk = bookChoice(c);
-		if (bk) clsBody += `<p class="lab">${esc(sub.zh)}：免費加入法術書（${c.subBook.length}／${bk.n}）</p>${chips("subBook", c.subBook, bk.pool.map(x => [x, `${spZh(x)}・${D.spells[x].l} 環`]), "", [], "spell", bk.n)}`;
-	} else clsBody += `<p class="note">3 級時選擇子職業</p>`;
-	if (c.cls === "Cleric") clsBody += `<div class="row"><span class="lab">神聖職序</span>${seg("order", c.order, [["protector", "守護者"], ["thaumaturge", "奇術師"]])}</div>`;
-	if (c.cls === "Druid") clsBody += `<div class="row"><span class="lab">原初職序</span>${seg("order", c.order, [["magician", "術者"], ["warden", "守望者"]])}</div>`;
+	const mcs = mcList(c);
+	if (mcs.length) clsBody += `<p class="note">${esc(k.zh)} ${clv(c)} 級，加上兼職共 ${L} 級</p>`;
+	clsBody += classOpts(c, "", "");
+	// 兼職：主職業至少保留 1 級，所以 2 級起才能新增
+	mcs.forEach((e, i) => {
+		const v = mcView(c, i), ek = cls(e), pre = `mc.${i}.`;
+		const opts = D.classes.filter(x => x.id === e.cls || (x.id !== c.cls && !mcs.some(y => y.cls === x.id)));
+		clsBody += `<div class="mcb"><div class="row"><label class="grow">兼職職業${sel(`${pre}cls`, e.cls, opts.map(x => [x.id, x.zh]))}</label>
+			<label>等級<span class="stepper"><button type="button" data-mcstep="${i}" data-v="-1" ${e.lv <= 1 ? "disabled" : ""} aria-label="兼職降一級">−</button><b>${e.lv}</b><button type="button" data-mcstep="${i}" data-v="1" ${clv(c) <= 1 ? "disabled" : ""} aria-label="兼職升一級">＋</button></span></label>
+			<button type="button" class="link" data-mcdel="${i}">移除</button></div>`;
+		clsBody += classOpts(v, pre, String(i));
+		const ms = ek.mc.skills;
+		if (ms) clsBody += `<p class="lab">兼職技能（${ms.n} 項）</p>${chips(`${pre}skills`, e.skills || [], ms.from.map(x => [x, skZh(x)]))}`;
+		const gain = [...ek.mc.armor.map(a => ARMOR_ZH[a] || a), ...ek.mc.weapons.map(w => (w === "martial" ? "軍用武器" : w === "simple" ? "簡易武器" : w)), ...ek.mc.toolFix.map(itZh)];
+		clsBody += `<p class="note">兼職獲得的熟練：${esc(gain.join("、") || "無")}</p></div>`;
+	});
+	const bad = [k, ...mcs.map(e => cls(e))].filter(x => !mcReqOk(x, d.sc));
+	if (mcs.length && bad.length) clsBody += `<p class="warn">兼職條件未達到：${bad.map(x => `${esc(x.zh)}需要${x.req.map(g => g.map(a => ABZH[a]).join("與")).join("或")} 13`).join("；")}</p>`;
+	if (clv(c) >= 2 && mcs.length < D.classes.length - 1) clsBody += `<button type="button" class="link" data-act="mcAdd">＋ 新增兼職職業</button>`;
+	else if (!mcs.length) clsBody += `<p class="note">2 級起可以兼職</p>`;
 	out.push(sec("職業", clsBody));
 	// 種族：2024 玩家手冊的種族直接點選，其他書的種族從選單挑；最後一項是自填
 	const pickBtn = (f, x) => `<button type="button" class="pick ${x.id === c[f] ? "on" : ""}" data-pick="${f}" data-v="${esc(x.id)}">${esc(x.zh)}</button>`;
@@ -189,20 +232,25 @@ function renderBuild(c, d) {
 	}
 	out.push(sec("專長", ftBody));
 	// 法術
-	if (d.sp) {
-		const sp = d.sp;
+	if (d.sps.length) {
 		let spB = "";
-		if (sp.nC) spB += `<p class="lab">戲法（${c.cantrips.length}／${sp.nC}）</p>${chips("cantrips", c.cantrips, byPri(sp.poolC, SP_PRI[sp.list].c).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell", sp.nC)}`;
-		spB += `<p class="lab">準備法術（${c.prepared.length}／${sp.nP}）${sp.always.length ? `　另有常備 ${sp.always.length} 道` : ""}</p>`;
-		for (let lv = 1; lv <= sp.maxLv; lv++) {
-			const list = sp.poolS.filter(x => D.spells[x].l === lv);
-			const n = c.prepared.filter(x => D.spells[x].l === lv).length;
-			const own = list.filter(x => D.spells[x].cls.includes(sp.list)), more = list.filter(x => !own.includes(x));
-			const prepChips = xs => chips("prepared", c.prepared, byPri(xs, SP_PRI[sp.list].s).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell", sp.nP);
-			spB += `<details data-k="sp-${lv}" ${lv === sp.maxLv || lv === 1 ? "open" : ""}><summary>${lv} 環（已選 ${n}）</summary>${prepChips(own)}${more.length ? `<p class="lab">魔法秘密（牧師、德魯伊、法師列表）</p>${prepChips(more)}` : ""}</details>`;
+		for (const {v, sp} of d.sps) {
+			const pre = v._mc == null ? "" : `mc.${v._mc}.`;
+			if (mcs.length) spB += `<h4 class="sp-h">${esc(cls(v).zh)}法術（${clv(v)} 級）</h4>`;
+			if (sp.nC) spB += `<p class="lab">戲法（${v.cantrips.length}／${sp.nC}）</p>${chips(`${pre}cantrips`, v.cantrips, byPri(sp.poolC, SP_PRI[sp.list].c).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell", sp.nC)}`;
+			spB += `<p class="lab">準備法術（${v.prepared.length}／${sp.nP}）${sp.always.length ? `　另有常備 ${sp.always.length} 道` : ""}</p>`;
+			for (let lv = 1; lv <= sp.maxLv; lv++) {
+				const list = sp.poolS.filter(x => D.spells[x].l === lv);
+				const n = v.prepared.filter(x => D.spells[x].l === lv).length;
+				const own = list.filter(x => D.spells[x].cls.includes(sp.list)), more = list.filter(x => !own.includes(x));
+				const prepChips = xs => chips(`${pre}prepared`, v.prepared, byPri(xs, SP_PRI[sp.list].s).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell", sp.nP);
+				spB += `<details data-k="${pre}sp-${lv}" ${lv === sp.maxLv || lv === 1 ? "open" : ""}><summary>${lv} 環（已選 ${n}）</summary>${prepChips(own)}${more.length ? `<p class="lab">魔法秘密（牧師、德魯伊、法師列表）</p>${prepChips(more)}` : ""}</details>`;
+			}
+			spB += `<button type="button" class="link" data-act="resetSpells" data-pre="${pre}">重新推薦法術</button>`;
+			for (const [sl, arr] of Object.entries(v.arcanum || {})) spB += `<p class="lab">玄奧秘法：${sl} 環（${arr.length}／1）</p>${chips(`${pre}arcanum.${sl}`, arr, arcanumPool(+sl).map(x => [x, spZh(x)]), "", [], "spell", 1)}`;
 		}
-		spB += `<button type="button" class="link" data-act="resetSpells">重新推薦法術</button>`;
-		for (const [sl, arr] of Object.entries(c.arcanum || {})) spB += `<p class="lab">玄奧秘法：${sl} 環（${arr.length}／1）</p>${chips(`arcanum.${sl}`, arr, arcanumPool(+sl).map(x => [x, spZh(x)]), "", [], "spell", 1)}`;
+		if (d.sps.length > 1) spB += `<p class="note">法術位依兼職施法者規則合併${d.pact && d.sps.some(x => !x.sp.pact) ? "，契約魔法的法術位另計" : ""}。</p>`;
+		if (d.extraSpells.length && mcs.length) spB += `<h4 class="sp-h">其他來源</h4>`;
 		spB += otherSp(d);
 		out.push(sec("法術", spB, "點選加入或取消"));
 	} else if (d.extraSpells.length) out.push(sec("法術", otherSp(d)));
@@ -231,14 +279,17 @@ function playIn(path, val, attrs = "") { return `<input class="pi" data-play="${
 function tick(path, on, title = "") { return `<button type="button" class="tick ${on ? "on" : ""}" data-tick="${path}" aria-pressed="${!!on}" title="${title}"></button>`; }
 
 function renderSheet(c, d) {
-	const k = cls(c), s = spc(c), b = bgd(c), sub = subOf(c), P = c.play, L = c.level;
+	const k = cls(c), s = spc(c), b = bgd(c), P = c.play, L = c.level;
+	const views = classViews(c), multi = views.length > 1;
+	const clsText = views.map(v => `${cls(v).zh}${multi ? ` ${clv(v)}` : ""}`).join("／");
+	const subText = views.map(v => subOf(v)?.zh).filter(Boolean).join("／");
 	const tipA = (tip, txt) => (tip ? `<a href="#" class="tip" data-tip="${tip}">${esc(txt)}</a>` : esc(txt));
 	// 第一頁：標頭
 	const head = `<div class="hdr">
 		<div class="box ident">
 			<div class="f wide"><span>角色名稱</span><b>${esc(c.name || "　")}</b></div>
-			<div class="f"><span>背景</span><b>${tipA(`bg:${b.id}`, b.zh)}</b></div><div class="f"><span>職業</span><b>${esc(k.zh)}</b></div>
-			<div class="f"><span>種族</span><b>${tipA(`sp:${s.id}`, s.zh)}</b></div><div class="f"><span>子職</span><b>${esc(sub?.zh || "")}</b></div>
+			<div class="f"><span>背景</span><b>${tipA(`bg:${b.id}`, b.zh)}</b></div><div class="f"><span>職業</span><b>${esc(clsText)}</b></div>
+			<div class="f"><span>種族</span><b>${tipA(`sp:${s.id}`, s.zh)}</b></div><div class="f"><span>子職</span><b>${esc(subText)}</b></div>
 		</div>
 		<div class="box lvl"><div><span>等級</span><b>${L}</b></div><div><span>經驗</span>${playIn("xp", P.xp, "inputmode=numeric")}</div></div>
 		<div class="box acb"><span>護甲等級</span><b>${d.ac.ac}</b><small>${esc(d.ac.note)}${d.shield && !d.ac.noShield ? "＋盾" : ""}</small></div>
@@ -246,7 +297,7 @@ function renderSheet(c, d) {
 			<div><span>現有</span>${playIn("hp", P.hp ?? d.hp, "inputmode=numeric")}</div>
 			<div><span>臨時</span>${playIn("thp", P.thp, "inputmode=numeric")}</div>
 			<div><span>上限</span><b>${d.hp}</b></div></div></div>
-		<div class="box hd"><div class="bt">生命骰</div><div class="hpg"><div><span>消耗</span>${playIn("hdu", P.hdu, "inputmode=numeric")}</div><div><span>上限</span><b>${L}d${d.hd}</b></div></div></div>
+		<div class="box hd"><div class="bt">生命骰</div><div class="hpg"><div><span>消耗</span>${playIn("hdu", P.hdu, "inputmode=numeric")}</div><div><span>上限</span><b>${d.hdText}</b></div></div></div>
 		<div class="box ds"><div class="bt">死亡豁免</div><div class="dsr"><span>成功</span>${[0, 1, 2].map(i => tick(`ds.s${i}`, P.ds?.[`s${i}`])).join("")}</div><div class="dsr"><span>失敗</span>${[0, 1, 2].map(i => tick(`ds.f${i}`, P.ds?.[`f${i}`])).join("")}</div></div>
 	</div>`;
 	// 屬性區
@@ -267,7 +318,7 @@ function renderSheet(c, d) {
 	const atk = box("武器與攻擊戲法", `<table class="tbl"><thead><tr><th>名稱</th><th>命中加值／DC</th><th>傷害／類型</th><th>備註</th></tr></thead><tbody>
 		${d.attacks.map(a => `<tr><td>${tipA(a.tip, a.name)}</td><td>${esc(a.hit)}</td><td>${esc(a.dmg)}</td><td class="sm">${esc(a.note)}</td></tr>`).join("") || `<tr><td colspan="4" class="muted">—</td></tr>`}</tbody></table>`);
 	const resLine = d.res.length ? `<div class="res">${d.res.map(r => `<span><small>${esc(r.col)}</small>${esc(r.v)}</span>`).join("")}</div>` : "";
-	const cf = box("職業能力", `${resLine}<ul class="flist">${d.feats.map((f, i) => `<li><small>${f.lv}</small>${tipA(`cf:${i}`, f.zh)}${f.sub ? `<em>${esc(sub.zh)}</em>` : ""}</li>`).join("")}</ul>`, "cfeat");
+	const cf = box("職業能力", `${resLine}<ul class="flist">${d.feats.map((f, i) => `<li><small>${f.lv}</small>${tipA(`cf:${i}`, f.zh)}${f.sub || f.cls ? `<em>${esc([f.cls, f.sub].filter(Boolean).join("・"))}</em>` : ""}</li>`).join("")}</ul>`, "cfeat");
 	const tr = box(b.feature ? "種族與背景特性" : "種族特性", `<ul class="flist">${d.linLabel ? `<li class="muted">${esc(d.linLabel)}</li>` : ""}${d.traits.map((t, i) => `<li>${tipA(`tr:${i}`, t.zh)}</li>`).join("")}
 		${d.dv ? `<li class="muted">黑暗視覺 ${d.dv} 呎</li>` : ""}${d.resist.length ? `<li class="muted">抗性：${esc(d.resist.join("、"))}</li>` : ""}</ul>`);
 	const ft = box("專長", `<ul class="flist">${d.featList.map((f, i) => `<li>${tipA(`ft:${i}`, f.zh)}${f.note ? `<em>${esc(f.note)}</em>` : ""}<small class="src">${esc(f.src)}</small></li>`).join("")}</ul>`);
@@ -277,10 +328,12 @@ function renderSheet(c, d) {
 
 	// 第二頁
 	const spl = d.spell;
-	const cast = `<div class="box cast"><div class="ca"><span>施法屬性</span><b>${spl ? ABZH[spl.ab] : "—"}</b></div>
-		<div class="cr"><b>${spl ? sgn(spl.mod) : "—"}</b><span>施法調整值</span></div><div class="cr"><b>${spl ? spl.dc : "—"}</b><span>法術豁免難度</span></div><div class="cr"><b>${spl ? sgn(spl.atk) : "—"}</b><span>法術命中加值</span></div></div>`;
-	const slots = d.sp?.slots || [];
-	const slotBox = box(`法術位${d.sp?.pact ? "<small>（契約魔法，短休恢復）</small>" : ""}`, `<div class="slots">${Array.from({length: 9}, (_, i) => {
+	const cast = `<div class="box cast"><div class="ca"><span>施法屬性</span><b>${spl ? `${d.casts.length > 1 ? `${esc(spl.zh)} ` : ""}${ABZH[spl.ab]}` : "—"}</b></div>
+		<div class="cr"><b>${spl ? sgn(spl.mod) : "—"}</b><span>施法調整值</span></div><div class="cr"><b>${spl ? spl.dc : "—"}</b><span>法術豁免難度</span></div><div class="cr"><b>${spl ? sgn(spl.atk) : "—"}</b><span>法術命中加值</span></div>
+		${d.casts.slice(1).map(x => `<p class="cast2">${esc(x.zh)}：${ABZH[x.ab]}，DC ${x.dc}，命中 ${sgn(x.atk)}</p>`).join("")}</div>`;
+	const slots = d.slots || [];
+	const onlyPact = d.pact && !d.sps.some(x => !x.sp.pact);
+	const slotBox = box(`法術位${onlyPact ? "<small>（契約魔法，短休恢復）</small>" : d.pact ? `<small>（另有契約魔法 ${d.pact.n} 個 ${d.pact.lv} 環，短休恢復）</small>` : ""}`, `<div class="slots">${Array.from({length: 9}, (_, i) => {
 		const n = slots[i] || 0;
 		return `<div class="sl ${n ? "" : "off"}"><span>${"一二三四五六七八九"[i]}環</span><b>${n || "—"}</b><span class="tk">${Array.from({length: n}, (_, j) => tick(`slot.${i}.${j}`, P.slot?.[i]?.[j])).join("")}</span></div>`;
 	}).join("")}</div>`);
@@ -333,9 +386,10 @@ function tipContent(t) {
 			return {title: fd.zh, sub: [{O: "起源專長", G: "通用專長", EB: "史詩恩賜"}[fd.cat[0]] || "戰鬥風格專長", D.srcZh[fd.src], pre].filter(Boolean).join("　"), tx: fd.tx, url: link("feats.html", fd.en, (fd.src || "xphb").toLowerCase())};
 		}
 		case "sub": {
-			const sub = cls(c).subs.find(x => x.id === c.sub);
+			const v = id === "" ? c : mcView(c, +id);
+			const sub = cls(v).subs.find(x => x.id === v.sub);
 			if (!sub) return null;
-			return {title: sub.zh, sub: [cls(c).zh, D.srcZh[sub.src]].filter(Boolean).join("　"), tx: sub.f.filter(f => f.en !== sub.en).map(f => `【${f.lv} 級：${f.zh}】${f.tx.join(" ")}`)};
+			return {title: sub.zh, sub: [cls(v).zh, D.srcZh[sub.src]].filter(Boolean).join("　"), tx: sub.f.filter(f => f.en !== sub.en).map(f => `【${f.lv} 級：${f.zh}】${f.tx.join(" ")}`)};
 		}
 		case "bg": {
 			const b = bgd(c);
@@ -370,7 +424,7 @@ function render({build = true} = {}) {
 		for (const x of $("#build").querySelectorAll("details[data-k]")) if (keep.has(x.dataset.k)) x.open = keep.get(x.dataset.k);
 	}
 	$("#sheet").innerHTML = renderSheet(c, d);
-	$("#who").innerHTML = Object.values(store.chars).map(x => `<option value="${x.id}" ${x.id === c.id ? "selected" : ""}>${esc(x.name || "未命名角色")}　${esc(cls(x).zh)} ${x.level}</option>`).join("");
+	$("#who").innerHTML = Object.values(store.chars).map(x => `<option value="${x.id}" ${x.id === c.id ? "selected" : ""}>${esc(x.name || "未命名角色")}　${esc([cls(x).zh, ...(x.mc || []).map(e => cls(e).zh)].join("／"))} ${x.level}</option>`).join("");
 	document.body.dataset.view = store.view;
 	document.title = `${c.name || "未命名角色"} - 自動角色卡`;
 }
@@ -410,7 +464,7 @@ function toMarkdown(c, d) {
 	const line = (...x) => L.push(x.join(""));
 	line(`# ${c.name || "未命名角色"}`);
 	line("");
-	line(`- **職業**：${k.zh} ${c.level} 級${sub ? `（${sub.zh}）` : ""}`);
+	line(`- **職業**：${classViews(c).map(v => `${cls(v).zh} ${clv(v)} 級${subOf(v) ? `（${subOf(v).zh}）` : ""}`).join("、")}${mcList(c).length ? `，總等級 ${c.level}` : ""}`);
 	line(`- **種族**：${s.zh}${lg?.zh ? `（${lg.zh}）` : d.linLabel && !lg ? `（${d.linLabel}）` : ""}`);
 	line(`- **背景**：${b.zh}`);
 	if (P.align) line(`- **陣營**：${P.align}`);
@@ -419,7 +473,7 @@ function toMarkdown(c, d) {
 	line("");
 	line(`| 護甲等級 | 生命值上限 | 生命骰 | 先攻 | 速度 | 體型 | 被動察覺 | 熟練加值 |`);
 	line(`| --- | --- | --- | --- | --- | --- | --- | --- |`);
-	line(`| ${d.ac.ac}（${d.ac.note}${d.shield && !d.ac.noShield ? "＋盾" : ""}） | ${d.hp} | ${c.level}d${d.hd} | ${sgn(d.init)} | ${d.speed} 呎${d.speedNote ? `（${d.speedNote}）` : ""} | ${d.size} | ${d.passive} | ${sgn(d.pb)} |`);
+	line(`| ${d.ac.ac}（${d.ac.note}${d.shield && !d.ac.noShield ? "＋盾" : ""}） | ${d.hp} | ${d.hdText} | ${sgn(d.init)} | ${d.speed} 呎${d.speedNote ? `（${d.speedNote}）` : ""} | ${d.size} | ${d.passive} | ${sgn(d.pb)} |`);
 	line("");
 	line("## 屬性值");
 	line("");
@@ -441,7 +495,7 @@ function toMarkdown(c, d) {
 	line("## 職業能力");
 	line("");
 	for (const r of d.res) line(`- ${r.col}：${r.v}`);
-	for (const f of d.feats) line(`- ${f.lv} 級：${f.zh}${f.sub ? `（${sub.zh}）` : ""}`);
+	for (const f of d.feats) line(`- ${f.cls ? `${f.cls} ` : ""}${f.lv} 級：${f.zh}${f.sub ? `（${f.sub}）` : ""}`);
 	line("");
 	line(`## ${b.feature ? "種族與背景特性" : "種族特性"}`);
 	line("");
@@ -464,9 +518,11 @@ function toMarkdown(c, d) {
 		line("");
 		line("## 法術");
 		line("");
-		if (d.spell) line(`施法屬性 ${ABZH[d.spell.ab]}；法術豁免 DC ${d.spell.dc}；法術攻擊 ${sgn(d.spell.atk)}`);
-		const slots = (d.sp?.slots || []).map((n, i) => (n ? `${i + 1} 環 ×${n}` : "")).filter(Boolean);
-		if (slots.length) line(`法術位：${slots.join("、")}${d.sp.pact ? "（契約魔法）" : ""}`);
+		for (const x of d.casts) line(`${d.casts.length > 1 ? `${x.zh}：` : ""}施法屬性 ${ABZH[x.ab]}；法術豁免 DC ${x.dc}；法術攻擊 ${sgn(x.atk)}`);
+		const slots = (d.slots || []).map((n, i) => (n ? `${i + 1} 環 ×${n}` : "")).filter(Boolean);
+		const onlyPact = d.pact && !d.sps.some(x => !x.sp.pact);
+		if (slots.length) line(`法術位：${slots.join("、")}${onlyPact ? "（契約魔法）" : ""}`);
+		if (d.pact && !onlyPact) line(`契約魔法：${d.pact.lv} 環 ×${d.pact.n}`);
 		line("");
 		line(`| 環數 | 法術 | 施法時間 | 射程 | 持續時間 | 備註 |`);
 		line(`| --- | --- | --- | --- | --- | --- |`);
@@ -531,7 +587,21 @@ function bind() {
 			});
 			return;
 		}
-		if (t.dataset.step) { update(c => { c.level = Math.max(1, Math.min(20, c.level + +t.dataset.step)); }); return; }
+		if (t.dataset.step) {
+			update(c => {
+				const n = Math.max(1, Math.min(20, c.level + +t.dataset.step));
+				// 降級時主職業已是 1 級，就從最後一個兼職扣
+				if (n < c.level && clv(c) <= 1 && c.mc?.length) { const e = c.mc[c.mc.length - 1]; if (--e.lv < 1) dropMc(c, c.mc.length - 1); }
+				c.level = n;
+			});
+			return;
+		}
+		if (t.dataset.mcstep) {
+			const i = +t.dataset.mcstep, dv = +t.dataset.v;
+			update(c => { const e = c.mc[i]; if (dv > 0 && clv(c) > 1) e.lv++; if (dv < 0 && e.lv > 1) e.lv--; });
+			return;
+		}
+		if (t.dataset.mcdel) { update(c => dropMc(c, +t.dataset.mcdel)); return; }
 		if (t.dataset.pt) { update(c => { c.base[t.dataset.pt] += +t.dataset.v; c.baseSet = true; }); return; }
 		if (t.dataset.chip && t.dataset.max) {
 			// 自由選擇：點選加入或取消；只能選一個時直接換成新的
@@ -566,7 +636,8 @@ function bind() {
 		}
 		t.closest("details.more")?.removeAttribute("open");
 		switch (t.dataset.act) {
-			case "resetSpells": update(c => { for (const p of ["cantrips", "prepared"]) { delete c.ex?.[p]; delete c.pin?.[p]; delete c.free?.[p]; } }); break;
+			case "resetSpells": { const pre = t.dataset.pre || ""; update(c => { for (const p of [`${pre}cantrips`, `${pre}prepared`]) { delete c.ex?.[p]; delete c.pin?.[p]; delete c.free?.[p]; } }); break; }
+			case "mcAdd": update(c => { const used = [c.cls, ...mcList(c).map(e => e.cls)]; const x = D.classes.find(k => !used.includes(k.id)); if (x && clv(c) > 1) (c.mc ||= []).push({cls: x.id, lv: 1}); }); break;
 			case "new": { const n = newChar(); store.chars[n.id] = n; store.cur = n.id; store.view = "build"; save(); render(); break; }
 			case "dup": { const n = JSON.parse(JSON.stringify(c)); n.id = uid(); n.name = `${c.name || "未命名角色"}（複本）`; store.chars[n.id] = n; store.cur = n.id; save(); render(); break; }
 			case "del": {
@@ -609,6 +680,11 @@ function bind() {
 				if (p === "bgA" || p === "bgB") c.bgSet = true;
 				if (p === "lin") { for (const q of ["linPick", "spSkill"]) { delete c.pin?.[q]; delete c.ex?.[q]; delete c.free?.[q]; } }
 				if (p === "sub") { for (const q of Object.keys(c.pin || {})) if (q.startsWith("subPick")) { delete c.pin[q]; delete c.ex?.[q]; delete c.free?.[q]; } }
+				// 換兼職職業：清掉該兼職的選擇；換兼職子職業：清掉子職業法術
+				let mm = /^mc\.(\d+)\.cls$/.exec(p);
+				if (mm) { const e = c.mc[+mm[1]]; c.mc[+mm[1]] = {cls: e.cls, lv: e.lv}; dropKeys(c, q => q.startsWith(`mc.${mm[1]}.`)); }
+				mm = /^mc\.(\d+)\.sub$/.exec(p);
+				if (mm) dropKeys(c, q => q.startsWith(`mc.${mm[1]}.subPick`));
 				if (/^feats\.\w+\.k$/.test(p)) { const id = p.split(".")[1]; c.feats[id] = {k: v}; for (const q of Object.keys(c.free || {})) if (q.startsWith(`feats.${id}.`)) { delete c.free[q]; delete c.pin?.[q]; } }
 				if (/^feats\.\w+\.alt$/.test(p)) { const id = p.split(".")[1]; for (const q of Object.keys(c.pin || {})) if (q.startsWith(`feats.${id}.spc`)) { delete c.pin[q]; delete c.free?.[q]; delete c.ex?.[q]; } }
 				if (/^feats\.\w+\.list$/.test(p)) { const id = p.split(".")[1]; for (const k of ["can", "s1"]) { delete c.pin?.[`feats.${id}.${k}`]; delete c.free?.[`feats.${id}.${k}`]; } }

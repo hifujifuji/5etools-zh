@@ -353,6 +353,14 @@ for (const fn of fs.readdirSync(path.join(DATA, "class")).filter(f => /^class-.*
 			...(CS !== SRC ? {src: CS} : {}),
 			toolFix: Object.entries(sp.toolProficiencies?.[0] || {}).filter(([, v]) => v === true).map(([k]) => key(k)),
 			toolAny: Object.entries(sp.toolProficiencies?.[0] || {}).filter(([k, v]) => typeof v === "number").map(([k, v]) => ({from: ANY_TOOL[k], n: v})).filter(x => x.from),
+			// 兼職：條件（主要屬性 13，陣列內任一組全部達到）與兼職時獲得的熟練
+			req: c.primaryAbility.map(o => Object.keys(o)),
+			mc: (g => ({
+				armor: g.armor || [], weapons: (g.weapons || []).map(w => typeof w === "string" ? w : w.proficiency || ""),
+				toolFix: Object.entries(g.toolProficiencies?.[0] || {}).filter(([, v]) => v === true).map(([k]) => key(k)),
+				toolAny: Object.entries(g.toolProficiencies?.[0] || {}).filter(([, v]) => typeof v === "number").map(([k, v]) => ({from: ANY_TOOL[k], n: v})).filter(x => x.from),
+				skills: g.skills?.[0]?.choose ? {from: g.skills[0].choose.from, n: g.skills[0].choose.count || 1} : null,
+			}))(c.multiclassing?.proficienciesGained || {}),
 		});
 	}
 }
