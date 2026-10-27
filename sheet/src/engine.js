@@ -24,6 +24,9 @@ const fillPick = (cur, pool, n, pri = [], exclude = [], skip = []) => {
 const EX = (c, p) => c.ex?.[p] || [];
 // 使用者手動加入的項目，其餘每次依等級重新推薦
 const PIN = (c, p) => c.pin?.[p] || [];
+// 法術清單：玩家動過之後改為自由選擇，只保留玩家選的，不再自動補齊
+const FREE = (c, p) => !!c.free?.[p];
+const freePick = (c, p, pool, n, pri, exclude = []) => FREE(c, p) ? uniq(PIN(c, p).filter(x => pool.includes(x) && !exclude.includes(x))).slice(0, n) : fillPick(PIN(c, p), pool, n, pri, exclude, EX(c, p));
 const cls = c => D.classes.find(x => x.id === c.cls);
 // 自填模式：資料庫沒有的種族與背景，由玩家填寫名稱與特性
 const CUSTOM = "__custom";
@@ -197,27 +200,28 @@ function fill(c) {
 	c.mastery = mN ? fillPick(PIN(c, "mastery"), allW, mN, uniq(weaps), [], EX(c, "mastery")) : [];
 	// 子職業與舊版種族的自選法術
 	c.subPick = {};
-	for (const ch of subChoices(c)) c.subPick[ch.id] = fillPick(PIN(c, `subPick.${ch.id}`), ch.pool, ch.n, [...(SP_PRI[c.cls]?.c || []), ...SP_PRI.Druid.c, ...SP_PRI.Wizard.c], [], EX(c, `subPick.${ch.id}`));
+	for (const ch of subChoices(c)) c.subPick[ch.id] = freePick(c, `subPick.${ch.id}`, ch.pool, ch.n, [...(SP_PRI[c.cls]?.c || []), ...SP_PRI.Druid.c, ...SP_PRI.Wizard.c]);
 	// 法術
 	const sp = spellInfo(c);
 	if (sp) {
-		c.cantrips = fillPick(PIN(c, "cantrips"), sp.poolC, sp.nC, SP_PRI[sp.list].c, sp.alwaysKeys, EX(c, "cantrips"));
-		c.prepared = pickPrepared(PIN(c, "prepared"), sp, EX(c, "prepared"));
+		c.cantrips = freePick(c, "cantrips", sp.poolC, sp.nC, SP_PRI[sp.list].c, sp.alwaysKeys);
+		c.prepared = FREE(c, "prepared") ? freePick(c, "prepared", sp.poolS, sp.nP, [], sp.alwaysKeys) : pickPrepared(PIN(c, "prepared"), sp, EX(c, "prepared"));
 	} else { c.cantrips = []; c.prepared = []; }
 	// 魔法學徒、舊版種族的自選戲法：避開已經有的法術
 	const known = [...c.cantrips, ...c.prepared, ...(sp ? sp.alwaysKeys : [])];
-	c.linPick = lg?.sp?.choose?.length ? fillPick(PIN(c, "linPick"), lg.sp.choose[0].pool, lg.sp.choose[0].n, SP_PRI.Wizard.c, known, EX(c, "linPick")) : [];
+	c.linPick = lg?.sp?.choose?.length ? freePick(c, "linPick", lg.sp.choose[0].pool, lg.sp.choose[0].n, SP_PRI.Wizard.c, known) : [];
 	known.push(...c.linPick);
 	for (const sl of slots) {
 		const cur = c.feats[sl.id];
 		if (cur.k === "magic initiate") {
-			const list = sl.list || (cur.list && ["cleric", "druid", "wizard"].includes(cur.list) ? cur.list : ({Cleric: "cleric", Druid: "druid", Paladin: "cleric", Ranger: "druid"}[c.cls] || "wizard"));
+			// 背景指定的列表是預設值，玩家仍可改選
+			const list = cur.list && ["cleric", "druid", "wizard"].includes(cur.list) ? cur.list : sl.list || ({Cleric: "cleric", Druid: "druid", Paladin: "cleric", Ranger: "druid"}[c.cls] || "wizard");
 			cur.list = list;
 			const L1 = list[0].toUpperCase() + list.slice(1);
 			const pool0 = Object.keys(D.spells).filter(x => D.spells[x].l === 0 && D.spells[x].cls.includes(L1));
 			const pool1 = Object.keys(D.spells).filter(x => D.spells[x].l === 1 && D.spells[x].cls.includes(L1));
-			cur.can = fillPick(PIN(c, `feats.${sl.id}.can`), pool0, 2, SP_PRI[L1].c, known, EX(c, `feats.${sl.id}.can`));
-			cur.s1 = fillPick(PIN(c, `feats.${sl.id}.s1`), pool1, 1, SP_PRI[L1].s, known, EX(c, `feats.${sl.id}.s1`));
+			cur.can = freePick(c, `feats.${sl.id}.can`, pool0, 2, SP_PRI[L1].c, known);
+			cur.s1 = freePick(c, `feats.${sl.id}.s1`, pool1, 1, SP_PRI[L1].s, known);
 			if (!["int", "wis", "cha"].includes(cur.sa)) cur.sa = ["int", "wis", "cha"].includes(k.sa) ? k.sa : byPri(["int", "wis", "cha"], pri)[0];
 		} else { delete cur.can; delete cur.s1; delete cur.list; delete cur.sa; }
 	}

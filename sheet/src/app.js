@@ -37,9 +37,10 @@ const seg = (name, val, opts) => `<div class="seg" role="radiogroup">${opts.map(
 const sel = (name, val, opts, attrs = "") => `<select data-set="${name}" ${attrs}>${opts.map(([v, l]) => `<option value="${esc(v)}" ${String(val) === String(v) ? "selected" : ""}>${esc(l)}</option>`).join("")}</select>`;
 // 資訊小按鈕：開啟說明視窗（法術、專長、種族、背景、子職業共用）
 const info = tip => `<button type="button" class="info" data-tip="${esc(tip)}" aria-label="說明" title="說明">i</button>`;
-const chips = (path, list, pool, label, fixed = [], tip = null) => `<div class="chips">${pool.map(([v, l]) => {
+// max：自由選擇（法術），點選加入或取消，最多 max 個
+const chips = (path, list, pool, label, fixed = [], tip = null, max = 0) => `<div class="chips">${pool.map(([v, l]) => {
 	const f = fixed.includes(v);
-	const btn = `<button type="button" class="chip ${list.includes(v) ? "on" : ""} ${f ? "fixed" : ""}" ${f ? "disabled" : `data-chip="${path}" data-v="${esc(v)}"`}>${esc(l)}</button>`;
+	const btn = `<button type="button" class="chip ${list.includes(v) ? "on" : ""} ${f ? "fixed" : ""}" ${f ? "disabled" : `data-chip="${path}" data-v="${esc(v)}"${max ? ` data-max="${max}"` : ""}`}>${esc(l)}</button>`;
 	return tip ? `<span class="cw ${list.includes(v) || f ? "on" : ""}">${btn}${info(`${tip}:${v}`)}</span>` : btn;
 }).join("")}</div>`;
 const sec = (title, body, extra = "") => `<section class="b-sec"><h3>${title}${extra ? `<span class="hint">${extra}</span>` : ""}</h3>${body}</section>`;
@@ -61,7 +62,7 @@ function renderBuild(c, d) {
 		const sub = subOf(c);
 		if (sub?.variants) clsBody += `<label class="grow">地形${sel("subVar", c.subVar, sub.variants.map(v => [v.en, {"Arid Land": "乾旱", "Polar Land": "極地", "Temperate Land": "溫帶", "Tropical Land": "熱帶"}[v.en] || v.en]))}</label>`;
 		clsBody += "</div>";
-		for (const ch of subChoices(c)) clsBody += `<p class="lab">${esc(sub.zh)}：自選法術（${ch.n}）</p>${chips(`subPick.${ch.id}`, c.subPick[ch.id], ch.pool.map(x => [x, spZh(x)]), "", [], "spell")}`;
+		for (const ch of subChoices(c)) clsBody += `<p class="lab">${esc(sub.zh)}：自選法術（${c.subPick[ch.id].length}／${ch.n}）</p>${chips(`subPick.${ch.id}`, c.subPick[ch.id], ch.pool.map(x => [x, spZh(x)]), "", [], "spell", ch.n)}`;
 	} else clsBody += `<p class="note">3 級時選擇子職業</p>`;
 	if (c.cls === "Cleric") clsBody += `<div class="row"><span class="lab">神聖職序</span>${seg("order", c.order, [["protector", "守護者"], ["thaumaturge", "奇術師"]])}</div>`;
 	if (c.cls === "Druid") clsBody += `<div class="row"><span class="lab">原初職序</span>${seg("order", c.order, [["magician", "術者"], ["warden", "守望者"]])}</div>`;
@@ -95,7 +96,7 @@ function renderBuild(c, d) {
 	if (row.length) spBody += `<div class="row">${row.join("")}</div>`;
 	if (lg?.sk?.any) spBody += `<p class="lab">種族技能（${lg.sk.any} 項）</p>${chips("spSkill", c.spSkill, D.skills.map(x => [x.id, x.zh]))}`;
 	if (lg?.sk?.ch) spBody += `<p class="lab">種族技能（${lg.sk.ch.n} 項）</p>${chips("spSkill2", c.spSkill2, lg.sk.ch.from.map(x => [x, skZh(x)]))}`;
-	if (c.linPick?.length) spBody += `<p class="lab">種族戲法</p>${chips("linPick", c.linPick, lg.sp.choose[0].pool.map(x => [x, spZh(x)]), "", [], "spell")}`;
+	if (lg?.sp?.choose?.length) spBody += `<p class="lab">種族戲法（${c.linPick.length}／${lg.sp.choose[0].n}）</p>${chips("linPick", c.linPick, lg.sp.choose[0].pool.map(x => [x, spZh(x)]), "", [], "spell", lg.sp.choose[0].n)}`;
 	if (c.sp === "Elf" || c.sp === "Human") spBody += `<div class="row"><span class="lab">${c.sp === "Elf" ? "敏銳感官" : "技藝純熟"}</span>${sel("spSkill.0", c.spSkill[0], (c.sp === "Elf" ? ["insight", "perception", "survival"] : D.skills.map(x => x.id)).map(x => [x, skZh(x)]))}</div>`;
 	out.push(sec("種族", spBody));
 	// 背景
@@ -156,12 +157,12 @@ function renderBuild(c, d) {
 			for (let i = 0; i < n; i++) if (fd.ab.length > 1) ftBody += sel(`feats.${sl.id}.ab.${i}`, f.ab[i], fd.ab.map(a => [a, `${ABZH[a]} +1`]), "class=sm");
 		}
 		if (f.k === "magic initiate") {
-			if (!sl.list) ftBody += sel(`feats.${sl.id}.list`, f.list, [["cleric", "牧師"], ["druid", "德魯伊"], ["wizard", "法師"]], "class=sm");
-			ftBody += sel(`feats.${sl.id}.sa`, f.sa, ["int", "wis", "cha"].map(a => [a, ABZH[a]]), "class=sm");
+			const LZ = {cleric: "牧師", druid: "德魯伊", wizard: "法師"};
+			ftBody += `<div class="row"><label>法術列表${sel(`feats.${sl.id}.list`, f.list, Object.entries(LZ).map(([v, l]) => [v, sl.list === v ? `${l}（背景指定）` : l]), "class=sm")}</label><label>施法屬性${sel(`feats.${sl.id}.sa`, f.sa, ["int", "wis", "cha"].map(a => [a, ABZH[a]]), "class=sm")}</label></div>`;
 			const L1 = f.list[0].toUpperCase() + f.list.slice(1);
 			const p0 = Object.keys(D.spells).filter(x => D.spells[x].l === 0 && D.spells[x].cls.includes(L1));
 			const p1 = Object.keys(D.spells).filter(x => D.spells[x].l === 1 && D.spells[x].cls.includes(L1));
-			ftBody += `<details data-k="mi-${sl.id}"><summary>魔法學徒法術：${[...f.can, ...f.s1].map(spZh).join("、")}</summary><p class="lab">戲法（2）</p>${chips(`feats.${sl.id}.can`, f.can, p0.map(x => [x, spZh(x)]), "", [], "spell")}<p class="lab">1 環（1）</p>${chips(`feats.${sl.id}.s1`, f.s1, p1.map(x => [x, spZh(x)]), "", [], "spell")}</details>`;
+			ftBody += `<details data-k="mi-${sl.id}"><summary>魔法學徒法術：${[...f.can, ...f.s1].map(spZh).join("、")}</summary><p class="lab">戲法（${f.can.length}／2）</p>${chips(`feats.${sl.id}.can`, f.can, p0.map(x => [x, spZh(x)]), "", [], "spell", 2)}<p class="lab">1 環（${f.s1.length}／1）</p>${chips(`feats.${sl.id}.s1`, f.s1, p1.map(x => [x, spZh(x)]), "", [], "spell", 1)}</details>`;
 		}
 		if (f.sk) ftBody += `<details data-k="sk-${sl.id}"><summary>技巧嫻熟：${f.sk.map(skZh).join("、")}</summary>${chips(`feats.${sl.id}.sk`, f.sk, D.skills.map(x => [x.id, x.zh]))}</details>`;
 		ftBody += "</div>";
@@ -171,15 +172,15 @@ function renderBuild(c, d) {
 	if (d.sp) {
 		const sp = d.sp;
 		let spB = "";
-		if (sp.nC) spB += `<p class="lab">戲法（${c.cantrips.length}／${sp.nC}）</p>${chips("cantrips", c.cantrips, byPri(sp.poolC, SP_PRI[sp.list].c).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell")}`;
+		if (sp.nC) spB += `<p class="lab">戲法（${c.cantrips.length}／${sp.nC}）</p>${chips("cantrips", c.cantrips, byPri(sp.poolC, SP_PRI[sp.list].c).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell", sp.nC)}`;
 		spB += `<p class="lab">準備法術（${c.prepared.length}／${sp.nP}）${sp.always.length ? `　另有常備 ${sp.always.length} 道` : ""}</p>`;
 		for (let lv = 1; lv <= sp.maxLv; lv++) {
 			const list = sp.poolS.filter(x => D.spells[x].l === lv);
 			const n = c.prepared.filter(x => D.spells[x].l === lv).length;
-			spB += `<details data-k="sp-${lv}" ${lv === sp.maxLv || lv === 1 ? "open" : ""}><summary>${lv} 環（已選 ${n}）</summary>${chips("prepared", c.prepared, byPri(list, SP_PRI[sp.list].s).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell")}</details>`;
+			spB += `<details data-k="sp-${lv}" ${lv === sp.maxLv || lv === 1 ? "open" : ""}><summary>${lv} 環（已選 ${n}）</summary>${chips("prepared", c.prepared, byPri(list, SP_PRI[sp.list].s).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell", sp.nP)}</details>`;
 		}
 		spB += `<button type="button" class="link" data-act="resetSpells">重新推薦法術</button>`;
-		out.push(sec("法術", spB, "點選即可替換"));
+		out.push(sec("法術", spB, "點選加入或取消"));
 	}
 	// 裝備
 	const eqDesc = lst => lst.map(e => e.gp != null ? `${e.gp / 100} GP` : e.special || (e.choose ? "樂器／工具" : `${itZh(e.k)}${e.q > 1 ? `×${e.q}` : ""}`)).join("、");
@@ -355,8 +356,8 @@ function doPick(f, v) {
 	update(c => {
 		if (c[f] === v) return;
 		c[f] = v;
-		if (f === "cls") { c.feats = {}; c.sub = null; c.ex = {}; c.pin = {}; c.toolPick = {}; c.eqA = "A"; c.baseSet = c.bgSet = false; c.method = "array"; }
-		if (f === "sp") { c.lin = c.size = null; for (const p of Object.keys(c.pin || {})) if (/^(spSkill|langs|linPick|toolPick\.sp)/.test(p)) { delete c.pin[p]; delete c.ex?.[p]; } delete c.feats.hum; delete c.feats.spf; }
+		if (f === "cls") { c.feats = {}; c.sub = null; c.ex = {}; c.pin = {}; c.free = {}; c.toolPick = {}; c.eqA = "A"; c.baseSet = c.bgSet = false; c.method = "array"; }
+		if (f === "sp") { c.lin = c.size = null; for (const p of Object.keys(c.pin || {})) if (/^(spSkill|langs|linPick|toolPick\.sp)/.test(p)) { delete c.pin[p]; delete c.ex?.[p]; } delete c.free?.linPick; delete c.feats.hum; delete c.feats.spf; }
 		if (f === "bg") { c.bgSet = false; c.eqB = "A"; delete c.feats.bg; for (const p of Object.keys(c.pin || {})) if (/^(toolPick\.bg|bgSkill|bg111)/.test(p)) { delete c.pin[p]; delete c.ex?.[p]; } }
 	});
 }
@@ -508,6 +509,18 @@ function bind() {
 		}
 		if (t.dataset.step) { update(c => { c.level = Math.max(1, Math.min(20, c.level + +t.dataset.step)); }); return; }
 		if (t.dataset.pt) { update(c => { c.base[t.dataset.pt] += +t.dataset.v; c.baseSet = true; }); return; }
+		if (t.dataset.chip && t.dataset.max) {
+			// 自由選擇：點選加入或取消；只能選一個時直接換成新的
+			const p = t.dataset.chip, v = t.dataset.v, max = +t.dataset.max;
+			const list = getP(c, p) || [];
+			if (!list.includes(v) && list.length >= max && max > 1) { toast(`已選滿 ${max} 個，請先取消一個`); return; }
+			update(c => {
+				c.pin ||= {}; c.free ||= {};
+				c.free[p] = true;
+				c.pin[p] = list.includes(v) ? list.filter(x => x !== v) : max === 1 ? [v] : [...list, v];
+			});
+			return;
+		}
 		if (t.dataset.chip) {
 			const p = t.dataset.chip, v = t.dataset.v;
 			update(c => {
@@ -529,7 +542,7 @@ function bind() {
 		}
 		t.closest("details.more")?.removeAttribute("open");
 		switch (t.dataset.act) {
-			case "resetSpells": update(c => { for (const p of ["cantrips", "prepared"]) { delete c.ex?.[p]; delete c.pin?.[p]; } }); break;
+			case "resetSpells": update(c => { for (const p of ["cantrips", "prepared"]) { delete c.ex?.[p]; delete c.pin?.[p]; delete c.free?.[p]; } }); break;
 			case "new": { const n = newChar(); store.chars[n.id] = n; store.cur = n.id; store.view = "build"; save(); render(); break; }
 			case "dup": { const n = JSON.parse(JSON.stringify(c)); n.id = uid(); n.name = `${c.name || "未命名角色"}（複本）`; store.chars[n.id] = n; store.cur = n.id; save(); render(); break; }
 			case "del": {
@@ -570,10 +583,10 @@ function bind() {
 				}
 				setP(c, p, v);
 				if (p === "bgA" || p === "bgB") c.bgSet = true;
-				if (p === "lin") { for (const q of ["linPick", "spSkill"]) { delete c.pin?.[q]; delete c.ex?.[q]; } }
-				if (p === "sub") { for (const q of Object.keys(c.pin || {})) if (q.startsWith("subPick")) { delete c.pin[q]; delete c.ex?.[q]; } }
-				if (/^feats\.\w+\.k$/.test(p)) { const id = p.split(".")[1]; c.feats[id] = {k: v}; }
-				if (/^feats\.\w+\.list$/.test(p)) { const id = p.split(".")[1]; for (const k of ["can", "s1"]) delete c.pin?.[`feats.${id}.${k}`]; }
+				if (p === "lin") { for (const q of ["linPick", "spSkill"]) { delete c.pin?.[q]; delete c.ex?.[q]; delete c.free?.[q]; } }
+				if (p === "sub") { for (const q of Object.keys(c.pin || {})) if (q.startsWith("subPick")) { delete c.pin[q]; delete c.ex?.[q]; delete c.free?.[q]; } }
+				if (/^feats\.\w+\.k$/.test(p)) { const id = p.split(".")[1]; c.feats[id] = {k: v}; for (const q of Object.keys(c.free || {})) if (q.startsWith(`feats.${id}.`)) { delete c.free[q]; delete c.pin?.[q]; } }
+				if (/^feats\.\w+\.list$/.test(p)) { const id = p.split(".")[1]; for (const k of ["can", "s1"]) { delete c.pin?.[`feats.${id}.${k}`]; delete c.free?.[`feats.${id}.${k}`]; } }
 				if (p.startsWith("spSkill.") || p.startsWith("toolPick.")) { c.pin ||= {}; c.pin[p.replace(/\.0$/, "")] = [v]; }
 			});
 			return;
