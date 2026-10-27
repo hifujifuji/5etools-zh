@@ -242,7 +242,7 @@ function subFeatures(d, refs) {
 	const all = d.subclassFeature || [];
 	const find = ref => {
 		const [name, , csrc, short, ssrc, lv, fsrc] = ref.split("|");
-		const f = all.find(x => x.name === name && x.subclassShortName === short && x.subclassSource === ssrc && x.level === +lv && x.classSource === (csrc || "PHB") && (!fsrc || x.source === fsrc));
+		const f = all.find(x => x.name === name && x.subclassShortName === short && x.subclassSource === (ssrc || "PHB") && x.level === +lv && x.classSource === (csrc || "PHB") && (!fsrc || x.source === fsrc));
 		if (!f?._copy) return f;
 		const c = f._copy;
 		const base = all.find(x => x.name === c.name && x.subclassShortName === c.subclassShortName && x.subclassSource === c.subclassSource && x.level === c.level && x.classSource === c.classSource);
