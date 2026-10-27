@@ -161,9 +161,9 @@ function renderBuild(c, d) {
 			const L1 = f.list[0].toUpperCase() + f.list.slice(1);
 			const p0 = Object.keys(D.spells).filter(x => D.spells[x].l === 0 && D.spells[x].cls.includes(L1));
 			const p1 = Object.keys(D.spells).filter(x => D.spells[x].l === 1 && D.spells[x].cls.includes(L1));
-			ftBody += `<details><summary>魔法學徒法術：${[...f.can, ...f.s1].map(spZh).join("、")}</summary><p class="lab">戲法（2）</p>${chips(`feats.${sl.id}.can`, f.can, p0.map(x => [x, spZh(x)]), "", [], "spell")}<p class="lab">1 環（1）</p>${chips(`feats.${sl.id}.s1`, f.s1, p1.map(x => [x, spZh(x)]), "", [], "spell")}</details>`;
+			ftBody += `<details data-k="mi-${sl.id}"><summary>魔法學徒法術：${[...f.can, ...f.s1].map(spZh).join("、")}</summary><p class="lab">戲法（2）</p>${chips(`feats.${sl.id}.can`, f.can, p0.map(x => [x, spZh(x)]), "", [], "spell")}<p class="lab">1 環（1）</p>${chips(`feats.${sl.id}.s1`, f.s1, p1.map(x => [x, spZh(x)]), "", [], "spell")}</details>`;
 		}
-		if (f.sk) ftBody += `<details><summary>技巧嫻熟：${f.sk.map(skZh).join("、")}</summary>${chips(`feats.${sl.id}.sk`, f.sk, D.skills.map(x => [x.id, x.zh]))}</details>`;
+		if (f.sk) ftBody += `<details data-k="sk-${sl.id}"><summary>技巧嫻熟：${f.sk.map(skZh).join("、")}</summary>${chips(`feats.${sl.id}.sk`, f.sk, D.skills.map(x => [x.id, x.zh]))}</details>`;
 		ftBody += "</div>";
 	}
 	out.push(sec("專長", ftBody));
@@ -176,7 +176,7 @@ function renderBuild(c, d) {
 		for (let lv = 1; lv <= sp.maxLv; lv++) {
 			const list = sp.poolS.filter(x => D.spells[x].l === lv);
 			const n = c.prepared.filter(x => D.spells[x].l === lv).length;
-			spB += `<details ${lv === sp.maxLv || lv === 1 ? "open" : ""}><summary>${lv} 環（已選 ${n}）</summary>${chips("prepared", c.prepared, byPri(list, SP_PRI[sp.list].s).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell")}</details>`;
+			spB += `<details data-k="sp-${lv}" ${lv === sp.maxLv || lv === 1 ? "open" : ""}><summary>${lv} 環（已選 ${n}）</summary>${chips("prepared", c.prepared, byPri(list, SP_PRI[sp.list].s).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell")}</details>`;
 		}
 		spB += `<button type="button" class="link" data-act="resetSpells">重新推薦法術</button>`;
 		out.push(sec("法術", spB, "點選即可替換"));
@@ -191,7 +191,7 @@ function renderBuild(c, d) {
 	}
 	if (c.mastery.length) {
 		const allW = Object.keys(D.items).filter(x => D.items[x].mastery && weaponProf(c, D.items[x]));
-		eqB += `<details><summary>武器精通（${c.mastery.length}）：${c.mastery.map(itZh).join("、")}</summary>${chips("mastery", c.mastery, allW.map(x => [x, `${itZh(x)}・${D.masteryZh[D.items[x].mastery]}`]))}</details>`;
+		eqB += `<details data-k="mastery"><summary>武器精通（${c.mastery.length}）：${c.mastery.map(itZh).join("、")}</summary>${chips("mastery", c.mastery, allW.map(x => [x, `${itZh(x)}・${D.masteryZh[D.items[x].mastery]}`]))}</details>`;
 	}
 	out.push(sec("裝備", eqB));
 	// 語言
@@ -338,7 +338,12 @@ function render({build = true} = {}) {
 	const c = cur();
 	const d = derive(c);
 	lastD = d;
-	if (build) $("#build").innerHTML = renderBuild(c, d);
+	if (build) {
+		// 重繪後保留使用者展開或收合的區塊
+		const keep = new Map([...$("#build").querySelectorAll("details[data-k]")].map(x => [x.dataset.k, x.open]));
+		$("#build").innerHTML = renderBuild(c, d);
+		for (const x of $("#build").querySelectorAll("details[data-k]")) if (keep.has(x.dataset.k)) x.open = keep.get(x.dataset.k);
+	}
 	$("#sheet").innerHTML = renderSheet(c, d);
 	$("#who").innerHTML = Object.values(store.chars).map(x => `<option value="${x.id}" ${x.id === c.id ? "selected" : ""}>${esc(x.name || "未命名角色")}　${esc(cls(x).zh)} ${x.level}</option>`).join("");
 	document.body.dataset.view = store.view;
