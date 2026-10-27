@@ -54,7 +54,16 @@ const srcTag = o => (o?.src ? `（${D.srcZh[o.src] || o.src}）` : "");
 const canCast = c => !!(cls(c).sa || subOf(c)?.sa);
 const hasMartial = c => cls(c).weapons.includes("martial") || c.order === "protector" || c.order === "warden";
 // 子職業的自選法術（月之學院的德魯伊戲法、奧秘領域的法師戲法…）
-const subChoices = c => (subOf(c)?.choose || []).map((ch, i) => ({...ch, id: i})).filter(ch => ch.lv <= c.level);
+const subChoices = c => (subOf(c)?.choose || []).map((ch, i) => ({...ch, id: i})).filter(ch => ch.lv <= c.level && !ch.book);
+// 法師學派專家：每次獲得的免費法術書法術合併成一份清單（範圍取目前可用的最大環階）
+const bookChoice = c => {
+	const a = (subOf(c)?.choose || []).filter(ch => ch.book && ch.lv <= c.level);
+	return a.length ? {n: a.reduce((s, x) => s + x.n, 0), pool: a[a.length - 1].pool} : null;
+};
+// 契術師玄奧秘法：11、13、15、17 級各獲得一道 6～9 環法術
+const ARCANUM = [[11, 6], [13, 7], [15, 8], [17, 9]];
+const arcanumLevels = c => (c.cls === "Warlock" ? ARCANUM.filter(([lv]) => c.level >= lv).map(([, sl]) => sl) : []);
+const arcanumPool = sl => Object.keys(D.spells).filter(x => D.spells[x].l === sl && D.spells[x].cls.includes("Warlock"));
 
 // ---- 專長欄位 ----
 function featSlots(c) {
@@ -215,6 +224,9 @@ function fill(c) {
 		c.cantrips = freePick(c, "cantrips", sp.poolC, sp.nC, SP_PRI[sp.list].c, sp.alwaysKeys);
 		c.prepared = FREE(c, "prepared") ? freePick(c, "prepared", sp.poolS, sp.nP, [], sp.alwaysKeys) : pickPrepared(PIN(c, "prepared"), sp, EX(c, "prepared"));
 	} else { c.cantrips = []; c.prepared = []; }
+	c.arcanum = Object.fromEntries(arcanumLevels(c).map(sl => [sl, freePick(c, `arcanum.${sl}`, arcanumPool(sl), 1, SP_PRI.Warlock?.s || [])]));
+	const bk = bookChoice(c);
+	c.subBook = bk ? freePick(c, "subBook", bk.pool, bk.n, SP_PRI.Wizard.s) : [];
 	// 魔法學徒、舊版種族的自選戲法：避開已經有的法術
 	const known = [...c.cantrips, ...c.prepared, ...(sp ? sp.alwaysKeys : [])];
 	c.linPick = lg?.sp?.choose?.length ? freePick(c, "linPick", lg.sp.choose[0].pool, lg.sp.choose[0].n, SP_PRI.Wizard.c, known) : [];
@@ -378,6 +390,8 @@ function spellInfo(c) {
 	const maxLv = slots.reduce((m, n, i) => (n ? i + 1 : m), 0);
 	let nC = src.can ? src.can[L - 1] : 0;
 	if (c.order === "thaumaturge" || c.order === "magician") nC += 1;
+	// 吟遊詩人魔法秘密：10 級起準備法術也可以從牧師、德魯伊、法師列表選
+	const lists = c.cls === "Bard" && L >= 10 ? ["Bard", "Cleric", "Druid", "Wizard"] : [src.list];
 	const nP = src.prep[L - 1];
 	// 常備法術
 	const always = [];
@@ -391,8 +405,8 @@ function spellInfo(c) {
 	}
 	const alwaysKeys = always.map(a => a.k);
 	const poolC = Object.keys(D.spells).filter(x => D.spells[x].l === 0 && D.spells[x].cls.includes(src.list));
-	const poolS = Object.keys(D.spells).filter(x => { const s = D.spells[x]; return s.l >= 1 && s.l <= maxLv && s.cls.includes(src.list); });
-	return {sa: src.sa, slots, pact, maxLv, nC, nP, poolC, poolS, always, alwaysKeys, list: src.list};
+	const poolS = Object.keys(D.spells).filter(x => { const s = D.spells[x]; return s.l >= 1 && s.l <= maxLv && lists.some(l => s.cls.includes(l)); });
+	return {sa: src.sa, slots, pact, maxLv, nC, nP, poolC, poolS, always, alwaysKeys, list: src.list, secrets: lists.length > 1};
 }
 function pickPrepared(cur, sp, skip = []) {
 	const pri = SP_PRI[sp.list].s;
@@ -544,6 +558,7 @@ function derive(c) {
 		for (const x of a.innate) if (x.lv <= L) extraSpells.push({k: x.k, tag: fd.zh, sa, note: D.spells[x.k]?.l ? "1 次／長休" : ""});
 		a.choose.forEach((ch, i) => { for (const x of f.spc?.[i] || []) extraSpells.push({k: x, tag: fd.zh, sa, note: ch.inn && D.spells[x]?.l ? "1 次／長休" : ""}); });
 	}
+	for (const [sl, arr] of Object.entries(c.arcanum || {})) for (const x of arr) extraSpells.push({k: x, tag: "玄奧秘法", sa: "cha", note: "1 次／長休"});
 	const spAb = sp ? sp.sa : null;
 	const spell = sp ? {ab: spAb, mod: m[spAb], dc: 8 + pb + m[spAb], atk: pb + m[spAb]} : null;
 	const addRow = (key, tag, extra = {}) => {

@@ -221,7 +221,8 @@ function chooseSpells(ch) {
 	const cl = q.class ? q.class[0].toUpperCase() + q.class.slice(1).toLowerCase() : null;
 	const sch = q.school ? q.school.split(";") : null;
 	const rit = /ritual/.test(q["components & miscellaneous"] || "");
-	return Object.keys(spells).filter(k => (q.level == null || spells[k].l === +q.level) && (!cl || spells[k].cls.includes(cl)) && (!sch || sch.includes(spells[k].sc)) && (!rit || spells[k].r));
+	const lvs = q.level != null ? q.level.split(";").map(Number) : null;
+	return Object.keys(spells).filter(k => (!lvs || lvs.includes(spells[k].l)) && (!cl || spells[k].cls.includes(cl)) && (!sch || sch.includes(spells[k].sc)) && (!rit || spells[k].r));
 }
 // additionalSpells 的一組選項轉成 {known, innate, choose}；等級「_」視為 1 級，prepared 視為 known
 function spellPart(as) {
@@ -321,7 +322,8 @@ for (const fn of fs.readdirSync(path.join(DATA, "class")).filter(f => /^class-.*
 				const list = Array.isArray(v) ? v : Object.values(v).flatMap(x => (Array.isArray(x) ? x : Object.values(x).flat()));
 				for (const x of list) {
 					if (typeof x === "string") known.push({lv: lvFix(lv), k: key(x)});
-					else if (x?.choose) choose.push({lv: lvFix(lv), n: x.count || 1, pool: chooseSpells(x.choose)});
+					// 法師的學派專家：自選的法術是加進法術書，不是常備法術
+					else if (x?.choose) choose.push(c.name === "Wizard" ? {lv: lvFix(lv), n: x.count || 1, pool: chooseSpells(x.choose).filter(k => spells[k].l > 0), book: 1} : {lv: lvFix(lv), n: x.count || 1, pool: chooseSpells(x.choose)});
 				}
 			}
 			if (known.length) o.known = known;

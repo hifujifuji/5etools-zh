@@ -51,7 +51,7 @@ const itZh = k => D.items[k]?.zh || k;
 // 種族、背景、專長、子職業給的法術：像熟練一樣列成固定項目，依來源分組
 const otherSp = d => {
 	const g = new Map();
-	for (const e of d.extraSpells) (g.get(e.tag) || g.set(e.tag, []).get(e.tag)).includes(e.k) || g.get(e.tag).push(e.k);
+	for (const e of d.extraSpells) if (e.tag !== "玄奧秘法") (g.get(e.tag) || g.set(e.tag, []).get(e.tag)).includes(e.k) || g.get(e.tag).push(e.k);
 	return [...g].map(([tag, ks]) => `<p class="lab">${esc(tag)}</p>${chips("", ks, ks.map(x => [x, spZh(x)]), "", ks, "spell")}`).join("");
 };
 
@@ -70,6 +70,8 @@ function renderBuild(c, d) {
 		if (sub?.variants) clsBody += `<label class="grow">地形${sel("subVar", c.subVar, sub.variants.map(v => [v.en, {"Arid Land": "乾旱", "Polar Land": "極地", "Temperate Land": "溫帶", "Tropical Land": "熱帶"}[v.en] || v.en]))}</label>`;
 		clsBody += "</div>";
 		for (const ch of subChoices(c)) clsBody += `<p class="lab">${esc(sub.zh)}：自選法術（${c.subPick[ch.id].length}／${ch.n}）</p>${chips(`subPick.${ch.id}`, c.subPick[ch.id], ch.pool.map(x => [x, spZh(x)]), "", [], "spell", ch.n)}`;
+		const bk = bookChoice(c);
+		if (bk) clsBody += `<p class="lab">${esc(sub.zh)}：免費加入法術書（${c.subBook.length}／${bk.n}）</p>${chips("subBook", c.subBook, bk.pool.map(x => [x, `${spZh(x)}・${D.spells[x].l} 環`]), "", [], "spell", bk.n)}`;
 	} else clsBody += `<p class="note">3 級時選擇子職業</p>`;
 	if (c.cls === "Cleric") clsBody += `<div class="row"><span class="lab">神聖職序</span>${seg("order", c.order, [["protector", "守護者"], ["thaumaturge", "奇術師"]])}</div>`;
 	if (c.cls === "Druid") clsBody += `<div class="row"><span class="lab">原初職序</span>${seg("order", c.order, [["magician", "術者"], ["warden", "守望者"]])}</div>`;
@@ -192,9 +194,12 @@ function renderBuild(c, d) {
 		for (let lv = 1; lv <= sp.maxLv; lv++) {
 			const list = sp.poolS.filter(x => D.spells[x].l === lv);
 			const n = c.prepared.filter(x => D.spells[x].l === lv).length;
-			spB += `<details data-k="sp-${lv}" ${lv === sp.maxLv || lv === 1 ? "open" : ""}><summary>${lv} 環（已選 ${n}）</summary>${chips("prepared", c.prepared, byPri(list, SP_PRI[sp.list].s).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell", sp.nP)}</details>`;
+			const own = list.filter(x => D.spells[x].cls.includes(sp.list)), more = list.filter(x => !own.includes(x));
+			const prepChips = xs => chips("prepared", c.prepared, byPri(xs, SP_PRI[sp.list].s).map(x => [x, spZh(x)]), "", sp.alwaysKeys, "spell", sp.nP);
+			spB += `<details data-k="sp-${lv}" ${lv === sp.maxLv || lv === 1 ? "open" : ""}><summary>${lv} 環（已選 ${n}）</summary>${prepChips(own)}${more.length ? `<p class="lab">魔法秘密（牧師、德魯伊、法師列表）</p>${prepChips(more)}` : ""}</details>`;
 		}
 		spB += `<button type="button" class="link" data-act="resetSpells">重新推薦法術</button>`;
+		for (const [sl, arr] of Object.entries(c.arcanum || {})) spB += `<p class="lab">玄奧秘法：${sl} 環（${arr.length}／1）</p>${chips(`arcanum.${sl}`, arr, arcanumPool(+sl).map(x => [x, spZh(x)]), "", [], "spell", 1)}`;
 		spB += otherSp(d);
 		out.push(sec("法術", spB, "點選加入或取消"));
 	} else if (d.extraSpells.length) out.push(sec("法術", otherSp(d)));
