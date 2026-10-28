@@ -120,3 +120,9 @@
 ## 武器精通屬性
 
 劈裂 Cleave、擦傷 Graze、迅擊 Nick、推擊 Push、削弱 Sap、緩速 Slow、擊倒 Topple、惱擾 Vex
+
+## 地名
+
+| 英文 | 中文 |
+| --- | --- |
+| Neverwinter | 絕冬城（Neverwinter Wood＝絕冬森林；build TERM_FIX 會把「無冬」改正） |
