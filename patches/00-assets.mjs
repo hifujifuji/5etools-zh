@@ -16,6 +16,29 @@ const titleNames = dist => {
 	return out;
 };
 
+// 書籍目錄用的標題表：書籍 id（小寫）→ {英文標題 → 中文}（取自書籍資料的 name_zh；「Chapter 2: X」另存「X」）
+const bookHeaders = dist => {
+	const out = {};
+	const bd = path.join(dist, "data", "book");
+	if (!fs.existsSync(bd)) return out;
+	const walk = (o, map) => {
+		if (Array.isArray(o)) return o.forEach(x => walk(x, map));
+		if (!o || typeof o !== "object") return;
+		if (typeof o.name === "string" && o.name_zh && (o._zhOf == null || o._zhOf === o.name)) {
+			map[o.name] ??= o.name_zh;
+			const m = /^(?:Chapter \d+|Appendix [A-Z]): (.+)$/.exec(o.name), z = /^[^：:]+[：:]\s*(.+)$/.exec(o.name_zh);
+			if (m && z) map[m[1]] = z[1];
+		}
+		for (const v of Object.values(o)) if (v && typeof v === "object") walk(v, map);
+	};
+	for (const f of fs.readdirSync(bd).filter(f => /^book-.+\.json$/.test(f))) {
+		const map = {};
+		walk(JSON.parse(fs.readFileSync(path.join(bd, f), "utf8")).data, map);
+		if (Object.keys(map).length) out[f.slice(5, -5)] = map;
+	}
+	return out;
+};
+
 // 子職業中文名：「職業|子職業簡稱」→ 中文（法術頁的子職業清單用）
 const subclassNames = dist => {
 	const out = {};
@@ -31,7 +54,8 @@ export default function ({dist, root}) {
 		.replace("/* __ZH_DICT__ */ {}", JSON.stringify(ui.dict))
 		.replace("/* __ZH_RULES__ */ []", JSON.stringify(ui.rules))
 		.replace("/* __ZH_TITLE__ */ {}", JSON.stringify(titleNames(dist)))
-		.replace("/* __ZH_SUBCLASS__ */ {}", JSON.stringify(subclassNames(dist)));
+		.replace("/* __ZH_SUBCLASS__ */ {}", JSON.stringify(subclassNames(dist)))
+		.replace("/* __ZH_BOOKHDR__ */ {}", JSON.stringify(bookHeaders(dist)));
 	fs.writeFileSync(path.join(dist, "js", "zh.js"), js);
 	fs.copyFileSync(path.join(root, "src", "zh.css"), path.join(dist, "css", "zh.css"));
 

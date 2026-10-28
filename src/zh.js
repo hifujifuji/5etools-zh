@@ -12,6 +12,8 @@
 	const TITLE = /* __ZH_TITLE__ */ {};
 	// 子職業中文名：「職業|子職業簡稱」→ 中文
 	const SUBCLASS = /* __ZH_SUBCLASS__ */ {};
+	// 書籍目錄（側欄）的標題，依書籍 id 分開：只在目錄區塊內使用，連結仍以英文標題比對
+	const BOOKHDR = /* __ZH_BOOKHDR__ */ {};
 
 	const RULES = RULES_SRC.map(([re, repl]) => [new RegExp(`^${re}$`), repl]);
 
@@ -126,7 +128,14 @@
 		const m = RE_TRIM.exec(v);
 		const core = m[2];
 		if (!core || !/[A-Za-z]/.test(core)) return;
-		let out = t(core);
+		let out = null;
+		if (BOOKHDR && node.parentElement?.closest?.(".contents-item, .bk-contents")) {
+			// 「2: Running the Game」「A: Lore Glossary」：保留編號
+			const mh = /^([0-9]+|[A-Z]): (.+)$/.exec(core);
+			const z = BOOKHDR[location.hash.slice(1).split(",")[0].toLowerCase()]?.[mh ? mh[2] : core];
+			if (z) out = mh ? `${mh[1]}：${z}` : z;
+		}
+		if (out == null) out = t(core);
 		// 「Casting Time:」這類結尾標點
 		if (out == null) {
 			const mp = /^(.*?)([:：.]\s*)$/.exec(core);

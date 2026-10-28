@@ -152,6 +152,37 @@ const walkDataFiles = dir => {
 	return out;
 };
 
+// 書籍逐項中文（i18n/<書>/）：標題照翻成 name_zh、表格字串照翻、各節開頭插入本站自撰的「中文簡介」方塊；英文正文保留
+// names-*.json：英文標題 → 中文；tables-*.json：表格內英文字串（整串比對）→ 中文；intro-*.json：英文節名 → 簡介
+const BOOK_ZH = {};
+for (const id of ["xdmg"]) {
+	const dir = path.join(I18N, id), z = BOOK_ZH[S(id)] = {names: {}, strs: {}, intro: {}};
+	for (const f of fs.readdirSync(dir).filter(f => f.endsWith(".json")).sort()) {
+		const kind = {tables: "strs"}[f.split("-")[0]] || f.split("-")[0];
+		if (z[kind]) Object.assign(z[kind], readI18n(path.join(dir, f)));
+	}
+}
+const applyBookZh = (data, {names, strs, intro}) => {
+	const used = new Set(); // 同名的節只在第一次出現處放簡介
+	const tStr = v => typeof v === "string" ? (hasCjk(strs[v]) ? strs[v] : v)
+		: Array.isArray(v) ? v.map(tStr)
+		: v && typeof v === "object" ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, k === "type" || k === "roll" ? x : tStr(x)]))
+		: v;
+	const walk = o => {
+		if (Array.isArray(o)) return o.forEach(walk);
+		if (!o || typeof o !== "object") return;
+		if (o.type === "statblock") return;
+		if (o.type === "table") {
+			for (const k of ["caption", "colLabels", "rows", "footnotes"]) if (k in o) o[k] = tStr(o[k]);
+			return;
+		}
+		if (typeof o.name === "string" && hasCjk(names[o.name])) Merger.setName(o, names[o.name]);
+		if (typeof o.name === "string" && intro[o.name] && !used.has(o.name) && Array.isArray(o.entries) && used.add(o.name)) o.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(intro[o.name])});
+		for (const v of Object.values(o)) walk(v);
+	};
+	walk(data);
+};
+
 const SKIP_PROPS = new Set(["_meta", "data"]);
 let nFiles = 0;
 const loaded = [];
@@ -167,6 +198,10 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	const mBook = /^book\/book-(.+)\.json$/.exec(rel);
 	if (mBook && json.data && tr.book?.[S(mBook[1])]) {
 		merger.mergeTree(json.data, tr.book[S(mBook[1])]);
+		touched = true;
+	}
+	if (mBook && json.data && BOOK_ZH[S(mBook[1])]) {
+		applyBookZh(json.data, BOOK_ZH[S(mBook[1])]);
 		touched = true;
 	}
 
