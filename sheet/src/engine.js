@@ -669,6 +669,8 @@ function derive(c) {
 		x.always.forEach(a => addRow(a.k, `常備（${a.tag}）`, {sa: x.sa}));
 		v.prepared.forEach(y => addRow(y, tag, {sa: x.sa}));
 	}
+	// 學派專家免費加入法術書的法術：未準備的也列出，備註標明
+	for (const {v, sp: x} of sps) (v.subBook || []).forEach(y => addRow(y, subOf(v)?.zh || "", {sa: x.sa, note: "法術書（未準備）"}));
 	for (const e of extraSpells) addRow(e.k, e.tag, {sa: e.sa, note: e.note});
 	spellRows.sort((a, b) => a.d.l - b.d.l || a.d.zh.localeCompare(b.d.zh, "zh-Hant"));
 	// 戲法攻擊加入攻擊欄
