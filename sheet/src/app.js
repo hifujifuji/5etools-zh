@@ -152,7 +152,7 @@ function renderBuild(c, d) {
 	if (lg?.sk?.any) spBody += `<p class="lab">種族技能（${lg.sk.any} 項）</p>${chips("spSkill", c.spSkill, D.skills.map(x => [x.id, x.zh]))}`;
 	if (lg?.sk?.ch) spBody += `<p class="lab">種族技能（${lg.sk.ch.n} 項）</p>${chips("spSkill2", c.spSkill2, lg.sk.ch.from.map(x => [x, skZh(x)]))}`;
 	if (lg?.sp?.choose?.length) spBody += `<p class="lab">種族戲法（${c.linPick.length}／${lg.sp.choose[0].n}）</p>${chips("linPick", c.linPick, lg.sp.choose[0].pool.map(x => [x, spZh(x)]), "", [], "spell", lg.sp.choose[0].n)}`;
-	if (c.sp === "Elf" || c.sp === "Human") spBody += `<div class="row"><span class="lab">${c.sp === "Elf" ? "敏銳感官" : "技藝純熟"}</span>${sel("spSkill.0", c.spSkill[0], (c.sp === "Elf" ? ["insight", "perception", "survival"] : D.skills.map(x => x.id)).map(x => [x, skZh(x)]))}</div>`;
+	if (c.sp === "Elf" || c.sp === "Human") spBody += `<div class="row"><span class="lab">${c.sp === "Elf" ? "敏銳感官" : "技藝純熟"}</span>${sel("spSkill.0", c.spSkill[0], (c.sp === "Elf" ? ["insight", "perception", "survival"] : D.skills.map(x => x.id)).filter(x => x === c.spSkill[0] || !b.sk.includes(x)).map(x => [x, skZh(x)]))}</div>`;
 	out.push(sec("種族", spBody));
 	// 背景
 	let bgBody = `<div class="grid g4">${D.backgrounds.filter(x => !x.src).map(x => pickBtn("bg", x)).join("")}</div>${otherSel("bg", D.backgrounds.filter(x => x.src), "其他背景", "自填背景…")}`;

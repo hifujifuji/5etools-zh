@@ -221,6 +221,15 @@ function fill(c) {
 	const fixed = new Set([...b.sk, ...(lg?.sk?.fixed || [])]);
 	if (b.skCh) { c.bgSkill = fillPick(PIN(c, "bgSkill"), b.skCh.from || D.skills.map(x => x.id), b.skCh.n, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "bgSkill")); c.bgSkill.forEach(x => fixed.add(x)); }
 	else c.bgSkill = [];
+	const allSk = D.skills.map(x => x.id);
+	if (c.sp === "Elf") { c.spSkill = fillPick(PIN(c, "spSkill"), ["insight", "perception", "survival"], 1, ["perception", "insight", "survival"], [...fixed], EX(c, "spSkill")); }
+	else if (c.sp === "Human") { c.spSkill = fillPick(PIN(c, "spSkill"), allSk, 1, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "spSkill")); }
+	else if (lg?.sk?.any) { c.spSkill = fillPick(PIN(c, "spSkill"), allSk, lg.sk.any, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "spSkill")); }
+	else c.spSkill = [];
+	c.spSkill.forEach(x => fixed.add(x));
+	c.spSkill2 = lg?.sk?.ch ? fillPick(PIN(c, "spSkill2"), lg.sk.ch.from, lg.sk.ch.n, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "spSkill2")) : [];
+	c.spSkill2.forEach(x => fixed.add(x));
+	// 職業技能在種族技能之後挑，玩家指定的種族技能（例如精靈敏銳感官選洞悉）不會被職業的自動推薦佔走
 	const clsPool = k.skills.from || D.skills.map(x => x.id);
 	const clsN = k.skills.n || k.skills.any;
 	c.skills = fillPick(PIN(c, "skills"), clsPool, clsN, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "skills"));
@@ -231,14 +240,6 @@ function fill(c) {
 		e.skills = ms ? fillPick(PIN(c, `mc.${i}.skills`), ms.from, ms.n, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, `mc.${i}.skills`)) : [];
 		e.skills.forEach(x => fixed.add(x));
 	});
-	const allSk = D.skills.map(x => x.id);
-	if (c.sp === "Elf") { c.spSkill = fillPick(PIN(c, "spSkill"), ["insight", "perception", "survival"], 1, ["perception", "insight", "survival"], [...fixed], EX(c, "spSkill")); }
-	else if (c.sp === "Human") { c.spSkill = fillPick(PIN(c, "spSkill"), allSk, 1, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "spSkill")); }
-	else if (lg?.sk?.any) { c.spSkill = fillPick(PIN(c, "spSkill"), allSk, lg.sk.any, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "spSkill")); }
-	else c.spSkill = [];
-	c.spSkill.forEach(x => fixed.add(x));
-	c.spSkill2 = lg?.sk?.ch ? fillPick(PIN(c, "spSkill2"), lg.sk.ch.from, lg.sk.ch.n, SK_PRI[c.cls].concat(SK_ANY), [...fixed], EX(c, "spSkill2")) : [];
-	c.spSkill2.forEach(x => fixed.add(x));
 	// 種族的抗性擇一、施法屬性自選
 	if (lg?.resCh && !lg.resCh.includes(c.resPick)) c.resPick = lg.resCh[0];
 	if (lg?.saCh && !lg.saCh.includes(c.linSa)) c.linSa = lg.saCh.includes(k.sa) ? k.sa : byPri(lg.saCh, pri)[0];
