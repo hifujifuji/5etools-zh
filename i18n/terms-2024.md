@@ -110,6 +110,7 @@
 | Simple / Martial Weapons | 簡易／軍用武器 |
 | Light / Medium / Heavy Armor, Shield | 輕甲／中甲／重甲、盾牌 |
 | Trance（精靈等種族特性名稱） | 傳思 |
+| Fey Ancestry | 精類血統 |
 
 ## 職業
 
