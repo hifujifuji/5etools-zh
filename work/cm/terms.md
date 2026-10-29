@@ -23,7 +23,7 @@
 | Mazfroth's Mighty Digressions | 馬茲佛斯的浩瀚離題 |
 | Book of the Raven | 渡鴉之書 |
 | A Deep and Creeping Darkness | 深沉蔓延的黑暗 |
-| Shemshime's Bedtime Rhyme | 謝姆辛的床邊童謠 |
+| Shemshime's Bedtime Rhyme | 申辛的床邊童謠（Shemshime＝申辛，站內既有） |
 | The Price of Beauty | 美麗的代價 |
 | Book of Cylinders | 圓筒之書 |
 | Sarah of Yellowcrest Manor | 黃冠莊園的莎拉 |
@@ -89,3 +89,6 @@ Scarlet Sash＝猩紅腰帶、kindness（渡鴉人群體）＝仁群、Chalet Br
 
 ## 深沉蔓延的黑暗（第 5 章）
 Vermeillon＝韋爾米永、Maerin＝梅林、Bored Weasel＝無聊鼬鼠、Lukas／Lorna Grosvenor＝盧卡斯／蘿娜・葛羅夫納、Astra Vorn＝阿斯特拉・沃恩、Mayor Lei Duvezin＝村長蕾伊・杜維贊、Tifra＝緹芙拉、Tavin＝塔文、Nia＝妮雅、Tormun＝托爾蒙、Blenyss＝布蓮絲、Tiris Frosthair＝緹莉絲・霜髮、Adalyn Creen＝亞達琳・克林。meenlock＝凌弱精怪（站內既有）、fey crossing＝妖精通道。
+
+## 申辛的床邊童謠（第 6 章）
+Shemshime＝申辛、Varnyr＝瓦尼爾、K'Tulah＝克圖拉（以上站內 CM 怪物既有）、Crinkle＝克林可、Ebder／Gailby Smallstone＝艾布德／蓋爾比・小石、Yowen Pilt＝尤文・皮爾特、Valeshti＝瓦雷希蒂。kenku＝天狗、tabaxi＝斑貓人（站內既有）。Firefly Cellar＝螢火地窖、the Stacks＝書庫。童謠譯成七言／八言句，講義段落與標題（names-6）一起改。
