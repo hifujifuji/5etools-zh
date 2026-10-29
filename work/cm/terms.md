@@ -99,3 +99,7 @@ High Forest＝至高森林、Silverymoon＝銀月城、Citadel Adbar＝阿德巴
 
 ## 圓筒之書（第 8 章）
 grippli＝格立普力蛙人（站內 CM 怪物「格立普力蛙人戰士」）、Pond Mother＝池母、Pelk＝佩爾克、Mitor Jans＝米托・揚斯、Dog Ear（船）＝狗耳號、Scaled Mother＝鱗母、Sseth＝瑟斯、Maaz＝瑪茲、Vorsa＝沃莎、Tethyr＝泰瑟爾、Cloakwood＝斗篷林、Chult＝楚爾特（站內既有）、ritual of friend marking＝友誼印記儀式。
+
+## 黃冠莊園的莎拉（第 9 章）
+Yellowcrest＝黃冠（家族／莊園）、Lord Viallis＝維亞利斯勛爵、Lady Maria＝瑪莉亞夫人、Malik／Janus／Tianna＝馬利克／雅努斯／蒂安娜、Sarah＝莎拉、Sirok＝西洛克、Vecken＝維肯（斷角爵士）、Yacken＝雅肯、Arnulf＝阿努爾夫、Falgarst＝法爾加斯特、Faerl＝費爾（站內既有）、Kara／Yaeda Firenni＝卡菈／雅艾妲・費雷尼、Old／Young Fargo＝老法戈／小法戈、Gaernoo＝蓋爾努、Burnt Tongue Cult＝焦舌教團、Retribution of the Ancients＝遠古者的報應、Greenfast＝綠堅村、Bulging Cauldron＝鼓肚大鍋。
+深水城：North Ward＝北區、Trades Ward＝商業區、City of the Dead＝亡者之城、City of Splendors＝輝煌之城、Delzorin Street＝德佐林街、Immar Street＝伊瑪街、City Guard／Watch＝城市衛隊／城市守衛。Trade Way＝商路、Dessarin River＝德薩林河、Daggerford＝匕首渡口、Great Old One＝舊日支配者。
