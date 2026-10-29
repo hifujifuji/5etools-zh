@@ -162,15 +162,50 @@ for (const id of ["xdmg"]) {
 		if (z[kind]) Object.assign(z[kind], readI18n(path.join(dir, f)));
 	}
 }
-const applyBookZh = (data, {names, strs, intro}) => {
+// 與 2014 版逐字相同（或只差標籤來源）的字串直接沿用 2014 版譯文；標籤改回 2024 版原文的目標，只借用中文顯示文字
+const BOOK_14 = {[S("xdmg")]: "dmg"};
+const TAG = /\{@(\w+) ([^{}]*)\}/g;
+const TAG_DISP3 = new Set(["spell", "item", "creature", "condition", "disease", "status", "background", "race", "feat", "deity", "hazard", "trap", "object", "action", "skill", "sense", "variantrule", "table", "vehicle", "reward", "optfeature", "language", "cult", "boon", "itemProperty", "itemMastery"]);
+const normTags = s => s.replace(TAG, (m, t, x) => `{@${t} ${x.split("|")[0].toLowerCase()}}`).replace(/\s+/g, " ").trim();
+const load14 = id => {
+	const en = readJson(path.join(UPSTREAM, "data/book", `book-${id}.json`)).data;
+	const zh = new Merger({glossary}).mergeTree(structuredClone(en), tr.book[S(id)]);
+	const exact = new Map(), loose = new Map();
+	const par = (a, b) => {
+		if (typeof a === "string") { if (hasCjk(b) && b !== a) exact.set(a, b); return; }
+		if (Array.isArray(a)) return a.forEach((x, i) => par(x, b?.[i]));
+		if (a && typeof a === "object") for (const k of Object.keys(a)) k === "name" ? b?.name_zh && exact.set(a.name, b.name_zh) : par(a[k], b?.[k]);
+	};
+	par(en, zh);
+	for (const [a, b] of exact) loose.set(normTags(a), b);
+	return s => {
+		const zh = exact.get(s) ?? loose.get(normTags(s));
+		if (!zh) return null;
+		const t24 = [...s.matchAll(TAG)];
+		let i = 0, ok = true;
+		const out = zh.replace(TAG, (m, t, body) => {
+			const e = t24[i++];
+			if (!e || e[1] !== t) { ok = false; return m; }
+			if (body === e[2] || !TAG_DISP3.has(t)) return m;
+			const disp = body.split("|")[2], p = e[2].split("|");
+			if (!hasCjk(disp)) return e[0];
+			return `{@${t} ${[p[0], p[1] || "", disp, ...p.slice(3)].join("|")}}`;
+		});
+		return ok && i === t24.length ? out : zh;
+	};
+};
+const applyBookZh = (data, {names, strs, intro}, z14 = () => null) => {
 	const used = new Set(); // 同名的節只在第一次出現處放簡介；鍵可寫成「章序|名稱」（章序從 0 起）指定章，或「上層節名>名稱」指定所屬節
 	let ch = 0;
-	const tStr = v => typeof v === "string" ? (hasCjk(strs[v]) ? strs[v] : v)
+	const tStr = v => typeof v === "string" ? (hasCjk(strs[v]) ? strs[v] : z14(v) ?? v)
 		: Array.isArray(v) ? v.map(tStr)
 		: v && typeof v === "object" ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, k === "type" || k === "roll" ? x : tStr(x)]))
 		: v;
 	const walk = (o, parent = "") => {
-		if (Array.isArray(o)) return o.forEach(x => walk(x, parent));
+		if (Array.isArray(o)) {
+			o.forEach((x, i) => { if (typeof x === "string") o[i] = z14(x) ?? x; });
+			return o.forEach(x => walk(x, parent));
+		}
 		if (!o || typeof o !== "object") return;
 		if (o.type === "statblock") return;
 		if (o.type === "table") {
@@ -179,6 +214,8 @@ const applyBookZh = (data, {names, strs, intro}) => {
 		}
 		const en = typeof o.name === "string" ? o.name : null;
 		if (en && hasCjk(names[en])) Merger.setName(o, names[en]);
+		else if (en && z14(en)) Merger.setName(o, z14(en));
+		for (const [k, v] of Object.entries(o)) if (typeof v === "string" && !["name", "type", "id", "source", "page"].includes(k)) o[k] = z14(v) ?? v;
 		const k = en && [`${parent}>${en}`, `${ch}|${en}`, en].find(k => intro[k] && !used.has(k));
 		if (k && Array.isArray(o.entries) && used.add(k)) o.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(intro[k])});
 		for (const v of Object.values(o)) walk(v, en && Array.isArray(o.entries) ? en : parent);
@@ -204,7 +241,7 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 		touched = true;
 	}
 	if (mBook && json.data && BOOK_ZH[S(mBook[1])]) {
-		applyBookZh(json.data, BOOK_ZH[S(mBook[1])]);
+		applyBookZh(json.data, BOOK_ZH[S(mBook[1])], BOOK_14[S(mBook[1])] && load14(BOOK_14[S(mBook[1])]));
 		touched = true;
 	}
 
