@@ -194,6 +194,7 @@ const load14 = id => {
 		return ok && i === t24.length ? out : zh;
 	};
 };
+const SHOW_BOOK_INTRO = false; // 書籍正文已全文中譯，自撰的「中文簡介」方塊先隱藏（intro-*.json 保留，改 true 即恢復）
 const applyBookZh = (data, {names, strs, intro}, z14 = () => null) => {
 	const used = new Set(); // 同名的節只在第一次出現處放簡介；鍵可寫成「章序|名稱」（章序從 0 起）指定章，或「上層節名>名稱」指定所屬節
 	let ch = 0;
@@ -218,7 +219,7 @@ const applyBookZh = (data, {names, strs, intro}, z14 = () => null) => {
 		else if (en && z14(en)) Merger.setName(o, z14(en));
 		for (const [k, v] of Object.entries(o)) if (typeof v === "string" && !["name", "type", "id", "source", "page"].includes(k)) o[k] = zs(v) ?? v;
 		const k = en && [`${parent}>${en}`, `${ch}|${en}`, en].find(k => intro[k] && !used.has(k));
-		if (k && Array.isArray(o.entries) && used.add(k)) o.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(intro[k])});
+		if (SHOW_BOOK_INTRO && k && Array.isArray(o.entries) && used.add(k)) o.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(intro[k])});
 		for (const v of Object.values(o)) walk(v, en && Array.isArray(o.entries) ? en : parent);
 	};
 	data.forEach((d, i) => { ch = i; walk(d); });
