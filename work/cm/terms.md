@@ -111,3 +111,9 @@ Lurue＝盧露（站內 CM 怪物「腐化的盧露化身」；先前章名「�
 Barn Door（塔樓）＝穀倉門、Livestock（邪教）＝牲口會、Stonky J. Noptopper＝史東基・J・諾普托珀（「史東基」站內既有）、Isajar＝伊薩加爾、Buron Sternmettle＝布隆・史騰梅托、skitterwidget／kiddywidget＝奇巧爬行獸／小奇巧犬（站內既有）、Lightning Golem＝閃電魔像（站內既有）、glassteel＝玻鋼、Trobriand＝特羅布里安（站內既有）。書名維持「燭堡解構」，首次出現附原文（作者愛用 K 代替硬音 C 的梗）。
 牲口會化名＝農場動物＋農產品，照字面譯：Alpaca Macadamia Nuts＝羊駝夏威夷果、Chicken Peach＝母雞水蜜桃、Cow Cotton＝乳牛棉花、Donkey Biscuit＝驢子餅乾、Duck Bean＝鴨子豆子、Goat Beet＝山羊甜菜、Horse Egg＝馬兒雞蛋、Pig Wheat＝豬仔小麥、Ram Sugar＝公羊砂糖（站內怪物原為音譯「拉姆·蘇加」，已改 i18n/custom/monster.json 與 monster-intro.json）、Rooster Muffin＝公雞瑪芬、Sheep Sweet Corn＝綿羊甜玉米。真名：Marci Plumpitter 瑪西・普倫皮特、Baff Boltlock 巴夫・栓鎖、Patch Varnast 帕奇・瓦納斯特、Merla One-Tusk 梅菈・獨牙、Trop Thunderhew 特洛普・雷斬、Stekk 斯特克、Glynn Yamanachi 葛林・亞瑪納奇、Neff Cunningfoot 奈夫・巧足、Norty 諾提、Yohn Blofrond 尤恩・布洛弗朗。
 拉桿卡槽：Coop／Shed／Stable＝雞舍（中止）／棚屋（延後）／馬廄（發射）。密語 jeopardy＝「危機」。
+
+## 齊克蘭的西風典籍（第 12 章）
+Zikran＝齊克蘭（站內 CM 怪物）、Gazre-Azam＝加茲雷－阿贊（djinni＝氣巨靈，站內既有）、Ashgarlyth＝阿什加里斯（少年青銅龍）、Laffa＝拉法、Wind Dukes of Aaqa＝阿卡風公爵、Cloud Peaks＝雲峰山脈、cloud giant ghost＝雲巨人鬼魂（站內既有）、water genasi＝水元素裔、Sword Coast＝劍灣、Three-Dragon Ante＝三龍賭牌、Aquan＝水族語、elemental cannon＝元素大砲。
+
+## 紫藤谷奇譚（第 13 章）
+Wisteria Vale＝紫藤谷、Arrant Quill＝艾倫特·奎爾（站內 CM 怪物；正文多稱「奎爾」）、Ryllia Liadon＝瑞莉亞・里亞登、Renekor＝雷尼寇（眼魔）、Harpers＝豎琴手同盟、constructed commoner＝構造平民（站內既有）、Vargan＝瓦根、Lord Ephraim Rathmore＝以法蓮・拉斯莫爾勛爵、Cyric＝希瑞克、River Chionthar＝奇恩薩河、Underdark＝幽暗地域、Vyridian Forest＝維瑞迪安森林、Blossom's Rest＝花歇酒館、Silks and Soles＝絲履坊、Ulrich／Daphne＝烏爾里希／達芙妮、Josephus Lovett＝約瑟夫斯・洛維特、Henrietta Storm＝亨麗耶塔・史托姆、Ki'lara＝姬菈拉、Damien＝達米安。啟動語 Harpers at Twilight＝「暮色中的豎琴手」。

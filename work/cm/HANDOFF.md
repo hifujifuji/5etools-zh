@@ -1,6 +1,6 @@
 # 交接：翻譯《燭堡秘案》（Candlekeep Mysteries，CM）冒險正文
 
-更新：2026-10-30（第 11 章完成）
+更新：2026-10-30（第 13 章完成）
 
 ## 目標
 
@@ -8,10 +8,10 @@
 
 ## 進度
 
-- **已譯（正文、標題、表格全文）**：第 0～11 章。
-- **已部署**：第 0～11 章。第 10、11 章與交接文件更新還沒 push。
-- **已推上 GitHub**：到第 9 章（f7a8b32）。
-- **下一步**：第 12 章 Zikran's Zephyrean Tome（齊克蘭的西風典籍），之後依序翻到第 18 章。第 19 章 Credits 不譯。
+- **已譯（正文、標題、表格全文）**：第 0～13 章。
+- **已部署**：第 0～13 章。
+- **已推上 GitHub**：到第 11 章（59a2bf7）；第 12、13 章還沒 push。
+- **下一步**：第 14 章 The Book of Inner Alchemy（內丹之書），之後依序翻到第 18 章。第 19 章 Credits 不譯。
 
 | 章序 | 英文章名 | 中文章名 | 狀態 |
 |---|---|---|---|
@@ -27,8 +27,8 @@
 | 9 | Sarah of Yellowcrest Manor | 黃冠莊園的莎拉 | 完成 |
 | 10 | Lore of Lurue | 盧露傳說 | 完成 |
 | 11 | Kandlekeep Dekonstruktion | 燭堡解構 | 完成 |
-| 12 | Zikran's Zephyrean Tome | 齊克蘭的西風典籍 | 待譯（32k） |
-| 13 | The Curious Tale of Wisteria Vale | 紫藤谷奇譚 | 待譯（44k） |
+| 12 | Zikran's Zephyrean Tome | 齊克蘭的西風典籍 | 完成 |
+| 13 | The Curious Tale of Wisteria Vale | 紫藤谷奇譚 | 完成 |
 | 14 | The Book of Inner Alchemy | 內丹之書 | 待譯（34k） |
 | 15 | The Canopic Being | 卡諾卜之軀 | 待譯（52k） |
 | 16 | The Scrivener's Tale | 抄寫員的故事 | 待譯（56k） |
