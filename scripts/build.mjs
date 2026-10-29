@@ -601,7 +601,7 @@ const walkStrings = (v, inZh = false) => {
 	if (v && typeof v === "object") {
 		const z = inZh || !!v.name_zh;
 		for (const k of Object.keys(v)) {
-			if (k === "name") continue;
+			if (k === "name" || k === "_zhOf") continue;
 			v[k] = NO_FILL_KEYS.has(k) ? walkStrings(v[k], false) : walkStrings(v[k], z);
 		}
 		return v;
@@ -728,7 +728,7 @@ for (const {json} of loaded) {
 		const bn = BOOK_ZH[S(id)].names;
 		const walk = o => {
 			if (Array.isArray(o)) o.forEach((x, i) => typeof x === "string" ? (o[i] = fix(x, bn)) : walk(x));
-			else if (o && typeof o === "object") for (const [k, v] of Object.entries(o)) typeof v === "string" ? (k !== "name" && (o[k] = fix(v, bn))) : walk(v);
+			else if (o && typeof o === "object") for (const [k, v] of Object.entries(o)) typeof v === "string" ? (k !== "name" && k !== "_zhOf" && (o[k] = fix(v, bn))) : walk(v);
 		};
 		walk(json.data);
 	}
