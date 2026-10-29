@@ -86,3 +86,6 @@ Mazfroth Gethur＝馬茲佛斯・蓋瑟、Yalerion Highscroll＝亞勒里昂・�
 ## 渡鴉之書（第 4 章）
 Anil Zasperdes＝阿尼爾・札斯珀德斯、Heluthe＝赫露絲、Sylphene＝席爾芬、Baron Brantifax＝布蘭提法克斯男爵、Brorn（獒犬）＝布倫、Drasha＝德拉莎、Darzin＝達津、Drovath Harrn＝卓瓦斯・哈恩；猩紅腰帶成員 Madrina Natterask＝瑪德麗娜・納特拉斯克、Taspar Hatchhill＝塔斯帕・哈奇丘、Rennick Groka＝雷尼克・葛羅卡、Vinique＝薇妮克。
 Scarlet Sash＝猩紅腰帶、kindness（渡鴉人群體）＝仁群、Chalet Brantifax＝布蘭提法克斯山莊、Wytchway＝巫徑村、Vistani＝維斯塔尼人（站內 CoS 既有）、Dark Powers＝黑暗力量、shadow crossing＝幽影通道（XDMG 既有）、Year of the Many Mists＝多霧之年。
+
+## 深沉蔓延的黑暗（第 5 章）
+Vermeillon＝韋爾米永、Maerin＝梅林、Bored Weasel＝無聊鼬鼠、Lukas／Lorna Grosvenor＝盧卡斯／蘿娜・葛羅夫納、Astra Vorn＝阿斯特拉・沃恩、Mayor Lei Duvezin＝村長蕾伊・杜維贊、Tifra＝緹芙拉、Tavin＝塔文、Nia＝妮雅、Tormun＝托爾蒙、Blenyss＝布蓮絲、Tiris Frosthair＝緹莉絲・霜髮、Adalyn Creen＝亞達琳・克林。meenlock＝凌弱精怪（站內既有）、fey crossing＝妖精通道。
