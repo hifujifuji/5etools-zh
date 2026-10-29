@@ -153,12 +153,12 @@ const walkDataFiles = dir => {
 };
 
 // 書籍逐項中文（i18n/<書>/）：標題照翻成 name_zh、表格字串照翻、各節開頭插入本站自撰的「中文簡介」方塊；英文正文保留
-// names-*.json：英文標題 → 中文；tables-*.json：表格內英文字串（整串比對）→ 中文；intro-*.json：英文節名 → 簡介
+// names-*.json：英文標題 → 中文；tables-*.json：表格內英文字串（整串比對）→ 中文；paras-*.json：正文段落（整串比對）→ 中文；intro-*.json：英文節名 → 簡介
 const BOOK_ZH = {};
 for (const id of ["xdmg"]) {
 	const dir = path.join(I18N, id), z = BOOK_ZH[S(id)] = {names: {}, strs: {}, intro: {}};
 	for (const f of fs.readdirSync(dir).filter(f => f.endsWith(".json")).sort()) {
-		const kind = {tables: "strs"}[f.split("-")[0]] || f.split("-")[0];
+		const kind = {tables: "strs", paras: "strs"}[f.split("-")[0]] || f.split("-")[0];
 		if (z[kind]) Object.assign(z[kind], readI18n(path.join(dir, f)));
 	}
 }
@@ -197,13 +197,14 @@ const load14 = id => {
 const applyBookZh = (data, {names, strs, intro}, z14 = () => null) => {
 	const used = new Set(); // 同名的節只在第一次出現處放簡介；鍵可寫成「章序|名稱」（章序從 0 起）指定章，或「上層節名>名稱」指定所屬節
 	let ch = 0;
+	const zs = v => hasCjk(strs[v]) ? strs[v] : z14(v);
 	const tStr = v => typeof v === "string" ? (hasCjk(strs[v]) ? strs[v] : z14(v) ?? v)
 		: Array.isArray(v) ? v.map(tStr)
 		: v && typeof v === "object" ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, k === "type" || k === "roll" ? x : tStr(x)]))
 		: v;
 	const walk = (o, parent = "") => {
 		if (Array.isArray(o)) {
-			o.forEach((x, i) => { if (typeof x === "string") o[i] = z14(x) ?? x; });
+			o.forEach((x, i) => { if (typeof x === "string") o[i] = zs(x) ?? x; });
 			return o.forEach(x => walk(x, parent));
 		}
 		if (!o || typeof o !== "object") return;
@@ -215,7 +216,7 @@ const applyBookZh = (data, {names, strs, intro}, z14 = () => null) => {
 		const en = typeof o.name === "string" ? o.name : null;
 		if (en && hasCjk(names[en])) Merger.setName(o, names[en]);
 		else if (en && z14(en)) Merger.setName(o, z14(en));
-		for (const [k, v] of Object.entries(o)) if (typeof v === "string" && !["name", "type", "id", "source", "page"].includes(k)) o[k] = z14(v) ?? v;
+		for (const [k, v] of Object.entries(o)) if (typeof v === "string" && !["name", "type", "id", "source", "page"].includes(k)) o[k] = zs(v) ?? v;
 		const k = en && [`${parent}>${en}`, `${ch}|${en}`, en].find(k => intro[k] && !used.has(k));
 		if (k && Array.isArray(o.entries) && used.add(k)) o.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(intro[k])});
 		for (const v of Object.values(o)) walk(v, en && Array.isArray(o.entries) ? en : parent);
