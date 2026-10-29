@@ -92,3 +92,7 @@ Vermeillon＝韋爾米永、Maerin＝梅林、Bored Weasel＝無聊鼬鼠、Luka
 
 ## 申辛的床邊童謠（第 6 章）
 Shemshime＝申辛、Varnyr＝瓦尼爾、K'Tulah＝克圖拉（以上站內 CM 怪物既有）、Crinkle＝克林可、Ebder／Gailby Smallstone＝艾布德／蓋爾比・小石、Yowen Pilt＝尤文・皮爾特、Valeshti＝瓦雷希蒂。kenku＝天狗、tabaxi＝斑貓人（站內既有）。Firefly Cellar＝螢火地窖、the Stacks＝書庫。童謠譯成七言／八言句，講義段落與標題（names-6）一起改。
+
+## 美麗的代價（第 7 章）
+Temple of the Restful Lily＝百合安歇神殿、Fetid Gaze＝惡臭凝視（站內 CM 怪物「惡臭凝視鬼婆」）、Dread Morgan／Vile Sazha／Auntie Greenbones＝恐怖莫根／卑劣薩札／綠骨姑婆（偽裝名 Morganna／Azirssa／Greensong＝莫甘娜／阿齊爾莎／綠歌）、Morty＝莫提、Saeth＝薩斯、Sylvarie Silversong＝希爾瓦莉・銀歌、Cyrena（naiad＝水澤寧芙）＝希蕾娜、Ilmar Mizzrym＝伊爾瑪・米茲林（代號 Dusk＝黃昏）、Gorba Daardenrian＝葛芭・達登里安、Glitter＝閃閃、Falthrax Loderr＝法斯拉克斯・洛德、Lorris Niss＝洛莉絲・尼斯。
+High Forest＝至高森林、Silverymoon＝銀月城、Citadel Adbar＝阿德巴城堡、Harpers＝豎琴手同盟、Masked Lords＝蒙面領主、Bregan D'aerthe＝布雷根・達斯、coven＝集會。
