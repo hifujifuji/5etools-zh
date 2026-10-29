@@ -217,7 +217,7 @@ const applyBookZh = (data, {names, strs, intro}, z14 = () => null) => {
 		const en = typeof o.name === "string" ? o.name : null;
 		if (en && hasCjk(names[en])) Merger.setName(o, names[en]);
 		else if (en && z14(en)) Merger.setName(o, z14(en));
-		for (const [k, v] of Object.entries(o)) if (typeof v === "string" && !["name", "type", "id", "source", "page"].includes(k)) o[k] = zs(v) ?? v;
+		for (const [k, v] of Object.entries(o)) if (typeof v === "string" && !["name", "_zhOf", "type", "id", "source", "page"].includes(k)) o[k] = zs(v) ?? v;
 		const k = en && [`${parent}>${en}`, `${ch}|${en}`, en].find(k => intro[k] && !used.has(k));
 		if (SHOW_BOOK_INTRO && k && Array.isArray(o.entries) && used.add(k)) o.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(intro[k])});
 		for (const v of Object.values(o)) walk(v, en && Array.isArray(o.entries) ? en : parent);

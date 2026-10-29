@@ -74,3 +74,6 @@
 
 ## 燭堡 NPC
 Janussi＝雅努西、Skoda Valanaster＝斯柯達・瓦拉納斯特、A'lai Aivenmore＝阿萊・艾文莫、Alkrist＝阿克里斯特、Daral Yashenti＝達拉・雅申提、Fheminor Scrivenbark＝費米諾・抄樹皮、Kazryn Nyantani＝卡茲琳・尼安塔尼、Sylvira Savikas＝席薇拉・薩維卡斯、Teles Ahvoste＝泰勒斯・阿沃斯特、V'ziir-Ag＝弗齊爾－阿格、Benedora Stoneforge＝貝內朵拉・石爐、Kalan Strongbranch＝卡蘭・強枝、Kei Tigersteel＝凱・虎鋼、Feldmar Bisset III＝費德馬・比塞特三世、Khe'ril Hammerbind＝克里爾・錘縛、Fembris Larlancer＝芬布里斯・拉蘭瑟、Sprig Summerfoot＝史普利格・夏足、Parmak＝帕馬克、Garlyth Graystock＝加里斯・灰柄、Nax Olossis＝納克斯・歐洛西斯、Orrin Glass＝歐林・葛拉斯、Vooshadi Moonriver＝芙夏蒂・月河、Irony＝艾蘿妮、Scriers Phink＝斯克萊爾斯・芬克、Hekaton＝赫卡頓
+
+## 異次元空間之樂（第 2 章）
+Fistandia＝菲斯坦迪亞、Matreous＝馬崔厄斯、Freyot＝弗瑞約、Cumin／Coriander（荷蒙庫魯斯）＝孜然／芫荽。命令語保留英文並附中文：scepter（權杖）、liberty（自由，字母書 L-I-B-E-R-T-Y）。區域連結寫成 {@area 區域 M1|id|x}。
