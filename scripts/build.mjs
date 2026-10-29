@@ -155,7 +155,7 @@ const walkDataFiles = dir => {
 // 書籍逐項中文（i18n/<書>/）：標題照翻成 name_zh、表格字串照翻、各節開頭插入本站自撰的「中文簡介」方塊；英文正文保留
 // names-*.json：英文標題 → 中文；tables-*.json：表格內英文字串（整串比對）→ 中文；paras-*.json：正文段落（整串比對）→ 中文；intro-*.json：英文節名 → 簡介
 const BOOK_ZH = {};
-for (const id of ["xdmg"]) {
+for (const id of ["xdmg", "xmm"]) {
 	const dir = path.join(I18N, id), z = BOOK_ZH[S(id)] = {names: {}, strs: {}, intro: {}};
 	for (const f of fs.readdirSync(dir).filter(f => f.endsWith(".json")).sort()) {
 		const kind = {tables: "strs", paras: "strs"}[f.split("-")[0]] || f.split("-")[0];
@@ -586,7 +586,7 @@ const fillTags = (str, isOverrideEn = false) => str.replace(RE_TAG, (m, tag, bod
 	return `{@${tag} ${parts.join("|")}}`;
 });
 // 已翻譯實體裡「只有標籤」的字串（例如法術表的一格 {@spell Cone of Cold|XPHB}）也補上中文名
-const RE_ONLY_TAGS = /^[\s\d,;:()+\-–*]*(\{@[^{}]+\}[\s\d,;:()+\-–*]*)+$/;
+const RE_ONLY_TAGS = /^[\s\d,;:()+\-–*/]*(\{@[^{}]+\}[\s\d,;:()+\-–*/]*)+$/;
 // 法術清單（怪物施法）會被 _copy 的 replaceSpells 用字串比對，不能動
 const NO_FILL_KEYS = new Set(["will", "daily", "spells", "weekly", "monthly", "yearly", "rest", "restLong", "ritual", "recharge", "charges", "legendary", "_copy", "_mod"]);
 const walkStrings = (v, inZh = false) => {
@@ -701,7 +701,7 @@ for (const {json} of loaded) {
 		}
 	};
 	const CH = s => s.replace(/^chapter (\d+)$/i, "第 $1 章").replace(/^appendix ([A-Z])$/i, "附錄 $1");
-	const fix = (s, bookNames) => !hasCjk(s) ? s : s.replace(/\{@(\w+) ([^{}]*)\}/g, (m, tag, body) => {
+	const fix = (s, bookNames) => !hasCjk(s) && !RE_ONLY_TAGS.test(s) ? s : s.replace(/\{@(\w+) ([^{}]*)\}/g, (m, tag, body) => {
 		const p = body.split("|");
 		if (tag === "book" || tag === "adventure" || tag === "5etoolsImg") {
 			const zh = hasCjk(p[0]) ? p[0] : bookNames[p[0]] || bookNames[`${p[0]}, The`] || CH(p[0]);

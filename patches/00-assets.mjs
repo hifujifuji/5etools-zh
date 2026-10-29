@@ -31,9 +31,14 @@ const bookHeaders = dist => {
 		}
 		for (const v of Object.values(o)) if (v && typeof v === "object") walk(v, map);
 	};
+	// 目錄的章名（books.json 的 contents）不一定與內文章名相同（如「Introduction」），依章序對應內文章名的中文
+	const books = JSON.parse(fs.readFileSync(path.join(dist, "data", "books.json"), "utf8")).book;
 	for (const f of fs.readdirSync(bd).filter(f => /^book-.+\.json$/.test(f))) {
 		const map = {};
-		walk(JSON.parse(fs.readFileSync(path.join(bd, f), "utf8")).data, map);
+		const data = JSON.parse(fs.readFileSync(path.join(bd, f), "utf8")).data;
+		walk(data, map);
+		const contents = books.find(b => b.id.toLowerCase() === f.slice(5, -5))?.contents || [];
+		contents.forEach((c, i) => { const z = data[i]?.name_zh; if (z && !map[c.name]) map[c.name] = z.replace(/^[^：:]+[：:]\s*/, ""); });
 		if (Object.keys(map).length) out[f.slice(5, -5)] = map;
 	}
 	return out;

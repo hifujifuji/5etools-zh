@@ -1,9 +1,9 @@
 // 列出某章尚未有中文的正文字串：node work/xdmg/_paradump.mjs <章序（從 0 起）>  → work/xdmg/_ch<N>para.txt
 import fs from "node:fs";
 import {UPSTREAM} from "../../scripts/util.mjs";
-const ci = +process.argv[2];
-const en = JSON.parse(fs.readFileSync(`${UPSTREAM}/data/book/book-xdmg.json`)).data[ci];
-const zh = JSON.parse(fs.readFileSync("dist/data/book/book-xdmg.json")).data[ci];
+const ci = +process.argv[2], BOOK = process.env.BOOK || "xdmg";
+const en = JSON.parse(fs.readFileSync(`${UPSTREAM}/data/book/book-${BOOK}.json`)).data[ci];
+const zh = JSON.parse(fs.readFileSync(`dist/data/book/book-${BOOK}.json`)).data[ci];
 const cj = /[㐀-鿿]/, out = [], seen = new Set();
 const SKIP = ["type", "name", "page", "id", "source", "roll", "style", "href", "path", "credit"];
 const par = (a, b, k) => {
@@ -16,5 +16,5 @@ const par = (a, b, k) => {
 	if (a && typeof a === "object") { if (a.type === "statblock") return; for (const kk of Object.keys(a)) par(a[kk], b?.[kk], kk); }
 };
 par(en, zh);
-fs.writeFileSync(`work/xdmg/_ch${ci + 1}para.txt`, out.map((s, i) => `${i}\t${s}`).join("\n"));
+fs.writeFileSync(`work/${BOOK}/_ch${ci + 1}para.txt`, out.map((s, i) => `${i}\t${s}`).join("\n"));
 console.log(out.length, out.join("").length);
