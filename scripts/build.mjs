@@ -163,24 +163,27 @@ for (const id of ["xdmg"]) {
 	}
 }
 const applyBookZh = (data, {names, strs, intro}) => {
-	const used = new Set(); // 同名的節只在第一次出現處放簡介
+	const used = new Set(); // 同名的節只在第一次出現處放簡介；鍵可寫成「章序|名稱」（章序從 0 起）指定章，或「上層節名>名稱」指定所屬節
+	let ch = 0;
 	const tStr = v => typeof v === "string" ? (hasCjk(strs[v]) ? strs[v] : v)
 		: Array.isArray(v) ? v.map(tStr)
 		: v && typeof v === "object" ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, k === "type" || k === "roll" ? x : tStr(x)]))
 		: v;
-	const walk = o => {
-		if (Array.isArray(o)) return o.forEach(walk);
+	const walk = (o, parent = "") => {
+		if (Array.isArray(o)) return o.forEach(x => walk(x, parent));
 		if (!o || typeof o !== "object") return;
 		if (o.type === "statblock") return;
 		if (o.type === "table") {
 			for (const k of ["caption", "colLabels", "rows", "footnotes"]) if (k in o) o[k] = tStr(o[k]);
 			return;
 		}
-		if (typeof o.name === "string" && hasCjk(names[o.name])) Merger.setName(o, names[o.name]);
-		if (typeof o.name === "string" && intro[o.name] && !used.has(o.name) && Array.isArray(o.entries) && used.add(o.name)) o.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(intro[o.name])});
-		for (const v of Object.values(o)) walk(v);
+		const en = typeof o.name === "string" ? o.name : null;
+		if (en && hasCjk(names[en])) Merger.setName(o, names[en]);
+		const k = en && [`${parent}>${en}`, `${ch}|${en}`, en].find(k => intro[k] && !used.has(k));
+		if (k && Array.isArray(o.entries) && used.add(k)) o.entries.unshift({type: "inset", name: "中文簡介", entries: [].concat(intro[k])});
+		for (const v of Object.values(o)) walk(v, en && Array.isArray(o.entries) ? en : parent);
 	};
-	walk(data);
+	data.forEach((d, i) => { ch = i; walk(d); });
 };
 
 const SKIP_PROPS = new Set(["_meta", "data"]);
