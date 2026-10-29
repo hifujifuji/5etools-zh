@@ -159,7 +159,8 @@ for (const id of ["xdmg", "xmm", "cm"]) {
 	const dir = path.join(I18N, id), z = BOOK_ZH[S(id)] = {names: {}, strs: {}, intro: {}};
 	for (const f of fs.readdirSync(dir).filter(f => f.endsWith(".json")).sort()) {
 		const kind = {tables: "strs", paras: "strs"}[f.split("-")[0]] || f.split("-")[0];
-		if (z[kind]) Object.assign(z[kind], readI18n(path.join(dir, f)));
+		// 用語修正只套在譯文上；英文原文鍵若被改（如 {@quickref} 標籤）就比對不到
+		if (z[kind]) for (const [k, v] of Object.entries(JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")))) z[kind][k] = JSON.parse(TERM_FIX.reduce((s, [re, to]) => s.replace(re, to), JSON.stringify(v)));
 	}
 }
 // 與 2014 版逐字相同（或只差標籤來源）的字串直接沿用 2014 版譯文；標籤改回 2024 版原文的目標，只借用中文顯示文字

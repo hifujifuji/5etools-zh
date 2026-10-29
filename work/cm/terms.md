@@ -27,7 +27,7 @@
 | The Price of Beauty | 美麗的代價 |
 | Book of Cylinders | 圓筒之書 |
 | Sarah of Yellowcrest Manor | 黃冠莊園的莎拉 |
-| Lore of Lurue | 露瑞傳說 |
+| Lore of Lurue | 盧露傳說 |
 | Kandlekeep Dekonstruktion | 燭堡解構 |
 | Zikran's Zephyrean Tome | 齊克蘭的西風典籍 |
 | The Curious Tale of Wisteria Vale | 紫藤谷奇譚 |
@@ -36,7 +36,7 @@
 | The Scrivener's Tale | 抄寫員的故事 |
 | Alkazaar's Appendix | 阿卡札的附錄 |
 | Xanthoria | 贊索莉亞 |
-| Lurue the Unicorn Queen / Malar the Beast Lord | 獨角獸女王露瑞／野獸之王馬拉 |
+| Lurue the Unicorn Queen / Malar the Beast Lord | 獨角獸女王盧露／野獸之王馬拉 |
 
 ## 燭堡（第 1 章）
 | 英文 | 中文 |
@@ -103,3 +103,6 @@ grippli＝格立普力蛙人（站內 CM 怪物「格立普力蛙人戰士」）
 ## 黃冠莊園的莎拉（第 9 章）
 Yellowcrest＝黃冠（家族／莊園）、Lord Viallis＝維亞利斯勛爵、Lady Maria＝瑪莉亞夫人、Malik／Janus／Tianna＝馬利克／雅努斯／蒂安娜、Sarah＝莎拉、Sirok＝西洛克、Vecken＝維肯（斷角爵士）、Yacken＝雅肯、Arnulf＝阿努爾夫、Falgarst＝法爾加斯特、Faerl＝費爾（站內既有）、Kara／Yaeda Firenni＝卡菈／雅艾妲・費雷尼、Old／Young Fargo＝老法戈／小法戈、Gaernoo＝蓋爾努、Burnt Tongue Cult＝焦舌教團、Retribution of the Ancients＝遠古者的報應、Greenfast＝綠堅村、Bulging Cauldron＝鼓肚大鍋。
 深水城：North Ward＝北區、Trades Ward＝商業區、City of the Dead＝亡者之城、City of Splendors＝輝煌之城、Delzorin Street＝德佐林街、Immar Street＝伊瑪街、City Guard／Watch＝城市衛隊／城市守衛。Trade Way＝商路、Dessarin River＝德薩林河、Daggerford＝匕首渡口、Great Old One＝舊日支配者。
+
+## 盧露傳說（第 10 章）
+Lurue＝盧露（站內 CM 怪物「腐化的盧露化身」；先前章名「露瑞」已全面改正）、Ecamane Truesilver＝艾卡曼・真銀、Ulraunt＝烏勞恩特、Polvarth Plateau＝波爾瓦斯高原、Dewlight＝露光村、Feynor（樹人）＝費諾、Wheeldoli（小妖精）＝惠爾多利、Tragos／Artelio／Funagi（薩特羊人）＝特拉戈斯／阿特里歐／富納吉、Lanedrie Staggersoul（夜鬼婆）＝蘭德莉・蹣魂、Trekaila／Argentia／Hanah（樹精）＝崔凱菈／雅珍提雅／漢娜、Pool of Eternal Spring＝永春之池、Pool of Eternal Silver＝永銀之池、Mistress of Moonlight＝月光女主人、River Rauvin＝勞文河、Uktar＝烏克塔月、Malar the Beast Lord＝野獸之王馬拉。
