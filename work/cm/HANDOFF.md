@@ -9,7 +9,7 @@
 ## 進度
 
 - **已譯（正文、標題、表格全文）**：第 0～10 章。
-- **已部署**：第 0～9 章。第 10 章（盧露傳說）已 commit，**還沒部署、還沒 push**。
+- **已部署**：第 0～10 章。第 10 章與交接文件更新還沒 push。
 - **已推上 GitHub**：到第 9 章（f7a8b32）。
 - **下一步**：第 11 章 Kandlekeep Dekonstruktion（燭堡解構），之後依序翻到第 18 章。第 19 章 Credits 不譯。
 
@@ -25,7 +25,7 @@
 | 7 | The Price of Beauty | 美麗的代價 | 完成 |
 | 8 | Book of Cylinders | 圓筒之書 | 完成 |
 | 9 | Sarah of Yellowcrest Manor | 黃冠莊園的莎拉 | 完成 |
-| 10 | Lore of Lurue | 盧露傳說 | 完成（未部署） |
+| 10 | Lore of Lurue | 盧露傳說 | 完成 |
 | 11 | Kandlekeep Dekonstruktion | 燭堡解構 | 待譯（48k 字元） |
 | 12 | Zikran's Zephyrean Tome | 齊克蘭的西風典籍 | 待譯（32k） |
 | 13 | The Curious Tale of Wisteria Vale | 紫藤谷奇譚 | 待譯（44k） |
