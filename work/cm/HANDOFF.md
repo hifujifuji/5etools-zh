@@ -1,6 +1,6 @@
 # 交接：翻譯《燭堡秘案》（Candlekeep Mysteries，CM）冒險正文
 
-更新：2026-10-30
+更新：2026-10-30（第 11 章完成）
 
 ## 目標
 
@@ -8,10 +8,10 @@
 
 ## 進度
 
-- **已譯（正文、標題、表格全文）**：第 0～10 章。
-- **已部署**：第 0～10 章。第 10 章與交接文件更新還沒 push。
+- **已譯（正文、標題、表格全文）**：第 0～11 章。
+- **已部署**：第 0～11 章。第 10、11 章與交接文件更新還沒 push。
 - **已推上 GitHub**：到第 9 章（f7a8b32）。
-- **下一步**：第 11 章 Kandlekeep Dekonstruktion（燭堡解構），之後依序翻到第 18 章。第 19 章 Credits 不譯。
+- **下一步**：第 12 章 Zikran's Zephyrean Tome（齊克蘭的西風典籍），之後依序翻到第 18 章。第 19 章 Credits 不譯。
 
 | 章序 | 英文章名 | 中文章名 | 狀態 |
 |---|---|---|---|
@@ -26,7 +26,7 @@
 | 8 | Book of Cylinders | 圓筒之書 | 完成 |
 | 9 | Sarah of Yellowcrest Manor | 黃冠莊園的莎拉 | 完成 |
 | 10 | Lore of Lurue | 盧露傳說 | 完成 |
-| 11 | Kandlekeep Dekonstruktion | 燭堡解構 | 待譯（48k 字元） |
+| 11 | Kandlekeep Dekonstruktion | 燭堡解構 | 完成 |
 | 12 | Zikran's Zephyrean Tome | 齊克蘭的西風典籍 | 待譯（32k） |
 | 13 | The Curious Tale of Wisteria Vale | 紫藤谷奇譚 | 待譯（44k） |
 | 14 | The Book of Inner Alchemy | 內丹之書 | 待譯（34k） |
@@ -60,7 +60,8 @@
 - 標籤保留英文目標，build 會自動補中文顯示文字：`{@creature Mage||法師}` 或直接 `{@creature mage}` 都可以。
 - `{@area 顯示文字|id|旗標}` 不會自動補，顯示文字直接寫中文，慣例寫「區域 B7」：`{@area 區域 B7|2bb|x}`。
 - `{@book 章節名|DMG|…}` 的第一欄直接寫中文（例如 `{@book 超自然贈禮|DMG|7|Charms}`）。書名連結（PHB、DMG、MM）的中文在 `i18n/cm/names-links.json`。
-- `{@i 書名}`（書中提到的書名）直接把書名翻成中文。
+- `{@i 書名}`（書中提到的書名）直接把書名翻成中文。`{@i}` 裡若保留英文，且英文剛好是已譯的章名，build 會把它改寫成「英文||中文」的怪樣子，附原文時不要包 `{@i}`。
+- `_paraput` 依「目前」的 `_paradump` 輸出對應序號，寫入後若要改單句，直接改 `paras-*.json`，不要重跑 `_paraput`。
 - 標題本身是連結（如 `{@item Serpent Scale Armor|CM}`）時，names 的值寫成 `{@item Serpent Scale Armor|CM|蛇鱗甲}`。
 - 角色扮演用的人格特質／理念／牽絆／缺點引句都照翻；童謠、詩句盡量押韻。
 - 「讀出來的方框文字」（insetReadaloud）、表格字串、側欄都是一般字串，照翻。

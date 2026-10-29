@@ -106,3 +106,8 @@ Yellowcrest＝黃冠（家族／莊園）、Lord Viallis＝維亞利斯勛爵、
 
 ## 盧露傳說（第 10 章）
 Lurue＝盧露（站內 CM 怪物「腐化的盧露化身」；先前章名「露瑞」已全面改正）、Ecamane Truesilver＝艾卡曼・真銀、Ulraunt＝烏勞恩特、Polvarth Plateau＝波爾瓦斯高原、Dewlight＝露光村、Feynor（樹人）＝費諾、Wheeldoli（小妖精）＝惠爾多利、Tragos／Artelio／Funagi（薩特羊人）＝特拉戈斯／阿特里歐／富納吉、Lanedrie Staggersoul（夜鬼婆）＝蘭德莉・蹣魂、Trekaila／Argentia／Hanah（樹精）＝崔凱菈／雅珍提雅／漢娜、Pool of Eternal Spring＝永春之池、Pool of Eternal Silver＝永銀之池、Mistress of Moonlight＝月光女主人、River Rauvin＝勞文河、Uktar＝烏克塔月、Malar the Beast Lord＝野獸之王馬拉。
+
+## 燭堡解構（第 11 章）
+Barn Door（塔樓）＝穀倉門、Livestock（邪教）＝牲口會、Stonky J. Noptopper＝史東基・J・諾普托珀（「史東基」站內既有）、Isajar＝伊薩加爾、Buron Sternmettle＝布隆・史騰梅托、skitterwidget／kiddywidget＝奇巧爬行獸／小奇巧犬（站內既有）、Lightning Golem＝閃電魔像（站內既有）、glassteel＝玻鋼、Trobriand＝特羅布里安（站內既有）。書名維持「燭堡解構」，首次出現附原文（作者愛用 K 代替硬音 C 的梗）。
+牲口會化名＝農場動物＋農產品，照字面譯：Alpaca Macadamia Nuts＝羊駝夏威夷果、Chicken Peach＝母雞水蜜桃、Cow Cotton＝乳牛棉花、Donkey Biscuit＝驢子餅乾、Duck Bean＝鴨子豆子、Goat Beet＝山羊甜菜、Horse Egg＝馬兒雞蛋、Pig Wheat＝豬仔小麥、Ram Sugar＝公羊砂糖（站內怪物原為音譯「拉姆·蘇加」，已改 i18n/custom/monster.json 與 monster-intro.json）、Rooster Muffin＝公雞瑪芬、Sheep Sweet Corn＝綿羊甜玉米。真名：Marci Plumpitter 瑪西・普倫皮特、Baff Boltlock 巴夫・栓鎖、Patch Varnast 帕奇・瓦納斯特、Merla One-Tusk 梅菈・獨牙、Trop Thunderhew 特洛普・雷斬、Stekk 斯特克、Glynn Yamanachi 葛林・亞瑪納奇、Neff Cunningfoot 奈夫・巧足、Norty 諾提、Yohn Blofrond 尤恩・布洛弗朗。
+拉桿卡槽：Coop／Shed／Stable＝雞舍（中止）／棚屋（延後）／馬廄（發射）。密語 jeopardy＝「危機」。
