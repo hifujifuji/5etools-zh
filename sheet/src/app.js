@@ -199,8 +199,11 @@ function renderBuild(c, d) {
 		if (sl.fixed) ftBody += `<b>${esc(fd?.zh)}</b>`;
 		else {
 			const opts = featOptions(sl, L, c);
-			const core = opts.filter(x => !D.feats[x].src), more = opts.filter(x => D.feats[x].src);
+			// 屬性值提升欄位可改選的起源專長另成一組
+			const asOrigin = x => sl.cat.includes("G") && D.feats[x].cat.includes("O");
+			const core = opts.filter(x => !D.feats[x].src && !asOrigin(x)), more = opts.filter(x => D.feats[x].src && !asOrigin(x)), origin = opts.filter(asOrigin);
 			const groups = new Map();
+			if (origin.length) groups.set("起源專長", origin);
 			for (const x of more) (groups.get(D.feats[x].src) || groups.set(D.feats[x].src, []).get(D.feats[x].src)).push(x);
 			const o = (x, l) => `<option value="${esc(x)}" ${x === f.k ? "selected" : ""}>${esc(l)}</option>`;
 			ftBody += `<select data-set="feats.${sl.id}.k">${core.map(x => o(x, D.feats[x].zh)).join("")}${[...groups].map(([src, xs]) => `<optgroup label="${esc(D.srcZh[src] || src)}">${xs.map(x => o(x, D.feats[x].zh)).join("")}</optgroup>`).join("")}<optgroup label="自填">${o(CUSTOM, "自填專長…")}</optgroup></select>`;
@@ -221,7 +224,7 @@ function renderBuild(c, d) {
 		}
 		if (f.k === "magic initiate") {
 			const LZ = {cleric: "牧師", druid: "德魯伊", wizard: "法師"};
-			ftBody += `<div class="row"><label>法術列表${sel(`feats.${sl.id}.list`, f.list, Object.entries(LZ), "class=sm")}</label><label>施法屬性${sel(`feats.${sl.id}.sa`, f.sa, ["int", "wis", "cha"].map(a => [a, ABZH[a]]), "class=sm")}</label></div>`;
+			ftBody += `<div class="row"><label>法術列表${sel(`feats.${sl.id}.list`, f.list, Object.entries(LZ).filter(([x]) => x === f.list || !Object.entries(c.feats).some(([id, g]) => id !== sl.id && g.k === "magic initiate" && g.list === x)), "class=sm")}</label><label>施法屬性${sel(`feats.${sl.id}.sa`, f.sa, ["int", "wis", "cha"].map(a => [a, ABZH[a]]), "class=sm")}</label></div>`;
 			const L1 = f.list[0].toUpperCase() + f.list.slice(1);
 			const p0 = Object.keys(D.spells).filter(x => D.spells[x].l === 0 && D.spells[x].cls.includes(L1));
 			const p1 = Object.keys(D.spells).filter(x => D.spells[x].l === 1 && D.spells[x].cls.includes(L1));

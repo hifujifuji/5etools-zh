@@ -113,8 +113,10 @@ function featSlots(c) {
 	return slots;
 }
 // 可選的專長：類別與等級相符，並滿足先決條件（另一個專長、施法能力、軍用武器熟練）
-const featOptions = (slot, L, c) => Object.entries(D.feats).filter(([, f]) => f.cat.some(x => slot.cat.includes(x)) && (!f.lv || f.lv <= L)
-	&& (!c || ((!f.preFeat || Object.entries(c.feats || {}).some(([id, x]) => id !== slot.id && f.preFeat.includes(x.k)))
+// 屬性值提升的欄位也可改選起源專長；不可重複的專長已在其他欄位選過就不列出
+const featOptions = (slot, L, c) => Object.entries(D.feats).filter(([k, f]) => f.cat.some(x => slot.cat.includes(x) || (x === "O" && slot.cat.includes("G"))) && (!f.lv || f.lv <= L)
+	&& (!c || ((f.rep || !Object.entries(c.feats || {}).some(([id, x]) => id !== slot.id && x.k === k))
+		&& (!f.preFeat || Object.entries(c.feats || {}).some(([id, x]) => id !== slot.id && f.preFeat.includes(x.k)))
 		&& (!f.preCast || canCast(c)) && (!f.preMartial || hasMartial(c))
 		&& (!f.preRace || f.preRace.some(r => spcName(c).includes(r)))
 		&& (!f.preAb || f.preAb.some(([a, v]) => (abilityBase(c)[a] || 0) >= v))))).map(([k]) => k);
@@ -194,7 +196,8 @@ function fill(c) {
 		if (sl.fixed) cur.k = sl.fixed;
 		const opts = sl.fixed ? [sl.fixed] : [...featOptions(sl, L, c), CUSTOM];
 		if (!opts.includes(cur.k)) {
-			cur.k = sl.cat.includes("EB") ? DEF_BOON(c.cls) : sl.cat.includes("G") ? "ability score improvement" : sl.cat.some(x => x.startsWith("FS")) ? DEF_FS(c.cls, c.eqA) : DEF_ORIGIN;
+			const def = sl.cat.includes("EB") ? DEF_BOON(c.cls) : sl.cat.includes("G") ? "ability score improvement" : sl.cat.some(x => x.startsWith("FS")) ? DEF_FS(c.cls, c.eqA) : DEF_ORIGIN;
+			cur.k = opts.includes(def) ? def : opts[0];
 			cur.ab = null;
 		}
 	}
@@ -284,17 +287,22 @@ function fill(c) {
 	const known = classSpells(c, -1);
 	c.linPick = lg?.sp?.choose?.length ? freePick(c, "linPick", lg.sp.choose[0].pool, lg.sp.choose[0].n, SP_PRI.Wizard.c, known) : [];
 	known.push(...c.linPick);
+	const miUsed = [];
 	for (const sl of slots) {
 		const cur = c.feats[sl.id];
 		if (cur.k === "magic initiate") {
-			// 牧師、德魯伊、法師三選一；背景的魔法學徒預設用背景名稱上的列表
-			const list = cur.list && ["cleric", "druid", "wizard"].includes(cur.list) ? cur.list : sl.list || ({Cleric: "cleric", Druid: "druid", Paladin: "cleric", Ranger: "druid"}[c.cls] || "wizard");
+			// 牧師、德魯伊、法師三選一；背景的魔法學徒預設用背景名稱上的列表；重複選取時每次要用不同的列表
+			const free = ["cleric", "druid", "wizard"].filter(x => !miUsed.includes(x));
+			const pref = [cur.list, sl.list, {Cleric: "cleric", Druid: "druid", Paladin: "cleric", Ranger: "druid"}[c.cls] || "wizard"];
+			const list = pref.find(x => free.includes(x)) || free[0] || "wizard";
+			miUsed.push(list);
 			cur.list = list;
 			const L1 = list[0].toUpperCase() + list.slice(1);
 			const pool0 = Object.keys(D.spells).filter(x => D.spells[x].l === 0 && D.spells[x].cls.includes(L1));
 			const pool1 = Object.keys(D.spells).filter(x => D.spells[x].l === 1 && D.spells[x].cls.includes(L1));
 			cur.can = freePick(c, `feats.${sl.id}.can`, pool0, 2, SP_PRI[L1].c, known);
 			cur.s1 = freePick(c, `feats.${sl.id}.s1`, pool1, 1, SP_PRI[L1].s, known);
+			known.push(...cur.can, ...cur.s1);
 			if (!["int", "wis", "cha"].includes(cur.sa)) cur.sa = ["int", "wis", "cha"].includes(k.sa) ? k.sa : byPri(["int", "wis", "cha"], pri)[0];
 		} else { delete cur.can; delete cur.s1; delete cur.list; delete cur.sa; }
 	}
