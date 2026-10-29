@@ -77,3 +77,8 @@ Janussi＝雅努西、Skoda Valanaster＝斯柯達・瓦拉納斯特、A'lai Aiv
 
 ## 異次元空間之樂（第 2 章）
 Fistandia＝菲斯坦迪亞、Matreous＝馬崔厄斯、Freyot＝弗瑞約、Cumin／Coriander（荷蒙庫魯斯）＝孜然／芫荽。命令語保留英文並附中文：scepter（權杖）、liberty（自由，字母書 L-I-B-E-R-T-Y）。區域連結寫成 {@area 區域 M1|id|x}。
+
+## 馬茲佛斯的浩瀚離題（第 3 章）
+Mazfroth Gethur＝馬茲佛斯・蓋瑟、Yalerion Highscroll＝亞勒里昂・高卷、Valor＝勇氣、Korvala＝科瓦拉、Nidalia＝妮妲莉雅、Mushika＝穆希卡、Amberdune Pack／Books＝琥珀沙丘幫／書店；幫眾 Avani 阿凡妮、Inbar 因巴、Marliza 瑪莉莎、Ramah 拉瑪、Theryn 瑟林、Zan 贊；暴徒 Alaspar 阿拉斯帕、Sufeni 蘇菲妮。
+書名：The Dark Hunger＝黑暗飢渴、Fallen Tethyamar＝陷落的特希亞瑪、Castanamir's Guide to Gingwatzims＝卡斯塔納米爾的金瓦齊姆指南、Wanderings of a Humble Aasimar＝一位謙遜阿斯莫的漫遊、Daughters of Graz'zt＝格拉茲特的女兒們。
+博德之門：the Wide＝寬場、Upper City＝上城、Outer City＝外城、Blackgate＝黑門區、the Watch＝守衛隊、patriar＝貴族、Coast Way＝海岸大道。其他：Amn＝安姆、Cormyr＝科米爾、Purple Dragon Knight＝紫龍騎士、Spellplague＝魔法瘟疫（1385 DR 藍火之年）、Font of Knowledge＝知識之泉、Desertmouth Mountains＝沙漠口山脈。

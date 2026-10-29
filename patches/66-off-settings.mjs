@@ -12,6 +12,8 @@ export default [
 		replace: [
 			["/** @abstract */\nexport class PageFilterBase {", `const ZH_OFF_SOURCES = new Set(${JSON.stringify(cfg.sources)});\n\n/** @abstract */\nexport class PageFilterBase {`],
 			["static defaultSourceSelFnStandardPartnered (val) {\n", "static defaultSourceSelFnStandardPartnered (val) {\n\t\tif (ZH_OFF_SOURCES.has(val)) return false;\n"],
+			// 瀏覽器自行載入的自製／合作內容（如 TLotRR）走這裡的預設勾選，也要排除
+			["static defaultSourceSelFn (val) {\n", "static defaultSourceSelFn (val) {\n\t\tif (ZH_OFF_SOURCES.has(val)) return false;\n"],
 		],
 	},
 	{
