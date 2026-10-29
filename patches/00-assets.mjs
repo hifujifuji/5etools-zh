@@ -19,8 +19,6 @@ const titleNames = dist => {
 // 書籍目錄用的標題表：書籍 id（小寫）→ {英文標題 → 中文}（取自書籍資料的 name_zh；「Chapter 2: X」另存「X」）
 const bookHeaders = dist => {
 	const out = {};
-	const bd = path.join(dist, "data", "book");
-	if (!fs.existsSync(bd)) return out;
 	const walk = (o, map) => {
 		if (Array.isArray(o)) return o.forEach(x => walk(x, map));
 		if (!o || typeof o !== "object") return;
@@ -32,14 +30,19 @@ const bookHeaders = dist => {
 		for (const v of Object.values(o)) if (v && typeof v === "object") walk(v, map);
 	};
 	// 目錄的章名（books.json 的 contents）不一定與內文章名相同（如「Introduction」），依章序對應內文章名的中文
-	const books = JSON.parse(fs.readFileSync(path.join(dist, "data", "books.json"), "utf8")).book;
-	for (const f of fs.readdirSync(bd).filter(f => /^book-.+\.json$/.test(f))) {
-		const map = {};
-		const data = JSON.parse(fs.readFileSync(path.join(bd, f), "utf8")).data;
-		walk(data, map);
-		const contents = books.find(b => b.id.toLowerCase() === f.slice(5, -5))?.contents || [];
-		contents.forEach((c, i) => { const z = data[i]?.name_zh; if (z && !map[c.name]) map[c.name] = z.replace(/^[^：:]+[：:]\s*/, ""); });
-		if (Object.keys(map).length) out[f.slice(5, -5)] = map;
+	// 冒險（data/adventure、adventures.json）同一套做法
+	for (const [kind, list] of [["book", "books"], ["adventure", "adventures"]]) {
+		const dir = path.join(dist, "data", kind);
+		if (!fs.existsSync(dir)) continue;
+		const books = JSON.parse(fs.readFileSync(path.join(dist, "data", `${list}.json`), "utf8"))[kind];
+		for (const f of fs.readdirSync(dir).filter(f => f.startsWith(`${kind}-`) && f.endsWith(".json"))) {
+			const id = f.slice(kind.length + 1, -5), map = {};
+			const data = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")).data;
+			walk(data, map);
+			const contents = books.find(b => b.id.toLowerCase() === id)?.contents || [];
+			contents.forEach((c, i) => { const z = data[i]?.name_zh; if (z && !map[c.name]) map[c.name] = z.replace(/^[^：:]+[：:]\s*/, ""); });
+			if (Object.keys(map).length) out[id] = map;
+		}
 	}
 	return out;
 };

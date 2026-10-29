@@ -1,0 +1,76 @@
+# 《燭堡秘案》（CM）自訂譯名
+
+站內既有譯名優先（`node work/cm/_look.mjs 名稱` 查 dist 的 name_zh）。下表為 CM 內自訂、需全書一致的譯名。
+
+## 通用
+| 英文 | 中文 |
+|---|---|
+| Candlekeep Mysteries | 燭堡秘案（ui.json 既有） |
+| Candlekeep | 燭堡 |
+| Faerûn / Toril / the Realms | 費倫／托瑞爾／國度 |
+| Sea of Swords | 劍海 |
+| Weave | 魔網 |
+| tenday | 十日週 |
+| Dalereckoning (DR) | 谷地紀年（DR） |
+| mythal | 神話結界（mythal） |
+| moon elf / lightfoot halfling / shield dwarf / gold dwarf | 月精靈／輕足半身人／盾矮人／金矮人 |
+
+## 冒險章名
+| 英文 | 中文 |
+|---|---|
+| A Book of Books | 書中之書 |
+| The Joy of Extradimensional Spaces | 異次元空間之樂 |
+| Mazfroth's Mighty Digressions | 馬茲佛斯的浩瀚離題 |
+| Book of the Raven | 渡鴉之書 |
+| A Deep and Creeping Darkness | 深沉蔓延的黑暗 |
+| Shemshime's Bedtime Rhyme | 謝姆辛的床邊童謠 |
+| The Price of Beauty | 美麗的代價 |
+| Book of Cylinders | 圓筒之書 |
+| Sarah of Yellowcrest Manor | 黃冠莊園的莎拉 |
+| Lore of Lurue | 露瑞傳說 |
+| Kandlekeep Dekonstruktion | 燭堡解構 |
+| Zikran's Zephyrean Tome | 齊克蘭的西風典籍 |
+| The Curious Tale of Wisteria Vale | 紫藤谷奇譚 |
+| The Book of Inner Alchemy | 內丹之書 |
+| The Canopic Being | 卡諾卜之軀 |
+| The Scrivener's Tale | 抄寫員的故事 |
+| Alkazaar's Appendix | 阿卡札的附錄 |
+| Xanthoria | 贊索莉亞 |
+| Lurue the Unicorn Queen / Malar the Beast Lord | 獨角獸女王露瑞／野獸之王馬拉 |
+
+## 燭堡（第 1 章）
+| 英文 | 中文 |
+|---|---|
+| the Avowed | 立誓者 |
+| seeker | 求知者 |
+| adjutant | 助理 |
+| Keeper of Tomes | 典籍守護者 |
+| First Reader | 首席閱讀者 |
+| Great Reader | 大閱讀者 |
+| Master Reader | 閱讀大師 |
+| Chanter / Endless Chant | 吟誦者／無盡吟誦 |
+| Gatewarden | 守門長 |
+| Keeper of the Emerald Door | 翡翠門守護者 |
+| Orders of Accordance | 協和守則 |
+| Way of the Lion | 雄獅之路 |
+| Court of Air | 風之庭 |
+| House of Rest | 歇息之家 |
+| the Hearth | 爐邊酒館 |
+| geometric amplifier | 幾何放大器 |
+| House of the Binder | 裝訂者之家 |
+| Pillars of Pedagogy | 教學之柱 |
+| Erudite Outfitters & Clothiers | 博學服飾行 |
+| Emerald Door | 翡翠門 |
+| Inner Ward | 內院 |
+| Great Library | 大圖書館 |
+| Exaltation | 崇高堡 |
+| Firefly Cellar | 螢火地窖 |
+| Miirym the Sentinel Wyrm | 哨兵巨龍米瑞姆（米瑞姆為站內既有） |
+| Alaundo the Seer / echoes of Alaundo | 先知阿朗多／阿朗多迴響 |
+| Chamber of Lost Lore | 失落學識之室 |
+| Little One | 小不點 |
+| Lorekeeper | 學識守護者 |
+| Bookwyrm | 書龍 |
+
+## 燭堡 NPC
+Janussi＝雅努西、Skoda Valanaster＝斯柯達・瓦拉納斯特、A'lai Aivenmore＝阿萊・艾文莫、Alkrist＝阿克里斯特、Daral Yashenti＝達拉・雅申提、Fheminor Scrivenbark＝費米諾・抄樹皮、Kazryn Nyantani＝卡茲琳・尼安塔尼、Sylvira Savikas＝席薇拉・薩維卡斯、Teles Ahvoste＝泰勒斯・阿沃斯特、V'ziir-Ag＝弗齊爾－阿格、Benedora Stoneforge＝貝內朵拉・石爐、Kalan Strongbranch＝卡蘭・強枝、Kei Tigersteel＝凱・虎鋼、Feldmar Bisset III＝費德馬・比塞特三世、Khe'ril Hammerbind＝克里爾・錘縛、Fembris Larlancer＝芬布里斯・拉蘭瑟、Sprig Summerfoot＝史普利格・夏足、Parmak＝帕馬克、Garlyth Graystock＝加里斯・灰柄、Nax Olossis＝納克斯・歐洛西斯、Orrin Glass＝歐林・葛拉斯、Vooshadi Moonriver＝芙夏蒂・月河、Irony＝艾蘿妮、Scriers Phink＝斯克萊爾斯・芬克、Hekaton＝赫卡頓

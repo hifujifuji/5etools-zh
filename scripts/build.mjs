@@ -155,7 +155,7 @@ const walkDataFiles = dir => {
 // 書籍逐項中文（i18n/<書>/）：標題照翻成 name_zh、表格字串照翻、各節開頭插入本站自撰的「中文簡介」方塊；英文正文保留
 // names-*.json：英文標題 → 中文；tables-*.json：表格內英文字串（整串比對）→ 中文；paras-*.json：正文段落（整串比對）→ 中文；intro-*.json：英文節名 → 簡介
 const BOOK_ZH = {};
-for (const id of ["xdmg", "xmm"]) {
+for (const id of ["xdmg", "xmm", "cm"]) {
 	const dir = path.join(I18N, id), z = BOOK_ZH[S(id)] = {names: {}, strs: {}, intro: {}};
 	for (const f of fs.readdirSync(dir).filter(f => f.endsWith(".json")).sort()) {
 		const kind = {tables: "strs", paras: "strs"}[f.split("-")[0]] || f.split("-")[0];
@@ -244,6 +244,12 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	}
 	if (mBook && json.data && BOOK_ZH[S(mBook[1])]) {
 		applyBookZh(json.data, BOOK_ZH[S(mBook[1])], BOOK_14[S(mBook[1])] && load14(BOOK_14[S(mBook[1])]));
+		touched = true;
+	}
+	// 冒險內文（沒有 hazmole 舊譯，只走 i18n/<冒險>/）
+	const mAdv = /^adventure\/adventure-(.+)\.json$/.exec(rel);
+	if (mAdv && json.data && BOOK_ZH[S(mAdv[1])]) {
+		applyBookZh(json.data, BOOK_ZH[S(mAdv[1])]);
 		touched = true;
 	}
 
@@ -717,7 +723,7 @@ for (const {json} of loaded) {
 		return zh ? `{@${tag} ${[p[0], p[1] || "", zh, ...p.slice(3)].join("|")}}` : m;
 	});
 	for (const {file, json} of loaded) {
-		const id = /book-(.+)\.json$/.exec(file)?.[1];
+		const id = /(?:book|adventure)-(.+)\.json$/.exec(file)?.[1];
 		if (!id || !BOOK_ZH[S(id)]) continue;
 		const bn = BOOK_ZH[S(id)].names;
 		const walk = o => {
