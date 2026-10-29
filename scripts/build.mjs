@@ -254,48 +254,6 @@ for (const file of walkDataFiles(path.join(DIST, "data"))) {
 	if (touched) loaded.push({file, json});
 }
 
-// ---- 3‴₀. 書籍中譯段落裡的標籤補上中文顯示文字（{@spell Sending|XPHB} → {@spell Sending|XPHB|短訊術}；{@book chapter 3|XDMG|2} → 第 3 章） ----
-{
-	const PROP_OF = {creature: ["monster"], item: ["item", "baseitem", "magicvariant"]};
-	const zhOf = {};
-	for (const {json} of loaded) for (const [prop, arr] of Object.entries(json)) {
-		if (!Array.isArray(arr)) continue;
-		for (const e of arr) if (e?.name_zh && typeof e.name === "string") {
-			const m = (zhOf[prop] ||= new Map());
-			m.set(`${e.name}|${e.source}`.toLowerCase(), e.name_zh);
-			if (!m.has(e.name.toLowerCase()) || e.source?.startsWith("X")) m.set(e.name.toLowerCase(), e.name_zh);
-		}
-	}
-	const look = (tag, name, src) => {
-		for (const prop of PROP_OF[tag] || [tag]) {
-			const m = zhOf[prop];
-			const hit = m && (m.get(`${name}|${src}`.toLowerCase()) ?? m.get(name.toLowerCase()));
-			if (hit) return hit;
-		}
-	};
-	const CH = s => s.replace(/^chapter (\d+)$/i, "第 $1 章").replace(/^appendix ([A-Z])$/i, "附錄 $1");
-	const fix = (s, bookNames) => !hasCjk(s) ? s : s.replace(/\{@(\w+) ([^{}]*)\}/g, (m, tag, body) => {
-		const p = body.split("|");
-		if (tag === "book" || tag === "5etoolsImg") {
-			const zh = hasCjk(p[0]) ? p[0] : bookNames[p[0]] || CH(p[0]);
-			return zh === p[0] ? m : `{@${tag} ${[zh, ...p.slice(1)].join("|")}}`;
-		}
-		if (hasCjk(p[2]) || !TAG_DISP3.has(tag)) return m;
-		const zh = (p[2] && bookNames[p[2]]) || look(tag, p[0], p[1] || "");
-		return zh ? `{@${tag} ${[p[0], p[1] || "", zh, ...p.slice(3)].join("|")}}` : m;
-	});
-	for (const {file, json} of loaded) {
-		const id = /book-(.+)\.json$/.exec(file)?.[1];
-		if (!id || !BOOK_ZH[S(id)]) continue;
-		const bn = BOOK_ZH[S(id)].names;
-		const walk = o => {
-			if (Array.isArray(o)) o.forEach((x, i) => typeof x === "string" ? (o[i] = fix(x, bn)) : walk(x));
-			else if (o && typeof o === "object") for (const [k, v] of Object.entries(o)) typeof v === "string" ? (k !== "name" && (o[k] = fix(v, bn))) : walk(v);
-		};
-		walk(json.data);
-	}
-}
-
 // ---- 3‴. 怪物中文簡介（i18n/monster-intro.json；本站自撰的概述，以方塊置於資訊頁最前，原文保留） ----
 // _copy 條目：自己有簡介就用自己的，否則沿用來源條目的；一律以 _mod 移到最前（先移除繼承來的方塊再前置）。
 {
@@ -720,6 +678,53 @@ for (const {json} of loaded) {
 		for (const [k, v] of Object.entries(o)) if (k !== "_zhOf") walkBy(v);
 	};
 	for (const {json} of loaded) walkBy(json);
+}
+
+// ---- 3‴‴. 書籍中譯段落裡的標籤補上中文顯示文字（{@spell Sending|XPHB} → {@spell Sending|XPHB|短訊術}；{@book chapter 3|XDMG|2} → 第 3 章） ----
+{ // 放在最後：各實體的 name_zh 都已補齊
+	const PROP_OF = {creature: ["monster"], item: ["item", "baseitem", "magicvariant"]};
+	const zhOf = {};
+	for (const {json} of loaded) for (const [prop, arr] of Object.entries(json)) {
+		if (!Array.isArray(arr)) continue;
+		for (const e of arr) if (e?.name_zh && typeof e.name === "string") {
+			const m = (zhOf[prop] ||= new Map());
+			m.set(`${e.name}|${e.source}`.toLowerCase(), e.name_zh);
+			if (!m.has(e.name.toLowerCase()) || e.source?.startsWith("X")) m.set(e.name.toLowerCase(), e.name_zh);
+		}
+	}
+	const look = (tag, name, src) => {
+		for (const prop of PROP_OF[tag] || [tag]) {
+			const m = zhOf[prop];
+			const hit = m && (m.get(`${name}|${src}`.toLowerCase()) ?? m.get(name.toLowerCase()));
+			if (hit) return hit;
+		}
+	};
+	const CH = s => s.replace(/^chapter (\d+)$/i, "第 $1 章").replace(/^appendix ([A-Z])$/i, "附錄 $1");
+	const fix = (s, bookNames) => !hasCjk(s) ? s : s.replace(/\{@(\w+) ([^{}]*)\}/g, (m, tag, body) => {
+		const p = body.split("|");
+		if (tag === "book" || tag === "adventure" || tag === "5etoolsImg") {
+			const zh = hasCjk(p[0]) ? p[0] : bookNames[p[0]] || bookNames[`${p[0]}, The`] || CH(p[0]);
+			return zh === p[0] ? m : `{@${tag} ${[zh, ...p.slice(1)].join("|")}}`;
+		}
+		if (tag === "deity") { // 名稱|神系|來源|顯示文字
+			if (hasCjk(p[3])) return m;
+			const zh = look("deity", p[0], p[2] || "");
+			return zh ? `{@deity ${[p[0], p[1] || "", p[2] || "", zh].join("|")}}` : m;
+		}
+		if (hasCjk(p[2]) || !(TAG_DISP3.has(tag) || bookNames[p[0]])) return m;
+		const zh = (p[2] && bookNames[p[2]]) || look(tag, p[0], p[1] || "") || bookNames[p[0]];
+		return zh ? `{@${tag} ${[p[0], p[1] || "", zh, ...p.slice(3)].join("|")}}` : m;
+	});
+	for (const {file, json} of loaded) {
+		const id = /book-(.+)\.json$/.exec(file)?.[1];
+		if (!id || !BOOK_ZH[S(id)]) continue;
+		const bn = BOOK_ZH[S(id)].names;
+		const walk = o => {
+			if (Array.isArray(o)) o.forEach((x, i) => typeof x === "string" ? (o[i] = fix(x, bn)) : walk(x));
+			else if (o && typeof o === "object") for (const [k, v] of Object.entries(o)) typeof v === "string" ? (k !== "name" && (o[k] = fix(v, bn))) : walk(v);
+		};
+		walk(json.data);
+	}
 }
 
 for (const {file, json} of loaded) {
