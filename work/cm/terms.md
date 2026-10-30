@@ -121,3 +121,7 @@ Wisteria Vale＝紫藤谷、Arrant Quill＝艾倫特·奎爾（站內 CM 怪物�
 ## 第 14 章 內丹之書
 
 Way of the Open Hand／Open Hand＝散打宗（站內既有）、ki＝氣、Ren Brothers（Rendi／Renjie／Renmei）＝任氏兄弟（任迪／任杰／任梅）、primordial trifecta（soul, essence, mind）＝原初三元（魂、精、神）、Shou＝受國（站內既有）、Bak Mei＝白眉、Steel Crane＝鋼鶴、Jade Tigress＝玉虎女、Immortal Lotus monk＝不朽蓮花武僧（以上站內 CM 怪物）、Order of the Immortal Lotus＝不朽蓮花會、Temple of the Immortal Lotus＝不朽蓮花寺、Immortal Lotus style＝不朽蓮花派、Stele Forest＝碑林、Hall of Knowledge＝知識殿、Training Grounds＝修練場、Jagged Sanctum＝嶙峋聖所、Kharbek＝卡爾貝克、gloves of soul catching＝捕魂手套（站內既有）。
+
+## 第 15 章 卡諾卜之軀
+
+Valin Sarnaster＝瓦林・薩納斯特、canopic golem＝卡諾卜魔像（以上站內 CM 怪物）、Savras＝薩弗拉斯（站內既有）、canopic jar＝卡諾卜罐、Tashalar＝塔沙拉、Tashluta＝塔許路塔（形容詞 Tashlutan＝塔許路塔的）、House of the All-Seeing Orb＝全視寶珠殿、Celestial Observatory＝天象觀測臺、Library of Ultimate Truth＝終極真理圖書館、College of Divination＝預言學院、Xemru Thaal＝澤姆魯・薩爾、Zeren Zoradius＝澤倫・佐拉迪烏斯、Okuzor＝奧庫佐、Mayastan Sadaar＝瑪雅斯坦・薩達爾、Alessia Baseer＝亞莉西亞・巴希爾、Shir Endellion＝雪兒・恩戴利昂、rite of reclamation＝奪回之儀、eyes of Savras＝薩弗拉斯之眼、Mirrors of Fortune＝命運之鏡、Observatory of Fate／History＝命運／歷史觀測室、dao＝土巨靈（站內既有）。
