@@ -129,3 +129,7 @@ Valin Sarnaster＝瓦林・薩納斯特、canopic golem＝卡諾卜魔像（以�
 ## 第 16 章 抄寫員的故事
 
 Nintra Siotta＝寧特拉・席歐塔、wood elf wizard＝木精靈法師（以上站內 CM 怪物）、Princess of the Shadow Glass＝影玻璃公主、Lady of Dread Omens＝凶兆夫人、Seeker of the Three Crowns＝三冠追尋者、shadow glass＝影玻璃、scrivener's mark＝抄寫員印記、Queen of Air and Darkness＝空氣與黑暗女王、Gloaming Court＝暮光宮廷（以上兩項站內既有）、Haven of the Red Quill＝紅羽筆庇護所、Zyrian＝齊瑞安、Machil Rillyn＝馬希爾・里林、Yvandre Rillyn＝伊凡卓・里林、Rillyn House＝里林府、Taresson＝塔瑞森、Ramilir＝拉米利爾、Hastarglyrr＝哈斯塔格利爾、Caustilancer＝考斯提蘭瑟、Phalorm＝法洛姆、Realm of Three Crowns＝三冠王國、Delimbiyran＝德林比蘭、Lizard Marsh＝蜥蜴沼澤、Halruaa＝哈魯阿、Flaming Fist＝烈焰之拳、Lower City＝下城、fomorian＝廢陋巨人（站內既有）。
+
+## 第 17 章 阿卡札的附錄
+
+Alkazaar's Thrilling Tales＝阿卡札的驚險故事、Year of the Wyvern＝雙足飛龍之年、Zikzokrishka＝齊克佐克里什卡、Sapphire Sentinel＝藍寶石哨兵、Nether Scroll (of Azumar)＝（阿祖瑪的）冥界卷軸、dragon tortoise＝龍陸龜、Ogruhl＝奧格魯爾、storm giant skeleton＝風暴巨人骷髏、chwinga＝奇溫加（以上站內既有）、Anauroch＝阿納羅克、Netheril／Netherese＝耐瑟瑞爾（人）、Bedine＝貝丁人（以上沿用站內其他書）、Anauria＝阿瑙利亞、Azumar＝阿祖瑪、Hamukai＝哈穆凱、Haruun＝哈倫、Hall of Rainbows＝彩虹廳、Vault of Stars＝群星寶庫、Consortium of Three＝三人會（Abzin／Kaalin／Sharisa＝阿布津／卡林／莎莉莎）、Pesh＝佩許、Shamir＝夏米爾、Old Stink＝老臭、Imura／Sikkat＝伊穆拉／西卡特、Helmdar＝赫姆達、Scimitar Spires＝彎刀尖峰、mastaba＝馬斯塔巴墓、necropolis＝亡者之城、aba／jellaba＝阿巴／傑拉巴。
