@@ -125,3 +125,7 @@ Way of the Open Hand／Open Hand＝散打宗（站內既有）、ki＝氣、Ren 
 ## 第 15 章 卡諾卜之軀
 
 Valin Sarnaster＝瓦林・薩納斯特、canopic golem＝卡諾卜魔像（以上站內 CM 怪物）、Savras＝薩弗拉斯（站內既有）、canopic jar＝卡諾卜罐、Tashalar＝塔沙拉、Tashluta＝塔許路塔（形容詞 Tashlutan＝塔許路塔的）、House of the All-Seeing Orb＝全視寶珠殿、Celestial Observatory＝天象觀測臺、Library of Ultimate Truth＝終極真理圖書館、College of Divination＝預言學院、Xemru Thaal＝澤姆魯・薩爾、Zeren Zoradius＝澤倫・佐拉迪烏斯、Okuzor＝奧庫佐、Mayastan Sadaar＝瑪雅斯坦・薩達爾、Alessia Baseer＝亞莉西亞・巴希爾、Shir Endellion＝雪兒・恩戴利昂、rite of reclamation＝奪回之儀、eyes of Savras＝薩弗拉斯之眼、Mirrors of Fortune＝命運之鏡、Observatory of Fate／History＝命運／歷史觀測室、dao＝土巨靈（站內既有）。
+
+## 第 16 章 抄寫員的故事
+
+Nintra Siotta＝寧特拉・席歐塔、wood elf wizard＝木精靈法師（以上站內 CM 怪物）、Princess of the Shadow Glass＝影玻璃公主、Lady of Dread Omens＝凶兆夫人、Seeker of the Three Crowns＝三冠追尋者、shadow glass＝影玻璃、scrivener's mark＝抄寫員印記、Queen of Air and Darkness＝空氣與黑暗女王、Gloaming Court＝暮光宮廷（以上兩項站內既有）、Haven of the Red Quill＝紅羽筆庇護所、Zyrian＝齊瑞安、Machil Rillyn＝馬希爾・里林、Yvandre Rillyn＝伊凡卓・里林、Rillyn House＝里林府、Taresson＝塔瑞森、Ramilir＝拉米利爾、Hastarglyrr＝哈斯塔格利爾、Caustilancer＝考斯提蘭瑟、Phalorm＝法洛姆、Realm of Three Crowns＝三冠王國、Delimbiyran＝德林比蘭、Lizard Marsh＝蜥蜴沼澤、Halruaa＝哈魯阿、Flaming Fist＝烈焰之拳、Lower City＝下城、fomorian＝廢陋巨人（站內既有）。

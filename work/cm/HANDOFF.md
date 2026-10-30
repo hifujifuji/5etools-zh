@@ -1,6 +1,6 @@
 # 交接：翻譯《燭堡秘案》（Candlekeep Mysteries，CM）冒險正文
 
-更新：2026-10-30（第 15 章完成）
+更新：2026-10-30（第 16 章完成）
 
 ## 目標
 
@@ -8,10 +8,10 @@
 
 ## 進度
 
-- **已譯（正文、標題、表格全文）**：第 0～15 章。
-- **已部署**：第 0～15 章。
-- **已推上 GitHub**：到第 11 章（59a2bf7）；第 12～15 章還沒 push。
-- **下一步**：第 16 章 The Scrivener's Tale（抄寫員的故事），之後依序翻到第 18 章。第 19 章 Credits 不譯。
+- **已譯（正文、標題、表格全文）**：第 0～16 章。
+- **已部署**：第 0～16 章。
+- **已推上 GitHub**：到第 11 章（59a2bf7）；第 12～16 章還沒 push。
+- **下一步**：第 17 章 Alkazaar's Appendix（阿卡札的附錄），之後是第 18 章。第 19 章 Credits 不譯。
 
 | 章序 | 英文章名 | 中文章名 | 狀態 |
 |---|---|---|---|
@@ -31,7 +31,7 @@
 | 13 | The Curious Tale of Wisteria Vale | 紫藤谷奇譚 | 完成 |
 | 14 | The Book of Inner Alchemy | 內丹之書 | 完成 |
 | 15 | The Canopic Being | 卡諾卜之軀 | 完成 |
-| 16 | The Scrivener's Tale | 抄寫員的故事 | 待譯（56k） |
+| 16 | The Scrivener's Tale | 抄寫員的故事 | 完成 |
 | 17 | Alkazaar's Appendix | 阿卡札的附錄 | 待譯（53k） |
 | 18 | Xanthoria | 贊索莉亞 | 待譯（40k） |
 | 19 | Credits | 製作群 | 不譯 |
