@@ -1,6 +1,6 @@
 # 交接：翻譯《燭堡秘案》（Candlekeep Mysteries，CM）冒險正文
 
-更新：2026-10-30（第 13 章完成）
+更新：2026-10-30（第 14 章完成）
 
 ## 目標
 
@@ -8,10 +8,10 @@
 
 ## 進度
 
-- **已譯（正文、標題、表格全文）**：第 0～13 章。
-- **已部署**：第 0～13 章。
-- **已推上 GitHub**：到第 11 章（59a2bf7）；第 12、13 章還沒 push。
-- **下一步**：第 14 章 The Book of Inner Alchemy（內丹之書），之後依序翻到第 18 章。第 19 章 Credits 不譯。
+- **已譯（正文、標題、表格全文）**：第 0～14 章。
+- **已部署**：第 0～14 章。
+- **已推上 GitHub**：到第 11 章（59a2bf7）；第 12～14 章還沒 push。
+- **下一步**：第 15 章 The Canopic Being（卡諾卜之軀），之後依序翻到第 18 章。第 19 章 Credits 不譯。
 
 | 章序 | 英文章名 | 中文章名 | 狀態 |
 |---|---|---|---|
@@ -29,7 +29,7 @@
 | 11 | Kandlekeep Dekonstruktion | 燭堡解構 | 完成 |
 | 12 | Zikran's Zephyrean Tome | 齊克蘭的西風典籍 | 完成 |
 | 13 | The Curious Tale of Wisteria Vale | 紫藤谷奇譚 | 完成 |
-| 14 | The Book of Inner Alchemy | 內丹之書 | 待譯（34k） |
+| 14 | The Book of Inner Alchemy | 內丹之書 | 完成 |
 | 15 | The Canopic Being | 卡諾卜之軀 | 待譯（52k） |
 | 16 | The Scrivener's Tale | 抄寫員的故事 | 待譯（56k） |
 | 17 | Alkazaar's Appendix | 阿卡札的附錄 | 待譯（53k） |
@@ -85,5 +85,6 @@
 ## 部署與推送
 
 - 部署：`node scripts/deploy.mjs`（網址 https://5etools-zh.graphia.workers.dev/）。偶爾第一次會中途失敗（只看到 Node 版本訊息），重跑即可。
+- 圖片從 5etools 官方圖片庫載入（`patches/01-img-root.mjs` 設定 `DEPLOYED_IMG_ROOT`），dist 不含 img/。
 - 推上 GitHub 前要先問使用者；同意後 `git fetch && git rebase origin/main` 再 push。工作區有未 commit 的暫存檔時 rebase 會被擋，先確認 origin 沒有新提交再直接 push，或先 stash。
 - 回報上線時只說已上線，不列更新清單；但有修正問題時要說明。

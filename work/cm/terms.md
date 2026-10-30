@@ -117,3 +117,7 @@ Zikran＝齊克蘭（站內 CM 怪物）、Gazre-Azam＝加茲雷－阿贊（dji
 
 ## 紫藤谷奇譚（第 13 章）
 Wisteria Vale＝紫藤谷、Arrant Quill＝艾倫特·奎爾（站內 CM 怪物；正文多稱「奎爾」）、Ryllia Liadon＝瑞莉亞・里亞登、Renekor＝雷尼寇（眼魔）、Harpers＝豎琴手同盟、constructed commoner＝構造平民（站內既有）、Vargan＝瓦根、Lord Ephraim Rathmore＝以法蓮・拉斯莫爾勛爵、Cyric＝希瑞克、River Chionthar＝奇恩薩河、Underdark＝幽暗地域、Vyridian Forest＝維瑞迪安森林、Blossom's Rest＝花歇酒館、Silks and Soles＝絲履坊、Ulrich／Daphne＝烏爾里希／達芙妮、Josephus Lovett＝約瑟夫斯・洛維特、Henrietta Storm＝亨麗耶塔・史托姆、Ki'lara＝姬菈拉、Damien＝達米安。啟動語 Harpers at Twilight＝「暮色中的豎琴手」。
+
+## 第 14 章 內丹之書
+
+Way of the Open Hand／Open Hand＝散打宗（站內既有）、ki＝氣、Ren Brothers（Rendi／Renjie／Renmei）＝任氏兄弟（任迪／任杰／任梅）、primordial trifecta（soul, essence, mind）＝原初三元（魂、精、神）、Shou＝受國（站內既有）、Bak Mei＝白眉、Steel Crane＝鋼鶴、Jade Tigress＝玉虎女、Immortal Lotus monk＝不朽蓮花武僧（以上站內 CM 怪物）、Order of the Immortal Lotus＝不朽蓮花會、Temple of the Immortal Lotus＝不朽蓮花寺、Immortal Lotus style＝不朽蓮花派、Stele Forest＝碑林、Hall of Knowledge＝知識殿、Training Grounds＝修練場、Jagged Sanctum＝嶙峋聖所、Kharbek＝卡爾貝克、gloves of soul catching＝捕魂手套（站內既有）。
