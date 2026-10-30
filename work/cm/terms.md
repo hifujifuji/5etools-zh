@@ -133,3 +133,7 @@ Nintra Siotta＝寧特拉・席歐塔、wood elf wizard＝木精靈法師（以�
 ## 第 17 章 阿卡札的附錄
 
 Alkazaar's Thrilling Tales＝阿卡札的驚險故事、Year of the Wyvern＝雙足飛龍之年、Zikzokrishka＝齊克佐克里什卡、Sapphire Sentinel＝藍寶石哨兵、Nether Scroll (of Azumar)＝（阿祖瑪的）冥界卷軸、dragon tortoise＝龍陸龜、Ogruhl＝奧格魯爾、storm giant skeleton＝風暴巨人骷髏、chwinga＝奇溫加（以上站內既有）、Anauroch＝阿納羅克、Netheril／Netherese＝耐瑟瑞爾（人）、Bedine＝貝丁人（以上沿用站內其他書）、Anauria＝阿瑙利亞、Azumar＝阿祖瑪、Hamukai＝哈穆凱、Haruun＝哈倫、Hall of Rainbows＝彩虹廳、Vault of Stars＝群星寶庫、Consortium of Three＝三人會（Abzin／Kaalin／Sharisa＝阿布津／卡林／莎莉莎）、Pesh＝佩許、Shamir＝夏米爾、Old Stink＝老臭、Imura／Sikkat＝伊穆拉／西卡特、Helmdar＝赫姆達、Scimitar Spires＝彎刀尖峰、mastaba＝馬斯塔巴墓、necropolis＝亡者之城、aba／jellaba＝阿巴／傑拉巴。
+
+## 第 18 章 贊索莉亞
+
+Xanthoria＝贊索莉亞、lichen lich＝地衣巫妖、fungal servant＝真菌僕從、parasite-infested behir＝寄生蟲感染的青足龍蛇（以上站內 CM 怪物）、saprophytic plague＝腐生瘟疫、Lykortha Expanse＝萊柯薩洞域、Zelyth Lightleaf＝澤莉絲・光葉、Thunderwing＝雷翼、Bunny Blossom＝兔兔花、Konrad＝康拉德、Rugga Two-Guts＝魯加・雙腸、Danjak＝丹賈克、Lady of Lichen＝地衣夫人、Mycorji＝密科吉、Shedaklah＝謝達克拉（站內既有）、Zuggtmoy＝祖格特莫伊、Juiblex＝朱伊布雷克斯、Silvanus＝西凡那斯（以上站內既有）、Demon Queen of Fungi＝真菌惡魔女王、Demon Prince of Oozes＝黏液惡魔王子、faerie ring＝妖精環。
