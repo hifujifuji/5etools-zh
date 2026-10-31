@@ -15,7 +15,7 @@
 | 2 | Elturel Has Fallen | 艾爾圖瑞爾陷落 | 完成 |
 | 3 | Avernus | 阿弗納斯 | 完成 |
 | 4 | Avernus - Path of Demons | 阿弗納斯——惡魔之路 | 完成 |
-| 5 | Avernus - Path of Devils | 阿弗納斯——魔鬼之路 | 未譯 |
+| 5 | Avernus - Path of Devils | 阿弗納斯——魔鬼之路 | 完成 |
 | 6 | Avernus - Other Locations | 阿弗納斯——其他地點 | 完成 |
 | 7 | Sword of Zariel | 扎瑞爾之劍 | 完成 |
 | 8 | Escape from Avernus | 逃離阿弗納斯 | 完成 |
