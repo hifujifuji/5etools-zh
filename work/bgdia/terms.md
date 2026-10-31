@@ -73,3 +73,11 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 其他：Morning Lord＝晨曦之主、Gnoll Lord＝豺狼人之王、demon lord＝惡魔領主、flaw＝缺點。
 
 站內既有、易寫錯：Crokek'toeck＝克羅凱托克、nalfeshnee＝判魂魔、bulezau＝布雷佐魔、shadow demon＝影魔、gnoll fang of Yeenoghu＝豺狼人．耶諾古毒牙、gnoll pack lord＝豺狼人頭領、fiendish flesh golem＝邪魔血肉魔像、Lathander＝洛山達、marilith＝六臂蛇魔、solar＝熾天神侍、charm of vitality／restoration＝活力／復原護咒。
+
+## 第 5 章：逃離阿弗納斯
+
+人物與其他：Nascius＝納西烏斯、earthmote＝浮空之地、Upper Planes＝上層位面、greater devil＝高等魔鬼、Lord of Avernus＝阿弗納斯之主、apotheosis＝神化、Archdevil Charms＝大魔鬼護咒。
+
+站內既有、易寫錯：Baphomet＝巴風特、balor＝巴洛炎魔、helm of devil command＝統御魔鬼頭盔、battle standard of infernal power＝煉獄之力戰旗、infernal puzzle box＝煉獄謎盒、Blade of Avernus＝阿弗納斯之刃、Matalotok＝瑪塔洛托克、Shield of the Hidden Lord＝隱匿之主之盾、blessing of health＝健康祝福、Hurl Flame＝擲火、City of Brass＝黃銅之城。
+
+待確認：Mount Celestia 本書用「天堂山」，站內另有「天界山」。

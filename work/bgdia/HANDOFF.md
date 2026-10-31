@@ -18,7 +18,7 @@
 | 5 | Avernus - Path of Devils | 阿弗納斯——魔鬼之路 | 未譯 |
 | 6 | Avernus - Other Locations | 阿弗納斯——其他地點 | 完成 |
 | 7 | Sword of Zariel | 扎瑞爾之劍 | 完成 |
-| 8 | Escape from Avernus | 逃離阿弗納斯 | 未譯 |
+| 8 | Escape from Avernus | 逃離阿弗納斯 | 完成 |
 | 9 | Baldur's Gate Gazetteer | 博德之門地方誌 | 未譯 |
 | 10 | Diabolical Deals | 魔鬼交易 | 未譯 |
 | 11 | Infernal War Machines | 煉獄戰爭機器 | 未譯 |
