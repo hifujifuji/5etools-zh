@@ -63,3 +63,13 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 其他：silted soul＝淤魂、bathysphere＝潛水球、diving bell＝潛水鐘、Test Run 221＝第 221 次試驗、Smiler's Defilers＝笑面褻瀆幫、Smiler the Beguiler＝蠱惑者笑面、Animate Chains＝活化鎖鏈。
 
 站內既有、易寫錯：Smiler the Defiler＝褻瀆者笑面、Elliach＝艾利亞克、amnizu＝阿姆尼祖魔、glabrezu＝迷誘魔、erinyes＝慾魔、magmin＝火童、lemure＝劣魔、larva＝墮魂幼蟲、eladrin＝雅靈、Gehenna＝焦炎地獄、Maglubiyet＝瑪格魯比耶、Calishite＝卡琳珊人、Flamethrower＝噴火器、Styx Sprayer＝冥河噴射器。
+
+## 第 4 章：扎瑞爾之劍
+
+人物：Trantolox＝川托洛克斯、Yiggleblight＝伊格布萊特、Alazub＝阿拉祖布、Vatilan＝瓦提蘭、Targ Nar＝塔格·納爾、Solndor Brightstar＝索恩多·燦星、Jhessa Brightstar＝潔莎·燦星、Ella Deepwell＝艾拉·深井、Garoknul＝加羅克努、Caladra Telmaster＝卡拉德拉·泰馬斯特、Esselyn Xharn＝艾瑟琳·夏恩、Jai Wen＝賈·溫、Tal Hannefar＝塔爾·漢納法、Yaerklos Summerlast＝耶爾克洛斯·夏末。
+
+地點：the Scab＝巨痂、Idyllglen＝田園谷、Idyll Road＝田園路、Faerûn＝費倫。
+
+其他：Morning Lord＝晨曦之主、Gnoll Lord＝豺狼人之王、demon lord＝惡魔領主、flaw＝缺點。
+
+站內既有、易寫錯：Crokek'toeck＝克羅凱托克、nalfeshnee＝判魂魔、bulezau＝布雷佐魔、shadow demon＝影魔、gnoll fang of Yeenoghu＝豺狼人．耶諾古毒牙、gnoll pack lord＝豺狼人頭領、fiendish flesh golem＝邪魔血肉魔像、Lathander＝洛山達、marilith＝六臂蛇魔、solar＝熾天神侍、charm of vitality／restoration＝活力／復原護咒。
