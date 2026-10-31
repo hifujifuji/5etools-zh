@@ -81,3 +81,17 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 站內既有、易寫錯：Baphomet＝巴風特、balor＝巴洛炎魔、helm of devil command＝統御魔鬼頭盔、battle standard of infernal power＝煉獄之力戰旗、infernal puzzle box＝煉獄謎盒、Blade of Avernus＝阿弗納斯之刃、Matalotok＝瑪塔洛托克、Shield of the Hidden Lord＝隱匿之主之盾、blessing of health＝健康祝福、Hurl Flame＝擲火、City of Brass＝黃銅之城。
 
 待確認：Mount Celestia 本書用「天堂山」，站內另有「天界山」。
+
+## 博德之門地方誌
+
+歷史與地理：Balduran＝巴爾杜蘭、Gray Harbor＝灰港、Eltan＝艾爾坦、Sea of Swords＝劍之海、Sword Coast＝劍灣、Chult＝楚爾特、Amn＝安姆、Calimshan＝卡林杉、Tethyr＝泰瑟、Cormyr＝科米爾、High Forest＝高森林、Inner Sea＝內海、Luiren＝路伊倫、the North＝北地、Port Nyanzaru＝尼安扎魯港、Lords' Alliance＝領主同盟、Time of Troubles＝災厄之年、Iron Throne＝鐵王座、Bhaalspawn＝巴爾之子、Mount Hotenow＝霍特諾火山、Athkatla＝阿斯卡拉、Durpar＝杜帕爾、Rashemi＝拉謝曼、Cowled Wizard＝兜帽法師。
+
+制度：Parliament of Peers＝貴族議會、crew＝街幫、kingpin＝老大、burl＝庇護、drowner＝溺人者、Gateguides＝引門人、Harborhands＝港工幫、Gray Wavers＝灰浪隊、Master of Drains and Underways＝排水與地道總管、Merchants' League＝商人聯盟。
+
+街坊：Manorborn＝莊園區、Citadel Streets＝堡壘街區、Temples＝神殿區、the Wide＝大廣場、Bloomridge＝綻丘區、Brampton＝布蘭普頓區、Eastway＝東路區、Heapside＝堆邊區、Seatower＝海塔區、the Steeps＝陡坡區、Blackgate＝黑門區、Norchapel＝北禮拜堂區、Rivington＝瑞文頓、Sow's Foot＝母豬腳區、Stonyeyes＝石眼區、Tumbledown＝崩塌區、Twin Songs＝雙歌區、Whitkeep＝白堡區、drudach＝德魯達赫、amlakkar＝阿姆拉卡。
+
+地標：Dusthawk Hill＝塵鷹丘、Wyrm's Rock＝巨龍岩、Old Wall＝舊牆、Black Dragon Gate＝黑龍門、Citadel Gate＝堡壘門、Cliffgate＝崖門、High House of Wonders＝至高奇蹟之屋、Hall of Wonders＝奇蹟大廳、Unrolling Scroll＝展卷亭、Watchful Shield＝警戒之盾、Lady's Hall＝女士廳、Water Queen's House＝水后之屋、Undercellar＝地下酒窖、Baldur's Mouth＝博德之口、Blushing Mermaid＝羞紅美人魚、Counting House＝會計所、Sorcerous Sundries＝術法雜貨、Seskergates＝瑟斯克門宅、Cliffside Cemetery＝懸崖墓園、Hamhocks Slaughterhouse＝火腿屠宰場、Riverveins＝河脈、Oasis Theater＝綠洲劇院。
+
+人物與傳說：Goblin Behnie＝哥布林貝尼、Straightstick＝直棍、Whiskey Lady＝威士忌女士、Ol' Cholms＝老喬姆斯、Lorroakan＝洛羅亞坎、Ramazith＝拉瑪齊斯、Order of the Gauntlet＝鐵手套騎士團、Siamorphe＝席亞莫芙、Sickle Man＝鐮刀人。街頭人名多，見 `i18n/bgdia/paras-10a.json`。
+
+站內既有、易寫錯：Sarevok＝沙洛佛克、Minsc／Boo＝明斯克／布布、Nine-Fingers Keene＝九指基恩、Rilsa Rael＝瑞爾莎·雷爾、smokepowder＝煙粉、sahuagin＝沙華魚人、revenant＝還魂屍、wyvern＝飛龍、mimic＝擬身怪、owlbear＝梟熊、hippogriff＝駿鷹、ettercap＝伊特蛛怪。
