@@ -23,3 +23,13 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 地點與物品：High Hall＝至高大廳、Grand Cemetery＝大墓園、Torm's Reach＝扥姆之臂、Torm's Blade＝扥姆之刃、Helm of Torm's Sight＝扥姆視界頭盔、Tome of the Creed Resolute＝堅毅信條之書、Unknown Hero＝無名英雄、ossuary＝藏骨堂、catacombs＝地下墓穴、crypt＝地穴、Vault of Ascendance＝飛升墓室、Endgame in Elturel＝艾爾圖瑞爾的終局。
 
 站內既有、易寫錯：Torm＝扥姆、Gideon Lightward＝吉迪恩·守光、Harkina Hunt＝哈琪娜·杭特、Traxigor＝特拉席戈、Chukka＝查卡、Clonk＝克隆克、kenku＝天狗、imp＝小魔鬼、barbed devil＝猬魔、bearded devil＝鬚魔、spined devil＝棘魔、ghast＝妖鬼、manes＝原魔、dretch＝怯魔、necrotic 傷害＝黯蝕、psychic 傷害＝精神。
+
+## 第 3 章：阿弗納斯
+
+人物：Jander Sunstar＝詹德·日星、Mickey＝米奇、Pins／Needles＝別針／縫針、Barnabas＝巴拿巴、Wazzik＝瓦齊克、Grubba＝格魯巴、L'zeth＝拉澤斯、High Graj Karkajuk＝大格拉吉·卡卡尤克、Jibbs＝吉布斯、Oozywog＝烏茲沃格、Finnik＝芬尼克、Yeegha＝伊嘉。
+
+組織與地點：Knucklebones＝指骨幫、Magpies＝喜鵲、Goreguts Gang＝血腸幫、Eighth Remnant＝第八殘軍、Coward's Way＝懦夫之路、Spawning Trees＝孵生之樹、Demon Zapper＝惡魔電擊器、Roaming Encounter: Smiler the Defiler＝遊蕩遭遇：褻瀆者微笑客、the Cartographer＝製圖師。
+
+其他：madcap＝狂帽子、warlord＝軍閥、legion／cohort／lance＝軍團／大隊／小隊、legate／signifier／optio＝軍團長／旗手／副官、dreg legion＝渣滓軍團、Golden Doom＝黃金末日號、Harpoon Flinger＝魚叉投射器、Grappling Claw＝抓鉤爪、Chomper＝咀嚼器、Wrecking Ball＝破壞球、dreamscape＝夢境。
+
+站內既有、易寫錯：Mad Maggie＝瘋瑪姬、Bitter Breath＝苦息、Feonor＝費歐諾、Princeps Kovik＝首席科維克、Raggadragga＝拉加德拉加、Kostchtchie＝寇許奇、Devil's Ride＝魔鬼機車、Tormentor＝折磨者號、Demon Grinder＝惡魔絞碎機、Scavenger＝拾荒者號、demon ichor＝惡魔膿血、redcap＝紅帽子、flameskull＝燃燒顱骨、stirge＝蚊蝠、hezrou＝狂戰魔、archdevil＝大魔鬼。
