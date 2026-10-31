@@ -99,3 +99,9 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 ## 附錄 A：魔鬼交易
 
 least／lesser／greater devil＝最低階／次等／高等魔鬼、infernal hierarchy＝煉獄階級、infernal contract＝煉獄契約、Duke／Duchess＝公爵／女公爵、Archduke／Archduchess＝大公／女大公、service＝差事、fealty＝效忠、orthon＝奧爾松魔、Mordenkainen's Tome of Foes＝魔鄧肯的眾敵卷冊。
+
+## 附錄 B：煉獄戰爭機器
+
+mishap＝事故、mishap threshold＝事故閾值、action station＝動作崗位、weapon station＝武器崗位、helm＝駕駛臺、crew＝乘員、Soul Fuel＝靈魂燃料、furnace＝熔爐、chase complication＝追逐複雜情況。事故名：Engine Flare＝引擎噴火、Locked Steering＝轉向鎖死、Furnace Rupture＝熔爐破裂、Weapon Malfunction＝武器故障、Blinding Smoke＝致盲濃煙、Shedding Armor＝裝甲脫落、Damaged Axle＝車軸受損、Flip＝翻車。
+
+站內既有、易寫錯：Acidic Bile Sprayer＝酸性膽汁噴射器、Canian Armor＝卡尼亞裝甲、Gilded Death Armor＝鍍金死亡裝甲、Soul Spike Armor＝靈魂尖刺裝甲、Necrotic Smoke Screen＝死靈煙幕、Teleporter＝傳送器。

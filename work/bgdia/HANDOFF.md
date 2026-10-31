@@ -21,7 +21,7 @@
 | 8 | Escape from Avernus | 逃離阿弗納斯 | 完成 |
 | 9 | Baldur's Gate Gazetteer | 博德之門地方誌 | 完成 |
 | 10 | Diabolical Deals | 魔鬼交易 | 完成 |
-| 11 | Infernal War Machines | 煉獄戰爭機器 | 未譯 |
+| 11 | Infernal War Machines | 煉獄戰爭機器 | 完成 |
 | 12～16 | 附錄 C～G | 魔法物品、生物、煉獄狂喜菜單、故事概念圖、煉獄文字 | 未譯 |
 | 17 | Credits | 製作群 | 不譯 |
 
