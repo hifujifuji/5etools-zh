@@ -84,7 +84,7 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 
 ## 博德之門地方誌
 
-歷史與地理：Balduran＝巴爾杜蘭、Gray Harbor＝灰港、Eltan＝艾爾坦、Sea of Swords＝劍之海、Sword Coast＝劍灣、Chult＝楚爾特、Amn＝安姆、Calimshan＝卡林杉、Tethyr＝泰瑟、Cormyr＝科米爾、High Forest＝高森林、Inner Sea＝內海、Luiren＝路伊倫、the North＝北地、Port Nyanzaru＝尼安扎魯港、Lords' Alliance＝領主同盟、Time of Troubles＝災厄之年、Iron Throne＝鐵王座、Bhaalspawn＝巴爾之子、Mount Hotenow＝霍特諾火山、Athkatla＝阿斯卡拉、Durpar＝杜帕爾、Rashemi＝拉謝曼、Cowled Wizard＝兜帽法師。
+歷史與地理：Balduran＝巴爾杜蘭、Gray Harbor＝灰港、Eltan＝艾爾坦、Sea of Swords＝劍海、Sword Coast＝劍灣、Chult＝楚爾特、Amn＝安姆、Calimshan＝卡林杉、Tethyr＝泰瑟、Cormyr＝科米爾、High Forest＝高森林、Inner Sea＝內海、Luiren＝路伊倫、the North＝北地、Port Nyanzaru＝尼安扎魯港、Lords' Alliance＝領主同盟、Time of Troubles＝災厄之年、Iron Throne＝鐵王座、Bhaalspawn＝巴爾之子、Mount Hotenow＝霍特諾火山、Athkatla＝阿斯卡拉、Durpar＝杜帕爾、Rashemi＝拉謝曼、Cowled Wizard＝兜帽法師。
 
 制度：Parliament of Peers＝貴族議會、crew＝街幫、kingpin＝老大、burl＝庇護、drowner＝溺人者、Gateguides＝引門人、Harborhands＝港工幫、Gray Wavers＝灰浪隊、Master of Drains and Underways＝排水與地道總管、Merchants' League＝商人聯盟。
 
@@ -95,3 +95,7 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 人物與傳說：Goblin Behnie＝哥布林貝尼、Straightstick＝直棍、Whiskey Lady＝威士忌女士、Ol' Cholms＝老喬姆斯、Lorroakan＝洛羅亞坎、Ramazith＝拉瑪齊斯、Order of the Gauntlet＝鐵手套騎士團、Siamorphe＝席亞莫芙、Sickle Man＝鐮刀人。街頭人名多，見 `i18n/bgdia/paras-10a.json`。
 
 站內既有、易寫錯：Sarevok＝沙洛佛克、Minsc／Boo＝明斯克／布布、Nine-Fingers Keene＝九指基恩、Rilsa Rael＝瑞爾莎·雷爾、smokepowder＝煙粉、sahuagin＝沙華魚人、revenant＝還魂屍、wyvern＝飛龍、mimic＝擬身怪、owlbear＝梟熊、hippogriff＝駿鷹、ettercap＝伊特蛛怪。
+
+## 附錄 A：魔鬼交易
+
+least／lesser／greater devil＝最低階／次等／高等魔鬼、infernal hierarchy＝煉獄階級、infernal contract＝煉獄契約、Duke／Duchess＝公爵／女公爵、Archduke／Archduchess＝大公／女大公、service＝差事、fealty＝效忠、orthon＝奧爾松魔、Mordenkainen's Tome of Foes＝魔鄧肯的眾敵卷冊。
