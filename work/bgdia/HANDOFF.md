@@ -11,7 +11,7 @@
 | 章序 | 英文章名 | 中文章名 | 狀態 |
 |---|---|---|---|
 | 0 | About the Adventure | 關於本冒險 | 完成 |
-| 1 | A Tale of Two Cities | 雙城記 | 未譯 |
+| 1 | A Tale of Two Cities | 雙城記 | 完成 |
 | 2 | Elturel Has Fallen | 艾爾圖瑞爾陷落 | 未譯 |
 | 3 | Avernus | 阿弗納斯 | 未譯 |
 | 4 | Avernus - Path of Demons | 阿弗納斯——惡魔之路 | 未譯 |
