@@ -155,7 +155,7 @@ const walkDataFiles = dir => {
 // 書籍逐項中文（i18n/<書>/）：標題照翻成 name_zh、表格字串照翻、各節開頭插入本站自撰的「中文簡介」方塊；英文正文保留
 // names-*.json：英文標題 → 中文；tables-*.json：表格內英文字串（整串比對）→ 中文；paras-*.json：正文段落（整串比對）→ 中文；intro-*.json：英文節名 → 簡介
 const BOOK_ZH = {};
-for (const id of ["xdmg", "xmm", "cm"]) {
+for (const id of ["xdmg", "xmm", "cm", "bgdia"]) {
 	const dir = path.join(I18N, id), z = BOOK_ZH[S(id)] = {names: {}, strs: {}, intro: {}};
 	for (const f of fs.readdirSync(dir).filter(f => f.endsWith(".json")).sort()) {
 		const kind = {tables: "strs", paras: "strs"}[f.split("-")[0]] || f.split("-")[0];
