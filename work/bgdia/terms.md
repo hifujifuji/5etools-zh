@@ -28,7 +28,7 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 
 人物：Jander Sunstar＝詹德·日星、Mickey＝米奇、Pins／Needles＝別針／縫針、Barnabas＝巴拿巴、Wazzik＝瓦齊克、Grubba＝格魯巴、L'zeth＝拉澤斯、High Graj Karkajuk＝大格拉吉·卡卡尤克、Jibbs＝吉布斯、Oozywog＝烏茲沃格、Finnik＝芬尼克、Yeegha＝伊嘉。
 
-組織與地點：Knucklebones＝指骨幫、Magpies＝喜鵲、Goreguts Gang＝血腸幫、Eighth Remnant＝第八殘軍、Coward's Way＝懦夫之路、Spawning Trees＝孵生之樹、Demon Zapper＝惡魔電擊器、Roaming Encounter: Smiler the Defiler＝遊蕩遭遇：褻瀆者微笑客、the Cartographer＝製圖師。
+組織與地點：Knucklebones＝指骨幫、Magpies＝喜鵲、Goreguts Gang＝血腸幫、Eighth Remnant＝第八殘軍、Coward's Way＝懦夫之路、Spawning Trees＝孵生之樹、Demon Zapper＝惡魔電擊器、Roaming Encounter: Smiler the Defiler＝遊蕩遭遇：褻瀆者笑面、the Cartographer＝製圖師。
 
 其他：madcap＝狂帽子、warlord＝軍閥、legion／cohort／lance＝軍團／大隊／小隊、legate／signifier／optio＝軍團長／旗手／副官、dreg legion＝渣滓軍團、Golden Doom＝黃金末日號、Harpoon Flinger＝魚叉投射器、Grappling Claw＝抓鉤爪、Chomper＝咀嚼器、Wrecking Ball＝破壞球、dreamscape＝夢境。
 
@@ -53,3 +53,13 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 其他：Flesh Warping＝血肉扭曲、adamantine rod＝精金棒、Soul Intake＝靈魂進氣管、hellfire javelin／greatsword＝地獄火標槍／巨劍、fire storm＝火焰風暴。
 
 站內既有、易寫錯：Arkhan the Cruel＝殘酷者阿爾罕、Krull＝克魯爾、Torogar Steelfist＝托羅加·鋼拳、Surtur＝史爾特爾、empyrean＝至高天、dao＝土巨靈、sibriex＝西布瑞克斯魔、arcanaloth＝奧登羅斯魔、abishai＝阿比賽魔、Warp Creature＝扭曲生物、bone whelk＝骨螺、undead tree＝不死樹、remorhaz＝百足魔獸、death slaad＝史拉亡蟾、vrock＝弗洛魔、chasme＝喀嘶魔、orb of dragonkind＝龍族寶珠。
+
+## 阿弗納斯——其他地點
+
+人物：Bazelsteen＝巴澤斯汀、Zartar＝札塔、Narg／Yangor＝納格／楊戈爾、Rassh／Skids／Slagg＝拉許／斯基茲／斯拉格、Burney＝伯妮、Balarystul＝巴拉里斯圖、Fhet'Ahla＝費特阿拉、Z'neth＝茲奈斯、Nariangela＝娜瑞安潔拉、Yarrasto＝亞拉斯托。
+
+地點與店家：Styx Watchtower＝冥河瞭望塔、Sundered Chains＝斷裂之鏈、Firesnake Forge＝火蛇熔爐、Burney the Barber＝理髮師伯妮、From Here to Avernus＝從這裡到阿弗納斯、Ichor's Aweigh!＝膿血起航！、Z'neth's Larva Farm＝茲奈斯的幼蟲農場。
+
+其他：silted soul＝淤魂、bathysphere＝潛水球、diving bell＝潛水鐘、Test Run 221＝第 221 次試驗、Smiler's Defilers＝笑面褻瀆幫、Smiler the Beguiler＝蠱惑者笑面、Animate Chains＝活化鎖鏈。
+
+站內既有、易寫錯：Smiler the Defiler＝褻瀆者笑面、Elliach＝艾利亞克、amnizu＝阿姆尼祖魔、glabrezu＝迷誘魔、erinyes＝慾魔、magmin＝火童、lemure＝劣魔、larva＝墮魂幼蟲、eladrin＝雅靈、Gehenna＝焦炎地獄、Maglubiyet＝瑪格魯比耶、Calishite＝卡琳珊人、Flamethrower＝噴火器、Styx Sprayer＝冥河噴射器。
