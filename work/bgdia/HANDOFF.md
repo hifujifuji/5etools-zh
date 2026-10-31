@@ -12,7 +12,7 @@
 |---|---|---|---|
 | 0 | About the Adventure | 關於本冒險 | 完成 |
 | 1 | A Tale of Two Cities | 雙城記 | 完成 |
-| 2 | Elturel Has Fallen | 艾爾圖瑞爾陷落 | 未譯 |
+| 2 | Elturel Has Fallen | 艾爾圖瑞爾陷落 | 完成 |
 | 3 | Avernus | 阿弗納斯 | 未譯 |
 | 4 | Avernus - Path of Demons | 阿弗納斯——惡魔之路 | 未譯 |
 | 5 | Avernus - Path of Devils | 阿弗納斯——魔鬼之路 | 未譯 |
