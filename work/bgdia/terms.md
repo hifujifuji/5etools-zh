@@ -33,3 +33,13 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 其他：madcap＝狂帽子、warlord＝軍閥、legion／cohort／lance＝軍團／大隊／小隊、legate／signifier／optio＝軍團長／旗手／副官、dreg legion＝渣滓軍團、Golden Doom＝黃金末日號、Harpoon Flinger＝魚叉投射器、Grappling Claw＝抓鉤爪、Chomper＝咀嚼器、Wrecking Ball＝破壞球、dreamscape＝夢境。
 
 站內既有、易寫錯：Mad Maggie＝瘋瑪姬、Bitter Breath＝苦息、Feonor＝費歐諾、Princeps Kovik＝首席科維克、Raggadragga＝拉加德拉加、Kostchtchie＝寇許奇、Devil's Ride＝魔鬼機車、Tormentor＝折磨者號、Demon Grinder＝惡魔絞碎機、Scavenger＝拾荒者號、demon ichor＝惡魔膿血、redcap＝紅帽子、flameskull＝燃燒顱骨、stirge＝蚊蝠、hezrou＝狂戰魔、archdevil＝大魔鬼。
+
+## 阿弗納斯——惡魔之路
+
+人物：Krikendolt＝克里肯多特、Earwax＝耳屎、Torgrazk＝托格拉茲克、Shraal＝施拉爾、Ubbalux＝烏巴魯克斯、Rigorath＝瑞戈拉斯、Shummrath＝舒姆拉斯、Baazit＝巴齊特、Mazer＝梅澤。
+
+地點：Tower of Urm＝烏姆之塔、Obelisk＝方尖碑、Mirror of Mephistar＝梅菲斯塔之鏡、Mephistar＝梅菲斯塔、Pit of Shummrath＝舒姆拉斯之坑、Crypt of the Hellriders＝地獄騎士地穴、Arches of Ulloch＝烏洛克拱門、Kostchtchie's Maw＝寇許奇之喉、Zariel's Flying Fortress＝扎瑞爾的飛行要塞、Bel's Forge＝貝爾的熔爐、Oerth＝奧爾斯。
+
+其他：For Glory（通關語）＝為了榮耀、standing stone＝立石。
+
+站內既有、易寫錯：Mordenkainen＝魔鄧肯、Circle of Eight＝八人議會、yugoloth＝尤格羅斯魔、barlgura＝巴古拉魔、Mephistopheles＝梅菲斯托費勒斯、Cania＝卡尼亞、Thrym＝索列姆、gorgon＝石化牛、warlock＝契術師、ghost＝幽魂、wraith＝縛靈、shatterstick＝碎地樁、abyssal chicken＝深淵雞、monodrone＝單元冢。
