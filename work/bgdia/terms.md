@@ -43,3 +43,13 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 其他：For Glory（通關語）＝為了榮耀、standing stone＝立石。
 
 站內既有、易寫錯：Mordenkainen＝魔鄧肯、Circle of Eight＝八人議會、yugoloth＝尤格羅斯魔、barlgura＝巴古拉魔、Mephistopheles＝梅菲斯托費勒斯、Cania＝卡尼亞、Thrym＝索列姆、gorgon＝石化牛、warlock＝契術師、ghost＝幽魂、wraith＝縛靈、shatterstick＝碎地樁、abyssal chicken＝深淵雞、monodrone＝單元冢。
+
+## 阿弗納斯——魔鬼之路
+
+人物：Mooncolor＝月色、Ralzala＝拉爾扎拉、Red Ruth＝紅露絲、Uldrak＝烏德拉克、Asojano＝阿索哈諾、Obatala＝奧巴塔拉、Slarkas＝斯拉卡斯、Vistalancer＝維斯塔蘭瑟、Vermilius＝維米里烏斯、Flash＝閃光、Chango＝昌戈、Drumra／Jalt／Rosska／Zrakorn＝德倫拉／賈爾特／羅絲卡／茲拉孔、Balakros＝巴拉克羅斯、Krinjak＝克林賈克、Shalok／Jank＝夏洛克／揚克、Fetchtatter＝費奇塔特。
+
+地點：Bone Brambles＝白骨荊棘林、Uldrak's Grave＝烏德拉克之墓、Arkhan's Tower＝阿爾罕之塔、Monument to Tiamat＝提雅瑪特紀念碑、Wrecked Flying Fortress＝飛行要塞殘骸、Command Deck＝指揮甲板、Stygian Dock＝冥河碼頭、Exandria＝艾克桑德里亞。
+
+其他：Flesh Warping＝血肉扭曲、adamantine rod＝精金棒、Soul Intake＝靈魂進氣管、hellfire javelin／greatsword＝地獄火標槍／巨劍、fire storm＝火焰風暴。
+
+站內既有、易寫錯：Arkhan the Cruel＝殘酷者阿爾罕、Krull＝克魯爾、Torogar Steelfist＝托羅加·鋼拳、Surtur＝史爾特爾、empyrean＝至高天、dao＝土巨靈、sibriex＝西布瑞克斯魔、arcanaloth＝奧登羅斯魔、abishai＝阿比賽魔、Warp Creature＝扭曲生物、bone whelk＝骨螺、undead tree＝不死樹、remorhaz＝百足魔獸、death slaad＝史拉亡蟾、vrock＝弗洛魔、chasme＝喀嘶魔、orb of dragonkind＝龍族寶珠。
