@@ -50,7 +50,7 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 
 地點：Bone Brambles＝白骨荊棘林、Uldrak's Grave＝烏德拉克之墓、Arkhan's Tower＝阿爾罕之塔、Monument to Tiamat＝提雅瑪特紀念碑、Wrecked Flying Fortress＝飛行要塞殘骸、Command Deck＝指揮甲板、Stygian Dock＝冥河碼頭、Exandria＝艾克桑德里亞。
 
-其他：Flesh Warping＝血肉扭曲、adamantine rod＝精金棒、Soul Intake＝靈魂進氣管、hellfire javelin／greatsword＝地獄火標槍／巨劍、fire storm＝火焰風暴。
+其他：Flesh Warping＝血肉扭曲、adamantine rod＝精金棒、Soul Intake＝靈魂進氣管、hellfire javelin／greatsword＝獄火標槍／巨劍、fire storm＝火焰風暴。
 
 站內既有、易寫錯：Arkhan the Cruel＝殘酷者阿爾罕、Krull＝克魯爾、Torogar Steelfist＝托羅加·鋼拳、Surtur＝史爾特爾、empyrean＝至高天、dao＝土巨靈、sibriex＝西布瑞克斯魔、arcanaloth＝奧登羅斯魔、abishai＝阿比賽魔、Warp Creature＝扭曲生物、bone whelk＝骨螺、undead tree＝不死樹、remorhaz＝百足魔獸、death slaad＝史拉亡蟾、vrock＝弗洛魔、chasme＝喀嘶魔、orb of dragonkind＝龍族寶珠。
 
@@ -105,3 +105,7 @@ least／lesser／greater devil＝最低階／次等／高等魔鬼、infernal hi
 mishap＝事故、mishap threshold＝事故閾值、action station＝動作崗位、weapon station＝武器崗位、helm＝駕駛臺、crew＝乘員、Soul Fuel＝靈魂燃料、furnace＝熔爐、chase complication＝追逐複雜情況。事故名：Engine Flare＝引擎噴火、Locked Steering＝轉向鎖死、Furnace Rupture＝熔爐破裂、Weapon Malfunction＝武器故障、Blinding Smoke＝致盲濃煙、Shedding Armor＝裝甲脫落、Damaged Axle＝車軸受損、Flip＝翻車。
 
 站內既有、易寫錯：Acidic Bile Sprayer＝酸性膽汁噴射器、Canian Armor＝卡尼亞裝甲、Gilded Death Armor＝鍍金死亡裝甲、Soul Spike Armor＝靈魂尖刺裝甲、Necrotic Smoke Screen＝死靈煙幕、Teleporter＝傳送器。
+
+## 附錄 C～G
+
+菜單：myconid cap＝蕈人傘蓋、stench kow＝惡臭野牛。概念圖：Happymobile＝歡樂車、Merry Widow／Hell's Belle／Buzz Killer＝風流寡婦／地獄美人／掃興者、Marrenoloth＝馬瑞諾羅斯魔、Gulah＝古拉、Aleksipug＝亞歷克西巴哥犬。站內既有：Hellfire Weapon＝獄火武器。
