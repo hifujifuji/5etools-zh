@@ -20,6 +20,6 @@ Elturgard＝艾爾圖加德、High Overseer＝大監督、Grand Duke＝大公、
 
 人物：Pherria Jynks＝菲瑞亞·金克斯、Seltern Obranch＝賽爾騰·歐布蘭奇、Lucille＝露西爾、Victuusa＝維克圖莎、Dreb＝德雷布、Ophurkh＝歐佛克、Faltrax＝法爾崔克斯、Orin Ragron＝歐林·拉葛隆、Perchillux＝佩奇魯克斯、Pilster Pebblehuck＝皮爾斯特·卵石哈克、Merrywile＝梅莉懷爾、Shorah Hevrun＝修拉·赫夫倫、Trevick Thantorme＝崔維克·桑托姆、Lannish Fogel＝蘭尼許·佛蓋爾、Opallita the Devout＝虔誠者歐帕莉塔、Strovin Ironfist＝史托文·鐵拳、Kartra Boulderstern＝卡特拉·岩肅、Velkora Ashenwell＝薇爾柯拉·灰井、Blass／Nodd／Thunn＝布拉斯／諾德／桑恩、Ezo／Brask＝埃佐／布拉斯克。
 
-地點與物品：High Hall＝高殿、Grand Cemetery＝大墓園、Torm's Reach＝扥姆之臂、Torm's Blade＝扥姆之刃、Helm of Torm's Sight＝扥姆視界頭盔、Tome of the Creed Resolute＝堅毅信條之書、Unknown Hero＝無名英雄、ossuary＝藏骨堂、catacombs＝地下墓穴、crypt＝地穴、Vault of Ascendance＝飛升墓室、Endgame in Elturel＝艾爾圖瑞爾的終局。
+地點與物品：High Hall＝至高大廳、Grand Cemetery＝大墓園、Torm's Reach＝扥姆之臂、Torm's Blade＝扥姆之刃、Helm of Torm's Sight＝扥姆視界頭盔、Tome of the Creed Resolute＝堅毅信條之書、Unknown Hero＝無名英雄、ossuary＝藏骨堂、catacombs＝地下墓穴、crypt＝地穴、Vault of Ascendance＝飛升墓室、Endgame in Elturel＝艾爾圖瑞爾的終局。
 
 站內既有、易寫錯：Torm＝扥姆、Gideon Lightward＝吉迪恩·守光、Harkina Hunt＝哈琪娜·杭特、Traxigor＝特拉席戈、Chukka＝查卡、Clonk＝克隆克、kenku＝天狗、imp＝小魔鬼、barbed devil＝猬魔、bearded devil＝鬚魔、spined devil＝棘魔、ghast＝妖鬼、manes＝原魔、dretch＝怯魔、necrotic 傷害＝黯蝕、psychic 傷害＝精神。
